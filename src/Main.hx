@@ -112,7 +112,7 @@ class Main {
 								name: t.name,
 								doc: null, // TODO retrieve docs
 								pos: pos,
-								isExtern: true,
+								isExtern: null,
 								kind: TDAlias(t.inheritance == null
 									? TAnonymous(fields)
 									: TExtend([({pack: resolvePackage(t.inheritance), name: t.inheritance}:TypePath)], fields)
@@ -133,7 +133,7 @@ class Main {
 								name: t.name,
 								doc: null, // TODO retrieve docs
 								pos: pos,
-								isExtern: true,
+								isExtern: null,
 								kind: TDAbstract(macro :String, [AbEnum]),
 								fields: t.values.map(e -> ({
 									name: sanitizeEnumValueName(e),

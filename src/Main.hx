@@ -65,7 +65,7 @@ class Main {
 
 				var out = new StringBuf();
 				out.add(Resource.getString("copyright"));
-				out.add("// This file is generated from ");
+				out.add("// This file is generated from @webref/idl/");
 				out.add(file.filename);
 				out.add(". Do not edit!\n\n");
 				out.add(printer.printTypeDefinition(td));

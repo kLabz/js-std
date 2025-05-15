@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from private-network-access.idl. Do not edit!
+// This file is generated from @webref/idl/private-network-access.idl. Do not edit!
 
 package js.privateNetworkAccess;
-extern typedef PrivateNetworkAccessPermissionDescriptor = js.permissions.PermissionDescriptor & {
+typedef PrivateNetworkAccessPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var id : DOMString;
 };

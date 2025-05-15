@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from cssom.idl. Do not edit!
+// This file is generated from @webref/idl/cssom.idl. Do not edit!
 
 package js.cssom;
-extern typedef CSSStyleSheetInit = {
+typedef CSSStyleSheetInit = {
 	@:optional
 	var baseURL : DOMString;
 	@:optional

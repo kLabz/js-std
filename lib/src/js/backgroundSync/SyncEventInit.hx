@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from background-sync.idl. Do not edit!
+// This file is generated from @webref/idl/background-sync.idl. Do not edit!
 
 package js.backgroundSync;
-extern typedef SyncEventInit = js.serviceWorkers.ExtendableEventInit & {
+typedef SyncEventInit = js.serviceWorkers.ExtendableEventInit & {
 	var tag : DOMString;
 	@:optional
 	var lastChance : boolean;

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from orientation-sensor.idl. Do not edit!
+// This file is generated from @webref/idl/orientation-sensor.idl. Do not edit!
 
 package js.orientationSensor;
-extern typedef OrientationSensorOptions = js.genericSensor.SensorOptions & {
+typedef OrientationSensorOptions = js.genericSensor.SensorOptions & {
 	@:optional
 	var referenceFrame : js.orientationSensor.OrientationSensorLocalCoordinateSystem;
 };

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from idle-detection.idl. Do not edit!
+// This file is generated from @webref/idl/idle-detection.idl. Do not edit!
 
 package js.idleDetection;
-extern enum abstract UserIdleState(String) {
+enum abstract UserIdleState(String) {
 	var ACTIVE = "active";
 	var IDLE = "idle";
 }

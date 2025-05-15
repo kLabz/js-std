@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from secure-payment-confirmation.idl. Do not edit!
+// This file is generated from @webref/idl/secure-payment-confirmation.idl. Do not edit!
 
 package js.securePaymentConfirmation;
-extern typedef SecurePaymentConfirmationRequest = {
+typedef SecurePaymentConfirmationRequest = {
 	var challenge : BufferSource;
 	var rpId : USVString;
 	var credentialIds : [object Object];

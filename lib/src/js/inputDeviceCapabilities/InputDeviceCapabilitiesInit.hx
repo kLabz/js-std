@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from input-device-capabilities.idl. Do not edit!
+// This file is generated from @webref/idl/input-device-capabilities.idl. Do not edit!
 
 package js.inputDeviceCapabilities;
-extern typedef InputDeviceCapabilitiesInit = {
+typedef InputDeviceCapabilitiesInit = {
 	@:optional
 	var firesTouchEvents : boolean;
 	@:optional

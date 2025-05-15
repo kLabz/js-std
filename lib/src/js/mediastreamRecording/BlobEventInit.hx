@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from mediastream-recording.idl. Do not edit!
+// This file is generated from @webref/idl/mediastream-recording.idl. Do not edit!
 
 package js.mediastreamRecording;
-extern typedef BlobEventInit = js.dom.EventInit & {
+typedef BlobEventInit = js.dom.EventInit & {
 	var data : Blob;
 	@:optional
 	var timecode : DOMHighResTimeStamp;

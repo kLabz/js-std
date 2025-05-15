@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from permissions.idl. Do not edit!
+// This file is generated from @webref/idl/permissions.idl. Do not edit!
 
 package js.permissions;
-extern enum abstract PermissionState(String) {
+enum abstract PermissionState(String) {
 	var GRANTED = "granted";
 	var DENIED = "denied";
 	var PROMPT = "prompt";

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webgpu.idl. Do not edit!
+// This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
-extern typedef GPUVertexAttribute = {
+typedef GPUVertexAttribute = {
 	var format : js.webgpu.GPUVertexFormat;
 	var offset : GPUSize64;
 	var shaderLocation : GPUIndex32;

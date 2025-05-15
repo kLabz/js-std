@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from urlpattern.idl. Do not edit!
+// This file is generated from @webref/idl/urlpattern.idl. Do not edit!
 
 package js.urlpattern;
-extern typedef URLPatternInit = {
+typedef URLPatternInit = {
 	@:optional
 	var protocol : USVString;
 	@:optional

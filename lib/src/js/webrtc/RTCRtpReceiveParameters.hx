@@ -20,8 +20,8 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
-extern typedef RTCRtpReceiveParameters = js.webrtc.RTCRtpParameters & {
+typedef RTCRtpReceiveParameters = js.webrtc.RTCRtpParameters & {
 };

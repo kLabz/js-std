@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webgpu.idl. Do not edit!
+// This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
-extern enum abstract GPUBlendFactor(String) {
+enum abstract GPUBlendFactor(String) {
 	var ZERO = "zero";
 	var ONE = "one";
 	var SRC = "src";

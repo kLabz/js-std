@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-typed-om.idl. Do not edit!
+// This file is generated from @webref/idl/css-typed-om.idl. Do not edit!
 
 package js.cssTypedOm;
-extern typedef CSSMatrixComponentOptions = {
+typedef CSSMatrixComponentOptions = {
 	@:optional
 	var is2D : boolean;
 };

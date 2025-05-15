@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from observable.idl. Do not edit!
+// This file is generated from @webref/idl/observable.idl. Do not edit!
 
 package js.observable;
-extern typedef SubscriptionObserver = {
+typedef SubscriptionObserver = {
 	@:optional
 	var next : ObservableSubscriptionCallback;
 	@:optional

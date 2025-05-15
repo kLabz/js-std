@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from background-fetch.idl. Do not edit!
+// This file is generated from @webref/idl/background-fetch.idl. Do not edit!
 
 package js.backgroundFetch;
-extern typedef BackgroundFetchUIOptions = {
+typedef BackgroundFetchUIOptions = {
 	@:optional
 	var icons : [object Object];
 	@:optional

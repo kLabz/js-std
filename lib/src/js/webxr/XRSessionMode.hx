@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr.idl. Do not edit!
+// This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
-extern enum abstract XRSessionMode(String) {
+enum abstract XRSessionMode(String) {
 	var INLINE = "inline";
 	var IMMERSIVE_VR = "immersive-vr";
 	var IMMERSIVE_AR = "immersive-ar";

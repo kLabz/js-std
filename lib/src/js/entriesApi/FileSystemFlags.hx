@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from entries-api.idl. Do not edit!
+// This file is generated from @webref/idl/entries-api.idl. Do not edit!
 
 package js.entriesApi;
-extern typedef FileSystemFlags = {
+typedef FileSystemFlags = {
 	@:optional
 	var create : boolean;
 	@:optional

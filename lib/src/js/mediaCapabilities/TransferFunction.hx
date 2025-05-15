@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from media-capabilities.idl. Do not edit!
+// This file is generated from @webref/idl/media-capabilities.idl. Do not edit!
 
 package js.mediaCapabilities;
-extern enum abstract TransferFunction(String) {
+enum abstract TransferFunction(String) {
 	var SRGB = "srgb";
 	var PQ = "pq";
 	var HLG = "hlg";

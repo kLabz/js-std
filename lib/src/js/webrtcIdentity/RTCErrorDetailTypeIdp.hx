@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc-identity.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc-identity.idl. Do not edit!
 
 package js.webrtcIdentity;
-extern enum abstract RTCErrorDetailTypeIdp(String) {
+enum abstract RTCErrorDetailTypeIdp(String) {
 	var IDP_BAD_SCRIPT_FAILURE = "idp-bad-script-failure";
 	var IDP_EXECUTION_FAILURE = "idp-execution-failure";
 	var IDP_LOAD_FAILURE = "idp-load-failure";

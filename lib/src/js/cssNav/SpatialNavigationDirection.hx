@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-nav.idl. Do not edit!
+// This file is generated from @webref/idl/css-nav.idl. Do not edit!
 
 package js.cssNav;
-extern enum abstract SpatialNavigationDirection(String) {
+enum abstract SpatialNavigationDirection(String) {
 	var UP = "up";
 	var DOWN = "down";
 	var LEFT = "left";

@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from screen-wake-lock.idl. Do not edit!
+// This file is generated from @webref/idl/screen-wake-lock.idl. Do not edit!
 
 package js.screenWakeLock;
-extern enum abstract WakeLockType(String) {
+enum abstract WakeLockType(String) {
 	var SCREEN = "screen";
 }

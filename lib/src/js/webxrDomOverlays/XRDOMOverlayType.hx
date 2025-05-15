@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr-dom-overlays.idl. Do not edit!
+// This file is generated from @webref/idl/webxr-dom-overlays.idl. Do not edit!
 
 package js.webxrDomOverlays;
-extern enum abstract XRDOMOverlayType(String) {
+enum abstract XRDOMOverlayType(String) {
 	var SCREEN = "screen";
 	var FLOATING = "floating";
 	var HEAD_LOCKED = "head-locked";

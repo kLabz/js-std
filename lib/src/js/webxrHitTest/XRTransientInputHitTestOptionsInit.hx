@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr-hit-test.idl. Do not edit!
+// This file is generated from @webref/idl/webxr-hit-test.idl. Do not edit!
 
 package js.webxrHitTest;
-extern typedef XRTransientInputHitTestOptionsInit = {
+typedef XRTransientInputHitTestOptionsInit = {
 	var profile : DOMString;
 	@:optional
 	var entityTypes : [object Object];

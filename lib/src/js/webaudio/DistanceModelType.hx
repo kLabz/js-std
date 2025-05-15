@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webaudio.idl. Do not edit!
+// This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
-extern enum abstract DistanceModelType(String) {
+enum abstract DistanceModelType(String) {
 	var LINEAR = "linear";
 	var INVERSE = "inverse";
 	var EXPONENTIAL = "exponential";

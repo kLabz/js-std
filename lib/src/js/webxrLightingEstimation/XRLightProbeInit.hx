@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr-lighting-estimation.idl. Do not edit!
+// This file is generated from @webref/idl/webxr-lighting-estimation.idl. Do not edit!
 
 package js.webxrLightingEstimation;
-extern typedef XRLightProbeInit = {
+typedef XRLightProbeInit = {
 	@:optional
 	var reflectionFormat : js.webxrLightingEstimation.XRReflectionFormat;
 };

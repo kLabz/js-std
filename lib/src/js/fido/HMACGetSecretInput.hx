@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fido.idl. Do not edit!
+// This file is generated from @webref/idl/fido.idl. Do not edit!
 
 package js.fido;
-extern typedef HMACGetSecretInput = {
+typedef HMACGetSecretInput = {
 	var salt1 : ArrayBuffer;
 	@:optional
 	var salt2 : ArrayBuffer;

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from html.idl. Do not edit!
+// This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
-extern typedef PromiseRejectionEventInit = js.dom.EventInit & {
+typedef PromiseRejectionEventInit = js.dom.EventInit & {
 	var promise : object;
 	@:optional
 	var reason : any;

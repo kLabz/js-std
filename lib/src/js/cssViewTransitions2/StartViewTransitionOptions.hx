@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-view-transitions-2.idl. Do not edit!
+// This file is generated from @webref/idl/css-view-transitions-2.idl. Do not edit!
 
 package js.cssViewTransitions2;
-extern typedef StartViewTransitionOptions = {
+typedef StartViewTransitionOptions = {
 	@:optional
 	var update : ViewTransitionUpdateCallback;
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from screen-capture.idl. Do not edit!
+// This file is generated from @webref/idl/screen-capture.idl. Do not edit!
 
 package js.screenCapture;
-extern typedef DisplayMediaStreamOptions = {
+typedef DisplayMediaStreamOptions = {
 	@:optional
 	var video : [object Object],[object Object];
 	@:optional

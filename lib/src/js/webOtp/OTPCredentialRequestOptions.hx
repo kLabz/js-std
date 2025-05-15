@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from web-otp.idl. Do not edit!
+// This file is generated from @webref/idl/web-otp.idl. Do not edit!
 
 package js.webOtp;
-extern typedef OTPCredentialRequestOptions = {
+typedef OTPCredentialRequestOptions = {
 	@:optional
 	var transport : [object Object];
 };

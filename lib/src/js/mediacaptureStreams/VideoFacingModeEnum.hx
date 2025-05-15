@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from mediacapture-streams.idl. Do not edit!
+// This file is generated from @webref/idl/mediacapture-streams.idl. Do not edit!
 
 package js.mediacaptureStreams;
-extern enum abstract VideoFacingModeEnum(String) {
+enum abstract VideoFacingModeEnum(String) {
 	var USER = "user";
 	var ENVIRONMENT = "environment";
 	var LEFT = "left";

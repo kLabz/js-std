@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcodecs.idl. Do not edit!
+// This file is generated from @webref/idl/webcodecs.idl. Do not edit!
 
 package js.webcodecs;
-extern typedef EncodedAudioChunkMetadata = {
+typedef EncodedAudioChunkMetadata = {
 	@:optional
 	var decoderConfig : js.webcodecs.AudioDecoderConfig;
 };

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from shape-detection-api.idl. Do not edit!
+// This file is generated from @webref/idl/shape-detection-api.idl. Do not edit!
 
 package js.shapeDetectionApi;
-extern typedef DetectedFace = {
+typedef DetectedFace = {
 	var boundingBox : DOMRectReadOnly;
 	var landmarks : [object Object];
 };

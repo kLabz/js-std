@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from window-controls-overlay.idl. Do not edit!
+// This file is generated from @webref/idl/window-controls-overlay.idl. Do not edit!
 
 package js.windowControlsOverlay;
-extern typedef WindowControlsOverlayGeometryChangeEventInit = js.dom.EventInit & {
+typedef WindowControlsOverlayGeometryChangeEventInit = js.dom.EventInit & {
 	var titlebarAreaRect : DOMRect;
 	@:optional
 	var visible : boolean;

@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcrypto.idl. Do not edit!
+// This file is generated from @webref/idl/webcrypto.idl. Do not edit!
 
 package js.webcrypto;
-extern typedef EcKeyGenParams = js.webcrypto.Algorithm & {
+typedef EcKeyGenParams = js.webcrypto.Algorithm & {
 	var namedCurve : NamedCurve;
 };

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxrlayers.idl. Do not edit!
+// This file is generated from @webref/idl/webxrlayers.idl. Do not edit!
 
 package js.webxrlayers;
-extern enum abstract XRLayerQuality(String) {
+enum abstract XRLayerQuality(String) {
 	var DEFAULT = "default";
 	var TEXT_OPTIMIZED = "text-optimized";
 	var GRAPHICS_OPTIMIZED = "graphics-optimized";

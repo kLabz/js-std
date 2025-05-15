@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from user-timing.idl. Do not edit!
+// This file is generated from @webref/idl/user-timing.idl. Do not edit!
 
 package js.userTiming;
-extern typedef PerformanceMarkOptions = {
+typedef PerformanceMarkOptions = {
 	@:optional
 	var detail : any;
 	@:optional

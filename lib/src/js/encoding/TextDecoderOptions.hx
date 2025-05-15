@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from encoding.idl. Do not edit!
+// This file is generated from @webref/idl/encoding.idl. Do not edit!
 
 package js.encoding;
-extern typedef TextDecoderOptions = {
+typedef TextDecoderOptions = {
 	@:optional
 	var fatal : boolean;
 	@:optional

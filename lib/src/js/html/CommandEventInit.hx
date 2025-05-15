@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from html.idl. Do not edit!
+// This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
-extern typedef CommandEventInit = js.dom.EventInit & {
+typedef CommandEventInit = js.dom.EventInit & {
 	@:optional
 	var source : Element;
 	@:optional

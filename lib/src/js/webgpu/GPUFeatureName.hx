@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webgpu.idl. Do not edit!
+// This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
-extern enum abstract GPUFeatureName(String) {
+enum abstract GPUFeatureName(String) {
 	var CORE_FEATURES_AND_LIMITS = "core-features-and-limits";
 	var DEPTH_CLIP_CONTROL = "depth-clip-control";
 	var DEPTH32FLOAT_STENCIL8 = "depth32float-stencil8";

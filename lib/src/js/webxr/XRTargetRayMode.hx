@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr.idl. Do not edit!
+// This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
-extern enum abstract XRTargetRayMode(String) {
+enum abstract XRTargetRayMode(String) {
 	var GAZE = "gaze";
 	var TRACKED_POINTER = "tracked-pointer";
 	var SCREEN = "screen";

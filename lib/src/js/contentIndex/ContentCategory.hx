@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from content-index.idl. Do not edit!
+// This file is generated from @webref/idl/content-index.idl. Do not edit!
 
 package js.contentIndex;
-extern enum abstract ContentCategory(String) {
+enum abstract ContentCategory(String) {
 	var NONE = "";
 	var HOMEPAGE = "homepage";
 	var ARTICLE = "article";

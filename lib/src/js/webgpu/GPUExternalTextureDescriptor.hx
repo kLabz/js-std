@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webgpu.idl. Do not edit!
+// This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
-extern typedef GPUExternalTextureDescriptor = js.webgpu.GPUObjectDescriptorBase & {
+typedef GPUExternalTextureDescriptor = js.webgpu.GPUObjectDescriptorBase & {
 	var source : [object Object],[object Object];
 	@:optional
 	var colorSpace : js.html.PredefinedColorSpace;

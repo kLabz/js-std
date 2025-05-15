@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from writing-assistance-apis.idl. Do not edit!
+// This file is generated from @webref/idl/writing-assistance-apis.idl. Do not edit!
 
 package js.writingAssistanceApis;
-extern typedef SummarizerCreateOptions = js.writingAssistanceApis.SummarizerCreateCoreOptions & {
+typedef SummarizerCreateOptions = js.writingAssistanceApis.SummarizerCreateCoreOptions & {
 	@:optional
 	var signal : AbortSignal;
 	@:optional

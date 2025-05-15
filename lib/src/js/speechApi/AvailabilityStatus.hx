@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from speech-api.idl. Do not edit!
+// This file is generated from @webref/idl/speech-api.idl. Do not edit!
 
 package js.speechApi;
-extern enum abstract AvailabilityStatus(String) {
+enum abstract AvailabilityStatus(String) {
 	var UNAVAILABLE = "unavailable";
 	var DOWNLOADABLE = "downloadable";
 	var DOWNLOADING = "downloading";

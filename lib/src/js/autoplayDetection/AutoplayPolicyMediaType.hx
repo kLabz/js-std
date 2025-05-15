@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from autoplay-detection.idl. Do not edit!
+// This file is generated from @webref/idl/autoplay-detection.idl. Do not edit!
 
 package js.autoplayDetection;
-extern enum abstract AutoplayPolicyMediaType(String) {
+enum abstract AutoplayPolicyMediaType(String) {
 	var MEDIAELEMENT = "mediaelement";
 	var AUDIOCONTEXT = "audiocontext";
 }

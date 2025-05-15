@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from remote-playback.idl. Do not edit!
+// This file is generated from @webref/idl/remote-playback.idl. Do not edit!
 
 package js.remotePlayback;
-extern enum abstract RemotePlaybackState(String) {
+enum abstract RemotePlaybackState(String) {
 	var CONNECTING = "connecting";
 	var CONNECTED = "connected";
 	var DISCONNECTED = "disconnected";

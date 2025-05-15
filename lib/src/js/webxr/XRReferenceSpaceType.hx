@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr.idl. Do not edit!
+// This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
-extern enum abstract XRReferenceSpaceType(String) {
+enum abstract XRReferenceSpaceType(String) {
 	var VIEWER = "viewer";
 	var LOCAL = "local";
 	var LOCAL_FLOOR = "local-floor";

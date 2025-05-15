@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from navigation-timing.idl. Do not edit!
+// This file is generated from @webref/idl/navigation-timing.idl. Do not edit!
 
 package js.navigationTiming;
-extern enum abstract NavigationTimingType(String) {
+enum abstract NavigationTimingType(String) {
 	var NAVIGATE = "navigate";
 	var RELOAD = "reload";
 	var BACK_FORWARD = "back_forward";

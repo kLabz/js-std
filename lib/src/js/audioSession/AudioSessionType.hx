@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from audio-session.idl. Do not edit!
+// This file is generated from @webref/idl/audio-session.idl. Do not edit!
 
 package js.audioSession;
-extern enum abstract AudioSessionType(String) {
+enum abstract AudioSessionType(String) {
 	var AUTO = "auto";
 	var PLAYBACK = "playback";
 	var TRANSIENT = "transient";

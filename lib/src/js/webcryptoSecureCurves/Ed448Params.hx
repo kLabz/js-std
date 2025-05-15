@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcrypto-secure-curves.idl. Do not edit!
+// This file is generated from @webref/idl/webcrypto-secure-curves.idl. Do not edit!
 
 package js.webcryptoSecureCurves;
-extern typedef Ed448Params = js.webcrypto.Algorithm & {
+typedef Ed448Params = js.webcrypto.Algorithm & {
 	@:optional
 	var context : BufferSource;
 };

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from long-animation-frames.idl. Do not edit!
+// This file is generated from @webref/idl/long-animation-frames.idl. Do not edit!
 
 package js.longAnimationFrames;
-extern enum abstract ScriptWindowAttribution(String) {
+enum abstract ScriptWindowAttribution(String) {
 	var SELF = "self";
 	var DESCENDANT = "descendant";
 	var ANCESTOR = "ancestor";

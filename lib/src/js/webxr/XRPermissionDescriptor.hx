@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr.idl. Do not edit!
+// This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
-extern typedef XRPermissionDescriptor = js.permissions.PermissionDescriptor & {
+typedef XRPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var mode : js.webxr.XRSessionMode;
 	@:optional

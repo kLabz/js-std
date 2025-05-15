@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webgpu.idl. Do not edit!
+// This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
-extern enum abstract GPUVertexFormat(String) {
+enum abstract GPUVertexFormat(String) {
 	var UINT8 = "uint8";
 	var UINT8X2 = "uint8x2";
 	var UINT8X4 = "uint8x4";

@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from sanitizer-api.idl. Do not edit!
+// This file is generated from @webref/idl/sanitizer-api.idl. Do not edit!
 
 package js.sanitizerApi;
-extern enum abstract SanitizerPresets(String) {
+enum abstract SanitizerPresets(String) {
 	var DEFAULT = "default";
 }

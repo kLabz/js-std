@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr-depth-sensing.idl. Do not edit!
+// This file is generated from @webref/idl/webxr-depth-sensing.idl. Do not edit!
 
 package js.webxrDepthSensing;
-extern typedef XRDepthStateInit = {
+typedef XRDepthStateInit = {
 	var usagePreference : [object Object];
 	var dataFormatPreference : [object Object];
 	@:optional

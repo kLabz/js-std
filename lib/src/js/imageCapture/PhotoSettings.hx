@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from image-capture.idl. Do not edit!
+// This file is generated from @webref/idl/image-capture.idl. Do not edit!
 
 package js.imageCapture;
-extern typedef PhotoSettings = {
+typedef PhotoSettings = {
 	@:optional
 	var fillLightMode : js.imageCapture.FillLightMode;
 	@:optional

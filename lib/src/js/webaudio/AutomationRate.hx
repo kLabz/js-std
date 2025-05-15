@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webaudio.idl. Do not edit!
+// This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
-extern enum abstract AutomationRate(String) {
+enum abstract AutomationRate(String) {
 	var A_RATE = "a-rate";
 	var K_RATE = "k-rate";
 }

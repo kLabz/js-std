@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webhid.idl. Do not edit!
+// This file is generated from @webref/idl/webhid.idl. Do not edit!
 
 package js.webhid;
-extern typedef HIDCollectionInfo = {
+typedef HIDCollectionInfo = {
 	@:optional
 	var usagePage : unsigned short;
 	@:optional

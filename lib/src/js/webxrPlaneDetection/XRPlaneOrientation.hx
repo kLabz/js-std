@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr-plane-detection.idl. Do not edit!
+// This file is generated from @webref/idl/webxr-plane-detection.idl. Do not edit!
 
 package js.webxrPlaneDetection;
-extern enum abstract XRPlaneOrientation(String) {
+enum abstract XRPlaneOrientation(String) {
 	var HORIZONTAL = "horizontal";
 	var VERTICAL = "vertical";
 }

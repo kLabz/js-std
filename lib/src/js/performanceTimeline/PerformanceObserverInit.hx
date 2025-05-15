@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from performance-timeline.idl. Do not edit!
+// This file is generated from @webref/idl/performance-timeline.idl. Do not edit!
 
 package js.performanceTimeline;
-extern typedef PerformanceObserverInit = {
+typedef PerformanceObserverInit = {
 	@:optional
 	var entryTypes : [object Object];
 	@:optional

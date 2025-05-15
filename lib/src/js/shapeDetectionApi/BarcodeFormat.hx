@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from shape-detection-api.idl. Do not edit!
+// This file is generated from @webref/idl/shape-detection-api.idl. Do not edit!
 
 package js.shapeDetectionApi;
-extern enum abstract BarcodeFormat(String) {
+enum abstract BarcodeFormat(String) {
 	var AZTEC = "aztec";
 	var CODE_128 = "code_128";
 	var CODE_39 = "code_39";

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from html.idl. Do not edit!
+// This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
-extern enum abstract ResizeQuality(String) {
+enum abstract ResizeQuality(String) {
 	var PIXELATED = "pixelated";
 	var LOW = "low";
 	var MEDIUM = "medium";

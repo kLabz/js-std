@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from accelerometer.idl. Do not edit!
+// This file is generated from @webref/idl/accelerometer.idl. Do not edit!
 
 package js.accelerometer;
-extern typedef AccelerometerSensorOptions = js.genericSensor.SensorOptions & {
+typedef AccelerometerSensorOptions = js.genericSensor.SensorOptions & {
 	@:optional
 	var referenceFrame : js.accelerometer.AccelerometerLocalCoordinateSystem;
 };

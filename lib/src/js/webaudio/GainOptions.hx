@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webaudio.idl. Do not edit!
+// This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
-extern typedef GainOptions = js.webaudio.AudioNodeOptions & {
+typedef GainOptions = js.webaudio.AudioNodeOptions & {
 	@:optional
 	var gain : float;
 };

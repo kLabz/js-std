@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from clipboard-apis.idl. Do not edit!
+// This file is generated from @webref/idl/clipboard-apis.idl. Do not edit!
 
 package js.clipboardApis;
-extern enum abstract PresentationStyle(String) {
+enum abstract PresentationStyle(String) {
 	var UNSPECIFIED = "unspecified";
 	var INLINE = "inline";
 	var ATTACHMENT = "attachment";

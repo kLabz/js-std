@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from login-status.idl. Do not edit!
+// This file is generated from @webref/idl/login-status.idl. Do not edit!
 
 package js.loginStatus;
-extern enum abstract LoginStatus(String) {
+enum abstract LoginStatus(String) {
 	var LOGGED_IN = "logged-in";
 	var LOGGED_OUT = "logged-out";
 }

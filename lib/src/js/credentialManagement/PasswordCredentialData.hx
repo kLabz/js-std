@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from credential-management.idl. Do not edit!
+// This file is generated from @webref/idl/credential-management.idl. Do not edit!
 
 package js.credentialManagement;
-extern typedef PasswordCredentialData = js.credentialManagement.CredentialData & {
+typedef PasswordCredentialData = js.credentialManagement.CredentialData & {
 	@:optional
 	var name : USVString;
 	@:optional

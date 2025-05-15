@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from ppa.idl. Do not edit!
+// This file is generated from @webref/idl/ppa.idl. Do not edit!
 
 package js.ppa;
-extern typedef PrivateAttributionImpressionOptions = {
+typedef PrivateAttributionImpressionOptions = {
 	var histogramIndex : unsigned long;
 	@:optional
 	var filterData : unsigned long;

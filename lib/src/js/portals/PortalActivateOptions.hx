@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from portals.idl. Do not edit!
+// This file is generated from @webref/idl/portals.idl. Do not edit!
 
 package js.portals;
-extern typedef PortalActivateOptions = js.html.StructuredSerializeOptions & {
+typedef PortalActivateOptions = js.html.StructuredSerializeOptions & {
 	@:optional
 	var data : any;
 };

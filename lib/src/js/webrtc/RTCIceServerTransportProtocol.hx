@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
-extern enum abstract RTCIceServerTransportProtocol(String) {
+enum abstract RTCIceServerTransportProtocol(String) {
 	var UDP = "udp";
 	var TCP = "tcp";
 	var TLS = "tls";

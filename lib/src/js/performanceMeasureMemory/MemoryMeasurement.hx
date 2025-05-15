@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from performance-measure-memory.idl. Do not edit!
+// This file is generated from @webref/idl/performance-measure-memory.idl. Do not edit!
 
 package js.performanceMeasureMemory;
-extern typedef MemoryMeasurement = {
+typedef MemoryMeasurement = {
 	@:optional
 	var bytes : unsigned long long;
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webgpu.idl. Do not edit!
+// This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
-extern enum abstract GPUBufferBindingType(String) {
+enum abstract GPUBufferBindingType(String) {
 	var UNIFORM = "uniform";
 	var STORAGE = "storage";
 	var READ_ONLY_STORAGE = "read-only-storage";

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from html.idl. Do not edit!
+// This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
-extern enum abstract CanvasColorType(String) {
+enum abstract CanvasColorType(String) {
 	var UNORM8 = "unorm8";
 	var FLOAT16 = "float16";
 }

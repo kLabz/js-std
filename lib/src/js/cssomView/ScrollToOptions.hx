@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from cssom-view.idl. Do not edit!
+// This file is generated from @webref/idl/cssom-view.idl. Do not edit!
 
 package js.cssomView;
-extern typedef ScrollToOptions = js.cssomView.ScrollOptions & {
+typedef ScrollToOptions = js.cssomView.ScrollOptions & {
 	@:optional
 	var left : unrestricted double;
 	@:optional

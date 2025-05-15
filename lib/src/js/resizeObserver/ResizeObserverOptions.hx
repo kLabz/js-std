@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from resize-observer.idl. Do not edit!
+// This file is generated from @webref/idl/resize-observer.idl. Do not edit!
 
 package js.resizeObserver;
-extern typedef ResizeObserverOptions = {
+typedef ResizeObserverOptions = {
 	@:optional
 	var box : js.resizeObserver.ResizeObserverBoxOptions;
 };

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from long-animation-frames.idl. Do not edit!
+// This file is generated from @webref/idl/long-animation-frames.idl. Do not edit!
 
 package js.longAnimationFrames;
-extern enum abstract ScriptInvokerType(String) {
+enum abstract ScriptInvokerType(String) {
 	var CLASSIC_SCRIPT = "classic-script";
 	var MODULE_SCRIPT = "module-script";
 	var EVENT_LISTENER = "event-listener";

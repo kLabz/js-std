@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from encrypted-media.idl. Do not edit!
+// This file is generated from @webref/idl/encrypted-media.idl. Do not edit!
 
 package js.encryptedMedia;
-extern enum abstract MediaKeysRequirement(String) {
+enum abstract MediaKeysRequirement(String) {
 	var REQUIRED = "required";
 	var OPTIONAL = "optional";
 	var NOT_ALLOWED = "not-allowed";

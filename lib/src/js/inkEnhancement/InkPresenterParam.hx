@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from ink-enhancement.idl. Do not edit!
+// This file is generated from @webref/idl/ink-enhancement.idl. Do not edit!
 
 package js.inkEnhancement;
-extern typedef InkPresenterParam = {
+typedef InkPresenterParam = {
 	@:optional
 	var presentationArea : Element;
 };

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from selection-api.idl. Do not edit!
+// This file is generated from @webref/idl/selection-api.idl. Do not edit!
 
 package js.selectionApi;
-extern typedef GetComposedRangesOptions = {
+typedef GetComposedRangesOptions = {
 	@:optional
 	var shadowRoots : [object Object];
 };

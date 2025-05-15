@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from ppa.idl. Do not edit!
+// This file is generated from @webref/idl/ppa.idl. Do not edit!
 
 package js.ppa;
-extern enum abstract PrivateAttributionLogic(String) {
+enum abstract PrivateAttributionLogic(String) {
 	var LAST_TOUCH = "last-touch";
 }

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from page-lifecycle.idl. Do not edit!
+// This file is generated from @webref/idl/page-lifecycle.idl. Do not edit!
 
 package js.pageLifecycle;
-extern enum abstract ClientLifecycleState(String) {
+enum abstract ClientLifecycleState(String) {
 	var ACTIVE = "active";
 	var FROZEN = "frozen";
 }

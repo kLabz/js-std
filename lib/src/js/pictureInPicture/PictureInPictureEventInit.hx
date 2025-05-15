@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from picture-in-picture.idl. Do not edit!
+// This file is generated from @webref/idl/picture-in-picture.idl. Do not edit!
 
 package js.pictureInPicture;
-extern typedef PictureInPictureEventInit = js.dom.EventInit & {
+typedef PictureInPictureEventInit = js.dom.EventInit & {
 	var pictureInPictureWindow : PictureInPictureWindow;
 };

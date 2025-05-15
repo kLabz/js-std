@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from screen-capture.idl. Do not edit!
+// This file is generated from @webref/idl/screen-capture.idl. Do not edit!
 
 package js.screenCapture;
-extern enum abstract CaptureStartFocusBehavior(String) {
+enum abstract CaptureStartFocusBehavior(String) {
 	var FOCUS_CAPTURING_APPLICATION = "focus-capturing-application";
 	var FOCUS_CAPTURED_SURFACE = "focus-captured-surface";
 	var NO_FOCUS_CHANGE = "no-focus-change";

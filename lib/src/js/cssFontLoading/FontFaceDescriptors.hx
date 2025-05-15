@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-font-loading.idl. Do not edit!
+// This file is generated from @webref/idl/css-font-loading.idl. Do not edit!
 
 package js.cssFontLoading;
-extern typedef FontFaceDescriptors = {
+typedef FontFaceDescriptors = {
 	@:optional
 	var style : CSSOMString;
 	@:optional

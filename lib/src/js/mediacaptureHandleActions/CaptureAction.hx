@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from mediacapture-handle-actions.idl. Do not edit!
+// This file is generated from @webref/idl/mediacapture-handle-actions.idl. Do not edit!
 
 package js.mediacaptureHandleActions;
-extern enum abstract CaptureAction(String) {
+enum abstract CaptureAction(String) {
 	var NEXT = "next";
 	var PREVIOUS = "previous";
 	var FIRST = "first";

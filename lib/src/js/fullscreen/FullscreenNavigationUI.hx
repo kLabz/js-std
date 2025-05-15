@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fullscreen.idl. Do not edit!
+// This file is generated from @webref/idl/fullscreen.idl. Do not edit!
 
 package js.fullscreen;
-extern enum abstract FullscreenNavigationUI(String) {
+enum abstract FullscreenNavigationUI(String) {
 	var AUTO = "auto";
 	var SHOW = "show";
 	var HIDE = "hide";

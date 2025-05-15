@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from speech-api.idl. Do not edit!
+// This file is generated from @webref/idl/speech-api.idl. Do not edit!
 
 package js.speechApi;
-extern typedef SpeechRecognitionEventInit = js.dom.EventInit & {
+typedef SpeechRecognitionEventInit = js.dom.EventInit & {
 	@:optional
 	var resultIndex : unsigned long;
 	var results : SpeechRecognitionResultList;

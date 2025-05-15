@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from presentation-api.idl. Do not edit!
+// This file is generated from @webref/idl/presentation-api.idl. Do not edit!
 
 package js.presentationApi;
-extern enum abstract PresentationConnectionState(String) {
+enum abstract PresentationConnectionState(String) {
 	var CONNECTING = "connecting";
 	var CONNECTED = "connected";
 	var CLOSED = "closed";

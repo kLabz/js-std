@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from gyroscope.idl. Do not edit!
+// This file is generated from @webref/idl/gyroscope.idl. Do not edit!
 
 package js.gyroscope;
-extern typedef GyroscopeSensorOptions = js.genericSensor.SensorOptions & {
+typedef GyroscopeSensorOptions = js.genericSensor.SensorOptions & {
 	@:optional
 	var referenceFrame : js.gyroscope.GyroscopeLocalCoordinateSystem;
 };

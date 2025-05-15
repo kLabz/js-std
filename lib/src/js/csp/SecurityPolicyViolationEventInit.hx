@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from CSP.idl. Do not edit!
+// This file is generated from @webref/idl/CSP.idl. Do not edit!
 
 package js.csp;
-extern typedef SecurityPolicyViolationEventInit = js.dom.EventInit & {
+typedef SecurityPolicyViolationEventInit = js.dom.EventInit & {
 	@:optional
 	var documentURI : USVString;
 	@:optional

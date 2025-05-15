@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from mediacapture-transform.idl. Do not edit!
+// This file is generated from @webref/idl/mediacapture-transform.idl. Do not edit!
 
 package js.mediacaptureTransform;
-extern typedef MediaStreamTrackProcessorInit = {
+typedef MediaStreamTrackProcessorInit = {
 	var track : MediaStreamTrack;
 	@:optional
 	var maxBufferSize : unsigned short;

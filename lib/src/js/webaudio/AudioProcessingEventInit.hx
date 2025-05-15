@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webaudio.idl. Do not edit!
+// This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
-extern typedef AudioProcessingEventInit = js.dom.EventInit & {
+typedef AudioProcessingEventInit = js.dom.EventInit & {
 	var playbackTime : double;
 	var inputBuffer : AudioBuffer;
 	var outputBuffer : AudioBuffer;

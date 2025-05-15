@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from handwriting-recognition.idl. Do not edit!
+// This file is generated from @webref/idl/handwriting-recognition.idl. Do not edit!
 
 package js.handwritingRecognition;
-extern typedef HandwritingPrediction = {
+typedef HandwritingPrediction = {
 	var text : DOMString;
 	@:optional
 	var segmentationResult : [object Object];

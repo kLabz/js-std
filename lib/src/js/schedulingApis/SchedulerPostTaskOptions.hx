@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from scheduling-apis.idl. Do not edit!
+// This file is generated from @webref/idl/scheduling-apis.idl. Do not edit!
 
 package js.schedulingApis;
-extern typedef SchedulerPostTaskOptions = {
+typedef SchedulerPostTaskOptions = {
 	@:optional
 	var signal : AbortSignal;
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-contain.idl. Do not edit!
+// This file is generated from @webref/idl/css-contain.idl. Do not edit!
 
 package js.cssContain;
-extern typedef ContentVisibilityAutoStateChangeEventInit = js.dom.EventInit & {
+typedef ContentVisibilityAutoStateChangeEventInit = js.dom.EventInit & {
 	@:optional
 	var skipped : boolean;
 };

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webgpu.idl. Do not edit!
+// This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
-extern enum abstract GPUDeviceLostReason(String) {
+enum abstract GPUDeviceLostReason(String) {
 	var UNKNOWN = "unknown";
 	var DESTROYED = "destroyed";
 }

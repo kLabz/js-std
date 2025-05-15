@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-mixins.idl. Do not edit!
+// This file is generated from @webref/idl/css-mixins.idl. Do not edit!
 
 package js.cssMixins;
-extern typedef FunctionParameter = {
+typedef FunctionParameter = {
 	var name : CSSOMString;
 	var type : CSSOMString;
 	@:optional

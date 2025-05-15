@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-layout-api.idl. Do not edit!
+// This file is generated from @webref/idl/css-layout-api.idl. Do not edit!
 
 package js.cssLayoutApi;
-extern enum abstract BreakType(String) {
+enum abstract BreakType(String) {
 	var NONE = "none";
 	var LINE = "line";
 	var COLUMN = "column";

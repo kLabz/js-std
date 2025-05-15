@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from geolocation-sensor.idl. Do not edit!
+// This file is generated from @webref/idl/geolocation-sensor.idl. Do not edit!
 
 package js.geolocationSensor;
-extern typedef GeolocationSensorReading = {
+typedef GeolocationSensorReading = {
 	@:optional
 	var timestamp : DOMHighResTimeStamp;
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from image-capture.idl. Do not edit!
+// This file is generated from @webref/idl/image-capture.idl. Do not edit!
 
 package js.imageCapture;
-extern enum abstract RedEyeReduction(String) {
+enum abstract RedEyeReduction(String) {
 	var NEVER = "never";
 	var ALWAYS = "always";
 	var CONTROLLABLE = "controllable";

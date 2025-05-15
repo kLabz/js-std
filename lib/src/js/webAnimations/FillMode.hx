@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from web-animations.idl. Do not edit!
+// This file is generated from @webref/idl/web-animations.idl. Do not edit!
 
 package js.webAnimations;
-extern enum abstract FillMode(String) {
+enum abstract FillMode(String) {
 	var NONE = "none";
 	var FORWARDS = "forwards";
 	var BACKWARDS = "backwards";

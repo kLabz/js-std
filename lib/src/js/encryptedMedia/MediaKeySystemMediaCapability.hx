@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from encrypted-media.idl. Do not edit!
+// This file is generated from @webref/idl/encrypted-media.idl. Do not edit!
 
 package js.encryptedMedia;
-extern typedef MediaKeySystemMediaCapability = {
+typedef MediaKeySystemMediaCapability = {
 	@:optional
 	var contentType : DOMString;
 	@:optional

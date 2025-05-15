@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webaudio.idl. Do not edit!
+// This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
-extern typedef ChannelMergerOptions = js.webaudio.AudioNodeOptions & {
+typedef ChannelMergerOptions = js.webaudio.AudioNodeOptions & {
 	@:optional
 	var numberOfInputs : unsigned long;
 };

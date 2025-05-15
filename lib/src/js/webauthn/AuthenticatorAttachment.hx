@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webauthn.idl. Do not edit!
+// This file is generated from @webref/idl/webauthn.idl. Do not edit!
 
 package js.webauthn;
-extern enum abstract AuthenticatorAttachment(String) {
+enum abstract AuthenticatorAttachment(String) {
 	var PLATFORM = "platform";
 	var CROSS_PLATFORM = "cross-platform";
 }

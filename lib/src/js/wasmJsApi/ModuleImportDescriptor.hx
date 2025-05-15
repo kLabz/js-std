@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from wasm-js-api.idl. Do not edit!
+// This file is generated from @webref/idl/wasm-js-api.idl. Do not edit!
 
 package js.wasmJsApi;
-extern typedef ModuleImportDescriptor = {
+typedef ModuleImportDescriptor = {
 	var module : USVString;
 	var name : USVString;
 	var kind : js.wasmJsApi.ImportExportKind;

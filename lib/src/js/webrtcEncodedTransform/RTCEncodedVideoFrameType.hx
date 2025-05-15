@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc-encoded-transform.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc-encoded-transform.idl. Do not edit!
 
 package js.webrtcEncodedTransform;
-extern enum abstract RTCEncodedVideoFrameType(String) {
+enum abstract RTCEncodedVideoFrameType(String) {
 	var EMPTY = "empty";
 	var KEY = "key";
 	var DELTA = "delta";

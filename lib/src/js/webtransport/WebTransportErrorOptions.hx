@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webtransport.idl. Do not edit!
+// This file is generated from @webref/idl/webtransport.idl. Do not edit!
 
 package js.webtransport;
-extern typedef WebTransportErrorOptions = {
+typedef WebTransportErrorOptions = {
 	@:optional
 	var source : js.webtransport.WebTransportErrorSource;
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from audio-session.idl. Do not edit!
+// This file is generated from @webref/idl/audio-session.idl. Do not edit!
 
 package js.audioSession;
-extern enum abstract AudioSessionState(String) {
+enum abstract AudioSessionState(String) {
 	var INACTIVE = "inactive";
 	var ACTIVE = "active";
 	var INTERRUPTED = "interrupted";

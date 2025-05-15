@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from cookie-store.idl. Do not edit!
+// This file is generated from @webref/idl/cookie-store.idl. Do not edit!
 
 package js.cookieStore;
-extern typedef CookieStoreDeleteOptions = {
+typedef CookieStoreDeleteOptions = {
 	var name : USVString;
 	@:optional
 	var domain : USVString;

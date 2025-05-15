@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webgpu.idl. Do not edit!
+// This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
-extern enum abstract GPUErrorFilter(String) {
+enum abstract GPUErrorFilter(String) {
 	var VALIDATION = "validation";
 	var OUT_OF_MEMORY = "out-of-memory";
 	var INTERNAL = "internal";

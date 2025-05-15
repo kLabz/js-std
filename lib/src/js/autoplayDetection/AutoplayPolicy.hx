@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from autoplay-detection.idl. Do not edit!
+// This file is generated from @webref/idl/autoplay-detection.idl. Do not edit!
 
 package js.autoplayDetection;
-extern enum abstract AutoplayPolicy(String) {
+enum abstract AutoplayPolicy(String) {
 	var ALLOWED = "allowed";
 	var ALLOWED_MUTED = "allowed-muted";
 	var DISALLOWED = "disallowed";

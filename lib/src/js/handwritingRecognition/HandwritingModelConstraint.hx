@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from handwriting-recognition.idl. Do not edit!
+// This file is generated from @webref/idl/handwriting-recognition.idl. Do not edit!
 
 package js.handwritingRecognition;
-extern typedef HandwritingModelConstraint = {
+typedef HandwritingModelConstraint = {
 	var languages : [object Object];
 };

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from streams.idl. Do not edit!
+// This file is generated from @webref/idl/streams.idl. Do not edit!
 
 package js.streams;
-extern typedef ReadableWritablePair = {
+typedef ReadableWritablePair = {
 	var readable : ReadableStream;
 	var writable : WritableStream;
 };

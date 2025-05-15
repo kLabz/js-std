@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from image-resource.idl. Do not edit!
+// This file is generated from @webref/idl/image-resource.idl. Do not edit!
 
 package js.imageResource;
-extern typedef ImageResource = {
+typedef ImageResource = {
 	var src : USVString;
 	@:optional
 	var sizes : DOMString;

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from html.idl. Do not edit!
+// This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
-extern typedef StorageEventInit = js.dom.EventInit & {
+typedef StorageEventInit = js.dom.EventInit & {
 	@:optional
 	var key : DOMString;
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from web-animations-2.idl. Do not edit!
+// This file is generated from @webref/idl/web-animations-2.idl. Do not edit!
 
 package js.webAnimations2;
-extern enum abstract AnimationTriggerType(String) {
+enum abstract AnimationTriggerType(String) {
 	var ONCE = "once";
 	var REPEAT = "repeat";
 	var ALTERNATE = "alternate";

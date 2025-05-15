@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webauthn.idl. Do not edit!
+// This file is generated from @webref/idl/webauthn.idl. Do not edit!
 
 package js.webauthn;
-extern typedef PublicKeyCredentialCreationOptions = {
+typedef PublicKeyCredentialCreationOptions = {
 	var rp : js.webauthn.PublicKeyCredentialRpEntity;
 	var user : js.webauthn.PublicKeyCredentialUserEntity;
 	var challenge : BufferSource;

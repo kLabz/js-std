@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webusb.idl. Do not edit!
+// This file is generated from @webref/idl/webusb.idl. Do not edit!
 
 package js.webusb;
-extern typedef USBPermissionDescriptor = js.permissions.PermissionDescriptor & {
+typedef USBPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var filters : [object Object];
 	@:optional

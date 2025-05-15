@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from scroll-animations.idl. Do not edit!
+// This file is generated from @webref/idl/scroll-animations.idl. Do not edit!
 
 package js.scrollAnimations;
-extern enum abstract ScrollAxis(String) {
+enum abstract ScrollAxis(String) {
 	var BLOCK = "block";
 	var INLINE = "inline";
 	var X = "x";

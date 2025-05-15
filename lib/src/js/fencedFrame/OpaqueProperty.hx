@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fenced-frame.idl. Do not edit!
+// This file is generated from @webref/idl/fenced-frame.idl. Do not edit!
 
 package js.fencedFrame;
-extern enum abstract OpaqueProperty(String) {
+enum abstract OpaqueProperty(String) {
 	var OPAQUE = "opaque";
 }

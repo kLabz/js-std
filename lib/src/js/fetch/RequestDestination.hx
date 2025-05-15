@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fetch.idl. Do not edit!
+// This file is generated from @webref/idl/fetch.idl. Do not edit!
 
 package js.fetch;
-extern enum abstract RequestDestination(String) {
+enum abstract RequestDestination(String) {
 	var NONE = "";
 	var AUDIO = "audio";
 	var AUDIOWORKLET = "audioworklet";

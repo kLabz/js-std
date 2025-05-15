@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from js-self-profiling.idl. Do not edit!
+// This file is generated from @webref/idl/js-self-profiling.idl. Do not edit!
 
 package js.jsSelfProfiling;
-extern typedef ProfilerSample = {
+typedef ProfilerSample = {
 	var timestamp : DOMHighResTimeStamp;
 	@:optional
 	var stackId : unsigned long long;

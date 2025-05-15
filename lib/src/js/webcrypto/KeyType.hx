@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcrypto.idl. Do not edit!
+// This file is generated from @webref/idl/webcrypto.idl. Do not edit!
 
 package js.webcrypto;
-extern enum abstract KeyType(String) {
+enum abstract KeyType(String) {
 	var PUBLIC = "public";
 	var PRIVATE = "private";
 	var SECRET = "secret";

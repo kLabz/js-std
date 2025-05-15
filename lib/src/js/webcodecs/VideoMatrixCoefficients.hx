@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcodecs.idl. Do not edit!
+// This file is generated from @webref/idl/webcodecs.idl. Do not edit!
 
 package js.webcodecs;
-extern enum abstract VideoMatrixCoefficients(String) {
+enum abstract VideoMatrixCoefficients(String) {
 	var RGB = "rgb";
 	var BT709 = "bt709";
 	var BT470BG = "bt470bg";

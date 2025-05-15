@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from file-system-access.idl. Do not edit!
+// This file is generated from @webref/idl/file-system-access.idl. Do not edit!
 
 package js.fileSystemAccess;
-extern enum abstract WellKnownDirectory(String) {
+enum abstract WellKnownDirectory(String) {
 	var DESKTOP = "desktop";
 	var DOCUMENTS = "documents";
 	var DOWNLOADS = "downloads";

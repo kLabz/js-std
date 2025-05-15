@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from gamepad.idl. Do not edit!
+// This file is generated from @webref/idl/gamepad.idl. Do not edit!
 
 package js.gamepad;
-extern enum abstract GamepadHapticEffectType(String) {
+enum abstract GamepadHapticEffectType(String) {
 	var DUAL_RUMBLE = "dual-rumble";
 	var TRIGGER_RUMBLE = "trigger-rumble";
 }

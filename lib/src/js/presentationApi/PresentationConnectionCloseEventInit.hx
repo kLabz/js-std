@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from presentation-api.idl. Do not edit!
+// This file is generated from @webref/idl/presentation-api.idl. Do not edit!
 
 package js.presentationApi;
-extern typedef PresentationConnectionCloseEventInit = js.dom.EventInit & {
+typedef PresentationConnectionCloseEventInit = js.dom.EventInit & {
 	var reason : js.presentationApi.PresentationConnectionCloseReason;
 	@:optional
 	var message : DOMString;

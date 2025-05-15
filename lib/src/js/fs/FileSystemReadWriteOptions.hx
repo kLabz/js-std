@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fs.idl. Do not edit!
+// This file is generated from @webref/idl/fs.idl. Do not edit!
 
 package js.fs;
-extern typedef FileSystemReadWriteOptions = {
+typedef FileSystemReadWriteOptions = {
 	@:optional
 	var at : unsigned long long;
 };

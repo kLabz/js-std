@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-nav.idl. Do not edit!
+// This file is generated from @webref/idl/css-nav.idl. Do not edit!
 
 package js.cssNav;
-extern typedef NavigationEventInit = js.uievents.UIEventInit & {
+typedef NavigationEventInit = js.uievents.UIEventInit & {
 	@:optional
 	var dir : js.cssNav.SpatialNavigationDirection;
 	@:optional

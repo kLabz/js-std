@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webtransport.idl. Do not edit!
+// This file is generated from @webref/idl/webtransport.idl. Do not edit!
 
 package js.webtransport;
-extern enum abstract WebTransportReliabilityMode(String) {
+enum abstract WebTransportReliabilityMode(String) {
 	var PENDING = "pending";
 	var RELIABLE_ONLY = "reliable-only";
 	var SUPPORTS_UNRELIABLE = "supports-unreliable";

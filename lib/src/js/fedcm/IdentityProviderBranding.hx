@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fedcm.idl. Do not edit!
+// This file is generated from @webref/idl/fedcm.idl. Do not edit!
 
 package js.fedcm;
-extern typedef IdentityProviderBranding = {
+typedef IdentityProviderBranding = {
 	@:optional
 	var background_color : USVString;
 	@:optional

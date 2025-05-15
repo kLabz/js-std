@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fetch.idl. Do not edit!
+// This file is generated from @webref/idl/fetch.idl. Do not edit!
 
 package js.fetch;
-extern enum abstract RequestPriority(String) {
+enum abstract RequestPriority(String) {
 	var HIGH = "high";
 	var LOW = "low";
 	var AUTO = "auto";

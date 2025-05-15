@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from media-source.idl. Do not edit!
+// This file is generated from @webref/idl/media-source.idl. Do not edit!
 
 package js.mediaSource;
-extern typedef BufferedChangeEventInit = js.dom.EventInit & {
+typedef BufferedChangeEventInit = js.dom.EventInit & {
 	@:optional
 	var addedRanges : TimeRanges;
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from service-workers.idl. Do not edit!
+// This file is generated from @webref/idl/service-workers.idl. Do not edit!
 
 package js.serviceWorkers;
-extern enum abstract RunningStatus(String) {
+enum abstract RunningStatus(String) {
 	var RUNNING = "running";
 	var NOT_RUNNING = "not-running";
 }

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from private-aggregation-api.idl. Do not edit!
+// This file is generated from @webref/idl/private-aggregation-api.idl. Do not edit!
 
 package js.privateAggregationApi;
-extern typedef PAHistogramContribution = {
+typedef PAHistogramContribution = {
 	var bucket : bigint;
 	var value : long;
 	@:optional

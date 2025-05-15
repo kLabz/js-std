@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from content-index.idl. Do not edit!
+// This file is generated from @webref/idl/content-index.idl. Do not edit!
 
 package js.contentIndex;
-extern typedef ContentIndexEventInit = js.serviceWorkers.ExtendableEventInit & {
+typedef ContentIndexEventInit = js.serviceWorkers.ExtendableEventInit & {
 	var id : DOMString;
 };

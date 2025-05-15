@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from xhr.idl. Do not edit!
+// This file is generated from @webref/idl/xhr.idl. Do not edit!
 
 package js.xhr;
-extern typedef ProgressEventInit = js.dom.EventInit & {
+typedef ProgressEventInit = js.dom.EventInit & {
 	@:optional
 	var lengthComputable : boolean;
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from periodic-background-sync.idl. Do not edit!
+// This file is generated from @webref/idl/periodic-background-sync.idl. Do not edit!
 
 package js.periodicBackgroundSync;
-extern typedef BackgroundSyncOptions = {
+typedef BackgroundSyncOptions = {
 	@:optional
 	var minInterval : unsigned long long;
 };

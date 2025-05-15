@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from svg-paths.idl. Do not edit!
+// This file is generated from @webref/idl/svg-paths.idl. Do not edit!
 
 package js.svgPaths;
-extern typedef SVGPathDataSettings = {
+typedef SVGPathDataSettings = {
 	@:optional
 	var normalize : boolean;
 };

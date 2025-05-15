@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from presentation-api.idl. Do not edit!
+// This file is generated from @webref/idl/presentation-api.idl. Do not edit!
 
 package js.presentationApi;
-extern typedef PresentationConnectionAvailableEventInit = js.dom.EventInit & {
+typedef PresentationConnectionAvailableEventInit = js.dom.EventInit & {
 	var connection : PresentationConnection;
 };

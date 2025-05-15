@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from screen-capture.idl. Do not edit!
+// This file is generated from @webref/idl/screen-capture.idl. Do not edit!
 
 package js.screenCapture;
-extern enum abstract DisplayCaptureSurfaceType(String) {
+enum abstract DisplayCaptureSurfaceType(String) {
 	var MONITOR = "monitor";
 	var WINDOW = "window";
 	var BROWSER = "browser";

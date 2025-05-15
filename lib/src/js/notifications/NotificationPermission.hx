@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from notifications.idl. Do not edit!
+// This file is generated from @webref/idl/notifications.idl. Do not edit!
 
 package js.notifications;
-extern enum abstract NotificationPermission(String) {
+enum abstract NotificationPermission(String) {
 	var DEFAULT = "default";
 	var DENIED = "denied";
 	var GRANTED = "granted";

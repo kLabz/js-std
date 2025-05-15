@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from cssom-view.idl. Do not edit!
+// This file is generated from @webref/idl/cssom-view.idl. Do not edit!
 
 package js.cssomView;
-extern enum abstract ScrollLogicalPosition(String) {
+enum abstract ScrollLogicalPosition(String) {
 	var START = "start";
 	var CENTER = "center";
 	var END = "end";

@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from media-capabilities.idl. Do not edit!
+// This file is generated from @webref/idl/media-capabilities.idl. Do not edit!
 
 package js.mediaCapabilities;
-extern typedef MediaEncodingConfiguration = js.mediaCapabilities.MediaConfiguration & {
+typedef MediaEncodingConfiguration = js.mediaCapabilities.MediaConfiguration & {
 	var type : js.mediaCapabilities.MediaEncodingType;
 };

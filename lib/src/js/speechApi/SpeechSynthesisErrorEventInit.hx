@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from speech-api.idl. Do not edit!
+// This file is generated from @webref/idl/speech-api.idl. Do not edit!
 
 package js.speechApi;
-extern typedef SpeechSynthesisErrorEventInit = js.speechApi.SpeechSynthesisEventInit & {
+typedef SpeechSynthesisErrorEventInit = js.speechApi.SpeechSynthesisEventInit & {
 	var error : js.speechApi.SpeechSynthesisErrorCode;
 };

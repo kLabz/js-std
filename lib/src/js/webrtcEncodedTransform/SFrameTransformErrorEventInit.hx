@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc-encoded-transform.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc-encoded-transform.idl. Do not edit!
 
 package js.webrtcEncodedTransform;
-extern typedef SFrameTransformErrorEventInit = js.dom.EventInit & {
+typedef SFrameTransformErrorEventInit = js.dom.EventInit & {
 	var errorType : js.webrtcEncodedTransform.SFrameTransformErrorEventType;
 	var frame : any;
 	@:optional

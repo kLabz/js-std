@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
-extern typedef RTCIceServer = {
+typedef RTCIceServer = {
 	var urls : [object Object],[object Object];
 	@:optional
 	var username : DOMString;

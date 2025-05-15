@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr.idl. Do not edit!
+// This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
-extern enum abstract XREye(String) {
+enum abstract XREye(String) {
 	var NONE = "none";
 	var LEFT = "left";
 	var RIGHT = "right";

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webauthn.idl. Do not edit!
+// This file is generated from @webref/idl/webauthn.idl. Do not edit!
 
 package js.webauthn;
-extern enum abstract PublicKeyCredentialHint(String) {
+enum abstract PublicKeyCredentialHint(String) {
 	var SECURITY_KEY = "security-key";
 	var CLIENT_DEVICE = "client-device";
 	var HYBRID = "hybrid";

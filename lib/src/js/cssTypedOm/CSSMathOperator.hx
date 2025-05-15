@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-typed-om.idl. Do not edit!
+// This file is generated from @webref/idl/css-typed-om.idl. Do not edit!
 
 package js.cssTypedOm;
-extern enum abstract CSSMathOperator(String) {
+enum abstract CSSMathOperator(String) {
 	var SUM = "sum";
 	var PRODUCT = "product";
 	var NEGATE = "negate";

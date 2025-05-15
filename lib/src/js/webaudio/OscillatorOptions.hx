@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webaudio.idl. Do not edit!
+// This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
-extern typedef OscillatorOptions = js.webaudio.AudioNodeOptions & {
+typedef OscillatorOptions = js.webaudio.AudioNodeOptions & {
 	@:optional
 	var type : js.webaudio.OscillatorType;
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from uievents.idl. Do not edit!
+// This file is generated from @webref/idl/uievents.idl. Do not edit!
 
 package js.uievents;
-extern typedef InputEventInit = js.uievents.UIEventInit & {
+typedef InputEventInit = js.uievents.UIEventInit & {
 	@:optional
 	var data : DOMString;
 	@:optional

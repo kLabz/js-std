@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from websockets.idl. Do not edit!
+// This file is generated from @webref/idl/websockets.idl. Do not edit!
 
 package js.websockets;
-extern enum abstract BinaryType(String) {
+enum abstract BinaryType(String) {
 	var BLOB = "blob";
 	var ARRAYBUFFER = "arraybuffer";
 }

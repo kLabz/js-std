@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webhid.idl. Do not edit!
+// This file is generated from @webref/idl/webhid.idl. Do not edit!
 
 package js.webhid;
-extern enum abstract HIDUnitSystem(String) {
+enum abstract HIDUnitSystem(String) {
 	var NONE = "none";
 	var SI_LINEAR = "si-linear";
 	var SI_ROTATION = "si-rotation";

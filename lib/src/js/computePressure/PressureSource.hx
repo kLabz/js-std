@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from compute-pressure.idl. Do not edit!
+// This file is generated from @webref/idl/compute-pressure.idl. Do not edit!
 
 package js.computePressure;
-extern enum abstract PressureSource(String) {
+enum abstract PressureSource(String) {
 	var CPU = "cpu";
 }

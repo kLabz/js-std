@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from handwriting-recognition.idl. Do not edit!
+// This file is generated from @webref/idl/handwriting-recognition.idl. Do not edit!
 
 package js.handwritingRecognition;
-extern enum abstract HandwritingRecognitionType(String) {
+enum abstract HandwritingRecognitionType(String) {
 	var TEXT = "text";
 	var PER_CHARACTER = "per-character";
 }

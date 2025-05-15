@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-font-loading.idl. Do not edit!
+// This file is generated from @webref/idl/css-font-loading.idl. Do not edit!
 
 package js.cssFontLoading;
-extern typedef FontFaceSetLoadEventInit = js.dom.EventInit & {
+typedef FontFaceSetLoadEventInit = js.dom.EventInit & {
 	@:optional
 	var fontfaces : [object Object];
 };

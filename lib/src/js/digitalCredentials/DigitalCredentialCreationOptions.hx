@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from digital-credentials.idl. Do not edit!
+// This file is generated from @webref/idl/digital-credentials.idl. Do not edit!
 
 package js.digitalCredentials;
-extern typedef DigitalCredentialCreationOptions = {
+typedef DigitalCredentialCreationOptions = {
 	@:optional
 	var requests : [object Object];
 };

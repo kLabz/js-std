@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webtransport.idl. Do not edit!
+// This file is generated from @webref/idl/webtransport.idl. Do not edit!
 
 package js.webtransport;
-extern enum abstract WebTransportCongestionControl(String) {
+enum abstract WebTransportCongestionControl(String) {
 	var DEFAULT = "default";
 	var THROUGHPUT = "throughput";
 	var LOW_LATENCY = "low-latency";

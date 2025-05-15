@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcodecs-opus-codec-registration.idl. Do not edit!
+// This file is generated from @webref/idl/webcodecs-opus-codec-registration.idl. Do not edit!
 
 package js.webcodecsOpusCodecRegistration;
-extern typedef OpusEncoderConfig = {
+typedef OpusEncoderConfig = {
 	@:optional
 	var format : js.webcodecsOpusCodecRegistration.OpusBitstreamFormat;
 	@:optional

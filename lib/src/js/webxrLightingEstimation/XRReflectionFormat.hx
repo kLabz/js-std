@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr-lighting-estimation.idl. Do not edit!
+// This file is generated from @webref/idl/webxr-lighting-estimation.idl. Do not edit!
 
 package js.webxrLightingEstimation;
-extern enum abstract XRReflectionFormat(String) {
+enum abstract XRReflectionFormat(String) {
 	var SRGBA8 = "srgba8";
 	var RGBA16F = "rgba16f";
 }

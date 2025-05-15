@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from web-bluetooth.idl. Do not edit!
+// This file is generated from @webref/idl/web-bluetooth.idl. Do not edit!
 
 package js.webBluetooth;
-extern typedef BluetoothDataFilterInit = {
+typedef BluetoothDataFilterInit = {
 	@:optional
 	var dataPrefix : BufferSource;
 	@:optional

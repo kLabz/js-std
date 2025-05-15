@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webaudio.idl. Do not edit!
+// This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
-extern typedef OfflineAudioCompletionEventInit = js.dom.EventInit & {
+typedef OfflineAudioCompletionEventInit = js.dom.EventInit & {
 	var renderedBuffer : AudioBuffer;
 };

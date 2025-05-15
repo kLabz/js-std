@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webnn.idl. Do not edit!
+// This file is generated from @webref/idl/webnn.idl. Do not edit!
 
 package js.webnn;
-extern typedef MLGruOptions = js.webnn.MLOperatorOptions & {
+typedef MLGruOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var bias : MLOperand;
 	@:optional

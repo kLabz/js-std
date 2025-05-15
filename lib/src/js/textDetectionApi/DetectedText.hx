@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from text-detection-api.idl. Do not edit!
+// This file is generated from @webref/idl/text-detection-api.idl. Do not edit!
 
 package js.textDetectionApi;
-extern typedef DetectedText = {
+typedef DetectedText = {
 	var boundingBox : DOMRectReadOnly;
 	var rawValue : DOMString;
 	var cornerPoints : [object Object];

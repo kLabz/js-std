@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from web-share.idl. Do not edit!
+// This file is generated from @webref/idl/web-share.idl. Do not edit!
 
 package js.webShare;
-extern typedef ShareData = {
+typedef ShareData = {
 	@:optional
 	var files : [object Object];
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from screen-orientation.idl. Do not edit!
+// This file is generated from @webref/idl/screen-orientation.idl. Do not edit!
 
 package js.screenOrientation;
-extern enum abstract OrientationLockType(String) {
+enum abstract OrientationLockType(String) {
 	var ANY = "any";
 	var NATURAL = "natural";
 	var LANDSCAPE = "landscape";

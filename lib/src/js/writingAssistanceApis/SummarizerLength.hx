@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from writing-assistance-apis.idl. Do not edit!
+// This file is generated from @webref/idl/writing-assistance-apis.idl. Do not edit!
 
 package js.writingAssistanceApis;
-extern enum abstract SummarizerLength(String) {
+enum abstract SummarizerLength(String) {
 	var SHORT = "short";
 	var MEDIUM = "medium";
 	var LONG = "long";

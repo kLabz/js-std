@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from wasm-js-api.idl. Do not edit!
+// This file is generated from @webref/idl/wasm-js-api.idl. Do not edit!
 
 package js.wasmJsApi;
-extern typedef GlobalDescriptor = {
+typedef GlobalDescriptor = {
 	var value : js.wasmJsApi.ValueType;
 	@:optional
 	var mutable : boolean;

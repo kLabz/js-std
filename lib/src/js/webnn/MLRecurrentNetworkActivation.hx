@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webnn.idl. Do not edit!
+// This file is generated from @webref/idl/webnn.idl. Do not edit!
 
 package js.webnn;
-extern enum abstract MLRecurrentNetworkActivation(String) {
+enum abstract MLRecurrentNetworkActivation(String) {
 	var RELU = "relu";
 	var SIGMOID = "sigmoid";
 	var TANH = "tanh";

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fedcm.idl. Do not edit!
+// This file is generated from @webref/idl/fedcm.idl. Do not edit!
 
 package js.fedcm;
-extern typedef IdentityProviderAPIConfig = {
+typedef IdentityProviderAPIConfig = {
 	var accounts_endpoint : USVString;
 	@:optional
 	var client_metadata_endpoint : USVString;

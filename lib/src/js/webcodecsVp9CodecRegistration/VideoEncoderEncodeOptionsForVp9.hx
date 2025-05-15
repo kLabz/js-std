@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcodecs-vp9-codec-registration.idl. Do not edit!
+// This file is generated from @webref/idl/webcodecs-vp9-codec-registration.idl. Do not edit!
 
 package js.webcodecsVp9CodecRegistration;
-extern typedef VideoEncoderEncodeOptionsForVp9 = {
+typedef VideoEncoderEncodeOptionsForVp9 = {
 	@:optional
 	var quantizer : unsigned short;
 };

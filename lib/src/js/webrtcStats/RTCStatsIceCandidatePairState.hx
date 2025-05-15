@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc-stats.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc-stats.idl. Do not edit!
 
 package js.webrtcStats;
-extern enum abstract RTCStatsIceCandidatePairState(String) {
+enum abstract RTCStatsIceCandidatePairState(String) {
 	var FROZEN = "frozen";
 	var WAITING = "waiting";
 	var IN_PROGRESS = "in-progress";

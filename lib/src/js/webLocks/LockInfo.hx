@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from web-locks.idl. Do not edit!
+// This file is generated from @webref/idl/web-locks.idl. Do not edit!
 
 package js.webLocks;
-extern typedef LockInfo = {
+typedef LockInfo = {
 	@:optional
 	var name : DOMString;
 	@:optional

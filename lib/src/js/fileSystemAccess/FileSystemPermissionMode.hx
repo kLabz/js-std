@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from file-system-access.idl. Do not edit!
+// This file is generated from @webref/idl/file-system-access.idl. Do not edit!
 
 package js.fileSystemAccess;
-extern enum abstract FileSystemPermissionMode(String) {
+enum abstract FileSystemPermissionMode(String) {
 	var READ = "read";
 	var READWRITE = "readwrite";
 }

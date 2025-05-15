@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from document-picture-in-picture.idl. Do not edit!
+// This file is generated from @webref/idl/document-picture-in-picture.idl. Do not edit!
 
 package js.documentPictureInPicture;
-extern typedef DocumentPictureInPictureOptions = {
+typedef DocumentPictureInPictureOptions = {
 	@:optional
 	var width : unsigned long long;
 	@:optional

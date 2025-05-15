@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from web-animations-2.idl. Do not edit!
+// This file is generated from @webref/idl/web-animations-2.idl. Do not edit!
 
 package js.webAnimations2;
-extern typedef AnimationTriggerOptions = {
+typedef AnimationTriggerOptions = {
 	@:optional
 	var timeline : AnimationTimeline;
 	@:optional

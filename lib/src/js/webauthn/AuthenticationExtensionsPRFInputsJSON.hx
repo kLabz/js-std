@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webauthn.idl. Do not edit!
+// This file is generated from @webref/idl/webauthn.idl. Do not edit!
 
 package js.webauthn;
-extern typedef AuthenticationExtensionsPRFInputsJSON = {
+typedef AuthenticationExtensionsPRFInputsJSON = {
 	@:optional
 	var eval : js.webauthn.AuthenticationExtensionsPRFValuesJSON;
 	@:optional

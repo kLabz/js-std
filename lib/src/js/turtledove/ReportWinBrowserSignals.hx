@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from turtledove.idl. Do not edit!
+// This file is generated from @webref/idl/turtledove.idl. Do not edit!
 
 package js.turtledove;
-extern typedef ReportWinBrowserSignals = js.turtledove.ReportingBrowserSignals & {
+typedef ReportWinBrowserSignals = js.turtledove.ReportingBrowserSignals & {
 	@:optional
 	var adCost : double;
 	@:optional

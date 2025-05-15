@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from is-input-pending.idl. Do not edit!
+// This file is generated from @webref/idl/is-input-pending.idl. Do not edit!
 
 package js.isInputPending;
-extern typedef IsInputPendingOptions = {
+typedef IsInputPendingOptions = {
 	@:optional
 	var includeContinuous : boolean;
 };

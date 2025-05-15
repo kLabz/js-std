@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from media-source.idl. Do not edit!
+// This file is generated from @webref/idl/media-source.idl. Do not edit!
 
 package js.mediaSource;
-extern enum abstract ReadyState(String) {
+enum abstract ReadyState(String) {
 	var CLOSED = "closed";
 	var OPEN = "open";
 	var ENDED = "ended";

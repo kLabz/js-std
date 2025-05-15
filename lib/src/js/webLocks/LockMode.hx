@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from web-locks.idl. Do not edit!
+// This file is generated from @webref/idl/web-locks.idl. Do not edit!
 
 package js.webLocks;
-extern enum abstract LockMode(String) {
+enum abstract LockMode(String) {
 	var SHARED = "shared";
 	var EXCLUSIVE = "exclusive";
 }

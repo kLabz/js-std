@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-transitions.idl. Do not edit!
+// This file is generated from @webref/idl/css-transitions.idl. Do not edit!
 
 package js.cssTransitions;
-extern typedef TransitionEventInit = js.dom.EventInit & {
+typedef TransitionEventInit = js.dom.EventInit & {
 	@:optional
 	var propertyName : CSSOMString;
 	@:optional

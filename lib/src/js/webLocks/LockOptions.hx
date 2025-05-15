@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from web-locks.idl. Do not edit!
+// This file is generated from @webref/idl/web-locks.idl. Do not edit!
 
 package js.webLocks;
-extern typedef LockOptions = {
+typedef LockOptions = {
 	@:optional
 	var mode : js.webLocks.LockMode;
 	@:optional

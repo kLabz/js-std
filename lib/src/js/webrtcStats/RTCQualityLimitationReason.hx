@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc-stats.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc-stats.idl. Do not edit!
 
 package js.webrtcStats;
-extern enum abstract RTCQualityLimitationReason(String) {
+enum abstract RTCQualityLimitationReason(String) {
 	var NONE = "none";
 	var CPU = "cpu";
 	var BANDWIDTH = "bandwidth";

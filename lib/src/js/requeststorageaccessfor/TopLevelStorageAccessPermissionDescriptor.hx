@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from requestStorageAccessFor.idl. Do not edit!
+// This file is generated from @webref/idl/requestStorageAccessFor.idl. Do not edit!
 
 package js.requeststorageaccessfor;
-extern typedef TopLevelStorageAccessPermissionDescriptor = js.permissions.PermissionDescriptor & {
+typedef TopLevelStorageAccessPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var requestedOrigin : USVString;
 };

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from storage-buckets.idl. Do not edit!
+// This file is generated from @webref/idl/storage-buckets.idl. Do not edit!
 
 package js.storageBuckets;
-extern typedef StorageBucketOptions = {
+typedef StorageBucketOptions = {
 	@:optional
 	var persisted : boolean;
 	@:optional

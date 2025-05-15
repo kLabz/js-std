@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from SVG.idl. Do not edit!
+// This file is generated from @webref/idl/SVG.idl. Do not edit!
 
 package js.svg;
-extern typedef SVGBoundingBoxOptions = {
+typedef SVGBoundingBoxOptions = {
 	@:optional
 	var fill : boolean;
 	@:optional

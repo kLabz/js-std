@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from websockets.idl. Do not edit!
+// This file is generated from @webref/idl/websockets.idl. Do not edit!
 
 package js.websockets;
-extern typedef CloseEventInit = js.dom.EventInit & {
+typedef CloseEventInit = js.dom.EventInit & {
 	@:optional
 	var wasClean : boolean;
 	@:optional

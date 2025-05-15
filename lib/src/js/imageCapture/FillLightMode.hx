@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from image-capture.idl. Do not edit!
+// This file is generated from @webref/idl/image-capture.idl. Do not edit!
 
 package js.imageCapture;
-extern enum abstract FillLightMode(String) {
+enum abstract FillLightMode(String) {
 	var AUTO = "auto";
 	var OFF = "off";
 	var FLASH = "flash";

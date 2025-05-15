@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from translation-api.idl. Do not edit!
+// This file is generated from @webref/idl/translation-api.idl. Do not edit!
 
 package js.translationApi;
-extern typedef LanguageDetectorCreateOptions = js.translationApi.LanguageDetectorCreateCoreOptions & {
+typedef LanguageDetectorCreateOptions = js.translationApi.LanguageDetectorCreateCoreOptions & {
 	@:optional
 	var signal : AbortSignal;
 	@:optional

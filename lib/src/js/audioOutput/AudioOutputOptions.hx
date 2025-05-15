@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from audio-output.idl. Do not edit!
+// This file is generated from @webref/idl/audio-output.idl. Do not edit!
 
 package js.audioOutput;
-extern typedef AudioOutputOptions = {
+typedef AudioOutputOptions = {
 	@:optional
 	var deviceId : DOMString;
 };

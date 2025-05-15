@@ -20,8 +20,8 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from service-workers.idl. Do not edit!
+// This file is generated from @webref/idl/service-workers.idl. Do not edit!
 
 package js.serviceWorkers;
-extern typedef ExtendableEventInit = js.dom.EventInit & {
+typedef ExtendableEventInit = js.dom.EventInit & {
 };

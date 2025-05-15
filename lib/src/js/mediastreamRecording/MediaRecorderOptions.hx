@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from mediastream-recording.idl. Do not edit!
+// This file is generated from @webref/idl/mediastream-recording.idl. Do not edit!
 
 package js.mediastreamRecording;
-extern typedef MediaRecorderOptions = {
+typedef MediaRecorderOptions = {
 	@:optional
 	var mimeType : DOMString;
 	@:optional

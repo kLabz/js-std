@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webgpu.idl. Do not edit!
+// This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
-extern enum abstract GPUTextureViewDimension(String) {
+enum abstract GPUTextureViewDimension(String) {
 	var 1D = "1d";
 	var 2D = "2d";
 	var 2D_ARRAY = "2d-array";

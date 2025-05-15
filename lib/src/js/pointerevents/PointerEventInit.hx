@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from pointerevents.idl. Do not edit!
+// This file is generated from @webref/idl/pointerevents.idl. Do not edit!
 
 package js.pointerevents;
-extern typedef PointerEventInit = js.uievents.MouseEventInit & {
+typedef PointerEventInit = js.uievents.MouseEventInit & {
 	@:optional
 	var pointerId : long;
 	@:optional

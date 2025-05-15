@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-animations.idl. Do not edit!
+// This file is generated from @webref/idl/css-animations.idl. Do not edit!
 
 package js.cssAnimations;
-extern typedef AnimationEventInit = js.dom.EventInit & {
+typedef AnimationEventInit = js.dom.EventInit & {
 	@:optional
 	var animationName : CSSOMString;
 	@:optional

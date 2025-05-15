@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fs.idl. Do not edit!
+// This file is generated from @webref/idl/fs.idl. Do not edit!
 
 package js.fs;
-extern typedef WriteParams = {
+typedef WriteParams = {
 	var type : js.fs.WriteCommandType;
 	@:optional
 	var size : unsigned long long;

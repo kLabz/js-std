@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc-stats.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc-stats.idl. Do not edit!
 
 package js.webrtcStats;
-extern typedef RTCDataChannelStats = js.webrtc.RTCStats & {
+typedef RTCDataChannelStats = js.webrtc.RTCStats & {
 	@:optional
 	var label : DOMString;
 	@:optional

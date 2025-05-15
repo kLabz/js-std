@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from local-font-access.idl. Do not edit!
+// This file is generated from @webref/idl/local-font-access.idl. Do not edit!
 
 package js.localFontAccess;
-extern typedef QueryOptions = {
+typedef QueryOptions = {
 	@:optional
 	var postscriptNames : [object Object];
 };

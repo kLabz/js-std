@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from file-system-access.idl. Do not edit!
+// This file is generated from @webref/idl/file-system-access.idl. Do not edit!
 
 package js.fileSystemAccess;
-extern typedef FileSystemHandlePermissionDescriptor = {
+typedef FileSystemHandlePermissionDescriptor = {
 	@:optional
 	var mode : js.fileSystemAccess.FileSystemPermissionMode;
 };

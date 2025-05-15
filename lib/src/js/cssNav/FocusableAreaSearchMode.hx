@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-nav.idl. Do not edit!
+// This file is generated from @webref/idl/css-nav.idl. Do not edit!
 
 package js.cssNav;
-extern enum abstract FocusableAreaSearchMode(String) {
+enum abstract FocusableAreaSearchMode(String) {
 	var VISIBLE = "visible";
 	var ALL = "all";
 }

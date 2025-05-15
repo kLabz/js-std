@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcodecs-avc-codec-registration.idl. Do not edit!
+// This file is generated from @webref/idl/webcodecs-avc-codec-registration.idl. Do not edit!
 
 package js.webcodecsAvcCodecRegistration;
-extern typedef AvcEncoderConfig = {
+typedef AvcEncoderConfig = {
 	@:optional
 	var format : js.webcodecsAvcCodecRegistration.AvcBitstreamFormat;
 };

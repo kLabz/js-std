@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webnn.idl. Do not edit!
+// This file is generated from @webref/idl/webnn.idl. Do not edit!
 
 package js.webnn;
-extern enum abstract MLPowerPreference(String) {
+enum abstract MLPowerPreference(String) {
 	var DEFAULT = "default";
 	var HIGH_PERFORMANCE = "high-performance";
 	var LOW_POWER = "low-power";

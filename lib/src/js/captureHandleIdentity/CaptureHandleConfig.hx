@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from capture-handle-identity.idl. Do not edit!
+// This file is generated from @webref/idl/capture-handle-identity.idl. Do not edit!
 
 package js.captureHandleIdentity;
-extern typedef CaptureHandleConfig = {
+typedef CaptureHandleConfig = {
 	@:optional
 	var exposeOrigin : boolean;
 	@:optional

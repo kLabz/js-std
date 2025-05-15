@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webmidi.idl. Do not edit!
+// This file is generated from @webref/idl/webmidi.idl. Do not edit!
 
 package js.webmidi;
-extern typedef MIDIConnectionEventInit = js.dom.EventInit & {
+typedef MIDIConnectionEventInit = js.dom.EventInit & {
 	@:optional
 	var port : MIDIPort;
 };

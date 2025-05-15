@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from performance-timeline.idl. Do not edit!
+// This file is generated from @webref/idl/performance-timeline.idl. Do not edit!
 
 package js.performanceTimeline;
-extern typedef PerformanceObserverCallbackOptions = {
+typedef PerformanceObserverCallbackOptions = {
 	@:optional
 	var droppedEntriesCount : unsigned long long;
 };

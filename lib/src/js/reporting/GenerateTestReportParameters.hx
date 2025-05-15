@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from reporting.idl. Do not edit!
+// This file is generated from @webref/idl/reporting.idl. Do not edit!
 
 package js.reporting;
-extern typedef GenerateTestReportParameters = {
+typedef GenerateTestReportParameters = {
 	var message : DOMString;
 	@:optional
 	var group : DOMString;

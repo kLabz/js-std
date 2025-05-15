@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webgpu.idl. Do not edit!
+// This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
-extern typedef GPUStorageTextureBindingLayout = {
+typedef GPUStorageTextureBindingLayout = {
 	@:optional
 	var access : js.webgpu.GPUStorageTextureAccess;
 	var format : js.webgpu.GPUTextureFormat;

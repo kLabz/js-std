@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr-depth-sensing.idl. Do not edit!
+// This file is generated from @webref/idl/webxr-depth-sensing.idl. Do not edit!
 
 package js.webxrDepthSensing;
-extern enum abstract XRDepthUsage(String) {
+enum abstract XRDepthUsage(String) {
 	var CPU_OPTIMIZED = "cpu-optimized";
 	var GPU_OPTIMIZED = "gpu-optimized";
 }

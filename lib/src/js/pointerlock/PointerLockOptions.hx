@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from pointerlock.idl. Do not edit!
+// This file is generated from @webref/idl/pointerlock.idl. Do not edit!
 
 package js.pointerlock;
-extern typedef PointerLockOptions = {
+typedef PointerLockOptions = {
 	@:optional
 	var unadjustedMovement : boolean;
 };

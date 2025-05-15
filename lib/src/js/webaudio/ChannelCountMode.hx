@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webaudio.idl. Do not edit!
+// This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
-extern enum abstract ChannelCountMode(String) {
+enum abstract ChannelCountMode(String) {
 	var MAX = "max";
 	var CLAMPED_MAX = "clamped-max";
 	var EXPLICIT = "explicit";

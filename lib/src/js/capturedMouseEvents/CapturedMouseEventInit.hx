@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from captured-mouse-events.idl. Do not edit!
+// This file is generated from @webref/idl/captured-mouse-events.idl. Do not edit!
 
 package js.capturedMouseEvents;
-extern typedef CapturedMouseEventInit = js.dom.EventInit & {
+typedef CapturedMouseEventInit = js.dom.EventInit & {
 	@:optional
 	var surfaceX : long;
 	@:optional

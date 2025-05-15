@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from saa-non-cookie-storage.idl. Do not edit!
+// This file is generated from @webref/idl/saa-non-cookie-storage.idl. Do not edit!
 
 package js.saaNonCookieStorage;
-extern enum abstract SameSiteCookiesType(String) {
+enum abstract SameSiteCookiesType(String) {
 	var ALL = "all";
 	var NONE = "none";
 }

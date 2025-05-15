@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from netinfo.idl. Do not edit!
+// This file is generated from @webref/idl/netinfo.idl. Do not edit!
 
 package js.netinfo;
-extern enum abstract EffectiveConnectionType(String) {
+enum abstract EffectiveConnectionType(String) {
 	var 2G = "2g";
 	var 3G = "3g";
 	var 4G = "4g";

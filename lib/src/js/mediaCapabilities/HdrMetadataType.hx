@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from media-capabilities.idl. Do not edit!
+// This file is generated from @webref/idl/media-capabilities.idl. Do not edit!
 
 package js.mediaCapabilities;
-extern enum abstract HdrMetadataType(String) {
+enum abstract HdrMetadataType(String) {
 	var SMPTEST2086 = "smpteSt2086";
 	var SMPTEST2094_10 = "smpteSt2094-10";
 	var SMPTEST2094_40 = "smpteSt2094-40";

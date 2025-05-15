@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from attribution-reporting-api.idl. Do not edit!
+// This file is generated from @webref/idl/attribution-reporting-api.idl. Do not edit!
 
 package js.attributionReportingApi;
-extern typedef AttributionReportingRequestOptions = {
+typedef AttributionReportingRequestOptions = {
 	var eventSourceEligible : boolean;
 	var triggerEligible : boolean;
 };

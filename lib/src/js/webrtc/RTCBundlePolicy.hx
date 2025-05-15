@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
-extern enum abstract RTCBundlePolicy(String) {
+enum abstract RTCBundlePolicy(String) {
 	var BALANCED = "balanced";
 	var MAX_COMPAT = "max-compat";
 	var MAX_BUNDLE = "max-bundle";

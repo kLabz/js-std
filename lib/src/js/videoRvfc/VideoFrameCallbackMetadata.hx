@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from video-rvfc.idl. Do not edit!
+// This file is generated from @webref/idl/video-rvfc.idl. Do not edit!
 
 package js.videoRvfc;
-extern typedef VideoFrameCallbackMetadata = {
+typedef VideoFrameCallbackMetadata = {
 	var presentationTime : DOMHighResTimeStamp;
 	var expectedDisplayTime : DOMHighResTimeStamp;
 	var width : unsigned long;

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from dom.idl. Do not edit!
+// This file is generated from @webref/idl/dom.idl. Do not edit!
 
 package js.dom;
-extern typedef AddEventListenerOptions = js.dom.EventListenerOptions & {
+typedef AddEventListenerOptions = js.dom.EventListenerOptions & {
 	@:optional
 	var passive : boolean;
 	@:optional

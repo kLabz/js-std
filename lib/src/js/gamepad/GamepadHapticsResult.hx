@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from gamepad.idl. Do not edit!
+// This file is generated from @webref/idl/gamepad.idl. Do not edit!
 
 package js.gamepad;
-extern enum abstract GamepadHapticsResult(String) {
+enum abstract GamepadHapticsResult(String) {
 	var COMPLETE = "complete";
 	var PREEMPTED = "preempted";
 }

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from touch-events.idl. Do not edit!
+// This file is generated from @webref/idl/touch-events.idl. Do not edit!
 
 package js.touchEvents;
-extern enum abstract TouchType(String) {
+enum abstract TouchType(String) {
 	var DIRECT = "direct";
 	var STYLUS = "stylus";
 }

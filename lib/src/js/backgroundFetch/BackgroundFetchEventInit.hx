@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from background-fetch.idl. Do not edit!
+// This file is generated from @webref/idl/background-fetch.idl. Do not edit!
 
 package js.backgroundFetch;
-extern typedef BackgroundFetchEventInit = js.serviceWorkers.ExtendableEventInit & {
+typedef BackgroundFetchEventInit = js.serviceWorkers.ExtendableEventInit & {
 	var registration : BackgroundFetchRegistration;
 };

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from touch-events.idl. Do not edit!
+// This file is generated from @webref/idl/touch-events.idl. Do not edit!
 
 package js.touchEvents;
-extern typedef TouchEventInit = js.uievents.EventModifierInit & {
+typedef TouchEventInit = js.uievents.EventModifierInit & {
 	@:optional
 	var touches : [object Object];
 	@:optional

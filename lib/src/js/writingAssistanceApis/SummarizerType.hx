@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from writing-assistance-apis.idl. Do not edit!
+// This file is generated from @webref/idl/writing-assistance-apis.idl. Do not edit!
 
 package js.writingAssistanceApis;
-extern enum abstract SummarizerType(String) {
+enum abstract SummarizerType(String) {
 	var TL_DR = "tl;dr";
 	var TEASER = "teaser";
 	var KEY_POINTS = "key-points";

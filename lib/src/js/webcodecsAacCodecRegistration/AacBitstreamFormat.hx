@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcodecs-aac-codec-registration.idl. Do not edit!
+// This file is generated from @webref/idl/webcodecs-aac-codec-registration.idl. Do not edit!
 
 package js.webcodecsAacCodecRegistration;
-extern enum abstract AacBitstreamFormat(String) {
+enum abstract AacBitstreamFormat(String) {
 	var AAC = "aac";
 	var ADTS = "adts";
 }

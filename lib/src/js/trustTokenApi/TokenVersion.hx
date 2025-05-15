@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from trust-token-api.idl. Do not edit!
+// This file is generated from @webref/idl/trust-token-api.idl. Do not edit!
 
 package js.trustTokenApi;
-extern enum abstract TokenVersion(String) {
+enum abstract TokenVersion(String) {
 	var 1 = "1";
 }

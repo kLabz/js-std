@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from serial.idl. Do not edit!
+// This file is generated from @webref/idl/serial.idl. Do not edit!
 
 package js.serial;
-extern typedef SerialOutputSignals = {
+typedef SerialOutputSignals = {
 	@:optional
 	var dataTerminalReady : boolean;
 	@:optional

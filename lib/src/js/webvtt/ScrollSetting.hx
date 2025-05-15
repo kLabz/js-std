@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webvtt.idl. Do not edit!
+// This file is generated from @webref/idl/webvtt.idl. Do not edit!
 
 package js.webvtt;
-extern enum abstract ScrollSetting(String) {
+enum abstract ScrollSetting(String) {
 	var NONE = "";
 	var UP = "up";
 }

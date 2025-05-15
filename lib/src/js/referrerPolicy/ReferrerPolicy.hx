@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from referrer-policy.idl. Do not edit!
+// This file is generated from @webref/idl/referrer-policy.idl. Do not edit!
 
 package js.referrerPolicy;
-extern enum abstract ReferrerPolicy(String) {
+enum abstract ReferrerPolicy(String) {
 	var NONE = "";
 	var NO_REFERRER = "no-referrer";
 	var NO_REFERRER_WHEN_DOWNGRADE = "no-referrer-when-downgrade";

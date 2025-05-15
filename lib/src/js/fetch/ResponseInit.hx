@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fetch.idl. Do not edit!
+// This file is generated from @webref/idl/fetch.idl. Do not edit!
 
 package js.fetch;
-extern typedef ResponseInit = {
+typedef ResponseInit = {
 	@:optional
 	var status : unsigned short;
 	@:optional

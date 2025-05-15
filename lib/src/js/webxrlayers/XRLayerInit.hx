@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxrlayers.idl. Do not edit!
+// This file is generated from @webref/idl/webxrlayers.idl. Do not edit!
 
 package js.webxrlayers;
-extern typedef XRLayerInit = {
+typedef XRLayerInit = {
 	var space : XRSpace;
 	@:optional
 	var colorFormat : GLenum;

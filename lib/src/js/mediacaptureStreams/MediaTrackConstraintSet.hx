@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from mediacapture-streams.idl. Do not edit!
+// This file is generated from @webref/idl/mediacapture-streams.idl. Do not edit!
 
 package js.mediacaptureStreams;
-extern typedef MediaTrackConstraintSet = {
+typedef MediaTrackConstraintSet = {
 	@:optional
 	var width : ConstrainULong;
 	@:optional

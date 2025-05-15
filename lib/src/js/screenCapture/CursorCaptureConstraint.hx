@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from screen-capture.idl. Do not edit!
+// This file is generated from @webref/idl/screen-capture.idl. Do not edit!
 
 package js.screenCapture;
-extern enum abstract CursorCaptureConstraint(String) {
+enum abstract CursorCaptureConstraint(String) {
 	var NEVER = "never";
 	var ALWAYS = "always";
 	var MOTION = "motion";

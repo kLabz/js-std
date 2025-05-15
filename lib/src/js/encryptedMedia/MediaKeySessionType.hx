@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from encrypted-media.idl. Do not edit!
+// This file is generated from @webref/idl/encrypted-media.idl. Do not edit!
 
 package js.encryptedMedia;
-extern enum abstract MediaKeySessionType(String) {
+enum abstract MediaKeySessionType(String) {
 	var TEMPORARY = "temporary";
 	var PERSISTENT_LICENSE = "persistent-license";
 }

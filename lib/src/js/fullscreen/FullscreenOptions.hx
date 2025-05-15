@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fullscreen.idl. Do not edit!
+// This file is generated from @webref/idl/fullscreen.idl. Do not edit!
 
 package js.fullscreen;
-extern typedef FullscreenOptions = {
+typedef FullscreenOptions = {
 	@:optional
 	var navigationUI : js.fullscreen.FullscreenNavigationUI;
 	@:optional

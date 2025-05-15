@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from clipboard-apis.idl. Do not edit!
+// This file is generated from @webref/idl/clipboard-apis.idl. Do not edit!
 
 package js.clipboardApis;
-extern typedef ClipboardPermissionDescriptor = js.permissions.PermissionDescriptor & {
+typedef ClipboardPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var allowWithoutGesture : boolean;
 };

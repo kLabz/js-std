@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from shared-storage.idl. Do not edit!
+// This file is generated from @webref/idl/shared-storage.idl. Do not edit!
 
 package js.sharedStorage;
-extern typedef SharedStorageRunOperationMethodOptions = {
+typedef SharedStorageRunOperationMethodOptions = {
 	@:optional
 	var data : object;
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcodecs.idl. Do not edit!
+// This file is generated from @webref/idl/webcodecs.idl. Do not edit!
 
 package js.webcodecs;
-extern enum abstract CodecState(String) {
+enum abstract CodecState(String) {
 	var UNCONFIGURED = "unconfigured";
 	var CONFIGURED = "configured";
 	var CLOSED = "closed";

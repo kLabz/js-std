@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from resize-observer.idl. Do not edit!
+// This file is generated from @webref/idl/resize-observer.idl. Do not edit!
 
 package js.resizeObserver;
-extern enum abstract ResizeObserverBoxOptions(String) {
+enum abstract ResizeObserverBoxOptions(String) {
 	var BORDER_BOX = "border-box";
 	var CONTENT_BOX = "content-box";
 	var DEVICE_PIXEL_CONTENT_BOX = "device-pixel-content-box";

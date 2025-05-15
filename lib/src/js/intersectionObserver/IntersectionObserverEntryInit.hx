@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from intersection-observer.idl. Do not edit!
+// This file is generated from @webref/idl/intersection-observer.idl. Do not edit!
 
 package js.intersectionObserver;
-extern typedef IntersectionObserverEntryInit = {
+typedef IntersectionObserverEntryInit = {
 	var time : DOMHighResTimeStamp;
 	var rootBounds : js.geometry.DOMRectInit;
 	var boundingClientRect : js.geometry.DOMRectInit;

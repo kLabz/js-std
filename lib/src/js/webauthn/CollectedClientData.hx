@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webauthn.idl. Do not edit!
+// This file is generated from @webref/idl/webauthn.idl. Do not edit!
 
 package js.webauthn;
-extern typedef CollectedClientData = {
+typedef CollectedClientData = {
 	var type : DOMString;
 	var challenge : DOMString;
 	var origin : DOMString;

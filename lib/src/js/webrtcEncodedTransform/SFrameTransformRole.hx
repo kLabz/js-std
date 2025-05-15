@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc-encoded-transform.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc-encoded-transform.idl. Do not edit!
 
 package js.webrtcEncodedTransform;
-extern enum abstract SFrameTransformRole(String) {
+enum abstract SFrameTransformRole(String) {
 	var ENCRYPT = "encrypt";
 	var DECRYPT = "decrypt";
 }

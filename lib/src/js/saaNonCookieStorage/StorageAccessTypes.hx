@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from saa-non-cookie-storage.idl. Do not edit!
+// This file is generated from @webref/idl/saa-non-cookie-storage.idl. Do not edit!
 
 package js.saaNonCookieStorage;
-extern typedef StorageAccessTypes = {
+typedef StorageAccessTypes = {
 	@:optional
 	var all : boolean;
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-paint-api.idl. Do not edit!
+// This file is generated from @webref/idl/css-paint-api.idl. Do not edit!
 
 package js.cssPaintApi;
-extern typedef PaintRenderingContext2DSettings = {
+typedef PaintRenderingContext2DSettings = {
 	@:optional
 	var alpha : boolean;
 };

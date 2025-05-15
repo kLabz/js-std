@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from orientation-sensor.idl. Do not edit!
+// This file is generated from @webref/idl/orientation-sensor.idl. Do not edit!
 
 package js.orientationSensor;
-extern enum abstract OrientationSensorLocalCoordinateSystem(String) {
+enum abstract OrientationSensorLocalCoordinateSystem(String) {
 	var DEVICE = "device";
 	var SCREEN = "screen";
 }

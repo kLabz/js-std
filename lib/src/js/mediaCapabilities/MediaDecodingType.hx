@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from media-capabilities.idl. Do not edit!
+// This file is generated from @webref/idl/media-capabilities.idl. Do not edit!
 
 package js.mediaCapabilities;
-extern enum abstract MediaDecodingType(String) {
+enum abstract MediaDecodingType(String) {
 	var FILE = "file";
 	var MEDIA_SOURCE = "media-source";
 	var WEBRTC = "webrtc";

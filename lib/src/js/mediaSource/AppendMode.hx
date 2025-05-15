@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from media-source.idl. Do not edit!
+// This file is generated from @webref/idl/media-source.idl. Do not edit!
 
 package js.mediaSource;
-extern enum abstract AppendMode(String) {
+enum abstract AppendMode(String) {
 	var SEGMENTS = "segments";
 	var SEQUENCE = "sequence";
 }

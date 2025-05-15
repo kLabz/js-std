@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from trusted-types.idl. Do not edit!
+// This file is generated from @webref/idl/trusted-types.idl. Do not edit!
 
 package js.trustedTypes;
-extern typedef TrustedTypePolicyOptions = {
+typedef TrustedTypePolicyOptions = {
 	@:optional
 	var createHTML : CreateHTMLCallback;
 	@:optional

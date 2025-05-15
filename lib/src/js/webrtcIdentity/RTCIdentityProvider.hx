@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc-identity.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc-identity.idl. Do not edit!
 
 package js.webrtcIdentity;
-extern typedef RTCIdentityProvider = {
+typedef RTCIdentityProvider = {
 	var generateAssertion : GenerateAssertionCallback;
 	var validateAssertion : ValidateAssertionCallback;
 };

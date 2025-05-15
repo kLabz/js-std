@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from compression.idl. Do not edit!
+// This file is generated from @webref/idl/compression.idl. Do not edit!
 
 package js.compression;
-extern enum abstract CompressionFormat(String) {
+enum abstract CompressionFormat(String) {
 	var DEFLATE = "deflate";
 	var DEFLATE_RAW = "deflate-raw";
 	var GZIP = "gzip";

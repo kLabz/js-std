@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-scroll-snap-2.idl. Do not edit!
+// This file is generated from @webref/idl/css-scroll-snap-2.idl. Do not edit!
 
 package js.cssScrollSnap2;
-extern typedef SnapEventInit = js.dom.EventInit & {
+typedef SnapEventInit = js.dom.EventInit & {
 	@:optional
 	var snapTargetBlock : Node;
 	@:optional

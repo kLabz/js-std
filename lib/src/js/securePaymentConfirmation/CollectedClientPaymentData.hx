@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from secure-payment-confirmation.idl. Do not edit!
+// This file is generated from @webref/idl/secure-payment-confirmation.idl. Do not edit!
 
 package js.securePaymentConfirmation;
-extern typedef CollectedClientPaymentData = js.webauthn.CollectedClientData & {
+typedef CollectedClientPaymentData = js.webauthn.CollectedClientData & {
 	var payment : js.securePaymentConfirmation.CollectedClientAdditionalPaymentData;
 };

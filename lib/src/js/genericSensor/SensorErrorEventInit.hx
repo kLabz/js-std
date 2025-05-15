@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from generic-sensor.idl. Do not edit!
+// This file is generated from @webref/idl/generic-sensor.idl. Do not edit!
 
 package js.genericSensor;
-extern typedef SensorErrorEventInit = js.dom.EventInit & {
+typedef SensorErrorEventInit = js.dom.EventInit & {
 	var error : DOMException;
 };

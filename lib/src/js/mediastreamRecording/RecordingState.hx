@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from mediastream-recording.idl. Do not edit!
+// This file is generated from @webref/idl/mediastream-recording.idl. Do not edit!
 
 package js.mediastreamRecording;
-extern enum abstract RecordingState(String) {
+enum abstract RecordingState(String) {
 	var INACTIVE = "inactive";
 	var RECORDING = "recording";
 	var PAUSED = "paused";

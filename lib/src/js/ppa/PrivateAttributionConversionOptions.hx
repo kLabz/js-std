@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from ppa.idl. Do not edit!
+// This file is generated from @webref/idl/ppa.idl. Do not edit!
 
 package js.ppa;
-extern typedef PrivateAttributionConversionOptions = {
+typedef PrivateAttributionConversionOptions = {
 	var aggregationService : USVString;
 	@:optional
 	var epsilon : double;

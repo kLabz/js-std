@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-properties-values-api.idl. Do not edit!
+// This file is generated from @webref/idl/css-properties-values-api.idl. Do not edit!
 
 package js.cssPropertiesValuesApi;
-extern typedef PropertyDefinition = {
+typedef PropertyDefinition = {
 	var name : DOMString;
 	@:optional
 	var syntax : DOMString;

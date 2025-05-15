@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from secure-payment-confirmation.idl. Do not edit!
+// This file is generated from @webref/idl/secure-payment-confirmation.idl. Do not edit!
 
 package js.securePaymentConfirmation;
-extern enum abstract SecurePaymentConfirmationAvailability(String) {
+enum abstract SecurePaymentConfirmationAvailability(String) {
 	var AVAILABLE = "available";
 	var UNAVAILABLE_UNKNOWN_REASON = "unavailable-unknown-reason";
 	var UNAVAILABLE_FEATURE_NOT_ENABLED = "unavailable-feature-not-enabled";

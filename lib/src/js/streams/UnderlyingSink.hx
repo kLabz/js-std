@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from streams.idl. Do not edit!
+// This file is generated from @webref/idl/streams.idl. Do not edit!
 
 package js.streams;
-extern typedef UnderlyingSink = {
+typedef UnderlyingSink = {
 	@:optional
 	var start : UnderlyingSinkStartCallback;
 	@:optional

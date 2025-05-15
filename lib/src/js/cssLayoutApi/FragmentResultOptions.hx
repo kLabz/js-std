@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-layout-api.idl. Do not edit!
+// This file is generated from @webref/idl/css-layout-api.idl. Do not edit!
 
 package js.cssLayoutApi;
-extern typedef FragmentResultOptions = {
+typedef FragmentResultOptions = {
 	@:optional
 	var inlineSize : double;
 	@:optional

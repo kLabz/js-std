@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from speech-api.idl. Do not edit!
+// This file is generated from @webref/idl/speech-api.idl. Do not edit!
 
 package js.speechApi;
-extern enum abstract SpeechSynthesisErrorCode(String) {
+enum abstract SpeechSynthesisErrorCode(String) {
 	var CANCELED = "canceled";
 	var INTERRUPTED = "interrupted";
 	var AUDIO_BUSY = "audio-busy";

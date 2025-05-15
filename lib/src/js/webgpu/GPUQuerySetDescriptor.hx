@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webgpu.idl. Do not edit!
+// This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
-extern typedef GPUQuerySetDescriptor = js.webgpu.GPUObjectDescriptorBase & {
+typedef GPUQuerySetDescriptor = js.webgpu.GPUObjectDescriptorBase & {
 	var type : js.webgpu.GPUQueryType;
 	var count : GPUSize32;
 };

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc-ice.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc-ice.idl. Do not edit!
 
 package js.webrtcIce;
-extern typedef RTCIceGatherOptions = {
+typedef RTCIceGatherOptions = {
 	@:optional
 	var gatherPolicy : js.webrtc.RTCIceTransportPolicy;
 	@:optional

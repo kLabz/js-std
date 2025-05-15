@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from js-self-profiling.idl. Do not edit!
+// This file is generated from @webref/idl/js-self-profiling.idl. Do not edit!
 
 package js.jsSelfProfiling;
-extern typedef ProfilerTrace = {
+typedef ProfilerTrace = {
 	var resources : [object Object];
 	var frames : [object Object];
 	var stacks : [object Object];

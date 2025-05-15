@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from mediasession.idl. Do not edit!
+// This file is generated from @webref/idl/mediasession.idl. Do not edit!
 
 package js.mediasession;
-extern typedef MediaImage = {
+typedef MediaImage = {
 	var src : USVString;
 	@:optional
 	var sizes : DOMString;

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from media-source.idl. Do not edit!
+// This file is generated from @webref/idl/media-source.idl. Do not edit!
 
 package js.mediaSource;
-extern enum abstract EndOfStreamError(String) {
+enum abstract EndOfStreamError(String) {
 	var NETWORK = "network";
 	var DECODE = "decode";
 }

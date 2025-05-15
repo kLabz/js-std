@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from mediacapture-automation.idl. Do not edit!
+// This file is generated from @webref/idl/mediacapture-automation.idl. Do not edit!
 
 package js.mediacaptureAutomation;
-extern enum abstract MockCapturePromptResult(String) {
+enum abstract MockCapturePromptResult(String) {
 	var GRANTED = "granted";
 	var DENIED = "denied";
 }

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from shape-detection-api.idl. Do not edit!
+// This file is generated from @webref/idl/shape-detection-api.idl. Do not edit!
 
 package js.shapeDetectionApi;
-extern typedef Landmark = {
+typedef Landmark = {
 	var locations : [object Object];
 	@:optional
 	var type : js.shapeDetectionApi.LandmarkType;

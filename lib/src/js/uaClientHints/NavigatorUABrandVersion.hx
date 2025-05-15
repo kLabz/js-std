@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from ua-client-hints.idl. Do not edit!
+// This file is generated from @webref/idl/ua-client-hints.idl. Do not edit!
 
 package js.uaClientHints;
-extern typedef NavigatorUABrandVersion = {
+typedef NavigatorUABrandVersion = {
 	@:optional
 	var brand : DOMString;
 	@:optional

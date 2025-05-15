@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from web-nfc.idl. Do not edit!
+// This file is generated from @webref/idl/web-nfc.idl. Do not edit!
 
 package js.webNfc;
-extern typedef NDEFMessageInit = {
+typedef NDEFMessageInit = {
 	var records : [object Object];
 };

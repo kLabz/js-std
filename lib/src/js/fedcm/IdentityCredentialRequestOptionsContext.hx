@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fedcm.idl. Do not edit!
+// This file is generated from @webref/idl/fedcm.idl. Do not edit!
 
 package js.fedcm;
-extern enum abstract IdentityCredentialRequestOptionsContext(String) {
+enum abstract IdentityCredentialRequestOptionsContext(String) {
 	var SIGNIN = "signin";
 	var SIGNUP = "signup";
 	var USE = "use";

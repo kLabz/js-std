@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from shape-detection-api.idl. Do not edit!
+// This file is generated from @webref/idl/shape-detection-api.idl. Do not edit!
 
 package js.shapeDetectionApi;
-extern enum abstract LandmarkType(String) {
+enum abstract LandmarkType(String) {
 	var MOUTH = "mouth";
 	var EYE = "eye";
 	var NOSE = "nose";

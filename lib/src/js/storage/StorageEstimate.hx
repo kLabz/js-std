@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from storage.idl. Do not edit!
+// This file is generated from @webref/idl/storage.idl. Do not edit!
 
 package js.storage;
-extern typedef StorageEstimate = {
+typedef StorageEstimate = {
 	@:optional
 	var usage : unsigned long long;
 	@:optional

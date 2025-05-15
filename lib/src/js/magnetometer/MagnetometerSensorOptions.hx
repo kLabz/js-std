@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from magnetometer.idl. Do not edit!
+// This file is generated from @webref/idl/magnetometer.idl. Do not edit!
 
 package js.magnetometer;
-extern typedef MagnetometerSensorOptions = js.genericSensor.SensorOptions & {
+typedef MagnetometerSensorOptions = js.genericSensor.SensorOptions & {
 	@:optional
 	var referenceFrame : js.magnetometer.MagnetometerLocalCoordinateSystem;
 };

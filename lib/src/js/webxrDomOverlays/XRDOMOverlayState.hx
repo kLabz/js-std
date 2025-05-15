@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr-dom-overlays.idl. Do not edit!
+// This file is generated from @webref/idl/webxr-dom-overlays.idl. Do not edit!
 
 package js.webxrDomOverlays;
-extern typedef XRDOMOverlayState = {
+typedef XRDOMOverlayState = {
 	@:optional
 	var type : js.webxrDomOverlays.XRDOMOverlayType;
 };

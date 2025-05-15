@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from IndexedDB.idl. Do not edit!
+// This file is generated from @webref/idl/IndexedDB.idl. Do not edit!
 
 package js.indexeddb;
-extern enum abstract IDBCursorDirection(String) {
+enum abstract IDBCursorDirection(String) {
 	var NEXT = "next";
 	var NEXTUNIQUE = "nextunique";
 	var PREV = "prev";

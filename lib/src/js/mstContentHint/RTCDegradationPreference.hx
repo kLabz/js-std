@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from mst-content-hint.idl. Do not edit!
+// This file is generated from @webref/idl/mst-content-hint.idl. Do not edit!
 
 package js.mstContentHint;
-extern enum abstract RTCDegradationPreference(String) {
+enum abstract RTCDegradationPreference(String) {
 	var MAINTAIN_FRAMERATE = "maintain-framerate";
 	var MAINTAIN_RESOLUTION = "maintain-resolution";
 	var BALANCED = "balanced";

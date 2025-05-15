@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from digital-goods.idl. Do not edit!
+// This file is generated from @webref/idl/digital-goods.idl. Do not edit!
 
 package js.digitalGoods;
-extern typedef PurchaseDetails = {
+typedef PurchaseDetails = {
 	var itemId : DOMString;
 	var purchaseToken : DOMString;
 };

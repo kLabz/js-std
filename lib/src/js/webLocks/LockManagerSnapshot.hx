@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from web-locks.idl. Do not edit!
+// This file is generated from @webref/idl/web-locks.idl. Do not edit!
 
 package js.webLocks;
-extern typedef LockManagerSnapshot = {
+typedef LockManagerSnapshot = {
 	@:optional
 	var held : [object Object];
 	@:optional

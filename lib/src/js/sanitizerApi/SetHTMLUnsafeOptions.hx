@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from sanitizer-api.idl. Do not edit!
+// This file is generated from @webref/idl/sanitizer-api.idl. Do not edit!
 
 package js.sanitizerApi;
-extern typedef SetHTMLUnsafeOptions = {
+typedef SetHTMLUnsafeOptions = {
 	@:optional
 	var sanitizer : [object Object],[object Object],[object Object];
 };

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webmidi.idl. Do not edit!
+// This file is generated from @webref/idl/webmidi.idl. Do not edit!
 
 package js.webmidi;
-extern enum abstract MIDIPortConnectionState(String) {
+enum abstract MIDIPortConnectionState(String) {
 	var OPEN = "open";
 	var CLOSED = "closed";
 	var PENDING = "pending";

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from writing-assistance-apis.idl. Do not edit!
+// This file is generated from @webref/idl/writing-assistance-apis.idl. Do not edit!
 
 package js.writingAssistanceApis;
-extern enum abstract SummarizerFormat(String) {
+enum abstract SummarizerFormat(String) {
 	var PLAIN_TEXT = "plain-text";
 	var MARKDOWN = "markdown";
 }

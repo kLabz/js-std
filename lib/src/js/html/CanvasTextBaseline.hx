@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from html.idl. Do not edit!
+// This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
-extern enum abstract CanvasTextBaseline(String) {
+enum abstract CanvasTextBaseline(String) {
 	var TOP = "top";
 	var HANGING = "hanging";
 	var MIDDLE = "middle";

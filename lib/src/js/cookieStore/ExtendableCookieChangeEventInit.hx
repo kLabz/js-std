@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from cookie-store.idl. Do not edit!
+// This file is generated from @webref/idl/cookie-store.idl. Do not edit!
 
 package js.cookieStore;
-extern typedef ExtendableCookieChangeEventInit = js.serviceWorkers.ExtendableEventInit & {
+typedef ExtendableCookieChangeEventInit = js.serviceWorkers.ExtendableEventInit & {
 	@:optional
 	var changed : CookieList;
 	@:optional

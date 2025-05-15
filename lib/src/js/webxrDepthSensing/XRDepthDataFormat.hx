@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr-depth-sensing.idl. Do not edit!
+// This file is generated from @webref/idl/webxr-depth-sensing.idl. Do not edit!
 
 package js.webxrDepthSensing;
-extern enum abstract XRDepthDataFormat(String) {
+enum abstract XRDepthDataFormat(String) {
 	var LUMINANCE_ALPHA = "luminance-alpha";
 	var FLOAT32 = "float32";
 	var UNSIGNED_SHORT = "unsigned-short";

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from cookie-store.idl. Do not edit!
+// This file is generated from @webref/idl/cookie-store.idl. Do not edit!
 
 package js.cookieStore;
-extern enum abstract CookieSameSite(String) {
+enum abstract CookieSameSite(String) {
 	var STRICT = "strict";
 	var LAX = "lax";
 	var NONE = "none";

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcodecs-av1-codec-registration.idl. Do not edit!
+// This file is generated from @webref/idl/webcodecs-av1-codec-registration.idl. Do not edit!
 
 package js.webcodecsAv1CodecRegistration;
-extern typedef VideoEncoderEncodeOptionsForAv1 = {
+typedef VideoEncoderEncodeOptionsForAv1 = {
 	@:optional
 	var quantizer : unsigned short;
 };

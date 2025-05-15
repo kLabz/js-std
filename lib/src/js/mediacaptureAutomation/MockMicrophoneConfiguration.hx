@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from mediacapture-automation.idl. Do not edit!
+// This file is generated from @webref/idl/mediacapture-automation.idl. Do not edit!
 
 package js.mediacaptureAutomation;
-extern typedef MockMicrophoneConfiguration = js.mediacaptureAutomation.MockCaptureDeviceConfiguration & {
+typedef MockMicrophoneConfiguration = js.mediacaptureAutomation.MockCaptureDeviceConfiguration & {
 	@:optional
 	var defaultSampleRate : unsigned long;
 };

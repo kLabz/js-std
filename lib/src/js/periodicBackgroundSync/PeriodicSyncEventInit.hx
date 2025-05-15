@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from periodic-background-sync.idl. Do not edit!
+// This file is generated from @webref/idl/periodic-background-sync.idl. Do not edit!
 
 package js.periodicBackgroundSync;
-extern typedef PeriodicSyncEventInit = js.serviceWorkers.ExtendableEventInit & {
+typedef PeriodicSyncEventInit = js.serviceWorkers.ExtendableEventInit & {
 	var tag : DOMString;
 };

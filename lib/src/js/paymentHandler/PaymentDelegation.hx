@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from payment-handler.idl. Do not edit!
+// This file is generated from @webref/idl/payment-handler.idl. Do not edit!
 
 package js.paymentHandler;
-extern enum abstract PaymentDelegation(String) {
+enum abstract PaymentDelegation(String) {
 	var SHIPPINGADDRESS = "shippingAddress";
 	var PAYERNAME = "payerName";
 	var PAYERPHONE = "payerPhone";

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from writing-assistance-apis.idl. Do not edit!
+// This file is generated from @webref/idl/writing-assistance-apis.idl. Do not edit!
 
 package js.writingAssistanceApis;
-extern enum abstract RewriterTone(String) {
+enum abstract RewriterTone(String) {
 	var AS_IS = "as-is";
 	var MORE_FORMAL = "more-formal";
 	var MORE_CASUAL = "more-casual";

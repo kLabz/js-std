@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from idle-detection.idl. Do not edit!
+// This file is generated from @webref/idl/idle-detection.idl. Do not edit!
 
 package js.idleDetection;
-extern enum abstract ScreenIdleState(String) {
+enum abstract ScreenIdleState(String) {
 	var LOCKED = "locked";
 	var UNLOCKED = "unlocked";
 }

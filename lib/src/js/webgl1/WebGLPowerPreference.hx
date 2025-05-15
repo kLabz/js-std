@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webgl1.idl. Do not edit!
+// This file is generated from @webref/idl/webgl1.idl. Do not edit!
 
 package js.webgl1;
-extern enum abstract WebGLPowerPreference(String) {
+enum abstract WebGLPowerPreference(String) {
 	var DEFAULT = "default";
 	var LOW_POWER = "low-power";
 	var HIGH_PERFORMANCE = "high-performance";

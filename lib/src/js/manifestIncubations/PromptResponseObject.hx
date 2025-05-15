@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from manifest-incubations.idl. Do not edit!
+// This file is generated from @webref/idl/manifest-incubations.idl. Do not edit!
 
 package js.manifestIncubations;
-extern typedef PromptResponseObject = {
+typedef PromptResponseObject = {
 	@:optional
 	var userChoice : js.manifestIncubations.AppBannerPromptOutcome;
 };

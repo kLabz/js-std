@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webnn.idl. Do not edit!
+// This file is generated from @webref/idl/webnn.idl. Do not edit!
 
 package js.webnn;
-extern typedef MLPool2dOptions = js.webnn.MLOperatorOptions & {
+typedef MLPool2dOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var windowDimensions : [object Object];
 	@:optional

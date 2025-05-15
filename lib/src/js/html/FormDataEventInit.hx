@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from html.idl. Do not edit!
+// This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
-extern typedef FormDataEventInit = js.dom.EventInit & {
+typedef FormDataEventInit = js.dom.EventInit & {
 	var formData : FormData;
 };

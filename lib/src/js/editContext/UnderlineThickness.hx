@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from edit-context.idl. Do not edit!
+// This file is generated from @webref/idl/edit-context.idl. Do not edit!
 
 package js.editContext;
-extern enum abstract UnderlineThickness(String) {
+enum abstract UnderlineThickness(String) {
 	var NONE = "none";
 	var THIN = "thin";
 	var THICK = "thick";

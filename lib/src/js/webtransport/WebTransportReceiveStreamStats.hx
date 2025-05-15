@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webtransport.idl. Do not edit!
+// This file is generated from @webref/idl/webtransport.idl. Do not edit!
 
 package js.webtransport;
-extern typedef WebTransportReceiveStreamStats = {
+typedef WebTransportReceiveStreamStats = {
 	@:optional
 	var bytesReceived : unsigned long long;
 	@:optional

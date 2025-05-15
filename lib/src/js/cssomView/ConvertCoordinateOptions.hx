@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from cssom-view.idl. Do not edit!
+// This file is generated from @webref/idl/cssom-view.idl. Do not edit!
 
 package js.cssomView;
-extern typedef ConvertCoordinateOptions = {
+typedef ConvertCoordinateOptions = {
 	@:optional
 	var fromBox : js.cssomView.CSSBoxType;
 	@:optional

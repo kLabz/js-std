@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr-hit-test.idl. Do not edit!
+// This file is generated from @webref/idl/webxr-hit-test.idl. Do not edit!
 
 package js.webxrHitTest;
-extern enum abstract XRHitTestTrackableType(String) {
+enum abstract XRHitTestTrackableType(String) {
 	var POINT = "point";
 	var PLANE = "plane";
 	var MESH = "mesh";

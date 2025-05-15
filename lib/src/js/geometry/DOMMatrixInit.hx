@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from geometry.idl. Do not edit!
+// This file is generated from @webref/idl/geometry.idl. Do not edit!
 
 package js.geometry;
-extern typedef DOMMatrixInit = js.geometry.DOMMatrix2DInit & {
+typedef DOMMatrixInit = js.geometry.DOMMatrix2DInit & {
 	@:optional
 	var m13 : unrestricted double;
 	@:optional

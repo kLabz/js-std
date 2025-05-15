@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webvtt.idl. Do not edit!
+// This file is generated from @webref/idl/webvtt.idl. Do not edit!
 
 package js.webvtt;
-extern enum abstract AutoKeyword(String) {
+enum abstract AutoKeyword(String) {
 	var AUTO = "auto";
 }

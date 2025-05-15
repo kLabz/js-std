@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from speech-api.idl. Do not edit!
+// This file is generated from @webref/idl/speech-api.idl. Do not edit!
 
 package js.speechApi;
-extern enum abstract SpeechRecognitionErrorCode(String) {
+enum abstract SpeechRecognitionErrorCode(String) {
 	var NO_SPEECH = "no-speech";
 	var ABORTED = "aborted";
 	var AUDIO_CAPTURE = "audio-capture";

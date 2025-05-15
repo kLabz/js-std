@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from IndexedDB.idl. Do not edit!
+// This file is generated from @webref/idl/IndexedDB.idl. Do not edit!
 
 package js.indexeddb;
-extern typedef IDBObjectStoreParameters = {
+typedef IDBObjectStoreParameters = {
 	@:optional
 	var keyPath : [object Object],[object Object];
 	@:optional

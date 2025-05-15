@@ -20,9 +20,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr.idl. Do not edit!
+// This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
-extern typedef XRSessionEventInit = js.dom.EventInit & {
+typedef XRSessionEventInit = js.dom.EventInit & {
 	var session : XRSession;
 };

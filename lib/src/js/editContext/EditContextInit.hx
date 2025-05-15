@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from edit-context.idl. Do not edit!
+// This file is generated from @webref/idl/edit-context.idl. Do not edit!
 
 package js.editContext;
-extern typedef EditContextInit = {
+typedef EditContextInit = {
 	@:optional
 	var text : DOMString;
 	@:optional

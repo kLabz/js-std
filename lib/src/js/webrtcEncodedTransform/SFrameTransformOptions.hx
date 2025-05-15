@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc-encoded-transform.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc-encoded-transform.idl. Do not edit!
 
 package js.webrtcEncodedTransform;
-extern typedef SFrameTransformOptions = {
+typedef SFrameTransformOptions = {
 	@:optional
 	var role : js.webrtcEncodedTransform.SFrameTransformRole;
 };

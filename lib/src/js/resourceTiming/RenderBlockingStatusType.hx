@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from resource-timing.idl. Do not edit!
+// This file is generated from @webref/idl/resource-timing.idl. Do not edit!
 
 package js.resourceTiming;
-extern enum abstract RenderBlockingStatusType(String) {
+enum abstract RenderBlockingStatusType(String) {
 	var BLOCKING = "blocking";
 	var NON_BLOCKING = "non-blocking";
 }

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc-stats.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc-stats.idl. Do not edit!
 
 package js.webrtcStats;
-extern typedef RTCCertificateStats = js.webrtc.RTCStats & {
+typedef RTCCertificateStats = js.webrtc.RTCStats & {
 	var fingerprint : DOMString;
 	var fingerprintAlgorithm : DOMString;
 	var base64Certificate : DOMString;

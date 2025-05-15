@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fenced-frame.idl. Do not edit!
+// This file is generated from @webref/idl/fenced-frame.idl. Do not edit!
 
 package js.fencedFrame;
-extern enum abstract FenceReportingDestination(String) {
+enum abstract FenceReportingDestination(String) {
 	var BUYER = "buyer";
 	var SELLER = "seller";
 	var COMPONENT_SELLER = "component-seller";

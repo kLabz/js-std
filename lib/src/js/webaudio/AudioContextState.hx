@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webaudio.idl. Do not edit!
+// This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
-extern enum abstract AudioContextState(String) {
+enum abstract AudioContextState(String) {
 	var SUSPENDED = "suspended";
 	var RUNNING = "running";
 	var CLOSED = "closed";

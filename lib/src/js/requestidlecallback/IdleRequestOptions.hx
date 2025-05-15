@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from requestidlecallback.idl. Do not edit!
+// This file is generated from @webref/idl/requestidlecallback.idl. Do not edit!
 
 package js.requestidlecallback;
-extern typedef IdleRequestOptions = {
+typedef IdleRequestOptions = {
 	@:optional
 	var timeout : unsigned long;
 };

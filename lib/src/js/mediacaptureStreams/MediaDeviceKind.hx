@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from mediacapture-streams.idl. Do not edit!
+// This file is generated from @webref/idl/mediacapture-streams.idl. Do not edit!
 
 package js.mediacaptureStreams;
-extern enum abstract MediaDeviceKind(String) {
+enum abstract MediaDeviceKind(String) {
 	var AUDIOINPUT = "audioinput";
 	var AUDIOOUTPUT = "audiooutput";
 	var VIDEOINPUT = "videoinput";

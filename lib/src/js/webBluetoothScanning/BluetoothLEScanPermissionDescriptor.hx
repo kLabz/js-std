@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from web-bluetooth-scanning.idl. Do not edit!
+// This file is generated from @webref/idl/web-bluetooth-scanning.idl. Do not edit!
 
 package js.webBluetoothScanning;
-extern typedef BluetoothLEScanPermissionDescriptor = js.permissions.PermissionDescriptor & {
+typedef BluetoothLEScanPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var filters : [object Object];
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from trust-token-api.idl. Do not edit!
+// This file is generated from @webref/idl/trust-token-api.idl. Do not edit!
 
 package js.trustTokenApi;
-extern typedef PrivateToken = {
+typedef PrivateToken = {
 	var version : js.trustTokenApi.TokenVersion;
 	var operation : js.trustTokenApi.OperationType;
 	@:optional

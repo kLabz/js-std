@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from web-nfc.idl. Do not edit!
+// This file is generated from @webref/idl/web-nfc.idl. Do not edit!
 
 package js.webNfc;
-extern typedef NDEFReadingEventInit = js.dom.EventInit & {
+typedef NDEFReadingEventInit = js.dom.EventInit & {
 	@:optional
 	var serialNumber : DOMString;
 	var message : js.webNfc.NDEFMessageInit;

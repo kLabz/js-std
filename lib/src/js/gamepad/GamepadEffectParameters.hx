@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from gamepad.idl. Do not edit!
+// This file is generated from @webref/idl/gamepad.idl. Do not edit!
 
 package js.gamepad;
-extern typedef GamepadEffectParameters = {
+typedef GamepadEffectParameters = {
 	@:optional
 	var duration : unsigned long long;
 	@:optional

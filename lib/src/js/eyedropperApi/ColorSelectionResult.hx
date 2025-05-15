@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from eyedropper-api.idl. Do not edit!
+// This file is generated from @webref/idl/eyedropper-api.idl. Do not edit!
 
 package js.eyedropperApi;
-extern typedef ColorSelectionResult = {
+typedef ColorSelectionResult = {
 	@:optional
 	var sRGBHex : DOMString;
 };

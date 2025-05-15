@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from presentation-api.idl. Do not edit!
+// This file is generated from @webref/idl/presentation-api.idl. Do not edit!
 
 package js.presentationApi;
-extern enum abstract PresentationConnectionCloseReason(String) {
+enum abstract PresentationConnectionCloseReason(String) {
 	var ERROR = "error";
 	var CLOSED = "closed";
 	var WENTAWAY = "wentaway";

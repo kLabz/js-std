@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from html.idl. Do not edit!
+// This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
-extern enum abstract DOMParserSupportedType(String) {
+enum abstract DOMParserSupportedType(String) {
 	var TEXT_HTML = "text/html";
 	var TEXT_XML = "text/xml";
 	var APPLICATION_XML = "application/xml";

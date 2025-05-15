@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-highlight-api.idl. Do not edit!
+// This file is generated from @webref/idl/css-highlight-api.idl. Do not edit!
 
 package js.cssHighlightApi;
-extern enum abstract HighlightType(String) {
+enum abstract HighlightType(String) {
 	var HIGHLIGHT = "highlight";
 	var SPELLING_ERROR = "spelling-error";
 	var GRAMMAR_ERROR = "grammar-error";

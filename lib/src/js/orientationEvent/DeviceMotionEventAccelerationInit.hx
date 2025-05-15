@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from orientation-event.idl. Do not edit!
+// This file is generated from @webref/idl/orientation-event.idl. Do not edit!
 
 package js.orientationEvent;
-extern typedef DeviceMotionEventAccelerationInit = {
+typedef DeviceMotionEventAccelerationInit = {
 	@:optional
 	var x : double;
 	@:optional

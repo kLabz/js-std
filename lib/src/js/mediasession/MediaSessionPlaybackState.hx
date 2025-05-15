@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from mediasession.idl. Do not edit!
+// This file is generated from @webref/idl/mediasession.idl. Do not edit!
 
 package js.mediasession;
-extern enum abstract MediaSessionPlaybackState(String) {
+enum abstract MediaSessionPlaybackState(String) {
 	var NONE = "none";
 	var PAUSED = "paused";
 	var PLAYING = "playing";

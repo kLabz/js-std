@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from scheduling-apis.idl. Do not edit!
+// This file is generated from @webref/idl/scheduling-apis.idl. Do not edit!
 
 package js.schedulingApis;
-extern enum abstract TaskPriority(String) {
+enum abstract TaskPriority(String) {
 	var USER_BLOCKING = "user-blocking";
 	var USER_VISIBLE = "user-visible";
 	var BACKGROUND = "background";

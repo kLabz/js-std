@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from CSP.idl. Do not edit!
+// This file is generated from @webref/idl/CSP.idl. Do not edit!
 
 package js.csp;
-extern enum abstract SecurityPolicyViolationEventDisposition(String) {
+enum abstract SecurityPolicyViolationEventDisposition(String) {
 	var ENFORCE = "enforce";
 	var REPORT = "report";
 }

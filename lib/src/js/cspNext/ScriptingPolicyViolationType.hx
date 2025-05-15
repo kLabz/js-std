@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from csp-next.idl. Do not edit!
+// This file is generated from @webref/idl/csp-next.idl. Do not edit!
 
 package js.cspNext;
-extern enum abstract ScriptingPolicyViolationType(String) {
+enum abstract ScriptingPolicyViolationType(String) {
 	var EXTERNALSCRIPT = "externalScript";
 	var INLINESCRIPT = "inlineScript";
 	var INLINEEVENTHANDLER = "inlineEventHandler";

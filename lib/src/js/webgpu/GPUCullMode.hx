@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webgpu.idl. Do not edit!
+// This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
-extern enum abstract GPUCullMode(String) {
+enum abstract GPUCullMode(String) {
 	var NONE = "none";
 	var FRONT = "front";
 	var BACK = "back";

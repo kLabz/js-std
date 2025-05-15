@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webauthn.idl. Do not edit!
+// This file is generated from @webref/idl/webauthn.idl. Do not edit!
 
 package js.webauthn;
-extern typedef AuthenticationResponseJSON = {
+typedef AuthenticationResponseJSON = {
 	var id : DOMString;
 	var rawId : Base64URLString;
 	var response : js.webauthn.AuthenticatorAssertionResponseJSON;

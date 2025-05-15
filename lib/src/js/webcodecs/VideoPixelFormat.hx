@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcodecs.idl. Do not edit!
+// This file is generated from @webref/idl/webcodecs.idl. Do not edit!
 
 package js.webcodecs;
-extern enum abstract VideoPixelFormat(String) {
+enum abstract VideoPixelFormat(String) {
 	var I420 = "I420";
 	var I420P10 = "I420P10";
 	var I420P12 = "I420P12";

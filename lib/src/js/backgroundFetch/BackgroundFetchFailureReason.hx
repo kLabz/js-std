@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from background-fetch.idl. Do not edit!
+// This file is generated from @webref/idl/background-fetch.idl. Do not edit!
 
 package js.backgroundFetch;
-extern enum abstract BackgroundFetchFailureReason(String) {
+enum abstract BackgroundFetchFailureReason(String) {
 	var NONE = "";
 	var ABORTED = "aborted";
 	var BAD_STATUS = "bad-status";

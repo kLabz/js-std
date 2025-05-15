@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from service-workers.idl. Do not edit!
+// This file is generated from @webref/idl/service-workers.idl. Do not edit!
 
 package js.serviceWorkers;
-extern enum abstract FrameType(String) {
+enum abstract FrameType(String) {
 	var AUXILIARY = "auxiliary";
 	var TOP_LEVEL = "top-level";
 	var NESTED = "nested";

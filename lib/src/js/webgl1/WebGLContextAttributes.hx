@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webgl1.idl. Do not edit!
+// This file is generated from @webref/idl/webgl1.idl. Do not edit!
 
 package js.webgl1;
-extern typedef WebGLContextAttributes = {
+typedef WebGLContextAttributes = {
 	@:optional
 	var alpha : boolean;
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from payment-request.idl. Do not edit!
+// This file is generated from @webref/idl/payment-request.idl. Do not edit!
 
 package js.paymentRequest;
-extern typedef AddressErrors = {
+typedef AddressErrors = {
 	@:optional
 	var addressLine : DOMString;
 	@:optional

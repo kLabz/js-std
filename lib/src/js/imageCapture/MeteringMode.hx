@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from image-capture.idl. Do not edit!
+// This file is generated from @webref/idl/image-capture.idl. Do not edit!
 
 package js.imageCapture;
-extern enum abstract MeteringMode(String) {
+enum abstract MeteringMode(String) {
 	var NONE = "none";
 	var MANUAL = "manual";
 	var SINGLE_SHOT = "single-shot";

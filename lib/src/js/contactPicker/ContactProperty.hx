@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from contact-picker.idl. Do not edit!
+// This file is generated from @webref/idl/contact-picker.idl. Do not edit!
 
 package js.contactPicker;
-extern enum abstract ContactProperty(String) {
+enum abstract ContactProperty(String) {
 	var ADDRESS = "address";
 	var EMAIL = "email";
 	var ICON = "icon";

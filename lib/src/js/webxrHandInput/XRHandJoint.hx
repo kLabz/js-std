@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr-hand-input.idl. Do not edit!
+// This file is generated from @webref/idl/webxr-hand-input.idl. Do not edit!
 
 package js.webxrHandInput;
-extern enum abstract XRHandJoint(String) {
+enum abstract XRHandJoint(String) {
 	var WRIST = "wrist";
 	var THUMB_METACARPAL = "thumb-metacarpal";
 	var THUMB_PHALANX_PROXIMAL = "thumb-phalanx-proximal";

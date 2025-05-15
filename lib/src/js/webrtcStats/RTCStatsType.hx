@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc-stats.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc-stats.idl. Do not edit!
 
 package js.webrtcStats;
-extern enum abstract RTCStatsType(String) {
+enum abstract RTCStatsType(String) {
 	var CODEC = "codec";
 	var INBOUND_RTP = "inbound-rtp";
 	var OUTBOUND_RTP = "outbound-rtp";

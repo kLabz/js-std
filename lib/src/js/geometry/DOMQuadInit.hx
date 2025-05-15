@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from geometry.idl. Do not edit!
+// This file is generated from @webref/idl/geometry.idl. Do not edit!
 
 package js.geometry;
-extern typedef DOMQuadInit = {
+typedef DOMQuadInit = {
 	@:optional
 	var p1 : js.geometry.DOMPointInit;
 	@:optional

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from scroll-animations.idl. Do not edit!
+// This file is generated from @webref/idl/scroll-animations.idl. Do not edit!
 
 package js.scrollAnimations;
-extern typedef ScrollTimelineOptions = {
+typedef ScrollTimelineOptions = {
 	@:optional
 	var source : Element;
 	@:optional

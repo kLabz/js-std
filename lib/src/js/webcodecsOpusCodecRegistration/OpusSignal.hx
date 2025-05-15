@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcodecs-opus-codec-registration.idl. Do not edit!
+// This file is generated from @webref/idl/webcodecs-opus-codec-registration.idl. Do not edit!
 
 package js.webcodecsOpusCodecRegistration;
-extern enum abstract OpusSignal(String) {
+enum abstract OpusSignal(String) {
 	var AUTO = "auto";
 	var MUSIC = "music";
 	var VOICE = "voice";

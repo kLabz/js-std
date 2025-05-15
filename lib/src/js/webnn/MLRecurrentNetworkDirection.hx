@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webnn.idl. Do not edit!
+// This file is generated from @webref/idl/webnn.idl. Do not edit!
 
 package js.webnn;
-extern enum abstract MLRecurrentNetworkDirection(String) {
+enum abstract MLRecurrentNetworkDirection(String) {
 	var FORWARD = "forward";
 	var BACKWARD = "backward";
 	var BOTH = "both";

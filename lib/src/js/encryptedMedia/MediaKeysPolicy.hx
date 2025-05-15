@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from encrypted-media.idl. Do not edit!
+// This file is generated from @webref/idl/encrypted-media.idl. Do not edit!
 
 package js.encryptedMedia;
-extern typedef MediaKeysPolicy = {
+typedef MediaKeysPolicy = {
 	@:optional
 	var minHdcpVersion : DOMString;
 };

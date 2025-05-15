@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcodecs-flac-codec-registration.idl. Do not edit!
+// This file is generated from @webref/idl/webcodecs-flac-codec-registration.idl. Do not edit!
 
 package js.webcodecsFlacCodecRegistration;
-extern typedef FlacEncoderConfig = {
+typedef FlacEncoderConfig = {
 	@:optional
 	var blockSize : unsigned long;
 	@:optional

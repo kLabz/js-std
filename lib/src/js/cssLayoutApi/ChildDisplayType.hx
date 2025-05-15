@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from css-layout-api.idl. Do not edit!
+// This file is generated from @webref/idl/css-layout-api.idl. Do not edit!
 
 package js.cssLayoutApi;
-extern enum abstract ChildDisplayType(String) {
+enum abstract ChildDisplayType(String) {
 	var BLOCK = "block";
 	var NORMAL = "normal";
 }

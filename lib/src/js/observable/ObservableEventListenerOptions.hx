@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from observable.idl. Do not edit!
+// This file is generated from @webref/idl/observable.idl. Do not edit!
 
 package js.observable;
-extern typedef ObservableEventListenerOptions = {
+typedef ObservableEventListenerOptions = {
 	@:optional
 	var capture : boolean;
 	@:optional

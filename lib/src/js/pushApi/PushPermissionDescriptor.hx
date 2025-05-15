@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from push-api.idl. Do not edit!
+// This file is generated from @webref/idl/push-api.idl. Do not edit!
 
 package js.pushApi;
-extern typedef PushPermissionDescriptor = js.permissions.PermissionDescriptor & {
+typedef PushPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var userVisibleOnly : boolean;
 };

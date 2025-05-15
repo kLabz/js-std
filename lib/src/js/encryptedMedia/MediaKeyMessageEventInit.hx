@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from encrypted-media.idl. Do not edit!
+// This file is generated from @webref/idl/encrypted-media.idl. Do not edit!
 
 package js.encryptedMedia;
-extern typedef MediaKeyMessageEventInit = js.dom.EventInit & {
+typedef MediaKeyMessageEventInit = js.dom.EventInit & {
 	var messageType : js.encryptedMedia.MediaKeyMessageType;
 	var message : ArrayBuffer;
 };

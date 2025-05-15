@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webnn.idl. Do not edit!
+// This file is generated from @webref/idl/webnn.idl. Do not edit!
 
 package js.webnn;
-extern enum abstract MLConv2dFilterOperandLayout(String) {
+enum abstract MLConv2dFilterOperandLayout(String) {
 	var OIHW = "oihw";
 	var HWIO = "hwio";
 	var OHWI = "ohwi";

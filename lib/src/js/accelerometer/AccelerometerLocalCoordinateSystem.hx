@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from accelerometer.idl. Do not edit!
+// This file is generated from @webref/idl/accelerometer.idl. Do not edit!
 
 package js.accelerometer;
-extern enum abstract AccelerometerLocalCoordinateSystem(String) {
+enum abstract AccelerometerLocalCoordinateSystem(String) {
 	var DEVICE = "device";
 	var SCREEN = "screen";
 }

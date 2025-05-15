@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from media-capabilities.idl. Do not edit!
+// This file is generated from @webref/idl/media-capabilities.idl. Do not edit!
 
 package js.mediaCapabilities;
-extern enum abstract ColorGamut(String) {
+enum abstract ColorGamut(String) {
 	var SRGB = "srgb";
 	var P3 = "p3";
 	var REC2020 = "rec2020";

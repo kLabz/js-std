@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from dom.idl. Do not edit!
+// This file is generated from @webref/idl/dom.idl. Do not edit!
 
 package js.dom;
-extern typedef CustomEventInit = js.dom.EventInit & {
+typedef CustomEventInit = js.dom.EventInit & {
 	@:optional
 	var detail : any;
 };

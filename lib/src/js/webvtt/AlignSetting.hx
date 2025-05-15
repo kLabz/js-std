@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webvtt.idl. Do not edit!
+// This file is generated from @webref/idl/webvtt.idl. Do not edit!
 
 package js.webvtt;
-extern enum abstract AlignSetting(String) {
+enum abstract AlignSetting(String) {
 	var START = "start";
 	var CENTER = "center";
 	var END = "end";

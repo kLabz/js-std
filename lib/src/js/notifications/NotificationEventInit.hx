@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from notifications.idl. Do not edit!
+// This file is generated from @webref/idl/notifications.idl. Do not edit!
 
 package js.notifications;
-extern typedef NotificationEventInit = js.serviceWorkers.ExtendableEventInit & {
+typedef NotificationEventInit = js.serviceWorkers.ExtendableEventInit & {
 	var notification : Notification;
 	@:optional
 	var action : DOMString;

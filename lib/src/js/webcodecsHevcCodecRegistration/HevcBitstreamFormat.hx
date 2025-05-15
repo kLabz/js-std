@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webcodecs-hevc-codec-registration.idl. Do not edit!
+// This file is generated from @webref/idl/webcodecs-hevc-codec-registration.idl. Do not edit!
 
 package js.webcodecsHevcCodecRegistration;
-extern enum abstract HevcBitstreamFormat(String) {
+enum abstract HevcBitstreamFormat(String) {
 	var ANNEXB = "annexb";
 	var HEVC = "hevc";
 }

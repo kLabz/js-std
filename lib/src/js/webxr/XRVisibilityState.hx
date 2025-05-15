@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr.idl. Do not edit!
+// This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
-extern enum abstract XRVisibilityState(String) {
+enum abstract XRVisibilityState(String) {
 	var VISIBLE = "visible";
 	var VISIBLE_BLURRED = "visible-blurred";
 	var HIDDEN = "hidden";

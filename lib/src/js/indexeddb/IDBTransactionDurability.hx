@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from IndexedDB.idl. Do not edit!
+// This file is generated from @webref/idl/IndexedDB.idl. Do not edit!
 
 package js.indexeddb;
-extern enum abstract IDBTransactionDurability(String) {
+enum abstract IDBTransactionDurability(String) {
 	var DEFAULT = "default";
 	var STRICT = "strict";
 	var RELAXED = "relaxed";

@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from gamepad-extensions.idl. Do not edit!
+// This file is generated from @webref/idl/gamepad-extensions.idl. Do not edit!
 
 package js.gamepadExtensions;
-extern enum abstract GamepadHand(String) {
+enum abstract GamepadHand(String) {
 	var NONE = "";
 	var LEFT = "left";
 	var RIGHT = "right";

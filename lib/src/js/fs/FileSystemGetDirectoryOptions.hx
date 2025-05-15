@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fs.idl. Do not edit!
+// This file is generated from @webref/idl/fs.idl. Do not edit!
 
 package js.fs;
-extern typedef FileSystemGetDirectoryOptions = {
+typedef FileSystemGetDirectoryOptions = {
 	@:optional
 	var create : boolean;
 };

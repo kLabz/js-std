@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webaudio.idl. Do not edit!
+// This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
-extern enum abstract AudioContextLatencyCategory(String) {
+enum abstract AudioContextLatencyCategory(String) {
 	var BALANCED = "balanced";
 	var INTERACTIVE = "interactive";
 	var PLAYBACK = "playback";

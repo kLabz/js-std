@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from mediacapture-streams.idl. Do not edit!
+// This file is generated from @webref/idl/mediacapture-streams.idl. Do not edit!
 
 package js.mediacaptureStreams;
-extern typedef DeviceChangeEventInit = js.dom.EventInit & {
+typedef DeviceChangeEventInit = js.dom.EventInit & {
 	@:optional
 	var devices : [object Object];
 };

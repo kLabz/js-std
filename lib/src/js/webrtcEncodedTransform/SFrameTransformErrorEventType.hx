@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webrtc-encoded-transform.idl. Do not edit!
+// This file is generated from @webref/idl/webrtc-encoded-transform.idl. Do not edit!
 
 package js.webrtcEncodedTransform;
-extern enum abstract SFrameTransformErrorEventType(String) {
+enum abstract SFrameTransformErrorEventType(String) {
 	var AUTHENTICATION = "authentication";
 	var KEYID = "keyID";
 	var SYNTAX = "syntax";

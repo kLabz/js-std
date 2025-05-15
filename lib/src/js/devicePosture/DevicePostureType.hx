@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from device-posture.idl. Do not edit!
+// This file is generated from @webref/idl/device-posture.idl. Do not edit!
 
 package js.devicePosture;
-extern enum abstract DevicePostureType(String) {
+enum abstract DevicePostureType(String) {
 	var CONTINUOUS = "continuous";
 	var FOLDED = "folded";
 }

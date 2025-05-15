@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from encrypted-media.idl. Do not edit!
+// This file is generated from @webref/idl/encrypted-media.idl. Do not edit!
 
 package js.encryptedMedia;
-extern enum abstract MediaKeySessionClosedReason(String) {
+enum abstract MediaKeySessionClosedReason(String) {
 	var INTERNAL_ERROR = "internal-error";
 	var CLOSED_BY_APPLICATION = "closed-by-application";
 	var RELEASE_ACKNOWLEDGED = "release-acknowledged";

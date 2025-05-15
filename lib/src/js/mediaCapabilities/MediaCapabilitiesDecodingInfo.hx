@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from media-capabilities.idl. Do not edit!
+// This file is generated from @webref/idl/media-capabilities.idl. Do not edit!
 
 package js.mediaCapabilities;
-extern typedef MediaCapabilitiesDecodingInfo = js.mediaCapabilities.MediaCapabilitiesInfo & {
+typedef MediaCapabilitiesDecodingInfo = js.mediaCapabilities.MediaCapabilitiesInfo & {
 	var keySystemAccess : MediaKeySystemAccess;
 	@:optional
 	var configuration : js.mediaCapabilities.MediaDecodingConfiguration;

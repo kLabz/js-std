@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from netinfo.idl. Do not edit!
+// This file is generated from @webref/idl/netinfo.idl. Do not edit!
 
 package js.netinfo;
-extern enum abstract ConnectionType(String) {
+enum abstract ConnectionType(String) {
 	var BLUETOOTH = "bluetooth";
 	var CELLULAR = "cellular";
 	var ETHERNET = "ethernet";

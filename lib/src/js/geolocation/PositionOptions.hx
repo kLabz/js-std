@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from geolocation.idl. Do not edit!
+// This file is generated from @webref/idl/geolocation.idl. Do not edit!
 
 package js.geolocation;
-extern typedef PositionOptions = {
+typedef PositionOptions = {
 	@:optional
 	var enableHighAccuracy : boolean;
 	@:optional

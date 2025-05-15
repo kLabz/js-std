@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webusb.idl. Do not edit!
+// This file is generated from @webref/idl/webusb.idl. Do not edit!
 
 package js.webusb;
-extern enum abstract USBRecipient(String) {
+enum abstract USBRecipient(String) {
 	var DEVICE = "device";
 	var INTERFACE = "interface";
 	var ENDPOINT = "endpoint";

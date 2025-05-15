@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from idle-detection.idl. Do not edit!
+// This file is generated from @webref/idl/idle-detection.idl. Do not edit!
 
 package js.idleDetection;
-extern typedef IdleOptions = {
+typedef IdleOptions = {
 	@:optional
 	var threshold : unsigned long long;
 	@:optional

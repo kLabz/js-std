@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from fetch.idl. Do not edit!
+// This file is generated from @webref/idl/fetch.idl. Do not edit!
 
 package js.fetch;
-extern enum abstract RequestMode(String) {
+enum abstract RequestMode(String) {
 	var NAVIGATE = "navigate";
 	var SAME_ORIGIN = "same-origin";
 	var NO_CORS = "no-cors";

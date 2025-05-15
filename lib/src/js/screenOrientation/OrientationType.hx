@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from screen-orientation.idl. Do not edit!
+// This file is generated from @webref/idl/screen-orientation.idl. Do not edit!
 
 package js.screenOrientation;
-extern enum abstract OrientationType(String) {
+enum abstract OrientationType(String) {
 	var PORTRAIT_PRIMARY = "portrait-primary";
 	var PORTRAIT_SECONDARY = "portrait-secondary";
 	var LANDSCAPE_PRIMARY = "landscape-primary";

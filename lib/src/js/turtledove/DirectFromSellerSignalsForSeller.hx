@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from turtledove.idl. Do not edit!
+// This file is generated from @webref/idl/turtledove.idl. Do not edit!
 
 package js.turtledove;
-extern typedef DirectFromSellerSignalsForSeller = {
+typedef DirectFromSellerSignalsForSeller = {
 	@:optional
 	var auctionSignals : any;
 	@:optional

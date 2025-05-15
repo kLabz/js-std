@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webxr.idl. Do not edit!
+// This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
-extern typedef XRSessionInit = {
+typedef XRSessionInit = {
 	@:optional
 	var requiredFeatures : [object Object];
 	@:optional

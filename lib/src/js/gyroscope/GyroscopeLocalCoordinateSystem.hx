@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from gyroscope.idl. Do not edit!
+// This file is generated from @webref/idl/gyroscope.idl. Do not edit!
 
 package js.gyroscope;
-extern enum abstract GyroscopeLocalCoordinateSystem(String) {
+enum abstract GyroscopeLocalCoordinateSystem(String) {
 	var DEVICE = "device";
 	var SCREEN = "screen";
 }

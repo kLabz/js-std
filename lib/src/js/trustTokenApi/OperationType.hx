@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from trust-token-api.idl. Do not edit!
+// This file is generated from @webref/idl/trust-token-api.idl. Do not edit!
 
 package js.trustTokenApi;
-extern enum abstract OperationType(String) {
+enum abstract OperationType(String) {
 	var TOKEN_REQUEST = "token-request";
 	var SEND_REDEMPTION_RECORD = "send-redemption-record";
 	var TOKEN_REDEMPTION = "token-redemption";

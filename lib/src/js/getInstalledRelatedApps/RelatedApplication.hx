@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from get-installed-related-apps.idl. Do not edit!
+// This file is generated from @webref/idl/get-installed-related-apps.idl. Do not edit!
 
 package js.getInstalledRelatedApps;
-extern typedef RelatedApplication = {
+typedef RelatedApplication = {
 	var platform : USVString;
 	@:optional
 	var url : USVString;

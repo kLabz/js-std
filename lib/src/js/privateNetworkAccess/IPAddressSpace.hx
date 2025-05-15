@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from private-network-access.idl. Do not edit!
+// This file is generated from @webref/idl/private-network-access.idl. Do not edit!
 
 package js.privateNetworkAccess;
-extern enum abstract IPAddressSpace(String) {
+enum abstract IPAddressSpace(String) {
 	var PUBLIC = "public";
 	var PRIVATE = "private";
 	var LOCAL = "local";

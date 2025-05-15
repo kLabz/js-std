@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from payment-handler.idl. Do not edit!
+// This file is generated from @webref/idl/payment-handler.idl. Do not edit!
 
 package js.paymentHandler;
-extern typedef AddressInit = {
+typedef AddressInit = {
 	@:optional
 	var country : DOMString;
 	@:optional

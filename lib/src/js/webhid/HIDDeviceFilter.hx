@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from webhid.idl. Do not edit!
+// This file is generated from @webref/idl/webhid.idl. Do not edit!
 
 package js.webhid;
-extern typedef HIDDeviceFilter = {
+typedef HIDDeviceFilter = {
 	@:optional
 	var vendorId : unsigned long;
 	@:optional

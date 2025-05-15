@@ -20,10 +20,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from FileAPI.idl. Do not edit!
+// This file is generated from @webref/idl/FileAPI.idl. Do not edit!
 
 package js.fileapi;
-extern typedef BlobPropertyBag = {
+typedef BlobPropertyBag = {
 	@:optional
 	var type : DOMString;
 	@:optional

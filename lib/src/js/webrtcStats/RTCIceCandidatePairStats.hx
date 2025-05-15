@@ -30,7 +30,7 @@ typedef RTCIceCandidatePairStats = js.webrtc.RTCStats & {
 	var remoteCandidateId : DOMString;
 	var state : js.webrtcStats.RTCStatsIceCandidatePairState;
 	@:optional
-	var nominated : boolean;
+	var nominated : Bool;
 	@:optional
 	var packetsSent : unsigned long long;
 	@:optional

@@ -30,7 +30,7 @@ typedef PerformanceObserverInit = {
 	@:optional
 	var type : DOMString;
 	@:optional
-	var buffered : boolean;
+	var buffered : Bool;
 	@:optional
 	var durationThreshold : DOMHighResTimeStamp;
 };

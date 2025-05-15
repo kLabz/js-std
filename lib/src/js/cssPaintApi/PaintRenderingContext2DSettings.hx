@@ -26,5 +26,5 @@ package js.cssPaintApi;
 
 typedef PaintRenderingContext2DSettings = {
 	@:optional
-	var alpha : boolean;
+	var alpha : Bool;
 };

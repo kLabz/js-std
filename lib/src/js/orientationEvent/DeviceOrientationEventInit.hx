@@ -32,5 +32,5 @@ typedef DeviceOrientationEventInit = js.dom.EventInit & {
 	@:optional
 	var gamma : double;
 	@:optional
-	var absolute : boolean;
+	var absolute : Bool;
 };

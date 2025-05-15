@@ -26,5 +26,5 @@ package js.fs;
 
 typedef FileSystemGetDirectoryOptions = {
 	@:optional
-	var create : boolean;
+	var create : Bool;
 };

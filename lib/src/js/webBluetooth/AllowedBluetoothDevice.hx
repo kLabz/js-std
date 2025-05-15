@@ -26,7 +26,7 @@ package js.webBluetooth;
 
 typedef AllowedBluetoothDevice = {
 	var deviceId : DOMString;
-	var mayUseGATT : boolean;
+	var mayUseGATT : Bool;
 	var allowedServices : [object Object],[object Object];
 	var allowedManufacturerData : [object Object];
 };

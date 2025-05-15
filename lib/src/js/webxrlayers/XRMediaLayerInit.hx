@@ -29,5 +29,5 @@ typedef XRMediaLayerInit = {
 	@:optional
 	var layout : js.webxrlayers.XRLayerLayout;
 	@:optional
-	var invertStereo : boolean;
+	var invertStereo : Bool;
 };

@@ -26,11 +26,11 @@ package js.svg;
 
 typedef SVGBoundingBoxOptions = {
 	@:optional
-	var fill : boolean;
+	var fill : Bool;
 	@:optional
-	var stroke : boolean;
+	var stroke : Bool;
 	@:optional
-	var markers : boolean;
+	var markers : Bool;
 	@:optional
-	var clipped : boolean;
+	var clipped : Bool;
 };

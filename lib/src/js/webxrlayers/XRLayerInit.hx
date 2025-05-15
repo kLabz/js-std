@@ -37,7 +37,7 @@ typedef XRLayerInit = {
 	@:optional
 	var layout : js.webxrlayers.XRLayerLayout;
 	@:optional
-	var isStatic : boolean;
+	var isStatic : Bool;
 	@:optional
-	var clearOnAccess : boolean;
+	var clearOnAccess : Bool;
 };

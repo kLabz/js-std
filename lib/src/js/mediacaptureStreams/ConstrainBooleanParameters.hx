@@ -26,7 +26,7 @@ package js.mediacaptureStreams;
 
 typedef ConstrainBooleanParameters = {
 	@:optional
-	var exact : boolean;
+	var exact : Bool;
 	@:optional
-	var ideal : boolean;
+	var ideal : Bool;
 };

@@ -49,7 +49,7 @@ typedef VideoEncoderConfig = {
 	@:optional
 	var contentHint : DOMString;
 	@:optional
-	var hevc : js.webcodecsHevcCodecRegistration.HevcEncoderConfig;
-	@:optional
 	var avc : js.webcodecsAvcCodecRegistration.AvcEncoderConfig;
+	@:optional
+	var hevc : js.webcodecsHevcCodecRegistration.HevcEncoderConfig;
 };

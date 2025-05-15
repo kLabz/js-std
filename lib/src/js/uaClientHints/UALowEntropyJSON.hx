@@ -28,7 +28,7 @@ typedef UALowEntropyJSON = {
 	@:optional
 	var brands : [object Object];
 	@:optional
-	var mobile : boolean;
+	var mobile : Bool;
 	@:optional
 	var platform : DOMString;
 };

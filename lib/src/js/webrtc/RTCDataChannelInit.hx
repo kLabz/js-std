@@ -26,7 +26,7 @@ package js.webrtc;
 
 typedef RTCDataChannelInit = {
 	@:optional
-	var ordered : boolean;
+	var ordered : Bool;
 	@:optional
 	var maxPacketLifeTime : unsigned short;
 	@:optional
@@ -34,7 +34,7 @@ typedef RTCDataChannelInit = {
 	@:optional
 	var protocol : USVString;
 	@:optional
-	var negotiated : boolean;
+	var negotiated : Bool;
 	@:optional
 	var id : unsigned short;
 	@:optional

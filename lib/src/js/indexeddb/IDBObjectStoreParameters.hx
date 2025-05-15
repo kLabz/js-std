@@ -28,5 +28,5 @@ typedef IDBObjectStoreParameters = {
 	@:optional
 	var keyPath : [object Object],[object Object];
 	@:optional
-	var autoIncrement : boolean;
+	var autoIncrement : Bool;
 };

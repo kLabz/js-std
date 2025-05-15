@@ -28,5 +28,5 @@ typedef PaymentItem = {
 	var label : DOMString;
 	var amount : js.paymentRequest.PaymentCurrencyAmount;
 	@:optional
-	var pending : boolean;
+	var pending : Bool;
 };

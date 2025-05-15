@@ -30,5 +30,5 @@ typedef GPUMultisampleState = {
 	@:optional
 	var mask : GPUSampleMask;
 	@:optional
-	var alphaToCoverageEnabled : boolean;
+	var alphaToCoverageEnabled : Bool;
 };

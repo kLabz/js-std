@@ -28,5 +28,5 @@ typedef MediaQueryListEventInit = js.dom.EventInit & {
 	@:optional
 	var media : CSSOMString;
 	@:optional
-	var matches : boolean;
+	var matches : Bool;
 };

@@ -39,7 +39,7 @@ typedef ScoringBrowserSignals = {
 	@:optional
 	var adComponents : [object Object];
 	@:optional
-	var forDebuggingOnlyInCooldownOrLockout : boolean;
+	var forDebuggingOnlyInCooldownOrLockout : Bool;
 	@:optional
 	var creativeScanningMetadata : USVString;
 	@:optional

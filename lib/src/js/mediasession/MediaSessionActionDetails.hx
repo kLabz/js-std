@@ -31,7 +31,7 @@ typedef MediaSessionActionDetails = {
 	@:optional
 	var seekTime : double;
 	@:optional
-	var fastSeek : boolean;
+	var fastSeek : Bool;
 	@:optional
-	var isActivating : boolean;
+	var isActivating : Bool;
 };

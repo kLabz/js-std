@@ -28,7 +28,7 @@ typedef GPUBufferBindingLayout = {
 	@:optional
 	var type : js.webgpu.GPUBufferBindingType;
 	@:optional
-	var hasDynamicOffset : boolean;
+	var hasDynamicOffset : Bool;
 	@:optional
 	var minBindingSize : GPUSize64;
 };

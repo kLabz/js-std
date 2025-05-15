@@ -26,7 +26,7 @@ package js.geolocation;
 
 typedef PositionOptions = {
 	@:optional
-	var enableHighAccuracy : boolean;
+	var enableHighAccuracy : Bool;
 	@:optional
 	var timeout : unsigned long;
 	@:optional

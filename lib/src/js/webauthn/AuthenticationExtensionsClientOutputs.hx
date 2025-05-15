@@ -26,13 +26,13 @@ package js.webauthn;
 
 typedef AuthenticationExtensionsClientOutputs = {
 	@:optional
-	var hmacCreateSecret : boolean;
+	var hmacCreateSecret : Bool;
 	@:optional
 	var hmacGetSecret : js.fido.HMACGetSecretOutput;
 	@:optional
-	var appid : boolean;
+	var appid : Bool;
 	@:optional
-	var appidExclude : boolean;
+	var appidExclude : Bool;
 	@:optional
 	var credProps : js.webauthn.CredentialPropertiesOutput;
 	@:optional

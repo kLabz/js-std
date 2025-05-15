@@ -26,5 +26,5 @@ package js.html;
 
 typedef ImageBitmapRenderingContextSettings = {
 	@:optional
-	var alpha : boolean;
+	var alpha : Bool;
 };

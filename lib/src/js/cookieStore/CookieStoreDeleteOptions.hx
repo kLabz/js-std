@@ -31,5 +31,5 @@ typedef CookieStoreDeleteOptions = {
 	@:optional
 	var path : USVString;
 	@:optional
-	var partitioned : boolean;
+	var partitioned : Bool;
 };

@@ -28,5 +28,5 @@ typedef MLReduceOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var axes : [object Object];
 	@:optional
-	var keepDimensions : boolean;
+	var keepDimensions : Bool;
 };

@@ -82,9 +82,9 @@ typedef RTCOutboundRtpStreamStats = js.webrtcStats.RTCSentRtpStreamStats & {
 	@:optional
 	var encoderImplementation : DOMString;
 	@:optional
-	var powerEfficientEncoder : boolean;
+	var powerEfficientEncoder : Bool;
 	@:optional
-	var active : boolean;
+	var active : Bool;
 	@:optional
 	var scalabilityMode : DOMString;
 };

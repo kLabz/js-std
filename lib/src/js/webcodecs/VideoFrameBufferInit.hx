@@ -38,7 +38,7 @@ typedef VideoFrameBufferInit = {
 	@:optional
 	var rotation : double;
 	@:optional
-	var flip : boolean;
+	var flip : Bool;
 	@:optional
 	var displayWidth : unsigned long;
 	@:optional

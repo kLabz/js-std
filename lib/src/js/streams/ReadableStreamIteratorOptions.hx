@@ -26,5 +26,5 @@ package js.streams;
 
 typedef ReadableStreamIteratorOptions = {
 	@:optional
-	var preventCancel : boolean;
+	var preventCancel : Bool;
 };

@@ -45,5 +45,5 @@ typedef BiddingBrowserSignals = {
 	@:optional
 	var crossOriginDataVersion : unsigned long;
 	@:optional
-	var forDebuggingOnlyInCooldownOrLockout : boolean;
+	var forDebuggingOnlyInCooldownOrLockout : Bool;
 };

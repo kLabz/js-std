@@ -26,23 +26,23 @@ package js.webgl1;
 
 typedef WebGLContextAttributes = {
 	@:optional
-	var alpha : boolean;
+	var alpha : Bool;
 	@:optional
-	var depth : boolean;
+	var depth : Bool;
 	@:optional
-	var stencil : boolean;
+	var stencil : Bool;
 	@:optional
-	var antialias : boolean;
+	var antialias : Bool;
 	@:optional
-	var premultipliedAlpha : boolean;
+	var premultipliedAlpha : Bool;
 	@:optional
-	var preserveDrawingBuffer : boolean;
+	var preserveDrawingBuffer : Bool;
 	@:optional
 	var powerPreference : js.webgl1.WebGLPowerPreference;
 	@:optional
-	var failIfMajorPerformanceCaveat : boolean;
+	var failIfMajorPerformanceCaveat : Bool;
 	@:optional
-	var desynchronized : boolean;
+	var desynchronized : Bool;
 	@:optional
-	var xrCompatible : boolean;
+	var xrCompatible : Bool;
 };

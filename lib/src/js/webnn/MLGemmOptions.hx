@@ -32,7 +32,7 @@ typedef MLGemmOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var beta : double;
 	@:optional
-	var aTranspose : boolean;
+	var aTranspose : Bool;
 	@:optional
-	var bTranspose : boolean;
+	var bTranspose : Bool;
 };

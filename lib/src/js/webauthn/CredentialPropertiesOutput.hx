@@ -26,5 +26,5 @@ package js.webauthn;
 
 typedef CredentialPropertiesOutput = {
 	@:optional
-	var rk : boolean;
+	var rk : Bool;
 };

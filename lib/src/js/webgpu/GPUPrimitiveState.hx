@@ -34,5 +34,5 @@ typedef GPUPrimitiveState = {
 	@:optional
 	var cullMode : js.webgpu.GPUCullMode;
 	@:optional
-	var unclippedDepth : boolean;
+	var unclippedDepth : Bool;
 };

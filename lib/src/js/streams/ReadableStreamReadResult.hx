@@ -28,5 +28,5 @@ typedef ReadableStreamReadResult = {
 	@:optional
 	var value : any;
 	@:optional
-	var done : boolean;
+	var done : Bool;
 };

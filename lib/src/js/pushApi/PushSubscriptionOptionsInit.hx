@@ -26,7 +26,7 @@ package js.pushApi;
 
 typedef PushSubscriptionOptionsInit = {
 	@:optional
-	var userVisibleOnly : boolean;
+	var userVisibleOnly : Bool;
 	@:optional
 	var applicationServerKey : [object Object],[object Object];
 };

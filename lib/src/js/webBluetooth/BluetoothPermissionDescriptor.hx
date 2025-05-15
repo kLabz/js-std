@@ -34,5 +34,5 @@ typedef BluetoothPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var optionalManufacturerData : [object Object];
 	@:optional
-	var acceptAllDevices : boolean;
+	var acceptAllDevices : Bool;
 };

@@ -25,7 +25,7 @@
 package js.mediaCapabilities;
 
 typedef MediaCapabilitiesInfo = {
-	var supported : boolean;
-	var smooth : boolean;
-	var powerEfficient : boolean;
+	var supported : Bool;
+	var smooth : Bool;
+	var powerEfficient : Bool;
 };

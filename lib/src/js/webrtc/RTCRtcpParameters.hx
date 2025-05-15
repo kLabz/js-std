@@ -28,5 +28,5 @@ typedef RTCRtcpParameters = {
 	@:optional
 	var cname : DOMString;
 	@:optional
-	var reducedSize : boolean;
+	var reducedSize : Bool;
 };

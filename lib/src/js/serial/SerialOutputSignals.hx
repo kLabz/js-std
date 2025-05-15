@@ -26,9 +26,9 @@ package js.serial;
 
 typedef SerialOutputSignals = {
 	@:optional
-	var dataTerminalReady : boolean;
+	var dataTerminalReady : Bool;
 	@:optional
-	var requestToSend : boolean;
+	var requestToSend : Bool;
 	@:optional
-	var break : boolean;
+	var break : Bool;
 };

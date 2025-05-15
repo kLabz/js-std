@@ -26,7 +26,7 @@ package js.securePaymentConfirmation;
 
 typedef AuthenticationExtensionsPaymentInputs = {
 	@:optional
-	var isPayment : boolean;
+	var isPayment : Bool;
 	@:optional
 	var rpId : USVString;
 	@:optional

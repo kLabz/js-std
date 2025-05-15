@@ -30,5 +30,5 @@ typedef GPUTextureBindingLayout = {
 	@:optional
 	var viewDimension : js.webgpu.GPUTextureViewDimension;
 	@:optional
-	var multisampled : boolean;
+	var multisampled : Bool;
 };

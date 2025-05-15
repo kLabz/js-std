@@ -25,6 +25,6 @@
 package js.attributionReportingApi;
 
 typedef AttributionReportingRequestOptions = {
-	var eventSourceEligible : boolean;
-	var triggerEligible : boolean;
+	var eventSourceEligible : Bool;
+	var triggerEligible : Bool;
 };

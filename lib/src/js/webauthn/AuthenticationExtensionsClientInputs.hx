@@ -28,15 +28,15 @@ typedef AuthenticationExtensionsClientInputs = {
 	@:optional
 	var credentialProtectionPolicy : USVString;
 	@:optional
-	var enforceCredentialProtectionPolicy : boolean;
+	var enforceCredentialProtectionPolicy : Bool;
 	@:optional
 	var credBlob : ArrayBuffer;
 	@:optional
-	var getCredBlob : boolean;
+	var getCredBlob : Bool;
 	@:optional
-	var minPinLength : boolean;
+	var minPinLength : Bool;
 	@:optional
-	var hmacCreateSecret : boolean;
+	var hmacCreateSecret : Bool;
 	@:optional
 	var hmacGetSecret : js.fido.HMACGetSecretInput;
 	@:optional
@@ -46,7 +46,7 @@ typedef AuthenticationExtensionsClientInputs = {
 	@:optional
 	var appidExclude : DOMString;
 	@:optional
-	var credProps : boolean;
+	var credProps : Bool;
 	@:optional
 	var prf : js.webauthn.AuthenticationExtensionsPRFInputs;
 	@:optional

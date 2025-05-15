@@ -26,5 +26,5 @@ package js.fs;
 
 typedef FileSystemCreateWritableOptions = {
 	@:optional
-	var keepExistingData : boolean;
+	var keepExistingData : Bool;
 };

@@ -26,5 +26,5 @@ package js.pushApi;
 
 typedef PushPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
-	var userVisibleOnly : boolean;
+	var userVisibleOnly : Bool;
 };

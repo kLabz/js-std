@@ -28,7 +28,7 @@ typedef BluetoothLEScanOptions = {
 	@:optional
 	var filters : [object Object];
 	@:optional
-	var keepRepeatedDevices : boolean;
+	var keepRepeatedDevices : Bool;
 	@:optional
-	var acceptAllAdvertisements : boolean;
+	var acceptAllAdvertisements : Bool;
 };

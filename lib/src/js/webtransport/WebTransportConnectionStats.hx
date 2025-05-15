@@ -44,5 +44,5 @@ typedef WebTransportConnectionStats = {
 	@:optional
 	var estimatedSendRate : unsigned long long;
 	@:optional
-	var atSendCapacity : boolean;
+	var atSendCapacity : Bool;
 };

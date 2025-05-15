@@ -30,7 +30,7 @@ typedef HandwritingHintsQueryResult = {
 	@:optional
 	var inputType : [object Object];
 	@:optional
-	var textContext : boolean;
+	var textContext : Bool;
 	@:optional
-	var alternatives : boolean;
+	var alternatives : Bool;
 };

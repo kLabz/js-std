@@ -28,5 +28,5 @@ typedef FaceDetectorOptions = {
 	@:optional
 	var maxDetectedFaces : unsigned short;
 	@:optional
-	var fastMode : boolean;
+	var fastMode : Bool;
 };

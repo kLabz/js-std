@@ -26,9 +26,9 @@ package js.handwritingRecognition;
 
 typedef HandwritingRecognizerQueryResult = {
 	@:optional
-	var textAlternatives : boolean;
+	var textAlternatives : Bool;
 	@:optional
-	var textSegmentation : boolean;
+	var textSegmentation : Bool;
 	@:optional
 	var hints : js.handwritingRecognition.HandwritingHintsQueryResult;
 };

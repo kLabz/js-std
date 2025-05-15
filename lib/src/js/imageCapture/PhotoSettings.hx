@@ -32,5 +32,5 @@ typedef PhotoSettings = {
 	@:optional
 	var imageWidth : double;
 	@:optional
-	var redEyeReduction : boolean;
+	var redEyeReduction : Bool;
 };

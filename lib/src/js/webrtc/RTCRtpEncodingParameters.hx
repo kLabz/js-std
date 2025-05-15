@@ -26,7 +26,7 @@ package js.webrtc;
 
 typedef RTCRtpEncodingParameters = js.webrtc.RTCRtpCodingParameters & {
 	@:optional
-	var active : boolean;
+	var active : Bool;
 	@:optional
 	var codec : js.webrtc.RTCRtpCodec;
 	@:optional

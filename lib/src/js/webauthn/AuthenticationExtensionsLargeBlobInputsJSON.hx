@@ -28,7 +28,7 @@ typedef AuthenticationExtensionsLargeBlobInputsJSON = {
 	@:optional
 	var support : DOMString;
 	@:optional
-	var read : boolean;
+	var read : Bool;
 	@:optional
 	var write : Base64URLString;
 };

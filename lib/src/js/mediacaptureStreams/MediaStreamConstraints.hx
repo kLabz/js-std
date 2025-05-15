@@ -30,7 +30,7 @@ typedef MediaStreamConstraints = {
 	@:optional
 	var audio : [object Object],[object Object];
 	@:optional
-	var preferCurrentTab : boolean;
+	var preferCurrentTab : Bool;
 	@:optional
 	var peerIdentity : DOMString;
 };

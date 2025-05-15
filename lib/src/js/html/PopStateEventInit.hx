@@ -28,5 +28,5 @@ typedef PopStateEventInit = js.dom.EventInit & {
 	@:optional
 	var state : any;
 	@:optional
-	var hasUAVisualTransition : boolean;
+	var hasUAVisualTransition : Bool;
 };

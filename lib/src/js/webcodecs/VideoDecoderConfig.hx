@@ -41,9 +41,9 @@ typedef VideoDecoderConfig = {
 	@:optional
 	var hardwareAcceleration : js.webcodecs.HardwareAcceleration;
 	@:optional
-	var optimizeForLatency : boolean;
+	var optimizeForLatency : Bool;
 	@:optional
 	var rotation : double;
 	@:optional
-	var flip : boolean;
+	var flip : Bool;
 };

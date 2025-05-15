@@ -26,7 +26,7 @@ package js.webNfc;
 
 typedef NDEFWriteOptions = {
 	@:optional
-	var overwrite : boolean;
+	var overwrite : Bool;
 	@:optional
 	var signal : AbortSignal;
 };

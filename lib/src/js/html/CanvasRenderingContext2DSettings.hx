@@ -26,13 +26,13 @@ package js.html;
 
 typedef CanvasRenderingContext2DSettings = {
 	@:optional
-	var alpha : boolean;
+	var alpha : Bool;
 	@:optional
-	var desynchronized : boolean;
+	var desynchronized : Bool;
 	@:optional
 	var colorSpace : js.html.PredefinedColorSpace;
 	@:optional
 	var colorType : js.html.CanvasColorType;
 	@:optional
-	var willReadFrequently : boolean;
+	var willReadFrequently : Bool;
 };

@@ -34,7 +34,7 @@ typedef AuctionAdConfig = {
 	@:optional
 	var trustedScoringSignalsCoordinator : USVString;
 	@:optional
-	var sendCreativeScanningMetadata : boolean;
+	var sendCreativeScanningMetadata : Bool;
 	@:optional
 	var interestGroupBuyers : [object Object];
 	@:optional

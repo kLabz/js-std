@@ -30,7 +30,7 @@ typedef XRRenderStateInit = {
 	@:optional
 	var depthFar : double;
 	@:optional
-	var passthroughFullyObscured : boolean;
+	var passthroughFullyObscured : Bool;
 	@:optional
 	var inlineVerticalFieldOfView : double;
 	@:optional

@@ -31,7 +31,7 @@ typedef VideoConfiguration = {
 	var bitrate : unsigned long long;
 	var framerate : double;
 	@:optional
-	var hasAlphaChannel : boolean;
+	var hasAlphaChannel : Bool;
 	@:optional
 	var hdrMetadataType : js.mediaCapabilities.HdrMetadataType;
 	@:optional
@@ -41,5 +41,5 @@ typedef VideoConfiguration = {
 	@:optional
 	var scalabilityMode : DOMString;
 	@:optional
-	var spatialScalability : boolean;
+	var spatialScalability : Bool;
 };

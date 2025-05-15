@@ -33,7 +33,7 @@ typedef GPURenderPassDepthStencilAttachment = {
 	@:optional
 	var depthStoreOp : js.webgpu.GPUStoreOp;
 	@:optional
-	var depthReadOnly : boolean;
+	var depthReadOnly : Bool;
 	@:optional
 	var stencilClearValue : GPUStencilValue;
 	@:optional
@@ -41,5 +41,5 @@ typedef GPURenderPassDepthStencilAttachment = {
 	@:optional
 	var stencilStoreOp : js.webgpu.GPUStoreOp;
 	@:optional
-	var stencilReadOnly : boolean;
+	var stencilReadOnly : Bool;
 };

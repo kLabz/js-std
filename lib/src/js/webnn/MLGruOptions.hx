@@ -32,9 +32,9 @@ typedef MLGruOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var initialHiddenState : MLOperand;
 	@:optional
-	var resetAfter : boolean;
+	var resetAfter : Bool;
 	@:optional
-	var returnSequence : boolean;
+	var returnSequence : Bool;
 	@:optional
 	var direction : js.webnn.MLRecurrentNetworkDirection;
 	@:optional

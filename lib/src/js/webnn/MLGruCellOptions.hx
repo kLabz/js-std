@@ -30,7 +30,7 @@ typedef MLGruCellOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var recurrentBias : MLOperand;
 	@:optional
-	var resetAfter : boolean;
+	var resetAfter : Bool;
 	@:optional
 	var layout : js.webnn.MLGruWeightLayout;
 	@:optional

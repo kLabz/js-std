@@ -30,7 +30,7 @@ typedef ReportWinBrowserSignals = js.turtledove.ReportingBrowserSignals & {
 	@:optional
 	var seller : USVString;
 	@:optional
-	var madeHighestScoringOtherBid : boolean;
+	var madeHighestScoringOtherBid : Bool;
 	@:optional
 	var interestGroupName : DOMString;
 	@:optional

@@ -26,9 +26,9 @@ package js.serviceWorkers;
 
 typedef CacheQueryOptions = {
 	@:optional
-	var ignoreSearch : boolean;
+	var ignoreSearch : Bool;
 	@:optional
-	var ignoreMethod : boolean;
+	var ignoreMethod : Bool;
 	@:optional
-	var ignoreVary : boolean;
+	var ignoreVary : Bool;
 };

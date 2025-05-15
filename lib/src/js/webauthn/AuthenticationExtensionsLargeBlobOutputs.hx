@@ -26,9 +26,9 @@ package js.webauthn;
 
 typedef AuthenticationExtensionsLargeBlobOutputs = {
 	@:optional
-	var supported : boolean;
+	var supported : Bool;
 	@:optional
 	var blob : ArrayBuffer;
 	@:optional
-	var written : boolean;
+	var written : Bool;
 };

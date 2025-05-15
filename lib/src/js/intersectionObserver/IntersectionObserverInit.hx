@@ -36,5 +36,5 @@ typedef IntersectionObserverInit = {
 	@:optional
 	var delay : long;
 	@:optional
-	var trackVisibility : boolean;
+	var trackVisibility : Bool;
 };

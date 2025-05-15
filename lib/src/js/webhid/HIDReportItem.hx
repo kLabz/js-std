@@ -26,25 +26,25 @@ package js.webhid;
 
 typedef HIDReportItem = {
 	@:optional
-	var isAbsolute : boolean;
+	var isAbsolute : Bool;
 	@:optional
-	var isArray : boolean;
+	var isArray : Bool;
 	@:optional
-	var isBufferedBytes : boolean;
+	var isBufferedBytes : Bool;
 	@:optional
-	var isConstant : boolean;
+	var isConstant : Bool;
 	@:optional
-	var isLinear : boolean;
+	var isLinear : Bool;
 	@:optional
-	var isRange : boolean;
+	var isRange : Bool;
 	@:optional
-	var isVolatile : boolean;
+	var isVolatile : Bool;
 	@:optional
-	var hasNull : boolean;
+	var hasNull : Bool;
 	@:optional
-	var hasPreferredState : boolean;
+	var hasPreferredState : Bool;
 	@:optional
-	var wrap : boolean;
+	var wrap : Bool;
 	@:optional
 	var usages : [object Object];
 	@:optional

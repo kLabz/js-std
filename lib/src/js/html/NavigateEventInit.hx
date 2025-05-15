@@ -29,11 +29,11 @@ typedef NavigateEventInit = js.dom.EventInit & {
 	var navigationType : js.html.NavigationType;
 	var destination : NavigationDestination;
 	@:optional
-	var canIntercept : boolean;
+	var canIntercept : Bool;
 	@:optional
-	var userInitiated : boolean;
+	var userInitiated : Bool;
 	@:optional
-	var hashChange : boolean;
+	var hashChange : Bool;
 	var signal : AbortSignal;
 	@:optional
 	var formData : FormData;
@@ -42,7 +42,7 @@ typedef NavigateEventInit = js.dom.EventInit & {
 	@:optional
 	var info : any;
 	@:optional
-	var hasUAVisualTransition : boolean;
+	var hasUAVisualTransition : Bool;
 	@:optional
 	var sourceElement : Element;
 };

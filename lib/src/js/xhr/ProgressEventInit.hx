@@ -26,7 +26,7 @@ package js.xhr;
 
 typedef ProgressEventInit = js.dom.EventInit & {
 	@:optional
-	var lengthComputable : boolean;
+	var lengthComputable : Bool;
 	@:optional
 	var loaded : double;
 	@:optional

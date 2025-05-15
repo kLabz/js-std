@@ -36,5 +36,5 @@ typedef CookieInit = {
 	@:optional
 	var sameSite : js.cookieStore.CookieSameSite;
 	@:optional
-	var partitioned : boolean;
+	var partitioned : Bool;
 };

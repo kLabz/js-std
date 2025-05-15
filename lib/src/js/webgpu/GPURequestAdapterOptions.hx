@@ -30,7 +30,7 @@ typedef GPURequestAdapterOptions = {
 	@:optional
 	var powerPreference : js.webgpu.GPUPowerPreference;
 	@:optional
-	var forceFallbackAdapter : boolean;
+	var forceFallbackAdapter : Bool;
 	@:optional
-	var xrCompatible : boolean;
+	var xrCompatible : Bool;
 };

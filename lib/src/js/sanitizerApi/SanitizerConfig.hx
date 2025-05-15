@@ -36,7 +36,7 @@ typedef SanitizerConfig = {
 	@:optional
 	var removeAttributes : [object Object];
 	@:optional
-	var comments : boolean;
+	var comments : Bool;
 	@:optional
-	var dataAttributes : boolean;
+	var dataAttributes : Bool;
 };

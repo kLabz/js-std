@@ -26,5 +26,5 @@ package js.fs;
 
 typedef FileSystemRemoveOptions = {
 	@:optional
-	var recursive : boolean;
+	var recursive : Bool;
 };

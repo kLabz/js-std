@@ -117,7 +117,7 @@ typedef RTCInboundRtpStreamStats = js.webrtcStats.RTCReceivedRtpStreamStats & {
 	@:optional
 	var playoutId : DOMString;
 	@:optional
-	var powerEfficientDecoder : boolean;
+	var powerEfficientDecoder : Bool;
 	@:optional
 	var framesAssembledFromMultiplePackets : unsigned long;
 	@:optional

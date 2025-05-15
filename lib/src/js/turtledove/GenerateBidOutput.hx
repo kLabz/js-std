@@ -42,7 +42,7 @@ typedef GenerateBidOutput = {
 	@:optional
 	var modelingSignals : unrestricted double;
 	@:optional
-	var allowComponentAuction : boolean;
+	var allowComponentAuction : Bool;
 	@:optional
 	var targetNumAdComponents : unsigned long;
 	@:optional

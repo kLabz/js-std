@@ -28,5 +28,5 @@ typedef ImageDecodeOptions = {
 	@:optional
 	var frameIndex : unsigned long;
 	@:optional
-	var completeFramesOnly : boolean;
+	var completeFramesOnly : Bool;
 };

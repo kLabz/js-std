@@ -38,7 +38,7 @@ typedef OpusEncoderConfig = {
 	@:optional
 	var packetlossperc : unsigned long;
 	@:optional
-	var useinbandfec : boolean;
+	var useinbandfec : Bool;
 	@:optional
-	var usedtx : boolean;
+	var usedtx : Bool;
 };

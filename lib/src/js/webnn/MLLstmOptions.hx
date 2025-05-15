@@ -36,7 +36,7 @@ typedef MLLstmOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var initialCellState : MLOperand;
 	@:optional
-	var returnSequence : boolean;
+	var returnSequence : Bool;
 	@:optional
 	var direction : js.webnn.MLRecurrentNetworkDirection;
 	@:optional

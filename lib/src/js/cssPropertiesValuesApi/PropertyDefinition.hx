@@ -28,7 +28,7 @@ typedef PropertyDefinition = {
 	var name : DOMString;
 	@:optional
 	var syntax : DOMString;
-	var inherits : boolean;
+	var inherits : Bool;
 	@:optional
 	var initialValue : DOMString;
 };

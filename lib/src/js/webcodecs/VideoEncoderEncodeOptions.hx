@@ -26,13 +26,13 @@ package js.webcodecs;
 
 typedef VideoEncoderEncodeOptions = {
 	@:optional
-	var keyFrame : boolean;
+	var keyFrame : Bool;
 	@:optional
 	var av1 : js.webcodecsAv1CodecRegistration.VideoEncoderEncodeOptionsForAv1;
-	@:optional
-	var hevc : js.webcodecsHevcCodecRegistration.VideoEncoderEncodeOptionsForHevc;
 	@:optional
 	var avc : js.webcodecsAvcCodecRegistration.VideoEncoderEncodeOptionsForAvc;
 	@:optional
 	var vp9 : js.webcodecsVp9CodecRegistration.VideoEncoderEncodeOptionsForVp9;
+	@:optional
+	var hevc : js.webcodecsHevcCodecRegistration.VideoEncoderEncodeOptionsForHevc;
 };

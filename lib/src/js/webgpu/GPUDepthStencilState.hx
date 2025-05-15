@@ -27,7 +27,7 @@ package js.webgpu;
 typedef GPUDepthStencilState = {
 	var format : js.webgpu.GPUTextureFormat;
 	@:optional
-	var depthWriteEnabled : boolean;
+	var depthWriteEnabled : Bool;
 	@:optional
 	var depthCompare : js.webgpu.GPUCompareFunction;
 	@:optional

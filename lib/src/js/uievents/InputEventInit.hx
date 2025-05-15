@@ -28,7 +28,7 @@ typedef InputEventInit = js.uievents.UIEventInit & {
 	@:optional
 	var data : DOMString;
 	@:optional
-	var isComposing : boolean;
+	var isComposing : Bool;
 	@:optional
 	var inputType : DOMString;
 	@:optional

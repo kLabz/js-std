@@ -32,5 +32,5 @@ typedef VideoColorSpaceInit = {
 	@:optional
 	var matrix : js.webcodecs.VideoMatrixCoefficients;
 	@:optional
-	var fullRange : boolean;
+	var fullRange : Bool;
 };

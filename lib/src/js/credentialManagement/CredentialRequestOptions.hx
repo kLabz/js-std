@@ -30,7 +30,7 @@ typedef CredentialRequestOptions = {
 	@:optional
 	var signal : AbortSignal;
 	@:optional
-	var password : boolean;
+	var password : Bool;
 	@:optional
 	var federated : js.credentialManagement.FederatedCredentialRequestOptions;
 	@:optional

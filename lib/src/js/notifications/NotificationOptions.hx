@@ -44,11 +44,11 @@ typedef NotificationOptions = {
 	@:optional
 	var timestamp : EpochTimeStamp;
 	@:optional
-	var renotify : boolean;
+	var renotify : Bool;
 	@:optional
-	var silent : boolean;
+	var silent : Bool;
 	@:optional
-	var requireInteraction : boolean;
+	var requireInteraction : Bool;
 	@:optional
 	var data : any;
 	@:optional

@@ -26,29 +26,29 @@ package js.saaNonCookieStorage;
 
 typedef StorageAccessTypes = {
 	@:optional
-	var all : boolean;
+	var all : Bool;
 	@:optional
-	var cookies : boolean;
+	var cookies : Bool;
 	@:optional
-	var sessionStorage : boolean;
+	var sessionStorage : Bool;
 	@:optional
-	var localStorage : boolean;
+	var localStorage : Bool;
 	@:optional
-	var indexedDB : boolean;
+	var indexedDB : Bool;
 	@:optional
-	var locks : boolean;
+	var locks : Bool;
 	@:optional
-	var caches : boolean;
+	var caches : Bool;
 	@:optional
-	var getDirectory : boolean;
+	var getDirectory : Bool;
 	@:optional
-	var estimate : boolean;
+	var estimate : Bool;
 	@:optional
-	var createObjectURL : boolean;
+	var createObjectURL : Bool;
 	@:optional
-	var revokeObjectURL : boolean;
+	var revokeObjectURL : Bool;
 	@:optional
-	var BroadcastChannel : boolean;
+	var BroadcastChannel : Bool;
 	@:optional
-	var SharedWorker : boolean;
+	var SharedWorker : Bool;
 };

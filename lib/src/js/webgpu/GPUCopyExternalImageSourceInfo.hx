@@ -29,5 +29,5 @@ typedef GPUCopyExternalImageSourceInfo = {
 	@:optional
 	var origin : GPUOrigin2D;
 	@:optional
-	var flipY : boolean;
+	var flipY : Bool;
 };

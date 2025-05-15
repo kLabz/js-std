@@ -26,11 +26,11 @@ package js.streams;
 
 typedef StreamPipeOptions = {
 	@:optional
-	var preventClose : boolean;
+	var preventClose : Bool;
 	@:optional
-	var preventAbort : boolean;
+	var preventAbort : Bool;
 	@:optional
-	var preventCancel : boolean;
+	var preventCancel : Bool;
 	@:optional
 	var signal : AbortSignal;
 };

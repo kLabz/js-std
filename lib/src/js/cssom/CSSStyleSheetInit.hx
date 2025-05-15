@@ -30,5 +30,5 @@ typedef CSSStyleSheetInit = {
 	@:optional
 	var media : [object Object],[object Object];
 	@:optional
-	var disabled : boolean;
+	var disabled : Bool;
 };

@@ -30,7 +30,7 @@ typedef AudioBufferSourceOptions = {
 	@:optional
 	var detune : float;
 	@:optional
-	var loop : boolean;
+	var loop : Bool;
 	@:optional
 	var loopEnd : double;
 	@:optional

@@ -26,5 +26,5 @@ package js.contactPicker;
 
 typedef ContactsSelectOptions = {
 	@:optional
-	var multiple : boolean;
+	var multiple : Bool;
 };

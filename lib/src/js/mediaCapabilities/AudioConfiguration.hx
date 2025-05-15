@@ -33,5 +33,5 @@ typedef AudioConfiguration = {
 	@:optional
 	var samplerate : unsigned long;
 	@:optional
-	var spatialRendering : boolean;
+	var spatialRendering : Bool;
 };

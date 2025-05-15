@@ -28,5 +28,5 @@ typedef ImportNodeOptions = {
 	@:optional
 	var customElementRegistry : CustomElementRegistry;
 	@:optional
-	var selfOnly : boolean;
+	var selfOnly : Bool;
 };

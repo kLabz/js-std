@@ -26,7 +26,7 @@ package js.webcodecs;
 
 typedef AudioDecoderSupport = {
 	@:optional
-	var supported : boolean;
+	var supported : Bool;
 	@:optional
 	var config : js.webcodecs.AudioDecoderConfig;
 };

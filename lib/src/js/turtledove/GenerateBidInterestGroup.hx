@@ -28,7 +28,7 @@ typedef GenerateBidInterestGroup = {
 	var owner : USVString;
 	var name : USVString;
 	@:optional
-	var enableBiddingSignalsPrioritization : boolean;
+	var enableBiddingSignalsPrioritization : Bool;
 	@:optional
 	var priorityVector : [object Object],[object Object];
 	@:optional

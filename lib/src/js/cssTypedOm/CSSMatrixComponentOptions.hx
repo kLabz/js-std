@@ -26,5 +26,5 @@ package js.cssTypedOm;
 
 typedef CSSMatrixComponentOptions = {
 	@:optional
-	var is2D : boolean;
+	var is2D : Bool;
 };

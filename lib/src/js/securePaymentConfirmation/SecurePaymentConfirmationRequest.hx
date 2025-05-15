@@ -40,5 +40,5 @@ typedef SecurePaymentConfirmationRequest = {
 	@:optional
 	var locale : [object Object];
 	@:optional
-	var showOptOut : boolean;
+	var showOptOut : Bool;
 };

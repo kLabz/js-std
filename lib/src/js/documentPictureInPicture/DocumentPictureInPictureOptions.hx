@@ -30,7 +30,7 @@ typedef DocumentPictureInPictureOptions = {
 	@:optional
 	var height : unsigned long long;
 	@:optional
-	var disallowReturnToOpener : boolean;
+	var disallowReturnToOpener : Bool;
 	@:optional
-	var preferInitialWindowPlacement : boolean;
+	var preferInitialWindowPlacement : Bool;
 };

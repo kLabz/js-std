@@ -26,7 +26,7 @@ package js.turtledove;
 
 typedef AuctionReportBuyerDebugModeConfig = {
 	@:optional
-	var enabled : boolean;
+	var enabled : Bool;
 	@:optional
 	var debugKey : bigint;
 };

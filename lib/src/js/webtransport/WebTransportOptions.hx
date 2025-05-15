@@ -26,9 +26,9 @@ package js.webtransport;
 
 typedef WebTransportOptions = {
 	@:optional
-	var allowPooling : boolean;
+	var allowPooling : Bool;
 	@:optional
-	var requireUnreliable : boolean;
+	var requireUnreliable : Bool;
 	@:optional
 	var serverCertificateHashes : [object Object];
 	@:optional

@@ -34,5 +34,5 @@ typedef XRProjectionLayerInit = {
 	@:optional
 	var scaleFactor : double;
 	@:optional
-	var clearOnAccess : boolean;
+	var clearOnAccess : Bool;
 };

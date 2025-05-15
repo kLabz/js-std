@@ -34,7 +34,7 @@ typedef ImageDecoderInit = {
 	@:optional
 	var desiredHeight : unsigned long;
 	@:optional
-	var preferAnimation : boolean;
+	var preferAnimation : Bool;
 	@:optional
 	var transfer : [object Object];
 };

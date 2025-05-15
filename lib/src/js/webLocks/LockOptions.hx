@@ -28,9 +28,9 @@ typedef LockOptions = {
 	@:optional
 	var mode : js.webLocks.LockMode;
 	@:optional
-	var ifAvailable : boolean;
+	var ifAvailable : Bool;
 	@:optional
-	var steal : boolean;
+	var steal : Bool;
 	@:optional
 	var signal : AbortSignal;
 };

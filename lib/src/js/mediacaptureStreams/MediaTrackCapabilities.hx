@@ -92,7 +92,7 @@ typedef MediaTrackCapabilities = {
 	@:optional
 	var displaySurface : DOMString;
 	@:optional
-	var logicalSurface : boolean;
+	var logicalSurface : Bool;
 	@:optional
 	var cursor : [object Object];
 };

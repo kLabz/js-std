@@ -46,5 +46,5 @@ typedef DOMMatrixInit = js.geometry.DOMMatrix2DInit & {
 	@:optional
 	var m44 : unrestricted double;
 	@:optional
-	var is2D : boolean;
+	var is2D : Bool;
 };

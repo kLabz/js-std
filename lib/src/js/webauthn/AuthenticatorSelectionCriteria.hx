@@ -30,7 +30,7 @@ typedef AuthenticatorSelectionCriteria = {
 	@:optional
 	var residentKey : DOMString;
 	@:optional
-	var requireResidentKey : boolean;
+	var requireResidentKey : Bool;
 	@:optional
 	var userVerification : DOMString;
 };

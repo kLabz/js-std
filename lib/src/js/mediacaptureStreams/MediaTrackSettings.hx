@@ -42,11 +42,11 @@ typedef MediaTrackSettings = {
 	@:optional
 	var sampleSize : unsigned long;
 	@:optional
-	var echoCancellation : boolean;
+	var echoCancellation : Bool;
 	@:optional
-	var autoGainControl : boolean;
+	var autoGainControl : Bool;
 	@:optional
-	var noiseSuppression : boolean;
+	var noiseSuppression : Bool;
 	@:optional
 	var latency : double;
 	@:optional
@@ -56,7 +56,7 @@ typedef MediaTrackSettings = {
 	@:optional
 	var groupId : DOMString;
 	@:optional
-	var backgroundBlur : boolean;
+	var backgroundBlur : Bool;
 	@:optional
 	var whiteBalanceMode : DOMString;
 	@:optional
@@ -90,17 +90,17 @@ typedef MediaTrackSettings = {
 	@:optional
 	var zoom : double;
 	@:optional
-	var torch : boolean;
+	var torch : Bool;
 	@:optional
 	var displaySurface : DOMString;
 	@:optional
-	var logicalSurface : boolean;
+	var logicalSurface : Bool;
 	@:optional
 	var cursor : DOMString;
 	@:optional
-	var restrictOwnAudio : boolean;
+	var restrictOwnAudio : Bool;
 	@:optional
-	var suppressLocalAudioPlayback : boolean;
+	var suppressLocalAudioPlayback : Bool;
 	@:optional
 	var screenPixelRatio : double;
 };

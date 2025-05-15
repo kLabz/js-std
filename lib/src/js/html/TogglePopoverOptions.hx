@@ -26,5 +26,5 @@ package js.html;
 
 typedef TogglePopoverOptions = js.html.ShowPopoverOptions & {
 	@:optional
-	var force : boolean;
+	var force : Bool;
 };

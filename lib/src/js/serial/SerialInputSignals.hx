@@ -25,8 +25,8 @@
 package js.serial;
 
 typedef SerialInputSignals = {
-	var dataCarrierDetect : boolean;
-	var clearToSend : boolean;
-	var ringIndicator : boolean;
-	var dataSetReady : boolean;
+	var dataCarrierDetect : Bool;
+	var clearToSend : Bool;
+	var ringIndicator : Bool;
+	var dataSetReady : Bool;
 };

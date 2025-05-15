@@ -46,7 +46,7 @@ typedef RequestInit = {
 	@:optional
 	var integrity : DOMString;
 	@:optional
-	var keepalive : boolean;
+	var keepalive : Bool;
 	@:optional
 	var signal : AbortSignal;
 	@:optional
@@ -60,9 +60,9 @@ typedef RequestInit = {
 	@:optional
 	var targetAddressSpace : js.privateNetworkAccess.IPAddressSpace;
 	@:optional
-	var sharedStorageWritable : boolean;
+	var sharedStorageWritable : Bool;
 	@:optional
 	var privateToken : js.trustTokenApi.PrivateToken;
 	@:optional
-	var adAuctionHeaders : boolean;
+	var adAuctionHeaders : Bool;
 };

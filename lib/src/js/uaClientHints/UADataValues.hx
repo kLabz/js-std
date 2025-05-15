@@ -38,7 +38,7 @@ typedef UADataValues = {
 	@:optional
 	var model : DOMString;
 	@:optional
-	var mobile : boolean;
+	var mobile : Bool;
 	@:optional
 	var platform : DOMString;
 	@:optional
@@ -46,5 +46,5 @@ typedef UADataValues = {
 	@:optional
 	var uaFullVersion : DOMString;
 	@:optional
-	var wow64 : boolean;
+	var wow64 : Bool;
 };

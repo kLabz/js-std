@@ -34,7 +34,7 @@ typedef JsonWebKey = {
 	@:optional
 	var alg : DOMString;
 	@:optional
-	var ext : boolean;
+	var ext : Bool;
 	@:optional
 	var crv : DOMString;
 	@:optional

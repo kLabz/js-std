@@ -26,5 +26,5 @@ package js.webaudio;
 
 typedef PeriodicWaveConstraints = {
 	@:optional
-	var disableNormalization : boolean;
+	var disableNormalization : Bool;
 };

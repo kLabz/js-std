@@ -26,7 +26,7 @@ package js.webnn;
 
 typedef MLArgMinMaxOptions = js.webnn.MLOperatorOptions & {
 	@:optional
-	var keepDimensions : boolean;
+	var keepDimensions : Bool;
 	@:optional
 	var outputDataType : js.webnn.MLOperandDataType;
 };

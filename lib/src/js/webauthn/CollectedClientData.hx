@@ -29,7 +29,7 @@ typedef CollectedClientData = {
 	var challenge : DOMString;
 	var origin : DOMString;
 	@:optional
-	var crossOrigin : boolean;
+	var crossOrigin : Bool;
 	@:optional
 	var topOrigin : DOMString;
 };

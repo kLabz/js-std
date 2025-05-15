@@ -32,9 +32,9 @@ typedef KeyboardEventInit = js.uievents.EventModifierInit & {
 	@:optional
 	var location : unsigned long;
 	@:optional
-	var repeat : boolean;
+	var repeat : Bool;
 	@:optional
-	var isComposing : boolean;
+	var isComposing : Bool;
 	@:optional
 	var charCode : unsigned long;
 	@:optional

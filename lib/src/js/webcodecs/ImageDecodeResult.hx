@@ -26,5 +26,5 @@ package js.webcodecs;
 
 typedef ImageDecodeResult = {
 	var image : VideoFrame;
-	var complete : boolean;
+	var complete : Bool;
 };

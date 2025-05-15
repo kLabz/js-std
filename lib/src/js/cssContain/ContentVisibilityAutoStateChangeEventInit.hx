@@ -26,5 +26,5 @@ package js.cssContain;
 
 typedef ContentVisibilityAutoStateChangeEventInit = js.dom.EventInit & {
 	@:optional
-	var skipped : boolean;
+	var skipped : Bool;
 };

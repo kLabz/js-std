@@ -28,7 +28,7 @@ typedef AuthenticationExtensionsLargeBlobInputs = {
 	@:optional
 	var support : DOMString;
 	@:optional
-	var read : boolean;
+	var read : Bool;
 	@:optional
 	var write : BufferSource;
 };

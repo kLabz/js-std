@@ -30,5 +30,5 @@ typedef RTCIceParameters = {
 	@:optional
 	var password : DOMString;
 	@:optional
-	var iceLite : boolean;
+	var iceLite : Bool;
 };

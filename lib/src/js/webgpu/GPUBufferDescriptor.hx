@@ -28,5 +28,5 @@ typedef GPUBufferDescriptor = js.webgpu.GPUObjectDescriptorBase & {
 	var size : GPUSize64;
 	var usage : GPUBufferUsageFlags;
 	@:optional
-	var mappedAtCreation : boolean;
+	var mappedAtCreation : Bool;
 };

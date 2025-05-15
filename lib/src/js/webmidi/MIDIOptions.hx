@@ -26,7 +26,7 @@ package js.webmidi;
 
 typedef MIDIOptions = {
 	@:optional
-	var sysex : boolean;
+	var sysex : Bool;
 	@:optional
-	var software : boolean;
+	var software : Bool;
 };

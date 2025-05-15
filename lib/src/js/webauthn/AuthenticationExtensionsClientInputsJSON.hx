@@ -30,7 +30,7 @@ typedef AuthenticationExtensionsClientInputsJSON = {
 	@:optional
 	var appidExclude : DOMString;
 	@:optional
-	var credProps : boolean;
+	var credProps : Bool;
 	@:optional
 	var prf : js.webauthn.AuthenticationExtensionsPRFInputsJSON;
 	@:optional

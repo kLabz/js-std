@@ -48,7 +48,7 @@ typedef PointerEventInit = js.uievents.MouseEventInit & {
 	@:optional
 	var pointerType : DOMString;
 	@:optional
-	var isPrimary : boolean;
+	var isPrimary : Bool;
 	@:optional
 	var persistentDeviceId : long;
 	@:optional

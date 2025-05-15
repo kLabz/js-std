@@ -26,9 +26,9 @@ package js.dom;
 
 typedef AddEventListenerOptions = js.dom.EventListenerOptions & {
 	@:optional
-	var passive : boolean;
+	var passive : Bool;
 	@:optional
-	var once : boolean;
+	var once : Bool;
 	@:optional
 	var signal : AbortSignal;
 };

@@ -34,5 +34,5 @@ typedef RequestDeviceOptions = {
 	@:optional
 	var optionalManufacturerData : [object Object];
 	@:optional
-	var acceptAllDevices : boolean;
+	var acceptAllDevices : Bool;
 };

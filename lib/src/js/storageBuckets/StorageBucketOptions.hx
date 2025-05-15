@@ -26,7 +26,7 @@ package js.storageBuckets;
 
 typedef StorageBucketOptions = {
 	@:optional
-	var persisted : boolean;
+	var persisted : Bool;
 	@:optional
 	var quota : unsigned long long;
 	@:optional

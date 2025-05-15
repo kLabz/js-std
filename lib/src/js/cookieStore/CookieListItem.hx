@@ -36,9 +36,9 @@ typedef CookieListItem = {
 	@:optional
 	var expires : DOMHighResTimeStamp;
 	@:optional
-	var secure : boolean;
+	var secure : Bool;
 	@:optional
 	var sameSite : js.cookieStore.CookieSameSite;
 	@:optional
-	var partitioned : boolean;
+	var partitioned : Bool;
 };

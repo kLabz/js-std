@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/screen-orientation.idl. Do not edit!
 
 package js.screenOrientation;
+
 enum abstract OrientationLockType(String) {
 	var ANY = "any";
 	var NATURAL = "natural";

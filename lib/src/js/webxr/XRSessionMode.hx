@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
+
 enum abstract XRSessionMode(String) {
 	var INLINE = "inline";
 	var IMMERSIVE_VR = "immersive-vr";

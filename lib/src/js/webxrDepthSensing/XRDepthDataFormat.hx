@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr-depth-sensing.idl. Do not edit!
 
 package js.webxrDepthSensing;
+
 enum abstract XRDepthDataFormat(String) {
 	var LUMINANCE_ALPHA = "luminance-alpha";
 	var FLOAT32 = "float32";

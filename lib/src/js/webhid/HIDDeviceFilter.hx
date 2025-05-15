@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webhid.idl. Do not edit!
 
 package js.webhid;
+
 typedef HIDDeviceFilter = {
 	@:optional
 	var vendorId : unsigned long;

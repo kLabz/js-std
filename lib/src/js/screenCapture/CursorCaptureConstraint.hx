@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/screen-capture.idl. Do not edit!
 
 package js.screenCapture;
+
 enum abstract CursorCaptureConstraint(String) {
 	var NEVER = "never";
 	var ALWAYS = "always";

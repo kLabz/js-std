@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-highlight-api.idl. Do not edit!
 
 package js.cssHighlightApi;
+
 typedef HighlightsFromPointOptions = {
 	@:optional
 	var shadowRoots : [object Object];

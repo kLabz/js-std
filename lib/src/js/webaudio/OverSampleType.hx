@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
+
 enum abstract OverSampleType(String) {
 	var NONE = "none";
 	var 2X = "2x";

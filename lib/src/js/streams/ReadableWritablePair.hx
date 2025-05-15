@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/streams.idl. Do not edit!
 
 package js.streams;
+
 typedef ReadableWritablePair = {
 	var readable : ReadableStream;
 	var writable : WritableStream;

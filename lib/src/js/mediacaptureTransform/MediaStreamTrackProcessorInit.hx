@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediacapture-transform.idl. Do not edit!
 
 package js.mediacaptureTransform;
+
 typedef MediaStreamTrackProcessorInit = {
 	var track : MediaStreamTrack;
 	@:optional

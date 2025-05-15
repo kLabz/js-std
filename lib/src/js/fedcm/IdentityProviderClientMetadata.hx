@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fedcm.idl. Do not edit!
 
 package js.fedcm;
+
 typedef IdentityProviderClientMetadata = {
 	@:optional
 	var privacy_policy_url : USVString;

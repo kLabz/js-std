@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/media-capabilities.idl. Do not edit!
 
 package js.mediaCapabilities;
+
 enum abstract TransferFunction(String) {
 	var SRGB = "srgb";
 	var PQ = "pq";

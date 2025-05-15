@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/dom.idl. Do not edit!
 
 package js.dom;
+
 typedef ShadowRootInit = {
 	var mode : js.dom.ShadowRootMode;
 	@:optional

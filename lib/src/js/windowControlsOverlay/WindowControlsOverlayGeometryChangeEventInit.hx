@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/window-controls-overlay.idl. Do not edit!
 
 package js.windowControlsOverlay;
+
 typedef WindowControlsOverlayGeometryChangeEventInit = js.dom.EventInit & {
 	var titlebarAreaRect : DOMRect;
 	@:optional

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fetch.idl. Do not edit!
 
 package js.fetch;
+
 enum abstract RequestPriority(String) {
 	var HIGH = "high";
 	var LOW = "low";

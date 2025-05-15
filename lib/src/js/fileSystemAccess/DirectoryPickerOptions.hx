@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/file-system-access.idl. Do not edit!
 
 package js.fileSystemAccess;
+
 typedef DirectoryPickerOptions = {
 	@:optional
 	var id : DOMString;

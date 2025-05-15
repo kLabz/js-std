@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/cssom-view.idl. Do not edit!
 
 package js.cssomView;
+
 typedef ScrollIntoViewOptions = js.cssomView.ScrollOptions & {
 	@:optional
 	var block : js.cssomView.ScrollLogicalPosition;

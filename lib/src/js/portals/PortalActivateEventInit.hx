@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/portals.idl. Do not edit!
 
 package js.portals;
+
 typedef PortalActivateEventInit = js.dom.EventInit & {
 	@:optional
 	var data : any;

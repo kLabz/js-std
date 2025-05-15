@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-stats.idl. Do not edit!
 
 package js.webrtcStats;
+
 typedef RTCRtpStreamStats = js.webrtc.RTCStats & {
 	var ssrc : unsigned long;
 	var kind : DOMString;

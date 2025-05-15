@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
+
 enum abstract BiquadFilterType(String) {
 	var LOWPASS = "lowpass";
 	var HIGHPASS = "highpass";

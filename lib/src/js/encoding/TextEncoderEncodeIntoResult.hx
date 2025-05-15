@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/encoding.idl. Do not edit!
 
 package js.encoding;
+
 typedef TextEncoderEncodeIntoResult = {
 	@:optional
 	var read : unsigned long long;

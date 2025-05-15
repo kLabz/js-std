@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/notifications.idl. Do not edit!
 
 package js.notifications;
+
 typedef GetNotificationOptions = {
 	@:optional
 	var tag : DOMString;

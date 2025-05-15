@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 typedef GPUExternalTextureDescriptor = js.webgpu.GPUObjectDescriptorBase & {
 	var source : [object Object],[object Object];
 	@:optional

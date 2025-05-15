@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/csp-next.idl. Do not edit!
 
 package js.cspNext;
+
 enum abstract ScriptingPolicyViolationType(String) {
 	var EXTERNALSCRIPT = "externalScript";
 	var INLINESCRIPT = "inlineScript";

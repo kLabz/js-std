@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-animations-2.idl. Do not edit!
 
 package js.webAnimations2;
+
 typedef TimelineRangeOffset = {
 	@:optional
 	var rangeName : CSSOMString;

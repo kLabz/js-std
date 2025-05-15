@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-font-loading.idl. Do not edit!
 
 package js.cssFontLoading;
+
 typedef FontFaceSetLoadEventInit = js.dom.EventInit & {
 	@:optional
 	var fontfaces : [object Object];

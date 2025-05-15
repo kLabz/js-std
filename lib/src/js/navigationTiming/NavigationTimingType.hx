@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/navigation-timing.idl. Do not edit!
 
 package js.navigationTiming;
+
 enum abstract NavigationTimingType(String) {
 	var NAVIGATE = "navigate";
 	var RELOAD = "reload";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr-hit-test.idl. Do not edit!
 
 package js.webxrHitTest;
+
 typedef XRRayDirectionInit = {
 	@:optional
 	var x : double;

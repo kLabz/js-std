@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/performance-timeline.idl. Do not edit!
 
 package js.performanceTimeline;
+
 typedef PerformanceObserverInit = {
 	@:optional
 	var entryTypes : [object Object];

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/CSP.idl. Do not edit!
 
 package js.csp;
+
 typedef SecurityPolicyViolationEventInit = js.dom.EventInit & {
 	@:optional
 	var documentURI : USVString;

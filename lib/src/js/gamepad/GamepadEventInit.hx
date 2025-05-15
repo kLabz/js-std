@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/gamepad.idl. Do not edit!
 
 package js.gamepad;
+
 typedef GamepadEventInit = js.dom.EventInit & {
 	var gamepad : Gamepad;
 };

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/gamepad.idl. Do not edit!
 
 package js.gamepad;
+
 enum abstract GamepadMappingType(String) {
 	var NONE = "";
 	var STANDARD = "standard";

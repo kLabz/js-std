@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/periodic-background-sync.idl. Do not edit!
 
 package js.periodicBackgroundSync;
+
 typedef PeriodicSyncEventInit = js.serviceWorkers.ExtendableEventInit & {
 	var tag : DOMString;
 };

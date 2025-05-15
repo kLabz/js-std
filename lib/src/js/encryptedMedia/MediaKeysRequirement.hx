@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/encrypted-media.idl. Do not edit!
 
 package js.encryptedMedia;
+
 enum abstract MediaKeysRequirement(String) {
 	var REQUIRED = "required";
 	var OPTIONAL = "optional";

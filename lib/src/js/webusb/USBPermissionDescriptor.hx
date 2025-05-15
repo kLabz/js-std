@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webusb.idl. Do not edit!
 
 package js.webusb;
+
 typedef USBPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var filters : [object Object];

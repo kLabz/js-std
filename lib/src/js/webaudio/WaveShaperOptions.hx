@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
+
 typedef WaveShaperOptions = js.webaudio.AudioNodeOptions & {
 	@:optional
 	var curve : [object Object];

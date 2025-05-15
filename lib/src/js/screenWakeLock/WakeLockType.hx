@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/screen-wake-lock.idl. Do not edit!
 
 package js.screenWakeLock;
+
 enum abstract WakeLockType(String) {
 	var SCREEN = "screen";
 }

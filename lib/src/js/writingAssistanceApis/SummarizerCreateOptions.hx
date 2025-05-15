@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/writing-assistance-apis.idl. Do not edit!
 
 package js.writingAssistanceApis;
+
 typedef SummarizerCreateOptions = js.writingAssistanceApis.SummarizerCreateCoreOptions & {
 	@:optional
 	var signal : AbortSignal;

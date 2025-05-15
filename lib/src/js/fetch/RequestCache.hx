@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fetch.idl. Do not edit!
 
 package js.fetch;
+
 enum abstract RequestCache(String) {
 	var DEFAULT = "default";
 	var NO_STORE = "no-store";

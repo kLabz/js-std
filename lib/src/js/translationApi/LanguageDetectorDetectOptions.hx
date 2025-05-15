@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/translation-api.idl. Do not edit!
 
 package js.translationApi;
+
 typedef LanguageDetectorDetectOptions = {
 	@:optional
 	var signal : AbortSignal;

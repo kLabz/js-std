@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/reporting.idl. Do not edit!
 
 package js.reporting;
+
 typedef ReportingObserverOptions = {
 	@:optional
 	var types : [object Object];

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-stats.idl. Do not edit!
 
 package js.webrtcStats;
+
 typedef RTCTransportStats = js.webrtc.RTCStats & {
 	@:optional
 	var packetsSent : unsigned long long;

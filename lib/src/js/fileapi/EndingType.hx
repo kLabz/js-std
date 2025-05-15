@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/FileAPI.idl. Do not edit!
 
 package js.fileapi;
+
 enum abstract EndingType(String) {
 	var TRANSPARENT = "transparent";
 	var NATIVE = "native";

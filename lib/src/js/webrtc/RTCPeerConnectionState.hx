@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
+
 enum abstract RTCPeerConnectionState(String) {
 	var CLOSED = "closed";
 	var FAILED = "failed";

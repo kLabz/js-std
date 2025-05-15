@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/encrypted-media.idl. Do not edit!
 
 package js.encryptedMedia;
+
 enum abstract MediaKeySessionType(String) {
 	var TEMPORARY = "temporary";
 	var PERSISTENT_LICENSE = "persistent-license";

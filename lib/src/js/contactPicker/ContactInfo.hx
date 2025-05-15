@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/contact-picker.idl. Do not edit!
 
 package js.contactPicker;
+
 typedef ContactInfo = {
 	@:optional
 	var address : [object Object];

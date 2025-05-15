@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webtransport.idl. Do not edit!
 
 package js.webtransport;
+
 typedef WebTransportDatagramStats = {
 	@:optional
 	var droppedIncoming : unsigned long long;

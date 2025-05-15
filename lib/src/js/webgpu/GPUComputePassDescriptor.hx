@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 typedef GPUComputePassDescriptor = js.webgpu.GPUObjectDescriptorBase & {
 	@:optional
 	var timestampWrites : js.webgpu.GPUComputePassTimestampWrites;

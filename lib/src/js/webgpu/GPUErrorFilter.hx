@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 enum abstract GPUErrorFilter(String) {
 	var VALIDATION = "validation";
 	var OUT_OF_MEMORY = "out-of-memory";

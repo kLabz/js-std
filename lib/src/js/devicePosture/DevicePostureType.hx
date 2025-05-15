@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/device-posture.idl. Do not edit!
 
 package js.devicePosture;
+
 enum abstract DevicePostureType(String) {
 	var CONTINUOUS = "continuous";
 	var FOLDED = "folded";

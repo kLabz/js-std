@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcrypto.idl. Do not edit!
 
 package js.webcrypto;
+
 enum abstract KeyType(String) {
 	var PUBLIC = "public";
 	var PRIVATE = "private";

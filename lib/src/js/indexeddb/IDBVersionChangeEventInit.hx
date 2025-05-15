@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/IndexedDB.idl. Do not edit!
 
 package js.indexeddb;
+
 typedef IDBVersionChangeEventInit = js.dom.EventInit & {
 	@:optional
 	var oldVersion : unsigned long long;

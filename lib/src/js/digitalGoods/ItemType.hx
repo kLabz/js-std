@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/digital-goods.idl. Do not edit!
 
 package js.digitalGoods;
+
 enum abstract ItemType(String) {
 	var PRODUCT = "product";
 	var SUBSCRIPTION = "subscription";

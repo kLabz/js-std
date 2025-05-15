@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/background-fetch.idl. Do not edit!
 
 package js.backgroundFetch;
+
 enum abstract BackgroundFetchResult(String) {
 	var NONE = "";
 	var SUCCESS = "success";

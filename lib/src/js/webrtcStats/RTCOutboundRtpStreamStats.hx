@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-stats.idl. Do not edit!
 
 package js.webrtcStats;
+
 typedef RTCOutboundRtpStreamStats = js.webrtcStats.RTCSentRtpStreamStats & {
 	@:optional
 	var mid : DOMString;

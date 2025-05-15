@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-encoded-transform.idl. Do not edit!
 
 package js.webrtcEncodedTransform;
+
 typedef RTCEncodedAudioFrameMetadata = {
 	@:optional
 	var synchronizationSource : unsigned long;

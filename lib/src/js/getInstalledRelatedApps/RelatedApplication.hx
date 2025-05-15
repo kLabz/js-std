@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/get-installed-related-apps.idl. Do not edit!
 
 package js.getInstalledRelatedApps;
+
 typedef RelatedApplication = {
 	var platform : USVString;
 	@:optional

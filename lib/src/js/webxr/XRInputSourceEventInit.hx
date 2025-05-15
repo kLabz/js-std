@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
+
 typedef XRInputSourceEventInit = js.dom.EventInit & {
 	var frame : XRFrame;
 	var inputSource : XRInputSource;

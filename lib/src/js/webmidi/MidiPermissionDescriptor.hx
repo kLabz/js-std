@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webmidi.idl. Do not edit!
 
 package js.webmidi;
+
 typedef MidiPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var sysex : boolean;

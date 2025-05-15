@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/xhr.idl. Do not edit!
 
 package js.xhr;
+
 enum abstract XMLHttpRequestResponseType(String) {
 	var NONE = "";
 	var ARRAYBUFFER = "arraybuffer";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs.idl. Do not edit!
 
 package js.webcodecs;
+
 enum abstract VideoColorPrimaries(String) {
 	var BT709 = "bt709";
 	var BT470BG = "bt470bg";

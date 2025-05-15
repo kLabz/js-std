@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/IndexedDB.idl. Do not edit!
 
 package js.indexeddb;
+
 enum abstract IDBCursorDirection(String) {
 	var NEXT = "next";
 	var NEXTUNIQUE = "nextunique";

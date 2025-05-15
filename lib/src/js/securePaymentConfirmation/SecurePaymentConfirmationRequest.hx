@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/secure-payment-confirmation.idl. Do not edit!
 
 package js.securePaymentConfirmation;
+
 typedef SecurePaymentConfirmationRequest = {
 	var challenge : BufferSource;
 	var rpId : USVString;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/shape-detection-api.idl. Do not edit!
 
 package js.shapeDetectionApi;
+
 typedef Landmark = {
 	var locations : [object Object];
 	@:optional

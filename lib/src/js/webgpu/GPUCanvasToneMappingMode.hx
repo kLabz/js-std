@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 enum abstract GPUCanvasToneMappingMode(String) {
 	var STANDARD = "standard";
 	var EXTENDED = "extended";

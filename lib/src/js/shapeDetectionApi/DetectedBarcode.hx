@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/shape-detection-api.idl. Do not edit!
 
 package js.shapeDetectionApi;
+
 typedef DetectedBarcode = {
 	var boundingBox : DOMRectReadOnly;
 	var rawValue : DOMString;

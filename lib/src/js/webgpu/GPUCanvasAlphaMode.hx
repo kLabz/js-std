@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 enum abstract GPUCanvasAlphaMode(String) {
 	var OPAQUE = "opaque";
 	var PREMULTIPLIED = "premultiplied";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 enum abstract GPUTextureFormat(String) {
 	var R8UNORM = "r8unorm";
 	var R8SNORM = "r8snorm";

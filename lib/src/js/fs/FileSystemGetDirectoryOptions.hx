@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fs.idl. Do not edit!
 
 package js.fs;
+
 typedef FileSystemGetDirectoryOptions = {
 	@:optional
 	var create : boolean;

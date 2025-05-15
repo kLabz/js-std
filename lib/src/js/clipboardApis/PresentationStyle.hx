@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/clipboard-apis.idl. Do not edit!
 
 package js.clipboardApis;
+
 enum abstract PresentationStyle(String) {
 	var UNSPECIFIED = "unspecified";
 	var INLINE = "inline";

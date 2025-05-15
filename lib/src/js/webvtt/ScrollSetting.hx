@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webvtt.idl. Do not edit!
 
 package js.webvtt;
+
 enum abstract ScrollSetting(String) {
 	var NONE = "";
 	var UP = "up";

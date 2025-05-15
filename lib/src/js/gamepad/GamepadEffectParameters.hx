@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/gamepad.idl. Do not edit!
 
 package js.gamepad;
+
 typedef GamepadEffectParameters = {
 	@:optional
 	var duration : unsigned long long;

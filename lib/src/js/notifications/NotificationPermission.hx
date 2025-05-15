@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/notifications.idl. Do not edit!
 
 package js.notifications;
+
 enum abstract NotificationPermission(String) {
 	var DEFAULT = "default";
 	var DENIED = "denied";

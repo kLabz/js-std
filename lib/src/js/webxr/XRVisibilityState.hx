@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
+
 enum abstract XRVisibilityState(String) {
 	var VISIBLE = "visible";
 	var VISIBLE_BLURRED = "visible-blurred";

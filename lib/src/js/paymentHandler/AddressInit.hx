@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/payment-handler.idl. Do not edit!
 
 package js.paymentHandler;
+
 typedef AddressInit = {
 	@:optional
 	var country : DOMString;

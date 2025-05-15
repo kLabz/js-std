@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/websockets.idl. Do not edit!
 
 package js.websockets;
+
 enum abstract BinaryType(String) {
 	var BLOB = "blob";
 	var ARRAYBUFFER = "arraybuffer";

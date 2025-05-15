@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
+
 enum abstract XRTargetRayMode(String) {
 	var GAZE = "gaze";
 	var TRACKED_POINTER = "tracked-pointer";

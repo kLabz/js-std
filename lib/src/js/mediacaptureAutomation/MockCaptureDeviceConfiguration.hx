@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediacapture-automation.idl. Do not edit!
 
 package js.mediacaptureAutomation;
+
 typedef MockCaptureDeviceConfiguration = {
 	@:optional
 	var label : DOMString;

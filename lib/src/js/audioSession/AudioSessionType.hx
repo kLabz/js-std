@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/audio-session.idl. Do not edit!
 
 package js.audioSession;
+
 enum abstract AudioSessionType(String) {
 	var AUTO = "auto";
 	var PLAYBACK = "playback";

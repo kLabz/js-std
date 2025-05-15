@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-bluetooth.idl. Do not edit!
 
 package js.webBluetooth;
+
 typedef BluetoothManufacturerDataFilterInit = js.webBluetooth.BluetoothDataFilterInit & {
 	var companyIdentifier : unsigned short;
 };

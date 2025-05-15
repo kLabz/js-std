@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/encrypted-media.idl. Do not edit!
 
 package js.encryptedMedia;
+
 enum abstract MediaKeySessionClosedReason(String) {
 	var INTERNAL_ERROR = "internal-error";
 	var CLOSED_BY_APPLICATION = "closed-by-application";

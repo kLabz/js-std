@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webnn.idl. Do not edit!
 
 package js.webnn;
+
 enum abstract MLInterpolationMode(String) {
 	var NEAREST_NEIGHBOR = "nearest-neighbor";
 	var LINEAR = "linear";

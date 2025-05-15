@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
+
 typedef RTCTrackEventInit = js.dom.EventInit & {
 	var receiver : RTCRtpReceiver;
 	var track : MediaStreamTrack;

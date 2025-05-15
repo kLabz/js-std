@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/selection-api.idl. Do not edit!
 
 package js.selectionApi;
+
 typedef GetComposedRangesOptions = {
 	@:optional
 	var shadowRoots : [object Object];

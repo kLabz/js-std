@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/screen-capture.idl. Do not edit!
 
 package js.screenCapture;
+
 enum abstract DisplayCaptureSurfaceType(String) {
 	var MONITOR = "monitor";
 	var WINDOW = "window";

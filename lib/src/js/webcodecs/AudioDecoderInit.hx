@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs.idl. Do not edit!
 
 package js.webcodecs;
+
 typedef AudioDecoderInit = {
 	var output : AudioDataOutputCallback;
 	var error : WebCodecsErrorCallback;

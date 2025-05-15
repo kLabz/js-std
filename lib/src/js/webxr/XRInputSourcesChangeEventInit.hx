@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
+
 typedef XRInputSourcesChangeEventInit = js.dom.EventInit & {
 	var session : XRSession;
 	var added : [object Object];

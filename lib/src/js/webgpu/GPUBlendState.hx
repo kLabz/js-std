@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 typedef GPUBlendState = {
 	var color : js.webgpu.GPUBlendComponent;
 	var alpha : js.webgpu.GPUBlendComponent;

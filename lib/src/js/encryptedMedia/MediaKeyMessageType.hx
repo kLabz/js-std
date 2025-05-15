@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/encrypted-media.idl. Do not edit!
 
 package js.encryptedMedia;
+
 enum abstract MediaKeyMessageType(String) {
 	var LICENSE_REQUEST = "license-request";
 	var LICENSE_RENEWAL = "license-renewal";

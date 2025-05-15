@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/touch-events.idl. Do not edit!
 
 package js.touchEvents;
+
 enum abstract TouchType(String) {
 	var DIRECT = "direct";
 	var STYLUS = "stylus";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/wasm-js-api.idl. Do not edit!
 
 package js.wasmJsApi;
+
 enum abstract ValueType(String) {
 	var I32 = "i32";
 	var I64 = "i64";

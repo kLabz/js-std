@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webusb.idl. Do not edit!
 
 package js.webusb;
+
 enum abstract USBTransferStatus(String) {
 	var OK = "ok";
 	var STALL = "stall";

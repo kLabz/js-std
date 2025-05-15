@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/periodic-background-sync.idl. Do not edit!
 
 package js.periodicBackgroundSync;
+
 typedef BackgroundSyncOptions = {
 	@:optional
 	var minInterval : unsigned long long;

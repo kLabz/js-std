@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/eyedropper-api.idl. Do not edit!
 
 package js.eyedropperApi;
+
 typedef ColorSelectionResult = {
 	@:optional
 	var sRGBHex : DOMString;

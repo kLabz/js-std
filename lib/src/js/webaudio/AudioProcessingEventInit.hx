@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
+
 typedef AudioProcessingEventInit = js.dom.EventInit & {
 	var playbackTime : double;
 	var inputBuffer : AudioBuffer;

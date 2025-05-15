@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/orientation-event.idl. Do not edit!
 
 package js.orientationEvent;
+
 typedef DeviceMotionEventInit = js.dom.EventInit & {
 	@:optional
 	var acceleration : js.orientationEvent.DeviceMotionEventAccelerationInit;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-priority.idl. Do not edit!
 
 package js.webrtcPriority;
+
 enum abstract RTCPriorityType(String) {
 	var VERY_LOW = "very-low";
 	var LOW = "low";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-stats.idl. Do not edit!
 
 package js.webrtcStats;
+
 typedef RTCVideoSourceStats = js.webrtcStats.RTCMediaSourceStats & {
 	@:optional
 	var width : unsigned long;

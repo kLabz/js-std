@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediastream-recording.idl. Do not edit!
 
 package js.mediastreamRecording;
+
 typedef MediaRecorderOptions = {
 	@:optional
 	var mimeType : DOMString;

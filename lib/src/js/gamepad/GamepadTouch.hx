@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/gamepad.idl. Do not edit!
 
 package js.gamepad;
+
 typedef GamepadTouch = {
 	@:optional
 	var touchId : unsigned long;

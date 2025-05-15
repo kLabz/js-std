@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-layout-api.idl. Do not edit!
 
 package js.cssLayoutApi;
+
 enum abstract BreakType(String) {
 	var NONE = "none";
 	var LINE = "line";

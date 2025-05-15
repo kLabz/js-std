@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/permissions.idl. Do not edit!
 
 package js.permissions;
+
 typedef PermissionSetParameters = {
 	var descriptor : object;
 	var state : js.permissions.PermissionState;

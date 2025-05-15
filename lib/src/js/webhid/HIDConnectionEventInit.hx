@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webhid.idl. Do not edit!
 
 package js.webhid;
+
 typedef HIDConnectionEventInit = js.dom.EventInit & {
 	var device : HIDDevice;
 };

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/digital-credentials.idl. Do not edit!
 
 package js.digitalCredentials;
+
 typedef DigitalCredentialRequestOptions = {
 	@:optional
 	var requests : [object Object];

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-encoded-transform.idl. Do not edit!
 
 package js.webrtcEncodedTransform;
+
 enum abstract RTCEncodedVideoFrameType(String) {
 	var EMPTY = "empty";
 	var KEY = "key";

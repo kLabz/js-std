@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/file-system-access.idl. Do not edit!
 
 package js.fileSystemAccess;
+
 typedef OpenFilePickerOptions = js.fileSystemAccess.FilePickerOptions & {
 	@:optional
 	var multiple : boolean;

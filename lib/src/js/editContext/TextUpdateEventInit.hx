@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/edit-context.idl. Do not edit!
 
 package js.editContext;
+
 typedef TextUpdateEventInit = js.dom.EventInit & {
 	@:optional
 	var updateRangeStart : unsigned long;

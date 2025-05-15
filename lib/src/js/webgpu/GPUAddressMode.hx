@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 enum abstract GPUAddressMode(String) {
 	var CLAMP_TO_EDGE = "clamp-to-edge";
 	var REPEAT = "repeat";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/speech-api.idl. Do not edit!
 
 package js.speechApi;
+
 enum abstract SpeechRecognitionErrorCode(String) {
 	var NO_SPEECH = "no-speech";
 	var ABORTED = "aborted";

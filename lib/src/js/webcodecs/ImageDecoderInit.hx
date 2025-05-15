@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs.idl. Do not edit!
 
 package js.webcodecs;
+
 typedef ImageDecoderInit = {
 	var type : DOMString;
 	var data : ImageBufferSource;

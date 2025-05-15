@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/shared-storage.idl. Do not edit!
 
 package js.sharedStorage;
+
 typedef SharedStorageModifierMethodOptions = {
 	@:optional
 	var withLock : DOMString;

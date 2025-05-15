@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxrlayers.idl. Do not edit!
 
 package js.webxrlayers;
+
 typedef XRCylinderLayerInit = js.webxrlayers.XRLayerInit & {
 	@:optional
 	var textureType : js.webxrlayers.XRTextureType;

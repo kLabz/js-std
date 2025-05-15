@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/websockets.idl. Do not edit!
 
 package js.websockets;
+
 typedef CloseEventInit = js.dom.EventInit & {
 	@:optional
 	var wasClean : boolean;

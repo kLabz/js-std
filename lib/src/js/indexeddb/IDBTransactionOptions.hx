@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/IndexedDB.idl. Do not edit!
 
 package js.indexeddb;
+
 typedef IDBTransactionOptions = {
 	@:optional
 	var durability : js.indexeddb.IDBTransactionDurability;

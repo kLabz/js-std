@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/reporting.idl. Do not edit!
 
 package js.reporting;
+
 typedef GenerateTestReportParameters = {
 	var message : DOMString;
 	@:optional

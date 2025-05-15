@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-transitions.idl. Do not edit!
 
 package js.cssTransitions;
+
 typedef TransitionEventInit = js.dom.EventInit & {
 	@:optional
 	var propertyName : CSSOMString;

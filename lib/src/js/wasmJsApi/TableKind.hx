@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/wasm-js-api.idl. Do not edit!
 
 package js.wasmJsApi;
+
 enum abstract TableKind(String) {
 	var EXTERNREF = "externref";
 	var ANYFUNC = "anyfunc";

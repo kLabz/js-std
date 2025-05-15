@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/turtledove.idl. Do not edit!
 
 package js.turtledove;
+
 enum abstract KAnonStatus(String) {
 	var PASSEDANDENFORCED = "passedAndEnforced";
 	var PASSEDNOTENFORCED = "passedNotEnforced";

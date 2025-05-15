@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/file-system-access.idl. Do not edit!
 
 package js.fileSystemAccess;
+
 typedef FileSystemPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	var handle : FileSystemHandle;
 	@:optional

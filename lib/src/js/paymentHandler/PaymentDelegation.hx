@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/payment-handler.idl. Do not edit!
 
 package js.paymentHandler;
+
 enum abstract PaymentDelegation(String) {
 	var SHIPPINGADDRESS = "shippingAddress";
 	var PAYERNAME = "payerName";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/geometry.idl. Do not edit!
 
 package js.geometry;
+
 typedef DOMMatrix2DInit = {
 	@:optional
 	var a : unrestricted double;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/attribution-reporting-api.idl. Do not edit!
 
 package js.attributionReportingApi;
+
 typedef AttributionReportingRequestOptions = {
 	var eventSourceEligible : boolean;
 	var triggerEligible : boolean;

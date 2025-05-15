@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/SVG.idl. Do not edit!
 
 package js.svg;
+
 typedef SVGBoundingBoxOptions = {
 	@:optional
 	var fill : boolean;

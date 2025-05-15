@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/document-picture-in-picture.idl. Do not edit!
 
 package js.documentPictureInPicture;
+
 typedef DocumentPictureInPictureOptions = {
 	@:optional
 	var width : unsigned long long;

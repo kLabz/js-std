@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-typed-om.idl. Do not edit!
 
 package js.cssTypedOm;
+
 typedef CSSNumericType = {
 	@:optional
 	var length : long;

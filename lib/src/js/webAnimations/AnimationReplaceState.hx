@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-animations.idl. Do not edit!
 
 package js.webAnimations;
+
 enum abstract AnimationReplaceState(String) {
 	var ACTIVE = "active";
 	var REMOVED = "removed";

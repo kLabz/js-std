@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs-hevc-codec-registration.idl. Do not edit!
 
 package js.webcodecsHevcCodecRegistration;
+
 typedef HevcEncoderConfig = {
 	@:optional
 	var format : js.webcodecsHevcCodecRegistration.HevcBitstreamFormat;

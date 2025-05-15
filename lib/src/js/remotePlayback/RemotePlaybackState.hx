@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/remote-playback.idl. Do not edit!
 
 package js.remotePlayback;
+
 enum abstract RemotePlaybackState(String) {
 	var CONNECTING = "connecting";
 	var CONNECTED = "connected";

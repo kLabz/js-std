@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/ppa.idl. Do not edit!
 
 package js.ppa;
+
 enum abstract PrivateAttributionProtocol(String) {
 	var DAP_12_HISTOGRAM = "dap-12-histogram";
 	var TEE_00 = "tee-00";

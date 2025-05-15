@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-bluetooth-scanning.idl. Do not edit!
 
 package js.webBluetoothScanning;
+
 typedef BluetoothLEScanOptions = {
 	@:optional
 	var filters : [object Object];

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/FileAPI.idl. Do not edit!
 
 package js.fileapi;
+
 typedef FilePropertyBag = js.fileapi.BlobPropertyBag & {
 	@:optional
 	var lastModified : long long;

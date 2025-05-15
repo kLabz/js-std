@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/trust-token-api.idl. Do not edit!
 
 package js.trustTokenApi;
+
 typedef PrivateToken = {
 	var version : js.trustTokenApi.TokenVersion;
 	var operation : js.trustTokenApi.OperationType;

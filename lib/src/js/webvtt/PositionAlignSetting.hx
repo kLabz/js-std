@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webvtt.idl. Do not edit!
 
 package js.webvtt;
+
 enum abstract PositionAlignSetting(String) {
 	var LINE_LEFT = "line-left";
 	var CENTER = "center";

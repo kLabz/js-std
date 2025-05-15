@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/writing-assistance-apis.idl. Do not edit!
 
 package js.writingAssistanceApis;
+
 enum abstract SummarizerType(String) {
 	var TL_DR = "tl;dr";
 	var TEASER = "teaser";

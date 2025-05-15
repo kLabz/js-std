@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/shape-detection-api.idl. Do not edit!
 
 package js.shapeDetectionApi;
+
 typedef DetectedFace = {
 	var boundingBox : DOMRectReadOnly;
 	var landmarks : [object Object];

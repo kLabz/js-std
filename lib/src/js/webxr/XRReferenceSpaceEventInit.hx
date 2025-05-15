@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
+
 typedef XRReferenceSpaceEventInit = js.dom.EventInit & {
 	var referenceSpace : XRReferenceSpace;
 	@:optional

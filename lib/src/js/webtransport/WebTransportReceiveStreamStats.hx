@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webtransport.idl. Do not edit!
 
 package js.webtransport;
+
 typedef WebTransportReceiveStreamStats = {
 	@:optional
 	var bytesReceived : unsigned long long;

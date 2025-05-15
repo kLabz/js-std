@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/digital-credentials.idl. Do not edit!
 
 package js.digitalCredentials;
+
 typedef DigitalCredentialCreateRequest = {
 	var protocol : DOMString;
 	var data : object;

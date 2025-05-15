@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/idle-detection.idl. Do not edit!
 
 package js.idleDetection;
+
 enum abstract ScreenIdleState(String) {
 	var LOCKED = "locked";
 	var UNLOCKED = "unlocked";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/media-source.idl. Do not edit!
 
 package js.mediaSource;
+
 enum abstract ReadyState(String) {
 	var CLOSED = "closed";
 	var OPEN = "open";

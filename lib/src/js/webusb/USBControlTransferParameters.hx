@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webusb.idl. Do not edit!
 
 package js.webusb;
+
 typedef USBControlTransferParameters = {
 	var requestType : js.webusb.USBRequestType;
 	var recipient : js.webusb.USBRecipient;

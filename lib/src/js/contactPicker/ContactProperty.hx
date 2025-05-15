@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/contact-picker.idl. Do not edit!
 
 package js.contactPicker;
+
 enum abstract ContactProperty(String) {
 	var ADDRESS = "address";
 	var EMAIL = "email";

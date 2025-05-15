@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/observable.idl. Do not edit!
 
 package js.observable;
+
 typedef ObservableInspector = {
 	@:optional
 	var next : ObservableSubscriptionCallback;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/gamepad-extensions.idl. Do not edit!
 
 package js.gamepadExtensions;
+
 enum abstract GamepadHand(String) {
 	var NONE = "";
 	var LEFT = "left";

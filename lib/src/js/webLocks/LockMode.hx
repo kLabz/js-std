@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-locks.idl. Do not edit!
 
 package js.webLocks;
+
 enum abstract LockMode(String) {
 	var SHARED = "shared";
 	var EXCLUSIVE = "exclusive";

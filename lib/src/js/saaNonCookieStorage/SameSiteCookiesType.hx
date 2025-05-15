@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/saa-non-cookie-storage.idl. Do not edit!
 
 package js.saaNonCookieStorage;
+
 enum abstract SameSiteCookiesType(String) {
 	var ALL = "all";
 	var NONE = "none";

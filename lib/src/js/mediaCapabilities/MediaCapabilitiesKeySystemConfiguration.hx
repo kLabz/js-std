@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/media-capabilities.idl. Do not edit!
 
 package js.mediaCapabilities;
+
 typedef MediaCapabilitiesKeySystemConfiguration = {
 	var keySystem : DOMString;
 	@:optional

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcrypto.idl. Do not edit!
 
 package js.webcrypto;
+
 enum abstract KeyUsage(String) {
 	var ENCRYPT = "encrypt";
 	var DECRYPT = "decrypt";

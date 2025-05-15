@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-nav.idl. Do not edit!
 
 package js.cssNav;
+
 typedef SpatialNavigationSearchOptions = {
 	@:optional
 	var candidates : [object Object];

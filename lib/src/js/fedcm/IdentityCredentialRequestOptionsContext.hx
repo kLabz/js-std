@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fedcm.idl. Do not edit!
 
 package js.fedcm;
+
 enum abstract IdentityCredentialRequestOptionsContext(String) {
 	var SIGNIN = "signin";
 	var SIGNUP = "signup";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/eyedropper-api.idl. Do not edit!
 
 package js.eyedropperApi;
+
 typedef ColorSelectionOptions = {
 	@:optional
 	var signal : AbortSignal;

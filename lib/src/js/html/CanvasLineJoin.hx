@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
+
 enum abstract CanvasLineJoin(String) {
 	var ROUND = "round";
 	var BEVEL = "bevel";

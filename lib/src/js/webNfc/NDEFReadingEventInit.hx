@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-nfc.idl. Do not edit!
 
 package js.webNfc;
+
 typedef NDEFReadingEventInit = js.dom.EventInit & {
 	@:optional
 	var serialNumber : DOMString;

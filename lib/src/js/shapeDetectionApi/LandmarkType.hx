@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/shape-detection-api.idl. Do not edit!
 
 package js.shapeDetectionApi;
+
 enum abstract LandmarkType(String) {
 	var MOUTH = "mouth";
 	var EYE = "eye";

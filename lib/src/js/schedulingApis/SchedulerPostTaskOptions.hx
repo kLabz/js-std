@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/scheduling-apis.idl. Do not edit!
 
 package js.schedulingApis;
+
 typedef SchedulerPostTaskOptions = {
 	@:optional
 	var signal : AbortSignal;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/gyroscope.idl. Do not edit!
 
 package js.gyroscope;
+
 enum abstract GyroscopeLocalCoordinateSystem(String) {
 	var DEVICE = "device";
 	var SCREEN = "screen";

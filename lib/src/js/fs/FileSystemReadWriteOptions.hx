@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fs.idl. Do not edit!
 
 package js.fs;
+
 typedef FileSystemReadWriteOptions = {
 	@:optional
 	var at : unsigned long long;

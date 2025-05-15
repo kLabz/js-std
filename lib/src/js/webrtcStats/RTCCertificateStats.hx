@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-stats.idl. Do not edit!
 
 package js.webrtcStats;
+
 typedef RTCCertificateStats = js.webrtc.RTCStats & {
 	var fingerprint : DOMString;
 	var fingerprintAlgorithm : DOMString;

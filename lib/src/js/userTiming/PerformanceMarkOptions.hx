@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/user-timing.idl. Do not edit!
 
 package js.userTiming;
+
 typedef PerformanceMarkOptions = {
 	@:optional
 	var detail : any;

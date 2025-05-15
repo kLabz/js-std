@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 enum abstract GPUFeatureName(String) {
 	var CORE_FEATURES_AND_LIMITS = "core-features-and-limits";
 	var DEPTH_CLIP_CONTROL = "depth-clip-control";

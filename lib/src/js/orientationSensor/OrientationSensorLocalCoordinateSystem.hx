@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/orientation-sensor.idl. Do not edit!
 
 package js.orientationSensor;
+
 enum abstract OrientationSensorLocalCoordinateSystem(String) {
 	var DEVICE = "device";
 	var SCREEN = "screen";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/presentation-api.idl. Do not edit!
 
 package js.presentationApi;
+
 typedef PresentationConnectionCloseEventInit = js.dom.EventInit & {
 	var reason : js.presentationApi.PresentationConnectionCloseReason;
 	@:optional

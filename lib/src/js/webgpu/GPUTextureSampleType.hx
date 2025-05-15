@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 enum abstract GPUTextureSampleType(String) {
 	var FLOAT = "float";
 	var UNFILTERABLE_FLOAT = "unfilterable-float";

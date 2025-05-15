@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediacapture-handle-actions.idl. Do not edit!
 
 package js.mediacaptureHandleActions;
+
 enum abstract CaptureAction(String) {
 	var NEXT = "next";
 	var PREVIOUS = "previous";

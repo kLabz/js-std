@@ -23,5 +23,6 @@
 // This file is generated from @webref/idl/geolocation-sensor.idl. Do not edit!
 
 package js.geolocationSensor;
+
 typedef GeolocationSensorOptions = js.genericSensor.SensorOptions & {
 };

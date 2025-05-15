@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/scheduling-apis.idl. Do not edit!
 
 package js.schedulingApis;
+
 enum abstract TaskPriority(String) {
 	var USER_BLOCKING = "user-blocking";
 	var USER_VISIBLE = "user-visible";

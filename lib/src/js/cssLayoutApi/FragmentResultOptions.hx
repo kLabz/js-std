@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-layout-api.idl. Do not edit!
 
 package js.cssLayoutApi;
+
 typedef FragmentResultOptions = {
 	@:optional
 	var inlineSize : double;

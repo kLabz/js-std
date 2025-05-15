@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxrlayers.idl. Do not edit!
 
 package js.webxrlayers;
+
 typedef XRMediaQuadLayerInit = js.webxrlayers.XRMediaLayerInit & {
 	@:optional
 	var transform : XRRigidTransform;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/geolocation-sensor.idl. Do not edit!
 
 package js.geolocationSensor;
+
 typedef GeolocationSensorReading = {
 	@:optional
 	var timestamp : DOMHighResTimeStamp;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/is-input-pending.idl. Do not edit!
 
 package js.isInputPending;
+
 typedef IsInputPendingOptions = {
 	@:optional
 	var includeContinuous : boolean;

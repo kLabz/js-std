@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/edit-context.idl. Do not edit!
 
 package js.editContext;
+
 typedef CharacterBoundsUpdateEventInit = js.dom.EventInit & {
 	@:optional
 	var rangeStart : unsigned long;

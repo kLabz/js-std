@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/background-fetch.idl. Do not edit!
 
 package js.backgroundFetch;
+
 typedef BackgroundFetchEventInit = js.serviceWorkers.ExtendableEventInit & {
 	var registration : BackgroundFetchRegistration;
 };

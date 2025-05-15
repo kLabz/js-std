@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-stats.idl. Do not edit!
 
 package js.webrtcStats;
+
 enum abstract RTCStatsType(String) {
 	var CODEC = "codec";
 	var INBOUND_RTP = "inbound-rtp";

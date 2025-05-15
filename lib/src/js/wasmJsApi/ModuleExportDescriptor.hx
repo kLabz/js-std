@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/wasm-js-api.idl. Do not edit!
 
 package js.wasmJsApi;
+
 typedef ModuleExportDescriptor = {
 	var name : USVString;
 	var kind : js.wasmJsApi.ImportExportKind;

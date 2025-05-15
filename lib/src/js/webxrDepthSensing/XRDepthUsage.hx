@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr-depth-sensing.idl. Do not edit!
 
 package js.webxrDepthSensing;
+
 enum abstract XRDepthUsage(String) {
 	var CPU_OPTIMIZED = "cpu-optimized";
 	var GPU_OPTIMIZED = "gpu-optimized";

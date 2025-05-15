@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/saa-non-cookie-storage.idl. Do not edit!
 
 package js.saaNonCookieStorage;
+
 typedef StorageAccessTypes = {
 	@:optional
 	var all : boolean;

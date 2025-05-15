@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webmidi.idl. Do not edit!
 
 package js.webmidi;
+
 enum abstract MIDIPortType(String) {
 	var INPUT = "input";
 	var OUTPUT = "output";

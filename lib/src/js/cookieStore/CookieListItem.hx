@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/cookie-store.idl. Do not edit!
 
 package js.cookieStore;
+
 typedef CookieListItem = {
 	@:optional
 	var name : USVString;

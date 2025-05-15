@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/writing-assistance-apis.idl. Do not edit!
 
 package js.writingAssistanceApis;
+
 enum abstract RewriterFormat(String) {
 	var AS_IS = "as-is";
 	var PLAIN_TEXT = "plain-text";

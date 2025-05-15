@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 enum abstract GPUVertexFormat(String) {
 	var UINT8 = "uint8";
 	var UINT8X2 = "uint8x2";

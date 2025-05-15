@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
+
 enum abstract DocumentVisibilityState(String) {
 	var VISIBLE = "visible";
 	var HIDDEN = "hidden";

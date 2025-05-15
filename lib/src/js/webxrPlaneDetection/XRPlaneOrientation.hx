@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr-plane-detection.idl. Do not edit!
 
 package js.webxrPlaneDetection;
+
 enum abstract XRPlaneOrientation(String) {
 	var HORIZONTAL = "horizontal";
 	var VERTICAL = "vertical";

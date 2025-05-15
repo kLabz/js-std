@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/referrer-policy.idl. Do not edit!
 
 package js.referrerPolicy;
+
 enum abstract ReferrerPolicy(String) {
 	var NONE = "";
 	var NO_REFERRER = "no-referrer";

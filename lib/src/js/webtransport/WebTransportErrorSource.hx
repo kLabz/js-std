@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webtransport.idl. Do not edit!
 
 package js.webtransport;
+
 enum abstract WebTransportErrorSource(String) {
 	var STREAM = "stream";
 	var SESSION = "session";

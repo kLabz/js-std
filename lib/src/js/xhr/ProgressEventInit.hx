@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/xhr.idl. Do not edit!
 
 package js.xhr;
+
 typedef ProgressEventInit = js.dom.EventInit & {
 	@:optional
 	var lengthComputable : boolean;

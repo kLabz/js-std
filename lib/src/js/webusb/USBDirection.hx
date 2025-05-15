@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webusb.idl. Do not edit!
 
 package js.webusb;
+
 enum abstract USBDirection(String) {
 	var IN = "in";
 	var OUT = "out";

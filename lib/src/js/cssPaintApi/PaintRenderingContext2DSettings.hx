@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-paint-api.idl. Do not edit!
 
 package js.cssPaintApi;
+
 typedef PaintRenderingContext2DSettings = {
 	@:optional
 	var alpha : boolean;

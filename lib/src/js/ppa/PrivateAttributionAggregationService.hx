@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/ppa.idl. Do not edit!
 
 package js.ppa;
+
 typedef PrivateAttributionAggregationService = {
 	var protocol : DOMString;
 };

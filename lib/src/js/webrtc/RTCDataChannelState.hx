@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
+
 enum abstract RTCDataChannelState(String) {
 	var CONNECTING = "connecting";
 	var OPEN = "open";

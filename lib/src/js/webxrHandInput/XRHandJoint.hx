@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr-hand-input.idl. Do not edit!
 
 package js.webxrHandInput;
+
 enum abstract XRHandJoint(String) {
 	var WRIST = "wrist";
 	var THUMB_METACARPAL = "thumb-metacarpal";

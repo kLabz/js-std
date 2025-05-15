@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-identity.idl. Do not edit!
 
 package js.webrtcIdentity;
+
 enum abstract RTCErrorDetailTypeIdp(String) {
 	var IDP_BAD_SCRIPT_FAILURE = "idp-bad-script-failure";
 	var IDP_EXECUTION_FAILURE = "idp-execution-failure";

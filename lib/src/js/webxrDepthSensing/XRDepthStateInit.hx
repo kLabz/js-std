@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr-depth-sensing.idl. Do not edit!
 
 package js.webxrDepthSensing;
+
 typedef XRDepthStateInit = {
 	var usagePreference : [object Object];
 	var dataFormatPreference : [object Object];

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
+
 typedef AnalyserOptions = js.webaudio.AudioNodeOptions & {
 	@:optional
 	var fftSize : unsigned long;

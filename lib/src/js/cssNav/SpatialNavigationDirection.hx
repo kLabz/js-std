@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-nav.idl. Do not edit!
 
 package js.cssNav;
+
 enum abstract SpatialNavigationDirection(String) {
 	var UP = "up";
 	var DOWN = "down";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-animations.idl. Do not edit!
 
 package js.cssAnimations;
+
 typedef AnimationEventInit = js.dom.EventInit & {
 	@:optional
 	var animationName : CSSOMString;

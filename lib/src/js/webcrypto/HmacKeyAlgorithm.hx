@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcrypto.idl. Do not edit!
 
 package js.webcrypto;
+
 typedef HmacKeyAlgorithm = js.webcrypto.KeyAlgorithm & {
 	var hash : js.webcrypto.KeyAlgorithm;
 	var length : unsigned long;

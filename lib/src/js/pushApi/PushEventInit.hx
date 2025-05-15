@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/push-api.idl. Do not edit!
 
 package js.pushApi;
+
 typedef PushEventInit = js.serviceWorkers.ExtendableEventInit & {
 	@:optional
 	var data : PushMessageDataInit;

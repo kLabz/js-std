@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webauthn.idl. Do not edit!
 
 package js.webauthn;
+
 enum abstract AuthenticatorAttachment(String) {
 	var PLATFORM = "platform";
 	var CROSS_PLATFORM = "cross-platform";

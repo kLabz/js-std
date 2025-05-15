@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/login-status.idl. Do not edit!
 
 package js.loginStatus;
+
 enum abstract LoginStatus(String) {
 	var LOGGED_IN = "logged-in";
 	var LOGGED_OUT = "logged-out";

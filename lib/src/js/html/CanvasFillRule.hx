@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
+
 enum abstract CanvasFillRule(String) {
 	var NONZERO = "nonzero";
 	var EVENODD = "evenodd";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/serial.idl. Do not edit!
 
 package js.serial;
+
 typedef SerialInputSignals = {
 	var dataCarrierDetect : boolean;
 	var clearToSend : boolean;

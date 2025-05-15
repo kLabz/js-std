@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/turtledove.idl. Do not edit!
 
 package js.turtledove;
+
 typedef PAExtendedHistogramContribution = {
 	var bucket : [object Object],[object Object];
 	var value : [object Object],[object Object];

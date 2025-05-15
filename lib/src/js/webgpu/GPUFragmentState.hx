@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 typedef GPUFragmentState = js.webgpu.GPUProgrammableStage & {
 	var targets : [object Object];
 };

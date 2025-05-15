@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webusb.idl. Do not edit!
 
 package js.webusb;
+
 enum abstract USBEndpointType(String) {
 	var BULK = "bulk";
 	var INTERRUPT = "interrupt";

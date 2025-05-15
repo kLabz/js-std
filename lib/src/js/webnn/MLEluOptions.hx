@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webnn.idl. Do not edit!
 
 package js.webnn;
+
 typedef MLEluOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var alpha : double;

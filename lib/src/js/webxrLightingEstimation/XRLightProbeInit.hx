@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr-lighting-estimation.idl. Do not edit!
 
 package js.webxrLightingEstimation;
+
 typedef XRLightProbeInit = {
 	@:optional
 	var reflectionFormat : js.webxrLightingEstimation.XRReflectionFormat;

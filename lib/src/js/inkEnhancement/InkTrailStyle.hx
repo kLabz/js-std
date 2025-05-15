@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/ink-enhancement.idl. Do not edit!
 
 package js.inkEnhancement;
+
 typedef InkTrailStyle = {
 	var color : DOMString;
 	var diameter : unrestricted double;

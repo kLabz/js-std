@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/IndexedDB.idl. Do not edit!
 
 package js.indexeddb;
+
 enum abstract IDBRequestReadyState(String) {
 	var PENDING = "pending";
 	var DONE = "done";

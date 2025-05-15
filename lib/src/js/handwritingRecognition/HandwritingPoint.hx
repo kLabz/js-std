@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/handwriting-recognition.idl. Do not edit!
 
 package js.handwritingRecognition;
+
 typedef HandwritingPoint = {
 	var x : double;
 	var y : double;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/resize-observer.idl. Do not edit!
 
 package js.resizeObserver;
+
 typedef ResizeObserverOptions = {
 	@:optional
 	var box : js.resizeObserver.ResizeObserverBoxOptions;

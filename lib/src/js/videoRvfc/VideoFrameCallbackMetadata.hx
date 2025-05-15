@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/video-rvfc.idl. Do not edit!
 
 package js.videoRvfc;
+
 typedef VideoFrameCallbackMetadata = {
 	var presentationTime : DOMHighResTimeStamp;
 	var expectedDisplayTime : DOMHighResTimeStamp;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
+
 enum abstract AudioContextLatencyCategory(String) {
 	var BALANCED = "balanced";
 	var INTERACTIVE = "interactive";

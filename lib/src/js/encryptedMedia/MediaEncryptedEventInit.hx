@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/encrypted-media.idl. Do not edit!
 
 package js.encryptedMedia;
+
 typedef MediaEncryptedEventInit = js.dom.EventInit & {
 	@:optional
 	var initDataType : DOMString;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/media-source.idl. Do not edit!
 
 package js.mediaSource;
+
 typedef BufferedChangeEventInit = js.dom.EventInit & {
 	@:optional
 	var addedRanges : TimeRanges;

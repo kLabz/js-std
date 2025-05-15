@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-nav.idl. Do not edit!
 
 package js.cssNav;
+
 typedef NavigationEventInit = js.uievents.UIEventInit & {
 	@:optional
 	var dir : js.cssNav.SpatialNavigationDirection;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr-depth-sensing.idl. Do not edit!
 
 package js.webxrDepthSensing;
+
 enum abstract XRDepthType(String) {
 	var RAW = "raw";
 	var SMOOTH = "smooth";

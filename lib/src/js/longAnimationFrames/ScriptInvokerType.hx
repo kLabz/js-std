@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/long-animation-frames.idl. Do not edit!
 
 package js.longAnimationFrames;
+
 enum abstract ScriptInvokerType(String) {
 	var CLASSIC_SCRIPT = "classic-script";
 	var MODULE_SCRIPT = "module-script";

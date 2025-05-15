@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/touch-events.idl. Do not edit!
 
 package js.touchEvents;
+
 typedef TouchInit = {
 	var identifier : long;
 	var target : EventTarget;

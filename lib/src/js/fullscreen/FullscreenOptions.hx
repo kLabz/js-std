@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fullscreen.idl. Do not edit!
 
 package js.fullscreen;
+
 typedef FullscreenOptions = {
 	@:optional
 	var navigationUI : js.fullscreen.FullscreenNavigationUI;

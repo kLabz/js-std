@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/storage.idl. Do not edit!
 
 package js.storage;
+
 typedef StorageEstimate = {
 	@:optional
 	var usage : unsigned long long;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fetch.idl. Do not edit!
 
 package js.fetch;
+
 enum abstract ResponseType(String) {
 	var BASIC = "basic";
 	var CORS = "cors";

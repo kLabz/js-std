@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
+
 typedef ChannelSplitterOptions = js.webaudio.AudioNodeOptions & {
 	@:optional
 	var numberOfOutputs : unsigned long;

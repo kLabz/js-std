@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
+
 enum abstract ImageOrientation(String) {
 	var FROM_IMAGE = "from-image";
 	var FLIPY = "flipY";

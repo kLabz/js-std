@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webnn.idl. Do not edit!
 
 package js.webnn;
+
 enum abstract MLConvTranspose2dFilterOperandLayout(String) {
 	var IOHW = "iohw";
 	var HWOI = "hwoi";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
+
 typedef RTCRtpCapabilities = {
 	var codecs : [object Object];
 	var headerExtensions : [object Object];

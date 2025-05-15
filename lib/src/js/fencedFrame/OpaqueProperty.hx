@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fenced-frame.idl. Do not edit!
 
 package js.fencedFrame;
+
 enum abstract OpaqueProperty(String) {
 	var OPAQUE = "opaque";
 }

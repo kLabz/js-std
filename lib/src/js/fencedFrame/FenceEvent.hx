@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fenced-frame.idl. Do not edit!
 
 package js.fencedFrame;
+
 typedef FenceEvent = {
 	@:optional
 	var eventType : DOMString;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediasession.idl. Do not edit!
 
 package js.mediasession;
+
 enum abstract MediaSessionAction(String) {
 	var PLAY = "play";
 	var PAUSE = "pause";

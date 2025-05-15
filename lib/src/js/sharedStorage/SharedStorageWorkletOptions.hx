@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/shared-storage.idl. Do not edit!
 
 package js.sharedStorage;
+
 typedef SharedStorageWorkletOptions = js.html.WorkletOptions & {
 	@:optional
 	var dataOrigin : USVString;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/intersection-observer.idl. Do not edit!
 
 package js.intersectionObserver;
+
 typedef IntersectionObserverInit = {
 	@:optional
 	var root : [object Object],[object Object];

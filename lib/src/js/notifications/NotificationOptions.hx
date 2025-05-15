@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/notifications.idl. Do not edit!
 
 package js.notifications;
+
 typedef NotificationOptions = {
 	@:optional
 	var dir : js.notifications.NotificationDirection;

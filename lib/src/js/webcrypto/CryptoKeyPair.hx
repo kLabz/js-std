@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcrypto.idl. Do not edit!
 
 package js.webcrypto;
+
 typedef CryptoKeyPair = {
 	@:optional
 	var publicKey : CryptoKey;

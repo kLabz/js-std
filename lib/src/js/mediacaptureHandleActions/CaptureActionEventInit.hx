@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediacapture-handle-actions.idl. Do not edit!
 
 package js.mediacaptureHandleActions;
+
 typedef CaptureActionEventInit = js.dom.EventInit & {
 	@:optional
 	var action : DOMString;

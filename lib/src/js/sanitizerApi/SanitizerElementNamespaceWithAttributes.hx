@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/sanitizer-api.idl. Do not edit!
 
 package js.sanitizerApi;
+
 typedef SanitizerElementNamespaceWithAttributes = js.sanitizerApi.SanitizerElementNamespace & {
 	@:optional
 	var attributes : [object Object];

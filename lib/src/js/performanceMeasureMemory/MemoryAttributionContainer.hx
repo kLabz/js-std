@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/performance-measure-memory.idl. Do not edit!
 
 package js.performanceMeasureMemory;
+
 typedef MemoryAttributionContainer = {
 	@:optional
 	var id : DOMString;

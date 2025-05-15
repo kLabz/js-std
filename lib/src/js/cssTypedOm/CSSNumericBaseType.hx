@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-typed-om.idl. Do not edit!
 
 package js.cssTypedOm;
+
 enum abstract CSSNumericBaseType(String) {
 	var LENGTH = "length";
 	var ANGLE = "angle";

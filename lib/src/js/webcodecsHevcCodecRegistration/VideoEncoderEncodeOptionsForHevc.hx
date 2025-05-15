@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs-hevc-codec-registration.idl. Do not edit!
 
 package js.webcodecsHevcCodecRegistration;
+
 typedef VideoEncoderEncodeOptionsForHevc = {
 	@:optional
 	var quantizer : unsigned short;

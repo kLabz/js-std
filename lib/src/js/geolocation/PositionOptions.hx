@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/geolocation.idl. Do not edit!
 
 package js.geolocation;
+
 typedef PositionOptions = {
 	@:optional
 	var enableHighAccuracy : boolean;

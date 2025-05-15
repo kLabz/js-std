@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/payment-request.idl. Do not edit!
 
 package js.paymentRequest;
+
 enum abstract PaymentComplete(String) {
 	var FAIL = "fail";
 	var SUCCESS = "success";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webhid.idl. Do not edit!
 
 package js.webhid;
+
 typedef HIDCollectionInfo = {
 	@:optional
 	var usagePage : unsigned short;

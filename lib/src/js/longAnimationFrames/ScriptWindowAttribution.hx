@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/long-animation-frames.idl. Do not edit!
 
 package js.longAnimationFrames;
+
 enum abstract ScriptWindowAttribution(String) {
 	var SELF = "self";
 	var DESCENDANT = "descendant";

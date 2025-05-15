@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/input-device-capabilities.idl. Do not edit!
 
 package js.inputDeviceCapabilities;
+
 typedef InputDeviceCapabilitiesInit = {
 	@:optional
 	var firesTouchEvents : boolean;

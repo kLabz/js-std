@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
+
 enum abstract DocumentReadyState(String) {
 	var LOADING = "loading";
 	var INTERACTIVE = "interactive";

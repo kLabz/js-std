@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr.idl. Do not edit!
 
 package js.webxr;
+
 typedef XRRenderStateInit = {
 	@:optional
 	var depthNear : double;

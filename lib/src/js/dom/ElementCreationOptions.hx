@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/dom.idl. Do not edit!
 
 package js.dom;
+
 typedef ElementCreationOptions = {
 	@:optional
 	var customElementRegistry : CustomElementRegistry;

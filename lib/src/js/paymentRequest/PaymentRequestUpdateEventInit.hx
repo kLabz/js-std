@@ -23,5 +23,6 @@
 // This file is generated from @webref/idl/payment-request.idl. Do not edit!
 
 package js.paymentRequest;
+
 typedef PaymentRequestUpdateEventInit = js.dom.EventInit & {
 };

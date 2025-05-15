@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/screen-capture.idl. Do not edit!
 
 package js.screenCapture;
+
 typedef DisplayMediaStreamOptions = {
 	@:optional
 	var video : [object Object],[object Object];

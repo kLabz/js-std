@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-encoded-transform.idl. Do not edit!
 
 package js.webrtcEncodedTransform;
+
 enum abstract SFrameTransformRole(String) {
 	var ENCRYPT = "encrypt";
 	var DECRYPT = "decrypt";

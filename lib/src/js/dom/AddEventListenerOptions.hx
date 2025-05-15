@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/dom.idl. Do not edit!
 
 package js.dom;
+
 typedef AddEventListenerOptions = js.dom.EventListenerOptions & {
 	@:optional
 	var passive : boolean;

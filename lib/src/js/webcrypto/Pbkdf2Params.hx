@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcrypto.idl. Do not edit!
 
 package js.webcrypto;
+
 typedef Pbkdf2Params = js.webcrypto.Algorithm & {
 	var salt : BufferSource;
 	var iterations : unsigned long;

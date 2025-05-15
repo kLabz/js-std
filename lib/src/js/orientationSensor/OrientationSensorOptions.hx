@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/orientation-sensor.idl. Do not edit!
 
 package js.orientationSensor;
+
 typedef OrientationSensorOptions = js.genericSensor.SensorOptions & {
 	@:optional
 	var referenceFrame : js.orientationSensor.OrientationSensorLocalCoordinateSystem;

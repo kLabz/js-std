@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/trusted-types.idl. Do not edit!
 
 package js.trustedTypes;
+
 typedef TrustedTypePolicyOptions = {
 	@:optional
 	var createHTML : CreateHTMLCallback;

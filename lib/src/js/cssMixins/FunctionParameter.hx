@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-mixins.idl. Do not edit!
 
 package js.cssMixins;
+
 typedef FunctionParameter = {
 	var name : CSSOMString;
 	var type : CSSOMString;

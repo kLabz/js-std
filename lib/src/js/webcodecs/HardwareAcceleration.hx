@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs.idl. Do not edit!
 
 package js.webcodecs;
+
 enum abstract HardwareAcceleration(String) {
 	var NO_PREFERENCE = "no-preference";
 	var PREFER_HARDWARE = "prefer-hardware";

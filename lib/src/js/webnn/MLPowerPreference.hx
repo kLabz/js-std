@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webnn.idl. Do not edit!
 
 package js.webnn;
+
 enum abstract MLPowerPreference(String) {
 	var DEFAULT = "default";
 	var HIGH_PERFORMANCE = "high-performance";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/content-index.idl. Do not edit!
 
 package js.contentIndex;
+
 typedef ContentDescription = {
 	var id : DOMString;
 	var title : DOMString;

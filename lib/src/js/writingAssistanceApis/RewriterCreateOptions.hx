@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/writing-assistance-apis.idl. Do not edit!
 
 package js.writingAssistanceApis;
+
 typedef RewriterCreateOptions = js.writingAssistanceApis.RewriterCreateCoreOptions & {
 	@:optional
 	var signal : AbortSignal;

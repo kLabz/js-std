@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/IndexedDB.idl. Do not edit!
 
 package js.indexeddb;
+
 enum abstract IDBTransactionMode(String) {
 	var READONLY = "readonly";
 	var READWRITE = "readwrite";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/magnetometer.idl. Do not edit!
 
 package js.magnetometer;
+
 enum abstract MagnetometerLocalCoordinateSystem(String) {
 	var DEVICE = "device";
 	var SCREEN = "screen";

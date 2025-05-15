@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-parser-api.idl. Do not edit!
 
 package js.cssParserApi;
+
 typedef CSSParserOptions = {
 	@:optional
 	var atRules : object;

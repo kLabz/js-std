@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/captured-mouse-events.idl. Do not edit!
 
 package js.capturedMouseEvents;
+
 typedef CapturedMouseEventInit = js.dom.EventInit & {
 	@:optional
 	var surfaceX : long;

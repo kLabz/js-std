@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediasession.idl. Do not edit!
 
 package js.mediasession;
+
 typedef MediaMetadataInit = {
 	@:optional
 	var title : DOMString;

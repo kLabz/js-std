@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/gamepad.idl. Do not edit!
 
 package js.gamepad;
+
 enum abstract GamepadHapticEffectType(String) {
 	var DUAL_RUMBLE = "dual-rumble";
 	var TRIGGER_RUMBLE = "trigger-rumble";

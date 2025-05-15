@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fullscreen.idl. Do not edit!
 
 package js.fullscreen;
+
 enum abstract FullscreenNavigationUI(String) {
 	var AUTO = "auto";
 	var SHOW = "show";

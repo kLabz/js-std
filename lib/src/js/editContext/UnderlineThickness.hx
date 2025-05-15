@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/edit-context.idl. Do not edit!
 
 package js.editContext;
+
 enum abstract UnderlineThickness(String) {
 	var NONE = "none";
 	var THIN = "thin";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/CSP.idl. Do not edit!
 
 package js.csp;
+
 enum abstract SecurityPolicyViolationEventDisposition(String) {
 	var ENFORCE = "enforce";
 	var REPORT = "report";

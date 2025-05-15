@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 enum abstract GPUPipelineErrorReason(String) {
 	var VALIDATION = "validation";
 	var INTERNAL = "internal";

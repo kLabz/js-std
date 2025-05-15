@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
+
 enum abstract CanvasFontVariantCaps(String) {
 	var NORMAL = "normal";
 	var SMALL_CAPS = "small-caps";

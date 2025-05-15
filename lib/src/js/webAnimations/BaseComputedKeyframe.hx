@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-animations.idl. Do not edit!
 
 package js.webAnimations;
+
 typedef BaseComputedKeyframe = {
 	@:optional
 	var offset : double;

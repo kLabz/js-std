@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/presentation-api.idl. Do not edit!
 
 package js.presentationApi;
+
 typedef PresentationConnectionAvailableEventInit = js.dom.EventInit & {
 	var connection : PresentationConnection;
 };

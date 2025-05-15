@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr-ar-module.idl. Do not edit!
 
 package js.webxrArModule;
+
 enum abstract XREnvironmentBlendMode(String) {
 	var OPAQUE = "opaque";
 	var ALPHA_BLEND = "alpha-blend";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 enum abstract GPUTextureAspect(String) {
 	var ALL = "all";
 	var STENCIL_ONLY = "stencil-only";

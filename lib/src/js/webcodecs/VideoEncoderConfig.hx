@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs.idl. Do not edit!
 
 package js.webcodecs;
+
 typedef VideoEncoderConfig = {
 	var codec : DOMString;
 	var width : unsigned long;
@@ -48,7 +49,7 @@ typedef VideoEncoderConfig = {
 	@:optional
 	var contentHint : DOMString;
 	@:optional
-	var avc : js.webcodecsAvcCodecRegistration.AvcEncoderConfig;
-	@:optional
 	var hevc : js.webcodecsHevcCodecRegistration.HevcEncoderConfig;
+	@:optional
+	var avc : js.webcodecsAvcCodecRegistration.AvcEncoderConfig;
 };

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/screen-capture.idl. Do not edit!
 
 package js.screenCapture;
+
 enum abstract CaptureStartFocusBehavior(String) {
 	var FOCUS_CAPTURING_APPLICATION = "focus-capturing-application";
 	var FOCUS_CAPTURED_SURFACE = "focus-captured-surface";

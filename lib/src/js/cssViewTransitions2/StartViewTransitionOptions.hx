@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-view-transitions-2.idl. Do not edit!
 
 package js.cssViewTransitions2;
+
 typedef StartViewTransitionOptions = {
 	@:optional
 	var update : ViewTransitionUpdateCallback;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/portals.idl. Do not edit!
 
 package js.portals;
+
 typedef PortalActivateOptions = js.html.StructuredSerializeOptions & {
 	@:optional
 	var data : any;

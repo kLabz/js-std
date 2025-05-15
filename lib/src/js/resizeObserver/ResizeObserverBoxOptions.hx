@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/resize-observer.idl. Do not edit!
 
 package js.resizeObserver;
+
 enum abstract ResizeObserverBoxOptions(String) {
 	var BORDER_BOX = "border-box";
 	var CONTENT_BOX = "content-box";

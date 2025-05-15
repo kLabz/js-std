@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/geometry.idl. Do not edit!
 
 package js.geometry;
+
 typedef DOMQuadInit = {
 	@:optional
 	var p1 : js.geometry.DOMPointInit;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-font-loading.idl. Do not edit!
 
 package js.cssFontLoading;
+
 enum abstract FontFaceLoadStatus(String) {
 	var UNLOADED = "unloaded";
 	var LOADING = "loading";

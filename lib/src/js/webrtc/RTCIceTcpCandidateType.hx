@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
+
 enum abstract RTCIceTcpCandidateType(String) {
 	var ACTIVE = "active";
 	var PASSIVE = "passive";

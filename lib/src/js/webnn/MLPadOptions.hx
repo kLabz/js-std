@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webnn.idl. Do not edit!
 
 package js.webnn;
+
 typedef MLPadOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var mode : js.webnn.MLPaddingMode;

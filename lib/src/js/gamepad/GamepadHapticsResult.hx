@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/gamepad.idl. Do not edit!
 
 package js.gamepad;
+
 enum abstract GamepadHapticsResult(String) {
 	var COMPLETE = "complete";
 	var PREEMPTED = "preempted";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/payment-request.idl. Do not edit!
 
 package js.paymentRequest;
+
 typedef PaymentShippingOption = {
 	var id : DOMString;
 	var label : DOMString;

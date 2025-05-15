@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 typedef GPUQuerySetDescriptor = js.webgpu.GPUObjectDescriptorBase & {
 	var type : js.webgpu.GPUQueryType;
 	var count : GPUSize32;

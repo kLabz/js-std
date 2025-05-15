@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediacapture-streams.idl. Do not edit!
 
 package js.mediacaptureStreams;
+
 typedef MediaTrackConstraints = js.mediacaptureStreams.MediaTrackConstraintSet & {
 	@:optional
 	var advanced : [object Object];

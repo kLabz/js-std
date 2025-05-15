@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-nfc.idl. Do not edit!
 
 package js.webNfc;
+
 typedef NDEFMessageInit = {
 	var records : [object Object];
 };

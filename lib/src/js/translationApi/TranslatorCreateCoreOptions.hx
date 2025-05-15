@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/translation-api.idl. Do not edit!
 
 package js.translationApi;
+
 typedef TranslatorCreateCoreOptions = {
 	var sourceLanguage : DOMString;
 	var targetLanguage : DOMString;

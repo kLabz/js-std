@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/text-detection-api.idl. Do not edit!
 
 package js.textDetectionApi;
+
 typedef DetectedText = {
 	var boundingBox : DOMRectReadOnly;
 	var rawValue : DOMString;

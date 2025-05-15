@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webhid.idl. Do not edit!
 
 package js.webhid;
+
 enum abstract HIDUnitSystem(String) {
 	var NONE = "none";
 	var SI_LINEAR = "si-linear";

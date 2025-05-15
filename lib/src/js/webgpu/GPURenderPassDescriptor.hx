@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 typedef GPURenderPassDescriptor = js.webgpu.GPUObjectDescriptorBase & {
 	var colorAttachments : [object Object];
 	@:optional

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
+
 typedef RTCPeerConnectionIceErrorEventInit = js.dom.EventInit & {
 	@:optional
 	var address : DOMString;

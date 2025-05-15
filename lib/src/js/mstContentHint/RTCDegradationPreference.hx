@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mst-content-hint.idl. Do not edit!
 
 package js.mstContentHint;
+
 enum abstract RTCDegradationPreference(String) {
 	var MAINTAIN_FRAMERATE = "maintain-framerate";
 	var MAINTAIN_RESOLUTION = "maintain-resolution";

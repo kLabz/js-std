@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr-dom-overlays.idl. Do not edit!
 
 package js.webxrDomOverlays;
+
 enum abstract XRDOMOverlayType(String) {
 	var SCREEN = "screen";
 	var FLOATING = "floating";

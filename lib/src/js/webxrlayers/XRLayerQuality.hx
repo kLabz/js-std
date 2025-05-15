@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxrlayers.idl. Do not edit!
 
 package js.webxrlayers;
+
 enum abstract XRLayerQuality(String) {
 	var DEFAULT = "default";
 	var TEXT_OPTIMIZED = "text-optimized";

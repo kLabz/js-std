@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/netinfo.idl. Do not edit!
 
 package js.netinfo;
+
 enum abstract ConnectionType(String) {
 	var BLUETOOTH = "bluetooth";
 	var CELLULAR = "cellular";

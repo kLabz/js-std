@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/cookie-store.idl. Do not edit!
 
 package js.cookieStore;
+
 enum abstract CookieSameSite(String) {
 	var STRICT = "strict";
 	var LAX = "lax";

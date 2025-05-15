@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/secure-payment-confirmation.idl. Do not edit!
 
 package js.securePaymentConfirmation;
+
 typedef PaymentCredentialInstrument = {
 	var displayName : USVString;
 	var icon : USVString;

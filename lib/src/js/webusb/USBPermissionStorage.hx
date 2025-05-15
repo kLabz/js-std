@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webusb.idl. Do not edit!
 
 package js.webusb;
+
 typedef USBPermissionStorage = {
 	@:optional
 	var allowedDevices : [object Object];

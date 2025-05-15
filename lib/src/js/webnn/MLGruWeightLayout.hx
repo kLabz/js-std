@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webnn.idl. Do not edit!
 
 package js.webnn;
+
 enum abstract MLGruWeightLayout(String) {
 	var ZRN = "zrn";
 	var RZN = "rzn";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
+
 typedef RTCStats = {
 	var timestamp : DOMHighResTimeStamp;
 	var type : js.webrtcStats.RTCStatsType;

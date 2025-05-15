@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxr-ar-module.idl. Do not edit!
 
 package js.webxrArModule;
+
 enum abstract XRInteractionMode(String) {
 	var SCREEN_SPACE = "screen-space";
 	var WORLD_SPACE = "world-space";

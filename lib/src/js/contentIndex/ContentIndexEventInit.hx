@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/content-index.idl. Do not edit!
 
 package js.contentIndex;
+
 typedef ContentIndexEventInit = js.serviceWorkers.ExtendableEventInit & {
 	var id : DOMString;
 };

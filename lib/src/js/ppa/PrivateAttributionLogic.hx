@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/ppa.idl. Do not edit!
 
 package js.ppa;
+
 enum abstract PrivateAttributionLogic(String) {
 	var LAST_TOUCH = "last-touch";
 }

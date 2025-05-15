@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/push-api.idl. Do not edit!
 
 package js.pushApi;
+
 enum abstract PushEncryptionKeyName(String) {
 	var P256DH = "p256dh";
 	var AUTH = "auth";

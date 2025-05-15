@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/pointerlock.idl. Do not edit!
 
 package js.pointerlock;
+
 typedef PointerLockOptions = {
 	@:optional
 	var unadjustedMovement : boolean;

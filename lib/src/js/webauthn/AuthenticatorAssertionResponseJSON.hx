@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webauthn.idl. Do not edit!
 
 package js.webauthn;
+
 typedef AuthenticatorAssertionResponseJSON = {
 	var clientDataJSON : Base64URLString;
 	var authenticatorData : Base64URLString;

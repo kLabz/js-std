@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/requestStorageAccessFor.idl. Do not edit!
 
 package js.requeststorageaccessfor;
+
 typedef TopLevelStorageAccessPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var requestedOrigin : USVString;

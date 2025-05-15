@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
+
 typedef RTCErrorInit = {
 	var errorDetail : js.webrtc.RTCErrorDetailType;
 	@:optional

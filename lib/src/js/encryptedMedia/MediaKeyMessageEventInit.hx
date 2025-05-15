@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/encrypted-media.idl. Do not edit!
 
 package js.encryptedMedia;
+
 typedef MediaKeyMessageEventInit = js.dom.EventInit & {
 	var messageType : js.encryptedMedia.MediaKeyMessageType;
 	var message : ArrayBuffer;

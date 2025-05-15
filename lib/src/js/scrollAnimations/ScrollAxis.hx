@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/scroll-animations.idl. Do not edit!
 
 package js.scrollAnimations;
+
 enum abstract ScrollAxis(String) {
 	var BLOCK = "block";
 	var INLINE = "inline";

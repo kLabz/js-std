@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
+
 typedef RTCRtpHeaderExtensionParameters = {
 	var uri : DOMString;
 	var id : unsigned short;

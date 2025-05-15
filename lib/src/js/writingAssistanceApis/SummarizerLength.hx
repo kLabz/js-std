@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/writing-assistance-apis.idl. Do not edit!
 
 package js.writingAssistanceApis;
+
 enum abstract SummarizerLength(String) {
 	var SHORT = "short";
 	var MEDIUM = "medium";

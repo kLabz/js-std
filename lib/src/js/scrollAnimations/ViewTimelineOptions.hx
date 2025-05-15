@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/scroll-animations.idl. Do not edit!
 
 package js.scrollAnimations;
+
 typedef ViewTimelineOptions = {
 	@:optional
 	var subject : Element;

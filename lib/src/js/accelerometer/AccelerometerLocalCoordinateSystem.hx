@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/accelerometer.idl. Do not edit!
 
 package js.accelerometer;
+
 enum abstract AccelerometerLocalCoordinateSystem(String) {
 	var DEVICE = "device";
 	var SCREEN = "screen";

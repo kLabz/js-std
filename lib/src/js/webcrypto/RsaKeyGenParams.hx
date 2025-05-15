@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcrypto.idl. Do not edit!
 
 package js.webcrypto;
+
 typedef RsaKeyGenParams = js.webcrypto.Algorithm & {
 	var modulusLength : unsigned long;
 	var publicExponent : BigInteger;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
+
 enum abstract CanvasFontStretch(String) {
 	var ULTRA_CONDENSED = "ultra-condensed";
 	var EXTRA_CONDENSED = "extra-condensed";

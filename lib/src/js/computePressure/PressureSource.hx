@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/compute-pressure.idl. Do not edit!
 
 package js.computePressure;
+
 enum abstract PressureSource(String) {
 	var CPU = "cpu";
 }

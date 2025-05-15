@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-encoded-transform.idl. Do not edit!
 
 package js.webrtcEncodedTransform;
+
 typedef RTCEncodedVideoFrameMetadata = {
 	@:optional
 	var frameId : unsigned long long;

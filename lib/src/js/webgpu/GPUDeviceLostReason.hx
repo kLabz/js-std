@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 enum abstract GPUDeviceLostReason(String) {
 	var UNKNOWN = "unknown";
 	var DESTROYED = "destroyed";

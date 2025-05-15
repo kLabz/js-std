@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediacapture-automation.idl. Do not edit!
 
 package js.mediacaptureAutomation;
+
 typedef MockMicrophoneConfiguration = js.mediacaptureAutomation.MockCaptureDeviceConfiguration & {
 	@:optional
 	var defaultSampleRate : unsigned long;

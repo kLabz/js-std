@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/image-capture.idl. Do not edit!
 
 package js.imageCapture;
+
 typedef Point2D = {
 	@:optional
 	var x : double;

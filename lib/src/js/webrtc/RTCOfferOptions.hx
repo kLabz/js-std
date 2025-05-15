@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
+
 typedef RTCOfferOptions = js.webrtc.RTCOfferAnswerOptions & {
 	@:optional
 	var iceRestart : boolean;

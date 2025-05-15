@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs-opus-codec-registration.idl. Do not edit!
 
 package js.webcodecsOpusCodecRegistration;
+
 enum abstract OpusBitstreamFormat(String) {
 	var OPUS = "opus";
 	var OGG = "ogg";

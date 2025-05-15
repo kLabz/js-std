@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs-flac-codec-registration.idl. Do not edit!
 
 package js.webcodecsFlacCodecRegistration;
+
 typedef FlacEncoderConfig = {
 	@:optional
 	var blockSize : unsigned long;

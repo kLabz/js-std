@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webauthn.idl. Do not edit!
 
 package js.webauthn;
+
 typedef PublicKeyCredentialRequestOptionsJSON = {
 	var challenge : Base64URLString;
 	@:optional

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/streams.idl. Do not edit!
 
 package js.streams;
+
 typedef ReadableStreamGetReaderOptions = {
 	@:optional
 	var mode : js.streams.ReadableStreamReaderMode;

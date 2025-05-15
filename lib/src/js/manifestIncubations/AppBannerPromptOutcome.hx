@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/manifest-incubations.idl. Do not edit!
 
 package js.manifestIncubations;
+
 enum abstract AppBannerPromptOutcome(String) {
 	var ACCEPTED = "accepted";
 	var DISMISSED = "dismissed";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
+
 typedef PannerOptions = js.webaudio.AudioNodeOptions & {
 	@:optional
 	var panningModel : js.webaudio.PanningModelType;

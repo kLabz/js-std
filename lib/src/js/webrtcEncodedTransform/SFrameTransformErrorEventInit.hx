@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-encoded-transform.idl. Do not edit!
 
 package js.webrtcEncodedTransform;
+
 typedef SFrameTransformErrorEventInit = js.dom.EventInit & {
 	var errorType : js.webrtcEncodedTransform.SFrameTransformErrorEventType;
 	var frame : any;

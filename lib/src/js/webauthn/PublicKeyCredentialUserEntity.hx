@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webauthn.idl. Do not edit!
 
 package js.webauthn;
+
 typedef PublicKeyCredentialUserEntity = js.webauthn.PublicKeyCredentialEntity & {
 	var id : BufferSource;
 	var displayName : DOMString;

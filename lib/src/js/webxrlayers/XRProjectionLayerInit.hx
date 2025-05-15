@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxrlayers.idl. Do not edit!
 
 package js.webxrlayers;
+
 typedef XRProjectionLayerInit = {
 	@:optional
 	var textureType : js.webxrlayers.XRTextureType;

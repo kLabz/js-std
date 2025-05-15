@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/image-capture.idl. Do not edit!
 
 package js.imageCapture;
+
 enum abstract FillLightMode(String) {
 	var AUTO = "auto";
 	var OFF = "off";

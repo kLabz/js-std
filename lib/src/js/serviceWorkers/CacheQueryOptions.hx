@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/service-workers.idl. Do not edit!
 
 package js.serviceWorkers;
+
 typedef CacheQueryOptions = {
 	@:optional
 	var ignoreSearch : boolean;

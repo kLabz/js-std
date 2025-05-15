@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs.idl. Do not edit!
 
 package js.webcodecs;
+
 enum abstract VideoTransferCharacteristics(String) {
 	var BT709 = "bt709";
 	var SMPTE170M = "smpte170m";

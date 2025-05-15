@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webmidi.idl. Do not edit!
 
 package js.webmidi;
+
 typedef MIDIOptions = {
 	@:optional
 	var sysex : boolean;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/speech-api.idl. Do not edit!
 
 package js.speechApi;
+
 enum abstract AvailabilityStatus(String) {
 	var UNAVAILABLE = "unavailable";
 	var DOWNLOADABLE = "downloadable";

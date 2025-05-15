@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/shape-detection-api.idl. Do not edit!
 
 package js.shapeDetectionApi;
+
 enum abstract BarcodeFormat(String) {
 	var AZTEC = "aztec";
 	var CODE_128 = "code_128";

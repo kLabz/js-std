@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-locks.idl. Do not edit!
 
 package js.webLocks;
+
 typedef LockManagerSnapshot = {
 	@:optional
 	var held : [object Object];

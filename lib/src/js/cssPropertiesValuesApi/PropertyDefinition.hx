@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-properties-values-api.idl. Do not edit!
 
 package js.cssPropertiesValuesApi;
+
 typedef PropertyDefinition = {
 	var name : DOMString;
 	@:optional

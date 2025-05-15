@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
+
 enum abstract RTCIceComponent(String) {
 	var RTP = "rtp";
 	var RTCP = "rtcp";

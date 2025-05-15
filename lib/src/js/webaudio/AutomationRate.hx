@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
+
 enum abstract AutomationRate(String) {
 	var A_RATE = "a-rate";
 	var K_RATE = "k-rate";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/media-capabilities.idl. Do not edit!
 
 package js.mediaCapabilities;
+
 typedef MediaCapabilitiesEncodingInfo = js.mediaCapabilities.MediaCapabilitiesInfo & {
 	@:optional
 	var configuration : js.mediaCapabilities.MediaEncodingConfiguration;

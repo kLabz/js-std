@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/pointerevents.idl. Do not edit!
 
 package js.pointerevents;
+
 typedef PointerEventInit = js.uievents.MouseEventInit & {
 	@:optional
 	var pointerId : long;

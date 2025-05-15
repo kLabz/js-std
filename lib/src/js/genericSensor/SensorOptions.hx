@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/generic-sensor.idl. Do not edit!
 
 package js.genericSensor;
+
 typedef SensorOptions = {
 	@:optional
 	var frequency : double;

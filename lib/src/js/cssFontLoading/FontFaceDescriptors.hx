@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-font-loading.idl. Do not edit!
 
 package js.cssFontLoading;
+
 typedef FontFaceDescriptors = {
 	@:optional
 	var style : CSSOMString;

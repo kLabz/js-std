@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/permissions.idl. Do not edit!
 
 package js.permissions;
+
 enum abstract PermissionState(String) {
 	var GRANTED = "granted";
 	var DENIED = "denied";

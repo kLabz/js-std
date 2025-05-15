@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs-avc-codec-registration.idl. Do not edit!
 
 package js.webcodecsAvcCodecRegistration;
+
 enum abstract AvcBitstreamFormat(String) {
 	var ANNEXB = "annexb";
 	var AVC = "avc";

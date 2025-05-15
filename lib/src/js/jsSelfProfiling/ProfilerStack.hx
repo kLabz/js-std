@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/js-self-profiling.idl. Do not edit!
 
 package js.jsSelfProfiling;
+
 typedef ProfilerStack = {
 	@:optional
 	var parentId : unsigned long long;

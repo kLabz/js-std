@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/cssom.idl. Do not edit!
 
 package js.cssom;
+
 typedef CSSStyleSheetInit = {
 	@:optional
 	var baseURL : DOMString;

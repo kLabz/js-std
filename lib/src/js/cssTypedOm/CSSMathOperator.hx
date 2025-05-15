@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-typed-om.idl. Do not edit!
 
 package js.cssTypedOm;
+
 enum abstract CSSMathOperator(String) {
 	var SUM = "sum";
 	var PRODUCT = "product";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/idle-detection.idl. Do not edit!
 
 package js.idleDetection;
+
 typedef IdleOptions = {
 	@:optional
 	var threshold : unsigned long long;

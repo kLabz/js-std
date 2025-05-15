@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediacapture-streams.idl. Do not edit!
 
 package js.mediacaptureStreams;
+
 enum abstract MediaDeviceKind(String) {
 	var AUDIOINPUT = "audioinput";
 	var AUDIOOUTPUT = "audiooutput";

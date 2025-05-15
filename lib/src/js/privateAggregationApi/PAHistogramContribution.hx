@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/private-aggregation-api.idl. Do not edit!
 
 package js.privateAggregationApi;
+
 typedef PAHistogramContribution = {
 	var bucket : bigint;
 	var value : long;

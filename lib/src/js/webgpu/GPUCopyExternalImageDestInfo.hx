@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 typedef GPUCopyExternalImageDestInfo = js.webgpu.GPUTexelCopyTextureInfo & {
 	@:optional
 	var colorSpace : js.html.PredefinedColorSpace;

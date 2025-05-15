@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/ppa.idl. Do not edit!
 
 package js.ppa;
+
 typedef PrivateAttributionConversionOptions = {
 	var aggregationService : USVString;
 	@:optional

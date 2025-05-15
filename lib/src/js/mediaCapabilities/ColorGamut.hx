@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/media-capabilities.idl. Do not edit!
 
 package js.mediaCapabilities;
+
 enum abstract ColorGamut(String) {
 	var SRGB = "srgb";
 	var P3 = "p3";

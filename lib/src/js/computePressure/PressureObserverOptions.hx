@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/compute-pressure.idl. Do not edit!
 
 package js.computePressure;
+
 typedef PressureObserverOptions = {
 	@:optional
 	var sampleInterval : unsigned long;

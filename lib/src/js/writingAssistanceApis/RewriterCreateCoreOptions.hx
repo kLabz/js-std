@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/writing-assistance-apis.idl. Do not edit!
 
 package js.writingAssistanceApis;
+
 typedef RewriterCreateCoreOptions = {
 	@:optional
 	var tone : js.writingAssistanceApis.RewriterTone;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/intersection-observer.idl. Do not edit!
 
 package js.intersectionObserver;
+
 typedef IntersectionObserverEntryInit = {
 	var time : DOMHighResTimeStamp;
 	var rootBounds : js.geometry.DOMRectInit;

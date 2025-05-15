@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webnn.idl. Do not edit!
 
 package js.webnn;
+
 enum abstract MLLstmWeightLayout(String) {
 	var IOFG = "iofg";
 	var IFGO = "ifgo";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fido.idl. Do not edit!
 
 package js.fido;
+
 typedef HMACGetSecretInput = {
 	var salt1 : ArrayBuffer;
 	@:optional

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/uievents.idl. Do not edit!
 
 package js.uievents;
+
 typedef WheelEventInit = js.uievents.MouseEventInit & {
 	@:optional
 	var deltaX : double;

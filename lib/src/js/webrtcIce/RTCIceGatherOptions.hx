@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-ice.idl. Do not edit!
 
 package js.webrtcIce;
+
 typedef RTCIceGatherOptions = {
 	@:optional
 	var gatherPolicy : js.webrtc.RTCIceTransportPolicy;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/page-lifecycle.idl. Do not edit!
 
 package js.pageLifecycle;
+
 enum abstract ClientLifecycleState(String) {
 	var ACTIVE = "active";
 	var FROZEN = "frozen";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/audio-session.idl. Do not edit!
 
 package js.audioSession;
+
 enum abstract AudioSessionState(String) {
 	var INACTIVE = "inactive";
 	var ACTIVE = "active";

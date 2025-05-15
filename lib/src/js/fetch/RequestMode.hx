@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fetch.idl. Do not edit!
 
 package js.fetch;
+
 enum abstract RequestMode(String) {
 	var NAVIGATE = "navigate";
 	var SAME_ORIGIN = "same-origin";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs.idl. Do not edit!
 
 package js.webcodecs;
+
 enum abstract VideoPixelFormat(String) {
 	var I420 = "I420";
 	var I420P10 = "I420P10";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/audio-output.idl. Do not edit!
 
 package js.audioOutput;
+
 typedef AudioOutputOptions = {
 	@:optional
 	var deviceId : DOMString;

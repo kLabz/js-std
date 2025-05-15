@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/service-workers.idl. Do not edit!
 
 package js.serviceWorkers;
+
 enum abstract ClientType(String) {
 	var WINDOW = "window";
 	var WORKER = "worker";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/document-picture-in-picture.idl. Do not edit!
 
 package js.documentPictureInPicture;
+
 typedef DocumentPictureInPictureEventInit = js.dom.EventInit & {
 	var window : Window;
 };

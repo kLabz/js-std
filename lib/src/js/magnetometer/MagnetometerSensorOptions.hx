@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/magnetometer.idl. Do not edit!
 
 package js.magnetometer;
+
 typedef MagnetometerSensorOptions = js.genericSensor.SensorOptions & {
 	@:optional
 	var referenceFrame : js.magnetometer.MagnetometerLocalCoordinateSystem;

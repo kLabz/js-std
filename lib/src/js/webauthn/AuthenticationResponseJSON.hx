@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webauthn.idl. Do not edit!
 
 package js.webauthn;
+
 typedef AuthenticationResponseJSON = {
 	var id : DOMString;
 	var rawId : Base64URLString;

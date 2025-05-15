@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/writing-assistance-apis.idl. Do not edit!
 
 package js.writingAssistanceApis;
+
 enum abstract RewriterTone(String) {
 	var AS_IS = "as-is";
 	var MORE_FORMAL = "more-formal";

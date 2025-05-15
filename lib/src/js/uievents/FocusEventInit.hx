@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/uievents.idl. Do not edit!
 
 package js.uievents;
+
 typedef FocusEventInit = js.uievents.UIEventInit & {
 	@:optional
 	var relatedTarget : EventTarget;

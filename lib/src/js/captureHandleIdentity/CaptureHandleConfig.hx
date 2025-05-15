@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/capture-handle-identity.idl. Do not edit!
 
 package js.captureHandleIdentity;
+
 typedef CaptureHandleConfig = {
 	@:optional
 	var exposeOrigin : boolean;

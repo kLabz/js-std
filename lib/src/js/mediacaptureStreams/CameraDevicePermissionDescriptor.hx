@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediacapture-streams.idl. Do not edit!
 
 package js.mediacaptureStreams;
+
 typedef CameraDevicePermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var panTiltZoom : boolean;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/svg-paths.idl. Do not edit!
 
 package js.svgPaths;
+
 typedef SVGPathDataSettings = {
 	@:optional
 	var normalize : boolean;

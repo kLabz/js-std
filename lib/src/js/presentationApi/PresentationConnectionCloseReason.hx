@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/presentation-api.idl. Do not edit!
 
 package js.presentationApi;
+
 enum abstract PresentationConnectionCloseReason(String) {
 	var ERROR = "error";
 	var CLOSED = "closed";

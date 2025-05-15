@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-animations.idl. Do not edit!
 
 package js.webAnimations;
+
 typedef KeyframeAnimationOptions = js.webAnimations.KeyframeEffectOptions & {
 	@:optional
 	var id : DOMString;

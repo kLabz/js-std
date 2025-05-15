@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fetch.idl. Do not edit!
 
 package js.fetch;
+
 enum abstract RequestCredentials(String) {
 	var OMIT = "omit";
 	var SAME_ORIGIN = "same-origin";

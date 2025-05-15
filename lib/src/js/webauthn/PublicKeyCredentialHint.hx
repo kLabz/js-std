@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webauthn.idl. Do not edit!
 
 package js.webauthn;
+
 enum abstract PublicKeyCredentialHint(String) {
 	var SECURITY_KEY = "security-key";
 	var CLIENT_DEVICE = "client-device";

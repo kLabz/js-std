@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-stats.idl. Do not edit!
 
 package js.webrtcStats;
+
 typedef RTCReceivedRtpStreamStats = js.webrtcStats.RTCRtpStreamStats & {
 	@:optional
 	var packetsReceived : unsigned long long;

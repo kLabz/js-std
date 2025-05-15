@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs-avc-codec-registration.idl. Do not edit!
 
 package js.webcodecsAvcCodecRegistration;
+
 typedef VideoEncoderEncodeOptionsForAvc = {
 	@:optional
 	var quantizer : unsigned short;

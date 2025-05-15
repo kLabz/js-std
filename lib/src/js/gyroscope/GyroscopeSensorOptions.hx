@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/gyroscope.idl. Do not edit!
 
 package js.gyroscope;
+
 typedef GyroscopeSensorOptions = js.genericSensor.SensorOptions & {
 	@:optional
 	var referenceFrame : js.gyroscope.GyroscopeLocalCoordinateSystem;

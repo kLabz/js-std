@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/html.idl. Do not edit!
 
 package js.html;
+
 enum abstract ImageDataPixelFormat(String) {
 	var RGBA_UNORM8 = "rgba-unorm8";
 	var RGBA_FLOAT16 = "rgba-float16";

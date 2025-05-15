@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-animations.idl. Do not edit!
 
 package js.webAnimations;
+
 typedef ComputedEffectTiming = js.webAnimations.EffectTiming & {
 	@:optional
 	var progress : double;

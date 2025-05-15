@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs.idl. Do not edit!
 
 package js.webcodecs;
+
 enum abstract AudioSampleFormat(String) {
 	var U8 = "u8";
 	var S16 = "s16";

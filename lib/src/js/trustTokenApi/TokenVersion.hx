@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/trust-token-api.idl. Do not edit!
 
 package js.trustTokenApi;
+
 enum abstract TokenVersion(String) {
 	var 1 = "1";
 }

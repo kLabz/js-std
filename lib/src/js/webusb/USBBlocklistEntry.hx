@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webusb.idl. Do not edit!
 
 package js.webusb;
+
 typedef USBBlocklistEntry = {
 	var idVendor : unsigned short;
 	var idProduct : unsigned short;

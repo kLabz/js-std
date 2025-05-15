@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webxrlayers.idl. Do not edit!
 
 package js.webxrlayers;
+
 enum abstract XRTextureType(String) {
 	var TEXTURE = "texture";
 	var TEXTURE_ARRAY = "texture-array";

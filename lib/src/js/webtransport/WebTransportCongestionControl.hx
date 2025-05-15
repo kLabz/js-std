@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webtransport.idl. Do not edit!
 
 package js.webtransport;
+
 enum abstract WebTransportCongestionControl(String) {
 	var DEFAULT = "default";
 	var THROUGHPUT = "throughput";

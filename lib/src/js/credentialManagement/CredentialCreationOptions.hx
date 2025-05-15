@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/credential-management.idl. Do not edit!
 
 package js.credentialManagement;
+
 typedef CredentialCreationOptions = {
 	@:optional
 	var mediation : js.credentialManagement.CredentialMediationRequirement;

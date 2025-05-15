@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/contact-picker.idl. Do not edit!
 
 package js.contactPicker;
+
 typedef ContactsSelectOptions = {
 	@:optional
 	var multiple : boolean;

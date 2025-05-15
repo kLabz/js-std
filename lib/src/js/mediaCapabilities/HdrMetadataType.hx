@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/media-capabilities.idl. Do not edit!
 
 package js.mediaCapabilities;
+
 enum abstract HdrMetadataType(String) {
 	var SMPTEST2086 = "smpteSt2086";
 	var SMPTEST2094_10 = "smpteSt2094-10";

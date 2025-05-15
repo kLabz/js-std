@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/autoplay-detection.idl. Do not edit!
 
 package js.autoplayDetection;
+
 enum abstract AutoplayPolicyMediaType(String) {
 	var MEDIAELEMENT = "mediaelement";
 	var AUDIOCONTEXT = "audiocontext";

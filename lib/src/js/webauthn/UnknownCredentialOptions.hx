@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webauthn.idl. Do not edit!
 
 package js.webauthn;
+
 typedef UnknownCredentialOptions = {
 	var rpId : DOMString;
 	var credentialId : Base64URLString;

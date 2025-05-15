@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 typedef GPUDeviceDescriptor = js.webgpu.GPUObjectDescriptorBase & {
 	@:optional
 	var requiredFeatures : [object Object];

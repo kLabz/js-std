@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/sanitizer-api.idl. Do not edit!
 
 package js.sanitizerApi;
+
 enum abstract SanitizerPresets(String) {
 	var DEFAULT = "default";
 }

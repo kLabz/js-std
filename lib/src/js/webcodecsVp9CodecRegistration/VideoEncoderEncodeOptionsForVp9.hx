@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs-vp9-codec-registration.idl. Do not edit!
 
 package js.webcodecsVp9CodecRegistration;
+
 typedef VideoEncoderEncodeOptionsForVp9 = {
 	@:optional
 	var quantizer : unsigned short;

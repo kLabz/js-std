@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-stats.idl. Do not edit!
 
 package js.webrtcStats;
+
 typedef RTCAudioPlayoutStats = js.webrtc.RTCStats & {
 	var kind : DOMString;
 	@:optional

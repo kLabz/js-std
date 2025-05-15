@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcrypto-secure-curves.idl. Do not edit!
 
 package js.webcryptoSecureCurves;
+
 typedef Ed448Params = js.webcrypto.Algorithm & {
 	@:optional
 	var context : BufferSource;

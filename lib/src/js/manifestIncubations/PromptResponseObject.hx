@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/manifest-incubations.idl. Do not edit!
 
 package js.manifestIncubations;
+
 typedef PromptResponseObject = {
 	@:optional
 	var userChoice : js.manifestIncubations.AppBannerPromptOutcome;

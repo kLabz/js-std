@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/dom.idl. Do not edit!
 
 package js.dom;
+
 typedef CustomEventInit = js.dom.EventInit & {
 	@:optional
 	var detail : any;

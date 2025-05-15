@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/fedcm.idl. Do not edit!
 
 package js.fedcm;
+
 typedef IdentityProviderConfig = {
 	var configURL : USVString;
 	var clientId : USVString;

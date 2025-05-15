@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 enum abstract GPUPrimitiveTopology(String) {
 	var POINT_LIST = "point-list";
 	var LINE_LIST = "line-list";

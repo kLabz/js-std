@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-animations.idl. Do not edit!
 
 package js.webAnimations;
+
 typedef DocumentTimelineOptions = {
 	@:optional
 	var originTime : DOMHighResTimeStamp;

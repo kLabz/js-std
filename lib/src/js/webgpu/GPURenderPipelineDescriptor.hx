@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 typedef GPURenderPipelineDescriptor = js.webgpu.GPUPipelineDescriptorBase & {
 	var vertex : js.webgpu.GPUVertexState;
 	@:optional

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webtransport.idl. Do not edit!
 
 package js.webtransport;
+
 typedef WebTransportCloseInfo = {
 	@:optional
 	var closeCode : unsigned long;

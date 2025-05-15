@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/screen-orientation.idl. Do not edit!
 
 package js.screenOrientation;
+
 enum abstract OrientationType(String) {
 	var PORTRAIT_PRIMARY = "portrait-primary";
 	var PORTRAIT_SECONDARY = "portrait-secondary";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs.idl. Do not edit!
 
 package js.webcodecs;
+
 enum abstract VideoMatrixCoefficients(String) {
 	var RGB = "rgb";
 	var BT709 = "bt709";

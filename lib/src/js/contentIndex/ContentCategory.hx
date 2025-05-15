@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/content-index.idl. Do not edit!
 
 package js.contentIndex;
+
 enum abstract ContentCategory(String) {
 	var NONE = "";
 	var HOMEPAGE = "homepage";

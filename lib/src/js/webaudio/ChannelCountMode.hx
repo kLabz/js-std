@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
+
 enum abstract ChannelCountMode(String) {
 	var MAX = "max";
 	var CLAMPED_MAX = "clamped-max";

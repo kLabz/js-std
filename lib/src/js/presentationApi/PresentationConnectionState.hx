@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/presentation-api.idl. Do not edit!
 
 package js.presentationApi;
+
 enum abstract PresentationConnectionState(String) {
 	var CONNECTING = "connecting";
 	var CONNECTED = "connected";

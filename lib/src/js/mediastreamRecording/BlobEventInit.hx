@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediastream-recording.idl. Do not edit!
 
 package js.mediastreamRecording;
+
 typedef BlobEventInit = js.dom.EventInit & {
 	var data : Blob;
 	@:optional

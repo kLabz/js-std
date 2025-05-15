@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/compression.idl. Do not edit!
 
 package js.compression;
+
 enum abstract CompressionFormat(String) {
 	var DEFLATE = "deflate";
 	var DEFLATE_RAW = "deflate-raw";

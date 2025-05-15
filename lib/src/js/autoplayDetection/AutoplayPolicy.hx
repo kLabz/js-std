@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/autoplay-detection.idl. Do not edit!
 
 package js.autoplayDetection;
+
 enum abstract AutoplayPolicy(String) {
 	var ALLOWED = "allowed";
 	var ALLOWED_MUTED = "allowed-muted";

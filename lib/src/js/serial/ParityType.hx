@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/serial.idl. Do not edit!
 
 package js.serial;
+
 enum abstract ParityType(String) {
 	var NONE = "none";
 	var EVEN = "even";

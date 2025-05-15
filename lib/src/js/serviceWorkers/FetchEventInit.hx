@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/service-workers.idl. Do not edit!
 
 package js.serviceWorkers;
+
 typedef FetchEventInit = js.serviceWorkers.ExtendableEventInit & {
 	var request : Request;
 	@:optional

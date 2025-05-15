@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/image-resource.idl. Do not edit!
 
 package js.imageResource;
+
 typedef ImageResource = {
 	var src : USVString;
 	@:optional

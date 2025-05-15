@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
+
 typedef ChannelMergerOptions = js.webaudio.AudioNodeOptions & {
 	@:optional
 	var numberOfInputs : unsigned long;

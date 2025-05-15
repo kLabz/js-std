@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
+
 enum abstract DistanceModelType(String) {
 	var LINEAR = "linear";
 	var INVERSE = "inverse";

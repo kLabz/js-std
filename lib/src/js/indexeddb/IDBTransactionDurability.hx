@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/IndexedDB.idl. Do not edit!
 
 package js.indexeddb;
+
 enum abstract IDBTransactionDurability(String) {
 	var DEFAULT = "default";
 	var STRICT = "strict";

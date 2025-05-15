@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediacapture-automation.idl. Do not edit!
 
 package js.mediacaptureAutomation;
+
 enum abstract MockCapturePromptResult(String) {
 	var GRANTED = "granted";
 	var DENIED = "denied";

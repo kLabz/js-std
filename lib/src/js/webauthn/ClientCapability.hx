@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webauthn.idl. Do not edit!
 
 package js.webauthn;
+
 enum abstract ClientCapability(String) {
 	var CONDITIONALCREATE = "conditionalCreate";
 	var CONDITIONALGET = "conditionalGet";

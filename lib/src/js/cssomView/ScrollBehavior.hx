@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/cssom-view.idl. Do not edit!
 
 package js.cssomView;
+
 enum abstract ScrollBehavior(String) {
 	var AUTO = "auto";
 	var INSTANT = "instant";

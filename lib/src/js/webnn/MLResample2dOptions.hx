@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webnn.idl. Do not edit!
 
 package js.webnn;
+
 typedef MLResample2dOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var mode : js.webnn.MLInterpolationMode;

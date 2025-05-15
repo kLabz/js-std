@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webusb.idl. Do not edit!
 
 package js.webusb;
+
 enum abstract USBRecipient(String) {
 	var DEVICE = "device";
 	var INTERFACE = "interface";

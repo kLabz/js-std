@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/dom.idl. Do not edit!
 
 package js.dom;
+
 enum abstract ShadowRootMode(String) {
 	var OPEN = "open";
 	var CLOSED = "closed";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/ua-client-hints.idl. Do not edit!
 
 package js.uaClientHints;
+
 typedef UADataValues = {
 	@:optional
 	var architecture : DOMString;

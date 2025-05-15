@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/private-network-access.idl. Do not edit!
 
 package js.privateNetworkAccess;
+
 typedef PrivateNetworkAccessPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var id : DOMString;

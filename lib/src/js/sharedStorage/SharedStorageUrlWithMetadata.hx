@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/shared-storage.idl. Do not edit!
 
 package js.sharedStorage;
+
 typedef SharedStorageUrlWithMetadata = {
 	var url : USVString;
 	@:optional

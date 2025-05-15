@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/netinfo.idl. Do not edit!
 
 package js.netinfo;
+
 enum abstract EffectiveConnectionType(String) {
 	var 2G = "2g";
 	var 3G = "3g";

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/touch-events.idl. Do not edit!
 
 package js.touchEvents;
+
 typedef TouchEventInit = js.uievents.EventModifierInit & {
 	@:optional
 	var touches : [object Object];

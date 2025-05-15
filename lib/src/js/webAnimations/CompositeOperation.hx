@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-animations.idl. Do not edit!
 
 package js.webAnimations;
+
 enum abstract CompositeOperation(String) {
 	var REPLACE = "replace";
 	var ADD = "add";

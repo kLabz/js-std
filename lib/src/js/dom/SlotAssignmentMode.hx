@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/dom.idl. Do not edit!
 
 package js.dom;
+
 enum abstract SlotAssignmentMode(String) {
 	var MANUAL = "manual";
 	var NAMED = "named";

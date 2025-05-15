@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/handwriting-recognition.idl. Do not edit!
 
 package js.handwritingRecognition;
+
 enum abstract HandwritingRecognitionType(String) {
 	var TEXT = "text";
 	var PER_CHARACTER = "per-character";

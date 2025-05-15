@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/local-font-access.idl. Do not edit!
 
 package js.localFontAccess;
+
 typedef QueryOptions = {
 	@:optional
 	var postscriptNames : [object Object];

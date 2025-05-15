@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/encrypted-media.idl. Do not edit!
 
 package js.encryptedMedia;
+
 enum abstract MediaKeyStatus(String) {
 	var USABLE = "usable";
 	var EXPIRED = "expired";

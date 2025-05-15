@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-share.idl. Do not edit!
 
 package js.webShare;
+
 typedef ShareData = {
 	@:optional
 	var files : [object Object];

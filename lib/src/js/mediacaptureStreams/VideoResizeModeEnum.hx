@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediacapture-streams.idl. Do not edit!
 
 package js.mediacaptureStreams;
+
 enum abstract VideoResizeModeEnum(String) {
 	var NONE = "none";
 	var CROP_AND_SCALE = "crop-and-scale";

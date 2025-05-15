@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediasession.idl. Do not edit!
 
 package js.mediasession;
+
 typedef MediaSessionActionDetails = {
 	var action : js.mediasession.MediaSessionAction;
 	@:optional

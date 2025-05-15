@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs-aac-codec-registration.idl. Do not edit!
 
 package js.webcodecsAacCodecRegistration;
+
 typedef AacEncoderConfig = {
 	@:optional
 	var format : js.webcodecsAacCodecRegistration.AacBitstreamFormat;

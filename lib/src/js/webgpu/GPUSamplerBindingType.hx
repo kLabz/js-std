@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgpu.idl. Do not edit!
 
 package js.webgpu;
+
 enum abstract GPUSamplerBindingType(String) {
 	var FILTERING = "filtering";
 	var NON_FILTERING = "non-filtering";

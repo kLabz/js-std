@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/entries-api.idl. Do not edit!
 
 package js.entriesApi;
+
 typedef FileSystemFlags = {
 	@:optional
 	var create : boolean;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webgl1.idl. Do not edit!
 
 package js.webgl1;
+
 typedef WebGLContextAttributes = {
 	@:optional
 	var alpha : boolean;

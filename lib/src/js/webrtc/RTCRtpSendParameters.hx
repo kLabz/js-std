@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
+
 typedef RTCRtpSendParameters = js.webrtc.RTCRtpParameters & {
 	var transactionId : DOMString;
 	var encodings : [object Object];

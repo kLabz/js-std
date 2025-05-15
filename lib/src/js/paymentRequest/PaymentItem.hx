@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/payment-request.idl. Do not edit!
 
 package js.paymentRequest;
+
 typedef PaymentItem = {
 	var label : DOMString;
 	var amount : js.paymentRequest.PaymentCurrencyAmount;

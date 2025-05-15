@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webaudio.idl. Do not edit!
 
 package js.webaudio;
+
 typedef PeriodicWaveOptions = js.webaudio.PeriodicWaveConstraints & {
 	@:optional
 	var real : [object Object];

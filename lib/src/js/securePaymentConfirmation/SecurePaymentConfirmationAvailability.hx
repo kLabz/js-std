@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/secure-payment-confirmation.idl. Do not edit!
 
 package js.securePaymentConfirmation;
+
 enum abstract SecurePaymentConfirmationAvailability(String) {
 	var AVAILABLE = "available";
 	var UNAVAILABLE_UNKNOWN_REASON = "unavailable-unknown-reason";

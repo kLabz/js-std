@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webmidi.idl. Do not edit!
 
 package js.webmidi;
+
 enum abstract MIDIPortConnectionState(String) {
 	var OPEN = "open";
 	var CLOSED = "closed";

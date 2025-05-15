@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/edit-context.idl. Do not edit!
 
 package js.editContext;
+
 typedef EditContextInit = {
 	@:optional
 	var text : DOMString;

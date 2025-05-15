@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/mediacapture-streams.idl. Do not edit!
 
 package js.mediacaptureStreams;
+
 enum abstract VideoFacingModeEnum(String) {
 	var USER = "user";
 	var ENVIRONMENT = "environment";

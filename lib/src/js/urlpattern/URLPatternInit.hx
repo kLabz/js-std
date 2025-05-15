@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/urlpattern.idl. Do not edit!
 
 package js.urlpattern;
+
 typedef URLPatternInit = {
 	@:optional
 	var protocol : USVString;

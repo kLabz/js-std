@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc-identity.idl. Do not edit!
 
 package js.webrtcIdentity;
+
 typedef RTCIdentityProvider = {
 	var generateAssertion : GenerateAssertionCallback;
 	var validateAssertion : ValidateAssertionCallback;

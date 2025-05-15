@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/speech-api.idl. Do not edit!
 
 package js.speechApi;
+
 typedef SpeechRecognitionEventInit = js.dom.EventInit & {
 	@:optional
 	var resultIndex : unsigned long;

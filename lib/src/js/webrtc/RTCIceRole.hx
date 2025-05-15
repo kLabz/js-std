@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webrtc.idl. Do not edit!
 
 package js.webrtc;
+
 enum abstract RTCIceRole(String) {
 	var UNKNOWN = "unknown";
 	var CONTROLLING = "controlling";

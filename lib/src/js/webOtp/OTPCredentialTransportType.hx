@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/web-otp.idl. Do not edit!
 
 package js.webOtp;
+
 enum abstract OTPCredentialTransportType(String) {
 	var SMS = "sms";
 }

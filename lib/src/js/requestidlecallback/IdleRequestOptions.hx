@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/requestidlecallback.idl. Do not edit!
 
 package js.requestidlecallback;
+
 typedef IdleRequestOptions = {
 	@:optional
 	var timeout : unsigned long;

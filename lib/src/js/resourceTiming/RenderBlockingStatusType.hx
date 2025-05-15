@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/resource-timing.idl. Do not edit!
 
 package js.resourceTiming;
+
 enum abstract RenderBlockingStatusType(String) {
 	var BLOCKING = "blocking";
 	var NON_BLOCKING = "non-blocking";

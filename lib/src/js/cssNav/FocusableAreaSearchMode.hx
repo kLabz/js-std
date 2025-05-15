@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/css-nav.idl. Do not edit!
 
 package js.cssNav;
+
 enum abstract FocusableAreaSearchMode(String) {
 	var VISIBLE = "visible";
 	var ALL = "all";

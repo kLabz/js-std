@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/webcodecs-opus-codec-registration.idl. Do not edit!
 
 package js.webcodecsOpusCodecRegistration;
+
 enum abstract OpusSignal(String) {
 	var AUTO = "auto";
 	var MUSIC = "music";

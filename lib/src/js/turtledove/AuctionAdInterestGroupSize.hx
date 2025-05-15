@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/turtledove.idl. Do not edit!
 
 package js.turtledove;
+
 typedef AuctionAdInterestGroupSize = {
 	var width : USVString;
 	var height : USVString;

@@ -23,6 +23,7 @@
 // This file is generated from @webref/idl/clipboard-apis.idl. Do not edit!
 
 package js.clipboardApis;
+
 typedef ClipboardPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var allowWithoutGesture : boolean;

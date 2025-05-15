@@ -1,0 +1,55 @@
+/*
+ * Copyright (C)2005-2025 Haxe Foundation
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ */
+
+// This file is generated from webaudio.idl. Do not edit!
+
+package js.webaudio;
+extern typedef PannerOptions = js.webaudio.AudioNodeOptions & {
+	@:optional
+	var panningModel : js.webaudio.PanningModelType;
+	@:optional
+	var distanceModel : js.webaudio.DistanceModelType;
+	@:optional
+	var positionX : float;
+	@:optional
+	var positionY : float;
+	@:optional
+	var positionZ : float;
+	@:optional
+	var orientationX : float;
+	@:optional
+	var orientationY : float;
+	@:optional
+	var orientationZ : float;
+	@:optional
+	var refDistance : double;
+	@:optional
+	var maxDistance : double;
+	@:optional
+	var rolloffFactor : double;
+	@:optional
+	var coneInnerAngle : double;
+	@:optional
+	var coneOuterAngle : double;
+	@:optional
+	var coneOuterGain : double;
+};

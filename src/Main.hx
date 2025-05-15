@@ -1,5 +1,6 @@
 import haxe.Resource;
 import haxe.io.Path;
+import haxe.macro.Expr.ComplexType;
 import haxe.macro.Expr.Field;
 import haxe.macro.Expr.MetadataEntry;
 import haxe.macro.Expr.TypeDefinition;
@@ -38,6 +39,17 @@ class Main {
 				return [];
 			}
 			return ret;
+		}
+
+		function resolveTypePath(t:String):TypePath {
+			return switch (t) {
+				case "boolean": {pack: [], name: "Bool"};
+				case _: {pack: resolvePackage(t), name: t};
+			};
+		}
+
+		function resolveType(t:String):ComplexType {
+			return TPath(resolveTypePath(t));
 		}
 
 		function handleFile(file:FileHandler, res:Array<IDLRootType>) {
@@ -101,7 +113,7 @@ class Main {
 								({
 									name: m.name, // TODO: sanitize
 									doc: null, // TODO retrieve docs
-									kind: FVar(TPath({pack: resolvePackage(t), name: t}), null /* TODO: m.default_ */),
+									kind: FVar(resolveType(t), null /* TODO: m.default_ */),
 									pos: pos,
 									meta: m.required ? null : [optMeta]
 								}:Field);
@@ -115,7 +127,7 @@ class Main {
 								isExtern: null,
 								kind: TDAlias(t.inheritance == null
 									? TAnonymous(fields)
-									: TExtend([({pack: resolvePackage(t.inheritance), name: t.inheritance}:TypePath)], fields)
+									: TExtend([resolveTypePath(t.inheritance)], fields)
 								),
 								fields: []
 							};

@@ -1,0 +1,10 @@
+{
+  "name": "js-std",
+  "description": "Auto-generated javascript standard library.",
+  "version": "24.4.1",
+  "url": "TODO",
+  "license": "MIT",
+  "tags": [],
+  "classPath": "src",
+  "contributors": ["kLabz"]
+}

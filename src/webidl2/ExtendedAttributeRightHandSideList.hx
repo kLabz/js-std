@@ -1,0 +1,3 @@
+package webidl2;
+
+typedef ExtendedAttributeRightHandSideList = ts.AnyOf4<ExtendedAttributeRightHandSideIdentifierList, ExtendedAttributeRightHandSideStringList, ExtendedAttributeRightHandSideDecimalList, ExtendedAttributeRightHandSideIntegerList>;

@@ -1,0 +1,12 @@
+package webidl2;
+
+@:forward
+abstract IDLTypeDescription(AbstractTypeDescription)
+from FrozenArrayTypeDescription
+from ObservableArrayTypeDescription
+from PromiseTypeDescription
+from RecordTypeDescription
+from SequenceTypeDescription
+from SingleTypeDescription
+from UnionTypeDescription
+{}

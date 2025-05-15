@@ -308,9 +308,8 @@ class Printer {
 	}
 
 	function printExtension(tpl:Array<TypePath>, fields:Array<Field>) {
-		return '{\n$tabs>'
-			+ tpl.map(printTypePath).join(',\n$tabs>')
-			+ ","
+		return tpl.map(printTypePath).join(' & ')
+			+ ' & {'
 			+ (fields.length > 0 ? ('\n$tabs' + fields.map(printField).join(';\n$tabs') + ";\n}") : ("\n}"));
 	}
 

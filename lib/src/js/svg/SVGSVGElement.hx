@@ -38,14 +38,14 @@ extern class SVGSVGElement extends js.svg.SVGGraphicsElement {
 	function createSVGRect():js.geometry.DOMRect;
 	function createSVGTransform():js.svg.SVGTransform;
 	function createSVGTransformFromMatrix(?matrix:js.geometry.DOMMatrix2DInit):js.svg.SVGTransform;
-	function getElementById(elementId:DOMString):js.dom.Element;
-	function suspendRedraw(maxWaitMilliseconds:unsigned long):unsigned long;
-	function unsuspendRedraw(suspendHandleID:unsigned long):Void;
+	function getElementById(elementId:String):js.dom.Element;
+	function suspendRedraw(maxWaitMilliseconds:Int):Int;
+	function unsuspendRedraw(suspendHandleID:Int):Void;
 	function unsuspendRedrawAll():Void;
 	function forceRedraw():Void;
 	function pauseAnimations():Void;
 	function unpauseAnimations():Void;
 	function animationsPaused():Bool;
-	function getCurrentTime():float;
-	function setCurrentTime(seconds:float):Void;
+	function getCurrentTime():Float;
+	function setCurrentTime(seconds:Float):Void;
 }

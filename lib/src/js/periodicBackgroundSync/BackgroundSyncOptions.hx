@@ -26,5 +26,5 @@ package js.periodicBackgroundSync;
 
 typedef BackgroundSyncOptions = {
 	@:optional
-	var minInterval : unsigned long long = 0;
+	var minInterval : Float = 0;
 };

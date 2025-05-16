@@ -25,11 +25,11 @@
 package js.getInstalledRelatedApps;
 
 typedef RelatedApplication = {
-	var platform : USVString;
+	var platform : String;
 	@:optional
-	var url : USVString;
+	var url : String;
 	@:optional
-	var id : DOMString;
+	var id : String;
 	@:optional
-	var version : USVString;
+	var version : String;
 };

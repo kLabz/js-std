@@ -28,17 +28,17 @@ typedef GeolocationSensorReading = {
 	@:optional
 	var timestamp : DOMHighResTimeStamp;
 	@:optional
-	var latitude : double;
+	var latitude : Float;
 	@:optional
-	var longitude : double;
+	var longitude : Float;
 	@:optional
-	var altitude : double;
+	var altitude : Float;
 	@:optional
-	var accuracy : double;
+	var accuracy : Float;
 	@:optional
-	var altitudeAccuracy : double;
+	var altitudeAccuracy : Float;
 	@:optional
-	var heading : double;
+	var heading : Float;
 	@:optional
-	var speed : double;
+	var speed : Float;
 };

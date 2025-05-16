@@ -26,21 +26,21 @@ package js.webcodecs;
 
 typedef VideoFrameInit = {
 	@:optional
-	var duration : unsigned long long;
+	var duration : Float;
 	@:optional
-	var timestamp : long long;
+	var timestamp : Float;
 	@:optional
 	var alpha : js.webcodecs.AlphaOption = "keep";
 	@:optional
 	var visibleRect : js.geometry.DOMRectInit;
 	@:optional
-	var rotation : double = 0;
+	var rotation : Float = 0;
 	@:optional
 	var flip : Bool = false;
 	@:optional
-	var displayWidth : unsigned long;
+	var displayWidth : Int;
 	@:optional
-	var displayHeight : unsigned long;
+	var displayHeight : Int;
 	@:optional
 	var metadata : js.webcodecs.VideoFrameMetadata;
 };

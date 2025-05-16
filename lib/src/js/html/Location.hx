@@ -25,7 +25,7 @@
 package js.html;
 
 extern class Location {
-	function assign(url:USVString):Void;
-	function replace(url:USVString):Void;
+	function assign(url:String):Void;
+	function replace(url:String):Void;
 	function reload():Void;
 }

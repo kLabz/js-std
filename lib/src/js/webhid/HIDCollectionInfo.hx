@@ -30,7 +30,7 @@ typedef HIDCollectionInfo = {
 	@:optional
 	var usage : Int;
 	@:optional
-	var type : octet;
+	var type : Int;
 	@:optional
 	var children : Array<js.webhid.HIDCollectionInfo>;
 	@:optional

@@ -26,7 +26,7 @@ package js.mediacaptureStreams;
 
 typedef ConstrainDOMStringParameters = {
 	@:optional
-	var exact : haxe.extern.EitherType<DOMString, Array<DOMString>>;
+	var exact : haxe.extern.EitherType<String, Array<String>>;
 	@:optional
-	var ideal : haxe.extern.EitherType<DOMString, Array<DOMString>>;
+	var ideal : haxe.extern.EitherType<String, Array<String>>;
 };

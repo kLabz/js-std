@@ -29,5 +29,5 @@ extern class HTMLObjectElement extends js.html.HTMLElement {
 	function getSVGDocument():js.dom.Document;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
-	function setCustomValidity(error:DOMString):Void;
+	function setCustomValidity(error:String):Void;
 }

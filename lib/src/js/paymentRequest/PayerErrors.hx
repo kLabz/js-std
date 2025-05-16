@@ -26,9 +26,9 @@ package js.paymentRequest;
 
 typedef PayerErrors = {
 	@:optional
-	var email : DOMString;
+	var email : String;
 	@:optional
-	var name : DOMString;
+	var name : String;
 	@:optional
-	var phone : DOMString;
+	var phone : String;
 };

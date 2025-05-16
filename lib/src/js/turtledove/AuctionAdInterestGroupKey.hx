@@ -25,6 +25,6 @@
 package js.turtledove;
 
 typedef AuctionAdInterestGroupKey = {
-	var owner : USVString;
-	var name : USVString;
+	var owner : String;
+	var name : String;
 };

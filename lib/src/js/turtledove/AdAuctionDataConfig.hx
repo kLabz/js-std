@@ -26,13 +26,13 @@ package js.turtledove;
 
 typedef AdAuctionDataConfig = {
 	@:optional
-	var seller : USVString;
+	var seller : String;
 	@:optional
-	var coordinatorOrigin : USVString;
+	var coordinatorOrigin : String;
 	@:optional
 	var sellers : Array<js.turtledove.AdAuctionOneSeller>;
 	@:optional
-	var requestSize : unsigned long;
+	var requestSize : Int;
 	@:optional
 	var perBuyerConfig : haxe.DynamicAccess<js.turtledove.AdAuctionDataBuyerConfig>;
 };

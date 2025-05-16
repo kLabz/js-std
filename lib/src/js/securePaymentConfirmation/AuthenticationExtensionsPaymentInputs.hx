@@ -28,13 +28,13 @@ typedef AuthenticationExtensionsPaymentInputs = {
 	@:optional
 	var isPayment : Bool;
 	@:optional
-	var rpId : USVString;
+	var rpId : String;
 	@:optional
-	var topOrigin : USVString;
+	var topOrigin : String;
 	@:optional
-	var payeeName : USVString;
+	var payeeName : String;
 	@:optional
-	var payeeOrigin : USVString;
+	var payeeOrigin : String;
 	@:optional
 	var total : js.paymentRequest.PaymentCurrencyAmount;
 	@:optional

@@ -28,7 +28,7 @@ extern class FileReader extends js.dom.EventTarget {
 	function new():Void;
 	function readAsArrayBuffer(blob:js.fileapi.Blob):Void;
 	function readAsBinaryString(blob:js.fileapi.Blob):Void;
-	function readAsText(blob:js.fileapi.Blob, ?encoding:DOMString):Void;
+	function readAsText(blob:js.fileapi.Blob, ?encoding:String):Void;
 	function readAsDataURL(blob:js.fileapi.Blob):Void;
 	function abort():Void;
 	static inline var EMPTY : Int = 0;

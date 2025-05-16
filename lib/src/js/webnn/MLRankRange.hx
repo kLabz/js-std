@@ -26,7 +26,7 @@ package js.webnn;
 
 typedef MLRankRange = {
 	@:optional
-	var min : unsigned long;
+	var min : Int;
 	@:optional
-	var max : unsigned long;
+	var max : Int;
 };

@@ -25,28 +25,28 @@
 package js.webrtcStats;
 
 typedef RTCIceCandidateStats = js.webrtc.RTCStats & {
-	var transportId : DOMString;
+	var transportId : String;
 	@:optional
-	var address : DOMString;
+	var address : String;
 	@:optional
-	var port : long;
+	var port : Int;
 	@:optional
-	var protocol : DOMString;
+	var protocol : String;
 	var candidateType : js.webrtc.RTCIceCandidateType;
 	@:optional
-	var priority : long;
+	var priority : Int;
 	@:optional
-	var url : DOMString;
+	var url : String;
 	@:optional
 	var relayProtocol : js.webrtc.RTCIceServerTransportProtocol;
 	@:optional
-	var foundation : DOMString;
+	var foundation : String;
 	@:optional
-	var relatedAddress : DOMString;
+	var relatedAddress : String;
 	@:optional
-	var relatedPort : long;
+	var relatedPort : Int;
 	@:optional
-	var usernameFragment : DOMString;
+	var usernameFragment : String;
 	@:optional
 	var tcpType : js.webrtc.RTCIceTcpCandidateType;
 };

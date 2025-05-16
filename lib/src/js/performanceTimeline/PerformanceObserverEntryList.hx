@@ -26,6 +26,6 @@ package js.performanceTimeline;
 
 extern class PerformanceObserverEntryList {
 	function getEntries():PerformanceEntryList;
-	function getEntriesByType(type:DOMString):PerformanceEntryList;
-	function getEntriesByName(name:DOMString, ?type:DOMString):PerformanceEntryList;
+	function getEntriesByType(type:String):PerformanceEntryList;
+	function getEntriesByName(name:String, ?type:String):PerformanceEntryList;
 }

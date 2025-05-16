@@ -26,6 +26,6 @@ package js.fs;
 
 extern class FileSystemWritableFileStream extends js.streams.WritableStream {
 	function write(data:FileSystemWriteChunkType):js.lib.Promise<Void>;
-	function seek(position:unsigned long long):js.lib.Promise<Void>;
-	function truncate(size:unsigned long long):js.lib.Promise<Void>;
+	function seek(position:Float):js.lib.Promise<Void>;
+	function truncate(size:Float):js.lib.Promise<Void>;
 }

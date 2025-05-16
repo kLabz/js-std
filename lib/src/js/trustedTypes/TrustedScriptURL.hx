@@ -26,5 +26,5 @@ package js.trustedTypes;
 
 extern class TrustedScriptURL {
 	function ():Void;
-	function toJSON():USVString;
+	function toJSON():String;
 }

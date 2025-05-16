@@ -25,6 +25,6 @@
 package js.serviceWorkers;
 
 extern class InstallEvent extends js.serviceWorkers.ExtendableEvent {
-	function new(type:DOMString, ?eventInitDict:js.serviceWorkers.ExtendableEventInit):Void;
+	function new(type:String, ?eventInitDict:js.serviceWorkers.ExtendableEventInit):Void;
 	function addRoutes(rules:haxe.extern.EitherType<js.serviceWorkers.RouterRule, Array<js.serviceWorkers.RouterRule>>):js.lib.Promise<Void>;
 }

@@ -25,5 +25,5 @@
 package js.html;
 
 extern class NavigationDestination {
-	function getState():any;
+	function getState():Any;
 }

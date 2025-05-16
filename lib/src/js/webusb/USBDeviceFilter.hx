@@ -30,11 +30,11 @@ typedef USBDeviceFilter = {
 	@:optional
 	var productId : Int;
 	@:optional
-	var classCode : octet;
+	var classCode : Int;
 	@:optional
-	var subclassCode : octet;
+	var subclassCode : Int;
 	@:optional
-	var protocolCode : octet;
+	var protocolCode : Int;
 	@:optional
-	var serialNumber : DOMString;
+	var serialNumber : String;
 };

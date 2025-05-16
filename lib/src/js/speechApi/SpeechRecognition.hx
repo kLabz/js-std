@@ -30,6 +30,6 @@ extern class SpeechRecognition extends js.dom.EventTarget {
 	overload function start(audioTrack:js.mediacaptureStreams.MediaStreamTrack):Void;
 	function stop():Void;
 	function abort():Void;
-	function availableOnDevice(lang:DOMString):js.lib.Promise<js.speechApi.AvailabilityStatus>;
-	function installOnDevice(lang:DOMString):js.lib.Promise<Bool>;
+	function availableOnDevice(lang:String):js.lib.Promise<js.speechApi.AvailabilityStatus>;
+	function installOnDevice(lang:String):js.lib.Promise<Bool>;
 }

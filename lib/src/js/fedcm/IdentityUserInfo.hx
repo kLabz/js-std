@@ -26,11 +26,11 @@ package js.fedcm;
 
 typedef IdentityUserInfo = {
 	@:optional
-	var email : USVString;
+	var email : String;
 	@:optional
-	var name : USVString;
+	var name : String;
 	@:optional
-	var givenName : USVString;
+	var givenName : String;
 	@:optional
-	var picture : USVString;
+	var picture : String;
 };

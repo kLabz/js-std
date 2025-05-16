@@ -26,6 +26,6 @@ package js.privateAggregationApi;
 
 extern class PrivateAggregation {
 	function contributeToHistogram(contribution:js.privateAggregationApi.PAHistogramContribution):Void;
-	function contributeToHistogramOnEvent(event:DOMString, contribution:haxe.DynamicAccess<any>):Void;
+	function contributeToHistogramOnEvent(event:String, contribution:haxe.DynamicAccess<Any>):Void;
 	function enableDebugMode(?options:js.privateAggregationApi.PADebugModeOptions):Void;
 }

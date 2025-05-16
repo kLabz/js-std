@@ -25,9 +25,9 @@
 package js.html;
 
 extern class History {
-	function go(?delta:long):Void;
+	function go(?delta:Int):Void;
 	function back():Void;
 	function forward():Void;
-	function pushState(data:any, unused:DOMString, ?url:USVString):Void;
-	function replaceState(data:any, unused:DOMString, ?url:USVString):Void;
+	function pushState(data:Any, unused:String, ?url:String):Void;
+	function replaceState(data:Any, unused:String, ?url:String):Void;
 }

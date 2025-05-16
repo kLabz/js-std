@@ -25,10 +25,10 @@
 package js.ppa;
 
 typedef PrivateAttributionImpressionOptions = {
-	var histogramIndex : unsigned long;
+	var histogramIndex : Int;
 	@:optional
-	var filterData : unsigned long = 0;
-	var conversionSite : USVString;
+	var filterData : Int = 0;
+	var conversionSite : String;
 	@:optional
-	var lifetimeDays : unsigned long = 30;
+	var lifetimeDays : Int = 30;
 };

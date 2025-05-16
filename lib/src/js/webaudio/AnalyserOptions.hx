@@ -26,11 +26,11 @@ package js.webaudio;
 
 typedef AnalyserOptions = js.webaudio.AudioNodeOptions & {
 	@:optional
-	var fftSize : unsigned long = 2048;
+	var fftSize : Int = 2048;
 	@:optional
-	var maxDecibels : double = -30;
+	var maxDecibels : Float = -30;
 	@:optional
-	var minDecibels : double = -100;
+	var minDecibels : Float = -100;
 	@:optional
-	var smoothingTimeConstant : double = 0.8;
+	var smoothingTimeConstant : Float = 0.8;
 };

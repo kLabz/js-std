@@ -25,11 +25,11 @@
 package js.jsSelfProfiling;
 
 typedef ProfilerFrame = {
-	var name : DOMString;
+	var name : String;
 	@:optional
-	var resourceId : unsigned long long;
+	var resourceId : Float;
 	@:optional
-	var line : unsigned long long;
+	var line : Float;
 	@:optional
-	var column : unsigned long long;
+	var column : Float;
 };

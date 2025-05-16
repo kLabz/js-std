@@ -26,7 +26,7 @@ package js.encoding;
 
 typedef TextEncoderEncodeIntoResult = {
 	@:optional
-	var read : unsigned long long;
+	var read : Float;
 	@:optional
-	var written : unsigned long long;
+	var written : Float;
 };

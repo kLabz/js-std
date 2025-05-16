@@ -25,5 +25,5 @@
 package js.cssTypedOm;
 
 extern class CSSVariableReferenceValue {
-	function new(variable:USVString, ?fallback:js.cssTypedOm.CSSUnparsedValue):Void;
+	function new(variable:String, ?fallback:js.cssTypedOm.CSSUnparsedValue):Void;
 }

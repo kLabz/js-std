@@ -25,5 +25,5 @@
 package js.webxr;
 
 extern class XRReferenceSpaceEvent extends js.dom.Event {
-	function new(type:DOMString, eventInitDict:js.webxr.XRReferenceSpaceEventInit):Void;
+	function new(type:String, eventInitDict:js.webxr.XRReferenceSpaceEventInit):Void;
 }

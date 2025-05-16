@@ -28,6 +28,6 @@ extern class HTMLDialogElement extends js.html.HTMLElement {
 	function new():Void;
 	function show():Void;
 	function showModal():Void;
-	function close(?returnValue:DOMString):Void;
-	function requestClose(?returnValue:DOMString):Void;
+	function close(?returnValue:String):Void;
+	function requestClose(?returnValue:String):Void;
 }

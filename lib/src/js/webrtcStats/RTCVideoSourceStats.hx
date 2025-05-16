@@ -26,11 +26,11 @@ package js.webrtcStats;
 
 typedef RTCVideoSourceStats = js.webrtcStats.RTCMediaSourceStats & {
 	@:optional
-	var width : unsigned long;
+	var width : Int;
 	@:optional
-	var height : unsigned long;
+	var height : Int;
 	@:optional
-	var frames : unsigned long;
+	var frames : Int;
 	@:optional
-	var framesPerSecond : double;
+	var framesPerSecond : Float;
 };

@@ -26,9 +26,9 @@ package js.fencedFrame;
 
 typedef FenceEvent = {
 	@:optional
-	var eventType : DOMString;
+	var eventType : String;
 	@:optional
-	var eventData : DOMString;
+	var eventData : String;
 	@:optional
 	var destination : Array<js.fencedFrame.FenceReportingDestination>;
 	@:optional
@@ -36,5 +36,5 @@ typedef FenceEvent = {
 	@:optional
 	var once : Bool = false;
 	@:optional
-	var destinationURL : USVString;
+	var destinationURL : String;
 };

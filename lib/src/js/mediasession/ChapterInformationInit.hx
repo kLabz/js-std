@@ -26,9 +26,9 @@ package js.mediasession;
 
 typedef ChapterInformationInit = {
 	@:optional
-	var title : DOMString = "";
+	var title : String = "";
 	@:optional
-	var startTime : double = 0;
+	var startTime : Float = 0;
 	@:optional
 	var artwork : Array<js.mediasession.MediaImage> = [];
 };

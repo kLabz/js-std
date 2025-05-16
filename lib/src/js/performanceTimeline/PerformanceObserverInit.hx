@@ -26,9 +26,9 @@ package js.performanceTimeline;
 
 typedef PerformanceObserverInit = {
 	@:optional
-	var entryTypes : Array<DOMString>;
+	var entryTypes : Array<String>;
 	@:optional
-	var type : DOMString;
+	var type : String;
 	@:optional
 	var buffered : Bool;
 	@:optional

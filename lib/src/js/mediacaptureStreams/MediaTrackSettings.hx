@@ -26,21 +26,21 @@ package js.mediacaptureStreams;
 
 typedef MediaTrackSettings = {
 	@:optional
-	var width : unsigned long;
+	var width : Int;
 	@:optional
-	var height : unsigned long;
+	var height : Int;
 	@:optional
-	var aspectRatio : double;
+	var aspectRatio : Float;
 	@:optional
-	var frameRate : double;
+	var frameRate : Float;
 	@:optional
-	var facingMode : DOMString;
+	var facingMode : String;
 	@:optional
-	var resizeMode : DOMString;
+	var resizeMode : String;
 	@:optional
-	var sampleRate : unsigned long;
+	var sampleRate : Int;
 	@:optional
-	var sampleSize : unsigned long;
+	var sampleSize : Int;
 	@:optional
 	var echoCancellation : Bool;
 	@:optional
@@ -48,59 +48,59 @@ typedef MediaTrackSettings = {
 	@:optional
 	var noiseSuppression : Bool;
 	@:optional
-	var latency : double;
+	var latency : Float;
 	@:optional
-	var channelCount : unsigned long;
+	var channelCount : Int;
 	@:optional
-	var deviceId : DOMString;
+	var deviceId : String;
 	@:optional
-	var groupId : DOMString;
+	var groupId : String;
 	@:optional
 	var backgroundBlur : Bool;
 	@:optional
-	var whiteBalanceMode : DOMString;
+	var whiteBalanceMode : String;
 	@:optional
-	var exposureMode : DOMString;
+	var exposureMode : String;
 	@:optional
-	var focusMode : DOMString;
+	var focusMode : String;
 	@:optional
 	var pointsOfInterest : Array<js.imageCapture.Point2D>;
 	@:optional
-	var exposureCompensation : double;
+	var exposureCompensation : Float;
 	@:optional
-	var exposureTime : double;
+	var exposureTime : Float;
 	@:optional
-	var colorTemperature : double;
+	var colorTemperature : Float;
 	@:optional
-	var iso : double;
+	var iso : Float;
 	@:optional
-	var brightness : double;
+	var brightness : Float;
 	@:optional
-	var contrast : double;
+	var contrast : Float;
 	@:optional
-	var saturation : double;
+	var saturation : Float;
 	@:optional
-	var sharpness : double;
+	var sharpness : Float;
 	@:optional
-	var focusDistance : double;
+	var focusDistance : Float;
 	@:optional
-	var pan : double;
+	var pan : Float;
 	@:optional
-	var tilt : double;
+	var tilt : Float;
 	@:optional
-	var zoom : double;
+	var zoom : Float;
 	@:optional
 	var torch : Bool;
 	@:optional
-	var displaySurface : DOMString;
+	var displaySurface : String;
 	@:optional
 	var logicalSurface : Bool;
 	@:optional
-	var cursor : DOMString;
+	var cursor : String;
 	@:optional
 	var restrictOwnAudio : Bool;
 	@:optional
 	var suppressLocalAudioPlayback : Bool;
 	@:optional
-	var screenPixelRatio : double;
+	var screenPixelRatio : Float;
 };

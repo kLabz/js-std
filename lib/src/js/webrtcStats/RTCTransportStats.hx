@@ -26,38 +26,38 @@ package js.webrtcStats;
 
 typedef RTCTransportStats = js.webrtc.RTCStats & {
 	@:optional
-	var packetsSent : unsigned long long;
+	var packetsSent : Float;
 	@:optional
-	var packetsReceived : unsigned long long;
+	var packetsReceived : Float;
 	@:optional
-	var bytesSent : unsigned long long;
+	var bytesSent : Float;
 	@:optional
-	var bytesReceived : unsigned long long;
+	var bytesReceived : Float;
 	@:optional
 	var iceRole : js.webrtc.RTCIceRole;
 	@:optional
-	var iceLocalUsernameFragment : DOMString;
+	var iceLocalUsernameFragment : String;
 	var dtlsState : js.webrtc.RTCDtlsTransportState;
 	@:optional
 	var iceState : js.webrtc.RTCIceTransportState;
 	@:optional
-	var selectedCandidatePairId : DOMString;
+	var selectedCandidatePairId : String;
 	@:optional
-	var localCertificateId : DOMString;
+	var localCertificateId : String;
 	@:optional
-	var remoteCertificateId : DOMString;
+	var remoteCertificateId : String;
 	@:optional
-	var tlsVersion : DOMString;
+	var tlsVersion : String;
 	@:optional
-	var dtlsCipher : DOMString;
+	var dtlsCipher : String;
 	@:optional
 	var dtlsRole : js.webrtcStats.RTCDtlsRole;
 	@:optional
-	var srtpCipher : DOMString;
+	var srtpCipher : String;
 	@:optional
-	var selectedCandidatePairChanges : unsigned long;
+	var selectedCandidatePairChanges : Int;
 	@:optional
-	var ccfbMessagesSent : unsigned long;
+	var ccfbMessagesSent : Int;
 	@:optional
-	var ccfbMessagesReceived : unsigned long;
+	var ccfbMessagesReceived : Int;
 };

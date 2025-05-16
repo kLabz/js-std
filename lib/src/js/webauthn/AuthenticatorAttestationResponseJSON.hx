@@ -27,7 +27,7 @@ package js.webauthn;
 typedef AuthenticatorAttestationResponseJSON = {
 	var clientDataJSON : Base64URLString;
 	var authenticatorData : Base64URLString;
-	var transports : Array<DOMString>;
+	var transports : Array<String>;
 	@:optional
 	var publicKey : Base64URLString;
 	var publicKeyAlgorithm : COSEAlgorithmIdentifier;

@@ -27,5 +27,5 @@ package js.gamepad;
 extern class GamepadHapticActuator {
 	function playEffect(type:js.gamepad.GamepadHapticEffectType, ?params:js.gamepad.GamepadEffectParameters):js.lib.Promise<js.gamepad.GamepadHapticsResult>;
 	function reset():js.lib.Promise<js.gamepad.GamepadHapticsResult>;
-	function pulse(value:double, duration:double):js.lib.Promise<Bool>;
+	function pulse(value:Float, duration:Float):js.lib.Promise<Bool>;
 }

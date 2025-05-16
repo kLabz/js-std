@@ -25,5 +25,5 @@
 package js.speechApi;
 
 extern class SpeechRecognitionPhrase {
-	function new(phrase:DOMString, ?boost:float):Void;
+	function new(phrase:String, ?boost:Float):Void;
 }

@@ -25,8 +25,8 @@
 package js.turtledove;
 
 typedef RealTimeContribution = {
-	var bucket : long;
-	var priorityWeight : double;
+	var bucket : Int;
+	var priorityWeight : Float;
 	@:optional
-	var latencyThreshold : long;
+	var latencyThreshold : Int;
 };

@@ -26,5 +26,5 @@ package js.turtledove;
 
 typedef AuctionReportBuyersConfig = {
 	var bucket : bigint;
-	var scale : double;
+	var scale : Float;
 };

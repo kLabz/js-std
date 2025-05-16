@@ -25,5 +25,5 @@
 package js.cssNav;
 
 extern class NavigationEvent extends js.uievents.UIEvent {
-	function new(type:DOMString, ?eventInitDict:js.cssNav.NavigationEventInit):Void;
+	function new(type:String, ?eventInitDict:js.cssNav.NavigationEventInit):Void;
 }

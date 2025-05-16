@@ -25,8 +25,8 @@
 package js.webBluetooth;
 
 typedef AllowedBluetoothDevice = {
-	var deviceId : DOMString;
+	var deviceId : String;
 	var mayUseGATT : Bool;
-	var allowedServices : haxe.extern.EitherType<DOMString, Array<UUID>>;
+	var allowedServices : haxe.extern.EitherType<String, Array<UUID>>;
 	var allowedManufacturerData : Array<Int>;
 };

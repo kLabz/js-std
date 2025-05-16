@@ -26,5 +26,5 @@ package js.mediacaptureHandleActions;
 
 typedef CaptureActionEventInit = js.dom.EventInit & {
 	@:optional
-	var action : DOMString;
+	var action : String;
 };

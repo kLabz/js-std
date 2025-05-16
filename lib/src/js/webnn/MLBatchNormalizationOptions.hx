@@ -30,7 +30,7 @@ typedef MLBatchNormalizationOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var bias : js.webnn.MLOperand;
 	@:optional
-	var axis : unsigned long = 1;
+	var axis : Int = 1;
 	@:optional
-	var epsilon : double = 1e-5;
+	var epsilon : Float = 1e-5;
 };

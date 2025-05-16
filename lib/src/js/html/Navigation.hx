@@ -27,9 +27,9 @@ package js.html;
 extern class Navigation extends js.dom.EventTarget {
 	function entries():Array<js.html.NavigationHistoryEntry>;
 	function updateCurrentEntry(options:js.html.NavigationUpdateCurrentEntryOptions):Void;
-	function navigate(url:USVString, ?options:js.html.NavigationNavigateOptions):js.html.NavigationResult;
+	function navigate(url:String, ?options:js.html.NavigationNavigateOptions):js.html.NavigationResult;
 	function reload(?options:js.html.NavigationReloadOptions):js.html.NavigationResult;
-	function traverseTo(key:DOMString, ?options:js.html.NavigationOptions):js.html.NavigationResult;
+	function traverseTo(key:String, ?options:js.html.NavigationOptions):js.html.NavigationResult;
 	function back(?options:js.html.NavigationOptions):js.html.NavigationResult;
 	function forward(?options:js.html.NavigationOptions):js.html.NavigationResult;
 }

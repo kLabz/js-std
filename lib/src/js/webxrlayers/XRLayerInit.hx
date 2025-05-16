@@ -31,9 +31,9 @@ typedef XRLayerInit = {
 	@:optional
 	var depthFormat : GLenum;
 	@:optional
-	var mipLevels : unsigned long = 1;
-	var viewPixelWidth : unsigned long;
-	var viewPixelHeight : unsigned long;
+	var mipLevels : Int = 1;
+	var viewPixelWidth : Int;
+	var viewPixelHeight : Int;
 	@:optional
 	var layout : js.webxrlayers.XRLayerLayout = "mono";
 	@:optional

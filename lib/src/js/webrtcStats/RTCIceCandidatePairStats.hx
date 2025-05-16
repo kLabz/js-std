@@ -25,44 +25,44 @@
 package js.webrtcStats;
 
 typedef RTCIceCandidatePairStats = js.webrtc.RTCStats & {
-	var transportId : DOMString;
-	var localCandidateId : DOMString;
-	var remoteCandidateId : DOMString;
+	var transportId : String;
+	var localCandidateId : String;
+	var remoteCandidateId : String;
 	var state : js.webrtcStats.RTCStatsIceCandidatePairState;
 	@:optional
 	var nominated : Bool;
 	@:optional
-	var packetsSent : unsigned long long;
+	var packetsSent : Float;
 	@:optional
-	var packetsReceived : unsigned long long;
+	var packetsReceived : Float;
 	@:optional
-	var bytesSent : unsigned long long;
+	var bytesSent : Float;
 	@:optional
-	var bytesReceived : unsigned long long;
+	var bytesReceived : Float;
 	@:optional
 	var lastPacketSentTimestamp : DOMHighResTimeStamp;
 	@:optional
 	var lastPacketReceivedTimestamp : DOMHighResTimeStamp;
 	@:optional
-	var totalRoundTripTime : double;
+	var totalRoundTripTime : Float;
 	@:optional
-	var currentRoundTripTime : double;
+	var currentRoundTripTime : Float;
 	@:optional
-	var availableOutgoingBitrate : double;
+	var availableOutgoingBitrate : Float;
 	@:optional
-	var availableIncomingBitrate : double;
+	var availableIncomingBitrate : Float;
 	@:optional
-	var requestsReceived : unsigned long long;
+	var requestsReceived : Float;
 	@:optional
-	var requestsSent : unsigned long long;
+	var requestsSent : Float;
 	@:optional
-	var responsesReceived : unsigned long long;
+	var responsesReceived : Float;
 	@:optional
-	var responsesSent : unsigned long long;
+	var responsesSent : Float;
 	@:optional
-	var consentRequestsSent : unsigned long long;
+	var consentRequestsSent : Float;
 	@:optional
-	var packetsDiscardedOnSend : unsigned long;
+	var packetsDiscardedOnSend : Int;
 	@:optional
-	var bytesDiscardedOnSend : unsigned long long;
+	var bytesDiscardedOnSend : Float;
 };

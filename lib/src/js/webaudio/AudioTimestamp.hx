@@ -26,7 +26,7 @@ package js.webaudio;
 
 typedef AudioTimestamp = {
 	@:optional
-	var contextTime : double;
+	var contextTime : Float;
 	@:optional
 	var performanceTime : DOMHighResTimeStamp;
 };

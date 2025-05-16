@@ -25,6 +25,6 @@
 package js.uievents;
 
 extern class CompositionEvent extends js.uievents.UIEvent {
-	function new(type:DOMString, ?eventInitDict:js.uievents.CompositionEventInit):Void;
-	function initCompositionEvent(typeArg:DOMString, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:WindowProxy, ?dataArg:DOMString):Void;
+	function new(type:String, ?eventInitDict:js.uievents.CompositionEventInit):Void;
+	function initCompositionEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:WindowProxy, ?dataArg:String):Void;
 }

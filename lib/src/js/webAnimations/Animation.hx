@@ -30,7 +30,7 @@ extern class Animation extends js.dom.EventTarget {
 	function finish():Void;
 	function play():Void;
 	function pause():Void;
-	function updatePlaybackRate(playbackRate:double):Void;
+	function updatePlaybackRate(playbackRate:Float):Void;
 	function reverse():Void;
 	function persist():Void;
 	function commitStyles():Void;

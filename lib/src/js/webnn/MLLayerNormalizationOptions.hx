@@ -30,7 +30,7 @@ typedef MLLayerNormalizationOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var bias : js.webnn.MLOperand;
 	@:optional
-	var axes : Array<unsigned long>;
+	var axes : Array<Int>;
 	@:optional
-	var epsilon : double = 1e-5;
+	var epsilon : Float = 1e-5;
 };

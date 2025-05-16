@@ -25,7 +25,7 @@
 package js.webgpu;
 
 extern class GPURenderPassEncoder {
-	function setViewport(x:float, y:float, width:float, height:float, minDepth:float, maxDepth:float):Void;
+	function setViewport(x:Float, y:Float, width:Float, height:Float, minDepth:Float, maxDepth:Float):Void;
 	function setScissorRect(x:GPUIntegerCoordinate, y:GPUIntegerCoordinate, width:GPUIntegerCoordinate, height:GPUIntegerCoordinate):Void;
 	function setBlendConstant(color:GPUColor):Void;
 	function setStencilReference(reference:GPUStencilValue):Void;

@@ -25,115 +25,115 @@
 package js.webrtcStats;
 
 typedef RTCInboundRtpStreamStats = js.webrtcStats.RTCReceivedRtpStreamStats & {
-	var trackIdentifier : DOMString;
+	var trackIdentifier : String;
 	@:optional
-	var mid : DOMString;
+	var mid : String;
 	@:optional
-	var remoteId : DOMString;
+	var remoteId : String;
 	@:optional
-	var framesDecoded : unsigned long;
+	var framesDecoded : Int;
 	@:optional
-	var keyFramesDecoded : unsigned long;
+	var keyFramesDecoded : Int;
 	@:optional
-	var framesRendered : unsigned long;
+	var framesRendered : Int;
 	@:optional
-	var framesDropped : unsigned long;
+	var framesDropped : Int;
 	@:optional
-	var frameWidth : unsigned long;
+	var frameWidth : Int;
 	@:optional
-	var frameHeight : unsigned long;
+	var frameHeight : Int;
 	@:optional
-	var framesPerSecond : double;
+	var framesPerSecond : Float;
 	@:optional
-	var qpSum : unsigned long long;
+	var qpSum : Float;
 	@:optional
-	var totalDecodeTime : double;
+	var totalDecodeTime : Float;
 	@:optional
-	var totalInterFrameDelay : double;
+	var totalInterFrameDelay : Float;
 	@:optional
-	var totalSquaredInterFrameDelay : double;
+	var totalSquaredInterFrameDelay : Float;
 	@:optional
-	var pauseCount : unsigned long;
+	var pauseCount : Int;
 	@:optional
-	var totalPausesDuration : double;
+	var totalPausesDuration : Float;
 	@:optional
-	var freezeCount : unsigned long;
+	var freezeCount : Int;
 	@:optional
-	var totalFreezesDuration : double;
+	var totalFreezesDuration : Float;
 	@:optional
 	var lastPacketReceivedTimestamp : DOMHighResTimeStamp;
 	@:optional
-	var headerBytesReceived : unsigned long long;
+	var headerBytesReceived : Float;
 	@:optional
-	var packetsDiscarded : unsigned long long;
+	var packetsDiscarded : Float;
 	@:optional
-	var fecBytesReceived : unsigned long long;
+	var fecBytesReceived : Float;
 	@:optional
-	var fecPacketsReceived : unsigned long long;
+	var fecPacketsReceived : Float;
 	@:optional
-	var fecPacketsDiscarded : unsigned long long;
+	var fecPacketsDiscarded : Float;
 	@:optional
-	var bytesReceived : unsigned long long;
+	var bytesReceived : Float;
 	@:optional
-	var nackCount : unsigned long;
+	var nackCount : Int;
 	@:optional
-	var firCount : unsigned long;
+	var firCount : Int;
 	@:optional
-	var pliCount : unsigned long;
+	var pliCount : Int;
 	@:optional
-	var totalProcessingDelay : double;
+	var totalProcessingDelay : Float;
 	@:optional
 	var estimatedPlayoutTimestamp : DOMHighResTimeStamp;
 	@:optional
-	var jitterBufferDelay : double;
+	var jitterBufferDelay : Float;
 	@:optional
-	var jitterBufferTargetDelay : double;
+	var jitterBufferTargetDelay : Float;
 	@:optional
-	var jitterBufferEmittedCount : unsigned long long;
+	var jitterBufferEmittedCount : Float;
 	@:optional
-	var jitterBufferMinimumDelay : double;
+	var jitterBufferMinimumDelay : Float;
 	@:optional
-	var totalSamplesReceived : unsigned long long;
+	var totalSamplesReceived : Float;
 	@:optional
-	var concealedSamples : unsigned long long;
+	var concealedSamples : Float;
 	@:optional
-	var silentConcealedSamples : unsigned long long;
+	var silentConcealedSamples : Float;
 	@:optional
-	var concealmentEvents : unsigned long long;
+	var concealmentEvents : Float;
 	@:optional
-	var insertedSamplesForDeceleration : unsigned long long;
+	var insertedSamplesForDeceleration : Float;
 	@:optional
-	var removedSamplesForAcceleration : unsigned long long;
+	var removedSamplesForAcceleration : Float;
 	@:optional
-	var audioLevel : double;
+	var audioLevel : Float;
 	@:optional
-	var totalAudioEnergy : double;
+	var totalAudioEnergy : Float;
 	@:optional
-	var totalSamplesDuration : double;
+	var totalSamplesDuration : Float;
 	@:optional
-	var framesReceived : unsigned long;
+	var framesReceived : Int;
 	@:optional
-	var decoderImplementation : DOMString;
+	var decoderImplementation : String;
 	@:optional
-	var playoutId : DOMString;
+	var playoutId : String;
 	@:optional
 	var powerEfficientDecoder : Bool;
 	@:optional
-	var framesAssembledFromMultiplePackets : unsigned long;
+	var framesAssembledFromMultiplePackets : Int;
 	@:optional
-	var totalAssemblyTime : double;
+	var totalAssemblyTime : Float;
 	@:optional
-	var retransmittedPacketsReceived : unsigned long long;
+	var retransmittedPacketsReceived : Float;
 	@:optional
-	var retransmittedBytesReceived : unsigned long long;
+	var retransmittedBytesReceived : Float;
 	@:optional
-	var rtxSsrc : unsigned long;
+	var rtxSsrc : Int;
 	@:optional
-	var fecSsrc : unsigned long;
+	var fecSsrc : Int;
 	@:optional
-	var totalCorruptionProbability : double;
+	var totalCorruptionProbability : Float;
 	@:optional
-	var totalSquaredCorruptionProbability : double;
+	var totalSquaredCorruptionProbability : Float;
 	@:optional
-	var corruptionMeasurements : unsigned long long;
+	var corruptionMeasurements : Float;
 };

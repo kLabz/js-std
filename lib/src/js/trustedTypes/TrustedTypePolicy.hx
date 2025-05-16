@@ -25,7 +25,7 @@
 package js.trustedTypes;
 
 extern class TrustedTypePolicy {
-	function createHTML(input:DOMString, arguments:any):js.trustedTypes.TrustedHTML;
-	function createScript(input:DOMString, arguments:any):js.trustedTypes.TrustedScript;
-	function createScriptURL(input:DOMString, arguments:any):js.trustedTypes.TrustedScriptURL;
+	function createHTML(input:String, arguments:Any):js.trustedTypes.TrustedHTML;
+	function createScript(input:String, arguments:Any):js.trustedTypes.TrustedScript;
+	function createScriptURL(input:String, arguments:Any):js.trustedTypes.TrustedScriptURL;
 }

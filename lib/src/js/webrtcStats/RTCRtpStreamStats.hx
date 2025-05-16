@@ -25,10 +25,10 @@
 package js.webrtcStats;
 
 typedef RTCRtpStreamStats = js.webrtc.RTCStats & {
-	var ssrc : unsigned long;
-	var kind : DOMString;
+	var ssrc : Int;
+	var kind : String;
 	@:optional
-	var transportId : DOMString;
+	var transportId : String;
 	@:optional
-	var codecId : DOMString;
+	var codecId : String;
 };

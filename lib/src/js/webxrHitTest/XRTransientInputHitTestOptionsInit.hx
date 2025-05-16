@@ -25,7 +25,7 @@
 package js.webxrHitTest;
 
 typedef XRTransientInputHitTestOptionsInit = {
-	var profile : DOMString;
+	var profile : String;
 	@:optional
 	var entityTypes : Array<js.webxrHitTest.XRHitTestTrackableType>;
 	@:optional

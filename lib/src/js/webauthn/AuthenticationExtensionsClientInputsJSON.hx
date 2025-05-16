@@ -26,9 +26,9 @@ package js.webauthn;
 
 typedef AuthenticationExtensionsClientInputsJSON = {
 	@:optional
-	var appid : DOMString;
+	var appid : String;
 	@:optional
-	var appidExclude : DOMString;
+	var appidExclude : String;
 	@:optional
 	var credProps : Bool;
 	@:optional

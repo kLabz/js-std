@@ -25,8 +25,8 @@
 package js.handwritingRecognition;
 
 typedef HandwritingPoint = {
-	var x : double;
-	var y : double;
+	var x : Float;
+	var y : Float;
 	@:optional
 	var t : DOMHighResTimeStamp;
 };

@@ -25,7 +25,7 @@
 package js.fedcm;
 
 typedef IdentityProviderIcon = {
-	var url : USVString;
+	var url : String;
 	@:optional
-	var size : unsigned long;
+	var size : Int;
 };

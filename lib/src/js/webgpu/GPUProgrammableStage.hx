@@ -27,7 +27,7 @@ package js.webgpu;
 typedef GPUProgrammableStage = {
 	var module : js.webgpu.GPUShaderModule;
 	@:optional
-	var entryPoint : USVString;
+	var entryPoint : String;
 	@:optional
 	var constants : haxe.DynamicAccess<GPUPipelineConstantValue> = {  };
 };

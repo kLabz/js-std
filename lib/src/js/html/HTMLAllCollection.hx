@@ -25,7 +25,7 @@
 package js.html;
 
 extern class HTMLAllCollection {
-	function (index:unsigned long):js.dom.Element;
-	function namedItem(name:DOMString):haxe.extern.EitherType<js.dom.HTMLCollection, js.dom.Element>;
-	function item(?nameOrIndex:DOMString):haxe.extern.EitherType<js.dom.HTMLCollection, js.dom.Element>;
+	function (index:Int):js.dom.Element;
+	function namedItem(name:String):haxe.extern.EitherType<js.dom.HTMLCollection, js.dom.Element>;
+	function item(?nameOrIndex:String):haxe.extern.EitherType<js.dom.HTMLCollection, js.dom.Element>;
 }

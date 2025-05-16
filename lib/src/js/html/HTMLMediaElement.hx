@@ -30,18 +30,18 @@ extern class HTMLMediaElement extends js.html.HTMLElement {
 	static inline var NETWORK_LOADING : Int = 2;
 	static inline var NETWORK_NO_SOURCE : Int = 3;
 	function load():Void;
-	function canPlayType(type:DOMString):js.html.CanPlayTypeResult;
+	function canPlayType(type:String):js.html.CanPlayTypeResult;
 	static inline var HAVE_NOTHING : Int = 0;
 	static inline var HAVE_METADATA : Int = 1;
 	static inline var HAVE_CURRENT_DATA : Int = 2;
 	static inline var HAVE_FUTURE_DATA : Int = 3;
 	static inline var HAVE_ENOUGH_DATA : Int = 4;
-	function fastSeek(time:double):Void;
+	function fastSeek(time:Float):Void;
 	function getStartDate():object;
 	function play():js.lib.Promise<Void>;
 	function pause():Void;
-	function addTextTrack(kind:js.html.TextTrackKind, ?label:DOMString, ?language:DOMString):js.html.TextTrack;
-	function setSinkId(sinkId:DOMString):js.lib.Promise<Void>;
+	function addTextTrack(kind:js.html.TextTrackKind, ?label:String, ?language:String):js.html.TextTrack;
+	function setSinkId(sinkId:String):js.lib.Promise<Void>;
 	function setMediaKeys(mediaKeys:js.encryptedMedia.MediaKeys):js.lib.Promise<Void>;
 	function captureStream():js.mediacaptureStreams.MediaStream;
 }

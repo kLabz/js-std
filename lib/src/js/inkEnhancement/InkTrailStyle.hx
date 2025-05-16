@@ -25,6 +25,6 @@
 package js.inkEnhancement;
 
 typedef InkTrailStyle = {
-	var color : DOMString;
-	var diameter : unrestricted double;
+	var color : String;
+	var diameter : Float;
 };

@@ -26,21 +26,21 @@ package js.turtledove;
 
 typedef StorageInterestGroup = js.turtledove.AuctionAdInterestGroup & {
 	@:optional
-	var joinCount : unsigned long long;
+	var joinCount : Float;
 	@:optional
-	var bidCount : unsigned long long;
+	var bidCount : Float;
 	@:optional
 	var prevWinsMs : Array<PreviousWin>;
 	@:optional
-	var joiningOrigin : USVString;
+	var joiningOrigin : String;
 	@:optional
-	var timeSinceGroupJoinedMs : long long;
+	var timeSinceGroupJoinedMs : Float;
 	@:optional
-	var lifetimeRemainingMs : long long;
+	var lifetimeRemainingMs : Float;
 	@:optional
-	var timeSinceLastUpdateMs : long long;
+	var timeSinceLastUpdateMs : Float;
 	@:optional
-	var timeUntilNextUpdateMs : long long;
+	var timeUntilNextUpdateMs : Float;
 	@:optional
-	var estimatedSize : unsigned long long;
+	var estimatedSize : Float;
 };

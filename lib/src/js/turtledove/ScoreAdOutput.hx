@@ -25,13 +25,13 @@
 package js.turtledove;
 
 typedef ScoreAdOutput = {
-	var desirability : double;
+	var desirability : Float;
 	@:optional
-	var bid : double;
+	var bid : Float;
 	@:optional
-	var bidCurrency : DOMString;
+	var bidCurrency : String;
 	@:optional
-	var incomingBidInSellerCurrency : double;
+	var incomingBidInSellerCurrency : Float;
 	@:optional
 	var allowComponentAuction : Bool = false;
 };

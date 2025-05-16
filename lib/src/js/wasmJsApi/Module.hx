@@ -28,5 +28,5 @@ extern class Module {
 	function new(bytes:BufferSource):Void;
 	function exports(moduleObject:js.wasmJsApi.Module):Array<js.wasmJsApi.ModuleExportDescriptor>;
 	function imports(moduleObject:js.wasmJsApi.Module):Array<js.wasmJsApi.ModuleImportDescriptor>;
-	function customSections(moduleObject:js.wasmJsApi.Module, sectionName:DOMString):Array<ArrayBuffer>;
+	function customSections(moduleObject:js.wasmJsApi.Module, sectionName:String):Array<ArrayBuffer>;
 }

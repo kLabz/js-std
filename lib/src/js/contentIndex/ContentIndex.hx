@@ -26,6 +26,6 @@ package js.contentIndex;
 
 extern class ContentIndex {
 	function add(description:js.contentIndex.ContentDescription):js.lib.Promise<Void>;
-	function delete(id:DOMString):js.lib.Promise<Void>;
+	function delete(id:String):js.lib.Promise<Void>;
 	function getAll():js.lib.Promise<Array<js.contentIndex.ContentDescription>>;
 }

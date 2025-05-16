@@ -25,9 +25,9 @@
 package js.dom;
 
 extern class CharacterData extends js.dom.Node {
-	function substringData(offset:unsigned long, count:unsigned long):DOMString;
-	function appendData(data:DOMString):Void;
-	function insertData(offset:unsigned long, data:DOMString):Void;
-	function deleteData(offset:unsigned long, count:unsigned long):Void;
-	function replaceData(offset:unsigned long, count:unsigned long, data:DOMString):Void;
+	function substringData(offset:Int, count:Int):String;
+	function appendData(data:String):Void;
+	function insertData(offset:Int, data:String):Void;
+	function deleteData(offset:Int, count:Int):Void;
+	function replaceData(offset:Int, count:Int, data:String):Void;
 }

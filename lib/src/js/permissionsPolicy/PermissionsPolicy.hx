@@ -25,8 +25,8 @@
 package js.permissionsPolicy;
 
 extern class PermissionsPolicy {
-	function allowsFeature(feature:DOMString, ?origin:DOMString):Bool;
-	function features():Array<DOMString>;
-	function allowedFeatures():Array<DOMString>;
-	function getAllowlistForFeature(feature:DOMString):Array<DOMString>;
+	function allowsFeature(feature:String, ?origin:String):Bool;
+	function features():Array<String>;
+	function allowedFeatures():Array<String>;
+	function getAllowlistForFeature(feature:String):Array<String>;
 }

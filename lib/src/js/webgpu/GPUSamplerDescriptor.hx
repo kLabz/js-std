@@ -38,9 +38,9 @@ typedef GPUSamplerDescriptor = js.webgpu.GPUObjectDescriptorBase & {
 	@:optional
 	var mipmapFilter : js.webgpu.GPUMipmapFilterMode = "nearest";
 	@:optional
-	var lodMinClamp : float = 0;
+	var lodMinClamp : Float = 0;
 	@:optional
-	var lodMaxClamp : float = 32;
+	var lodMaxClamp : Float = 32;
 	@:optional
 	var compare : js.webgpu.GPUCompareFunction;
 	@:optional

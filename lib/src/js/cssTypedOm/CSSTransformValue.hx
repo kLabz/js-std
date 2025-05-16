@@ -28,7 +28,7 @@ extern class CSSTransformValue extends js.cssTypedOm.CSSStyleValue {
 	function new(transforms:Array<js.cssTypedOm.CSSTransformComponent>):Void;
 	function values():Iterator<js.cssTypedOm.CSSTransformComponent>;
 	function values():Iterator<js.cssTypedOm.CSSTransformComponent>;
-	overload function (index:unsigned long):js.cssTypedOm.CSSTransformComponent;
-	overload function (index:unsigned long, val:js.cssTypedOm.CSSTransformComponent):js.cssTypedOm.CSSTransformComponent;
+	overload function (index:Int):js.cssTypedOm.CSSTransformComponent;
+	overload function (index:Int, val:js.cssTypedOm.CSSTransformComponent):js.cssTypedOm.CSSTransformComponent;
 	function toMatrix():js.geometry.DOMMatrix;
 }

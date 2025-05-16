@@ -26,65 +26,65 @@ package js.webrtcStats;
 
 typedef RTCOutboundRtpStreamStats = js.webrtcStats.RTCSentRtpStreamStats & {
 	@:optional
-	var mid : DOMString;
+	var mid : String;
 	@:optional
-	var mediaSourceId : DOMString;
+	var mediaSourceId : String;
 	@:optional
-	var remoteId : DOMString;
+	var remoteId : String;
 	@:optional
-	var rid : DOMString;
+	var rid : String;
 	@:optional
-	var encodingIndex : unsigned long;
+	var encodingIndex : Int;
 	@:optional
-	var headerBytesSent : unsigned long long;
+	var headerBytesSent : Float;
 	@:optional
-	var retransmittedPacketsSent : unsigned long long;
+	var retransmittedPacketsSent : Float;
 	@:optional
-	var retransmittedBytesSent : unsigned long long;
+	var retransmittedBytesSent : Float;
 	@:optional
-	var rtxSsrc : unsigned long;
+	var rtxSsrc : Int;
 	@:optional
-	var targetBitrate : double;
+	var targetBitrate : Float;
 	@:optional
-	var totalEncodedBytesTarget : unsigned long long;
+	var totalEncodedBytesTarget : Float;
 	@:optional
-	var frameWidth : unsigned long;
+	var frameWidth : Int;
 	@:optional
-	var frameHeight : unsigned long;
+	var frameHeight : Int;
 	@:optional
-	var framesPerSecond : double;
+	var framesPerSecond : Float;
 	@:optional
-	var framesSent : unsigned long;
+	var framesSent : Int;
 	@:optional
-	var hugeFramesSent : unsigned long;
+	var hugeFramesSent : Int;
 	@:optional
-	var framesEncoded : unsigned long;
+	var framesEncoded : Int;
 	@:optional
-	var keyFramesEncoded : unsigned long;
+	var keyFramesEncoded : Int;
 	@:optional
-	var qpSum : unsigned long long;
+	var qpSum : Float;
 	@:optional
-	var totalEncodeTime : double;
+	var totalEncodeTime : Float;
 	@:optional
-	var totalPacketSendDelay : double;
+	var totalPacketSendDelay : Float;
 	@:optional
 	var qualityLimitationReason : js.webrtcStats.RTCQualityLimitationReason;
 	@:optional
-	var qualityLimitationDurations : haxe.DynamicAccess<double>;
+	var qualityLimitationDurations : haxe.DynamicAccess<Float>;
 	@:optional
-	var qualityLimitationResolutionChanges : unsigned long;
+	var qualityLimitationResolutionChanges : Int;
 	@:optional
-	var nackCount : unsigned long;
+	var nackCount : Int;
 	@:optional
-	var firCount : unsigned long;
+	var firCount : Int;
 	@:optional
-	var pliCount : unsigned long;
+	var pliCount : Int;
 	@:optional
-	var encoderImplementation : DOMString;
+	var encoderImplementation : String;
 	@:optional
 	var powerEfficientEncoder : Bool;
 	@:optional
 	var active : Bool;
 	@:optional
-	var scalabilityMode : DOMString;
+	var scalabilityMode : String;
 };

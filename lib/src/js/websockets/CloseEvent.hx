@@ -25,5 +25,5 @@
 package js.websockets;
 
 extern class CloseEvent extends js.dom.Event {
-	function new(type:DOMString, ?eventInitDict:js.websockets.CloseEventInit):Void;
+	function new(type:String, ?eventInitDict:js.websockets.CloseEventInit):Void;
 }

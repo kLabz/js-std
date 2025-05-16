@@ -26,6 +26,6 @@ package js.webNfc;
 
 typedef NDEFReadingEventInit = js.dom.EventInit & {
 	@:optional
-	var serialNumber : DOMString = "";
+	var serialNumber : String = "";
 	var message : js.webNfc.NDEFMessageInit;
 };

@@ -25,5 +25,5 @@
 package js.mediaSource;
 
 extern class SourceBufferList extends js.dom.EventTarget {
-	function (index:unsigned long):js.mediaSource.SourceBuffer;
+	function (index:Int):js.mediaSource.SourceBuffer;
 }

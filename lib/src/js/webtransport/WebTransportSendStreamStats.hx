@@ -26,9 +26,9 @@ package js.webtransport;
 
 typedef WebTransportSendStreamStats = {
 	@:optional
-	var bytesWritten : unsigned long long = 0;
+	var bytesWritten : Float = 0;
 	@:optional
-	var bytesSent : unsigned long long = 0;
+	var bytesSent : Float = 0;
 	@:optional
-	var bytesAcknowledged : unsigned long long = 0;
+	var bytesAcknowledged : Float = 0;
 };

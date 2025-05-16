@@ -26,17 +26,17 @@ package js.webxr;
 
 extern class XRSession extends js.dom.EventTarget {
 	function updateRenderState(?state:js.webxr.XRRenderStateInit):Void;
-	function updateTargetFrameRate(rate:float):js.lib.Promise<Void>;
+	function updateTargetFrameRate(rate:Float):js.lib.Promise<Void>;
 	function requestReferenceSpace(type:js.webxr.XRReferenceSpaceType):js.lib.Promise<js.webxr.XRReferenceSpace>;
-	function requestAnimationFrame(callback:XRFrameRequestCallback):unsigned long;
-	function cancelAnimationFrame(handle:unsigned long):Void;
+	function requestAnimationFrame(callback:XRFrameRequestCallback):Int;
+	function cancelAnimationFrame(handle:Int):Void;
 	function end():js.lib.Promise<Void>;
-	function restorePersistentAnchor(uuid:DOMString):js.lib.Promise<js.anchors.XRAnchor>;
-	function deletePersistentAnchor(uuid:DOMString):js.lib.Promise<Void>;
+	function restorePersistentAnchor(uuid:String):js.lib.Promise<js.anchors.XRAnchor>;
+	function deletePersistentAnchor(uuid:String):js.lib.Promise<Void>;
 	function pauseDepthSensing():Void;
 	function resumeDepthSensing():Void;
+	function requestLightProbe(?options:js.webxrLightingEstimation.XRLightProbeInit):js.lib.Promise<js.webxrLightingEstimation.XRLightProbe>;
 	function requestHitTestSource(options:js.webxrHitTest.XRHitTestOptionsInit):js.lib.Promise<js.webxrHitTest.XRHitTestSource>;
 	function requestHitTestSourceForTransientInput(options:js.webxrHitTest.XRTransientInputHitTestOptionsInit):js.lib.Promise<js.webxrHitTest.XRTransientInputHitTestSource>;
 	function initiateRoomCapture():js.lib.Promise<Void>;
-	function requestLightProbe(?options:js.webxrLightingEstimation.XRLightProbeInit):js.lib.Promise<js.webxrLightingEstimation.XRLightProbe>;
 }

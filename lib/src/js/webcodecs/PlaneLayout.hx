@@ -25,6 +25,6 @@
 package js.webcodecs;
 
 typedef PlaneLayout = {
-	var offset : unsigned long;
-	var stride : unsigned long;
+	var offset : Int;
+	var stride : Int;
 };

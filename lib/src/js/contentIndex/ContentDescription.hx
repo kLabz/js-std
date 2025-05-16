@@ -25,12 +25,12 @@
 package js.contentIndex;
 
 typedef ContentDescription = {
-	var id : DOMString;
-	var title : DOMString;
-	var description : DOMString;
+	var id : String;
+	var title : String;
+	var description : String;
 	@:optional
 	var category : js.contentIndex.ContentCategory = "";
 	@:optional
 	var icons : Array<js.imageResource.ImageResource> = [];
-	var url : USVString;
+	var url : String;
 };

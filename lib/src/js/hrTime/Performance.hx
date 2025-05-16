@@ -29,12 +29,12 @@ extern class Performance extends js.dom.EventTarget {
 	function toJSON():object;
 	function measureUserAgentSpecificMemory():js.lib.Promise<js.performanceMeasureMemory.MemoryMeasurement>;
 	function getEntries():PerformanceEntryList;
-	function getEntriesByType(type:DOMString):PerformanceEntryList;
-	function getEntriesByName(name:DOMString, ?type:DOMString):PerformanceEntryList;
+	function getEntriesByType(type:String):PerformanceEntryList;
+	function getEntriesByName(name:String, ?type:String):PerformanceEntryList;
 	function clearResourceTimings():Void;
-	function setResourceTimingBufferSize(maxSize:unsigned long):Void;
-	function mark(markName:DOMString, ?markOptions:js.userTiming.PerformanceMarkOptions):js.userTiming.PerformanceMark;
-	function clearMarks(?markName:DOMString):Void;
-	function measure(measureName:DOMString, ?startOrMeasureOptions:haxe.extern.EitherType<DOMString, js.userTiming.PerformanceMeasureOptions>, ?endMark:DOMString):js.userTiming.PerformanceMeasure;
-	function clearMeasures(?measureName:DOMString):Void;
+	function setResourceTimingBufferSize(maxSize:Int):Void;
+	function mark(markName:String, ?markOptions:js.userTiming.PerformanceMarkOptions):js.userTiming.PerformanceMark;
+	function clearMarks(?markName:String):Void;
+	function measure(measureName:String, ?startOrMeasureOptions:haxe.extern.EitherType<String, js.userTiming.PerformanceMeasureOptions>, ?endMark:String):js.userTiming.PerformanceMeasure;
+	function clearMeasures(?measureName:String):Void;
 }

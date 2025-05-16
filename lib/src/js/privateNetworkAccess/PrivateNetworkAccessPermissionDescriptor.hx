@@ -26,5 +26,5 @@ package js.privateNetworkAccess;
 
 typedef PrivateNetworkAccessPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
-	var id : DOMString;
+	var id : String;
 };

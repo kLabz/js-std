@@ -25,7 +25,7 @@
 package js.indexeddb;
 
 extern class IDBTransaction extends js.dom.EventTarget {
-	function objectStore(name:DOMString):js.indexeddb.IDBObjectStore;
+	function objectStore(name:String):js.indexeddb.IDBObjectStore;
 	function commit():Void;
 	function abort():Void;
 }

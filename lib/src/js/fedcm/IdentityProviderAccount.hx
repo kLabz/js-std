@@ -25,25 +25,25 @@
 package js.fedcm;
 
 typedef IdentityProviderAccount = {
-	var id : USVString;
+	var id : String;
 	@:optional
-	var name : USVString;
+	var name : String;
 	@:optional
-	var email : USVString;
+	var email : String;
 	@:optional
-	var tel : USVString;
+	var tel : String;
 	@:optional
-	var username : USVString;
+	var username : String;
 	@:optional
-	var given_name : USVString;
+	var given_name : String;
 	@:optional
-	var picture : USVString;
+	var picture : String;
 	@:optional
-	var approved_clients : Array<USVString>;
+	var approved_clients : Array<String>;
 	@:optional
-	var login_hints : Array<DOMString>;
+	var login_hints : Array<String>;
 	@:optional
-	var domain_hints : Array<DOMString>;
+	var domain_hints : Array<String>;
 	@:optional
-	var label_hints : Array<DOMString>;
+	var label_hints : Array<String>;
 };

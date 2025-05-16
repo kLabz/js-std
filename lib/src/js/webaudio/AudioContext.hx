@@ -30,7 +30,7 @@ extern class AudioContext extends js.webaudio.BaseAudioContext {
 	function resume():js.lib.Promise<Void>;
 	function suspend():js.lib.Promise<Void>;
 	function close():js.lib.Promise<Void>;
-	function setSinkId(sinkId:haxe.extern.EitherType<DOMString, js.webaudio.AudioSinkOptions>):js.lib.Promise<Void>;
+	function setSinkId(sinkId:haxe.extern.EitherType<String, js.webaudio.AudioSinkOptions>):js.lib.Promise<Void>;
 	function createMediaElementSource(mediaElement:js.html.HTMLMediaElement):js.webaudio.MediaElementAudioSourceNode;
 	function createMediaStreamSource(mediaStream:js.mediacaptureStreams.MediaStream):js.webaudio.MediaStreamAudioSourceNode;
 	function createMediaStreamTrackSource(mediaStreamTrack:js.mediacaptureStreams.MediaStreamTrack):js.webaudio.MediaStreamTrackAudioSourceNode;

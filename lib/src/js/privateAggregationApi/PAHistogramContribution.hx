@@ -26,7 +26,7 @@ package js.privateAggregationApi;
 
 typedef PAHistogramContribution = {
 	var bucket : bigint;
-	var value : long;
+	var value : Int;
 	@:optional
 	var filteringId : bigint = 0;
 };

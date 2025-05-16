@@ -26,8 +26,8 @@ package js.html;
 
 extern class DataTransfer {
 	function new():Void;
-	function setDragImage(image:js.dom.Element, x:long, y:long):Void;
-	function getData(format:DOMString):DOMString;
-	function setData(format:DOMString, data:DOMString):Void;
-	function clearData(?format:DOMString):Void;
+	function setDragImage(image:js.dom.Element, x:Int, y:Int):Void;
+	function getData(format:String):String;
+	function setData(format:String, data:String):Void;
+	function clearData(?format:String):Void;
 }

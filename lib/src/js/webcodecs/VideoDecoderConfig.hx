@@ -25,17 +25,17 @@
 package js.webcodecs;
 
 typedef VideoDecoderConfig = {
-	var codec : DOMString;
+	var codec : String;
 	@:optional
 	var description : AllowSharedBufferSource;
 	@:optional
-	var codedWidth : unsigned long;
+	var codedWidth : Int;
 	@:optional
-	var codedHeight : unsigned long;
+	var codedHeight : Int;
 	@:optional
-	var displayAspectWidth : unsigned long;
+	var displayAspectWidth : Int;
 	@:optional
-	var displayAspectHeight : unsigned long;
+	var displayAspectHeight : Int;
 	@:optional
 	var colorSpace : js.webcodecs.VideoColorSpaceInit;
 	@:optional
@@ -43,7 +43,7 @@ typedef VideoDecoderConfig = {
 	@:optional
 	var optimizeForLatency : Bool;
 	@:optional
-	var rotation : double = 0;
+	var rotation : Float = 0;
 	@:optional
 	var flip : Bool = false;
 };

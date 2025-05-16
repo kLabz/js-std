@@ -28,5 +28,5 @@ typedef MLTriangularOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var upper : Bool = true;
 	@:optional
-	var diagonal : long = 0;
+	var diagonal : Int = 0;
 };

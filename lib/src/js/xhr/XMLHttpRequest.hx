@@ -31,14 +31,14 @@ extern class XMLHttpRequest extends js.xhr.XMLHttpRequestEventTarget {
 	static inline var HEADERS_RECEIVED : Int = 2;
 	static inline var LOADING : Int = 3;
 	static inline var DONE : Int = 4;
-	overload function open(method:ByteString, url:USVString):Void;
-	overload function open(method:ByteString, url:USVString, async:Bool, ?username:USVString, ?password:USVString):Void;
-	function setRequestHeader(name:ByteString, value:ByteString):Void;
+	overload function open(method:String, url:String):Void;
+	overload function open(method:String, url:String, async:Bool, ?username:String, ?password:String):Void;
+	function setRequestHeader(name:String, value:String):Void;
 	function send(?body:haxe.extern.EitherType<js.dom.Document, XMLHttpRequestBodyInit>):Void;
 	function abort():Void;
-	function getResponseHeader(name:ByteString):ByteString;
-	function getAllResponseHeaders():ByteString;
-	function overrideMimeType(mime:DOMString):Void;
+	function getResponseHeader(name:String):String;
+	function getAllResponseHeaders():String;
+	function overrideMimeType(mime:String):Void;
 	function setAttributionReporting(options:js.attributionReportingApi.AttributionReportingRequestOptions):Void;
 	function setPrivateToken(privateToken:js.trustTokenApi.PrivateToken):Void;
 }

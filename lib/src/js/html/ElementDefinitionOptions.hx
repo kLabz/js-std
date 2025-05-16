@@ -26,5 +26,5 @@ package js.html;
 
 typedef ElementDefinitionOptions = {
 	@:optional
-	var extends : DOMString;
+	var extends : String;
 };

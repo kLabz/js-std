@@ -25,11 +25,11 @@
 package js.mediaCapabilities;
 
 typedef VideoConfiguration = {
-	var contentType : DOMString;
-	var width : unsigned long;
-	var height : unsigned long;
-	var bitrate : unsigned long long;
-	var framerate : double;
+	var contentType : String;
+	var width : Int;
+	var height : Int;
+	var bitrate : Float;
+	var framerate : Float;
 	@:optional
 	var hasAlphaChannel : Bool;
 	@:optional
@@ -39,7 +39,7 @@ typedef VideoConfiguration = {
 	@:optional
 	var transferFunction : js.mediaCapabilities.TransferFunction;
 	@:optional
-	var scalabilityMode : DOMString;
+	var scalabilityMode : String;
 	@:optional
 	var spatialScalability : Bool;
 };

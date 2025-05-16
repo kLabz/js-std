@@ -29,5 +29,5 @@ extern class SVGFEGaussianBlurElement extends js.svg.SVGElement {
 	static inline var SVG_EDGEMODE_DUPLICATE : Int = 1;
 	static inline var SVG_EDGEMODE_WRAP : Int = 2;
 	static inline var SVG_EDGEMODE_NONE : Int = 3;
-	function setStdDeviation(stdDeviationX:float, stdDeviationY:float):Void;
+	function setStdDeviation(stdDeviationX:Float, stdDeviationY:Float):Void;
 }

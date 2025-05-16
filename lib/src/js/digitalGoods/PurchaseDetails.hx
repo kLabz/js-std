@@ -25,6 +25,6 @@
 package js.digitalGoods;
 
 typedef PurchaseDetails = {
-	var itemId : DOMString;
-	var purchaseToken : DOMString;
+	var itemId : String;
+	var purchaseToken : String;
 };

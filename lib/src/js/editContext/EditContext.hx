@@ -26,11 +26,11 @@ package js.editContext;
 
 extern class EditContext extends js.dom.EventTarget {
 	function new(?options:js.editContext.EditContextInit):Void;
-	function updateText(rangeStart:unsigned long, rangeEnd:unsigned long, text:DOMString):Void;
-	function updateSelection(start:unsigned long, end:unsigned long):Void;
+	function updateText(rangeStart:Int, rangeEnd:Int, text:String):Void;
+	function updateSelection(start:Int, end:Int):Void;
 	function updateControlBounds(controlBounds:js.geometry.DOMRect):Void;
 	function updateSelectionBounds(selectionBounds:js.geometry.DOMRect):Void;
-	function updateCharacterBounds(rangeStart:unsigned long, characterBounds:Array<js.geometry.DOMRect>):Void;
+	function updateCharacterBounds(rangeStart:Int, characterBounds:Array<js.geometry.DOMRect>):Void;
 	function attachedElements():Array<js.html.HTMLElement>;
 	function characterBounds():Array<js.geometry.DOMRect>;
 }

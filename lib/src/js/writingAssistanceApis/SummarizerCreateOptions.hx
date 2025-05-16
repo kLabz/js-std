@@ -30,5 +30,5 @@ typedef SummarizerCreateOptions = js.writingAssistanceApis.SummarizerCreateCoreO
 	@:optional
 	var monitor : CreateMonitorCallback;
 	@:optional
-	var sharedContext : DOMString;
+	var sharedContext : String;
 };

@@ -26,7 +26,7 @@ package js.cssLayoutApi;
 
 typedef IntrinsicSizesResultOptions = {
 	@:optional
-	var maxContentSize : double;
+	var maxContentSize : Float;
 	@:optional
-	var minContentSize : double;
+	var minContentSize : Float;
 };

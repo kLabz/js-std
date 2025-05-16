@@ -26,13 +26,13 @@ package js.webxr;
 
 typedef XRRenderStateInit = {
 	@:optional
-	var depthNear : double;
+	var depthNear : Float;
 	@:optional
-	var depthFar : double;
+	var depthFar : Float;
 	@:optional
 	var passthroughFullyObscured : Bool;
 	@:optional
-	var inlineVerticalFieldOfView : double;
+	var inlineVerticalFieldOfView : Float;
 	@:optional
 	var baseLayer : js.webxr.XRWebGLLayer;
 	@:optional

@@ -26,19 +26,19 @@ package js.cssTypedOm;
 
 typedef CSSNumericType = {
 	@:optional
-	var length : long;
+	var length : Int;
 	@:optional
-	var angle : long;
+	var angle : Int;
 	@:optional
-	var time : long;
+	var time : Int;
 	@:optional
-	var frequency : long;
+	var frequency : Int;
 	@:optional
-	var resolution : long;
+	var resolution : Int;
 	@:optional
-	var flex : long;
+	var flex : Int;
 	@:optional
-	var percent : long;
+	var percent : Int;
 	@:optional
 	var percentHint : js.cssTypedOm.CSSNumericBaseType;
 };

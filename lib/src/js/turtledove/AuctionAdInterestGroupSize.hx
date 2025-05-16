@@ -25,6 +25,6 @@
 package js.turtledove;
 
 typedef AuctionAdInterestGroupSize = {
-	var width : USVString;
-	var height : USVString;
+	var width : String;
+	var height : String;
 };

@@ -25,5 +25,5 @@
 package js.speechApi;
 
 extern class SpeechRecognitionResultList {
-	function item(index:unsigned long):js.speechApi.SpeechRecognitionResult;
+	function item(index:Int):js.speechApi.SpeechRecognitionResult;
 }

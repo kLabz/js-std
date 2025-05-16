@@ -25,5 +25,5 @@
 package js.turtledove;
 
 typedef AuctionRealTimeReportingConfig = {
-	var type : DOMString;
+	var type : String;
 };

@@ -26,5 +26,5 @@ package js.html;
 
 extern class HTMLScriptElement extends js.html.HTMLElement {
 	function new():Void;
-	function supports(type:DOMString):Bool;
+	function supports(type:String):Bool;
 }

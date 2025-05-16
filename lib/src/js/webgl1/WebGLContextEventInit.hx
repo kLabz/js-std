@@ -26,5 +26,5 @@ package js.webgl1;
 
 typedef WebGLContextEventInit = js.dom.EventInit & {
 	@:optional
-	var statusMessage : DOMString = "";
+	var statusMessage : String = "";
 };

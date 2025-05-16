@@ -25,23 +25,23 @@
 package js.digitalGoods;
 
 typedef ItemDetails = {
-	var itemId : DOMString;
-	var title : DOMString;
+	var itemId : String;
+	var title : String;
 	var price : js.paymentRequest.PaymentCurrencyAmount;
 	@:optional
 	var type : js.digitalGoods.ItemType;
 	@:optional
-	var description : DOMString;
+	var description : String;
 	@:optional
-	var iconURLs : Array<DOMString>;
+	var iconURLs : Array<String>;
 	@:optional
-	var subscriptionPeriod : DOMString;
+	var subscriptionPeriod : String;
 	@:optional
-	var freeTrialPeriod : DOMString;
+	var freeTrialPeriod : String;
 	@:optional
 	var introductoryPrice : js.paymentRequest.PaymentCurrencyAmount;
 	@:optional
-	var introductoryPricePeriod : DOMString;
+	var introductoryPricePeriod : String;
 	@:optional
-	var introductoryPriceCycles : unsigned long long;
+	var introductoryPriceCycles : Float;
 };

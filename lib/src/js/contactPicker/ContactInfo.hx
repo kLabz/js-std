@@ -28,11 +28,11 @@ typedef ContactInfo = {
 	@:optional
 	var address : Array<js.contactPicker.ContactAddress>;
 	@:optional
-	var email : Array<DOMString>;
+	var email : Array<String>;
 	@:optional
 	var icon : Array<js.fileapi.Blob>;
 	@:optional
-	var name : Array<DOMString>;
+	var name : Array<String>;
 	@:optional
-	var tel : Array<DOMString>;
+	var tel : Array<String>;
 };

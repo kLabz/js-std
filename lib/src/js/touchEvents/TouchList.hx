@@ -25,5 +25,5 @@
 package js.touchEvents;
 
 extern class TouchList {
-	function item(index:unsigned long):js.touchEvents.Touch;
+	function item(index:Int):js.touchEvents.Touch;
 }

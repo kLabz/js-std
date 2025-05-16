@@ -25,12 +25,12 @@
 package js.securePaymentConfirmation;
 
 typedef CollectedClientAdditionalPaymentData = {
-	var rpId : USVString;
-	var topOrigin : USVString;
+	var rpId : String;
+	var topOrigin : String;
 	@:optional
-	var payeeName : USVString;
+	var payeeName : String;
 	@:optional
-	var payeeOrigin : USVString;
+	var payeeOrigin : String;
 	var total : js.paymentRequest.PaymentCurrencyAmount;
 	var instrument : js.securePaymentConfirmation.PaymentCredentialInstrument;
 };

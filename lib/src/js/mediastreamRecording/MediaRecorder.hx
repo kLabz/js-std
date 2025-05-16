@@ -26,10 +26,10 @@ package js.mediastreamRecording;
 
 extern class MediaRecorder extends js.dom.EventTarget {
 	function new(stream:js.mediacaptureStreams.MediaStream, ?options:js.mediastreamRecording.MediaRecorderOptions):Void;
-	function start(?timeslice:unsigned long):Void;
+	function start(?timeslice:Int):Void;
 	function stop():Void;
 	function pause():Void;
 	function resume():Void;
 	function requestData():Void;
-	function isTypeSupported(type:DOMString):Bool;
+	function isTypeSupported(type:String):Bool;
 }

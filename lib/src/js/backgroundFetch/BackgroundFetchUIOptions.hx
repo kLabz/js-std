@@ -28,5 +28,5 @@ typedef BackgroundFetchUIOptions = {
 	@:optional
 	var icons : Array<js.imageResource.ImageResource>;
 	@:optional
-	var title : DOMString;
+	var title : String;
 };

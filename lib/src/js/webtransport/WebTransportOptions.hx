@@ -38,5 +38,5 @@ typedef WebTransportOptions = {
 	@:optional
 	var anticipatedConcurrentIncomingBidirectionalStreams : Int = null;
 	@:optional
-	var protocols : Array<DOMString> = [];
+	var protocols : Array<String> = [];
 };

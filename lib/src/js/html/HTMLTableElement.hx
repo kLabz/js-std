@@ -33,6 +33,6 @@ extern class HTMLTableElement extends js.html.HTMLElement {
 	function createTFoot():js.html.HTMLTableSectionElement;
 	function deleteTFoot():Void;
 	function createTBody():js.html.HTMLTableSectionElement;
-	function insertRow(?index:long):js.html.HTMLTableRowElement;
-	function deleteRow(index:long):Void;
+	function insertRow(?index:Int):js.html.HTMLTableRowElement;
+	function deleteRow(index:Int):Void;
 }

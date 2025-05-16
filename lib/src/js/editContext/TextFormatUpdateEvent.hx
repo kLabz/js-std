@@ -25,6 +25,6 @@
 package js.editContext;
 
 extern class TextFormatUpdateEvent extends js.dom.Event {
-	function new(type:DOMString, ?options:js.editContext.TextFormatUpdateEventInit):Void;
+	function new(type:String, ?options:js.editContext.TextFormatUpdateEventInit):Void;
 	function getTextFormats():Array<js.editContext.TextFormat>;
 }

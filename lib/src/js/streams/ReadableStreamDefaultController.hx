@@ -26,6 +26,6 @@ package js.streams;
 
 extern class ReadableStreamDefaultController {
 	function close():Void;
-	function enqueue(?chunk:any):Void;
-	function error(?e:any):Void;
+	function enqueue(?chunk:Any):Void;
+	function error(?e:Any):Void;
 }

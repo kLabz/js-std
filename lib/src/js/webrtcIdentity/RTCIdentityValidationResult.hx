@@ -25,6 +25,6 @@
 package js.webrtcIdentity;
 
 typedef RTCIdentityValidationResult = {
-	var identity : DOMString;
-	var contents : DOMString;
+	var identity : String;
+	var contents : String;
 };

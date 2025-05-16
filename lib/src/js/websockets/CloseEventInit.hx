@@ -30,5 +30,5 @@ typedef CloseEventInit = js.dom.EventInit & {
 	@:optional
 	var code : Int = 0;
 	@:optional
-	var reason : USVString = "";
+	var reason : String = "";
 };

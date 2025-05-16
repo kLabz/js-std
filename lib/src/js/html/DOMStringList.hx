@@ -25,6 +25,6 @@
 package js.html;
 
 extern class DOMStringList {
-	function item(index:unsigned long):DOMString;
-	function contains(string:DOMString):Bool;
+	function item(index:Int):String;
+	function contains(string:String):Bool;
 }

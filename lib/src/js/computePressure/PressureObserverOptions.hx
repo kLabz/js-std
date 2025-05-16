@@ -26,5 +26,5 @@ package js.computePressure;
 
 typedef PressureObserverOptions = {
 	@:optional
-	var sampleInterval : unsigned long = 0;
+	var sampleInterval : Int = 0;
 };

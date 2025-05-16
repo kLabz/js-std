@@ -26,6 +26,6 @@ package js.entriesApi;
 
 extern class FileSystemDirectoryEntry extends js.entriesApi.FileSystemEntry {
 	function createReader():js.entriesApi.FileSystemDirectoryReader;
-	function getFile(?path:USVString, ?options:js.entriesApi.FileSystemFlags, ?successCallback:FileSystemEntryCallback, ?errorCallback:ErrorCallback):Void;
-	function getDirectory(?path:USVString, ?options:js.entriesApi.FileSystemFlags, ?successCallback:FileSystemEntryCallback, ?errorCallback:ErrorCallback):Void;
+	function getFile(?path:String, ?options:js.entriesApi.FileSystemFlags, ?successCallback:FileSystemEntryCallback, ?errorCallback:ErrorCallback):Void;
+	function getDirectory(?path:String, ?options:js.entriesApi.FileSystemFlags, ?successCallback:FileSystemEntryCallback, ?errorCallback:ErrorCallback):Void;
 }

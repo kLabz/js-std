@@ -25,10 +25,10 @@
 package js.managedConfiguration;
 
 extern class NavigatorManagedData extends js.dom.EventTarget {
-	function getManagedConfiguration(keys:Array<DOMString>):js.lib.Promise<haxe.DynamicAccess<object>>;
-	function getAnnotatedAssetId():js.lib.Promise<DOMString>;
-	function getAnnotatedLocation():js.lib.Promise<DOMString>;
-	function getDirectoryId():js.lib.Promise<DOMString>;
-	function getHostname():js.lib.Promise<DOMString>;
-	function getSerialNumber():js.lib.Promise<DOMString>;
+	function getManagedConfiguration(keys:Array<String>):js.lib.Promise<haxe.DynamicAccess<object>>;
+	function getAnnotatedAssetId():js.lib.Promise<String>;
+	function getAnnotatedLocation():js.lib.Promise<String>;
+	function getDirectoryId():js.lib.Promise<String>;
+	function getHostname():js.lib.Promise<String>;
+	function getSerialNumber():js.lib.Promise<String>;
 }

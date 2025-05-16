@@ -26,5 +26,5 @@ package js.webrtc;
 
 typedef RTCRtpCodingParameters = {
 	@:optional
-	var rid : DOMString;
+	var rid : String;
 };

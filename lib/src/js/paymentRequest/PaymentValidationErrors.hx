@@ -30,7 +30,7 @@ typedef PaymentValidationErrors = {
 	@:optional
 	var shippingAddress : js.paymentRequest.AddressErrors;
 	@:optional
-	var error : DOMString;
+	var error : String;
 	@:optional
 	var paymentMethod : object;
 };

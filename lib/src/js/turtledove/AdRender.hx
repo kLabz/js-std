@@ -25,9 +25,9 @@
 package js.turtledove;
 
 typedef AdRender = {
-	var url : DOMString;
+	var url : String;
 	@:optional
-	var width : DOMString;
+	var width : String;
 	@:optional
-	var height : DOMString;
+	var height : String;
 };

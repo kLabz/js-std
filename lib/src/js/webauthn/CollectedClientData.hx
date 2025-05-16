@@ -25,11 +25,11 @@
 package js.webauthn;
 
 typedef CollectedClientData = {
-	var type : DOMString;
-	var challenge : DOMString;
-	var origin : DOMString;
+	var type : String;
+	var challenge : String;
+	var origin : String;
 	@:optional
 	var crossOrigin : Bool;
 	@:optional
-	var topOrigin : DOMString;
+	var topOrigin : String;
 };

@@ -26,9 +26,9 @@ package js.pushApi;
 
 typedef PushSubscriptionJSON = {
 	@:optional
-	var endpoint : USVString;
+	var endpoint : String;
 	@:optional
 	var expirationTime : EpochTimeStamp = null;
 	@:optional
-	var keys : haxe.DynamicAccess<USVString>;
+	var keys : haxe.DynamicAccess<String>;
 };

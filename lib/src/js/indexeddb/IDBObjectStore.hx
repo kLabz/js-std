@@ -25,18 +25,18 @@
 package js.indexeddb;
 
 extern class IDBObjectStore {
-	function put(value:any, ?key:any):js.indexeddb.IDBRequest;
-	function add(value:any, ?key:any):js.indexeddb.IDBRequest;
-	function delete(query:any):js.indexeddb.IDBRequest;
+	function put(value:Any, ?key:Any):js.indexeddb.IDBRequest;
+	function add(value:Any, ?key:Any):js.indexeddb.IDBRequest;
+	function delete(query:Any):js.indexeddb.IDBRequest;
 	function clear():js.indexeddb.IDBRequest;
-	function get(query:any):js.indexeddb.IDBRequest;
-	function getKey(query:any):js.indexeddb.IDBRequest;
-	function getAll(?query:any, ?count:unsigned long):js.indexeddb.IDBRequest;
-	function getAllKeys(?query:any, ?count:unsigned long):js.indexeddb.IDBRequest;
-	function count(?query:any):js.indexeddb.IDBRequest;
-	function openCursor(?query:any, ?direction:js.indexeddb.IDBCursorDirection):js.indexeddb.IDBRequest;
-	function openKeyCursor(?query:any, ?direction:js.indexeddb.IDBCursorDirection):js.indexeddb.IDBRequest;
-	function index(name:DOMString):js.indexeddb.IDBIndex;
-	function createIndex(name:DOMString, keyPath:haxe.extern.EitherType<DOMString, Array<DOMString>>, ?options:js.indexeddb.IDBIndexParameters):js.indexeddb.IDBIndex;
-	function deleteIndex(name:DOMString):Void;
+	function get(query:Any):js.indexeddb.IDBRequest;
+	function getKey(query:Any):js.indexeddb.IDBRequest;
+	function getAll(?query:Any, ?count:Int):js.indexeddb.IDBRequest;
+	function getAllKeys(?query:Any, ?count:Int):js.indexeddb.IDBRequest;
+	function count(?query:Any):js.indexeddb.IDBRequest;
+	function openCursor(?query:Any, ?direction:js.indexeddb.IDBCursorDirection):js.indexeddb.IDBRequest;
+	function openKeyCursor(?query:Any, ?direction:js.indexeddb.IDBCursorDirection):js.indexeddb.IDBRequest;
+	function index(name:String):js.indexeddb.IDBIndex;
+	function createIndex(name:String, keyPath:haxe.extern.EitherType<String, Array<String>>, ?options:js.indexeddb.IDBIndexParameters):js.indexeddb.IDBIndex;
+	function deleteIndex(name:String):Void;
 }

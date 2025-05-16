@@ -26,7 +26,7 @@ package js.storage;
 
 typedef StorageEstimate = {
 	@:optional
-	var usage : unsigned long long;
+	var usage : Float;
 	@:optional
-	var quota : unsigned long long;
+	var quota : Float;
 };

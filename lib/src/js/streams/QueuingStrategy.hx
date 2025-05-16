@@ -26,7 +26,7 @@ package js.streams;
 
 typedef QueuingStrategy = {
 	@:optional
-	var highWaterMark : unrestricted double;
+	var highWaterMark : Float;
 	@:optional
 	var size : QueuingStrategySize;
 };

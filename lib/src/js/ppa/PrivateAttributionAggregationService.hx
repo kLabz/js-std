@@ -25,5 +25,5 @@
 package js.ppa;
 
 typedef PrivateAttributionAggregationService = {
-	var protocol : DOMString;
+	var protocol : String;
 };

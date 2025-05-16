@@ -25,5 +25,5 @@
 package js.fileapi;
 
 extern class File extends js.fileapi.Blob {
-	function new(fileBits:Array<BlobPart>, fileName:USVString, ?options:js.fileapi.FilePropertyBag):Void;
+	function new(fileBits:Array<BlobPart>, fileName:String, ?options:js.fileapi.FilePropertyBag):Void;
 }

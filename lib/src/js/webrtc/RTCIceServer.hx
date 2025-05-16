@@ -25,9 +25,9 @@
 package js.webrtc;
 
 typedef RTCIceServer = {
-	var urls : haxe.extern.EitherType<USVString, Array<USVString>>;
+	var urls : haxe.extern.EitherType<String, Array<String>>;
 	@:optional
-	var username : DOMString;
+	var username : String;
 	@:optional
-	var credential : DOMString;
+	var credential : String;
 };

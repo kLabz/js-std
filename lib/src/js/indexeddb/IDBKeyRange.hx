@@ -25,9 +25,9 @@
 package js.indexeddb;
 
 extern class IDBKeyRange {
-	function only(value:any):js.indexeddb.IDBKeyRange;
-	function lowerBound(lower:any, ?open:Bool):js.indexeddb.IDBKeyRange;
-	function upperBound(upper:any, ?open:Bool):js.indexeddb.IDBKeyRange;
-	function bound(lower:any, upper:any, ?lowerOpen:Bool, ?upperOpen:Bool):js.indexeddb.IDBKeyRange;
-	function includes(key:any):Bool;
+	function only(value:Any):js.indexeddb.IDBKeyRange;
+	function lowerBound(lower:Any, ?open:Bool):js.indexeddb.IDBKeyRange;
+	function upperBound(upper:Any, ?open:Bool):js.indexeddb.IDBKeyRange;
+	function bound(lower:Any, upper:Any, ?lowerOpen:Bool, ?upperOpen:Bool):js.indexeddb.IDBKeyRange;
+	function includes(key:Any):Bool;
 }

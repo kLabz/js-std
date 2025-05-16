@@ -28,5 +28,5 @@ typedef StartViewTransitionOptions = {
 	@:optional
 	var update : ViewTransitionUpdateCallback = null;
 	@:optional
-	var types : Array<DOMString> = null;
+	var types : Array<String> = null;
 };

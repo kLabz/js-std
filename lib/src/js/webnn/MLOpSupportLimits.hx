@@ -28,7 +28,7 @@ typedef MLOpSupportLimits = {
 	@:optional
 	var preferredInputLayout : js.webnn.MLInputOperandLayout;
 	@:optional
-	var maxTensorByteLength : unsigned long long;
+	var maxTensorByteLength : Float;
 	@:optional
 	var input : js.webnn.MLDataTypeLimits;
 	@:optional

@@ -25,10 +25,10 @@
 package js.url;
 
 extern class URL {
-	function new(url:USVString, ?base:USVString):Void;
-	function parse(url:USVString, ?base:USVString):js.url.URL;
-	function canParse(url:USVString, ?base:USVString):Bool;
-	function toJSON():USVString;
-	function createObjectURL(obj:haxe.extern.EitherType<js.fileapi.Blob, js.mediaSource.MediaSource>):DOMString;
-	function revokeObjectURL(url:DOMString):Void;
+	function new(url:String, ?base:String):Void;
+	function parse(url:String, ?base:String):js.url.URL;
+	function canParse(url:String, ?base:String):Bool;
+	function toJSON():String;
+	function createObjectURL(obj:haxe.extern.EitherType<js.fileapi.Blob, js.mediaSource.MediaSource>):String;
+	function revokeObjectURL(url:String):Void;
 }

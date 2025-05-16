@@ -26,7 +26,7 @@ package js.credentialManagement;
 
 typedef FederatedCredentialRequestOptions = {
 	@:optional
-	var providers : Array<USVString>;
+	var providers : Array<String>;
 	@:optional
-	var protocols : Array<DOMString>;
+	var protocols : Array<String>;
 };

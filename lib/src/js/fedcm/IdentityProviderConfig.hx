@@ -25,6 +25,6 @@
 package js.fedcm;
 
 typedef IdentityProviderConfig = {
-	var configURL : USVString;
-	var clientId : USVString;
+	var configURL : String;
+	var clientId : String;
 };

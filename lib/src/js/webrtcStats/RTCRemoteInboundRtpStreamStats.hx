@@ -26,15 +26,15 @@ package js.webrtcStats;
 
 typedef RTCRemoteInboundRtpStreamStats = js.webrtcStats.RTCReceivedRtpStreamStats & {
 	@:optional
-	var localId : DOMString;
+	var localId : String;
 	@:optional
-	var roundTripTime : double;
+	var roundTripTime : Float;
 	@:optional
-	var totalRoundTripTime : double;
+	var totalRoundTripTime : Float;
 	@:optional
-	var fractionLost : double;
+	var fractionLost : Float;
 	@:optional
-	var roundTripTimeMeasurements : unsigned long long;
+	var roundTripTimeMeasurements : Float;
 	@:optional
-	var packetsWithBleachedEct1Marking : unsigned long long;
+	var packetsWithBleachedEct1Marking : Float;
 };

@@ -26,6 +26,6 @@ package js.speechApi;
 
 typedef SpeechRecognitionEventInit = js.dom.EventInit & {
 	@:optional
-	var resultIndex : unsigned long = 0;
+	var resultIndex : Int = 0;
 	var results : js.speechApi.SpeechRecognitionResultList;
 };

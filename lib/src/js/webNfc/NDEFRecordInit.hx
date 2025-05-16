@@ -25,15 +25,15 @@
 package js.webNfc;
 
 typedef NDEFRecordInit = {
-	var recordType : USVString;
+	var recordType : String;
 	@:optional
-	var mediaType : USVString;
+	var mediaType : String;
 	@:optional
-	var id : USVString;
+	var id : String;
 	@:optional
-	var encoding : USVString;
+	var encoding : String;
 	@:optional
-	var lang : USVString;
+	var lang : String;
 	@:optional
-	var data : any;
+	var data : Any;
 };

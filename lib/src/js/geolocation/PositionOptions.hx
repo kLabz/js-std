@@ -28,7 +28,7 @@ typedef PositionOptions = {
 	@:optional
 	var enableHighAccuracy : Bool = false;
 	@:optional
-	var timeout : unsigned long = 0xFFFFFFFF;
+	var timeout : Int = 0xFFFFFFFF;
 	@:optional
-	var maximumAge : unsigned long = 0;
+	var maximumAge : Int = 0;
 };

@@ -26,5 +26,5 @@ package js.serviceWorkers;
 
 typedef MultiCacheQueryOptions = js.serviceWorkers.CacheQueryOptions & {
 	@:optional
-	var cacheName : DOMString;
+	var cacheName : String;
 };

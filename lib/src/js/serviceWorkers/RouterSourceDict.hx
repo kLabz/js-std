@@ -26,5 +26,5 @@ package js.serviceWorkers;
 
 typedef RouterSourceDict = {
 	@:optional
-	var cacheName : DOMString;
+	var cacheName : String;
 };

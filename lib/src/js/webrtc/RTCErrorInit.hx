@@ -27,13 +27,13 @@ package js.webrtc;
 typedef RTCErrorInit = {
 	var errorDetail : js.webrtc.RTCErrorDetailType;
 	@:optional
-	var sdpLineNumber : long;
+	var sdpLineNumber : Int;
 	@:optional
-	var sctpCauseCode : long;
+	var sctpCauseCode : Int;
 	@:optional
-	var receivedAlert : unsigned long;
+	var receivedAlert : Int;
 	@:optional
-	var sentAlert : unsigned long;
+	var sentAlert : Int;
 	@:optional
-	var httpRequestStatusCode : long;
+	var httpRequestStatusCode : Int;
 };

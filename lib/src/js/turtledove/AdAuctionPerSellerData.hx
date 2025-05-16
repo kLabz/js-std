@@ -25,9 +25,9 @@
 package js.turtledove;
 
 typedef AdAuctionPerSellerData = {
-	var seller : USVString;
+	var seller : String;
 	@:optional
 	var request : Uint8Array;
 	@:optional
-	var error : DOMString;
+	var error : String;
 };

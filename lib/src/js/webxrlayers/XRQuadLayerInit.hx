@@ -30,7 +30,7 @@ typedef XRQuadLayerInit = js.webxrlayers.XRLayerInit & {
 	@:optional
 	var transform : js.webxr.XRRigidTransform;
 	@:optional
-	var width : float = 1.0;
+	var width : Float = 1.0;
 	@:optional
-	var height : float = 1.0;
+	var height : Float = 1.0;
 };

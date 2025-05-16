@@ -26,9 +26,9 @@ package js.imageCapture;
 
 typedef MediaSettingsRange = {
 	@:optional
-	var max : double;
+	var max : Float;
 	@:optional
-	var min : double;
+	var min : Float;
 	@:optional
-	var step : double;
+	var step : Float;
 };

@@ -26,7 +26,7 @@ package js.webaudio;
 
 typedef DelayOptions = js.webaudio.AudioNodeOptions & {
 	@:optional
-	var maxDelayTime : double = 1;
+	var maxDelayTime : Float = 1;
 	@:optional
-	var delayTime : double = 0;
+	var delayTime : Float = 0;
 };

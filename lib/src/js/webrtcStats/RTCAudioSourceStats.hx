@@ -26,13 +26,13 @@ package js.webrtcStats;
 
 typedef RTCAudioSourceStats = js.webrtcStats.RTCMediaSourceStats & {
 	@:optional
-	var audioLevel : double;
+	var audioLevel : Float;
 	@:optional
-	var totalAudioEnergy : double;
+	var totalAudioEnergy : Float;
 	@:optional
-	var totalSamplesDuration : double;
+	var totalSamplesDuration : Float;
 	@:optional
-	var echoReturnLoss : double;
+	var echoReturnLoss : Float;
 	@:optional
-	var echoReturnLossEnhancement : double;
+	var echoReturnLossEnhancement : Float;
 };

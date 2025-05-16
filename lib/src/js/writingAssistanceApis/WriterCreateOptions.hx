@@ -30,5 +30,5 @@ typedef WriterCreateOptions = js.writingAssistanceApis.WriterCreateCoreOptions &
 	@:optional
 	var monitor : CreateMonitorCallback;
 	@:optional
-	var sharedContext : DOMString;
+	var sharedContext : String;
 };

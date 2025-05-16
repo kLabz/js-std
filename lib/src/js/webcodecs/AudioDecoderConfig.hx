@@ -25,9 +25,9 @@
 package js.webcodecs;
 
 typedef AudioDecoderConfig = {
-	var codec : DOMString;
-	var sampleRate : unsigned long;
-	var numberOfChannels : unsigned long;
+	var codec : String;
+	var sampleRate : Int;
+	var numberOfChannels : Int;
 	@:optional
 	var description : AllowSharedBufferSource;
 };

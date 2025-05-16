@@ -34,5 +34,5 @@ typedef UnderlyingSource = {
 	@:optional
 	var type : js.streams.ReadableStreamType;
 	@:optional
-	var autoAllocateChunkSize : unsigned long long;
+	var autoAllocateChunkSize : Float;
 };

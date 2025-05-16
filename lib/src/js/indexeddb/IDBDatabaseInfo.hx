@@ -26,7 +26,7 @@ package js.indexeddb;
 
 typedef IDBDatabaseInfo = {
 	@:optional
-	var name : DOMString;
+	var name : String;
 	@:optional
-	var version : unsigned long long;
+	var version : Float;
 };

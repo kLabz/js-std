@@ -28,17 +28,17 @@ typedef NotificationOptions = {
 	@:optional
 	var dir : js.notifications.NotificationDirection = "auto";
 	@:optional
-	var lang : DOMString = "";
+	var lang : String = "";
 	@:optional
-	var body : DOMString = "";
+	var body : String = "";
 	@:optional
-	var tag : DOMString = "";
+	var tag : String = "";
 	@:optional
-	var image : USVString;
+	var image : String;
 	@:optional
-	var icon : USVString;
+	var icon : String;
 	@:optional
-	var badge : USVString;
+	var badge : String;
 	@:optional
 	var vibrate : VibratePattern;
 	@:optional
@@ -50,7 +50,7 @@ typedef NotificationOptions = {
 	@:optional
 	var requireInteraction : Bool = false;
 	@:optional
-	var data : any = null;
+	var data : Any = null;
 	@:optional
 	var actions : Array<js.notifications.NotificationAction> = [];
 };

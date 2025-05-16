@@ -25,5 +25,5 @@
 package js.html;
 
 extern class WorkerGlobalScope extends js.dom.EventTarget {
-	function importScripts(urls:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, USVString>):Void;
+	function importScripts(urls:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>):Void;
 }

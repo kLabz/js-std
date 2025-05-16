@@ -25,10 +25,10 @@
 package js.trustedTypes;
 
 extern class TrustedTypePolicyFactory {
-	function createPolicy(policyName:DOMString, ?policyOptions:js.trustedTypes.TrustedTypePolicyOptions):js.trustedTypes.TrustedTypePolicy;
-	function isHTML(value:any):Bool;
-	function isScript(value:any):Bool;
-	function isScriptURL(value:any):Bool;
-	function getAttributeType(tagName:DOMString, attribute:DOMString, ?elementNs:DOMString, ?attrNs:DOMString):DOMString;
-	function getPropertyType(tagName:DOMString, property:DOMString, ?elementNs:DOMString):DOMString;
+	function createPolicy(policyName:String, ?policyOptions:js.trustedTypes.TrustedTypePolicyOptions):js.trustedTypes.TrustedTypePolicy;
+	function isHTML(value:Any):Bool;
+	function isScript(value:Any):Bool;
+	function isScriptURL(value:Any):Bool;
+	function getAttributeType(tagName:String, attribute:String, ?elementNs:String, ?attrNs:String):String;
+	function getPropertyType(tagName:String, property:String, ?elementNs:String):String;
 }

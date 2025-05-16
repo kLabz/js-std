@@ -32,7 +32,7 @@ typedef RTCDataChannelInit = {
 	@:optional
 	var maxRetransmits : Int;
 	@:optional
-	var protocol : USVString = "";
+	var protocol : String = "";
 	@:optional
 	var negotiated : Bool = false;
 	@:optional

@@ -25,6 +25,6 @@
 package js.html;
 
 extern class MimeTypeArray {
-	function item(index:unsigned long):js.html.MimeType;
-	function namedItem(name:DOMString):js.html.MimeType;
+	function item(index:Int):js.html.MimeType;
+	function namedItem(name:String):js.html.MimeType;
 }

@@ -27,5 +27,5 @@ package js.streams;
 extern class ReadableByteStreamController {
 	function close():Void;
 	function enqueue(chunk:ArrayBufferView):Void;
-	function error(?e:any):Void;
+	function error(?e:Any):Void;
 }

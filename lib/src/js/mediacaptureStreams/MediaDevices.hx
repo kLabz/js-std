@@ -28,9 +28,9 @@ extern class MediaDevices extends js.dom.EventTarget {
 	function enumerateDevices():js.lib.Promise<Array<js.mediacaptureStreams.MediaDeviceInfo>>;
 	function selectAudioOutput(?options:js.audioOutput.AudioOutputOptions):js.lib.Promise<js.mediacaptureStreams.MediaDeviceInfo>;
 	function setCaptureHandleConfig(?config:js.captureHandleIdentity.CaptureHandleConfig):Void;
-	function setSupportedCaptureActions(actions:Array<DOMString>):Void;
-	function getViewportMedia(?options:js.screenCapture.DisplayMediaStreamOptions):js.lib.Promise<js.mediacaptureStreams.MediaStream>;
+	function setSupportedCaptureActions(actions:Array<String>):Void;
 	function getSupportedConstraints():js.mediacaptureStreams.MediaTrackSupportedConstraints;
 	function getUserMedia(?constraints:js.mediacaptureStreams.MediaStreamConstraints):js.lib.Promise<js.mediacaptureStreams.MediaStream>;
+	function getViewportMedia(?options:js.screenCapture.DisplayMediaStreamOptions):js.lib.Promise<js.mediacaptureStreams.MediaStream>;
 	function getDisplayMedia(?options:js.screenCapture.DisplayMediaStreamOptions):js.lib.Promise<js.mediacaptureStreams.MediaStream>;
 }

@@ -26,13 +26,13 @@ package js.webnn;
 
 typedef MLConv2dOptions = js.webnn.MLOperatorOptions & {
 	@:optional
-	var padding : Array<unsigned long>;
+	var padding : Array<Int>;
 	@:optional
-	var strides : Array<unsigned long>;
+	var strides : Array<Int>;
 	@:optional
-	var dilations : Array<unsigned long>;
+	var dilations : Array<Int>;
 	@:optional
-	var groups : unsigned long = 1;
+	var groups : Int = 1;
 	@:optional
 	var inputLayout : js.webnn.MLInputOperandLayout = "nchw";
 	@:optional

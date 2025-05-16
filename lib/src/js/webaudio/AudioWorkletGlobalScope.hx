@@ -25,5 +25,5 @@
 package js.webaudio;
 
 extern class AudioWorkletGlobalScope extends js.html.WorkletGlobalScope {
-	function registerProcessor(name:DOMString, processorCtor:AudioWorkletProcessorConstructor):Void;
+	function registerProcessor(name:String, processorCtor:AudioWorkletProcessorConstructor):Void;
 }

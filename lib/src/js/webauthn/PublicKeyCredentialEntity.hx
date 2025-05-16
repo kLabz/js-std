@@ -25,5 +25,5 @@
 package js.webauthn;
 
 typedef PublicKeyCredentialEntity = {
-	var name : DOMString;
+	var name : String;
 };

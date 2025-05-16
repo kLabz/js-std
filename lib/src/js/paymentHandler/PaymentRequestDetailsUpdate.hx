@@ -26,7 +26,7 @@ package js.paymentHandler;
 
 typedef PaymentRequestDetailsUpdate = {
 	@:optional
-	var error : DOMString;
+	var error : String;
 	@:optional
 	var total : js.paymentRequest.PaymentCurrencyAmount;
 	@:optional

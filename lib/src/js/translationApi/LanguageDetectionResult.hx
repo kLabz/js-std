@@ -26,7 +26,7 @@ package js.translationApi;
 
 typedef LanguageDetectionResult = {
 	@:optional
-	var detectedLanguage : DOMString;
+	var detectedLanguage : String;
 	@:optional
-	var confidence : double;
+	var confidence : Float;
 };

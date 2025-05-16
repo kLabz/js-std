@@ -26,14 +26,14 @@ package js.html;
 
 extern class HTMLSelectElement extends js.html.HTMLElement {
 	function new():Void;
-	function item(index:unsigned long):js.html.HTMLOptionElement;
-	function namedItem(name:DOMString):js.html.HTMLOptionElement;
-	function add(element:haxe.extern.EitherType<js.html.HTMLOptionElement, js.html.HTMLOptGroupElement>, ?before:haxe.extern.EitherType<js.html.HTMLElement, long>):Void;
+	function item(index:Int):js.html.HTMLOptionElement;
+	function namedItem(name:String):js.html.HTMLOptionElement;
+	function add(element:haxe.extern.EitherType<js.html.HTMLOptionElement, js.html.HTMLOptGroupElement>, ?before:haxe.extern.EitherType<js.html.HTMLElement, Int>):Void;
 	overload function remove():Void;
-	overload function remove(index:long):Void;
-	function (index:unsigned long, option:js.html.HTMLOptionElement):Void;
+	overload function remove(index:Int):Void;
+	function (index:Int, option:js.html.HTMLOptionElement):Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
-	function setCustomValidity(error:DOMString):Void;
+	function setCustomValidity(error:String):Void;
 	function showPicker():Void;
 }

@@ -25,20 +25,20 @@
 package js.geometry;
 
 extern class DOMMatrix extends js.geometry.DOMMatrixReadOnly {
-	function new(?init:haxe.extern.EitherType<DOMString, Array<unrestricted double>>):Void;
+	function new(?init:haxe.extern.EitherType<String, Array<Float>>):Void;
 	function fromMatrix(?other:js.geometry.DOMMatrixInit):js.geometry.DOMMatrix;
 	function fromFloat32Array(array32:Float32Array):js.geometry.DOMMatrix;
 	function fromFloat64Array(array64:Float64Array):js.geometry.DOMMatrix;
 	function multiplySelf(?other:js.geometry.DOMMatrixInit):js.geometry.DOMMatrix;
 	function preMultiplySelf(?other:js.geometry.DOMMatrixInit):js.geometry.DOMMatrix;
-	function translateSelf(?tx:unrestricted double, ?ty:unrestricted double, ?tz:unrestricted double):js.geometry.DOMMatrix;
-	function scaleSelf(?scaleX:unrestricted double, ?scaleY:unrestricted double, ?scaleZ:unrestricted double, ?originX:unrestricted double, ?originY:unrestricted double, ?originZ:unrestricted double):js.geometry.DOMMatrix;
-	function scale3dSelf(?scale:unrestricted double, ?originX:unrestricted double, ?originY:unrestricted double, ?originZ:unrestricted double):js.geometry.DOMMatrix;
-	function rotateSelf(?rotX:unrestricted double, ?rotY:unrestricted double, ?rotZ:unrestricted double):js.geometry.DOMMatrix;
-	function rotateFromVectorSelf(?x:unrestricted double, ?y:unrestricted double):js.geometry.DOMMatrix;
-	function rotateAxisAngleSelf(?x:unrestricted double, ?y:unrestricted double, ?z:unrestricted double, ?angle:unrestricted double):js.geometry.DOMMatrix;
-	function skewXSelf(?sx:unrestricted double):js.geometry.DOMMatrix;
-	function skewYSelf(?sy:unrestricted double):js.geometry.DOMMatrix;
+	function translateSelf(?tx:Float, ?ty:Float, ?tz:Float):js.geometry.DOMMatrix;
+	function scaleSelf(?scaleX:Float, ?scaleY:Float, ?scaleZ:Float, ?originX:Float, ?originY:Float, ?originZ:Float):js.geometry.DOMMatrix;
+	function scale3dSelf(?scale:Float, ?originX:Float, ?originY:Float, ?originZ:Float):js.geometry.DOMMatrix;
+	function rotateSelf(?rotX:Float, ?rotY:Float, ?rotZ:Float):js.geometry.DOMMatrix;
+	function rotateFromVectorSelf(?x:Float, ?y:Float):js.geometry.DOMMatrix;
+	function rotateAxisAngleSelf(?x:Float, ?y:Float, ?z:Float, ?angle:Float):js.geometry.DOMMatrix;
+	function skewXSelf(?sx:Float):js.geometry.DOMMatrix;
+	function skewYSelf(?sy:Float):js.geometry.DOMMatrix;
 	function invertSelf():js.geometry.DOMMatrix;
-	function setMatrixValue(transformList:DOMString):js.geometry.DOMMatrix;
+	function setMatrixValue(transformList:String):js.geometry.DOMMatrix;
 }

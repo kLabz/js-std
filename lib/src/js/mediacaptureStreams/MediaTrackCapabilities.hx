@@ -34,9 +34,9 @@ typedef MediaTrackCapabilities = {
 	@:optional
 	var frameRate : js.mediacaptureStreams.DoubleRange;
 	@:optional
-	var facingMode : Array<DOMString>;
+	var facingMode : Array<String>;
 	@:optional
-	var resizeMode : Array<DOMString>;
+	var resizeMode : Array<String>;
 	@:optional
 	var sampleRate : js.mediacaptureStreams.ULongRange;
 	@:optional
@@ -52,17 +52,17 @@ typedef MediaTrackCapabilities = {
 	@:optional
 	var channelCount : js.mediacaptureStreams.ULongRange;
 	@:optional
-	var deviceId : DOMString;
+	var deviceId : String;
 	@:optional
-	var groupId : DOMString;
+	var groupId : String;
 	@:optional
 	var backgroundBlur : Array<Bool>;
 	@:optional
-	var whiteBalanceMode : Array<DOMString>;
+	var whiteBalanceMode : Array<String>;
 	@:optional
-	var exposureMode : Array<DOMString>;
+	var exposureMode : Array<String>;
 	@:optional
-	var focusMode : Array<DOMString>;
+	var focusMode : Array<String>;
 	@:optional
 	var exposureCompensation : js.imageCapture.MediaSettingsRange;
 	@:optional
@@ -90,9 +90,9 @@ typedef MediaTrackCapabilities = {
 	@:optional
 	var torch : Array<Bool>;
 	@:optional
-	var displaySurface : DOMString;
+	var displaySurface : String;
 	@:optional
 	var logicalSurface : Bool;
 	@:optional
-	var cursor : Array<DOMString>;
+	var cursor : Array<String>;
 };

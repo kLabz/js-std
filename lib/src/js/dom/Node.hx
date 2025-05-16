@@ -51,9 +51,9 @@ extern class Node extends js.dom.EventTarget {
 	static inline var DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC : Int = 0x20;
 	function compareDocumentPosition(other:js.dom.Node):Int;
 	function contains(other:js.dom.Node):Bool;
-	function lookupPrefix(namespace:DOMString):DOMString;
-	function lookupNamespaceURI(prefix:DOMString):DOMString;
-	function isDefaultNamespace(namespace:DOMString):Bool;
+	function lookupPrefix(namespace:String):String;
+	function lookupNamespaceURI(prefix:String):String;
+	function isDefaultNamespace(namespace:String):Bool;
 	function insertBefore(node:js.dom.Node, child:js.dom.Node):js.dom.Node;
 	function appendChild(node:js.dom.Node):js.dom.Node;
 	function replaceChild(node:js.dom.Node, child:js.dom.Node):js.dom.Node;

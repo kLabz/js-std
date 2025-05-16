@@ -25,5 +25,5 @@
 package js.filterEffects;
 
 extern class SVGFEDropShadowElement extends js.svg.SVGElement {
-	function setStdDeviation(stdDeviationX:float, stdDeviationY:float):Void;
+	function setStdDeviation(stdDeviationX:Float, stdDeviationY:Float):Void;
 }

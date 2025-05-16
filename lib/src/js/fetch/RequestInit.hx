@@ -26,13 +26,13 @@ package js.fetch;
 
 typedef RequestInit = {
 	@:optional
-	var method : ByteString;
+	var method : String;
 	@:optional
 	var headers : HeadersInit;
 	@:optional
 	var body : BodyInit;
 	@:optional
-	var referrer : USVString;
+	var referrer : String;
 	@:optional
 	var referrerPolicy : js.referrerPolicy.ReferrerPolicy;
 	@:optional
@@ -44,7 +44,7 @@ typedef RequestInit = {
 	@:optional
 	var redirect : js.fetch.RequestRedirect;
 	@:optional
-	var integrity : DOMString;
+	var integrity : String;
 	@:optional
 	var keepalive : Bool;
 	@:optional
@@ -54,7 +54,7 @@ typedef RequestInit = {
 	@:optional
 	var priority : js.fetch.RequestPriority;
 	@:optional
-	var window : any;
+	var window : Any;
 	@:optional
 	var attributionReporting : js.attributionReportingApi.AttributionReportingRequestOptions;
 	@:optional

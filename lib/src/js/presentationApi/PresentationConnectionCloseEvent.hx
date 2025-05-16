@@ -25,5 +25,5 @@
 package js.presentationApi;
 
 extern class PresentationConnectionCloseEvent extends js.dom.Event {
-	function new(type:DOMString, eventInitDict:js.presentationApi.PresentationConnectionCloseEventInit):Void;
+	function new(type:String, eventInitDict:js.presentationApi.PresentationConnectionCloseEventInit):Void;
 }

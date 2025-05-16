@@ -28,6 +28,6 @@ extern class PushMessageData {
 	function arrayBuffer():ArrayBuffer;
 	function blob():js.fileapi.Blob;
 	function bytes():Uint8Array;
-	function json():any;
-	function text():USVString;
+	function json():Any;
+	function text():String;
 }

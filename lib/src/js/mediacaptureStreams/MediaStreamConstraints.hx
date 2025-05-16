@@ -32,5 +32,5 @@ typedef MediaStreamConstraints = {
 	@:optional
 	var preferCurrentTab : Bool = false;
 	@:optional
-	var peerIdentity : DOMString;
+	var peerIdentity : String;
 };

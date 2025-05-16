@@ -25,5 +25,5 @@
 package js.webmidi;
 
 extern class MIDIConnectionEvent extends js.dom.Event {
-	function new(type:DOMString, ?eventInitDict:js.webmidi.MIDIConnectionEventInit):Void;
+	function new(type:String, ?eventInitDict:js.webmidi.MIDIConnectionEventInit):Void;
 }

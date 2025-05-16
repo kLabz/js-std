@@ -26,8 +26,8 @@ package js.serviceWorkers;
 
 extern class CacheStorage {
 	function match(request:RequestInfo, ?options:js.serviceWorkers.MultiCacheQueryOptions):js.lib.Promise<haxe.extern.EitherType<js.fetch.Response, Void>>;
-	function has(cacheName:DOMString):js.lib.Promise<Bool>;
-	function open(cacheName:DOMString):js.lib.Promise<js.serviceWorkers.Cache>;
-	function delete(cacheName:DOMString):js.lib.Promise<Bool>;
-	function keys():js.lib.Promise<Array<DOMString>>;
+	function has(cacheName:String):js.lib.Promise<Bool>;
+	function open(cacheName:String):js.lib.Promise<js.serviceWorkers.Cache>;
+	function delete(cacheName:String):js.lib.Promise<Bool>;
+	function keys():js.lib.Promise<Array<String>>;
 }

@@ -25,5 +25,5 @@
 package js.clipboardApis;
 
 extern class ClipboardEvent extends js.dom.Event {
-	function new(type:DOMString, ?eventInitDict:js.clipboardApis.ClipboardEventInit):Void;
+	function new(type:String, ?eventInitDict:js.clipboardApis.ClipboardEventInit):Void;
 }

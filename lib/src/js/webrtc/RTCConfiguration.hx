@@ -36,7 +36,7 @@ typedef RTCConfiguration = {
 	@:optional
 	var certificates : Array<js.webrtc.RTCCertificate> = [];
 	@:optional
-	var iceCandidatePoolSize : octet = 0;
+	var iceCandidatePoolSize : Int = 0;
 	@:optional
-	var peerIdentity : DOMString;
+	var peerIdentity : String;
 };

@@ -25,7 +25,7 @@
 package js.streams;
 
 extern class TransformStreamDefaultController {
-	function enqueue(?chunk:any):Void;
-	function error(?reason:any):Void;
+	function enqueue(?chunk:Any):Void;
+	function error(?reason:Any):Void;
 	function terminate():Void;
 }

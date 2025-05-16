@@ -28,9 +28,9 @@ typedef ShareData = {
 	@:optional
 	var files : Array<js.fileapi.File>;
 	@:optional
-	var title : USVString;
+	var title : String;
 	@:optional
-	var text : USVString;
+	var text : String;
 	@:optional
-	var url : USVString;
+	var url : String;
 };

@@ -28,7 +28,7 @@ typedef TransitionEventInit = js.dom.EventInit & {
 	@:optional
 	var propertyName : CSSOMString = "";
 	@:optional
-	var elapsedTime : double = 0.0;
+	var elapsedTime : Float = 0.0;
 	@:optional
 	var pseudoElement : CSSOMString = "";
 };

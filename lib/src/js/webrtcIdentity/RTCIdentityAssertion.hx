@@ -25,5 +25,5 @@
 package js.webrtcIdentity;
 
 extern class RTCIdentityAssertion {
-	function new(idp:DOMString, name:DOMString):Void;
+	function new(idp:String, name:String):Void;
 }

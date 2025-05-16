@@ -25,11 +25,11 @@
 package js.websockets;
 
 extern class WebSocket extends js.dom.EventTarget {
-	function new(url:USVString, ?protocols:haxe.extern.EitherType<DOMString, Array<DOMString>>):Void;
+	function new(url:String, ?protocols:haxe.extern.EitherType<String, Array<String>>):Void;
 	static inline var CONNECTING : Int = 0;
 	static inline var OPEN : Int = 1;
 	static inline var CLOSING : Int = 2;
 	static inline var CLOSED : Int = 3;
-	function close(?code:Int, ?reason:USVString):Void;
-	function send(data:haxe.extern.EitherType<BufferSource, haxe.extern.EitherType<js.fileapi.Blob, USVString>>):Void;
+	function close(?code:Int, ?reason:String):Void;
+	function send(data:haxe.extern.EitherType<BufferSource, haxe.extern.EitherType<js.fileapi.Blob, String>>):Void;
 }

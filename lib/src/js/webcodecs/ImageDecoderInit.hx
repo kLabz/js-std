@@ -25,14 +25,14 @@
 package js.webcodecs;
 
 typedef ImageDecoderInit = {
-	var type : DOMString;
+	var type : String;
 	var data : ImageBufferSource;
 	@:optional
 	var colorSpaceConversion : js.html.ColorSpaceConversion = "default";
 	@:optional
-	var desiredWidth : unsigned long;
+	var desiredWidth : Int;
 	@:optional
-	var desiredHeight : unsigned long;
+	var desiredHeight : Int;
 	@:optional
 	var preferAnimation : Bool;
 	@:optional

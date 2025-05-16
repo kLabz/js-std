@@ -28,16 +28,16 @@ extern class USBDevice {
 	function open():js.lib.Promise<Void>;
 	function close():js.lib.Promise<Void>;
 	function forget():js.lib.Promise<Void>;
-	function selectConfiguration(configurationValue:octet):js.lib.Promise<Void>;
-	function claimInterface(interfaceNumber:octet):js.lib.Promise<Void>;
-	function releaseInterface(interfaceNumber:octet):js.lib.Promise<Void>;
-	function selectAlternateInterface(interfaceNumber:octet, alternateSetting:octet):js.lib.Promise<Void>;
+	function selectConfiguration(configurationValue:Int):js.lib.Promise<Void>;
+	function claimInterface(interfaceNumber:Int):js.lib.Promise<Void>;
+	function releaseInterface(interfaceNumber:Int):js.lib.Promise<Void>;
+	function selectAlternateInterface(interfaceNumber:Int, alternateSetting:Int):js.lib.Promise<Void>;
 	function controlTransferIn(setup:js.webusb.USBControlTransferParameters, length:Int):js.lib.Promise<js.webusb.USBInTransferResult>;
 	function controlTransferOut(setup:js.webusb.USBControlTransferParameters, ?data:BufferSource):js.lib.Promise<js.webusb.USBOutTransferResult>;
-	function clearHalt(direction:js.webusb.USBDirection, endpointNumber:octet):js.lib.Promise<Void>;
-	function transferIn(endpointNumber:octet, length:unsigned long):js.lib.Promise<js.webusb.USBInTransferResult>;
-	function transferOut(endpointNumber:octet, data:BufferSource):js.lib.Promise<js.webusb.USBOutTransferResult>;
-	function isochronousTransferIn(endpointNumber:octet, packetLengths:Array<unsigned long>):js.lib.Promise<js.webusb.USBIsochronousInTransferResult>;
-	function isochronousTransferOut(endpointNumber:octet, data:BufferSource, packetLengths:Array<unsigned long>):js.lib.Promise<js.webusb.USBIsochronousOutTransferResult>;
+	function clearHalt(direction:js.webusb.USBDirection, endpointNumber:Int):js.lib.Promise<Void>;
+	function transferIn(endpointNumber:Int, length:Int):js.lib.Promise<js.webusb.USBInTransferResult>;
+	function transferOut(endpointNumber:Int, data:BufferSource):js.lib.Promise<js.webusb.USBOutTransferResult>;
+	function isochronousTransferIn(endpointNumber:Int, packetLengths:Array<Int>):js.lib.Promise<js.webusb.USBIsochronousInTransferResult>;
+	function isochronousTransferOut(endpointNumber:Int, data:BufferSource, packetLengths:Array<Int>):js.lib.Promise<js.webusb.USBIsochronousOutTransferResult>;
 	function reset():js.lib.Promise<Void>;
 }

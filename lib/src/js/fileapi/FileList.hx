@@ -25,5 +25,5 @@
 package js.fileapi;
 
 extern class FileList {
-	function item(index:unsigned long):js.fileapi.File;
+	function item(index:Int):js.fileapi.File;
 }

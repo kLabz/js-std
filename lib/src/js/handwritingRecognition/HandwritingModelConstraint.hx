@@ -25,5 +25,5 @@
 package js.handwritingRecognition;
 
 typedef HandwritingModelConstraint = {
-	var languages : Array<DOMString>;
+	var languages : Array<String>;
 };

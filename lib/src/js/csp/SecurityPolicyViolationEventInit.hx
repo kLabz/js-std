@@ -26,27 +26,27 @@ package js.csp;
 
 typedef SecurityPolicyViolationEventInit = js.dom.EventInit & {
 	@:optional
-	var documentURI : USVString = "";
+	var documentURI : String = "";
 	@:optional
-	var referrer : USVString = "";
+	var referrer : String = "";
 	@:optional
-	var blockedURI : USVString = "";
+	var blockedURI : String = "";
 	@:optional
-	var violatedDirective : DOMString = "";
+	var violatedDirective : String = "";
 	@:optional
-	var effectiveDirective : DOMString = "";
+	var effectiveDirective : String = "";
 	@:optional
-	var originalPolicy : DOMString = "";
+	var originalPolicy : String = "";
 	@:optional
-	var sourceFile : USVString = "";
+	var sourceFile : String = "";
 	@:optional
-	var sample : DOMString = "";
+	var sample : String = "";
 	@:optional
 	var disposition : js.csp.SecurityPolicyViolationEventDisposition = "enforce";
 	@:optional
 	var statusCode : Int = 0;
 	@:optional
-	var lineNumber : unsigned long = 0;
+	var lineNumber : Int = 0;
 	@:optional
-	var columnNumber : unsigned long = 0;
+	var columnNumber : Int = 0;
 };

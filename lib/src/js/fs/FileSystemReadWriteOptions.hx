@@ -26,5 +26,5 @@ package js.fs;
 
 typedef FileSystemReadWriteOptions = {
 	@:optional
-	var at : unsigned long long;
+	var at : Float;
 };

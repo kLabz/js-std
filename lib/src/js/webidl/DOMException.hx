@@ -25,7 +25,7 @@
 package js.webidl;
 
 extern class DOMException {
-	function new(?message:DOMString, ?name:DOMString):Void;
+	function new(?message:String, ?name:String):Void;
 	static inline var INDEX_SIZE_ERR : Int = 1;
 	static inline var DOMSTRING_SIZE_ERR : Int = 2;
 	static inline var HIERARCHY_REQUEST_ERR : Int = 3;

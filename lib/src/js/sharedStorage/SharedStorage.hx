@@ -25,18 +25,18 @@
 package js.sharedStorage;
 
 extern class SharedStorage {
-	function get(key:DOMString):js.lib.Promise<DOMString>;
-	function set(key:DOMString, value:DOMString, ?options:js.sharedStorage.SharedStorageSetMethodOptions):js.lib.Promise<any>;
-	function append(key:DOMString, value:DOMString, ?options:js.sharedStorage.SharedStorageModifierMethodOptions):js.lib.Promise<any>;
-	function delete(key:DOMString, ?options:js.sharedStorage.SharedStorageModifierMethodOptions):js.lib.Promise<any>;
-	function clear(?options:js.sharedStorage.SharedStorageModifierMethodOptions):js.lib.Promise<any>;
-	function batchUpdate(methods:Array<js.sharedStorage.SharedStorageModifierMethod>, ?options:js.sharedStorage.SharedStorageModifierMethodOptions):js.lib.Promise<any>;
-	function selectURL(name:DOMString, urls:Array<js.sharedStorage.SharedStorageUrlWithMetadata>, ?options:js.sharedStorage.SharedStorageRunOperationMethodOptions):js.lib.Promise<SharedStorageResponse>;
-	function run(name:DOMString, ?options:js.sharedStorage.SharedStorageRunOperationMethodOptions):js.lib.Promise<any>;
-	function createWorklet(moduleURL:USVString, ?options:js.sharedStorage.SharedStorageWorkletOptions):js.lib.Promise<js.sharedStorage.SharedStorageWorklet>;
-	function length():js.lib.Promise<unsigned long>;
-	function remainingBudget():js.lib.Promise<double>;
-	function keys():Iterator<DOMString>;
-	function values():Iterator<DOMString>;
+	function get(key:String):js.lib.Promise<String>;
+	function set(key:String, value:String, ?options:js.sharedStorage.SharedStorageSetMethodOptions):js.lib.Promise<Any>;
+	function append(key:String, value:String, ?options:js.sharedStorage.SharedStorageModifierMethodOptions):js.lib.Promise<Any>;
+	function delete(key:String, ?options:js.sharedStorage.SharedStorageModifierMethodOptions):js.lib.Promise<Any>;
+	function clear(?options:js.sharedStorage.SharedStorageModifierMethodOptions):js.lib.Promise<Any>;
+	function batchUpdate(methods:Array<js.sharedStorage.SharedStorageModifierMethod>, ?options:js.sharedStorage.SharedStorageModifierMethodOptions):js.lib.Promise<Any>;
+	function selectURL(name:String, urls:Array<js.sharedStorage.SharedStorageUrlWithMetadata>, ?options:js.sharedStorage.SharedStorageRunOperationMethodOptions):js.lib.Promise<SharedStorageResponse>;
+	function run(name:String, ?options:js.sharedStorage.SharedStorageRunOperationMethodOptions):js.lib.Promise<Any>;
+	function createWorklet(moduleURL:String, ?options:js.sharedStorage.SharedStorageWorkletOptions):js.lib.Promise<js.sharedStorage.SharedStorageWorklet>;
+	function length():js.lib.Promise<Int>;
+	function remainingBudget():js.lib.Promise<Float>;
+	function keys():Iterator<String>;
+	function values():Iterator<String>;
 	function entries():Iterator<Array<Dynamic>>;
 }

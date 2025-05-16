@@ -26,18 +26,18 @@ package js.webrtcStats;
 
 typedef RTCDataChannelStats = js.webrtc.RTCStats & {
 	@:optional
-	var label : DOMString;
+	var label : String;
 	@:optional
-	var protocol : DOMString;
+	var protocol : String;
 	@:optional
 	var dataChannelIdentifier : Int;
 	var state : js.webrtc.RTCDataChannelState;
 	@:optional
-	var messagesSent : unsigned long;
+	var messagesSent : Int;
 	@:optional
-	var bytesSent : unsigned long long;
+	var bytesSent : Float;
 	@:optional
-	var messagesReceived : unsigned long;
+	var messagesReceived : Int;
 	@:optional
-	var bytesReceived : unsigned long long;
+	var bytesReceived : Float;
 };

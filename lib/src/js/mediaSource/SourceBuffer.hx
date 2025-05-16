@@ -27,6 +27,6 @@ package js.mediaSource;
 extern class SourceBuffer extends js.dom.EventTarget {
 	function appendBuffer(data:BufferSource):Void;
 	function abort():Void;
-	function changeType(type:DOMString):Void;
-	function remove(start:double, end:unrestricted double):Void;
+	function changeType(type:String):Void;
+	function remove(start:Float, end:Float):Void;
 }

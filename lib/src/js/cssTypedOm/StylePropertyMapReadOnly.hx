@@ -25,10 +25,10 @@
 package js.cssTypedOm;
 
 extern class StylePropertyMapReadOnly {
-	function keys():Iterator<USVString>;
+	function keys():Iterator<String>;
 	function values():Iterator<Array<js.cssTypedOm.CSSStyleValue>>;
 	function entries():Iterator<Array<Dynamic>>;
-	function get(property:USVString):haxe.extern.EitherType<Void, js.cssTypedOm.CSSStyleValue>;
-	function getAll(property:USVString):Array<js.cssTypedOm.CSSStyleValue>;
-	function has(property:USVString):Bool;
+	function get(property:String):haxe.extern.EitherType<Void, js.cssTypedOm.CSSStyleValue>;
+	function getAll(property:String):Array<js.cssTypedOm.CSSStyleValue>;
+	function has(property:String):Bool;
 }

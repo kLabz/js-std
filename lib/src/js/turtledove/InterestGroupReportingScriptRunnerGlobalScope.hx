@@ -25,7 +25,7 @@
 package js.turtledove;
 
 extern class InterestGroupReportingScriptRunnerGlobalScope extends js.turtledove.InterestGroupScriptRunnerGlobalScope {
-	function sendReportTo(url:DOMString):Void;
-	function registerAdBeacon(map:haxe.DynamicAccess<USVString>):Void;
-	function registerAdMacro(name:DOMString, value:USVString):Void;
+	function sendReportTo(url:String):Void;
+	function registerAdBeacon(map:haxe.DynamicAccess<String>):Void;
+	function registerAdMacro(name:String, value:String):Void;
 }

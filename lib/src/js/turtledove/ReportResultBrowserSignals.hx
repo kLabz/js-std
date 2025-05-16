@@ -25,11 +25,11 @@
 package js.turtledove;
 
 typedef ReportResultBrowserSignals = js.turtledove.ReportingBrowserSignals & {
-	var desirability : double;
+	var desirability : Float;
 	@:optional
-	var topLevelSellerSignals : DOMString;
+	var topLevelSellerSignals : String;
 	@:optional
-	var modifiedBid : double;
+	var modifiedBid : Float;
 	@:optional
-	var dataVersion : unsigned long;
+	var dataVersion : Int;
 };

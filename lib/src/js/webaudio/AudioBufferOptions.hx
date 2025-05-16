@@ -26,7 +26,7 @@ package js.webaudio;
 
 typedef AudioBufferOptions = {
 	@:optional
-	var numberOfChannels : unsigned long = 1;
-	var length : unsigned long;
-	var sampleRate : float;
+	var numberOfChannels : Int = 1;
+	var length : Int;
+	var sampleRate : Float;
 };

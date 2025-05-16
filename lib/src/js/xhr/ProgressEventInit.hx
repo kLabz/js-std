@@ -28,7 +28,7 @@ typedef ProgressEventInit = js.dom.EventInit & {
 	@:optional
 	var lengthComputable : Bool = false;
 	@:optional
-	var loaded : double = 0;
+	var loaded : Float = 0;
 	@:optional
-	var total : double = 0;
+	var total : Float = 0;
 };

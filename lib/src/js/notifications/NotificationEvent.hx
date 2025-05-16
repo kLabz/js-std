@@ -25,5 +25,5 @@
 package js.notifications;
 
 extern class NotificationEvent extends js.serviceWorkers.ExtendableEvent {
-	function new(type:DOMString, eventInitDict:js.notifications.NotificationEventInit):Void;
+	function new(type:String, eventInitDict:js.notifications.NotificationEventInit):Void;
 }

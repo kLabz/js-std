@@ -29,5 +29,5 @@ extern class ImageDecoder {
 	function decode(?options:js.webcodecs.ImageDecodeOptions):js.lib.Promise<js.webcodecs.ImageDecodeResult>;
 	function reset():Void;
 	function close():Void;
-	function isTypeSupported(type:DOMString):js.lib.Promise<Bool>;
+	function isTypeSupported(type:String):js.lib.Promise<Bool>;
 }

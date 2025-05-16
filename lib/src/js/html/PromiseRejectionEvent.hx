@@ -25,5 +25,5 @@
 package js.html;
 
 extern class PromiseRejectionEvent extends js.dom.Event {
-	function new(type:DOMString, eventInitDict:js.html.PromiseRejectionEventInit):Void;
+	function new(type:String, eventInitDict:js.html.PromiseRejectionEventInit):Void;
 }

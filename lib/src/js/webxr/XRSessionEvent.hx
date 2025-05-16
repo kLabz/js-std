@@ -25,5 +25,5 @@
 package js.webxr;
 
 extern class XRSessionEvent extends js.dom.Event {
-	function new(type:DOMString, eventInitDict:js.webxr.XRSessionEventInit):Void;
+	function new(type:String, eventInitDict:js.webxr.XRSessionEventInit):Void;
 }

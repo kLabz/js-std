@@ -25,5 +25,5 @@
 package js.cssHighlightApi;
 
 extern class HighlightRegistry {
-	function highlightsFromPoint(x:float, y:float, ?options:js.cssHighlightApi.HighlightsFromPointOptions):Array<js.cssHighlightApi.Highlight>;
+	function highlightsFromPoint(x:Float, y:Float, ?options:js.cssHighlightApi.HighlightsFromPointOptions):Array<js.cssHighlightApi.Highlight>;
 }

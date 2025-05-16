@@ -26,11 +26,11 @@ package js.paymentHandler;
 
 typedef PaymentRequestEventInit = js.serviceWorkers.ExtendableEventInit & {
 	@:optional
-	var topOrigin : USVString;
+	var topOrigin : String;
 	@:optional
-	var paymentRequestOrigin : USVString;
+	var paymentRequestOrigin : String;
 	@:optional
-	var paymentRequestId : DOMString;
+	var paymentRequestId : String;
 	@:optional
 	var methodData : Array<js.paymentRequest.PaymentMethodData>;
 	@:optional

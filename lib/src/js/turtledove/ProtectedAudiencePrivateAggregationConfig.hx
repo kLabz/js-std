@@ -26,5 +26,5 @@ package js.turtledove;
 
 typedef ProtectedAudiencePrivateAggregationConfig = {
 	@:optional
-	var aggregationCoordinatorOrigin : USVString;
+	var aggregationCoordinatorOrigin : String;
 };

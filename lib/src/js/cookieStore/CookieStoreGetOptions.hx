@@ -26,7 +26,7 @@ package js.cookieStore;
 
 typedef CookieStoreGetOptions = {
 	@:optional
-	var name : USVString;
+	var name : String;
 	@:optional
-	var url : USVString;
+	var url : String;
 };

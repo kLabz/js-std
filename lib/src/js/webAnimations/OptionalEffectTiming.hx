@@ -26,21 +26,21 @@ package js.webAnimations;
 
 typedef OptionalEffectTiming = {
 	@:optional
-	var delay : double;
+	var delay : Float;
 	@:optional
-	var endDelay : double;
+	var endDelay : Float;
 	@:optional
 	var fill : js.webAnimations.FillMode;
 	@:optional
-	var iterationStart : double;
+	var iterationStart : Float;
 	@:optional
-	var iterations : unrestricted double;
+	var iterations : Float;
 	@:optional
-	var duration : haxe.extern.EitherType<unrestricted double, DOMString>;
+	var duration : haxe.extern.EitherType<Float, String>;
 	@:optional
 	var direction : js.webAnimations.PlaybackDirection;
 	@:optional
-	var easing : DOMString;
+	var easing : String;
 	@:optional
-	var playbackRate : double;
+	var playbackRate : Float;
 };

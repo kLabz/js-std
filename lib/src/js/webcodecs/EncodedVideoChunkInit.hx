@@ -26,9 +26,9 @@ package js.webcodecs;
 
 typedef EncodedVideoChunkInit = {
 	var type : js.webcodecs.EncodedVideoChunkType;
-	var timestamp : long long;
+	var timestamp : Float;
 	@:optional
-	var duration : unsigned long long;
+	var duration : Float;
 	var data : AllowSharedBufferSource;
 	@:optional
 	var transfer : Array<ArrayBuffer> = [];

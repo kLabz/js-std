@@ -28,9 +28,9 @@ typedef MLGemmOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var c : js.webnn.MLOperand;
 	@:optional
-	var alpha : double = 1.0;
+	var alpha : Float = 1.0;
 	@:optional
-	var beta : double = 1.0;
+	var beta : Float = 1.0;
 	@:optional
 	var aTranspose : Bool = false;
 	@:optional

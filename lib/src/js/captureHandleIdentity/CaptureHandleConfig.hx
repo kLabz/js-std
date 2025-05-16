@@ -28,7 +28,7 @@ typedef CaptureHandleConfig = {
 	@:optional
 	var exposeOrigin : Bool = false;
 	@:optional
-	var handle : DOMString = "";
+	var handle : String = "";
 	@:optional
-	var permittedOrigins : Array<DOMString> = [];
+	var permittedOrigins : Array<String> = [];
 };

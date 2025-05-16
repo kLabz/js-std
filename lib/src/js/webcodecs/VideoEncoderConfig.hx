@@ -25,29 +25,29 @@
 package js.webcodecs;
 
 typedef VideoEncoderConfig = {
-	var codec : DOMString;
-	var width : unsigned long;
-	var height : unsigned long;
+	var codec : String;
+	var width : Int;
+	var height : Int;
 	@:optional
-	var displayWidth : unsigned long;
+	var displayWidth : Int;
 	@:optional
-	var displayHeight : unsigned long;
+	var displayHeight : Int;
 	@:optional
-	var bitrate : unsigned long long;
+	var bitrate : Float;
 	@:optional
-	var framerate : double;
+	var framerate : Float;
 	@:optional
 	var hardwareAcceleration : js.webcodecs.HardwareAcceleration = "no-preference";
 	@:optional
 	var alpha : js.webcodecs.AlphaOption = "discard";
 	@:optional
-	var scalabilityMode : DOMString;
+	var scalabilityMode : String;
 	@:optional
 	var bitrateMode : js.webcodecs.VideoEncoderBitrateMode = "variable";
 	@:optional
 	var latencyMode : js.webcodecs.LatencyMode = "quality";
 	@:optional
-	var contentHint : DOMString;
+	var contentHint : String;
 	@:optional
 	var hevc : js.webcodecsHevcCodecRegistration.HevcEncoderConfig;
 	@:optional

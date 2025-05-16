@@ -25,8 +25,8 @@
 package js.dom;
 
 extern class DOMImplementation {
-	function createDocumentType(qualifiedName:DOMString, publicId:DOMString, systemId:DOMString):js.dom.DocumentType;
-	function createDocument(namespace:DOMString, qualifiedName:DOMString, ?doctype:js.dom.DocumentType):js.dom.XMLDocument;
-	function createHTMLDocument(?title:DOMString):js.dom.Document;
+	function createDocumentType(qualifiedName:String, publicId:String, systemId:String):js.dom.DocumentType;
+	function createDocument(namespace:String, qualifiedName:String, ?doctype:js.dom.DocumentType):js.dom.XMLDocument;
+	function createHTMLDocument(?title:String):js.dom.Document;
 	function hasFeature():Bool;
 }

@@ -26,7 +26,7 @@ package js.webgpu;
 
 typedef GPURequestAdapterOptions = {
 	@:optional
-	var featureLevel : DOMString = "core";
+	var featureLevel : String = "core";
 	@:optional
 	var powerPreference : js.webgpu.GPUPowerPreference;
 	@:optional

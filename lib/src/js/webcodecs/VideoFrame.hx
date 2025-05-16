@@ -28,7 +28,7 @@ extern class VideoFrame {
 	function new(image:CanvasImageSource, ?init:js.webcodecs.VideoFrameInit):Void;
 	function new(data:AllowSharedBufferSource, init:js.webcodecs.VideoFrameBufferInit):Void;
 	function metadata():js.webcodecs.VideoFrameMetadata;
-	function allocationSize(?options:js.webcodecs.VideoFrameCopyToOptions):unsigned long;
+	function allocationSize(?options:js.webcodecs.VideoFrameCopyToOptions):Int;
 	function copyTo(destination:AllowSharedBufferSource, ?options:js.webcodecs.VideoFrameCopyToOptions):js.lib.Promise<Array<js.webcodecs.PlaneLayout>>;
 	function clone():js.webcodecs.VideoFrame;
 	function close():Void;

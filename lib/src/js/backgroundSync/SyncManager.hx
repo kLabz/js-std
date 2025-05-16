@@ -25,6 +25,6 @@
 package js.backgroundSync;
 
 extern class SyncManager {
-	function register(tag:DOMString):js.lib.Promise<Void>;
-	function getTags():js.lib.Promise<Array<DOMString>>;
+	function register(tag:String):js.lib.Promise<Void>;
+	function getTags():js.lib.Promise<Array<String>>;
 }

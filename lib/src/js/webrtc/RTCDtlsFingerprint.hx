@@ -26,7 +26,7 @@ package js.webrtc;
 
 typedef RTCDtlsFingerprint = {
 	@:optional
-	var algorithm : DOMString;
+	var algorithm : String;
 	@:optional
-	var value : DOMString;
+	var value : String;
 };

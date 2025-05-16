@@ -25,5 +25,5 @@
 package js.html;
 
 extern class NavigationHistoryEntry extends js.dom.EventTarget {
-	function getState():any;
+	function getState():Any;
 }

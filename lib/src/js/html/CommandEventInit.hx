@@ -28,5 +28,5 @@ typedef CommandEventInit = js.dom.EventInit & {
 	@:optional
 	var source : js.dom.Element = null;
 	@:optional
-	var command : DOMString = "";
+	var command : String = "";
 };

@@ -26,17 +26,17 @@ package js.paymentHandler;
 
 typedef PaymentHandlerResponse = {
 	@:optional
-	var methodName : DOMString;
+	var methodName : String;
 	@:optional
 	var details : object;
 	@:optional
-	var payerName : DOMString;
+	var payerName : String;
 	@:optional
-	var payerEmail : DOMString;
+	var payerEmail : String;
 	@:optional
-	var payerPhone : DOMString;
+	var payerPhone : String;
 	@:optional
 	var shippingAddress : js.paymentHandler.AddressInit;
 	@:optional
-	var shippingOption : DOMString;
+	var shippingOption : String;
 };

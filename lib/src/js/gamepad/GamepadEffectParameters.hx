@@ -26,15 +26,15 @@ package js.gamepad;
 
 typedef GamepadEffectParameters = {
 	@:optional
-	var duration : unsigned long long = 0;
+	var duration : Float = 0;
 	@:optional
-	var startDelay : unsigned long long = 0;
+	var startDelay : Float = 0;
 	@:optional
-	var strongMagnitude : double = 0.0;
+	var strongMagnitude : Float = 0.0;
 	@:optional
-	var weakMagnitude : double = 0.0;
+	var weakMagnitude : Float = 0.0;
 	@:optional
-	var leftTrigger : double = 0.0;
+	var leftTrigger : Float = 0.0;
 	@:optional
-	var rightTrigger : double = 0.0;
+	var rightTrigger : Float = 0.0;
 };

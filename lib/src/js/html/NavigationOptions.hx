@@ -26,5 +26,5 @@ package js.html;
 
 typedef NavigationOptions = {
 	@:optional
-	var info : any;
+	var info : Any;
 };

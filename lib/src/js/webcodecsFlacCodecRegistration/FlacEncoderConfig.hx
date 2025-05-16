@@ -26,7 +26,7 @@ package js.webcodecsFlacCodecRegistration;
 
 typedef FlacEncoderConfig = {
 	@:optional
-	var blockSize : unsigned long = 0;
+	var blockSize : Int = 0;
 	@:optional
-	var compressLevel : unsigned long = 5;
+	var compressLevel : Int = 5;
 };

@@ -25,6 +25,6 @@
 package js.paymentRequest;
 
 typedef PaymentCurrencyAmount = {
-	var currency : DOMString;
-	var value : DOMString;
+	var currency : String;
+	var value : String;
 };

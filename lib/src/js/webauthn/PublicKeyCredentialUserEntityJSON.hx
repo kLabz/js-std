@@ -26,6 +26,6 @@ package js.webauthn;
 
 typedef PublicKeyCredentialUserEntityJSON = {
 	var id : Base64URLString;
-	var name : DOMString;
-	var displayName : DOMString;
+	var name : String;
+	var displayName : String;
 };

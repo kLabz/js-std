@@ -26,5 +26,5 @@ package js.webnn;
 
 typedef MLOperatorOptions = {
 	@:optional
-	var label : USVString = "";
+	var label : String = "";
 };

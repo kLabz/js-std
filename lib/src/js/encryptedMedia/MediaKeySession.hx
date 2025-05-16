@@ -25,8 +25,8 @@
 package js.encryptedMedia;
 
 extern class MediaKeySession extends js.dom.EventTarget {
-	function generateRequest(initDataType:DOMString, initData:BufferSource):js.lib.Promise<Void>;
-	function load(sessionId:DOMString):js.lib.Promise<Bool>;
+	function generateRequest(initDataType:String, initData:BufferSource):js.lib.Promise<Void>;
+	function load(sessionId:String):js.lib.Promise<Bool>;
 	function update(response:BufferSource):js.lib.Promise<Void>;
 	function close():js.lib.Promise<Void>;
 	function remove():js.lib.Promise<Void>;

@@ -25,5 +25,5 @@
 package js.webrtc;
 
 typedef RTCRtpCodecParameters = js.webrtc.RTCRtpCodec & {
-	var payloadType : octet;
+	var payloadType : Int;
 };

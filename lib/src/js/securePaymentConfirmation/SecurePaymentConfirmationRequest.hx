@@ -26,19 +26,19 @@ package js.securePaymentConfirmation;
 
 typedef SecurePaymentConfirmationRequest = {
 	var challenge : BufferSource;
-	var rpId : USVString;
+	var rpId : String;
 	var credentialIds : Array<BufferSource>;
 	var instrument : js.securePaymentConfirmation.PaymentCredentialInstrument;
 	@:optional
-	var timeout : unsigned long;
+	var timeout : Int;
 	@:optional
-	var payeeName : USVString;
+	var payeeName : String;
 	@:optional
-	var payeeOrigin : USVString;
+	var payeeOrigin : String;
 	@:optional
 	var extensions : js.webauthn.AuthenticationExtensionsClientInputs;
 	@:optional
-	var locale : Array<USVString>;
+	var locale : Array<String>;
 	@:optional
 	var showOptOut : Bool;
 };

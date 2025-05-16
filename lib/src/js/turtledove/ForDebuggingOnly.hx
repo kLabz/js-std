@@ -25,6 +25,6 @@
 package js.turtledove;
 
 extern class ForDebuggingOnly {
-	function reportAdAuctionWin(url:USVString):Void;
-	function reportAdAuctionLoss(url:USVString):Void;
+	function reportAdAuctionWin(url:String):Void;
+	function reportAdAuctionLoss(url:String):Void;
 }

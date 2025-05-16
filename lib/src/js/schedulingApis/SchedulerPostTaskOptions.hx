@@ -30,5 +30,5 @@ typedef SchedulerPostTaskOptions = {
 	@:optional
 	var priority : js.schedulingApis.TaskPriority;
 	@:optional
-	var delay : unsigned long long = 0;
+	var delay : Float = 0;
 };

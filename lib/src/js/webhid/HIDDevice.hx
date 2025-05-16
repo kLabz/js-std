@@ -28,7 +28,7 @@ extern class HIDDevice extends js.dom.EventTarget {
 	function open():js.lib.Promise<Void>;
 	function close():js.lib.Promise<Void>;
 	function forget():js.lib.Promise<Void>;
-	function sendReport(reportId:octet, data:BufferSource):js.lib.Promise<Void>;
-	function sendFeatureReport(reportId:octet, data:BufferSource):js.lib.Promise<Void>;
-	function receiveFeatureReport(reportId:octet):js.lib.Promise<DataView>;
+	function sendReport(reportId:Int, data:BufferSource):js.lib.Promise<Void>;
+	function sendFeatureReport(reportId:Int, data:BufferSource):js.lib.Promise<Void>;
+	function receiveFeatureReport(reportId:Int):js.lib.Promise<DataView>;
 }

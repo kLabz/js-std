@@ -25,6 +25,6 @@
 package js.orientationEvent;
 
 extern class DeviceMotionEvent extends js.dom.Event {
-	function new(type:DOMString, ?eventInitDict:js.orientationEvent.DeviceMotionEventInit):Void;
+	function new(type:String, ?eventInitDict:js.orientationEvent.DeviceMotionEventInit):Void;
 	function requestPermission():js.lib.Promise<js.permissions.PermissionState>;
 }

@@ -26,5 +26,5 @@ package js.encryptedMedia;
 
 typedef MediaKeysPolicy = {
 	@:optional
-	var minHdcpVersion : DOMString;
+	var minHdcpVersion : String;
 };

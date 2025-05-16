@@ -26,7 +26,7 @@ package js.webhid;
 
 typedef HIDDeviceFilter = {
 	@:optional
-	var vendorId : unsigned long;
+	var vendorId : Int;
 	@:optional
 	var productId : Int;
 	@:optional

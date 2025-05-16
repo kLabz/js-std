@@ -25,5 +25,5 @@
 package js.userTiming;
 
 extern class PerformanceMark extends js.performanceTimeline.PerformanceEntry {
-	function new(markName:DOMString, ?markOptions:js.userTiming.PerformanceMarkOptions):Void;
+	function new(markName:String, ?markOptions:js.userTiming.PerformanceMarkOptions):Void;
 }

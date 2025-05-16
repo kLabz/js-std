@@ -25,7 +25,7 @@
 package js.sharedStorage;
 
 typedef SharedStorageUrlWithMetadata = {
-	var url : USVString;
+	var url : String;
 	@:optional
 	var reportingMetadata : object;
 };

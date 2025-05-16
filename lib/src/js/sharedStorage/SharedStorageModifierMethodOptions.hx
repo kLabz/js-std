@@ -26,5 +26,5 @@ package js.sharedStorage;
 
 typedef SharedStorageModifierMethodOptions = {
 	@:optional
-	var withLock : DOMString;
+	var withLock : String;
 };

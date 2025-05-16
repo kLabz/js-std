@@ -25,5 +25,5 @@
 package js.datacue;
 
 extern class DataCue extends js.html.TextTrackCue {
-	function new(startTime:double, endTime:unrestricted double, value:any, ?type:DOMString):Void;
+	function new(startTime:Float, endTime:Float, value:Any, ?type:String):Void;
 }

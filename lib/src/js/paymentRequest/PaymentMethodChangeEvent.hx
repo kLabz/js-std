@@ -25,5 +25,5 @@
 package js.paymentRequest;
 
 extern class PaymentMethodChangeEvent extends js.paymentRequest.PaymentRequestUpdateEvent {
-	function new(type:DOMString, ?eventInitDict:js.paymentRequest.PaymentMethodChangeEventInit):Void;
+	function new(type:String, ?eventInitDict:js.paymentRequest.PaymentMethodChangeEventInit):Void;
 }

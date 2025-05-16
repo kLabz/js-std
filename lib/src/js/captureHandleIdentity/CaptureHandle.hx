@@ -26,7 +26,7 @@ package js.captureHandleIdentity;
 
 typedef CaptureHandle = {
 	@:optional
-	var origin : DOMString;
+	var origin : String;
 	@:optional
-	var handle : DOMString;
+	var handle : String;
 };

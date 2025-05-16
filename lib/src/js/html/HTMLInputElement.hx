@@ -26,14 +26,14 @@ package js.html;
 
 extern class HTMLInputElement extends js.html.HTMLElement {
 	function new():Void;
-	function stepUp(?n:long):Void;
-	function stepDown(?n:long):Void;
+	function stepUp(?n:Int):Void;
+	function stepDown(?n:Int):Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
-	function setCustomValidity(error:DOMString):Void;
+	function setCustomValidity(error:String):Void;
 	function select():Void;
-	overload function setRangeText(replacement:DOMString):Void;
-	overload function setRangeText(replacement:DOMString, start:unsigned long, end:unsigned long, ?selectionMode:js.html.SelectionMode):Void;
-	function setSelectionRange(start:unsigned long, end:unsigned long, ?direction:DOMString):Void;
+	overload function setRangeText(replacement:String):Void;
+	overload function setRangeText(replacement:String, start:Int, end:Int, ?selectionMode:js.html.SelectionMode):Void;
+	function setSelectionRange(start:Int, end:Int, ?direction:String):Void;
 	function showPicker():Void;
 }

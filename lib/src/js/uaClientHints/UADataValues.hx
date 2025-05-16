@@ -26,25 +26,25 @@ package js.uaClientHints;
 
 typedef UADataValues = {
 	@:optional
-	var architecture : DOMString;
+	var architecture : String;
 	@:optional
-	var bitness : DOMString;
+	var bitness : String;
 	@:optional
 	var brands : Array<js.uaClientHints.NavigatorUABrandVersion>;
 	@:optional
-	var formFactors : Array<DOMString>;
+	var formFactors : Array<String>;
 	@:optional
 	var fullVersionList : Array<js.uaClientHints.NavigatorUABrandVersion>;
 	@:optional
-	var model : DOMString;
+	var model : String;
 	@:optional
 	var mobile : Bool;
 	@:optional
-	var platform : DOMString;
+	var platform : String;
 	@:optional
-	var platformVersion : DOMString;
+	var platformVersion : String;
 	@:optional
-	var uaFullVersion : DOMString;
+	var uaFullVersion : String;
 	@:optional
 	var wow64 : Bool;
 };

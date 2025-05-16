@@ -26,7 +26,7 @@ package js.writingAssistanceApis;
 
 typedef RewriterRewriteOptions = {
 	@:optional
-	var context : DOMString;
+	var context : String;
 	@:optional
 	var signal : js.dom.AbortSignal;
 };

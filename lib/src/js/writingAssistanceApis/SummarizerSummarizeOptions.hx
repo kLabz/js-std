@@ -28,5 +28,5 @@ typedef SummarizerSummarizeOptions = {
 	@:optional
 	var signal : js.dom.AbortSignal;
 	@:optional
-	var context : DOMString;
+	var context : String;
 };

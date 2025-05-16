@@ -34,5 +34,5 @@ typedef SharedStorageRunOperationMethodOptions = {
 	@:optional
 	var privateAggregationConfig : js.sharedStorage.SharedStoragePrivateAggregationConfig;
 	@:optional
-	var savedQuery : DOMString;
+	var savedQuery : String;
 };

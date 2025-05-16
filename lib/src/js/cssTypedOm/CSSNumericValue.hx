@@ -32,8 +32,8 @@ extern class CSSNumericValue extends js.cssTypedOm.CSSStyleValue {
 	function min(values:CSSNumberish):js.cssTypedOm.CSSNumericValue;
 	function max(values:CSSNumberish):js.cssTypedOm.CSSNumericValue;
 	function equals(value:CSSNumberish):Bool;
-	function to(unit:USVString):js.cssTypedOm.CSSUnitValue;
-	function toSum(units:USVString):js.cssTypedOm.CSSMathSum;
+	function to(unit:String):js.cssTypedOm.CSSUnitValue;
+	function toSum(units:String):js.cssTypedOm.CSSMathSum;
 	function type():js.cssTypedOm.CSSNumericType;
-	function parse(cssText:USVString):js.cssTypedOm.CSSNumericValue;
+	function parse(cssText:String):js.cssTypedOm.CSSNumericValue;
 }

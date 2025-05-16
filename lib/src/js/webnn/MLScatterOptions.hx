@@ -26,5 +26,5 @@ package js.webnn;
 
 typedef MLScatterOptions = js.webnn.MLOperatorOptions & {
 	@:optional
-	var axis : unsigned long = 0;
+	var axis : Int = 0;
 };

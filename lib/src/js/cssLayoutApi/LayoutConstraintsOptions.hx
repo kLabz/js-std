@@ -26,21 +26,21 @@ package js.cssLayoutApi;
 
 typedef LayoutConstraintsOptions = {
 	@:optional
-	var availableInlineSize : double;
+	var availableInlineSize : Float;
 	@:optional
-	var availableBlockSize : double;
+	var availableBlockSize : Float;
 	@:optional
-	var fixedInlineSize : double;
+	var fixedInlineSize : Float;
 	@:optional
-	var fixedBlockSize : double;
+	var fixedBlockSize : Float;
 	@:optional
-	var percentageInlineSize : double;
+	var percentageInlineSize : Float;
 	@:optional
-	var percentageBlockSize : double;
+	var percentageBlockSize : Float;
 	@:optional
-	var blockFragmentationOffset : double;
+	var blockFragmentationOffset : Float;
 	@:optional
 	var blockFragmentationType : js.cssLayoutApi.BlockFragmentationType = "none";
 	@:optional
-	var data : any;
+	var data : Any;
 };

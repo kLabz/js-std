@@ -25,7 +25,7 @@
 package js.html;
 
 extern class HTMLOptionsCollection extends js.dom.HTMLCollection {
-	function (index:unsigned long, option:js.html.HTMLOptionElement):Void;
-	function add(element:haxe.extern.EitherType<js.html.HTMLOptionElement, js.html.HTMLOptGroupElement>, ?before:haxe.extern.EitherType<js.html.HTMLElement, long>):Void;
-	function remove(index:long):Void;
+	function (index:Int, option:js.html.HTMLOptionElement):Void;
+	function add(element:haxe.extern.EitherType<js.html.HTMLOptionElement, js.html.HTMLOptGroupElement>, ?before:haxe.extern.EitherType<js.html.HTMLElement, Int>):Void;
+	function remove(index:Int):Void;
 }

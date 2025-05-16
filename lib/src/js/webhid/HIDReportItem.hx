@@ -46,39 +46,39 @@ typedef HIDReportItem = {
 	@:optional
 	var wrap : Bool;
 	@:optional
-	var usages : Array<unsigned long>;
+	var usages : Array<Int>;
 	@:optional
-	var usageMinimum : unsigned long;
+	var usageMinimum : Int;
 	@:optional
-	var usageMaximum : unsigned long;
+	var usageMaximum : Int;
 	@:optional
 	var reportSize : Int;
 	@:optional
 	var reportCount : Int;
 	@:optional
-	var unitExponent : byte;
+	var unitExponent : Int;
 	@:optional
 	var unitSystem : js.webhid.HIDUnitSystem;
 	@:optional
-	var unitFactorLengthExponent : byte;
+	var unitFactorLengthExponent : Int;
 	@:optional
-	var unitFactorMassExponent : byte;
+	var unitFactorMassExponent : Int;
 	@:optional
-	var unitFactorTimeExponent : byte;
+	var unitFactorTimeExponent : Int;
 	@:optional
-	var unitFactorTemperatureExponent : byte;
+	var unitFactorTemperatureExponent : Int;
 	@:optional
-	var unitFactorCurrentExponent : byte;
+	var unitFactorCurrentExponent : Int;
 	@:optional
-	var unitFactorLuminousIntensityExponent : byte;
+	var unitFactorLuminousIntensityExponent : Int;
 	@:optional
-	var logicalMinimum : long;
+	var logicalMinimum : Int;
 	@:optional
-	var logicalMaximum : long;
+	var logicalMaximum : Int;
 	@:optional
-	var physicalMinimum : long;
+	var physicalMinimum : Int;
 	@:optional
-	var physicalMaximum : long;
+	var physicalMaximum : Int;
 	@:optional
-	var strings : Array<DOMString>;
+	var strings : Array<String>;
 };

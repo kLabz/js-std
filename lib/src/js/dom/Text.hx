@@ -25,6 +25,6 @@
 package js.dom;
 
 extern class Text extends js.dom.CharacterData {
-	function new(?data:DOMString):Void;
-	function splitText(offset:unsigned long):js.dom.Text;
+	function new(?data:String):Void;
+	function splitText(offset:Int):js.dom.Text;
 }

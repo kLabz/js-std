@@ -25,6 +25,6 @@
 package js.serviceWorkers;
 
 extern class ServiceWorker extends js.dom.EventTarget {
-	overload function postMessage(message:any, transfer:Array<object>):Void;
-	overload function postMessage(message:any, ?options:js.html.StructuredSerializeOptions):Void;
+	overload function postMessage(message:Any, transfer:Array<object>):Void;
+	overload function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;
 }

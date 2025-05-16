@@ -30,5 +30,5 @@ typedef ViewTimelineOptions = {
 	@:optional
 	var axis : js.scrollAnimations.ScrollAxis = "block";
 	@:optional
-	var inset : haxe.extern.EitherType<DOMString, Array<haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, js.cssTypedOm.CSSKeywordValue>>> = "auto";
+	var inset : haxe.extern.EitherType<String, Array<haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, js.cssTypedOm.CSSKeywordValue>>> = "auto";
 };

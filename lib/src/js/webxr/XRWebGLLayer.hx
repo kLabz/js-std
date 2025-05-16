@@ -27,5 +27,5 @@ package js.webxr;
 extern class XRWebGLLayer extends js.webxr.XRLayer {
 	function new(session:js.webxr.XRSession, context:XRWebGLRenderingContext, ?layerInit:js.webxr.XRWebGLLayerInit):Void;
 	function getViewport(view:js.webxr.XRView):js.webxr.XRViewport;
-	function getNativeFramebufferScaleFactor(session:js.webxr.XRSession):double;
+	function getNativeFramebufferScaleFactor(session:js.webxr.XRSession):Float;
 }

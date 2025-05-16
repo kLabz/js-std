@@ -25,5 +25,5 @@
 package js.webcrypto;
 
 typedef KeyAlgorithm = {
-	var name : DOMString;
+	var name : String;
 };

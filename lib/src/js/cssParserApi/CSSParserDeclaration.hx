@@ -25,6 +25,6 @@
 package js.cssParserApi;
 
 extern class CSSParserDeclaration extends js.cssParserApi.CSSParserRule {
-	function new(name:DOMString, ?body:Array<js.cssParserApi.CSSParserRule>):Void;
+	function new(name:String, ?body:Array<js.cssParserApi.CSSParserRule>):Void;
 	function ():Void;
 }

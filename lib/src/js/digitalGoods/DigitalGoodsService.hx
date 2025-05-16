@@ -25,8 +25,8 @@
 package js.digitalGoods;
 
 extern class DigitalGoodsService {
-	function getDetails(itemIds:Array<DOMString>):js.lib.Promise<Array<js.digitalGoods.ItemDetails>>;
+	function getDetails(itemIds:Array<String>):js.lib.Promise<Array<js.digitalGoods.ItemDetails>>;
 	function listPurchases():js.lib.Promise<Array<js.digitalGoods.PurchaseDetails>>;
 	function listPurchaseHistory():js.lib.Promise<Array<js.digitalGoods.PurchaseDetails>>;
-	function consume(purchaseToken:DOMString):js.lib.Promise<Void>;
+	function consume(purchaseToken:String):js.lib.Promise<Void>;
 }

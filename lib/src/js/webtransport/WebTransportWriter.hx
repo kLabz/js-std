@@ -25,5 +25,5 @@
 package js.webtransport;
 
 extern class WebTransportWriter extends js.streams.WritableStreamDefaultWriter {
-	function atomicWrite(?chunk:any):js.lib.Promise<Void>;
+	function atomicWrite(?chunk:Any):js.lib.Promise<Void>;
 }

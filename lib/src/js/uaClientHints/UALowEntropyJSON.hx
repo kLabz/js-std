@@ -30,5 +30,5 @@ typedef UALowEntropyJSON = {
 	@:optional
 	var mobile : Bool;
 	@:optional
-	var platform : DOMString;
+	var platform : String;
 };

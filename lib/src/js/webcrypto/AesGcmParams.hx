@@ -29,5 +29,5 @@ typedef AesGcmParams = js.webcrypto.Algorithm & {
 	@:optional
 	var additionalData : BufferSource;
 	@:optional
-	var tagLength : octet;
+	var tagLength : Int;
 };

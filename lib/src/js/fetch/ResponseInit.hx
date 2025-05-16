@@ -28,7 +28,7 @@ typedef ResponseInit = {
 	@:optional
 	var status : Int = 200;
 	@:optional
-	var statusText : ByteString = "";
+	var statusText : String = "";
 	@:optional
 	var headers : HeadersInit;
 };

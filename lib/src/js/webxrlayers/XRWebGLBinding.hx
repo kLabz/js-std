@@ -33,7 +33,7 @@ extern class XRWebGLBinding {
 	function createCubeLayer(?init:js.webxrlayers.XRCubeLayerInit):js.webxrlayers.XRCubeLayer;
 	function getSubImage(layer:js.webxrlayers.XRCompositionLayer, frame:js.webxr.XRFrame, ?eye:js.webxr.XREye):js.webxrlayers.XRWebGLSubImage;
 	function getViewSubImage(layer:js.webxrlayers.XRProjectionLayer, view:js.webxr.XRView):js.webxrlayers.XRWebGLSubImage;
-	function foveateBoundTexture(target:GLenum, fixed_foveation:float):Void;
+	function foveateBoundTexture(target:GLenum, fixed_foveation:Float):Void;
 	function getCameraImage(camera:js.rawCameraAccess.XRCamera):js.webgl1.WebGLTexture;
 	function getDepthInformation(view:js.webxr.XRView):js.webxrDepthSensing.XRWebGLDepthInformation;
 	function getReflectionCubeMap(lightProbe:js.webxrLightingEstimation.XRLightProbe):js.webgl1.WebGLTexture;

@@ -26,7 +26,7 @@ package js.fedcm;
 
 typedef IdentityProviderClientMetadata = {
 	@:optional
-	var privacy_policy_url : USVString;
+	var privacy_policy_url : String;
 	@:optional
-	var terms_of_service_url : USVString;
+	var terms_of_service_url : String;
 };

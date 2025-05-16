@@ -25,8 +25,8 @@
 package js.webglMultiDraw;
 
 extern class WEBGL_multi_draw {
-	function multiDrawArraysWEBGL(mode:GLenum, firstsList:haxe.extern.EitherType<Int32Array, Array<GLint>>, firstsOffset:unsigned long long, countsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, countsOffset:unsigned long long, drawcount:GLsizei):Void;
-	function multiDrawElementsWEBGL(mode:GLenum, countsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, countsOffset:unsigned long long, type:GLenum, offsetsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, offsetsOffset:unsigned long long, drawcount:GLsizei):Void;
-	function multiDrawArraysInstancedWEBGL(mode:GLenum, firstsList:haxe.extern.EitherType<Int32Array, Array<GLint>>, firstsOffset:unsigned long long, countsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, countsOffset:unsigned long long, instanceCountsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, instanceCountsOffset:unsigned long long, drawcount:GLsizei):Void;
-	function multiDrawElementsInstancedWEBGL(mode:GLenum, countsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, countsOffset:unsigned long long, type:GLenum, offsetsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, offsetsOffset:unsigned long long, instanceCountsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, instanceCountsOffset:unsigned long long, drawcount:GLsizei):Void;
+	function multiDrawArraysWEBGL(mode:GLenum, firstsList:haxe.extern.EitherType<Int32Array, Array<GLint>>, firstsOffset:Float, countsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, countsOffset:Float, drawcount:GLsizei):Void;
+	function multiDrawElementsWEBGL(mode:GLenum, countsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, countsOffset:Float, type:GLenum, offsetsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, offsetsOffset:Float, drawcount:GLsizei):Void;
+	function multiDrawArraysInstancedWEBGL(mode:GLenum, firstsList:haxe.extern.EitherType<Int32Array, Array<GLint>>, firstsOffset:Float, countsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, countsOffset:Float, instanceCountsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, instanceCountsOffset:Float, drawcount:GLsizei):Void;
+	function multiDrawElementsInstancedWEBGL(mode:GLenum, countsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, countsOffset:Float, type:GLenum, offsetsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, offsetsOffset:Float, instanceCountsList:haxe.extern.EitherType<Int32Array, Array<GLsizei>>, instanceCountsOffset:Float, drawcount:GLsizei):Void;
 }

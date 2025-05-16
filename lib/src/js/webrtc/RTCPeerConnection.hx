@@ -40,15 +40,15 @@ extern class RTCPeerConnection extends js.dom.EventTarget {
 	overload function createAnswer(successCallback:RTCSessionDescriptionCallback, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
 	overload function setRemoteDescription(description:js.webrtc.RTCSessionDescriptionInit, successCallback:VoidFunction, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
 	overload function addIceCandidate(candidate:js.webrtc.RTCIceCandidateInit, successCallback:VoidFunction, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
-	function setIdentityProvider(provider:DOMString, ?options:js.webrtcIdentity.RTCIdentityProviderOptions):Void;
-	function getIdentityAssertion():js.lib.Promise<DOMString>;
+	function setIdentityProvider(provider:String, ?options:js.webrtcIdentity.RTCIdentityProviderOptions):Void;
+	function getIdentityAssertion():js.lib.Promise<String>;
 	function generateCertificate(keygenAlgorithm:AlgorithmIdentifier):js.lib.Promise<js.webrtc.RTCCertificate>;
 	function getSenders():Array<js.webrtc.RTCRtpSender>;
 	function getReceivers():Array<js.webrtc.RTCRtpReceiver>;
 	function getTransceivers():Array<js.webrtc.RTCRtpTransceiver>;
 	function addTrack(track:js.mediacaptureStreams.MediaStreamTrack, streams:js.mediacaptureStreams.MediaStream):js.webrtc.RTCRtpSender;
 	function removeTrack(sender:js.webrtc.RTCRtpSender):Void;
-	function addTransceiver(trackOrKind:haxe.extern.EitherType<js.mediacaptureStreams.MediaStreamTrack, DOMString>, ?init:js.webrtc.RTCRtpTransceiverInit):js.webrtc.RTCRtpTransceiver;
-	function createDataChannel(label:USVString, ?dataChannelDict:js.webrtc.RTCDataChannelInit):js.webrtc.RTCDataChannel;
+	function addTransceiver(trackOrKind:haxe.extern.EitherType<js.mediacaptureStreams.MediaStreamTrack, String>, ?init:js.webrtc.RTCRtpTransceiverInit):js.webrtc.RTCRtpTransceiver;
+	function createDataChannel(label:String, ?dataChannelDict:js.webrtc.RTCDataChannelInit):js.webrtc.RTCDataChannel;
 	function getStats(?selector:js.mediacaptureStreams.MediaStreamTrack):js.lib.Promise<js.webrtc.RTCStatsReport>;
 }

@@ -25,5 +25,5 @@
 package js.editContext;
 
 extern class TextUpdateEvent extends js.dom.Event {
-	function new(type:DOMString, ?options:js.editContext.TextUpdateEventInit):Void;
+	function new(type:String, ?options:js.editContext.TextUpdateEventInit):Void;
 }

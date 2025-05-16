@@ -25,9 +25,9 @@
 package js.indexeddb;
 
 extern class IDBCursor {
-	function advance(count:unsigned long):Void;
-	function continue(?key:any):Void;
-	function continuePrimaryKey(key:any, primaryKey:any):Void;
-	function update(value:any):js.indexeddb.IDBRequest;
+	function advance(count:Int):Void;
+	function continue(?key:Any):Void;
+	function continuePrimaryKey(key:Any, primaryKey:Any):Void;
+	function update(value:Any):js.indexeddb.IDBRequest;
 	function delete():js.indexeddb.IDBRequest;
 }

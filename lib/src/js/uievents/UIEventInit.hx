@@ -28,9 +28,9 @@ typedef UIEventInit = js.dom.EventInit & {
 	@:optional
 	var view : js.html.Window = null;
 	@:optional
-	var detail : long = 0;
+	var detail : Int = 0;
 	@:optional
 	var sourceCapabilities : js.inputDeviceCapabilities.InputDeviceCapabilities = null;
 	@:optional
-	var which : unsigned long = 0;
+	var which : Int = 0;
 };

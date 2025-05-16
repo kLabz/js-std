@@ -26,5 +26,5 @@ package js.dom;
 
 extern class AbortController {
 	function new():Void;
-	function abort(?reason:any):Void;
+	function abort(?reason:Any):Void;
 }

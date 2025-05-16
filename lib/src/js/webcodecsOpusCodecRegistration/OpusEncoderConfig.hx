@@ -32,11 +32,11 @@ typedef OpusEncoderConfig = {
 	@:optional
 	var application : js.webcodecsOpusCodecRegistration.OpusApplication = "audio";
 	@:optional
-	var frameDuration : unsigned long long = 20000;
+	var frameDuration : Float = 20000;
 	@:optional
-	var complexity : unsigned long;
+	var complexity : Int;
 	@:optional
-	var packetlossperc : unsigned long = 0;
+	var packetlossperc : Int = 0;
 	@:optional
 	var useinbandfec : Bool = false;
 	@:optional

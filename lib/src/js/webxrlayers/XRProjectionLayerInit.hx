@@ -32,7 +32,7 @@ typedef XRProjectionLayerInit = {
 	@:optional
 	var depthFormat : GLenum = 0x1902;
 	@:optional
-	var scaleFactor : double = 1.0;
+	var scaleFactor : Float = 1.0;
 	@:optional
 	var clearOnAccess : Bool = true;
 };

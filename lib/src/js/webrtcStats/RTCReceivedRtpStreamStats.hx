@@ -26,17 +26,17 @@ package js.webrtcStats;
 
 typedef RTCReceivedRtpStreamStats = js.webrtcStats.RTCRtpStreamStats & {
 	@:optional
-	var packetsReceived : unsigned long long;
+	var packetsReceived : Float;
 	@:optional
-	var packetsReceivedWithEct1 : unsigned long long;
+	var packetsReceivedWithEct1 : Float;
 	@:optional
-	var packetsReceivedWithCe : unsigned long long;
+	var packetsReceivedWithCe : Float;
 	@:optional
-	var packetsReportedAsLost : unsigned long long;
+	var packetsReportedAsLost : Float;
 	@:optional
-	var packetsReportedAsLostButRecovered : unsigned long long;
+	var packetsReportedAsLostButRecovered : Float;
 	@:optional
-	var packetsLost : long long;
+	var packetsLost : Float;
 	@:optional
-	var jitter : double;
+	var jitter : Float;
 };

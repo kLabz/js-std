@@ -25,11 +25,11 @@
 package js.webcodecs;
 
 typedef AudioEncoderConfig = {
-	var codec : DOMString;
-	var sampleRate : unsigned long;
-	var numberOfChannels : unsigned long;
+	var codec : String;
+	var sampleRate : Int;
+	var numberOfChannels : Int;
 	@:optional
-	var bitrate : unsigned long long;
+	var bitrate : Float;
 	@:optional
 	var bitrateMode : js.mediastreamRecording.BitrateMode = "variable";
 	@:optional

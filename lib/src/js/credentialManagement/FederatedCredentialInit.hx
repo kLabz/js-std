@@ -26,11 +26,11 @@ package js.credentialManagement;
 
 typedef FederatedCredentialInit = js.credentialManagement.CredentialData & {
 	@:optional
-	var name : USVString;
+	var name : String;
 	@:optional
-	var iconURL : USVString;
-	var origin : USVString;
-	var provider : USVString;
+	var iconURL : String;
+	var origin : String;
+	var provider : String;
 	@:optional
-	var protocol : DOMString;
+	var protocol : String;
 };

@@ -26,9 +26,9 @@ package js.documentPictureInPicture;
 
 typedef DocumentPictureInPictureOptions = {
 	@:optional
-	var width : unsigned long long = 0;
+	var width : Float = 0;
 	@:optional
-	var height : unsigned long long = 0;
+	var height : Float = 0;
 	@:optional
 	var disallowReturnToOpener : Bool = false;
 	@:optional

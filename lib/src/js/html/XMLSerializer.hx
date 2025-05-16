@@ -26,5 +26,5 @@ package js.html;
 
 extern class XMLSerializer {
 	function new():Void;
-	function serializeToString(root:js.dom.Node):DOMString;
+	function serializeToString(root:js.dom.Node):String;
 }

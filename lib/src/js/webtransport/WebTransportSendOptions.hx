@@ -28,5 +28,5 @@ typedef WebTransportSendOptions = {
 	@:optional
 	var sendGroup : js.webtransport.WebTransportSendGroup = null;
 	@:optional
-	var sendOrder : long long = 0;
+	var sendOrder : Float = 0;
 };

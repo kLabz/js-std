@@ -25,7 +25,7 @@
 package js.dom;
 
 extern class Event {
-	function new(type:DOMString, ?eventInitDict:js.dom.EventInit):Void;
+	function new(type:String, ?eventInitDict:js.dom.EventInit):Void;
 	function composedPath():Array<js.dom.EventTarget>;
 	static inline var NONE : Int = 0;
 	static inline var CAPTURING_PHASE : Int = 1;
@@ -34,5 +34,5 @@ extern class Event {
 	function stopPropagation():Void;
 	function stopImmediatePropagation():Void;
 	function preventDefault():Void;
-	function initEvent(type:DOMString, ?bubbles:Bool, ?cancelable:Bool):Void;
+	function initEvent(type:String, ?bubbles:Bool, ?cancelable:Bool):Void;
 }

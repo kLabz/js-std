@@ -28,9 +28,9 @@ typedef PhotoSettings = {
 	@:optional
 	var fillLightMode : js.imageCapture.FillLightMode;
 	@:optional
-	var imageHeight : double;
+	var imageHeight : Float;
 	@:optional
-	var imageWidth : double;
+	var imageWidth : Float;
 	@:optional
 	var redEyeReduction : Bool;
 };

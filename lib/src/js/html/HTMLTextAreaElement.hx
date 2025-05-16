@@ -28,9 +28,9 @@ extern class HTMLTextAreaElement extends js.html.HTMLElement {
 	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
-	function setCustomValidity(error:DOMString):Void;
+	function setCustomValidity(error:String):Void;
 	function select():Void;
-	overload function setRangeText(replacement:DOMString):Void;
-	overload function setRangeText(replacement:DOMString, start:unsigned long, end:unsigned long, ?selectionMode:js.html.SelectionMode):Void;
-	function setSelectionRange(start:unsigned long, end:unsigned long, ?direction:DOMString):Void;
+	overload function setRangeText(replacement:String):Void;
+	overload function setRangeText(replacement:String, start:Int, end:Int, ?selectionMode:js.html.SelectionMode):Void;
+	function setSelectionRange(start:Int, end:Int, ?direction:String):Void;
 }

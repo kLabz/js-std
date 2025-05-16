@@ -25,9 +25,9 @@
 package js.webrtcStats;
 
 typedef RTCCertificateStats = js.webrtc.RTCStats & {
-	var fingerprint : DOMString;
-	var fingerprintAlgorithm : DOMString;
-	var base64Certificate : DOMString;
+	var fingerprint : String;
+	var fingerprintAlgorithm : String;
+	var base64Certificate : String;
 	@:optional
-	var issuerCertificateId : DOMString;
+	var issuerCertificateId : String;
 };

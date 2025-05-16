@@ -25,6 +25,6 @@
 package js.html;
 
 extern class TimeRanges {
-	function start(index:unsigned long):double;
-	function end(index:unsigned long):double;
+	function start(index:Int):Float;
+	function end(index:Int):Float;
 }

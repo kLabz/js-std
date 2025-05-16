@@ -25,5 +25,5 @@
 package js.periodicBackgroundSync;
 
 typedef PeriodicSyncEventInit = js.serviceWorkers.ExtendableEventInit & {
-	var tag : DOMString;
+	var tag : String;
 };

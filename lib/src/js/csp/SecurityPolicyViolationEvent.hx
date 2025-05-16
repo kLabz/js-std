@@ -25,5 +25,5 @@
 package js.csp;
 
 extern class SecurityPolicyViolationEvent extends js.dom.Event {
-	function new(type:DOMString, ?eventInitDict:js.csp.SecurityPolicyViolationEventInit):Void;
+	function new(type:String, ?eventInitDict:js.csp.SecurityPolicyViolationEventInit):Void;
 }

@@ -25,5 +25,5 @@
 package js.genericSensor;
 
 extern class SensorErrorEvent extends js.dom.Event {
-	function new(type:DOMString, errorEventInitDict:js.genericSensor.SensorErrorEventInit):Void;
+	function new(type:String, errorEventInitDict:js.genericSensor.SensorErrorEventInit):Void;
 }

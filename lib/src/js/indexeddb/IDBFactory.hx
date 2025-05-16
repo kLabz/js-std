@@ -25,8 +25,8 @@
 package js.indexeddb;
 
 extern class IDBFactory {
-	function open(name:DOMString, ?version:unsigned long long):js.indexeddb.IDBOpenDBRequest;
-	function deleteDatabase(name:DOMString):js.indexeddb.IDBOpenDBRequest;
+	function open(name:String, ?version:Float):js.indexeddb.IDBOpenDBRequest;
+	function deleteDatabase(name:String):js.indexeddb.IDBOpenDBRequest;
 	function databases():js.lib.Promise<Array<js.indexeddb.IDBDatabaseInfo>>;
-	function cmp(first:any, second:any):short;
+	function cmp(first:Any, second:Any):Int;
 }

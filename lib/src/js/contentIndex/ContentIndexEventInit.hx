@@ -25,5 +25,5 @@
 package js.contentIndex;
 
 typedef ContentIndexEventInit = js.serviceWorkers.ExtendableEventInit & {
-	var id : DOMString;
+	var id : String;
 };

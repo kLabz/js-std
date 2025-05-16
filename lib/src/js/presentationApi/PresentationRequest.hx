@@ -25,9 +25,9 @@
 package js.presentationApi;
 
 extern class PresentationRequest extends js.dom.EventTarget {
-	function new(url:USVString):Void;
-	function new(urls:Array<USVString>):Void;
+	function new(url:String):Void;
+	function new(urls:Array<String>):Void;
 	function start():js.lib.Promise<js.presentationApi.PresentationConnection>;
-	function reconnect(presentationId:USVString):js.lib.Promise<js.presentationApi.PresentationConnection>;
+	function reconnect(presentationId:String):js.lib.Promise<js.presentationApi.PresentationConnection>;
 	function getAvailability():js.lib.Promise<js.presentationApi.PresentationAvailability>;
 }

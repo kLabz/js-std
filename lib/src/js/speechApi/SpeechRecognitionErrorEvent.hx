@@ -25,5 +25,5 @@
 package js.speechApi;
 
 extern class SpeechRecognitionErrorEvent extends js.dom.Event {
-	function new(type:DOMString, eventInitDict:js.speechApi.SpeechRecognitionErrorEventInit):Void;
+	function new(type:String, eventInitDict:js.speechApi.SpeechRecognitionErrorEventInit):Void;
 }

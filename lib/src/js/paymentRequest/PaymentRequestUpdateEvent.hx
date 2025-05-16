@@ -25,6 +25,6 @@
 package js.paymentRequest;
 
 extern class PaymentRequestUpdateEvent extends js.dom.Event {
-	function new(type:DOMString, ?eventInitDict:js.paymentRequest.PaymentRequestUpdateEventInit):Void;
+	function new(type:String, ?eventInitDict:js.paymentRequest.PaymentRequestUpdateEventInit):Void;
 	function updateWith(detailsPromise:js.lib.Promise<js.paymentRequest.PaymentDetailsUpdate>):Void;
 }

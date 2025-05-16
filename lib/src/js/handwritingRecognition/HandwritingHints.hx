@@ -26,11 +26,11 @@ package js.handwritingRecognition;
 
 typedef HandwritingHints = {
 	@:optional
-	var recognitionType : DOMString = "text";
+	var recognitionType : String = "text";
 	@:optional
-	var inputType : DOMString = "mouse";
+	var inputType : String = "mouse";
 	@:optional
-	var textContext : DOMString;
+	var textContext : String;
 	@:optional
-	var alternatives : unsigned long = 3;
+	var alternatives : Int = 3;
 };

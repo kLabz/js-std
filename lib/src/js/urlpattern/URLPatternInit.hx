@@ -26,21 +26,21 @@ package js.urlpattern;
 
 typedef URLPatternInit = {
 	@:optional
-	var protocol : USVString;
+	var protocol : String;
 	@:optional
-	var username : USVString;
+	var username : String;
 	@:optional
-	var password : USVString;
+	var password : String;
 	@:optional
-	var hostname : USVString;
+	var hostname : String;
 	@:optional
-	var port : USVString;
+	var port : String;
 	@:optional
-	var pathname : USVString;
+	var pathname : String;
 	@:optional
-	var search : USVString;
+	var search : String;
 	@:optional
-	var hash : USVString;
+	var hash : String;
 	@:optional
-	var baseURL : USVString;
+	var baseURL : String;
 };

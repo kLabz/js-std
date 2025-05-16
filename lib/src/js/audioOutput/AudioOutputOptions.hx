@@ -26,5 +26,5 @@ package js.audioOutput;
 
 typedef AudioOutputOptions = {
 	@:optional
-	var deviceId : DOMString = "";
+	var deviceId : String = "";
 };

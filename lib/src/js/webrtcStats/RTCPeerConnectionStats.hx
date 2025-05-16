@@ -26,7 +26,7 @@ package js.webrtcStats;
 
 typedef RTCPeerConnectionStats = js.webrtc.RTCStats & {
 	@:optional
-	var dataChannelsOpened : unsigned long;
+	var dataChannelsOpened : Int;
 	@:optional
-	var dataChannelsClosed : unsigned long;
+	var dataChannelsClosed : Int;
 };

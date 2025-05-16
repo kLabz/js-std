@@ -25,13 +25,13 @@
 package js.mediaCapabilities;
 
 typedef AudioConfiguration = {
-	var contentType : DOMString;
+	var contentType : String;
 	@:optional
-	var channels : DOMString;
+	var channels : String;
 	@:optional
-	var bitrate : unsigned long long;
+	var bitrate : Float;
 	@:optional
-	var samplerate : unsigned long;
+	var samplerate : Int;
 	@:optional
 	var spatialRendering : Bool;
 };

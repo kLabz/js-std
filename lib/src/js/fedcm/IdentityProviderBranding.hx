@@ -26,11 +26,11 @@ package js.fedcm;
 
 typedef IdentityProviderBranding = {
 	@:optional
-	var background_color : USVString;
+	var background_color : String;
 	@:optional
-	var color : USVString;
+	var color : String;
 	@:optional
 	var icons : Array<js.fedcm.IdentityProviderIcon>;
 	@:optional
-	var name : USVString;
+	var name : String;
 };

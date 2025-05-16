@@ -25,8 +25,8 @@
 package js.webauthn;
 
 typedef CurrentUserDetailsOptions = {
-	var rpId : DOMString;
+	var rpId : String;
 	var userId : Base64URLString;
-	var name : DOMString;
-	var displayName : DOMString;
+	var name : String;
+	var displayName : String;
 };

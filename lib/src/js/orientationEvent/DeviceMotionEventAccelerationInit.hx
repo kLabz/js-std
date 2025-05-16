@@ -26,9 +26,9 @@ package js.orientationEvent;
 
 typedef DeviceMotionEventAccelerationInit = {
 	@:optional
-	var x : double = null;
+	var x : Float = null;
 	@:optional
-	var y : double = null;
+	var y : Float = null;
 	@:optional
-	var z : double = null;
+	var z : Float = null;
 };

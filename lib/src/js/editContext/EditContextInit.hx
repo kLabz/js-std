@@ -26,9 +26,9 @@ package js.editContext;
 
 typedef EditContextInit = {
 	@:optional
-	var text : DOMString;
+	var text : String;
 	@:optional
-	var selectionStart : unsigned long;
+	var selectionStart : Int;
 	@:optional
-	var selectionEnd : unsigned long;
+	var selectionEnd : Int;
 };

@@ -30,7 +30,7 @@ typedef MLInstanceNormalizationOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var bias : js.webnn.MLOperand;
 	@:optional
-	var epsilon : double = 1e-5;
+	var epsilon : Float = 1e-5;
 	@:optional
 	var layout : js.webnn.MLInputOperandLayout = "nchw";
 };

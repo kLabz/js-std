@@ -26,7 +26,7 @@ package js.serviceWorkers;
 
 typedef RegistrationOptions = {
 	@:optional
-	var scope : USVString;
+	var scope : String;
 	@:optional
 	var type : js.html.WorkerType = "classic";
 	@:optional

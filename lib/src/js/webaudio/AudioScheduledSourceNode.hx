@@ -25,6 +25,6 @@
 package js.webaudio;
 
 extern class AudioScheduledSourceNode extends js.webaudio.AudioNode {
-	function start(?when:double):Void;
-	function stop(?when:double):Void;
+	function start(?when:Float):Void;
+	function stop(?when:Float):Void;
 }

@@ -26,7 +26,7 @@ package js.webtransport;
 
 typedef WebTransportCloseInfo = {
 	@:optional
-	var closeCode : unsigned long = 0;
+	var closeCode : Int = 0;
 	@:optional
-	var reason : USVString = "";
+	var reason : String = "";
 };

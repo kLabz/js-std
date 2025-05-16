@@ -30,17 +30,17 @@ typedef PublicKeyCredentialCreationOptionsJSON = {
 	var challenge : Base64URLString;
 	var pubKeyCredParams : Array<js.webauthn.PublicKeyCredentialParameters>;
 	@:optional
-	var timeout : unsigned long;
+	var timeout : Int;
 	@:optional
 	var excludeCredentials : Array<js.webauthn.PublicKeyCredentialDescriptorJSON> = [];
 	@:optional
 	var authenticatorSelection : js.webauthn.AuthenticatorSelectionCriteria;
 	@:optional
-	var hints : Array<DOMString> = [];
+	var hints : Array<String> = [];
 	@:optional
-	var attestation : DOMString = "none";
+	var attestation : String = "none";
 	@:optional
-	var attestationFormats : Array<DOMString> = [];
+	var attestationFormats : Array<String> = [];
 	@:optional
 	var extensions : js.webauthn.AuthenticationExtensionsClientInputsJSON;
 };

@@ -25,8 +25,8 @@
 package js.serviceWorkers;
 
 extern class ServiceWorkerContainer extends js.dom.EventTarget {
-	function register(scriptURL:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, USVString>, ?options:js.serviceWorkers.RegistrationOptions):js.lib.Promise<js.serviceWorkers.ServiceWorkerRegistration>;
-	function getRegistration(?clientURL:USVString):js.lib.Promise<haxe.extern.EitherType<js.serviceWorkers.ServiceWorkerRegistration, Void>>;
+	function register(scriptURL:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>, ?options:js.serviceWorkers.RegistrationOptions):js.lib.Promise<js.serviceWorkers.ServiceWorkerRegistration>;
+	function getRegistration(?clientURL:String):js.lib.Promise<haxe.extern.EitherType<js.serviceWorkers.ServiceWorkerRegistration, Void>>;
 	function getRegistrations():js.lib.Promise<Array<js.serviceWorkers.ServiceWorkerRegistration>>;
 	function startMessages():Void;
 }

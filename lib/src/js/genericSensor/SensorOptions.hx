@@ -26,5 +26,5 @@ package js.genericSensor;
 
 typedef SensorOptions = {
 	@:optional
-	var frequency : double;
+	var frequency : Float;
 };

@@ -26,5 +26,5 @@ package js.webcrypto;
 
 extern class Crypto {
 	function getRandomValues(array:ArrayBufferView):ArrayBufferView;
-	function randomUUID():DOMString;
+	function randomUUID():String;
 }

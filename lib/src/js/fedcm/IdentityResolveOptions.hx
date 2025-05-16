@@ -26,5 +26,5 @@ package js.fedcm;
 
 typedef IdentityResolveOptions = {
 	@:optional
-	var accountId : USVString;
+	var accountId : String;
 };

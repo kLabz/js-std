@@ -25,8 +25,8 @@
 package js.notifications;
 
 typedef NotificationAction = {
-	var action : DOMString;
-	var title : DOMString;
+	var action : String;
+	var title : String;
 	@:optional
-	var icon : USVString;
+	var icon : String;
 };

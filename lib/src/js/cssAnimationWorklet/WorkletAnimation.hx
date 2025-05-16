@@ -25,5 +25,5 @@
 package js.cssAnimationWorklet;
 
 extern class WorkletAnimation extends js.webAnimations.Animation {
-	function new(animatorName:DOMString, ?effects:haxe.extern.EitherType<js.webAnimations.AnimationEffect, Array<js.webAnimations.AnimationEffect>>, ?timeline:js.webAnimations.AnimationTimeline, ?options:any):Void;
+	function new(animatorName:String, ?effects:haxe.extern.EitherType<js.webAnimations.AnimationEffect, Array<js.webAnimations.AnimationEffect>>, ?timeline:js.webAnimations.AnimationTimeline, ?options:Any):Void;
 }

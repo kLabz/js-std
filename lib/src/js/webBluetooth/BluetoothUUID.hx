@@ -25,8 +25,8 @@
 package js.webBluetooth;
 
 extern class BluetoothUUID {
-	function getService(name:haxe.extern.EitherType<DOMString, unsigned long>):UUID;
-	function getCharacteristic(name:haxe.extern.EitherType<DOMString, unsigned long>):UUID;
-	function getDescriptor(name:haxe.extern.EitherType<DOMString, unsigned long>):UUID;
-	function canonicalUUID(alias:unsigned long):UUID;
+	function getService(name:haxe.extern.EitherType<String, Int>):UUID;
+	function getCharacteristic(name:haxe.extern.EitherType<String, Int>):UUID;
+	function getDescriptor(name:haxe.extern.EitherType<String, Int>):UUID;
+	function canonicalUUID(alias:Int):UUID;
 }

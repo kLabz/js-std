@@ -26,10 +26,10 @@ package js.html;
 
 extern class CustomElementRegistry {
 	function new():Void;
-	function define(name:DOMString, constructor:CustomElementConstructor, ?options:js.html.ElementDefinitionOptions):Void;
-	function get(name:DOMString):haxe.extern.EitherType<CustomElementConstructor, Void>;
-	function getName(constructor:CustomElementConstructor):DOMString;
-	function whenDefined(name:DOMString):js.lib.Promise<CustomElementConstructor>;
+	function define(name:String, constructor:CustomElementConstructor, ?options:js.html.ElementDefinitionOptions):Void;
+	function get(name:String):haxe.extern.EitherType<CustomElementConstructor, Void>;
+	function getName(constructor:CustomElementConstructor):String;
+	function whenDefined(name:String):js.lib.Promise<CustomElementConstructor>;
 	function upgrade(root:js.dom.Node):Void;
 	function initialize(root:js.dom.Node):Void;
 }

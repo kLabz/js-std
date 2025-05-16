@@ -25,8 +25,8 @@
 package js.webgpu;
 
 typedef GPUColorDict = {
-	var r : double;
-	var g : double;
-	var b : double;
-	var a : double;
+	var r : Float;
+	var g : Float;
+	var b : Float;
+	var a : Float;
 };

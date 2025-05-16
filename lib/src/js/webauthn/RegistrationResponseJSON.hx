@@ -25,11 +25,11 @@
 package js.webauthn;
 
 typedef RegistrationResponseJSON = {
-	var id : DOMString;
+	var id : String;
 	var rawId : Base64URLString;
 	var response : js.webauthn.AuthenticatorAttestationResponseJSON;
 	@:optional
-	var authenticatorAttachment : DOMString;
+	var authenticatorAttachment : String;
 	var clientExtensionResults : js.webauthn.AuthenticationExtensionsClientOutputsJSON;
-	var type : DOMString;
+	var type : String;
 };

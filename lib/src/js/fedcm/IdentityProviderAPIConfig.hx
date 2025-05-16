@@ -25,15 +25,15 @@
 package js.fedcm;
 
 typedef IdentityProviderAPIConfig = {
-	var accounts_endpoint : USVString;
+	var accounts_endpoint : String;
 	@:optional
-	var client_metadata_endpoint : USVString;
-	var id_assertion_endpoint : USVString;
-	var login_url : USVString;
+	var client_metadata_endpoint : String;
+	var id_assertion_endpoint : String;
+	var login_url : String;
 	@:optional
-	var disconnect_endpoint : USVString;
+	var disconnect_endpoint : String;
 	@:optional
 	var branding : js.fedcm.IdentityProviderBranding;
 	@:optional
-	var account_label : USVString;
+	var account_label : String;
 };

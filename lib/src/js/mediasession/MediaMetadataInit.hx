@@ -26,11 +26,11 @@ package js.mediasession;
 
 typedef MediaMetadataInit = {
 	@:optional
-	var title : DOMString = "";
+	var title : String = "";
 	@:optional
-	var artist : DOMString = "";
+	var artist : String = "";
 	@:optional
-	var album : DOMString = "";
+	var album : String = "";
 	@:optional
 	var artwork : Array<js.mediasession.MediaImage> = [];
 	@:optional

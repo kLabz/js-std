@@ -25,5 +25,5 @@
 package js.webBluetooth;
 
 extern class ValueEvent extends js.dom.Event {
-	function new(type:DOMString, ?initDict:js.webBluetooth.ValueEventInit):Void;
+	function new(type:String, ?initDict:js.webBluetooth.ValueEventInit):Void;
 }

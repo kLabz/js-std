@@ -25,5 +25,5 @@
 package js.fedcm;
 
 typedef IdentityCredentialDisconnectOptions = js.fedcm.IdentityProviderConfig & {
-	var accountHint : USVString;
+	var accountHint : String;
 };

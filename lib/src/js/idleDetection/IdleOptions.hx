@@ -26,7 +26,7 @@ package js.idleDetection;
 
 typedef IdleOptions = {
 	@:optional
-	var threshold : unsigned long long;
+	var threshold : Float;
 	@:optional
 	var signal : js.dom.AbortSignal;
 };

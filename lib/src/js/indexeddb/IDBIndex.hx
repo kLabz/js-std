@@ -25,11 +25,11 @@
 package js.indexeddb;
 
 extern class IDBIndex {
-	function get(query:any):js.indexeddb.IDBRequest;
-	function getKey(query:any):js.indexeddb.IDBRequest;
-	function getAll(?query:any, ?count:unsigned long):js.indexeddb.IDBRequest;
-	function getAllKeys(?query:any, ?count:unsigned long):js.indexeddb.IDBRequest;
-	function count(?query:any):js.indexeddb.IDBRequest;
-	function openCursor(?query:any, ?direction:js.indexeddb.IDBCursorDirection):js.indexeddb.IDBRequest;
-	function openKeyCursor(?query:any, ?direction:js.indexeddb.IDBCursorDirection):js.indexeddb.IDBRequest;
+	function get(query:Any):js.indexeddb.IDBRequest;
+	function getKey(query:Any):js.indexeddb.IDBRequest;
+	function getAll(?query:Any, ?count:Int):js.indexeddb.IDBRequest;
+	function getAllKeys(?query:Any, ?count:Int):js.indexeddb.IDBRequest;
+	function count(?query:Any):js.indexeddb.IDBRequest;
+	function openCursor(?query:Any, ?direction:js.indexeddb.IDBCursorDirection):js.indexeddb.IDBRequest;
+	function openKeyCursor(?query:Any, ?direction:js.indexeddb.IDBCursorDirection):js.indexeddb.IDBRequest;
 }

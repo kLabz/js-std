@@ -25,7 +25,7 @@
 package js.paymentRequest;
 
 typedef PaymentDetailsModifier = {
-	var supportedMethods : DOMString;
+	var supportedMethods : String;
 	@:optional
 	var total : js.paymentRequest.PaymentItem;
 	@:optional

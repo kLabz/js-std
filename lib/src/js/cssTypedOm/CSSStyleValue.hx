@@ -26,6 +26,6 @@ package js.cssTypedOm;
 
 extern class CSSStyleValue {
 	function ():Void;
-	function parse(property:USVString, cssText:USVString):js.cssTypedOm.CSSStyleValue;
-	function parseAll(property:USVString, cssText:USVString):Array<js.cssTypedOm.CSSStyleValue>;
+	function parse(property:String, cssText:String):js.cssTypedOm.CSSStyleValue;
+	function parseAll(property:String, cssText:String):Array<js.cssTypedOm.CSSStyleValue>;
 }

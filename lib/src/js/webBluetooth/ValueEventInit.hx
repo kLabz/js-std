@@ -26,5 +26,5 @@ package js.webBluetooth;
 
 typedef ValueEventInit = js.dom.EventInit & {
 	@:optional
-	var value : any = null;
+	var value : Any = null;
 };

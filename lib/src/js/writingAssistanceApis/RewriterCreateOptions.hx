@@ -30,5 +30,5 @@ typedef RewriterCreateOptions = js.writingAssistanceApis.RewriterCreateCoreOptio
 	@:optional
 	var monitor : CreateMonitorCallback;
 	@:optional
-	var sharedContext : DOMString;
+	var sharedContext : String;
 };

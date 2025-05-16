@@ -26,9 +26,9 @@ package js.mediacaptureAutomation;
 
 typedef MockCaptureDeviceConfiguration = {
 	@:optional
-	var label : DOMString;
+	var label : String;
 	@:optional
-	var deviceId : DOMString;
+	var deviceId : String;
 	@:optional
-	var groupId : DOMString;
+	var groupId : String;
 };

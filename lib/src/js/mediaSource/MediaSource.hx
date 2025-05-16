@@ -26,10 +26,10 @@ package js.mediaSource;
 
 extern class MediaSource extends js.dom.EventTarget {
 	function new():Void;
-	function addSourceBuffer(type:DOMString):js.mediaSource.SourceBuffer;
+	function addSourceBuffer(type:String):js.mediaSource.SourceBuffer;
 	function removeSourceBuffer(sourceBuffer:js.mediaSource.SourceBuffer):Void;
 	function endOfStream(?error:js.mediaSource.EndOfStreamError):Void;
-	function setLiveSeekableRange(start:double, end:double):Void;
+	function setLiveSeekableRange(start:Float, end:Float):Void;
 	function clearLiveSeekableRange():Void;
-	function isTypeSupported(type:DOMString):Bool;
+	function isTypeSupported(type:String):Bool;
 }

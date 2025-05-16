@@ -25,8 +25,8 @@
 package js.webusb;
 
 typedef AllowedUSBDevice = {
-	var vendorId : octet;
-	var productId : octet;
+	var vendorId : Int;
+	var productId : Int;
 	@:optional
-	var serialNumber : DOMString;
+	var serialNumber : String;
 };

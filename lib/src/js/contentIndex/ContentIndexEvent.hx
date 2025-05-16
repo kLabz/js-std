@@ -25,5 +25,5 @@
 package js.contentIndex;
 
 extern class ContentIndexEvent extends js.serviceWorkers.ExtendableEvent {
-	function new(type:DOMString, init:js.contentIndex.ContentIndexEventInit):Void;
+	function new(type:String, init:js.contentIndex.ContentIndexEventInit):Void;
 }

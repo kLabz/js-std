@@ -28,5 +28,5 @@ typedef RTCLocalIceCandidateInit = js.webrtc.RTCIceCandidateInit & {
 	@:optional
 	var relayProtocol : js.webrtc.RTCIceServerTransportProtocol = null;
 	@:optional
-	var url : USVString = null;
+	var url : String = null;
 };

@@ -26,5 +26,5 @@ package js.webrtc;
 
 typedef RTCCertificateExpiration = {
 	@:optional
-	var expires : unsigned long long;
+	var expires : Float;
 };

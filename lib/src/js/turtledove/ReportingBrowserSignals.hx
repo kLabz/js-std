@@ -25,21 +25,21 @@
 package js.turtledove;
 
 typedef ReportingBrowserSignals = {
-	var topWindowHostname : DOMString;
-	var interestGroupOwner : USVString;
-	var renderURL : USVString;
-	var bid : double;
-	var highestScoringOtherBid : double;
+	var topWindowHostname : String;
+	var interestGroupOwner : String;
+	var renderURL : String;
+	var bid : Float;
+	var highestScoringOtherBid : Float;
 	@:optional
-	var bidCurrency : DOMString;
+	var bidCurrency : String;
 	@:optional
-	var highestScoringOtherBidCurrency : DOMString;
+	var highestScoringOtherBidCurrency : String;
 	@:optional
-	var topLevelSeller : USVString;
+	var topLevelSeller : String;
 	@:optional
-	var componentSeller : USVString;
+	var componentSeller : String;
 	@:optional
-	var buyerAndSellerReportingId : USVString;
+	var buyerAndSellerReportingId : String;
 	@:optional
-	var selectedBuyerAndSellerReportingId : USVString;
+	var selectedBuyerAndSellerReportingId : String;
 };

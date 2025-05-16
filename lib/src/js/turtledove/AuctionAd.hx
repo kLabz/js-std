@@ -25,21 +25,21 @@
 package js.turtledove;
 
 typedef AuctionAd = {
-	var renderURL : USVString;
+	var renderURL : String;
 	@:optional
-	var sizeGroup : USVString;
+	var sizeGroup : String;
 	@:optional
-	var metadata : any;
+	var metadata : Any;
 	@:optional
-	var buyerReportingId : USVString;
+	var buyerReportingId : String;
 	@:optional
-	var buyerAndSellerReportingId : USVString;
+	var buyerAndSellerReportingId : String;
 	@:optional
-	var selectableBuyerAndSellerReportingIds : Array<USVString>;
+	var selectableBuyerAndSellerReportingIds : Array<String>;
 	@:optional
-	var allowedReportingOrigins : Array<USVString>;
+	var allowedReportingOrigins : Array<String>;
 	@:optional
-	var adRenderId : DOMString;
+	var adRenderId : String;
 	@:optional
-	var creativeScanningMetadata : USVString;
+	var creativeScanningMetadata : String;
 };

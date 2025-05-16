@@ -26,19 +26,19 @@ package js.turtledove;
 
 typedef ReportWinBrowserSignals = js.turtledove.ReportingBrowserSignals & {
 	@:optional
-	var adCost : double;
+	var adCost : Float;
 	@:optional
-	var seller : USVString;
+	var seller : String;
 	@:optional
 	var madeHighestScoringOtherBid : Bool;
 	@:optional
-	var interestGroupName : DOMString;
+	var interestGroupName : String;
 	@:optional
-	var buyerReportingId : DOMString;
+	var buyerReportingId : String;
 	@:optional
 	var modelingSignals : Int;
 	@:optional
-	var dataVersion : unsigned long;
+	var dataVersion : Int;
 	@:optional
 	var kAnonStatus : js.turtledove.KAnonStatus;
 };

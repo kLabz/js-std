@@ -25,6 +25,6 @@
 package js.webvtt;
 
 extern class VTTCue extends js.html.TextTrackCue {
-	function new(startTime:double, endTime:unrestricted double, text:DOMString):Void;
+	function new(startTime:Float, endTime:Float, text:String):Void;
 	function getCueAsHTML():js.dom.DocumentFragment;
 }

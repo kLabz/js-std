@@ -26,7 +26,7 @@ package js.performanceMeasureMemory;
 
 typedef MemoryMeasurement = {
 	@:optional
-	var bytes : unsigned long long;
+	var bytes : Float;
 	@:optional
 	var breakdown : Array<js.performanceMeasureMemory.MemoryBreakdownEntry>;
 };

@@ -25,10 +25,10 @@
 package js.webrtc;
 
 typedef RTCRtpCodec = {
-	var mimeType : DOMString;
-	var clockRate : unsigned long;
+	var mimeType : String;
+	var clockRate : Int;
 	@:optional
 	var channels : Int;
 	@:optional
-	var sdpFmtpLine : DOMString;
+	var sdpFmtpLine : String;
 };

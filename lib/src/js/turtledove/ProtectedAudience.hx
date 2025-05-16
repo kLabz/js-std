@@ -25,5 +25,5 @@
 package js.turtledove;
 
 extern class ProtectedAudience {
-	function queryFeatureSupport(feature:DOMString):any;
+	function queryFeatureSupport(feature:String):Any;
 }

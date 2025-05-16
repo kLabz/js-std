@@ -26,7 +26,7 @@ package js.fileSystemAccess;
 
 typedef DirectoryPickerOptions = {
 	@:optional
-	var id : DOMString;
+	var id : String;
 	@:optional
 	var startIn : StartInDirectory;
 	@:optional

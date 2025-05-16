@@ -25,11 +25,11 @@
 package js.imageResource;
 
 typedef ImageResource = {
-	var src : USVString;
+	var src : String;
 	@:optional
-	var sizes : DOMString;
+	var sizes : String;
 	@:optional
-	var type : DOMString;
+	var type : String;
 	@:optional
-	var label : DOMString;
+	var label : String;
 };

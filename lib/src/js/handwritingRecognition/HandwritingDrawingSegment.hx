@@ -25,7 +25,7 @@
 package js.handwritingRecognition;
 
 typedef HandwritingDrawingSegment = {
-	var strokeIndex : unsigned long;
-	var beginPointIndex : unsigned long;
-	var endPointIndex : unsigned long;
+	var strokeIndex : Int;
+	var beginPointIndex : Int;
+	var endPointIndex : Int;
 };

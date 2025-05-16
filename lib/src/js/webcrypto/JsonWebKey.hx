@@ -26,39 +26,39 @@ package js.webcrypto;
 
 typedef JsonWebKey = {
 	@:optional
-	var kty : DOMString;
+	var kty : String;
 	@:optional
-	var use : DOMString;
+	var use : String;
 	@:optional
-	var key_ops : Array<DOMString>;
+	var key_ops : Array<String>;
 	@:optional
-	var alg : DOMString;
+	var alg : String;
 	@:optional
 	var ext : Bool;
 	@:optional
-	var crv : DOMString;
+	var crv : String;
 	@:optional
-	var x : DOMString;
+	var x : String;
 	@:optional
-	var y : DOMString;
+	var y : String;
 	@:optional
-	var d : DOMString;
+	var d : String;
 	@:optional
-	var n : DOMString;
+	var n : String;
 	@:optional
-	var e : DOMString;
+	var e : String;
 	@:optional
-	var p : DOMString;
+	var p : String;
 	@:optional
-	var q : DOMString;
+	var q : String;
 	@:optional
-	var dp : DOMString;
+	var dp : String;
 	@:optional
-	var dq : DOMString;
+	var dq : String;
 	@:optional
-	var qi : DOMString;
+	var qi : String;
 	@:optional
 	var oth : Array<js.webcrypto.RsaOtherPrimesInfo>;
 	@:optional
-	var k : DOMString;
+	var k : String;
 };

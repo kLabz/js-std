@@ -25,6 +25,6 @@
 package js.uievents;
 
 extern class UIEvent extends js.dom.Event {
-	function new(type:DOMString, ?eventInitDict:js.uievents.UIEventInit):Void;
-	function initUIEvent(typeArg:DOMString, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:js.html.Window, ?detailArg:long):Void;
+	function new(type:String, ?eventInitDict:js.uievents.UIEventInit):Void;
+	function initUIEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:js.html.Window, ?detailArg:Int):Void;
 }

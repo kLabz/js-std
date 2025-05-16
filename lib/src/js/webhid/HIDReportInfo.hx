@@ -26,7 +26,7 @@ package js.webhid;
 
 typedef HIDReportInfo = {
 	@:optional
-	var reportId : octet;
+	var reportId : Int;
 	@:optional
 	var items : Array<js.webhid.HIDReportItem>;
 };

@@ -25,7 +25,7 @@
 package js.webrtcIdentity;
 
 typedef RTCIdentityProviderDetails = {
-	var domain : DOMString;
+	var domain : String;
 	@:optional
-	var protocol : DOMString = "default";
+	var protocol : String = "default";
 };

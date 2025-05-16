@@ -32,5 +32,5 @@ typedef DeviceMotionEventInit = js.dom.EventInit & {
 	@:optional
 	var rotationRate : js.orientationEvent.DeviceMotionEventRotationRateInit;
 	@:optional
-	var interval : double = 0;
+	var interval : Float = 0;
 };

@@ -26,23 +26,23 @@ package js.paymentRequest;
 
 typedef AddressErrors = {
 	@:optional
-	var addressLine : DOMString;
+	var addressLine : String;
 	@:optional
-	var city : DOMString;
+	var city : String;
 	@:optional
-	var country : DOMString;
+	var country : String;
 	@:optional
-	var dependentLocality : DOMString;
+	var dependentLocality : String;
 	@:optional
-	var organization : DOMString;
+	var organization : String;
 	@:optional
-	var phone : DOMString;
+	var phone : String;
 	@:optional
-	var postalCode : DOMString;
+	var postalCode : String;
 	@:optional
-	var recipient : DOMString;
+	var recipient : String;
 	@:optional
-	var region : DOMString;
+	var region : String;
 	@:optional
-	var sortingCode : DOMString;
+	var sortingCode : String;
 };

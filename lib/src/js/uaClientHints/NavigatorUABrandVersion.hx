@@ -26,7 +26,7 @@ package js.uaClientHints;
 
 typedef NavigatorUABrandVersion = {
 	@:optional
-	var brand : DOMString;
+	var brand : String;
 	@:optional
-	var version : DOMString;
+	var version : String;
 };

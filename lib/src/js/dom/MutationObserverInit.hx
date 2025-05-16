@@ -38,5 +38,5 @@ typedef MutationObserverInit = {
 	@:optional
 	var characterDataOldValue : Bool;
 	@:optional
-	var attributeFilter : Array<DOMString>;
+	var attributeFilter : Array<String>;
 };

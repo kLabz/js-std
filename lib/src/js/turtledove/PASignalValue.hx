@@ -25,9 +25,9 @@
 package js.turtledove;
 
 typedef PASignalValue = {
-	var baseValue : DOMString;
+	var baseValue : String;
 	@:optional
-	var scale : double;
+	var scale : Float;
 	@:optional
-	var offset : haxe.extern.EitherType<bigint, long>;
+	var offset : haxe.extern.EitherType<bigint, Int>;
 };

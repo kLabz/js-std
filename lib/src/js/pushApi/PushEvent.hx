@@ -25,5 +25,5 @@
 package js.pushApi;
 
 extern class PushEvent extends js.serviceWorkers.ExtendableEvent {
-	function new(type:DOMString, ?eventInitDict:js.pushApi.PushEventInit):Void;
+	function new(type:String, ?eventInitDict:js.pushApi.PushEventInit):Void;
 }

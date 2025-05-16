@@ -26,9 +26,9 @@ package js.webAnimations;
 
 typedef BaseKeyframe = {
 	@:optional
-	var offset : double = null;
+	var offset : Float = null;
 	@:optional
-	var easing : DOMString = "linear";
+	var easing : String = "linear";
 	@:optional
 	var composite : js.webAnimations.CompositeOperationOrAuto = "auto";
 };

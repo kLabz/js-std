@@ -25,6 +25,6 @@
 package js.translationApi;
 
 typedef TranslatorCreateCoreOptions = {
-	var sourceLanguage : DOMString;
-	var targetLanguage : DOMString;
+	var sourceLanguage : String;
+	var targetLanguage : String;
 };

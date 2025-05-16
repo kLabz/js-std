@@ -26,7 +26,7 @@ package js.cssomView;
 
 typedef ScrollToOptions = js.cssomView.ScrollOptions & {
 	@:optional
-	var left : unrestricted double;
+	var left : Float;
 	@:optional
-	var top : unrestricted double;
+	var top : Float;
 };

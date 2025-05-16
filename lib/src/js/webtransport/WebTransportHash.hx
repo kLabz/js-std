@@ -26,7 +26,7 @@ package js.webtransport;
 
 typedef WebTransportHash = {
 	@:optional
-	var algorithm : DOMString;
+	var algorithm : String;
 	@:optional
 	var value : BufferSource;
 };

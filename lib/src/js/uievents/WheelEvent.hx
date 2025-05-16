@@ -25,8 +25,8 @@
 package js.uievents;
 
 extern class WheelEvent extends js.uievents.MouseEvent {
-	function new(type:DOMString, ?eventInitDict:js.uievents.WheelEventInit):Void;
-	static inline var DOM_DELTA_PIXEL : unsigned long = 0x00;
-	static inline var DOM_DELTA_LINE : unsigned long = 0x01;
-	static inline var DOM_DELTA_PAGE : unsigned long = 0x02;
+	function new(type:String, ?eventInitDict:js.uievents.WheelEventInit):Void;
+	static inline var DOM_DELTA_PIXEL : Int = 0x00;
+	static inline var DOM_DELTA_LINE : Int = 0x01;
+	static inline var DOM_DELTA_PAGE : Int = 0x02;
 }

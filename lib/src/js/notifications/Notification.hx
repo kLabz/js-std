@@ -25,7 +25,7 @@
 package js.notifications;
 
 extern class Notification extends js.dom.EventTarget {
-	function new(title:DOMString, ?options:js.notifications.NotificationOptions):Void;
+	function new(title:String, ?options:js.notifications.NotificationOptions):Void;
 	function requestPermission(?deprecatedCallback:NotificationPermissionCallback):js.lib.Promise<js.notifications.NotificationPermission>;
 	function close():Void;
 }

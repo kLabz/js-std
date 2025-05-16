@@ -25,5 +25,5 @@
 package js.webBluetooth;
 
 extern class BluetoothAdvertisingEvent extends js.dom.Event {
-	function new(type:DOMString, init:js.webBluetooth.BluetoothAdvertisingEventInit):Void;
+	function new(type:String, init:js.webBluetooth.BluetoothAdvertisingEventInit):Void;
 }

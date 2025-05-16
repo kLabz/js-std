@@ -26,7 +26,7 @@ package js.mediacaptureStreams;
 
 typedef DoubleRange = {
 	@:optional
-	var max : double;
+	var max : Float;
 	@:optional
-	var min : double;
+	var min : Float;
 };

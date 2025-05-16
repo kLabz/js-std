@@ -26,5 +26,5 @@ package js.webaudio;
 
 typedef ConstantSourceOptions = {
 	@:optional
-	var offset : float = 1;
+	var offset : Float = 1;
 };

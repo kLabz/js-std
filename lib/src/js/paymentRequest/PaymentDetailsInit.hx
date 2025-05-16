@@ -26,6 +26,6 @@ package js.paymentRequest;
 
 typedef PaymentDetailsInit = js.paymentRequest.PaymentDetailsBase & {
 	@:optional
-	var id : DOMString;
+	var id : String;
 	var total : js.paymentRequest.PaymentItem;
 };

@@ -26,9 +26,9 @@ package js.webLocks;
 
 typedef LockInfo = {
 	@:optional
-	var name : DOMString;
+	var name : String;
 	@:optional
 	var mode : js.webLocks.LockMode;
 	@:optional
-	var clientId : DOMString;
+	var clientId : String;
 };

@@ -25,5 +25,5 @@
 package js.cssPaintApi;
 
 extern class PaintWorkletGlobalScope extends js.html.WorkletGlobalScope {
-	function registerPaint(name:DOMString, paintCtor:VoidFunction):Void;
+	function registerPaint(name:String, paintCtor:VoidFunction):Void;
 }

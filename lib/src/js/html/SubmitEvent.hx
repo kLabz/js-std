@@ -25,5 +25,5 @@
 package js.html;
 
 extern class SubmitEvent extends js.dom.Event {
-	function new(type:DOMString, ?eventInitDict:js.html.SubmitEventInit):Void;
+	function new(type:String, ?eventInitDict:js.html.SubmitEventInit):Void;
 }

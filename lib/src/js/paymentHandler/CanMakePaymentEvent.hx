@@ -25,6 +25,6 @@
 package js.paymentHandler;
 
 extern class CanMakePaymentEvent extends js.serviceWorkers.ExtendableEvent {
-	function new(type:DOMString):Void;
+	function new(type:String):Void;
 	function respondWith(canMakePaymentResponse:js.lib.Promise<Bool>):Void;
 }

@@ -27,5 +27,5 @@ package js.webxr;
 extern class XRInputSourceArray {
 	function values():Iterator<js.webxr.XRInputSource>;
 	function values():Iterator<js.webxr.XRInputSource>;
-	function (index:unsigned long):js.webxr.XRInputSource;
+	function (index:Int):js.webxr.XRInputSource;
 }

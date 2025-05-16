@@ -26,9 +26,9 @@ package js.webrtcIdentity;
 
 typedef RTCIdentityProviderOptions = {
 	@:optional
-	var protocol : DOMString = "default";
+	var protocol : String = "default";
 	@:optional
-	var usernameHint : DOMString;
+	var usernameHint : String;
 	@:optional
-	var peerIdentity : DOMString;
+	var peerIdentity : String;
 };

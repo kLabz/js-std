@@ -31,7 +31,7 @@ extern class MediaStream extends js.dom.EventTarget {
 	function getAudioTracks():Array<js.mediacaptureStreams.MediaStreamTrack>;
 	function getVideoTracks():Array<js.mediacaptureStreams.MediaStreamTrack>;
 	function getTracks():Array<js.mediacaptureStreams.MediaStreamTrack>;
-	function getTrackById(trackId:DOMString):js.mediacaptureStreams.MediaStreamTrack;
+	function getTrackById(trackId:String):js.mediacaptureStreams.MediaStreamTrack;
 	function addTrack(track:js.mediacaptureStreams.MediaStreamTrack):Void;
 	function removeTrack(track:js.mediacaptureStreams.MediaStreamTrack):Void;
 	function clone():js.mediacaptureStreams.MediaStream;

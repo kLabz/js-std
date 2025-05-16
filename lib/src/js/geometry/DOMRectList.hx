@@ -25,5 +25,5 @@
 package js.geometry;
 
 extern class DOMRectList {
-	function item(index:unsigned long):js.geometry.DOMRect;
+	function item(index:Int):js.geometry.DOMRect;
 }

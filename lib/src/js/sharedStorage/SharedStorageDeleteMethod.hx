@@ -25,5 +25,5 @@
 package js.sharedStorage;
 
 extern class SharedStorageDeleteMethod extends js.sharedStorage.SharedStorageModifierMethod {
-	function new(key:DOMString, ?options:js.sharedStorage.SharedStorageModifierMethodOptions):Void;
+	function new(key:String, ?options:js.sharedStorage.SharedStorageModifierMethodOptions):Void;
 }

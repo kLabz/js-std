@@ -25,13 +25,13 @@
 package js.webrtcStats;
 
 typedef RTCCodecStats = js.webrtc.RTCStats & {
-	var payloadType : unsigned long;
-	var transportId : DOMString;
-	var mimeType : DOMString;
+	var payloadType : Int;
+	var transportId : String;
+	var mimeType : String;
 	@:optional
-	var clockRate : unsigned long;
+	var clockRate : Int;
 	@:optional
-	var channels : unsigned long;
+	var channels : Int;
 	@:optional
-	var sdpFmtpLine : DOMString;
+	var sdpFmtpLine : String;
 };

@@ -26,6 +26,6 @@ package js.textDetectionApi;
 
 typedef DetectedText = {
 	var boundingBox : js.geometry.DOMRectReadOnly;
-	var rawValue : DOMString;
+	var rawValue : String;
 	var cornerPoints : Array<js.imageCapture.Point2D>;
 };

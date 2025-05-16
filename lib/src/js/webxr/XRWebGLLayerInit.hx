@@ -36,5 +36,5 @@ typedef XRWebGLLayerInit = {
 	@:optional
 	var ignoreDepthValues : Bool = false;
 	@:optional
-	var framebufferScaleFactor : double = 1.0;
+	var framebufferScaleFactor : Float = 1.0;
 };

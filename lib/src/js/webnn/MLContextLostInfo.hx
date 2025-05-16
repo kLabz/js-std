@@ -26,5 +26,5 @@ package js.webnn;
 
 typedef MLContextLostInfo = {
 	@:optional
-	var message : DOMString;
+	var message : String;
 };

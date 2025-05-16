@@ -25,6 +25,6 @@
 package js.webAnimations2;
 
 extern class SequenceEffect extends js.webAnimations2.GroupEffect {
-	function new(children:Array<js.webAnimations.AnimationEffect>, ?timing:haxe.extern.EitherType<unrestricted double, js.webAnimations.EffectTiming>):Void;
+	function new(children:Array<js.webAnimations.AnimationEffect>, ?timing:haxe.extern.EitherType<Float, js.webAnimations.EffectTiming>):Void;
 	function clone():js.webAnimations2.SequenceEffect;
 }

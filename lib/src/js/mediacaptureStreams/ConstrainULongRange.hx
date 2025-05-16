@@ -26,7 +26,7 @@ package js.mediacaptureStreams;
 
 typedef ConstrainULongRange = js.mediacaptureStreams.ULongRange & {
 	@:optional
-	var exact : unsigned long;
+	var exact : Int;
 	@:optional
-	var ideal : unsigned long;
+	var ideal : Int;
 };

@@ -26,9 +26,9 @@ package js.webxr;
 
 typedef XRSessionInit = {
 	@:optional
-	var requiredFeatures : Array<DOMString>;
+	var requiredFeatures : Array<String>;
 	@:optional
-	var optionalFeatures : Array<DOMString>;
+	var optionalFeatures : Array<String>;
 	@:optional
 	var depthSensing : js.webxrDepthSensing.XRDepthStateInit;
 	@:optional

@@ -25,6 +25,6 @@
 package js.webauthn;
 
 typedef UnknownCredentialOptions = {
-	var rpId : DOMString;
+	var rpId : String;
 	var credentialId : Base64URLString;
 };

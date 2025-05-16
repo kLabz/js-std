@@ -28,7 +28,7 @@ typedef RouterCondition = {
 	@:optional
 	var urlPattern : URLPatternCompatible;
 	@:optional
-	var requestMethod : ByteString;
+	var requestMethod : String;
 	@:optional
 	var requestMode : js.fetch.RequestMode;
 	@:optional

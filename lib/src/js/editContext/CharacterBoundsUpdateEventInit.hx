@@ -26,7 +26,7 @@ package js.editContext;
 
 typedef CharacterBoundsUpdateEventInit = js.dom.EventInit & {
 	@:optional
-	var rangeStart : unsigned long;
+	var rangeStart : Int;
 	@:optional
-	var rangeEnd : unsigned long;
+	var rangeEnd : Int;
 };

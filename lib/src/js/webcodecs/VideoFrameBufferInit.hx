@@ -26,23 +26,23 @@ package js.webcodecs;
 
 typedef VideoFrameBufferInit = {
 	var format : js.webcodecs.VideoPixelFormat;
-	var codedWidth : unsigned long;
-	var codedHeight : unsigned long;
-	var timestamp : long long;
+	var codedWidth : Int;
+	var codedHeight : Int;
+	var timestamp : Float;
 	@:optional
-	var duration : unsigned long long;
+	var duration : Float;
 	@:optional
 	var layout : Array<js.webcodecs.PlaneLayout>;
 	@:optional
 	var visibleRect : js.geometry.DOMRectInit;
 	@:optional
-	var rotation : double = 0;
+	var rotation : Float = 0;
 	@:optional
 	var flip : Bool = false;
 	@:optional
-	var displayWidth : unsigned long;
+	var displayWidth : Int;
 	@:optional
-	var displayHeight : unsigned long;
+	var displayHeight : Int;
 	@:optional
 	var colorSpace : js.webcodecs.VideoColorSpaceInit;
 	@:optional

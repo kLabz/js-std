@@ -25,7 +25,7 @@
 package js.sanitizerApi;
 
 typedef SanitizerAttributeNamespace = {
-	var name : DOMString;
+	var name : String;
 	@:optional
-	var namespace : DOMString = null;
+	var namespace : String = null;
 };

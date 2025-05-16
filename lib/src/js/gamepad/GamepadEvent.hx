@@ -25,5 +25,5 @@
 package js.gamepad;
 
 extern class GamepadEvent extends js.dom.Event {
-	function new(type:DOMString, eventInitDict:js.gamepad.GamepadEventInit):Void;
+	function new(type:String, eventInitDict:js.gamepad.GamepadEventInit):Void;
 }

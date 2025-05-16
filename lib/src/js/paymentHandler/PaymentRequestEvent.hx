@@ -25,10 +25,10 @@
 package js.paymentHandler;
 
 extern class PaymentRequestEvent extends js.serviceWorkers.ExtendableEvent {
-	function new(type:DOMString, ?eventInitDict:js.paymentHandler.PaymentRequestEventInit):Void;
-	function openWindow(url:USVString):js.lib.Promise<js.serviceWorkers.WindowClient>;
-	function changePaymentMethod(methodName:DOMString, ?methodDetails:object):js.lib.Promise<js.paymentHandler.PaymentRequestDetailsUpdate>;
+	function new(type:String, ?eventInitDict:js.paymentHandler.PaymentRequestEventInit):Void;
+	function openWindow(url:String):js.lib.Promise<js.serviceWorkers.WindowClient>;
+	function changePaymentMethod(methodName:String, ?methodDetails:object):js.lib.Promise<js.paymentHandler.PaymentRequestDetailsUpdate>;
 	function changeShippingAddress(?shippingAddress:js.paymentHandler.AddressInit):js.lib.Promise<js.paymentHandler.PaymentRequestDetailsUpdate>;
-	function changeShippingOption(shippingOption:DOMString):js.lib.Promise<js.paymentHandler.PaymentRequestDetailsUpdate>;
+	function changeShippingOption(shippingOption:String):js.lib.Promise<js.paymentHandler.PaymentRequestDetailsUpdate>;
 	function respondWith(handlerResponsePromise:js.lib.Promise<js.paymentHandler.PaymentHandlerResponse>):Void;
 }

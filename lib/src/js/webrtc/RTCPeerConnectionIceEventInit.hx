@@ -28,5 +28,5 @@ typedef RTCPeerConnectionIceEventInit = js.dom.EventInit & {
 	@:optional
 	var candidate : js.webrtc.RTCIceCandidate;
 	@:optional
-	var url : USVString;
+	var url : String;
 };

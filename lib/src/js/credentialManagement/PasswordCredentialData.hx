@@ -26,9 +26,9 @@ package js.credentialManagement;
 
 typedef PasswordCredentialData = js.credentialManagement.CredentialData & {
 	@:optional
-	var name : USVString;
+	var name : String;
 	@:optional
-	var iconURL : USVString;
-	var origin : USVString;
-	var password : USVString;
+	var iconURL : String;
+	var origin : String;
+	var password : String;
 };

@@ -25,7 +25,7 @@
 package js.sanitizerApi;
 
 typedef SanitizerElementNamespace = {
-	var name : DOMString;
+	var name : String;
 	@:optional
-	var namespace : DOMString = "http://www.w3.org/1999/xhtml";
+	var namespace : String = "http://www.w3.org/1999/xhtml";
 };

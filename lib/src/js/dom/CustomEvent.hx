@@ -25,6 +25,6 @@
 package js.dom;
 
 extern class CustomEvent extends js.dom.Event {
-	function new(type:DOMString, ?eventInitDict:js.dom.CustomEventInit):Void;
-	function initCustomEvent(type:DOMString, ?bubbles:Bool, ?cancelable:Bool, ?detail:any):Void;
+	function new(type:String, ?eventInitDict:js.dom.CustomEventInit):Void;
+	function initCustomEvent(type:String, ?bubbles:Bool, ?cancelable:Bool, ?detail:Any):Void;
 }

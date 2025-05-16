@@ -25,8 +25,8 @@
 package js.securePaymentConfirmation;
 
 typedef PaymentCredentialInstrument = {
-	var displayName : USVString;
-	var icon : USVString;
+	var displayName : String;
+	var icon : String;
 	@:optional
 	var iconMustBeShown : Bool = true;
 };

@@ -26,9 +26,9 @@ package js.webrtc;
 
 typedef RTCIceParameters = {
 	@:optional
-	var usernameFragment : DOMString;
+	var usernameFragment : String;
 	@:optional
-	var password : DOMString;
+	var password : String;
 	@:optional
 	var iceLite : Bool;
 };

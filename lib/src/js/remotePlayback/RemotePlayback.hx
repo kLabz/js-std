@@ -25,7 +25,7 @@
 package js.remotePlayback;
 
 extern class RemotePlayback extends js.dom.EventTarget {
-	function watchAvailability(callback:RemotePlaybackAvailabilityCallback):js.lib.Promise<long>;
-	function cancelWatchAvailability(?id:long):js.lib.Promise<Void>;
+	function watchAvailability(callback:RemotePlaybackAvailabilityCallback):js.lib.Promise<Int>;
+	function cancelWatchAvailability(?id:Int):js.lib.Promise<Void>;
 	function prompt():js.lib.Promise<Void>;
 }

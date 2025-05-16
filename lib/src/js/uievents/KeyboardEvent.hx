@@ -25,11 +25,11 @@
 package js.uievents;
 
 extern class KeyboardEvent extends js.uievents.UIEvent {
-	function new(type:DOMString, ?eventInitDict:js.uievents.KeyboardEventInit):Void;
-	static inline var DOM_KEY_LOCATION_STANDARD : unsigned long = 0x00;
-	static inline var DOM_KEY_LOCATION_LEFT : unsigned long = 0x01;
-	static inline var DOM_KEY_LOCATION_RIGHT : unsigned long = 0x02;
-	static inline var DOM_KEY_LOCATION_NUMPAD : unsigned long = 0x03;
-	function getModifierState(keyArg:DOMString):Bool;
-	function initKeyboardEvent(typeArg:DOMString, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:js.html.Window, ?keyArg:DOMString, ?locationArg:unsigned long, ?ctrlKey:Bool, ?altKey:Bool, ?shiftKey:Bool, ?metaKey:Bool):Void;
+	function new(type:String, ?eventInitDict:js.uievents.KeyboardEventInit):Void;
+	static inline var DOM_KEY_LOCATION_STANDARD : Int = 0x00;
+	static inline var DOM_KEY_LOCATION_LEFT : Int = 0x01;
+	static inline var DOM_KEY_LOCATION_RIGHT : Int = 0x02;
+	static inline var DOM_KEY_LOCATION_NUMPAD : Int = 0x03;
+	function getModifierState(keyArg:String):Bool;
+	function initKeyboardEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:js.html.Window, ?keyArg:String, ?locationArg:Int, ?ctrlKey:Bool, ?altKey:Bool, ?shiftKey:Bool, ?metaKey:Bool):Void;
 }

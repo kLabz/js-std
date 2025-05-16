@@ -25,7 +25,7 @@
 package js.turtledove;
 
 typedef AdAuctionOneSeller = {
-	var seller : USVString;
+	var seller : String;
 	@:optional
-	var coordinatorOrigin : USVString;
+	var coordinatorOrigin : String;
 };

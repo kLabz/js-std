@@ -26,8 +26,8 @@ package js.streams;
 
 extern class WritableStreamDefaultWriter {
 	function new(stream:js.streams.WritableStream):Void;
-	function abort(?reason:any):js.lib.Promise<Void>;
+	function abort(?reason:Any):js.lib.Promise<Void>;
 	function close():js.lib.Promise<Void>;
 	function releaseLock():Void;
-	function write(?chunk:any):js.lib.Promise<Void>;
+	function write(?chunk:Any):js.lib.Promise<Void>;
 }

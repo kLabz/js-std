@@ -26,7 +26,7 @@ package js.webauthn;
 
 typedef AuthenticationExtensionsLargeBlobInputs = {
 	@:optional
-	var support : DOMString;
+	var support : String;
 	@:optional
 	var read : Bool;
 	@:optional

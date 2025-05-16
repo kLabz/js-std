@@ -27,9 +27,9 @@ package js.mediasession;
 typedef MediaSessionActionDetails = {
 	var action : js.mediasession.MediaSessionAction;
 	@:optional
-	var seekOffset : double;
+	var seekOffset : Float;
 	@:optional
-	var seekTime : double;
+	var seekTime : Float;
 	@:optional
 	var fastSeek : Bool;
 	@:optional

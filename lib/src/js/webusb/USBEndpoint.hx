@@ -25,5 +25,5 @@
 package js.webusb;
 
 extern class USBEndpoint {
-	function new(alternate:js.webusb.USBAlternateInterface, endpointNumber:octet, direction:js.webusb.USBDirection):Void;
+	function new(alternate:js.webusb.USBAlternateInterface, endpointNumber:Int, direction:js.webusb.USBDirection):Void;
 }

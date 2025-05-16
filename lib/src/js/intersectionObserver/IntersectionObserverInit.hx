@@ -28,13 +28,13 @@ typedef IntersectionObserverInit = {
 	@:optional
 	var root : haxe.extern.EitherType<js.dom.Element, js.dom.Document> = null;
 	@:optional
-	var rootMargin : DOMString = "0px";
+	var rootMargin : String = "0px";
 	@:optional
-	var scrollMargin : DOMString = "0px";
+	var scrollMargin : String = "0px";
 	@:optional
-	var threshold : haxe.extern.EitherType<double, Array<double>> = 0;
+	var threshold : haxe.extern.EitherType<Float, Array<Float>> = 0;
 	@:optional
-	var delay : long = 0;
+	var delay : Int = 0;
 	@:optional
 	var trackVisibility : Bool = false;
 };

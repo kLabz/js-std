@@ -25,5 +25,5 @@
 package js.webxrDepthSensing;
 
 extern class XRCPUDepthInformation extends js.webxrDepthSensing.XRDepthInformation {
-	function getDepthInMeters(x:float, y:float):float;
+	function getDepthInMeters(x:Float, y:Float):Float;
 }

@@ -25,5 +25,5 @@
 package js.webrtc;
 
 typedef RTCRtpHeaderExtensionCapability = {
-	var uri : DOMString;
+	var uri : String;
 };

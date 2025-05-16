@@ -26,7 +26,7 @@ package js.html;
 
 typedef HashChangeEventInit = js.dom.EventInit & {
 	@:optional
-	var oldURL : USVString = "";
+	var oldURL : String = "";
 	@:optional
-	var newURL : USVString = "";
+	var newURL : String = "";
 };

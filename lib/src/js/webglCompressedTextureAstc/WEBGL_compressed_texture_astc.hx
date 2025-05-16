@@ -53,5 +53,5 @@ extern class WEBGL_compressed_texture_astc {
 	static inline var COMPRESSED_SRGB8_ALPHA8_ASTC_10x10_KHR : GLenum = 0x93DB;
 	static inline var COMPRESSED_SRGB8_ALPHA8_ASTC_12x10_KHR : GLenum = 0x93DC;
 	static inline var COMPRESSED_SRGB8_ALPHA8_ASTC_12x12_KHR : GLenum = 0x93DD;
-	function getSupportedProfiles():Array<DOMString>;
+	function getSupportedProfiles():Array<String>;
 }

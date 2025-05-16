@@ -25,6 +25,6 @@
 package js.dom;
 
 extern class ShadowRoot extends js.dom.DocumentFragment {
-	function setHTMLUnsafe(html:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, DOMString>):Void;
-	function getHTML(?options:js.html.GetHTMLOptions):DOMString;
+	function setHTMLUnsafe(html:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>):Void;
+	function getHTML(?options:js.html.GetHTMLOptions):String;
 }

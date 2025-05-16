@@ -26,5 +26,5 @@ package js.turtledove;
 
 typedef AdAuctionDataBuyerConfig = {
 	@:optional
-	var targetSize : unsigned long;
+	var targetSize : Int;
 };

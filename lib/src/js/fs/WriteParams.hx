@@ -27,9 +27,9 @@ package js.fs;
 typedef WriteParams = {
 	var type : js.fs.WriteCommandType;
 	@:optional
-	var size : unsigned long long;
+	var size : Float;
 	@:optional
-	var position : unsigned long long;
+	var position : Float;
 	@:optional
-	var data : haxe.extern.EitherType<BufferSource, haxe.extern.EitherType<js.fileapi.Blob, USVString>>;
+	var data : haxe.extern.EitherType<BufferSource, haxe.extern.EitherType<js.fileapi.Blob, String>>;
 };

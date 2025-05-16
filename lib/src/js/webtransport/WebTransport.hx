@@ -25,7 +25,7 @@
 package js.webtransport;
 
 extern class WebTransport {
-	function new(url:USVString, ?options:js.webtransport.WebTransportOptions):Void;
+	function new(url:String, ?options:js.webtransport.WebTransportOptions):Void;
 	function getStats():js.lib.Promise<js.webtransport.WebTransportConnectionStats>;
 	function close(?closeInfo:js.webtransport.WebTransportCloseInfo):Void;
 	function createBidirectionalStream(?options:js.webtransport.WebTransportSendStreamOptions):js.lib.Promise<js.webtransport.WebTransportBidirectionalStream>;

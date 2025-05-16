@@ -27,7 +27,7 @@ package js.webusb;
 typedef USBControlTransferParameters = {
 	var requestType : js.webusb.USBRequestType;
 	var recipient : js.webusb.USBRecipient;
-	var request : octet;
+	var request : Int;
 	var value : Int;
 	var index : Int;
 };

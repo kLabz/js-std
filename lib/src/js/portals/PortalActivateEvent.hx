@@ -25,6 +25,6 @@
 package js.portals;
 
 extern class PortalActivateEvent extends js.dom.Event {
-	function new(type:DOMString, ?eventInitDict:js.portals.PortalActivateEventInit):Void;
+	function new(type:String, ?eventInitDict:js.portals.PortalActivateEventInit):Void;
 	function adoptPredecessor():js.portals.HTMLPortalElement;
 }

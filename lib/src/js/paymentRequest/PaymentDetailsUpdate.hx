@@ -26,7 +26,7 @@ package js.paymentRequest;
 
 typedef PaymentDetailsUpdate = js.paymentRequest.PaymentDetailsBase & {
 	@:optional
-	var error : DOMString;
+	var error : String;
 	@:optional
 	var total : js.paymentRequest.PaymentItem;
 	@:optional

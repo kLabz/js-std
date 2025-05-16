@@ -26,7 +26,7 @@ package js.webauthn;
 
 typedef AuthenticationExtensionsClientInputs = {
 	@:optional
-	var credentialProtectionPolicy : USVString;
+	var credentialProtectionPolicy : String;
 	@:optional
 	var enforceCredentialProtectionPolicy : Bool = false;
 	@:optional
@@ -42,9 +42,9 @@ typedef AuthenticationExtensionsClientInputs = {
 	@:optional
 	var payment : js.securePaymentConfirmation.AuthenticationExtensionsPaymentInputs;
 	@:optional
-	var appid : DOMString;
+	var appid : String;
 	@:optional
-	var appidExclude : DOMString;
+	var appidExclude : String;
 	@:optional
 	var credProps : Bool;
 	@:optional

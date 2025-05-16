@@ -25,7 +25,7 @@
 package js.html;
 
 extern class DOMStringMap {
-	overload function (name:DOMString):DOMString;
-	overload function (name:DOMString, value:DOMString):Void;
-	overload function (name:DOMString):Void;
+	overload function (name:String):String;
+	overload function (name:String, value:String):Void;
+	overload function (name:String):Void;
 }

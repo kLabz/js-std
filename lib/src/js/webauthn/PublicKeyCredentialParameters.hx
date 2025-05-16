@@ -25,6 +25,6 @@
 package js.webauthn;
 
 typedef PublicKeyCredentialParameters = {
-	var type : DOMString;
+	var type : String;
 	var alg : COSEAlgorithmIdentifier;
 };

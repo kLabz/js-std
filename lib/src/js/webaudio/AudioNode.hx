@@ -25,13 +25,13 @@
 package js.webaudio;
 
 extern class AudioNode extends js.dom.EventTarget {
-	overload function connect(destinationNode:js.webaudio.AudioNode, ?output:unsigned long, ?input:unsigned long):js.webaudio.AudioNode;
-	overload function connect(destinationParam:js.webaudio.AudioParam, ?output:unsigned long):Void;
+	overload function connect(destinationNode:js.webaudio.AudioNode, ?output:Int, ?input:Int):js.webaudio.AudioNode;
+	overload function connect(destinationParam:js.webaudio.AudioParam, ?output:Int):Void;
 	overload function disconnect():Void;
-	overload function disconnect(output:unsigned long):Void;
+	overload function disconnect(output:Int):Void;
 	overload function disconnect(destinationNode:js.webaudio.AudioNode):Void;
-	overload function disconnect(destinationNode:js.webaudio.AudioNode, output:unsigned long):Void;
-	overload function disconnect(destinationNode:js.webaudio.AudioNode, output:unsigned long, input:unsigned long):Void;
+	overload function disconnect(destinationNode:js.webaudio.AudioNode, output:Int):Void;
+	overload function disconnect(destinationNode:js.webaudio.AudioNode, output:Int, input:Int):Void;
 	overload function disconnect(destinationParam:js.webaudio.AudioParam):Void;
-	overload function disconnect(destinationParam:js.webaudio.AudioParam, output:unsigned long):Void;
+	overload function disconnect(destinationParam:js.webaudio.AudioParam, output:Int):Void;
 }

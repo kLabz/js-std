@@ -25,5 +25,5 @@
 package js.webAnimations2;
 
 extern class AnimationNodeList {
-	function item(index:unsigned long):js.webAnimations.AnimationEffect;
+	function item(index:Int):js.webAnimations.AnimationEffect;
 }

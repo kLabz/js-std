@@ -26,9 +26,9 @@ package js.performanceMeasureMemory;
 
 typedef MemoryBreakdownEntry = {
 	@:optional
-	var bytes : unsigned long long;
+	var bytes : Float;
 	@:optional
 	var attribution : Array<js.performanceMeasureMemory.MemoryAttribution>;
 	@:optional
-	var types : Array<DOMString>;
+	var types : Array<String>;
 };

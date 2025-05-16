@@ -29,10 +29,10 @@ extern class XRFrame {
 	function getPose(space:js.webxr.XRSpace, baseSpace:js.webxr.XRSpace):js.webxr.XRPose;
 	function createAnchor(pose:js.webxr.XRRigidTransform, space:js.webxr.XRSpace):js.lib.Promise<js.anchors.XRAnchor>;
 	function getDepthInformation(view:js.webxr.XRView):js.webxrDepthSensing.XRCPUDepthInformation;
-	function getHitTestResults(hitTestSource:js.webxrHitTest.XRHitTestSource):Array<js.webxrHitTest.XRHitTestResult>;
-	function getHitTestResultsForTransientInput(hitTestSource:js.webxrHitTest.XRTransientInputHitTestSource):Array<js.webxrHitTest.XRTransientInputHitTestResult>;
 	function getJointPose(joint:js.webxrHandInput.XRJointSpace, baseSpace:js.webxr.XRSpace):js.webxrHandInput.XRJointPose;
 	function fillJointRadii(jointSpaces:Array<js.webxrHandInput.XRJointSpace>, radii:Float32Array):Bool;
 	function fillPoses(spaces:Array<js.webxr.XRSpace>, baseSpace:js.webxr.XRSpace, transforms:Float32Array):Bool;
 	function getLightEstimate(lightProbe:js.webxrLightingEstimation.XRLightProbe):js.webxrLightingEstimation.XRLightEstimate;
+	function getHitTestResults(hitTestSource:js.webxrHitTest.XRHitTestSource):Array<js.webxrHitTest.XRHitTestResult>;
+	function getHitTestResultsForTransientInput(hitTestSource:js.webxrHitTest.XRTransientInputHitTestSource):Array<js.webxrHitTest.XRTransientInputHitTestResult>;
 }

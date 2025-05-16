@@ -26,25 +26,25 @@ package js.turtledove;
 
 typedef GenerateBidOutput = {
 	@:optional
-	var bid : double = -1;
+	var bid : Float = -1;
 	@:optional
-	var bidCurrency : DOMString;
+	var bidCurrency : String;
 	@:optional
-	var render : haxe.extern.EitherType<DOMString, js.turtledove.AdRender>;
+	var render : haxe.extern.EitherType<String, js.turtledove.AdRender>;
 	@:optional
-	var ad : any;
+	var ad : Any;
 	@:optional
-	var selectedBuyerAndSellerReportingId : USVString;
+	var selectedBuyerAndSellerReportingId : String;
 	@:optional
-	var adComponents : Array<haxe.extern.EitherType<DOMString, js.turtledove.AdRender>>;
+	var adComponents : Array<haxe.extern.EitherType<String, js.turtledove.AdRender>>;
 	@:optional
-	var adCost : double;
+	var adCost : Float;
 	@:optional
-	var modelingSignals : unrestricted double;
+	var modelingSignals : Float;
 	@:optional
 	var allowComponentAuction : Bool = false;
 	@:optional
-	var targetNumAdComponents : unsigned long;
+	var targetNumAdComponents : Int;
 	@:optional
-	var numMandatoryAdComponents : unsigned long = 0;
+	var numMandatoryAdComponents : Int = 0;
 };

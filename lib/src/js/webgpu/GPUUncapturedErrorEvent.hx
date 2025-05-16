@@ -25,5 +25,5 @@
 package js.webgpu;
 
 extern class GPUUncapturedErrorEvent extends js.dom.Event {
-	function new(type:DOMString, gpuUncapturedErrorEventInitDict:js.webgpu.GPUUncapturedErrorEventInit):Void;
+	function new(type:String, gpuUncapturedErrorEventInitDict:js.webgpu.GPUUncapturedErrorEventInit):Void;
 }

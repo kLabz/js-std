@@ -25,5 +25,5 @@
 package js.html;
 
 extern class ToggleEvent extends js.dom.Event {
-	function new(type:DOMString, ?eventInitDict:js.html.ToggleEventInit):Void;
+	function new(type:String, ?eventInitDict:js.html.ToggleEventInit):Void;
 }

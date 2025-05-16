@@ -27,5 +27,5 @@ package js.webrtc;
 typedef RTCStats = {
 	var timestamp : DOMHighResTimeStamp;
 	var type : js.webrtcStats.RTCStatsType;
-	var id : DOMString;
+	var id : String;
 };

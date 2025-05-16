@@ -25,5 +25,5 @@
 package js.svgAnimations;
 
 extern class TimeEvent extends js.dom.Event {
-	function initTimeEvent(typeArg:DOMString, viewArg:js.html.Window, detailArg:long):Void;
+	function initTimeEvent(typeArg:String, viewArg:js.html.Window, detailArg:Int):Void;
 }

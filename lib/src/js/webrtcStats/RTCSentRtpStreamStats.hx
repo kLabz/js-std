@@ -26,9 +26,9 @@ package js.webrtcStats;
 
 typedef RTCSentRtpStreamStats = js.webrtcStats.RTCRtpStreamStats & {
 	@:optional
-	var packetsSent : unsigned long long;
+	var packetsSent : Float;
 	@:optional
-	var bytesSent : unsigned long long;
+	var bytesSent : Float;
 	@:optional
-	var packetsSentWithEct1 : unsigned long long;
+	var packetsSentWithEct1 : Float;
 };

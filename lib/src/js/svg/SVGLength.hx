@@ -36,6 +36,6 @@ extern class SVGLength {
 	static inline var SVG_LENGTHTYPE_IN : Int = 8;
 	static inline var SVG_LENGTHTYPE_PT : Int = 9;
 	static inline var SVG_LENGTHTYPE_PC : Int = 10;
-	function newValueSpecifiedUnits(unitType:Int, valueInSpecifiedUnits:float):Void;
+	function newValueSpecifiedUnits(unitType:Int, valueInSpecifiedUnits:Float):Void;
 	function convertToSpecifiedUnits(unitType:Int):Void;
 }

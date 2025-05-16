@@ -26,7 +26,7 @@ package js.urlpattern;
 
 typedef URLPatternComponentResult = {
 	@:optional
-	var input : USVString;
+	var input : String;
 	@:optional
-	var groups : haxe.DynamicAccess<haxe.extern.EitherType<USVString, Void>>;
+	var groups : haxe.DynamicAccess<haxe.extern.EitherType<String, Void>>;
 };

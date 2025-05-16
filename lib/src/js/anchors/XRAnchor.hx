@@ -25,6 +25,6 @@
 package js.anchors;
 
 extern class XRAnchor {
-	function requestPersistentHandle():js.lib.Promise<DOMString>;
+	function requestPersistentHandle():js.lib.Promise<String>;
 	function delete():Void;
 }

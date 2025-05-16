@@ -25,6 +25,6 @@
 package js.fencedFrame;
 
 extern class FencedFrameConfig {
-	function new(url:USVString):Void;
-	function setSharedStorageContext(contextString:DOMString):Void;
+	function new(url:String):Void;
+	function setSharedStorageContext(contextString:String):Void;
 }

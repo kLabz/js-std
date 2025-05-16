@@ -27,6 +27,6 @@ package js.translationApi;
 extern class LanguageDetector {
 	function create(?options:js.translationApi.LanguageDetectorCreateOptions):js.lib.Promise<js.translationApi.LanguageDetector>;
 	function availability(?options:js.translationApi.LanguageDetectorCreateCoreOptions):js.lib.Promise<js.writingAssistanceApis.Availability>;
-	function detect(input:DOMString, ?options:js.translationApi.LanguageDetectorDetectOptions):js.lib.Promise<Array<js.translationApi.LanguageDetectionResult>>;
-	function measureInputUsage(input:DOMString, ?options:js.translationApi.LanguageDetectorDetectOptions):js.lib.Promise<double>;
+	function detect(input:String, ?options:js.translationApi.LanguageDetectorDetectOptions):js.lib.Promise<Array<js.translationApi.LanguageDetectionResult>>;
+	function measureInputUsage(input:String, ?options:js.translationApi.LanguageDetectorDetectOptions):js.lib.Promise<Float>;
 }

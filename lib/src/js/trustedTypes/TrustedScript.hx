@@ -26,5 +26,5 @@ package js.trustedTypes;
 
 extern class TrustedScript {
 	function ():Void;
-	function toJSON():DOMString;
+	function toJSON():String;
 }

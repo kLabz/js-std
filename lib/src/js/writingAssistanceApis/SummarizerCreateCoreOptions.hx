@@ -32,9 +32,9 @@ typedef SummarizerCreateCoreOptions = {
 	@:optional
 	var length : js.writingAssistanceApis.SummarizerLength = "short";
 	@:optional
-	var expectedInputLanguages : Array<DOMString>;
+	var expectedInputLanguages : Array<String>;
 	@:optional
-	var expectedContextLanguages : Array<DOMString>;
+	var expectedContextLanguages : Array<String>;
 	@:optional
-	var outputLanguage : DOMString;
+	var outputLanguage : String;
 };

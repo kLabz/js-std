@@ -25,14 +25,14 @@
 package js.cookieStore;
 
 typedef CookieInit = {
-	var name : USVString;
-	var value : USVString;
+	var name : String;
+	var value : String;
 	@:optional
 	var expires : DOMHighResTimeStamp = null;
 	@:optional
-	var domain : USVString = null;
+	var domain : String = null;
 	@:optional
-	var path : USVString = "/";
+	var path : String = "/";
 	@:optional
 	var sameSite : js.cookieStore.CookieSameSite = "strict";
 	@:optional

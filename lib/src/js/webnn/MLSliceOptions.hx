@@ -26,5 +26,5 @@ package js.webnn;
 
 typedef MLSliceOptions = js.webnn.MLOperatorOptions & {
 	@:optional
-	var strides : Array<unsigned long>;
+	var strides : Array<Int>;
 };

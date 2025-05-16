@@ -26,12 +26,12 @@ package js.webrtc;
 
 typedef RTCPeerConnectionIceErrorEventInit = js.dom.EventInit & {
 	@:optional
-	var address : DOMString;
+	var address : String;
 	@:optional
 	var port : Int;
 	@:optional
-	var url : USVString;
+	var url : String;
 	var errorCode : Int;
 	@:optional
-	var errorText : USVString;
+	var errorText : String;
 };

@@ -26,9 +26,9 @@ package js.webcrypto;
 
 typedef RsaOtherPrimesInfo = {
 	@:optional
-	var r : DOMString;
+	var r : String;
 	@:optional
-	var d : DOMString;
+	var d : String;
 	@:optional
-	var t : DOMString;
+	var t : String;
 };

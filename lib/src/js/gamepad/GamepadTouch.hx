@@ -26,9 +26,9 @@ package js.gamepad;
 
 typedef GamepadTouch = {
 	@:optional
-	var touchId : unsigned long;
+	var touchId : Int;
 	@:optional
-	var surfaceId : octet;
+	var surfaceId : Int;
 	@:optional
 	var position : js.geometry.DOMPointReadOnly;
 	@:optional

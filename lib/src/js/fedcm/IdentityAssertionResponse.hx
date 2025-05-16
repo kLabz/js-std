@@ -26,7 +26,7 @@ package js.fedcm;
 
 typedef IdentityAssertionResponse = {
 	@:optional
-	var token : USVString;
+	var token : String;
 	@:optional
-	var continue_on : USVString;
+	var continue_on : String;
 };

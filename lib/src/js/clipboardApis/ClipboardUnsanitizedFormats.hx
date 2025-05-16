@@ -26,5 +26,5 @@ package js.clipboardApis;
 
 typedef ClipboardUnsanitizedFormats = {
 	@:optional
-	var unsanitized : Array<DOMString>;
+	var unsanitized : Array<String>;
 };

@@ -25,5 +25,5 @@
 package js.fedcm;
 
 typedef DisconnectedAccount = {
-	var account_id : USVString;
+	var account_id : String;
 };

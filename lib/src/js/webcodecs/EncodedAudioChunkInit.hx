@@ -26,9 +26,9 @@ package js.webcodecs;
 
 typedef EncodedAudioChunkInit = {
 	var type : js.webcodecs.EncodedAudioChunkType;
-	var timestamp : long long;
+	var timestamp : Float;
 	@:optional
-	var duration : unsigned long long;
+	var duration : Float;
 	var data : AllowSharedBufferSource;
 	@:optional
 	var transfer : Array<ArrayBuffer> = [];

@@ -26,7 +26,7 @@ package js.webrtc;
 
 typedef RTCRtcpParameters = {
 	@:optional
-	var cname : DOMString;
+	var cname : String;
 	@:optional
 	var reducedSize : Bool;
 };

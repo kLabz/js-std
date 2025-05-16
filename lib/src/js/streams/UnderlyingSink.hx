@@ -34,5 +34,5 @@ typedef UnderlyingSink = {
 	@:optional
 	var abort : UnderlyingSinkAbortCallback;
 	@:optional
-	var type : any;
+	var type : Any;
 };

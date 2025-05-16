@@ -26,13 +26,13 @@ package js.fedcm;
 
 typedef IdentityProviderRequestOptions = js.fedcm.IdentityProviderConfig & {
 	@:optional
-	var nonce : USVString;
+	var nonce : String;
 	@:optional
-	var loginHint : DOMString;
+	var loginHint : String;
 	@:optional
-	var domainHint : DOMString;
+	var domainHint : String;
 	@:optional
-	var fields : Array<USVString>;
+	var fields : Array<String>;
 	@:optional
-	var params : any;
+	var params : Any;
 };

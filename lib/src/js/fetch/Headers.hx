@@ -26,13 +26,13 @@ package js.fetch;
 
 extern class Headers {
 	function new(?init:HeadersInit):Void;
-	function append(name:ByteString, value:ByteString):Void;
-	function delete(name:ByteString):Void;
-	function get(name:ByteString):ByteString;
-	function getSetCookie():Array<ByteString>;
-	function has(name:ByteString):Bool;
-	function set(name:ByteString, value:ByteString):Void;
-	function keys():Iterator<ByteString>;
-	function values():Iterator<ByteString>;
+	function append(name:String, value:String):Void;
+	function delete(name:String):Void;
+	function get(name:String):String;
+	function getSetCookie():Array<String>;
+	function has(name:String):Bool;
+	function set(name:String, value:String):Void;
+	function keys():Iterator<String>;
+	function values():Iterator<String>;
 	function entries():Iterator<Array<Dynamic>>;
 }

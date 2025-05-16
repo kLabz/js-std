@@ -25,5 +25,5 @@
 package js.speechApi;
 
 extern class SpeechSynthesisUtterance extends js.dom.EventTarget {
-	function new(?text:DOMString):Void;
+	function new(?text:String):Void;
 }

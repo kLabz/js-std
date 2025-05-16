@@ -25,15 +25,15 @@
 package js.webrtcStats;
 
 typedef RTCAudioPlayoutStats = js.webrtc.RTCStats & {
-	var kind : DOMString;
+	var kind : String;
 	@:optional
-	var synthesizedSamplesDuration : double;
+	var synthesizedSamplesDuration : Float;
 	@:optional
-	var synthesizedSamplesEvents : unsigned long;
+	var synthesizedSamplesEvents : Int;
 	@:optional
-	var totalSamplesDuration : double;
+	var totalSamplesDuration : Float;
 	@:optional
-	var totalPlayoutDelay : double;
+	var totalPlayoutDelay : Float;
 	@:optional
-	var totalSamplesCount : unsigned long long;
+	var totalSamplesCount : Float;
 };

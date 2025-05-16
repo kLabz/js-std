@@ -25,5 +25,5 @@
 package js.webgpu;
 
 extern class GPUValidationError extends js.webgpu.GPUError {
-	function new(message:DOMString):Void;
+	function new(message:String):Void;
 }

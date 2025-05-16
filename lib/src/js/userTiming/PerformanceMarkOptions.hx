@@ -26,7 +26,7 @@ package js.userTiming;
 
 typedef PerformanceMarkOptions = {
 	@:optional
-	var detail : any;
+	var detail : Any;
 	@:optional
 	var startTime : DOMHighResTimeStamp;
 };

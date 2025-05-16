@@ -30,27 +30,27 @@ typedef PannerOptions = js.webaudio.AudioNodeOptions & {
 	@:optional
 	var distanceModel : js.webaudio.DistanceModelType = "inverse";
 	@:optional
-	var positionX : float = 0;
+	var positionX : Float = 0;
 	@:optional
-	var positionY : float = 0;
+	var positionY : Float = 0;
 	@:optional
-	var positionZ : float = 0;
+	var positionZ : Float = 0;
 	@:optional
-	var orientationX : float = 1;
+	var orientationX : Float = 1;
 	@:optional
-	var orientationY : float = 0;
+	var orientationY : Float = 0;
 	@:optional
-	var orientationZ : float = 0;
+	var orientationZ : Float = 0;
 	@:optional
-	var refDistance : double = 1;
+	var refDistance : Float = 1;
 	@:optional
-	var maxDistance : double = 10000;
+	var maxDistance : Float = 10000;
 	@:optional
-	var rolloffFactor : double = 1;
+	var rolloffFactor : Float = 1;
 	@:optional
-	var coneInnerAngle : double = 360;
+	var coneInnerAngle : Float = 360;
 	@:optional
-	var coneOuterAngle : double = 360;
+	var coneOuterAngle : Float = 360;
 	@:optional
-	var coneOuterGain : double = 0;
+	var coneOuterGain : Float = 0;
 };

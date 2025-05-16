@@ -26,13 +26,13 @@ package js.cookieStore;
 
 typedef CookieListItem = {
 	@:optional
-	var name : USVString;
+	var name : String;
 	@:optional
-	var value : USVString;
+	var value : String;
 	@:optional
-	var domain : USVString;
+	var domain : String;
 	@:optional
-	var path : USVString;
+	var path : String;
 	@:optional
 	var expires : DOMHighResTimeStamp;
 	@:optional

@@ -26,7 +26,7 @@ package js.mediacaptureAutomation;
 
 typedef MockCameraConfiguration = js.mediacaptureAutomation.MockCaptureDeviceConfiguration & {
 	@:optional
-	var defaultFrameRate : double = 30;
+	var defaultFrameRate : Float = 30;
 	@:optional
-	var facingMode : DOMString = "user";
+	var facingMode : String = "user";
 };

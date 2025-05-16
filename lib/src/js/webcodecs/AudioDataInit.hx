@@ -26,10 +26,10 @@ package js.webcodecs;
 
 typedef AudioDataInit = {
 	var format : js.webcodecs.AudioSampleFormat;
-	var sampleRate : float;
-	var numberOfFrames : unsigned long;
-	var numberOfChannels : unsigned long;
-	var timestamp : long long;
+	var sampleRate : Float;
+	var numberOfFrames : Int;
+	var numberOfChannels : Int;
+	var timestamp : Float;
 	var data : BufferSource;
 	@:optional
 	var transfer : Array<ArrayBuffer> = [];

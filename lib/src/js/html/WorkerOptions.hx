@@ -30,5 +30,5 @@ typedef WorkerOptions = {
 	@:optional
 	var credentials : js.fetch.RequestCredentials = "same-origin";
 	@:optional
-	var name : DOMString = "";
+	var name : String = "";
 };

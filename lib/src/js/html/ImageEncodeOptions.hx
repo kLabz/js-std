@@ -26,7 +26,7 @@ package js.html;
 
 typedef ImageEncodeOptions = {
 	@:optional
-	var type : DOMString = "image/png";
+	var type : String = "image/png";
 	@:optional
-	var quality : unrestricted double;
+	var quality : Float;
 };

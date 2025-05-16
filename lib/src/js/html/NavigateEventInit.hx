@@ -38,9 +38,9 @@ typedef NavigateEventInit = js.dom.EventInit & {
 	@:optional
 	var formData : js.xhr.FormData = null;
 	@:optional
-	var downloadRequest : DOMString = null;
+	var downloadRequest : String = null;
 	@:optional
-	var info : any;
+	var info : Any;
 	@:optional
 	var hasUAVisualTransition : Bool = false;
 	@:optional

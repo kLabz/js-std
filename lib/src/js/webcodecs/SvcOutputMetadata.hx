@@ -26,5 +26,5 @@ package js.webcodecs;
 
 typedef SvcOutputMetadata = {
 	@:optional
-	var temporalLayerId : unsigned long;
+	var temporalLayerId : Int;
 };

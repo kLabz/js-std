@@ -32,7 +32,7 @@ extern class SubtleCrypto {
 	function digest(algorithm:AlgorithmIdentifier, data:BufferSource):js.lib.Promise<ArrayBuffer>;
 	function generateKey(algorithm:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<js.webcrypto.KeyUsage>):js.lib.Promise<haxe.extern.EitherType<js.webcrypto.CryptoKey, js.webcrypto.CryptoKeyPair>>;
 	function deriveKey(algorithm:AlgorithmIdentifier, baseKey:js.webcrypto.CryptoKey, derivedKeyType:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<js.webcrypto.KeyUsage>):js.lib.Promise<js.webcrypto.CryptoKey>;
-	function deriveBits(algorithm:AlgorithmIdentifier, baseKey:js.webcrypto.CryptoKey, ?length:unsigned long):js.lib.Promise<ArrayBuffer>;
+	function deriveBits(algorithm:AlgorithmIdentifier, baseKey:js.webcrypto.CryptoKey, ?length:Int):js.lib.Promise<ArrayBuffer>;
 	function importKey(format:js.webcrypto.KeyFormat, keyData:haxe.extern.EitherType<BufferSource, js.webcrypto.JsonWebKey>, algorithm:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<js.webcrypto.KeyUsage>):js.lib.Promise<js.webcrypto.CryptoKey>;
 	function exportKey(format:js.webcrypto.KeyFormat, key:js.webcrypto.CryptoKey):js.lib.Promise<haxe.extern.EitherType<ArrayBuffer, js.webcrypto.JsonWebKey>>;
 	function wrapKey(format:js.webcrypto.KeyFormat, key:js.webcrypto.CryptoKey, wrappingKey:js.webcrypto.CryptoKey, wrapAlgorithm:AlgorithmIdentifier):js.lib.Promise<ArrayBuffer>;

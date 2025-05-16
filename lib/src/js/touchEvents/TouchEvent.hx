@@ -25,6 +25,6 @@
 package js.touchEvents;
 
 extern class TouchEvent extends js.uievents.UIEvent {
-	function new(type:DOMString, ?eventInitDict:js.touchEvents.TouchEventInit):Void;
-	function getModifierState(keyArg:DOMString):Bool;
+	function new(type:String, ?eventInitDict:js.touchEvents.TouchEventInit):Void;
+	function getModifierState(keyArg:String):Bool;
 }

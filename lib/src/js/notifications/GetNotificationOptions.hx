@@ -26,5 +26,5 @@ package js.notifications;
 
 typedef GetNotificationOptions = {
 	@:optional
-	var tag : DOMString = "";
+	var tag : String = "";
 };

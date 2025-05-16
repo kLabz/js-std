@@ -25,5 +25,5 @@
 package js.streams;
 
 typedef QueuingStrategyInit = {
-	var highWaterMark : unrestricted double;
+	var highWaterMark : Float;
 };

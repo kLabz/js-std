@@ -26,7 +26,7 @@ package js.webrtc;
 
 extern class RTCDataChannel extends js.dom.EventTarget {
 	function close():Void;
-	overload function send(data:USVString):Void;
+	overload function send(data:String):Void;
 	overload function send(data:js.fileapi.Blob):Void;
 	overload function send(data:ArrayBuffer):Void;
 	overload function send(data:ArrayBufferView):Void;

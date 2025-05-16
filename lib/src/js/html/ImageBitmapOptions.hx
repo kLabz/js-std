@@ -32,9 +32,9 @@ typedef ImageBitmapOptions = {
 	@:optional
 	var colorSpaceConversion : js.html.ColorSpaceConversion = "default";
 	@:optional
-	var resizeWidth : unsigned long;
+	var resizeWidth : Int;
 	@:optional
-	var resizeHeight : unsigned long;
+	var resizeHeight : Int;
 	@:optional
 	var resizeQuality : js.html.ResizeQuality = "low";
 };

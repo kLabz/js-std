@@ -25,5 +25,5 @@
 package js.webgl1;
 
 extern class WebGLContextEvent extends js.dom.Event {
-	function new(type:DOMString, ?eventInit:js.webgl1.WebGLContextEventInit):Void;
+	function new(type:String, ?eventInit:js.webgl1.WebGLContextEventInit):Void;
 }

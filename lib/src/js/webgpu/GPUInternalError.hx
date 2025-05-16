@@ -25,5 +25,5 @@
 package js.webgpu;
 
 extern class GPUInternalError extends js.webgpu.GPUError {
-	function new(message:DOMString):Void;
+	function new(message:String):Void;
 }

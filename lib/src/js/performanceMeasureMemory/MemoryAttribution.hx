@@ -26,9 +26,9 @@ package js.performanceMeasureMemory;
 
 typedef MemoryAttribution = {
 	@:optional
-	var url : USVString;
+	var url : String;
 	@:optional
 	var container : js.performanceMeasureMemory.MemoryAttributionContainer;
 	@:optional
-	var scope : DOMString;
+	var scope : String;
 };

@@ -26,11 +26,11 @@ package js.userTiming;
 
 typedef PerformanceMeasureOptions = {
 	@:optional
-	var detail : any;
+	var detail : Any;
 	@:optional
-	var start : haxe.extern.EitherType<DOMString, DOMHighResTimeStamp>;
+	var start : haxe.extern.EitherType<String, DOMHighResTimeStamp>;
 	@:optional
 	var duration : DOMHighResTimeStamp;
 	@:optional
-	var end : haxe.extern.EitherType<DOMString, DOMHighResTimeStamp>;
+	var end : haxe.extern.EitherType<String, DOMHighResTimeStamp>;
 };

@@ -38,6 +38,6 @@ extern class EXT_disjoint_timer_query {
 	function beginQueryEXT(target:GLenum, query:js.extDisjointTimerQuery.WebGLTimerQueryEXT):Void;
 	function endQueryEXT(target:GLenum):Void;
 	function queryCounterEXT(query:js.extDisjointTimerQuery.WebGLTimerQueryEXT, target:GLenum):Void;
-	function getQueryEXT(target:GLenum, pname:GLenum):any;
-	function getQueryObjectEXT(query:js.extDisjointTimerQuery.WebGLTimerQueryEXT, pname:GLenum):any;
+	function getQueryEXT(target:GLenum, pname:GLenum):Any;
+	function getQueryObjectEXT(query:js.extDisjointTimerQuery.WebGLTimerQueryEXT, pname:GLenum):Any;
 }

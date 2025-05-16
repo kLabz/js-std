@@ -26,11 +26,11 @@ package js.webauthn;
 
 typedef AuthenticatorSelectionCriteria = {
 	@:optional
-	var authenticatorAttachment : DOMString;
+	var authenticatorAttachment : String;
 	@:optional
-	var residentKey : DOMString;
+	var residentKey : String;
 	@:optional
 	var requireResidentKey : Bool = false;
 	@:optional
-	var userVerification : DOMString = "preferred";
+	var userVerification : String = "preferred";
 };

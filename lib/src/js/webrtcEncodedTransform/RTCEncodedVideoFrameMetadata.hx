@@ -26,27 +26,27 @@ package js.webrtcEncodedTransform;
 
 typedef RTCEncodedVideoFrameMetadata = {
 	@:optional
-	var frameId : unsigned long long;
+	var frameId : Float;
 	@:optional
-	var dependencies : Array<unsigned long long>;
+	var dependencies : Array<Float>;
 	@:optional
 	var width : Int;
 	@:optional
 	var height : Int;
 	@:optional
-	var spatialIndex : unsigned long;
+	var spatialIndex : Int;
 	@:optional
-	var temporalIndex : unsigned long;
+	var temporalIndex : Int;
 	@:optional
-	var synchronizationSource : unsigned long;
+	var synchronizationSource : Int;
 	@:optional
-	var payloadType : octet;
+	var payloadType : Int;
 	@:optional
-	var contributingSources : Array<unsigned long>;
+	var contributingSources : Array<Int>;
 	@:optional
-	var timestamp : long long;
+	var timestamp : Float;
 	@:optional
-	var rtpTimestamp : unsigned long;
+	var rtpTimestamp : Int;
 	@:optional
 	var receiveTime : DOMHighResTimeStamp;
 	@:optional
@@ -54,5 +54,5 @@ typedef RTCEncodedVideoFrameMetadata = {
 	@:optional
 	var senderCaptureTimeOffset : DOMHighResTimeStamp;
 	@:optional
-	var mimeType : DOMString;
+	var mimeType : String;
 };

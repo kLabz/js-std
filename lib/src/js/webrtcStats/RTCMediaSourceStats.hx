@@ -25,6 +25,6 @@
 package js.webrtcStats;
 
 typedef RTCMediaSourceStats = js.webrtc.RTCStats & {
-	var trackIdentifier : DOMString;
-	var kind : DOMString;
+	var trackIdentifier : String;
+	var kind : String;
 };

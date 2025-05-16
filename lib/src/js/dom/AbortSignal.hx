@@ -25,8 +25,8 @@
 package js.dom;
 
 extern class AbortSignal extends js.dom.EventTarget {
-	function abort(?reason:any):js.dom.AbortSignal;
-	function timeout(milliseconds:unsigned long long):js.dom.AbortSignal;
+	function abort(?reason:Any):js.dom.AbortSignal;
+	function timeout(milliseconds:Float):js.dom.AbortSignal;
 	function any(signals:Array<js.dom.AbortSignal>):js.dom.AbortSignal;
 	function throwIfAborted():Void;
 }

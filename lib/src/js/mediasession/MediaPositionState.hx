@@ -26,9 +26,9 @@ package js.mediasession;
 
 typedef MediaPositionState = {
 	@:optional
-	var duration : unrestricted double;
+	var duration : Float;
 	@:optional
-	var playbackRate : double;
+	var playbackRate : Float;
 	@:optional
-	var position : double;
+	var position : Float;
 };

@@ -25,5 +25,5 @@
 package js.webxr;
 
 extern class XRView {
-	function requestViewportScale(scale:double):Void;
+	function requestViewportScale(scale:Float):Void;
 }

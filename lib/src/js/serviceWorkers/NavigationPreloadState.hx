@@ -28,5 +28,5 @@ typedef NavigationPreloadState = {
 	@:optional
 	var enabled : Bool = false;
 	@:optional
-	var headerValue : ByteString;
+	var headerValue : String;
 };

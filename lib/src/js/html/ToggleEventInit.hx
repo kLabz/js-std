@@ -26,7 +26,7 @@ package js.html;
 
 typedef ToggleEventInit = js.dom.EventInit & {
 	@:optional
-	var oldState : DOMString = "";
+	var oldState : String = "";
 	@:optional
-	var newState : DOMString = "";
+	var newState : String = "";
 };

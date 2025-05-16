@@ -28,13 +28,13 @@ extern class SVGTextContentElement extends js.svg.SVGGraphicsElement {
 	static inline var LENGTHADJUST_UNKNOWN : Int = 0;
 	static inline var LENGTHADJUST_SPACING : Int = 1;
 	static inline var LENGTHADJUST_SPACINGANDGLYPHS : Int = 2;
-	function getNumberOfChars():long;
-	function getComputedTextLength():float;
-	function getSubStringLength(charnum:unsigned long, nchars:unsigned long):float;
-	function getStartPositionOfChar(charnum:unsigned long):js.geometry.DOMPoint;
-	function getEndPositionOfChar(charnum:unsigned long):js.geometry.DOMPoint;
-	function getExtentOfChar(charnum:unsigned long):js.geometry.DOMRect;
-	function getRotationOfChar(charnum:unsigned long):float;
-	function getCharNumAtPosition(?point:js.geometry.DOMPointInit):long;
-	function selectSubString(charnum:unsigned long, nchars:unsigned long):Void;
+	function getNumberOfChars():Int;
+	function getComputedTextLength():Float;
+	function getSubStringLength(charnum:Int, nchars:Int):Float;
+	function getStartPositionOfChar(charnum:Int):js.geometry.DOMPoint;
+	function getEndPositionOfChar(charnum:Int):js.geometry.DOMPoint;
+	function getExtentOfChar(charnum:Int):js.geometry.DOMRect;
+	function getRotationOfChar(charnum:Int):Float;
+	function getCharNumAtPosition(?point:js.geometry.DOMPointInit):Int;
+	function selectSubString(charnum:Int, nchars:Int):Void;
 }

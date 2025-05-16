@@ -28,5 +28,5 @@ typedef RTCLocalSessionDescriptionInit = {
 	@:optional
 	var type : js.webrtc.RTCSdpType;
 	@:optional
-	var sdp : DOMString = "";
+	var sdp : String = "";
 };

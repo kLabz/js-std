@@ -25,7 +25,7 @@
 package js.reporting;
 
 typedef GenerateTestReportParameters = {
-	var message : DOMString;
+	var message : String;
 	@:optional
-	var group : DOMString = "default";
+	var group : String = "default";
 };

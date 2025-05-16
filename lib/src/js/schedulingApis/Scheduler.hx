@@ -25,6 +25,6 @@
 package js.schedulingApis;
 
 extern class Scheduler {
-	function postTask(callback:SchedulerPostTaskCallback, ?options:js.schedulingApis.SchedulerPostTaskOptions):js.lib.Promise<any>;
+	function postTask(callback:SchedulerPostTaskCallback, ?options:js.schedulingApis.SchedulerPostTaskOptions):js.lib.Promise<Any>;
 	function yield():js.lib.Promise<Void>;
 }

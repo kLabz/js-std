@@ -25,5 +25,5 @@
 package js.cssFonts;
 
 extern class CSSFontFeatureValuesMap {
-	function set(featureValueName:CSSOMString, values:haxe.extern.EitherType<unsigned long, Array<unsigned long>>):Void;
+	function set(featureValueName:CSSOMString, values:haxe.extern.EitherType<Int, Array<Int>>):Void;
 }

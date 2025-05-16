@@ -31,6 +31,6 @@ typedef IntersectionObserverEntryInit = {
 	var intersectionRect : js.geometry.DOMRectInit;
 	var isIntersecting : Bool;
 	var isVisible : Bool;
-	var intersectionRatio : double;
+	var intersectionRatio : Float;
 	var target : js.dom.Element;
 };

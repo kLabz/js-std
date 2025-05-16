@@ -28,9 +28,9 @@ typedef XRMediaCylinderLayerInit = js.webxrlayers.XRMediaLayerInit & {
 	@:optional
 	var transform : js.webxr.XRRigidTransform;
 	@:optional
-	var radius : float = 2.0;
+	var radius : Float = 2.0;
 	@:optional
-	var centralAngle : float = 0.78539;
+	var centralAngle : Float = 0.78539;
 	@:optional
-	var aspectRatio : float;
+	var aspectRatio : Float;
 };

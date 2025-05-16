@@ -28,7 +28,7 @@ typedef StorageBucketOptions = {
 	@:optional
 	var persisted : Bool = false;
 	@:optional
-	var quota : unsigned long long;
+	var quota : Float;
 	@:optional
 	var expires : DOMHighResTimeStamp;
 };

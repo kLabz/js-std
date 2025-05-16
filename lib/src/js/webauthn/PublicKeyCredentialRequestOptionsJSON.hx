@@ -27,15 +27,15 @@ package js.webauthn;
 typedef PublicKeyCredentialRequestOptionsJSON = {
 	var challenge : Base64URLString;
 	@:optional
-	var timeout : unsigned long;
+	var timeout : Int;
 	@:optional
-	var rpId : DOMString;
+	var rpId : String;
 	@:optional
 	var allowCredentials : Array<js.webauthn.PublicKeyCredentialDescriptorJSON> = [];
 	@:optional
-	var userVerification : DOMString = "preferred";
+	var userVerification : String = "preferred";
 	@:optional
-	var hints : Array<DOMString> = [];
+	var hints : Array<String> = [];
 	@:optional
 	var extensions : js.webauthn.AuthenticationExtensionsClientInputsJSON;
 };

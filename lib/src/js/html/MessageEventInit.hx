@@ -26,11 +26,11 @@ package js.html;
 
 typedef MessageEventInit = js.dom.EventInit & {
 	@:optional
-	var data : any = null;
+	var data : Any = null;
 	@:optional
-	var origin : USVString = "";
+	var origin : String = "";
 	@:optional
-	var lastEventId : DOMString = "";
+	var lastEventId : String = "";
 	@:optional
 	var source : MessageEventSource = null;
 	@:optional

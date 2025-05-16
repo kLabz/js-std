@@ -27,16 +27,16 @@ package js.videoRvfc;
 typedef VideoFrameCallbackMetadata = {
 	var presentationTime : DOMHighResTimeStamp;
 	var expectedDisplayTime : DOMHighResTimeStamp;
-	var width : unsigned long;
-	var height : unsigned long;
-	var mediaTime : double;
-	var presentedFrames : unsigned long;
+	var width : Int;
+	var height : Int;
+	var mediaTime : Float;
+	var presentedFrames : Int;
 	@:optional
-	var processingDuration : double;
+	var processingDuration : Float;
 	@:optional
 	var captureTime : DOMHighResTimeStamp;
 	@:optional
 	var receiveTime : DOMHighResTimeStamp;
 	@:optional
-	var rtpTimestamp : unsigned long;
+	var rtpTimestamp : Int;
 };

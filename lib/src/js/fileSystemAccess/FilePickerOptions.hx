@@ -30,7 +30,7 @@ typedef FilePickerOptions = {
 	@:optional
 	var excludeAcceptAllOption : Bool = false;
 	@:optional
-	var id : DOMString;
+	var id : String;
 	@:optional
 	var startIn : StartInDirectory;
 };

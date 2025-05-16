@@ -26,5 +26,5 @@ package js.eyedropperApi;
 
 typedef ColorSelectionResult = {
 	@:optional
-	var sRGBHex : DOMString;
+	var sRGBHex : String;
 };

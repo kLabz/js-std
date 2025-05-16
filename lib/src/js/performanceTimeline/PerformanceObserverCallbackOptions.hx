@@ -26,5 +26,5 @@ package js.performanceTimeline;
 
 typedef PerformanceObserverCallbackOptions = {
 	@:optional
-	var droppedEntriesCount : unsigned long long;
+	var droppedEntriesCount : Float;
 };

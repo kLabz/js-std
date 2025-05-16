@@ -26,5 +26,5 @@ package js.html;
 
 extern class DOMParser {
 	function new():Void;
-	function parseFromString(string:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, DOMString>, type:js.html.DOMParserSupportedType):js.dom.Document;
+	function parseFromString(string:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>, type:js.html.DOMParserSupportedType):js.dom.Document;
 }

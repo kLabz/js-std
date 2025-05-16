@@ -25,5 +25,5 @@
 package js.permissions;
 
 typedef PermissionDescriptor = {
-	var name : DOMString;
+	var name : String;
 };

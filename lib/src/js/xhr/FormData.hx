@@ -26,15 +26,15 @@ package js.xhr;
 
 extern class FormData {
 	function new(?form:js.html.HTMLFormElement, ?submitter:js.html.HTMLElement):Void;
-	overload function append(name:USVString, value:USVString):Void;
-	overload function append(name:USVString, blobValue:js.fileapi.Blob, ?filename:USVString):Void;
-	function delete(name:USVString):Void;
-	function get(name:USVString):FormDataEntryValue;
-	function getAll(name:USVString):Array<FormDataEntryValue>;
-	function has(name:USVString):Bool;
-	overload function set(name:USVString, value:USVString):Void;
-	overload function set(name:USVString, blobValue:js.fileapi.Blob, ?filename:USVString):Void;
-	function keys():Iterator<USVString>;
+	overload function append(name:String, value:String):Void;
+	overload function append(name:String, blobValue:js.fileapi.Blob, ?filename:String):Void;
+	function delete(name:String):Void;
+	function get(name:String):FormDataEntryValue;
+	function getAll(name:String):Array<FormDataEntryValue>;
+	function has(name:String):Bool;
+	overload function set(name:String, value:String):Void;
+	overload function set(name:String, blobValue:js.fileapi.Blob, ?filename:String):Void;
+	function keys():Iterator<String>;
 	function values():Iterator<FormDataEntryValue>;
 	function entries():Iterator<Array<Dynamic>>;
 }

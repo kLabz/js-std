@@ -26,7 +26,7 @@ package js.streams;
 
 typedef ReadableStreamReadResult = {
 	@:optional
-	var value : any;
+	var value : Any;
 	@:optional
 	var done : Bool;
 };

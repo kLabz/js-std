@@ -25,26 +25,26 @@
 package js.html;
 
 extern class Navigator {
-	function getBattery():js.lib.Promise<js.batteryStatus.BatteryManager>;
 	overload function getAutoplayPolicy(type:js.autoplayDetection.AutoplayPolicyMediaType):js.autoplayDetection.AutoplayPolicy;
 	overload function getAutoplayPolicy(element:js.html.HTMLMediaElement):js.autoplayDetection.AutoplayPolicy;
 	overload function getAutoplayPolicy(context:js.webaudio.AudioContext):js.autoplayDetection.AutoplayPolicy;
-	function sendBeacon(url:USVString, ?data:BodyInit):Bool;
-	function requestMediaKeySystemAccess(keySystem:DOMString, supportedConfigurations:Array<js.encryptedMedia.MediaKeySystemConfiguration>):js.lib.Promise<js.encryptedMedia.MediaKeySystemAccess>;
-	function deprecatedReplaceInURN(urnOrConfig:UrnOrConfig, replacements:haxe.DynamicAccess<USVString>):js.lib.Promise<Void>;
-	function deprecatedURNtoURL(urnOrConfig:UrnOrConfig, ?send_reports:Bool):js.lib.Promise<USVString>;
-	function adAuctionComponents(numAdComponents:Int):Array<USVString>;
+	function sendBeacon(url:String, ?data:BodyInit):Bool;
+	function getBattery():js.lib.Promise<js.batteryStatus.BatteryManager>;
+	function requestMediaKeySystemAccess(keySystem:String, supportedConfigurations:Array<js.encryptedMedia.MediaKeySystemConfiguration>):js.lib.Promise<js.encryptedMedia.MediaKeySystemAccess>;
+	function deprecatedReplaceInURN(urnOrConfig:UrnOrConfig, replacements:haxe.DynamicAccess<String>):js.lib.Promise<Void>;
+	function deprecatedURNtoURL(urnOrConfig:UrnOrConfig, ?send_reports:Bool):js.lib.Promise<String>;
+	function adAuctionComponents(numAdComponents:Int):Array<String>;
 	function getGamepads():Array<js.gamepad.Gamepad>;
 	function getInstalledRelatedApps():js.lib.Promise<Array<js.getInstalledRelatedApps.RelatedApplication>>;
 	function queryHandwritingRecognizer(constraint:js.handwritingRecognition.HandwritingModelConstraint):js.lib.Promise<js.handwritingRecognition.HandwritingRecognizerQueryResult>;
 	function createHandwritingRecognizer(constraint:js.handwritingRecognition.HandwritingModelConstraint):js.lib.Promise<js.handwritingRecognition.HandwritingRecognizer>;
 	function joinAdInterestGroup(group:js.turtledove.AuctionAdInterestGroup):js.lib.Promise<Void>;
 	function leaveAdInterestGroup(?group:js.turtledove.AuctionAdInterestGroupKey):js.lib.Promise<Void>;
-	function clearOriginJoinedAdInterestGroups(owner:USVString, ?interestGroupsToKeep:Array<USVString>):js.lib.Promise<Void>;
-	function runAdAuction(config:js.turtledove.AuctionAdConfig):js.lib.Promise<haxe.extern.EitherType<USVString, js.fencedFrame.FencedFrameConfig>>;
+	function clearOriginJoinedAdInterestGroups(owner:String, ?interestGroupsToKeep:Array<String>):js.lib.Promise<Void>;
+	function runAdAuction(config:js.turtledove.AuctionAdConfig):js.lib.Promise<haxe.extern.EitherType<String, js.fencedFrame.FencedFrameConfig>>;
 	function canLoadAdAuctionFencedFrame():Bool;
 	function getInterestGroupAdAuctionData(?config:js.turtledove.AdAuctionDataConfig):js.lib.Promise<js.turtledove.AdAuctionData>;
-	function createAuctionNonce():js.lib.Promise<DOMString>;
+	function createAuctionNonce():js.lib.Promise<String>;
 	function updateAdInterestGroups():Void;
 	function vibrate(pattern:VibratePattern):Bool;
 	function share(?data:js.webShare.ShareData):js.lib.Promise<Void>;

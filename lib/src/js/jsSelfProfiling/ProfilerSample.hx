@@ -27,5 +27,5 @@ package js.jsSelfProfiling;
 typedef ProfilerSample = {
 	var timestamp : DOMHighResTimeStamp;
 	@:optional
-	var stackId : unsigned long long;
+	var stackId : Float;
 };

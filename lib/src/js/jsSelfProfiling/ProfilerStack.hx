@@ -26,6 +26,6 @@ package js.jsSelfProfiling;
 
 typedef ProfilerStack = {
 	@:optional
-	var parentId : unsigned long long;
-	var frameId : unsigned long long;
+	var parentId : Float;
+	var frameId : Float;
 };

@@ -26,17 +26,17 @@ package js.editContext;
 
 typedef TextUpdateEventInit = js.dom.EventInit & {
 	@:optional
-	var updateRangeStart : unsigned long;
+	var updateRangeStart : Int;
 	@:optional
-	var updateRangeEnd : unsigned long;
+	var updateRangeEnd : Int;
 	@:optional
-	var text : DOMString;
+	var text : String;
 	@:optional
-	var selectionStart : unsigned long;
+	var selectionStart : Int;
 	@:optional
-	var selectionEnd : unsigned long;
+	var selectionEnd : Int;
 	@:optional
-	var compositionStart : unsigned long;
+	var compositionStart : Int;
 	@:optional
-	var compositionEnd : unsigned long;
+	var compositionEnd : Int;
 };

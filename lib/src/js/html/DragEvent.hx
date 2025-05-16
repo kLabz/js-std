@@ -25,5 +25,5 @@
 package js.html;
 
 extern class DragEvent extends js.uievents.MouseEvent {
-	function new(type:DOMString, ?eventInitDict:js.html.DragEventInit):Void;
+	function new(type:String, ?eventInitDict:js.html.DragEventInit):Void;
 }

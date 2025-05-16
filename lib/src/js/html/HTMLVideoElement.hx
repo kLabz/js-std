@@ -28,6 +28,6 @@ extern class HTMLVideoElement extends js.html.HTMLMediaElement {
 	function new():Void;
 	function getVideoPlaybackQuality():js.mediaPlaybackQuality.VideoPlaybackQuality;
 	function requestPictureInPicture():js.lib.Promise<js.pictureInPicture.PictureInPictureWindow>;
-	function requestVideoFrameCallback(callback:VideoFrameRequestCallback):unsigned long;
-	function cancelVideoFrameCallback(handle:unsigned long):Void;
+	function requestVideoFrameCallback(callback:VideoFrameRequestCallback):Int;
+	function cancelVideoFrameCallback(handle:Int):Void;
 }

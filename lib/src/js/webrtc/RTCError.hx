@@ -25,5 +25,5 @@
 package js.webrtc;
 
 extern class RTCError extends js.webidl.DOMException {
-	function new(init:js.webrtc.RTCErrorInit, ?message:DOMString):Void;
+	function new(init:js.webrtc.RTCErrorInit, ?message:String):Void;
 }

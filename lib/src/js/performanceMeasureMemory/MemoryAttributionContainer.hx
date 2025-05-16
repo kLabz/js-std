@@ -26,7 +26,7 @@ package js.performanceMeasureMemory;
 
 typedef MemoryAttributionContainer = {
 	@:optional
-	var id : DOMString;
+	var id : String;
 	@:optional
-	var src : USVString;
+	var src : String;
 };

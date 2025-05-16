@@ -26,9 +26,9 @@ package js.editContext;
 
 typedef TextFormatInit = {
 	@:optional
-	var rangeStart : unsigned long;
+	var rangeStart : Int;
 	@:optional
-	var rangeEnd : unsigned long;
+	var rangeEnd : Int;
 	@:optional
 	var underlineStyle : js.editContext.UnderlineStyle;
 	@:optional

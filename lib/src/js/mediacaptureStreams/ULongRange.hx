@@ -26,7 +26,7 @@ package js.mediacaptureStreams;
 
 typedef ULongRange = {
 	@:optional
-	var max : unsigned long;
+	var max : Int;
 	@:optional
-	var min : unsigned long;
+	var min : Int;
 };

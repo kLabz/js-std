@@ -28,5 +28,5 @@ extern class HTMLFieldSetElement extends js.html.HTMLElement {
 	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
-	function setCustomValidity(error:DOMString):Void;
+	function setCustomValidity(error:String):Void;
 }

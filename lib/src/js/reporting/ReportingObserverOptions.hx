@@ -26,7 +26,7 @@ package js.reporting;
 
 typedef ReportingObserverOptions = {
 	@:optional
-	var types : Array<DOMString>;
+	var types : Array<String>;
 	@:optional
 	var buffered : Bool = false;
 };

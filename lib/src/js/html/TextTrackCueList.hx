@@ -25,6 +25,6 @@
 package js.html;
 
 extern class TextTrackCueList {
-	function (index:unsigned long):js.html.TextTrackCue;
-	function getCueById(id:DOMString):js.html.TextTrackCue;
+	function (index:Int):js.html.TextTrackCue;
+	function getCueById(id:String):js.html.TextTrackCue;
 }

@@ -28,5 +28,5 @@ typedef ElementCreationOptions = {
 	@:optional
 	var customElementRegistry : js.html.CustomElementRegistry;
 	@:optional
-	var is : DOMString;
+	var is : String;
 };

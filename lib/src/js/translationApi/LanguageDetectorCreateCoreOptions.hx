@@ -26,5 +26,5 @@ package js.translationApi;
 
 typedef LanguageDetectorCreateCoreOptions = {
 	@:optional
-	var expectedInputLanguages : Array<DOMString>;
+	var expectedInputLanguages : Array<String>;
 };

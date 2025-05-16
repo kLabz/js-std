@@ -25,5 +25,5 @@
 package js.webaudio;
 
 extern class OfflineAudioCompletionEvent extends js.dom.Event {
-	function new(type:DOMString, eventInitDict:js.webaudio.OfflineAudioCompletionEventInit):Void;
+	function new(type:String, eventInitDict:js.webaudio.OfflineAudioCompletionEventInit):Void;
 }

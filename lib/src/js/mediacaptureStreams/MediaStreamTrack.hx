@@ -32,6 +32,6 @@ extern class MediaStreamTrack extends js.dom.EventTarget {
 	function getSettings():js.mediacaptureStreams.MediaTrackSettings;
 	function applyConstraints(?constraints:js.mediacaptureStreams.MediaTrackConstraints):js.lib.Promise<Void>;
 	function getCaptureHandle():js.captureHandleIdentity.CaptureHandle;
-	function getSupportedCaptureActions():Array<DOMString>;
+	function getSupportedCaptureActions():Array<String>;
 	function sendCaptureAction(action:js.mediacaptureHandleActions.CaptureAction):js.lib.Promise<Void>;
 }

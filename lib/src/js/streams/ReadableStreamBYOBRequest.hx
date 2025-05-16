@@ -25,6 +25,6 @@
 package js.streams;
 
 extern class ReadableStreamBYOBRequest {
-	function respond(bytesWritten:unsigned long long):Void;
+	function respond(bytesWritten:Float):Void;
 	function respondWithNewView(view:ArrayBufferView):Void;
 }

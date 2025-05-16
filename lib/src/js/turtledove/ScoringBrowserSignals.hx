@@ -25,23 +25,23 @@
 package js.turtledove;
 
 typedef ScoringBrowserSignals = {
-	var topWindowHostname : DOMString;
-	var interestGroupOwner : USVString;
-	var renderURL : USVString;
-	var biddingDurationMsec : unsigned long;
-	var bidCurrency : DOMString;
+	var topWindowHostname : String;
+	var interestGroupOwner : String;
+	var renderURL : String;
+	var biddingDurationMsec : Int;
+	var bidCurrency : String;
 	@:optional
-	var renderSize : haxe.DynamicAccess<DOMString>;
+	var renderSize : haxe.DynamicAccess<String>;
 	@:optional
-	var dataVersion : unsigned long;
+	var dataVersion : Int;
 	@:optional
-	var crossOriginDataVersion : unsigned long;
+	var crossOriginDataVersion : Int;
 	@:optional
-	var adComponents : Array<USVString>;
+	var adComponents : Array<String>;
 	@:optional
 	var forDebuggingOnlyInCooldownOrLockout : Bool = false;
 	@:optional
-	var creativeScanningMetadata : USVString;
+	var creativeScanningMetadata : String;
 	@:optional
-	var adComponentsCreativeScanningMetadata : Array<USVString>;
+	var adComponentsCreativeScanningMetadata : Array<String>;
 };

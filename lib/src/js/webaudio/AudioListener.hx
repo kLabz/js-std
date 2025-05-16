@@ -25,6 +25,6 @@
 package js.webaudio;
 
 extern class AudioListener {
-	function setPosition(x:float, y:float, z:float):Void;
-	function setOrientation(x:float, y:float, z:float, xUp:float, yUp:float, zUp:float):Void;
+	function setPosition(x:Float, y:Float, z:Float):Void;
+	function setOrientation(x:Float, y:Float, z:Float, xUp:Float, yUp:Float, zUp:Float):Void;
 }

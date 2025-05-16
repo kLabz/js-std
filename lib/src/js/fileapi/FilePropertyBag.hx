@@ -26,5 +26,5 @@ package js.fileapi;
 
 typedef FilePropertyBag = js.fileapi.BlobPropertyBag & {
 	@:optional
-	var lastModified : long long;
+	var lastModified : Float;
 };

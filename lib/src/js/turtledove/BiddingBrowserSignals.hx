@@ -25,25 +25,25 @@
 package js.turtledove;
 
 typedef BiddingBrowserSignals = {
-	var topWindowHostname : DOMString;
-	var seller : USVString;
-	var joinCount : long;
-	var bidCount : long;
-	var recency : long;
-	var adComponentsLimit : long;
+	var topWindowHostname : String;
+	var seller : String;
+	var joinCount : Int;
+	var bidCount : Int;
+	var recency : Int;
+	var adComponentsLimit : Int;
 	var multiBidLimit : Int;
 	@:optional
-	var requestedSize : haxe.DynamicAccess<DOMString>;
+	var requestedSize : haxe.DynamicAccess<String>;
 	@:optional
-	var topLevelSeller : USVString;
+	var topLevelSeller : String;
 	@:optional
 	var prevWinsMs : Array<PreviousWin>;
 	@:optional
 	var wasmHelper : object;
 	@:optional
-	var dataVersion : unsigned long;
+	var dataVersion : Int;
 	@:optional
-	var crossOriginDataVersion : unsigned long;
+	var crossOriginDataVersion : Int;
 	@:optional
 	var forDebuggingOnlyInCooldownOrLockout : Bool = false;
 };

@@ -25,5 +25,5 @@
 package js.serviceWorkers;
 
 extern class ExtendableMessageEvent extends js.serviceWorkers.ExtendableEvent {
-	function new(type:DOMString, ?eventInitDict:js.serviceWorkers.ExtendableMessageEventInit):Void;
+	function new(type:String, ?eventInitDict:js.serviceWorkers.ExtendableMessageEventInit):Void;
 }

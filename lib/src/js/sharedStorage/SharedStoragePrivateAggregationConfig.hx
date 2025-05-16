@@ -26,11 +26,11 @@ package js.sharedStorage;
 
 typedef SharedStoragePrivateAggregationConfig = {
 	@:optional
-	var aggregationCoordinatorOrigin : USVString;
+	var aggregationCoordinatorOrigin : String;
 	@:optional
-	var contextId : USVString;
+	var contextId : String;
 	@:optional
-	var filteringIdMaxBytes : unsigned long long;
+	var filteringIdMaxBytes : Float;
 	@:optional
-	var maxContributions : unsigned long long;
+	var maxContributions : Float;
 };

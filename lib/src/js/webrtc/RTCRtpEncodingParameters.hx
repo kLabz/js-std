@@ -30,15 +30,15 @@ typedef RTCRtpEncodingParameters = js.webrtc.RTCRtpCodingParameters & {
 	@:optional
 	var codec : js.webrtc.RTCRtpCodec;
 	@:optional
-	var maxBitrate : unsigned long;
+	var maxBitrate : Int;
 	@:optional
-	var maxFramerate : double;
+	var maxFramerate : Float;
 	@:optional
-	var scaleResolutionDownBy : double;
+	var scaleResolutionDownBy : Float;
 	@:optional
 	var priority : js.webrtcPriority.RTCPriorityType = "low";
 	@:optional
 	var networkPriority : js.webrtcPriority.RTCPriorityType;
 	@:optional
-	var scalabilityMode : DOMString;
+	var scalabilityMode : String;
 };

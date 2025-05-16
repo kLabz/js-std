@@ -26,25 +26,25 @@ package js.geometry;
 
 typedef DOMMatrixInit = js.geometry.DOMMatrix2DInit & {
 	@:optional
-	var m13 : unrestricted double = 0;
+	var m13 : Float = 0;
 	@:optional
-	var m14 : unrestricted double = 0;
+	var m14 : Float = 0;
 	@:optional
-	var m23 : unrestricted double = 0;
+	var m23 : Float = 0;
 	@:optional
-	var m24 : unrestricted double = 0;
+	var m24 : Float = 0;
 	@:optional
-	var m31 : unrestricted double = 0;
+	var m31 : Float = 0;
 	@:optional
-	var m32 : unrestricted double = 0;
+	var m32 : Float = 0;
 	@:optional
-	var m33 : unrestricted double = 1;
+	var m33 : Float = 1;
 	@:optional
-	var m34 : unrestricted double = 0;
+	var m34 : Float = 0;
 	@:optional
-	var m43 : unrestricted double = 0;
+	var m43 : Float = 0;
 	@:optional
-	var m44 : unrestricted double = 1;
+	var m44 : Float = 1;
 	@:optional
 	var is2D : Bool;
 };

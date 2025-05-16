@@ -25,5 +25,5 @@
 package js.credentialManagement;
 
 typedef CredentialData = {
-	var id : USVString;
+	var id : String;
 };

@@ -26,5 +26,5 @@ package js.requestidlecallback;
 
 typedef IdleRequestOptions = {
 	@:optional
-	var timeout : unsigned long;
+	var timeout : Int;
 };

@@ -25,5 +25,5 @@
 package js.webrtc;
 
 extern class RTCPeerConnectionIceErrorEvent extends js.dom.Event {
-	function new(type:DOMString, eventInitDict:js.webrtc.RTCPeerConnectionIceErrorEventInit):Void;
+	function new(type:String, eventInitDict:js.webrtc.RTCPeerConnectionIceErrorEventInit):Void;
 }

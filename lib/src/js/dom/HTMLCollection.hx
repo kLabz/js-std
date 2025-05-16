@@ -25,6 +25,6 @@
 package js.dom;
 
 extern class HTMLCollection {
-	function item(index:unsigned long):js.dom.Element;
-	function namedItem(name:DOMString):js.dom.Element;
+	function item(index:Int):js.dom.Element;
+	function namedItem(name:String):js.dom.Element;
 }

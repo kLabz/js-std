@@ -26,11 +26,11 @@ package js.svg;
 
 extern class SVGStringList {
 	function clear():Void;
-	function initialize(newItem:DOMString):DOMString;
-	function getItem(index:unsigned long):DOMString;
-	function insertItemBefore(newItem:DOMString, index:unsigned long):DOMString;
-	function replaceItem(newItem:DOMString, index:unsigned long):DOMString;
-	function removeItem(index:unsigned long):DOMString;
-	function appendItem(newItem:DOMString):DOMString;
-	function (index:unsigned long, newItem:DOMString):Void;
+	function initialize(newItem:String):String;
+	function getItem(index:Int):String;
+	function insertItemBefore(newItem:String, index:Int):String;
+	function replaceItem(newItem:String, index:Int):String;
+	function removeItem(index:Int):String;
+	function appendItem(newItem:String):String;
+	function (index:Int, newItem:String):Void;
 }

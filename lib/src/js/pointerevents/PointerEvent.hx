@@ -25,7 +25,7 @@
 package js.pointerevents;
 
 extern class PointerEvent extends js.uievents.MouseEvent {
-	function new(type:DOMString, ?eventInitDict:js.pointerevents.PointerEventInit):Void;
+	function new(type:String, ?eventInitDict:js.pointerevents.PointerEventInit):Void;
 	function getCoalescedEvents():Array<js.pointerevents.PointerEvent>;
 	function getPredictedEvents():Array<js.pointerevents.PointerEvent>;
 }

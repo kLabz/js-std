@@ -25,6 +25,6 @@
 package js.html;
 
 extern class StorageEvent extends js.dom.Event {
-	function new(type:DOMString, ?eventInitDict:js.html.StorageEventInit):Void;
-	function initStorageEvent(type:DOMString, ?bubbles:Bool, ?cancelable:Bool, ?key:DOMString, ?oldValue:DOMString, ?newValue:DOMString, ?url:USVString, ?storageArea:js.html.Storage):Void;
+	function new(type:String, ?eventInitDict:js.html.StorageEventInit):Void;
+	function initStorageEvent(type:String, ?bubbles:Bool, ?cancelable:Bool, ?key:String, ?oldValue:String, ?newValue:String, ?url:String, ?storageArea:js.html.Storage):Void;
 }

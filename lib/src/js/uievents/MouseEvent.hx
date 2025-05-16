@@ -25,7 +25,7 @@
 package js.uievents;
 
 extern class MouseEvent extends js.uievents.UIEvent {
-	function new(type:DOMString, ?eventInitDict:js.uievents.MouseEventInit):Void;
-	function getModifierState(keyArg:DOMString):Bool;
-	function initMouseEvent(typeArg:DOMString, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:js.html.Window, ?detailArg:long, ?screenXArg:long, ?screenYArg:long, ?clientXArg:long, ?clientYArg:long, ?ctrlKeyArg:Bool, ?altKeyArg:Bool, ?shiftKeyArg:Bool, ?metaKeyArg:Bool, ?buttonArg:short, ?relatedTargetArg:js.dom.EventTarget):Void;
+	function new(type:String, ?eventInitDict:js.uievents.MouseEventInit):Void;
+	function getModifierState(keyArg:String):Bool;
+	function initMouseEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:js.html.Window, ?detailArg:Int, ?screenXArg:Int, ?screenYArg:Int, ?clientXArg:Int, ?clientYArg:Int, ?ctrlKeyArg:Bool, ?altKeyArg:Bool, ?shiftKeyArg:Bool, ?metaKeyArg:Bool, ?buttonArg:Int, ?relatedTargetArg:js.dom.EventTarget):Void;
 }

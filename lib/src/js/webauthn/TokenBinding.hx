@@ -25,7 +25,7 @@
 package js.webauthn;
 
 typedef TokenBinding = {
-	var status : DOMString;
+	var status : String;
 	@:optional
-	var id : DOMString;
+	var id : String;
 };

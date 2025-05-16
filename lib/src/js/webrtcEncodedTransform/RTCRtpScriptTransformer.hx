@@ -25,6 +25,6 @@
 package js.webrtcEncodedTransform;
 
 extern class RTCRtpScriptTransformer extends js.dom.EventTarget {
-	function generateKeyFrame(?rid:DOMString):js.lib.Promise<unsigned long long>;
+	function generateKeyFrame(?rid:String):js.lib.Promise<Float>;
 	function sendKeyFrameRequest():js.lib.Promise<Void>;
 }

@@ -25,5 +25,5 @@
 package js.streams;
 
 extern class WritableStreamDefaultController {
-	function error(?e:any):Void;
+	function error(?e:Any):Void;
 }

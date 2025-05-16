@@ -25,22 +25,22 @@
 package js.ppa;
 
 typedef PrivateAttributionConversionOptions = {
-	var aggregationService : USVString;
+	var aggregationService : String;
 	@:optional
-	var epsilon : double = 1.0;
-	var histogramSize : unsigned long;
+	var epsilon : Float = 1.0;
+	var histogramSize : Int;
 	@:optional
-	var lookbackDays : unsigned long;
+	var lookbackDays : Int;
 	@:optional
-	var filterData : unsigned long;
+	var filterData : Int;
 	@:optional
-	var impressionSites : Array<USVString> = [];
+	var impressionSites : Array<String> = [];
 	@:optional
-	var intermediarySites : Array<USVString> = [];
+	var intermediarySites : Array<String> = [];
 	@:optional
 	var logic : js.ppa.PrivateAttributionLogic = "last-touch";
 	@:optional
-	var value : unsigned long = 1;
+	var value : Int = 1;
 	@:optional
-	var maxValue : unsigned long = 1;
+	var maxValue : Int = 1;
 };

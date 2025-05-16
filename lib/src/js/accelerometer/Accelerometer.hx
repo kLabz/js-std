@@ -28,5 +28,5 @@ extern class Accelerometer extends js.genericSensor.Sensor {
 	var x(default, null) : Null<Float>;
 	var y(default, null) : Null<Float>;
 	var z(default, null) : Null<Float>;
-	function new(?options:AccelerometerSensorOptions):Void;
+	function new(?options:AccelerometerSensorOptions = {  }):Void;
 }

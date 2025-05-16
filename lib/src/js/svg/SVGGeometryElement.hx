@@ -28,6 +28,6 @@ extern class SVGGeometryElement extends SVGGraphicsElement {
 	var pathLength(default, null) : SVGAnimatedNumber;
 	function getPointAtLength(distance:Float):js.geometry.DOMPoint;
 	function getTotalLength():Float;
-	function isPointInFill(?point:js.geometry.DOMPointInit):Bool;
-	function isPointInStroke(?point:js.geometry.DOMPointInit):Bool;
+	function isPointInFill(?point:js.geometry.DOMPointInit = {  }):Bool;
+	function isPointInStroke(?point:js.geometry.DOMPointInit = {  }):Bool;
 }

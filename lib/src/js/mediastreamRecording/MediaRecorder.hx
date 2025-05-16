@@ -37,7 +37,7 @@ extern class MediaRecorder extends js.dom.EventTarget {
 	var videoBitsPerSecond(default, null) : Int;
 	var audioBitsPerSecond(default, null) : Int;
 	var audioBitrateMode(default, null) : BitrateMode;
-	function new(stream:js.mediacaptureStreams.MediaStream, ?options:MediaRecorderOptions):Void;
+	function new(stream:js.mediacaptureStreams.MediaStream, ?options:MediaRecorderOptions = {  }):Void;
 	function isTypeSupported(type:String):Bool;
 	function pause():Void;
 	function requestData():Void;

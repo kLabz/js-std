@@ -34,7 +34,7 @@ extern class EditContext extends js.dom.EventTarget {
 	var oncharacterboundsupdate : js.html.EventHandler;
 	var oncompositionstart : js.html.EventHandler;
 	var oncompositionend : js.html.EventHandler;
-	function new(?options:EditContextInit):Void;
+	function new(?options:EditContextInit = {  }):Void;
 	function attachedElements():Array<js.html.HTMLElement>;
 	function characterBounds():Array<js.geometry.DOMRect>;
 	function updateCharacterBounds(rangeStart:Int, characterBounds:Array<js.geometry.DOMRect>):Void;

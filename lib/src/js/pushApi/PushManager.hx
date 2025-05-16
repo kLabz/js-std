@@ -27,6 +27,6 @@ package js.pushApi;
 extern class PushManager {
 	static var supportedContentEncodings(default, null) : Array<String>;
 	function getSubscription():js.lib.Promise<Null<PushSubscription>>;
-	function permissionState(?options:PushSubscriptionOptionsInit):js.lib.Promise<js.permissions.PermissionState>;
-	function subscribe(?options:PushSubscriptionOptionsInit):js.lib.Promise<PushSubscription>;
+	function permissionState(?options:PushSubscriptionOptionsInit = {  }):js.lib.Promise<js.permissions.PermissionState>;
+	function subscribe(?options:PushSubscriptionOptionsInit = {  }):js.lib.Promise<PushSubscription>;
 }

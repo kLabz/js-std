@@ -53,5 +53,5 @@ extern class DOMException {
 	static inline var TIMEOUT_ERR : Int = 23;
 	static inline var INVALID_NODE_TYPE_ERR : Int = 24;
 	static inline var DATA_CLONE_ERR : Int = 25;
-	function new(?message:String, ?name:String):Void;
+	function new(?message:String = "", ?name:String = "Error"):Void;
 }

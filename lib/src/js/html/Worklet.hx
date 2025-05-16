@@ -25,5 +25,5 @@
 package js.html;
 
 extern class Worklet {
-	function addModule(moduleURL:String, ?options:WorkletOptions):js.lib.Promise<Void>;
+	function addModule(moduleURL:String, ?options:WorkletOptions = {  }):js.lib.Promise<Void>;
 }

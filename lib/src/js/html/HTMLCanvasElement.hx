@@ -32,8 +32,8 @@ extern class HTMLCanvasElement extends HTMLElement {
 		From partial interface in mediacapture-fromelement.idl
 	**/
 	function captureStream(?frameRequestRate:Float):js.mediacaptureStreams.MediaStream;
-	function getContext(contextId:String, ?options:Any):Null<RenderingContext>;
-	function toBlob(callback:BlobCallback, ?type:String, ?quality:Any):Void;
-	function toDataURL(?type:String, ?quality:Any):String;
+	function getContext(contextId:String, ?options:Any = null):Null<RenderingContext>;
+	function toBlob(callback:BlobCallback, ?type:String = "image/png", ?quality:Any):Void;
+	function toDataURL(?type:String = "image/png", ?quality:Any):String;
 	function transferControlToOffscreen():OffscreenCanvas;
 }

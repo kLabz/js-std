@@ -30,6 +30,6 @@ extern class ImageData {
 	var data(default, null) : ImageDataArray;
 	var pixelFormat(default, null) : ImageDataPixelFormat;
 	var colorSpace(default, null) : PredefinedColorSpace;
-	overload function new(data:ImageDataArray, sw:Int, ?sh:Int, ?settings:ImageDataSettings):Void;
-	overload function new(sw:Int, sh:Int, ?settings:ImageDataSettings):Void;
+	overload function new(data:ImageDataArray, sw:Int, ?sh:Int, ?settings:ImageDataSettings = {  }):Void;
+	overload function new(sw:Int, sh:Int, ?settings:ImageDataSettings = {  }):Void;
 }

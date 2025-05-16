@@ -26,12 +26,12 @@ package js.streams;
 
 extern class ReadableStream {
 	var locked(default, null) : Bool;
-	function new(?underlyingSource:{ }, ?strategy:QueuingStrategy):Void;
+	function new(?underlyingSource:{ }, ?strategy:QueuingStrategy = {  }):Void;
 	function cancel(?reason:Any):js.lib.Promise<Void>;
 	function from(asyncIterable:Any):ReadableStream;
-	function getReader(?options:ReadableStreamGetReaderOptions):ReadableStreamReader;
-	function pipeThrough(transform:ReadableWritablePair, ?options:StreamPipeOptions):ReadableStream;
-	function pipeTo(destination:WritableStream, ?options:StreamPipeOptions):js.lib.Promise<Void>;
+	function getReader(?options:ReadableStreamGetReaderOptions = {  }):ReadableStreamReader;
+	function pipeThrough(transform:ReadableWritablePair, ?options:StreamPipeOptions = {  }):ReadableStream;
+	function pipeTo(destination:WritableStream, ?options:StreamPipeOptions = {  }):js.lib.Promise<Void>;
 	function tee():Array<ReadableStream>;
 	function values():Iterator<Any>;
 	function values():Iterator<Any>;

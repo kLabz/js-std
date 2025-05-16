@@ -56,6 +56,10 @@ extern class XRSession extends js.dom.EventTarget {
 	**/
 	var interactionMode(default, null) : js.webxrArModule.XRInteractionMode;
 	/**
+		From partial interface in webxr-dom-overlays.idl
+	**/
+	var domOverlayState(default, null) : Null<js.webxrDomOverlays.XRDOMOverlayState>;
+	/**
 		From partial interface in webxr-depth-sensing.idl
 	**/
 	var depthUsage(default, null) : js.webxrDepthSensing.XRDepthUsage;
@@ -71,10 +75,6 @@ extern class XRSession extends js.dom.EventTarget {
 		From partial interface in webxr-depth-sensing.idl
 	**/
 	var depthActive(default, null) : Null<Bool>;
-	/**
-		From partial interface in webxr-dom-overlays.idl
-	**/
-	var domOverlayState(default, null) : Null<js.webxrDomOverlays.XRDOMOverlayState>;
 	/**
 		From partial interface in webxr-lighting-estimation.idl
 	**/
@@ -105,7 +105,7 @@ extern class XRSession extends js.dom.EventTarget {
 	/**
 		From partial interface in webxr-lighting-estimation.idl
 	**/
-	function requestLightProbe(?options:js.webxrLightingEstimation.XRLightProbeInit):js.lib.Promise<js.webxrLightingEstimation.XRLightProbe>;
+	function requestLightProbe(?options:js.webxrLightingEstimation.XRLightProbeInit = {  }):js.lib.Promise<js.webxrLightingEstimation.XRLightProbe>;
 	function requestReferenceSpace(type:XRReferenceSpaceType):js.lib.Promise<XRReferenceSpace>;
 	/**
 		From partial interface in anchors.idl
@@ -115,6 +115,6 @@ extern class XRSession extends js.dom.EventTarget {
 		From partial interface in webxr-depth-sensing.idl
 	**/
 	function resumeDepthSensing():Void;
-	function updateRenderState(?state:XRRenderStateInit):Void;
+	function updateRenderState(?state:XRRenderStateInit = {  }):Void;
 	function updateTargetFrameRate(rate:Float):js.lib.Promise<Void>;
 }

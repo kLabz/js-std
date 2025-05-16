@@ -27,5 +27,5 @@ package js.webusb;
 extern class USBIsochronousOutTransferPacket {
 	var bytesWritten(default, null) : Int;
 	var status(default, null) : USBTransferStatus;
-	function new(status:USBTransferStatus, ?bytesWritten:Int):Void;
+	function new(status:USBTransferStatus, ?bytesWritten:Int = 0):Void;
 }

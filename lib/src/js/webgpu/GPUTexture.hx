@@ -33,6 +33,6 @@ extern class GPUTexture {
 	var dimension(default, null) : GPUTextureDimension;
 	var format(default, null) : GPUTextureFormat;
 	var usage(default, null) : GPUFlagsConstant;
-	function createView(?descriptor:GPUTextureViewDescriptor):GPUTextureView;
+	function createView(?descriptor:GPUTextureViewDescriptor = {  }):GPUTextureView;
 	function destroy():Void;
 }

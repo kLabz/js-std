@@ -26,6 +26,6 @@ package js.dom;
 
 extern class Text extends CharacterData {
 	var wholeText(default, null) : String;
-	function new(?data:String):Void;
+	function new(?data:String = ""):Void;
 	function splitText(offset:Int):Text;
 }

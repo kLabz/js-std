@@ -37,7 +37,7 @@ extern class Range extends AbstractRange {
 	function ():Void;
 	function cloneContents():DocumentFragment;
 	function cloneRange():Range;
-	function collapse(?toStart:Bool):Void;
+	function collapse(?toStart:Bool = false):Void;
 	function compareBoundaryPoints(how:Int, sourceRange:Range):Int;
 	function comparePoint(node:Node, offset:Int):Int;
 	/**

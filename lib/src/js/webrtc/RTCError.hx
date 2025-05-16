@@ -34,5 +34,5 @@ extern class RTCError extends js.webidl.DOMException {
 		From partial interface in webrtc-identity.idl
 	**/
 	var httpRequestStatusCode(default, null) : Null<Int>;
-	function new(init:RTCErrorInit, ?message:String):Void;
+	function new(init:RTCErrorInit, ?message:String = ""):Void;
 }

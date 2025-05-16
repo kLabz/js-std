@@ -26,5 +26,5 @@ package js.webmidi;
 
 extern class MIDIOutput extends MIDIPort {
 	function clear():Void;
-	function send(data:Array<Int>, ?timestamp:js.hrTime.DOMHighResTimeStamp):Void;
+	function send(data:Array<Int>, ?timestamp:js.hrTime.DOMHighResTimeStamp = 0):Void;
 }

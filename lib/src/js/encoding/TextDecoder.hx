@@ -25,6 +25,6 @@
 package js.encoding;
 
 extern class TextDecoder {
-	function new(?label:String, ?options:TextDecoderOptions):Void;
-	function decode(?input:js.webidl.AllowSharedBufferSource, ?options:TextDecodeOptions):String;
+	function new(?label:String = "utf-8", ?options:TextDecoderOptions = {  }):Void;
+	function decode(?input:js.webidl.AllowSharedBufferSource, ?options:TextDecodeOptions = {  }):String;
 }

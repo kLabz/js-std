@@ -28,5 +28,5 @@ extern class AudioWorkletNode extends AudioNode {
 	var parameters(default, null) : AudioParamMap;
 	var port(default, null) : js.html.MessagePort;
 	var onprocessorerror : js.html.EventHandler;
-	function new(context:BaseAudioContext, name:String, ?options:AudioWorkletNodeOptions):Void;
+	function new(context:BaseAudioContext, name:String, ?options:AudioWorkletNodeOptions = {  }):Void;
 }

@@ -33,7 +33,7 @@ extern class IDBDatabase extends js.dom.EventTarget {
 	var onerror : js.html.EventHandler;
 	var onversionchange : js.html.EventHandler;
 	function close():Void;
-	function createObjectStore(name:String, ?options:IDBObjectStoreParameters):IDBObjectStore;
+	function createObjectStore(name:String, ?options:IDBObjectStoreParameters = {  }):IDBObjectStore;
 	function deleteObjectStore(name:String):Void;
-	function transaction(storeNames:haxe.extern.EitherType<String, Array<String>>, ?mode:IDBTransactionMode, ?options:IDBTransactionOptions):IDBTransaction;
+	function transaction(storeNames:haxe.extern.EitherType<String, Array<String>>, ?mode:IDBTransactionMode = "readonly", ?options:IDBTransactionOptions = {  }):IDBTransaction;
 }

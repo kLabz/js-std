@@ -70,10 +70,6 @@ extern class Window extends js.dom.EventTarget {
 	**/
 	var cookieStore(default, null) : js.cookieStore.CookieStore;
 	/**
-		From partial interface in css-viewport.idl
-	**/
-	var viewport(default, null) : js.cssViewport.Viewport;
-	/**
 		From partial interface in cssom-view.idl
 	**/
 	var screen(default, null) : js.cssomView.Screen;
@@ -134,9 +130,9 @@ extern class Window extends js.dom.EventTarget {
 	**/
 	var devicePixelRatio(default, null) : Float;
 	/**
-		From partial interface in dom.idl
+		From partial interface in css-viewport.idl
 	**/
-	var event(default, null) : haxe.extern.EitherType<js.dom.Event, Void>;
+	var viewport(default, null) : js.cssViewport.Viewport;
 	/**
 		From partial interface in document-picture-in-picture.idl
 	**/
@@ -149,6 +145,10 @@ extern class Window extends js.dom.EventTarget {
 		From partial interface in html.idl
 	**/
 	var external(default, null) : External;
+	/**
+		From partial interface in dom.idl
+	**/
+	var event(default, null) : haxe.extern.EitherType<js.dom.Event, Void>;
 	/**
 		From partial interface in manifest-incubations.idl
 	**/
@@ -197,7 +197,7 @@ extern class Window extends js.dom.EventTarget {
 	**/
 	function captureEvents():Void;
 	function close():Void;
-	function confirm(?message:String):Bool;
+	function confirm(?message:String = ""):Bool;
 	function focus():Void;
 	/**
 		From partial interface in cssom.idl
@@ -231,15 +231,15 @@ extern class Window extends js.dom.EventTarget {
 		From partial interface in css-nav.idl
 	**/
 	function navigate(dir:js.cssNav.SpatialNavigationDirection):Void;
-	function open(?url:String, ?target:String, ?features:String):Null<WindowProxy>;
-	overload function postMessage(message:Any, targetOrigin:String, ?transfer:Array<{ }>):Void;
-	overload function postMessage(message:Any, ?options:WindowPostMessageOptions):Void;
+	function open(?url:String = "", ?target:String = "_blank", ?features:String = ""):Null<WindowProxy>;
+	overload function postMessage(message:Any, targetOrigin:String, ?transfer:Array<{ }> = []):Void;
+	overload function postMessage(message:Any, ?options:WindowPostMessageOptions = {  }):Void;
 	function print():Void;
-	function prompt(?message:String, ?default:String):Null<String>;
+	function prompt(?message:String = "", ?default:String = ""):Null<String>;
 	/**
 		From partial interface in local-font-access.idl
 	**/
-	function queryLocalFonts(?options:js.localFontAccess.QueryOptions):js.lib.Promise<Array<js.localFontAccess.FontData>>;
+	function queryLocalFonts(?options:js.localFontAccess.QueryOptions = {  }):js.lib.Promise<Array<js.localFontAccess.FontData>>;
 	/**
 		From partial interface in html.idl
 	**/
@@ -247,7 +247,7 @@ extern class Window extends js.dom.EventTarget {
 	/**
 		From partial interface in requestidlecallback.idl
 	**/
-	function requestIdleCallback(callback:js.requestidlecallback.IdleRequestCallback, ?options:js.requestidlecallback.IdleRequestOptions):Int;
+	function requestIdleCallback(callback:js.requestidlecallback.IdleRequestCallback, ?options:js.requestidlecallback.IdleRequestOptions = {  }):Int;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -259,7 +259,7 @@ extern class Window extends js.dom.EventTarget {
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scroll(?options:js.cssomView.ScrollToOptions):Void;
+	overload function scroll(?options:js.cssomView.ScrollToOptions = {  }):Void;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -267,7 +267,7 @@ extern class Window extends js.dom.EventTarget {
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scrollBy(?options:js.cssomView.ScrollToOptions):Void;
+	overload function scrollBy(?options:js.cssomView.ScrollToOptions = {  }):Void;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -275,7 +275,7 @@ extern class Window extends js.dom.EventTarget {
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scrollTo(?options:js.cssomView.ScrollToOptions):Void;
+	overload function scrollTo(?options:js.cssomView.ScrollToOptions = {  }):Void;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -283,14 +283,14 @@ extern class Window extends js.dom.EventTarget {
 	/**
 		From partial interface in file-system-access.idl
 	**/
-	function showDirectoryPicker(?options:js.fileSystemAccess.DirectoryPickerOptions):js.lib.Promise<js.fs.FileSystemDirectoryHandle>;
+	function showDirectoryPicker(?options:js.fileSystemAccess.DirectoryPickerOptions = {  }):js.lib.Promise<js.fs.FileSystemDirectoryHandle>;
 	/**
 		From partial interface in file-system-access.idl
 	**/
-	function showOpenFilePicker(?options:js.fileSystemAccess.OpenFilePickerOptions):js.lib.Promise<Array<js.fs.FileSystemFileHandle>>;
+	function showOpenFilePicker(?options:js.fileSystemAccess.OpenFilePickerOptions = {  }):js.lib.Promise<Array<js.fs.FileSystemFileHandle>>;
 	/**
 		From partial interface in file-system-access.idl
 	**/
-	function showSaveFilePicker(?options:js.fileSystemAccess.SaveFilePickerOptions):js.lib.Promise<js.fs.FileSystemFileHandle>;
+	function showSaveFilePicker(?options:js.fileSystemAccess.SaveFilePickerOptions = {  }):js.lib.Promise<js.fs.FileSystemFileHandle>;
 	function stop():Void;
 }

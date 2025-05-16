@@ -100,7 +100,7 @@ extern class Element extends Node {
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	function checkVisibility(?options:js.cssomView.CheckVisibilityOptions):Bool;
+	function checkVisibility(?options:js.cssomView.CheckVisibilityOptions = {  }):Bool;
 	function closest(selectors:String):Null<Element>;
 	/**
 		From partial interface in css-typed-om.idl
@@ -109,7 +109,7 @@ extern class Element extends Node {
 	/**
 		From partial interface in css-nav.idl
 	**/
-	function focusableAreas(?option:js.cssNav.FocusableAreasOption):Array<Node>;
+	function focusableAreas(?option:js.cssNav.FocusableAreasOption = {  }):Array<Node>;
 	function getAttribute(qualifiedName:String):Null<String>;
 	function getAttributeNS(namespace:Null<String>, localName:String):Null<String>;
 	function getAttributeNames():Array<String>;
@@ -129,7 +129,7 @@ extern class Element extends Node {
 	/**
 		From partial interface in html.idl
 	**/
-	function getHTML(?options:js.html.GetHTMLOptions):String;
+	function getHTML(?options:js.html.GetHTMLOptions = {  }):String;
 	/**
 		From partial interface in css-nav.idl
 	**/
@@ -162,15 +162,15 @@ extern class Element extends Node {
 	/**
 		From partial interface in fullscreen.idl
 	**/
-	function requestFullscreen(?options:js.fullscreen.FullscreenOptions):js.lib.Promise<Void>;
+	function requestFullscreen(?options:js.fullscreen.FullscreenOptions = {  }):js.lib.Promise<Void>;
 	/**
 		From partial interface in pointerlock.idl
 	**/
-	function requestPointerLock(?options:js.pointerlock.PointerLockOptions):js.lib.Promise<Void>;
+	function requestPointerLock(?options:js.pointerlock.PointerLockOptions = {  }):js.lib.Promise<Void>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scroll(?options:js.cssomView.ScrollToOptions):Void;
+	overload function scroll(?options:js.cssomView.ScrollToOptions = {  }):Void;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -178,7 +178,7 @@ extern class Element extends Node {
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scrollBy(?options:js.cssomView.ScrollToOptions):Void;
+	overload function scrollBy(?options:js.cssomView.ScrollToOptions = {  }):Void;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -186,11 +186,11 @@ extern class Element extends Node {
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	function scrollIntoView(?arg:haxe.extern.EitherType<Bool, js.cssomView.ScrollIntoViewOptions>):Void;
+	function scrollIntoView(?arg:haxe.extern.EitherType<Bool, js.cssomView.ScrollIntoViewOptions> = {  }):Void;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scrollTo(?options:js.cssomView.ScrollToOptions):Void;
+	overload function scrollTo(?options:js.cssomView.ScrollToOptions = {  }):Void;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -210,7 +210,7 @@ extern class Element extends Node {
 	/**
 		From partial interface in css-nav.idl
 	**/
-	function spatialNavigationSearch(dir:js.cssNav.SpatialNavigationDirection, ?options:js.cssNav.SpatialNavigationSearchOptions):Null<Node>;
+	function spatialNavigationSearch(dir:js.cssNav.SpatialNavigationDirection, ?options:js.cssNav.SpatialNavigationSearchOptions = {  }):Null<Node>;
 	function toggleAttribute(qualifiedName:String, ?force:Bool):Bool;
 	function webkitMatchesSelector(selectors:String):Bool;
 }

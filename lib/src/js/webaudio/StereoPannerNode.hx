@@ -26,5 +26,5 @@ package js.webaudio;
 
 extern class StereoPannerNode extends AudioNode {
 	var pan(default, null) : AudioParam;
-	function new(context:BaseAudioContext, ?options:StereoPannerOptions):Void;
+	function new(context:BaseAudioContext, ?options:StereoPannerOptions = {  }):Void;
 }

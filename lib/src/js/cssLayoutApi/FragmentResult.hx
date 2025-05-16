@@ -27,5 +27,5 @@ package js.cssLayoutApi;
 extern class FragmentResult {
 	var inlineSize(default, null) : Float;
 	var blockSize(default, null) : Float;
-	function new(?options:FragmentResultOptions):Void;
+	function new(?options:FragmentResultOptions = {  }):Void;
 }

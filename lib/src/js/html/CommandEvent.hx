@@ -27,5 +27,5 @@ package js.html;
 extern class CommandEvent extends js.dom.Event {
 	var source(default, null) : Null<js.dom.Element>;
 	var command(default, null) : String;
-	function new(type:String, ?eventInitDict:CommandEventInit):Void;
+	function new(type:String, ?eventInitDict:CommandEventInit = {  }):Void;
 }

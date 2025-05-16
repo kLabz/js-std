@@ -44,7 +44,7 @@ extern class SVGSVGElement extends SVGGraphicsElement {
 	function createSVGPoint():js.geometry.DOMPoint;
 	function createSVGRect():js.geometry.DOMRect;
 	function createSVGTransform():SVGTransform;
-	function createSVGTransformFromMatrix(?matrix:js.geometry.DOMMatrix2DInit):SVGTransform;
+	function createSVGTransformFromMatrix(?matrix:js.geometry.DOMMatrix2DInit = {  }):SVGTransform;
 	function deselectAll():Void;
 	function forceRedraw():Void;
 	/**

@@ -42,9 +42,9 @@ extern class Event {
 	var composed(default, null) : Bool;
 	var isTrusted(default, null) : Bool;
 	var timeStamp(default, null) : js.hrTime.DOMHighResTimeStamp;
-	function new(type:String, ?eventInitDict:EventInit):Void;
+	function new(type:String, ?eventInitDict:EventInit = {  }):Void;
 	function composedPath():Array<EventTarget>;
-	function initEvent(type:String, ?bubbles:Bool, ?cancelable:Bool):Void;
+	function initEvent(type:String, ?bubbles:Bool = false, ?cancelable:Bool = false):Void;
 	function preventDefault():Void;
 	function stopImmediatePropagation():Void;
 	function stopPropagation():Void;

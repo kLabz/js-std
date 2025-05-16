@@ -32,5 +32,5 @@ extern class WheelEvent extends MouseEvent {
 	var deltaY(default, null) : Float;
 	var deltaZ(default, null) : Float;
 	var deltaMode(default, null) : Int;
-	function new(type:String, ?eventInitDict:WheelEventInit):Void;
+	function new(type:String, ?eventInitDict:WheelEventInit = {  }):Void;
 }

@@ -52,17 +52,17 @@ extern class DOMMatrix extends DOMMatrixReadOnly {
 	function new(?init:haxe.extern.EitherType<String, Array<Float>>):Void;
 	function fromFloat32Array(array32:Float32Array):DOMMatrix;
 	function fromFloat64Array(array64:Float64Array):DOMMatrix;
-	function fromMatrix(?other:DOMMatrixInit):DOMMatrix;
+	function fromMatrix(?other:DOMMatrixInit = {  }):DOMMatrix;
 	function invertSelf():DOMMatrix;
-	function multiplySelf(?other:DOMMatrixInit):DOMMatrix;
-	function preMultiplySelf(?other:DOMMatrixInit):DOMMatrix;
-	function rotateAxisAngleSelf(?x:Float, ?y:Float, ?z:Float, ?angle:Float):DOMMatrix;
-	function rotateFromVectorSelf(?x:Float, ?y:Float):DOMMatrix;
-	function rotateSelf(?rotX:Float, ?rotY:Float, ?rotZ:Float):DOMMatrix;
-	function scale3dSelf(?scale:Float, ?originX:Float, ?originY:Float, ?originZ:Float):DOMMatrix;
-	function scaleSelf(?scaleX:Float, ?scaleY:Float, ?scaleZ:Float, ?originX:Float, ?originY:Float, ?originZ:Float):DOMMatrix;
+	function multiplySelf(?other:DOMMatrixInit = {  }):DOMMatrix;
+	function preMultiplySelf(?other:DOMMatrixInit = {  }):DOMMatrix;
+	function rotateAxisAngleSelf(?x:Float = 0, ?y:Float = 0, ?z:Float = 0, ?angle:Float = 0):DOMMatrix;
+	function rotateFromVectorSelf(?x:Float = 0, ?y:Float = 0):DOMMatrix;
+	function rotateSelf(?rotX:Float = 0, ?rotY:Float, ?rotZ:Float):DOMMatrix;
+	function scale3dSelf(?scale:Float = 1, ?originX:Float = 0, ?originY:Float = 0, ?originZ:Float = 0):DOMMatrix;
+	function scaleSelf(?scaleX:Float = 1, ?scaleY:Float, ?scaleZ:Float = 1, ?originX:Float = 0, ?originY:Float = 0, ?originZ:Float = 0):DOMMatrix;
 	function setMatrixValue(transformList:String):DOMMatrix;
-	function skewXSelf(?sx:Float):DOMMatrix;
-	function skewYSelf(?sy:Float):DOMMatrix;
-	function translateSelf(?tx:Float, ?ty:Float, ?tz:Float):DOMMatrix;
+	function skewXSelf(?sx:Float = 0):DOMMatrix;
+	function skewYSelf(?sy:Float = 0):DOMMatrix;
+	function translateSelf(?tx:Float = 0, ?ty:Float = 0, ?tz:Float = 0):DOMMatrix;
 }

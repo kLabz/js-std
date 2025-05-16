@@ -28,6 +28,6 @@ extern class OscillatorNode extends AudioScheduledSourceNode {
 	var type : OscillatorType;
 	var frequency(default, null) : AudioParam;
 	var detune(default, null) : AudioParam;
-	function new(context:BaseAudioContext, ?options:OscillatorOptions):Void;
+	function new(context:BaseAudioContext, ?options:OscillatorOptions = {  }):Void;
 	function setPeriodicWave(periodicWave:PeriodicWave):Void;
 }

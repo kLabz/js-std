@@ -30,5 +30,5 @@ extern class ErrorEvent extends js.dom.Event {
 	var lineno(default, null) : Int;
 	var colno(default, null) : Int;
 	var error(default, null) : Any;
-	function new(type:String, ?eventInitDict:ErrorEventInit):Void;
+	function new(type:String, ?eventInitDict:ErrorEventInit = {  }):Void;
 }

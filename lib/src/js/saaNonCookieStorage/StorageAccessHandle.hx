@@ -31,7 +31,7 @@ extern class StorageAccessHandle {
 	var locks(default, null) : js.webLocks.LockManager;
 	var caches(default, null) : js.serviceWorkers.CacheStorage;
 	function BroadcastChannel(name:String):js.html.BroadcastChannel;
-	function SharedWorker(scriptURL:String, ?options:haxe.extern.EitherType<String, SharedWorkerOptions>):js.html.SharedWorker;
+	function SharedWorker(scriptURL:String, ?options:haxe.extern.EitherType<String, SharedWorkerOptions> = {  }):js.html.SharedWorker;
 	function createObjectURL(obj:haxe.extern.EitherType<js.fileapi.Blob, js.mediaSource.MediaSource>):String;
 	function estimate():js.lib.Promise<js.storage.StorageEstimate>;
 	function getDirectory():js.lib.Promise<js.fs.FileSystemDirectoryHandle>;

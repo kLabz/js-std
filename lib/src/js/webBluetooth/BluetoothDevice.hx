@@ -30,5 +30,5 @@ extern class BluetoothDevice extends js.dom.EventTarget {
 	var gatt(default, null) : Null<BluetoothRemoteGATTServer>;
 	var watchingAdvertisements(default, null) : Bool;
 	function forget():js.lib.Promise<Void>;
-	function watchAdvertisements(?options:WatchAdvertisementsOptions):js.lib.Promise<Void>;
+	function watchAdvertisements(?options:WatchAdvertisementsOptions = {  }):js.lib.Promise<Void>;
 }

@@ -28,6 +28,6 @@ extern class HTMLSlotElement extends HTMLElement {
 	var name : String;
 	function new():Void;
 	function assign(nodes:haxe.extern.EitherType<js.dom.Element, js.dom.Text>):Void;
-	function assignedElements(?options:AssignedNodesOptions):Array<js.dom.Element>;
-	function assignedNodes(?options:AssignedNodesOptions):Array<js.dom.Node>;
+	function assignedElements(?options:AssignedNodesOptions = {  }):Array<js.dom.Element>;
+	function assignedNodes(?options:AssignedNodesOptions = {  }):Array<js.dom.Node>;
 }

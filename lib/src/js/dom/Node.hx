@@ -58,10 +58,10 @@ extern class Node extends EventTarget {
 	static inline var DOCUMENT_POSITION_CONTAINED_BY : Int = 0x10;
 	static inline var DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC : Int = 0x20;
 	function appendChild(node:Node):Node;
-	function cloneNode(?subtree:Bool):Node;
+	function cloneNode(?subtree:Bool = false):Node;
 	function compareDocumentPosition(other:Node):Int;
 	function contains(other:Null<Node>):Bool;
-	function getRootNode(?options:GetRootNodeOptions):Node;
+	function getRootNode(?options:GetRootNodeOptions = {  }):Node;
 	function hasChildNodes():Bool;
 	function insertBefore(node:Node, child:Null<Node>):Node;
 	function isDefaultNamespace(namespace:Null<String>):Bool;

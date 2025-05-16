@@ -27,6 +27,6 @@ package js.resizeObserver;
 extern class ResizeObserver {
 	function new(callback:ResizeObserverCallback):Void;
 	function disconnect():Void;
-	function observe(target:js.dom.Element, ?options:ResizeObserverOptions):Void;
+	function observe(target:js.dom.Element, ?options:ResizeObserverOptions = {  }):Void;
 	function unobserve(target:js.dom.Element):Void;
 }

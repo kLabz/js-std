@@ -30,7 +30,7 @@ extern class AudioContext extends BaseAudioContext {
 	var sinkId(default, null) : haxe.extern.EitherType<String, AudioSinkInfo>;
 	var onsinkchange : js.html.EventHandler;
 	var onerror : js.html.EventHandler;
-	function new(?contextOptions:AudioContextOptions):Void;
+	function new(?contextOptions:AudioContextOptions = {  }):Void;
 	function close():js.lib.Promise<Void>;
 	function createMediaElementSource(mediaElement:js.html.HTMLMediaElement):MediaElementAudioSourceNode;
 	function createMediaStreamDestination():MediaStreamAudioDestinationNode;

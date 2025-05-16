@@ -47,9 +47,9 @@ extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
 	function getAllResponseHeaders():String;
 	function getResponseHeader(name:String):Null<String>;
 	overload function open(method:String, url:String):Void;
-	overload function open(method:String, url:String, async:Bool, ?username:Null<String>, ?password:Null<String>):Void;
+	overload function open(method:String, url:String, async:Bool, ?username:Null<String> = null, ?password:Null<String> = null):Void;
 	function overrideMimeType(mime:String):Void;
-	function send(?body:Null<haxe.extern.EitherType<js.dom.Document, js.fetch.XMLHttpRequestBodyInit>>):Void;
+	function send(?body:Null<haxe.extern.EitherType<js.dom.Document, js.fetch.XMLHttpRequestBodyInit>> = null):Void;
 	/**
 		From partial interface in attribution-reporting-api.idl
 	**/

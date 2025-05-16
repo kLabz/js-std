@@ -26,5 +26,5 @@ package js.cssFontLoading;
 
 extern class FontFaceSetLoadEvent extends js.dom.Event {
 	var fontfaces(default, null) : Array<FontFace>;
-	function new(type:CSSOMString, ?eventInitDict:FontFaceSetLoadEventInit):Void;
+	function new(type:CSSOMString, ?eventInitDict:FontFaceSetLoadEventInit = {  }):Void;
 }

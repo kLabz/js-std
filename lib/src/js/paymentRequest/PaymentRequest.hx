@@ -32,7 +32,7 @@ extern class PaymentRequest extends js.dom.EventTarget {
 	var onshippingaddresschange : js.html.EventHandler;
 	var onshippingoptionchange : js.html.EventHandler;
 	var onpaymentmethodchange : js.html.EventHandler;
-	function new(methodData:Array<PaymentMethodData>, details:PaymentDetailsInit, ?options:PaymentOptions):Void;
+	function new(methodData:Array<PaymentMethodData>, details:PaymentDetailsInit, ?options:PaymentOptions = {  }):Void;
 	function abort():js.lib.Promise<Void>;
 	function canMakePayment():js.lib.Promise<Bool>;
 	/**

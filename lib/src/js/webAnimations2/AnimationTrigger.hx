@@ -31,5 +31,5 @@ extern class AnimationTrigger {
 	var rangeEnd : Any;
 	var exitRangeStart : Any;
 	var exitRangeEnd : Any;
-	function new(?options:AnimationTriggerOptions):Void;
+	function new(?options:AnimationTriggerOptions = {  }):Void;
 }

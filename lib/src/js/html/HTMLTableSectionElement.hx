@@ -44,5 +44,5 @@ extern class HTMLTableSectionElement extends HTMLElement {
 	var vAlign : String;
 	function new():Void;
 	function deleteRow(index:Int):Void;
-	function insertRow(?index:Int):HTMLTableRowElement;
+	function insertRow(?index:Int = -1):HTMLTableRowElement;
 }

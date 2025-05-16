@@ -26,5 +26,5 @@ package js.webaudio;
 
 extern class MediaStreamAudioDestinationNode extends AudioNode {
 	var stream(default, null) : js.mediacaptureStreams.MediaStream;
-	function new(context:AudioContext, ?options:AudioNodeOptions):Void;
+	function new(context:AudioContext, ?options:AudioNodeOptions = {  }):Void;
 }

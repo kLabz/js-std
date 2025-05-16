@@ -27,7 +27,7 @@ package js.fileapi;
 extern class Blob {
 	var size(default, null) : Float;
 	var type(default, null) : String;
-	function new(?blobParts:Array<BlobPart>, ?options:BlobPropertyBag):Void;
+	function new(?blobParts:Array<BlobPart>, ?options:BlobPropertyBag = {  }):Void;
 	function arrayBuffer():js.lib.Promise<ArrayBuffer>;
 	function bytes():js.lib.Promise<Uint8Array>;
 	function slice(?start:Float, ?end:Float, ?contentType:String):Blob;

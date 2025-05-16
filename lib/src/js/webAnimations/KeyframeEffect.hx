@@ -33,7 +33,7 @@ extern class KeyframeEffect extends AnimationEffect {
 	**/
 	var iterationComposite : js.webAnimations2.IterationCompositeOperation;
 	overload function new(source:KeyframeEffect):Void;
-	overload function new(target:Null<js.dom.Element>, keyframes:Null<{ }>, ?options:haxe.extern.EitherType<Float, KeyframeEffectOptions>):Void;
+	overload function new(target:Null<js.dom.Element>, keyframes:Null<{ }>, ?options:haxe.extern.EitherType<Float, KeyframeEffectOptions> = {  }):Void;
 	function getKeyframes():Array<{ }>;
 	function setKeyframes(keyframes:Null<{ }>):Void;
 }

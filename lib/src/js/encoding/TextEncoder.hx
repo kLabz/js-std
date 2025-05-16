@@ -26,6 +26,6 @@ package js.encoding;
 
 extern class TextEncoder {
 	function new():Void;
-	function encode(?input:String):Uint8Array;
+	function encode(?input:String = ""):Uint8Array;
 	function encodeInto(source:String, destination:Uint8Array):TextEncoderEncodeIntoResult;
 }

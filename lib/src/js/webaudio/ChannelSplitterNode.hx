@@ -25,5 +25,5 @@
 package js.webaudio;
 
 extern class ChannelSplitterNode extends AudioNode {
-	function new(context:BaseAudioContext, ?options:ChannelSplitterOptions):Void;
+	function new(context:BaseAudioContext, ?options:ChannelSplitterOptions = {  }):Void;
 }

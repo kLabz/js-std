@@ -50,5 +50,5 @@ extern class HTMLTableRowElement extends HTMLElement {
 	var bgColor : String;
 	function new():Void;
 	function deleteCell(index:Int):Void;
-	function insertCell(?index:Int):HTMLTableCellElement;
+	function insertCell(?index:Int = -1):HTMLTableCellElement;
 }

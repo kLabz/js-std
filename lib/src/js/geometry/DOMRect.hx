@@ -31,6 +31,6 @@ package js.geometry;
 	TODO attribute height: special=inherit readonly=false
 **/
 extern class DOMRect extends DOMRectReadOnly {
-	function new(?x:Float, ?y:Float, ?width:Float, ?height:Float):Void;
-	function fromRect(?other:DOMRectInit):DOMRect;
+	function new(?x:Float = 0, ?y:Float = 0, ?width:Float = 0, ?height:Float = 0):Void;
+	function fromRect(?other:DOMRectInit = {  }):DOMRect;
 }

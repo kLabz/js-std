@@ -25,6 +25,6 @@
 package js.sharedStorage;
 
 extern class SharedStorageWorklet extends js.html.Worklet {
-	function run(name:String, ?options:SharedStorageRunOperationMethodOptions):js.lib.Promise<Any>;
-	function selectURL(name:String, urls:Array<SharedStorageUrlWithMetadata>, ?options:SharedStorageRunOperationMethodOptions):js.lib.Promise<SharedStorageResponse>;
+	function run(name:String, ?options:SharedStorageRunOperationMethodOptions = {  }):js.lib.Promise<Any>;
+	function selectURL(name:String, urls:Array<SharedStorageUrlWithMetadata>, ?options:SharedStorageRunOperationMethodOptions = {  }):js.lib.Promise<SharedStorageResponse>;
 }

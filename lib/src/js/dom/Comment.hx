@@ -25,5 +25,5 @@
 package js.dom;
 
 extern class Comment extends CharacterData {
-	function new(?data:String):Void;
+	function new(?data:String = ""):Void;
 }

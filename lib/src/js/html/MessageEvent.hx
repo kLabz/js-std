@@ -30,6 +30,6 @@ extern class MessageEvent extends js.dom.Event {
 	var lastEventId(default, null) : String;
 	var source(default, null) : Null<MessageEventSource>;
 	var ports(default, null) : Array<MessagePort>;
-	function new(type:String, ?eventInitDict:MessageEventInit):Void;
-	function initMessageEvent(type:String, ?bubbles:Bool, ?cancelable:Bool, ?data:Any, ?origin:String, ?lastEventId:String, ?source:Null<MessageEventSource>, ?ports:Array<MessagePort>):Void;
+	function new(type:String, ?eventInitDict:MessageEventInit = {  }):Void;
+	function initMessageEvent(type:String, ?bubbles:Bool = false, ?cancelable:Bool = false, ?data:Any = null, ?origin:String = "", ?lastEventId:String = "", ?source:Null<MessageEventSource> = null, ?ports:Array<MessagePort> = []):Void;
 }

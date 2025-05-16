@@ -30,6 +30,6 @@ extern class BiquadFilterNode extends AudioNode {
 	var detune(default, null) : AudioParam;
 	var Q(default, null) : AudioParam;
 	var gain(default, null) : AudioParam;
-	function new(context:BaseAudioContext, ?options:BiquadFilterOptions):Void;
+	function new(context:BaseAudioContext, ?options:BiquadFilterOptions = {  }):Void;
 	function getFrequencyResponse(frequencyHz:Float32Array, magResponse:Float32Array, phaseResponse:Float32Array):Void;
 }

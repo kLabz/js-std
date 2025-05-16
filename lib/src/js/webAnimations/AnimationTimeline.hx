@@ -36,5 +36,5 @@ extern class AnimationTimeline {
 	/**
 		From partial interface in web-animations-2.idl
 	**/
-	function play(?effect:Null<AnimationEffect>):Animation;
+	function play(?effect:Null<AnimationEffect> = null):Animation;
 }

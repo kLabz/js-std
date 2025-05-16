@@ -28,5 +28,5 @@ extern class ViewTimeline extends ScrollTimeline {
 	var subject(default, null) : js.dom.Element;
 	var startOffset(default, null) : js.cssTypedOm.CSSNumericValue;
 	var endOffset(default, null) : js.cssTypedOm.CSSNumericValue;
-	function new(?options:ViewTimelineOptions):Void;
+	function new(?options:ViewTimelineOptions = {  }):Void;
 }

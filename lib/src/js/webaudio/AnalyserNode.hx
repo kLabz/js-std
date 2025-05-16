@@ -30,7 +30,7 @@ extern class AnalyserNode extends AudioNode {
 	var minDecibels : Float;
 	var maxDecibels : Float;
 	var smoothingTimeConstant : Float;
-	function new(context:BaseAudioContext, ?options:AnalyserOptions):Void;
+	function new(context:BaseAudioContext, ?options:AnalyserOptions = {  }):Void;
 	function getByteFrequencyData(array:Uint8Array):Void;
 	function getByteTimeDomainData(array:Uint8Array):Void;
 	function getFloatFrequencyData(array:Float32Array):Void;

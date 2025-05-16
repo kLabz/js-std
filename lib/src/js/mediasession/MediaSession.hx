@@ -30,6 +30,6 @@ extern class MediaSession {
 	function setActionHandler(action:MediaSessionAction, handler:Null<MediaSessionActionHandler>):Void;
 	function setCameraActive(active:Bool):js.lib.Promise<Void>;
 	function setMicrophoneActive(active:Bool):js.lib.Promise<Void>;
-	function setPositionState(?state:MediaPositionState):Void;
+	function setPositionState(?state:MediaPositionState = {  }):Void;
 	function setScreenshareActive(active:Bool):js.lib.Promise<Void>;
 }

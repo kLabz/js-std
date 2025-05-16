@@ -26,7 +26,7 @@ package js.html;
 
 extern class CustomElementRegistry {
 	function new():Void;
-	function define(name:String, constructor:CustomElementConstructor, ?options:ElementDefinitionOptions):Void;
+	function define(name:String, constructor:CustomElementConstructor, ?options:ElementDefinitionOptions = {  }):Void;
 	function get(name:String):haxe.extern.EitherType<CustomElementConstructor, Void>;
 	function getName(constructor:CustomElementConstructor):Null<String>;
 	function initialize(root:js.dom.Node):Void;

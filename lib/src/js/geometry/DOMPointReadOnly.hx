@@ -29,8 +29,8 @@ extern class DOMPointReadOnly {
 	var y(default, null) : Float;
 	var z(default, null) : Float;
 	var w(default, null) : Float;
-	function new(?x:Float, ?y:Float, ?z:Float, ?w:Float):Void;
-	function fromPoint(?other:DOMPointInit):DOMPointReadOnly;
-	function matrixTransform(?matrix:DOMMatrixInit):DOMPoint;
+	function new(?x:Float = 0, ?y:Float = 0, ?z:Float = 0, ?w:Float = 1):Void;
+	function fromPoint(?other:DOMPointInit = {  }):DOMPointReadOnly;
+	function matrixTransform(?matrix:DOMMatrixInit = {  }):DOMPoint;
 	function toJSON():{ };
 }

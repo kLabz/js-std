@@ -26,5 +26,5 @@ package js.cssTypedOm;
 
 extern class CSSMatrixComponent extends CSSTransformComponent {
 	var matrix : js.geometry.DOMMatrix;
-	function new(matrix:js.geometry.DOMMatrixReadOnly, ?options:CSSMatrixComponentOptions):Void;
+	function new(matrix:js.geometry.DOMMatrixReadOnly, ?options:CSSMatrixComponentOptions = {  }):Void;
 }

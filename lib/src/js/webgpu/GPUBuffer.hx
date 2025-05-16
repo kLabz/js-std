@@ -29,7 +29,7 @@ extern class GPUBuffer {
 	var usage(default, null) : GPUFlagsConstant;
 	var mapState(default, null) : GPUBufferMapState;
 	function destroy():Void;
-	function getMappedRange(?offset:GPUSize64, ?size:GPUSize64):ArrayBuffer;
-	function mapAsync(mode:GPUMapModeFlags, ?offset:GPUSize64, ?size:GPUSize64):js.lib.Promise<Void>;
+	function getMappedRange(?offset:GPUSize64 = 0, ?size:GPUSize64):ArrayBuffer;
+	function mapAsync(mode:GPUMapModeFlags, ?offset:GPUSize64 = 0, ?size:GPUSize64):js.lib.Promise<Void>;
 	function unmap():Void;
 }

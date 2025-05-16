@@ -34,7 +34,7 @@ extern class SVGTransformList {
 	function appendItem(newItem:SVGTransform):SVGTransform;
 	function clear():Void;
 	function consolidate():Null<SVGTransform>;
-	function createSVGTransformFromMatrix(?matrix:js.geometry.DOMMatrix2DInit):SVGTransform;
+	function createSVGTransformFromMatrix(?matrix:js.geometry.DOMMatrix2DInit = {  }):SVGTransform;
 	function getItem(index:Int):SVGTransform;
 	function initialize(newItem:SVGTransform):SVGTransform;
 	function insertItemBefore(newItem:SVGTransform, index:Int):SVGTransform;

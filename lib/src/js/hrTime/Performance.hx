@@ -73,11 +73,11 @@ extern class Performance extends js.dom.EventTarget {
 	/**
 		From partial interface in user-timing.idl
 	**/
-	function mark(markName:String, ?markOptions:js.userTiming.PerformanceMarkOptions):js.userTiming.PerformanceMark;
+	function mark(markName:String, ?markOptions:js.userTiming.PerformanceMarkOptions = {  }):js.userTiming.PerformanceMark;
 	/**
 		From partial interface in user-timing.idl
 	**/
-	function measure(measureName:String, ?startOrMeasureOptions:haxe.extern.EitherType<String, js.userTiming.PerformanceMeasureOptions>, ?endMark:String):js.userTiming.PerformanceMeasure;
+	function measure(measureName:String, ?startOrMeasureOptions:haxe.extern.EitherType<String, js.userTiming.PerformanceMeasureOptions> = {  }, ?endMark:String):js.userTiming.PerformanceMeasure;
 	/**
 		From partial interface in performance-measure-memory.idl
 	**/

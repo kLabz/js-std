@@ -31,7 +31,7 @@ extern class XRWebGLLayer extends XRLayer {
 	var framebuffer(default, null) : Null<js.webgl1.WebGLFramebuffer>;
 	var framebufferWidth(default, null) : Int;
 	var framebufferHeight(default, null) : Int;
-	function new(session:XRSession, context:XRWebGLRenderingContext, ?layerInit:XRWebGLLayerInit):Void;
+	function new(session:XRSession, context:XRWebGLRenderingContext, ?layerInit:XRWebGLLayerInit = {  }):Void;
 	function getNativeFramebufferScaleFactor(session:XRSession):Float;
 	function getViewport(view:XRView):Null<XRViewport>;
 }

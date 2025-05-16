@@ -30,5 +30,5 @@ extern class ImageCapture {
 	function getPhotoCapabilities():js.lib.Promise<PhotoCapabilities>;
 	function getPhotoSettings():js.lib.Promise<PhotoSettings>;
 	function grabFrame():js.lib.Promise<js.html.ImageBitmap>;
-	function takePhoto(?photoSettings:PhotoSettings):js.lib.Promise<js.fileapi.Blob>;
+	function takePhoto(?photoSettings:PhotoSettings = {  }):js.lib.Promise<js.fileapi.Blob>;
 }

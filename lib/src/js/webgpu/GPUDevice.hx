@@ -40,7 +40,7 @@ extern class GPUDevice extends js.dom.EventTarget {
 	function createBindGroup(descriptor:GPUBindGroupDescriptor):GPUBindGroup;
 	function createBindGroupLayout(descriptor:GPUBindGroupLayoutDescriptor):GPUBindGroupLayout;
 	function createBuffer(descriptor:GPUBufferDescriptor):GPUBuffer;
-	function createCommandEncoder(?descriptor:GPUCommandEncoderDescriptor):GPUCommandEncoder;
+	function createCommandEncoder(?descriptor:GPUCommandEncoderDescriptor = {  }):GPUCommandEncoder;
 	function createComputePipeline(descriptor:GPUComputePipelineDescriptor):GPUComputePipeline;
 	function createComputePipelineAsync(descriptor:GPUComputePipelineDescriptor):js.lib.Promise<GPUComputePipeline>;
 	function createPipelineLayout(descriptor:GPUPipelineLayoutDescriptor):GPUPipelineLayout;
@@ -48,7 +48,7 @@ extern class GPUDevice extends js.dom.EventTarget {
 	function createRenderBundleEncoder(descriptor:GPURenderBundleEncoderDescriptor):GPURenderBundleEncoder;
 	function createRenderPipeline(descriptor:GPURenderPipelineDescriptor):GPURenderPipeline;
 	function createRenderPipelineAsync(descriptor:GPURenderPipelineDescriptor):js.lib.Promise<GPURenderPipeline>;
-	function createSampler(?descriptor:GPUSamplerDescriptor):GPUSampler;
+	function createSampler(?descriptor:GPUSamplerDescriptor = {  }):GPUSampler;
 	function createShaderModule(descriptor:GPUShaderModuleDescriptor):GPUShaderModule;
 	function createTexture(descriptor:GPUTextureDescriptor):GPUTexture;
 	function destroy():Void;

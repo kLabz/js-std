@@ -29,5 +29,5 @@ extern class CSSHSL extends CSSColorValue {
 	var s : CSSColorPercent;
 	var l : CSSColorPercent;
 	var alpha : CSSColorPercent;
-	function new(h:CSSColorAngle, s:CSSColorPercent, l:CSSColorPercent, ?alpha:CSSColorPercent):Void;
+	function new(h:CSSColorAngle, s:CSSColorPercent, l:CSSColorPercent, ?alpha:CSSColorPercent = 1):Void;
 }

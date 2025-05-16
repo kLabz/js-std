@@ -29,5 +29,5 @@ extern class CSSHWB extends CSSColorValue {
 	var w : CSSNumberish;
 	var b : CSSNumberish;
 	var alpha : CSSNumberish;
-	function new(h:CSSNumericValue, w:CSSNumberish, b:CSSNumberish, ?alpha:CSSNumberish):Void;
+	function new(h:CSSNumericValue, w:CSSNumberish, b:CSSNumberish, ?alpha:CSSNumberish = 1):Void;
 }

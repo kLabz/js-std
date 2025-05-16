@@ -31,6 +31,6 @@ extern class HTMLOptionsCollection extends js.dom.HTMLCollection {
 		(special = setter)
 	**/
 	function (index:Int, option:Null<HTMLOptionElement>):Void;
-	function add(element:haxe.extern.EitherType<HTMLOptionElement, HTMLOptGroupElement>, ?before:Null<haxe.extern.EitherType<HTMLElement, Int>>):Void;
+	function add(element:haxe.extern.EitherType<HTMLOptionElement, HTMLOptGroupElement>, ?before:Null<haxe.extern.EitherType<HTMLElement, Int>> = null):Void;
 	function remove(index:Int):Void;
 }

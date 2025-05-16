@@ -34,8 +34,8 @@ extern class URLPattern {
 	var search(default, null) : String;
 	var hash(default, null) : String;
 	var hasRegExpGroups(default, null) : Bool;
-	overload function new(?input:URLPatternInput, ?options:URLPatternOptions):Void;
-	overload function new(input:URLPatternInput, baseURL:String, ?options:URLPatternOptions):Void;
-	function exec(?input:URLPatternInput, ?baseURL:String):Null<URLPatternResult>;
-	function test(?input:URLPatternInput, ?baseURL:String):Bool;
+	overload function new(?input:URLPatternInput = {  }, ?options:URLPatternOptions = {  }):Void;
+	overload function new(input:URLPatternInput, baseURL:String, ?options:URLPatternOptions = {  }):Void;
+	function exec(?input:URLPatternInput = {  }, ?baseURL:String):Null<URLPatternResult>;
+	function test(?input:URLPatternInput = {  }, ?baseURL:String):Bool;
 }

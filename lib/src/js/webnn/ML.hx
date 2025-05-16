@@ -25,6 +25,6 @@
 package js.webnn;
 
 extern class ML {
-	overload function createContext(?options:MLContextOptions):js.lib.Promise<MLContext>;
+	overload function createContext(?options:MLContextOptions = {  }):js.lib.Promise<MLContext>;
 	overload function createContext(gpuDevice:js.webgpu.GPUDevice):js.lib.Promise<MLContext>;
 }

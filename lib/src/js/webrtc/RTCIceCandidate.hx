@@ -41,6 +41,6 @@ extern class RTCIceCandidate {
 	var usernameFragment(default, null) : Null<String>;
 	var relayProtocol(default, null) : Null<RTCIceServerTransportProtocol>;
 	var url(default, null) : Null<String>;
-	function new(?candidateInitDict:RTCLocalIceCandidateInit):Void;
+	function new(?candidateInitDict:RTCLocalIceCandidateInit = {  }):Void;
 	function toJSON():RTCIceCandidateInit;
 }

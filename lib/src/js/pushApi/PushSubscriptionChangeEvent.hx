@@ -27,5 +27,5 @@ package js.pushApi;
 extern class PushSubscriptionChangeEvent extends js.serviceWorkers.ExtendableEvent {
 	var newSubscription(default, null) : Null<PushSubscription>;
 	var oldSubscription(default, null) : Null<PushSubscription>;
-	function new(type:String, ?eventInitDict:PushSubscriptionChangeEventInit):Void;
+	function new(type:String, ?eventInitDict:PushSubscriptionChangeEventInit = {  }):Void;
 }

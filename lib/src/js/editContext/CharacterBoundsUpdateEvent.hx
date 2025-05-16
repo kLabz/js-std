@@ -27,5 +27,5 @@ package js.editContext;
 extern class CharacterBoundsUpdateEvent extends js.dom.Event {
 	var rangeStart(default, null) : Int;
 	var rangeEnd(default, null) : Int;
-	function new(type:String, ?options:CharacterBoundsUpdateEventInit):Void;
+	function new(type:String, ?options:CharacterBoundsUpdateEventInit = {  }):Void;
 }

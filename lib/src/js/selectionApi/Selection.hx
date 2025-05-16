@@ -38,19 +38,19 @@ extern class Selection {
 	**/
 	function ():Void;
 	function addRange(range:js.dom.Range):Void;
-	function collapse(node:Null<js.dom.Node>, ?offset:Int):Void;
+	function collapse(node:Null<js.dom.Node>, ?offset:Int = 0):Void;
 	function collapseToEnd():Void;
 	function collapseToStart():Void;
-	function containsNode(node:js.dom.Node, ?allowPartialContainment:Bool):Bool;
+	function containsNode(node:js.dom.Node, ?allowPartialContainment:Bool = false):Bool;
 	function deleteFromDocument():Void;
 	function empty():Void;
-	function extend(node:js.dom.Node, ?offset:Int):Void;
-	function getComposedRanges(?options:GetComposedRangesOptions):Array<js.dom.StaticRange>;
+	function extend(node:js.dom.Node, ?offset:Int = 0):Void;
+	function getComposedRanges(?options:GetComposedRangesOptions = {  }):Array<js.dom.StaticRange>;
 	function getRangeAt(index:Int):js.dom.Range;
 	function modify(?alter:String, ?direction:String, ?granularity:String):Void;
 	function removeAllRanges():Void;
 	function removeRange(range:js.dom.Range):Void;
 	function selectAllChildren(node:js.dom.Node):Void;
 	function setBaseAndExtent(anchorNode:js.dom.Node, anchorOffset:Int, focusNode:js.dom.Node, focusOffset:Int):Void;
-	function setPosition(node:Null<js.dom.Node>, ?offset:Int):Void;
+	function setPosition(node:Null<js.dom.Node>, ?offset:Int = 0):Void;
 }

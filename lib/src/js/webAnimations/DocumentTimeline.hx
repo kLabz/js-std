@@ -25,5 +25,5 @@
 package js.webAnimations;
 
 extern class DocumentTimeline extends AnimationTimeline {
-	function new(?options:DocumentTimelineOptions):Void;
+	function new(?options:DocumentTimelineOptions = {  }):Void;
 }

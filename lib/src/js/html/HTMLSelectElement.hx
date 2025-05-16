@@ -47,7 +47,7 @@ extern class HTMLSelectElement extends HTMLElement {
 		(special = setter)
 	**/
 	function (index:Int, option:Null<HTMLOptionElement>):Void;
-	function add(element:haxe.extern.EitherType<HTMLOptionElement, HTMLOptGroupElement>, ?before:Null<haxe.extern.EitherType<HTMLElement, Int>>):Void;
+	function add(element:haxe.extern.EitherType<HTMLOptionElement, HTMLOptGroupElement>, ?before:Null<haxe.extern.EitherType<HTMLElement, Int>> = null):Void;
 	function checkValidity():Bool;
 	function item(index:Int):Null<HTMLOptionElement>;
 	function namedItem(name:String):Null<HTMLOptionElement>;

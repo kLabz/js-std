@@ -25,5 +25,5 @@
 package js.webgpu;
 
 extern class GPURenderBundleEncoder {
-	function finish(?descriptor:GPURenderBundleDescriptor):GPURenderBundle;
+	function finish(?descriptor:GPURenderBundleDescriptor = {  }):GPURenderBundle;
 }

@@ -30,7 +30,7 @@ extern class AudioBuffer {
 	var duration(default, null) : Float;
 	var numberOfChannels(default, null) : Int;
 	function new(options:AudioBufferOptions):Void;
-	function copyFromChannel(destination:Float32Array, channelNumber:Int, ?bufferOffset:Int):Void;
-	function copyToChannel(source:Float32Array, channelNumber:Int, ?bufferOffset:Int):Void;
+	function copyFromChannel(destination:Float32Array, channelNumber:Int, ?bufferOffset:Int = 0):Void;
+	function copyToChannel(source:Float32Array, channelNumber:Int, ?bufferOffset:Int = 0):Void;
 	function getChannelData(channel:Int):Float32Array;
 }

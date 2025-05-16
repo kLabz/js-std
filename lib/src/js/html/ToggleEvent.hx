@@ -27,5 +27,5 @@ package js.html;
 extern class ToggleEvent extends js.dom.Event {
 	var oldState(default, null) : String;
 	var newState(default, null) : String;
-	function new(type:String, ?eventInitDict:ToggleEventInit):Void;
+	function new(type:String, ?eventInitDict:ToggleEventInit = {  }):Void;
 }

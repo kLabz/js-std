@@ -29,5 +29,5 @@ extern class CSSLCH extends CSSColorValue {
 	var c : CSSColorPercent;
 	var h : CSSColorAngle;
 	var alpha : CSSColorPercent;
-	function new(l:CSSColorPercent, c:CSSColorPercent, h:CSSColorAngle, ?alpha:CSSColorPercent):Void;
+	function new(l:CSSColorPercent, c:CSSColorPercent, h:CSSColorAngle, ?alpha:CSSColorPercent = 1):Void;
 }

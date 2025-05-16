@@ -29,9 +29,9 @@ extern class DOMQuad {
 	var p2(default, null) : DOMPoint;
 	var p3(default, null) : DOMPoint;
 	var p4(default, null) : DOMPoint;
-	function new(?p1:DOMPointInit, ?p2:DOMPointInit, ?p3:DOMPointInit, ?p4:DOMPointInit):Void;
-	function fromQuad(?other:DOMQuadInit):DOMQuad;
-	function fromRect(?other:DOMRectInit):DOMQuad;
+	function new(?p1:DOMPointInit = {  }, ?p2:DOMPointInit = {  }, ?p3:DOMPointInit = {  }, ?p4:DOMPointInit = {  }):Void;
+	function fromQuad(?other:DOMQuadInit = {  }):DOMQuad;
+	function fromRect(?other:DOMRectInit = {  }):DOMQuad;
 	function getBounds():DOMRect;
 	function toJSON():{ };
 }

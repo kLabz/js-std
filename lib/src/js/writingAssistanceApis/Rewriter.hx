@@ -33,9 +33,9 @@ extern class Rewriter {
 	var expectedContextLanguages(default, null) : Null<Array<String>>;
 	var outputLanguage(default, null) : Null<String>;
 	var inputQuota(default, null) : Float;
-	function availability(?options:RewriterCreateCoreOptions):js.lib.Promise<Availability>;
-	function create(?options:RewriterCreateOptions):js.lib.Promise<Rewriter>;
-	function measureInputUsage(input:String, ?options:RewriterRewriteOptions):js.lib.Promise<Float>;
-	function rewrite(input:String, ?options:RewriterRewriteOptions):js.lib.Promise<String>;
-	function rewriteStreaming(input:String, ?options:RewriterRewriteOptions):js.streams.ReadableStream;
+	function availability(?options:RewriterCreateCoreOptions = {  }):js.lib.Promise<Availability>;
+	function create(?options:RewriterCreateOptions = {  }):js.lib.Promise<Rewriter>;
+	function measureInputUsage(input:String, ?options:RewriterRewriteOptions = {  }):js.lib.Promise<Float>;
+	function rewrite(input:String, ?options:RewriterRewriteOptions = {  }):js.lib.Promise<String>;
+	function rewriteStreaming(input:String, ?options:RewriterRewriteOptions = {  }):js.streams.ReadableStream;
 }

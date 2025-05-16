@@ -30,5 +30,5 @@ extern class MediaMetadata {
 	var album : String;
 	var artwork : Array<{ }>;
 	var chapterInfo(default, null) : Array<ChapterInformation>;
-	function new(?init:MediaMetadataInit):Void;
+	function new(?init:MediaMetadataInit = {  }):Void;
 }

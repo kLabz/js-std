@@ -27,5 +27,5 @@ package js.webBluetoothScanning;
 extern class BluetoothDataFilter {
 	var dataPrefix(default, null) : ArrayBuffer;
 	var mask(default, null) : ArrayBuffer;
-	function new(?init:js.webBluetooth.BluetoothDataFilterInit):Void;
+	function new(?init:js.webBluetooth.BluetoothDataFilterInit = {  }):Void;
 }

@@ -26,7 +26,7 @@ package js.webcrypto;
 
 extern class SubtleCrypto {
 	function decrypt(algorithm:AlgorithmIdentifier, key:CryptoKey, data:js.webidl.BufferSource):js.lib.Promise<ArrayBuffer>;
-	function deriveBits(algorithm:AlgorithmIdentifier, baseKey:CryptoKey, ?length:Null<Int>):js.lib.Promise<ArrayBuffer>;
+	function deriveBits(algorithm:AlgorithmIdentifier, baseKey:CryptoKey, ?length:Null<Int> = null):js.lib.Promise<ArrayBuffer>;
 	function deriveKey(algorithm:AlgorithmIdentifier, baseKey:CryptoKey, derivedKeyType:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<KeyUsage>):js.lib.Promise<CryptoKey>;
 	function digest(algorithm:AlgorithmIdentifier, data:js.webidl.BufferSource):js.lib.Promise<ArrayBuffer>;
 	function encrypt(algorithm:AlgorithmIdentifier, key:CryptoKey, data:js.webidl.BufferSource):js.lib.Promise<ArrayBuffer>;

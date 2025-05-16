@@ -27,5 +27,5 @@ package js.cssScrollSnap2;
 extern class SnapEvent extends js.dom.Event {
 	var snapTargetBlock(default, null) : Null<js.dom.Node>;
 	var snapTargetInline(default, null) : Null<js.dom.Node>;
-	function new(type:String, ?eventInitDict:SnapEventInit):Void;
+	function new(type:String, ?eventInitDict:SnapEventInit = {  }):Void;
 }

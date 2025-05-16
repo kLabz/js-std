@@ -54,6 +54,10 @@ extern class Navigator {
 	**/
 	var ink(default, null) : js.inkEnhancement.Ink;
 	/**
+		From partial interface in html.idl
+	**/
+	var userActivation(default, null) : UserActivation;
+	/**
 		From partial interface in is-input-pending.idl
 	**/
 	var scheduling(default, null) : js.isInputPending.Scheduling;
@@ -61,10 +65,6 @@ extern class Navigator {
 		From partial interface in keyboard-lock.idl
 	**/
 	var keyboard(default, null) : js.keyboardLock.Keyboard;
-	/**
-		From partial interface in html.idl
-	**/
-	var userActivation(default, null) : UserActivation;
 	/**
 		From partial interface in login-status.idl
 	**/
@@ -160,11 +160,11 @@ extern class Navigator {
 	/**
 		From partial interface in web-share.idl
 	**/
-	function canShare(?data:js.webShare.ShareData):Bool;
+	function canShare(?data:js.webShare.ShareData = {  }):Bool;
 	/**
 		From partial interface in turtledove.idl
 	**/
-	function clearOriginJoinedAdInterestGroups(owner:String, ?interestGroupsToKeep:Array<String>):js.lib.Promise<Void>;
+	function clearOriginJoinedAdInterestGroups(owner:String, ?interestGroupsToKeep:Array<String> = []):js.lib.Promise<Void>;
 	/**
 		From partial interface in turtledove.idl
 	**/
@@ -180,7 +180,7 @@ extern class Navigator {
 	/**
 		From partial interface in fenced-frame.idl
 	**/
-	function deprecatedURNtoURL(urnOrConfig:js.fencedFrame.UrnOrConfig, ?send_reports:Bool):js.lib.Promise<String>;
+	function deprecatedURNtoURL(urnOrConfig:js.fencedFrame.UrnOrConfig, ?send_reports:Bool = false):js.lib.Promise<String>;
 	/**
 		From partial interface in autoplay-detection.idl
 	**/
@@ -208,7 +208,7 @@ extern class Navigator {
 	/**
 		From partial interface in turtledove.idl
 	**/
-	function getInterestGroupAdAuctionData(?config:js.turtledove.AdAuctionDataConfig):js.lib.Promise<js.turtledove.AdAuctionData>;
+	function getInterestGroupAdAuctionData(?config:js.turtledove.AdAuctionDataConfig = {  }):js.lib.Promise<js.turtledove.AdAuctionData>;
 	/**
 		From partial interface in turtledove.idl
 	**/
@@ -216,7 +216,7 @@ extern class Navigator {
 	/**
 		From partial interface in turtledove.idl
 	**/
-	function leaveAdInterestGroup(?group:js.turtledove.AuctionAdInterestGroupKey):js.lib.Promise<Void>;
+	function leaveAdInterestGroup(?group:js.turtledove.AuctionAdInterestGroupKey = {  }):js.lib.Promise<Void>;
 	/**
 		From partial interface in handwriting-recognition.idl
 	**/
@@ -224,7 +224,7 @@ extern class Navigator {
 	/**
 		From partial interface in webmidi.idl
 	**/
-	function requestMIDIAccess(?options:js.webmidi.MIDIOptions):js.lib.Promise<js.webmidi.MIDIAccess>;
+	function requestMIDIAccess(?options:js.webmidi.MIDIOptions = {  }):js.lib.Promise<js.webmidi.MIDIAccess>;
 	/**
 		From partial interface in encrypted-media.idl
 	**/
@@ -236,11 +236,11 @@ extern class Navigator {
 	/**
 		From partial interface in beacon.idl
 	**/
-	function sendBeacon(url:String, ?data:Null<js.fetch.BodyInit>):Bool;
+	function sendBeacon(url:String, ?data:Null<js.fetch.BodyInit> = null):Bool;
 	/**
 		From partial interface in web-share.idl
 	**/
-	function share(?data:js.webShare.ShareData):js.lib.Promise<Void>;
+	function share(?data:js.webShare.ShareData = {  }):js.lib.Promise<Void>;
 	/**
 		From partial interface in turtledove.idl
 	**/

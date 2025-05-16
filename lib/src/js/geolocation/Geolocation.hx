@@ -26,6 +26,6 @@ package js.geolocation;
 
 extern class Geolocation {
 	function clearWatch(watchId:Int):Void;
-	function getCurrentPosition(successCallback:PositionCallback, ?errorCallback:Null<PositionErrorCallback>, ?options:PositionOptions):Void;
-	function watchPosition(successCallback:PositionCallback, ?errorCallback:Null<PositionErrorCallback>, ?options:PositionOptions):Int;
+	function getCurrentPosition(successCallback:PositionCallback, ?errorCallback:Null<PositionErrorCallback> = null, ?options:PositionOptions = {  }):Void;
+	function watchPosition(successCallback:PositionCallback, ?errorCallback:Null<PositionErrorCallback> = null, ?options:PositionOptions = {  }):Int;
 }

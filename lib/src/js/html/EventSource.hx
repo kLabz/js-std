@@ -34,6 +34,6 @@ extern class EventSource extends js.dom.EventTarget {
 	var onopen : EventHandler;
 	var onmessage : EventHandler;
 	var onerror : EventHandler;
-	function new(url:String, ?eventSourceInitDict:EventSourceInit):Void;
+	function new(url:String, ?eventSourceInitDict:EventSourceInit = {  }):Void;
 	function close():Void;
 }

@@ -31,13 +31,13 @@ package js.html;
 			params : [], 
 			pos : {
 				file : src/Main.hx, 
-				min : 2258, 
-				max : 2264
+				min : 2219, 
+				max : 2225
 			}, 
 			posPath : {
 				file : src/Main.hx, 
-				min : 2258, 
-				max : 2264
+				min : 2219, 
+				max : 2225
 			}
 		})
 **/

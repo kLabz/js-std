@@ -29,5 +29,5 @@ extern class TextFormat {
 	var rangeEnd(default, null) : Int;
 	var underlineStyle(default, null) : UnderlineStyle;
 	var underlineThickness(default, null) : UnderlineThickness;
-	function new(?options:TextFormatInit):Void;
+	function new(?options:TextFormatInit = {  }):Void;
 }

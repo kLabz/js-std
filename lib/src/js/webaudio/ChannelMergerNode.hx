@@ -25,5 +25,5 @@
 package js.webaudio;
 
 extern class ChannelMergerNode extends AudioNode {
-	function new(context:BaseAudioContext, ?options:ChannelMergerOptions):Void;
+	function new(context:BaseAudioContext, ?options:ChannelMergerOptions = {  }):Void;
 }

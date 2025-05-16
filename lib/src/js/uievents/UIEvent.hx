@@ -35,9 +35,9 @@ extern class UIEvent extends js.dom.Event {
 		From partial interface in uievents.idl
 	**/
 	var which(default, null) : Int;
-	function new(type:String, ?eventInitDict:UIEventInit):Void;
+	function new(type:String, ?eventInitDict:UIEventInit = {  }):Void;
 	/**
 		From partial interface in uievents.idl
 	**/
-	function initUIEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:Null<js.html.Window>, ?detailArg:Int):Void;
+	function initUIEvent(typeArg:String, ?bubblesArg:Bool = false, ?cancelableArg:Bool = false, ?viewArg:Null<js.html.Window> = null, ?detailArg:Int = 0):Void;
 }

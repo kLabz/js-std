@@ -53,7 +53,7 @@ extern class Animation extends js.dom.EventTarget {
 		From partial interface in web-animations-2.idl
 	**/
 	var overallProgress(default, null) : Null<Float>;
-	function new(?effect:Null<AnimationEffect>, ?timeline:Null<AnimationTimeline>):Void;
+	function new(?effect:Null<AnimationEffect> = null, ?timeline:Null<AnimationTimeline>):Void;
 	function cancel():Void;
 	function commitStyles():Void;
 	function finish():Void;

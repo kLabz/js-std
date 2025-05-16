@@ -38,7 +38,7 @@ extern class PointerEvent extends js.uievents.MouseEvent {
 	var pointerType(default, null) : String;
 	var isPrimary(default, null) : Bool;
 	var persistentDeviceId(default, null) : Int;
-	function new(type:String, ?eventInitDict:PointerEventInit):Void;
+	function new(type:String, ?eventInitDict:PointerEventInit = {  }):Void;
 	function getCoalescedEvents():Array<PointerEvent>;
 	function getPredictedEvents():Array<PointerEvent>;
 }

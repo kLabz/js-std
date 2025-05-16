@@ -32,6 +32,6 @@ extern class GeolocationSensor extends js.genericSensor.Sensor {
 	var altitudeAccuracy(default, null) : Null<Float>;
 	var heading(default, null) : Null<Float>;
 	var speed(default, null) : Null<Float>;
-	function new(?options:GeolocationSensorOptions):Void;
-	function read(?readOptions:ReadOptions):js.lib.Promise<GeolocationSensorReading>;
+	function new(?options:GeolocationSensorOptions = {  }):Void;
+	function read(?readOptions:ReadOptions = {  }):js.lib.Promise<GeolocationSensorReading>;
 }

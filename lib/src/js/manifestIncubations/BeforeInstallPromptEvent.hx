@@ -25,6 +25,6 @@
 package js.manifestIncubations;
 
 extern class BeforeInstallPromptEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:js.dom.EventInit):Void;
+	function new(type:String, ?eventInitDict:js.dom.EventInit = {  }):Void;
 	function prompt():js.lib.Promise<PromptResponseObject>;
 }

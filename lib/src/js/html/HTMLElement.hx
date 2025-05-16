@@ -69,6 +69,6 @@ extern class HTMLElement extends js.dom.Element {
 	function attachInternals():ElementInternals;
 	function click():Void;
 	function hidePopover():Void;
-	function showPopover(?options:ShowPopoverOptions):Void;
-	function togglePopover(?options:haxe.extern.EitherType<TogglePopoverOptions, Bool>):Bool;
+	function showPopover(?options:ShowPopoverOptions = {  }):Void;
+	function togglePopover(?options:haxe.extern.EitherType<TogglePopoverOptions, Bool> = {  }):Bool;
 }

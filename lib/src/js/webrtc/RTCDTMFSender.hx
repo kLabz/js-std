@@ -28,5 +28,5 @@ extern class RTCDTMFSender extends js.dom.EventTarget {
 	var ontonechange : js.html.EventHandler;
 	var canInsertDTMF(default, null) : Bool;
 	var toneBuffer(default, null) : String;
-	function insertDTMF(tones:String, ?duration:Int, ?interToneGap:Int):Void;
+	function insertDTMF(tones:String, ?duration:Int = 100, ?interToneGap:Int = 70):Void;
 }

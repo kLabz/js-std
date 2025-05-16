@@ -33,7 +33,7 @@ extern class IDBObjectStore {
 	function add(value:Any, ?key:Any):IDBRequest;
 	function clear():IDBRequest;
 	function count(?query:Any):IDBRequest;
-	function createIndex(name:String, keyPath:haxe.extern.EitherType<String, Array<String>>, ?options:IDBIndexParameters):IDBIndex;
+	function createIndex(name:String, keyPath:haxe.extern.EitherType<String, Array<String>>, ?options:IDBIndexParameters = {  }):IDBIndex;
 	function delete(query:Any):IDBRequest;
 	function deleteIndex(name:String):Void;
 	function get(query:Any):IDBRequest;
@@ -41,7 +41,7 @@ extern class IDBObjectStore {
 	function getAllKeys(?query:Any, ?count:Int):IDBRequest;
 	function getKey(query:Any):IDBRequest;
 	function index(name:String):IDBIndex;
-	function openCursor(?query:Any, ?direction:IDBCursorDirection):IDBRequest;
-	function openKeyCursor(?query:Any, ?direction:IDBCursorDirection):IDBRequest;
+	function openCursor(?query:Any, ?direction:IDBCursorDirection = "next"):IDBRequest;
+	function openKeyCursor(?query:Any, ?direction:IDBCursorDirection = "next"):IDBRequest;
 	function put(value:Any, ?key:Any):IDBRequest;
 }

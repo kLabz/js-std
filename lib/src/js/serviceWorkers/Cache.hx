@@ -27,9 +27,9 @@ package js.serviceWorkers;
 extern class Cache {
 	function add(request:js.fetch.RequestInfo):js.lib.Promise<Void>;
 	function addAll(requests:Array<js.fetch.RequestInfo>):js.lib.Promise<Void>;
-	function delete(request:js.fetch.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Bool>;
-	function keys(?request:js.fetch.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Array<js.fetch.Request>>;
-	function match(request:js.fetch.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<haxe.extern.EitherType<js.fetch.Response, Void>>;
-	function matchAll(?request:js.fetch.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Array<js.fetch.Response>>;
+	function delete(request:js.fetch.RequestInfo, ?options:CacheQueryOptions = {  }):js.lib.Promise<Bool>;
+	function keys(?request:js.fetch.RequestInfo, ?options:CacheQueryOptions = {  }):js.lib.Promise<Array<js.fetch.Request>>;
+	function match(request:js.fetch.RequestInfo, ?options:CacheQueryOptions = {  }):js.lib.Promise<haxe.extern.EitherType<js.fetch.Response, Void>>;
+	function matchAll(?request:js.fetch.RequestInfo, ?options:CacheQueryOptions = {  }):js.lib.Promise<Array<js.fetch.Response>>;
 	function put(request:js.fetch.RequestInfo, response:js.fetch.Response):js.lib.Promise<Void>;
 }

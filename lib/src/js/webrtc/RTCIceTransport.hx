@@ -47,11 +47,11 @@ extern class RTCIceTransport extends js.dom.EventTarget {
 	/**
 		From partial interface in webrtc-ice.idl
 	**/
-	function addRemoteCandidate(?remoteCandidate:RTCIceCandidateInit):Void;
+	function addRemoteCandidate(?remoteCandidate:RTCIceCandidateInit = {  }):Void;
 	/**
 		From partial interface in webrtc-ice.idl
 	**/
-	function gather(?options:js.webrtcIce.RTCIceGatherOptions):Void;
+	function gather(?options:js.webrtcIce.RTCIceGatherOptions = {  }):Void;
 	function getLocalCandidates():Array<RTCIceCandidate>;
 	function getLocalParameters():Null<RTCIceParameters>;
 	function getRemoteCandidates():Array<RTCIceCandidate>;
@@ -60,7 +60,7 @@ extern class RTCIceTransport extends js.dom.EventTarget {
 	/**
 		From partial interface in webrtc-ice.idl
 	**/
-	function start(?remoteParameters:RTCIceParameters, ?role:RTCIceRole):Void;
+	function start(?remoteParameters:RTCIceParameters = {  }, ?role:RTCIceRole = "controlled"):Void;
 	/**
 		From partial interface in webrtc-ice.idl
 	**/

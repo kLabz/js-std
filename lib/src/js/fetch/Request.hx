@@ -45,6 +45,6 @@ extern class Request {
 		From partial interface in private-network-access.idl
 	**/
 	var targetAddressSpace(default, null) : js.privateNetworkAccess.IPAddressSpace;
-	function new(input:RequestInfo, ?init:RequestInit):Void;
+	function new(input:RequestInfo, ?init:RequestInit = {  }):Void;
 	function clone():Request;
 }

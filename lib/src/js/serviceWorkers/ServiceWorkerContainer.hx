@@ -30,8 +30,8 @@ extern class ServiceWorkerContainer extends js.dom.EventTarget {
 	var oncontrollerchange : js.html.EventHandler;
 	var onmessage : js.html.EventHandler;
 	var onmessageerror : js.html.EventHandler;
-	function getRegistration(?clientURL:String):js.lib.Promise<haxe.extern.EitherType<ServiceWorkerRegistration, Void>>;
+	function getRegistration(?clientURL:String = ""):js.lib.Promise<haxe.extern.EitherType<ServiceWorkerRegistration, Void>>;
 	function getRegistrations():js.lib.Promise<Array<ServiceWorkerRegistration>>;
-	function register(scriptURL:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>, ?options:RegistrationOptions):js.lib.Promise<ServiceWorkerRegistration>;
+	function register(scriptURL:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>, ?options:RegistrationOptions = {  }):js.lib.Promise<ServiceWorkerRegistration>;
 	function startMessages():Void;
 }

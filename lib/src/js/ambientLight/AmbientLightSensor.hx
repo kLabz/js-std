@@ -26,5 +26,5 @@ package js.ambientLight;
 
 extern class AmbientLightSensor extends js.genericSensor.Sensor {
 	var illuminance(default, null) : Null<Float>;
-	function new(?sensorOptions:js.genericSensor.SensorOptions):Void;
+	function new(?sensorOptions:js.genericSensor.SensorOptions = {  }):Void;
 }

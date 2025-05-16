@@ -55,5 +55,5 @@ extern class AnimationEffect {
 		From partial interface in web-animations-2.idl
 	**/
 	function replace(effects:AnimationEffect):Void;
-	function updateTiming(?timing:OptionalEffectTiming):Void;
+	function updateTiming(?timing:OptionalEffectTiming = {  }):Void;
 }

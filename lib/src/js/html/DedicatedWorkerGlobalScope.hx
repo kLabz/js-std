@@ -32,5 +32,5 @@ extern class DedicatedWorkerGlobalScope extends WorkerGlobalScope {
 	var onrtctransform : EventHandler;
 	function close():Void;
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
-	overload function postMessage(message:Any, ?options:StructuredSerializeOptions):Void;
+	overload function postMessage(message:Any, ?options:StructuredSerializeOptions = {  }):Void;
 }

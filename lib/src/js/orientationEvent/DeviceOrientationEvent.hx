@@ -29,6 +29,6 @@ extern class DeviceOrientationEvent extends js.dom.Event {
 	var beta(default, null) : Null<Float>;
 	var gamma(default, null) : Null<Float>;
 	var absolute(default, null) : Bool;
-	function new(type:String, ?eventInitDict:DeviceOrientationEventInit):Void;
-	function requestPermission(?absolute:Bool):js.lib.Promise<js.permissions.PermissionState>;
+	function new(type:String, ?eventInitDict:DeviceOrientationEventInit = {  }):Void;
+	function requestPermission(?absolute:Bool = false):js.lib.Promise<js.permissions.PermissionState>;
 }

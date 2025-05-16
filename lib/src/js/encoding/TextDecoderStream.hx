@@ -25,5 +25,5 @@
 package js.encoding;
 
 extern class TextDecoderStream {
-	function new(?label:String, ?options:TextDecoderOptions):Void;
+	function new(?label:String = "utf-8", ?options:TextDecoderOptions = {  }):Void;
 }

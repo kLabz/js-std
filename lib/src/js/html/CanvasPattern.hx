@@ -25,5 +25,5 @@
 package js.html;
 
 extern class CanvasPattern {
-	function setTransform(?transform:js.geometry.DOMMatrix2DInit):Void;
+	function setTransform(?transform:js.geometry.DOMMatrix2DInit = {  }):Void;
 }

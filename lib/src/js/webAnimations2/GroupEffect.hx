@@ -28,7 +28,7 @@ extern class GroupEffect {
 	var children(default, null) : AnimationNodeList;
 	var firstChild(default, null) : Null<js.webAnimations.AnimationEffect>;
 	var lastChild(default, null) : Null<js.webAnimations.AnimationEffect>;
-	function new(children:Null<Array<js.webAnimations.AnimationEffect>>, ?timing:haxe.extern.EitherType<Float, js.webAnimations.EffectTiming>):Void;
+	function new(children:Null<Array<js.webAnimations.AnimationEffect>>, ?timing:haxe.extern.EitherType<Float, js.webAnimations.EffectTiming> = {  }):Void;
 	function append(effects:js.webAnimations.AnimationEffect):Void;
 	function clone():GroupEffect;
 	function prepend(effects:js.webAnimations.AnimationEffect):Void;

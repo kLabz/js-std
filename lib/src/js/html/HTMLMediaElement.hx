@@ -86,7 +86,7 @@ extern class HTMLMediaElement extends HTMLElement {
 		From partial interface in remote-playback.idl
 	**/
 	var disableRemotePlayback : Bool;
-	function addTextTrack(kind:TextTrackKind, ?label:String, ?language:String):TextTrack;
+	function addTextTrack(kind:TextTrackKind, ?label:String = "", ?language:String = ""):TextTrack;
 	function canPlayType(type:String):CanPlayTypeResult;
 	/**
 		From partial interface in mediacapture-fromelement.idl

@@ -35,7 +35,7 @@ extern class SVGTransform {
 	var type(default, null) : Int;
 	var matrix(default, null) : js.geometry.DOMMatrix;
 	var angle(default, null) : Float;
-	function setMatrix(?matrix:js.geometry.DOMMatrix2DInit):Void;
+	function setMatrix(?matrix:js.geometry.DOMMatrix2DInit = {  }):Void;
 	function setRotate(angle:Float, cx:Float, cy:Float):Void;
 	function setScale(sx:Float, sy:Float):Void;
 	function setSkewX(angle:Float):Void;

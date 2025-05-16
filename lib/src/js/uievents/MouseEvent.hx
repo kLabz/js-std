@@ -70,10 +70,10 @@ extern class MouseEvent extends UIEvent {
 		From partial interface in pointerlock.idl
 	**/
 	var movementY(default, null) : Float;
-	function new(type:String, ?eventInitDict:MouseEventInit):Void;
+	function new(type:String, ?eventInitDict:MouseEventInit = {  }):Void;
 	function getModifierState(keyArg:String):Bool;
 	/**
 		From partial interface in uievents.idl
 	**/
-	function initMouseEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:Null<js.html.Window>, ?detailArg:Int, ?screenXArg:Int, ?screenYArg:Int, ?clientXArg:Int, ?clientYArg:Int, ?ctrlKeyArg:Bool, ?altKeyArg:Bool, ?shiftKeyArg:Bool, ?metaKeyArg:Bool, ?buttonArg:Int, ?relatedTargetArg:Null<js.dom.EventTarget>):Void;
+	function initMouseEvent(typeArg:String, ?bubblesArg:Bool = false, ?cancelableArg:Bool = false, ?viewArg:Null<js.html.Window> = null, ?detailArg:Int = 0, ?screenXArg:Int = 0, ?screenYArg:Int = 0, ?clientXArg:Int = 0, ?clientYArg:Int = 0, ?ctrlKeyArg:Bool = false, ?altKeyArg:Bool = false, ?shiftKeyArg:Bool = false, ?metaKeyArg:Bool = false, ?buttonArg:Int = 0, ?relatedTargetArg:Null<js.dom.EventTarget> = null):Void;
 }

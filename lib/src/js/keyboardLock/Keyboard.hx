@@ -33,6 +33,6 @@ extern class Keyboard extends js.dom.EventTarget {
 		From partial interface in keyboard-map.idl
 	**/
 	function getLayoutMap():js.lib.Promise<js.keyboardMap.KeyboardLayoutMap>;
-	function lock(?keyCodes:Array<String>):js.lib.Promise<Void>;
+	function lock(?keyCodes:Array<String> = []):js.lib.Promise<Void>;
 	function unlock():Void;
 }

@@ -34,7 +34,7 @@ extern class PaymentResponse extends js.dom.EventTarget {
 	var payerEmail(default, null) : Null<String>;
 	var payerPhone(default, null) : Null<String>;
 	var onpayerdetailchange : js.html.EventHandler;
-	function complete(?result:PaymentComplete, ?details:PaymentCompleteDetails):js.lib.Promise<Void>;
-	function retry(?errorFields:PaymentValidationErrors):js.lib.Promise<Void>;
+	function complete(?result:PaymentComplete = "unknown", ?details:PaymentCompleteDetails = {  }):js.lib.Promise<Void>;
+	function retry(?errorFields:PaymentValidationErrors = {  }):js.lib.Promise<Void>;
 	function toJSON():{ };
 }

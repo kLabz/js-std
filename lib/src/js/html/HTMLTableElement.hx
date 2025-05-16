@@ -75,5 +75,5 @@ extern class HTMLTableElement extends HTMLElement {
 	function deleteRow(index:Int):Void;
 	function deleteTFoot():Void;
 	function deleteTHead():Void;
-	function insertRow(?index:Int):HTMLTableRowElement;
+	function insertRow(?index:Int = -1):HTMLTableRowElement;
 }

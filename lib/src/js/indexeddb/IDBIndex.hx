@@ -35,6 +35,6 @@ extern class IDBIndex {
 	function getAll(?query:Any, ?count:Int):IDBRequest;
 	function getAllKeys(?query:Any, ?count:Int):IDBRequest;
 	function getKey(query:Any):IDBRequest;
-	function openCursor(?query:Any, ?direction:IDBCursorDirection):IDBRequest;
-	function openKeyCursor(?query:Any, ?direction:IDBCursorDirection):IDBRequest;
+	function openCursor(?query:Any, ?direction:IDBCursorDirection = "next"):IDBRequest;
+	function openKeyCursor(?query:Any, ?direction:IDBCursorDirection = "next"):IDBRequest;
 }

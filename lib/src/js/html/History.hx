@@ -30,7 +30,7 @@ extern class History {
 	var state(default, null) : Any;
 	function back():Void;
 	function forward():Void;
-	function go(?delta:Int):Void;
-	function pushState(data:Any, unused:String, ?url:Null<String>):Void;
-	function replaceState(data:Any, unused:String, ?url:Null<String>):Void;
+	function go(?delta:Int = 0):Void;
+	function pushState(data:Any, unused:String, ?url:Null<String> = null):Void;
+	function replaceState(data:Any, unused:String, ?url:Null<String> = null):Void;
 }

@@ -28,9 +28,9 @@ extern class TrustedTypePolicyFactory {
 	var emptyHTML(default, null) : TrustedHTML;
 	var emptyScript(default, null) : TrustedScript;
 	var defaultPolicy(default, null) : Null<TrustedTypePolicy>;
-	function createPolicy(policyName:String, ?policyOptions:TrustedTypePolicyOptions):TrustedTypePolicy;
-	function getAttributeType(tagName:String, attribute:String, ?elementNs:Null<String>, ?attrNs:Null<String>):Null<String>;
-	function getPropertyType(tagName:String, property:String, ?elementNs:Null<String>):Null<String>;
+	function createPolicy(policyName:String, ?policyOptions:TrustedTypePolicyOptions = {  }):TrustedTypePolicy;
+	function getAttributeType(tagName:String, attribute:String, ?elementNs:Null<String> = "", ?attrNs:Null<String> = ""):Null<String>;
+	function getPropertyType(tagName:String, property:String, ?elementNs:Null<String> = ""):Null<String>;
 	function isHTML(value:Any):Bool;
 	function isScript(value:Any):Bool;
 	function isScriptURL(value:Any):Bool;

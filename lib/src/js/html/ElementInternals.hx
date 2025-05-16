@@ -35,5 +35,5 @@ extern class ElementInternals {
 	function checkValidity():Bool;
 	function reportValidity():Bool;
 	function setFormValue(value:Null<haxe.extern.EitherType<js.fileapi.File, haxe.extern.EitherType<String, js.xhr.FormData>>>, ?state:Null<haxe.extern.EitherType<js.fileapi.File, haxe.extern.EitherType<String, js.xhr.FormData>>>):Void;
-	function setValidity(?flags:ValidityStateFlags, ?message:String, ?anchor:HTMLElement):Void;
+	function setValidity(?flags:ValidityStateFlags = {  }, ?message:String, ?anchor:HTMLElement):Void;
 }

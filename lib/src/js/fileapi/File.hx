@@ -31,5 +31,5 @@ extern class File extends Blob {
 		From partial interface in entries-api.idl
 	**/
 	var webkitRelativePath(default, null) : String;
-	function new(fileBits:Array<BlobPart>, fileName:String, ?options:FilePropertyBag):Void;
+	function new(fileBits:Array<BlobPart>, fileName:String, ?options:FilePropertyBag = {  }):Void;
 }

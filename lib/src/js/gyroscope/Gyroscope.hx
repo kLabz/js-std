@@ -28,5 +28,5 @@ extern class Gyroscope extends js.genericSensor.Sensor {
 	var x(default, null) : Null<Float>;
 	var y(default, null) : Null<Float>;
 	var z(default, null) : Null<Float>;
-	function new(?sensorOptions:GyroscopeSensorOptions):Void;
+	function new(?sensorOptions:GyroscopeSensorOptions = {  }):Void;
 }

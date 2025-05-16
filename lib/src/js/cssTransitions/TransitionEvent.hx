@@ -28,5 +28,5 @@ extern class TransitionEvent extends js.dom.Event {
 	var propertyName(default, null) : CSSOMString;
 	var elapsedTime(default, null) : Float;
 	var pseudoElement(default, null) : CSSOMString;
-	function new(type:CSSOMString, ?transitionEventInitDict:TransitionEventInit):Void;
+	function new(type:CSSOMString, ?transitionEventInitDict:TransitionEventInit = {  }):Void;
 }

@@ -31,7 +31,7 @@ extern class ImageDecoder {
 	var tracks(default, null) : ImageTrackList;
 	function new(init:ImageDecoderInit):Void;
 	function close():Void;
-	function decode(?options:ImageDecodeOptions):js.lib.Promise<ImageDecodeResult>;
+	function decode(?options:ImageDecodeOptions = {  }):js.lib.Promise<ImageDecodeResult>;
 	function isTypeSupported(type:String):js.lib.Promise<Bool>;
 	function reset():Void;
 }

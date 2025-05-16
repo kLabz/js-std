@@ -31,6 +31,6 @@ extern class AudioBufferSourceNode extends AudioScheduledSourceNode {
 	var loop : Bool;
 	var loopStart : Float;
 	var loopEnd : Float;
-	function new(context:BaseAudioContext, ?options:AudioBufferSourceOptions):Void;
-	function start(?when:Float, ?offset:Float, ?duration:Float):Void;
+	function new(context:BaseAudioContext, ?options:AudioBufferSourceOptions = {  }):Void;
+	function start(?when:Float = 0, ?offset:Float, ?duration:Float):Void;
 }

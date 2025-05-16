@@ -39,7 +39,7 @@ extern class ShadowRoot extends DocumentFragment {
 	/**
 		From partial interface in html.idl
 	**/
-	function getHTML(?options:js.html.GetHTMLOptions):String;
+	function getHTML(?options:js.html.GetHTMLOptions = {  }):String;
 	/**
 		From partial interface in html.idl
 	**/

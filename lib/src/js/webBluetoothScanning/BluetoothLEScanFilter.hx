@@ -30,5 +30,5 @@ extern class BluetoothLEScanFilter {
 	var services(default, null) : Array<js.webBluetooth.UUID>;
 	var manufacturerData(default, null) : BluetoothManufacturerDataFilter;
 	var serviceData(default, null) : BluetoothServiceDataFilter;
-	function new(?init:js.webBluetooth.BluetoothLEScanFilterInit):Void;
+	function new(?init:js.webBluetooth.BluetoothLEScanFilterInit = {  }):Void;
 }

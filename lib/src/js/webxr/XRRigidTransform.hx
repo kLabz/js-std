@@ -29,5 +29,5 @@ extern class XRRigidTransform {
 	var orientation(default, null) : js.geometry.DOMPointReadOnly;
 	var matrix(default, null) : Float32Array;
 	var inverse(default, null) : XRRigidTransform;
-	function new(?position:js.geometry.DOMPointInit, ?orientation:js.geometry.DOMPointInit):Void;
+	function new(?position:js.geometry.DOMPointInit = {  }, ?orientation:js.geometry.DOMPointInit = {  }):Void;
 }

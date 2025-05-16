@@ -26,5 +26,5 @@ package js.handwritingRecognition;
 
 extern class HandwritingRecognizer {
 	function finish():Void;
-	function startDrawing(?hints:HandwritingHints):HandwritingDrawing;
+	function startDrawing(?hints:HandwritingHints = {  }):HandwritingDrawing;
 }

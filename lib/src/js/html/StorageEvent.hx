@@ -30,6 +30,6 @@ extern class StorageEvent extends js.dom.Event {
 	var newValue(default, null) : Null<String>;
 	var url(default, null) : String;
 	var storageArea(default, null) : Null<Storage>;
-	function new(type:String, ?eventInitDict:StorageEventInit):Void;
-	function initStorageEvent(type:String, ?bubbles:Bool, ?cancelable:Bool, ?key:Null<String>, ?oldValue:Null<String>, ?newValue:Null<String>, ?url:String, ?storageArea:Null<Storage>):Void;
+	function new(type:String, ?eventInitDict:StorageEventInit = {  }):Void;
+	function initStorageEvent(type:String, ?bubbles:Bool = false, ?cancelable:Bool = false, ?key:Null<String> = null, ?oldValue:Null<String> = null, ?newValue:Null<String> = null, ?url:String = "", ?storageArea:Null<Storage> = null):Void;
 }

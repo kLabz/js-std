@@ -26,5 +26,5 @@ package js.eyedropperApi;
 
 extern class EyeDropper {
 	function new():Void;
-	function open(?options:ColorSelectionOptions):js.lib.Promise<ColorSelectionResult>;
+	function open(?options:ColorSelectionOptions = {  }):js.lib.Promise<ColorSelectionResult>;
 }

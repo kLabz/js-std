@@ -29,5 +29,5 @@ extern class CSSOKLab extends CSSColorValue {
 	var a : CSSColorNumber;
 	var b : CSSColorNumber;
 	var alpha : CSSColorPercent;
-	function new(l:CSSColorPercent, a:CSSColorNumber, b:CSSColorNumber, ?alpha:CSSColorPercent):Void;
+	function new(l:CSSColorPercent, a:CSSColorNumber, b:CSSColorNumber, ?alpha:CSSColorPercent = 1):Void;
 }

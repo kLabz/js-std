@@ -96,9 +96,9 @@ extern class HTMLInputElement extends HTMLElement {
 	function select():Void;
 	function setCustomValidity(error:String):Void;
 	overload function setRangeText(replacement:String):Void;
-	overload function setRangeText(replacement:String, start:Int, end:Int, ?selectionMode:SelectionMode):Void;
+	overload function setRangeText(replacement:String, start:Int, end:Int, ?selectionMode:SelectionMode = "preserve"):Void;
 	function setSelectionRange(start:Int, end:Int, ?direction:String):Void;
 	function showPicker():Void;
-	function stepDown(?n:Int):Void;
-	function stepUp(?n:Int):Void;
+	function stepDown(?n:Int = 1):Void;
+	function stepUp(?n:Int = 1):Void;
 }

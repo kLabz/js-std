@@ -50,7 +50,7 @@ extern class MediaStreamTrack extends js.dom.EventTarget {
 		From partial interface in webrtc-identity.idl
 	**/
 	var onisolationchange : js.html.EventHandler;
-	function applyConstraints(?constraints:MediaTrackConstraints):js.lib.Promise<Void>;
+	function applyConstraints(?constraints:MediaTrackConstraints = {  }):js.lib.Promise<Void>;
 	function clone():MediaStreamTrack;
 	function getCapabilities():MediaTrackCapabilities;
 	/**

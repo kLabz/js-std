@@ -46,7 +46,7 @@ extern class Notification extends js.dom.EventTarget {
 	var requireInteraction(default, null) : Bool;
 	var data(default, null) : Any;
 	var actions(default, null) : Array<NotificationAction>;
-	function new(title:String, ?options:NotificationOptions):Void;
+	function new(title:String, ?options:NotificationOptions = {  }):Void;
 	function close():Void;
 	function requestPermission(?deprecatedCallback:NotificationPermissionCallback):js.lib.Promise<NotificationPermission>;
 }

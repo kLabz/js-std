@@ -29,5 +29,5 @@ extern class ServiceWorker extends js.dom.EventTarget {
 	var state(default, null) : ServiceWorkerState;
 	var onstatechange : js.html.EventHandler;
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
-	overload function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;
+	overload function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions = {  }):Void;
 }

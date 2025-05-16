@@ -29,5 +29,5 @@ extern class CSSRGB extends CSSColorValue {
 	var g : CSSColorRGBComp;
 	var b : CSSColorRGBComp;
 	var alpha : CSSColorPercent;
-	function new(r:CSSColorRGBComp, g:CSSColorRGBComp, b:CSSColorRGBComp, ?alpha:CSSColorPercent):Void;
+	function new(r:CSSColorRGBComp, g:CSSColorRGBComp, b:CSSColorRGBComp, ?alpha:CSSColorPercent = 1):Void;
 }

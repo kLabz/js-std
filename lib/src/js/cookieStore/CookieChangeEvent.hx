@@ -27,5 +27,5 @@ package js.cookieStore;
 extern class CookieChangeEvent extends js.dom.Event {
 	var changed(default, null) : Array<CookieListItem>;
 	var deleted(default, null) : Array<CookieListItem>;
-	function new(type:String, ?eventInitDict:CookieChangeEventInit):Void;
+	function new(type:String, ?eventInitDict:CookieChangeEventInit = {  }):Void;
 }

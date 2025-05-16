@@ -27,5 +27,5 @@ package js.documentPictureInPicture;
 extern class DocumentPictureInPicture extends js.dom.EventTarget {
 	var window(default, null) : js.html.Window;
 	var onenter : js.html.EventHandler;
-	function requestWindow(?options:DocumentPictureInPictureOptions):js.lib.Promise<js.html.Window>;
+	function requestWindow(?options:DocumentPictureInPictureOptions = {  }):js.lib.Promise<js.html.Window>;
 }

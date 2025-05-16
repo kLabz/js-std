@@ -55,6 +55,6 @@ extern class HTMLTextAreaElement extends HTMLElement {
 	function select():Void;
 	function setCustomValidity(error:String):Void;
 	overload function setRangeText(replacement:String):Void;
-	overload function setRangeText(replacement:String, start:Int, end:Int, ?selectionMode:SelectionMode):Void;
+	overload function setRangeText(replacement:String, start:Int, end:Int, ?selectionMode:SelectionMode = "preserve"):Void;
 	function setSelectionRange(start:Int, end:Int, ?direction:String):Void;
 }

@@ -33,9 +33,9 @@ extern class Summarizer {
 	var expectedContextLanguages(default, null) : Null<Array<String>>;
 	var outputLanguage(default, null) : Null<String>;
 	var inputQuota(default, null) : Float;
-	function availability(?options:SummarizerCreateCoreOptions):js.lib.Promise<Availability>;
-	function create(?options:SummarizerCreateOptions):js.lib.Promise<Summarizer>;
-	function measureInputUsage(input:String, ?options:SummarizerSummarizeOptions):js.lib.Promise<Float>;
-	function summarize(input:String, ?options:SummarizerSummarizeOptions):js.lib.Promise<String>;
-	function summarizeStreaming(input:String, ?options:SummarizerSummarizeOptions):js.streams.ReadableStream;
+	function availability(?options:SummarizerCreateCoreOptions = {  }):js.lib.Promise<Availability>;
+	function create(?options:SummarizerCreateOptions = {  }):js.lib.Promise<Summarizer>;
+	function measureInputUsage(input:String, ?options:SummarizerSummarizeOptions = {  }):js.lib.Promise<Float>;
+	function summarize(input:String, ?options:SummarizerSummarizeOptions = {  }):js.lib.Promise<String>;
+	function summarizeStreaming(input:String, ?options:SummarizerSummarizeOptions = {  }):js.streams.ReadableStream;
 }

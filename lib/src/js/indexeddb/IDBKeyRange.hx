@@ -29,9 +29,9 @@ extern class IDBKeyRange {
 	var upper(default, null) : Any;
 	var lowerOpen(default, null) : Bool;
 	var upperOpen(default, null) : Bool;
-	function bound(lower:Any, upper:Any, ?lowerOpen:Bool, ?upperOpen:Bool):IDBKeyRange;
+	function bound(lower:Any, upper:Any, ?lowerOpen:Bool = false, ?upperOpen:Bool = false):IDBKeyRange;
 	function includes(key:Any):Bool;
-	function lowerBound(lower:Any, ?open:Bool):IDBKeyRange;
+	function lowerBound(lower:Any, ?open:Bool = false):IDBKeyRange;
 	function only(value:Any):IDBKeyRange;
-	function upperBound(upper:Any, ?open:Bool):IDBKeyRange;
+	function upperBound(upper:Any, ?open:Bool = false):IDBKeyRange;
 }

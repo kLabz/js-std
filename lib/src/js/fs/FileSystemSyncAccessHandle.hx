@@ -28,7 +28,7 @@ extern class FileSystemSyncAccessHandle {
 	function close():Void;
 	function flush():Void;
 	function getSize():Float;
-	function read(buffer:js.webidl.AllowSharedBufferSource, ?options:FileSystemReadWriteOptions):Float;
+	function read(buffer:js.webidl.AllowSharedBufferSource, ?options:FileSystemReadWriteOptions = {  }):Float;
 	function truncate(newSize:Float):Void;
-	function write(buffer:js.webidl.AllowSharedBufferSource, ?options:FileSystemReadWriteOptions):Float;
+	function write(buffer:js.webidl.AllowSharedBufferSource, ?options:FileSystemReadWriteOptions = {  }):Float;
 }

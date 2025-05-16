@@ -34,11 +34,11 @@ extern class Navigation extends js.dom.EventTarget {
 	var onnavigatesuccess : EventHandler;
 	var onnavigateerror : EventHandler;
 	var oncurrententrychange : EventHandler;
-	function back(?options:NavigationOptions):NavigationResult;
+	function back(?options:NavigationOptions = {  }):NavigationResult;
 	function entries():Array<NavigationHistoryEntry>;
-	function forward(?options:NavigationOptions):NavigationResult;
-	function navigate(url:String, ?options:NavigationNavigateOptions):NavigationResult;
-	function reload(?options:NavigationReloadOptions):NavigationResult;
-	function traverseTo(key:String, ?options:NavigationOptions):NavigationResult;
+	function forward(?options:NavigationOptions = {  }):NavigationResult;
+	function navigate(url:String, ?options:NavigationNavigateOptions = {  }):NavigationResult;
+	function reload(?options:NavigationReloadOptions = {  }):NavigationResult;
+	function traverseTo(key:String, ?options:NavigationOptions = {  }):NavigationResult;
 	function updateCurrentEntry(options:NavigationUpdateCurrentEntryOptions):Void;
 }

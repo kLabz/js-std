@@ -33,7 +33,7 @@ extern class DOMRectReadOnly {
 	var right(default, null) : Float;
 	var bottom(default, null) : Float;
 	var left(default, null) : Float;
-	function new(?x:Float, ?y:Float, ?width:Float, ?height:Float):Void;
-	function fromRect(?other:DOMRectInit):DOMRectReadOnly;
+	function new(?x:Float = 0, ?y:Float = 0, ?width:Float = 0, ?height:Float = 0):Void;
+	function fromRect(?other:DOMRectInit = {  }):DOMRectReadOnly;
 	function toJSON():{ };
 }

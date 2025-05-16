@@ -25,5 +25,5 @@
 package js.dom;
 
 extern class XPathExpression {
-	function evaluate(contextNode:Node, ?type:Int, ?result:Null<XPathResult>):XPathResult;
+	function evaluate(contextNode:Node, ?type:Int = 0, ?result:Null<XPathResult> = null):XPathResult;
 }

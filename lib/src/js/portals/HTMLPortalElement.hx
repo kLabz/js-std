@@ -30,6 +30,6 @@ extern class HTMLPortalElement extends js.html.HTMLElement {
 	var onmessage : js.html.EventHandler;
 	var onmessageerror : js.html.EventHandler;
 	function new():Void;
-	function activate(?options:PortalActivateOptions):js.lib.Promise<Void>;
-	function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;
+	function activate(?options:PortalActivateOptions = {  }):js.lib.Promise<Void>;
+	function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions = {  }):Void;
 }

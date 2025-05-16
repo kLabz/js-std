@@ -31,17 +31,17 @@ extern class CSSStyleSheet extends StyleSheet {
 		From partial interface in cssom.idl
 	**/
 	var rules(default, null) : CSSRuleList;
-	function new(?options:CSSStyleSheetInit):Void;
+	function new(?options:CSSStyleSheetInit = {  }):Void;
 	/**
 		From partial interface in cssom.idl
 	**/
-	function addRule(?selector:String, ?style:String, ?index:Int):Int;
+	function addRule(?selector:String = "undefined", ?style:String = "undefined", ?index:Int):Int;
 	function deleteRule(index:Int):Void;
-	function insertRule(rule:CSSOMString, ?index:Int):Int;
+	function insertRule(rule:CSSOMString, ?index:Int = 0):Int;
 	/**
 		From partial interface in cssom.idl
 	**/
-	function removeRule(?index:Int):Void;
+	function removeRule(?index:Int = 0):Void;
 	function replace(text:String):js.lib.Promise<CSSStyleSheet>;
 	function replaceSync(text:String):Void;
 }

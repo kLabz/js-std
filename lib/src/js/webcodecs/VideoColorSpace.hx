@@ -29,6 +29,6 @@ extern class VideoColorSpace {
 	var transfer(default, null) : Null<VideoTransferCharacteristics>;
 	var matrix(default, null) : Null<VideoMatrixCoefficients>;
 	var fullRange(default, null) : Null<Bool>;
-	function new(?init:VideoColorSpaceInit):Void;
+	function new(?init:VideoColorSpaceInit = {  }):Void;
 	function toJSON():VideoColorSpaceInit;
 }

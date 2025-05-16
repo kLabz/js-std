@@ -31,8 +31,8 @@ extern class AudioNode extends js.dom.EventTarget {
 	var channelCount : Int;
 	var channelCountMode : ChannelCountMode;
 	var channelInterpretation : ChannelInterpretation;
-	overload function connect(destinationNode:AudioNode, ?output:Int, ?input:Int):AudioNode;
-	overload function connect(destinationParam:AudioParam, ?output:Int):Void;
+	overload function connect(destinationNode:AudioNode, ?output:Int = 0, ?input:Int = 0):AudioNode;
+	overload function connect(destinationParam:AudioParam, ?output:Int = 0):Void;
 	overload function disconnect():Void;
 	overload function disconnect(output:Int):Void;
 	overload function disconnect(destinationNode:AudioNode):Void;

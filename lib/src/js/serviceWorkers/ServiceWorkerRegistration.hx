@@ -41,13 +41,13 @@ extern class ServiceWorkerRegistration extends js.dom.EventTarget {
 	**/
 	var sync(default, null) : js.backgroundSync.SyncManager;
 	/**
-		From partial interface in cookie-store.idl
-	**/
-	var cookies(default, null) : js.cookieStore.CookieStoreManager;
-	/**
 		From partial interface in content-index.idl
 	**/
 	var index(default, null) : js.contentIndex.ContentIndex;
+	/**
+		From partial interface in cookie-store.idl
+	**/
+	var cookies(default, null) : js.cookieStore.CookieStoreManager;
 	/**
 		From partial interface in payment-handler.idl
 	**/
@@ -63,11 +63,11 @@ extern class ServiceWorkerRegistration extends js.dom.EventTarget {
 	/**
 		From partial interface in notifications.idl
 	**/
-	function getNotifications(?filter:js.notifications.GetNotificationOptions):js.lib.Promise<Array<js.notifications.Notification>>;
+	function getNotifications(?filter:js.notifications.GetNotificationOptions = {  }):js.lib.Promise<Array<js.notifications.Notification>>;
 	/**
 		From partial interface in notifications.idl
 	**/
-	function showNotification(title:String, ?options:js.notifications.NotificationOptions):js.lib.Promise<Void>;
+	function showNotification(title:String, ?options:js.notifications.NotificationOptions = {  }):js.lib.Promise<Void>;
 	function unregister():js.lib.Promise<Bool>;
 	function update():js.lib.Promise<ServiceWorkerRegistration>;
 }

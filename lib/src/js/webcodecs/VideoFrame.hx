@@ -38,10 +38,10 @@ extern class VideoFrame {
 	var timestamp(default, null) : Float;
 	var colorSpace(default, null) : VideoColorSpace;
 	overload function new(data:js.webidl.AllowSharedBufferSource, init:VideoFrameBufferInit):Void;
-	overload function new(image:js.html.CanvasImageSource, ?init:VideoFrameInit):Void;
-	function allocationSize(?options:VideoFrameCopyToOptions):Int;
+	overload function new(image:js.html.CanvasImageSource, ?init:VideoFrameInit = {  }):Void;
+	function allocationSize(?options:VideoFrameCopyToOptions = {  }):Int;
 	function clone():VideoFrame;
 	function close():Void;
-	function copyTo(destination:js.webidl.AllowSharedBufferSource, ?options:VideoFrameCopyToOptions):js.lib.Promise<Array<PlaneLayout>>;
+	function copyTo(destination:js.webidl.AllowSharedBufferSource, ?options:VideoFrameCopyToOptions = {  }):js.lib.Promise<Array<PlaneLayout>>;
 	function metadata():VideoFrameMetadata;
 }

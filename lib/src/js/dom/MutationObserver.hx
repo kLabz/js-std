@@ -27,6 +27,6 @@ package js.dom;
 extern class MutationObserver {
 	function new(callback:MutationCallback):Void;
 	function disconnect():Void;
-	function observe(target:Node, ?options:MutationObserverInit):Void;
+	function observe(target:Node, ?options:MutationObserverInit = {  }):Void;
 	function takeRecords():Array<MutationRecord>;
 }

@@ -25,7 +25,7 @@
 package js.webgpu;
 
 extern class GPUComputePassEncoder {
-	function dispatchWorkgroups(workgroupCountX:GPUSize32, ?workgroupCountY:GPUSize32, ?workgroupCountZ:GPUSize32):Void;
+	function dispatchWorkgroups(workgroupCountX:GPUSize32, ?workgroupCountY:GPUSize32 = 1, ?workgroupCountZ:GPUSize32 = 1):Void;
 	function dispatchWorkgroupsIndirect(indirectBuffer:GPUBuffer, indirectOffset:GPUSize64):Void;
 	function end():Void;
 	function setPipeline(pipeline:GPUComputePipeline):Void;

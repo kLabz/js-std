@@ -28,5 +28,5 @@ extern class Serial extends js.dom.EventTarget {
 	var onconnect : js.html.EventHandler;
 	var ondisconnect : js.html.EventHandler;
 	function getPorts():js.lib.Promise<Array<SerialPort>>;
-	function requestPort(?options:SerialPortRequestOptions):js.lib.Promise<SerialPort>;
+	function requestPort(?options:SerialPortRequestOptions = {  }):js.lib.Promise<SerialPort>;
 }

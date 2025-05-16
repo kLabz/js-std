@@ -25,8 +25,8 @@
 package js.html;
 
 extern class Worker extends js.dom.EventTarget {
-	function new(scriptURL:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>, ?options:WorkerOptions):Void;
+	function new(scriptURL:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>, ?options:WorkerOptions = {  }):Void;
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
-	overload function postMessage(message:Any, ?options:StructuredSerializeOptions):Void;
+	overload function postMessage(message:Any, ?options:StructuredSerializeOptions = {  }):Void;
 	function terminate():Void;
 }

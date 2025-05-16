@@ -30,7 +30,7 @@ extern class Translator {
 	var inputQuota(default, null) : Float;
 	function availability(options:TranslatorCreateCoreOptions):js.lib.Promise<js.writingAssistanceApis.Availability>;
 	function create(options:TranslatorCreateOptions):js.lib.Promise<Translator>;
-	function measureInputUsage(input:String, ?options:TranslatorTranslateOptions):js.lib.Promise<Float>;
-	function translate(input:String, ?options:TranslatorTranslateOptions):js.lib.Promise<String>;
-	function translateStreaming(input:String, ?options:TranslatorTranslateOptions):js.streams.ReadableStream;
+	function measureInputUsage(input:String, ?options:TranslatorTranslateOptions = {  }):js.lib.Promise<Float>;
+	function translate(input:String, ?options:TranslatorTranslateOptions = {  }):js.lib.Promise<String>;
+	function translateStreaming(input:String, ?options:TranslatorTranslateOptions = {  }):js.streams.ReadableStream;
 }

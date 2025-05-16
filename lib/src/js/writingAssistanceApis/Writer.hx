@@ -33,9 +33,9 @@ extern class Writer {
 	var expectedContextLanguages(default, null) : Null<Array<String>>;
 	var outputLanguage(default, null) : Null<String>;
 	var inputQuota(default, null) : Float;
-	function availability(?options:WriterCreateCoreOptions):js.lib.Promise<Availability>;
-	function create(?options:WriterCreateOptions):js.lib.Promise<Writer>;
-	function measureInputUsage(input:String, ?options:WriterWriteOptions):js.lib.Promise<Float>;
-	function write(input:String, ?options:WriterWriteOptions):js.lib.Promise<String>;
-	function writeStreaming(input:String, ?options:WriterWriteOptions):js.streams.ReadableStream;
+	function availability(?options:WriterCreateCoreOptions = {  }):js.lib.Promise<Availability>;
+	function create(?options:WriterCreateOptions = {  }):js.lib.Promise<Writer>;
+	function measureInputUsage(input:String, ?options:WriterWriteOptions = {  }):js.lib.Promise<Float>;
+	function write(input:String, ?options:WriterWriteOptions = {  }):js.lib.Promise<String>;
+	function writeStreaming(input:String, ?options:WriterWriteOptions = {  }):js.streams.ReadableStream;
 }

@@ -46,10 +46,10 @@ extern class KeyboardEvent extends UIEvent {
 		From partial interface in uievents.idl
 	**/
 	var keyCode(default, null) : Int;
-	function new(type:String, ?eventInitDict:KeyboardEventInit):Void;
+	function new(type:String, ?eventInitDict:KeyboardEventInit = {  }):Void;
 	function getModifierState(keyArg:String):Bool;
 	/**
 		From partial interface in uievents.idl
 	**/
-	function initKeyboardEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:Null<js.html.Window>, ?keyArg:String, ?locationArg:Int, ?ctrlKey:Bool, ?altKey:Bool, ?shiftKey:Bool, ?metaKey:Bool):Void;
+	function initKeyboardEvent(typeArg:String, ?bubblesArg:Bool = false, ?cancelableArg:Bool = false, ?viewArg:Null<js.html.Window> = null, ?keyArg:String = "", ?locationArg:Int = 0, ?ctrlKey:Bool = false, ?altKey:Bool = false, ?shiftKey:Bool = false, ?metaKey:Bool = false):Void;
 }

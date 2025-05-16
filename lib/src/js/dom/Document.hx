@@ -203,13 +203,13 @@ extern class Document extends Node {
 	**/
 	var wasDiscarded(default, null) : Bool;
 	/**
-		From partial interface in picture-in-picture.idl
-	**/
-	var pictureInPictureEnabled(default, null) : Bool;
-	/**
 		From partial interface in permissions-policy.idl
 	**/
 	var permissionsPolicy(default, null) : js.permissionsPolicy.PermissionsPolicy;
+	/**
+		From partial interface in picture-in-picture.idl
+	**/
+	var pictureInPictureEnabled(default, null) : Bool;
 	/**
 		From partial interface in pointerlock.idl
 	**/
@@ -243,7 +243,7 @@ extern class Document extends Node {
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	function caretPositionFromPoint(x:Float, y:Float, ?options:js.cssomView.CaretPositionFromPointOptions):Null<js.cssomView.CaretPosition>;
+	function caretPositionFromPoint(x:Float, y:Float, ?options:js.cssomView.CaretPositionFromPointOptions = {  }):Null<js.cssomView.CaretPosition>;
 	/**
 		From partial interface in html.idl
 	**/
@@ -257,14 +257,14 @@ extern class Document extends Node {
 	function createCDATASection(data:String):CDATASection;
 	function createComment(data:String):Comment;
 	function createDocumentFragment():DocumentFragment;
-	function createElement(localName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
-	function createElementNS(namespace:Null<String>, qualifiedName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
+	function createElement(localName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions> = {  }):Element;
+	function createElementNS(namespace:Null<String>, qualifiedName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions> = {  }):Element;
 	function createEvent(interface:String):Event;
-	function createNodeIterator(root:Node, ?whatToShow:Int, ?filter:Null<NodeFilter>):NodeIterator;
+	function createNodeIterator(root:Node, ?whatToShow:Int = 0xFFFFFFFF, ?filter:Null<NodeFilter> = null):NodeIterator;
 	function createProcessingInstruction(target:String, data:String):ProcessingInstruction;
 	function createRange():Range;
 	function createTextNode(data:String):Text;
-	function createTreeWalker(root:Node, ?whatToShow:Int, ?filter:Null<NodeFilter>):TreeWalker;
+	function createTreeWalker(root:Node, ?whatToShow:Int = 0xFFFFFFFF, ?filter:Null<NodeFilter> = null):TreeWalker;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -276,7 +276,7 @@ extern class Document extends Node {
 	/**
 		From partial interface in html.idl
 	**/
-	function execCommand(commandId:String, ?showUI:Bool, ?value:String):Bool;
+	function execCommand(commandId:String, ?showUI:Bool = false, ?value:String = ""):Bool;
 	/**
 		From partial interface in fullscreen.idl
 	**/
@@ -320,7 +320,7 @@ extern class Document extends Node {
 		From partial interface in saa-non-cookie-storage.idl
 	**/
 	function hasUnpartitionedCookieAccess():js.lib.Promise<Bool>;
-	function importNode(node:Node, ?options:haxe.extern.EitherType<Bool, ImportNodeOptions>):Node;
+	function importNode(node:Node, ?options:haxe.extern.EitherType<Bool, ImportNodeOptions> = false):Node;
 	/**
 		From partial interface in font-metrics-api.idl
 	**/
@@ -376,7 +376,7 @@ extern class Document extends Node {
 	/**
 		From partial interface in css-view-transitions-2.idl
 	**/
-	function startViewTransition(?callbackOptions:haxe.extern.EitherType<js.cssViewTransitions.ViewTransitionUpdateCallback, js.cssViewTransitions2.StartViewTransitionOptions>):js.cssViewTransitions.ViewTransition;
+	function startViewTransition(?callbackOptions:haxe.extern.EitherType<js.cssViewTransitions.ViewTransitionUpdateCallback, js.cssViewTransitions2.StartViewTransitionOptions> = {  }):js.cssViewTransitions.ViewTransition;
 	/**
 		From partial interface in html.idl
 	**/

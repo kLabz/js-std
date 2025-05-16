@@ -60,30 +60,28 @@ class Main {
 			};
 		}
 
-		function resolveTypePath(currentPack:Array<String>, t:String):TypePath {
+		function resolveType(currentPack:Array<String>, t:String):ComplexType {
+			if (t == "undefined") return macro :Void; // TODO: not allowed everywhere..
+
 			// TODO: see https://webidl.spec.whatwg.org/#idl-types
 			// TODO: might be interesting to have abstracts for some of those as a documentation
 			return switch (t) {
-				case "any": toTPath(macro :Any);
-				case "boolean": toTPath(macro :Bool);
-				case "DOMString" | "USVString": toTPath(macro :String);
-				case "ByteString": toTPath(macro :String); // ?
-				case "byte" | "octet" | "short" | "long": toTPath(macro :Int);
-				case "unsigned short": toTPath(macro :Int);
-				case "unsigned long": toTPath(macro :Int);
-				case "long long": toTPath(macro :Float); // TODO: can haxe.Int64 be used here?
-				case "unsigned long long": toTPath(macro :Float); // TODO: can haxe.Int64 be used here?
-				case "float" | "double": toTPath(macro :Float);
-				case "unrestricted float" | "unrestricted double": toTPath(macro :Float);
+				case "any": macro :Any;
+				case "boolean": macro :Bool;
+				case "object": macro :{};
+				case "DOMString" | "USVString": macro :String;
+				case "ByteString": macro :String; // ?
+				case "byte" | "octet" | "short" | "long": macro :Int;
+				case "unsigned short": macro :Int;
+				case "unsigned long": macro :Int;
+				case "long long": macro :Float; // TODO: can haxe.Int64 be used here?
+				case "unsigned long long": macro :Float; // TODO: can haxe.Int64 be used here?
+				case "float" | "double": macro :Float;
+				case "unrestricted float" | "unrestricted double": macro :Float;
 				// TODO: other special types
 
-				case _: {pack: resolvePackage(currentPack, t), name: t};
+				case _: TPath({pack: resolvePackage(currentPack, t), name: t});
 			};
-		}
-
-		function resolveType(currentPack:Array<String>, t:String):ComplexType {
-			if (t == "undefined") return macro :Void; // TODO: not allowed everywhere..
-			return TPath(resolveTypePath(currentPack, t));
 		}
 
 		function convertType(currentPack:Array<String>, t:IDLTypeDescription) {
@@ -210,7 +208,7 @@ class Main {
 								isExtern: null,
 								kind: TDAlias(t.inheritance == null
 									? TAnonymous(fields)
-									: TExtend([resolveTypePath(pack, t.inheritance)], fields)
+									: TExtend([toTPath(resolveType(pack, t.inheritance))], fields)
 								),
 								fields: []
 							};
@@ -263,6 +261,8 @@ class Main {
 							var typeDoc = [];
 
 							var fields:Array<Field> = [];
+							var interfaces = [];
+
 							function handleMember<T:AbstractBase<T>>(m:T, ?fromPartial:{t:InterfaceType, file:FileHandler}) {
 								// TODO: proper doc handling
 								var doc = fromPartial.maybeApply(p -> 'From partial interface in ${p.file.filename}');
@@ -333,6 +333,18 @@ class Main {
 										trace('TODO attribute ${m.name} for ${t.name}');
 										typeDoc.push('TODO attribute ${m.name}');
 
+									case IDLOperationMemberType if (m.name.or("") == "" && m.special == "getter"):
+										var tkey = convertType(pack, m.arguments.pop().idlType);
+										var tvalue = convertType(pack, m.idlType);
+										switch (tkey) {
+											case TPath({pack: [], name: "Int"}):
+												interfaces.push(toTPath(macro :ArrayAccess<$tvalue>));
+											case TPath({pack: [], name: "String"}):
+												typeDoc.push('TODO ArrayAccess<> for tkey=String tvalue=${Std.string(tvalue)}');
+											case _:
+												typeDoc.push('TODO ArrayAccess<> for tkey=${Std.string(tkey)} tvalue=${Std.string(tvalue)}');
+										}
+
 									case IDLOperationMemberType:
 										if (m.name == "" || m.name == null) {
 											trace('WARNING Operation member name is ${m.name} (special = ${m.special})');
@@ -388,8 +400,8 @@ class Main {
 								pos: pos,
 								isExtern: true,
 								kind: TDClass(
-									t.inheritance.maybeApply(t -> resolveTypePath(pack, t))
-									// TODO: interfaces (at least `implements ArrayAccess<T>`)
+									t.inheritance.maybeApply(t -> toTPath(resolveType(pack, t))),
+									interfaces.length == 0 ? null : interfaces
 								),
 								meta: [], // TODO: @:native etc.
 								fields: fields

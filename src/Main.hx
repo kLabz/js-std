@@ -49,11 +49,29 @@ class Main {
 			return ret;
 		}
 
+		function toTPath(ct:ComplexType):TypePath {
+			return switch (ct) {
+				case TPath(tp): tp;
+				case _: throw 'Unexpected ComplexType $ct';
+			};
+		}
+
 		function resolveTypePath(t:String):TypePath {
 			// TODO: see https://webidl.spec.whatwg.org/#idl-types
+			// TODO: might be interesting to have abstracts for some of those as a documentation
 			return switch (t) {
-				case "boolean": {pack: [], name: "Bool"};
-				case "unsigned short": {pack: [], name: "Int"};
+				case "any": toTPath(macro :Any);
+				case "boolean": toTPath(macro :Bool);
+				case "DOMString" | "USVString": toTPath(macro :String);
+				case "ByteString": toTPath(macro :String); // ?
+				case "byte" | "octet" | "short" | "long": toTPath(macro :Int);
+				case "unsigned short": toTPath(macro :Int);
+				case "unsigned long": toTPath(macro :Int);
+				case "long long": toTPath(macro :Float); // TODO: can haxe.Int64 be used here?
+				case "unsigned long long": toTPath(macro :Float); // TODO: can haxe.Int64 be used here?
+				case "float" | "double": toTPath(macro :Float);
+				case "unrestricted float" | "unrestricted double": toTPath(macro :Float);
+				// TODO: other special types
 
 				// TODO: ignore package if same as current (or is parent package)
 				case _: {pack: resolvePackage(t), name: t};

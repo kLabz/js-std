@@ -29,5 +29,6 @@ extern class SpeechSynthesisVoice {
 	var name(default, null) : String;
 	var lang(default, null) : String;
 	var localService(default, null) : Bool;
-	var default(default, null) : Bool;
+	@:native("default")
+	var default_(default, null) : Bool;
 }

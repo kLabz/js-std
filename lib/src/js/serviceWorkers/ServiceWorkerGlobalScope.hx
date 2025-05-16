@@ -34,10 +34,6 @@ extern class ServiceWorkerGlobalScope extends js.html.WorkerGlobalScope {
 	var onmessage : EventHandler;
 	var onmessageerror : EventHandler;
 	/**
-		From partial interface in background-sync.idl
-	**/
-	var onsync : EventHandler;
-	/**
 		From partial interface in background-fetch.idl
 	**/
 	var onbackgroundfetchsuccess : EventHandler;
@@ -53,6 +49,10 @@ extern class ServiceWorkerGlobalScope extends js.html.WorkerGlobalScope {
 		From partial interface in background-fetch.idl
 	**/
 	var onbackgroundfetchclick : EventHandler;
+	/**
+		From partial interface in background-sync.idl
+	**/
+	var onsync : EventHandler;
 	/**
 		From partial interface in content-index.idl
 	**/
@@ -74,6 +74,10 @@ extern class ServiceWorkerGlobalScope extends js.html.WorkerGlobalScope {
 	**/
 	var onnotificationclose : EventHandler;
 	/**
+		From partial interface in periodic-background-sync.idl
+	**/
+	var onperiodicsync : EventHandler;
+	/**
 		From partial interface in payment-handler.idl
 	**/
 	var oncanmakepayment : EventHandler;
@@ -81,10 +85,6 @@ extern class ServiceWorkerGlobalScope extends js.html.WorkerGlobalScope {
 		From partial interface in payment-handler.idl
 	**/
 	var onpaymentrequest : EventHandler;
-	/**
-		From partial interface in periodic-background-sync.idl
-	**/
-	var onperiodicsync : EventHandler;
 	/**
 		From partial interface in push-api.idl
 	**/

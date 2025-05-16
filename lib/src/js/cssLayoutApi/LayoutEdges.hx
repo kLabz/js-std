@@ -29,6 +29,7 @@ extern class LayoutEdges {
 	var inlineEnd(default, null) : Float;
 	var blockStart(default, null) : Float;
 	var blockEnd(default, null) : Float;
-	var inline(default, null) : Float;
+	@:native("inline")
+	var inline_(default, null) : Float;
 	var block(default, null) : Float;
 }

@@ -34,7 +34,8 @@ extern class SVGFECompositeElement extends js.svg.SVGElement {
 	static inline var SVG_FECOMPOSITE_OPERATOR_ARITHMETIC : Int = 6;
 	var in1(default, null) : js.svg.SVGAnimatedString;
 	var in2(default, null) : js.svg.SVGAnimatedString;
-	var operator(default, null) : js.svg.SVGAnimatedEnumeration;
+	@:native("operator")
+	var operator_(default, null) : js.svg.SVGAnimatedEnumeration;
 	var k1(default, null) : js.svg.SVGAnimatedNumber;
 	var k2(default, null) : js.svg.SVGAnimatedNumber;
 	var k3(default, null) : js.svg.SVGAnimatedNumber;

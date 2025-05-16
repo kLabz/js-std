@@ -74,13 +74,13 @@ extern class HTMLIFrameElement extends HTMLElement {
 	**/
 	var permissionsPolicy(default, null) : js.permissionsPolicy.PermissionsPolicy;
 	/**
-		From partial interface in turtledove.idl
-	**/
-	var adAuctionHeaders : Bool;
-	/**
 		From partial interface in trust-token-api.idl
 	**/
 	var privateToken : String;
+	/**
+		From partial interface in turtledove.idl
+	**/
+	var adAuctionHeaders : Bool;
 	function new():Void;
 	function getSVGDocument():js.dom.Document;
 }

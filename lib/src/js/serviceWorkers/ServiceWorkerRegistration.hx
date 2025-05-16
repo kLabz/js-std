@@ -33,13 +33,13 @@ extern class ServiceWorkerRegistration extends js.dom.EventTarget {
 	var updateViaCache(default, null) : ServiceWorkerUpdateViaCache;
 	var onupdatefound : EventHandler;
 	/**
-		From partial interface in background-sync.idl
-	**/
-	var sync(default, null) : js.backgroundSync.SyncManager;
-	/**
 		From partial interface in background-fetch.idl
 	**/
 	var backgroundFetch(default, null) : js.backgroundFetch.BackgroundFetchManager;
+	/**
+		From partial interface in background-sync.idl
+	**/
+	var sync(default, null) : js.backgroundSync.SyncManager;
 	/**
 		From partial interface in content-index.idl
 	**/
@@ -49,13 +49,13 @@ extern class ServiceWorkerRegistration extends js.dom.EventTarget {
 	**/
 	var cookies(default, null) : js.cookieStore.CookieStoreManager;
 	/**
-		From partial interface in payment-handler.idl
-	**/
-	var paymentManager(default, null) : js.paymentHandler.PaymentManager;
-	/**
 		From partial interface in periodic-background-sync.idl
 	**/
 	var periodicSync(default, null) : js.periodicBackgroundSync.PeriodicSyncManager;
+	/**
+		From partial interface in payment-handler.idl
+	**/
+	var paymentManager(default, null) : js.paymentHandler.PaymentManager;
 	/**
 		From partial interface in push-api.idl
 	**/

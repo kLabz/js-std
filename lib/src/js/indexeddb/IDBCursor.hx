@@ -31,8 +31,9 @@ extern class IDBCursor {
 	var primaryKey(default, null) : Any;
 	var request(default, null) : IDBRequest;
 	function advance(count:Int):Void;
-	function continue(?key:Any):Void;
 	function continuePrimaryKey(key:Any, primaryKey:Any):Void;
+	@:native("continue")
+	function continue_(?key:Any):Void;
 	function delete():IDBRequest;
 	function update(value:Any):IDBRequest;
 }

@@ -26,7 +26,8 @@ package js.observable;
 
 extern class Observable {
 	function new(callback:SubscribeCallback):Void;
-	function catch(callback:CatchCallback):Observable;
+	@:native("catch")
+	function catch_(callback:CatchCallback):Observable;
 	function drop(amount:Float):Observable;
 	function every(predicate:Predicate, ?options:SubscribeOptions):js.lib.Promise<Bool>;
 	function filter(predicate:Predicate):Observable;

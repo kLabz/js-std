@@ -29,7 +29,8 @@ extern class HTMLTrackElement extends HTMLElement {
 	var src : String;
 	var srclang : String;
 	var label : String;
-	var default : Bool;
+	@:native("default")
+	var default_ : Bool;
 	static inline var NONE : Int = 0;
 	static inline var LOADING : Int = 1;
 	static inline var LOADED : Int = 2;

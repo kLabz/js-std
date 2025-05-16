@@ -50,53 +50,53 @@ extern class Navigator {
 	**/
 	var geolocation(default, null) : js.geolocation.Geolocation;
 	/**
-		From partial interface in ink-enhancement.idl
+		From partial interface in html.idl
 	**/
-	var ink(default, null) : js.inkEnhancement.Ink;
+	var userActivation(default, null) : UserActivation;
 	/**
 		From partial interface in is-input-pending.idl
 	**/
 	var scheduling(default, null) : js.isInputPending.Scheduling;
 	/**
+		From partial interface in ink-enhancement.idl
+	**/
+	var ink(default, null) : js.inkEnhancement.Ink;
+	/**
 		From partial interface in keyboard-lock.idl
 	**/
 	var keyboard(default, null) : js.keyboardLock.Keyboard;
-	/**
-		From partial interface in html.idl
-	**/
-	var userActivation(default, null) : UserActivation;
-	/**
-		From partial interface in managed-configuration.idl
-	**/
-	var managed(default, null) : js.managedConfiguration.NavigatorManagedData;
 	/**
 		From partial interface in login-status.idl
 	**/
 	var login(default, null) : js.loginStatus.NavigatorLogin;
 	/**
+		From partial interface in managed-configuration.idl
+	**/
+	var managed(default, null) : js.managedConfiguration.NavigatorManagedData;
+	/**
 		From partial interface in media-capabilities.idl
 	**/
 	var mediaCapabilities(default, null) : js.mediaCapabilities.MediaCapabilities;
-	/**
-		From partial interface in mediaqueries-5.idl
-	**/
-	var preferences(default, null) : js.mediaqueries5.PreferenceManager;
 	/**
 		From partial interface in mediacapture-streams.idl
 	**/
 	var mediaDevices(default, null) : js.mediacaptureStreams.MediaDevices;
 	/**
+		From partial interface in mediaqueries-5.idl
+	**/
+	var preferences(default, null) : js.mediaqueries5.PreferenceManager;
+	/**
 		From partial interface in mediasession.idl
 	**/
 	var mediaSession(default, null) : js.mediasession.MediaSession;
 	/**
-		From partial interface in pointerevents.idl
-	**/
-	var maxTouchPoints(default, null) : Int;
-	/**
 		From partial interface in permissions.idl
 	**/
 	var permissions(default, null) : js.permissions.Permissions;
+	/**
+		From partial interface in pointerevents.idl
+	**/
+	var maxTouchPoints(default, null) : Int;
 	/**
 		From partial interface in ppa.idl
 	**/
@@ -110,13 +110,13 @@ extern class Navigator {
 	**/
 	var wakeLock(default, null) : js.screenWakeLock.WakeLock;
 	/**
-		From partial interface in serial.idl
-	**/
-	var serial(default, null) : js.serial.Serial;
-	/**
 		From partial interface in service-workers.idl
 	**/
 	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
+	/**
+		From partial interface in serial.idl
+	**/
+	var serial(default, null) : js.serial.Serial;
 	/**
 		From partial interface in turtledove.idl
 	**/

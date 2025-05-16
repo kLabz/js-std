@@ -34,13 +34,13 @@ extern class WorkerNavigator {
 	**/
 	var permissions(default, null) : js.permissions.Permissions;
 	/**
-		From partial interface in serial.idl
-	**/
-	var serial(default, null) : js.serial.Serial;
-	/**
 		From partial interface in service-workers.idl
 	**/
 	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
+	/**
+		From partial interface in serial.idl
+	**/
+	var serial(default, null) : js.serial.Serial;
 	/**
 		From partial interface in webhid.idl
 	**/

@@ -48,6 +48,14 @@ extern class XRSession extends js.dom.EventTarget {
 	**/
 	var persistentAnchors(default, null) : Array<String>;
 	/**
+		From partial interface in webxr-ar-module.idl
+	**/
+	var environmentBlendMode(default, null) : js.webxrArModule.XREnvironmentBlendMode;
+	/**
+		From partial interface in webxr-ar-module.idl
+	**/
+	var interactionMode(default, null) : js.webxrArModule.XRInteractionMode;
+	/**
 		From partial interface in webxr-depth-sensing.idl
 	**/
 	var depthUsage(default, null) : js.webxrDepthSensing.XRDepthUsage;
@@ -63,14 +71,6 @@ extern class XRSession extends js.dom.EventTarget {
 		From partial interface in webxr-depth-sensing.idl
 	**/
 	var depthActive(default, null) : Bool;
-	/**
-		From partial interface in webxr-ar-module.idl
-	**/
-	var environmentBlendMode(default, null) : js.webxrArModule.XREnvironmentBlendMode;
-	/**
-		From partial interface in webxr-ar-module.idl
-	**/
-	var interactionMode(default, null) : js.webxrArModule.XRInteractionMode;
 	/**
 		From partial interface in webxr-dom-overlays.idl
 	**/

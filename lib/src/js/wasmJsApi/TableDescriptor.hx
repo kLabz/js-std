@@ -25,7 +25,7 @@
 package js.wasmJsApi;
 
 typedef TableDescriptor = {
-	var element : js.wasmJsApi.TableKind;
+	var element : TableKind;
 	var initial : Int;
 	@:optional
 	var maximum : Int;

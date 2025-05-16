@@ -25,5 +25,5 @@
 package js.backgroundFetch;
 
 extern class BackgroundFetchEvent extends js.serviceWorkers.ExtendableEvent {
-	function new(type:String, init:js.backgroundFetch.BackgroundFetchEventInit):Void;
+	function new(type:String, init:BackgroundFetchEventInit):Void;
 }

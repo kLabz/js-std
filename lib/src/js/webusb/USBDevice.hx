@@ -32,12 +32,12 @@ extern class USBDevice {
 	function claimInterface(interfaceNumber:Int):js.lib.Promise<Void>;
 	function releaseInterface(interfaceNumber:Int):js.lib.Promise<Void>;
 	function selectAlternateInterface(interfaceNumber:Int, alternateSetting:Int):js.lib.Promise<Void>;
-	function controlTransferIn(setup:js.webusb.USBControlTransferParameters, length:Int):js.lib.Promise<js.webusb.USBInTransferResult>;
-	function controlTransferOut(setup:js.webusb.USBControlTransferParameters, ?data:BufferSource):js.lib.Promise<js.webusb.USBOutTransferResult>;
-	function clearHalt(direction:js.webusb.USBDirection, endpointNumber:Int):js.lib.Promise<Void>;
-	function transferIn(endpointNumber:Int, length:Int):js.lib.Promise<js.webusb.USBInTransferResult>;
-	function transferOut(endpointNumber:Int, data:BufferSource):js.lib.Promise<js.webusb.USBOutTransferResult>;
-	function isochronousTransferIn(endpointNumber:Int, packetLengths:Array<Int>):js.lib.Promise<js.webusb.USBIsochronousInTransferResult>;
-	function isochronousTransferOut(endpointNumber:Int, data:BufferSource, packetLengths:Array<Int>):js.lib.Promise<js.webusb.USBIsochronousOutTransferResult>;
+	function controlTransferIn(setup:USBControlTransferParameters, length:Int):js.lib.Promise<USBInTransferResult>;
+	function controlTransferOut(setup:USBControlTransferParameters, ?data:BufferSource):js.lib.Promise<USBOutTransferResult>;
+	function clearHalt(direction:USBDirection, endpointNumber:Int):js.lib.Promise<Void>;
+	function transferIn(endpointNumber:Int, length:Int):js.lib.Promise<USBInTransferResult>;
+	function transferOut(endpointNumber:Int, data:BufferSource):js.lib.Promise<USBOutTransferResult>;
+	function isochronousTransferIn(endpointNumber:Int, packetLengths:Array<Int>):js.lib.Promise<USBIsochronousInTransferResult>;
+	function isochronousTransferOut(endpointNumber:Int, data:BufferSource, packetLengths:Array<Int>):js.lib.Promise<USBIsochronousOutTransferResult>;
 	function reset():js.lib.Promise<Void>;
 }

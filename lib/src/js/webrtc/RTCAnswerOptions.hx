@@ -24,5 +24,5 @@
 
 package js.webrtc;
 
-typedef RTCAnswerOptions = js.webrtc.RTCOfferAnswerOptions & {
+typedef RTCAnswerOptions = RTCOfferAnswerOptions & {
 };

@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLObjectElement extends js.html.HTMLElement {
+extern class HTMLObjectElement extends HTMLElement {
 	function new():Void;
 	function getSVGDocument():js.dom.Document;
 	function checkValidity():Bool;

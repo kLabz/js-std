@@ -25,5 +25,5 @@
 package js.webrtcIdentity;
 
 extern class RTCIdentityProviderRegistrar {
-	function register(idp:js.webrtcIdentity.RTCIdentityProvider):Void;
+	function register(idp:RTCIdentityProvider):Void;
 }

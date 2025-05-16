@@ -24,6 +24,6 @@
 
 package js.dom;
 
-extern class ProcessingInstruction extends js.dom.CharacterData {
+extern class ProcessingInstruction extends CharacterData {
 
 }

@@ -25,5 +25,5 @@
 package js.cssMixins;
 
 extern class CSSFunctionRule extends js.cssom.CSSGroupingRule {
-	function getParameters():Array<js.cssMixins.FunctionParameter>;
+	function getParameters():Array<FunctionParameter>;
 }

@@ -25,5 +25,5 @@
 package js.webhid;
 
 extern class HIDConnectionEvent extends js.dom.Event {
-	function new(type:String, eventInitDict:js.webhid.HIDConnectionEventInit):Void;
+	function new(type:String, eventInitDict:HIDConnectionEventInit):Void;
 }

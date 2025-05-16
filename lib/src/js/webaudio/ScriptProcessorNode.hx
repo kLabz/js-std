@@ -24,6 +24,6 @@
 
 package js.webaudio;
 
-extern class ScriptProcessorNode extends js.webaudio.AudioNode {
+extern class ScriptProcessorNode extends AudioNode {
 
 }

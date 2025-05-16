@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLButtonElement extends js.html.HTMLElement {
+extern class HTMLButtonElement extends HTMLElement {
 	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;

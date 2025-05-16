@@ -25,7 +25,7 @@
 package js.permissions;
 
 extern class Permissions {
-	function query(permissionDesc:object):js.lib.Promise<js.permissions.PermissionStatus>;
-	function request(permissionDesc:object):js.lib.Promise<js.permissions.PermissionStatus>;
-	function revoke(permissionDesc:object):js.lib.Promise<js.permissions.PermissionStatus>;
+	function query(permissionDesc:object):js.lib.Promise<PermissionStatus>;
+	function revoke(permissionDesc:object):js.lib.Promise<PermissionStatus>;
+	function request(permissionDesc:object):js.lib.Promise<PermissionStatus>;
 }

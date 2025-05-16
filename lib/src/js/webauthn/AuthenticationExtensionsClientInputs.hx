@@ -48,7 +48,7 @@ typedef AuthenticationExtensionsClientInputs = {
 	@:optional
 	var credProps : Bool;
 	@:optional
-	var prf : js.webauthn.AuthenticationExtensionsPRFInputs;
+	var prf : AuthenticationExtensionsPRFInputs;
 	@:optional
-	var largeBlob : js.webauthn.AuthenticationExtensionsLargeBlobInputs;
+	var largeBlob : AuthenticationExtensionsLargeBlobInputs;
 };

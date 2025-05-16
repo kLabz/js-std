@@ -25,11 +25,11 @@
 package js.webcodecs;
 
 extern class VideoFrame {
-	function new(image:CanvasImageSource, ?init:js.webcodecs.VideoFrameInit):Void;
-	function new(data:AllowSharedBufferSource, init:js.webcodecs.VideoFrameBufferInit):Void;
-	function metadata():js.webcodecs.VideoFrameMetadata;
-	function allocationSize(?options:js.webcodecs.VideoFrameCopyToOptions):Int;
-	function copyTo(destination:AllowSharedBufferSource, ?options:js.webcodecs.VideoFrameCopyToOptions):js.lib.Promise<Array<js.webcodecs.PlaneLayout>>;
-	function clone():js.webcodecs.VideoFrame;
+	function new(image:CanvasImageSource, ?init:VideoFrameInit):Void;
+	function new(data:AllowSharedBufferSource, init:VideoFrameBufferInit):Void;
+	function metadata():VideoFrameMetadata;
+	function allocationSize(?options:VideoFrameCopyToOptions):Int;
+	function copyTo(destination:AllowSharedBufferSource, ?options:VideoFrameCopyToOptions):js.lib.Promise<Array<PlaneLayout>>;
+	function clone():VideoFrame;
 	function close():Void;
 }

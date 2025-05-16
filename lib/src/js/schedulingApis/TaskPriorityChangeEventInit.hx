@@ -25,5 +25,5 @@
 package js.schedulingApis;
 
 typedef TaskPriorityChangeEventInit = js.dom.EventInit & {
-	var previousPriority : js.schedulingApis.TaskPriority;
+	var previousPriority : TaskPriority;
 };

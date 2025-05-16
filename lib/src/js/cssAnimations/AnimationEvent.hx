@@ -25,5 +25,5 @@
 package js.cssAnimations;
 
 extern class AnimationEvent extends js.dom.Event {
-	function new(type:CSSOMString, ?animationEventInitDict:js.cssAnimations.AnimationEventInit):Void;
+	function new(type:CSSOMString, ?animationEventInitDict:AnimationEventInit):Void;
 }

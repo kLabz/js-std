@@ -25,5 +25,5 @@
 package js.webNfc;
 
 typedef NDEFMessageInit = {
-	var records : Array<js.webNfc.NDEFRecordInit>;
+	var records : Array<NDEFRecordInit>;
 };

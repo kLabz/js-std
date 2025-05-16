@@ -25,5 +25,5 @@
 package js.mediastreamRecording;
 
 extern class BlobEvent extends js.dom.Event {
-	function new(type:String, eventInitDict:js.mediastreamRecording.BlobEventInit):Void;
+	function new(type:String, eventInitDict:BlobEventInit):Void;
 }

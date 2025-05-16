@@ -26,11 +26,11 @@ package js.orientationEvent;
 
 typedef DeviceMotionEventInit = js.dom.EventInit & {
 	@:optional
-	var acceleration : js.orientationEvent.DeviceMotionEventAccelerationInit;
+	var acceleration : DeviceMotionEventAccelerationInit;
 	@:optional
-	var accelerationIncludingGravity : js.orientationEvent.DeviceMotionEventAccelerationInit;
+	var accelerationIncludingGravity : DeviceMotionEventAccelerationInit;
 	@:optional
-	var rotationRate : js.orientationEvent.DeviceMotionEventRotationRateInit;
+	var rotationRate : DeviceMotionEventRotationRateInit;
 	@:optional
 	var interval : Float = 0;
 };

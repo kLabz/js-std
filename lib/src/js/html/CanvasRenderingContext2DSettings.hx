@@ -30,9 +30,9 @@ typedef CanvasRenderingContext2DSettings = {
 	@:optional
 	var desynchronized : Bool = false;
 	@:optional
-	var colorSpace : js.html.PredefinedColorSpace = "srgb";
+	var colorSpace : PredefinedColorSpace = "srgb";
 	@:optional
-	var colorType : js.html.CanvasColorType = "unorm8";
+	var colorType : CanvasColorType = "unorm8";
 	@:optional
 	var willReadFrequently : Bool = false;
 };

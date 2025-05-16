@@ -38,7 +38,7 @@ typedef CookieListItem = {
 	@:optional
 	var secure : Bool;
 	@:optional
-	var sameSite : js.cookieStore.CookieSameSite;
+	var sameSite : CookieSameSite;
 	@:optional
 	var partitioned : Bool;
 };

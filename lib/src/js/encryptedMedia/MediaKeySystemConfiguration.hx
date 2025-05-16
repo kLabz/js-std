@@ -30,13 +30,13 @@ typedef MediaKeySystemConfiguration = {
 	@:optional
 	var initDataTypes : Array<String> = [];
 	@:optional
-	var audioCapabilities : Array<js.encryptedMedia.MediaKeySystemMediaCapability> = [];
+	var audioCapabilities : Array<MediaKeySystemMediaCapability> = [];
 	@:optional
-	var videoCapabilities : Array<js.encryptedMedia.MediaKeySystemMediaCapability> = [];
+	var videoCapabilities : Array<MediaKeySystemMediaCapability> = [];
 	@:optional
-	var distinctiveIdentifier : js.encryptedMedia.MediaKeysRequirement = "optional";
+	var distinctiveIdentifier : MediaKeysRequirement = "optional";
 	@:optional
-	var persistentState : js.encryptedMedia.MediaKeysRequirement = "optional";
+	var persistentState : MediaKeysRequirement = "optional";
 	@:optional
 	var sessionTypes : Array<String>;
 };

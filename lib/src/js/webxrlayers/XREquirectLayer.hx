@@ -24,6 +24,6 @@
 
 package js.webxrlayers;
 
-extern class XREquirectLayer extends js.webxrlayers.XRCompositionLayer {
+extern class XREquirectLayer extends XRCompositionLayer {
 
 }

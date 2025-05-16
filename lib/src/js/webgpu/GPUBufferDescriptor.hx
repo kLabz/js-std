@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-typedef GPUBufferDescriptor = js.webgpu.GPUObjectDescriptorBase & {
+typedef GPUBufferDescriptor = GPUObjectDescriptorBase & {
 	var size : GPUSize64;
 	var usage : GPUBufferUsageFlags;
 	@:optional

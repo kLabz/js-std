@@ -25,7 +25,7 @@
 package js.serviceWorkers;
 
 extern class ServiceWorkerRegistration extends js.dom.EventTarget {
-	function update():js.lib.Promise<js.serviceWorkers.ServiceWorkerRegistration>;
+	function update():js.lib.Promise<ServiceWorkerRegistration>;
 	function unregister():js.lib.Promise<Bool>;
 	function showNotification(title:String, ?options:js.notifications.NotificationOptions):js.lib.Promise<Void>;
 	function getNotifications(?filter:js.notifications.GetNotificationOptions):js.lib.Promise<Array<js.notifications.Notification>>;

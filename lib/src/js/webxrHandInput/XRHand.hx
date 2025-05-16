@@ -25,8 +25,8 @@
 package js.webxrHandInput;
 
 extern class XRHand {
-	function keys():Iterator<js.webxrHandInput.XRHandJoint>;
-	function values():Iterator<js.webxrHandInput.XRJointSpace>;
+	function keys():Iterator<XRHandJoint>;
+	function values():Iterator<XRJointSpace>;
 	function entries():Iterator<Array<Dynamic>>;
-	function get(key:js.webxrHandInput.XRHandJoint):js.webxrHandInput.XRJointSpace;
+	function get(key:XRHandJoint):XRJointSpace;
 }

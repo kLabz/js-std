@@ -26,7 +26,7 @@ package js.pushApi;
 
 typedef PushSubscriptionChangeEventInit = js.serviceWorkers.ExtendableEventInit & {
 	@:optional
-	var newSubscription : js.pushApi.PushSubscription = null;
+	var newSubscription : PushSubscription = null;
 	@:optional
-	var oldSubscription : js.pushApi.PushSubscription = null;
+	var oldSubscription : PushSubscription = null;
 };

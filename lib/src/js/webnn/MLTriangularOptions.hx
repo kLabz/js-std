@@ -24,7 +24,7 @@
 
 package js.webnn;
 
-typedef MLTriangularOptions = js.webnn.MLOperatorOptions & {
+typedef MLTriangularOptions = MLOperatorOptions & {
 	@:optional
 	var upper : Bool = true;
 	@:optional

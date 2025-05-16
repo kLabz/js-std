@@ -25,7 +25,7 @@
 package js.webgpu;
 
 typedef GPUVertexAttribute = {
-	var format : js.webgpu.GPUVertexFormat;
+	var format : GPUVertexFormat;
 	var offset : GPUSize64;
 	var shaderLocation : GPUIndex32;
 };

@@ -25,6 +25,6 @@
 package js.serviceWorkers;
 
 typedef RouterRule = {
-	var condition : js.serviceWorkers.RouterCondition;
+	var condition : RouterCondition;
 	var source : RouterSource;
 };

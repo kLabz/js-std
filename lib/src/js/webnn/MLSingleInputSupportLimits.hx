@@ -26,7 +26,7 @@ package js.webnn;
 
 typedef MLSingleInputSupportLimits = {
 	@:optional
-	var input : js.webnn.MLTensorLimits;
+	var input : MLTensorLimits;
 	@:optional
-	var output : js.webnn.MLDataTypeLimits;
+	var output : MLDataTypeLimits;
 };

@@ -34,7 +34,7 @@ typedef CookieInit = {
 	@:optional
 	var path : String = "/";
 	@:optional
-	var sameSite : js.cookieStore.CookieSameSite = "strict";
+	var sameSite : CookieSameSite = "strict";
 	@:optional
 	var partitioned : Bool = false;
 };

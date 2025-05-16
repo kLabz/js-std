@@ -24,6 +24,6 @@
 
 package js.svg;
 
-extern class SVGScriptElement extends js.svg.SVGElement {
+extern class SVGScriptElement extends SVGElement {
 
 }

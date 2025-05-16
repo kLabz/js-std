@@ -25,5 +25,5 @@
 package js.webxrlayers;
 
 extern class XRLayerEvent extends js.dom.Event {
-	function new(type:String, eventInitDict:js.webxrlayers.XRLayerEventInit):Void;
+	function new(type:String, eventInitDict:XRLayerEventInit):Void;
 }

@@ -25,7 +25,7 @@
 package js.webusb;
 
 typedef USBDeviceRequestOptions = {
-	var filters : Array<js.webusb.USBDeviceFilter>;
+	var filters : Array<USBDeviceFilter>;
 	@:optional
-	var exclusionFilters : Array<js.webusb.USBDeviceFilter> = [];
+	var exclusionFilters : Array<USBDeviceFilter> = [];
 };

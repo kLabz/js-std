@@ -24,6 +24,6 @@
 
 package js.webaudio;
 
-extern class DelayNode extends js.webaudio.AudioNode {
-	function new(context:js.webaudio.BaseAudioContext, ?options:js.webaudio.DelayOptions):Void;
+extern class DelayNode extends AudioNode {
+	function new(context:BaseAudioContext, ?options:DelayOptions):Void;
 }

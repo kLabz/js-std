@@ -25,5 +25,5 @@
 package js.webxr;
 
 extern class XRInputSourcesChangeEvent extends js.dom.Event {
-	function new(type:String, eventInitDict:js.webxr.XRInputSourcesChangeEventInit):Void;
+	function new(type:String, eventInitDict:XRInputSourcesChangeEventInit):Void;
 }

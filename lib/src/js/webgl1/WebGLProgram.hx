@@ -24,6 +24,6 @@
 
 package js.webgl1;
 
-extern class WebGLProgram extends js.webgl1.WebGLObject {
+extern class WebGLProgram extends WebGLObject {
 
 }

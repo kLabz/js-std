@@ -25,7 +25,7 @@
 package js.streams;
 
 extern class ReadableStreamDefaultReader {
-	function new(stream:js.streams.ReadableStream):Void;
-	function read():js.lib.Promise<js.streams.ReadableStreamReadResult>;
+	function new(stream:ReadableStream):Void;
+	function read():js.lib.Promise<ReadableStreamReadResult>;
 	function releaseLock():Void;
 }

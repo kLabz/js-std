@@ -26,5 +26,5 @@ package js.saaNonCookieStorage;
 
 typedef SharedWorkerOptions = js.html.WorkerOptions & {
 	@:optional
-	var sameSiteCookies : js.saaNonCookieStorage.SameSiteCookiesType;
+	var sameSiteCookies : SameSiteCookiesType;
 };

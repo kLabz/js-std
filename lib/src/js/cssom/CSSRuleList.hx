@@ -25,5 +25,5 @@
 package js.cssom;
 
 extern class CSSRuleList {
-	function item(index:Int):js.cssom.CSSRule;
+	function item(index:Int):CSSRule;
 }

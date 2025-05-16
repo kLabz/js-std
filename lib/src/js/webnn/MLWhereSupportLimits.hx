@@ -26,11 +26,11 @@ package js.webnn;
 
 typedef MLWhereSupportLimits = {
 	@:optional
-	var condition : js.webnn.MLTensorLimits;
+	var condition : MLTensorLimits;
 	@:optional
-	var trueValue : js.webnn.MLTensorLimits;
+	var trueValue : MLTensorLimits;
 	@:optional
-	var falseValue : js.webnn.MLTensorLimits;
+	var falseValue : MLTensorLimits;
 	@:optional
-	var output : js.webnn.MLDataTypeLimits;
+	var output : MLDataTypeLimits;
 };

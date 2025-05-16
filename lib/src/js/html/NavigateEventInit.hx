@@ -26,8 +26,8 @@ package js.html;
 
 typedef NavigateEventInit = js.dom.EventInit & {
 	@:optional
-	var navigationType : js.html.NavigationType = "push";
-	var destination : js.html.NavigationDestination;
+	var navigationType : NavigationType = "push";
+	var destination : NavigationDestination;
 	@:optional
 	var canIntercept : Bool = false;
 	@:optional

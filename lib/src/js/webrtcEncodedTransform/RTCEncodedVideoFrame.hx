@@ -25,6 +25,6 @@
 package js.webrtcEncodedTransform;
 
 extern class RTCEncodedVideoFrame {
-	function new(originalFrame:js.webrtcEncodedTransform.RTCEncodedVideoFrame, ?options:js.webrtcEncodedTransform.RTCEncodedVideoFrameOptions):Void;
-	function getMetadata():js.webrtcEncodedTransform.RTCEncodedVideoFrameMetadata;
+	function new(originalFrame:RTCEncodedVideoFrame, ?options:RTCEncodedVideoFrameOptions):Void;
+	function getMetadata():RTCEncodedVideoFrameMetadata;
 }

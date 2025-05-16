@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLMapElement extends js.html.HTMLElement {
+extern class HTMLMapElement extends HTMLElement {
 	function new():Void;
 }

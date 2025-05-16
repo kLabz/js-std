@@ -25,7 +25,7 @@
 package js.editContext;
 
 extern class EditContext extends js.dom.EventTarget {
-	function new(?options:js.editContext.EditContextInit):Void;
+	function new(?options:EditContextInit):Void;
 	function updateText(rangeStart:Int, rangeEnd:Int, text:String):Void;
 	function updateSelection(start:Int, end:Int):Void;
 	function updateControlBounds(controlBounds:js.geometry.DOMRect):Void;

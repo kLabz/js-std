@@ -25,5 +25,5 @@
 package js.mediaSource;
 
 extern class BufferedChangeEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:js.mediaSource.BufferedChangeEventInit):Void;
+	function new(type:String, ?eventInitDict:BufferedChangeEventInit):Void;
 }

@@ -24,7 +24,7 @@
 
 package js.mediacaptureAutomation;
 
-typedef MockMicrophoneConfiguration = js.mediacaptureAutomation.MockCaptureDeviceConfiguration & {
+typedef MockMicrophoneConfiguration = MockCaptureDeviceConfiguration & {
 	@:optional
 	var defaultSampleRate : Int = 44100;
 };

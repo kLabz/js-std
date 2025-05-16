@@ -38,7 +38,7 @@ typedef PrivateAttributionConversionOptions = {
 	@:optional
 	var intermediarySites : Array<String> = [];
 	@:optional
-	var logic : js.ppa.PrivateAttributionLogic = "last-touch";
+	var logic : PrivateAttributionLogic = "last-touch";
 	@:optional
 	var value : Int = 1;
 	@:optional

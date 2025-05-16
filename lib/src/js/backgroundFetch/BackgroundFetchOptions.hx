@@ -24,7 +24,7 @@
 
 package js.backgroundFetch;
 
-typedef BackgroundFetchOptions = js.backgroundFetch.BackgroundFetchUIOptions & {
+typedef BackgroundFetchOptions = BackgroundFetchUIOptions & {
 	@:optional
 	var downloadTotal : Float = 0;
 };

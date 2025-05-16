@@ -25,7 +25,7 @@
 package js.webcodecs;
 
 typedef AudioDataInit = {
-	var format : js.webcodecs.AudioSampleFormat;
+	var format : AudioSampleFormat;
 	var sampleRate : Float;
 	var numberOfFrames : Int;
 	var numberOfChannels : Int;

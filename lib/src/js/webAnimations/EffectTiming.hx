@@ -26,13 +26,13 @@ package js.webAnimations;
 
 typedef EffectTiming = {
 	@:optional
-	var fill : js.webAnimations.FillMode = "auto";
+	var fill : FillMode = "auto";
 	@:optional
 	var iterationStart : Float = 0.0;
 	@:optional
 	var iterations : Float = 1.0;
 	@:optional
-	var direction : js.webAnimations.PlaybackDirection = "normal";
+	var direction : PlaybackDirection = "normal";
 	@:optional
 	var easing : String = "linear";
 	@:optional

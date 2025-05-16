@@ -52,5 +52,5 @@ typedef TouchInit = {
 	@:optional
 	var azimuthAngle : Float = 0;
 	@:optional
-	var touchType : js.touchEvents.TouchType = "direct";
+	var touchType : TouchType = "direct";
 };

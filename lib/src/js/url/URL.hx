@@ -26,7 +26,7 @@ package js.url;
 
 extern class URL {
 	function new(url:String, ?base:String):Void;
-	function parse(url:String, ?base:String):js.url.URL;
+	function parse(url:String, ?base:String):URL;
 	function canParse(url:String, ?base:String):Bool;
 	function toJSON():String;
 	function createObjectURL(obj:haxe.extern.EitherType<js.fileapi.Blob, js.mediaSource.MediaSource>):String;

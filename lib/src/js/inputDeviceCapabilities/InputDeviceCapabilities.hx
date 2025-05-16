@@ -25,5 +25,5 @@
 package js.inputDeviceCapabilities;
 
 extern class InputDeviceCapabilities {
-	function new(?deviceInitDict:js.inputDeviceCapabilities.InputDeviceCapabilitiesInit):Void;
+	function new(?deviceInitDict:InputDeviceCapabilitiesInit):Void;
 }

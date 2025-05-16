@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLMenuElement extends js.html.HTMLElement {
+extern class HTMLMenuElement extends HTMLElement {
 	function new():Void;
 }

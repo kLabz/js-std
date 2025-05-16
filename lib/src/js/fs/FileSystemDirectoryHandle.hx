@@ -24,12 +24,12 @@
 
 package js.fs;
 
-extern class FileSystemDirectoryHandle extends js.fs.FileSystemHandle {
+extern class FileSystemDirectoryHandle extends FileSystemHandle {
 	function keys():Iterator<String>;
-	function values():Iterator<js.fs.FileSystemHandle>;
+	function values():Iterator<FileSystemHandle>;
 	function entries():Iterator<Array<Dynamic>>;
-	function getFileHandle(name:String, ?options:js.fs.FileSystemGetFileOptions):js.lib.Promise<js.fs.FileSystemFileHandle>;
-	function getDirectoryHandle(name:String, ?options:js.fs.FileSystemGetDirectoryOptions):js.lib.Promise<js.fs.FileSystemDirectoryHandle>;
-	function removeEntry(name:String, ?options:js.fs.FileSystemRemoveOptions):js.lib.Promise<Void>;
-	function resolve(possibleDescendant:js.fs.FileSystemHandle):js.lib.Promise<Array<String>>;
+	function getFileHandle(name:String, ?options:FileSystemGetFileOptions):js.lib.Promise<FileSystemFileHandle>;
+	function getDirectoryHandle(name:String, ?options:FileSystemGetDirectoryOptions):js.lib.Promise<FileSystemDirectoryHandle>;
+	function removeEntry(name:String, ?options:FileSystemRemoveOptions):js.lib.Promise<Void>;
+	function resolve(possibleDescendant:FileSystemHandle):js.lib.Promise<Array<String>>;
 }

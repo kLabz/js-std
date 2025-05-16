@@ -24,9 +24,9 @@
 
 package js.html;
 
-typedef NavigationNavigateOptions = js.html.NavigationOptions & {
+typedef NavigationNavigateOptions = NavigationOptions & {
 	@:optional
 	var state : Any;
 	@:optional
-	var history : js.html.NavigationHistoryBehavior = "auto";
+	var history : NavigationHistoryBehavior = "auto";
 };

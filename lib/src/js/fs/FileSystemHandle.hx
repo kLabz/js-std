@@ -25,7 +25,7 @@
 package js.fs;
 
 extern class FileSystemHandle {
-	function isSameEntry(other:js.fs.FileSystemHandle):js.lib.Promise<Bool>;
+	function isSameEntry(other:FileSystemHandle):js.lib.Promise<Bool>;
 	function queryPermission(?descriptor:js.fileSystemAccess.FileSystemHandlePermissionDescriptor):js.lib.Promise<js.permissions.PermissionState>;
 	function requestPermission(?descriptor:js.fileSystemAccess.FileSystemHandlePermissionDescriptor):js.lib.Promise<js.permissions.PermissionState>;
 }

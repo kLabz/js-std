@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLOptionElement extends js.html.HTMLElement {
+extern class HTMLOptionElement extends HTMLElement {
 	function new():Void;
 }

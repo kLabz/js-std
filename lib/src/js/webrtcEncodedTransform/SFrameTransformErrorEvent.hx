@@ -25,5 +25,5 @@
 package js.webrtcEncodedTransform;
 
 extern class SFrameTransformErrorEvent extends js.dom.Event {
-	function new(type:String, eventInitDict:js.webrtcEncodedTransform.SFrameTransformErrorEventInit):Void;
+	function new(type:String, eventInitDict:SFrameTransformErrorEventInit):Void;
 }

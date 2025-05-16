@@ -25,5 +25,5 @@
 package js.webgpu;
 
 extern class GPUPipelineError extends js.webidl.DOMException {
-	function new(?message:String, options:js.webgpu.GPUPipelineErrorInit):Void;
+	function new(?message:String, options:GPUPipelineErrorInit):Void;
 }

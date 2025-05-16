@@ -24,6 +24,6 @@
 
 package js.cssTypedOm;
 
-extern class CSSMathMax extends js.cssTypedOm.CSSMathValue {
+extern class CSSMathMax extends CSSMathValue {
 	function new(args:CSSNumberish):Void;
 }

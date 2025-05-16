@@ -25,5 +25,5 @@
 package js.webAnimations2;
 
 extern class AnimationTrigger {
-	function new(?options:js.webAnimations2.AnimationTriggerOptions):Void;
+	function new(?options:AnimationTriggerOptions):Void;
 }

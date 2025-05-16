@@ -26,9 +26,9 @@ package js.webcodecs;
 
 typedef EncodedVideoChunkMetadata = {
 	@:optional
-	var decoderConfig : js.webcodecs.VideoDecoderConfig;
+	var decoderConfig : VideoDecoderConfig;
 	@:optional
-	var svc : js.webcodecs.SvcOutputMetadata;
+	var svc : SvcOutputMetadata;
 	@:optional
 	var alphaSideData : BufferSource;
 };

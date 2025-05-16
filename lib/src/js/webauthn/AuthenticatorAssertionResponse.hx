@@ -24,6 +24,6 @@
 
 package js.webauthn;
 
-extern class AuthenticatorAssertionResponse extends js.webauthn.AuthenticatorResponse {
+extern class AuthenticatorAssertionResponse extends AuthenticatorResponse {
 
 }

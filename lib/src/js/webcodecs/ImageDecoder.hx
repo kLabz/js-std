@@ -25,8 +25,8 @@
 package js.webcodecs;
 
 extern class ImageDecoder {
-	function new(init:js.webcodecs.ImageDecoderInit):Void;
-	function decode(?options:js.webcodecs.ImageDecodeOptions):js.lib.Promise<js.webcodecs.ImageDecodeResult>;
+	function new(init:ImageDecoderInit):Void;
+	function decode(?options:ImageDecodeOptions):js.lib.Promise<ImageDecodeResult>;
 	function reset():Void;
 	function close():Void;
 	function isTypeSupported(type:String):js.lib.Promise<Bool>;

@@ -24,7 +24,7 @@
 
 package js.webrtcStats;
 
-typedef RTCInboundRtpStreamStats = js.webrtcStats.RTCReceivedRtpStreamStats & {
+typedef RTCInboundRtpStreamStats = RTCReceivedRtpStreamStats & {
 	var trackIdentifier : String;
 	@:optional
 	var mid : String;

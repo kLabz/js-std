@@ -25,6 +25,6 @@
 package js.uaClientHints;
 
 extern class NavigatorUAData {
-	function getHighEntropyValues(hints:Array<String>):js.lib.Promise<js.uaClientHints.UADataValues>;
-	function toJSON():js.uaClientHints.UALowEntropyJSON;
+	function getHighEntropyValues(hints:Array<String>):js.lib.Promise<UADataValues>;
+	function toJSON():UALowEntropyJSON;
 }

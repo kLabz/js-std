@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-typedef GainOptions = js.webaudio.AudioNodeOptions & {
+typedef GainOptions = AudioNodeOptions & {
 	@:optional
 	var gain : Float = 1.0;
 };

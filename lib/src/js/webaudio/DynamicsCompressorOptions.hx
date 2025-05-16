@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-typedef DynamicsCompressorOptions = js.webaudio.AudioNodeOptions & {
+typedef DynamicsCompressorOptions = AudioNodeOptions & {
 	@:optional
 	var attack : Float = 0.003;
 	@:optional

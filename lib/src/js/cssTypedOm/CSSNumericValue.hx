@@ -24,16 +24,16 @@
 
 package js.cssTypedOm;
 
-extern class CSSNumericValue extends js.cssTypedOm.CSSStyleValue {
-	function add(values:CSSNumberish):js.cssTypedOm.CSSNumericValue;
-	function sub(values:CSSNumberish):js.cssTypedOm.CSSNumericValue;
-	function mul(values:CSSNumberish):js.cssTypedOm.CSSNumericValue;
-	function div(values:CSSNumberish):js.cssTypedOm.CSSNumericValue;
-	function min(values:CSSNumberish):js.cssTypedOm.CSSNumericValue;
-	function max(values:CSSNumberish):js.cssTypedOm.CSSNumericValue;
+extern class CSSNumericValue extends CSSStyleValue {
+	function add(values:CSSNumberish):CSSNumericValue;
+	function sub(values:CSSNumberish):CSSNumericValue;
+	function mul(values:CSSNumberish):CSSNumericValue;
+	function div(values:CSSNumberish):CSSNumericValue;
+	function min(values:CSSNumberish):CSSNumericValue;
+	function max(values:CSSNumberish):CSSNumericValue;
 	function equals(value:CSSNumberish):Bool;
-	function to(unit:String):js.cssTypedOm.CSSUnitValue;
-	function toSum(units:String):js.cssTypedOm.CSSMathSum;
-	function type():js.cssTypedOm.CSSNumericType;
-	function parse(cssText:String):js.cssTypedOm.CSSNumericValue;
+	function to(unit:String):CSSUnitValue;
+	function toSum(units:String):CSSMathSum;
+	function type():CSSNumericType;
+	function parse(cssText:String):CSSNumericValue;
 }

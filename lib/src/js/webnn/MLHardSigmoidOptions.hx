@@ -24,7 +24,7 @@
 
 package js.webnn;
 
-typedef MLHardSigmoidOptions = js.webnn.MLOperatorOptions & {
+typedef MLHardSigmoidOptions = MLOperatorOptions & {
 	@:optional
 	var alpha : Float = 0.2;
 	@:optional

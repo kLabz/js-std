@@ -26,9 +26,9 @@ package js.webnn;
 
 typedef MLBinarySupportLimits = {
 	@:optional
-	var a : js.webnn.MLTensorLimits;
+	var a : MLTensorLimits;
 	@:optional
-	var b : js.webnn.MLTensorLimits;
+	var b : MLTensorLimits;
 	@:optional
-	var output : js.webnn.MLDataTypeLimits;
+	var output : MLDataTypeLimits;
 };

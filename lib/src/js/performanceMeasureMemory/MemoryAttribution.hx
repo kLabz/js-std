@@ -28,7 +28,7 @@ typedef MemoryAttribution = {
 	@:optional
 	var url : String;
 	@:optional
-	var container : js.performanceMeasureMemory.MemoryAttributionContainer;
+	var container : MemoryAttributionContainer;
 	@:optional
 	var scope : String;
 };

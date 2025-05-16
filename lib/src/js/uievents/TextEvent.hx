@@ -24,6 +24,6 @@
 
 package js.uievents;
 
-extern class TextEvent extends js.uievents.UIEvent {
+extern class TextEvent extends UIEvent {
 	function initTextEvent(type:String, ?bubbles:Bool, ?cancelable:Bool, ?view:js.html.Window, ?data:String):Void;
 }

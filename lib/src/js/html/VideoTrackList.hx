@@ -25,6 +25,6 @@
 package js.html;
 
 extern class VideoTrackList extends js.dom.EventTarget {
-	function (index:Int):js.html.VideoTrack;
-	function getTrackById(id:String):js.html.VideoTrack;
+	function (index:Int):VideoTrack;
+	function getTrackById(id:String):VideoTrack;
 }

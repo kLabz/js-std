@@ -24,7 +24,7 @@
 
 package js.uievents;
 
-typedef KeyboardEventInit = js.uievents.EventModifierInit & {
+typedef KeyboardEventInit = EventModifierInit & {
 	@:optional
 	var key : String = "";
 	@:optional

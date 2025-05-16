@@ -24,8 +24,8 @@
 
 package js.uievents;
 
-extern class KeyboardEvent extends js.uievents.UIEvent {
-	function new(type:String, ?eventInitDict:js.uievents.KeyboardEventInit):Void;
+extern class KeyboardEvent extends UIEvent {
+	function new(type:String, ?eventInitDict:KeyboardEventInit):Void;
 	static inline var DOM_KEY_LOCATION_STANDARD : Int = 0x00;
 	static inline var DOM_KEY_LOCATION_LEFT : Int = 0x01;
 	static inline var DOM_KEY_LOCATION_RIGHT : Int = 0x02;

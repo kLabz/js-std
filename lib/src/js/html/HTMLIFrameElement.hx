@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLIFrameElement extends js.html.HTMLElement {
+extern class HTMLIFrameElement extends HTMLElement {
 	function new():Void;
 	function getSVGDocument():js.dom.Document;
 }

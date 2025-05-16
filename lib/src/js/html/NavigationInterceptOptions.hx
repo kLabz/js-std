@@ -28,7 +28,7 @@ typedef NavigationInterceptOptions = {
 	@:optional
 	var handler : NavigationInterceptHandler;
 	@:optional
-	var focusReset : js.html.NavigationFocusReset;
+	var focusReset : NavigationFocusReset;
 	@:optional
-	var scroll : js.html.NavigationScrollBehavior;
+	var scroll : NavigationScrollBehavior;
 };

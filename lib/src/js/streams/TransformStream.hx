@@ -25,5 +25,5 @@
 package js.streams;
 
 extern class TransformStream {
-	function new(?transformer:object, ?writableStrategy:js.streams.QueuingStrategy, ?readableStrategy:js.streams.QueuingStrategy):Void;
+	function new(?transformer:object, ?writableStrategy:QueuingStrategy, ?readableStrategy:QueuingStrategy):Void;
 }

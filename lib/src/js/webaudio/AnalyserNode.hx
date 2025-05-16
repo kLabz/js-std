@@ -24,8 +24,8 @@
 
 package js.webaudio;
 
-extern class AnalyserNode extends js.webaudio.AudioNode {
-	function new(context:js.webaudio.BaseAudioContext, ?options:js.webaudio.AnalyserOptions):Void;
+extern class AnalyserNode extends AudioNode {
+	function new(context:BaseAudioContext, ?options:AnalyserOptions):Void;
 	function getFloatFrequencyData(array:Float32Array):Void;
 	function getByteFrequencyData(array:Uint8Array):Void;
 	function getFloatTimeDomainData(array:Float32Array):Void;

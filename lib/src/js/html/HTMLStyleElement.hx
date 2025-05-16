@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLStyleElement extends js.html.HTMLElement {
+extern class HTMLStyleElement extends HTMLElement {
 	function new():Void;
 }

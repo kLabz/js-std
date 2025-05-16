@@ -24,7 +24,7 @@
 
 package js.serviceWorkers;
 
-extern class FetchEvent extends js.serviceWorkers.ExtendableEvent {
-	function new(type:String, eventInitDict:js.serviceWorkers.FetchEventInit):Void;
+extern class FetchEvent extends ExtendableEvent {
+	function new(type:String, eventInitDict:FetchEventInit):Void;
 	function respondWith(r:js.lib.Promise<js.fetch.Response>):Void;
 }

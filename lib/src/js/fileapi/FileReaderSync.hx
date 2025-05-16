@@ -26,8 +26,8 @@ package js.fileapi;
 
 extern class FileReaderSync {
 	function new():Void;
-	function readAsArrayBuffer(blob:js.fileapi.Blob):ArrayBuffer;
-	function readAsBinaryString(blob:js.fileapi.Blob):String;
-	function readAsText(blob:js.fileapi.Blob, ?encoding:String):String;
-	function readAsDataURL(blob:js.fileapi.Blob):String;
+	function readAsArrayBuffer(blob:Blob):ArrayBuffer;
+	function readAsBinaryString(blob:Blob):String;
+	function readAsText(blob:Blob, ?encoding:String):String;
+	function readAsDataURL(blob:Blob):String;
 }

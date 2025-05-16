@@ -37,7 +37,7 @@ extern class Window extends js.dom.EventTarget {
 	function prompt(?message:String, ?default:String):String;
 	function print():Void;
 	overload function postMessage(message:Any, targetOrigin:String, ?transfer:Array<object>):Void;
-	overload function postMessage(message:Any, ?options:js.html.WindowPostMessageOptions):Void;
+	overload function postMessage(message:Any, ?options:WindowPostMessageOptions):Void;
 	function navigate(dir:js.cssNav.SpatialNavigationDirection):Void;
 	function matchMedia(query:CSSOMString):js.cssomView.MediaQueryList;
 	function moveTo(x:Int, y:Int):Void;
@@ -50,8 +50,8 @@ extern class Window extends js.dom.EventTarget {
 	overload function scrollTo(x:Float, y:Float):Void;
 	overload function scrollBy(?options:js.cssomView.ScrollToOptions):Void;
 	overload function scrollBy(x:Float, y:Float):Void;
-	function getDigitalGoodsService(serviceProvider:String):js.lib.Promise<js.digitalGoods.DigitalGoodsService>;
 	function getComputedStyle(elt:js.dom.Element, ?pseudoElt:CSSOMString):js.cssom.CSSStyleDeclaration;
+	function getDigitalGoodsService(serviceProvider:String):js.lib.Promise<js.digitalGoods.DigitalGoodsService>;
 	function showOpenFilePicker(?options:js.fileSystemAccess.OpenFilePickerOptions):js.lib.Promise<Array<js.fs.FileSystemFileHandle>>;
 	function showSaveFilePicker(?options:js.fileSystemAccess.SaveFilePickerOptions):js.lib.Promise<js.fs.FileSystemFileHandle>;
 	function showDirectoryPicker(?options:js.fileSystemAccess.DirectoryPickerOptions):js.lib.Promise<js.fs.FileSystemDirectoryHandle>;

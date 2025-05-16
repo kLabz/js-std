@@ -26,5 +26,5 @@ package js.shapeDetectionApi;
 
 typedef BarcodeDetectorOptions = {
 	@:optional
-	var formats : Array<js.shapeDetectionApi.BarcodeFormat>;
+	var formats : Array<BarcodeFormat>;
 };

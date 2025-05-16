@@ -24,7 +24,7 @@
 
 package js.sharedStorage;
 
-typedef SharedStorageSetMethodOptions = js.sharedStorage.SharedStorageModifierMethodOptions & {
+typedef SharedStorageSetMethodOptions = SharedStorageModifierMethodOptions & {
 	@:optional
 	var ignoreIfPresent : Bool;
 };

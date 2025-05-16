@@ -25,6 +25,6 @@
 package js.webhid;
 
 extern class HID extends js.dom.EventTarget {
-	function getDevices():js.lib.Promise<Array<js.webhid.HIDDevice>>;
-	function requestDevice(options:js.webhid.HIDDeviceRequestOptions):js.lib.Promise<Array<js.webhid.HIDDevice>>;
+	function getDevices():js.lib.Promise<Array<HIDDevice>>;
+	function requestDevice(options:HIDDeviceRequestOptions):js.lib.Promise<Array<HIDDevice>>;
 }

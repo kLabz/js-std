@@ -26,7 +26,7 @@ package js.webnn;
 
 typedef MLSplitSupportLimits = {
 	@:optional
-	var input : js.webnn.MLTensorLimits;
+	var input : MLTensorLimits;
 	@:optional
-	var outputs : js.webnn.MLDataTypeLimits;
+	var outputs : MLDataTypeLimits;
 };

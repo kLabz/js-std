@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLOptGroupElement extends js.html.HTMLElement {
+extern class HTMLOptGroupElement extends HTMLElement {
 	function new():Void;
 }

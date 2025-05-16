@@ -25,5 +25,5 @@
 package js.webAnimations;
 
 extern class AnimationTimeline {
-	function play(?effect:js.webAnimations.AnimationEffect):js.webAnimations.Animation;
+	function play(?effect:AnimationEffect):Animation;
 }

@@ -25,7 +25,7 @@
 package js.webrtcEncodedTransform;
 
 typedef SFrameTransformErrorEventInit = js.dom.EventInit & {
-	var errorType : js.webrtcEncodedTransform.SFrameTransformErrorEventType;
+	var errorType : SFrameTransformErrorEventType;
 	var frame : Any;
 	@:optional
 	var keyID : CryptoKeyID;

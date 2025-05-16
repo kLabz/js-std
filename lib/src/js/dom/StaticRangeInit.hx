@@ -25,8 +25,8 @@
 package js.dom;
 
 typedef StaticRangeInit = {
-	var startContainer : js.dom.Node;
+	var startContainer : Node;
 	var startOffset : Int;
-	var endContainer : js.dom.Node;
+	var endContainer : Node;
 	var endOffset : Int;
 };

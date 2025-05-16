@@ -40,5 +40,5 @@ typedef CSSNumericType = {
 	@:optional
 	var percent : Int;
 	@:optional
-	var percentHint : js.cssTypedOm.CSSNumericBaseType;
+	var percentHint : CSSNumericBaseType;
 };

@@ -24,6 +24,6 @@
 
 package js.webaudio;
 
-extern class AudioDestinationNode extends js.webaudio.AudioNode {
+extern class AudioDestinationNode extends AudioNode {
 
 }

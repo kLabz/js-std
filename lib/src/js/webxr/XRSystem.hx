@@ -25,6 +25,6 @@
 package js.webxr;
 
 extern class XRSystem extends js.dom.EventTarget {
-	function isSessionSupported(mode:js.webxr.XRSessionMode):js.lib.Promise<Bool>;
-	function requestSession(mode:js.webxr.XRSessionMode, ?options:js.webxr.XRSessionInit):js.lib.Promise<js.webxr.XRSession>;
+	function isSessionSupported(mode:XRSessionMode):js.lib.Promise<Bool>;
+	function requestSession(mode:XRSessionMode, ?options:XRSessionInit):js.lib.Promise<XRSession>;
 }

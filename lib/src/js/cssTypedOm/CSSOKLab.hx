@@ -24,6 +24,6 @@
 
 package js.cssTypedOm;
 
-extern class CSSOKLab extends js.cssTypedOm.CSSColorValue {
+extern class CSSOKLab extends CSSColorValue {
 	function new(l:CSSColorPercent, a:CSSColorNumber, b:CSSColorNumber, ?alpha:CSSColorPercent):Void;
 }

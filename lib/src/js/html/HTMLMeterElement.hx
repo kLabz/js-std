@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLMeterElement extends js.html.HTMLElement {
+extern class HTMLMeterElement extends HTMLElement {
 	function new():Void;
 }

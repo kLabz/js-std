@@ -24,6 +24,6 @@
 
 package js.webgpu;
 
-typedef GPUPipelineDescriptorBase = js.webgpu.GPUObjectDescriptorBase & {
-	var layout : haxe.extern.EitherType<js.webgpu.GPUPipelineLayout, js.webgpu.GPUAutoLayoutMode>;
+typedef GPUPipelineDescriptorBase = GPUObjectDescriptorBase & {
+	var layout : haxe.extern.EitherType<GPUPipelineLayout, GPUAutoLayoutMode>;
 };

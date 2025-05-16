@@ -26,7 +26,7 @@ package js.webusb;
 
 typedef USBPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
-	var filters : Array<js.webusb.USBDeviceFilter>;
+	var filters : Array<USBDeviceFilter>;
 	@:optional
-	var exclusionFilters : Array<js.webusb.USBDeviceFilter>;
+	var exclusionFilters : Array<USBDeviceFilter>;
 };

@@ -25,7 +25,7 @@
 package js.mediacaptureRegion;
 
 extern class BrowserCaptureMediaStreamTrack extends js.mediacaptureStreams.MediaStreamTrack {
-	function cropTo(cropTarget:js.mediacaptureRegion.CropTarget):js.lib.Promise<Void>;
-	function clone():js.mediacaptureRegion.BrowserCaptureMediaStreamTrack;
+	function cropTo(cropTarget:CropTarget):js.lib.Promise<Void>;
+	function clone():BrowserCaptureMediaStreamTrack;
 	function restrictTo(RestrictionTarget:js.elementCapture.RestrictionTarget):js.lib.Promise<Void>;
 }

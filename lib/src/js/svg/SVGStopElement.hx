@@ -24,6 +24,6 @@
 
 package js.svg;
 
-extern class SVGStopElement extends js.svg.SVGElement {
+extern class SVGStopElement extends SVGElement {
 
 }

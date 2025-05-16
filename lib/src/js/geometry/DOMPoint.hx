@@ -24,7 +24,7 @@
 
 package js.geometry;
 
-extern class DOMPoint extends js.geometry.DOMPointReadOnly {
+extern class DOMPoint extends DOMPointReadOnly {
 	function new(?x:Float, ?y:Float, ?z:Float, ?w:Float):Void;
-	function fromPoint(?other:js.geometry.DOMPointInit):js.geometry.DOMPoint;
+	function fromPoint(?other:DOMPointInit):DOMPoint;
 }

@@ -34,5 +34,5 @@ typedef StorageEventInit = js.dom.EventInit & {
 	@:optional
 	var url : String = "";
 	@:optional
-	var storageArea : js.html.Storage = null;
+	var storageArea : Storage = null;
 };

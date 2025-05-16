@@ -25,5 +25,5 @@
 package js.streams;
 
 extern class ByteLengthQueuingStrategy {
-	function new(init:js.streams.QueuingStrategyInit):Void;
+	function new(init:QueuingStrategyInit):Void;
 }

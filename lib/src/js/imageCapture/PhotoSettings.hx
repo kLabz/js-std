@@ -26,7 +26,7 @@ package js.imageCapture;
 
 typedef PhotoSettings = {
 	@:optional
-	var fillLightMode : js.imageCapture.FillLightMode;
+	var fillLightMode : FillLightMode;
 	@:optional
 	var imageHeight : Float;
 	@:optional

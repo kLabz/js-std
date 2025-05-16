@@ -25,5 +25,5 @@
 package js.pictureInPicture;
 
 typedef PictureInPictureEventInit = js.dom.EventInit & {
-	var pictureInPictureWindow : js.pictureInPicture.PictureInPictureWindow;
+	var pictureInPictureWindow : PictureInPictureWindow;
 };

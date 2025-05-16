@@ -28,5 +28,5 @@ typedef MLTensorLimits = {
 	@:optional
 	var dataTypes : MLDataTypeList;
 	@:optional
-	var rankRange : js.webnn.MLRankRange;
+	var rankRange : MLRankRange;
 };

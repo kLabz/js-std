@@ -26,11 +26,11 @@ package js.webnn;
 
 typedef MLNormalizationSupportLimits = {
 	@:optional
-	var input : js.webnn.MLTensorLimits;
+	var input : MLTensorLimits;
 	@:optional
-	var scale : js.webnn.MLTensorLimits;
+	var scale : MLTensorLimits;
 	@:optional
-	var bias : js.webnn.MLTensorLimits;
+	var bias : MLTensorLimits;
 	@:optional
-	var output : js.webnn.MLDataTypeLimits;
+	var output : MLDataTypeLimits;
 };

@@ -24,9 +24,9 @@
 
 package js.webxrlayers;
 
-typedef XRCylinderLayerInit = js.webxrlayers.XRLayerInit & {
+typedef XRCylinderLayerInit = XRLayerInit & {
 	@:optional
-	var textureType : js.webxrlayers.XRTextureType = "texture";
+	var textureType : XRTextureType = "texture";
 	@:optional
 	var transform : js.webxr.XRRigidTransform;
 	@:optional

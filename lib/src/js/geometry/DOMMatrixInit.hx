@@ -24,7 +24,7 @@
 
 package js.geometry;
 
-typedef DOMMatrixInit = js.geometry.DOMMatrix2DInit & {
+typedef DOMMatrixInit = DOMMatrix2DInit & {
 	@:optional
 	var m13 : Float = 0;
 	@:optional

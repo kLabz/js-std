@@ -24,9 +24,9 @@
 
 package js.webxrlayers;
 
-typedef XRQuadLayerInit = js.webxrlayers.XRLayerInit & {
+typedef XRQuadLayerInit = XRLayerInit & {
 	@:optional
-	var textureType : js.webxrlayers.XRTextureType = "texture";
+	var textureType : XRTextureType = "texture";
 	@:optional
 	var transform : js.webxr.XRRigidTransform;
 	@:optional

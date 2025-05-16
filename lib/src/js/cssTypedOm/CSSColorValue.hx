@@ -24,6 +24,6 @@
 
 package js.cssTypedOm;
 
-extern class CSSColorValue extends js.cssTypedOm.CSSStyleValue {
-	function parse(cssText:String):haxe.extern.EitherType<js.cssTypedOm.CSSColorValue, js.cssTypedOm.CSSStyleValue>;
+extern class CSSColorValue extends CSSStyleValue {
+	function parse(cssText:String):haxe.extern.EitherType<CSSColorValue, CSSStyleValue>;
 }

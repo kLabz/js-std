@@ -27,8 +27,8 @@ package js.html;
 extern class HTMLElement extends js.dom.Element {
 	function new():Void;
 	function click():Void;
-	function attachInternals():js.html.ElementInternals;
-	function showPopover(?options:js.html.ShowPopoverOptions):Void;
+	function attachInternals():ElementInternals;
+	function showPopover(?options:ShowPopoverOptions):Void;
 	function hidePopover():Void;
-	function togglePopover(?options:haxe.extern.EitherType<js.html.TogglePopoverOptions, Bool>):Bool;
+	function togglePopover(?options:haxe.extern.EitherType<TogglePopoverOptions, Bool>):Bool;
 }

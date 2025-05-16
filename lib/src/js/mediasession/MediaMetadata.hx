@@ -25,5 +25,5 @@
 package js.mediasession;
 
 extern class MediaMetadata {
-	function new(?init:js.mediasession.MediaMetadataInit):Void;
+	function new(?init:MediaMetadataInit):Void;
 }

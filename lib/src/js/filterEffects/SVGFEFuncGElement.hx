@@ -24,6 +24,6 @@
 
 package js.filterEffects;
 
-extern class SVGFEFuncGElement extends js.filterEffects.SVGComponentTransferFunctionElement {
+extern class SVGFEFuncGElement extends SVGComponentTransferFunctionElement {
 
 }

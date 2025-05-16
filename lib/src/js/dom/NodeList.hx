@@ -25,7 +25,7 @@
 package js.dom;
 
 extern class NodeList {
-	function item(index:Int):js.dom.Node;
-	function values():Iterator<js.dom.Node>;
-	function values():Iterator<js.dom.Node>;
+	function item(index:Int):Node;
+	function values():Iterator<Node>;
+	function values():Iterator<Node>;
 }

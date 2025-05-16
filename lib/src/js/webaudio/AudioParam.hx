@@ -25,11 +25,11 @@
 package js.webaudio;
 
 extern class AudioParam {
-	function setValueAtTime(value:Float, startTime:Float):js.webaudio.AudioParam;
-	function linearRampToValueAtTime(value:Float, endTime:Float):js.webaudio.AudioParam;
-	function exponentialRampToValueAtTime(value:Float, endTime:Float):js.webaudio.AudioParam;
-	function setTargetAtTime(target:Float, startTime:Float, timeConstant:Float):js.webaudio.AudioParam;
-	function setValueCurveAtTime(values:Array<Float>, startTime:Float, duration:Float):js.webaudio.AudioParam;
-	function cancelScheduledValues(cancelTime:Float):js.webaudio.AudioParam;
-	function cancelAndHoldAtTime(cancelTime:Float):js.webaudio.AudioParam;
+	function setValueAtTime(value:Float, startTime:Float):AudioParam;
+	function linearRampToValueAtTime(value:Float, endTime:Float):AudioParam;
+	function exponentialRampToValueAtTime(value:Float, endTime:Float):AudioParam;
+	function setTargetAtTime(target:Float, startTime:Float, timeConstant:Float):AudioParam;
+	function setValueCurveAtTime(values:Array<Float>, startTime:Float, duration:Float):AudioParam;
+	function cancelScheduledValues(cancelTime:Float):AudioParam;
+	function cancelAndHoldAtTime(cancelTime:Float):AudioParam;
 }

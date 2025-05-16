@@ -28,5 +28,5 @@ typedef VideoDecoderSupport = {
 	@:optional
 	var supported : Bool;
 	@:optional
-	var config : js.webcodecs.VideoDecoderConfig;
+	var config : VideoDecoderConfig;
 };

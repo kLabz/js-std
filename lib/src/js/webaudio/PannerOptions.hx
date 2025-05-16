@@ -24,11 +24,11 @@
 
 package js.webaudio;
 
-typedef PannerOptions = js.webaudio.AudioNodeOptions & {
+typedef PannerOptions = AudioNodeOptions & {
 	@:optional
-	var panningModel : js.webaudio.PanningModelType = "equalpower";
+	var panningModel : PanningModelType = "equalpower";
 	@:optional
-	var distanceModel : js.webaudio.DistanceModelType = "inverse";
+	var distanceModel : DistanceModelType = "inverse";
 	@:optional
 	var positionX : Float = 0;
 	@:optional

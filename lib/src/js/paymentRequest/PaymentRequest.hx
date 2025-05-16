@@ -25,8 +25,8 @@
 package js.paymentRequest;
 
 extern class PaymentRequest extends js.dom.EventTarget {
-	function new(methodData:Array<js.paymentRequest.PaymentMethodData>, details:js.paymentRequest.PaymentDetailsInit, ?options:js.paymentRequest.PaymentOptions):Void;
-	function show(?detailsPromise:js.lib.Promise<js.paymentRequest.PaymentDetailsUpdate>):js.lib.Promise<js.paymentRequest.PaymentResponse>;
+	function new(methodData:Array<PaymentMethodData>, details:PaymentDetailsInit, ?options:PaymentOptions):Void;
+	function show(?detailsPromise:js.lib.Promise<PaymentDetailsUpdate>):js.lib.Promise<PaymentResponse>;
 	function abort():js.lib.Promise<Void>;
 	function canMakePayment():js.lib.Promise<Bool>;
 	function securePaymentConfirmationAvailability():js.lib.Promise<js.securePaymentConfirmation.SecurePaymentConfirmationAvailability>;

@@ -24,6 +24,6 @@
 
 package js.webxrDepthSensing;
 
-extern class XRWebGLDepthInformation extends js.webxrDepthSensing.XRDepthInformation {
+extern class XRWebGLDepthInformation extends XRDepthInformation {
 
 }

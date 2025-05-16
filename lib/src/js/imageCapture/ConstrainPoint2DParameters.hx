@@ -26,7 +26,7 @@ package js.imageCapture;
 
 typedef ConstrainPoint2DParameters = {
 	@:optional
-	var exact : Array<js.imageCapture.Point2D>;
+	var exact : Array<Point2D>;
 	@:optional
-	var ideal : Array<js.imageCapture.Point2D>;
+	var ideal : Array<Point2D>;
 };

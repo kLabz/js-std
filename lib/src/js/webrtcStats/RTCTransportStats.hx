@@ -51,7 +51,7 @@ typedef RTCTransportStats = js.webrtc.RTCStats & {
 	@:optional
 	var dtlsCipher : String;
 	@:optional
-	var dtlsRole : js.webrtcStats.RTCDtlsRole;
+	var dtlsRole : RTCDtlsRole;
 	@:optional
 	var srtpCipher : String;
 	@:optional

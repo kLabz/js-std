@@ -25,9 +25,9 @@
 package js.webgpu;
 
 typedef GPUColorTargetState = {
-	var format : js.webgpu.GPUTextureFormat;
+	var format : GPUTextureFormat;
 	@:optional
-	var blend : js.webgpu.GPUBlendState;
+	var blend : GPUBlendState;
 	@:optional
 	var writeMask : GPUColorWriteFlags = 0xF;
 };

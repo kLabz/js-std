@@ -28,5 +28,5 @@ extern class NavigationPreloadManager {
 	function enable():js.lib.Promise<Void>;
 	function disable():js.lib.Promise<Void>;
 	function setHeaderValue(value:String):js.lib.Promise<Void>;
-	function getState():js.lib.Promise<js.serviceWorkers.NavigationPreloadState>;
+	function getState():js.lib.Promise<NavigationPreloadState>;
 }

@@ -24,7 +24,7 @@
 
 package js.webnn;
 
-typedef MLLeakyReluOptions = js.webnn.MLOperatorOptions & {
+typedef MLLeakyReluOptions = MLOperatorOptions & {
 	@:optional
 	var alpha : Float = 0.01;
 };

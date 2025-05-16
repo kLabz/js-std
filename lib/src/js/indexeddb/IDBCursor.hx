@@ -28,6 +28,6 @@ extern class IDBCursor {
 	function advance(count:Int):Void;
 	function continue(?key:Any):Void;
 	function continuePrimaryKey(key:Any, primaryKey:Any):Void;
-	function update(value:Any):js.indexeddb.IDBRequest;
-	function delete():js.indexeddb.IDBRequest;
+	function update(value:Any):IDBRequest;
+	function delete():IDBRequest;
 }

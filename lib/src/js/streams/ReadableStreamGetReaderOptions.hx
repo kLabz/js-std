@@ -26,5 +26,5 @@ package js.streams;
 
 typedef ReadableStreamGetReaderOptions = {
 	@:optional
-	var mode : js.streams.ReadableStreamReaderMode;
+	var mode : ReadableStreamReaderMode;
 };

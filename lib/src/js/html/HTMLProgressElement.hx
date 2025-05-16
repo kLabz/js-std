@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLProgressElement extends js.html.HTMLElement {
+extern class HTMLProgressElement extends HTMLElement {
 	function new():Void;
 }

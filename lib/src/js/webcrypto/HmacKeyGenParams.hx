@@ -24,7 +24,7 @@
 
 package js.webcrypto;
 
-typedef HmacKeyGenParams = js.webcrypto.Algorithm & {
+typedef HmacKeyGenParams = Algorithm & {
 	var hash : HashAlgorithmIdentifier;
 	@:optional
 	var length : Int;

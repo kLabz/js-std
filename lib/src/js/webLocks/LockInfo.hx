@@ -28,7 +28,7 @@ typedef LockInfo = {
 	@:optional
 	var name : String;
 	@:optional
-	var mode : js.webLocks.LockMode;
+	var mode : LockMode;
 	@:optional
 	var clientId : String;
 };

@@ -24,6 +24,6 @@
 
 package js.sharedStorage;
 
-extern class SharedStorageClearMethod extends js.sharedStorage.SharedStorageModifierMethod {
-	function new(?options:js.sharedStorage.SharedStorageModifierMethodOptions):Void;
+extern class SharedStorageClearMethod extends SharedStorageModifierMethod {
+	function new(?options:SharedStorageModifierMethodOptions):Void;
 }

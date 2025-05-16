@@ -24,7 +24,7 @@
 
 package js.turtledove;
 
-typedef StorageInterestGroup = js.turtledove.AuctionAdInterestGroup & {
+typedef StorageInterestGroup = AuctionAdInterestGroup & {
 	@:optional
 	var joinCount : Float;
 	@:optional

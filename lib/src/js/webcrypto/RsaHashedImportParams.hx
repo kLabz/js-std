@@ -24,6 +24,6 @@
 
 package js.webcrypto;
 
-typedef RsaHashedImportParams = js.webcrypto.Algorithm & {
+typedef RsaHashedImportParams = Algorithm & {
 	var hash : HashAlgorithmIdentifier;
 };

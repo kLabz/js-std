@@ -28,7 +28,7 @@ typedef CSSStyleSheetInit = {
 	@:optional
 	var baseURL : String = null;
 	@:optional
-	var media : haxe.extern.EitherType<js.cssom.MediaList, String> = "";
+	var media : haxe.extern.EitherType<MediaList, String> = "";
 	@:optional
 	var disabled : Bool = false;
 };

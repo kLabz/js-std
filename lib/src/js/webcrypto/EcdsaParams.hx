@@ -24,6 +24,6 @@
 
 package js.webcrypto;
 
-typedef EcdsaParams = js.webcrypto.Algorithm & {
+typedef EcdsaParams = Algorithm & {
 	var hash : HashAlgorithmIdentifier;
 };

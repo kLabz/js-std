@@ -25,6 +25,6 @@
 package js.serviceWorkers;
 
 extern class ExtendableEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:js.serviceWorkers.ExtendableEventInit):Void;
+	function new(type:String, ?eventInitDict:ExtendableEventInit):Void;
 	function waitUntil(f:js.lib.Promise<Any>):Void;
 }

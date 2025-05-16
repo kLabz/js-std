@@ -25,8 +25,8 @@
 package js.webBluetooth;
 
 extern class BluetoothRemoteGATTService extends js.dom.EventTarget {
-	function getCharacteristic(characteristic:BluetoothCharacteristicUUID):js.lib.Promise<js.webBluetooth.BluetoothRemoteGATTCharacteristic>;
-	function getCharacteristics(?characteristic:BluetoothCharacteristicUUID):js.lib.Promise<Array<js.webBluetooth.BluetoothRemoteGATTCharacteristic>>;
-	function getIncludedService(service:BluetoothServiceUUID):js.lib.Promise<js.webBluetooth.BluetoothRemoteGATTService>;
-	function getIncludedServices(?service:BluetoothServiceUUID):js.lib.Promise<Array<js.webBluetooth.BluetoothRemoteGATTService>>;
+	function getCharacteristic(characteristic:BluetoothCharacteristicUUID):js.lib.Promise<BluetoothRemoteGATTCharacteristic>;
+	function getCharacteristics(?characteristic:BluetoothCharacteristicUUID):js.lib.Promise<Array<BluetoothRemoteGATTCharacteristic>>;
+	function getIncludedService(service:BluetoothServiceUUID):js.lib.Promise<BluetoothRemoteGATTService>;
+	function getIncludedServices(?service:BluetoothServiceUUID):js.lib.Promise<Array<BluetoothRemoteGATTService>>;
 }

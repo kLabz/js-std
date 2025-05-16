@@ -24,6 +24,6 @@
 
 package js.webcrypto;
 
-typedef AesCbcParams = js.webcrypto.Algorithm & {
+typedef AesCbcParams = Algorithm & {
 	var iv : BufferSource;
 };

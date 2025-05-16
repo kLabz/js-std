@@ -24,6 +24,6 @@
 
 package js.cssom;
 
-extern class CSSPageRule extends js.cssom.CSSGroupingRule {
+extern class CSSPageRule extends CSSGroupingRule {
 
 }

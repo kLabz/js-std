@@ -24,7 +24,7 @@
 
 package js.webnn;
 
-typedef MLPool2dOptions = js.webnn.MLOperatorOptions & {
+typedef MLPool2dOptions = MLOperatorOptions & {
 	@:optional
 	var windowDimensions : Array<Int>;
 	@:optional
@@ -34,9 +34,9 @@ typedef MLPool2dOptions = js.webnn.MLOperatorOptions & {
 	@:optional
 	var dilations : Array<Int>;
 	@:optional
-	var layout : js.webnn.MLInputOperandLayout = "nchw";
+	var layout : MLInputOperandLayout = "nchw";
 	@:optional
-	var roundingType : js.webnn.MLRoundingType = "floor";
+	var roundingType : MLRoundingType = "floor";
 	@:optional
 	var outputSizes : Array<Int>;
 };

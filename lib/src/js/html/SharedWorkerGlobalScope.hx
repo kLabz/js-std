@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class SharedWorkerGlobalScope extends js.html.WorkerGlobalScope {
+extern class SharedWorkerGlobalScope extends WorkerGlobalScope {
 	function close():Void;
 }

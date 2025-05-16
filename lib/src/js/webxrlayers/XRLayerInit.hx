@@ -35,7 +35,7 @@ typedef XRLayerInit = {
 	var viewPixelWidth : Int;
 	var viewPixelHeight : Int;
 	@:optional
-	var layout : js.webxrlayers.XRLayerLayout = "mono";
+	var layout : XRLayerLayout = "mono";
 	@:optional
 	var isStatic : Bool = false;
 	@:optional

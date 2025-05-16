@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLLegendElement extends js.html.HTMLElement {
+extern class HTMLLegendElement extends HTMLElement {
 	function new():Void;
 }

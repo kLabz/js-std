@@ -28,7 +28,7 @@ typedef GPURequestAdapterOptions = {
 	@:optional
 	var featureLevel : String = "core";
 	@:optional
-	var powerPreference : js.webgpu.GPUPowerPreference;
+	var powerPreference : GPUPowerPreference;
 	@:optional
 	var forceFallbackAdapter : Bool = false;
 	@:optional

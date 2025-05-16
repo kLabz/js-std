@@ -26,5 +26,5 @@ package js.webxrDomOverlays;
 
 typedef XRDOMOverlayState = {
 	@:optional
-	var type : js.webxrDomOverlays.XRDOMOverlayType;
+	var type : XRDOMOverlayType;
 };

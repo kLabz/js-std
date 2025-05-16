@@ -25,5 +25,5 @@
 package js.cssAnimationWorklet;
 
 extern class WorkletGroupEffect {
-	function getChildren():Array<js.cssAnimationWorklet.WorkletAnimationEffect>;
+	function getChildren():Array<WorkletAnimationEffect>;
 }

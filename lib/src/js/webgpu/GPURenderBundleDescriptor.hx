@@ -24,5 +24,5 @@
 
 package js.webgpu;
 
-typedef GPURenderBundleDescriptor = js.webgpu.GPUObjectDescriptorBase & {
+typedef GPURenderBundleDescriptor = GPUObjectDescriptorBase & {
 };

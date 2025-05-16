@@ -26,5 +26,5 @@ package js.sanitizerApi;
 
 typedef SetHTMLOptions = {
 	@:optional
-	var sanitizer : haxe.extern.EitherType<js.sanitizerApi.Sanitizer, haxe.extern.EitherType<js.sanitizerApi.SanitizerConfig, js.sanitizerApi.SanitizerPresets>> = "default";
+	var sanitizer : haxe.extern.EitherType<Sanitizer, haxe.extern.EitherType<SanitizerConfig, SanitizerPresets>> = "default";
 };

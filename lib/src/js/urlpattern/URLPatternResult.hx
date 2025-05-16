@@ -28,19 +28,19 @@ typedef URLPatternResult = {
 	@:optional
 	var inputs : Array<URLPatternInput>;
 	@:optional
-	var protocol : js.urlpattern.URLPatternComponentResult;
+	var protocol : URLPatternComponentResult;
 	@:optional
-	var username : js.urlpattern.URLPatternComponentResult;
+	var username : URLPatternComponentResult;
 	@:optional
-	var password : js.urlpattern.URLPatternComponentResult;
+	var password : URLPatternComponentResult;
 	@:optional
-	var hostname : js.urlpattern.URLPatternComponentResult;
+	var hostname : URLPatternComponentResult;
 	@:optional
-	var port : js.urlpattern.URLPatternComponentResult;
+	var port : URLPatternComponentResult;
 	@:optional
-	var pathname : js.urlpattern.URLPatternComponentResult;
+	var pathname : URLPatternComponentResult;
 	@:optional
-	var search : js.urlpattern.URLPatternComponentResult;
+	var search : URLPatternComponentResult;
 	@:optional
-	var hash : js.urlpattern.URLPatternComponentResult;
+	var hash : URLPatternComponentResult;
 };

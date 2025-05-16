@@ -24,6 +24,6 @@
 
 package js.cssConditional;
 
-extern class CSSMediaRule extends js.cssConditional.CSSConditionRule {
+extern class CSSMediaRule extends CSSConditionRule {
 
 }

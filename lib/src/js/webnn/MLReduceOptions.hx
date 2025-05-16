@@ -24,7 +24,7 @@
 
 package js.webnn;
 
-typedef MLReduceOptions = js.webnn.MLOperatorOptions & {
+typedef MLReduceOptions = MLOperatorOptions & {
 	@:optional
 	var axes : Array<Int>;
 	@:optional

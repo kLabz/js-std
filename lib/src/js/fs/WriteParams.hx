@@ -25,7 +25,7 @@
 package js.fs;
 
 typedef WriteParams = {
-	var type : js.fs.WriteCommandType;
+	var type : WriteCommandType;
 	@:optional
 	var size : Float;
 	@:optional

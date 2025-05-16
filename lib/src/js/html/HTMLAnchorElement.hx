@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLAnchorElement extends js.html.HTMLElement {
+extern class HTMLAnchorElement extends HTMLElement {
 	function new():Void;
 }

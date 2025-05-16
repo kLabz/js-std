@@ -24,7 +24,7 @@
 
 package js.webauthn;
 
-typedef PublicKeyCredentialUserEntity = js.webauthn.PublicKeyCredentialEntity & {
+typedef PublicKeyCredentialUserEntity = PublicKeyCredentialEntity & {
 	var id : BufferSource;
 	var displayName : String;
 };

@@ -26,7 +26,7 @@ package js.mediacaptureAutomation;
 
 typedef MockCapturePromptResultConfiguration = {
 	@:optional
-	var getUserMedia : js.mediacaptureAutomation.MockCapturePromptResult;
+	var getUserMedia : MockCapturePromptResult;
 	@:optional
-	var getDisplayMedia : js.mediacaptureAutomation.MockCapturePromptResult;
+	var getDisplayMedia : MockCapturePromptResult;
 };

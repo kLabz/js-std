@@ -24,7 +24,7 @@
 
 package js.webrtcStats;
 
-typedef RTCVideoSourceStats = js.webrtcStats.RTCMediaSourceStats & {
+typedef RTCVideoSourceStats = RTCMediaSourceStats & {
 	@:optional
 	var width : Int;
 	@:optional

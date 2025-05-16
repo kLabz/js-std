@@ -24,9 +24,9 @@
 
 package js.webrtc;
 
-typedef RTCRtpSendParameters = js.webrtc.RTCRtpParameters & {
+typedef RTCRtpSendParameters = RTCRtpParameters & {
 	var transactionId : String;
-	var encodings : Array<js.webrtc.RTCRtpEncodingParameters>;
+	var encodings : Array<RTCRtpEncodingParameters>;
 	@:optional
 	var degradationPreference : js.mstContentHint.RTCDegradationPreference;
 };

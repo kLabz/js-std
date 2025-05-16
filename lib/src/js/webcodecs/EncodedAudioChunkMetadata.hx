@@ -26,5 +26,5 @@ package js.webcodecs;
 
 typedef EncodedAudioChunkMetadata = {
 	@:optional
-	var decoderConfig : js.webcodecs.AudioDecoderConfig;
+	var decoderConfig : AudioDecoderConfig;
 };

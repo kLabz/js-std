@@ -24,8 +24,8 @@
 
 package js.mediaCapabilities;
 
-typedef MediaDecodingConfiguration = js.mediaCapabilities.MediaConfiguration & {
-	var type : js.mediaCapabilities.MediaDecodingType;
+typedef MediaDecodingConfiguration = MediaConfiguration & {
+	var type : MediaDecodingType;
 	@:optional
-	var keySystemConfiguration : js.mediaCapabilities.MediaCapabilitiesKeySystemConfiguration;
+	var keySystemConfiguration : MediaCapabilitiesKeySystemConfiguration;
 };

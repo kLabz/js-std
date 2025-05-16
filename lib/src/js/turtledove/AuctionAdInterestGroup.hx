@@ -24,7 +24,7 @@
 
 package js.turtledove;
 
-typedef AuctionAdInterestGroup = js.turtledove.GenerateBidInterestGroup & {
+typedef AuctionAdInterestGroup = GenerateBidInterestGroup & {
 	@:optional
 	var priority : Float = 0.0;
 	@:optional
@@ -33,5 +33,5 @@ typedef AuctionAdInterestGroup = js.turtledove.GenerateBidInterestGroup & {
 	@:optional
 	var additionalBidKey : String;
 	@:optional
-	var privateAggregationConfig : js.turtledove.ProtectedAudiencePrivateAggregationConfig;
+	var privateAggregationConfig : ProtectedAudiencePrivateAggregationConfig;
 };

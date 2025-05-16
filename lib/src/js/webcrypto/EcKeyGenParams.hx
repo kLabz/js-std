@@ -24,6 +24,6 @@
 
 package js.webcrypto;
 
-typedef EcKeyGenParams = js.webcrypto.Algorithm & {
+typedef EcKeyGenParams = Algorithm & {
 	var namedCurve : NamedCurve;
 };

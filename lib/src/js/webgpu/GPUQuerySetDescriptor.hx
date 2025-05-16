@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-typedef GPUQuerySetDescriptor = js.webgpu.GPUObjectDescriptorBase & {
-	var type : js.webgpu.GPUQueryType;
+typedef GPUQuerySetDescriptor = GPUObjectDescriptorBase & {
+	var type : GPUQueryType;
 	var count : GPUSize32;
 };

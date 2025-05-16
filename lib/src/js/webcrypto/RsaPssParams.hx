@@ -24,6 +24,6 @@
 
 package js.webcrypto;
 
-typedef RsaPssParams = js.webcrypto.Algorithm & {
+typedef RsaPssParams = Algorithm & {
 	var saltLength : Int;
 };

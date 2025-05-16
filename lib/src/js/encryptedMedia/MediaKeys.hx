@@ -25,7 +25,7 @@
 package js.encryptedMedia;
 
 extern class MediaKeys {
-	function createSession(?sessionType:js.encryptedMedia.MediaKeySessionType):js.encryptedMedia.MediaKeySession;
-	function getStatusForPolicy(?policy:js.encryptedMedia.MediaKeysPolicy):js.lib.Promise<js.encryptedMedia.MediaKeyStatus>;
+	function createSession(?sessionType:MediaKeySessionType):MediaKeySession;
+	function getStatusForPolicy(?policy:MediaKeysPolicy):js.lib.Promise<MediaKeyStatus>;
 	function setServerCertificate(serverCertificate:BufferSource):js.lib.Promise<Bool>;
 }

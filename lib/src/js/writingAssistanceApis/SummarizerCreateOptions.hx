@@ -24,7 +24,7 @@
 
 package js.writingAssistanceApis;
 
-typedef SummarizerCreateOptions = js.writingAssistanceApis.SummarizerCreateCoreOptions & {
+typedef SummarizerCreateOptions = SummarizerCreateCoreOptions & {
 	@:optional
 	var signal : js.dom.AbortSignal;
 	@:optional

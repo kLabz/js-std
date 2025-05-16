@@ -26,21 +26,21 @@ package js.mediacaptureStreams;
 
 typedef MediaTrackCapabilities = {
 	@:optional
-	var width : js.mediacaptureStreams.ULongRange;
+	var width : ULongRange;
 	@:optional
-	var height : js.mediacaptureStreams.ULongRange;
+	var height : ULongRange;
 	@:optional
-	var aspectRatio : js.mediacaptureStreams.DoubleRange;
+	var aspectRatio : DoubleRange;
 	@:optional
-	var frameRate : js.mediacaptureStreams.DoubleRange;
+	var frameRate : DoubleRange;
 	@:optional
 	var facingMode : Array<String>;
 	@:optional
 	var resizeMode : Array<String>;
 	@:optional
-	var sampleRate : js.mediacaptureStreams.ULongRange;
+	var sampleRate : ULongRange;
 	@:optional
-	var sampleSize : js.mediacaptureStreams.ULongRange;
+	var sampleSize : ULongRange;
 	@:optional
 	var echoCancellation : Array<Bool>;
 	@:optional
@@ -48,9 +48,9 @@ typedef MediaTrackCapabilities = {
 	@:optional
 	var noiseSuppression : Array<Bool>;
 	@:optional
-	var latency : js.mediacaptureStreams.DoubleRange;
+	var latency : DoubleRange;
 	@:optional
-	var channelCount : js.mediacaptureStreams.ULongRange;
+	var channelCount : ULongRange;
 	@:optional
 	var deviceId : String;
 	@:optional

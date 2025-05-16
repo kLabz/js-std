@@ -25,9 +25,9 @@
 package js.geometry;
 
 extern class DOMQuad {
-	function new(?p1:js.geometry.DOMPointInit, ?p2:js.geometry.DOMPointInit, ?p3:js.geometry.DOMPointInit, ?p4:js.geometry.DOMPointInit):Void;
-	function fromRect(?other:js.geometry.DOMRectInit):js.geometry.DOMQuad;
-	function fromQuad(?other:js.geometry.DOMQuadInit):js.geometry.DOMQuad;
-	function getBounds():js.geometry.DOMRect;
+	function new(?p1:DOMPointInit, ?p2:DOMPointInit, ?p3:DOMPointInit, ?p4:DOMPointInit):Void;
+	function fromRect(?other:DOMRectInit):DOMQuad;
+	function fromQuad(?other:DOMQuadInit):DOMQuad;
+	function getBounds():DOMRect;
 	function toJSON():object;
 }

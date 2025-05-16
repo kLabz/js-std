@@ -24,7 +24,7 @@
 
 package js.uievents;
 
-extern class InputEvent extends js.uievents.UIEvent {
-	function new(type:String, ?eventInitDict:js.uievents.InputEventInit):Void;
+extern class InputEvent extends UIEvent {
+	function new(type:String, ?eventInitDict:InputEventInit):Void;
 	function getTargetRanges():Array<js.dom.StaticRange>;
 }

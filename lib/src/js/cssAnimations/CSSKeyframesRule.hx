@@ -25,8 +25,8 @@
 package js.cssAnimations;
 
 extern class CSSKeyframesRule extends js.cssom.CSSRule {
-	function (index:Int):js.cssAnimations.CSSKeyframeRule;
+	function (index:Int):CSSKeyframeRule;
 	function appendRule(rule:CSSOMString):Void;
 	function deleteRule(select:CSSOMString):Void;
-	function findRule(select:CSSOMString):js.cssAnimations.CSSKeyframeRule;
+	function findRule(select:CSSOMString):CSSKeyframeRule;
 }

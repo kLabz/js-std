@@ -30,5 +30,5 @@ typedef RegistrationOptions = {
 	@:optional
 	var type : js.html.WorkerType = "classic";
 	@:optional
-	var updateViaCache : js.serviceWorkers.ServiceWorkerUpdateViaCache = "imports";
+	var updateViaCache : ServiceWorkerUpdateViaCache = "imports";
 };

@@ -26,9 +26,9 @@ package js.webBluetooth;
 
 typedef RequestDeviceOptions = {
 	@:optional
-	var filters : Array<js.webBluetooth.BluetoothLEScanFilterInit>;
+	var filters : Array<BluetoothLEScanFilterInit>;
 	@:optional
-	var exclusionFilters : Array<js.webBluetooth.BluetoothLEScanFilterInit>;
+	var exclusionFilters : Array<BluetoothLEScanFilterInit>;
 	@:optional
 	var optionalServices : Array<BluetoothServiceUUID> = [];
 	@:optional

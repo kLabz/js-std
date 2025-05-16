@@ -25,5 +25,5 @@
 package js.cookieStore;
 
 extern class ExtendableCookieChangeEvent extends js.serviceWorkers.ExtendableEvent {
-	function new(type:String, ?eventInitDict:js.cookieStore.ExtendableCookieChangeEventInit):Void;
+	function new(type:String, ?eventInitDict:ExtendableCookieChangeEventInit):Void;
 }

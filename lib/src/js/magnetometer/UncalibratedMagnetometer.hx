@@ -25,5 +25,5 @@
 package js.magnetometer;
 
 extern class UncalibratedMagnetometer extends js.genericSensor.Sensor {
-	function new(?sensorOptions:js.magnetometer.MagnetometerSensorOptions):Void;
+	function new(?sensorOptions:MagnetometerSensorOptions):Void;
 }

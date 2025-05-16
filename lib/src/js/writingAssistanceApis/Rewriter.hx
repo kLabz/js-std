@@ -25,9 +25,9 @@
 package js.writingAssistanceApis;
 
 extern class Rewriter {
-	function create(?options:js.writingAssistanceApis.RewriterCreateOptions):js.lib.Promise<js.writingAssistanceApis.Rewriter>;
-	function availability(?options:js.writingAssistanceApis.RewriterCreateCoreOptions):js.lib.Promise<js.writingAssistanceApis.Availability>;
-	function rewrite(input:String, ?options:js.writingAssistanceApis.RewriterRewriteOptions):js.lib.Promise<String>;
-	function rewriteStreaming(input:String, ?options:js.writingAssistanceApis.RewriterRewriteOptions):js.streams.ReadableStream;
-	function measureInputUsage(input:String, ?options:js.writingAssistanceApis.RewriterRewriteOptions):js.lib.Promise<Float>;
+	function create(?options:RewriterCreateOptions):js.lib.Promise<Rewriter>;
+	function availability(?options:RewriterCreateCoreOptions):js.lib.Promise<Availability>;
+	function rewrite(input:String, ?options:RewriterRewriteOptions):js.lib.Promise<String>;
+	function rewriteStreaming(input:String, ?options:RewriterRewriteOptions):js.streams.ReadableStream;
+	function measureInputUsage(input:String, ?options:RewriterRewriteOptions):js.lib.Promise<Float>;
 }

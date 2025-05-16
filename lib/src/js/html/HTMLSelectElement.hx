@@ -24,14 +24,14 @@
 
 package js.html;
 
-extern class HTMLSelectElement extends js.html.HTMLElement {
+extern class HTMLSelectElement extends HTMLElement {
 	function new():Void;
-	function item(index:Int):js.html.HTMLOptionElement;
-	function namedItem(name:String):js.html.HTMLOptionElement;
-	function add(element:haxe.extern.EitherType<js.html.HTMLOptionElement, js.html.HTMLOptGroupElement>, ?before:haxe.extern.EitherType<js.html.HTMLElement, Int>):Void;
+	function item(index:Int):HTMLOptionElement;
+	function namedItem(name:String):HTMLOptionElement;
+	function add(element:haxe.extern.EitherType<HTMLOptionElement, HTMLOptGroupElement>, ?before:haxe.extern.EitherType<HTMLElement, Int>):Void;
 	overload function remove():Void;
 	overload function remove(index:Int):Void;
-	function (index:Int, option:js.html.HTMLOptionElement):Void;
+	function (index:Int, option:HTMLOptionElement):Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
 	function setCustomValidity(error:String):Void;

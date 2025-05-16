@@ -30,7 +30,7 @@ extern class Selection {
 	function removeRange(range:js.dom.Range):Void;
 	function removeAllRanges():Void;
 	function empty():Void;
-	function getComposedRanges(?options:js.selectionApi.GetComposedRangesOptions):Array<js.dom.StaticRange>;
+	function getComposedRanges(?options:GetComposedRangesOptions):Array<js.dom.StaticRange>;
 	function collapse(node:js.dom.Node, ?offset:Int):Void;
 	function setPosition(node:js.dom.Node, ?offset:Int):Void;
 	function collapseToStart():Void;

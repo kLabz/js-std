@@ -24,8 +24,8 @@
 
 package js.html;
 
-extern class HTMLTableRowElement extends js.html.HTMLElement {
+extern class HTMLTableRowElement extends HTMLElement {
 	function new():Void;
-	function insertCell(?index:Int):js.html.HTMLTableCellElement;
+	function insertCell(?index:Int):HTMLTableCellElement;
 	function deleteCell(index:Int):Void;
 }

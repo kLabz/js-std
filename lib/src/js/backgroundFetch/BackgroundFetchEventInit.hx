@@ -25,5 +25,5 @@
 package js.backgroundFetch;
 
 typedef BackgroundFetchEventInit = js.serviceWorkers.ExtendableEventInit & {
-	var registration : js.backgroundFetch.BackgroundFetchRegistration;
+	var registration : BackgroundFetchRegistration;
 };

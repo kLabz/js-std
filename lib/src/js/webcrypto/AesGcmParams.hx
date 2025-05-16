@@ -24,7 +24,7 @@
 
 package js.webcrypto;
 
-typedef AesGcmParams = js.webcrypto.Algorithm & {
+typedef AesGcmParams = Algorithm & {
 	var iv : BufferSource;
 	@:optional
 	var additionalData : BufferSource;

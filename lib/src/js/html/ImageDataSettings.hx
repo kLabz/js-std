@@ -26,7 +26,7 @@ package js.html;
 
 typedef ImageDataSettings = {
 	@:optional
-	var colorSpace : js.html.PredefinedColorSpace;
+	var colorSpace : PredefinedColorSpace;
 	@:optional
-	var pixelFormat : js.html.ImageDataPixelFormat = "rgba-unorm8";
+	var pixelFormat : ImageDataPixelFormat = "rgba-unorm8";
 };

@@ -25,5 +25,5 @@
 package js.accelerometer;
 
 extern class Accelerometer extends js.genericSensor.Sensor {
-	function new(?options:js.accelerometer.AccelerometerSensorOptions):Void;
+	function new(?options:AccelerometerSensorOptions):Void;
 }

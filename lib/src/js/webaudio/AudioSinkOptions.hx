@@ -25,5 +25,5 @@
 package js.webaudio;
 
 typedef AudioSinkOptions = {
-	var type : js.webaudio.AudioSinkType;
+	var type : AudioSinkType;
 };

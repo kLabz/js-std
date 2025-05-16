@@ -24,7 +24,7 @@
 
 package js.writingAssistanceApis;
 
-typedef RewriterCreateOptions = js.writingAssistanceApis.RewriterCreateCoreOptions & {
+typedef RewriterCreateOptions = RewriterCreateCoreOptions & {
 	@:optional
 	var signal : js.dom.AbortSignal;
 	@:optional

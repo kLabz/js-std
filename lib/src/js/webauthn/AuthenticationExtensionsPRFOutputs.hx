@@ -28,5 +28,5 @@ typedef AuthenticationExtensionsPRFOutputs = {
 	@:optional
 	var enabled : Bool;
 	@:optional
-	var results : js.webauthn.AuthenticationExtensionsPRFValues;
+	var results : AuthenticationExtensionsPRFValues;
 };

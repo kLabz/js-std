@@ -29,7 +29,7 @@ typedef ItemDetails = {
 	var title : String;
 	var price : js.paymentRequest.PaymentCurrencyAmount;
 	@:optional
-	var type : js.digitalGoods.ItemType;
+	var type : ItemType;
 	@:optional
 	var description : String;
 	@:optional

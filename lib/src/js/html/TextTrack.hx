@@ -25,6 +25,6 @@
 package js.html;
 
 extern class TextTrack extends js.dom.EventTarget {
-	function addCue(cue:js.html.TextTrackCue):Void;
-	function removeCue(cue:js.html.TextTrackCue):Void;
+	function addCue(cue:TextTrackCue):Void;
+	function removeCue(cue:TextTrackCue):Void;
 }

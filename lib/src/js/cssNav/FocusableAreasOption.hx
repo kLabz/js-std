@@ -26,5 +26,5 @@ package js.cssNav;
 
 typedef FocusableAreasOption = {
 	@:optional
-	var mode : js.cssNav.FocusableAreaSearchMode;
+	var mode : FocusableAreaSearchMode;
 };

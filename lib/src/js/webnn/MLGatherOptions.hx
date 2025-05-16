@@ -24,7 +24,7 @@
 
 package js.webnn;
 
-typedef MLGatherOptions = js.webnn.MLOperatorOptions & {
+typedef MLGatherOptions = MLOperatorOptions & {
 	@:optional
 	var axis : Int = 0;
 };

@@ -28,13 +28,13 @@ typedef GPUBindGroupLayoutEntry = {
 	var binding : GPUIndex32;
 	var visibility : GPUShaderStageFlags;
 	@:optional
-	var buffer : js.webgpu.GPUBufferBindingLayout;
+	var buffer : GPUBufferBindingLayout;
 	@:optional
-	var sampler : js.webgpu.GPUSamplerBindingLayout;
+	var sampler : GPUSamplerBindingLayout;
 	@:optional
-	var texture : js.webgpu.GPUTextureBindingLayout;
+	var texture : GPUTextureBindingLayout;
 	@:optional
-	var storageTexture : js.webgpu.GPUStorageTextureBindingLayout;
+	var storageTexture : GPUStorageTextureBindingLayout;
 	@:optional
-	var externalTexture : js.webgpu.GPUExternalTextureBindingLayout;
+	var externalTexture : GPUExternalTextureBindingLayout;
 };

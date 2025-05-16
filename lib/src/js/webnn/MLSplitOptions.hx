@@ -24,7 +24,7 @@
 
 package js.webnn;
 
-typedef MLSplitOptions = js.webnn.MLOperatorOptions & {
+typedef MLSplitOptions = MLOperatorOptions & {
 	@:optional
 	var axis : Int = 0;
 };

@@ -25,5 +25,5 @@
 package js.intersectionObserver;
 
 extern class IntersectionObserverEntry {
-	function new(intersectionObserverEntryInit:js.intersectionObserver.IntersectionObserverEntryInit):Void;
+	function new(intersectionObserverEntryInit:IntersectionObserverEntryInit):Void;
 }

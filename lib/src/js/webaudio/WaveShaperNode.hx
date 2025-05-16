@@ -24,6 +24,6 @@
 
 package js.webaudio;
 
-extern class WaveShaperNode extends js.webaudio.AudioNode {
-	function new(context:js.webaudio.BaseAudioContext, ?options:js.webaudio.WaveShaperOptions):Void;
+extern class WaveShaperNode extends AudioNode {
+	function new(context:BaseAudioContext, ?options:WaveShaperOptions):Void;
 }

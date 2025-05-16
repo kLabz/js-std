@@ -30,5 +30,5 @@ typedef ChapterInformationInit = {
 	@:optional
 	var startTime : Float = 0;
 	@:optional
-	var artwork : Array<js.mediasession.MediaImage> = [];
+	var artwork : Array<MediaImage> = [];
 };

@@ -25,9 +25,9 @@
 package js.cssFontLoading;
 
 extern class FontFaceSet extends js.dom.EventTarget {
-	function add(font:js.cssFontLoading.FontFace):js.cssFontLoading.FontFaceSet;
-	function delete(font:js.cssFontLoading.FontFace):Bool;
+	function add(font:FontFace):FontFaceSet;
+	function delete(font:FontFace):Bool;
 	function clear():Void;
-	function load(font:CSSOMString, ?text:CSSOMString):js.lib.Promise<Array<js.cssFontLoading.FontFace>>;
+	function load(font:CSSOMString, ?text:CSSOMString):js.lib.Promise<Array<FontFace>>;
 	function check(font:CSSOMString, ?text:CSSOMString):Bool;
 }

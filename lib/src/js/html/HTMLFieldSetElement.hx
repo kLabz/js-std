@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLFieldSetElement extends js.html.HTMLElement {
+extern class HTMLFieldSetElement extends HTMLElement {
 	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;

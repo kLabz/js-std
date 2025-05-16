@@ -30,13 +30,13 @@ typedef GenerateBidOutput = {
 	@:optional
 	var bidCurrency : String;
 	@:optional
-	var render : haxe.extern.EitherType<String, js.turtledove.AdRender>;
+	var render : haxe.extern.EitherType<String, AdRender>;
 	@:optional
 	var ad : Any;
 	@:optional
 	var selectedBuyerAndSellerReportingId : String;
 	@:optional
-	var adComponents : Array<haxe.extern.EitherType<String, js.turtledove.AdRender>>;
+	var adComponents : Array<haxe.extern.EitherType<String, AdRender>>;
 	@:optional
 	var adCost : Float;
 	@:optional

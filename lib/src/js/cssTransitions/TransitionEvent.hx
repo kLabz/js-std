@@ -25,5 +25,5 @@
 package js.cssTransitions;
 
 extern class TransitionEvent extends js.dom.Event {
-	function new(type:CSSOMString, ?transitionEventInitDict:js.cssTransitions.TransitionEventInit):Void;
+	function new(type:CSSOMString, ?transitionEventInitDict:TransitionEventInit):Void;
 }

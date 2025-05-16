@@ -25,9 +25,9 @@
 package js.webgpu;
 
 extern class GPUQueue {
-	function submit(commandBuffers:Array<js.webgpu.GPUCommandBuffer>):Void;
+	function submit(commandBuffers:Array<GPUCommandBuffer>):Void;
 	function onSubmittedWorkDone():js.lib.Promise<Void>;
-	function writeBuffer(buffer:js.webgpu.GPUBuffer, bufferOffset:GPUSize64, data:AllowSharedBufferSource, ?dataOffset:GPUSize64, ?size:GPUSize64):Void;
-	function writeTexture(destination:js.webgpu.GPUTexelCopyTextureInfo, data:AllowSharedBufferSource, dataLayout:js.webgpu.GPUTexelCopyBufferLayout, size:GPUExtent3D):Void;
-	function copyExternalImageToTexture(source:js.webgpu.GPUCopyExternalImageSourceInfo, destination:js.webgpu.GPUCopyExternalImageDestInfo, copySize:GPUExtent3D):Void;
+	function writeBuffer(buffer:GPUBuffer, bufferOffset:GPUSize64, data:AllowSharedBufferSource, ?dataOffset:GPUSize64, ?size:GPUSize64):Void;
+	function writeTexture(destination:GPUTexelCopyTextureInfo, data:AllowSharedBufferSource, dataLayout:GPUTexelCopyBufferLayout, size:GPUExtent3D):Void;
+	function copyExternalImageToTexture(source:GPUCopyExternalImageSourceInfo, destination:GPUCopyExternalImageDestInfo, copySize:GPUExtent3D):Void;
 }

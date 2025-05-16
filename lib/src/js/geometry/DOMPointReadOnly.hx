@@ -26,7 +26,7 @@ package js.geometry;
 
 extern class DOMPointReadOnly {
 	function new(?x:Float, ?y:Float, ?z:Float, ?w:Float):Void;
-	function fromPoint(?other:js.geometry.DOMPointInit):js.geometry.DOMPointReadOnly;
-	function matrixTransform(?matrix:js.geometry.DOMMatrixInit):js.geometry.DOMPoint;
+	function fromPoint(?other:DOMPointInit):DOMPointReadOnly;
+	function matrixTransform(?matrix:DOMMatrixInit):DOMPoint;
 	function toJSON():object;
 }

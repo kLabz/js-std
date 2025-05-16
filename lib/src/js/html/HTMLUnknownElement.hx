@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLUnknownElement extends js.html.HTMLElement {
+extern class HTMLUnknownElement extends HTMLElement {
 
 }

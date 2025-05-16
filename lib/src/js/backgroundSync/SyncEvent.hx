@@ -25,5 +25,5 @@
 package js.backgroundSync;
 
 extern class SyncEvent extends js.serviceWorkers.ExtendableEvent {
-	function new(type:String, init:js.backgroundSync.SyncEventInit):Void;
+	function new(type:String, init:SyncEventInit):Void;
 }

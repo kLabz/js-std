@@ -24,15 +24,15 @@
 
 package js.webnn;
 
-typedef MLLstmCellOptions = js.webnn.MLOperatorOptions & {
+typedef MLLstmCellOptions = MLOperatorOptions & {
 	@:optional
-	var bias : js.webnn.MLOperand;
+	var bias : MLOperand;
 	@:optional
-	var recurrentBias : js.webnn.MLOperand;
+	var recurrentBias : MLOperand;
 	@:optional
-	var peepholeWeight : js.webnn.MLOperand;
+	var peepholeWeight : MLOperand;
 	@:optional
-	var layout : js.webnn.MLLstmWeightLayout = "iofg";
+	var layout : MLLstmWeightLayout = "iofg";
 	@:optional
-	var activations : Array<js.webnn.MLRecurrentNetworkActivation>;
+	var activations : Array<MLRecurrentNetworkActivation>;
 };

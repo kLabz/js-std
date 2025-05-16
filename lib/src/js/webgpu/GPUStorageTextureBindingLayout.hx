@@ -26,8 +26,8 @@ package js.webgpu;
 
 typedef GPUStorageTextureBindingLayout = {
 	@:optional
-	var access : js.webgpu.GPUStorageTextureAccess = "write-only";
-	var format : js.webgpu.GPUTextureFormat;
+	var access : GPUStorageTextureAccess = "write-only";
+	var format : GPUTextureFormat;
 	@:optional
-	var viewDimension : js.webgpu.GPUTextureViewDimension = "2d";
+	var viewDimension : GPUTextureViewDimension = "2d";
 };

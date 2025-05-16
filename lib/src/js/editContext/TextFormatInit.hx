@@ -30,7 +30,7 @@ typedef TextFormatInit = {
 	@:optional
 	var rangeEnd : Int;
 	@:optional
-	var underlineStyle : js.editContext.UnderlineStyle;
+	var underlineStyle : UnderlineStyle;
 	@:optional
-	var underlineThickness : js.editContext.UnderlineThickness;
+	var underlineThickness : UnderlineThickness;
 };

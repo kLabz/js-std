@@ -32,7 +32,7 @@ typedef SharedStorageRunOperationMethodOptions = {
 	@:optional
 	var keepAlive : Bool = false;
 	@:optional
-	var privateAggregationConfig : js.sharedStorage.SharedStoragePrivateAggregationConfig;
+	var privateAggregationConfig : SharedStoragePrivateAggregationConfig;
 	@:optional
 	var savedQuery : String;
 };

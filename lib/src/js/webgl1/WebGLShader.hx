@@ -24,6 +24,6 @@
 
 package js.webgl1;
 
-extern class WebGLShader extends js.webgl1.WebGLObject {
+extern class WebGLShader extends WebGLObject {
 
 }

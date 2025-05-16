@@ -25,5 +25,5 @@
 package js.schedulingApis;
 
 extern class TaskSignal extends js.dom.AbortSignal {
-	function any(signals:Array<js.dom.AbortSignal>, ?init:js.schedulingApis.TaskSignalAnyInit):js.schedulingApis.TaskSignal;
+	function any(signals:Array<js.dom.AbortSignal>, ?init:TaskSignalAnyInit):TaskSignal;
 }

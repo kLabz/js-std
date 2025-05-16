@@ -26,7 +26,7 @@ package js.html;
 
 typedef PageSwapEventInit = js.dom.EventInit & {
 	@:optional
-	var activation : js.html.NavigationActivation = null;
+	var activation : NavigationActivation = null;
 	@:optional
 	var viewTransition : js.cssViewTransitions.ViewTransition = null;
 };

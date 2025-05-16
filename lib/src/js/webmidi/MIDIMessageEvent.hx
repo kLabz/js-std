@@ -25,5 +25,5 @@
 package js.webmidi;
 
 extern class MIDIMessageEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:js.webmidi.MIDIMessageEventInit):Void;
+	function new(type:String, ?eventInitDict:MIDIMessageEventInit):Void;
 }

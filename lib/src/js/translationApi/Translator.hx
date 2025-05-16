@@ -25,9 +25,9 @@
 package js.translationApi;
 
 extern class Translator {
-	function create(options:js.translationApi.TranslatorCreateOptions):js.lib.Promise<js.translationApi.Translator>;
-	function availability(options:js.translationApi.TranslatorCreateCoreOptions):js.lib.Promise<js.writingAssistanceApis.Availability>;
-	function translate(input:String, ?options:js.translationApi.TranslatorTranslateOptions):js.lib.Promise<String>;
-	function translateStreaming(input:String, ?options:js.translationApi.TranslatorTranslateOptions):js.streams.ReadableStream;
-	function measureInputUsage(input:String, ?options:js.translationApi.TranslatorTranslateOptions):js.lib.Promise<Float>;
+	function create(options:TranslatorCreateOptions):js.lib.Promise<Translator>;
+	function availability(options:TranslatorCreateCoreOptions):js.lib.Promise<js.writingAssistanceApis.Availability>;
+	function translate(input:String, ?options:TranslatorTranslateOptions):js.lib.Promise<String>;
+	function translateStreaming(input:String, ?options:TranslatorTranslateOptions):js.streams.ReadableStream;
+	function measureInputUsage(input:String, ?options:TranslatorTranslateOptions):js.lib.Promise<Float>;
 }

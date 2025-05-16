@@ -35,6 +35,6 @@ extern class XPathResult {
 	static inline var ORDERED_NODE_SNAPSHOT_TYPE : Int = 7;
 	static inline var ANY_UNORDERED_NODE_TYPE : Int = 8;
 	static inline var FIRST_ORDERED_NODE_TYPE : Int = 9;
-	function iterateNext():js.dom.Node;
-	function snapshotItem(index:Int):js.dom.Node;
+	function iterateNext():Node;
+	function snapshotItem(index:Int):Node;
 }

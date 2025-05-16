@@ -25,5 +25,5 @@
 package js.periodicBackgroundSync;
 
 extern class PeriodicSyncEvent extends js.serviceWorkers.ExtendableEvent {
-	function new(type:String, init:js.periodicBackgroundSync.PeriodicSyncEventInit):Void;
+	function new(type:String, init:PeriodicSyncEventInit):Void;
 }

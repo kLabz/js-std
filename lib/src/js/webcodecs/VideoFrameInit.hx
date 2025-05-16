@@ -30,7 +30,7 @@ typedef VideoFrameInit = {
 	@:optional
 	var timestamp : Float;
 	@:optional
-	var alpha : js.webcodecs.AlphaOption = "keep";
+	var alpha : AlphaOption = "keep";
 	@:optional
 	var visibleRect : js.geometry.DOMRectInit;
 	@:optional
@@ -42,5 +42,5 @@ typedef VideoFrameInit = {
 	@:optional
 	var displayHeight : Int;
 	@:optional
-	var metadata : js.webcodecs.VideoFrameMetadata;
+	var metadata : VideoFrameMetadata;
 };

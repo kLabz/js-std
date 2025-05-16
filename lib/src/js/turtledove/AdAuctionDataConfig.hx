@@ -30,9 +30,9 @@ typedef AdAuctionDataConfig = {
 	@:optional
 	var coordinatorOrigin : String;
 	@:optional
-	var sellers : Array<js.turtledove.AdAuctionOneSeller>;
+	var sellers : Array<AdAuctionOneSeller>;
 	@:optional
 	var requestSize : Int;
 	@:optional
-	var perBuyerConfig : haxe.DynamicAccess<js.turtledove.AdAuctionDataBuyerConfig>;
+	var perBuyerConfig : haxe.DynamicAccess<AdAuctionDataBuyerConfig>;
 };

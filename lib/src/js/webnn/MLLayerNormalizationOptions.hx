@@ -24,11 +24,11 @@
 
 package js.webnn;
 
-typedef MLLayerNormalizationOptions = js.webnn.MLOperatorOptions & {
+typedef MLLayerNormalizationOptions = MLOperatorOptions & {
 	@:optional
-	var scale : js.webnn.MLOperand;
+	var scale : MLOperand;
 	@:optional
-	var bias : js.webnn.MLOperand;
+	var bias : MLOperand;
 	@:optional
 	var axes : Array<Int>;
 	@:optional

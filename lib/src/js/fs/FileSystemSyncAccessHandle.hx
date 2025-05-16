@@ -25,8 +25,8 @@
 package js.fs;
 
 extern class FileSystemSyncAccessHandle {
-	function read(buffer:AllowSharedBufferSource, ?options:js.fs.FileSystemReadWriteOptions):Float;
-	function write(buffer:AllowSharedBufferSource, ?options:js.fs.FileSystemReadWriteOptions):Float;
+	function read(buffer:AllowSharedBufferSource, ?options:FileSystemReadWriteOptions):Float;
+	function write(buffer:AllowSharedBufferSource, ?options:FileSystemReadWriteOptions):Float;
 	function truncate(newSize:Float):Void;
 	function getSize():Float;
 	function flush():Void;

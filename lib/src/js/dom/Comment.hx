@@ -24,6 +24,6 @@
 
 package js.dom;
 
-extern class Comment extends js.dom.CharacterData {
+extern class Comment extends CharacterData {
 	function new(?data:String):Void;
 }

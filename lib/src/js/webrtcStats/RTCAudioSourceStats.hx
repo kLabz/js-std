@@ -24,7 +24,7 @@
 
 package js.webrtcStats;
 
-typedef RTCAudioSourceStats = js.webrtcStats.RTCMediaSourceStats & {
+typedef RTCAudioSourceStats = RTCMediaSourceStats & {
 	@:optional
 	var audioLevel : Float;
 	@:optional

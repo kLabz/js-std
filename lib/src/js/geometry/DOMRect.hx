@@ -24,7 +24,7 @@
 
 package js.geometry;
 
-extern class DOMRect extends js.geometry.DOMRectReadOnly {
+extern class DOMRect extends DOMRectReadOnly {
 	function new(?x:Float, ?y:Float, ?width:Float, ?height:Float):Void;
-	function fromRect(?other:js.geometry.DOMRectInit):js.geometry.DOMRect;
+	function fromRect(?other:DOMRectInit):DOMRect;
 }

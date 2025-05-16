@@ -25,14 +25,14 @@
 package js.webgpu;
 
 extern class GPUCommandEncoder {
-	function beginRenderPass(descriptor:js.webgpu.GPURenderPassDescriptor):js.webgpu.GPURenderPassEncoder;
-	function beginComputePass(?descriptor:js.webgpu.GPUComputePassDescriptor):js.webgpu.GPUComputePassEncoder;
-	overload function copyBufferToBuffer(source:js.webgpu.GPUBuffer, destination:js.webgpu.GPUBuffer, ?size:GPUSize64):Void;
-	overload function copyBufferToBuffer(source:js.webgpu.GPUBuffer, sourceOffset:GPUSize64, destination:js.webgpu.GPUBuffer, destinationOffset:GPUSize64, ?size:GPUSize64):Void;
-	function copyBufferToTexture(source:js.webgpu.GPUTexelCopyBufferInfo, destination:js.webgpu.GPUTexelCopyTextureInfo, copySize:GPUExtent3D):Void;
-	function copyTextureToBuffer(source:js.webgpu.GPUTexelCopyTextureInfo, destination:js.webgpu.GPUTexelCopyBufferInfo, copySize:GPUExtent3D):Void;
-	function copyTextureToTexture(source:js.webgpu.GPUTexelCopyTextureInfo, destination:js.webgpu.GPUTexelCopyTextureInfo, copySize:GPUExtent3D):Void;
-	function clearBuffer(buffer:js.webgpu.GPUBuffer, ?offset:GPUSize64, ?size:GPUSize64):Void;
-	function resolveQuerySet(querySet:js.webgpu.GPUQuerySet, firstQuery:GPUSize32, queryCount:GPUSize32, destination:js.webgpu.GPUBuffer, destinationOffset:GPUSize64):Void;
-	function finish(?descriptor:js.webgpu.GPUCommandBufferDescriptor):js.webgpu.GPUCommandBuffer;
+	function beginRenderPass(descriptor:GPURenderPassDescriptor):GPURenderPassEncoder;
+	function beginComputePass(?descriptor:GPUComputePassDescriptor):GPUComputePassEncoder;
+	overload function copyBufferToBuffer(source:GPUBuffer, destination:GPUBuffer, ?size:GPUSize64):Void;
+	overload function copyBufferToBuffer(source:GPUBuffer, sourceOffset:GPUSize64, destination:GPUBuffer, destinationOffset:GPUSize64, ?size:GPUSize64):Void;
+	function copyBufferToTexture(source:GPUTexelCopyBufferInfo, destination:GPUTexelCopyTextureInfo, copySize:GPUExtent3D):Void;
+	function copyTextureToBuffer(source:GPUTexelCopyTextureInfo, destination:GPUTexelCopyBufferInfo, copySize:GPUExtent3D):Void;
+	function copyTextureToTexture(source:GPUTexelCopyTextureInfo, destination:GPUTexelCopyTextureInfo, copySize:GPUExtent3D):Void;
+	function clearBuffer(buffer:GPUBuffer, ?offset:GPUSize64, ?size:GPUSize64):Void;
+	function resolveQuerySet(querySet:GPUQuerySet, firstQuery:GPUSize32, queryCount:GPUSize32, destination:GPUBuffer, destinationOffset:GPUSize64):Void;
+	function finish(?descriptor:GPUCommandBufferDescriptor):GPUCommandBuffer;
 }

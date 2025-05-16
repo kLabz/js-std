@@ -24,6 +24,6 @@
 
 package js.accelerometer;
 
-extern class GravitySensor extends js.accelerometer.Accelerometer {
-	function new(?options:js.accelerometer.AccelerometerSensorOptions):Void;
+extern class GravitySensor extends Accelerometer {
+	function new(?options:AccelerometerSensorOptions):Void;
 }

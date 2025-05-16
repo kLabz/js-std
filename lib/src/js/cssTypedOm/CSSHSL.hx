@@ -24,6 +24,6 @@
 
 package js.cssTypedOm;
 
-extern class CSSHSL extends js.cssTypedOm.CSSColorValue {
+extern class CSSHSL extends CSSColorValue {
 	function new(h:CSSColorAngle, s:CSSColorPercent, l:CSSColorPercent, ?alpha:CSSColorPercent):Void;
 }

@@ -24,6 +24,6 @@
 
 package js.webcrypto;
 
-typedef RsaHashedKeyAlgorithm = js.webcrypto.RsaKeyAlgorithm & {
-	var hash : js.webcrypto.KeyAlgorithm;
+typedef RsaHashedKeyAlgorithm = RsaKeyAlgorithm & {
+	var hash : KeyAlgorithm;
 };

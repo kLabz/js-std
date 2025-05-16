@@ -30,5 +30,5 @@ typedef OfflineAudioContextOptions = {
 	var length : Int;
 	var sampleRate : Float;
 	@:optional
-	var renderSizeHint : haxe.extern.EitherType<js.webaudio.AudioContextRenderSizeCategory, Int> = "default";
+	var renderSizeHint : haxe.extern.EitherType<AudioContextRenderSizeCategory, Int> = "default";
 };

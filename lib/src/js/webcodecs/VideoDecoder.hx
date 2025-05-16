@@ -25,11 +25,11 @@
 package js.webcodecs;
 
 extern class VideoDecoder extends js.dom.EventTarget {
-	function new(init:js.webcodecs.VideoDecoderInit):Void;
-	function configure(config:js.webcodecs.VideoDecoderConfig):Void;
-	function decode(chunk:js.webcodecs.EncodedVideoChunk):Void;
+	function new(init:VideoDecoderInit):Void;
+	function configure(config:VideoDecoderConfig):Void;
+	function decode(chunk:EncodedVideoChunk):Void;
 	function flush():js.lib.Promise<Void>;
 	function reset():Void;
 	function close():Void;
-	function isConfigSupported(config:js.webcodecs.VideoDecoderConfig):js.lib.Promise<js.webcodecs.VideoDecoderSupport>;
+	function isConfigSupported(config:VideoDecoderConfig):js.lib.Promise<VideoDecoderSupport>;
 }

@@ -72,13 +72,13 @@ typedef AuctionAdConfig = {
 	@:optional
 	var auctionReportBuyerKeys : Array<bigint>;
 	@:optional
-	var auctionReportBuyers : haxe.DynamicAccess<js.turtledove.AuctionReportBuyersConfig>;
+	var auctionReportBuyers : haxe.DynamicAccess<AuctionReportBuyersConfig>;
 	@:optional
-	var auctionReportBuyerDebugModeConfig : js.turtledove.AuctionReportBuyerDebugModeConfig;
+	var auctionReportBuyerDebugModeConfig : AuctionReportBuyerDebugModeConfig;
 	@:optional
 	var requiredSellerCapabilities : Array<String>;
 	@:optional
-	var privateAggregationConfig : js.turtledove.ProtectedAudiencePrivateAggregationConfig;
+	var privateAggregationConfig : ProtectedAudiencePrivateAggregationConfig;
 	@:optional
 	var requestedSize : haxe.DynamicAccess<String>;
 	@:optional
@@ -88,11 +88,11 @@ typedef AuctionAdConfig = {
 	@:optional
 	var auctionNonce : String;
 	@:optional
-	var sellerRealTimeReportingConfig : js.turtledove.AuctionRealTimeReportingConfig;
+	var sellerRealTimeReportingConfig : AuctionRealTimeReportingConfig;
 	@:optional
-	var perBuyerRealTimeReportingConfig : haxe.DynamicAccess<js.turtledove.AuctionRealTimeReportingConfig>;
+	var perBuyerRealTimeReportingConfig : haxe.DynamicAccess<AuctionRealTimeReportingConfig>;
 	@:optional
-	var componentAuctions : Array<js.turtledove.AuctionAdConfig> = [];
+	var componentAuctions : Array<AuctionAdConfig> = [];
 	@:optional
 	var signal : js.dom.AbortSignal;
 	@:optional

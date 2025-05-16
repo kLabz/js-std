@@ -24,5 +24,5 @@
 
 package js.webgpu;
 
-typedef GPUCommandEncoderDescriptor = js.webgpu.GPUObjectDescriptorBase & {
+typedef GPUCommandEncoderDescriptor = GPUObjectDescriptorBase & {
 };

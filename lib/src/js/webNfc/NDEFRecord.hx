@@ -25,6 +25,6 @@
 package js.webNfc;
 
 extern class NDEFRecord {
-	function new(recordInit:js.webNfc.NDEFRecordInit):Void;
-	function toRecords():Array<js.webNfc.NDEFRecord>;
+	function new(recordInit:NDEFRecordInit):Void;
+	function toRecords():Array<NDEFRecord>;
 }

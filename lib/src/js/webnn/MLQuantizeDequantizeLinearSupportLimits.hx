@@ -26,11 +26,11 @@ package js.webnn;
 
 typedef MLQuantizeDequantizeLinearSupportLimits = {
 	@:optional
-	var input : js.webnn.MLTensorLimits;
+	var input : MLTensorLimits;
 	@:optional
-	var scale : js.webnn.MLTensorLimits;
+	var scale : MLTensorLimits;
 	@:optional
-	var zeroPoint : js.webnn.MLTensorLimits;
+	var zeroPoint : MLTensorLimits;
 	@:optional
-	var output : js.webnn.MLDataTypeLimits;
+	var output : MLDataTypeLimits;
 };

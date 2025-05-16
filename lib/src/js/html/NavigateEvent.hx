@@ -25,7 +25,7 @@
 package js.html;
 
 extern class NavigateEvent extends js.dom.Event {
-	function new(type:String, eventInitDict:js.html.NavigateEventInit):Void;
-	function intercept(?options:js.html.NavigationInterceptOptions):Void;
+	function new(type:String, eventInitDict:NavigateEventInit):Void;
+	function intercept(?options:NavigationInterceptOptions):Void;
 	function scroll():Void;
 }

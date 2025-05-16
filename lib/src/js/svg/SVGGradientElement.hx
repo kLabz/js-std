@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGGradientElement extends js.svg.SVGElement {
+extern class SVGGradientElement extends SVGElement {
 	static inline var SVG_SPREADMETHOD_UNKNOWN : Int = 0;
 	static inline var SVG_SPREADMETHOD_PAD : Int = 1;
 	static inline var SVG_SPREADMETHOD_REFLECT : Int = 2;

@@ -25,6 +25,6 @@
 package js.html;
 
 extern class AudioTrackList extends js.dom.EventTarget {
-	function (index:Int):js.html.AudioTrack;
-	function getTrackById(id:String):js.html.AudioTrack;
+	function (index:Int):AudioTrack;
+	function getTrackById(id:String):AudioTrack;
 }

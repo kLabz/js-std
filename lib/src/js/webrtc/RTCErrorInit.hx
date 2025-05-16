@@ -25,7 +25,7 @@
 package js.webrtc;
 
 typedef RTCErrorInit = {
-	var errorDetail : js.webrtc.RTCErrorDetailType;
+	var errorDetail : RTCErrorDetailType;
 	@:optional
 	var sdpLineNumber : Int;
 	@:optional

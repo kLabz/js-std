@@ -24,6 +24,6 @@
 
 package js.cssTypedOm;
 
-extern class CSSKeywordValue extends js.cssTypedOm.CSSStyleValue {
+extern class CSSKeywordValue extends CSSStyleValue {
 	function new(value:String):Void;
 }

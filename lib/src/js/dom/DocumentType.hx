@@ -24,6 +24,6 @@
 
 package js.dom;
 
-extern class DocumentType extends js.dom.Node {
+extern class DocumentType extends Node {
 
 }

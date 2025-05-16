@@ -26,7 +26,7 @@ package js.notifications;
 
 typedef NotificationOptions = {
 	@:optional
-	var dir : js.notifications.NotificationDirection = "auto";
+	var dir : NotificationDirection = "auto";
 	@:optional
 	var lang : String = "";
 	@:optional
@@ -52,5 +52,5 @@ typedef NotificationOptions = {
 	@:optional
 	var data : Any = null;
 	@:optional
-	var actions : Array<js.notifications.NotificationAction> = [];
+	var actions : Array<NotificationAction> = [];
 };

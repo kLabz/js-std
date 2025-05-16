@@ -24,6 +24,6 @@
 
 package js.webaudio;
 
-extern class ConvolverNode extends js.webaudio.AudioNode {
-	function new(context:js.webaudio.BaseAudioContext, ?options:js.webaudio.ConvolverOptions):Void;
+extern class ConvolverNode extends AudioNode {
+	function new(context:BaseAudioContext, ?options:ConvolverOptions):Void;
 }

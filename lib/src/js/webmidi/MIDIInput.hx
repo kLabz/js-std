@@ -24,6 +24,6 @@
 
 package js.webmidi;
 
-extern class MIDIInput extends js.webmidi.MIDIPort {
+extern class MIDIInput extends MIDIPort {
 
 }

@@ -25,7 +25,7 @@
 package js.clipboardApis;
 
 extern class ClipboardItem {
-	function new(items:haxe.DynamicAccess<ClipboardItemData>, ?options:js.clipboardApis.ClipboardItemOptions):Void;
+	function new(items:haxe.DynamicAccess<ClipboardItemData>, ?options:ClipboardItemOptions):Void;
 	function getType(type:String):js.lib.Promise<js.fileapi.Blob>;
 	function supports(type:String):Bool;
 }

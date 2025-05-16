@@ -24,13 +24,13 @@
 
 package js.html;
 
-extern class HTMLMediaElement extends js.html.HTMLElement {
+extern class HTMLMediaElement extends HTMLElement {
 	static inline var NETWORK_EMPTY : Int = 0;
 	static inline var NETWORK_IDLE : Int = 1;
 	static inline var NETWORK_LOADING : Int = 2;
 	static inline var NETWORK_NO_SOURCE : Int = 3;
 	function load():Void;
-	function canPlayType(type:String):js.html.CanPlayTypeResult;
+	function canPlayType(type:String):CanPlayTypeResult;
 	static inline var HAVE_NOTHING : Int = 0;
 	static inline var HAVE_METADATA : Int = 1;
 	static inline var HAVE_CURRENT_DATA : Int = 2;
@@ -40,7 +40,7 @@ extern class HTMLMediaElement extends js.html.HTMLElement {
 	function getStartDate():object;
 	function play():js.lib.Promise<Void>;
 	function pause():Void;
-	function addTextTrack(kind:js.html.TextTrackKind, ?label:String, ?language:String):js.html.TextTrack;
+	function addTextTrack(kind:TextTrackKind, ?label:String, ?language:String):TextTrack;
 	function setSinkId(sinkId:String):js.lib.Promise<Void>;
 	function setMediaKeys(mediaKeys:js.encryptedMedia.MediaKeys):js.lib.Promise<Void>;
 	function captureStream():js.mediacaptureStreams.MediaStream;

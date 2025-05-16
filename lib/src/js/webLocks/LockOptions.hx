@@ -26,7 +26,7 @@ package js.webLocks;
 
 typedef LockOptions = {
 	@:optional
-	var mode : js.webLocks.LockMode = "exclusive";
+	var mode : LockMode = "exclusive";
 	@:optional
 	var ifAvailable : Bool = false;
 	@:optional

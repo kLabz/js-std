@@ -25,7 +25,7 @@
 package js.webgpu;
 
 typedef GPUProgrammableStage = {
-	var module : js.webgpu.GPUShaderModule;
+	var module : GPUShaderModule;
 	@:optional
 	var entryPoint : String;
 	@:optional

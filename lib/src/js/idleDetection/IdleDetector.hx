@@ -27,5 +27,5 @@ package js.idleDetection;
 extern class IdleDetector extends js.dom.EventTarget {
 	function new():Void;
 	function requestPermission():js.lib.Promise<js.permissions.PermissionState>;
-	function start(?options:js.idleDetection.IdleOptions):js.lib.Promise<Void>;
+	function start(?options:IdleOptions):js.lib.Promise<Void>;
 }

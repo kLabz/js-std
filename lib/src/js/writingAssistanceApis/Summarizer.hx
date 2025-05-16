@@ -25,9 +25,9 @@
 package js.writingAssistanceApis;
 
 extern class Summarizer {
-	function create(?options:js.writingAssistanceApis.SummarizerCreateOptions):js.lib.Promise<js.writingAssistanceApis.Summarizer>;
-	function availability(?options:js.writingAssistanceApis.SummarizerCreateCoreOptions):js.lib.Promise<js.writingAssistanceApis.Availability>;
-	function summarize(input:String, ?options:js.writingAssistanceApis.SummarizerSummarizeOptions):js.lib.Promise<String>;
-	function summarizeStreaming(input:String, ?options:js.writingAssistanceApis.SummarizerSummarizeOptions):js.streams.ReadableStream;
-	function measureInputUsage(input:String, ?options:js.writingAssistanceApis.SummarizerSummarizeOptions):js.lib.Promise<Float>;
+	function create(?options:SummarizerCreateOptions):js.lib.Promise<Summarizer>;
+	function availability(?options:SummarizerCreateCoreOptions):js.lib.Promise<Availability>;
+	function summarize(input:String, ?options:SummarizerSummarizeOptions):js.lib.Promise<String>;
+	function summarizeStreaming(input:String, ?options:SummarizerSummarizeOptions):js.streams.ReadableStream;
+	function measureInputUsage(input:String, ?options:SummarizerSummarizeOptions):js.lib.Promise<Float>;
 }

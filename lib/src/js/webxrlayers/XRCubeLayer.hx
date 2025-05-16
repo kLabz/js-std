@@ -24,6 +24,6 @@
 
 package js.webxrlayers;
 
-extern class XRCubeLayer extends js.webxrlayers.XRCompositionLayer {
+extern class XRCubeLayer extends XRCompositionLayer {
 
 }

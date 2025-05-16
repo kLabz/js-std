@@ -26,5 +26,5 @@ package js.wasmJsApi;
 
 typedef ModuleExportDescriptor = {
 	var name : String;
-	var kind : js.wasmJsApi.ImportExportKind;
+	var kind : ImportExportKind;
 };

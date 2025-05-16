@@ -36,13 +36,13 @@ typedef RequestInit = {
 	@:optional
 	var referrerPolicy : js.referrerPolicy.ReferrerPolicy;
 	@:optional
-	var mode : js.fetch.RequestMode;
+	var mode : RequestMode;
 	@:optional
-	var credentials : js.fetch.RequestCredentials;
+	var credentials : RequestCredentials;
 	@:optional
-	var cache : js.fetch.RequestCache;
+	var cache : RequestCache;
 	@:optional
-	var redirect : js.fetch.RequestRedirect;
+	var redirect : RequestRedirect;
 	@:optional
 	var integrity : String;
 	@:optional
@@ -50,9 +50,9 @@ typedef RequestInit = {
 	@:optional
 	var signal : js.dom.AbortSignal;
 	@:optional
-	var duplex : js.fetch.RequestDuplex;
+	var duplex : RequestDuplex;
 	@:optional
-	var priority : js.fetch.RequestPriority;
+	var priority : RequestPriority;
 	@:optional
 	var window : Any;
 	@:optional

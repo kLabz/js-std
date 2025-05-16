@@ -24,15 +24,15 @@
 
 package js.webgpu;
 
-typedef GPUTextureViewDescriptor = js.webgpu.GPUObjectDescriptorBase & {
+typedef GPUTextureViewDescriptor = GPUObjectDescriptorBase & {
 	@:optional
-	var format : js.webgpu.GPUTextureFormat;
+	var format : GPUTextureFormat;
 	@:optional
-	var dimension : js.webgpu.GPUTextureViewDimension;
+	var dimension : GPUTextureViewDimension;
 	@:optional
 	var usage : GPUTextureUsageFlags = 0;
 	@:optional
-	var aspect : js.webgpu.GPUTextureAspect = "all";
+	var aspect : GPUTextureAspect = "all";
 	@:optional
 	var baseMipLevel : GPUIntegerCoordinate = 0;
 	@:optional

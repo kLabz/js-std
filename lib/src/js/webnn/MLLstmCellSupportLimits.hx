@@ -26,21 +26,21 @@ package js.webnn;
 
 typedef MLLstmCellSupportLimits = {
 	@:optional
-	var input : js.webnn.MLTensorLimits;
+	var input : MLTensorLimits;
 	@:optional
-	var weight : js.webnn.MLTensorLimits;
+	var weight : MLTensorLimits;
 	@:optional
-	var recurrentWeight : js.webnn.MLTensorLimits;
+	var recurrentWeight : MLTensorLimits;
 	@:optional
-	var hiddenState : js.webnn.MLTensorLimits;
+	var hiddenState : MLTensorLimits;
 	@:optional
-	var cellState : js.webnn.MLTensorLimits;
+	var cellState : MLTensorLimits;
 	@:optional
-	var bias : js.webnn.MLTensorLimits;
+	var bias : MLTensorLimits;
 	@:optional
-	var recurrentBias : js.webnn.MLTensorLimits;
+	var recurrentBias : MLTensorLimits;
 	@:optional
-	var peepholeWeight : js.webnn.MLTensorLimits;
+	var peepholeWeight : MLTensorLimits;
 	@:optional
-	var outputs : js.webnn.MLDataTypeLimits;
+	var outputs : MLDataTypeLimits;
 };

@@ -28,7 +28,7 @@ typedef SecurePaymentConfirmationRequest = {
 	var challenge : BufferSource;
 	var rpId : String;
 	var credentialIds : Array<BufferSource>;
-	var instrument : js.securePaymentConfirmation.PaymentCredentialInstrument;
+	var instrument : PaymentCredentialInstrument;
 	@:optional
 	var timeout : Int;
 	@:optional

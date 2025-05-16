@@ -25,16 +25,16 @@
 package js.webauthn;
 
 typedef PublicKeyCredentialCreationOptionsJSON = {
-	var rp : js.webauthn.PublicKeyCredentialRpEntity;
-	var user : js.webauthn.PublicKeyCredentialUserEntityJSON;
+	var rp : PublicKeyCredentialRpEntity;
+	var user : PublicKeyCredentialUserEntityJSON;
 	var challenge : Base64URLString;
-	var pubKeyCredParams : Array<js.webauthn.PublicKeyCredentialParameters>;
+	var pubKeyCredParams : Array<PublicKeyCredentialParameters>;
 	@:optional
 	var timeout : Int;
 	@:optional
-	var excludeCredentials : Array<js.webauthn.PublicKeyCredentialDescriptorJSON> = [];
+	var excludeCredentials : Array<PublicKeyCredentialDescriptorJSON> = [];
 	@:optional
-	var authenticatorSelection : js.webauthn.AuthenticatorSelectionCriteria;
+	var authenticatorSelection : AuthenticatorSelectionCriteria;
 	@:optional
 	var hints : Array<String> = [];
 	@:optional
@@ -42,5 +42,5 @@ typedef PublicKeyCredentialCreationOptionsJSON = {
 	@:optional
 	var attestationFormats : Array<String> = [];
 	@:optional
-	var extensions : js.webauthn.AuthenticationExtensionsClientInputsJSON;
+	var extensions : AuthenticationExtensionsClientInputsJSON;
 };

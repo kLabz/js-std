@@ -24,6 +24,6 @@
 
 package js.webgpu;
 
-extern class GPUOutOfMemoryError extends js.webgpu.GPUError {
+extern class GPUOutOfMemoryError extends GPUError {
 	function new(message:String):Void;
 }

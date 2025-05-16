@@ -54,11 +54,11 @@ typedef GenerateBidInterestGroup = {
 	@:optional
 	var userBiddingSignals : Any;
 	@:optional
-	var ads : Array<js.turtledove.AuctionAd>;
+	var ads : Array<AuctionAd>;
 	@:optional
-	var adComponents : Array<js.turtledove.AuctionAd>;
+	var adComponents : Array<AuctionAd>;
 	@:optional
-	var adSizes : haxe.DynamicAccess<js.turtledove.AuctionAdInterestGroupSize>;
+	var adSizes : haxe.DynamicAccess<AuctionAdInterestGroupSize>;
 	@:optional
 	var sizeGroups : haxe.DynamicAccess<Array<String>>;
 };

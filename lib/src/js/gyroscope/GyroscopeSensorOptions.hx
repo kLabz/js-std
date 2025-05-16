@@ -26,5 +26,5 @@ package js.gyroscope;
 
 typedef GyroscopeSensorOptions = js.genericSensor.SensorOptions & {
 	@:optional
-	var referenceFrame : js.gyroscope.GyroscopeLocalCoordinateSystem = "device";
+	var referenceFrame : GyroscopeLocalCoordinateSystem = "device";
 };

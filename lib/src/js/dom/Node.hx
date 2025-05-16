@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class Node extends js.dom.EventTarget {
+extern class Node extends EventTarget {
 	static inline var ELEMENT_NODE : Int = 1;
 	static inline var ATTRIBUTE_NODE : Int = 2;
 	static inline var TEXT_NODE : Int = 3;
@@ -37,25 +37,25 @@ extern class Node extends js.dom.EventTarget {
 	static inline var DOCUMENT_TYPE_NODE : Int = 10;
 	static inline var DOCUMENT_FRAGMENT_NODE : Int = 11;
 	static inline var NOTATION_NODE : Int = 12;
-	function getRootNode(?options:js.dom.GetRootNodeOptions):js.dom.Node;
+	function getRootNode(?options:GetRootNodeOptions):Node;
 	function hasChildNodes():Bool;
 	function normalize():Void;
-	function cloneNode(?subtree:Bool):js.dom.Node;
-	function isEqualNode(otherNode:js.dom.Node):Bool;
-	function isSameNode(otherNode:js.dom.Node):Bool;
+	function cloneNode(?subtree:Bool):Node;
+	function isEqualNode(otherNode:Node):Bool;
+	function isSameNode(otherNode:Node):Bool;
 	static inline var DOCUMENT_POSITION_DISCONNECTED : Int = 0x01;
 	static inline var DOCUMENT_POSITION_PRECEDING : Int = 0x02;
 	static inline var DOCUMENT_POSITION_FOLLOWING : Int = 0x04;
 	static inline var DOCUMENT_POSITION_CONTAINS : Int = 0x08;
 	static inline var DOCUMENT_POSITION_CONTAINED_BY : Int = 0x10;
 	static inline var DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC : Int = 0x20;
-	function compareDocumentPosition(other:js.dom.Node):Int;
-	function contains(other:js.dom.Node):Bool;
+	function compareDocumentPosition(other:Node):Int;
+	function contains(other:Node):Bool;
 	function lookupPrefix(namespace:String):String;
 	function lookupNamespaceURI(prefix:String):String;
 	function isDefaultNamespace(namespace:String):Bool;
-	function insertBefore(node:js.dom.Node, child:js.dom.Node):js.dom.Node;
-	function appendChild(node:js.dom.Node):js.dom.Node;
-	function replaceChild(node:js.dom.Node, child:js.dom.Node):js.dom.Node;
-	function removeChild(child:js.dom.Node):js.dom.Node;
+	function insertBefore(node:Node, child:Node):Node;
+	function appendChild(node:Node):Node;
+	function replaceChild(node:Node, child:Node):Node;
+	function removeChild(child:Node):Node;
 }

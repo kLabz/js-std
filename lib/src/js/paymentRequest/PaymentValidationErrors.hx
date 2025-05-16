@@ -26,9 +26,9 @@ package js.paymentRequest;
 
 typedef PaymentValidationErrors = {
 	@:optional
-	var payer : js.paymentRequest.PayerErrors;
+	var payer : PayerErrors;
 	@:optional
-	var shippingAddress : js.paymentRequest.AddressErrors;
+	var shippingAddress : AddressErrors;
 	@:optional
 	var error : String;
 	@:optional

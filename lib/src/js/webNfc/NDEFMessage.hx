@@ -25,5 +25,5 @@
 package js.webNfc;
 
 extern class NDEFMessage {
-	function new(messageInit:js.webNfc.NDEFMessageInit):Void;
+	function new(messageInit:NDEFMessageInit):Void;
 }

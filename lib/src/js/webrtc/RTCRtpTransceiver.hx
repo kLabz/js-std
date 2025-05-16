@@ -26,5 +26,5 @@ package js.webrtc;
 
 extern class RTCRtpTransceiver {
 	function stop():Void;
-	function setCodecPreferences(codecs:Array<js.webrtc.RTCRtpCodec>):Void;
+	function setCodecPreferences(codecs:Array<RTCRtpCodec>):Void;
 }

@@ -33,11 +33,11 @@ typedef VideoConfiguration = {
 	@:optional
 	var hasAlphaChannel : Bool;
 	@:optional
-	var hdrMetadataType : js.mediaCapabilities.HdrMetadataType;
+	var hdrMetadataType : HdrMetadataType;
 	@:optional
-	var colorGamut : js.mediaCapabilities.ColorGamut;
+	var colorGamut : ColorGamut;
 	@:optional
-	var transferFunction : js.mediaCapabilities.TransferFunction;
+	var transferFunction : TransferFunction;
 	@:optional
 	var scalabilityMode : String;
 	@:optional

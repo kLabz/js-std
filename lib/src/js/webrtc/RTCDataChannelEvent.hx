@@ -25,5 +25,5 @@
 package js.webrtc;
 
 extern class RTCDataChannelEvent extends js.dom.Event {
-	function new(type:String, eventInitDict:js.webrtc.RTCDataChannelEventInit):Void;
+	function new(type:String, eventInitDict:RTCDataChannelEventInit):Void;
 }

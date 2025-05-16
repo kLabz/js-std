@@ -25,6 +25,6 @@
 package js.schedulingApis;
 
 extern class TaskController extends js.dom.AbortController {
-	function new(?init:js.schedulingApis.TaskControllerInit):Void;
-	function setPriority(priority:js.schedulingApis.TaskPriority):Void;
+	function new(?init:TaskControllerInit):Void;
+	function setPriority(priority:TaskPriority):Void;
 }

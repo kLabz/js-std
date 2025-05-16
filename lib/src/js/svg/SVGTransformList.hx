@@ -26,13 +26,13 @@ package js.svg;
 
 extern class SVGTransformList {
 	function clear():Void;
-	function initialize(newItem:js.svg.SVGTransform):js.svg.SVGTransform;
-	function getItem(index:Int):js.svg.SVGTransform;
-	function insertItemBefore(newItem:js.svg.SVGTransform, index:Int):js.svg.SVGTransform;
-	function replaceItem(newItem:js.svg.SVGTransform, index:Int):js.svg.SVGTransform;
-	function removeItem(index:Int):js.svg.SVGTransform;
-	function appendItem(newItem:js.svg.SVGTransform):js.svg.SVGTransform;
-	function (index:Int, newItem:js.svg.SVGTransform):Void;
-	function createSVGTransformFromMatrix(?matrix:js.geometry.DOMMatrix2DInit):js.svg.SVGTransform;
-	function consolidate():js.svg.SVGTransform;
+	function initialize(newItem:SVGTransform):SVGTransform;
+	function getItem(index:Int):SVGTransform;
+	function insertItemBefore(newItem:SVGTransform, index:Int):SVGTransform;
+	function replaceItem(newItem:SVGTransform, index:Int):SVGTransform;
+	function removeItem(index:Int):SVGTransform;
+	function appendItem(newItem:SVGTransform):SVGTransform;
+	function (index:Int, newItem:SVGTransform):Void;
+	function createSVGTransformFromMatrix(?matrix:js.geometry.DOMMatrix2DInit):SVGTransform;
+	function consolidate():SVGTransform;
 }

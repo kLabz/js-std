@@ -25,5 +25,5 @@
 package js.webgpu;
 
 extern class GPUShaderModule {
-	function getCompilationInfo():js.lib.Promise<js.webgpu.GPUCompilationInfo>;
+	function getCompilationInfo():js.lib.Promise<GPUCompilationInfo>;
 }

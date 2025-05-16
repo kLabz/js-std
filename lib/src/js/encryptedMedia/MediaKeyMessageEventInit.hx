@@ -25,6 +25,6 @@
 package js.encryptedMedia;
 
 typedef MediaKeyMessageEventInit = js.dom.EventInit & {
-	var messageType : js.encryptedMedia.MediaKeyMessageType;
+	var messageType : MediaKeyMessageType;
 	var message : ArrayBuffer;
 };

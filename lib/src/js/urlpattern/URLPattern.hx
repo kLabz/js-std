@@ -25,8 +25,8 @@
 package js.urlpattern;
 
 extern class URLPattern {
-	function new(input:URLPatternInput, baseURL:String, ?options:js.urlpattern.URLPatternOptions):Void;
-	function new(?input:URLPatternInput, ?options:js.urlpattern.URLPatternOptions):Void;
+	function new(input:URLPatternInput, baseURL:String, ?options:URLPatternOptions):Void;
+	function new(?input:URLPatternInput, ?options:URLPatternOptions):Void;
 	function test(?input:URLPatternInput, ?baseURL:String):Bool;
-	function exec(?input:URLPatternInput, ?baseURL:String):js.urlpattern.URLPatternResult;
+	function exec(?input:URLPatternInput, ?baseURL:String):URLPatternResult;
 }

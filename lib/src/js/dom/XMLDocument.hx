@@ -24,6 +24,6 @@
 
 package js.dom;
 
-extern class XMLDocument extends js.dom.Document {
+extern class XMLDocument extends Document {
 
 }

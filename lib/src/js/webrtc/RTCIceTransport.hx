@@ -25,14 +25,14 @@
 package js.webrtc;
 
 extern class RTCIceTransport extends js.dom.EventTarget {
-	function getLocalCandidates():Array<js.webrtc.RTCIceCandidate>;
-	function getRemoteCandidates():Array<js.webrtc.RTCIceCandidate>;
-	function getSelectedCandidatePair():js.webrtc.RTCIceCandidatePair;
-	function getLocalParameters():js.webrtc.RTCIceParameters;
-	function getRemoteParameters():js.webrtc.RTCIceParameters;
+	function getLocalCandidates():Array<RTCIceCandidate>;
+	function getRemoteCandidates():Array<RTCIceCandidate>;
+	function getSelectedCandidatePair():RTCIceCandidatePair;
+	function getLocalParameters():RTCIceParameters;
+	function getRemoteParameters():RTCIceParameters;
 	function new():Void;
 	function gather(?options:js.webrtcIce.RTCIceGatherOptions):Void;
-	function start(?remoteParameters:js.webrtc.RTCIceParameters, ?role:js.webrtc.RTCIceRole):Void;
+	function start(?remoteParameters:RTCIceParameters, ?role:RTCIceRole):Void;
 	function stop():Void;
-	function addRemoteCandidate(?remoteCandidate:js.webrtc.RTCIceCandidateInit):Void;
+	function addRemoteCandidate(?remoteCandidate:RTCIceCandidateInit):Void;
 }

@@ -26,7 +26,7 @@ package js.mediaCapabilities;
 
 typedef MediaConfiguration = {
 	@:optional
-	var video : js.mediaCapabilities.VideoConfiguration;
+	var video : VideoConfiguration;
 	@:optional
-	var audio : js.mediaCapabilities.AudioConfiguration;
+	var audio : AudioConfiguration;
 };

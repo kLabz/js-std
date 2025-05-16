@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-typedef RTCOfferOptions = js.webrtc.RTCOfferAnswerOptions & {
+typedef RTCOfferOptions = RTCOfferAnswerOptions & {
 	@:optional
 	var iceRestart : Bool = false;
 	@:optional

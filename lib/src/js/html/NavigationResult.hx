@@ -26,7 +26,7 @@ package js.html;
 
 typedef NavigationResult = {
 	@:optional
-	var committed : js.lib.Promise<js.html.NavigationHistoryEntry>;
+	var committed : js.lib.Promise<NavigationHistoryEntry>;
 	@:optional
-	var finished : js.lib.Promise<js.html.NavigationHistoryEntry>;
+	var finished : js.lib.Promise<NavigationHistoryEntry>;
 };

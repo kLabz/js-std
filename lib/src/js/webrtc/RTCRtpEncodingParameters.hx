@@ -24,11 +24,11 @@
 
 package js.webrtc;
 
-typedef RTCRtpEncodingParameters = js.webrtc.RTCRtpCodingParameters & {
+typedef RTCRtpEncodingParameters = RTCRtpCodingParameters & {
 	@:optional
 	var active : Bool = true;
 	@:optional
-	var codec : js.webrtc.RTCRtpCodec;
+	var codec : RTCRtpCodec;
 	@:optional
 	var maxBitrate : Int;
 	@:optional

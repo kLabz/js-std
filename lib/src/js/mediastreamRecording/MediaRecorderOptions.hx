@@ -34,7 +34,7 @@ typedef MediaRecorderOptions = {
 	@:optional
 	var bitsPerSecond : Int;
 	@:optional
-	var audioBitrateMode : js.mediastreamRecording.BitrateMode = "variable";
+	var audioBitrateMode : BitrateMode = "variable";
 	@:optional
 	var videoKeyFrameIntervalDuration : DOMHighResTimeStamp;
 	@:optional

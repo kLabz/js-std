@@ -26,10 +26,10 @@ package js.html;
 
 extern class Navigator {
 	overload function getAutoplayPolicy(type:js.autoplayDetection.AutoplayPolicyMediaType):js.autoplayDetection.AutoplayPolicy;
-	overload function getAutoplayPolicy(element:js.html.HTMLMediaElement):js.autoplayDetection.AutoplayPolicy;
+	overload function getAutoplayPolicy(element:HTMLMediaElement):js.autoplayDetection.AutoplayPolicy;
 	overload function getAutoplayPolicy(context:js.webaudio.AudioContext):js.autoplayDetection.AutoplayPolicy;
-	function sendBeacon(url:String, ?data:BodyInit):Bool;
 	function getBattery():js.lib.Promise<js.batteryStatus.BatteryManager>;
+	function sendBeacon(url:String, ?data:BodyInit):Bool;
 	function requestMediaKeySystemAccess(keySystem:String, supportedConfigurations:Array<js.encryptedMedia.MediaKeySystemConfiguration>):js.lib.Promise<js.encryptedMedia.MediaKeySystemAccess>;
 	function deprecatedReplaceInURN(urnOrConfig:UrnOrConfig, replacements:haxe.DynamicAccess<String>):js.lib.Promise<Void>;
 	function deprecatedURNtoURL(urnOrConfig:UrnOrConfig, ?send_reports:Bool):js.lib.Promise<String>;

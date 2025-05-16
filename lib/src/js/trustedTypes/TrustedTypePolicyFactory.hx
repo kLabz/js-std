@@ -25,7 +25,7 @@
 package js.trustedTypes;
 
 extern class TrustedTypePolicyFactory {
-	function createPolicy(policyName:String, ?policyOptions:js.trustedTypes.TrustedTypePolicyOptions):js.trustedTypes.TrustedTypePolicy;
+	function createPolicy(policyName:String, ?policyOptions:TrustedTypePolicyOptions):TrustedTypePolicy;
 	function isHTML(value:Any):Bool;
 	function isScript(value:Any):Bool;
 	function isScriptURL(value:Any):Bool;

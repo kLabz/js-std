@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class AudioBufferSourceNode extends js.webaudio.AudioScheduledSourceNode {
-	function new(context:js.webaudio.BaseAudioContext, ?options:js.webaudio.AudioBufferSourceOptions):Void;
+extern class AudioBufferSourceNode extends AudioScheduledSourceNode {
+	function new(context:BaseAudioContext, ?options:AudioBufferSourceOptions):Void;
 	function start(?when:Float, ?offset:Float, ?duration:Float):Void;
 }

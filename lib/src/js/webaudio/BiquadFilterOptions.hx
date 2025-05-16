@@ -24,9 +24,9 @@
 
 package js.webaudio;
 
-typedef BiquadFilterOptions = js.webaudio.AudioNodeOptions & {
+typedef BiquadFilterOptions = AudioNodeOptions & {
 	@:optional
-	var type : js.webaudio.BiquadFilterType = "lowpass";
+	var type : BiquadFilterType = "lowpass";
 	@:optional
 	var Q : Float = 1;
 	@:optional

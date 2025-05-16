@@ -25,11 +25,11 @@
 package js.webgpu;
 
 typedef GPUTexelCopyTextureInfo = {
-	var texture : js.webgpu.GPUTexture;
+	var texture : GPUTexture;
 	@:optional
 	var mipLevel : GPUIntegerCoordinate = 0;
 	@:optional
 	var origin : GPUOrigin3D = {  };
 	@:optional
-	var aspect : js.webgpu.GPUTextureAspect = "all";
+	var aspect : GPUTextureAspect = "all";
 };

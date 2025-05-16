@@ -24,6 +24,6 @@
 
 package js.dom;
 
-extern class Attr extends js.dom.Node {
+extern class Attr extends Node {
 
 }

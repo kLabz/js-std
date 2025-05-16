@@ -24,7 +24,7 @@
 
 package js.webAnimations;
 
-typedef ComputedEffectTiming = js.webAnimations.EffectTiming & {
+typedef ComputedEffectTiming = EffectTiming & {
 	@:optional
 	var progress : Float;
 	@:optional

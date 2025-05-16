@@ -24,6 +24,6 @@
 
 package js.cssom;
 
-extern class CSSStyleProperties extends js.cssom.CSSStyleDeclaration {
+extern class CSSStyleProperties extends CSSStyleDeclaration {
 
 }

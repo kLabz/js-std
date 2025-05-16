@@ -25,6 +25,6 @@
 package js.contactPicker;
 
 extern class ContactsManager {
-	function getProperties():js.lib.Promise<Array<js.contactPicker.ContactProperty>>;
-	function select(properties:Array<js.contactPicker.ContactProperty>, ?options:js.contactPicker.ContactsSelectOptions):js.lib.Promise<Array<js.contactPicker.ContactInfo>>;
+	function getProperties():js.lib.Promise<Array<ContactProperty>>;
+	function select(properties:Array<ContactProperty>, ?options:ContactsSelectOptions):js.lib.Promise<Array<ContactInfo>>;
 }

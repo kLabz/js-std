@@ -26,5 +26,5 @@ package js.webrtcEncodedTransform;
 
 typedef RTCEncodedAudioFrameOptions = {
 	@:optional
-	var metadata : js.webrtcEncodedTransform.RTCEncodedAudioFrameMetadata;
+	var metadata : RTCEncodedAudioFrameMetadata;
 };

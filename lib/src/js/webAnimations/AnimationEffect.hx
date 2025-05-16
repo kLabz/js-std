@@ -25,11 +25,11 @@
 package js.webAnimations;
 
 extern class AnimationEffect {
-	function getTiming():js.webAnimations.EffectTiming;
-	function getComputedTiming():js.webAnimations.ComputedEffectTiming;
-	function updateTiming(?timing:js.webAnimations.OptionalEffectTiming):Void;
-	function before(effects:js.webAnimations.AnimationEffect):Void;
-	function after(effects:js.webAnimations.AnimationEffect):Void;
-	function replace(effects:js.webAnimations.AnimationEffect):Void;
+	function getTiming():EffectTiming;
+	function getComputedTiming():ComputedEffectTiming;
+	function updateTiming(?timing:OptionalEffectTiming):Void;
+	function before(effects:AnimationEffect):Void;
+	function after(effects:AnimationEffect):Void;
+	function replace(effects:AnimationEffect):Void;
 	function remove():Void;
 }

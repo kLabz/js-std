@@ -25,7 +25,7 @@
 package js.pushApi;
 
 extern class PushManager {
-	function subscribe(?options:js.pushApi.PushSubscriptionOptionsInit):js.lib.Promise<js.pushApi.PushSubscription>;
-	function getSubscription():js.lib.Promise<js.pushApi.PushSubscription>;
-	function permissionState(?options:js.pushApi.PushSubscriptionOptionsInit):js.lib.Promise<js.permissions.PermissionState>;
+	function subscribe(?options:PushSubscriptionOptionsInit):js.lib.Promise<PushSubscription>;
+	function getSubscription():js.lib.Promise<PushSubscription>;
+	function permissionState(?options:PushSubscriptionOptionsInit):js.lib.Promise<js.permissions.PermissionState>;
 }

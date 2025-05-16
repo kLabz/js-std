@@ -25,5 +25,5 @@
 package js.webusb;
 
 typedef USBConnectionEventInit = js.dom.EventInit & {
-	var device : js.webusb.USBDevice;
+	var device : USBDevice;
 };

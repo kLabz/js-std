@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLVideoElement extends js.html.HTMLMediaElement {
+extern class HTMLVideoElement extends HTMLMediaElement {
 	function new():Void;
 	function getVideoPlaybackQuality():js.mediaPlaybackQuality.VideoPlaybackQuality;
 	function requestPictureInPicture():js.lib.Promise<js.pictureInPicture.PictureInPictureWindow>;

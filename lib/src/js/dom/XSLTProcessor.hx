@@ -26,9 +26,9 @@ package js.dom;
 
 extern class XSLTProcessor {
 	function new():Void;
-	function importStylesheet(style:js.dom.Node):Void;
-	function transformToFragment(source:js.dom.Node, output:js.dom.Document):js.dom.DocumentFragment;
-	function transformToDocument(source:js.dom.Node):js.dom.Document;
+	function importStylesheet(style:Node):Void;
+	function transformToFragment(source:Node, output:Document):DocumentFragment;
+	function transformToDocument(source:Node):Document;
 	function setParameter(namespaceURI:String, localName:String, value:Any):Void;
 	function getParameter(namespaceURI:String, localName:String):Any;
 	function removeParameter(namespaceURI:String, localName:String):Void;

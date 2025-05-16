@@ -24,13 +24,13 @@
 
 package js.html;
 
-extern class HTMLTextAreaElement extends js.html.HTMLElement {
+extern class HTMLTextAreaElement extends HTMLElement {
 	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
 	function setCustomValidity(error:String):Void;
 	function select():Void;
 	overload function setRangeText(replacement:String):Void;
-	overload function setRangeText(replacement:String, start:Int, end:Int, ?selectionMode:js.html.SelectionMode):Void;
+	overload function setRangeText(replacement:String, start:Int, end:Int, ?selectionMode:SelectionMode):Void;
 	function setSelectionRange(start:Int, end:Int, ?direction:String):Void;
 }

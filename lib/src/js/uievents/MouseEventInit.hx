@@ -24,7 +24,7 @@
 
 package js.uievents;
 
-typedef MouseEventInit = js.uievents.EventModifierInit & {
+typedef MouseEventInit = EventModifierInit & {
 	@:optional
 	var screenX : Int = 0;
 	@:optional

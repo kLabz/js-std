@@ -25,8 +25,8 @@
 package js.webBluetooth;
 
 extern class BluetoothRemoteGATTServer {
-	function connect():js.lib.Promise<js.webBluetooth.BluetoothRemoteGATTServer>;
+	function connect():js.lib.Promise<BluetoothRemoteGATTServer>;
 	function disconnect():Void;
-	function getPrimaryService(service:BluetoothServiceUUID):js.lib.Promise<js.webBluetooth.BluetoothRemoteGATTService>;
-	function getPrimaryServices(?service:BluetoothServiceUUID):js.lib.Promise<Array<js.webBluetooth.BluetoothRemoteGATTService>>;
+	function getPrimaryService(service:BluetoothServiceUUID):js.lib.Promise<BluetoothRemoteGATTService>;
+	function getPrimaryServices(?service:BluetoothServiceUUID):js.lib.Promise<Array<BluetoothRemoteGATTService>>;
 }

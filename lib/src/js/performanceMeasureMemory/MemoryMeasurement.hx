@@ -28,5 +28,5 @@ typedef MemoryMeasurement = {
 	@:optional
 	var bytes : Float;
 	@:optional
-	var breakdown : Array<js.performanceMeasureMemory.MemoryBreakdownEntry>;
+	var breakdown : Array<MemoryBreakdownEntry>;
 };

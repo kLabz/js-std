@@ -24,6 +24,6 @@
 
 package js.scrollAnimations;
 
-extern class ViewTimeline extends js.scrollAnimations.ScrollTimeline {
-	function new(?options:js.scrollAnimations.ViewTimelineOptions):Void;
+extern class ViewTimeline extends ScrollTimeline {
+	function new(?options:ViewTimelineOptions):Void;
 }

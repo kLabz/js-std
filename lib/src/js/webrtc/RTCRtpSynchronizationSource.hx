@@ -24,5 +24,5 @@
 
 package js.webrtc;
 
-typedef RTCRtpSynchronizationSource = js.webrtc.RTCRtpContributingSource & {
+typedef RTCRtpSynchronizationSource = RTCRtpContributingSource & {
 };

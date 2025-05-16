@@ -26,11 +26,11 @@ package js.imageCapture;
 
 typedef PhotoCapabilities = {
 	@:optional
-	var redEyeReduction : js.imageCapture.RedEyeReduction;
+	var redEyeReduction : RedEyeReduction;
 	@:optional
-	var imageHeight : js.imageCapture.MediaSettingsRange;
+	var imageHeight : MediaSettingsRange;
 	@:optional
-	var imageWidth : js.imageCapture.MediaSettingsRange;
+	var imageWidth : MediaSettingsRange;
 	@:optional
-	var fillLightMode : Array<js.imageCapture.FillLightMode>;
+	var fillLightMode : Array<FillLightMode>;
 };

@@ -25,7 +25,7 @@
 package js.mediastreamRecording;
 
 extern class MediaRecorder extends js.dom.EventTarget {
-	function new(stream:js.mediacaptureStreams.MediaStream, ?options:js.mediastreamRecording.MediaRecorderOptions):Void;
+	function new(stream:js.mediacaptureStreams.MediaStream, ?options:MediaRecorderOptions):Void;
 	function start(?timeslice:Int):Void;
 	function stop():Void;
 	function pause():Void;

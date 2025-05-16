@@ -25,14 +25,14 @@
 package js.webauthn;
 
 extern class PublicKeyCredential extends js.credentialManagement.Credential {
-	function getClientExtensionResults():js.webauthn.AuthenticationExtensionsClientOutputs;
+	function getClientExtensionResults():AuthenticationExtensionsClientOutputs;
 	function isConditionalMediationAvailable():js.lib.Promise<Bool>;
 	function toJSON():PublicKeyCredentialJSON;
 	function isUserVerifyingPlatformAuthenticatorAvailable():js.lib.Promise<Bool>;
 	function getClientCapabilities():js.lib.Promise<PublicKeyCredentialClientCapabilities>;
-	function parseCreationOptionsFromJSON(options:js.webauthn.PublicKeyCredentialCreationOptionsJSON):js.webauthn.PublicKeyCredentialCreationOptions;
-	function parseRequestOptionsFromJSON(options:js.webauthn.PublicKeyCredentialRequestOptionsJSON):js.webauthn.PublicKeyCredentialRequestOptions;
-	function signalUnknownCredential(options:js.webauthn.UnknownCredentialOptions):js.lib.Promise<Void>;
-	function signalAllAcceptedCredentials(options:js.webauthn.AllAcceptedCredentialsOptions):js.lib.Promise<Void>;
-	function signalCurrentUserDetails(options:js.webauthn.CurrentUserDetailsOptions):js.lib.Promise<Void>;
+	function parseCreationOptionsFromJSON(options:PublicKeyCredentialCreationOptionsJSON):PublicKeyCredentialCreationOptions;
+	function parseRequestOptionsFromJSON(options:PublicKeyCredentialRequestOptionsJSON):PublicKeyCredentialRequestOptions;
+	function signalUnknownCredential(options:UnknownCredentialOptions):js.lib.Promise<Void>;
+	function signalAllAcceptedCredentials(options:AllAcceptedCredentialsOptions):js.lib.Promise<Void>;
+	function signalCurrentUserDetails(options:CurrentUserDetailsOptions):js.lib.Promise<Void>;
 }

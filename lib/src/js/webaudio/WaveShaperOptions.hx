@@ -24,9 +24,9 @@
 
 package js.webaudio;
 
-typedef WaveShaperOptions = js.webaudio.AudioNodeOptions & {
+typedef WaveShaperOptions = AudioNodeOptions & {
 	@:optional
 	var curve : Array<Float>;
 	@:optional
-	var oversample : js.webaudio.OverSampleType = "none";
+	var oversample : OverSampleType = "none";
 };

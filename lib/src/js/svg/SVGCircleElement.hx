@@ -24,6 +24,6 @@
 
 package js.svg;
 
-extern class SVGCircleElement extends js.svg.SVGGeometryElement {
+extern class SVGCircleElement extends SVGGeometryElement {
 
 }

@@ -25,10 +25,10 @@
 package js.trustTokenApi;
 
 typedef PrivateToken = {
-	var version : js.trustTokenApi.TokenVersion;
-	var operation : js.trustTokenApi.OperationType;
+	var version : TokenVersion;
+	var operation : OperationType;
 	@:optional
-	var refreshPolicy : js.trustTokenApi.RefreshPolicy = "none";
+	var refreshPolicy : RefreshPolicy = "none";
 	@:optional
 	var issuers : Array<String>;
 };

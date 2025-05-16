@@ -24,6 +24,6 @@
 
 package js.cssom;
 
-extern class CSSNamespaceRule extends js.cssom.CSSRule {
+extern class CSSNamespaceRule extends CSSRule {
 
 }

@@ -24,7 +24,7 @@
 
 package js.webnn;
 
-typedef MLClampOptions = js.webnn.MLOperatorOptions & {
+typedef MLClampOptions = MLOperatorOptions & {
 	@:optional
 	var minValue : MLNumber;
 	@:optional

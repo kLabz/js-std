@@ -24,7 +24,7 @@
 
 package js.translationApi;
 
-typedef LanguageDetectorCreateOptions = js.translationApi.LanguageDetectorCreateCoreOptions & {
+typedef LanguageDetectorCreateOptions = LanguageDetectorCreateCoreOptions & {
 	@:optional
 	var signal : js.dom.AbortSignal;
 	@:optional

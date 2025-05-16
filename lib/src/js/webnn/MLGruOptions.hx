@@ -24,21 +24,21 @@
 
 package js.webnn;
 
-typedef MLGruOptions = js.webnn.MLOperatorOptions & {
+typedef MLGruOptions = MLOperatorOptions & {
 	@:optional
-	var bias : js.webnn.MLOperand;
+	var bias : MLOperand;
 	@:optional
-	var recurrentBias : js.webnn.MLOperand;
+	var recurrentBias : MLOperand;
 	@:optional
-	var initialHiddenState : js.webnn.MLOperand;
+	var initialHiddenState : MLOperand;
 	@:optional
 	var resetAfter : Bool = true;
 	@:optional
 	var returnSequence : Bool = false;
 	@:optional
-	var direction : js.webnn.MLRecurrentNetworkDirection = "forward";
+	var direction : MLRecurrentNetworkDirection = "forward";
 	@:optional
-	var layout : js.webnn.MLGruWeightLayout = "zrn";
+	var layout : MLGruWeightLayout = "zrn";
 	@:optional
-	var activations : Array<js.webnn.MLRecurrentNetworkActivation>;
+	var activations : Array<MLRecurrentNetworkActivation>;
 };

@@ -26,7 +26,7 @@ package js.cssLayoutApi;
 
 typedef LayoutOptions = {
 	@:optional
-	var childDisplay : js.cssLayoutApi.ChildDisplayType = "block";
+	var childDisplay : ChildDisplayType = "block";
 	@:optional
-	var sizing : js.cssLayoutApi.LayoutSizingMode = "block-like";
+	var sizing : LayoutSizingMode = "block-like";
 };

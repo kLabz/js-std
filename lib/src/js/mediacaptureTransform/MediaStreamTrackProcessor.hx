@@ -25,5 +25,5 @@
 package js.mediacaptureTransform;
 
 extern class MediaStreamTrackProcessor {
-	function new(init:js.mediacaptureTransform.MediaStreamTrackProcessorInit):Void;
+	function new(init:MediaStreamTrackProcessorInit):Void;
 }

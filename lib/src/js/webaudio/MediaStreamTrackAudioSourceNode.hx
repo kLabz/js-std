@@ -24,6 +24,6 @@
 
 package js.webaudio;
 
-extern class MediaStreamTrackAudioSourceNode extends js.webaudio.AudioNode {
-	function new(context:js.webaudio.AudioContext, options:js.webaudio.MediaStreamTrackAudioSourceOptions):Void;
+extern class MediaStreamTrackAudioSourceNode extends AudioNode {
+	function new(context:AudioContext, options:MediaStreamTrackAudioSourceOptions):Void;
 }

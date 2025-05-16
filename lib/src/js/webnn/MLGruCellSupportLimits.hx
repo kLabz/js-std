@@ -26,17 +26,17 @@ package js.webnn;
 
 typedef MLGruCellSupportLimits = {
 	@:optional
-	var input : js.webnn.MLTensorLimits;
+	var input : MLTensorLimits;
 	@:optional
-	var weight : js.webnn.MLTensorLimits;
+	var weight : MLTensorLimits;
 	@:optional
-	var recurrentWeight : js.webnn.MLTensorLimits;
+	var recurrentWeight : MLTensorLimits;
 	@:optional
-	var hiddenState : js.webnn.MLTensorLimits;
+	var hiddenState : MLTensorLimits;
 	@:optional
-	var bias : js.webnn.MLTensorLimits;
+	var bias : MLTensorLimits;
 	@:optional
-	var recurrentBias : js.webnn.MLTensorLimits;
+	var recurrentBias : MLTensorLimits;
 	@:optional
-	var output : js.webnn.MLDataTypeLimits;
+	var output : MLDataTypeLimits;
 };

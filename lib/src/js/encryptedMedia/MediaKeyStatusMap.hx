@@ -26,8 +26,8 @@ package js.encryptedMedia;
 
 extern class MediaKeyStatusMap {
 	function keys():Iterator<BufferSource>;
-	function values():Iterator<js.encryptedMedia.MediaKeyStatus>;
+	function values():Iterator<MediaKeyStatus>;
 	function entries():Iterator<Array<Dynamic>>;
 	function has(keyId:BufferSource):Bool;
-	function get(keyId:BufferSource):haxe.extern.EitherType<js.encryptedMedia.MediaKeyStatus, Void>;
+	function get(keyId:BufferSource):haxe.extern.EitherType<MediaKeyStatus, Void>;
 }

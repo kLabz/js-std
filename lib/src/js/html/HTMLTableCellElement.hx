@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLTableCellElement extends js.html.HTMLElement {
+extern class HTMLTableCellElement extends HTMLElement {
 	function new():Void;
 }

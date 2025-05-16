@@ -24,12 +24,12 @@
 
 package js.html;
 
-extern class HTMLFormElement extends js.html.HTMLElement {
+extern class HTMLFormElement extends HTMLElement {
 	function new():Void;
 	overload function (index:Int):js.dom.Element;
-	overload function (name:String):haxe.extern.EitherType<js.html.RadioNodeList, js.dom.Element>;
+	overload function (name:String):haxe.extern.EitherType<RadioNodeList, js.dom.Element>;
 	function submit():Void;
-	function requestSubmit(?submitter:js.html.HTMLElement):Void;
+	function requestSubmit(?submitter:HTMLElement):Void;
 	function reset():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;

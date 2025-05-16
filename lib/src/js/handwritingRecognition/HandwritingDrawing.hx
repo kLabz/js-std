@@ -25,9 +25,9 @@
 package js.handwritingRecognition;
 
 extern class HandwritingDrawing {
-	function addStroke(stroke:js.handwritingRecognition.HandwritingStroke):Void;
-	function removeStroke(stroke:js.handwritingRecognition.HandwritingStroke):Void;
+	function addStroke(stroke:HandwritingStroke):Void;
+	function removeStroke(stroke:HandwritingStroke):Void;
 	function clear():Void;
-	function getStrokes():Array<js.handwritingRecognition.HandwritingStroke>;
-	function getPrediction():js.lib.Promise<Array<js.handwritingRecognition.HandwritingPrediction>>;
+	function getStrokes():Array<HandwritingStroke>;
+	function getPrediction():js.lib.Promise<Array<HandwritingPrediction>>;
 }

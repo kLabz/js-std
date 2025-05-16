@@ -24,9 +24,9 @@
 
 package js.webnn;
 
-typedef MLGemmOptions = js.webnn.MLOperatorOptions & {
+typedef MLGemmOptions = MLOperatorOptions & {
 	@:optional
-	var c : js.webnn.MLOperand;
+	var c : MLOperand;
 	@:optional
 	var alpha : Float = 1.0;
 	@:optional

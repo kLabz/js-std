@@ -26,7 +26,7 @@ package js.paymentRequest;
 
 typedef PaymentItem = {
 	var label : String;
-	var amount : js.paymentRequest.PaymentCurrencyAmount;
+	var amount : PaymentCurrencyAmount;
 	@:optional
 	var pending : Bool = false;
 };

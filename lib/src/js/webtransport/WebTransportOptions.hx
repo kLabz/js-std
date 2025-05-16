@@ -30,9 +30,9 @@ typedef WebTransportOptions = {
 	@:optional
 	var requireUnreliable : Bool = false;
 	@:optional
-	var serverCertificateHashes : Array<js.webtransport.WebTransportHash>;
+	var serverCertificateHashes : Array<WebTransportHash>;
 	@:optional
-	var congestionControl : js.webtransport.WebTransportCongestionControl = "default";
+	var congestionControl : WebTransportCongestionControl = "default";
 	@:optional
 	var anticipatedConcurrentIncomingUnidirectionalStreams : Int = null;
 	@:optional

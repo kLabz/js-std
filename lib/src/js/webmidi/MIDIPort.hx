@@ -25,6 +25,6 @@
 package js.webmidi;
 
 extern class MIDIPort extends js.dom.EventTarget {
-	function open():js.lib.Promise<js.webmidi.MIDIPort>;
-	function close():js.lib.Promise<js.webmidi.MIDIPort>;
+	function open():js.lib.Promise<MIDIPort>;
+	function close():js.lib.Promise<MIDIPort>;
 }

@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-typedef AnalyserOptions = js.webaudio.AudioNodeOptions & {
+typedef AnalyserOptions = AudioNodeOptions & {
 	@:optional
 	var fftSize : Int = 2048;
 	@:optional

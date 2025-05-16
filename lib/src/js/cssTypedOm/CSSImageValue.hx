@@ -24,6 +24,6 @@
 
 package js.cssTypedOm;
 
-extern class CSSImageValue extends js.cssTypedOm.CSSStyleValue {
+extern class CSSImageValue extends CSSStyleValue {
 
 }

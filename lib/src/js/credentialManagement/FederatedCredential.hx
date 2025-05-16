@@ -24,6 +24,6 @@
 
 package js.credentialManagement;
 
-extern class FederatedCredential extends js.credentialManagement.Credential {
-	function new(data:js.credentialManagement.FederatedCredentialInit):Void;
+extern class FederatedCredential extends Credential {
+	function new(data:FederatedCredentialInit):Void;
 }

@@ -25,13 +25,13 @@
 package js.webgpu;
 
 typedef GPURenderPassColorAttachment = {
-	var view : js.webgpu.GPUTextureView;
+	var view : GPUTextureView;
 	@:optional
 	var depthSlice : GPUIntegerCoordinate;
 	@:optional
-	var resolveTarget : js.webgpu.GPUTextureView;
+	var resolveTarget : GPUTextureView;
 	@:optional
 	var clearValue : GPUColor;
-	var loadOp : js.webgpu.GPULoadOp;
-	var storeOp : js.webgpu.GPUStoreOp;
+	var loadOp : GPULoadOp;
+	var storeOp : GPUStoreOp;
 };

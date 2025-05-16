@@ -25,11 +25,11 @@
 package js.webcodecs;
 
 extern class VideoEncoder extends js.dom.EventTarget {
-	function new(init:js.webcodecs.VideoEncoderInit):Void;
-	function configure(config:js.webcodecs.VideoEncoderConfig):Void;
-	function encode(frame:js.webcodecs.VideoFrame, ?options:js.webcodecs.VideoEncoderEncodeOptions):Void;
+	function new(init:VideoEncoderInit):Void;
+	function configure(config:VideoEncoderConfig):Void;
+	function encode(frame:VideoFrame, ?options:VideoEncoderEncodeOptions):Void;
 	function flush():js.lib.Promise<Void>;
 	function reset():Void;
 	function close():Void;
-	function isConfigSupported(config:js.webcodecs.VideoEncoderConfig):js.lib.Promise<js.webcodecs.VideoEncoderSupport>;
+	function isConfigSupported(config:VideoEncoderConfig):js.lib.Promise<VideoEncoderSupport>;
 }

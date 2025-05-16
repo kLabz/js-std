@@ -25,6 +25,6 @@
 package js.cssLayoutApi;
 
 extern class LayoutChild {
-	function intrinsicSizes():js.lib.Promise<js.cssLayoutApi.IntrinsicSizes>;
-	function layoutNextFragment(constraints:js.cssLayoutApi.LayoutConstraintsOptions, breakToken:js.cssLayoutApi.ChildBreakToken):js.lib.Promise<js.cssLayoutApi.LayoutFragment>;
+	function intrinsicSizes():js.lib.Promise<IntrinsicSizes>;
+	function layoutNextFragment(constraints:LayoutConstraintsOptions, breakToken:ChildBreakToken):js.lib.Promise<LayoutFragment>;
 }

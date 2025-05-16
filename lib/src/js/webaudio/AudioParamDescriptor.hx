@@ -33,5 +33,5 @@ typedef AudioParamDescriptor = {
 	@:optional
 	var maxValue : Float = 3.4028235e38;
 	@:optional
-	var automationRate : js.webaudio.AutomationRate = "a-rate";
+	var automationRate : AutomationRate = "a-rate";
 };

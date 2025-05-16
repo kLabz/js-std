@@ -24,7 +24,7 @@
 
 package js.cssParserApi;
 
-extern class CSSParserQualifiedRule extends js.cssParserApi.CSSParserRule {
-	function new(prelude:Array<CSSToken>, ?body:Array<js.cssParserApi.CSSParserRule>):Void;
+extern class CSSParserQualifiedRule extends CSSParserRule {
+	function new(prelude:Array<CSSToken>, ?body:Array<CSSParserRule>):Void;
 	function ():Void;
 }

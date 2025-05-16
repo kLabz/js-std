@@ -26,11 +26,11 @@ package js.svg;
 
 extern class SVGLengthList {
 	function clear():Void;
-	function initialize(newItem:js.svg.SVGLength):js.svg.SVGLength;
-	function getItem(index:Int):js.svg.SVGLength;
-	function insertItemBefore(newItem:js.svg.SVGLength, index:Int):js.svg.SVGLength;
-	function replaceItem(newItem:js.svg.SVGLength, index:Int):js.svg.SVGLength;
-	function removeItem(index:Int):js.svg.SVGLength;
-	function appendItem(newItem:js.svg.SVGLength):js.svg.SVGLength;
-	function (index:Int, newItem:js.svg.SVGLength):Void;
+	function initialize(newItem:SVGLength):SVGLength;
+	function getItem(index:Int):SVGLength;
+	function insertItemBefore(newItem:SVGLength, index:Int):SVGLength;
+	function replaceItem(newItem:SVGLength, index:Int):SVGLength;
+	function removeItem(index:Int):SVGLength;
+	function appendItem(newItem:SVGLength):SVGLength;
+	function (index:Int, newItem:SVGLength):Void;
 }

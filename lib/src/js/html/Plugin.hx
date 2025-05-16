@@ -25,6 +25,6 @@
 package js.html;
 
 extern class Plugin {
-	function item(index:Int):js.html.MimeType;
-	function namedItem(name:String):js.html.MimeType;
+	function item(index:Int):MimeType;
+	function namedItem(name:String):MimeType;
 }

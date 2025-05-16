@@ -24,6 +24,6 @@
 
 package js.cssom;
 
-extern class CSSMarginRule extends js.cssom.CSSRule {
+extern class CSSMarginRule extends CSSRule {
 
 }

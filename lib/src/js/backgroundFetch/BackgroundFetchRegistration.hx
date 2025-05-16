@@ -26,6 +26,6 @@ package js.backgroundFetch;
 
 extern class BackgroundFetchRegistration extends js.dom.EventTarget {
 	function abort():js.lib.Promise<Bool>;
-	function match(request:RequestInfo, ?options:js.serviceWorkers.CacheQueryOptions):js.lib.Promise<js.backgroundFetch.BackgroundFetchRecord>;
-	function matchAll(?request:RequestInfo, ?options:js.serviceWorkers.CacheQueryOptions):js.lib.Promise<Array<js.backgroundFetch.BackgroundFetchRecord>>;
+	function match(request:RequestInfo, ?options:js.serviceWorkers.CacheQueryOptions):js.lib.Promise<BackgroundFetchRecord>;
+	function matchAll(?request:RequestInfo, ?options:js.serviceWorkers.CacheQueryOptions):js.lib.Promise<Array<BackgroundFetchRecord>>;
 }

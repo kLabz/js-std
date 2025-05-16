@@ -25,10 +25,10 @@
 package js.webxrDepthSensing;
 
 typedef XRDepthStateInit = {
-	var usagePreference : Array<js.webxrDepthSensing.XRDepthUsage>;
-	var dataFormatPreference : Array<js.webxrDepthSensing.XRDepthDataFormat>;
+	var usagePreference : Array<XRDepthUsage>;
+	var dataFormatPreference : Array<XRDepthDataFormat>;
 	@:optional
-	var depthTypeRequest : Array<js.webxrDepthSensing.XRDepthType>;
+	var depthTypeRequest : Array<XRDepthType>;
 	@:optional
 	var matchDepthView : Bool = true;
 };

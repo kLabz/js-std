@@ -24,6 +24,6 @@
 
 package js.accelerometer;
 
-extern class LinearAccelerationSensor extends js.accelerometer.Accelerometer {
-	function new(?options:js.accelerometer.AccelerometerSensorOptions):Void;
+extern class LinearAccelerationSensor extends Accelerometer {
+	function new(?options:AccelerometerSensorOptions):Void;
 }

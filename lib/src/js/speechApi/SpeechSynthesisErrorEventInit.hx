@@ -24,6 +24,6 @@
 
 package js.speechApi;
 
-typedef SpeechSynthesisErrorEventInit = js.speechApi.SpeechSynthesisEventInit & {
-	var error : js.speechApi.SpeechSynthesisErrorCode;
+typedef SpeechSynthesisErrorEventInit = SpeechSynthesisEventInit & {
+	var error : SpeechSynthesisErrorCode;
 };

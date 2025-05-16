@@ -25,5 +25,5 @@
 package js.mediacaptureRegion;
 
 extern class CropTarget {
-	function fromElement(element:js.dom.Element):js.lib.Promise<js.mediacaptureRegion.CropTarget>;
+	function fromElement(element:js.dom.Element):js.lib.Promise<CropTarget>;
 }

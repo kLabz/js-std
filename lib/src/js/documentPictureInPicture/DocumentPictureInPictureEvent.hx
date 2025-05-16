@@ -25,5 +25,5 @@
 package js.documentPictureInPicture;
 
 extern class DocumentPictureInPictureEvent extends js.dom.Event {
-	function new(type:String, eventInitDict:js.documentPictureInPicture.DocumentPictureInPictureEventInit):Void;
+	function new(type:String, eventInitDict:DocumentPictureInPictureEventInit):Void;
 }

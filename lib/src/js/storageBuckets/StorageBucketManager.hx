@@ -25,7 +25,7 @@
 package js.storageBuckets;
 
 extern class StorageBucketManager {
-	function open(name:String, ?options:js.storageBuckets.StorageBucketOptions):js.lib.Promise<js.storageBuckets.StorageBucket>;
+	function open(name:String, ?options:StorageBucketOptions):js.lib.Promise<StorageBucket>;
 	function keys():js.lib.Promise<Array<String>>;
 	function delete(name:String):js.lib.Promise<Void>;
 }

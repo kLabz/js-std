@@ -24,6 +24,6 @@
 
 package js.webgpu;
 
-typedef GPUComputePipelineDescriptor = js.webgpu.GPUPipelineDescriptorBase & {
-	var compute : js.webgpu.GPUProgrammableStage;
+typedef GPUComputePipelineDescriptor = GPUPipelineDescriptorBase & {
+	var compute : GPUProgrammableStage;
 };

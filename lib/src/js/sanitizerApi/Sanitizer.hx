@@ -25,8 +25,8 @@
 package js.sanitizerApi;
 
 extern class Sanitizer {
-	function new(?configuration:haxe.extern.EitherType<js.sanitizerApi.SanitizerConfig, js.sanitizerApi.SanitizerPresets>):Void;
-	function get():js.sanitizerApi.SanitizerConfig;
+	function new(?configuration:haxe.extern.EitherType<SanitizerConfig, SanitizerPresets>):Void;
+	function get():SanitizerConfig;
 	function allowElement(element:SanitizerElementWithAttributes):Void;
 	function removeElement(element:SanitizerElement):Void;
 	function replaceElementWithChildren(element:SanitizerElement):Void;

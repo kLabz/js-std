@@ -25,5 +25,5 @@
 package js.webusb;
 
 extern class USBInTransferResult {
-	function new(status:js.webusb.USBTransferStatus, ?data:DataView):Void;
+	function new(status:USBTransferStatus, ?data:DataView):Void;
 }

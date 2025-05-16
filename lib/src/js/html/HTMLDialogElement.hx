@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLDialogElement extends js.html.HTMLElement {
+extern class HTMLDialogElement extends HTMLElement {
 	function new():Void;
 	function show():Void;
 	function showModal():Void;

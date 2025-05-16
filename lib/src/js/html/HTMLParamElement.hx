@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLParamElement extends js.html.HTMLElement {
+extern class HTMLParamElement extends HTMLElement {
 	function new():Void;
 }

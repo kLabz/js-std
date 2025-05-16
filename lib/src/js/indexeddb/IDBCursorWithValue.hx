@@ -24,6 +24,6 @@
 
 package js.indexeddb;
 
-extern class IDBCursorWithValue extends js.indexeddb.IDBCursor {
+extern class IDBCursorWithValue extends IDBCursor {
 
 }

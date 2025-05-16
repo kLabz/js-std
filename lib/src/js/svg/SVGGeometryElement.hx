@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGGeometryElement extends js.svg.SVGGraphicsElement {
+extern class SVGGeometryElement extends SVGGraphicsElement {
 	function isPointInFill(?point:js.geometry.DOMPointInit):Bool;
 	function isPointInStroke(?point:js.geometry.DOMPointInit):Bool;
 	function getTotalLength():Float;

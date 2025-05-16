@@ -24,7 +24,7 @@
 
 package js.webrtcStats;
 
-typedef RTCRemoteOutboundRtpStreamStats = js.webrtcStats.RTCSentRtpStreamStats & {
+typedef RTCRemoteOutboundRtpStreamStats = RTCSentRtpStreamStats & {
 	@:optional
 	var localId : String;
 	@:optional

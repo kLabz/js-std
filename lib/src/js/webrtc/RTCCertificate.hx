@@ -25,5 +25,5 @@
 package js.webrtc;
 
 extern class RTCCertificate {
-	function getFingerprints():Array<js.webrtc.RTCDtlsFingerprint>;
+	function getFingerprints():Array<RTCDtlsFingerprint>;
 }

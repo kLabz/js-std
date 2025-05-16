@@ -24,6 +24,6 @@
 
 package js.cssTypedOm;
 
-extern class CSSLCH extends js.cssTypedOm.CSSColorValue {
+extern class CSSLCH extends CSSColorValue {
 	function new(l:CSSColorPercent, c:CSSColorPercent, h:CSSColorAngle, ?alpha:CSSColorPercent):Void;
 }

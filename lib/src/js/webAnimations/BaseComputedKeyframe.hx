@@ -32,5 +32,5 @@ typedef BaseComputedKeyframe = {
 	@:optional
 	var easing : String = "linear";
 	@:optional
-	var composite : js.webAnimations.CompositeOperationOrAuto = "auto";
+	var composite : CompositeOperationOrAuto = "auto";
 };

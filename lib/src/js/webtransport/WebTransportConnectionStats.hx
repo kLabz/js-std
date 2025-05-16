@@ -40,7 +40,7 @@ typedef WebTransportConnectionStats = {
 	var smoothedRtt : DOMHighResTimeStamp;
 	var rttVariation : DOMHighResTimeStamp;
 	var minRtt : DOMHighResTimeStamp;
-	var datagrams : js.webtransport.WebTransportDatagramStats;
+	var datagrams : WebTransportDatagramStats;
 	@:optional
 	var estimatedSendRate : Float = null;
 	@:optional

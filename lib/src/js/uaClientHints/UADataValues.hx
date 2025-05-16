@@ -30,11 +30,11 @@ typedef UADataValues = {
 	@:optional
 	var bitness : String;
 	@:optional
-	var brands : Array<js.uaClientHints.NavigatorUABrandVersion>;
+	var brands : Array<NavigatorUABrandVersion>;
 	@:optional
 	var formFactors : Array<String>;
 	@:optional
-	var fullVersionList : Array<js.uaClientHints.NavigatorUABrandVersion>;
+	var fullVersionList : Array<NavigatorUABrandVersion>;
 	@:optional
 	var model : String;
 	@:optional

@@ -25,6 +25,6 @@
 package js.webcodecs;
 
 extern class EncodedVideoChunk {
-	function new(init:js.webcodecs.EncodedVideoChunkInit):Void;
+	function new(init:EncodedVideoChunkInit):Void;
 	function copyTo(destination:AllowSharedBufferSource):Void;
 }

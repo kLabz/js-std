@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSRotate extends js.cssTypedOm.CSSTransformComponent {
-	function new(angle:js.cssTypedOm.CSSNumericValue):Void;
-	function new(x:CSSNumberish, y:CSSNumberish, z:CSSNumberish, angle:js.cssTypedOm.CSSNumericValue):Void;
+extern class CSSRotate extends CSSTransformComponent {
+	function new(angle:CSSNumericValue):Void;
+	function new(x:CSSNumberish, y:CSSNumberish, z:CSSNumberish, angle:CSSNumericValue):Void;
 }

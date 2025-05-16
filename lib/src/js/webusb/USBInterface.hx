@@ -25,5 +25,5 @@
 package js.webusb;
 
 extern class USBInterface {
-	function new(configuration:js.webusb.USBConfiguration, interfaceNumber:Int):Void;
+	function new(configuration:USBConfiguration, interfaceNumber:Int):Void;
 }

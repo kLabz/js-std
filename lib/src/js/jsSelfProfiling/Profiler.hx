@@ -25,6 +25,6 @@
 package js.jsSelfProfiling;
 
 extern class Profiler extends js.dom.EventTarget {
-	function new(options:js.jsSelfProfiling.ProfilerInitOptions):Void;
-	function stop():js.lib.Promise<js.jsSelfProfiling.ProfilerTrace>;
+	function new(options:ProfilerInitOptions):Void;
+	function stop():js.lib.Promise<ProfilerTrace>;
 }

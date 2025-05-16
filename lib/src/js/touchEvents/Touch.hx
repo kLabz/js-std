@@ -25,5 +25,5 @@
 package js.touchEvents;
 
 extern class Touch {
-	function new(touchInitDict:js.touchEvents.TouchInit):Void;
+	function new(touchInitDict:TouchInit):Void;
 }

@@ -24,6 +24,6 @@
 
 package js.webxr;
 
-extern class XRBoundedReferenceSpace extends js.webxr.XRReferenceSpace {
+extern class XRBoundedReferenceSpace extends XRReferenceSpace {
 
 }

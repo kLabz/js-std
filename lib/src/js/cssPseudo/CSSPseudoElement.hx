@@ -25,5 +25,5 @@
 package js.cssPseudo;
 
 extern class CSSPseudoElement extends js.dom.EventTarget {
-	function pseudo(type:CSSOMString):js.cssPseudo.CSSPseudoElement;
+	function pseudo(type:CSSOMString):CSSPseudoElement;
 }

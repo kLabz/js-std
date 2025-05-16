@@ -24,34 +24,34 @@
 
 package js.dom;
 
-extern class Range extends js.dom.AbstractRange {
+extern class Range extends AbstractRange {
 	function new():Void;
-	function setStart(node:js.dom.Node, offset:Int):Void;
-	function setEnd(node:js.dom.Node, offset:Int):Void;
-	function setStartBefore(node:js.dom.Node):Void;
-	function setStartAfter(node:js.dom.Node):Void;
-	function setEndBefore(node:js.dom.Node):Void;
-	function setEndAfter(node:js.dom.Node):Void;
+	function setStart(node:Node, offset:Int):Void;
+	function setEnd(node:Node, offset:Int):Void;
+	function setStartBefore(node:Node):Void;
+	function setStartAfter(node:Node):Void;
+	function setEndBefore(node:Node):Void;
+	function setEndAfter(node:Node):Void;
 	function collapse(?toStart:Bool):Void;
-	function selectNode(node:js.dom.Node):Void;
-	function selectNodeContents(node:js.dom.Node):Void;
+	function selectNode(node:Node):Void;
+	function selectNodeContents(node:Node):Void;
 	static inline var START_TO_START : Int = 0;
 	static inline var START_TO_END : Int = 1;
 	static inline var END_TO_END : Int = 2;
 	static inline var END_TO_START : Int = 3;
-	function compareBoundaryPoints(how:Int, sourceRange:js.dom.Range):Int;
+	function compareBoundaryPoints(how:Int, sourceRange:Range):Int;
 	function deleteContents():Void;
-	function extractContents():js.dom.DocumentFragment;
-	function cloneContents():js.dom.DocumentFragment;
-	function insertNode(node:js.dom.Node):Void;
-	function surroundContents(newParent:js.dom.Node):Void;
-	function cloneRange():js.dom.Range;
+	function extractContents():DocumentFragment;
+	function cloneContents():DocumentFragment;
+	function insertNode(node:Node):Void;
+	function surroundContents(newParent:Node):Void;
+	function cloneRange():Range;
 	function detach():Void;
-	function isPointInRange(node:js.dom.Node, offset:Int):Bool;
-	function comparePoint(node:js.dom.Node, offset:Int):Int;
-	function intersectsNode(node:js.dom.Node):Bool;
+	function isPointInRange(node:Node, offset:Int):Bool;
+	function comparePoint(node:Node, offset:Int):Int;
+	function intersectsNode(node:Node):Bool;
 	function ():Void;
 	function getClientRects():js.geometry.DOMRectList;
 	function getBoundingClientRect():js.geometry.DOMRect;
-	function createContextualFragment(string:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>):js.dom.DocumentFragment;
+	function createContextualFragment(string:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>):DocumentFragment;
 }

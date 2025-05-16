@@ -26,9 +26,9 @@ package js.webnn;
 
 typedef MLPreluSupportLimits = {
 	@:optional
-	var input : js.webnn.MLTensorLimits;
+	var input : MLTensorLimits;
 	@:optional
-	var slope : js.webnn.MLTensorLimits;
+	var slope : MLTensorLimits;
 	@:optional
-	var output : js.webnn.MLDataTypeLimits;
+	var output : MLDataTypeLimits;
 };

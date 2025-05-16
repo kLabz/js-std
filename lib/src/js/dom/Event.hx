@@ -25,8 +25,8 @@
 package js.dom;
 
 extern class Event {
-	function new(type:String, ?eventInitDict:js.dom.EventInit):Void;
-	function composedPath():Array<js.dom.EventTarget>;
+	function new(type:String, ?eventInitDict:EventInit):Void;
+	function composedPath():Array<EventTarget>;
 	static inline var NONE : Int = 0;
 	static inline var CAPTURING_PHASE : Int = 1;
 	static inline var AT_TARGET : Int = 2;

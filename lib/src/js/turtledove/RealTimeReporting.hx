@@ -25,5 +25,5 @@
 package js.turtledove;
 
 extern class RealTimeReporting {
-	function contributeToHistogram(contribution:js.turtledove.RealTimeContribution):Void;
+	function contributeToHistogram(contribution:RealTimeContribution):Void;
 }

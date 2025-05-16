@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLAudioElement extends js.html.HTMLMediaElement {
+extern class HTMLAudioElement extends HTMLMediaElement {
 	function new():Void;
 }

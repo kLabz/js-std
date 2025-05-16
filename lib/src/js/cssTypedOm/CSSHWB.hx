@@ -24,6 +24,6 @@
 
 package js.cssTypedOm;
 
-extern class CSSHWB extends js.cssTypedOm.CSSColorValue {
-	function new(h:js.cssTypedOm.CSSNumericValue, w:CSSNumberish, b:CSSNumberish, ?alpha:CSSNumberish):Void;
+extern class CSSHWB extends CSSColorValue {
+	function new(h:CSSNumericValue, w:CSSNumberish, b:CSSNumberish, ?alpha:CSSNumberish):Void;
 }

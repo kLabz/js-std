@@ -25,5 +25,5 @@
 package js.wasmJsApi;
 
 extern class Instance {
-	function new(module:js.wasmJsApi.Module, ?importObject:object):Void;
+	function new(module:Module, ?importObject:object):Void;
 }

@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLTableCaptionElement extends js.html.HTMLElement {
+extern class HTMLTableCaptionElement extends HTMLElement {
 	function new():Void;
 }

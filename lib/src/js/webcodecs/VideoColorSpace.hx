@@ -25,6 +25,6 @@
 package js.webcodecs;
 
 extern class VideoColorSpace {
-	function new(?init:js.webcodecs.VideoColorSpaceInit):Void;
-	function toJSON():js.webcodecs.VideoColorSpaceInit;
+	function new(?init:VideoColorSpaceInit):Void;
+	function toJSON():VideoColorSpaceInit;
 }

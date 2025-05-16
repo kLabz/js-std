@@ -24,6 +24,6 @@
 
 package js.dom;
 
-extern class CDATASection extends js.dom.Text {
+extern class CDATASection extends Text {
 
 }

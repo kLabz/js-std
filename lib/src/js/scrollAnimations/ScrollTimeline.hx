@@ -25,5 +25,5 @@
 package js.scrollAnimations;
 
 extern class ScrollTimeline extends js.webAnimations.AnimationTimeline {
-	function new(?options:js.scrollAnimations.ScrollTimelineOptions):Void;
+	function new(?options:ScrollTimelineOptions):Void;
 }

@@ -24,6 +24,6 @@
 
 package js.webaudio;
 
-extern class DynamicsCompressorNode extends js.webaudio.AudioNode {
-	function new(context:js.webaudio.BaseAudioContext, ?options:js.webaudio.DynamicsCompressorOptions):Void;
+extern class DynamicsCompressorNode extends AudioNode {
+	function new(context:BaseAudioContext, ?options:DynamicsCompressorOptions):Void;
 }

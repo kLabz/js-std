@@ -24,7 +24,7 @@
 
 package js.fileSystemAccess;
 
-typedef OpenFilePickerOptions = js.fileSystemAccess.FilePickerOptions & {
+typedef OpenFilePickerOptions = FilePickerOptions & {
 	@:optional
 	var multiple : Bool = false;
 };

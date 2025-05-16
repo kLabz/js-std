@@ -25,7 +25,7 @@
 package js.wasmJsApi;
 
 extern class Memory {
-	function new(descriptor:js.wasmJsApi.MemoryDescriptor):Void;
+	function new(descriptor:MemoryDescriptor):Void;
 	function grow(delta:Int):Int;
 	function toFixedLengthBuffer():ArrayBuffer;
 	function toResizableBuffer():ArrayBuffer;

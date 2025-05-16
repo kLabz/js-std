@@ -26,9 +26,9 @@ package js.cssTypedOm;
 
 extern class StylePropertyMapReadOnly {
 	function keys():Iterator<String>;
-	function values():Iterator<Array<js.cssTypedOm.CSSStyleValue>>;
+	function values():Iterator<Array<CSSStyleValue>>;
 	function entries():Iterator<Array<Dynamic>>;
-	function get(property:String):haxe.extern.EitherType<Void, js.cssTypedOm.CSSStyleValue>;
-	function getAll(property:String):Array<js.cssTypedOm.CSSStyleValue>;
+	function get(property:String):haxe.extern.EitherType<Void, CSSStyleValue>;
+	function getAll(property:String):Array<CSSStyleValue>;
 	function has(property:String):Bool;
 }

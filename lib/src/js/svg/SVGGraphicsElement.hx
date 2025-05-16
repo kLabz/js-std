@@ -24,8 +24,8 @@
 
 package js.svg;
 
-extern class SVGGraphicsElement extends js.svg.SVGElement {
-	function getBBox(?options:js.svg.SVGBoundingBoxOptions):js.geometry.DOMRect;
+extern class SVGGraphicsElement extends SVGElement {
+	function getBBox(?options:SVGBoundingBoxOptions):js.geometry.DOMRect;
 	function getCTM():js.geometry.DOMMatrix;
 	function getScreenCTM():js.geometry.DOMMatrix;
 }

@@ -24,6 +24,6 @@
 
 package js.webaudio;
 
-extern class GainNode extends js.webaudio.AudioNode {
-	function new(context:js.webaudio.BaseAudioContext, ?options:js.webaudio.GainOptions):Void;
+extern class GainNode extends AudioNode {
+	function new(context:BaseAudioContext, ?options:GainOptions):Void;
 }

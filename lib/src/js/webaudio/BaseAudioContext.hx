@@ -25,23 +25,23 @@
 package js.webaudio;
 
 extern class BaseAudioContext extends js.dom.EventTarget {
-	function createAnalyser():js.webaudio.AnalyserNode;
-	function createBiquadFilter():js.webaudio.BiquadFilterNode;
-	function createBuffer(numberOfChannels:Int, length:Int, sampleRate:Float):js.webaudio.AudioBuffer;
-	function createBufferSource():js.webaudio.AudioBufferSourceNode;
-	function createChannelMerger(?numberOfInputs:Int):js.webaudio.ChannelMergerNode;
-	function createChannelSplitter(?numberOfOutputs:Int):js.webaudio.ChannelSplitterNode;
-	function createConstantSource():js.webaudio.ConstantSourceNode;
-	function createConvolver():js.webaudio.ConvolverNode;
-	function createDelay(?maxDelayTime:Float):js.webaudio.DelayNode;
-	function createDynamicsCompressor():js.webaudio.DynamicsCompressorNode;
-	function createGain():js.webaudio.GainNode;
-	function createIIRFilter(feedforward:Array<Float>, feedback:Array<Float>):js.webaudio.IIRFilterNode;
-	function createOscillator():js.webaudio.OscillatorNode;
-	function createPanner():js.webaudio.PannerNode;
-	function createPeriodicWave(real:Array<Float>, imag:Array<Float>, ?constraints:js.webaudio.PeriodicWaveConstraints):js.webaudio.PeriodicWave;
-	function createScriptProcessor(?bufferSize:Int, ?numberOfInputChannels:Int, ?numberOfOutputChannels:Int):js.webaudio.ScriptProcessorNode;
-	function createStereoPanner():js.webaudio.StereoPannerNode;
-	function createWaveShaper():js.webaudio.WaveShaperNode;
-	function decodeAudioData(audioData:ArrayBuffer, ?successCallback:DecodeSuccessCallback, ?errorCallback:DecodeErrorCallback):js.lib.Promise<js.webaudio.AudioBuffer>;
+	function createAnalyser():AnalyserNode;
+	function createBiquadFilter():BiquadFilterNode;
+	function createBuffer(numberOfChannels:Int, length:Int, sampleRate:Float):AudioBuffer;
+	function createBufferSource():AudioBufferSourceNode;
+	function createChannelMerger(?numberOfInputs:Int):ChannelMergerNode;
+	function createChannelSplitter(?numberOfOutputs:Int):ChannelSplitterNode;
+	function createConstantSource():ConstantSourceNode;
+	function createConvolver():ConvolverNode;
+	function createDelay(?maxDelayTime:Float):DelayNode;
+	function createDynamicsCompressor():DynamicsCompressorNode;
+	function createGain():GainNode;
+	function createIIRFilter(feedforward:Array<Float>, feedback:Array<Float>):IIRFilterNode;
+	function createOscillator():OscillatorNode;
+	function createPanner():PannerNode;
+	function createPeriodicWave(real:Array<Float>, imag:Array<Float>, ?constraints:PeriodicWaveConstraints):PeriodicWave;
+	function createScriptProcessor(?bufferSize:Int, ?numberOfInputChannels:Int, ?numberOfOutputChannels:Int):ScriptProcessorNode;
+	function createStereoPanner():StereoPannerNode;
+	function createWaveShaper():WaveShaperNode;
+	function decodeAudioData(audioData:ArrayBuffer, ?successCallback:DecodeSuccessCallback, ?errorCallback:DecodeErrorCallback):js.lib.Promise<AudioBuffer>;
 }

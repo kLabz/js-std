@@ -26,7 +26,7 @@ package js.performanceTimeline;
 
 extern class PerformanceObserver {
 	function new(callback:PerformanceObserverCallback):Void;
-	function observe(?options:js.performanceTimeline.PerformanceObserverInit):Void;
+	function observe(?options:PerformanceObserverInit):Void;
 	function disconnect():Void;
 	function takeRecords():PerformanceEntryList;
 }

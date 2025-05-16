@@ -24,6 +24,6 @@
 
 package js.indexeddb;
 
-extern class IDBOpenDBRequest extends js.indexeddb.IDBRequest {
+extern class IDBOpenDBRequest extends IDBRequest {
 
 }

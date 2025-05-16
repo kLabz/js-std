@@ -33,7 +33,7 @@ typedef IdentityProviderAPIConfig = {
 	@:optional
 	var disconnect_endpoint : String;
 	@:optional
-	var branding : js.fedcm.IdentityProviderBranding;
+	var branding : IdentityProviderBranding;
 	@:optional
 	var account_label : String;
 };

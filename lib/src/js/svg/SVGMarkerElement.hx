@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGMarkerElement extends js.svg.SVGElement {
+extern class SVGMarkerElement extends SVGElement {
 	static inline var SVG_MARKERUNITS_UNKNOWN : Int = 0;
 	static inline var SVG_MARKERUNITS_USERSPACEONUSE : Int = 1;
 	static inline var SVG_MARKERUNITS_STROKEWIDTH : Int = 2;
@@ -32,5 +32,5 @@ extern class SVGMarkerElement extends js.svg.SVGElement {
 	static inline var SVG_MARKER_ORIENT_AUTO : Int = 1;
 	static inline var SVG_MARKER_ORIENT_ANGLE : Int = 2;
 	function setOrientToAuto():Void;
-	function setOrientToAngle(angle:js.svg.SVGAngle):Void;
+	function setOrientToAngle(angle:SVGAngle):Void;
 }

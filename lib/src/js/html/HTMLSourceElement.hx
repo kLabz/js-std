@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLSourceElement extends js.html.HTMLElement {
+extern class HTMLSourceElement extends HTMLElement {
 	function new():Void;
 }

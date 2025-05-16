@@ -24,7 +24,7 @@
 
 package js.mediacaptureStreams;
 
-typedef ConstrainDoubleRange = js.mediacaptureStreams.DoubleRange & {
+typedef ConstrainDoubleRange = DoubleRange & {
 	@:optional
 	var exact : Float;
 	@:optional

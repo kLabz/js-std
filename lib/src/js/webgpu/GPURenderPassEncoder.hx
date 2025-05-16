@@ -31,6 +31,6 @@ extern class GPURenderPassEncoder {
 	function setStencilReference(reference:GPUStencilValue):Void;
 	function beginOcclusionQuery(queryIndex:GPUSize32):Void;
 	function endOcclusionQuery():Void;
-	function executeBundles(bundles:Array<js.webgpu.GPURenderBundle>):Void;
+	function executeBundles(bundles:Array<GPURenderBundle>):Void;
 	function end():Void;
 }

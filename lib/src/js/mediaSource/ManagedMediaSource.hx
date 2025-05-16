@@ -24,6 +24,6 @@
 
 package js.mediaSource;
 
-extern class ManagedMediaSource extends js.mediaSource.MediaSource {
+extern class ManagedMediaSource extends MediaSource {
 	function new():Void;
 }

@@ -24,6 +24,6 @@
 
 package js.dom;
 
-extern class DocumentFragment extends js.dom.Node {
+extern class DocumentFragment extends Node {
 	function new():Void;
 }

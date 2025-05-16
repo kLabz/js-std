@@ -58,7 +58,7 @@ typedef JsonWebKey = {
 	@:optional
 	var qi : String;
 	@:optional
-	var oth : Array<js.webcrypto.RsaOtherPrimesInfo>;
+	var oth : Array<RsaOtherPrimesInfo>;
 	@:optional
 	var k : String;
 };

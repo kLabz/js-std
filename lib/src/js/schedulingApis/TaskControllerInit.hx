@@ -26,5 +26,5 @@ package js.schedulingApis;
 
 typedef TaskControllerInit = {
 	@:optional
-	var priority : js.schedulingApis.TaskPriority = "user-visible";
+	var priority : TaskPriority = "user-visible";
 };

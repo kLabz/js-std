@@ -25,11 +25,11 @@
 package js.dom;
 
 extern class TreeWalker {
-	function parentNode():js.dom.Node;
-	function firstChild():js.dom.Node;
-	function lastChild():js.dom.Node;
-	function previousSibling():js.dom.Node;
-	function nextSibling():js.dom.Node;
-	function previousNode():js.dom.Node;
-	function nextNode():js.dom.Node;
+	function parentNode():Node;
+	function firstChild():Node;
+	function lastChild():Node;
+	function previousSibling():Node;
+	function nextSibling():Node;
+	function previousNode():Node;
+	function nextNode():Node;
 }

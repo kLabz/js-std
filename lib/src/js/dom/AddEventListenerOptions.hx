@@ -24,11 +24,11 @@
 
 package js.dom;
 
-typedef AddEventListenerOptions = js.dom.EventListenerOptions & {
+typedef AddEventListenerOptions = EventListenerOptions & {
 	@:optional
 	var passive : Bool;
 	@:optional
 	var once : Bool = false;
 	@:optional
-	var signal : js.dom.AbortSignal;
+	var signal : AbortSignal;
 };

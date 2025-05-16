@@ -24,6 +24,6 @@
 
 package js.mediacaptureStreams;
 
-extern class InputDeviceInfo extends js.mediacaptureStreams.MediaDeviceInfo {
-	function getCapabilities():js.mediacaptureStreams.MediaTrackCapabilities;
+extern class InputDeviceInfo extends MediaDeviceInfo {
+	function getCapabilities():MediaTrackCapabilities;
 }

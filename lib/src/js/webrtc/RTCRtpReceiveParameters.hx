@@ -24,5 +24,5 @@
 
 package js.webrtc;
 
-typedef RTCRtpReceiveParameters = js.webrtc.RTCRtpParameters & {
+typedef RTCRtpReceiveParameters = RTCRtpParameters & {
 };

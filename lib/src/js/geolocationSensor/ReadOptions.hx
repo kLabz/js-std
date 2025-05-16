@@ -24,7 +24,7 @@
 
 package js.geolocationSensor;
 
-typedef ReadOptions = js.geolocationSensor.GeolocationSensorOptions & {
+typedef ReadOptions = GeolocationSensorOptions & {
 	@:optional
 	var signal : js.dom.AbortSignal;
 };

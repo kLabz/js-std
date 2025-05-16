@@ -30,9 +30,9 @@ typedef AuthenticationExtensionsClientOutputsJSON = {
 	@:optional
 	var appidExclude : Bool;
 	@:optional
-	var credProps : js.webauthn.CredentialPropertiesOutput;
+	var credProps : CredentialPropertiesOutput;
 	@:optional
-	var prf : js.webauthn.AuthenticationExtensionsPRFOutputsJSON;
+	var prf : AuthenticationExtensionsPRFOutputsJSON;
 	@:optional
-	var largeBlob : js.webauthn.AuthenticationExtensionsLargeBlobOutputsJSON;
+	var largeBlob : AuthenticationExtensionsLargeBlobOutputsJSON;
 };

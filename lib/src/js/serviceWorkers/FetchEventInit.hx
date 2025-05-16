@@ -24,7 +24,7 @@
 
 package js.serviceWorkers;
 
-typedef FetchEventInit = js.serviceWorkers.ExtendableEventInit & {
+typedef FetchEventInit = ExtendableEventInit & {
 	var request : js.fetch.Request;
 	@:optional
 	var preloadResponse : js.lib.Promise<Any>;

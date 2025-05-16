@@ -24,9 +24,9 @@
 
 package js.cssTypedOm;
 
-extern class StylePropertyMap extends js.cssTypedOm.StylePropertyMapReadOnly {
-	function set(property:String, values:haxe.extern.EitherType<js.cssTypedOm.CSSStyleValue, String>):Void;
-	function append(property:String, values:haxe.extern.EitherType<js.cssTypedOm.CSSStyleValue, String>):Void;
+extern class StylePropertyMap extends StylePropertyMapReadOnly {
+	function set(property:String, values:haxe.extern.EitherType<CSSStyleValue, String>):Void;
+	function append(property:String, values:haxe.extern.EitherType<CSSStyleValue, String>):Void;
 	function delete(property:String):Void;
 	function clear():Void;
 }

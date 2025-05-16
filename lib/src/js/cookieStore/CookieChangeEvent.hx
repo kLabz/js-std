@@ -25,5 +25,5 @@
 package js.cookieStore;
 
 extern class CookieChangeEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:js.cookieStore.CookieChangeEventInit):Void;
+	function new(type:String, ?eventInitDict:CookieChangeEventInit):Void;
 }

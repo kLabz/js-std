@@ -26,7 +26,7 @@ package js.webnn;
 
 typedef MLLogicalNotSupportLimits = {
 	@:optional
-	var a : js.webnn.MLTensorLimits;
+	var a : MLTensorLimits;
 	@:optional
-	var output : js.webnn.MLDataTypeLimits;
+	var output : MLDataTypeLimits;
 };

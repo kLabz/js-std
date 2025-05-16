@@ -24,6 +24,6 @@
 
 package js.webaudio;
 
-extern class ConstantSourceNode extends js.webaudio.AudioScheduledSourceNode {
-	function new(context:js.webaudio.BaseAudioContext, ?options:js.webaudio.ConstantSourceOptions):Void;
+extern class ConstantSourceNode extends AudioScheduledSourceNode {
+	function new(context:BaseAudioContext, ?options:ConstantSourceOptions):Void;
 }

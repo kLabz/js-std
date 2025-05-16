@@ -24,7 +24,7 @@
 
 package js.webcrypto;
 
-typedef RsaOaepParams = js.webcrypto.Algorithm & {
+typedef RsaOaepParams = Algorithm & {
 	@:optional
 	var label : BufferSource;
 };

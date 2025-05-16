@@ -25,6 +25,6 @@
 package js.html;
 
 extern class ImageData {
-	function new(sw:Int, sh:Int, ?settings:js.html.ImageDataSettings):Void;
-	function new(data:ImageDataArray, sw:Int, ?sh:Int, ?settings:js.html.ImageDataSettings):Void;
+	function new(sw:Int, sh:Int, ?settings:ImageDataSettings):Void;
+	function new(data:ImageDataArray, sw:Int, ?sh:Int, ?settings:ImageDataSettings):Void;
 }

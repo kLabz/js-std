@@ -26,7 +26,7 @@ package js.webaudio;
 
 typedef AudioBufferSourceOptions = {
 	@:optional
-	var buffer : js.webaudio.AudioBuffer;
+	var buffer : AudioBuffer;
 	@:optional
 	var detune : Float = 0;
 	@:optional

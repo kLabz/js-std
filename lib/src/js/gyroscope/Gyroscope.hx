@@ -25,5 +25,5 @@
 package js.gyroscope;
 
 extern class Gyroscope extends js.genericSensor.Sensor {
-	function new(?sensorOptions:js.gyroscope.GyroscopeSensorOptions):Void;
+	function new(?sensorOptions:GyroscopeSensorOptions):Void;
 }

@@ -34,9 +34,9 @@ typedef RouterCondition = {
 	@:optional
 	var requestDestination : js.fetch.RequestDestination;
 	@:optional
-	var runningStatus : js.serviceWorkers.RunningStatus;
+	var runningStatus : RunningStatus;
 	@:optional
-	var or : Array<js.serviceWorkers.RouterCondition>;
+	var or : Array<RouterCondition>;
 	@:optional
-	var not : js.serviceWorkers.RouterCondition;
+	var not : RouterCondition;
 };

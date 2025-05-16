@@ -24,10 +24,10 @@
 
 package js.webgpu;
 
-typedef GPURenderPassLayout = js.webgpu.GPUObjectDescriptorBase & {
-	var colorFormats : Array<js.webgpu.GPUTextureFormat>;
+typedef GPURenderPassLayout = GPUObjectDescriptorBase & {
+	var colorFormats : Array<GPUTextureFormat>;
 	@:optional
-	var depthStencilFormat : js.webgpu.GPUTextureFormat;
+	var depthStencilFormat : GPUTextureFormat;
 	@:optional
 	var sampleCount : GPUSize32 = 1;
 };

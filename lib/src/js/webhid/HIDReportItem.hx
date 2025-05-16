@@ -58,7 +58,7 @@ typedef HIDReportItem = {
 	@:optional
 	var unitExponent : Int;
 	@:optional
-	var unitSystem : js.webhid.HIDUnitSystem;
+	var unitSystem : HIDUnitSystem;
 	@:optional
 	var unitFactorLengthExponent : Int;
 	@:optional

@@ -28,5 +28,5 @@ typedef ClientQueryOptions = {
 	@:optional
 	var includeUncontrolled : Bool = false;
 	@:optional
-	var type : js.serviceWorkers.ClientType = "window";
+	var type : ClientType = "window";
 };

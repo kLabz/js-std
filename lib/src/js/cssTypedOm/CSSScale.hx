@@ -24,6 +24,6 @@
 
 package js.cssTypedOm;
 
-extern class CSSScale extends js.cssTypedOm.CSSTransformComponent {
+extern class CSSScale extends CSSTransformComponent {
 	function new(x:CSSNumberish, y:CSSNumberish, ?z:CSSNumberish):Void;
 }

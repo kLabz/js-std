@@ -25,5 +25,5 @@
 package js.capturedMouseEvents;
 
 extern class CapturedMouseEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:js.capturedMouseEvents.CapturedMouseEventInit):Void;
+	function new(type:String, ?eventInitDict:CapturedMouseEventInit):Void;
 }

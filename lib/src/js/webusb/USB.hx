@@ -25,6 +25,6 @@
 package js.webusb;
 
 extern class USB extends js.dom.EventTarget {
-	function getDevices():js.lib.Promise<Array<js.webusb.USBDevice>>;
-	function requestDevice(options:js.webusb.USBDeviceRequestOptions):js.lib.Promise<js.webusb.USBDevice>;
+	function getDevices():js.lib.Promise<Array<USBDevice>>;
+	function requestDevice(options:USBDeviceRequestOptions):js.lib.Promise<USBDevice>;
 }

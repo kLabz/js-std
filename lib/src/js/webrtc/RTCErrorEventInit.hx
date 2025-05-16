@@ -25,5 +25,5 @@
 package js.webrtc;
 
 typedef RTCErrorEventInit = js.dom.EventInit & {
-	var error : js.webrtc.RTCError;
+	var error : RTCError;
 };

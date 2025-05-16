@@ -25,5 +25,5 @@
 package js.webBluetooth;
 
 typedef BluetoothPermissionStorage = {
-	var allowedDevices : Array<js.webBluetooth.AllowedBluetoothDevice>;
+	var allowedDevices : Array<AllowedBluetoothDevice>;
 };

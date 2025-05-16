@@ -34,9 +34,9 @@ typedef AuthenticationExtensionsClientOutputs = {
 	@:optional
 	var appidExclude : Bool;
 	@:optional
-	var credProps : js.webauthn.CredentialPropertiesOutput;
+	var credProps : CredentialPropertiesOutput;
 	@:optional
-	var prf : js.webauthn.AuthenticationExtensionsPRFOutputs;
+	var prf : AuthenticationExtensionsPRFOutputs;
 	@:optional
-	var largeBlob : js.webauthn.AuthenticationExtensionsLargeBlobOutputs;
+	var largeBlob : AuthenticationExtensionsLargeBlobOutputs;
 };

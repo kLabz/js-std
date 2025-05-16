@@ -25,6 +25,6 @@
 package js.webgpu;
 
 typedef GPUBlendState = {
-	var color : js.webgpu.GPUBlendComponent;
-	var alpha : js.webgpu.GPUBlendComponent;
+	var color : GPUBlendComponent;
+	var alpha : GPUBlendComponent;
 };

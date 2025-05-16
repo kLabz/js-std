@@ -24,13 +24,13 @@
 
 package js.webnn;
 
-typedef MLInstanceNormalizationOptions = js.webnn.MLOperatorOptions & {
+typedef MLInstanceNormalizationOptions = MLOperatorOptions & {
 	@:optional
-	var scale : js.webnn.MLOperand;
+	var scale : MLOperand;
 	@:optional
-	var bias : js.webnn.MLOperand;
+	var bias : MLOperand;
 	@:optional
 	var epsilon : Float = 1e-5;
 	@:optional
-	var layout : js.webnn.MLInputOperandLayout = "nchw";
+	var layout : MLInputOperandLayout = "nchw";
 };

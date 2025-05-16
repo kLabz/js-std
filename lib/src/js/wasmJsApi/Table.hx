@@ -25,7 +25,7 @@
 package js.wasmJsApi;
 
 extern class Table {
-	function new(descriptor:js.wasmJsApi.TableDescriptor, ?value:Any):Void;
+	function new(descriptor:TableDescriptor, ?value:Any):Void;
 	function grow(delta:Int, ?value:Any):Int;
 	function get(index:Int):Any;
 	function set(index:Int, ?value:Any):Void;

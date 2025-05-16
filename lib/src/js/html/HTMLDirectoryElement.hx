@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLDirectoryElement extends js.html.HTMLElement {
+extern class HTMLDirectoryElement extends HTMLElement {
 	function new():Void;
 }

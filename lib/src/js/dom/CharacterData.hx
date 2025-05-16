@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class CharacterData extends js.dom.Node {
+extern class CharacterData extends Node {
 	function substringData(offset:Int, count:Int):String;
 	function appendData(data:String):Void;
 	function insertData(offset:Int, data:String):Void;

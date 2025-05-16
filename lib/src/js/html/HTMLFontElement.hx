@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLFontElement extends js.html.HTMLElement {
+extern class HTMLFontElement extends HTMLElement {
 	function new():Void;
 }

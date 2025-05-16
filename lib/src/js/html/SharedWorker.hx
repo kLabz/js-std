@@ -25,5 +25,5 @@
 package js.html;
 
 extern class SharedWorker extends js.dom.EventTarget {
-	function new(scriptURL:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>, ?options:haxe.extern.EitherType<String, js.html.WorkerOptions>):Void;
+	function new(scriptURL:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>, ?options:haxe.extern.EitherType<String, WorkerOptions>):Void;
 }

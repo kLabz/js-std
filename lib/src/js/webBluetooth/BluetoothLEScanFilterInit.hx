@@ -32,7 +32,7 @@ typedef BluetoothLEScanFilterInit = {
 	@:optional
 	var namePrefix : String;
 	@:optional
-	var manufacturerData : Array<js.webBluetooth.BluetoothManufacturerDataFilterInit>;
+	var manufacturerData : Array<BluetoothManufacturerDataFilterInit>;
 	@:optional
-	var serviceData : Array<js.webBluetooth.BluetoothServiceDataFilterInit>;
+	var serviceData : Array<BluetoothServiceDataFilterInit>;
 };

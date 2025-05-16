@@ -24,6 +24,6 @@
 
 package js.cssTypedOm;
 
-extern class CSSMathClamp extends js.cssTypedOm.CSSMathValue {
+extern class CSSMathClamp extends CSSMathValue {
 	function new(lower:CSSNumberish, value:CSSNumberish, upper:CSSNumberish):Void;
 }

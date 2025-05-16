@@ -24,6 +24,6 @@
 
 package js.cssTypedOm;
 
-extern class CSSRGB extends js.cssTypedOm.CSSColorValue {
+extern class CSSRGB extends CSSColorValue {
 	function new(r:CSSColorRGBComp, g:CSSColorRGBComp, b:CSSColorRGBComp, ?alpha:CSSColorPercent):Void;
 }

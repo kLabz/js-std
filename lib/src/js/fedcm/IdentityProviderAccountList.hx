@@ -26,5 +26,5 @@ package js.fedcm;
 
 typedef IdentityProviderAccountList = {
 	@:optional
-	var accounts : Array<js.fedcm.IdentityProviderAccount>;
+	var accounts : Array<IdentityProviderAccount>;
 };

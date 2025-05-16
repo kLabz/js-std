@@ -24,7 +24,7 @@
 
 package js.webxrlayers;
 
-typedef XRMediaEquirectLayerInit = js.webxrlayers.XRMediaLayerInit & {
+typedef XRMediaEquirectLayerInit = XRMediaLayerInit & {
 	@:optional
 	var transform : js.webxr.XRRigidTransform;
 	@:optional

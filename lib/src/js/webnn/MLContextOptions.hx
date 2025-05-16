@@ -26,5 +26,5 @@ package js.webnn;
 
 typedef MLContextOptions = {
 	@:optional
-	var powerPreference : js.webnn.MLPowerPreference = "default";
+	var powerPreference : MLPowerPreference = "default";
 };

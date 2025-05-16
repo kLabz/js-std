@@ -26,7 +26,7 @@ package js.webLocks;
 
 typedef LockManagerSnapshot = {
 	@:optional
-	var held : Array<js.webLocks.LockInfo>;
+	var held : Array<LockInfo>;
 	@:optional
-	var pending : Array<js.webLocks.LockInfo>;
+	var pending : Array<LockInfo>;
 };

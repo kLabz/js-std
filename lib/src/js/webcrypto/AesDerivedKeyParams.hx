@@ -24,6 +24,6 @@
 
 package js.webcrypto;
 
-typedef AesDerivedKeyParams = js.webcrypto.Algorithm & {
+typedef AesDerivedKeyParams = Algorithm & {
 	var length : Int;
 };

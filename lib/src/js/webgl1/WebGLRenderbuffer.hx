@@ -24,6 +24,6 @@
 
 package js.webgl1;
 
-extern class WebGLRenderbuffer extends js.webgl1.WebGLObject {
+extern class WebGLRenderbuffer extends WebGLObject {
 
 }

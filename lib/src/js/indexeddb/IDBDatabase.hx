@@ -25,8 +25,8 @@
 package js.indexeddb;
 
 extern class IDBDatabase extends js.dom.EventTarget {
-	function transaction(storeNames:haxe.extern.EitherType<String, Array<String>>, ?mode:js.indexeddb.IDBTransactionMode, ?options:js.indexeddb.IDBTransactionOptions):js.indexeddb.IDBTransaction;
+	function transaction(storeNames:haxe.extern.EitherType<String, Array<String>>, ?mode:IDBTransactionMode, ?options:IDBTransactionOptions):IDBTransaction;
 	function close():Void;
-	function createObjectStore(name:String, ?options:js.indexeddb.IDBObjectStoreParameters):js.indexeddb.IDBObjectStore;
+	function createObjectStore(name:String, ?options:IDBObjectStoreParameters):IDBObjectStore;
 	function deleteObjectStore(name:String):Void;
 }

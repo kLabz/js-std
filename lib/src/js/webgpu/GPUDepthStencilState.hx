@@ -25,15 +25,15 @@
 package js.webgpu;
 
 typedef GPUDepthStencilState = {
-	var format : js.webgpu.GPUTextureFormat;
+	var format : GPUTextureFormat;
 	@:optional
 	var depthWriteEnabled : Bool;
 	@:optional
-	var depthCompare : js.webgpu.GPUCompareFunction;
+	var depthCompare : GPUCompareFunction;
 	@:optional
-	var stencilFront : js.webgpu.GPUStencilFaceState = {  };
+	var stencilFront : GPUStencilFaceState = {  };
 	@:optional
-	var stencilBack : js.webgpu.GPUStencilFaceState = {  };
+	var stencilBack : GPUStencilFaceState = {  };
 	@:optional
 	var stencilReadMask : GPUStencilValue = 0xFFFFFFFF;
 	@:optional

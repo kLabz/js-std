@@ -26,5 +26,5 @@ package js.magnetometer;
 
 typedef MagnetometerSensorOptions = js.genericSensor.SensorOptions & {
 	@:optional
-	var referenceFrame : js.magnetometer.MagnetometerLocalCoordinateSystem = "device";
+	var referenceFrame : MagnetometerLocalCoordinateSystem = "device";
 };

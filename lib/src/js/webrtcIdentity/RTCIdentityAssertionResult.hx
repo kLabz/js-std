@@ -25,6 +25,6 @@
 package js.webrtcIdentity;
 
 typedef RTCIdentityAssertionResult = {
-	var idp : js.webrtcIdentity.RTCIdentityProviderDetails;
+	var idp : RTCIdentityProviderDetails;
 	var assertion : String;
 };

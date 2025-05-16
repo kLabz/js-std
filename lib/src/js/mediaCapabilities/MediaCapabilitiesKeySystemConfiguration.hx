@@ -35,7 +35,7 @@ typedef MediaCapabilitiesKeySystemConfiguration = {
 	@:optional
 	var sessionTypes : Array<String>;
 	@:optional
-	var audio : js.mediaCapabilities.KeySystemTrackConfiguration;
+	var audio : KeySystemTrackConfiguration;
 	@:optional
-	var video : js.mediaCapabilities.KeySystemTrackConfiguration;
+	var video : KeySystemTrackConfiguration;
 };

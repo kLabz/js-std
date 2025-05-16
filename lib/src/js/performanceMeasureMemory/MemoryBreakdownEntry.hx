@@ -28,7 +28,7 @@ typedef MemoryBreakdownEntry = {
 	@:optional
 	var bytes : Float;
 	@:optional
-	var attribution : Array<js.performanceMeasureMemory.MemoryAttribution>;
+	var attribution : Array<MemoryAttribution>;
 	@:optional
 	var types : Array<String>;
 };

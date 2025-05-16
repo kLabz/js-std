@@ -24,7 +24,7 @@
 
 package js.uievents;
 
-typedef CompositionEventInit = js.uievents.UIEventInit & {
+typedef CompositionEventInit = UIEventInit & {
 	@:optional
 	var data : String = "";
 };

@@ -25,6 +25,6 @@
 package js.streams;
 
 typedef ReadableWritablePair = {
-	var readable : js.streams.ReadableStream;
-	var writable : js.streams.WritableStream;
+	var readable : ReadableStream;
+	var writable : WritableStream;
 };

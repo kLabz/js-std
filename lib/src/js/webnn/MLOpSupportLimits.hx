@@ -26,197 +26,197 @@ package js.webnn;
 
 typedef MLOpSupportLimits = {
 	@:optional
-	var preferredInputLayout : js.webnn.MLInputOperandLayout;
+	var preferredInputLayout : MLInputOperandLayout;
 	@:optional
 	var maxTensorByteLength : Float;
 	@:optional
-	var input : js.webnn.MLDataTypeLimits;
+	var input : MLDataTypeLimits;
 	@:optional
-	var constant : js.webnn.MLDataTypeLimits;
+	var constant : MLDataTypeLimits;
 	@:optional
-	var output : js.webnn.MLDataTypeLimits;
+	var output : MLDataTypeLimits;
 	@:optional
-	var argMin : js.webnn.MLSingleInputSupportLimits;
+	var argMin : MLSingleInputSupportLimits;
 	@:optional
-	var argMax : js.webnn.MLSingleInputSupportLimits;
+	var argMax : MLSingleInputSupportLimits;
 	@:optional
-	var batchNormalization : js.webnn.MLBatchNormalizationSupportLimits;
+	var batchNormalization : MLBatchNormalizationSupportLimits;
 	@:optional
-	var cast : js.webnn.MLSingleInputSupportLimits;
+	var cast : MLSingleInputSupportLimits;
 	@:optional
-	var clamp : js.webnn.MLSingleInputSupportLimits;
+	var clamp : MLSingleInputSupportLimits;
 	@:optional
-	var concat : js.webnn.MLConcatSupportLimits;
+	var concat : MLConcatSupportLimits;
 	@:optional
-	var conv2d : js.webnn.MLConv2dSupportLimits;
+	var conv2d : MLConv2dSupportLimits;
 	@:optional
-	var convTranspose2d : js.webnn.MLConv2dSupportLimits;
+	var convTranspose2d : MLConv2dSupportLimits;
 	@:optional
-	var cumulativeSum : js.webnn.MLSingleInputSupportLimits;
+	var cumulativeSum : MLSingleInputSupportLimits;
 	@:optional
-	var add : js.webnn.MLBinarySupportLimits;
+	var add : MLBinarySupportLimits;
 	@:optional
-	var sub : js.webnn.MLBinarySupportLimits;
+	var sub : MLBinarySupportLimits;
 	@:optional
-	var mul : js.webnn.MLBinarySupportLimits;
+	var mul : MLBinarySupportLimits;
 	@:optional
-	var div : js.webnn.MLBinarySupportLimits;
+	var div : MLBinarySupportLimits;
 	@:optional
-	var max : js.webnn.MLBinarySupportLimits;
+	var max : MLBinarySupportLimits;
 	@:optional
-	var min : js.webnn.MLBinarySupportLimits;
+	var min : MLBinarySupportLimits;
 	@:optional
-	var pow : js.webnn.MLBinarySupportLimits;
+	var pow : MLBinarySupportLimits;
 	@:optional
-	var equal : js.webnn.MLBinarySupportLimits;
+	var equal : MLBinarySupportLimits;
 	@:optional
-	var notEqual : js.webnn.MLBinarySupportLimits;
+	var notEqual : MLBinarySupportLimits;
 	@:optional
-	var greater : js.webnn.MLBinarySupportLimits;
+	var greater : MLBinarySupportLimits;
 	@:optional
-	var greaterOrEqual : js.webnn.MLBinarySupportLimits;
+	var greaterOrEqual : MLBinarySupportLimits;
 	@:optional
-	var lesser : js.webnn.MLBinarySupportLimits;
+	var lesser : MLBinarySupportLimits;
 	@:optional
-	var lesserOrEqual : js.webnn.MLBinarySupportLimits;
+	var lesserOrEqual : MLBinarySupportLimits;
 	@:optional
-	var logicalNot : js.webnn.MLLogicalNotSupportLimits;
+	var logicalNot : MLLogicalNotSupportLimits;
 	@:optional
-	var logicalAnd : js.webnn.MLBinarySupportLimits;
+	var logicalAnd : MLBinarySupportLimits;
 	@:optional
-	var logicalOr : js.webnn.MLBinarySupportLimits;
+	var logicalOr : MLBinarySupportLimits;
 	@:optional
-	var logicalXor : js.webnn.MLBinarySupportLimits;
+	var logicalXor : MLBinarySupportLimits;
 	@:optional
-	var abs : js.webnn.MLSingleInputSupportLimits;
+	var abs : MLSingleInputSupportLimits;
 	@:optional
-	var ceil : js.webnn.MLSingleInputSupportLimits;
+	var ceil : MLSingleInputSupportLimits;
 	@:optional
-	var cos : js.webnn.MLSingleInputSupportLimits;
+	var cos : MLSingleInputSupportLimits;
 	@:optional
-	var erf : js.webnn.MLSingleInputSupportLimits;
+	var erf : MLSingleInputSupportLimits;
 	@:optional
-	var exp : js.webnn.MLSingleInputSupportLimits;
+	var exp : MLSingleInputSupportLimits;
 	@:optional
-	var floor : js.webnn.MLSingleInputSupportLimits;
+	var floor : MLSingleInputSupportLimits;
 	@:optional
-	var identity : js.webnn.MLSingleInputSupportLimits;
+	var identity : MLSingleInputSupportLimits;
 	@:optional
-	var log : js.webnn.MLSingleInputSupportLimits;
+	var log : MLSingleInputSupportLimits;
 	@:optional
-	var neg : js.webnn.MLSingleInputSupportLimits;
+	var neg : MLSingleInputSupportLimits;
 	@:optional
-	var reciprocal : js.webnn.MLSingleInputSupportLimits;
+	var reciprocal : MLSingleInputSupportLimits;
 	@:optional
-	var sin : js.webnn.MLSingleInputSupportLimits;
+	var sin : MLSingleInputSupportLimits;
 	@:optional
-	var sign : js.webnn.MLSingleInputSupportLimits;
+	var sign : MLSingleInputSupportLimits;
 	@:optional
-	var sqrt : js.webnn.MLSingleInputSupportLimits;
+	var sqrt : MLSingleInputSupportLimits;
 	@:optional
-	var tan : js.webnn.MLSingleInputSupportLimits;
+	var tan : MLSingleInputSupportLimits;
 	@:optional
-	var dequantizeLinear : js.webnn.MLQuantizeDequantizeLinearSupportLimits;
+	var dequantizeLinear : MLQuantizeDequantizeLinearSupportLimits;
 	@:optional
-	var quantizeLinear : js.webnn.MLQuantizeDequantizeLinearSupportLimits;
+	var quantizeLinear : MLQuantizeDequantizeLinearSupportLimits;
 	@:optional
-	var elu : js.webnn.MLSingleInputSupportLimits;
+	var elu : MLSingleInputSupportLimits;
 	@:optional
-	var expand : js.webnn.MLSingleInputSupportLimits;
+	var expand : MLSingleInputSupportLimits;
 	@:optional
-	var gather : js.webnn.MLGatherSupportLimits;
+	var gather : MLGatherSupportLimits;
 	@:optional
-	var gatherElements : js.webnn.MLGatherSupportLimits;
+	var gatherElements : MLGatherSupportLimits;
 	@:optional
-	var gatherND : js.webnn.MLGatherSupportLimits;
+	var gatherND : MLGatherSupportLimits;
 	@:optional
-	var gelu : js.webnn.MLSingleInputSupportLimits;
+	var gelu : MLSingleInputSupportLimits;
 	@:optional
-	var gemm : js.webnn.MLGemmSupportLimits;
+	var gemm : MLGemmSupportLimits;
 	@:optional
-	var gru : js.webnn.MLGruSupportLimits;
+	var gru : MLGruSupportLimits;
 	@:optional
-	var gruCell : js.webnn.MLGruCellSupportLimits;
+	var gruCell : MLGruCellSupportLimits;
 	@:optional
-	var hardSigmoid : js.webnn.MLSingleInputSupportLimits;
+	var hardSigmoid : MLSingleInputSupportLimits;
 	@:optional
-	var hardSwish : js.webnn.MLSingleInputSupportLimits;
+	var hardSwish : MLSingleInputSupportLimits;
 	@:optional
-	var instanceNormalization : js.webnn.MLNormalizationSupportLimits;
+	var instanceNormalization : MLNormalizationSupportLimits;
 	@:optional
-	var layerNormalization : js.webnn.MLNormalizationSupportLimits;
+	var layerNormalization : MLNormalizationSupportLimits;
 	@:optional
-	var leakyRelu : js.webnn.MLSingleInputSupportLimits;
+	var leakyRelu : MLSingleInputSupportLimits;
 	@:optional
-	var linear : js.webnn.MLSingleInputSupportLimits;
+	var linear : MLSingleInputSupportLimits;
 	@:optional
-	var lstm : js.webnn.MLLstmSupportLimits;
+	var lstm : MLLstmSupportLimits;
 	@:optional
-	var lstmCell : js.webnn.MLLstmCellSupportLimits;
+	var lstmCell : MLLstmCellSupportLimits;
 	@:optional
-	var matmul : js.webnn.MLBinarySupportLimits;
+	var matmul : MLBinarySupportLimits;
 	@:optional
-	var pad : js.webnn.MLSingleInputSupportLimits;
+	var pad : MLSingleInputSupportLimits;
 	@:optional
-	var averagePool2d : js.webnn.MLSingleInputSupportLimits;
+	var averagePool2d : MLSingleInputSupportLimits;
 	@:optional
-	var l2Pool2d : js.webnn.MLSingleInputSupportLimits;
+	var l2Pool2d : MLSingleInputSupportLimits;
 	@:optional
-	var maxPool2d : js.webnn.MLSingleInputSupportLimits;
+	var maxPool2d : MLSingleInputSupportLimits;
 	@:optional
-	var prelu : js.webnn.MLPreluSupportLimits;
+	var prelu : MLPreluSupportLimits;
 	@:optional
-	var reduceL1 : js.webnn.MLSingleInputSupportLimits;
+	var reduceL1 : MLSingleInputSupportLimits;
 	@:optional
-	var reduceL2 : js.webnn.MLSingleInputSupportLimits;
+	var reduceL2 : MLSingleInputSupportLimits;
 	@:optional
-	var reduceLogSum : js.webnn.MLSingleInputSupportLimits;
+	var reduceLogSum : MLSingleInputSupportLimits;
 	@:optional
-	var reduceLogSumExp : js.webnn.MLSingleInputSupportLimits;
+	var reduceLogSumExp : MLSingleInputSupportLimits;
 	@:optional
-	var reduceMax : js.webnn.MLSingleInputSupportLimits;
+	var reduceMax : MLSingleInputSupportLimits;
 	@:optional
-	var reduceMean : js.webnn.MLSingleInputSupportLimits;
+	var reduceMean : MLSingleInputSupportLimits;
 	@:optional
-	var reduceMin : js.webnn.MLSingleInputSupportLimits;
+	var reduceMin : MLSingleInputSupportLimits;
 	@:optional
-	var reduceProduct : js.webnn.MLSingleInputSupportLimits;
+	var reduceProduct : MLSingleInputSupportLimits;
 	@:optional
-	var reduceSum : js.webnn.MLSingleInputSupportLimits;
+	var reduceSum : MLSingleInputSupportLimits;
 	@:optional
-	var reduceSumSquare : js.webnn.MLSingleInputSupportLimits;
+	var reduceSumSquare : MLSingleInputSupportLimits;
 	@:optional
-	var relu : js.webnn.MLSingleInputSupportLimits;
+	var relu : MLSingleInputSupportLimits;
 	@:optional
-	var resample2d : js.webnn.MLSingleInputSupportLimits;
+	var resample2d : MLSingleInputSupportLimits;
 	@:optional
-	var reshape : js.webnn.MLSingleInputSupportLimits;
+	var reshape : MLSingleInputSupportLimits;
 	@:optional
-	var reverse : js.webnn.MLSingleInputSupportLimits;
+	var reverse : MLSingleInputSupportLimits;
 	@:optional
-	var scatterElements : js.webnn.MLScatterSupportLimits;
+	var scatterElements : MLScatterSupportLimits;
 	@:optional
-	var scatterND : js.webnn.MLScatterSupportLimits;
+	var scatterND : MLScatterSupportLimits;
 	@:optional
-	var sigmoid : js.webnn.MLSingleInputSupportLimits;
+	var sigmoid : MLSingleInputSupportLimits;
 	@:optional
-	var slice : js.webnn.MLSingleInputSupportLimits;
+	var slice : MLSingleInputSupportLimits;
 	@:optional
-	var softmax : js.webnn.MLSingleInputSupportLimits;
+	var softmax : MLSingleInputSupportLimits;
 	@:optional
-	var softplus : js.webnn.MLSingleInputSupportLimits;
+	var softplus : MLSingleInputSupportLimits;
 	@:optional
-	var softsign : js.webnn.MLSingleInputSupportLimits;
+	var softsign : MLSingleInputSupportLimits;
 	@:optional
-	var split : js.webnn.MLSplitSupportLimits;
+	var split : MLSplitSupportLimits;
 	@:optional
-	var tanh : js.webnn.MLSingleInputSupportLimits;
+	var tanh : MLSingleInputSupportLimits;
 	@:optional
-	var tile : js.webnn.MLSingleInputSupportLimits;
+	var tile : MLSingleInputSupportLimits;
 	@:optional
-	var transpose : js.webnn.MLSingleInputSupportLimits;
+	var transpose : MLSingleInputSupportLimits;
 	@:optional
-	var triangular : js.webnn.MLSingleInputSupportLimits;
+	var triangular : MLSingleInputSupportLimits;
 	@:optional
-	var where : js.webnn.MLWhereSupportLimits;
+	var where : MLWhereSupportLimits;
 };

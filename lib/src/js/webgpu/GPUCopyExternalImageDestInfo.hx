@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-typedef GPUCopyExternalImageDestInfo = js.webgpu.GPUTexelCopyTextureInfo & {
+typedef GPUCopyExternalImageDestInfo = GPUTexelCopyTextureInfo & {
 	@:optional
 	var colorSpace : js.html.PredefinedColorSpace = "srgb";
 	@:optional

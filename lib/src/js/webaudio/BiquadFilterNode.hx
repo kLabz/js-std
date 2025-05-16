@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class BiquadFilterNode extends js.webaudio.AudioNode {
-	function new(context:js.webaudio.BaseAudioContext, ?options:js.webaudio.BiquadFilterOptions):Void;
+extern class BiquadFilterNode extends AudioNode {
+	function new(context:BaseAudioContext, ?options:BiquadFilterOptions):Void;
 	function getFrequencyResponse(frequencyHz:Float32Array, magResponse:Float32Array, phaseResponse:Float32Array):Void;
 }

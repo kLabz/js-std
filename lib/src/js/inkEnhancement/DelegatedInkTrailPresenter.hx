@@ -25,5 +25,5 @@
 package js.inkEnhancement;
 
 extern class DelegatedInkTrailPresenter {
-	function updateInkTrailStartPoint(event:js.pointerevents.PointerEvent, style:js.inkEnhancement.InkTrailStyle):Void;
+	function updateInkTrailStartPoint(event:js.pointerevents.PointerEvent, style:InkTrailStyle):Void;
 }

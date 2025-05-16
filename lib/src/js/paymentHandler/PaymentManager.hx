@@ -25,5 +25,5 @@
 package js.paymentHandler;
 
 extern class PaymentManager {
-	function enableDelegations(delegations:Array<js.paymentHandler.PaymentDelegation>):js.lib.Promise<Void>;
+	function enableDelegations(delegations:Array<PaymentDelegation>):js.lib.Promise<Void>;
 }

@@ -24,6 +24,6 @@
 
 package js.turtledove;
 
-extern class InterestGroupBiddingAndScoringScriptRunnerGlobalScope extends js.turtledove.InterestGroupScriptRunnerGlobalScope {
+extern class InterestGroupBiddingAndScoringScriptRunnerGlobalScope extends InterestGroupScriptRunnerGlobalScope {
 
 }

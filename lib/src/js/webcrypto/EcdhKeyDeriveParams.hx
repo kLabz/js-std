@@ -24,6 +24,6 @@
 
 package js.webcrypto;
 
-typedef EcdhKeyDeriveParams = js.webcrypto.Algorithm & {
-	var public : js.webcrypto.CryptoKey;
+typedef EcdhKeyDeriveParams = Algorithm & {
+	var public : CryptoKey;
 };

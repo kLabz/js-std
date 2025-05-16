@@ -26,7 +26,7 @@ package js.webtransport;
 
 typedef WebTransportErrorOptions = {
 	@:optional
-	var source : js.webtransport.WebTransportErrorSource = "stream";
+	var source : WebTransportErrorSource = "stream";
 	@:optional
 	var streamErrorCode : Int = null;
 };

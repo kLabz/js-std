@@ -24,6 +24,6 @@
 
 package js.speechApi;
 
-extern class SpeechSynthesisErrorEvent extends js.speechApi.SpeechSynthesisEvent {
-	function new(type:String, eventInitDict:js.speechApi.SpeechSynthesisErrorEventInit):Void;
+extern class SpeechSynthesisErrorEvent extends SpeechSynthesisEvent {
+	function new(type:String, eventInitDict:SpeechSynthesisErrorEventInit):Void;
 }

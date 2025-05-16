@@ -26,7 +26,7 @@ package js.fileSystemAccess;
 
 typedef FilePickerOptions = {
 	@:optional
-	var types : Array<js.fileSystemAccess.FilePickerAcceptType>;
+	var types : Array<FilePickerAcceptType>;
 	@:optional
 	var excludeAcceptAllOption : Bool = false;
 	@:optional

@@ -25,6 +25,6 @@
 package js.html;
 
 extern class Path2D {
-	function new(?path:haxe.extern.EitherType<js.html.Path2D, String>):Void;
-	function addPath(path:js.html.Path2D, ?transform:js.geometry.DOMMatrix2DInit):Void;
+	function new(?path:haxe.extern.EitherType<Path2D, String>):Void;
+	function addPath(path:Path2D, ?transform:js.geometry.DOMMatrix2DInit):Void;
 }

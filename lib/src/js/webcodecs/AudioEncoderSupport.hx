@@ -28,5 +28,5 @@ typedef AudioEncoderSupport = {
 	@:optional
 	var supported : Bool;
 	@:optional
-	var config : js.webcodecs.AudioEncoderConfig;
+	var config : AudioEncoderConfig;
 };

@@ -34,5 +34,5 @@ typedef MessageEventInit = js.dom.EventInit & {
 	@:optional
 	var source : MessageEventSource = null;
 	@:optional
-	var ports : Array<js.html.MessagePort> = [];
+	var ports : Array<MessagePort> = [];
 };

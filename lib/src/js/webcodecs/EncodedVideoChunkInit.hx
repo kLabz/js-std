@@ -25,7 +25,7 @@
 package js.webcodecs;
 
 typedef EncodedVideoChunkInit = {
-	var type : js.webcodecs.EncodedVideoChunkType;
+	var type : EncodedVideoChunkType;
 	var timestamp : Float;
 	@:optional
 	var duration : Float;

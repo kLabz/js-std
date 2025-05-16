@@ -26,10 +26,10 @@ package js.fileapi;
 
 extern class FileReader extends js.dom.EventTarget {
 	function new():Void;
-	function readAsArrayBuffer(blob:js.fileapi.Blob):Void;
-	function readAsBinaryString(blob:js.fileapi.Blob):Void;
-	function readAsText(blob:js.fileapi.Blob, ?encoding:String):Void;
-	function readAsDataURL(blob:js.fileapi.Blob):Void;
+	function readAsArrayBuffer(blob:Blob):Void;
+	function readAsBinaryString(blob:Blob):Void;
+	function readAsText(blob:Blob, ?encoding:String):Void;
+	function readAsDataURL(blob:Blob):Void;
 	function abort():Void;
 	static inline var EMPTY : Int = 0;
 	static inline var LOADING : Int = 1;

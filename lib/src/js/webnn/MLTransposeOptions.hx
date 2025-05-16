@@ -24,7 +24,7 @@
 
 package js.webnn;
 
-typedef MLTransposeOptions = js.webnn.MLOperatorOptions & {
+typedef MLTransposeOptions = MLOperatorOptions & {
 	@:optional
 	var permutation : Array<Int>;
 };

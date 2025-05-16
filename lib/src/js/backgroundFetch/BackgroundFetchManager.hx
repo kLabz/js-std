@@ -25,7 +25,7 @@
 package js.backgroundFetch;
 
 extern class BackgroundFetchManager {
-	function fetch(id:String, requests:haxe.extern.EitherType<RequestInfo, Array<RequestInfo>>, ?options:js.backgroundFetch.BackgroundFetchOptions):js.lib.Promise<js.backgroundFetch.BackgroundFetchRegistration>;
-	function get(id:String):js.lib.Promise<js.backgroundFetch.BackgroundFetchRegistration>;
+	function fetch(id:String, requests:haxe.extern.EitherType<RequestInfo, Array<RequestInfo>>, ?options:BackgroundFetchOptions):js.lib.Promise<BackgroundFetchRegistration>;
+	function get(id:String):js.lib.Promise<BackgroundFetchRegistration>;
 	function getIds():js.lib.Promise<Array<String>>;
 }

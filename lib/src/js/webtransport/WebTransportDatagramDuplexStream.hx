@@ -25,5 +25,5 @@
 package js.webtransport;
 
 extern class WebTransportDatagramDuplexStream {
-	function createWritable(?options:js.webtransport.WebTransportSendOptions):js.webtransport.WebTransportDatagramsWritable;
+	function createWritable(?options:WebTransportSendOptions):WebTransportDatagramsWritable;
 }

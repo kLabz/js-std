@@ -24,6 +24,6 @@
 
 package js.webxr;
 
-extern class XRViewerPose extends js.webxr.XRPose {
+extern class XRViewerPose extends XRPose {
 
 }

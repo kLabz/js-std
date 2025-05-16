@@ -25,9 +25,9 @@
 package js.webrtc;
 
 typedef RTCTrackEventInit = js.dom.EventInit & {
-	var receiver : js.webrtc.RTCRtpReceiver;
+	var receiver : RTCRtpReceiver;
 	var track : js.mediacaptureStreams.MediaStreamTrack;
 	@:optional
 	var streams : Array<js.mediacaptureStreams.MediaStream> = [];
-	var transceiver : js.webrtc.RTCRtpTransceiver;
+	var transceiver : RTCRtpTransceiver;
 };

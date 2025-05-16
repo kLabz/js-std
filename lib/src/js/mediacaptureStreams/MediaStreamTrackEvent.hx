@@ -25,5 +25,5 @@
 package js.mediacaptureStreams;
 
 extern class MediaStreamTrackEvent extends js.dom.Event {
-	function new(type:String, eventInitDict:js.mediacaptureStreams.MediaStreamTrackEventInit):Void;
+	function new(type:String, eventInitDict:MediaStreamTrackEventInit):Void;
 }

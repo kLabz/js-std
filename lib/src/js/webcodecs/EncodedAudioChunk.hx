@@ -25,6 +25,6 @@
 package js.webcodecs;
 
 extern class EncodedAudioChunk {
-	function new(init:js.webcodecs.EncodedAudioChunkInit):Void;
+	function new(init:EncodedAudioChunkInit):Void;
 	function copyTo(destination:AllowSharedBufferSource):Void;
 }

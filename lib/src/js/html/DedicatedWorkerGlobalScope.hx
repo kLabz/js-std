@@ -24,8 +24,8 @@
 
 package js.html;
 
-extern class DedicatedWorkerGlobalScope extends js.html.WorkerGlobalScope {
+extern class DedicatedWorkerGlobalScope extends WorkerGlobalScope {
 	overload function postMessage(message:Any, transfer:Array<object>):Void;
-	overload function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;
+	overload function postMessage(message:Any, ?options:StructuredSerializeOptions):Void;
 	function close():Void;
 }

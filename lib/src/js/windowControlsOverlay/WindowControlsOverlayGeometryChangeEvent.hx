@@ -25,5 +25,5 @@
 package js.windowControlsOverlay;
 
 extern class WindowControlsOverlayGeometryChangeEvent extends js.dom.Event {
-	function new(type:String, eventInitDict:js.windowControlsOverlay.WindowControlsOverlayGeometryChangeEventInit):Void;
+	function new(type:String, eventInitDict:WindowControlsOverlayGeometryChangeEventInit):Void;
 }

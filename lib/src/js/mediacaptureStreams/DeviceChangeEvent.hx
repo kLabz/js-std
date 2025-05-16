@@ -25,5 +25,5 @@
 package js.mediacaptureStreams;
 
 extern class DeviceChangeEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:js.mediacaptureStreams.DeviceChangeEventInit):Void;
+	function new(type:String, ?eventInitDict:DeviceChangeEventInit):Void;
 }

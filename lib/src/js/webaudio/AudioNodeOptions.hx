@@ -28,7 +28,7 @@ typedef AudioNodeOptions = {
 	@:optional
 	var channelCount : Int;
 	@:optional
-	var channelCountMode : js.webaudio.ChannelCountMode;
+	var channelCountMode : ChannelCountMode;
 	@:optional
-	var channelInterpretation : js.webaudio.ChannelInterpretation;
+	var channelInterpretation : ChannelInterpretation;
 };

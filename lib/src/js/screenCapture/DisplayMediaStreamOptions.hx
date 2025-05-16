@@ -30,13 +30,13 @@ typedef DisplayMediaStreamOptions = {
 	@:optional
 	var audio : haxe.extern.EitherType<Bool, js.mediacaptureStreams.MediaTrackConstraints> = false;
 	@:optional
-	var controller : js.screenCapture.CaptureController;
+	var controller : CaptureController;
 	@:optional
-	var selfBrowserSurface : js.screenCapture.SelfCapturePreferenceEnum;
+	var selfBrowserSurface : SelfCapturePreferenceEnum;
 	@:optional
-	var systemAudio : js.screenCapture.SystemAudioPreferenceEnum;
+	var systemAudio : SystemAudioPreferenceEnum;
 	@:optional
-	var surfaceSwitching : js.screenCapture.SurfaceSwitchingPreferenceEnum;
+	var surfaceSwitching : SurfaceSwitchingPreferenceEnum;
 	@:optional
-	var monitorTypeSurfaces : js.screenCapture.MonitorTypeSurfacesEnum;
+	var monitorTypeSurfaces : MonitorTypeSurfacesEnum;
 };

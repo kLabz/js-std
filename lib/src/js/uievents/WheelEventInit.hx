@@ -24,7 +24,7 @@
 
 package js.uievents;
 
-typedef WheelEventInit = js.uievents.MouseEventInit & {
+typedef WheelEventInit = MouseEventInit & {
 	@:optional
 	var deltaX : Float = 0.0;
 	@:optional

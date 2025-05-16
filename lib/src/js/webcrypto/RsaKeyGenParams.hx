@@ -24,7 +24,7 @@
 
 package js.webcrypto;
 
-typedef RsaKeyGenParams = js.webcrypto.Algorithm & {
+typedef RsaKeyGenParams = Algorithm & {
 	var modulusLength : Int;
 	var publicExponent : BigInteger;
 };

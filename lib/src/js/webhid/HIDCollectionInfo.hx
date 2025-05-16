@@ -32,11 +32,11 @@ typedef HIDCollectionInfo = {
 	@:optional
 	var type : Int;
 	@:optional
-	var children : Array<js.webhid.HIDCollectionInfo>;
+	var children : Array<HIDCollectionInfo>;
 	@:optional
-	var inputReports : Array<js.webhid.HIDReportInfo>;
+	var inputReports : Array<HIDReportInfo>;
 	@:optional
-	var outputReports : Array<js.webhid.HIDReportInfo>;
+	var outputReports : Array<HIDReportInfo>;
 	@:optional
-	var featureReports : Array<js.webhid.HIDReportInfo>;
+	var featureReports : Array<HIDReportInfo>;
 };

@@ -25,12 +25,12 @@
 package js.webnn;
 
 extern class MLContext {
-	function dispatch(graph:js.webnn.MLGraph, inputs:MLNamedTensors, outputs:MLNamedTensors):Void;
-	function createTensor(descriptor:js.webnn.MLTensorDescriptor):js.lib.Promise<js.webnn.MLTensor>;
-	function createConstantTensor(descriptor:js.webnn.MLOperandDescriptor, inputData:AllowSharedBufferSource):js.lib.Promise<js.webnn.MLTensor>;
-	overload function readTensor(tensor:js.webnn.MLTensor):js.lib.Promise<ArrayBuffer>;
-	overload function readTensor(tensor:js.webnn.MLTensor, outputData:AllowSharedBufferSource):js.lib.Promise<Void>;
-	function writeTensor(tensor:js.webnn.MLTensor, inputData:AllowSharedBufferSource):Void;
-	function opSupportLimits():js.webnn.MLOpSupportLimits;
+	function dispatch(graph:MLGraph, inputs:MLNamedTensors, outputs:MLNamedTensors):Void;
+	function createTensor(descriptor:MLTensorDescriptor):js.lib.Promise<MLTensor>;
+	function createConstantTensor(descriptor:MLOperandDescriptor, inputData:AllowSharedBufferSource):js.lib.Promise<MLTensor>;
+	overload function readTensor(tensor:MLTensor):js.lib.Promise<ArrayBuffer>;
+	overload function readTensor(tensor:MLTensor, outputData:AllowSharedBufferSource):js.lib.Promise<Void>;
+	function writeTensor(tensor:MLTensor, inputData:AllowSharedBufferSource):Void;
+	function opSupportLimits():MLOpSupportLimits;
 	function destroy():Void;
 }

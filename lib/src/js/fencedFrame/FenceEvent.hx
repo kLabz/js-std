@@ -30,7 +30,7 @@ typedef FenceEvent = {
 	@:optional
 	var eventData : String;
 	@:optional
-	var destination : Array<js.fencedFrame.FenceReportingDestination>;
+	var destination : Array<FenceReportingDestination>;
 	@:optional
 	var crossOriginExposed : Bool = false;
 	@:optional

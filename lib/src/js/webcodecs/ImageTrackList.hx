@@ -25,5 +25,5 @@
 package js.webcodecs;
 
 extern class ImageTrackList {
-	function (index:Int):js.webcodecs.ImageTrack;
+	function (index:Int):ImageTrack;
 }

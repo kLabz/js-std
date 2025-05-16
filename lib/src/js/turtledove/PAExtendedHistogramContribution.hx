@@ -25,8 +25,8 @@
 package js.turtledove;
 
 typedef PAExtendedHistogramContribution = {
-	var bucket : haxe.extern.EitherType<js.turtledove.PASignalValue, bigint>;
-	var value : haxe.extern.EitherType<js.turtledove.PASignalValue, Int>;
+	var bucket : haxe.extern.EitherType<PASignalValue, bigint>;
+	var value : haxe.extern.EitherType<PASignalValue, Int>;
 	@:optional
 	var filteringId : bigint = 0;
 };

@@ -26,11 +26,11 @@ package js.geometry;
 
 typedef DOMQuadInit = {
 	@:optional
-	var p1 : js.geometry.DOMPointInit;
+	var p1 : DOMPointInit;
 	@:optional
-	var p2 : js.geometry.DOMPointInit;
+	var p2 : DOMPointInit;
 	@:optional
-	var p3 : js.geometry.DOMPointInit;
+	var p3 : DOMPointInit;
 	@:optional
-	var p4 : js.geometry.DOMPointInit;
+	var p4 : DOMPointInit;
 };

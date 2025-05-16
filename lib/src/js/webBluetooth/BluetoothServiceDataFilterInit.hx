@@ -24,6 +24,6 @@
 
 package js.webBluetooth;
 
-typedef BluetoothServiceDataFilterInit = js.webBluetooth.BluetoothDataFilterInit & {
+typedef BluetoothServiceDataFilterInit = BluetoothDataFilterInit & {
 	var service : BluetoothServiceUUID;
 };

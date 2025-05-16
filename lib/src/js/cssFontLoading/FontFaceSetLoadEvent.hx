@@ -25,5 +25,5 @@
 package js.cssFontLoading;
 
 extern class FontFaceSetLoadEvent extends js.dom.Event {
-	function new(type:CSSOMString, ?eventInitDict:js.cssFontLoading.FontFaceSetLoadEventInit):Void;
+	function new(type:CSSOMString, ?eventInitDict:FontFaceSetLoadEventInit):Void;
 }

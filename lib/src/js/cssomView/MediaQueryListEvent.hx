@@ -25,5 +25,5 @@
 package js.cssomView;
 
 extern class MediaQueryListEvent extends js.dom.Event {
-	function new(type:CSSOMString, ?eventInitDict:js.cssomView.MediaQueryListEventInit):Void;
+	function new(type:CSSOMString, ?eventInitDict:MediaQueryListEventInit):Void;
 }

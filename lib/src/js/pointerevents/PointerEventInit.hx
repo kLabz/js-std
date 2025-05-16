@@ -52,7 +52,7 @@ typedef PointerEventInit = js.uievents.MouseEventInit & {
 	@:optional
 	var persistentDeviceId : Int = 0;
 	@:optional
-	var coalescedEvents : Array<js.pointerevents.PointerEvent> = [];
+	var coalescedEvents : Array<PointerEvent> = [];
 	@:optional
-	var predictedEvents : Array<js.pointerevents.PointerEvent> = [];
+	var predictedEvents : Array<PointerEvent> = [];
 };

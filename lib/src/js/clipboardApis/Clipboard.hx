@@ -25,7 +25,7 @@
 package js.clipboardApis;
 
 extern class Clipboard extends js.dom.EventTarget {
-	function read(?formats:js.clipboardApis.ClipboardUnsanitizedFormats):js.lib.Promise<ClipboardItems>;
+	function read(?formats:ClipboardUnsanitizedFormats):js.lib.Promise<ClipboardItems>;
 	function readText():js.lib.Promise<String>;
 	function write(data:ClipboardItems):js.lib.Promise<Void>;
 	function writeText(data:String):js.lib.Promise<Void>;

@@ -24,7 +24,7 @@
 
 package js.webrtcStats;
 
-typedef RTCReceivedRtpStreamStats = js.webrtcStats.RTCRtpStreamStats & {
+typedef RTCReceivedRtpStreamStats = RTCRtpStreamStats & {
 	@:optional
 	var packetsReceived : Float;
 	@:optional

@@ -24,15 +24,15 @@
 
 package js.html;
 
-extern class HTMLTableElement extends js.html.HTMLElement {
+extern class HTMLTableElement extends HTMLElement {
 	function new():Void;
-	function createCaption():js.html.HTMLTableCaptionElement;
+	function createCaption():HTMLTableCaptionElement;
 	function deleteCaption():Void;
-	function createTHead():js.html.HTMLTableSectionElement;
+	function createTHead():HTMLTableSectionElement;
 	function deleteTHead():Void;
-	function createTFoot():js.html.HTMLTableSectionElement;
+	function createTFoot():HTMLTableSectionElement;
 	function deleteTFoot():Void;
-	function createTBody():js.html.HTMLTableSectionElement;
-	function insertRow(?index:Int):js.html.HTMLTableRowElement;
+	function createTBody():HTMLTableSectionElement;
+	function insertRow(?index:Int):HTMLTableRowElement;
 	function deleteRow(index:Int):Void;
 }

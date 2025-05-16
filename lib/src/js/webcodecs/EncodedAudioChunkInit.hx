@@ -25,7 +25,7 @@
 package js.webcodecs;
 
 typedef EncodedAudioChunkInit = {
-	var type : js.webcodecs.EncodedAudioChunkType;
+	var type : EncodedAudioChunkType;
 	var timestamp : Float;
 	@:optional
 	var duration : Float;

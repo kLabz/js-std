@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-typedef GPUComputePassDescriptor = js.webgpu.GPUObjectDescriptorBase & {
+typedef GPUComputePassDescriptor = GPUObjectDescriptorBase & {
 	@:optional
-	var timestampWrites : js.webgpu.GPUComputePassTimestampWrites;
+	var timestampWrites : GPUComputePassTimestampWrites;
 };

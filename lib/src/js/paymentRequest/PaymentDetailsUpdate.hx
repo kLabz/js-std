@@ -24,15 +24,15 @@
 
 package js.paymentRequest;
 
-typedef PaymentDetailsUpdate = js.paymentRequest.PaymentDetailsBase & {
+typedef PaymentDetailsUpdate = PaymentDetailsBase & {
 	@:optional
 	var error : String;
 	@:optional
-	var total : js.paymentRequest.PaymentItem;
+	var total : PaymentItem;
 	@:optional
-	var shippingAddressErrors : js.paymentRequest.AddressErrors;
+	var shippingAddressErrors : AddressErrors;
 	@:optional
-	var payerErrors : js.paymentRequest.PayerErrors;
+	var payerErrors : PayerErrors;
 	@:optional
 	var paymentMethodErrors : object;
 };

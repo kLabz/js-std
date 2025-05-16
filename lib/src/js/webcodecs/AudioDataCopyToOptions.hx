@@ -31,5 +31,5 @@ typedef AudioDataCopyToOptions = {
 	@:optional
 	var frameCount : Int;
 	@:optional
-	var format : js.webcodecs.AudioSampleFormat;
+	var format : AudioSampleFormat;
 };

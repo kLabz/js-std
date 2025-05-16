@@ -25,5 +25,5 @@
 package js.mediacaptureStreams;
 
 typedef MediaStreamTrackEventInit = js.dom.EventInit & {
-	var track : js.mediacaptureStreams.MediaStreamTrack;
+	var track : MediaStreamTrack;
 };

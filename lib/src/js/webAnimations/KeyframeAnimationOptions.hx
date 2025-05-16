@@ -24,11 +24,11 @@
 
 package js.webAnimations;
 
-typedef KeyframeAnimationOptions = js.webAnimations.KeyframeEffectOptions & {
+typedef KeyframeAnimationOptions = KeyframeEffectOptions & {
 	@:optional
 	var id : String = "";
 	@:optional
-	var timeline : js.webAnimations.AnimationTimeline;
+	var timeline : AnimationTimeline;
 	@:optional
 	var rangeStart : haxe.extern.EitherType<js.webAnimations2.TimelineRangeOffset, haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, haxe.extern.EitherType<js.cssTypedOm.CSSKeywordValue, String>>> = "normal";
 	@:optional

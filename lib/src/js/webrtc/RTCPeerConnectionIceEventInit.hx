@@ -26,7 +26,7 @@ package js.webrtc;
 
 typedef RTCPeerConnectionIceEventInit = js.dom.EventInit & {
 	@:optional
-	var candidate : js.webrtc.RTCIceCandidate;
+	var candidate : RTCIceCandidate;
 	@:optional
 	var url : String;
 };

@@ -26,13 +26,13 @@ package js.mediacaptureStreams;
 
 extern class MediaStream extends js.dom.EventTarget {
 	function new():Void;
-	function new(stream:js.mediacaptureStreams.MediaStream):Void;
-	function new(tracks:Array<js.mediacaptureStreams.MediaStreamTrack>):Void;
-	function getAudioTracks():Array<js.mediacaptureStreams.MediaStreamTrack>;
-	function getVideoTracks():Array<js.mediacaptureStreams.MediaStreamTrack>;
-	function getTracks():Array<js.mediacaptureStreams.MediaStreamTrack>;
-	function getTrackById(trackId:String):js.mediacaptureStreams.MediaStreamTrack;
-	function addTrack(track:js.mediacaptureStreams.MediaStreamTrack):Void;
-	function removeTrack(track:js.mediacaptureStreams.MediaStreamTrack):Void;
-	function clone():js.mediacaptureStreams.MediaStream;
+	function new(stream:MediaStream):Void;
+	function new(tracks:Array<MediaStreamTrack>):Void;
+	function getAudioTracks():Array<MediaStreamTrack>;
+	function getVideoTracks():Array<MediaStreamTrack>;
+	function getTracks():Array<MediaStreamTrack>;
+	function getTrackById(trackId:String):MediaStreamTrack;
+	function addTrack(track:MediaStreamTrack):Void;
+	function removeTrack(track:MediaStreamTrack):Void;
+	function clone():MediaStream;
 }

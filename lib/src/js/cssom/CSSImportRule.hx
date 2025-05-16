@@ -24,6 +24,6 @@
 
 package js.cssom;
 
-extern class CSSImportRule extends js.cssom.CSSRule {
+extern class CSSImportRule extends CSSRule {
 
 }

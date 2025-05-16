@@ -26,7 +26,7 @@ package js.uaClientHints;
 
 typedef UALowEntropyJSON = {
 	@:optional
-	var brands : Array<js.uaClientHints.NavigatorUABrandVersion>;
+	var brands : Array<NavigatorUABrandVersion>;
 	@:optional
 	var mobile : Bool;
 	@:optional

@@ -26,7 +26,7 @@ package js.html;
 
 extern class ElementInternals {
 	function setFormValue(value:haxe.extern.EitherType<js.fileapi.File, haxe.extern.EitherType<String, js.xhr.FormData>>, ?state:haxe.extern.EitherType<js.fileapi.File, haxe.extern.EitherType<String, js.xhr.FormData>>):Void;
-	function setValidity(?flags:js.html.ValidityStateFlags, ?message:String, ?anchor:js.html.HTMLElement):Void;
+	function setValidity(?flags:ValidityStateFlags, ?message:String, ?anchor:HTMLElement):Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
 }

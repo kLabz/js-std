@@ -26,11 +26,11 @@ package js.writingAssistanceApis;
 
 typedef SummarizerCreateCoreOptions = {
 	@:optional
-	var type : js.writingAssistanceApis.SummarizerType = "key-points";
+	var type : SummarizerType = "key-points";
 	@:optional
-	var format : js.writingAssistanceApis.SummarizerFormat = "markdown";
+	var format : SummarizerFormat = "markdown";
 	@:optional
-	var length : js.writingAssistanceApis.SummarizerLength = "short";
+	var length : SummarizerLength = "short";
 	@:optional
 	var expectedInputLanguages : Array<String>;
 	@:optional

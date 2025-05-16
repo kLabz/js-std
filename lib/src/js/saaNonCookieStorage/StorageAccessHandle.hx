@@ -30,5 +30,5 @@ extern class StorageAccessHandle {
 	function createObjectURL(obj:haxe.extern.EitherType<js.fileapi.Blob, js.mediaSource.MediaSource>):String;
 	function revokeObjectURL(url:String):Void;
 	function BroadcastChannel(name:String):js.html.BroadcastChannel;
-	function SharedWorker(scriptURL:String, ?options:haxe.extern.EitherType<String, js.saaNonCookieStorage.SharedWorkerOptions>):js.html.SharedWorker;
+	function SharedWorker(scriptURL:String, ?options:haxe.extern.EitherType<String, SharedWorkerOptions>):js.html.SharedWorker;
 }

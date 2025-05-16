@@ -24,6 +24,6 @@
 
 package js.webxrlayers;
 
-extern class XRWebGLSubImage extends js.webxrlayers.XRSubImage {
+extern class XRWebGLSubImage extends XRSubImage {
 
 }

@@ -25,6 +25,6 @@
 package js.geolocationSensor;
 
 extern class GeolocationSensor extends js.genericSensor.Sensor {
-	function new(?options:js.geolocationSensor.GeolocationSensorOptions):Void;
-	function read(?readOptions:js.geolocationSensor.ReadOptions):js.lib.Promise<js.geolocationSensor.GeolocationSensorReading>;
+	function new(?options:GeolocationSensorOptions):Void;
+	function read(?readOptions:ReadOptions):js.lib.Promise<GeolocationSensorReading>;
 }

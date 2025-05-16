@@ -25,7 +25,7 @@
 package js.speechApi;
 
 typedef SpeechRecognitionErrorEventInit = js.dom.EventInit & {
-	var error : js.speechApi.SpeechRecognitionErrorCode;
+	var error : SpeechRecognitionErrorCode;
 	@:optional
 	var message : String = "";
 };

@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLImageElement extends js.html.HTMLElement {
+extern class HTMLImageElement extends HTMLElement {
 	function new():Void;
 	function decode():js.lib.Promise<Void>;
 }

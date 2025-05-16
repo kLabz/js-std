@@ -25,5 +25,5 @@
 package js.loginStatus;
 
 extern class NavigatorLogin {
-	function setStatus(status:js.loginStatus.LoginStatus):js.lib.Promise<Void>;
+	function setStatus(status:LoginStatus):js.lib.Promise<Void>;
 }

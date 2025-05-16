@@ -37,19 +37,19 @@ typedef VideoEncoderConfig = {
 	@:optional
 	var framerate : Float;
 	@:optional
-	var hardwareAcceleration : js.webcodecs.HardwareAcceleration = "no-preference";
+	var hardwareAcceleration : HardwareAcceleration = "no-preference";
 	@:optional
-	var alpha : js.webcodecs.AlphaOption = "discard";
+	var alpha : AlphaOption = "discard";
 	@:optional
 	var scalabilityMode : String;
 	@:optional
-	var bitrateMode : js.webcodecs.VideoEncoderBitrateMode = "variable";
+	var bitrateMode : VideoEncoderBitrateMode = "variable";
 	@:optional
-	var latencyMode : js.webcodecs.LatencyMode = "quality";
+	var latencyMode : LatencyMode = "quality";
 	@:optional
 	var contentHint : String;
 	@:optional
-	var hevc : js.webcodecsHevcCodecRegistration.HevcEncoderConfig;
-	@:optional
 	var avc : js.webcodecsAvcCodecRegistration.AvcEncoderConfig;
+	@:optional
+	var hevc : js.webcodecsHevcCodecRegistration.HevcEncoderConfig;
 };

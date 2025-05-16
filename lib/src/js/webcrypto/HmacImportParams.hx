@@ -24,7 +24,7 @@
 
 package js.webcrypto;
 
-typedef HmacImportParams = js.webcrypto.Algorithm & {
+typedef HmacImportParams = Algorithm & {
 	var hash : HashAlgorithmIdentifier;
 	@:optional
 	var length : Int;

@@ -25,6 +25,6 @@
 package js.webrtcEncodedTransform;
 
 extern class SFrameTransform extends js.dom.EventTarget {
-	function new(?options:js.webrtcEncodedTransform.SFrameTransformOptions):Void;
+	function new(?options:SFrameTransformOptions):Void;
 	function setEncryptionKey(key:js.webcrypto.CryptoKey, ?keyID:CryptoKeyID):js.lib.Promise<Void>;
 }

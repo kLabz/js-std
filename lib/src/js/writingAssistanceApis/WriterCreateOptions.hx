@@ -24,7 +24,7 @@
 
 package js.writingAssistanceApis;
 
-typedef WriterCreateOptions = js.writingAssistanceApis.WriterCreateCoreOptions & {
+typedef WriterCreateOptions = WriterCreateCoreOptions & {
 	@:optional
 	var signal : js.dom.AbortSignal;
 	@:optional

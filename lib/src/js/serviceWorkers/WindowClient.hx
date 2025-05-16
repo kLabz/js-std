@@ -24,7 +24,7 @@
 
 package js.serviceWorkers;
 
-extern class WindowClient extends js.serviceWorkers.Client {
-	function focus():js.lib.Promise<js.serviceWorkers.WindowClient>;
-	function navigate(url:String):js.lib.Promise<js.serviceWorkers.WindowClient>;
+extern class WindowClient extends Client {
+	function focus():js.lib.Promise<WindowClient>;
+	function navigate(url:String):js.lib.Promise<WindowClient>;
 }

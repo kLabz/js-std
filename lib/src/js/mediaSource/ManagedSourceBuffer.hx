@@ -24,6 +24,6 @@
 
 package js.mediaSource;
 
-extern class ManagedSourceBuffer extends js.mediaSource.SourceBuffer {
+extern class ManagedSourceBuffer extends SourceBuffer {
 
 }

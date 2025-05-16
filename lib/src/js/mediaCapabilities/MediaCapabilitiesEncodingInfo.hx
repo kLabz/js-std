@@ -24,7 +24,7 @@
 
 package js.mediaCapabilities;
 
-typedef MediaCapabilitiesEncodingInfo = js.mediaCapabilities.MediaCapabilitiesInfo & {
+typedef MediaCapabilitiesEncodingInfo = MediaCapabilitiesInfo & {
 	@:optional
-	var configuration : js.mediaCapabilities.MediaEncodingConfiguration;
+	var configuration : MediaEncodingConfiguration;
 };

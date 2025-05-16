@@ -25,5 +25,5 @@
 package js.isInputPending;
 
 extern class Scheduling {
-	function isInputPending(?isInputPendingOptions:js.isInputPending.IsInputPendingOptions):Bool;
+	function isInputPending(?isInputPendingOptions:IsInputPendingOptions):Bool;
 }

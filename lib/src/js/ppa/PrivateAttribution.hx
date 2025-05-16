@@ -25,6 +25,6 @@
 package js.ppa;
 
 extern class PrivateAttribution {
-	function saveImpression(options:js.ppa.PrivateAttributionImpressionOptions):Void;
-	function measureConversion(options:js.ppa.PrivateAttributionConversionOptions):js.lib.Promise<js.ppa.PrivateAttributionConversionResult>;
+	function saveImpression(options:PrivateAttributionImpressionOptions):Void;
+	function measureConversion(options:PrivateAttributionConversionOptions):js.lib.Promise<PrivateAttributionConversionResult>;
 }

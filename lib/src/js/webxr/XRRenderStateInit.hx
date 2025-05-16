@@ -34,7 +34,7 @@ typedef XRRenderStateInit = {
 	@:optional
 	var inlineVerticalFieldOfView : Float;
 	@:optional
-	var baseLayer : js.webxr.XRWebGLLayer;
+	var baseLayer : XRWebGLLayer;
 	@:optional
-	var layers : Array<js.webxr.XRLayer>;
+	var layers : Array<XRLayer>;
 };

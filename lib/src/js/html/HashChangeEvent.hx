@@ -25,5 +25,5 @@
 package js.html;
 
 extern class HashChangeEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:js.html.HashChangeEventInit):Void;
+	function new(type:String, ?eventInitDict:HashChangeEventInit):Void;
 }

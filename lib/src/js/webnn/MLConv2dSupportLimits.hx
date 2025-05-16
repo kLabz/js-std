@@ -26,11 +26,11 @@ package js.webnn;
 
 typedef MLConv2dSupportLimits = {
 	@:optional
-	var input : js.webnn.MLTensorLimits;
+	var input : MLTensorLimits;
 	@:optional
-	var filter : js.webnn.MLTensorLimits;
+	var filter : MLTensorLimits;
 	@:optional
-	var bias : js.webnn.MLTensorLimits;
+	var bias : MLTensorLimits;
 	@:optional
-	var output : js.webnn.MLDataTypeLimits;
+	var output : MLDataTypeLimits;
 };

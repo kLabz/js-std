@@ -28,7 +28,7 @@ typedef RTCIceCandidatePairStats = js.webrtc.RTCStats & {
 	var transportId : String;
 	var localCandidateId : String;
 	var remoteCandidateId : String;
-	var state : js.webrtcStats.RTCStatsIceCandidatePairState;
+	var state : RTCStatsIceCandidatePairState;
 	@:optional
 	var nominated : Bool;
 	@:optional

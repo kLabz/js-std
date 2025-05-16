@@ -25,7 +25,7 @@
 package js.webxr;
 
 typedef XRInputSourcesChangeEventInit = js.dom.EventInit & {
-	var session : js.webxr.XRSession;
-	var added : Array<js.webxr.XRInputSource>;
-	var removed : Array<js.webxr.XRInputSource>;
+	var session : XRSession;
+	var added : Array<XRInputSource>;
+	var removed : Array<XRInputSource>;
 };

@@ -24,11 +24,11 @@
 
 package js.webgpu;
 
-typedef GPUDeviceDescriptor = js.webgpu.GPUObjectDescriptorBase & {
+typedef GPUDeviceDescriptor = GPUObjectDescriptorBase & {
 	@:optional
-	var requiredFeatures : Array<js.webgpu.GPUFeatureName> = [];
+	var requiredFeatures : Array<GPUFeatureName> = [];
 	@:optional
 	var requiredLimits : haxe.DynamicAccess<haxe.extern.EitherType<GPUSize64, Void>> = {  };
 	@:optional
-	var defaultQueue : js.webgpu.GPUQueueDescriptor = {  };
+	var defaultQueue : GPUQueueDescriptor = {  };
 };

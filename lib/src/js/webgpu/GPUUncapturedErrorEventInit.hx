@@ -25,5 +25,5 @@
 package js.webgpu;
 
 typedef GPUUncapturedErrorEventInit = js.dom.EventInit & {
-	var error : js.webgpu.GPUError;
+	var error : GPUError;
 };

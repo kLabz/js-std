@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class Element extends js.dom.Node {
+extern class Element extends Node {
 	function hasAttributes():Bool;
 	function getAttributeNames():Array<String>;
 	function getAttribute(qualifiedName:String):String;
@@ -36,23 +36,23 @@ extern class Element extends js.dom.Node {
 	function toggleAttribute(qualifiedName:String, ?force:Bool):Bool;
 	function hasAttribute(qualifiedName:String):Bool;
 	function hasAttributeNS(namespace:String, localName:String):Bool;
-	function getAttributeNode(qualifiedName:String):js.dom.Attr;
-	function getAttributeNodeNS(namespace:String, localName:String):js.dom.Attr;
-	function setAttributeNode(attr:js.dom.Attr):js.dom.Attr;
-	function setAttributeNodeNS(attr:js.dom.Attr):js.dom.Attr;
-	function removeAttributeNode(attr:js.dom.Attr):js.dom.Attr;
-	function attachShadow(init:js.dom.ShadowRootInit):js.dom.ShadowRoot;
-	function closest(selectors:String):js.dom.Element;
+	function getAttributeNode(qualifiedName:String):Attr;
+	function getAttributeNodeNS(namespace:String, localName:String):Attr;
+	function setAttributeNode(attr:Attr):Attr;
+	function setAttributeNodeNS(attr:Attr):Attr;
+	function removeAttributeNode(attr:Attr):Attr;
+	function attachShadow(init:ShadowRootInit):ShadowRoot;
+	function closest(selectors:String):Element;
 	function matches(selectors:String):Bool;
 	function webkitMatchesSelector(selectors:String):Bool;
-	function getElementsByTagName(qualifiedName:String):js.dom.HTMLCollection;
-	function getElementsByTagNameNS(namespace:String, localName:String):js.dom.HTMLCollection;
-	function getElementsByClassName(classNames:String):js.dom.HTMLCollection;
-	function insertAdjacentElement(where:String, element:js.dom.Element):js.dom.Element;
+	function getElementsByTagName(qualifiedName:String):HTMLCollection;
+	function getElementsByTagNameNS(namespace:String, localName:String):HTMLCollection;
+	function getElementsByClassName(classNames:String):HTMLCollection;
+	function insertAdjacentElement(where:String, element:Element):Element;
 	function insertAdjacentText(where:String, data:String):Void;
-	function getSpatialNavigationContainer():js.dom.Node;
-	function focusableAreas(?option:js.cssNav.FocusableAreasOption):Array<js.dom.Node>;
-	function spatialNavigationSearch(dir:js.cssNav.SpatialNavigationDirection, ?options:js.cssNav.SpatialNavigationSearchOptions):js.dom.Node;
+	function getSpatialNavigationContainer():Node;
+	function focusableAreas(?option:js.cssNav.FocusableAreasOption):Array<Node>;
+	function spatialNavigationSearch(dir:js.cssNav.SpatialNavigationDirection, ?options:js.cssNav.SpatialNavigationSearchOptions):Node;
 	function pseudo(type:CSSOMString):js.cssPseudo.CSSPseudoElement;
 	function computedStyleMap():js.cssTypedOm.StylePropertyMapReadOnly;
 	function getClientRects():js.geometry.DOMRectList;

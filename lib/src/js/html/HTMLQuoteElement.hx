@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLQuoteElement extends js.html.HTMLElement {
+extern class HTMLQuoteElement extends HTMLElement {
 	function new():Void;
 }

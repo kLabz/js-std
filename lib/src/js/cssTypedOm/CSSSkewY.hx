@@ -24,6 +24,6 @@
 
 package js.cssTypedOm;
 
-extern class CSSSkewY extends js.cssTypedOm.CSSTransformComponent {
-	function new(ay:js.cssTypedOm.CSSNumericValue):Void;
+extern class CSSSkewY extends CSSTransformComponent {
+	function new(ay:CSSNumericValue):Void;
 }

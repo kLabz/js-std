@@ -25,5 +25,5 @@
 package js.html;
 
 extern class ImageBitmapRenderingContext {
-	function transferFromImageBitmap(bitmap:js.html.ImageBitmap):Void;
+	function transferFromImageBitmap(bitmap:ImageBitmap):Void;
 }

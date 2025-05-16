@@ -25,5 +25,5 @@
 package js.compression;
 
 extern class DecompressionStream {
-	function new(format:js.compression.CompressionFormat):Void;
+	function new(format:CompressionFormat):Void;
 }

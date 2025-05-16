@@ -26,11 +26,11 @@ package js.webnn;
 
 typedef MLScatterSupportLimits = {
 	@:optional
-	var input : js.webnn.MLTensorLimits;
+	var input : MLTensorLimits;
 	@:optional
-	var indices : js.webnn.MLTensorLimits;
+	var indices : MLTensorLimits;
 	@:optional
-	var updates : js.webnn.MLTensorLimits;
+	var updates : MLTensorLimits;
 	@:optional
-	var output : js.webnn.MLDataTypeLimits;
+	var output : MLDataTypeLimits;
 };

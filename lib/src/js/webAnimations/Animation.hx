@@ -25,7 +25,7 @@
 package js.webAnimations;
 
 extern class Animation extends js.dom.EventTarget {
-	function new(?effect:js.webAnimations.AnimationEffect, ?timeline:js.webAnimations.AnimationTimeline):Void;
+	function new(?effect:AnimationEffect, ?timeline:AnimationTimeline):Void;
 	function cancel():Void;
 	function finish():Void;
 	function play():Void;

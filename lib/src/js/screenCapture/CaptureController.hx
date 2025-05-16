@@ -26,7 +26,7 @@ package js.screenCapture;
 
 extern class CaptureController extends js.dom.EventTarget {
 	function new():Void;
-	function setFocusBehavior(focusBehavior:js.screenCapture.CaptureStartFocusBehavior):Void;
+	function setFocusBehavior(focusBehavior:CaptureStartFocusBehavior):Void;
 	function getSupportedZoomLevels():Array<Int>;
 	function increaseZoomLevel():js.lib.Promise<Void>;
 	function decreaseZoomLevel():js.lib.Promise<Void>;

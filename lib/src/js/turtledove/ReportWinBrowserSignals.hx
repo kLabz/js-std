@@ -24,7 +24,7 @@
 
 package js.turtledove;
 
-typedef ReportWinBrowserSignals = js.turtledove.ReportingBrowserSignals & {
+typedef ReportWinBrowserSignals = ReportingBrowserSignals & {
 	@:optional
 	var adCost : Float;
 	@:optional
@@ -40,5 +40,5 @@ typedef ReportWinBrowserSignals = js.turtledove.ReportingBrowserSignals & {
 	@:optional
 	var dataVersion : Int;
 	@:optional
-	var kAnonStatus : js.turtledove.KAnonStatus;
+	var kAnonStatus : KAnonStatus;
 };

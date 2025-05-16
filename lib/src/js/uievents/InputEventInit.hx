@@ -24,7 +24,7 @@
 
 package js.uievents;
 
-typedef InputEventInit = js.uievents.UIEventInit & {
+typedef InputEventInit = UIEventInit & {
 	@:optional
 	var data : String = null;
 	@:optional

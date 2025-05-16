@@ -25,5 +25,5 @@
 package js.editContext;
 
 extern class TextFormat {
-	function new(?options:js.editContext.TextFormatInit):Void;
+	function new(?options:TextFormatInit):Void;
 }

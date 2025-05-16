@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class OscillatorNode extends js.webaudio.AudioScheduledSourceNode {
-	function new(context:js.webaudio.BaseAudioContext, ?options:js.webaudio.OscillatorOptions):Void;
-	function setPeriodicWave(periodicWave:js.webaudio.PeriodicWave):Void;
+extern class OscillatorNode extends AudioScheduledSourceNode {
+	function new(context:BaseAudioContext, ?options:OscillatorOptions):Void;
+	function setPeriodicWave(periodicWave:PeriodicWave):Void;
 }

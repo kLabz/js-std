@@ -25,11 +25,11 @@
 package js.webrtc;
 
 extern class RTCRtpSender {
-	function getCapabilities(kind:String):js.webrtc.RTCRtpCapabilities;
-	function setParameters(parameters:js.webrtc.RTCRtpSendParameters, ?setParameterOptions:js.webrtc.RTCSetParameterOptions):js.lib.Promise<Void>;
-	function getParameters():js.webrtc.RTCRtpSendParameters;
+	function getCapabilities(kind:String):RTCRtpCapabilities;
+	function setParameters(parameters:RTCRtpSendParameters, ?setParameterOptions:RTCSetParameterOptions):js.lib.Promise<Void>;
+	function getParameters():RTCRtpSendParameters;
 	function replaceTrack(withTrack:js.mediacaptureStreams.MediaStreamTrack):js.lib.Promise<Void>;
 	function setStreams(streams:js.mediacaptureStreams.MediaStream):Void;
-	function getStats():js.lib.Promise<js.webrtc.RTCStatsReport>;
+	function getStats():js.lib.Promise<RTCStatsReport>;
 	function generateKeyFrame(?rids:Array<String>):js.lib.Promise<Void>;
 }

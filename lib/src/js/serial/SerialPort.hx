@@ -25,10 +25,10 @@
 package js.serial;
 
 extern class SerialPort extends js.dom.EventTarget {
-	function getInfo():js.serial.SerialPortInfo;
-	function open(options:js.serial.SerialOptions):js.lib.Promise<Void>;
-	function setSignals(?signals:js.serial.SerialOutputSignals):js.lib.Promise<Void>;
-	function getSignals():js.lib.Promise<js.serial.SerialInputSignals>;
+	function getInfo():SerialPortInfo;
+	function open(options:SerialOptions):js.lib.Promise<Void>;
+	function setSignals(?signals:SerialOutputSignals):js.lib.Promise<Void>;
+	function getSignals():js.lib.Promise<SerialInputSignals>;
 	function close():js.lib.Promise<Void>;
 	function forget():js.lib.Promise<Void>;
 }

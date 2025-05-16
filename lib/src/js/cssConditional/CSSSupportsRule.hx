@@ -24,6 +24,6 @@
 
 package js.cssConditional;
 
-extern class CSSSupportsRule extends js.cssConditional.CSSConditionRule {
+extern class CSSSupportsRule extends CSSConditionRule {
 
 }

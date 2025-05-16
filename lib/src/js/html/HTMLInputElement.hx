@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLInputElement extends js.html.HTMLElement {
+extern class HTMLInputElement extends HTMLElement {
 	function new():Void;
 	function stepUp(?n:Int):Void;
 	function stepDown(?n:Int):Void;
@@ -33,7 +33,7 @@ extern class HTMLInputElement extends js.html.HTMLElement {
 	function setCustomValidity(error:String):Void;
 	function select():Void;
 	overload function setRangeText(replacement:String):Void;
-	overload function setRangeText(replacement:String, start:Int, end:Int, ?selectionMode:js.html.SelectionMode):Void;
+	overload function setRangeText(replacement:String, start:Int, end:Int, ?selectionMode:SelectionMode):Void;
 	function setSelectionRange(start:Int, end:Int, ?direction:String):Void;
 	function showPicker():Void;
 }

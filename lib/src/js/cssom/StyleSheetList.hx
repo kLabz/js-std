@@ -25,5 +25,5 @@
 package js.cssom;
 
 extern class StyleSheetList {
-	function item(index:Int):js.cssom.CSSStyleSheet;
+	function item(index:Int):CSSStyleSheet;
 }

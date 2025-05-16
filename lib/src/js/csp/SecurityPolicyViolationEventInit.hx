@@ -42,7 +42,7 @@ typedef SecurityPolicyViolationEventInit = js.dom.EventInit & {
 	@:optional
 	var sample : String = "";
 	@:optional
-	var disposition : js.csp.SecurityPolicyViolationEventDisposition = "enforce";
+	var disposition : SecurityPolicyViolationEventDisposition = "enforce";
 	@:optional
 	var statusCode : Int = 0;
 	@:optional

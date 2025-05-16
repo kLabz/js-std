@@ -26,5 +26,5 @@ package js.clipboardApis;
 
 typedef ClipboardItemOptions = {
 	@:optional
-	var presentationStyle : js.clipboardApis.PresentationStyle = "unspecified";
+	var presentationStyle : PresentationStyle = "unspecified";
 };

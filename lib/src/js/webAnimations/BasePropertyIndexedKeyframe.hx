@@ -30,5 +30,5 @@ typedef BasePropertyIndexedKeyframe = {
 	@:optional
 	var easing : haxe.extern.EitherType<String, Array<String>> = [];
 	@:optional
-	var composite : haxe.extern.EitherType<js.webAnimations.CompositeOperationOrAuto, Array<js.webAnimations.CompositeOperationOrAuto>> = [];
+	var composite : haxe.extern.EitherType<CompositeOperationOrAuto, Array<CompositeOperationOrAuto>> = [];
 };

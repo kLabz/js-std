@@ -25,5 +25,5 @@
 package js.webAnimations2;
 
 extern class AnimationPlaybackEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:js.webAnimations2.AnimationPlaybackEventInit):Void;
+	function new(type:String, ?eventInitDict:AnimationPlaybackEventInit):Void;
 }

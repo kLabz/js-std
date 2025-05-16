@@ -25,5 +25,5 @@
 package js.webtransport;
 
 extern class WebTransportError extends js.webidl.DOMException {
-	function new(?message:String, ?options:js.webtransport.WebTransportErrorOptions):Void;
+	function new(?message:String, ?options:WebTransportErrorOptions):Void;
 }

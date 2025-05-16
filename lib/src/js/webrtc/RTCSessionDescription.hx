@@ -25,6 +25,6 @@
 package js.webrtc;
 
 extern class RTCSessionDescription {
-	function new(descriptionInitDict:js.webrtc.RTCSessionDescriptionInit):Void;
-	function toJSON():js.webrtc.RTCSessionDescriptionInit;
+	function new(descriptionInitDict:RTCSessionDescriptionInit):Void;
+	function toJSON():RTCSessionDescriptionInit;
 }

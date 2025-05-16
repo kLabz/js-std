@@ -25,5 +25,5 @@
 package js.securePaymentConfirmation;
 
 typedef CollectedClientPaymentData = js.webauthn.CollectedClientData & {
-	var payment : js.securePaymentConfirmation.CollectedClientAdditionalPaymentData;
+	var payment : CollectedClientAdditionalPaymentData;
 };

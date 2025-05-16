@@ -24,6 +24,6 @@
 
 package js.webaudio;
 
-extern class AudioWorkletNode extends js.webaudio.AudioNode {
-	function new(context:js.webaudio.BaseAudioContext, name:String, ?options:js.webaudio.AudioWorkletNodeOptions):Void;
+extern class AudioWorkletNode extends AudioNode {
+	function new(context:BaseAudioContext, name:String, ?options:AudioWorkletNodeOptions):Void;
 }

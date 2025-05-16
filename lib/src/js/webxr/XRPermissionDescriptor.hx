@@ -26,7 +26,7 @@ package js.webxr;
 
 typedef XRPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
-	var mode : js.webxr.XRSessionMode;
+	var mode : XRSessionMode;
 	@:optional
 	var requiredFeatures : Array<String>;
 	@:optional

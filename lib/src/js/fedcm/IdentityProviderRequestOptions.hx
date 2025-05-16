@@ -24,7 +24,7 @@
 
 package js.fedcm;
 
-typedef IdentityProviderRequestOptions = js.fedcm.IdentityProviderConfig & {
+typedef IdentityProviderRequestOptions = IdentityProviderConfig & {
 	@:optional
 	var nonce : String;
 	@:optional

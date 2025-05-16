@@ -25,8 +25,8 @@
 package js.serviceWorkers;
 
 extern class Clients {
-	function get(id:String):js.lib.Promise<haxe.extern.EitherType<js.serviceWorkers.Client, Void>>;
-	function matchAll(?options:js.serviceWorkers.ClientQueryOptions):js.lib.Promise<Array<js.serviceWorkers.Client>>;
-	function openWindow(url:String):js.lib.Promise<js.serviceWorkers.WindowClient>;
+	function get(id:String):js.lib.Promise<haxe.extern.EitherType<Client, Void>>;
+	function matchAll(?options:ClientQueryOptions):js.lib.Promise<Array<Client>>;
+	function openWindow(url:String):js.lib.Promise<WindowClient>;
 	function claim():js.lib.Promise<Void>;
 }

@@ -36,5 +36,5 @@ typedef PaymentOptions = {
 	@:optional
 	var requestShipping : Bool = false;
 	@:optional
-	var shippingType : js.paymentRequest.PaymentShippingType = "shipping";
+	var shippingType : PaymentShippingType = "shipping";
 };

@@ -26,5 +26,5 @@ package js.manifestIncubations;
 
 typedef PromptResponseObject = {
 	@:optional
-	var userChoice : js.manifestIncubations.AppBannerPromptOutcome;
+	var userChoice : AppBannerPromptOutcome;
 };

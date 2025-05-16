@@ -24,7 +24,7 @@
 
 package js.turtledove;
 
-typedef ReportResultBrowserSignals = js.turtledove.ReportingBrowserSignals & {
+typedef ReportResultBrowserSignals = ReportingBrowserSignals & {
 	var desirability : Float;
 	@:optional
 	var topLevelSellerSignals : String;

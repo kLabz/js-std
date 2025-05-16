@@ -25,5 +25,5 @@
 package js.html;
 
 extern class NavigationCurrentEntryChangeEvent extends js.dom.Event {
-	function new(type:String, eventInitDict:js.html.NavigationCurrentEntryChangeEventInit):Void;
+	function new(type:String, eventInitDict:NavigationCurrentEntryChangeEventInit):Void;
 }

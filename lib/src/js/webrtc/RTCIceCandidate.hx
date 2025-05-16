@@ -25,6 +25,6 @@
 package js.webrtc;
 
 extern class RTCIceCandidate {
-	function new(?candidateInitDict:js.webrtc.RTCLocalIceCandidateInit):Void;
-	function toJSON():js.webrtc.RTCIceCandidateInit;
+	function new(?candidateInitDict:RTCLocalIceCandidateInit):Void;
+	function toJSON():RTCIceCandidateInit;
 }

@@ -38,7 +38,7 @@ typedef WebGLContextAttributes = {
 	@:optional
 	var preserveDrawingBuffer : Bool = false;
 	@:optional
-	var powerPreference : js.webgl1.WebGLPowerPreference = "default";
+	var powerPreference : WebGLPowerPreference = "default";
 	@:optional
 	var failIfMajorPerformanceCaveat : Bool = false;
 	@:optional

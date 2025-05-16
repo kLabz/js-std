@@ -26,11 +26,11 @@ package js.svg;
 
 extern class SVGNumberList {
 	function clear():Void;
-	function initialize(newItem:js.svg.SVGNumber):js.svg.SVGNumber;
-	function getItem(index:Int):js.svg.SVGNumber;
-	function insertItemBefore(newItem:js.svg.SVGNumber, index:Int):js.svg.SVGNumber;
-	function replaceItem(newItem:js.svg.SVGNumber, index:Int):js.svg.SVGNumber;
-	function removeItem(index:Int):js.svg.SVGNumber;
-	function appendItem(newItem:js.svg.SVGNumber):js.svg.SVGNumber;
-	function (index:Int, newItem:js.svg.SVGNumber):Void;
+	function initialize(newItem:SVGNumber):SVGNumber;
+	function getItem(index:Int):SVGNumber;
+	function insertItemBefore(newItem:SVGNumber, index:Int):SVGNumber;
+	function replaceItem(newItem:SVGNumber, index:Int):SVGNumber;
+	function removeItem(index:Int):SVGNumber;
+	function appendItem(newItem:SVGNumber):SVGNumber;
+	function (index:Int, newItem:SVGNumber):Void;
 }

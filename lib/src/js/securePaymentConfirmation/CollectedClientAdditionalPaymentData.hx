@@ -32,5 +32,5 @@ typedef CollectedClientAdditionalPaymentData = {
 	@:optional
 	var payeeOrigin : String;
 	var total : js.paymentRequest.PaymentCurrencyAmount;
-	var instrument : js.securePaymentConfirmation.PaymentCredentialInstrument;
+	var instrument : PaymentCredentialInstrument;
 };

@@ -26,7 +26,7 @@ package js.cssLayoutApi;
 
 typedef BreakTokenOptions = {
 	@:optional
-	var childBreakTokens : Array<js.cssLayoutApi.ChildBreakToken>;
+	var childBreakTokens : Array<ChildBreakToken>;
 	@:optional
 	var data : Any = null;
 };

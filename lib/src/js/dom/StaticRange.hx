@@ -24,6 +24,6 @@
 
 package js.dom;
 
-extern class StaticRange extends js.dom.AbstractRange {
-	function new(init:js.dom.StaticRangeInit):Void;
+extern class StaticRange extends AbstractRange {
+	function new(init:StaticRangeInit):Void;
 }

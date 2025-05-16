@@ -24,20 +24,20 @@
 
 package js.svg;
 
-extern class SVGSVGElement extends js.svg.SVGGraphicsElement {
-	function getIntersectionList(rect:js.geometry.DOMRectReadOnly, referenceElement:js.svg.SVGElement):js.dom.NodeList;
-	function getEnclosureList(rect:js.geometry.DOMRectReadOnly, referenceElement:js.svg.SVGElement):js.dom.NodeList;
-	function checkIntersection(element:js.svg.SVGElement, rect:js.geometry.DOMRectReadOnly):Bool;
-	function checkEnclosure(element:js.svg.SVGElement, rect:js.geometry.DOMRectReadOnly):Bool;
+extern class SVGSVGElement extends SVGGraphicsElement {
+	function getIntersectionList(rect:js.geometry.DOMRectReadOnly, referenceElement:SVGElement):js.dom.NodeList;
+	function getEnclosureList(rect:js.geometry.DOMRectReadOnly, referenceElement:SVGElement):js.dom.NodeList;
+	function checkIntersection(element:SVGElement, rect:js.geometry.DOMRectReadOnly):Bool;
+	function checkEnclosure(element:SVGElement, rect:js.geometry.DOMRectReadOnly):Bool;
 	function deselectAll():Void;
-	function createSVGNumber():js.svg.SVGNumber;
-	function createSVGLength():js.svg.SVGLength;
-	function createSVGAngle():js.svg.SVGAngle;
+	function createSVGNumber():SVGNumber;
+	function createSVGLength():SVGLength;
+	function createSVGAngle():SVGAngle;
 	function createSVGPoint():js.geometry.DOMPoint;
 	function createSVGMatrix():js.geometry.DOMMatrix;
 	function createSVGRect():js.geometry.DOMRect;
-	function createSVGTransform():js.svg.SVGTransform;
-	function createSVGTransformFromMatrix(?matrix:js.geometry.DOMMatrix2DInit):js.svg.SVGTransform;
+	function createSVGTransform():SVGTransform;
+	function createSVGTransformFromMatrix(?matrix:js.geometry.DOMMatrix2DInit):SVGTransform;
 	function getElementById(elementId:String):js.dom.Element;
 	function suspendRedraw(maxWaitMilliseconds:Int):Int;
 	function unsuspendRedraw(suspendHandleID:Int):Void;

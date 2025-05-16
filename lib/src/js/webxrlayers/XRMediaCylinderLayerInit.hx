@@ -24,7 +24,7 @@
 
 package js.webxrlayers;
 
-typedef XRMediaCylinderLayerInit = js.webxrlayers.XRMediaLayerInit & {
+typedef XRMediaCylinderLayerInit = XRMediaLayerInit & {
 	@:optional
 	var transform : js.webxr.XRRigidTransform;
 	@:optional

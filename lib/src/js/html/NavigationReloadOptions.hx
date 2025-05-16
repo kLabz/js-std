@@ -24,7 +24,7 @@
 
 package js.html;
 
-typedef NavigationReloadOptions = js.html.NavigationOptions & {
+typedef NavigationReloadOptions = NavigationOptions & {
 	@:optional
 	var state : Any;
 };

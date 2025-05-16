@@ -25,6 +25,6 @@
 package js.fetch;
 
 extern class Request {
-	function new(input:RequestInfo, ?init:js.fetch.RequestInit):Void;
-	function clone():js.fetch.Request;
+	function new(input:RequestInfo, ?init:RequestInit):Void;
+	function clone():Request;
 }

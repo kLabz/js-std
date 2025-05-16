@@ -24,6 +24,6 @@
 
 package js.svg;
 
-extern class SVGRadialGradientElement extends js.svg.SVGGradientElement {
+extern class SVGRadialGradientElement extends SVGGradientElement {
 
 }

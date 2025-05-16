@@ -26,5 +26,5 @@ package js.webBluetooth;
 
 extern class BluetoothDevice extends js.dom.EventTarget {
 	function forget():js.lib.Promise<Void>;
-	function watchAdvertisements(?options:js.webBluetooth.WatchAdvertisementsOptions):js.lib.Promise<Void>;
+	function watchAdvertisements(?options:WatchAdvertisementsOptions):js.lib.Promise<Void>;
 }

@@ -30,7 +30,7 @@ typedef OptionalEffectTiming = {
 	@:optional
 	var endDelay : Float;
 	@:optional
-	var fill : js.webAnimations.FillMode;
+	var fill : FillMode;
 	@:optional
 	var iterationStart : Float;
 	@:optional
@@ -38,7 +38,7 @@ typedef OptionalEffectTiming = {
 	@:optional
 	var duration : haxe.extern.EitherType<Float, String>;
 	@:optional
-	var direction : js.webAnimations.PlaybackDirection;
+	var direction : PlaybackDirection;
 	@:optional
 	var easing : String;
 	@:optional

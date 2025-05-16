@@ -24,6 +24,6 @@
 
 package js.cssTypedOm;
 
-extern class CSSTranslate extends js.cssTypedOm.CSSTransformComponent {
-	function new(x:js.cssTypedOm.CSSNumericValue, y:js.cssTypedOm.CSSNumericValue, ?z:js.cssTypedOm.CSSNumericValue):Void;
+extern class CSSTranslate extends CSSTransformComponent {
+	function new(x:CSSNumericValue, y:CSSNumericValue, ?z:CSSNumericValue):Void;
 }

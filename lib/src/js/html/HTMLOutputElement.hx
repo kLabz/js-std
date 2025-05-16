@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLOutputElement extends js.html.HTMLElement {
+extern class HTMLOutputElement extends HTMLElement {
 	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;

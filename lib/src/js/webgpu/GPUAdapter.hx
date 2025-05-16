@@ -25,5 +25,5 @@
 package js.webgpu;
 
 extern class GPUAdapter {
-	function requestDevice(?descriptor:js.webgpu.GPUDeviceDescriptor):js.lib.Promise<js.webgpu.GPUDevice>;
+	function requestDevice(?descriptor:GPUDeviceDescriptor):js.lib.Promise<GPUDevice>;
 }

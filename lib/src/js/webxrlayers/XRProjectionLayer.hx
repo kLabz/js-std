@@ -24,6 +24,6 @@
 
 package js.webxrlayers;
 
-extern class XRProjectionLayer extends js.webxrlayers.XRCompositionLayer {
+extern class XRProjectionLayer extends XRCompositionLayer {
 
 }

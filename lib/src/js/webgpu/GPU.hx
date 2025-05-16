@@ -25,6 +25,6 @@
 package js.webgpu;
 
 extern class GPU {
-	function requestAdapter(?options:js.webgpu.GPURequestAdapterOptions):js.lib.Promise<js.webgpu.GPUAdapter>;
-	function getPreferredCanvasFormat():js.webgpu.GPUTextureFormat;
+	function requestAdapter(?options:GPURequestAdapterOptions):js.lib.Promise<GPUAdapter>;
+	function getPreferredCanvasFormat():GPUTextureFormat;
 }

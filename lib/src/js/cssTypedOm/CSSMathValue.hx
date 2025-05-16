@@ -24,6 +24,6 @@
 
 package js.cssTypedOm;
 
-extern class CSSMathValue extends js.cssTypedOm.CSSNumericValue {
+extern class CSSMathValue extends CSSNumericValue {
 
 }

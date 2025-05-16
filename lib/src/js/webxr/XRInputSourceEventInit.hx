@@ -25,6 +25,6 @@
 package js.webxr;
 
 typedef XRInputSourceEventInit = js.dom.EventInit & {
-	var frame : js.webxr.XRFrame;
-	var inputSource : js.webxr.XRInputSource;
+	var frame : XRFrame;
+	var inputSource : XRInputSource;
 };

@@ -26,6 +26,6 @@ package js.portals;
 
 extern class HTMLPortalElement extends js.html.HTMLElement {
 	function new():Void;
-	function activate(?options:js.portals.PortalActivateOptions):js.lib.Promise<Void>;
+	function activate(?options:PortalActivateOptions):js.lib.Promise<Void>;
 	function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;
 }

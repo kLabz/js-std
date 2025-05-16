@@ -25,7 +25,7 @@
 package js.presentationApi;
 
 typedef PresentationConnectionCloseEventInit = js.dom.EventInit & {
-	var reason : js.presentationApi.PresentationConnectionCloseReason;
+	var reason : PresentationConnectionCloseReason;
 	@:optional
 	var message : String = "";
 };

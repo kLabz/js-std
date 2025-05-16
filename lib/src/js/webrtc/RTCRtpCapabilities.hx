@@ -25,6 +25,6 @@
 package js.webrtc;
 
 typedef RTCRtpCapabilities = {
-	var codecs : Array<js.webrtc.RTCRtpCodec>;
-	var headerExtensions : Array<js.webrtc.RTCRtpHeaderExtensionCapability>;
+	var codecs : Array<RTCRtpCodec>;
+	var headerExtensions : Array<RTCRtpHeaderExtensionCapability>;
 };

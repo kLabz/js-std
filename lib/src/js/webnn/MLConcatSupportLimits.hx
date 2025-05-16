@@ -26,7 +26,7 @@ package js.webnn;
 
 typedef MLConcatSupportLimits = {
 	@:optional
-	var inputs : js.webnn.MLTensorLimits;
+	var inputs : MLTensorLimits;
 	@:optional
-	var output : js.webnn.MLDataTypeLimits;
+	var output : MLDataTypeLimits;
 };

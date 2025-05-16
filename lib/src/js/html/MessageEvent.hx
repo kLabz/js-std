@@ -25,6 +25,6 @@
 package js.html;
 
 extern class MessageEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:js.html.MessageEventInit):Void;
-	function initMessageEvent(type:String, ?bubbles:Bool, ?cancelable:Bool, ?data:Any, ?origin:String, ?lastEventId:String, ?source:MessageEventSource, ?ports:Array<js.html.MessagePort>):Void;
+	function new(type:String, ?eventInitDict:MessageEventInit):Void;
+	function initMessageEvent(type:String, ?bubbles:Bool, ?cancelable:Bool, ?data:Any, ?origin:String, ?lastEventId:String, ?source:MessageEventSource, ?ports:Array<MessagePort>):Void;
 }

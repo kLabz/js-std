@@ -24,6 +24,6 @@
 
 package js.svgAnimations;
 
-extern class SVGAnimateElement extends js.svgAnimations.SVGAnimationElement {
+extern class SVGAnimateElement extends SVGAnimationElement {
 
 }

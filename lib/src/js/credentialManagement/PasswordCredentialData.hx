@@ -24,7 +24,7 @@
 
 package js.credentialManagement;
 
-typedef PasswordCredentialData = js.credentialManagement.CredentialData & {
+typedef PasswordCredentialData = CredentialData & {
 	@:optional
 	var name : String;
 	@:optional

@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLPictureElement extends js.html.HTMLElement {
+extern class HTMLPictureElement extends HTMLElement {
 	function new():Void;
 }

@@ -25,5 +25,5 @@
 package js.indexeddb;
 
 extern class IDBVersionChangeEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:js.indexeddb.IDBVersionChangeEventInit):Void;
+	function new(type:String, ?eventInitDict:IDBVersionChangeEventInit):Void;
 }

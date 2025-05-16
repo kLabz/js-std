@@ -25,7 +25,7 @@
 package js.webgpu;
 
 typedef GPUBufferBinding = {
-	var buffer : js.webgpu.GPUBuffer;
+	var buffer : GPUBuffer;
 	@:optional
 	var offset : GPUSize64 = 0;
 	@:optional

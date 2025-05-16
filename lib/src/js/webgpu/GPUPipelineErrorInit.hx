@@ -25,5 +25,5 @@
 package js.webgpu;
 
 typedef GPUPipelineErrorInit = {
-	var reason : js.webgpu.GPUPipelineErrorReason;
+	var reason : GPUPipelineErrorReason;
 };

@@ -31,11 +31,11 @@ typedef PublicKeyCredentialRequestOptionsJSON = {
 	@:optional
 	var rpId : String;
 	@:optional
-	var allowCredentials : Array<js.webauthn.PublicKeyCredentialDescriptorJSON> = [];
+	var allowCredentials : Array<PublicKeyCredentialDescriptorJSON> = [];
 	@:optional
 	var userVerification : String = "preferred";
 	@:optional
 	var hints : Array<String> = [];
 	@:optional
-	var extensions : js.webauthn.AuthenticationExtensionsClientInputsJSON;
+	var extensions : AuthenticationExtensionsClientInputsJSON;
 };

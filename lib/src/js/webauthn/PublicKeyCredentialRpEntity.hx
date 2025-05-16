@@ -24,7 +24,7 @@
 
 package js.webauthn;
 
-typedef PublicKeyCredentialRpEntity = js.webauthn.PublicKeyCredentialEntity & {
+typedef PublicKeyCredentialRpEntity = PublicKeyCredentialEntity & {
 	@:optional
 	var id : String;
 };

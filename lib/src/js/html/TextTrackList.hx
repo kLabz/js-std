@@ -25,6 +25,6 @@
 package js.html;
 
 extern class TextTrackList extends js.dom.EventTarget {
-	function (index:Int):js.html.TextTrack;
-	function getTrackById(id:String):js.html.TextTrack;
+	function (index:Int):TextTrack;
+	function getTrackById(id:String):TextTrack;
 }

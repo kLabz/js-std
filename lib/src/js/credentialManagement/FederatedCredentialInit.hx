@@ -24,7 +24,7 @@
 
 package js.credentialManagement;
 
-typedef FederatedCredentialInit = js.credentialManagement.CredentialData & {
+typedef FederatedCredentialInit = CredentialData & {
 	@:optional
 	var name : String;
 	@:optional

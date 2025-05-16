@@ -25,6 +25,6 @@
 package js.webtransport;
 
 extern class WebTransportSendStream extends js.streams.WritableStream {
-	function getStats():js.lib.Promise<js.webtransport.WebTransportSendStreamStats>;
-	function getWriter():js.webtransport.WebTransportWriter;
+	function getStats():js.lib.Promise<WebTransportSendStreamStats>;
+	function getWriter():WebTransportWriter;
 }

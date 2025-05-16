@@ -25,5 +25,5 @@
 package js.webhid;
 
 typedef HIDConnectionEventInit = js.dom.EventInit & {
-	var device : js.webhid.HIDDevice;
+	var device : HIDDevice;
 };

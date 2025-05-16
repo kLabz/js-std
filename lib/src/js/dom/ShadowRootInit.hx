@@ -25,11 +25,11 @@
 package js.dom;
 
 typedef ShadowRootInit = {
-	var mode : js.dom.ShadowRootMode;
+	var mode : ShadowRootMode;
 	@:optional
 	var delegatesFocus : Bool = false;
 	@:optional
-	var slotAssignment : js.dom.SlotAssignmentMode = "named";
+	var slotAssignment : SlotAssignmentMode = "named";
 	@:optional
 	var clonable : Bool = false;
 	@:optional

@@ -30,5 +30,5 @@ typedef HandwritingRecognizerQueryResult = {
 	@:optional
 	var textSegmentation : Bool;
 	@:optional
-	var hints : js.handwritingRecognition.HandwritingHintsQueryResult;
+	var hints : HandwritingHintsQueryResult;
 };

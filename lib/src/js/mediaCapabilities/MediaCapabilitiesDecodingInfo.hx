@@ -24,8 +24,8 @@
 
 package js.mediaCapabilities;
 
-typedef MediaCapabilitiesDecodingInfo = js.mediaCapabilities.MediaCapabilitiesInfo & {
+typedef MediaCapabilitiesDecodingInfo = MediaCapabilitiesInfo & {
 	var keySystemAccess : js.encryptedMedia.MediaKeySystemAccess;
 	@:optional
-	var configuration : js.mediaCapabilities.MediaDecodingConfiguration;
+	var configuration : MediaDecodingConfiguration;
 };

@@ -25,6 +25,6 @@
 package js.cssFontLoading;
 
 extern class FontFace {
-	function new(family:CSSOMString, source:haxe.extern.EitherType<CSSOMString, BufferSource>, ?descriptors:js.cssFontLoading.FontFaceDescriptors):Void;
-	function load():js.lib.Promise<js.cssFontLoading.FontFace>;
+	function new(family:CSSOMString, source:haxe.extern.EitherType<CSSOMString, BufferSource>, ?descriptors:FontFaceDescriptors):Void;
+	function load():js.lib.Promise<FontFace>;
 }

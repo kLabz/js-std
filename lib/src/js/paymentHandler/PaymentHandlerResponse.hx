@@ -36,7 +36,7 @@ typedef PaymentHandlerResponse = {
 	@:optional
 	var payerPhone : String;
 	@:optional
-	var shippingAddress : js.paymentHandler.AddressInit;
+	var shippingAddress : AddressInit;
 	@:optional
 	var shippingOption : String;
 };

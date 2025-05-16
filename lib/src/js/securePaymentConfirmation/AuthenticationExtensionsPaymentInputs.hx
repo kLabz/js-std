@@ -38,5 +38,5 @@ typedef AuthenticationExtensionsPaymentInputs = {
 	@:optional
 	var total : js.paymentRequest.PaymentCurrencyAmount;
 	@:optional
-	var instrument : js.securePaymentConfirmation.PaymentCredentialInstrument;
+	var instrument : PaymentCredentialInstrument;
 };

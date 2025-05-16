@@ -25,8 +25,8 @@
 package js.streams;
 
 extern class WritableStream {
-	function new(?underlyingSink:object, ?strategy:js.streams.QueuingStrategy):Void;
+	function new(?underlyingSink:object, ?strategy:QueuingStrategy):Void;
 	function abort(?reason:Any):js.lib.Promise<Void>;
 	function close():js.lib.Promise<Void>;
-	function getWriter():js.streams.WritableStreamDefaultWriter;
+	function getWriter():WritableStreamDefaultWriter;
 }

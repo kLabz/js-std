@@ -24,8 +24,8 @@
 
 package js.webgpu;
 
-typedef GPUShaderModuleDescriptor = js.webgpu.GPUObjectDescriptorBase & {
+typedef GPUShaderModuleDescriptor = GPUObjectDescriptorBase & {
 	var code : String;
 	@:optional
-	var compilationHints : Array<js.webgpu.GPUShaderModuleCompilationHint> = [];
+	var compilationHints : Array<GPUShaderModuleCompilationHint> = [];
 };

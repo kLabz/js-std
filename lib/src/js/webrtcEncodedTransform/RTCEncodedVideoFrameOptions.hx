@@ -26,5 +26,5 @@ package js.webrtcEncodedTransform;
 
 typedef RTCEncodedVideoFrameOptions = {
 	@:optional
-	var metadata : js.webrtcEncodedTransform.RTCEncodedVideoFrameMetadata;
+	var metadata : RTCEncodedVideoFrameMetadata;
 };

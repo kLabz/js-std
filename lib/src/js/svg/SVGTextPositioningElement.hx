@@ -24,6 +24,6 @@
 
 package js.svg;
 
-extern class SVGTextPositioningElement extends js.svg.SVGTextContentElement {
+extern class SVGTextPositioningElement extends SVGTextContentElement {
 
 }

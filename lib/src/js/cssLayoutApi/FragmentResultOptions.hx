@@ -32,9 +32,9 @@ typedef FragmentResultOptions = {
 	@:optional
 	var autoBlockSize : Float = 0;
 	@:optional
-	var childFragments : Array<js.cssLayoutApi.LayoutFragment> = [];
+	var childFragments : Array<LayoutFragment> = [];
 	@:optional
 	var data : Any = null;
 	@:optional
-	var breakToken : js.cssLayoutApi.BreakTokenOptions = null;
+	var breakToken : BreakTokenOptions = null;
 };

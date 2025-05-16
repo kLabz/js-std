@@ -24,7 +24,7 @@
 
 package js.cssParserApi;
 
-extern class CSSParserBlock extends js.cssParserApi.CSSParserValue {
-	function new(name:String, body:Array<js.cssParserApi.CSSParserValue>):Void;
+extern class CSSParserBlock extends CSSParserValue {
+	function new(name:String, body:Array<CSSParserValue>):Void;
 	function ():Void;
 }

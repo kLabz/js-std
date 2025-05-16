@@ -24,6 +24,6 @@
 
 package js.webgpu;
 
-typedef GPUBindGroupLayoutDescriptor = js.webgpu.GPUObjectDescriptorBase & {
-	var entries : Array<js.webgpu.GPUBindGroupLayoutEntry>;
+typedef GPUBindGroupLayoutDescriptor = GPUObjectDescriptorBase & {
+	var entries : Array<GPUBindGroupLayoutEntry>;
 };

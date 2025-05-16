@@ -24,15 +24,15 @@
 
 package js.webaudio;
 
-extern class AudioContext extends js.webaudio.BaseAudioContext {
-	function new(?contextOptions:js.webaudio.AudioContextOptions):Void;
-	function getOutputTimestamp():js.webaudio.AudioTimestamp;
+extern class AudioContext extends BaseAudioContext {
+	function new(?contextOptions:AudioContextOptions):Void;
+	function getOutputTimestamp():AudioTimestamp;
 	function resume():js.lib.Promise<Void>;
 	function suspend():js.lib.Promise<Void>;
 	function close():js.lib.Promise<Void>;
-	function setSinkId(sinkId:haxe.extern.EitherType<String, js.webaudio.AudioSinkOptions>):js.lib.Promise<Void>;
-	function createMediaElementSource(mediaElement:js.html.HTMLMediaElement):js.webaudio.MediaElementAudioSourceNode;
-	function createMediaStreamSource(mediaStream:js.mediacaptureStreams.MediaStream):js.webaudio.MediaStreamAudioSourceNode;
-	function createMediaStreamTrackSource(mediaStreamTrack:js.mediacaptureStreams.MediaStreamTrack):js.webaudio.MediaStreamTrackAudioSourceNode;
-	function createMediaStreamDestination():js.webaudio.MediaStreamAudioDestinationNode;
+	function setSinkId(sinkId:haxe.extern.EitherType<String, AudioSinkOptions>):js.lib.Promise<Void>;
+	function createMediaElementSource(mediaElement:js.html.HTMLMediaElement):MediaElementAudioSourceNode;
+	function createMediaStreamSource(mediaStream:js.mediacaptureStreams.MediaStream):MediaStreamAudioSourceNode;
+	function createMediaStreamTrackSource(mediaStreamTrack:js.mediacaptureStreams.MediaStreamTrack):MediaStreamTrackAudioSourceNode;
+	function createMediaStreamDestination():MediaStreamAudioDestinationNode;
 }

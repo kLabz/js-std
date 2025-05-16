@@ -24,6 +24,6 @@
 
 package js.cssom;
 
-extern class CSSPageDescriptors extends js.cssom.CSSStyleDeclaration {
+extern class CSSPageDescriptors extends CSSStyleDeclaration {
 
 }

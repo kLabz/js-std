@@ -31,9 +31,9 @@ typedef SerialOptions = {
 	@:optional
 	var stopBits : Int = 1;
 	@:optional
-	var parity : js.serial.ParityType = "none";
+	var parity : ParityType = "none";
 	@:optional
 	var bufferSize : Int = 255;
 	@:optional
-	var flowControl : js.serial.FlowControlType = "none";
+	var flowControl : FlowControlType = "none";
 };

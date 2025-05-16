@@ -24,7 +24,7 @@
 
 package js.xhr;
 
-extern class XMLHttpRequest extends js.xhr.XMLHttpRequestEventTarget {
+extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
 	function new():Void;
 	static inline var UNSENT : Int = 0;
 	static inline var OPENED : Int = 1;

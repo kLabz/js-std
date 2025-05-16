@@ -25,6 +25,6 @@
 package js.wasmJsApi;
 
 extern class Global {
-	function new(descriptor:js.wasmJsApi.GlobalDescriptor, ?v:Any):Void;
+	function new(descriptor:GlobalDescriptor, ?v:Any):Void;
 	function valueOf():Any;
 }

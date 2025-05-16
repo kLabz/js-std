@@ -25,6 +25,6 @@
 package js.screenOrientation;
 
 extern class ScreenOrientation extends js.dom.EventTarget {
-	function lock(orientation:js.screenOrientation.OrientationLockType):js.lib.Promise<Void>;
+	function lock(orientation:OrientationLockType):js.lib.Promise<Void>;
 	function unlock():Void;
 }

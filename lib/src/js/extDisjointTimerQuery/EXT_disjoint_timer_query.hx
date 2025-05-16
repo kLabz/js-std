@@ -32,12 +32,12 @@ extern class EXT_disjoint_timer_query {
 	static inline var TIME_ELAPSED_EXT : GLenum = 0x88BF;
 	static inline var TIMESTAMP_EXT : GLenum = 0x8E28;
 	static inline var GPU_DISJOINT_EXT : GLenum = 0x8FBB;
-	function createQueryEXT():js.extDisjointTimerQuery.WebGLTimerQueryEXT;
-	function deleteQueryEXT(query:js.extDisjointTimerQuery.WebGLTimerQueryEXT):Void;
-	function isQueryEXT(query:js.extDisjointTimerQuery.WebGLTimerQueryEXT):Bool;
-	function beginQueryEXT(target:GLenum, query:js.extDisjointTimerQuery.WebGLTimerQueryEXT):Void;
+	function createQueryEXT():WebGLTimerQueryEXT;
+	function deleteQueryEXT(query:WebGLTimerQueryEXT):Void;
+	function isQueryEXT(query:WebGLTimerQueryEXT):Bool;
+	function beginQueryEXT(target:GLenum, query:WebGLTimerQueryEXT):Void;
 	function endQueryEXT(target:GLenum):Void;
-	function queryCounterEXT(query:js.extDisjointTimerQuery.WebGLTimerQueryEXT, target:GLenum):Void;
+	function queryCounterEXT(query:WebGLTimerQueryEXT, target:GLenum):Void;
 	function getQueryEXT(target:GLenum, pname:GLenum):Any;
-	function getQueryObjectEXT(query:js.extDisjointTimerQuery.WebGLTimerQueryEXT, pname:GLenum):Any;
+	function getQueryObjectEXT(query:WebGLTimerQueryEXT, pname:GLenum):Any;
 }

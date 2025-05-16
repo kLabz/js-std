@@ -25,9 +25,9 @@
 package js.html;
 
 extern class DataTransferItemList {
-	function (index:Int):js.html.DataTransferItem;
-	overload function add(data:String, type:String):js.html.DataTransferItem;
-	overload function add(data:js.fileapi.File):js.html.DataTransferItem;
+	function (index:Int):DataTransferItem;
+	overload function add(data:String, type:String):DataTransferItem;
+	overload function add(data:js.fileapi.File):DataTransferItem;
 	function remove(index:Int):Void;
 	function clear():Void;
 }

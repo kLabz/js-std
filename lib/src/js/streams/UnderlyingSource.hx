@@ -32,7 +32,7 @@ typedef UnderlyingSource = {
 	@:optional
 	var cancel : UnderlyingSourceCancelCallback;
 	@:optional
-	var type : js.streams.ReadableStreamType;
+	var type : ReadableStreamType;
 	@:optional
 	var autoAllocateChunkSize : Float;
 };

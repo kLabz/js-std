@@ -25,5 +25,5 @@
 package js.fedcm;
 
 extern class IdentityCredential extends js.credentialManagement.Credential {
-	function disconnect(options:js.fedcm.IdentityCredentialDisconnectOptions):js.lib.Promise<Void>;
+	function disconnect(options:IdentityCredentialDisconnectOptions):js.lib.Promise<Void>;
 }

@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLTrackElement extends js.html.HTMLElement {
+extern class HTMLTrackElement extends HTMLElement {
 	function new():Void;
 	static inline var NONE : Int = 0;
 	static inline var LOADING : Int = 1;

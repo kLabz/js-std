@@ -25,6 +25,6 @@
 package js.mediaCapabilities;
 
 extern class MediaCapabilities {
-	function decodingInfo(configuration:js.mediaCapabilities.MediaDecodingConfiguration):js.lib.Promise<js.mediaCapabilities.MediaCapabilitiesDecodingInfo>;
-	function encodingInfo(configuration:js.mediaCapabilities.MediaEncodingConfiguration):js.lib.Promise<js.mediaCapabilities.MediaCapabilitiesEncodingInfo>;
+	function decodingInfo(configuration:MediaDecodingConfiguration):js.lib.Promise<MediaCapabilitiesDecodingInfo>;
+	function encodingInfo(configuration:MediaEncodingConfiguration):js.lib.Promise<MediaCapabilitiesEncodingInfo>;
 }

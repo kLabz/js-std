@@ -25,5 +25,5 @@
 package js.html;
 
 extern class ErrorEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:js.html.ErrorEventInit):Void;
+	function new(type:String, ?eventInitDict:ErrorEventInit):Void;
 }

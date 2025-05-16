@@ -24,6 +24,6 @@
 
 package js.uievents;
 
-extern class FocusEvent extends js.uievents.UIEvent {
-	function new(type:String, ?eventInitDict:js.uievents.FocusEventInit):Void;
+extern class FocusEvent extends UIEvent {
+	function new(type:String, ?eventInitDict:FocusEventInit):Void;
 }

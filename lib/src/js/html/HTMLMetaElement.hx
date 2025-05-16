@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLMetaElement extends js.html.HTMLElement {
+extern class HTMLMetaElement extends HTMLElement {
 	function new():Void;
 }

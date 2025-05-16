@@ -26,11 +26,11 @@ package js.webcodecsOpusCodecRegistration;
 
 typedef OpusEncoderConfig = {
 	@:optional
-	var format : js.webcodecsOpusCodecRegistration.OpusBitstreamFormat = "opus";
+	var format : OpusBitstreamFormat = "opus";
 	@:optional
-	var signal : js.webcodecsOpusCodecRegistration.OpusSignal = "auto";
+	var signal : OpusSignal = "auto";
 	@:optional
-	var application : js.webcodecsOpusCodecRegistration.OpusApplication = "audio";
+	var application : OpusApplication = "audio";
 	@:optional
 	var frameDuration : Float = 20000;
 	@:optional

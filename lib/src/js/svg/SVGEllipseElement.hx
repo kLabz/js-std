@@ -24,6 +24,6 @@
 
 package js.svg;
 
-extern class SVGEllipseElement extends js.svg.SVGGeometryElement {
+extern class SVGEllipseElement extends SVGGeometryElement {
 
 }

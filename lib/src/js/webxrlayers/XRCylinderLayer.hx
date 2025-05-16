@@ -24,6 +24,6 @@
 
 package js.webxrlayers;
 
-extern class XRCylinderLayer extends js.webxrlayers.XRCompositionLayer {
+extern class XRCylinderLayer extends XRCompositionLayer {
 
 }

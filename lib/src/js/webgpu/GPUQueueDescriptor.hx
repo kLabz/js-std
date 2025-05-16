@@ -24,5 +24,5 @@
 
 package js.webgpu;
 
-typedef GPUQueueDescriptor = js.webgpu.GPUObjectDescriptorBase & {
+typedef GPUQueueDescriptor = GPUObjectDescriptorBase & {
 };

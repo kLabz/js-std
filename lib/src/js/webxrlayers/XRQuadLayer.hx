@@ -24,6 +24,6 @@
 
 package js.webxrlayers;
 
-extern class XRQuadLayer extends js.webxrlayers.XRCompositionLayer {
+extern class XRQuadLayer extends XRCompositionLayer {
 
 }

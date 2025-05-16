@@ -26,7 +26,7 @@ package js.contactPicker;
 
 typedef ContactInfo = {
 	@:optional
-	var address : Array<js.contactPicker.ContactAddress>;
+	var address : Array<ContactAddress>;
 	@:optional
 	var email : Array<String>;
 	@:optional

@@ -32,7 +32,7 @@ typedef MediaMetadataInit = {
 	@:optional
 	var album : String = "";
 	@:optional
-	var artwork : Array<js.mediasession.MediaImage> = [];
+	var artwork : Array<MediaImage> = [];
 	@:optional
-	var chapterInfo : Array<js.mediasession.ChapterInformationInit> = [];
+	var chapterInfo : Array<ChapterInformationInit> = [];
 };

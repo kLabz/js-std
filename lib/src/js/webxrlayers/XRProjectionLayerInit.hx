@@ -26,7 +26,7 @@ package js.webxrlayers;
 
 typedef XRProjectionLayerInit = {
 	@:optional
-	var textureType : js.webxrlayers.XRTextureType = "texture";
+	var textureType : XRTextureType = "texture";
 	@:optional
 	var colorFormat : GLenum = 0x1908;
 	@:optional

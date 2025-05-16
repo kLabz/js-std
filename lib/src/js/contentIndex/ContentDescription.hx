@@ -29,7 +29,7 @@ typedef ContentDescription = {
 	var title : String;
 	var description : String;
 	@:optional
-	var category : js.contentIndex.ContentCategory = "";
+	var category : ContentCategory = "";
 	@:optional
 	var icons : Array<js.imageResource.ImageResource> = [];
 	var url : String;

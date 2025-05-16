@@ -24,7 +24,7 @@
 
 package js.cssomView;
 
-typedef ScrollToOptions = js.cssomView.ScrollOptions & {
+typedef ScrollToOptions = ScrollOptions & {
 	@:optional
 	var left : Float;
 	@:optional

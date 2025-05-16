@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLTimeElement extends js.html.HTMLElement {
+extern class HTMLTimeElement extends HTMLElement {
 	function new():Void;
 }

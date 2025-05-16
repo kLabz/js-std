@@ -25,6 +25,6 @@
 package js.webgpu;
 
 extern class GPUTexture {
-	function createView(?descriptor:js.webgpu.GPUTextureViewDescriptor):js.webgpu.GPUTextureView;
+	function createView(?descriptor:GPUTextureViewDescriptor):GPUTextureView;
 	function destroy():Void;
 }

@@ -25,9 +25,9 @@
 package js.writingAssistanceApis;
 
 extern class Writer {
-	function create(?options:js.writingAssistanceApis.WriterCreateOptions):js.lib.Promise<js.writingAssistanceApis.Writer>;
-	function availability(?options:js.writingAssistanceApis.WriterCreateCoreOptions):js.lib.Promise<js.writingAssistanceApis.Availability>;
-	function write(input:String, ?options:js.writingAssistanceApis.WriterWriteOptions):js.lib.Promise<String>;
-	function writeStreaming(input:String, ?options:js.writingAssistanceApis.WriterWriteOptions):js.streams.ReadableStream;
-	function measureInputUsage(input:String, ?options:js.writingAssistanceApis.WriterWriteOptions):js.lib.Promise<Float>;
+	function create(?options:WriterCreateOptions):js.lib.Promise<Writer>;
+	function availability(?options:WriterCreateCoreOptions):js.lib.Promise<Availability>;
+	function write(input:String, ?options:WriterWriteOptions):js.lib.Promise<String>;
+	function writeStreaming(input:String, ?options:WriterWriteOptions):js.streams.ReadableStream;
+	function measureInputUsage(input:String, ?options:WriterWriteOptions):js.lib.Promise<Float>;
 }

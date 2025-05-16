@@ -27,5 +27,5 @@ package js.fileSystemAccess;
 typedef FileSystemPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	var handle : js.fs.FileSystemHandle;
 	@:optional
-	var mode : js.fileSystemAccess.FileSystemPermissionMode = "read";
+	var mode : FileSystemPermissionMode = "read";
 };

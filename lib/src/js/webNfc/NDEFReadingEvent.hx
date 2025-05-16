@@ -25,5 +25,5 @@
 package js.webNfc;
 
 extern class NDEFReadingEvent extends js.dom.Event {
-	function new(type:String, readingEventInitDict:js.webNfc.NDEFReadingEventInit):Void;
+	function new(type:String, readingEventInitDict:NDEFReadingEventInit):Void;
 }

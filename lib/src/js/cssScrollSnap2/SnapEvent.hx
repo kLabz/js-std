@@ -25,5 +25,5 @@
 package js.cssScrollSnap2;
 
 extern class SnapEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:js.cssScrollSnap2.SnapEventInit):Void;
+	function new(type:String, ?eventInitDict:SnapEventInit):Void;
 }

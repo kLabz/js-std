@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLMarqueeElement extends js.html.HTMLElement {
+extern class HTMLMarqueeElement extends HTMLElement {
 	function new():Void;
 	function start():Void;
 	function stop():Void;

@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-typedef AudioWorkletNodeOptions = js.webaudio.AudioNodeOptions & {
+typedef AudioWorkletNodeOptions = AudioNodeOptions & {
 	@:optional
 	var numberOfInputs : Int = 1;
 	@:optional

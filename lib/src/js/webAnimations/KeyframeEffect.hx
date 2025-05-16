@@ -24,9 +24,9 @@
 
 package js.webAnimations;
 
-extern class KeyframeEffect extends js.webAnimations.AnimationEffect {
-	function new(target:js.dom.Element, keyframes:object, ?options:haxe.extern.EitherType<Float, js.webAnimations.KeyframeEffectOptions>):Void;
-	function new(source:js.webAnimations.KeyframeEffect):Void;
+extern class KeyframeEffect extends AnimationEffect {
+	function new(target:js.dom.Element, keyframes:object, ?options:haxe.extern.EitherType<Float, KeyframeEffectOptions>):Void;
+	function new(source:KeyframeEffect):Void;
 	function getKeyframes():Array<object>;
 	function setKeyframes(keyframes:object):Void;
 }

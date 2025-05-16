@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLEmbedElement extends js.html.HTMLElement {
+extern class HTMLEmbedElement extends HTMLElement {
 	function new():Void;
 	function getSVGDocument():js.dom.Document;
 }

@@ -26,5 +26,5 @@ package js.schedulingApis;
 
 typedef TaskSignalAnyInit = {
 	@:optional
-	var priority : haxe.extern.EitherType<js.schedulingApis.TaskPriority, js.schedulingApis.TaskSignal> = "user-visible";
+	var priority : haxe.extern.EitherType<TaskPriority, TaskSignal> = "user-visible";
 };

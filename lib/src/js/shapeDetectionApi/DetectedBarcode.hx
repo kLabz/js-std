@@ -27,6 +27,6 @@ package js.shapeDetectionApi;
 typedef DetectedBarcode = {
 	var boundingBox : js.geometry.DOMRectReadOnly;
 	var rawValue : String;
-	var format : js.shapeDetectionApi.BarcodeFormat;
+	var format : BarcodeFormat;
 	var cornerPoints : Array<js.imageCapture.Point2D>;
 };

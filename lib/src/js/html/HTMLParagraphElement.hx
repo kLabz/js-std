@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLParagraphElement extends js.html.HTMLElement {
+extern class HTMLParagraphElement extends HTMLElement {
 	function new():Void;
 }

@@ -24,7 +24,7 @@
 
 package js.uievents;
 
-typedef EventModifierInit = js.uievents.UIEventInit & {
+typedef EventModifierInit = UIEventInit & {
 	@:optional
 	var ctrlKey : Bool = false;
 	@:optional

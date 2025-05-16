@@ -25,5 +25,5 @@
 package js.cssLayoutApi;
 
 extern class FragmentResult {
-	function new(?options:js.cssLayoutApi.FragmentResultOptions):Void;
+	function new(?options:FragmentResultOptions):Void;
 }

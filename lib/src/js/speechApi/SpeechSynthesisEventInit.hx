@@ -25,7 +25,7 @@
 package js.speechApi;
 
 typedef SpeechSynthesisEventInit = js.dom.EventInit & {
-	var utterance : js.speechApi.SpeechSynthesisUtterance;
+	var utterance : SpeechSynthesisUtterance;
 	@:optional
 	var charIndex : Int = 0;
 	@:optional

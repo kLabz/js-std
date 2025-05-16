@@ -25,5 +25,5 @@
 package js.html;
 
 extern class PageSwapEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:js.html.PageSwapEventInit):Void;
+	function new(type:String, ?eventInitDict:PageSwapEventInit):Void;
 }

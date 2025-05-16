@@ -30,7 +30,7 @@ typedef IdentityProviderBranding = {
 	@:optional
 	var color : String;
 	@:optional
-	var icons : Array<js.fedcm.IdentityProviderIcon>;
+	var icons : Array<IdentityProviderIcon>;
 	@:optional
 	var name : String;
 };

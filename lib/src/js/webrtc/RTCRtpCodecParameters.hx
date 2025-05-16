@@ -24,6 +24,6 @@
 
 package js.webrtc;
 
-typedef RTCRtpCodecParameters = js.webrtc.RTCRtpCodec & {
+typedef RTCRtpCodecParameters = RTCRtpCodec & {
 	var payloadType : Int;
 };

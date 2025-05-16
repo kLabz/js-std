@@ -26,5 +26,5 @@ package js.digitalCredentials;
 
 typedef DigitalCredentialCreationOptions = {
 	@:optional
-	var requests : Array<js.digitalCredentials.DigitalCredentialCreateRequest>;
+	var requests : Array<DigitalCredentialCreateRequest>;
 };

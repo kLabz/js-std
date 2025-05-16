@@ -24,7 +24,7 @@
 
 package js.webrtcStats;
 
-typedef RTCOutboundRtpStreamStats = js.webrtcStats.RTCSentRtpStreamStats & {
+typedef RTCOutboundRtpStreamStats = RTCSentRtpStreamStats & {
 	@:optional
 	var mid : String;
 	@:optional
@@ -68,7 +68,7 @@ typedef RTCOutboundRtpStreamStats = js.webrtcStats.RTCSentRtpStreamStats & {
 	@:optional
 	var totalPacketSendDelay : Float;
 	@:optional
-	var qualityLimitationReason : js.webrtcStats.RTCQualityLimitationReason;
+	var qualityLimitationReason : RTCQualityLimitationReason;
 	@:optional
 	var qualityLimitationDurations : haxe.DynamicAccess<Float>;
 	@:optional

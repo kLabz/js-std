@@ -1,10 +1,6 @@
 package webidl2;
 
-typedef ConstructorMemberType = {
-	/**
-		String indicating the type of this node.
-	**/
-	var type : String;
+extern interface ConstructorMemberType extends AbstractBase<ConstructorMemberType> {
 	/**
 		An array of arguments for the constructor operation.
 	**/
@@ -13,8 +9,4 @@ typedef ConstructorMemberType = {
 		The container of this type.
 	**/
 	var parent : InterfaceType;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
-};
+}

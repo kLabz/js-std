@@ -1,3 +1,12 @@
 package webidl2;
 
-typedef IDLInterfaceMemberType = ts.AnyOf7<ConstantMemberType, OperationMemberType, AttributeMemberType, ConstructorMemberType, IterableDeclarationMemberType, MaplikeDeclarationMemberType, SetlikeDeclarationMemberType>;
+@:forward
+abstract IDLInterfaceMemberType(AbstractBase<Dynamic>)
+from ConstantMemberType
+from OperationMemberType
+from AttributeMemberType
+from ConstructorMemberType
+from IterableDeclarationMemberType
+from MaplikeDeclarationMemberType
+from SetlikeDeclarationMemberType
+{}

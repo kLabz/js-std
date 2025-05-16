@@ -1,10 +1,6 @@
 package webidl2;
 
-typedef ConstantMemberType = {
-	/**
-		String indicating the type of this node.
-	**/
-	var type : String;
+extern interface ConstantMemberType extends AbstractBase<ConstantMemberType> {
 	/**
 		Whether its type is nullable.
 	**/
@@ -25,8 +21,4 @@ typedef ConstantMemberType = {
 		The container of this type.
 	**/
 	var parent : ts.AnyOf3<CallbackInterfaceType, InterfaceMixinType, InterfaceType>;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
-};
+}

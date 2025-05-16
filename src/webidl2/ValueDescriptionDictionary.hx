@@ -1,16 +1,4 @@
 package webidl2;
 
-typedef ValueDescriptionDictionary = {
-	/**
-		String indicating the type of this node.
-	**/
-	var type : String;
-	/**
-		The container of this type.
-	**/
-	var parent : ts.AnyOf3<ConstantMemberType, Argument, FieldType>;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
-};
+extern interface ValueDescriptionDictionary extends AbstractValueDescription<ValueDescriptionDictionary> {
+}

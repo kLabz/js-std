@@ -9,8 +9,4 @@ extern interface AbstractTypeDescription extends AbstractBase<AbstractTypeDescri
 		The container of this type.
 	**/
 	var parent : ts.AnyOf11<CallbackType, TypedefType, ConstantMemberType, OperationMemberType, AttributeMemberType, IterableDeclarationMemberType, MaplikeDeclarationMemberType, SetlikeDeclarationMemberType, UnionTypeDescription, Argument, FieldType>;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
 }

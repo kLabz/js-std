@@ -1,10 +1,6 @@
 package webidl2;
 
-typedef OperationMemberType = {
-	/**
-		String indicating the type of this node.
-	**/
-	var type : String;
+extern interface OperationMemberType extends AbstractBase<OperationMemberType> {
 	/**
 		Special modifier if exists
 	**/
@@ -25,8 +21,4 @@ typedef OperationMemberType = {
 		The container of this type.
 	**/
 	var parent : ts.AnyOf4<CallbackInterfaceType, InterfaceMixinType, InterfaceType, NamespaceType>;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
-};
+}

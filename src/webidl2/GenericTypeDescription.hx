@@ -1,3 +1,10 @@
 package webidl2;
 
-typedef GenericTypeDescription = ts.AnyOf5<FrozenArrayTypeDescription, ObservableArrayTypeDescription, PromiseTypeDescription, RecordTypeDescription, SequenceTypeDescription>;
+@:forward
+abstract GenericTypeDescription(AbstractGenericTypeDescription<Dynamic>)
+from FrozenArrayTypeDescription
+from ObservableArrayTypeDescription
+from PromiseTypeDescription
+from RecordTypeDescription
+from SequenceTypeDescription
+{}

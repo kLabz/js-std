@@ -1,10 +1,6 @@
 package webidl2;
 
-typedef AttributeMemberType = {
-	/**
-		String indicating the type of this node.
-	**/
-	var type : String;
+extern interface AttributeMemberType extends AbstractBase<AttributeMemberType> {
 	/**
 		The attribute's name.
 	**/
@@ -29,8 +25,4 @@ typedef AttributeMemberType = {
 		The container of this type.
 	**/
 	var parent : ts.AnyOf3<InterfaceMixinType, InterfaceType, NamespaceType>;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
-};
+}

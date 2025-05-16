@@ -1,17 +1,5 @@
 package webidl2;
 
-typedef ValueDescriptionString = {
-	/**
-		String indicating the type of this node.
-	**/
-	var type : String;
+extern interface ValueDescriptionString extends AbstractValueDescription<ValueDescriptionString> {
 	var value : String;
-	/**
-		The container of this type.
-	**/
-	var parent : ts.AnyOf3<ConstantMemberType, Argument, FieldType>;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
-};
+}

@@ -3,8 +3,9 @@ package webidl2;
 extern interface UnionTypeDescription extends AbstractTypeDescription {
 	/**
 		String indicating the generic type (e.g. "Promise", "sequence"). The empty string otherwise.
+		Always `""`.
 	**/
-	var generic : String;
+	var generic : IDLGenericType<Dynamic>;
 	/**
 		Boolean indicating whether this is a union type or not.
 	**/

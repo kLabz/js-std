@@ -1,10 +1,6 @@
 package webidl2;
 
-typedef SetlikeDeclarationMemberType = {
-	/**
-		String indicating the type of this node.
-	**/
-	var type : String;
+extern interface SetlikeDeclarationMemberType extends AbstractBase<SetlikeDeclarationMemberType> {
 	/**
 		An array with one or more IDL Types representing the declared type arguments.
 	**/
@@ -25,8 +21,4 @@ typedef SetlikeDeclarationMemberType = {
 		The container of this type.
 	**/
 	var parent : ts.AnyOf2<InterfaceMixinType, InterfaceType>;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
-};
+}

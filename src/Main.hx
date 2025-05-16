@@ -328,10 +328,19 @@ class Main {
 											meta: [] // TODO
 										});
 
+									case IDLAttributeMemberType if (m.special.or("") != "" && m.special != "static"):
+										trace('WARNING [${file.shortname}] TODO ${t.name}.${m.name}: special=${m.special} readonly=${m.readonly}');
+										typeDoc.push('TODO attribute ${m.name}: special=${m.special} readonly=${m.readonly}');
+
 									case IDLAttributeMemberType:
-										// TODO
-										trace('TODO attribute ${m.name} for ${t.name}');
-										typeDoc.push('TODO attribute ${m.name}');
+										fields.push({
+											name: m.name, // TODO sanitize/@:native
+											doc: doc, // TODO
+											access: m.special == "static" ? [AStatic] : [],
+											kind: m.readonly ? FProp("default", "null", convertType(pack, m.idlType)) : FVar(convertType(pack, m.idlType)),
+											pos: pos,
+											meta: [] // TODO
+										});
 
 									case IDLOperationMemberType if (m.name.or("") == "" && m.special == "getter"):
 										var tkey = convertType(pack, m.arguments.pop().idlType);

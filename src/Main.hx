@@ -355,6 +355,18 @@ class Main {
 							}
 
 							for (m in members) handleMember(cast m);
+							fields.sort((f1, f2) -> {
+								switch [f1.kind, f2.kind] {
+									case [FVar(_) | FProp(_), FVar(_) | FProp(_)]: 0;
+									case [FFun(_), FFun(_)] if (f1.name == "new"): -1;
+									case [FFun(_), FFun(_)] if (f2.name == "new"): 1;
+									case [FVar(_) | FProp(_), FFun(_)]: -1;
+									case [FFun(_), FVar(_) | FProp(_)]: 1;
+
+									case [FFun(_), FFun(_)]:
+										Reflect.compare(f1.name, f2.name);
+								}
+							});
 
 							var td:TypeDefinition = {
 								pack: pack,
@@ -387,6 +399,7 @@ class Main {
 		}
 
 		IDL.listAll().then(function(files) {
+			// TODO: predictable order (because of partials..)
 			var promises = [for (f in files) {
 				if (isFileIgnored(f)) continue;
 				f.parse().then(handleFile.bind(f));

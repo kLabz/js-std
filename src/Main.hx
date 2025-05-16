@@ -259,6 +259,9 @@ class Main {
 							var partials = partialInterfaces.get(t.name).or([]);
 							var members = partials.fold((p, acc) -> acc.concat(p.members), t.members);
 
+							// TODO: remove this once implemented
+							var doc = [];
+
 							var fields:Array<Field> = [];
 							function handleMember<T:AbstractBase<T>>(m:T) {
 								switch (m.type) {
@@ -275,10 +278,12 @@ class Main {
 									case IDLSetlikeDeclarationMemberType:
 										// TODO
 										trace('TODO Setlike for ${t.name}', m);
+										doc.push('TODO SetlikeDeclaration handling');
 
 									case IDLMaplikeDeclarationMemberType:
 										// TODO
 										trace('TODO Maplike for ${t.name}', m);
+										doc.push('TODO MaplikeDeclaration handling');
 
 									case IDLIterableDeclarationMemberType:
 										var tkey = convertType(pack, m.idlType.asType0[0]);
@@ -354,7 +359,7 @@ class Main {
 							var td:TypeDefinition = {
 								pack: pack,
 								name: t.name,
-								doc: null, // TODO retrieve docs
+								doc: doc.length == 0 ? null : doc.join("\n"), // TODO retrieve docs
 								pos: pos,
 								isExtern: true,
 								kind: TDClass(

@@ -20,8 +20,10 @@ import webidl2.AbstractValueDescription;
 import webidl2.DictionaryType;
 import webidl2.EnumType;
 import webidl2.IDLInterfaceMemberType;
+import webidl2.IDLInterfaceMixinMemberType;
 import webidl2.IDLRootType;
 import webidl2.IDLTypeDescription;
+import webidl2.IncludesType;
 import webidl2.InterfaceType;
 import webidl2.ValueDescription;
 
@@ -37,6 +39,8 @@ class Main {
 		var tasks:Array<() -> Void> = [];
 		var partialDictionaries:Map<String, Array<DictionaryType>> = [];
 		var partialInterfaces:Map<String, Array<{t:InterfaceType, file:FileHandler}>> = [];
+		var includesTypes:Array<IncludesType> = [];
+		var mixins:Map<String, Array<IDLInterfaceMixinMemberType>> = [];
 		var packMap:Map<String, Array<String>> = [];
 
 		function resolvePackage(currentPack:Array<String>, t:String):Array<String> {
@@ -267,10 +271,12 @@ class Main {
 						});
 
 					case IDLIncludesType:
-						trace(' > TODO: includes ${pack.concat([t.includes]).join(".")}');
+						Sys.println(' > ${t.target} includes interface mixin ${t.includes}');
+						includesTypes.push(t);
 
 					case IDLInterfaceMixinType:
-						trace(' > TODO: interface mixin ${pack.concat([t.name]).join(".")}');
+						Sys.println(' > interface mixin ${pack.concat([t.name]).join(".")}');
+						mixins.set(t.name, mixins.get(t.name).or([]).concat(t.members));
 
 					case IDLInterfaceType if (t.partial):
 						// see https://webidl.spec.whatwg.org/#dfn-partial-interface
@@ -283,15 +289,29 @@ class Main {
 							var partials = partialInterfaces.get(t.name).or([]);
 							var members = partials.fold((p, acc) -> acc.concat(p.t.members), t.members);
 
+							var includes:Map<String, Array<IDLInterfaceMemberType>> = [];
+							for (i in includesTypes) {
+								if (i.target != t.name) continue;
+								if (!mixins.exists(i.includes)) throw 'Cannot find mixin ${i.includes}';
+								var includesMembers = mixins.get(i.includes);
+								members = members.concat(includesMembers);
+								includes.set(i.includes, includesMembers);
+							}
+
 							// TODO: remove this once implemented
 							var typeDoc = [];
 
 							var fields:Array<Field> = [];
 							var interfaces = [];
 
-							function handleMember<T:AbstractBase<T>>(m:T, ?fromPartial:{t:InterfaceType, file:FileHandler}) {
+							function handleMember<T:AbstractBase<T>>(
+								m:T,
+								?fromInclude:String,
+								?fromPartial:{t:InterfaceType, file:FileHandler}
+							) {
 								// TODO: proper doc handling
 								var doc = fromPartial.maybeApply(p -> 'From partial interface in ${p.file.filename}');
+								doc = doc.maybeConcat(fromInclude.maybeApply(i -> 'From interface mixin $i'), "\n");
 
 								switch (m.type) {
 									case IDLConstantMemberType:
@@ -413,9 +433,14 @@ class Main {
 								};
 							}
 
-							for (m in t.members) handleMember(cast m);
+							for (m in t.members) handleMember(m);
+
+							for (i => members in includes) {
+								for (m in members) handleMember(m, i);
+							}
+
 							for (p in partials) {
-								for (m in p.t.members) handleMember(cast m, p);
+								for (m in p.t.members) handleMember(m, p);
 							}
 
 							fields.sort((f1, f2) -> {

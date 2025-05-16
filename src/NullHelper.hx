@@ -9,6 +9,10 @@ class NullHelper {
 		return v == null ? s : v + with + s;
 	}
 
+	public static function maybeConcat(v:Null<String>, s:Null<String>, with:String):String {
+		return v == null ? s : s == null ? v : v + with + s;
+	}
+
 	public static function maybeApply<TIn,TOut>(v:Null<TIn>, cb:TIn->TOut):Null<TOut> {
 		return v == null ? null : cb(v);
 	}

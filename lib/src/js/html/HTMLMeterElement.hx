@@ -24,15 +24,13 @@
 
 package js.html;
 
-/**
-	TODO attribute value
-	TODO attribute min
-	TODO attribute max
-	TODO attribute low
-	TODO attribute high
-	TODO attribute optimum
-	TODO attribute labels
-**/
 extern class HTMLMeterElement extends HTMLElement {
+	var value : Float;
+	var min : Float;
+	var max : Float;
+	var low : Float;
+	var high : Float;
+	var optimum : Float;
+	var labels(default, null) : js.dom.NodeList;
 	function new():Void;
 }

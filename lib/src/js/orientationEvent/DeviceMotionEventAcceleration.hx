@@ -24,11 +24,8 @@
 
 package js.orientationEvent;
 
-/**
-	TODO attribute x
-	TODO attribute y
-	TODO attribute z
-**/
 extern class DeviceMotionEventAcceleration {
-
+	var x(default, null) : Float;
+	var y(default, null) : Float;
+	var z(default, null) : Float;
 }

@@ -24,49 +24,46 @@
 
 package js.cssFonts5;
 
-/**
-	TODO attribute src
-	TODO attribute fontFamily
-	TODO attribute font-family
-	TODO attribute fontStyle
-	TODO attribute font-style
-	TODO attribute fontWeight
-	TODO attribute font-weight
-	TODO attribute fontStretch
-	TODO attribute font-stretch
-	TODO attribute fontWidth
-	TODO attribute font-width
-	TODO attribute fontSize
-	TODO attribute font-size
-	TODO attribute sizeAdjust
-	TODO attribute size-adjust
-	TODO attribute unicodeRange
-	TODO attribute unicode-range
-	TODO attribute fontFeatureSettings
-	TODO attribute font-feature-settings
-	TODO attribute fontVariationSettings
-	TODO attribute font-variation-settings
-	TODO attribute fontNamedInstance
-	TODO attribute font-named-instance
-	TODO attribute fontDisplay
-	TODO attribute font-display
-	TODO attribute fontLanguageOverride
-	TODO attribute font-language-override
-	TODO attribute ascentOverride
-	TODO attribute ascent-override
-	TODO attribute descentOverride
-	TODO attribute descent-override
-	TODO attribute lineGapOverride
-	TODO attribute line-gap-override
-	TODO attribute superscriptPositionOverride
-	TODO attribute superscript-position-override
-	TODO attribute subscriptPositionOverride
-	TODO attribute subscript-position-override
-	TODO attribute superscriptSizeOverride
-	TODO attribute superscript-size-override
-	TODO attribute subscriptSizeOverride
-	TODO attribute subscript-size-override
-**/
 extern class CSSFontFaceDescriptors extends js.cssom.CSSStyleDeclaration {
-
+	var src : CSSOMString;
+	var fontFamily : CSSOMString;
+	var font-family : CSSOMString;
+	var fontStyle : CSSOMString;
+	var font-style : CSSOMString;
+	var fontWeight : CSSOMString;
+	var font-weight : CSSOMString;
+	var fontStretch : CSSOMString;
+	var font-stretch : CSSOMString;
+	var fontWidth : CSSOMString;
+	var font-width : CSSOMString;
+	var fontSize : CSSOMString;
+	var font-size : CSSOMString;
+	var sizeAdjust : CSSOMString;
+	var size-adjust : CSSOMString;
+	var unicodeRange : CSSOMString;
+	var unicode-range : CSSOMString;
+	var fontFeatureSettings : CSSOMString;
+	var font-feature-settings : CSSOMString;
+	var fontVariationSettings : CSSOMString;
+	var font-variation-settings : CSSOMString;
+	var fontNamedInstance : CSSOMString;
+	var font-named-instance : CSSOMString;
+	var fontDisplay : CSSOMString;
+	var font-display : CSSOMString;
+	var fontLanguageOverride : CSSOMString;
+	var font-language-override : CSSOMString;
+	var ascentOverride : CSSOMString;
+	var ascent-override : CSSOMString;
+	var descentOverride : CSSOMString;
+	var descent-override : CSSOMString;
+	var lineGapOverride : CSSOMString;
+	var line-gap-override : CSSOMString;
+	var superscriptPositionOverride : CSSOMString;
+	var superscript-position-override : CSSOMString;
+	var subscriptPositionOverride : CSSOMString;
+	var subscript-position-override : CSSOMString;
+	var superscriptSizeOverride : CSSOMString;
+	var superscript-size-override : CSSOMString;
+	var subscriptSizeOverride : CSSOMString;
+	var subscript-size-override : CSSOMString;
 }

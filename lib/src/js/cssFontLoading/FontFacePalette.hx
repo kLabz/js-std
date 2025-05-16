@@ -24,12 +24,10 @@
 
 package js.cssFontLoading;
 
-/**
-	TODO attribute length
-	TODO attribute usableWithLightBackground
-	TODO attribute usableWithDarkBackground
-**/
 extern class FontFacePalette implements ArrayAccess<String> {
+	var length(default, null) : Int;
+	var usableWithLightBackground(default, null) : Bool;
+	var usableWithDarkBackground(default, null) : Bool;
 	function values():Iterator<String>;
 	function values():Iterator<String>;
 }

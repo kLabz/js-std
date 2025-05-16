@@ -24,12 +24,10 @@
 
 package js.cssAnimations;
 
-/**
-	TODO attribute name
-	TODO attribute cssRules
-	TODO attribute length
-**/
 extern class CSSKeyframesRule extends js.cssom.CSSRule implements ArrayAccess<CSSKeyframeRule> {
+	var name : CSSOMString;
+	var cssRules(default, null) : js.cssom.CSSRuleList;
+	var length(default, null) : Int;
 	function appendRule(rule:CSSOMString):Void;
 	function deleteRule(select:CSSOMString):Void;
 	function findRule(select:CSSOMString):CSSKeyframeRule;

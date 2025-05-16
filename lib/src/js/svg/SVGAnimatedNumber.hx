@@ -24,10 +24,7 @@
 
 package js.svg;
 
-/**
-	TODO attribute baseVal
-	TODO attribute animVal
-**/
 extern class SVGAnimatedNumber {
-
+	var baseVal : Float;
+	var animVal(default, null) : Float;
 }

@@ -24,13 +24,10 @@
 
 package js.resizeObserver;
 
-/**
-	TODO attribute target
-	TODO attribute contentRect
-	TODO attribute borderBoxSize
-	TODO attribute contentBoxSize
-	TODO attribute devicePixelContentBoxSize
-**/
 extern class ResizeObserverEntry {
-
+	var target(default, null) : js.dom.Element;
+	var contentRect(default, null) : js.geometry.DOMRectReadOnly;
+	var borderBoxSize(default, null) : Array<ResizeObserverSize>;
+	var contentBoxSize(default, null) : Array<ResizeObserverSize>;
+	var devicePixelContentBoxSize(default, null) : Array<ResizeObserverSize>;
 }

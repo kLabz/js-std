@@ -24,12 +24,10 @@
 
 package js.screenOrientation;
 
-/**
-	TODO attribute type
-	TODO attribute angle
-	TODO attribute onchange
-**/
 extern class ScreenOrientation extends js.dom.EventTarget {
+	var type(default, null) : OrientationType;
+	var angle(default, null) : Int;
+	var onchange : EventHandler;
 	function lock(orientation:OrientationLockType):js.lib.Promise<Void>;
 	function unlock():Void;
 }

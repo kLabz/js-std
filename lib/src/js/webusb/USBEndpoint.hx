@@ -24,12 +24,10 @@
 
 package js.webusb;
 
-/**
-	TODO attribute endpointNumber
-	TODO attribute direction
-	TODO attribute type
-	TODO attribute packetSize
-**/
 extern class USBEndpoint {
+	var endpointNumber(default, null) : Int;
+	var direction(default, null) : USBDirection;
+	var type(default, null) : USBEndpointType;
+	var packetSize(default, null) : Int;
 	function new(alternate:USBAlternateInterface, endpointNumber:Int, direction:USBDirection):Void;
 }

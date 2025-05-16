@@ -24,11 +24,9 @@
 
 package js.mediaSource;
 
-/**
-	TODO attribute streaming
-	TODO attribute onstartstreaming
-	TODO attribute onendstreaming
-**/
 extern class ManagedMediaSource extends MediaSource {
+	var streaming(default, null) : Bool;
+	var onstartstreaming : EventHandler;
+	var onendstreaming : EventHandler;
 	function new():Void;
 }

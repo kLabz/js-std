@@ -24,12 +24,10 @@
 
 package js.webBluetooth;
 
-/**
-	TODO attribute characteristic
-	TODO attribute uuid
-	TODO attribute value
-**/
 extern class BluetoothRemoteGATTDescriptor {
+	var characteristic(default, null) : BluetoothRemoteGATTCharacteristic;
+	var uuid(default, null) : UUID;
+	var value(default, null) : DataView;
 	function readValue():js.lib.Promise<DataView>;
 	function writeValue(value:BufferSource):js.lib.Promise<Void>;
 }

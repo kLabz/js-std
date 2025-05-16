@@ -24,29 +24,27 @@
 
 package js.navigationTiming;
 
-/**
-	TODO attribute navigationStart
-	TODO attribute unloadEventStart
-	TODO attribute unloadEventEnd
-	TODO attribute redirectStart
-	TODO attribute redirectEnd
-	TODO attribute fetchStart
-	TODO attribute domainLookupStart
-	TODO attribute domainLookupEnd
-	TODO attribute connectStart
-	TODO attribute connectEnd
-	TODO attribute secureConnectionStart
-	TODO attribute requestStart
-	TODO attribute responseStart
-	TODO attribute responseEnd
-	TODO attribute domLoading
-	TODO attribute domInteractive
-	TODO attribute domContentLoadedEventStart
-	TODO attribute domContentLoadedEventEnd
-	TODO attribute domComplete
-	TODO attribute loadEventStart
-	TODO attribute loadEventEnd
-**/
 extern class PerformanceTiming {
+	var navigationStart(default, null) : Float;
+	var unloadEventStart(default, null) : Float;
+	var unloadEventEnd(default, null) : Float;
+	var redirectStart(default, null) : Float;
+	var redirectEnd(default, null) : Float;
+	var fetchStart(default, null) : Float;
+	var domainLookupStart(default, null) : Float;
+	var domainLookupEnd(default, null) : Float;
+	var connectStart(default, null) : Float;
+	var connectEnd(default, null) : Float;
+	var secureConnectionStart(default, null) : Float;
+	var requestStart(default, null) : Float;
+	var responseStart(default, null) : Float;
+	var responseEnd(default, null) : Float;
+	var domLoading(default, null) : Float;
+	var domInteractive(default, null) : Float;
+	var domContentLoadedEventStart(default, null) : Float;
+	var domContentLoadedEventEnd(default, null) : Float;
+	var domComplete(default, null) : Float;
+	var loadEventStart(default, null) : Float;
+	var loadEventEnd(default, null) : Float;
 	function toJSON():{ };
 }

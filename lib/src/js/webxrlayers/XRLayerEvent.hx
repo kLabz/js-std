@@ -24,9 +24,7 @@
 
 package js.webxrlayers;
 
-/**
-	TODO attribute layer
-**/
 extern class XRLayerEvent extends js.dom.Event {
+	var layer(default, null) : js.webxr.XRLayer;
 	function new(type:String, eventInitDict:XRLayerEventInit):Void;
 }

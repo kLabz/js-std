@@ -62,7 +62,7 @@ typedef RequestInit = {
 	@:optional
 	var sharedStorageWritable : Bool;
 	@:optional
-	var privateToken : js.trustTokenApi.PrivateToken;
-	@:optional
 	var adAuctionHeaders : Bool;
+	@:optional
+	var privateToken : js.trustTokenApi.PrivateToken;
 };

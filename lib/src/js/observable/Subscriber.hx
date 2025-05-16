@@ -24,11 +24,9 @@
 
 package js.observable;
 
-/**
-	TODO attribute active
-	TODO attribute signal
-**/
 extern class Subscriber {
+	var active(default, null) : Bool;
+	var signal(default, null) : js.dom.AbortSignal;
 	function addTeardown(teardown:VoidFunction):Void;
 	function complete():Void;
 	function error(error:Any):Void;

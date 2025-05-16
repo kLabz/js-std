@@ -24,10 +24,8 @@
 
 package js.html;
 
-/**
-	TODO attribute length
-**/
 extern class DataTransferItemList implements ArrayAccess<DataTransferItem> {
+	var length(default, null) : Int;
 	overload function add(data:String, type:String):DataTransferItem;
 	overload function add(data:js.fileapi.File):DataTransferItem;
 	function clear():Void;

@@ -24,11 +24,8 @@
 
 package js.mediasession;
 
-/**
-	TODO attribute title
-	TODO attribute startTime
-	TODO attribute artwork
-**/
 extern class ChapterInformation {
-
+	var title(default, null) : String;
+	var startTime(default, null) : Float;
+	var artwork(default, null) : Array<MediaImage>;
 }

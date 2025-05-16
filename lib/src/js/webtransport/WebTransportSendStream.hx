@@ -24,11 +24,9 @@
 
 package js.webtransport;
 
-/**
-	TODO attribute sendGroup
-	TODO attribute sendOrder
-**/
 extern class WebTransportSendStream extends js.streams.WritableStream {
+	var sendGroup : WebTransportSendGroup;
+	var sendOrder : Float;
 	function getStats():js.lib.Promise<WebTransportSendStreamStats>;
 	function getWriter():WebTransportWriter;
 }

@@ -24,13 +24,10 @@
 
 package js.cssom;
 
-/**
-	TODO attribute href
-	TODO attribute media
-	TODO attribute styleSheet
-	TODO attribute layerName
-	TODO attribute supportsText
-**/
 extern class CSSImportRule extends CSSRule {
-
+	var href(default, null) : String;
+	var media(default, null) : MediaList;
+	var styleSheet(default, null) : CSSStyleSheet;
+	var layerName(default, null) : CSSOMString;
+	var supportsText(default, null) : CSSOMString;
 }

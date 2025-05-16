@@ -24,11 +24,6 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute in1
-	TODO attribute in2
-	TODO attribute mode
-**/
 extern class SVGFEBlendElement extends js.svg.SVGElement {
 	static inline var SVG_FEBLEND_MODE_UNKNOWN : Int = 0;
 	static inline var SVG_FEBLEND_MODE_NORMAL : Int = 1;
@@ -47,4 +42,7 @@ extern class SVGFEBlendElement extends js.svg.SVGElement {
 	static inline var SVG_FEBLEND_MODE_SATURATION : Int = 14;
 	static inline var SVG_FEBLEND_MODE_COLOR : Int = 15;
 	static inline var SVG_FEBLEND_MODE_LUMINOSITY : Int = 16;
+	var in1(default, null) : js.svg.SVGAnimatedString;
+	var in2(default, null) : js.svg.SVGAnimatedString;
+	var mode(default, null) : js.svg.SVGAnimatedEnumeration;
 }

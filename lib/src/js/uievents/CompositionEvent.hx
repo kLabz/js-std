@@ -24,10 +24,8 @@
 
 package js.uievents;
 
-/**
-	TODO attribute data
-**/
 extern class CompositionEvent extends UIEvent {
+	var data(default, null) : String;
 	function new(type:String, ?eventInitDict:CompositionEventInit):Void;
 	/**
 		From partial interface in uievents.idl

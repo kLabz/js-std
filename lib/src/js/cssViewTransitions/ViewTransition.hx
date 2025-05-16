@@ -24,12 +24,13 @@
 
 package js.cssViewTransitions;
 
-/**
-	TODO attribute updateCallbackDone
-	TODO attribute ready
-	TODO attribute finished
-	TODO attribute types
-**/
 extern class ViewTransition {
+	var updateCallbackDone(default, null) : js.lib.Promise<Void>;
+	var ready(default, null) : js.lib.Promise<Void>;
+	var finished(default, null) : js.lib.Promise<Void>;
+	/**
+		From partial interface in css-view-transitions-2.idl
+	**/
+	var types : js.cssViewTransitions2.ViewTransitionTypeSet;
 	function skipTransition():Void;
 }

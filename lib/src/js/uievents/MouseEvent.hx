@@ -24,30 +24,52 @@
 
 package js.uievents;
 
-/**
-	TODO attribute screenX
-	TODO attribute screenY
-	TODO attribute clientX
-	TODO attribute clientY
-	TODO attribute layerX
-	TODO attribute layerY
-	TODO attribute ctrlKey
-	TODO attribute shiftKey
-	TODO attribute altKey
-	TODO attribute metaKey
-	TODO attribute button
-	TODO attribute buttons
-	TODO attribute relatedTarget
-	TODO attribute pageX
-	TODO attribute pageY
-	TODO attribute x
-	TODO attribute y
-	TODO attribute offsetX
-	TODO attribute offsetY
-	TODO attribute movementX
-	TODO attribute movementY
-**/
 extern class MouseEvent extends UIEvent {
+	var screenX(default, null) : Int;
+	var screenY(default, null) : Int;
+	var clientX(default, null) : Int;
+	var clientY(default, null) : Int;
+	var layerX(default, null) : Int;
+	var layerY(default, null) : Int;
+	var ctrlKey(default, null) : Bool;
+	var shiftKey(default, null) : Bool;
+	var altKey(default, null) : Bool;
+	var metaKey(default, null) : Bool;
+	var button(default, null) : Int;
+	var buttons(default, null) : Int;
+	var relatedTarget(default, null) : js.dom.EventTarget;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var pageX(default, null) : Float;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var pageY(default, null) : Float;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var x(default, null) : Float;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var y(default, null) : Float;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var offsetX(default, null) : Float;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var offsetY(default, null) : Float;
+	/**
+		From partial interface in pointerlock.idl
+	**/
+	var movementX(default, null) : Float;
+	/**
+		From partial interface in pointerlock.idl
+	**/
+	var movementY(default, null) : Float;
 	function new(type:String, ?eventInitDict:MouseEventInit):Void;
 	function getModifierState(keyArg:String):Bool;
 	/**

@@ -24,33 +24,49 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute localDescription
-	TODO attribute currentLocalDescription
-	TODO attribute pendingLocalDescription
-	TODO attribute remoteDescription
-	TODO attribute currentRemoteDescription
-	TODO attribute pendingRemoteDescription
-	TODO attribute signalingState
-	TODO attribute iceGatheringState
-	TODO attribute iceConnectionState
-	TODO attribute connectionState
-	TODO attribute canTrickleIceCandidates
-	TODO attribute onnegotiationneeded
-	TODO attribute onicecandidate
-	TODO attribute onicecandidateerror
-	TODO attribute onsignalingstatechange
-	TODO attribute oniceconnectionstatechange
-	TODO attribute onicegatheringstatechange
-	TODO attribute onconnectionstatechange
-	TODO attribute peerIdentity
-	TODO attribute idpLoginUrl
-	TODO attribute idpErrorInfo
-	TODO attribute ontrack
-	TODO attribute sctp
-	TODO attribute ondatachannel
-**/
 extern class RTCPeerConnection extends js.dom.EventTarget {
+	var localDescription(default, null) : RTCSessionDescription;
+	var currentLocalDescription(default, null) : RTCSessionDescription;
+	var pendingLocalDescription(default, null) : RTCSessionDescription;
+	var remoteDescription(default, null) : RTCSessionDescription;
+	var currentRemoteDescription(default, null) : RTCSessionDescription;
+	var pendingRemoteDescription(default, null) : RTCSessionDescription;
+	var signalingState(default, null) : RTCSignalingState;
+	var iceGatheringState(default, null) : RTCIceGatheringState;
+	var iceConnectionState(default, null) : RTCIceConnectionState;
+	var connectionState(default, null) : RTCPeerConnectionState;
+	var canTrickleIceCandidates(default, null) : Bool;
+	var onnegotiationneeded : EventHandler;
+	var onicecandidate : EventHandler;
+	var onicecandidateerror : EventHandler;
+	var onsignalingstatechange : EventHandler;
+	var oniceconnectionstatechange : EventHandler;
+	var onicegatheringstatechange : EventHandler;
+	var onconnectionstatechange : EventHandler;
+	/**
+		From partial interface in webrtc-identity.idl
+	**/
+	var peerIdentity(default, null) : js.lib.Promise<js.webrtcIdentity.RTCIdentityAssertion>;
+	/**
+		From partial interface in webrtc-identity.idl
+	**/
+	var idpLoginUrl(default, null) : String;
+	/**
+		From partial interface in webrtc-identity.idl
+	**/
+	var idpErrorInfo(default, null) : String;
+	/**
+		From partial interface in webrtc.idl
+	**/
+	var ontrack : EventHandler;
+	/**
+		From partial interface in webrtc.idl
+	**/
+	var sctp(default, null) : RTCSctpTransport;
+	/**
+		From partial interface in webrtc.idl
+	**/
+	var ondatachannel : EventHandler;
 	function new(?configuration:RTCConfiguration):Void;
 	overload function addIceCandidate(?candidate:RTCIceCandidateInit):js.lib.Promise<Void>;
 	overload function addIceCandidate(candidate:RTCIceCandidateInit, successCallback:VoidFunction, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;

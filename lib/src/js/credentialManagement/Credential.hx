@@ -24,11 +24,9 @@
 
 package js.credentialManagement;
 
-/**
-	TODO attribute id
-	TODO attribute type
-**/
 extern class Credential {
+	var id(default, null) : String;
+	var type(default, null) : String;
 	function isConditionalMediationAvailable():js.lib.Promise<Bool>;
 	function willRequestConditionalCreation():js.lib.Promise<Void>;
 }

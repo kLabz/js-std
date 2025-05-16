@@ -24,13 +24,11 @@
 
 package js.html;
 
-/**
-	TODO attribute url
-	TODO attribute key
-	TODO attribute id
-	TODO attribute index
-	TODO attribute sameDocument
-**/
 extern class NavigationDestination {
+	var url(default, null) : String;
+	var key(default, null) : String;
+	var id(default, null) : String;
+	var index(default, null) : Float;
+	var sameDocument(default, null) : Bool;
 	function getState():Any;
 }

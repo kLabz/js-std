@@ -24,15 +24,13 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute in1
-	TODO attribute type
-	TODO attribute values
-**/
 extern class SVGFEColorMatrixElement extends js.svg.SVGElement {
 	static inline var SVG_FECOLORMATRIX_TYPE_UNKNOWN : Int = 0;
 	static inline var SVG_FECOLORMATRIX_TYPE_MATRIX : Int = 1;
 	static inline var SVG_FECOLORMATRIX_TYPE_SATURATE : Int = 2;
 	static inline var SVG_FECOLORMATRIX_TYPE_HUEROTATE : Int = 3;
 	static inline var SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA : Int = 4;
+	var in1(default, null) : js.svg.SVGAnimatedString;
+	var type(default, null) : js.svg.SVGAnimatedEnumeration;
+	var values(default, null) : js.svg.SVGAnimatedNumberList;
 }

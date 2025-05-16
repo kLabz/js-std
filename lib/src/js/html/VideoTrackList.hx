@@ -24,13 +24,11 @@
 
 package js.html;
 
-/**
-	TODO attribute length
-	TODO attribute selectedIndex
-	TODO attribute onchange
-	TODO attribute onaddtrack
-	TODO attribute onremovetrack
-**/
 extern class VideoTrackList extends js.dom.EventTarget implements ArrayAccess<VideoTrack> {
+	var length(default, null) : Int;
+	var selectedIndex(default, null) : Int;
+	var onchange : EventHandler;
+	var onaddtrack : EventHandler;
+	var onremovetrack : EventHandler;
 	function getTrackById(id:String):VideoTrack;
 }

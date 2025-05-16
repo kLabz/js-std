@@ -24,12 +24,10 @@
 
 package js.webgpu;
 
-/**
-	TODO attribute size
-	TODO attribute usage
-	TODO attribute mapState
-**/
 extern class GPUBuffer {
+	var size(default, null) : GPUSize64Out;
+	var usage(default, null) : GPUFlagsConstant;
+	var mapState(default, null) : GPUBufferMapState;
 	function destroy():Void;
 	function getMappedRange(?offset:GPUSize64, ?size:GPUSize64):ArrayBuffer;
 	function mapAsync(mode:GPUMapModeFlags, ?offset:GPUSize64, ?size:GPUSize64):js.lib.Promise<Void>;

@@ -24,9 +24,10 @@
 
 package js.html;
 
-/**
-	TODO attribute compact
-**/
 extern class HTMLDListElement extends HTMLElement {
+	/**
+		From partial interface in html.idl
+	**/
+	var compact : Bool;
 	function new():Void;
 }

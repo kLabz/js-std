@@ -24,9 +24,6 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute in1
-**/
 extern class SVGFEComponentTransferElement extends js.svg.SVGElement {
-
+	var in1(default, null) : js.svg.SVGAnimatedString;
 }

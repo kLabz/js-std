@@ -24,12 +24,9 @@
 
 package js.windowManagement;
 
-/**
-	TODO attribute screens
-	TODO attribute currentScreen
-	TODO attribute onscreenschange
-	TODO attribute oncurrentscreenchange
-**/
 extern class ScreenDetails extends js.dom.EventTarget {
-
+	var screens(default, null) : Array<ScreenDetailed>;
+	var currentScreen(default, null) : ScreenDetailed;
+	var onscreenschange : EventHandler;
+	var oncurrentscreenchange : EventHandler;
 }

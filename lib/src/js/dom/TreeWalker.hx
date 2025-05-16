@@ -24,13 +24,11 @@
 
 package js.dom;
 
-/**
-	TODO attribute root
-	TODO attribute whatToShow
-	TODO attribute filter
-	TODO attribute currentNode
-**/
 extern class TreeWalker {
+	var root(default, null) : Node;
+	var whatToShow(default, null) : Int;
+	var filter(default, null) : NodeFilter;
+	var currentNode : Node;
 	function firstChild():Node;
 	function lastChild():Node;
 	function nextNode():Node;

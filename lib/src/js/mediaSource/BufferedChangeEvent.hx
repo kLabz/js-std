@@ -24,10 +24,8 @@
 
 package js.mediaSource;
 
-/**
-	TODO attribute addedRanges
-	TODO attribute removedRanges
-**/
 extern class BufferedChangeEvent extends js.dom.Event {
+	var addedRanges(default, null) : js.html.TimeRanges;
+	var removedRanges(default, null) : js.html.TimeRanges;
 	function new(type:String, ?eventInitDict:BufferedChangeEventInit):Void;
 }

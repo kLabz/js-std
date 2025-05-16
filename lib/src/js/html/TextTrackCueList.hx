@@ -24,9 +24,7 @@
 
 package js.html;
 
-/**
-	TODO attribute length
-**/
 extern class TextTrackCueList implements ArrayAccess<TextTrackCue> {
+	var length(default, null) : Int;
 	function getCueById(id:String):TextTrackCue;
 }

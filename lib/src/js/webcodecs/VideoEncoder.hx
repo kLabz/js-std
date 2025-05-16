@@ -24,12 +24,10 @@
 
 package js.webcodecs;
 
-/**
-	TODO attribute state
-	TODO attribute encodeQueueSize
-	TODO attribute ondequeue
-**/
 extern class VideoEncoder extends js.dom.EventTarget {
+	var state(default, null) : CodecState;
+	var encodeQueueSize(default, null) : Int;
+	var ondequeue : EventHandler;
 	function new(init:VideoEncoderInit):Void;
 	function close():Void;
 	function configure(config:VideoEncoderConfig):Void;

@@ -24,10 +24,7 @@
 
 package js.turtledove;
 
-/**
-	TODO attribute privateAggregation
-	TODO attribute protectedAudience
-**/
 extern class InterestGroupScriptRunnerGlobalScope {
-
+	var privateAggregation(default, null) : js.privateAggregationApi.PrivateAggregation;
+	var protectedAudience(default, null) : ProtectedAudienceUtilities;
 }

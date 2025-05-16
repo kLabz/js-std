@@ -24,15 +24,13 @@
 
 package js.intersectionObserver;
 
-/**
-	TODO attribute root
-	TODO attribute rootMargin
-	TODO attribute scrollMargin
-	TODO attribute thresholds
-	TODO attribute delay
-	TODO attribute trackVisibility
-**/
 extern class IntersectionObserver {
+	var root(default, null) : haxe.extern.EitherType<js.dom.Element, js.dom.Document>;
+	var rootMargin(default, null) : String;
+	var scrollMargin(default, null) : String;
+	var thresholds(default, null) : Array<Float>;
+	var delay(default, null) : Int;
+	var trackVisibility(default, null) : Bool;
 	function new(callback:IntersectionObserverCallback, ?options:IntersectionObserverInit):Void;
 	function disconnect():Void;
 	function observe(target:js.dom.Element):Void;

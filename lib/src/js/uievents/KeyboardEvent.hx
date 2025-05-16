@@ -24,24 +24,28 @@
 
 package js.uievents;
 
-/**
-	TODO attribute key
-	TODO attribute code
-	TODO attribute location
-	TODO attribute ctrlKey
-	TODO attribute shiftKey
-	TODO attribute altKey
-	TODO attribute metaKey
-	TODO attribute repeat
-	TODO attribute isComposing
-	TODO attribute charCode
-	TODO attribute keyCode
-**/
 extern class KeyboardEvent extends UIEvent {
 	static inline var DOM_KEY_LOCATION_STANDARD : Int = 0x00;
 	static inline var DOM_KEY_LOCATION_LEFT : Int = 0x01;
 	static inline var DOM_KEY_LOCATION_RIGHT : Int = 0x02;
 	static inline var DOM_KEY_LOCATION_NUMPAD : Int = 0x03;
+	var key(default, null) : String;
+	var code(default, null) : String;
+	var location(default, null) : Int;
+	var ctrlKey(default, null) : Bool;
+	var shiftKey(default, null) : Bool;
+	var altKey(default, null) : Bool;
+	var metaKey(default, null) : Bool;
+	var repeat(default, null) : Bool;
+	var isComposing(default, null) : Bool;
+	/**
+		From partial interface in uievents.idl
+	**/
+	var charCode(default, null) : Int;
+	/**
+		From partial interface in uievents.idl
+	**/
+	var keyCode(default, null) : Int;
 	function new(type:String, ?eventInitDict:KeyboardEventInit):Void;
 	function getModifierState(keyArg:String):Bool;
 	/**

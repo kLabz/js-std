@@ -24,12 +24,10 @@
 
 package js.serviceWorkers;
 
-/**
-	TODO attribute visibilityState
-	TODO attribute focused
-	TODO attribute ancestorOrigins
-**/
 extern class WindowClient extends Client {
+	var visibilityState(default, null) : js.html.DocumentVisibilityState;
+	var focused(default, null) : Bool;
+	var ancestorOrigins(default, null) : Array<String>;
 	function focus():js.lib.Promise<WindowClient>;
 	function navigate(url:String):js.lib.Promise<WindowClient>;
 }

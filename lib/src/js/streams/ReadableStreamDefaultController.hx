@@ -24,10 +24,8 @@
 
 package js.streams;
 
-/**
-	TODO attribute desiredSize
-**/
 extern class ReadableStreamDefaultController {
+	var desiredSize(default, null) : Float;
 	function close():Void;
 	function enqueue(?chunk:Any):Void;
 	function error(?e:Any):Void;

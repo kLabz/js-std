@@ -24,14 +24,14 @@
 
 package js.html;
 
-/**
-	TODO attribute id
-	TODO attribute kind
-	TODO attribute label
-	TODO attribute language
-	TODO attribute enabled
-	TODO attribute sourceBuffer
-**/
 extern class AudioTrack {
-
+	var id(default, null) : String;
+	var kind(default, null) : String;
+	var label(default, null) : String;
+	var language(default, null) : String;
+	var enabled : Bool;
+	/**
+		From partial interface in media-source.idl
+	**/
+	var sourceBuffer(default, null) : js.mediaSource.SourceBuffer;
 }

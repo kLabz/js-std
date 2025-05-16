@@ -24,11 +24,8 @@
 
 package js.html;
 
-/**
-	TODO attribute from
-	TODO attribute entry
-	TODO attribute navigationType
-**/
 extern class NavigationActivation {
-
+	var from(default, null) : NavigationHistoryEntry;
+	var entry(default, null) : NavigationHistoryEntry;
+	var navigationType(default, null) : NavigationType;
 }

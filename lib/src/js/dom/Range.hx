@@ -24,10 +24,8 @@
 
 package js.dom;
 
-/**
-	TODO attribute commonAncestorContainer
-**/
 extern class Range extends AbstractRange {
+	var commonAncestorContainer(default, null) : Node;
 	static inline var START_TO_START : Int = 0;
 	static inline var START_TO_END : Int = 1;
 	static inline var END_TO_END : Int = 2;

@@ -24,10 +24,8 @@
 
 package js.portals;
 
-/**
-	TODO attribute onmessage
-	TODO attribute onmessageerror
-**/
 extern class PortalHost extends js.dom.EventTarget {
+	var onmessage : EventHandler;
+	var onmessageerror : EventHandler;
 	function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;
 }

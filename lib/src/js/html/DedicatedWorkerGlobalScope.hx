@@ -24,11 +24,12 @@
 
 package js.html;
 
-/**
-	TODO attribute name
-	TODO attribute onrtctransform
-**/
 extern class DedicatedWorkerGlobalScope extends WorkerGlobalScope {
+	var name(default, null) : String;
+	/**
+		From partial interface in webrtc-encoded-transform.idl
+	**/
+	var onrtctransform : EventHandler;
 	function close():Void;
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
 	overload function postMessage(message:Any, ?options:StructuredSerializeOptions):Void;

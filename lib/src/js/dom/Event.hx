@@ -24,26 +24,24 @@
 
 package js.dom;
 
-/**
-	TODO attribute type
-	TODO attribute target
-	TODO attribute srcElement
-	TODO attribute currentTarget
-	TODO attribute eventPhase
-	TODO attribute cancelBubble
-	TODO attribute bubbles
-	TODO attribute cancelable
-	TODO attribute returnValue
-	TODO attribute defaultPrevented
-	TODO attribute composed
-	TODO attribute isTrusted
-	TODO attribute timeStamp
-**/
 extern class Event {
+	var type(default, null) : String;
+	var target(default, null) : EventTarget;
+	var srcElement(default, null) : EventTarget;
+	var currentTarget(default, null) : EventTarget;
 	static inline var NONE : Int = 0;
 	static inline var CAPTURING_PHASE : Int = 1;
 	static inline var AT_TARGET : Int = 2;
 	static inline var BUBBLING_PHASE : Int = 3;
+	var eventPhase(default, null) : Int;
+	var cancelBubble : Bool;
+	var bubbles(default, null) : Bool;
+	var cancelable(default, null) : Bool;
+	var returnValue : Bool;
+	var defaultPrevented(default, null) : Bool;
+	var composed(default, null) : Bool;
+	var isTrusted(default, null) : Bool;
+	var timeStamp(default, null) : DOMHighResTimeStamp;
 	function new(type:String, ?eventInitDict:EventInit):Void;
 	function composedPath():Array<EventTarget>;
 	function initEvent(type:String, ?bubbles:Bool, ?cancelable:Bool):Void;

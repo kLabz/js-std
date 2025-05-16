@@ -24,15 +24,12 @@
 
 package js.cssom;
 
-/**
-	TODO attribute type
-	TODO attribute href
-	TODO attribute ownerNode
-	TODO attribute parentStyleSheet
-	TODO attribute title
-	TODO attribute media
-	TODO attribute disabled
-**/
 extern class StyleSheet {
-
+	var type(default, null) : CSSOMString;
+	var href(default, null) : String;
+	var ownerNode(default, null) : haxe.extern.EitherType<js.dom.Element, js.dom.ProcessingInstruction>;
+	var parentStyleSheet(default, null) : CSSStyleSheet;
+	var title(default, null) : String;
+	var media(default, null) : MediaList;
+	var disabled : Bool;
 }

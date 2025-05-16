@@ -24,13 +24,11 @@
 
 package js.orientationEvent;
 
-/**
-	TODO attribute alpha
-	TODO attribute beta
-	TODO attribute gamma
-	TODO attribute absolute
-**/
 extern class DeviceOrientationEvent extends js.dom.Event {
+	var alpha(default, null) : Float;
+	var beta(default, null) : Float;
+	var gamma(default, null) : Float;
+	var absolute(default, null) : Bool;
 	function new(type:String, ?eventInitDict:DeviceOrientationEventInit):Void;
 	function requestPermission(?absolute:Bool):js.lib.Promise<js.permissions.PermissionState>;
 }

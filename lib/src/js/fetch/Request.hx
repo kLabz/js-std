@@ -24,26 +24,27 @@
 
 package js.fetch;
 
-/**
-	TODO attribute method
-	TODO attribute url
-	TODO attribute headers
-	TODO attribute destination
-	TODO attribute referrer
-	TODO attribute referrerPolicy
-	TODO attribute mode
-	TODO attribute credentials
-	TODO attribute cache
-	TODO attribute redirect
-	TODO attribute integrity
-	TODO attribute keepalive
-	TODO attribute isReloadNavigation
-	TODO attribute isHistoryNavigation
-	TODO attribute signal
-	TODO attribute duplex
-	TODO attribute targetAddressSpace
-**/
 extern class Request {
+	var method(default, null) : String;
+	var url(default, null) : String;
+	var headers(default, null) : Headers;
+	var destination(default, null) : RequestDestination;
+	var referrer(default, null) : String;
+	var referrerPolicy(default, null) : js.referrerPolicy.ReferrerPolicy;
+	var mode(default, null) : RequestMode;
+	var credentials(default, null) : RequestCredentials;
+	var cache(default, null) : RequestCache;
+	var redirect(default, null) : RequestRedirect;
+	var integrity(default, null) : String;
+	var keepalive(default, null) : Bool;
+	var isReloadNavigation(default, null) : Bool;
+	var isHistoryNavigation(default, null) : Bool;
+	var signal(default, null) : js.dom.AbortSignal;
+	var duplex(default, null) : RequestDuplex;
+	/**
+		From partial interface in private-network-access.idl
+	**/
+	var targetAddressSpace(default, null) : js.privateNetworkAccess.IPAddressSpace;
 	function new(input:RequestInfo, ?init:RequestInit):Void;
 	function clone():Request;
 }

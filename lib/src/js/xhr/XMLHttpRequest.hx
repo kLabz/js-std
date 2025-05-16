@@ -24,26 +24,24 @@
 
 package js.xhr;
 
-/**
-	TODO attribute onreadystatechange
-	TODO attribute readyState
-	TODO attribute timeout
-	TODO attribute withCredentials
-	TODO attribute upload
-	TODO attribute responseURL
-	TODO attribute status
-	TODO attribute statusText
-	TODO attribute responseType
-	TODO attribute response
-	TODO attribute responseText
-	TODO attribute responseXML
-**/
 extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
+	var onreadystatechange : EventHandler;
 	static inline var UNSENT : Int = 0;
 	static inline var OPENED : Int = 1;
 	static inline var HEADERS_RECEIVED : Int = 2;
 	static inline var LOADING : Int = 3;
 	static inline var DONE : Int = 4;
+	var readyState(default, null) : Int;
+	var timeout : Int;
+	var withCredentials : Bool;
+	var upload(default, null) : XMLHttpRequestUpload;
+	var responseURL(default, null) : String;
+	var status(default, null) : Int;
+	var statusText(default, null) : String;
+	var responseType : XMLHttpRequestResponseType;
+	var response(default, null) : Any;
+	var responseText(default, null) : String;
+	var responseXML(default, null) : js.dom.Document;
 	function new():Void;
 	function abort():Void;
 	function getAllResponseHeaders():String;

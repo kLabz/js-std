@@ -24,10 +24,7 @@
 
 package js.webtransport;
 
-/**
-	TODO attribute sendGroup
-	TODO attribute sendOrder
-**/
 extern class WebTransportDatagramsWritable extends js.streams.WritableStream {
-
+	var sendGroup : WebTransportSendGroup;
+	var sendOrder : Float;
 }

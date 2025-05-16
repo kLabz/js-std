@@ -24,10 +24,7 @@
 
 package js.resizeObserver;
 
-/**
-	TODO attribute inlineSize
-	TODO attribute blockSize
-**/
 extern class ResizeObserverSize {
-
+	var inlineSize(default, null) : Float;
+	var blockSize(default, null) : Float;
 }

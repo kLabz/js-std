@@ -24,10 +24,8 @@
 
 package js.speechApi;
 
-/**
-	TODO attribute phrase
-	TODO attribute boost
-**/
 extern class SpeechRecognitionPhrase {
+	var phrase(default, null) : String;
+	var boost(default, null) : Float;
 	function new(phrase:String, ?boost:Float):Void;
 }

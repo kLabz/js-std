@@ -24,12 +24,9 @@
 
 package js.cssFonts;
 
-/**
-	TODO attribute name
-	TODO attribute fontFamily
-	TODO attribute basePalette
-	TODO attribute overrideColors
-**/
 extern class CSSFontPaletteValuesRule extends js.cssom.CSSRule {
-
+	var name(default, null) : CSSOMString;
+	var fontFamily(default, null) : CSSOMString;
+	var basePalette(default, null) : CSSOMString;
+	var overrideColors(default, null) : CSSOMString;
 }

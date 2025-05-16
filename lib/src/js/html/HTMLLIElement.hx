@@ -24,10 +24,11 @@
 
 package js.html;
 
-/**
-	TODO attribute value
-	TODO attribute type
-**/
 extern class HTMLLIElement extends HTMLElement {
+	var value : Int;
+	/**
+		From partial interface in html.idl
+	**/
+	var type : String;
 	function new():Void;
 }

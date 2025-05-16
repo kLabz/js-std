@@ -24,14 +24,11 @@
 
 package js.netinfo;
 
-/**
-	TODO attribute type
-	TODO attribute effectiveType
-	TODO attribute downlinkMax
-	TODO attribute downlink
-	TODO attribute rtt
-	TODO attribute onchange
-**/
 extern class NetworkInformation extends js.dom.EventTarget {
-
+	var type(default, null) : ConnectionType;
+	var effectiveType(default, null) : EffectiveConnectionType;
+	var downlinkMax(default, null) : Megabit;
+	var downlink(default, null) : Megabit;
+	var rtt(default, null) : Millisecond;
+	var onchange : EventHandler;
 }

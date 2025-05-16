@@ -24,15 +24,13 @@
 
 package js.svg;
 
-/**
-	TODO attribute x
-	TODO attribute y
-	TODO attribute width
-	TODO attribute height
-	TODO attribute currentScale
-	TODO attribute currentTranslate
-**/
 extern class SVGSVGElement extends SVGGraphicsElement {
+	var x(default, null) : SVGAnimatedLength;
+	var y(default, null) : SVGAnimatedLength;
+	var width(default, null) : SVGAnimatedLength;
+	var height(default, null) : SVGAnimatedLength;
+	var currentScale : Float;
+	var currentTranslate(default, null) : js.geometry.DOMPointReadOnly;
 	/**
 		From partial interface in svg-animations.idl
 	**/

@@ -24,13 +24,10 @@
 
 package js.dom;
 
-/**
-	TODO attribute startContainer
-	TODO attribute startOffset
-	TODO attribute endContainer
-	TODO attribute endOffset
-	TODO attribute collapsed
-**/
 extern class AbstractRange {
-
+	var startContainer(default, null) : Node;
+	var startOffset(default, null) : Int;
+	var endContainer(default, null) : Node;
+	var endOffset(default, null) : Int;
+	var collapsed(default, null) : Bool;
 }

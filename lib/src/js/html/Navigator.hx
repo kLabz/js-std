@@ -24,40 +24,131 @@
 
 package js.html;
 
-/**
-	TODO attribute audioSession
-	TODO attribute clipboard
-	TODO attribute contacts
-	TODO attribute credentials
-	TODO attribute devicePosture
-	TODO attribute geolocation
-	TODO attribute ink
-	TODO attribute userActivation
-	TODO attribute scheduling
-	TODO attribute keyboard
-	TODO attribute login
-	TODO attribute managed
-	TODO attribute mediaCapabilities
-	TODO attribute mediaDevices
-	TODO attribute preferences
-	TODO attribute mediaSession
-	TODO attribute permissions
-	TODO attribute privateAttribution
-	TODO attribute maxTouchPoints
-	TODO attribute presentation
-	TODO attribute wakeLock
-	TODO attribute serviceWorker
-	TODO attribute serial
-	TODO attribute deprecatedRunAdAuctionEnforcesKAnonymity
-	TODO attribute protectedAudience
-	TODO attribute virtualKeyboard
-	TODO attribute bluetooth
-	TODO attribute hid
-	TODO attribute usb
-	TODO attribute xr
-	TODO attribute windowControlsOverlay
-**/
 extern class Navigator {
+	/**
+		From partial interface in audio-session.idl
+	**/
+	var audioSession(default, null) : js.audioSession.AudioSession;
+	/**
+		From partial interface in clipboard-apis.idl
+	**/
+	var clipboard(default, null) : js.clipboardApis.Clipboard;
+	/**
+		From partial interface in contact-picker.idl
+	**/
+	var contacts(default, null) : js.contactPicker.ContactsManager;
+	/**
+		From partial interface in credential-management.idl
+	**/
+	var credentials(default, null) : js.credentialManagement.CredentialsContainer;
+	/**
+		From partial interface in device-posture.idl
+	**/
+	var devicePosture(default, null) : js.devicePosture.DevicePosture;
+	/**
+		From partial interface in geolocation.idl
+	**/
+	var geolocation(default, null) : js.geolocation.Geolocation;
+	/**
+		From partial interface in ink-enhancement.idl
+	**/
+	var ink(default, null) : js.inkEnhancement.Ink;
+	/**
+		From partial interface in is-input-pending.idl
+	**/
+	var scheduling(default, null) : js.isInputPending.Scheduling;
+	/**
+		From partial interface in keyboard-lock.idl
+	**/
+	var keyboard(default, null) : js.keyboardLock.Keyboard;
+	/**
+		From partial interface in html.idl
+	**/
+	var userActivation(default, null) : UserActivation;
+	/**
+		From partial interface in managed-configuration.idl
+	**/
+	var managed(default, null) : js.managedConfiguration.NavigatorManagedData;
+	/**
+		From partial interface in login-status.idl
+	**/
+	var login(default, null) : js.loginStatus.NavigatorLogin;
+	/**
+		From partial interface in media-capabilities.idl
+	**/
+	var mediaCapabilities(default, null) : js.mediaCapabilities.MediaCapabilities;
+	/**
+		From partial interface in mediaqueries-5.idl
+	**/
+	var preferences(default, null) : js.mediaqueries5.PreferenceManager;
+	/**
+		From partial interface in mediacapture-streams.idl
+	**/
+	var mediaDevices(default, null) : js.mediacaptureStreams.MediaDevices;
+	/**
+		From partial interface in mediasession.idl
+	**/
+	var mediaSession(default, null) : js.mediasession.MediaSession;
+	/**
+		From partial interface in pointerevents.idl
+	**/
+	var maxTouchPoints(default, null) : Int;
+	/**
+		From partial interface in permissions.idl
+	**/
+	var permissions(default, null) : js.permissions.Permissions;
+	/**
+		From partial interface in ppa.idl
+	**/
+	var privateAttribution(default, null) : js.ppa.PrivateAttribution;
+	/**
+		From partial interface in presentation-api.idl
+	**/
+	var presentation(default, null) : js.presentationApi.Presentation;
+	/**
+		From partial interface in screen-wake-lock.idl
+	**/
+	var wakeLock(default, null) : js.screenWakeLock.WakeLock;
+	/**
+		From partial interface in serial.idl
+	**/
+	var serial(default, null) : js.serial.Serial;
+	/**
+		From partial interface in service-workers.idl
+	**/
+	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
+	/**
+		From partial interface in turtledove.idl
+	**/
+	var deprecatedRunAdAuctionEnforcesKAnonymity(default, null) : Bool;
+	/**
+		From partial interface in turtledove.idl
+	**/
+	var protectedAudience(default, null) : js.turtledove.ProtectedAudience;
+	/**
+		From partial interface in virtual-keyboard.idl
+	**/
+	var virtualKeyboard(default, null) : js.virtualKeyboard.VirtualKeyboard;
+	/**
+		From partial interface in web-bluetooth.idl
+	**/
+	var bluetooth(default, null) : js.webBluetooth.Bluetooth;
+	/**
+		From partial interface in webhid.idl
+	**/
+	var hid(default, null) : js.webhid.HID;
+	/**
+		From partial interface in webusb.idl
+	**/
+	var usb(default, null) : js.webusb.USB;
+	/**
+		From partial interface in webxr.idl
+	**/
+	var xr(default, null) : js.webxr.XRSystem;
+	/**
+		From partial interface in window-controls-overlay.idl
+	**/
+	var windowControlsOverlay(default, null) : js.windowControlsOverlay.WindowControlsOverlay;
 	/**
 		From partial interface in fenced-frame.idl
 	**/

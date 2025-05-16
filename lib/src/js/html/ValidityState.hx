@@ -24,19 +24,16 @@
 
 package js.html;
 
-/**
-	TODO attribute valueMissing
-	TODO attribute typeMismatch
-	TODO attribute patternMismatch
-	TODO attribute tooLong
-	TODO attribute tooShort
-	TODO attribute rangeUnderflow
-	TODO attribute rangeOverflow
-	TODO attribute stepMismatch
-	TODO attribute badInput
-	TODO attribute customError
-	TODO attribute valid
-**/
 extern class ValidityState {
-
+	var valueMissing(default, null) : Bool;
+	var typeMismatch(default, null) : Bool;
+	var patternMismatch(default, null) : Bool;
+	var tooLong(default, null) : Bool;
+	var tooShort(default, null) : Bool;
+	var rangeUnderflow(default, null) : Bool;
+	var rangeOverflow(default, null) : Bool;
+	var stepMismatch(default, null) : Bool;
+	var badInput(default, null) : Bool;
+	var customError(default, null) : Bool;
+	var valid(default, null) : Bool;
 }

@@ -24,14 +24,12 @@
 
 package js.html;
 
-/**
-	TODO attribute dropEffect
-	TODO attribute effectAllowed
-	TODO attribute items
-	TODO attribute types
-	TODO attribute files
-**/
 extern class DataTransfer {
+	var dropEffect : String;
+	var effectAllowed : String;
+	var items(default, null) : DataTransferItemList;
+	var types(default, null) : Array<String>;
+	var files(default, null) : js.fileapi.FileList;
 	function new():Void;
 	function clearData(?format:String):Void;
 	function getData(format:String):String;

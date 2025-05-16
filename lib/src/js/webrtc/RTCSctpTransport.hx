@@ -24,13 +24,10 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute transport
-	TODO attribute state
-	TODO attribute maxMessageSize
-	TODO attribute maxChannels
-	TODO attribute onstatechange
-**/
 extern class RTCSctpTransport extends js.dom.EventTarget {
-
+	var transport(default, null) : RTCDtlsTransport;
+	var state(default, null) : RTCSctpTransportState;
+	var maxMessageSize(default, null) : Float;
+	var maxChannels(default, null) : Int;
+	var onstatechange : EventHandler;
 }

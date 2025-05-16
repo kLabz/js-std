@@ -24,14 +24,12 @@
 
 package js.html;
 
-/**
-	TODO attribute data
-	TODO attribute origin
-	TODO attribute lastEventId
-	TODO attribute source
-	TODO attribute ports
-**/
 extern class MessageEvent extends js.dom.Event {
+	var data(default, null) : Any;
+	var origin(default, null) : String;
+	var lastEventId(default, null) : String;
+	var source(default, null) : MessageEventSource;
+	var ports(default, null) : Array<MessagePort>;
 	function new(type:String, ?eventInitDict:MessageEventInit):Void;
 	function initMessageEvent(type:String, ?bubbles:Bool, ?cancelable:Bool, ?data:Any, ?origin:String, ?lastEventId:String, ?source:MessageEventSource, ?ports:Array<MessagePort>):Void;
 }

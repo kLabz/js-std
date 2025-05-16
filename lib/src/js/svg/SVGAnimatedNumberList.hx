@@ -24,10 +24,7 @@
 
 package js.svg;
 
-/**
-	TODO attribute baseVal
-	TODO attribute animVal
-**/
 extern class SVGAnimatedNumberList {
-
+	var baseVal(default, null) : SVGNumberList;
+	var animVal(default, null) : SVGNumberList;
 }

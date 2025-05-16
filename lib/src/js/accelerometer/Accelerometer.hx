@@ -24,11 +24,9 @@
 
 package js.accelerometer;
 
-/**
-	TODO attribute x
-	TODO attribute y
-	TODO attribute z
-**/
 extern class Accelerometer extends js.genericSensor.Sensor {
+	var x(default, null) : Float;
+	var y(default, null) : Float;
+	var z(default, null) : Float;
 	function new(?options:AccelerometerSensorOptions):Void;
 }

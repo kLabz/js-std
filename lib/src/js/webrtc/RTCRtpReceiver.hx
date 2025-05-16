@@ -24,13 +24,14 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute track
-	TODO attribute transport
-	TODO attribute jitterBufferTarget
-	TODO attribute transform
-**/
 extern class RTCRtpReceiver {
+	var track(default, null) : js.mediacaptureStreams.MediaStreamTrack;
+	var transport(default, null) : RTCDtlsTransport;
+	var jitterBufferTarget : DOMHighResTimeStamp;
+	/**
+		From partial interface in webrtc-encoded-transform.idl
+	**/
+	var transform : RTCRtpTransform;
 	function getCapabilities(kind:String):RTCRtpCapabilities;
 	function getContributingSources():Array<RTCRtpContributingSource>;
 	function getParameters():RTCRtpReceiveParameters;

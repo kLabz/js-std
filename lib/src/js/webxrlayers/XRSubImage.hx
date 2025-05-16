@@ -24,9 +24,6 @@
 
 package js.webxrlayers;
 
-/**
-	TODO attribute viewport
-**/
 extern class XRSubImage {
-
+	var viewport(default, null) : js.webxr.XRViewport;
 }

@@ -24,13 +24,11 @@
 
 package js.webrtcEncodedTransform;
 
-/**
-	TODO attribute readable
-	TODO attribute writable
-	TODO attribute onkeyframerequest
-	TODO attribute options
-**/
 extern class RTCRtpScriptTransformer extends js.dom.EventTarget {
+	var readable(default, null) : js.streams.ReadableStream;
+	var writable(default, null) : js.streams.WritableStream;
+	var onkeyframerequest : EventHandler;
+	var options(default, null) : Any;
 	function generateKeyFrame(?rid:String):js.lib.Promise<Float>;
 	function sendKeyFrameRequest():js.lib.Promise<Void>;
 }

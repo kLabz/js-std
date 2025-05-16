@@ -24,9 +24,10 @@
 
 package js.html;
 
-/**
-	TODO attribute version
-**/
 extern class HTMLHtmlElement extends HTMLElement {
+	/**
+		From partial interface in html.idl
+	**/
+	var version : String;
 	function new():Void;
 }

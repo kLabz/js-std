@@ -24,10 +24,8 @@
 
 package js.html;
 
-/**
-	TODO attribute length
-**/
 extern class Storage {
+	var length(default, null) : Int;
 	function clear():Void;
 	function getItem(key:String):String;
 	function key(index:Int):String;

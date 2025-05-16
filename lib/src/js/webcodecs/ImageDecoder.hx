@@ -24,13 +24,11 @@
 
 package js.webcodecs;
 
-/**
-	TODO attribute type
-	TODO attribute complete
-	TODO attribute completed
-	TODO attribute tracks
-**/
 extern class ImageDecoder {
+	var type(default, null) : String;
+	var complete(default, null) : Bool;
+	var completed(default, null) : js.lib.Promise<Void>;
+	var tracks(default, null) : ImageTrackList;
 	function new(init:ImageDecoderInit):Void;
 	function close():Void;
 	function decode(?options:ImageDecodeOptions):js.lib.Promise<ImageDecodeResult>;

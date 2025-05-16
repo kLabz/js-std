@@ -24,11 +24,9 @@
 
 package js.html;
 
-/**
-	TODO attribute length
-	TODO attribute selectedIndex
-**/
 extern class HTMLOptionsCollection extends js.dom.HTMLCollection {
+	var length : Int;
+	var selectedIndex : Int;
 	/**
 		(special = setter)
 	**/

@@ -24,12 +24,9 @@
 
 package js.cssPropertiesValuesApi;
 
-/**
-	TODO attribute name
-	TODO attribute syntax
-	TODO attribute inherits
-	TODO attribute initialValue
-**/
 extern class CSSPropertyRule extends js.cssom.CSSRule {
-
+	var name(default, null) : CSSOMString;
+	var syntax(default, null) : CSSOMString;
+	var inherits(default, null) : Bool;
+	var initialValue(default, null) : CSSOMString;
 }

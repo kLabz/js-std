@@ -24,10 +24,8 @@
 
 package js.cssTypedOm;
 
-/**
-	TODO attribute size
-**/
 extern class StylePropertyMapReadOnly {
+	var size(default, null) : Int;
 	function entries():Iterator<Array<Dynamic>>;
 	function get(property:String):haxe.extern.EitherType<Void, CSSStyleValue>;
 	function getAll(property:String):Array<CSSStyleValue>;

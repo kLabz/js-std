@@ -24,35 +24,78 @@
 
 package js.dom;
 
-/**
-	TODO attribute namespaceURI
-	TODO attribute prefix
-	TODO attribute localName
-	TODO attribute tagName
-	TODO attribute id
-	TODO attribute className
-	TODO attribute classList
-	TODO attribute slot
-	TODO attribute attributes
-	TODO attribute shadowRoot
-	TODO attribute customElementRegistry
-	TODO attribute part
-	TODO attribute scrollTop
-	TODO attribute scrollLeft
-	TODO attribute scrollWidth
-	TODO attribute scrollHeight
-	TODO attribute clientTop
-	TODO attribute clientLeft
-	TODO attribute clientWidth
-	TODO attribute clientHeight
-	TODO attribute currentCSSZoom
-	TODO attribute elementTiming
-	TODO attribute onfullscreenchange
-	TODO attribute onfullscreenerror
-	TODO attribute innerHTML
-	TODO attribute outerHTML
-**/
 extern class Element extends Node {
+	var namespaceURI(default, null) : String;
+	var prefix(default, null) : String;
+	var localName(default, null) : String;
+	var tagName(default, null) : String;
+	var id : String;
+	var className : String;
+	var classList(default, null) : DOMTokenList;
+	var slot : String;
+	var attributes(default, null) : NamedNodeMap;
+	var shadowRoot(default, null) : ShadowRoot;
+	var customElementRegistry(default, null) : js.html.CustomElementRegistry;
+	/**
+		From partial interface in css-shadow-parts.idl
+	**/
+	var part(default, null) : DOMTokenList;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var scrollTop : Float;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var scrollLeft : Float;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var scrollWidth(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var scrollHeight(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var clientTop(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var clientLeft(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var clientWidth(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var clientHeight(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var currentCSSZoom(default, null) : Float;
+	/**
+		From partial interface in element-timing.idl
+	**/
+	var elementTiming : String;
+	/**
+		From partial interface in fullscreen.idl
+	**/
+	var onfullscreenchange : EventHandler;
+	/**
+		From partial interface in fullscreen.idl
+	**/
+	var onfullscreenerror : EventHandler;
+	/**
+		From partial interface in html.idl
+	**/
+	var innerHTML : haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>;
+	/**
+		From partial interface in html.idl
+	**/
+	var outerHTML : haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>;
 	function attachShadow(init:ShadowRootInit):ShadowRoot;
 	/**
 		From partial interface in cssom-view.idl

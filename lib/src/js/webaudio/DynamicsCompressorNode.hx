@@ -24,14 +24,12 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute threshold
-	TODO attribute knee
-	TODO attribute ratio
-	TODO attribute reduction
-	TODO attribute attack
-	TODO attribute release
-**/
 extern class DynamicsCompressorNode extends AudioNode {
+	var threshold(default, null) : AudioParam;
+	var knee(default, null) : AudioParam;
+	var ratio(default, null) : AudioParam;
+	var reduction(default, null) : Float;
+	var attack(default, null) : AudioParam;
+	var release(default, null) : AudioParam;
 	function new(context:BaseAudioContext, ?options:DynamicsCompressorOptions):Void;
 }

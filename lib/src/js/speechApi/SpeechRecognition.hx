@@ -24,26 +24,24 @@
 
 package js.speechApi;
 
-/**
-	TODO attribute lang
-	TODO attribute continuous
-	TODO attribute interimResults
-	TODO attribute maxAlternatives
-	TODO attribute mode
-	TODO attribute phrases
-	TODO attribute onaudiostart
-	TODO attribute onsoundstart
-	TODO attribute onspeechstart
-	TODO attribute onspeechend
-	TODO attribute onsoundend
-	TODO attribute onaudioend
-	TODO attribute onresult
-	TODO attribute onnomatch
-	TODO attribute onerror
-	TODO attribute onstart
-	TODO attribute onend
-**/
 extern class SpeechRecognition extends js.dom.EventTarget {
+	var lang : String;
+	var continuous : Bool;
+	var interimResults : Bool;
+	var maxAlternatives : Int;
+	var mode : SpeechRecognitionMode;
+	var phrases : SpeechRecognitionPhraseList;
+	var onaudiostart : EventHandler;
+	var onsoundstart : EventHandler;
+	var onspeechstart : EventHandler;
+	var onspeechend : EventHandler;
+	var onsoundend : EventHandler;
+	var onaudioend : EventHandler;
+	var onresult : EventHandler;
+	var onnomatch : EventHandler;
+	var onerror : EventHandler;
+	var onstart : EventHandler;
+	var onend : EventHandler;
 	function new():Void;
 	function abort():Void;
 	function availableOnDevice(lang:String):js.lib.Promise<AvailabilityStatus>;

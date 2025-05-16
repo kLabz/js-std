@@ -24,10 +24,8 @@
 
 package js.inputDeviceCapabilities;
 
-/**
-	TODO attribute firesTouchEvents
-	TODO attribute pointerMovementScrolls
-**/
 extern class InputDeviceCapabilities {
+	var firesTouchEvents(default, null) : Bool;
+	var pointerMovementScrolls(default, null) : Bool;
 	function new(?deviceInitDict:InputDeviceCapabilitiesInit):Void;
 }

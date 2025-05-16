@@ -24,14 +24,11 @@
 
 package js.webgpu;
 
-/**
-	TODO attribute message
-	TODO attribute type
-	TODO attribute lineNum
-	TODO attribute linePos
-	TODO attribute offset
-	TODO attribute length
-**/
 extern class GPUCompilationMessage {
-
+	var message(default, null) : String;
+	var type(default, null) : GPUCompilationMessageType;
+	var lineNum(default, null) : Float;
+	var linePos(default, null) : Float;
+	var offset(default, null) : Float;
+	var length(default, null) : Float;
 }

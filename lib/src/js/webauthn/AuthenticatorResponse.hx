@@ -24,9 +24,6 @@
 
 package js.webauthn;
 
-/**
-	TODO attribute clientDataJSON
-**/
 extern class AuthenticatorResponse {
-
+	var clientDataJSON(default, null) : ArrayBuffer;
 }

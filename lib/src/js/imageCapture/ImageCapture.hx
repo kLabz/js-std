@@ -24,10 +24,8 @@
 
 package js.imageCapture;
 
-/**
-	TODO attribute track
-**/
 extern class ImageCapture {
+	var track(default, null) : js.mediacaptureStreams.MediaStreamTrack;
 	function new(videoTrack:js.mediacaptureStreams.MediaStreamTrack):Void;
 	function getPhotoCapabilities():js.lib.Promise<PhotoCapabilities>;
 	function getPhotoSettings():js.lib.Promise<PhotoSettings>;

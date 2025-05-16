@@ -24,15 +24,13 @@
 
 package js.webcodecs;
 
-/**
-	TODO attribute format
-	TODO attribute sampleRate
-	TODO attribute numberOfFrames
-	TODO attribute numberOfChannels
-	TODO attribute duration
-	TODO attribute timestamp
-**/
 extern class AudioData {
+	var format(default, null) : AudioSampleFormat;
+	var sampleRate(default, null) : Float;
+	var numberOfFrames(default, null) : Int;
+	var numberOfChannels(default, null) : Int;
+	var duration(default, null) : Float;
+	var timestamp(default, null) : Float;
 	function new(init:AudioDataInit):Void;
 	function allocationSize(options:AudioDataCopyToOptions):Int;
 	function clone():AudioData;

@@ -24,9 +24,7 @@
 
 package js.cssTypedOm;
 
-/**
-	TODO attribute values
-**/
 extern class CSSMathProduct extends CSSMathValue {
+	var values(default, null) : CSSNumericArray;
 	function new(args:CSSNumberish):Void;
 }

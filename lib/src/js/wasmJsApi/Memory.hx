@@ -24,10 +24,8 @@
 
 package js.wasmJsApi;
 
-/**
-	TODO attribute buffer
-**/
 extern class Memory {
+	var buffer(default, null) : ArrayBuffer;
 	function new(descriptor:MemoryDescriptor):Void;
 	function grow(delta:Int):Int;
 	function toFixedLengthBuffer():ArrayBuffer;

@@ -24,12 +24,9 @@
 
 package js.webcodecs;
 
-/**
-	TODO attribute animated
-	TODO attribute frameCount
-	TODO attribute repetitionCount
-	TODO attribute selected
-**/
 extern class ImageTrack {
-
+	var animated(default, null) : Bool;
+	var frameCount(default, null) : Int;
+	var repetitionCount(default, null) : Float;
+	var selected : Bool;
 }

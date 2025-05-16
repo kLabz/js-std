@@ -24,12 +24,10 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute iceTransport
-	TODO attribute state
-	TODO attribute onstatechange
-	TODO attribute onerror
-**/
 extern class RTCDtlsTransport extends js.dom.EventTarget {
+	var iceTransport(default, null) : RTCIceTransport;
+	var state(default, null) : RTCDtlsTransportState;
+	var onstatechange : EventHandler;
+	var onerror : EventHandler;
 	function getRemoteCertificates():Array<ArrayBuffer>;
 }

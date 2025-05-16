@@ -24,9 +24,7 @@
 
 package js.html;
 
-/**
-	TODO attribute dateTime
-**/
 extern class HTMLTimeElement extends HTMLElement {
+	var dateTime : String;
 	function new():Void;
 }

@@ -24,12 +24,10 @@
 
 package js.virtualKeyboard;
 
-/**
-	TODO attribute boundingRect
-	TODO attribute overlaysContent
-	TODO attribute ongeometrychange
-**/
 extern class VirtualKeyboard extends js.dom.EventTarget {
+	var boundingRect(default, null) : js.geometry.DOMRect;
+	var overlaysContent : Bool;
+	var ongeometrychange : EventHandler;
 	function hide():Void;
 	function show():Void;
 }

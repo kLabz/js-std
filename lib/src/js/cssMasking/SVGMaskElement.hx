@@ -24,14 +24,11 @@
 
 package js.cssMasking;
 
-/**
-	TODO attribute maskUnits
-	TODO attribute maskContentUnits
-	TODO attribute x
-	TODO attribute y
-	TODO attribute width
-	TODO attribute height
-**/
 extern class SVGMaskElement extends js.svg.SVGElement {
-
+	var maskUnits(default, null) : js.svg.SVGAnimatedEnumeration;
+	var maskContentUnits(default, null) : js.svg.SVGAnimatedEnumeration;
+	var x(default, null) : js.svg.SVGAnimatedLength;
+	var y(default, null) : js.svg.SVGAnimatedLength;
+	var width(default, null) : js.svg.SVGAnimatedLength;
+	var height(default, null) : js.svg.SVGAnimatedLength;
 }

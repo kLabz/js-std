@@ -24,11 +24,9 @@
 
 package js.serverTiming;
 
-/**
-	TODO attribute name
-	TODO attribute duration
-	TODO attribute description
-**/
 extern class PerformanceServerTiming {
+	var name(default, null) : String;
+	var duration(default, null) : DOMHighResTimeStamp;
+	var description(default, null) : String;
 	function toJSON():{ };
 }

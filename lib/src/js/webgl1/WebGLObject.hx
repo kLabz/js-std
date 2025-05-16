@@ -24,9 +24,6 @@
 
 package js.webgl1;
 
-/**
-	TODO attribute label
-**/
 extern class WebGLObject {
-
+	var label : String;
 }

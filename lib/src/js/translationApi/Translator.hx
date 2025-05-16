@@ -24,12 +24,10 @@
 
 package js.translationApi;
 
-/**
-	TODO attribute sourceLanguage
-	TODO attribute targetLanguage
-	TODO attribute inputQuota
-**/
 extern class Translator {
+	var sourceLanguage(default, null) : String;
+	var targetLanguage(default, null) : String;
+	var inputQuota(default, null) : Float;
 	function availability(options:TranslatorCreateCoreOptions):js.lib.Promise<js.writingAssistanceApis.Availability>;
 	function create(options:TranslatorCreateOptions):js.lib.Promise<Translator>;
 	function measureInputUsage(input:String, ?options:TranslatorTranslateOptions):js.lib.Promise<Float>;

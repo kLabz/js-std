@@ -24,15 +24,19 @@
 
 package js.html;
 
-/**
-	TODO attribute src
-	TODO attribute type
-	TODO attribute width
-	TODO attribute height
-	TODO attribute align
-	TODO attribute name
-**/
 extern class HTMLEmbedElement extends HTMLElement {
+	var src : String;
+	var type : String;
+	var width : String;
+	var height : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var align : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var name : String;
 	function new():Void;
 	function getSVGDocument():js.dom.Document;
 }

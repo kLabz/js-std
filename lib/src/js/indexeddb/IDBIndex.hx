@@ -24,14 +24,12 @@
 
 package js.indexeddb;
 
-/**
-	TODO attribute name
-	TODO attribute objectStore
-	TODO attribute keyPath
-	TODO attribute multiEntry
-	TODO attribute unique
-**/
 extern class IDBIndex {
+	var name : String;
+	var objectStore(default, null) : IDBObjectStore;
+	var keyPath(default, null) : Any;
+	var multiEntry(default, null) : Bool;
+	var unique(default, null) : Bool;
 	function count(?query:Any):IDBRequest;
 	function get(query:Any):IDBRequest;
 	function getAll(?query:Any, ?count:Int):IDBRequest;

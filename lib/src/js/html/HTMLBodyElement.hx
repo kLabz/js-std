@@ -24,15 +24,34 @@
 
 package js.html;
 
-/**
-	TODO attribute onorientationchange
-	TODO attribute text
-	TODO attribute link
-	TODO attribute vLink
-	TODO attribute aLink
-	TODO attribute bgColor
-	TODO attribute background
-**/
 extern class HTMLBodyElement extends HTMLElement {
+	/**
+		From partial interface in compat.idl
+	**/
+	var onorientationchange : EventHandler;
+	/**
+		From partial interface in html.idl
+	**/
+	var text : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var link : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var vLink : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var aLink : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var bgColor : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var background : String;
 	function new():Void;
 }

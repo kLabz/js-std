@@ -24,10 +24,7 @@
 
 package js.svg;
 
-/**
-	TODO attribute baseVal
-	TODO attribute animVal
-**/
 extern class SVGAnimatedRect {
-
+	var baseVal(default, null) : js.geometry.DOMRect;
+	var animVal(default, null) : js.geometry.DOMRectReadOnly;
 }

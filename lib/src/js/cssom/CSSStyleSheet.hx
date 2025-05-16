@@ -24,12 +24,13 @@
 
 package js.cssom;
 
-/**
-	TODO attribute ownerRule
-	TODO attribute cssRules
-	TODO attribute rules
-**/
 extern class CSSStyleSheet extends StyleSheet {
+	var ownerRule(default, null) : CSSRule;
+	var cssRules(default, null) : CSSRuleList;
+	/**
+		From partial interface in cssom.idl
+	**/
+	var rules(default, null) : CSSRuleList;
 	function new(?options:CSSStyleSheetInit):Void;
 	/**
 		From partial interface in cssom.idl

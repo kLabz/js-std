@@ -24,9 +24,6 @@
 
 package js.userTiming;
 
-/**
-	TODO attribute detail
-**/
 extern class PerformanceMeasure extends js.performanceTimeline.PerformanceEntry {
-
+	var detail(default, null) : Any;
 }

@@ -24,12 +24,13 @@
 
 package js.html;
 
-/**
-	TODO attribute disabled
-	TODO attribute media
-	TODO attribute blocking
-	TODO attribute type
-**/
 extern class HTMLStyleElement extends HTMLElement {
+	var disabled : Bool;
+	var media : String;
+	var blocking(default, null) : js.dom.DOMTokenList;
+	/**
+		From partial interface in html.idl
+	**/
+	var type : String;
 	function new():Void;
 }

@@ -24,9 +24,7 @@
 
 package js.html;
 
-/**
-	TODO attribute port
-**/
 extern class SharedWorker extends js.dom.EventTarget {
+	var port(default, null) : MessagePort;
 	function new(scriptURL:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>, ?options:haxe.extern.EitherType<String, WorkerOptions>):Void;
 }

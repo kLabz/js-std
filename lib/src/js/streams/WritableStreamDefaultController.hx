@@ -24,9 +24,7 @@
 
 package js.streams;
 
-/**
-	TODO attribute signal
-**/
 extern class WritableStreamDefaultController {
+	var signal(default, null) : js.dom.AbortSignal;
 	function error(?e:Any):Void;
 }

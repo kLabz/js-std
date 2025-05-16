@@ -24,11 +24,9 @@
 
 package js.cssTypedOm;
 
-/**
-	TODO attribute colorSpace
-	TODO attribute channels
-	TODO attribute alpha
-**/
 extern class CSSColor extends CSSColorValue {
+	var colorSpace : CSSKeywordish;
+	var channels : Array<CSSColorPercent>;
+	var alpha : CSSNumberish;
 	function new(colorSpace:CSSKeywordish, channels:Array<CSSColorPercent>, ?alpha:CSSNumberish):Void;
 }

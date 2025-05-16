@@ -24,10 +24,7 @@
 
 package js.cssLayoutApi;
 
-/**
-	TODO attribute childBreakTokens
-	TODO attribute data
-**/
 extern class BreakToken {
-
+	var childBreakTokens(default, null) : Array<ChildBreakToken>;
+	var data(default, null) : Any;
 }

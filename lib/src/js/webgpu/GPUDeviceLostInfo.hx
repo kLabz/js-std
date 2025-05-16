@@ -24,10 +24,7 @@
 
 package js.webgpu;
 
-/**
-	TODO attribute reason
-	TODO attribute message
-**/
 extern class GPUDeviceLostInfo {
-
+	var reason(default, null) : GPUDeviceLostReason;
+	var message(default, null) : String;
 }

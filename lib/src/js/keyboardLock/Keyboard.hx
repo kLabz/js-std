@@ -24,10 +24,11 @@
 
 package js.keyboardLock;
 
-/**
-	TODO attribute onlayoutchange
-**/
 extern class Keyboard extends js.dom.EventTarget {
+	/**
+		From partial interface in keyboard-map.idl
+	**/
+	var onlayoutchange : EventHandler;
 	/**
 		From partial interface in keyboard-map.idl
 	**/

@@ -24,9 +24,6 @@
 
 package js.cssom;
 
-/**
-	TODO attribute cssFloat
-**/
 extern class CSSStyleProperties extends CSSStyleDeclaration {
-
+	var cssFloat : CSSOMString;
 }

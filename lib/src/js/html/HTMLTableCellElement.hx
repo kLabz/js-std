@@ -24,23 +24,48 @@
 
 package js.html;
 
-/**
-	TODO attribute colSpan
-	TODO attribute rowSpan
-	TODO attribute headers
-	TODO attribute cellIndex
-	TODO attribute scope
-	TODO attribute abbr
-	TODO attribute align
-	TODO attribute axis
-	TODO attribute height
-	TODO attribute width
-	TODO attribute ch
-	TODO attribute chOff
-	TODO attribute noWrap
-	TODO attribute vAlign
-	TODO attribute bgColor
-**/
 extern class HTMLTableCellElement extends HTMLElement {
+	var colSpan : Int;
+	var rowSpan : Int;
+	var headers : String;
+	var cellIndex(default, null) : Int;
+	var scope : String;
+	var abbr : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var align : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var axis : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var height : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var width : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var ch : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var chOff : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var noWrap : Bool;
+	/**
+		From partial interface in html.idl
+	**/
+	var vAlign : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var bgColor : String;
 	function new():Void;
 }

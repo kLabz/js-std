@@ -24,13 +24,11 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute address
-	TODO attribute port
-	TODO attribute url
-	TODO attribute errorCode
-	TODO attribute errorText
-**/
 extern class RTCPeerConnectionIceErrorEvent extends js.dom.Event {
+	var address(default, null) : String;
+	var port(default, null) : Int;
+	var url(default, null) : String;
+	var errorCode(default, null) : Int;
+	var errorText(default, null) : String;
 	function new(type:String, eventInitDict:RTCPeerConnectionIceErrorEventInit):Void;
 }

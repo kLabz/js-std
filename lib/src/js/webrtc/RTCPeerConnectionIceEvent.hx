@@ -24,10 +24,8 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute candidate
-	TODO attribute url
-**/
 extern class RTCPeerConnectionIceEvent extends js.dom.Event {
+	var candidate(default, null) : RTCIceCandidate;
+	var url(default, null) : String;
 	function new(type:String, ?eventInitDict:RTCPeerConnectionIceEventInit):Void;
 }

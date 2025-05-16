@@ -24,9 +24,7 @@
 
 package js.requestidlecallback;
 
-/**
-	TODO attribute didTimeout
-**/
 extern class IdleDeadline {
+	var didTimeout(default, null) : Bool;
 	function timeRemaining():DOMHighResTimeStamp;
 }

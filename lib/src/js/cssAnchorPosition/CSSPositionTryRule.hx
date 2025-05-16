@@ -24,10 +24,7 @@
 
 package js.cssAnchorPosition;
 
-/**
-	TODO attribute name
-	TODO attribute style
-**/
 extern class CSSPositionTryRule extends js.cssom.CSSRule {
-
+	var name(default, null) : CSSOMString;
+	var style(default, null) : CSSPositionTryDescriptors;
 }

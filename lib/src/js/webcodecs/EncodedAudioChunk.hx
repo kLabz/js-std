@@ -24,13 +24,11 @@
 
 package js.webcodecs;
 
-/**
-	TODO attribute type
-	TODO attribute timestamp
-	TODO attribute duration
-	TODO attribute byteLength
-**/
 extern class EncodedAudioChunk {
+	var type(default, null) : EncodedAudioChunkType;
+	var timestamp(default, null) : Float;
+	var duration(default, null) : Float;
+	var byteLength(default, null) : Int;
 	function new(init:EncodedAudioChunkInit):Void;
 	function copyTo(destination:AllowSharedBufferSource):Void;
 }

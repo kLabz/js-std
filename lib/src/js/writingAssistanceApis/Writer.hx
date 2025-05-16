@@ -24,17 +24,15 @@
 
 package js.writingAssistanceApis;
 
-/**
-	TODO attribute sharedContext
-	TODO attribute tone
-	TODO attribute format
-	TODO attribute length
-	TODO attribute expectedInputLanguages
-	TODO attribute expectedContextLanguages
-	TODO attribute outputLanguage
-	TODO attribute inputQuota
-**/
 extern class Writer {
+	var sharedContext(default, null) : String;
+	var tone(default, null) : WriterTone;
+	var format(default, null) : WriterFormat;
+	var length(default, null) : WriterLength;
+	var expectedInputLanguages(default, null) : Array<String>;
+	var expectedContextLanguages(default, null) : Array<String>;
+	var outputLanguage(default, null) : String;
+	var inputQuota(default, null) : Float;
 	function availability(?options:WriterCreateCoreOptions):js.lib.Promise<Availability>;
 	function create(?options:WriterCreateOptions):js.lib.Promise<Writer>;
 	function measureInputUsage(input:String, ?options:WriterWriteOptions):js.lib.Promise<Float>;

@@ -24,12 +24,6 @@
 
 package js.svg;
 
-/**
-	TODO attribute unitType
-	TODO attribute value
-	TODO attribute valueInSpecifiedUnits
-	TODO attribute valueAsString
-**/
 extern class SVGLength {
 	static inline var SVG_LENGTHTYPE_UNKNOWN : Int = 0;
 	static inline var SVG_LENGTHTYPE_NUMBER : Int = 1;
@@ -42,6 +36,10 @@ extern class SVGLength {
 	static inline var SVG_LENGTHTYPE_IN : Int = 8;
 	static inline var SVG_LENGTHTYPE_PT : Int = 9;
 	static inline var SVG_LENGTHTYPE_PC : Int = 10;
+	var unitType(default, null) : Int;
+	var value : Float;
+	var valueInSpecifiedUnits : Float;
+	var valueAsString : String;
 	function convertToSpecifiedUnits(unitType:Int):Void;
 	function newValueSpecifiedUnits(unitType:Int, valueInSpecifiedUnits:Float):Void;
 }

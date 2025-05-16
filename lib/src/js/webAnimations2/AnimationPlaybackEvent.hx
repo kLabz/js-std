@@ -24,10 +24,8 @@
 
 package js.webAnimations2;
 
-/**
-	TODO attribute currentTime
-	TODO attribute timelineTime
-**/
 extern class AnimationPlaybackEvent extends js.dom.Event {
+	var currentTime(default, null) : CSSNumberish;
+	var timelineTime(default, null) : CSSNumberish;
 	function new(type:String, ?eventInitDict:AnimationPlaybackEventInit):Void;
 }

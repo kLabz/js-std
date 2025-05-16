@@ -24,10 +24,7 @@
 
 package js.svg;
 
-/**
-	TODO attribute baseVal
-	TODO attribute animVal
-**/
 extern class SVGAnimatedAngle {
-
+	var baseVal(default, null) : SVGAngle;
+	var animVal(default, null) : SVGAngle;
 }

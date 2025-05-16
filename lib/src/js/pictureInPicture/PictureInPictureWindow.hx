@@ -24,11 +24,8 @@
 
 package js.pictureInPicture;
 
-/**
-	TODO attribute width
-	TODO attribute height
-	TODO attribute onresize
-**/
 extern class PictureInPictureWindow extends js.dom.EventTarget {
-
+	var width(default, null) : Int;
+	var height(default, null) : Int;
+	var onresize : EventHandler;
 }

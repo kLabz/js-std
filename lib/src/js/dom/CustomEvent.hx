@@ -24,10 +24,8 @@
 
 package js.dom;
 
-/**
-	TODO attribute detail
-**/
 extern class CustomEvent extends Event {
+	var detail(default, null) : Any;
 	function new(type:String, ?eventInitDict:CustomEventInit):Void;
 	function initCustomEvent(type:String, ?bubbles:Bool, ?cancelable:Bool, ?detail:Any):Void;
 }

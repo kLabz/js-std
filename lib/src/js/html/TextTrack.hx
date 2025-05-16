@@ -24,19 +24,20 @@
 
 package js.html;
 
-/**
-	TODO attribute kind
-	TODO attribute label
-	TODO attribute language
-	TODO attribute id
-	TODO attribute inBandMetadataTrackDispatchType
-	TODO attribute mode
-	TODO attribute cues
-	TODO attribute activeCues
-	TODO attribute oncuechange
-	TODO attribute sourceBuffer
-**/
 extern class TextTrack extends js.dom.EventTarget {
+	var kind(default, null) : TextTrackKind;
+	var label(default, null) : String;
+	var language(default, null) : String;
+	var id(default, null) : String;
+	var inBandMetadataTrackDispatchType(default, null) : String;
+	var mode : TextTrackMode;
+	var cues(default, null) : TextTrackCueList;
+	var activeCues(default, null) : TextTrackCueList;
+	var oncuechange : EventHandler;
+	/**
+		From partial interface in media-source.idl
+	**/
+	var sourceBuffer(default, null) : js.mediaSource.SourceBuffer;
 	function addCue(cue:TextTrackCue):Void;
 	function removeCue(cue:TextTrackCue):Void;
 }

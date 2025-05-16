@@ -24,12 +24,10 @@
 
 package js.cssTypedOm;
 
-/**
-	TODO attribute h
-	TODO attribute s
-	TODO attribute l
-	TODO attribute alpha
-**/
 extern class CSSHSL extends CSSColorValue {
+	var h : CSSColorAngle;
+	var s : CSSColorPercent;
+	var l : CSSColorPercent;
+	var alpha : CSSColorPercent;
 	function new(h:CSSColorAngle, s:CSSColorPercent, l:CSSColorPercent, ?alpha:CSSColorPercent):Void;
 }

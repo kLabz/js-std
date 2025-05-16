@@ -24,12 +24,9 @@
 
 package js.webxr;
 
-/**
-	TODO attribute transform
-	TODO attribute linearVelocity
-	TODO attribute angularVelocity
-	TODO attribute emulatedPosition
-**/
 extern class XRPose {
-
+	var transform(default, null) : XRRigidTransform;
+	var linearVelocity(default, null) : js.geometry.DOMPointReadOnly;
+	var angularVelocity(default, null) : js.geometry.DOMPointReadOnly;
+	var emulatedPosition(default, null) : Bool;
 }

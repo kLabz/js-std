@@ -24,10 +24,8 @@
 
 package js.gamepad;
 
-/**
-	TODO attribute effects
-**/
 extern class GamepadHapticActuator {
+	var effects(default, null) : Array<GamepadHapticEffectType>;
 	function playEffect(type:GamepadHapticEffectType, ?params:GamepadEffectParameters):js.lib.Promise<GamepadHapticsResult>;
 	/**
 		From partial interface in gamepad-extensions.idl

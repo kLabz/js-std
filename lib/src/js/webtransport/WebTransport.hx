@@ -24,21 +24,19 @@
 
 package js.webtransport;
 
-/**
-	TODO attribute ready
-	TODO attribute reliability
-	TODO attribute congestionControl
-	TODO attribute anticipatedConcurrentIncomingUnidirectionalStreams
-	TODO attribute anticipatedConcurrentIncomingBidirectionalStreams
-	TODO attribute protocol
-	TODO attribute closed
-	TODO attribute draining
-	TODO attribute datagrams
-	TODO attribute incomingBidirectionalStreams
-	TODO attribute incomingUnidirectionalStreams
-	TODO attribute supportsReliableOnly
-**/
 extern class WebTransport {
+	var ready(default, null) : js.lib.Promise<Void>;
+	var reliability(default, null) : WebTransportReliabilityMode;
+	var congestionControl(default, null) : WebTransportCongestionControl;
+	var anticipatedConcurrentIncomingUnidirectionalStreams : Int;
+	var anticipatedConcurrentIncomingBidirectionalStreams : Int;
+	var protocol(default, null) : String;
+	var closed(default, null) : js.lib.Promise<WebTransportCloseInfo>;
+	var draining(default, null) : js.lib.Promise<Void>;
+	var datagrams(default, null) : WebTransportDatagramDuplexStream;
+	var incomingBidirectionalStreams(default, null) : js.streams.ReadableStream;
+	var incomingUnidirectionalStreams(default, null) : js.streams.ReadableStream;
+	static var supportsReliableOnly(default, null) : Bool;
 	function new(url:String, ?options:WebTransportOptions):Void;
 	function close(?closeInfo:WebTransportCloseInfo):Void;
 	function createBidirectionalStream(?options:WebTransportSendStreamOptions):js.lib.Promise<WebTransportBidirectionalStream>;

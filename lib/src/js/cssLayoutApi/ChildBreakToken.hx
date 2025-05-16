@@ -24,10 +24,7 @@
 
 package js.cssLayoutApi;
 
-/**
-	TODO attribute breakType
-	TODO attribute child
-**/
 extern class ChildBreakToken {
-
+	var breakType(default, null) : BreakType;
+	var child(default, null) : LayoutChild;
 }

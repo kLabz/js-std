@@ -24,9 +24,6 @@
 
 package js.webgpu;
 
-/**
-	TODO attribute messages
-**/
 extern class GPUCompilationInfo {
-
+	var messages(default, null) : Array<GPUCompilationMessage>;
 }

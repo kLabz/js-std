@@ -24,10 +24,8 @@
 
 package js.cssom;
 
-/**
-	TODO attribute cssRules
-**/
 extern class CSSGroupingRule extends CSSRule {
+	var cssRules(default, null) : CSSRuleList;
 	function deleteRule(index:Int):Void;
 	function insertRule(rule:CSSOMString, ?index:Int):Int;
 }

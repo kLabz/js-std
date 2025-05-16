@@ -24,9 +24,7 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute stream
-**/
 extern class MediaStreamAudioDestinationNode extends AudioNode {
+	var stream(default, null) : js.mediacaptureStreams.MediaStream;
 	function new(context:AudioContext, ?options:AudioNodeOptions):Void;
 }

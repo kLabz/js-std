@@ -25,28 +25,28 @@
 package js.geometry;
 
 /**
-	TODO attribute a
-	TODO attribute b
-	TODO attribute c
-	TODO attribute d
-	TODO attribute e
-	TODO attribute f
-	TODO attribute m11
-	TODO attribute m12
-	TODO attribute m13
-	TODO attribute m14
-	TODO attribute m21
-	TODO attribute m22
-	TODO attribute m23
-	TODO attribute m24
-	TODO attribute m31
-	TODO attribute m32
-	TODO attribute m33
-	TODO attribute m34
-	TODO attribute m41
-	TODO attribute m42
-	TODO attribute m43
-	TODO attribute m44
+	TODO attribute a: special=inherit readonly=false
+	TODO attribute b: special=inherit readonly=false
+	TODO attribute c: special=inherit readonly=false
+	TODO attribute d: special=inherit readonly=false
+	TODO attribute e: special=inherit readonly=false
+	TODO attribute f: special=inherit readonly=false
+	TODO attribute m11: special=inherit readonly=false
+	TODO attribute m12: special=inherit readonly=false
+	TODO attribute m13: special=inherit readonly=false
+	TODO attribute m14: special=inherit readonly=false
+	TODO attribute m21: special=inherit readonly=false
+	TODO attribute m22: special=inherit readonly=false
+	TODO attribute m23: special=inherit readonly=false
+	TODO attribute m24: special=inherit readonly=false
+	TODO attribute m31: special=inherit readonly=false
+	TODO attribute m32: special=inherit readonly=false
+	TODO attribute m33: special=inherit readonly=false
+	TODO attribute m34: special=inherit readonly=false
+	TODO attribute m41: special=inherit readonly=false
+	TODO attribute m42: special=inherit readonly=false
+	TODO attribute m43: special=inherit readonly=false
+	TODO attribute m44: special=inherit readonly=false
 **/
 extern class DOMMatrix extends DOMMatrixReadOnly {
 	function new(?init:haxe.extern.EitherType<String, Array<Float>>):Void;

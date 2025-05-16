@@ -24,11 +24,9 @@
 
 package js.webusb;
 
-/**
-	TODO attribute onconnect
-	TODO attribute ondisconnect
-**/
 extern class USB extends js.dom.EventTarget {
+	var onconnect : EventHandler;
+	var ondisconnect : EventHandler;
 	function getDevices():js.lib.Promise<Array<USBDevice>>;
 	function requestDevice(options:USBDeviceRequestOptions):js.lib.Promise<USBDevice>;
 }

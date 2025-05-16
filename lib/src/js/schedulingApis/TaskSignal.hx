@@ -24,10 +24,8 @@
 
 package js.schedulingApis;
 
-/**
-	TODO attribute priority
-	TODO attribute onprioritychange
-**/
 extern class TaskSignal extends js.dom.AbortSignal {
+	var priority(default, null) : TaskPriority;
+	var onprioritychange : EventHandler;
 	function any(signals:Array<js.dom.AbortSignal>, ?init:TaskSignalAnyInit):TaskSignal;
 }

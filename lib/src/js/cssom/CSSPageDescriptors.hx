@@ -24,22 +24,19 @@
 
 package js.cssom;
 
-/**
-	TODO attribute margin
-	TODO attribute marginTop
-	TODO attribute marginRight
-	TODO attribute marginBottom
-	TODO attribute marginLeft
-	TODO attribute margin-top
-	TODO attribute margin-right
-	TODO attribute margin-bottom
-	TODO attribute margin-left
-	TODO attribute size
-	TODO attribute pageOrientation
-	TODO attribute page-orientation
-	TODO attribute marks
-	TODO attribute bleed
-**/
 extern class CSSPageDescriptors extends CSSStyleDeclaration {
-
+	var margin : CSSOMString;
+	var marginTop : CSSOMString;
+	var marginRight : CSSOMString;
+	var marginBottom : CSSOMString;
+	var marginLeft : CSSOMString;
+	var margin-top : CSSOMString;
+	var margin-right : CSSOMString;
+	var margin-bottom : CSSOMString;
+	var margin-left : CSSOMString;
+	var size : CSSOMString;
+	var pageOrientation : CSSOMString;
+	var page-orientation : CSSOMString;
+	var marks : CSSOMString;
+	var bleed : CSSOMString;
 }

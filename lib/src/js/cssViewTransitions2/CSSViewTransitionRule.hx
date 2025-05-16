@@ -24,10 +24,7 @@
 
 package js.cssViewTransitions2;
 
-/**
-	TODO attribute navigation
-	TODO attribute types
-**/
 extern class CSSViewTransitionRule extends js.cssom.CSSRule {
-
+	var navigation(default, null) : CSSOMString;
+	var types(default, null) : Array<CSSOMString>;
 }

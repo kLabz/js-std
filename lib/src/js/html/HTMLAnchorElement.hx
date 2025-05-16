@@ -24,23 +24,39 @@
 
 package js.html;
 
-/**
-	TODO attribute target
-	TODO attribute download
-	TODO attribute ping
-	TODO attribute rel
-	TODO attribute relList
-	TODO attribute hreflang
-	TODO attribute type
-	TODO attribute text
-	TODO attribute referrerPolicy
-	TODO attribute coords
-	TODO attribute charset
-	TODO attribute name
-	TODO attribute rev
-	TODO attribute shape
-	TODO attribute attributionSourceId
-**/
 extern class HTMLAnchorElement extends HTMLElement {
+	var target : String;
+	var download : String;
+	var ping : String;
+	var rel : String;
+	var relList(default, null) : js.dom.DOMTokenList;
+	var hreflang : String;
+	var type : String;
+	var text : String;
+	var referrerPolicy : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var coords : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var charset : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var name : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var rev : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var shape : String;
+	/**
+		From partial interface in private-click-measurement.idl
+	**/
+	var attributionSourceId : Int;
 	function new():Void;
 }

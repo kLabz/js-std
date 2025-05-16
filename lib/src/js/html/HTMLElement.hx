@@ -24,31 +24,47 @@
 
 package js.html;
 
-/**
-	TODO attribute title
-	TODO attribute lang
-	TODO attribute translate
-	TODO attribute dir
-	TODO attribute hidden
-	TODO attribute inert
-	TODO attribute accessKey
-	TODO attribute accessKeyLabel
-	TODO attribute draggable
-	TODO attribute spellcheck
-	TODO attribute writingSuggestions
-	TODO attribute autocapitalize
-	TODO attribute autocorrect
-	TODO attribute innerText
-	TODO attribute outerText
-	TODO attribute popover
-	TODO attribute offsetParent
-	TODO attribute offsetTop
-	TODO attribute offsetLeft
-	TODO attribute offsetWidth
-	TODO attribute offsetHeight
-	TODO attribute editContext
-**/
 extern class HTMLElement extends js.dom.Element {
+	var title : String;
+	var lang : String;
+	var translate : Bool;
+	var dir : String;
+	var hidden : haxe.extern.EitherType<Bool, haxe.extern.EitherType<Float, String>>;
+	var inert : Bool;
+	var accessKey : String;
+	var accessKeyLabel(default, null) : String;
+	var draggable : Bool;
+	var spellcheck : Bool;
+	var writingSuggestions : String;
+	var autocapitalize : String;
+	var autocorrect : Bool;
+	var innerText : String;
+	var outerText : String;
+	var popover : String;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var offsetParent(default, null) : js.dom.Element;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var offsetTop(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var offsetLeft(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var offsetWidth(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var offsetHeight(default, null) : Int;
+	/**
+		From partial interface in edit-context.idl
+	**/
+	var editContext : js.editContext.EditContext;
 	function new():Void;
 	function attachInternals():ElementInternals;
 	function click():Void;

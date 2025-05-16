@@ -24,10 +24,7 @@
 
 package js.webLocks;
 
-/**
-	TODO attribute name
-	TODO attribute mode
-**/
 extern class Lock {
-
+	var name(default, null) : String;
+	var mode(default, null) : LockMode;
 }

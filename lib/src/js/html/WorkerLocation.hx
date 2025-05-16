@@ -25,16 +25,15 @@
 package js.html;
 
 /**
-	TODO attribute href
-	TODO attribute origin
-	TODO attribute protocol
-	TODO attribute host
-	TODO attribute hostname
-	TODO attribute port
-	TODO attribute pathname
-	TODO attribute search
-	TODO attribute hash
+	TODO attribute href: special=stringifier readonly=true
 **/
 extern class WorkerLocation {
-
+	var origin(default, null) : String;
+	var protocol(default, null) : String;
+	var host(default, null) : String;
+	var hostname(default, null) : String;
+	var port(default, null) : String;
+	var pathname(default, null) : String;
+	var search(default, null) : String;
+	var hash(default, null) : String;
 }

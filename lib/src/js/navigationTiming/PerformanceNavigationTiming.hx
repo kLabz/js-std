@@ -24,21 +24,22 @@
 
 package js.navigationTiming;
 
-/**
-	TODO attribute unloadEventStart
-	TODO attribute unloadEventEnd
-	TODO attribute domInteractive
-	TODO attribute domContentLoadedEventStart
-	TODO attribute domContentLoadedEventEnd
-	TODO attribute domComplete
-	TODO attribute loadEventStart
-	TODO attribute loadEventEnd
-	TODO attribute type
-	TODO attribute redirectCount
-	TODO attribute criticalCHRestart
-	TODO attribute notRestoredReasons
-	TODO attribute activationStart
-**/
 extern class PerformanceNavigationTiming extends js.resourceTiming.PerformanceResourceTiming {
+	var unloadEventStart(default, null) : DOMHighResTimeStamp;
+	var unloadEventEnd(default, null) : DOMHighResTimeStamp;
+	var domInteractive(default, null) : DOMHighResTimeStamp;
+	var domContentLoadedEventStart(default, null) : DOMHighResTimeStamp;
+	var domContentLoadedEventEnd(default, null) : DOMHighResTimeStamp;
+	var domComplete(default, null) : DOMHighResTimeStamp;
+	var loadEventStart(default, null) : DOMHighResTimeStamp;
+	var loadEventEnd(default, null) : DOMHighResTimeStamp;
+	var type(default, null) : NavigationTimingType;
+	var redirectCount(default, null) : Int;
+	var criticalCHRestart(default, null) : DOMHighResTimeStamp;
+	var notRestoredReasons(default, null) : js.html.NotRestoredReasons;
+	/**
+		From partial interface in prerendering-revamped.idl
+	**/
+	var activationStart(default, null) : DOMHighResTimeStamp;
 	function toJSON():{ };
 }

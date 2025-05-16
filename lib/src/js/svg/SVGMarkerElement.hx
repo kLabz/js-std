@@ -24,16 +24,6 @@
 
 package js.svg;
 
-/**
-	TODO attribute refX
-	TODO attribute refY
-	TODO attribute markerUnits
-	TODO attribute markerWidth
-	TODO attribute markerHeight
-	TODO attribute orientType
-	TODO attribute orientAngle
-	TODO attribute orient
-**/
 extern class SVGMarkerElement extends SVGElement {
 	static inline var SVG_MARKERUNITS_UNKNOWN : Int = 0;
 	static inline var SVG_MARKERUNITS_USERSPACEONUSE : Int = 1;
@@ -41,6 +31,14 @@ extern class SVGMarkerElement extends SVGElement {
 	static inline var SVG_MARKER_ORIENT_UNKNOWN : Int = 0;
 	static inline var SVG_MARKER_ORIENT_AUTO : Int = 1;
 	static inline var SVG_MARKER_ORIENT_ANGLE : Int = 2;
+	var refX(default, null) : SVGAnimatedLength;
+	var refY(default, null) : SVGAnimatedLength;
+	var markerUnits(default, null) : SVGAnimatedEnumeration;
+	var markerWidth(default, null) : SVGAnimatedLength;
+	var markerHeight(default, null) : SVGAnimatedLength;
+	var orientType(default, null) : SVGAnimatedEnumeration;
+	var orientAngle(default, null) : SVGAnimatedAngle;
+	var orient : String;
 	function setOrientToAngle(angle:SVGAngle):Void;
 	function setOrientToAuto():Void;
 }

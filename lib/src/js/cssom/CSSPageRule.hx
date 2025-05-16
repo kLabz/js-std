@@ -24,10 +24,7 @@
 
 package js.cssom;
 
-/**
-	TODO attribute selectorText
-	TODO attribute style
-**/
 extern class CSSPageRule extends CSSGroupingRule {
-
+	var selectorText : CSSOMString;
+	var style(default, null) : CSSPageDescriptors;
 }

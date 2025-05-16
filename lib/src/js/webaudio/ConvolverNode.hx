@@ -24,10 +24,8 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute buffer
-	TODO attribute normalize
-**/
 extern class ConvolverNode extends AudioNode {
+	var buffer : AudioBuffer;
+	var normalize : Bool;
 	function new(context:BaseAudioContext, ?options:ConvolverOptions):Void;
 }

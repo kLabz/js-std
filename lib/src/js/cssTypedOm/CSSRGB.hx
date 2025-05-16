@@ -24,12 +24,10 @@
 
 package js.cssTypedOm;
 
-/**
-	TODO attribute r
-	TODO attribute g
-	TODO attribute b
-	TODO attribute alpha
-**/
 extern class CSSRGB extends CSSColorValue {
+	var r : CSSColorRGBComp;
+	var g : CSSColorRGBComp;
+	var b : CSSColorRGBComp;
+	var alpha : CSSColorPercent;
 	function new(r:CSSColorRGBComp, g:CSSColorRGBComp, b:CSSColorRGBComp, ?alpha:CSSColorPercent):Void;
 }

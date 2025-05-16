@@ -24,32 +24,33 @@
 
 package js.resourceTiming;
 
-/**
-	TODO attribute initiatorType
-	TODO attribute deliveryType
-	TODO attribute nextHopProtocol
-	TODO attribute workerStart
-	TODO attribute redirectStart
-	TODO attribute redirectEnd
-	TODO attribute fetchStart
-	TODO attribute domainLookupStart
-	TODO attribute domainLookupEnd
-	TODO attribute connectStart
-	TODO attribute connectEnd
-	TODO attribute secureConnectionStart
-	TODO attribute requestStart
-	TODO attribute finalResponseHeadersStart
-	TODO attribute firstInterimResponseStart
-	TODO attribute responseStart
-	TODO attribute responseEnd
-	TODO attribute transferSize
-	TODO attribute encodedBodySize
-	TODO attribute decodedBodySize
-	TODO attribute responseStatus
-	TODO attribute renderBlockingStatus
-	TODO attribute contentType
-	TODO attribute serverTiming
-**/
 extern class PerformanceResourceTiming extends js.performanceTimeline.PerformanceEntry {
+	var initiatorType(default, null) : String;
+	var deliveryType(default, null) : String;
+	var nextHopProtocol(default, null) : String;
+	var workerStart(default, null) : DOMHighResTimeStamp;
+	var redirectStart(default, null) : DOMHighResTimeStamp;
+	var redirectEnd(default, null) : DOMHighResTimeStamp;
+	var fetchStart(default, null) : DOMHighResTimeStamp;
+	var domainLookupStart(default, null) : DOMHighResTimeStamp;
+	var domainLookupEnd(default, null) : DOMHighResTimeStamp;
+	var connectStart(default, null) : DOMHighResTimeStamp;
+	var connectEnd(default, null) : DOMHighResTimeStamp;
+	var secureConnectionStart(default, null) : DOMHighResTimeStamp;
+	var requestStart(default, null) : DOMHighResTimeStamp;
+	var finalResponseHeadersStart(default, null) : DOMHighResTimeStamp;
+	var firstInterimResponseStart(default, null) : DOMHighResTimeStamp;
+	var responseStart(default, null) : DOMHighResTimeStamp;
+	var responseEnd(default, null) : DOMHighResTimeStamp;
+	var transferSize(default, null) : Float;
+	var encodedBodySize(default, null) : Float;
+	var decodedBodySize(default, null) : Float;
+	var responseStatus(default, null) : Int;
+	var renderBlockingStatus(default, null) : RenderBlockingStatusType;
+	var contentType(default, null) : String;
+	/**
+		From partial interface in server-timing.idl
+	**/
+	var serverTiming(default, null) : Array<js.serverTiming.PerformanceServerTiming>;
 	function toJSON():{ };
 }

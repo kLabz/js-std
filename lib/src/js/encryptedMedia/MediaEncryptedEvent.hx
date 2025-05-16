@@ -24,10 +24,8 @@
 
 package js.encryptedMedia;
 
-/**
-	TODO attribute initDataType
-	TODO attribute initData
-**/
 extern class MediaEncryptedEvent extends js.dom.Event {
+	var initDataType(default, null) : String;
+	var initData(default, null) : ArrayBuffer;
 	function new(type:String, ?eventInitDict:MediaEncryptedEventInit):Void;
 }

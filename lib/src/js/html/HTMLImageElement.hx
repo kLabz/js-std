@@ -24,35 +24,60 @@
 
 package js.html;
 
-/**
-	TODO attribute alt
-	TODO attribute src
-	TODO attribute srcset
-	TODO attribute sizes
-	TODO attribute crossOrigin
-	TODO attribute useMap
-	TODO attribute isMap
-	TODO attribute width
-	TODO attribute height
-	TODO attribute naturalWidth
-	TODO attribute naturalHeight
-	TODO attribute complete
-	TODO attribute currentSrc
-	TODO attribute referrerPolicy
-	TODO attribute decoding
-	TODO attribute loading
-	TODO attribute fetchPriority
-	TODO attribute x
-	TODO attribute y
-	TODO attribute name
-	TODO attribute lowsrc
-	TODO attribute align
-	TODO attribute hspace
-	TODO attribute vspace
-	TODO attribute longDesc
-	TODO attribute border
-**/
 extern class HTMLImageElement extends HTMLElement {
+	var alt : String;
+	var src : String;
+	var srcset : String;
+	var sizes : String;
+	var crossOrigin : String;
+	var useMap : String;
+	var isMap : Bool;
+	var width : Int;
+	var height : Int;
+	var naturalWidth(default, null) : Int;
+	var naturalHeight(default, null) : Int;
+	var complete(default, null) : Bool;
+	var currentSrc(default, null) : String;
+	var referrerPolicy : String;
+	var decoding : String;
+	var loading : String;
+	var fetchPriority : String;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var x(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var y(default, null) : Int;
+	/**
+		From partial interface in html.idl
+	**/
+	var name : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var lowsrc : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var align : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var hspace : Int;
+	/**
+		From partial interface in html.idl
+	**/
+	var vspace : Int;
+	/**
+		From partial interface in html.idl
+	**/
+	var longDesc : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var border : String;
 	function new():Void;
 	function decode():js.lib.Promise<Void>;
 }

@@ -24,9 +24,7 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute channel
-**/
 extern class RTCDataChannelEvent extends js.dom.Event {
+	var channel(default, null) : RTCDataChannel;
 	function new(type:String, eventInitDict:RTCDataChannelEventInit):Void;
 }

@@ -24,15 +24,6 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute type
-	TODO attribute tableValues
-	TODO attribute slope
-	TODO attribute intercept
-	TODO attribute amplitude
-	TODO attribute exponent
-	TODO attribute offset
-**/
 extern class SVGComponentTransferFunctionElement extends js.svg.SVGElement {
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN : Int = 0;
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_IDENTITY : Int = 1;
@@ -40,4 +31,11 @@ extern class SVGComponentTransferFunctionElement extends js.svg.SVGElement {
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE : Int = 3;
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_LINEAR : Int = 4;
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_GAMMA : Int = 5;
+	var type(default, null) : js.svg.SVGAnimatedEnumeration;
+	var tableValues(default, null) : js.svg.SVGAnimatedNumberList;
+	var slope(default, null) : js.svg.SVGAnimatedNumber;
+	var intercept(default, null) : js.svg.SVGAnimatedNumber;
+	var amplitude(default, null) : js.svg.SVGAnimatedNumber;
+	var exponent(default, null) : js.svg.SVGAnimatedNumber;
+	var offset(default, null) : js.svg.SVGAnimatedNumber;
 }

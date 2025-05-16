@@ -24,10 +24,8 @@
 
 package js.streams;
 
-/**
-	TODO attribute desiredSize
-**/
 extern class TransformStreamDefaultController {
+	var desiredSize(default, null) : Float;
 	function enqueue(?chunk:Any):Void;
 	function error(?reason:Any):Void;
 	function terminate():Void;

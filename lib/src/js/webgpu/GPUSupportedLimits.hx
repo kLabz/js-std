@@ -24,39 +24,36 @@
 
 package js.webgpu;
 
-/**
-	TODO attribute maxTextureDimension1D
-	TODO attribute maxTextureDimension2D
-	TODO attribute maxTextureDimension3D
-	TODO attribute maxTextureArrayLayers
-	TODO attribute maxBindGroups
-	TODO attribute maxBindGroupsPlusVertexBuffers
-	TODO attribute maxBindingsPerBindGroup
-	TODO attribute maxDynamicUniformBuffersPerPipelineLayout
-	TODO attribute maxDynamicStorageBuffersPerPipelineLayout
-	TODO attribute maxSampledTexturesPerShaderStage
-	TODO attribute maxSamplersPerShaderStage
-	TODO attribute maxStorageBuffersPerShaderStage
-	TODO attribute maxStorageTexturesPerShaderStage
-	TODO attribute maxUniformBuffersPerShaderStage
-	TODO attribute maxUniformBufferBindingSize
-	TODO attribute maxStorageBufferBindingSize
-	TODO attribute minUniformBufferOffsetAlignment
-	TODO attribute minStorageBufferOffsetAlignment
-	TODO attribute maxVertexBuffers
-	TODO attribute maxBufferSize
-	TODO attribute maxVertexAttributes
-	TODO attribute maxVertexBufferArrayStride
-	TODO attribute maxInterStageShaderVariables
-	TODO attribute maxColorAttachments
-	TODO attribute maxColorAttachmentBytesPerSample
-	TODO attribute maxComputeWorkgroupStorageSize
-	TODO attribute maxComputeInvocationsPerWorkgroup
-	TODO attribute maxComputeWorkgroupSizeX
-	TODO attribute maxComputeWorkgroupSizeY
-	TODO attribute maxComputeWorkgroupSizeZ
-	TODO attribute maxComputeWorkgroupsPerDimension
-**/
 extern class GPUSupportedLimits {
-
+	var maxTextureDimension1D(default, null) : Int;
+	var maxTextureDimension2D(default, null) : Int;
+	var maxTextureDimension3D(default, null) : Int;
+	var maxTextureArrayLayers(default, null) : Int;
+	var maxBindGroups(default, null) : Int;
+	var maxBindGroupsPlusVertexBuffers(default, null) : Int;
+	var maxBindingsPerBindGroup(default, null) : Int;
+	var maxDynamicUniformBuffersPerPipelineLayout(default, null) : Int;
+	var maxDynamicStorageBuffersPerPipelineLayout(default, null) : Int;
+	var maxSampledTexturesPerShaderStage(default, null) : Int;
+	var maxSamplersPerShaderStage(default, null) : Int;
+	var maxStorageBuffersPerShaderStage(default, null) : Int;
+	var maxStorageTexturesPerShaderStage(default, null) : Int;
+	var maxUniformBuffersPerShaderStage(default, null) : Int;
+	var maxUniformBufferBindingSize(default, null) : Float;
+	var maxStorageBufferBindingSize(default, null) : Float;
+	var minUniformBufferOffsetAlignment(default, null) : Int;
+	var minStorageBufferOffsetAlignment(default, null) : Int;
+	var maxVertexBuffers(default, null) : Int;
+	var maxBufferSize(default, null) : Float;
+	var maxVertexAttributes(default, null) : Int;
+	var maxVertexBufferArrayStride(default, null) : Int;
+	var maxInterStageShaderVariables(default, null) : Int;
+	var maxColorAttachments(default, null) : Int;
+	var maxColorAttachmentBytesPerSample(default, null) : Int;
+	var maxComputeWorkgroupStorageSize(default, null) : Int;
+	var maxComputeInvocationsPerWorkgroup(default, null) : Int;
+	var maxComputeWorkgroupSizeX(default, null) : Int;
+	var maxComputeWorkgroupSizeY(default, null) : Int;
+	var maxComputeWorkgroupSizeZ(default, null) : Int;
+	var maxComputeWorkgroupsPerDimension(default, null) : Int;
 }

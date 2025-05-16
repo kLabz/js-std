@@ -24,16 +24,19 @@
 
 package js.webxr;
 
-/**
-	TODO attribute handedness
-	TODO attribute targetRayMode
-	TODO attribute targetRaySpace
-	TODO attribute gripSpace
-	TODO attribute profiles
-	TODO attribute skipRendering
-	TODO attribute gamepad
-	TODO attribute hand
-**/
 extern class XRInputSource {
-
+	var handedness(default, null) : XRHandedness;
+	var targetRayMode(default, null) : XRTargetRayMode;
+	var targetRaySpace(default, null) : XRSpace;
+	var gripSpace(default, null) : XRSpace;
+	var profiles(default, null) : Array<String>;
+	var skipRendering(default, null) : Bool;
+	/**
+		From partial interface in webxr-hand-input.idl
+	**/
+	var hand(default, null) : js.webxrHandInput.XRHand;
+	/**
+		From partial interface in webxr-gamepads-module.idl
+	**/
+	var gamepad(default, null) : js.gamepad.Gamepad;
 }

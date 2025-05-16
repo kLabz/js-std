@@ -24,18 +24,16 @@
 
 package js.backgroundFetch;
 
-/**
-	TODO attribute id
-	TODO attribute uploadTotal
-	TODO attribute uploaded
-	TODO attribute downloadTotal
-	TODO attribute downloaded
-	TODO attribute result
-	TODO attribute failureReason
-	TODO attribute recordsAvailable
-	TODO attribute onprogress
-**/
 extern class BackgroundFetchRegistration extends js.dom.EventTarget {
+	var id(default, null) : String;
+	var uploadTotal(default, null) : Float;
+	var uploaded(default, null) : Float;
+	var downloadTotal(default, null) : Float;
+	var downloaded(default, null) : Float;
+	var result(default, null) : BackgroundFetchResult;
+	var failureReason(default, null) : BackgroundFetchFailureReason;
+	var recordsAvailable(default, null) : Bool;
+	var onprogress : EventHandler;
 	function abort():js.lib.Promise<Bool>;
 	function match(request:RequestInfo, ?options:js.serviceWorkers.CacheQueryOptions):js.lib.Promise<BackgroundFetchRecord>;
 	function matchAll(?request:RequestInfo, ?options:js.serviceWorkers.CacheQueryOptions):js.lib.Promise<Array<BackgroundFetchRecord>>;

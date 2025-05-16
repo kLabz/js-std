@@ -24,13 +24,10 @@
 
 package js.webxrlayers;
 
-/**
-	TODO attribute space
-	TODO attribute transform
-	TODO attribute width
-	TODO attribute height
-	TODO attribute onredraw
-**/
 extern class XRQuadLayer extends XRCompositionLayer {
-
+	var space : js.webxr.XRSpace;
+	var transform : js.webxr.XRRigidTransform;
+	var width : Float;
+	var height : Float;
+	var onredraw : EventHandler;
 }

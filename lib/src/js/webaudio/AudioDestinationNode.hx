@@ -24,9 +24,6 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute maxChannelCount
-**/
 extern class AudioDestinationNode extends AudioNode {
-
+	var maxChannelCount(default, null) : Int;
 }

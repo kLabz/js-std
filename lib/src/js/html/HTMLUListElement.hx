@@ -24,10 +24,14 @@
 
 package js.html;
 
-/**
-	TODO attribute compact
-	TODO attribute type
-**/
 extern class HTMLUListElement extends HTMLElement {
+	/**
+		From partial interface in html.idl
+	**/
+	var compact : Bool;
+	/**
+		From partial interface in html.idl
+	**/
+	var type : String;
 	function new():Void;
 }

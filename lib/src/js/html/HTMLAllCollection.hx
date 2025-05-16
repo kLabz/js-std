@@ -24,10 +24,8 @@
 
 package js.html;
 
-/**
-	TODO attribute length
-**/
 extern class HTMLAllCollection implements ArrayAccess<js.dom.Element> {
+	var length(default, null) : Int;
 	function item(?nameOrIndex:String):haxe.extern.EitherType<js.dom.HTMLCollection, js.dom.Element>;
 	function namedItem(name:String):haxe.extern.EitherType<js.dom.HTMLCollection, js.dom.Element>;
 }

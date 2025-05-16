@@ -24,10 +24,8 @@
 
 package js.cssTypedOm;
 
-/**
-	TODO attribute length
-**/
 extern class CSSNumericArray implements ArrayAccess<CSSNumericValue> {
+	var length(default, null) : Int;
 	function values():Iterator<CSSNumericValue>;
 	function values():Iterator<CSSNumericValue>;
 }

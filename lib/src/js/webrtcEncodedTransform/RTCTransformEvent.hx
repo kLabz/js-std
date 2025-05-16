@@ -24,9 +24,6 @@
 
 package js.webrtcEncodedTransform;
 
-/**
-	TODO attribute transformer
-**/
 extern class RTCTransformEvent extends js.dom.Event {
-
+	var transformer(default, null) : RTCRtpScriptTransformer;
 }

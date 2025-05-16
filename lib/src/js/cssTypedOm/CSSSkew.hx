@@ -24,10 +24,8 @@
 
 package js.cssTypedOm;
 
-/**
-	TODO attribute ax
-	TODO attribute ay
-**/
 extern class CSSSkew extends CSSTransformComponent {
+	var ax : CSSNumericValue;
+	var ay : CSSNumericValue;
 	function new(ax:CSSNumericValue, ay:CSSNumericValue):Void;
 }

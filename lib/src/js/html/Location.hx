@@ -25,18 +25,18 @@
 package js.html;
 
 /**
-	TODO attribute href
-	TODO attribute origin
-	TODO attribute protocol
-	TODO attribute host
-	TODO attribute hostname
-	TODO attribute port
-	TODO attribute pathname
-	TODO attribute search
-	TODO attribute hash
-	TODO attribute ancestorOrigins
+	TODO attribute href: special=stringifier readonly=false
 **/
 extern class Location {
+	var origin(default, null) : String;
+	var protocol : String;
+	var host : String;
+	var hostname : String;
+	var port : String;
+	var pathname : String;
+	var search : String;
+	var hash : String;
+	var ancestorOrigins(default, null) : DOMStringList;
 	function assign(url:String):Void;
 	function reload():Void;
 	function replace(url:String):Void;

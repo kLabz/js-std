@@ -24,33 +24,31 @@
 
 package js.geometry;
 
-/**
-	TODO attribute a
-	TODO attribute b
-	TODO attribute c
-	TODO attribute d
-	TODO attribute e
-	TODO attribute f
-	TODO attribute m11
-	TODO attribute m12
-	TODO attribute m13
-	TODO attribute m14
-	TODO attribute m21
-	TODO attribute m22
-	TODO attribute m23
-	TODO attribute m24
-	TODO attribute m31
-	TODO attribute m32
-	TODO attribute m33
-	TODO attribute m34
-	TODO attribute m41
-	TODO attribute m42
-	TODO attribute m43
-	TODO attribute m44
-	TODO attribute is2D
-	TODO attribute isIdentity
-**/
 extern class DOMMatrixReadOnly {
+	var a(default, null) : Float;
+	var b(default, null) : Float;
+	var c(default, null) : Float;
+	var d(default, null) : Float;
+	var e(default, null) : Float;
+	var f(default, null) : Float;
+	var m11(default, null) : Float;
+	var m12(default, null) : Float;
+	var m13(default, null) : Float;
+	var m14(default, null) : Float;
+	var m21(default, null) : Float;
+	var m22(default, null) : Float;
+	var m23(default, null) : Float;
+	var m24(default, null) : Float;
+	var m31(default, null) : Float;
+	var m32(default, null) : Float;
+	var m33(default, null) : Float;
+	var m34(default, null) : Float;
+	var m41(default, null) : Float;
+	var m42(default, null) : Float;
+	var m43(default, null) : Float;
+	var m44(default, null) : Float;
+	var is2D(default, null) : Bool;
+	var isIdentity(default, null) : Bool;
 	function new(?init:haxe.extern.EitherType<String, Array<Float>>):Void;
 	/**
 		(special = stringifier)

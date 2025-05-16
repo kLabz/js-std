@@ -24,11 +24,9 @@
 
 package js.html;
 
-/**
-	TODO attribute color
-	TODO attribute face
-	TODO attribute size
-**/
 extern class HTMLFontElement extends HTMLElement {
+	var color : String;
+	var face : String;
+	var size : String;
 	function new():Void;
 }

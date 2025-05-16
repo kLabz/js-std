@@ -24,17 +24,15 @@
 
 package js.html;
 
-/**
-	TODO attribute disabled
-	TODO attribute form
-	TODO attribute name
-	TODO attribute type
-	TODO attribute elements
-	TODO attribute willValidate
-	TODO attribute validity
-	TODO attribute validationMessage
-**/
 extern class HTMLFieldSetElement extends HTMLElement {
+	var disabled : Bool;
+	var form(default, null) : HTMLFormElement;
+	var name : String;
+	var type(default, null) : String;
+	var elements(default, null) : js.dom.HTMLCollection;
+	var willValidate(default, null) : Bool;
+	var validity(default, null) : ValidityState;
+	var validationMessage(default, null) : String;
 	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;

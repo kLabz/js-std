@@ -24,9 +24,7 @@
 
 package js.webAnimations2;
 
-/**
-	TODO attribute length
-**/
 extern class AnimationNodeList {
+	var length(default, null) : Int;
 	function item(index:Int):js.webAnimations.AnimationEffect;
 }

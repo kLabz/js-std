@@ -24,14 +24,12 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute in1
-	TODO attribute operator
-	TODO attribute radiusX
-	TODO attribute radiusY
-**/
 extern class SVGFEMorphologyElement extends js.svg.SVGElement {
 	static inline var SVG_MORPHOLOGY_OPERATOR_UNKNOWN : Int = 0;
 	static inline var SVG_MORPHOLOGY_OPERATOR_ERODE : Int = 1;
 	static inline var SVG_MORPHOLOGY_OPERATOR_DILATE : Int = 2;
+	var in1(default, null) : js.svg.SVGAnimatedString;
+	var operator(default, null) : js.svg.SVGAnimatedEnumeration;
+	var radiusX(default, null) : js.svg.SVGAnimatedNumber;
+	var radiusY(default, null) : js.svg.SVGAnimatedNumber;
 }

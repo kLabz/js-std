@@ -24,10 +24,8 @@
 
 package js.cssTypedOm;
 
-/**
-	TODO attribute is2D
-**/
 extern class CSSTransformComponent {
+	var is2D : Bool;
 	/**
 		(special = stringifier)
 	**/

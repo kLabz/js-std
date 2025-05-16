@@ -24,12 +24,16 @@
 
 package js.webxr;
 
-/**
-	TODO attribute eye
-	TODO attribute recommendedViewportScale
-	TODO attribute camera
-	TODO attribute isFirstPersonObserver
-**/
 extern class XRView {
+	var eye(default, null) : XREye;
+	var recommendedViewportScale(default, null) : Float;
+	/**
+		From partial interface in raw-camera-access.idl
+	**/
+	var camera(default, null) : js.rawCameraAccess.XRCamera;
+	/**
+		From partial interface in webxr-ar-module.idl
+	**/
+	var isFirstPersonObserver(default, null) : Bool;
 	function requestViewportScale(scale:Float):Void;
 }

@@ -24,9 +24,6 @@
 
 package js.webBluetoothScanning;
 
-/**
-	TODO attribute scans
-**/
 extern class BluetoothLEScanPermissionResult extends js.permissions.PermissionStatus {
-
+	var scans : Array<BluetoothLEScan>;
 }

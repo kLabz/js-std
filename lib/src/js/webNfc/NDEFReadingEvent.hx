@@ -24,10 +24,8 @@
 
 package js.webNfc;
 
-/**
-	TODO attribute serialNumber
-	TODO attribute message
-**/
 extern class NDEFReadingEvent extends js.dom.Event {
+	var serialNumber(default, null) : String;
+	var message(default, null) : NDEFMessage;
 	function new(type:String, readingEventInitDict:NDEFReadingEventInit):Void;
 }

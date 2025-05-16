@@ -24,9 +24,7 @@
 
 package js.inkEnhancement;
 
-/**
-	TODO attribute presentationArea
-**/
 extern class DelegatedInkTrailPresenter {
+	var presentationArea(default, null) : js.dom.Element;
 	function updateInkTrailStartPoint(event:js.pointerevents.PointerEvent, style:InkTrailStyle):Void;
 }

@@ -24,11 +24,9 @@
 
 package js.webusb;
 
-/**
-	TODO attribute configurationValue
-	TODO attribute configurationName
-	TODO attribute interfaces
-**/
 extern class USBConfiguration {
+	var configurationValue(default, null) : Int;
+	var configurationName(default, null) : String;
+	var interfaces(default, null) : Array<USBInterface>;
 	function new(device:USBDevice, configurationValue:Int):Void;
 }

@@ -24,12 +24,10 @@
 
 package js.dom;
 
-/**
-	TODO attribute aborted
-	TODO attribute reason
-	TODO attribute onabort
-**/
 extern class AbortSignal extends EventTarget {
+	var aborted(default, null) : Bool;
+	var reason(default, null) : Any;
+	var onabort : EventHandler;
 	function abort(?reason:Any):AbortSignal;
 	function any(signals:Array<AbortSignal>):AbortSignal;
 	function throwIfAborted():Void;

@@ -24,12 +24,10 @@
 
 package js.storageBuckets;
 
-/**
-	TODO attribute name
-	TODO attribute indexedDB
-	TODO attribute caches
-**/
 extern class StorageBucket {
+	var name(default, null) : String;
+	var indexedDB(default, null) : js.indexeddb.IDBFactory;
+	var caches(default, null) : js.serviceWorkers.CacheStorage;
 	function estimate():js.lib.Promise<js.storage.StorageEstimate>;
 	function expires():js.lib.Promise<DOMHighResTimeStamp>;
 	function getDirectory():js.lib.Promise<js.fs.FileSystemDirectoryHandle>;

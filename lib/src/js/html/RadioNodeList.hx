@@ -24,9 +24,6 @@
 
 package js.html;
 
-/**
-	TODO attribute value
-**/
 extern class RadioNodeList extends js.dom.NodeList {
-
+	var value : String;
 }

@@ -24,10 +24,8 @@
 
 package js.webgpu;
 
-/**
-	TODO attribute canvas
-**/
 extern class GPUCanvasContext {
+	var canvas(default, null) : haxe.extern.EitherType<js.html.HTMLCanvasElement, js.html.OffscreenCanvas>;
 	function configure(configuration:GPUCanvasConfiguration):Void;
 	function getConfiguration():GPUCanvasConfiguration;
 	function getCurrentTexture():GPUTexture;

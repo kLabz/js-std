@@ -24,9 +24,7 @@
 
 package js.uievents;
 
-/**
-	TODO attribute data
-**/
 extern class TextEvent extends UIEvent {
+	var data(default, null) : String;
 	function initTextEvent(type:String, ?bubbles:Bool, ?cancelable:Bool, ?view:js.html.Window, ?data:String):Void;
 }

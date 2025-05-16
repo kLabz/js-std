@@ -24,14 +24,11 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute in1
-	TODO attribute surfaceScale
-	TODO attribute specularConstant
-	TODO attribute specularExponent
-	TODO attribute kernelUnitLengthX
-	TODO attribute kernelUnitLengthY
-**/
 extern class SVGFESpecularLightingElement extends js.svg.SVGElement {
-
+	var in1(default, null) : js.svg.SVGAnimatedString;
+	var surfaceScale(default, null) : js.svg.SVGAnimatedNumber;
+	var specularConstant(default, null) : js.svg.SVGAnimatedNumber;
+	var specularExponent(default, null) : js.svg.SVGAnimatedNumber;
+	var kernelUnitLengthX(default, null) : js.svg.SVGAnimatedNumber;
+	var kernelUnitLengthY(default, null) : js.svg.SVGAnimatedNumber;
 }

@@ -24,23 +24,21 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute in1
-	TODO attribute orderX
-	TODO attribute orderY
-	TODO attribute kernelMatrix
-	TODO attribute divisor
-	TODO attribute bias
-	TODO attribute targetX
-	TODO attribute targetY
-	TODO attribute edgeMode
-	TODO attribute kernelUnitLengthX
-	TODO attribute kernelUnitLengthY
-	TODO attribute preserveAlpha
-**/
 extern class SVGFEConvolveMatrixElement extends js.svg.SVGElement {
 	static inline var SVG_EDGEMODE_UNKNOWN : Int = 0;
 	static inline var SVG_EDGEMODE_DUPLICATE : Int = 1;
 	static inline var SVG_EDGEMODE_WRAP : Int = 2;
 	static inline var SVG_EDGEMODE_NONE : Int = 3;
+	var in1(default, null) : js.svg.SVGAnimatedString;
+	var orderX(default, null) : js.svg.SVGAnimatedInteger;
+	var orderY(default, null) : js.svg.SVGAnimatedInteger;
+	var kernelMatrix(default, null) : js.svg.SVGAnimatedNumberList;
+	var divisor(default, null) : js.svg.SVGAnimatedNumber;
+	var bias(default, null) : js.svg.SVGAnimatedNumber;
+	var targetX(default, null) : js.svg.SVGAnimatedInteger;
+	var targetY(default, null) : js.svg.SVGAnimatedInteger;
+	var edgeMode(default, null) : js.svg.SVGAnimatedEnumeration;
+	var kernelUnitLengthX(default, null) : js.svg.SVGAnimatedNumber;
+	var kernelUnitLengthY(default, null) : js.svg.SVGAnimatedNumber;
+	var preserveAlpha(default, null) : js.svg.SVGAnimatedBoolean;
 }

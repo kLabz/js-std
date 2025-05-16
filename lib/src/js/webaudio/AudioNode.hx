@@ -24,15 +24,13 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute context
-	TODO attribute numberOfInputs
-	TODO attribute numberOfOutputs
-	TODO attribute channelCount
-	TODO attribute channelCountMode
-	TODO attribute channelInterpretation
-**/
 extern class AudioNode extends js.dom.EventTarget {
+	var context(default, null) : BaseAudioContext;
+	var numberOfInputs(default, null) : Int;
+	var numberOfOutputs(default, null) : Int;
+	var channelCount : Int;
+	var channelCountMode : ChannelCountMode;
+	var channelInterpretation : ChannelInterpretation;
 	overload function connect(destinationNode:AudioNode, ?output:Int, ?input:Int):AudioNode;
 	overload function connect(destinationParam:AudioParam, ?output:Int):Void;
 	overload function disconnect():Void;

@@ -24,12 +24,10 @@
 
 package js.serviceWorkers;
 
-/**
-	TODO attribute scriptURL
-	TODO attribute state
-	TODO attribute onstatechange
-**/
 extern class ServiceWorker extends js.dom.EventTarget {
+	var scriptURL(default, null) : String;
+	var state(default, null) : ServiceWorkerState;
+	var onstatechange : EventHandler;
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
 	overload function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;
 }

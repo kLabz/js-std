@@ -24,10 +24,8 @@
 
 package js.paymentRequest;
 
-/**
-	TODO attribute methodName
-	TODO attribute methodDetails
-**/
 extern class PaymentMethodChangeEvent extends PaymentRequestUpdateEvent {
+	var methodName(default, null) : String;
+	var methodDetails(default, null) : { };
 	function new(type:String, ?eventInitDict:PaymentMethodChangeEventInit):Void;
 }

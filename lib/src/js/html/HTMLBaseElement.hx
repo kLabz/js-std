@@ -24,10 +24,8 @@
 
 package js.html;
 
-/**
-	TODO attribute href
-	TODO attribute target
-**/
 extern class HTMLBaseElement extends HTMLElement {
+	var href : String;
+	var target : String;
 	function new():Void;
 }

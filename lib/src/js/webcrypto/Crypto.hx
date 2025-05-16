@@ -24,10 +24,8 @@
 
 package js.webcrypto;
 
-/**
-	TODO attribute subtle
-**/
 extern class Crypto {
+	var subtle(default, null) : SubtleCrypto;
 	function getRandomValues(array:ArrayBufferView):ArrayBufferView;
 	function randomUUID():String;
 }

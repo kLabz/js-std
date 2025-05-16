@@ -24,9 +24,7 @@
 
 package js.html;
 
-/**
-	TODO attribute canvas
-**/
 extern class ImageBitmapRenderingContext {
+	var canvas(default, null) : haxe.extern.EitherType<HTMLCanvasElement, OffscreenCanvas>;
 	function transferFromImageBitmap(bitmap:ImageBitmap):Void;
 }

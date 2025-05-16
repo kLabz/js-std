@@ -24,14 +24,12 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute fftSize
-	TODO attribute frequencyBinCount
-	TODO attribute minDecibels
-	TODO attribute maxDecibels
-	TODO attribute smoothingTimeConstant
-**/
 extern class AnalyserNode extends AudioNode {
+	var fftSize : Int;
+	var frequencyBinCount(default, null) : Int;
+	var minDecibels : Float;
+	var maxDecibels : Float;
+	var smoothingTimeConstant : Float;
 	function new(context:BaseAudioContext, ?options:AnalyserOptions):Void;
 	function getByteFrequencyData(array:Uint8Array):Void;
 	function getByteTimeDomainData(array:Uint8Array):Void;

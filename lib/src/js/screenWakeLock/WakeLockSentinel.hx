@@ -24,11 +24,9 @@
 
 package js.screenWakeLock;
 
-/**
-	TODO attribute released
-	TODO attribute type
-	TODO attribute onrelease
-**/
 extern class WakeLockSentinel extends js.dom.EventTarget {
+	var released(default, null) : Bool;
+	var type(default, null) : WakeLockType;
+	var onrelease : EventHandler;
 	function release():js.lib.Promise<Void>;
 }

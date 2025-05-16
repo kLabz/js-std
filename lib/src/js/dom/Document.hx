@@ -25,68 +25,215 @@
 package js.dom;
 
 /**
-	TODO attribute implementation
-	TODO attribute URL
-	TODO attribute documentURI
-	TODO attribute compatMode
-	TODO attribute characterSet
-	TODO attribute charset
-	TODO attribute inputEncoding
-	TODO attribute contentType
-	TODO attribute doctype
-	TODO attribute documentElement
-	TODO attribute rootElement
-	TODO attribute namedFlows
-	TODO attribute scrollingElement
-	TODO attribute fullscreenEnabled
-	TODO attribute fullscreen
-	TODO attribute onfullscreenchange
-	TODO attribute onfullscreenerror
-	TODO attribute location
-	TODO attribute domain
-	TODO attribute referrer
-	TODO attribute cookie
-	TODO attribute lastModified
-	TODO attribute readyState
 	TODO ArrayAccess<> for tkey=String tvalue=TAnonymous([])
-	TODO attribute title
-	TODO attribute dir
-	TODO attribute body
-	TODO attribute head
-	TODO attribute images
-	TODO attribute embeds
-	TODO attribute plugins
-	TODO attribute links
-	TODO attribute forms
-	TODO attribute scripts
-	TODO attribute currentScript
-	TODO attribute defaultView
-	TODO attribute designMode
-	TODO attribute hidden
-	TODO attribute visibilityState
-	TODO attribute onreadystatechange
-	TODO attribute onvisibilitychange
-	TODO attribute fgColor
-	TODO attribute linkColor
-	TODO attribute vlinkColor
-	TODO attribute alinkColor
-	TODO attribute bgColor
-	TODO attribute anchors
-	TODO attribute applets
-	TODO attribute all
-	TODO attribute onfreeze
-	TODO attribute onresume
-	TODO attribute wasDiscarded
-	TODO attribute permissionsPolicy
-	TODO attribute pictureInPictureEnabled
-	TODO attribute prerendering
-	TODO attribute onprerenderingchange
-	TODO attribute onpointerlockchange
-	TODO attribute onpointerlockerror
-	TODO attribute fragmentDirective
-	TODO attribute timeline
 **/
 extern class Document extends Node {
+	var implementation(default, null) : DOMImplementation;
+	var URL(default, null) : String;
+	var documentURI(default, null) : String;
+	var compatMode(default, null) : String;
+	var characterSet(default, null) : String;
+	var charset(default, null) : String;
+	var inputEncoding(default, null) : String;
+	var contentType(default, null) : String;
+	var doctype(default, null) : DocumentType;
+	var documentElement(default, null) : Element;
+	/**
+		From partial interface in SVG.idl
+	**/
+	var rootElement(default, null) : js.svg.SVGSVGElement;
+	/**
+		From partial interface in css-regions.idl
+	**/
+	var namedFlows(default, null) : js.cssRegions.NamedFlowMap;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var scrollingElement(default, null) : Element;
+	/**
+		From partial interface in fullscreen.idl
+	**/
+	var fullscreenEnabled(default, null) : Bool;
+	/**
+		From partial interface in fullscreen.idl
+	**/
+	var fullscreen(default, null) : Bool;
+	/**
+		From partial interface in fullscreen.idl
+	**/
+	var onfullscreenchange : EventHandler;
+	/**
+		From partial interface in fullscreen.idl
+	**/
+	var onfullscreenerror : EventHandler;
+	/**
+		From partial interface in html.idl
+	**/
+	var location(default, null) : js.html.Location;
+	/**
+		From partial interface in html.idl
+	**/
+	var domain : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var referrer(default, null) : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var cookie : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var lastModified(default, null) : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var readyState(default, null) : js.html.DocumentReadyState;
+	/**
+		From partial interface in html.idl
+	**/
+	var title : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var dir : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var body : js.html.HTMLElement;
+	/**
+		From partial interface in html.idl
+	**/
+	var head(default, null) : js.html.HTMLHeadElement;
+	/**
+		From partial interface in html.idl
+	**/
+	var images(default, null) : HTMLCollection;
+	/**
+		From partial interface in html.idl
+	**/
+	var embeds(default, null) : HTMLCollection;
+	/**
+		From partial interface in html.idl
+	**/
+	var plugins(default, null) : HTMLCollection;
+	/**
+		From partial interface in html.idl
+	**/
+	var links(default, null) : HTMLCollection;
+	/**
+		From partial interface in html.idl
+	**/
+	var forms(default, null) : HTMLCollection;
+	/**
+		From partial interface in html.idl
+	**/
+	var scripts(default, null) : HTMLCollection;
+	/**
+		From partial interface in html.idl
+	**/
+	var currentScript(default, null) : HTMLOrSVGScriptElement;
+	/**
+		From partial interface in html.idl
+	**/
+	var defaultView(default, null) : WindowProxy;
+	/**
+		From partial interface in html.idl
+	**/
+	var designMode : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var hidden(default, null) : Bool;
+	/**
+		From partial interface in html.idl
+	**/
+	var visibilityState(default, null) : js.html.DocumentVisibilityState;
+	/**
+		From partial interface in html.idl
+	**/
+	var onreadystatechange : EventHandler;
+	/**
+		From partial interface in html.idl
+	**/
+	var onvisibilitychange : EventHandler;
+	/**
+		From partial interface in html.idl
+	**/
+	var fgColor : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var linkColor : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var vlinkColor : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var alinkColor : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var bgColor : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var anchors(default, null) : HTMLCollection;
+	/**
+		From partial interface in html.idl
+	**/
+	var applets(default, null) : HTMLCollection;
+	/**
+		From partial interface in html.idl
+	**/
+	var all(default, null) : js.html.HTMLAllCollection;
+	/**
+		From partial interface in page-lifecycle.idl
+	**/
+	var onfreeze : EventHandler;
+	/**
+		From partial interface in page-lifecycle.idl
+	**/
+	var onresume : EventHandler;
+	/**
+		From partial interface in page-lifecycle.idl
+	**/
+	var wasDiscarded(default, null) : Bool;
+	/**
+		From partial interface in permissions-policy.idl
+	**/
+	var permissionsPolicy(default, null) : js.permissionsPolicy.PermissionsPolicy;
+	/**
+		From partial interface in picture-in-picture.idl
+	**/
+	var pictureInPictureEnabled(default, null) : Bool;
+	/**
+		From partial interface in prerendering-revamped.idl
+	**/
+	var prerendering(default, null) : Bool;
+	/**
+		From partial interface in prerendering-revamped.idl
+	**/
+	var onprerenderingchange : EventHandler;
+	/**
+		From partial interface in pointerlock.idl
+	**/
+	var onpointerlockchange : EventHandler;
+	/**
+		From partial interface in pointerlock.idl
+	**/
+	var onpointerlockerror : EventHandler;
+	/**
+		From partial interface in scroll-to-text-fragment.idl
+	**/
+	var fragmentDirective(default, null) : js.scrollToTextFragment.FragmentDirective;
+	/**
+		From partial interface in web-animations.idl
+	**/
+	var timeline(default, null) : js.webAnimations.DocumentTimeline;
 	function new():Void;
 	function adoptNode(node:Node):Node;
 	/**

@@ -24,10 +24,8 @@
 
 package js.html;
 
-/**
-	TODO attribute cite
-	TODO attribute dateTime
-**/
 extern class HTMLModElement extends HTMLElement {
+	var cite : String;
+	var dateTime : String;
 	function new():Void;
 }

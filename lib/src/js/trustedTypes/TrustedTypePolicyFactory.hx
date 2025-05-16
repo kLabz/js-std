@@ -24,12 +24,10 @@
 
 package js.trustedTypes;
 
-/**
-	TODO attribute emptyHTML
-	TODO attribute emptyScript
-	TODO attribute defaultPolicy
-**/
 extern class TrustedTypePolicyFactory {
+	var emptyHTML(default, null) : TrustedHTML;
+	var emptyScript(default, null) : TrustedScript;
+	var defaultPolicy(default, null) : TrustedTypePolicy;
 	function createPolicy(policyName:String, ?policyOptions:TrustedTypePolicyOptions):TrustedTypePolicy;
 	function getAttributeType(tagName:String, attribute:String, ?elementNs:String, ?attrNs:String):String;
 	function getPropertyType(tagName:String, property:String, ?elementNs:String):String;

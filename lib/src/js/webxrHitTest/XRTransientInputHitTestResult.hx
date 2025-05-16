@@ -24,10 +24,7 @@
 
 package js.webxrHitTest;
 
-/**
-	TODO attribute inputSource
-	TODO attribute results
-**/
 extern class XRTransientInputHitTestResult {
-
+	var inputSource(default, null) : js.webxr.XRInputSource;
+	var results(default, null) : Array<XRHitTestResult>;
 }

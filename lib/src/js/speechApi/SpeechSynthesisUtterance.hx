@@ -24,21 +24,19 @@
 
 package js.speechApi;
 
-/**
-	TODO attribute text
-	TODO attribute lang
-	TODO attribute voice
-	TODO attribute volume
-	TODO attribute rate
-	TODO attribute pitch
-	TODO attribute onstart
-	TODO attribute onend
-	TODO attribute onerror
-	TODO attribute onpause
-	TODO attribute onresume
-	TODO attribute onmark
-	TODO attribute onboundary
-**/
 extern class SpeechSynthesisUtterance extends js.dom.EventTarget {
+	var text : String;
+	var lang : String;
+	var voice : SpeechSynthesisVoice;
+	var volume : Float;
+	var rate : Float;
+	var pitch : Float;
+	var onstart : EventHandler;
+	var onend : EventHandler;
+	var onerror : EventHandler;
+	var onpause : EventHandler;
+	var onresume : EventHandler;
+	var onmark : EventHandler;
+	var onboundary : EventHandler;
 	function new(?text:String):Void;
 }

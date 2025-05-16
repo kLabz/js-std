@@ -24,12 +24,10 @@
 
 package js.cssTypedOm;
 
-/**
-	TODO attribute l
-	TODO attribute a
-	TODO attribute b
-	TODO attribute alpha
-**/
 extern class CSSOKLab extends CSSColorValue {
+	var l : CSSColorPercent;
+	var a : CSSColorNumber;
+	var b : CSSColorNumber;
+	var alpha : CSSColorPercent;
 	function new(l:CSSColorPercent, a:CSSColorNumber, b:CSSColorNumber, ?alpha:CSSColorPercent):Void;
 }

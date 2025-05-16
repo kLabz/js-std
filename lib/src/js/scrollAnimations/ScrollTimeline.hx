@@ -24,10 +24,8 @@
 
 package js.scrollAnimations;
 
-/**
-	TODO attribute source
-	TODO attribute axis
-**/
 extern class ScrollTimeline extends js.webAnimations.AnimationTimeline {
+	var source(default, null) : js.dom.Element;
+	var axis(default, null) : ScrollAxis;
 	function new(?options:ScrollTimelineOptions):Void;
 }

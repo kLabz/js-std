@@ -24,14 +24,12 @@
 
 package js.webAnimations2;
 
-/**
-	TODO attribute timeline
-	TODO attribute type
-	TODO attribute rangeStart
-	TODO attribute rangeEnd
-	TODO attribute exitRangeStart
-	TODO attribute exitRangeEnd
-**/
 extern class AnimationTrigger {
+	var timeline : js.webAnimations.AnimationTimeline;
+	var type : AnimationTriggerType;
+	var rangeStart : Any;
+	var rangeEnd : Any;
+	var exitRangeStart : Any;
+	var exitRangeEnd : Any;
 	function new(?options:AnimationTriggerOptions):Void;
 }

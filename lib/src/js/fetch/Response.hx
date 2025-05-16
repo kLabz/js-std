@@ -24,16 +24,14 @@
 
 package js.fetch;
 
-/**
-	TODO attribute type
-	TODO attribute url
-	TODO attribute redirected
-	TODO attribute status
-	TODO attribute ok
-	TODO attribute statusText
-	TODO attribute headers
-**/
 extern class Response {
+	var type(default, null) : ResponseType;
+	var url(default, null) : String;
+	var redirected(default, null) : Bool;
+	var status(default, null) : Int;
+	var ok(default, null) : Bool;
+	var statusText(default, null) : String;
+	var headers(default, null) : Headers;
 	function new(?body:BodyInit, ?init:ResponseInit):Void;
 	function clone():Response;
 	function error():Response;

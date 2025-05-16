@@ -24,11 +24,8 @@
 
 package js.webgl1;
 
-/**
-	TODO attribute rangeMin
-	TODO attribute rangeMax
-	TODO attribute precision
-**/
 extern class WebGLShaderPrecisionFormat {
-
+	var rangeMin(default, null) : GLint;
+	var rangeMax(default, null) : GLint;
+	var precision(default, null) : GLint;
 }

@@ -24,10 +24,8 @@
 
 package js.webxr;
 
-/**
-	TODO attribute ondevicechange
-**/
 extern class XRSystem extends js.dom.EventTarget {
+	var ondevicechange : EventHandler;
 	function isSessionSupported(mode:XRSessionMode):js.lib.Promise<Bool>;
 	function requestSession(mode:XRSessionMode, ?options:XRSessionInit):js.lib.Promise<XRSession>;
 }

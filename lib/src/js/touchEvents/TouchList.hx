@@ -24,9 +24,7 @@
 
 package js.touchEvents;
 
-/**
-	TODO attribute length
-**/
 extern class TouchList {
+	var length(default, null) : Int;
 	function item(index:Int):Touch;
 }

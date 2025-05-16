@@ -24,13 +24,17 @@
 
 package js.uievents;
 
-/**
-	TODO attribute view
-	TODO attribute detail
-	TODO attribute sourceCapabilities
-	TODO attribute which
-**/
 extern class UIEvent extends js.dom.Event {
+	var view(default, null) : js.html.Window;
+	var detail(default, null) : Int;
+	/**
+		From partial interface in input-device-capabilities.idl
+	**/
+	var sourceCapabilities(default, null) : js.inputDeviceCapabilities.InputDeviceCapabilities;
+	/**
+		From partial interface in uievents.idl
+	**/
+	var which(default, null) : Int;
 	function new(type:String, ?eventInitDict:UIEventInit):Void;
 	/**
 		From partial interface in uievents.idl

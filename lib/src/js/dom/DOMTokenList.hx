@@ -25,10 +25,10 @@
 package js.dom;
 
 /**
-	TODO attribute length
-	TODO attribute value
+	TODO attribute value: special=stringifier readonly=false
 **/
 extern class DOMTokenList {
+	var length(default, null) : Int;
 	function add(tokens:String):Void;
 	function contains(token:String):Bool;
 	function item(index:Int):String;

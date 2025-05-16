@@ -24,9 +24,7 @@
 
 package js.html;
 
-/**
-	TODO attribute persisted
-**/
 extern class PageTransitionEvent extends js.dom.Event {
+	var persisted(default, null) : Bool;
 	function new(type:String, ?eventInitDict:PageTransitionEventInit):Void;
 }

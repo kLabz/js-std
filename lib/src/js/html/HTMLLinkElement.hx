@@ -24,27 +24,34 @@
 
 package js.html;
 
-/**
-	TODO attribute href
-	TODO attribute crossOrigin
-	TODO attribute rel
-	TODO attribute as
-	TODO attribute relList
-	TODO attribute media
-	TODO attribute integrity
-	TODO attribute hreflang
-	TODO attribute type
-	TODO attribute sizes
-	TODO attribute imageSrcset
-	TODO attribute imageSizes
-	TODO attribute referrerPolicy
-	TODO attribute blocking
-	TODO attribute disabled
-	TODO attribute fetchPriority
-	TODO attribute charset
-	TODO attribute rev
-	TODO attribute target
-**/
 extern class HTMLLinkElement extends HTMLElement {
+	var href : String;
+	var crossOrigin : String;
+	var rel : String;
+	var as : String;
+	var relList(default, null) : js.dom.DOMTokenList;
+	var media : String;
+	var integrity : String;
+	var hreflang : String;
+	var type : String;
+	var sizes(default, null) : js.dom.DOMTokenList;
+	var imageSrcset : String;
+	var imageSizes : String;
+	var referrerPolicy : String;
+	var blocking(default, null) : js.dom.DOMTokenList;
+	var disabled : Bool;
+	var fetchPriority : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var charset : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var rev : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var target : String;
 	function new():Void;
 }

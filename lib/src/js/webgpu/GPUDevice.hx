@@ -24,15 +24,19 @@
 
 package js.webgpu;
 
-/**
-	TODO attribute features
-	TODO attribute limits
-	TODO attribute adapterInfo
-	TODO attribute queue
-	TODO attribute lost
-	TODO attribute onuncapturederror
-**/
 extern class GPUDevice extends js.dom.EventTarget {
+	var features(default, null) : GPUSupportedFeatures;
+	var limits(default, null) : GPUSupportedLimits;
+	var adapterInfo(default, null) : GPUAdapterInfo;
+	var queue(default, null) : GPUQueue;
+	/**
+		From partial interface in webgpu.idl
+	**/
+	var lost(default, null) : js.lib.Promise<GPUDeviceLostInfo>;
+	/**
+		From partial interface in webgpu.idl
+	**/
+	var onuncapturederror : EventHandler;
 	function createBindGroup(descriptor:GPUBindGroupDescriptor):GPUBindGroup;
 	function createBindGroupLayout(descriptor:GPUBindGroupLayoutDescriptor):GPUBindGroupLayout;
 	function createBuffer(descriptor:GPUBufferDescriptor):GPUBuffer;

@@ -24,20 +24,26 @@
 
 package js.gamepad;
 
-/**
-	TODO attribute id
-	TODO attribute index
-	TODO attribute connected
-	TODO attribute timestamp
-	TODO attribute mapping
-	TODO attribute axes
-	TODO attribute buttons
-	TODO attribute touches
-	TODO attribute vibrationActuator
-	TODO attribute hand
-	TODO attribute hapticActuators
-	TODO attribute pose
-**/
 extern class Gamepad {
-
+	var id(default, null) : String;
+	var index(default, null) : Int;
+	var connected(default, null) : Bool;
+	var timestamp(default, null) : DOMHighResTimeStamp;
+	var mapping(default, null) : GamepadMappingType;
+	var axes(default, null) : Array<Float>;
+	var buttons(default, null) : Array<GamepadButton>;
+	var touches(default, null) : Array<GamepadTouch>;
+	var vibrationActuator(default, null) : GamepadHapticActuator;
+	/**
+		From partial interface in gamepad-extensions.idl
+	**/
+	var hand(default, null) : js.gamepadExtensions.GamepadHand;
+	/**
+		From partial interface in gamepad-extensions.idl
+	**/
+	var hapticActuators(default, null) : Array<GamepadHapticActuator>;
+	/**
+		From partial interface in gamepad-extensions.idl
+	**/
+	var pose(default, null) : js.gamepadExtensions.GamepadPose;
 }

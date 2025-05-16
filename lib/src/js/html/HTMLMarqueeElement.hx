@@ -24,20 +24,18 @@
 
 package js.html;
 
-/**
-	TODO attribute behavior
-	TODO attribute bgColor
-	TODO attribute direction
-	TODO attribute height
-	TODO attribute hspace
-	TODO attribute loop
-	TODO attribute scrollAmount
-	TODO attribute scrollDelay
-	TODO attribute trueSpeed
-	TODO attribute vspace
-	TODO attribute width
-**/
 extern class HTMLMarqueeElement extends HTMLElement {
+	var behavior : String;
+	var bgColor : String;
+	var direction : String;
+	var height : String;
+	var hspace : Int;
+	var loop : Int;
+	var scrollAmount : Int;
+	var scrollDelay : Int;
+	var trueSpeed : Bool;
+	var vspace : Int;
+	var width : String;
 	function new():Void;
 	function start():Void;
 	function stop():Void;

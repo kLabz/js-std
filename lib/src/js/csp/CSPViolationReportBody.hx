@@ -24,19 +24,17 @@
 
 package js.csp;
 
-/**
-	TODO attribute documentURL
-	TODO attribute referrer
-	TODO attribute blockedURL
-	TODO attribute effectiveDirective
-	TODO attribute originalPolicy
-	TODO attribute sourceFile
-	TODO attribute sample
-	TODO attribute disposition
-	TODO attribute statusCode
-	TODO attribute lineNumber
-	TODO attribute columnNumber
-**/
 extern class CSPViolationReportBody extends js.reporting.ReportBody {
+	var documentURL(default, null) : String;
+	var referrer(default, null) : String;
+	var blockedURL(default, null) : String;
+	var effectiveDirective(default, null) : String;
+	var originalPolicy(default, null) : String;
+	var sourceFile(default, null) : String;
+	var sample(default, null) : String;
+	var disposition(default, null) : SecurityPolicyViolationEventDisposition;
+	var statusCode(default, null) : Int;
+	var lineNumber(default, null) : Int;
+	var columnNumber(default, null) : Int;
 	function toJSON():{ };
 }

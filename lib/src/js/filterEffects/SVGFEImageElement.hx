@@ -24,10 +24,7 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute preserveAspectRatio
-	TODO attribute crossOrigin
-**/
 extern class SVGFEImageElement extends js.svg.SVGElement {
-
+	var preserveAspectRatio(default, null) : js.svg.SVGAnimatedPreserveAspectRatio;
+	var crossOrigin(default, null) : js.svg.SVGAnimatedString;
 }

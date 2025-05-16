@@ -24,10 +24,7 @@
 
 package js.indexeddb;
 
-/**
-	TODO attribute onblocked
-	TODO attribute onupgradeneeded
-**/
 extern class IDBOpenDBRequest extends IDBRequest {
-
+	var onblocked : EventHandler;
+	var onupgradeneeded : EventHandler;
 }

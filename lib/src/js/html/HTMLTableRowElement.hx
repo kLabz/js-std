@@ -24,17 +24,30 @@
 
 package js.html;
 
-/**
-	TODO attribute rowIndex
-	TODO attribute sectionRowIndex
-	TODO attribute cells
-	TODO attribute align
-	TODO attribute ch
-	TODO attribute chOff
-	TODO attribute vAlign
-	TODO attribute bgColor
-**/
 extern class HTMLTableRowElement extends HTMLElement {
+	var rowIndex(default, null) : Int;
+	var sectionRowIndex(default, null) : Int;
+	var cells(default, null) : js.dom.HTMLCollection;
+	/**
+		From partial interface in html.idl
+	**/
+	var align : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var ch : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var chOff : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var vAlign : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var bgColor : String;
 	function new():Void;
 	function deleteCell(index:Int):Void;
 	function insertCell(?index:Int):HTMLTableCellElement;

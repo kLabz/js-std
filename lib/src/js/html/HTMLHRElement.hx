@@ -24,13 +24,26 @@
 
 package js.html;
 
-/**
-	TODO attribute align
-	TODO attribute color
-	TODO attribute noShade
-	TODO attribute size
-	TODO attribute width
-**/
 extern class HTMLHRElement extends HTMLElement {
+	/**
+		From partial interface in html.idl
+	**/
+	var align : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var color : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var noShade : Bool;
+	/**
+		From partial interface in html.idl
+	**/
+	var size : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var width : String;
 	function new():Void;
 }

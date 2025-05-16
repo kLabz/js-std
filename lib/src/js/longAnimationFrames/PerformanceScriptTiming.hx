@@ -24,22 +24,20 @@
 
 package js.longAnimationFrames;
 
-/**
-	TODO attribute startTime
-	TODO attribute duration
-	TODO attribute name
-	TODO attribute entryType
-	TODO attribute invokerType
-	TODO attribute invoker
-	TODO attribute executionStart
-	TODO attribute sourceURL
-	TODO attribute sourceFunctionName
-	TODO attribute sourceCharPosition
-	TODO attribute pauseDuration
-	TODO attribute forcedStyleAndLayoutDuration
-	TODO attribute window
-	TODO attribute windowAttribution
-**/
 extern class PerformanceScriptTiming extends js.performanceTimeline.PerformanceEntry {
+	var startTime(default, null) : DOMHighResTimeStamp;
+	var duration(default, null) : DOMHighResTimeStamp;
+	var name(default, null) : String;
+	var entryType(default, null) : String;
+	var invokerType(default, null) : ScriptInvokerType;
+	var invoker(default, null) : String;
+	var executionStart(default, null) : DOMHighResTimeStamp;
+	var sourceURL(default, null) : String;
+	var sourceFunctionName(default, null) : String;
+	var sourceCharPosition(default, null) : Float;
+	var pauseDuration(default, null) : DOMHighResTimeStamp;
+	var forcedStyleAndLayoutDuration(default, null) : DOMHighResTimeStamp;
+	var window(default, null) : js.html.Window;
+	var windowAttribution(default, null) : ScriptWindowAttribution;
 	function toJSON():{ };
 }

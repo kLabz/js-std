@@ -24,12 +24,10 @@
 
 package js.webAnimations2;
 
-/**
-	TODO attribute children
-	TODO attribute firstChild
-	TODO attribute lastChild
-**/
 extern class GroupEffect {
+	var children(default, null) : AnimationNodeList;
+	var firstChild(default, null) : js.webAnimations.AnimationEffect;
+	var lastChild(default, null) : js.webAnimations.AnimationEffect;
 	function new(children:Array<js.webAnimations.AnimationEffect>, ?timing:haxe.extern.EitherType<Float, js.webAnimations.EffectTiming>):Void;
 	function append(effects:js.webAnimations.AnimationEffect):Void;
 	function clone():GroupEffect;

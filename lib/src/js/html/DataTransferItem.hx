@@ -24,11 +24,9 @@
 
 package js.html;
 
-/**
-	TODO attribute kind
-	TODO attribute type
-**/
 extern class DataTransferItem {
+	var kind(default, null) : String;
+	var type(default, null) : String;
 	function getAsFile():js.fileapi.File;
 	/**
 		From partial interface in file-system-access.idl

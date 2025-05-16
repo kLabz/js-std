@@ -24,14 +24,27 @@
 
 package js.html;
 
-/**
-	TODO attribute span
-	TODO attribute align
-	TODO attribute ch
-	TODO attribute chOff
-	TODO attribute vAlign
-	TODO attribute width
-**/
 extern class HTMLTableColElement extends HTMLElement {
+	var span : Int;
+	/**
+		From partial interface in html.idl
+	**/
+	var align : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var ch : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var chOff : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var vAlign : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var width : String;
 	function new():Void;
 }

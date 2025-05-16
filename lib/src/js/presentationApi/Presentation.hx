@@ -24,10 +24,13 @@
 
 package js.presentationApi;
 
-/**
-	TODO attribute defaultRequest
-	TODO attribute receiver
-**/
 extern class Presentation {
-
+	/**
+		From partial interface in presentation-api.idl
+	**/
+	var defaultRequest : PresentationRequest;
+	/**
+		From partial interface in presentation-api.idl
+	**/
+	var receiver(default, null) : PresentationReceiver;
 }

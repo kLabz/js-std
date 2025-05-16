@@ -24,14 +24,15 @@
 
 package js.serviceWorkers;
 
-/**
-	TODO attribute url
-	TODO attribute frameType
-	TODO attribute id
-	TODO attribute type
-	TODO attribute lifecycleState
-**/
 extern class Client {
+	var url(default, null) : String;
+	var frameType(default, null) : FrameType;
+	var id(default, null) : String;
+	var type(default, null) : ClientType;
+	/**
+		From partial interface in page-lifecycle.idl
+	**/
+	var lifecycleState(default, null) : js.pageLifecycle.ClientLifecycleState;
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
 	overload function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;
 }

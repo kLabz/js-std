@@ -24,12 +24,9 @@
 
 package js.mediaPlaybackQuality;
 
-/**
-	TODO attribute creationTime
-	TODO attribute droppedVideoFrames
-	TODO attribute totalVideoFrames
-	TODO attribute corruptedVideoFrames
-**/
 extern class VideoPlaybackQuality {
-
+	var creationTime(default, null) : DOMHighResTimeStamp;
+	var droppedVideoFrames(default, null) : Int;
+	var totalVideoFrames(default, null) : Int;
+	var corruptedVideoFrames(default, null) : Int;
 }

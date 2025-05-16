@@ -24,14 +24,21 @@
 
 package js.webxr;
 
-/**
-	TODO attribute session
-	TODO attribute predictedDisplayTime
-	TODO attribute trackedAnchors
-	TODO attribute detectedMeshes
-	TODO attribute detectedPlanes
-**/
 extern class XRFrame {
+	var session(default, null) : XRSession;
+	var predictedDisplayTime(default, null) : DOMHighResTimeStamp;
+	/**
+		From partial interface in anchors.idl
+	**/
+	var trackedAnchors(default, null) : js.anchors.XRAnchorSet;
+	/**
+		From partial interface in real-world-meshing.idl
+	**/
+	var detectedMeshes(default, null) : js.realWorldMeshing.XRMeshSet;
+	/**
+		From partial interface in webxr-plane-detection.idl
+	**/
+	var detectedPlanes(default, null) : js.webxrPlaneDetection.XRPlaneSet;
 	/**
 		From partial interface in anchors.idl
 	**/

@@ -24,10 +24,8 @@
 
 package js.html;
 
-/**
-	TODO attribute port1
-	TODO attribute port2
-**/
 extern class MessageChannel {
+	var port1(default, null) : MessagePort;
+	var port2(default, null) : MessagePort;
 	function new():Void;
 }

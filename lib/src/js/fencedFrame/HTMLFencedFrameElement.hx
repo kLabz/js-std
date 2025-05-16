@@ -24,13 +24,11 @@
 
 package js.fencedFrame;
 
-/**
-	TODO attribute config
-	TODO attribute width
-	TODO attribute height
-	TODO attribute sandbox
-	TODO attribute allow
-**/
 extern class HTMLFencedFrameElement extends js.html.HTMLElement {
+	var config : FencedFrameConfig;
+	var width : String;
+	var height : String;
+	var sandbox(default, null) : js.dom.DOMTokenList;
+	var allow : String;
 	function new():Void;
 }

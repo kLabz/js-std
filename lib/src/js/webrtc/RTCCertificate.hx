@@ -24,9 +24,7 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute expires
-**/
 extern class RTCCertificate {
+	var expires(default, null) : EpochTimeStamp;
 	function getFingerprints():Array<RTCDtlsFingerprint>;
 }

@@ -24,9 +24,7 @@
 
 package js.mediacaptureFromelement;
 
-/**
-	TODO attribute canvas
-**/
 extern class CanvasCaptureMediaStreamTrack extends js.mediacaptureStreams.MediaStreamTrack {
+	var canvas(default, null) : js.html.HTMLCanvasElement;
 	function requestFrame():Void;
 }

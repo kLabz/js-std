@@ -24,13 +24,11 @@
 
 package js.interventionReporting;
 
-/**
-	TODO attribute id
-	TODO attribute message
-	TODO attribute sourceFile
-	TODO attribute lineNumber
-	TODO attribute columnNumber
-**/
 extern class InterventionReportBody extends js.reporting.ReportBody {
+	var id(default, null) : String;
+	var message(default, null) : String;
+	var sourceFile(default, null) : String;
+	var lineNumber(default, null) : Int;
+	var columnNumber(default, null) : Int;
 	function toJSON():{ };
 }

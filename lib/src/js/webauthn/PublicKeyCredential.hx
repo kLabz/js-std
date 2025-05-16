@@ -24,12 +24,10 @@
 
 package js.webauthn;
 
-/**
-	TODO attribute rawId
-	TODO attribute response
-	TODO attribute authenticatorAttachment
-**/
 extern class PublicKeyCredential extends js.credentialManagement.Credential {
+	var rawId(default, null) : ArrayBuffer;
+	var response(default, null) : AuthenticatorResponse;
+	var authenticatorAttachment(default, null) : String;
 	/**
 		From partial interface in webauthn.idl
 	**/

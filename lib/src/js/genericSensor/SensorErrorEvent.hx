@@ -24,9 +24,7 @@
 
 package js.genericSensor;
 
-/**
-	TODO attribute error
-**/
 extern class SensorErrorEvent extends js.dom.Event {
+	var error(default, null) : js.webidl.DOMException;
 	function new(type:String, errorEventInitDict:SensorErrorEventInit):Void;
 }

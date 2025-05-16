@@ -24,9 +24,7 @@
 
 package js.cssFontLoading;
 
-/**
-	TODO attribute fontfaces
-**/
 extern class FontFaceSetLoadEvent extends js.dom.Event {
+	var fontfaces(default, null) : Array<FontFace>;
 	function new(type:CSSOMString, ?eventInitDict:FontFaceSetLoadEventInit):Void;
 }

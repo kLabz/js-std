@@ -24,10 +24,7 @@
 
 package js.presentationApi;
 
-/**
-	TODO attribute value
-	TODO attribute onchange
-**/
 extern class PresentationAvailability extends js.dom.EventTarget {
-
+	var value(default, null) : Bool;
+	var onchange : EventHandler;
 }

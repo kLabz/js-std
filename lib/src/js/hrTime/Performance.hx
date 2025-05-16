@@ -24,15 +24,28 @@
 
 package js.hrTime;
 
-/**
-	TODO attribute timeOrigin
-	TODO attribute eventCounts
-	TODO attribute interactionCount
-	TODO attribute timing
-	TODO attribute navigation
-	TODO attribute onresourcetimingbufferfull
-**/
 extern class Performance extends js.dom.EventTarget {
+	var timeOrigin(default, null) : DOMHighResTimeStamp;
+	/**
+		From partial interface in event-timing.idl
+	**/
+	var eventCounts(default, null) : js.eventTiming.EventCounts;
+	/**
+		From partial interface in event-timing.idl
+	**/
+	var interactionCount(default, null) : Float;
+	/**
+		From partial interface in navigation-timing.idl
+	**/
+	var timing(default, null) : js.navigationTiming.PerformanceTiming;
+	/**
+		From partial interface in navigation-timing.idl
+	**/
+	var navigation(default, null) : js.navigationTiming.PerformanceNavigation;
+	/**
+		From partial interface in resource-timing.idl
+	**/
+	var onresourcetimingbufferfull : EventHandler;
 	/**
 		From partial interface in user-timing.idl
 	**/

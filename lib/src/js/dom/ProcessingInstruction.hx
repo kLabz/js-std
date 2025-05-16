@@ -24,9 +24,6 @@
 
 package js.dom;
 
-/**
-	TODO attribute target
-**/
 extern class ProcessingInstruction extends CharacterData {
-
+	var target(default, null) : String;
 }

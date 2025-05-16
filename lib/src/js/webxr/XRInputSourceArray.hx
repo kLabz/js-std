@@ -24,10 +24,8 @@
 
 package js.webxr;
 
-/**
-	TODO attribute length
-**/
 extern class XRInputSourceArray implements ArrayAccess<XRInputSource> {
+	var length(default, null) : Int;
 	function values():Iterator<XRInputSource>;
 	function values():Iterator<XRInputSource>;
 }

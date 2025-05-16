@@ -24,16 +24,13 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute x
-	TODO attribute y
-	TODO attribute z
-	TODO attribute pointsAtX
-	TODO attribute pointsAtY
-	TODO attribute pointsAtZ
-	TODO attribute specularExponent
-	TODO attribute limitingConeAngle
-**/
 extern class SVGFESpotLightElement extends js.svg.SVGElement {
-
+	var x(default, null) : js.svg.SVGAnimatedNumber;
+	var y(default, null) : js.svg.SVGAnimatedNumber;
+	var z(default, null) : js.svg.SVGAnimatedNumber;
+	var pointsAtX(default, null) : js.svg.SVGAnimatedNumber;
+	var pointsAtY(default, null) : js.svg.SVGAnimatedNumber;
+	var pointsAtZ(default, null) : js.svg.SVGAnimatedNumber;
+	var specularExponent(default, null) : js.svg.SVGAnimatedNumber;
+	var limitingConeAngle(default, null) : js.svg.SVGAnimatedNumber;
 }

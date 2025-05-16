@@ -24,11 +24,8 @@
 
 package js.svg;
 
-/**
-	TODO attribute className
-	TODO attribute ownerSVGElement
-	TODO attribute viewportElement
-**/
 extern class SVGElement extends js.dom.Element {
-
+	var className(default, null) : SVGAnimatedString;
+	var ownerSVGElement(default, null) : SVGSVGElement;
+	var viewportElement(default, null) : SVGElement;
 }

@@ -24,31 +24,74 @@
 
 package js.serviceWorkers;
 
-/**
-	TODO attribute clients
-	TODO attribute registration
-	TODO attribute serviceWorker
-	TODO attribute oninstall
-	TODO attribute onactivate
-	TODO attribute onfetch
-	TODO attribute onmessage
-	TODO attribute onmessageerror
-	TODO attribute onbackgroundfetchsuccess
-	TODO attribute onbackgroundfetchfail
-	TODO attribute onbackgroundfetchabort
-	TODO attribute onbackgroundfetchclick
-	TODO attribute onsync
-	TODO attribute oncontentdelete
-	TODO attribute cookieStore
-	TODO attribute oncookiechange
-	TODO attribute onnotificationclick
-	TODO attribute onnotificationclose
-	TODO attribute oncanmakepayment
-	TODO attribute onpaymentrequest
-	TODO attribute onperiodicsync
-	TODO attribute onpush
-	TODO attribute onpushsubscriptionchange
-**/
 extern class ServiceWorkerGlobalScope extends js.html.WorkerGlobalScope {
+	var clients(default, null) : Clients;
+	var registration(default, null) : ServiceWorkerRegistration;
+	var serviceWorker(default, null) : ServiceWorker;
+	var oninstall : EventHandler;
+	var onactivate : EventHandler;
+	var onfetch : EventHandler;
+	var onmessage : EventHandler;
+	var onmessageerror : EventHandler;
+	/**
+		From partial interface in background-sync.idl
+	**/
+	var onsync : EventHandler;
+	/**
+		From partial interface in background-fetch.idl
+	**/
+	var onbackgroundfetchsuccess : EventHandler;
+	/**
+		From partial interface in background-fetch.idl
+	**/
+	var onbackgroundfetchfail : EventHandler;
+	/**
+		From partial interface in background-fetch.idl
+	**/
+	var onbackgroundfetchabort : EventHandler;
+	/**
+		From partial interface in background-fetch.idl
+	**/
+	var onbackgroundfetchclick : EventHandler;
+	/**
+		From partial interface in content-index.idl
+	**/
+	var oncontentdelete : EventHandler;
+	/**
+		From partial interface in cookie-store.idl
+	**/
+	var cookieStore(default, null) : js.cookieStore.CookieStore;
+	/**
+		From partial interface in cookie-store.idl
+	**/
+	var oncookiechange : EventHandler;
+	/**
+		From partial interface in notifications.idl
+	**/
+	var onnotificationclick : EventHandler;
+	/**
+		From partial interface in notifications.idl
+	**/
+	var onnotificationclose : EventHandler;
+	/**
+		From partial interface in payment-handler.idl
+	**/
+	var oncanmakepayment : EventHandler;
+	/**
+		From partial interface in payment-handler.idl
+	**/
+	var onpaymentrequest : EventHandler;
+	/**
+		From partial interface in periodic-background-sync.idl
+	**/
+	var onperiodicsync : EventHandler;
+	/**
+		From partial interface in push-api.idl
+	**/
+	var onpush : EventHandler;
+	/**
+		From partial interface in push-api.idl
+	**/
+	var onpushsubscriptionchange : EventHandler;
 	function skipWaiting():js.lib.Promise<Void>;
 }

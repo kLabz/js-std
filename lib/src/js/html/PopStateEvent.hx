@@ -24,10 +24,8 @@
 
 package js.html;
 
-/**
-	TODO attribute state
-	TODO attribute hasUAVisualTransition
-**/
 extern class PopStateEvent extends js.dom.Event {
+	var state(default, null) : Any;
+	var hasUAVisualTransition(default, null) : Bool;
 	function new(type:String, ?eventInitDict:PopStateEventInit):Void;
 }

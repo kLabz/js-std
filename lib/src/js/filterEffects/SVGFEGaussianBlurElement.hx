@@ -24,16 +24,14 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute in1
-	TODO attribute stdDeviationX
-	TODO attribute stdDeviationY
-	TODO attribute edgeMode
-**/
 extern class SVGFEGaussianBlurElement extends js.svg.SVGElement {
 	static inline var SVG_EDGEMODE_UNKNOWN : Int = 0;
 	static inline var SVG_EDGEMODE_DUPLICATE : Int = 1;
 	static inline var SVG_EDGEMODE_WRAP : Int = 2;
 	static inline var SVG_EDGEMODE_NONE : Int = 3;
+	var in1(default, null) : js.svg.SVGAnimatedString;
+	var stdDeviationX(default, null) : js.svg.SVGAnimatedNumber;
+	var stdDeviationY(default, null) : js.svg.SVGAnimatedNumber;
+	var edgeMode(default, null) : js.svg.SVGAnimatedEnumeration;
 	function setStdDeviation(stdDeviationX:Float, stdDeviationY:Float):Void;
 }

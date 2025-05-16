@@ -24,10 +24,7 @@
 
 package js.svg;
 
-/**
-	TODO attribute baseVal
-	TODO attribute animVal
-**/
 extern class SVGAnimatedLengthList {
-
+	var baseVal(default, null) : SVGLengthList;
+	var animVal(default, null) : SVGLengthList;
 }

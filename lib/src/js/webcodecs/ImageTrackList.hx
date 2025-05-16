@@ -24,12 +24,9 @@
 
 package js.webcodecs;
 
-/**
-	TODO attribute ready
-	TODO attribute length
-	TODO attribute selectedIndex
-	TODO attribute selectedTrack
-**/
 extern class ImageTrackList implements ArrayAccess<ImageTrack> {
-
+	var ready(default, null) : js.lib.Promise<Void>;
+	var length(default, null) : Int;
+	var selectedIndex(default, null) : Int;
+	var selectedTrack(default, null) : ImageTrack;
 }

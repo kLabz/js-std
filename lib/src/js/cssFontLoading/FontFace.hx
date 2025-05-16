@@ -24,25 +24,32 @@
 
 package js.cssFontLoading;
 
-/**
-	TODO attribute family
-	TODO attribute style
-	TODO attribute weight
-	TODO attribute stretch
-	TODO attribute unicodeRange
-	TODO attribute featureSettings
-	TODO attribute variationSettings
-	TODO attribute display
-	TODO attribute ascentOverride
-	TODO attribute descentOverride
-	TODO attribute lineGapOverride
-	TODO attribute status
-	TODO attribute loaded
-	TODO attribute features
-	TODO attribute variations
-	TODO attribute palettes
-**/
 extern class FontFace {
+	var family : CSSOMString;
+	var style : CSSOMString;
+	var weight : CSSOMString;
+	var stretch : CSSOMString;
+	var unicodeRange : CSSOMString;
+	var featureSettings : CSSOMString;
+	var variationSettings : CSSOMString;
+	var display : CSSOMString;
+	var ascentOverride : CSSOMString;
+	var descentOverride : CSSOMString;
+	var lineGapOverride : CSSOMString;
+	var status(default, null) : FontFaceLoadStatus;
+	var loaded(default, null) : js.lib.Promise<FontFace>;
+	/**
+		From partial interface in css-font-loading.idl
+	**/
+	var features(default, null) : FontFaceFeatures;
+	/**
+		From partial interface in css-font-loading.idl
+	**/
+	var variations(default, null) : FontFaceVariations;
+	/**
+		From partial interface in css-font-loading.idl
+	**/
+	var palettes(default, null) : FontFacePalettes;
 	function new(family:CSSOMString, source:haxe.extern.EitherType<CSSOMString, BufferSource>, ?descriptors:FontFaceDescriptors):Void;
 	function load():js.lib.Promise<FontFace>;
 }

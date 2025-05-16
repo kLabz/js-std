@@ -24,9 +24,6 @@
 
 package js.webxr;
 
-/**
-	TODO attribute boundsGeometry
-**/
 extern class XRBoundedReferenceSpace extends XRReferenceSpace {
-
+	var boundsGeometry(default, null) : Array<js.geometry.DOMPointReadOnly>;
 }

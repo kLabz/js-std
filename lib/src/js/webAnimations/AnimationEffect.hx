@@ -24,12 +24,19 @@
 
 package js.webAnimations;
 
-/**
-	TODO attribute parent
-	TODO attribute previousSibling
-	TODO attribute nextSibling
-**/
 extern class AnimationEffect {
+	/**
+		From partial interface in web-animations-2.idl
+	**/
+	var parent(default, null) : js.webAnimations2.GroupEffect;
+	/**
+		From partial interface in web-animations-2.idl
+	**/
+	var previousSibling(default, null) : AnimationEffect;
+	/**
+		From partial interface in web-animations-2.idl
+	**/
+	var nextSibling(default, null) : AnimationEffect;
 	/**
 		From partial interface in web-animations-2.idl
 	**/

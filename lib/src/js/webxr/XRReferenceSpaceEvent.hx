@@ -24,10 +24,8 @@
 
 package js.webxr;
 
-/**
-	TODO attribute referenceSpace
-	TODO attribute transform
-**/
 extern class XRReferenceSpaceEvent extends js.dom.Event {
+	var referenceSpace(default, null) : XRReferenceSpace;
+	var transform(default, null) : XRRigidTransform;
 	function new(type:String, eventInitDict:XRReferenceSpaceEventInit):Void;
 }

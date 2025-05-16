@@ -24,12 +24,10 @@
 
 package js.html;
 
-/**
-	TODO attribute value
-	TODO attribute max
-	TODO attribute position
-	TODO attribute labels
-**/
 extern class HTMLProgressElement extends HTMLElement {
+	var value : Float;
+	var max : Float;
+	var position(default, null) : Float;
+	var labels(default, null) : js.dom.NodeList;
 	function new():Void;
 }

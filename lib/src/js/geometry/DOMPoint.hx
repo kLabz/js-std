@@ -25,10 +25,10 @@
 package js.geometry;
 
 /**
-	TODO attribute x
-	TODO attribute y
-	TODO attribute z
-	TODO attribute w
+	TODO attribute x: special=inherit readonly=false
+	TODO attribute y: special=inherit readonly=false
+	TODO attribute z: special=inherit readonly=false
+	TODO attribute w: special=inherit readonly=false
 **/
 extern class DOMPoint extends DOMPointReadOnly {
 	function new(?x:Float, ?y:Float, ?z:Float, ?w:Float):Void;

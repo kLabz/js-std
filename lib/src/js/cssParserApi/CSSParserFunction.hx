@@ -24,11 +24,9 @@
 
 package js.cssParserApi;
 
-/**
-	TODO attribute name
-	TODO attribute args
-**/
 extern class CSSParserFunction extends CSSParserValue {
+	var name(default, null) : String;
+	var args(default, null) : Array<Array<CSSParserValue>>;
 	function new(name:String, args:Array<Array<CSSParserValue>>):Void;
 	/**
 		(special = stringifier)

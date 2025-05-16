@@ -24,12 +24,10 @@
 
 package js.webidl;
 
-/**
-	TODO attribute name
-	TODO attribute message
-	TODO attribute code
-**/
 extern class DOMException {
+	var name(default, null) : String;
+	var message(default, null) : String;
+	var code(default, null) : Int;
 	static inline var INDEX_SIZE_ERR : Int = 1;
 	static inline var DOMSTRING_SIZE_ERR : Int = 2;
 	static inline var HIERARCHY_REQUEST_ERR : Int = 3;

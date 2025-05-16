@@ -24,17 +24,15 @@
 
 package js.webgpu;
 
-/**
-	TODO attribute width
-	TODO attribute height
-	TODO attribute depthOrArrayLayers
-	TODO attribute mipLevelCount
-	TODO attribute sampleCount
-	TODO attribute dimension
-	TODO attribute format
-	TODO attribute usage
-**/
 extern class GPUTexture {
+	var width(default, null) : GPUIntegerCoordinateOut;
+	var height(default, null) : GPUIntegerCoordinateOut;
+	var depthOrArrayLayers(default, null) : GPUIntegerCoordinateOut;
+	var mipLevelCount(default, null) : GPUIntegerCoordinateOut;
+	var sampleCount(default, null) : GPUSize32Out;
+	var dimension(default, null) : GPUTextureDimension;
+	var format(default, null) : GPUTextureFormat;
+	var usage(default, null) : GPUFlagsConstant;
 	function createView(?descriptor:GPUTextureViewDescriptor):GPUTextureView;
 	function destroy():Void;
 }

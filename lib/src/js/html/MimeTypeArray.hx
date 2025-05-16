@@ -24,10 +24,8 @@
 
 package js.html;
 
-/**
-	TODO attribute length
-**/
 extern class MimeTypeArray {
+	var length(default, null) : Int;
 	function item(index:Int):MimeType;
 	function namedItem(name:String):MimeType;
 }

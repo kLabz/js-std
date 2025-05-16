@@ -24,11 +24,9 @@
 
 package js.fedcm;
 
-/**
-	TODO attribute token
-	TODO attribute isAutoSelected
-	TODO attribute configURL
-**/
 extern class IdentityCredential extends js.credentialManagement.Credential {
+	var token(default, null) : String;
+	var isAutoSelected(default, null) : Bool;
+	var configURL(default, null) : String;
 	function disconnect(options:IdentityCredentialDisconnectOptions):js.lib.Promise<Void>;
 }

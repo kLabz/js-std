@@ -24,14 +24,12 @@
 
 package js.html;
 
-/**
-	TODO attribute width
-	TODO attribute height
-	TODO attribute data
-	TODO attribute pixelFormat
-	TODO attribute colorSpace
-**/
 extern class ImageData {
+	var width(default, null) : Int;
+	var height(default, null) : Int;
+	var data(default, null) : ImageDataArray;
+	var pixelFormat(default, null) : ImageDataPixelFormat;
+	var colorSpace(default, null) : PredefinedColorSpace;
 	overload function new(data:ImageDataArray, sw:Int, ?sh:Int, ?settings:ImageDataSettings):Void;
 	overload function new(sw:Int, sh:Int, ?settings:ImageDataSettings):Void;
 }

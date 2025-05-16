@@ -24,27 +24,28 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute label
-	TODO attribute ordered
-	TODO attribute maxPacketLifeTime
-	TODO attribute maxRetransmits
-	TODO attribute protocol
-	TODO attribute negotiated
-	TODO attribute id
-	TODO attribute readyState
-	TODO attribute bufferedAmount
-	TODO attribute bufferedAmountLowThreshold
-	TODO attribute onopen
-	TODO attribute onbufferedamountlow
-	TODO attribute onerror
-	TODO attribute onclosing
-	TODO attribute onclose
-	TODO attribute onmessage
-	TODO attribute binaryType
-	TODO attribute priority
-**/
 extern class RTCDataChannel extends js.dom.EventTarget {
+	var label(default, null) : String;
+	var ordered(default, null) : Bool;
+	var maxPacketLifeTime(default, null) : Int;
+	var maxRetransmits(default, null) : Int;
+	var protocol(default, null) : String;
+	var negotiated(default, null) : Bool;
+	var id(default, null) : Int;
+	var readyState(default, null) : RTCDataChannelState;
+	var bufferedAmount(default, null) : Int;
+	var bufferedAmountLowThreshold : Int;
+	var onopen : EventHandler;
+	var onbufferedamountlow : EventHandler;
+	var onerror : EventHandler;
+	var onclosing : EventHandler;
+	var onclose : EventHandler;
+	var onmessage : EventHandler;
+	var binaryType : js.websockets.BinaryType;
+	/**
+		From partial interface in webrtc-priority.idl
+	**/
+	var priority(default, null) : js.webrtcPriority.RTCPriorityType;
 	function close():Void;
 	overload function send(data:String):Void;
 	overload function send(data:js.fileapi.Blob):Void;

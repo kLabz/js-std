@@ -24,12 +24,10 @@
 
 package js.streams;
 
-/**
-	TODO attribute closed
-	TODO attribute desiredSize
-	TODO attribute ready
-**/
 extern class WritableStreamDefaultWriter {
+	var closed(default, null) : js.lib.Promise<Void>;
+	var desiredSize(default, null) : Float;
+	var ready(default, null) : js.lib.Promise<Void>;
 	function new(stream:WritableStream):Void;
 	function abort(?reason:Any):js.lib.Promise<Void>;
 	function close():js.lib.Promise<Void>;

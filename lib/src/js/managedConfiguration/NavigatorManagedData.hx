@@ -24,10 +24,8 @@
 
 package js.managedConfiguration;
 
-/**
-	TODO attribute onmanagedconfigurationchange
-**/
 extern class NavigatorManagedData extends js.dom.EventTarget {
+	var onmanagedconfigurationchange : EventHandler;
 	/**
 		From partial interface in device-attributes.idl
 	**/

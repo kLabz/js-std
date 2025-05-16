@@ -24,12 +24,10 @@
 
 package js.html;
 
-/**
-	TODO attribute name
-	TODO attribute value
-	TODO attribute type
-	TODO attribute valueType
-**/
 extern class HTMLParamElement extends HTMLElement {
+	var name : String;
+	var value : String;
+	var type : String;
+	var valueType : String;
 	function new():Void;
 }

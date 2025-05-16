@@ -24,11 +24,9 @@
 
 package js.webBluetooth;
 
-/**
-	TODO attribute onavailabilitychanged
-	TODO attribute referringDevice
-**/
 extern class Bluetooth extends js.dom.EventTarget {
+	var onavailabilitychanged : EventHandler;
+	var referringDevice(default, null) : BluetoothDevice;
 	function getAvailability():js.lib.Promise<Bool>;
 	function getDevices():js.lib.Promise<Array<BluetoothDevice>>;
 	function requestDevice(?options:RequestDeviceOptions):js.lib.Promise<BluetoothDevice>;

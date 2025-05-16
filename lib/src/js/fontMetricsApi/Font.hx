@@ -24,10 +24,7 @@
 
 package js.fontMetricsApi;
 
-/**
-	TODO attribute name
-	TODO attribute glyphsRendered
-**/
 extern class Font {
-
+	var name(default, null) : String;
+	var glyphsRendered(default, null) : Int;
 }

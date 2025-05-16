@@ -24,10 +24,8 @@
 
 package js.html;
 
-/**
-	TODO attribute oldURL
-	TODO attribute newURL
-**/
 extern class HashChangeEvent extends js.dom.Event {
+	var oldURL(default, null) : String;
+	var newURL(default, null) : String;
 	function new(type:String, ?eventInitDict:HashChangeEventInit):Void;
 }

@@ -24,13 +24,11 @@
 
 package js.svgAnimations;
 
-/**
-	TODO attribute targetElement
-	TODO attribute onbegin
-	TODO attribute onend
-	TODO attribute onrepeat
-**/
 extern class SVGAnimationElement extends js.svg.SVGElement {
+	var targetElement(default, null) : js.svg.SVGElement;
+	var onbegin : EventHandler;
+	var onend : EventHandler;
+	var onrepeat : EventHandler;
 	function beginElement():Void;
 	function beginElementAt(offset:Float):Void;
 	function endElement():Void;

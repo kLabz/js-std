@@ -24,11 +24,9 @@
 
 package js.webxrlayers;
 
-/**
-	TODO attribute nativeProjectionScaleFactor
-	TODO attribute usesDepthValues
-**/
 extern class XRWebGLBinding {
+	var nativeProjectionScaleFactor(default, null) : Float;
+	var usesDepthValues(default, null) : Bool;
 	function new(session:js.webxr.XRSession, context:XRWebGLRenderingContext):Void;
 	function createCubeLayer(?init:XRCubeLayerInit):XRCubeLayer;
 	function createCylinderLayer(?init:XRCylinderLayerInit):XRCylinderLayer;

@@ -24,10 +24,7 @@
 
 package js.presentationApi;
 
-/**
-	TODO attribute connections
-	TODO attribute onconnectionavailable
-**/
 extern class PresentationConnectionList extends js.dom.EventTarget {
-
+	var connections(default, null) : Array<PresentationConnection>;
+	var onconnectionavailable : EventHandler;
 }

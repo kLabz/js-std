@@ -24,13 +24,10 @@
 
 package js.cssFontLoading;
 
-/**
-	TODO attribute name
-	TODO attribute axisTag
-	TODO attribute minimumValue
-	TODO attribute maximumValue
-	TODO attribute defaultValue
-**/
 extern class FontFaceVariationAxis {
-
+	var name(default, null) : String;
+	var axisTag(default, null) : String;
+	var minimumValue(default, null) : Float;
+	var maximumValue(default, null) : Float;
+	var defaultValue(default, null) : Float;
 }

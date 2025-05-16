@@ -24,9 +24,6 @@
 
 package js.indexeddb;
 
-/**
-	TODO attribute value
-**/
 extern class IDBCursorWithValue extends IDBCursor {
-
+	var value(default, null) : Any;
 }

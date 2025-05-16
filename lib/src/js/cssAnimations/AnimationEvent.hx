@@ -24,11 +24,9 @@
 
 package js.cssAnimations;
 
-/**
-	TODO attribute animationName
-	TODO attribute elapsedTime
-	TODO attribute pseudoElement
-**/
 extern class AnimationEvent extends js.dom.Event {
+	var animationName(default, null) : CSSOMString;
+	var elapsedTime(default, null) : Float;
+	var pseudoElement(default, null) : CSSOMString;
 	function new(type:CSSOMString, ?animationEventInitDict:AnimationEventInit):Void;
 }

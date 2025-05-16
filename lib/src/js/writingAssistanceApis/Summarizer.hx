@@ -24,17 +24,15 @@
 
 package js.writingAssistanceApis;
 
-/**
-	TODO attribute sharedContext
-	TODO attribute type
-	TODO attribute format
-	TODO attribute length
-	TODO attribute expectedInputLanguages
-	TODO attribute expectedContextLanguages
-	TODO attribute outputLanguage
-	TODO attribute inputQuota
-**/
 extern class Summarizer {
+	var sharedContext(default, null) : String;
+	var type(default, null) : SummarizerType;
+	var format(default, null) : SummarizerFormat;
+	var length(default, null) : SummarizerLength;
+	var expectedInputLanguages(default, null) : Array<String>;
+	var expectedContextLanguages(default, null) : Array<String>;
+	var outputLanguage(default, null) : String;
+	var inputQuota(default, null) : Float;
 	function availability(?options:SummarizerCreateCoreOptions):js.lib.Promise<Availability>;
 	function create(?options:SummarizerCreateOptions):js.lib.Promise<Summarizer>;
 	function measureInputUsage(input:String, ?options:SummarizerSummarizeOptions):js.lib.Promise<Float>;

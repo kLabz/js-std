@@ -24,14 +24,12 @@
 
 package js.navigationTiming;
 
-/**
-	TODO attribute type
-	TODO attribute redirectCount
-**/
 extern class PerformanceNavigation {
 	static inline var TYPE_NAVIGATE : Int = 0;
 	static inline var TYPE_RELOAD : Int = 1;
 	static inline var TYPE_BACK_FORWARD : Int = 2;
 	static inline var TYPE_RESERVED : Int = 255;
+	var type(default, null) : Int;
+	var redirectCount(default, null) : Int;
 	function toJSON():{ };
 }

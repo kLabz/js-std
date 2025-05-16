@@ -24,9 +24,7 @@
 
 package js.webmidi;
 
-/**
-	TODO attribute data
-**/
 extern class MIDIMessageEvent extends js.dom.Event {
+	var data(default, null) : Uint8Array;
 	function new(type:String, ?eventInitDict:MIDIMessageEventInit):Void;
 }

@@ -24,10 +24,8 @@
 
 package js.ppa;
 
-/**
-	TODO attribute aggregationServices
-**/
 extern class PrivateAttribution {
+	var aggregationServices(default, null) : PrivateAttributionAggregationServices;
 	/**
 		From partial interface in ppa.idl
 	**/

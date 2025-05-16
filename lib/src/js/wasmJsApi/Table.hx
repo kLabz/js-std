@@ -24,10 +24,8 @@
 
 package js.wasmJsApi;
 
-/**
-	TODO attribute length
-**/
 extern class Table {
+	var length(default, null) : Int;
 	function new(descriptor:TableDescriptor, ?value:Any):Void;
 	function get(index:Int):Any;
 	function grow(delta:Int, ?value:Any):Int;

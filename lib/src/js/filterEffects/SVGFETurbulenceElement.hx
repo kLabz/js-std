@@ -24,14 +24,6 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute baseFrequencyX
-	TODO attribute baseFrequencyY
-	TODO attribute numOctaves
-	TODO attribute seed
-	TODO attribute stitchTiles
-	TODO attribute type
-**/
 extern class SVGFETurbulenceElement extends js.svg.SVGElement {
 	static inline var SVG_TURBULENCE_TYPE_UNKNOWN : Int = 0;
 	static inline var SVG_TURBULENCE_TYPE_FRACTALNOISE : Int = 1;
@@ -39,4 +31,10 @@ extern class SVGFETurbulenceElement extends js.svg.SVGElement {
 	static inline var SVG_STITCHTYPE_UNKNOWN : Int = 0;
 	static inline var SVG_STITCHTYPE_STITCH : Int = 1;
 	static inline var SVG_STITCHTYPE_NOSTITCH : Int = 2;
+	var baseFrequencyX(default, null) : js.svg.SVGAnimatedNumber;
+	var baseFrequencyY(default, null) : js.svg.SVGAnimatedNumber;
+	var numOctaves(default, null) : js.svg.SVGAnimatedInteger;
+	var seed(default, null) : js.svg.SVGAnimatedNumber;
+	var stitchTiles(default, null) : js.svg.SVGAnimatedEnumeration;
+	var type(default, null) : js.svg.SVGAnimatedEnumeration;
 }

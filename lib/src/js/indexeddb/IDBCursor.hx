@@ -24,14 +24,12 @@
 
 package js.indexeddb;
 
-/**
-	TODO attribute source
-	TODO attribute direction
-	TODO attribute key
-	TODO attribute primaryKey
-	TODO attribute request
-**/
 extern class IDBCursor {
+	var source(default, null) : haxe.extern.EitherType<IDBObjectStore, IDBIndex>;
+	var direction(default, null) : IDBCursorDirection;
+	var key(default, null) : Any;
+	var primaryKey(default, null) : Any;
+	var request(default, null) : IDBRequest;
 	function advance(count:Int):Void;
 	function continue(?key:Any):Void;
 	function continuePrimaryKey(key:Any, primaryKey:Any):Void;

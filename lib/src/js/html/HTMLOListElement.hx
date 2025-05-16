@@ -24,12 +24,13 @@
 
 package js.html;
 
-/**
-	TODO attribute reversed
-	TODO attribute start
-	TODO attribute type
-	TODO attribute compact
-**/
 extern class HTMLOListElement extends HTMLElement {
+	var reversed : Bool;
+	var start : Int;
+	var type : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var compact : Bool;
 	function new():Void;
 }

@@ -24,13 +24,14 @@
 
 package js.webAnimations;
 
-/**
-	TODO attribute target
-	TODO attribute pseudoElement
-	TODO attribute composite
-	TODO attribute iterationComposite
-**/
 extern class KeyframeEffect extends AnimationEffect {
+	var target : js.dom.Element;
+	var pseudoElement : CSSOMString;
+	var composite : CompositeOperation;
+	/**
+		From partial interface in web-animations-2.idl
+	**/
+	var iterationComposite : js.webAnimations2.IterationCompositeOperation;
 	overload function new(source:KeyframeEffect):Void;
 	overload function new(target:js.dom.Element, keyframes:{ }, ?options:haxe.extern.EitherType<Float, KeyframeEffectOptions>):Void;
 	function getKeyframes():Array<{ }>;

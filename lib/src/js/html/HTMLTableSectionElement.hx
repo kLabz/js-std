@@ -24,14 +24,24 @@
 
 package js.html;
 
-/**
-	TODO attribute rows
-	TODO attribute align
-	TODO attribute ch
-	TODO attribute chOff
-	TODO attribute vAlign
-**/
 extern class HTMLTableSectionElement extends HTMLElement {
+	var rows(default, null) : js.dom.HTMLCollection;
+	/**
+		From partial interface in html.idl
+	**/
+	var align : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var ch : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var chOff : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var vAlign : String;
 	function new():Void;
 	function deleteRow(index:Int):Void;
 	function insertRow(?index:Int):HTMLTableRowElement;

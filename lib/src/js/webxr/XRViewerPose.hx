@@ -24,9 +24,6 @@
 
 package js.webxr;
 
-/**
-	TODO attribute views
-**/
 extern class XRViewerPose extends XRPose {
-
+	var views(default, null) : Array<XRView>;
 }

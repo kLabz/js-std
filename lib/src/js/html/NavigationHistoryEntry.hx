@@ -24,14 +24,12 @@
 
 package js.html;
 
-/**
-	TODO attribute url
-	TODO attribute key
-	TODO attribute id
-	TODO attribute index
-	TODO attribute sameDocument
-	TODO attribute ondispose
-**/
 extern class NavigationHistoryEntry extends js.dom.EventTarget {
+	var url(default, null) : String;
+	var key(default, null) : String;
+	var id(default, null) : String;
+	var index(default, null) : Float;
+	var sameDocument(default, null) : Bool;
+	var ondispose : EventHandler;
 	function getState():Any;
 }

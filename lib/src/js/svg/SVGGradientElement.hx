@@ -24,14 +24,12 @@
 
 package js.svg;
 
-/**
-	TODO attribute gradientUnits
-	TODO attribute gradientTransform
-	TODO attribute spreadMethod
-**/
 extern class SVGGradientElement extends SVGElement {
 	static inline var SVG_SPREADMETHOD_UNKNOWN : Int = 0;
 	static inline var SVG_SPREADMETHOD_PAD : Int = 1;
 	static inline var SVG_SPREADMETHOD_REFLECT : Int = 2;
 	static inline var SVG_SPREADMETHOD_REPEAT : Int = 3;
+	var gradientUnits(default, null) : SVGAnimatedEnumeration;
+	var gradientTransform(default, null) : SVGAnimatedTransformList;
+	var spreadMethod(default, null) : SVGAnimatedEnumeration;
 }

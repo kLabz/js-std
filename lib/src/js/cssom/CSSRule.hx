@@ -24,13 +24,11 @@
 
 package js.cssom;
 
-/**
-	TODO attribute cssText
-	TODO attribute parentRule
-	TODO attribute parentStyleSheet
-	TODO attribute type
-**/
 extern class CSSRule {
+	var cssText : CSSOMString;
+	var parentRule(default, null) : CSSRule;
+	var parentStyleSheet(default, null) : CSSStyleSheet;
+	var type(default, null) : Int;
 	static inline var STYLE_RULE : Int = 1;
 	static inline var CHARSET_RULE : Int = 2;
 	static inline var IMPORT_RULE : Int = 3;
@@ -52,11 +50,11 @@ extern class CSSRule {
 	**/
 	static inline var SUPPORTS_RULE : Int = 12;
 	/**
-		From partial interface in css-counter-styles.idl
-	**/
-	static inline var COUNTER_STYLE_RULE : Int = 11;
-	/**
 		From partial interface in css-fonts.idl
 	**/
 	static inline var FONT_FEATURE_VALUES_RULE : Int = 14;
+	/**
+		From partial interface in css-counter-styles.idl
+	**/
+	static inline var COUNTER_STYLE_RULE : Int = 11;
 }

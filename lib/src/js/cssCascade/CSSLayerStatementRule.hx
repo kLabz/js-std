@@ -24,9 +24,6 @@
 
 package js.cssCascade;
 
-/**
-	TODO attribute nameList
-**/
 extern class CSSLayerStatementRule extends js.cssom.CSSRule {
-
+	var nameList(default, null) : Array<CSSOMString>;
 }

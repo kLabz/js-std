@@ -24,10 +24,8 @@
 
 package js.dom;
 
-/**
-	TODO attribute length
-**/
 extern class NamedNodeMap {
+	var length(default, null) : Int;
 	function getNamedItem(qualifiedName:String):Attr;
 	function getNamedItemNS(namespace:String, localName:String):Attr;
 	function item(index:Int):Attr;

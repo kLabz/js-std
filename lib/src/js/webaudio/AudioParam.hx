@@ -24,14 +24,12 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute value
-	TODO attribute automationRate
-	TODO attribute defaultValue
-	TODO attribute minValue
-	TODO attribute maxValue
-**/
 extern class AudioParam {
+	var value : Float;
+	var automationRate : AutomationRate;
+	var defaultValue(default, null) : Float;
+	var minValue(default, null) : Float;
+	var maxValue(default, null) : Float;
 	function cancelAndHoldAtTime(cancelTime:Float):AudioParam;
 	function cancelScheduledValues(cancelTime:Float):AudioParam;
 	function exponentialRampToValueAtTime(value:Float, endTime:Float):AudioParam;

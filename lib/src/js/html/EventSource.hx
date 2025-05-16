@@ -24,18 +24,16 @@
 
 package js.html;
 
-/**
-	TODO attribute url
-	TODO attribute withCredentials
-	TODO attribute readyState
-	TODO attribute onopen
-	TODO attribute onmessage
-	TODO attribute onerror
-**/
 extern class EventSource extends js.dom.EventTarget {
+	var url(default, null) : String;
+	var withCredentials(default, null) : Bool;
 	static inline var CONNECTING : Int = 0;
 	static inline var OPEN : Int = 1;
 	static inline var CLOSED : Int = 2;
+	var readyState(default, null) : Int;
+	var onopen : EventHandler;
+	var onmessage : EventHandler;
+	var onerror : EventHandler;
 	function new(url:String, ?eventSourceInitDict:EventSourceInit):Void;
 	function close():Void;
 }

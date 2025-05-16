@@ -24,11 +24,9 @@
 
 package js.mediacaptureTransform;
 
-/**
-	TODO attribute writable
-	TODO attribute muted
-	TODO attribute track
-**/
 extern class VideoTrackGenerator {
+	var writable(default, null) : js.streams.WritableStream;
+	var muted : Bool;
+	var track(default, null) : js.mediacaptureStreams.MediaStreamTrack;
 	function new():Void;
 }

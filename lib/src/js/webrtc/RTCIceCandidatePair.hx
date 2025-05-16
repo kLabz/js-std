@@ -24,10 +24,7 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute local
-	TODO attribute remote
-**/
 extern class RTCIceCandidatePair {
-
+	var local(default, null) : RTCIceCandidate;
+	var remote(default, null) : RTCIceCandidate;
 }

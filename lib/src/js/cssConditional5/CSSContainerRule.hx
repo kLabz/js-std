@@ -24,10 +24,7 @@
 
 package js.cssConditional5;
 
-/**
-	TODO attribute containerName
-	TODO attribute containerQuery
-**/
 extern class CSSContainerRule extends js.cssConditional.CSSConditionRule {
-
+	var containerName(default, null) : CSSOMString;
+	var containerQuery(default, null) : CSSOMString;
 }

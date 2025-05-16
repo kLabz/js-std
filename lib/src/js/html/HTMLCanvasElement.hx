@@ -24,11 +24,9 @@
 
 package js.html;
 
-/**
-	TODO attribute width
-	TODO attribute height
-**/
 extern class HTMLCanvasElement extends HTMLElement {
+	var width : Int;
+	var height : Int;
 	function new():Void;
 	/**
 		From partial interface in mediacapture-fromelement.idl

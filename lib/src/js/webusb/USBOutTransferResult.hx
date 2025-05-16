@@ -24,10 +24,8 @@
 
 package js.webusb;
 
-/**
-	TODO attribute bytesWritten
-	TODO attribute status
-**/
 extern class USBOutTransferResult {
+	var bytesWritten(default, null) : Int;
+	var status(default, null) : USBTransferStatus;
 	function new(status:USBTransferStatus, ?bytesWritten:Int):Void;
 }

@@ -24,12 +24,10 @@
 
 package js.idleDetection;
 
-/**
-	TODO attribute userState
-	TODO attribute screenState
-	TODO attribute onchange
-**/
 extern class IdleDetector extends js.dom.EventTarget {
+	var userState(default, null) : UserIdleState;
+	var screenState(default, null) : ScreenIdleState;
+	var onchange : EventHandler;
 	function new():Void;
 	function requestPermission():js.lib.Promise<js.permissions.PermissionState>;
 	function start(?options:IdleOptions):js.lib.Promise<Void>;

@@ -24,9 +24,7 @@
 
 package js.pictureInPicture;
 
-/**
-	TODO attribute pictureInPictureWindow
-**/
 extern class PictureInPictureEvent extends js.dom.Event {
+	var pictureInPictureWindow(default, null) : PictureInPictureWindow;
 	function new(type:String, eventInitDict:PictureInPictureEventInit):Void;
 }

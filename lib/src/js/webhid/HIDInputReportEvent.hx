@@ -24,11 +24,9 @@
 
 package js.webhid;
 
-/**
-	TODO attribute device
-	TODO attribute reportId
-	TODO attribute data
-**/
 extern class HIDInputReportEvent extends js.dom.Event {
+	var device(default, null) : HIDDevice;
+	var reportId(default, null) : Int;
+	var data(default, null) : DataView;
 	function new(type:String, eventInitDict:HIDInputReportEventInit):Void;
 }

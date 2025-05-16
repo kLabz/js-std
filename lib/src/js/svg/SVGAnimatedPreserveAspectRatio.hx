@@ -24,10 +24,7 @@
 
 package js.svg;
 
-/**
-	TODO attribute baseVal
-	TODO attribute animVal
-**/
 extern class SVGAnimatedPreserveAspectRatio {
-
+	var baseVal(default, null) : SVGPreserveAspectRatio;
+	var animVal(default, null) : SVGPreserveAspectRatio;
 }

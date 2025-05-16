@@ -24,9 +24,7 @@
 
 package js.cssom;
 
-/**
-	TODO attribute length
-**/
 extern class StyleSheetList {
+	var length(default, null) : Int;
 	function item(index:Int):CSSStyleSheet;
 }

@@ -24,9 +24,7 @@
 
 package js.clipboardApis;
 
-/**
-	TODO attribute clipboardData
-**/
 extern class ClipboardEvent extends js.dom.Event {
+	var clipboardData(default, null) : js.html.DataTransfer;
 	function new(type:String, ?eventInitDict:ClipboardEventInit):Void;
 }

@@ -24,12 +24,10 @@
 
 package js.html;
 
-/**
-	TODO attribute length
-	TODO attribute scrollRestoration
-	TODO attribute state
-**/
 extern class History {
+	var length(default, null) : Int;
+	var scrollRestoration : ScrollRestoration;
+	var state(default, null) : Any;
 	function back():Void;
 	function forward():Void;
 	function go(?delta:Int):Void;

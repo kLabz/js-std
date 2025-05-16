@@ -24,20 +24,17 @@
 
 package js.html;
 
-/**
-	TODO attribute width
-	TODO attribute actualBoundingBoxLeft
-	TODO attribute actualBoundingBoxRight
-	TODO attribute fontBoundingBoxAscent
-	TODO attribute fontBoundingBoxDescent
-	TODO attribute actualBoundingBoxAscent
-	TODO attribute actualBoundingBoxDescent
-	TODO attribute emHeightAscent
-	TODO attribute emHeightDescent
-	TODO attribute hangingBaseline
-	TODO attribute alphabeticBaseline
-	TODO attribute ideographicBaseline
-**/
 extern class TextMetrics {
-
+	var width(default, null) : Float;
+	var actualBoundingBoxLeft(default, null) : Float;
+	var actualBoundingBoxRight(default, null) : Float;
+	var fontBoundingBoxAscent(default, null) : Float;
+	var fontBoundingBoxDescent(default, null) : Float;
+	var actualBoundingBoxAscent(default, null) : Float;
+	var actualBoundingBoxDescent(default, null) : Float;
+	var emHeightAscent(default, null) : Float;
+	var emHeightDescent(default, null) : Float;
+	var hangingBaseline(default, null) : Float;
+	var alphabeticBaseline(default, null) : Float;
+	var ideographicBaseline(default, null) : Float;
 }

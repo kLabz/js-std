@@ -26,13 +26,13 @@ package js.cssFontLoading;
 
 /**
 	TODO SetlikeDeclaration handling
-	TODO attribute onloading
-	TODO attribute onloadingdone
-	TODO attribute onloadingerror
-	TODO attribute ready
-	TODO attribute status
 **/
 extern class FontFaceSet extends js.dom.EventTarget {
+	var onloading : EventHandler;
+	var onloadingdone : EventHandler;
+	var onloadingerror : EventHandler;
+	var ready(default, null) : js.lib.Promise<FontFaceSet>;
+	var status(default, null) : FontFaceSetLoadStatus;
 	function add(font:FontFace):FontFaceSet;
 	function check(font:CSSOMString, ?text:CSSOMString):Bool;
 	function clear():Void;

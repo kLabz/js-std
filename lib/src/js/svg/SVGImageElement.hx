@@ -24,14 +24,11 @@
 
 package js.svg;
 
-/**
-	TODO attribute x
-	TODO attribute y
-	TODO attribute width
-	TODO attribute height
-	TODO attribute preserveAspectRatio
-	TODO attribute crossOrigin
-**/
 extern class SVGImageElement extends SVGGraphicsElement {
-
+	var x(default, null) : SVGAnimatedLength;
+	var y(default, null) : SVGAnimatedLength;
+	var width(default, null) : SVGAnimatedLength;
+	var height(default, null) : SVGAnimatedLength;
+	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
+	var crossOrigin : String;
 }

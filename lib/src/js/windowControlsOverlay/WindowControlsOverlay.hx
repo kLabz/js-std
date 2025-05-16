@@ -24,10 +24,8 @@
 
 package js.windowControlsOverlay;
 
-/**
-	TODO attribute visible
-	TODO attribute ongeometrychange
-**/
 extern class WindowControlsOverlay extends js.dom.EventTarget {
+	var visible(default, null) : Bool;
+	var ongeometrychange : EventHandler;
 	function getTitlebarAreaRect():js.geometry.DOMRect;
 }

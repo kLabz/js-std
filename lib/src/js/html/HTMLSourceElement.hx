@@ -24,15 +24,13 @@
 
 package js.html;
 
-/**
-	TODO attribute src
-	TODO attribute type
-	TODO attribute srcset
-	TODO attribute sizes
-	TODO attribute media
-	TODO attribute width
-	TODO attribute height
-**/
 extern class HTMLSourceElement extends HTMLElement {
+	var src : String;
+	var type : String;
+	var srcset : String;
+	var sizes : String;
+	var media : String;
+	var width : Int;
+	var height : Int;
 	function new():Void;
 }

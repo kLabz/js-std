@@ -24,22 +24,19 @@
 
 package js.fontMetricsApi;
 
-/**
-	TODO attribute width
-	TODO attribute advances
-	TODO attribute boundingBoxLeft
-	TODO attribute boundingBoxRight
-	TODO attribute height
-	TODO attribute emHeightAscent
-	TODO attribute emHeightDescent
-	TODO attribute boundingBoxAscent
-	TODO attribute boundingBoxDescent
-	TODO attribute fontBoundingBoxAscent
-	TODO attribute fontBoundingBoxDescent
-	TODO attribute dominantBaseline
-	TODO attribute baselines
-	TODO attribute fonts
-**/
 extern class FontMetrics {
-
+	var width(default, null) : Float;
+	var advances(default, null) : Array<Float>;
+	var boundingBoxLeft(default, null) : Float;
+	var boundingBoxRight(default, null) : Float;
+	var height(default, null) : Float;
+	var emHeightAscent(default, null) : Float;
+	var emHeightDescent(default, null) : Float;
+	var boundingBoxAscent(default, null) : Float;
+	var boundingBoxDescent(default, null) : Float;
+	var fontBoundingBoxAscent(default, null) : Float;
+	var fontBoundingBoxDescent(default, null) : Float;
+	var dominantBaseline(default, null) : Baseline;
+	var baselines(default, null) : Array<Baseline>;
+	var fonts(default, null) : Array<Font>;
 }

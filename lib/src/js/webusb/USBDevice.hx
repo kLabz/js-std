@@ -24,26 +24,24 @@
 
 package js.webusb;
 
-/**
-	TODO attribute usbVersionMajor
-	TODO attribute usbVersionMinor
-	TODO attribute usbVersionSubminor
-	TODO attribute deviceClass
-	TODO attribute deviceSubclass
-	TODO attribute deviceProtocol
-	TODO attribute vendorId
-	TODO attribute productId
-	TODO attribute deviceVersionMajor
-	TODO attribute deviceVersionMinor
-	TODO attribute deviceVersionSubminor
-	TODO attribute manufacturerName
-	TODO attribute productName
-	TODO attribute serialNumber
-	TODO attribute configuration
-	TODO attribute configurations
-	TODO attribute opened
-**/
 extern class USBDevice {
+	var usbVersionMajor(default, null) : Int;
+	var usbVersionMinor(default, null) : Int;
+	var usbVersionSubminor(default, null) : Int;
+	var deviceClass(default, null) : Int;
+	var deviceSubclass(default, null) : Int;
+	var deviceProtocol(default, null) : Int;
+	var vendorId(default, null) : Int;
+	var productId(default, null) : Int;
+	var deviceVersionMajor(default, null) : Int;
+	var deviceVersionMinor(default, null) : Int;
+	var deviceVersionSubminor(default, null) : Int;
+	var manufacturerName(default, null) : String;
+	var productName(default, null) : String;
+	var serialNumber(default, null) : String;
+	var configuration(default, null) : USBConfiguration;
+	var configurations(default, null) : Array<USBConfiguration>;
+	var opened(default, null) : Bool;
 	function claimInterface(interfaceNumber:Int):js.lib.Promise<Void>;
 	function clearHalt(direction:USBDirection, endpointNumber:Int):js.lib.Promise<Void>;
 	function close():js.lib.Promise<Void>;

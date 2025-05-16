@@ -24,18 +24,15 @@
 
 package js.cssomView;
 
-/**
-	TODO attribute offsetLeft
-	TODO attribute offsetTop
-	TODO attribute pageLeft
-	TODO attribute pageTop
-	TODO attribute width
-	TODO attribute height
-	TODO attribute scale
-	TODO attribute onresize
-	TODO attribute onscroll
-	TODO attribute onscrollend
-**/
 extern class VisualViewport extends js.dom.EventTarget {
-
+	var offsetLeft(default, null) : Float;
+	var offsetTop(default, null) : Float;
+	var pageLeft(default, null) : Float;
+	var pageTop(default, null) : Float;
+	var width(default, null) : Float;
+	var height(default, null) : Float;
+	var scale(default, null) : Float;
+	var onresize : EventHandler;
+	var onscroll : EventHandler;
+	var onscrollend : EventHandler;
 }

@@ -24,9 +24,6 @@
 
 package js.webxr;
 
-/**
-	TODO attribute granted
-**/
 extern class XRPermissionStatus extends js.permissions.PermissionStatus {
-
+	var granted : Array<String>;
 }

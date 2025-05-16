@@ -24,9 +24,7 @@
 
 package js.webBluetooth;
 
-/**
-	TODO attribute value
-**/
 extern class ValueEvent extends js.dom.Event {
+	var value(default, null) : Any;
 	function new(type:String, ?initDict:ValueEventInit):Void;
 }

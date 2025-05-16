@@ -24,10 +24,7 @@
 
 package js.pushApi;
 
-/**
-	TODO attribute userVisibleOnly
-	TODO attribute applicationServerKey
-**/
 extern class PushSubscriptionOptions {
-
+	var userVisibleOnly(default, null) : Bool;
+	var applicationServerKey(default, null) : ArrayBuffer;
 }

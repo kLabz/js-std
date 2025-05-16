@@ -24,10 +24,7 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute azimuth
-	TODO attribute elevation
-**/
 extern class SVGFEDistantLightElement extends js.svg.SVGElement {
-
+	var azimuth(default, null) : js.svg.SVGAnimatedNumber;
+	var elevation(default, null) : js.svg.SVGAnimatedNumber;
 }

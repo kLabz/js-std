@@ -24,9 +24,7 @@
 
 package js.orientationSensor;
 
-/**
-	TODO attribute quaternion
-**/
 extern class OrientationSensor extends js.genericSensor.Sensor {
+	var quaternion(default, null) : Array<Float>;
 	function populateMatrix(targetMatrix:RotationMatrixType):Void;
 }

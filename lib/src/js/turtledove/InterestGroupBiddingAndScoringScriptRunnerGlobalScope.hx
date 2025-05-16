@@ -24,10 +24,7 @@
 
 package js.turtledove;
 
-/**
-	TODO attribute forDebuggingOnly
-	TODO attribute realTimeReporting
-**/
 extern class InterestGroupBiddingAndScoringScriptRunnerGlobalScope extends InterestGroupScriptRunnerGlobalScope {
-
+	var forDebuggingOnly(default, null) : ForDebuggingOnly;
+	var realTimeReporting(default, null) : RealTimeReporting;
 }

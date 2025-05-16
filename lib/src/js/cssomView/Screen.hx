@@ -24,17 +24,23 @@
 
 package js.cssomView;
 
-/**
-	TODO attribute availWidth
-	TODO attribute availHeight
-	TODO attribute width
-	TODO attribute height
-	TODO attribute colorDepth
-	TODO attribute pixelDepth
-	TODO attribute orientation
-	TODO attribute isExtended
-	TODO attribute onchange
-**/
 extern class Screen {
-
+	var availWidth(default, null) : Int;
+	var availHeight(default, null) : Int;
+	var width(default, null) : Int;
+	var height(default, null) : Int;
+	var colorDepth(default, null) : Int;
+	var pixelDepth(default, null) : Int;
+	/**
+		From partial interface in screen-orientation.idl
+	**/
+	var orientation(default, null) : js.screenOrientation.ScreenOrientation;
+	/**
+		From partial interface in window-management.idl
+	**/
+	var isExtended(default, null) : Bool;
+	/**
+		From partial interface in window-management.idl
+	**/
+	var onchange : EventHandler;
 }

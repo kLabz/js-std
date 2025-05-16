@@ -24,10 +24,7 @@
 
 package js.backgroundFetch;
 
-/**
-	TODO attribute request
-	TODO attribute responseReady
-**/
 extern class BackgroundFetchRecord {
-
+	var request(default, null) : js.fetch.Request;
+	var responseReady(default, null) : js.lib.Promise<js.fetch.Response>;
 }

@@ -24,10 +24,8 @@
 
 package js.speechApi;
 
-/**
-	TODO attribute error
-	TODO attribute message
-**/
 extern class SpeechRecognitionErrorEvent extends js.dom.Event {
+	var error(default, null) : SpeechRecognitionErrorCode;
+	var message(default, null) : String;
 	function new(type:String, eventInitDict:SpeechRecognitionErrorEventInit):Void;
 }

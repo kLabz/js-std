@@ -24,17 +24,15 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute in1
-	TODO attribute in2
-	TODO attribute scale
-	TODO attribute xChannelSelector
-	TODO attribute yChannelSelector
-**/
 extern class SVGFEDisplacementMapElement extends js.svg.SVGElement {
 	static inline var SVG_CHANNEL_UNKNOWN : Int = 0;
 	static inline var SVG_CHANNEL_R : Int = 1;
 	static inline var SVG_CHANNEL_G : Int = 2;
 	static inline var SVG_CHANNEL_B : Int = 3;
 	static inline var SVG_CHANNEL_A : Int = 4;
+	var in1(default, null) : js.svg.SVGAnimatedString;
+	var in2(default, null) : js.svg.SVGAnimatedString;
+	var scale(default, null) : js.svg.SVGAnimatedNumber;
+	var xChannelSelector(default, null) : js.svg.SVGAnimatedEnumeration;
+	var yChannelSelector(default, null) : js.svg.SVGAnimatedEnumeration;
 }

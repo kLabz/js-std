@@ -24,21 +24,19 @@
 
 package js.fileapi;
 
-/**
-	TODO attribute readyState
-	TODO attribute result
-	TODO attribute error
-	TODO attribute onloadstart
-	TODO attribute onprogress
-	TODO attribute onload
-	TODO attribute onabort
-	TODO attribute onerror
-	TODO attribute onloadend
-**/
 extern class FileReader extends js.dom.EventTarget {
 	static inline var EMPTY : Int = 0;
 	static inline var LOADING : Int = 1;
 	static inline var DONE : Int = 2;
+	var readyState(default, null) : Int;
+	var result(default, null) : haxe.extern.EitherType<String, ArrayBuffer>;
+	var error(default, null) : js.webidl.DOMException;
+	var onloadstart : EventHandler;
+	var onprogress : EventHandler;
+	var onload : EventHandler;
+	var onabort : EventHandler;
+	var onerror : EventHandler;
+	var onloadend : EventHandler;
 	function new():Void;
 	function abort():Void;
 	function readAsArrayBuffer(blob:Blob):Void;

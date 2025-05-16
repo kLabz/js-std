@@ -24,10 +24,11 @@
 
 package js.html;
 
-/**
-	TODO attribute form
-	TODO attribute align
-**/
 extern class HTMLLegendElement extends HTMLElement {
+	var form(default, null) : HTMLFormElement;
+	/**
+		From partial interface in html.idl
+	**/
+	var align : String;
 	function new():Void;
 }

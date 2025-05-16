@@ -24,11 +24,9 @@
 
 package js.proximity;
 
-/**
-	TODO attribute distance
-	TODO attribute max
-	TODO attribute near
-**/
 extern class ProximitySensor extends js.genericSensor.Sensor {
+	var distance(default, null) : Float;
+	var max(default, null) : Float;
+	var near(default, null) : Bool;
 	function new(?sensorOptions:js.genericSensor.SensorOptions):Void;
 }

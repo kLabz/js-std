@@ -25,20 +25,20 @@
 package js.url;
 
 /**
-	TODO attribute href
-	TODO attribute origin
-	TODO attribute protocol
-	TODO attribute username
-	TODO attribute password
-	TODO attribute host
-	TODO attribute hostname
-	TODO attribute port
-	TODO attribute pathname
-	TODO attribute search
-	TODO attribute searchParams
-	TODO attribute hash
+	TODO attribute href: special=stringifier readonly=false
 **/
 extern class URL {
+	var origin(default, null) : String;
+	var protocol : String;
+	var username : String;
+	var password : String;
+	var host : String;
+	var hostname : String;
+	var port : String;
+	var pathname : String;
+	var search : String;
+	var searchParams(default, null) : URLSearchParams;
+	var hash : String;
 	function new(url:String, ?base:String):Void;
 	function canParse(url:String, ?base:String):Bool;
 	/**

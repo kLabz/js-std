@@ -24,18 +24,25 @@
 
 package js.html;
 
-/**
-	TODO attribute width
-	TODO attribute height
-	TODO attribute videoWidth
-	TODO attribute videoHeight
-	TODO attribute poster
-	TODO attribute playsInline
-	TODO attribute onenterpictureinpicture
-	TODO attribute onleavepictureinpicture
-	TODO attribute disablePictureInPicture
-**/
 extern class HTMLVideoElement extends HTMLMediaElement {
+	var width : Int;
+	var height : Int;
+	var videoWidth(default, null) : Int;
+	var videoHeight(default, null) : Int;
+	var poster : String;
+	var playsInline : Bool;
+	/**
+		From partial interface in picture-in-picture.idl
+	**/
+	var onenterpictureinpicture : EventHandler;
+	/**
+		From partial interface in picture-in-picture.idl
+	**/
+	var onleavepictureinpicture : EventHandler;
+	/**
+		From partial interface in picture-in-picture.idl
+	**/
+	var disablePictureInPicture : Bool;
 	function new():Void;
 	/**
 		From partial interface in video-rvfc.idl

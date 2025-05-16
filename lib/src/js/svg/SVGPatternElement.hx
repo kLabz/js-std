@@ -24,15 +24,12 @@
 
 package js.svg;
 
-/**
-	TODO attribute patternUnits
-	TODO attribute patternContentUnits
-	TODO attribute patternTransform
-	TODO attribute x
-	TODO attribute y
-	TODO attribute width
-	TODO attribute height
-**/
 extern class SVGPatternElement extends SVGElement {
-
+	var patternUnits(default, null) : SVGAnimatedEnumeration;
+	var patternContentUnits(default, null) : SVGAnimatedEnumeration;
+	var patternTransform(default, null) : SVGAnimatedTransformList;
+	var x(default, null) : SVGAnimatedLength;
+	var y(default, null) : SVGAnimatedLength;
+	var width(default, null) : SVGAnimatedLength;
+	var height(default, null) : SVGAnimatedLength;
 }

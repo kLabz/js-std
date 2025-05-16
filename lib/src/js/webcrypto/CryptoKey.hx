@@ -24,12 +24,9 @@
 
 package js.webcrypto;
 
-/**
-	TODO attribute type
-	TODO attribute extractable
-	TODO attribute algorithm
-	TODO attribute usages
-**/
 extern class CryptoKey {
-
+	var type(default, null) : KeyType;
+	var extractable(default, null) : Bool;
+	var algorithm(default, null) : { };
+	var usages(default, null) : { };
 }

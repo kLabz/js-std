@@ -24,31 +24,62 @@
 
 package js.html;
 
-/**
-	TODO attribute data
-	TODO attribute type
-	TODO attribute name
-	TODO attribute form
-	TODO attribute width
-	TODO attribute height
-	TODO attribute contentDocument
-	TODO attribute contentWindow
-	TODO attribute willValidate
-	TODO attribute validity
-	TODO attribute validationMessage
-	TODO attribute align
-	TODO attribute archive
-	TODO attribute code
-	TODO attribute declare
-	TODO attribute hspace
-	TODO attribute standby
-	TODO attribute vspace
-	TODO attribute codeBase
-	TODO attribute codeType
-	TODO attribute useMap
-	TODO attribute border
-**/
 extern class HTMLObjectElement extends HTMLElement {
+	var data : String;
+	var type : String;
+	var name : String;
+	var form(default, null) : HTMLFormElement;
+	var width : String;
+	var height : String;
+	var contentDocument(default, null) : js.dom.Document;
+	var contentWindow(default, null) : WindowProxy;
+	var willValidate(default, null) : Bool;
+	var validity(default, null) : ValidityState;
+	var validationMessage(default, null) : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var align : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var archive : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var code : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var declare : Bool;
+	/**
+		From partial interface in html.idl
+	**/
+	var hspace : Int;
+	/**
+		From partial interface in html.idl
+	**/
+	var standby : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var vspace : Int;
+	/**
+		From partial interface in html.idl
+	**/
+	var codeBase : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var codeType : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var useMap : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var border : String;
 	function new():Void;
 	function checkValidity():Bool;
 	function getSVGDocument():js.dom.Document;

@@ -24,9 +24,7 @@
 
 package js.backgroundFetch;
 
-/**
-	TODO attribute registration
-**/
 extern class BackgroundFetchEvent extends js.serviceWorkers.ExtendableEvent {
+	var registration(default, null) : BackgroundFetchRegistration;
 	function new(type:String, init:BackgroundFetchEventInit):Void;
 }

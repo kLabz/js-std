@@ -24,23 +24,21 @@
 
 package js.touchEvents;
 
-/**
-	TODO attribute identifier
-	TODO attribute target
-	TODO attribute screenX
-	TODO attribute screenY
-	TODO attribute clientX
-	TODO attribute clientY
-	TODO attribute pageX
-	TODO attribute pageY
-	TODO attribute radiusX
-	TODO attribute radiusY
-	TODO attribute rotationAngle
-	TODO attribute force
-	TODO attribute altitudeAngle
-	TODO attribute azimuthAngle
-	TODO attribute touchType
-**/
 extern class Touch {
+	var identifier(default, null) : Int;
+	var target(default, null) : js.dom.EventTarget;
+	var screenX(default, null) : Float;
+	var screenY(default, null) : Float;
+	var clientX(default, null) : Float;
+	var clientY(default, null) : Float;
+	var pageX(default, null) : Float;
+	var pageY(default, null) : Float;
+	var radiusX(default, null) : Float;
+	var radiusY(default, null) : Float;
+	var rotationAngle(default, null) : Float;
+	var force(default, null) : Float;
+	var altitudeAngle(default, null) : Float;
+	var azimuthAngle(default, null) : Float;
+	var touchType(default, null) : TouchType;
 	function new(touchInitDict:TouchInit):Void;
 }

@@ -24,23 +24,48 @@
 
 package js.html;
 
-/**
-	TODO attribute caption
-	TODO attribute tHead
-	TODO attribute tFoot
-	TODO attribute tBodies
-	TODO attribute rows
-	TODO attribute align
-	TODO attribute border
-	TODO attribute frame
-	TODO attribute rules
-	TODO attribute summary
-	TODO attribute width
-	TODO attribute bgColor
-	TODO attribute cellPadding
-	TODO attribute cellSpacing
-**/
 extern class HTMLTableElement extends HTMLElement {
+	var caption : HTMLTableCaptionElement;
+	var tHead : HTMLTableSectionElement;
+	var tFoot : HTMLTableSectionElement;
+	var tBodies(default, null) : js.dom.HTMLCollection;
+	var rows(default, null) : js.dom.HTMLCollection;
+	/**
+		From partial interface in html.idl
+	**/
+	var align : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var border : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var frame : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var rules : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var summary : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var width : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var bgColor : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var cellPadding : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var cellSpacing : String;
 	function new():Void;
 	function createCaption():HTMLTableCaptionElement;
 	function createTBody():HTMLTableSectionElement;

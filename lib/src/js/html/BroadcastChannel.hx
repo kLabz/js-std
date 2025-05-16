@@ -24,12 +24,10 @@
 
 package js.html;
 
-/**
-	TODO attribute name
-	TODO attribute onmessage
-	TODO attribute onmessageerror
-**/
 extern class BroadcastChannel extends js.dom.EventTarget {
+	var name(default, null) : String;
+	var onmessage : EventHandler;
+	var onmessageerror : EventHandler;
 	function new(name:String):Void;
 	function close():Void;
 	function postMessage(message:Any):Void;

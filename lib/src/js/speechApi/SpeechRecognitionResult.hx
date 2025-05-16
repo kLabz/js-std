@@ -24,10 +24,8 @@
 
 package js.speechApi;
 
-/**
-	TODO attribute length
-	TODO attribute isFinal
-**/
 extern class SpeechRecognitionResult {
+	var length(default, null) : Int;
+	var isFinal(default, null) : Bool;
 	function item(index:Int):SpeechRecognitionAlternative;
 }

@@ -24,23 +24,21 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute panningModel
-	TODO attribute positionX
-	TODO attribute positionY
-	TODO attribute positionZ
-	TODO attribute orientationX
-	TODO attribute orientationY
-	TODO attribute orientationZ
-	TODO attribute distanceModel
-	TODO attribute refDistance
-	TODO attribute maxDistance
-	TODO attribute rolloffFactor
-	TODO attribute coneInnerAngle
-	TODO attribute coneOuterAngle
-	TODO attribute coneOuterGain
-**/
 extern class PannerNode extends AudioNode {
+	var panningModel : PanningModelType;
+	var positionX(default, null) : AudioParam;
+	var positionY(default, null) : AudioParam;
+	var positionZ(default, null) : AudioParam;
+	var orientationX(default, null) : AudioParam;
+	var orientationY(default, null) : AudioParam;
+	var orientationZ(default, null) : AudioParam;
+	var distanceModel : DistanceModelType;
+	var refDistance : Float;
+	var maxDistance : Float;
+	var rolloffFactor : Float;
+	var coneInnerAngle : Float;
+	var coneOuterAngle : Float;
+	var coneOuterGain : Float;
 	function new(context:BaseAudioContext, ?options:PannerOptions):Void;
 	function setOrientation(x:Float, y:Float, z:Float):Void;
 	function setPosition(x:Float, y:Float, z:Float):Void;

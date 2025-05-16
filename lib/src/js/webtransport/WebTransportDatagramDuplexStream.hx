@@ -24,14 +24,12 @@
 
 package js.webtransport;
 
-/**
-	TODO attribute readable
-	TODO attribute maxDatagramSize
-	TODO attribute incomingMaxAge
-	TODO attribute outgoingMaxAge
-	TODO attribute incomingHighWaterMark
-	TODO attribute outgoingHighWaterMark
-**/
 extern class WebTransportDatagramDuplexStream {
+	var readable(default, null) : js.streams.ReadableStream;
+	var maxDatagramSize(default, null) : Int;
+	var incomingMaxAge : Float;
+	var outgoingMaxAge : Float;
+	var incomingHighWaterMark : Float;
+	var outgoingHighWaterMark : Float;
 	function createWritable(?options:WebTransportSendOptions):WebTransportDatagramsWritable;
 }

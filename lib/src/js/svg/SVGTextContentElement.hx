@@ -24,14 +24,12 @@
 
 package js.svg;
 
-/**
-	TODO attribute textLength
-	TODO attribute lengthAdjust
-**/
 extern class SVGTextContentElement extends SVGGraphicsElement {
 	static inline var LENGTHADJUST_UNKNOWN : Int = 0;
 	static inline var LENGTHADJUST_SPACING : Int = 1;
 	static inline var LENGTHADJUST_SPACINGANDGLYPHS : Int = 2;
+	var textLength(default, null) : SVGAnimatedLength;
+	var lengthAdjust(default, null) : SVGAnimatedEnumeration;
 	function getCharNumAtPosition(?point:js.geometry.DOMPointInit):Int;
 	function getComputedTextLength():Float;
 	function getEndPositionOfChar(charnum:Int):js.geometry.DOMPoint;

@@ -24,9 +24,6 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute type
-**/
 extern class AudioSinkInfo {
-
+	var type(default, null) : AudioSinkType;
 }

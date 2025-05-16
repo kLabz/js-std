@@ -24,18 +24,16 @@
 
 package js.svg;
 
-/**
-	TODO attribute unitType
-	TODO attribute value
-	TODO attribute valueInSpecifiedUnits
-	TODO attribute valueAsString
-**/
 extern class SVGAngle {
 	static inline var SVG_ANGLETYPE_UNKNOWN : Int = 0;
 	static inline var SVG_ANGLETYPE_UNSPECIFIED : Int = 1;
 	static inline var SVG_ANGLETYPE_DEG : Int = 2;
 	static inline var SVG_ANGLETYPE_RAD : Int = 3;
 	static inline var SVG_ANGLETYPE_GRAD : Int = 4;
+	var unitType(default, null) : Int;
+	var value : Float;
+	var valueInSpecifiedUnits : Float;
+	var valueAsString : String;
 	function convertToSpecifiedUnits(unitType:Int):Void;
 	function newValueSpecifiedUnits(unitType:Int, valueInSpecifiedUnits:Float):Void;
 }

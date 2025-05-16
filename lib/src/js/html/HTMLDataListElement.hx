@@ -24,9 +24,7 @@
 
 package js.html;
 
-/**
-	TODO attribute options
-**/
 extern class HTMLDataListElement extends HTMLElement {
+	var options(default, null) : js.dom.HTMLCollection;
 	function new():Void;
 }

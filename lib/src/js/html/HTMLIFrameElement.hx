@@ -24,32 +24,63 @@
 
 package js.html;
 
-/**
-	TODO attribute src
-	TODO attribute srcdoc
-	TODO attribute name
-	TODO attribute sandbox
-	TODO attribute allow
-	TODO attribute allowFullscreen
-	TODO attribute width
-	TODO attribute height
-	TODO attribute referrerPolicy
-	TODO attribute loading
-	TODO attribute contentDocument
-	TODO attribute contentWindow
-	TODO attribute credentialless
-	TODO attribute csp
-	TODO attribute align
-	TODO attribute scrolling
-	TODO attribute frameBorder
-	TODO attribute longDesc
-	TODO attribute marginHeight
-	TODO attribute marginWidth
-	TODO attribute permissionsPolicy
-	TODO attribute privateToken
-	TODO attribute adAuctionHeaders
-**/
 extern class HTMLIFrameElement extends HTMLElement {
+	var src : String;
+	var srcdoc : haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>;
+	var name : String;
+	var sandbox(default, null) : js.dom.DOMTokenList;
+	var allow : String;
+	var allowFullscreen : Bool;
+	var width : String;
+	var height : String;
+	var referrerPolicy : String;
+	var loading : String;
+	var contentDocument(default, null) : js.dom.Document;
+	var contentWindow(default, null) : WindowProxy;
+	/**
+		From partial interface in anonymous-iframe.idl
+	**/
+	var credentialless : Bool;
+	/**
+		From partial interface in csp-embedded-enforcement.idl
+	**/
+	var csp : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var align : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var scrolling : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var frameBorder : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var longDesc : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var marginHeight : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var marginWidth : String;
+	/**
+		From partial interface in permissions-policy.idl
+	**/
+	var permissionsPolicy(default, null) : js.permissionsPolicy.PermissionsPolicy;
+	/**
+		From partial interface in turtledove.idl
+	**/
+	var adAuctionHeaders : Bool;
+	/**
+		From partial interface in trust-token-api.idl
+	**/
+	var privateToken : String;
 	function new():Void;
 	function getSVGDocument():js.dom.Document;
 }

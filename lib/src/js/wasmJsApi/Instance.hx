@@ -24,9 +24,7 @@
 
 package js.wasmJsApi;
 
-/**
-	TODO attribute exports
-**/
 extern class Instance {
+	var exports(default, null) : { };
 	function new(module:Module, ?importObject:{ }):Void;
 }

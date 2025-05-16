@@ -24,17 +24,15 @@
 
 package js.webmidi;
 
-/**
-	TODO attribute id
-	TODO attribute manufacturer
-	TODO attribute name
-	TODO attribute type
-	TODO attribute version
-	TODO attribute state
-	TODO attribute connection
-	TODO attribute onstatechange
-**/
 extern class MIDIPort extends js.dom.EventTarget {
+	var id(default, null) : String;
+	var manufacturer(default, null) : String;
+	var name(default, null) : String;
+	var type(default, null) : MIDIPortType;
+	var version(default, null) : String;
+	var state(default, null) : MIDIPortDeviceState;
+	var connection(default, null) : MIDIPortConnectionState;
+	var onstatechange : EventHandler;
 	function close():js.lib.Promise<MIDIPort>;
 	function open():js.lib.Promise<MIDIPort>;
 }

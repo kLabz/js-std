@@ -24,23 +24,42 @@
 
 package js.serviceWorkers;
 
-/**
-	TODO attribute installing
-	TODO attribute waiting
-	TODO attribute active
-	TODO attribute navigationPreload
-	TODO attribute scope
-	TODO attribute updateViaCache
-	TODO attribute onupdatefound
-	TODO attribute backgroundFetch
-	TODO attribute sync
-	TODO attribute index
-	TODO attribute cookies
-	TODO attribute paymentManager
-	TODO attribute periodicSync
-	TODO attribute pushManager
-**/
 extern class ServiceWorkerRegistration extends js.dom.EventTarget {
+	var installing(default, null) : ServiceWorker;
+	var waiting(default, null) : ServiceWorker;
+	var active(default, null) : ServiceWorker;
+	var navigationPreload(default, null) : NavigationPreloadManager;
+	var scope(default, null) : String;
+	var updateViaCache(default, null) : ServiceWorkerUpdateViaCache;
+	var onupdatefound : EventHandler;
+	/**
+		From partial interface in background-sync.idl
+	**/
+	var sync(default, null) : js.backgroundSync.SyncManager;
+	/**
+		From partial interface in background-fetch.idl
+	**/
+	var backgroundFetch(default, null) : js.backgroundFetch.BackgroundFetchManager;
+	/**
+		From partial interface in content-index.idl
+	**/
+	var index(default, null) : js.contentIndex.ContentIndex;
+	/**
+		From partial interface in cookie-store.idl
+	**/
+	var cookies(default, null) : js.cookieStore.CookieStoreManager;
+	/**
+		From partial interface in payment-handler.idl
+	**/
+	var paymentManager(default, null) : js.paymentHandler.PaymentManager;
+	/**
+		From partial interface in periodic-background-sync.idl
+	**/
+	var periodicSync(default, null) : js.periodicBackgroundSync.PeriodicSyncManager;
+	/**
+		From partial interface in push-api.idl
+	**/
+	var pushManager(default, null) : js.pushApi.PushManager;
 	/**
 		From partial interface in notifications.idl
 	**/

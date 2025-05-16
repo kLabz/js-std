@@ -25,19 +25,6 @@
 package js.html;
 
 /**
-	TODO attribute acceptCharset
-	TODO attribute action
-	TODO attribute autocomplete
-	TODO attribute enctype
-	TODO attribute encoding
-	TODO attribute method
-	TODO attribute name
-	TODO attribute noValidate
-	TODO attribute target
-	TODO attribute rel
-	TODO attribute relList
-	TODO attribute elements
-	TODO attribute length
 	TODO ArrayAccess<> for tkey=String tvalue=TPath({
 			pack : [haxe,extern], 
 			name : EitherType, 
@@ -55,6 +42,19 @@ package js.html;
 		})
 **/
 extern class HTMLFormElement extends HTMLElement implements ArrayAccess<js.dom.Element> {
+	var acceptCharset : String;
+	var action : String;
+	var autocomplete : String;
+	var enctype : String;
+	var encoding : String;
+	var method : String;
+	var name : String;
+	var noValidate : Bool;
+	var target : String;
+	var rel : String;
+	var relList(default, null) : js.dom.DOMTokenList;
+	var elements(default, null) : HTMLFormControlsCollection;
+	var length(default, null) : Int;
 	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;

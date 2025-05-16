@@ -24,10 +24,8 @@
 
 package js.dom;
 
-/**
-	TODO attribute length
-**/
 extern class NodeList {
+	var length(default, null) : Int;
 	function item(index:Int):Node;
 	function values():Iterator<Node>;
 	function values():Iterator<Node>;

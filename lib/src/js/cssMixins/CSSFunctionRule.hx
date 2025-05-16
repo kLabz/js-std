@@ -24,10 +24,8 @@
 
 package js.cssMixins;
 
-/**
-	TODO attribute name
-	TODO attribute returnType
-**/
 extern class CSSFunctionRule extends js.cssom.CSSGroupingRule {
+	var name(default, null) : CSSOMString;
+	var returnType(default, null) : CSSOMString;
 	function getParameters():Array<FunctionParameter>;
 }

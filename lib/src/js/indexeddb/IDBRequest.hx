@@ -24,15 +24,12 @@
 
 package js.indexeddb;
 
-/**
-	TODO attribute result
-	TODO attribute error
-	TODO attribute source
-	TODO attribute transaction
-	TODO attribute readyState
-	TODO attribute onsuccess
-	TODO attribute onerror
-**/
 extern class IDBRequest extends js.dom.EventTarget {
-
+	var result(default, null) : Any;
+	var error(default, null) : js.webidl.DOMException;
+	var source(default, null) : haxe.extern.EitherType<IDBObjectStore, haxe.extern.EitherType<IDBIndex, IDBCursor>>;
+	var transaction(default, null) : IDBTransaction;
+	var readyState(default, null) : IDBRequestReadyState;
+	var onsuccess : EventHandler;
+	var onerror : EventHandler;
 }

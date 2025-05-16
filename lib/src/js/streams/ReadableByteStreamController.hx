@@ -24,11 +24,9 @@
 
 package js.streams;
 
-/**
-	TODO attribute byobRequest
-	TODO attribute desiredSize
-**/
 extern class ReadableByteStreamController {
+	var byobRequest(default, null) : ReadableStreamBYOBRequest;
+	var desiredSize(default, null) : Float;
 	function close():Void;
 	function enqueue(chunk:ArrayBufferView):Void;
 	function error(?e:Any):Void;

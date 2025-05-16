@@ -25,10 +25,10 @@
 package js.geometry;
 
 /**
-	TODO attribute x
-	TODO attribute y
-	TODO attribute width
-	TODO attribute height
+	TODO attribute x: special=inherit readonly=false
+	TODO attribute y: special=inherit readonly=false
+	TODO attribute width: special=inherit readonly=false
+	TODO attribute height: special=inherit readonly=false
 **/
 extern class DOMRect extends DOMRectReadOnly {
 	function new(?x:Float, ?y:Float, ?width:Float, ?height:Float):Void;

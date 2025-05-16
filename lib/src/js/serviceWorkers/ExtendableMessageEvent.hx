@@ -24,13 +24,11 @@
 
 package js.serviceWorkers;
 
-/**
-	TODO attribute data
-	TODO attribute origin
-	TODO attribute lastEventId
-	TODO attribute source
-	TODO attribute ports
-**/
 extern class ExtendableMessageEvent extends ExtendableEvent {
+	var data(default, null) : Any;
+	var origin(default, null) : String;
+	var lastEventId(default, null) : String;
+	var source(default, null) : haxe.extern.EitherType<Client, haxe.extern.EitherType<ServiceWorker, js.html.MessagePort>>;
+	var ports(default, null) : Array<js.html.MessagePort>;
 	function new(type:String, ?eventInitDict:ExtendableMessageEventInit):Void;
 }

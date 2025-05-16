@@ -24,18 +24,16 @@
 
 package js.urlpattern;
 
-/**
-	TODO attribute protocol
-	TODO attribute username
-	TODO attribute password
-	TODO attribute hostname
-	TODO attribute port
-	TODO attribute pathname
-	TODO attribute search
-	TODO attribute hash
-	TODO attribute hasRegExpGroups
-**/
 extern class URLPattern {
+	var protocol(default, null) : String;
+	var username(default, null) : String;
+	var password(default, null) : String;
+	var hostname(default, null) : String;
+	var port(default, null) : String;
+	var pathname(default, null) : String;
+	var search(default, null) : String;
+	var hash(default, null) : String;
+	var hasRegExpGroups(default, null) : Bool;
 	overload function new(?input:URLPatternInput, ?options:URLPatternOptions):Void;
 	overload function new(input:URLPatternInput, baseURL:String, ?options:URLPatternOptions):Void;
 	function exec(?input:URLPatternInput, ?baseURL:String):URLPatternResult;

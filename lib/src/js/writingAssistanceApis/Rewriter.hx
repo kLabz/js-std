@@ -24,17 +24,15 @@
 
 package js.writingAssistanceApis;
 
-/**
-	TODO attribute sharedContext
-	TODO attribute tone
-	TODO attribute format
-	TODO attribute length
-	TODO attribute expectedInputLanguages
-	TODO attribute expectedContextLanguages
-	TODO attribute outputLanguage
-	TODO attribute inputQuota
-**/
 extern class Rewriter {
+	var sharedContext(default, null) : String;
+	var tone(default, null) : RewriterTone;
+	var format(default, null) : RewriterFormat;
+	var length(default, null) : RewriterLength;
+	var expectedInputLanguages(default, null) : Array<String>;
+	var expectedContextLanguages(default, null) : Array<String>;
+	var outputLanguage(default, null) : String;
+	var inputQuota(default, null) : Float;
 	function availability(?options:RewriterCreateCoreOptions):js.lib.Promise<Availability>;
 	function create(?options:RewriterCreateOptions):js.lib.Promise<Rewriter>;
 	function measureInputUsage(input:String, ?options:RewriterRewriteOptions):js.lib.Promise<Float>;

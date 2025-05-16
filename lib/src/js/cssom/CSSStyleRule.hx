@@ -24,11 +24,11 @@
 
 package js.cssom;
 
-/**
-	TODO attribute selectorText
-	TODO attribute style
-	TODO attribute styleMap
-**/
 extern class CSSStyleRule extends CSSGroupingRule {
-
+	var selectorText : CSSOMString;
+	var style(default, null) : CSSStyleProperties;
+	/**
+		From partial interface in css-typed-om.idl
+	**/
+	var styleMap(default, null) : js.cssTypedOm.StylePropertyMap;
 }

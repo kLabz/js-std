@@ -24,14 +24,11 @@
 
 package js.webxrlayers;
 
-/**
-	TODO attribute space
-	TODO attribute transform
-	TODO attribute radius
-	TODO attribute centralAngle
-	TODO attribute aspectRatio
-	TODO attribute onredraw
-**/
 extern class XRCylinderLayer extends XRCompositionLayer {
-
+	var space : js.webxr.XRSpace;
+	var transform : js.webxr.XRRigidTransform;
+	var radius : Float;
+	var centralAngle : Float;
+	var aspectRatio : Float;
+	var onredraw : EventHandler;
 }

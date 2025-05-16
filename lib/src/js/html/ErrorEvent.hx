@@ -24,13 +24,11 @@
 
 package js.html;
 
-/**
-	TODO attribute message
-	TODO attribute filename
-	TODO attribute lineno
-	TODO attribute colno
-	TODO attribute error
-**/
 extern class ErrorEvent extends js.dom.Event {
+	var message(default, null) : String;
+	var filename(default, null) : String;
+	var lineno(default, null) : Int;
+	var colno(default, null) : Int;
+	var error(default, null) : Any;
 	function new(type:String, ?eventInitDict:ErrorEventInit):Void;
 }

@@ -24,10 +24,7 @@
 
 package js.webnn;
 
-/**
-	TODO attribute dataType
-	TODO attribute shape
-**/
 extern class MLOperand {
-
+	var dataType(default, null) : MLOperandDataType;
+	var shape(default, null) : Array<Int>;
 }

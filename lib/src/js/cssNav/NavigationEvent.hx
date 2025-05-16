@@ -24,10 +24,8 @@
 
 package js.cssNav;
 
-/**
-	TODO attribute dir
-	TODO attribute relatedTarget
-**/
 extern class NavigationEvent extends js.uievents.UIEvent {
+	var dir(default, null) : SpatialNavigationDirection;
+	var relatedTarget(default, null) : js.dom.EventTarget;
 	function new(type:String, ?eventInitDict:NavigationEventInit):Void;
 }

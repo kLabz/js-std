@@ -24,9 +24,7 @@
 
 package js.cssAnimationWorklet;
 
-/**
-	TODO attribute animatorName
-**/
 extern class WorkletAnimation extends js.webAnimations.Animation {
+	var animatorName(default, null) : String;
 	function new(animatorName:String, ?effects:haxe.extern.EitherType<js.webAnimations.AnimationEffect, Array<js.webAnimations.AnimationEffect>>, ?timeline:js.webAnimations.AnimationTimeline, ?options:Any):Void;
 }

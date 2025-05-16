@@ -24,11 +24,15 @@
 
 package js.webAnimations;
 
-/**
-	TODO attribute currentTime
-	TODO attribute duration
-**/
 extern class AnimationTimeline {
+	/**
+		From partial interface in web-animations-2.idl
+	**/
+	var currentTime(default, null) : CSSNumberish;
+	/**
+		From partial interface in web-animations-2.idl
+	**/
+	var duration(default, null) : CSSNumberish;
 	/**
 		From partial interface in web-animations-2.idl
 	**/

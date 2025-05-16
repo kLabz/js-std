@@ -24,14 +24,12 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute type
-	TODO attribute frequency
-	TODO attribute detune
-	TODO attribute Q
-	TODO attribute gain
-**/
 extern class BiquadFilterNode extends AudioNode {
+	var type : BiquadFilterType;
+	var frequency(default, null) : AudioParam;
+	var detune(default, null) : AudioParam;
+	var Q(default, null) : AudioParam;
+	var gain(default, null) : AudioParam;
 	function new(context:BaseAudioContext, ?options:BiquadFilterOptions):Void;
 	function getFrequencyResponse(frequencyHz:Float32Array, magResponse:Float32Array, phaseResponse:Float32Array):Void;
 }

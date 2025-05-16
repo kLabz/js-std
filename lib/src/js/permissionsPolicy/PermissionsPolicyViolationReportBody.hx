@@ -24,15 +24,13 @@
 
 package js.permissionsPolicy;
 
-/**
-	TODO attribute featureId
-	TODO attribute sourceFile
-	TODO attribute lineNumber
-	TODO attribute columnNumber
-	TODO attribute disposition
-	TODO attribute allowAttribute
-	TODO attribute srcAttribute
-**/
 extern class PermissionsPolicyViolationReportBody extends js.reporting.ReportBody {
+	var featureId(default, null) : String;
+	var sourceFile(default, null) : String;
+	var lineNumber(default, null) : Int;
+	var columnNumber(default, null) : Int;
+	var disposition(default, null) : String;
+	var allowAttribute(default, null) : String;
+	var srcAttribute(default, null) : String;
 	function toJSON():{ };
 }

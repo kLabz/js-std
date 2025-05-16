@@ -24,11 +24,9 @@
 
 package js.html;
 
-/**
-	TODO attribute form
-	TODO attribute htmlFor
-	TODO attribute control
-**/
 extern class HTMLLabelElement extends HTMLElement {
+	var form(default, null) : HTMLFormElement;
+	var htmlFor : String;
+	var control(default, null) : HTMLElement;
 	function new():Void;
 }

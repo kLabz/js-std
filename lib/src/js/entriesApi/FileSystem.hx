@@ -24,10 +24,7 @@
 
 package js.entriesApi;
 
-/**
-	TODO attribute name
-	TODO attribute root
-**/
 extern class FileSystem {
-
+	var name(default, null) : String;
+	var root(default, null) : FileSystemDirectoryEntry;
 }

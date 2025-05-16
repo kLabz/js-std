@@ -24,18 +24,16 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute positionX
-	TODO attribute positionY
-	TODO attribute positionZ
-	TODO attribute forwardX
-	TODO attribute forwardY
-	TODO attribute forwardZ
-	TODO attribute upX
-	TODO attribute upY
-	TODO attribute upZ
-**/
 extern class AudioListener {
+	var positionX(default, null) : AudioParam;
+	var positionY(default, null) : AudioParam;
+	var positionZ(default, null) : AudioParam;
+	var forwardX(default, null) : AudioParam;
+	var forwardY(default, null) : AudioParam;
+	var forwardZ(default, null) : AudioParam;
+	var upX(default, null) : AudioParam;
+	var upY(default, null) : AudioParam;
+	var upZ(default, null) : AudioParam;
 	function setOrientation(x:Float, y:Float, z:Float, xUp:Float, yUp:Float, zUp:Float):Void;
 	function setPosition(x:Float, y:Float, z:Float):Void;
 }

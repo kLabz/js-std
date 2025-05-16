@@ -24,10 +24,7 @@
 
 package js.cssCascade6;
 
-/**
-	TODO attribute start
-	TODO attribute end
-**/
 extern class CSSScopeRule extends js.cssom.CSSGroupingRule {
-
+	var start(default, null) : CSSOMString;
+	var end(default, null) : CSSOMString;
 }

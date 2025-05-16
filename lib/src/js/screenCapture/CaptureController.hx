@@ -24,12 +24,19 @@
 
 package js.screenCapture;
 
-/**
-	TODO attribute oncapturedmousechange
-	TODO attribute zoomLevel
-	TODO attribute onzoomlevelchange
-**/
 extern class CaptureController extends js.dom.EventTarget {
+	/**
+		From partial interface in captured-mouse-events.idl
+	**/
+	var oncapturedmousechange : EventHandler;
+	/**
+		From partial interface in mediacapture-surface-control.idl
+	**/
+	var zoomLevel(default, null) : Int;
+	/**
+		From partial interface in mediacapture-surface-control.idl
+	**/
+	var onzoomlevelchange : EventHandler;
 	/**
 		From partial interface in mediacapture-surface-control.idl
 	**/

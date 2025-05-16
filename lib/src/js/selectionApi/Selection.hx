@@ -24,17 +24,15 @@
 
 package js.selectionApi;
 
-/**
-	TODO attribute anchorNode
-	TODO attribute anchorOffset
-	TODO attribute focusNode
-	TODO attribute focusOffset
-	TODO attribute isCollapsed
-	TODO attribute rangeCount
-	TODO attribute type
-	TODO attribute direction
-**/
 extern class Selection {
+	var anchorNode(default, null) : js.dom.Node;
+	var anchorOffset(default, null) : Int;
+	var focusNode(default, null) : js.dom.Node;
+	var focusOffset(default, null) : Int;
+	var isCollapsed(default, null) : Bool;
+	var rangeCount(default, null) : Int;
+	var type(default, null) : String;
+	var direction(default, null) : String;
 	/**
 		(special = stringifier)
 	**/

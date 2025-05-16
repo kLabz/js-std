@@ -24,23 +24,21 @@
 
 package js.websockets;
 
-/**
-	TODO attribute url
-	TODO attribute readyState
-	TODO attribute bufferedAmount
-	TODO attribute onopen
-	TODO attribute onerror
-	TODO attribute onclose
-	TODO attribute extensions
-	TODO attribute protocol
-	TODO attribute onmessage
-	TODO attribute binaryType
-**/
 extern class WebSocket extends js.dom.EventTarget {
+	var url(default, null) : String;
 	static inline var CONNECTING : Int = 0;
 	static inline var OPEN : Int = 1;
 	static inline var CLOSING : Int = 2;
 	static inline var CLOSED : Int = 3;
+	var readyState(default, null) : Int;
+	var bufferedAmount(default, null) : Float;
+	var onopen : EventHandler;
+	var onerror : EventHandler;
+	var onclose : EventHandler;
+	var extensions(default, null) : String;
+	var protocol(default, null) : String;
+	var onmessage : EventHandler;
+	var binaryType : BinaryType;
 	function new(url:String, ?protocols:haxe.extern.EitherType<String, Array<String>>):Void;
 	function close(?code:Int, ?reason:String):Void;
 	function send(data:haxe.extern.EitherType<BufferSource, haxe.extern.EitherType<js.fileapi.Blob, String>>):Void;

@@ -24,13 +24,14 @@
 
 package js.uievents;
 
-/**
-	TODO attribute data
-	TODO attribute isComposing
-	TODO attribute inputType
-	TODO attribute dataTransfer
-**/
 extern class InputEvent extends UIEvent {
+	var data(default, null) : String;
+	var isComposing(default, null) : Bool;
+	var inputType(default, null) : String;
+	/**
+		From partial interface in input-events.idl
+	**/
+	var dataTransfer(default, null) : js.html.DataTransfer;
 	function new(type:String, ?eventInitDict:InputEventInit):Void;
 	/**
 		From partial interface in input-events.idl

@@ -24,12 +24,9 @@
 
 package js.webxrDepthSensing;
 
-/**
-	TODO attribute width
-	TODO attribute height
-	TODO attribute normDepthBufferFromNormView
-	TODO attribute rawValueToMeters
-**/
 extern class XRDepthInformation {
-
+	var width(default, null) : Int;
+	var height(default, null) : Int;
+	var normDepthBufferFromNormView(default, null) : js.webxr.XRRigidTransform;
+	var rawValueToMeters(default, null) : Float;
 }

@@ -24,16 +24,14 @@
 
 package js.longtasks;
 
-/**
-	TODO attribute startTime
-	TODO attribute duration
-	TODO attribute name
-	TODO attribute entryType
-	TODO attribute containerType
-	TODO attribute containerSrc
-	TODO attribute containerId
-	TODO attribute containerName
-**/
 extern class TaskAttributionTiming extends js.performanceTimeline.PerformanceEntry {
+	var startTime(default, null) : DOMHighResTimeStamp;
+	var duration(default, null) : DOMHighResTimeStamp;
+	var name(default, null) : String;
+	var entryType(default, null) : String;
+	var containerType(default, null) : String;
+	var containerSrc(default, null) : String;
+	var containerId(default, null) : String;
+	var containerName(default, null) : String;
 	function toJSON():{ };
 }

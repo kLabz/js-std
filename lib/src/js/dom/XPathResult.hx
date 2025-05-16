@@ -24,15 +24,6 @@
 
 package js.dom;
 
-/**
-	TODO attribute resultType
-	TODO attribute numberValue
-	TODO attribute stringValue
-	TODO attribute booleanValue
-	TODO attribute singleNodeValue
-	TODO attribute invalidIteratorState
-	TODO attribute snapshotLength
-**/
 extern class XPathResult {
 	static inline var ANY_TYPE : Int = 0;
 	static inline var NUMBER_TYPE : Int = 1;
@@ -44,6 +35,13 @@ extern class XPathResult {
 	static inline var ORDERED_NODE_SNAPSHOT_TYPE : Int = 7;
 	static inline var ANY_UNORDERED_NODE_TYPE : Int = 8;
 	static inline var FIRST_ORDERED_NODE_TYPE : Int = 9;
+	var resultType(default, null) : Int;
+	var numberValue(default, null) : Float;
+	var stringValue(default, null) : String;
+	var booleanValue(default, null) : Bool;
+	var singleNodeValue(default, null) : Node;
+	var invalidIteratorState(default, null) : Bool;
+	var snapshotLength(default, null) : Int;
 	function iterateNext():Node;
 	function snapshotItem(index:Int):Node;
 }

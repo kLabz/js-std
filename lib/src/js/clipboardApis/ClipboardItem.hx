@@ -24,11 +24,9 @@
 
 package js.clipboardApis;
 
-/**
-	TODO attribute presentationStyle
-	TODO attribute types
-**/
 extern class ClipboardItem {
+	var presentationStyle(default, null) : PresentationStyle;
+	var types(default, null) : Array<String>;
 	function new(items:haxe.DynamicAccess<ClipboardItemData>, ?options:ClipboardItemOptions):Void;
 	function getType(type:String):js.lib.Promise<js.fileapi.Blob>;
 	function supports(type:String):Bool;

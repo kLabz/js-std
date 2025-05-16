@@ -24,11 +24,8 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute x
-	TODO attribute y
-	TODO attribute z
-**/
 extern class SVGFEPointLightElement extends js.svg.SVGElement {
-
+	var x(default, null) : js.svg.SVGAnimatedNumber;
+	var y(default, null) : js.svg.SVGAnimatedNumber;
+	var z(default, null) : js.svg.SVGAnimatedNumber;
 }

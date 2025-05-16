@@ -24,9 +24,7 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute tone
-**/
 extern class RTCDTMFToneChangeEvent extends js.dom.Event {
+	var tone(default, null) : String;
 	function new(type:String, ?eventInitDict:RTCDTMFToneChangeEventInit):Void;
 }

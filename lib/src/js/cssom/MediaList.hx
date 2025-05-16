@@ -25,10 +25,10 @@
 package js.cssom;
 
 /**
-	TODO attribute mediaText
-	TODO attribute length
+	TODO attribute mediaText: special=stringifier readonly=false
 **/
 extern class MediaList {
+	var length(default, null) : Int;
 	function appendMedium(medium:CSSOMString):Void;
 	function deleteMedium(medium:CSSOMString):Void;
 	function item(index:Int):CSSOMString;

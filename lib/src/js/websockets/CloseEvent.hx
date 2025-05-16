@@ -24,11 +24,9 @@
 
 package js.websockets;
 
-/**
-	TODO attribute wasClean
-	TODO attribute code
-	TODO attribute reason
-**/
 extern class CloseEvent extends js.dom.Event {
+	var wasClean(default, null) : Bool;
+	var code(default, null) : Int;
+	var reason(default, null) : String;
 	function new(type:String, ?eventInitDict:CloseEventInit):Void;
 }

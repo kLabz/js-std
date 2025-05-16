@@ -24,13 +24,11 @@
 
 package js.webBluetoothScanning;
 
-/**
-	TODO attribute name
-	TODO attribute namePrefix
-	TODO attribute services
-	TODO attribute manufacturerData
-	TODO attribute serviceData
-**/
 extern class BluetoothLEScanFilter {
+	var name(default, null) : String;
+	var namePrefix(default, null) : String;
+	var services(default, null) : Array<UUID>;
+	var manufacturerData(default, null) : BluetoothManufacturerDataFilter;
+	var serviceData(default, null) : BluetoothServiceDataFilter;
 	function new(?init:js.webBluetooth.BluetoothLEScanFilterInit):Void;
 }

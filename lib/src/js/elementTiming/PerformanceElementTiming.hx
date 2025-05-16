@@ -24,17 +24,15 @@
 
 package js.elementTiming;
 
-/**
-	TODO attribute renderTime
-	TODO attribute loadTime
-	TODO attribute intersectionRect
-	TODO attribute identifier
-	TODO attribute naturalWidth
-	TODO attribute naturalHeight
-	TODO attribute id
-	TODO attribute element
-	TODO attribute url
-**/
 extern class PerformanceElementTiming extends js.performanceTimeline.PerformanceEntry {
+	var renderTime(default, null) : DOMHighResTimeStamp;
+	var loadTime(default, null) : DOMHighResTimeStamp;
+	var intersectionRect(default, null) : js.geometry.DOMRectReadOnly;
+	var identifier(default, null) : String;
+	var naturalWidth(default, null) : Int;
+	var naturalHeight(default, null) : Int;
+	var id(default, null) : String;
+	var element(default, null) : js.dom.Element;
+	var url(default, null) : String;
 	function toJSON():{ };
 }

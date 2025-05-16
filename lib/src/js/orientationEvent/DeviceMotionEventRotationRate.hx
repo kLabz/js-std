@@ -24,11 +24,8 @@
 
 package js.orientationEvent;
 
-/**
-	TODO attribute alpha
-	TODO attribute beta
-	TODO attribute gamma
-**/
 extern class DeviceMotionEventRotationRate {
-
+	var alpha(default, null) : Float;
+	var beta(default, null) : Float;
+	var gamma(default, null) : Float;
 }

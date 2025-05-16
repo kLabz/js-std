@@ -24,10 +24,8 @@
 
 package js.encryptedMedia;
 
-/**
-	TODO attribute messageType
-	TODO attribute message
-**/
 extern class MediaKeyMessageEvent extends js.dom.Event {
+	var messageType(default, null) : MediaKeyMessageType;
+	var message(default, null) : ArrayBuffer;
 	function new(type:String, eventInitDict:MediaKeyMessageEventInit):Void;
 }

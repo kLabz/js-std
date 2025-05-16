@@ -24,9 +24,6 @@
 
 package js.webgpu;
 
-/**
-	TODO attribute message
-**/
 extern class GPUError {
-
+	var message(default, null) : String;
 }

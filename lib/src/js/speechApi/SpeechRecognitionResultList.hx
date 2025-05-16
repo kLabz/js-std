@@ -24,9 +24,7 @@
 
 package js.speechApi;
 
-/**
-	TODO attribute length
-**/
 extern class SpeechRecognitionResultList {
+	var length(default, null) : Int;
 	function item(index:Int):SpeechRecognitionResult;
 }

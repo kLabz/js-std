@@ -24,9 +24,7 @@
 
 package js.uievents;
 
-/**
-	TODO attribute relatedTarget
-**/
 extern class FocusEvent extends UIEvent {
+	var relatedTarget(default, null) : js.dom.EventTarget;
 	function new(type:String, ?eventInitDict:FocusEventInit):Void;
 }

@@ -24,10 +24,8 @@
 
 package js.cssTypedOm;
 
-/**
-	TODO attribute variable
-	TODO attribute fallback
-**/
 extern class CSSVariableReferenceValue {
+	var variable : String;
+	var fallback(default, null) : CSSUnparsedValue;
 	function new(variable:String, ?fallback:CSSUnparsedValue):Void;
 }

@@ -24,14 +24,12 @@
 
 package js.webusb;
 
-/**
-	TODO attribute alternateSetting
-	TODO attribute interfaceClass
-	TODO attribute interfaceSubclass
-	TODO attribute interfaceProtocol
-	TODO attribute interfaceName
-	TODO attribute endpoints
-**/
 extern class USBAlternateInterface {
+	var alternateSetting(default, null) : Int;
+	var interfaceClass(default, null) : Int;
+	var interfaceSubclass(default, null) : Int;
+	var interfaceProtocol(default, null) : Int;
+	var interfaceName(default, null) : String;
+	var endpoints(default, null) : Array<USBEndpoint>;
 	function new(deviceInterface:USBInterface, alternateSetting:Int):Void;
 }

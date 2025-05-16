@@ -24,16 +24,13 @@
 
 package js.windowManagement;
 
-/**
-	TODO attribute availLeft
-	TODO attribute availTop
-	TODO attribute left
-	TODO attribute top
-	TODO attribute isPrimary
-	TODO attribute isInternal
-	TODO attribute devicePixelRatio
-	TODO attribute label
-**/
 extern class ScreenDetailed extends js.cssomView.Screen {
-
+	var availLeft(default, null) : Int;
+	var availTop(default, null) : Int;
+	var left(default, null) : Int;
+	var top(default, null) : Int;
+	var isPrimary(default, null) : Bool;
+	var isInternal(default, null) : Bool;
+	var devicePixelRatio(default, null) : Float;
+	var label(default, null) : String;
 }

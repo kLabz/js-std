@@ -24,11 +24,9 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute ontonechange
-	TODO attribute canInsertDTMF
-	TODO attribute toneBuffer
-**/
 extern class RTCDTMFSender extends js.dom.EventTarget {
+	var ontonechange : EventHandler;
+	var canInsertDTMF(default, null) : Bool;
+	var toneBuffer(default, null) : String;
 	function insertDTMF(tones:String, ?duration:Int, ?interToneGap:Int):Void;
 }

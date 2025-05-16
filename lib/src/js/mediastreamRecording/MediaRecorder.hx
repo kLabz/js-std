@@ -24,21 +24,19 @@
 
 package js.mediastreamRecording;
 
-/**
-	TODO attribute stream
-	TODO attribute mimeType
-	TODO attribute state
-	TODO attribute onstart
-	TODO attribute onstop
-	TODO attribute ondataavailable
-	TODO attribute onpause
-	TODO attribute onresume
-	TODO attribute onerror
-	TODO attribute videoBitsPerSecond
-	TODO attribute audioBitsPerSecond
-	TODO attribute audioBitrateMode
-**/
 extern class MediaRecorder extends js.dom.EventTarget {
+	var stream(default, null) : js.mediacaptureStreams.MediaStream;
+	var mimeType(default, null) : String;
+	var state(default, null) : RecordingState;
+	var onstart : EventHandler;
+	var onstop : EventHandler;
+	var ondataavailable : EventHandler;
+	var onpause : EventHandler;
+	var onresume : EventHandler;
+	var onerror : EventHandler;
+	var videoBitsPerSecond(default, null) : Int;
+	var audioBitsPerSecond(default, null) : Int;
+	var audioBitrateMode(default, null) : BitrateMode;
 	function new(stream:js.mediacaptureStreams.MediaStream, ?options:MediaRecorderOptions):Void;
 	function isTypeSupported(type:String):Bool;
 	function pause():Void;

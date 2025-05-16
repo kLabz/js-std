@@ -24,17 +24,14 @@
 
 package js.webBluetooth;
 
-/**
-	TODO attribute broadcast
-	TODO attribute read
-	TODO attribute writeWithoutResponse
-	TODO attribute write
-	TODO attribute notify
-	TODO attribute indicate
-	TODO attribute authenticatedSignedWrites
-	TODO attribute reliableWrite
-	TODO attribute writableAuxiliaries
-**/
 extern class BluetoothCharacteristicProperties {
-
+	var broadcast(default, null) : Bool;
+	var read(default, null) : Bool;
+	var writeWithoutResponse(default, null) : Bool;
+	var write(default, null) : Bool;
+	var notify(default, null) : Bool;
+	var indicate(default, null) : Bool;
+	var authenticatedSignedWrites(default, null) : Bool;
+	var reliableWrite(default, null) : Bool;
+	var writableAuxiliaries(default, null) : Bool;
 }

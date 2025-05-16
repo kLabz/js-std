@@ -24,16 +24,14 @@
 
 package js.html;
 
-/**
-	TODO attribute shadowRoot
-	TODO attribute form
-	TODO attribute willValidate
-	TODO attribute validity
-	TODO attribute validationMessage
-	TODO attribute labels
-	TODO attribute states
-**/
 extern class ElementInternals {
+	var shadowRoot(default, null) : js.dom.ShadowRoot;
+	var form(default, null) : HTMLFormElement;
+	var willValidate(default, null) : Bool;
+	var validity(default, null) : ValidityState;
+	var validationMessage(default, null) : String;
+	var labels(default, null) : js.dom.NodeList;
+	var states(default, null) : CustomStateSet;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
 	function setFormValue(value:haxe.extern.EitherType<js.fileapi.File, haxe.extern.EitherType<String, js.xhr.FormData>>, ?state:haxe.extern.EitherType<js.fileapi.File, haxe.extern.EitherType<String, js.xhr.FormData>>):Void;

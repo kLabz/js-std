@@ -24,11 +24,8 @@
 
 package js.audioSession;
 
-/**
-	TODO attribute type
-	TODO attribute state
-	TODO attribute onstatechange
-**/
 extern class AudioSession extends js.dom.EventTarget {
-
+	var type : AudioSessionType;
+	var state(default, null) : AudioSessionState;
+	var onstatechange : EventHandler;
 }

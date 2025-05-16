@@ -24,9 +24,6 @@
 
 package js.cssTypedOm;
 
-/**
-	TODO attribute operator
-**/
 extern class CSSMathValue extends CSSNumericValue {
-
+	var operator(default, null) : CSSMathOperator;
 }

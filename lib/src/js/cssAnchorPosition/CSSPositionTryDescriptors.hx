@@ -24,78 +24,75 @@
 
 package js.cssAnchorPosition;
 
-/**
-	TODO attribute margin
-	TODO attribute marginTop
-	TODO attribute marginRight
-	TODO attribute marginBottom
-	TODO attribute marginLeft
-	TODO attribute marginBlock
-	TODO attribute marginBlockStart
-	TODO attribute marginBlockEnd
-	TODO attribute marginInline
-	TODO attribute marginInlineStart
-	TODO attribute marginInlineEnd
-	TODO attribute margin-top
-	TODO attribute margin-right
-	TODO attribute margin-bottom
-	TODO attribute margin-left
-	TODO attribute margin-block
-	TODO attribute margin-block-start
-	TODO attribute margin-block-end
-	TODO attribute margin-inline
-	TODO attribute margin-inline-start
-	TODO attribute margin-inline-end
-	TODO attribute inset
-	TODO attribute insetBlock
-	TODO attribute insetBlockStart
-	TODO attribute insetBlockEnd
-	TODO attribute insetInline
-	TODO attribute insetInlineStart
-	TODO attribute insetInlineEnd
-	TODO attribute top
-	TODO attribute left
-	TODO attribute right
-	TODO attribute bottom
-	TODO attribute inset-block
-	TODO attribute inset-block-start
-	TODO attribute inset-block-end
-	TODO attribute inset-inline
-	TODO attribute inset-inline-start
-	TODO attribute inset-inline-end
-	TODO attribute width
-	TODO attribute minWidth
-	TODO attribute maxWidth
-	TODO attribute height
-	TODO attribute minHeight
-	TODO attribute maxHeight
-	TODO attribute blockSize
-	TODO attribute minBlockSize
-	TODO attribute maxBlockSize
-	TODO attribute inlineSize
-	TODO attribute minInlineSize
-	TODO attribute maxInlineSize
-	TODO attribute min-width
-	TODO attribute max-width
-	TODO attribute min-height
-	TODO attribute max-height
-	TODO attribute block-size
-	TODO attribute min-block-size
-	TODO attribute max-block-size
-	TODO attribute inline-size
-	TODO attribute min-inline-size
-	TODO attribute max-inline-size
-	TODO attribute placeSelf
-	TODO attribute alignSelf
-	TODO attribute justifySelf
-	TODO attribute place-self
-	TODO attribute align-self
-	TODO attribute justify-self
-	TODO attribute positionAnchor
-	TODO attribute position-anchor
-	TODO attribute positionArea
-	TODO attribute position-area
-**/
 extern class CSSPositionTryDescriptors extends js.cssom.CSSStyleDeclaration {
-
+	var margin : CSSOMString;
+	var marginTop : CSSOMString;
+	var marginRight : CSSOMString;
+	var marginBottom : CSSOMString;
+	var marginLeft : CSSOMString;
+	var marginBlock : CSSOMString;
+	var marginBlockStart : CSSOMString;
+	var marginBlockEnd : CSSOMString;
+	var marginInline : CSSOMString;
+	var marginInlineStart : CSSOMString;
+	var marginInlineEnd : CSSOMString;
+	var margin-top : CSSOMString;
+	var margin-right : CSSOMString;
+	var margin-bottom : CSSOMString;
+	var margin-left : CSSOMString;
+	var margin-block : CSSOMString;
+	var margin-block-start : CSSOMString;
+	var margin-block-end : CSSOMString;
+	var margin-inline : CSSOMString;
+	var margin-inline-start : CSSOMString;
+	var margin-inline-end : CSSOMString;
+	var inset : CSSOMString;
+	var insetBlock : CSSOMString;
+	var insetBlockStart : CSSOMString;
+	var insetBlockEnd : CSSOMString;
+	var insetInline : CSSOMString;
+	var insetInlineStart : CSSOMString;
+	var insetInlineEnd : CSSOMString;
+	var top : CSSOMString;
+	var left : CSSOMString;
+	var right : CSSOMString;
+	var bottom : CSSOMString;
+	var inset-block : CSSOMString;
+	var inset-block-start : CSSOMString;
+	var inset-block-end : CSSOMString;
+	var inset-inline : CSSOMString;
+	var inset-inline-start : CSSOMString;
+	var inset-inline-end : CSSOMString;
+	var width : CSSOMString;
+	var minWidth : CSSOMString;
+	var maxWidth : CSSOMString;
+	var height : CSSOMString;
+	var minHeight : CSSOMString;
+	var maxHeight : CSSOMString;
+	var blockSize : CSSOMString;
+	var minBlockSize : CSSOMString;
+	var maxBlockSize : CSSOMString;
+	var inlineSize : CSSOMString;
+	var minInlineSize : CSSOMString;
+	var maxInlineSize : CSSOMString;
+	var min-width : CSSOMString;
+	var max-width : CSSOMString;
+	var min-height : CSSOMString;
+	var max-height : CSSOMString;
+	var block-size : CSSOMString;
+	var min-block-size : CSSOMString;
+	var max-block-size : CSSOMString;
+	var inline-size : CSSOMString;
+	var min-inline-size : CSSOMString;
+	var max-inline-size : CSSOMString;
+	var placeSelf : CSSOMString;
+	var alignSelf : CSSOMString;
+	var justifySelf : CSSOMString;
+	var place-self : CSSOMString;
+	var align-self : CSSOMString;
+	var justify-self : CSSOMString;
+	var positionAnchor : CSSOMString;
+	var position-anchor : CSSOMString;
+	var positionArea : CSSOMString;
+	var position-area : CSSOMString;
 }

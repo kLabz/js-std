@@ -24,59 +24,72 @@
 
 package js.html;
 
-/**
-	TODO attribute accept
-	TODO attribute alpha
-	TODO attribute alt
-	TODO attribute autocomplete
-	TODO attribute defaultChecked
-	TODO attribute checked
-	TODO attribute colorSpace
-	TODO attribute dirName
-	TODO attribute disabled
-	TODO attribute form
-	TODO attribute files
-	TODO attribute formAction
-	TODO attribute formEnctype
-	TODO attribute formMethod
-	TODO attribute formNoValidate
-	TODO attribute formTarget
-	TODO attribute height
-	TODO attribute indeterminate
-	TODO attribute list
-	TODO attribute max
-	TODO attribute maxLength
-	TODO attribute min
-	TODO attribute minLength
-	TODO attribute multiple
-	TODO attribute name
-	TODO attribute pattern
-	TODO attribute placeholder
-	TODO attribute readOnly
-	TODO attribute required
-	TODO attribute size
-	TODO attribute src
-	TODO attribute step
-	TODO attribute type
-	TODO attribute defaultValue
-	TODO attribute value
-	TODO attribute valueAsDate
-	TODO attribute valueAsNumber
-	TODO attribute width
-	TODO attribute willValidate
-	TODO attribute validity
-	TODO attribute validationMessage
-	TODO attribute labels
-	TODO attribute selectionStart
-	TODO attribute selectionEnd
-	TODO attribute selectionDirection
-	TODO attribute webkitdirectory
-	TODO attribute webkitEntries
-	TODO attribute capture
-	TODO attribute align
-	TODO attribute useMap
-**/
 extern class HTMLInputElement extends HTMLElement {
+	var accept : String;
+	var alpha : Bool;
+	var alt : String;
+	var autocomplete : String;
+	var defaultChecked : Bool;
+	var checked : Bool;
+	var colorSpace : String;
+	var dirName : String;
+	var disabled : Bool;
+	var form(default, null) : HTMLFormElement;
+	var files : js.fileapi.FileList;
+	var formAction : String;
+	var formEnctype : String;
+	var formMethod : String;
+	var formNoValidate : Bool;
+	var formTarget : String;
+	var height : Int;
+	var indeterminate : Bool;
+	var list(default, null) : HTMLDataListElement;
+	var max : String;
+	var maxLength : Int;
+	var min : String;
+	var minLength : Int;
+	var multiple : Bool;
+	var name : String;
+	var pattern : String;
+	var placeholder : String;
+	var readOnly : Bool;
+	var required : Bool;
+	var size : Int;
+	var src : String;
+	var step : String;
+	var type : String;
+	var defaultValue : String;
+	var value : String;
+	var valueAsDate : { };
+	var valueAsNumber : Float;
+	var width : Int;
+	var willValidate(default, null) : Bool;
+	var validity(default, null) : ValidityState;
+	var validationMessage(default, null) : String;
+	var labels(default, null) : js.dom.NodeList;
+	var selectionStart : Int;
+	var selectionEnd : Int;
+	var selectionDirection : String;
+	/**
+		From partial interface in entries-api.idl
+	**/
+	var webkitdirectory : Bool;
+	/**
+		From partial interface in entries-api.idl
+	**/
+	var webkitEntries(default, null) : Array<js.entriesApi.FileSystemEntry>;
+	/**
+		From partial interface in html-media-capture.idl
+	**/
+	var capture : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var align : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var useMap : String;
 	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;

@@ -24,9 +24,10 @@
 
 package js.html;
 
-/**
-	TODO attribute width
-**/
 extern class HTMLPreElement extends HTMLElement {
+	/**
+		From partial interface in html.idl
+	**/
+	var width : Int;
 	function new():Void;
 }

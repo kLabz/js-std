@@ -24,11 +24,6 @@
 
 package js.svg;
 
-/**
-	TODO attribute type
-	TODO attribute matrix
-	TODO attribute angle
-**/
 extern class SVGTransform {
 	static inline var SVG_TRANSFORM_UNKNOWN : Int = 0;
 	static inline var SVG_TRANSFORM_MATRIX : Int = 1;
@@ -37,6 +32,9 @@ extern class SVGTransform {
 	static inline var SVG_TRANSFORM_ROTATE : Int = 4;
 	static inline var SVG_TRANSFORM_SKEWX : Int = 5;
 	static inline var SVG_TRANSFORM_SKEWY : Int = 6;
+	var type(default, null) : Int;
+	var matrix(default, null) : js.geometry.DOMMatrix;
+	var angle(default, null) : Float;
 	function setMatrix(?matrix:js.geometry.DOMMatrix2DInit):Void;
 	function setRotate(angle:Float, cx:Float, cy:Float):Void;
 	function setScale(sx:Float, sy:Float):Void;

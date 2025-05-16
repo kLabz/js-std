@@ -24,14 +24,11 @@
 
 package js.cssLayoutApi;
 
-/**
-	TODO attribute inlineStart
-	TODO attribute inlineEnd
-	TODO attribute blockStart
-	TODO attribute blockEnd
-	TODO attribute inline
-	TODO attribute block
-**/
 extern class LayoutEdges {
-
+	var inlineStart(default, null) : Float;
+	var inlineEnd(default, null) : Float;
+	var blockStart(default, null) : Float;
+	var blockEnd(default, null) : Float;
+	var inline(default, null) : Float;
+	var block(default, null) : Float;
 }

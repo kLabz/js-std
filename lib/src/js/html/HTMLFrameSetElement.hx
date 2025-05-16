@@ -24,10 +24,8 @@
 
 package js.html;
 
-/**
-	TODO attribute cols
-	TODO attribute rows
-**/
 extern class HTMLFrameSetElement extends HTMLElement {
+	var cols : String;
+	var rows : String;
 	function new():Void;
 }

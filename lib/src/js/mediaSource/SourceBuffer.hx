@@ -24,23 +24,21 @@
 
 package js.mediaSource;
 
-/**
-	TODO attribute mode
-	TODO attribute updating
-	TODO attribute buffered
-	TODO attribute timestampOffset
-	TODO attribute audioTracks
-	TODO attribute videoTracks
-	TODO attribute textTracks
-	TODO attribute appendWindowStart
-	TODO attribute appendWindowEnd
-	TODO attribute onupdatestart
-	TODO attribute onupdate
-	TODO attribute onupdateend
-	TODO attribute onerror
-	TODO attribute onabort
-**/
 extern class SourceBuffer extends js.dom.EventTarget {
+	var mode : AppendMode;
+	var updating(default, null) : Bool;
+	var buffered(default, null) : js.html.TimeRanges;
+	var timestampOffset : Float;
+	var audioTracks(default, null) : js.html.AudioTrackList;
+	var videoTracks(default, null) : js.html.VideoTrackList;
+	var textTracks(default, null) : js.html.TextTrackList;
+	var appendWindowStart : Float;
+	var appendWindowEnd : Float;
+	var onupdatestart : EventHandler;
+	var onupdate : EventHandler;
+	var onupdateend : EventHandler;
+	var onerror : EventHandler;
+	var onabort : EventHandler;
 	function abort():Void;
 	function appendBuffer(data:BufferSource):Void;
 	function changeType(type:String):Void;

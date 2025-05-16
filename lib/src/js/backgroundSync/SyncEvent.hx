@@ -24,10 +24,8 @@
 
 package js.backgroundSync;
 
-/**
-	TODO attribute tag
-	TODO attribute lastChance
-**/
 extern class SyncEvent extends js.serviceWorkers.ExtendableEvent {
+	var tag(default, null) : String;
+	var lastChance(default, null) : Bool;
 	function new(type:String, init:SyncEventInit):Void;
 }

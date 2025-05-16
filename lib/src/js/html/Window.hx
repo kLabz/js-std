@@ -25,67 +25,166 @@
 package js.html;
 
 /**
-	TODO attribute window
-	TODO attribute self
-	TODO attribute document
-	TODO attribute name
-	TODO attribute location
-	TODO attribute history
-	TODO attribute navigation
-	TODO attribute customElements
-	TODO attribute locationbar
-	TODO attribute menubar
-	TODO attribute personalbar
-	TODO attribute scrollbars
-	TODO attribute statusbar
-	TODO attribute toolbar
-	TODO attribute status
-	TODO attribute closed
-	TODO attribute frames
-	TODO attribute length
-	TODO attribute top
-	TODO attribute opener
-	TODO attribute parent
-	TODO attribute frameElement
 	TODO ArrayAccess<> for tkey=String tvalue=TAnonymous([])
-	TODO attribute navigator
-	TODO attribute clientInformation
-	TODO attribute originAgentCluster
-	TODO attribute credentialless
-	TODO attribute orientation
-	TODO attribute onorientationchange
-	TODO attribute cookieStore
-	TODO attribute viewport
-	TODO attribute screen
-	TODO attribute visualViewport
-	TODO attribute innerWidth
-	TODO attribute innerHeight
-	TODO attribute scrollX
-	TODO attribute pageXOffset
-	TODO attribute scrollY
-	TODO attribute pageYOffset
-	TODO attribute screenX
-	TODO attribute screenLeft
-	TODO attribute screenY
-	TODO attribute screenTop
-	TODO attribute outerWidth
-	TODO attribute outerHeight
-	TODO attribute devicePixelRatio
-	TODO attribute documentPictureInPicture
-	TODO attribute event
-	TODO attribute fence
-	TODO attribute external
-	TODO attribute onappinstalled
-	TODO attribute onbeforeinstallprompt
-	TODO attribute ondeviceorientation
-	TODO attribute ondeviceorientationabsolute
-	TODO attribute ondevicemotion
-	TODO attribute portalHost
-	TODO attribute speechSynthesis
-	TODO attribute sharedStorage
-	TODO attribute launchQueue
 **/
 extern class Window extends js.dom.EventTarget {
+	var window(default, null) : WindowProxy;
+	var self(default, null) : WindowProxy;
+	var document(default, null) : js.dom.Document;
+	var name : String;
+	var location(default, null) : Location;
+	var history(default, null) : History;
+	var navigation(default, null) : Navigation;
+	var customElements(default, null) : CustomElementRegistry;
+	var locationbar(default, null) : BarProp;
+	var menubar(default, null) : BarProp;
+	var personalbar(default, null) : BarProp;
+	var scrollbars(default, null) : BarProp;
+	var statusbar(default, null) : BarProp;
+	var toolbar(default, null) : BarProp;
+	var status : String;
+	var closed(default, null) : Bool;
+	var frames(default, null) : WindowProxy;
+	var length(default, null) : Int;
+	var top(default, null) : WindowProxy;
+	var opener : Any;
+	var parent(default, null) : WindowProxy;
+	var frameElement(default, null) : js.dom.Element;
+	var navigator(default, null) : Navigator;
+	var clientInformation(default, null) : Navigator;
+	var originAgentCluster(default, null) : Bool;
+	/**
+		From partial interface in anonymous-iframe.idl
+	**/
+	var credentialless(default, null) : Bool;
+	/**
+		From partial interface in compat.idl
+	**/
+	var orientation(default, null) : Int;
+	/**
+		From partial interface in compat.idl
+	**/
+	var onorientationchange : EventHandler;
+	/**
+		From partial interface in cookie-store.idl
+	**/
+	var cookieStore(default, null) : js.cookieStore.CookieStore;
+	/**
+		From partial interface in css-viewport.idl
+	**/
+	var viewport(default, null) : js.cssViewport.Viewport;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var screen(default, null) : js.cssomView.Screen;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var visualViewport(default, null) : js.cssomView.VisualViewport;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var innerWidth(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var innerHeight(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var scrollX(default, null) : Float;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var pageXOffset(default, null) : Float;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var scrollY(default, null) : Float;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var pageYOffset(default, null) : Float;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var screenX(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var screenLeft(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var screenY(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var screenTop(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var outerWidth(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var outerHeight(default, null) : Int;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var devicePixelRatio(default, null) : Float;
+	/**
+		From partial interface in document-picture-in-picture.idl
+	**/
+	var documentPictureInPicture(default, null) : js.documentPictureInPicture.DocumentPictureInPicture;
+	/**
+		From partial interface in dom.idl
+	**/
+	var event(default, null) : haxe.extern.EitherType<js.dom.Event, Void>;
+	/**
+		From partial interface in fenced-frame.idl
+	**/
+	var fence(default, null) : js.fencedFrame.Fence;
+	/**
+		From partial interface in html.idl
+	**/
+	var external(default, null) : External;
+	/**
+		From partial interface in manifest-incubations.idl
+	**/
+	var onappinstalled : EventHandler;
+	/**
+		From partial interface in manifest-incubations.idl
+	**/
+	var onbeforeinstallprompt : EventHandler;
+	/**
+		From partial interface in orientation-event.idl
+	**/
+	var ondeviceorientation : EventHandler;
+	/**
+		From partial interface in orientation-event.idl
+	**/
+	var ondeviceorientationabsolute : EventHandler;
+	/**
+		From partial interface in orientation-event.idl
+	**/
+	var ondevicemotion : EventHandler;
+	/**
+		From partial interface in portals.idl
+	**/
+	var portalHost(default, null) : js.portals.PortalHost;
+	/**
+		From partial interface in shared-storage.idl
+	**/
+	var sharedStorage(default, null) : js.sharedStorage.SharedStorage;
+	/**
+		From partial interface in speech-api.idl
+	**/
+	var speechSynthesis(default, null) : js.speechApi.SpeechSynthesis;
+	/**
+		From partial interface in web-app-launch.idl
+	**/
+	var launchQueue(default, null) : js.webAppLaunch.LaunchQueue;
 	overload function alert():Void;
 	overload function alert(message:String):Void;
 	function blur():Void;

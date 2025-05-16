@@ -24,11 +24,9 @@
 
 package js.svg;
 
-/**
-	TODO attribute length
-	TODO attribute numberOfItems
-**/
 extern class SVGPointList {
+	var length(default, null) : Int;
+	var numberOfItems(default, null) : Int;
 	/**
 		(special = setter)
 	**/

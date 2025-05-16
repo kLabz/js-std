@@ -24,9 +24,6 @@
 
 package js.webOtp;
 
-/**
-	TODO attribute code
-**/
 extern class OTPCredential extends js.credentialManagement.Credential {
-
+	var code(default, null) : String;
 }

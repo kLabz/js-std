@@ -24,10 +24,8 @@
 
 package js.cssTypedOm;
 
-/**
-	TODO attribute length
-**/
 extern class CSSUnparsedValue extends CSSStyleValue implements ArrayAccess<CSSUnparsedSegment> {
+	var length(default, null) : Int;
 	function new(members:Array<CSSUnparsedSegment>):Void;
 	/**
 		(special = setter)

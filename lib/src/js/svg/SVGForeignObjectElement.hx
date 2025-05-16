@@ -24,12 +24,9 @@
 
 package js.svg;
 
-/**
-	TODO attribute x
-	TODO attribute y
-	TODO attribute width
-	TODO attribute height
-**/
 extern class SVGForeignObjectElement extends SVGGraphicsElement {
-
+	var x(default, null) : SVGAnimatedLength;
+	var y(default, null) : SVGAnimatedLength;
+	var width(default, null) : SVGAnimatedLength;
+	var height(default, null) : SVGAnimatedLength;
 }

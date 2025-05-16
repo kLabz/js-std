@@ -24,11 +24,8 @@
 
 package js.layoutInstability;
 
-/**
-	TODO attribute node
-	TODO attribute previousRect
-	TODO attribute currentRect
-**/
 extern class LayoutShiftAttribution {
-
+	var node(default, null) : js.dom.Node;
+	var previousRect(default, null) : js.geometry.DOMRectReadOnly;
+	var currentRect(default, null) : js.geometry.DOMRectReadOnly;
 }

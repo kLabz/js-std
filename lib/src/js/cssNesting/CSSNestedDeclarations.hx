@@ -24,9 +24,6 @@
 
 package js.cssNesting;
 
-/**
-	TODO attribute style
-**/
 extern class CSSNestedDeclarations extends js.cssom.CSSRule {
-
+	var style(default, null) : js.cssom.CSSStyleProperties;
 }

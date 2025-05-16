@@ -24,10 +24,8 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute curve
-	TODO attribute oversample
-**/
 extern class WaveShaperNode extends AudioNode {
+	var curve : Float32Array;
+	var oversample : OverSampleType;
 	function new(context:BaseAudioContext, ?options:WaveShaperOptions):Void;
 }

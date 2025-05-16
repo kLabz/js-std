@@ -24,11 +24,9 @@
 
 package js.computePressure;
 
-/**
-	TODO attribute source
-	TODO attribute state
-	TODO attribute time
-**/
 extern class PressureRecord {
+	var source(default, null) : PressureSource;
+	var state(default, null) : PressureState;
+	var time(default, null) : DOMHighResTimeStamp;
 	function toJSON():{ };
 }

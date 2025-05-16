@@ -24,9 +24,6 @@
 
 package js.presentationApi;
 
-/**
-	TODO attribute connectionList
-**/
 extern class PresentationReceiver {
-
+	var connectionList(default, null) : js.lib.Promise<PresentationConnectionList>;
 }

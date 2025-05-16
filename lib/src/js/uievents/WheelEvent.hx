@@ -24,15 +24,13 @@
 
 package js.uievents;
 
-/**
-	TODO attribute deltaX
-	TODO attribute deltaY
-	TODO attribute deltaZ
-	TODO attribute deltaMode
-**/
 extern class WheelEvent extends MouseEvent {
 	static inline var DOM_DELTA_PIXEL : Int = 0x00;
 	static inline var DOM_DELTA_LINE : Int = 0x01;
 	static inline var DOM_DELTA_PAGE : Int = 0x02;
+	var deltaX(default, null) : Float;
+	var deltaY(default, null) : Float;
+	var deltaZ(default, null) : Float;
+	var deltaMode(default, null) : Int;
 	function new(type:String, ?eventInitDict:WheelEventInit):Void;
 }

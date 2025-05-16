@@ -24,10 +24,8 @@
 
 package js.speechApi;
 
-/**
-	TODO attribute resultIndex
-	TODO attribute results
-**/
 extern class SpeechRecognitionEvent extends js.dom.Event {
+	var resultIndex(default, null) : Int;
+	var results(default, null) : SpeechRecognitionResultList;
 	function new(type:String, eventInitDict:SpeechRecognitionEventInit):Void;
 }

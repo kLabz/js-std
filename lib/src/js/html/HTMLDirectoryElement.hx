@@ -24,9 +24,7 @@
 
 package js.html;
 
-/**
-	TODO attribute compact
-**/
 extern class HTMLDirectoryElement extends HTMLElement {
+	var compact : Bool;
 	function new():Void;
 }

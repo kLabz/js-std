@@ -24,16 +24,14 @@
 
 package js.webvtt;
 
-/**
-	TODO attribute id
-	TODO attribute width
-	TODO attribute lines
-	TODO attribute regionAnchorX
-	TODO attribute regionAnchorY
-	TODO attribute viewportAnchorX
-	TODO attribute viewportAnchorY
-	TODO attribute scroll
-**/
 extern class VTTRegion {
+	var id : String;
+	var width : Float;
+	var lines : Int;
+	var regionAnchorX : Float;
+	var regionAnchorY : Float;
+	var viewportAnchorX : Float;
+	var viewportAnchorY : Float;
+	var scroll : ScrollSetting;
 	function new():Void;
 }

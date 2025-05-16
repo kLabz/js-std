@@ -24,9 +24,6 @@
 
 package js.cssConditional;
 
-/**
-	TODO attribute conditionText
-**/
 extern class CSSConditionRule extends js.cssom.CSSGroupingRule {
-
+	var conditionText(default, null) : CSSOMString;
 }

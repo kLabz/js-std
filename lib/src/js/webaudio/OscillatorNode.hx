@@ -24,12 +24,10 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute type
-	TODO attribute frequency
-	TODO attribute detune
-**/
 extern class OscillatorNode extends AudioScheduledSourceNode {
+	var type : OscillatorType;
+	var frequency(default, null) : AudioParam;
+	var detune(default, null) : AudioParam;
 	function new(context:BaseAudioContext, ?options:OscillatorOptions):Void;
 	function setPeriodicWave(periodicWave:PeriodicWave):Void;
 }

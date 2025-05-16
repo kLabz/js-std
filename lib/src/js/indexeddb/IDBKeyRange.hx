@@ -24,13 +24,11 @@
 
 package js.indexeddb;
 
-/**
-	TODO attribute lower
-	TODO attribute upper
-	TODO attribute lowerOpen
-	TODO attribute upperOpen
-**/
 extern class IDBKeyRange {
+	var lower(default, null) : Any;
+	var upper(default, null) : Any;
+	var lowerOpen(default, null) : Bool;
+	var upperOpen(default, null) : Bool;
 	function bound(lower:Any, upper:Any, ?lowerOpen:Bool, ?upperOpen:Bool):IDBKeyRange;
 	function includes(key:Any):Bool;
 	function lowerBound(lower:Any, ?open:Bool):IDBKeyRange;

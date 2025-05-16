@@ -24,10 +24,8 @@
 
 package js.mediastreamRecording;
 
-/**
-	TODO attribute data
-	TODO attribute timecode
-**/
 extern class BlobEvent extends js.dom.Event {
+	var data(default, null) : js.fileapi.Blob;
+	var timecode(default, null) : DOMHighResTimeStamp;
 	function new(type:String, eventInitDict:BlobEventInit):Void;
 }

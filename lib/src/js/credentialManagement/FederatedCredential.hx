@@ -24,10 +24,8 @@
 
 package js.credentialManagement;
 
-/**
-	TODO attribute provider
-	TODO attribute protocol
-**/
 extern class FederatedCredential extends Credential {
+	var provider(default, null) : String;
+	var protocol(default, null) : String;
 	function new(data:FederatedCredentialInit):Void;
 }

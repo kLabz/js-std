@@ -24,12 +24,10 @@
 
 package js.cssomView;
 
-/**
-	TODO attribute media
-	TODO attribute matches
-	TODO attribute onchange
-**/
 extern class MediaQueryList extends js.dom.EventTarget {
+	var media(default, null) : CSSOMString;
+	var matches(default, null) : Bool;
+	var onchange : EventHandler;
 	function addListener(callback:EventListener):Void;
 	function removeListener(callback:EventListener):Void;
 }

@@ -24,13 +24,14 @@
 
 package js.html;
 
-/**
-	TODO attribute name
-	TODO attribute httpEquiv
-	TODO attribute content
-	TODO attribute media
-	TODO attribute scheme
-**/
 extern class HTMLMetaElement extends HTMLElement {
+	var name : String;
+	var httpEquiv : String;
+	var content : String;
+	var media : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var scheme : String;
 	function new():Void;
 }

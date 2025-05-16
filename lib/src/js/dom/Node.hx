@@ -24,22 +24,6 @@
 
 package js.dom;
 
-/**
-	TODO attribute nodeType
-	TODO attribute nodeName
-	TODO attribute baseURI
-	TODO attribute isConnected
-	TODO attribute ownerDocument
-	TODO attribute parentNode
-	TODO attribute parentElement
-	TODO attribute childNodes
-	TODO attribute firstChild
-	TODO attribute lastChild
-	TODO attribute previousSibling
-	TODO attribute nextSibling
-	TODO attribute nodeValue
-	TODO attribute textContent
-**/
 extern class Node extends EventTarget {
 	static inline var ELEMENT_NODE : Int = 1;
 	static inline var ATTRIBUTE_NODE : Int = 2;
@@ -53,6 +37,20 @@ extern class Node extends EventTarget {
 	static inline var DOCUMENT_TYPE_NODE : Int = 10;
 	static inline var DOCUMENT_FRAGMENT_NODE : Int = 11;
 	static inline var NOTATION_NODE : Int = 12;
+	var nodeType(default, null) : Int;
+	var nodeName(default, null) : String;
+	var baseURI(default, null) : String;
+	var isConnected(default, null) : Bool;
+	var ownerDocument(default, null) : Document;
+	var parentNode(default, null) : Node;
+	var parentElement(default, null) : Element;
+	var childNodes(default, null) : NodeList;
+	var firstChild(default, null) : Node;
+	var lastChild(default, null) : Node;
+	var previousSibling(default, null) : Node;
+	var nextSibling(default, null) : Node;
+	var nodeValue : String;
+	var textContent : String;
 	static inline var DOCUMENT_POSITION_DISCONNECTED : Int = 0x01;
 	static inline var DOCUMENT_POSITION_PRECEDING : Int = 0x02;
 	static inline var DOCUMENT_POSITION_FOLLOWING : Int = 0x04;

@@ -24,21 +24,19 @@
 
 package js.webcodecs;
 
-/**
-	TODO attribute format
-	TODO attribute codedWidth
-	TODO attribute codedHeight
-	TODO attribute codedRect
-	TODO attribute visibleRect
-	TODO attribute rotation
-	TODO attribute flip
-	TODO attribute displayWidth
-	TODO attribute displayHeight
-	TODO attribute duration
-	TODO attribute timestamp
-	TODO attribute colorSpace
-**/
 extern class VideoFrame {
+	var format(default, null) : VideoPixelFormat;
+	var codedWidth(default, null) : Int;
+	var codedHeight(default, null) : Int;
+	var codedRect(default, null) : js.geometry.DOMRectReadOnly;
+	var visibleRect(default, null) : js.geometry.DOMRectReadOnly;
+	var rotation(default, null) : Float;
+	var flip(default, null) : Bool;
+	var displayWidth(default, null) : Int;
+	var displayHeight(default, null) : Int;
+	var duration(default, null) : Float;
+	var timestamp(default, null) : Float;
+	var colorSpace(default, null) : VideoColorSpace;
 	overload function new(data:AllowSharedBufferSource, init:VideoFrameBufferInit):Void;
 	overload function new(image:CanvasImageSource, ?init:VideoFrameInit):Void;
 	function allocationSize(?options:VideoFrameCopyToOptions):Int;

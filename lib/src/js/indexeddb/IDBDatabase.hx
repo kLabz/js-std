@@ -24,16 +24,14 @@
 
 package js.indexeddb;
 
-/**
-	TODO attribute name
-	TODO attribute version
-	TODO attribute objectStoreNames
-	TODO attribute onabort
-	TODO attribute onclose
-	TODO attribute onerror
-	TODO attribute onversionchange
-**/
 extern class IDBDatabase extends js.dom.EventTarget {
+	var name(default, null) : String;
+	var version(default, null) : Float;
+	var objectStoreNames(default, null) : js.html.DOMStringList;
+	var onabort : EventHandler;
+	var onclose : EventHandler;
+	var onerror : EventHandler;
+	var onversionchange : EventHandler;
 	function close():Void;
 	function createObjectStore(name:String, ?options:IDBObjectStoreParameters):IDBObjectStore;
 	function deleteObjectStore(name:String):Void;

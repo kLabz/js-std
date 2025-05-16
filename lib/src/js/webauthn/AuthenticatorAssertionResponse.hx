@@ -24,11 +24,8 @@
 
 package js.webauthn;
 
-/**
-	TODO attribute authenticatorData
-	TODO attribute signature
-	TODO attribute userHandle
-**/
 extern class AuthenticatorAssertionResponse extends AuthenticatorResponse {
-
+	var authenticatorData(default, null) : ArrayBuffer;
+	var signature(default, null) : ArrayBuffer;
+	var userHandle(default, null) : ArrayBuffer;
 }

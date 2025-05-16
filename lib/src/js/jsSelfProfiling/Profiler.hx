@@ -24,11 +24,9 @@
 
 package js.jsSelfProfiling;
 
-/**
-	TODO attribute sampleInterval
-	TODO attribute stopped
-**/
 extern class Profiler extends js.dom.EventTarget {
+	var sampleInterval(default, null) : DOMHighResTimeStamp;
+	var stopped(default, null) : Bool;
 	function new(options:ProfilerInitOptions):Void;
 	function stop():js.lib.Promise<ProfilerTrace>;
 }

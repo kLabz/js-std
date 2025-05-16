@@ -24,10 +24,8 @@
 
 package js.streams;
 
-/**
-	TODO attribute locked
-**/
 extern class ReadableStream {
+	var locked(default, null) : Bool;
 	function new(?underlyingSource:{ }, ?strategy:QueuingStrategy):Void;
 	function cancel(?reason:Any):js.lib.Promise<Void>;
 	function from(asyncIterable:Any):ReadableStream;

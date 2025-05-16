@@ -24,9 +24,7 @@
 
 package js.speechApi;
 
-/**
-	TODO attribute error
-**/
 extern class SpeechSynthesisErrorEvent extends SpeechSynthesisEvent {
+	var error(default, null) : SpeechSynthesisErrorCode;
 	function new(type:String, eventInitDict:SpeechSynthesisErrorEventInit):Void;
 }

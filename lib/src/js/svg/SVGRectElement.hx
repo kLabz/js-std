@@ -24,14 +24,11 @@
 
 package js.svg;
 
-/**
-	TODO attribute x
-	TODO attribute y
-	TODO attribute width
-	TODO attribute height
-	TODO attribute rx
-	TODO attribute ry
-**/
 extern class SVGRectElement extends SVGGeometryElement {
-
+	var x(default, null) : SVGAnimatedLength;
+	var y(default, null) : SVGAnimatedLength;
+	var width(default, null) : SVGAnimatedLength;
+	var height(default, null) : SVGAnimatedLength;
+	var rx(default, null) : SVGAnimatedLength;
+	var ry(default, null) : SVGAnimatedLength;
 }

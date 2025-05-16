@@ -24,16 +24,14 @@
 
 package js.paymentRequest;
 
-/**
-	TODO attribute id
-	TODO attribute shippingAddress
-	TODO attribute shippingOption
-	TODO attribute shippingType
-	TODO attribute onshippingaddresschange
-	TODO attribute onshippingoptionchange
-	TODO attribute onpaymentmethodchange
-**/
 extern class PaymentRequest extends js.dom.EventTarget {
+	var id(default, null) : String;
+	var shippingAddress(default, null) : js.contactPicker.ContactAddress;
+	var shippingOption(default, null) : String;
+	var shippingType(default, null) : PaymentShippingType;
+	var onshippingaddresschange : EventHandler;
+	var onshippingoptionchange : EventHandler;
+	var onpaymentmethodchange : EventHandler;
 	function new(methodData:Array<PaymentMethodData>, details:PaymentDetailsInit, ?options:PaymentOptions):Void;
 	function abort():js.lib.Promise<Void>;
 	function canMakePayment():js.lib.Promise<Bool>;

@@ -24,12 +24,9 @@
 
 package js.cssColor5;
 
-/**
-	TODO attribute name
-	TODO attribute src
-	TODO attribute renderingIntent
-	TODO attribute components
-**/
 extern class CSSColorProfileRule extends js.cssom.CSSRule {
-
+	var name(default, null) : CSSOMString;
+	var src(default, null) : CSSOMString;
+	var renderingIntent(default, null) : CSSOMString;
+	var components(default, null) : CSSOMString;
 }

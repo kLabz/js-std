@@ -24,16 +24,14 @@
 
 package js.intersectionObserver;
 
-/**
-	TODO attribute time
-	TODO attribute rootBounds
-	TODO attribute boundingClientRect
-	TODO attribute intersectionRect
-	TODO attribute isIntersecting
-	TODO attribute isVisible
-	TODO attribute intersectionRatio
-	TODO attribute target
-**/
 extern class IntersectionObserverEntry {
+	var time(default, null) : DOMHighResTimeStamp;
+	var rootBounds(default, null) : js.geometry.DOMRectReadOnly;
+	var boundingClientRect(default, null) : js.geometry.DOMRectReadOnly;
+	var intersectionRect(default, null) : js.geometry.DOMRectReadOnly;
+	var isIntersecting(default, null) : Bool;
+	var isVisible(default, null) : Bool;
+	var intersectionRatio(default, null) : Float;
+	var target(default, null) : js.dom.Element;
 	function new(intersectionObserverEntryInit:IntersectionObserverEntryInit):Void;
 }

@@ -24,36 +24,61 @@
 
 package js.webxr;
 
-/**
-	TODO attribute visibilityState
-	TODO attribute frameRate
-	TODO attribute supportedFrameRates
-	TODO attribute renderState
-	TODO attribute inputSources
-	TODO attribute trackedSources
-	TODO attribute enabledFeatures
-	TODO attribute isSystemKeyboardSupported
-	TODO attribute onend
-	TODO attribute oninputsourceschange
-	TODO attribute onselect
-	TODO attribute onselectstart
-	TODO attribute onselectend
-	TODO attribute onsqueeze
-	TODO attribute onsqueezestart
-	TODO attribute onsqueezeend
-	TODO attribute onvisibilitychange
-	TODO attribute onframeratechange
-	TODO attribute persistentAnchors
-	TODO attribute environmentBlendMode
-	TODO attribute interactionMode
-	TODO attribute domOverlayState
-	TODO attribute preferredReflectionFormat
-	TODO attribute depthUsage
-	TODO attribute depthDataFormat
-	TODO attribute depthType
-	TODO attribute depthActive
-**/
 extern class XRSession extends js.dom.EventTarget {
+	var visibilityState(default, null) : XRVisibilityState;
+	var frameRate(default, null) : Float;
+	var supportedFrameRates(default, null) : Float32Array;
+	var renderState(default, null) : XRRenderState;
+	var inputSources(default, null) : XRInputSourceArray;
+	var trackedSources(default, null) : XRInputSourceArray;
+	var enabledFeatures(default, null) : Array<String>;
+	var isSystemKeyboardSupported(default, null) : Bool;
+	var onend : EventHandler;
+	var oninputsourceschange : EventHandler;
+	var onselect : EventHandler;
+	var onselectstart : EventHandler;
+	var onselectend : EventHandler;
+	var onsqueeze : EventHandler;
+	var onsqueezestart : EventHandler;
+	var onsqueezeend : EventHandler;
+	var onvisibilitychange : EventHandler;
+	var onframeratechange : EventHandler;
+	/**
+		From partial interface in anchors.idl
+	**/
+	var persistentAnchors(default, null) : Array<String>;
+	/**
+		From partial interface in webxr-depth-sensing.idl
+	**/
+	var depthUsage(default, null) : js.webxrDepthSensing.XRDepthUsage;
+	/**
+		From partial interface in webxr-depth-sensing.idl
+	**/
+	var depthDataFormat(default, null) : js.webxrDepthSensing.XRDepthDataFormat;
+	/**
+		From partial interface in webxr-depth-sensing.idl
+	**/
+	var depthType(default, null) : js.webxrDepthSensing.XRDepthType;
+	/**
+		From partial interface in webxr-depth-sensing.idl
+	**/
+	var depthActive(default, null) : Bool;
+	/**
+		From partial interface in webxr-ar-module.idl
+	**/
+	var environmentBlendMode(default, null) : js.webxrArModule.XREnvironmentBlendMode;
+	/**
+		From partial interface in webxr-ar-module.idl
+	**/
+	var interactionMode(default, null) : js.webxrArModule.XRInteractionMode;
+	/**
+		From partial interface in webxr-dom-overlays.idl
+	**/
+	var domOverlayState(default, null) : js.webxrDomOverlays.XRDOMOverlayState;
+	/**
+		From partial interface in webxr-lighting-estimation.idl
+	**/
+	var preferredReflectionFormat(default, null) : js.webxrLightingEstimation.XRReflectionFormat;
 	function cancelAnimationFrame(handle:Int):Void;
 	/**
 		From partial interface in anchors.idl

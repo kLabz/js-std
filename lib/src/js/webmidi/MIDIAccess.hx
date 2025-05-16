@@ -24,12 +24,9 @@
 
 package js.webmidi;
 
-/**
-	TODO attribute inputs
-	TODO attribute outputs
-	TODO attribute onstatechange
-	TODO attribute sysexEnabled
-**/
 extern class MIDIAccess extends js.dom.EventTarget {
-
+	var inputs(default, null) : MIDIInputMap;
+	var outputs(default, null) : MIDIOutputMap;
+	var onstatechange : EventHandler;
+	var sysexEnabled(default, null) : Bool;
 }

@@ -24,10 +24,7 @@
 
 package js.svg;
 
-/**
-	TODO attribute baseVal
-	TODO attribute animVal
-**/
 extern class SVGAnimatedBoolean {
-
+	var baseVal : Bool;
+	var animVal(default, null) : Bool;
 }

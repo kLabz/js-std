@@ -24,18 +24,16 @@
 
 package js.editContext;
 
-/**
-	TODO attribute text
-	TODO attribute selectionStart
-	TODO attribute selectionEnd
-	TODO attribute characterBoundsRangeStart
-	TODO attribute ontextupdate
-	TODO attribute ontextformatupdate
-	TODO attribute oncharacterboundsupdate
-	TODO attribute oncompositionstart
-	TODO attribute oncompositionend
-**/
 extern class EditContext extends js.dom.EventTarget {
+	var text(default, null) : String;
+	var selectionStart(default, null) : Int;
+	var selectionEnd(default, null) : Int;
+	var characterBoundsRangeStart(default, null) : Int;
+	var ontextupdate : EventHandler;
+	var ontextformatupdate : EventHandler;
+	var oncharacterboundsupdate : EventHandler;
+	var oncompositionstart : EventHandler;
+	var oncompositionend : EventHandler;
 	function new(?options:EditContextInit):Void;
 	function attachedElements():Array<js.html.HTMLElement>;
 	function characterBounds():Array<js.geometry.DOMRect>;

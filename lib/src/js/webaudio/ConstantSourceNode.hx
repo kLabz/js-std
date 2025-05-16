@@ -24,9 +24,7 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute offset
-**/
 extern class ConstantSourceNode extends AudioScheduledSourceNode {
+	var offset(default, null) : AudioParam;
 	function new(context:BaseAudioContext, ?options:ConstantSourceOptions):Void;
 }

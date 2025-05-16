@@ -24,19 +24,17 @@
 
 package js.webvtt;
 
-/**
-	TODO attribute region
-	TODO attribute vertical
-	TODO attribute snapToLines
-	TODO attribute line
-	TODO attribute lineAlign
-	TODO attribute position
-	TODO attribute positionAlign
-	TODO attribute size
-	TODO attribute align
-	TODO attribute text
-**/
 extern class VTTCue extends js.html.TextTrackCue {
+	var region : VTTRegion;
+	var vertical : DirectionSetting;
+	var snapToLines : Bool;
+	var line : LineAndPositionSetting;
+	var lineAlign : LineAlignSetting;
+	var position : LineAndPositionSetting;
+	var positionAlign : PositionAlignSetting;
+	var size : Float;
+	var align : AlignSetting;
+	var text : String;
 	function new(startTime:Float, endTime:Float, text:String):Void;
 	function getCueAsHTML():js.dom.DocumentFragment;
 }

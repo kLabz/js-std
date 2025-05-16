@@ -24,18 +24,22 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute role
-	TODO attribute component
-	TODO attribute state
-	TODO attribute gatheringState
-	TODO attribute onstatechange
-	TODO attribute ongatheringstatechange
-	TODO attribute onselectedcandidatepairchange
-	TODO attribute onerror
-	TODO attribute onicecandidate
-**/
 extern class RTCIceTransport extends js.dom.EventTarget {
+	var role(default, null) : RTCIceRole;
+	var component(default, null) : RTCIceComponent;
+	var state(default, null) : RTCIceTransportState;
+	var gatheringState(default, null) : RTCIceGathererState;
+	var onstatechange : EventHandler;
+	var ongatheringstatechange : EventHandler;
+	var onselectedcandidatepairchange : EventHandler;
+	/**
+		From partial interface in webrtc-ice.idl
+	**/
+	var onerror : EventHandler;
+	/**
+		From partial interface in webrtc-ice.idl
+	**/
+	var onicecandidate : EventHandler;
 	/**
 		From partial interface in webrtc-ice.idl
 	**/

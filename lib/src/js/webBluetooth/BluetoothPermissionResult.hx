@@ -24,9 +24,6 @@
 
 package js.webBluetooth;
 
-/**
-	TODO attribute devices
-**/
 extern class BluetoothPermissionResult extends js.permissions.PermissionStatus {
-
+	var devices : Array<BluetoothDevice>;
 }

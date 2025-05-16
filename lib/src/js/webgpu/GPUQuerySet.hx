@@ -24,10 +24,8 @@
 
 package js.webgpu;
 
-/**
-	TODO attribute type
-	TODO attribute count
-**/
 extern class GPUQuerySet {
+	var type(default, null) : GPUQueryType;
+	var count(default, null) : GPUSize32Out;
 	function destroy():Void;
 }

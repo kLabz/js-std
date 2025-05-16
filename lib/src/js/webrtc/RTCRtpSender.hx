@@ -24,13 +24,17 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute track
-	TODO attribute transport
-	TODO attribute transform
-	TODO attribute dtmf
-**/
 extern class RTCRtpSender {
+	var track(default, null) : js.mediacaptureStreams.MediaStreamTrack;
+	var transport(default, null) : RTCDtlsTransport;
+	/**
+		From partial interface in webrtc-encoded-transform.idl
+	**/
+	var transform : RTCRtpTransform;
+	/**
+		From partial interface in webrtc.idl
+	**/
+	var dtmf(default, null) : RTCDTMFSender;
 	/**
 		From partial interface in webrtc-encoded-transform.idl
 	**/

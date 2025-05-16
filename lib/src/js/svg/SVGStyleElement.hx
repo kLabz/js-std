@@ -24,11 +24,8 @@
 
 package js.svg;
 
-/**
-	TODO attribute type
-	TODO attribute media
-	TODO attribute title
-**/
 extern class SVGStyleElement extends SVGElement {
-
+	var type : String;
+	var media : String;
+	var title : String;
 }

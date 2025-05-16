@@ -24,10 +24,8 @@
 
 package js.geolocation;
 
-/**
-	TODO attribute coords
-	TODO attribute timestamp
-**/
 extern class GeolocationPosition {
+	var coords(default, null) : GeolocationCoordinates;
+	var timestamp(default, null) : EpochTimeStamp;
 	function toJSON():{ };
 }

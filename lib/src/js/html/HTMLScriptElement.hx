@@ -24,23 +24,30 @@
 
 package js.html;
 
-/**
-	TODO attribute src
-	TODO attribute type
-	TODO attribute noModule
-	TODO attribute async
-	TODO attribute defer
-	TODO attribute crossOrigin
-	TODO attribute text
-	TODO attribute integrity
-	TODO attribute referrerPolicy
-	TODO attribute blocking
-	TODO attribute fetchPriority
-	TODO attribute charset
-	TODO attribute event
-	TODO attribute htmlFor
-**/
 extern class HTMLScriptElement extends HTMLElement {
+	var src : String;
+	var type : String;
+	var noModule : Bool;
+	var async : Bool;
+	var defer : Bool;
+	var crossOrigin : String;
+	var text : String;
+	var integrity : String;
+	var referrerPolicy : String;
+	var blocking(default, null) : js.dom.DOMTokenList;
+	var fetchPriority : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var charset : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var event : String;
+	/**
+		From partial interface in html.idl
+	**/
+	var htmlFor : String;
 	function new():Void;
 	function supports(type:String):Bool;
 }

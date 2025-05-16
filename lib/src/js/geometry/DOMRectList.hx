@@ -24,9 +24,7 @@
 
 package js.geometry;
 
-/**
-	TODO attribute length
-**/
 extern class DOMRectList {
+	var length(default, null) : Int;
 	function item(index:Int):DOMRect;
 }

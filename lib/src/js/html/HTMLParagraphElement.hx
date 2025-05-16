@@ -24,9 +24,10 @@
 
 package js.html;
 
-/**
-	TODO attribute align
-**/
 extern class HTMLParagraphElement extends HTMLElement {
+	/**
+		From partial interface in html.idl
+	**/
+	var align : String;
 	function new():Void;
 }

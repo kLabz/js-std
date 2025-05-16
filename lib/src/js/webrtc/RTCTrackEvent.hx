@@ -24,12 +24,10 @@
 
 package js.webrtc;
 
-/**
-	TODO attribute receiver
-	TODO attribute track
-	TODO attribute streams
-	TODO attribute transceiver
-**/
 extern class RTCTrackEvent extends js.dom.Event {
+	var receiver(default, null) : RTCRtpReceiver;
+	var track(default, null) : js.mediacaptureStreams.MediaStreamTrack;
+	var streams(default, null) : Array<js.mediacaptureStreams.MediaStream>;
+	var transceiver(default, null) : RTCRtpTransceiver;
 	function new(type:String, eventInitDict:RTCTrackEventInit):Void;
 }

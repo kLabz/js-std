@@ -24,30 +24,28 @@
 
 package js.notifications;
 
-/**
-	TODO attribute permission
-	TODO attribute maxActions
-	TODO attribute onclick
-	TODO attribute onshow
-	TODO attribute onerror
-	TODO attribute onclose
-	TODO attribute title
-	TODO attribute dir
-	TODO attribute lang
-	TODO attribute body
-	TODO attribute tag
-	TODO attribute image
-	TODO attribute icon
-	TODO attribute badge
-	TODO attribute vibrate
-	TODO attribute timestamp
-	TODO attribute renotify
-	TODO attribute silent
-	TODO attribute requireInteraction
-	TODO attribute data
-	TODO attribute actions
-**/
 extern class Notification extends js.dom.EventTarget {
+	static var permission(default, null) : NotificationPermission;
+	static var maxActions(default, null) : Int;
+	var onclick : EventHandler;
+	var onshow : EventHandler;
+	var onerror : EventHandler;
+	var onclose : EventHandler;
+	var title(default, null) : String;
+	var dir(default, null) : NotificationDirection;
+	var lang(default, null) : String;
+	var body(default, null) : String;
+	var tag(default, null) : String;
+	var image(default, null) : String;
+	var icon(default, null) : String;
+	var badge(default, null) : String;
+	var vibrate(default, null) : Array<Int>;
+	var timestamp(default, null) : EpochTimeStamp;
+	var renotify(default, null) : Bool;
+	var silent(default, null) : Bool;
+	var requireInteraction(default, null) : Bool;
+	var data(default, null) : Any;
+	var actions(default, null) : Array<NotificationAction>;
 	function new(title:String, ?options:NotificationOptions):Void;
 	function close():Void;
 	function requestPermission(?deprecatedCallback:NotificationPermissionCallback):js.lib.Promise<NotificationPermission>;

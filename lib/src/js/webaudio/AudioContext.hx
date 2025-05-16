@@ -24,14 +24,12 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute baseLatency
-	TODO attribute outputLatency
-	TODO attribute sinkId
-	TODO attribute onsinkchange
-	TODO attribute onerror
-**/
 extern class AudioContext extends BaseAudioContext {
+	var baseLatency(default, null) : Float;
+	var outputLatency(default, null) : Float;
+	var sinkId(default, null) : haxe.extern.EitherType<String, AudioSinkInfo>;
+	var onsinkchange : EventHandler;
+	var onerror : EventHandler;
 	function new(?contextOptions:AudioContextOptions):Void;
 	function close():js.lib.Promise<Void>;
 	function createMediaElementSource(mediaElement:js.html.HTMLMediaElement):MediaElementAudioSourceNode;

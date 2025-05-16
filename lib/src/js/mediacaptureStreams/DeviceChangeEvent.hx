@@ -24,10 +24,8 @@
 
 package js.mediacaptureStreams;
 
-/**
-	TODO attribute devices
-	TODO attribute userInsertedDevices
-**/
 extern class DeviceChangeEvent extends js.dom.Event {
+	var devices(default, null) : Array<MediaDeviceInfo>;
+	var userInsertedDevices(default, null) : Array<MediaDeviceInfo>;
 	function new(type:String, ?eventInitDict:DeviceChangeEventInit):Void;
 }

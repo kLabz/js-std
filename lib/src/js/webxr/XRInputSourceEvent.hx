@@ -24,10 +24,8 @@
 
 package js.webxr;
 
-/**
-	TODO attribute frame
-	TODO attribute inputSource
-**/
 extern class XRInputSourceEvent extends js.dom.Event {
+	var frame(default, null) : XRFrame;
+	var inputSource(default, null) : XRInputSource;
 	function new(type:String, eventInitDict:XRInputSourceEventInit):Void;
 }

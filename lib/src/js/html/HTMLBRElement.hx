@@ -24,9 +24,10 @@
 
 package js.html;
 
-/**
-	TODO attribute clear
-**/
 extern class HTMLBRElement extends HTMLElement {
+	/**
+		From partial interface in html.idl
+	**/
+	var clear : String;
 	function new():Void;
 }

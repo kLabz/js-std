@@ -24,10 +24,8 @@
 
 package js.windowControlsOverlay;
 
-/**
-	TODO attribute titlebarAreaRect
-	TODO attribute visible
-**/
 extern class WindowControlsOverlayGeometryChangeEvent extends js.dom.Event {
+	var titlebarAreaRect(default, null) : js.geometry.DOMRect;
+	var visible(default, null) : Bool;
 	function new(type:String, eventInitDict:WindowControlsOverlayGeometryChangeEventInit):Void;
 }

@@ -24,17 +24,15 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute destination
-	TODO attribute sampleRate
-	TODO attribute currentTime
-	TODO attribute listener
-	TODO attribute state
-	TODO attribute renderQuantumSize
-	TODO attribute audioWorklet
-	TODO attribute onstatechange
-**/
 extern class BaseAudioContext extends js.dom.EventTarget {
+	var destination(default, null) : AudioDestinationNode;
+	var sampleRate(default, null) : Float;
+	var currentTime(default, null) : Float;
+	var listener(default, null) : AudioListener;
+	var state(default, null) : AudioContextState;
+	var renderQuantumSize(default, null) : Int;
+	var audioWorklet(default, null) : AudioWorklet;
+	var onstatechange : EventHandler;
 	function createAnalyser():AnalyserNode;
 	function createBiquadFilter():BiquadFilterNode;
 	function createBuffer(numberOfChannels:Int, length:Int, sampleRate:Float):AudioBuffer;

@@ -24,14 +24,14 @@
 
 package js.webxr;
 
-/**
-	TODO attribute depthNear
-	TODO attribute depthFar
-	TODO attribute passthroughFullyObscured
-	TODO attribute inlineVerticalFieldOfView
-	TODO attribute baseLayer
-	TODO attribute layers
-**/
 extern class XRRenderState {
-
+	var depthNear(default, null) : Float;
+	var depthFar(default, null) : Float;
+	var passthroughFullyObscured(default, null) : Bool;
+	var inlineVerticalFieldOfView(default, null) : Float;
+	var baseLayer(default, null) : XRWebGLLayer;
+	/**
+		From partial interface in webxrlayers.idl
+	**/
+	var layers(default, null) : Array<XRLayer>;
 }

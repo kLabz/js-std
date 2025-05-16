@@ -24,52 +24,68 @@
 
 package js.html;
 
-/**
-	TODO attribute error
-	TODO attribute src
-	TODO attribute srcObject
-	TODO attribute currentSrc
-	TODO attribute crossOrigin
-	TODO attribute networkState
-	TODO attribute preload
-	TODO attribute buffered
-	TODO attribute readyState
-	TODO attribute seeking
-	TODO attribute currentTime
-	TODO attribute duration
-	TODO attribute paused
-	TODO attribute defaultPlaybackRate
-	TODO attribute playbackRate
-	TODO attribute preservesPitch
-	TODO attribute played
-	TODO attribute seekable
-	TODO attribute ended
-	TODO attribute autoplay
-	TODO attribute loop
-	TODO attribute controls
-	TODO attribute volume
-	TODO attribute muted
-	TODO attribute defaultMuted
-	TODO attribute audioTracks
-	TODO attribute videoTracks
-	TODO attribute textTracks
-	TODO attribute sinkId
-	TODO attribute mediaKeys
-	TODO attribute onencrypted
-	TODO attribute onwaitingforkey
-	TODO attribute remote
-	TODO attribute disableRemotePlayback
-**/
 extern class HTMLMediaElement extends HTMLElement {
+	var error(default, null) : MediaError;
+	var src : String;
+	var srcObject : MediaProvider;
+	var currentSrc(default, null) : String;
+	var crossOrigin : String;
 	static inline var NETWORK_EMPTY : Int = 0;
 	static inline var NETWORK_IDLE : Int = 1;
 	static inline var NETWORK_LOADING : Int = 2;
 	static inline var NETWORK_NO_SOURCE : Int = 3;
+	var networkState(default, null) : Int;
+	var preload : String;
+	var buffered(default, null) : TimeRanges;
 	static inline var HAVE_NOTHING : Int = 0;
 	static inline var HAVE_METADATA : Int = 1;
 	static inline var HAVE_CURRENT_DATA : Int = 2;
 	static inline var HAVE_FUTURE_DATA : Int = 3;
 	static inline var HAVE_ENOUGH_DATA : Int = 4;
+	var readyState(default, null) : Int;
+	var seeking(default, null) : Bool;
+	var currentTime : Float;
+	var duration(default, null) : Float;
+	var paused(default, null) : Bool;
+	var defaultPlaybackRate : Float;
+	var playbackRate : Float;
+	var preservesPitch : Bool;
+	var played(default, null) : TimeRanges;
+	var seekable(default, null) : TimeRanges;
+	var ended(default, null) : Bool;
+	var autoplay : Bool;
+	var loop : Bool;
+	var controls : Bool;
+	var volume : Float;
+	var muted : Bool;
+	var defaultMuted : Bool;
+	var audioTracks(default, null) : AudioTrackList;
+	var videoTracks(default, null) : VideoTrackList;
+	var textTracks(default, null) : TextTrackList;
+	/**
+		From partial interface in audio-output.idl
+	**/
+	var sinkId(default, null) : String;
+	/**
+		From partial interface in encrypted-media.idl
+	**/
+	var mediaKeys(default, null) : js.encryptedMedia.MediaKeys;
+	/**
+		From partial interface in encrypted-media.idl
+	**/
+	var onencrypted : EventHandler;
+	/**
+		From partial interface in encrypted-media.idl
+	**/
+	var onwaitingforkey : EventHandler;
+	/**
+		From partial interface in remote-playback.idl
+	**/
+	var remote(default, null) : js.remotePlayback.RemotePlayback;
+	/**
+		From partial interface in remote-playback.idl
+	**/
+	var disableRemotePlayback : Bool;
 	function addTextTrack(kind:TextTrackKind, ?label:String, ?language:String):TextTrack;
 	function canPlayType(type:String):CanPlayTypeResult;
 	/**

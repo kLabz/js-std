@@ -24,10 +24,8 @@
 
 package js.trustedTypes;
 
-/**
-	TODO attribute name
-**/
 extern class TrustedTypePolicy {
+	var name(default, null) : String;
 	function createHTML(input:String, arguments:Any):TrustedHTML;
 	function createScript(input:String, arguments:Any):TrustedScript;
 	function createScriptURL(input:String, arguments:Any):TrustedScriptURL;

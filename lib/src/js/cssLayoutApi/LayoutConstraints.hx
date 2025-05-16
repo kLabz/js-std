@@ -24,17 +24,14 @@
 
 package js.cssLayoutApi;
 
-/**
-	TODO attribute availableInlineSize
-	TODO attribute availableBlockSize
-	TODO attribute fixedInlineSize
-	TODO attribute fixedBlockSize
-	TODO attribute percentageInlineSize
-	TODO attribute percentageBlockSize
-	TODO attribute blockFragmentationOffset
-	TODO attribute blockFragmentationType
-	TODO attribute data
-**/
 extern class LayoutConstraints {
-
+	var availableInlineSize(default, null) : Float;
+	var availableBlockSize(default, null) : Float;
+	var fixedInlineSize(default, null) : Float;
+	var fixedBlockSize(default, null) : Float;
+	var percentageInlineSize(default, null) : Float;
+	var percentageBlockSize(default, null) : Float;
+	var blockFragmentationOffset(default, null) : Float;
+	var blockFragmentationType(default, null) : BlockFragmentationType;
+	var data(default, null) : Any;
 }

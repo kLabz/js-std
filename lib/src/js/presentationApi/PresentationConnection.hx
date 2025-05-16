@@ -24,17 +24,15 @@
 
 package js.presentationApi;
 
-/**
-	TODO attribute id
-	TODO attribute url
-	TODO attribute state
-	TODO attribute onconnect
-	TODO attribute onclose
-	TODO attribute onterminate
-	TODO attribute binaryType
-	TODO attribute onmessage
-**/
 extern class PresentationConnection extends js.dom.EventTarget {
+	var id(default, null) : String;
+	var url(default, null) : String;
+	var state(default, null) : PresentationConnectionState;
+	var onconnect : EventHandler;
+	var onclose : EventHandler;
+	var onterminate : EventHandler;
+	var binaryType : js.websockets.BinaryType;
+	var onmessage : EventHandler;
 	function close():Void;
 	overload function send(message:String):Void;
 	overload function send(data:js.fileapi.Blob):Void;

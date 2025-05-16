@@ -24,13 +24,11 @@
 
 package js.speechApi;
 
-/**
-	TODO attribute pending
-	TODO attribute speaking
-	TODO attribute paused
-	TODO attribute onvoiceschanged
-**/
 extern class SpeechSynthesis extends js.dom.EventTarget {
+	var pending(default, null) : Bool;
+	var speaking(default, null) : Bool;
+	var paused(default, null) : Bool;
+	var onvoiceschanged : EventHandler;
 	function cancel():Void;
 	function getVoices():Array<SpeechSynthesisVoice>;
 	function pause():Void;

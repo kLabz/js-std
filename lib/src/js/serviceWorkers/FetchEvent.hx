@@ -24,15 +24,13 @@
 
 package js.serviceWorkers;
 
-/**
-	TODO attribute request
-	TODO attribute preloadResponse
-	TODO attribute clientId
-	TODO attribute resultingClientId
-	TODO attribute replacesClientId
-	TODO attribute handled
-**/
 extern class FetchEvent extends ExtendableEvent {
+	var request(default, null) : js.fetch.Request;
+	var preloadResponse(default, null) : js.lib.Promise<Any>;
+	var clientId(default, null) : String;
+	var resultingClientId(default, null) : String;
+	var replacesClientId(default, null) : String;
+	var handled(default, null) : js.lib.Promise<Void>;
 	function new(type:String, eventInitDict:FetchEventInit):Void;
 	function respondWith(r:js.lib.Promise<js.fetch.Response>):Void;
 }

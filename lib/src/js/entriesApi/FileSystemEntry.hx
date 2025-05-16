@@ -24,13 +24,11 @@
 
 package js.entriesApi;
 
-/**
-	TODO attribute isFile
-	TODO attribute isDirectory
-	TODO attribute name
-	TODO attribute fullPath
-	TODO attribute filesystem
-**/
 extern class FileSystemEntry {
+	var isFile(default, null) : Bool;
+	var isDirectory(default, null) : Bool;
+	var name(default, null) : String;
+	var fullPath(default, null) : String;
+	var filesystem(default, null) : FileSystem;
 	function getParent(?successCallback:FileSystemEntryCallback, ?errorCallback:ErrorCallback):Void;
 }

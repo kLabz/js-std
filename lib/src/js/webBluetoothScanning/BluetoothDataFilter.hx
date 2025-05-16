@@ -24,10 +24,8 @@
 
 package js.webBluetoothScanning;
 
-/**
-	TODO attribute dataPrefix
-	TODO attribute mask
-**/
 extern class BluetoothDataFilter {
+	var dataPrefix(default, null) : ArrayBuffer;
+	var mask(default, null) : ArrayBuffer;
 	function new(?init:js.webBluetooth.BluetoothDataFilterInit):Void;
 }

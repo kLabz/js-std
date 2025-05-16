@@ -24,12 +24,10 @@
 
 package js.cssRegions;
 
-/**
-	TODO attribute name
-	TODO attribute overset
-	TODO attribute firstEmptyRegionIndex
-**/
 extern class NamedFlow extends js.dom.EventTarget {
+	var name(default, null) : CSSOMString;
+	var overset(default, null) : Bool;
+	var firstEmptyRegionIndex(default, null) : Int;
 	function getContent():Array<js.dom.Node>;
 	function getRegions():Array<js.dom.Element>;
 	function getRegionsByContent(node:js.dom.Node):Array<js.dom.Element>;

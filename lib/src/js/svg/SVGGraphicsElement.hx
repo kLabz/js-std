@@ -24,10 +24,8 @@
 
 package js.svg;
 
-/**
-	TODO attribute transform
-**/
 extern class SVGGraphicsElement extends SVGElement {
+	var transform(default, null) : SVGAnimatedTransformList;
 	function getBBox(?options:SVGBoundingBoxOptions):js.geometry.DOMRect;
 	function getCTM():js.geometry.DOMMatrix;
 	function getScreenCTM():js.geometry.DOMMatrix;

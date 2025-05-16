@@ -24,12 +24,10 @@
 
 package js.pushApi;
 
-/**
-	TODO attribute endpoint
-	TODO attribute expirationTime
-	TODO attribute options
-**/
 extern class PushSubscription {
+	var endpoint(default, null) : String;
+	var expirationTime(default, null) : EpochTimeStamp;
+	var options(default, null) : PushSubscriptionOptions;
 	function getKey(name:PushEncryptionKeyName):ArrayBuffer;
 	function toJSON():PushSubscriptionJSON;
 	function unsubscribe():js.lib.Promise<Bool>;

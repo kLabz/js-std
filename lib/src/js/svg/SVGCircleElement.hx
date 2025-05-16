@@ -24,11 +24,8 @@
 
 package js.svg;
 
-/**
-	TODO attribute cx
-	TODO attribute cy
-	TODO attribute r
-**/
 extern class SVGCircleElement extends SVGGeometryElement {
-
+	var cx(default, null) : SVGAnimatedLength;
+	var cy(default, null) : SVGAnimatedLength;
+	var r(default, null) : SVGAnimatedLength;
 }

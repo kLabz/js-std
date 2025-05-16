@@ -24,10 +24,8 @@
 
 package js.cssLayoutApi;
 
-/**
-	TODO attribute styleMap
-**/
 extern class LayoutChild {
+	var styleMap(default, null) : js.cssTypedOm.StylePropertyMapReadOnly;
 	function intrinsicSizes():js.lib.Promise<IntrinsicSizes>;
 	function layoutNextFragment(constraints:LayoutConstraintsOptions, breakToken:ChildBreakToken):js.lib.Promise<LayoutFragment>;
 }

@@ -24,11 +24,8 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute in1
-	TODO attribute dx
-	TODO attribute dy
-**/
 extern class SVGFEOffsetElement extends js.svg.SVGElement {
-
+	var in1(default, null) : js.svg.SVGAnimatedString;
+	var dx(default, null) : js.svg.SVGAnimatedNumber;
+	var dy(default, null) : js.svg.SVGAnimatedNumber;
 }

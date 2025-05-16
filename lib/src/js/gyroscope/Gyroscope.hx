@@ -24,11 +24,9 @@
 
 package js.gyroscope;
 
-/**
-	TODO attribute x
-	TODO attribute y
-	TODO attribute z
-**/
 extern class Gyroscope extends js.genericSensor.Sensor {
+	var x(default, null) : Float;
+	var y(default, null) : Float;
+	var z(default, null) : Float;
 	function new(?sensorOptions:GyroscopeSensorOptions):Void;
 }

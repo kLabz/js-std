@@ -24,10 +24,7 @@
 
 package js.svg;
 
-/**
-	TODO attribute baseVal
-	TODO attribute animVal
-**/
 extern class SVGAnimatedString {
-
+	var baseVal : String;
+	var animVal(default, null) : String;
 }

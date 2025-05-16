@@ -24,10 +24,7 @@
 
 package js.svg;
 
-/**
-	TODO attribute baseVal
-	TODO attribute animVal
-**/
 extern class SVGAnimatedEnumeration {
-
+	var baseVal : Int;
+	var animVal(default, null) : Int;
 }

@@ -24,10 +24,8 @@
 
 package js.html;
 
-/**
-	TODO attribute disabled
-	TODO attribute label
-**/
 extern class HTMLOptGroupElement extends HTMLElement {
+	var disabled : Bool;
+	var label : String;
 	function new():Void;
 }

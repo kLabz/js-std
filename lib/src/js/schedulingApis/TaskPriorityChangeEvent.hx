@@ -24,9 +24,7 @@
 
 package js.schedulingApis;
 
-/**
-	TODO attribute previousPriority
-**/
 extern class TaskPriorityChangeEvent extends js.dom.Event {
+	var previousPriority(default, null) : TaskPriority;
 	function new(type:String, priorityChangeEventInitDict:TaskPriorityChangeEventInit):Void;
 }

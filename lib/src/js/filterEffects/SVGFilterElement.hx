@@ -24,14 +24,11 @@
 
 package js.filterEffects;
 
-/**
-	TODO attribute filterUnits
-	TODO attribute primitiveUnits
-	TODO attribute x
-	TODO attribute y
-	TODO attribute width
-	TODO attribute height
-**/
 extern class SVGFilterElement extends js.svg.SVGElement {
-
+	var filterUnits(default, null) : js.svg.SVGAnimatedEnumeration;
+	var primitiveUnits(default, null) : js.svg.SVGAnimatedEnumeration;
+	var x(default, null) : js.svg.SVGAnimatedLength;
+	var y(default, null) : js.svg.SVGAnimatedLength;
+	var width(default, null) : js.svg.SVGAnimatedLength;
+	var height(default, null) : js.svg.SVGAnimatedLength;
 }

@@ -24,14 +24,29 @@
 
 package js.html;
 
-/**
-	TODO attribute mediaCapabilities
-	TODO attribute permissions
-	TODO attribute serviceWorker
-	TODO attribute serial
-	TODO attribute hid
-	TODO attribute usb
-**/
 extern class WorkerNavigator {
-
+	/**
+		From partial interface in media-capabilities.idl
+	**/
+	var mediaCapabilities(default, null) : js.mediaCapabilities.MediaCapabilities;
+	/**
+		From partial interface in permissions.idl
+	**/
+	var permissions(default, null) : js.permissions.Permissions;
+	/**
+		From partial interface in serial.idl
+	**/
+	var serial(default, null) : js.serial.Serial;
+	/**
+		From partial interface in service-workers.idl
+	**/
+	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
+	/**
+		From partial interface in webhid.idl
+	**/
+	var hid(default, null) : js.webhid.HID;
+	/**
+		From partial interface in webusb.idl
+	**/
+	var usb(default, null) : js.webusb.USB;
 }

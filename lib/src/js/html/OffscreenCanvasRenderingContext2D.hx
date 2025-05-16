@@ -24,9 +24,6 @@
 
 package js.html;
 
-/**
-	TODO attribute canvas
-**/
 extern class OffscreenCanvasRenderingContext2D {
-
+	var canvas(default, null) : OffscreenCanvas;
 }

@@ -24,10 +24,8 @@
 
 package js.performanceTimeline;
 
-/**
-	TODO attribute supportedEntryTypes
-**/
 extern class PerformanceObserver {
+	static var supportedEntryTypes(default, null) : Array<String>;
 	function new(callback:PerformanceObserverCallback):Void;
 	function disconnect():Void;
 	function observe(?options:PerformanceObserverInit):Void;

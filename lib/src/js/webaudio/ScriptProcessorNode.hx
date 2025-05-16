@@ -24,10 +24,7 @@
 
 package js.webaudio;
 
-/**
-	TODO attribute onaudioprocess
-	TODO attribute bufferSize
-**/
 extern class ScriptProcessorNode extends AudioNode {
-
+	var onaudioprocess : EventHandler;
+	var bufferSize(default, null) : Int;
 }

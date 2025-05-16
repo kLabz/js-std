@@ -24,19 +24,17 @@
 
 package js.html;
 
-/**
-	TODO attribute htmlFor
-	TODO attribute form
-	TODO attribute name
-	TODO attribute type
-	TODO attribute defaultValue
-	TODO attribute value
-	TODO attribute willValidate
-	TODO attribute validity
-	TODO attribute validationMessage
-	TODO attribute labels
-**/
 extern class HTMLOutputElement extends HTMLElement {
+	var htmlFor(default, null) : js.dom.DOMTokenList;
+	var form(default, null) : HTMLFormElement;
+	var name : String;
+	var type(default, null) : String;
+	var defaultValue : String;
+	var value : String;
+	var willValidate(default, null) : Bool;
+	var validity(default, null) : ValidityState;
+	var validationMessage(default, null) : String;
+	var labels(default, null) : js.dom.NodeList;
 	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;

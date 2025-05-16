@@ -24,10 +24,7 @@
 
 package js.svgPaths;
 
-/**
-	TODO attribute type
-	TODO attribute values
-**/
 extern class SVGPathSegment {
-
+	var type : String;
+	var values : Array<Float>;
 }

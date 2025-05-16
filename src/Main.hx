@@ -192,7 +192,7 @@ class Main {
 							var members = partials.fold((p, acc) -> acc.concat(p.members), t.members);
 							var fields = members.map(m -> {
 								({
-									name: m.name, // TODO: sanitize
+									name: m.name, // TODO: sanitize (note: no @:native on typedef..)
 									doc: null, // TODO retrieve docs
 									kind: FVar(convertType(pack, m.idlType), convertValue(m.default_, pos)),
 									pos: pos,
@@ -269,13 +269,14 @@ class Main {
 
 								switch (m.type) {
 									case IDLConstantMemberType:
+										var meta = [];
 										fields.push({
-											name: m.name, // TODO: sanitize
+											name: sanitizeFieldName(m.name, meta, pos),
 											doc: doc, // TODO
 											access: [AStatic, AInline],
 											kind: FVar(convertType(pack, m.idlType), convertValue(m.value, pos)),
 											pos: pos,
-											meta: [] // TODO
+											meta: meta
 										});
 
 									case IDLSetlikeDeclarationMemberType:
@@ -325,7 +326,7 @@ class Main {
 												params: null
 											}),
 											pos: pos,
-											meta: [] // TODO
+											meta: []
 										});
 
 									case IDLAttributeMemberType if (m.special.or("") != "" && m.special != "static"):
@@ -333,13 +334,14 @@ class Main {
 										typeDoc.push('TODO attribute ${m.name}: special=${m.special} readonly=${m.readonly}');
 
 									case IDLAttributeMemberType:
+										var meta = [];
 										fields.push({
-											name: m.name, // TODO sanitize/@:native
+											name: sanitizeFieldName(m.name, meta, pos),
 											doc: doc, // TODO
 											access: m.special == "static" ? [AStatic] : [],
 											kind: m.readonly ? FProp("default", "null", convertType(pack, m.idlType)) : FVar(convertType(pack, m.idlType)),
 											pos: pos,
-											meta: [] // TODO
+											meta: meta
 										});
 
 									case IDLOperationMemberType if (m.name.or("") == "" && m.special == "getter"):
@@ -360,8 +362,9 @@ class Main {
 											var newDoc = '(special = ${m.special})';
 											doc = doc.concat(newDoc, "\n");
 										}
+										var meta = [];
 										fields.push({
-											name: m.name, // TODO sanitize/@:native
+											name: sanitizeFieldName(m.name, meta, pos),
 											doc: doc, // TODO
 											access: isOverload(m, members) ? [AOverload] : [],
 											kind: FFun({
@@ -377,7 +380,7 @@ class Main {
 												params: null
 											}),
 											pos: pos,
-											meta: [] // TODO
+											meta: meta
 										});
 
 									case _: throw 'Unexpected member type ${m.type}.';
@@ -469,6 +472,16 @@ class Main {
 	static function sanitizeEnumValueName(e:{type:String, value:String, parent:EnumType}) {
 		if (e.value == "") return "NONE";
 		return ~/[^A-Z0-9]+/g.replace(e.value.toUpperCase(), "_");
+	}
+
+	static function sanitizeFieldName(name:String, meta:Array<MetadataEntry>, pos):String {
+		return switch (name) {
+			case "default" | "operator" | "inline" | "continue" | "catch" | "for":
+				meta.push({name: ":native", params: [{pos: pos, expr: EConst(CString(name))}], pos: pos});
+				'${name}_';
+
+			case _: name;
+		}
 	}
 
 	static function convertValue(v:Null<ValueDescription>, pos):Null<Expr> {

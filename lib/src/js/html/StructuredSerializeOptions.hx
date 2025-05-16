@@ -26,5 +26,5 @@ package js.html;
 
 typedef StructuredSerializeOptions = {
 	@:optional
-	var transfer : [object Object];
+	var transfer : Array<object> = [];
 };

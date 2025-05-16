@@ -28,11 +28,11 @@ typedef RTCEncodedVideoFrameMetadata = {
 	@:optional
 	var frameId : unsigned long long;
 	@:optional
-	var dependencies : [object Object];
+	var dependencies : Array<unsigned long long>;
 	@:optional
-	var width : unsigned short;
+	var width : Int;
 	@:optional
-	var height : unsigned short;
+	var height : Int;
 	@:optional
 	var spatialIndex : unsigned long;
 	@:optional
@@ -42,7 +42,7 @@ typedef RTCEncodedVideoFrameMetadata = {
 	@:optional
 	var payloadType : octet;
 	@:optional
-	var contributingSources : [object Object];
+	var contributingSources : Array<unsigned long>;
 	@:optional
 	var timestamp : long long;
 	@:optional

@@ -26,7 +26,7 @@ package js.cssScrollSnap2;
 
 typedef SnapEventInit = js.dom.EventInit & {
 	@:optional
-	var snapTargetBlock : Node;
+	var snapTargetBlock : js.dom.Node;
 	@:optional
-	var snapTargetInline : Node;
+	var snapTargetInline : js.dom.Node;
 };

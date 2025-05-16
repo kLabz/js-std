@@ -25,5 +25,5 @@
 package js.webaudio;
 
 typedef MediaElementAudioSourceOptions = {
-	var mediaElement : HTMLMediaElement;
+	var mediaElement : js.html.HTMLMediaElement;
 };

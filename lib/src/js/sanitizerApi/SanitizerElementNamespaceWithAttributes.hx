@@ -26,7 +26,7 @@ package js.sanitizerApi;
 
 typedef SanitizerElementNamespaceWithAttributes = js.sanitizerApi.SanitizerElementNamespace & {
 	@:optional
-	var attributes : [object Object];
+	var attributes : Array<SanitizerAttribute>;
 	@:optional
-	var removeAttributes : [object Object];
+	var removeAttributes : Array<SanitizerAttribute>;
 };

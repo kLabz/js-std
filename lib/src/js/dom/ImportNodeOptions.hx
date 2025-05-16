@@ -26,7 +26,7 @@ package js.dom;
 
 typedef ImportNodeOptions = {
 	@:optional
-	var customElementRegistry : CustomElementRegistry;
+	var customElementRegistry : js.html.CustomElementRegistry;
 	@:optional
-	var selfOnly : Bool;
+	var selfOnly : Bool = false;
 };

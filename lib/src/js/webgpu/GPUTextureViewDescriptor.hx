@@ -30,15 +30,15 @@ typedef GPUTextureViewDescriptor = js.webgpu.GPUObjectDescriptorBase & {
 	@:optional
 	var dimension : js.webgpu.GPUTextureViewDimension;
 	@:optional
-	var usage : GPUTextureUsageFlags;
+	var usage : GPUTextureUsageFlags = 0;
 	@:optional
-	var aspect : js.webgpu.GPUTextureAspect;
+	var aspect : js.webgpu.GPUTextureAspect = "all";
 	@:optional
-	var baseMipLevel : GPUIntegerCoordinate;
+	var baseMipLevel : GPUIntegerCoordinate = 0;
 	@:optional
 	var mipLevelCount : GPUIntegerCoordinate;
 	@:optional
-	var baseArrayLayer : GPUIntegerCoordinate;
+	var baseArrayLayer : GPUIntegerCoordinate = 0;
 	@:optional
 	var arrayLayerCount : GPUIntegerCoordinate;
 };

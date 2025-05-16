@@ -26,7 +26,7 @@ package js.turtledove;
 
 typedef DirectFromSellerSignalsForSeller = {
 	@:optional
-	var auctionSignals : any;
+	var auctionSignals : any = null;
 	@:optional
-	var sellerSignals : any;
+	var sellerSignals : any = null;
 };

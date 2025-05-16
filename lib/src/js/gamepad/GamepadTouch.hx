@@ -30,7 +30,7 @@ typedef GamepadTouch = {
 	@:optional
 	var surfaceId : octet;
 	@:optional
-	var position : DOMPointReadOnly;
+	var position : js.geometry.DOMPointReadOnly;
 	@:optional
-	var surfaceDimensions : DOMRectReadOnly;
+	var surfaceDimensions : js.geometry.DOMRectReadOnly;
 };

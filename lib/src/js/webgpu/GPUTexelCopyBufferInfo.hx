@@ -25,5 +25,5 @@
 package js.webgpu;
 
 typedef GPUTexelCopyBufferInfo = js.webgpu.GPUTexelCopyBufferLayout & {
-	var buffer : GPUBuffer;
+	var buffer : js.webgpu.GPUBuffer;
 };

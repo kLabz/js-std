@@ -26,7 +26,7 @@ package js.fileSystemAccess;
 
 typedef FilePickerAcceptType = {
 	@:optional
-	var description : USVString;
+	var description : USVString = "";
 	@:optional
-	var accept : [object Object],[object Object];
+	var accept : haxe.DynamicAccess<haxe.extern.EitherType<USVString, Array<USVString>>>;
 };

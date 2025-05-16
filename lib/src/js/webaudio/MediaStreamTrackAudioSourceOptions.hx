@@ -25,5 +25,5 @@
 package js.webaudio;
 
 typedef MediaStreamTrackAudioSourceOptions = {
-	var mediaStreamTrack : MediaStreamTrack;
+	var mediaStreamTrack : js.mediacaptureStreams.MediaStreamTrack;
 };

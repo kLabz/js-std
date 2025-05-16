@@ -26,15 +26,15 @@ package js.sanitizerApi;
 
 typedef SanitizerConfig = {
 	@:optional
-	var elements : [object Object];
+	var elements : Array<SanitizerElementWithAttributes>;
 	@:optional
-	var removeElements : [object Object];
+	var removeElements : Array<SanitizerElement>;
 	@:optional
-	var replaceWithChildrenElements : [object Object];
+	var replaceWithChildrenElements : Array<SanitizerElement>;
 	@:optional
-	var attributes : [object Object];
+	var attributes : Array<SanitizerAttribute>;
 	@:optional
-	var removeAttributes : [object Object];
+	var removeAttributes : Array<SanitizerAttribute>;
 	@:optional
 	var comments : Bool;
 	@:optional

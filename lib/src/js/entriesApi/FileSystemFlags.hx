@@ -26,7 +26,7 @@ package js.entriesApi;
 
 typedef FileSystemFlags = {
 	@:optional
-	var create : Bool;
+	var create : Bool = false;
 	@:optional
-	var exclusive : Bool;
+	var exclusive : Bool = false;
 };

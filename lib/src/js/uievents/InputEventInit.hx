@@ -26,13 +26,13 @@ package js.uievents;
 
 typedef InputEventInit = js.uievents.UIEventInit & {
 	@:optional
-	var data : DOMString;
+	var data : DOMString = null;
 	@:optional
-	var isComposing : Bool;
+	var isComposing : Bool = false;
 	@:optional
-	var inputType : DOMString;
+	var inputType : DOMString = "";
 	@:optional
-	var dataTransfer : DataTransfer;
+	var dataTransfer : js.html.DataTransfer = null;
 	@:optional
-	var targetRanges : [object Object];
+	var targetRanges : Array<js.dom.StaticRange> = [];
 };

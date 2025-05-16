@@ -40,7 +40,7 @@ typedef LayoutConstraintsOptions = {
 	@:optional
 	var blockFragmentationOffset : double;
 	@:optional
-	var blockFragmentationType : js.cssLayoutApi.BlockFragmentationType;
+	var blockFragmentationType : js.cssLayoutApi.BlockFragmentationType = "none";
 	@:optional
 	var data : any;
 };

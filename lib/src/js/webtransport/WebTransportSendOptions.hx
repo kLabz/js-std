@@ -26,7 +26,7 @@ package js.webtransport;
 
 typedef WebTransportSendOptions = {
 	@:optional
-	var sendGroup : WebTransportSendGroup;
+	var sendGroup : js.webtransport.WebTransportSendGroup = null;
 	@:optional
-	var sendOrder : long long;
+	var sendOrder : long long = 0;
 };

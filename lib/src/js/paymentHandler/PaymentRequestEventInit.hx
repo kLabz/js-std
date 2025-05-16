@@ -32,13 +32,13 @@ typedef PaymentRequestEventInit = js.serviceWorkers.ExtendableEventInit & {
 	@:optional
 	var paymentRequestId : DOMString;
 	@:optional
-	var methodData : [object Object];
+	var methodData : Array<js.paymentRequest.PaymentMethodData>;
 	@:optional
 	var total : js.paymentRequest.PaymentCurrencyAmount;
 	@:optional
-	var modifiers : [object Object];
+	var modifiers : Array<js.paymentRequest.PaymentDetailsModifier>;
 	@:optional
 	var paymentOptions : js.paymentRequest.PaymentOptions;
 	@:optional
-	var shippingOptions : [object Object];
+	var shippingOptions : Array<js.paymentRequest.PaymentShippingOption>;
 };

@@ -26,5 +26,5 @@ package js.urlpattern;
 
 typedef URLPatternOptions = {
 	@:optional
-	var ignoreCase : Bool;
+	var ignoreCase : Bool = false;
 };

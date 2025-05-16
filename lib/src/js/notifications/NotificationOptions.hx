@@ -26,13 +26,13 @@ package js.notifications;
 
 typedef NotificationOptions = {
 	@:optional
-	var dir : js.notifications.NotificationDirection;
+	var dir : js.notifications.NotificationDirection = "auto";
 	@:optional
-	var lang : DOMString;
+	var lang : DOMString = "";
 	@:optional
-	var body : DOMString;
+	var body : DOMString = "";
 	@:optional
-	var tag : DOMString;
+	var tag : DOMString = "";
 	@:optional
 	var image : USVString;
 	@:optional
@@ -44,13 +44,13 @@ typedef NotificationOptions = {
 	@:optional
 	var timestamp : EpochTimeStamp;
 	@:optional
-	var renotify : Bool;
+	var renotify : Bool = false;
 	@:optional
-	var silent : Bool;
+	var silent : Bool = null;
 	@:optional
-	var requireInteraction : Bool;
+	var requireInteraction : Bool = false;
 	@:optional
-	var data : any;
+	var data : any = null;
 	@:optional
-	var actions : [object Object];
+	var actions : Array<js.notifications.NotificationAction> = [];
 };

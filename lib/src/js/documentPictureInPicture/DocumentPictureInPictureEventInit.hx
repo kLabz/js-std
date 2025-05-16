@@ -25,5 +25,5 @@
 package js.documentPictureInPicture;
 
 typedef DocumentPictureInPictureEventInit = js.dom.EventInit & {
-	var window : Window;
+	var window : js.html.Window;
 };

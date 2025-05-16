@@ -26,9 +26,9 @@ package js.turtledove;
 
 typedef AuctionAdInterestGroup = js.turtledove.GenerateBidInterestGroup & {
 	@:optional
-	var priority : double;
+	var priority : double = 0.0;
 	@:optional
-	var prioritySignalsOverrides : [object Object],[object Object];
+	var prioritySignalsOverrides : haxe.DynamicAccess<double>;
 	var lifetimeMs : double;
 	@:optional
 	var additionalBidKey : DOMString;

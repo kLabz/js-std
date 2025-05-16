@@ -26,9 +26,9 @@ package js.touchEvents;
 
 typedef TouchEventInit = js.uievents.EventModifierInit & {
 	@:optional
-	var touches : [object Object];
+	var touches : Array<js.touchEvents.Touch> = [];
 	@:optional
-	var targetTouches : [object Object];
+	var targetTouches : Array<js.touchEvents.Touch> = [];
 	@:optional
-	var changedTouches : [object Object];
+	var changedTouches : Array<js.touchEvents.Touch> = [];
 };

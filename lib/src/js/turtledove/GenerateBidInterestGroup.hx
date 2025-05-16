@@ -28,13 +28,13 @@ typedef GenerateBidInterestGroup = {
 	var owner : USVString;
 	var name : USVString;
 	@:optional
-	var enableBiddingSignalsPrioritization : Bool;
+	var enableBiddingSignalsPrioritization : Bool = false;
 	@:optional
-	var priorityVector : [object Object],[object Object];
+	var priorityVector : haxe.DynamicAccess<double>;
 	@:optional
-	var sellerCapabilities : [object Object],[object Object];
+	var sellerCapabilities : haxe.DynamicAccess<Array<DOMString>>;
 	@:optional
-	var executionMode : DOMString;
+	var executionMode : DOMString = "compatibility";
 	@:optional
 	var biddingLogicURL : USVString;
 	@:optional
@@ -44,9 +44,9 @@ typedef GenerateBidInterestGroup = {
 	@:optional
 	var trustedBiddingSignalsURL : USVString;
 	@:optional
-	var trustedBiddingSignalsKeys : [object Object];
+	var trustedBiddingSignalsKeys : Array<USVString>;
 	@:optional
-	var trustedBiddingSignalsSlotSizeMode : DOMString;
+	var trustedBiddingSignalsSlotSizeMode : DOMString = "none";
 	@:optional
 	var maxTrustedBiddingSignalsURLLength : long;
 	@:optional
@@ -54,11 +54,11 @@ typedef GenerateBidInterestGroup = {
 	@:optional
 	var userBiddingSignals : any;
 	@:optional
-	var ads : [object Object];
+	var ads : Array<js.turtledove.AuctionAd>;
 	@:optional
-	var adComponents : [object Object];
+	var adComponents : Array<js.turtledove.AuctionAd>;
 	@:optional
-	var adSizes : [object Object],[object Object];
+	var adSizes : haxe.DynamicAccess<js.turtledove.AuctionAdInterestGroupSize>;
 	@:optional
-	var sizeGroups : [object Object],[object Object];
+	var sizeGroups : haxe.DynamicAccess<Array<DOMString>>;
 };

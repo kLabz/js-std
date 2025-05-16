@@ -26,15 +26,15 @@ package js.html;
 
 typedef ImageBitmapOptions = {
 	@:optional
-	var imageOrientation : js.html.ImageOrientation;
+	var imageOrientation : js.html.ImageOrientation = "from-image";
 	@:optional
-	var premultiplyAlpha : js.html.PremultiplyAlpha;
+	var premultiplyAlpha : js.html.PremultiplyAlpha = "default";
 	@:optional
-	var colorSpaceConversion : js.html.ColorSpaceConversion;
+	var colorSpaceConversion : js.html.ColorSpaceConversion = "default";
 	@:optional
 	var resizeWidth : unsigned long;
 	@:optional
 	var resizeHeight : unsigned long;
 	@:optional
-	var resizeQuality : js.html.ResizeQuality;
+	var resizeQuality : js.html.ResizeQuality = "low";
 };

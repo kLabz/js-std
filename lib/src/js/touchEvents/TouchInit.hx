@@ -26,31 +26,31 @@ package js.touchEvents;
 
 typedef TouchInit = {
 	var identifier : long;
-	var target : EventTarget;
+	var target : js.dom.EventTarget;
 	@:optional
-	var clientX : double;
+	var clientX : double = 0;
 	@:optional
-	var clientY : double;
+	var clientY : double = 0;
 	@:optional
-	var screenX : double;
+	var screenX : double = 0;
 	@:optional
-	var screenY : double;
+	var screenY : double = 0;
 	@:optional
-	var pageX : double;
+	var pageX : double = 0;
 	@:optional
-	var pageY : double;
+	var pageY : double = 0;
 	@:optional
-	var radiusX : float;
+	var radiusX : float = 0;
 	@:optional
-	var radiusY : float;
+	var radiusY : float = 0;
 	@:optional
-	var rotationAngle : float;
+	var rotationAngle : float = 0;
 	@:optional
-	var force : float;
+	var force : float = 0;
 	@:optional
-	var altitudeAngle : double;
+	var altitudeAngle : double = 0;
 	@:optional
-	var azimuthAngle : double;
+	var azimuthAngle : double = 0;
 	@:optional
-	var touchType : js.touchEvents.TouchType;
+	var touchType : js.touchEvents.TouchType = "direct";
 };

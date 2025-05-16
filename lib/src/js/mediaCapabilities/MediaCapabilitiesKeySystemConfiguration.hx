@@ -27,13 +27,13 @@ package js.mediaCapabilities;
 typedef MediaCapabilitiesKeySystemConfiguration = {
 	var keySystem : DOMString;
 	@:optional
-	var initDataType : DOMString;
+	var initDataType : DOMString = "";
 	@:optional
-	var distinctiveIdentifier : js.encryptedMedia.MediaKeysRequirement;
+	var distinctiveIdentifier : js.encryptedMedia.MediaKeysRequirement = "optional";
 	@:optional
-	var persistentState : js.encryptedMedia.MediaKeysRequirement;
+	var persistentState : js.encryptedMedia.MediaKeysRequirement = "optional";
 	@:optional
-	var sessionTypes : [object Object];
+	var sessionTypes : Array<DOMString>;
 	@:optional
 	var audio : js.mediaCapabilities.KeySystemTrackConfiguration;
 	@:optional

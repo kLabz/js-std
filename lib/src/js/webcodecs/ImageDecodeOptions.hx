@@ -26,7 +26,7 @@ package js.webcodecs;
 
 typedef ImageDecodeOptions = {
 	@:optional
-	var frameIndex : unsigned long;
+	var frameIndex : unsigned long = 0;
 	@:optional
-	var completeFramesOnly : Bool;
+	var completeFramesOnly : Bool = true;
 };

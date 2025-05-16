@@ -70,7 +70,7 @@ typedef RTCOutboundRtpStreamStats = js.webrtcStats.RTCSentRtpStreamStats & {
 	@:optional
 	var qualityLimitationReason : js.webrtcStats.RTCQualityLimitationReason;
 	@:optional
-	var qualityLimitationDurations : [object Object],[object Object];
+	var qualityLimitationDurations : haxe.DynamicAccess<double>;
 	@:optional
 	var qualityLimitationResolutionChanges : unsigned long;
 	@:optional

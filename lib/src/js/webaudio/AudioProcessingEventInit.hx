@@ -26,6 +26,6 @@ package js.webaudio;
 
 typedef AudioProcessingEventInit = js.dom.EventInit & {
 	var playbackTime : double;
-	var inputBuffer : AudioBuffer;
-	var outputBuffer : AudioBuffer;
+	var inputBuffer : js.webaudio.AudioBuffer;
+	var outputBuffer : js.webaudio.AudioBuffer;
 };

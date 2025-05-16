@@ -26,5 +26,5 @@ package js.webNfc;
 
 typedef NDEFScanOptions = {
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 };

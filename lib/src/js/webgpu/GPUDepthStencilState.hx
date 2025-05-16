@@ -31,17 +31,17 @@ typedef GPUDepthStencilState = {
 	@:optional
 	var depthCompare : js.webgpu.GPUCompareFunction;
 	@:optional
-	var stencilFront : js.webgpu.GPUStencilFaceState;
+	var stencilFront : js.webgpu.GPUStencilFaceState = {  };
 	@:optional
-	var stencilBack : js.webgpu.GPUStencilFaceState;
+	var stencilBack : js.webgpu.GPUStencilFaceState = {  };
 	@:optional
-	var stencilReadMask : GPUStencilValue;
+	var stencilReadMask : GPUStencilValue = 0xFFFFFFFF;
 	@:optional
-	var stencilWriteMask : GPUStencilValue;
+	var stencilWriteMask : GPUStencilValue = 0xFFFFFFFF;
 	@:optional
-	var depthBias : GPUDepthBias;
+	var depthBias : GPUDepthBias = 0;
 	@:optional
-	var depthBiasSlopeScale : float;
+	var depthBiasSlopeScale : float = 0;
 	@:optional
-	var depthBiasClamp : float;
+	var depthBiasClamp : float = 0;
 };

@@ -26,7 +26,7 @@ package js.encoding;
 
 typedef TextDecoderOptions = {
 	@:optional
-	var fatal : Bool;
+	var fatal : Bool = false;
 	@:optional
-	var ignoreBOM : Bool;
+	var ignoreBOM : Bool = false;
 };

@@ -26,5 +26,5 @@ package js.webgpu;
 
 typedef GPUVertexState = js.webgpu.GPUProgrammableStage & {
 	@:optional
-	var buffers : [object Object];
+	var buffers : Array<js.webgpu.GPUVertexBufferLayout> = [];
 };

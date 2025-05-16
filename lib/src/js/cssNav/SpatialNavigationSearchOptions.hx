@@ -26,7 +26,7 @@ package js.cssNav;
 
 typedef SpatialNavigationSearchOptions = {
 	@:optional
-	var candidates : [object Object];
+	var candidates : Array<js.dom.Node>;
 	@:optional
-	var container : Node;
+	var container : js.dom.Node;
 };

@@ -25,13 +25,13 @@
 package js.webgpu;
 
 typedef GPURenderPassDescriptor = js.webgpu.GPUObjectDescriptorBase & {
-	var colorAttachments : [object Object];
+	var colorAttachments : Array<js.webgpu.GPURenderPassColorAttachment>;
 	@:optional
 	var depthStencilAttachment : js.webgpu.GPURenderPassDepthStencilAttachment;
 	@:optional
-	var occlusionQuerySet : GPUQuerySet;
+	var occlusionQuerySet : js.webgpu.GPUQuerySet;
 	@:optional
 	var timestampWrites : js.webgpu.GPURenderPassTimestampWrites;
 	@:optional
-	var maxDrawCount : GPUSize64;
+	var maxDrawCount : GPUSize64 = 50000000;
 };

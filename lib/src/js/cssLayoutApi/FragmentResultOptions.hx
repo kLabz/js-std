@@ -26,15 +26,15 @@ package js.cssLayoutApi;
 
 typedef FragmentResultOptions = {
 	@:optional
-	var inlineSize : double;
+	var inlineSize : double = 0;
 	@:optional
-	var blockSize : double;
+	var blockSize : double = 0;
 	@:optional
-	var autoBlockSize : double;
+	var autoBlockSize : double = 0;
 	@:optional
-	var childFragments : [object Object];
+	var childFragments : Array<js.cssLayoutApi.LayoutFragment> = [];
 	@:optional
-	var data : any;
+	var data : any = null;
 	@:optional
-	var breakToken : js.cssLayoutApi.BreakTokenOptions;
+	var breakToken : js.cssLayoutApi.BreakTokenOptions = null;
 };

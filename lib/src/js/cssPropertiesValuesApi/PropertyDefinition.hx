@@ -27,7 +27,7 @@ package js.cssPropertiesValuesApi;
 typedef PropertyDefinition = {
 	var name : DOMString;
 	@:optional
-	var syntax : DOMString;
+	var syntax : DOMString = "*";
 	var inherits : Bool;
 	@:optional
 	var initialValue : DOMString;

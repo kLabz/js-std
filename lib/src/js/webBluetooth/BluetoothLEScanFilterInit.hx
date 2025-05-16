@@ -26,13 +26,13 @@ package js.webBluetooth;
 
 typedef BluetoothLEScanFilterInit = {
 	@:optional
-	var services : [object Object];
+	var services : Array<BluetoothServiceUUID>;
 	@:optional
 	var name : DOMString;
 	@:optional
 	var namePrefix : DOMString;
 	@:optional
-	var manufacturerData : [object Object];
+	var manufacturerData : Array<js.webBluetooth.BluetoothManufacturerDataFilterInit>;
 	@:optional
-	var serviceData : [object Object];
+	var serviceData : Array<js.webBluetooth.BluetoothServiceDataFilterInit>;
 };

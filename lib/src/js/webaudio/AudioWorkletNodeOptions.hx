@@ -26,13 +26,13 @@ package js.webaudio;
 
 typedef AudioWorkletNodeOptions = js.webaudio.AudioNodeOptions & {
 	@:optional
-	var numberOfInputs : unsigned long;
+	var numberOfInputs : unsigned long = 1;
 	@:optional
-	var numberOfOutputs : unsigned long;
+	var numberOfOutputs : unsigned long = 1;
 	@:optional
-	var outputChannelCount : [object Object];
+	var outputChannelCount : Array<unsigned long>;
 	@:optional
-	var parameterData : [object Object],[object Object];
+	var parameterData : haxe.DynamicAccess<double>;
 	@:optional
 	var processorOptions : object;
 };

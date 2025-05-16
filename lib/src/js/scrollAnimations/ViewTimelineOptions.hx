@@ -26,9 +26,9 @@ package js.scrollAnimations;
 
 typedef ViewTimelineOptions = {
 	@:optional
-	var subject : Element;
+	var subject : js.dom.Element;
 	@:optional
-	var axis : js.scrollAnimations.ScrollAxis;
+	var axis : js.scrollAnimations.ScrollAxis = "block";
 	@:optional
-	var inset : [object Object],[object Object];
+	var inset : haxe.extern.EitherType<DOMString, Array<haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, js.cssTypedOm.CSSKeywordValue>>> = "auto";
 };

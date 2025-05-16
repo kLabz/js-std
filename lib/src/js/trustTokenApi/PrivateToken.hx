@@ -28,7 +28,7 @@ typedef PrivateToken = {
 	var version : js.trustTokenApi.TokenVersion;
 	var operation : js.trustTokenApi.OperationType;
 	@:optional
-	var refreshPolicy : js.trustTokenApi.RefreshPolicy;
+	var refreshPolicy : js.trustTokenApi.RefreshPolicy = "none";
 	@:optional
-	var issuers : [object Object];
+	var issuers : Array<USVString>;
 };

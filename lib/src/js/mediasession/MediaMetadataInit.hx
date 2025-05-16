@@ -26,13 +26,13 @@ package js.mediasession;
 
 typedef MediaMetadataInit = {
 	@:optional
-	var title : DOMString;
+	var title : DOMString = "";
 	@:optional
-	var artist : DOMString;
+	var artist : DOMString = "";
 	@:optional
-	var album : DOMString;
+	var album : DOMString = "";
 	@:optional
-	var artwork : [object Object];
+	var artwork : Array<js.mediasession.MediaImage> = [];
 	@:optional
-	var chapterInfo : [object Object];
+	var chapterInfo : Array<js.mediasession.ChapterInformationInit> = [];
 };

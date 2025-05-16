@@ -26,23 +26,23 @@ package js.html;
 
 typedef ValidityStateFlags = {
 	@:optional
-	var valueMissing : Bool;
+	var valueMissing : Bool = false;
 	@:optional
-	var typeMismatch : Bool;
+	var typeMismatch : Bool = false;
 	@:optional
-	var patternMismatch : Bool;
+	var patternMismatch : Bool = false;
 	@:optional
-	var tooLong : Bool;
+	var tooLong : Bool = false;
 	@:optional
-	var tooShort : Bool;
+	var tooShort : Bool = false;
 	@:optional
-	var rangeUnderflow : Bool;
+	var rangeUnderflow : Bool = false;
 	@:optional
-	var rangeOverflow : Bool;
+	var rangeOverflow : Bool = false;
 	@:optional
-	var stepMismatch : Bool;
+	var stepMismatch : Bool = false;
 	@:optional
-	var badInput : Bool;
+	var badInput : Bool = false;
 	@:optional
-	var customError : Bool;
+	var customError : Bool = false;
 };

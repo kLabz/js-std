@@ -28,7 +28,7 @@ typedef ImageDecoderInit = {
 	var type : DOMString;
 	var data : ImageBufferSource;
 	@:optional
-	var colorSpaceConversion : js.html.ColorSpaceConversion;
+	var colorSpaceConversion : js.html.ColorSpaceConversion = "default";
 	@:optional
 	var desiredWidth : unsigned long;
 	@:optional
@@ -36,5 +36,5 @@ typedef ImageDecoderInit = {
 	@:optional
 	var preferAnimation : Bool;
 	@:optional
-	var transfer : [object Object];
+	var transfer : Array<ArrayBuffer> = [];
 };

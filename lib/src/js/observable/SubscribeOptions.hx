@@ -26,5 +26,5 @@ package js.observable;
 
 typedef SubscribeOptions = {
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 };

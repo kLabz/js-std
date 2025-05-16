@@ -26,7 +26,7 @@ package js.webcrypto;
 
 typedef CryptoKeyPair = {
 	@:optional
-	var publicKey : CryptoKey;
+	var publicKey : js.webcrypto.CryptoKey;
 	@:optional
-	var privateKey : CryptoKey;
+	var privateKey : js.webcrypto.CryptoKey;
 };

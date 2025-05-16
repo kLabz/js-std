@@ -32,5 +32,5 @@ typedef AudioDataInit = {
 	var timestamp : long long;
 	var data : BufferSource;
 	@:optional
-	var transfer : [object Object];
+	var transfer : Array<ArrayBuffer> = [];
 };

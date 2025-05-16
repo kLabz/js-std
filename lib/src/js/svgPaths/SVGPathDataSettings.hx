@@ -26,5 +26,5 @@ package js.svgPaths;
 
 typedef SVGPathDataSettings = {
 	@:optional
-	var normalize : Bool;
+	var normalize : Bool = false;
 };

@@ -26,5 +26,5 @@ package js.isInputPending;
 
 typedef IsInputPendingOptions = {
 	@:optional
-	var includeContinuous : Bool;
+	var includeContinuous : Bool = false;
 };

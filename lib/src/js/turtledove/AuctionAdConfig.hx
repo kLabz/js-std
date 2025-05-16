@@ -36,69 +36,69 @@ typedef AuctionAdConfig = {
 	@:optional
 	var sendCreativeScanningMetadata : Bool;
 	@:optional
-	var interestGroupBuyers : [object Object];
+	var interestGroupBuyers : Array<USVString>;
 	@:optional
-	var auctionSignals : [object Object];
+	var auctionSignals : js.lib.Promise<any>;
 	@:optional
-	var sellerSignals : [object Object];
+	var sellerSignals : js.lib.Promise<any>;
 	@:optional
-	var directFromSellerSignalsHeaderAdSlot : [object Object];
+	var directFromSellerSignalsHeaderAdSlot : js.lib.Promise<DOMString>;
 	@:optional
-	var deprecatedRenderURLReplacements : [object Object];
+	var deprecatedRenderURLReplacements : js.lib.Promise<haxe.DynamicAccess<USVString>>;
 	@:optional
 	var sellerTimeout : unsigned long long;
 	@:optional
-	var sellerExperimentGroupId : unsigned short;
+	var sellerExperimentGroupId : Int;
 	@:optional
-	var perBuyerSignals : [object Object];
+	var perBuyerSignals : js.lib.Promise<haxe.DynamicAccess<any>>;
 	@:optional
-	var perBuyerTimeouts : [object Object];
+	var perBuyerTimeouts : js.lib.Promise<haxe.DynamicAccess<unsigned long long>>;
 	@:optional
-	var perBuyerCumulativeTimeouts : [object Object];
+	var perBuyerCumulativeTimeouts : js.lib.Promise<haxe.DynamicAccess<unsigned long long>>;
 	@:optional
 	var reportingTimeout : unsigned long long;
 	@:optional
 	var sellerCurrency : USVString;
 	@:optional
-	var perBuyerCurrencies : [object Object];
+	var perBuyerCurrencies : js.lib.Promise<haxe.DynamicAccess<USVString>>;
 	@:optional
-	var perBuyerMultiBidLimits : [object Object],[object Object];
+	var perBuyerMultiBidLimits : haxe.DynamicAccess<Int>;
 	@:optional
-	var perBuyerGroupLimits : [object Object],[object Object];
+	var perBuyerGroupLimits : haxe.DynamicAccess<Int>;
 	@:optional
-	var perBuyerExperimentGroupIds : [object Object],[object Object];
+	var perBuyerExperimentGroupIds : haxe.DynamicAccess<Int>;
 	@:optional
-	var perBuyerPrioritySignals : [object Object],[object Object];
+	var perBuyerPrioritySignals : haxe.DynamicAccess<haxe.DynamicAccess<double>>;
 	@:optional
-	var auctionReportBuyerKeys : [object Object];
+	var auctionReportBuyerKeys : Array<bigint>;
 	@:optional
-	var auctionReportBuyers : [object Object],[object Object];
+	var auctionReportBuyers : haxe.DynamicAccess<js.turtledove.AuctionReportBuyersConfig>;
 	@:optional
 	var auctionReportBuyerDebugModeConfig : js.turtledove.AuctionReportBuyerDebugModeConfig;
 	@:optional
-	var requiredSellerCapabilities : [object Object];
+	var requiredSellerCapabilities : Array<DOMString>;
 	@:optional
 	var privateAggregationConfig : js.turtledove.ProtectedAudiencePrivateAggregationConfig;
 	@:optional
-	var requestedSize : [object Object],[object Object];
+	var requestedSize : haxe.DynamicAccess<DOMString>;
 	@:optional
-	var allSlotsRequestedSizes : [object Object];
+	var allSlotsRequestedSizes : Array<haxe.DynamicAccess<DOMString>>;
 	@:optional
-	var additionalBids : [object Object];
+	var additionalBids : js.lib.Promise<Void>;
 	@:optional
 	var auctionNonce : DOMString;
 	@:optional
 	var sellerRealTimeReportingConfig : js.turtledove.AuctionRealTimeReportingConfig;
 	@:optional
-	var perBuyerRealTimeReportingConfig : [object Object],[object Object];
+	var perBuyerRealTimeReportingConfig : haxe.DynamicAccess<js.turtledove.AuctionRealTimeReportingConfig>;
 	@:optional
-	var componentAuctions : [object Object];
+	var componentAuctions : Array<js.turtledove.AuctionAdConfig> = [];
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 	@:optional
-	var resolveToConfig : [object Object];
+	var resolveToConfig : js.lib.Promise<Bool>;
 	@:optional
-	var serverResponse : [object Object];
+	var serverResponse : js.lib.Promise<Uint8Array>;
 	@:optional
 	var requestId : USVString;
 };

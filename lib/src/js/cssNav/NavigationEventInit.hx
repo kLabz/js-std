@@ -28,5 +28,5 @@ typedef NavigationEventInit = js.uievents.UIEventInit & {
 	@:optional
 	var dir : js.cssNav.SpatialNavigationDirection;
 	@:optional
-	var relatedTarget : EventTarget;
+	var relatedTarget : js.dom.EventTarget = null;
 };

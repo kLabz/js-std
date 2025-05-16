@@ -27,11 +27,11 @@ package js.webgpu;
 typedef GPURenderPipelineDescriptor = js.webgpu.GPUPipelineDescriptorBase & {
 	var vertex : js.webgpu.GPUVertexState;
 	@:optional
-	var primitive : js.webgpu.GPUPrimitiveState;
+	var primitive : js.webgpu.GPUPrimitiveState = {  };
 	@:optional
 	var depthStencil : js.webgpu.GPUDepthStencilState;
 	@:optional
-	var multisample : js.webgpu.GPUMultisampleState;
+	var multisample : js.webgpu.GPUMultisampleState = {  };
 	@:optional
 	var fragment : js.webgpu.GPUFragmentState;
 };

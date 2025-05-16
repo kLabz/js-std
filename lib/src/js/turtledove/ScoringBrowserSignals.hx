@@ -31,17 +31,17 @@ typedef ScoringBrowserSignals = {
 	var biddingDurationMsec : unsigned long;
 	var bidCurrency : DOMString;
 	@:optional
-	var renderSize : [object Object],[object Object];
+	var renderSize : haxe.DynamicAccess<DOMString>;
 	@:optional
 	var dataVersion : unsigned long;
 	@:optional
 	var crossOriginDataVersion : unsigned long;
 	@:optional
-	var adComponents : [object Object];
+	var adComponents : Array<USVString>;
 	@:optional
-	var forDebuggingOnlyInCooldownOrLockout : Bool;
+	var forDebuggingOnlyInCooldownOrLockout : Bool = false;
 	@:optional
 	var creativeScanningMetadata : USVString;
 	@:optional
-	var adComponentsCreativeScanningMetadata : [object Object];
+	var adComponentsCreativeScanningMetadata : Array<USVString>;
 };

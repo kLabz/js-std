@@ -26,7 +26,7 @@ package js.serial;
 
 typedef SerialPortRequestOptions = {
 	@:optional
-	var filters : [object Object];
+	var filters : Array<js.serial.SerialPortFilter>;
 	@:optional
-	var allowedBluetoothServiceClassIds : [object Object];
+	var allowedBluetoothServiceClassIds : Array<BluetoothServiceUUID>;
 };

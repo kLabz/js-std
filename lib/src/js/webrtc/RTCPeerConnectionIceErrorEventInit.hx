@@ -28,10 +28,10 @@ typedef RTCPeerConnectionIceErrorEventInit = js.dom.EventInit & {
 	@:optional
 	var address : DOMString;
 	@:optional
-	var port : unsigned short;
+	var port : Int;
 	@:optional
 	var url : USVString;
-	var errorCode : unsigned short;
+	var errorCode : Int;
 	@:optional
 	var errorText : USVString;
 };

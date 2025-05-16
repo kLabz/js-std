@@ -27,5 +27,5 @@ package js.webauthn;
 typedef AllAcceptedCredentialsOptions = {
 	var rpId : DOMString;
 	var userId : Base64URLString;
-	var allAcceptedCredentialIds : [object Object];
+	var allAcceptedCredentialIds : Array<Base64URLString>;
 };

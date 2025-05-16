@@ -27,13 +27,13 @@ package js.serial;
 typedef SerialOptions = {
 	var baudRate : unsigned long;
 	@:optional
-	var dataBits : octet;
+	var dataBits : octet = 8;
 	@:optional
-	var stopBits : octet;
+	var stopBits : octet = 1;
 	@:optional
-	var parity : js.serial.ParityType;
+	var parity : js.serial.ParityType = "none";
 	@:optional
-	var bufferSize : unsigned long;
+	var bufferSize : unsigned long = 255;
 	@:optional
-	var flowControl : js.serial.FlowControlType;
+	var flowControl : js.serial.FlowControlType = "none";
 };

@@ -26,5 +26,5 @@ package js.webnn;
 
 typedef MLReverseOptions = js.webnn.MLOperatorOptions & {
 	@:optional
-	var axes : [object Object];
+	var axes : Array<unsigned long>;
 };

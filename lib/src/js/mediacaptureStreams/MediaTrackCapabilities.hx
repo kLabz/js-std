@@ -34,19 +34,19 @@ typedef MediaTrackCapabilities = {
 	@:optional
 	var frameRate : js.mediacaptureStreams.DoubleRange;
 	@:optional
-	var facingMode : [object Object];
+	var facingMode : Array<DOMString>;
 	@:optional
-	var resizeMode : [object Object];
+	var resizeMode : Array<DOMString>;
 	@:optional
 	var sampleRate : js.mediacaptureStreams.ULongRange;
 	@:optional
 	var sampleSize : js.mediacaptureStreams.ULongRange;
 	@:optional
-	var echoCancellation : [object Object];
+	var echoCancellation : Array<Bool>;
 	@:optional
-	var autoGainControl : [object Object];
+	var autoGainControl : Array<Bool>;
 	@:optional
-	var noiseSuppression : [object Object];
+	var noiseSuppression : Array<Bool>;
 	@:optional
 	var latency : js.mediacaptureStreams.DoubleRange;
 	@:optional
@@ -56,13 +56,13 @@ typedef MediaTrackCapabilities = {
 	@:optional
 	var groupId : DOMString;
 	@:optional
-	var backgroundBlur : [object Object];
+	var backgroundBlur : Array<Bool>;
 	@:optional
-	var whiteBalanceMode : [object Object];
+	var whiteBalanceMode : Array<DOMString>;
 	@:optional
-	var exposureMode : [object Object];
+	var exposureMode : Array<DOMString>;
 	@:optional
-	var focusMode : [object Object];
+	var focusMode : Array<DOMString>;
 	@:optional
 	var exposureCompensation : js.imageCapture.MediaSettingsRange;
 	@:optional
@@ -88,11 +88,11 @@ typedef MediaTrackCapabilities = {
 	@:optional
 	var zoom : js.imageCapture.MediaSettingsRange;
 	@:optional
-	var torch : [object Object];
+	var torch : Array<Bool>;
 	@:optional
 	var displaySurface : DOMString;
 	@:optional
 	var logicalSurface : Bool;
 	@:optional
-	var cursor : [object Object];
+	var cursor : Array<DOMString>;
 };

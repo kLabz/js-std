@@ -26,5 +26,5 @@ package js.requeststorageaccessfor;
 
 typedef TopLevelStorageAccessPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
-	var requestedOrigin : USVString;
+	var requestedOrigin : USVString = "";
 };

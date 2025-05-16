@@ -25,7 +25,7 @@
 package js.notifications;
 
 typedef NotificationEventInit = js.serviceWorkers.ExtendableEventInit & {
-	var notification : Notification;
+	var notification : js.notifications.Notification;
 	@:optional
-	var action : DOMString;
+	var action : DOMString = "";
 };

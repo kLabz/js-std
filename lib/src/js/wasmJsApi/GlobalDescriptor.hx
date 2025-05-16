@@ -27,5 +27,5 @@ package js.wasmJsApi;
 typedef GlobalDescriptor = {
 	var value : js.wasmJsApi.ValueType;
 	@:optional
-	var mutable : Bool;
+	var mutable : Bool = false;
 };

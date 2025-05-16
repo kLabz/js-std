@@ -26,13 +26,13 @@ package js.contactPicker;
 
 typedef ContactInfo = {
 	@:optional
-	var address : [object Object];
+	var address : Array<js.contactPicker.ContactAddress>;
 	@:optional
-	var email : [object Object];
+	var email : Array<DOMString>;
 	@:optional
-	var icon : [object Object];
+	var icon : Array<js.fileapi.Blob>;
 	@:optional
-	var name : [object Object];
+	var name : Array<DOMString>;
 	@:optional
-	var tel : [object Object];
+	var tel : Array<DOMString>;
 };

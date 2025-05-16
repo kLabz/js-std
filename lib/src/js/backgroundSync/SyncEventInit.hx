@@ -27,5 +27,5 @@ package js.backgroundSync;
 typedef SyncEventInit = js.serviceWorkers.ExtendableEventInit & {
 	var tag : DOMString;
 	@:optional
-	var lastChance : Bool;
+	var lastChance : Bool = false;
 };

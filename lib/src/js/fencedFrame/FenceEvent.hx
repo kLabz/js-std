@@ -30,11 +30,11 @@ typedef FenceEvent = {
 	@:optional
 	var eventData : DOMString;
 	@:optional
-	var destination : [object Object];
+	var destination : Array<js.fencedFrame.FenceReportingDestination>;
 	@:optional
-	var crossOriginExposed : Bool;
+	var crossOriginExposed : Bool = false;
 	@:optional
-	var once : Bool;
+	var once : Bool = false;
 	@:optional
 	var destinationURL : USVString;
 };

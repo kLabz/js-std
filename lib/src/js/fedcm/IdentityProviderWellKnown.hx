@@ -26,7 +26,7 @@ package js.fedcm;
 
 typedef IdentityProviderWellKnown = {
 	@:optional
-	var provider_urls : [object Object];
+	var provider_urls : Array<USVString>;
 	@:optional
 	var accounts_endpoint : USVString;
 	@:optional

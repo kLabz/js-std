@@ -27,7 +27,7 @@ package js.webcodecs;
 typedef AudioDataCopyToOptions = {
 	var planeIndex : unsigned long;
 	@:optional
-	var frameOffset : unsigned long;
+	var frameOffset : unsigned long = 0;
 	@:optional
 	var frameCount : unsigned long;
 	@:optional

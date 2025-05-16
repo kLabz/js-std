@@ -26,11 +26,11 @@ package js.screenCapture;
 
 typedef DisplayMediaStreamOptions = {
 	@:optional
-	var video : [object Object],[object Object];
+	var video : haxe.extern.EitherType<Bool, js.mediacaptureStreams.MediaTrackConstraints> = true;
 	@:optional
-	var audio : [object Object],[object Object];
+	var audio : haxe.extern.EitherType<Bool, js.mediacaptureStreams.MediaTrackConstraints> = false;
 	@:optional
-	var controller : CaptureController;
+	var controller : js.screenCapture.CaptureController;
 	@:optional
 	var selfBrowserSurface : js.screenCapture.SelfCapturePreferenceEnum;
 	@:optional

@@ -26,33 +26,33 @@ package js.pointerevents;
 
 typedef PointerEventInit = js.uievents.MouseEventInit & {
 	@:optional
-	var pointerId : long;
+	var pointerId : long = 0;
 	@:optional
-	var width : double;
+	var width : double = 1;
 	@:optional
-	var height : double;
+	var height : double = 1;
 	@:optional
-	var pressure : float;
+	var pressure : float = 0;
 	@:optional
-	var tangentialPressure : float;
+	var tangentialPressure : float = 0;
 	@:optional
 	var tiltX : long;
 	@:optional
 	var tiltY : long;
 	@:optional
-	var twist : long;
+	var twist : long = 0;
 	@:optional
 	var altitudeAngle : double;
 	@:optional
 	var azimuthAngle : double;
 	@:optional
-	var pointerType : DOMString;
+	var pointerType : DOMString = "";
 	@:optional
-	var isPrimary : Bool;
+	var isPrimary : Bool = false;
 	@:optional
-	var persistentDeviceId : long;
+	var persistentDeviceId : long = 0;
 	@:optional
-	var coalescedEvents : [object Object];
+	var coalescedEvents : Array<js.pointerevents.PointerEvent> = [];
 	@:optional
-	var predictedEvents : [object Object];
+	var predictedEvents : Array<js.pointerevents.PointerEvent> = [];
 };

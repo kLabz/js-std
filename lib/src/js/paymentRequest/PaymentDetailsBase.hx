@@ -26,9 +26,9 @@ package js.paymentRequest;
 
 typedef PaymentDetailsBase = {
 	@:optional
-	var displayItems : [object Object];
+	var displayItems : Array<js.paymentRequest.PaymentItem>;
 	@:optional
-	var shippingOptions : [object Object];
+	var shippingOptions : Array<js.paymentRequest.PaymentShippingOption>;
 	@:optional
-	var modifiers : [object Object];
+	var modifiers : Array<js.paymentRequest.PaymentDetailsModifier>;
 };

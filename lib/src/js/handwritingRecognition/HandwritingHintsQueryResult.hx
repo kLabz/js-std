@@ -26,9 +26,9 @@ package js.handwritingRecognition;
 
 typedef HandwritingHintsQueryResult = {
 	@:optional
-	var recognitionType : [object Object];
+	var recognitionType : Array<js.handwritingRecognition.HandwritingRecognitionType>;
 	@:optional
-	var inputType : [object Object];
+	var inputType : Array<js.handwritingRecognition.HandwritingInputType>;
 	@:optional
 	var textContext : Bool;
 	@:optional

@@ -25,6 +25,6 @@
 package js.wasmJsApi;
 
 typedef WebAssemblyInstantiatedSource = {
-	var module : Module;
-	var instance : Instance;
+	var module : js.wasmJsApi.Module;
+	var instance : js.wasmJsApi.Instance;
 };

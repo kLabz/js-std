@@ -1,0 +1,38 @@
+/*
+ * Copyright (C)2005-2025 Haxe Foundation
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ */
+
+// This file is generated from @webref/idl/fetch.idl. Do not edit!
+
+package js.fetch;
+
+extern class Headers {
+	function new(?init:HeadersInit):Void;
+	function append(name:ByteString, value:ByteString):Void;
+	function delete(name:ByteString):Void;
+	function get(name:ByteString):ByteString;
+	function getSetCookie():Array<ByteString>;
+	function has(name:ByteString):Bool;
+	function set(name:ByteString, value:ByteString):Void;
+	function keys():Iterator<ByteString>;
+	function values():Iterator<ByteString>;
+	function entries():Iterator<Array<Dynamic>>;
+}

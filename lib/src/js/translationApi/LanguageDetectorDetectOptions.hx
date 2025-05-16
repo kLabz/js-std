@@ -26,5 +26,5 @@ package js.translationApi;
 
 typedef LanguageDetectorDetectOptions = {
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 };

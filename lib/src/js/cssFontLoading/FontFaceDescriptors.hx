@@ -26,23 +26,23 @@ package js.cssFontLoading;
 
 typedef FontFaceDescriptors = {
 	@:optional
-	var style : CSSOMString;
+	var style : CSSOMString = "normal";
 	@:optional
-	var weight : CSSOMString;
+	var weight : CSSOMString = "normal";
 	@:optional
-	var stretch : CSSOMString;
+	var stretch : CSSOMString = "normal";
 	@:optional
-	var unicodeRange : CSSOMString;
+	var unicodeRange : CSSOMString = "U+0-10FFFF";
 	@:optional
-	var featureSettings : CSSOMString;
+	var featureSettings : CSSOMString = "normal";
 	@:optional
-	var variationSettings : CSSOMString;
+	var variationSettings : CSSOMString = "normal";
 	@:optional
-	var display : CSSOMString;
+	var display : CSSOMString = "auto";
 	@:optional
-	var ascentOverride : CSSOMString;
+	var ascentOverride : CSSOMString = "normal";
 	@:optional
-	var descentOverride : CSSOMString;
+	var descentOverride : CSSOMString = "normal";
 	@:optional
-	var lineGapOverride : CSSOMString;
+	var lineGapOverride : CSSOMString = "normal";
 };

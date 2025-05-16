@@ -26,5 +26,5 @@ package js.html;
 
 typedef ShowPopoverOptions = {
 	@:optional
-	var source : HTMLElement;
+	var source : js.html.HTMLElement;
 };

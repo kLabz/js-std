@@ -26,9 +26,9 @@ package js.schedulingApis;
 
 typedef SchedulerPostTaskOptions = {
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 	@:optional
 	var priority : js.schedulingApis.TaskPriority;
 	@:optional
-	var delay : unsigned long long;
+	var delay : unsigned long long = 0;
 };

@@ -27,7 +27,7 @@ package js.mediasession;
 typedef MediaImage = {
 	var src : USVString;
 	@:optional
-	var sizes : DOMString;
+	var sizes : DOMString = "";
 	@:optional
-	var type : DOMString;
+	var type : DOMString = "";
 };

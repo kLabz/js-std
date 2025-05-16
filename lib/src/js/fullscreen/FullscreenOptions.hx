@@ -26,7 +26,7 @@ package js.fullscreen;
 
 typedef FullscreenOptions = {
 	@:optional
-	var navigationUI : js.fullscreen.FullscreenNavigationUI;
+	var navigationUI : js.fullscreen.FullscreenNavigationUI = "auto";
 	@:optional
-	var screen : ScreenDetailed;
+	var screen : js.windowManagement.ScreenDetailed;
 };

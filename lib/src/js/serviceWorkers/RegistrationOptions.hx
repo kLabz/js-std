@@ -28,7 +28,7 @@ typedef RegistrationOptions = {
 	@:optional
 	var scope : USVString;
 	@:optional
-	var type : js.html.WorkerType;
+	var type : js.html.WorkerType = "classic";
 	@:optional
-	var updateViaCache : js.serviceWorkers.ServiceWorkerUpdateViaCache;
+	var updateViaCache : js.serviceWorkers.ServiceWorkerUpdateViaCache = "imports";
 };

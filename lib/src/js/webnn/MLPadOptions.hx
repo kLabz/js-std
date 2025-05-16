@@ -26,7 +26,7 @@ package js.webnn;
 
 typedef MLPadOptions = js.webnn.MLOperatorOptions & {
 	@:optional
-	var mode : js.webnn.MLPaddingMode;
+	var mode : js.webnn.MLPaddingMode = "constant";
 	@:optional
-	var value : MLNumber;
+	var value : MLNumber = 0;
 };

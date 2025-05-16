@@ -29,5 +29,5 @@ typedef PaymentShippingOption = {
 	var label : DOMString;
 	var amount : js.paymentRequest.PaymentCurrencyAmount;
 	@:optional
-	var selected : Bool;
+	var selected : Bool = false;
 };

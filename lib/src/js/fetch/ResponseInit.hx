@@ -26,9 +26,9 @@ package js.fetch;
 
 typedef ResponseInit = {
 	@:optional
-	var status : unsigned short;
+	var status : Int = 200;
 	@:optional
-	var statusText : ByteString;
+	var statusText : ByteString = "";
 	@:optional
 	var headers : HeadersInit;
 };

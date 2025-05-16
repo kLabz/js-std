@@ -25,13 +25,13 @@
 package js.speechApi;
 
 typedef SpeechSynthesisEventInit = js.dom.EventInit & {
-	var utterance : SpeechSynthesisUtterance;
+	var utterance : js.speechApi.SpeechSynthesisUtterance;
 	@:optional
-	var charIndex : unsigned long;
+	var charIndex : unsigned long = 0;
 	@:optional
-	var charLength : unsigned long;
+	var charLength : unsigned long = 0;
 	@:optional
-	var elapsedTime : float;
+	var elapsedTime : float = 0;
 	@:optional
-	var name : DOMString;
+	var name : DOMString = "";
 };

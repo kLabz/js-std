@@ -26,7 +26,7 @@ package js.inputDeviceCapabilities;
 
 typedef InputDeviceCapabilitiesInit = {
 	@:optional
-	var firesTouchEvents : Bool;
+	var firesTouchEvents : Bool = false;
 	@:optional
-	var pointerMovementScrolls : Bool;
+	var pointerMovementScrolls : Bool = false;
 };

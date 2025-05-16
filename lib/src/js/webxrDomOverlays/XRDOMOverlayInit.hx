@@ -25,5 +25,5 @@
 package js.webxrDomOverlays;
 
 typedef XRDOMOverlayInit = {
-	var root : Element;
+	var root : js.dom.Element;
 };

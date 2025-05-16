@@ -26,7 +26,7 @@ package js.webaudio;
 
 typedef PeriodicWaveOptions = js.webaudio.PeriodicWaveConstraints & {
 	@:optional
-	var real : [object Object];
+	var real : Array<float>;
 	@:optional
-	var imag : [object Object];
+	var imag : Array<float>;
 };

@@ -26,5 +26,5 @@ package js.webusb;
 
 typedef USBPermissionStorage = {
 	@:optional
-	var allowedDevices : [object Object];
+	var allowedDevices : Array<js.webusb.AllowedUSBDevice> = [];
 };

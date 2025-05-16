@@ -25,7 +25,7 @@
 package js.webgpu;
 
 typedef GPURenderPassDepthStencilAttachment = {
-	var view : GPUTextureView;
+	var view : js.webgpu.GPUTextureView;
 	@:optional
 	var depthClearValue : float;
 	@:optional
@@ -33,13 +33,13 @@ typedef GPURenderPassDepthStencilAttachment = {
 	@:optional
 	var depthStoreOp : js.webgpu.GPUStoreOp;
 	@:optional
-	var depthReadOnly : Bool;
+	var depthReadOnly : Bool = false;
 	@:optional
-	var stencilClearValue : GPUStencilValue;
+	var stencilClearValue : GPUStencilValue = 0;
 	@:optional
 	var stencilLoadOp : js.webgpu.GPULoadOp;
 	@:optional
 	var stencilStoreOp : js.webgpu.GPUStoreOp;
 	@:optional
-	var stencilReadOnly : Bool;
+	var stencilReadOnly : Bool = false;
 };

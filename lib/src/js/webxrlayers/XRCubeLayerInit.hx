@@ -26,5 +26,5 @@ package js.webxrlayers;
 
 typedef XRCubeLayerInit = js.webxrlayers.XRLayerInit & {
 	@:optional
-	var orientation : DOMPointReadOnly;
+	var orientation : js.geometry.DOMPointReadOnly;
 };

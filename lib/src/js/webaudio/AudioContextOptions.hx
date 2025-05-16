@@ -26,11 +26,11 @@ package js.webaudio;
 
 typedef AudioContextOptions = {
 	@:optional
-	var latencyHint : [object Object],[object Object];
+	var latencyHint : haxe.extern.EitherType<js.webaudio.AudioContextLatencyCategory, double> = "interactive";
 	@:optional
 	var sampleRate : float;
 	@:optional
-	var sinkId : [object Object],[object Object];
+	var sinkId : haxe.extern.EitherType<DOMString, js.webaudio.AudioSinkOptions>;
 	@:optional
-	var renderSizeHint : [object Object],[object Object];
+	var renderSizeHint : haxe.extern.EitherType<js.webaudio.AudioContextRenderSizeCategory, unsigned long> = "default";
 };

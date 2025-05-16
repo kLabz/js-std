@@ -26,7 +26,7 @@ package js.webnn;
 
 typedef MLTensorDescriptor = js.webnn.MLOperandDescriptor & {
 	@:optional
-	var readable : Bool;
+	var readable : Bool = false;
 	@:optional
-	var writable : Bool;
+	var writable : Bool = false;
 };

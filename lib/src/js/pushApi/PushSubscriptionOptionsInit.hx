@@ -26,7 +26,7 @@ package js.pushApi;
 
 typedef PushSubscriptionOptionsInit = {
 	@:optional
-	var userVisibleOnly : Bool;
+	var userVisibleOnly : Bool = false;
 	@:optional
-	var applicationServerKey : [object Object],[object Object];
+	var applicationServerKey : haxe.extern.EitherType<BufferSource, DOMString> = null;
 };

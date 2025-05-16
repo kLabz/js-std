@@ -26,13 +26,13 @@ package js.webAnimations;
 
 typedef KeyframeAnimationOptions = js.webAnimations.KeyframeEffectOptions & {
 	@:optional
-	var id : DOMString;
+	var id : DOMString = "";
 	@:optional
-	var timeline : AnimationTimeline;
+	var timeline : js.webAnimations.AnimationTimeline;
 	@:optional
-	var rangeStart : [object Object],[object Object],[object Object],[object Object];
+	var rangeStart : haxe.extern.EitherType<js.webAnimations2.TimelineRangeOffset, haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, haxe.extern.EitherType<js.cssTypedOm.CSSKeywordValue, DOMString>>> = "normal";
 	@:optional
-	var rangeEnd : [object Object],[object Object],[object Object],[object Object];
+	var rangeEnd : haxe.extern.EitherType<js.webAnimations2.TimelineRangeOffset, haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, haxe.extern.EitherType<js.cssTypedOm.CSSKeywordValue, DOMString>>> = "normal";
 	@:optional
-	var trigger : AnimationTrigger;
+	var trigger : js.webAnimations2.AnimationTrigger;
 };

@@ -26,9 +26,9 @@ package js.captureHandleIdentity;
 
 typedef CaptureHandleConfig = {
 	@:optional
-	var exposeOrigin : Bool;
+	var exposeOrigin : Bool = false;
 	@:optional
-	var handle : DOMString;
+	var handle : DOMString = "";
 	@:optional
-	var permittedOrigins : [object Object];
+	var permittedOrigins : Array<DOMString> = [];
 };

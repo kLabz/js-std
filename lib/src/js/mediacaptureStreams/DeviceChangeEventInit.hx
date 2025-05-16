@@ -26,5 +26,5 @@ package js.mediacaptureStreams;
 
 typedef DeviceChangeEventInit = js.dom.EventInit & {
 	@:optional
-	var devices : [object Object];
+	var devices : Array<js.mediacaptureStreams.MediaDeviceInfo> = [];
 };

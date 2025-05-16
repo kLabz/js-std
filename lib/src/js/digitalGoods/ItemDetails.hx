@@ -33,7 +33,7 @@ typedef ItemDetails = {
 	@:optional
 	var description : DOMString;
 	@:optional
-	var iconURLs : [object Object];
+	var iconURLs : Array<DOMString>;
 	@:optional
 	var subscriptionPeriod : DOMString;
 	@:optional

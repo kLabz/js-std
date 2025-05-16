@@ -26,5 +26,5 @@ package js.localFontAccess;
 
 typedef QueryOptions = {
 	@:optional
-	var postscriptNames : [object Object];
+	var postscriptNames : Array<DOMString>;
 };

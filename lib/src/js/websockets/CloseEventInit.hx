@@ -26,9 +26,9 @@ package js.websockets;
 
 typedef CloseEventInit = js.dom.EventInit & {
 	@:optional
-	var wasClean : Bool;
+	var wasClean : Bool = false;
 	@:optional
-	var code : unsigned short;
+	var code : Int = 0;
 	@:optional
-	var reason : USVString;
+	var reason : USVString = "";
 };

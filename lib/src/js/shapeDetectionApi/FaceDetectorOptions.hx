@@ -26,7 +26,7 @@ package js.shapeDetectionApi;
 
 typedef FaceDetectorOptions = {
 	@:optional
-	var maxDetectedFaces : unsigned short;
+	var maxDetectedFaces : Int;
 	@:optional
 	var fastMode : Bool;
 };

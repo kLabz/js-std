@@ -26,7 +26,7 @@ package js.webxrlayers;
 
 typedef XRMediaQuadLayerInit = js.webxrlayers.XRMediaLayerInit & {
 	@:optional
-	var transform : XRRigidTransform;
+	var transform : js.webxr.XRRigidTransform;
 	@:optional
 	var width : float;
 	@:optional

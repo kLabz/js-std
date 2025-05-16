@@ -25,5 +25,5 @@
 package js.webBluetooth;
 
 typedef BluetoothManufacturerDataFilterInit = js.webBluetooth.BluetoothDataFilterInit & {
-	var companyIdentifier : unsigned short;
+	var companyIdentifier : Int;
 };

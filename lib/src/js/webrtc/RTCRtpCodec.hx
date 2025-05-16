@@ -28,7 +28,7 @@ typedef RTCRtpCodec = {
 	var mimeType : DOMString;
 	var clockRate : unsigned long;
 	@:optional
-	var channels : unsigned short;
+	var channels : Int;
 	@:optional
 	var sdpFmtpLine : DOMString;
 };

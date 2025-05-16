@@ -36,7 +36,7 @@ typedef OptionalEffectTiming = {
 	@:optional
 	var iterations : unrestricted double;
 	@:optional
-	var duration : [object Object],[object Object];
+	var duration : haxe.extern.EitherType<unrestricted double, DOMString>;
 	@:optional
 	var direction : js.webAnimations.PlaybackDirection;
 	@:optional

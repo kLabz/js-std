@@ -26,9 +26,9 @@ package js.orientationEvent;
 
 typedef DeviceMotionEventRotationRateInit = {
 	@:optional
-	var alpha : double;
+	var alpha : double = null;
 	@:optional
-	var beta : double;
+	var beta : double = null;
 	@:optional
-	var gamma : double;
+	var gamma : double = null;
 };

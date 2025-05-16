@@ -26,7 +26,7 @@ package js.urlpattern;
 
 typedef URLPatternResult = {
 	@:optional
-	var inputs : [object Object];
+	var inputs : Array<URLPatternInput>;
 	@:optional
 	var protocol : js.urlpattern.URLPatternComponentResult;
 	@:optional

@@ -26,7 +26,7 @@ package js.indexeddb;
 
 typedef IDBVersionChangeEventInit = js.dom.EventInit & {
 	@:optional
-	var oldVersion : unsigned long long;
+	var oldVersion : unsigned long long = 0;
 	@:optional
-	var newVersion : unsigned long long;
+	var newVersion : unsigned long long = null;
 };

@@ -26,5 +26,5 @@ package js.cssomView;
 
 typedef ScrollOptions = {
 	@:optional
-	var behavior : js.cssomView.ScrollBehavior;
+	var behavior : js.cssomView.ScrollBehavior = "auto";
 };

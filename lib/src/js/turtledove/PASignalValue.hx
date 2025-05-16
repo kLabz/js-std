@@ -29,5 +29,5 @@ typedef PASignalValue = {
 	@:optional
 	var scale : double;
 	@:optional
-	var offset : [object Object],[object Object];
+	var offset : haxe.extern.EitherType<bigint, long>;
 };

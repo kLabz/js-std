@@ -25,5 +25,5 @@
 package js.presentationApi;
 
 typedef PresentationConnectionAvailableEventInit = js.dom.EventInit & {
-	var connection : PresentationConnection;
+	var connection : js.presentationApi.PresentationConnection;
 };

@@ -28,7 +28,7 @@ typedef VideoFrameCopyToOptions = {
 	@:optional
 	var rect : js.geometry.DOMRectInit;
 	@:optional
-	var layout : [object Object];
+	var layout : Array<js.webcodecs.PlaneLayout>;
 	@:optional
 	var format : js.webcodecs.VideoPixelFormat;
 	@:optional

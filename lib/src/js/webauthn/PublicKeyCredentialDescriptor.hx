@@ -28,5 +28,5 @@ typedef PublicKeyCredentialDescriptor = {
 	var type : DOMString;
 	var id : BufferSource;
 	@:optional
-	var transports : [object Object];
+	var transports : Array<DOMString>;
 };

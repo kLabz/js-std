@@ -26,9 +26,9 @@ package js.cssom;
 
 typedef CSSStyleSheetInit = {
 	@:optional
-	var baseURL : DOMString;
+	var baseURL : DOMString = null;
 	@:optional
-	var media : [object Object],[object Object];
+	var media : haxe.extern.EitherType<js.cssom.MediaList, DOMString> = "";
 	@:optional
-	var disabled : Bool;
+	var disabled : Bool = false;
 };

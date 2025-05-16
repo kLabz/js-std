@@ -28,7 +28,7 @@ typedef PushSubscriptionJSON = {
 	@:optional
 	var endpoint : USVString;
 	@:optional
-	var expirationTime : EpochTimeStamp;
+	var expirationTime : EpochTimeStamp = null;
 	@:optional
-	var keys : [object Object],[object Object];
+	var keys : haxe.DynamicAccess<USVString>;
 };

@@ -26,7 +26,7 @@ package js.capturedMouseEvents;
 
 typedef CapturedMouseEventInit = js.dom.EventInit & {
 	@:optional
-	var surfaceX : long;
+	var surfaceX : long = -1;
 	@:optional
-	var surfaceY : long;
+	var surfaceY : long = -1;
 };

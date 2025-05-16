@@ -26,5 +26,5 @@ package js.webcodecsVp9CodecRegistration;
 
 typedef VideoEncoderEncodeOptionsForVp9 = {
 	@:optional
-	var quantizer : unsigned short;
+	var quantizer : Int;
 };

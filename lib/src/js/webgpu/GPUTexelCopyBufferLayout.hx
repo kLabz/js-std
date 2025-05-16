@@ -26,7 +26,7 @@ package js.webgpu;
 
 typedef GPUTexelCopyBufferLayout = {
 	@:optional
-	var offset : GPUSize64;
+	var offset : GPUSize64 = 0;
 	@:optional
 	var bytesPerRow : GPUSize32;
 	@:optional

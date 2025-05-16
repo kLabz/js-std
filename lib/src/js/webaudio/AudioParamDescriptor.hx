@@ -27,11 +27,11 @@ package js.webaudio;
 typedef AudioParamDescriptor = {
 	var name : DOMString;
 	@:optional
-	var defaultValue : float;
+	var defaultValue : float = 0;
 	@:optional
-	var minValue : float;
+	var minValue : float = -3.4028235e38;
 	@:optional
-	var maxValue : float;
+	var maxValue : float = 3.4028235e38;
 	@:optional
-	var automationRate : js.webaudio.AutomationRate;
+	var automationRate : js.webaudio.AutomationRate = "a-rate";
 };

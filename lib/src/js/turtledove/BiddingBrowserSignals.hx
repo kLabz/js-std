@@ -31,13 +31,13 @@ typedef BiddingBrowserSignals = {
 	var bidCount : long;
 	var recency : long;
 	var adComponentsLimit : long;
-	var multiBidLimit : unsigned short;
+	var multiBidLimit : Int;
 	@:optional
-	var requestedSize : [object Object],[object Object];
+	var requestedSize : haxe.DynamicAccess<DOMString>;
 	@:optional
 	var topLevelSeller : USVString;
 	@:optional
-	var prevWinsMs : [object Object];
+	var prevWinsMs : Array<PreviousWin>;
 	@:optional
 	var wasmHelper : object;
 	@:optional
@@ -45,5 +45,5 @@ typedef BiddingBrowserSignals = {
 	@:optional
 	var crossOriginDataVersion : unsigned long;
 	@:optional
-	var forDebuggingOnlyInCooldownOrLockout : Bool;
+	var forDebuggingOnlyInCooldownOrLockout : Bool = false;
 };

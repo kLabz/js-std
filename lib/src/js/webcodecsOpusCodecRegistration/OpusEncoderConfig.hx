@@ -26,19 +26,19 @@ package js.webcodecsOpusCodecRegistration;
 
 typedef OpusEncoderConfig = {
 	@:optional
-	var format : js.webcodecsOpusCodecRegistration.OpusBitstreamFormat;
+	var format : js.webcodecsOpusCodecRegistration.OpusBitstreamFormat = "opus";
 	@:optional
-	var signal : js.webcodecsOpusCodecRegistration.OpusSignal;
+	var signal : js.webcodecsOpusCodecRegistration.OpusSignal = "auto";
 	@:optional
-	var application : js.webcodecsOpusCodecRegistration.OpusApplication;
+	var application : js.webcodecsOpusCodecRegistration.OpusApplication = "audio";
 	@:optional
-	var frameDuration : unsigned long long;
+	var frameDuration : unsigned long long = 20000;
 	@:optional
 	var complexity : unsigned long;
 	@:optional
-	var packetlossperc : unsigned long;
+	var packetlossperc : unsigned long = 0;
 	@:optional
-	var useinbandfec : Bool;
+	var useinbandfec : Bool = false;
 	@:optional
-	var usedtx : Bool;
+	var usedtx : Bool = false;
 };

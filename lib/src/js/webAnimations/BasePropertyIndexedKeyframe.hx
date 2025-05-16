@@ -26,9 +26,9 @@ package js.webAnimations;
 
 typedef BasePropertyIndexedKeyframe = {
 	@:optional
-	var offset : [object Object],[object Object];
+	var offset : haxe.extern.EitherType<double, Array<double>> = [];
 	@:optional
-	var easing : [object Object],[object Object];
+	var easing : haxe.extern.EitherType<DOMString, Array<DOMString>> = [];
 	@:optional
-	var composite : [object Object],[object Object];
+	var composite : haxe.extern.EitherType<js.webAnimations.CompositeOperationOrAuto, Array<js.webAnimations.CompositeOperationOrAuto>> = [];
 };

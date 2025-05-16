@@ -26,5 +26,5 @@ package js.webcodecsHevcCodecRegistration;
 
 typedef VideoEncoderEncodeOptionsForHevc = {
 	@:optional
-	var quantizer : unsigned short;
+	var quantizer : Int;
 };

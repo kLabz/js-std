@@ -26,17 +26,17 @@ package js.webnn;
 
 typedef MLConv2dOptions = js.webnn.MLOperatorOptions & {
 	@:optional
-	var padding : [object Object];
+	var padding : Array<unsigned long>;
 	@:optional
-	var strides : [object Object];
+	var strides : Array<unsigned long>;
 	@:optional
-	var dilations : [object Object];
+	var dilations : Array<unsigned long>;
 	@:optional
-	var groups : unsigned long;
+	var groups : unsigned long = 1;
 	@:optional
-	var inputLayout : js.webnn.MLInputOperandLayout;
+	var inputLayout : js.webnn.MLInputOperandLayout = "nchw";
 	@:optional
-	var filterLayout : js.webnn.MLConv2dFilterOperandLayout;
+	var filterLayout : js.webnn.MLConv2dFilterOperandLayout = "oihw";
 	@:optional
-	var bias : MLOperand;
+	var bias : js.webnn.MLOperand;
 };

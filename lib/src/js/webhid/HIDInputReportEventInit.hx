@@ -25,7 +25,7 @@
 package js.webhid;
 
 typedef HIDInputReportEventInit = js.dom.EventInit & {
-	var device : HIDDevice;
+	var device : js.webhid.HIDDevice;
 	var reportId : octet;
 	var data : DataView;
 };

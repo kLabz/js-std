@@ -26,21 +26,21 @@ package js.webnn;
 
 typedef MLLstmOptions = js.webnn.MLOperatorOptions & {
 	@:optional
-	var bias : MLOperand;
+	var bias : js.webnn.MLOperand;
 	@:optional
-	var recurrentBias : MLOperand;
+	var recurrentBias : js.webnn.MLOperand;
 	@:optional
-	var peepholeWeight : MLOperand;
+	var peepholeWeight : js.webnn.MLOperand;
 	@:optional
-	var initialHiddenState : MLOperand;
+	var initialHiddenState : js.webnn.MLOperand;
 	@:optional
-	var initialCellState : MLOperand;
+	var initialCellState : js.webnn.MLOperand;
 	@:optional
-	var returnSequence : Bool;
+	var returnSequence : Bool = false;
 	@:optional
-	var direction : js.webnn.MLRecurrentNetworkDirection;
+	var direction : js.webnn.MLRecurrentNetworkDirection = "forward";
 	@:optional
-	var layout : js.webnn.MLLstmWeightLayout;
+	var layout : js.webnn.MLLstmWeightLayout = "iofg";
 	@:optional
-	var activations : [object Object];
+	var activations : Array<js.webnn.MLRecurrentNetworkActivation>;
 };

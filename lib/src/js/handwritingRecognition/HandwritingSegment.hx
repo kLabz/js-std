@@ -28,5 +28,5 @@ typedef HandwritingSegment = {
 	var grapheme : DOMString;
 	var beginIndex : unsigned long;
 	var endIndex : unsigned long;
-	var drawingSegments : [object Object];
+	var drawingSegments : Array<js.handwritingRecognition.HandwritingDrawingSegment>;
 };

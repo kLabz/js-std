@@ -31,5 +31,5 @@ typedef EncodedAudioChunkInit = {
 	var duration : unsigned long long;
 	var data : AllowSharedBufferSource;
 	@:optional
-	var transfer : [object Object];
+	var transfer : Array<ArrayBuffer> = [];
 };

@@ -26,15 +26,15 @@ package js.webAnimations2;
 
 typedef AnimationTriggerOptions = {
 	@:optional
-	var timeline : AnimationTimeline;
+	var timeline : js.webAnimations.AnimationTimeline;
 	@:optional
-	var type : js.webAnimations2.AnimationTriggerType;
+	var type : js.webAnimations2.AnimationTriggerType = "once";
 	@:optional
-	var rangeStart : [object Object],[object Object],[object Object],[object Object];
+	var rangeStart : haxe.extern.EitherType<js.webAnimations2.TimelineRangeOffset, haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, haxe.extern.EitherType<js.cssTypedOm.CSSKeywordValue, DOMString>>> = "normal";
 	@:optional
-	var rangeEnd : [object Object],[object Object],[object Object],[object Object];
+	var rangeEnd : haxe.extern.EitherType<js.webAnimations2.TimelineRangeOffset, haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, haxe.extern.EitherType<js.cssTypedOm.CSSKeywordValue, DOMString>>> = "normal";
 	@:optional
-	var exitRangeStart : [object Object],[object Object],[object Object],[object Object];
+	var exitRangeStart : haxe.extern.EitherType<js.webAnimations2.TimelineRangeOffset, haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, haxe.extern.EitherType<js.cssTypedOm.CSSKeywordValue, DOMString>>> = "auto";
 	@:optional
-	var exitRangeEnd : [object Object],[object Object],[object Object],[object Object];
+	var exitRangeEnd : haxe.extern.EitherType<js.webAnimations2.TimelineRangeOffset, haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, haxe.extern.EitherType<js.cssTypedOm.CSSKeywordValue, DOMString>>> = "auto";
 };

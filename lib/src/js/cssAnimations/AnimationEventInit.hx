@@ -26,9 +26,9 @@ package js.cssAnimations;
 
 typedef AnimationEventInit = js.dom.EventInit & {
 	@:optional
-	var animationName : CSSOMString;
+	var animationName : CSSOMString = "";
 	@:optional
-	var elapsedTime : double;
+	var elapsedTime : double = 0.0;
 	@:optional
-	var pseudoElement : CSSOMString;
+	var pseudoElement : CSSOMString = "";
 };

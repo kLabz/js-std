@@ -28,5 +28,5 @@ typedef URLPatternComponentResult = {
 	@:optional
 	var input : USVString;
 	@:optional
-	var groups : [object Object],[object Object];
+	var groups : haxe.DynamicAccess<haxe.extern.EitherType<USVString, Void>>;
 };

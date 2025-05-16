@@ -26,5 +26,5 @@ package js.translationApi;
 
 typedef TranslatorTranslateOptions = {
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 };

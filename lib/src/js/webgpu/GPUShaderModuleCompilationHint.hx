@@ -27,5 +27,5 @@ package js.webgpu;
 typedef GPUShaderModuleCompilationHint = {
 	var entryPoint : USVString;
 	@:optional
-	var layout : [object Object],[object Object];
+	var layout : haxe.extern.EitherType<js.webgpu.GPUPipelineLayout, js.webgpu.GPUAutoLayoutMode>;
 };

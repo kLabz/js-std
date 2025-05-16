@@ -30,7 +30,7 @@ typedef StorageInterestGroup = js.turtledove.AuctionAdInterestGroup & {
 	@:optional
 	var bidCount : unsigned long long;
 	@:optional
-	var prevWinsMs : [object Object];
+	var prevWinsMs : Array<PreviousWin>;
 	@:optional
 	var joiningOrigin : USVString;
 	@:optional

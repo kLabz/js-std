@@ -26,11 +26,11 @@ package js.uievents;
 
 typedef WheelEventInit = js.uievents.MouseEventInit & {
 	@:optional
-	var deltaX : double;
+	var deltaX : double = 0.0;
 	@:optional
-	var deltaY : double;
+	var deltaY : double = 0.0;
 	@:optional
-	var deltaZ : double;
+	var deltaZ : double = 0.0;
 	@:optional
-	var deltaMode : unsigned long;
+	var deltaMode : unsigned long = 0;
 };

@@ -28,5 +28,5 @@ typedef PAHistogramContribution = {
 	var bucket : bigint;
 	var value : long;
 	@:optional
-	var filteringId : bigint;
+	var filteringId : bigint = 0;
 };

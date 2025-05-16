@@ -26,9 +26,9 @@ package js.cssTransitions;
 
 typedef TransitionEventInit = js.dom.EventInit & {
 	@:optional
-	var propertyName : CSSOMString;
+	var propertyName : CSSOMString = "";
 	@:optional
-	var elapsedTime : double;
+	var elapsedTime : double = 0.0;
 	@:optional
-	var pseudoElement : CSSOMString;
+	var pseudoElement : CSSOMString = "";
 };

@@ -26,7 +26,7 @@ package js.indexeddb;
 
 typedef IDBObjectStoreParameters = {
 	@:optional
-	var keyPath : [object Object],[object Object];
+	var keyPath : haxe.extern.EitherType<DOMString, Array<DOMString>> = null;
 	@:optional
-	var autoIncrement : Bool;
+	var autoIncrement : Bool = false;
 };

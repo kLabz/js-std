@@ -25,15 +25,15 @@
 package js.serviceWorkers;
 
 typedef FetchEventInit = js.serviceWorkers.ExtendableEventInit & {
-	var request : Request;
+	var request : js.fetch.Request;
 	@:optional
-	var preloadResponse : [object Object];
+	var preloadResponse : js.lib.Promise<any>;
 	@:optional
-	var clientId : DOMString;
+	var clientId : DOMString = "";
 	@:optional
-	var resultingClientId : DOMString;
+	var resultingClientId : DOMString = "";
 	@:optional
-	var replacesClientId : DOMString;
+	var replacesClientId : DOMString = "";
 	@:optional
-	var handled : [object Object];
+	var handled : js.lib.Promise<Void>;
 };

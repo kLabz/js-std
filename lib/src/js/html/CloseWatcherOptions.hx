@@ -26,5 +26,5 @@ package js.html;
 
 typedef CloseWatcherOptions = {
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 };

@@ -26,13 +26,13 @@ package js.html;
 
 typedef MessageEventInit = js.dom.EventInit & {
 	@:optional
-	var data : any;
+	var data : any = null;
 	@:optional
-	var origin : USVString;
+	var origin : USVString = "";
 	@:optional
-	var lastEventId : DOMString;
+	var lastEventId : DOMString = "";
 	@:optional
-	var source : MessageEventSource;
+	var source : MessageEventSource = null;
 	@:optional
-	var ports : [object Object];
+	var ports : Array<js.html.MessagePort> = [];
 };

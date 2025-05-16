@@ -31,5 +31,5 @@ typedef WriteParams = {
 	@:optional
 	var position : unsigned long long;
 	@:optional
-	var data : [object Object],[object Object],[object Object];
+	var data : haxe.extern.EitherType<BufferSource, haxe.extern.EitherType<js.fileapi.Blob, USVString>>;
 };

@@ -26,5 +26,5 @@ package js.webmidi;
 
 typedef MidiPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
-	var sysex : Bool;
+	var sysex : Bool = false;
 };

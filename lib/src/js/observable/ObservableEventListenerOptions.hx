@@ -26,7 +26,7 @@ package js.observable;
 
 typedef ObservableEventListenerOptions = {
 	@:optional
-	var capture : Bool;
+	var capture : Bool = false;
 	@:optional
 	var passive : Bool;
 };

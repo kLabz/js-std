@@ -39,11 +39,11 @@ typedef IdentityProviderAccount = {
 	@:optional
 	var picture : USVString;
 	@:optional
-	var approved_clients : [object Object];
+	var approved_clients : Array<USVString>;
 	@:optional
-	var login_hints : [object Object];
+	var login_hints : Array<DOMString>;
 	@:optional
-	var domain_hints : [object Object];
+	var domain_hints : Array<DOMString>;
 	@:optional
-	var label_hints : [object Object];
+	var label_hints : Array<DOMString>;
 };

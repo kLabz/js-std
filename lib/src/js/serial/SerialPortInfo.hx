@@ -26,9 +26,9 @@ package js.serial;
 
 typedef SerialPortInfo = {
 	@:optional
-	var usbVendorId : unsigned short;
+	var usbVendorId : Int;
 	@:optional
-	var usbProductId : unsigned short;
+	var usbProductId : Int;
 	@:optional
 	var bluetoothServiceClassId : BluetoothServiceUUID;
 };

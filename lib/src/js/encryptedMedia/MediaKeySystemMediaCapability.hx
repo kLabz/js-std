@@ -26,9 +26,9 @@ package js.encryptedMedia;
 
 typedef MediaKeySystemMediaCapability = {
 	@:optional
-	var contentType : DOMString;
+	var contentType : DOMString = "";
 	@:optional
-	var encryptionScheme : DOMString;
+	var encryptionScheme : DOMString = null;
 	@:optional
-	var robustness : DOMString;
+	var robustness : DOMString = "";
 };

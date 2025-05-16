@@ -30,7 +30,7 @@ typedef RTCDataChannelStats = js.webrtc.RTCStats & {
 	@:optional
 	var protocol : DOMString;
 	@:optional
-	var dataChannelIdentifier : unsigned short;
+	var dataChannelIdentifier : Int;
 	var state : js.webrtc.RTCDataChannelState;
 	@:optional
 	var messagesSent : unsigned long;

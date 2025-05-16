@@ -28,5 +28,5 @@ typedef TimelineRangeOffset = {
 	@:optional
 	var rangeName : CSSOMString;
 	@:optional
-	var offset : CSSNumericValue;
+	var offset : js.cssTypedOm.CSSNumericValue;
 };

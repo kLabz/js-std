@@ -26,11 +26,11 @@ package js.webnn;
 
 typedef MLResample2dOptions = js.webnn.MLOperatorOptions & {
 	@:optional
-	var mode : js.webnn.MLInterpolationMode;
+	var mode : js.webnn.MLInterpolationMode = "nearest-neighbor";
 	@:optional
-	var scales : [object Object];
+	var scales : Array<float>;
 	@:optional
-	var sizes : [object Object];
+	var sizes : Array<unsigned long>;
 	@:optional
-	var axes : [object Object];
+	var axes : Array<unsigned long>;
 };

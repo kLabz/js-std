@@ -32,7 +32,7 @@ typedef IdentityProviderRequestOptions = js.fedcm.IdentityProviderConfig & {
 	@:optional
 	var domainHint : DOMString;
 	@:optional
-	var fields : [object Object];
+	var fields : Array<USVString>;
 	@:optional
 	var params : any;
 };

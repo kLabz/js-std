@@ -32,5 +32,5 @@ typedef PhotoCapabilities = {
 	@:optional
 	var imageWidth : js.imageCapture.MediaSettingsRange;
 	@:optional
-	var fillLightMode : [object Object];
+	var fillLightMode : Array<js.imageCapture.FillLightMode>;
 };

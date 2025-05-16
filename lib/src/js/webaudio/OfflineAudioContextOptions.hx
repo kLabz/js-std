@@ -26,9 +26,9 @@ package js.webaudio;
 
 typedef OfflineAudioContextOptions = {
 	@:optional
-	var numberOfChannels : unsigned long;
+	var numberOfChannels : unsigned long = 1;
 	var length : unsigned long;
 	var sampleRate : float;
 	@:optional
-	var renderSizeHint : [object Object],[object Object];
+	var renderSizeHint : haxe.extern.EitherType<js.webaudio.AudioContextRenderSizeCategory, unsigned long> = "default";
 };

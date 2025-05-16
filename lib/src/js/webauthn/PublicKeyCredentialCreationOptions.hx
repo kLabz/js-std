@@ -28,19 +28,19 @@ typedef PublicKeyCredentialCreationOptions = {
 	var rp : js.webauthn.PublicKeyCredentialRpEntity;
 	var user : js.webauthn.PublicKeyCredentialUserEntity;
 	var challenge : BufferSource;
-	var pubKeyCredParams : [object Object];
+	var pubKeyCredParams : Array<js.webauthn.PublicKeyCredentialParameters>;
 	@:optional
 	var timeout : unsigned long;
 	@:optional
-	var excludeCredentials : [object Object];
+	var excludeCredentials : Array<js.webauthn.PublicKeyCredentialDescriptor> = [];
 	@:optional
 	var authenticatorSelection : js.webauthn.AuthenticatorSelectionCriteria;
 	@:optional
-	var hints : [object Object];
+	var hints : Array<DOMString> = [];
 	@:optional
-	var attestation : DOMString;
+	var attestation : DOMString = "none";
 	@:optional
-	var attestationFormats : [object Object];
+	var attestationFormats : Array<DOMString> = [];
 	@:optional
 	var extensions : js.webauthn.AuthenticationExtensionsClientInputs;
 };

@@ -25,7 +25,7 @@
 package js.mediacaptureTransform;
 
 typedef MediaStreamTrackProcessorInit = {
-	var track : MediaStreamTrack;
+	var track : js.mediacaptureStreams.MediaStreamTrack;
 	@:optional
-	var maxBufferSize : unsigned short;
+	var maxBufferSize : Int;
 };

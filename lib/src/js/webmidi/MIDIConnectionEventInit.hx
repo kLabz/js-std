@@ -26,5 +26,5 @@ package js.webmidi;
 
 typedef MIDIConnectionEventInit = js.dom.EventInit & {
 	@:optional
-	var port : MIDIPort;
+	var port : js.webmidi.MIDIPort;
 };

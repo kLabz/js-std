@@ -28,5 +28,5 @@ typedef IdleOptions = {
 	@:optional
 	var threshold : unsigned long long;
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 };

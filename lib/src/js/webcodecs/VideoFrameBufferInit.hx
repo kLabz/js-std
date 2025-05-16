@@ -32,13 +32,13 @@ typedef VideoFrameBufferInit = {
 	@:optional
 	var duration : unsigned long long;
 	@:optional
-	var layout : [object Object];
+	var layout : Array<js.webcodecs.PlaneLayout>;
 	@:optional
 	var visibleRect : js.geometry.DOMRectInit;
 	@:optional
-	var rotation : double;
+	var rotation : double = 0;
 	@:optional
-	var flip : Bool;
+	var flip : Bool = false;
 	@:optional
 	var displayWidth : unsigned long;
 	@:optional
@@ -46,7 +46,7 @@ typedef VideoFrameBufferInit = {
 	@:optional
 	var colorSpace : js.webcodecs.VideoColorSpaceInit;
 	@:optional
-	var transfer : [object Object];
+	var transfer : Array<ArrayBuffer> = [];
 	@:optional
 	var metadata : js.webcodecs.VideoFrameMetadata;
 };

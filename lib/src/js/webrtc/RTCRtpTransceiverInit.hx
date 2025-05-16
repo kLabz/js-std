@@ -26,9 +26,9 @@ package js.webrtc;
 
 typedef RTCRtpTransceiverInit = {
 	@:optional
-	var direction : js.webrtc.RTCRtpTransceiverDirection;
+	var direction : js.webrtc.RTCRtpTransceiverDirection = "sendrecv";
 	@:optional
-	var streams : [object Object];
+	var streams : Array<js.mediacaptureStreams.MediaStream> = [];
 	@:optional
-	var sendEncodings : [object Object];
+	var sendEncodings : Array<js.webrtc.RTCRtpEncodingParameters> = [];
 };

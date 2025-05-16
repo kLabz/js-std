@@ -30,7 +30,7 @@ typedef RTCEncodedAudioFrameMetadata = {
 	@:optional
 	var payloadType : octet;
 	@:optional
-	var contributingSources : [object Object];
+	var contributingSources : Array<unsigned long>;
 	@:optional
 	var sequenceNumber : short;
 	@:optional

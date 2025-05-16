@@ -26,5 +26,5 @@ package js.sanitizerApi;
 
 typedef SetHTMLUnsafeOptions = {
 	@:optional
-	var sanitizer : [object Object],[object Object],[object Object];
+	var sanitizer : haxe.extern.EitherType<js.sanitizerApi.Sanitizer, haxe.extern.EitherType<js.sanitizerApi.SanitizerConfig, js.sanitizerApi.SanitizerPresets>> = {  };
 };

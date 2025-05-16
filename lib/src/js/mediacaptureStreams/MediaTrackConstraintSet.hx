@@ -84,11 +84,11 @@ typedef MediaTrackConstraintSet = {
 	@:optional
 	var focusDistance : ConstrainDouble;
 	@:optional
-	var pan : [object Object],[object Object];
+	var pan : haxe.extern.EitherType<Bool, ConstrainDouble>;
 	@:optional
-	var tilt : [object Object],[object Object];
+	var tilt : haxe.extern.EitherType<Bool, ConstrainDouble>;
 	@:optional
-	var zoom : [object Object],[object Object];
+	var zoom : haxe.extern.EitherType<Bool, ConstrainDouble>;
 	@:optional
 	var torch : ConstrainBoolean;
 	@:optional

@@ -29,5 +29,5 @@ typedef AdAuctionData = {
 	@:optional
 	var request : Uint8Array;
 	@:optional
-	var requests : [object Object];
+	var requests : Array<js.turtledove.AdAuctionPerSellerData>;
 };

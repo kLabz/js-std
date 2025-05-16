@@ -26,13 +26,13 @@ package js.webnn;
 
 typedef MLGruCellOptions = js.webnn.MLOperatorOptions & {
 	@:optional
-	var bias : MLOperand;
+	var bias : js.webnn.MLOperand;
 	@:optional
-	var recurrentBias : MLOperand;
+	var recurrentBias : js.webnn.MLOperand;
 	@:optional
-	var resetAfter : Bool;
+	var resetAfter : Bool = true;
 	@:optional
-	var layout : js.webnn.MLGruWeightLayout;
+	var layout : js.webnn.MLGruWeightLayout = "zrn";
 	@:optional
-	var activations : [object Object];
+	var activations : Array<js.webnn.MLRecurrentNetworkActivation>;
 };

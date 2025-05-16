@@ -25,5 +25,5 @@
 package js.html;
 
 typedef FormDataEventInit = js.dom.EventInit & {
-	var formData : FormData;
+	var formData : js.xhr.FormData;
 };

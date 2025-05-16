@@ -28,11 +28,11 @@ typedef BluetoothPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
 	var deviceId : DOMString;
 	@:optional
-	var filters : [object Object];
+	var filters : Array<js.webBluetooth.BluetoothLEScanFilterInit>;
 	@:optional
-	var optionalServices : [object Object];
+	var optionalServices : Array<BluetoothServiceUUID> = [];
 	@:optional
-	var optionalManufacturerData : [object Object];
+	var optionalManufacturerData : Array<Int> = [];
 	@:optional
-	var acceptAllDevices : Bool;
+	var acceptAllDevices : Bool = false;
 };

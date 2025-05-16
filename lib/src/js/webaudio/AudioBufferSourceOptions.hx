@@ -26,15 +26,15 @@ package js.webaudio;
 
 typedef AudioBufferSourceOptions = {
 	@:optional
-	var buffer : AudioBuffer;
+	var buffer : js.webaudio.AudioBuffer;
 	@:optional
-	var detune : float;
+	var detune : float = 0;
 	@:optional
-	var loop : Bool;
+	var loop : Bool = false;
 	@:optional
-	var loopEnd : double;
+	var loopEnd : double = 0;
 	@:optional
-	var loopStart : double;
+	var loopStart : double = 0;
 	@:optional
-	var playbackRate : float;
+	var playbackRate : float = 1;
 };

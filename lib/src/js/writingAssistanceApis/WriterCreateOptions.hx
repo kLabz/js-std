@@ -26,7 +26,7 @@ package js.writingAssistanceApis;
 
 typedef WriterCreateOptions = js.writingAssistanceApis.WriterCreateCoreOptions & {
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 	@:optional
 	var monitor : CreateMonitorCallback;
 	@:optional

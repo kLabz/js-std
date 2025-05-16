@@ -30,7 +30,7 @@ typedef JsonWebKey = {
 	@:optional
 	var use : DOMString;
 	@:optional
-	var key_ops : [object Object];
+	var key_ops : Array<DOMString>;
 	@:optional
 	var alg : DOMString;
 	@:optional
@@ -58,7 +58,7 @@ typedef JsonWebKey = {
 	@:optional
 	var qi : DOMString;
 	@:optional
-	var oth : [object Object];
+	var oth : Array<js.webcrypto.RsaOtherPrimesInfo>;
 	@:optional
 	var k : DOMString;
 };

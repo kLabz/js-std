@@ -25,7 +25,7 @@
 package js.webhid;
 
 typedef HIDDeviceRequestOptions = {
-	var filters : [object Object];
+	var filters : Array<js.webhid.HIDDeviceFilter>;
 	@:optional
-	var exclusionFilters : [object Object];
+	var exclusionFilters : Array<js.webhid.HIDDeviceFilter>;
 };

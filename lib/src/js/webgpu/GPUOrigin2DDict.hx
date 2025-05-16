@@ -26,7 +26,7 @@ package js.webgpu;
 
 typedef GPUOrigin2DDict = {
 	@:optional
-	var x : GPUIntegerCoordinate;
+	var x : GPUIntegerCoordinate = 0;
 	@:optional
-	var y : GPUIntegerCoordinate;
+	var y : GPUIntegerCoordinate = 0;
 };

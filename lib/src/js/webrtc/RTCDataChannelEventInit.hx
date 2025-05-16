@@ -25,5 +25,5 @@
 package js.webrtc;
 
 typedef RTCDataChannelEventInit = js.dom.EventInit & {
-	var channel : RTCDataChannel;
+	var channel : js.webrtc.RTCDataChannel;
 };

@@ -26,5 +26,5 @@ package js.eyedropperApi;
 
 typedef ColorSelectionOptions = {
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 };

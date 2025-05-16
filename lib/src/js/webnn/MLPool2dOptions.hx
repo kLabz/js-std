@@ -26,17 +26,17 @@ package js.webnn;
 
 typedef MLPool2dOptions = js.webnn.MLOperatorOptions & {
 	@:optional
-	var windowDimensions : [object Object];
+	var windowDimensions : Array<unsigned long>;
 	@:optional
-	var padding : [object Object];
+	var padding : Array<unsigned long>;
 	@:optional
-	var strides : [object Object];
+	var strides : Array<unsigned long>;
 	@:optional
-	var dilations : [object Object];
+	var dilations : Array<unsigned long>;
 	@:optional
-	var layout : js.webnn.MLInputOperandLayout;
+	var layout : js.webnn.MLInputOperandLayout = "nchw";
 	@:optional
-	var roundingType : js.webnn.MLRoundingType;
+	var roundingType : js.webnn.MLRoundingType = "floor";
 	@:optional
-	var outputSizes : [object Object];
+	var outputSizes : Array<unsigned long>;
 };

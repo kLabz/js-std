@@ -26,17 +26,17 @@ package js.webhid;
 
 typedef HIDCollectionInfo = {
 	@:optional
-	var usagePage : unsigned short;
+	var usagePage : Int;
 	@:optional
-	var usage : unsigned short;
+	var usage : Int;
 	@:optional
 	var type : octet;
 	@:optional
-	var children : [object Object];
+	var children : Array<js.webhid.HIDCollectionInfo>;
 	@:optional
-	var inputReports : [object Object];
+	var inputReports : Array<js.webhid.HIDReportInfo>;
 	@:optional
-	var outputReports : [object Object];
+	var outputReports : Array<js.webhid.HIDReportInfo>;
 	@:optional
-	var featureReports : [object Object];
+	var featureReports : Array<js.webhid.HIDReportInfo>;
 };

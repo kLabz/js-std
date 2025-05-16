@@ -26,11 +26,11 @@ package js.uievents;
 
 typedef UIEventInit = js.dom.EventInit & {
 	@:optional
-	var view : Window;
+	var view : js.html.Window = null;
 	@:optional
-	var detail : long;
+	var detail : long = 0;
 	@:optional
-	var sourceCapabilities : InputDeviceCapabilities;
+	var sourceCapabilities : js.inputDeviceCapabilities.InputDeviceCapabilities = null;
 	@:optional
-	var which : unsigned long;
+	var which : unsigned long = 0;
 };

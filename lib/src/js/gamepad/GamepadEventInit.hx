@@ -25,5 +25,5 @@
 package js.gamepad;
 
 typedef GamepadEventInit = js.dom.EventInit & {
-	var gamepad : Gamepad;
+	var gamepad : js.gamepad.Gamepad;
 };

@@ -26,5 +26,5 @@ package js.sharedStorage;
 
 typedef SharedStorageWorkletOptions = js.html.WorkletOptions & {
 	@:optional
-	var dataOrigin : USVString;
+	var dataOrigin : USVString = "context-origin";
 };

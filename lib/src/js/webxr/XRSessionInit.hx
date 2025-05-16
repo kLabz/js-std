@@ -26,11 +26,11 @@ package js.webxr;
 
 typedef XRSessionInit = {
 	@:optional
-	var requiredFeatures : [object Object];
+	var requiredFeatures : Array<DOMString>;
 	@:optional
-	var optionalFeatures : [object Object];
-	@:optional
-	var domOverlay : js.webxrDomOverlays.XRDOMOverlayInit;
+	var optionalFeatures : Array<DOMString>;
 	@:optional
 	var depthSensing : js.webxrDepthSensing.XRDepthStateInit;
+	@:optional
+	var domOverlay : js.webxrDomOverlays.XRDOMOverlayInit;
 };

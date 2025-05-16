@@ -27,7 +27,7 @@ package js.securePaymentConfirmation;
 typedef SecurePaymentConfirmationRequest = {
 	var challenge : BufferSource;
 	var rpId : USVString;
-	var credentialIds : [object Object];
+	var credentialIds : Array<BufferSource>;
 	var instrument : js.securePaymentConfirmation.PaymentCredentialInstrument;
 	@:optional
 	var timeout : unsigned long;
@@ -38,7 +38,7 @@ typedef SecurePaymentConfirmationRequest = {
 	@:optional
 	var extensions : js.webauthn.AuthenticationExtensionsClientInputs;
 	@:optional
-	var locale : [object Object];
+	var locale : Array<USVString>;
 	@:optional
 	var showOptOut : Bool;
 };

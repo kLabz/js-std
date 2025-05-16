@@ -26,5 +26,5 @@ package js.resizeObserver;
 
 typedef ResizeObserverOptions = {
 	@:optional
-	var box : js.resizeObserver.ResizeObserverBoxOptions;
+	var box : js.resizeObserver.ResizeObserverBoxOptions = "content-box";
 };

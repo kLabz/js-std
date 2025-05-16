@@ -31,7 +31,7 @@ typedef AudioEncoderConfig = {
 	@:optional
 	var bitrate : unsigned long long;
 	@:optional
-	var bitrateMode : js.mediastreamRecording.BitrateMode;
+	var bitrateMode : js.mediastreamRecording.BitrateMode = "variable";
 	@:optional
 	var aac : js.webcodecsAacCodecRegistration.AacEncoderConfig;
 	@:optional

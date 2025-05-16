@@ -28,5 +28,5 @@ typedef AuthenticationExtensionsPRFInputs = {
 	@:optional
 	var eval : js.webauthn.AuthenticationExtensionsPRFValues;
 	@:optional
-	var evalByCredential : [object Object],[object Object];
+	var evalByCredential : haxe.DynamicAccess<js.webauthn.AuthenticationExtensionsPRFValues>;
 };

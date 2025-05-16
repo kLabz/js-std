@@ -26,7 +26,7 @@ package js.mediastreamRecording;
 
 typedef MediaRecorderOptions = {
 	@:optional
-	var mimeType : DOMString;
+	var mimeType : DOMString = "";
 	@:optional
 	var audioBitsPerSecond : unsigned long;
 	@:optional
@@ -34,7 +34,7 @@ typedef MediaRecorderOptions = {
 	@:optional
 	var bitsPerSecond : unsigned long;
 	@:optional
-	var audioBitrateMode : js.mediastreamRecording.BitrateMode;
+	var audioBitrateMode : js.mediastreamRecording.BitrateMode = "variable";
 	@:optional
 	var videoKeyFrameIntervalDuration : DOMHighResTimeStamp;
 	@:optional

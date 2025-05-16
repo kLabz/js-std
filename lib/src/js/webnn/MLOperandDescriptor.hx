@@ -26,5 +26,5 @@ package js.webnn;
 
 typedef MLOperandDescriptor = {
 	var dataType : js.webnn.MLOperandDataType;
-	var shape : [object Object];
+	var shape : Array<unsigned long>;
 };

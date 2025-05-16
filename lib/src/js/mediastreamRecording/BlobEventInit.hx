@@ -25,7 +25,7 @@
 package js.mediastreamRecording;
 
 typedef BlobEventInit = js.dom.EventInit & {
-	var data : Blob;
+	var data : js.fileapi.Blob;
 	@:optional
 	var timecode : DOMHighResTimeStamp;
 };

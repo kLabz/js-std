@@ -26,11 +26,11 @@ package js.geometry;
 
 typedef DOMRectInit = {
 	@:optional
-	var x : unrestricted double;
+	var x : unrestricted double = 0;
 	@:optional
-	var y : unrestricted double;
+	var y : unrestricted double = 0;
 	@:optional
-	var width : unrestricted double;
+	var width : unrestricted double = 0;
 	@:optional
-	var height : unrestricted double;
+	var height : unrestricted double = 0;
 };

@@ -26,5 +26,5 @@ package js.editContext;
 
 typedef TextFormatUpdateEventInit = js.dom.EventInit & {
 	@:optional
-	var textFormats : [object Object];
+	var textFormats : Array<js.editContext.TextFormat>;
 };

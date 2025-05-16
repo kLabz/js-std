@@ -27,5 +27,5 @@ package js.handwritingRecognition;
 typedef HandwritingPrediction = {
 	var text : DOMString;
 	@:optional
-	var segmentationResult : [object Object];
+	var segmentationResult : Array<js.handwritingRecognition.HandwritingSegment>;
 };

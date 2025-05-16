@@ -26,7 +26,7 @@ package js.writingAssistanceApis;
 
 typedef SummarizerSummarizeOptions = {
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 	@:optional
 	var context : DOMString;
 };

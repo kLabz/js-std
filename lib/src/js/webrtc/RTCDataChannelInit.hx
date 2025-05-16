@@ -26,17 +26,17 @@ package js.webrtc;
 
 typedef RTCDataChannelInit = {
 	@:optional
-	var ordered : Bool;
+	var ordered : Bool = true;
 	@:optional
-	var maxPacketLifeTime : unsigned short;
+	var maxPacketLifeTime : Int;
 	@:optional
-	var maxRetransmits : unsigned short;
+	var maxRetransmits : Int;
 	@:optional
-	var protocol : USVString;
+	var protocol : USVString = "";
 	@:optional
-	var negotiated : Bool;
+	var negotiated : Bool = false;
 	@:optional
-	var id : unsigned short;
+	var id : Int;
 	@:optional
-	var priority : js.webrtcPriority.RTCPriorityType;
+	var priority : js.webrtcPriority.RTCPriorityType = "low";
 };

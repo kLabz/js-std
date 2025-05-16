@@ -26,5 +26,5 @@ package js.cssomView;
 
 typedef CaretPositionFromPointOptions = {
 	@:optional
-	var shadowRoots : [object Object];
+	var shadowRoots : Array<js.dom.ShadowRoot> = [];
 };

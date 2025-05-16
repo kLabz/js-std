@@ -25,5 +25,5 @@
 package js.webxr;
 
 typedef XRSessionEventInit = js.dom.EventInit & {
-	var session : XRSession;
+	var session : js.webxr.XRSession;
 };

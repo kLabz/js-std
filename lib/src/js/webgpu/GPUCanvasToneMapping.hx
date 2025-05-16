@@ -26,5 +26,5 @@ package js.webgpu;
 
 typedef GPUCanvasToneMapping = {
 	@:optional
-	var mode : js.webgpu.GPUCanvasToneMappingMode;
+	var mode : js.webgpu.GPUCanvasToneMappingMode = "standard";
 };

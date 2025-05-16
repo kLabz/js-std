@@ -26,9 +26,9 @@ package js.webBluetoothScanning;
 
 typedef BluetoothLEScanPermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
-	var filters : [object Object];
+	var filters : Array<js.webBluetooth.BluetoothLEScanFilterInit>;
 	@:optional
-	var keepRepeatedDevices : Bool;
+	var keepRepeatedDevices : Bool = false;
 	@:optional
-	var acceptAllAdvertisements : Bool;
+	var acceptAllAdvertisements : Bool = false;
 };

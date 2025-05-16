@@ -26,7 +26,7 @@ package js.webgpu;
 
 typedef GPURenderBundleEncoderDescriptor = js.webgpu.GPURenderPassLayout & {
 	@:optional
-	var depthReadOnly : Bool;
+	var depthReadOnly : Bool = false;
 	@:optional
-	var stencilReadOnly : Bool;
+	var stencilReadOnly : Bool = false;
 };

@@ -26,13 +26,13 @@ package js.webgpu;
 
 typedef GPUPrimitiveState = {
 	@:optional
-	var topology : js.webgpu.GPUPrimitiveTopology;
+	var topology : js.webgpu.GPUPrimitiveTopology = "triangle-list";
 	@:optional
 	var stripIndexFormat : js.webgpu.GPUIndexFormat;
 	@:optional
-	var frontFace : js.webgpu.GPUFrontFace;
+	var frontFace : js.webgpu.GPUFrontFace = "ccw";
 	@:optional
-	var cullMode : js.webgpu.GPUCullMode;
+	var cullMode : js.webgpu.GPUCullMode = "none";
 	@:optional
-	var unclippedDepth : Bool;
+	var unclippedDepth : Bool = false;
 };

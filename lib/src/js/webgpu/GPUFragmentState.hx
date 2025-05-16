@@ -25,5 +25,5 @@
 package js.webgpu;
 
 typedef GPUFragmentState = js.webgpu.GPUProgrammableStage & {
-	var targets : [object Object];
+	var targets : Array<js.webgpu.GPUColorTargetState>;
 };

@@ -25,7 +25,7 @@
 package js.webgpu;
 
 typedef GPUComputePassTimestampWrites = {
-	var querySet : GPUQuerySet;
+	var querySet : js.webgpu.GPUQuerySet;
 	@:optional
 	var beginningOfPassWriteIndex : GPUSize32;
 	@:optional

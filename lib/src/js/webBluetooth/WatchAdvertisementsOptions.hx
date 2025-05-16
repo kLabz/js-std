@@ -26,5 +26,5 @@ package js.webBluetooth;
 
 typedef WatchAdvertisementsOptions = {
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 };

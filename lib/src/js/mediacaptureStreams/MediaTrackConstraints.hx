@@ -26,5 +26,5 @@ package js.mediacaptureStreams;
 
 typedef MediaTrackConstraints = js.mediacaptureStreams.MediaTrackConstraintSet & {
 	@:optional
-	var advanced : [object Object];
+	var advanced : Array<js.mediacaptureStreams.MediaTrackConstraintSet>;
 };

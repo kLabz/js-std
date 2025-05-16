@@ -25,8 +25,8 @@
 package js.jsSelfProfiling;
 
 typedef ProfilerTrace = {
-	var resources : [object Object];
-	var frames : [object Object];
-	var stacks : [object Object];
-	var samples : [object Object];
+	var resources : Array<ProfilerResource>;
+	var frames : Array<js.jsSelfProfiling.ProfilerFrame>;
+	var stacks : Array<js.jsSelfProfiling.ProfilerStack>;
+	var samples : Array<js.jsSelfProfiling.ProfilerSample>;
 };

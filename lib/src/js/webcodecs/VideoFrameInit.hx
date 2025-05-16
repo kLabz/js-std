@@ -30,13 +30,13 @@ typedef VideoFrameInit = {
 	@:optional
 	var timestamp : long long;
 	@:optional
-	var alpha : js.webcodecs.AlphaOption;
+	var alpha : js.webcodecs.AlphaOption = "keep";
 	@:optional
 	var visibleRect : js.geometry.DOMRectInit;
 	@:optional
-	var rotation : double;
+	var rotation : double = 0;
 	@:optional
-	var flip : Bool;
+	var flip : Bool = false;
 	@:optional
 	var displayWidth : unsigned long;
 	@:optional

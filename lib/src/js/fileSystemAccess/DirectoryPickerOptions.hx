@@ -30,5 +30,5 @@ typedef DirectoryPickerOptions = {
 	@:optional
 	var startIn : StartInDirectory;
 	@:optional
-	var mode : js.fileSystemAccess.FileSystemPermissionMode;
+	var mode : js.fileSystemAccess.FileSystemPermissionMode = "read";
 };

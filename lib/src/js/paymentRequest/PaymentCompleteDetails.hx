@@ -26,5 +26,5 @@ package js.paymentRequest;
 
 typedef PaymentCompleteDetails = {
 	@:optional
-	var data : object;
+	var data : object = null;
 };

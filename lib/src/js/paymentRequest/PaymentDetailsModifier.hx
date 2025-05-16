@@ -29,7 +29,7 @@ typedef PaymentDetailsModifier = {
 	@:optional
 	var total : js.paymentRequest.PaymentItem;
 	@:optional
-	var additionalDisplayItems : [object Object];
+	var additionalDisplayItems : Array<js.paymentRequest.PaymentItem>;
 	@:optional
 	var data : object;
 };

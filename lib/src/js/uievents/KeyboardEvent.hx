@@ -1,0 +1,35 @@
+/*
+ * Copyright (C)2005-2025 Haxe Foundation
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ */
+
+// This file is generated from @webref/idl/uievents.idl. Do not edit!
+
+package js.uievents;
+
+extern class KeyboardEvent extends js.uievents.UIEvent {
+	function new(type:DOMString, ?eventInitDict:js.uievents.KeyboardEventInit):Void;
+	static inline var DOM_KEY_LOCATION_STANDARD : unsigned long = 0x00;
+	static inline var DOM_KEY_LOCATION_LEFT : unsigned long = 0x01;
+	static inline var DOM_KEY_LOCATION_RIGHT : unsigned long = 0x02;
+	static inline var DOM_KEY_LOCATION_NUMPAD : unsigned long = 0x03;
+	function getModifierState(keyArg:DOMString):Bool;
+	function initKeyboardEvent(typeArg:DOMString, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:js.html.Window, ?keyArg:DOMString, ?locationArg:unsigned long, ?ctrlKey:Bool, ?altKey:Bool, ?shiftKey:Bool, ?metaKey:Bool):Void;
+}

@@ -25,19 +25,19 @@
 package js.webBluetooth;
 
 typedef BluetoothAdvertisingEventInit = js.dom.EventInit & {
-	var device : BluetoothDevice;
+	var device : js.webBluetooth.BluetoothDevice;
 	@:optional
-	var uuids : [object Object];
+	var uuids : Array<haxe.extern.EitherType<DOMString, unsigned long>>;
 	@:optional
 	var name : DOMString;
 	@:optional
-	var appearance : unsigned short;
+	var appearance : Int;
 	@:optional
 	var txPower : byte;
 	@:optional
 	var rssi : byte;
 	@:optional
-	var manufacturerData : BluetoothManufacturerDataMap;
+	var manufacturerData : js.webBluetooth.BluetoothManufacturerDataMap;
 	@:optional
-	var serviceData : BluetoothServiceDataMap;
+	var serviceData : js.webBluetooth.BluetoothServiceDataMap;
 };

@@ -25,5 +25,5 @@
 package js.webxrlayers;
 
 typedef XRLayerEventInit = js.dom.EventInit & {
-	var layer : XRLayer;
+	var layer : js.webxr.XRLayer;
 };

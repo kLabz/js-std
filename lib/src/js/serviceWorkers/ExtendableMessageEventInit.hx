@@ -26,13 +26,13 @@ package js.serviceWorkers;
 
 typedef ExtendableMessageEventInit = js.serviceWorkers.ExtendableEventInit & {
 	@:optional
-	var data : any;
+	var data : any = null;
 	@:optional
-	var origin : USVString;
+	var origin : USVString = "";
 	@:optional
-	var lastEventId : DOMString;
+	var lastEventId : DOMString = "";
 	@:optional
-	var source : [object Object],[object Object],[object Object];
+	var source : haxe.extern.EitherType<js.serviceWorkers.Client, haxe.extern.EitherType<js.serviceWorkers.ServiceWorker, js.html.MessagePort>> = null;
 	@:optional
-	var ports : [object Object];
+	var ports : Array<js.html.MessagePort> = [];
 };

@@ -28,5 +28,5 @@ typedef NavigationNavigateOptions = js.html.NavigationOptions & {
 	@:optional
 	var state : any;
 	@:optional
-	var history : js.html.NavigationHistoryBehavior;
+	var history : js.html.NavigationHistoryBehavior = "auto";
 };

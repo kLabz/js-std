@@ -26,11 +26,11 @@ package js.webnn;
 
 typedef MLBatchNormalizationOptions = js.webnn.MLOperatorOptions & {
 	@:optional
-	var scale : MLOperand;
+	var scale : js.webnn.MLOperand;
 	@:optional
-	var bias : MLOperand;
+	var bias : js.webnn.MLOperand;
 	@:optional
-	var axis : unsigned long;
+	var axis : unsigned long = 1;
 	@:optional
-	var epsilon : double;
+	var epsilon : double = 1e-5;
 };

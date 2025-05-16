@@ -33,5 +33,5 @@ typedef ScoreAdOutput = {
 	@:optional
 	var incomingBidInSellerCurrency : double;
 	@:optional
-	var allowComponentAuction : Bool;
+	var allowComponentAuction : Bool = false;
 };

@@ -36,7 +36,7 @@ typedef RouterCondition = {
 	@:optional
 	var runningStatus : js.serviceWorkers.RunningStatus;
 	@:optional
-	var or : [object Object];
+	var or : Array<js.serviceWorkers.RouterCondition>;
 	@:optional
 	var not : js.serviceWorkers.RouterCondition;
 };

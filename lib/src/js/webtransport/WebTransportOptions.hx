@@ -26,17 +26,17 @@ package js.webtransport;
 
 typedef WebTransportOptions = {
 	@:optional
-	var allowPooling : Bool;
+	var allowPooling : Bool = false;
 	@:optional
-	var requireUnreliable : Bool;
+	var requireUnreliable : Bool = false;
 	@:optional
-	var serverCertificateHashes : [object Object];
+	var serverCertificateHashes : Array<js.webtransport.WebTransportHash>;
 	@:optional
-	var congestionControl : js.webtransport.WebTransportCongestionControl;
+	var congestionControl : js.webtransport.WebTransportCongestionControl = "default";
 	@:optional
-	var anticipatedConcurrentIncomingUnidirectionalStreams : unsigned short;
+	var anticipatedConcurrentIncomingUnidirectionalStreams : Int = null;
 	@:optional
-	var anticipatedConcurrentIncomingBidirectionalStreams : unsigned short;
+	var anticipatedConcurrentIncomingBidirectionalStreams : Int = null;
 	@:optional
-	var protocols : [object Object];
+	var protocols : Array<DOMString> = [];
 };

@@ -46,15 +46,15 @@ typedef HIDReportItem = {
 	@:optional
 	var wrap : Bool;
 	@:optional
-	var usages : [object Object];
+	var usages : Array<unsigned long>;
 	@:optional
 	var usageMinimum : unsigned long;
 	@:optional
 	var usageMaximum : unsigned long;
 	@:optional
-	var reportSize : unsigned short;
+	var reportSize : Int;
 	@:optional
-	var reportCount : unsigned short;
+	var reportCount : Int;
 	@:optional
 	var unitExponent : byte;
 	@:optional
@@ -80,5 +80,5 @@ typedef HIDReportItem = {
 	@:optional
 	var physicalMaximum : long;
 	@:optional
-	var strings : [object Object];
+	var strings : Array<DOMString>;
 };

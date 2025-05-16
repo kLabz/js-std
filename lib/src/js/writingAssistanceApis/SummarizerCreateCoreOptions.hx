@@ -26,15 +26,15 @@ package js.writingAssistanceApis;
 
 typedef SummarizerCreateCoreOptions = {
 	@:optional
-	var type : js.writingAssistanceApis.SummarizerType;
+	var type : js.writingAssistanceApis.SummarizerType = "key-points";
 	@:optional
-	var format : js.writingAssistanceApis.SummarizerFormat;
+	var format : js.writingAssistanceApis.SummarizerFormat = "markdown";
 	@:optional
-	var length : js.writingAssistanceApis.SummarizerLength;
+	var length : js.writingAssistanceApis.SummarizerLength = "short";
 	@:optional
-	var expectedInputLanguages : [object Object];
+	var expectedInputLanguages : Array<DOMString>;
 	@:optional
-	var expectedContextLanguages : [object Object];
+	var expectedContextLanguages : Array<DOMString>;
 	@:optional
 	var outputLanguage : DOMString;
 };

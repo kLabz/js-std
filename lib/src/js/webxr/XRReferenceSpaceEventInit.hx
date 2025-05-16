@@ -25,7 +25,7 @@
 package js.webxr;
 
 typedef XRReferenceSpaceEventInit = js.dom.EventInit & {
-	var referenceSpace : XRReferenceSpace;
+	var referenceSpace : js.webxr.XRReferenceSpace;
 	@:optional
-	var transform : XRRigidTransform;
+	var transform : js.webxr.XRRigidTransform = null;
 };

@@ -26,7 +26,7 @@ package js.webShare;
 
 typedef ShareData = {
 	@:optional
-	var files : [object Object];
+	var files : Array<js.fileapi.File>;
 	@:optional
 	var title : USVString;
 	@:optional

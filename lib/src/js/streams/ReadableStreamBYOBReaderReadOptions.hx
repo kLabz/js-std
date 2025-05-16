@@ -26,5 +26,5 @@ package js.streams;
 
 typedef ReadableStreamBYOBReaderReadOptions = {
 	@:optional
-	var min : unsigned long long;
+	var min : unsigned long long = 1;
 };

@@ -26,5 +26,5 @@ package js.webrtcEncodedTransform;
 
 typedef SFrameTransformOptions = {
 	@:optional
-	var role : js.webrtcEncodedTransform.SFrameTransformRole;
+	var role : js.webrtcEncodedTransform.SFrameTransformRole = "encrypt";
 };

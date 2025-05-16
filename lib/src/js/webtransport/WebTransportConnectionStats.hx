@@ -26,23 +26,23 @@ package js.webtransport;
 
 typedef WebTransportConnectionStats = {
 	@:optional
-	var bytesSent : unsigned long long;
+	var bytesSent : unsigned long long = 0;
 	@:optional
-	var packetsSent : unsigned long long;
+	var packetsSent : unsigned long long = 0;
 	@:optional
-	var bytesLost : unsigned long long;
+	var bytesLost : unsigned long long = 0;
 	@:optional
-	var packetsLost : unsigned long long;
+	var packetsLost : unsigned long long = 0;
 	@:optional
-	var bytesReceived : unsigned long long;
+	var bytesReceived : unsigned long long = 0;
 	@:optional
-	var packetsReceived : unsigned long long;
+	var packetsReceived : unsigned long long = 0;
 	var smoothedRtt : DOMHighResTimeStamp;
 	var rttVariation : DOMHighResTimeStamp;
 	var minRtt : DOMHighResTimeStamp;
 	var datagrams : js.webtransport.WebTransportDatagramStats;
 	@:optional
-	var estimatedSendRate : unsigned long long;
+	var estimatedSendRate : unsigned long long = null;
 	@:optional
-	var atSendCapacity : Bool;
+	var atSendCapacity : Bool = false;
 };

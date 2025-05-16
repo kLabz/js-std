@@ -35,9 +35,9 @@ typedef AuctionAd = {
 	@:optional
 	var buyerAndSellerReportingId : USVString;
 	@:optional
-	var selectableBuyerAndSellerReportingIds : [object Object];
+	var selectableBuyerAndSellerReportingIds : Array<USVString>;
 	@:optional
-	var allowedReportingOrigins : [object Object];
+	var allowedReportingOrigins : Array<USVString>;
 	@:optional
 	var adRenderId : DOMString;
 	@:optional

@@ -28,13 +28,13 @@ typedef CookieInit = {
 	var name : USVString;
 	var value : USVString;
 	@:optional
-	var expires : DOMHighResTimeStamp;
+	var expires : DOMHighResTimeStamp = null;
 	@:optional
-	var domain : USVString;
+	var domain : USVString = null;
 	@:optional
-	var path : USVString;
+	var path : USVString = "/";
 	@:optional
-	var sameSite : js.cookieStore.CookieSameSite;
+	var sameSite : js.cookieStore.CookieSameSite = "strict";
 	@:optional
-	var partitioned : Bool;
+	var partitioned : Bool = false;
 };

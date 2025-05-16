@@ -25,9 +25,9 @@
 package js.webxrHitTest;
 
 typedef XRHitTestOptionsInit = {
-	var space : XRSpace;
+	var space : js.webxr.XRSpace;
 	@:optional
-	var entityTypes : [object Object];
+	var entityTypes : Array<js.webxrHitTest.XRHitTestTrackableType>;
 	@:optional
-	var offsetRay : XRRay;
+	var offsetRay : js.webxrHitTest.XRRay;
 };

@@ -36,7 +36,7 @@ typedef ReportWinBrowserSignals = js.turtledove.ReportingBrowserSignals & {
 	@:optional
 	var buyerReportingId : DOMString;
 	@:optional
-	var modelingSignals : unsigned short;
+	var modelingSignals : Int;
 	@:optional
 	var dataVersion : unsigned long;
 	@:optional

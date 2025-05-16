@@ -27,7 +27,7 @@ package js.webgpu;
 typedef GPUExtent3DDict = {
 	var width : GPUIntegerCoordinate;
 	@:optional
-	var height : GPUIntegerCoordinate;
+	var height : GPUIntegerCoordinate = 1;
 	@:optional
-	var depthOrArrayLayers : GPUIntegerCoordinate;
+	var depthOrArrayLayers : GPUIntegerCoordinate = 1;
 };

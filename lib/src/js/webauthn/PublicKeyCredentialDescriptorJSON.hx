@@ -28,5 +28,5 @@ typedef PublicKeyCredentialDescriptorJSON = {
 	var type : DOMString;
 	var id : Base64URLString;
 	@:optional
-	var transports : [object Object];
+	var transports : Array<DOMString>;
 };

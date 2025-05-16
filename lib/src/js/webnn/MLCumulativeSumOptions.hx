@@ -26,7 +26,7 @@ package js.webnn;
 
 typedef MLCumulativeSumOptions = js.webnn.MLOperatorOptions & {
 	@:optional
-	var exclusive : Bool;
+	var exclusive : Bool = false;
 	@:optional
-	var reversed : Bool;
+	var reversed : Bool = false;
 };

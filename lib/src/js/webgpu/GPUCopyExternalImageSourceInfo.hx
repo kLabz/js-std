@@ -27,7 +27,7 @@ package js.webgpu;
 typedef GPUCopyExternalImageSourceInfo = {
 	var source : GPUCopyExternalImageSource;
 	@:optional
-	var origin : GPUOrigin2D;
+	var origin : GPUOrigin2D = {  };
 	@:optional
-	var flipY : Bool;
+	var flipY : Bool = false;
 };

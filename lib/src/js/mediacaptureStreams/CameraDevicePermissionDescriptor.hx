@@ -26,5 +26,5 @@ package js.mediacaptureStreams;
 
 typedef CameraDevicePermissionDescriptor = js.permissions.PermissionDescriptor & {
 	@:optional
-	var panTiltZoom : Bool;
+	var panTiltZoom : Bool = false;
 };

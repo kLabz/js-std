@@ -27,13 +27,13 @@ package js.dom;
 typedef ShadowRootInit = {
 	var mode : js.dom.ShadowRootMode;
 	@:optional
-	var delegatesFocus : Bool;
+	var delegatesFocus : Bool = false;
 	@:optional
-	var slotAssignment : js.dom.SlotAssignmentMode;
+	var slotAssignment : js.dom.SlotAssignmentMode = "named";
 	@:optional
-	var clonable : Bool;
+	var clonable : Bool = false;
 	@:optional
-	var serializable : Bool;
+	var serializable : Bool = false;
 	@:optional
-	var customElementRegistry : CustomElementRegistry;
+	var customElementRegistry : js.html.CustomElementRegistry;
 };

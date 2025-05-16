@@ -26,9 +26,9 @@ package js.webusb;
 
 typedef USBDeviceFilter = {
 	@:optional
-	var vendorId : unsigned short;
+	var vendorId : Int;
 	@:optional
-	var productId : unsigned short;
+	var productId : Int;
 	@:optional
 	var classCode : octet;
 	@:optional

@@ -25,6 +25,6 @@
 package js.shapeDetectionApi;
 
 typedef DetectedFace = {
-	var boundingBox : DOMRectReadOnly;
-	var landmarks : [object Object];
+	var boundingBox : js.geometry.DOMRectReadOnly;
+	var landmarks : Array<js.shapeDetectionApi.Landmark>;
 };

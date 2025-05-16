@@ -26,11 +26,11 @@ package js.documentPictureInPicture;
 
 typedef DocumentPictureInPictureOptions = {
 	@:optional
-	var width : unsigned long long;
+	var width : unsigned long long = 0;
 	@:optional
-	var height : unsigned long long;
+	var height : unsigned long long = 0;
 	@:optional
-	var disallowReturnToOpener : Bool;
+	var disallowReturnToOpener : Bool = false;
 	@:optional
-	var preferInitialWindowPlacement : Bool;
+	var preferInitialWindowPlacement : Bool = false;
 };

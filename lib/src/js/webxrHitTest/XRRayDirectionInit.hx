@@ -26,11 +26,11 @@ package js.webxrHitTest;
 
 typedef XRRayDirectionInit = {
 	@:optional
-	var x : double;
+	var x : double = 0;
 	@:optional
-	var y : double;
+	var y : double = 0;
 	@:optional
-	var z : double;
+	var z : double = -1;
 	@:optional
-	var w : double;
+	var w : double = 0;
 };

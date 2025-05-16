@@ -26,7 +26,7 @@ package js.cssomView;
 
 typedef BoxQuadOptions = {
 	@:optional
-	var box : js.cssomView.CSSBoxType;
+	var box : js.cssomView.CSSBoxType = "border";
 	@:optional
 	var relativeTo : GeometryNode;
 };

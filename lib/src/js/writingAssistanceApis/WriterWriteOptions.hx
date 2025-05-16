@@ -28,5 +28,5 @@ typedef WriterWriteOptions = {
 	@:optional
 	var context : DOMString;
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 };

@@ -30,9 +30,9 @@ typedef PaymentRequestDetailsUpdate = {
 	@:optional
 	var total : js.paymentRequest.PaymentCurrencyAmount;
 	@:optional
-	var modifiers : [object Object];
+	var modifiers : Array<js.paymentRequest.PaymentDetailsModifier>;
 	@:optional
-	var shippingOptions : [object Object];
+	var shippingOptions : Array<js.paymentRequest.PaymentShippingOption>;
 	@:optional
 	var paymentMethodErrors : object;
 	@:optional

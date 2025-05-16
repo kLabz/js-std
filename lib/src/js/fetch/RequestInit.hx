@@ -48,7 +48,7 @@ typedef RequestInit = {
 	@:optional
 	var keepalive : Bool;
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 	@:optional
 	var duplex : js.fetch.RequestDuplex;
 	@:optional

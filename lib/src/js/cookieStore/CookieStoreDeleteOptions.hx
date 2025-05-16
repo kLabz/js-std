@@ -27,9 +27,9 @@ package js.cookieStore;
 typedef CookieStoreDeleteOptions = {
 	var name : USVString;
 	@:optional
-	var domain : USVString;
+	var domain : USVString = null;
 	@:optional
-	var path : USVString;
+	var path : USVString = "/";
 	@:optional
-	var partitioned : Bool;
+	var partitioned : Bool = false;
 };

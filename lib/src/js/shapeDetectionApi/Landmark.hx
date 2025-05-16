@@ -25,7 +25,7 @@
 package js.shapeDetectionApi;
 
 typedef Landmark = {
-	var locations : [object Object];
+	var locations : Array<js.imageCapture.Point2D>;
 	@:optional
 	var type : js.shapeDetectionApi.LandmarkType;
 };

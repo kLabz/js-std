@@ -26,13 +26,13 @@ package js.webxrlayers;
 
 typedef XRCylinderLayerInit = js.webxrlayers.XRLayerInit & {
 	@:optional
-	var textureType : js.webxrlayers.XRTextureType;
+	var textureType : js.webxrlayers.XRTextureType = "texture";
 	@:optional
-	var transform : XRRigidTransform;
+	var transform : js.webxr.XRRigidTransform;
 	@:optional
-	var radius : float;
+	var radius : float = 2.0;
 	@:optional
-	var centralAngle : float;
+	var centralAngle : float = 0.78539;
 	@:optional
-	var aspectRatio : float;
+	var aspectRatio : float = 2.0;
 };

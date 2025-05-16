@@ -32,5 +32,5 @@ typedef IntersectionObserverEntryInit = {
 	var isIntersecting : Bool;
 	var isVisible : Bool;
 	var intersectionRatio : double;
-	var target : Element;
+	var target : js.dom.Element;
 };

@@ -25,5 +25,5 @@
 package js.genericSensor;
 
 typedef SensorErrorEventInit = js.dom.EventInit & {
-	var error : DOMException;
+	var error : js.webidl.DOMException;
 };

@@ -26,5 +26,5 @@ package js.inkEnhancement;
 
 typedef InkPresenterParam = {
 	@:optional
-	var presentationArea : Element;
+	var presentationArea : js.dom.Element = null;
 };

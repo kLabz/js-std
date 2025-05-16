@@ -26,13 +26,13 @@ package js.webnn;
 
 typedef MLGemmOptions = js.webnn.MLOperatorOptions & {
 	@:optional
-	var c : MLOperand;
+	var c : js.webnn.MLOperand;
 	@:optional
-	var alpha : double;
+	var alpha : double = 1.0;
 	@:optional
-	var beta : double;
+	var beta : double = 1.0;
 	@:optional
-	var aTranspose : Bool;
+	var aTranspose : Bool = false;
 	@:optional
-	var bTranspose : Bool;
+	var bTranspose : Bool = false;
 };

@@ -29,5 +29,5 @@ typedef GPUColorTargetState = {
 	@:optional
 	var blend : js.webgpu.GPUBlendState;
 	@:optional
-	var writeMask : GPUColorWriteFlags;
+	var writeMask : GPUColorWriteFlags = 0xF;
 };

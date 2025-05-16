@@ -26,11 +26,11 @@ package js.webAnimations;
 
 typedef BaseComputedKeyframe = {
 	@:optional
-	var offset : double;
+	var offset : double = null;
 	@:optional
 	var computedOffset : double;
 	@:optional
-	var easing : DOMString;
+	var easing : DOMString = "linear";
 	@:optional
-	var composite : js.webAnimations.CompositeOperationOrAuto;
+	var composite : js.webAnimations.CompositeOperationOrAuto = "auto";
 };

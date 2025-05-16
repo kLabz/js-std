@@ -26,7 +26,7 @@ package js.webrtc;
 
 typedef RTCRtpEncodingParameters = js.webrtc.RTCRtpCodingParameters & {
 	@:optional
-	var active : Bool;
+	var active : Bool = true;
 	@:optional
 	var codec : js.webrtc.RTCRtpCodec;
 	@:optional
@@ -36,7 +36,7 @@ typedef RTCRtpEncodingParameters = js.webrtc.RTCRtpCodingParameters & {
 	@:optional
 	var scaleResolutionDownBy : double;
 	@:optional
-	var priority : js.webrtcPriority.RTCPriorityType;
+	var priority : js.webrtcPriority.RTCPriorityType = "low";
 	@:optional
 	var networkPriority : js.webrtcPriority.RTCPriorityType;
 	@:optional

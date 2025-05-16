@@ -25,7 +25,7 @@
 package js.webusb;
 
 typedef USBBlocklistEntry = {
-	var idVendor : unsigned short;
-	var idProduct : unsigned short;
-	var bcdDevice : unsigned short;
+	var idVendor : Int;
+	var idProduct : Int;
+	var bcdDevice : Int;
 };

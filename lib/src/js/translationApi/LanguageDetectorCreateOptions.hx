@@ -26,7 +26,7 @@ package js.translationApi;
 
 typedef LanguageDetectorCreateOptions = js.translationApi.LanguageDetectorCreateCoreOptions & {
 	@:optional
-	var signal : AbortSignal;
+	var signal : js.dom.AbortSignal;
 	@:optional
 	var monitor : CreateMonitorCallback;
 };

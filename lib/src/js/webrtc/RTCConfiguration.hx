@@ -26,17 +26,17 @@ package js.webrtc;
 
 typedef RTCConfiguration = {
 	@:optional
-	var iceServers : [object Object];
+	var iceServers : Array<js.webrtc.RTCIceServer> = [];
 	@:optional
-	var iceTransportPolicy : js.webrtc.RTCIceTransportPolicy;
+	var iceTransportPolicy : js.webrtc.RTCIceTransportPolicy = "all";
 	@:optional
-	var bundlePolicy : js.webrtc.RTCBundlePolicy;
+	var bundlePolicy : js.webrtc.RTCBundlePolicy = "balanced";
 	@:optional
-	var rtcpMuxPolicy : js.webrtc.RTCRtcpMuxPolicy;
+	var rtcpMuxPolicy : js.webrtc.RTCRtcpMuxPolicy = "require";
 	@:optional
-	var certificates : [object Object];
+	var certificates : Array<js.webrtc.RTCCertificate> = [];
 	@:optional
-	var iceCandidatePoolSize : octet;
+	var iceCandidatePoolSize : octet = 0;
 	@:optional
 	var peerIdentity : DOMString;
 };

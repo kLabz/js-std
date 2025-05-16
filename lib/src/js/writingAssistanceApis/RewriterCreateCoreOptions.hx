@@ -26,15 +26,15 @@ package js.writingAssistanceApis;
 
 typedef RewriterCreateCoreOptions = {
 	@:optional
-	var tone : js.writingAssistanceApis.RewriterTone;
+	var tone : js.writingAssistanceApis.RewriterTone = "as-is";
 	@:optional
-	var format : js.writingAssistanceApis.RewriterFormat;
+	var format : js.writingAssistanceApis.RewriterFormat = "as-is";
 	@:optional
-	var length : js.writingAssistanceApis.RewriterLength;
+	var length : js.writingAssistanceApis.RewriterLength = "as-is";
 	@:optional
-	var expectedInputLanguages : [object Object];
+	var expectedInputLanguages : Array<DOMString>;
 	@:optional
-	var expectedContextLanguages : [object Object];
+	var expectedContextLanguages : Array<DOMString>;
 	@:optional
 	var outputLanguage : DOMString;
 };

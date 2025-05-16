@@ -64,7 +64,7 @@ typedef MediaTrackSettings = {
 	@:optional
 	var focusMode : DOMString;
 	@:optional
-	var pointsOfInterest : [object Object];
+	var pointsOfInterest : Array<js.imageCapture.Point2D>;
 	@:optional
 	var exposureCompensation : double;
 	@:optional

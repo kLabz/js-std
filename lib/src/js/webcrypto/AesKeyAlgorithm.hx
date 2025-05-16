@@ -25,5 +25,5 @@
 package js.webcrypto;
 
 typedef AesKeyAlgorithm = js.webcrypto.KeyAlgorithm & {
-	var length : unsigned short;
+	var length : Int;
 };

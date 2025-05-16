@@ -28,9 +28,9 @@ typedef HIDDeviceFilter = {
 	@:optional
 	var vendorId : unsigned long;
 	@:optional
-	var productId : unsigned short;
+	var productId : Int;
 	@:optional
-	var usagePage : unsigned short;
+	var usagePage : Int;
 	@:optional
-	var usage : unsigned short;
+	var usage : Int;
 };

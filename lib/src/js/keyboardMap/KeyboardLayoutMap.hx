@@ -24,6 +24,9 @@
 
 package js.keyboardMap;
 
+/**
+	TODO MaplikeDeclaration handling
+**/
 extern class KeyboardLayoutMap {
 
 }

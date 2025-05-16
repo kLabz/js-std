@@ -24,10 +24,13 @@
 
 package js.cssFontLoading;
 
+/**
+	TODO SetlikeDeclaration handling
+**/
 extern class FontFaceSet extends js.dom.EventTarget {
 	function add(font:FontFace):FontFaceSet;
-	function delete(font:FontFace):Bool;
-	function clear():Void;
-	function load(font:CSSOMString, ?text:CSSOMString):js.lib.Promise<Array<FontFace>>;
 	function check(font:CSSOMString, ?text:CSSOMString):Bool;
+	function clear():Void;
+	function delete(font:FontFace):Bool;
+	function load(font:CSSOMString, ?text:CSSOMString):js.lib.Promise<Array<FontFace>>;
 }

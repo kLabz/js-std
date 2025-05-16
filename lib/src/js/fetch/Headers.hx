@@ -28,11 +28,11 @@ extern class Headers {
 	function new(?init:HeadersInit):Void;
 	function append(name:String, value:String):Void;
 	function delete(name:String):Void;
+	function entries():Iterator<Array<Dynamic>>;
 	function get(name:String):String;
 	function getSetCookie():Array<String>;
 	function has(name:String):Bool;
-	function set(name:String, value:String):Void;
 	function keys():Iterator<String>;
+	function set(name:String, value:String):Void;
 	function values():Iterator<String>;
-	function entries():Iterator<Array<Dynamic>>;
 }

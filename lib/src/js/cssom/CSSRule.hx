@@ -35,7 +35,7 @@ extern class CSSRule {
 	static inline var NAMESPACE_RULE : Int = 10;
 	static inline var KEYFRAMES_RULE : Int = 7;
 	static inline var KEYFRAME_RULE : Int = 8;
-	static inline var COUNTER_STYLE_RULE : Int = 11;
 	static inline var SUPPORTS_RULE : Int = 12;
+	static inline var COUNTER_STYLE_RULE : Int = 11;
 	static inline var FONT_FEATURE_VALUES_RULE : Int = 14;
 }

@@ -25,8 +25,8 @@
 package js.html;
 
 extern class DataTransferItem {
-	function getAsString(callback:FunctionStringCallback):Void;
 	function getAsFile():js.fileapi.File;
-	function webkitGetAsEntry():js.entriesApi.FileSystemEntry;
 	function getAsFileSystemHandle():js.lib.Promise<js.fs.FileSystemHandle>;
+	function getAsString(callback:FunctionStringCallback):Void;
+	function webkitGetAsEntry():js.entriesApi.FileSystemEntry;
 }

@@ -25,10 +25,10 @@
 package js.storageBuckets;
 
 extern class StorageBucket {
-	function persist():js.lib.Promise<Bool>;
-	function persisted():js.lib.Promise<Bool>;
 	function estimate():js.lib.Promise<js.storage.StorageEstimate>;
-	function setExpires(expires:DOMHighResTimeStamp):js.lib.Promise<Void>;
 	function expires():js.lib.Promise<DOMHighResTimeStamp>;
 	function getDirectory():js.lib.Promise<js.fs.FileSystemDirectoryHandle>;
+	function persist():js.lib.Promise<Bool>;
+	function persisted():js.lib.Promise<Bool>;
+	function setExpires(expires:DOMHighResTimeStamp):js.lib.Promise<Void>;
 }

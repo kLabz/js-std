@@ -25,6 +25,6 @@
 package js.webxrHitTest;
 
 extern class XRHitTestResult {
-	function getPose(baseSpace:js.webxr.XRSpace):js.webxr.XRPose;
 	function createAnchor():js.lib.Promise<js.anchors.XRAnchor>;
+	function getPose(baseSpace:js.webxr.XRSpace):js.webxr.XRPose;
 }

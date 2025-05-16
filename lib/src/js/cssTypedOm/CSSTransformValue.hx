@@ -26,9 +26,9 @@ package js.cssTypedOm;
 
 extern class CSSTransformValue extends CSSStyleValue {
 	function new(transforms:Array<CSSTransformComponent>):Void;
-	function values():Iterator<CSSTransformComponent>;
-	function values():Iterator<CSSTransformComponent>;
 	overload function (index:Int):CSSTransformComponent;
 	overload function (index:Int, val:CSSTransformComponent):CSSTransformComponent;
 	function toMatrix():js.geometry.DOMMatrix;
+	function values():Iterator<CSSTransformComponent>;
+	function values():Iterator<CSSTransformComponent>;
 }

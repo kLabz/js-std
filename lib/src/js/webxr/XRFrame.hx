@@ -25,14 +25,14 @@
 package js.webxr;
 
 extern class XRFrame {
-	function getViewerPose(referenceSpace:XRReferenceSpace):XRViewerPose;
-	function getPose(space:XRSpace, baseSpace:XRSpace):XRPose;
 	function createAnchor(pose:XRRigidTransform, space:XRSpace):js.lib.Promise<js.anchors.XRAnchor>;
-	function getJointPose(joint:js.webxrHandInput.XRJointSpace, baseSpace:XRSpace):js.webxrHandInput.XRJointPose;
 	function fillJointRadii(jointSpaces:Array<js.webxrHandInput.XRJointSpace>, radii:Float32Array):Bool;
 	function fillPoses(spaces:Array<XRSpace>, baseSpace:XRSpace, transforms:Float32Array):Bool;
 	function getDepthInformation(view:XRView):js.webxrDepthSensing.XRCPUDepthInformation;
 	function getHitTestResults(hitTestSource:js.webxrHitTest.XRHitTestSource):Array<js.webxrHitTest.XRHitTestResult>;
 	function getHitTestResultsForTransientInput(hitTestSource:js.webxrHitTest.XRTransientInputHitTestSource):Array<js.webxrHitTest.XRTransientInputHitTestResult>;
+	function getJointPose(joint:js.webxrHandInput.XRJointSpace, baseSpace:XRSpace):js.webxrHandInput.XRJointPose;
 	function getLightEstimate(lightProbe:js.webxrLightingEstimation.XRLightProbe):js.webxrLightingEstimation.XRLightEstimate;
+	function getPose(space:XRSpace, baseSpace:XRSpace):XRPose;
+	function getViewerPose(referenceSpace:XRReferenceSpace):XRViewerPose;
 }

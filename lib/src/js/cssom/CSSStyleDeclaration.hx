@@ -25,9 +25,9 @@
 package js.cssom;
 
 extern class CSSStyleDeclaration {
-	function item(index:Int):CSSOMString;
-	function getPropertyValue(property:CSSOMString):CSSOMString;
 	function getPropertyPriority(property:CSSOMString):CSSOMString;
-	function setProperty(property:CSSOMString, value:CSSOMString, ?priority:CSSOMString):Void;
+	function getPropertyValue(property:CSSOMString):CSSOMString;
+	function item(index:Int):CSSOMString;
 	function removeProperty(property:CSSOMString):CSSOMString;
+	function setProperty(property:CSSOMString, value:CSSOMString, ?priority:CSSOMString):Void;
 }

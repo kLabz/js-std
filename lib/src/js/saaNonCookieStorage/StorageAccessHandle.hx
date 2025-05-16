@@ -25,10 +25,10 @@
 package js.saaNonCookieStorage;
 
 extern class StorageAccessHandle {
-	function getDirectory():js.lib.Promise<js.fs.FileSystemDirectoryHandle>;
-	function estimate():js.lib.Promise<js.storage.StorageEstimate>;
-	function createObjectURL(obj:haxe.extern.EitherType<js.fileapi.Blob, js.mediaSource.MediaSource>):String;
-	function revokeObjectURL(url:String):Void;
 	function BroadcastChannel(name:String):js.html.BroadcastChannel;
 	function SharedWorker(scriptURL:String, ?options:haxe.extern.EitherType<String, SharedWorkerOptions>):js.html.SharedWorker;
+	function createObjectURL(obj:haxe.extern.EitherType<js.fileapi.Blob, js.mediaSource.MediaSource>):String;
+	function estimate():js.lib.Promise<js.storage.StorageEstimate>;
+	function getDirectory():js.lib.Promise<js.fs.FileSystemDirectoryHandle>;
+	function revokeObjectURL(url:String):Void;
 }

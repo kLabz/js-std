@@ -24,6 +24,9 @@
 
 package js.eventTiming;
 
+/**
+	TODO MaplikeDeclaration handling
+**/
 extern class EventCounts {
 
 }

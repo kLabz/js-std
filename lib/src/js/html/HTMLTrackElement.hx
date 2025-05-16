@@ -25,9 +25,9 @@
 package js.html;
 
 extern class HTMLTrackElement extends HTMLElement {
-	function new():Void;
 	static inline var NONE : Int = 0;
 	static inline var LOADING : Int = 1;
 	static inline var LOADED : Int = 2;
 	static inline var ERROR : Int = 3;
+	function new():Void;
 }

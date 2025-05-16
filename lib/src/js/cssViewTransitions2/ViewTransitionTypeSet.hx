@@ -24,6 +24,9 @@
 
 package js.cssViewTransitions2;
 
+/**
+	TODO SetlikeDeclaration handling
+**/
 extern class ViewTransitionTypeSet {
 
 }

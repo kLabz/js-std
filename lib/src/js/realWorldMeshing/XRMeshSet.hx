@@ -24,6 +24,9 @@
 
 package js.realWorldMeshing;
 
+/**
+	TODO SetlikeDeclaration handling
+**/
 extern class XRMeshSet {
 
 }

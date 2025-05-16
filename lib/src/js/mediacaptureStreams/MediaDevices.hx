@@ -26,11 +26,11 @@ package js.mediacaptureStreams;
 
 extern class MediaDevices extends js.dom.EventTarget {
 	function enumerateDevices():js.lib.Promise<Array<MediaDeviceInfo>>;
-	function selectAudioOutput(?options:js.audioOutput.AudioOutputOptions):js.lib.Promise<MediaDeviceInfo>;
-	function setCaptureHandleConfig(?config:js.captureHandleIdentity.CaptureHandleConfig):Void;
-	function setSupportedCaptureActions(actions:Array<String>):Void;
+	function getDisplayMedia(?options:js.screenCapture.DisplayMediaStreamOptions):js.lib.Promise<MediaStream>;
 	function getSupportedConstraints():MediaTrackSupportedConstraints;
 	function getUserMedia(?constraints:MediaStreamConstraints):js.lib.Promise<MediaStream>;
 	function getViewportMedia(?options:js.screenCapture.DisplayMediaStreamOptions):js.lib.Promise<MediaStream>;
-	function getDisplayMedia(?options:js.screenCapture.DisplayMediaStreamOptions):js.lib.Promise<MediaStream>;
+	function selectAudioOutput(?options:js.audioOutput.AudioOutputOptions):js.lib.Promise<MediaDeviceInfo>;
+	function setCaptureHandleConfig(?config:js.captureHandleIdentity.CaptureHandleConfig):Void;
+	function setSupportedCaptureActions(actions:Array<String>):Void;
 }

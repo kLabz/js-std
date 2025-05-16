@@ -28,6 +28,6 @@ extern class FileReaderSync {
 	function new():Void;
 	function readAsArrayBuffer(blob:Blob):ArrayBuffer;
 	function readAsBinaryString(blob:Blob):String;
-	function readAsText(blob:Blob, ?encoding:String):String;
 	function readAsDataURL(blob:Blob):String;
+	function readAsText(blob:Blob, ?encoding:String):String;
 }

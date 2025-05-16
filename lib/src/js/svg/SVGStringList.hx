@@ -25,12 +25,12 @@
 package js.svg;
 
 extern class SVGStringList {
-	function clear():Void;
-	function initialize(newItem:String):String;
-	function getItem(index:Int):String;
-	function insertItemBefore(newItem:String, index:Int):String;
-	function replaceItem(newItem:String, index:Int):String;
-	function removeItem(index:Int):String;
-	function appendItem(newItem:String):String;
 	function (index:Int, newItem:String):Void;
+	function appendItem(newItem:String):String;
+	function clear():Void;
+	function getItem(index:Int):String;
+	function initialize(newItem:String):String;
+	function insertItemBefore(newItem:String, index:Int):String;
+	function removeItem(index:Int):String;
+	function replaceItem(newItem:String, index:Int):String;
 }

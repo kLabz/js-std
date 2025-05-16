@@ -26,7 +26,7 @@ package js.webxrlayers;
 
 extern class XRMediaBinding {
 	function new(session:js.webxr.XRSession):Void;
-	function createQuadLayer(video:js.html.HTMLVideoElement, ?init:XRMediaQuadLayerInit):XRQuadLayer;
 	function createCylinderLayer(video:js.html.HTMLVideoElement, ?init:XRMediaCylinderLayerInit):XRCylinderLayer;
 	function createEquirectLayer(video:js.html.HTMLVideoElement, ?init:XRMediaEquirectLayerInit):XREquirectLayer;
+	function createQuadLayer(video:js.html.HTMLVideoElement, ?init:XRMediaQuadLayerInit):XRQuadLayer;
 }

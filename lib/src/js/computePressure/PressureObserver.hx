@@ -26,8 +26,8 @@ package js.computePressure;
 
 extern class PressureObserver {
 	function new(callback:PressureUpdateCallback):Void;
-	function observe(source:PressureSource, ?options:PressureObserverOptions):js.lib.Promise<Void>;
-	function unobserve(source:PressureSource):Void;
 	function disconnect():Void;
+	function observe(source:PressureSource, ?options:PressureObserverOptions):js.lib.Promise<Void>;
 	function takeRecords():Array<PressureRecord>;
+	function unobserve(source:PressureSource):Void;
 }

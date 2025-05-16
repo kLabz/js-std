@@ -27,6 +27,6 @@ package js.handwritingRecognition;
 extern class HandwritingStroke {
 	function new():Void;
 	function addPoint(point:HandwritingPoint):Void;
-	function getPoints():Array<HandwritingPoint>;
 	function clear():Void;
+	function getPoints():Array<HandwritingPoint>;
 }

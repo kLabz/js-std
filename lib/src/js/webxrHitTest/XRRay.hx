@@ -25,6 +25,6 @@
 package js.webxrHitTest;
 
 extern class XRRay {
-	function new(?origin:js.geometry.DOMPointInit, ?direction:XRRayDirectionInit):Void;
-	function new(transform:js.webxr.XRRigidTransform):Void;
+	overload function new(transform:js.webxr.XRRigidTransform):Void;
+	overload function new(?origin:js.geometry.DOMPointInit, ?direction:XRRayDirectionInit):Void;
 }

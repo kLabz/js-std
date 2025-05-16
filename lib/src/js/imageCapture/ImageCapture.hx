@@ -26,8 +26,8 @@ package js.imageCapture;
 
 extern class ImageCapture {
 	function new(videoTrack:js.mediacaptureStreams.MediaStreamTrack):Void;
-	function takePhoto(?photoSettings:PhotoSettings):js.lib.Promise<js.fileapi.Blob>;
 	function getPhotoCapabilities():js.lib.Promise<PhotoCapabilities>;
 	function getPhotoSettings():js.lib.Promise<PhotoSettings>;
 	function grabFrame():js.lib.Promise<js.html.ImageBitmap>;
+	function takePhoto(?photoSettings:PhotoSettings):js.lib.Promise<js.fileapi.Blob>;
 }

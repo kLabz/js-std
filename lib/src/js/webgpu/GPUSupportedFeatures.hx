@@ -24,6 +24,9 @@
 
 package js.webgpu;
 
+/**
+	TODO SetlikeDeclaration handling
+**/
 extern class GPUSupportedFeatures {
 
 }

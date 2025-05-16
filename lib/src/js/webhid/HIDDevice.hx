@@ -25,10 +25,10 @@
 package js.webhid;
 
 extern class HIDDevice extends js.dom.EventTarget {
-	function open():js.lib.Promise<Void>;
 	function close():js.lib.Promise<Void>;
 	function forget():js.lib.Promise<Void>;
-	function sendReport(reportId:Int, data:BufferSource):js.lib.Promise<Void>;
-	function sendFeatureReport(reportId:Int, data:BufferSource):js.lib.Promise<Void>;
+	function open():js.lib.Promise<Void>;
 	function receiveFeatureReport(reportId:Int):js.lib.Promise<DataView>;
+	function sendFeatureReport(reportId:Int, data:BufferSource):js.lib.Promise<Void>;
+	function sendReport(reportId:Int, data:BufferSource):js.lib.Promise<Void>;
 }

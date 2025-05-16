@@ -25,21 +25,21 @@
 package js.selectionApi;
 
 extern class Selection {
-	function getRangeAt(index:Int):js.dom.Range;
-	function addRange(range:js.dom.Range):Void;
-	function removeRange(range:js.dom.Range):Void;
-	function removeAllRanges():Void;
-	function empty():Void;
-	function getComposedRanges(?options:GetComposedRangesOptions):Array<js.dom.StaticRange>;
-	function collapse(node:js.dom.Node, ?offset:Int):Void;
-	function setPosition(node:js.dom.Node, ?offset:Int):Void;
-	function collapseToStart():Void;
-	function collapseToEnd():Void;
-	function extend(node:js.dom.Node, ?offset:Int):Void;
-	function setBaseAndExtent(anchorNode:js.dom.Node, anchorOffset:Int, focusNode:js.dom.Node, focusOffset:Int):Void;
-	function selectAllChildren(node:js.dom.Node):Void;
-	function modify(?alter:String, ?direction:String, ?granularity:String):Void;
-	function deleteFromDocument():Void;
-	function containsNode(node:js.dom.Node, ?allowPartialContainment:Bool):Bool;
 	function ():Void;
+	function addRange(range:js.dom.Range):Void;
+	function collapse(node:js.dom.Node, ?offset:Int):Void;
+	function collapseToEnd():Void;
+	function collapseToStart():Void;
+	function containsNode(node:js.dom.Node, ?allowPartialContainment:Bool):Bool;
+	function deleteFromDocument():Void;
+	function empty():Void;
+	function extend(node:js.dom.Node, ?offset:Int):Void;
+	function getComposedRanges(?options:GetComposedRangesOptions):Array<js.dom.StaticRange>;
+	function getRangeAt(index:Int):js.dom.Range;
+	function modify(?alter:String, ?direction:String, ?granularity:String):Void;
+	function removeAllRanges():Void;
+	function removeRange(range:js.dom.Range):Void;
+	function selectAllChildren(node:js.dom.Node):Void;
+	function setBaseAndExtent(anchorNode:js.dom.Node, anchorOffset:Int, focusNode:js.dom.Node, focusOffset:Int):Void;
+	function setPosition(node:js.dom.Node, ?offset:Int):Void;
 }

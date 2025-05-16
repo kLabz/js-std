@@ -25,6 +25,6 @@
 package js.cssAnimationWorklet;
 
 extern class WorkletAnimationEffect {
-	function getTiming():js.webAnimations.EffectTiming;
 	function getComputedTiming():js.webAnimations.ComputedEffectTiming;
+	function getTiming():js.webAnimations.EffectTiming;
 }

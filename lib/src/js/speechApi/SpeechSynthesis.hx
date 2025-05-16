@@ -25,9 +25,9 @@
 package js.speechApi;
 
 extern class SpeechSynthesis extends js.dom.EventTarget {
-	function speak(utterance:SpeechSynthesisUtterance):Void;
 	function cancel():Void;
+	function getVoices():Array<SpeechSynthesisVoice>;
 	function pause():Void;
 	function resume():Void;
-	function getVoices():Array<SpeechSynthesisVoice>;
+	function speak(utterance:SpeechSynthesisUtterance):Void;
 }

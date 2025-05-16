@@ -25,6 +25,6 @@
 package js.cssom;
 
 extern class CSSGroupingRule extends CSSRule {
-	function insertRule(rule:CSSOMString, ?index:Int):Int;
 	function deleteRule(index:Int):Void;
+	function insertRule(rule:CSSOMString, ?index:Int):Int;
 }

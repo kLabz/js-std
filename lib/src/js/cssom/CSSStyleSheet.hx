@@ -26,10 +26,10 @@ package js.cssom;
 
 extern class CSSStyleSheet extends StyleSheet {
 	function new(?options:CSSStyleSheetInit):Void;
-	function insertRule(rule:CSSOMString, ?index:Int):Int;
+	function addRule(?selector:String, ?style:String, ?index:Int):Int;
 	function deleteRule(index:Int):Void;
+	function insertRule(rule:CSSOMString, ?index:Int):Int;
+	function removeRule(?index:Int):Void;
 	function replace(text:String):js.lib.Promise<CSSStyleSheet>;
 	function replaceSync(text:String):Void;
-	function addRule(?selector:String, ?style:String, ?index:Int):Int;
-	function removeRule(?index:Int):Void;
 }

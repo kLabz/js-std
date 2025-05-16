@@ -25,7 +25,7 @@
 package js.cookieStore;
 
 extern class CookieStoreManager {
-	function subscribe(subscriptions:Array<CookieStoreGetOptions>):js.lib.Promise<Void>;
 	function getSubscriptions():js.lib.Promise<Array<CookieStoreGetOptions>>;
+	function subscribe(subscriptions:Array<CookieStoreGetOptions>):js.lib.Promise<Void>;
 	function unsubscribe(subscriptions:Array<CookieStoreGetOptions>):js.lib.Promise<Void>;
 }

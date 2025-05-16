@@ -27,11 +27,11 @@ package js.webAnimations;
 extern class Animation extends js.dom.EventTarget {
 	function new(?effect:AnimationEffect, ?timeline:AnimationTimeline):Void;
 	function cancel():Void;
-	function finish():Void;
-	function play():Void;
-	function pause():Void;
-	function updatePlaybackRate(playbackRate:Float):Void;
-	function reverse():Void;
-	function persist():Void;
 	function commitStyles():Void;
+	function finish():Void;
+	function pause():Void;
+	function persist():Void;
+	function play():Void;
+	function reverse():Void;
+	function updatePlaybackRate(playbackRate:Float):Void;
 }

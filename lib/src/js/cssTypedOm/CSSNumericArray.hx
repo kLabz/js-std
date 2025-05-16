@@ -25,7 +25,7 @@
 package js.cssTypedOm;
 
 extern class CSSNumericArray {
-	function values():Iterator<CSSNumericValue>;
-	function values():Iterator<CSSNumericValue>;
 	function (index:Int):CSSNumericValue;
+	function values():Iterator<CSSNumericValue>;
+	function values():Iterator<CSSNumericValue>;
 }

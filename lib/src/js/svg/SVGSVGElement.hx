@@ -25,27 +25,27 @@
 package js.svg;
 
 extern class SVGSVGElement extends SVGGraphicsElement {
-	function getIntersectionList(rect:js.geometry.DOMRectReadOnly, referenceElement:SVGElement):js.dom.NodeList;
-	function getEnclosureList(rect:js.geometry.DOMRectReadOnly, referenceElement:SVGElement):js.dom.NodeList;
-	function checkIntersection(element:SVGElement, rect:js.geometry.DOMRectReadOnly):Bool;
+	function animationsPaused():Bool;
 	function checkEnclosure(element:SVGElement, rect:js.geometry.DOMRectReadOnly):Bool;
-	function deselectAll():Void;
-	function createSVGNumber():SVGNumber;
-	function createSVGLength():SVGLength;
+	function checkIntersection(element:SVGElement, rect:js.geometry.DOMRectReadOnly):Bool;
 	function createSVGAngle():SVGAngle;
-	function createSVGPoint():js.geometry.DOMPoint;
+	function createSVGLength():SVGLength;
 	function createSVGMatrix():js.geometry.DOMMatrix;
+	function createSVGNumber():SVGNumber;
+	function createSVGPoint():js.geometry.DOMPoint;
 	function createSVGRect():js.geometry.DOMRect;
 	function createSVGTransform():SVGTransform;
 	function createSVGTransformFromMatrix(?matrix:js.geometry.DOMMatrix2DInit):SVGTransform;
+	function deselectAll():Void;
+	function forceRedraw():Void;
+	function getCurrentTime():Float;
 	function getElementById(elementId:String):js.dom.Element;
+	function getEnclosureList(rect:js.geometry.DOMRectReadOnly, referenceElement:SVGElement):js.dom.NodeList;
+	function getIntersectionList(rect:js.geometry.DOMRectReadOnly, referenceElement:SVGElement):js.dom.NodeList;
+	function pauseAnimations():Void;
+	function setCurrentTime(seconds:Float):Void;
 	function suspendRedraw(maxWaitMilliseconds:Int):Int;
+	function unpauseAnimations():Void;
 	function unsuspendRedraw(suspendHandleID:Int):Void;
 	function unsuspendRedrawAll():Void;
-	function forceRedraw():Void;
-	function pauseAnimations():Void;
-	function unpauseAnimations():Void;
-	function animationsPaused():Bool;
-	function getCurrentTime():Float;
-	function setCurrentTime(seconds:Float):Void;
 }

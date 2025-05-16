@@ -25,11 +25,11 @@
 package js.uievents;
 
 extern class KeyboardEvent extends UIEvent {
-	function new(type:String, ?eventInitDict:KeyboardEventInit):Void;
 	static inline var DOM_KEY_LOCATION_STANDARD : Int = 0x00;
 	static inline var DOM_KEY_LOCATION_LEFT : Int = 0x01;
 	static inline var DOM_KEY_LOCATION_RIGHT : Int = 0x02;
 	static inline var DOM_KEY_LOCATION_NUMPAD : Int = 0x03;
+	function new(type:String, ?eventInitDict:KeyboardEventInit):Void;
 	function getModifierState(keyArg:String):Bool;
 	function initKeyboardEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:js.html.Window, ?keyArg:String, ?locationArg:Int, ?ctrlKey:Bool, ?altKey:Bool, ?shiftKey:Bool, ?metaKey:Bool):Void;
 }

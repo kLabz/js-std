@@ -25,7 +25,7 @@
 package js.html;
 
 extern class PluginArray {
-	function refresh():Void;
 	function item(index:Int):Plugin;
 	function namedItem(name:String):Plugin;
+	function refresh():Void;
 }

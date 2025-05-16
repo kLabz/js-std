@@ -25,8 +25,8 @@
 package js.credentialManagement;
 
 extern class CredentialsContainer {
-	function get(?options:CredentialRequestOptions):js.lib.Promise<Credential>;
-	function store(credential:Credential):js.lib.Promise<Void>;
 	function create(?options:CredentialCreationOptions):js.lib.Promise<Credential>;
+	function get(?options:CredentialRequestOptions):js.lib.Promise<Credential>;
 	function preventSilentAccess():js.lib.Promise<Void>;
+	function store(credential:Credential):js.lib.Promise<Void>;
 }

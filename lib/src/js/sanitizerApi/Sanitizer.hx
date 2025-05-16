@@ -26,13 +26,13 @@ package js.sanitizerApi;
 
 extern class Sanitizer {
 	function new(?configuration:haxe.extern.EitherType<SanitizerConfig, SanitizerPresets>):Void;
-	function get():SanitizerConfig;
-	function allowElement(element:SanitizerElementWithAttributes):Void;
-	function removeElement(element:SanitizerElement):Void;
-	function replaceElementWithChildren(element:SanitizerElement):Void;
 	function allowAttribute(attribute:SanitizerAttribute):Void;
+	function allowElement(element:SanitizerElementWithAttributes):Void;
+	function get():SanitizerConfig;
 	function removeAttribute(attribute:SanitizerAttribute):Void;
+	function removeElement(element:SanitizerElement):Void;
+	function removeUnsafe():Void;
+	function replaceElementWithChildren(element:SanitizerElement):Void;
 	function setComments(allow:Bool):Void;
 	function setDataAttributes(allow:Bool):Void;
-	function removeUnsafe():Void;
 }

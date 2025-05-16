@@ -31,6 +31,6 @@ extern class SVGMarkerElement extends SVGElement {
 	static inline var SVG_MARKER_ORIENT_UNKNOWN : Int = 0;
 	static inline var SVG_MARKER_ORIENT_AUTO : Int = 1;
 	static inline var SVG_MARKER_ORIENT_ANGLE : Int = 2;
-	function setOrientToAuto():Void;
 	function setOrientToAngle(angle:SVGAngle):Void;
+	function setOrientToAuto():Void;
 }

@@ -26,8 +26,8 @@ package js.fetch;
 
 extern class Response {
 	function new(?body:BodyInit, ?init:ResponseInit):Void;
-	function error():Response;
-	function redirect(url:String, ?status:Int):Response;
-	function json(data:Any, ?init:ResponseInit):Response;
 	function clone():Response;
+	function error():Response;
+	function json(data:Any, ?init:ResponseInit):Response;
+	function redirect(url:String, ?status:Int):Response;
 }

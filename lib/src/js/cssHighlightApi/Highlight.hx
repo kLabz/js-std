@@ -24,6 +24,9 @@
 
 package js.cssHighlightApi;
 
+/**
+	TODO SetlikeDeclaration handling
+**/
 extern class Highlight {
 	function new(initialRanges:js.dom.AbstractRange):Void;
 }

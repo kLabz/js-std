@@ -25,7 +25,7 @@
 package js.paymentRequest;
 
 extern class PaymentResponse extends js.dom.EventTarget {
-	function toJSON():object;
 	function complete(?result:PaymentComplete, ?details:PaymentCompleteDetails):js.lib.Promise<Void>;
 	function retry(?errorFields:PaymentValidationErrors):js.lib.Promise<Void>;
+	function toJSON():object;
 }

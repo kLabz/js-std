@@ -25,11 +25,11 @@
 package js.svgAnimations;
 
 extern class SVGAnimationElement extends js.svg.SVGElement {
-	function getStartTime():Float;
-	function getCurrentTime():Float;
-	function getSimpleDuration():Float;
 	function beginElement():Void;
 	function beginElementAt(offset:Float):Void;
 	function endElement():Void;
 	function endElementAt(offset:Float):Void;
+	function getCurrentTime():Float;
+	function getSimpleDuration():Float;
+	function getStartTime():Float;
 }

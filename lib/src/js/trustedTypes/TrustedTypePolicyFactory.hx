@@ -26,9 +26,9 @@ package js.trustedTypes;
 
 extern class TrustedTypePolicyFactory {
 	function createPolicy(policyName:String, ?policyOptions:TrustedTypePolicyOptions):TrustedTypePolicy;
+	function getAttributeType(tagName:String, attribute:String, ?elementNs:String, ?attrNs:String):String;
+	function getPropertyType(tagName:String, property:String, ?elementNs:String):String;
 	function isHTML(value:Any):Bool;
 	function isScript(value:Any):Bool;
 	function isScriptURL(value:Any):Bool;
-	function getAttributeType(tagName:String, attribute:String, ?elementNs:String, ?attrNs:String):String;
-	function getPropertyType(tagName:String, property:String, ?elementNs:String):String;
 }

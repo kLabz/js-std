@@ -25,22 +25,22 @@
 package js.webgpu;
 
 extern class GPUDevice extends js.dom.EventTarget {
-	function destroy():Void;
-	function createBuffer(descriptor:GPUBufferDescriptor):GPUBuffer;
-	function createTexture(descriptor:GPUTextureDescriptor):GPUTexture;
-	function createSampler(?descriptor:GPUSamplerDescriptor):GPUSampler;
-	function importExternalTexture(descriptor:GPUExternalTextureDescriptor):GPUExternalTexture;
-	function createBindGroupLayout(descriptor:GPUBindGroupLayoutDescriptor):GPUBindGroupLayout;
-	function createPipelineLayout(descriptor:GPUPipelineLayoutDescriptor):GPUPipelineLayout;
 	function createBindGroup(descriptor:GPUBindGroupDescriptor):GPUBindGroup;
-	function createShaderModule(descriptor:GPUShaderModuleDescriptor):GPUShaderModule;
-	function createComputePipeline(descriptor:GPUComputePipelineDescriptor):GPUComputePipeline;
-	function createRenderPipeline(descriptor:GPURenderPipelineDescriptor):GPURenderPipeline;
-	function createComputePipelineAsync(descriptor:GPUComputePipelineDescriptor):js.lib.Promise<GPUComputePipeline>;
-	function createRenderPipelineAsync(descriptor:GPURenderPipelineDescriptor):js.lib.Promise<GPURenderPipeline>;
+	function createBindGroupLayout(descriptor:GPUBindGroupLayoutDescriptor):GPUBindGroupLayout;
+	function createBuffer(descriptor:GPUBufferDescriptor):GPUBuffer;
 	function createCommandEncoder(?descriptor:GPUCommandEncoderDescriptor):GPUCommandEncoder;
-	function createRenderBundleEncoder(descriptor:GPURenderBundleEncoderDescriptor):GPURenderBundleEncoder;
+	function createComputePipeline(descriptor:GPUComputePipelineDescriptor):GPUComputePipeline;
+	function createComputePipelineAsync(descriptor:GPUComputePipelineDescriptor):js.lib.Promise<GPUComputePipeline>;
+	function createPipelineLayout(descriptor:GPUPipelineLayoutDescriptor):GPUPipelineLayout;
 	function createQuerySet(descriptor:GPUQuerySetDescriptor):GPUQuerySet;
-	function pushErrorScope(filter:GPUErrorFilter):Void;
+	function createRenderBundleEncoder(descriptor:GPURenderBundleEncoderDescriptor):GPURenderBundleEncoder;
+	function createRenderPipeline(descriptor:GPURenderPipelineDescriptor):GPURenderPipeline;
+	function createRenderPipelineAsync(descriptor:GPURenderPipelineDescriptor):js.lib.Promise<GPURenderPipeline>;
+	function createSampler(?descriptor:GPUSamplerDescriptor):GPUSampler;
+	function createShaderModule(descriptor:GPUShaderModuleDescriptor):GPUShaderModule;
+	function createTexture(descriptor:GPUTextureDescriptor):GPUTexture;
+	function destroy():Void;
+	function importExternalTexture(descriptor:GPUExternalTextureDescriptor):GPUExternalTexture;
 	function popErrorScope():js.lib.Promise<GPUError>;
+	function pushErrorScope(filter:GPUErrorFilter):Void;
 }

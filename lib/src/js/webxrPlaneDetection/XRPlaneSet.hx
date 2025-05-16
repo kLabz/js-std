@@ -24,6 +24,9 @@
 
 package js.webxrPlaneDetection;
 
+/**
+	TODO SetlikeDeclaration handling
+**/
 extern class XRPlaneSet {
 
 }

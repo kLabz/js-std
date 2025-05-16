@@ -26,6 +26,6 @@ package js.fedcm;
 
 extern class IdentityProvider {
 	function close():Void;
-	function resolve(token:String, ?options:IdentityResolveOptions):Void;
 	function getUserInfo(config:IdentityProviderConfig):js.lib.Promise<Array<IdentityUserInfo>>;
+	function resolve(token:String, ?options:IdentityResolveOptions):Void;
 }

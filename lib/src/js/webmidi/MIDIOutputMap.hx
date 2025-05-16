@@ -24,6 +24,9 @@
 
 package js.webmidi;
 
+/**
+	TODO MaplikeDeclaration handling
+**/
 extern class MIDIOutputMap {
 
 }

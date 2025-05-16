@@ -25,12 +25,12 @@
 package js.svg;
 
 extern class SVGPointList {
-	function clear():Void;
-	function initialize(newItem:js.geometry.DOMPoint):js.geometry.DOMPoint;
-	function getItem(index:Int):js.geometry.DOMPoint;
-	function insertItemBefore(newItem:js.geometry.DOMPoint, index:Int):js.geometry.DOMPoint;
-	function replaceItem(newItem:js.geometry.DOMPoint, index:Int):js.geometry.DOMPoint;
-	function removeItem(index:Int):js.geometry.DOMPoint;
-	function appendItem(newItem:js.geometry.DOMPoint):js.geometry.DOMPoint;
 	function (index:Int, newItem:js.geometry.DOMPoint):Void;
+	function appendItem(newItem:js.geometry.DOMPoint):js.geometry.DOMPoint;
+	function clear():Void;
+	function getItem(index:Int):js.geometry.DOMPoint;
+	function initialize(newItem:js.geometry.DOMPoint):js.geometry.DOMPoint;
+	function insertItemBefore(newItem:js.geometry.DOMPoint, index:Int):js.geometry.DOMPoint;
+	function removeItem(index:Int):js.geometry.DOMPoint;
+	function replaceItem(newItem:js.geometry.DOMPoint, index:Int):js.geometry.DOMPoint;
 }

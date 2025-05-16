@@ -25,7 +25,7 @@
 package js.cssRegions;
 
 extern class NamedFlow extends js.dom.EventTarget {
-	function getRegions():Array<js.dom.Element>;
 	function getContent():Array<js.dom.Node>;
+	function getRegions():Array<js.dom.Element>;
 	function getRegionsByContent(node:js.dom.Node):Array<js.dom.Element>;
 }

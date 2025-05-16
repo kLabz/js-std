@@ -25,7 +25,7 @@
 package js.webxr;
 
 extern class XRInputSourceArray {
-	function values():Iterator<XRInputSource>;
-	function values():Iterator<XRInputSource>;
 	function (index:Int):XRInputSource;
+	function values():Iterator<XRInputSource>;
+	function values():Iterator<XRInputSource>;
 }

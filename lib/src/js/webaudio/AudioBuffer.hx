@@ -26,7 +26,7 @@ package js.webaudio;
 
 extern class AudioBuffer {
 	function new(options:AudioBufferOptions):Void;
-	function getChannelData(channel:Int):Float32Array;
 	function copyFromChannel(destination:Float32Array, channelNumber:Int, ?bufferOffset:Int):Void;
 	function copyToChannel(source:Float32Array, channelNumber:Int, ?bufferOffset:Int):Void;
+	function getChannelData(channel:Int):Float32Array;
 }

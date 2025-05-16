@@ -26,6 +26,6 @@ package js.html;
 
 extern class HTMLTableSectionElement extends HTMLElement {
 	function new():Void;
-	function insertRow(?index:Int):HTMLTableRowElement;
 	function deleteRow(index:Int):Void;
+	function insertRow(?index:Int):HTMLTableRowElement;
 }

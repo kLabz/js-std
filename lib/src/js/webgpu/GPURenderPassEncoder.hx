@@ -25,12 +25,12 @@
 package js.webgpu;
 
 extern class GPURenderPassEncoder {
-	function setViewport(x:Float, y:Float, width:Float, height:Float, minDepth:Float, maxDepth:Float):Void;
-	function setScissorRect(x:GPUIntegerCoordinate, y:GPUIntegerCoordinate, width:GPUIntegerCoordinate, height:GPUIntegerCoordinate):Void;
-	function setBlendConstant(color:GPUColor):Void;
-	function setStencilReference(reference:GPUStencilValue):Void;
 	function beginOcclusionQuery(queryIndex:GPUSize32):Void;
+	function end():Void;
 	function endOcclusionQuery():Void;
 	function executeBundles(bundles:Array<GPURenderBundle>):Void;
-	function end():Void;
+	function setBlendConstant(color:GPUColor):Void;
+	function setScissorRect(x:GPUIntegerCoordinate, y:GPUIntegerCoordinate, width:GPUIntegerCoordinate, height:GPUIntegerCoordinate):Void;
+	function setStencilReference(reference:GPUStencilValue):Void;
+	function setViewport(x:Float, y:Float, width:Float, height:Float, minDepth:Float, maxDepth:Float):Void;
 }

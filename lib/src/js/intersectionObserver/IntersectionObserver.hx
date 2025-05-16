@@ -26,8 +26,8 @@ package js.intersectionObserver;
 
 extern class IntersectionObserver {
 	function new(callback:IntersectionObserverCallback, ?options:IntersectionObserverInit):Void;
-	function observe(target:js.dom.Element):Void;
-	function unobserve(target:js.dom.Element):Void;
 	function disconnect():Void;
+	function observe(target:js.dom.Element):Void;
 	function takeRecords():Array<IntersectionObserverEntry>;
+	function unobserve(target:js.dom.Element):Void;
 }

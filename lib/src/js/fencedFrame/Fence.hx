@@ -25,9 +25,9 @@
 package js.fencedFrame;
 
 extern class Fence {
+	function disableUntrustedNetwork():js.lib.Promise<Void>;
+	function getNestedConfigs():Array<FencedFrameConfig>;
+	function notifyEvent(event:js.dom.Event):Void;
 	function reportEvent(?event:ReportEventType):Void;
 	function setReportEventDataForAutomaticBeacons(?event:FenceEvent):Void;
-	function getNestedConfigs():Array<FencedFrameConfig>;
-	function disableUntrustedNetwork():js.lib.Promise<Void>;
-	function notifyEvent(event:js.dom.Event):Void;
 }

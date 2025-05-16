@@ -26,6 +26,6 @@ package js.html;
 
 extern class BroadcastChannel extends js.dom.EventTarget {
 	function new(name:String):Void;
-	function postMessage(message:Any):Void;
 	function close():Void;
+	function postMessage(message:Any):Void;
 }

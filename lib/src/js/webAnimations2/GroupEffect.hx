@@ -26,7 +26,7 @@ package js.webAnimations2;
 
 extern class GroupEffect {
 	function new(children:Array<js.webAnimations.AnimationEffect>, ?timing:haxe.extern.EitherType<Float, js.webAnimations.EffectTiming>):Void;
+	function append(effects:js.webAnimations.AnimationEffect):Void;
 	function clone():GroupEffect;
 	function prepend(effects:js.webAnimations.AnimationEffect):Void;
-	function append(effects:js.webAnimations.AnimationEffect):Void;
 }

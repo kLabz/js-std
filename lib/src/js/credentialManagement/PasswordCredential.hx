@@ -25,6 +25,6 @@
 package js.credentialManagement;
 
 extern class PasswordCredential extends Credential {
-	function new(form:js.html.HTMLFormElement):Void;
-	function new(data:PasswordCredentialData):Void;
+	overload function new(data:PasswordCredentialData):Void;
+	overload function new(form:js.html.HTMLFormElement):Void;
 }

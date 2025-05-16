@@ -25,7 +25,7 @@
 package js.cssom;
 
 extern class MediaList {
-	function item(index:Int):CSSOMString;
 	function appendMedium(medium:CSSOMString):Void;
 	function deleteMedium(medium:CSSOMString):Void;
+	function item(index:Int):CSSOMString;
 }

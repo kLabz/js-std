@@ -26,7 +26,7 @@ package js.speechApi;
 
 extern class SpeechRecognitionPhraseList {
 	function new(phrases:Array<SpeechRecognitionPhrase>):Void;
-	function item(index:Int):SpeechRecognitionPhrase;
 	function addItem(item:SpeechRecognitionPhrase):Void;
+	function item(index:Int):SpeechRecognitionPhrase;
 	function removeItem(index:Int):Void;
 }

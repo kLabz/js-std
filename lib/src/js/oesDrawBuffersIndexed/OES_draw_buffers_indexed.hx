@@ -25,11 +25,11 @@
 package js.oesDrawBuffersIndexed;
 
 extern class OES_draw_buffers_indexed {
-	function enableiOES(target:GLenum, index:GLuint):Void;
-	function disableiOES(target:GLenum, index:GLuint):Void;
-	function blendEquationiOES(buf:GLuint, mode:GLenum):Void;
 	function blendEquationSeparateiOES(buf:GLuint, modeRGB:GLenum, modeAlpha:GLenum):Void;
-	function blendFunciOES(buf:GLuint, src:GLenum, dst:GLenum):Void;
+	function blendEquationiOES(buf:GLuint, mode:GLenum):Void;
 	function blendFuncSeparateiOES(buf:GLuint, srcRGB:GLenum, dstRGB:GLenum, srcAlpha:GLenum, dstAlpha:GLenum):Void;
+	function blendFunciOES(buf:GLuint, src:GLenum, dst:GLenum):Void;
 	function colorMaskiOES(buf:GLuint, r:GLboolean, g:GLboolean, b:GLboolean, a:GLboolean):Void;
+	function disableiOES(target:GLenum, index:GLuint):Void;
+	function enableiOES(target:GLenum, index:GLuint):Void;
 }

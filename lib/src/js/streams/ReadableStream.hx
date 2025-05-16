@@ -26,8 +26,8 @@ package js.streams;
 
 extern class ReadableStream {
 	function new(?underlyingSource:object, ?strategy:QueuingStrategy):Void;
-	function from(asyncIterable:Any):ReadableStream;
 	function cancel(?reason:Any):js.lib.Promise<Void>;
+	function from(asyncIterable:Any):ReadableStream;
 	function getReader(?options:ReadableStreamGetReaderOptions):ReadableStreamReader;
 	function pipeThrough(transform:ReadableWritablePair, ?options:StreamPipeOptions):ReadableStream;
 	function pipeTo(destination:WritableStream, ?options:StreamPipeOptions):js.lib.Promise<Void>;

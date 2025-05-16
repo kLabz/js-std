@@ -24,6 +24,9 @@
 
 package js.anchors;
 
+/**
+	TODO SetlikeDeclaration handling
+**/
 extern class XRAnchorSet {
 
 }

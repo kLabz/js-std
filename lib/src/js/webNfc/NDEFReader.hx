@@ -26,7 +26,7 @@ package js.webNfc;
 
 extern class NDEFReader extends js.dom.EventTarget {
 	function new():Void;
+	function makeReadOnly(?options:NDEFMakeReadOnlyOptions):js.lib.Promise<Void>;
 	function scan(?options:NDEFScanOptions):js.lib.Promise<Void>;
 	function write(message:NDEFMessageSource, ?options:NDEFWriteOptions):js.lib.Promise<Void>;
-	function makeReadOnly(?options:NDEFMakeReadOnlyOptions):js.lib.Promise<Void>;
 }

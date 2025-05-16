@@ -26,12 +26,12 @@ package js.dom;
 
 extern class XSLTProcessor {
 	function new():Void;
-	function importStylesheet(style:Node):Void;
-	function transformToFragment(source:Node, output:Document):DocumentFragment;
-	function transformToDocument(source:Node):Document;
-	function setParameter(namespaceURI:String, localName:String, value:Any):Void;
-	function getParameter(namespaceURI:String, localName:String):Any;
-	function removeParameter(namespaceURI:String, localName:String):Void;
 	function clearParameters():Void;
+	function getParameter(namespaceURI:String, localName:String):Any;
+	function importStylesheet(style:Node):Void;
+	function removeParameter(namespaceURI:String, localName:String):Void;
 	function reset():Void;
+	function setParameter(namespaceURI:String, localName:String, value:Any):Void;
+	function transformToDocument(source:Node):Document;
+	function transformToFragment(source:Node, output:Document):DocumentFragment;
 }

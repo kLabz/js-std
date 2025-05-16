@@ -27,7 +27,7 @@ package js.dom;
 extern class EventTarget {
 	function new():Void;
 	function addEventListener(type:String, callback:EventListener, ?options:haxe.extern.EitherType<AddEventListenerOptions, Bool>):Void;
-	function removeEventListener(type:String, callback:EventListener, ?options:haxe.extern.EitherType<EventListenerOptions, Bool>):Void;
 	function dispatchEvent(event:Event):Bool;
+	function removeEventListener(type:String, callback:EventListener, ?options:haxe.extern.EitherType<EventListenerOptions, Bool>):Void;
 	function when(type:String, ?options:js.observable.ObservableEventListenerOptions):js.observable.Observable;
 }

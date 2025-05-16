@@ -26,10 +26,10 @@ package js.speechApi;
 
 extern class SpeechRecognition extends js.dom.EventTarget {
 	function new():Void;
-	overload function start():Void;
-	overload function start(audioTrack:js.mediacaptureStreams.MediaStreamTrack):Void;
-	function stop():Void;
 	function abort():Void;
 	function availableOnDevice(lang:String):js.lib.Promise<AvailabilityStatus>;
 	function installOnDevice(lang:String):js.lib.Promise<Bool>;
+	overload function start():Void;
+	overload function start(audioTrack:js.mediacaptureStreams.MediaStreamTrack):Void;
+	function stop():Void;
 }

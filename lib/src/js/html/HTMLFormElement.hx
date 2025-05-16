@@ -28,9 +28,9 @@ extern class HTMLFormElement extends HTMLElement {
 	function new():Void;
 	overload function (index:Int):js.dom.Element;
 	overload function (name:String):haxe.extern.EitherType<RadioNodeList, js.dom.Element>;
-	function submit():Void;
-	function requestSubmit(?submitter:HTMLElement):Void;
-	function reset():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
+	function requestSubmit(?submitter:HTMLElement):Void;
+	function reset():Void;
+	function submit():Void;
 }

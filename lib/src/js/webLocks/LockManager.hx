@@ -25,7 +25,7 @@
 package js.webLocks;
 
 extern class LockManager {
+	function query():js.lib.Promise<LockManagerSnapshot>;
 	overload function request(name:String, callback:LockGrantedCallback):js.lib.Promise<Any>;
 	overload function request(name:String, options:LockOptions, callback:LockGrantedCallback):js.lib.Promise<Any>;
-	function query():js.lib.Promise<LockManagerSnapshot>;
 }

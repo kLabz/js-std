@@ -24,6 +24,9 @@
 
 package js.cssRegions;
 
+/**
+	TODO MaplikeDeclaration handling
+**/
 extern class NamedFlowMap {
 
 }

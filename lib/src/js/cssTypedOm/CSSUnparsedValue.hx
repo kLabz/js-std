@@ -26,8 +26,8 @@ package js.cssTypedOm;
 
 extern class CSSUnparsedValue extends CSSStyleValue {
 	function new(members:Array<CSSUnparsedSegment>):Void;
-	function values():Iterator<CSSUnparsedSegment>;
-	function values():Iterator<CSSUnparsedSegment>;
 	overload function (index:Int):CSSUnparsedSegment;
 	overload function (index:Int, val:CSSUnparsedSegment):CSSUnparsedSegment;
+	function values():Iterator<CSSUnparsedSegment>;
+	function values():Iterator<CSSUnparsedSegment>;
 }

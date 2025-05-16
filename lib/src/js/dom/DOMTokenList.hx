@@ -25,13 +25,13 @@
 package js.dom;
 
 extern class DOMTokenList {
-	function item(index:Int):String;
-	function contains(token:String):Bool;
 	function add(tokens:String):Void;
+	function contains(token:String):Bool;
+	function item(index:Int):String;
 	function remove(tokens:String):Void;
-	function toggle(token:String, ?force:Bool):Bool;
 	function replace(token:String, newToken:String):Bool;
 	function supports(token:String):Bool;
+	function toggle(token:String, ?force:Bool):Bool;
 	function values():Iterator<String>;
 	function values():Iterator<String>;
 }

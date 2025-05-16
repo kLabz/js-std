@@ -25,11 +25,11 @@
 package js.html;
 
 extern class Navigation extends js.dom.EventTarget {
+	function back(?options:NavigationOptions):NavigationResult;
 	function entries():Array<NavigationHistoryEntry>;
-	function updateCurrentEntry(options:NavigationUpdateCurrentEntryOptions):Void;
+	function forward(?options:NavigationOptions):NavigationResult;
 	function navigate(url:String, ?options:NavigationNavigateOptions):NavigationResult;
 	function reload(?options:NavigationReloadOptions):NavigationResult;
 	function traverseTo(key:String, ?options:NavigationOptions):NavigationResult;
-	function back(?options:NavigationOptions):NavigationResult;
-	function forward(?options:NavigationOptions):NavigationResult;
+	function updateCurrentEntry(options:NavigationUpdateCurrentEntryOptions):Void;
 }

@@ -24,6 +24,9 @@
 
 package js.cssFontLoading;
 
+/**
+	TODO SetlikeDeclaration handling
+**/
 extern class FontFaceVariations {
 
 }

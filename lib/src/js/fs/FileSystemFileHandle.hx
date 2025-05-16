@@ -25,7 +25,7 @@
 package js.fs;
 
 extern class FileSystemFileHandle extends FileSystemHandle {
-	function getFile():js.lib.Promise<js.fileapi.File>;
-	function createWritable(?options:FileSystemCreateWritableOptions):js.lib.Promise<FileSystemWritableFileStream>;
 	function createSyncAccessHandle():js.lib.Promise<FileSystemSyncAccessHandle>;
+	function createWritable(?options:FileSystemCreateWritableOptions):js.lib.Promise<FileSystemWritableFileStream>;
+	function getFile():js.lib.Promise<js.fileapi.File>;
 }

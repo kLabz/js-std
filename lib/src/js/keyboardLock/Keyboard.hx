@@ -25,7 +25,7 @@
 package js.keyboardLock;
 
 extern class Keyboard extends js.dom.EventTarget {
+	function getLayoutMap():js.lib.Promise<js.keyboardMap.KeyboardLayoutMap>;
 	function lock(?keyCodes:Array<String>):js.lib.Promise<Void>;
 	function unlock():Void;
-	function getLayoutMap():js.lib.Promise<js.keyboardMap.KeyboardLayoutMap>;
 }

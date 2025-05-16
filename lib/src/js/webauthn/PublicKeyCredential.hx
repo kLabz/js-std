@@ -25,14 +25,14 @@
 package js.webauthn;
 
 extern class PublicKeyCredential extends js.credentialManagement.Credential {
+	function getClientCapabilities():js.lib.Promise<PublicKeyCredentialClientCapabilities>;
 	function getClientExtensionResults():AuthenticationExtensionsClientOutputs;
 	function isConditionalMediationAvailable():js.lib.Promise<Bool>;
-	function toJSON():PublicKeyCredentialJSON;
 	function isUserVerifyingPlatformAuthenticatorAvailable():js.lib.Promise<Bool>;
-	function getClientCapabilities():js.lib.Promise<PublicKeyCredentialClientCapabilities>;
 	function parseCreationOptionsFromJSON(options:PublicKeyCredentialCreationOptionsJSON):PublicKeyCredentialCreationOptions;
 	function parseRequestOptionsFromJSON(options:PublicKeyCredentialRequestOptionsJSON):PublicKeyCredentialRequestOptions;
-	function signalUnknownCredential(options:UnknownCredentialOptions):js.lib.Promise<Void>;
 	function signalAllAcceptedCredentials(options:AllAcceptedCredentialsOptions):js.lib.Promise<Void>;
 	function signalCurrentUserDetails(options:CurrentUserDetailsOptions):js.lib.Promise<Void>;
+	function signalUnknownCredential(options:UnknownCredentialOptions):js.lib.Promise<Void>;
+	function toJSON():PublicKeyCredentialJSON;
 }

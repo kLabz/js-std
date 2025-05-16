@@ -26,6 +26,6 @@ package js.pushApi;
 
 extern class PushSubscription {
 	function getKey(name:PushEncryptionKeyName):ArrayBuffer;
-	function unsubscribe():js.lib.Promise<Bool>;
 	function toJSON():PushSubscriptionJSON;
+	function unsubscribe():js.lib.Promise<Bool>;
 }

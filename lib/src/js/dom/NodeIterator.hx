@@ -25,7 +25,7 @@
 package js.dom;
 
 extern class NodeIterator {
+	function detach():Void;
 	function nextNode():Node;
 	function previousNode():Node;
-	function detach():Void;
 }

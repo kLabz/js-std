@@ -25,9 +25,9 @@
 package js.html;
 
 extern class EventSource extends js.dom.EventTarget {
-	function new(url:String, ?eventSourceInitDict:EventSourceInit):Void;
 	static inline var CONNECTING : Int = 0;
 	static inline var OPEN : Int = 1;
 	static inline var CLOSED : Int = 2;
+	function new(url:String, ?eventSourceInitDict:EventSourceInit):Void;
 	function close():Void;
 }

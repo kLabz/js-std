@@ -25,7 +25,6 @@
 package js.webidl;
 
 extern class DOMException {
-	function new(?message:String, ?name:String):Void;
 	static inline var INDEX_SIZE_ERR : Int = 1;
 	static inline var DOMSTRING_SIZE_ERR : Int = 2;
 	static inline var HIERARCHY_REQUEST_ERR : Int = 3;
@@ -51,4 +50,5 @@ extern class DOMException {
 	static inline var TIMEOUT_ERR : Int = 23;
 	static inline var INVALID_NODE_TYPE_ERR : Int = 24;
 	static inline var DATA_CLONE_ERR : Int = 25;
+	function new(?message:String, ?name:String):Void;
 }

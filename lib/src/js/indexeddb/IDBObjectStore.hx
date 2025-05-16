@@ -25,18 +25,18 @@
 package js.indexeddb;
 
 extern class IDBObjectStore {
-	function put(value:Any, ?key:Any):IDBRequest;
 	function add(value:Any, ?key:Any):IDBRequest;
-	function delete(query:Any):IDBRequest;
 	function clear():IDBRequest;
+	function count(?query:Any):IDBRequest;
+	function createIndex(name:String, keyPath:haxe.extern.EitherType<String, Array<String>>, ?options:IDBIndexParameters):IDBIndex;
+	function delete(query:Any):IDBRequest;
+	function deleteIndex(name:String):Void;
 	function get(query:Any):IDBRequest;
-	function getKey(query:Any):IDBRequest;
 	function getAll(?query:Any, ?count:Int):IDBRequest;
 	function getAllKeys(?query:Any, ?count:Int):IDBRequest;
-	function count(?query:Any):IDBRequest;
+	function getKey(query:Any):IDBRequest;
+	function index(name:String):IDBIndex;
 	function openCursor(?query:Any, ?direction:IDBCursorDirection):IDBRequest;
 	function openKeyCursor(?query:Any, ?direction:IDBCursorDirection):IDBRequest;
-	function index(name:String):IDBIndex;
-	function createIndex(name:String, keyPath:haxe.extern.EitherType<String, Array<String>>, ?options:IDBIndexParameters):IDBIndex;
-	function deleteIndex(name:String):Void;
+	function put(value:Any, ?key:Any):IDBRequest;
 }

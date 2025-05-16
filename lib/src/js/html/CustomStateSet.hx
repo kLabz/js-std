@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO SetlikeDeclaration handling
+**/
 extern class CustomStateSet {
 
 }

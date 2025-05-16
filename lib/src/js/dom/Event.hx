@@ -25,14 +25,14 @@
 package js.dom;
 
 extern class Event {
-	function new(type:String, ?eventInitDict:EventInit):Void;
-	function composedPath():Array<EventTarget>;
 	static inline var NONE : Int = 0;
 	static inline var CAPTURING_PHASE : Int = 1;
 	static inline var AT_TARGET : Int = 2;
 	static inline var BUBBLING_PHASE : Int = 3;
-	function stopPropagation():Void;
-	function stopImmediatePropagation():Void;
-	function preventDefault():Void;
+	function new(type:String, ?eventInitDict:EventInit):Void;
+	function composedPath():Array<EventTarget>;
 	function initEvent(type:String, ?bubbles:Bool, ?cancelable:Bool):Void;
+	function preventDefault():Void;
+	function stopImmediatePropagation():Void;
+	function stopPropagation():Void;
 }

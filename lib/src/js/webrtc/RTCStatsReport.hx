@@ -24,6 +24,9 @@
 
 package js.webrtc;
 
+/**
+	TODO MaplikeDeclaration handling
+**/
 extern class RTCStatsReport {
 
 }

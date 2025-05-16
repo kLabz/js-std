@@ -30,6 +30,6 @@ extern class SVGAngle {
 	static inline var SVG_ANGLETYPE_DEG : Int = 2;
 	static inline var SVG_ANGLETYPE_RAD : Int = 3;
 	static inline var SVG_ANGLETYPE_GRAD : Int = 4;
-	function newValueSpecifiedUnits(unitType:Int, valueInSpecifiedUnits:Float):Void;
 	function convertToSpecifiedUnits(unitType:Int):Void;
+	function newValueSpecifiedUnits(unitType:Int, valueInSpecifiedUnits:Float):Void;
 }

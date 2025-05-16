@@ -26,8 +26,8 @@ package js.webrtc;
 
 extern class RTCRtpReceiver {
 	function getCapabilities(kind:String):RTCRtpCapabilities;
-	function getParameters():RTCRtpReceiveParameters;
 	function getContributingSources():Array<RTCRtpContributingSource>;
-	function getSynchronizationSources():Array<RTCRtpSynchronizationSource>;
+	function getParameters():RTCRtpReceiveParameters;
 	function getStats():js.lib.Promise<RTCStatsReport>;
+	function getSynchronizationSources():Array<RTCRtpSynchronizationSource>;
 }

@@ -26,9 +26,9 @@ package js.html;
 
 extern class HTMLCanvasElement extends HTMLElement {
 	function new():Void;
-	function getContext(contextId:String, ?options:Any):RenderingContext;
-	function toDataURL(?type:String, ?quality:Any):String;
-	function toBlob(callback:BlobCallback, ?type:String, ?quality:Any):Void;
-	function transferControlToOffscreen():OffscreenCanvas;
 	function captureStream(?frameRequestRate:Float):js.mediacaptureStreams.MediaStream;
+	function getContext(contextId:String, ?options:Any):RenderingContext;
+	function toBlob(callback:BlobCallback, ?type:String, ?quality:Any):Void;
+	function toDataURL(?type:String, ?quality:Any):String;
+	function transferControlToOffscreen():OffscreenCanvas;
 }

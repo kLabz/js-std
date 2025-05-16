@@ -24,6 +24,9 @@
 
 package js.webBluetooth;
 
+/**
+	TODO MaplikeDeclaration handling
+**/
 extern class BluetoothServiceDataMap {
 
 }

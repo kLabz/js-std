@@ -26,8 +26,8 @@ package js.html;
 
 extern class HTMLVideoElement extends HTMLMediaElement {
 	function new():Void;
+	function cancelVideoFrameCallback(handle:Int):Void;
 	function getVideoPlaybackQuality():js.mediaPlaybackQuality.VideoPlaybackQuality;
 	function requestPictureInPicture():js.lib.Promise<js.pictureInPicture.PictureInPictureWindow>;
 	function requestVideoFrameCallback(callback:VideoFrameRequestCallback):Int;
-	function cancelVideoFrameCallback(handle:Int):Void;
 }

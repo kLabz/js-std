@@ -25,7 +25,7 @@
 package js.cssFontLoading;
 
 extern class FontFacePalette {
-	function values():Iterator<String>;
-	function values():Iterator<String>;
 	function (index:Int):String;
+	function values():Iterator<String>;
+	function values():Iterator<String>;
 }

@@ -26,15 +26,15 @@ package js.webxrlayers;
 
 extern class XRWebGLBinding {
 	function new(session:js.webxr.XRSession, context:XRWebGLRenderingContext):Void;
-	function createProjectionLayer(?init:XRProjectionLayerInit):XRProjectionLayer;
-	function createQuadLayer(?init:XRQuadLayerInit):XRQuadLayer;
+	function createCubeLayer(?init:XRCubeLayerInit):XRCubeLayer;
 	function createCylinderLayer(?init:XRCylinderLayerInit):XRCylinderLayer;
 	function createEquirectLayer(?init:XREquirectLayerInit):XREquirectLayer;
-	function createCubeLayer(?init:XRCubeLayerInit):XRCubeLayer;
-	function getSubImage(layer:XRCompositionLayer, frame:js.webxr.XRFrame, ?eye:js.webxr.XREye):XRWebGLSubImage;
-	function getViewSubImage(layer:XRProjectionLayer, view:js.webxr.XRView):XRWebGLSubImage;
+	function createProjectionLayer(?init:XRProjectionLayerInit):XRProjectionLayer;
+	function createQuadLayer(?init:XRQuadLayerInit):XRQuadLayer;
 	function foveateBoundTexture(target:GLenum, fixed_foveation:Float):Void;
 	function getCameraImage(camera:js.rawCameraAccess.XRCamera):js.webgl1.WebGLTexture;
 	function getDepthInformation(view:js.webxr.XRView):js.webxrDepthSensing.XRWebGLDepthInformation;
 	function getReflectionCubeMap(lightProbe:js.webxrLightingEstimation.XRLightProbe):js.webgl1.WebGLTexture;
+	function getSubImage(layer:XRCompositionLayer, frame:js.webxr.XRFrame, ?eye:js.webxr.XREye):XRWebGLSubImage;
+	function getViewSubImage(layer:XRProjectionLayer, view:js.webxr.XRView):XRWebGLSubImage;
 }

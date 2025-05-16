@@ -25,14 +25,14 @@
 package js.webgpu;
 
 extern class GPUCommandEncoder {
-	function beginRenderPass(descriptor:GPURenderPassDescriptor):GPURenderPassEncoder;
 	function beginComputePass(?descriptor:GPUComputePassDescriptor):GPUComputePassEncoder;
+	function beginRenderPass(descriptor:GPURenderPassDescriptor):GPURenderPassEncoder;
+	function clearBuffer(buffer:GPUBuffer, ?offset:GPUSize64, ?size:GPUSize64):Void;
 	overload function copyBufferToBuffer(source:GPUBuffer, destination:GPUBuffer, ?size:GPUSize64):Void;
 	overload function copyBufferToBuffer(source:GPUBuffer, sourceOffset:GPUSize64, destination:GPUBuffer, destinationOffset:GPUSize64, ?size:GPUSize64):Void;
 	function copyBufferToTexture(source:GPUTexelCopyBufferInfo, destination:GPUTexelCopyTextureInfo, copySize:GPUExtent3D):Void;
 	function copyTextureToBuffer(source:GPUTexelCopyTextureInfo, destination:GPUTexelCopyBufferInfo, copySize:GPUExtent3D):Void;
 	function copyTextureToTexture(source:GPUTexelCopyTextureInfo, destination:GPUTexelCopyTextureInfo, copySize:GPUExtent3D):Void;
-	function clearBuffer(buffer:GPUBuffer, ?offset:GPUSize64, ?size:GPUSize64):Void;
-	function resolveQuerySet(querySet:GPUQuerySet, firstQuery:GPUSize32, queryCount:GPUSize32, destination:GPUBuffer, destinationOffset:GPUSize64):Void;
 	function finish(?descriptor:GPUCommandBufferDescriptor):GPUCommandBuffer;
+	function resolveQuerySet(querySet:GPUQuerySet, firstQuery:GPUSize32, queryCount:GPUSize32, destination:GPUBuffer, destinationOffset:GPUSize64):Void;
 }

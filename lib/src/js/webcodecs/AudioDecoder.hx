@@ -26,10 +26,10 @@ package js.webcodecs;
 
 extern class AudioDecoder extends js.dom.EventTarget {
 	function new(init:AudioDecoderInit):Void;
+	function close():Void;
 	function configure(config:AudioDecoderConfig):Void;
 	function decode(chunk:EncodedAudioChunk):Void;
 	function flush():js.lib.Promise<Void>;
-	function reset():Void;
-	function close():Void;
 	function isConfigSupported(config:AudioDecoderConfig):js.lib.Promise<AudioDecoderSupport>;
+	function reset():Void;
 }

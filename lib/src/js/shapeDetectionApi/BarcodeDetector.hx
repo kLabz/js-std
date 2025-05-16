@@ -26,6 +26,6 @@ package js.shapeDetectionApi;
 
 extern class BarcodeDetector {
 	function new(?barcodeDetectorOptions:BarcodeDetectorOptions):Void;
-	function getSupportedFormats():js.lib.Promise<Array<BarcodeFormat>>;
 	function detect(image:ImageBitmapSource):js.lib.Promise<Array<DetectedBarcode>>;
+	function getSupportedFormats():js.lib.Promise<Array<BarcodeFormat>>;
 }

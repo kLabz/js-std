@@ -26,9 +26,9 @@ package js.presentationApi;
 
 extern class PresentationConnection extends js.dom.EventTarget {
 	function close():Void;
-	function terminate():Void;
 	overload function send(message:String):Void;
 	overload function send(data:js.fileapi.Blob):Void;
 	overload function send(data:ArrayBuffer):Void;
 	overload function send(data:ArrayBufferView):Void;
+	function terminate():Void;
 }

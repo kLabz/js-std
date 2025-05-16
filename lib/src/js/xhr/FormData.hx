@@ -29,12 +29,12 @@ extern class FormData {
 	overload function append(name:String, value:String):Void;
 	overload function append(name:String, blobValue:js.fileapi.Blob, ?filename:String):Void;
 	function delete(name:String):Void;
+	function entries():Iterator<Array<Dynamic>>;
 	function get(name:String):FormDataEntryValue;
 	function getAll(name:String):Array<FormDataEntryValue>;
 	function has(name:String):Bool;
+	function keys():Iterator<String>;
 	overload function set(name:String, value:String):Void;
 	overload function set(name:String, blobValue:js.fileapi.Blob, ?filename:String):Void;
-	function keys():Iterator<String>;
 	function values():Iterator<FormDataEntryValue>;
-	function entries():Iterator<Array<Dynamic>>;
 }

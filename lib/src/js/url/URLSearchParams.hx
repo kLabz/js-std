@@ -26,15 +26,15 @@ package js.url;
 
 extern class URLSearchParams {
 	function new(?init:haxe.extern.EitherType<Array<Array<String>>, haxe.extern.EitherType<haxe.DynamicAccess<String>, String>>):Void;
+	function ():Void;
 	function append(name:String, value:String):Void;
 	function delete(name:String, ?value:String):Void;
+	function entries():Iterator<Array<Dynamic>>;
 	function get(name:String):String;
 	function getAll(name:String):Array<String>;
 	function has(name:String, ?value:String):Bool;
+	function keys():Iterator<String>;
 	function set(name:String, value:String):Void;
 	function sort():Void;
-	function keys():Iterator<String>;
 	function values():Iterator<String>;
-	function entries():Iterator<Array<Dynamic>>;
-	function ():Void;
 }

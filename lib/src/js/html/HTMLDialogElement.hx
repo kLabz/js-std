@@ -26,8 +26,8 @@ package js.html;
 
 extern class HTMLDialogElement extends HTMLElement {
 	function new():Void;
-	function show():Void;
-	function showModal():Void;
 	function close(?returnValue:String):Void;
 	function requestClose(?returnValue:String):Void;
+	function show():Void;
+	function showModal():Void;
 }

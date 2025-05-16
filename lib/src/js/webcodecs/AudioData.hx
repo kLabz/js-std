@@ -27,7 +27,7 @@ package js.webcodecs;
 extern class AudioData {
 	function new(init:AudioDataInit):Void;
 	function allocationSize(options:AudioDataCopyToOptions):Int;
-	function copyTo(destination:AllowSharedBufferSource, options:AudioDataCopyToOptions):Void;
 	function clone():AudioData;
 	function close():Void;
+	function copyTo(destination:AllowSharedBufferSource, options:AudioDataCopyToOptions):Void;
 }

@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	TODO MaplikeDeclaration handling
+**/
 extern class AudioParamMap {
 
 }

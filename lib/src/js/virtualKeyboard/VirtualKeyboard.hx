@@ -25,6 +25,6 @@
 package js.virtualKeyboard;
 
 extern class VirtualKeyboard extends js.dom.EventTarget {
-	function show():Void;
 	function hide():Void;
+	function show():Void;
 }

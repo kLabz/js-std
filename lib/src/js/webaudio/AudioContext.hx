@@ -26,13 +26,13 @@ package js.webaudio;
 
 extern class AudioContext extends BaseAudioContext {
 	function new(?contextOptions:AudioContextOptions):Void;
-	function getOutputTimestamp():AudioTimestamp;
-	function resume():js.lib.Promise<Void>;
-	function suspend():js.lib.Promise<Void>;
 	function close():js.lib.Promise<Void>;
-	function setSinkId(sinkId:haxe.extern.EitherType<String, AudioSinkOptions>):js.lib.Promise<Void>;
 	function createMediaElementSource(mediaElement:js.html.HTMLMediaElement):MediaElementAudioSourceNode;
+	function createMediaStreamDestination():MediaStreamAudioDestinationNode;
 	function createMediaStreamSource(mediaStream:js.mediacaptureStreams.MediaStream):MediaStreamAudioSourceNode;
 	function createMediaStreamTrackSource(mediaStreamTrack:js.mediacaptureStreams.MediaStreamTrack):MediaStreamTrackAudioSourceNode;
-	function createMediaStreamDestination():MediaStreamAudioDestinationNode;
+	function getOutputTimestamp():AudioTimestamp;
+	function resume():js.lib.Promise<Void>;
+	function setSinkId(sinkId:haxe.extern.EitherType<String, AudioSinkOptions>):js.lib.Promise<Void>;
+	function suspend():js.lib.Promise<Void>;
 }

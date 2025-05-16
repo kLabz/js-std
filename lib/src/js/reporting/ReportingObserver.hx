@@ -26,7 +26,7 @@ package js.reporting;
 
 extern class ReportingObserver {
 	function new(callback:ReportingObserverCallback, ?options:ReportingObserverOptions):Void;
-	function observe():Void;
 	function disconnect():Void;
+	function observe():Void;
 	function takeRecords():ReportList;
 }

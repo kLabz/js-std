@@ -33,9 +33,9 @@ extern class SVGTransform {
 	static inline var SVG_TRANSFORM_SKEWX : Int = 5;
 	static inline var SVG_TRANSFORM_SKEWY : Int = 6;
 	function setMatrix(?matrix:js.geometry.DOMMatrix2DInit):Void;
-	function setTranslate(tx:Float, ty:Float):Void;
-	function setScale(sx:Float, sy:Float):Void;
 	function setRotate(angle:Float, cx:Float, cy:Float):Void;
+	function setScale(sx:Float, sy:Float):Void;
 	function setSkewX(angle:Float):Void;
 	function setSkewY(angle:Float):Void;
+	function setTranslate(tx:Float, ty:Float):Void;
 }

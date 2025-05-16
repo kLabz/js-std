@@ -25,8 +25,8 @@
 package js.observable;
 
 extern class Subscriber {
-	function next(value:Any):Void;
-	function error(error:Any):Void;
-	function complete():Void;
 	function addTeardown(teardown:VoidFunction):Void;
+	function complete():Void;
+	function error(error:Any):Void;
+	function next(value:Any):Void;
 }

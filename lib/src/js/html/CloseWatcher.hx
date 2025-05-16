@@ -26,7 +26,7 @@ package js.html;
 
 extern class CloseWatcher extends js.dom.EventTarget {
 	function new(?options:CloseWatcherOptions):Void;
-	function requestClose():Void;
 	function close():Void;
 	function destroy():Void;
+	function requestClose():Void;
 }

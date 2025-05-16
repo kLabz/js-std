@@ -24,6 +24,9 @@
 
 package js.ppa;
 
+/**
+	TODO MaplikeDeclaration handling
+**/
 extern class PrivateAttributionAggregationServices {
 
 }

@@ -27,12 +27,12 @@ package js.html;
 extern class HTMLTableElement extends HTMLElement {
 	function new():Void;
 	function createCaption():HTMLTableCaptionElement;
-	function deleteCaption():Void;
-	function createTHead():HTMLTableSectionElement;
-	function deleteTHead():Void;
-	function createTFoot():HTMLTableSectionElement;
-	function deleteTFoot():Void;
 	function createTBody():HTMLTableSectionElement;
-	function insertRow(?index:Int):HTMLTableRowElement;
+	function createTFoot():HTMLTableSectionElement;
+	function createTHead():HTMLTableSectionElement;
+	function deleteCaption():Void;
 	function deleteRow(index:Int):Void;
+	function deleteTFoot():Void;
+	function deleteTHead():Void;
+	function insertRow(?index:Int):HTMLTableRowElement;
 }

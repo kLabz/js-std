@@ -25,20 +25,20 @@
 package js.xhr;
 
 extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
-	function new():Void;
 	static inline var UNSENT : Int = 0;
 	static inline var OPENED : Int = 1;
 	static inline var HEADERS_RECEIVED : Int = 2;
 	static inline var LOADING : Int = 3;
 	static inline var DONE : Int = 4;
+	function new():Void;
+	function abort():Void;
+	function getAllResponseHeaders():String;
+	function getResponseHeader(name:String):String;
 	overload function open(method:String, url:String):Void;
 	overload function open(method:String, url:String, async:Bool, ?username:String, ?password:String):Void;
-	function setRequestHeader(name:String, value:String):Void;
-	function send(?body:haxe.extern.EitherType<js.dom.Document, XMLHttpRequestBodyInit>):Void;
-	function abort():Void;
-	function getResponseHeader(name:String):String;
-	function getAllResponseHeaders():String;
 	function overrideMimeType(mime:String):Void;
+	function send(?body:haxe.extern.EitherType<js.dom.Document, XMLHttpRequestBodyInit>):Void;
 	function setAttributionReporting(options:js.attributionReportingApi.AttributionReportingRequestOptions):Void;
 	function setPrivateToken(privateToken:js.trustTokenApi.PrivateToken):Void;
+	function setRequestHeader(name:String, value:String):Void;
 }

@@ -26,7 +26,7 @@ package js.wasmJsApi;
 
 extern class Module {
 	function new(bytes:BufferSource):Void;
+	function customSections(moduleObject:Module, sectionName:String):Array<ArrayBuffer>;
 	function exports(moduleObject:Module):Array<ModuleExportDescriptor>;
 	function imports(moduleObject:Module):Array<ModuleImportDescriptor>;
-	function customSections(moduleObject:Module, sectionName:String):Array<ArrayBuffer>;
 }

@@ -25,18 +25,18 @@
 package js.webxr;
 
 extern class XRSession extends js.dom.EventTarget {
-	function updateRenderState(?state:XRRenderStateInit):Void;
-	function updateTargetFrameRate(rate:Float):js.lib.Promise<Void>;
-	function requestReferenceSpace(type:XRReferenceSpaceType):js.lib.Promise<XRReferenceSpace>;
-	function requestAnimationFrame(callback:XRFrameRequestCallback):Int;
 	function cancelAnimationFrame(handle:Int):Void;
-	function end():js.lib.Promise<Void>;
-	function restorePersistentAnchor(uuid:String):js.lib.Promise<js.anchors.XRAnchor>;
 	function deletePersistentAnchor(uuid:String):js.lib.Promise<Void>;
+	function end():js.lib.Promise<Void>;
+	function initiateRoomCapture():js.lib.Promise<Void>;
 	function pauseDepthSensing():Void;
-	function resumeDepthSensing():Void;
+	function requestAnimationFrame(callback:XRFrameRequestCallback):Int;
 	function requestHitTestSource(options:js.webxrHitTest.XRHitTestOptionsInit):js.lib.Promise<js.webxrHitTest.XRHitTestSource>;
 	function requestHitTestSourceForTransientInput(options:js.webxrHitTest.XRTransientInputHitTestOptionsInit):js.lib.Promise<js.webxrHitTest.XRTransientInputHitTestSource>;
-	function initiateRoomCapture():js.lib.Promise<Void>;
 	function requestLightProbe(?options:js.webxrLightingEstimation.XRLightProbeInit):js.lib.Promise<js.webxrLightingEstimation.XRLightProbe>;
+	function requestReferenceSpace(type:XRReferenceSpaceType):js.lib.Promise<XRReferenceSpace>;
+	function restorePersistentAnchor(uuid:String):js.lib.Promise<js.anchors.XRAnchor>;
+	function resumeDepthSensing():Void;
+	function updateRenderState(?state:XRRenderStateInit):Void;
+	function updateTargetFrameRate(rate:Float):js.lib.Promise<Void>;
 }

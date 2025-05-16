@@ -25,6 +25,6 @@
 package js.turtledove;
 
 extern class ProtectedAudienceUtilities {
-	function encodeUtf8(input:String):Uint8Array;
 	function decodeUtf8(bytes:Uint8Array):String;
+	function encodeUtf8(input:String):Uint8Array;
 }

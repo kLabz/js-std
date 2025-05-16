@@ -26,6 +26,6 @@ package js.webaudio;
 
 extern class PannerNode extends AudioNode {
 	function new(context:BaseAudioContext, ?options:PannerOptions):Void;
-	function setPosition(x:Float, y:Float, z:Float):Void;
 	function setOrientation(x:Float, y:Float, z:Float):Void;
+	function setPosition(x:Float, y:Float, z:Float):Void;
 }

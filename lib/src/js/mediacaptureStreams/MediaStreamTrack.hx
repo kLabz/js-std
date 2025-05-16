@@ -25,13 +25,13 @@
 package js.mediacaptureStreams;
 
 extern class MediaStreamTrack extends js.dom.EventTarget {
+	function applyConstraints(?constraints:MediaTrackConstraints):js.lib.Promise<Void>;
 	function clone():MediaStreamTrack;
-	function stop():Void;
 	function getCapabilities():MediaTrackCapabilities;
+	function getCaptureHandle():js.captureHandleIdentity.CaptureHandle;
 	function getConstraints():MediaTrackConstraints;
 	function getSettings():MediaTrackSettings;
-	function applyConstraints(?constraints:MediaTrackConstraints):js.lib.Promise<Void>;
-	function getCaptureHandle():js.captureHandleIdentity.CaptureHandle;
 	function getSupportedCaptureActions():Array<String>;
 	function sendCaptureAction(action:js.mediacaptureHandleActions.CaptureAction):js.lib.Promise<Void>;
+	function stop():Void;
 }

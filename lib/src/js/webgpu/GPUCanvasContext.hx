@@ -26,7 +26,7 @@ package js.webgpu;
 
 extern class GPUCanvasContext {
 	function configure(configuration:GPUCanvasConfiguration):Void;
-	function unconfigure():Void;
 	function getConfiguration():GPUCanvasConfiguration;
 	function getCurrentTexture():GPUTexture;
+	function unconfigure():Void;
 }

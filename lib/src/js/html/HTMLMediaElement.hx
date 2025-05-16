@@ -29,19 +29,19 @@ extern class HTMLMediaElement extends HTMLElement {
 	static inline var NETWORK_IDLE : Int = 1;
 	static inline var NETWORK_LOADING : Int = 2;
 	static inline var NETWORK_NO_SOURCE : Int = 3;
-	function load():Void;
-	function canPlayType(type:String):CanPlayTypeResult;
 	static inline var HAVE_NOTHING : Int = 0;
 	static inline var HAVE_METADATA : Int = 1;
 	static inline var HAVE_CURRENT_DATA : Int = 2;
 	static inline var HAVE_FUTURE_DATA : Int = 3;
 	static inline var HAVE_ENOUGH_DATA : Int = 4;
+	function addTextTrack(kind:TextTrackKind, ?label:String, ?language:String):TextTrack;
+	function canPlayType(type:String):CanPlayTypeResult;
+	function captureStream():js.mediacaptureStreams.MediaStream;
 	function fastSeek(time:Float):Void;
 	function getStartDate():object;
-	function play():js.lib.Promise<Void>;
+	function load():Void;
 	function pause():Void;
-	function addTextTrack(kind:TextTrackKind, ?label:String, ?language:String):TextTrack;
-	function setSinkId(sinkId:String):js.lib.Promise<Void>;
+	function play():js.lib.Promise<Void>;
 	function setMediaKeys(mediaKeys:js.encryptedMedia.MediaKeys):js.lib.Promise<Void>;
-	function captureStream():js.mediacaptureStreams.MediaStream;
+	function setSinkId(sinkId:String):js.lib.Promise<Void>;
 }

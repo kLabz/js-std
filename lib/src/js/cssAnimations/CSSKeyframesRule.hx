@@ -29,11 +29,7 @@ package js.cssAnimations;
 	TODO attribute cssRules
 	TODO attribute length
 **/
-extern class CSSKeyframesRule extends js.cssom.CSSRule {
-	/**
-		(special = getter)
-	**/
-	function (index:Int):CSSKeyframeRule;
+extern class CSSKeyframesRule extends js.cssom.CSSRule implements ArrayAccess<CSSKeyframeRule> {
 	function appendRule(rule:CSSOMString):Void;
 	function deleteRule(select:CSSOMString):Void;
 	function findRule(select:CSSOMString):CSSKeyframeRule;

@@ -30,10 +30,6 @@ package js.html;
 	TODO attribute onaddtrack
 	TODO attribute onremovetrack
 **/
-extern class TextTrackList extends js.dom.EventTarget {
-	/**
-		(special = getter)
-	**/
-	function (index:Int):TextTrack;
+extern class TextTrackList extends js.dom.EventTarget implements ArrayAccess<TextTrack> {
 	function getTrackById(id:String):TextTrack;
 }

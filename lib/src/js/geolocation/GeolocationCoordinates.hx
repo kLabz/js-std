@@ -34,5 +34,5 @@ package js.geolocation;
 	TODO attribute speed
 **/
 extern class GeolocationCoordinates {
-	function toJSON():object;
+	function toJSON():{ };
 }

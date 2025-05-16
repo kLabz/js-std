@@ -33,5 +33,5 @@ extern class PerformanceNavigation {
 	static inline var TYPE_RELOAD : Int = 1;
 	static inline var TYPE_BACK_FORWARD : Int = 2;
 	static inline var TYPE_RESERVED : Int = 255;
-	function toJSON():object;
+	function toJSON():{ };
 }

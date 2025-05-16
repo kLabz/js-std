@@ -38,9 +38,9 @@ package js.serviceWorkers;
 	TODO attribute onbackgroundfetchabort
 	TODO attribute onbackgroundfetchclick
 	TODO attribute onsync
+	TODO attribute oncontentdelete
 	TODO attribute cookieStore
 	TODO attribute oncookiechange
-	TODO attribute oncontentdelete
 	TODO attribute onnotificationclick
 	TODO attribute onnotificationclose
 	TODO attribute oncanmakepayment

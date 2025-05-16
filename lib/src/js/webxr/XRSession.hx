@@ -46,12 +46,12 @@ package js.webxr;
 	TODO attribute persistentAnchors
 	TODO attribute environmentBlendMode
 	TODO attribute interactionMode
+	TODO attribute domOverlayState
+	TODO attribute preferredReflectionFormat
 	TODO attribute depthUsage
 	TODO attribute depthDataFormat
 	TODO attribute depthType
 	TODO attribute depthActive
-	TODO attribute domOverlayState
-	TODO attribute preferredReflectionFormat
 **/
 extern class XRSession extends js.dom.EventTarget {
 	function cancelAnimationFrame(handle:Int):Void;

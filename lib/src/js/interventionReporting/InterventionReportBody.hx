@@ -32,5 +32,5 @@ package js.interventionReporting;
 	TODO attribute columnNumber
 **/
 extern class InterventionReportBody extends js.reporting.ReportBody {
-	function toJSON():object;
+	function toJSON():{ };
 }

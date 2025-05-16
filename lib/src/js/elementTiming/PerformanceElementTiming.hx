@@ -36,5 +36,5 @@ package js.elementTiming;
 	TODO attribute url
 **/
 extern class PerformanceElementTiming extends js.performanceTimeline.PerformanceEntry {
-	function toJSON():object;
+	function toJSON():{ };
 }

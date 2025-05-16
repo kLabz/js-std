@@ -77,7 +77,7 @@ extern class HTMLMediaElement extends HTMLElement {
 	**/
 	function captureStream():js.mediacaptureStreams.MediaStream;
 	function fastSeek(time:Float):Void;
-	function getStartDate():object;
+	function getStartDate():{ };
 	function load():Void;
 	function pause():Void;
 	function play():js.lib.Promise<Void>;

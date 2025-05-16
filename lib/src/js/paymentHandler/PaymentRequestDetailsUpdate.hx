@@ -34,7 +34,7 @@ typedef PaymentRequestDetailsUpdate = {
 	@:optional
 	var shippingOptions : Array<js.paymentRequest.PaymentShippingOption>;
 	@:optional
-	var paymentMethodErrors : object;
+	var paymentMethodErrors : { };
 	@:optional
 	var shippingAddressErrors : js.paymentRequest.AddressErrors;
 };

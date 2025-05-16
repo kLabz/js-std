@@ -44,7 +44,7 @@ extern class NavigatorManagedData extends js.dom.EventTarget {
 		From partial interface in device-attributes.idl
 	**/
 	function getHostname():js.lib.Promise<String>;
-	function getManagedConfiguration(keys:Array<String>):js.lib.Promise<haxe.DynamicAccess<object>>;
+	function getManagedConfiguration(keys:Array<String>):js.lib.Promise<haxe.DynamicAccess<{ }>>;
 	/**
 		From partial interface in device-attributes.idl
 	**/

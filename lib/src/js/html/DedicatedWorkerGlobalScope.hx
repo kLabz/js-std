@@ -30,6 +30,6 @@ package js.html;
 **/
 extern class DedicatedWorkerGlobalScope extends WorkerGlobalScope {
 	function close():Void;
-	overload function postMessage(message:Any, transfer:Array<object>):Void;
+	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
 	overload function postMessage(message:Any, ?options:StructuredSerializeOptions):Void;
 }

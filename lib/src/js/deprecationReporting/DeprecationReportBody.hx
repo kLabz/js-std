@@ -33,5 +33,5 @@ package js.deprecationReporting;
 	TODO attribute columnNumber
 **/
 extern class DeprecationReportBody extends js.reporting.ReportBody {
-	function toJSON():object;
+	function toJSON():{ };
 }

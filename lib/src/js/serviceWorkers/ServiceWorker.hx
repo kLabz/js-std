@@ -30,6 +30,6 @@ package js.serviceWorkers;
 	TODO attribute onstatechange
 **/
 extern class ServiceWorker extends js.dom.EventTarget {
-	overload function postMessage(message:Any, transfer:Array<object>):Void;
+	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
 	overload function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;
 }

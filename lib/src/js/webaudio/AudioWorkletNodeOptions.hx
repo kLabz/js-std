@@ -34,5 +34,5 @@ typedef AudioWorkletNodeOptions = AudioNodeOptions & {
 	@:optional
 	var parameterData : haxe.DynamicAccess<Float>;
 	@:optional
-	var processorOptions : object;
+	var processorOptions : { };
 };

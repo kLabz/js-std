@@ -26,5 +26,5 @@ package js.cssParserApi;
 
 typedef CSSParserOptions = {
 	@:optional
-	var atRules : object;
+	var atRules : { };
 };

@@ -31,5 +31,5 @@ typedef PaymentDetailsModifier = {
 	@:optional
 	var additionalDisplayItems : Array<PaymentItem>;
 	@:optional
-	var data : object;
+	var data : { };
 };

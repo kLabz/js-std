@@ -38,5 +38,5 @@ package js.csp;
 	TODO attribute columnNumber
 **/
 extern class CSPViolationReportBody extends js.reporting.ReportBody {
-	function toJSON():object;
+	function toJSON():{ };
 }

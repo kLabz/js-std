@@ -47,6 +47,7 @@ package js.html;
 	TODO attribute opener
 	TODO attribute parent
 	TODO attribute frameElement
+	TODO ArrayAccess<> for tkey=String tvalue=TAnonymous([])
 	TODO attribute navigator
 	TODO attribute clientInformation
 	TODO attribute originAgentCluster
@@ -80,15 +81,11 @@ package js.html;
 	TODO attribute ondeviceorientationabsolute
 	TODO attribute ondevicemotion
 	TODO attribute portalHost
-	TODO attribute sharedStorage
 	TODO attribute speechSynthesis
+	TODO attribute sharedStorage
 	TODO attribute launchQueue
 **/
 extern class Window extends js.dom.EventTarget {
-	/**
-		(special = getter)
-	**/
-	function (name:String):object;
 	overload function alert():Void;
 	overload function alert(message:String):Void;
 	function blur():Void;
@@ -136,7 +133,7 @@ extern class Window extends js.dom.EventTarget {
 	**/
 	function navigate(dir:js.cssNav.SpatialNavigationDirection):Void;
 	function open(?url:String, ?target:String, ?features:String):WindowProxy;
-	overload function postMessage(message:Any, targetOrigin:String, ?transfer:Array<object>):Void;
+	overload function postMessage(message:Any, targetOrigin:String, ?transfer:Array<{ }>):Void;
 	overload function postMessage(message:Any, ?options:WindowPostMessageOptions):Void;
 	function print():Void;
 	function prompt(?message:String, ?default:String):String;

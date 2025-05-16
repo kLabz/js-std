@@ -32,5 +32,5 @@ typedef PaymentValidationErrors = {
 	@:optional
 	var error : String;
 	@:optional
-	var paymentMethod : object;
+	var paymentMethod : { };
 };

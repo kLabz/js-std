@@ -73,7 +73,7 @@ extern class DOMMatrixReadOnly {
 	function skewY(?sy:Float):DOMMatrix;
 	function toFloat32Array():Float32Array;
 	function toFloat64Array():Float64Array;
-	function toJSON():object;
+	function toJSON():{ };
 	function transformPoint(?point:DOMPointInit):DOMPoint;
 	function translate(?tx:Float, ?ty:Float, ?tz:Float):DOMMatrix;
 }

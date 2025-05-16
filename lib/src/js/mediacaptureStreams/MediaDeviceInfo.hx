@@ -31,5 +31,5 @@ package js.mediacaptureStreams;
 	TODO attribute groupId
 **/
 extern class MediaDeviceInfo {
-	function toJSON():object;
+	function toJSON():{ };
 }

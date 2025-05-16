@@ -42,8 +42,8 @@ package js.html;
 	TODO attribute preferences
 	TODO attribute mediaSession
 	TODO attribute permissions
-	TODO attribute maxTouchPoints
 	TODO attribute privateAttribution
+	TODO attribute maxTouchPoints
 	TODO attribute presentation
 	TODO attribute wakeLock
 	TODO attribute serviceWorker

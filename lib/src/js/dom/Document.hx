@@ -48,6 +48,7 @@ package js.dom;
 	TODO attribute cookie
 	TODO attribute lastModified
 	TODO attribute readyState
+	TODO ArrayAccess<> for tkey=String tvalue=TAnonymous([])
 	TODO attribute title
 	TODO attribute dir
 	TODO attribute body
@@ -78,20 +79,15 @@ package js.dom;
 	TODO attribute wasDiscarded
 	TODO attribute permissionsPolicy
 	TODO attribute pictureInPictureEnabled
-	TODO attribute onpointerlockchange
-	TODO attribute onpointerlockerror
 	TODO attribute prerendering
 	TODO attribute onprerenderingchange
+	TODO attribute onpointerlockchange
+	TODO attribute onpointerlockerror
 	TODO attribute fragmentDirective
 	TODO attribute timeline
 **/
 extern class Document extends Node {
 	function new():Void;
-	/**
-		From partial interface in html.idl
-		(special = getter)
-	**/
-	function (name:String):object;
 	function adoptNode(node:Node):Node;
 	/**
 		From partial interface in html.idl

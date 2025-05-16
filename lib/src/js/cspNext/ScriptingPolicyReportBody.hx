@@ -32,5 +32,5 @@ package js.cspNext;
 	TODO attribute colno
 **/
 extern class ScriptingPolicyReportBody extends js.reporting.ReportBody {
-	function toJSON():object;
+	function toJSON():{ };
 }

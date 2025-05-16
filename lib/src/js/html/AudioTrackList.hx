@@ -30,10 +30,6 @@ package js.html;
 	TODO attribute onaddtrack
 	TODO attribute onremovetrack
 **/
-extern class AudioTrackList extends js.dom.EventTarget {
-	/**
-		(special = getter)
-	**/
-	function (index:Int):AudioTrack;
+extern class AudioTrackList extends js.dom.EventTarget implements ArrayAccess<AudioTrack> {
 	function getTrackById(id:String):AudioTrack;
 }

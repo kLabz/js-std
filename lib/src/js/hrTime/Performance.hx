@@ -74,5 +74,5 @@ extern class Performance extends js.dom.EventTarget {
 		From partial interface in resource-timing.idl
 	**/
 	function setResourceTimingBufferSize(maxSize:Int):Void;
-	function toJSON():object;
+	function toJSON():{ };
 }

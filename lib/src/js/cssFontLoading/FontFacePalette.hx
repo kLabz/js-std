@@ -29,11 +29,7 @@ package js.cssFontLoading;
 	TODO attribute usableWithLightBackground
 	TODO attribute usableWithDarkBackground
 **/
-extern class FontFacePalette {
-	/**
-		(special = getter)
-	**/
-	function (index:Int):String;
+extern class FontFacePalette implements ArrayAccess<String> {
 	function values():Iterator<String>;
 	function values():Iterator<String>;
 }

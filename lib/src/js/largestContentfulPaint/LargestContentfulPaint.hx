@@ -32,5 +32,5 @@ package js.largestContentfulPaint;
 	TODO attribute element
 **/
 extern class LargestContentfulPaint extends js.performanceTimeline.PerformanceEntry {
-	function toJSON():object;
+	function toJSON():{ };
 }

@@ -28,12 +28,8 @@ package js.cssTypedOm;
 	TODO attribute length
 	TODO attribute is2D
 **/
-extern class CSSTransformValue extends CSSStyleValue {
+extern class CSSTransformValue extends CSSStyleValue implements ArrayAccess<CSSTransformComponent> {
 	function new(transforms:Array<CSSTransformComponent>):Void;
-	/**
-		(special = getter)
-	**/
-	overload function (index:Int):CSSTransformComponent;
 	/**
 		(special = setter)
 	**/

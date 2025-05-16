@@ -51,5 +51,5 @@ package js.resourceTiming;
 	TODO attribute serverTiming
 **/
 extern class PerformanceResourceTiming extends js.performanceTimeline.PerformanceEntry {
-	function toJSON():object;
+	function toJSON():{ };
 }

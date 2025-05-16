@@ -34,5 +34,5 @@ package js.permissionsPolicy;
 	TODO attribute srcAttribute
 **/
 extern class PermissionsPolicyViolationReportBody extends js.reporting.ReportBody {
-	function toJSON():object;
+	function toJSON():{ };
 }

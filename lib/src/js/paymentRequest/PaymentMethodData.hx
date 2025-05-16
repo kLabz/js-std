@@ -27,5 +27,5 @@ package js.paymentRequest;
 typedef PaymentMethodData = {
 	var supportedMethods : String;
 	@:optional
-	var data : object;
+	var data : { };
 };

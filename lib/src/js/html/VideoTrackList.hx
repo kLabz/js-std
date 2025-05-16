@@ -31,10 +31,6 @@ package js.html;
 	TODO attribute onaddtrack
 	TODO attribute onremovetrack
 **/
-extern class VideoTrackList extends js.dom.EventTarget {
-	/**
-		(special = getter)
-	**/
-	function (index:Int):VideoTrack;
+extern class VideoTrackList extends js.dom.EventTarget implements ArrayAccess<VideoTrack> {
 	function getTrackById(id:String):VideoTrack;
 }

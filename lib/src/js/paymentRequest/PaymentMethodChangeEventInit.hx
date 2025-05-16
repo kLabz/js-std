@@ -28,5 +28,5 @@ typedef PaymentMethodChangeEventInit = PaymentRequestUpdateEventInit & {
 	@:optional
 	var methodName : String = "";
 	@:optional
-	var methodDetails : object = null;
+	var methodDetails : { } = null;
 };

@@ -33,5 +33,5 @@ package js.performanceTimeline;
 	TODO attribute navigationId
 **/
 extern class PerformanceEntry {
-	function toJSON():object;
+	function toJSON():{ };
 }

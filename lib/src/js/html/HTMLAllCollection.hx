@@ -27,11 +27,7 @@ package js.html;
 /**
 	TODO attribute length
 **/
-extern class HTMLAllCollection {
-	/**
-		(special = getter)
-	**/
-	function (index:Int):js.dom.Element;
+extern class HTMLAllCollection implements ArrayAccess<js.dom.Element> {
 	function item(?nameOrIndex:String):haxe.extern.EitherType<js.dom.HTMLCollection, js.dom.Element>;
 	function namedItem(name:String):haxe.extern.EitherType<js.dom.HTMLCollection, js.dom.Element>;
 }

@@ -31,5 +31,5 @@ package js.layoutInstability;
 	TODO attribute sources
 **/
 extern class LayoutShift extends js.performanceTimeline.PerformanceEntry {
-	function toJSON():object;
+	function toJSON():{ };
 }

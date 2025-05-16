@@ -30,9 +30,6 @@ package js.webcodecs;
 	TODO attribute selectedIndex
 	TODO attribute selectedTrack
 **/
-extern class ImageTrackList {
-	/**
-		(special = getter)
-	**/
-	function (index:Int):ImageTrack;
+extern class ImageTrackList implements ArrayAccess<ImageTrack> {
+
 }

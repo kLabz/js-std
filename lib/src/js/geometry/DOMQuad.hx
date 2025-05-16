@@ -35,5 +35,5 @@ extern class DOMQuad {
 	function fromQuad(?other:DOMQuadInit):DOMQuad;
 	function fromRect(?other:DOMRectInit):DOMQuad;
 	function getBounds():DOMRect;
-	function toJSON():object;
+	function toJSON():{ };
 }

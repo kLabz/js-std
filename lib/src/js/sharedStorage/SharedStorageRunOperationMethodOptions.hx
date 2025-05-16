@@ -26,7 +26,7 @@ package js.sharedStorage;
 
 typedef SharedStorageRunOperationMethodOptions = {
 	@:optional
-	var data : object;
+	var data : { };
 	@:optional
 	var resolveToConfig : Bool = false;
 	@:optional

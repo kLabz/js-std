@@ -30,5 +30,5 @@ package js.reporting;
 	TODO attribute body
 **/
 extern class Report {
-	function toJSON():object;
+	function toJSON():{ };
 }

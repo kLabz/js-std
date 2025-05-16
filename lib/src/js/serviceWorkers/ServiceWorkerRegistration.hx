@@ -34,8 +34,8 @@ package js.serviceWorkers;
 	TODO attribute onupdatefound
 	TODO attribute backgroundFetch
 	TODO attribute sync
-	TODO attribute cookies
 	TODO attribute index
+	TODO attribute cookies
 	TODO attribute paymentManager
 	TODO attribute periodicSync
 	TODO attribute pushManager

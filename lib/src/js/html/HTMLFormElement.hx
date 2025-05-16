@@ -38,17 +38,24 @@ package js.html;
 	TODO attribute relList
 	TODO attribute elements
 	TODO attribute length
+	TODO ArrayAccess<> for tkey=String tvalue=TPath({
+			pack : [haxe,extern], 
+			name : EitherType, 
+			params : [TPType(TPath(<...>)),TPType(TPath(<...>))], 
+			pos : {
+				file : src/Main.hx, 
+				min : 3302, 
+				max : 3338
+			}, 
+			posPath : {
+				file : src/Main.hx, 
+				min : 3302, 
+				max : 3324
+			}
+		})
 **/
-extern class HTMLFormElement extends HTMLElement {
+extern class HTMLFormElement extends HTMLElement implements ArrayAccess<js.dom.Element> {
 	function new():Void;
-	/**
-		(special = getter)
-	**/
-	overload function (index:Int):js.dom.Element;
-	/**
-		(special = getter)
-	**/
-	overload function (name:String):haxe.extern.EitherType<RadioNodeList, js.dom.Element>;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
 	function requestSubmit(?submitter:HTMLElement):Void;

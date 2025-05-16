@@ -40,5 +40,5 @@ package js.navigationTiming;
 	TODO attribute activationStart
 **/
 extern class PerformanceNavigationTiming extends js.resourceTiming.PerformanceResourceTiming {
-	function toJSON():object;
+	function toJSON():{ };
 }

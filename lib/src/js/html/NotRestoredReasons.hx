@@ -33,5 +33,5 @@ package js.html;
 	TODO attribute children
 **/
 extern class NotRestoredReasons {
-	function toJSON():object;
+	function toJSON():{ };
 }

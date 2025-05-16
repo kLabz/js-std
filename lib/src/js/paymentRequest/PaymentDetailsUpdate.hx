@@ -34,5 +34,5 @@ typedef PaymentDetailsUpdate = PaymentDetailsBase & {
 	@:optional
 	var payerErrors : PayerErrors;
 	@:optional
-	var paymentMethodErrors : object;
+	var paymentMethodErrors : { };
 };

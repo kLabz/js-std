@@ -24,11 +24,24 @@
 
 package js.html;
 
+/**
+	TODO ArrayAccess<> for tkey=String tvalue=TPath({
+			pack : [], 
+			name : String, 
+			params : [], 
+			pos : {
+				file : src/Main.hx, 
+				min : 2258, 
+				max : 2264
+			}, 
+			posPath : {
+				file : src/Main.hx, 
+				min : 2258, 
+				max : 2264
+			}
+		})
+**/
 extern class DOMStringMap {
-	/**
-		(special = getter)
-	**/
-	overload function (name:String):String;
 	/**
 		(special = setter)
 	**/

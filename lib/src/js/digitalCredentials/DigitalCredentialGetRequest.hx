@@ -26,5 +26,5 @@ package js.digitalCredentials;
 
 typedef DigitalCredentialGetRequest = {
 	var protocol : String;
-	var data : object;
+	var data : { };
 };

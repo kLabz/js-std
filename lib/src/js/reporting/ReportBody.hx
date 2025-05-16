@@ -25,5 +25,5 @@
 package js.reporting;
 
 extern class ReportBody {
-	function toJSON():object;
+	function toJSON():{ };
 }

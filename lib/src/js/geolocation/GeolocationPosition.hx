@@ -29,5 +29,5 @@ package js.geolocation;
 	TODO attribute timestamp
 **/
 extern class GeolocationPosition {
-	function toJSON():object;
+	function toJSON():{ };
 }

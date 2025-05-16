@@ -32,5 +32,5 @@ package js.eventTiming;
 	TODO attribute interactionId
 **/
 extern class PerformanceEventTiming extends js.performanceTimeline.PerformanceEntry {
-	function toJSON():object;
+	function toJSON():{ };
 }

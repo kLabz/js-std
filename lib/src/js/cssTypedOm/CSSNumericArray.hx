@@ -27,11 +27,7 @@ package js.cssTypedOm;
 /**
 	TODO attribute length
 **/
-extern class CSSNumericArray {
-	/**
-		(special = getter)
-	**/
-	function (index:Int):CSSNumericValue;
+extern class CSSNumericArray implements ArrayAccess<CSSNumericValue> {
 	function values():Iterator<CSSNumericValue>;
 	function values():Iterator<CSSNumericValue>;
 }

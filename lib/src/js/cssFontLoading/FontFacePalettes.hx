@@ -27,11 +27,7 @@ package js.cssFontLoading;
 /**
 	TODO attribute length
 **/
-extern class FontFacePalettes {
-	/**
-		(special = getter)
-	**/
-	function (index:Int):FontFacePalette;
+extern class FontFacePalettes implements ArrayAccess<FontFacePalette> {
 	function values():Iterator<FontFacePalette>;
 	function values():Iterator<FontFacePalette>;
 }

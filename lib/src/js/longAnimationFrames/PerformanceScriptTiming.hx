@@ -41,5 +41,5 @@ package js.longAnimationFrames;
 	TODO attribute windowAttribution
 **/
 extern class PerformanceScriptTiming extends js.performanceTimeline.PerformanceEntry {
-	function toJSON():object;
+	function toJSON():{ };
 }

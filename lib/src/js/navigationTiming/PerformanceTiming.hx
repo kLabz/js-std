@@ -48,5 +48,5 @@ package js.navigationTiming;
 	TODO attribute loadEventEnd
 **/
 extern class PerformanceTiming {
-	function toJSON():object;
+	function toJSON():{ };
 }

@@ -32,6 +32,6 @@ package js.serviceWorkers;
 	TODO attribute lifecycleState
 **/
 extern class Client {
-	overload function postMessage(message:Any, transfer:Array<object>):Void;
+	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
 	overload function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;
 }

@@ -39,7 +39,7 @@ typedef BiddingBrowserSignals = {
 	@:optional
 	var prevWinsMs : Array<PreviousWin>;
 	@:optional
-	var wasmHelper : object;
+	var wasmHelper : { };
 	@:optional
 	var dataVersion : Int;
 	@:optional

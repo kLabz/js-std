@@ -28,5 +28,5 @@ package js.webBluetoothScanning;
 	TODO MaplikeDeclaration handling
 **/
 extern class BluetoothServiceDataFilter {
-	function new(?init:object):Void;
+	function new(?init:{ }):Void;
 }

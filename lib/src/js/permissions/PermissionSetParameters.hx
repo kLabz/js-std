@@ -25,6 +25,6 @@
 package js.permissions;
 
 typedef PermissionSetParameters = {
-	var descriptor : object;
+	var descriptor : { };
 	var state : PermissionState;
 };

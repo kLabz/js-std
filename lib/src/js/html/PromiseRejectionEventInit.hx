@@ -25,7 +25,7 @@
 package js.html;
 
 typedef PromiseRejectionEventInit = js.dom.EventInit & {
-	var promise : object;
+	var promise : { };
 	@:optional
 	var reason : Any;
 };

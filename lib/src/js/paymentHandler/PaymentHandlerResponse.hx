@@ -28,7 +28,7 @@ typedef PaymentHandlerResponse = {
 	@:optional
 	var methodName : String;
 	@:optional
-	var details : object;
+	var details : { };
 	@:optional
 	var payerName : String;
 	@:optional

@@ -46,8 +46,8 @@ package js.html;
 	TODO attribute marginHeight
 	TODO attribute marginWidth
 	TODO attribute permissionsPolicy
-	TODO attribute adAuctionHeaders
 	TODO attribute privateToken
+	TODO attribute adAuctionHeaders
 **/
 extern class HTMLIFrameElement extends HTMLElement {
 	function new():Void;

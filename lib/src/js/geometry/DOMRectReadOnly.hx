@@ -37,5 +37,5 @@ package js.geometry;
 extern class DOMRectReadOnly {
 	function new(?x:Float, ?y:Float, ?width:Float, ?height:Float):Void;
 	function fromRect(?other:DOMRectInit):DOMRectReadOnly;
-	function toJSON():object;
+	function toJSON():{ };
 }

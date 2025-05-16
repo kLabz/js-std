@@ -37,5 +37,5 @@ package js.contactPicker;
 	TODO attribute addressLine
 **/
 extern class ContactAddress {
-	function toJSON():object;
+	function toJSON():{ };
 }

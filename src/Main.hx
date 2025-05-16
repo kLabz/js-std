@@ -1,6 +1,8 @@
 import haxe.Resource;
 import haxe.io.Path;
 import haxe.macro.Expr.ComplexType;
+import haxe.macro.Expr.Expr;
+import haxe.macro.Expr.ExprDef;
 import haxe.macro.Expr.Field;
 import haxe.macro.Expr.MetadataEntry;
 import haxe.macro.Expr.TypeDefinition;
@@ -13,10 +15,16 @@ import sys.io.File;
 
 import webref.IDL;
 import webidl2.AbstractBase;
+import webidl2.AbstractNonUnionTypeDescription;
+import webidl2.AbstractValueDescription;
 import webidl2.DictionaryType;
 import webidl2.EnumType;
+import webidl2.GenericTypeDescription;
+import webidl2.IDLInterfaceMemberType;
 import webidl2.IDLRootType;
+import webidl2.IDLTypeDescription;
 import webidl2.InterfaceType;
+import webidl2.ValueDescription;
 
 using Lambda;
 using NullHelper;
@@ -42,24 +50,80 @@ class Main {
 		}
 
 		function resolveTypePath(t:String):TypePath {
+			// TODO: see https://webidl.spec.whatwg.org/#idl-types
 			return switch (t) {
 				case "boolean": {pack: [], name: "Bool"};
+				case "unsigned short": {pack: [], name: "Int"};
+
+				// TODO: ignore package if same as current (or is parent package)
 				case _: {pack: resolvePackage(t), name: t};
 			};
 		}
 
 		function resolveType(t:String):ComplexType {
+			if (t == "undefined") return macro :Void; // TODO: not allowed everywhere..
 			return TPath(resolveTypePath(t));
 		}
 
-		function handleFile(file:FileHandler, res:Array<IDLRootType>) {
-			if (isFileIgnored(file)) return;
+		function convertType(t:IDLTypeDescription) {
+			if (t == null) return null;
 
-			function log(msg:String):Void {
-				Sys.println(msg);
+			if (t.isSingle()) {
+				return resolveType(t.asSingle().idlType);
+			} else if (t.isUnion()) {
+				return switch (t.asUnion().idlType) {
+					case []: macro :Dynamic;
+					case types:
+						var current = convertType(types.pop());
+						while (types.length > 0) {
+							var t = convertType(types.pop());
+							current = macro :haxe.extern.EitherType<$t, $current>;
+						}
+						current;
+				};
+			} else {
+				function handleGeneric<T:AbstractNonUnionTypeDescription<T>>(t:T) {
+					return switch (t.generic) {
+						case IDLFrozenArrayTypeDescription:
+							var inner = convertType(t.idlType.element0);
+							// if (inner == null) inner = macro :Dynamic;
+							// TODO: FrozenArray in std
+							macro :Array<$inner>;
+
+						case IDLObservableArrayTypeDescription:
+							var inner = convertType(t.idlType.element0);
+							// if (inner == null) inner = macro :Dynamic;
+							// TODO: ObservableArray in std
+							macro :Array<$inner>;
+
+						case IDLPromiseTypeDescription:
+							var inner = convertType(t.idlType.element0);
+							// if (inner == null) inner = macro :Dynamic;
+							macro :js.lib.Promise<$inner>;
+
+						case IDLRecordTypeDescription:
+							var tkey = convertType(t.idlType.element0);
+							var tvalue = convertType(t.idlType.element1);
+							switch (tkey) {
+								case TPath({pack: [], name: "DOMString" | "USVString" | "String"}):
+									macro :haxe.DynamicAccess<$tvalue>;
+								case _:
+									throw 'Unexpected record key type $tkey.';
+							}
+
+						case IDLSequenceTypeDescription:
+							var inner = convertType(t.idlType.element0);
+							// if (inner == null) inner = macro :Dynamic;
+							macro :Array<$inner>;
+
+						case _: throw 'Unexpected generic ${t.generic}.';
+					}
+				}
+				return handleGeneric(cast t.asGeneric());
 			}
+		}
 
-			log('Parsing ${file.filename}...');
+		function handleFile(file:FileHandler, res:Array<IDLRootType>) {
 			var pack = ["js", sanitizePackage(file.shortname)];
 			var out = Path.join(["lib", "src"].concat(pack));
 			var pos = PositionTools.make({min: 0, max: 0, file: file.path});
@@ -81,10 +145,11 @@ class Main {
 				out.add(file.filename);
 				out.add(". Do not edit!\n\n");
 				out.add(printer.printTypeDefinition(td));
+
 				File.saveContent(path, out.toString());
 			}
 
-			log('Parsed ${file.filename}: ${res.length} declarations.');
+			Sys.println('Parsed ${file.filename}: ${res.length} declarations.');
 
 			function handle<T:AbstractBase<T>>(t:T) {
 				if (isTypeIgnored(file, t)) return;
@@ -107,13 +172,10 @@ class Main {
 							var partials = partialDictionaries.get(t.name).or([]);
 							var members = partials.fold((p, acc) -> acc.concat(p.members), t.members);
 							var fields = members.map(m -> {
-								// TODO
-								var t = (cast m.idlType).idlType;
-
 								({
 									name: m.name, // TODO: sanitize
 									doc: null, // TODO retrieve docs
-									kind: FVar(resolveType(t), null /* TODO: m.default_ */),
+									kind: FVar(convertType(m.idlType), convertValue(m.default_, pos)),
 									pos: pos,
 									meta: m.required ? null : [optMeta]
 								}:Field);
@@ -132,7 +194,7 @@ class Main {
 								fields: []
 							};
 
-							log(' > Exported typedef ${pack.concat([t.name]).join(".")}');
+							Sys.println(' > Exported typedef ${pack.concat([t.name]).join(".")}');
 							save(t.name, td);
 						});
 
@@ -155,7 +217,7 @@ class Main {
 								}:Field))
 							};
 
-							log(' > Exported enum abstract ${pack.concat([t.name]).join(".")}');
+							Sys.println(' > Exported enum abstract ${pack.concat([t.name]).join(".")}');
 							save(t.name, td);
 						});
 
@@ -170,8 +232,121 @@ class Main {
 						partialInterfaces.set(t.name, partialInterfaces.get(t.name).or([]).concat([t]));
 
 					case IDLInterfaceType:
-						trace(' > TODO: interface ${pack.concat([t.name]).join(".")}');
-						// var partials = partialInterfaces.get(t.name).or([]);
+						packMap.set(t.name, pack);
+
+						tasks.push(() -> {
+							var partials = partialInterfaces.get(t.name).or([]);
+							var members = partials.fold((p, acc) -> acc.concat(p.members), t.members);
+
+							var fields:Array<Field> = [];
+							function handleMember<T:AbstractBase<T>>(m:T) {
+								switch (m.type) {
+									case IDLConstantMemberType:
+										fields.push({
+											name: m.name, // TODO: sanitize
+											doc: null, // TODO
+											access: [AStatic, AInline],
+											kind: FVar(convertType(m.idlType), convertValue(m.value, pos)),
+											pos: pos,
+											meta: [] // TODO
+										});
+
+									case IDLSetlikeDeclarationMemberType:
+										// TODO
+										trace('TODO Setlike for ${t.name}', m);
+
+									case IDLMaplikeDeclarationMemberType:
+										// TODO
+										trace('TODO Maplike for ${t.name}', m);
+
+									case IDLIterableDeclarationMemberType:
+										var tkey = convertType(m.idlType.asType0[0]);
+										var tvalue = convertType(m.idlType.asType0[1]);
+										var newFields:Array<Field> = [];
+										if (tvalue == null) {
+											tvalue = tkey;
+											newFields = (macro class A {
+												function values():Iterator<$tvalue>;
+											}).fields;
+											for (f in newFields) fields.push(f);
+										} else {
+											newFields = (macro class A {
+												function keys():Iterator<$tkey>;
+												function values():Iterator<$tvalue>;
+												function entries():Iterator<Array<Dynamic>>; // TODO: key/value pairs
+											}).fields;
+										}
+										for (f in newFields) fields.push(f);
+
+									case IDLConstructorMemberType:
+										fields.push({
+											name: "new",
+											doc: null, // TODO
+											access: [],
+											kind: FFun({
+												args: m.arguments.map(a -> {
+													name: a.name,
+													opt: a.optional,
+													type: convertType(a.idlType),
+													value: convertValue(a.default_, pos),
+													meta: null
+												}),
+												ret: macro :Void,
+												expr: null,
+												params: null
+											}),
+											pos: pos,
+											meta: [] // TODO
+										});
+
+									case IDLAttributeMemberType:
+										// TODO
+										if (t.name == "FormData") trace(m);
+
+									case IDLOperationMemberType:
+										fields.push({
+											name: m.name, // TODO sanitize/@:native
+											doc: null, // TODO
+											access: isOverload(m, members) ? [AOverload] : [],
+											kind: FFun({
+												args: m.arguments.map(a -> {
+													name: a.name,
+													opt: a.optional,
+													type: convertType(a.idlType),
+													value: convertValue(a.default_, pos),
+													meta: null
+												}),
+												ret: convertType(m.idlType).or(macro :Void),
+												expr: null,
+												params: null
+											}),
+											pos: pos,
+											meta: [] // TODO
+										});
+
+									case _: throw 'Unexpected member type ${m.type}.';
+								};
+							}
+
+							for (m in members) handleMember(cast m);
+
+							var td:TypeDefinition = {
+								pack: pack,
+								name: t.name,
+								doc: null, // TODO retrieve docs
+								pos: pos,
+								isExtern: true,
+								kind: TDClass(
+									t.inheritance.maybeApply(resolveTypePath)
+									// TODO: interfaces (at least `implements ArrayAccess<T>`)
+								),
+								meta: [], // TODO: @:native etc.
+								fields: fields
+							};
+
+							Sys.println(' > Exported class ${pack.concat([t.name]).join(".")}');
+							save(t.name, td);
+						});
 
 					case IDLNamespaceType:
 						trace(' > TODO: namespace ${pack.concat([t.name]).join(".")}');
@@ -186,7 +361,11 @@ class Main {
 		}
 
 		IDL.listAll().then(function(files) {
-			var promises = [for (f in files) f.parse().then(handleFile.bind(f))];
+			var promises = [for (f in files) {
+				if (isFileIgnored(f)) continue;
+				f.parse().then(handleFile.bind(f));
+			}];
+
 			Promise.all(promises).then(_ -> {
 				// TODO: empty out directory before processing
 				for (task in tasks) task();
@@ -217,5 +396,60 @@ class Main {
 	static function sanitizeEnumValueName(e:{type:String, value:String, parent:EnumType}) {
 		if (e.value == "") return "NONE";
 		return ~/[^A-Z0-9]+/g.replace(e.value.toUpperCase(), "_");
+	}
+
+	static function convertValue(v:Null<ValueDescription>, pos):Null<Expr> {
+		if (v == null) return null;
+
+		function extractValue<T:AbstractValueDescription<T>>(v:T):ExprDef {
+			return switch (v.type) {
+				case IDLValueDescriptionString: EConst(CString(v.value));
+				case IDLValueDescriptionNumber: EConst(CInt(v.value));
+				case IDLValueDescriptionBoolean: EConst(CIdent(v.value ? "true" : "false"));
+				case IDLValueDescriptionNull: EConst(CIdent("null"));
+				// TODO: this is not supported everywhere in Haxe..
+				case IDLValueDescriptionInfinity: EConst(CIdent(v.negative ? "Math.NEGATIVE_INFINITY" : "Math.POSITIVE_INFINITY"));
+				// TODO: this is not supported everywhere in Haxe..
+				case IDLValueDescriptionNaN: EConst(CIdent("Math.NaN"));
+				case IDLValueDescriptionSequence if (v.value.length == 0): EArrayDecl([]);
+				case IDLValueDescriptionDictionary: EObjectDecl([]);
+				case IDLValueDescriptionSequence:
+					throw 'Unexpected array value ${v.value}.';
+				case _: throw 'Unexpected value type ${v.type}.';
+			};
+		}
+
+		return {
+			pos: pos,
+			expr: extractValue(cast v)
+		}
+	}
+
+	static function getName(member:IDLInterfaceMemberType):String {
+		function get<T:AbstractBase<T>>(m:T):String {
+			return switch (m.type) {
+				// TODO
+				case IDLSetlikeDeclarationMemberType: null;
+				case IDLMaplikeDeclarationMemberType: null;
+				case IDLIterableDeclarationMemberType: null;
+
+				case IDLConstructorMemberType: "new";
+				case IDLConstantMemberType: m.name;
+				case IDLAttributeMemberType: m.name;
+				case IDLOperationMemberType: m.name;
+				case _: throw 'Unexpected member type ${m.type}.';
+			};
+		}
+
+		return get(cast member);
+	}
+
+	static function isOverload(member:IDLInterfaceMemberType, members:Array<IDLInterfaceMemberType>):Bool {
+		var name = getName(member);
+		for (m in members) {
+			if (m == member) continue;
+			if (getName(m) == name) return true;
+		}
+		return false;
 	}
 }

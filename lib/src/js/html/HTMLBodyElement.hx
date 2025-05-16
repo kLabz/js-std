@@ -26,6 +26,90 @@ package js.html;
 
 extern class HTMLBodyElement extends HTMLElement {
 	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ongamepadconnected : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ongamepaddisconnected : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onafterprint : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onbeforeprint : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onbeforeunload : OnBeforeUnloadEventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onhashchange : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onlanguagechange : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onmessage : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onmessageerror : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onoffline : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ononline : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpagehide : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpagereveal : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpageshow : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpageswap : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpopstate : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onrejectionhandled : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onstorage : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onunhandledrejection : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onunload : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onportalactivate : EventHandler;
+	/**
 		From partial interface in compat.idl
 	**/
 	var onorientationchange : EventHandler;

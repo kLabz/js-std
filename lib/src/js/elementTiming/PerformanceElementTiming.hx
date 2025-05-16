@@ -34,5 +34,13 @@ extern class PerformanceElementTiming extends js.performanceTimeline.Performance
 	var id(default, null) : String;
 	var element(default, null) : Null<js.dom.Element>;
 	var url(default, null) : String;
+	/**
+		From interface mixin PaintTimingMixin
+	**/
+	var paintTime(default, null) : js.hrTime.DOMHighResTimeStamp;
+	/**
+		From interface mixin PaintTimingMixin
+	**/
+	var presentationTime(default, null) : Null<js.hrTime.DOMHighResTimeStamp>;
 	function toJSON():{ };
 }

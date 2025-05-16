@@ -32,4 +32,8 @@ extern class SVGGradientElement extends SVGElement {
 	var gradientUnits(default, null) : SVGAnimatedEnumeration;
 	var gradientTransform(default, null) : SVGAnimatedTransformList;
 	var spreadMethod(default, null) : SVGAnimatedEnumeration;
+	/**
+		From interface mixin SVGURIReference
+	**/
+	var href(default, null) : SVGAnimatedString;
 }

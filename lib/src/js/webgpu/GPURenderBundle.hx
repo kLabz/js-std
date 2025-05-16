@@ -25,5 +25,8 @@
 package js.webgpu;
 
 extern class GPURenderBundle {
-
+	/**
+		From interface mixin GPUObjectBase
+	**/
+	var label : String;
 }

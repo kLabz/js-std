@@ -25,7 +25,15 @@
 package js.streams;
 
 extern class ReadableStreamBYOBReader {
+	/**
+		From interface mixin ReadableStreamGenericReader
+	**/
+	var closed(default, null) : js.lib.Promise<Void>;
 	function new(stream:ReadableStream):Void;
+	/**
+		From interface mixin ReadableStreamGenericReader
+	**/
+	function cancel(?reason:Any):js.lib.Promise<Void>;
 	function read(view:js.webidl.ArrayBufferView, ?options:ReadableStreamBYOBReaderReadOptions = {  }):js.lib.Promise<ReadableStreamReadResult>;
 	function releaseLock():Void;
 }

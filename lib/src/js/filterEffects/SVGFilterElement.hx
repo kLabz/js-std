@@ -31,4 +31,8 @@ extern class SVGFilterElement extends js.svg.SVGElement {
 	var y(default, null) : js.svg.SVGAnimatedLength;
 	var width(default, null) : js.svg.SVGAnimatedLength;
 	var height(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGURIReference
+	**/
+	var href(default, null) : js.svg.SVGAnimatedString;
 }

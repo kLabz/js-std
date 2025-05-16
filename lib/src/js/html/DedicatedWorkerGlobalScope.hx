@@ -27,10 +27,26 @@ package js.html;
 extern class DedicatedWorkerGlobalScope extends WorkerGlobalScope {
 	var name(default, null) : String;
 	/**
+		From interface mixin MessageEventTarget
+	**/
+	var onmessage : EventHandler;
+	/**
+		From interface mixin MessageEventTarget
+	**/
+	var onmessageerror : EventHandler;
+	/**
 		From partial interface in webrtc-encoded-transform.idl
 	**/
 	var onrtctransform : EventHandler;
+	/**
+		From interface mixin AnimationFrameProvider
+	**/
+	function cancelAnimationFrame(handle:Int):Void;
 	function close():Void;
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
 	overload function postMessage(message:Any, ?options:StructuredSerializeOptions = {  }):Void;
+	/**
+		From interface mixin AnimationFrameProvider
+	**/
+	function requestAnimationFrame(callback:FrameRequestCallback):Int;
 }

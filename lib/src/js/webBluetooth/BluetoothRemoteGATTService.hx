@@ -28,6 +28,22 @@ extern class BluetoothRemoteGATTService extends js.dom.EventTarget {
 	var device(default, null) : BluetoothDevice;
 	var uuid(default, null) : UUID;
 	var isPrimary(default, null) : Bool;
+	/**
+		From interface mixin CharacteristicEventHandlers
+	**/
+	var oncharacteristicvaluechanged : js.html.EventHandler;
+	/**
+		From interface mixin ServiceEventHandlers
+	**/
+	var onserviceadded : js.html.EventHandler;
+	/**
+		From interface mixin ServiceEventHandlers
+	**/
+	var onservicechanged : js.html.EventHandler;
+	/**
+		From interface mixin ServiceEventHandlers
+	**/
+	var onserviceremoved : js.html.EventHandler;
 	function getCharacteristic(characteristic:BluetoothCharacteristicUUID):js.lib.Promise<BluetoothRemoteGATTCharacteristic>;
 	function getCharacteristics(?characteristic:BluetoothCharacteristicUUID):js.lib.Promise<Array<BluetoothRemoteGATTCharacteristic>>;
 	function getIncludedService(service:BluetoothServiceUUID):js.lib.Promise<BluetoothRemoteGATTService>;

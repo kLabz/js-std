@@ -27,9 +27,33 @@ package js.dom;
 extern class CharacterData extends Node {
 	var data : String;
 	var length(default, null) : Int;
+	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	var previousElementSibling(default, null) : Null<Element>;
+	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	var nextElementSibling(default, null) : Null<Element>;
+	/**
+		From interface mixin ChildNode
+	**/
+	function after(nodes:):Void;
 	function appendData(data:String):Void;
+	/**
+		From interface mixin ChildNode
+	**/
+	function before(nodes:):Void;
 	function deleteData(offset:Int, count:Int):Void;
 	function insertData(offset:Int, data:String):Void;
+	/**
+		From interface mixin ChildNode
+	**/
+	function remove():Void;
 	function replaceData(offset:Int, count:Int, data:String):Void;
+	/**
+		From interface mixin ChildNode
+	**/
+	function replaceWith(nodes:):Void;
 	function substringData(offset:Int, count:Int):String;
 }

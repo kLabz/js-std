@@ -30,5 +30,25 @@ extern class SVGFEDropShadowElement extends js.svg.SVGElement {
 	var dy(default, null) : js.svg.SVGAnimatedNumber;
 	var stdDeviationX(default, null) : js.svg.SVGAnimatedNumber;
 	var stdDeviationY(default, null) : js.svg.SVGAnimatedNumber;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var x(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var y(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var width(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var height(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var result(default, null) : js.svg.SVGAnimatedString;
 	function setStdDeviation(stdDeviationX:Float, stdDeviationY:Float):Void;
 }

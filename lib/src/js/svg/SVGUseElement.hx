@@ -31,4 +31,8 @@ extern class SVGUseElement extends SVGGraphicsElement {
 	var height(default, null) : SVGAnimatedLength;
 	var instanceRoot(default, null) : Null<SVGElement>;
 	var animatedInstanceRoot(default, null) : Null<SVGElement>;
+	/**
+		From interface mixin SVGURIReference
+	**/
+	var href(default, null) : SVGAnimatedString;
 }

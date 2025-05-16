@@ -25,5 +25,12 @@
 package js.svg;
 
 extern class SVGPolylineElement extends SVGGeometryElement {
-
+	/**
+		From interface mixin SVGAnimatedPoints
+	**/
+	var points(default, null) : SVGPointList;
+	/**
+		From interface mixin SVGAnimatedPoints
+	**/
+	var animatedPoints(default, null) : SVGPointList;
 }

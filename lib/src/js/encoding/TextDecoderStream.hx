@@ -25,5 +25,25 @@
 package js.encoding;
 
 extern class TextDecoderStream {
+	/**
+		From interface mixin TextDecoderCommon
+	**/
+	var encoding(default, null) : String;
+	/**
+		From interface mixin TextDecoderCommon
+	**/
+	var fatal(default, null) : Bool;
+	/**
+		From interface mixin TextDecoderCommon
+	**/
+	var ignoreBOM(default, null) : Bool;
+	/**
+		From interface mixin GenericTransformStream
+	**/
+	var readable(default, null) : js.streams.ReadableStream;
+	/**
+		From interface mixin GenericTransformStream
+	**/
+	var writable(default, null) : js.streams.WritableStream;
 	function new(?label:String = "utf-8", ?options:TextDecoderOptions = {  }):Void;
 }

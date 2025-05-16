@@ -45,4 +45,24 @@ extern class SVGFEBlendElement extends js.svg.SVGElement {
 	var in1(default, null) : js.svg.SVGAnimatedString;
 	var in2(default, null) : js.svg.SVGAnimatedString;
 	var mode(default, null) : js.svg.SVGAnimatedEnumeration;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var x(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var y(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var width(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var height(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var result(default, null) : js.svg.SVGAnimatedString;
 }

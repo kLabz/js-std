@@ -39,6 +39,474 @@ extern class Document extends Node {
 	var doctype(default, null) : Null<DocumentType>;
 	var documentElement(default, null) : Null<Element>;
 	/**
+		From interface mixin FontFaceSource
+	**/
+	var fonts(default, null) : js.cssFontLoading.FontFaceSet;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	var styleSheets(default, null) : js.cssom.StyleSheetList;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	var adoptedStyleSheets : Array<js.cssom.CSSStyleSheet>;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	var customElementRegistry(default, null) : Null<js.html.CustomElementRegistry>;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	var fullscreenElement(default, null) : Null<Element>;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	var activeElement(default, null) : Null<Element>;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	var pictureInPictureElement(default, null) : Null<Element>;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	var pointerLockElement(default, null) : Null<Element>;
+	/**
+		From interface mixin ParentNode
+	**/
+	var children(default, null) : HTMLCollection;
+	/**
+		From interface mixin ParentNode
+	**/
+	var firstElementChild(default, null) : Null<Element>;
+	/**
+		From interface mixin ParentNode
+	**/
+	var lastElementChild(default, null) : Null<Element>;
+	/**
+		From interface mixin ParentNode
+	**/
+	var childElementCount(default, null) : Int;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationstart : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationiteration : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationend : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationcancel : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsnapchanged : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsnapchanging : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontransitionrun : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontransitionstart : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontransitionend : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontransitioncancel : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onfencedtreeclick : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onabort : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onauxclick : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onbeforeinput : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onbeforematch : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onbeforetoggle : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onblur : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncancel : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncanplay : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncanplaythrough : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onchange : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onclick : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onclose : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncommand : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncontextlost : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncontextmenu : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncontextrestored : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncopy : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncuechange : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncut : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondblclick : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondrag : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondragend : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondragenter : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondragleave : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondragover : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondragstart : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondrop : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondurationchange : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onemptied : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onended : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onerror : js.html.OnErrorEventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onfocus : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onformdata : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oninput : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oninvalid : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onkeydown : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onkeypress : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onkeyup : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onload : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onloadeddata : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onloadedmetadata : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onloadstart : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onmousedown : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onmouseenter : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onmouseleave : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onmousemove : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onmouseout : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onmouseover : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onmouseup : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpaste : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpause : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onplay : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onplaying : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onprogress : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onratechange : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onreset : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onresize : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onscroll : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onscrollend : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsecuritypolicyviolation : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onseeked : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onseeking : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onselect : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onslotchange : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onstalled : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsubmit : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsuspend : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontimeupdate : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontoggle : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onvolumechange : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onwaiting : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onwebkitanimationend : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onwebkitanimationiteration : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onwebkitanimationstart : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onwebkittransitionend : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onwheel : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointerover : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointerenter : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointerdown : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointermove : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointerrawupdate : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointerup : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointercancel : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointerout : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointerleave : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ongotpointercapture : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onlostpointercapture : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onselectstart : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onselectionchange : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontouchstart : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontouchend : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontouchmove : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontouchcancel : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onbeforexrselect : js.html.EventHandler;
+	/**
 		From partial interface in SVG.idl
 	**/
 	var rootElement(default, null) : Null<js.svg.SVGSVGElement>;
@@ -237,6 +705,10 @@ extern class Document extends Node {
 	function new():Void;
 	function adoptNode(node:Node):Node;
 	/**
+		From interface mixin ParentNode
+	**/
+	function append(nodes:haxe.extern.EitherType<Node, String>):Void;
+	/**
 		From partial interface in html.idl
 	**/
 	function captureEvents():Void;
@@ -252,6 +724,18 @@ extern class Document extends Node {
 		From partial interface in html.idl
 	**/
 	function close():Void;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function convertPointFromNode(point:js.geometry.DOMPointInit, from:js.cssomView.GeometryNode, ?options:js.cssomView.ConvertCoordinateOptions = {  }):js.geometry.DOMPoint;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function convertQuadFromNode(quad:js.geometry.DOMQuadInit, from:js.cssomView.GeometryNode, ?options:js.cssomView.ConvertCoordinateOptions = {  }):js.geometry.DOMQuad;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function convertRectFromNode(rect:js.geometry.DOMRectReadOnly, from:js.cssomView.GeometryNode, ?options:js.cssomView.ConvertCoordinateOptions = {  }):js.geometry.DOMQuad;
 	function createAttribute(localName:String):Attr;
 	function createAttributeNS(namespace:Null<String>, qualifiedName:String):Attr;
 	function createCDATASection(data:String):CDATASection;
@@ -260,6 +744,14 @@ extern class Document extends Node {
 	function createElement(localName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions> = {  }):Element;
 	function createElementNS(namespace:Null<String>, qualifiedName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions> = {  }):Element;
 	function createEvent(interface:String):Event;
+	/**
+		From interface mixin XPathEvaluatorBase
+	**/
+	function createExpression(expression:String, ?resolver:Null<XPathNSResolver> = null):XPathExpression;
+	/**
+		From interface mixin XPathEvaluatorBase
+	**/
+	function createNSResolver(nodeResolver:Node):Node;
 	function createNodeIterator(root:Node, ?whatToShow:Int = 0xFFFFFFFF, ?filter:Null<NodeFilter> = null):NodeIterator;
 	function createProcessingInstruction(target:String, data:String):ProcessingInstruction;
 	function createRange():Range;
@@ -273,6 +765,10 @@ extern class Document extends Node {
 		From partial interface in cssom-view.idl
 	**/
 	function elementsFromPoint(x:Float, y:Float):Array<Element>;
+	/**
+		From interface mixin XPathEvaluatorBase
+	**/
+	function evaluate(expression:String, contextNode:Node, ?resolver:Null<XPathNSResolver> = null, ?type:Int = 0, ?result:Null<XPathResult> = null):XPathResult;
 	/**
 		From partial interface in html.idl
 	**/
@@ -289,6 +785,18 @@ extern class Document extends Node {
 		From partial interface in pointerlock.idl
 	**/
 	function exitPointerLock():Void;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	function getAnimations():Array<js.webAnimations.Animation>;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function getBoxQuads(?options:js.cssomView.BoxQuadOptions = {  }):Array<js.geometry.DOMQuad>;
+	/**
+		From interface mixin NonElementParentNode
+	**/
+	function getElementById(elementId:String):Null<Element>;
 	function getElementsByClassName(classNames:String):HTMLCollection;
 	/**
 		From partial interface in html.idl
@@ -330,6 +838,10 @@ extern class Document extends Node {
 	**/
 	function measureText(text:String, styleMap:js.cssTypedOm.StylePropertyMapReadOnly):js.fontMetricsApi.FontMetrics;
 	/**
+		From interface mixin ParentNode
+	**/
+	function moveBefore(node:Node, child:Null<Node>):Void;
+	/**
 		From partial interface in html.idl
 	**/
 	overload function open(?unused1:String, ?unused2:String):Document;
@@ -341,6 +853,10 @@ extern class Document extends Node {
 		From partial interface in html.idl
 	**/
 	function parseHTMLUnsafe(html:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>):Document;
+	/**
+		From interface mixin ParentNode
+	**/
+	function prepend(nodes:haxe.extern.EitherType<Node, String>):Void;
 	/**
 		From partial interface in html.idl
 	**/
@@ -362,9 +878,21 @@ extern class Document extends Node {
 	**/
 	function queryCommandValue(commandId:String):String;
 	/**
+		From interface mixin ParentNode
+	**/
+	function querySelector(selectors:String):Null<Element>;
+	/**
+		From interface mixin ParentNode
+	**/
+	function querySelectorAll(selectors:String):NodeList;
+	/**
 		From partial interface in html.idl
 	**/
 	function releaseEvents():Void;
+	/**
+		From interface mixin ParentNode
+	**/
+	function replaceChildren(nodes:haxe.extern.EitherType<Node, String>):Void;
 	/**
 		From partial interface in storage-access.idl
 	**/

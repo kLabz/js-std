@@ -27,4 +27,8 @@ package js.svg;
 extern class SVGScriptElement extends SVGElement {
 	var type : String;
 	var crossOrigin : Null<String>;
+	/**
+		From interface mixin SVGURIReference
+	**/
+	var href(default, null) : SVGAnimatedString;
 }

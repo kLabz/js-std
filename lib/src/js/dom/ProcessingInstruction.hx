@@ -26,4 +26,8 @@ package js.dom;
 
 extern class ProcessingInstruction extends CharacterData {
 	var target(default, null) : String;
+	/**
+		From interface mixin LinkStyle
+	**/
+	var sheet(default, null) : Null<js.cssom.CSSStyleSheet>;
 }

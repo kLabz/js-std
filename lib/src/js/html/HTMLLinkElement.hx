@@ -42,6 +42,10 @@ extern class HTMLLinkElement extends HTMLElement {
 	var disabled : Bool;
 	var fetchPriority : String;
 	/**
+		From interface mixin LinkStyle
+	**/
+	var sheet(default, null) : Null<js.cssom.CSSStyleSheet>;
+	/**
 		From partial interface in html.idl
 	**/
 	var charset : String;

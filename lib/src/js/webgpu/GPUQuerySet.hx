@@ -27,5 +27,9 @@ package js.webgpu;
 extern class GPUQuerySet {
 	var type(default, null) : GPUQueryType;
 	var count(default, null) : GPUSize32Out;
+	/**
+		From interface mixin GPUObjectBase
+	**/
+	var label : String;
 	function destroy():Void;
 }

@@ -25,5 +25,24 @@
 package js.filterEffects;
 
 extern class SVGFEFloodElement extends js.svg.SVGElement {
-
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var x(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var y(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var width(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var height(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var result(default, null) : js.svg.SVGAnimatedString;
 }

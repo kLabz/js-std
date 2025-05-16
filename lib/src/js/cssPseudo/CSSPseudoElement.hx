@@ -28,5 +28,21 @@ extern class CSSPseudoElement extends js.dom.EventTarget {
 	var type(default, null) : CSSOMString;
 	var element(default, null) : js.dom.Element;
 	var parent(default, null) : haxe.extern.EitherType<js.dom.Element, CSSPseudoElement>;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function convertPointFromNode(point:js.geometry.DOMPointInit, from:js.cssomView.GeometryNode, ?options:js.cssomView.ConvertCoordinateOptions = {  }):js.geometry.DOMPoint;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function convertQuadFromNode(quad:js.geometry.DOMQuadInit, from:js.cssomView.GeometryNode, ?options:js.cssomView.ConvertCoordinateOptions = {  }):js.geometry.DOMQuad;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function convertRectFromNode(rect:js.geometry.DOMRectReadOnly, from:js.cssomView.GeometryNode, ?options:js.cssomView.ConvertCoordinateOptions = {  }):js.geometry.DOMQuad;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function getBoxQuads(?options:js.cssomView.BoxQuadOptions = {  }):Array<js.geometry.DOMQuad>;
 	function pseudo(type:CSSOMString):Null<CSSPseudoElement>;
 }

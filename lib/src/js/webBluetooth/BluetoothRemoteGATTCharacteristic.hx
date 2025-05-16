@@ -29,6 +29,10 @@ extern class BluetoothRemoteGATTCharacteristic extends js.dom.EventTarget {
 	var uuid(default, null) : UUID;
 	var properties(default, null) : BluetoothCharacteristicProperties;
 	var value(default, null) : Null<DataView>;
+	/**
+		From interface mixin CharacteristicEventHandlers
+	**/
+	var oncharacteristicvaluechanged : js.html.EventHandler;
 	function getDescriptor(descriptor:BluetoothDescriptorUUID):js.lib.Promise<BluetoothRemoteGATTDescriptor>;
 	function getDescriptors(?descriptor:BluetoothDescriptorUUID):js.lib.Promise<Array<BluetoothRemoteGATTDescriptor>>;
 	function readValue():js.lib.Promise<DataView>;

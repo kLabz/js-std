@@ -27,4 +27,44 @@ package js.html;
 extern class Path2D {
 	function new(?path:haxe.extern.EitherType<Path2D, String>):Void;
 	function addPath(path:Path2D, ?transform:js.geometry.DOMMatrix2DInit = {  }):Void;
+	/**
+		From interface mixin CanvasPath
+	**/
+	function arc(x:Float, y:Float, radius:Float, startAngle:Float, endAngle:Float, ?counterclockwise:Bool = false):Void;
+	/**
+		From interface mixin CanvasPath
+	**/
+	function arcTo(x1:Float, y1:Float, x2:Float, y2:Float, radius:Float):Void;
+	/**
+		From interface mixin CanvasPath
+	**/
+	function bezierCurveTo(cp1x:Float, cp1y:Float, cp2x:Float, cp2y:Float, x:Float, y:Float):Void;
+	/**
+		From interface mixin CanvasPath
+	**/
+	function closePath():Void;
+	/**
+		From interface mixin CanvasPath
+	**/
+	function ellipse(x:Float, y:Float, radiusX:Float, radiusY:Float, rotation:Float, startAngle:Float, endAngle:Float, ?counterclockwise:Bool = false):Void;
+	/**
+		From interface mixin CanvasPath
+	**/
+	function lineTo(x:Float, y:Float):Void;
+	/**
+		From interface mixin CanvasPath
+	**/
+	function moveTo(x:Float, y:Float):Void;
+	/**
+		From interface mixin CanvasPath
+	**/
+	function quadraticCurveTo(cpx:Float, cpy:Float, x:Float, y:Float):Void;
+	/**
+		From interface mixin CanvasPath
+	**/
+	function rect(x:Float, y:Float, w:Float, h:Float):Void;
+	/**
+		From interface mixin CanvasPath
+	**/
+	function roundRect(x:Float, y:Float, w:Float, h:Float, ?radii: = 0):Void;
 }

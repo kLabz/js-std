@@ -26,6 +26,14 @@ package js.svg;
 
 extern class SVGGraphicsElement extends SVGElement {
 	var transform(default, null) : SVGAnimatedTransformList;
+	/**
+		From interface mixin SVGTests
+	**/
+	var requiredExtensions(default, null) : SVGStringList;
+	/**
+		From interface mixin SVGTests
+	**/
+	var systemLanguage(default, null) : SVGStringList;
 	function getBBox(?options:SVGBoundingBoxOptions = {  }):js.geometry.DOMRect;
 	function getCTM():Null<js.geometry.DOMMatrix>;
 	function getScreenCTM():Null<js.geometry.DOMMatrix>;

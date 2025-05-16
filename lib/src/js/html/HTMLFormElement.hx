@@ -31,13 +31,13 @@ package js.html;
 			params : [TPType(TPath(<...>)),TPType(TPath(<...>))], 
 			pos : {
 				file : src/Main.hx, 
-				min : 3350, 
-				max : 3386
+				min : 3536, 
+				max : 3572
 			}, 
 			posPath : {
 				file : src/Main.hx, 
-				min : 3350, 
-				max : 3372
+				min : 3536, 
+				max : 3558
 			}
 		})
 **/

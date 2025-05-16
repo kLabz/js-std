@@ -29,6 +29,10 @@ extern class LanguageDetector {
 	var inputQuota(default, null) : Float;
 	function availability(?options:LanguageDetectorCreateCoreOptions = {  }):js.lib.Promise<js.writingAssistanceApis.Availability>;
 	function create(?options:LanguageDetectorCreateOptions = {  }):js.lib.Promise<LanguageDetector>;
+	/**
+		From interface mixin DestroyableModel
+	**/
+	function destroy():Void;
 	function detect(input:String, ?options:LanguageDetectorDetectOptions = {  }):js.lib.Promise<Array<LanguageDetectionResult>>;
 	function measureInputUsage(input:String, ?options:LanguageDetectorDetectOptions = {  }):js.lib.Promise<Float>;
 }

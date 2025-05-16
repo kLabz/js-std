@@ -54,6 +54,554 @@ extern class Window extends js.dom.EventTarget {
 	var clientInformation(default, null) : Navigator;
 	var originAgentCluster(default, null) : Bool;
 	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationstart : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationiteration : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationend : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationcancel : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsnapchanged : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsnapchanging : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontransitionrun : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontransitionstart : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontransitionend : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontransitioncancel : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onfencedtreeclick : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onabort : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onauxclick : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onbeforeinput : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onbeforematch : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onbeforetoggle : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onblur : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncancel : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncanplay : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncanplaythrough : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onchange : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onclick : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onclose : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncommand : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncontextlost : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncontextmenu : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncontextrestored : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncopy : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncuechange : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oncut : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondblclick : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondrag : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondragend : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondragenter : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondragleave : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondragover : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondragstart : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondrop : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ondurationchange : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onemptied : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onended : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onerror : OnErrorEventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onfocus : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onformdata : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oninput : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var oninvalid : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onkeydown : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onkeypress : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onkeyup : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onload : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onloadeddata : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onloadedmetadata : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onloadstart : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onmousedown : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onmouseenter : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onmouseleave : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onmousemove : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onmouseout : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onmouseover : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onmouseup : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpaste : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpause : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onplay : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onplaying : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onprogress : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onratechange : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onreset : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onresize : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onscroll : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onscrollend : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsecuritypolicyviolation : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onseeked : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onseeking : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onselect : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onslotchange : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onstalled : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsubmit : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsuspend : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontimeupdate : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontoggle : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onvolumechange : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onwaiting : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onwebkitanimationend : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onwebkitanimationiteration : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onwebkitanimationstart : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onwebkittransitionend : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onwheel : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointerover : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointerenter : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointerdown : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointermove : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointerrawupdate : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointerup : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointercancel : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointerout : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onpointerleave : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ongotpointercapture : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onlostpointercapture : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onselectstart : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onselectionchange : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontouchstart : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontouchend : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontouchmove : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var ontouchcancel : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onbeforexrselect : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ongamepadconnected : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ongamepaddisconnected : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onafterprint : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onbeforeprint : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onbeforeunload : OnBeforeUnloadEventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onhashchange : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onlanguagechange : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onmessage : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onmessageerror : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onoffline : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ononline : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpagehide : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpagereveal : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpageshow : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpageswap : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpopstate : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onrejectionhandled : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onstorage : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onunhandledrejection : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onunload : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onportalactivate : EventHandler;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var indexedDB(default, null) : js.indexeddb.IDBFactory;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var performance(default, null) : js.hrTime.Performance;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var origin(default, null) : String;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var isSecureContext(default, null) : Bool;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var crossOriginIsolated(default, null) : Bool;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var scheduler(default, null) : js.schedulingApis.Scheduler;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var caches(default, null) : js.serviceWorkers.CacheStorage;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var trustedTypes(default, null) : js.trustedTypes.TrustedTypePolicyFactory;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var crypto(default, null) : js.webcrypto.Crypto;
+	/**
+		From interface mixin WindowSessionStorage
+	**/
+	var sessionStorage(default, null) : Storage;
+	/**
+		From interface mixin WindowLocalStorage
+	**/
+	var localStorage(default, null) : Storage;
+	/**
 		From partial interface in anonymous-iframe.idl
 	**/
 	var credentialless(default, null) : Bool;
@@ -138,6 +686,10 @@ extern class Window extends js.dom.EventTarget {
 	**/
 	var documentPictureInPicture(default, null) : js.documentPictureInPicture.DocumentPictureInPicture;
 	/**
+		From partial interface in dom.idl
+	**/
+	var event(default, null) : haxe.extern.EitherType<js.dom.Event, Void>;
+	/**
 		From partial interface in fenced-frame.idl
 	**/
 	var fence(default, null) : Null<js.fencedFrame.Fence>;
@@ -145,10 +697,6 @@ extern class Window extends js.dom.EventTarget {
 		From partial interface in html.idl
 	**/
 	var external(default, null) : External;
-	/**
-		From partial interface in dom.idl
-	**/
-	var event(default, null) : haxe.extern.EitherType<js.dom.Event, Void>;
 	/**
 		From partial interface in manifest-incubations.idl
 	**/
@@ -187,7 +735,19 @@ extern class Window extends js.dom.EventTarget {
 	var launchQueue(default, null) : js.webAppLaunch.LaunchQueue;
 	overload function alert():Void;
 	overload function alert(message:String):Void;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function atob(data:String):String;
 	function blur():Void;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function btoa(data:String):String;
+	/**
+		From interface mixin AnimationFrameProvider
+	**/
+	function cancelAnimationFrame(handle:Int):Void;
 	/**
 		From partial interface in requestidlecallback.idl
 	**/
@@ -196,8 +756,28 @@ extern class Window extends js.dom.EventTarget {
 		From partial interface in html.idl
 	**/
 	function captureEvents():Void;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function clearInterval(?id:Int = 0):Void;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function clearTimeout(?id:Int = 0):Void;
 	function close():Void;
 	function confirm(?message:String = ""):Bool;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	overload function createImageBitmap(image:ImageBitmapSource, ?options:ImageBitmapOptions = {  }):js.lib.Promise<ImageBitmap>;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	overload function createImageBitmap(image:ImageBitmapSource, sx:Int, sy:Int, sw:Int, sh:Int, ?options:ImageBitmapOptions = {  }):js.lib.Promise<ImageBitmap>;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function fetch(input:js.fetch.RequestInfo, ?init:js.fetch.RequestInit = {  }):js.lib.Promise<js.fetch.Response>;
 	function focus():Void;
 	/**
 		From partial interface in cssom.idl
@@ -241,9 +821,21 @@ extern class Window extends js.dom.EventTarget {
 	**/
 	function queryLocalFonts(?options:js.localFontAccess.QueryOptions = {  }):js.lib.Promise<Array<js.localFontAccess.FontData>>;
 	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function queueMicrotask(callback:js.webidl.VoidFunction):Void;
+	/**
 		From partial interface in html.idl
 	**/
 	function releaseEvents():Void;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function reportError(e:Any):Void;
+	/**
+		From interface mixin AnimationFrameProvider
+	**/
+	function requestAnimationFrame(callback:FrameRequestCallback):Int;
 	/**
 		From partial interface in requestidlecallback.idl
 	**/
@@ -281,6 +873,14 @@ extern class Window extends js.dom.EventTarget {
 	**/
 	overload function scrollTo(x:Float, y:Float):Void;
 	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:Any):Int;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:Any):Int;
+	/**
 		From partial interface in file-system-access.idl
 	**/
 	function showDirectoryPicker(?options:js.fileSystemAccess.DirectoryPickerOptions = {  }):js.lib.Promise<js.fs.FileSystemDirectoryHandle>;
@@ -293,4 +893,8 @@ extern class Window extends js.dom.EventTarget {
 	**/
 	function showSaveFilePicker(?options:js.fileSystemAccess.SaveFilePickerOptions = {  }):js.lib.Promise<js.fs.FileSystemFileHandle>;
 	function stop():Void;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function structuredClone(value:Any, ?options:StructuredSerializeOptions = {  }):Any;
 }

@@ -26,4 +26,24 @@ package js.filterEffects;
 
 extern class SVGFEComponentTransferElement extends js.svg.SVGElement {
 	var in1(default, null) : js.svg.SVGAnimatedString;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var x(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var y(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var width(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var height(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var result(default, null) : js.svg.SVGAnimatedString;
 }

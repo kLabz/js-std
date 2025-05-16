@@ -37,4 +37,24 @@ extern class SVGFETurbulenceElement extends js.svg.SVGElement {
 	var seed(default, null) : js.svg.SVGAnimatedNumber;
 	var stitchTiles(default, null) : js.svg.SVGAnimatedEnumeration;
 	var type(default, null) : js.svg.SVGAnimatedEnumeration;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var x(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var y(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var width(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var height(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var result(default, null) : js.svg.SVGAnimatedString;
 }

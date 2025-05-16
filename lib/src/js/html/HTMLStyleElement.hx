@@ -29,6 +29,10 @@ extern class HTMLStyleElement extends HTMLElement {
 	var media : String;
 	var blocking(default, null) : js.dom.DOMTokenList;
 	/**
+		From interface mixin LinkStyle
+	**/
+	var sheet(default, null) : Null<js.cssom.CSSStyleSheet>;
+	/**
 		From partial interface in html.idl
 	**/
 	var type : String;

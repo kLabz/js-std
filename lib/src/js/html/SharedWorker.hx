@@ -26,5 +26,9 @@ package js.html;
 
 extern class SharedWorker extends js.dom.EventTarget {
 	var port(default, null) : MessagePort;
+	/**
+		From interface mixin AbstractWorker
+	**/
+	var onerror : EventHandler;
 	function new(scriptURL:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>, ?options:haxe.extern.EitherType<String, WorkerOptions> = {  }):Void;
 }

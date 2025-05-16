@@ -26,6 +26,118 @@ package js.html;
 
 extern class Navigator {
 	/**
+		From interface mixin NavigatorDeviceMemory
+	**/
+	var deviceMemory(default, null) : Float;
+	/**
+		From interface mixin GlobalPrivacyControl
+	**/
+	var globalPrivacyControl(default, null) : Bool;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var appCodeName(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var appName(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var appVersion(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var platform(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var product(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var productSub(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var userAgent(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var vendor(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var vendorSub(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var oscpu(default, null) : String;
+	/**
+		From interface mixin NavigatorLanguage
+	**/
+	var language(default, null) : String;
+	/**
+		From interface mixin NavigatorLanguage
+	**/
+	var languages(default, null) : Array<String>;
+	/**
+		From interface mixin NavigatorOnLine
+	**/
+	var onLine(default, null) : Bool;
+	/**
+		From interface mixin NavigatorCookies
+	**/
+	var cookieEnabled(default, null) : Bool;
+	/**
+		From interface mixin NavigatorPlugins
+	**/
+	var plugins(default, null) : PluginArray;
+	/**
+		From interface mixin NavigatorPlugins
+	**/
+	var mimeTypes(default, null) : MimeTypeArray;
+	/**
+		From interface mixin NavigatorPlugins
+	**/
+	var pdfViewerEnabled(default, null) : Bool;
+	/**
+		From interface mixin NavigatorConcurrentHardware
+	**/
+	var hardwareConcurrency(default, null) : Float;
+	/**
+		From interface mixin NavigatorNetworkInformation
+	**/
+	var connection(default, null) : js.netinfo.NetworkInformation;
+	/**
+		From interface mixin NavigatorStorageBuckets
+	**/
+	var storageBuckets(default, null) : js.storageBuckets.StorageBucketManager;
+	/**
+		From interface mixin NavigatorStorage
+	**/
+	var storage(default, null) : js.storage.StorageManager;
+	/**
+		From interface mixin NavigatorUA
+	**/
+	var userAgentData(default, null) : js.uaClientHints.NavigatorUAData;
+	/**
+		From interface mixin NavigatorLocks
+	**/
+	var locks(default, null) : js.webLocks.LockManager;
+	/**
+		From interface mixin NavigatorAutomationInformation
+	**/
+	var webdriver(default, null) : Bool;
+	/**
+		From interface mixin NavigatorGPU
+	**/
+	var gpu(default, null) : js.webgpu.GPU;
+	/**
+		From interface mixin NavigatorML
+	**/
+	var ml(default, null) : js.webnn.ML;
+	/**
 		From partial interface in audio-session.idl
 	**/
 	var audioSession(default, null) : js.audioSession.AudioSession;
@@ -54,10 +166,6 @@ extern class Navigator {
 	**/
 	var ink(default, null) : js.inkEnhancement.Ink;
 	/**
-		From partial interface in html.idl
-	**/
-	var userActivation(default, null) : UserActivation;
-	/**
 		From partial interface in is-input-pending.idl
 	**/
 	var scheduling(default, null) : js.isInputPending.Scheduling;
@@ -65,6 +173,10 @@ extern class Navigator {
 		From partial interface in keyboard-lock.idl
 	**/
 	var keyboard(default, null) : js.keyboardLock.Keyboard;
+	/**
+		From partial interface in html.idl
+	**/
+	var userActivation(default, null) : UserActivation;
 	/**
 		From partial interface in login-status.idl
 	**/
@@ -82,13 +194,13 @@ extern class Navigator {
 	**/
 	var mediaDevices(default, null) : js.mediacaptureStreams.MediaDevices;
 	/**
-		From partial interface in mediasession.idl
-	**/
-	var mediaSession(default, null) : js.mediasession.MediaSession;
-	/**
 		From partial interface in mediaqueries-5.idl
 	**/
 	var preferences(default, null) : js.mediaqueries5.PreferenceManager;
+	/**
+		From partial interface in mediasession.idl
+	**/
+	var mediaSession(default, null) : js.mediasession.MediaSession;
 	/**
 		From partial interface in permissions.idl
 	**/
@@ -110,13 +222,13 @@ extern class Navigator {
 	**/
 	var wakeLock(default, null) : js.screenWakeLock.WakeLock;
 	/**
-		From partial interface in service-workers.idl
-	**/
-	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
-	/**
 		From partial interface in serial.idl
 	**/
 	var serial(default, null) : js.serial.Serial;
+	/**
+		From partial interface in service-workers.idl
+	**/
+	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
 	/**
 		From partial interface in turtledove.idl
 	**/
@@ -161,6 +273,10 @@ extern class Navigator {
 		From partial interface in web-share.idl
 	**/
 	function canShare(?data:js.webShare.ShareData = {  }):Bool;
+	/**
+		From interface mixin NavigatorBadge
+	**/
+	function clearAppBadge():js.lib.Promise<Void>;
 	/**
 		From partial interface in turtledove.idl
 	**/
@@ -210,6 +326,10 @@ extern class Navigator {
 	**/
 	function getInterestGroupAdAuctionData(?config:js.turtledove.AdAuctionDataConfig = {  }):js.lib.Promise<js.turtledove.AdAuctionData>;
 	/**
+		From interface mixin NavigatorPlugins
+	**/
+	function javaEnabled():Bool;
+	/**
 		From partial interface in turtledove.idl
 	**/
 	function joinAdInterestGroup(group:js.turtledove.AuctionAdInterestGroup):js.lib.Promise<Void>;
@@ -221,6 +341,10 @@ extern class Navigator {
 		From partial interface in handwriting-recognition.idl
 	**/
 	function queryHandwritingRecognizer(constraint:js.handwritingRecognition.HandwritingModelConstraint):js.lib.Promise<Null<js.handwritingRecognition.HandwritingRecognizerQueryResult>>;
+	/**
+		From interface mixin NavigatorContentUtils
+	**/
+	function registerProtocolHandler(scheme:String, url:String):Void;
 	/**
 		From partial interface in webmidi.idl
 	**/
@@ -238,9 +362,21 @@ extern class Navigator {
 	**/
 	function sendBeacon(url:String, ?data:Null<js.fetch.BodyInit> = null):Bool;
 	/**
+		From interface mixin NavigatorBadge
+	**/
+	function setAppBadge(?contents:Float):js.lib.Promise<Void>;
+	/**
 		From partial interface in web-share.idl
 	**/
 	function share(?data:js.webShare.ShareData = {  }):js.lib.Promise<Void>;
+	/**
+		From interface mixin NavigatorID
+	**/
+	function taintEnabled():Bool;
+	/**
+		From interface mixin NavigatorContentUtils
+	**/
+	function unregisterProtocolHandler(scheme:String, url:String):Void;
 	/**
 		From partial interface in turtledove.idl
 	**/

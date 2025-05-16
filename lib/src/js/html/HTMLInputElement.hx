@@ -71,6 +71,14 @@ extern class HTMLInputElement extends HTMLElement {
 	var selectionEnd : Null<Int>;
 	var selectionDirection : Null<String>;
 	/**
+		From interface mixin PopoverInvokerElement
+	**/
+	var popoverTargetElement : Null<js.dom.Element>;
+	/**
+		From interface mixin PopoverInvokerElement
+	**/
+	var popoverTargetAction : String;
+	/**
 		From partial interface in entries-api.idl
 	**/
 	var webkitdirectory : Bool;

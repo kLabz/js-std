@@ -25,5 +25,8 @@
 package js.sharedStorage;
 
 extern class SharedStorageWorkletNavigator {
-
+	/**
+		From interface mixin NavigatorLocks
+	**/
+	var locks(default, null) : js.webLocks.LockManager;
 }

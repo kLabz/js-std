@@ -35,6 +35,10 @@ extern class Summarizer {
 	var inputQuota(default, null) : Float;
 	function availability(?options:SummarizerCreateCoreOptions = {  }):js.lib.Promise<Availability>;
 	function create(?options:SummarizerCreateOptions = {  }):js.lib.Promise<Summarizer>;
+	/**
+		From interface mixin DestroyableModel
+	**/
+	function destroy():Void;
 	function measureInputUsage(input:String, ?options:SummarizerSummarizeOptions = {  }):js.lib.Promise<Float>;
 	function summarize(input:String, ?options:SummarizerSummarizeOptions = {  }):js.lib.Promise<String>;
 	function summarizeStreaming(input:String, ?options:SummarizerSummarizeOptions = {  }):js.streams.ReadableStream;

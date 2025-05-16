@@ -41,4 +41,24 @@ extern class SVGFEConvolveMatrixElement extends js.svg.SVGElement {
 	var kernelUnitLengthX(default, null) : js.svg.SVGAnimatedNumber;
 	var kernelUnitLengthY(default, null) : js.svg.SVGAnimatedNumber;
 	var preserveAlpha(default, null) : js.svg.SVGAnimatedBoolean;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var x(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var y(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var width(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var height(default, null) : js.svg.SVGAnimatedLength;
+	/**
+		From interface mixin SVGFilterPrimitiveStandardAttributes
+	**/
+	var result(default, null) : js.svg.SVGAnimatedString;
 }

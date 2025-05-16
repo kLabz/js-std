@@ -28,4 +28,8 @@ extern class SVGStyleElement extends SVGElement {
 	var type : String;
 	var media : String;
 	var title : String;
+	/**
+		From interface mixin LinkStyle
+	**/
+	var sheet(default, null) : Null<js.cssom.CSSStyleSheet>;
 }

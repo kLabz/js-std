@@ -25,5 +25,57 @@
 package js.webgpu;
 
 extern class GPURenderBundleEncoder {
+	/**
+		From interface mixin GPUObjectBase
+	**/
+	var label : String;
+	/**
+		From interface mixin GPURenderCommandsMixin
+	**/
+	function draw(vertexCount:GPUSize32, ?instanceCount:GPUSize32 = 1, ?firstVertex:GPUSize32 = 0, ?firstInstance:GPUSize32 = 0):Void;
+	/**
+		From interface mixin GPURenderCommandsMixin
+	**/
+	function drawIndexed(indexCount:GPUSize32, ?instanceCount:GPUSize32 = 1, ?firstIndex:GPUSize32 = 0, ?baseVertex:GPUSignedOffset32 = 0, ?firstInstance:GPUSize32 = 0):Void;
+	/**
+		From interface mixin GPURenderCommandsMixin
+	**/
+	function drawIndexedIndirect(indirectBuffer:GPUBuffer, indirectOffset:GPUSize64):Void;
+	/**
+		From interface mixin GPURenderCommandsMixin
+	**/
+	function drawIndirect(indirectBuffer:GPUBuffer, indirectOffset:GPUSize64):Void;
 	function finish(?descriptor:GPURenderBundleDescriptor = {  }):GPURenderBundle;
+	/**
+		From interface mixin GPUDebugCommandsMixin
+	**/
+	function insertDebugMarker(markerLabel:String):Void;
+	/**
+		From interface mixin GPUDebugCommandsMixin
+	**/
+	function popDebugGroup():Void;
+	/**
+		From interface mixin GPUDebugCommandsMixin
+	**/
+	function pushDebugGroup(groupLabel:String):Void;
+	/**
+		From interface mixin GPUBindingCommandsMixin
+	**/
+	overload function setBindGroup(index:GPUIndex32, bindGroup:Null<GPUBindGroup>, ?dynamicOffsets:Array<GPUBufferDynamicOffset> = []):Void;
+	/**
+		From interface mixin GPUBindingCommandsMixin
+	**/
+	overload function setBindGroup(index:GPUIndex32, bindGroup:Null<GPUBindGroup>, dynamicOffsetsData:Uint32Array, dynamicOffsetsDataStart:GPUSize64, dynamicOffsetsDataLength:GPUSize32):Void;
+	/**
+		From interface mixin GPURenderCommandsMixin
+	**/
+	function setIndexBuffer(buffer:GPUBuffer, indexFormat:GPUIndexFormat, ?offset:GPUSize64 = 0, ?size:GPUSize64):Void;
+	/**
+		From interface mixin GPURenderCommandsMixin
+	**/
+	function setPipeline(pipeline:GPURenderPipeline):Void;
+	/**
+		From interface mixin GPURenderCommandsMixin
+	**/
+	function setVertexBuffer(slot:GPUIndex32, buffer:Null<GPUBuffer>, ?offset:GPUSize64 = 0, ?size:GPUSize64):Void;
 }

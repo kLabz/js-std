@@ -25,5 +25,9 @@
 package js.webgpu;
 
 extern class GPUShaderModule {
+	/**
+		From interface mixin GPUObjectBase
+	**/
+	var label : String;
 	function getCompilationInfo():js.lib.Promise<GPUCompilationInfo>;
 }

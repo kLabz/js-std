@@ -33,9 +33,41 @@ extern class ShadowRoot extends DocumentFragment {
 	var host(default, null) : Element;
 	var onslotchange : js.html.EventHandler;
 	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	var styleSheets(default, null) : js.cssom.StyleSheetList;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	var adoptedStyleSheets : Array<js.cssom.CSSStyleSheet>;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	var customElementRegistry(default, null) : Null<js.html.CustomElementRegistry>;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	var fullscreenElement(default, null) : Null<Element>;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	var activeElement(default, null) : Null<Element>;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	var pictureInPictureElement(default, null) : Null<Element>;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	var pointerLockElement(default, null) : Null<Element>;
+	/**
 		From partial interface in html.idl
 	**/
 	var innerHTML : haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>;
+	/**
+		From interface mixin DocumentOrShadowRoot
+	**/
+	function getAnimations():Array<js.webAnimations.Animation>;
 	/**
 		From partial interface in html.idl
 	**/

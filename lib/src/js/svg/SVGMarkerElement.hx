@@ -39,6 +39,14 @@ extern class SVGMarkerElement extends SVGElement {
 	var orientType(default, null) : SVGAnimatedEnumeration;
 	var orientAngle(default, null) : SVGAnimatedAngle;
 	var orient : String;
+	/**
+		From interface mixin SVGFitToViewBox
+	**/
+	var viewBox(default, null) : SVGAnimatedRect;
+	/**
+		From interface mixin SVGFitToViewBox
+	**/
+	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 	function setOrientToAngle(angle:SVGAngle):Void;
 	function setOrientToAuto():Void;
 }

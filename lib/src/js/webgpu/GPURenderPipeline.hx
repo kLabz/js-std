@@ -25,5 +25,12 @@
 package js.webgpu;
 
 extern class GPURenderPipeline {
-
+	/**
+		From interface mixin GPUObjectBase
+	**/
+	var label : String;
+	/**
+		From interface mixin GPUPipelineBase
+	**/
+	function getBindGroupLayout(index:Int):GPUBindGroupLayout;
 }

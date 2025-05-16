@@ -33,6 +33,10 @@ extern class GPUTexture {
 	var dimension(default, null) : GPUTextureDimension;
 	var format(default, null) : GPUTextureFormat;
 	var usage(default, null) : GPUFlagsConstant;
+	/**
+		From interface mixin GPUObjectBase
+	**/
+	var label : String;
 	function createView(?descriptor:GPUTextureViewDescriptor = {  }):GPUTextureView;
 	function destroy():Void;
 }

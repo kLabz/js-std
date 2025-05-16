@@ -26,6 +26,98 @@ package js.html;
 
 extern class WorkerNavigator {
 	/**
+		From interface mixin NavigatorDeviceMemory
+	**/
+	var deviceMemory(default, null) : Float;
+	/**
+		From interface mixin GlobalPrivacyControl
+	**/
+	var globalPrivacyControl(default, null) : Bool;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var appCodeName(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var appName(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var appVersion(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var platform(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var product(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var productSub(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var userAgent(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var vendor(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var vendorSub(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var oscpu(default, null) : String;
+	/**
+		From interface mixin NavigatorLanguage
+	**/
+	var language(default, null) : String;
+	/**
+		From interface mixin NavigatorLanguage
+	**/
+	var languages(default, null) : Array<String>;
+	/**
+		From interface mixin NavigatorOnLine
+	**/
+	var onLine(default, null) : Bool;
+	/**
+		From interface mixin NavigatorConcurrentHardware
+	**/
+	var hardwareConcurrency(default, null) : Float;
+	/**
+		From interface mixin NavigatorNetworkInformation
+	**/
+	var connection(default, null) : js.netinfo.NetworkInformation;
+	/**
+		From interface mixin NavigatorStorageBuckets
+	**/
+	var storageBuckets(default, null) : js.storageBuckets.StorageBucketManager;
+	/**
+		From interface mixin NavigatorStorage
+	**/
+	var storage(default, null) : js.storage.StorageManager;
+	/**
+		From interface mixin NavigatorUA
+	**/
+	var userAgentData(default, null) : js.uaClientHints.NavigatorUAData;
+	/**
+		From interface mixin NavigatorLocks
+	**/
+	var locks(default, null) : js.webLocks.LockManager;
+	/**
+		From interface mixin NavigatorGPU
+	**/
+	var gpu(default, null) : js.webgpu.GPU;
+	/**
+		From interface mixin NavigatorML
+	**/
+	var ml(default, null) : js.webnn.ML;
+	/**
 		From partial interface in media-capabilities.idl
 	**/
 	var mediaCapabilities(default, null) : js.mediaCapabilities.MediaCapabilities;
@@ -34,13 +126,13 @@ extern class WorkerNavigator {
 	**/
 	var permissions(default, null) : js.permissions.Permissions;
 	/**
-		From partial interface in service-workers.idl
-	**/
-	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
-	/**
 		From partial interface in serial.idl
 	**/
 	var serial(default, null) : js.serial.Serial;
+	/**
+		From partial interface in service-workers.idl
+	**/
+	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
 	/**
 		From partial interface in webhid.idl
 	**/
@@ -49,4 +141,16 @@ extern class WorkerNavigator {
 		From partial interface in webusb.idl
 	**/
 	var usb(default, null) : js.webusb.USB;
+	/**
+		From interface mixin NavigatorBadge
+	**/
+	function clearAppBadge():js.lib.Promise<Void>;
+	/**
+		From interface mixin NavigatorBadge
+	**/
+	function setAppBadge(?contents:Float):js.lib.Promise<Void>;
+	/**
+		From interface mixin NavigatorID
+	**/
+	function taintEnabled():Bool;
 }

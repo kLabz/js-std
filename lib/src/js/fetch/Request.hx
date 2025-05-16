@@ -42,9 +42,41 @@ extern class Request {
 	var signal(default, null) : js.dom.AbortSignal;
 	var duplex(default, null) : RequestDuplex;
 	/**
+		From interface mixin Body
+	**/
+	var body(default, null) : Null<js.streams.ReadableStream>;
+	/**
+		From interface mixin Body
+	**/
+	var bodyUsed(default, null) : Bool;
+	/**
 		From partial interface in private-network-access.idl
 	**/
 	var targetAddressSpace(default, null) : js.privateNetworkAccess.IPAddressSpace;
 	function new(input:RequestInfo, ?init:RequestInit = {  }):Void;
+	/**
+		From interface mixin Body
+	**/
+	function arrayBuffer():js.lib.Promise<ArrayBuffer>;
+	/**
+		From interface mixin Body
+	**/
+	function blob():js.lib.Promise<js.fileapi.Blob>;
+	/**
+		From interface mixin Body
+	**/
+	function bytes():js.lib.Promise<Uint8Array>;
 	function clone():Request;
+	/**
+		From interface mixin Body
+	**/
+	function formData():js.lib.Promise<js.xhr.FormData>;
+	/**
+		From interface mixin Body
+	**/
+	function json():js.lib.Promise<Any>;
+	/**
+		From interface mixin Body
+	**/
+	function text():js.lib.Promise<String>;
 }

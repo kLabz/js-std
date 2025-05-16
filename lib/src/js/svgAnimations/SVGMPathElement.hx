@@ -25,5 +25,8 @@
 package js.svgAnimations;
 
 extern class SVGMPathElement extends js.svg.SVGElement {
-
+	/**
+		From interface mixin SVGURIReference
+	**/
+	var href(default, null) : js.svg.SVGAnimatedString;
 }

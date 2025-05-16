@@ -25,6 +25,10 @@
 package js.webgpu;
 
 extern class GPUCommandEncoder {
+	/**
+		From interface mixin GPUObjectBase
+	**/
+	var label : String;
 	function beginComputePass(?descriptor:GPUComputePassDescriptor = {  }):GPUComputePassEncoder;
 	function beginRenderPass(descriptor:GPURenderPassDescriptor):GPURenderPassEncoder;
 	function clearBuffer(buffer:GPUBuffer, ?offset:GPUSize64 = 0, ?size:GPUSize64):Void;
@@ -34,5 +38,17 @@ extern class GPUCommandEncoder {
 	function copyTextureToBuffer(source:GPUTexelCopyTextureInfo, destination:GPUTexelCopyBufferInfo, copySize:GPUExtent3D):Void;
 	function copyTextureToTexture(source:GPUTexelCopyTextureInfo, destination:GPUTexelCopyTextureInfo, copySize:GPUExtent3D):Void;
 	function finish(?descriptor:GPUCommandBufferDescriptor = {  }):GPUCommandBuffer;
+	/**
+		From interface mixin GPUDebugCommandsMixin
+	**/
+	function insertDebugMarker(markerLabel:String):Void;
+	/**
+		From interface mixin GPUDebugCommandsMixin
+	**/
+	function popDebugGroup():Void;
+	/**
+		From interface mixin GPUDebugCommandsMixin
+	**/
+	function pushDebugGroup(groupLabel:String):Void;
 	function resolveQuerySet(querySet:GPUQuerySet, firstQuery:GPUSize32, queryCount:GPUSize32, destination:GPUBuffer, destinationOffset:GPUSize64):Void;
 }

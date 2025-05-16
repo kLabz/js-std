@@ -25,5 +25,17 @@
 package js.encoding;
 
 extern class TextEncoderStream {
+	/**
+		From interface mixin TextEncoderCommon
+	**/
+	var encoding(default, null) : String;
+	/**
+		From interface mixin GenericTransformStream
+	**/
+	var readable(default, null) : js.streams.ReadableStream;
+	/**
+		From interface mixin GenericTransformStream
+	**/
+	var writable(default, null) : js.streams.WritableStream;
 	function new():Void;
 }

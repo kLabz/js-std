@@ -41,6 +41,14 @@ extern class HTMLButtonElement extends HTMLElement {
 	var validity(default, null) : ValidityState;
 	var validationMessage(default, null) : String;
 	var labels(default, null) : js.dom.NodeList;
+	/**
+		From interface mixin PopoverInvokerElement
+	**/
+	var popoverTargetElement : Null<js.dom.Element>;
+	/**
+		From interface mixin PopoverInvokerElement
+	**/
+	var popoverTargetAction : String;
 	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;

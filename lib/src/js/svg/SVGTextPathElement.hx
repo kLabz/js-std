@@ -34,4 +34,8 @@ extern class SVGTextPathElement extends SVGTextContentElement {
 	var startOffset(default, null) : SVGAnimatedLength;
 	var method(default, null) : SVGAnimatedEnumeration;
 	var spacing(default, null) : SVGAnimatedEnumeration;
+	/**
+		From interface mixin SVGURIReference
+	**/
+	var href(default, null) : SVGAnimatedString;
 }

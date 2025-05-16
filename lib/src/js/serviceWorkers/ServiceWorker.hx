@@ -28,6 +28,10 @@ extern class ServiceWorker extends js.dom.EventTarget {
 	var scriptURL(default, null) : String;
 	var state(default, null) : ServiceWorkerState;
 	var onstatechange : js.html.EventHandler;
+	/**
+		From interface mixin AbstractWorker
+	**/
+	var onerror : js.html.EventHandler;
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
 	overload function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions = {  }):Void;
 }

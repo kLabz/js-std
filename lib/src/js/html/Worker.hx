@@ -25,6 +25,18 @@
 package js.html;
 
 extern class Worker extends js.dom.EventTarget {
+	/**
+		From interface mixin AbstractWorker
+	**/
+	var onerror : EventHandler;
+	/**
+		From interface mixin MessageEventTarget
+	**/
+	var onmessage : EventHandler;
+	/**
+		From interface mixin MessageEventTarget
+	**/
+	var onmessageerror : EventHandler;
 	function new(scriptURL:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>, ?options:WorkerOptions = {  }):Void;
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
 	overload function postMessage(message:Any, ?options:StructuredSerializeOptions = {  }):Void;

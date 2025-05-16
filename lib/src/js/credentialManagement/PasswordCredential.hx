@@ -26,6 +26,14 @@ package js.credentialManagement;
 
 extern class PasswordCredential extends Credential {
 	var password(default, null) : String;
+	/**
+		From interface mixin CredentialUserData
+	**/
+	var name(default, null) : String;
+	/**
+		From interface mixin CredentialUserData
+	**/
+	var iconURL(default, null) : String;
 	overload function new(data:PasswordCredentialData):Void;
 	overload function new(form:js.html.HTMLFormElement):Void;
 }

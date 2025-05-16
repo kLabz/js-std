@@ -27,5 +27,13 @@ package js.credentialManagement;
 extern class FederatedCredential extends Credential {
 	var provider(default, null) : String;
 	var protocol(default, null) : Null<String>;
+	/**
+		From interface mixin CredentialUserData
+	**/
+	var name(default, null) : String;
+	/**
+		From interface mixin CredentialUserData
+	**/
+	var iconURL(default, null) : String;
 	function new(data:FederatedCredentialInit):Void;
 }

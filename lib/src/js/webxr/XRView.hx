@@ -28,6 +28,14 @@ extern class XRView {
 	var eye(default, null) : XREye;
 	var recommendedViewportScale(default, null) : Null<Float>;
 	/**
+		From interface mixin XRViewGeometry
+	**/
+	var projectionMatrix(default, null) : Float32Array;
+	/**
+		From interface mixin XRViewGeometry
+	**/
+	var transform(default, null) : XRRigidTransform;
+	/**
 		From partial interface in raw-camera-access.idl
 	**/
 	var camera(default, null) : Null<js.rawCameraAccess.XRCamera>;

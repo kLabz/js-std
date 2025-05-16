@@ -34,5 +34,13 @@ extern class PerformanceLongAnimationFrameTiming extends js.performanceTimeline.
 	var blockingDuration(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var firstUIEventTimestamp(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var scripts(default, null) : Array<PerformanceScriptTiming>;
+	/**
+		From interface mixin PaintTimingMixin
+	**/
+	var paintTime(default, null) : js.hrTime.DOMHighResTimeStamp;
+	/**
+		From interface mixin PaintTimingMixin
+	**/
+	var presentationTime(default, null) : Null<js.hrTime.DOMHighResTimeStamp>;
 	function toJSON():{ };
 }

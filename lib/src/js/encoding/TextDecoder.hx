@@ -25,6 +25,18 @@
 package js.encoding;
 
 extern class TextDecoder {
+	/**
+		From interface mixin TextDecoderCommon
+	**/
+	var encoding(default, null) : String;
+	/**
+		From interface mixin TextDecoderCommon
+	**/
+	var fatal(default, null) : Bool;
+	/**
+		From interface mixin TextDecoderCommon
+	**/
+	var ignoreBOM(default, null) : Bool;
 	function new(?label:String = "utf-8", ?options:TextDecoderOptions = {  }):Void;
 	function decode(?input:js.webidl.AllowSharedBufferSource, ?options:TextDecodeOptions = {  }):String;
 }

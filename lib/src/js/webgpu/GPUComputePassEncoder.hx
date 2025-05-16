@@ -25,8 +25,32 @@
 package js.webgpu;
 
 extern class GPUComputePassEncoder {
+	/**
+		From interface mixin GPUObjectBase
+	**/
+	var label : String;
 	function dispatchWorkgroups(workgroupCountX:GPUSize32, ?workgroupCountY:GPUSize32 = 1, ?workgroupCountZ:GPUSize32 = 1):Void;
 	function dispatchWorkgroupsIndirect(indirectBuffer:GPUBuffer, indirectOffset:GPUSize64):Void;
 	function end():Void;
+	/**
+		From interface mixin GPUDebugCommandsMixin
+	**/
+	function insertDebugMarker(markerLabel:String):Void;
+	/**
+		From interface mixin GPUDebugCommandsMixin
+	**/
+	function popDebugGroup():Void;
+	/**
+		From interface mixin GPUDebugCommandsMixin
+	**/
+	function pushDebugGroup(groupLabel:String):Void;
+	/**
+		From interface mixin GPUBindingCommandsMixin
+	**/
+	overload function setBindGroup(index:GPUIndex32, bindGroup:Null<GPUBindGroup>, ?dynamicOffsets:Array<GPUBufferDynamicOffset> = []):Void;
+	/**
+		From interface mixin GPUBindingCommandsMixin
+	**/
+	overload function setBindGroup(index:GPUIndex32, bindGroup:Null<GPUBindGroup>, dynamicOffsetsData:Uint32Array, dynamicOffsetsDataStart:GPUSize64, dynamicOffsetsDataLength:GPUSize32):Void;
 	function setPipeline(pipeline:GPUComputePipeline):Void;
 }

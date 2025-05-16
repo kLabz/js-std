@@ -29,4 +29,12 @@ extern class XRDepthInformation {
 	var height(default, null) : Int;
 	var normDepthBufferFromNormView(default, null) : js.webxr.XRRigidTransform;
 	var rawValueToMeters(default, null) : Float;
+	/**
+		From interface mixin XRViewGeometry
+	**/
+	var projectionMatrix(default, null) : Float32Array;
+	/**
+		From interface mixin XRViewGeometry
+	**/
+	var transform(default, null) : js.webxr.XRRigidTransform;
 }

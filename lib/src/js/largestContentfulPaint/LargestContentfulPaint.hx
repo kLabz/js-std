@@ -30,5 +30,13 @@ extern class LargestContentfulPaint extends js.performanceTimeline.PerformanceEn
 	var id(default, null) : String;
 	var url(default, null) : String;
 	var element(default, null) : Null<js.dom.Element>;
+	/**
+		From interface mixin PaintTimingMixin
+	**/
+	var paintTime(default, null) : js.hrTime.DOMHighResTimeStamp;
+	/**
+		From interface mixin PaintTimingMixin
+	**/
+	var presentationTime(default, null) : Null<js.hrTime.DOMHighResTimeStamp>;
 	function toJSON():{ };
 }

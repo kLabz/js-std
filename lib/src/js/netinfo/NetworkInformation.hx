@@ -31,4 +31,8 @@ extern class NetworkInformation extends js.dom.EventTarget {
 	var downlink(default, null) : Megabit;
 	var rtt(default, null) : Millisecond;
 	var onchange : js.html.EventHandler;
+	/**
+		From interface mixin NetworkInformationSaveData
+	**/
+	var saveData(default, null) : Bool;
 }

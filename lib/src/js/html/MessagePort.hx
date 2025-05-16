@@ -26,6 +26,14 @@ package js.html;
 
 extern class MessagePort extends js.dom.EventTarget {
 	var onclose : EventHandler;
+	/**
+		From interface mixin MessageEventTarget
+	**/
+	var onmessage : EventHandler;
+	/**
+		From interface mixin MessageEventTarget
+	**/
+	var onmessageerror : EventHandler;
 	function close():Void;
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
 	overload function postMessage(message:Any, ?options:StructuredSerializeOptions = {  }):Void;

@@ -32,6 +32,214 @@ extern class ElementInternals {
 	var validationMessage(default, null) : String;
 	var labels(default, null) : js.dom.NodeList;
 	var states(default, null) : CustomStateSet;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var role : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaActiveDescendantElement : Null<js.dom.Element>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaAtomic : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaAutoComplete : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaBrailleLabel : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaBrailleRoleDescription : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaBusy : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaChecked : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaColCount : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaColIndex : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaColIndexText : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaColSpan : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaControlsElements : Null<Array<js.dom.Element>>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaCurrent : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaDescribedByElements : Null<Array<js.dom.Element>>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaDescription : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaDetailsElements : Null<Array<js.dom.Element>>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaDisabled : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaErrorMessageElements : Null<Array<js.dom.Element>>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaExpanded : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaFlowToElements : Null<Array<js.dom.Element>>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaHasPopup : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaHidden : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaInvalid : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaKeyShortcuts : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaLabel : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaLabelledByElements : Null<Array<js.dom.Element>>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaLevel : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaLive : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaModal : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaMultiLine : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaMultiSelectable : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaOrientation : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaOwnsElements : Null<Array<js.dom.Element>>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaPlaceholder : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaPosInSet : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaPressed : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaReadOnly : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaRelevant : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaRequired : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaRoleDescription : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaRowCount : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaRowIndex : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaRowIndexText : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaRowSpan : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaSelected : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaSetSize : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaSort : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaValueMax : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaValueMin : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaValueNow : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaValueText : Null<String>;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
 	function setFormValue(value:Null<haxe.extern.EitherType<js.fileapi.File, haxe.extern.EitherType<String, js.xhr.FormData>>>, ?state:Null<haxe.extern.EitherType<js.fileapi.File, haxe.extern.EitherType<String, js.xhr.FormData>>>):Void;

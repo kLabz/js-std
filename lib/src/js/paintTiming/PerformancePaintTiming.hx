@@ -25,5 +25,12 @@
 package js.paintTiming;
 
 extern class PerformancePaintTiming extends js.performanceTimeline.PerformanceEntry {
-
+	/**
+		From interface mixin PaintTimingMixin
+	**/
+	var paintTime(default, null) : js.hrTime.DOMHighResTimeStamp;
+	/**
+		From interface mixin PaintTimingMixin
+	**/
+	var presentationTime(default, null) : Null<js.hrTime.DOMHighResTimeStamp>;
 }

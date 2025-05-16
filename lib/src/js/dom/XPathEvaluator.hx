@@ -26,4 +26,16 @@ package js.dom;
 
 extern class XPathEvaluator {
 	function new():Void;
+	/**
+		From interface mixin XPathEvaluatorBase
+	**/
+	function createExpression(expression:String, ?resolver:Null<XPathNSResolver> = null):XPathExpression;
+	/**
+		From interface mixin XPathEvaluatorBase
+	**/
+	function createNSResolver(nodeResolver:Node):Node;
+	/**
+		From interface mixin XPathEvaluatorBase
+	**/
+	function evaluate(expression:String, contextNode:Node, ?resolver:Null<XPathNSResolver> = null, ?type:Int = 0, ?result:Null<XPathResult> = null):XPathResult;
 }

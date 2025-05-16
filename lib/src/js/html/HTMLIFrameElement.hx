@@ -38,6 +38,10 @@ extern class HTMLIFrameElement extends HTMLElement {
 	var contentDocument(default, null) : Null<js.dom.Document>;
 	var contentWindow(default, null) : Null<WindowProxy>;
 	/**
+		From interface mixin HTMLSharedStorageWritableElementUtils
+	**/
+	var sharedStorageWritable : Bool;
+	/**
 		From partial interface in anonymous-iframe.idl
 	**/
 	var credentialless : Bool;
@@ -74,13 +78,13 @@ extern class HTMLIFrameElement extends HTMLElement {
 	**/
 	var permissionsPolicy(default, null) : js.permissionsPolicy.PermissionsPolicy;
 	/**
-		From partial interface in turtledove.idl
-	**/
-	var adAuctionHeaders : Bool;
-	/**
 		From partial interface in trust-token-api.idl
 	**/
 	var privateToken : String;
+	/**
+		From partial interface in turtledove.idl
+	**/
+	var adAuctionHeaders : Bool;
 	function new():Void;
 	function getSVGDocument():Null<js.dom.Document>;
 }

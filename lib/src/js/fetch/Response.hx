@@ -32,9 +32,41 @@ extern class Response {
 	var ok(default, null) : Bool;
 	var statusText(default, null) : String;
 	var headers(default, null) : Headers;
+	/**
+		From interface mixin Body
+	**/
+	var body(default, null) : Null<js.streams.ReadableStream>;
+	/**
+		From interface mixin Body
+	**/
+	var bodyUsed(default, null) : Bool;
 	function new(?body:Null<BodyInit> = null, ?init:ResponseInit = {  }):Void;
+	/**
+		From interface mixin Body
+	**/
+	function arrayBuffer():js.lib.Promise<ArrayBuffer>;
+	/**
+		From interface mixin Body
+	**/
+	function blob():js.lib.Promise<js.fileapi.Blob>;
+	/**
+		From interface mixin Body
+	**/
+	function bytes():js.lib.Promise<Uint8Array>;
 	function clone():Response;
 	function error():Response;
-	function json(data:Any, ?init:ResponseInit = {  }):Response;
+	/**
+		From interface mixin Body
+	**/
+	function formData():js.lib.Promise<js.xhr.FormData>;
+	overload function json(data:Any, ?init:ResponseInit = {  }):Response;
+	/**
+		From interface mixin Body
+	**/
+	overload function json():js.lib.Promise<Any>;
 	function redirect(url:String, ?status:Int = 302):Response;
+	/**
+		From interface mixin Body
+	**/
+	function text():js.lib.Promise<String>;
 }

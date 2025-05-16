@@ -30,6 +30,10 @@ extern class GPUDevice extends js.dom.EventTarget {
 	var adapterInfo(default, null) : GPUAdapterInfo;
 	var queue(default, null) : GPUQueue;
 	/**
+		From interface mixin GPUObjectBase
+	**/
+	var label : String;
+	/**
 		From partial interface in webgpu.idl
 	**/
 	var lost(default, null) : js.lib.Promise<GPUDeviceLostInfo>;

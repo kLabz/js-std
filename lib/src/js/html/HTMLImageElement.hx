@@ -43,6 +43,14 @@ extern class HTMLImageElement extends HTMLElement {
 	var loading : String;
 	var fetchPriority : String;
 	/**
+		From interface mixin HTMLAttributionSrcElementUtils
+	**/
+	var attributionSrc : String;
+	/**
+		From interface mixin HTMLSharedStorageWritableElementUtils
+	**/
+	var sharedStorageWritable : Bool;
+	/**
 		From partial interface in cssom-view.idl
 	**/
 	var x(default, null) : Int;

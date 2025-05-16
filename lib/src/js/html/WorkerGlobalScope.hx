@@ -34,5 +34,93 @@ extern class WorkerGlobalScope extends js.dom.EventTarget {
 	var ononline : EventHandler;
 	var onrejectionhandled : EventHandler;
 	var onunhandledrejection : EventHandler;
+	/**
+		From interface mixin FontFaceSource
+	**/
+	var fonts(default, null) : js.cssFontLoading.FontFaceSet;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var indexedDB(default, null) : js.indexeddb.IDBFactory;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var performance(default, null) : js.hrTime.Performance;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var origin(default, null) : String;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var isSecureContext(default, null) : Bool;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var crossOriginIsolated(default, null) : Bool;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var scheduler(default, null) : js.schedulingApis.Scheduler;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var caches(default, null) : js.serviceWorkers.CacheStorage;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var trustedTypes(default, null) : js.trustedTypes.TrustedTypePolicyFactory;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	var crypto(default, null) : js.webcrypto.Crypto;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function atob(data:String):String;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function btoa(data:String):String;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function clearInterval(?id:Int = 0):Void;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function clearTimeout(?id:Int = 0):Void;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	overload function createImageBitmap(image:ImageBitmapSource, ?options:ImageBitmapOptions = {  }):js.lib.Promise<ImageBitmap>;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	overload function createImageBitmap(image:ImageBitmapSource, sx:Int, sy:Int, sw:Int, sh:Int, ?options:ImageBitmapOptions = {  }):js.lib.Promise<ImageBitmap>;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function fetch(input:js.fetch.RequestInfo, ?init:js.fetch.RequestInit = {  }):js.lib.Promise<js.fetch.Response>;
 	function importScripts(urls:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>):Void;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function queueMicrotask(callback:js.webidl.VoidFunction):Void;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function reportError(e:Any):Void;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:Any):Int;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:Any):Int;
+	/**
+		From interface mixin WindowOrWorkerGlobalScope
+	**/
+	function structuredClone(value:Any, ?options:StructuredSerializeOptions = {  }):Any;
 }

@@ -28,4 +28,20 @@ extern class DocumentType extends Node {
 	var name(default, null) : String;
 	var publicId(default, null) : String;
 	var systemId(default, null) : String;
+	/**
+		From interface mixin ChildNode
+	**/
+	function after(nodes:haxe.extern.EitherType<Node, String>):Void;
+	/**
+		From interface mixin ChildNode
+	**/
+	function before(nodes:haxe.extern.EitherType<Node, String>):Void;
+	/**
+		From interface mixin ChildNode
+	**/
+	function remove():Void;
+	/**
+		From interface mixin ChildNode
+	**/
+	function replaceWith(nodes:haxe.extern.EitherType<Node, String>):Void;
 }

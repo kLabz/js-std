@@ -37,6 +37,10 @@ extern class HTMLScriptElement extends HTMLElement {
 	var blocking(default, null) : js.dom.DOMTokenList;
 	var fetchPriority : String;
 	/**
+		From interface mixin HTMLAttributionSrcElementUtils
+	**/
+	var attributionSrc : String;
+	/**
 		From partial interface in html.idl
 	**/
 	var charset : String;

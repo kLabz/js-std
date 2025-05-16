@@ -25,5 +25,13 @@
 package js.compression;
 
 extern class CompressionStream {
+	/**
+		From interface mixin GenericTransformStream
+	**/
+	var readable(default, null) : js.streams.ReadableStream;
+	/**
+		From interface mixin GenericTransformStream
+	**/
+	var writable(default, null) : js.streams.WritableStream;
 	function new(format:CompressionFormat):Void;
 }

@@ -25,5 +25,49 @@
 package js.dom;
 
 extern class DocumentFragment extends Node {
+	/**
+		From interface mixin ParentNode
+	**/
+	var children(default, null) : HTMLCollection;
+	/**
+		From interface mixin ParentNode
+	**/
+	var firstElementChild(default, null) : Null<Element>;
+	/**
+		From interface mixin ParentNode
+	**/
+	var lastElementChild(default, null) : Null<Element>;
+	/**
+		From interface mixin ParentNode
+	**/
+	var childElementCount(default, null) : Int;
 	function new():Void;
+	/**
+		From interface mixin ParentNode
+	**/
+	function append(nodes:):Void;
+	/**
+		From interface mixin NonElementParentNode
+	**/
+	function getElementById(elementId:String):Null<Element>;
+	/**
+		From interface mixin ParentNode
+	**/
+	function moveBefore(node:Node, child:Null<Node>):Void;
+	/**
+		From interface mixin ParentNode
+	**/
+	function prepend(nodes:):Void;
+	/**
+		From interface mixin ParentNode
+	**/
+	function querySelector(selectors:String):Null<Element>;
+	/**
+		From interface mixin ParentNode
+	**/
+	function querySelectorAll(selectors:String):NodeList;
+	/**
+		From interface mixin ParentNode
+	**/
+	function replaceChildren(nodes:):Void;
 }

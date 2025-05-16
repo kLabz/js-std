@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute href: special=stringifier readonly=false
+**/
 extern class HTMLAnchorElement extends HTMLElement {
 	var target : String;
 	var download : String;
@@ -34,6 +37,50 @@ extern class HTMLAnchorElement extends HTMLElement {
 	var type : String;
 	var text : String;
 	var referrerPolicy : String;
+	/**
+		From interface mixin HTMLAttributionSrcElementUtils
+	**/
+	var attributionSrc : String;
+	/**
+		From interface mixin HTMLHyperlinkElementUtils
+	**/
+	var origin(default, null) : String;
+	/**
+		From interface mixin HTMLHyperlinkElementUtils
+	**/
+	var protocol : String;
+	/**
+		From interface mixin HTMLHyperlinkElementUtils
+	**/
+	var username : String;
+	/**
+		From interface mixin HTMLHyperlinkElementUtils
+	**/
+	var password : String;
+	/**
+		From interface mixin HTMLHyperlinkElementUtils
+	**/
+	var host : String;
+	/**
+		From interface mixin HTMLHyperlinkElementUtils
+	**/
+	var hostname : String;
+	/**
+		From interface mixin HTMLHyperlinkElementUtils
+	**/
+	var port : String;
+	/**
+		From interface mixin HTMLHyperlinkElementUtils
+	**/
+	var pathname : String;
+	/**
+		From interface mixin HTMLHyperlinkElementUtils
+	**/
+	var search : String;
+	/**
+		From interface mixin HTMLHyperlinkElementUtils
+	**/
+	var hash : String;
 	/**
 		From partial interface in html.idl
 	**/

@@ -35,6 +35,10 @@ extern class SVGAElement extends SVGGraphicsElement {
 	var text : String;
 	var referrerPolicy : String;
 	/**
+		From interface mixin SVGURIReference
+	**/
+	var href(default, null) : SVGAnimatedString;
+	/**
 		From partial interface in SVG.idl
 	**/
 	var origin(default, null) : String;

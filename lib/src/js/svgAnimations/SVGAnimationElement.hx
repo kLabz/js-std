@@ -29,6 +29,14 @@ extern class SVGAnimationElement extends js.svg.SVGElement {
 	var onbegin : js.html.EventHandler;
 	var onend : js.html.EventHandler;
 	var onrepeat : js.html.EventHandler;
+	/**
+		From interface mixin SVGTests
+	**/
+	var requiredExtensions(default, null) : js.svg.SVGStringList;
+	/**
+		From interface mixin SVGTests
+	**/
+	var systemLanguage(default, null) : js.svg.SVGStringList;
 	function beginElement():Void;
 	function beginElementAt(offset:Float):Void;
 	function endElement():Void;

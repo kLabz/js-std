@@ -25,5 +25,8 @@
 package js.webgpu;
 
 extern class GPUExternalTexture {
-
+	/**
+		From interface mixin GPUObjectBase
+	**/
+	var label : String;
 }

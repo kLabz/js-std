@@ -25,5 +25,12 @@
 package js.svg;
 
 extern class SVGSymbolElement extends SVGGraphicsElement {
-
+	/**
+		From interface mixin SVGFitToViewBox
+	**/
+	var viewBox(default, null) : SVGAnimatedRect;
+	/**
+		From interface mixin SVGFitToViewBox
+	**/
+	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 }

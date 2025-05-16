@@ -37,6 +37,246 @@ extern class Element extends Node {
 	var shadowRoot(default, null) : Null<ShadowRoot>;
 	var customElementRegistry(default, null) : Null<js.html.CustomElementRegistry>;
 	/**
+		From interface mixin Region
+	**/
+	var regionOverset(default, null) : CSSOMString;
+	/**
+		From interface mixin ParentNode
+	**/
+	var children(default, null) : HTMLCollection;
+	/**
+		From interface mixin ParentNode
+	**/
+	var firstElementChild(default, null) : Null<Element>;
+	/**
+		From interface mixin ParentNode
+	**/
+	var lastElementChild(default, null) : Null<Element>;
+	/**
+		From interface mixin ParentNode
+	**/
+	var childElementCount(default, null) : Int;
+	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	var previousElementSibling(default, null) : Null<Element>;
+	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	var nextElementSibling(default, null) : Null<Element>;
+	/**
+		From interface mixin Slottable
+	**/
+	var assignedSlot(default, null) : Null<js.html.HTMLSlotElement>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var role : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaActiveDescendantElement : Null<Element>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaAtomic : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaAutoComplete : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaBrailleLabel : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaBrailleRoleDescription : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaBusy : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaChecked : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaColCount : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaColIndex : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaColIndexText : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaColSpan : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaControlsElements : Null<Array<Element>>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaCurrent : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaDescribedByElements : Null<Array<Element>>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaDescription : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaDetailsElements : Null<Array<Element>>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaDisabled : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaErrorMessageElements : Null<Array<Element>>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaExpanded : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaFlowToElements : Null<Array<Element>>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaHasPopup : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaHidden : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaInvalid : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaKeyShortcuts : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaLabel : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaLabelledByElements : Null<Array<Element>>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaLevel : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaLive : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaModal : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaMultiLine : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaMultiSelectable : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaOrientation : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaOwnsElements : Null<Array<Element>>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaPlaceholder : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaPosInSet : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaPressed : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaReadOnly : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaRelevant : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaRequired : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaRoleDescription : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaRowCount : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaRowIndex : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaRowIndexText : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaRowSpan : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaSelected : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaSetSize : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaSort : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaValueMax : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaValueMin : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaValueNow : Null<String>;
+	/**
+		From interface mixin ARIAMixin
+	**/
+	var ariaValueText : Null<String>;
+	/**
 		From partial interface in css-shadow-parts.idl
 	**/
 	var part(default, null) : DOMTokenList;
@@ -96,7 +336,23 @@ extern class Element extends Node {
 		From partial interface in html.idl
 	**/
 	var outerHTML : haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>;
+	/**
+		From interface mixin ChildNode
+	**/
+	function after(nodes:):Void;
+	/**
+		From interface mixin Animatable
+	**/
+	function animate(keyframes:Null<{ }>, ?options:haxe.extern.EitherType<Float, js.webAnimations.KeyframeAnimationOptions> = {  }):js.webAnimations.Animation;
+	/**
+		From interface mixin ParentNode
+	**/
+	function append(nodes:):Void;
 	function attachShadow(init:ShadowRootInit):ShadowRoot;
+	/**
+		From interface mixin ChildNode
+	**/
+	function before(nodes:):Void;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -107,9 +363,25 @@ extern class Element extends Node {
 	**/
 	function computedStyleMap():js.cssTypedOm.StylePropertyMapReadOnly;
 	/**
+		From interface mixin GeometryUtils
+	**/
+	function convertPointFromNode(point:js.geometry.DOMPointInit, from:js.cssomView.GeometryNode, ?options:js.cssomView.ConvertCoordinateOptions = {  }):js.geometry.DOMPoint;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function convertQuadFromNode(quad:js.geometry.DOMQuadInit, from:js.cssomView.GeometryNode, ?options:js.cssomView.ConvertCoordinateOptions = {  }):js.geometry.DOMQuad;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function convertRectFromNode(rect:js.geometry.DOMRectReadOnly, from:js.cssomView.GeometryNode, ?options:js.cssomView.ConvertCoordinateOptions = {  }):js.geometry.DOMQuad;
+	/**
 		From partial interface in css-nav.idl
 	**/
 	function focusableAreas(?option:js.cssNav.FocusableAreasOption = {  }):Array<Node>;
+	/**
+		From interface mixin Animatable
+	**/
+	function getAnimations(?options:js.webAnimations.GetAnimationsOptions = {  }):Array<js.webAnimations.Animation>;
 	function getAttribute(qualifiedName:String):Null<String>;
 	function getAttributeNS(namespace:Null<String>, localName:String):Null<String>;
 	function getAttributeNames():Array<String>;
@@ -119,6 +391,10 @@ extern class Element extends Node {
 		From partial interface in cssom-view.idl
 	**/
 	function getBoundingClientRect():js.geometry.DOMRect;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function getBoxQuads(?options:js.cssomView.BoxQuadOptions = {  }):Array<js.geometry.DOMQuad>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -130,6 +406,10 @@ extern class Element extends Node {
 		From partial interface in html.idl
 	**/
 	function getHTML(?options:js.html.GetHTMLOptions = {  }):String;
+	/**
+		From interface mixin Region
+	**/
+	function getRegionFlowRanges():Null<Array<Range>>;
 	/**
 		From partial interface in css-nav.idl
 	**/
@@ -149,16 +429,44 @@ extern class Element extends Node {
 	function insertAdjacentText(where:String, data:String):Void;
 	function matches(selectors:String):Bool;
 	/**
+		From interface mixin ParentNode
+	**/
+	function moveBefore(node:Node, child:Null<Node>):Void;
+	/**
+		From interface mixin ParentNode
+	**/
+	function prepend(nodes:):Void;
+	/**
 		From partial interface in css-pseudo.idl
 	**/
 	function pseudo(type:CSSOMString):Null<js.cssPseudo.CSSPseudoElement>;
 	/**
+		From interface mixin ParentNode
+	**/
+	function querySelector(selectors:String):Null<Element>;
+	/**
+		From interface mixin ParentNode
+	**/
+	function querySelectorAll(selectors:String):NodeList;
+	/**
 		From partial interface in pointerevents.idl
 	**/
 	function releasePointerCapture(pointerId:Int):Void;
+	/**
+		From interface mixin ChildNode
+	**/
+	function remove():Void;
 	function removeAttribute(qualifiedName:String):Void;
 	function removeAttributeNS(namespace:Null<String>, localName:String):Void;
 	function removeAttributeNode(attr:Attr):Attr;
+	/**
+		From interface mixin ParentNode
+	**/
+	function replaceChildren(nodes:):Void;
+	/**
+		From interface mixin ChildNode
+	**/
+	function replaceWith(nodes:):Void;
 	/**
 		From partial interface in fullscreen.idl
 	**/

@@ -25,12 +25,64 @@
 package js.webgpu;
 
 extern class GPURenderPassEncoder {
+	/**
+		From interface mixin GPUObjectBase
+	**/
+	var label : String;
 	function beginOcclusionQuery(queryIndex:GPUSize32):Void;
+	/**
+		From interface mixin GPURenderCommandsMixin
+	**/
+	function draw(vertexCount:GPUSize32, ?instanceCount:GPUSize32 = 1, ?firstVertex:GPUSize32 = 0, ?firstInstance:GPUSize32 = 0):Void;
+	/**
+		From interface mixin GPURenderCommandsMixin
+	**/
+	function drawIndexed(indexCount:GPUSize32, ?instanceCount:GPUSize32 = 1, ?firstIndex:GPUSize32 = 0, ?baseVertex:GPUSignedOffset32 = 0, ?firstInstance:GPUSize32 = 0):Void;
+	/**
+		From interface mixin GPURenderCommandsMixin
+	**/
+	function drawIndexedIndirect(indirectBuffer:GPUBuffer, indirectOffset:GPUSize64):Void;
+	/**
+		From interface mixin GPURenderCommandsMixin
+	**/
+	function drawIndirect(indirectBuffer:GPUBuffer, indirectOffset:GPUSize64):Void;
 	function end():Void;
 	function endOcclusionQuery():Void;
 	function executeBundles(bundles:Array<GPURenderBundle>):Void;
+	/**
+		From interface mixin GPUDebugCommandsMixin
+	**/
+	function insertDebugMarker(markerLabel:String):Void;
+	/**
+		From interface mixin GPUDebugCommandsMixin
+	**/
+	function popDebugGroup():Void;
+	/**
+		From interface mixin GPUDebugCommandsMixin
+	**/
+	function pushDebugGroup(groupLabel:String):Void;
+	/**
+		From interface mixin GPUBindingCommandsMixin
+	**/
+	overload function setBindGroup(index:GPUIndex32, bindGroup:Null<GPUBindGroup>, ?dynamicOffsets:Array<GPUBufferDynamicOffset> = []):Void;
+	/**
+		From interface mixin GPUBindingCommandsMixin
+	**/
+	overload function setBindGroup(index:GPUIndex32, bindGroup:Null<GPUBindGroup>, dynamicOffsetsData:Uint32Array, dynamicOffsetsDataStart:GPUSize64, dynamicOffsetsDataLength:GPUSize32):Void;
 	function setBlendConstant(color:GPUColor):Void;
+	/**
+		From interface mixin GPURenderCommandsMixin
+	**/
+	function setIndexBuffer(buffer:GPUBuffer, indexFormat:GPUIndexFormat, ?offset:GPUSize64 = 0, ?size:GPUSize64):Void;
+	/**
+		From interface mixin GPURenderCommandsMixin
+	**/
+	function setPipeline(pipeline:GPURenderPipeline):Void;
 	function setScissorRect(x:GPUIntegerCoordinate, y:GPUIntegerCoordinate, width:GPUIntegerCoordinate, height:GPUIntegerCoordinate):Void;
 	function setStencilReference(reference:GPUStencilValue):Void;
+	/**
+		From interface mixin GPURenderCommandsMixin
+	**/
+	function setVertexBuffer(slot:GPUIndex32, buffer:Null<GPUBuffer>, ?offset:GPUSize64 = 0, ?size:GPUSize64):Void;
 	function setViewport(x:Float, y:Float, width:Float, height:Float, minDepth:Float, maxDepth:Float):Void;
 }

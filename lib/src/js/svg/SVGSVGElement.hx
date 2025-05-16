@@ -32,6 +32,98 @@ extern class SVGSVGElement extends SVGGraphicsElement {
 	var currentScale : Float;
 	var currentTranslate(default, null) : js.geometry.DOMPointReadOnly;
 	/**
+		From interface mixin SVGFitToViewBox
+	**/
+	var viewBox(default, null) : SVGAnimatedRect;
+	/**
+		From interface mixin SVGFitToViewBox
+	**/
+	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ongamepadconnected : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ongamepaddisconnected : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onafterprint : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onbeforeprint : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onbeforeunload : js.html.OnBeforeUnloadEventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onhashchange : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onlanguagechange : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onmessage : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onmessageerror : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onoffline : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ononline : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpagehide : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpagereveal : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpageshow : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpageswap : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onpopstate : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onrejectionhandled : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onstorage : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onunhandledrejection : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onunload : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var onportalactivate : js.html.EventHandler;
+	/**
 		From partial interface in svg-animations.idl
 	**/
 	function animationsPaused():Bool;

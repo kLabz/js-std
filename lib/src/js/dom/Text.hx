@@ -26,6 +26,26 @@ package js.dom;
 
 extern class Text extends CharacterData {
 	var wholeText(default, null) : String;
+	/**
+		From interface mixin Slottable
+	**/
+	var assignedSlot(default, null) : Null<js.html.HTMLSlotElement>;
 	function new(?data:String = ""):Void;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function convertPointFromNode(point:js.geometry.DOMPointInit, from:js.cssomView.GeometryNode, ?options:js.cssomView.ConvertCoordinateOptions = {  }):js.geometry.DOMPoint;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function convertQuadFromNode(quad:js.geometry.DOMQuadInit, from:js.cssomView.GeometryNode, ?options:js.cssomView.ConvertCoordinateOptions = {  }):js.geometry.DOMQuad;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function convertRectFromNode(rect:js.geometry.DOMRectReadOnly, from:js.cssomView.GeometryNode, ?options:js.cssomView.ConvertCoordinateOptions = {  }):js.geometry.DOMQuad;
+	/**
+		From interface mixin GeometryUtils
+	**/
+	function getBoxQuads(?options:js.cssomView.BoxQuadOptions = {  }):Array<js.geometry.DOMQuad>;
 	function splitText(offset:Int):Text;
 }

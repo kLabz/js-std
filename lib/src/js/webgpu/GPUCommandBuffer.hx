@@ -25,5 +25,8 @@
 package js.webgpu;
 
 extern class GPUCommandBuffer {
-
+	/**
+		From interface mixin GPUObjectBase
+	**/
+	var label : String;
 }

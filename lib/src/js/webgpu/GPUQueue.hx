@@ -25,6 +25,10 @@
 package js.webgpu;
 
 extern class GPUQueue {
+	/**
+		From interface mixin GPUObjectBase
+	**/
+	var label : String;
 	function copyExternalImageToTexture(source:GPUCopyExternalImageSourceInfo, destination:GPUCopyExternalImageDestInfo, copySize:GPUExtent3D):Void;
 	function onSubmittedWorkDone():js.lib.Promise<Void>;
 	function submit(commandBuffers:Array<GPUCommandBuffer>):Void;

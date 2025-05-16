@@ -29,6 +29,30 @@ extern class BluetoothDevice extends js.dom.EventTarget {
 	var name(default, null) : Null<String>;
 	var gatt(default, null) : Null<BluetoothRemoteGATTServer>;
 	var watchingAdvertisements(default, null) : Bool;
+	/**
+		From interface mixin BluetoothDeviceEventHandlers
+	**/
+	var onadvertisementreceived : js.html.EventHandler;
+	/**
+		From interface mixin BluetoothDeviceEventHandlers
+	**/
+	var ongattserverdisconnected : js.html.EventHandler;
+	/**
+		From interface mixin CharacteristicEventHandlers
+	**/
+	var oncharacteristicvaluechanged : js.html.EventHandler;
+	/**
+		From interface mixin ServiceEventHandlers
+	**/
+	var onserviceadded : js.html.EventHandler;
+	/**
+		From interface mixin ServiceEventHandlers
+	**/
+	var onservicechanged : js.html.EventHandler;
+	/**
+		From interface mixin ServiceEventHandlers
+	**/
+	var onserviceremoved : js.html.EventHandler;
 	function forget():js.lib.Promise<Void>;
 	function watchAdvertisements(?options:WatchAdvertisementsOptions = {  }):js.lib.Promise<Void>;
 }

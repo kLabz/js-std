@@ -24,6 +24,17 @@
 
 package js.paymentRequest;
 
+/**
+	TODO attribute requestId
+	TODO attribute methodName
+	TODO attribute details
+	TODO attribute shippingAddress
+	TODO attribute shippingOption
+	TODO attribute payerName
+	TODO attribute payerEmail
+	TODO attribute payerPhone
+	TODO attribute onpayerdetailchange
+**/
 extern class PaymentResponse extends js.dom.EventTarget {
 	function complete(?result:PaymentComplete, ?details:PaymentCompleteDetails):js.lib.Promise<Void>;
 	function retry(?errorFields:PaymentValidationErrors):js.lib.Promise<Void>;

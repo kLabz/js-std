@@ -24,6 +24,11 @@
 
 package js.svg;
 
+/**
+	TODO attribute gradientUnits
+	TODO attribute gradientTransform
+	TODO attribute spreadMethod
+**/
 extern class SVGGradientElement extends SVGElement {
 	static inline var SVG_SPREADMETHOD_UNKNOWN : Int = 0;
 	static inline var SVG_SPREADMETHOD_PAD : Int = 1;

@@ -24,9 +24,30 @@
 
 package js.html;
 
+/**
+	TODO attribute acceptCharset
+	TODO attribute action
+	TODO attribute autocomplete
+	TODO attribute enctype
+	TODO attribute encoding
+	TODO attribute method
+	TODO attribute name
+	TODO attribute noValidate
+	TODO attribute target
+	TODO attribute rel
+	TODO attribute relList
+	TODO attribute elements
+	TODO attribute length
+**/
 extern class HTMLFormElement extends HTMLElement {
 	function new():Void;
+	/**
+		(special = getter)
+	**/
 	overload function (index:Int):js.dom.Element;
+	/**
+		(special = getter)
+	**/
 	overload function (name:String):haxe.extern.EitherType<RadioNodeList, js.dom.Element>;
 	function checkValidity():Bool;
 	function reportValidity():Bool;

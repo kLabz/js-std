@@ -24,6 +24,14 @@
 
 package js.html;
 
+/**
+	TODO attribute content
+	TODO attribute shadowRootMode
+	TODO attribute shadowRootDelegatesFocus
+	TODO attribute shadowRootClonable
+	TODO attribute shadowRootSerializable
+	TODO attribute shadowRootCustomElementRegistry
+**/
 extern class HTMLTemplateElement extends HTMLElement {
 	function new():Void;
 }

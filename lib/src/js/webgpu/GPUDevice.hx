@@ -24,6 +24,14 @@
 
 package js.webgpu;
 
+/**
+	TODO attribute features
+	TODO attribute limits
+	TODO attribute adapterInfo
+	TODO attribute queue
+	TODO attribute lost
+	TODO attribute onuncapturederror
+**/
 extern class GPUDevice extends js.dom.EventTarget {
 	function createBindGroup(descriptor:GPUBindGroupDescriptor):GPUBindGroup;
 	function createBindGroupLayout(descriptor:GPUBindGroupLayoutDescriptor):GPUBindGroupLayout;
@@ -41,6 +49,12 @@ extern class GPUDevice extends js.dom.EventTarget {
 	function createTexture(descriptor:GPUTextureDescriptor):GPUTexture;
 	function destroy():Void;
 	function importExternalTexture(descriptor:GPUExternalTextureDescriptor):GPUExternalTexture;
+	/**
+		From partial interface in webgpu.idl
+	**/
 	function popErrorScope():js.lib.Promise<GPUError>;
+	/**
+		From partial interface in webgpu.idl
+	**/
 	function pushErrorScope(filter:GPUErrorFilter):Void;
 }

@@ -24,14 +24,38 @@
 
 package js.mediacaptureStreams;
 
+/**
+	TODO attribute kind
+	TODO attribute id
+	TODO attribute label
+	TODO attribute enabled
+	TODO attribute muted
+	TODO attribute onmute
+	TODO attribute onunmute
+	TODO attribute readyState
+	TODO attribute onended
+	TODO attribute oncapturehandlechange
+	TODO attribute contentHint
+	TODO attribute isolated
+	TODO attribute onisolationchange
+**/
 extern class MediaStreamTrack extends js.dom.EventTarget {
 	function applyConstraints(?constraints:MediaTrackConstraints):js.lib.Promise<Void>;
 	function clone():MediaStreamTrack;
 	function getCapabilities():MediaTrackCapabilities;
+	/**
+		From partial interface in capture-handle-identity.idl
+	**/
 	function getCaptureHandle():js.captureHandleIdentity.CaptureHandle;
 	function getConstraints():MediaTrackConstraints;
 	function getSettings():MediaTrackSettings;
+	/**
+		From partial interface in mediacapture-handle-actions.idl
+	**/
 	function getSupportedCaptureActions():Array<String>;
+	/**
+		From partial interface in mediacapture-handle-actions.idl
+	**/
 	function sendCaptureAction(action:js.mediacaptureHandleActions.CaptureAction):js.lib.Promise<Void>;
 	function stop():Void;
 }

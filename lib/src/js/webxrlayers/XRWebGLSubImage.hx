@@ -24,6 +24,18 @@
 
 package js.webxrlayers;
 
+/**
+	TODO attribute colorTexture
+	TODO attribute depthStencilTexture
+	TODO attribute motionVectorTexture
+	TODO attribute imageIndex
+	TODO attribute colorTextureWidth
+	TODO attribute colorTextureHeight
+	TODO attribute depthStencilTextureWidth
+	TODO attribute depthStencilTextureHeight
+	TODO attribute motionVectorTextureWidth
+	TODO attribute motionVectorTextureHeight
+**/
 extern class XRWebGLSubImage extends XRSubImage {
 
 }

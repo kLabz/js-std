@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute clear
+**/
 extern class HTMLBRElement extends HTMLElement {
 	function new():Void;
 }

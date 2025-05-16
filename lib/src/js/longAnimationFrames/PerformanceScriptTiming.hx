@@ -24,6 +24,22 @@
 
 package js.longAnimationFrames;
 
+/**
+	TODO attribute startTime
+	TODO attribute duration
+	TODO attribute name
+	TODO attribute entryType
+	TODO attribute invokerType
+	TODO attribute invoker
+	TODO attribute executionStart
+	TODO attribute sourceURL
+	TODO attribute sourceFunctionName
+	TODO attribute sourceCharPosition
+	TODO attribute pauseDuration
+	TODO attribute forcedStyleAndLayoutDuration
+	TODO attribute window
+	TODO attribute windowAttribution
+**/
 extern class PerformanceScriptTiming extends js.performanceTimeline.PerformanceEntry {
 	function toJSON():object;
 }

@@ -24,6 +24,15 @@
 
 package js.svg;
 
+/**
+	TODO attribute patternUnits
+	TODO attribute patternContentUnits
+	TODO attribute patternTransform
+	TODO attribute x
+	TODO attribute y
+	TODO attribute width
+	TODO attribute height
+**/
 extern class SVGPatternElement extends SVGElement {
 
 }

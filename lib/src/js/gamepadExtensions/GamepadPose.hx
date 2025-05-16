@@ -24,6 +24,16 @@
 
 package js.gamepadExtensions;
 
+/**
+	TODO attribute hasOrientation
+	TODO attribute hasPosition
+	TODO attribute position
+	TODO attribute linearVelocity
+	TODO attribute linearAcceleration
+	TODO attribute orientation
+	TODO attribute angularVelocity
+	TODO attribute angularAcceleration
+**/
 extern class GamepadPose {
 
 }

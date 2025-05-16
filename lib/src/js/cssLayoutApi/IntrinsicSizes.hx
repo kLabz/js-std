@@ -24,6 +24,10 @@
 
 package js.cssLayoutApi;
 
+/**
+	TODO attribute minContentSize
+	TODO attribute maxContentSize
+**/
 extern class IntrinsicSizes {
 
 }

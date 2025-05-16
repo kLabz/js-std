@@ -24,6 +24,14 @@
 
 package js.webxr;
 
+/**
+	TODO attribute antialias
+	TODO attribute ignoreDepthValues
+	TODO attribute fixedFoveation
+	TODO attribute framebuffer
+	TODO attribute framebufferWidth
+	TODO attribute framebufferHeight
+**/
 extern class XRWebGLLayer extends XRLayer {
 	function new(session:XRSession, context:XRWebGLRenderingContext, ?layerInit:XRWebGLLayerInit):Void;
 	function getNativeFramebufferScaleFactor(session:XRSession):Float;

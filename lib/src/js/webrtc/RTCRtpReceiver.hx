@@ -24,6 +24,12 @@
 
 package js.webrtc;
 
+/**
+	TODO attribute track
+	TODO attribute transport
+	TODO attribute jitterBufferTarget
+	TODO attribute transform
+**/
 extern class RTCRtpReceiver {
 	function getCapabilities(kind:String):RTCRtpCapabilities;
 	function getContributingSources():Array<RTCRtpContributingSource>;

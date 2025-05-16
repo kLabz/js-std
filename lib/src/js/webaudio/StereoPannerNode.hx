@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute pan
+**/
 extern class StereoPannerNode extends AudioNode {
 	function new(context:BaseAudioContext, ?options:StereoPannerOptions):Void;
 }

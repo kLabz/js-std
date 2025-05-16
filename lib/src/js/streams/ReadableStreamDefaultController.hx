@@ -24,6 +24,9 @@
 
 package js.streams;
 
+/**
+	TODO attribute desiredSize
+**/
 extern class ReadableStreamDefaultController {
 	function close():Void;
 	function enqueue(?chunk:Any):Void;

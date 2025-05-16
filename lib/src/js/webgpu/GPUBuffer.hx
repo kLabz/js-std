@@ -24,6 +24,11 @@
 
 package js.webgpu;
 
+/**
+	TODO attribute size
+	TODO attribute usage
+	TODO attribute mapState
+**/
 extern class GPUBuffer {
 	function destroy():Void;
 	function getMappedRange(?offset:GPUSize64, ?size:GPUSize64):ArrayBuffer;

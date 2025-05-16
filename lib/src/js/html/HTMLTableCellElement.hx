@@ -24,6 +24,23 @@
 
 package js.html;
 
+/**
+	TODO attribute colSpan
+	TODO attribute rowSpan
+	TODO attribute headers
+	TODO attribute cellIndex
+	TODO attribute scope
+	TODO attribute abbr
+	TODO attribute align
+	TODO attribute axis
+	TODO attribute height
+	TODO attribute width
+	TODO attribute ch
+	TODO attribute chOff
+	TODO attribute noWrap
+	TODO attribute vAlign
+	TODO attribute bgColor
+**/
 extern class HTMLTableCellElement extends HTMLElement {
 	function new():Void;
 }

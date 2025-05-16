@@ -24,6 +24,13 @@
 
 package js.dom;
 
+/**
+	TODO attribute root
+	TODO attribute referenceNode
+	TODO attribute pointerBeforeReferenceNode
+	TODO attribute whatToShow
+	TODO attribute filter
+**/
 extern class NodeIterator {
 	function detach():Void;
 	function nextNode():Node;

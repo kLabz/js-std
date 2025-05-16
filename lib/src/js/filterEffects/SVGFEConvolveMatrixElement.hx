@@ -24,6 +24,20 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute in1
+	TODO attribute orderX
+	TODO attribute orderY
+	TODO attribute kernelMatrix
+	TODO attribute divisor
+	TODO attribute bias
+	TODO attribute targetX
+	TODO attribute targetY
+	TODO attribute edgeMode
+	TODO attribute kernelUnitLengthX
+	TODO attribute kernelUnitLengthY
+	TODO attribute preserveAlpha
+**/
 extern class SVGFEConvolveMatrixElement extends js.svg.SVGElement {
 	static inline var SVG_EDGEMODE_UNKNOWN : Int = 0;
 	static inline var SVG_EDGEMODE_DUPLICATE : Int = 1;

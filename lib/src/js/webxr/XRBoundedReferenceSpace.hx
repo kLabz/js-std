@@ -24,6 +24,9 @@
 
 package js.webxr;
 
+/**
+	TODO attribute boundsGeometry
+**/
 extern class XRBoundedReferenceSpace extends XRReferenceSpace {
 
 }

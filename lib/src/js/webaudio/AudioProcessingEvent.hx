@@ -24,6 +24,11 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute playbackTime
+	TODO attribute inputBuffer
+	TODO attribute outputBuffer
+**/
 extern class AudioProcessingEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:AudioProcessingEventInit):Void;
 }

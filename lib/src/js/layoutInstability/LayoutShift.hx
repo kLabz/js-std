@@ -24,6 +24,12 @@
 
 package js.layoutInstability;
 
+/**
+	TODO attribute value
+	TODO attribute hadRecentInput
+	TODO attribute lastInputTime
+	TODO attribute sources
+**/
 extern class LayoutShift extends js.performanceTimeline.PerformanceEntry {
 	function toJSON():object;
 }

@@ -24,7 +24,14 @@
 
 package js.svg;
 
+/**
+	TODO attribute length
+	TODO attribute numberOfItems
+**/
 extern class SVGTransformList {
+	/**
+		(special = setter)
+	**/
 	function (index:Int, newItem:SVGTransform):Void;
 	function appendItem(newItem:SVGTransform):SVGTransform;
 	function clear():Void;

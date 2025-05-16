@@ -24,6 +24,11 @@
 
 package js.cssTransitions;
 
+/**
+	TODO attribute propertyName
+	TODO attribute elapsedTime
+	TODO attribute pseudoElement
+**/
 extern class TransitionEvent extends js.dom.Event {
 	function new(type:CSSOMString, ?transitionEventInitDict:TransitionEventInit):Void;
 }

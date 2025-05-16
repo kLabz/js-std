@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute track
+**/
 extern class TrackEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:TrackEventInit):Void;
 }

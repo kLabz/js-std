@@ -24,6 +24,12 @@
 
 package js.webxr;
 
+/**
+	TODO attribute transform
+	TODO attribute linearVelocity
+	TODO attribute angularVelocity
+	TODO attribute emulatedPosition
+**/
 extern class XRPose {
 
 }

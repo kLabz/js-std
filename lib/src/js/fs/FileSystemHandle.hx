@@ -24,8 +24,18 @@
 
 package js.fs;
 
+/**
+	TODO attribute kind
+	TODO attribute name
+**/
 extern class FileSystemHandle {
 	function isSameEntry(other:FileSystemHandle):js.lib.Promise<Bool>;
+	/**
+		From partial interface in file-system-access.idl
+	**/
 	function queryPermission(?descriptor:js.fileSystemAccess.FileSystemHandlePermissionDescriptor):js.lib.Promise<js.permissions.PermissionState>;
+	/**
+		From partial interface in file-system-access.idl
+	**/
 	function requestPermission(?descriptor:js.fileSystemAccess.FileSystemHandlePermissionDescriptor):js.lib.Promise<js.permissions.PermissionState>;
 }

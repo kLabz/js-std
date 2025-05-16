@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute viewTransition
+**/
 extern class PageRevealEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:PageRevealEventInit):Void;
 }

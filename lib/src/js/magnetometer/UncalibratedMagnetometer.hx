@@ -24,6 +24,14 @@
 
 package js.magnetometer;
 
+/**
+	TODO attribute x
+	TODO attribute y
+	TODO attribute z
+	TODO attribute xBias
+	TODO attribute yBias
+	TODO attribute zBias
+**/
 extern class UncalibratedMagnetometer extends js.genericSensor.Sensor {
 	function new(?sensorOptions:MagnetometerSensorOptions):Void;
 }

@@ -24,6 +24,12 @@
 
 package js.webcrypto;
 
+/**
+	TODO attribute type
+	TODO attribute extractable
+	TODO attribute algorithm
+	TODO attribute usages
+**/
 extern class CryptoKey {
 
 }

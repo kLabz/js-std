@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute name
+	TODO attribute onconnect
+**/
 extern class SharedWorkerGlobalScope extends WorkerGlobalScope {
 	function close():Void;
 }

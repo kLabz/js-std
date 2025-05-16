@@ -24,6 +24,10 @@
 
 package js.cookieStore;
 
+/**
+	TODO attribute changed
+	TODO attribute deleted
+**/
 extern class ExtendableCookieChangeEvent extends js.serviceWorkers.ExtendableEvent {
 	function new(type:String, ?eventInitDict:ExtendableCookieChangeEventInit):Void;
 }

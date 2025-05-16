@@ -24,6 +24,13 @@
 
 package js.speechApi;
 
+/**
+	TODO attribute voiceURI
+	TODO attribute name
+	TODO attribute lang
+	TODO attribute localService
+	TODO attribute default
+**/
 extern class SpeechSynthesisVoice {
 
 }

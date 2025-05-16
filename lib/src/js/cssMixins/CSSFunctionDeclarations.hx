@@ -24,6 +24,9 @@
 
 package js.cssMixins;
 
+/**
+	TODO attribute style
+**/
 extern class CSSFunctionDeclarations extends js.cssom.CSSRule {
 
 }

@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute canvas
+**/
 extern class CanvasRenderingContext2D {
 
 }

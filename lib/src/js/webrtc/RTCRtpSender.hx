@@ -24,7 +24,16 @@
 
 package js.webrtc;
 
+/**
+	TODO attribute track
+	TODO attribute transport
+	TODO attribute transform
+	TODO attribute dtmf
+**/
 extern class RTCRtpSender {
+	/**
+		From partial interface in webrtc-encoded-transform.idl
+	**/
 	function generateKeyFrame(?rids:Array<String>):js.lib.Promise<Void>;
 	function getCapabilities(kind:String):RTCRtpCapabilities;
 	function getParameters():RTCRtpSendParameters;

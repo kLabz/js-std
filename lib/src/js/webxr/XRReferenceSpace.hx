@@ -24,6 +24,9 @@
 
 package js.webxr;
 
+/**
+	TODO attribute onreset
+**/
 extern class XRReferenceSpace extends XRSpace {
 	function getOffsetReferenceSpace(originOffset:XRRigidTransform):XRReferenceSpace;
 }

@@ -24,6 +24,12 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute in1
+	TODO attribute stdDeviationX
+	TODO attribute stdDeviationY
+	TODO attribute edgeMode
+**/
 extern class SVGFEGaussianBlurElement extends js.svg.SVGElement {
 	static inline var SVG_EDGEMODE_UNKNOWN : Int = 0;
 	static inline var SVG_EDGEMODE_DUPLICATE : Int = 1;

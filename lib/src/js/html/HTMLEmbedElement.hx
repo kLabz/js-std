@@ -24,6 +24,14 @@
 
 package js.html;
 
+/**
+	TODO attribute src
+	TODO attribute type
+	TODO attribute width
+	TODO attribute height
+	TODO attribute align
+	TODO attribute name
+**/
 extern class HTMLEmbedElement extends HTMLElement {
 	function new():Void;
 	function getSVGDocument():js.dom.Document;

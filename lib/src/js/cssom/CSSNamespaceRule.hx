@@ -24,6 +24,10 @@
 
 package js.cssom;
 
+/**
+	TODO attribute namespaceURI
+	TODO attribute prefix
+**/
 extern class CSSNamespaceRule extends CSSRule {
 
 }

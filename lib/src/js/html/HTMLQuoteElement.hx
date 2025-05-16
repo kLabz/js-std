@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute cite
+**/
 extern class HTMLQuoteElement extends HTMLElement {
 	function new():Void;
 }

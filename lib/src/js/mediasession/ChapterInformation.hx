@@ -24,6 +24,11 @@
 
 package js.mediasession;
 
+/**
+	TODO attribute title
+	TODO attribute startTime
+	TODO attribute artwork
+**/
 extern class ChapterInformation {
 
 }

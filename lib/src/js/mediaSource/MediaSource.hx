@@ -24,6 +24,17 @@
 
 package js.mediaSource;
 
+/**
+	TODO attribute handle
+	TODO attribute sourceBuffers
+	TODO attribute activeSourceBuffers
+	TODO attribute readyState
+	TODO attribute duration
+	TODO attribute onsourceopen
+	TODO attribute onsourceended
+	TODO attribute onsourceclose
+	TODO attribute canConstructInDedicatedWorker
+**/
 extern class MediaSource extends js.dom.EventTarget {
 	function new():Void;
 	function addSourceBuffer(type:String):SourceBuffer;

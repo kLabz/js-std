@@ -24,6 +24,31 @@
 
 package js.serviceWorkers;
 
+/**
+	TODO attribute clients
+	TODO attribute registration
+	TODO attribute serviceWorker
+	TODO attribute oninstall
+	TODO attribute onactivate
+	TODO attribute onfetch
+	TODO attribute onmessage
+	TODO attribute onmessageerror
+	TODO attribute onbackgroundfetchsuccess
+	TODO attribute onbackgroundfetchfail
+	TODO attribute onbackgroundfetchabort
+	TODO attribute onbackgroundfetchclick
+	TODO attribute onsync
+	TODO attribute cookieStore
+	TODO attribute oncookiechange
+	TODO attribute oncontentdelete
+	TODO attribute onnotificationclick
+	TODO attribute onnotificationclose
+	TODO attribute oncanmakepayment
+	TODO attribute onpaymentrequest
+	TODO attribute onperiodicsync
+	TODO attribute onpush
+	TODO attribute onpushsubscriptionchange
+**/
 extern class ServiceWorkerGlobalScope extends js.html.WorkerGlobalScope {
 	function skipWaiting():js.lib.Promise<Void>;
 }

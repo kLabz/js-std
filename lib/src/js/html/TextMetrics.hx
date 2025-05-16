@@ -24,6 +24,20 @@
 
 package js.html;
 
+/**
+	TODO attribute width
+	TODO attribute actualBoundingBoxLeft
+	TODO attribute actualBoundingBoxRight
+	TODO attribute fontBoundingBoxAscent
+	TODO attribute fontBoundingBoxDescent
+	TODO attribute actualBoundingBoxAscent
+	TODO attribute actualBoundingBoxDescent
+	TODO attribute emHeightAscent
+	TODO attribute emHeightDescent
+	TODO attribute hangingBaseline
+	TODO attribute alphabeticBaseline
+	TODO attribute ideographicBaseline
+**/
 extern class TextMetrics {
 
 }

@@ -24,6 +24,13 @@
 
 package js.longtasks;
 
+/**
+	TODO attribute startTime
+	TODO attribute duration
+	TODO attribute name
+	TODO attribute entryType
+	TODO attribute attribution
+**/
 extern class PerformanceLongTaskTiming extends js.performanceTimeline.PerformanceEntry {
 	function toJSON():object;
 }

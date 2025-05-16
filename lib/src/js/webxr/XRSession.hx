@@ -24,18 +24,71 @@
 
 package js.webxr;
 
+/**
+	TODO attribute visibilityState
+	TODO attribute frameRate
+	TODO attribute supportedFrameRates
+	TODO attribute renderState
+	TODO attribute inputSources
+	TODO attribute trackedSources
+	TODO attribute enabledFeatures
+	TODO attribute isSystemKeyboardSupported
+	TODO attribute onend
+	TODO attribute oninputsourceschange
+	TODO attribute onselect
+	TODO attribute onselectstart
+	TODO attribute onselectend
+	TODO attribute onsqueeze
+	TODO attribute onsqueezestart
+	TODO attribute onsqueezeend
+	TODO attribute onvisibilitychange
+	TODO attribute onframeratechange
+	TODO attribute persistentAnchors
+	TODO attribute environmentBlendMode
+	TODO attribute interactionMode
+	TODO attribute depthUsage
+	TODO attribute depthDataFormat
+	TODO attribute depthType
+	TODO attribute depthActive
+	TODO attribute domOverlayState
+	TODO attribute preferredReflectionFormat
+**/
 extern class XRSession extends js.dom.EventTarget {
 	function cancelAnimationFrame(handle:Int):Void;
+	/**
+		From partial interface in anchors.idl
+	**/
 	function deletePersistentAnchor(uuid:String):js.lib.Promise<Void>;
 	function end():js.lib.Promise<Void>;
+	/**
+		From partial interface in webxr-plane-detection.idl
+	**/
 	function initiateRoomCapture():js.lib.Promise<Void>;
+	/**
+		From partial interface in webxr-depth-sensing.idl
+	**/
 	function pauseDepthSensing():Void;
 	function requestAnimationFrame(callback:XRFrameRequestCallback):Int;
+	/**
+		From partial interface in webxr-hit-test.idl
+	**/
 	function requestHitTestSource(options:js.webxrHitTest.XRHitTestOptionsInit):js.lib.Promise<js.webxrHitTest.XRHitTestSource>;
+	/**
+		From partial interface in webxr-hit-test.idl
+	**/
 	function requestHitTestSourceForTransientInput(options:js.webxrHitTest.XRTransientInputHitTestOptionsInit):js.lib.Promise<js.webxrHitTest.XRTransientInputHitTestSource>;
+	/**
+		From partial interface in webxr-lighting-estimation.idl
+	**/
 	function requestLightProbe(?options:js.webxrLightingEstimation.XRLightProbeInit):js.lib.Promise<js.webxrLightingEstimation.XRLightProbe>;
 	function requestReferenceSpace(type:XRReferenceSpaceType):js.lib.Promise<XRReferenceSpace>;
+	/**
+		From partial interface in anchors.idl
+	**/
 	function restorePersistentAnchor(uuid:String):js.lib.Promise<js.anchors.XRAnchor>;
+	/**
+		From partial interface in webxr-depth-sensing.idl
+	**/
 	function resumeDepthSensing():Void;
 	function updateRenderState(?state:XRRenderStateInit):Void;
 	function updateTargetFrameRate(rate:Float):js.lib.Promise<Void>;

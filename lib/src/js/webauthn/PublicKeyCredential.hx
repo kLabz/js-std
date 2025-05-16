@@ -24,15 +24,41 @@
 
 package js.webauthn;
 
+/**
+	TODO attribute rawId
+	TODO attribute response
+	TODO attribute authenticatorAttachment
+**/
 extern class PublicKeyCredential extends js.credentialManagement.Credential {
+	/**
+		From partial interface in webauthn.idl
+	**/
 	function getClientCapabilities():js.lib.Promise<PublicKeyCredentialClientCapabilities>;
 	function getClientExtensionResults():AuthenticationExtensionsClientOutputs;
 	function isConditionalMediationAvailable():js.lib.Promise<Bool>;
+	/**
+		From partial interface in webauthn.idl
+	**/
 	function isUserVerifyingPlatformAuthenticatorAvailable():js.lib.Promise<Bool>;
+	/**
+		From partial interface in webauthn.idl
+	**/
 	function parseCreationOptionsFromJSON(options:PublicKeyCredentialCreationOptionsJSON):PublicKeyCredentialCreationOptions;
+	/**
+		From partial interface in webauthn.idl
+	**/
 	function parseRequestOptionsFromJSON(options:PublicKeyCredentialRequestOptionsJSON):PublicKeyCredentialRequestOptions;
+	/**
+		From partial interface in webauthn.idl
+	**/
 	function signalAllAcceptedCredentials(options:AllAcceptedCredentialsOptions):js.lib.Promise<Void>;
+	/**
+		From partial interface in webauthn.idl
+	**/
 	function signalCurrentUserDetails(options:CurrentUserDetailsOptions):js.lib.Promise<Void>;
+	/**
+		From partial interface in webauthn.idl
+	**/
 	function signalUnknownCredential(options:UnknownCredentialOptions):js.lib.Promise<Void>;
 	function toJSON():PublicKeyCredentialJSON;
 }

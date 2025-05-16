@@ -24,6 +24,14 @@
 
 package js.html;
 
+/**
+	TODO attribute id
+	TODO attribute kind
+	TODO attribute label
+	TODO attribute language
+	TODO attribute enabled
+	TODO attribute sourceBuffer
+**/
 extern class AudioTrack {
 
 }

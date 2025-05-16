@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute oldState
+	TODO attribute newState
+**/
 extern class ToggleEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:ToggleEventInit):Void;
 }

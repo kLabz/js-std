@@ -24,6 +24,16 @@
 
 package js.webgpu;
 
+/**
+	TODO attribute width
+	TODO attribute height
+	TODO attribute depthOrArrayLayers
+	TODO attribute mipLevelCount
+	TODO attribute sampleCount
+	TODO attribute dimension
+	TODO attribute format
+	TODO attribute usage
+**/
 extern class GPUTexture {
 	function createView(?descriptor:GPUTextureViewDescriptor):GPUTextureView;
 	function destroy():Void;

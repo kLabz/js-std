@@ -24,6 +24,15 @@
 
 package js.webgpu;
 
+/**
+	TODO attribute vendor
+	TODO attribute architecture
+	TODO attribute device
+	TODO attribute description
+	TODO attribute subgroupMinSize
+	TODO attribute subgroupMaxSize
+	TODO attribute isFallbackAdapter
+**/
 extern class GPUAdapterInfo {
 
 }

@@ -24,6 +24,11 @@
 
 package js.xhr;
 
+/**
+	TODO attribute lengthComputable
+	TODO attribute loaded
+	TODO attribute total
+**/
 extern class ProgressEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:ProgressEventInit):Void;
 }

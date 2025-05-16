@@ -24,6 +24,13 @@
 
 package js.webAnimations;
 
+/**
+	TODO attribute currentTime
+	TODO attribute duration
+**/
 extern class AnimationTimeline {
+	/**
+		From partial interface in web-animations-2.idl
+	**/
 	function play(?effect:AnimationEffect):Animation;
 }

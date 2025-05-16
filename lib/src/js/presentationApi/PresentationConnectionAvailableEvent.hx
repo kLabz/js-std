@@ -24,6 +24,9 @@
 
 package js.presentationApi;
 
+/**
+	TODO attribute connection
+**/
 extern class PresentationConnectionAvailableEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:PresentationConnectionAvailableEventInit):Void;
 }

@@ -24,6 +24,16 @@
 
 package js.presentationApi;
 
+/**
+	TODO attribute id
+	TODO attribute url
+	TODO attribute state
+	TODO attribute onconnect
+	TODO attribute onclose
+	TODO attribute onterminate
+	TODO attribute binaryType
+	TODO attribute onmessage
+**/
 extern class PresentationConnection extends js.dom.EventTarget {
 	function close():Void;
 	overload function send(message:String):Void;

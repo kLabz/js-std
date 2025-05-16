@@ -24,6 +24,12 @@
 
 package js.svg;
 
+/**
+	TODO attribute cx
+	TODO attribute cy
+	TODO attribute rx
+	TODO attribute ry
+**/
 extern class SVGEllipseElement extends SVGGeometryElement {
 
 }

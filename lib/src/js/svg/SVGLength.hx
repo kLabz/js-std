@@ -24,6 +24,12 @@
 
 package js.svg;
 
+/**
+	TODO attribute unitType
+	TODO attribute value
+	TODO attribute valueInSpecifiedUnits
+	TODO attribute valueAsString
+**/
 extern class SVGLength {
 	static inline var SVG_LENGTHTYPE_UNKNOWN : Int = 0;
 	static inline var SVG_LENGTHTYPE_NUMBER : Int = 1;

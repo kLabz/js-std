@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute activation
+	TODO attribute viewTransition
+**/
 extern class PageSwapEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:PageSwapEventInit):Void;
 }

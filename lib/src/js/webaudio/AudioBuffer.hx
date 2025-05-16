@@ -24,6 +24,12 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute sampleRate
+	TODO attribute length
+	TODO attribute duration
+	TODO attribute numberOfChannels
+**/
 extern class AudioBuffer {
 	function new(options:AudioBufferOptions):Void;
 	function copyFromChannel(destination:Float32Array, channelNumber:Int, ?bufferOffset:Int):Void;

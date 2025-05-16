@@ -24,6 +24,10 @@
 
 package js.cssMixins;
 
+/**
+	TODO attribute name
+	TODO attribute returnType
+**/
 extern class CSSFunctionRule extends js.cssom.CSSGroupingRule {
 	function getParameters():Array<FunctionParameter>;
 }

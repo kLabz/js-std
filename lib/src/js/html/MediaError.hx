@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute code
+	TODO attribute message
+**/
 extern class MediaError {
 	static inline var MEDIA_ERR_ABORTED : Int = 1;
 	static inline var MEDIA_ERR_NETWORK : Int = 2;

@@ -24,6 +24,24 @@
 
 package js.webrtc;
 
+/**
+	TODO attribute candidate
+	TODO attribute sdpMid
+	TODO attribute sdpMLineIndex
+	TODO attribute foundation
+	TODO attribute component
+	TODO attribute priority
+	TODO attribute address
+	TODO attribute protocol
+	TODO attribute port
+	TODO attribute type
+	TODO attribute tcpType
+	TODO attribute relatedAddress
+	TODO attribute relatedPort
+	TODO attribute usernameFragment
+	TODO attribute relayProtocol
+	TODO attribute url
+**/
 extern class RTCIceCandidate {
 	function new(?candidateInitDict:RTCLocalIceCandidateInit):Void;
 	function toJSON():RTCIceCandidateInit;

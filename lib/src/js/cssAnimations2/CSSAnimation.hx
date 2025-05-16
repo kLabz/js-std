@@ -24,6 +24,9 @@
 
 package js.cssAnimations2;
 
+/**
+	TODO attribute animationName
+**/
 extern class CSSAnimation extends js.webAnimations.Animation {
 
 }

@@ -24,6 +24,13 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute baseLatency
+	TODO attribute outputLatency
+	TODO attribute sinkId
+	TODO attribute onsinkchange
+	TODO attribute onerror
+**/
 extern class AudioContext extends BaseAudioContext {
 	function new(?contextOptions:AudioContextOptions):Void;
 	function close():js.lib.Promise<Void>;

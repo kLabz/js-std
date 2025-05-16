@@ -24,6 +24,9 @@
 
 package js.sharedStorage;
 
+/**
+	TODO attribute worklet
+**/
 extern class SharedStorage {
 	function append(key:String, value:String, ?options:SharedStorageModifierMethodOptions):js.lib.Promise<Any>;
 	function batchUpdate(methods:Array<SharedStorageModifierMethod>, ?options:SharedStorageModifierMethodOptions):js.lib.Promise<Any>;

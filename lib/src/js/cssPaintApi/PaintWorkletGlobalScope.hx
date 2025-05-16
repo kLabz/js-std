@@ -24,6 +24,9 @@
 
 package js.cssPaintApi;
 
+/**
+	TODO attribute devicePixelRatio
+**/
 extern class PaintWorkletGlobalScope extends js.html.WorkletGlobalScope {
 	function registerPaint(name:String, paintCtor:VoidFunction):Void;
 }

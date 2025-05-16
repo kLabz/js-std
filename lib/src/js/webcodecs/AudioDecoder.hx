@@ -24,6 +24,11 @@
 
 package js.webcodecs;
 
+/**
+	TODO attribute state
+	TODO attribute decodeQueueSize
+	TODO attribute ondequeue
+**/
 extern class AudioDecoder extends js.dom.EventTarget {
 	function new(init:AudioDecoderInit):Void;
 	function close():Void;

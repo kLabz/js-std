@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	TODO attribute length
+**/
 extern class HTMLCollection {
 	function item(index:Int):Element;
 	function namedItem(name:String):Element;

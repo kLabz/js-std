@@ -24,6 +24,10 @@
 
 package js.cssNav;
 
+/**
+	TODO attribute dir
+	TODO attribute relatedTarget
+**/
 extern class NavigationEvent extends js.uievents.UIEvent {
 	function new(type:String, ?eventInitDict:NavigationEventInit):Void;
 }

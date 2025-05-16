@@ -24,6 +24,18 @@
 
 package js.contactPicker;
 
+/**
+	TODO attribute city
+	TODO attribute country
+	TODO attribute dependentLocality
+	TODO attribute organization
+	TODO attribute phone
+	TODO attribute postalCode
+	TODO attribute recipient
+	TODO attribute region
+	TODO attribute sortingCode
+	TODO attribute addressLine
+**/
 extern class ContactAddress {
 	function toJSON():object;
 }

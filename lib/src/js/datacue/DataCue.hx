@@ -24,6 +24,10 @@
 
 package js.datacue;
 
+/**
+	TODO attribute value
+	TODO attribute type
+**/
 extern class DataCue extends js.html.TextTrackCue {
 	function new(startTime:Float, endTime:Float, value:Any, ?type:String):Void;
 }

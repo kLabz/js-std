@@ -24,6 +24,10 @@
 
 package js.pushApi;
 
+/**
+	TODO attribute userVisibleOnly
+	TODO attribute applicationServerKey
+**/
 extern class PushSubscriptionOptions {
 
 }

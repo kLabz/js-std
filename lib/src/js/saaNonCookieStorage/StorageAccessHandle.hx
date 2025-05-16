@@ -24,6 +24,13 @@
 
 package js.saaNonCookieStorage;
 
+/**
+	TODO attribute sessionStorage
+	TODO attribute localStorage
+	TODO attribute indexedDB
+	TODO attribute locks
+	TODO attribute caches
+**/
 extern class StorageAccessHandle {
 	function BroadcastChannel(name:String):js.html.BroadcastChannel;
 	function SharedWorker(scriptURL:String, ?options:haxe.extern.EitherType<String, SharedWorkerOptions>):js.html.SharedWorker;

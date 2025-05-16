@@ -24,6 +24,13 @@
 
 package js.mediaqueries5;
 
+/**
+	TODO attribute colorScheme
+	TODO attribute contrast
+	TODO attribute reducedMotion
+	TODO attribute reducedTransparency
+	TODO attribute reducedData
+**/
 extern class PreferenceManager {
 
 }

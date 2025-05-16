@@ -24,6 +24,32 @@
 
 package js.resourceTiming;
 
+/**
+	TODO attribute initiatorType
+	TODO attribute deliveryType
+	TODO attribute nextHopProtocol
+	TODO attribute workerStart
+	TODO attribute redirectStart
+	TODO attribute redirectEnd
+	TODO attribute fetchStart
+	TODO attribute domainLookupStart
+	TODO attribute domainLookupEnd
+	TODO attribute connectStart
+	TODO attribute connectEnd
+	TODO attribute secureConnectionStart
+	TODO attribute requestStart
+	TODO attribute finalResponseHeadersStart
+	TODO attribute firstInterimResponseStart
+	TODO attribute responseStart
+	TODO attribute responseEnd
+	TODO attribute transferSize
+	TODO attribute encodedBodySize
+	TODO attribute decodedBodySize
+	TODO attribute responseStatus
+	TODO attribute renderBlockingStatus
+	TODO attribute contentType
+	TODO attribute serverTiming
+**/
 extern class PerformanceResourceTiming extends js.performanceTimeline.PerformanceEntry {
 	function toJSON():object;
 }

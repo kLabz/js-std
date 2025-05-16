@@ -24,6 +24,12 @@
 
 package js.html;
 
+/**
+	TODO attribute value
+	TODO attribute max
+	TODO attribute position
+	TODO attribute labels
+**/
 extern class HTMLProgressElement extends HTMLElement {
 	function new():Void;
 }

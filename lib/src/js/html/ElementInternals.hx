@@ -24,6 +24,15 @@
 
 package js.html;
 
+/**
+	TODO attribute shadowRoot
+	TODO attribute form
+	TODO attribute willValidate
+	TODO attribute validity
+	TODO attribute validationMessage
+	TODO attribute labels
+	TODO attribute states
+**/
 extern class ElementInternals {
 	function checkValidity():Bool;
 	function reportValidity():Bool;

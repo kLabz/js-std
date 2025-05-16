@@ -24,6 +24,17 @@
 
 package js.html;
 
+/**
+	TODO attribute currentEntry
+	TODO attribute transition
+	TODO attribute activation
+	TODO attribute canGoBack
+	TODO attribute canGoForward
+	TODO attribute onnavigate
+	TODO attribute onnavigatesuccess
+	TODO attribute onnavigateerror
+	TODO attribute oncurrententrychange
+**/
 extern class Navigation extends js.dom.EventTarget {
 	function back(?options:NavigationOptions):NavigationResult;
 	function entries():Array<NavigationHistoryEntry>;

@@ -24,6 +24,16 @@
 
 package js.paymentHandler;
 
+/**
+	TODO attribute topOrigin
+	TODO attribute paymentRequestOrigin
+	TODO attribute paymentRequestId
+	TODO attribute methodData
+	TODO attribute total
+	TODO attribute modifiers
+	TODO attribute paymentOptions
+	TODO attribute shippingOptions
+**/
 extern class PaymentRequestEvent extends js.serviceWorkers.ExtendableEvent {
 	function new(type:String, ?eventInitDict:PaymentRequestEventInit):Void;
 	function changePaymentMethod(methodName:String, ?methodDetails:object):js.lib.Promise<PaymentRequestDetailsUpdate>;

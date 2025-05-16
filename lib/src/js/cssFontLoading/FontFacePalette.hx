@@ -24,7 +24,15 @@
 
 package js.cssFontLoading;
 
+/**
+	TODO attribute length
+	TODO attribute usableWithLightBackground
+	TODO attribute usableWithDarkBackground
+**/
 extern class FontFacePalette {
+	/**
+		(special = getter)
+	**/
 	function (index:Int):String;
 	function values():Iterator<String>;
 	function values():Iterator<String>;

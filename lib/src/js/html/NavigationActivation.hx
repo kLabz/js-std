@@ -24,6 +24,11 @@
 
 package js.html;
 
+/**
+	TODO attribute from
+	TODO attribute entry
+	TODO attribute navigationType
+**/
 extern class NavigationActivation {
 
 }

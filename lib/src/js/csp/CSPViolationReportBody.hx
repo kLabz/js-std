@@ -24,6 +24,19 @@
 
 package js.csp;
 
+/**
+	TODO attribute documentURL
+	TODO attribute referrer
+	TODO attribute blockedURL
+	TODO attribute effectiveDirective
+	TODO attribute originalPolicy
+	TODO attribute sourceFile
+	TODO attribute sample
+	TODO attribute disposition
+	TODO attribute statusCode
+	TODO attribute lineNumber
+	TODO attribute columnNumber
+**/
 extern class CSPViolationReportBody extends js.reporting.ReportBody {
 	function toJSON():object;
 }

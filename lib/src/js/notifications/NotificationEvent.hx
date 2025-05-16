@@ -24,6 +24,10 @@
 
 package js.notifications;
 
+/**
+	TODO attribute notification
+	TODO attribute action
+**/
 extern class NotificationEvent extends js.serviceWorkers.ExtendableEvent {
 	function new(type:String, eventInitDict:NotificationEventInit):Void;
 }

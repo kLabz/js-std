@@ -24,6 +24,22 @@
 
 package js.dom;
 
+/**
+	TODO attribute nodeType
+	TODO attribute nodeName
+	TODO attribute baseURI
+	TODO attribute isConnected
+	TODO attribute ownerDocument
+	TODO attribute parentNode
+	TODO attribute parentElement
+	TODO attribute childNodes
+	TODO attribute firstChild
+	TODO attribute lastChild
+	TODO attribute previousSibling
+	TODO attribute nextSibling
+	TODO attribute nodeValue
+	TODO attribute textContent
+**/
 extern class Node extends EventTarget {
 	static inline var ELEMENT_NODE : Int = 1;
 	static inline var ATTRIBUTE_NODE : Int = 2;

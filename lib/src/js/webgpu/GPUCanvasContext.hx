@@ -24,6 +24,9 @@
 
 package js.webgpu;
 
+/**
+	TODO attribute canvas
+**/
 extern class GPUCanvasContext {
 	function configure(configuration:GPUCanvasConfiguration):Void;
 	function getConfiguration():GPUCanvasConfiguration;

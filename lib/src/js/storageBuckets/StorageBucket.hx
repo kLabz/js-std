@@ -24,6 +24,11 @@
 
 package js.storageBuckets;
 
+/**
+	TODO attribute name
+	TODO attribute indexedDB
+	TODO attribute caches
+**/
 extern class StorageBucket {
 	function estimate():js.lib.Promise<js.storage.StorageEstimate>;
 	function expires():js.lib.Promise<DOMHighResTimeStamp>;

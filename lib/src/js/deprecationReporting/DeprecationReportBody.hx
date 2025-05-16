@@ -24,6 +24,14 @@
 
 package js.deprecationReporting;
 
+/**
+	TODO attribute id
+	TODO attribute anticipatedRemoval
+	TODO attribute message
+	TODO attribute sourceFile
+	TODO attribute lineNumber
+	TODO attribute columnNumber
+**/
 extern class DeprecationReportBody extends js.reporting.ReportBody {
 	function toJSON():object;
 }

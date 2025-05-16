@@ -24,6 +24,12 @@
 
 package js.svg;
 
+/**
+	TODO attribute x1
+	TODO attribute y1
+	TODO attribute x2
+	TODO attribute y2
+**/
 extern class SVGLineElement extends SVGGeometryElement {
 
 }

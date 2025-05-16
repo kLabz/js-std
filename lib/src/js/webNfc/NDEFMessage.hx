@@ -24,6 +24,9 @@
 
 package js.webNfc;
 
+/**
+	TODO attribute records
+**/
 extern class NDEFMessage {
 	function new(messageInit:NDEFMessageInit):Void;
 }

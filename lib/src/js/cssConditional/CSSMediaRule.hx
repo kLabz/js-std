@@ -24,6 +24,10 @@
 
 package js.cssConditional;
 
+/**
+	TODO attribute media
+	TODO attribute matches
+**/
 extern class CSSMediaRule extends CSSConditionRule {
 
 }

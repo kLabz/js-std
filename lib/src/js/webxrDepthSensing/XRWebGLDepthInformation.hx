@@ -24,6 +24,11 @@
 
 package js.webxrDepthSensing;
 
+/**
+	TODO attribute texture
+	TODO attribute textureType
+	TODO attribute imageIndex
+**/
 extern class XRWebGLDepthInformation extends XRDepthInformation {
 
 }

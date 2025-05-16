@@ -26,6 +26,11 @@ package js.cssFontLoading;
 
 /**
 	TODO SetlikeDeclaration handling
+	TODO attribute onloading
+	TODO attribute onloadingdone
+	TODO attribute onloadingerror
+	TODO attribute ready
+	TODO attribute status
 **/
 extern class FontFaceSet extends js.dom.EventTarget {
 	function add(font:FontFace):FontFaceSet;

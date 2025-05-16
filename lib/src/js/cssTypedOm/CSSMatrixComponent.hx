@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute matrix
+**/
 extern class CSSMatrixComponent extends CSSTransformComponent {
 	function new(matrix:js.geometry.DOMMatrixReadOnly, ?options:CSSMatrixComponentOptions):Void;
 }

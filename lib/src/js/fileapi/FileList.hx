@@ -24,6 +24,9 @@
 
 package js.fileapi;
 
+/**
+	TODO attribute length
+**/
 extern class FileList {
 	function item(index:Int):File;
 }

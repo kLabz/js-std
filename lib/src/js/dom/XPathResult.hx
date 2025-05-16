@@ -24,6 +24,15 @@
 
 package js.dom;
 
+/**
+	TODO attribute resultType
+	TODO attribute numberValue
+	TODO attribute stringValue
+	TODO attribute booleanValue
+	TODO attribute singleNodeValue
+	TODO attribute invalidIteratorState
+	TODO attribute snapshotLength
+**/
 extern class XPathResult {
 	static inline var ANY_TYPE : Int = 0;
 	static inline var NUMBER_TYPE : Int = 1;

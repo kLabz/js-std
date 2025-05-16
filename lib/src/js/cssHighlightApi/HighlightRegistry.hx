@@ -28,5 +28,8 @@ package js.cssHighlightApi;
 	TODO MaplikeDeclaration handling
 **/
 extern class HighlightRegistry {
+	/**
+		From partial interface in css-highlight-api.idl
+	**/
 	function highlightsFromPoint(x:Float, y:Float, ?options:HighlightsFromPointOptions):Array<Highlight>;
 }

@@ -24,6 +24,24 @@
 
 package js.html;
 
+/**
+	TODO attribute command
+	TODO attribute commandForElement
+	TODO attribute disabled
+	TODO attribute form
+	TODO attribute formAction
+	TODO attribute formEnctype
+	TODO attribute formMethod
+	TODO attribute formNoValidate
+	TODO attribute formTarget
+	TODO attribute name
+	TODO attribute type
+	TODO attribute value
+	TODO attribute willValidate
+	TODO attribute validity
+	TODO attribute validationMessage
+	TODO attribute labels
+**/
 extern class HTMLButtonElement extends HTMLElement {
 	function new():Void;
 	function checkValidity():Bool;

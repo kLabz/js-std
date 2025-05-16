@@ -24,6 +24,10 @@
 
 package js.svg;
 
+/**
+	TODO attribute textLength
+	TODO attribute lengthAdjust
+**/
 extern class SVGTextContentElement extends SVGGraphicsElement {
 	static inline var LENGTHADJUST_UNKNOWN : Int = 0;
 	static inline var LENGTHADJUST_SPACING : Int = 1;

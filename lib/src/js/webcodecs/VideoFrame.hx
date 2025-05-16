@@ -24,6 +24,20 @@
 
 package js.webcodecs;
 
+/**
+	TODO attribute format
+	TODO attribute codedWidth
+	TODO attribute codedHeight
+	TODO attribute codedRect
+	TODO attribute visibleRect
+	TODO attribute rotation
+	TODO attribute flip
+	TODO attribute displayWidth
+	TODO attribute displayHeight
+	TODO attribute duration
+	TODO attribute timestamp
+	TODO attribute colorSpace
+**/
 extern class VideoFrame {
 	overload function new(data:AllowSharedBufferSource, init:VideoFrameBufferInit):Void;
 	overload function new(image:CanvasImageSource, ?init:VideoFrameInit):Void;

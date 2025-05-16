@@ -24,6 +24,25 @@
 
 package js.fetch;
 
+/**
+	TODO attribute method
+	TODO attribute url
+	TODO attribute headers
+	TODO attribute destination
+	TODO attribute referrer
+	TODO attribute referrerPolicy
+	TODO attribute mode
+	TODO attribute credentials
+	TODO attribute cache
+	TODO attribute redirect
+	TODO attribute integrity
+	TODO attribute keepalive
+	TODO attribute isReloadNavigation
+	TODO attribute isHistoryNavigation
+	TODO attribute signal
+	TODO attribute duplex
+	TODO attribute targetAddressSpace
+**/
 extern class Request {
 	function new(input:RequestInfo, ?init:RequestInit):Void;
 	function clone():Request;

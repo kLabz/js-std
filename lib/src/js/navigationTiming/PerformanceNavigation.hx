@@ -24,6 +24,10 @@
 
 package js.navigationTiming;
 
+/**
+	TODO attribute type
+	TODO attribute redirectCount
+**/
 extern class PerformanceNavigation {
 	static inline var TYPE_NAVIGATE : Int = 0;
 	static inline var TYPE_RELOAD : Int = 1;

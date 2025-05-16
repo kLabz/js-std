@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute compact
+**/
 extern class HTMLDListElement extends HTMLElement {
 	function new():Void;
 }

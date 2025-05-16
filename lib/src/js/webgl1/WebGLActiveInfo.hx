@@ -24,6 +24,11 @@
 
 package js.webgl1;
 
+/**
+	TODO attribute size
+	TODO attribute type
+	TODO attribute name
+**/
 extern class WebGLActiveInfo {
 
 }

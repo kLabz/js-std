@@ -24,6 +24,14 @@
 
 package js.webgpu;
 
+/**
+	TODO attribute message
+	TODO attribute type
+	TODO attribute lineNum
+	TODO attribute linePos
+	TODO attribute offset
+	TODO attribute length
+**/
 extern class GPUCompilationMessage {
 
 }

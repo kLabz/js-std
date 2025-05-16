@@ -24,6 +24,12 @@
 
 package js.orientationEvent;
 
+/**
+	TODO attribute acceleration
+	TODO attribute accelerationIncludingGravity
+	TODO attribute rotationRate
+	TODO attribute interval
+**/
 extern class DeviceMotionEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:DeviceMotionEventInit):Void;
 	function requestPermission():js.lib.Promise<js.permissions.PermissionState>;

@@ -24,6 +24,9 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute in1
+**/
 extern class SVGFEMergeNodeElement extends js.svg.SVGElement {
 
 }

@@ -24,6 +24,12 @@
 
 package js.html;
 
+/**
+	TODO attribute reversed
+	TODO attribute start
+	TODO attribute type
+	TODO attribute compact
+**/
 extern class HTMLOListElement extends HTMLElement {
 	function new():Void;
 }

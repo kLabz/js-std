@@ -24,6 +24,18 @@
 
 package js.html;
 
+/**
+	TODO attribute href
+	TODO attribute origin
+	TODO attribute protocol
+	TODO attribute host
+	TODO attribute hostname
+	TODO attribute port
+	TODO attribute pathname
+	TODO attribute search
+	TODO attribute hash
+	TODO attribute ancestorOrigins
+**/
 extern class Location {
 	function assign(url:String):Void;
 	function reload():Void;

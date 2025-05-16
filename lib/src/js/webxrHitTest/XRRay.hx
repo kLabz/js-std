@@ -24,6 +24,11 @@
 
 package js.webxrHitTest;
 
+/**
+	TODO attribute origin
+	TODO attribute direction
+	TODO attribute matrix
+**/
 extern class XRRay {
 	overload function new(transform:js.webxr.XRRigidTransform):Void;
 	overload function new(?origin:js.geometry.DOMPointInit, ?direction:XRRayDirectionInit):Void;

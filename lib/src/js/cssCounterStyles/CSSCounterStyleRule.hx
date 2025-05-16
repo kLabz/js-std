@@ -24,6 +24,19 @@
 
 package js.cssCounterStyles;
 
+/**
+	TODO attribute name
+	TODO attribute system
+	TODO attribute symbols
+	TODO attribute additiveSymbols
+	TODO attribute negative
+	TODO attribute prefix
+	TODO attribute suffix
+	TODO attribute range
+	TODO attribute pad
+	TODO attribute speakAs
+	TODO attribute fallback
+**/
 extern class CSSCounterStyleRule extends js.cssom.CSSRule {
 
 }

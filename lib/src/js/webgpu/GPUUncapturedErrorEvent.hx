@@ -24,6 +24,9 @@
 
 package js.webgpu;
 
+/**
+	TODO attribute error
+**/
 extern class GPUUncapturedErrorEvent extends js.dom.Event {
 	function new(type:String, gpuUncapturedErrorEventInitDict:GPUUncapturedErrorEventInit):Void;
 }

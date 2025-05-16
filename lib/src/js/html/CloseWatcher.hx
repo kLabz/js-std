@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute oncancel
+	TODO attribute onclose
+**/
 extern class CloseWatcher extends js.dom.EventTarget {
 	function new(?options:CloseWatcherOptions):Void;
 	function close():Void;

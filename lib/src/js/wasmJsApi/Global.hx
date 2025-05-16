@@ -24,6 +24,9 @@
 
 package js.wasmJsApi;
 
+/**
+	TODO attribute value
+**/
 extern class Global {
 	function new(descriptor:GlobalDescriptor, ?v:Any):Void;
 	function valueOf():Any;

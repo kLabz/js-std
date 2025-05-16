@@ -24,6 +24,15 @@
 
 package js.geolocation;
 
+/**
+	TODO attribute accuracy
+	TODO attribute latitude
+	TODO attribute longitude
+	TODO attribute altitude
+	TODO attribute altitudeAccuracy
+	TODO attribute heading
+	TODO attribute speed
+**/
 extern class GeolocationCoordinates {
 	function toJSON():object;
 }

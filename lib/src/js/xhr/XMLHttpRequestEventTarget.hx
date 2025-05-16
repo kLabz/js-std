@@ -24,6 +24,15 @@
 
 package js.xhr;
 
+/**
+	TODO attribute onloadstart
+	TODO attribute onprogress
+	TODO attribute onabort
+	TODO attribute onerror
+	TODO attribute onload
+	TODO attribute ontimeout
+	TODO attribute onloadend
+**/
 extern class XMLHttpRequestEventTarget extends js.dom.EventTarget {
 
 }

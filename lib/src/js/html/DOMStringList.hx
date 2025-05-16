@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute length
+**/
 extern class DOMStringList {
 	function contains(string:String):Bool;
 	function item(index:Int):String;

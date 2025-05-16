@@ -24,6 +24,10 @@
 
 package js.fontMetricsApi;
 
+/**
+	TODO attribute name
+	TODO attribute value
+**/
 extern class Baseline {
 
 }

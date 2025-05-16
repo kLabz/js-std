@@ -24,6 +24,20 @@
 
 package js.xhr;
 
+/**
+	TODO attribute onreadystatechange
+	TODO attribute readyState
+	TODO attribute timeout
+	TODO attribute withCredentials
+	TODO attribute upload
+	TODO attribute responseURL
+	TODO attribute status
+	TODO attribute statusText
+	TODO attribute responseType
+	TODO attribute response
+	TODO attribute responseText
+	TODO attribute responseXML
+**/
 extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
 	static inline var UNSENT : Int = 0;
 	static inline var OPENED : Int = 1;
@@ -38,7 +52,13 @@ extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
 	overload function open(method:String, url:String, async:Bool, ?username:String, ?password:String):Void;
 	function overrideMimeType(mime:String):Void;
 	function send(?body:haxe.extern.EitherType<js.dom.Document, XMLHttpRequestBodyInit>):Void;
+	/**
+		From partial interface in attribution-reporting-api.idl
+	**/
 	function setAttributionReporting(options:js.attributionReportingApi.AttributionReportingRequestOptions):Void;
+	/**
+		From partial interface in trust-token-api.idl
+	**/
 	function setPrivateToken(privateToken:js.trustTokenApi.PrivateToken):Void;
 	function setRequestHeader(name:String, value:String):Void;
 }

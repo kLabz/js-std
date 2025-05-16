@@ -24,6 +24,9 @@
 
 package js.webxrHandInput;
 
+/**
+	TODO attribute jointName
+**/
 extern class XRJointSpace extends js.webxr.XRSpace {
 
 }

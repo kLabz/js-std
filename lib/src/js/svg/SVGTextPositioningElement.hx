@@ -24,6 +24,13 @@
 
 package js.svg;
 
+/**
+	TODO attribute x
+	TODO attribute y
+	TODO attribute dx
+	TODO attribute dy
+	TODO attribute rotate
+**/
 extern class SVGTextPositioningElement extends SVGTextContentElement {
 
 }

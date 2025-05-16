@@ -24,6 +24,9 @@
 
 package js.speechApi;
 
+/**
+	TODO attribute length
+**/
 extern class SpeechRecognitionPhraseList {
 	function new(phrases:Array<SpeechRecognitionPhrase>):Void;
 	function addItem(item:SpeechRecognitionPhrase):Void;

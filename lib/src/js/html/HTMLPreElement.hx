@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute width
+**/
 extern class HTMLPreElement extends HTMLElement {
 	function new():Void;
 }

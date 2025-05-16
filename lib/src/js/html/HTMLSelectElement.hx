@@ -24,8 +24,30 @@
 
 package js.html;
 
+/**
+	TODO attribute autocomplete
+	TODO attribute disabled
+	TODO attribute form
+	TODO attribute multiple
+	TODO attribute name
+	TODO attribute required
+	TODO attribute size
+	TODO attribute type
+	TODO attribute options
+	TODO attribute length
+	TODO attribute selectedOptions
+	TODO attribute selectedIndex
+	TODO attribute value
+	TODO attribute willValidate
+	TODO attribute validity
+	TODO attribute validationMessage
+	TODO attribute labels
+**/
 extern class HTMLSelectElement extends HTMLElement {
 	function new():Void;
+	/**
+		(special = setter)
+	**/
 	function (index:Int, option:HTMLOptionElement):Void;
 	function add(element:haxe.extern.EitherType<HTMLOptionElement, HTMLOptGroupElement>, ?before:haxe.extern.EitherType<HTMLElement, Int>):Void;
 	function checkValidity():Bool;

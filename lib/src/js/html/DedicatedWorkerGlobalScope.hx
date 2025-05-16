@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute name
+	TODO attribute onrtctransform
+**/
 extern class DedicatedWorkerGlobalScope extends WorkerGlobalScope {
 	function close():Void;
 	overload function postMessage(message:Any, transfer:Array<object>):Void;

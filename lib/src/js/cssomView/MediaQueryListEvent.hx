@@ -24,6 +24,10 @@
 
 package js.cssomView;
 
+/**
+	TODO attribute media
+	TODO attribute matches
+**/
 extern class MediaQueryListEvent extends js.dom.Event {
 	function new(type:CSSOMString, ?eventInitDict:MediaQueryListEventInit):Void;
 }

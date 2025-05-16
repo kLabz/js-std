@@ -24,6 +24,12 @@
 
 package js.webxrDepthSensing;
 
+/**
+	TODO attribute width
+	TODO attribute height
+	TODO attribute normDepthBufferFromNormView
+	TODO attribute rawValueToMeters
+**/
 extern class XRDepthInformation {
 
 }

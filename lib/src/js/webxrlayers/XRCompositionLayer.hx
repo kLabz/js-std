@@ -24,6 +24,15 @@
 
 package js.webxrlayers;
 
+/**
+	TODO attribute layout
+	TODO attribute blendTextureSourceAlpha
+	TODO attribute forceMonoPresentation
+	TODO attribute opacity
+	TODO attribute mipLevels
+	TODO attribute quality
+	TODO attribute needsRedraw
+**/
 extern class XRCompositionLayer extends js.webxr.XRLayer {
 	function destroy():Void;
 }

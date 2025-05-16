@@ -24,6 +24,10 @@
 
 package js.pushApi;
 
+/**
+	TODO attribute newSubscription
+	TODO attribute oldSubscription
+**/
 extern class PushSubscriptionChangeEvent extends js.serviceWorkers.ExtendableEvent {
 	function new(type:String, ?eventInitDict:PushSubscriptionChangeEventInit):Void;
 }

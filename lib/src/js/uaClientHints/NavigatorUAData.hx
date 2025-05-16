@@ -24,6 +24,11 @@
 
 package js.uaClientHints;
 
+/**
+	TODO attribute brands
+	TODO attribute mobile
+	TODO attribute platform
+**/
 extern class NavigatorUAData {
 	function getHighEntropyValues(hints:Array<String>):js.lib.Promise<UADataValues>;
 	function toJSON():UALowEntropyJSON;

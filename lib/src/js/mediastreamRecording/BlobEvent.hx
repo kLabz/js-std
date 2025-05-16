@@ -24,6 +24,10 @@
 
 package js.mediastreamRecording;
 
+/**
+	TODO attribute data
+	TODO attribute timecode
+**/
 extern class BlobEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:BlobEventInit):Void;
 }

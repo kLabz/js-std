@@ -24,15 +24,41 @@
 
 package js.webrtc;
 
+/**
+	TODO attribute role
+	TODO attribute component
+	TODO attribute state
+	TODO attribute gatheringState
+	TODO attribute onstatechange
+	TODO attribute ongatheringstatechange
+	TODO attribute onselectedcandidatepairchange
+	TODO attribute onerror
+	TODO attribute onicecandidate
+**/
 extern class RTCIceTransport extends js.dom.EventTarget {
+	/**
+		From partial interface in webrtc-ice.idl
+	**/
 	function new():Void;
+	/**
+		From partial interface in webrtc-ice.idl
+	**/
 	function addRemoteCandidate(?remoteCandidate:RTCIceCandidateInit):Void;
+	/**
+		From partial interface in webrtc-ice.idl
+	**/
 	function gather(?options:js.webrtcIce.RTCIceGatherOptions):Void;
 	function getLocalCandidates():Array<RTCIceCandidate>;
 	function getLocalParameters():RTCIceParameters;
 	function getRemoteCandidates():Array<RTCIceCandidate>;
 	function getRemoteParameters():RTCIceParameters;
 	function getSelectedCandidatePair():RTCIceCandidatePair;
+	/**
+		From partial interface in webrtc-ice.idl
+	**/
 	function start(?remoteParameters:RTCIceParameters, ?role:RTCIceRole):Void;
+	/**
+		From partial interface in webrtc-ice.idl
+	**/
 	function stop():Void;
 }

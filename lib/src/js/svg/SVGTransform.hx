@@ -24,6 +24,11 @@
 
 package js.svg;
 
+/**
+	TODO attribute type
+	TODO attribute matrix
+	TODO attribute angle
+**/
 extern class SVGTransform {
 	static inline var SVG_TRANSFORM_UNKNOWN : Int = 0;
 	static inline var SVG_TRANSFORM_MATRIX : Int = 1;

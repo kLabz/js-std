@@ -24,6 +24,42 @@
 
 package js.html;
 
+/**
+	TODO attribute error
+	TODO attribute src
+	TODO attribute srcObject
+	TODO attribute currentSrc
+	TODO attribute crossOrigin
+	TODO attribute networkState
+	TODO attribute preload
+	TODO attribute buffered
+	TODO attribute readyState
+	TODO attribute seeking
+	TODO attribute currentTime
+	TODO attribute duration
+	TODO attribute paused
+	TODO attribute defaultPlaybackRate
+	TODO attribute playbackRate
+	TODO attribute preservesPitch
+	TODO attribute played
+	TODO attribute seekable
+	TODO attribute ended
+	TODO attribute autoplay
+	TODO attribute loop
+	TODO attribute controls
+	TODO attribute volume
+	TODO attribute muted
+	TODO attribute defaultMuted
+	TODO attribute audioTracks
+	TODO attribute videoTracks
+	TODO attribute textTracks
+	TODO attribute sinkId
+	TODO attribute mediaKeys
+	TODO attribute onencrypted
+	TODO attribute onwaitingforkey
+	TODO attribute remote
+	TODO attribute disableRemotePlayback
+**/
 extern class HTMLMediaElement extends HTMLElement {
 	static inline var NETWORK_EMPTY : Int = 0;
 	static inline var NETWORK_IDLE : Int = 1;
@@ -36,12 +72,21 @@ extern class HTMLMediaElement extends HTMLElement {
 	static inline var HAVE_ENOUGH_DATA : Int = 4;
 	function addTextTrack(kind:TextTrackKind, ?label:String, ?language:String):TextTrack;
 	function canPlayType(type:String):CanPlayTypeResult;
+	/**
+		From partial interface in mediacapture-fromelement.idl
+	**/
 	function captureStream():js.mediacaptureStreams.MediaStream;
 	function fastSeek(time:Float):Void;
 	function getStartDate():object;
 	function load():Void;
 	function pause():Void;
 	function play():js.lib.Promise<Void>;
+	/**
+		From partial interface in encrypted-media.idl
+	**/
 	function setMediaKeys(mediaKeys:js.encryptedMedia.MediaKeys):js.lib.Promise<Void>;
+	/**
+		From partial interface in audio-output.idl
+	**/
 	function setSinkId(sinkId:String):js.lib.Promise<Void>;
 }

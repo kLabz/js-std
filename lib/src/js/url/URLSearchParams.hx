@@ -24,8 +24,14 @@
 
 package js.url;
 
+/**
+	TODO attribute size
+**/
 extern class URLSearchParams {
 	function new(?init:haxe.extern.EitherType<Array<Array<String>>, haxe.extern.EitherType<haxe.DynamicAccess<String>, String>>):Void;
+	/**
+		(special = stringifier)
+	**/
 	function ():Void;
 	function append(name:String, value:String):Void;
 	function delete(name:String, ?value:String):Void;

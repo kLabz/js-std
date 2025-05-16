@@ -24,6 +24,14 @@
 
 package js.performanceTimeline;
 
+/**
+	TODO attribute id
+	TODO attribute name
+	TODO attribute entryType
+	TODO attribute startTime
+	TODO attribute duration
+	TODO attribute navigationId
+**/
 extern class PerformanceEntry {
 	function toJSON():object;
 }

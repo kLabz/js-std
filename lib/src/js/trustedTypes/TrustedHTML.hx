@@ -25,6 +25,9 @@
 package js.trustedTypes;
 
 extern class TrustedHTML {
+	/**
+		(special = stringifier)
+	**/
 	function ():Void;
 	function toJSON():String;
 }

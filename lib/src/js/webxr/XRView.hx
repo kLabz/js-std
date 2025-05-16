@@ -24,6 +24,12 @@
 
 package js.webxr;
 
+/**
+	TODO attribute eye
+	TODO attribute recommendedViewportScale
+	TODO attribute camera
+	TODO attribute isFirstPersonObserver
+**/
 extern class XRView {
 	function requestViewportScale(scale:Float):Void;
 }

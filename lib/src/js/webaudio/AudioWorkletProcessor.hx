@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute port
+**/
 extern class AudioWorkletProcessor {
 	function new():Void;
 }

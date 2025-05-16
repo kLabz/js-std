@@ -24,6 +24,16 @@
 
 package js.webxr;
 
+/**
+	TODO attribute handedness
+	TODO attribute targetRayMode
+	TODO attribute targetRaySpace
+	TODO attribute gripSpace
+	TODO attribute profiles
+	TODO attribute skipRendering
+	TODO attribute gamepad
+	TODO attribute hand
+**/
 extern class XRInputSource {
 
 }

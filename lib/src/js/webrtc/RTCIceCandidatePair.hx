@@ -24,6 +24,10 @@
 
 package js.webrtc;
 
+/**
+	TODO attribute local
+	TODO attribute remote
+**/
 extern class RTCIceCandidatePair {
 
 }

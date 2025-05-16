@@ -24,6 +24,9 @@
 
 package js.pushApi;
 
+/**
+	TODO attribute data
+**/
 extern class PushEvent extends js.serviceWorkers.ExtendableEvent {
 	function new(type:String, ?eventInitDict:PushEventInit):Void;
 }

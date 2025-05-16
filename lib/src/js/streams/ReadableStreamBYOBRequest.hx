@@ -24,6 +24,9 @@
 
 package js.streams;
 
+/**
+	TODO attribute view
+**/
 extern class ReadableStreamBYOBRequest {
 	function respond(bytesWritten:Float):Void;
 	function respondWithNewView(view:ArrayBufferView):Void;

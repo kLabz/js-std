@@ -24,6 +24,20 @@
 
 package js.csp;
 
+/**
+	TODO attribute documentURI
+	TODO attribute referrer
+	TODO attribute blockedURI
+	TODO attribute effectiveDirective
+	TODO attribute violatedDirective
+	TODO attribute originalPolicy
+	TODO attribute sourceFile
+	TODO attribute sample
+	TODO attribute disposition
+	TODO attribute statusCode
+	TODO attribute lineNumber
+	TODO attribute columnNumber
+**/
 extern class SecurityPolicyViolationEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:SecurityPolicyViolationEventInit):Void;
 }

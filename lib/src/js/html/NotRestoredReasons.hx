@@ -24,6 +24,14 @@
 
 package js.html;
 
+/**
+	TODO attribute src
+	TODO attribute id
+	TODO attribute name
+	TODO attribute url
+	TODO attribute reasons
+	TODO attribute children
+**/
 extern class NotRestoredReasons {
 	function toJSON():object;
 }

@@ -24,6 +24,13 @@
 
 package js.eventTiming;
 
+/**
+	TODO attribute processingStart
+	TODO attribute processingEnd
+	TODO attribute cancelable
+	TODO attribute target
+	TODO attribute interactionId
+**/
 extern class PerformanceEventTiming extends js.performanceTimeline.PerformanceEntry {
 	function toJSON():object;
 }

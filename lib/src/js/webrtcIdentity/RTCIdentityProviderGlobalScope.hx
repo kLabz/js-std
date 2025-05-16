@@ -24,6 +24,9 @@
 
 package js.webrtcIdentity;
 
+/**
+	TODO attribute rtcIdentityProvider
+**/
 extern class RTCIdentityProviderGlobalScope extends js.html.WorkerGlobalScope {
 
 }

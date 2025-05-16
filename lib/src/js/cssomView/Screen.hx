@@ -24,6 +24,17 @@
 
 package js.cssomView;
 
+/**
+	TODO attribute availWidth
+	TODO attribute availHeight
+	TODO attribute width
+	TODO attribute height
+	TODO attribute colorDepth
+	TODO attribute pixelDepth
+	TODO attribute orientation
+	TODO attribute isExtended
+	TODO attribute onchange
+**/
 extern class Screen {
 
 }

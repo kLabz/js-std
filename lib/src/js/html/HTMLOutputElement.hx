@@ -24,6 +24,18 @@
 
 package js.html;
 
+/**
+	TODO attribute htmlFor
+	TODO attribute form
+	TODO attribute name
+	TODO attribute type
+	TODO attribute defaultValue
+	TODO attribute value
+	TODO attribute willValidate
+	TODO attribute validity
+	TODO attribute validationMessage
+	TODO attribute labels
+**/
 extern class HTMLOutputElement extends HTMLElement {
 	function new():Void;
 	function checkValidity():Bool;

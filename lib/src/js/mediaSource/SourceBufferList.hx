@@ -24,6 +24,14 @@
 
 package js.mediaSource;
 
+/**
+	TODO attribute length
+	TODO attribute onaddsourcebuffer
+	TODO attribute onremovesourcebuffer
+**/
 extern class SourceBufferList extends js.dom.EventTarget {
+	/**
+		(special = getter)
+	**/
 	function (index:Int):SourceBuffer;
 }

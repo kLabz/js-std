@@ -24,6 +24,14 @@
 
 package js.webNfc;
 
+/**
+	TODO attribute recordType
+	TODO attribute mediaType
+	TODO attribute id
+	TODO attribute data
+	TODO attribute encoding
+	TODO attribute lang
+**/
 extern class NDEFRecord {
 	function new(recordInit:NDEFRecordInit):Void;
 	function toRecords():Array<NDEFRecord>;

@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute onended
+**/
 extern class AudioScheduledSourceNode extends AudioNode {
 	function start(?when:Float):Void;
 	function stop(?when:Float):Void;

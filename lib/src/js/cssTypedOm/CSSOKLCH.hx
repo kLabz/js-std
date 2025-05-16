@@ -24,6 +24,12 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute l
+	TODO attribute c
+	TODO attribute h
+	TODO attribute alpha
+**/
 extern class CSSOKLCH extends CSSColorValue {
 	function new(l:CSSColorPercent, c:CSSColorPercent, h:CSSColorAngle, ?alpha:CSSColorPercent):Void;
 }

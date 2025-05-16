@@ -24,6 +24,15 @@
 
 package js.webxrlayers;
 
+/**
+	TODO attribute space
+	TODO attribute transform
+	TODO attribute radius
+	TODO attribute centralHorizontalAngle
+	TODO attribute upperVerticalAngle
+	TODO attribute lowerVerticalAngle
+	TODO attribute onredraw
+**/
 extern class XREquirectLayer extends XRCompositionLayer {
 
 }

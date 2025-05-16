@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute delayTime
+**/
 extern class DelayNode extends AudioNode {
 	function new(context:BaseAudioContext, ?options:DelayOptions):Void;
 }

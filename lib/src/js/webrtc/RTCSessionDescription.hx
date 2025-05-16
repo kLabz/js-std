@@ -24,6 +24,10 @@
 
 package js.webrtc;
 
+/**
+	TODO attribute type
+	TODO attribute sdp
+**/
 extern class RTCSessionDescription {
 	function new(descriptionInitDict:RTCSessionDescriptionInit):Void;
 	function toJSON():RTCSessionDescriptionInit;

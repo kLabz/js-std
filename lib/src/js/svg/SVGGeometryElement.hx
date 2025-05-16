@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	TODO attribute pathLength
+**/
 extern class SVGGeometryElement extends SVGGraphicsElement {
 	function getPointAtLength(distance:Float):js.geometry.DOMPoint;
 	function getTotalLength():Float;

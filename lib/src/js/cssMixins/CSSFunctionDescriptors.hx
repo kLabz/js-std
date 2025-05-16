@@ -24,6 +24,9 @@
 
 package js.cssMixins;
 
+/**
+	TODO attribute result
+**/
 extern class CSSFunctionDescriptors extends js.cssom.CSSStyleDeclaration {
 
 }

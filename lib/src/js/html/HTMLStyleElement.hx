@@ -24,6 +24,12 @@
 
 package js.html;
 
+/**
+	TODO attribute disabled
+	TODO attribute media
+	TODO attribute blocking
+	TODO attribute type
+**/
 extern class HTMLStyleElement extends HTMLElement {
 	function new():Void;
 }

@@ -24,6 +24,30 @@
 
 package js.html;
 
+/**
+	TODO attribute data
+	TODO attribute type
+	TODO attribute name
+	TODO attribute form
+	TODO attribute width
+	TODO attribute height
+	TODO attribute contentDocument
+	TODO attribute contentWindow
+	TODO attribute willValidate
+	TODO attribute validity
+	TODO attribute validationMessage
+	TODO attribute align
+	TODO attribute archive
+	TODO attribute code
+	TODO attribute declare
+	TODO attribute hspace
+	TODO attribute standby
+	TODO attribute vspace
+	TODO attribute codeBase
+	TODO attribute codeType
+	TODO attribute useMap
+	TODO attribute border
+**/
 extern class HTMLObjectElement extends HTMLElement {
 	function new():Void;
 	function checkValidity():Bool;

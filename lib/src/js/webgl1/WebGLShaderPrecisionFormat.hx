@@ -24,6 +24,11 @@
 
 package js.webgl1;
 
+/**
+	TODO attribute rangeMin
+	TODO attribute rangeMax
+	TODO attribute precision
+**/
 extern class WebGLShaderPrecisionFormat {
 
 }

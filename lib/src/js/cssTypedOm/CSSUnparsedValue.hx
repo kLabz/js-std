@@ -24,9 +24,18 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute length
+**/
 extern class CSSUnparsedValue extends CSSStyleValue {
 	function new(members:Array<CSSUnparsedSegment>):Void;
+	/**
+		(special = getter)
+	**/
 	overload function (index:Int):CSSUnparsedSegment;
+	/**
+		(special = setter)
+	**/
 	overload function (index:Int, val:CSSUnparsedSegment):CSSUnparsedSegment;
 	function values():Iterator<CSSUnparsedSegment>;
 	function values():Iterator<CSSUnparsedSegment>;

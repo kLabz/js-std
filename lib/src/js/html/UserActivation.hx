@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute hasBeenActive
+	TODO attribute isActive
+**/
 extern class UserActivation {
 
 }

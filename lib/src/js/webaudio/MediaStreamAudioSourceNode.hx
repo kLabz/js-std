@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute mediaStream
+**/
 extern class MediaStreamAudioSourceNode extends AudioNode {
 	function new(context:AudioContext, options:MediaStreamAudioSourceOptions):Void;
 }

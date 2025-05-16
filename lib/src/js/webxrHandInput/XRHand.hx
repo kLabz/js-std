@@ -24,6 +24,9 @@
 
 package js.webxrHandInput;
 
+/**
+	TODO attribute size
+**/
 extern class XRHand {
 	function entries():Iterator<Array<Dynamic>>;
 	function get(key:XRHandJoint):XRJointSpace;

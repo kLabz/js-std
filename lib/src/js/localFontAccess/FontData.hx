@@ -24,6 +24,12 @@
 
 package js.localFontAccess;
 
+/**
+	TODO attribute postscriptName
+	TODO attribute fullName
+	TODO attribute family
+	TODO attribute style
+**/
 extern class FontData {
 	function blob():js.lib.Promise<js.fileapi.Blob>;
 }

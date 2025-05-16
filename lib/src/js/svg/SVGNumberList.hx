@@ -24,7 +24,14 @@
 
 package js.svg;
 
+/**
+	TODO attribute length
+	TODO attribute numberOfItems
+**/
 extern class SVGNumberList {
+	/**
+		(special = setter)
+	**/
 	function (index:Int, newItem:SVGNumber):Void;
 	function appendItem(newItem:SVGNumber):SVGNumber;
 	function clear():Void;

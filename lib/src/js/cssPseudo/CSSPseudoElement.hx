@@ -24,6 +24,11 @@
 
 package js.cssPseudo;
 
+/**
+	TODO attribute type
+	TODO attribute element
+	TODO attribute parent
+**/
 extern class CSSPseudoElement extends js.dom.EventTarget {
 	function pseudo(type:CSSOMString):CSSPseudoElement;
 }

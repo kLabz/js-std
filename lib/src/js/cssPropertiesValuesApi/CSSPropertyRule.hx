@@ -24,6 +24,12 @@
 
 package js.cssPropertiesValuesApi;
 
+/**
+	TODO attribute name
+	TODO attribute syntax
+	TODO attribute inherits
+	TODO attribute initialValue
+**/
 extern class CSSPropertyRule extends js.cssom.CSSRule {
 
 }

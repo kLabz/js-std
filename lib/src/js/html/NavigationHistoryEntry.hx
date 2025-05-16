@@ -24,6 +24,14 @@
 
 package js.html;
 
+/**
+	TODO attribute url
+	TODO attribute key
+	TODO attribute id
+	TODO attribute index
+	TODO attribute sameDocument
+	TODO attribute ondispose
+**/
 extern class NavigationHistoryEntry extends js.dom.EventTarget {
 	function getState():Any;
 }

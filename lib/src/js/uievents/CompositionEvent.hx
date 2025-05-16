@@ -24,7 +24,13 @@
 
 package js.uievents;
 
+/**
+	TODO attribute data
+**/
 extern class CompositionEvent extends UIEvent {
 	function new(type:String, ?eventInitDict:CompositionEventInit):Void;
+	/**
+		From partial interface in uievents.idl
+	**/
 	function initCompositionEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:WindowProxy, ?dataArg:String):Void;
 }

@@ -24,9 +24,19 @@
 
 package js.html;
 
+/**
+	TODO attribute kind
+	TODO attribute type
+**/
 extern class DataTransferItem {
 	function getAsFile():js.fileapi.File;
+	/**
+		From partial interface in file-system-access.idl
+	**/
 	function getAsFileSystemHandle():js.lib.Promise<js.fs.FileSystemHandle>;
 	function getAsString(callback:FunctionStringCallback):Void;
+	/**
+		From partial interface in entries-api.idl
+	**/
 	function webkitGetAsEntry():js.entriesApi.FileSystemEntry;
 }

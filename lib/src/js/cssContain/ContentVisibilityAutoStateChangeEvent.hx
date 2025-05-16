@@ -24,6 +24,9 @@
 
 package js.cssContain;
 
+/**
+	TODO attribute skipped
+**/
 extern class ContentVisibilityAutoStateChangeEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:ContentVisibilityAutoStateChangeEventInit):Void;
 }

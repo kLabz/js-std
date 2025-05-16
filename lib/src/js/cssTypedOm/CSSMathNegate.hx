@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute value
+**/
 extern class CSSMathNegate extends CSSMathValue {
 	function new(arg:CSSNumberish):Void;
 }

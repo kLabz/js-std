@@ -24,6 +24,10 @@
 
 package js.webAppLaunch;
 
+/**
+	TODO attribute targetURL
+	TODO attribute files
+**/
 extern class LaunchParams {
 
 }

@@ -24,6 +24,11 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute x
+	TODO attribute y
+	TODO attribute z
+**/
 extern class CSSScale extends CSSTransformComponent {
 	function new(x:CSSNumberish, y:CSSNumberish, ?z:CSSNumberish):Void;
 }

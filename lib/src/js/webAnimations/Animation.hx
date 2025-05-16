@@ -24,6 +24,24 @@
 
 package js.webAnimations;
 
+/**
+	TODO attribute id
+	TODO attribute effect
+	TODO attribute timeline
+	TODO attribute playbackRate
+	TODO attribute playState
+	TODO attribute replaceState
+	TODO attribute pending
+	TODO attribute ready
+	TODO attribute finished
+	TODO attribute onfinish
+	TODO attribute oncancel
+	TODO attribute onremove
+	TODO attribute startTime
+	TODO attribute currentTime
+	TODO attribute trigger
+	TODO attribute overallProgress
+**/
 extern class Animation extends js.dom.EventTarget {
 	function new(?effect:AnimationEffect, ?timeline:AnimationTimeline):Void;
 	function cancel():Void;

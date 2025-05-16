@@ -24,6 +24,9 @@
 
 package js.cssAnimationWorklet;
 
+/**
+	TODO attribute localTime
+**/
 extern class WorkletAnimationEffect {
 	function getComputedTiming():js.webAnimations.ComputedEffectTiming;
 	function getTiming():js.webAnimations.EffectTiming;

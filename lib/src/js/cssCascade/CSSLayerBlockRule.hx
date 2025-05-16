@@ -24,6 +24,9 @@
 
 package js.cssCascade;
 
+/**
+	TODO attribute name
+**/
 extern class CSSLayerBlockRule extends js.cssom.CSSGroupingRule {
 
 }

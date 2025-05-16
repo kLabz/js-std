@@ -26,6 +26,12 @@ package js.permissions;
 
 extern class Permissions {
 	function query(permissionDesc:object):js.lib.Promise<PermissionStatus>;
+	/**
+		From partial interface in permissions-request.idl
+	**/
 	function request(permissionDesc:object):js.lib.Promise<PermissionStatus>;
+	/**
+		From partial interface in permissions-revoke.idl
+	**/
 	function revoke(permissionDesc:object):js.lib.Promise<PermissionStatus>;
 }

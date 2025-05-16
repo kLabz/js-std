@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	TODO attribute offset
+**/
 extern class SVGStopElement extends SVGElement {
 
 }

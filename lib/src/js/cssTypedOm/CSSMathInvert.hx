@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute value
+**/
 extern class CSSMathInvert extends CSSMathValue {
 	function new(arg:CSSNumberish):Void;
 }

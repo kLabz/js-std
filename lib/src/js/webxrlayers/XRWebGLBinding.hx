@@ -24,6 +24,10 @@
 
 package js.webxrlayers;
 
+/**
+	TODO attribute nativeProjectionScaleFactor
+	TODO attribute usesDepthValues
+**/
 extern class XRWebGLBinding {
 	function new(session:js.webxr.XRSession, context:XRWebGLRenderingContext):Void;
 	function createCubeLayer(?init:XRCubeLayerInit):XRCubeLayer;
@@ -32,8 +36,17 @@ extern class XRWebGLBinding {
 	function createProjectionLayer(?init:XRProjectionLayerInit):XRProjectionLayer;
 	function createQuadLayer(?init:XRQuadLayerInit):XRQuadLayer;
 	function foveateBoundTexture(target:GLenum, fixed_foveation:Float):Void;
+	/**
+		From partial interface in raw-camera-access.idl
+	**/
 	function getCameraImage(camera:js.rawCameraAccess.XRCamera):js.webgl1.WebGLTexture;
+	/**
+		From partial interface in webxr-depth-sensing.idl
+	**/
 	function getDepthInformation(view:js.webxr.XRView):js.webxrDepthSensing.XRWebGLDepthInformation;
+	/**
+		From partial interface in webxr-lighting-estimation.idl
+	**/
 	function getReflectionCubeMap(lightProbe:js.webxrLightingEstimation.XRLightProbe):js.webgl1.WebGLTexture;
 	function getSubImage(layer:XRCompositionLayer, frame:js.webxr.XRFrame, ?eye:js.webxr.XREye):XRWebGLSubImage;
 	function getViewSubImage(layer:XRProjectionLayer, view:js.webxr.XRView):XRWebGLSubImage;

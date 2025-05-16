@@ -24,6 +24,11 @@
 
 package js.computePressure;
 
+/**
+	TODO attribute source
+	TODO attribute state
+	TODO attribute time
+**/
 extern class PressureRecord {
 	function toJSON():object;
 }

@@ -24,6 +24,9 @@
 
 package js.webrtcEncodedTransform;
 
+/**
+	TODO attribute data
+**/
 extern class RTCEncodedAudioFrame {
 	function new(originalFrame:RTCEncodedAudioFrame, ?options:RTCEncodedAudioFrameOptions):Void;
 	function getMetadata():RTCEncodedAudioFrameMetadata;

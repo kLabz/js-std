@@ -24,6 +24,14 @@
 
 package js.webcodecs;
 
+/**
+	TODO attribute format
+	TODO attribute sampleRate
+	TODO attribute numberOfFrames
+	TODO attribute numberOfChannels
+	TODO attribute duration
+	TODO attribute timestamp
+**/
 extern class AudioData {
 	function new(init:AudioDataInit):Void;
 	function allocationSize(options:AudioDataCopyToOptions):Int;

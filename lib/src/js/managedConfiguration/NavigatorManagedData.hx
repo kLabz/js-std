@@ -24,11 +24,29 @@
 
 package js.managedConfiguration;
 
+/**
+	TODO attribute onmanagedconfigurationchange
+**/
 extern class NavigatorManagedData extends js.dom.EventTarget {
+	/**
+		From partial interface in device-attributes.idl
+	**/
 	function getAnnotatedAssetId():js.lib.Promise<String>;
+	/**
+		From partial interface in device-attributes.idl
+	**/
 	function getAnnotatedLocation():js.lib.Promise<String>;
+	/**
+		From partial interface in device-attributes.idl
+	**/
 	function getDirectoryId():js.lib.Promise<String>;
+	/**
+		From partial interface in device-attributes.idl
+	**/
 	function getHostname():js.lib.Promise<String>;
 	function getManagedConfiguration(keys:Array<String>):js.lib.Promise<haxe.DynamicAccess<object>>;
+	/**
+		From partial interface in device-attributes.idl
+	**/
 	function getSerialNumber():js.lib.Promise<String>;
 }

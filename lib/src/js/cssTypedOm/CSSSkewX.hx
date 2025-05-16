@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute ax
+**/
 extern class CSSSkewX extends CSSTransformComponent {
 	function new(ax:CSSNumericValue):Void;
 }

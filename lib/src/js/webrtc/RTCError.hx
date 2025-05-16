@@ -24,6 +24,14 @@
 
 package js.webrtc;
 
+/**
+	TODO attribute errorDetail
+	TODO attribute sdpLineNumber
+	TODO attribute sctpCauseCode
+	TODO attribute receivedAlert
+	TODO attribute sentAlert
+	TODO attribute httpRequestStatusCode
+**/
 extern class RTCError extends js.webidl.DOMException {
 	function new(init:RTCErrorInit, ?message:String):Void;
 }

@@ -24,6 +24,12 @@
 
 package js.editContext;
 
+/**
+	TODO attribute rangeStart
+	TODO attribute rangeEnd
+	TODO attribute underlineStyle
+	TODO attribute underlineThickness
+**/
 extern class TextFormat {
 	function new(?options:TextFormatInit):Void;
 }

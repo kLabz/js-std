@@ -24,6 +24,9 @@
 
 package js.wasmJsApi;
 
+/**
+	TODO attribute length
+**/
 extern class Table {
 	function new(descriptor:TableDescriptor, ?value:Any):Void;
 	function get(index:Int):Any;

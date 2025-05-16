@@ -24,6 +24,12 @@
 
 package js.webusb;
 
+/**
+	TODO attribute interfaceNumber
+	TODO attribute alternate
+	TODO attribute alternates
+	TODO attribute claimed
+**/
 extern class USBInterface {
 	function new(configuration:USBConfiguration, interfaceNumber:Int):Void;
 }

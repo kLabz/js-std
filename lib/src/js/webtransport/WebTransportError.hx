@@ -24,6 +24,10 @@
 
 package js.webtransport;
 
+/**
+	TODO attribute source
+	TODO attribute streamErrorCode
+**/
 extern class WebTransportError extends js.webidl.DOMException {
 	function new(?message:String, ?options:WebTransportErrorOptions):Void;
 }

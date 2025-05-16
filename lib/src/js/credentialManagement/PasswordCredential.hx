@@ -24,6 +24,9 @@
 
 package js.credentialManagement;
 
+/**
+	TODO attribute password
+**/
 extern class PasswordCredential extends Credential {
 	overload function new(data:PasswordCredentialData):Void;
 	overload function new(form:js.html.HTMLFormElement):Void;

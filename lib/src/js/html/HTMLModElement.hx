@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute cite
+	TODO attribute dateTime
+**/
 extern class HTMLModElement extends HTMLElement {
 	function new():Void;
 }

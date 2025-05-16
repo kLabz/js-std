@@ -24,6 +24,10 @@
 
 package js.webBluetooth;
 
+/**
+	TODO attribute device
+	TODO attribute connected
+**/
 extern class BluetoothRemoteGATTServer {
 	function connect():js.lib.Promise<BluetoothRemoteGATTServer>;
 	function disconnect():Void;

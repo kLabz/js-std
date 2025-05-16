@@ -24,6 +24,16 @@
 
 package js.html;
 
+/**
+	TODO attribute disabled
+	TODO attribute form
+	TODO attribute label
+	TODO attribute defaultSelected
+	TODO attribute selected
+	TODO attribute value
+	TODO attribute text
+	TODO attribute index
+**/
 extern class HTMLOptionElement extends HTMLElement {
 	function new():Void;
 }

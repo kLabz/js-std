@@ -24,6 +24,11 @@
 
 package js.webBluetooth;
 
+/**
+	TODO attribute device
+	TODO attribute uuid
+	TODO attribute isPrimary
+**/
 extern class BluetoothRemoteGATTService extends js.dom.EventTarget {
 	function getCharacteristic(characteristic:BluetoothCharacteristicUUID):js.lib.Promise<BluetoothRemoteGATTCharacteristic>;
 	function getCharacteristics(?characteristic:BluetoothCharacteristicUUID):js.lib.Promise<Array<BluetoothRemoteGATTCharacteristic>>;

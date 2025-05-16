@@ -24,6 +24,11 @@
 
 package js.reporting;
 
+/**
+	TODO attribute type
+	TODO attribute url
+	TODO attribute body
+**/
 extern class Report {
 	function toJSON():object;
 }

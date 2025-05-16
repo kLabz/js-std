@@ -24,6 +24,14 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute baseFrequencyX
+	TODO attribute baseFrequencyY
+	TODO attribute numOctaves
+	TODO attribute seed
+	TODO attribute stitchTiles
+	TODO attribute type
+**/
 extern class SVGFETurbulenceElement extends js.svg.SVGElement {
 	static inline var SVG_TURBULENCE_TYPE_UNKNOWN : Int = 0;
 	static inline var SVG_TURBULENCE_TYPE_FRACTALNOISE : Int = 1;

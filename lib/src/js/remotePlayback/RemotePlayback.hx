@@ -24,6 +24,12 @@
 
 package js.remotePlayback;
 
+/**
+	TODO attribute state
+	TODO attribute onconnecting
+	TODO attribute onconnect
+	TODO attribute ondisconnect
+**/
 extern class RemotePlayback extends js.dom.EventTarget {
 	function cancelWatchAvailability(?id:Int):js.lib.Promise<Void>;
 	function prompt():js.lib.Promise<Void>;

@@ -24,6 +24,13 @@
 
 package js.html;
 
+/**
+	TODO attribute align
+	TODO attribute color
+	TODO attribute noShade
+	TODO attribute size
+	TODO attribute width
+**/
 extern class HTMLHRElement extends HTMLElement {
 	function new():Void;
 }

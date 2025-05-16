@@ -24,6 +24,11 @@
 
 package js.serverTiming;
 
+/**
+	TODO attribute name
+	TODO attribute duration
+	TODO attribute description
+**/
 extern class PerformanceServerTiming {
 	function toJSON():object;
 }

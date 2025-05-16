@@ -24,6 +24,22 @@
 
 package js.html;
 
+/**
+	TODO attribute caption
+	TODO attribute tHead
+	TODO attribute tFoot
+	TODO attribute tBodies
+	TODO attribute rows
+	TODO attribute align
+	TODO attribute border
+	TODO attribute frame
+	TODO attribute rules
+	TODO attribute summary
+	TODO attribute width
+	TODO attribute bgColor
+	TODO attribute cellPadding
+	TODO attribute cellSpacing
+**/
 extern class HTMLTableElement extends HTMLElement {
 	function new():Void;
 	function createCaption():HTMLTableCaptionElement;

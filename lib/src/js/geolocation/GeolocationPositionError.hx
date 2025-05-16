@@ -24,6 +24,10 @@
 
 package js.geolocation;
 
+/**
+	TODO attribute code
+	TODO attribute message
+**/
 extern class GeolocationPositionError {
 	static inline var PERMISSION_DENIED : Int = 1;
 	static inline var POSITION_UNAVAILABLE : Int = 2;

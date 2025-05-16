@@ -24,6 +24,10 @@
 
 package js.svg;
 
+/**
+	TODO attribute type
+	TODO attribute crossOrigin
+**/
 extern class SVGScriptElement extends SVGElement {
 
 }

@@ -24,6 +24,10 @@
 
 package js.streams;
 
+/**
+	TODO attribute highWaterMark
+	TODO attribute size
+**/
 extern class CountQueuingStrategy {
 	function new(init:QueuingStrategyInit):Void;
 }

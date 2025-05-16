@@ -24,6 +24,10 @@
 
 package js.devicePosture;
 
+/**
+	TODO attribute type
+	TODO attribute onchange
+**/
 extern class DevicePosture extends js.dom.EventTarget {
 
 }

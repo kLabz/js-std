@@ -24,6 +24,14 @@
 
 package js.intersectionObserver;
 
+/**
+	TODO attribute root
+	TODO attribute rootMargin
+	TODO attribute scrollMargin
+	TODO attribute thresholds
+	TODO attribute delay
+	TODO attribute trackVisibility
+**/
 extern class IntersectionObserver {
 	function new(callback:IntersectionObserverCallback, ?options:IntersectionObserverInit):Void;
 	function disconnect():Void;

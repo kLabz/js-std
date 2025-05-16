@@ -24,7 +24,14 @@
 
 package js.html;
 
+/**
+	TODO attribute length
+	TODO attribute selectedIndex
+**/
 extern class HTMLOptionsCollection extends js.dom.HTMLCollection {
+	/**
+		(special = setter)
+	**/
 	function (index:Int, option:HTMLOptionElement):Void;
 	function add(element:haxe.extern.EitherType<HTMLOptionElement, HTMLOptGroupElement>, ?before:haxe.extern.EitherType<HTMLElement, Int>):Void;
 	function remove(index:Int):Void;

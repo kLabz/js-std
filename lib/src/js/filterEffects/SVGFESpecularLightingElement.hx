@@ -24,6 +24,14 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute in1
+	TODO attribute surfaceScale
+	TODO attribute specularConstant
+	TODO attribute specularExponent
+	TODO attribute kernelUnitLengthX
+	TODO attribute kernelUnitLengthY
+**/
 extern class SVGFESpecularLightingElement extends js.svg.SVGElement {
 
 }

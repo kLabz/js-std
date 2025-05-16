@@ -24,6 +24,11 @@
 
 package js.orientationEvent;
 
+/**
+	TODO attribute x
+	TODO attribute y
+	TODO attribute z
+**/
 extern class DeviceMotionEventAcceleration {
 
 }

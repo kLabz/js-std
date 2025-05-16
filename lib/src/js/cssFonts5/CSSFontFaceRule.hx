@@ -24,6 +24,9 @@
 
 package js.cssFonts5;
 
+/**
+	TODO attribute style
+**/
 extern class CSSFontFaceRule extends js.cssom.CSSRule {
 
 }

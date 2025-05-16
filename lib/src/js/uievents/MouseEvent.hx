@@ -24,8 +24,34 @@
 
 package js.uievents;
 
+/**
+	TODO attribute screenX
+	TODO attribute screenY
+	TODO attribute clientX
+	TODO attribute clientY
+	TODO attribute layerX
+	TODO attribute layerY
+	TODO attribute ctrlKey
+	TODO attribute shiftKey
+	TODO attribute altKey
+	TODO attribute metaKey
+	TODO attribute button
+	TODO attribute buttons
+	TODO attribute relatedTarget
+	TODO attribute pageX
+	TODO attribute pageY
+	TODO attribute x
+	TODO attribute y
+	TODO attribute offsetX
+	TODO attribute offsetY
+	TODO attribute movementX
+	TODO attribute movementY
+**/
 extern class MouseEvent extends UIEvent {
 	function new(type:String, ?eventInitDict:MouseEventInit):Void;
 	function getModifierState(keyArg:String):Bool;
+	/**
+		From partial interface in uievents.idl
+	**/
 	function initMouseEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:js.html.Window, ?detailArg:Int, ?screenXArg:Int, ?screenYArg:Int, ?clientXArg:Int, ?clientYArg:Int, ?ctrlKeyArg:Bool, ?altKeyArg:Bool, ?shiftKeyArg:Bool, ?metaKeyArg:Bool, ?buttonArg:Int, ?relatedTargetArg:js.dom.EventTarget):Void;
 }

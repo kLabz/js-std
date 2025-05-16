@@ -24,6 +24,9 @@
 
 package js.clipboardApis;
 
+/**
+	TODO attribute clipboardData
+**/
 extern class ClipboardEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:ClipboardEventInit):Void;
 }

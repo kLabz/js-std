@@ -24,6 +24,9 @@
 
 package js.webgpu;
 
+/**
+	TODO attribute wgslLanguageFeatures
+**/
 extern class GPU {
 	function getPreferredCanvasFormat():GPUTextureFormat;
 	function requestAdapter(?options:GPURequestAdapterOptions):js.lib.Promise<GPUAdapter>;

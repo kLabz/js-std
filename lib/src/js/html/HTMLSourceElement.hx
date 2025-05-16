@@ -24,6 +24,15 @@
 
 package js.html;
 
+/**
+	TODO attribute src
+	TODO attribute type
+	TODO attribute srcset
+	TODO attribute sizes
+	TODO attribute media
+	TODO attribute width
+	TODO attribute height
+**/
 extern class HTMLSourceElement extends HTMLElement {
 	function new():Void;
 }

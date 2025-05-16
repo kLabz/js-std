@@ -24,6 +24,11 @@
 
 package js.webxrLightingEstimation;
 
+/**
+	TODO attribute sphericalHarmonicsCoefficients
+	TODO attribute primaryLightDirection
+	TODO attribute primaryLightIntensity
+**/
 extern class XRLightEstimate {
 
 }

@@ -24,7 +24,15 @@
 
 package js.cssAnimations;
 
+/**
+	TODO attribute name
+	TODO attribute cssRules
+	TODO attribute length
+**/
 extern class CSSKeyframesRule extends js.cssom.CSSRule {
+	/**
+		(special = getter)
+	**/
 	function (index:Int):CSSKeyframeRule;
 	function appendRule(rule:CSSOMString):Void;
 	function deleteRule(select:CSSOMString):Void;

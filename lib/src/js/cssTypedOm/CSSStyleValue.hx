@@ -25,6 +25,9 @@
 package js.cssTypedOm;
 
 extern class CSSStyleValue {
+	/**
+		(special = stringifier)
+	**/
 	function ():Void;
 	function parse(property:String, cssText:String):CSSStyleValue;
 	function parseAll(property:String, cssText:String):Array<CSSStyleValue>;

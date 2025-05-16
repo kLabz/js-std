@@ -24,6 +24,15 @@
 
 package js.html;
 
+/**
+	TODO attribute track
+	TODO attribute id
+	TODO attribute startTime
+	TODO attribute endTime
+	TODO attribute pauseOnExit
+	TODO attribute onenter
+	TODO attribute onexit
+**/
 extern class TextTrackCue extends js.dom.EventTarget {
 
 }

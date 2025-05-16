@@ -24,6 +24,12 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute x
+	TODO attribute y
+	TODO attribute z
+	TODO attribute angle
+**/
 extern class CSSRotate extends CSSTransformComponent {
 	overload function new(x:CSSNumberish, y:CSSNumberish, z:CSSNumberish, angle:CSSNumericValue):Void;
 	overload function new(angle:CSSNumericValue):Void;

@@ -24,6 +24,20 @@
 
 package js.gamepad;
 
+/**
+	TODO attribute id
+	TODO attribute index
+	TODO attribute connected
+	TODO attribute timestamp
+	TODO attribute mapping
+	TODO attribute axes
+	TODO attribute buttons
+	TODO attribute touches
+	TODO attribute vibrationActuator
+	TODO attribute hand
+	TODO attribute hapticActuators
+	TODO attribute pose
+**/
 extern class Gamepad {
 
 }

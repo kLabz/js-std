@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute name
+	TODO attribute areas
+**/
 extern class HTMLMapElement extends HTMLElement {
 	function new():Void;
 }

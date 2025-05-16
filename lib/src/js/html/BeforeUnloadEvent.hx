@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute returnValue
+**/
 extern class BeforeUnloadEvent extends js.dom.Event {
 
 }

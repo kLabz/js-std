@@ -24,12 +24,29 @@
 
 package js.webAnimations;
 
+/**
+	TODO attribute parent
+	TODO attribute previousSibling
+	TODO attribute nextSibling
+**/
 extern class AnimationEffect {
+	/**
+		From partial interface in web-animations-2.idl
+	**/
 	function after(effects:AnimationEffect):Void;
+	/**
+		From partial interface in web-animations-2.idl
+	**/
 	function before(effects:AnimationEffect):Void;
 	function getComputedTiming():ComputedEffectTiming;
 	function getTiming():EffectTiming;
+	/**
+		From partial interface in web-animations-2.idl
+	**/
 	function remove():Void;
+	/**
+		From partial interface in web-animations-2.idl
+	**/
 	function replace(effects:AnimationEffect):Void;
 	function updateTiming(?timing:OptionalEffectTiming):Void;
 }

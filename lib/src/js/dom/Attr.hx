@@ -24,6 +24,15 @@
 
 package js.dom;
 
+/**
+	TODO attribute namespaceURI
+	TODO attribute prefix
+	TODO attribute localName
+	TODO attribute name
+	TODO attribute value
+	TODO attribute ownerElement
+	TODO attribute specified
+**/
 extern class Attr extends Node {
 
 }

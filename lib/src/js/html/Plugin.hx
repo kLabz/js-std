@@ -24,6 +24,12 @@
 
 package js.html;
 
+/**
+	TODO attribute name
+	TODO attribute description
+	TODO attribute filename
+	TODO attribute length
+**/
 extern class Plugin {
 	function item(index:Int):MimeType;
 	function namedItem(name:String):MimeType;

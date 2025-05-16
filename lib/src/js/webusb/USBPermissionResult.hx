@@ -24,6 +24,9 @@
 
 package js.webusb;
 
+/**
+	TODO attribute devices
+**/
 extern class USBPermissionResult extends js.permissions.PermissionStatus {
 
 }

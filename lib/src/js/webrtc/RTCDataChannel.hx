@@ -24,6 +24,26 @@
 
 package js.webrtc;
 
+/**
+	TODO attribute label
+	TODO attribute ordered
+	TODO attribute maxPacketLifeTime
+	TODO attribute maxRetransmits
+	TODO attribute protocol
+	TODO attribute negotiated
+	TODO attribute id
+	TODO attribute readyState
+	TODO attribute bufferedAmount
+	TODO attribute bufferedAmountLowThreshold
+	TODO attribute onopen
+	TODO attribute onbufferedamountlow
+	TODO attribute onerror
+	TODO attribute onclosing
+	TODO attribute onclose
+	TODO attribute onmessage
+	TODO attribute binaryType
+	TODO attribute priority
+**/
 extern class RTCDataChannel extends js.dom.EventTarget {
 	function close():Void;
 	overload function send(data:String):Void;

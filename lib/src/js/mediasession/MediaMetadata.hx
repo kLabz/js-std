@@ -24,6 +24,13 @@
 
 package js.mediasession;
 
+/**
+	TODO attribute title
+	TODO attribute artist
+	TODO attribute album
+	TODO attribute artwork
+	TODO attribute chapterInfo
+**/
 extern class MediaMetadata {
 	function new(?init:MediaMetadataInit):Void;
 }

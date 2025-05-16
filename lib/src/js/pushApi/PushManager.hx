@@ -24,6 +24,9 @@
 
 package js.pushApi;
 
+/**
+	TODO attribute supportedContentEncodings
+**/
 extern class PushManager {
 	function getSubscription():js.lib.Promise<PushSubscription>;
 	function permissionState(?options:PushSubscriptionOptionsInit):js.lib.Promise<js.permissions.PermissionState>;

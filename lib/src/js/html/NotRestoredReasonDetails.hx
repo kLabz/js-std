@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute reason
+**/
 extern class NotRestoredReasonDetails {
 	function toJSON():object;
 }

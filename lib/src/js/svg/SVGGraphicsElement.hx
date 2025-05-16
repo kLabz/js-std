@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	TODO attribute transform
+**/
 extern class SVGGraphicsElement extends SVGElement {
 	function getBBox(?options:SVGBoundingBoxOptions):js.geometry.DOMRect;
 	function getCTM():js.geometry.DOMMatrix;

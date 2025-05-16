@@ -24,6 +24,9 @@
 
 package js.userTiming;
 
+/**
+	TODO attribute detail
+**/
 extern class PerformanceMark extends js.performanceTimeline.PerformanceEntry {
 	function new(markName:String, ?markOptions:PerformanceMarkOptions):Void;
 }

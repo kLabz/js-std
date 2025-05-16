@@ -24,6 +24,15 @@
 
 package js.html;
 
+/**
+	TODO attribute value
+	TODO attribute min
+	TODO attribute max
+	TODO attribute low
+	TODO attribute high
+	TODO attribute optimum
+	TODO attribute labels
+**/
 extern class HTMLMeterElement extends HTMLElement {
 	function new():Void;
 }

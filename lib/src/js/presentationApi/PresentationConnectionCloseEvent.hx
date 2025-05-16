@@ -24,6 +24,10 @@
 
 package js.presentationApi;
 
+/**
+	TODO attribute reason
+	TODO attribute message
+**/
 extern class PresentationConnectionCloseEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:PresentationConnectionCloseEventInit):Void;
 }

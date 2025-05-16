@@ -24,6 +24,12 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute in1
+	TODO attribute operator
+	TODO attribute radiusX
+	TODO attribute radiusY
+**/
 extern class SVGFEMorphologyElement extends js.svg.SVGElement {
 	static inline var SVG_MORPHOLOGY_OPERATOR_UNKNOWN : Int = 0;
 	static inline var SVG_MORPHOLOGY_OPERATOR_ERODE : Int = 1;

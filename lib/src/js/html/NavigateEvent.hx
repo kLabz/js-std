@@ -24,6 +24,19 @@
 
 package js.html;
 
+/**
+	TODO attribute navigationType
+	TODO attribute destination
+	TODO attribute canIntercept
+	TODO attribute userInitiated
+	TODO attribute hashChange
+	TODO attribute signal
+	TODO attribute formData
+	TODO attribute downloadRequest
+	TODO attribute info
+	TODO attribute hasUAVisualTransition
+	TODO attribute sourceElement
+**/
 extern class NavigateEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:NavigateEventInit):Void;
 	function intercept(?options:NavigationInterceptOptions):Void;

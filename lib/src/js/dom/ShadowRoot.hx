@@ -24,7 +24,23 @@
 
 package js.dom;
 
+/**
+	TODO attribute mode
+	TODO attribute delegatesFocus
+	TODO attribute slotAssignment
+	TODO attribute clonable
+	TODO attribute serializable
+	TODO attribute host
+	TODO attribute onslotchange
+	TODO attribute innerHTML
+**/
 extern class ShadowRoot extends DocumentFragment {
+	/**
+		From partial interface in html.idl
+	**/
 	function getHTML(?options:js.html.GetHTMLOptions):String;
+	/**
+		From partial interface in html.idl
+	**/
 	function setHTMLUnsafe(html:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>):Void;
 }

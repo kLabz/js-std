@@ -24,6 +24,18 @@
 
 package js.html;
 
+/**
+	TODO attribute alt
+	TODO attribute coords
+	TODO attribute shape
+	TODO attribute target
+	TODO attribute download
+	TODO attribute ping
+	TODO attribute rel
+	TODO attribute relList
+	TODO attribute referrerPolicy
+	TODO attribute noHref
+**/
 extern class HTMLAreaElement extends HTMLElement {
 	function new():Void;
 }

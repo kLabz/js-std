@@ -24,7 +24,14 @@
 
 package js.cssParserApi;
 
+/**
+	TODO attribute prelude
+	TODO attribute body
+**/
 extern class CSSParserQualifiedRule extends CSSParserRule {
 	function new(prelude:Array<CSSToken>, ?body:Array<CSSParserRule>):Void;
+	/**
+		(special = stringifier)
+	**/
 	function ():Void;
 }

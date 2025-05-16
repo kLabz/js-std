@@ -24,6 +24,9 @@
 
 package js.cssom;
 
+/**
+	TODO attribute length
+**/
 extern class CSSRuleList {
 	function item(index:Int):CSSRule;
 }

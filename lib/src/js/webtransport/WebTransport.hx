@@ -24,6 +24,20 @@
 
 package js.webtransport;
 
+/**
+	TODO attribute ready
+	TODO attribute reliability
+	TODO attribute congestionControl
+	TODO attribute anticipatedConcurrentIncomingUnidirectionalStreams
+	TODO attribute anticipatedConcurrentIncomingBidirectionalStreams
+	TODO attribute protocol
+	TODO attribute closed
+	TODO attribute draining
+	TODO attribute datagrams
+	TODO attribute incomingBidirectionalStreams
+	TODO attribute incomingUnidirectionalStreams
+	TODO attribute supportsReliableOnly
+**/
 extern class WebTransport {
 	function new(url:String, ?options:WebTransportOptions):Void;
 	function close(?closeInfo:WebTransportCloseInfo):Void;

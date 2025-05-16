@@ -24,6 +24,11 @@
 
 package js.fileapi;
 
+/**
+	TODO attribute name
+	TODO attribute lastModified
+	TODO attribute webkitRelativePath
+**/
 extern class File extends Blob {
 	function new(fileBits:Array<BlobPart>, fileName:String, ?options:FilePropertyBag):Void;
 }

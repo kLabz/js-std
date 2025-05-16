@@ -24,6 +24,11 @@
 
 package js.cssAnimations;
 
+/**
+	TODO attribute animationName
+	TODO attribute elapsedTime
+	TODO attribute pseudoElement
+**/
 extern class AnimationEvent extends js.dom.Event {
 	function new(type:CSSOMString, ?animationEventInitDict:AnimationEventInit):Void;
 }

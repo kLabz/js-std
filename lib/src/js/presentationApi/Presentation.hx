@@ -24,6 +24,10 @@
 
 package js.presentationApi;
 
+/**
+	TODO attribute defaultRequest
+	TODO attribute receiver
+**/
 extern class Presentation {
 
 }

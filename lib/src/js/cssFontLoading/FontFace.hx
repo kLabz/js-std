@@ -24,6 +24,24 @@
 
 package js.cssFontLoading;
 
+/**
+	TODO attribute family
+	TODO attribute style
+	TODO attribute weight
+	TODO attribute stretch
+	TODO attribute unicodeRange
+	TODO attribute featureSettings
+	TODO attribute variationSettings
+	TODO attribute display
+	TODO attribute ascentOverride
+	TODO attribute descentOverride
+	TODO attribute lineGapOverride
+	TODO attribute status
+	TODO attribute loaded
+	TODO attribute features
+	TODO attribute variations
+	TODO attribute palettes
+**/
 extern class FontFace {
 	function new(family:CSSOMString, source:haxe.extern.EitherType<CSSOMString, BufferSource>, ?descriptors:FontFaceDescriptors):Void;
 	function load():js.lib.Promise<FontFace>;

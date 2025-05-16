@@ -24,6 +24,11 @@
 
 package js.html;
 
+/**
+	TODO attribute open
+	TODO attribute returnValue
+	TODO attribute closedBy
+**/
 extern class HTMLDialogElement extends HTMLElement {
 	function new():Void;
 	function close(?returnValue:String):Void;

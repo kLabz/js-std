@@ -24,6 +24,49 @@
 
 package js.cssFonts5;
 
+/**
+	TODO attribute src
+	TODO attribute fontFamily
+	TODO attribute font-family
+	TODO attribute fontStyle
+	TODO attribute font-style
+	TODO attribute fontWeight
+	TODO attribute font-weight
+	TODO attribute fontStretch
+	TODO attribute font-stretch
+	TODO attribute fontWidth
+	TODO attribute font-width
+	TODO attribute fontSize
+	TODO attribute font-size
+	TODO attribute sizeAdjust
+	TODO attribute size-adjust
+	TODO attribute unicodeRange
+	TODO attribute unicode-range
+	TODO attribute fontFeatureSettings
+	TODO attribute font-feature-settings
+	TODO attribute fontVariationSettings
+	TODO attribute font-variation-settings
+	TODO attribute fontNamedInstance
+	TODO attribute font-named-instance
+	TODO attribute fontDisplay
+	TODO attribute font-display
+	TODO attribute fontLanguageOverride
+	TODO attribute font-language-override
+	TODO attribute ascentOverride
+	TODO attribute ascent-override
+	TODO attribute descentOverride
+	TODO attribute descent-override
+	TODO attribute lineGapOverride
+	TODO attribute line-gap-override
+	TODO attribute superscriptPositionOverride
+	TODO attribute superscript-position-override
+	TODO attribute subscriptPositionOverride
+	TODO attribute subscript-position-override
+	TODO attribute superscriptSizeOverride
+	TODO attribute superscript-size-override
+	TODO attribute subscriptSizeOverride
+	TODO attribute subscript-size-override
+**/
 extern class CSSFontFaceDescriptors extends js.cssom.CSSStyleDeclaration {
 
 }

@@ -24,6 +24,12 @@
 
 package js.mediacaptureStreams;
 
+/**
+	TODO attribute deviceId
+	TODO attribute kind
+	TODO attribute label
+	TODO attribute groupId
+**/
 extern class MediaDeviceInfo {
 	function toJSON():object;
 }

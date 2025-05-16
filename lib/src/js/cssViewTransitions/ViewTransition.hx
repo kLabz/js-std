@@ -24,6 +24,12 @@
 
 package js.cssViewTransitions;
 
+/**
+	TODO attribute updateCallbackDone
+	TODO attribute ready
+	TODO attribute finished
+	TODO attribute types
+**/
 extern class ViewTransition {
 	function skipTransition():Void;
 }

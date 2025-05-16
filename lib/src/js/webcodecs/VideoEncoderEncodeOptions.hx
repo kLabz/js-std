@@ -32,7 +32,7 @@ typedef VideoEncoderEncodeOptions = {
 	@:optional
 	var avc : js.webcodecsAvcCodecRegistration.VideoEncoderEncodeOptionsForAvc;
 	@:optional
-	var vp9 : js.webcodecsVp9CodecRegistration.VideoEncoderEncodeOptionsForVp9;
-	@:optional
 	var hevc : js.webcodecsHevcCodecRegistration.VideoEncoderEncodeOptionsForHevc;
+	@:optional
+	var vp9 : js.webcodecsVp9CodecRegistration.VideoEncoderEncodeOptionsForVp9;
 };

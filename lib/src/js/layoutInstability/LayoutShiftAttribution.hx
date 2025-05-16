@@ -24,6 +24,11 @@
 
 package js.layoutInstability;
 
+/**
+	TODO attribute node
+	TODO attribute previousRect
+	TODO attribute currentRect
+**/
 extern class LayoutShiftAttribution {
 
 }

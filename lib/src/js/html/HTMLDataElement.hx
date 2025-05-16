@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute value
+**/
 extern class HTMLDataElement extends HTMLElement {
 	function new():Void;
 }

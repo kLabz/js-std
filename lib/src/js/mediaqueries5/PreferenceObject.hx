@@ -24,6 +24,12 @@
 
 package js.mediaqueries5;
 
+/**
+	TODO attribute override
+	TODO attribute value
+	TODO attribute validValues
+	TODO attribute onchange
+**/
 extern class PreferenceObject extends js.dom.EventTarget {
 	function clearOverride():Void;
 	function requestOverride(value:String):js.lib.Promise<Void>;

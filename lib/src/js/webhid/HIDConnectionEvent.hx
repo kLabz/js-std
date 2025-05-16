@@ -24,6 +24,9 @@
 
 package js.webhid;
 
+/**
+	TODO attribute device
+**/
 extern class HIDConnectionEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:HIDConnectionEventInit):Void;
 }

@@ -24,6 +24,12 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute l
+	TODO attribute a
+	TODO attribute b
+	TODO attribute alpha
+**/
 extern class CSSLab extends CSSColorValue {
 	function new(l:CSSColorPercent, a:CSSColorNumber, b:CSSColorNumber, ?alpha:CSSColorPercent):Void;
 }

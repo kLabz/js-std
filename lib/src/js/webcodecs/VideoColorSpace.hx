@@ -24,6 +24,12 @@
 
 package js.webcodecs;
 
+/**
+	TODO attribute primaries
+	TODO attribute transfer
+	TODO attribute matrix
+	TODO attribute fullRange
+**/
 extern class VideoColorSpace {
 	function new(?init:VideoColorSpaceInit):Void;
 	function toJSON():VideoColorSpaceInit;

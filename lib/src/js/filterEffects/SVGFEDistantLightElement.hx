@@ -24,6 +24,10 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute azimuth
+	TODO attribute elevation
+**/
 extern class SVGFEDistantLightElement extends js.svg.SVGElement {
 
 }

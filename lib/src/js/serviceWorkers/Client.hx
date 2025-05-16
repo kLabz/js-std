@@ -24,6 +24,13 @@
 
 package js.serviceWorkers;
 
+/**
+	TODO attribute url
+	TODO attribute frameType
+	TODO attribute id
+	TODO attribute type
+	TODO attribute lifecycleState
+**/
 extern class Client {
 	overload function postMessage(message:Any, transfer:Array<object>):Void;
 	overload function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;

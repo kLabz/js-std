@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute promise
+	TODO attribute reason
+**/
 extern class PromiseRejectionEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:PromiseRejectionEventInit):Void;
 }

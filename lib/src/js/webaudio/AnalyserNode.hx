@@ -24,6 +24,13 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute fftSize
+	TODO attribute frequencyBinCount
+	TODO attribute minDecibels
+	TODO attribute maxDecibels
+	TODO attribute smoothingTimeConstant
+**/
 extern class AnalyserNode extends AudioNode {
 	function new(context:BaseAudioContext, ?options:AnalyserOptions):Void;
 	function getByteFrequencyData(array:Uint8Array):Void;

@@ -24,6 +24,58 @@
 
 package js.html;
 
+/**
+	TODO attribute accept
+	TODO attribute alpha
+	TODO attribute alt
+	TODO attribute autocomplete
+	TODO attribute defaultChecked
+	TODO attribute checked
+	TODO attribute colorSpace
+	TODO attribute dirName
+	TODO attribute disabled
+	TODO attribute form
+	TODO attribute files
+	TODO attribute formAction
+	TODO attribute formEnctype
+	TODO attribute formMethod
+	TODO attribute formNoValidate
+	TODO attribute formTarget
+	TODO attribute height
+	TODO attribute indeterminate
+	TODO attribute list
+	TODO attribute max
+	TODO attribute maxLength
+	TODO attribute min
+	TODO attribute minLength
+	TODO attribute multiple
+	TODO attribute name
+	TODO attribute pattern
+	TODO attribute placeholder
+	TODO attribute readOnly
+	TODO attribute required
+	TODO attribute size
+	TODO attribute src
+	TODO attribute step
+	TODO attribute type
+	TODO attribute defaultValue
+	TODO attribute value
+	TODO attribute valueAsDate
+	TODO attribute valueAsNumber
+	TODO attribute width
+	TODO attribute willValidate
+	TODO attribute validity
+	TODO attribute validationMessage
+	TODO attribute labels
+	TODO attribute selectionStart
+	TODO attribute selectionEnd
+	TODO attribute selectionDirection
+	TODO attribute webkitdirectory
+	TODO attribute webkitEntries
+	TODO attribute capture
+	TODO attribute align
+	TODO attribute useMap
+**/
 extern class HTMLInputElement extends HTMLElement {
 	function new():Void;
 	function checkValidity():Bool;

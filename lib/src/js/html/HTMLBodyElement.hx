@@ -24,6 +24,15 @@
 
 package js.html;
 
+/**
+	TODO attribute onorientationchange
+	TODO attribute text
+	TODO attribute link
+	TODO attribute vLink
+	TODO attribute aLink
+	TODO attribute bgColor
+	TODO attribute background
+**/
 extern class HTMLBodyElement extends HTMLElement {
 	function new():Void;
 }

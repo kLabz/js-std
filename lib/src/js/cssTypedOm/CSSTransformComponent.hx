@@ -24,7 +24,13 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute is2D
+**/
 extern class CSSTransformComponent {
+	/**
+		(special = stringifier)
+	**/
 	function ():Void;
 	function toMatrix():js.geometry.DOMMatrix;
 }

@@ -24,6 +24,15 @@
 
 package js.geolocationSensor;
 
+/**
+	TODO attribute latitude
+	TODO attribute longitude
+	TODO attribute altitude
+	TODO attribute accuracy
+	TODO attribute altitudeAccuracy
+	TODO attribute heading
+	TODO attribute speed
+**/
 extern class GeolocationSensor extends js.genericSensor.Sensor {
 	function new(?options:GeolocationSensorOptions):Void;
 	function read(?readOptions:ReadOptions):js.lib.Promise<GeolocationSensorReading>;

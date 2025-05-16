@@ -24,6 +24,13 @@
 
 package js.indexeddb;
 
+/**
+	TODO attribute name
+	TODO attribute keyPath
+	TODO attribute indexNames
+	TODO attribute transaction
+	TODO attribute autoIncrement
+**/
 extern class IDBObjectStore {
 	function add(value:Any, ?key:Any):IDBRequest;
 	function clear():IDBRequest;

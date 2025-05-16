@@ -24,6 +24,13 @@
 
 package js.webnn;
 
+/**
+	TODO attribute dataType
+	TODO attribute shape
+	TODO attribute readable
+	TODO attribute writable
+	TODO attribute constant
+**/
 extern class MLTensor {
 	function destroy():Void;
 }

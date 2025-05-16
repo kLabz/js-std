@@ -24,6 +24,12 @@
 
 package js.webAnimations;
 
+/**
+	TODO attribute target
+	TODO attribute pseudoElement
+	TODO attribute composite
+	TODO attribute iterationComposite
+**/
 extern class KeyframeEffect extends AnimationEffect {
 	overload function new(source:KeyframeEffect):Void;
 	overload function new(target:js.dom.Element, keyframes:object, ?options:haxe.extern.EitherType<Float, KeyframeEffectOptions>):Void;

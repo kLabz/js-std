@@ -24,6 +24,9 @@
 
 package js.paymentHandler;
 
+/**
+	TODO attribute userHint
+**/
 extern class PaymentManager {
 	function enableDelegations(delegations:Array<PaymentDelegation>):js.lib.Promise<Void>;
 }

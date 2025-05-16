@@ -24,7 +24,16 @@
 
 package js.uievents;
 
+/**
+	TODO attribute data
+	TODO attribute isComposing
+	TODO attribute inputType
+	TODO attribute dataTransfer
+**/
 extern class InputEvent extends UIEvent {
 	function new(type:String, ?eventInitDict:InputEventInit):Void;
+	/**
+		From partial interface in input-events.idl
+	**/
 	function getTargetRanges():Array<js.dom.StaticRange>;
 }

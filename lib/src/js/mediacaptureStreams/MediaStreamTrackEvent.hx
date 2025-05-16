@@ -24,6 +24,9 @@
 
 package js.mediacaptureStreams;
 
+/**
+	TODO attribute track
+**/
 extern class MediaStreamTrackEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:MediaStreamTrackEventInit):Void;
 }

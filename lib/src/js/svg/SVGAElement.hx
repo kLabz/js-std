@@ -24,6 +24,27 @@
 
 package js.svg;
 
+/**
+	TODO attribute target
+	TODO attribute download
+	TODO attribute ping
+	TODO attribute rel
+	TODO attribute relList
+	TODO attribute hreflang
+	TODO attribute type
+	TODO attribute text
+	TODO attribute referrerPolicy
+	TODO attribute origin
+	TODO attribute protocol
+	TODO attribute username
+	TODO attribute password
+	TODO attribute host
+	TODO attribute hostname
+	TODO attribute port
+	TODO attribute pathname
+	TODO attribute search
+	TODO attribute hash
+**/
 extern class SVGAElement extends SVGGraphicsElement {
 
 }

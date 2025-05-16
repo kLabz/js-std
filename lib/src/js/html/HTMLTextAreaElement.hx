@@ -24,6 +24,32 @@
 
 package js.html;
 
+/**
+	TODO attribute autocomplete
+	TODO attribute cols
+	TODO attribute dirName
+	TODO attribute disabled
+	TODO attribute form
+	TODO attribute maxLength
+	TODO attribute minLength
+	TODO attribute name
+	TODO attribute placeholder
+	TODO attribute readOnly
+	TODO attribute required
+	TODO attribute rows
+	TODO attribute wrap
+	TODO attribute type
+	TODO attribute defaultValue
+	TODO attribute value
+	TODO attribute textLength
+	TODO attribute willValidate
+	TODO attribute validity
+	TODO attribute validationMessage
+	TODO attribute labels
+	TODO attribute selectionStart
+	TODO attribute selectionEnd
+	TODO attribute selectionDirection
+**/
 extern class HTMLTextAreaElement extends HTMLElement {
 	function new():Void;
 	function checkValidity():Bool;

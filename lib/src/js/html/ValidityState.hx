@@ -24,6 +24,19 @@
 
 package js.html;
 
+/**
+	TODO attribute valueMissing
+	TODO attribute typeMismatch
+	TODO attribute patternMismatch
+	TODO attribute tooLong
+	TODO attribute tooShort
+	TODO attribute rangeUnderflow
+	TODO attribute rangeOverflow
+	TODO attribute stepMismatch
+	TODO attribute badInput
+	TODO attribute customError
+	TODO attribute valid
+**/
 extern class ValidityState {
 
 }

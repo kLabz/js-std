@@ -24,6 +24,12 @@
 
 package js.webxr;
 
+/**
+	TODO attribute x
+	TODO attribute y
+	TODO attribute width
+	TODO attribute height
+**/
 extern class XRViewport {
 
 }

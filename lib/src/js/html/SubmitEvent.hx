@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute submitter
+**/
 extern class SubmitEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:SubmitEventInit):Void;
 }

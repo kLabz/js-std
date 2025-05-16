@@ -24,6 +24,12 @@
 
 package js.html;
 
+/**
+	TODO attribute width
+	TODO attribute height
+	TODO attribute oncontextlost
+	TODO attribute oncontextrestored
+**/
 extern class OffscreenCanvas extends js.dom.EventTarget {
 	function new(width:Float, height:Float):Void;
 	function convertToBlob(?options:ImageEncodeOptions):js.lib.Promise<js.fileapi.Blob>;

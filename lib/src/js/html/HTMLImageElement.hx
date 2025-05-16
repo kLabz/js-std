@@ -24,6 +24,34 @@
 
 package js.html;
 
+/**
+	TODO attribute alt
+	TODO attribute src
+	TODO attribute srcset
+	TODO attribute sizes
+	TODO attribute crossOrigin
+	TODO attribute useMap
+	TODO attribute isMap
+	TODO attribute width
+	TODO attribute height
+	TODO attribute naturalWidth
+	TODO attribute naturalHeight
+	TODO attribute complete
+	TODO attribute currentSrc
+	TODO attribute referrerPolicy
+	TODO attribute decoding
+	TODO attribute loading
+	TODO attribute fetchPriority
+	TODO attribute x
+	TODO attribute y
+	TODO attribute name
+	TODO attribute lowsrc
+	TODO attribute align
+	TODO attribute hspace
+	TODO attribute vspace
+	TODO attribute longDesc
+	TODO attribute border
+**/
 extern class HTMLImageElement extends HTMLElement {
 	function new():Void;
 	function decode():js.lib.Promise<Void>;

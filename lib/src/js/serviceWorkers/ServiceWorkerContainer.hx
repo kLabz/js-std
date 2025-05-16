@@ -24,6 +24,13 @@
 
 package js.serviceWorkers;
 
+/**
+	TODO attribute controller
+	TODO attribute ready
+	TODO attribute oncontrollerchange
+	TODO attribute onmessage
+	TODO attribute onmessageerror
+**/
 extern class ServiceWorkerContainer extends js.dom.EventTarget {
 	function getRegistration(?clientURL:String):js.lib.Promise<haxe.extern.EitherType<ServiceWorkerRegistration, Void>>;
 	function getRegistrations():js.lib.Promise<Array<ServiceWorkerRegistration>>;

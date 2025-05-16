@@ -24,6 +24,11 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute parameters
+	TODO attribute port
+	TODO attribute onprocessorerror
+**/
 extern class AudioWorkletNode extends AudioNode {
 	function new(context:BaseAudioContext, name:String, ?options:AudioWorkletNodeOptions):Void;
 }

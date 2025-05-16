@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute onclose
+**/
 extern class MessagePort extends js.dom.EventTarget {
 	function close():Void;
 	overload function postMessage(message:Any, transfer:Array<object>):Void;

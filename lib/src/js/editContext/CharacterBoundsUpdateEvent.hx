@@ -24,6 +24,10 @@
 
 package js.editContext;
 
+/**
+	TODO attribute rangeStart
+	TODO attribute rangeEnd
+**/
 extern class CharacterBoundsUpdateEvent extends js.dom.Event {
 	function new(type:String, ?options:CharacterBoundsUpdateEventInit):Void;
 }

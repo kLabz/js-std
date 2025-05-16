@@ -24,6 +24,10 @@
 
 package js.cssPaintApi;
 
+/**
+	TODO attribute width
+	TODO attribute height
+**/
 extern class PaintSize {
 
 }

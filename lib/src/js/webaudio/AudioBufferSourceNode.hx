@@ -24,6 +24,14 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute buffer
+	TODO attribute playbackRate
+	TODO attribute detune
+	TODO attribute loop
+	TODO attribute loopStart
+	TODO attribute loopEnd
+**/
 extern class AudioBufferSourceNode extends AudioScheduledSourceNode {
 	function new(context:BaseAudioContext, ?options:AudioBufferSourceOptions):Void;
 	function start(?when:Float, ?offset:Float, ?duration:Float):Void;

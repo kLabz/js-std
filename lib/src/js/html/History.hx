@@ -24,6 +24,11 @@
 
 package js.html;
 
+/**
+	TODO attribute length
+	TODO attribute scrollRestoration
+	TODO attribute state
+**/
 extern class History {
 	function back():Void;
 	function forward():Void;

@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute align
+**/
 extern class HTMLTableCaptionElement extends HTMLElement {
 	function new():Void;
 }

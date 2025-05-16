@@ -24,6 +24,9 @@
 
 package js.gamepad;
 
+/**
+	TODO attribute gamepad
+**/
 extern class GamepadEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:GamepadEventInit):Void;
 }

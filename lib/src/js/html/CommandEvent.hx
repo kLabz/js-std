@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute source
+	TODO attribute command
+**/
 extern class CommandEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:CommandEventInit):Void;
 }

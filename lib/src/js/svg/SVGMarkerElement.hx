@@ -24,6 +24,16 @@
 
 package js.svg;
 
+/**
+	TODO attribute refX
+	TODO attribute refY
+	TODO attribute markerUnits
+	TODO attribute markerWidth
+	TODO attribute markerHeight
+	TODO attribute orientType
+	TODO attribute orientAngle
+	TODO attribute orient
+**/
 extern class SVGMarkerElement extends SVGElement {
 	static inline var SVG_MARKERUNITS_UNKNOWN : Int = 0;
 	static inline var SVG_MARKERUNITS_USERSPACEONUSE : Int = 1;

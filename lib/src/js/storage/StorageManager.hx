@@ -26,6 +26,9 @@ package js.storage;
 
 extern class StorageManager {
 	function estimate():js.lib.Promise<StorageEstimate>;
+	/**
+		From partial interface in fs.idl
+	**/
 	function getDirectory():js.lib.Promise<js.fs.FileSystemDirectoryHandle>;
 	function persist():js.lib.Promise<Bool>;
 	function persisted():js.lib.Promise<Bool>;

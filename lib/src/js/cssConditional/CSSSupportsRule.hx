@@ -24,6 +24,9 @@
 
 package js.cssConditional;
 
+/**
+	TODO attribute matches
+**/
 extern class CSSSupportsRule extends CSSConditionRule {
 
 }

@@ -24,7 +24,20 @@
 
 package js.selectionApi;
 
+/**
+	TODO attribute anchorNode
+	TODO attribute anchorOffset
+	TODO attribute focusNode
+	TODO attribute focusOffset
+	TODO attribute isCollapsed
+	TODO attribute rangeCount
+	TODO attribute type
+	TODO attribute direction
+**/
 extern class Selection {
+	/**
+		(special = stringifier)
+	**/
 	function ():Void;
 	function addRange(range:js.dom.Range):Void;
 	function collapse(node:js.dom.Node, ?offset:Int):Void;

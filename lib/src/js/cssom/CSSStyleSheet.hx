@@ -24,11 +24,22 @@
 
 package js.cssom;
 
+/**
+	TODO attribute ownerRule
+	TODO attribute cssRules
+	TODO attribute rules
+**/
 extern class CSSStyleSheet extends StyleSheet {
 	function new(?options:CSSStyleSheetInit):Void;
+	/**
+		From partial interface in cssom.idl
+	**/
 	function addRule(?selector:String, ?style:String, ?index:Int):Int;
 	function deleteRule(index:Int):Void;
 	function insertRule(rule:CSSOMString, ?index:Int):Int;
+	/**
+		From partial interface in cssom.idl
+	**/
 	function removeRule(?index:Int):Void;
 	function replace(text:String):js.lib.Promise<CSSStyleSheet>;
 	function replaceSync(text:String):Void;

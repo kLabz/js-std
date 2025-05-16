@@ -24,6 +24,10 @@
 
 package js.svgPaths;
 
+/**
+	TODO attribute type
+	TODO attribute values
+**/
 extern class SVGPathSegment {
 
 }

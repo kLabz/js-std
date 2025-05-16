@@ -24,6 +24,12 @@
 
 package js.mediacaptureStreams;
 
+/**
+	TODO attribute id
+	TODO attribute active
+	TODO attribute onaddtrack
+	TODO attribute onremovetrack
+**/
 extern class MediaStream extends js.dom.EventTarget {
 	overload function new(tracks:Array<MediaStreamTrack>):Void;
 	overload function new(stream:MediaStream):Void;

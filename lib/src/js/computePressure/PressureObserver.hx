@@ -24,6 +24,9 @@
 
 package js.computePressure;
 
+/**
+	TODO attribute knownSources
+**/
 extern class PressureObserver {
 	function new(callback:PressureUpdateCallback):Void;
 	function disconnect():Void;

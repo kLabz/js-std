@@ -26,6 +26,8 @@ package js.cssHighlightApi;
 
 /**
 	TODO SetlikeDeclaration handling
+	TODO attribute priority
+	TODO attribute type
 **/
 extern class Highlight {
 	function new(initialRanges:js.dom.AbstractRange):Void;

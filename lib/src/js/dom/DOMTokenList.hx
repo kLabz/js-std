@@ -24,6 +24,10 @@
 
 package js.dom;
 
+/**
+	TODO attribute length
+	TODO attribute value
+**/
 extern class DOMTokenList {
 	function add(tokens:String):Void;
 	function contains(token:String):Bool;

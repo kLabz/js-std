@@ -25,6 +25,9 @@
 package js.trustedTypes;
 
 extern class TrustedScript {
+	/**
+		(special = stringifier)
+	**/
 	function ():Void;
 	function toJSON():String;
 }

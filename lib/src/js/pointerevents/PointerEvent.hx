@@ -24,6 +24,21 @@
 
 package js.pointerevents;
 
+/**
+	TODO attribute pointerId
+	TODO attribute width
+	TODO attribute height
+	TODO attribute pressure
+	TODO attribute tangentialPressure
+	TODO attribute tiltX
+	TODO attribute tiltY
+	TODO attribute twist
+	TODO attribute altitudeAngle
+	TODO attribute azimuthAngle
+	TODO attribute pointerType
+	TODO attribute isPrimary
+	TODO attribute persistentDeviceId
+**/
 extern class PointerEvent extends js.uievents.MouseEvent {
 	function new(type:String, ?eventInitDict:PointerEventInit):Void;
 	function getCoalescedEvents():Array<PointerEvent>;

@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute compact
+	TODO attribute type
+**/
 extern class HTMLUListElement extends HTMLElement {
 	function new():Void;
 }

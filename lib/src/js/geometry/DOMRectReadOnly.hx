@@ -24,6 +24,16 @@
 
 package js.geometry;
 
+/**
+	TODO attribute x
+	TODO attribute y
+	TODO attribute width
+	TODO attribute height
+	TODO attribute top
+	TODO attribute right
+	TODO attribute bottom
+	TODO attribute left
+**/
 extern class DOMRectReadOnly {
 	function new(?x:Float, ?y:Float, ?width:Float, ?height:Float):Void;
 	function fromRect(?other:DOMRectInit):DOMRectReadOnly;

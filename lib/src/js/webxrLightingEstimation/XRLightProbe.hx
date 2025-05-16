@@ -24,6 +24,10 @@
 
 package js.webxrLightingEstimation;
 
+/**
+	TODO attribute probeSpace
+	TODO attribute onreflectionchange
+**/
 extern class XRLightProbe extends js.dom.EventTarget {
 
 }

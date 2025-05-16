@@ -24,13 +24,38 @@
 
 package js.mediacaptureStreams;
 
+/**
+	TODO attribute ondevicechange
+	TODO attribute oncaptureaction
+**/
 extern class MediaDevices extends js.dom.EventTarget {
 	function enumerateDevices():js.lib.Promise<Array<MediaDeviceInfo>>;
+	/**
+		From partial interface in screen-capture.idl
+	**/
 	function getDisplayMedia(?options:js.screenCapture.DisplayMediaStreamOptions):js.lib.Promise<MediaStream>;
+	/**
+		From partial interface in mediacapture-streams.idl
+	**/
 	function getSupportedConstraints():MediaTrackSupportedConstraints;
+	/**
+		From partial interface in mediacapture-streams.idl
+	**/
 	function getUserMedia(?constraints:MediaStreamConstraints):js.lib.Promise<MediaStream>;
+	/**
+		From partial interface in mediacapture-viewport.idl
+	**/
 	function getViewportMedia(?options:js.screenCapture.DisplayMediaStreamOptions):js.lib.Promise<MediaStream>;
+	/**
+		From partial interface in audio-output.idl
+	**/
 	function selectAudioOutput(?options:js.audioOutput.AudioOutputOptions):js.lib.Promise<MediaDeviceInfo>;
+	/**
+		From partial interface in capture-handle-identity.idl
+	**/
 	function setCaptureHandleConfig(?config:js.captureHandleIdentity.CaptureHandleConfig):Void;
+	/**
+		From partial interface in mediacapture-handle-actions.idl
+	**/
 	function setSupportedCaptureActions(actions:Array<String>):Void;
 }

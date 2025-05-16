@@ -24,6 +24,9 @@
 
 package js.presentationApi;
 
+/**
+	TODO attribute connectionList
+**/
 extern class PresentationReceiver {
 
 }

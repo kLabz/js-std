@@ -24,6 +24,13 @@
 
 package js.serviceWorkers;
 
+/**
+	TODO attribute data
+	TODO attribute origin
+	TODO attribute lastEventId
+	TODO attribute source
+	TODO attribute ports
+**/
 extern class ExtendableMessageEvent extends ExtendableEvent {
 	function new(type:String, ?eventInitDict:ExtendableMessageEventInit):Void;
 }

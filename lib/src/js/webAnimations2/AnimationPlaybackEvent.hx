@@ -24,6 +24,10 @@
 
 package js.webAnimations2;
 
+/**
+	TODO attribute currentTime
+	TODO attribute timelineTime
+**/
 extern class AnimationPlaybackEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:AnimationPlaybackEventInit):Void;
 }

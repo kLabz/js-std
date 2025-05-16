@@ -24,6 +24,9 @@
 
 package js.webmidi;
 
+/**
+	TODO attribute data
+**/
 extern class MIDIMessageEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:MIDIMessageEventInit):Void;
 }

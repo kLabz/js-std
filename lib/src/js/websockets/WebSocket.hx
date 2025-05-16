@@ -24,6 +24,18 @@
 
 package js.websockets;
 
+/**
+	TODO attribute url
+	TODO attribute readyState
+	TODO attribute bufferedAmount
+	TODO attribute onopen
+	TODO attribute onerror
+	TODO attribute onclose
+	TODO attribute extensions
+	TODO attribute protocol
+	TODO attribute onmessage
+	TODO attribute binaryType
+**/
 extern class WebSocket extends js.dom.EventTarget {
 	static inline var CONNECTING : Int = 0;
 	static inline var OPEN : Int = 1;

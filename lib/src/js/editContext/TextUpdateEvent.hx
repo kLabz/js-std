@@ -24,6 +24,13 @@
 
 package js.editContext;
 
+/**
+	TODO attribute updateRangeStart
+	TODO attribute updateRangeEnd
+	TODO attribute text
+	TODO attribute selectionStart
+	TODO attribute selectionEnd
+**/
 extern class TextUpdateEvent extends js.dom.Event {
 	function new(type:String, ?options:TextUpdateEventInit):Void;
 }

@@ -24,11 +24,31 @@
 
 package js.url;
 
+/**
+	TODO attribute href
+	TODO attribute origin
+	TODO attribute protocol
+	TODO attribute username
+	TODO attribute password
+	TODO attribute host
+	TODO attribute hostname
+	TODO attribute port
+	TODO attribute pathname
+	TODO attribute search
+	TODO attribute searchParams
+	TODO attribute hash
+**/
 extern class URL {
 	function new(url:String, ?base:String):Void;
 	function canParse(url:String, ?base:String):Bool;
+	/**
+		From partial interface in FileAPI.idl
+	**/
 	function createObjectURL(obj:haxe.extern.EitherType<js.fileapi.Blob, js.mediaSource.MediaSource>):String;
 	function parse(url:String, ?base:String):URL;
+	/**
+		From partial interface in FileAPI.idl
+	**/
 	function revokeObjectURL(url:String):Void;
 	function toJSON():String;
 }

@@ -24,6 +24,9 @@
 
 package js.contentIndex;
 
+/**
+	TODO attribute id
+**/
 extern class ContentIndexEvent extends js.serviceWorkers.ExtendableEvent {
 	function new(type:String, init:ContentIndexEventInit):Void;
 }

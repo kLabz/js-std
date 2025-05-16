@@ -24,6 +24,15 @@
 
 package js.indexeddb;
 
+/**
+	TODO attribute result
+	TODO attribute error
+	TODO attribute source
+	TODO attribute transaction
+	TODO attribute readyState
+	TODO attribute onsuccess
+	TODO attribute onerror
+**/
 extern class IDBRequest extends js.dom.EventTarget {
 
 }

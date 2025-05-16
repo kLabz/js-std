@@ -24,6 +24,14 @@
 
 package js.netinfo;
 
+/**
+	TODO attribute type
+	TODO attribute effectiveType
+	TODO attribute downlinkMax
+	TODO attribute downlink
+	TODO attribute rtt
+	TODO attribute onchange
+**/
 extern class NetworkInformation extends js.dom.EventTarget {
 
 }

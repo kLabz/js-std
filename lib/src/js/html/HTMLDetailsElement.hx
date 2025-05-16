@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute name
+	TODO attribute open
+**/
 extern class HTMLDetailsElement extends HTMLElement {
 	function new():Void;
 }

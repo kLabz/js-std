@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute length
+**/
 extern class PluginArray {
 	function item(index:Int):Plugin;
 	function namedItem(name:String):Plugin;

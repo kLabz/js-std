@@ -24,6 +24,13 @@
 
 package js.speechApi;
 
+/**
+	TODO attribute utterance
+	TODO attribute charIndex
+	TODO attribute charLength
+	TODO attribute elapsedTime
+	TODO attribute name
+**/
 extern class SpeechSynthesisEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:SpeechSynthesisEventInit):Void;
 }

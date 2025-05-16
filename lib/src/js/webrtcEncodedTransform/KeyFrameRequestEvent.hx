@@ -24,6 +24,9 @@
 
 package js.webrtcEncodedTransform;
 
+/**
+	TODO attribute rid
+**/
 extern class KeyFrameRequestEvent extends js.dom.Event {
 	function new(type:String, ?rid:String):Void;
 }

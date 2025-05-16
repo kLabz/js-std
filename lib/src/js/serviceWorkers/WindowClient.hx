@@ -24,6 +24,11 @@
 
 package js.serviceWorkers;
 
+/**
+	TODO attribute visibilityState
+	TODO attribute focused
+	TODO attribute ancestorOrigins
+**/
 extern class WindowClient extends Client {
 	function focus():js.lib.Promise<WindowClient>;
 	function navigate(url:String):js.lib.Promise<WindowClient>;

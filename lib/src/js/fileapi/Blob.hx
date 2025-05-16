@@ -24,6 +24,10 @@
 
 package js.fileapi;
 
+/**
+	TODO attribute size
+	TODO attribute type
+**/
 extern class Blob {
 	function new(?blobParts:Array<BlobPart>, ?options:BlobPropertyBag):Void;
 	function arrayBuffer():js.lib.Promise<ArrayBuffer>;

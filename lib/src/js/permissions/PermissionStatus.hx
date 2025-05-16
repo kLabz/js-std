@@ -24,6 +24,11 @@
 
 package js.permissions;
 
+/**
+	TODO attribute state
+	TODO attribute name
+	TODO attribute onchange
+**/
 extern class PermissionStatus extends js.dom.EventTarget {
 
 }

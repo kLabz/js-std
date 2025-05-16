@@ -24,6 +24,15 @@
 
 package js.cssom;
 
+/**
+	TODO attribute type
+	TODO attribute href
+	TODO attribute ownerNode
+	TODO attribute parentStyleSheet
+	TODO attribute title
+	TODO attribute media
+	TODO attribute disabled
+**/
 extern class StyleSheet {
 
 }

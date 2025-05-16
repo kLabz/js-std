@@ -24,6 +24,11 @@
 
 package js.gamepad;
 
+/**
+	TODO attribute pressed
+	TODO attribute touched
+	TODO attribute value
+**/
 extern class GamepadButton {
 
 }

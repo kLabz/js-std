@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute length
+**/
 extern class CSSPerspective extends CSSTransformComponent {
 	function new(length:CSSPerspectiveValue):Void;
 }

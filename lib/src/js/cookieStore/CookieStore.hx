@@ -24,6 +24,9 @@
 
 package js.cookieStore;
 
+/**
+	TODO attribute onchange
+**/
 extern class CookieStore extends js.dom.EventTarget {
 	overload function delete(name:String):js.lib.Promise<Void>;
 	overload function delete(options:CookieStoreDeleteOptions):js.lib.Promise<Void>;

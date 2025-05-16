@@ -24,6 +24,12 @@
 
 package js.html;
 
+/**
+	TODO attribute type
+	TODO attribute description
+	TODO attribute suffixes
+	TODO attribute enabledPlugin
+**/
 extern class MimeType {
 
 }

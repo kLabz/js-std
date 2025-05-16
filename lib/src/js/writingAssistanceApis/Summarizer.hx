@@ -24,6 +24,16 @@
 
 package js.writingAssistanceApis;
 
+/**
+	TODO attribute sharedContext
+	TODO attribute type
+	TODO attribute format
+	TODO attribute length
+	TODO attribute expectedInputLanguages
+	TODO attribute expectedContextLanguages
+	TODO attribute outputLanguage
+	TODO attribute inputQuota
+**/
 extern class Summarizer {
 	function availability(?options:SummarizerCreateCoreOptions):js.lib.Promise<Availability>;
 	function create(?options:SummarizerCreateOptions):js.lib.Promise<Summarizer>;

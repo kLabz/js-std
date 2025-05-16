@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute mediaElement
+**/
 extern class MediaElementAudioSourceNode extends AudioNode {
 	function new(context:AudioContext, options:MediaElementAudioSourceOptions):Void;
 }

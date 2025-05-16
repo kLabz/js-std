@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute dataTransfer
+**/
 extern class DragEvent extends js.uievents.MouseEvent {
 	function new(type:String, ?eventInitDict:DragEventInit):Void;
 }

@@ -24,8 +24,14 @@
 
 package js.gamepad;
 
+/**
+	TODO attribute effects
+**/
 extern class GamepadHapticActuator {
 	function playEffect(type:GamepadHapticEffectType, ?params:GamepadEffectParameters):js.lib.Promise<GamepadHapticsResult>;
+	/**
+		From partial interface in gamepad-extensions.idl
+	**/
 	function pulse(value:Float, duration:Float):js.lib.Promise<Bool>;
 	function reset():js.lib.Promise<GamepadHapticsResult>;
 }

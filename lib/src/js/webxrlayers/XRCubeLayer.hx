@@ -24,6 +24,11 @@
 
 package js.webxrlayers;
 
+/**
+	TODO attribute space
+	TODO attribute orientation
+	TODO attribute onredraw
+**/
 extern class XRCubeLayer extends XRCompositionLayer {
 
 }

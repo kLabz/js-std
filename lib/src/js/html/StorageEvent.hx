@@ -24,6 +24,13 @@
 
 package js.html;
 
+/**
+	TODO attribute key
+	TODO attribute oldValue
+	TODO attribute newValue
+	TODO attribute url
+	TODO attribute storageArea
+**/
 extern class StorageEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:StorageEventInit):Void;
 	function initStorageEvent(type:String, ?bubbles:Bool, ?cancelable:Bool, ?key:String, ?oldValue:String, ?newValue:String, ?url:String, ?storageArea:Storage):Void;

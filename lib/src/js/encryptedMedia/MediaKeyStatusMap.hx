@@ -24,6 +24,9 @@
 
 package js.encryptedMedia;
 
+/**
+	TODO attribute size
+**/
 extern class MediaKeyStatusMap {
 	function entries():Iterator<Array<Dynamic>>;
 	function get(keyId:BufferSource):haxe.extern.EitherType<MediaKeyStatus, Void>;

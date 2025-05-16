@@ -24,6 +24,10 @@
 
 package js.cssScrollSnap2;
 
+/**
+	TODO attribute snapTargetBlock
+	TODO attribute snapTargetInline
+**/
 extern class SnapEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:SnapEventInit):Void;
 }

@@ -24,7 +24,16 @@
 
 package js.uievents;
 
+/**
+	TODO attribute view
+	TODO attribute detail
+	TODO attribute sourceCapabilities
+	TODO attribute which
+**/
 extern class UIEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:UIEventInit):Void;
+	/**
+		From partial interface in uievents.idl
+	**/
 	function initUIEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:js.html.Window, ?detailArg:Int):Void;
 }

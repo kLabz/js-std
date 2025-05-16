@@ -24,6 +24,14 @@
 
 package js.cssLayoutApi;
 
+/**
+	TODO attribute inlineSize
+	TODO attribute blockSize
+	TODO attribute inlineOffset
+	TODO attribute blockOffset
+	TODO attribute data
+	TODO attribute breakToken
+**/
 extern class LayoutFragment {
 
 }

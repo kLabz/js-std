@@ -24,6 +24,14 @@
 
 package js.webhid;
 
+/**
+	TODO attribute oninputreport
+	TODO attribute opened
+	TODO attribute vendorId
+	TODO attribute productId
+	TODO attribute productName
+	TODO attribute collections
+**/
 extern class HIDDevice extends js.dom.EventTarget {
 	function close():js.lib.Promise<Void>;
 	function forget():js.lib.Promise<Void>;

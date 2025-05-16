@@ -24,6 +24,9 @@
 
 package js.portals;
 
+/**
+	TODO attribute data
+**/
 extern class PortalActivateEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:PortalActivateEventInit):Void;
 	function adoptPredecessor():HTMLPortalElement;

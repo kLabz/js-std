@@ -24,6 +24,11 @@
 
 package js.cssom;
 
+/**
+	TODO attribute selectorText
+	TODO attribute style
+	TODO attribute styleMap
+**/
 extern class CSSStyleRule extends CSSGroupingRule {
 
 }

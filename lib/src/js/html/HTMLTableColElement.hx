@@ -24,6 +24,14 @@
 
 package js.html;
 
+/**
+	TODO attribute span
+	TODO attribute align
+	TODO attribute ch
+	TODO attribute chOff
+	TODO attribute vAlign
+	TODO attribute width
+**/
 extern class HTMLTableColElement extends HTMLElement {
 	function new():Void;
 }

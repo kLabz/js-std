@@ -24,6 +24,9 @@
 
 package js.mediacaptureHandleActions;
 
+/**
+	TODO attribute action
+**/
 extern class CaptureActionEvent extends js.dom.Event {
 	function new(?init:CaptureActionEventInit):Void;
 }

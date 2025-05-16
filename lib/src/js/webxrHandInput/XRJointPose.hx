@@ -24,6 +24,9 @@
 
 package js.webxrHandInput;
 
+/**
+	TODO attribute radius
+**/
 extern class XRJointPose extends js.webxr.XRPose {
 
 }

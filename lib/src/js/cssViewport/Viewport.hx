@@ -24,6 +24,9 @@
 
 package js.cssViewport;
 
+/**
+	TODO attribute segments
+**/
 extern class Viewport {
 
 }

@@ -24,6 +24,10 @@
 
 package js.speechApi;
 
+/**
+	TODO attribute phrase
+	TODO attribute boost
+**/
 extern class SpeechRecognitionPhrase {
 	function new(phrase:String, ?boost:Float):Void;
 }

@@ -24,6 +24,13 @@
 
 package js.webrtc;
 
+/**
+	TODO attribute mid
+	TODO attribute sender
+	TODO attribute receiver
+	TODO attribute direction
+	TODO attribute currentDirection
+**/
 extern class RTCRtpTransceiver {
 	function setCodecPreferences(codecs:Array<RTCRtpCodec>):Void;
 	function stop():Void;

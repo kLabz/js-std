@@ -24,6 +24,9 @@
 
 package js.wasmJsApi;
 
+/**
+	TODO attribute buffer
+**/
 extern class Memory {
 	function new(descriptor:MemoryDescriptor):Void;
 	function grow(delta:Int):Int;

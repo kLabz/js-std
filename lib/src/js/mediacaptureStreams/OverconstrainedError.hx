@@ -24,6 +24,9 @@
 
 package js.mediacaptureStreams;
 
+/**
+	TODO attribute constraint
+**/
 extern class OverconstrainedError extends js.webidl.DOMException {
 	function new(constraint:String, ?message:String):Void;
 }

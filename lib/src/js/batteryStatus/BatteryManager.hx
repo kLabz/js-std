@@ -24,6 +24,16 @@
 
 package js.batteryStatus;
 
+/**
+	TODO attribute charging
+	TODO attribute chargingTime
+	TODO attribute dischargingTime
+	TODO attribute level
+	TODO attribute onchargingchange
+	TODO attribute onchargingtimechange
+	TODO attribute ondischargingtimechange
+	TODO attribute onlevelchange
+**/
 extern class BatteryManager extends js.dom.EventTarget {
 
 }

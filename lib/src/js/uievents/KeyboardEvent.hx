@@ -24,6 +24,19 @@
 
 package js.uievents;
 
+/**
+	TODO attribute key
+	TODO attribute code
+	TODO attribute location
+	TODO attribute ctrlKey
+	TODO attribute shiftKey
+	TODO attribute altKey
+	TODO attribute metaKey
+	TODO attribute repeat
+	TODO attribute isComposing
+	TODO attribute charCode
+	TODO attribute keyCode
+**/
 extern class KeyboardEvent extends UIEvent {
 	static inline var DOM_KEY_LOCATION_STANDARD : Int = 0x00;
 	static inline var DOM_KEY_LOCATION_LEFT : Int = 0x01;
@@ -31,5 +44,8 @@ extern class KeyboardEvent extends UIEvent {
 	static inline var DOM_KEY_LOCATION_NUMPAD : Int = 0x03;
 	function new(type:String, ?eventInitDict:KeyboardEventInit):Void;
 	function getModifierState(keyArg:String):Bool;
+	/**
+		From partial interface in uievents.idl
+	**/
 	function initKeyboardEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:js.html.Window, ?keyArg:String, ?locationArg:Int, ?ctrlKey:Bool, ?altKey:Bool, ?shiftKey:Bool, ?metaKey:Bool):Void;
 }

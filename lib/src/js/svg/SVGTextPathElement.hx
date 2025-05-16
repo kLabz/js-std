@@ -24,6 +24,11 @@
 
 package js.svg;
 
+/**
+	TODO attribute startOffset
+	TODO attribute method
+	TODO attribute spacing
+**/
 extern class SVGTextPathElement extends SVGTextContentElement {
 	static inline var TEXTPATH_METHODTYPE_UNKNOWN : Int = 0;
 	static inline var TEXTPATH_METHODTYPE_ALIGN : Int = 1;

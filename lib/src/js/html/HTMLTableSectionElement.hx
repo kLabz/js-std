@@ -24,6 +24,13 @@
 
 package js.html;
 
+/**
+	TODO attribute rows
+	TODO attribute align
+	TODO attribute ch
+	TODO attribute chOff
+	TODO attribute vAlign
+**/
 extern class HTMLTableSectionElement extends HTMLElement {
 	function new():Void;
 	function deleteRow(index:Int):Void;

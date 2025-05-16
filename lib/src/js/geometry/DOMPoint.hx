@@ -24,6 +24,12 @@
 
 package js.geometry;
 
+/**
+	TODO attribute x
+	TODO attribute y
+	TODO attribute z
+	TODO attribute w
+**/
 extern class DOMPoint extends DOMPointReadOnly {
 	function new(?x:Float, ?y:Float, ?z:Float, ?w:Float):Void;
 	function fromPoint(?other:DOMPointInit):DOMPoint;

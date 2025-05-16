@@ -24,6 +24,10 @@
 
 package js.capturedMouseEvents;
 
+/**
+	TODO attribute surfaceX
+	TODO attribute surfaceY
+**/
 extern class CapturedMouseEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:CapturedMouseEventInit):Void;
 }

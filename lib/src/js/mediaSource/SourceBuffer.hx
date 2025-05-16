@@ -24,6 +24,22 @@
 
 package js.mediaSource;
 
+/**
+	TODO attribute mode
+	TODO attribute updating
+	TODO attribute buffered
+	TODO attribute timestampOffset
+	TODO attribute audioTracks
+	TODO attribute videoTracks
+	TODO attribute textTracks
+	TODO attribute appendWindowStart
+	TODO attribute appendWindowEnd
+	TODO attribute onupdatestart
+	TODO attribute onupdate
+	TODO attribute onupdateend
+	TODO attribute onerror
+	TODO attribute onabort
+**/
 extern class SourceBuffer extends js.dom.EventTarget {
 	function abort():Void;
 	function appendBuffer(data:BufferSource):Void;

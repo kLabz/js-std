@@ -24,6 +24,11 @@
 
 package js.webgpu;
 
+/**
+	TODO attribute features
+	TODO attribute limits
+	TODO attribute info
+**/
 extern class GPUAdapter {
 	function requestDevice(?descriptor:GPUDeviceDescriptor):js.lib.Promise<GPUDevice>;
 }

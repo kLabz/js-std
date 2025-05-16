@@ -24,6 +24,12 @@
 
 package js.geometry;
 
+/**
+	TODO attribute p1
+	TODO attribute p2
+	TODO attribute p3
+	TODO attribute p4
+**/
 extern class DOMQuad {
 	function new(?p1:DOMPointInit, ?p2:DOMPointInit, ?p3:DOMPointInit, ?p4:DOMPointInit):Void;
 	function fromQuad(?other:DOMQuadInit):DOMQuad;

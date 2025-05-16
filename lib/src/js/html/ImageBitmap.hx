@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute width
+	TODO attribute height
+**/
 extern class ImageBitmap {
 	function close():Void;
 }

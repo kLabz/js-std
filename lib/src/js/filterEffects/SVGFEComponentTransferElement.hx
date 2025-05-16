@@ -24,6 +24,9 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute in1
+**/
 extern class SVGFEComponentTransferElement extends js.svg.SVGElement {
 
 }

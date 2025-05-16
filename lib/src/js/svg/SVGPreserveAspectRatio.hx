@@ -24,6 +24,10 @@
 
 package js.svg;
 
+/**
+	TODO attribute align
+	TODO attribute meetOrSlice
+**/
 extern class SVGPreserveAspectRatio {
 	static inline var SVG_PRESERVEASPECTRATIO_UNKNOWN : Int = 0;
 	static inline var SVG_PRESERVEASPECTRATIO_NONE : Int = 1;

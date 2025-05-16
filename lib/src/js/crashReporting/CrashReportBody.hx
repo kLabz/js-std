@@ -24,6 +24,12 @@
 
 package js.crashReporting;
 
+/**
+	TODO attribute reason
+	TODO attribute stack
+	TODO attribute is_top_level
+	TODO attribute page_visibility
+**/
 extern class CrashReportBody extends js.reporting.ReportBody {
 	function toJSON():object;
 }

@@ -24,6 +24,10 @@
 
 package js.webhid;
 
+/**
+	TODO attribute onconnect
+	TODO attribute ondisconnect
+**/
 extern class HID extends js.dom.EventTarget {
 	function getDevices():js.lib.Promise<Array<HIDDevice>>;
 	function requestDevice(options:HIDDeviceRequestOptions):js.lib.Promise<Array<HIDDevice>>;

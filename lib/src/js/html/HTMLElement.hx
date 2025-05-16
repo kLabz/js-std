@@ -24,6 +24,30 @@
 
 package js.html;
 
+/**
+	TODO attribute title
+	TODO attribute lang
+	TODO attribute translate
+	TODO attribute dir
+	TODO attribute hidden
+	TODO attribute inert
+	TODO attribute accessKey
+	TODO attribute accessKeyLabel
+	TODO attribute draggable
+	TODO attribute spellcheck
+	TODO attribute writingSuggestions
+	TODO attribute autocapitalize
+	TODO attribute autocorrect
+	TODO attribute innerText
+	TODO attribute outerText
+	TODO attribute popover
+	TODO attribute offsetParent
+	TODO attribute offsetTop
+	TODO attribute offsetLeft
+	TODO attribute offsetWidth
+	TODO attribute offsetHeight
+	TODO attribute editContext
+**/
 extern class HTMLElement extends js.dom.Element {
 	function new():Void;
 	function attachInternals():ElementInternals;

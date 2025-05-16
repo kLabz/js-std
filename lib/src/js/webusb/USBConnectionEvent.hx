@@ -24,6 +24,9 @@
 
 package js.webusb;
 
+/**
+	TODO attribute device
+**/
 extern class USBConnectionEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:USBConnectionEventInit):Void;
 }

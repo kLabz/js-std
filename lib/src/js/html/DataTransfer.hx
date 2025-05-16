@@ -24,6 +24,13 @@
 
 package js.html;
 
+/**
+	TODO attribute dropEffect
+	TODO attribute effectAllowed
+	TODO attribute items
+	TODO attribute types
+	TODO attribute files
+**/
 extern class DataTransfer {
 	function new():Void;
 	function clearData(?format:String):Void;

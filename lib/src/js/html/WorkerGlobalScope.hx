@@ -24,6 +24,17 @@
 
 package js.html;
 
+/**
+	TODO attribute self
+	TODO attribute location
+	TODO attribute navigator
+	TODO attribute onerror
+	TODO attribute onlanguagechange
+	TODO attribute onoffline
+	TODO attribute ononline
+	TODO attribute onrejectionhandled
+	TODO attribute onunhandledrejection
+**/
 extern class WorkerGlobalScope extends js.dom.EventTarget {
 	function importScripts(urls:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>):Void;
 }

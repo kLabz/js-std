@@ -24,6 +24,12 @@
 
 package js.svg;
 
+/**
+	TODO attribute unitType
+	TODO attribute value
+	TODO attribute valueInSpecifiedUnits
+	TODO attribute valueAsString
+**/
 extern class SVGAngle {
 	static inline var SVG_ANGLETYPE_UNKNOWN : Int = 0;
 	static inline var SVG_ANGLETYPE_UNSPECIFIED : Int = 1;

@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute visible
+**/
 extern class BarProp {
 
 }

@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute form
+	TODO attribute align
+**/
 extern class HTMLLegendElement extends HTMLElement {
 	function new():Void;
 }

@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	TODO attribute signal
+**/
 extern class AbortController {
 	function new():Void;
 	function abort(?reason:Any):Void;

@@ -24,6 +24,10 @@
 
 package js.cssAnchorPosition;
 
+/**
+	TODO attribute name
+	TODO attribute style
+**/
 extern class CSSPositionTryRule extends js.cssom.CSSRule {
 
 }

@@ -24,17 +24,55 @@
 
 package js.hrTime;
 
+/**
+	TODO attribute timeOrigin
+	TODO attribute eventCounts
+	TODO attribute interactionCount
+	TODO attribute timing
+	TODO attribute navigation
+	TODO attribute onresourcetimingbufferfull
+**/
 extern class Performance extends js.dom.EventTarget {
+	/**
+		From partial interface in user-timing.idl
+	**/
 	function clearMarks(?markName:String):Void;
+	/**
+		From partial interface in user-timing.idl
+	**/
 	function clearMeasures(?measureName:String):Void;
+	/**
+		From partial interface in resource-timing.idl
+	**/
 	function clearResourceTimings():Void;
+	/**
+		From partial interface in performance-timeline.idl
+	**/
 	function getEntries():PerformanceEntryList;
+	/**
+		From partial interface in performance-timeline.idl
+	**/
 	function getEntriesByName(name:String, ?type:String):PerformanceEntryList;
+	/**
+		From partial interface in performance-timeline.idl
+	**/
 	function getEntriesByType(type:String):PerformanceEntryList;
+	/**
+		From partial interface in user-timing.idl
+	**/
 	function mark(markName:String, ?markOptions:js.userTiming.PerformanceMarkOptions):js.userTiming.PerformanceMark;
+	/**
+		From partial interface in user-timing.idl
+	**/
 	function measure(measureName:String, ?startOrMeasureOptions:haxe.extern.EitherType<String, js.userTiming.PerformanceMeasureOptions>, ?endMark:String):js.userTiming.PerformanceMeasure;
+	/**
+		From partial interface in performance-measure-memory.idl
+	**/
 	function measureUserAgentSpecificMemory():js.lib.Promise<js.performanceMeasureMemory.MemoryMeasurement>;
 	function now():DOMHighResTimeStamp;
+	/**
+		From partial interface in resource-timing.idl
+	**/
 	function setResourceTimingBufferSize(maxSize:Int):Void;
 	function toJSON():object;
 }

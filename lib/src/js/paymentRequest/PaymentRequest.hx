@@ -24,10 +24,22 @@
 
 package js.paymentRequest;
 
+/**
+	TODO attribute id
+	TODO attribute shippingAddress
+	TODO attribute shippingOption
+	TODO attribute shippingType
+	TODO attribute onshippingaddresschange
+	TODO attribute onshippingoptionchange
+	TODO attribute onpaymentmethodchange
+**/
 extern class PaymentRequest extends js.dom.EventTarget {
 	function new(methodData:Array<PaymentMethodData>, details:PaymentDetailsInit, ?options:PaymentOptions):Void;
 	function abort():js.lib.Promise<Void>;
 	function canMakePayment():js.lib.Promise<Bool>;
+	/**
+		From partial interface in secure-payment-confirmation.idl
+	**/
 	function securePaymentConfirmationAvailability():js.lib.Promise<js.securePaymentConfirmation.SecurePaymentConfirmationAvailability>;
 	function show(?detailsPromise:js.lib.Promise<PaymentDetailsUpdate>):js.lib.Promise<PaymentResponse>;
 }

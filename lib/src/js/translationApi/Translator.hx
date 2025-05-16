@@ -24,6 +24,11 @@
 
 package js.translationApi;
 
+/**
+	TODO attribute sourceLanguage
+	TODO attribute targetLanguage
+	TODO attribute inputQuota
+**/
 extern class Translator {
 	function availability(options:TranslatorCreateCoreOptions):js.lib.Promise<js.writingAssistanceApis.Availability>;
 	function create(options:TranslatorCreateOptions):js.lib.Promise<Translator>;

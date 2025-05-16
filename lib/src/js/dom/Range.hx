@@ -24,23 +24,38 @@
 
 package js.dom;
 
+/**
+	TODO attribute commonAncestorContainer
+**/
 extern class Range extends AbstractRange {
 	static inline var START_TO_START : Int = 0;
 	static inline var START_TO_END : Int = 1;
 	static inline var END_TO_END : Int = 2;
 	static inline var END_TO_START : Int = 3;
 	function new():Void;
+	/**
+		(special = stringifier)
+	**/
 	function ():Void;
 	function cloneContents():DocumentFragment;
 	function cloneRange():Range;
 	function collapse(?toStart:Bool):Void;
 	function compareBoundaryPoints(how:Int, sourceRange:Range):Int;
 	function comparePoint(node:Node, offset:Int):Int;
+	/**
+		From partial interface in html.idl
+	**/
 	function createContextualFragment(string:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>):DocumentFragment;
 	function deleteContents():Void;
 	function detach():Void;
 	function extractContents():DocumentFragment;
+	/**
+		From partial interface in cssom-view.idl
+	**/
 	function getBoundingClientRect():js.geometry.DOMRect;
+	/**
+		From partial interface in cssom-view.idl
+	**/
 	function getClientRects():js.geometry.DOMRectList;
 	function insertNode(node:Node):Void;
 	function intersectsNode(node:Node):Bool;

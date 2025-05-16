@@ -24,6 +24,11 @@
 
 package js.webidl;
 
+/**
+	TODO attribute name
+	TODO attribute message
+	TODO attribute code
+**/
 extern class DOMException {
 	static inline var INDEX_SIZE_ERR : Int = 1;
 	static inline var DOMSTRING_SIZE_ERR : Int = 2;

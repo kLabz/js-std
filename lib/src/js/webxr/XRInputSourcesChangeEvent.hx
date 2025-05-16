@@ -24,6 +24,11 @@
 
 package js.webxr;
 
+/**
+	TODO attribute session
+	TODO attribute added
+	TODO attribute removed
+**/
 extern class XRInputSourcesChangeEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:XRInputSourcesChangeEventInit):Void;
 }

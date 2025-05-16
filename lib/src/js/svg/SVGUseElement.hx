@@ -24,6 +24,14 @@
 
 package js.svg;
 
+/**
+	TODO attribute x
+	TODO attribute y
+	TODO attribute width
+	TODO attribute height
+	TODO attribute instanceRoot
+	TODO attribute animatedInstanceRoot
+**/
 extern class SVGUseElement extends SVGGraphicsElement {
 
 }

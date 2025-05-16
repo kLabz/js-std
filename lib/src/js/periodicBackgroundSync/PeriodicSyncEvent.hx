@@ -24,6 +24,9 @@
 
 package js.periodicBackgroundSync;
 
+/**
+	TODO attribute tag
+**/
 extern class PeriodicSyncEvent extends js.serviceWorkers.ExtendableEvent {
 	function new(type:String, init:PeriodicSyncEventInit):Void;
 }

@@ -24,6 +24,13 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute in1
+	TODO attribute surfaceScale
+	TODO attribute diffuseConstant
+	TODO attribute kernelUnitLengthX
+	TODO attribute kernelUnitLengthY
+**/
 extern class SVGFEDiffuseLightingElement extends js.svg.SVGElement {
 
 }

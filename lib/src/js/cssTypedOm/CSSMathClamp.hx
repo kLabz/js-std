@@ -24,6 +24,11 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute lower
+	TODO attribute value
+	TODO attribute upper
+**/
 extern class CSSMathClamp extends CSSMathValue {
 	function new(lower:CSSNumberish, value:CSSNumberish, upper:CSSNumberish):Void;
 }

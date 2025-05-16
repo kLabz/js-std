@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute gain
+**/
 extern class GainNode extends AudioNode {
 	function new(context:BaseAudioContext, ?options:GainOptions):Void;
 }

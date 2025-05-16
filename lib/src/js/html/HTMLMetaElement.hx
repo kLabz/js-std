@@ -24,6 +24,13 @@
 
 package js.html;
 
+/**
+	TODO attribute name
+	TODO attribute httpEquiv
+	TODO attribute content
+	TODO attribute media
+	TODO attribute scheme
+**/
 extern class HTMLMetaElement extends HTMLElement {
 	function new():Void;
 }

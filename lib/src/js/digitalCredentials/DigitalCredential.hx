@@ -24,6 +24,10 @@
 
 package js.digitalCredentials;
 
+/**
+	TODO attribute protocol
+	TODO attribute data
+**/
 extern class DigitalCredential extends js.credentialManagement.Credential {
 
 }

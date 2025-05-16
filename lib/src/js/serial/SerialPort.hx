@@ -24,6 +24,13 @@
 
 package js.serial;
 
+/**
+	TODO attribute onconnect
+	TODO attribute ondisconnect
+	TODO attribute connected
+	TODO attribute readable
+	TODO attribute writable
+**/
 extern class SerialPort extends js.dom.EventTarget {
 	function close():js.lib.Promise<Void>;
 	function forget():js.lib.Promise<Void>;

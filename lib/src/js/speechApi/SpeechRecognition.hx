@@ -24,6 +24,25 @@
 
 package js.speechApi;
 
+/**
+	TODO attribute lang
+	TODO attribute continuous
+	TODO attribute interimResults
+	TODO attribute maxAlternatives
+	TODO attribute mode
+	TODO attribute phrases
+	TODO attribute onaudiostart
+	TODO attribute onsoundstart
+	TODO attribute onspeechstart
+	TODO attribute onspeechend
+	TODO attribute onsoundend
+	TODO attribute onaudioend
+	TODO attribute onresult
+	TODO attribute onnomatch
+	TODO attribute onerror
+	TODO attribute onstart
+	TODO attribute onend
+**/
 extern class SpeechRecognition extends js.dom.EventTarget {
 	function new():Void;
 	function abort():Void;

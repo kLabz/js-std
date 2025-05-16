@@ -24,6 +24,11 @@
 
 package js.sharedStorage;
 
+/**
+	TODO attribute sharedStorage
+	TODO attribute privateAggregation
+	TODO attribute navigator
+**/
 extern class SharedStorageWorkletGlobalScope extends js.html.WorkletGlobalScope {
 	function interestGroups():js.lib.Promise<Array<js.turtledove.StorageInterestGroup>>;
 	function register(name:String, operationCtor:Function):Void;

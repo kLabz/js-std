@@ -24,6 +24,17 @@
 
 package js.fileapi;
 
+/**
+	TODO attribute readyState
+	TODO attribute result
+	TODO attribute error
+	TODO attribute onloadstart
+	TODO attribute onprogress
+	TODO attribute onload
+	TODO attribute onabort
+	TODO attribute onerror
+	TODO attribute onloadend
+**/
 extern class FileReader extends js.dom.EventTarget {
 	static inline var EMPTY : Int = 0;
 	static inline var LOADING : Int = 1;

@@ -24,6 +24,10 @@
 
 package js.jsSelfProfiling;
 
+/**
+	TODO attribute sampleInterval
+	TODO attribute stopped
+**/
 extern class Profiler extends js.dom.EventTarget {
 	function new(options:ProfilerInitOptions):Void;
 	function stop():js.lib.Promise<ProfilerTrace>;

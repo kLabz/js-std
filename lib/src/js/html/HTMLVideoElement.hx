@@ -24,10 +24,33 @@
 
 package js.html;
 
+/**
+	TODO attribute width
+	TODO attribute height
+	TODO attribute videoWidth
+	TODO attribute videoHeight
+	TODO attribute poster
+	TODO attribute playsInline
+	TODO attribute onenterpictureinpicture
+	TODO attribute onleavepictureinpicture
+	TODO attribute disablePictureInPicture
+**/
 extern class HTMLVideoElement extends HTMLMediaElement {
 	function new():Void;
+	/**
+		From partial interface in video-rvfc.idl
+	**/
 	function cancelVideoFrameCallback(handle:Int):Void;
+	/**
+		From partial interface in media-playback-quality.idl
+	**/
 	function getVideoPlaybackQuality():js.mediaPlaybackQuality.VideoPlaybackQuality;
+	/**
+		From partial interface in picture-in-picture.idl
+	**/
 	function requestPictureInPicture():js.lib.Promise<js.pictureInPicture.PictureInPictureWindow>;
+	/**
+		From partial interface in video-rvfc.idl
+	**/
 	function requestVideoFrameCallback(callback:VideoFrameRequestCallback):Int;
 }

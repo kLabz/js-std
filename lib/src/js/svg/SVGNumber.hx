@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	TODO attribute value
+**/
 extern class SVGNumber {
 
 }

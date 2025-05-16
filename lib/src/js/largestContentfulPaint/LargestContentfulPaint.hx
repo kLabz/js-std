@@ -24,6 +24,13 @@
 
 package js.largestContentfulPaint;
 
+/**
+	TODO attribute loadTime
+	TODO attribute size
+	TODO attribute id
+	TODO attribute url
+	TODO attribute element
+**/
 extern class LargestContentfulPaint extends js.performanceTimeline.PerformanceEntry {
 	function toJSON():object;
 }

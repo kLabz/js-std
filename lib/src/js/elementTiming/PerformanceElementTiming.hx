@@ -24,6 +24,17 @@
 
 package js.elementTiming;
 
+/**
+	TODO attribute renderTime
+	TODO attribute loadTime
+	TODO attribute intersectionRect
+	TODO attribute identifier
+	TODO attribute naturalWidth
+	TODO attribute naturalHeight
+	TODO attribute id
+	TODO attribute element
+	TODO attribute url
+**/
 extern class PerformanceElementTiming extends js.performanceTimeline.PerformanceEntry {
 	function toJSON():object;
 }

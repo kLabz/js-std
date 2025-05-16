@@ -24,6 +24,9 @@
 
 package js.webrtc;
 
+/**
+	TODO attribute error
+**/
 extern class RTCErrorEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:RTCErrorEventInit):Void;
 }

@@ -24,6 +24,15 @@
 
 package js.touchEvents;
 
+/**
+	TODO attribute touches
+	TODO attribute targetTouches
+	TODO attribute changedTouches
+	TODO attribute altKey
+	TODO attribute metaKey
+	TODO attribute ctrlKey
+	TODO attribute shiftKey
+**/
 extern class TouchEvent extends js.uievents.UIEvent {
 	function new(type:String, ?eventInitDict:TouchEventInit):Void;
 	function getModifierState(keyArg:String):Bool;

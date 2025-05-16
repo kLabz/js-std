@@ -24,6 +24,31 @@
 
 package js.html;
 
+/**
+	TODO attribute src
+	TODO attribute srcdoc
+	TODO attribute name
+	TODO attribute sandbox
+	TODO attribute allow
+	TODO attribute allowFullscreen
+	TODO attribute width
+	TODO attribute height
+	TODO attribute referrerPolicy
+	TODO attribute loading
+	TODO attribute contentDocument
+	TODO attribute contentWindow
+	TODO attribute credentialless
+	TODO attribute csp
+	TODO attribute align
+	TODO attribute scrolling
+	TODO attribute frameBorder
+	TODO attribute longDesc
+	TODO attribute marginHeight
+	TODO attribute marginWidth
+	TODO attribute permissionsPolicy
+	TODO attribute adAuctionHeaders
+	TODO attribute privateToken
+**/
 extern class HTMLIFrameElement extends HTMLElement {
 	function new():Void;
 	function getSVGDocument():js.dom.Document;

@@ -24,6 +24,15 @@
 
 package js.html;
 
+/**
+	TODO attribute kind
+	TODO attribute src
+	TODO attribute srclang
+	TODO attribute label
+	TODO attribute default
+	TODO attribute readyState
+	TODO attribute track
+**/
 extern class HTMLTrackElement extends HTMLElement {
 	static inline var NONE : Int = 0;
 	static inline var LOADING : Int = 1;

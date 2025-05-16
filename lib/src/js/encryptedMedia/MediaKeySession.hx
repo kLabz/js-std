@@ -24,6 +24,14 @@
 
 package js.encryptedMedia;
 
+/**
+	TODO attribute sessionId
+	TODO attribute expiration
+	TODO attribute closed
+	TODO attribute keyStatuses
+	TODO attribute onkeystatuseschange
+	TODO attribute onmessage
+**/
 extern class MediaKeySession extends js.dom.EventTarget {
 	function close():js.lib.Promise<Void>;
 	function generateRequest(initDataType:String, initData:BufferSource):js.lib.Promise<Void>;

@@ -24,6 +24,16 @@
 
 package js.webBluetooth;
 
+/**
+	TODO attribute device
+	TODO attribute uuids
+	TODO attribute name
+	TODO attribute appearance
+	TODO attribute txPower
+	TODO attribute rssi
+	TODO attribute manufacturerData
+	TODO attribute serviceData
+**/
 extern class BluetoothAdvertisingEvent extends js.dom.Event {
 	function new(type:String, init:BluetoothAdvertisingEventInit):Void;
 }

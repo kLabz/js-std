@@ -24,6 +24,21 @@
 
 package js.dom;
 
+/**
+	TODO attribute type
+	TODO attribute target
+	TODO attribute srcElement
+	TODO attribute currentTarget
+	TODO attribute eventPhase
+	TODO attribute cancelBubble
+	TODO attribute bubbles
+	TODO attribute cancelable
+	TODO attribute returnValue
+	TODO attribute defaultPrevented
+	TODO attribute composed
+	TODO attribute isTrusted
+	TODO attribute timeStamp
+**/
 extern class Event {
 	static inline var NONE : Int = 0;
 	static inline var CAPTURING_PHASE : Int = 1;

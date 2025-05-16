@@ -24,6 +24,13 @@
 
 package js.interventionReporting;
 
+/**
+	TODO attribute id
+	TODO attribute message
+	TODO attribute sourceFile
+	TODO attribute lineNumber
+	TODO attribute columnNumber
+**/
 extern class InterventionReportBody extends js.reporting.ReportBody {
 	function toJSON():object;
 }

@@ -24,6 +24,10 @@
 
 package js.cssom;
 
+/**
+	TODO attribute name
+	TODO attribute style
+**/
 extern class CSSMarginRule extends CSSRule {
 
 }

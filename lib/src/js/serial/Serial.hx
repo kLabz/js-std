@@ -24,6 +24,10 @@
 
 package js.serial;
 
+/**
+	TODO attribute onconnect
+	TODO attribute ondisconnect
+**/
 extern class Serial extends js.dom.EventTarget {
 	function getPorts():js.lib.Promise<Array<SerialPort>>;
 	function requestPort(?options:SerialPortRequestOptions):js.lib.Promise<SerialPort>;

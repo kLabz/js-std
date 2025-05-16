@@ -24,6 +24,30 @@
 
 package js.geometry;
 
+/**
+	TODO attribute a
+	TODO attribute b
+	TODO attribute c
+	TODO attribute d
+	TODO attribute e
+	TODO attribute f
+	TODO attribute m11
+	TODO attribute m12
+	TODO attribute m13
+	TODO attribute m14
+	TODO attribute m21
+	TODO attribute m22
+	TODO attribute m23
+	TODO attribute m24
+	TODO attribute m31
+	TODO attribute m32
+	TODO attribute m33
+	TODO attribute m34
+	TODO attribute m41
+	TODO attribute m42
+	TODO attribute m43
+	TODO attribute m44
+**/
 extern class DOMMatrix extends DOMMatrixReadOnly {
 	function new(?init:haxe.extern.EitherType<String, Array<Float>>):Void;
 	function fromFloat32Array(array32:Float32Array):DOMMatrix;

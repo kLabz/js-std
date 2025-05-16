@@ -24,6 +24,13 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute in1
+	TODO attribute in2
+	TODO attribute scale
+	TODO attribute xChannelSelector
+	TODO attribute yChannelSelector
+**/
 extern class SVGFEDisplacementMapElement extends js.svg.SVGElement {
 	static inline var SVG_CHANNEL_UNKNOWN : Int = 0;
 	static inline var SVG_CHANNEL_R : Int = 1;

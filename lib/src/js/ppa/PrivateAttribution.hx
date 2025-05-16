@@ -24,7 +24,16 @@
 
 package js.ppa;
 
+/**
+	TODO attribute aggregationServices
+**/
 extern class PrivateAttribution {
+	/**
+		From partial interface in ppa.idl
+	**/
 	function measureConversion(options:PrivateAttributionConversionOptions):js.lib.Promise<PrivateAttributionConversionResult>;
+	/**
+		From partial interface in ppa.idl
+	**/
 	function saveImpression(options:PrivateAttributionImpressionOptions):Void;
 }

@@ -24,6 +24,10 @@
 
 package js.cssLayoutApi;
 
+/**
+	TODO attribute breakType
+	TODO attribute child
+**/
 extern class ChildBreakToken {
 
 }

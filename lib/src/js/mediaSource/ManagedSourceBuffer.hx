@@ -24,6 +24,9 @@
 
 package js.mediaSource;
 
+/**
+	TODO attribute onbufferedchange
+**/
 extern class ManagedSourceBuffer extends SourceBuffer {
 
 }

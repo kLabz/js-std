@@ -24,6 +24,11 @@
 
 package js.dom;
 
+/**
+	TODO attribute name
+	TODO attribute publicId
+	TODO attribute systemId
+**/
 extern class DocumentType extends Node {
 
 }

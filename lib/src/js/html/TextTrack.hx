@@ -24,6 +24,18 @@
 
 package js.html;
 
+/**
+	TODO attribute kind
+	TODO attribute label
+	TODO attribute language
+	TODO attribute id
+	TODO attribute inBandMetadataTrackDispatchType
+	TODO attribute mode
+	TODO attribute cues
+	TODO attribute activeCues
+	TODO attribute oncuechange
+	TODO attribute sourceBuffer
+**/
 extern class TextTrack extends js.dom.EventTarget {
 	function addCue(cue:TextTrackCue):Void;
 	function removeCue(cue:TextTrackCue):Void;

@@ -24,6 +24,11 @@
 
 package js.scrollAnimations;
 
+/**
+	TODO attribute subject
+	TODO attribute startOffset
+	TODO attribute endOffset
+**/
 extern class ViewTimeline extends ScrollTimeline {
 	function new(?options:ViewTimelineOptions):Void;
 }

@@ -24,6 +24,11 @@
 
 package js.virtualKeyboard;
 
+/**
+	TODO attribute boundingRect
+	TODO attribute overlaysContent
+	TODO attribute ongeometrychange
+**/
 extern class VirtualKeyboard extends js.dom.EventTarget {
 	function hide():Void;
 	function show():Void;

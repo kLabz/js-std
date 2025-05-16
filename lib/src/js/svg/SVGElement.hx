@@ -24,6 +24,11 @@
 
 package js.svg;
 
+/**
+	TODO attribute className
+	TODO attribute ownerSVGElement
+	TODO attribute viewportElement
+**/
 extern class SVGElement extends js.dom.Element {
 
 }

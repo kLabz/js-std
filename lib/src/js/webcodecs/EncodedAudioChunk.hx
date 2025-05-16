@@ -24,6 +24,12 @@
 
 package js.webcodecs;
 
+/**
+	TODO attribute type
+	TODO attribute timestamp
+	TODO attribute duration
+	TODO attribute byteLength
+**/
 extern class EncodedAudioChunk {
 	function new(init:EncodedAudioChunkInit):Void;
 	function copyTo(destination:AllowSharedBufferSource):Void;

@@ -24,6 +24,14 @@
 
 package js.genericSensor;
 
+/**
+	TODO attribute activated
+	TODO attribute hasReading
+	TODO attribute timestamp
+	TODO attribute onreading
+	TODO attribute onactivate
+	TODO attribute onerror
+**/
 extern class Sensor extends js.dom.EventTarget {
 	function start():Void;
 	function stop():Void;

@@ -24,6 +24,9 @@
 
 package js.encryptedMedia;
 
+/**
+	TODO attribute keySystem
+**/
 extern class MediaKeySystemAccess {
 	function createMediaKeys():js.lib.Promise<MediaKeys>;
 	function getConfiguration():MediaKeySystemConfiguration;

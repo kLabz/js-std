@@ -24,6 +24,10 @@
 
 package js.webtransport;
 
+/**
+	TODO attribute readable
+	TODO attribute writable
+**/
 extern class WebTransportBidirectionalStream {
 
 }

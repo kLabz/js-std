@@ -24,7 +24,13 @@
 
 package js.html;
 
+/**
+	TODO attribute length
+**/
 extern class TextTrackCueList {
+	/**
+		(special = getter)
+	**/
 	function (index:Int):TextTrackCue;
 	function getCueById(id:String):TextTrackCue;
 }

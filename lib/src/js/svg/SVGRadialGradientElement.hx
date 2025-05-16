@@ -24,6 +24,14 @@
 
 package js.svg;
 
+/**
+	TODO attribute cx
+	TODO attribute cy
+	TODO attribute r
+	TODO attribute fx
+	TODO attribute fy
+	TODO attribute fr
+**/
 extern class SVGRadialGradientElement extends SVGGradientElement {
 
 }

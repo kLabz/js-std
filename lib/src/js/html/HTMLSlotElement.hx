@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute name
+**/
 extern class HTMLSlotElement extends HTMLElement {
 	function new():Void;
 	function assign(nodes:haxe.extern.EitherType<js.dom.Element, js.dom.Text>):Void;

@@ -24,6 +24,16 @@
 
 package js.intersectionObserver;
 
+/**
+	TODO attribute time
+	TODO attribute rootBounds
+	TODO attribute boundingClientRect
+	TODO attribute intersectionRect
+	TODO attribute isIntersecting
+	TODO attribute isVisible
+	TODO attribute intersectionRatio
+	TODO attribute target
+**/
 extern class IntersectionObserverEntry {
 	function new(intersectionObserverEntryInit:IntersectionObserverEntryInit):Void;
 }

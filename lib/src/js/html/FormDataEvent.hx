@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute formData
+**/
 extern class FormDataEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:FormDataEventInit):Void;
 }

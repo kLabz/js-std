@@ -24,6 +24,10 @@
 
 package js.cssom;
 
+/**
+	TODO attribute mediaText
+	TODO attribute length
+**/
 extern class MediaList {
 	function appendMedium(medium:CSSOMString):Void;
 	function deleteMedium(medium:CSSOMString):Void;

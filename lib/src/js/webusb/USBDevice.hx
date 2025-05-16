@@ -24,6 +24,25 @@
 
 package js.webusb;
 
+/**
+	TODO attribute usbVersionMajor
+	TODO attribute usbVersionMinor
+	TODO attribute usbVersionSubminor
+	TODO attribute deviceClass
+	TODO attribute deviceSubclass
+	TODO attribute deviceProtocol
+	TODO attribute vendorId
+	TODO attribute productId
+	TODO attribute deviceVersionMajor
+	TODO attribute deviceVersionMinor
+	TODO attribute deviceVersionSubminor
+	TODO attribute manufacturerName
+	TODO attribute productName
+	TODO attribute serialNumber
+	TODO attribute configuration
+	TODO attribute configurations
+	TODO attribute opened
+**/
 extern class USBDevice {
 	function claimInterface(interfaceNumber:Int):js.lib.Promise<Void>;
 	function clearHalt(direction:USBDirection, endpointNumber:Int):js.lib.Promise<Void>;

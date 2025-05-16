@@ -24,6 +24,9 @@
 
 package js.webrtc;
 
+/**
+	TODO attribute expires
+**/
 extern class RTCCertificate {
 	function getFingerprints():Array<RTCDtlsFingerprint>;
 }

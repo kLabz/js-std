@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute value
+**/
 extern class CSSKeywordValue extends CSSStyleValue {
 	function new(value:String):Void;
 }

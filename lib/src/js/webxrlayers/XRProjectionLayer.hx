@@ -24,6 +24,14 @@
 
 package js.webxrlayers;
 
+/**
+	TODO attribute textureWidth
+	TODO attribute textureHeight
+	TODO attribute textureArrayLength
+	TODO attribute ignoreDepthValues
+	TODO attribute fixedFoveation
+	TODO attribute deltaPose
+**/
 extern class XRProjectionLayer extends XRCompositionLayer {
 
 }

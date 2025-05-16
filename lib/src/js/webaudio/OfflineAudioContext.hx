@@ -24,6 +24,10 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute length
+	TODO attribute oncomplete
+**/
 extern class OfflineAudioContext extends BaseAudioContext {
 	overload function new(numberOfChannels:Int, length:Int, sampleRate:Float):Void;
 	overload function new(contextOptions:OfflineAudioContextOptions):Void;

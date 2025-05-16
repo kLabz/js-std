@@ -24,6 +24,12 @@
 
 package js.webcodecs;
 
+/**
+	TODO attribute type
+	TODO attribute complete
+	TODO attribute completed
+	TODO attribute tracks
+**/
 extern class ImageDecoder {
 	function new(init:ImageDecoderInit):Void;
 	function close():Void;

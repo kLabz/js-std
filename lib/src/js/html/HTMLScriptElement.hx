@@ -24,6 +24,22 @@
 
 package js.html;
 
+/**
+	TODO attribute src
+	TODO attribute type
+	TODO attribute noModule
+	TODO attribute async
+	TODO attribute defer
+	TODO attribute crossOrigin
+	TODO attribute text
+	TODO attribute integrity
+	TODO attribute referrerPolicy
+	TODO attribute blocking
+	TODO attribute fetchPriority
+	TODO attribute charset
+	TODO attribute event
+	TODO attribute htmlFor
+**/
 extern class HTMLScriptElement extends HTMLElement {
 	function new():Void;
 	function supports(type:String):Bool;

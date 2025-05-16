@@ -24,6 +24,13 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute value
+	TODO attribute automationRate
+	TODO attribute defaultValue
+	TODO attribute minValue
+	TODO attribute maxValue
+**/
 extern class AudioParam {
 	function cancelAndHoldAtTime(cancelTime:Float):AudioParam;
 	function cancelScheduledValues(cancelTime:Float):AudioParam;

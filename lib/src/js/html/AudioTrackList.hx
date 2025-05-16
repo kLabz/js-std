@@ -24,7 +24,16 @@
 
 package js.html;
 
+/**
+	TODO attribute length
+	TODO attribute onchange
+	TODO attribute onaddtrack
+	TODO attribute onremovetrack
+**/
 extern class AudioTrackList extends js.dom.EventTarget {
+	/**
+		(special = getter)
+	**/
 	function (index:Int):AudioTrack;
 	function getTrackById(id:String):AudioTrack;
 }

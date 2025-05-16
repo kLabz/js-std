@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute text
+**/
 extern class HTMLTitleElement extends HTMLElement {
 	function new():Void;
 }

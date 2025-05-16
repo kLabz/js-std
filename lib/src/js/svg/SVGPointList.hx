@@ -24,7 +24,14 @@
 
 package js.svg;
 
+/**
+	TODO attribute length
+	TODO attribute numberOfItems
+**/
 extern class SVGPointList {
+	/**
+		(special = setter)
+	**/
 	function (index:Int, newItem:js.geometry.DOMPoint):Void;
 	function appendItem(newItem:js.geometry.DOMPoint):js.geometry.DOMPoint;
 	function clear():Void;

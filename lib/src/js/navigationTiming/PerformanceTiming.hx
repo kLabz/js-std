@@ -24,6 +24,29 @@
 
 package js.navigationTiming;
 
+/**
+	TODO attribute navigationStart
+	TODO attribute unloadEventStart
+	TODO attribute unloadEventEnd
+	TODO attribute redirectStart
+	TODO attribute redirectEnd
+	TODO attribute fetchStart
+	TODO attribute domainLookupStart
+	TODO attribute domainLookupEnd
+	TODO attribute connectStart
+	TODO attribute connectEnd
+	TODO attribute secureConnectionStart
+	TODO attribute requestStart
+	TODO attribute responseStart
+	TODO attribute responseEnd
+	TODO attribute domLoading
+	TODO attribute domInteractive
+	TODO attribute domContentLoadedEventStart
+	TODO attribute domContentLoadedEventEnd
+	TODO attribute domComplete
+	TODO attribute loadEventStart
+	TODO attribute loadEventEnd
+**/
 extern class PerformanceTiming {
 	function toJSON():object;
 }

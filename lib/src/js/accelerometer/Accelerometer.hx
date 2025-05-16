@@ -24,6 +24,11 @@
 
 package js.accelerometer;
 
+/**
+	TODO attribute x
+	TODO attribute y
+	TODO attribute z
+**/
 extern class Accelerometer extends js.genericSensor.Sensor {
 	function new(?options:AccelerometerSensorOptions):Void;
 }

@@ -24,6 +24,12 @@
 
 package js.webxr;
 
+/**
+	TODO attribute position
+	TODO attribute orientation
+	TODO attribute matrix
+	TODO attribute inverse
+**/
 extern class XRRigidTransform {
 	function new(?position:js.geometry.DOMPointInit, ?orientation:js.geometry.DOMPointInit):Void;
 }

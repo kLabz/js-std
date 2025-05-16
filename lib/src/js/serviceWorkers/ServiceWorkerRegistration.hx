@@ -24,8 +24,30 @@
 
 package js.serviceWorkers;
 
+/**
+	TODO attribute installing
+	TODO attribute waiting
+	TODO attribute active
+	TODO attribute navigationPreload
+	TODO attribute scope
+	TODO attribute updateViaCache
+	TODO attribute onupdatefound
+	TODO attribute backgroundFetch
+	TODO attribute sync
+	TODO attribute cookies
+	TODO attribute index
+	TODO attribute paymentManager
+	TODO attribute periodicSync
+	TODO attribute pushManager
+**/
 extern class ServiceWorkerRegistration extends js.dom.EventTarget {
+	/**
+		From partial interface in notifications.idl
+	**/
 	function getNotifications(?filter:js.notifications.GetNotificationOptions):js.lib.Promise<Array<js.notifications.Notification>>;
+	/**
+		From partial interface in notifications.idl
+	**/
 	function showNotification(title:String, ?options:js.notifications.NotificationOptions):js.lib.Promise<Void>;
 	function unregister():js.lib.Promise<Bool>;
 	function update():js.lib.Promise<ServiceWorkerRegistration>;

@@ -24,6 +24,13 @@
 
 package js.realWorldMeshing;
 
+/**
+	TODO attribute meshSpace
+	TODO attribute vertices
+	TODO attribute indices
+	TODO attribute lastChangedTime
+	TODO attribute semanticLabel
+**/
 extern class XRMesh {
 
 }

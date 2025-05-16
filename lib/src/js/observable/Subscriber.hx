@@ -24,6 +24,10 @@
 
 package js.observable;
 
+/**
+	TODO attribute active
+	TODO attribute signal
+**/
 extern class Subscriber {
 	function addTeardown(teardown:VoidFunction):Void;
 	function complete():Void;

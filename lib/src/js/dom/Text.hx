@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	TODO attribute wholeText
+**/
 extern class Text extends CharacterData {
 	function new(?data:String):Void;
 	function splitText(offset:Int):Text;

@@ -24,6 +24,11 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute in1
+	TODO attribute dx
+	TODO attribute dy
+**/
 extern class SVGFEOffsetElement extends js.svg.SVGElement {
 
 }

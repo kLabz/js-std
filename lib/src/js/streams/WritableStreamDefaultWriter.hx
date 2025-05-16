@@ -24,6 +24,11 @@
 
 package js.streams;
 
+/**
+	TODO attribute closed
+	TODO attribute desiredSize
+	TODO attribute ready
+**/
 extern class WritableStreamDefaultWriter {
 	function new(stream:WritableStream):Void;
 	function abort(?reason:Any):js.lib.Promise<Void>;

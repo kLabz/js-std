@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute length
+**/
 extern class TimeRanges {
 	function end(index:Int):Float;
 	function start(index:Int):Float;

@@ -24,6 +24,10 @@
 
 package js.entriesApi;
 
+/**
+	TODO attribute name
+	TODO attribute root
+**/
 extern class FileSystem {
 
 }

@@ -24,7 +24,16 @@
 
 package js.html;
 
+/**
+	TODO attribute length
+	TODO attribute onchange
+	TODO attribute onaddtrack
+	TODO attribute onremovetrack
+**/
 extern class TextTrackList extends js.dom.EventTarget {
+	/**
+		(special = getter)
+	**/
 	function (index:Int):TextTrack;
 	function getTrackById(id:String):TextTrack;
 }

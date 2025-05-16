@@ -24,6 +24,12 @@
 
 package js.portals;
 
+/**
+	TODO attribute src
+	TODO attribute referrerPolicy
+	TODO attribute onmessage
+	TODO attribute onmessageerror
+**/
 extern class HTMLPortalElement extends js.html.HTMLElement {
 	function new():Void;
 	function activate(?options:PortalActivateOptions):js.lib.Promise<Void>;

@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute version
+**/
 extern class HTMLHtmlElement extends HTMLElement {
 	function new():Void;
 }

@@ -24,6 +24,9 @@
 
 package js.webusb;
 
+/**
+	TODO attribute packets
+**/
 extern class USBIsochronousOutTransferResult {
 	function new(packets:Array<USBIsochronousOutTransferPacket>):Void;
 }

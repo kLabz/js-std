@@ -24,7 +24,14 @@
 
 package js.cssParserApi;
 
+/**
+	TODO attribute name
+	TODO attribute body
+**/
 extern class CSSParserBlock extends CSSParserValue {
 	function new(name:String, body:Array<CSSParserValue>):Void;
+	/**
+		(special = stringifier)
+	**/
 	function ():Void;
 }

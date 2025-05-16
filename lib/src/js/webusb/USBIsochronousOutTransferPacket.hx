@@ -24,6 +24,10 @@
 
 package js.webusb;
 
+/**
+	TODO attribute bytesWritten
+	TODO attribute status
+**/
 extern class USBIsochronousOutTransferPacket {
 	function new(status:USBTransferStatus, ?bytesWritten:Int):Void;
 }

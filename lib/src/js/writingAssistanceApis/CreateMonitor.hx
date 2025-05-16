@@ -24,6 +24,9 @@
 
 package js.writingAssistanceApis;
 
+/**
+	TODO attribute ondownloadprogress
+**/
 extern class CreateMonitor extends js.dom.EventTarget {
 
 }

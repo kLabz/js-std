@@ -24,6 +24,10 @@
 
 package js.rawCameraAccess;
 
+/**
+	TODO attribute width
+	TODO attribute height
+**/
 extern class XRCamera {
 
 }

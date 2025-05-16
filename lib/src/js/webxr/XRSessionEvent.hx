@@ -24,6 +24,9 @@
 
 package js.webxr;
 
+/**
+	TODO attribute session
+**/
 extern class XRSessionEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:XRSessionEventInit):Void;
 }

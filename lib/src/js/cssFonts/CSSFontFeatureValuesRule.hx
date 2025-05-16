@@ -24,6 +24,16 @@
 
 package js.cssFonts;
 
+/**
+	TODO attribute fontFamily
+	TODO attribute annotation
+	TODO attribute ornaments
+	TODO attribute stylistic
+	TODO attribute swash
+	TODO attribute characterVariant
+	TODO attribute styleset
+	TODO attribute historicalForms
+**/
 extern class CSSFontFeatureValuesRule extends js.cssom.CSSRule {
 
 }

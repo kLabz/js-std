@@ -24,6 +24,12 @@
 
 package js.webBluetooth;
 
+/**
+	TODO attribute id
+	TODO attribute name
+	TODO attribute gatt
+	TODO attribute watchingAdvertisements
+**/
 extern class BluetoothDevice extends js.dom.EventTarget {
 	function forget():js.lib.Promise<Void>;
 	function watchAdvertisements(?options:WatchAdvertisementsOptions):js.lib.Promise<Void>;

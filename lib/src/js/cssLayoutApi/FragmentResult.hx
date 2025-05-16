@@ -24,6 +24,10 @@
 
 package js.cssLayoutApi;
 
+/**
+	TODO attribute inlineSize
+	TODO attribute blockSize
+**/
 extern class FragmentResult {
 	function new(?options:FragmentResultOptions):Void;
 }

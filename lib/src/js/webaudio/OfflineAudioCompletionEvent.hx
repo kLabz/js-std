@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute renderedBuffer
+**/
 extern class OfflineAudioCompletionEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:OfflineAudioCompletionEventInit):Void;
 }

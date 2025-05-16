@@ -24,6 +24,10 @@
 
 package js.indexeddb;
 
+/**
+	TODO attribute oldVersion
+	TODO attribute newVersion
+**/
 extern class IDBVersionChangeEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:IDBVersionChangeEventInit):Void;
 }

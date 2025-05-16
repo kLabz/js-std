@@ -24,6 +24,10 @@
 
 package js.speechApi;
 
+/**
+	TODO attribute transcript
+	TODO attribute confidence
+**/
 extern class SpeechRecognitionAlternative {
 
 }

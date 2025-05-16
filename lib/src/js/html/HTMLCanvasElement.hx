@@ -24,8 +24,15 @@
 
 package js.html;
 
+/**
+	TODO attribute width
+	TODO attribute height
+**/
 extern class HTMLCanvasElement extends HTMLElement {
 	function new():Void;
+	/**
+		From partial interface in mediacapture-fromelement.idl
+	**/
 	function captureStream(?frameRequestRate:Float):js.mediacaptureStreams.MediaStream;
 	function getContext(contextId:String, ?options:Any):RenderingContext;
 	function toBlob(callback:BlobCallback, ?type:String, ?quality:Any):Void;

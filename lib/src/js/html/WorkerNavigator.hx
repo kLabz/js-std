@@ -24,6 +24,14 @@
 
 package js.html;
 
+/**
+	TODO attribute mediaCapabilities
+	TODO attribute permissions
+	TODO attribute serviceWorker
+	TODO attribute serial
+	TODO attribute hid
+	TODO attribute usb
+**/
 extern class WorkerNavigator {
 
 }

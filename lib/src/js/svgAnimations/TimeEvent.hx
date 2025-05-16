@@ -24,6 +24,10 @@
 
 package js.svgAnimations;
 
+/**
+	TODO attribute view
+	TODO attribute detail
+**/
 extern class TimeEvent extends js.dom.Event {
 	function initTimeEvent(typeArg:String, viewArg:js.html.Window, detailArg:Int):Void;
 }

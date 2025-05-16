@@ -24,6 +24,12 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute h
+	TODO attribute w
+	TODO attribute b
+	TODO attribute alpha
+**/
 extern class CSSHWB extends CSSColorValue {
 	function new(h:CSSNumericValue, w:CSSNumberish, b:CSSNumberish, ?alpha:CSSNumberish):Void;
 }

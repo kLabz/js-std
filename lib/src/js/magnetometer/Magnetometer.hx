@@ -24,6 +24,11 @@
 
 package js.magnetometer;
 
+/**
+	TODO attribute x
+	TODO attribute y
+	TODO attribute z
+**/
 extern class Magnetometer extends js.genericSensor.Sensor {
 	function new(?sensorOptions:MagnetometerSensorOptions):Void;
 }

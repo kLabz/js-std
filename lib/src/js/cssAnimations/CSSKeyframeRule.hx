@@ -24,6 +24,10 @@
 
 package js.cssAnimations;
 
+/**
+	TODO attribute keyText
+	TODO attribute style
+**/
 extern class CSSKeyframeRule extends js.cssom.CSSRule {
 
 }

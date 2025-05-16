@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute navigationType
+	TODO attribute from
+**/
 extern class NavigationCurrentEntryChangeEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:NavigationCurrentEntryChangeEventInit):Void;
 }

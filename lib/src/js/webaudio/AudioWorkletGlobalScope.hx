@@ -24,6 +24,13 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute currentFrame
+	TODO attribute currentTime
+	TODO attribute sampleRate
+	TODO attribute renderQuantumSize
+	TODO attribute port
+**/
 extern class AudioWorkletGlobalScope extends js.html.WorkletGlobalScope {
 	function registerProcessor(name:String, processorCtor:AudioWorkletProcessorConstructor):Void;
 }

@@ -24,6 +24,16 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute destination
+	TODO attribute sampleRate
+	TODO attribute currentTime
+	TODO attribute listener
+	TODO attribute state
+	TODO attribute renderQuantumSize
+	TODO attribute audioWorklet
+	TODO attribute onstatechange
+**/
 extern class BaseAudioContext extends js.dom.EventTarget {
 	function createAnalyser():AnalyserNode;
 	function createBiquadFilter():BiquadFilterNode;

@@ -24,6 +24,23 @@
 
 package js.html;
 
+/**
+	TODO attribute target
+	TODO attribute download
+	TODO attribute ping
+	TODO attribute rel
+	TODO attribute relList
+	TODO attribute hreflang
+	TODO attribute type
+	TODO attribute text
+	TODO attribute referrerPolicy
+	TODO attribute coords
+	TODO attribute charset
+	TODO attribute name
+	TODO attribute rev
+	TODO attribute shape
+	TODO attribute attributionSourceId
+**/
 extern class HTMLAnchorElement extends HTMLElement {
 	function new():Void;
 }

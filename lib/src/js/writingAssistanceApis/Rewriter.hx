@@ -24,6 +24,16 @@
 
 package js.writingAssistanceApis;
 
+/**
+	TODO attribute sharedContext
+	TODO attribute tone
+	TODO attribute format
+	TODO attribute length
+	TODO attribute expectedInputLanguages
+	TODO attribute expectedContextLanguages
+	TODO attribute outputLanguage
+	TODO attribute inputQuota
+**/
 extern class Rewriter {
 	function availability(?options:RewriterCreateCoreOptions):js.lib.Promise<Availability>;
 	function create(?options:RewriterCreateOptions):js.lib.Promise<Rewriter>;

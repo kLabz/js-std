@@ -24,6 +24,9 @@
 
 package js.streams;
 
+/**
+	TODO attribute signal
+**/
 extern class WritableStreamDefaultController {
 	function error(?e:Any):Void;
 }

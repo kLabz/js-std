@@ -24,6 +24,39 @@
 
 package js.webgpu;
 
+/**
+	TODO attribute maxTextureDimension1D
+	TODO attribute maxTextureDimension2D
+	TODO attribute maxTextureDimension3D
+	TODO attribute maxTextureArrayLayers
+	TODO attribute maxBindGroups
+	TODO attribute maxBindGroupsPlusVertexBuffers
+	TODO attribute maxBindingsPerBindGroup
+	TODO attribute maxDynamicUniformBuffersPerPipelineLayout
+	TODO attribute maxDynamicStorageBuffersPerPipelineLayout
+	TODO attribute maxSampledTexturesPerShaderStage
+	TODO attribute maxSamplersPerShaderStage
+	TODO attribute maxStorageBuffersPerShaderStage
+	TODO attribute maxStorageTexturesPerShaderStage
+	TODO attribute maxUniformBuffersPerShaderStage
+	TODO attribute maxUniformBufferBindingSize
+	TODO attribute maxStorageBufferBindingSize
+	TODO attribute minUniformBufferOffsetAlignment
+	TODO attribute minStorageBufferOffsetAlignment
+	TODO attribute maxVertexBuffers
+	TODO attribute maxBufferSize
+	TODO attribute maxVertexAttributes
+	TODO attribute maxVertexBufferArrayStride
+	TODO attribute maxInterStageShaderVariables
+	TODO attribute maxColorAttachments
+	TODO attribute maxColorAttachmentBytesPerSample
+	TODO attribute maxComputeWorkgroupStorageSize
+	TODO attribute maxComputeInvocationsPerWorkgroup
+	TODO attribute maxComputeWorkgroupSizeX
+	TODO attribute maxComputeWorkgroupSizeY
+	TODO attribute maxComputeWorkgroupSizeZ
+	TODO attribute maxComputeWorkgroupsPerDimension
+**/
 extern class GPUSupportedLimits {
 
 }

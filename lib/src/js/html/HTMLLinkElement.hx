@@ -24,6 +24,27 @@
 
 package js.html;
 
+/**
+	TODO attribute href
+	TODO attribute crossOrigin
+	TODO attribute rel
+	TODO attribute as
+	TODO attribute relList
+	TODO attribute media
+	TODO attribute integrity
+	TODO attribute hreflang
+	TODO attribute type
+	TODO attribute sizes
+	TODO attribute imageSrcset
+	TODO attribute imageSizes
+	TODO attribute referrerPolicy
+	TODO attribute blocking
+	TODO attribute disabled
+	TODO attribute fetchPriority
+	TODO attribute charset
+	TODO attribute rev
+	TODO attribute target
+**/
 extern class HTMLLinkElement extends HTMLElement {
 	function new():Void;
 }

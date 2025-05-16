@@ -24,6 +24,9 @@
 
 package js.webgl1;
 
+/**
+	TODO attribute statusMessage
+**/
 extern class WebGLContextEvent extends js.dom.Event {
 	function new(type:String, ?eventInit:WebGLContextEventInit):Void;
 }

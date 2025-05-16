@@ -24,6 +24,15 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute in1
+	TODO attribute in2
+	TODO attribute operator
+	TODO attribute k1
+	TODO attribute k2
+	TODO attribute k3
+	TODO attribute k4
+**/
 extern class SVGFECompositeElement extends js.svg.SVGElement {
 	static inline var SVG_FECOMPOSITE_OPERATOR_UNKNOWN : Int = 0;
 	static inline var SVG_FECOMPOSITE_OPERATOR_OVER : Int = 1;

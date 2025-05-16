@@ -24,6 +24,11 @@
 
 package js.html;
 
+/**
+	TODO attribute navigationType
+	TODO attribute from
+	TODO attribute finished
+**/
 extern class NavigationTransition {
 
 }

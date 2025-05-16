@@ -24,6 +24,16 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute x
+	TODO attribute y
+	TODO attribute z
+	TODO attribute pointsAtX
+	TODO attribute pointsAtY
+	TODO attribute pointsAtZ
+	TODO attribute specularExponent
+	TODO attribute limitingConeAngle
+**/
 extern class SVGFESpotLightElement extends js.svg.SVGElement {
 
 }

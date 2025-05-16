@@ -24,6 +24,9 @@
 
 package js.webmidi;
 
+/**
+	TODO attribute onmidimessage
+**/
 extern class MIDIInput extends MIDIPort {
 
 }

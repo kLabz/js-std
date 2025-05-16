@@ -24,6 +24,29 @@
 
 package js.notifications;
 
+/**
+	TODO attribute permission
+	TODO attribute maxActions
+	TODO attribute onclick
+	TODO attribute onshow
+	TODO attribute onerror
+	TODO attribute onclose
+	TODO attribute title
+	TODO attribute dir
+	TODO attribute lang
+	TODO attribute body
+	TODO attribute tag
+	TODO attribute image
+	TODO attribute icon
+	TODO attribute badge
+	TODO attribute vibrate
+	TODO attribute timestamp
+	TODO attribute renotify
+	TODO attribute silent
+	TODO attribute requireInteraction
+	TODO attribute data
+	TODO attribute actions
+**/
 extern class Notification extends js.dom.EventTarget {
 	function new(title:String, ?options:NotificationOptions):Void;
 	function close():Void;

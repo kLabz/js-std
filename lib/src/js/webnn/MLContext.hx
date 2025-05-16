@@ -24,6 +24,9 @@
 
 package js.webnn;
 
+/**
+	TODO attribute lost
+**/
 extern class MLContext {
 	function createConstantTensor(descriptor:MLOperandDescriptor, inputData:AllowSharedBufferSource):js.lib.Promise<MLTensor>;
 	function createTensor(descriptor:MLTensorDescriptor):js.lib.Promise<MLTensor>;

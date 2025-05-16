@@ -24,6 +24,10 @@
 
 package js.webrtcEncodedTransform;
 
+/**
+	TODO attribute type
+	TODO attribute data
+**/
 extern class RTCEncodedVideoFrame {
 	function new(originalFrame:RTCEncodedVideoFrame, ?options:RTCEncodedVideoFrameOptions):Void;
 	function getMetadata():RTCEncodedVideoFrameMetadata;

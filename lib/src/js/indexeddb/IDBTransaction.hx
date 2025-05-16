@@ -24,6 +24,16 @@
 
 package js.indexeddb;
 
+/**
+	TODO attribute objectStoreNames
+	TODO attribute mode
+	TODO attribute durability
+	TODO attribute db
+	TODO attribute error
+	TODO attribute onabort
+	TODO attribute oncomplete
+	TODO attribute onerror
+**/
 extern class IDBTransaction extends js.dom.EventTarget {
 	function abort():Void;
 	function commit():Void;

@@ -24,6 +24,17 @@
 
 package js.webBluetooth;
 
+/**
+	TODO attribute broadcast
+	TODO attribute read
+	TODO attribute writeWithoutResponse
+	TODO attribute write
+	TODO attribute notify
+	TODO attribute indicate
+	TODO attribute authenticatedSignedWrites
+	TODO attribute reliableWrite
+	TODO attribute writableAuxiliaries
+**/
 extern class BluetoothCharacteristicProperties {
 
 }

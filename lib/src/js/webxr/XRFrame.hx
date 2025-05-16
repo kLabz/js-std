@@ -24,14 +24,45 @@
 
 package js.webxr;
 
+/**
+	TODO attribute session
+	TODO attribute predictedDisplayTime
+	TODO attribute trackedAnchors
+	TODO attribute detectedMeshes
+	TODO attribute detectedPlanes
+**/
 extern class XRFrame {
+	/**
+		From partial interface in anchors.idl
+	**/
 	function createAnchor(pose:XRRigidTransform, space:XRSpace):js.lib.Promise<js.anchors.XRAnchor>;
+	/**
+		From partial interface in webxr-hand-input.idl
+	**/
 	function fillJointRadii(jointSpaces:Array<js.webxrHandInput.XRJointSpace>, radii:Float32Array):Bool;
+	/**
+		From partial interface in webxr-hand-input.idl
+	**/
 	function fillPoses(spaces:Array<XRSpace>, baseSpace:XRSpace, transforms:Float32Array):Bool;
+	/**
+		From partial interface in webxr-depth-sensing.idl
+	**/
 	function getDepthInformation(view:XRView):js.webxrDepthSensing.XRCPUDepthInformation;
+	/**
+		From partial interface in webxr-hit-test.idl
+	**/
 	function getHitTestResults(hitTestSource:js.webxrHitTest.XRHitTestSource):Array<js.webxrHitTest.XRHitTestResult>;
+	/**
+		From partial interface in webxr-hit-test.idl
+	**/
 	function getHitTestResultsForTransientInput(hitTestSource:js.webxrHitTest.XRTransientInputHitTestSource):Array<js.webxrHitTest.XRTransientInputHitTestResult>;
+	/**
+		From partial interface in webxr-hand-input.idl
+	**/
 	function getJointPose(joint:js.webxrHandInput.XRJointSpace, baseSpace:XRSpace):js.webxrHandInput.XRJointPose;
+	/**
+		From partial interface in webxr-lighting-estimation.idl
+	**/
 	function getLightEstimate(lightProbe:js.webxrLightingEstimation.XRLightProbe):js.webxrLightingEstimation.XRLightEstimate;
 	function getPose(space:XRSpace, baseSpace:XRSpace):XRPose;
 	function getViewerPose(referenceSpace:XRReferenceSpace):XRViewerPose;

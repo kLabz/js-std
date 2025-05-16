@@ -24,6 +24,9 @@
 
 package js.presentationApi;
 
+/**
+	TODO attribute onconnectionavailable
+**/
 extern class PresentationRequest extends js.dom.EventTarget {
 	overload function new(urls:Array<String>):Void;
 	overload function new(url:String):Void;

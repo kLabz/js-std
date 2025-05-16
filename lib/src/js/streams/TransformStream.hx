@@ -24,6 +24,10 @@
 
 package js.streams;
 
+/**
+	TODO attribute readable
+	TODO attribute writable
+**/
 extern class TransformStream {
 	function new(?transformer:object, ?writableStrategy:QueuingStrategy, ?readableStrategy:QueuingStrategy):Void;
 }

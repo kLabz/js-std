@@ -24,6 +24,9 @@
 
 package js.anchors;
 
+/**
+	TODO attribute anchorSpace
+**/
 extern class XRAnchor {
 	function delete():Void;
 	function requestPersistentHandle():js.lib.Promise<String>;

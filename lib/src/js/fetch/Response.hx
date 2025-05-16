@@ -24,6 +24,15 @@
 
 package js.fetch;
 
+/**
+	TODO attribute type
+	TODO attribute url
+	TODO attribute redirected
+	TODO attribute status
+	TODO attribute ok
+	TODO attribute statusText
+	TODO attribute headers
+**/
 extern class Response {
 	function new(?body:BodyInit, ?init:ResponseInit):Void;
 	function clone():Response;

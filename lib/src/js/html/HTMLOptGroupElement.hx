@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute disabled
+	TODO attribute label
+**/
 extern class HTMLOptGroupElement extends HTMLElement {
 	function new():Void;
 }

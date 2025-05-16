@@ -24,7 +24,18 @@
 
 package js.svg;
 
+/**
+	TODO attribute x
+	TODO attribute y
+	TODO attribute width
+	TODO attribute height
+	TODO attribute currentScale
+	TODO attribute currentTranslate
+**/
 extern class SVGSVGElement extends SVGGraphicsElement {
+	/**
+		From partial interface in svg-animations.idl
+	**/
 	function animationsPaused():Bool;
 	function checkEnclosure(element:SVGElement, rect:js.geometry.DOMRectReadOnly):Bool;
 	function checkIntersection(element:SVGElement, rect:js.geometry.DOMRectReadOnly):Bool;
@@ -38,13 +49,25 @@ extern class SVGSVGElement extends SVGGraphicsElement {
 	function createSVGTransformFromMatrix(?matrix:js.geometry.DOMMatrix2DInit):SVGTransform;
 	function deselectAll():Void;
 	function forceRedraw():Void;
+	/**
+		From partial interface in svg-animations.idl
+	**/
 	function getCurrentTime():Float;
 	function getElementById(elementId:String):js.dom.Element;
 	function getEnclosureList(rect:js.geometry.DOMRectReadOnly, referenceElement:SVGElement):js.dom.NodeList;
 	function getIntersectionList(rect:js.geometry.DOMRectReadOnly, referenceElement:SVGElement):js.dom.NodeList;
+	/**
+		From partial interface in svg-animations.idl
+	**/
 	function pauseAnimations():Void;
+	/**
+		From partial interface in svg-animations.idl
+	**/
 	function setCurrentTime(seconds:Float):Void;
 	function suspendRedraw(maxWaitMilliseconds:Int):Int;
+	/**
+		From partial interface in svg-animations.idl
+	**/
 	function unpauseAnimations():Void;
 	function unsuspendRedraw(suspendHandleID:Int):Void;
 	function unsuspendRedrawAll():Void;

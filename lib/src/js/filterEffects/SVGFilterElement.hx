@@ -24,6 +24,14 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute filterUnits
+	TODO attribute primitiveUnits
+	TODO attribute x
+	TODO attribute y
+	TODO attribute width
+	TODO attribute height
+**/
 extern class SVGFilterElement extends js.svg.SVGElement {
 
 }

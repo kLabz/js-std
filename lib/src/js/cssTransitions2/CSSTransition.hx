@@ -24,6 +24,9 @@
 
 package js.cssTransitions2;
 
+/**
+	TODO attribute transitionProperty
+**/
 extern class CSSTransition extends js.webAnimations.Animation {
 
 }

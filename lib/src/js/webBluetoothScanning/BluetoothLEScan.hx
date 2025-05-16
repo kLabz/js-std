@@ -24,6 +24,12 @@
 
 package js.webBluetoothScanning;
 
+/**
+	TODO attribute filters
+	TODO attribute keepRepeatedDevices
+	TODO attribute acceptAllAdvertisements
+	TODO attribute active
+**/
 extern class BluetoothLEScan {
 	function stop():Void;
 }

@@ -24,13 +24,36 @@
 
 package js.screenCapture;
 
+/**
+	TODO attribute oncapturedmousechange
+	TODO attribute zoomLevel
+	TODO attribute onzoomlevelchange
+**/
 extern class CaptureController extends js.dom.EventTarget {
+	/**
+		From partial interface in mediacapture-surface-control.idl
+	**/
 	overload function new():Void;
 	overload function new():Void;
+	/**
+		From partial interface in mediacapture-surface-control.idl
+	**/
 	function decreaseZoomLevel():js.lib.Promise<Void>;
+	/**
+		From partial interface in mediacapture-surface-control.idl
+	**/
 	function forwardWheel(element:js.html.HTMLElement):js.lib.Promise<Void>;
+	/**
+		From partial interface in mediacapture-surface-control.idl
+	**/
 	function getSupportedZoomLevels():Array<Int>;
+	/**
+		From partial interface in mediacapture-surface-control.idl
+	**/
 	function increaseZoomLevel():js.lib.Promise<Void>;
+	/**
+		From partial interface in mediacapture-surface-control.idl
+	**/
 	function resetZoomLevel():js.lib.Promise<Void>;
 	function setFocusBehavior(focusBehavior:CaptureStartFocusBehavior):Void;
 }

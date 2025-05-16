@@ -24,6 +24,10 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute value
+	TODO attribute unit
+**/
 extern class CSSUnitValue extends CSSNumericValue {
 	function new(value:Float, unit:String):Void;
 }

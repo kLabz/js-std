@@ -24,6 +24,13 @@
 
 package js.cspNext;
 
+/**
+	TODO attribute violationType
+	TODO attribute violationURL
+	TODO attribute violationSample
+	TODO attribute lineno
+	TODO attribute colno
+**/
 extern class ScriptingPolicyReportBody extends js.reporting.ReportBody {
 	function toJSON():object;
 }

@@ -24,6 +24,9 @@
 
 package js.ambientLight;
 
+/**
+	TODO attribute illuminance
+**/
 extern class AmbientLightSensor extends js.genericSensor.Sensor {
 	function new(?sensorOptions:js.genericSensor.SensorOptions):Void;
 }

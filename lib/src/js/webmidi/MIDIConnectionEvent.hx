@@ -24,6 +24,9 @@
 
 package js.webmidi;
 
+/**
+	TODO attribute port
+**/
 extern class MIDIConnectionEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:MIDIConnectionEventInit):Void;
 }

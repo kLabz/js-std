@@ -24,6 +24,14 @@
 
 package js.webxr;
 
+/**
+	TODO attribute depthNear
+	TODO attribute depthFar
+	TODO attribute passthroughFullyObscured
+	TODO attribute inlineVerticalFieldOfView
+	TODO attribute baseLayer
+	TODO attribute layers
+**/
 extern class XRRenderState {
 
 }

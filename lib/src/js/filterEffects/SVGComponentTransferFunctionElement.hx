@@ -24,6 +24,15 @@
 
 package js.filterEffects;
 
+/**
+	TODO attribute type
+	TODO attribute tableValues
+	TODO attribute slope
+	TODO attribute intercept
+	TODO attribute amplitude
+	TODO attribute exponent
+	TODO attribute offset
+**/
 extern class SVGComponentTransferFunctionElement extends js.svg.SVGElement {
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN : Int = 0;
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_IDENTITY : Int = 1;

@@ -24,6 +24,10 @@
 
 package js.backgroundFetch;
 
+/**
+	TODO attribute request
+	TODO attribute responseReady
+**/
 extern class BackgroundFetchRecord {
 
 }

@@ -24,6 +24,13 @@
 
 package js.webxrPlaneDetection;
 
+/**
+	TODO attribute planeSpace
+	TODO attribute polygon
+	TODO attribute orientation
+	TODO attribute lastChangedTime
+	TODO attribute semanticLabel
+**/
 extern class XRPlane {
 
 }

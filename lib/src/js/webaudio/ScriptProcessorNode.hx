@@ -24,6 +24,10 @@
 
 package js.webaudio;
 
+/**
+	TODO attribute onaudioprocess
+	TODO attribute bufferSize
+**/
 extern class ScriptProcessorNode extends AudioNode {
 
 }

@@ -24,6 +24,10 @@
 
 package js.documentPictureInPicture;
 
+/**
+	TODO attribute window
+	TODO attribute onenter
+**/
 extern class DocumentPictureInPicture extends js.dom.EventTarget {
 	function requestWindow(?options:DocumentPictureInPictureOptions):js.lib.Promise<js.html.Window>;
 }

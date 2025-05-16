@@ -24,6 +24,11 @@
 
 package js.webrtcEncodedTransform;
 
+/**
+	TODO attribute errorType
+	TODO attribute keyID
+	TODO attribute frame
+**/
 extern class SFrameTransformErrorEvent extends js.dom.Event {
 	function new(type:String, eventInitDict:SFrameTransformErrorEventInit):Void;
 }

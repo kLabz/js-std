@@ -24,6 +24,10 @@
 
 package js.cssViewTransitions2;
 
+/**
+	TODO attribute navigation
+	TODO attribute types
+**/
 extern class CSSViewTransitionRule extends js.cssom.CSSRule {
 
 }

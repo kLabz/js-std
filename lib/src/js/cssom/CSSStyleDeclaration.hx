@@ -24,6 +24,11 @@
 
 package js.cssom;
 
+/**
+	TODO attribute cssText
+	TODO attribute length
+	TODO attribute parentRule
+**/
 extern class CSSStyleDeclaration {
 	function getPropertyPriority(property:CSSOMString):CSSOMString;
 	function getPropertyValue(property:CSSOMString):CSSOMString;

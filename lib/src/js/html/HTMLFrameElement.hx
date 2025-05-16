@@ -24,6 +24,18 @@
 
 package js.html;
 
+/**
+	TODO attribute name
+	TODO attribute scrolling
+	TODO attribute src
+	TODO attribute frameBorder
+	TODO attribute longDesc
+	TODO attribute noResize
+	TODO attribute contentDocument
+	TODO attribute contentWindow
+	TODO attribute marginHeight
+	TODO attribute marginWidth
+**/
 extern class HTMLFrameElement extends HTMLElement {
 	function new():Void;
 }

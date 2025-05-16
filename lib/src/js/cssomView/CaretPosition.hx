@@ -24,6 +24,10 @@
 
 package js.cssomView;
 
+/**
+	TODO attribute offsetNode
+	TODO attribute offset
+**/
 extern class CaretPosition {
 	function getClientRect():js.geometry.DOMRect;
 }

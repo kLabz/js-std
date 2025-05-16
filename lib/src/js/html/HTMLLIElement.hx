@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	TODO attribute value
+	TODO attribute type
+**/
 extern class HTMLLIElement extends HTMLElement {
 	function new():Void;
 }

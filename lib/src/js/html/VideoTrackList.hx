@@ -24,7 +24,17 @@
 
 package js.html;
 
+/**
+	TODO attribute length
+	TODO attribute selectedIndex
+	TODO attribute onchange
+	TODO attribute onaddtrack
+	TODO attribute onremovetrack
+**/
 extern class VideoTrackList extends js.dom.EventTarget {
+	/**
+		(special = getter)
+	**/
 	function (index:Int):VideoTrack;
 	function getTrackById(id:String):VideoTrack;
 }

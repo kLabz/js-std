@@ -24,6 +24,10 @@
 
 package js.speechApi;
 
+/**
+	TODO attribute length
+	TODO attribute isFinal
+**/
 extern class SpeechRecognitionResult {
 	function item(index:Int):SpeechRecognitionAlternative;
 }

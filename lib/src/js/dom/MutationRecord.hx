@@ -24,6 +24,17 @@
 
 package js.dom;
 
+/**
+	TODO attribute type
+	TODO attribute target
+	TODO attribute addedNodes
+	TODO attribute removedNodes
+	TODO attribute previousSibling
+	TODO attribute nextSibling
+	TODO attribute attributeName
+	TODO attribute attributeNamespace
+	TODO attribute oldValue
+**/
 extern class MutationRecord {
 
 }

@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO attribute canvas
+**/
 extern class ImageBitmapRenderingContext {
 	function transferFromImageBitmap(bitmap:ImageBitmap):Void;
 }

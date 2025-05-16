@@ -24,6 +24,10 @@
 
 package js.dom;
 
+/**
+	TODO attribute data
+	TODO attribute length
+**/
 extern class CharacterData extends Node {
 	function appendData(data:String):Void;
 	function deleteData(offset:Int, count:Int):Void;

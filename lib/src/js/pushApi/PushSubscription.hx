@@ -24,6 +24,11 @@
 
 package js.pushApi;
 
+/**
+	TODO attribute endpoint
+	TODO attribute expirationTime
+	TODO attribute options
+**/
 extern class PushSubscription {
 	function getKey(name:PushEncryptionKeyName):ArrayBuffer;
 	function toJSON():PushSubscriptionJSON;

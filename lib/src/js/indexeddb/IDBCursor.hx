@@ -24,6 +24,13 @@
 
 package js.indexeddb;
 
+/**
+	TODO attribute source
+	TODO attribute direction
+	TODO attribute key
+	TODO attribute primaryKey
+	TODO attribute request
+**/
 extern class IDBCursor {
 	function advance(count:Int):Void;
 	function continue(?key:Any):Void;

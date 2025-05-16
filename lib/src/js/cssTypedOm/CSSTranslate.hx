@@ -24,6 +24,11 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO attribute x
+	TODO attribute y
+	TODO attribute z
+**/
 extern class CSSTranslate extends CSSTransformComponent {
 	function new(x:CSSNumericValue, y:CSSNumericValue, ?z:CSSNumericValue):Void;
 }

@@ -24,6 +24,10 @@
 
 package js.cssMasking;
 
+/**
+	TODO attribute clipPathUnits
+	TODO attribute transform
+**/
 extern class SVGClipPathElement extends js.svg.SVGElement {
 
 }

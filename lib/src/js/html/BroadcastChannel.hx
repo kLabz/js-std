@@ -24,6 +24,11 @@
 
 package js.html;
 
+/**
+	TODO attribute name
+	TODO attribute onmessage
+	TODO attribute onmessageerror
+**/
 extern class BroadcastChannel extends js.dom.EventTarget {
 	function new(name:String):Void;
 	function close():Void;

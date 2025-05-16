@@ -24,6 +24,10 @@
 
 package js.webrtcIdentity;
 
+/**
+	TODO attribute idp
+	TODO attribute name
+**/
 extern class RTCIdentityAssertion {
 	function new(idp:String, name:String):Void;
 }

@@ -24,6 +24,9 @@
 
 package js.mediacaptureTransform;
 
+/**
+	TODO attribute readable
+**/
 extern class MediaStreamTrackProcessor {
 	function new(init:MediaStreamTrackProcessorInit):Void;
 }

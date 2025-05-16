@@ -24,6 +24,12 @@
 
 package js.html;
 
+/**
+	TODO attribute name
+	TODO attribute entryType
+	TODO attribute startTime
+	TODO attribute duration
+**/
 extern class VisibilityStateEntry extends js.performanceTimeline.PerformanceEntry {
 
 }

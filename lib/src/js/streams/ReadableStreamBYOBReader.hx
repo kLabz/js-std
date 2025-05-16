@@ -26,6 +26,6 @@ package js.streams;
 
 extern class ReadableStreamBYOBReader {
 	function new(stream:ReadableStream):Void;
-	function read(view:ArrayBufferView, ?options:ReadableStreamBYOBReaderReadOptions):js.lib.Promise<ReadableStreamReadResult>;
+	function read(view:js.webidl.ArrayBufferView, ?options:ReadableStreamBYOBReaderReadOptions):js.lib.Promise<ReadableStreamReadResult>;
 	function releaseLock():Void;
 }

@@ -36,7 +36,7 @@ extern class GPUDevice extends js.dom.EventTarget {
 	/**
 		From partial interface in webgpu.idl
 	**/
-	var onuncapturederror : EventHandler;
+	var onuncapturederror : js.html.EventHandler;
 	function createBindGroup(descriptor:GPUBindGroupDescriptor):GPUBindGroup;
 	function createBindGroupLayout(descriptor:GPUBindGroupLayoutDescriptor):GPUBindGroupLayout;
 	function createBuffer(descriptor:GPUBufferDescriptor):GPUBuffer;
@@ -56,7 +56,7 @@ extern class GPUDevice extends js.dom.EventTarget {
 	/**
 		From partial interface in webgpu.idl
 	**/
-	function popErrorScope():js.lib.Promise<GPUError>;
+	function popErrorScope():js.lib.Promise<Null<GPUError>>;
 	/**
 		From partial interface in webgpu.idl
 	**/

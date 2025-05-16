@@ -25,5 +25,5 @@
 package js.webcrypto;
 
 typedef AesCbcParams = Algorithm & {
-	var iv : BufferSource;
+	var iv : js.webidl.BufferSource;
 };

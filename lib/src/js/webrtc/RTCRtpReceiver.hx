@@ -26,13 +26,13 @@ package js.webrtc;
 
 extern class RTCRtpReceiver {
 	var track(default, null) : js.mediacaptureStreams.MediaStreamTrack;
-	var transport(default, null) : RTCDtlsTransport;
-	var jitterBufferTarget : DOMHighResTimeStamp;
+	var transport(default, null) : Null<RTCDtlsTransport>;
+	var jitterBufferTarget : Null<js.hrTime.DOMHighResTimeStamp>;
 	/**
 		From partial interface in webrtc-encoded-transform.idl
 	**/
-	var transform : RTCRtpTransform;
-	function getCapabilities(kind:String):RTCRtpCapabilities;
+	var transform : Null<js.webrtcEncodedTransform.RTCRtpTransform>;
+	function getCapabilities(kind:String):Null<RTCRtpCapabilities>;
 	function getContributingSources():Array<RTCRtpContributingSource>;
 	function getParameters():RTCRtpReceiveParameters;
 	function getStats():js.lib.Promise<RTCStatsReport>;

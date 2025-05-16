@@ -25,9 +25,9 @@
 package js.orientationEvent;
 
 extern class DeviceMotionEvent extends js.dom.Event {
-	var acceleration(default, null) : DeviceMotionEventAcceleration;
-	var accelerationIncludingGravity(default, null) : DeviceMotionEventAcceleration;
-	var rotationRate(default, null) : DeviceMotionEventRotationRate;
+	var acceleration(default, null) : Null<DeviceMotionEventAcceleration>;
+	var accelerationIncludingGravity(default, null) : Null<DeviceMotionEventAcceleration>;
+	var rotationRate(default, null) : Null<DeviceMotionEventRotationRate>;
 	var interval(default, null) : Float;
 	function new(type:String, ?eventInitDict:DeviceMotionEventInit):Void;
 	function requestPermission():js.lib.Promise<js.permissions.PermissionState>;

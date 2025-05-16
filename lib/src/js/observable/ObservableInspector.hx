@@ -30,9 +30,9 @@ typedef ObservableInspector = {
 	@:optional
 	var error : ObservableSubscriptionCallback;
 	@:optional
-	var complete : VoidFunction;
+	var complete : js.webidl.VoidFunction;
 	@:optional
-	var subscribe : VoidFunction;
+	var subscribe : js.webidl.VoidFunction;
 	@:optional
 	var abort : ObservableInspectorAbortHandler;
 };

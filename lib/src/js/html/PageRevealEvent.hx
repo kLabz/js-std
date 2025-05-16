@@ -25,6 +25,6 @@
 package js.html;
 
 extern class PageRevealEvent extends js.dom.Event {
-	var viewTransition(default, null) : js.cssViewTransitions.ViewTransition;
+	var viewTransition(default, null) : Null<js.cssViewTransitions.ViewTransition>;
 	function new(type:String, ?eventInitDict:PageRevealEventInit):Void;
 }

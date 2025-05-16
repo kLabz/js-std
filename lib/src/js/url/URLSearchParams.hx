@@ -34,7 +34,7 @@ extern class URLSearchParams {
 	function append(name:String, value:String):Void;
 	function delete(name:String, ?value:String):Void;
 	function entries():Iterator<Array<Dynamic>>;
-	function get(name:String):String;
+	function get(name:String):Null<String>;
 	function getAll(name:String):Array<String>;
 	function has(name:String, ?value:String):Bool;
 	function keys():Iterator<String>;

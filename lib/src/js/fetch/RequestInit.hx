@@ -30,7 +30,7 @@ typedef RequestInit = {
 	@:optional
 	var headers : HeadersInit;
 	@:optional
-	var body : BodyInit;
+	var body : Null<BodyInit>;
 	@:optional
 	var referrer : String;
 	@:optional
@@ -48,7 +48,7 @@ typedef RequestInit = {
 	@:optional
 	var keepalive : Bool;
 	@:optional
-	var signal : js.dom.AbortSignal;
+	var signal : Null<js.dom.AbortSignal>;
 	@:optional
 	var duplex : RequestDuplex;
 	@:optional
@@ -62,7 +62,7 @@ typedef RequestInit = {
 	@:optional
 	var sharedStorageWritable : Bool;
 	@:optional
-	var privateToken : js.trustTokenApi.PrivateToken;
-	@:optional
 	var adAuctionHeaders : Bool;
+	@:optional
+	var privateToken : js.trustTokenApi.PrivateToken;
 };

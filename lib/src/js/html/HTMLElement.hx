@@ -29,7 +29,7 @@ extern class HTMLElement extends js.dom.Element {
 	var lang : String;
 	var translate : Bool;
 	var dir : String;
-	var hidden : haxe.extern.EitherType<Bool, haxe.extern.EitherType<Float, String>>;
+	var hidden : Null<haxe.extern.EitherType<Bool, haxe.extern.EitherType<Float, String>>>;
 	var inert : Bool;
 	var accessKey : String;
 	var accessKeyLabel(default, null) : String;
@@ -40,11 +40,11 @@ extern class HTMLElement extends js.dom.Element {
 	var autocorrect : Bool;
 	var innerText : String;
 	var outerText : String;
-	var popover : String;
+	var popover : Null<String>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	var offsetParent(default, null) : js.dom.Element;
+	var offsetParent(default, null) : Null<js.dom.Element>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -64,7 +64,7 @@ extern class HTMLElement extends js.dom.Element {
 	/**
 		From partial interface in edit-context.idl
 	**/
-	var editContext : js.editContext.EditContext;
+	var editContext : Null<js.editContext.EditContext>;
 	function new():Void;
 	function attachInternals():ElementInternals;
 	function click():Void;

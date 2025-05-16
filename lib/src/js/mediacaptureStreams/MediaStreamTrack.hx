@@ -30,14 +30,14 @@ extern class MediaStreamTrack extends js.dom.EventTarget {
 	var label(default, null) : String;
 	var enabled : Bool;
 	var muted(default, null) : Bool;
-	var onmute : EventHandler;
-	var onunmute : EventHandler;
+	var onmute : js.html.EventHandler;
+	var onunmute : js.html.EventHandler;
 	var readyState(default, null) : MediaStreamTrackState;
-	var onended : EventHandler;
+	var onended : js.html.EventHandler;
 	/**
 		From partial interface in capture-handle-identity.idl
 	**/
-	var oncapturehandlechange : EventHandler;
+	var oncapturehandlechange : js.html.EventHandler;
 	/**
 		From partial interface in mst-content-hint.idl
 	**/
@@ -49,14 +49,14 @@ extern class MediaStreamTrack extends js.dom.EventTarget {
 	/**
 		From partial interface in webrtc-identity.idl
 	**/
-	var onisolationchange : EventHandler;
+	var onisolationchange : js.html.EventHandler;
 	function applyConstraints(?constraints:MediaTrackConstraints):js.lib.Promise<Void>;
 	function clone():MediaStreamTrack;
 	function getCapabilities():MediaTrackCapabilities;
 	/**
 		From partial interface in capture-handle-identity.idl
 	**/
-	function getCaptureHandle():js.captureHandleIdentity.CaptureHandle;
+	function getCaptureHandle():Null<js.captureHandleIdentity.CaptureHandle>;
 	function getConstraints():MediaTrackConstraints;
 	function getSettings():MediaTrackSettings;
 	/**

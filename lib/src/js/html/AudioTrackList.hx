@@ -29,5 +29,5 @@ extern class AudioTrackList extends js.dom.EventTarget implements ArrayAccess<Au
 	var onchange : EventHandler;
 	var onaddtrack : EventHandler;
 	var onremovetrack : EventHandler;
-	function getTrackById(id:String):AudioTrack;
+	function getTrackById(id:String):Null<AudioTrack>;
 }

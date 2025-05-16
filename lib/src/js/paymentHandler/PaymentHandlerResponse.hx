@@ -30,13 +30,13 @@ typedef PaymentHandlerResponse = {
 	@:optional
 	var details : { };
 	@:optional
-	var payerName : String;
+	var payerName : Null<String>;
 	@:optional
-	var payerEmail : String;
+	var payerEmail : Null<String>;
 	@:optional
-	var payerPhone : String;
+	var payerPhone : Null<String>;
 	@:optional
 	var shippingAddress : AddressInit;
 	@:optional
-	var shippingOption : String;
+	var shippingOption : Null<String>;
 };

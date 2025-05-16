@@ -48,11 +48,11 @@ typedef RTCEncodedVideoFrameMetadata = {
 	@:optional
 	var rtpTimestamp : Int;
 	@:optional
-	var receiveTime : DOMHighResTimeStamp;
+	var receiveTime : js.hrTime.DOMHighResTimeStamp;
 	@:optional
-	var captureTime : DOMHighResTimeStamp;
+	var captureTime : js.hrTime.DOMHighResTimeStamp;
 	@:optional
-	var senderCaptureTimeOffset : DOMHighResTimeStamp;
+	var senderCaptureTimeOffset : js.hrTime.DOMHighResTimeStamp;
 	@:optional
 	var mimeType : String;
 };

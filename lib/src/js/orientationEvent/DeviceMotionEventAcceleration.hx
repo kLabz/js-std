@@ -25,7 +25,7 @@
 package js.orientationEvent;
 
 extern class DeviceMotionEventAcceleration {
-	var x(default, null) : Float;
-	var y(default, null) : Float;
-	var z(default, null) : Float;
+	var x(default, null) : Null<Float>;
+	var y(default, null) : Null<Float>;
+	var z(default, null) : Null<Float>;
 }

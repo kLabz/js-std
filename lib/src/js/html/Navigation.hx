@@ -25,9 +25,9 @@
 package js.html;
 
 extern class Navigation extends js.dom.EventTarget {
-	var currentEntry(default, null) : NavigationHistoryEntry;
-	var transition(default, null) : NavigationTransition;
-	var activation(default, null) : NavigationActivation;
+	var currentEntry(default, null) : Null<NavigationHistoryEntry>;
+	var transition(default, null) : Null<NavigationTransition>;
+	var activation(default, null) : Null<NavigationActivation>;
 	var canGoBack(default, null) : Bool;
 	var canGoForward(default, null) : Bool;
 	var onnavigate : EventHandler;

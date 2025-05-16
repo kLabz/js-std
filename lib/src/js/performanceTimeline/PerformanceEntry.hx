@@ -28,8 +28,8 @@ extern class PerformanceEntry {
 	var id(default, null) : Float;
 	var name(default, null) : String;
 	var entryType(default, null) : String;
-	var startTime(default, null) : DOMHighResTimeStamp;
-	var duration(default, null) : DOMHighResTimeStamp;
+	var startTime(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var duration(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var navigationId(default, null) : Float;
 	function toJSON():{ };
 }

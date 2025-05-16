@@ -25,7 +25,7 @@
 package js.webaudio;
 
 extern class AudioBufferSourceNode extends AudioScheduledSourceNode {
-	var buffer : AudioBuffer;
+	var buffer : Null<AudioBuffer>;
 	var playbackRate(default, null) : AudioParam;
 	var detune(default, null) : AudioParam;
 	var loop : Bool;

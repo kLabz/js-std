@@ -26,7 +26,7 @@ package js.webxrlayers;
 
 typedef XRMediaEquirectLayerInit = XRMediaLayerInit & {
 	@:optional
-	var transform : js.webxr.XRRigidTransform;
+	var transform : Null<js.webxr.XRRigidTransform>;
 	@:optional
 	var radius : Float = 0.0;
 	@:optional

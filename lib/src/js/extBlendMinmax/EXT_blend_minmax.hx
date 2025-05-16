@@ -25,6 +25,6 @@
 package js.extBlendMinmax;
 
 extern class EXT_blend_minmax {
-	static inline var MIN_EXT : GLenum = 0x8007;
-	static inline var MAX_EXT : GLenum = 0x8008;
+	static inline var MIN_EXT : js.webgl1.GLenum = 0x8007;
+	static inline var MAX_EXT : js.webgl1.GLenum = 0x8008;
 }

@@ -30,7 +30,7 @@ typedef AudioDataInit = {
 	var numberOfFrames : Int;
 	var numberOfChannels : Int;
 	var timestamp : Float;
-	var data : BufferSource;
+	var data : js.webidl.BufferSource;
 	@:optional
 	var transfer : Array<ArrayBuffer> = [];
 };

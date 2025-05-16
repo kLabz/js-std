@@ -25,13 +25,13 @@
 package js.uievents;
 
 extern class InputEvent extends UIEvent {
-	var data(default, null) : String;
+	var data(default, null) : Null<String>;
 	var isComposing(default, null) : Bool;
 	var inputType(default, null) : String;
 	/**
 		From partial interface in input-events.idl
 	**/
-	var dataTransfer(default, null) : js.html.DataTransfer;
+	var dataTransfer(default, null) : Null<js.html.DataTransfer>;
 	function new(type:String, ?eventInitDict:InputEventInit):Void;
 	/**
 		From partial interface in input-events.idl

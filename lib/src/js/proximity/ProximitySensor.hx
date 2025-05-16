@@ -25,8 +25,8 @@
 package js.proximity;
 
 extern class ProximitySensor extends js.genericSensor.Sensor {
-	var distance(default, null) : Float;
-	var max(default, null) : Float;
-	var near(default, null) : Bool;
+	var distance(default, null) : Null<Float>;
+	var max(default, null) : Null<Float>;
+	var near(default, null) : Null<Bool>;
 	function new(?sensorOptions:js.genericSensor.SensorOptions):Void;
 }

@@ -30,5 +30,5 @@ extern class SVGImageElement extends SVGGraphicsElement {
 	var width(default, null) : SVGAnimatedLength;
 	var height(default, null) : SVGAnimatedLength;
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
-	var crossOrigin : String;
+	var crossOrigin : Null<String>;
 }

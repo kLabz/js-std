@@ -26,7 +26,7 @@ package js.serviceWorkers;
 
 typedef RouterCondition = {
 	@:optional
-	var urlPattern : URLPatternCompatible;
+	var urlPattern : js.urlpattern.URLPatternCompatible;
 	@:optional
 	var requestMethod : String;
 	@:optional

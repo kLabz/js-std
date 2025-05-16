@@ -26,7 +26,7 @@ package js.webAnimations2;
 
 typedef TimelineRangeOffset = {
 	@:optional
-	var rangeName : CSSOMString;
+	var rangeName : Null<CSSOMString>;
 	@:optional
 	var offset : js.cssTypedOm.CSSNumericValue;
 };

@@ -26,7 +26,7 @@ package js.intersectionObserver;
 
 typedef IntersectionObserverInit = {
 	@:optional
-	var root : haxe.extern.EitherType<js.dom.Element, js.dom.Document> = null;
+	var root : Null<haxe.extern.EitherType<js.dom.Element, js.dom.Document>> = null;
 	@:optional
 	var rootMargin : String = "0px";
 	@:optional

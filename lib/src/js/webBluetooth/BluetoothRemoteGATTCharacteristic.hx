@@ -28,13 +28,13 @@ extern class BluetoothRemoteGATTCharacteristic extends js.dom.EventTarget {
 	var service(default, null) : BluetoothRemoteGATTService;
 	var uuid(default, null) : UUID;
 	var properties(default, null) : BluetoothCharacteristicProperties;
-	var value(default, null) : DataView;
+	var value(default, null) : Null<DataView>;
 	function getDescriptor(descriptor:BluetoothDescriptorUUID):js.lib.Promise<BluetoothRemoteGATTDescriptor>;
 	function getDescriptors(?descriptor:BluetoothDescriptorUUID):js.lib.Promise<Array<BluetoothRemoteGATTDescriptor>>;
 	function readValue():js.lib.Promise<DataView>;
 	function startNotifications():js.lib.Promise<BluetoothRemoteGATTCharacteristic>;
 	function stopNotifications():js.lib.Promise<BluetoothRemoteGATTCharacteristic>;
-	function writeValue(value:BufferSource):js.lib.Promise<Void>;
-	function writeValueWithResponse(value:BufferSource):js.lib.Promise<Void>;
-	function writeValueWithoutResponse(value:BufferSource):js.lib.Promise<Void>;
+	function writeValue(value:js.webidl.BufferSource):js.lib.Promise<Void>;
+	function writeValueWithResponse(value:js.webidl.BufferSource):js.lib.Promise<Void>;
+	function writeValueWithoutResponse(value:js.webidl.BufferSource):js.lib.Promise<Void>;
 }

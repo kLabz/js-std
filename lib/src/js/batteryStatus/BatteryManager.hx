@@ -29,8 +29,8 @@ extern class BatteryManager extends js.dom.EventTarget {
 	var chargingTime(default, null) : Float;
 	var dischargingTime(default, null) : Float;
 	var level(default, null) : Float;
-	var onchargingchange : EventHandler;
-	var onchargingtimechange : EventHandler;
-	var ondischargingtimechange : EventHandler;
-	var onlevelchange : EventHandler;
+	var onchargingchange : js.html.EventHandler;
+	var onchargingtimechange : js.html.EventHandler;
+	var ondischargingtimechange : js.html.EventHandler;
+	var onlevelchange : js.html.EventHandler;
 }

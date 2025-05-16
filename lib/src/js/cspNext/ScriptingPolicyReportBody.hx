@@ -26,8 +26,8 @@ package js.cspNext;
 
 extern class ScriptingPolicyReportBody extends js.reporting.ReportBody {
 	var violationType(default, null) : String;
-	var violationURL(default, null) : String;
-	var violationSample(default, null) : String;
+	var violationURL(default, null) : Null<String>;
+	var violationSample(default, null) : Null<String>;
 	var lineno(default, null) : Int;
 	var colno(default, null) : Int;
 	function toJSON():{ };

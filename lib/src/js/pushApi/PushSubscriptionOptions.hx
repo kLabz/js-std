@@ -26,5 +26,5 @@ package js.pushApi;
 
 extern class PushSubscriptionOptions {
 	var userVisibleOnly(default, null) : Bool;
-	var applicationServerKey(default, null) : ArrayBuffer;
+	var applicationServerKey(default, null) : Null<ArrayBuffer>;
 }

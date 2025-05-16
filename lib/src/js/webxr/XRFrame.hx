@@ -26,7 +26,7 @@ package js.webxr;
 
 extern class XRFrame {
 	var session(default, null) : XRSession;
-	var predictedDisplayTime(default, null) : DOMHighResTimeStamp;
+	var predictedDisplayTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	/**
 		From partial interface in anchors.idl
 	**/
@@ -54,7 +54,7 @@ extern class XRFrame {
 	/**
 		From partial interface in webxr-depth-sensing.idl
 	**/
-	function getDepthInformation(view:XRView):js.webxrDepthSensing.XRCPUDepthInformation;
+	function getDepthInformation(view:XRView):Null<js.webxrDepthSensing.XRCPUDepthInformation>;
 	/**
 		From partial interface in webxr-hit-test.idl
 	**/
@@ -66,11 +66,11 @@ extern class XRFrame {
 	/**
 		From partial interface in webxr-hand-input.idl
 	**/
-	function getJointPose(joint:js.webxrHandInput.XRJointSpace, baseSpace:XRSpace):js.webxrHandInput.XRJointPose;
+	function getJointPose(joint:js.webxrHandInput.XRJointSpace, baseSpace:XRSpace):Null<js.webxrHandInput.XRJointPose>;
 	/**
 		From partial interface in webxr-lighting-estimation.idl
 	**/
-	function getLightEstimate(lightProbe:js.webxrLightingEstimation.XRLightProbe):js.webxrLightingEstimation.XRLightEstimate;
-	function getPose(space:XRSpace, baseSpace:XRSpace):XRPose;
-	function getViewerPose(referenceSpace:XRReferenceSpace):XRViewerPose;
+	function getLightEstimate(lightProbe:js.webxrLightingEstimation.XRLightProbe):Null<js.webxrLightingEstimation.XRLightEstimate>;
+	function getPose(space:XRSpace, baseSpace:XRSpace):Null<XRPose>;
+	function getViewerPose(referenceSpace:XRReferenceSpace):Null<XRViewerPose>;
 }

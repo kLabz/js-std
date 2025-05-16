@@ -27,5 +27,5 @@ package js.audioSession;
 extern class AudioSession extends js.dom.EventTarget {
 	var type : AudioSessionType;
 	var state(default, null) : AudioSessionState;
-	var onstatechange : EventHandler;
+	var onstatechange : js.html.EventHandler;
 }

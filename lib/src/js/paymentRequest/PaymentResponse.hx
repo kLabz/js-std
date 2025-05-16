@@ -28,12 +28,12 @@ extern class PaymentResponse extends js.dom.EventTarget {
 	var requestId(default, null) : String;
 	var methodName(default, null) : String;
 	var details(default, null) : { };
-	var shippingAddress(default, null) : js.contactPicker.ContactAddress;
-	var shippingOption(default, null) : String;
-	var payerName(default, null) : String;
-	var payerEmail(default, null) : String;
-	var payerPhone(default, null) : String;
-	var onpayerdetailchange : EventHandler;
+	var shippingAddress(default, null) : Null<js.contactPicker.ContactAddress>;
+	var shippingOption(default, null) : Null<String>;
+	var payerName(default, null) : Null<String>;
+	var payerEmail(default, null) : Null<String>;
+	var payerPhone(default, null) : Null<String>;
+	var onpayerdetailchange : js.html.EventHandler;
 	function complete(?result:PaymentComplete, ?details:PaymentCompleteDetails):js.lib.Promise<Void>;
 	function retry(?errorFields:PaymentValidationErrors):js.lib.Promise<Void>;
 	function toJSON():{ };

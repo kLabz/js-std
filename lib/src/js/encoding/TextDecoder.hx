@@ -26,5 +26,5 @@ package js.encoding;
 
 extern class TextDecoder {
 	function new(?label:String, ?options:TextDecoderOptions):Void;
-	function decode(?input:AllowSharedBufferSource, ?options:TextDecodeOptions):String;
+	function decode(?input:js.webidl.AllowSharedBufferSource, ?options:TextDecodeOptions):String;
 }

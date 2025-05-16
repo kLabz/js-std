@@ -25,8 +25,8 @@
 package js.videoRvfc;
 
 typedef VideoFrameCallbackMetadata = {
-	var presentationTime : DOMHighResTimeStamp;
-	var expectedDisplayTime : DOMHighResTimeStamp;
+	var presentationTime : js.hrTime.DOMHighResTimeStamp;
+	var expectedDisplayTime : js.hrTime.DOMHighResTimeStamp;
 	var width : Int;
 	var height : Int;
 	var mediaTime : Float;
@@ -34,9 +34,9 @@ typedef VideoFrameCallbackMetadata = {
 	@:optional
 	var processingDuration : Float;
 	@:optional
-	var captureTime : DOMHighResTimeStamp;
+	var captureTime : js.hrTime.DOMHighResTimeStamp;
 	@:optional
-	var receiveTime : DOMHighResTimeStamp;
+	var receiveTime : js.hrTime.DOMHighResTimeStamp;
 	@:optional
 	var rtpTimestamp : Int;
 };

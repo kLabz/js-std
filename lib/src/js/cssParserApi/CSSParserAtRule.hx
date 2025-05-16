@@ -27,8 +27,8 @@ package js.cssParserApi;
 extern class CSSParserAtRule extends CSSParserRule {
 	var name(default, null) : String;
 	var prelude(default, null) : Array<CSSParserValue>;
-	var body(default, null) : Array<CSSParserRule>;
-	function new(name:String, prelude:Array<CSSToken>, ?body:Array<CSSParserRule>):Void;
+	var body(default, null) : Null<Array<CSSParserRule>>;
+	function new(name:String, prelude:Array<CSSToken>, ?body:Null<Array<CSSParserRule>>):Void;
 	/**
 		(special = stringifier)
 	**/

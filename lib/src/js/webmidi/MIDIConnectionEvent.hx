@@ -25,6 +25,6 @@
 package js.webmidi;
 
 extern class MIDIConnectionEvent extends js.dom.Event {
-	var port(default, null) : MIDIPort;
+	var port(default, null) : Null<MIDIPort>;
 	function new(type:String, ?eventInitDict:MIDIConnectionEventInit):Void;
 }

@@ -25,10 +25,10 @@
 package js.mediaqueries5;
 
 extern class PreferenceObject extends js.dom.EventTarget {
-	var override(default, null) : String;
+	var override(default, null) : Null<String>;
 	var value(default, null) : String;
 	var validValues(default, null) : Array<String>;
-	var onchange : EventHandler;
+	var onchange : js.html.EventHandler;
 	function clearOverride():Void;
-	function requestOverride(value:String):js.lib.Promise<Void>;
+	function requestOverride(value:Null<String>):js.lib.Promise<Void>;
 }

@@ -26,10 +26,10 @@ package js.indexeddb;
 
 extern class IDBRequest extends js.dom.EventTarget {
 	var result(default, null) : Any;
-	var error(default, null) : js.webidl.DOMException;
-	var source(default, null) : haxe.extern.EitherType<IDBObjectStore, haxe.extern.EitherType<IDBIndex, IDBCursor>>;
-	var transaction(default, null) : IDBTransaction;
+	var error(default, null) : Null<js.webidl.DOMException>;
+	var source(default, null) : Null<haxe.extern.EitherType<IDBObjectStore, haxe.extern.EitherType<IDBIndex, IDBCursor>>>;
+	var transaction(default, null) : Null<IDBTransaction>;
 	var readyState(default, null) : IDBRequestReadyState;
-	var onsuccess : EventHandler;
-	var onerror : EventHandler;
+	var onsuccess : js.html.EventHandler;
+	var onerror : js.html.EventHandler;
 }

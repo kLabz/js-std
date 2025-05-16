@@ -26,13 +26,13 @@ package js.webmidi;
 
 extern class MIDIPort extends js.dom.EventTarget {
 	var id(default, null) : String;
-	var manufacturer(default, null) : String;
-	var name(default, null) : String;
+	var manufacturer(default, null) : Null<String>;
+	var name(default, null) : Null<String>;
 	var type(default, null) : MIDIPortType;
-	var version(default, null) : String;
+	var version(default, null) : Null<String>;
 	var state(default, null) : MIDIPortDeviceState;
 	var connection(default, null) : MIDIPortConnectionState;
-	var onstatechange : EventHandler;
+	var onstatechange : js.html.EventHandler;
 	function close():js.lib.Promise<MIDIPort>;
 	function open():js.lib.Promise<MIDIPort>;
 }

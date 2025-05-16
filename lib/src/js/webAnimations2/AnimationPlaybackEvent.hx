@@ -25,7 +25,7 @@
 package js.webAnimations2;
 
 extern class AnimationPlaybackEvent extends js.dom.Event {
-	var currentTime(default, null) : CSSNumberish;
-	var timelineTime(default, null) : CSSNumberish;
+	var currentTime(default, null) : Null<js.cssTypedOm.CSSNumberish>;
+	var timelineTime(default, null) : Null<js.cssTypedOm.CSSNumberish>;
 	function new(type:String, ?eventInitDict:AnimationPlaybackEventInit):Void;
 }

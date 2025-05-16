@@ -25,7 +25,7 @@
 package js.html;
 
 extern class NavigationHistoryEntry extends js.dom.EventTarget {
-	var url(default, null) : String;
+	var url(default, null) : Null<String>;
 	var key(default, null) : String;
 	var id(default, null) : String;
 	var index(default, null) : Float;

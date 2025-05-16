@@ -25,5 +25,5 @@
 package js.oesTextureHalfFloat;
 
 extern class OES_texture_half_float {
-	static inline var HALF_FLOAT_OES : GLenum = 0x8D61;
+	static inline var HALF_FLOAT_OES : js.webgl1.GLenum = 0x8D61;
 }

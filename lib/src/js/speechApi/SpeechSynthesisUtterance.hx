@@ -27,16 +27,16 @@ package js.speechApi;
 extern class SpeechSynthesisUtterance extends js.dom.EventTarget {
 	var text : String;
 	var lang : String;
-	var voice : SpeechSynthesisVoice;
+	var voice : Null<SpeechSynthesisVoice>;
 	var volume : Float;
 	var rate : Float;
 	var pitch : Float;
-	var onstart : EventHandler;
-	var onend : EventHandler;
-	var onerror : EventHandler;
-	var onpause : EventHandler;
-	var onresume : EventHandler;
-	var onmark : EventHandler;
-	var onboundary : EventHandler;
+	var onstart : js.html.EventHandler;
+	var onend : js.html.EventHandler;
+	var onerror : js.html.EventHandler;
+	var onpause : js.html.EventHandler;
+	var onresume : js.html.EventHandler;
+	var onmark : js.html.EventHandler;
+	var onboundary : js.html.EventHandler;
 	function new(?text:String):Void;
 }

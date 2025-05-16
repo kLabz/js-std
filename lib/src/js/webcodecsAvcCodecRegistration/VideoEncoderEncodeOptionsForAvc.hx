@@ -26,5 +26,5 @@ package js.webcodecsAvcCodecRegistration;
 
 typedef VideoEncoderEncodeOptionsForAvc = {
 	@:optional
-	var quantizer : Int;
+	var quantizer : Null<Int>;
 };

@@ -25,5 +25,5 @@
 package js.writingAssistanceApis;
 
 extern class CreateMonitor extends js.dom.EventTarget {
-	var ondownloadprogress : EventHandler;
+	var ondownloadprogress : js.html.EventHandler;
 }

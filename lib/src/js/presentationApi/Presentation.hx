@@ -28,9 +28,9 @@ extern class Presentation {
 	/**
 		From partial interface in presentation-api.idl
 	**/
-	var defaultRequest : PresentationRequest;
+	var defaultRequest : Null<PresentationRequest>;
 	/**
 		From partial interface in presentation-api.idl
 	**/
-	var receiver(default, null) : PresentationReceiver;
+	var receiver(default, null) : Null<PresentationReceiver>;
 }

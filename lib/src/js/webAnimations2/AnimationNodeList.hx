@@ -26,5 +26,5 @@ package js.webAnimations2;
 
 extern class AnimationNodeList {
 	var length(default, null) : Int;
-	function item(index:Int):js.webAnimations.AnimationEffect;
+	function item(index:Int):Null<js.webAnimations.AnimationEffect>;
 }

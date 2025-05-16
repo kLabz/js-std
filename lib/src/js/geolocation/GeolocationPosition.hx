@@ -26,6 +26,6 @@ package js.geolocation;
 
 extern class GeolocationPosition {
 	var coords(default, null) : GeolocationCoordinates;
-	var timestamp(default, null) : EpochTimeStamp;
+	var timestamp(default, null) : js.hrTime.EpochTimeStamp;
 	function toJSON():{ };
 }

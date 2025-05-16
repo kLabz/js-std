@@ -29,7 +29,7 @@ extern class HTMLTextAreaElement extends HTMLElement {
 	var cols : Int;
 	var dirName : String;
 	var disabled : Bool;
-	var form(default, null) : HTMLFormElement;
+	var form(default, null) : Null<HTMLFormElement>;
 	var maxLength : Int;
 	var minLength : Int;
 	var name : String;

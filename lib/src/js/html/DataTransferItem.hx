@@ -27,14 +27,14 @@ package js.html;
 extern class DataTransferItem {
 	var kind(default, null) : String;
 	var type(default, null) : String;
-	function getAsFile():js.fileapi.File;
+	function getAsFile():Null<js.fileapi.File>;
 	/**
 		From partial interface in file-system-access.idl
 	**/
-	function getAsFileSystemHandle():js.lib.Promise<js.fs.FileSystemHandle>;
-	function getAsString(callback:FunctionStringCallback):Void;
+	function getAsFileSystemHandle():js.lib.Promise<Null<js.fs.FileSystemHandle>>;
+	function getAsString(callback:Null<FunctionStringCallback>):Void;
 	/**
 		From partial interface in entries-api.idl
 	**/
-	function webkitGetAsEntry():js.entriesApi.FileSystemEntry;
+	function webkitGetAsEntry():Null<js.entriesApi.FileSystemEntry>;
 }

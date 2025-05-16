@@ -25,19 +25,19 @@
 package js.webglBlendEquationAdvancedCoherent;
 
 extern class WEBGL_blend_equation_advanced_coherent {
-	static inline var MULTIPLY : GLenum = 0x9294;
-	static inline var SCREEN : GLenum = 0x9295;
-	static inline var OVERLAY : GLenum = 0x9296;
-	static inline var DARKEN : GLenum = 0x9297;
-	static inline var LIGHTEN : GLenum = 0x9298;
-	static inline var COLORDODGE : GLenum = 0x9299;
-	static inline var COLORBURN : GLenum = 0x929A;
-	static inline var HARDLIGHT : GLenum = 0x929B;
-	static inline var SOFTLIGHT : GLenum = 0x929C;
-	static inline var DIFFERENCE : GLenum = 0x929E;
-	static inline var EXCLUSION : GLenum = 0x92A0;
-	static inline var HSL_HUE : GLenum = 0x92AD;
-	static inline var HSL_SATURATION : GLenum = 0x92AE;
-	static inline var HSL_COLOR : GLenum = 0x92AF;
-	static inline var HSL_LUMINOSITY : GLenum = 0x92B0;
+	static inline var MULTIPLY : js.webgl1.GLenum = 0x9294;
+	static inline var SCREEN : js.webgl1.GLenum = 0x9295;
+	static inline var OVERLAY : js.webgl1.GLenum = 0x9296;
+	static inline var DARKEN : js.webgl1.GLenum = 0x9297;
+	static inline var LIGHTEN : js.webgl1.GLenum = 0x9298;
+	static inline var COLORDODGE : js.webgl1.GLenum = 0x9299;
+	static inline var COLORBURN : js.webgl1.GLenum = 0x929A;
+	static inline var HARDLIGHT : js.webgl1.GLenum = 0x929B;
+	static inline var SOFTLIGHT : js.webgl1.GLenum = 0x929C;
+	static inline var DIFFERENCE : js.webgl1.GLenum = 0x929E;
+	static inline var EXCLUSION : js.webgl1.GLenum = 0x92A0;
+	static inline var HSL_HUE : js.webgl1.GLenum = 0x92AD;
+	static inline var HSL_SATURATION : js.webgl1.GLenum = 0x92AE;
+	static inline var HSL_COLOR : js.webgl1.GLenum = 0x92AF;
+	static inline var HSL_LUMINOSITY : js.webgl1.GLenum = 0x92B0;
 }

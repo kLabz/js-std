@@ -32,7 +32,7 @@ extern class VisualViewport extends js.dom.EventTarget {
 	var width(default, null) : Float;
 	var height(default, null) : Float;
 	var scale(default, null) : Float;
-	var onresize : EventHandler;
-	var onscroll : EventHandler;
-	var onscrollend : EventHandler;
+	var onresize : js.html.EventHandler;
+	var onscroll : js.html.EventHandler;
+	var onscrollend : js.html.EventHandler;
 }

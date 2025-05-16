@@ -29,11 +29,11 @@ extern class MediaKeySession extends js.dom.EventTarget {
 	var expiration(default, null) : Float;
 	var closed(default, null) : js.lib.Promise<MediaKeySessionClosedReason>;
 	var keyStatuses(default, null) : MediaKeyStatusMap;
-	var onkeystatuseschange : EventHandler;
-	var onmessage : EventHandler;
+	var onkeystatuseschange : js.html.EventHandler;
+	var onmessage : js.html.EventHandler;
 	function close():js.lib.Promise<Void>;
-	function generateRequest(initDataType:String, initData:BufferSource):js.lib.Promise<Void>;
+	function generateRequest(initDataType:String, initData:js.webidl.BufferSource):js.lib.Promise<Void>;
 	function load(sessionId:String):js.lib.Promise<Bool>;
 	function remove():js.lib.Promise<Void>;
-	function update(response:BufferSource):js.lib.Promise<Void>;
+	function update(response:js.webidl.BufferSource):js.lib.Promise<Void>;
 }

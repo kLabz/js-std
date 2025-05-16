@@ -26,6 +26,6 @@ package js.windowControlsOverlay;
 
 extern class WindowControlsOverlay extends js.dom.EventTarget {
 	var visible(default, null) : Bool;
-	var ongeometrychange : EventHandler;
+	var ongeometrychange : js.html.EventHandler;
 	function getTitlebarAreaRect():js.geometry.DOMRect;
 }

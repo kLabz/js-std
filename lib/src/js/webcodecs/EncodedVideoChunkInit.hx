@@ -29,7 +29,7 @@ typedef EncodedVideoChunkInit = {
 	var timestamp : Float;
 	@:optional
 	var duration : Float;
-	var data : AllowSharedBufferSource;
+	var data : js.webidl.AllowSharedBufferSource;
 	@:optional
 	var transfer : Array<ArrayBuffer> = [];
 };

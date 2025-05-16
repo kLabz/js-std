@@ -26,6 +26,6 @@ package js.mediaSource;
 
 extern class SourceBufferList extends js.dom.EventTarget implements ArrayAccess<SourceBuffer> {
 	var length(default, null) : Int;
-	var onaddsourcebuffer : EventHandler;
-	var onremovesourcebuffer : EventHandler;
+	var onaddsourcebuffer : js.html.EventHandler;
+	var onremovesourcebuffer : js.html.EventHandler;
 }

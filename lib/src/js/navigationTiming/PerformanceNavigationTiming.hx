@@ -25,21 +25,21 @@
 package js.navigationTiming;
 
 extern class PerformanceNavigationTiming extends js.resourceTiming.PerformanceResourceTiming {
-	var unloadEventStart(default, null) : DOMHighResTimeStamp;
-	var unloadEventEnd(default, null) : DOMHighResTimeStamp;
-	var domInteractive(default, null) : DOMHighResTimeStamp;
-	var domContentLoadedEventStart(default, null) : DOMHighResTimeStamp;
-	var domContentLoadedEventEnd(default, null) : DOMHighResTimeStamp;
-	var domComplete(default, null) : DOMHighResTimeStamp;
-	var loadEventStart(default, null) : DOMHighResTimeStamp;
-	var loadEventEnd(default, null) : DOMHighResTimeStamp;
+	var unloadEventStart(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var unloadEventEnd(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var domInteractive(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var domContentLoadedEventStart(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var domContentLoadedEventEnd(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var domComplete(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var loadEventStart(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var loadEventEnd(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var type(default, null) : NavigationTimingType;
 	var redirectCount(default, null) : Int;
-	var criticalCHRestart(default, null) : DOMHighResTimeStamp;
-	var notRestoredReasons(default, null) : js.html.NotRestoredReasons;
+	var criticalCHRestart(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var notRestoredReasons(default, null) : Null<js.html.NotRestoredReasons>;
 	/**
 		From partial interface in prerendering-revamped.idl
 	**/
-	var activationStart(default, null) : DOMHighResTimeStamp;
+	var activationStart(default, null) : js.hrTime.DOMHighResTimeStamp;
 	function toJSON():{ };
 }

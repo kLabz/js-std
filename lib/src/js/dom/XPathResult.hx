@@ -39,9 +39,9 @@ extern class XPathResult {
 	var numberValue(default, null) : Float;
 	var stringValue(default, null) : String;
 	var booleanValue(default, null) : Bool;
-	var singleNodeValue(default, null) : Node;
+	var singleNodeValue(default, null) : Null<Node>;
 	var invalidIteratorState(default, null) : Bool;
 	var snapshotLength(default, null) : Int;
-	function iterateNext():Node;
-	function snapshotItem(index:Int):Node;
+	function iterateNext():Null<Node>;
+	function snapshotItem(index:Int):Null<Node>;
 }

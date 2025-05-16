@@ -27,7 +27,7 @@ package js.webcodecs;
 extern class VideoEncoder extends js.dom.EventTarget {
 	var state(default, null) : CodecState;
 	var encodeQueueSize(default, null) : Int;
-	var ondequeue : EventHandler;
+	var ondequeue : js.html.EventHandler;
 	function new(init:VideoEncoderInit):Void;
 	function close():Void;
 	function configure(config:VideoEncoderConfig):Void;

@@ -26,19 +26,19 @@ package js.geolocationSensor;
 
 typedef GeolocationSensorReading = {
 	@:optional
-	var timestamp : DOMHighResTimeStamp;
+	var timestamp : Null<js.hrTime.DOMHighResTimeStamp>;
 	@:optional
-	var latitude : Float;
+	var latitude : Null<Float>;
 	@:optional
-	var longitude : Float;
+	var longitude : Null<Float>;
 	@:optional
-	var altitude : Float;
+	var altitude : Null<Float>;
 	@:optional
-	var accuracy : Float;
+	var accuracy : Null<Float>;
 	@:optional
-	var altitudeAccuracy : Float;
+	var altitudeAccuracy : Null<Float>;
 	@:optional
-	var heading : Float;
+	var heading : Null<Float>;
 	@:optional
-	var speed : Float;
+	var speed : Null<Float>;
 };

@@ -28,5 +28,5 @@ typedef SFrameTransformErrorEventInit = js.dom.EventInit & {
 	var errorType : SFrameTransformErrorEventType;
 	var frame : Any;
 	@:optional
-	var keyID : CryptoKeyID;
+	var keyID : Null<CryptoKeyID>;
 };

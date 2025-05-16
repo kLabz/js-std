@@ -27,11 +27,11 @@ package js.webxr;
 extern class XRWebGLLayer extends XRLayer {
 	var antialias(default, null) : Bool;
 	var ignoreDepthValues(default, null) : Bool;
-	var fixedFoveation : Float;
-	var framebuffer(default, null) : js.webgl1.WebGLFramebuffer;
+	var fixedFoveation : Null<Float>;
+	var framebuffer(default, null) : Null<js.webgl1.WebGLFramebuffer>;
 	var framebufferWidth(default, null) : Int;
 	var framebufferHeight(default, null) : Int;
 	function new(session:XRSession, context:XRWebGLRenderingContext, ?layerInit:XRWebGLLayerInit):Void;
 	function getNativeFramebufferScaleFactor(session:XRSession):Float;
-	function getViewport(view:XRView):XRViewport;
+	function getViewport(view:XRView):Null<XRViewport>;
 }

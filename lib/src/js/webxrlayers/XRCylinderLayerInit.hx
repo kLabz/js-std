@@ -28,7 +28,7 @@ typedef XRCylinderLayerInit = XRLayerInit & {
 	@:optional
 	var textureType : XRTextureType = "texture";
 	@:optional
-	var transform : js.webxr.XRRigidTransform;
+	var transform : Null<js.webxr.XRRigidTransform>;
 	@:optional
 	var radius : Float = 2.0;
 	@:optional

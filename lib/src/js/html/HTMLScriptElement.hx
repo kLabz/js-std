@@ -30,7 +30,7 @@ extern class HTMLScriptElement extends HTMLElement {
 	var noModule : Bool;
 	var async : Bool;
 	var defer : Bool;
-	var crossOrigin : String;
+	var crossOrigin : Null<String>;
 	var text : String;
 	var integrity : String;
 	var referrerPolicy : String;

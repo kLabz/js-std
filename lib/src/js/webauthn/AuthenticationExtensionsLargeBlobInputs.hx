@@ -30,5 +30,5 @@ typedef AuthenticationExtensionsLargeBlobInputs = {
 	@:optional
 	var read : Bool;
 	@:optional
-	var write : BufferSource;
+	var write : js.webidl.BufferSource;
 };

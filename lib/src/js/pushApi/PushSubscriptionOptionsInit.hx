@@ -28,5 +28,5 @@ typedef PushSubscriptionOptionsInit = {
 	@:optional
 	var userVisibleOnly : Bool = false;
 	@:optional
-	var applicationServerKey : haxe.extern.EitherType<BufferSource, String> = null;
+	var applicationServerKey : Null<haxe.extern.EitherType<js.webidl.BufferSource, String>> = null;
 };

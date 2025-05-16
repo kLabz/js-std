@@ -26,34 +26,34 @@ package js.webAnimations;
 
 extern class Animation extends js.dom.EventTarget {
 	var id : String;
-	var effect : AnimationEffect;
-	var timeline : AnimationTimeline;
+	var effect : Null<AnimationEffect>;
+	var timeline : Null<AnimationTimeline>;
 	var playbackRate : Float;
 	var playState(default, null) : AnimationPlayState;
 	var replaceState(default, null) : AnimationReplaceState;
 	var pending(default, null) : Bool;
 	var ready(default, null) : js.lib.Promise<Animation>;
 	var finished(default, null) : js.lib.Promise<Animation>;
-	var onfinish : EventHandler;
-	var oncancel : EventHandler;
-	var onremove : EventHandler;
+	var onfinish : js.html.EventHandler;
+	var oncancel : js.html.EventHandler;
+	var onremove : js.html.EventHandler;
 	/**
 		From partial interface in web-animations-2.idl
 	**/
-	var startTime : CSSNumberish;
+	var startTime : Null<js.cssTypedOm.CSSNumberish>;
 	/**
 		From partial interface in web-animations-2.idl
 	**/
-	var currentTime : CSSNumberish;
+	var currentTime : Null<js.cssTypedOm.CSSNumberish>;
 	/**
 		From partial interface in web-animations-2.idl
 	**/
-	var trigger : js.webAnimations2.AnimationTrigger;
+	var trigger : Null<js.webAnimations2.AnimationTrigger>;
 	/**
 		From partial interface in web-animations-2.idl
 	**/
-	var overallProgress(default, null) : Float;
-	function new(?effect:AnimationEffect, ?timeline:AnimationTimeline):Void;
+	var overallProgress(default, null) : Null<Float>;
+	function new(?effect:Null<AnimationEffect>, ?timeline:Null<AnimationTimeline>):Void;
 	function cancel():Void;
 	function commitStyles():Void;
 	function finish():Void;

@@ -29,10 +29,10 @@ extern class IDBTransaction extends js.dom.EventTarget {
 	var mode(default, null) : IDBTransactionMode;
 	var durability(default, null) : IDBTransactionDurability;
 	var db(default, null) : IDBDatabase;
-	var error(default, null) : js.webidl.DOMException;
-	var onabort : EventHandler;
-	var oncomplete : EventHandler;
-	var onerror : EventHandler;
+	var error(default, null) : Null<js.webidl.DOMException>;
+	var onabort : js.html.EventHandler;
+	var oncomplete : js.html.EventHandler;
+	var onerror : js.html.EventHandler;
 	function abort():Void;
 	function commit():Void;
 	function objectStore(name:String):IDBObjectStore;

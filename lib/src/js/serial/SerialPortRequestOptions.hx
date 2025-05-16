@@ -28,5 +28,5 @@ typedef SerialPortRequestOptions = {
 	@:optional
 	var filters : Array<SerialPortFilter>;
 	@:optional
-	var allowedBluetoothServiceClassIds : Array<BluetoothServiceUUID>;
+	var allowedBluetoothServiceClassIds : Array<js.webBluetooth.BluetoothServiceUUID>;
 };

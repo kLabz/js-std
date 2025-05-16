@@ -40,13 +40,13 @@ typedef NotificationOptions = {
 	@:optional
 	var badge : String;
 	@:optional
-	var vibrate : VibratePattern;
+	var vibrate : js.vibration.VibratePattern;
 	@:optional
-	var timestamp : EpochTimeStamp;
+	var timestamp : js.hrTime.EpochTimeStamp;
 	@:optional
 	var renotify : Bool = false;
 	@:optional
-	var silent : Bool = null;
+	var silent : Null<Bool> = null;
 	@:optional
 	var requireInteraction : Bool = false;
 	@:optional

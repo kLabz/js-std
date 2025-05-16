@@ -27,7 +27,7 @@ package js.webcodecs;
 typedef VideoDecoderConfig = {
 	var codec : String;
 	@:optional
-	var description : AllowSharedBufferSource;
+	var description : js.webidl.AllowSharedBufferSource;
 	@:optional
 	var codedWidth : Int;
 	@:optional

@@ -29,9 +29,9 @@ extern class MutationRecord {
 	var target(default, null) : Node;
 	var addedNodes(default, null) : NodeList;
 	var removedNodes(default, null) : NodeList;
-	var previousSibling(default, null) : Node;
-	var nextSibling(default, null) : Node;
-	var attributeName(default, null) : String;
-	var attributeNamespace(default, null) : String;
-	var oldValue(default, null) : String;
+	var previousSibling(default, null) : Null<Node>;
+	var nextSibling(default, null) : Null<Node>;
+	var attributeName(default, null) : Null<String>;
+	var attributeNamespace(default, null) : Null<String>;
+	var oldValue(default, null) : Null<String>;
 }

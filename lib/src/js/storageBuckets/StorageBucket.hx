@@ -29,9 +29,9 @@ extern class StorageBucket {
 	var indexedDB(default, null) : js.indexeddb.IDBFactory;
 	var caches(default, null) : js.serviceWorkers.CacheStorage;
 	function estimate():js.lib.Promise<js.storage.StorageEstimate>;
-	function expires():js.lib.Promise<DOMHighResTimeStamp>;
+	function expires():js.lib.Promise<Null<js.hrTime.DOMHighResTimeStamp>>;
 	function getDirectory():js.lib.Promise<js.fs.FileSystemDirectoryHandle>;
 	function persist():js.lib.Promise<Bool>;
 	function persisted():js.lib.Promise<Bool>;
-	function setExpires(expires:DOMHighResTimeStamp):js.lib.Promise<Void>;
+	function setExpires(expires:js.hrTime.DOMHighResTimeStamp):js.lib.Promise<Void>;
 }

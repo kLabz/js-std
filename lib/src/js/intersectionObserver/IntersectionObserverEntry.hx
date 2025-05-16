@@ -25,8 +25,8 @@
 package js.intersectionObserver;
 
 extern class IntersectionObserverEntry {
-	var time(default, null) : DOMHighResTimeStamp;
-	var rootBounds(default, null) : js.geometry.DOMRectReadOnly;
+	var time(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var rootBounds(default, null) : Null<js.geometry.DOMRectReadOnly>;
 	var boundingClientRect(default, null) : js.geometry.DOMRectReadOnly;
 	var intersectionRect(default, null) : js.geometry.DOMRectReadOnly;
 	var isIntersecting(default, null) : Bool;

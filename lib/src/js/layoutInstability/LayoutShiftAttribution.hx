@@ -25,7 +25,7 @@
 package js.layoutInstability;
 
 extern class LayoutShiftAttribution {
-	var node(default, null) : js.dom.Node;
+	var node(default, null) : Null<js.dom.Node>;
 	var previousRect(default, null) : js.geometry.DOMRectReadOnly;
 	var currentRect(default, null) : js.geometry.DOMRectReadOnly;
 }

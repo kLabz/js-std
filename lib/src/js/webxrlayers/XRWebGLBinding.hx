@@ -27,25 +27,25 @@ package js.webxrlayers;
 extern class XRWebGLBinding {
 	var nativeProjectionScaleFactor(default, null) : Float;
 	var usesDepthValues(default, null) : Bool;
-	function new(session:js.webxr.XRSession, context:XRWebGLRenderingContext):Void;
+	function new(session:js.webxr.XRSession, context:js.webxr.XRWebGLRenderingContext):Void;
 	function createCubeLayer(?init:XRCubeLayerInit):XRCubeLayer;
 	function createCylinderLayer(?init:XRCylinderLayerInit):XRCylinderLayer;
 	function createEquirectLayer(?init:XREquirectLayerInit):XREquirectLayer;
 	function createProjectionLayer(?init:XRProjectionLayerInit):XRProjectionLayer;
 	function createQuadLayer(?init:XRQuadLayerInit):XRQuadLayer;
-	function foveateBoundTexture(target:GLenum, fixed_foveation:Float):Void;
+	function foveateBoundTexture(target:js.webgl1.GLenum, fixed_foveation:Float):Void;
 	/**
 		From partial interface in raw-camera-access.idl
 	**/
-	function getCameraImage(camera:js.rawCameraAccess.XRCamera):js.webgl1.WebGLTexture;
+	function getCameraImage(camera:js.rawCameraAccess.XRCamera):Null<js.webgl1.WebGLTexture>;
 	/**
 		From partial interface in webxr-depth-sensing.idl
 	**/
-	function getDepthInformation(view:js.webxr.XRView):js.webxrDepthSensing.XRWebGLDepthInformation;
+	function getDepthInformation(view:js.webxr.XRView):Null<js.webxrDepthSensing.XRWebGLDepthInformation>;
 	/**
 		From partial interface in webxr-lighting-estimation.idl
 	**/
-	function getReflectionCubeMap(lightProbe:js.webxrLightingEstimation.XRLightProbe):js.webgl1.WebGLTexture;
+	function getReflectionCubeMap(lightProbe:js.webxrLightingEstimation.XRLightProbe):Null<js.webgl1.WebGLTexture>;
 	function getSubImage(layer:XRCompositionLayer, frame:js.webxr.XRFrame, ?eye:js.webxr.XREye):XRWebGLSubImage;
 	function getViewSubImage(layer:XRProjectionLayer, view:js.webxr.XRView):XRWebGLSubImage;
 }

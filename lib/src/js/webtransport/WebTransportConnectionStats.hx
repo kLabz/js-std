@@ -37,12 +37,12 @@ typedef WebTransportConnectionStats = {
 	var bytesReceived : Float = 0;
 	@:optional
 	var packetsReceived : Float = 0;
-	var smoothedRtt : DOMHighResTimeStamp;
-	var rttVariation : DOMHighResTimeStamp;
-	var minRtt : DOMHighResTimeStamp;
+	var smoothedRtt : js.hrTime.DOMHighResTimeStamp;
+	var rttVariation : js.hrTime.DOMHighResTimeStamp;
+	var minRtt : js.hrTime.DOMHighResTimeStamp;
 	var datagrams : WebTransportDatagramStats;
 	@:optional
-	var estimatedSendRate : Float = null;
+	var estimatedSendRate : Null<Float> = null;
 	@:optional
 	var atSendCapacity : Bool = false;
 };

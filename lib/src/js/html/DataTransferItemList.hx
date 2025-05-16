@@ -26,8 +26,8 @@ package js.html;
 
 extern class DataTransferItemList implements ArrayAccess<DataTransferItem> {
 	var length(default, null) : Int;
-	overload function add(data:String, type:String):DataTransferItem;
-	overload function add(data:js.fileapi.File):DataTransferItem;
+	overload function add(data:String, type:String):Null<DataTransferItem>;
+	overload function add(data:js.fileapi.File):Null<DataTransferItem>;
 	function clear():Void;
 	function remove(index:Int):Void;
 }

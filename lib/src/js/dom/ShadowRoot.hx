@@ -31,7 +31,7 @@ extern class ShadowRoot extends DocumentFragment {
 	var clonable(default, null) : Bool;
 	var serializable(default, null) : Bool;
 	var host(default, null) : Element;
-	var onslotchange : EventHandler;
+	var onslotchange : js.html.EventHandler;
 	/**
 		From partial interface in html.idl
 	**/

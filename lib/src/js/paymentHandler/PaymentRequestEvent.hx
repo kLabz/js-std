@@ -31,12 +31,12 @@ extern class PaymentRequestEvent extends js.serviceWorkers.ExtendableEvent {
 	var methodData(default, null) : Array<js.paymentRequest.PaymentMethodData>;
 	var total(default, null) : { };
 	var modifiers(default, null) : Array<js.paymentRequest.PaymentDetailsModifier>;
-	var paymentOptions(default, null) : { };
-	var shippingOptions(default, null) : Array<js.paymentRequest.PaymentShippingOption>;
+	var paymentOptions(default, null) : Null<{ }>;
+	var shippingOptions(default, null) : Null<Array<js.paymentRequest.PaymentShippingOption>>;
 	function new(type:String, ?eventInitDict:PaymentRequestEventInit):Void;
-	function changePaymentMethod(methodName:String, ?methodDetails:{ }):js.lib.Promise<PaymentRequestDetailsUpdate>;
-	function changeShippingAddress(?shippingAddress:AddressInit):js.lib.Promise<PaymentRequestDetailsUpdate>;
-	function changeShippingOption(shippingOption:String):js.lib.Promise<PaymentRequestDetailsUpdate>;
-	function openWindow(url:String):js.lib.Promise<js.serviceWorkers.WindowClient>;
+	function changePaymentMethod(methodName:String, ?methodDetails:Null<{ }>):js.lib.Promise<Null<PaymentRequestDetailsUpdate>>;
+	function changeShippingAddress(?shippingAddress:AddressInit):js.lib.Promise<Null<PaymentRequestDetailsUpdate>>;
+	function changeShippingOption(shippingOption:String):js.lib.Promise<Null<PaymentRequestDetailsUpdate>>;
+	function openWindow(url:String):js.lib.Promise<Null<js.serviceWorkers.WindowClient>>;
 	function respondWith(handlerResponsePromise:js.lib.Promise<PaymentHandlerResponse>):Void;
 }

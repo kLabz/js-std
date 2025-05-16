@@ -31,7 +31,7 @@ extern class DOMTokenList {
 	var length(default, null) : Int;
 	function add(tokens:String):Void;
 	function contains(token:String):Bool;
-	function item(index:Int):String;
+	function item(index:Int):Null<String>;
 	function remove(tokens:String):Void;
 	function replace(token:String, newToken:String):Bool;
 	function supports(token:String):Bool;

@@ -28,5 +28,5 @@ typedef KeySystemTrackConfiguration = {
 	@:optional
 	var robustness : String = "";
 	@:optional
-	var encryptionScheme : String = null;
+	var encryptionScheme : Null<String> = null;
 };

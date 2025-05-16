@@ -25,24 +25,24 @@
 package js.webrtc;
 
 extern class RTCPeerConnection extends js.dom.EventTarget {
-	var localDescription(default, null) : RTCSessionDescription;
-	var currentLocalDescription(default, null) : RTCSessionDescription;
-	var pendingLocalDescription(default, null) : RTCSessionDescription;
-	var remoteDescription(default, null) : RTCSessionDescription;
-	var currentRemoteDescription(default, null) : RTCSessionDescription;
-	var pendingRemoteDescription(default, null) : RTCSessionDescription;
+	var localDescription(default, null) : Null<RTCSessionDescription>;
+	var currentLocalDescription(default, null) : Null<RTCSessionDescription>;
+	var pendingLocalDescription(default, null) : Null<RTCSessionDescription>;
+	var remoteDescription(default, null) : Null<RTCSessionDescription>;
+	var currentRemoteDescription(default, null) : Null<RTCSessionDescription>;
+	var pendingRemoteDescription(default, null) : Null<RTCSessionDescription>;
 	var signalingState(default, null) : RTCSignalingState;
 	var iceGatheringState(default, null) : RTCIceGatheringState;
 	var iceConnectionState(default, null) : RTCIceConnectionState;
 	var connectionState(default, null) : RTCPeerConnectionState;
-	var canTrickleIceCandidates(default, null) : Bool;
-	var onnegotiationneeded : EventHandler;
-	var onicecandidate : EventHandler;
-	var onicecandidateerror : EventHandler;
-	var onsignalingstatechange : EventHandler;
-	var oniceconnectionstatechange : EventHandler;
-	var onicegatheringstatechange : EventHandler;
-	var onconnectionstatechange : EventHandler;
+	var canTrickleIceCandidates(default, null) : Null<Bool>;
+	var onnegotiationneeded : js.html.EventHandler;
+	var onicecandidate : js.html.EventHandler;
+	var onicecandidateerror : js.html.EventHandler;
+	var onsignalingstatechange : js.html.EventHandler;
+	var oniceconnectionstatechange : js.html.EventHandler;
+	var onicegatheringstatechange : js.html.EventHandler;
+	var onconnectionstatechange : js.html.EventHandler;
 	/**
 		From partial interface in webrtc-identity.idl
 	**/
@@ -50,26 +50,26 @@ extern class RTCPeerConnection extends js.dom.EventTarget {
 	/**
 		From partial interface in webrtc-identity.idl
 	**/
-	var idpLoginUrl(default, null) : String;
+	var idpLoginUrl(default, null) : Null<String>;
 	/**
 		From partial interface in webrtc-identity.idl
 	**/
-	var idpErrorInfo(default, null) : String;
+	var idpErrorInfo(default, null) : Null<String>;
 	/**
 		From partial interface in webrtc.idl
 	**/
-	var ontrack : EventHandler;
+	var ontrack : js.html.EventHandler;
 	/**
 		From partial interface in webrtc.idl
 	**/
-	var sctp(default, null) : RTCSctpTransport;
+	var sctp(default, null) : Null<RTCSctpTransport>;
 	/**
 		From partial interface in webrtc.idl
 	**/
-	var ondatachannel : EventHandler;
+	var ondatachannel : js.html.EventHandler;
 	function new(?configuration:RTCConfiguration):Void;
 	overload function addIceCandidate(?candidate:RTCIceCandidateInit):js.lib.Promise<Void>;
-	overload function addIceCandidate(candidate:RTCIceCandidateInit, successCallback:VoidFunction, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
+	overload function addIceCandidate(candidate:RTCIceCandidateInit, successCallback:js.webidl.VoidFunction, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
 	/**
 		From partial interface in webrtc.idl
 	**/
@@ -90,7 +90,7 @@ extern class RTCPeerConnection extends js.dom.EventTarget {
 	/**
 		From partial interface in webrtc.idl
 	**/
-	function generateCertificate(keygenAlgorithm:AlgorithmIdentifier):js.lib.Promise<RTCCertificate>;
+	function generateCertificate(keygenAlgorithm:js.webcrypto.AlgorithmIdentifier):js.lib.Promise<RTCCertificate>;
 	function getConfiguration():RTCConfiguration;
 	/**
 		From partial interface in webrtc-identity.idl
@@ -107,7 +107,7 @@ extern class RTCPeerConnection extends js.dom.EventTarget {
 	/**
 		From partial interface in webrtc.idl
 	**/
-	function getStats(?selector:js.mediacaptureStreams.MediaStreamTrack):js.lib.Promise<RTCStatsReport>;
+	function getStats(?selector:Null<js.mediacaptureStreams.MediaStreamTrack>):js.lib.Promise<RTCStatsReport>;
 	/**
 		From partial interface in webrtc.idl
 	**/
@@ -123,7 +123,7 @@ extern class RTCPeerConnection extends js.dom.EventTarget {
 	**/
 	function setIdentityProvider(provider:String, ?options:js.webrtcIdentity.RTCIdentityProviderOptions):Void;
 	overload function setLocalDescription(?description:RTCLocalSessionDescriptionInit):js.lib.Promise<Void>;
-	overload function setLocalDescription(description:RTCLocalSessionDescriptionInit, successCallback:VoidFunction, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
+	overload function setLocalDescription(description:RTCLocalSessionDescriptionInit, successCallback:js.webidl.VoidFunction, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
 	overload function setRemoteDescription(description:RTCSessionDescriptionInit):js.lib.Promise<Void>;
-	overload function setRemoteDescription(description:RTCSessionDescriptionInit, successCallback:VoidFunction, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
+	overload function setRemoteDescription(description:RTCSessionDescriptionInit, successCallback:js.webidl.VoidFunction, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
 }

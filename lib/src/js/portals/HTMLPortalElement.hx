@@ -27,8 +27,8 @@ package js.portals;
 extern class HTMLPortalElement extends js.html.HTMLElement {
 	var src : String;
 	var referrerPolicy : String;
-	var onmessage : EventHandler;
-	var onmessageerror : EventHandler;
+	var onmessage : js.html.EventHandler;
+	var onmessageerror : js.html.EventHandler;
 	function new():Void;
 	function activate(?options:PortalActivateOptions):js.lib.Promise<Void>;
 	function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;

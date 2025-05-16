@@ -25,8 +25,8 @@
 package js.magnetometer;
 
 extern class Magnetometer extends js.genericSensor.Sensor {
-	var x(default, null) : Float;
-	var y(default, null) : Float;
-	var z(default, null) : Float;
+	var x(default, null) : Null<Float>;
+	var y(default, null) : Null<Float>;
+	var z(default, null) : Null<Float>;
 	function new(?sensorOptions:MagnetometerSensorOptions):Void;
 }

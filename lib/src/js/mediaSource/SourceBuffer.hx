@@ -34,13 +34,13 @@ extern class SourceBuffer extends js.dom.EventTarget {
 	var textTracks(default, null) : js.html.TextTrackList;
 	var appendWindowStart : Float;
 	var appendWindowEnd : Float;
-	var onupdatestart : EventHandler;
-	var onupdate : EventHandler;
-	var onupdateend : EventHandler;
-	var onerror : EventHandler;
-	var onabort : EventHandler;
+	var onupdatestart : js.html.EventHandler;
+	var onupdate : js.html.EventHandler;
+	var onupdateend : js.html.EventHandler;
+	var onerror : js.html.EventHandler;
+	var onabort : js.html.EventHandler;
 	function abort():Void;
-	function appendBuffer(data:BufferSource):Void;
+	function appendBuffer(data:js.webidl.BufferSource):Void;
 	function changeType(type:String):Void;
 	function remove(start:Float, end:Float):Void;
 }

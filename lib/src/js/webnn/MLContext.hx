@@ -26,12 +26,12 @@ package js.webnn;
 
 extern class MLContext {
 	var lost(default, null) : js.lib.Promise<MLContextLostInfo>;
-	function createConstantTensor(descriptor:MLOperandDescriptor, inputData:AllowSharedBufferSource):js.lib.Promise<MLTensor>;
+	function createConstantTensor(descriptor:MLOperandDescriptor, inputData:js.webidl.AllowSharedBufferSource):js.lib.Promise<MLTensor>;
 	function createTensor(descriptor:MLTensorDescriptor):js.lib.Promise<MLTensor>;
 	function destroy():Void;
 	function dispatch(graph:MLGraph, inputs:MLNamedTensors, outputs:MLNamedTensors):Void;
 	function opSupportLimits():MLOpSupportLimits;
 	overload function readTensor(tensor:MLTensor):js.lib.Promise<ArrayBuffer>;
-	overload function readTensor(tensor:MLTensor, outputData:AllowSharedBufferSource):js.lib.Promise<Void>;
-	function writeTensor(tensor:MLTensor, inputData:AllowSharedBufferSource):Void;
+	overload function readTensor(tensor:MLTensor, outputData:js.webidl.AllowSharedBufferSource):js.lib.Promise<Void>;
+	function writeTensor(tensor:MLTensor, inputData:js.webidl.AllowSharedBufferSource):Void;
 }

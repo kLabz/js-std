@@ -32,7 +32,7 @@ extern class Response {
 	var ok(default, null) : Bool;
 	var statusText(default, null) : String;
 	var headers(default, null) : Headers;
-	function new(?body:BodyInit, ?init:ResponseInit):Void;
+	function new(?body:Null<BodyInit>, ?init:ResponseInit):Void;
 	function clone():Response;
 	function error():Response;
 	function json(data:Any, ?init:ResponseInit):Response;

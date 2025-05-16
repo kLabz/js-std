@@ -25,7 +25,7 @@
 package js.portals;
 
 extern class PortalHost extends js.dom.EventTarget {
-	var onmessage : EventHandler;
-	var onmessageerror : EventHandler;
+	var onmessage : js.html.EventHandler;
+	var onmessageerror : js.html.EventHandler;
 	function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;
 }

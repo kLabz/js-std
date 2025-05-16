@@ -25,10 +25,10 @@
 package js.largestContentfulPaint;
 
 extern class LargestContentfulPaint extends js.performanceTimeline.PerformanceEntry {
-	var loadTime(default, null) : DOMHighResTimeStamp;
+	var loadTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var size(default, null) : Int;
 	var id(default, null) : String;
 	var url(default, null) : String;
-	var element(default, null) : js.dom.Element;
+	var element(default, null) : Null<js.dom.Element>;
 	function toJSON():{ };
 }

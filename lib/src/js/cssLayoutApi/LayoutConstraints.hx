@@ -27,11 +27,11 @@ package js.cssLayoutApi;
 extern class LayoutConstraints {
 	var availableInlineSize(default, null) : Float;
 	var availableBlockSize(default, null) : Float;
-	var fixedInlineSize(default, null) : Float;
-	var fixedBlockSize(default, null) : Float;
+	var fixedInlineSize(default, null) : Null<Float>;
+	var fixedBlockSize(default, null) : Null<Float>;
 	var percentageInlineSize(default, null) : Float;
 	var percentageBlockSize(default, null) : Float;
-	var blockFragmentationOffset(default, null) : Float;
+	var blockFragmentationOffset(default, null) : Null<Float>;
 	var blockFragmentationType(default, null) : BlockFragmentationType;
 	var data(default, null) : Any;
 }

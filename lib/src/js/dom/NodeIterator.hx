@@ -29,8 +29,8 @@ extern class NodeIterator {
 	var referenceNode(default, null) : Node;
 	var pointerBeforeReferenceNode(default, null) : Bool;
 	var whatToShow(default, null) : Int;
-	var filter(default, null) : NodeFilter;
+	var filter(default, null) : Null<NodeFilter>;
 	function detach():Void;
-	function nextNode():Node;
-	function previousNode():Node;
+	function nextNode():Null<Node>;
+	function previousNode():Null<Node>;
 }

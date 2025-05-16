@@ -50,6 +50,6 @@ extern class FontFace {
 		From partial interface in css-font-loading.idl
 	**/
 	var palettes(default, null) : FontFacePalettes;
-	function new(family:CSSOMString, source:haxe.extern.EitherType<CSSOMString, BufferSource>, ?descriptors:FontFaceDescriptors):Void;
+	function new(family:CSSOMString, source:haxe.extern.EitherType<CSSOMString, js.webidl.BufferSource>, ?descriptors:FontFaceDescriptors):Void;
 	function load():js.lib.Promise<FontFace>;
 }

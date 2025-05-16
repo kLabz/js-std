@@ -30,5 +30,5 @@ extern class CompositionEvent extends UIEvent {
 	/**
 		From partial interface in uievents.idl
 	**/
-	function initCompositionEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:WindowProxy, ?dataArg:String):Void;
+	function initCompositionEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:Null<WindowProxy>, ?dataArg:String):Void;
 }

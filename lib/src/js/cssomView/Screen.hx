@@ -42,5 +42,5 @@ extern class Screen {
 	/**
 		From partial interface in window-management.idl
 	**/
-	var onchange : EventHandler;
+	var onchange : js.html.EventHandler;
 }

@@ -27,7 +27,7 @@ package js.webauthn;
 typedef PublicKeyCredentialCreationOptions = {
 	var rp : PublicKeyCredentialRpEntity;
 	var user : PublicKeyCredentialUserEntity;
-	var challenge : BufferSource;
+	var challenge : js.webidl.BufferSource;
 	var pubKeyCredParams : Array<PublicKeyCredentialParameters>;
 	@:optional
 	var timeout : Int;

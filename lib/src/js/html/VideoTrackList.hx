@@ -30,5 +30,5 @@ extern class VideoTrackList extends js.dom.EventTarget implements ArrayAccess<Vi
 	var onchange : EventHandler;
 	var onaddtrack : EventHandler;
 	var onremovetrack : EventHandler;
-	function getTrackById(id:String):VideoTrack;
+	function getTrackById(id:String):Null<VideoTrack>;
 }

@@ -26,7 +26,7 @@ package js.html;
 
 extern class HTMLLinkElement extends HTMLElement {
 	var href : String;
-	var crossOrigin : String;
+	var crossOrigin : Null<String>;
 	var rel : String;
 	var as : String;
 	var relList(default, null) : js.dom.DOMTokenList;

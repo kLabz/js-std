@@ -26,8 +26,8 @@ package js.cssom;
 
 extern class CSSRule {
 	var cssText : CSSOMString;
-	var parentRule(default, null) : CSSRule;
-	var parentStyleSheet(default, null) : CSSStyleSheet;
+	var parentRule(default, null) : Null<CSSRule>;
+	var parentStyleSheet(default, null) : Null<CSSStyleSheet>;
 	var type(default, null) : Int;
 	static inline var STYLE_RULE : Int = 1;
 	static inline var CHARSET_RULE : Int = 2;
@@ -50,11 +50,11 @@ extern class CSSRule {
 	**/
 	static inline var SUPPORTS_RULE : Int = 12;
 	/**
-		From partial interface in css-counter-styles.idl
-	**/
-	static inline var COUNTER_STYLE_RULE : Int = 11;
-	/**
 		From partial interface in css-fonts.idl
 	**/
 	static inline var FONT_FEATURE_VALUES_RULE : Int = 14;
+	/**
+		From partial interface in css-counter-styles.idl
+	**/
+	static inline var COUNTER_STYLE_RULE : Int = 11;
 }

@@ -30,5 +30,5 @@ typedef StorageBucketOptions = {
 	@:optional
 	var quota : Float;
 	@:optional
-	var expires : DOMHighResTimeStamp;
+	var expires : js.hrTime.DOMHighResTimeStamp;
 };

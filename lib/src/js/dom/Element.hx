@@ -25,8 +25,8 @@
 package js.dom;
 
 extern class Element extends Node {
-	var namespaceURI(default, null) : String;
-	var prefix(default, null) : String;
+	var namespaceURI(default, null) : Null<String>;
+	var prefix(default, null) : Null<String>;
 	var localName(default, null) : String;
 	var tagName(default, null) : String;
 	var id : String;
@@ -34,8 +34,8 @@ extern class Element extends Node {
 	var classList(default, null) : DOMTokenList;
 	var slot : String;
 	var attributes(default, null) : NamedNodeMap;
-	var shadowRoot(default, null) : ShadowRoot;
-	var customElementRegistry(default, null) : js.html.CustomElementRegistry;
+	var shadowRoot(default, null) : Null<ShadowRoot>;
+	var customElementRegistry(default, null) : Null<js.html.CustomElementRegistry>;
 	/**
 		From partial interface in css-shadow-parts.idl
 	**/
@@ -83,11 +83,11 @@ extern class Element extends Node {
 	/**
 		From partial interface in fullscreen.idl
 	**/
-	var onfullscreenchange : EventHandler;
+	var onfullscreenchange : js.html.EventHandler;
 	/**
 		From partial interface in fullscreen.idl
 	**/
-	var onfullscreenerror : EventHandler;
+	var onfullscreenerror : js.html.EventHandler;
 	/**
 		From partial interface in html.idl
 	**/
@@ -101,7 +101,7 @@ extern class Element extends Node {
 		From partial interface in cssom-view.idl
 	**/
 	function checkVisibility(?options:js.cssomView.CheckVisibilityOptions):Bool;
-	function closest(selectors:String):Element;
+	function closest(selectors:String):Null<Element>;
 	/**
 		From partial interface in css-typed-om.idl
 	**/
@@ -110,11 +110,11 @@ extern class Element extends Node {
 		From partial interface in css-nav.idl
 	**/
 	function focusableAreas(?option:js.cssNav.FocusableAreasOption):Array<Node>;
-	function getAttribute(qualifiedName:String):String;
-	function getAttributeNS(namespace:String, localName:String):String;
+	function getAttribute(qualifiedName:String):Null<String>;
+	function getAttributeNS(namespace:Null<String>, localName:String):Null<String>;
 	function getAttributeNames():Array<String>;
-	function getAttributeNode(qualifiedName:String):Attr;
-	function getAttributeNodeNS(namespace:String, localName:String):Attr;
+	function getAttributeNode(qualifiedName:String):Null<Attr>;
+	function getAttributeNodeNS(namespace:Null<String>, localName:String):Null<Attr>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -125,7 +125,7 @@ extern class Element extends Node {
 	function getClientRects():js.geometry.DOMRectList;
 	function getElementsByClassName(classNames:String):HTMLCollection;
 	function getElementsByTagName(qualifiedName:String):HTMLCollection;
-	function getElementsByTagNameNS(namespace:String, localName:String):HTMLCollection;
+	function getElementsByTagNameNS(namespace:Null<String>, localName:String):HTMLCollection;
 	/**
 		From partial interface in html.idl
 	**/
@@ -135,13 +135,13 @@ extern class Element extends Node {
 	**/
 	function getSpatialNavigationContainer():Node;
 	function hasAttribute(qualifiedName:String):Bool;
-	function hasAttributeNS(namespace:String, localName:String):Bool;
+	function hasAttributeNS(namespace:Null<String>, localName:String):Bool;
 	function hasAttributes():Bool;
 	/**
 		From partial interface in pointerevents.idl
 	**/
 	function hasPointerCapture(pointerId:Int):Bool;
-	function insertAdjacentElement(where:String, element:Element):Element;
+	function insertAdjacentElement(where:String, element:Element):Null<Element>;
 	/**
 		From partial interface in html.idl
 	**/
@@ -151,13 +151,13 @@ extern class Element extends Node {
 	/**
 		From partial interface in css-pseudo.idl
 	**/
-	function pseudo(type:CSSOMString):js.cssPseudo.CSSPseudoElement;
+	function pseudo(type:CSSOMString):Null<js.cssPseudo.CSSPseudoElement>;
 	/**
 		From partial interface in pointerevents.idl
 	**/
 	function releasePointerCapture(pointerId:Int):Void;
 	function removeAttribute(qualifiedName:String):Void;
-	function removeAttributeNS(namespace:String, localName:String):Void;
+	function removeAttributeNS(namespace:Null<String>, localName:String):Void;
 	function removeAttributeNode(attr:Attr):Attr;
 	/**
 		From partial interface in fullscreen.idl
@@ -196,9 +196,9 @@ extern class Element extends Node {
 	**/
 	overload function scrollTo(x:Float, y:Float):Void;
 	function setAttribute(qualifiedName:String, value:String):Void;
-	function setAttributeNS(namespace:String, qualifiedName:String, value:String):Void;
-	function setAttributeNode(attr:Attr):Attr;
-	function setAttributeNodeNS(attr:Attr):Attr;
+	function setAttributeNS(namespace:Null<String>, qualifiedName:String, value:String):Void;
+	function setAttributeNode(attr:Attr):Null<Attr>;
+	function setAttributeNodeNS(attr:Attr):Null<Attr>;
 	/**
 		From partial interface in html.idl
 	**/
@@ -210,7 +210,7 @@ extern class Element extends Node {
 	/**
 		From partial interface in css-nav.idl
 	**/
-	function spatialNavigationSearch(dir:js.cssNav.SpatialNavigationDirection, ?options:js.cssNav.SpatialNavigationSearchOptions):Node;
+	function spatialNavigationSearch(dir:js.cssNav.SpatialNavigationDirection, ?options:js.cssNav.SpatialNavigationSearchOptions):Null<Node>;
 	function toggleAttribute(qualifiedName:String, ?force:Bool):Bool;
 	function webkitMatchesSelector(selectors:String):Bool;
 }

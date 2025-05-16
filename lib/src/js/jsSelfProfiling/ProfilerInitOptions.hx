@@ -25,6 +25,6 @@
 package js.jsSelfProfiling;
 
 typedef ProfilerInitOptions = {
-	var sampleInterval : DOMHighResTimeStamp;
+	var sampleInterval : js.hrTime.DOMHighResTimeStamp;
 	var maxBufferSize : Int;
 };

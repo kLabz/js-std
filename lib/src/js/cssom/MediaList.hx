@@ -31,5 +31,5 @@ extern class MediaList {
 	var length(default, null) : Int;
 	function appendMedium(medium:CSSOMString):Void;
 	function deleteMedium(medium:CSSOMString):Void;
-	function item(index:Int):CSSOMString;
+	function item(index:Int):Null<CSSOMString>;
 }

@@ -26,5 +26,5 @@ package js.presentationApi;
 
 extern class PresentationConnectionList extends js.dom.EventTarget {
 	var connections(default, null) : Array<PresentationConnection>;
-	var onconnectionavailable : EventHandler;
+	var onconnectionavailable : js.html.EventHandler;
 }

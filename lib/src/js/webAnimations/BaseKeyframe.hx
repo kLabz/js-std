@@ -26,7 +26,7 @@ package js.webAnimations;
 
 typedef BaseKeyframe = {
 	@:optional
-	var offset : Float = null;
+	var offset : Null<Float> = null;
 	@:optional
 	var easing : String = "linear";
 	@:optional

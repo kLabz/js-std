@@ -26,23 +26,23 @@ package js.webxr;
 
 extern class XRSession extends js.dom.EventTarget {
 	var visibilityState(default, null) : XRVisibilityState;
-	var frameRate(default, null) : Float;
-	var supportedFrameRates(default, null) : Float32Array;
+	var frameRate(default, null) : Null<Float>;
+	var supportedFrameRates(default, null) : Null<Float32Array>;
 	var renderState(default, null) : XRRenderState;
 	var inputSources(default, null) : XRInputSourceArray;
 	var trackedSources(default, null) : XRInputSourceArray;
 	var enabledFeatures(default, null) : Array<String>;
 	var isSystemKeyboardSupported(default, null) : Bool;
-	var onend : EventHandler;
-	var oninputsourceschange : EventHandler;
-	var onselect : EventHandler;
-	var onselectstart : EventHandler;
-	var onselectend : EventHandler;
-	var onsqueeze : EventHandler;
-	var onsqueezestart : EventHandler;
-	var onsqueezeend : EventHandler;
-	var onvisibilitychange : EventHandler;
-	var onframeratechange : EventHandler;
+	var onend : js.html.EventHandler;
+	var oninputsourceschange : js.html.EventHandler;
+	var onselect : js.html.EventHandler;
+	var onselectstart : js.html.EventHandler;
+	var onselectend : js.html.EventHandler;
+	var onsqueeze : js.html.EventHandler;
+	var onsqueezestart : js.html.EventHandler;
+	var onsqueezeend : js.html.EventHandler;
+	var onvisibilitychange : js.html.EventHandler;
+	var onframeratechange : js.html.EventHandler;
 	/**
 		From partial interface in anchors.idl
 	**/
@@ -66,15 +66,15 @@ extern class XRSession extends js.dom.EventTarget {
 	/**
 		From partial interface in webxr-depth-sensing.idl
 	**/
-	var depthType(default, null) : js.webxrDepthSensing.XRDepthType;
+	var depthType(default, null) : Null<js.webxrDepthSensing.XRDepthType>;
 	/**
 		From partial interface in webxr-depth-sensing.idl
 	**/
-	var depthActive(default, null) : Bool;
+	var depthActive(default, null) : Null<Bool>;
 	/**
 		From partial interface in webxr-dom-overlays.idl
 	**/
-	var domOverlayState(default, null) : js.webxrDomOverlays.XRDOMOverlayState;
+	var domOverlayState(default, null) : Null<js.webxrDomOverlays.XRDOMOverlayState>;
 	/**
 		From partial interface in webxr-lighting-estimation.idl
 	**/

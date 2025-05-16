@@ -25,11 +25,11 @@
 package js.mediacaptureStreams;
 
 extern class MediaDevices extends js.dom.EventTarget {
-	var ondevicechange : EventHandler;
+	var ondevicechange : js.html.EventHandler;
 	/**
 		From partial interface in mediacapture-handle-actions.idl
 	**/
-	var oncaptureaction : EventHandler;
+	var oncaptureaction : js.html.EventHandler;
 	function enumerateDevices():js.lib.Promise<Array<MediaDeviceInfo>>;
 	/**
 		From partial interface in screen-capture.idl

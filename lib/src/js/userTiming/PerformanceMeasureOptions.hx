@@ -28,9 +28,9 @@ typedef PerformanceMeasureOptions = {
 	@:optional
 	var detail : Any;
 	@:optional
-	var start : haxe.extern.EitherType<String, DOMHighResTimeStamp>;
+	var start : haxe.extern.EitherType<String, js.hrTime.DOMHighResTimeStamp>;
 	@:optional
-	var duration : DOMHighResTimeStamp;
+	var duration : js.hrTime.DOMHighResTimeStamp;
 	@:optional
-	var end : haxe.extern.EitherType<String, DOMHighResTimeStamp>;
+	var end : haxe.extern.EitherType<String, js.hrTime.DOMHighResTimeStamp>;
 };

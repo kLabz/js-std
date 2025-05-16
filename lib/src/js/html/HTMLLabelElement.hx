@@ -25,8 +25,8 @@
 package js.html;
 
 extern class HTMLLabelElement extends HTMLElement {
-	var form(default, null) : HTMLFormElement;
+	var form(default, null) : Null<HTMLFormElement>;
 	var htmlFor : String;
-	var control(default, null) : HTMLElement;
+	var control(default, null) : Null<HTMLElement>;
 	function new():Void;
 }

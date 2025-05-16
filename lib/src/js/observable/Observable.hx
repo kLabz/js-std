@@ -31,7 +31,7 @@ extern class Observable {
 	function drop(amount:Float):Observable;
 	function every(predicate:Predicate, ?options:SubscribeOptions):js.lib.Promise<Bool>;
 	function filter(predicate:Predicate):Observable;
-	function finally(callback:VoidFunction):Observable;
+	function finally(callback:js.webidl.VoidFunction):Observable;
 	function find(predicate:Predicate, ?options:SubscribeOptions):js.lib.Promise<Any>;
 	function first(?options:SubscribeOptions):js.lib.Promise<Any>;
 	function flatMap(mapper:Mapper):Observable;

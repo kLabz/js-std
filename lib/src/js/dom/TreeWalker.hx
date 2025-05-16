@@ -27,13 +27,13 @@ package js.dom;
 extern class TreeWalker {
 	var root(default, null) : Node;
 	var whatToShow(default, null) : Int;
-	var filter(default, null) : NodeFilter;
+	var filter(default, null) : Null<NodeFilter>;
 	var currentNode : Node;
-	function firstChild():Node;
-	function lastChild():Node;
-	function nextNode():Node;
-	function nextSibling():Node;
-	function parentNode():Node;
-	function previousNode():Node;
-	function previousSibling():Node;
+	function firstChild():Null<Node>;
+	function lastChild():Null<Node>;
+	function nextNode():Null<Node>;
+	function nextSibling():Null<Node>;
+	function parentNode():Null<Node>;
+	function previousNode():Null<Node>;
+	function previousSibling():Null<Node>;
 }

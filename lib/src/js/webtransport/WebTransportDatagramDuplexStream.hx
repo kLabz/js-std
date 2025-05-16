@@ -27,8 +27,8 @@ package js.webtransport;
 extern class WebTransportDatagramDuplexStream {
 	var readable(default, null) : js.streams.ReadableStream;
 	var maxDatagramSize(default, null) : Int;
-	var incomingMaxAge : Float;
-	var outgoingMaxAge : Float;
+	var incomingMaxAge : Null<Float>;
+	var outgoingMaxAge : Null<Float>;
 	var incomingHighWaterMark : Float;
 	var outgoingHighWaterMark : Float;
 	function createWritable(?options:WebTransportSendOptions):WebTransportDatagramsWritable;

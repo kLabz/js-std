@@ -28,8 +28,8 @@ extern class WebTransport {
 	var ready(default, null) : js.lib.Promise<Void>;
 	var reliability(default, null) : WebTransportReliabilityMode;
 	var congestionControl(default, null) : WebTransportCongestionControl;
-	var anticipatedConcurrentIncomingUnidirectionalStreams : Int;
-	var anticipatedConcurrentIncomingBidirectionalStreams : Int;
+	var anticipatedConcurrentIncomingUnidirectionalStreams : Null<Int>;
+	var anticipatedConcurrentIncomingBidirectionalStreams : Null<Int>;
 	var protocol(default, null) : String;
 	var closed(default, null) : js.lib.Promise<WebTransportCloseInfo>;
 	var draining(default, null) : js.lib.Promise<Void>;

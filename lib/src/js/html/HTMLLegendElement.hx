@@ -25,7 +25,7 @@
 package js.html;
 
 extern class HTMLLegendElement extends HTMLElement {
-	var form(default, null) : HTMLFormElement;
+	var form(default, null) : Null<HTMLFormElement>;
 	/**
 		From partial interface in html.idl
 	**/

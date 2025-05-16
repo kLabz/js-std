@@ -61,7 +61,7 @@ typedef RTCInboundRtpStreamStats = RTCReceivedRtpStreamStats & {
 	@:optional
 	var totalFreezesDuration : Float;
 	@:optional
-	var lastPacketReceivedTimestamp : DOMHighResTimeStamp;
+	var lastPacketReceivedTimestamp : js.hrTime.DOMHighResTimeStamp;
 	@:optional
 	var headerBytesReceived : Float;
 	@:optional
@@ -83,7 +83,7 @@ typedef RTCInboundRtpStreamStats = RTCReceivedRtpStreamStats & {
 	@:optional
 	var totalProcessingDelay : Float;
 	@:optional
-	var estimatedPlayoutTimestamp : DOMHighResTimeStamp;
+	var estimatedPlayoutTimestamp : js.hrTime.DOMHighResTimeStamp;
 	@:optional
 	var jitterBufferDelay : Float;
 	@:optional

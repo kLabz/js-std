@@ -29,7 +29,7 @@ extern class USBAlternateInterface {
 	var interfaceClass(default, null) : Int;
 	var interfaceSubclass(default, null) : Int;
 	var interfaceProtocol(default, null) : Int;
-	var interfaceName(default, null) : String;
+	var interfaceName(default, null) : Null<String>;
 	var endpoints(default, null) : Array<USBEndpoint>;
 	function new(deviceInterface:USBInterface, alternateSetting:Int):Void;
 }

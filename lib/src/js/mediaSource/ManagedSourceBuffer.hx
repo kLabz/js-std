@@ -25,5 +25,5 @@
 package js.mediaSource;
 
 extern class ManagedSourceBuffer extends SourceBuffer {
-	var onbufferedchange : EventHandler;
+	var onbufferedchange : js.html.EventHandler;
 }

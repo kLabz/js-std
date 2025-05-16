@@ -26,9 +26,9 @@ package js.pushApi;
 
 extern class PushSubscription {
 	var endpoint(default, null) : String;
-	var expirationTime(default, null) : EpochTimeStamp;
+	var expirationTime(default, null) : Null<js.hrTime.EpochTimeStamp>;
 	var options(default, null) : PushSubscriptionOptions;
-	function getKey(name:PushEncryptionKeyName):ArrayBuffer;
+	function getKey(name:PushEncryptionKeyName):Null<ArrayBuffer>;
 	function toJSON():PushSubscriptionJSON;
 	function unsubscribe():js.lib.Promise<Bool>;
 }

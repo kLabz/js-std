@@ -26,9 +26,9 @@ package js.webAnimations2;
 
 typedef AnimationTriggerOptions = {
 	@:optional
-	var timeline : js.webAnimations.AnimationTimeline;
+	var timeline : Null<js.webAnimations.AnimationTimeline>;
 	@:optional
-	var type : AnimationTriggerType = "once";
+	var type : Null<AnimationTriggerType> = "once";
 	@:optional
 	var rangeStart : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, haxe.extern.EitherType<js.cssTypedOm.CSSKeywordValue, String>>> = "normal";
 	@:optional

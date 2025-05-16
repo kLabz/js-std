@@ -27,8 +27,8 @@ package js.html;
 extern class Storage {
 	var length(default, null) : Int;
 	function clear():Void;
-	function getItem(key:String):String;
-	function key(index:Int):String;
+	function getItem(key:String):Null<String>;
+	function key(index:Int):Null<String>;
 	function removeItem(key:String):Void;
 	function setItem(key:String, value:String):Void;
 }

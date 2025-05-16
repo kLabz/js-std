@@ -25,8 +25,8 @@
 package js.extColorBufferHalfFloat;
 
 extern class EXT_color_buffer_half_float {
-	static inline var RGBA16F_EXT : GLenum = 0x881A;
-	static inline var RGB16F_EXT : GLenum = 0x881B;
-	static inline var FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT : GLenum = 0x8211;
-	static inline var UNSIGNED_NORMALIZED_EXT : GLenum = 0x8C17;
+	static inline var RGBA16F_EXT : js.webgl1.GLenum = 0x881A;
+	static inline var RGB16F_EXT : js.webgl1.GLenum = 0x881B;
+	static inline var FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT : js.webgl1.GLenum = 0x8211;
+	static inline var UNSIGNED_NORMALIZED_EXT : js.webgl1.GLenum = 0x8C17;
 }

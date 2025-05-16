@@ -26,9 +26,9 @@ package js.html;
 
 extern class HTMLButtonElement extends HTMLElement {
 	var command : String;
-	var commandForElement : js.dom.Element;
+	var commandForElement : Null<js.dom.Element>;
 	var disabled : Bool;
-	var form(default, null) : HTMLFormElement;
+	var form(default, null) : Null<HTMLFormElement>;
 	var formAction : String;
 	var formEnctype : String;
 	var formMethod : String;

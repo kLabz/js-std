@@ -28,7 +28,7 @@ extern class ExtendableMessageEvent extends ExtendableEvent {
 	var data(default, null) : Any;
 	var origin(default, null) : String;
 	var lastEventId(default, null) : String;
-	var source(default, null) : haxe.extern.EitherType<Client, haxe.extern.EitherType<ServiceWorker, js.html.MessagePort>>;
+	var source(default, null) : Null<haxe.extern.EitherType<Client, haxe.extern.EitherType<ServiceWorker, js.html.MessagePort>>>;
 	var ports(default, null) : Array<js.html.MessagePort>;
 	function new(type:String, ?eventInitDict:ExtendableMessageEventInit):Void;
 }

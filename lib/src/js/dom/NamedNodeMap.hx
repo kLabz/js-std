@@ -26,11 +26,11 @@ package js.dom;
 
 extern class NamedNodeMap {
 	var length(default, null) : Int;
-	function getNamedItem(qualifiedName:String):Attr;
-	function getNamedItemNS(namespace:String, localName:String):Attr;
-	function item(index:Int):Attr;
+	function getNamedItem(qualifiedName:String):Null<Attr>;
+	function getNamedItemNS(namespace:Null<String>, localName:String):Null<Attr>;
+	function item(index:Int):Null<Attr>;
 	function removeNamedItem(qualifiedName:String):Attr;
-	function removeNamedItemNS(namespace:String, localName:String):Attr;
-	function setNamedItem(attr:Attr):Attr;
-	function setNamedItemNS(attr:Attr):Attr;
+	function removeNamedItemNS(namespace:Null<String>, localName:String):Attr;
+	function setNamedItem(attr:Attr):Null<Attr>;
+	function setNamedItemNS(attr:Attr):Null<Attr>;
 }

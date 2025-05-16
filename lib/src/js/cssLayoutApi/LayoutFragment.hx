@@ -30,5 +30,5 @@ extern class LayoutFragment {
 	var inlineOffset : Float;
 	var blockOffset : Float;
 	var data(default, null) : Any;
-	var breakToken(default, null) : ChildBreakToken;
+	var breakToken(default, null) : Null<ChildBreakToken>;
 }

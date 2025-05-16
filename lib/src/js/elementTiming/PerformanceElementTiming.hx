@@ -25,14 +25,14 @@
 package js.elementTiming;
 
 extern class PerformanceElementTiming extends js.performanceTimeline.PerformanceEntry {
-	var renderTime(default, null) : DOMHighResTimeStamp;
-	var loadTime(default, null) : DOMHighResTimeStamp;
+	var renderTime(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var loadTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var intersectionRect(default, null) : js.geometry.DOMRectReadOnly;
 	var identifier(default, null) : String;
 	var naturalWidth(default, null) : Int;
 	var naturalHeight(default, null) : Int;
 	var id(default, null) : String;
-	var element(default, null) : js.dom.Element;
+	var element(default, null) : Null<js.dom.Element>;
 	var url(default, null) : String;
 	function toJSON():{ };
 }

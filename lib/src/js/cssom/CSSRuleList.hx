@@ -26,5 +26,5 @@ package js.cssom;
 
 extern class CSSRuleList {
 	var length(default, null) : Int;
-	function item(index:Int):CSSRule;
+	function item(index:Int):Null<CSSRule>;
 }

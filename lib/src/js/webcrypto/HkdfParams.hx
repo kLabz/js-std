@@ -26,6 +26,6 @@ package js.webcrypto;
 
 typedef HkdfParams = Algorithm & {
 	var hash : HashAlgorithmIdentifier;
-	var salt : BufferSource;
-	var info : BufferSource;
+	var salt : js.webidl.BufferSource;
+	var info : js.webidl.BufferSource;
 };

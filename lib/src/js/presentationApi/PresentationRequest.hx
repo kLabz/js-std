@@ -25,7 +25,7 @@
 package js.presentationApi;
 
 extern class PresentationRequest extends js.dom.EventTarget {
-	var onconnectionavailable : EventHandler;
+	var onconnectionavailable : js.html.EventHandler;
 	overload function new(urls:Array<String>):Void;
 	overload function new(url:String):Void;
 	function getAvailability():js.lib.Promise<PresentationAvailability>;

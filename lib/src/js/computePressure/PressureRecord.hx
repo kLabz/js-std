@@ -27,6 +27,6 @@ package js.computePressure;
 extern class PressureRecord {
 	var source(default, null) : PressureSource;
 	var state(default, null) : PressureState;
-	var time(default, null) : DOMHighResTimeStamp;
+	var time(default, null) : js.hrTime.DOMHighResTimeStamp;
 	function toJSON():{ };
 }

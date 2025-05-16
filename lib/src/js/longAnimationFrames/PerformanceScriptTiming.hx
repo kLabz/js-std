@@ -25,19 +25,19 @@
 package js.longAnimationFrames;
 
 extern class PerformanceScriptTiming extends js.performanceTimeline.PerformanceEntry {
-	var startTime(default, null) : DOMHighResTimeStamp;
-	var duration(default, null) : DOMHighResTimeStamp;
+	var startTime(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var duration(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var name(default, null) : String;
 	var entryType(default, null) : String;
 	var invokerType(default, null) : ScriptInvokerType;
 	var invoker(default, null) : String;
-	var executionStart(default, null) : DOMHighResTimeStamp;
+	var executionStart(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var sourceURL(default, null) : String;
 	var sourceFunctionName(default, null) : String;
 	var sourceCharPosition(default, null) : Float;
-	var pauseDuration(default, null) : DOMHighResTimeStamp;
-	var forcedStyleAndLayoutDuration(default, null) : DOMHighResTimeStamp;
-	var window(default, null) : js.html.Window;
+	var pauseDuration(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var forcedStyleAndLayoutDuration(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var window(default, null) : Null<js.html.Window>;
 	var windowAttribution(default, null) : ScriptWindowAttribution;
 	function toJSON():{ };
 }

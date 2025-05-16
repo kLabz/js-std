@@ -29,5 +29,5 @@ typedef AudioDecoderConfig = {
 	var sampleRate : Int;
 	var numberOfChannels : Int;
 	@:optional
-	var description : AllowSharedBufferSource;
+	var description : js.webidl.AllowSharedBufferSource;
 };

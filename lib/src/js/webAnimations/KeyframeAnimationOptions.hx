@@ -28,11 +28,11 @@ typedef KeyframeAnimationOptions = KeyframeEffectOptions & {
 	@:optional
 	var id : String = "";
 	@:optional
-	var timeline : AnimationTimeline;
+	var timeline : Null<AnimationTimeline>;
 	@:optional
 	var rangeStart : haxe.extern.EitherType<js.webAnimations2.TimelineRangeOffset, haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, haxe.extern.EitherType<js.cssTypedOm.CSSKeywordValue, String>>> = "normal";
 	@:optional
 	var rangeEnd : haxe.extern.EitherType<js.webAnimations2.TimelineRangeOffset, haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, haxe.extern.EitherType<js.cssTypedOm.CSSKeywordValue, String>>> = "normal";
 	@:optional
-	var trigger : js.webAnimations2.AnimationTrigger;
+	var trigger : Null<js.webAnimations2.AnimationTrigger>;
 };

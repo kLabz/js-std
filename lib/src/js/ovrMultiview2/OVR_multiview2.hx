@@ -25,9 +25,9 @@
 package js.ovrMultiview2;
 
 extern class OVR_multiview2 {
-	static inline var FRAMEBUFFER_ATTACHMENT_TEXTURE_NUM_VIEWS_OVR : GLenum = 0x9630;
-	static inline var FRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR : GLenum = 0x9632;
-	static inline var MAX_VIEWS_OVR : GLenum = 0x9631;
-	static inline var FRAMEBUFFER_INCOMPLETE_VIEW_TARGETS_OVR : GLenum = 0x9633;
-	function framebufferTextureMultiviewOVR(target:GLenum, attachment:GLenum, texture:js.webgl1.WebGLTexture, level:GLint, baseViewIndex:GLint, numViews:GLsizei):Void;
+	static inline var FRAMEBUFFER_ATTACHMENT_TEXTURE_NUM_VIEWS_OVR : js.webgl1.GLenum = 0x9630;
+	static inline var FRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR : js.webgl1.GLenum = 0x9632;
+	static inline var MAX_VIEWS_OVR : js.webgl1.GLenum = 0x9631;
+	static inline var FRAMEBUFFER_INCOMPLETE_VIEW_TARGETS_OVR : js.webgl1.GLenum = 0x9633;
+	function framebufferTextureMultiviewOVR(target:js.webgl1.GLenum, attachment:js.webgl1.GLenum, texture:Null<js.webgl1.WebGLTexture>, level:js.webgl1.GLint, baseViewIndex:js.webgl1.GLint, numViews:js.webgl1.GLsizei):Void;
 }

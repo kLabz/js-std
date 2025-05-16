@@ -26,21 +26,21 @@ package js.webrtc;
 
 extern class RTCIceCandidate {
 	var candidate(default, null) : String;
-	var sdpMid(default, null) : String;
-	var sdpMLineIndex(default, null) : Int;
-	var foundation(default, null) : String;
-	var component(default, null) : RTCIceComponent;
-	var priority(default, null) : Int;
-	var address(default, null) : String;
-	var protocol(default, null) : RTCIceProtocol;
-	var port(default, null) : Int;
-	var type(default, null) : RTCIceCandidateType;
-	var tcpType(default, null) : RTCIceTcpCandidateType;
-	var relatedAddress(default, null) : String;
-	var relatedPort(default, null) : Int;
-	var usernameFragment(default, null) : String;
-	var relayProtocol(default, null) : RTCIceServerTransportProtocol;
-	var url(default, null) : String;
+	var sdpMid(default, null) : Null<String>;
+	var sdpMLineIndex(default, null) : Null<Int>;
+	var foundation(default, null) : Null<String>;
+	var component(default, null) : Null<RTCIceComponent>;
+	var priority(default, null) : Null<Int>;
+	var address(default, null) : Null<String>;
+	var protocol(default, null) : Null<RTCIceProtocol>;
+	var port(default, null) : Null<Int>;
+	var type(default, null) : Null<RTCIceCandidateType>;
+	var tcpType(default, null) : Null<RTCIceTcpCandidateType>;
+	var relatedAddress(default, null) : Null<String>;
+	var relatedPort(default, null) : Null<Int>;
+	var usernameFragment(default, null) : Null<String>;
+	var relayProtocol(default, null) : Null<RTCIceServerTransportProtocol>;
+	var url(default, null) : Null<String>;
 	function new(?candidateInitDict:RTCLocalIceCandidateInit):Void;
 	function toJSON():RTCIceCandidateInit;
 }

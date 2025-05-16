@@ -28,5 +28,5 @@ typedef AuctionReportBuyerDebugModeConfig = {
 	@:optional
 	var enabled : Bool = false;
 	@:optional
-	var debugKey : bigint;
+	var debugKey : Null<bigint>;
 };

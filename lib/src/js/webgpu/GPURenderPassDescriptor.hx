@@ -25,7 +25,7 @@
 package js.webgpu;
 
 typedef GPURenderPassDescriptor = GPUObjectDescriptorBase & {
-	var colorAttachments : Array<GPURenderPassColorAttachment>;
+	var colorAttachments : Array<Null<GPURenderPassColorAttachment>>;
 	@:optional
 	var depthStencilAttachment : GPURenderPassDepthStencilAttachment;
 	@:optional

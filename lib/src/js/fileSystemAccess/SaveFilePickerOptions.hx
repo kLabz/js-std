@@ -26,5 +26,5 @@ package js.fileSystemAccess;
 
 typedef SaveFilePickerOptions = FilePickerOptions & {
 	@:optional
-	var suggestedName : String;
+	var suggestedName : Null<String>;
 };

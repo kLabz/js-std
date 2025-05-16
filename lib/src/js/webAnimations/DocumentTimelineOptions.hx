@@ -26,5 +26,5 @@ package js.webAnimations;
 
 typedef DocumentTimelineOptions = {
 	@:optional
-	var originTime : DOMHighResTimeStamp = 0;
+	var originTime : js.hrTime.DOMHighResTimeStamp = 0;
 };

@@ -26,11 +26,11 @@ package js.webNfc;
 
 extern class NDEFRecord {
 	var recordType(default, null) : String;
-	var mediaType(default, null) : String;
-	var id(default, null) : String;
-	var data(default, null) : DataView;
-	var encoding(default, null) : String;
-	var lang(default, null) : String;
+	var mediaType(default, null) : Null<String>;
+	var id(default, null) : Null<String>;
+	var data(default, null) : Null<DataView>;
+	var encoding(default, null) : Null<String>;
+	var lang(default, null) : Null<String>;
 	function new(recordInit:NDEFRecordInit):Void;
-	function toRecords():Array<NDEFRecord>;
+	function toRecords():Null<Array<NDEFRecord>>;
 }

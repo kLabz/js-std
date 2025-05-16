@@ -50,21 +50,21 @@ extern class Navigator {
 	**/
 	var geolocation(default, null) : js.geolocation.Geolocation;
 	/**
-		From partial interface in html.idl
+		From partial interface in ink-enhancement.idl
 	**/
-	var userActivation(default, null) : UserActivation;
+	var ink(default, null) : js.inkEnhancement.Ink;
 	/**
 		From partial interface in is-input-pending.idl
 	**/
 	var scheduling(default, null) : js.isInputPending.Scheduling;
 	/**
-		From partial interface in ink-enhancement.idl
-	**/
-	var ink(default, null) : js.inkEnhancement.Ink;
-	/**
 		From partial interface in keyboard-lock.idl
 	**/
 	var keyboard(default, null) : js.keyboardLock.Keyboard;
+	/**
+		From partial interface in html.idl
+	**/
+	var userActivation(default, null) : UserActivation;
 	/**
 		From partial interface in login-status.idl
 	**/
@@ -82,13 +82,13 @@ extern class Navigator {
 	**/
 	var mediaDevices(default, null) : js.mediacaptureStreams.MediaDevices;
 	/**
-		From partial interface in mediaqueries-5.idl
-	**/
-	var preferences(default, null) : js.mediaqueries5.PreferenceManager;
-	/**
 		From partial interface in mediasession.idl
 	**/
 	var mediaSession(default, null) : js.mediasession.MediaSession;
+	/**
+		From partial interface in mediaqueries-5.idl
+	**/
+	var preferences(default, null) : js.mediaqueries5.PreferenceManager;
 	/**
 		From partial interface in permissions.idl
 	**/
@@ -176,11 +176,11 @@ extern class Navigator {
 	/**
 		From partial interface in fenced-frame.idl
 	**/
-	function deprecatedReplaceInURN(urnOrConfig:UrnOrConfig, replacements:haxe.DynamicAccess<String>):js.lib.Promise<Void>;
+	function deprecatedReplaceInURN(urnOrConfig:js.fencedFrame.UrnOrConfig, replacements:haxe.DynamicAccess<String>):js.lib.Promise<Void>;
 	/**
 		From partial interface in fenced-frame.idl
 	**/
-	function deprecatedURNtoURL(urnOrConfig:UrnOrConfig, ?send_reports:Bool):js.lib.Promise<String>;
+	function deprecatedURNtoURL(urnOrConfig:js.fencedFrame.UrnOrConfig, ?send_reports:Bool):js.lib.Promise<String>;
 	/**
 		From partial interface in autoplay-detection.idl
 	**/
@@ -200,7 +200,7 @@ extern class Navigator {
 	/**
 		From partial interface in gamepad.idl
 	**/
-	function getGamepads():Array<js.gamepad.Gamepad>;
+	function getGamepads():Array<Null<js.gamepad.Gamepad>>;
 	/**
 		From partial interface in get-installed-related-apps.idl
 	**/
@@ -220,7 +220,7 @@ extern class Navigator {
 	/**
 		From partial interface in handwriting-recognition.idl
 	**/
-	function queryHandwritingRecognizer(constraint:js.handwritingRecognition.HandwritingModelConstraint):js.lib.Promise<js.handwritingRecognition.HandwritingRecognizerQueryResult>;
+	function queryHandwritingRecognizer(constraint:js.handwritingRecognition.HandwritingModelConstraint):js.lib.Promise<Null<js.handwritingRecognition.HandwritingRecognizerQueryResult>>;
 	/**
 		From partial interface in webmidi.idl
 	**/
@@ -232,11 +232,11 @@ extern class Navigator {
 	/**
 		From partial interface in turtledove.idl
 	**/
-	function runAdAuction(config:js.turtledove.AuctionAdConfig):js.lib.Promise<haxe.extern.EitherType<String, js.fencedFrame.FencedFrameConfig>>;
+	function runAdAuction(config:js.turtledove.AuctionAdConfig):js.lib.Promise<Null<haxe.extern.EitherType<String, js.fencedFrame.FencedFrameConfig>>>;
 	/**
 		From partial interface in beacon.idl
 	**/
-	function sendBeacon(url:String, ?data:BodyInit):Bool;
+	function sendBeacon(url:String, ?data:Null<js.fetch.BodyInit>):Bool;
 	/**
 		From partial interface in web-share.idl
 	**/
@@ -248,5 +248,5 @@ extern class Navigator {
 	/**
 		From partial interface in vibration.idl
 	**/
-	function vibrate(pattern:VibratePattern):Bool;
+	function vibrate(pattern:js.vibration.VibratePattern):Bool;
 }

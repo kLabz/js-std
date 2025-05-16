@@ -29,5 +29,5 @@ extern class WindowClient extends Client {
 	var focused(default, null) : Bool;
 	var ancestorOrigins(default, null) : Array<String>;
 	function focus():js.lib.Promise<WindowClient>;
-	function navigate(url:String):js.lib.Promise<WindowClient>;
+	function navigate(url:String):js.lib.Promise<Null<WindowClient>>;
 }

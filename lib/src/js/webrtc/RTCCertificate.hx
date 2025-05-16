@@ -25,6 +25,6 @@
 package js.webrtc;
 
 extern class RTCCertificate {
-	var expires(default, null) : EpochTimeStamp;
+	var expires(default, null) : js.hrTime.EpochTimeStamp;
 	function getFingerprints():Array<RTCDtlsFingerprint>;
 }

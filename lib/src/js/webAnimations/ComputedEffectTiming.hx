@@ -26,15 +26,15 @@ package js.webAnimations;
 
 typedef ComputedEffectTiming = EffectTiming & {
 	@:optional
-	var progress : Float;
+	var progress : Null<Float>;
 	@:optional
-	var currentIteration : Float;
+	var currentIteration : Null<Float>;
 	@:optional
-	var startTime : CSSNumberish;
+	var startTime : js.cssTypedOm.CSSNumberish;
 	@:optional
-	var endTime : CSSNumberish;
+	var endTime : js.cssTypedOm.CSSNumberish;
 	@:optional
-	var activeDuration : CSSNumberish;
+	var activeDuration : js.cssTypedOm.CSSNumberish;
 	@:optional
-	var localTime : CSSNumberish;
+	var localTime : Null<js.cssTypedOm.CSSNumberish>;
 };

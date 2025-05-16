@@ -28,5 +28,5 @@ typedef NDEFWriteOptions = {
 	@:optional
 	var overwrite : Bool = true;
 	@:optional
-	var signal : js.dom.AbortSignal;
+	var signal : Null<js.dom.AbortSignal>;
 };

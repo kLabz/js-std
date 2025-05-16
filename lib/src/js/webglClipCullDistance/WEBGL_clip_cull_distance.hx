@@ -25,15 +25,15 @@
 package js.webglClipCullDistance;
 
 extern class WEBGL_clip_cull_distance {
-	static inline var MAX_CLIP_DISTANCES_WEBGL : GLenum = 0x0D32;
-	static inline var MAX_CULL_DISTANCES_WEBGL : GLenum = 0x82F9;
-	static inline var MAX_COMBINED_CLIP_AND_CULL_DISTANCES_WEBGL : GLenum = 0x82FA;
-	static inline var CLIP_DISTANCE0_WEBGL : GLenum = 0x3000;
-	static inline var CLIP_DISTANCE1_WEBGL : GLenum = 0x3001;
-	static inline var CLIP_DISTANCE2_WEBGL : GLenum = 0x3002;
-	static inline var CLIP_DISTANCE3_WEBGL : GLenum = 0x3003;
-	static inline var CLIP_DISTANCE4_WEBGL : GLenum = 0x3004;
-	static inline var CLIP_DISTANCE5_WEBGL : GLenum = 0x3005;
-	static inline var CLIP_DISTANCE6_WEBGL : GLenum = 0x3006;
-	static inline var CLIP_DISTANCE7_WEBGL : GLenum = 0x3007;
+	static inline var MAX_CLIP_DISTANCES_WEBGL : js.webgl1.GLenum = 0x0D32;
+	static inline var MAX_CULL_DISTANCES_WEBGL : js.webgl1.GLenum = 0x82F9;
+	static inline var MAX_COMBINED_CLIP_AND_CULL_DISTANCES_WEBGL : js.webgl1.GLenum = 0x82FA;
+	static inline var CLIP_DISTANCE0_WEBGL : js.webgl1.GLenum = 0x3000;
+	static inline var CLIP_DISTANCE1_WEBGL : js.webgl1.GLenum = 0x3001;
+	static inline var CLIP_DISTANCE2_WEBGL : js.webgl1.GLenum = 0x3002;
+	static inline var CLIP_DISTANCE3_WEBGL : js.webgl1.GLenum = 0x3003;
+	static inline var CLIP_DISTANCE4_WEBGL : js.webgl1.GLenum = 0x3004;
+	static inline var CLIP_DISTANCE5_WEBGL : js.webgl1.GLenum = 0x3005;
+	static inline var CLIP_DISTANCE6_WEBGL : js.webgl1.GLenum = 0x3006;
+	static inline var CLIP_DISTANCE7_WEBGL : js.webgl1.GLenum = 0x3007;
 }

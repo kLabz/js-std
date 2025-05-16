@@ -25,9 +25,9 @@
 package js.webcrypto;
 
 typedef AesGcmParams = Algorithm & {
-	var iv : BufferSource;
+	var iv : js.webidl.BufferSource;
 	@:optional
-	var additionalData : BufferSource;
+	var additionalData : js.webidl.BufferSource;
 	@:optional
 	var tagLength : Int;
 };

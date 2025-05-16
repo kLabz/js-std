@@ -26,5 +26,5 @@ package js.cssPaintApi;
 
 extern class PaintWorkletGlobalScope extends js.html.WorkletGlobalScope {
 	var devicePixelRatio(default, null) : Float;
-	function registerPaint(name:String, paintCtor:VoidFunction):Void;
+	function registerPaint(name:String, paintCtor:js.webidl.VoidFunction):Void;
 }

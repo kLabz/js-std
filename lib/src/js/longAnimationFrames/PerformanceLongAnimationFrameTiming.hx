@@ -25,14 +25,14 @@
 package js.longAnimationFrames;
 
 extern class PerformanceLongAnimationFrameTiming extends js.performanceTimeline.PerformanceEntry {
-	var startTime(default, null) : DOMHighResTimeStamp;
-	var duration(default, null) : DOMHighResTimeStamp;
+	var startTime(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var duration(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var name(default, null) : String;
 	var entryType(default, null) : String;
-	var renderStart(default, null) : DOMHighResTimeStamp;
-	var styleAndLayoutStart(default, null) : DOMHighResTimeStamp;
-	var blockingDuration(default, null) : DOMHighResTimeStamp;
-	var firstUIEventTimestamp(default, null) : DOMHighResTimeStamp;
+	var renderStart(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var styleAndLayoutStart(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var blockingDuration(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var firstUIEventTimestamp(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var scripts(default, null) : Array<PerformanceScriptTiming>;
 	function toJSON():{ };
 }

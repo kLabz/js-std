@@ -26,7 +26,7 @@ package js.svgPaths;
 
 extern class SVGPathElement extends js.svg.SVGGeometryElement {
 	var pathLength(default, null) : js.svg.SVGAnimatedNumber;
-	function getPathSegmentAtLength(distance:Float):SVGPathSegment;
+	function getPathSegmentAtLength(distance:Float):Null<SVGPathSegment>;
 	function getPointAtLength(distance:Float):js.geometry.DOMPoint;
 	function getTotalLength():Float;
 }

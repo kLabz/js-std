@@ -31,6 +31,6 @@ extern class OffscreenCanvas extends js.dom.EventTarget {
 	var oncontextrestored : EventHandler;
 	function new(width:Float, height:Float):Void;
 	function convertToBlob(?options:ImageEncodeOptions):js.lib.Promise<js.fileapi.Blob>;
-	function getContext(contextId:OffscreenRenderingContextId, ?options:Any):OffscreenRenderingContext;
+	function getContext(contextId:OffscreenRenderingContextId, ?options:Any):Null<OffscreenRenderingContext>;
 	function transferToImageBitmap():ImageBitmap;
 }

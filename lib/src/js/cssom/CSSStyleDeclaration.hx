@@ -27,7 +27,7 @@ package js.cssom;
 extern class CSSStyleDeclaration {
 	var cssText : CSSOMString;
 	var length(default, null) : Int;
-	var parentRule(default, null) : CSSRule;
+	var parentRule(default, null) : Null<CSSRule>;
 	function getPropertyPriority(property:CSSOMString):CSSOMString;
 	function getPropertyValue(property:CSSOMString):CSSOMString;
 	function item(index:Int):CSSOMString;

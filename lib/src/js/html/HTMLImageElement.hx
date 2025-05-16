@@ -29,7 +29,7 @@ extern class HTMLImageElement extends HTMLElement {
 	var src : String;
 	var srcset : String;
 	var sizes : String;
-	var crossOrigin : String;
+	var crossOrigin : Null<String>;
 	var useMap : String;
 	var isMap : Bool;
 	var width : Int;

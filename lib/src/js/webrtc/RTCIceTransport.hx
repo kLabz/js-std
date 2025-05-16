@@ -29,17 +29,17 @@ extern class RTCIceTransport extends js.dom.EventTarget {
 	var component(default, null) : RTCIceComponent;
 	var state(default, null) : RTCIceTransportState;
 	var gatheringState(default, null) : RTCIceGathererState;
-	var onstatechange : EventHandler;
-	var ongatheringstatechange : EventHandler;
-	var onselectedcandidatepairchange : EventHandler;
+	var onstatechange : js.html.EventHandler;
+	var ongatheringstatechange : js.html.EventHandler;
+	var onselectedcandidatepairchange : js.html.EventHandler;
 	/**
 		From partial interface in webrtc-ice.idl
 	**/
-	var onerror : EventHandler;
+	var onerror : js.html.EventHandler;
 	/**
 		From partial interface in webrtc-ice.idl
 	**/
-	var onicecandidate : EventHandler;
+	var onicecandidate : js.html.EventHandler;
 	/**
 		From partial interface in webrtc-ice.idl
 	**/
@@ -53,10 +53,10 @@ extern class RTCIceTransport extends js.dom.EventTarget {
 	**/
 	function gather(?options:js.webrtcIce.RTCIceGatherOptions):Void;
 	function getLocalCandidates():Array<RTCIceCandidate>;
-	function getLocalParameters():RTCIceParameters;
+	function getLocalParameters():Null<RTCIceParameters>;
 	function getRemoteCandidates():Array<RTCIceCandidate>;
-	function getRemoteParameters():RTCIceParameters;
-	function getSelectedCandidatePair():RTCIceCandidatePair;
+	function getRemoteParameters():Null<RTCIceParameters>;
+	function getSelectedCandidatePair():Null<RTCIceCandidatePair>;
 	/**
 		From partial interface in webrtc-ice.idl
 	**/

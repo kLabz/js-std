@@ -27,8 +27,8 @@ package js.webcodecs;
 extern class EncodedAudioChunk {
 	var type(default, null) : EncodedAudioChunkType;
 	var timestamp(default, null) : Float;
-	var duration(default, null) : Float;
+	var duration(default, null) : Null<Float>;
 	var byteLength(default, null) : Int;
 	function new(init:EncodedAudioChunkInit):Void;
-	function copyTo(destination:AllowSharedBufferSource):Void;
+	function copyTo(destination:js.webidl.AllowSharedBufferSource):Void;
 }

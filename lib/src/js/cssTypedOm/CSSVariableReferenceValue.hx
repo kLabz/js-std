@@ -26,6 +26,6 @@ package js.cssTypedOm;
 
 extern class CSSVariableReferenceValue {
 	var variable : String;
-	var fallback(default, null) : CSSUnparsedValue;
-	function new(variable:String, ?fallback:CSSUnparsedValue):Void;
+	var fallback(default, null) : Null<CSSUnparsedValue>;
+	function new(variable:String, ?fallback:Null<CSSUnparsedValue>):Void;
 }

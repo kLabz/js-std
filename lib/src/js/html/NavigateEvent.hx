@@ -31,11 +31,11 @@ extern class NavigateEvent extends js.dom.Event {
 	var userInitiated(default, null) : Bool;
 	var hashChange(default, null) : Bool;
 	var signal(default, null) : js.dom.AbortSignal;
-	var formData(default, null) : js.xhr.FormData;
-	var downloadRequest(default, null) : String;
+	var formData(default, null) : Null<js.xhr.FormData>;
+	var downloadRequest(default, null) : Null<String>;
 	var info(default, null) : Any;
 	var hasUAVisualTransition(default, null) : Bool;
-	var sourceElement(default, null) : js.dom.Element;
+	var sourceElement(default, null) : Null<js.dom.Element>;
 	function new(type:String, eventInitDict:NavigateEventInit):Void;
 	function intercept(?options:NavigationInterceptOptions):Void;
 	function scroll():Void;

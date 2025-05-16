@@ -26,15 +26,15 @@ package js.csp;
 
 extern class CSPViolationReportBody extends js.reporting.ReportBody {
 	var documentURL(default, null) : String;
-	var referrer(default, null) : String;
-	var blockedURL(default, null) : String;
+	var referrer(default, null) : Null<String>;
+	var blockedURL(default, null) : Null<String>;
 	var effectiveDirective(default, null) : String;
 	var originalPolicy(default, null) : String;
-	var sourceFile(default, null) : String;
-	var sample(default, null) : String;
+	var sourceFile(default, null) : Null<String>;
+	var sample(default, null) : Null<String>;
 	var disposition(default, null) : SecurityPolicyViolationEventDisposition;
 	var statusCode(default, null) : Int;
-	var lineNumber(default, null) : Int;
-	var columnNumber(default, null) : Int;
+	var lineNumber(default, null) : Null<Int>;
+	var columnNumber(default, null) : Null<Int>;
 	function toJSON():{ };
 }

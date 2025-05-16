@@ -25,9 +25,9 @@
 package js.securePaymentConfirmation;
 
 typedef SecurePaymentConfirmationRequest = {
-	var challenge : BufferSource;
+	var challenge : js.webidl.BufferSource;
 	var rpId : String;
-	var credentialIds : Array<BufferSource>;
+	var credentialIds : Array<js.webidl.BufferSource>;
 	var instrument : PaymentCredentialInstrument;
 	@:optional
 	var timeout : Int;

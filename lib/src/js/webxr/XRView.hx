@@ -26,14 +26,14 @@ package js.webxr;
 
 extern class XRView {
 	var eye(default, null) : XREye;
-	var recommendedViewportScale(default, null) : Float;
+	var recommendedViewportScale(default, null) : Null<Float>;
 	/**
 		From partial interface in raw-camera-access.idl
 	**/
-	var camera(default, null) : js.rawCameraAccess.XRCamera;
+	var camera(default, null) : Null<js.rawCameraAccess.XRCamera>;
 	/**
 		From partial interface in webxr-ar-module.idl
 	**/
 	var isFirstPersonObserver(default, null) : Bool;
-	function requestViewportScale(scale:Float):Void;
+	function requestViewportScale(scale:Null<Float>):Void;
 }

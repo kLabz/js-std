@@ -27,10 +27,10 @@ package js.webBluetooth;
 extern class BluetoothAdvertisingEvent extends js.dom.Event {
 	var device(default, null) : BluetoothDevice;
 	var uuids(default, null) : Array<UUID>;
-	var name(default, null) : String;
-	var appearance(default, null) : Int;
-	var txPower(default, null) : Int;
-	var rssi(default, null) : Int;
+	var name(default, null) : Null<String>;
+	var appearance(default, null) : Null<Int>;
+	var txPower(default, null) : Null<Int>;
+	var rssi(default, null) : Null<Int>;
 	var manufacturerData(default, null) : BluetoothManufacturerDataMap;
 	var serviceData(default, null) : BluetoothServiceDataMap;
 	function new(type:String, init:BluetoothAdvertisingEventInit):Void;

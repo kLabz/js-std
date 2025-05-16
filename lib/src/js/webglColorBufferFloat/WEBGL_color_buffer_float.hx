@@ -25,7 +25,7 @@
 package js.webglColorBufferFloat;
 
 extern class WEBGL_color_buffer_float {
-	static inline var RGBA32F_EXT : GLenum = 0x8814;
-	static inline var FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT : GLenum = 0x8211;
-	static inline var UNSIGNED_NORMALIZED_EXT : GLenum = 0x8C17;
+	static inline var RGBA32F_EXT : js.webgl1.GLenum = 0x8814;
+	static inline var FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT : js.webgl1.GLenum = 0x8211;
+	static inline var UNSIGNED_NORMALIZED_EXT : js.webgl1.GLenum = 0x8C17;
 }

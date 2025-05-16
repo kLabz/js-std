@@ -25,7 +25,7 @@
 package js.webhid;
 
 extern class HIDDevice extends js.dom.EventTarget {
-	var oninputreport : EventHandler;
+	var oninputreport : js.html.EventHandler;
 	var opened(default, null) : Bool;
 	var vendorId(default, null) : Int;
 	var productId(default, null) : Int;
@@ -35,6 +35,6 @@ extern class HIDDevice extends js.dom.EventTarget {
 	function forget():js.lib.Promise<Void>;
 	function open():js.lib.Promise<Void>;
 	function receiveFeatureReport(reportId:Int):js.lib.Promise<DataView>;
-	function sendFeatureReport(reportId:Int, data:BufferSource):js.lib.Promise<Void>;
-	function sendReport(reportId:Int, data:BufferSource):js.lib.Promise<Void>;
+	function sendFeatureReport(reportId:Int, data:js.webidl.BufferSource):js.lib.Promise<Void>;
+	function sendReport(reportId:Int, data:js.webidl.BufferSource):js.lib.Promise<Void>;
 }

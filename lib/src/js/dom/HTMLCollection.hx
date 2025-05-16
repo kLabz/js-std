@@ -26,6 +26,6 @@ package js.dom;
 
 extern class HTMLCollection {
 	var length(default, null) : Int;
-	function item(index:Int):Element;
-	function namedItem(name:String):Element;
+	function item(index:Int):Null<Element>;
+	function namedItem(name:String):Null<Element>;
 }

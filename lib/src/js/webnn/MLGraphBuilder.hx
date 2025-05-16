@@ -67,7 +67,7 @@ extern class MLGraphBuilder {
 		From partial interface in webnn.idl
 	**/
 	function concat(inputs:Array<MLOperand>, axis:Int, ?options:MLOperatorOptions):MLOperand;
-	overload function constant(descriptor:MLOperandDescriptor, buffer:AllowSharedBufferSource):MLOperand;
+	overload function constant(descriptor:MLOperandDescriptor, buffer:js.webidl.AllowSharedBufferSource):MLOperand;
 	overload function constant(type:MLOperandDataType, value:MLNumber):MLOperand;
 	overload function constant(tensor:MLTensor):MLOperand;
 	/**

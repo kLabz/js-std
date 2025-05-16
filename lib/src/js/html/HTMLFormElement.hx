@@ -31,13 +31,13 @@ package js.html;
 			params : [TPType(TPath(<...>)),TPType(TPath(<...>))], 
 			pos : {
 				file : src/Main.hx, 
-				min : 3302, 
-				max : 3338
+				min : 3389, 
+				max : 3425
 			}, 
 			posPath : {
 				file : src/Main.hx, 
-				min : 3302, 
-				max : 3324
+				min : 3389, 
+				max : 3411
 			}
 		})
 **/
@@ -58,7 +58,7 @@ extern class HTMLFormElement extends HTMLElement implements ArrayAccess<js.dom.E
 	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
-	function requestSubmit(?submitter:HTMLElement):Void;
+	function requestSubmit(?submitter:Null<HTMLElement>):Void;
 	function reset():Void;
 	function submit():Void;
 }

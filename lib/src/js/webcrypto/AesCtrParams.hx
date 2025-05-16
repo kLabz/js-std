@@ -25,6 +25,6 @@
 package js.webcrypto;
 
 typedef AesCtrParams = Algorithm & {
-	var counter : BufferSource;
+	var counter : js.webidl.BufferSource;
 	var length : Int;
 };

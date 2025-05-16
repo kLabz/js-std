@@ -25,7 +25,7 @@
 package js.orientationEvent;
 
 extern class DeviceMotionEventRotationRate {
-	var alpha(default, null) : Float;
-	var beta(default, null) : Float;
-	var gamma(default, null) : Float;
+	var alpha(default, null) : Null<Float>;
+	var beta(default, null) : Null<Float>;
+	var gamma(default, null) : Null<Float>;
 }

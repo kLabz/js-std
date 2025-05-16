@@ -29,5 +29,5 @@ extern class XRHitTestResult {
 		From partial interface in anchors.idl
 	**/
 	function createAnchor():js.lib.Promise<js.anchors.XRAnchor>;
-	function getPose(baseSpace:js.webxr.XRSpace):js.webxr.XRPose;
+	function getPose(baseSpace:js.webxr.XRSpace):Null<js.webxr.XRPose>;
 }

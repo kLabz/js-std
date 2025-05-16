@@ -25,7 +25,7 @@
 package js.webauthn;
 
 typedef PublicKeyCredentialRequestOptions = {
-	var challenge : BufferSource;
+	var challenge : js.webidl.BufferSource;
 	@:optional
 	var timeout : Int;
 	@:optional

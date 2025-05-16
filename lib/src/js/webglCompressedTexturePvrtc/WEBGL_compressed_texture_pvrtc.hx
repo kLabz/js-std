@@ -25,8 +25,8 @@
 package js.webglCompressedTexturePvrtc;
 
 extern class WEBGL_compressed_texture_pvrtc {
-	static inline var COMPRESSED_RGB_PVRTC_4BPPV1_IMG : GLenum = 0x8C00;
-	static inline var COMPRESSED_RGB_PVRTC_2BPPV1_IMG : GLenum = 0x8C01;
-	static inline var COMPRESSED_RGBA_PVRTC_4BPPV1_IMG : GLenum = 0x8C02;
-	static inline var COMPRESSED_RGBA_PVRTC_2BPPV1_IMG : GLenum = 0x8C03;
+	static inline var COMPRESSED_RGB_PVRTC_4BPPV1_IMG : js.webgl1.GLenum = 0x8C00;
+	static inline var COMPRESSED_RGB_PVRTC_2BPPV1_IMG : js.webgl1.GLenum = 0x8C01;
+	static inline var COMPRESSED_RGBA_PVRTC_4BPPV1_IMG : js.webgl1.GLenum = 0x8C02;
+	static inline var COMPRESSED_RGBA_PVRTC_2BPPV1_IMG : js.webgl1.GLenum = 0x8C03;
 }

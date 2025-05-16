@@ -28,9 +28,9 @@ package js.cssFontLoading;
 	TODO SetlikeDeclaration handling
 **/
 extern class FontFaceSet extends js.dom.EventTarget {
-	var onloading : EventHandler;
-	var onloadingdone : EventHandler;
-	var onloadingerror : EventHandler;
+	var onloading : js.html.EventHandler;
+	var onloadingdone : js.html.EventHandler;
+	var onloadingerror : js.html.EventHandler;
 	var ready(default, null) : js.lib.Promise<FontFaceSet>;
 	var status(default, null) : FontFaceSetLoadStatus;
 	function add(font:FontFace):FontFaceSet;

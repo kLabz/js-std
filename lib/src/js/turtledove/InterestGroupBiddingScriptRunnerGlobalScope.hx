@@ -27,5 +27,5 @@ package js.turtledove;
 extern class InterestGroupBiddingScriptRunnerGlobalScope extends InterestGroupBiddingAndScoringScriptRunnerGlobalScope {
 	function setBid(?oneOrManyBids:haxe.extern.EitherType<GenerateBidOutput, Array<GenerateBidOutput>>):Bool;
 	function setPriority(priority:Float):Void;
-	function setPrioritySignalsOverride(key:String, ?priority:Float):Void;
+	function setPrioritySignalsOverride(key:String, ?priority:Null<Float>):Void;
 }

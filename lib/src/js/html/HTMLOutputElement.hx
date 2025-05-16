@@ -26,7 +26,7 @@ package js.html;
 
 extern class HTMLOutputElement extends HTMLElement {
 	var htmlFor(default, null) : js.dom.DOMTokenList;
-	var form(default, null) : HTMLFormElement;
+	var form(default, null) : Null<HTMLFormElement>;
 	var name : String;
 	var type(default, null) : String;
 	var defaultValue : String;

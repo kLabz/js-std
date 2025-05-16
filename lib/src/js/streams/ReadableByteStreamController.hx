@@ -25,9 +25,9 @@
 package js.streams;
 
 extern class ReadableByteStreamController {
-	var byobRequest(default, null) : ReadableStreamBYOBRequest;
-	var desiredSize(default, null) : Float;
+	var byobRequest(default, null) : Null<ReadableStreamBYOBRequest>;
+	var desiredSize(default, null) : Null<Float>;
 	function close():Void;
-	function enqueue(chunk:ArrayBufferView):Void;
+	function enqueue(chunk:js.webidl.ArrayBufferView):Void;
 	function error(?e:Any):Void;
 }

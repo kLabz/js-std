@@ -25,9 +25,9 @@
 package js.selectionApi;
 
 extern class Selection {
-	var anchorNode(default, null) : js.dom.Node;
+	var anchorNode(default, null) : Null<js.dom.Node>;
 	var anchorOffset(default, null) : Int;
-	var focusNode(default, null) : js.dom.Node;
+	var focusNode(default, null) : Null<js.dom.Node>;
 	var focusOffset(default, null) : Int;
 	var isCollapsed(default, null) : Bool;
 	var rangeCount(default, null) : Int;
@@ -38,7 +38,7 @@ extern class Selection {
 	**/
 	function ():Void;
 	function addRange(range:js.dom.Range):Void;
-	function collapse(node:js.dom.Node, ?offset:Int):Void;
+	function collapse(node:Null<js.dom.Node>, ?offset:Int):Void;
 	function collapseToEnd():Void;
 	function collapseToStart():Void;
 	function containsNode(node:js.dom.Node, ?allowPartialContainment:Bool):Bool;
@@ -52,5 +52,5 @@ extern class Selection {
 	function removeRange(range:js.dom.Range):Void;
 	function selectAllChildren(node:js.dom.Node):Void;
 	function setBaseAndExtent(anchorNode:js.dom.Node, anchorOffset:Int, focusNode:js.dom.Node, focusOffset:Int):Void;
-	function setPosition(node:js.dom.Node, ?offset:Int):Void;
+	function setPosition(node:Null<js.dom.Node>, ?offset:Int):Void;
 }

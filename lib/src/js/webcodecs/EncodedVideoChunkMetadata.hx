@@ -30,5 +30,5 @@ typedef EncodedVideoChunkMetadata = {
 	@:optional
 	var svc : SvcOutputMetadata;
 	@:optional
-	var alphaSideData : BufferSource;
+	var alphaSideData : js.webidl.BufferSource;
 };

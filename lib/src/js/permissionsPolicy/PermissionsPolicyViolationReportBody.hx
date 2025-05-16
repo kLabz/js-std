@@ -26,11 +26,11 @@ package js.permissionsPolicy;
 
 extern class PermissionsPolicyViolationReportBody extends js.reporting.ReportBody {
 	var featureId(default, null) : String;
-	var sourceFile(default, null) : String;
-	var lineNumber(default, null) : Int;
-	var columnNumber(default, null) : Int;
+	var sourceFile(default, null) : Null<String>;
+	var lineNumber(default, null) : Null<Int>;
+	var columnNumber(default, null) : Null<Int>;
 	var disposition(default, null) : String;
-	var allowAttribute(default, null) : String;
-	var srcAttribute(default, null) : String;
+	var allowAttribute(default, null) : Null<String>;
+	var srcAttribute(default, null) : Null<String>;
 	function toJSON():{ };
 }

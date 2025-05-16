@@ -46,10 +46,10 @@ extern class Window extends js.dom.EventTarget {
 	var closed(default, null) : Bool;
 	var frames(default, null) : WindowProxy;
 	var length(default, null) : Int;
-	var top(default, null) : WindowProxy;
+	var top(default, null) : Null<WindowProxy>;
 	var opener : Any;
-	var parent(default, null) : WindowProxy;
-	var frameElement(default, null) : js.dom.Element;
+	var parent(default, null) : Null<WindowProxy>;
+	var frameElement(default, null) : Null<js.dom.Element>;
 	var navigator(default, null) : Navigator;
 	var clientInformation(default, null) : Navigator;
 	var originAgentCluster(default, null) : Bool;
@@ -80,7 +80,7 @@ extern class Window extends js.dom.EventTarget {
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	var visualViewport(default, null) : js.cssomView.VisualViewport;
+	var visualViewport(default, null) : Null<js.cssomView.VisualViewport>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -134,17 +134,17 @@ extern class Window extends js.dom.EventTarget {
 	**/
 	var devicePixelRatio(default, null) : Float;
 	/**
-		From partial interface in document-picture-in-picture.idl
-	**/
-	var documentPictureInPicture(default, null) : js.documentPictureInPicture.DocumentPictureInPicture;
-	/**
 		From partial interface in dom.idl
 	**/
 	var event(default, null) : haxe.extern.EitherType<js.dom.Event, Void>;
 	/**
+		From partial interface in document-picture-in-picture.idl
+	**/
+	var documentPictureInPicture(default, null) : js.documentPictureInPicture.DocumentPictureInPicture;
+	/**
 		From partial interface in fenced-frame.idl
 	**/
-	var fence(default, null) : js.fencedFrame.Fence;
+	var fence(default, null) : Null<js.fencedFrame.Fence>;
 	/**
 		From partial interface in html.idl
 	**/
@@ -172,11 +172,11 @@ extern class Window extends js.dom.EventTarget {
 	/**
 		From partial interface in portals.idl
 	**/
-	var portalHost(default, null) : js.portals.PortalHost;
+	var portalHost(default, null) : Null<js.portals.PortalHost>;
 	/**
 		From partial interface in shared-storage.idl
 	**/
-	var sharedStorage(default, null) : js.sharedStorage.SharedStorage;
+	var sharedStorage(default, null) : Null<js.sharedStorage.SharedStorage>;
 	/**
 		From partial interface in speech-api.idl
 	**/
@@ -202,7 +202,7 @@ extern class Window extends js.dom.EventTarget {
 	/**
 		From partial interface in cssom.idl
 	**/
-	function getComputedStyle(elt:js.dom.Element, ?pseudoElt:CSSOMString):js.cssom.CSSStyleDeclaration;
+	function getComputedStyle(elt:js.dom.Element, ?pseudoElt:Null<CSSOMString>):js.cssom.CSSStyleDeclaration;
 	/**
 		From partial interface in digital-goods.idl
 	**/
@@ -214,7 +214,7 @@ extern class Window extends js.dom.EventTarget {
 	/**
 		From partial interface in selection-api.idl
 	**/
-	function getSelection():js.selectionApi.Selection;
+	function getSelection():Null<js.selectionApi.Selection>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -231,11 +231,11 @@ extern class Window extends js.dom.EventTarget {
 		From partial interface in css-nav.idl
 	**/
 	function navigate(dir:js.cssNav.SpatialNavigationDirection):Void;
-	function open(?url:String, ?target:String, ?features:String):WindowProxy;
+	function open(?url:String, ?target:String, ?features:String):Null<WindowProxy>;
 	overload function postMessage(message:Any, targetOrigin:String, ?transfer:Array<{ }>):Void;
 	overload function postMessage(message:Any, ?options:WindowPostMessageOptions):Void;
 	function print():Void;
-	function prompt(?message:String, ?default:String):String;
+	function prompt(?message:String, ?default:String):Null<String>;
 	/**
 		From partial interface in local-font-access.idl
 	**/
@@ -247,7 +247,7 @@ extern class Window extends js.dom.EventTarget {
 	/**
 		From partial interface in requestidlecallback.idl
 	**/
-	function requestIdleCallback(callback:IdleRequestCallback, ?options:js.requestidlecallback.IdleRequestOptions):Int;
+	function requestIdleCallback(callback:js.requestidlecallback.IdleRequestCallback, ?options:js.requestidlecallback.IdleRequestOptions):Int;
 	/**
 		From partial interface in cssom-view.idl
 	**/

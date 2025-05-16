@@ -30,6 +30,6 @@ extern class FileSystemDirectoryHandle extends FileSystemHandle {
 	function getFileHandle(name:String, ?options:FileSystemGetFileOptions):js.lib.Promise<FileSystemFileHandle>;
 	function keys():Iterator<String>;
 	function removeEntry(name:String, ?options:FileSystemRemoveOptions):js.lib.Promise<Void>;
-	function resolve(possibleDescendant:FileSystemHandle):js.lib.Promise<Array<String>>;
+	function resolve(possibleDescendant:FileSystemHandle):js.lib.Promise<Null<Array<String>>>;
 	function values():Iterator<FileSystemHandle>;
 }

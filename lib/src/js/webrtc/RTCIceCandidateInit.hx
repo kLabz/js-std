@@ -28,9 +28,9 @@ typedef RTCIceCandidateInit = {
 	@:optional
 	var candidate : String = "";
 	@:optional
-	var sdpMid : String = null;
+	var sdpMid : Null<String> = null;
 	@:optional
-	var sdpMLineIndex : Int = null;
+	var sdpMLineIndex : Null<Int> = null;
 	@:optional
-	var usernameFragment : String = null;
+	var usernameFragment : Null<String> = null;
 };

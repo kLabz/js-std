@@ -25,8 +25,8 @@
 package js.extTextureCompressionBptc;
 
 extern class EXT_texture_compression_bptc {
-	static inline var COMPRESSED_RGBA_BPTC_UNORM_EXT : GLenum = 0x8E8C;
-	static inline var COMPRESSED_SRGB_ALPHA_BPTC_UNORM_EXT : GLenum = 0x8E8D;
-	static inline var COMPRESSED_RGB_BPTC_SIGNED_FLOAT_EXT : GLenum = 0x8E8E;
-	static inline var COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_EXT : GLenum = 0x8E8F;
+	static inline var COMPRESSED_RGBA_BPTC_UNORM_EXT : js.webgl1.GLenum = 0x8E8C;
+	static inline var COMPRESSED_SRGB_ALPHA_BPTC_UNORM_EXT : js.webgl1.GLenum = 0x8E8D;
+	static inline var COMPRESSED_RGB_BPTC_SIGNED_FLOAT_EXT : js.webgl1.GLenum = 0x8E8E;
+	static inline var COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_EXT : js.webgl1.GLenum = 0x8E8F;
 }

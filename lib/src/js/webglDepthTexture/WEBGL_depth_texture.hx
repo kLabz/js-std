@@ -25,5 +25,5 @@
 package js.webglDepthTexture;
 
 extern class WEBGL_depth_texture {
-	static inline var UNSIGNED_INT_24_8_WEBGL : GLenum = 0x84FA;
+	static inline var UNSIGNED_INT_24_8_WEBGL : js.webgl1.GLenum = 0x84FA;
 }

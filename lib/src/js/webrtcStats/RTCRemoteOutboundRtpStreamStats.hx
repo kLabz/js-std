@@ -28,7 +28,7 @@ typedef RTCRemoteOutboundRtpStreamStats = RTCSentRtpStreamStats & {
 	@:optional
 	var localId : String;
 	@:optional
-	var remoteTimestamp : DOMHighResTimeStamp;
+	var remoteTimestamp : js.hrTime.DOMHighResTimeStamp;
 	@:optional
 	var reportsSent : Float;
 	@:optional

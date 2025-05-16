@@ -25,7 +25,7 @@
 package js.translationApi;
 
 extern class LanguageDetector {
-	var expectedInputLanguages(default, null) : Array<String>;
+	var expectedInputLanguages(default, null) : Null<Array<String>>;
 	var inputQuota(default, null) : Float;
 	function availability(?options:LanguageDetectorCreateCoreOptions):js.lib.Promise<js.writingAssistanceApis.Availability>;
 	function create(?options:LanguageDetectorCreateOptions):js.lib.Promise<LanguageDetector>;

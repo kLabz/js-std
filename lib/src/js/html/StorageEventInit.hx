@@ -26,13 +26,13 @@ package js.html;
 
 typedef StorageEventInit = js.dom.EventInit & {
 	@:optional
-	var key : String = null;
+	var key : Null<String> = null;
 	@:optional
-	var oldValue : String = null;
+	var oldValue : Null<String> = null;
 	@:optional
-	var newValue : String = null;
+	var newValue : Null<String> = null;
 	@:optional
 	var url : String = "";
 	@:optional
-	var storageArea : Storage = null;
+	var storageArea : Null<Storage> = null;
 };

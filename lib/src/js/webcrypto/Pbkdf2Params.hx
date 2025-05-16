@@ -25,7 +25,7 @@
 package js.webcrypto;
 
 typedef Pbkdf2Params = Algorithm & {
-	var salt : BufferSource;
+	var salt : js.webidl.BufferSource;
 	var iterations : Int;
 	var hash : HashAlgorithmIdentifier;
 };

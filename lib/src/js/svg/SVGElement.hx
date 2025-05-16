@@ -26,6 +26,6 @@ package js.svg;
 
 extern class SVGElement extends js.dom.Element {
 	var className(default, null) : SVGAnimatedString;
-	var ownerSVGElement(default, null) : SVGSVGElement;
-	var viewportElement(default, null) : SVGElement;
+	var ownerSVGElement(default, null) : Null<SVGSVGElement>;
+	var viewportElement(default, null) : Null<SVGElement>;
 }

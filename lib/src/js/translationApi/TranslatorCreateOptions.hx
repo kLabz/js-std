@@ -28,5 +28,5 @@ typedef TranslatorCreateOptions = TranslatorCreateCoreOptions & {
 	@:optional
 	var signal : js.dom.AbortSignal;
 	@:optional
-	var monitor : CreateMonitorCallback;
+	var monitor : js.writingAssistanceApis.CreateMonitorCallback;
 };

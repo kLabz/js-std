@@ -25,6 +25,6 @@
 package js.webAppLaunch;
 
 extern class LaunchParams {
-	var targetURL(default, null) : String;
+	var targetURL(default, null) : Null<String>;
 	var files(default, null) : Array<js.fs.FileSystemHandle>;
 }

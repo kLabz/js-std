@@ -25,7 +25,7 @@
 package js.cssom;
 
 extern class CSSStyleSheet extends StyleSheet {
-	var ownerRule(default, null) : CSSRule;
+	var ownerRule(default, null) : Null<CSSRule>;
 	var cssRules(default, null) : CSSRuleList;
 	/**
 		From partial interface in cssom.idl

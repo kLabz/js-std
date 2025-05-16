@@ -27,9 +27,9 @@ package js.webxrlayers;
 typedef XRLayerInit = {
 	var space : js.webxr.XRSpace;
 	@:optional
-	var colorFormat : GLenum = 0x1908;
+	var colorFormat : js.webgl1.GLenum = 0x1908;
 	@:optional
-	var depthFormat : GLenum;
+	var depthFormat : Null<js.webgl1.GLenum>;
 	@:optional
 	var mipLevels : Int = 1;
 	var viewPixelWidth : Int;

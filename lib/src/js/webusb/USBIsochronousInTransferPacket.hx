@@ -25,7 +25,7 @@
 package js.webusb;
 
 extern class USBIsochronousInTransferPacket {
-	var data(default, null) : DataView;
+	var data(default, null) : Null<DataView>;
 	var status(default, null) : USBTransferStatus;
-	function new(status:USBTransferStatus, ?data:DataView):Void;
+	function new(status:USBTransferStatus, ?data:Null<DataView>):Void;
 }

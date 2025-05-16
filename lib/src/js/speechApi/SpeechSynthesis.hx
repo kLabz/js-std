@@ -28,7 +28,7 @@ extern class SpeechSynthesis extends js.dom.EventTarget {
 	var pending(default, null) : Bool;
 	var speaking(default, null) : Bool;
 	var paused(default, null) : Bool;
-	var onvoiceschanged : EventHandler;
+	var onvoiceschanged : js.html.EventHandler;
 	function cancel():Void;
 	function getVoices():Array<SpeechSynthesisVoice>;
 	function pause():Void;

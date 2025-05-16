@@ -27,7 +27,7 @@ package js.webrtc;
 extern class RTCDtlsTransport extends js.dom.EventTarget {
 	var iceTransport(default, null) : RTCIceTransport;
 	var state(default, null) : RTCDtlsTransportState;
-	var onstatechange : EventHandler;
-	var onerror : EventHandler;
+	var onstatechange : js.html.EventHandler;
+	var onerror : js.html.EventHandler;
 	function getRemoteCertificates():Array<ArrayBuffer>;
 }

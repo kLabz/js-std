@@ -26,6 +26,6 @@ package js.webxr;
 
 extern class XRReferenceSpaceEvent extends js.dom.Event {
 	var referenceSpace(default, null) : XRReferenceSpace;
-	var transform(default, null) : XRRigidTransform;
+	var transform(default, null) : Null<XRRigidTransform>;
 	function new(type:String, eventInitDict:XRReferenceSpaceEventInit):Void;
 }

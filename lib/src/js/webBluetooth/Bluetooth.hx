@@ -25,8 +25,8 @@
 package js.webBluetooth;
 
 extern class Bluetooth extends js.dom.EventTarget {
-	var onavailabilitychanged : EventHandler;
-	var referringDevice(default, null) : BluetoothDevice;
+	var onavailabilitychanged : js.html.EventHandler;
+	var referringDevice(default, null) : Null<BluetoothDevice>;
 	function getAvailability():js.lib.Promise<Bool>;
 	function getDevices():js.lib.Promise<Array<BluetoothDevice>>;
 	function requestDevice(?options:RequestDeviceOptions):js.lib.Promise<BluetoothDevice>;

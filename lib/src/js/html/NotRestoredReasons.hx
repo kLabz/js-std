@@ -25,11 +25,11 @@
 package js.html;
 
 extern class NotRestoredReasons {
-	var src(default, null) : String;
-	var id(default, null) : String;
-	var name(default, null) : String;
-	var url(default, null) : String;
-	var reasons(default, null) : Array<NotRestoredReasonDetails>;
-	var children(default, null) : Array<NotRestoredReasons>;
+	var src(default, null) : Null<String>;
+	var id(default, null) : Null<String>;
+	var name(default, null) : Null<String>;
+	var url(default, null) : Null<String>;
+	var reasons(default, null) : Null<Array<NotRestoredReasonDetails>>;
+	var children(default, null) : Null<Array<NotRestoredReasons>>;
 	function toJSON():{ };
 }

@@ -31,5 +31,5 @@ extern class XREquirectLayer extends XRCompositionLayer {
 	var centralHorizontalAngle : Float;
 	var upperVerticalAngle : Float;
 	var lowerVerticalAngle : Float;
-	var onredraw : EventHandler;
+	var onredraw : js.html.EventHandler;
 }

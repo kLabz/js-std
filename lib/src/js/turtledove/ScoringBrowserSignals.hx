@@ -43,5 +43,5 @@ typedef ScoringBrowserSignals = {
 	@:optional
 	var creativeScanningMetadata : String;
 	@:optional
-	var adComponentsCreativeScanningMetadata : Array<String>;
+	var adComponentsCreativeScanningMetadata : Array<Null<String>>;
 };

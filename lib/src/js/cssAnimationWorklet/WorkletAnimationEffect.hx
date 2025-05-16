@@ -25,7 +25,7 @@
 package js.cssAnimationWorklet;
 
 extern class WorkletAnimationEffect {
-	var localTime : Float;
+	var localTime : Null<Float>;
 	function getComputedTiming():js.webAnimations.ComputedEffectTiming;
 	function getTiming():js.webAnimations.EffectTiming;
 }

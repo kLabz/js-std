@@ -30,5 +30,5 @@ extern class CSSKeyframesRule extends js.cssom.CSSRule implements ArrayAccess<CS
 	var length(default, null) : Int;
 	function appendRule(rule:CSSOMString):Void;
 	function deleteRule(select:CSSOMString):Void;
-	function findRule(select:CSSOMString):CSSKeyframeRule;
+	function findRule(select:CSSOMString):Null<CSSKeyframeRule>;
 }

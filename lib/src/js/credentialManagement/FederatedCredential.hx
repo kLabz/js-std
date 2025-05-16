@@ -26,6 +26,6 @@ package js.credentialManagement;
 
 extern class FederatedCredential extends Credential {
 	var provider(default, null) : String;
-	var protocol(default, null) : String;
+	var protocol(default, null) : Null<String>;
 	function new(data:FederatedCredentialInit):Void;
 }

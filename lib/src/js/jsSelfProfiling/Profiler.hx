@@ -25,7 +25,7 @@
 package js.jsSelfProfiling;
 
 extern class Profiler extends js.dom.EventTarget {
-	var sampleInterval(default, null) : DOMHighResTimeStamp;
+	var sampleInterval(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var stopped(default, null) : Bool;
 	function new(options:ProfilerInitOptions):Void;
 	function stop():js.lib.Promise<ProfilerTrace>;

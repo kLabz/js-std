@@ -26,7 +26,7 @@ package js.webaudio;
 
 extern class OfflineAudioContext extends BaseAudioContext {
 	var length(default, null) : Int;
-	var oncomplete : EventHandler;
+	var oncomplete : js.html.EventHandler;
 	overload function new(numberOfChannels:Int, length:Int, sampleRate:Float):Void;
 	overload function new(contextOptions:OfflineAudioContextOptions):Void;
 	function resume():js.lib.Promise<Void>;

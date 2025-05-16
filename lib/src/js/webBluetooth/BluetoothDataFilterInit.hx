@@ -26,7 +26,7 @@ package js.webBluetooth;
 
 typedef BluetoothDataFilterInit = {
 	@:optional
-	var dataPrefix : BufferSource;
+	var dataPrefix : js.webidl.BufferSource;
 	@:optional
-	var mask : BufferSource;
+	var mask : js.webidl.BufferSource;
 };

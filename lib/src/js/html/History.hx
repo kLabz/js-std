@@ -31,6 +31,6 @@ extern class History {
 	function back():Void;
 	function forward():Void;
 	function go(?delta:Int):Void;
-	function pushState(data:Any, unused:String, ?url:String):Void;
-	function replaceState(data:Any, unused:String, ?url:String):Void;
+	function pushState(data:Any, unused:String, ?url:Null<String>):Void;
+	function replaceState(data:Any, unused:String, ?url:Null<String>):Void;
 }

@@ -29,6 +29,6 @@ extern class Plugin {
 	var description(default, null) : String;
 	var filename(default, null) : String;
 	var length(default, null) : Int;
-	function item(index:Int):MimeType;
-	function namedItem(name:String):MimeType;
+	function item(index:Int):Null<MimeType>;
+	function namedItem(name:String):Null<MimeType>;
 }

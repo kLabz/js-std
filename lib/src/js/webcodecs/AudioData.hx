@@ -25,7 +25,7 @@
 package js.webcodecs;
 
 extern class AudioData {
-	var format(default, null) : AudioSampleFormat;
+	var format(default, null) : Null<AudioSampleFormat>;
 	var sampleRate(default, null) : Float;
 	var numberOfFrames(default, null) : Int;
 	var numberOfChannels(default, null) : Int;
@@ -35,5 +35,5 @@ extern class AudioData {
 	function allocationSize(options:AudioDataCopyToOptions):Int;
 	function clone():AudioData;
 	function close():Void;
-	function copyTo(destination:AllowSharedBufferSource, options:AudioDataCopyToOptions):Void;
+	function copyTo(destination:js.webidl.AllowSharedBufferSource, options:AudioDataCopyToOptions):Void;
 }

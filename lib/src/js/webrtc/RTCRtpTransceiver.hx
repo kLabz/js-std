@@ -25,11 +25,11 @@
 package js.webrtc;
 
 extern class RTCRtpTransceiver {
-	var mid(default, null) : String;
+	var mid(default, null) : Null<String>;
 	var sender(default, null) : RTCRtpSender;
 	var receiver(default, null) : RTCRtpReceiver;
 	var direction : RTCRtpTransceiverDirection;
-	var currentDirection(default, null) : RTCRtpTransceiverDirection;
+	var currentDirection(default, null) : Null<RTCRtpTransceiverDirection>;
 	function setCodecPreferences(codecs:Array<RTCRtpCodec>):Void;
 	function stop():Void;
 }

@@ -26,7 +26,7 @@ package js.html;
 
 extern class HTMLOptionElement extends HTMLElement {
 	var disabled : Bool;
-	var form(default, null) : HTMLFormElement;
+	var form(default, null) : Null<HTMLFormElement>;
 	var label : String;
 	var defaultSelected : Bool;
 	var selected : Bool;

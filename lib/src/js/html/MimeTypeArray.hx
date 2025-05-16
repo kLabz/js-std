@@ -26,6 +26,6 @@ package js.html;
 
 extern class MimeTypeArray {
 	var length(default, null) : Int;
-	function item(index:Int):MimeType;
-	function namedItem(name:String):MimeType;
+	function item(index:Int):Null<MimeType>;
+	function namedItem(name:String):Null<MimeType>;
 }

@@ -26,13 +26,13 @@ package js.webxrlayers;
 
 extern class XRWebGLSubImage extends XRSubImage {
 	var colorTexture(default, null) : js.webgl1.WebGLTexture;
-	var depthStencilTexture(default, null) : js.webgl1.WebGLTexture;
-	var motionVectorTexture(default, null) : js.webgl1.WebGLTexture;
-	var imageIndex(default, null) : Int;
+	var depthStencilTexture(default, null) : Null<js.webgl1.WebGLTexture>;
+	var motionVectorTexture(default, null) : Null<js.webgl1.WebGLTexture>;
+	var imageIndex(default, null) : Null<Int>;
 	var colorTextureWidth(default, null) : Int;
 	var colorTextureHeight(default, null) : Int;
-	var depthStencilTextureWidth(default, null) : Int;
-	var depthStencilTextureHeight(default, null) : Int;
-	var motionVectorTextureWidth(default, null) : Int;
-	var motionVectorTextureHeight(default, null) : Int;
+	var depthStencilTextureWidth(default, null) : Null<Int>;
+	var depthStencilTextureHeight(default, null) : Null<Int>;
+	var motionVectorTextureWidth(default, null) : Null<Int>;
+	var motionVectorTextureHeight(default, null) : Null<Int>;
 }

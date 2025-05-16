@@ -25,7 +25,7 @@
 package js.xhr;
 
 extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
-	var onreadystatechange : EventHandler;
+	var onreadystatechange : js.html.EventHandler;
 	static inline var UNSENT : Int = 0;
 	static inline var OPENED : Int = 1;
 	static inline var HEADERS_RECEIVED : Int = 2;
@@ -41,15 +41,15 @@ extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
 	var responseType : XMLHttpRequestResponseType;
 	var response(default, null) : Any;
 	var responseText(default, null) : String;
-	var responseXML(default, null) : js.dom.Document;
+	var responseXML(default, null) : Null<js.dom.Document>;
 	function new():Void;
 	function abort():Void;
 	function getAllResponseHeaders():String;
-	function getResponseHeader(name:String):String;
+	function getResponseHeader(name:String):Null<String>;
 	overload function open(method:String, url:String):Void;
-	overload function open(method:String, url:String, async:Bool, ?username:String, ?password:String):Void;
+	overload function open(method:String, url:String, async:Bool, ?username:Null<String>, ?password:Null<String>):Void;
 	function overrideMimeType(mime:String):Void;
-	function send(?body:haxe.extern.EitherType<js.dom.Document, XMLHttpRequestBodyInit>):Void;
+	function send(?body:Null<haxe.extern.EitherType<js.dom.Document, js.fetch.XMLHttpRequestBodyInit>>):Void;
 	/**
 		From partial interface in attribution-reporting-api.idl
 	**/

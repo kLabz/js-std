@@ -38,7 +38,7 @@ typedef MouseEventInit = EventModifierInit & {
 	@:optional
 	var buttons : Int = 0;
 	@:optional
-	var relatedTarget : js.dom.EventTarget = null;
+	var relatedTarget : Null<js.dom.EventTarget> = null;
 	@:optional
 	var movementX : Float = 0;
 	@:optional

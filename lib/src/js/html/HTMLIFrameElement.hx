@@ -35,8 +35,8 @@ extern class HTMLIFrameElement extends HTMLElement {
 	var height : String;
 	var referrerPolicy : String;
 	var loading : String;
-	var contentDocument(default, null) : js.dom.Document;
-	var contentWindow(default, null) : WindowProxy;
+	var contentDocument(default, null) : Null<js.dom.Document>;
+	var contentWindow(default, null) : Null<WindowProxy>;
 	/**
 		From partial interface in anonymous-iframe.idl
 	**/
@@ -74,13 +74,13 @@ extern class HTMLIFrameElement extends HTMLElement {
 	**/
 	var permissionsPolicy(default, null) : js.permissionsPolicy.PermissionsPolicy;
 	/**
-		From partial interface in trust-token-api.idl
-	**/
-	var privateToken : String;
-	/**
 		From partial interface in turtledove.idl
 	**/
 	var adAuctionHeaders : Bool;
+	/**
+		From partial interface in trust-token-api.idl
+	**/
+	var privateToken : String;
 	function new():Void;
-	function getSVGDocument():js.dom.Document;
+	function getSVGDocument():Null<js.dom.Document>;
 }

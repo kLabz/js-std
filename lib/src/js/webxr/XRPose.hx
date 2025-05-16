@@ -26,7 +26,7 @@ package js.webxr;
 
 extern class XRPose {
 	var transform(default, null) : XRRigidTransform;
-	var linearVelocity(default, null) : js.geometry.DOMPointReadOnly;
-	var angularVelocity(default, null) : js.geometry.DOMPointReadOnly;
+	var linearVelocity(default, null) : Null<js.geometry.DOMPointReadOnly>;
+	var angularVelocity(default, null) : Null<js.geometry.DOMPointReadOnly>;
 	var emulatedPosition(default, null) : Bool;
 }

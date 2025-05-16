@@ -27,6 +27,6 @@ package js.html;
 extern class VisibilityStateEntry extends js.performanceTimeline.PerformanceEntry {
 	var name(default, null) : String;
 	var entryType(default, null) : String;
-	var startTime(default, null) : DOMHighResTimeStamp;
+	var startTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var duration(default, null) : Int;
 }

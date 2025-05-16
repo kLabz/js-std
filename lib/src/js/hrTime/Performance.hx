@@ -45,7 +45,7 @@ extern class Performance extends js.dom.EventTarget {
 	/**
 		From partial interface in resource-timing.idl
 	**/
-	var onresourcetimingbufferfull : EventHandler;
+	var onresourcetimingbufferfull : js.html.EventHandler;
 	/**
 		From partial interface in user-timing.idl
 	**/
@@ -61,15 +61,15 @@ extern class Performance extends js.dom.EventTarget {
 	/**
 		From partial interface in performance-timeline.idl
 	**/
-	function getEntries():PerformanceEntryList;
+	function getEntries():js.performanceTimeline.PerformanceEntryList;
 	/**
 		From partial interface in performance-timeline.idl
 	**/
-	function getEntriesByName(name:String, ?type:String):PerformanceEntryList;
+	function getEntriesByName(name:String, ?type:String):js.performanceTimeline.PerformanceEntryList;
 	/**
 		From partial interface in performance-timeline.idl
 	**/
-	function getEntriesByType(type:String):PerformanceEntryList;
+	function getEntriesByType(type:String):js.performanceTimeline.PerformanceEntryList;
 	/**
 		From partial interface in user-timing.idl
 	**/

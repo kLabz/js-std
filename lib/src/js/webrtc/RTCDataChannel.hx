@@ -27,20 +27,20 @@ package js.webrtc;
 extern class RTCDataChannel extends js.dom.EventTarget {
 	var label(default, null) : String;
 	var ordered(default, null) : Bool;
-	var maxPacketLifeTime(default, null) : Int;
-	var maxRetransmits(default, null) : Int;
+	var maxPacketLifeTime(default, null) : Null<Int>;
+	var maxRetransmits(default, null) : Null<Int>;
 	var protocol(default, null) : String;
 	var negotiated(default, null) : Bool;
-	var id(default, null) : Int;
+	var id(default, null) : Null<Int>;
 	var readyState(default, null) : RTCDataChannelState;
 	var bufferedAmount(default, null) : Int;
 	var bufferedAmountLowThreshold : Int;
-	var onopen : EventHandler;
-	var onbufferedamountlow : EventHandler;
-	var onerror : EventHandler;
-	var onclosing : EventHandler;
-	var onclose : EventHandler;
-	var onmessage : EventHandler;
+	var onopen : js.html.EventHandler;
+	var onbufferedamountlow : js.html.EventHandler;
+	var onerror : js.html.EventHandler;
+	var onclosing : js.html.EventHandler;
+	var onclose : js.html.EventHandler;
+	var onmessage : js.html.EventHandler;
 	var binaryType : js.websockets.BinaryType;
 	/**
 		From partial interface in webrtc-priority.idl
@@ -50,5 +50,5 @@ extern class RTCDataChannel extends js.dom.EventTarget {
 	overload function send(data:String):Void;
 	overload function send(data:js.fileapi.Blob):Void;
 	overload function send(data:ArrayBuffer):Void;
-	overload function send(data:ArrayBufferView):Void;
+	overload function send(data:js.webidl.ArrayBufferView):Void;
 }

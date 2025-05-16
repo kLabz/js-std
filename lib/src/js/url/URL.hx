@@ -45,7 +45,7 @@ extern class URL {
 		From partial interface in FileAPI.idl
 	**/
 	function createObjectURL(obj:haxe.extern.EitherType<js.fileapi.Blob, js.mediaSource.MediaSource>):String;
-	function parse(url:String, ?base:String):URL;
+	function parse(url:String, ?base:String):Null<URL>;
 	/**
 		From partial interface in FileAPI.idl
 	**/

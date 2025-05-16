@@ -26,7 +26,7 @@ package js.scrollAnimations;
 
 typedef ScrollTimelineOptions = {
 	@:optional
-	var source : js.dom.Element;
+	var source : Null<js.dom.Element>;
 	@:optional
 	var axis : ScrollAxis = "block";
 };

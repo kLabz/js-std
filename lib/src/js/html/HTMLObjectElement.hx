@@ -28,11 +28,11 @@ extern class HTMLObjectElement extends HTMLElement {
 	var data : String;
 	var type : String;
 	var name : String;
-	var form(default, null) : HTMLFormElement;
+	var form(default, null) : Null<HTMLFormElement>;
 	var width : String;
 	var height : String;
-	var contentDocument(default, null) : js.dom.Document;
-	var contentWindow(default, null) : WindowProxy;
+	var contentDocument(default, null) : Null<js.dom.Document>;
+	var contentWindow(default, null) : Null<WindowProxy>;
 	var willValidate(default, null) : Bool;
 	var validity(default, null) : ValidityState;
 	var validationMessage(default, null) : String;
@@ -82,7 +82,7 @@ extern class HTMLObjectElement extends HTMLElement {
 	var border : String;
 	function new():Void;
 	function checkValidity():Bool;
-	function getSVGDocument():js.dom.Document;
+	function getSVGDocument():Null<js.dom.Document>;
 	function reportValidity():Bool;
 	function setCustomValidity(error:String):Void;
 }

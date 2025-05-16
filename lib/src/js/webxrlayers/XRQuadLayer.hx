@@ -29,5 +29,5 @@ extern class XRQuadLayer extends XRCompositionLayer {
 	var transform : js.webxr.XRRigidTransform;
 	var width : Float;
 	var height : Float;
-	var onredraw : EventHandler;
+	var onredraw : js.html.EventHandler;
 }

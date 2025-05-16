@@ -28,5 +28,5 @@ typedef WebTransportErrorOptions = {
 	@:optional
 	var source : WebTransportErrorSource = "stream";
 	@:optional
-	var streamErrorCode : Int = null;
+	var streamErrorCode : Null<Int> = null;
 };

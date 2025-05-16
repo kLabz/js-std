@@ -30,5 +30,5 @@ extern class NetworkInformation extends js.dom.EventTarget {
 	var downlinkMax(default, null) : Megabit;
 	var downlink(default, null) : Megabit;
 	var rtt(default, null) : Millisecond;
-	var onchange : EventHandler;
+	var onchange : js.html.EventHandler;
 }

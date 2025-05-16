@@ -30,5 +30,5 @@ typedef SerialPortInfo = {
 	@:optional
 	var usbProductId : Int;
 	@:optional
-	var bluetoothServiceClassId : BluetoothServiceUUID;
+	var bluetoothServiceClassId : js.webBluetooth.BluetoothServiceUUID;
 };

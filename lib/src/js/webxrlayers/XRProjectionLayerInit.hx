@@ -28,9 +28,9 @@ typedef XRProjectionLayerInit = {
 	@:optional
 	var textureType : XRTextureType = "texture";
 	@:optional
-	var colorFormat : GLenum = 0x1908;
+	var colorFormat : js.webgl1.GLenum = 0x1908;
 	@:optional
-	var depthFormat : GLenum = 0x1902;
+	var depthFormat : js.webgl1.GLenum = 0x1902;
 	@:optional
 	var scaleFactor : Float = 1.0;
 	@:optional

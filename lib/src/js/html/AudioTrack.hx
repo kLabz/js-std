@@ -33,5 +33,5 @@ extern class AudioTrack {
 	/**
 		From partial interface in media-source.idl
 	**/
-	var sourceBuffer(default, null) : js.mediaSource.SourceBuffer;
+	var sourceBuffer(default, null) : Null<js.mediaSource.SourceBuffer>;
 }

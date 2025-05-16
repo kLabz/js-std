@@ -25,11 +25,11 @@
 package js.cookieStore;
 
 extern class CookieStore extends js.dom.EventTarget {
-	var onchange : EventHandler;
+	var onchange : js.html.EventHandler;
 	overload function delete(name:String):js.lib.Promise<Void>;
 	overload function delete(options:CookieStoreDeleteOptions):js.lib.Promise<Void>;
-	overload function get(name:String):js.lib.Promise<CookieListItem>;
-	overload function get(?options:CookieStoreGetOptions):js.lib.Promise<CookieListItem>;
+	overload function get(name:String):js.lib.Promise<Null<CookieListItem>>;
+	overload function get(?options:CookieStoreGetOptions):js.lib.Promise<Null<CookieListItem>>;
 	overload function getAll(name:String):js.lib.Promise<CookieList>;
 	overload function getAll(?options:CookieStoreGetOptions):js.lib.Promise<CookieList>;
 	overload function set(name:String, value:String):js.lib.Promise<Void>;

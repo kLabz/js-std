@@ -26,5 +26,5 @@ package js.webcrypto;
 
 typedef RsaOaepParams = Algorithm & {
 	@:optional
-	var label : BufferSource;
+	var label : js.webidl.BufferSource;
 };

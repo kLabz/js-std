@@ -32,14 +32,14 @@ extern class WebSocket extends js.dom.EventTarget {
 	static inline var CLOSED : Int = 3;
 	var readyState(default, null) : Int;
 	var bufferedAmount(default, null) : Float;
-	var onopen : EventHandler;
-	var onerror : EventHandler;
-	var onclose : EventHandler;
+	var onopen : js.html.EventHandler;
+	var onerror : js.html.EventHandler;
+	var onclose : js.html.EventHandler;
 	var extensions(default, null) : String;
 	var protocol(default, null) : String;
-	var onmessage : EventHandler;
+	var onmessage : js.html.EventHandler;
 	var binaryType : BinaryType;
 	function new(url:String, ?protocols:haxe.extern.EitherType<String, Array<String>>):Void;
 	function close(?code:Int, ?reason:String):Void;
-	function send(data:haxe.extern.EitherType<BufferSource, haxe.extern.EitherType<js.fileapi.Blob, String>>):Void;
+	function send(data:haxe.extern.EitherType<js.webidl.BufferSource, haxe.extern.EitherType<js.fileapi.Blob, String>>):Void;
 }

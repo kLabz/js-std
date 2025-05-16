@@ -26,5 +26,5 @@ package js.textDetectionApi;
 
 extern class TextDetector {
 	function new():Void;
-	function detect(image:ImageBitmapSource):js.lib.Promise<Array<DetectedText>>;
+	function detect(image:js.html.ImageBitmapSource):js.lib.Promise<Array<DetectedText>>;
 }

@@ -25,9 +25,9 @@
 package js.extDisjointTimerQueryWebgl2;
 
 extern class EXT_disjoint_timer_query_webgl2 {
-	static inline var QUERY_COUNTER_BITS_EXT : GLenum = 0x8864;
-	static inline var TIME_ELAPSED_EXT : GLenum = 0x88BF;
-	static inline var TIMESTAMP_EXT : GLenum = 0x8E28;
-	static inline var GPU_DISJOINT_EXT : GLenum = 0x8FBB;
-	function queryCounterEXT(query:js.webgl2.WebGLQuery, target:GLenum):Void;
+	static inline var QUERY_COUNTER_BITS_EXT : js.webgl1.GLenum = 0x8864;
+	static inline var TIME_ELAPSED_EXT : js.webgl1.GLenum = 0x88BF;
+	static inline var TIMESTAMP_EXT : js.webgl1.GLenum = 0x8E28;
+	static inline var GPU_DISJOINT_EXT : js.webgl1.GLenum = 0x8FBB;
+	function queryCounterEXT(query:js.webgl2.WebGLQuery, target:js.webgl1.GLenum):Void;
 }

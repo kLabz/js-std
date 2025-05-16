@@ -26,7 +26,7 @@ package js.serverTiming;
 
 extern class PerformanceServerTiming {
 	var name(default, null) : String;
-	var duration(default, null) : DOMHighResTimeStamp;
+	var duration(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var description(default, null) : String;
 	function toJSON():{ };
 }

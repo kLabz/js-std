@@ -26,7 +26,7 @@ package js.webrtc;
 
 typedef RTCLocalIceCandidateInit = RTCIceCandidateInit & {
 	@:optional
-	var relayProtocol : RTCIceServerTransportProtocol = null;
+	var relayProtocol : Null<RTCIceServerTransportProtocol> = null;
 	@:optional
-	var url : String = null;
+	var url : Null<String> = null;
 };

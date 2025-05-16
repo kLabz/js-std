@@ -28,7 +28,7 @@ typedef XREquirectLayerInit = XRLayerInit & {
 	@:optional
 	var textureType : XRTextureType = "texture";
 	@:optional
-	var transform : js.webxr.XRRigidTransform;
+	var transform : Null<js.webxr.XRRigidTransform>;
 	@:optional
 	var radius : Float = 0;
 	@:optional

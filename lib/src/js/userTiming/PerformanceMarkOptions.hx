@@ -28,5 +28,5 @@ typedef PerformanceMarkOptions = {
 	@:optional
 	var detail : Any;
 	@:optional
-	var startTime : DOMHighResTimeStamp;
+	var startTime : js.hrTime.DOMHighResTimeStamp;
 };

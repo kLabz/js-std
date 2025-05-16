@@ -26,7 +26,7 @@ package js.webusb;
 
 extern class USBConfiguration {
 	var configurationValue(default, null) : Int;
-	var configurationName(default, null) : String;
+	var configurationName(default, null) : Null<String>;
 	var interfaces(default, null) : Array<USBInterface>;
 	function new(device:USBDevice, configurationValue:Int):Void;
 }

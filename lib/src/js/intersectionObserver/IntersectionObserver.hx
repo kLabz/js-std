@@ -25,7 +25,7 @@
 package js.intersectionObserver;
 
 extern class IntersectionObserver {
-	var root(default, null) : haxe.extern.EitherType<js.dom.Element, js.dom.Document>;
+	var root(default, null) : Null<haxe.extern.EitherType<js.dom.Element, js.dom.Document>>;
 	var rootMargin(default, null) : String;
 	var scrollMargin(default, null) : String;
 	var thresholds(default, null) : Array<Float>;

@@ -27,7 +27,7 @@ package js.webrtcStats;
 typedef RTCIceCandidateStats = js.webrtc.RTCStats & {
 	var transportId : String;
 	@:optional
-	var address : String;
+	var address : Null<String>;
 	@:optional
 	var port : Int;
 	@:optional

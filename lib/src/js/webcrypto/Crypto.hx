@@ -26,6 +26,6 @@ package js.webcrypto;
 
 extern class Crypto {
 	var subtle(default, null) : SubtleCrypto;
-	function getRandomValues(array:ArrayBufferView):ArrayBufferView;
+	function getRandomValues(array:js.webidl.ArrayBufferView):js.webidl.ArrayBufferView;
 	function randomUUID():String;
 }

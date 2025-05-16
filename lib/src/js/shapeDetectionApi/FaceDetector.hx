@@ -26,5 +26,5 @@ package js.shapeDetectionApi;
 
 extern class FaceDetector {
 	function new(?faceDetectorOptions:FaceDetectorOptions):Void;
-	function detect(image:ImageBitmapSource):js.lib.Promise<Array<DetectedFace>>;
+	function detect(image:js.html.ImageBitmapSource):js.lib.Promise<Array<DetectedFace>>;
 }

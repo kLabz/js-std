@@ -25,8 +25,8 @@
 package js.webglCompressedTextureS3tcSrgb;
 
 extern class WEBGL_compressed_texture_s3tc_srgb {
-	static inline var COMPRESSED_SRGB_S3TC_DXT1_EXT : GLenum = 0x8C4C;
-	static inline var COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT : GLenum = 0x8C4D;
-	static inline var COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT : GLenum = 0x8C4E;
-	static inline var COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT : GLenum = 0x8C4F;
+	static inline var COMPRESSED_SRGB_S3TC_DXT1_EXT : js.webgl1.GLenum = 0x8C4C;
+	static inline var COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT : js.webgl1.GLenum = 0x8C4D;
+	static inline var COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT : js.webgl1.GLenum = 0x8C4E;
+	static inline var COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT : js.webgl1.GLenum = 0x8C4F;
 }

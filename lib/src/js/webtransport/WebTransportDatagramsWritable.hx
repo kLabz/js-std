@@ -25,6 +25,6 @@
 package js.webtransport;
 
 extern class WebTransportDatagramsWritable extends js.streams.WritableStream {
-	var sendGroup : WebTransportSendGroup;
+	var sendGroup : Null<WebTransportSendGroup>;
 	var sendOrder : Float;
 }

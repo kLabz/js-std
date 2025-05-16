@@ -27,5 +27,5 @@ package js.permissions;
 extern class PermissionStatus extends js.dom.EventTarget {
 	var state(default, null) : PermissionState;
 	var name(default, null) : String;
-	var onchange : EventHandler;
+	var onchange : js.html.EventHandler;
 }

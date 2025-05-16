@@ -25,11 +25,11 @@
 package js.xhr;
 
 extern class XMLHttpRequestEventTarget extends js.dom.EventTarget {
-	var onloadstart : EventHandler;
-	var onprogress : EventHandler;
-	var onabort : EventHandler;
-	var onerror : EventHandler;
-	var onload : EventHandler;
-	var ontimeout : EventHandler;
-	var onloadend : EventHandler;
+	var onloadstart : js.html.EventHandler;
+	var onprogress : js.html.EventHandler;
+	var onabort : js.html.EventHandler;
+	var onerror : js.html.EventHandler;
+	var onload : js.html.EventHandler;
+	var ontimeout : js.html.EventHandler;
+	var onloadend : js.html.EventHandler;
 }

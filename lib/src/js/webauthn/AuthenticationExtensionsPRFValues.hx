@@ -25,7 +25,7 @@
 package js.webauthn;
 
 typedef AuthenticationExtensionsPRFValues = {
-	var first : BufferSource;
+	var first : js.webidl.BufferSource;
 	@:optional
-	var second : BufferSource;
+	var second : js.webidl.BufferSource;
 };

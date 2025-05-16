@@ -26,13 +26,13 @@ package js.webrtc;
 
 extern class RTCError extends js.webidl.DOMException {
 	var errorDetail(default, null) : RTCErrorDetailType;
-	var sdpLineNumber(default, null) : Int;
-	var sctpCauseCode(default, null) : Int;
-	var receivedAlert(default, null) : Int;
-	var sentAlert(default, null) : Int;
+	var sdpLineNumber(default, null) : Null<Int>;
+	var sctpCauseCode(default, null) : Null<Int>;
+	var receivedAlert(default, null) : Null<Int>;
+	var sentAlert(default, null) : Null<Int>;
 	/**
 		From partial interface in webrtc-identity.idl
 	**/
-	var httpRequestStatusCode(default, null) : Int;
+	var httpRequestStatusCode(default, null) : Null<Int>;
 	function new(init:RTCErrorInit, ?message:String):Void;
 }

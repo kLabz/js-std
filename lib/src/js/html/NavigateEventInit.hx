@@ -36,13 +36,13 @@ typedef NavigateEventInit = js.dom.EventInit & {
 	var hashChange : Bool = false;
 	var signal : js.dom.AbortSignal;
 	@:optional
-	var formData : js.xhr.FormData = null;
+	var formData : Null<js.xhr.FormData> = null;
 	@:optional
-	var downloadRequest : String = null;
+	var downloadRequest : Null<String> = null;
 	@:optional
 	var info : Any;
 	@:optional
 	var hasUAVisualTransition : Bool = false;
 	@:optional
-	var sourceElement : js.dom.Element = null;
+	var sourceElement : Null<js.dom.Element> = null;
 };

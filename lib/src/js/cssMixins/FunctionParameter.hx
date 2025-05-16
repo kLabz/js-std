@@ -28,5 +28,5 @@ typedef FunctionParameter = {
 	var name : CSSOMString;
 	var type : CSSOMString;
 	@:optional
-	var defaultValue : CSSOMString;
+	var defaultValue : Null<CSSOMString>;
 };

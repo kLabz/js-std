@@ -25,7 +25,7 @@
 package js.html;
 
 extern class TextTrackCue extends js.dom.EventTarget {
-	var track(default, null) : TextTrack;
+	var track(default, null) : Null<TextTrack>;
 	var id : String;
 	var startTime : Float;
 	var endTime : Float;

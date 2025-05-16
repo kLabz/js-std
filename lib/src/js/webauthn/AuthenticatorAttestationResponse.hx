@@ -27,7 +27,7 @@ package js.webauthn;
 extern class AuthenticatorAttestationResponse extends AuthenticatorResponse {
 	var attestationObject(default, null) : ArrayBuffer;
 	function getAuthenticatorData():ArrayBuffer;
-	function getPublicKey():ArrayBuffer;
+	function getPublicKey():Null<ArrayBuffer>;
 	function getPublicKeyAlgorithm():COSEAlgorithmIdentifier;
 	function getTransports():Array<String>;
 }

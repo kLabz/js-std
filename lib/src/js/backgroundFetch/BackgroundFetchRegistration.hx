@@ -33,8 +33,8 @@ extern class BackgroundFetchRegistration extends js.dom.EventTarget {
 	var result(default, null) : BackgroundFetchResult;
 	var failureReason(default, null) : BackgroundFetchFailureReason;
 	var recordsAvailable(default, null) : Bool;
-	var onprogress : EventHandler;
+	var onprogress : js.html.EventHandler;
 	function abort():js.lib.Promise<Bool>;
-	function match(request:RequestInfo, ?options:js.serviceWorkers.CacheQueryOptions):js.lib.Promise<BackgroundFetchRecord>;
-	function matchAll(?request:RequestInfo, ?options:js.serviceWorkers.CacheQueryOptions):js.lib.Promise<Array<BackgroundFetchRecord>>;
+	function match(request:js.fetch.RequestInfo, ?options:js.serviceWorkers.CacheQueryOptions):js.lib.Promise<BackgroundFetchRecord>;
+	function matchAll(?request:js.fetch.RequestInfo, ?options:js.serviceWorkers.CacheQueryOptions):js.lib.Promise<Array<BackgroundFetchRecord>>;
 }

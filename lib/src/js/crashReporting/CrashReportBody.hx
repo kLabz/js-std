@@ -25,9 +25,9 @@
 package js.crashReporting;
 
 extern class CrashReportBody extends js.reporting.ReportBody {
-	var reason(default, null) : String;
-	var stack(default, null) : String;
-	var is_top_level(default, null) : String;
-	var page_visibility(default, null) : js.html.DocumentVisibilityState;
+	var reason(default, null) : Null<String>;
+	var stack(default, null) : Null<String>;
+	var is_top_level(default, null) : Null<String>;
+	var page_visibility(default, null) : Null<js.html.DocumentVisibilityState>;
 	function toJSON():{ };
 }

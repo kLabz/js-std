@@ -25,9 +25,9 @@
 package js.webBluetoothScanning;
 
 extern class BluetoothLEScanFilter {
-	var name(default, null) : String;
-	var namePrefix(default, null) : String;
-	var services(default, null) : Array<UUID>;
+	var name(default, null) : Null<String>;
+	var namePrefix(default, null) : Null<String>;
+	var services(default, null) : Array<js.webBluetooth.UUID>;
 	var manufacturerData(default, null) : BluetoothManufacturerDataFilter;
 	var serviceData(default, null) : BluetoothServiceDataFilter;
 	function new(?init:js.webBluetooth.BluetoothLEScanFilterInit):Void;

@@ -29,5 +29,5 @@ extern class SharedStorageWorkletGlobalScope extends js.html.WorkletGlobalScope 
 	var privateAggregation(default, null) : js.privateAggregationApi.PrivateAggregation;
 	var navigator(default, null) : SharedStorageWorkletNavigator;
 	function interestGroups():js.lib.Promise<Array<js.turtledove.StorageInterestGroup>>;
-	function register(name:String, operationCtor:Function):Void;
+	function register(name:String, operationCtor:js.webidl.Function):Void;
 }

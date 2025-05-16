@@ -29,6 +29,6 @@ extern class XRProjectionLayer extends XRCompositionLayer {
 	var textureHeight(default, null) : Int;
 	var textureArrayLength(default, null) : Int;
 	var ignoreDepthValues(default, null) : Bool;
-	var fixedFoveation : Float;
-	var deltaPose : js.webxr.XRRigidTransform;
+	var fixedFoveation : Null<Float>;
+	var deltaPose : Null<js.webxr.XRRigidTransform>;
 }

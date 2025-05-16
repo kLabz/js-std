@@ -27,7 +27,7 @@ package js.webxrPlaneDetection;
 extern class XRPlane {
 	var planeSpace(default, null) : js.webxr.XRSpace;
 	var polygon(default, null) : Array<js.geometry.DOMPointReadOnly>;
-	var orientation(default, null) : XRPlaneOrientation;
-	var lastChangedTime(default, null) : DOMHighResTimeStamp;
-	var semanticLabel(default, null) : String;
+	var orientation(default, null) : Null<XRPlaneOrientation>;
+	var lastChangedTime(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var semanticLabel(default, null) : Null<String>;
 }

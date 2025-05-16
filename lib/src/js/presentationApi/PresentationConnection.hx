@@ -28,15 +28,15 @@ extern class PresentationConnection extends js.dom.EventTarget {
 	var id(default, null) : String;
 	var url(default, null) : String;
 	var state(default, null) : PresentationConnectionState;
-	var onconnect : EventHandler;
-	var onclose : EventHandler;
-	var onterminate : EventHandler;
+	var onconnect : js.html.EventHandler;
+	var onclose : js.html.EventHandler;
+	var onterminate : js.html.EventHandler;
 	var binaryType : js.websockets.BinaryType;
-	var onmessage : EventHandler;
+	var onmessage : js.html.EventHandler;
 	function close():Void;
 	overload function send(message:String):Void;
 	overload function send(data:js.fileapi.Blob):Void;
 	overload function send(data:ArrayBuffer):Void;
-	overload function send(data:ArrayBufferView):Void;
+	overload function send(data:js.webidl.ArrayBufferView):Void;
 	function terminate():Void;
 }

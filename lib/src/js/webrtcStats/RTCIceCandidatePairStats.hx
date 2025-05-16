@@ -40,9 +40,9 @@ typedef RTCIceCandidatePairStats = js.webrtc.RTCStats & {
 	@:optional
 	var bytesReceived : Float;
 	@:optional
-	var lastPacketSentTimestamp : DOMHighResTimeStamp;
+	var lastPacketSentTimestamp : js.hrTime.DOMHighResTimeStamp;
 	@:optional
-	var lastPacketReceivedTimestamp : DOMHighResTimeStamp;
+	var lastPacketReceivedTimestamp : js.hrTime.DOMHighResTimeStamp;
 	@:optional
 	var totalRoundTripTime : Float;
 	@:optional

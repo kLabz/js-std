@@ -25,23 +25,23 @@
 package js.webcodecs;
 
 extern class VideoFrame {
-	var format(default, null) : VideoPixelFormat;
+	var format(default, null) : Null<VideoPixelFormat>;
 	var codedWidth(default, null) : Int;
 	var codedHeight(default, null) : Int;
-	var codedRect(default, null) : js.geometry.DOMRectReadOnly;
-	var visibleRect(default, null) : js.geometry.DOMRectReadOnly;
+	var codedRect(default, null) : Null<js.geometry.DOMRectReadOnly>;
+	var visibleRect(default, null) : Null<js.geometry.DOMRectReadOnly>;
 	var rotation(default, null) : Float;
 	var flip(default, null) : Bool;
 	var displayWidth(default, null) : Int;
 	var displayHeight(default, null) : Int;
-	var duration(default, null) : Float;
+	var duration(default, null) : Null<Float>;
 	var timestamp(default, null) : Float;
 	var colorSpace(default, null) : VideoColorSpace;
-	overload function new(data:AllowSharedBufferSource, init:VideoFrameBufferInit):Void;
-	overload function new(image:CanvasImageSource, ?init:VideoFrameInit):Void;
+	overload function new(data:js.webidl.AllowSharedBufferSource, init:VideoFrameBufferInit):Void;
+	overload function new(image:js.html.CanvasImageSource, ?init:VideoFrameInit):Void;
 	function allocationSize(?options:VideoFrameCopyToOptions):Int;
 	function clone():VideoFrame;
 	function close():Void;
-	function copyTo(destination:AllowSharedBufferSource, ?options:VideoFrameCopyToOptions):js.lib.Promise<Array<PlaneLayout>>;
+	function copyTo(destination:js.webidl.AllowSharedBufferSource, ?options:VideoFrameCopyToOptions):js.lib.Promise<Array<PlaneLayout>>;
 	function metadata():VideoFrameMetadata;
 }

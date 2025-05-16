@@ -25,10 +25,10 @@
 package js.svgAnimations;
 
 extern class SVGAnimationElement extends js.svg.SVGElement {
-	var targetElement(default, null) : js.svg.SVGElement;
-	var onbegin : EventHandler;
-	var onend : EventHandler;
-	var onrepeat : EventHandler;
+	var targetElement(default, null) : Null<js.svg.SVGElement>;
+	var onbegin : js.html.EventHandler;
+	var onend : js.html.EventHandler;
+	var onrepeat : js.html.EventHandler;
 	function beginElement():Void;
 	function beginElementAt(offset:Float):Void;
 	function endElement():Void;

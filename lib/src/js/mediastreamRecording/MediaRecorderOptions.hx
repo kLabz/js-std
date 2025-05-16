@@ -36,7 +36,7 @@ typedef MediaRecorderOptions = {
 	@:optional
 	var audioBitrateMode : BitrateMode = "variable";
 	@:optional
-	var videoKeyFrameIntervalDuration : DOMHighResTimeStamp;
+	var videoKeyFrameIntervalDuration : js.hrTime.DOMHighResTimeStamp;
 	@:optional
 	var videoKeyFrameIntervalCount : Int;
 };

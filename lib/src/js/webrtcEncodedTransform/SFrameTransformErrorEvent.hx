@@ -26,7 +26,7 @@ package js.webrtcEncodedTransform;
 
 extern class SFrameTransformErrorEvent extends js.dom.Event {
 	var errorType(default, null) : SFrameTransformErrorEventType;
-	var keyID(default, null) : CryptoKeyID;
+	var keyID(default, null) : Null<CryptoKeyID>;
 	var frame(default, null) : Any;
 	function new(type:String, eventInitDict:SFrameTransformErrorEventInit):Void;
 }

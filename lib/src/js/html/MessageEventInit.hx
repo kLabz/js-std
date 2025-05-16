@@ -32,7 +32,7 @@ typedef MessageEventInit = js.dom.EventInit & {
 	@:optional
 	var lastEventId : String = "";
 	@:optional
-	var source : MessageEventSource = null;
+	var source : Null<MessageEventSource> = null;
 	@:optional
 	var ports : Array<MessagePort> = [];
 };

@@ -25,5 +25,5 @@
 package js.webmidi;
 
 extern class MIDIInput extends MIDIPort {
-	var onmidimessage : EventHandler;
+	var onmidimessage : js.html.EventHandler;
 }

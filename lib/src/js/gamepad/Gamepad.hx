@@ -28,7 +28,7 @@ extern class Gamepad {
 	var id(default, null) : String;
 	var index(default, null) : Int;
 	var connected(default, null) : Bool;
-	var timestamp(default, null) : DOMHighResTimeStamp;
+	var timestamp(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var mapping(default, null) : GamepadMappingType;
 	var axes(default, null) : Array<Float>;
 	var buttons(default, null) : Array<GamepadButton>;
@@ -45,5 +45,5 @@ extern class Gamepad {
 	/**
 		From partial interface in gamepad-extensions.idl
 	**/
-	var pose(default, null) : js.gamepadExtensions.GamepadPose;
+	var pose(default, null) : Null<js.gamepadExtensions.GamepadPose>;
 }

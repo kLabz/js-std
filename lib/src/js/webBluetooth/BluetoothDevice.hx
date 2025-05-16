@@ -26,8 +26,8 @@ package js.webBluetooth;
 
 extern class BluetoothDevice extends js.dom.EventTarget {
 	var id(default, null) : String;
-	var name(default, null) : String;
-	var gatt(default, null) : BluetoothRemoteGATTServer;
+	var name(default, null) : Null<String>;
+	var gatt(default, null) : Null<BluetoothRemoteGATTServer>;
 	var watchingAdvertisements(default, null) : Bool;
 	function forget():js.lib.Promise<Void>;
 	function watchAdvertisements(?options:WatchAdvertisementsOptions):js.lib.Promise<Void>;

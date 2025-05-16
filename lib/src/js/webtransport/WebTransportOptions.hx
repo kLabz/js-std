@@ -34,9 +34,9 @@ typedef WebTransportOptions = {
 	@:optional
 	var congestionControl : WebTransportCongestionControl = "default";
 	@:optional
-	var anticipatedConcurrentIncomingUnidirectionalStreams : Int = null;
+	var anticipatedConcurrentIncomingUnidirectionalStreams : Null<Int> = null;
 	@:optional
-	var anticipatedConcurrentIncomingBidirectionalStreams : Int = null;
+	var anticipatedConcurrentIncomingBidirectionalStreams : Null<Int> = null;
 	@:optional
 	var protocols : Array<String> = [];
 };

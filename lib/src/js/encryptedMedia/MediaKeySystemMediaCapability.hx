@@ -28,7 +28,7 @@ typedef MediaKeySystemMediaCapability = {
 	@:optional
 	var contentType : String = "";
 	@:optional
-	var encryptionScheme : String = null;
+	var encryptionScheme : Null<String> = null;
 	@:optional
 	var robustness : String = "";
 };

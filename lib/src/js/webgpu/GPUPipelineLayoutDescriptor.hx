@@ -25,5 +25,5 @@
 package js.webgpu;
 
 typedef GPUPipelineLayoutDescriptor = GPUObjectDescriptorBase & {
-	var bindGroupLayouts : Array<GPUBindGroupLayout>;
+	var bindGroupLayouts : Array<Null<GPUBindGroupLayout>>;
 };

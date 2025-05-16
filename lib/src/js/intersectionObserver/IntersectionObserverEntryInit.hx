@@ -25,8 +25,8 @@
 package js.intersectionObserver;
 
 typedef IntersectionObserverEntryInit = {
-	var time : DOMHighResTimeStamp;
-	var rootBounds : js.geometry.DOMRectInit;
+	var time : js.hrTime.DOMHighResTimeStamp;
+	var rootBounds : Null<js.geometry.DOMRectInit>;
 	var boundingClientRect : js.geometry.DOMRectInit;
 	var intersectionRect : js.geometry.DOMRectInit;
 	var isIntersecting : Bool;

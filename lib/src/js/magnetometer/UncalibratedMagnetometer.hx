@@ -25,11 +25,11 @@
 package js.magnetometer;
 
 extern class UncalibratedMagnetometer extends js.genericSensor.Sensor {
-	var x(default, null) : Float;
-	var y(default, null) : Float;
-	var z(default, null) : Float;
-	var xBias(default, null) : Float;
-	var yBias(default, null) : Float;
-	var zBias(default, null) : Float;
+	var x(default, null) : Null<Float>;
+	var y(default, null) : Null<Float>;
+	var z(default, null) : Null<Float>;
+	var xBias(default, null) : Null<Float>;
+	var yBias(default, null) : Null<Float>;
+	var zBias(default, null) : Null<Float>;
 	function new(?sensorOptions:MagnetometerSensorOptions):Void;
 }

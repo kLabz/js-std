@@ -31,8 +31,8 @@ extern class HTMLFrameElement extends HTMLElement {
 	var frameBorder : String;
 	var longDesc : String;
 	var noResize : Bool;
-	var contentDocument(default, null) : js.dom.Document;
-	var contentWindow(default, null) : WindowProxy;
+	var contentDocument(default, null) : Null<js.dom.Document>;
+	var contentWindow(default, null) : Null<WindowProxy>;
 	var marginHeight : String;
 	var marginWidth : String;
 	function new():Void;

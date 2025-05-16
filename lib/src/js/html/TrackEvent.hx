@@ -25,6 +25,6 @@
 package js.html;
 
 extern class TrackEvent extends js.dom.Event {
-	var track(default, null) : haxe.extern.EitherType<VideoTrack, haxe.extern.EitherType<AudioTrack, TextTrack>>;
+	var track(default, null) : Null<haxe.extern.EitherType<VideoTrack, haxe.extern.EitherType<AudioTrack, TextTrack>>>;
 	function new(type:String, ?eventInitDict:TrackEventInit):Void;
 }

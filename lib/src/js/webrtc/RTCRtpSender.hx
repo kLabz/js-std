@@ -25,24 +25,24 @@
 package js.webrtc;
 
 extern class RTCRtpSender {
-	var track(default, null) : js.mediacaptureStreams.MediaStreamTrack;
-	var transport(default, null) : RTCDtlsTransport;
-	/**
-		From partial interface in webrtc.idl
-	**/
-	var dtmf(default, null) : RTCDTMFSender;
+	var track(default, null) : Null<js.mediacaptureStreams.MediaStreamTrack>;
+	var transport(default, null) : Null<RTCDtlsTransport>;
 	/**
 		From partial interface in webrtc-encoded-transform.idl
 	**/
-	var transform : RTCRtpTransform;
+	var transform : Null<js.webrtcEncodedTransform.RTCRtpTransform>;
+	/**
+		From partial interface in webrtc.idl
+	**/
+	var dtmf(default, null) : Null<RTCDTMFSender>;
 	/**
 		From partial interface in webrtc-encoded-transform.idl
 	**/
 	function generateKeyFrame(?rids:Array<String>):js.lib.Promise<Void>;
-	function getCapabilities(kind:String):RTCRtpCapabilities;
+	function getCapabilities(kind:String):Null<RTCRtpCapabilities>;
 	function getParameters():RTCRtpSendParameters;
 	function getStats():js.lib.Promise<RTCStatsReport>;
-	function replaceTrack(withTrack:js.mediacaptureStreams.MediaStreamTrack):js.lib.Promise<Void>;
+	function replaceTrack(withTrack:Null<js.mediacaptureStreams.MediaStreamTrack>):js.lib.Promise<Void>;
 	function setParameters(parameters:RTCRtpSendParameters, ?setParameterOptions:RTCSetParameterOptions):js.lib.Promise<Void>;
 	function setStreams(streams:js.mediacaptureStreams.MediaStream):Void;
 }

@@ -26,5 +26,5 @@ package js.requestidlecallback;
 
 extern class IdleDeadline {
 	var didTimeout(default, null) : Bool;
-	function timeRemaining():DOMHighResTimeStamp;
+	function timeRemaining():js.hrTime.DOMHighResTimeStamp;
 }

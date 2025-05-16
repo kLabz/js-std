@@ -52,8 +52,8 @@ extern class SVGSVGElement extends SVGGraphicsElement {
 	**/
 	function getCurrentTime():Float;
 	function getElementById(elementId:String):js.dom.Element;
-	function getEnclosureList(rect:js.geometry.DOMRectReadOnly, referenceElement:SVGElement):js.dom.NodeList;
-	function getIntersectionList(rect:js.geometry.DOMRectReadOnly, referenceElement:SVGElement):js.dom.NodeList;
+	function getEnclosureList(rect:js.geometry.DOMRectReadOnly, referenceElement:Null<SVGElement>):js.dom.NodeList;
+	function getIntersectionList(rect:js.geometry.DOMRectReadOnly, referenceElement:Null<SVGElement>):js.dom.NodeList;
 	/**
 		From partial interface in svg-animations.idl
 	**/

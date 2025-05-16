@@ -27,7 +27,7 @@ package js.cssomView;
 extern class MediaQueryList extends js.dom.EventTarget {
 	var media(default, null) : CSSOMString;
 	var matches(default, null) : Bool;
-	var onchange : EventHandler;
-	function addListener(callback:EventListener):Void;
-	function removeListener(callback:EventListener):Void;
+	var onchange : js.html.EventHandler;
+	function addListener(callback:Null<EventListener>):Void;
+	function removeListener(callback:Null<EventListener>):Void;
 }

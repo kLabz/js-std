@@ -26,12 +26,12 @@ package js.paymentRequest;
 
 extern class PaymentRequest extends js.dom.EventTarget {
 	var id(default, null) : String;
-	var shippingAddress(default, null) : js.contactPicker.ContactAddress;
-	var shippingOption(default, null) : String;
-	var shippingType(default, null) : PaymentShippingType;
-	var onshippingaddresschange : EventHandler;
-	var onshippingoptionchange : EventHandler;
-	var onpaymentmethodchange : EventHandler;
+	var shippingAddress(default, null) : Null<js.contactPicker.ContactAddress>;
+	var shippingOption(default, null) : Null<String>;
+	var shippingType(default, null) : Null<PaymentShippingType>;
+	var onshippingaddresschange : js.html.EventHandler;
+	var onshippingoptionchange : js.html.EventHandler;
+	var onpaymentmethodchange : js.html.EventHandler;
 	function new(methodData:Array<PaymentMethodData>, details:PaymentDetailsInit, ?options:PaymentOptions):Void;
 	function abort():js.lib.Promise<Void>;
 	function canMakePayment():js.lib.Promise<Bool>;

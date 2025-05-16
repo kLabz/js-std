@@ -25,6 +25,6 @@
 package js.webrtcEncodedTransform;
 
 extern class KeyFrameRequestEvent extends js.dom.Event {
-	var rid(default, null) : String;
+	var rid(default, null) : Null<String>;
 	function new(type:String, ?rid:String):Void;
 }

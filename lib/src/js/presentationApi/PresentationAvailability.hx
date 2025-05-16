@@ -26,5 +26,5 @@ package js.presentationApi;
 
 extern class PresentationAvailability extends js.dom.EventTarget {
 	var value(default, null) : Bool;
-	var onchange : EventHandler;
+	var onchange : js.html.EventHandler;
 }

@@ -28,5 +28,5 @@ typedef MediaEncryptedEventInit = js.dom.EventInit & {
 	@:optional
 	var initDataType : String = "";
 	@:optional
-	var initData : ArrayBuffer = null;
+	var initData : Null<ArrayBuffer> = null;
 };

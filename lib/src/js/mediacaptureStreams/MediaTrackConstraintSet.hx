@@ -64,7 +64,7 @@ typedef MediaTrackConstraintSet = {
 	@:optional
 	var focusMode : ConstrainDOMString;
 	@:optional
-	var pointsOfInterest : ConstrainPoint2D;
+	var pointsOfInterest : js.imageCapture.ConstrainPoint2D;
 	@:optional
 	var exposureCompensation : ConstrainDouble;
 	@:optional

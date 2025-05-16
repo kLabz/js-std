@@ -28,5 +28,5 @@ typedef GetAnimationsOptions = {
 	@:optional
 	var subtree : Bool = false;
 	@:optional
-	var pseudoElement : CSSOMString = null;
+	var pseudoElement : Null<CSSOMString> = null;
 };

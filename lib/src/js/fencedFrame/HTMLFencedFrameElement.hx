@@ -25,7 +25,7 @@
 package js.fencedFrame;
 
 extern class HTMLFencedFrameElement extends js.html.HTMLElement {
-	var config : FencedFrameConfig;
+	var config : Null<FencedFrameConfig>;
 	var width : String;
 	var height : String;
 	var sandbox(default, null) : js.dom.DOMTokenList;

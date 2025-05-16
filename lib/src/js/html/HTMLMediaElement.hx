@@ -25,11 +25,11 @@
 package js.html;
 
 extern class HTMLMediaElement extends HTMLElement {
-	var error(default, null) : MediaError;
+	var error(default, null) : Null<MediaError>;
 	var src : String;
-	var srcObject : MediaProvider;
+	var srcObject : Null<MediaProvider>;
 	var currentSrc(default, null) : String;
-	var crossOrigin : String;
+	var crossOrigin : Null<String>;
 	static inline var NETWORK_EMPTY : Int = 0;
 	static inline var NETWORK_IDLE : Int = 1;
 	static inline var NETWORK_LOADING : Int = 2;
@@ -69,7 +69,7 @@ extern class HTMLMediaElement extends HTMLElement {
 	/**
 		From partial interface in encrypted-media.idl
 	**/
-	var mediaKeys(default, null) : js.encryptedMedia.MediaKeys;
+	var mediaKeys(default, null) : Null<js.encryptedMedia.MediaKeys>;
 	/**
 		From partial interface in encrypted-media.idl
 	**/
@@ -100,7 +100,7 @@ extern class HTMLMediaElement extends HTMLElement {
 	/**
 		From partial interface in encrypted-media.idl
 	**/
-	function setMediaKeys(mediaKeys:js.encryptedMedia.MediaKeys):js.lib.Promise<Void>;
+	function setMediaKeys(mediaKeys:Null<js.encryptedMedia.MediaKeys>):js.lib.Promise<Void>;
 	/**
 		From partial interface in audio-output.idl
 	**/

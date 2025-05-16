@@ -25,19 +25,19 @@
 package js.extDisjointTimerQuery;
 
 extern class EXT_disjoint_timer_query {
-	static inline var QUERY_COUNTER_BITS_EXT : GLenum = 0x8864;
-	static inline var CURRENT_QUERY_EXT : GLenum = 0x8865;
-	static inline var QUERY_RESULT_EXT : GLenum = 0x8866;
-	static inline var QUERY_RESULT_AVAILABLE_EXT : GLenum = 0x8867;
-	static inline var TIME_ELAPSED_EXT : GLenum = 0x88BF;
-	static inline var TIMESTAMP_EXT : GLenum = 0x8E28;
-	static inline var GPU_DISJOINT_EXT : GLenum = 0x8FBB;
-	function beginQueryEXT(target:GLenum, query:WebGLTimerQueryEXT):Void;
+	static inline var QUERY_COUNTER_BITS_EXT : js.webgl1.GLenum = 0x8864;
+	static inline var CURRENT_QUERY_EXT : js.webgl1.GLenum = 0x8865;
+	static inline var QUERY_RESULT_EXT : js.webgl1.GLenum = 0x8866;
+	static inline var QUERY_RESULT_AVAILABLE_EXT : js.webgl1.GLenum = 0x8867;
+	static inline var TIME_ELAPSED_EXT : js.webgl1.GLenum = 0x88BF;
+	static inline var TIMESTAMP_EXT : js.webgl1.GLenum = 0x8E28;
+	static inline var GPU_DISJOINT_EXT : js.webgl1.GLenum = 0x8FBB;
+	function beginQueryEXT(target:js.webgl1.GLenum, query:WebGLTimerQueryEXT):Void;
 	function createQueryEXT():WebGLTimerQueryEXT;
-	function deleteQueryEXT(query:WebGLTimerQueryEXT):Void;
-	function endQueryEXT(target:GLenum):Void;
-	function getQueryEXT(target:GLenum, pname:GLenum):Any;
-	function getQueryObjectEXT(query:WebGLTimerQueryEXT, pname:GLenum):Any;
-	function isQueryEXT(query:WebGLTimerQueryEXT):Bool;
-	function queryCounterEXT(query:WebGLTimerQueryEXT, target:GLenum):Void;
+	function deleteQueryEXT(query:Null<WebGLTimerQueryEXT>):Void;
+	function endQueryEXT(target:js.webgl1.GLenum):Void;
+	function getQueryEXT(target:js.webgl1.GLenum, pname:js.webgl1.GLenum):Any;
+	function getQueryObjectEXT(query:WebGLTimerQueryEXT, pname:js.webgl1.GLenum):Any;
+	function isQueryEXT(query:Null<WebGLTimerQueryEXT>):Bool;
+	function queryCounterEXT(query:WebGLTimerQueryEXT, target:js.webgl1.GLenum):Void;
 }

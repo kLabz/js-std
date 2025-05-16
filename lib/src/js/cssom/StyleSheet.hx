@@ -26,10 +26,10 @@ package js.cssom;
 
 extern class StyleSheet {
 	var type(default, null) : CSSOMString;
-	var href(default, null) : String;
-	var ownerNode(default, null) : haxe.extern.EitherType<js.dom.Element, js.dom.ProcessingInstruction>;
-	var parentStyleSheet(default, null) : CSSStyleSheet;
-	var title(default, null) : String;
+	var href(default, null) : Null<String>;
+	var ownerNode(default, null) : Null<haxe.extern.EitherType<js.dom.Element, js.dom.ProcessingInstruction>>;
+	var parentStyleSheet(default, null) : Null<CSSStyleSheet>;
+	var title(default, null) : Null<String>;
 	var media(default, null) : MediaList;
 	var disabled : Bool;
 }

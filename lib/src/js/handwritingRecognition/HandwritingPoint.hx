@@ -28,5 +28,5 @@ typedef HandwritingPoint = {
 	var x : Float;
 	var y : Float;
 	@:optional
-	var t : DOMHighResTimeStamp;
+	var t : js.hrTime.DOMHighResTimeStamp;
 };

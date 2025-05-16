@@ -25,12 +25,12 @@
 package js.extTextureNorm16;
 
 extern class EXT_texture_norm16 {
-	static inline var R16_EXT : GLenum = 0x822A;
-	static inline var RG16_EXT : GLenum = 0x822C;
-	static inline var RGB16_EXT : GLenum = 0x8054;
-	static inline var RGBA16_EXT : GLenum = 0x805B;
-	static inline var R16_SNORM_EXT : GLenum = 0x8F98;
-	static inline var RG16_SNORM_EXT : GLenum = 0x8F99;
-	static inline var RGB16_SNORM_EXT : GLenum = 0x8F9A;
-	static inline var RGBA16_SNORM_EXT : GLenum = 0x8F9B;
+	static inline var R16_EXT : js.webgl1.GLenum = 0x822A;
+	static inline var RG16_EXT : js.webgl1.GLenum = 0x822C;
+	static inline var RGB16_EXT : js.webgl1.GLenum = 0x8054;
+	static inline var RGBA16_EXT : js.webgl1.GLenum = 0x805B;
+	static inline var R16_SNORM_EXT : js.webgl1.GLenum = 0x8F98;
+	static inline var RG16_SNORM_EXT : js.webgl1.GLenum = 0x8F99;
+	static inline var RGB16_SNORM_EXT : js.webgl1.GLenum = 0x8F9A;
+	static inline var RGBA16_SNORM_EXT : js.webgl1.GLenum = 0x8F9B;
 }

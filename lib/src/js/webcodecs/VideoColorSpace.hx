@@ -25,10 +25,10 @@
 package js.webcodecs;
 
 extern class VideoColorSpace {
-	var primaries(default, null) : VideoColorPrimaries;
-	var transfer(default, null) : VideoTransferCharacteristics;
-	var matrix(default, null) : VideoMatrixCoefficients;
-	var fullRange(default, null) : Bool;
+	var primaries(default, null) : Null<VideoColorPrimaries>;
+	var transfer(default, null) : Null<VideoTransferCharacteristics>;
+	var matrix(default, null) : Null<VideoMatrixCoefficients>;
+	var fullRange(default, null) : Null<Bool>;
 	function new(?init:VideoColorSpaceInit):Void;
 	function toJSON():VideoColorSpaceInit;
 }

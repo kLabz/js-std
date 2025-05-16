@@ -25,11 +25,11 @@
 package js.oesDrawBuffersIndexed;
 
 extern class OES_draw_buffers_indexed {
-	function blendEquationSeparateiOES(buf:GLuint, modeRGB:GLenum, modeAlpha:GLenum):Void;
-	function blendEquationiOES(buf:GLuint, mode:GLenum):Void;
-	function blendFuncSeparateiOES(buf:GLuint, srcRGB:GLenum, dstRGB:GLenum, srcAlpha:GLenum, dstAlpha:GLenum):Void;
-	function blendFunciOES(buf:GLuint, src:GLenum, dst:GLenum):Void;
-	function colorMaskiOES(buf:GLuint, r:GLboolean, g:GLboolean, b:GLboolean, a:GLboolean):Void;
-	function disableiOES(target:GLenum, index:GLuint):Void;
-	function enableiOES(target:GLenum, index:GLuint):Void;
+	function blendEquationSeparateiOES(buf:js.webgl1.GLuint, modeRGB:js.webgl1.GLenum, modeAlpha:js.webgl1.GLenum):Void;
+	function blendEquationiOES(buf:js.webgl1.GLuint, mode:js.webgl1.GLenum):Void;
+	function blendFuncSeparateiOES(buf:js.webgl1.GLuint, srcRGB:js.webgl1.GLenum, dstRGB:js.webgl1.GLenum, srcAlpha:js.webgl1.GLenum, dstAlpha:js.webgl1.GLenum):Void;
+	function blendFunciOES(buf:js.webgl1.GLuint, src:js.webgl1.GLenum, dst:js.webgl1.GLenum):Void;
+	function colorMaskiOES(buf:js.webgl1.GLuint, r:js.webgl1.GLboolean, g:js.webgl1.GLboolean, b:js.webgl1.GLboolean, a:js.webgl1.GLboolean):Void;
+	function disableiOES(target:js.webgl1.GLenum, index:js.webgl1.GLuint):Void;
+	function enableiOES(target:js.webgl1.GLenum, index:js.webgl1.GLuint):Void;
 }

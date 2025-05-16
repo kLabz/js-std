@@ -28,9 +28,9 @@ typedef CookieInit = {
 	var name : String;
 	var value : String;
 	@:optional
-	var expires : DOMHighResTimeStamp = null;
+	var expires : Null<js.hrTime.DOMHighResTimeStamp> = null;
 	@:optional
-	var domain : String = null;
+	var domain : Null<String> = null;
 	@:optional
 	var path : String = "/";
 	@:optional

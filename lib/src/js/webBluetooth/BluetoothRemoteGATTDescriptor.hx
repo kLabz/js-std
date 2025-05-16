@@ -27,7 +27,7 @@ package js.webBluetooth;
 extern class BluetoothRemoteGATTDescriptor {
 	var characteristic(default, null) : BluetoothRemoteGATTCharacteristic;
 	var uuid(default, null) : UUID;
-	var value(default, null) : DataView;
+	var value(default, null) : Null<DataView>;
 	function readValue():js.lib.Promise<DataView>;
-	function writeValue(value:BufferSource):js.lib.Promise<Void>;
+	function writeValue(value:js.webidl.BufferSource):js.lib.Promise<Void>;
 }

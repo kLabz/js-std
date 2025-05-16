@@ -59,5 +59,5 @@ extern class HTMLVideoElement extends HTMLMediaElement {
 	/**
 		From partial interface in video-rvfc.idl
 	**/
-	function requestVideoFrameCallback(callback:VideoFrameRequestCallback):Int;
+	function requestVideoFrameCallback(callback:js.videoRvfc.VideoFrameRequestCallback):Int;
 }

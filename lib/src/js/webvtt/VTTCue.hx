@@ -25,7 +25,7 @@
 package js.webvtt;
 
 extern class VTTCue extends js.html.TextTrackCue {
-	var region : VTTRegion;
+	var region : Null<VTTRegion>;
 	var vertical : DirectionSetting;
 	var snapToLines : Bool;
 	var line : LineAndPositionSetting;

@@ -28,5 +28,5 @@ typedef AudioTimestamp = {
 	@:optional
 	var contextTime : Float;
 	@:optional
-	var performanceTime : DOMHighResTimeStamp;
+	var performanceTime : js.hrTime.DOMHighResTimeStamp;
 };

@@ -36,9 +36,9 @@ typedef RTCRtpEncodingParameters = RTCRtpCodingParameters & {
 	@:optional
 	var scaleResolutionDownBy : Float;
 	@:optional
+	var scalabilityMode : String;
+	@:optional
 	var priority : js.webrtcPriority.RTCPriorityType = "low";
 	@:optional
 	var networkPriority : js.webrtcPriority.RTCPriorityType;
-	@:optional
-	var scalabilityMode : String;
 };

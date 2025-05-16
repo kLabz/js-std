@@ -31,13 +31,13 @@ extern class TextTrack extends js.dom.EventTarget {
 	var id(default, null) : String;
 	var inBandMetadataTrackDispatchType(default, null) : String;
 	var mode : TextTrackMode;
-	var cues(default, null) : TextTrackCueList;
-	var activeCues(default, null) : TextTrackCueList;
+	var cues(default, null) : Null<TextTrackCueList>;
+	var activeCues(default, null) : Null<TextTrackCueList>;
 	var oncuechange : EventHandler;
 	/**
 		From partial interface in media-source.idl
 	**/
-	var sourceBuffer(default, null) : js.mediaSource.SourceBuffer;
+	var sourceBuffer(default, null) : Null<js.mediaSource.SourceBuffer>;
 	function addCue(cue:TextTrackCue):Void;
 	function removeCue(cue:TextTrackCue):Void;
 }

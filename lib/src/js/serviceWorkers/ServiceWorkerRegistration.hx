@@ -25,13 +25,13 @@
 package js.serviceWorkers;
 
 extern class ServiceWorkerRegistration extends js.dom.EventTarget {
-	var installing(default, null) : ServiceWorker;
-	var waiting(default, null) : ServiceWorker;
-	var active(default, null) : ServiceWorker;
+	var installing(default, null) : Null<ServiceWorker>;
+	var waiting(default, null) : Null<ServiceWorker>;
+	var active(default, null) : Null<ServiceWorker>;
 	var navigationPreload(default, null) : NavigationPreloadManager;
 	var scope(default, null) : String;
 	var updateViaCache(default, null) : ServiceWorkerUpdateViaCache;
-	var onupdatefound : EventHandler;
+	var onupdatefound : js.html.EventHandler;
 	/**
 		From partial interface in background-fetch.idl
 	**/
@@ -41,21 +41,21 @@ extern class ServiceWorkerRegistration extends js.dom.EventTarget {
 	**/
 	var sync(default, null) : js.backgroundSync.SyncManager;
 	/**
-		From partial interface in content-index.idl
-	**/
-	var index(default, null) : js.contentIndex.ContentIndex;
-	/**
 		From partial interface in cookie-store.idl
 	**/
 	var cookies(default, null) : js.cookieStore.CookieStoreManager;
 	/**
-		From partial interface in periodic-background-sync.idl
+		From partial interface in content-index.idl
 	**/
-	var periodicSync(default, null) : js.periodicBackgroundSync.PeriodicSyncManager;
+	var index(default, null) : js.contentIndex.ContentIndex;
 	/**
 		From partial interface in payment-handler.idl
 	**/
 	var paymentManager(default, null) : js.paymentHandler.PaymentManager;
+	/**
+		From partial interface in periodic-background-sync.idl
+	**/
+	var periodicSync(default, null) : js.periodicBackgroundSync.PeriodicSyncManager;
 	/**
 		From partial interface in push-api.idl
 	**/

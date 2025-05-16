@@ -29,5 +29,5 @@ extern class TextTrackList extends js.dom.EventTarget implements ArrayAccess<Tex
 	var onchange : EventHandler;
 	var onaddtrack : EventHandler;
 	var onremovetrack : EventHandler;
-	function getTrackById(id:String):TextTrack;
+	function getTrackById(id:String):Null<TextTrack>;
 }

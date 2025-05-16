@@ -30,5 +30,5 @@ typedef SubscriptionObserver = {
 	@:optional
 	var error : ObservableSubscriptionCallback;
 	@:optional
-	var complete : VoidFunction;
+	var complete : js.webidl.VoidFunction;
 };

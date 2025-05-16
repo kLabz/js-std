@@ -26,7 +26,7 @@ package js.webauthn;
 
 typedef PublicKeyCredentialDescriptor = {
 	var type : String;
-	var id : BufferSource;
+	var id : js.webidl.BufferSource;
 	@:optional
 	var transports : Array<String>;
 };

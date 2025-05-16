@@ -27,9 +27,9 @@ package js.webxr;
 extern class XRRenderState {
 	var depthNear(default, null) : Float;
 	var depthFar(default, null) : Float;
-	var passthroughFullyObscured(default, null) : Bool;
-	var inlineVerticalFieldOfView(default, null) : Float;
-	var baseLayer(default, null) : XRWebGLLayer;
+	var passthroughFullyObscured(default, null) : Null<Bool>;
+	var inlineVerticalFieldOfView(default, null) : Null<Float>;
+	var baseLayer(default, null) : Null<XRWebGLLayer>;
 	/**
 		From partial interface in webxrlayers.idl
 	**/

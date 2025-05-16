@@ -25,7 +25,7 @@
 package js.webrtc;
 
 typedef RTCRtpContributingSource = {
-	var timestamp : DOMHighResTimeStamp;
+	var timestamp : js.hrTime.DOMHighResTimeStamp;
 	var source : Int;
 	@:optional
 	var audioLevel : Float;

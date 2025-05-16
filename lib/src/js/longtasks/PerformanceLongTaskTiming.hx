@@ -25,8 +25,8 @@
 package js.longtasks;
 
 extern class PerformanceLongTaskTiming extends js.performanceTimeline.PerformanceEntry {
-	var startTime(default, null) : DOMHighResTimeStamp;
-	var duration(default, null) : DOMHighResTimeStamp;
+	var startTime(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var duration(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var name(default, null) : String;
 	var entryType(default, null) : String;
 	var attribution(default, null) : Array<TaskAttributionTiming>;

@@ -28,6 +28,6 @@ extern class RTCSctpTransport extends js.dom.EventTarget {
 	var transport(default, null) : RTCDtlsTransport;
 	var state(default, null) : RTCSctpTransportState;
 	var maxMessageSize(default, null) : Float;
-	var maxChannels(default, null) : Int;
-	var onstatechange : EventHandler;
+	var maxChannels(default, null) : Null<Int>;
+	var onstatechange : js.html.EventHandler;
 }

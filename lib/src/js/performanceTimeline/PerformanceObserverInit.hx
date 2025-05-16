@@ -32,5 +32,5 @@ typedef PerformanceObserverInit = {
 	@:optional
 	var buffered : Bool;
 	@:optional
-	var durationThreshold : DOMHighResTimeStamp;
+	var durationThreshold : js.hrTime.DOMHighResTimeStamp;
 };

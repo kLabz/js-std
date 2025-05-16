@@ -27,6 +27,6 @@ package js.webmidi;
 extern class MIDIAccess extends js.dom.EventTarget {
 	var inputs(default, null) : MIDIInputMap;
 	var outputs(default, null) : MIDIOutputMap;
-	var onstatechange : EventHandler;
+	var onstatechange : js.html.EventHandler;
 	var sysexEnabled(default, null) : Bool;
 }

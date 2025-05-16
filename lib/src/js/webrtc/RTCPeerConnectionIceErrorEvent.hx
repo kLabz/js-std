@@ -25,8 +25,8 @@
 package js.webrtc;
 
 extern class RTCPeerConnectionIceErrorEvent extends js.dom.Event {
-	var address(default, null) : String;
-	var port(default, null) : Int;
+	var address(default, null) : Null<String>;
+	var port(default, null) : Null<Int>;
 	var url(default, null) : String;
 	var errorCode(default, null) : Int;
 	var errorText(default, null) : String;

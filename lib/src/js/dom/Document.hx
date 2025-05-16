@@ -36,12 +36,12 @@ extern class Document extends Node {
 	var charset(default, null) : String;
 	var inputEncoding(default, null) : String;
 	var contentType(default, null) : String;
-	var doctype(default, null) : DocumentType;
-	var documentElement(default, null) : Element;
+	var doctype(default, null) : Null<DocumentType>;
+	var documentElement(default, null) : Null<Element>;
 	/**
 		From partial interface in SVG.idl
 	**/
-	var rootElement(default, null) : js.svg.SVGSVGElement;
+	var rootElement(default, null) : Null<js.svg.SVGSVGElement>;
 	/**
 		From partial interface in css-regions.idl
 	**/
@@ -49,7 +49,7 @@ extern class Document extends Node {
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	var scrollingElement(default, null) : Element;
+	var scrollingElement(default, null) : Null<Element>;
 	/**
 		From partial interface in fullscreen.idl
 	**/
@@ -61,15 +61,15 @@ extern class Document extends Node {
 	/**
 		From partial interface in fullscreen.idl
 	**/
-	var onfullscreenchange : EventHandler;
+	var onfullscreenchange : js.html.EventHandler;
 	/**
 		From partial interface in fullscreen.idl
 	**/
-	var onfullscreenerror : EventHandler;
+	var onfullscreenerror : js.html.EventHandler;
 	/**
 		From partial interface in html.idl
 	**/
-	var location(default, null) : js.html.Location;
+	var location(default, null) : Null<js.html.Location>;
 	/**
 		From partial interface in html.idl
 	**/
@@ -101,11 +101,11 @@ extern class Document extends Node {
 	/**
 		From partial interface in html.idl
 	**/
-	var body : js.html.HTMLElement;
+	var body : Null<js.html.HTMLElement>;
 	/**
 		From partial interface in html.idl
 	**/
-	var head(default, null) : js.html.HTMLHeadElement;
+	var head(default, null) : Null<js.html.HTMLHeadElement>;
 	/**
 		From partial interface in html.idl
 	**/
@@ -133,11 +133,11 @@ extern class Document extends Node {
 	/**
 		From partial interface in html.idl
 	**/
-	var currentScript(default, null) : HTMLOrSVGScriptElement;
+	var currentScript(default, null) : Null<js.html.HTMLOrSVGScriptElement>;
 	/**
 		From partial interface in html.idl
 	**/
-	var defaultView(default, null) : WindowProxy;
+	var defaultView(default, null) : Null<WindowProxy>;
 	/**
 		From partial interface in html.idl
 	**/
@@ -153,11 +153,11 @@ extern class Document extends Node {
 	/**
 		From partial interface in html.idl
 	**/
-	var onreadystatechange : EventHandler;
+	var onreadystatechange : js.html.EventHandler;
 	/**
 		From partial interface in html.idl
 	**/
-	var onvisibilitychange : EventHandler;
+	var onvisibilitychange : js.html.EventHandler;
 	/**
 		From partial interface in html.idl
 	**/
@@ -193,23 +193,31 @@ extern class Document extends Node {
 	/**
 		From partial interface in page-lifecycle.idl
 	**/
-	var onfreeze : EventHandler;
+	var onfreeze : js.html.EventHandler;
 	/**
 		From partial interface in page-lifecycle.idl
 	**/
-	var onresume : EventHandler;
+	var onresume : js.html.EventHandler;
 	/**
 		From partial interface in page-lifecycle.idl
 	**/
 	var wasDiscarded(default, null) : Bool;
 	/**
+		From partial interface in picture-in-picture.idl
+	**/
+	var pictureInPictureEnabled(default, null) : Bool;
+	/**
 		From partial interface in permissions-policy.idl
 	**/
 	var permissionsPolicy(default, null) : js.permissionsPolicy.PermissionsPolicy;
 	/**
-		From partial interface in picture-in-picture.idl
+		From partial interface in pointerlock.idl
 	**/
-	var pictureInPictureEnabled(default, null) : Bool;
+	var onpointerlockchange : js.html.EventHandler;
+	/**
+		From partial interface in pointerlock.idl
+	**/
+	var onpointerlockerror : js.html.EventHandler;
 	/**
 		From partial interface in prerendering-revamped.idl
 	**/
@@ -217,15 +225,7 @@ extern class Document extends Node {
 	/**
 		From partial interface in prerendering-revamped.idl
 	**/
-	var onprerenderingchange : EventHandler;
-	/**
-		From partial interface in pointerlock.idl
-	**/
-	var onpointerlockchange : EventHandler;
-	/**
-		From partial interface in pointerlock.idl
-	**/
-	var onpointerlockerror : EventHandler;
+	var onprerenderingchange : js.html.EventHandler;
 	/**
 		From partial interface in scroll-to-text-fragment.idl
 	**/
@@ -243,7 +243,7 @@ extern class Document extends Node {
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	function caretPositionFromPoint(x:Float, y:Float, ?options:js.cssomView.CaretPositionFromPointOptions):js.cssomView.CaretPosition;
+	function caretPositionFromPoint(x:Float, y:Float, ?options:js.cssomView.CaretPositionFromPointOptions):Null<js.cssomView.CaretPosition>;
 	/**
 		From partial interface in html.idl
 	**/
@@ -253,22 +253,22 @@ extern class Document extends Node {
 	**/
 	function close():Void;
 	function createAttribute(localName:String):Attr;
-	function createAttributeNS(namespace:String, qualifiedName:String):Attr;
+	function createAttributeNS(namespace:Null<String>, qualifiedName:String):Attr;
 	function createCDATASection(data:String):CDATASection;
 	function createComment(data:String):Comment;
 	function createDocumentFragment():DocumentFragment;
 	function createElement(localName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
-	function createElementNS(namespace:String, qualifiedName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
+	function createElementNS(namespace:Null<String>, qualifiedName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
 	function createEvent(interface:String):Event;
-	function createNodeIterator(root:Node, ?whatToShow:Int, ?filter:NodeFilter):NodeIterator;
+	function createNodeIterator(root:Node, ?whatToShow:Int, ?filter:Null<NodeFilter>):NodeIterator;
 	function createProcessingInstruction(target:String, data:String):ProcessingInstruction;
 	function createRange():Range;
 	function createTextNode(data:String):Text;
-	function createTreeWalker(root:Node, ?whatToShow:Int, ?filter:NodeFilter):TreeWalker;
+	function createTreeWalker(root:Node, ?whatToShow:Int, ?filter:Null<NodeFilter>):TreeWalker;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	function elementFromPoint(x:Float, y:Float):Element;
+	function elementFromPoint(x:Float, y:Float):Null<Element>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -295,11 +295,11 @@ extern class Document extends Node {
 	**/
 	function getElementsByName(elementName:String):NodeList;
 	function getElementsByTagName(qualifiedName:String):HTMLCollection;
-	function getElementsByTagNameNS(namespace:String, localName:String):HTMLCollection;
+	function getElementsByTagNameNS(namespace:Null<String>, localName:String):HTMLCollection;
 	/**
 		From partial interface in selection-api.idl
 	**/
-	function getSelection():js.selectionApi.Selection;
+	function getSelection():Null<js.selectionApi.Selection>;
 	/**
 		From partial interface in html.idl
 	**/
@@ -336,7 +336,7 @@ extern class Document extends Node {
 	/**
 		From partial interface in html.idl
 	**/
-	overload function open(url:String, name:String, features:String):WindowProxy;
+	overload function open(url:String, name:String, features:String):Null<WindowProxy>;
 	/**
 		From partial interface in html.idl
 	**/
@@ -376,7 +376,7 @@ extern class Document extends Node {
 	/**
 		From partial interface in css-view-transitions-2.idl
 	**/
-	function startViewTransition(?callbackOptions:haxe.extern.EitherType<ViewTransitionUpdateCallback, js.cssViewTransitions2.StartViewTransitionOptions>):js.cssViewTransitions.ViewTransition;
+	function startViewTransition(?callbackOptions:haxe.extern.EitherType<js.cssViewTransitions.ViewTransitionUpdateCallback, js.cssViewTransitions2.StartViewTransitionOptions>):js.cssViewTransitions.ViewTransition;
 	/**
 		From partial interface in html.idl
 	**/

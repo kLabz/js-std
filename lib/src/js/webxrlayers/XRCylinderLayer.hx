@@ -30,5 +30,5 @@ extern class XRCylinderLayer extends XRCompositionLayer {
 	var radius : Float;
 	var centralAngle : Float;
 	var aspectRatio : Float;
-	var onredraw : EventHandler;
+	var onredraw : js.html.EventHandler;
 }

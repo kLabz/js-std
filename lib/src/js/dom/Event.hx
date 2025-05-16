@@ -26,9 +26,9 @@ package js.dom;
 
 extern class Event {
 	var type(default, null) : String;
-	var target(default, null) : EventTarget;
-	var srcElement(default, null) : EventTarget;
-	var currentTarget(default, null) : EventTarget;
+	var target(default, null) : Null<EventTarget>;
+	var srcElement(default, null) : Null<EventTarget>;
+	var currentTarget(default, null) : Null<EventTarget>;
 	static inline var NONE : Int = 0;
 	static inline var CAPTURING_PHASE : Int = 1;
 	static inline var AT_TARGET : Int = 2;
@@ -41,7 +41,7 @@ extern class Event {
 	var defaultPrevented(default, null) : Bool;
 	var composed(default, null) : Bool;
 	var isTrusted(default, null) : Bool;
-	var timeStamp(default, null) : DOMHighResTimeStamp;
+	var timeStamp(default, null) : js.hrTime.DOMHighResTimeStamp;
 	function new(type:String, ?eventInitDict:EventInit):Void;
 	function composedPath():Array<EventTarget>;
 	function initEvent(type:String, ?bubbles:Bool, ?cancelable:Bool):Void;

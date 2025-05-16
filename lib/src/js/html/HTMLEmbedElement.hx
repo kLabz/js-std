@@ -38,5 +38,5 @@ extern class HTMLEmbedElement extends HTMLElement {
 	**/
 	var name : String;
 	function new():Void;
-	function getSVGDocument():js.dom.Document;
+	function getSVGDocument():Null<js.dom.Document>;
 }

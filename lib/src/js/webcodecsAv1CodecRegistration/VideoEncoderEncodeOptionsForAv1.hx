@@ -26,5 +26,5 @@ package js.webcodecsAv1CodecRegistration;
 
 typedef VideoEncoderEncodeOptionsForAv1 = {
 	@:optional
-	var quantizer : Int;
+	var quantizer : Null<Int>;
 };

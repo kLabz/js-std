@@ -27,5 +27,5 @@ package js.html;
 extern class DOMStringList {
 	var length(default, null) : Int;
 	function contains(string:String):Bool;
-	function item(index:Int):String;
+	function item(index:Int):Null<String>;
 }

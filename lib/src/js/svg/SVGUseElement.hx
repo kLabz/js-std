@@ -29,6 +29,6 @@ extern class SVGUseElement extends SVGGraphicsElement {
 	var y(default, null) : SVGAnimatedLength;
 	var width(default, null) : SVGAnimatedLength;
 	var height(default, null) : SVGAnimatedLength;
-	var instanceRoot(default, null) : SVGElement;
-	var animatedInstanceRoot(default, null) : SVGElement;
+	var instanceRoot(default, null) : Null<SVGElement>;
+	var animatedInstanceRoot(default, null) : Null<SVGElement>;
 }

@@ -27,10 +27,10 @@ package js.notifications;
 extern class Notification extends js.dom.EventTarget {
 	static var permission(default, null) : NotificationPermission;
 	static var maxActions(default, null) : Int;
-	var onclick : EventHandler;
-	var onshow : EventHandler;
-	var onerror : EventHandler;
-	var onclose : EventHandler;
+	var onclick : js.html.EventHandler;
+	var onshow : js.html.EventHandler;
+	var onerror : js.html.EventHandler;
+	var onclose : js.html.EventHandler;
 	var title(default, null) : String;
 	var dir(default, null) : NotificationDirection;
 	var lang(default, null) : String;
@@ -40,9 +40,9 @@ extern class Notification extends js.dom.EventTarget {
 	var icon(default, null) : String;
 	var badge(default, null) : String;
 	var vibrate(default, null) : Array<Int>;
-	var timestamp(default, null) : EpochTimeStamp;
+	var timestamp(default, null) : js.hrTime.EpochTimeStamp;
 	var renotify(default, null) : Bool;
-	var silent(default, null) : Bool;
+	var silent(default, null) : Null<Bool>;
 	var requireInteraction(default, null) : Bool;
 	var data(default, null) : Any;
 	var actions(default, null) : Array<NotificationAction>;

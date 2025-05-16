@@ -25,9 +25,9 @@
 package js.html;
 
 extern class HTMLTableElement extends HTMLElement {
-	var caption : HTMLTableCaptionElement;
-	var tHead : HTMLTableSectionElement;
-	var tFoot : HTMLTableSectionElement;
+	var caption : Null<HTMLTableCaptionElement>;
+	var tHead : Null<HTMLTableSectionElement>;
+	var tFoot : Null<HTMLTableSectionElement>;
 	var tBodies(default, null) : js.dom.HTMLCollection;
 	var rows(default, null) : js.dom.HTMLCollection;
 	/**

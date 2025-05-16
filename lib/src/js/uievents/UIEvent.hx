@@ -25,12 +25,12 @@
 package js.uievents;
 
 extern class UIEvent extends js.dom.Event {
-	var view(default, null) : js.html.Window;
+	var view(default, null) : Null<js.html.Window>;
 	var detail(default, null) : Int;
 	/**
 		From partial interface in input-device-capabilities.idl
 	**/
-	var sourceCapabilities(default, null) : js.inputDeviceCapabilities.InputDeviceCapabilities;
+	var sourceCapabilities(default, null) : Null<js.inputDeviceCapabilities.InputDeviceCapabilities>;
 	/**
 		From partial interface in uievents.idl
 	**/
@@ -39,5 +39,5 @@ extern class UIEvent extends js.dom.Event {
 	/**
 		From partial interface in uievents.idl
 	**/
-	function initUIEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:js.html.Window, ?detailArg:Int):Void;
+	function initUIEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:Null<js.html.Window>, ?detailArg:Int):Void;
 }

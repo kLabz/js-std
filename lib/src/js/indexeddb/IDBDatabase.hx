@@ -28,10 +28,10 @@ extern class IDBDatabase extends js.dom.EventTarget {
 	var name(default, null) : String;
 	var version(default, null) : Float;
 	var objectStoreNames(default, null) : js.html.DOMStringList;
-	var onabort : EventHandler;
-	var onclose : EventHandler;
-	var onerror : EventHandler;
-	var onversionchange : EventHandler;
+	var onabort : js.html.EventHandler;
+	var onclose : js.html.EventHandler;
+	var onerror : js.html.EventHandler;
+	var onversionchange : js.html.EventHandler;
 	function close():Void;
 	function createObjectStore(name:String, ?options:IDBObjectStoreParameters):IDBObjectStore;
 	function deleteObjectStore(name:String):Void;

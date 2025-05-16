@@ -26,7 +26,7 @@ package js.webAnimations2;
 
 typedef AnimationPlaybackEventInit = js.dom.EventInit & {
 	@:optional
-	var currentTime : CSSNumberish = null;
+	var currentTime : Null<js.cssTypedOm.CSSNumberish> = null;
 	@:optional
-	var timelineTime : CSSNumberish = null;
+	var timelineTime : Null<js.cssTypedOm.CSSNumberish> = null;
 };

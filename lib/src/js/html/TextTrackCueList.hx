@@ -26,5 +26,5 @@ package js.html;
 
 extern class TextTrackCueList implements ArrayAccess<TextTrackCue> {
 	var length(default, null) : Int;
-	function getCueById(id:String):TextTrackCue;
+	function getCueById(id:String):Null<TextTrackCue>;
 }

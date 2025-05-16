@@ -42,25 +42,25 @@ typedef AuctionAdConfig = {
 	@:optional
 	var sellerSignals : js.lib.Promise<Any>;
 	@:optional
-	var directFromSellerSignalsHeaderAdSlot : js.lib.Promise<String>;
+	var directFromSellerSignalsHeaderAdSlot : js.lib.Promise<Null<String>>;
 	@:optional
-	var deprecatedRenderURLReplacements : js.lib.Promise<haxe.DynamicAccess<String>>;
+	var deprecatedRenderURLReplacements : js.lib.Promise<Null<haxe.DynamicAccess<String>>>;
 	@:optional
 	var sellerTimeout : Float;
 	@:optional
 	var sellerExperimentGroupId : Int;
 	@:optional
-	var perBuyerSignals : js.lib.Promise<haxe.DynamicAccess<Any>>;
+	var perBuyerSignals : js.lib.Promise<Null<haxe.DynamicAccess<Any>>>;
 	@:optional
-	var perBuyerTimeouts : js.lib.Promise<haxe.DynamicAccess<Float>>;
+	var perBuyerTimeouts : js.lib.Promise<Null<haxe.DynamicAccess<Float>>>;
 	@:optional
-	var perBuyerCumulativeTimeouts : js.lib.Promise<haxe.DynamicAccess<Float>>;
+	var perBuyerCumulativeTimeouts : js.lib.Promise<Null<haxe.DynamicAccess<Float>>>;
 	@:optional
 	var reportingTimeout : Float;
 	@:optional
 	var sellerCurrency : String;
 	@:optional
-	var perBuyerCurrencies : js.lib.Promise<haxe.DynamicAccess<String>>;
+	var perBuyerCurrencies : js.lib.Promise<Null<haxe.DynamicAccess<String>>>;
 	@:optional
 	var perBuyerMultiBidLimits : haxe.DynamicAccess<Int>;
 	@:optional
@@ -94,7 +94,7 @@ typedef AuctionAdConfig = {
 	@:optional
 	var componentAuctions : Array<AuctionAdConfig> = [];
 	@:optional
-	var signal : js.dom.AbortSignal;
+	var signal : Null<js.dom.AbortSignal>;
 	@:optional
 	var resolveToConfig : js.lib.Promise<Bool>;
 	@:optional

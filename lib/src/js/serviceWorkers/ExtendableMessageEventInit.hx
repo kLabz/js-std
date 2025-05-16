@@ -32,7 +32,7 @@ typedef ExtendableMessageEventInit = ExtendableEventInit & {
 	@:optional
 	var lastEventId : String = "";
 	@:optional
-	var source : haxe.extern.EitherType<Client, haxe.extern.EitherType<ServiceWorker, js.html.MessagePort>> = null;
+	var source : Null<haxe.extern.EitherType<Client, haxe.extern.EitherType<ServiceWorker, js.html.MessagePort>>> = null;
 	@:optional
 	var ports : Array<js.html.MessagePort> = [];
 };

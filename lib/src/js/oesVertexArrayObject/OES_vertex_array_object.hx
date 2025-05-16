@@ -25,9 +25,9 @@
 package js.oesVertexArrayObject;
 
 extern class OES_vertex_array_object {
-	static inline var VERTEX_ARRAY_BINDING_OES : GLenum = 0x85B5;
-	function bindVertexArrayOES(arrayObject:WebGLVertexArrayObjectOES):Void;
+	static inline var VERTEX_ARRAY_BINDING_OES : js.webgl1.GLenum = 0x85B5;
+	function bindVertexArrayOES(arrayObject:Null<WebGLVertexArrayObjectOES>):Void;
 	function createVertexArrayOES():WebGLVertexArrayObjectOES;
-	function deleteVertexArrayOES(arrayObject:WebGLVertexArrayObjectOES):Void;
-	function isVertexArrayOES(arrayObject:WebGLVertexArrayObjectOES):GLboolean;
+	function deleteVertexArrayOES(arrayObject:Null<WebGLVertexArrayObjectOES>):Void;
+	function isVertexArrayOES(arrayObject:Null<WebGLVertexArrayObjectOES>):js.webgl1.GLboolean;
 }

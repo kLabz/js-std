@@ -26,6 +26,6 @@ package js.schedulingApis;
 
 extern class TaskSignal extends js.dom.AbortSignal {
 	var priority(default, null) : TaskPriority;
-	var onprioritychange : EventHandler;
+	var onprioritychange : js.html.EventHandler;
 	function any(signals:Array<js.dom.AbortSignal>, ?init:TaskSignalAnyInit):TaskSignal;
 }

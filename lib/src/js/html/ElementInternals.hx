@@ -25,8 +25,8 @@
 package js.html;
 
 extern class ElementInternals {
-	var shadowRoot(default, null) : js.dom.ShadowRoot;
-	var form(default, null) : HTMLFormElement;
+	var shadowRoot(default, null) : Null<js.dom.ShadowRoot>;
+	var form(default, null) : Null<HTMLFormElement>;
 	var willValidate(default, null) : Bool;
 	var validity(default, null) : ValidityState;
 	var validationMessage(default, null) : String;
@@ -34,6 +34,6 @@ extern class ElementInternals {
 	var states(default, null) : CustomStateSet;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
-	function setFormValue(value:haxe.extern.EitherType<js.fileapi.File, haxe.extern.EitherType<String, js.xhr.FormData>>, ?state:haxe.extern.EitherType<js.fileapi.File, haxe.extern.EitherType<String, js.xhr.FormData>>):Void;
+	function setFormValue(value:Null<haxe.extern.EitherType<js.fileapi.File, haxe.extern.EitherType<String, js.xhr.FormData>>>, ?state:Null<haxe.extern.EitherType<js.fileapi.File, haxe.extern.EitherType<String, js.xhr.FormData>>>):Void;
 	function setValidity(?flags:ValidityStateFlags, ?message:String, ?anchor:HTMLElement):Void;
 }

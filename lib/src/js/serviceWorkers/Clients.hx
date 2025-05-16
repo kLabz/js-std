@@ -28,5 +28,5 @@ extern class Clients {
 	function claim():js.lib.Promise<Void>;
 	function get(id:String):js.lib.Promise<haxe.extern.EitherType<Client, Void>>;
 	function matchAll(?options:ClientQueryOptions):js.lib.Promise<Array<Client>>;
-	function openWindow(url:String):js.lib.Promise<WindowClient>;
+	function openWindow(url:String):js.lib.Promise<Null<WindowClient>>;
 }

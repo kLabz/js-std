@@ -29,11 +29,11 @@ extern class EditContext extends js.dom.EventTarget {
 	var selectionStart(default, null) : Int;
 	var selectionEnd(default, null) : Int;
 	var characterBoundsRangeStart(default, null) : Int;
-	var ontextupdate : EventHandler;
-	var ontextformatupdate : EventHandler;
-	var oncharacterboundsupdate : EventHandler;
-	var oncompositionstart : EventHandler;
-	var oncompositionend : EventHandler;
+	var ontextupdate : js.html.EventHandler;
+	var ontextformatupdate : js.html.EventHandler;
+	var oncharacterboundsupdate : js.html.EventHandler;
+	var oncompositionstart : js.html.EventHandler;
+	var oncompositionend : js.html.EventHandler;
 	function new(?options:EditContextInit):Void;
 	function attachedElements():Array<js.html.HTMLElement>;
 	function characterBounds():Array<js.geometry.DOMRect>;

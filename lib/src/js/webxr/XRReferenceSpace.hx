@@ -25,6 +25,6 @@
 package js.webxr;
 
 extern class XRReferenceSpace extends XRSpace {
-	var onreset : EventHandler;
+	var onreset : js.html.EventHandler;
 	function getOffsetReferenceSpace(originOffset:XRRigidTransform):XRReferenceSpace;
 }

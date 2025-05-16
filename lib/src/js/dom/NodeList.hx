@@ -26,7 +26,7 @@ package js.dom;
 
 extern class NodeList {
 	var length(default, null) : Int;
-	function item(index:Int):Node;
+	function item(index:Int):Null<Node>;
 	function values():Iterator<Node>;
 	function values():Iterator<Node>;
 }

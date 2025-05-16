@@ -25,13 +25,13 @@
 package js.geolocationSensor;
 
 extern class GeolocationSensor extends js.genericSensor.Sensor {
-	var latitude(default, null) : Float;
-	var longitude(default, null) : Float;
-	var altitude(default, null) : Float;
-	var accuracy(default, null) : Float;
-	var altitudeAccuracy(default, null) : Float;
-	var heading(default, null) : Float;
-	var speed(default, null) : Float;
+	var latitude(default, null) : Null<Float>;
+	var longitude(default, null) : Null<Float>;
+	var altitude(default, null) : Null<Float>;
+	var accuracy(default, null) : Null<Float>;
+	var altitudeAccuracy(default, null) : Null<Float>;
+	var heading(default, null) : Null<Float>;
+	var speed(default, null) : Null<Float>;
 	function new(?options:GeolocationSensorOptions):Void;
 	function read(?readOptions:ReadOptions):js.lib.Promise<GeolocationSensorReading>;
 }

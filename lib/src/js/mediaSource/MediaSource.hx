@@ -30,9 +30,9 @@ extern class MediaSource extends js.dom.EventTarget {
 	var activeSourceBuffers(default, null) : SourceBufferList;
 	var readyState(default, null) : ReadyState;
 	var duration : Float;
-	var onsourceopen : EventHandler;
-	var onsourceended : EventHandler;
-	var onsourceclose : EventHandler;
+	var onsourceopen : js.html.EventHandler;
+	var onsourceended : js.html.EventHandler;
+	var onsourceclose : js.html.EventHandler;
 	static var canConstructInDedicatedWorker(default, null) : Bool;
 	function new():Void;
 	function addSourceBuffer(type:String):SourceBuffer;

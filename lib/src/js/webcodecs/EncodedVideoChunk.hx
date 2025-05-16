@@ -27,8 +27,8 @@ package js.webcodecs;
 extern class EncodedVideoChunk {
 	var type(default, null) : EncodedVideoChunkType;
 	var timestamp(default, null) : Float;
-	var duration(default, null) : Float;
+	var duration(default, null) : Null<Float>;
 	var byteLength(default, null) : Int;
 	function new(init:EncodedVideoChunkInit):Void;
-	function copyTo(destination:AllowSharedBufferSource):Void;
+	function copyTo(destination:js.webidl.AllowSharedBufferSource):Void;
 }

@@ -29,9 +29,9 @@ extern class Summarizer {
 	var type(default, null) : SummarizerType;
 	var format(default, null) : SummarizerFormat;
 	var length(default, null) : SummarizerLength;
-	var expectedInputLanguages(default, null) : Array<String>;
-	var expectedContextLanguages(default, null) : Array<String>;
-	var outputLanguage(default, null) : String;
+	var expectedInputLanguages(default, null) : Null<Array<String>>;
+	var expectedContextLanguages(default, null) : Null<Array<String>>;
+	var outputLanguage(default, null) : Null<String>;
 	var inputQuota(default, null) : Float;
 	function availability(?options:SummarizerCreateCoreOptions):js.lib.Promise<Availability>;
 	function create(?options:SummarizerCreateOptions):js.lib.Promise<Summarizer>;

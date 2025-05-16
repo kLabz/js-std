@@ -26,5 +26,5 @@ package js.cssom;
 
 extern class StyleSheetList {
 	var length(default, null) : Int;
-	function item(index:Int):CSSStyleSheet;
+	function item(index:Int):Null<CSSStyleSheet>;
 }

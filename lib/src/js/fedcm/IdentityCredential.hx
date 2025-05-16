@@ -25,7 +25,7 @@
 package js.fedcm;
 
 extern class IdentityCredential extends js.credentialManagement.Credential {
-	var token(default, null) : String;
+	var token(default, null) : Null<String>;
 	var isAutoSelected(default, null) : Bool;
 	var configURL(default, null) : String;
 	function disconnect(options:IdentityCredentialDisconnectOptions):js.lib.Promise<Void>;

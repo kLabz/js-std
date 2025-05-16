@@ -37,7 +37,7 @@ extern class MouseEvent extends UIEvent {
 	var metaKey(default, null) : Bool;
 	var button(default, null) : Int;
 	var buttons(default, null) : Int;
-	var relatedTarget(default, null) : js.dom.EventTarget;
+	var relatedTarget(default, null) : Null<js.dom.EventTarget>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -75,5 +75,5 @@ extern class MouseEvent extends UIEvent {
 	/**
 		From partial interface in uievents.idl
 	**/
-	function initMouseEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:js.html.Window, ?detailArg:Int, ?screenXArg:Int, ?screenYArg:Int, ?clientXArg:Int, ?clientYArg:Int, ?ctrlKeyArg:Bool, ?altKeyArg:Bool, ?shiftKeyArg:Bool, ?metaKeyArg:Bool, ?buttonArg:Int, ?relatedTargetArg:js.dom.EventTarget):Void;
+	function initMouseEvent(typeArg:String, ?bubblesArg:Bool, ?cancelableArg:Bool, ?viewArg:Null<js.html.Window>, ?detailArg:Int, ?screenXArg:Int, ?screenYArg:Int, ?clientXArg:Int, ?clientYArg:Int, ?ctrlKeyArg:Bool, ?altKeyArg:Bool, ?shiftKeyArg:Bool, ?metaKeyArg:Bool, ?buttonArg:Int, ?relatedTargetArg:Null<js.dom.EventTarget>):Void;
 }

@@ -28,5 +28,5 @@ extern class ImageTrackList implements ArrayAccess<ImageTrack> {
 	var ready(default, null) : js.lib.Promise<Void>;
 	var length(default, null) : Int;
 	var selectedIndex(default, null) : Int;
-	var selectedTrack(default, null) : ImageTrack;
+	var selectedTrack(default, null) : Null<ImageTrack>;
 }

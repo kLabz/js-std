@@ -28,5 +28,5 @@ typedef IDBVersionChangeEventInit = js.dom.EventInit & {
 	@:optional
 	var oldVersion : Float = 0;
 	@:optional
-	var newVersion : Float = null;
+	var newVersion : Null<Float> = null;
 };

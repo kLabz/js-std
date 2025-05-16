@@ -27,6 +27,6 @@ package js.reporting;
 extern class Report {
 	var type(default, null) : String;
 	var url(default, null) : String;
-	var body(default, null) : ReportBody;
+	var body(default, null) : Null<ReportBody>;
 	function toJSON():{ };
 }

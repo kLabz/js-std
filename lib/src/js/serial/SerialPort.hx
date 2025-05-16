@@ -25,8 +25,8 @@
 package js.serial;
 
 extern class SerialPort extends js.dom.EventTarget {
-	var onconnect : EventHandler;
-	var ondisconnect : EventHandler;
+	var onconnect : js.html.EventHandler;
+	var ondisconnect : js.html.EventHandler;
 	var connected(default, null) : Bool;
 	var readable(default, null) : js.streams.ReadableStream;
 	var writable(default, null) : js.streams.WritableStream;

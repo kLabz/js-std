@@ -28,5 +28,5 @@ typedef WebTransportHash = {
 	@:optional
 	var algorithm : String;
 	@:optional
-	var value : BufferSource;
+	var value : js.webidl.BufferSource;
 };

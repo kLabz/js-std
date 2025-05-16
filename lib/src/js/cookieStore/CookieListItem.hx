@@ -30,11 +30,11 @@ typedef CookieListItem = {
 	@:optional
 	var value : String;
 	@:optional
-	var domain : String;
+	var domain : Null<String>;
 	@:optional
 	var path : String;
 	@:optional
-	var expires : DOMHighResTimeStamp;
+	var expires : Null<js.hrTime.DOMHighResTimeStamp>;
 	@:optional
 	var secure : Bool;
 	@:optional

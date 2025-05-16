@@ -28,15 +28,15 @@ extern class CaptureController extends js.dom.EventTarget {
 	/**
 		From partial interface in captured-mouse-events.idl
 	**/
-	var oncapturedmousechange : EventHandler;
+	var oncapturedmousechange : js.html.EventHandler;
 	/**
 		From partial interface in mediacapture-surface-control.idl
 	**/
-	var zoomLevel(default, null) : Int;
+	var zoomLevel(default, null) : Null<Int>;
 	/**
 		From partial interface in mediacapture-surface-control.idl
 	**/
-	var onzoomlevelchange : EventHandler;
+	var onzoomlevelchange : js.html.EventHandler;
 	/**
 		From partial interface in mediacapture-surface-control.idl
 	**/
@@ -49,7 +49,7 @@ extern class CaptureController extends js.dom.EventTarget {
 	/**
 		From partial interface in mediacapture-surface-control.idl
 	**/
-	function forwardWheel(element:js.html.HTMLElement):js.lib.Promise<Void>;
+	function forwardWheel(element:Null<js.html.HTMLElement>):js.lib.Promise<Void>;
 	/**
 		From partial interface in mediacapture-surface-control.idl
 	**/

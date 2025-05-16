@@ -25,14 +25,14 @@
 package js.webglCompressedTextureEtc;
 
 extern class WEBGL_compressed_texture_etc {
-	static inline var COMPRESSED_R11_EAC : GLenum = 0x9270;
-	static inline var COMPRESSED_SIGNED_R11_EAC : GLenum = 0x9271;
-	static inline var COMPRESSED_RG11_EAC : GLenum = 0x9272;
-	static inline var COMPRESSED_SIGNED_RG11_EAC : GLenum = 0x9273;
-	static inline var COMPRESSED_RGB8_ETC2 : GLenum = 0x9274;
-	static inline var COMPRESSED_SRGB8_ETC2 : GLenum = 0x9275;
-	static inline var COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 : GLenum = 0x9276;
-	static inline var COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2 : GLenum = 0x9277;
-	static inline var COMPRESSED_RGBA8_ETC2_EAC : GLenum = 0x9278;
-	static inline var COMPRESSED_SRGB8_ALPHA8_ETC2_EAC : GLenum = 0x9279;
+	static inline var COMPRESSED_R11_EAC : js.webgl1.GLenum = 0x9270;
+	static inline var COMPRESSED_SIGNED_R11_EAC : js.webgl1.GLenum = 0x9271;
+	static inline var COMPRESSED_RG11_EAC : js.webgl1.GLenum = 0x9272;
+	static inline var COMPRESSED_SIGNED_RG11_EAC : js.webgl1.GLenum = 0x9273;
+	static inline var COMPRESSED_RGB8_ETC2 : js.webgl1.GLenum = 0x9274;
+	static inline var COMPRESSED_SRGB8_ETC2 : js.webgl1.GLenum = 0x9275;
+	static inline var COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 : js.webgl1.GLenum = 0x9276;
+	static inline var COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2 : js.webgl1.GLenum = 0x9277;
+	static inline var COMPRESSED_RGBA8_ETC2_EAC : js.webgl1.GLenum = 0x9278;
+	static inline var COMPRESSED_SRGB8_ALPHA8_ETC2_EAC : js.webgl1.GLenum = 0x9279;
 }

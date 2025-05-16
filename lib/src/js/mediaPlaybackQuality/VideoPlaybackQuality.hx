@@ -25,7 +25,7 @@
 package js.mediaPlaybackQuality;
 
 extern class VideoPlaybackQuality {
-	var creationTime(default, null) : DOMHighResTimeStamp;
+	var creationTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var droppedVideoFrames(default, null) : Int;
 	var totalVideoFrames(default, null) : Int;
 	var corruptedVideoFrames(default, null) : Int;

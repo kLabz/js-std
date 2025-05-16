@@ -26,7 +26,7 @@ package js.webAnimations;
 
 typedef BaseComputedKeyframe = {
 	@:optional
-	var offset : Float = null;
+	var offset : Null<Float> = null;
 	@:optional
 	var computedOffset : Float;
 	@:optional

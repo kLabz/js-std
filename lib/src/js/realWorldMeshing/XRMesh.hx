@@ -28,6 +28,6 @@ extern class XRMesh {
 	var meshSpace(default, null) : js.webxr.XRSpace;
 	var vertices(default, null) : Array<Float32Array>;
 	var indices(default, null) : Uint32Array;
-	var lastChangedTime(default, null) : DOMHighResTimeStamp;
-	var semanticLabel(default, null) : String;
+	var lastChangedTime(default, null) : js.hrTime.DOMHighResTimeStamp;
+	var semanticLabel(default, null) : Null<String>;
 }

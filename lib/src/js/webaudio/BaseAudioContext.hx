@@ -32,7 +32,7 @@ extern class BaseAudioContext extends js.dom.EventTarget {
 	var state(default, null) : AudioContextState;
 	var renderQuantumSize(default, null) : Int;
 	var audioWorklet(default, null) : AudioWorklet;
-	var onstatechange : EventHandler;
+	var onstatechange : js.html.EventHandler;
 	function createAnalyser():AnalyserNode;
 	function createBiquadFilter():BiquadFilterNode;
 	function createBuffer(numberOfChannels:Int, length:Int, sampleRate:Float):AudioBuffer;
@@ -51,5 +51,5 @@ extern class BaseAudioContext extends js.dom.EventTarget {
 	function createScriptProcessor(?bufferSize:Int, ?numberOfInputChannels:Int, ?numberOfOutputChannels:Int):ScriptProcessorNode;
 	function createStereoPanner():StereoPannerNode;
 	function createWaveShaper():WaveShaperNode;
-	function decodeAudioData(audioData:ArrayBuffer, ?successCallback:DecodeSuccessCallback, ?errorCallback:DecodeErrorCallback):js.lib.Promise<AudioBuffer>;
+	function decodeAudioData(audioData:ArrayBuffer, ?successCallback:Null<DecodeSuccessCallback>, ?errorCallback:Null<DecodeErrorCallback>):js.lib.Promise<AudioBuffer>;
 }

@@ -25,8 +25,8 @@
 package js.webhid;
 
 extern class HID extends js.dom.EventTarget {
-	var onconnect : EventHandler;
-	var ondisconnect : EventHandler;
+	var onconnect : js.html.EventHandler;
+	var ondisconnect : js.html.EventHandler;
 	function getDevices():js.lib.Promise<Array<HIDDevice>>;
 	function requestDevice(options:HIDDeviceRequestOptions):js.lib.Promise<Array<HIDDevice>>;
 }

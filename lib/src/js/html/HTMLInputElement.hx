@@ -34,8 +34,8 @@ extern class HTMLInputElement extends HTMLElement {
 	var colorSpace : String;
 	var dirName : String;
 	var disabled : Bool;
-	var form(default, null) : HTMLFormElement;
-	var files : js.fileapi.FileList;
+	var form(default, null) : Null<HTMLFormElement>;
+	var files : Null<js.fileapi.FileList>;
 	var formAction : String;
 	var formEnctype : String;
 	var formMethod : String;
@@ -43,7 +43,7 @@ extern class HTMLInputElement extends HTMLElement {
 	var formTarget : String;
 	var height : Int;
 	var indeterminate : Bool;
-	var list(default, null) : HTMLDataListElement;
+	var list(default, null) : Null<HTMLDataListElement>;
 	var max : String;
 	var maxLength : Int;
 	var min : String;
@@ -60,16 +60,16 @@ extern class HTMLInputElement extends HTMLElement {
 	var type : String;
 	var defaultValue : String;
 	var value : String;
-	var valueAsDate : { };
+	var valueAsDate : Null<{ }>;
 	var valueAsNumber : Float;
 	var width : Int;
 	var willValidate(default, null) : Bool;
 	var validity(default, null) : ValidityState;
 	var validationMessage(default, null) : String;
-	var labels(default, null) : js.dom.NodeList;
-	var selectionStart : Int;
-	var selectionEnd : Int;
-	var selectionDirection : String;
+	var labels(default, null) : Null<js.dom.NodeList>;
+	var selectionStart : Null<Int>;
+	var selectionEnd : Null<Int>;
+	var selectionDirection : Null<String>;
 	/**
 		From partial interface in entries-api.idl
 	**/

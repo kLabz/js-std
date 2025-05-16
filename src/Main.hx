@@ -181,7 +181,28 @@ class Main {
 
 				switch (t.type) {
 					case IDLCallbackType:
-						trace(' > TODO: callback ${pack.concat([t.name]).join(".")}');
+						packMap.set(t.name, pack);
+						tasks.push(() -> {
+							var ct = TFunction(
+								t.arguments.map(a ->
+									a.optional ? TOptional(TNamed(a.name, convertType(pack, a.idlType))) : TNamed(a.name, convertType(pack, a.idlType))
+								),
+								convertType(pack, t.idlType)
+							);
+
+							var td:TypeDefinition = {
+								pack: pack,
+								name: t.name,
+								doc: null, // TODO retrieve docs
+								pos: pos,
+								isExtern: null,
+								kind: TDAlias(ct),
+								fields: []
+							};
+
+							Sys.println(' > Exported callback typedef ${pack.concat([t.name]).join(".")}');
+							save(t.name, td);
+						});
 
 					case IDLCallbackInterfaceType:
 						trace(' > TODO: callback interface ${pack.concat([t.name]).join(".")}');
@@ -433,6 +454,23 @@ class Main {
 						trace(' > TODO: namespace ${pack.concat([t.name]).join(".")}');
 
 					case IDLTypedefType:
+						packMap.set(t.name, pack);
+
+						tasks.push(() -> {
+							var ct = convertType(pack, t.idlType);
+							var td:TypeDefinition = {
+								pack: pack,
+								name: t.name,
+								doc: null, // TODO retrieve docs
+								pos: pos,
+								isExtern: null,
+								kind: TDAlias(ct),
+								fields: []
+							};
+
+							Sys.println(' > Exported typedef ${pack.concat([t.name]).join(".")}');
+							save(t.name, td);
+						});
 
 					case type: throw 'Unexpected node type $type.';
 				}

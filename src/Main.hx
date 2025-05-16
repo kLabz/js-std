@@ -37,7 +37,7 @@ class Main {
 
 		var tasks:Array<() -> Void> = [];
 		var partialDictionaries:Map<String, Array<DictionaryType>> = [];
-		var partialInterfaces:Map<String, Array<InterfaceType>> = [];
+		var partialInterfaces:Map<String, Array<{t:InterfaceType, file:FileHandler}>> = [];
 		var packMap:Map<String, Array<String>> = [];
 
 		function resolvePackage(currentPack:Array<String>, t:String):Array<String> {
@@ -250,25 +250,28 @@ class Main {
 
 					case IDLInterfaceType if (t.partial):
 						// see https://webidl.spec.whatwg.org/#dfn-partial-interface
-						partialInterfaces.set(t.name, partialInterfaces.get(t.name).or([]).concat([t]));
+						partialInterfaces.set(t.name, partialInterfaces.get(t.name).or([]).concat([{t: t, file: file}]));
 
 					case IDLInterfaceType:
 						packMap.set(t.name, pack);
 
 						tasks.push(() -> {
 							var partials = partialInterfaces.get(t.name).or([]);
-							var members = partials.fold((p, acc) -> acc.concat(p.members), t.members);
+							var members = partials.fold((p, acc) -> acc.concat(p.t.members), t.members);
 
 							// TODO: remove this once implemented
-							var doc = [];
+							var typeDoc = [];
 
 							var fields:Array<Field> = [];
-							function handleMember<T:AbstractBase<T>>(m:T) {
+							function handleMember<T:AbstractBase<T>>(m:T, ?fromPartial:{t:InterfaceType, file:FileHandler}) {
+								// TODO: proper doc handling
+								var doc = fromPartial.maybeApply(p -> 'From partial interface in ${p.file.filename}');
+
 								switch (m.type) {
 									case IDLConstantMemberType:
 										fields.push({
 											name: m.name, // TODO: sanitize
-											doc: null, // TODO
+											doc: doc, // TODO
 											access: [AStatic, AInline],
 											kind: FVar(convertType(pack, m.idlType), convertValue(m.value, pos)),
 											pos: pos,
@@ -278,12 +281,12 @@ class Main {
 									case IDLSetlikeDeclarationMemberType:
 										// TODO
 										trace('TODO Setlike for ${t.name}', m);
-										doc.push('TODO SetlikeDeclaration handling');
+										typeDoc.push('TODO SetlikeDeclaration handling');
 
 									case IDLMaplikeDeclarationMemberType:
 										// TODO
 										trace('TODO Maplike for ${t.name}', m);
-										doc.push('TODO MaplikeDeclaration handling');
+										typeDoc.push('TODO MaplikeDeclaration handling');
 
 									case IDLIterableDeclarationMemberType:
 										var tkey = convertType(pack, m.idlType.asType0[0]);
@@ -307,7 +310,7 @@ class Main {
 									case IDLConstructorMemberType:
 										fields.push({
 											name: "new",
-											doc: null, // TODO
+											doc: doc, // TODO
 											access: isOverload(m, members) ? [AOverload] : [],
 											kind: FFun({
 												args: m.arguments.map(a -> {
@@ -327,12 +330,18 @@ class Main {
 
 									case IDLAttributeMemberType:
 										// TODO
-										if (t.name == "FormData") trace(m);
+										trace('TODO attribute ${m.name} for ${t.name}');
+										typeDoc.push('TODO attribute ${m.name}');
 
 									case IDLOperationMemberType:
+										if (m.name == "" || m.name == null) {
+											trace('WARNING Operation member name is ${m.name} (special = ${m.special})');
+											var newDoc = '(special = ${m.special})';
+											doc = doc.concat(newDoc, "\n");
+										}
 										fields.push({
 											name: m.name, // TODO sanitize/@:native
-											doc: null, // TODO
+											doc: doc, // TODO
 											access: isOverload(m, members) ? [AOverload] : [],
 											kind: FFun({
 												args: m.arguments.map(a -> {
@@ -354,7 +363,11 @@ class Main {
 								};
 							}
 
-							for (m in members) handleMember(cast m);
+							for (m in t.members) handleMember(cast m);
+							for (p in partials) {
+								for (m in p.t.members) handleMember(cast m, p);
+							}
+
 							fields.sort((f1, f2) -> {
 								switch [f1.kind, f2.kind] {
 									case [FVar(_) | FProp(_), FVar(_) | FProp(_)]: 0;
@@ -371,7 +384,7 @@ class Main {
 							var td:TypeDefinition = {
 								pack: pack,
 								name: t.name,
-								doc: doc.length == 0 ? null : doc.join("\n"), // TODO retrieve docs
+								doc: typeDoc.length == 0 ? null : typeDoc.join("\n"), // TODO retrieve docs
 								pos: pos,
 								isExtern: true,
 								kind: TDClass(

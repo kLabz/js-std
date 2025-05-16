@@ -1,5 +1,7 @@
 package webidl2;
 
+import util.EitherType;
+
 extern interface AbstractTypeDescription extends AbstractBase<AbstractTypeDescription> {
 	/**
 		Boolean indicating whether this is nullable or not.
@@ -8,5 +10,5 @@ extern interface AbstractTypeDescription extends AbstractBase<AbstractTypeDescri
 	/**
 		The container of this type.
 	**/
-	var parent : ts.AnyOf11<CallbackType, TypedefType, ConstantMemberType, OperationMemberType, AttributeMemberType, IterableDeclarationMemberType, MaplikeDeclarationMemberType, SetlikeDeclarationMemberType, UnionTypeDescription, Argument, FieldType>;
+	var parent : EitherType<CallbackType, TypedefType, ConstantMemberType, OperationMemberType, AttributeMemberType, IterableDeclarationMemberType, MaplikeDeclarationMemberType, SetlikeDeclarationMemberType, UnionTypeDescription, Argument, FieldType>;
 }

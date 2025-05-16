@@ -19,7 +19,6 @@ import webidl2.AbstractNonUnionTypeDescription;
 import webidl2.AbstractValueDescription;
 import webidl2.DictionaryType;
 import webidl2.EnumType;
-import webidl2.GenericTypeDescription;
 import webidl2.IDLInterfaceMemberType;
 import webidl2.IDLRootType;
 import webidl2.IDLTypeDescription;
@@ -317,8 +316,8 @@ class Main {
 										typeDoc.push('TODO MaplikeDeclaration handling');
 
 									case IDLIterableDeclarationMemberType:
-										var tkey = convertType(pack, m.idlType.asType0[0]);
-										var tvalue = convertType(pack, m.idlType.asType0[1]);
+										var tkey = convertType(pack, m.idlType[0]);
+										var tvalue = convertType(pack, m.idlType[1]);
 										var newFields:Array<Field> = [];
 										if (tvalue == null) {
 											tvalue = tkey;
@@ -476,7 +475,7 @@ class Main {
 				}
 			}
 
-			res.iter(f -> handle(cast f));
+			res.iter(f -> handle(f));
 		}
 
 		IDL.listAll().then(function(files) {

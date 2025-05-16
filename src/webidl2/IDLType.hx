@@ -13,6 +13,7 @@ enum abstract IDLType<T:AbstractBase<T>>(String) {
 
 	var IDLFieldType:IDLType<FieldType> = "field";
 	var IDLExtendedAttribute:IDLType<ExtendedAttribute> = "extended-attribute";
+	var IDLArgument:IDLType<Argument> = "argument";
 
 	var IDLConstantMemberType:IDLType<ConstantMemberType> = "const";
 	var IDLSetlikeDeclarationMemberType:IDLType<SetlikeDeclarationMemberType> = "setlike";

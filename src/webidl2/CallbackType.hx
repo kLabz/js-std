@@ -13,12 +13,4 @@ extern interface CallbackType extends AbstractBase<CallbackType> {
 		A list of arguments, as in function paramters.
 	**/
 	var arguments : Array<Argument>;
-	/**
-		The container of this type.
-	**/
-	var parent : Dynamic;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
 }

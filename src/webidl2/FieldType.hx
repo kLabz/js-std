@@ -18,12 +18,4 @@ extern interface FieldType extends AbstractBase<FieldType> {
 	**/
 	@:native("default")
 	var default_ : Null<ValueDescription>;
-	/**
-		The container of this type.
-	**/
-	var parent : DictionaryType;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
 }

@@ -10,10 +10,6 @@ extern interface InterfaceType extends AbstractBase<InterfaceType> {
 	**/
 	var inheritance : Null<String>;
 	/**
-		The container of this type.
-	**/
-	var parent : Dynamic;
-	/**
 		The name of the container.
 	**/
 	var name : String;
@@ -21,8 +17,4 @@ extern interface InterfaceType extends AbstractBase<InterfaceType> {
 		A boolean indicating whether this container is partial.
 	**/
 	var partial : Bool;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
 }

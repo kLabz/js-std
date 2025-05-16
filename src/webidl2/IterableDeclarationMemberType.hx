@@ -1,10 +1,12 @@
 package webidl2;
 
+import util.EitherType;
+
 extern interface IterableDeclarationMemberType extends AbstractBase<IterableDeclarationMemberType> {
 	/**
-		An array with one or more IDL Types representing the declared type arguments.
+		An array with one or two IDL Types representing the declared type arguments.
 	**/
-	var idlType : ts.AnyOf2<ts.Tuple1<IDLTypeDescription>, ts.Tuple2<IDLTypeDescription, IDLTypeDescription>>;
+	var idlType : Array<IDLTypeDescription>;
 	/**
 		Whether the iterable is declared as async.
 	**/
@@ -20,5 +22,5 @@ extern interface IterableDeclarationMemberType extends AbstractBase<IterableDecl
 	/**
 		The container of this type.
 	**/
-	var parent : ts.AnyOf2<InterfaceMixinType, InterfaceType>;
+	var parent : EitherType<InterfaceMixinType, InterfaceType>;
 }

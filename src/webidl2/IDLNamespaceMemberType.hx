@@ -1,3 +1,5 @@
 package webidl2;
 
-typedef IDLNamespaceMemberType = ts.AnyOf2<OperationMemberType, AttributeMemberType>;
+import util.EitherType;
+
+typedef IDLNamespaceMemberType = EitherType<OperationMemberType, AttributeMemberType>;

@@ -1,5 +1,7 @@
 package webidl2;
 
+import util.EitherType;
+
 extern interface AttributeMemberType extends AbstractBase<AttributeMemberType> {
 	/**
 		The attribute's name.
@@ -24,5 +26,5 @@ extern interface AttributeMemberType extends AbstractBase<AttributeMemberType> {
 	/**
 		The container of this type.
 	**/
-	var parent : ts.AnyOf3<InterfaceMixinType, InterfaceType, NamespaceType>;
+	var parent : EitherType<InterfaceMixinType, InterfaceType, NamespaceType>;
 }

@@ -1,5 +1,7 @@
 package webidl2;
 
+import util.EitherType;
+
 extern interface SetlikeDeclarationMemberType extends AbstractBase<SetlikeDeclarationMemberType> {
 	/**
 		An array with one or more IDL Types representing the declared type arguments.
@@ -20,5 +22,5 @@ extern interface SetlikeDeclarationMemberType extends AbstractBase<SetlikeDeclar
 	/**
 		The container of this type.
 	**/
-	var parent : ts.AnyOf2<InterfaceMixinType, InterfaceType>;
+	var parent : EitherType<InterfaceMixinType, InterfaceType>;
 }

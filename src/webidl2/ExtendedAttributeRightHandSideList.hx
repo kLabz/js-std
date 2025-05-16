@@ -1,3 +1,5 @@
 package webidl2;
 
-typedef ExtendedAttributeRightHandSideList = ts.AnyOf4<ExtendedAttributeRightHandSideIdentifierList, ExtendedAttributeRightHandSideStringList, ExtendedAttributeRightHandSideDecimalList, ExtendedAttributeRightHandSideIntegerList>;
+import util.EitherType;
+
+typedef ExtendedAttributeRightHandSideList = EitherType<ExtendedAttributeRightHandSideIdentifierList, ExtendedAttributeRightHandSideStringList, ExtendedAttributeRightHandSideDecimalList, ExtendedAttributeRightHandSideIntegerList>;

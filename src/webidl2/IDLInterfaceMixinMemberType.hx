@@ -1,3 +1,5 @@
 package webidl2;
 
-typedef IDLInterfaceMixinMemberType = ts.AnyOf3<ConstantMemberType, OperationMemberType, AttributeMemberType>;
+import util.EitherType;
+
+typedef IDLInterfaceMixinMemberType = EitherType<ConstantMemberType, OperationMemberType, AttributeMemberType>;

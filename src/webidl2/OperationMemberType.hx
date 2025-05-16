@@ -1,5 +1,7 @@
 package webidl2;
 
+import util.EitherType;
+
 extern interface OperationMemberType extends AbstractBase<OperationMemberType> {
 	/**
 		Special modifier if exists
@@ -20,5 +22,5 @@ extern interface OperationMemberType extends AbstractBase<OperationMemberType> {
 	/**
 		The container of this type.
 	**/
-	var parent : ts.AnyOf4<CallbackInterfaceType, InterfaceMixinType, InterfaceType, NamespaceType>;
+	var parent : EitherType<CallbackInterfaceType, InterfaceMixinType, InterfaceType, NamespaceType>;
 }

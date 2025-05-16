@@ -1,5 +1,7 @@
 package webidl2;
 
+import util.EitherType;
+
 extern interface ConstantMemberType extends AbstractBase<ConstantMemberType> {
 	/**
 		Whether its type is nullable.
@@ -20,5 +22,5 @@ extern interface ConstantMemberType extends AbstractBase<ConstantMemberType> {
 	/**
 		The container of this type.
 	**/
-	var parent : ts.AnyOf3<CallbackInterfaceType, InterfaceMixinType, InterfaceType>;
+	var parent : EitherType<CallbackInterfaceType, InterfaceMixinType, InterfaceType>;
 }

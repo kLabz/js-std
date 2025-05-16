@@ -1,13 +1,14 @@
 package webidl2;
 
-@:forward
-abstract ValueDescription(AbstractValueDescription<Dynamic>)
-from ValueDescriptionString
-from ValueDescriptionNumber
-from ValueDescriptionBoolean
-from ValueDescriptionNull
-from ValueDescriptionInfinity
-from ValueDescriptionNaN
-from ValueDescriptionSequence
-from ValueDescriptionDictionary
-{}
+import util.EitherType;
+
+typedef ValueDescription = EitherType<
+	ValueDescriptionString,
+	ValueDescriptionNumber,
+	ValueDescriptionBoolean,
+	ValueDescriptionNull,
+	ValueDescriptionInfinity,
+	ValueDescriptionNaN,
+	ValueDescriptionSequence,
+	ValueDescriptionDictionary
+>

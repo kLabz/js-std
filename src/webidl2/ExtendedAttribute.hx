@@ -1,10 +1,8 @@
 package webidl2;
 
+import util.EitherType;
+
 extern interface ExtendedAttribute extends AbstractBase<ExtendedAttribute> {
-	/**
-		String indicating the type of this node.
-	**/
-	var type : String;
 	/**
 		The extended attribute's name.
 	**/
@@ -20,9 +18,5 @@ extern interface ExtendedAttribute extends AbstractBase<ExtendedAttribute> {
 	/**
 		The container of this type.
 	**/
-	var parent : ts.AnyOf17<CallbackType, CallbackInterfaceType, DictionaryType, EnumType, IncludesType, InterfaceMixinType, InterfaceType, NamespaceType, TypedefType, ConstantMemberType, OperationMemberType, AttributeMemberType, ConstructorMemberType, IterableDeclarationMemberType, MaplikeDeclarationMemberType, SetlikeDeclarationMemberType, FieldType>;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
+	var parent : EitherType<CallbackType, CallbackInterfaceType, DictionaryType, EnumType, IncludesType, InterfaceMixinType, InterfaceType, NamespaceType, TypedefType, ConstantMemberType, OperationMemberType, AttributeMemberType, ConstructorMemberType, IterableDeclarationMemberType, MaplikeDeclarationMemberType, SetlikeDeclarationMemberType, FieldType>;
 }

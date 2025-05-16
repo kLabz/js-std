@@ -13,12 +13,4 @@ extern interface EnumType extends AbstractBase<EnumType> {
 		var value : String;
 		var parent : EnumType;
 	}>;
-	/**
-		The container of this type.
-	**/
-	var parent : Dynamic;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
 }

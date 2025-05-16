@@ -1,16 +1,15 @@
 package webidl2;
 
-import webidl2.AbstractBase;
+import util.EitherType;
 
-@:forward
-abstract IDLRootType(AbstractBase<Dynamic>)
-from CallbackType
-from CallbackInterfaceType
-from DictionaryType
-from EnumType
-from IncludesType
-from InterfaceMixinType
-from InterfaceType
-from NamespaceType
-from TypedefType
-{}
+typedef IDLRootType = EitherType<
+	CallbackType,
+	CallbackInterfaceType,
+	DictionaryType,
+	EnumType,
+	IncludesType,
+	InterfaceMixinType,
+	InterfaceType,
+	NamespaceType,
+	TypedefType
+>

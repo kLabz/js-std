@@ -17,20 +17,4 @@ extern interface UnionTypeDescription extends AbstractTypeDescription {
 		the eventual value of the promise, etc.
 	**/
 	var idlType : Array<IDLTypeDescription>;
-	/**
-		Boolean indicating whether this is nullable or not.
-	**/
-	var nullable : Bool;
-	/**
-		The container of this type.
-	**/
-	var parent : ts.AnyOf11<CallbackType, TypedefType, ConstantMemberType, OperationMemberType, AttributeMemberType, IterableDeclarationMemberType, MaplikeDeclarationMemberType, SetlikeDeclarationMemberType, UnionTypeDescription, Argument, FieldType>;
-	/**
-		String indicating the type of this node.
-	**/
-	var type : Null<String>;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
 }

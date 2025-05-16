@@ -1,10 +1,8 @@
 package webidl2;
 
-typedef Argument = {
-	/**
-		String indicating the type of this node.
-	**/
-	var type : String;
+import util.EitherType;
+
+extern interface Argument extends AbstractBase<Argument> {
 	/**
 		A default value, absent if there is none.
 	**/
@@ -29,9 +27,5 @@ typedef Argument = {
 	/**
 		The container of this type.
 	**/
-	var parent : ts.AnyOf4<CallbackType, OperationMemberType, ConstructorMemberType, ExtendedAttribute>;
-	/**
-		A list of extended attributes.
-	**/
-	var extAttrs : Array<ExtendedAttribute>;
-};
+	var parent : EitherType<CallbackType, OperationMemberType, ConstructorMemberType, ExtendedAttribute>;
+}

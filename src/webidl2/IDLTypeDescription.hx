@@ -1,15 +1,16 @@
 package webidl2;
 
-@:forward
-abstract IDLTypeDescription(AbstractTypeDescription)
-from FrozenArrayTypeDescription
-from ObservableArrayTypeDescription
-from PromiseTypeDescription
-from RecordTypeDescription
-from SequenceTypeDescription
-from SingleTypeDescription
-from UnionTypeDescription
-{
+import util.EitherType;
+
+abstract IDLTypeDescription(EitherType<
+	FrozenArrayTypeDescription,
+	ObservableArrayTypeDescription,
+	PromiseTypeDescription,
+	RecordTypeDescription,
+	SequenceTypeDescription,
+	SingleTypeDescription,
+	UnionTypeDescription
+>) {
 	inline public function isGeneric():Bool return (cast this).generic != "";
 	inline public function asGeneric<T:AbstractNonUnionTypeDescription<T>>():AbstractNonUnionTypeDescription<T> return cast this;
 

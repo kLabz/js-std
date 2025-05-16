@@ -88,9 +88,12 @@ class Main {
 			if (t == null) return null;
 
 			if (t.isSingle()) {
-				return resolveType(currentPack, t.asSingle().idlType);
+				var t = t.asSingle();
+				var ct = resolveType(currentPack, t.idlType);
+				return if (t.nullable) macro :Null<$ct> else ct;
 			} else if (t.isUnion()) {
-				return switch (t.asUnion().idlType) {
+				var t = t.asUnion();
+				var ct = switch (t.idlType) {
 					case []: macro :Dynamic;
 					case types:
 						var current = convertType(currentPack, types.pop());
@@ -100,6 +103,7 @@ class Main {
 						}
 						current;
 				};
+				return if (t.nullable) macro :Null<$ct> else ct;
 			} else {
 				function handleGeneric<T:AbstractNonUnionTypeDescription<T>>(t:T) {
 					return switch (t.generic) {
@@ -138,7 +142,9 @@ class Main {
 						case _: throw 'Unexpected generic ${t.generic}.';
 					}
 				}
-				return handleGeneric(cast t.asGeneric());
+				var t = t.asGeneric();
+				var ct = handleGeneric(cast t);
+				return if (t.nullable) macro :Null<$ct> else ct;
 			}
 		}
 

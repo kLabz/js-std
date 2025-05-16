@@ -40,13 +40,17 @@ class Main {
 		var partialInterfaces:Map<String, Array<InterfaceType>> = [];
 		var packMap:Map<String, Array<String>> = [];
 
-		function resolvePackage(t:String):Array<String> {
+		function resolvePackage(currentPack:Array<String>, t:String):Array<String> {
 			var ret = packMap.get(t);
 			if (ret == null) {
 				Sys.println('WARNING: cannot resolve type $t');
 				return [];
 			}
-			return ret;
+
+			// ignore package if same as current (or parent package)
+			var currentPackLength = currentPack.length;
+			for (i => part in ret) if (currentPackLength <= i || currentPack[i] != part) return ret;
+			return [];
 		}
 
 		function toTPath(ct:ComplexType):TypePath {
@@ -56,7 +60,7 @@ class Main {
 			};
 		}
 
-		function resolveTypePath(t:String):TypePath {
+		function resolveTypePath(currentPack:Array<String>, t:String):TypePath {
 			// TODO: see https://webidl.spec.whatwg.org/#idl-types
 			// TODO: might be interesting to have abstracts for some of those as a documentation
 			return switch (t) {
@@ -73,28 +77,27 @@ class Main {
 				case "unrestricted float" | "unrestricted double": toTPath(macro :Float);
 				// TODO: other special types
 
-				// TODO: ignore package if same as current (or is parent package)
-				case _: {pack: resolvePackage(t), name: t};
+				case _: {pack: resolvePackage(currentPack, t), name: t};
 			};
 		}
 
-		function resolveType(t:String):ComplexType {
+		function resolveType(currentPack:Array<String>, t:String):ComplexType {
 			if (t == "undefined") return macro :Void; // TODO: not allowed everywhere..
-			return TPath(resolveTypePath(t));
+			return TPath(resolveTypePath(currentPack, t));
 		}
 
-		function convertType(t:IDLTypeDescription) {
+		function convertType(currentPack:Array<String>, t:IDLTypeDescription) {
 			if (t == null) return null;
 
 			if (t.isSingle()) {
-				return resolveType(t.asSingle().idlType);
+				return resolveType(currentPack, t.asSingle().idlType);
 			} else if (t.isUnion()) {
 				return switch (t.asUnion().idlType) {
 					case []: macro :Dynamic;
 					case types:
-						var current = convertType(types.pop());
+						var current = convertType(currentPack, types.pop());
 						while (types.length > 0) {
-							var t = convertType(types.pop());
+							var t = convertType(currentPack, types.pop());
 							current = macro :haxe.extern.EitherType<$t, $current>;
 						}
 						current;
@@ -103,25 +106,25 @@ class Main {
 				function handleGeneric<T:AbstractNonUnionTypeDescription<T>>(t:T) {
 					return switch (t.generic) {
 						case IDLFrozenArrayTypeDescription:
-							var inner = convertType(t.idlType.element0);
+							var inner = convertType(currentPack, t.idlType.element0);
 							// if (inner == null) inner = macro :Dynamic;
 							// TODO: FrozenArray in std
 							macro :Array<$inner>;
 
 						case IDLObservableArrayTypeDescription:
-							var inner = convertType(t.idlType.element0);
+							var inner = convertType(currentPack, t.idlType.element0);
 							// if (inner == null) inner = macro :Dynamic;
 							// TODO: ObservableArray in std
 							macro :Array<$inner>;
 
 						case IDLPromiseTypeDescription:
-							var inner = convertType(t.idlType.element0);
+							var inner = convertType(currentPack, t.idlType.element0);
 							// if (inner == null) inner = macro :Dynamic;
 							macro :js.lib.Promise<$inner>;
 
 						case IDLRecordTypeDescription:
-							var tkey = convertType(t.idlType.element0);
-							var tvalue = convertType(t.idlType.element1);
+							var tkey = convertType(currentPack, t.idlType.element0);
+							var tvalue = convertType(currentPack, t.idlType.element1);
 							switch (tkey) {
 								case TPath({pack: [], name: "DOMString" | "USVString" | "String"}):
 									macro :haxe.DynamicAccess<$tvalue>;
@@ -130,7 +133,7 @@ class Main {
 							}
 
 						case IDLSequenceTypeDescription:
-							var inner = convertType(t.idlType.element0);
+							var inner = convertType(currentPack, t.idlType.element0);
 							// if (inner == null) inner = macro :Dynamic;
 							macro :Array<$inner>;
 
@@ -193,7 +196,7 @@ class Main {
 								({
 									name: m.name, // TODO: sanitize
 									doc: null, // TODO retrieve docs
-									kind: FVar(convertType(m.idlType), convertValue(m.default_, pos)),
+									kind: FVar(convertType(pack, m.idlType), convertValue(m.default_, pos)),
 									pos: pos,
 									meta: m.required ? null : [optMeta]
 								}:Field);
@@ -207,7 +210,7 @@ class Main {
 								isExtern: null,
 								kind: TDAlias(t.inheritance == null
 									? TAnonymous(fields)
-									: TExtend([resolveTypePath(t.inheritance)], fields)
+									: TExtend([resolveTypePath(pack, t.inheritance)], fields)
 								),
 								fields: []
 							};
@@ -264,7 +267,7 @@ class Main {
 											name: m.name, // TODO: sanitize
 											doc: null, // TODO
 											access: [AStatic, AInline],
-											kind: FVar(convertType(m.idlType), convertValue(m.value, pos)),
+											kind: FVar(convertType(pack, m.idlType), convertValue(m.value, pos)),
 											pos: pos,
 											meta: [] // TODO
 										});
@@ -278,8 +281,8 @@ class Main {
 										trace('TODO Maplike for ${t.name}', m);
 
 									case IDLIterableDeclarationMemberType:
-										var tkey = convertType(m.idlType.asType0[0]);
-										var tvalue = convertType(m.idlType.asType0[1]);
+										var tkey = convertType(pack, m.idlType.asType0[0]);
+										var tvalue = convertType(pack, m.idlType.asType0[1]);
 										var newFields:Array<Field> = [];
 										if (tvalue == null) {
 											tvalue = tkey;
@@ -305,7 +308,7 @@ class Main {
 												args: m.arguments.map(a -> {
 													name: a.name,
 													opt: a.optional,
-													type: convertType(a.idlType),
+													type: convertType(pack, a.idlType),
 													value: convertValue(a.default_, pos),
 													meta: null
 												}),
@@ -330,11 +333,11 @@ class Main {
 												args: m.arguments.map(a -> {
 													name: a.name,
 													opt: a.optional,
-													type: convertType(a.idlType),
+													type: convertType(pack, a.idlType),
 													value: convertValue(a.default_, pos),
 													meta: null
 												}),
-												ret: convertType(m.idlType).or(macro :Void),
+												ret: convertType(pack, m.idlType).or(macro :Void),
 												expr: null,
 												params: null
 											}),
@@ -355,7 +358,7 @@ class Main {
 								pos: pos,
 								isExtern: true,
 								kind: TDClass(
-									t.inheritance.maybeApply(resolveTypePath)
+									t.inheritance.maybeApply(t -> resolveTypePath(pack, t))
 									// TODO: interfaces (at least `implements ArrayAccess<T>`)
 								),
 								meta: [], // TODO: @:native etc.

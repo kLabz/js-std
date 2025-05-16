@@ -308,7 +308,7 @@ class Main {
 										fields.push({
 											name: "new",
 											doc: null, // TODO
-											access: [],
+											access: isOverload(m, members) ? [AOverload] : [],
 											kind: FFun({
 												args: m.arguments.map(a -> {
 													name: a.name,

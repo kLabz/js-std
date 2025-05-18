@@ -47,6 +47,10 @@ class Main {
 		var saved = new haxe.ds.StringMap<String>();
 
 		var libs = [
+			#if generate_unused_api
+			"UNUSED" => "js-unused-api",
+			#end
+
 			"*" => "js-core-api",
 			"Window" => "js-window-api",
 			"Worker" => "js-worker-api",
@@ -107,7 +111,7 @@ class Main {
 			while (removed.length > 0) attr.remove(removed.shift());
 		}
 
-		function extractScope(attr:Array<ExtendedAttribute<Dynamic>>):Null<Array<String>> {
+		function extractScope(attr:Array<ExtendedAttribute<Dynamic>>):Null<Set<String>> {
 			var scope = null;
 			handleAttributes(attr, function<T:ExtendedAttributeRightHandSide<T>>(a:ExtendedAttribute<T>) {
 				return switch (a.name) {
@@ -261,9 +265,9 @@ class Main {
 		}
 
 		function doSave(ctx:Context, t:String, td:TypeDefinition) {
-			if (ctx.scope == null) {
+			if (ctx.scope.or([]).length == 0) {
 				ctx.scope = new Set();
-				var handledDependents = [t];
+				var handledDependents:Set<String> = [t];
 				var abort = false;
 
 				function handleType(dep:String) {
@@ -272,7 +276,7 @@ class Main {
 					var depScope = scopeMap.get(dep).or([]);
 					for (s in depScope) {
 						if (s == "*") {
-							ctx.scope = Set.fromArray(["*"]);
+							ctx.scope = ["*"];
 							abort = true;
 							return;
 						}
@@ -282,8 +286,8 @@ class Main {
 					var deps = dependents.get(dep).or([]);
 					for (d in deps) {
 						if (abort) return;
-						if (!handledDependents.contains(d)) {
-							handledDependents.push(d);
+						if (!handledDependents.has(d)) {
+							handledDependents.add(d);
 							handleType(d);
 						}
 					}
@@ -294,6 +298,11 @@ class Main {
 
 			// Doesn't seem needed atm, but doesn't hurt to check
 			if (ctx.scope.has("*")) ctx.scope = ["*"];
+
+			#if generate_unused_api
+			if (ctx.scope.length == 0) ctx.scope.add("UNUSED");
+			else ctx.scope.remove("UNUSED");
+			#end
 
 			var generated = false;
 			for (s in ctx.scope) {

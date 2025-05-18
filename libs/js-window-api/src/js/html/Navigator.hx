@@ -189,11 +189,6 @@ package js.html;
 	**/
 	var ink(default, null) : js.inkEnhancement.Ink;
 	/**
-		From partial interface in html.idl
-		Unhandled extended attribute SameObject
-	**/
-	var userActivation(default, null) : UserActivation;
-	/**
 		From partial interface in is-input-pending.idl
 	**/
 	var scheduling(default, null) : js.isInputPending.Scheduling;
@@ -203,6 +198,11 @@ package js.html;
 		Unhandled extended attribute SameObject
 	**/
 	var keyboard(default, null) : js.keyboardLock.Keyboard;
+	/**
+		From partial interface in html.idl
+		Unhandled extended attribute SameObject
+	**/
+	var userActivation(default, null) : UserActivation;
 	/**
 		From partial interface in login-status.idl
 		Unhandled extended attribute SecureContext

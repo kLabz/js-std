@@ -31,13 +31,13 @@ package js.html;
 			params : [TPType(TPath(<...>)),TPType(TPath(<...>))], 
 			pos : {
 				file : src/Main.hx, 
-				min : 6113, 
-				max : 6149
+				min : 6044, 
+				max : 6080
 			}, 
 			posPath : {
 				file : src/Main.hx, 
-				min : 6113, 
-				max : 6135
+				min : 6044, 
+				max : 6066
 			}
 		})
 	Unhandled extended attribute LegacyOverrideBuiltIns

@@ -31,13 +31,13 @@ package js.html;
 			params : [], 
 			pos : {
 				file : src/Main.hx, 
-				min : 4788, 
-				max : 4794
+				min : 4849, 
+				max : 4855
 			}, 
 			posPath : {
 				file : src/Main.hx, 
-				min : 4788, 
-				max : 4794
+				min : 4849, 
+				max : 4855
 			}
 		})
 	Unhandled extended attribute LegacyOverrideBuiltIns

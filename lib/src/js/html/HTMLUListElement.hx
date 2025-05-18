@@ -30,12 +30,10 @@ package js.html;
 @:native("HTMLUListElement") extern class HTMLUListElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var compact : Bool;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var type : String;
 }

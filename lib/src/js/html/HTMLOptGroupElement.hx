@@ -28,12 +28,6 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLOptGroupElement") extern class HTMLOptGroupElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var disabled : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var label : String;
 }

@@ -33,25 +33,21 @@ package js.dom;
 	var systemId(default, null) : String;
 	/**
 		From interface mixin ChildNode
-		Unhandled extended attribute CEReactions
 		Unhandled extended attribute Unscopable
 	**/
 	function after(nodes:haxe.extern.EitherType<Node, String>):Void;
 	/**
 		From interface mixin ChildNode
-		Unhandled extended attribute CEReactions
 		Unhandled extended attribute Unscopable
 	**/
 	function before(nodes:haxe.extern.EitherType<Node, String>):Void;
 	/**
 		From interface mixin ChildNode
-		Unhandled extended attribute CEReactions
 		Unhandled extended attribute Unscopable
 	**/
 	function remove():Void;
 	/**
 		From interface mixin ChildNode
-		Unhandled extended attribute CEReactions
 		Unhandled extended attribute Unscopable
 	**/
 	function replaceWith(nodes:haxe.extern.EitherType<Node, String>):Void;

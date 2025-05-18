@@ -29,9 +29,6 @@ package js.html;
 **/
 @:native("HTMLStyleElement") extern class HTMLStyleElement extends HTMLElement {
 	var disabled : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var media : String;
 	/**
 		Unhandled extended attribute SameObject
@@ -44,7 +41,6 @@ package js.html;
 	var sheet(default, null) : Null<js.cssom.CSSStyleSheet>;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var type : String;
 }

@@ -28,12 +28,6 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLModElement") extern class HTMLModElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var cite : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var dateTime : String;
 }

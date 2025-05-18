@@ -28,38 +28,14 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLFrameElement") extern class HTMLFrameElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var name : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var scrolling : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var src : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var frameBorder : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var longDesc : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var noResize : Bool;
 	var contentDocument(default, null) : Null<js.dom.Document>;
 	var contentWindow(default, null) : Null<WindowProxy>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var marginHeight : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var marginWidth : String;
 }

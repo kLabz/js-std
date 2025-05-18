@@ -28,46 +28,19 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLIFrameElement") extern class HTMLIFrameElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var src : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var srcdoc : haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var name : String;
 	/**
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute PutForwards
 	**/
 	var sandbox(default, null) : js.dom.DOMTokenList;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var allow : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var allowFullscreen : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var width : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var height : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var referrerPolicy : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var loading : String;
 	var contentDocument(default, null) : Null<js.dom.Document>;
 	var contentWindow(default, null) : Null<WindowProxy>;
@@ -81,37 +54,30 @@ package js.html;
 	var credentialless : Bool;
 	/**
 		From partial interface in csp-embedded-enforcement.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var csp : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var scrolling : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var frameBorder : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var longDesc : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var marginHeight : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var marginWidth : String;
 	/**
@@ -120,14 +86,13 @@ package js.html;
 	**/
 	var permissionsPolicy(default, null) : js.permissionsPolicy.PermissionsPolicy;
 	/**
-		From partial interface in turtledove.idl
-		Unhandled extended attribute CEReactions
-	**/
-	var adAuctionHeaders : Bool;
-	/**
 		From partial interface in trust-token-api.idl
 		Unhandled extended attribute SecureContext
 	**/
 	var privateToken : String;
+	/**
+		From partial interface in turtledove.idl
+	**/
+	var adAuctionHeaders : Bool;
 	function getSVGDocument():Null<js.dom.Document>;
 }

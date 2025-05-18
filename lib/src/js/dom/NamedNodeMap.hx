@@ -33,20 +33,8 @@ package js.dom;
 	function getNamedItem(qualifiedName:String):Null<Attr>;
 	function getNamedItemNS(namespace:Null<String>, localName:String):Null<Attr>;
 	function item(index:Int):Null<Attr>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function removeNamedItem(qualifiedName:String):Attr;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function removeNamedItemNS(namespace:Null<String>, localName:String):Attr;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function setNamedItem(attr:Attr):Null<Attr>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function setNamedItemNS(attr:Attr):Null<Attr>;
 }

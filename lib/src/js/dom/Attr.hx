@@ -32,9 +32,6 @@ package js.dom;
 	var prefix(default, null) : Null<String>;
 	var localName(default, null) : String;
 	var name(default, null) : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var value : String;
 	var ownerElement(default, null) : Null<Element>;
 	var specified(default, null) : Bool;

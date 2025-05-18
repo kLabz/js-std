@@ -28,22 +28,12 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLOptionsCollection") extern class HTMLOptionsCollection extends js.dom.HTMLCollection {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var length : Int;
 	var selectedIndex : Int;
 	/**
 		(special = setter)
-		Unhandled extended attribute CEReactions
 	**/
 	function (index:Int, option:Null<HTMLOptionElement>):Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function add(element:haxe.extern.EitherType<HTMLOptionElement, HTMLOptGroupElement>, ?before:Null<haxe.extern.EitherType<HTMLElement, Int>> = null):Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function remove(index:Int):Void;
 }

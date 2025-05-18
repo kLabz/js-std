@@ -31,13 +31,13 @@ package js.html;
 			params : [], 
 			pos : {
 				file : src/Main.hx, 
-				min : 3074, 
-				max : 3080
+				min : 3118, 
+				max : 3124
 			}, 
 			posPath : {
 				file : src/Main.hx, 
-				min : 3074, 
-				max : 3080
+				min : 3118, 
+				max : 3124
 			}
 		})
 	Unhandled extended attribute Exposed
@@ -46,12 +46,10 @@ package js.html;
 @:native("DOMStringMap") extern class DOMStringMap {
 	/**
 		(special = setter)
-		Unhandled extended attribute CEReactions
 	**/
 	overload function (name:String, value:String):Void;
 	/**
 		(special = deleter)
-		Unhandled extended attribute CEReactions
 	**/
 	overload function (name:String):Void;
 }

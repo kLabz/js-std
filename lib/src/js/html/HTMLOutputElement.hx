@@ -34,18 +34,9 @@ package js.html;
 	**/
 	var htmlFor(default, null) : js.dom.DOMTokenList;
 	var form(default, null) : Null<HTMLFormElement>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var name : String;
 	var type(default, null) : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var defaultValue : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var value : String;
 	var willValidate(default, null) : Bool;
 	var validity(default, null) : ValidityState;

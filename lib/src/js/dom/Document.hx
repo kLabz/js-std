@@ -572,17 +572,14 @@ package js.dom;
 	var readyState(default, null) : js.html.DocumentReadyState;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var title : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var dir : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var body : Null<js.html.HTMLElement>;
 	/**
@@ -629,7 +626,6 @@ package js.dom;
 	var defaultView(default, null) : Null<WindowProxy>;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var designMode : String;
 	/**
@@ -651,27 +647,22 @@ package js.dom;
 	var onvisibilitychange : js.html.EventHandler;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var fgColor : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var linkColor : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var vlinkColor : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var alinkColor : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var bgColor : String;
 	/**
@@ -736,13 +727,9 @@ package js.dom;
 	**/
 	var timeline(default, null) : js.webAnimations.DocumentTimeline;
 	function new():Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function adoptNode(node:Node):Node;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute CEReactions
 		Unhandled extended attribute Unscopable
 	**/
 	function append(nodes:haxe.extern.EitherType<Node, String>):Void;
@@ -760,7 +747,6 @@ package js.dom;
 	function clear():Void;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	function close():Void;
 	/**
@@ -796,12 +782,10 @@ package js.dom;
 	**/
 	function createDocumentFragment():DocumentFragment;
 	/**
-		Unhandled extended attribute CEReactions
 		Unhandled extended attribute NewObject
 	**/
 	function createElement(localName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions> = {  }):Element;
 	/**
-		Unhandled extended attribute CEReactions
 		Unhandled extended attribute NewObject
 	**/
 	function createElementNS(namespace:Null<String>, qualifiedName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions> = {  }):Element;
@@ -852,7 +836,6 @@ package js.dom;
 	function evaluate(expression:String, contextNode:Node, ?resolver:Null<XPathNSResolver> = null, ?type:Int = 0, ?result:Null<XPathResult> = null):XPathResult;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	function execCommand(commandId:String, ?showUI:Bool = false, ?value:String = ""):Bool;
 	/**
@@ -912,7 +895,6 @@ package js.dom;
 	**/
 	function hasUnpartitionedCookieAccess():js.lib.Promise<Bool>;
 	/**
-		Unhandled extended attribute CEReactions
 		Unhandled extended attribute NewObject
 	**/
 	function importNode(node:Node, ?options:haxe.extern.EitherType<Bool, ImportNodeOptions> = false):Node;
@@ -926,12 +908,10 @@ package js.dom;
 	function measureText(text:String, styleMap:js.cssTypedOm.StylePropertyMapReadOnly):js.fontMetricsApi.FontMetrics;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute CEReactions
 	**/
 	function moveBefore(node:Node, child:Null<Node>):Void;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	overload function open(?unused1:String, ?unused2:String):Document;
 	/**
@@ -944,7 +924,6 @@ package js.dom;
 	function parseHTMLUnsafe(html:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>):Document;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute CEReactions
 		Unhandled extended attribute Unscopable
 	**/
 	function prepend(nodes:haxe.extern.EitherType<Node, String>):Void;
@@ -983,7 +962,6 @@ package js.dom;
 	function releaseEvents():Void;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute CEReactions
 		Unhandled extended attribute Unscopable
 	**/
 	function replaceChildren(nodes:haxe.extern.EitherType<Node, String>):Void;
@@ -1001,12 +979,10 @@ package js.dom;
 	function startViewTransition(?callbackOptions:haxe.extern.EitherType<js.cssViewTransitions.ViewTransitionUpdateCallback, js.cssViewTransitions2.StartViewTransitionOptions> = {  }):js.cssViewTransitions.ViewTransition;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	function write(text:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>):Void;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	function writeln(text:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>):Void;
 }

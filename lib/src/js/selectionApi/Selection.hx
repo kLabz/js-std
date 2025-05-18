@@ -45,9 +45,6 @@ package js.selectionApi;
 	function collapseToEnd():Void;
 	function collapseToStart():Void;
 	function containsNode(node:js.dom.Node, ?allowPartialContainment:Bool = false):Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function deleteFromDocument():Void;
 	function empty():Void;
 	function extend(node:js.dom.Node, ?offset:Int = 0):Void;

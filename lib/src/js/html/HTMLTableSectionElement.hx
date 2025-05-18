@@ -34,27 +34,20 @@ package js.html;
 	var rows(default, null) : js.dom.HTMLCollection;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var ch : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var chOff : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var vAlign : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function deleteRow(index:Int):Void;
 	function insertRow(?index:Int = -1):HTMLTableRowElement;
 }

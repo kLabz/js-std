@@ -28,8 +28,5 @@ package js.cssom;
 	Unhandled extended attribute Exposed
 **/
 @:native("CSSStyleProperties") extern class CSSStyleProperties extends CSSStyleDeclaration {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var cssFloat : CSSOMString;
 }

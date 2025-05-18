@@ -36,32 +36,24 @@ package js.html;
 	var cells(default, null) : js.dom.HTMLCollection;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var ch : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var chOff : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var vAlign : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var bgColor : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function deleteCell(index:Int):Void;
 	function insertCell(?index:Int = -1):HTMLTableCellElement;
 }

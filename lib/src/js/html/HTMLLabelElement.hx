@@ -29,9 +29,6 @@ package js.html;
 **/
 @:native("HTMLLabelElement") extern class HTMLLabelElement extends HTMLElement {
 	var form(default, null) : Null<HTMLFormElement>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var htmlFor : String;
 	var control(default, null) : Null<HTMLElement>;
 }

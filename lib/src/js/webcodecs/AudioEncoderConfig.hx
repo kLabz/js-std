@@ -44,7 +44,7 @@ typedef AudioEncoderConfig = {
 	@:optional
 	var aac : js.webcodecsAacCodecRegistration.AacEncoderConfig;
 	@:optional
-	var flac : js.webcodecsFlacCodecRegistration.FlacEncoderConfig;
-	@:optional
 	var opus : js.webcodecsOpusCodecRegistration.OpusEncoderConfig;
+	@:optional
+	var flac : js.webcodecsFlacCodecRegistration.FlacEncoderConfig;
 };

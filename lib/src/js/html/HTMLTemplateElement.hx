@@ -29,24 +29,9 @@ package js.html;
 **/
 @:native("HTMLTemplateElement") extern class HTMLTemplateElement extends HTMLElement {
 	var content(default, null) : js.dom.DocumentFragment;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var shadowRootMode : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var shadowRootDelegatesFocus : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var shadowRootClonable : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var shadowRootSerializable : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var shadowRootCustomElementRegistry : String;
 }

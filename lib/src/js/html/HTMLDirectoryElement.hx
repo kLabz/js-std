@@ -28,8 +28,5 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLDirectoryElement") extern class HTMLDirectoryElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var compact : Bool;
 }

@@ -28,9 +28,6 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLSlotElement") extern class HTMLSlotElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var name : String;
 	function assign(nodes:haxe.extern.EitherType<js.dom.Element, js.dom.Text>):Void;
 	function assignedElements(?options:AssignedNodesOptions = {  }):Array<js.dom.Element>;

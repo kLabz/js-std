@@ -30,7 +30,6 @@ package js.html;
 @:native("HTMLDivElement") extern class HTMLDivElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
 }

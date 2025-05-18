@@ -35,12 +35,6 @@ package js.dom;
 	function removeParameter(namespaceURI:String, localName:String):Void;
 	function reset():Void;
 	function setParameter(namespaceURI:String, localName:String, value:Any):Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function transformToDocument(source:Node):Document;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function transformToFragment(source:Node, output:Document):DocumentFragment;
 }

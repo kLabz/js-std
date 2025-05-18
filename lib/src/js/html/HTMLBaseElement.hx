@@ -28,12 +28,6 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLBaseElement") extern class HTMLBaseElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var href : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var target : String;
 }

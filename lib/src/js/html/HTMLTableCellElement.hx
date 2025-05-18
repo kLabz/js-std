@@ -28,70 +28,46 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLTableCellElement") extern class HTMLTableCellElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var colSpan : Int;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var rowSpan : Int;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var headers : String;
 	var cellIndex(default, null) : Int;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var scope : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var abbr : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var axis : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var height : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var width : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var ch : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var chOff : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var noWrap : Bool;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var vAlign : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var bgColor : String;
 }

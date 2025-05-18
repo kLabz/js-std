@@ -29,46 +29,21 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLAnchorElement") extern class HTMLAnchorElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var target : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var download : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var ping : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var rel : String;
 	/**
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute PutForwards
 	**/
 	var relList(default, null) : js.dom.DOMTokenList;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var hreflang : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var type : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var text : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var referrerPolicy : String;
 	/**
 		From interface mixin HTMLAttributionSrcElementUtils
-		Unhandled extended attribute CEReactions
 		Unhandled extended attribute SecureContext
 	**/
 	var attributionSrc : String;
@@ -78,77 +53,62 @@ package js.html;
 	var origin(default, null) : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
-		Unhandled extended attribute CEReactions
 	**/
 	var protocol : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
-		Unhandled extended attribute CEReactions
 	**/
 	var username : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
-		Unhandled extended attribute CEReactions
 	**/
 	var password : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
-		Unhandled extended attribute CEReactions
 	**/
 	var host : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
-		Unhandled extended attribute CEReactions
 	**/
 	var hostname : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
-		Unhandled extended attribute CEReactions
 	**/
 	var port : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
-		Unhandled extended attribute CEReactions
 	**/
 	var pathname : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
-		Unhandled extended attribute CEReactions
 	**/
 	var search : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
-		Unhandled extended attribute CEReactions
 	**/
 	var hash : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var coords : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var charset : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var name : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var rev : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var shape : String;
 	/**
 		From partial interface in private-click-measurement.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var attributionSourceId : Int;
 }

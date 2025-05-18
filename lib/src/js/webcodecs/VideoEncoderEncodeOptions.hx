@@ -28,9 +28,9 @@ typedef VideoEncoderEncodeOptions = {
 	@:optional
 	var keyFrame : Bool = false;
 	@:optional
-	var avc : js.webcodecsAvcCodecRegistration.VideoEncoderEncodeOptionsForAvc;
-	@:optional
 	var av1 : js.webcodecsAv1CodecRegistration.VideoEncoderEncodeOptionsForAv1;
+	@:optional
+	var avc : js.webcodecsAvcCodecRegistration.VideoEncoderEncodeOptionsForAvc;
 	@:optional
 	var hevc : js.webcodecsHevcCodecRegistration.VideoEncoderEncodeOptionsForHevc;
 	@:optional

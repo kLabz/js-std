@@ -32,13 +32,7 @@ package js.dom;
 	var prefix(default, null) : Null<String>;
 	var localName(default, null) : String;
 	var tagName(default, null) : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var id : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var className : String;
 	/**
 		Unhandled extended attribute SameObject
@@ -46,7 +40,6 @@ package js.dom;
 	**/
 	var classList(default, null) : DOMTokenList;
 	/**
-		Unhandled extended attribute CEReactions
 		Unhandled extended attribute Unscopable
 	**/
 	var slot : String;
@@ -90,262 +83,210 @@ package js.dom;
 	var assignedSlot(default, null) : Null<js.html.HTMLSlotElement>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var role : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaActiveDescendantElement : Null<Element>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaAtomic : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaAutoComplete : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaBrailleLabel : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaBrailleRoleDescription : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaBusy : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaChecked : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaColCount : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaColIndex : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaColIndexText : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaColSpan : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaControlsElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaCurrent : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaDescribedByElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaDescription : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaDetailsElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaDisabled : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaErrorMessageElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaExpanded : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaFlowToElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaHasPopup : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaHidden : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaInvalid : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaKeyShortcuts : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaLabel : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaLabelledByElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaLevel : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaLive : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaModal : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaMultiLine : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaMultiSelectable : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaOrientation : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaOwnsElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaPlaceholder : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaPosInSet : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaPressed : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaReadOnly : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaRelevant : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaRequired : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaRoleDescription : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaRowCount : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaRowIndex : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaRowIndexText : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaRowSpan : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaSelected : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaSetSize : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaSort : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaValueMax : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaValueMin : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaValueNow : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute CEReactions
 	**/
 	var ariaValueText : Null<String>;
 	/**
@@ -392,7 +333,6 @@ package js.dom;
 	var currentCSSZoom(default, null) : Float;
 	/**
 		From partial interface in element-timing.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var elementTiming : String;
 	/**
@@ -405,12 +345,10 @@ package js.dom;
 	var onfullscreenerror : js.html.EventHandler;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var innerHTML : haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var outerHTML : haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>;
 	/**
@@ -500,13 +438,9 @@ package js.dom;
 		From partial interface in pointerevents.idl
 	**/
 	function hasPointerCapture(pointerId:Int):Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function insertAdjacentElement(where:String, element:Element):Null<Element>;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	function insertAdjacentHTML(position:String, string:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>):Void;
 	function insertAdjacentText(where:String, data:String):Void;
@@ -539,17 +473,8 @@ package js.dom;
 		From interface mixin ChildNode
 	**/
 	function remove():Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function removeAttribute(qualifiedName:String):Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function removeAttributeNS(namespace:Null<String>, localName:String):Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function removeAttributeNode(attr:Attr):Attr;
 	/**
 		From interface mixin ParentNode
@@ -595,25 +520,12 @@ package js.dom;
 		From partial interface in cssom-view.idl
 	**/
 	overload function scrollTo(x:Float, y:Float):Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function setAttribute(qualifiedName:String, value:String):Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function setAttributeNS(namespace:Null<String>, qualifiedName:String, value:String):Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function setAttributeNode(attr:Attr):Null<Attr>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function setAttributeNodeNS(attr:Attr):Null<Attr>;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	function setHTMLUnsafe(html:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>):Void;
 	/**
@@ -624,9 +536,6 @@ package js.dom;
 		From partial interface in css-nav.idl
 	**/
 	function spatialNavigationSearch(dir:js.cssNav.SpatialNavigationDirection, ?options:js.cssNav.SpatialNavigationSearchOptions = {  }):Null<Node>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function toggleAttribute(qualifiedName:String, ?force:Bool):Bool;
 	function webkitMatchesSelector(selectors:String):Bool;
 }

@@ -30,7 +30,6 @@ package js.html;
 @:native("HTMLBRElement") extern class HTMLBRElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var clear : String;
 }

@@ -30,24 +30,12 @@ package js.dom;
 **/
 @:native("DOMTokenList") extern class DOMTokenList {
 	var length(default, null) : Int;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function add(tokens:String):Void;
 	function contains(token:String):Bool;
 	function item(index:Int):Null<String>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function remove(tokens:String):Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function replace(token:String, newToken:String):Bool;
 	function supports(token:String):Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function toggle(token:String, ?force:Bool):Bool;
 	function values():Iterator<String>;
 	function values():Iterator<String>;

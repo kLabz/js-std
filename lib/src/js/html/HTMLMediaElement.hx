@@ -29,24 +29,15 @@ package js.html;
 **/
 @:native("HTMLMediaElement") extern class HTMLMediaElement extends HTMLElement {
 	var error(default, null) : Null<MediaError>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var src : String;
 	var srcObject : Null<MediaProvider>;
 	var currentSrc(default, null) : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var crossOrigin : Null<String>;
 	static inline var NETWORK_EMPTY : Int = 0;
 	static inline var NETWORK_IDLE : Int = 1;
 	static inline var NETWORK_LOADING : Int = 2;
 	static inline var NETWORK_NO_SOURCE : Int = 3;
 	var networkState(default, null) : Int;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var preload : String;
 	var buffered(default, null) : TimeRanges;
 	static inline var HAVE_NOTHING : Int = 0;
@@ -65,23 +56,11 @@ package js.html;
 	var played(default, null) : TimeRanges;
 	var seekable(default, null) : TimeRanges;
 	var ended(default, null) : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var autoplay : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var loop : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var controls : Bool;
 	var volume : Float;
 	var muted : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var defaultMuted : Bool;
 	/**
 		Unhandled extended attribute SameObject
@@ -120,7 +99,6 @@ package js.html;
 	var remote(default, null) : js.remotePlayback.RemotePlayback;
 	/**
 		From partial interface in remote-playback.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var disableRemotePlayback : Bool;
 	function addTextTrack(kind:TextTrackKind, ?label:String = "", ?language:String = ""):TextTrack;

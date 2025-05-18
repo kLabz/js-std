@@ -29,61 +29,22 @@ package js.html;
 	Unhandled extended attribute LegacyFactoryFunction
 **/
 @:native("HTMLImageElement") extern class HTMLImageElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var alt : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var src : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var srcset : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var sizes : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var crossOrigin : Null<String>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var useMap : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var isMap : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var width : Int;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var height : Int;
 	var naturalWidth(default, null) : Int;
 	var naturalHeight(default, null) : Int;
 	var complete(default, null) : Bool;
 	var currentSrc(default, null) : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var referrerPolicy : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var decoding : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var loading : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var fetchPriority : String;
 	/**
 		From interface mixin HTMLAttributionSrcElementUtils
@@ -91,7 +52,6 @@ package js.html;
 	var attributionSrc : String;
 	/**
 		From interface mixin HTMLSharedStorageWritableElementUtils
-		Unhandled extended attribute CEReactions
 		Unhandled extended attribute SecureContext
 	**/
 	var sharedStorageWritable : Bool;
@@ -105,37 +65,30 @@ package js.html;
 	var y(default, null) : Int;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var name : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var lowsrc : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var hspace : Int;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var vspace : Int;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var longDesc : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var border : String;
 	function decode():js.lib.Promise<Void>;

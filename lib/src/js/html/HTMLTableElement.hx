@@ -28,17 +28,8 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLTableElement") extern class HTMLTableElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var caption : Null<HTMLTableCaptionElement>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var tHead : Null<HTMLTableSectionElement>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var tFoot : Null<HTMLTableSectionElement>;
 	/**
 		Unhandled extended attribute SameObject
@@ -50,68 +41,47 @@ package js.html;
 	var rows(default, null) : js.dom.HTMLCollection;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var border : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var frame : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var rules : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var summary : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var width : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var bgColor : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var cellPadding : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var cellSpacing : String;
 	function createCaption():HTMLTableCaptionElement;
 	function createTBody():HTMLTableSectionElement;
 	function createTFoot():HTMLTableSectionElement;
 	function createTHead():HTMLTableSectionElement;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function deleteCaption():Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function deleteRow(index:Int):Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function deleteTFoot():Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function deleteTHead():Void;
 	function insertRow(?index:Int = -1):HTMLTableRowElement;
 }

@@ -30,7 +30,6 @@ package js.html;
 @:native("HTMLParagraphElement") extern class HTMLParagraphElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
 }

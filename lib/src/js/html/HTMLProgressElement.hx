@@ -28,13 +28,7 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLProgressElement") extern class HTMLProgressElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var value : Float;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var max : Float;
 	var position(default, null) : Float;
 	var labels(default, null) : js.dom.NodeList;

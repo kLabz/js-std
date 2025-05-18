@@ -31,13 +31,13 @@ package js.html;
 			params : [TPType(TPath(<...>)),TPType(TPath(<...>))], 
 			pos : {
 				file : src/Main.hx, 
-				min : 4244, 
-				max : 4280
+				min : 4288, 
+				max : 4324
 			}, 
 			posPath : {
 				file : src/Main.hx, 
-				min : 4244, 
-				max : 4266
+				min : 4288, 
+				max : 4310
 			}
 		})
 	Unhandled extended attribute Exposed
@@ -45,45 +45,15 @@ package js.html;
 	Unhandled extended attribute LegacyUnenumerableNamedProperties
 **/
 @:native("HTMLFormElement") extern class HTMLFormElement extends HTMLElement implements ArrayAccess<js.dom.Element> {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var acceptCharset : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var action : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var autocomplete : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var enctype : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var encoding : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var method : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var name : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var noValidate : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var target : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var rel : String;
 	/**
 		Unhandled extended attribute SameObject
@@ -98,9 +68,6 @@ package js.html;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
 	function requestSubmit(?submitter:Null<HTMLElement> = null):Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function reset():Void;
 	function submit():Void;
 }

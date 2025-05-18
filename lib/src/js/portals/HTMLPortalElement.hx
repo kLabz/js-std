@@ -28,13 +28,7 @@ package js.portals;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLPortalElement") extern class HTMLPortalElement extends js.html.HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var src : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var referrerPolicy : String;
 	var onmessage : js.html.EventHandler;
 	var onmessageerror : js.html.EventHandler;

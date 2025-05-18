@@ -28,14 +28,8 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLFieldSetElement") extern class HTMLFieldSetElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var name : String;
 	var type(default, null) : String;
 	/**

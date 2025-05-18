@@ -28,20 +28,8 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLParamElement") extern class HTMLParamElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var name : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var value : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var type : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var valueType : String;
 }

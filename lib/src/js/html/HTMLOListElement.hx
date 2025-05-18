@@ -28,21 +28,11 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLOListElement") extern class HTMLOListElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var reversed : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var start : Int;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var type : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var compact : Bool;
 }

@@ -30,7 +30,6 @@ package js.html;
 @:native("HTMLMenuElement") extern class HTMLMenuElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var compact : Bool;
 }

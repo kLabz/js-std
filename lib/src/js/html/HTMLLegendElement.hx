@@ -31,7 +31,6 @@ package js.html;
 	var form(default, null) : Null<HTMLFormElement>;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
 }

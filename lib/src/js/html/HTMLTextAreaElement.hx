@@ -28,59 +28,20 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLTextAreaElement") extern class HTMLTextAreaElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var autocomplete : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var cols : Int;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var dirName : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var maxLength : Int;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var minLength : Int;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var name : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var placeholder : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var readOnly : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var required : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var rows : Int;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var wrap : String;
 	var type(default, null) : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var defaultValue : String;
 	var value : String;
 	var textLength(default, null) : Int;

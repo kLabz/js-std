@@ -28,33 +28,25 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLTableColElement") extern class HTMLTableColElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var span : Int;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var ch : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var chOff : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var vAlign : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var width : String;
 }

@@ -28,13 +28,7 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLFrameSetElement") extern class HTMLFrameSetElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var cols : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var rows : String;
 	/**
 		From interface mixin WindowEventHandlers

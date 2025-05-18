@@ -28,21 +28,12 @@ package js.cssom;
 	Unhandled extended attribute Exposed
 **/
 @:native("CSSStyleDeclaration") extern class CSSStyleDeclaration {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var cssText : CSSOMString;
 	var length(default, null) : Int;
 	var parentRule(default, null) : Null<CSSRule>;
 	function getPropertyPriority(property:CSSOMString):CSSOMString;
 	function getPropertyValue(property:CSSOMString):CSSOMString;
 	function item(index:Int):CSSOMString;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function removeProperty(property:CSSOMString):CSSOMString;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function setProperty(property:CSSOMString, value:CSSOMString, ?priority:CSSOMString = ""):Void;
 }

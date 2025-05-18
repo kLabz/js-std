@@ -54,47 +54,38 @@ package js.svg;
 	var origin(default, null) : String;
 	/**
 		From partial interface in SVG.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var protocol : String;
 	/**
 		From partial interface in SVG.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var username : String;
 	/**
 		From partial interface in SVG.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var password : String;
 	/**
 		From partial interface in SVG.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var host : String;
 	/**
 		From partial interface in SVG.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var hostname : String;
 	/**
 		From partial interface in SVG.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var port : String;
 	/**
 		From partial interface in SVG.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var pathname : String;
 	/**
 		From partial interface in SVG.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var search : String;
 	/**
 		From partial interface in SVG.idl
-		Unhandled extended attribute CEReactions
 	**/
 	var hash : String;
 }

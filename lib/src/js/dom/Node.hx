@@ -55,13 +55,7 @@ package js.dom;
 	var lastChild(default, null) : Null<Node>;
 	var previousSibling(default, null) : Null<Node>;
 	var nextSibling(default, null) : Null<Node>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var nodeValue : Null<String>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var textContent : Null<String>;
 	static inline var DOCUMENT_POSITION_DISCONNECTED : Int = 0x01;
 	static inline var DOCUMENT_POSITION_PRECEDING : Int = 0x02;
@@ -69,12 +63,8 @@ package js.dom;
 	static inline var DOCUMENT_POSITION_CONTAINS : Int = 0x08;
 	static inline var DOCUMENT_POSITION_CONTAINED_BY : Int = 0x10;
 	static inline var DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC : Int = 0x20;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function appendChild(node:Node):Node;
 	/**
-		Unhandled extended attribute CEReactions
 		Unhandled extended attribute NewObject
 	**/
 	function cloneNode(?subtree:Bool = false):Node;
@@ -82,25 +72,13 @@ package js.dom;
 	function contains(other:Null<Node>):Bool;
 	function getRootNode(?options:GetRootNodeOptions = {  }):Node;
 	function hasChildNodes():Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function insertBefore(node:Node, child:Null<Node>):Node;
 	function isDefaultNamespace(namespace:Null<String>):Bool;
 	function isEqualNode(otherNode:Null<Node>):Bool;
 	function isSameNode(otherNode:Null<Node>):Bool;
 	function lookupNamespaceURI(prefix:Null<String>):Null<String>;
 	function lookupPrefix(namespace:Null<String>):Null<String>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function normalize():Void;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function removeChild(child:Node):Node;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	function replaceChild(node:Node, child:Node):Node;
 }

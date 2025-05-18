@@ -28,9 +28,6 @@ package js.html;
 	Unhandled extended attribute Exposed
 **/
 @:native("HTMLMapElement") extern class HTMLMapElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var name : String;
 	/**
 		Unhandled extended attribute SameObject

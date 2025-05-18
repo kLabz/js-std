@@ -29,27 +29,12 @@ package js.html;
 	Unhandled extended attribute LegacyFactoryFunction
 **/
 @:native("HTMLOptionElement") extern class HTMLOptionElement extends HTMLElement {
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var label : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var defaultSelected : Bool;
 	var selected : Bool;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var value : String;
-	/**
-		Unhandled extended attribute CEReactions
-	**/
 	var text : String;
 	var index(default, null) : Int;
 }

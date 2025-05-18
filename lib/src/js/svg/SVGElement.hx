@@ -478,12 +478,10 @@ package js.svg;
 	var nonce : String;
 	/**
 		From interface mixin HTMLOrSVGElement
-		Unhandled extended attribute CEReactions
 	**/
 	var autofocus : Bool;
 	/**
 		From interface mixin HTMLOrSVGElement
-		Unhandled extended attribute CEReactions
 	**/
 	var tabIndex : Int;
 	/**

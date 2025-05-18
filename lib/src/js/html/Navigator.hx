@@ -165,17 +165,17 @@ package js.html;
 	**/
 	var clipboard(default, null) : js.clipboardApis.Clipboard;
 	/**
-		From partial interface in credential-management.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
-	**/
-	var credentials(default, null) : js.credentialManagement.CredentialsContainer;
-	/**
 		From partial interface in contact-picker.idl
 		Unhandled extended attribute SecureContext
 		Unhandled extended attribute SameObject
 	**/
 	var contacts(default, null) : js.contactPicker.ContactsManager;
+	/**
+		From partial interface in credential-management.idl
+		Unhandled extended attribute SecureContext
+		Unhandled extended attribute SameObject
+	**/
+	var credentials(default, null) : js.credentialManagement.CredentialsContainer;
 	/**
 		From partial interface in device-posture.idl
 		Unhandled extended attribute SameObject
@@ -192,11 +192,6 @@ package js.html;
 	**/
 	var ink(default, null) : js.inkEnhancement.Ink;
 	/**
-		From partial interface in html.idl
-		Unhandled extended attribute SameObject
-	**/
-	var userActivation(default, null) : UserActivation;
-	/**
 		From partial interface in is-input-pending.idl
 	**/
 	var scheduling(default, null) : js.isInputPending.Scheduling;
@@ -206,6 +201,11 @@ package js.html;
 		Unhandled extended attribute SameObject
 	**/
 	var keyboard(default, null) : js.keyboardLock.Keyboard;
+	/**
+		From partial interface in html.idl
+		Unhandled extended attribute SameObject
+	**/
+	var userActivation(default, null) : UserActivation;
 	/**
 		From partial interface in login-status.idl
 		Unhandled extended attribute SecureContext
@@ -254,12 +254,6 @@ package js.html;
 	**/
 	var privateAttribution(default, null) : js.ppa.PrivateAttribution;
 	/**
-		From partial interface in presentation-api.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
-	**/
-	var presentation(default, null) : js.presentationApi.Presentation;
-	/**
 		From partial interface in screen-wake-lock.idl
 		Unhandled extended attribute SameObject
 	**/
@@ -275,6 +269,12 @@ package js.html;
 		Unhandled extended attribute SameObject
 	**/
 	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
+	/**
+		From partial interface in presentation-api.idl
+		Unhandled extended attribute SecureContext
+		Unhandled extended attribute SameObject
+	**/
+	var presentation(default, null) : js.presentationApi.Presentation;
 	/**
 		From partial interface in turtledove.idl
 	**/

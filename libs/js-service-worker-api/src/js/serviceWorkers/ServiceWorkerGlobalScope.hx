@@ -67,10 +67,6 @@ package js.serviceWorkers;
 	**/
 	var onsync : js.html.EventHandler;
 	/**
-		From partial interface in content-index.idl
-	**/
-	var oncontentdelete : js.html.EventHandler;
-	/**
 		From partial interface in cookie-store.idl
 		Unhandled extended attribute SameObject
 	**/
@@ -79,6 +75,10 @@ package js.serviceWorkers;
 		From partial interface in cookie-store.idl
 	**/
 	var oncookiechange : js.html.EventHandler;
+	/**
+		From partial interface in content-index.idl
+	**/
+	var oncontentdelete : js.html.EventHandler;
 	/**
 		From partial interface in notifications.idl
 	**/

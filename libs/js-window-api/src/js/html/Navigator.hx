@@ -226,15 +226,15 @@ package js.html;
 	**/
 	var mediaDevices(default, null) : js.mediacaptureStreams.MediaDevices;
 	/**
-		From partial interface in mediaqueries-5.idl
-		Unhandled extended attribute SameObject
-	**/
-	var preferences(default, null) : js.mediaqueries5.PreferenceManager;
-	/**
 		From partial interface in mediasession.idl
 		Unhandled extended attribute SameObject
 	**/
 	var mediaSession(default, null) : js.mediasession.MediaSession;
+	/**
+		From partial interface in mediaqueries-5.idl
+		Unhandled extended attribute SameObject
+	**/
+	var preferences(default, null) : js.mediaqueries5.PreferenceManager;
 	/**
 		From partial interface in permissions.idl
 		Unhandled extended attribute SameObject
@@ -251,12 +251,6 @@ package js.html;
 	**/
 	var privateAttribution(default, null) : js.ppa.PrivateAttribution;
 	/**
-		From partial interface in presentation-api.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
-	**/
-	var presentation(default, null) : js.presentationApi.Presentation;
-	/**
 		From partial interface in screen-wake-lock.idl
 		Unhandled extended attribute SameObject
 	**/
@@ -267,6 +261,12 @@ package js.html;
 		Unhandled extended attribute SameObject
 	**/
 	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
+	/**
+		From partial interface in presentation-api.idl
+		Unhandled extended attribute SecureContext
+		Unhandled extended attribute SameObject
+	**/
+	var presentation(default, null) : js.presentationApi.Presentation;
 	/**
 		From partial interface in serial.idl
 		Unhandled extended attribute SameObject

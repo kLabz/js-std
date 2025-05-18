@@ -47,15 +47,15 @@ package js.serviceWorkers;
 	**/
 	var sync(default, null) : js.backgroundSync.SyncManager;
 	/**
-		From partial interface in content-index.idl
-		Unhandled extended attribute SameObject
-	**/
-	var index(default, null) : js.contentIndex.ContentIndex;
-	/**
 		From partial interface in cookie-store.idl
 		Unhandled extended attribute SameObject
 	**/
 	var cookies(default, null) : js.cookieStore.CookieStoreManager;
+	/**
+		From partial interface in content-index.idl
+		Unhandled extended attribute SameObject
+	**/
+	var index(default, null) : js.contentIndex.ContentIndex;
 	/**
 		From partial interface in payment-handler.idl
 		Unhandled extended attribute SameObject

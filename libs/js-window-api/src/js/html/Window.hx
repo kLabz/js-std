@@ -674,12 +674,6 @@ package js.html;
 	**/
 	var cookieStore(default, null) : js.cookieStore.CookieStore;
 	/**
-		From partial interface in css-viewport.idl
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute Replaceable
-	**/
-	var viewport(default, null) : js.cssViewport.Viewport;
-	/**
 		From partial interface in cssom-view.idl
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute Replaceable
@@ -756,6 +750,12 @@ package js.html;
 		Unhandled extended attribute Replaceable
 	**/
 	var devicePixelRatio(default, null) : Float;
+	/**
+		From partial interface in css-viewport.idl
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute Replaceable
+	**/
+	var viewport(default, null) : js.cssViewport.Viewport;
 	/**
 		From partial interface in document-picture-in-picture.idl
 		Unhandled extended attribute SameObject

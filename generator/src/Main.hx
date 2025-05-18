@@ -47,24 +47,21 @@ class Main {
 		var saved = new haxe.ds.StringMap<String>();
 
 		var libs = [
-			#if generate_unused_api
-			"UNUSED" => "js-unused-api",
-			#end
-
 			"*" => "js-core-api",
 			"Window" => "js-window-api",
+
 			"Worker" => "js-worker-api",
 			"ServiceWorker" => "js-service-worker-api",
-			// TODO
-			"DedicatedWorker" => null,
-			"SharedWorker" => null,
-			// TODO
-			"Worklet" => null,
-			"AnimationWorklet" => null,
-			"AudioWorklet" => null,
-			"LayoutWorklet" => null,
-			"PaintWorklet" => null,
-			"SharedStorageWorklet" => null,
+			"DedicatedWorker" => "js-worker-api", // See https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope
+			"SharedWorker" => null, // TODO
+
+			"Worklet" => "js-worklet-api",
+			"AnimationWorklet" => "js-worklet-api",
+			"AudioWorklet" => "js-worklet-api",
+			"LayoutWorklet" => "js-worklet-api",
+			"PaintWorklet" => "js-worklet-api",
+			"SharedStorageWorklet" => "js-worklet-api",
+
 			// TODO (?)
 			"RTCIdentityProvider" => null,
 			"InterestGroupScriptRunnerGlobalScope" => null,
@@ -74,7 +71,6 @@ class Main {
 			"InterestGroupBiddingAndScoringScriptRunnerGlobalScope" => null
 		];
 
-		// TODO: scope?
 		var packMap:Map<String, Array<String>> = [];
 		var scopeMap:Map<String, Null<Set<String>>> = [];
 		var dependents:Map<String, Set<String>> = [];
@@ -265,58 +261,58 @@ class Main {
 		}
 
 		function doSave(ctx:Context, t:String, td:TypeDefinition) {
-			if (ctx.scope.or([]).length == 0) {
-				ctx.scope = new Set();
-				var handledDependents:Set<String> = [t];
-				var abort = false;
+			if (ctx.scope == null) ctx.scope = new Set();
+			var handledDependents:Set<String> = [t];
+			var abort = false;
 
-				function handleType(dep:String) {
-					if (abort) return;
+			function handleType(dep:String) {
+				if (abort) return;
 
-					var depScope = scopeMap.get(dep).or([]);
-					for (s in depScope) {
-						if (s == "*") {
-							ctx.scope = ["*"];
-							abort = true;
-							return;
-						}
-						ctx.scope.add(s);
+				var depScope = scopeMap.get(dep).or([]);
+				for (s in depScope) {
+					if (s == "*") {
+						ctx.scope = ["*"];
+						abort = true;
+						return;
 					}
-
-					var deps = dependents.get(dep).or([]);
-					for (d in deps) {
-						if (abort) return;
-						if (!handledDependents.has(d)) {
-							handledDependents.add(d);
-							handleType(d);
-						}
-					}
+					ctx.scope.add(s);
 				}
 
-				handleType(t);
+				var deps = dependents.get(dep).or([]);
+				for (d in deps) {
+					if (abort) return;
+					if (!handledDependents.has(d)) {
+						handledDependents.add(d);
+						handleType(d);
+					}
+				}
 			}
+
+			handleType(t);
 
 			// Doesn't seem needed atm, but doesn't hurt to check
 			if (ctx.scope.has("*")) ctx.scope = ["*"];
 
-			#if generate_unused_api
-			if (ctx.scope.length == 0) ctx.scope.add("UNUSED");
-			else ctx.scope.remove("UNUSED");
-			#end
-
-			var generated = false;
+			var targetLibs:Set<String> = [];
 			for (s in ctx.scope) {
 				if (!libs.exists(s)) Sys.println('WARNING: Cannot find target library for $t (scope=$s)');
-
 				var lib = libs[s];
 				if (lib == null) continue;
-
-				generated = true;
-				saveTo(ctx, lib, t, td);
+				targetLibs.add(lib);
 			}
 
-			// TODO: make sure the type really is not used
-			if (!generated) Sys.println('WARNING: type $t was not generated in any lib');
+			// TODO: if present in all libs, generate in core instead
+
+			if (targetLibs.length > 0) {
+				for (lib in targetLibs) saveTo(ctx, lib, t, td);
+			} else {
+				// TODO: make sure the type really is not used
+				Sys.println('WARNING: type $t was not generated in any lib');
+
+				#if generate_unused_api
+				saveTo(ctx, "js-unused-api", t, td);
+				#end
+			}
 		}
 
 		function handleFile(file:FileHandler, res:Array<IDLRootType>) {

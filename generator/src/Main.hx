@@ -37,7 +37,7 @@ typedef Context = {
 	var t:String;
 	var file:FileHandler;
 	var pack:Array<String>;
-	var scope:Null<Array<String>>;
+	var scope:Null<Set<String>>;
 }
 
 // TODO: clean up that POC
@@ -262,7 +262,7 @@ class Main {
 
 		function doSave(ctx:Context, t:String, td:TypeDefinition) {
 			if (ctx.scope == null) {
-				var scope = new Set();
+				ctx.scope = new Set();
 				var handledDependents = [t];
 				var abort = false;
 
@@ -272,15 +272,16 @@ class Main {
 					var depScope = scopeMap.get(dep).or([]);
 					for (s in depScope) {
 						if (s == "*") {
-							scope = Set.fromArray(["*"]);
+							ctx.scope = Set.fromArray(["*"]);
 							abort = true;
 							return;
 						}
-						scope.add(s);
+						ctx.scope.add(s);
 					}
 
 					var deps = dependents.get(dep).or([]);
 					for (d in deps) {
+						if (abort) return;
 						if (!handledDependents.contains(d)) {
 							handledDependents.push(d);
 							handleType(d);
@@ -289,15 +290,10 @@ class Main {
 				}
 
 				handleType(t);
-				ctx.scope = scope;
-
-				if (ctx.scope.length == 0) {
-					Sys.println('ERROR: Cannot find target library for $t (scope=${ctx.scope})');
-					// TODO: if scope is null, we need to add the type to the library using it
-					// Adding it to core for now, though that's not correct and will likely cause errors
-					ctx.scope = ["*"];
-				}
 			}
+
+			// Doesn't seem needed atm, but doesn't hurt to check
+			if (ctx.scope.has("*")) ctx.scope = ["*"];
 
 			var generated = false;
 			for (s in ctx.scope) {
@@ -310,6 +306,7 @@ class Main {
 				saveTo(ctx, lib, t, td);
 			}
 
+			// TODO: make sure the type really is not used
 			if (!generated) Sys.println('WARNING: type $t was not generated in any lib');
 		}
 

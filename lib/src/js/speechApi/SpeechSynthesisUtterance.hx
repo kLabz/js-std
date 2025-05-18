@@ -24,7 +24,7 @@
 
 package js.speechApi;
 
-extern class SpeechSynthesisUtterance extends js.dom.EventTarget {
+@:native("SpeechSynthesisUtterance") extern class SpeechSynthesisUtterance extends js.dom.EventTarget {
 	var text : String;
 	var lang : String;
 	var voice : Null<SpeechSynthesisVoice>;

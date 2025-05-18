@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUDevice extends js.dom.EventTarget {
+@:native("GPUDevice") extern class GPUDevice extends js.dom.EventTarget {
 	var features(default, null) : GPUSupportedFeatures;
 	var limits(default, null) : GPUSupportedLimits;
 	var adapterInfo(default, null) : GPUAdapterInfo;

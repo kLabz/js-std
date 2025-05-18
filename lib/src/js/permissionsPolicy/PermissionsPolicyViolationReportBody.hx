@@ -24,7 +24,7 @@
 
 package js.permissionsPolicy;
 
-extern class PermissionsPolicyViolationReportBody extends js.reporting.ReportBody {
+@:native("PermissionsPolicyViolationReportBody") extern class PermissionsPolicyViolationReportBody extends js.reporting.ReportBody {
 	var featureId(default, null) : String;
 	var sourceFile(default, null) : Null<String>;
 	var lineNumber(default, null) : Null<Int>;

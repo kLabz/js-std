@@ -24,7 +24,7 @@
 
 package js.webBluetooth;
 
-extern class BluetoothRemoteGATTCharacteristic extends js.dom.EventTarget {
+@:native("BluetoothRemoteGATTCharacteristic") extern class BluetoothRemoteGATTCharacteristic extends js.dom.EventTarget {
 	var service(default, null) : BluetoothRemoteGATTService;
 	var uuid(default, null) : UUID;
 	var properties(default, null) : BluetoothCharacteristicProperties;

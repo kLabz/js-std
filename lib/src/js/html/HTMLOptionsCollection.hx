@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLOptionsCollection extends js.dom.HTMLCollection {
+@:native("HTMLOptionsCollection") extern class HTMLOptionsCollection extends js.dom.HTMLCollection {
 	var length : Int;
 	var selectedIndex : Int;
 	/**

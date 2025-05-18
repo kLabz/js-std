@@ -24,7 +24,7 @@
 
 package js.webAppLaunch;
 
-extern class LaunchParams {
+@:native("LaunchParams") extern class LaunchParams {
 	var targetURL(default, null) : Null<String>;
 	var files(default, null) : Array<js.fs.FileSystemHandle>;
 }

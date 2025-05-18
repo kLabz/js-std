@@ -24,7 +24,7 @@
 
 package js.navigationTiming;
 
-extern class PerformanceNavigationTiming extends js.resourceTiming.PerformanceResourceTiming {
+@:native("PerformanceNavigationTiming") extern class PerformanceNavigationTiming extends js.resourceTiming.PerformanceResourceTiming {
 	var unloadEventStart(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var unloadEventEnd(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var domInteractive(default, null) : js.hrTime.DOMHighResTimeStamp;

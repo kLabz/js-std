@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class FormDataEvent extends js.dom.Event {
+@:native("FormDataEvent") extern class FormDataEvent extends js.dom.Event {
 	var formData(default, null) : js.xhr.FormData;
 	function new(type:String, eventInitDict:FormDataEventInit):Void;
 }

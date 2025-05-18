@@ -24,6 +24,6 @@
 
 package js.webtransport;
 
-extern class WebTransportReceiveStream extends js.streams.ReadableStream {
+@:native("WebTransportReceiveStream") extern class WebTransportReceiveStream extends js.streams.ReadableStream {
 	function getStats():js.lib.Promise<WebTransportReceiveStreamStats>;
 }

@@ -24,7 +24,7 @@
 
 package js.deprecationReporting;
 
-extern class DeprecationReportBody extends js.reporting.ReportBody {
+@:native("DeprecationReportBody") extern class DeprecationReportBody extends js.reporting.ReportBody {
 	var id(default, null) : String;
 	var anticipatedRemoval(default, null) : Null<{ }>;
 	var message(default, null) : String;

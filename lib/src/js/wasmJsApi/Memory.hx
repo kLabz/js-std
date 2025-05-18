@@ -24,7 +24,7 @@
 
 package js.wasmJsApi;
 
-extern class Memory {
+@:native("Memory") extern class Memory {
 	var buffer(default, null) : ArrayBuffer;
 	function new(descriptor:MemoryDescriptor):Void;
 	function grow(delta:Int):Int;

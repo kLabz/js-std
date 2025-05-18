@@ -24,7 +24,7 @@
 
 package js.genericSensor;
 
-extern class Sensor extends js.dom.EventTarget {
+@:native("Sensor") extern class Sensor extends js.dom.EventTarget {
 	var activated(default, null) : Bool;
 	var hasReading(default, null) : Bool;
 	var timestamp(default, null) : Null<js.hrTime.DOMHighResTimeStamp>;

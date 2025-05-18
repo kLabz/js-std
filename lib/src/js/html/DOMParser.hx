@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class DOMParser {
+@:native("DOMParser") extern class DOMParser {
 	function new():Void;
 	function parseFromString(string:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>, type:DOMParserSupportedType):js.dom.Document;
 }

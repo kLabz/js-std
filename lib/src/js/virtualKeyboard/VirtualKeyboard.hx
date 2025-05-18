@@ -24,7 +24,7 @@
 
 package js.virtualKeyboard;
 
-extern class VirtualKeyboard extends js.dom.EventTarget {
+@:native("VirtualKeyboard") extern class VirtualKeyboard extends js.dom.EventTarget {
 	var boundingRect(default, null) : js.geometry.DOMRect;
 	var overlaysContent : Bool;
 	var ongeometrychange : js.html.EventHandler;

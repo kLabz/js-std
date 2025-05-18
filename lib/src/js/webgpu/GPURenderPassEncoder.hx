@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPURenderPassEncoder {
+@:native("GPURenderPassEncoder") extern class GPURenderPassEncoder {
 	/**
 		From interface mixin GPUObjectBase
 	**/

@@ -24,7 +24,7 @@
 
 package js.webBluetoothScanning;
 
-extern class BluetoothLEScan {
+@:native("BluetoothLEScan") extern class BluetoothLEScan {
 	var filters(default, null) : Array<BluetoothLEScanFilter>;
 	var keepRepeatedDevices(default, null) : Bool;
 	var acceptAllAdvertisements(default, null) : Bool;

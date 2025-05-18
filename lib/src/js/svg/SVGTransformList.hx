@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGTransformList {
+@:native("SVGTransformList") extern class SVGTransformList {
 	var length(default, null) : Int;
 	var numberOfItems(default, null) : Int;
 	/**

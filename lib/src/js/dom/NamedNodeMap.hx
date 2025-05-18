@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class NamedNodeMap {
+@:native("NamedNodeMap") extern class NamedNodeMap {
 	var length(default, null) : Int;
 	function getNamedItem(qualifiedName:String):Null<Attr>;
 	function getNamedItemNS(namespace:Null<String>, localName:String):Null<Attr>;

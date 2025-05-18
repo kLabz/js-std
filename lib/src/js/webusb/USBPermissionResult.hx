@@ -24,6 +24,6 @@
 
 package js.webusb;
 
-extern class USBPermissionResult extends js.permissions.PermissionStatus {
+@:native("USBPermissionResult") extern class USBPermissionResult extends js.permissions.PermissionStatus {
 	var devices : Array<USBDevice>;
 }

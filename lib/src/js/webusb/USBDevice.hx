@@ -24,7 +24,7 @@
 
 package js.webusb;
 
-extern class USBDevice {
+@:native("USBDevice") extern class USBDevice {
 	var usbVersionMajor(default, null) : Int;
 	var usbVersionMinor(default, null) : Int;
 	var usbVersionSubminor(default, null) : Int;

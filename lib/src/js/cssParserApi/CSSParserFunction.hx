@@ -24,7 +24,7 @@
 
 package js.cssParserApi;
 
-extern class CSSParserFunction extends CSSParserValue {
+@:native("CSSParserFunction") extern class CSSParserFunction extends CSSParserValue {
 	var name(default, null) : String;
 	var args(default, null) : Array<Array<CSSParserValue>>;
 	function new(name:String, args:Array<Array<CSSParserValue>>):Void;

@@ -24,7 +24,7 @@
 
 package js.presentationApi;
 
-extern class Presentation {
+@:native("Presentation") extern class Presentation {
 	/**
 		From partial interface in presentation-api.idl
 	**/

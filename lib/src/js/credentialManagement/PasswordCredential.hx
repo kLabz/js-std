@@ -24,7 +24,7 @@
 
 package js.credentialManagement;
 
-extern class PasswordCredential extends Credential {
+@:native("PasswordCredential") extern class PasswordCredential extends Credential {
 	var password(default, null) : String;
 	/**
 		From interface mixin CredentialUserData

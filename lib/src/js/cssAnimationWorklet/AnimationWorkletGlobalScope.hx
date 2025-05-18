@@ -24,6 +24,6 @@
 
 package js.cssAnimationWorklet;
 
-extern class AnimationWorkletGlobalScope extends js.html.WorkletGlobalScope {
+@:native("AnimationWorkletGlobalScope") extern class AnimationWorkletGlobalScope extends js.html.WorkletGlobalScope {
 	function registerAnimator(name:String, animatorCtor:AnimatorInstanceConstructor):Void;
 }

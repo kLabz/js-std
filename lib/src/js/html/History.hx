@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class History {
+@:native("History") extern class History {
 	var length(default, null) : Int;
 	var scrollRestoration : ScrollRestoration;
 	var state(default, null) : Any;

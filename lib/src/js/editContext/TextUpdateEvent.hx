@@ -24,7 +24,7 @@
 
 package js.editContext;
 
-extern class TextUpdateEvent extends js.dom.Event {
+@:native("TextUpdateEvent") extern class TextUpdateEvent extends js.dom.Event {
 	var updateRangeStart(default, null) : Int;
 	var updateRangeEnd(default, null) : Int;
 	var text(default, null) : String;

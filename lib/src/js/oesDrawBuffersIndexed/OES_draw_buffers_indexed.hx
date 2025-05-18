@@ -24,7 +24,7 @@
 
 package js.oesDrawBuffersIndexed;
 
-extern class OES_draw_buffers_indexed {
+@:native("OES_draw_buffers_indexed") extern class OES_draw_buffers_indexed {
 	function blendEquationSeparateiOES(buf:js.webgl1.GLuint, modeRGB:js.webgl1.GLenum, modeAlpha:js.webgl1.GLenum):Void;
 	function blendEquationiOES(buf:js.webgl1.GLuint, mode:js.webgl1.GLenum):Void;
 	function blendFuncSeparateiOES(buf:js.webgl1.GLuint, srcRGB:js.webgl1.GLenum, dstRGB:js.webgl1.GLenum, srcAlpha:js.webgl1.GLenum, dstAlpha:js.webgl1.GLenum):Void;

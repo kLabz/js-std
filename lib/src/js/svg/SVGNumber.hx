@@ -24,6 +24,6 @@
 
 package js.svg;
 
-extern class SVGNumber {
+@:native("SVGNumber") extern class SVGNumber {
 	var value : Float;
 }

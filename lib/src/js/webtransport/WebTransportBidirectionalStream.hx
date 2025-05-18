@@ -24,7 +24,7 @@
 
 package js.webtransport;
 
-extern class WebTransportBidirectionalStream {
+@:native("WebTransportBidirectionalStream") extern class WebTransportBidirectionalStream {
 	var readable(default, null) : WebTransportReceiveStream;
 	var writable(default, null) : WebTransportSendStream;
 }

@@ -24,7 +24,7 @@
 
 package js.trustedTypes;
 
-extern class TrustedHTML {
+@:native("TrustedHTML") extern class TrustedHTML {
 	/**
 		(special = stringifier)
 	**/

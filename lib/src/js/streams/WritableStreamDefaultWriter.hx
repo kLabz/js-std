@@ -24,7 +24,7 @@
 
 package js.streams;
 
-extern class WritableStreamDefaultWriter {
+@:native("WritableStreamDefaultWriter") extern class WritableStreamDefaultWriter {
 	var closed(default, null) : js.lib.Promise<Void>;
 	var desiredSize(default, null) : Null<Float>;
 	var ready(default, null) : js.lib.Promise<Void>;

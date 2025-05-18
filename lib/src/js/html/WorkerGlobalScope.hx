@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class WorkerGlobalScope extends js.dom.EventTarget {
+@:native("WorkerGlobalScope") extern class WorkerGlobalScope extends js.dom.EventTarget {
 	var self(default, null) : WorkerGlobalScope;
 	var location(default, null) : WorkerLocation;
 	var navigator(default, null) : WorkerNavigator;

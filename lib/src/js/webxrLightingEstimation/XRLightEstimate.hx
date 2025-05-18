@@ -24,7 +24,7 @@
 
 package js.webxrLightingEstimation;
 
-extern class XRLightEstimate {
+@:native("XRLightEstimate") extern class XRLightEstimate {
 	var sphericalHarmonicsCoefficients(default, null) : Float32Array;
 	var primaryLightDirection(default, null) : js.geometry.DOMPointReadOnly;
 	var primaryLightIntensity(default, null) : js.geometry.DOMPointReadOnly;

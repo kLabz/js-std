@@ -24,7 +24,7 @@
 
 package js.cssPaintApi;
 
-extern class PaintSize {
+@:native("PaintSize") extern class PaintSize {
 	var width(default, null) : Float;
 	var height(default, null) : Float;
 }

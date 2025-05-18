@@ -24,6 +24,6 @@
 
 package js.webaudio;
 
-extern class PeriodicWave {
+@:native("PeriodicWave") extern class PeriodicWave {
 	function new(context:BaseAudioContext, ?options:PeriodicWaveOptions = {  }):Void;
 }

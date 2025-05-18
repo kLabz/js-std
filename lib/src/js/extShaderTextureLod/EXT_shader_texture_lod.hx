@@ -24,6 +24,6 @@
 
 package js.extShaderTextureLod;
 
-extern class EXT_shader_texture_lod {
+@:native("EXT_shader_texture_lod") extern class EXT_shader_texture_lod {
 
 }

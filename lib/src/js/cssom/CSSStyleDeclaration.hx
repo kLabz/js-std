@@ -24,7 +24,7 @@
 
 package js.cssom;
 
-extern class CSSStyleDeclaration {
+@:native("CSSStyleDeclaration") extern class CSSStyleDeclaration {
 	var cssText : CSSOMString;
 	var length(default, null) : Int;
 	var parentRule(default, null) : Null<CSSRule>;

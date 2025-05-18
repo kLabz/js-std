@@ -24,7 +24,7 @@
 
 package js.cssom;
 
-extern class CSSStyleSheet extends StyleSheet {
+@:native("CSSStyleSheet") extern class CSSStyleSheet extends StyleSheet {
 	var ownerRule(default, null) : Null<CSSRule>;
 	var cssRules(default, null) : CSSRuleList;
 	/**

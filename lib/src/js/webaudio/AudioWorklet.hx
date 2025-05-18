@@ -24,6 +24,6 @@
 
 package js.webaudio;
 
-extern class AudioWorklet extends js.html.Worklet {
+@:native("AudioWorklet") extern class AudioWorklet extends js.html.Worklet {
 	var port(default, null) : js.html.MessagePort;
 }

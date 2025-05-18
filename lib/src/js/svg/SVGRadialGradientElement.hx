@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGRadialGradientElement extends SVGGradientElement {
+@:native("SVGRadialGradientElement") extern class SVGRadialGradientElement extends SVGGradientElement {
 	var cx(default, null) : SVGAnimatedLength;
 	var cy(default, null) : SVGAnimatedLength;
 	var r(default, null) : SVGAnimatedLength;

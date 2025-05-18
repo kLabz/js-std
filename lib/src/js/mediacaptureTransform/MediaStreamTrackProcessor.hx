@@ -24,7 +24,7 @@
 
 package js.mediacaptureTransform;
 
-extern class MediaStreamTrackProcessor {
+@:native("MediaStreamTrackProcessor") extern class MediaStreamTrackProcessor {
 	var readable(default, null) : js.streams.ReadableStream;
 	function new(init:MediaStreamTrackProcessorInit):Void;
 }

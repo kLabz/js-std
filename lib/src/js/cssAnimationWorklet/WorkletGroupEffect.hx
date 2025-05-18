@@ -24,6 +24,6 @@
 
 package js.cssAnimationWorklet;
 
-extern class WorkletGroupEffect {
+@:native("WorkletGroupEffect") extern class WorkletGroupEffect {
 	function getChildren():Array<WorkletAnimationEffect>;
 }

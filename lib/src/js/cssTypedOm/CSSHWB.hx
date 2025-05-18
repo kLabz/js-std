@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSHWB extends CSSColorValue {
+@:native("CSSHWB") extern class CSSHWB extends CSSColorValue {
 	var h : CSSNumericValue;
 	var w : CSSNumberish;
 	var b : CSSNumberish;

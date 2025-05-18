@@ -24,7 +24,7 @@
 
 package js.capturedMouseEvents;
 
-extern class CapturedMouseEvent extends js.dom.Event {
+@:native("CapturedMouseEvent") extern class CapturedMouseEvent extends js.dom.Event {
 	var surfaceX(default, null) : Int;
 	var surfaceY(default, null) : Int;
 	function new(type:String, ?eventInitDict:CapturedMouseEventInit = {  }):Void;

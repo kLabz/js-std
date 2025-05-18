@@ -24,7 +24,7 @@
 
 package js.serviceWorkers;
 
-extern class CacheStorage {
+@:native("CacheStorage") extern class CacheStorage {
 	function delete(cacheName:String):js.lib.Promise<Bool>;
 	function has(cacheName:String):js.lib.Promise<Bool>;
 	function keys():js.lib.Promise<Array<String>>;

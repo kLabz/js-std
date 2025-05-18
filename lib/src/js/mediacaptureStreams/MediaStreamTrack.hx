@@ -24,7 +24,7 @@
 
 package js.mediacaptureStreams;
 
-extern class MediaStreamTrack extends js.dom.EventTarget {
+@:native("MediaStreamTrack") extern class MediaStreamTrack extends js.dom.EventTarget {
 	var kind(default, null) : String;
 	var id(default, null) : String;
 	var label(default, null) : String;

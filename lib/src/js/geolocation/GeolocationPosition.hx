@@ -24,7 +24,7 @@
 
 package js.geolocation;
 
-extern class GeolocationPosition {
+@:native("GeolocationPosition") extern class GeolocationPosition {
 	var coords(default, null) : GeolocationCoordinates;
 	var timestamp(default, null) : js.hrTime.EpochTimeStamp;
 	function toJSON():{ };

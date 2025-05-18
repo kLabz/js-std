@@ -24,7 +24,7 @@
 
 package js.webnn;
 
-extern class MLContext {
+@:native("MLContext") extern class MLContext {
 	var lost(default, null) : js.lib.Promise<MLContextLostInfo>;
 	function createConstantTensor(descriptor:MLOperandDescriptor, inputData:js.webidl.AllowSharedBufferSource):js.lib.Promise<MLTensor>;
 	function createTensor(descriptor:MLTensorDescriptor):js.lib.Promise<MLTensor>;

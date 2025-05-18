@@ -24,7 +24,7 @@
 
 package js.genericSensor;
 
-extern class SensorErrorEvent extends js.dom.Event {
+@:native("SensorErrorEvent") extern class SensorErrorEvent extends js.dom.Event {
 	var error(default, null) : js.webidl.DOMException;
 	function new(type:String, errorEventInitDict:SensorErrorEventInit):Void;
 }

@@ -24,7 +24,7 @@
 
 package js.fetch;
 
-extern class Response {
+@:native("Response") extern class Response {
 	var type(default, null) : ResponseType;
 	var url(default, null) : String;
 	var redirected(default, null) : Bool;

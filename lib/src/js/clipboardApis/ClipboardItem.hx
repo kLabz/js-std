@@ -24,7 +24,7 @@
 
 package js.clipboardApis;
 
-extern class ClipboardItem {
+@:native("ClipboardItem") extern class ClipboardItem {
 	var presentationStyle(default, null) : PresentationStyle;
 	var types(default, null) : Array<String>;
 	function new(items:haxe.DynamicAccess<ClipboardItemData>, ?options:ClipboardItemOptions = {  }):Void;

@@ -24,7 +24,7 @@
 
 package js.cssFonts5;
 
-extern class CSSFontFaceDescriptors extends js.cssom.CSSStyleDeclaration {
+@:native("CSSFontFaceDescriptors") extern class CSSFontFaceDescriptors extends js.cssom.CSSStyleDeclaration {
 	var src : CSSOMString;
 	var fontFamily : CSSOMString;
 	var font-family : CSSOMString;

@@ -24,7 +24,7 @@
 
 package js.geometry;
 
-extern class DOMQuad {
+@:native("DOMQuad") extern class DOMQuad {
 	var p1(default, null) : DOMPoint;
 	var p2(default, null) : DOMPoint;
 	var p3(default, null) : DOMPoint;

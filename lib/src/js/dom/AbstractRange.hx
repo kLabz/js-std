@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class AbstractRange {
+@:native("AbstractRange") extern class AbstractRange {
 	var startContainer(default, null) : Node;
 	var startOffset(default, null) : Int;
 	var endContainer(default, null) : Node;

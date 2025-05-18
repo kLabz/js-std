@@ -24,7 +24,7 @@
 
 package js.webNfc;
 
-extern class NDEFMessage {
+@:native("NDEFMessage") extern class NDEFMessage {
 	var records(default, null) : Array<NDEFRecord>;
 	function new(messageInit:NDEFMessageInit):Void;
 }

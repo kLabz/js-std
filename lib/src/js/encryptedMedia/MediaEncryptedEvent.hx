@@ -24,7 +24,7 @@
 
 package js.encryptedMedia;
 
-extern class MediaEncryptedEvent extends js.dom.Event {
+@:native("MediaEncryptedEvent") extern class MediaEncryptedEvent extends js.dom.Event {
 	var initDataType(default, null) : String;
 	var initData(default, null) : Null<ArrayBuffer>;
 	function new(type:String, ?eventInitDict:MediaEncryptedEventInit = {  }):Void;

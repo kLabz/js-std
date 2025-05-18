@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class ShadowRoot extends DocumentFragment {
+@:native("ShadowRoot") extern class ShadowRoot extends DocumentFragment {
 	var mode(default, null) : ShadowRootMode;
 	var delegatesFocus(default, null) : Bool;
 	var slotAssignment(default, null) : SlotAssignmentMode;

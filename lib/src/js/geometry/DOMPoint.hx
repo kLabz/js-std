@@ -30,7 +30,7 @@ package js.geometry;
 	TODO attribute z: special=inherit readonly=false
 	TODO attribute w: special=inherit readonly=false
 **/
-extern class DOMPoint extends DOMPointReadOnly {
+@:native("DOMPoint") extern class DOMPoint extends DOMPointReadOnly {
 	function new(?x:Float = 0, ?y:Float = 0, ?z:Float = 0, ?w:Float = 1):Void;
 	function fromPoint(?other:DOMPointInit = {  }):DOMPoint;
 }

@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGTextPathElement extends SVGTextContentElement {
+@:native("SVGTextPathElement") extern class SVGTextPathElement extends SVGTextContentElement {
 	static inline var TEXTPATH_METHODTYPE_UNKNOWN : Int = 0;
 	static inline var TEXTPATH_METHODTYPE_ALIGN : Int = 1;
 	static inline var TEXTPATH_METHODTYPE_STRETCH : Int = 2;

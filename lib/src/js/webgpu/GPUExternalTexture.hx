@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUExternalTexture {
+@:native("GPUExternalTexture") extern class GPUExternalTexture {
 	/**
 		From interface mixin GPUObjectBase
 	**/

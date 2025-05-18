@@ -24,7 +24,7 @@
 
 package js.navigationTiming;
 
-extern class PerformanceNavigation {
+@:native("PerformanceNavigation") extern class PerformanceNavigation {
 	static inline var TYPE_NAVIGATE : Int = 0;
 	static inline var TYPE_RELOAD : Int = 1;
 	static inline var TYPE_BACK_FORWARD : Int = 2;

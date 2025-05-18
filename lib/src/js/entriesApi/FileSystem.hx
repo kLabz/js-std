@@ -24,7 +24,7 @@
 
 package js.entriesApi;
 
-extern class FileSystem {
+@:native("FileSystem") extern class FileSystem {
 	var name(default, null) : String;
 	var root(default, null) : FileSystemDirectoryEntry;
 }

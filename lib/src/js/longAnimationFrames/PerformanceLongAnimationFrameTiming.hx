@@ -24,7 +24,7 @@
 
 package js.longAnimationFrames;
 
-extern class PerformanceLongAnimationFrameTiming extends js.performanceTimeline.PerformanceEntry {
+@:native("PerformanceLongAnimationFrameTiming") extern class PerformanceLongAnimationFrameTiming extends js.performanceTimeline.PerformanceEntry {
 	var startTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var duration(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var name(default, null) : String;

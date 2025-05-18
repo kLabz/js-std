@@ -24,7 +24,7 @@
 
 package js.cssFontLoading;
 
-extern class FontFacePalette implements ArrayAccess<String> {
+@:native("FontFacePalette") extern class FontFacePalette implements ArrayAccess<String> {
 	var length(default, null) : Int;
 	var usableWithLightBackground(default, null) : Bool;
 	var usableWithDarkBackground(default, null) : Bool;

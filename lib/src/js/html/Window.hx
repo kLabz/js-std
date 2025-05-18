@@ -27,7 +27,7 @@ package js.html;
 /**
 	TODO ArrayAccess<> for tkey=String tvalue=TAnonymous([])
 **/
-extern class Window extends js.dom.EventTarget {
+@:native("Window") extern class Window extends js.dom.EventTarget {
 	var window(default, null) : WindowProxy;
 	var self(default, null) : WindowProxy;
 	var document(default, null) : js.dom.Document;

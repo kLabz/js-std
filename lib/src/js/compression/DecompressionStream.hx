@@ -24,7 +24,7 @@
 
 package js.compression;
 
-extern class DecompressionStream {
+@:native("DecompressionStream") extern class DecompressionStream {
 	/**
 		From interface mixin GenericTransformStream
 	**/

@@ -24,7 +24,7 @@
 
 package js.webauthn;
 
-extern class AuthenticatorAttestationResponse extends AuthenticatorResponse {
+@:native("AuthenticatorAttestationResponse") extern class AuthenticatorAttestationResponse extends AuthenticatorResponse {
 	var attestationObject(default, null) : ArrayBuffer;
 	function getAuthenticatorData():ArrayBuffer;
 	function getPublicKey():Null<ArrayBuffer>;

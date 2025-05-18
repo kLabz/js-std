@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class StylePropertyMap extends StylePropertyMapReadOnly {
+@:native("StylePropertyMap") extern class StylePropertyMap extends StylePropertyMapReadOnly {
 	function append(property:String, values:haxe.extern.EitherType<CSSStyleValue, String>):Void;
 	function clear():Void;
 	function delete(property:String):Void;

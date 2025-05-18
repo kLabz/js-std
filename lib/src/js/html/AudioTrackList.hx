@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class AudioTrackList extends js.dom.EventTarget implements ArrayAccess<AudioTrack> {
+@:native("AudioTrackList") extern class AudioTrackList extends js.dom.EventTarget implements ArrayAccess<AudioTrack> {
 	var length(default, null) : Int;
 	var onchange : EventHandler;
 	var onaddtrack : EventHandler;

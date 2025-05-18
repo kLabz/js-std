@@ -24,7 +24,7 @@
 
 package js.orientationEvent;
 
-extern class DeviceMotionEventRotationRate {
+@:native("DeviceMotionEventRotationRate") extern class DeviceMotionEventRotationRate {
 	var alpha(default, null) : Null<Float>;
 	var beta(default, null) : Null<Float>;
 	var gamma(default, null) : Null<Float>;

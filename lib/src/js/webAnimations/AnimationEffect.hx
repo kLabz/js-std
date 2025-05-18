@@ -24,7 +24,7 @@
 
 package js.webAnimations;
 
-extern class AnimationEffect {
+@:native("AnimationEffect") extern class AnimationEffect {
 	/**
 		From partial interface in web-animations-2.idl
 	**/

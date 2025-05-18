@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGCircleElement extends SVGGeometryElement {
+@:native("SVGCircleElement") extern class SVGCircleElement extends SVGGeometryElement {
 	var cx(default, null) : SVGAnimatedLength;
 	var cy(default, null) : SVGAnimatedLength;
 	var r(default, null) : SVGAnimatedLength;

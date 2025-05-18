@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCDtlsTransport extends js.dom.EventTarget {
+@:native("RTCDtlsTransport") extern class RTCDtlsTransport extends js.dom.EventTarget {
 	var iceTransport(default, null) : RTCIceTransport;
 	var state(default, null) : RTCDtlsTransportState;
 	var onstatechange : js.html.EventHandler;

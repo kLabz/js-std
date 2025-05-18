@@ -24,7 +24,7 @@
 
 package js.orientationEvent;
 
-extern class DeviceOrientationEvent extends js.dom.Event {
+@:native("DeviceOrientationEvent") extern class DeviceOrientationEvent extends js.dom.Event {
 	var alpha(default, null) : Null<Float>;
 	var beta(default, null) : Null<Float>;
 	var gamma(default, null) : Null<Float>;

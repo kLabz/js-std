@@ -24,7 +24,7 @@
 
 package js.xhr;
 
-extern class XMLHttpRequestEventTarget extends js.dom.EventTarget {
+@:native("XMLHttpRequestEventTarget") extern class XMLHttpRequestEventTarget extends js.dom.EventTarget {
 	var onloadstart : js.html.EventHandler;
 	var onprogress : js.html.EventHandler;
 	var onabort : js.html.EventHandler;

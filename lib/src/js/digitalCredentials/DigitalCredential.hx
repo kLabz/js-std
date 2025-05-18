@@ -24,7 +24,7 @@
 
 package js.digitalCredentials;
 
-extern class DigitalCredential extends js.credentialManagement.Credential {
+@:native("DigitalCredential") extern class DigitalCredential extends js.credentialManagement.Credential {
 	var protocol(default, null) : String;
 	var data(default, null) : { };
 }

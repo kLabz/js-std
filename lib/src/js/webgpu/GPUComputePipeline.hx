@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUComputePipeline {
+@:native("GPUComputePipeline") extern class GPUComputePipeline {
 	/**
 		From interface mixin GPUObjectBase
 	**/

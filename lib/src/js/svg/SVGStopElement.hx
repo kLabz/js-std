@@ -24,6 +24,6 @@
 
 package js.svg;
 
-extern class SVGStopElement extends SVGElement {
+@:native("SVGStopElement") extern class SVGStopElement extends SVGElement {
 	var offset(default, null) : SVGAnimatedNumber;
 }

@@ -24,6 +24,6 @@
 
 package js.webgl2;
 
-extern class WebGLSync extends js.webgl1.WebGLObject {
+@:native("WebGLSync") extern class WebGLSync extends js.webgl1.WebGLObject {
 
 }

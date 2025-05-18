@@ -24,7 +24,7 @@
 
 package js.windowManagement;
 
-extern class ScreenDetailed extends js.cssomView.Screen {
+@:native("ScreenDetailed") extern class ScreenDetailed extends js.cssomView.Screen {
 	var availLeft(default, null) : Int;
 	var availTop(default, null) : Int;
 	var left(default, null) : Int;

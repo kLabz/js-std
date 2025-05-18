@@ -24,7 +24,7 @@
 
 package js.streams;
 
-extern class ReadableStreamBYOBRequest {
+@:native("ReadableStreamBYOBRequest") extern class ReadableStreamBYOBRequest {
 	var view(default, null) : Null<js.webidl.ArrayBufferView>;
 	function respond(bytesWritten:Float):Void;
 	function respondWithNewView(view:js.webidl.ArrayBufferView):Void;

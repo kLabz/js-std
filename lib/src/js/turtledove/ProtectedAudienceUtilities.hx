@@ -24,7 +24,7 @@
 
 package js.turtledove;
 
-extern class ProtectedAudienceUtilities {
+@:native("ProtectedAudienceUtilities") extern class ProtectedAudienceUtilities {
 	function decodeUtf8(bytes:Uint8Array):String;
 	function encodeUtf8(input:String):Uint8Array;
 }

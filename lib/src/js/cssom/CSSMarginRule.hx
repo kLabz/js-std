@@ -24,7 +24,7 @@
 
 package js.cssom;
 
-extern class CSSMarginRule extends CSSRule {
+@:native("CSSMarginRule") extern class CSSMarginRule extends CSSRule {
 	var name(default, null) : CSSOMString;
 	var style(default, null) : CSSStyleDeclaration;
 }

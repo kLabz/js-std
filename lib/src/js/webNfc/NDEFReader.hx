@@ -24,7 +24,7 @@
 
 package js.webNfc;
 
-extern class NDEFReader extends js.dom.EventTarget {
+@:native("NDEFReader") extern class NDEFReader extends js.dom.EventTarget {
 	var onreading : js.html.EventHandler;
 	var onreadingerror : js.html.EventHandler;
 	function new():Void;

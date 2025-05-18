@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSTranslate extends CSSTransformComponent {
+@:native("CSSTranslate") extern class CSSTranslate extends CSSTransformComponent {
 	var x : CSSNumericValue;
 	var y : CSSNumericValue;
 	var z : CSSNumericValue;

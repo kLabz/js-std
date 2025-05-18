@@ -24,7 +24,7 @@
 
 package js.performanceTimeline;
 
-extern class PerformanceObserver {
+@:native("PerformanceObserver") extern class PerformanceObserver {
 	static var supportedEntryTypes(default, null) : Array<String>;
 	function new(callback:PerformanceObserverCallback):Void;
 	function disconnect():Void;

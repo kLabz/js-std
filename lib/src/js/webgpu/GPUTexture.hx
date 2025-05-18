@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUTexture {
+@:native("GPUTexture") extern class GPUTexture {
 	var width(default, null) : GPUIntegerCoordinateOut;
 	var height(default, null) : GPUIntegerCoordinateOut;
 	var depthOrArrayLayers(default, null) : GPUIntegerCoordinateOut;

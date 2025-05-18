@@ -24,7 +24,7 @@
 
 package js.fencedFrame;
 
-extern class FencedFrameConfig {
+@:native("FencedFrameConfig") extern class FencedFrameConfig {
 	function new(url:String):Void;
 	function setSharedStorageContext(contextString:String):Void;
 }

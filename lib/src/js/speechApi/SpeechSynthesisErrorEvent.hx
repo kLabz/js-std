@@ -24,7 +24,7 @@
 
 package js.speechApi;
 
-extern class SpeechSynthesisErrorEvent extends SpeechSynthesisEvent {
+@:native("SpeechSynthesisErrorEvent") extern class SpeechSynthesisErrorEvent extends SpeechSynthesisEvent {
 	var error(default, null) : SpeechSynthesisErrorCode;
 	function new(type:String, eventInitDict:SpeechSynthesisErrorEventInit):Void;
 }

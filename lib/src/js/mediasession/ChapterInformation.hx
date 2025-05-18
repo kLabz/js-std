@@ -24,7 +24,7 @@
 
 package js.mediasession;
 
-extern class ChapterInformation {
+@:native("ChapterInformation") extern class ChapterInformation {
 	var title(default, null) : String;
 	var startTime(default, null) : Float;
 	var artwork(default, null) : Array<MediaImage>;

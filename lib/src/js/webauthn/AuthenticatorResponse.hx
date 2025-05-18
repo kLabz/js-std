@@ -24,6 +24,6 @@
 
 package js.webauthn;
 
-extern class AuthenticatorResponse {
+@:native("AuthenticatorResponse") extern class AuthenticatorResponse {
 	var clientDataJSON(default, null) : ArrayBuffer;
 }

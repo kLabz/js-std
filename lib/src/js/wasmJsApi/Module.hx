@@ -24,7 +24,7 @@
 
 package js.wasmJsApi;
 
-extern class Module {
+@:native("Module") extern class Module {
 	function new(bytes:js.webidl.BufferSource):Void;
 	function customSections(moduleObject:Module, sectionName:String):Array<ArrayBuffer>;
 	function exports(moduleObject:Module):Array<ModuleExportDescriptor>;

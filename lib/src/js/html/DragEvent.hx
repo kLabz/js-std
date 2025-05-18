@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class DragEvent extends js.uievents.MouseEvent {
+@:native("DragEvent") extern class DragEvent extends js.uievents.MouseEvent {
 	var dataTransfer(default, null) : Null<DataTransfer>;
 	function new(type:String, ?eventInitDict:DragEventInit = {  }):Void;
 }

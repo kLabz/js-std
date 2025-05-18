@@ -24,7 +24,7 @@
 
 package js.filterEffects;
 
-extern class SVGFEColorMatrixElement extends js.svg.SVGElement {
+@:native("SVGFEColorMatrixElement") extern class SVGFEColorMatrixElement extends js.svg.SVGElement {
 	static inline var SVG_FECOLORMATRIX_TYPE_UNKNOWN : Int = 0;
 	static inline var SVG_FECOLORMATRIX_TYPE_MATRIX : Int = 1;
 	static inline var SVG_FECOLORMATRIX_TYPE_SATURATE : Int = 2;

@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLFrameSetElement extends HTMLElement {
+@:native("HTMLFrameSetElement") extern class HTMLFrameSetElement extends HTMLElement {
 	var cols : String;
 	var rows : String;
 	/**

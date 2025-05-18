@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class Element extends Node {
+@:native("Element") extern class Element extends Node {
 	var namespaceURI(default, null) : Null<String>;
 	var prefix(default, null) : Null<String>;
 	var localName(default, null) : String;

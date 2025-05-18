@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLButtonElement extends HTMLElement {
+@:native("HTMLButtonElement") extern class HTMLButtonElement extends HTMLElement {
 	var command : String;
 	var commandForElement : Null<js.dom.Element>;
 	var disabled : Bool;

@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLInputElement extends HTMLElement {
+@:native("HTMLInputElement") extern class HTMLInputElement extends HTMLElement {
 	var accept : String;
 	var alpha : Bool;
 	var alt : String;

@@ -24,6 +24,6 @@
 
 package js.webgpu;
 
-extern class GPUInternalError extends GPUError {
+@:native("GPUInternalError") extern class GPUInternalError extends GPUError {
 	function new(message:String):Void;
 }

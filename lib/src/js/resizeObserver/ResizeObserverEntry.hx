@@ -24,7 +24,7 @@
 
 package js.resizeObserver;
 
-extern class ResizeObserverEntry {
+@:native("ResizeObserverEntry") extern class ResizeObserverEntry {
 	var target(default, null) : js.dom.Element;
 	var contentRect(default, null) : js.geometry.DOMRectReadOnly;
 	var borderBoxSize(default, null) : Array<ResizeObserverSize>;

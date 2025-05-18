@@ -27,6 +27,6 @@ package js.webmidi;
 /**
 	TODO MaplikeDeclaration handling
 **/
-extern class MIDIOutputMap {
+@:native("MIDIOutputMap") extern class MIDIOutputMap {
 
 }

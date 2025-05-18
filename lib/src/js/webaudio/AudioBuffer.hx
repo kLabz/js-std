@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class AudioBuffer {
+@:native("AudioBuffer") extern class AudioBuffer {
 	var sampleRate(default, null) : Float;
 	var length(default, null) : Int;
 	var duration(default, null) : Float;

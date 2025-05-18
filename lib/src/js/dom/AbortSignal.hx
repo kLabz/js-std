@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class AbortSignal extends EventTarget {
+@:native("AbortSignal") extern class AbortSignal extends EventTarget {
 	var aborted(default, null) : Bool;
 	var reason(default, null) : Any;
 	var onabort : js.html.EventHandler;

@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCPeerConnection extends js.dom.EventTarget {
+@:native("RTCPeerConnection") extern class RTCPeerConnection extends js.dom.EventTarget {
 	var localDescription(default, null) : Null<RTCSessionDescription>;
 	var currentLocalDescription(default, null) : Null<RTCSessionDescription>;
 	var pendingLocalDescription(default, null) : Null<RTCSessionDescription>;

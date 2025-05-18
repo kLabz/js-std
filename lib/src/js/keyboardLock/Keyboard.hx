@@ -24,7 +24,7 @@
 
 package js.keyboardLock;
 
-extern class Keyboard extends js.dom.EventTarget {
+@:native("Keyboard") extern class Keyboard extends js.dom.EventTarget {
 	/**
 		From partial interface in keyboard-map.idl
 	**/

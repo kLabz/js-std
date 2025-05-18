@@ -24,7 +24,7 @@
 
 package js.streams;
 
-extern class ReadableByteStreamController {
+@:native("ReadableByteStreamController") extern class ReadableByteStreamController {
 	var byobRequest(default, null) : Null<ReadableStreamBYOBRequest>;
 	var desiredSize(default, null) : Null<Float>;
 	function close():Void;

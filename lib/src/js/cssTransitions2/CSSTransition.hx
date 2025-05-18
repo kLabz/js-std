@@ -24,6 +24,6 @@
 
 package js.cssTransitions2;
 
-extern class CSSTransition extends js.webAnimations.Animation {
+@:native("CSSTransition") extern class CSSTransition extends js.webAnimations.Animation {
 	var transitionProperty(default, null) : CSSOMString;
 }

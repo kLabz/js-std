@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLUnknownElement extends HTMLElement {
+@:native("HTMLUnknownElement") extern class HTMLUnknownElement extends HTMLElement {
 
 }

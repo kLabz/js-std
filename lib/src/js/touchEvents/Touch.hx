@@ -24,7 +24,7 @@
 
 package js.touchEvents;
 
-extern class Touch {
+@:native("Touch") extern class Touch {
 	var identifier(default, null) : Int;
 	var target(default, null) : js.dom.EventTarget;
 	var screenX(default, null) : Float;

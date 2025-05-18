@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class ErrorEvent extends js.dom.Event {
+@:native("ErrorEvent") extern class ErrorEvent extends js.dom.Event {
 	var message(default, null) : String;
 	var filename(default, null) : String;
 	var lineno(default, null) : Int;

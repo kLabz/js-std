@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCIceCandidate {
+@:native("RTCIceCandidate") extern class RTCIceCandidate {
 	var candidate(default, null) : String;
 	var sdpMid(default, null) : Null<String>;
 	var sdpMLineIndex(default, null) : Null<Int>;

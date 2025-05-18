@@ -24,7 +24,7 @@
 
 package js.cssParserApi;
 
-extern class CSSParserDeclaration extends CSSParserRule {
+@:native("CSSParserDeclaration") extern class CSSParserDeclaration extends CSSParserRule {
 	var name(default, null) : String;
 	var body(default, null) : Array<CSSParserValue>;
 	function new(name:String, ?body:Array<CSSParserRule>):Void;

@@ -24,7 +24,7 @@
 
 package js.paymentRequest;
 
-extern class PaymentResponse extends js.dom.EventTarget {
+@:native("PaymentResponse") extern class PaymentResponse extends js.dom.EventTarget {
 	var requestId(default, null) : String;
 	var methodName(default, null) : String;
 	var details(default, null) : { };

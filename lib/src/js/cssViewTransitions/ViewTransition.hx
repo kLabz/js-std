@@ -24,7 +24,7 @@
 
 package js.cssViewTransitions;
 
-extern class ViewTransition {
+@:native("ViewTransition") extern class ViewTransition {
 	var updateCallbackDone(default, null) : js.lib.Promise<Void>;
 	var ready(default, null) : js.lib.Promise<Void>;
 	var finished(default, null) : js.lib.Promise<Void>;

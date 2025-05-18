@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLLabelElement extends HTMLElement {
+@:native("HTMLLabelElement") extern class HTMLLabelElement extends HTMLElement {
 	var form(default, null) : Null<HTMLFormElement>;
 	var htmlFor : String;
 	var control(default, null) : Null<HTMLElement>;

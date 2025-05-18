@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGAnimatedEnumeration {
+@:native("SVGAnimatedEnumeration") extern class SVGAnimatedEnumeration {
 	var baseVal : Int;
 	var animVal(default, null) : Int;
 }

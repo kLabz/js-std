@@ -24,7 +24,7 @@
 
 package js.performanceTimeline;
 
-extern class PerformanceObserverEntryList {
+@:native("PerformanceObserverEntryList") extern class PerformanceObserverEntryList {
 	function getEntries():PerformanceEntryList;
 	function getEntriesByName(name:String, ?type:String):PerformanceEntryList;
 	function getEntriesByType(type:String):PerformanceEntryList;

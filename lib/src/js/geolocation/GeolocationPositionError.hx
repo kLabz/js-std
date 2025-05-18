@@ -24,7 +24,7 @@
 
 package js.geolocation;
 
-extern class GeolocationPositionError {
+@:native("GeolocationPositionError") extern class GeolocationPositionError {
 	static inline var PERMISSION_DENIED : Int = 1;
 	static inline var POSITION_UNAVAILABLE : Int = 2;
 	static inline var TIMEOUT : Int = 3;

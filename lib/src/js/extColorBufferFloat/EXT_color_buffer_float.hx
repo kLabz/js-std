@@ -24,6 +24,6 @@
 
 package js.extColorBufferFloat;
 
-extern class EXT_color_buffer_float {
+@:native("EXT_color_buffer_float") extern class EXT_color_buffer_float {
 
 }

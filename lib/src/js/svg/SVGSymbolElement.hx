@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGSymbolElement extends SVGGraphicsElement {
+@:native("SVGSymbolElement") extern class SVGSymbolElement extends SVGGraphicsElement {
 	/**
 		From interface mixin SVGFitToViewBox
 	**/

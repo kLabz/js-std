@@ -24,7 +24,7 @@
 
 package js.webxr;
 
-extern class XRFrame {
+@:native("XRFrame") extern class XRFrame {
 	var session(default, null) : XRSession;
 	var predictedDisplayTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	/**

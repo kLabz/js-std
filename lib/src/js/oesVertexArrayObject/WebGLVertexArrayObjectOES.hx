@@ -24,6 +24,6 @@
 
 package js.oesVertexArrayObject;
 
-extern class WebGLVertexArrayObjectOES extends js.webgl1.WebGLObject {
+@:native("WebGLVertexArrayObjectOES") extern class WebGLVertexArrayObjectOES extends js.webgl1.WebGLObject {
 
 }

@@ -24,7 +24,7 @@
 
 package js.extTextureNorm16;
 
-extern class EXT_texture_norm16 {
+@:native("EXT_texture_norm16") extern class EXT_texture_norm16 {
 	static inline var R16_EXT : js.webgl1.GLenum = 0x822A;
 	static inline var RG16_EXT : js.webgl1.GLenum = 0x822C;
 	static inline var RGB16_EXT : js.webgl1.GLenum = 0x8054;

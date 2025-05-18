@@ -24,7 +24,7 @@
 
 package js.webcodecs;
 
-extern class ImageTrackList implements ArrayAccess<ImageTrack> {
+@:native("ImageTrackList") extern class ImageTrackList implements ArrayAccess<ImageTrack> {
 	var ready(default, null) : js.lib.Promise<Void>;
 	var length(default, null) : Int;
 	var selectedIndex(default, null) : Int;

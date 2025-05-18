@@ -24,7 +24,7 @@
 
 package js.translationApi;
 
-extern class Translator {
+@:native("Translator") extern class Translator {
 	var sourceLanguage(default, null) : String;
 	var targetLanguage(default, null) : String;
 	var inputQuota(default, null) : Float;

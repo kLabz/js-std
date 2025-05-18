@@ -24,7 +24,7 @@
 
 package js.paymentRequest;
 
-extern class PaymentMethodChangeEvent extends PaymentRequestUpdateEvent {
+@:native("PaymentMethodChangeEvent") extern class PaymentMethodChangeEvent extends PaymentRequestUpdateEvent {
 	var methodName(default, null) : String;
 	var methodDetails(default, null) : Null<{ }>;
 	function new(type:String, ?eventInitDict:PaymentMethodChangeEventInit = {  }):Void;

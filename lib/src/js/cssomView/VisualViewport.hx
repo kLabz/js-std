@@ -24,7 +24,7 @@
 
 package js.cssomView;
 
-extern class VisualViewport extends js.dom.EventTarget {
+@:native("VisualViewport") extern class VisualViewport extends js.dom.EventTarget {
 	var offsetLeft(default, null) : Float;
 	var offsetTop(default, null) : Float;
 	var pageLeft(default, null) : Float;

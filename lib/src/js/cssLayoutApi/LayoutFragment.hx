@@ -24,7 +24,7 @@
 
 package js.cssLayoutApi;
 
-extern class LayoutFragment {
+@:native("LayoutFragment") extern class LayoutFragment {
 	var inlineSize(default, null) : Float;
 	var blockSize(default, null) : Float;
 	var inlineOffset : Float;

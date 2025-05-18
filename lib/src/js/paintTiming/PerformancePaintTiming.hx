@@ -24,7 +24,7 @@
 
 package js.paintTiming;
 
-extern class PerformancePaintTiming extends js.performanceTimeline.PerformanceEntry {
+@:native("PerformancePaintTiming") extern class PerformancePaintTiming extends js.performanceTimeline.PerformanceEntry {
 	/**
 		From interface mixin PaintTimingMixin
 	**/

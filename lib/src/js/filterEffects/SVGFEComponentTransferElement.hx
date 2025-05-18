@@ -24,7 +24,7 @@
 
 package js.filterEffects;
 
-extern class SVGFEComponentTransferElement extends js.svg.SVGElement {
+@:native("SVGFEComponentTransferElement") extern class SVGFEComponentTransferElement extends js.svg.SVGElement {
 	var in1(default, null) : js.svg.SVGAnimatedString;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes

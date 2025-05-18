@@ -24,7 +24,7 @@
 
 package js.schedulingApis;
 
-extern class TaskPriorityChangeEvent extends js.dom.Event {
+@:native("TaskPriorityChangeEvent") extern class TaskPriorityChangeEvent extends js.dom.Event {
 	var previousPriority(default, null) : TaskPriority;
 	function new(type:String, priorityChangeEventInitDict:TaskPriorityChangeEventInit):Void;
 }

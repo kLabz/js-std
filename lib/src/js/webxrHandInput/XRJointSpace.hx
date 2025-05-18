@@ -24,6 +24,6 @@
 
 package js.webxrHandInput;
 
-extern class XRJointSpace extends js.webxr.XRSpace {
+@:native("XRJointSpace") extern class XRJointSpace extends js.webxr.XRSpace {
 	var jointName(default, null) : XRHandJoint;
 }

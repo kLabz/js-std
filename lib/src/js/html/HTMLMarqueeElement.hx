@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLMarqueeElement extends HTMLElement {
+@:native("HTMLMarqueeElement") extern class HTMLMarqueeElement extends HTMLElement {
 	var behavior : String;
 	var bgColor : String;
 	var direction : String;

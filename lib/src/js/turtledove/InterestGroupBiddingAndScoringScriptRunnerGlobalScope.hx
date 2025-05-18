@@ -24,7 +24,7 @@
 
 package js.turtledove;
 
-extern class InterestGroupBiddingAndScoringScriptRunnerGlobalScope extends InterestGroupScriptRunnerGlobalScope {
+@:native("InterestGroupBiddingAndScoringScriptRunnerGlobalScope") extern class InterestGroupBiddingAndScoringScriptRunnerGlobalScope extends InterestGroupScriptRunnerGlobalScope {
 	var forDebuggingOnly(default, null) : ForDebuggingOnly;
 	var realTimeReporting(default, null) : RealTimeReporting;
 }

@@ -24,7 +24,7 @@
 
 package js.webAnimations;
 
-extern class Animation extends js.dom.EventTarget {
+@:native("Animation") extern class Animation extends js.dom.EventTarget {
 	var id : String;
 	var effect : Null<AnimationEffect>;
 	var timeline : Null<AnimationTimeline>;

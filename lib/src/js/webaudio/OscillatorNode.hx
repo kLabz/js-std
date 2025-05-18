@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class OscillatorNode extends AudioScheduledSourceNode {
+@:native("OscillatorNode") extern class OscillatorNode extends AudioScheduledSourceNode {
 	var type : OscillatorType;
 	var frequency(default, null) : AudioParam;
 	var detune(default, null) : AudioParam;

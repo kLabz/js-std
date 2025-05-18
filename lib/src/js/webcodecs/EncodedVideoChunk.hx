@@ -24,7 +24,7 @@
 
 package js.webcodecs;
 
-extern class EncodedVideoChunk {
+@:native("EncodedVideoChunk") extern class EncodedVideoChunk {
 	var type(default, null) : EncodedVideoChunkType;
 	var timestamp(default, null) : Float;
 	var duration(default, null) : Null<Float>;

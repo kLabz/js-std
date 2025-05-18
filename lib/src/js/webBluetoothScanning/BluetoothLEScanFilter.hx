@@ -24,7 +24,7 @@
 
 package js.webBluetoothScanning;
 
-extern class BluetoothLEScanFilter {
+@:native("BluetoothLEScanFilter") extern class BluetoothLEScanFilter {
 	var name(default, null) : Null<String>;
 	var namePrefix(default, null) : Null<String>;
 	var services(default, null) : Array<js.webBluetooth.UUID>;

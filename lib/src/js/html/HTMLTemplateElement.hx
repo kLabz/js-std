@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLTemplateElement extends HTMLElement {
+@:native("HTMLTemplateElement") extern class HTMLTemplateElement extends HTMLElement {
 	var content(default, null) : js.dom.DocumentFragment;
 	var shadowRootMode : String;
 	var shadowRootDelegatesFocus : Bool;

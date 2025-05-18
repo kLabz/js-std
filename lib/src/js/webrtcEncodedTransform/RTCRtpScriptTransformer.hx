@@ -24,7 +24,7 @@
 
 package js.webrtcEncodedTransform;
 
-extern class RTCRtpScriptTransformer extends js.dom.EventTarget {
+@:native("RTCRtpScriptTransformer") extern class RTCRtpScriptTransformer extends js.dom.EventTarget {
 	var readable(default, null) : js.streams.ReadableStream;
 	var writable(default, null) : js.streams.WritableStream;
 	var onkeyframerequest : js.html.EventHandler;

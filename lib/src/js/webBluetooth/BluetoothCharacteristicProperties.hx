@@ -24,7 +24,7 @@
 
 package js.webBluetooth;
 
-extern class BluetoothCharacteristicProperties {
+@:native("BluetoothCharacteristicProperties") extern class BluetoothCharacteristicProperties {
 	var broadcast(default, null) : Bool;
 	var read(default, null) : Bool;
 	var writeWithoutResponse(default, null) : Bool;

@@ -24,7 +24,7 @@
 
 package js.webgl1;
 
-extern class WebGLRenderingContext {
+@:native("WebGLRenderingContext") extern class WebGLRenderingContext {
 	/**
 		From interface mixin WebGLRenderingContextBase
 	**/

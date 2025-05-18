@@ -24,7 +24,7 @@
 
 package js.mediacaptureFromelement;
 
-extern class CanvasCaptureMediaStreamTrack extends js.mediacaptureStreams.MediaStreamTrack {
+@:native("CanvasCaptureMediaStreamTrack") extern class CanvasCaptureMediaStreamTrack extends js.mediacaptureStreams.MediaStreamTrack {
 	var canvas(default, null) : js.html.HTMLCanvasElement;
 	function requestFrame():Void;
 }

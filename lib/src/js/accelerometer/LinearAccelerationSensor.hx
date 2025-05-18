@@ -24,6 +24,6 @@
 
 package js.accelerometer;
 
-extern class LinearAccelerationSensor extends Accelerometer {
+@:native("LinearAccelerationSensor") extern class LinearAccelerationSensor extends Accelerometer {
 	function new(?options:AccelerometerSensorOptions = {  }):Void;
 }

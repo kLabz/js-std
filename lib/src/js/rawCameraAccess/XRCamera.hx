@@ -24,7 +24,7 @@
 
 package js.rawCameraAccess;
 
-extern class XRCamera {
+@:native("XRCamera") extern class XRCamera {
 	var width(default, null) : Int;
 	var height(default, null) : Int;
 }

@@ -24,7 +24,7 @@
 
 package js.sanitizerApi;
 
-extern class Sanitizer {
+@:native("Sanitizer") extern class Sanitizer {
 	function new(?configuration:haxe.extern.EitherType<SanitizerConfig, SanitizerPresets> = "default"):Void;
 	function allowAttribute(attribute:SanitizerAttribute):Void;
 	function allowElement(element:SanitizerElementWithAttributes):Void;

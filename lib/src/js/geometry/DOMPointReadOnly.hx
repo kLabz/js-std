@@ -24,7 +24,7 @@
 
 package js.geometry;
 
-extern class DOMPointReadOnly {
+@:native("DOMPointReadOnly") extern class DOMPointReadOnly {
 	var x(default, null) : Float;
 	var y(default, null) : Float;
 	var z(default, null) : Float;

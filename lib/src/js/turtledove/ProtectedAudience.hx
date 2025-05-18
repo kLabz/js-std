@@ -24,6 +24,6 @@
 
 package js.turtledove;
 
-extern class ProtectedAudience {
+@:native("ProtectedAudience") extern class ProtectedAudience {
 	function queryFeatureSupport(feature:String):Any;
 }

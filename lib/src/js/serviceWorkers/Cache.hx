@@ -24,7 +24,7 @@
 
 package js.serviceWorkers;
 
-extern class Cache {
+@:native("Cache") extern class Cache {
 	function add(request:js.fetch.RequestInfo):js.lib.Promise<Void>;
 	function addAll(requests:Array<js.fetch.RequestInfo>):js.lib.Promise<Void>;
 	function delete(request:js.fetch.RequestInfo, ?options:CacheQueryOptions = {  }):js.lib.Promise<Bool>;

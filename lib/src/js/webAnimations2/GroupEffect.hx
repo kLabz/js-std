@@ -24,7 +24,7 @@
 
 package js.webAnimations2;
 
-extern class GroupEffect {
+@:native("GroupEffect") extern class GroupEffect {
 	var children(default, null) : AnimationNodeList;
 	var firstChild(default, null) : Null<js.webAnimations.AnimationEffect>;
 	var lastChild(default, null) : Null<js.webAnimations.AnimationEffect>;

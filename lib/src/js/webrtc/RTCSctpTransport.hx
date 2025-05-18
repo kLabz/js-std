@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCSctpTransport extends js.dom.EventTarget {
+@:native("RTCSctpTransport") extern class RTCSctpTransport extends js.dom.EventTarget {
 	var transport(default, null) : RTCDtlsTransport;
 	var state(default, null) : RTCSctpTransportState;
 	var maxMessageSize(default, null) : Float;

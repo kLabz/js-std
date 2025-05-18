@@ -24,7 +24,7 @@
 
 package js.webglDrawBuffers;
 
-extern class WEBGL_draw_buffers {
+@:native("WEBGL_draw_buffers") extern class WEBGL_draw_buffers {
 	static inline var COLOR_ATTACHMENT0_WEBGL : js.webgl1.GLenum = 0x8CE0;
 	static inline var COLOR_ATTACHMENT1_WEBGL : js.webgl1.GLenum = 0x8CE1;
 	static inline var COLOR_ATTACHMENT2_WEBGL : js.webgl1.GLenum = 0x8CE2;

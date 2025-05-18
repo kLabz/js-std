@@ -24,7 +24,7 @@
 
 package js.cssLayoutApi;
 
-extern class LayoutEdges {
+@:native("LayoutEdges") extern class LayoutEdges {
 	var inlineStart(default, null) : Float;
 	var inlineEnd(default, null) : Float;
 	var blockStart(default, null) : Float;

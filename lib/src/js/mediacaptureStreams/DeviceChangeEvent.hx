@@ -24,7 +24,7 @@
 
 package js.mediacaptureStreams;
 
-extern class DeviceChangeEvent extends js.dom.Event {
+@:native("DeviceChangeEvent") extern class DeviceChangeEvent extends js.dom.Event {
 	var devices(default, null) : Array<MediaDeviceInfo>;
 	var userInsertedDevices(default, null) : Array<MediaDeviceInfo>;
 	function new(type:String, ?eventInitDict:DeviceChangeEventInit = {  }):Void;

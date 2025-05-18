@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class Navigator {
+@:native("Navigator") extern class Navigator {
 	/**
 		From interface mixin NavigatorDeviceMemory
 	**/
@@ -170,13 +170,13 @@ extern class Navigator {
 	**/
 	var scheduling(default, null) : js.isInputPending.Scheduling;
 	/**
-		From partial interface in keyboard-lock.idl
-	**/
-	var keyboard(default, null) : js.keyboardLock.Keyboard;
-	/**
 		From partial interface in html.idl
 	**/
 	var userActivation(default, null) : UserActivation;
+	/**
+		From partial interface in keyboard-lock.idl
+	**/
+	var keyboard(default, null) : js.keyboardLock.Keyboard;
 	/**
 		From partial interface in login-status.idl
 	**/
@@ -189,10 +189,6 @@ extern class Navigator {
 		From partial interface in media-capabilities.idl
 	**/
 	var mediaCapabilities(default, null) : js.mediaCapabilities.MediaCapabilities;
-	/**
-		From partial interface in mediacapture-streams.idl
-	**/
-	var mediaDevices(default, null) : js.mediacaptureStreams.MediaDevices;
 	/**
 		From partial interface in mediaqueries-5.idl
 	**/
@@ -209,6 +205,10 @@ extern class Navigator {
 		From partial interface in pointerevents.idl
 	**/
 	var maxTouchPoints(default, null) : Int;
+	/**
+		From partial interface in mediacapture-streams.idl
+	**/
+	var mediaDevices(default, null) : js.mediacaptureStreams.MediaDevices;
 	/**
 		From partial interface in ppa.idl
 	**/

@@ -24,7 +24,7 @@
 
 package js.webusb;
 
-extern class USBInTransferResult {
+@:native("USBInTransferResult") extern class USBInTransferResult {
 	var data(default, null) : Null<DataView>;
 	var status(default, null) : USBTransferStatus;
 	function new(status:USBTransferStatus, ?data:Null<DataView>):Void;

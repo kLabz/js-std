@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class SharedWorker extends js.dom.EventTarget {
+@:native("SharedWorker") extern class SharedWorker extends js.dom.EventTarget {
 	var port(default, null) : MessagePort;
 	/**
 		From interface mixin AbstractWorker

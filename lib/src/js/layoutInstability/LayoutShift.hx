@@ -24,7 +24,7 @@
 
 package js.layoutInstability;
 
-extern class LayoutShift extends js.performanceTimeline.PerformanceEntry {
+@:native("LayoutShift") extern class LayoutShift extends js.performanceTimeline.PerformanceEntry {
 	var value(default, null) : Float;
 	var hadRecentInput(default, null) : Bool;
 	var lastInputTime(default, null) : js.hrTime.DOMHighResTimeStamp;

@@ -24,7 +24,7 @@
 
 package js.editContext;
 
-extern class EditContext extends js.dom.EventTarget {
+@:native("EditContext") extern class EditContext extends js.dom.EventTarget {
 	var text(default, null) : String;
 	var selectionStart(default, null) : Int;
 	var selectionEnd(default, null) : Int;

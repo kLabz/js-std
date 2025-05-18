@@ -24,7 +24,7 @@
 
 package js.fedcm;
 
-extern class IdentityCredential extends js.credentialManagement.Credential {
+@:native("IdentityCredential") extern class IdentityCredential extends js.credentialManagement.Credential {
 	var token(default, null) : Null<String>;
 	var isAutoSelected(default, null) : Bool;
 	var configURL(default, null) : String;

@@ -24,7 +24,7 @@
 
 package js.mediaSource;
 
-extern class MediaSource extends js.dom.EventTarget {
+@:native("MediaSource") extern class MediaSource extends js.dom.EventTarget {
 	var handle(default, null) : MediaSourceHandle;
 	var sourceBuffers(default, null) : SourceBufferList;
 	var activeSourceBuffers(default, null) : SourceBufferList;

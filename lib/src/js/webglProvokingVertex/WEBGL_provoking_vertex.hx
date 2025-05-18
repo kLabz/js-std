@@ -24,7 +24,7 @@
 
 package js.webglProvokingVertex;
 
-extern class WEBGL_provoking_vertex {
+@:native("WEBGL_provoking_vertex") extern class WEBGL_provoking_vertex {
 	static inline var FIRST_VERTEX_CONVENTION_WEBGL : js.webgl1.GLenum = 0x8E4D;
 	static inline var LAST_VERTEX_CONVENTION_WEBGL : js.webgl1.GLenum = 0x8E4E;
 	static inline var PROVOKING_VERTEX_WEBGL : js.webgl1.GLenum = 0x8E4F;

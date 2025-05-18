@@ -24,7 +24,7 @@
 
 package js.storageBuckets;
 
-extern class StorageBucket {
+@:native("StorageBucket") extern class StorageBucket {
 	var name(default, null) : String;
 	var indexedDB(default, null) : js.indexeddb.IDBFactory;
 	var caches(default, null) : js.serviceWorkers.CacheStorage;

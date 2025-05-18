@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSTransformComponent {
+@:native("CSSTransformComponent") extern class CSSTransformComponent {
 	var is2D : Bool;
 	/**
 		(special = stringifier)

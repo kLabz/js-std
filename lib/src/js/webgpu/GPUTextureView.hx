@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUTextureView {
+@:native("GPUTextureView") extern class GPUTextureView {
 	/**
 		From interface mixin GPUObjectBase
 	**/

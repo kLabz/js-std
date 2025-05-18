@@ -24,7 +24,7 @@
 
 package js.indexeddb;
 
-extern class IDBIndex {
+@:native("IDBIndex") extern class IDBIndex {
 	var name : String;
 	var objectStore(default, null) : IDBObjectStore;
 	var keyPath(default, null) : Any;

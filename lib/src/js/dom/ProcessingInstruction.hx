@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class ProcessingInstruction extends CharacterData {
+@:native("ProcessingInstruction") extern class ProcessingInstruction extends CharacterData {
 	var target(default, null) : String;
 	/**
 		From interface mixin LinkStyle

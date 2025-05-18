@@ -27,7 +27,7 @@ package js.cssom;
 /**
 	TODO attribute mediaText: special=stringifier readonly=false
 **/
-extern class MediaList {
+@:native("MediaList") extern class MediaList {
 	var length(default, null) : Int;
 	function appendMedium(medium:CSSOMString):Void;
 	function deleteMedium(medium:CSSOMString):Void;

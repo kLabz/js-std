@@ -24,7 +24,7 @@
 
 package js.cssContain;
 
-extern class ContentVisibilityAutoStateChangeEvent extends js.dom.Event {
+@:native("ContentVisibilityAutoStateChangeEvent") extern class ContentVisibilityAutoStateChangeEvent extends js.dom.Event {
 	var skipped(default, null) : Bool;
 	function new(type:String, ?eventInitDict:ContentVisibilityAutoStateChangeEventInit = {  }):Void;
 }

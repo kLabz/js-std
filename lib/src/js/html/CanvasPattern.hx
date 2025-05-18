@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class CanvasPattern {
+@:native("CanvasPattern") extern class CanvasPattern {
 	function setTransform(?transform:js.geometry.DOMMatrix2DInit = {  }):Void;
 }

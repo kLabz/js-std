@@ -24,7 +24,7 @@
 
 package js.geolocationSensor;
 
-extern class GeolocationSensor extends js.genericSensor.Sensor {
+@:native("GeolocationSensor") extern class GeolocationSensor extends js.genericSensor.Sensor {
 	var latitude(default, null) : Null<Float>;
 	var longitude(default, null) : Null<Float>;
 	var altitude(default, null) : Null<Float>;

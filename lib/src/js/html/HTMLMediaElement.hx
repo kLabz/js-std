@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLMediaElement extends HTMLElement {
+@:native("HTMLMediaElement") extern class HTMLMediaElement extends HTMLElement {
 	var error(default, null) : Null<MediaError>;
 	var src : String;
 	var srcObject : Null<MediaProvider>;

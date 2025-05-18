@@ -24,7 +24,7 @@
 
 package js.webBluetooth;
 
-extern class BluetoothDevice extends js.dom.EventTarget {
+@:native("BluetoothDevice") extern class BluetoothDevice extends js.dom.EventTarget {
 	var id(default, null) : String;
 	var name(default, null) : Null<String>;
 	var gatt(default, null) : Null<BluetoothRemoteGATTServer>;

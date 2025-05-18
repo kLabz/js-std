@@ -24,6 +24,6 @@
 
 package js.cssCascade;
 
-extern class CSSLayerStatementRule extends js.cssom.CSSRule {
+@:native("CSSLayerStatementRule") extern class CSSLayerStatementRule extends js.cssom.CSSRule {
 	var nameList(default, null) : Array<CSSOMString>;
 }

@@ -24,7 +24,7 @@
 
 package js.uievents;
 
-extern class InputEvent extends UIEvent {
+@:native("InputEvent") extern class InputEvent extends UIEvent {
 	var data(default, null) : Null<String>;
 	var isComposing(default, null) : Bool;
 	var inputType(default, null) : String;

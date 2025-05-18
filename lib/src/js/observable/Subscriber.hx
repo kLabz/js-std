@@ -24,7 +24,7 @@
 
 package js.observable;
 
-extern class Subscriber {
+@:native("Subscriber") extern class Subscriber {
 	var active(default, null) : Bool;
 	var signal(default, null) : js.dom.AbortSignal;
 	function addTeardown(teardown:js.webidl.VoidFunction):Void;

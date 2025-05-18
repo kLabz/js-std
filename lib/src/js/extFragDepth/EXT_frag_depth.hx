@@ -24,6 +24,6 @@
 
 package js.extFragDepth;
 
-extern class EXT_frag_depth {
+@:native("EXT_frag_depth") extern class EXT_frag_depth {
 
 }

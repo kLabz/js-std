@@ -24,7 +24,7 @@
 
 package js.mediaSource;
 
-extern class ManagedMediaSource extends MediaSource {
+@:native("ManagedMediaSource") extern class ManagedMediaSource extends MediaSource {
 	var streaming(default, null) : Bool;
 	var onstartstreaming : js.html.EventHandler;
 	var onendstreaming : js.html.EventHandler;

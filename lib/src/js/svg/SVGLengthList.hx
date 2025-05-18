@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGLengthList {
+@:native("SVGLengthList") extern class SVGLengthList {
 	var length(default, null) : Int;
 	var numberOfItems(default, null) : Int;
 	/**

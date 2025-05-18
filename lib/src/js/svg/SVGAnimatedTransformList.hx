@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGAnimatedTransformList {
+@:native("SVGAnimatedTransformList") extern class SVGAnimatedTransformList {
 	var baseVal(default, null) : SVGTransformList;
 	var animVal(default, null) : SVGTransformList;
 }

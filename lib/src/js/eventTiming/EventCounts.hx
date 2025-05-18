@@ -27,6 +27,6 @@ package js.eventTiming;
 /**
 	TODO MaplikeDeclaration handling
 **/
-extern class EventCounts {
+@:native("EventCounts") extern class EventCounts {
 
 }

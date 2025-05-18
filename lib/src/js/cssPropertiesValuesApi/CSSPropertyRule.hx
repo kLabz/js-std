@@ -24,7 +24,7 @@
 
 package js.cssPropertiesValuesApi;
 
-extern class CSSPropertyRule extends js.cssom.CSSRule {
+@:native("CSSPropertyRule") extern class CSSPropertyRule extends js.cssom.CSSRule {
 	var name(default, null) : CSSOMString;
 	var syntax(default, null) : CSSOMString;
 	var inherits(default, null) : Bool;

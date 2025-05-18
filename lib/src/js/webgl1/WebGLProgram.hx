@@ -24,6 +24,6 @@
 
 package js.webgl1;
 
-extern class WebGLProgram extends WebGLObject {
+@:native("WebGLProgram") extern class WebGLProgram extends WebGLObject {
 
 }

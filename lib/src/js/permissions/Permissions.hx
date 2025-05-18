@@ -24,7 +24,7 @@
 
 package js.permissions;
 
-extern class Permissions {
+@:native("Permissions") extern class Permissions {
 	function query(permissionDesc:{ }):js.lib.Promise<PermissionStatus>;
 	/**
 		From partial interface in permissions-request.idl

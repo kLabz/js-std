@@ -24,7 +24,7 @@
 
 package js.webcodecs;
 
-extern class VideoColorSpace {
+@:native("VideoColorSpace") extern class VideoColorSpace {
 	var primaries(default, null) : Null<VideoColorPrimaries>;
 	var transfer(default, null) : Null<VideoTransferCharacteristics>;
 	var matrix(default, null) : Null<VideoMatrixCoefficients>;

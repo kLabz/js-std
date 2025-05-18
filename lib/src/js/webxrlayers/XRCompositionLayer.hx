@@ -24,7 +24,7 @@
 
 package js.webxrlayers;
 
-extern class XRCompositionLayer extends js.webxr.XRLayer {
+@:native("XRCompositionLayer") extern class XRCompositionLayer extends js.webxr.XRLayer {
 	var layout(default, null) : XRLayerLayout;
 	var blendTextureSourceAlpha : Bool;
 	var forceMonoPresentation : Bool;

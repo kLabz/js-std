@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class MessageEvent extends js.dom.Event {
+@:native("MessageEvent") extern class MessageEvent extends js.dom.Event {
 	var data(default, null) : Any;
 	var origin(default, null) : String;
 	var lastEventId(default, null) : String;

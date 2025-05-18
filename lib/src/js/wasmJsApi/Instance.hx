@@ -24,7 +24,7 @@
 
 package js.wasmJsApi;
 
-extern class Instance {
+@:native("Instance") extern class Instance {
 	var exports(default, null) : { };
 	function new(module:Module, ?importObject:{ }):Void;
 }

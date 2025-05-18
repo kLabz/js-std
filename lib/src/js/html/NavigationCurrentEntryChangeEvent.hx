@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class NavigationCurrentEntryChangeEvent extends js.dom.Event {
+@:native("NavigationCurrentEntryChangeEvent") extern class NavigationCurrentEntryChangeEvent extends js.dom.Event {
 	var navigationType(default, null) : Null<NavigationType>;
 	var from(default, null) : NavigationHistoryEntry;
 	function new(type:String, eventInitDict:NavigationCurrentEntryChangeEventInit):Void;

@@ -24,7 +24,7 @@
 
 package js.permissionsPolicy;
 
-extern class PermissionsPolicy {
+@:native("PermissionsPolicy") extern class PermissionsPolicy {
 	function allowedFeatures():Array<String>;
 	function allowsFeature(feature:String, ?origin:String):Bool;
 	function features():Array<String>;

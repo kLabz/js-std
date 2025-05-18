@@ -24,7 +24,7 @@
 
 package js.webhid;
 
-extern class HIDDevice extends js.dom.EventTarget {
+@:native("HIDDevice") extern class HIDDevice extends js.dom.EventTarget {
 	var oninputreport : js.html.EventHandler;
 	var opened(default, null) : Bool;
 	var vendorId(default, null) : Int;

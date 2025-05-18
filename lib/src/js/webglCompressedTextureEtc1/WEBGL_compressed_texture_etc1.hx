@@ -24,6 +24,6 @@
 
 package js.webglCompressedTextureEtc1;
 
-extern class WEBGL_compressed_texture_etc1 {
+@:native("WEBGL_compressed_texture_etc1") extern class WEBGL_compressed_texture_etc1 {
 	static inline var COMPRESSED_RGB_ETC1_WEBGL : js.webgl1.GLenum = 0x8D64;
 }

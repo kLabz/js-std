@@ -27,6 +27,6 @@ package js.webgpu;
 /**
 	TODO SetlikeDeclaration handling
 **/
-extern class GPUSupportedFeatures {
+@:native("GPUSupportedFeatures") extern class GPUSupportedFeatures {
 
 }

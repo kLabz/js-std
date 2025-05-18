@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class ImageData {
+@:native("ImageData") extern class ImageData {
 	var width(default, null) : Int;
 	var height(default, null) : Int;
 	var data(default, null) : ImageDataArray;

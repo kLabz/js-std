@@ -24,7 +24,7 @@
 
 package js.serviceWorkers;
 
-extern class Client {
+@:native("Client") extern class Client {
 	var url(default, null) : String;
 	var frameType(default, null) : FrameType;
 	var id(default, null) : String;

@@ -27,7 +27,7 @@ package js.html;
 /**
 	TODO attribute href: special=stringifier readonly=false
 **/
-extern class Location {
+@:native("Location") extern class Location {
 	var origin(default, null) : String;
 	var protocol : String;
 	var host : String;

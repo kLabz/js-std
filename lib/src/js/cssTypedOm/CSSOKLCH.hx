@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSOKLCH extends CSSColorValue {
+@:native("CSSOKLCH") extern class CSSOKLCH extends CSSColorValue {
 	var l : CSSColorPercent;
 	var c : CSSColorPercent;
 	var h : CSSColorAngle;

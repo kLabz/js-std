@@ -24,7 +24,7 @@
 
 package js.cssCascade6;
 
-extern class CSSScopeRule extends js.cssom.CSSGroupingRule {
+@:native("CSSScopeRule") extern class CSSScopeRule extends js.cssom.CSSGroupingRule {
 	var start(default, null) : Null<CSSOMString>;
 	var end(default, null) : Null<CSSOMString>;
 }

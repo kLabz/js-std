@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLTableElement extends HTMLElement {
+@:native("HTMLTableElement") extern class HTMLTableElement extends HTMLElement {
 	var caption : Null<HTMLTableCaptionElement>;
 	var tHead : Null<HTMLTableSectionElement>;
 	var tFoot : Null<HTMLTableSectionElement>;

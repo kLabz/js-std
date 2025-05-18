@@ -24,7 +24,7 @@
 
 package js.mediasession;
 
-extern class MediaSession {
+@:native("MediaSession") extern class MediaSession {
 	var metadata : Null<MediaMetadata>;
 	var playbackState : MediaSessionPlaybackState;
 	function setActionHandler(action:MediaSessionAction, handler:Null<MediaSessionActionHandler>):Void;

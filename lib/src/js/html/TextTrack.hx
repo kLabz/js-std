@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class TextTrack extends js.dom.EventTarget {
+@:native("TextTrack") extern class TextTrack extends js.dom.EventTarget {
 	var kind(default, null) : TextTrackKind;
 	var label(default, null) : String;
 	var language(default, null) : String;

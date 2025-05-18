@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSMathMax extends CSSMathValue {
+@:native("CSSMathMax") extern class CSSMathMax extends CSSMathValue {
 	var values(default, null) : CSSNumericArray;
 	function new(args:CSSNumberish):Void;
 }

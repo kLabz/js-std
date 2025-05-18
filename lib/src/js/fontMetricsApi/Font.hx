@@ -24,7 +24,7 @@
 
 package js.fontMetricsApi;
 
-extern class Font {
+@:native("Font") extern class Font {
 	var name(default, null) : String;
 	var glyphsRendered(default, null) : Int;
 }

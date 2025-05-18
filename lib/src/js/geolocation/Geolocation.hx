@@ -24,7 +24,7 @@
 
 package js.geolocation;
 
-extern class Geolocation {
+@:native("Geolocation") extern class Geolocation {
 	function clearWatch(watchId:Int):Void;
 	function getCurrentPosition(successCallback:PositionCallback, ?errorCallback:Null<PositionErrorCallback> = null, ?options:PositionOptions = {  }):Void;
 	function watchPosition(successCallback:PositionCallback, ?errorCallback:Null<PositionErrorCallback> = null, ?options:PositionOptions = {  }):Int;

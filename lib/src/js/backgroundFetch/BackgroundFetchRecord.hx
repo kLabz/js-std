@@ -24,7 +24,7 @@
 
 package js.backgroundFetch;
 
-extern class BackgroundFetchRecord {
+@:native("BackgroundFetchRecord") extern class BackgroundFetchRecord {
 	var request(default, null) : js.fetch.Request;
 	var responseReady(default, null) : js.lib.Promise<js.fetch.Response>;
 }

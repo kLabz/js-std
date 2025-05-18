@@ -24,7 +24,7 @@
 
 package js.mediaqueries5;
 
-extern class PreferenceObject extends js.dom.EventTarget {
+@:native("PreferenceObject") extern class PreferenceObject extends js.dom.EventTarget {
 	var override(default, null) : Null<String>;
 	var value(default, null) : String;
 	var validValues(default, null) : Array<String>;

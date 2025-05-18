@@ -24,7 +24,7 @@
 
 package js.gamepad;
 
-extern class GamepadEvent extends js.dom.Event {
+@:native("GamepadEvent") extern class GamepadEvent extends js.dom.Event {
 	var gamepad(default, null) : Gamepad;
 	function new(type:String, eventInitDict:GamepadEventInit):Void;
 }

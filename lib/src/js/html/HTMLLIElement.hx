@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLLIElement extends HTMLElement {
+@:native("HTMLLIElement") extern class HTMLLIElement extends HTMLElement {
 	var value : Int;
 	/**
 		From partial interface in html.idl

@@ -24,7 +24,7 @@
 
 package js.contentIndex;
 
-extern class ContentIndex {
+@:native("ContentIndex") extern class ContentIndex {
 	function add(description:ContentDescription):js.lib.Promise<Void>;
 	function delete(id:String):js.lib.Promise<Void>;
 	function getAll():js.lib.Promise<Array<ContentDescription>>;

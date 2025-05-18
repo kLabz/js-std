@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class BeforeUnloadEvent extends js.dom.Event {
+@:native("BeforeUnloadEvent") extern class BeforeUnloadEvent extends js.dom.Event {
 	var returnValue : String;
 }

@@ -24,6 +24,6 @@
 
 package js.oesTextureHalfFloatLinear;
 
-extern class OES_texture_half_float_linear {
+@:native("OES_texture_half_float_linear") extern class OES_texture_half_float_linear {
 
 }

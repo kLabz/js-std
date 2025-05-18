@@ -24,6 +24,6 @@
 
 package js.webxrHitTest;
 
-extern class XRTransientInputHitTestSource {
+@:native("XRTransientInputHitTestSource") extern class XRTransientInputHitTestSource {
 	function cancel():Void;
 }

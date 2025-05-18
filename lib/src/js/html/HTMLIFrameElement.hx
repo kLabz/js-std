@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLIFrameElement extends HTMLElement {
+@:native("HTMLIFrameElement") extern class HTMLIFrameElement extends HTMLElement {
 	var src : String;
 	var srcdoc : haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>;
 	var name : String;

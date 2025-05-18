@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class MutationRecord {
+@:native("MutationRecord") extern class MutationRecord {
 	var type(default, null) : String;
 	var target(default, null) : Node;
 	var addedNodes(default, null) : NodeList;

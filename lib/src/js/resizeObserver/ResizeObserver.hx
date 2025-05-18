@@ -24,7 +24,7 @@
 
 package js.resizeObserver;
 
-extern class ResizeObserver {
+@:native("ResizeObserver") extern class ResizeObserver {
 	function new(callback:ResizeObserverCallback):Void;
 	function disconnect():Void;
 	function observe(target:js.dom.Element, ?options:ResizeObserverOptions = {  }):Void;

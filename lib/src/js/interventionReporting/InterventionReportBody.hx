@@ -24,7 +24,7 @@
 
 package js.interventionReporting;
 
-extern class InterventionReportBody extends js.reporting.ReportBody {
+@:native("InterventionReportBody") extern class InterventionReportBody extends js.reporting.ReportBody {
 	var id(default, null) : String;
 	var message(default, null) : String;
 	var sourceFile(default, null) : Null<String>;

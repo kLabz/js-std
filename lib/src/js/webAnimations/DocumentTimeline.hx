@@ -24,6 +24,6 @@
 
 package js.webAnimations;
 
-extern class DocumentTimeline extends AnimationTimeline {
+@:native("DocumentTimeline") extern class DocumentTimeline extends AnimationTimeline {
 	function new(?options:DocumentTimelineOptions = {  }):Void;
 }

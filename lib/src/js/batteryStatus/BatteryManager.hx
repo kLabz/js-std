@@ -24,7 +24,7 @@
 
 package js.batteryStatus;
 
-extern class BatteryManager extends js.dom.EventTarget {
+@:native("BatteryManager") extern class BatteryManager extends js.dom.EventTarget {
 	var charging(default, null) : Bool;
 	var chargingTime(default, null) : Float;
 	var dischargingTime(default, null) : Float;

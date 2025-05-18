@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSUnitValue extends CSSNumericValue {
+@:native("CSSUnitValue") extern class CSSUnitValue extends CSSNumericValue {
 	var value : Float;
 	var unit(default, null) : String;
 	function new(value:Float, unit:String):Void;

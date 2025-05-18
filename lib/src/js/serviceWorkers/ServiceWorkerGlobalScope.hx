@@ -24,7 +24,7 @@
 
 package js.serviceWorkers;
 
-extern class ServiceWorkerGlobalScope extends js.html.WorkerGlobalScope {
+@:native("ServiceWorkerGlobalScope") extern class ServiceWorkerGlobalScope extends js.html.WorkerGlobalScope {
 	var clients(default, null) : Clients;
 	var registration(default, null) : ServiceWorkerRegistration;
 	var serviceWorker(default, null) : ServiceWorker;
@@ -54,10 +54,6 @@ extern class ServiceWorkerGlobalScope extends js.html.WorkerGlobalScope {
 	**/
 	var onsync : js.html.EventHandler;
 	/**
-		From partial interface in content-index.idl
-	**/
-	var oncontentdelete : js.html.EventHandler;
-	/**
 		From partial interface in cookie-store.idl
 	**/
 	var cookieStore(default, null) : js.cookieStore.CookieStore;
@@ -65,6 +61,10 @@ extern class ServiceWorkerGlobalScope extends js.html.WorkerGlobalScope {
 		From partial interface in cookie-store.idl
 	**/
 	var oncookiechange : js.html.EventHandler;
+	/**
+		From partial interface in content-index.idl
+	**/
+	var oncontentdelete : js.html.EventHandler;
 	/**
 		From partial interface in notifications.idl
 	**/

@@ -24,7 +24,7 @@
 
 package js.xhr;
 
-extern class ProgressEvent extends js.dom.Event {
+@:native("ProgressEvent") extern class ProgressEvent extends js.dom.Event {
 	var lengthComputable(default, null) : Bool;
 	var loaded(default, null) : Float;
 	var total(default, null) : Float;

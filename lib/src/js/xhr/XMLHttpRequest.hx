@@ -24,7 +24,7 @@
 
 package js.xhr;
 
-extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
+@:native("XMLHttpRequest") extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
 	var onreadystatechange : js.html.EventHandler;
 	static inline var UNSENT : Int = 0;
 	static inline var OPENED : Int = 1;

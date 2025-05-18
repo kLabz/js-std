@@ -24,7 +24,7 @@
 
 package js.realWorldMeshing;
 
-extern class XRMesh {
+@:native("XRMesh") extern class XRMesh {
 	var meshSpace(default, null) : js.webxr.XRSpace;
 	var vertices(default, null) : Array<Float32Array>;
 	var indices(default, null) : Uint32Array;

@@ -24,7 +24,7 @@
 
 package js.webxrlayers;
 
-extern class XRQuadLayer extends XRCompositionLayer {
+@:native("XRQuadLayer") extern class XRQuadLayer extends XRCompositionLayer {
 	var space : js.webxr.XRSpace;
 	var transform : js.webxr.XRRigidTransform;
 	var width : Float;

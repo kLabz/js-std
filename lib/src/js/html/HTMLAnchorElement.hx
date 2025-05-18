@@ -27,7 +27,7 @@ package js.html;
 /**
 	TODO attribute href: special=stringifier readonly=false
 **/
-extern class HTMLAnchorElement extends HTMLElement {
+@:native("HTMLAnchorElement") extern class HTMLAnchorElement extends HTMLElement {
 	var target : String;
 	var download : String;
 	var ping : String;

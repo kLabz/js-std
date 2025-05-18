@@ -24,7 +24,7 @@
 
 package js.uievents;
 
-extern class CompositionEvent extends UIEvent {
+@:native("CompositionEvent") extern class CompositionEvent extends UIEvent {
 	var data(default, null) : String;
 	function new(type:String, ?eventInitDict:CompositionEventInit = {  }):Void;
 	/**

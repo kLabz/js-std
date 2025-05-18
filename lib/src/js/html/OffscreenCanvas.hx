@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class OffscreenCanvas extends js.dom.EventTarget {
+@:native("OffscreenCanvas") extern class OffscreenCanvas extends js.dom.EventTarget {
 	var width : Float;
 	var height : Float;
 	var oncontextlost : EventHandler;

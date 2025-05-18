@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class Event {
+@:native("Event") extern class Event {
 	var type(default, null) : String;
 	var target(default, null) : Null<EventTarget>;
 	var srcElement(default, null) : Null<EventTarget>;

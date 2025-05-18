@@ -48,7 +48,7 @@ package js.geometry;
 	TODO attribute m43: special=inherit readonly=false
 	TODO attribute m44: special=inherit readonly=false
 **/
-extern class DOMMatrix extends DOMMatrixReadOnly {
+@:native("DOMMatrix") extern class DOMMatrix extends DOMMatrixReadOnly {
 	function new(?init:haxe.extern.EitherType<String, Array<Float>>):Void;
 	function fromFloat32Array(array32:Float32Array):DOMMatrix;
 	function fromFloat64Array(array64:Float64Array):DOMMatrix;

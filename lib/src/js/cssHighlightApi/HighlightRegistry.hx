@@ -27,7 +27,7 @@ package js.cssHighlightApi;
 /**
 	TODO MaplikeDeclaration handling
 **/
-extern class HighlightRegistry {
+@:native("HighlightRegistry") extern class HighlightRegistry {
 	/**
 		From partial interface in css-highlight-api.idl
 	**/

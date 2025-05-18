@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGLinearGradientElement extends SVGGradientElement {
+@:native("SVGLinearGradientElement") extern class SVGLinearGradientElement extends SVGGradientElement {
 	var x1(default, null) : SVGAnimatedLength;
 	var y1(default, null) : SVGAnimatedLength;
 	var x2(default, null) : SVGAnimatedLength;

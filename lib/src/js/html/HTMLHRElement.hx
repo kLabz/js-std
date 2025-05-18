@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLHRElement extends HTMLElement {
+@:native("HTMLHRElement") extern class HTMLHRElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
 	**/

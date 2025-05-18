@@ -24,7 +24,7 @@
 
 package js.resizeObserver;
 
-extern class ResizeObserverSize {
+@:native("ResizeObserverSize") extern class ResizeObserverSize {
 	var inlineSize(default, null) : Float;
 	var blockSize(default, null) : Float;
 }

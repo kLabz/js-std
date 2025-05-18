@@ -27,6 +27,6 @@ package js.ppa;
 /**
 	TODO MaplikeDeclaration handling
 **/
-extern class PrivateAttributionAggregationServices {
+@:native("PrivateAttributionAggregationServices") extern class PrivateAttributionAggregationServices {
 
 }

@@ -24,7 +24,7 @@
 
 package js.fs;
 
-extern class FileSystemSyncAccessHandle {
+@:native("FileSystemSyncAccessHandle") extern class FileSystemSyncAccessHandle {
 	function close():Void;
 	function flush():Void;
 	function getSize():Float;

@@ -24,7 +24,7 @@
 
 package js.fileapi;
 
-extern class File extends Blob {
+@:native("File") extern class File extends Blob {
 	var name(default, null) : String;
 	var lastModified(default, null) : Float;
 	/**

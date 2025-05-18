@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class NotRestoredReasons {
+@:native("NotRestoredReasons") extern class NotRestoredReasons {
 	var src(default, null) : Null<String>;
 	var id(default, null) : Null<String>;
 	var name(default, null) : Null<String>;

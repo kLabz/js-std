@@ -24,7 +24,7 @@
 
 package js.webrtcEncodedTransform;
 
-extern class SFrameTransform extends js.dom.EventTarget {
+@:native("SFrameTransform") extern class SFrameTransform extends js.dom.EventTarget {
 	var onerror : js.html.EventHandler;
 	/**
 		From interface mixin GenericTransformStream

@@ -24,6 +24,6 @@
 
 package js.webgl1;
 
-extern class WebGLUniformLocation {
+@:native("WebGLUniformLocation") extern class WebGLUniformLocation {
 
 }

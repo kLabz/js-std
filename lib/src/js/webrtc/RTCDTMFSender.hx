@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCDTMFSender extends js.dom.EventTarget {
+@:native("RTCDTMFSender") extern class RTCDTMFSender extends js.dom.EventTarget {
 	var ontonechange : js.html.EventHandler;
 	var canInsertDTMF(default, null) : Bool;
 	var toneBuffer(default, null) : String;

@@ -24,7 +24,7 @@
 
 package js.filterEffects;
 
-extern class SVGFEGaussianBlurElement extends js.svg.SVGElement {
+@:native("SVGFEGaussianBlurElement") extern class SVGFEGaussianBlurElement extends js.svg.SVGElement {
 	static inline var SVG_EDGEMODE_UNKNOWN : Int = 0;
 	static inline var SVG_EDGEMODE_DUPLICATE : Int = 1;
 	static inline var SVG_EDGEMODE_WRAP : Int = 2;

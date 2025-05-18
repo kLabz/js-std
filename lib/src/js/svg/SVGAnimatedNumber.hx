@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGAnimatedNumber {
+@:native("SVGAnimatedNumber") extern class SVGAnimatedNumber {
 	var baseVal : Float;
 	var animVal(default, null) : Float;
 }

@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class NodeIterator {
+@:native("NodeIterator") extern class NodeIterator {
 	var root(default, null) : Node;
 	var referenceNode(default, null) : Node;
 	var pointerBeforeReferenceNode(default, null) : Bool;

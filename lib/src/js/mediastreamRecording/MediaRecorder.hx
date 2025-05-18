@@ -24,7 +24,7 @@
 
 package js.mediastreamRecording;
 
-extern class MediaRecorder extends js.dom.EventTarget {
+@:native("MediaRecorder") extern class MediaRecorder extends js.dom.EventTarget {
 	var stream(default, null) : js.mediacaptureStreams.MediaStream;
 	var mimeType(default, null) : String;
 	var state(default, null) : RecordingState;

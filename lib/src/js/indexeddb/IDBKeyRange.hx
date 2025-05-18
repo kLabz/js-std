@@ -24,7 +24,7 @@
 
 package js.indexeddb;
 
-extern class IDBKeyRange {
+@:native("IDBKeyRange") extern class IDBKeyRange {
 	var lower(default, null) : Any;
 	var upper(default, null) : Any;
 	var lowerOpen(default, null) : Bool;

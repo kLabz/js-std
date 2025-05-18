@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class BiquadFilterNode extends AudioNode {
+@:native("BiquadFilterNode") extern class BiquadFilterNode extends AudioNode {
 	var type : BiquadFilterType;
 	var frequency(default, null) : AudioParam;
 	var detune(default, null) : AudioParam;

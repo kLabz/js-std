@@ -24,7 +24,7 @@
 
 package js.writingAssistanceApis;
 
-extern class Rewriter {
+@:native("Rewriter") extern class Rewriter {
 	var sharedContext(default, null) : String;
 	var tone(default, null) : RewriterTone;
 	var format(default, null) : RewriterFormat;

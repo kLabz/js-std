@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSMathProduct extends CSSMathValue {
+@:native("CSSMathProduct") extern class CSSMathProduct extends CSSMathValue {
 	var values(default, null) : CSSNumericArray;
 	function new(args:CSSNumberish):Void;
 }

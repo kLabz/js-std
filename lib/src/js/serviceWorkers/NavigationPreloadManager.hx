@@ -24,7 +24,7 @@
 
 package js.serviceWorkers;
 
-extern class NavigationPreloadManager {
+@:native("NavigationPreloadManager") extern class NavigationPreloadManager {
 	function disable():js.lib.Promise<Void>;
 	function enable():js.lib.Promise<Void>;
 	function getState():js.lib.Promise<NavigationPreloadState>;

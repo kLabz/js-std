@@ -24,6 +24,6 @@
 
 package js.cssConditional;
 
-extern class CSSSupportsRule extends CSSConditionRule {
+@:native("CSSSupportsRule") extern class CSSSupportsRule extends CSSConditionRule {
 	var matches(default, null) : Bool;
 }

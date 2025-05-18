@@ -24,7 +24,7 @@
 
 package js.datacue;
 
-extern class DataCue extends js.html.TextTrackCue {
+@:native("DataCue") extern class DataCue extends js.html.TextTrackCue {
 	var value : Any;
 	var type(default, null) : String;
 	function new(startTime:Float, endTime:Float, value:Any, ?type:String):Void;

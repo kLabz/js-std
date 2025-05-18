@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLTrackElement extends HTMLElement {
+@:native("HTMLTrackElement") extern class HTMLTrackElement extends HTMLElement {
 	var kind : String;
 	var src : String;
 	var srclang : String;

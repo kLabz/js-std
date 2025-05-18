@@ -24,7 +24,7 @@
 
 package js.cssFontLoading;
 
-extern class FontFace {
+@:native("FontFace") extern class FontFace {
 	var family : CSSOMString;
 	var style : CSSOMString;
 	var weight : CSSOMString;

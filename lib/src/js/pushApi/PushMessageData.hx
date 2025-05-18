@@ -24,7 +24,7 @@
 
 package js.pushApi;
 
-extern class PushMessageData {
+@:native("PushMessageData") extern class PushMessageData {
 	function arrayBuffer():ArrayBuffer;
 	function blob():js.fileapi.Blob;
 	function bytes():Uint8Array;

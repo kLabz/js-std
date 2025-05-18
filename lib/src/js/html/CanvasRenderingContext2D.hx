@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class CanvasRenderingContext2D {
+@:native("CanvasRenderingContext2D") extern class CanvasRenderingContext2D {
 	var canvas(default, null) : HTMLCanvasElement;
 	/**
 		From interface mixin CanvasCompositing

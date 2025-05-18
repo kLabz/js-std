@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSMathClamp extends CSSMathValue {
+@:native("CSSMathClamp") extern class CSSMathClamp extends CSSMathValue {
 	var lower(default, null) : CSSNumericValue;
 	var value(default, null) : CSSNumericValue;
 	var upper(default, null) : CSSNumericValue;

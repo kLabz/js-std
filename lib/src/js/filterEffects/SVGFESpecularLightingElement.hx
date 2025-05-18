@@ -24,7 +24,7 @@
 
 package js.filterEffects;
 
-extern class SVGFESpecularLightingElement extends js.svg.SVGElement {
+@:native("SVGFESpecularLightingElement") extern class SVGFESpecularLightingElement extends js.svg.SVGElement {
 	var in1(default, null) : js.svg.SVGAnimatedString;
 	var surfaceScale(default, null) : js.svg.SVGAnimatedNumber;
 	var specularConstant(default, null) : js.svg.SVGAnimatedNumber;

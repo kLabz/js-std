@@ -27,6 +27,6 @@ package js.webrtc;
 /**
 	TODO MaplikeDeclaration handling
 **/
-extern class RTCStatsReport {
+@:native("RTCStatsReport") extern class RTCStatsReport {
 
 }

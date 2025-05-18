@@ -24,7 +24,7 @@
 
 package js.handwritingRecognition;
 
-extern class HandwritingRecognizer {
+@:native("HandwritingRecognizer") extern class HandwritingRecognizer {
 	function finish():Void;
 	function startDrawing(?hints:HandwritingHints = {  }):HandwritingDrawing;
 }

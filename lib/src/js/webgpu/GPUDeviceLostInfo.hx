@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUDeviceLostInfo {
+@:native("GPUDeviceLostInfo") extern class GPUDeviceLostInfo {
 	var reason(default, null) : GPUDeviceLostReason;
 	var message(default, null) : String;
 }

@@ -24,6 +24,6 @@
 
 package js.xhr;
 
-extern class XMLHttpRequestUpload extends XMLHttpRequestEventTarget {
+@:native("XMLHttpRequestUpload") extern class XMLHttpRequestUpload extends XMLHttpRequestEventTarget {
 
 }

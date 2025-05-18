@@ -24,7 +24,7 @@
 
 package js.resourceTiming;
 
-extern class PerformanceResourceTiming extends js.performanceTimeline.PerformanceEntry {
+@:native("PerformanceResourceTiming") extern class PerformanceResourceTiming extends js.performanceTimeline.PerformanceEntry {
 	var initiatorType(default, null) : String;
 	var deliveryType(default, null) : String;
 	var nextHopProtocol(default, null) : String;

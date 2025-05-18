@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGEllipseElement extends SVGGeometryElement {
+@:native("SVGEllipseElement") extern class SVGEllipseElement extends SVGGeometryElement {
 	var cx(default, null) : SVGAnimatedLength;
 	var cy(default, null) : SVGAnimatedLength;
 	var rx(default, null) : SVGAnimatedLength;

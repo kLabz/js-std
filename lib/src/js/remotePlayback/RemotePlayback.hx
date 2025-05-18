@@ -24,7 +24,7 @@
 
 package js.remotePlayback;
 
-extern class RemotePlayback extends js.dom.EventTarget {
+@:native("RemotePlayback") extern class RemotePlayback extends js.dom.EventTarget {
 	var state(default, null) : RemotePlaybackState;
 	var onconnecting : js.html.EventHandler;
 	var onconnect : js.html.EventHandler;

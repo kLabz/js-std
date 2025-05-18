@@ -24,7 +24,7 @@
 
 package js.speechApi;
 
-extern class SpeechRecognitionPhraseList {
+@:native("SpeechRecognitionPhraseList") extern class SpeechRecognitionPhraseList {
 	var length(default, null) : Int;
 	function new(phrases:Array<SpeechRecognitionPhrase>):Void;
 	function addItem(item:SpeechRecognitionPhrase):Void;

@@ -24,7 +24,7 @@
 
 package js.fileapi;
 
-extern class FileReader extends js.dom.EventTarget {
+@:native("FileReader") extern class FileReader extends js.dom.EventTarget {
 	static inline var EMPTY : Int = 0;
 	static inline var LOADING : Int = 1;
 	static inline var DONE : Int = 2;

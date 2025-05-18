@@ -24,7 +24,7 @@
 
 package js.writingAssistanceApis;
 
-extern class Summarizer {
+@:native("Summarizer") extern class Summarizer {
 	var sharedContext(default, null) : String;
 	var type(default, null) : SummarizerType;
 	var format(default, null) : SummarizerFormat;

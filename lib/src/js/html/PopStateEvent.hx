@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class PopStateEvent extends js.dom.Event {
+@:native("PopStateEvent") extern class PopStateEvent extends js.dom.Event {
 	var state(default, null) : Any;
 	var hasUAVisualTransition(default, null) : Bool;
 	function new(type:String, ?eventInitDict:PopStateEventInit = {  }):Void;

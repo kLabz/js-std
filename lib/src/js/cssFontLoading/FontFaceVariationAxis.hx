@@ -24,7 +24,7 @@
 
 package js.cssFontLoading;
 
-extern class FontFaceVariationAxis {
+@:native("FontFaceVariationAxis") extern class FontFaceVariationAxis {
 	var name(default, null) : String;
 	var axisTag(default, null) : String;
 	var minimumValue(default, null) : Float;

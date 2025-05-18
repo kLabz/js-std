@@ -24,6 +24,6 @@
 
 package js.webgl2;
 
-extern class WebGLSampler extends js.webgl1.WebGLObject {
+@:native("WebGLSampler") extern class WebGLSampler extends js.webgl1.WebGLObject {
 
 }

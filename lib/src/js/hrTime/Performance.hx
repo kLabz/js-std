@@ -24,7 +24,7 @@
 
 package js.hrTime;
 
-extern class Performance extends js.dom.EventTarget {
+@:native("Performance") extern class Performance extends js.dom.EventTarget {
 	var timeOrigin(default, null) : DOMHighResTimeStamp;
 	/**
 		From partial interface in event-timing.idl

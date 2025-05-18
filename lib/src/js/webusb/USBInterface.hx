@@ -24,7 +24,7 @@
 
 package js.webusb;
 
-extern class USBInterface {
+@:native("USBInterface") extern class USBInterface {
 	var interfaceNumber(default, null) : Int;
 	var alternate(default, null) : USBAlternateInterface;
 	var alternates(default, null) : Array<USBAlternateInterface>;

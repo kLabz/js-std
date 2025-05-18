@@ -24,7 +24,7 @@
 
 package js.idleDetection;
 
-extern class IdleDetector extends js.dom.EventTarget {
+@:native("IdleDetector") extern class IdleDetector extends js.dom.EventTarget {
 	var userState(default, null) : Null<UserIdleState>;
 	var screenState(default, null) : Null<ScreenIdleState>;
 	var onchange : js.html.EventHandler;

@@ -24,7 +24,7 @@
 
 package js.elementTiming;
 
-extern class PerformanceElementTiming extends js.performanceTimeline.PerformanceEntry {
+@:native("PerformanceElementTiming") extern class PerformanceElementTiming extends js.performanceTimeline.PerformanceEntry {
 	var renderTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var loadTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var intersectionRect(default, null) : js.geometry.DOMRectReadOnly;

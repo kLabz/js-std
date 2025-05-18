@@ -24,6 +24,6 @@
 
 package js.svg;
 
-extern class SVGUseElementShadowRoot extends js.dom.ShadowRoot {
+@:native("SVGUseElementShadowRoot") extern class SVGUseElementShadowRoot extends js.dom.ShadowRoot {
 
 }

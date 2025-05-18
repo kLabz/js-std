@@ -24,7 +24,7 @@
 
 package js.geometry;
 
-extern class DOMMatrixReadOnly {
+@:native("DOMMatrixReadOnly") extern class DOMMatrixReadOnly {
 	var a(default, null) : Float;
 	var b(default, null) : Float;
 	var c(default, null) : Float;

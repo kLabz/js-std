@@ -24,7 +24,7 @@
 
 package js.cssomView;
 
-extern class CaretPosition {
+@:native("CaretPosition") extern class CaretPosition {
 	var offsetNode(default, null) : js.dom.Node;
 	var offset(default, null) : Int;
 	function getClientRect():Null<js.geometry.DOMRect>;

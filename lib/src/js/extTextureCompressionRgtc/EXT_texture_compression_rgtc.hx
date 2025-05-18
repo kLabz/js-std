@@ -24,7 +24,7 @@
 
 package js.extTextureCompressionRgtc;
 
-extern class EXT_texture_compression_rgtc {
+@:native("EXT_texture_compression_rgtc") extern class EXT_texture_compression_rgtc {
 	static inline var COMPRESSED_RED_RGTC1_EXT : js.webgl1.GLenum = 0x8DBB;
 	static inline var COMPRESSED_SIGNED_RED_RGTC1_EXT : js.webgl1.GLenum = 0x8DBC;
 	static inline var COMPRESSED_RED_GREEN_RGTC2_EXT : js.webgl1.GLenum = 0x8DBD;

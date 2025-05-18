@@ -24,7 +24,7 @@
 
 package js.geometry;
 
-extern class DOMRectReadOnly {
+@:native("DOMRectReadOnly") extern class DOMRectReadOnly {
 	var x(default, null) : Float;
 	var y(default, null) : Float;
 	var width(default, null) : Float;

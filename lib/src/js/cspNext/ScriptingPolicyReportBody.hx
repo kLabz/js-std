@@ -24,7 +24,7 @@
 
 package js.cspNext;
 
-extern class ScriptingPolicyReportBody extends js.reporting.ReportBody {
+@:native("ScriptingPolicyReportBody") extern class ScriptingPolicyReportBody extends js.reporting.ReportBody {
 	var violationType(default, null) : String;
 	var violationURL(default, null) : Null<String>;
 	var violationSample(default, null) : Null<String>;

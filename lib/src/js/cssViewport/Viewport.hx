@@ -24,6 +24,6 @@
 
 package js.cssViewport;
 
-extern class Viewport {
+@:native("Viewport") extern class Viewport {
 	var segments(default, null) : Null<Array<js.geometry.DOMRect>>;
 }

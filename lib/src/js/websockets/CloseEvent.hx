@@ -24,7 +24,7 @@
 
 package js.websockets;
 
-extern class CloseEvent extends js.dom.Event {
+@:native("CloseEvent") extern class CloseEvent extends js.dom.Event {
 	var wasClean(default, null) : Bool;
 	var code(default, null) : Int;
 	var reason(default, null) : String;

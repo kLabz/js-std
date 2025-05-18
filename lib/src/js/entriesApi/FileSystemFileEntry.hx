@@ -24,6 +24,6 @@
 
 package js.entriesApi;
 
-extern class FileSystemFileEntry extends FileSystemEntry {
+@:native("FileSystemFileEntry") extern class FileSystemFileEntry extends FileSystemEntry {
 	function file(successCallback:FileCallback, ?errorCallback:ErrorCallback):Void;
 }

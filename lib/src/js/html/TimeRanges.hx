@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class TimeRanges {
+@:native("TimeRanges") extern class TimeRanges {
 	var length(default, null) : Int;
 	function end(index:Int):Float;
 	function start(index:Int):Float;

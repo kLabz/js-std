@@ -24,6 +24,6 @@
 
 package js.dom;
 
-extern class XPathExpression {
+@:native("XPathExpression") extern class XPathExpression {
 	function evaluate(contextNode:Node, ?type:Int = 0, ?result:Null<XPathResult> = null):XPathResult;
 }

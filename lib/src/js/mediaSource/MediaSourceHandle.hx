@@ -24,6 +24,6 @@
 
 package js.mediaSource;
 
-extern class MediaSourceHandle {
+@:native("MediaSourceHandle") extern class MediaSourceHandle {
 
 }

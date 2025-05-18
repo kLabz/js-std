@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class VideoTrackList extends js.dom.EventTarget implements ArrayAccess<VideoTrack> {
+@:native("VideoTrackList") extern class VideoTrackList extends js.dom.EventTarget implements ArrayAccess<VideoTrack> {
 	var length(default, null) : Int;
 	var selectedIndex(default, null) : Int;
 	var onchange : EventHandler;

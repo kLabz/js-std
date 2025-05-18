@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class Plugin {
+@:native("Plugin") extern class Plugin {
 	var name(default, null) : String;
 	var description(default, null) : String;
 	var filename(default, null) : String;

@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class OfflineAudioContext extends BaseAudioContext {
+@:native("OfflineAudioContext") extern class OfflineAudioContext extends BaseAudioContext {
 	var length(default, null) : Int;
 	var oncomplete : js.html.EventHandler;
 	overload function new(numberOfChannels:Int, length:Int, sampleRate:Float):Void;

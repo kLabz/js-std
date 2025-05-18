@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCErrorEvent extends js.dom.Event {
+@:native("RTCErrorEvent") extern class RTCErrorEvent extends js.dom.Event {
 	var error(default, null) : RTCError;
 	function new(type:String, eventInitDict:RTCErrorEventInit):Void;
 }

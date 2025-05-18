@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSMathNegate extends CSSMathValue {
+@:native("CSSMathNegate") extern class CSSMathNegate extends CSSMathValue {
 	var value(default, null) : CSSNumericValue;
 	function new(arg:CSSNumberish):Void;
 }

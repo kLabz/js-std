@@ -24,7 +24,7 @@
 
 package js.mediacaptureHandleActions;
 
-extern class CaptureActionEvent extends js.dom.Event {
+@:native("CaptureActionEvent") extern class CaptureActionEvent extends js.dom.Event {
 	var action(default, null) : CaptureAction;
 	function new(?init:CaptureActionEventInit = {  }):Void;
 }

@@ -24,6 +24,6 @@
 
 package js.entriesApi;
 
-extern class FileSystemDirectoryReader {
+@:native("FileSystemDirectoryReader") extern class FileSystemDirectoryReader {
 	function readEntries(successCallback:FileSystemEntriesCallback, ?errorCallback:ErrorCallback):Void;
 }

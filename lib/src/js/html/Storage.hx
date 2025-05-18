@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class Storage {
+@:native("Storage") extern class Storage {
 	var length(default, null) : Int;
 	function clear():Void;
 	function getItem(key:String):Null<String>;

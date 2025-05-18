@@ -24,7 +24,7 @@
 
 package js.webcodecs;
 
-extern class ImageTrack {
+@:native("ImageTrack") extern class ImageTrack {
 	var animated(default, null) : Bool;
 	var frameCount(default, null) : Int;
 	var repetitionCount(default, null) : Float;

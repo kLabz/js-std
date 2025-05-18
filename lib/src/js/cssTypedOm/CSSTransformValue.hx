@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSTransformValue extends CSSStyleValue implements ArrayAccess<CSSTransformComponent> {
+@:native("CSSTransformValue") extern class CSSTransformValue extends CSSStyleValue implements ArrayAccess<CSSTransformComponent> {
 	var length(default, null) : Int;
 	var is2D(default, null) : Bool;
 	function new(transforms:Array<CSSTransformComponent>):Void;

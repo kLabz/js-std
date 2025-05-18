@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLTextAreaElement extends HTMLElement {
+@:native("HTMLTextAreaElement") extern class HTMLTextAreaElement extends HTMLElement {
 	var autocomplete : String;
 	var cols : Int;
 	var dirName : String;

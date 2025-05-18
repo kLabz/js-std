@@ -24,7 +24,7 @@
 
 package js.speechApi;
 
-extern class SpeechSynthesisVoice {
+@:native("SpeechSynthesisVoice") extern class SpeechSynthesisVoice {
 	var voiceURI(default, null) : String;
 	var name(default, null) : String;
 	var lang(default, null) : String;

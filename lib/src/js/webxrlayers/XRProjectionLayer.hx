@@ -24,7 +24,7 @@
 
 package js.webxrlayers;
 
-extern class XRProjectionLayer extends XRCompositionLayer {
+@:native("XRProjectionLayer") extern class XRProjectionLayer extends XRCompositionLayer {
 	var textureWidth(default, null) : Int;
 	var textureHeight(default, null) : Int;
 	var textureArrayLength(default, null) : Int;

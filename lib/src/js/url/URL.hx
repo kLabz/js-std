@@ -27,7 +27,7 @@ package js.url;
 /**
 	TODO attribute href: special=stringifier readonly=false
 **/
-extern class URL {
+@:native("URL") extern class URL {
 	var origin(default, null) : String;
 	var protocol : String;
 	var username : String;

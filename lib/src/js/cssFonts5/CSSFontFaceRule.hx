@@ -24,6 +24,6 @@
 
 package js.cssFonts5;
 
-extern class CSSFontFaceRule extends js.cssom.CSSRule {
+@:native("CSSFontFaceRule") extern class CSSFontFaceRule extends js.cssom.CSSRule {
 	var style(default, null) : CSSFontFaceDescriptors;
 }

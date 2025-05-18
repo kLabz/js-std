@@ -24,7 +24,7 @@
 
 package js.webvtt;
 
-extern class VTTRegion {
+@:native("VTTRegion") extern class VTTRegion {
 	var id : String;
 	var width : Float;
 	var lines : Int;

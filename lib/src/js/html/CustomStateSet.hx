@@ -27,6 +27,6 @@ package js.html;
 /**
 	TODO SetlikeDeclaration handling
 **/
-extern class CustomStateSet {
+@:native("CustomStateSet") extern class CustomStateSet {
 
 }

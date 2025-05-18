@@ -24,6 +24,6 @@
 
 package js.orientationSensor;
 
-extern class RelativeOrientationSensor extends OrientationSensor {
+@:native("RelativeOrientationSensor") extern class RelativeOrientationSensor extends OrientationSensor {
 	function new(?sensorOptions:OrientationSensorOptions = {  }):Void;
 }

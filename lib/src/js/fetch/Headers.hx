@@ -24,11 +24,11 @@
 
 package js.fetch;
 
-extern class Headers {
+@:native("Headers") extern class Headers {
 	function new(?init:HeadersInit):Void;
 	function append(name:String, value:String):Void;
 	function delete(name:String):Void;
-	function entries():Iterator<Array<Dynamic>>;
+	function entries():Iterator<js.lib.Tuple<String, String>>;
 	function get(name:String):Null<String>;
 	function getSetCookie():Array<String>;
 	function has(name:String):Bool;

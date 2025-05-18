@@ -24,7 +24,7 @@
 
 package js.oesVertexArrayObject;
 
-extern class OES_vertex_array_object {
+@:native("OES_vertex_array_object") extern class OES_vertex_array_object {
 	static inline var VERTEX_ARRAY_BINDING_OES : js.webgl1.GLenum = 0x85B5;
 	function bindVertexArrayOES(arrayObject:Null<WebGLVertexArrayObjectOES>):Void;
 	function createVertexArrayOES():WebGLVertexArrayObjectOES;

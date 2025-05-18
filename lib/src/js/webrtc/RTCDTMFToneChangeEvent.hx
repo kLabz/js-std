@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCDTMFToneChangeEvent extends js.dom.Event {
+@:native("RTCDTMFToneChangeEvent") extern class RTCDTMFToneChangeEvent extends js.dom.Event {
 	var tone(default, null) : String;
 	function new(type:String, ?eventInitDict:RTCDTMFToneChangeEventInit = {  }):Void;
 }

@@ -24,7 +24,7 @@
 
 package js.serviceWorkers;
 
-extern class ExtendableMessageEvent extends ExtendableEvent {
+@:native("ExtendableMessageEvent") extern class ExtendableMessageEvent extends ExtendableEvent {
 	var data(default, null) : Any;
 	var origin(default, null) : String;
 	var lastEventId(default, null) : String;

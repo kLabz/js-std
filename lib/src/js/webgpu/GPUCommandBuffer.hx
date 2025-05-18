@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUCommandBuffer {
+@:native("GPUCommandBuffer") extern class GPUCommandBuffer {
 	/**
 		From interface mixin GPUObjectBase
 	**/

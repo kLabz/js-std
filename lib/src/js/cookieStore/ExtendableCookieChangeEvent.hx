@@ -24,7 +24,7 @@
 
 package js.cookieStore;
 
-extern class ExtendableCookieChangeEvent extends js.serviceWorkers.ExtendableEvent {
+@:native("ExtendableCookieChangeEvent") extern class ExtendableCookieChangeEvent extends js.serviceWorkers.ExtendableEvent {
 	var changed(default, null) : Array<CookieListItem>;
 	var deleted(default, null) : Array<CookieListItem>;
 	function new(type:String, ?eventInitDict:ExtendableCookieChangeEventInit = {  }):Void;

@@ -24,7 +24,7 @@
 
 package js.indexeddb;
 
-extern class IDBDatabase extends js.dom.EventTarget {
+@:native("IDBDatabase") extern class IDBDatabase extends js.dom.EventTarget {
 	var name(default, null) : String;
 	var version(default, null) : Float;
 	var objectStoreNames(default, null) : js.html.DOMStringList;

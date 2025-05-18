@@ -24,6 +24,6 @@
 
 package js.webtransport;
 
-extern class WebTransportSendGroup {
+@:native("WebTransportSendGroup") extern class WebTransportSendGroup {
 	function getStats():js.lib.Promise<WebTransportSendStreamStats>;
 }

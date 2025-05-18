@@ -24,7 +24,7 @@
 
 package js.uievents;
 
-extern class UIEvent extends js.dom.Event {
+@:native("UIEvent") extern class UIEvent extends js.dom.Event {
 	var view(default, null) : Null<js.html.Window>;
 	var detail(default, null) : Int;
 	/**

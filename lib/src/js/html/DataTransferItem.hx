@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class DataTransferItem {
+@:native("DataTransferItem") extern class DataTransferItem {
 	var kind(default, null) : String;
 	var type(default, null) : String;
 	function getAsFile():Null<js.fileapi.File>;

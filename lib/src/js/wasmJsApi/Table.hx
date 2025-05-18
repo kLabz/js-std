@@ -24,7 +24,7 @@
 
 package js.wasmJsApi;
 
-extern class Table {
+@:native("Table") extern class Table {
 	var length(default, null) : Int;
 	function new(descriptor:TableDescriptor, ?value:Any):Void;
 	function get(index:Int):Any;

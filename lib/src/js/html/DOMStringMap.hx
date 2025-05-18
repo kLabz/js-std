@@ -41,7 +41,7 @@ package js.html;
 			}
 		})
 **/
-extern class DOMStringMap {
+@:native("DOMStringMap") extern class DOMStringMap {
 	/**
 		(special = setter)
 	**/

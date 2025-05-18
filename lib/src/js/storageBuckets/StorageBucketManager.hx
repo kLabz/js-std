@@ -24,7 +24,7 @@
 
 package js.storageBuckets;
 
-extern class StorageBucketManager {
+@:native("StorageBucketManager") extern class StorageBucketManager {
 	function delete(name:String):js.lib.Promise<Void>;
 	function keys():js.lib.Promise<Array<String>>;
 	function open(name:String, ?options:StorageBucketOptions = {  }):js.lib.Promise<StorageBucket>;

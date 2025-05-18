@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGMarkerElement extends SVGElement {
+@:native("SVGMarkerElement") extern class SVGMarkerElement extends SVGElement {
 	static inline var SVG_MARKERUNITS_UNKNOWN : Int = 0;
 	static inline var SVG_MARKERUNITS_USERSPACEONUSE : Int = 1;
 	static inline var SVG_MARKERUNITS_STROKEWIDTH : Int = 2;

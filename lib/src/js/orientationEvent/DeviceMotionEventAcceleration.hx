@@ -24,7 +24,7 @@
 
 package js.orientationEvent;
 
-extern class DeviceMotionEventAcceleration {
+@:native("DeviceMotionEventAcceleration") extern class DeviceMotionEventAcceleration {
 	var x(default, null) : Null<Float>;
 	var y(default, null) : Null<Float>;
 	var z(default, null) : Null<Float>;

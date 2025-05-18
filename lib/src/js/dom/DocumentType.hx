@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class DocumentType extends Node {
+@:native("DocumentType") extern class DocumentType extends Node {
 	var name(default, null) : String;
 	var publicId(default, null) : String;
 	var systemId(default, null) : String;

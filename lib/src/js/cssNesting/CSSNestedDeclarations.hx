@@ -24,6 +24,6 @@
 
 package js.cssNesting;
 
-extern class CSSNestedDeclarations extends js.cssom.CSSRule {
+@:native("CSSNestedDeclarations") extern class CSSNestedDeclarations extends js.cssom.CSSRule {
 	var style(default, null) : js.cssom.CSSStyleProperties;
 }

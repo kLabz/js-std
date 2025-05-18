@@ -24,7 +24,7 @@
 
 package js.webBluetooth;
 
-extern class BluetoothAdvertisingEvent extends js.dom.Event {
+@:native("BluetoothAdvertisingEvent") extern class BluetoothAdvertisingEvent extends js.dom.Event {
 	var device(default, null) : BluetoothDevice;
 	var uuids(default, null) : Array<UUID>;
 	var name(default, null) : Null<String>;

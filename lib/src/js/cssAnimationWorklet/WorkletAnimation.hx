@@ -24,7 +24,7 @@
 
 package js.cssAnimationWorklet;
 
-extern class WorkletAnimation extends js.webAnimations.Animation {
+@:native("WorkletAnimation") extern class WorkletAnimation extends js.webAnimations.Animation {
 	var animatorName(default, null) : String;
 	function new(animatorName:String, ?effects:Null<haxe.extern.EitherType<js.webAnimations.AnimationEffect, Array<js.webAnimations.AnimationEffect>>> = null, ?timeline:Null<js.webAnimations.AnimationTimeline>, ?options:Any):Void;
 }

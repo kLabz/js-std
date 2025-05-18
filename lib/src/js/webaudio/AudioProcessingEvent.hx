@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class AudioProcessingEvent extends js.dom.Event {
+@:native("AudioProcessingEvent") extern class AudioProcessingEvent extends js.dom.Event {
 	var playbackTime(default, null) : Float;
 	var inputBuffer(default, null) : AudioBuffer;
 	var outputBuffer(default, null) : AudioBuffer;

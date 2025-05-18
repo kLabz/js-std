@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLTableCaptionElement extends HTMLElement {
+@:native("HTMLTableCaptionElement") extern class HTMLTableCaptionElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
 	**/

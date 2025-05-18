@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class MimeType {
+@:native("MimeType") extern class MimeType {
 	var type(default, null) : String;
 	var description(default, null) : String;
 	var suffixes(default, null) : String;

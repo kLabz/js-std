@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUUncapturedErrorEvent extends js.dom.Event {
+@:native("GPUUncapturedErrorEvent") extern class GPUUncapturedErrorEvent extends js.dom.Event {
 	var error(default, null) : GPUError;
 	function new(type:String, gpuUncapturedErrorEventInitDict:GPUUncapturedErrorEventInit):Void;
 }

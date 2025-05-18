@@ -24,7 +24,7 @@
 
 package js.mediaqueries5;
 
-extern class PreferenceManager {
+@:native("PreferenceManager") extern class PreferenceManager {
 	var colorScheme(default, null) : PreferenceObject;
 	var contrast(default, null) : PreferenceObject;
 	var reducedMotion(default, null) : PreferenceObject;

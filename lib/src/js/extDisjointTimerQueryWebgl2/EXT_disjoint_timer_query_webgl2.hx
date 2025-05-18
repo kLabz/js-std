@@ -24,7 +24,7 @@
 
 package js.extDisjointTimerQueryWebgl2;
 
-extern class EXT_disjoint_timer_query_webgl2 {
+@:native("EXT_disjoint_timer_query_webgl2") extern class EXT_disjoint_timer_query_webgl2 {
 	static inline var QUERY_COUNTER_BITS_EXT : js.webgl1.GLenum = 0x8864;
 	static inline var TIME_ELAPSED_EXT : js.webgl1.GLenum = 0x88BF;
 	static inline var TIMESTAMP_EXT : js.webgl1.GLenum = 0x8E28;

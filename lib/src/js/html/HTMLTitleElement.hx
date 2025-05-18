@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLTitleElement extends HTMLElement {
+@:native("HTMLTitleElement") extern class HTMLTitleElement extends HTMLElement {
 	var text : String;
 	function new():Void;
 }

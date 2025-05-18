@@ -24,7 +24,7 @@
 
 package js.webgl1;
 
-extern class WebGLShaderPrecisionFormat {
+@:native("WebGLShaderPrecisionFormat") extern class WebGLShaderPrecisionFormat {
 	var rangeMin(default, null) : GLint;
 	var rangeMax(default, null) : GLint;
 	var precision(default, null) : GLint;

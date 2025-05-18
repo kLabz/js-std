@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCSessionDescription {
+@:native("RTCSessionDescription") extern class RTCSessionDescription {
 	var type(default, null) : RTCSdpType;
 	var sdp(default, null) : String;
 	function new(descriptionInitDict:RTCSessionDescriptionInit):Void;

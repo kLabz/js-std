@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLDialogElement extends HTMLElement {
+@:native("HTMLDialogElement") extern class HTMLDialogElement extends HTMLElement {
 	var open : Bool;
 	var returnValue : String;
 	var closedBy : String;

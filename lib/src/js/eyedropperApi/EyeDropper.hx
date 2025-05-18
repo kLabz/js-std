@@ -24,7 +24,7 @@
 
 package js.eyedropperApi;
 
-extern class EyeDropper {
+@:native("EyeDropper") extern class EyeDropper {
 	function new():Void;
 	function open(?options:ColorSelectionOptions = {  }):js.lib.Promise<ColorSelectionResult>;
 }

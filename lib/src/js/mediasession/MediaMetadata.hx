@@ -24,7 +24,7 @@
 
 package js.mediasession;
 
-extern class MediaMetadata {
+@:native("MediaMetadata") extern class MediaMetadata {
 	var title : String;
 	var artist : String;
 	var album : String;

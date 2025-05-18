@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class DedicatedWorkerGlobalScope extends WorkerGlobalScope {
+@:native("DedicatedWorkerGlobalScope") extern class DedicatedWorkerGlobalScope extends WorkerGlobalScope {
 	var name(default, null) : String;
 	/**
 		From interface mixin MessageEventTarget

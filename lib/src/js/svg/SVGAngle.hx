@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGAngle {
+@:native("SVGAngle") extern class SVGAngle {
 	static inline var SVG_ANGLETYPE_UNKNOWN : Int = 0;
 	static inline var SVG_ANGLETYPE_UNSPECIFIED : Int = 1;
 	static inline var SVG_ANGLETYPE_DEG : Int = 2;

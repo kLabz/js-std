@@ -24,7 +24,7 @@
 
 package js.crashReporting;
 
-extern class CrashReportBody extends js.reporting.ReportBody {
+@:native("CrashReportBody") extern class CrashReportBody extends js.reporting.ReportBody {
 	var reason(default, null) : Null<String>;
 	var stack(default, null) : Null<String>;
 	var is_top_level(default, null) : Null<String>;

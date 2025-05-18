@@ -24,7 +24,7 @@
 
 package js.orientationEvent;
 
-extern class DeviceMotionEvent extends js.dom.Event {
+@:native("DeviceMotionEvent") extern class DeviceMotionEvent extends js.dom.Event {
 	var acceleration(default, null) : Null<DeviceMotionEventAcceleration>;
 	var accelerationIncludingGravity(default, null) : Null<DeviceMotionEventAcceleration>;
 	var rotationRate(default, null) : Null<DeviceMotionEventRotationRate>;

@@ -24,6 +24,6 @@
 
 package js.userTiming;
 
-extern class PerformanceMeasure extends js.performanceTimeline.PerformanceEntry {
+@:native("PerformanceMeasure") extern class PerformanceMeasure extends js.performanceTimeline.PerformanceEntry {
 	var detail(default, null) : Any;
 }

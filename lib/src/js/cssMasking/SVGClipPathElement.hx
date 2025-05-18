@@ -24,7 +24,7 @@
 
 package js.cssMasking;
 
-extern class SVGClipPathElement extends js.svg.SVGElement {
+@:native("SVGClipPathElement") extern class SVGClipPathElement extends js.svg.SVGElement {
 	var clipPathUnits(default, null) : js.svg.SVGAnimatedEnumeration;
 	var transform(default, null) : js.svg.SVGAnimatedTransformList;
 }

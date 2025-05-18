@@ -24,7 +24,7 @@
 
 package js.webcodecs;
 
-extern class EncodedAudioChunk {
+@:native("EncodedAudioChunk") extern class EncodedAudioChunk {
 	var type(default, null) : EncodedAudioChunkType;
 	var timestamp(default, null) : Float;
 	var duration(default, null) : Null<Float>;

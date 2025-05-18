@@ -24,7 +24,7 @@
 
 package js.webxr;
 
-extern class XRView {
+@:native("XRView") extern class XRView {
 	var eye(default, null) : XREye;
 	var recommendedViewportScale(default, null) : Null<Float>;
 	/**

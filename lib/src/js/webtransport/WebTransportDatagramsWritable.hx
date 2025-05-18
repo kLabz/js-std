@@ -24,7 +24,7 @@
 
 package js.webtransport;
 
-extern class WebTransportDatagramsWritable extends js.streams.WritableStream {
+@:native("WebTransportDatagramsWritable") extern class WebTransportDatagramsWritable extends js.streams.WritableStream {
 	var sendGroup : Null<WebTransportSendGroup>;
 	var sendOrder : Float;
 }

@@ -24,7 +24,7 @@
 
 package js.streams;
 
-extern class ByteLengthQueuingStrategy {
+@:native("ByteLengthQueuingStrategy") extern class ByteLengthQueuingStrategy {
 	var highWaterMark(default, null) : Float;
 	var size(default, null) : js.webidl.Function;
 	function new(init:QueuingStrategyInit):Void;

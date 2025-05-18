@@ -24,7 +24,7 @@
 
 package js.serviceWorkers;
 
-extern class ServiceWorkerRegistration extends js.dom.EventTarget {
+@:native("ServiceWorkerRegistration") extern class ServiceWorkerRegistration extends js.dom.EventTarget {
 	var installing(default, null) : Null<ServiceWorker>;
 	var waiting(default, null) : Null<ServiceWorker>;
 	var active(default, null) : Null<ServiceWorker>;
@@ -41,13 +41,13 @@ extern class ServiceWorkerRegistration extends js.dom.EventTarget {
 	**/
 	var sync(default, null) : js.backgroundSync.SyncManager;
 	/**
-		From partial interface in content-index.idl
-	**/
-	var index(default, null) : js.contentIndex.ContentIndex;
-	/**
 		From partial interface in cookie-store.idl
 	**/
 	var cookies(default, null) : js.cookieStore.CookieStoreManager;
+	/**
+		From partial interface in content-index.idl
+	**/
+	var index(default, null) : js.contentIndex.ContentIndex;
 	/**
 		From partial interface in payment-handler.idl
 	**/

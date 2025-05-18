@@ -24,7 +24,7 @@
 
 package js.webBluetooth;
 
-extern class BluetoothRemoteGATTDescriptor {
+@:native("BluetoothRemoteGATTDescriptor") extern class BluetoothRemoteGATTDescriptor {
 	var characteristic(default, null) : BluetoothRemoteGATTCharacteristic;
 	var uuid(default, null) : UUID;
 	var value(default, null) : Null<DataView>;

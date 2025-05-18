@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class NavigationActivation {
+@:native("NavigationActivation") extern class NavigationActivation {
 	var from(default, null) : Null<NavigationHistoryEntry>;
 	var entry(default, null) : NavigationHistoryEntry;
 	var navigationType(default, null) : NavigationType;

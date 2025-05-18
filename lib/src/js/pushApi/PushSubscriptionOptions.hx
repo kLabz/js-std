@@ -24,7 +24,7 @@
 
 package js.pushApi;
 
-extern class PushSubscriptionOptions {
+@:native("PushSubscriptionOptions") extern class PushSubscriptionOptions {
 	var userVisibleOnly(default, null) : Bool;
 	var applicationServerKey(default, null) : Null<ArrayBuffer>;
 }

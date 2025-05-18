@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class NavigationHistoryEntry extends js.dom.EventTarget {
+@:native("NavigationHistoryEntry") extern class NavigationHistoryEntry extends js.dom.EventTarget {
 	var url(default, null) : Null<String>;
 	var key(default, null) : String;
 	var id(default, null) : String;

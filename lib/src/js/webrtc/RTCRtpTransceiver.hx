@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCRtpTransceiver {
+@:native("RTCRtpTransceiver") extern class RTCRtpTransceiver {
 	var mid(default, null) : Null<String>;
 	var sender(default, null) : RTCRtpSender;
 	var receiver(default, null) : RTCRtpReceiver;

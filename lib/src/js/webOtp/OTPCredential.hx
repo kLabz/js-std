@@ -24,6 +24,6 @@
 
 package js.webOtp;
 
-extern class OTPCredential extends js.credentialManagement.Credential {
+@:native("OTPCredential") extern class OTPCredential extends js.credentialManagement.Credential {
 	var code(default, null) : String;
 }

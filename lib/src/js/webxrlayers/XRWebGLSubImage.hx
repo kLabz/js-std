@@ -24,7 +24,7 @@
 
 package js.webxrlayers;
 
-extern class XRWebGLSubImage extends XRSubImage {
+@:native("XRWebGLSubImage") extern class XRWebGLSubImage extends XRSubImage {
 	var colorTexture(default, null) : js.webgl1.WebGLTexture;
 	var depthStencilTexture(default, null) : Null<js.webgl1.WebGLTexture>;
 	var motionVectorTexture(default, null) : Null<js.webgl1.WebGLTexture>;

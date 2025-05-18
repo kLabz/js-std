@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class Worklet {
+@:native("Worklet") extern class Worklet {
 	function addModule(moduleURL:String, ?options:WorkletOptions = {  }):js.lib.Promise<Void>;
 }

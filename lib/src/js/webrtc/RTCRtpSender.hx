@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCRtpSender {
+@:native("RTCRtpSender") extern class RTCRtpSender {
 	var track(default, null) : Null<js.mediacaptureStreams.MediaStreamTrack>;
 	var transport(default, null) : Null<RTCDtlsTransport>;
 	/**

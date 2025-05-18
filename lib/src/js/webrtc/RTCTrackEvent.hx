@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCTrackEvent extends js.dom.Event {
+@:native("RTCTrackEvent") extern class RTCTrackEvent extends js.dom.Event {
 	var receiver(default, null) : RTCRtpReceiver;
 	var track(default, null) : js.mediacaptureStreams.MediaStreamTrack;
 	var streams(default, null) : Array<js.mediacaptureStreams.MediaStream>;

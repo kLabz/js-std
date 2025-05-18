@@ -24,7 +24,7 @@
 
 package js.cssAnimations;
 
-extern class CSSKeyframeRule extends js.cssom.CSSRule {
+@:native("CSSKeyframeRule") extern class CSSKeyframeRule extends js.cssom.CSSRule {
 	var keyText : CSSOMString;
 	var style(default, null) : js.cssom.CSSStyleProperties;
 }

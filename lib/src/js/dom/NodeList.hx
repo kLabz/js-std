@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class NodeList {
+@:native("NodeList") extern class NodeList {
 	var length(default, null) : Int;
 	function item(index:Int):Null<Node>;
 	function values():Iterator<Node>;

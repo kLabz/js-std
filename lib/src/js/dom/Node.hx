@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class Node extends EventTarget {
+@:native("Node") extern class Node extends EventTarget {
 	static inline var ELEMENT_NODE : Int = 1;
 	static inline var ATTRIBUTE_NODE : Int = 2;
 	static inline var TEXT_NODE : Int = 3;

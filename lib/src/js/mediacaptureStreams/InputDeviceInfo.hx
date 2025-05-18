@@ -24,6 +24,6 @@
 
 package js.mediacaptureStreams;
 
-extern class InputDeviceInfo extends MediaDeviceInfo {
+@:native("InputDeviceInfo") extern class InputDeviceInfo extends MediaDeviceInfo {
 	function getCapabilities():MediaTrackCapabilities;
 }

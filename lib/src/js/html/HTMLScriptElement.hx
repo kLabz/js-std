@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLScriptElement extends HTMLElement {
+@:native("HTMLScriptElement") extern class HTMLScriptElement extends HTMLElement {
 	var src : String;
 	var type : String;
 	var noModule : Bool;

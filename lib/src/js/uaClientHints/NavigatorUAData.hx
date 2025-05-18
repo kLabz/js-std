@@ -24,7 +24,7 @@
 
 package js.uaClientHints;
 
-extern class NavigatorUAData {
+@:native("NavigatorUAData") extern class NavigatorUAData {
 	var brands(default, null) : Array<NavigatorUABrandVersion>;
 	var mobile(default, null) : Bool;
 	var platform(default, null) : String;

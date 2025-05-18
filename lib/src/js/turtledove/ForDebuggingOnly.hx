@@ -24,7 +24,7 @@
 
 package js.turtledove;
 
-extern class ForDebuggingOnly {
+@:native("ForDebuggingOnly") extern class ForDebuggingOnly {
 	function reportAdAuctionLoss(url:String):Void;
 	function reportAdAuctionWin(url:String):Void;
 }

@@ -24,6 +24,6 @@
 
 package js.inkEnhancement;
 
-extern class Ink {
+@:native("Ink") extern class Ink {
 	function requestPresenter(?param:InkPresenterParam = {  }):js.lib.Promise<DelegatedInkTrailPresenter>;
 }

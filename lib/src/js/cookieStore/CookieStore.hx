@@ -24,7 +24,7 @@
 
 package js.cookieStore;
 
-extern class CookieStore extends js.dom.EventTarget {
+@:native("CookieStore") extern class CookieStore extends js.dom.EventTarget {
 	var onchange : js.html.EventHandler;
 	overload function delete(name:String):js.lib.Promise<Void>;
 	overload function delete(options:CookieStoreDeleteOptions):js.lib.Promise<Void>;

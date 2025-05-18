@@ -24,6 +24,6 @@
 
 package js.cssMixins;
 
-extern class CSSFunctionDeclarations extends js.cssom.CSSRule {
+@:native("CSSFunctionDeclarations") extern class CSSFunctionDeclarations extends js.cssom.CSSRule {
 	var style(default, null) : CSSFunctionDescriptors;
 }

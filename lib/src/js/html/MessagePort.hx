@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class MessagePort extends js.dom.EventTarget {
+@:native("MessagePort") extern class MessagePort extends js.dom.EventTarget {
 	var onclose : EventHandler;
 	/**
 		From interface mixin MessageEventTarget

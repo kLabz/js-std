@@ -24,7 +24,7 @@
 
 package js.intersectionObserver;
 
-extern class IntersectionObserverEntry {
+@:native("IntersectionObserverEntry") extern class IntersectionObserverEntry {
 	var time(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var rootBounds(default, null) : Null<js.geometry.DOMRectReadOnly>;
 	var boundingClientRect(default, null) : js.geometry.DOMRectReadOnly;

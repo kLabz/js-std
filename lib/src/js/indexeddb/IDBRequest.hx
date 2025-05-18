@@ -24,7 +24,7 @@
 
 package js.indexeddb;
 
-extern class IDBRequest extends js.dom.EventTarget {
+@:native("IDBRequest") extern class IDBRequest extends js.dom.EventTarget {
 	var result(default, null) : Any;
 	var error(default, null) : Null<js.webidl.DOMException>;
 	var source(default, null) : Null<haxe.extern.EitherType<IDBObjectStore, haxe.extern.EitherType<IDBIndex, IDBCursor>>>;

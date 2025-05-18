@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUBindGroup {
+@:native("GPUBindGroup") extern class GPUBindGroup {
 	/**
 		From interface mixin GPUObjectBase
 	**/

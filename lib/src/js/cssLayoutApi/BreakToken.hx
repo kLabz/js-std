@@ -24,7 +24,7 @@
 
 package js.cssLayoutApi;
 
-extern class BreakToken {
+@:native("BreakToken") extern class BreakToken {
 	var childBreakTokens(default, null) : Array<ChildBreakToken>;
 	var data(default, null) : Any;
 }

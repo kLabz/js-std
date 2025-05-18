@@ -24,7 +24,7 @@
 
 package js.devicePosture;
 
-extern class DevicePosture extends js.dom.EventTarget {
+@:native("DevicePosture") extern class DevicePosture extends js.dom.EventTarget {
 	var type(default, null) : DevicePostureType;
 	var onchange : js.html.EventHandler;
 }

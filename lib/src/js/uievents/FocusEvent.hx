@@ -24,7 +24,7 @@
 
 package js.uievents;
 
-extern class FocusEvent extends UIEvent {
+@:native("FocusEvent") extern class FocusEvent extends UIEvent {
 	var relatedTarget(default, null) : Null<js.dom.EventTarget>;
 	function new(type:String, ?eventInitDict:FocusEventInit = {  }):Void;
 }

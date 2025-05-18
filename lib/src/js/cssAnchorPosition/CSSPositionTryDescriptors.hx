@@ -24,7 +24,7 @@
 
 package js.cssAnchorPosition;
 
-extern class CSSPositionTryDescriptors extends js.cssom.CSSStyleDeclaration {
+@:native("CSSPositionTryDescriptors") extern class CSSPositionTryDescriptors extends js.cssom.CSSStyleDeclaration {
 	var margin : CSSOMString;
 	var marginTop : CSSOMString;
 	var marginRight : CSSOMString;

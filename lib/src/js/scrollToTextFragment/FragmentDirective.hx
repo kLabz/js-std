@@ -24,6 +24,6 @@
 
 package js.scrollToTextFragment;
 
-extern class FragmentDirective {
+@:native("FragmentDirective") extern class FragmentDirective {
 
 }

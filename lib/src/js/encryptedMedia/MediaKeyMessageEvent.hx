@@ -24,7 +24,7 @@
 
 package js.encryptedMedia;
 
-extern class MediaKeyMessageEvent extends js.dom.Event {
+@:native("MediaKeyMessageEvent") extern class MediaKeyMessageEvent extends js.dom.Event {
 	var messageType(default, null) : MediaKeyMessageType;
 	var message(default, null) : ArrayBuffer;
 	function new(type:String, eventInitDict:MediaKeyMessageEventInit):Void;

@@ -24,7 +24,7 @@
 
 package js.speechApi;
 
-extern class SpeechRecognition extends js.dom.EventTarget {
+@:native("SpeechRecognition") extern class SpeechRecognition extends js.dom.EventTarget {
 	var lang : String;
 	var continuous : Bool;
 	var interimResults : Bool;

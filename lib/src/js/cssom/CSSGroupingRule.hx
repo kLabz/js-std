@@ -24,7 +24,7 @@
 
 package js.cssom;
 
-extern class CSSGroupingRule extends CSSRule {
+@:native("CSSGroupingRule") extern class CSSGroupingRule extends CSSRule {
 	var cssRules(default, null) : CSSRuleList;
 	function deleteRule(index:Int):Void;
 	function insertRule(rule:CSSOMString, ?index:Int = 0):Int;

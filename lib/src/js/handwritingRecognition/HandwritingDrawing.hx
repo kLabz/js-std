@@ -24,7 +24,7 @@
 
 package js.handwritingRecognition;
 
-extern class HandwritingDrawing {
+@:native("HandwritingDrawing") extern class HandwritingDrawing {
 	function addStroke(stroke:HandwritingStroke):Void;
 	function clear():Void;
 	function getPrediction():js.lib.Promise<Array<HandwritingPrediction>>;

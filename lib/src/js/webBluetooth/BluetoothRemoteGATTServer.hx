@@ -24,7 +24,7 @@
 
 package js.webBluetooth;
 
-extern class BluetoothRemoteGATTServer {
+@:native("BluetoothRemoteGATTServer") extern class BluetoothRemoteGATTServer {
 	var device(default, null) : BluetoothDevice;
 	var connected(default, null) : Bool;
 	function connect():js.lib.Promise<BluetoothRemoteGATTServer>;

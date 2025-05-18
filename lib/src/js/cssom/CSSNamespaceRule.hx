@@ -24,7 +24,7 @@
 
 package js.cssom;
 
-extern class CSSNamespaceRule extends CSSRule {
+@:native("CSSNamespaceRule") extern class CSSNamespaceRule extends CSSRule {
 	var namespaceURI(default, null) : CSSOMString;
 	var prefix(default, null) : CSSOMString;
 }

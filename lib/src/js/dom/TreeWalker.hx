@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class TreeWalker {
+@:native("TreeWalker") extern class TreeWalker {
 	var root(default, null) : Node;
 	var whatToShow(default, null) : Int;
 	var filter(default, null) : Null<NodeFilter>;

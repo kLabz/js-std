@@ -24,6 +24,6 @@
 
 package js.webrtcIdentity;
 
-extern class RTCIdentityProviderRegistrar {
+@:native("RTCIdentityProviderRegistrar") extern class RTCIdentityProviderRegistrar {
 	function register(idp:RTCIdentityProvider):Void;
 }

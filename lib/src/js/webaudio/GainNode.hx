@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class GainNode extends AudioNode {
+@:native("GainNode") extern class GainNode extends AudioNode {
 	var gain(default, null) : AudioParam;
 	function new(context:BaseAudioContext, ?options:GainOptions = {  }):Void;
 }

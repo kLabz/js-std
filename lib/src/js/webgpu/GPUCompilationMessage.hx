@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUCompilationMessage {
+@:native("GPUCompilationMessage") extern class GPUCompilationMessage {
 	var message(default, null) : String;
 	var type(default, null) : GPUCompilationMessageType;
 	var lineNum(default, null) : Float;

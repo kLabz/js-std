@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSNumericArray implements ArrayAccess<CSSNumericValue> {
+@:native("CSSNumericArray") extern class CSSNumericArray implements ArrayAccess<CSSNumericValue> {
 	var length(default, null) : Int;
 	function values():Iterator<CSSNumericValue>;
 	function values():Iterator<CSSNumericValue>;

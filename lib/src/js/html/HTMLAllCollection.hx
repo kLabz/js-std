@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLAllCollection implements ArrayAccess<js.dom.Element> {
+@:native("HTMLAllCollection") extern class HTMLAllCollection implements ArrayAccess<js.dom.Element> {
 	var length(default, null) : Int;
 	function item(?nameOrIndex:String):Null<haxe.extern.EitherType<js.dom.HTMLCollection, js.dom.Element>>;
 	function namedItem(name:String):Null<haxe.extern.EitherType<js.dom.HTMLCollection, js.dom.Element>>;

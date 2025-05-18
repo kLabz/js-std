@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCIceTransport extends js.dom.EventTarget {
+@:native("RTCIceTransport") extern class RTCIceTransport extends js.dom.EventTarget {
 	var role(default, null) : RTCIceRole;
 	var component(default, null) : RTCIceComponent;
 	var state(default, null) : RTCIceTransportState;

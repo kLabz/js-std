@@ -24,6 +24,6 @@
 
 package js.loginStatus;
 
-extern class NavigatorLogin {
+@:native("NavigatorLogin") extern class NavigatorLogin {
 	function setStatus(status:LoginStatus):js.lib.Promise<Void>;
 }

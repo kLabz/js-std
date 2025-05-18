@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGAnimatedBoolean {
+@:native("SVGAnimatedBoolean") extern class SVGAnimatedBoolean {
 	var baseVal : Bool;
 	var animVal(default, null) : Bool;
 }

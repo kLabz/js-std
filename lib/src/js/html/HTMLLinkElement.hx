@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLLinkElement extends HTMLElement {
+@:native("HTMLLinkElement") extern class HTMLLinkElement extends HTMLElement {
 	var href : String;
 	var crossOrigin : Null<String>;
 	var rel : String;

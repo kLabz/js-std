@@ -24,7 +24,7 @@
 
 package js.scrollAnimations;
 
-extern class ViewTimeline extends ScrollTimeline {
+@:native("ViewTimeline") extern class ViewTimeline extends ScrollTimeline {
 	var subject(default, null) : js.dom.Element;
 	var startOffset(default, null) : js.cssTypedOm.CSSNumericValue;
 	var endOffset(default, null) : js.cssTypedOm.CSSNumericValue;

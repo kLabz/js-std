@@ -24,6 +24,6 @@
 
 package js.svgAnimations;
 
-extern class SVGDiscardElement extends SVGAnimationElement {
+@:native("SVGDiscardElement") extern class SVGDiscardElement extends SVGAnimationElement {
 
 }

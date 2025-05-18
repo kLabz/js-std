@@ -24,7 +24,7 @@
 
 package js.performanceTimeline;
 
-extern class PerformanceEntry {
+@:native("PerformanceEntry") extern class PerformanceEntry {
 	var id(default, null) : Float;
 	var name(default, null) : String;
 	var entryType(default, null) : String;

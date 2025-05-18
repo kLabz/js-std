@@ -24,7 +24,7 @@
 
 package js.speechApi;
 
-extern class SpeechRecognitionResultList {
+@:native("SpeechRecognitionResultList") extern class SpeechRecognitionResultList {
 	var length(default, null) : Int;
 	function item(index:Int):SpeechRecognitionResult;
 }

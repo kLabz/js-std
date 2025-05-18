@@ -24,7 +24,7 @@
 
 package js.webusb;
 
-extern class USBEndpoint {
+@:native("USBEndpoint") extern class USBEndpoint {
 	var endpointNumber(default, null) : Int;
 	var direction(default, null) : USBDirection;
 	var type(default, null) : USBEndpointType;

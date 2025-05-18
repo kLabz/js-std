@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLTableColElement extends HTMLElement {
+@:native("HTMLTableColElement") extern class HTMLTableColElement extends HTMLElement {
 	var span : Int;
 	/**
 		From partial interface in html.idl

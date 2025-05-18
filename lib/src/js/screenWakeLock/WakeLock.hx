@@ -24,6 +24,6 @@
 
 package js.screenWakeLock;
 
-extern class WakeLock {
+@:native("WakeLock") extern class WakeLock {
 	function request(?type:WakeLockType = "screen"):js.lib.Promise<WakeLockSentinel>;
 }

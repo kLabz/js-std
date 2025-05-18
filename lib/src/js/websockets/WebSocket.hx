@@ -24,7 +24,7 @@
 
 package js.websockets;
 
-extern class WebSocket extends js.dom.EventTarget {
+@:native("WebSocket") extern class WebSocket extends js.dom.EventTarget {
 	var url(default, null) : String;
 	static inline var CONNECTING : Int = 0;
 	static inline var OPEN : Int = 1;

@@ -24,6 +24,6 @@
 
 package js.cssLayoutApi;
 
-extern class LayoutWorkletGlobalScope extends js.html.WorkletGlobalScope {
+@:native("LayoutWorkletGlobalScope") extern class LayoutWorkletGlobalScope extends js.html.WorkletGlobalScope {
 	function registerLayout(name:String, layoutCtor:js.webidl.VoidFunction):Void;
 }

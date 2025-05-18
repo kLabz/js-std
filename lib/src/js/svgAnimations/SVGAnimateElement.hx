@@ -24,6 +24,6 @@
 
 package js.svgAnimations;
 
-extern class SVGAnimateElement extends SVGAnimationElement {
+@:native("SVGAnimateElement") extern class SVGAnimateElement extends SVGAnimationElement {
 
 }

@@ -24,7 +24,7 @@
 
 package js.fencedFrame;
 
-extern class HTMLFencedFrameElement extends js.html.HTMLElement {
+@:native("HTMLFencedFrameElement") extern class HTMLFencedFrameElement extends js.html.HTMLElement {
 	var config : Null<FencedFrameConfig>;
 	var width : String;
 	var height : String;

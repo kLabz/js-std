@@ -24,6 +24,6 @@
 
 package js.svg;
 
-extern class SVGSwitchElement extends SVGGraphicsElement {
+@:native("SVGSwitchElement") extern class SVGSwitchElement extends SVGGraphicsElement {
 
 }

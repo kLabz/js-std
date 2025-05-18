@@ -24,7 +24,7 @@
 
 package js.mediacaptureStreams;
 
-extern class MediaDeviceInfo {
+@:native("MediaDeviceInfo") extern class MediaDeviceInfo {
 	var deviceId(default, null) : String;
 	var kind(default, null) : MediaDeviceKind;
 	var label(default, null) : String;

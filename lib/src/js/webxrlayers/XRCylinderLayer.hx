@@ -24,7 +24,7 @@
 
 package js.webxrlayers;
 
-extern class XRCylinderLayer extends XRCompositionLayer {
+@:native("XRCylinderLayer") extern class XRCylinderLayer extends XRCompositionLayer {
 	var space : js.webxr.XRSpace;
 	var transform : js.webxr.XRRigidTransform;
 	var radius : Float;

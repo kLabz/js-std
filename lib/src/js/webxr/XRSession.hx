@@ -24,7 +24,7 @@
 
 package js.webxr;
 
-extern class XRSession extends js.dom.EventTarget {
+@:native("XRSession") extern class XRSession extends js.dom.EventTarget {
 	var visibilityState(default, null) : XRVisibilityState;
 	var frameRate(default, null) : Null<Float>;
 	var supportedFrameRates(default, null) : Null<Float32Array>;

@@ -24,7 +24,7 @@
 
 package js.indexeddb;
 
-extern class IDBCursor {
+@:native("IDBCursor") extern class IDBCursor {
 	var source(default, null) : haxe.extern.EitherType<IDBObjectStore, IDBIndex>;
 	var direction(default, null) : IDBCursorDirection;
 	var key(default, null) : Any;

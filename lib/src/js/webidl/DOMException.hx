@@ -24,7 +24,7 @@
 
 package js.webidl;
 
-extern class DOMException {
+@:native("DOMException") extern class DOMException {
 	var name(default, null) : String;
 	var message(default, null) : String;
 	var code(default, null) : Int;

@@ -24,7 +24,7 @@
 
 package js.gamepad;
 
-extern class Gamepad {
+@:native("Gamepad") extern class Gamepad {
 	var id(default, null) : String;
 	var index(default, null) : Int;
 	var connected(default, null) : Bool;

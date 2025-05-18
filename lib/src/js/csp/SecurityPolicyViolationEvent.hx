@@ -24,7 +24,7 @@
 
 package js.csp;
 
-extern class SecurityPolicyViolationEvent extends js.dom.Event {
+@:native("SecurityPolicyViolationEvent") extern class SecurityPolicyViolationEvent extends js.dom.Event {
 	var documentURI(default, null) : String;
 	var referrer(default, null) : String;
 	var blockedURI(default, null) : String;

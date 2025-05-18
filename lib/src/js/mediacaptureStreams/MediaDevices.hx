@@ -24,7 +24,7 @@
 
 package js.mediacaptureStreams;
 
-extern class MediaDevices extends js.dom.EventTarget {
+@:native("MediaDevices") extern class MediaDevices extends js.dom.EventTarget {
 	var ondevicechange : js.html.EventHandler;
 	/**
 		From partial interface in mediacapture-handle-actions.idl

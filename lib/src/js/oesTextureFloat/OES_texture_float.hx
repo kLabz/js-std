@@ -24,6 +24,6 @@
 
 package js.oesTextureFloat;
 
-extern class OES_texture_float {
+@:native("OES_texture_float") extern class OES_texture_float {
 
 }

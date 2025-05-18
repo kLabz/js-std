@@ -24,6 +24,6 @@
 
 package js.writingAssistanceApis;
 
-extern class CreateMonitor extends js.dom.EventTarget {
+@:native("CreateMonitor") extern class CreateMonitor extends js.dom.EventTarget {
 	var ondownloadprogress : js.html.EventHandler;
 }

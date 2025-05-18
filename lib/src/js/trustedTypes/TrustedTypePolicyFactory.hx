@@ -24,7 +24,7 @@
 
 package js.trustedTypes;
 
-extern class TrustedTypePolicyFactory {
+@:native("TrustedTypePolicyFactory") extern class TrustedTypePolicyFactory {
 	var emptyHTML(default, null) : TrustedHTML;
 	var emptyScript(default, null) : TrustedScript;
 	var defaultPolicy(default, null) : Null<TrustedTypePolicy>;

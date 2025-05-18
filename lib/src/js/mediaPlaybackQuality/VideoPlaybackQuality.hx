@@ -24,7 +24,7 @@
 
 package js.mediaPlaybackQuality;
 
-extern class VideoPlaybackQuality {
+@:native("VideoPlaybackQuality") extern class VideoPlaybackQuality {
 	var creationTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var droppedVideoFrames(default, null) : Int;
 	var totalVideoFrames(default, null) : Int;

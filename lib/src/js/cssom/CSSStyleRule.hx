@@ -24,7 +24,7 @@
 
 package js.cssom;
 
-extern class CSSStyleRule extends CSSGroupingRule {
+@:native("CSSStyleRule") extern class CSSStyleRule extends CSSGroupingRule {
 	var selectorText : CSSOMString;
 	var style(default, null) : CSSStyleProperties;
 	/**

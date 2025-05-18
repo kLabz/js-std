@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSNumericValue extends CSSStyleValue {
+@:native("CSSNumericValue") extern class CSSNumericValue extends CSSStyleValue {
 	function add(values:CSSNumberish):CSSNumericValue;
 	function div(values:CSSNumberish):CSSNumericValue;
 	function equals(value:CSSNumberish):Bool;

@@ -24,7 +24,7 @@
 
 package js.cssom;
 
-extern class StyleSheet {
+@:native("StyleSheet") extern class StyleSheet {
 	var type(default, null) : CSSOMString;
 	var href(default, null) : Null<String>;
 	var ownerNode(default, null) : Null<haxe.extern.EitherType<js.dom.Element, js.dom.ProcessingInstruction>>;

@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGPatternElement extends SVGElement {
+@:native("SVGPatternElement") extern class SVGPatternElement extends SVGElement {
 	var patternUnits(default, null) : SVGAnimatedEnumeration;
 	var patternContentUnits(default, null) : SVGAnimatedEnumeration;
 	var patternTransform(default, null) : SVGAnimatedTransformList;

@@ -24,7 +24,7 @@
 
 package js.cssom;
 
-extern class CSSRule {
+@:native("CSSRule") extern class CSSRule {
 	var cssText : CSSOMString;
 	var parentRule(default, null) : Null<CSSRule>;
 	var parentStyleSheet(default, null) : Null<CSSStyleSheet>;
@@ -46,6 +46,10 @@ extern class CSSRule {
 	**/
 	static inline var KEYFRAME_RULE : Int = 8;
 	/**
+		From partial interface in css-counter-styles.idl
+	**/
+	static inline var COUNTER_STYLE_RULE : Int = 11;
+	/**
 		From partial interface in css-conditional.idl
 	**/
 	static inline var SUPPORTS_RULE : Int = 12;
@@ -53,8 +57,4 @@ extern class CSSRule {
 		From partial interface in css-fonts.idl
 	**/
 	static inline var FONT_FEATURE_VALUES_RULE : Int = 14;
-	/**
-		From partial interface in css-counter-styles.idl
-	**/
-	static inline var COUNTER_STYLE_RULE : Int = 11;
 }

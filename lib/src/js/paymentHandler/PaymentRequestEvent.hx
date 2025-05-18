@@ -24,7 +24,7 @@
 
 package js.paymentHandler;
 
-extern class PaymentRequestEvent extends js.serviceWorkers.ExtendableEvent {
+@:native("PaymentRequestEvent") extern class PaymentRequestEvent extends js.serviceWorkers.ExtendableEvent {
 	var topOrigin(default, null) : String;
 	var paymentRequestOrigin(default, null) : String;
 	var paymentRequestId(default, null) : String;

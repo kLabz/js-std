@@ -24,7 +24,7 @@
 
 package js.observable;
 
-extern class Observable {
+@:native("Observable") extern class Observable {
 	function new(callback:SubscribeCallback):Void;
 	@:native("catch")
 	function catch_(callback:CatchCallback):Observable;

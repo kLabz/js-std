@@ -24,6 +24,6 @@
 
 package js.elementCapture;
 
-extern class RestrictionTarget {
+@:native("RestrictionTarget") extern class RestrictionTarget {
 	function fromElement(element:js.dom.Element):js.lib.Promise<RestrictionTarget>;
 }

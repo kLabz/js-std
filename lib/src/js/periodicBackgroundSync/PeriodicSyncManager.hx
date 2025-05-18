@@ -24,7 +24,7 @@
 
 package js.periodicBackgroundSync;
 
-extern class PeriodicSyncManager {
+@:native("PeriodicSyncManager") extern class PeriodicSyncManager {
 	function getTags():js.lib.Promise<Array<String>>;
 	function register(tag:String, ?options:BackgroundSyncOptions = {  }):js.lib.Promise<Void>;
 	function unregister(tag:String):js.lib.Promise<Void>;

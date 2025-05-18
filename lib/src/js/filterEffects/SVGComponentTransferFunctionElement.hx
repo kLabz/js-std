@@ -24,7 +24,7 @@
 
 package js.filterEffects;
 
-extern class SVGComponentTransferFunctionElement extends js.svg.SVGElement {
+@:native("SVGComponentTransferFunctionElement") extern class SVGComponentTransferFunctionElement extends js.svg.SVGElement {
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN : Int = 0;
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_IDENTITY : Int = 1;
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_TABLE : Int = 2;

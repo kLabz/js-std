@@ -24,7 +24,7 @@
 
 package js.speechApi;
 
-extern class SpeechRecognitionPhrase {
+@:native("SpeechRecognitionPhrase") extern class SpeechRecognitionPhrase {
 	var phrase(default, null) : String;
 	var boost(default, null) : Float;
 	function new(phrase:String, ?boost:Float = 1.0):Void;

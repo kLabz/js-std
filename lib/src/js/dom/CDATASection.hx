@@ -24,6 +24,6 @@
 
 package js.dom;
 
-extern class CDATASection extends Text {
+@:native("CDATASection") extern class CDATASection extends Text {
 
 }

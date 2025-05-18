@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUAdapter {
+@:native("GPUAdapter") extern class GPUAdapter {
 	var features(default, null) : GPUSupportedFeatures;
 	var limits(default, null) : GPUSupportedLimits;
 	var info(default, null) : GPUAdapterInfo;

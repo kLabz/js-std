@@ -24,6 +24,6 @@
 
 package js.cssAnimations2;
 
-extern class CSSAnimation extends js.webAnimations.Animation {
+@:native("CSSAnimation") extern class CSSAnimation extends js.webAnimations.Animation {
 	var animationName(default, null) : CSSOMString;
 }

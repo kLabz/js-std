@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class Path2D {
+@:native("Path2D") extern class Path2D {
 	function new(?path:haxe.extern.EitherType<Path2D, String>):Void;
 	function addPath(path:Path2D, ?transform:js.geometry.DOMMatrix2DInit = {  }):Void;
 	/**

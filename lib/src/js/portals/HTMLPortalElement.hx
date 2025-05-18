@@ -24,7 +24,7 @@
 
 package js.portals;
 
-extern class HTMLPortalElement extends js.html.HTMLElement {
+@:native("HTMLPortalElement") extern class HTMLPortalElement extends js.html.HTMLElement {
 	var src : String;
 	var referrerPolicy : String;
 	var onmessage : js.html.EventHandler;

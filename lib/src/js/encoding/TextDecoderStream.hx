@@ -24,7 +24,7 @@
 
 package js.encoding;
 
-extern class TextDecoderStream {
+@:native("TextDecoderStream") extern class TextDecoderStream {
 	/**
 		From interface mixin TextDecoderCommon
 	**/

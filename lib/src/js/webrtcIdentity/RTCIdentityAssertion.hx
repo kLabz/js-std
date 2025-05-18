@@ -24,7 +24,7 @@
 
 package js.webrtcIdentity;
 
-extern class RTCIdentityAssertion {
+@:native("RTCIdentityAssertion") extern class RTCIdentityAssertion {
 	var idp : String;
 	var name : String;
 	function new(idp:String, name:String):Void;

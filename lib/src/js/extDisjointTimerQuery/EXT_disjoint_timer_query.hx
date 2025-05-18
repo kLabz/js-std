@@ -24,7 +24,7 @@
 
 package js.extDisjointTimerQuery;
 
-extern class EXT_disjoint_timer_query {
+@:native("EXT_disjoint_timer_query") extern class EXT_disjoint_timer_query {
 	static inline var QUERY_COUNTER_BITS_EXT : js.webgl1.GLenum = 0x8864;
 	static inline var CURRENT_QUERY_EXT : js.webgl1.GLenum = 0x8865;
 	static inline var QUERY_RESULT_EXT : js.webgl1.GLenum = 0x8866;

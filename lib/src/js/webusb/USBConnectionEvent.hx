@@ -24,7 +24,7 @@
 
 package js.webusb;
 
-extern class USBConnectionEvent extends js.dom.Event {
+@:native("USBConnectionEvent") extern class USBConnectionEvent extends js.dom.Event {
 	var device(default, null) : USBDevice;
 	function new(type:String, eventInitDict:USBConnectionEventInit):Void;
 }

@@ -24,7 +24,7 @@
 
 package js.gamepad;
 
-extern class GamepadButton {
+@:native("GamepadButton") extern class GamepadButton {
 	var pressed(default, null) : Bool;
 	var touched(default, null) : Bool;
 	var value(default, null) : Float;

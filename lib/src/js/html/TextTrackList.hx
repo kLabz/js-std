@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class TextTrackList extends js.dom.EventTarget implements ArrayAccess<TextTrack> {
+@:native("TextTrackList") extern class TextTrackList extends js.dom.EventTarget implements ArrayAccess<TextTrack> {
 	var length(default, null) : Int;
 	var onchange : EventHandler;
 	var onaddtrack : EventHandler;

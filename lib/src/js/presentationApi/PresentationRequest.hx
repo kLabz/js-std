@@ -24,7 +24,7 @@
 
 package js.presentationApi;
 
-extern class PresentationRequest extends js.dom.EventTarget {
+@:native("PresentationRequest") extern class PresentationRequest extends js.dom.EventTarget {
 	var onconnectionavailable : js.html.EventHandler;
 	overload function new(urls:Array<String>):Void;
 	overload function new(url:String):Void;

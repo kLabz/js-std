@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLFormControlsCollection extends js.dom.HTMLCollection {
+@:native("HTMLFormControlsCollection") extern class HTMLFormControlsCollection extends js.dom.HTMLCollection {
 	function namedItem(name:String):Null<haxe.extern.EitherType<RadioNodeList, js.dom.Element>>;
 }

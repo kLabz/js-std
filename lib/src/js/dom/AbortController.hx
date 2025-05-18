@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class AbortController {
+@:native("AbortController") extern class AbortController {
 	var signal(default, null) : AbortSignal;
 	function new():Void;
 	function abort(?reason:Any):Void;

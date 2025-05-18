@@ -24,7 +24,7 @@
 
 package js.webtransport;
 
-extern class WebTransportSendStream extends js.streams.WritableStream {
+@:native("WebTransportSendStream") extern class WebTransportSendStream extends js.streams.WritableStream {
 	var sendGroup : Null<WebTransportSendGroup>;
 	var sendOrder : Float;
 	function getStats():js.lib.Promise<WebTransportSendStreamStats>;

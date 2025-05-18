@@ -24,7 +24,7 @@
 
 package js.mathmlCore;
 
-extern class MathMLElement extends js.dom.Element {
+@:native("MathMLElement") extern class MathMLElement extends js.dom.Element {
 	/**
 		From interface mixin ElementCSSInlineStyle
 	**/

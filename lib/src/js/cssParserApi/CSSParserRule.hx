@@ -24,6 +24,6 @@
 
 package js.cssParserApi;
 
-extern class CSSParserRule {
+@:native("CSSParserRule") extern class CSSParserRule {
 
 }

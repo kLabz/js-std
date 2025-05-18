@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLSpanElement extends HTMLElement {
+@:native("HTMLSpanElement") extern class HTMLSpanElement extends HTMLElement {
 	function new():Void;
 }

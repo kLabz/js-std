@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGAnimatedRect {
+@:native("SVGAnimatedRect") extern class SVGAnimatedRect {
 	var baseVal(default, null) : js.geometry.DOMRect;
 	var animVal(default, null) : js.geometry.DOMRectReadOnly;
 }

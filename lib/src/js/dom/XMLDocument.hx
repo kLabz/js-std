@@ -24,6 +24,6 @@
 
 package js.dom;
 
-extern class XMLDocument extends Document {
+@:native("XMLDocument") extern class XMLDocument extends Document {
 
 }

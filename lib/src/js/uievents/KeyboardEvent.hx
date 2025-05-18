@@ -24,7 +24,7 @@
 
 package js.uievents;
 
-extern class KeyboardEvent extends UIEvent {
+@:native("KeyboardEvent") extern class KeyboardEvent extends UIEvent {
 	static inline var DOM_KEY_LOCATION_STANDARD : Int = 0x00;
 	static inline var DOM_KEY_LOCATION_LEFT : Int = 0x01;
 	static inline var DOM_KEY_LOCATION_RIGHT : Int = 0x02;

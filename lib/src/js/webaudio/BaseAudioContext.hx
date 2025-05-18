@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class BaseAudioContext extends js.dom.EventTarget {
+@:native("BaseAudioContext") extern class BaseAudioContext extends js.dom.EventTarget {
 	var destination(default, null) : AudioDestinationNode;
 	var sampleRate(default, null) : Float;
 	var currentTime(default, null) : Float;

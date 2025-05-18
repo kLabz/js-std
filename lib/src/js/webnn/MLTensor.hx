@@ -24,7 +24,7 @@
 
 package js.webnn;
 
-extern class MLTensor {
+@:native("MLTensor") extern class MLTensor {
 	var dataType(default, null) : MLOperandDataType;
 	var shape(default, null) : Array<Int>;
 	var readable(default, null) : Bool;

@@ -24,7 +24,7 @@
 
 package js.pictureInPicture;
 
-extern class PictureInPictureWindow extends js.dom.EventTarget {
+@:native("PictureInPictureWindow") extern class PictureInPictureWindow extends js.dom.EventTarget {
 	var width(default, null) : Int;
 	var height(default, null) : Int;
 	var onresize : js.html.EventHandler;

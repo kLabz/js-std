@@ -24,7 +24,7 @@
 
 package js.webxrDepthSensing;
 
-extern class XRDepthInformation {
+@:native("XRDepthInformation") extern class XRDepthInformation {
 	var width(default, null) : Int;
 	var height(default, null) : Int;
 	var normDepthBufferFromNormView(default, null) : js.webxr.XRRigidTransform;

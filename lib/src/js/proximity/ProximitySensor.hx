@@ -24,7 +24,7 @@
 
 package js.proximity;
 
-extern class ProximitySensor extends js.genericSensor.Sensor {
+@:native("ProximitySensor") extern class ProximitySensor extends js.genericSensor.Sensor {
 	var distance(default, null) : Null<Float>;
 	var max(default, null) : Null<Float>;
 	var near(default, null) : Null<Bool>;

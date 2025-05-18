@@ -24,6 +24,6 @@
 
 package js.oesFboRenderMipmap;
 
-extern class OES_fbo_render_mipmap {
+@:native("OES_fbo_render_mipmap") extern class OES_fbo_render_mipmap {
 
 }

@@ -24,6 +24,6 @@
 
 package js.sharedStorage;
 
-extern class SharedStorageModifierMethod {
+@:native("SharedStorageModifierMethod") extern class SharedStorageModifierMethod {
 
 }

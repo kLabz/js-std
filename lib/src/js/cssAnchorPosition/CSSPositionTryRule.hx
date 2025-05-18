@@ -24,7 +24,7 @@
 
 package js.cssAnchorPosition;
 
-extern class CSSPositionTryRule extends js.cssom.CSSRule {
+@:native("CSSPositionTryRule") extern class CSSPositionTryRule extends js.cssom.CSSRule {
 	var name(default, null) : CSSOMString;
 	var style(default, null) : CSSPositionTryDescriptors;
 }

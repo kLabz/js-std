@@ -24,7 +24,7 @@
 
 package js.webxr;
 
-extern class XRRigidTransform {
+@:native("XRRigidTransform") extern class XRRigidTransform {
 	var position(default, null) : js.geometry.DOMPointReadOnly;
 	var orientation(default, null) : js.geometry.DOMPointReadOnly;
 	var matrix(default, null) : Float32Array;

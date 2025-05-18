@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLParagraphElement extends HTMLElement {
+@:native("HTMLParagraphElement") extern class HTMLParagraphElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
 	**/

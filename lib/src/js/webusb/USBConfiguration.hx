@@ -24,7 +24,7 @@
 
 package js.webusb;
 
-extern class USBConfiguration {
+@:native("USBConfiguration") extern class USBConfiguration {
 	var configurationValue(default, null) : Int;
 	var configurationName(default, null) : Null<String>;
 	var interfaces(default, null) : Array<USBInterface>;

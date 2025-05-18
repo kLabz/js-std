@@ -24,7 +24,7 @@
 
 package js.webxrPlaneDetection;
 
-extern class XRPlane {
+@:native("XRPlane") extern class XRPlane {
 	var planeSpace(default, null) : js.webxr.XRSpace;
 	var polygon(default, null) : Array<js.geometry.DOMPointReadOnly>;
 	var orientation(default, null) : Null<XRPlaneOrientation>;

@@ -24,7 +24,7 @@
 
 package js.webxr;
 
-extern class XRInputSourceEvent extends js.dom.Event {
+@:native("XRInputSourceEvent") extern class XRInputSourceEvent extends js.dom.Event {
 	var frame(default, null) : XRFrame;
 	var inputSource(default, null) : XRInputSource;
 	function new(type:String, eventInitDict:XRInputSourceEventInit):Void;

@@ -24,7 +24,7 @@
 
 package js.credentialManagement;
 
-extern class CredentialsContainer {
+@:native("CredentialsContainer") extern class CredentialsContainer {
 	function create(?options:CredentialCreationOptions = {  }):js.lib.Promise<Null<Credential>>;
 	function get(?options:CredentialRequestOptions = {  }):js.lib.Promise<Null<Credential>>;
 	function preventSilentAccess():js.lib.Promise<Void>;

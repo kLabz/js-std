@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSOKLab extends CSSColorValue {
+@:native("CSSOKLab") extern class CSSOKLab extends CSSColorValue {
 	var l : CSSColorPercent;
 	var a : CSSColorNumber;
 	var b : CSSColorNumber;

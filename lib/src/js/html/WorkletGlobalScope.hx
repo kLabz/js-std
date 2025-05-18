@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class WorkletGlobalScope {
+@:native("WorkletGlobalScope") extern class WorkletGlobalScope {
 
 }

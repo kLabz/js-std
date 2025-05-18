@@ -24,7 +24,7 @@
 
 package js.fetch;
 
-extern class Request {
+@:native("Request") extern class Request {
 	var method(default, null) : String;
 	var url(default, null) : String;
 	var headers(default, null) : Headers;

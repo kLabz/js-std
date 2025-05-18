@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class NotRestoredReasonDetails {
+@:native("NotRestoredReasonDetails") extern class NotRestoredReasonDetails {
 	var reason(default, null) : String;
 	function toJSON():{ };
 }

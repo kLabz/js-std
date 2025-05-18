@@ -24,7 +24,7 @@
 
 package js.cssConditional;
 
-extern class CSSMediaRule extends CSSConditionRule {
+@:native("CSSMediaRule") extern class CSSMediaRule extends CSSConditionRule {
 	var media(default, null) : js.cssom.MediaList;
 	var matches(default, null) : Bool;
 }

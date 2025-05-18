@@ -24,7 +24,7 @@
 
 package js.serverTiming;
 
-extern class PerformanceServerTiming {
+@:native("PerformanceServerTiming") extern class PerformanceServerTiming {
 	var name(default, null) : String;
 	var duration(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var description(default, null) : String;

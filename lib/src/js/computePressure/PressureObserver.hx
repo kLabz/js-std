@@ -24,7 +24,7 @@
 
 package js.computePressure;
 
-extern class PressureObserver {
+@:native("PressureObserver") extern class PressureObserver {
 	static var knownSources(default, null) : Array<PressureSource>;
 	function new(callback:PressureUpdateCallback):Void;
 	function disconnect():Void;

@@ -24,7 +24,7 @@
 
 package js.svgPaths;
 
-extern class SVGPathSegment {
+@:native("SVGPathSegment") extern class SVGPathSegment {
 	var type : String;
 	var values : Array<Float>;
 }

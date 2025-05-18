@@ -24,7 +24,7 @@
 
 package js.speechApi;
 
-extern class SpeechRecognitionErrorEvent extends js.dom.Event {
+@:native("SpeechRecognitionErrorEvent") extern class SpeechRecognitionErrorEvent extends js.dom.Event {
 	var error(default, null) : SpeechRecognitionErrorCode;
 	var message(default, null) : String;
 	function new(type:String, eventInitDict:SpeechRecognitionErrorEventInit):Void;

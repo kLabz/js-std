@@ -24,7 +24,7 @@
 
 package js.cssLayoutApi;
 
-extern class IntrinsicSizes {
+@:native("IntrinsicSizes") extern class IntrinsicSizes {
 	var minContentSize(default, null) : Float;
 	var maxContentSize(default, null) : Float;
 }

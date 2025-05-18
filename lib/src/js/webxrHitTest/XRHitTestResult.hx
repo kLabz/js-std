@@ -24,7 +24,7 @@
 
 package js.webxrHitTest;
 
-extern class XRHitTestResult {
+@:native("XRHitTestResult") extern class XRHitTestResult {
 	/**
 		From partial interface in anchors.idl
 	**/

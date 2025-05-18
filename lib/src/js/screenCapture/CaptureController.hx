@@ -24,7 +24,7 @@
 
 package js.screenCapture;
 
-extern class CaptureController extends js.dom.EventTarget {
+@:native("CaptureController") extern class CaptureController extends js.dom.EventTarget {
 	/**
 		From partial interface in captured-mouse-events.idl
 	**/

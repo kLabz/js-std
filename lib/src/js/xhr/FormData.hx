@@ -24,12 +24,12 @@
 
 package js.xhr;
 
-extern class FormData {
+@:native("FormData") extern class FormData {
 	function new(?form:js.html.HTMLFormElement, ?submitter:Null<js.html.HTMLElement> = null):Void;
 	overload function append(name:String, value:String):Void;
 	overload function append(name:String, blobValue:js.fileapi.Blob, ?filename:String):Void;
 	function delete(name:String):Void;
-	function entries():Iterator<Array<Dynamic>>;
+	function entries():Iterator<js.lib.Tuple<String, FormDataEntryValue>>;
 	function get(name:String):Null<FormDataEntryValue>;
 	function getAll(name:String):Array<FormDataEntryValue>;
 	function has(name:String):Bool;

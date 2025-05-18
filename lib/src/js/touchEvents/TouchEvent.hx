@@ -24,7 +24,7 @@
 
 package js.touchEvents;
 
-extern class TouchEvent extends js.uievents.UIEvent {
+@:native("TouchEvent") extern class TouchEvent extends js.uievents.UIEvent {
 	var touches(default, null) : TouchList;
 	var targetTouches(default, null) : TouchList;
 	var changedTouches(default, null) : TouchList;

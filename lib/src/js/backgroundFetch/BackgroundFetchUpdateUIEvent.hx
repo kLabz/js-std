@@ -24,7 +24,7 @@
 
 package js.backgroundFetch;
 
-extern class BackgroundFetchUpdateUIEvent extends BackgroundFetchEvent {
+@:native("BackgroundFetchUpdateUIEvent") extern class BackgroundFetchUpdateUIEvent extends BackgroundFetchEvent {
 	function new(type:String, init:BackgroundFetchEventInit):Void;
 	function updateUI(?options:BackgroundFetchUIOptions = {  }):js.lib.Promise<Void>;
 }

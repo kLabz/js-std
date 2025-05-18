@@ -24,7 +24,7 @@
 
 package js.webNfc;
 
-extern class NDEFRecord {
+@:native("NDEFRecord") extern class NDEFRecord {
 	var recordType(default, null) : String;
 	var mediaType(default, null) : Null<String>;
 	var id(default, null) : Null<String>;

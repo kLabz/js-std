@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class Worker extends js.dom.EventTarget {
+@:native("Worker") extern class Worker extends js.dom.EventTarget {
 	/**
 		From interface mixin AbstractWorker
 	**/

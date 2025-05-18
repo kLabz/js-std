@@ -24,7 +24,7 @@
 
 package js.notifications;
 
-extern class Notification extends js.dom.EventTarget {
+@:native("Notification") extern class Notification extends js.dom.EventTarget {
 	static var permission(default, null) : NotificationPermission;
 	static var maxActions(default, null) : Int;
 	var onclick : js.html.EventHandler;

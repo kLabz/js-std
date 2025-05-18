@@ -24,7 +24,7 @@
 
 package js.extSrgb;
 
-extern class EXT_sRGB {
+@:native("EXT_sRGB") extern class EXT_sRGB {
 	static inline var SRGB_EXT : js.webgl1.GLenum = 0x8C40;
 	static inline var SRGB_ALPHA_EXT : js.webgl1.GLenum = 0x8C42;
 	static inline var SRGB8_ALPHA8_EXT : js.webgl1.GLenum = 0x8C43;

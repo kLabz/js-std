@@ -24,7 +24,7 @@
 
 package js.webLocks;
 
-extern class Lock {
+@:native("Lock") extern class Lock {
 	var name(default, null) : String;
 	var mode(default, null) : LockMode;
 }

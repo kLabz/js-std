@@ -24,6 +24,6 @@
 
 package js.sharedStorage;
 
-extern class SharedStorageAppendMethod extends SharedStorageModifierMethod {
+@:native("SharedStorageAppendMethod") extern class SharedStorageAppendMethod extends SharedStorageModifierMethod {
 	function new(key:String, value:String, ?options:SharedStorageModifierMethodOptions = {  }):Void;
 }

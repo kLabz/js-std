@@ -24,6 +24,6 @@
 
 package js.webgl1;
 
-extern class WebGLTexture extends WebGLObject {
+@:native("WebGLTexture") extern class WebGLTexture extends WebGLObject {
 
 }

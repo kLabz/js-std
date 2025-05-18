@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLSourceElement extends HTMLElement {
+@:native("HTMLSourceElement") extern class HTMLSourceElement extends HTMLElement {
 	var src : String;
 	var type : String;
 	var srcset : String;

@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class SubmitEvent extends js.dom.Event {
+@:native("SubmitEvent") extern class SubmitEvent extends js.dom.Event {
 	var submitter(default, null) : Null<HTMLElement>;
 	function new(type:String, ?eventInitDict:SubmitEventInit = {  }):Void;
 }

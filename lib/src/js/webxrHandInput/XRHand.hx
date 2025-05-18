@@ -24,9 +24,9 @@
 
 package js.webxrHandInput;
 
-extern class XRHand {
+@:native("XRHand") extern class XRHand {
 	var size(default, null) : Int;
-	function entries():Iterator<Array<Dynamic>>;
+	function entries():Iterator<js.lib.Tuple<XRHandJoint, XRJointSpace>>;
 	function get(key:XRHandJoint):XRJointSpace;
 	function keys():Iterator<XRHandJoint>;
 	function values():Iterator<XRJointSpace>;

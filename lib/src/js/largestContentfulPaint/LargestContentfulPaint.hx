@@ -24,7 +24,7 @@
 
 package js.largestContentfulPaint;
 
-extern class LargestContentfulPaint extends js.performanceTimeline.PerformanceEntry {
+@:native("LargestContentfulPaint") extern class LargestContentfulPaint extends js.performanceTimeline.PerformanceEntry {
 	var loadTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var size(default, null) : Int;
 	var id(default, null) : String;

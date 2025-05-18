@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class OfflineAudioCompletionEvent extends js.dom.Event {
+@:native("OfflineAudioCompletionEvent") extern class OfflineAudioCompletionEvent extends js.dom.Event {
 	var renderedBuffer(default, null) : AudioBuffer;
 	function new(type:String, eventInitDict:OfflineAudioCompletionEventInit):Void;
 }

@@ -24,6 +24,6 @@
 
 package js.cssFontLoading;
 
-extern class FontFaceFeatures {
+@:native("FontFaceFeatures") extern class FontFaceFeatures {
 
 }

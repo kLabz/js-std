@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGStyleElement extends SVGElement {
+@:native("SVGStyleElement") extern class SVGStyleElement extends SVGElement {
 	var type : String;
 	var media : String;
 	var title : String;

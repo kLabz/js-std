@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUSampler {
+@:native("GPUSampler") extern class GPUSampler {
 	/**
 		From interface mixin GPUObjectBase
 	**/

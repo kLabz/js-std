@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSRGB extends CSSColorValue {
+@:native("CSSRGB") extern class CSSRGB extends CSSColorValue {
 	var r : CSSColorRGBComp;
 	var g : CSSColorRGBComp;
 	var b : CSSColorRGBComp;

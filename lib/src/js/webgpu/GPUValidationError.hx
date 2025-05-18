@@ -24,6 +24,6 @@
 
 package js.webgpu;
 
-extern class GPUValidationError extends GPUError {
+@:native("GPUValidationError") extern class GPUValidationError extends GPUError {
 	function new(message:String):Void;
 }

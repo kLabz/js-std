@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGImageElement extends SVGGraphicsElement {
+@:native("SVGImageElement") extern class SVGImageElement extends SVGGraphicsElement {
 	var x(default, null) : SVGAnimatedLength;
 	var y(default, null) : SVGAnimatedLength;
 	var width(default, null) : SVGAnimatedLength;

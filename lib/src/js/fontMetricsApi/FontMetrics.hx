@@ -24,7 +24,7 @@
 
 package js.fontMetricsApi;
 
-extern class FontMetrics {
+@:native("FontMetrics") extern class FontMetrics {
 	var width(default, null) : Float;
 	var advances(default, null) : Array<Float>;
 	var boundingBoxLeft(default, null) : Float;

@@ -24,6 +24,6 @@
 
 package js.extDisjointTimerQuery;
 
-extern class WebGLTimerQueryEXT extends js.webgl1.WebGLObject {
+@:native("WebGLTimerQueryEXT") extern class WebGLTimerQueryEXT extends js.webgl1.WebGLObject {
 
 }

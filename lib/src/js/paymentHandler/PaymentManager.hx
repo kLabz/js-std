@@ -24,7 +24,7 @@
 
 package js.paymentHandler;
 
-extern class PaymentManager {
+@:native("PaymentManager") extern class PaymentManager {
 	var userHint : String;
 	function enableDelegations(delegations:Array<PaymentDelegation>):js.lib.Promise<Void>;
 }

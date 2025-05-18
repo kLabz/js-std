@@ -24,7 +24,7 @@
 
 package js.backgroundSync;
 
-extern class SyncManager {
+@:native("SyncManager") extern class SyncManager {
 	function getTags():js.lib.Promise<Array<String>>;
 	function register(tag:String):js.lib.Promise<Void>;
 }

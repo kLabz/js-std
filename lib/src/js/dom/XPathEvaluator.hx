@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class XPathEvaluator {
+@:native("XPathEvaluator") extern class XPathEvaluator {
 	function new():Void;
 	/**
 		From interface mixin XPathEvaluatorBase

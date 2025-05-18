@@ -24,7 +24,7 @@
 
 package js.speechApi;
 
-extern class SpeechRecognitionAlternative {
+@:native("SpeechRecognitionAlternative") extern class SpeechRecognitionAlternative {
 	var transcript(default, null) : String;
 	var confidence(default, null) : Float;
 }

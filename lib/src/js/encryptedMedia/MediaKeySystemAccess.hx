@@ -24,7 +24,7 @@
 
 package js.encryptedMedia;
 
-extern class MediaKeySystemAccess {
+@:native("MediaKeySystemAccess") extern class MediaKeySystemAccess {
 	var keySystem(default, null) : String;
 	function createMediaKeys():js.lib.Promise<MediaKeys>;
 	function getConfiguration():MediaKeySystemConfiguration;

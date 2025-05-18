@@ -24,6 +24,6 @@
 
 package js.webAppLaunch;
 
-extern class LaunchQueue {
+@:native("LaunchQueue") extern class LaunchQueue {
 	function setConsumer(consumer:LaunchConsumer):Void;
 }

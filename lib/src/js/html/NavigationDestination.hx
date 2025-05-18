@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class NavigationDestination {
+@:native("NavigationDestination") extern class NavigationDestination {
 	var url(default, null) : String;
 	var key(default, null) : String;
 	var id(default, null) : String;

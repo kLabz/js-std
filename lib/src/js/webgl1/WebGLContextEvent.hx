@@ -24,7 +24,7 @@
 
 package js.webgl1;
 
-extern class WebGLContextEvent extends js.dom.Event {
+@:native("WebGLContextEvent") extern class WebGLContextEvent extends js.dom.Event {
 	var statusMessage(default, null) : String;
 	function new(type:String, ?eventInit:WebGLContextEventInit = {  }):Void;
 }

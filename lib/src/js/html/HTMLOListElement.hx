@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLOListElement extends HTMLElement {
+@:native("HTMLOListElement") extern class HTMLOListElement extends HTMLElement {
 	var reversed : Bool;
 	var start : Int;
 	var type : String;

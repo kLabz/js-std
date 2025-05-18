@@ -24,7 +24,7 @@
 
 package js.serviceWorkers;
 
-extern class ServiceWorker extends js.dom.EventTarget {
+@:native("ServiceWorker") extern class ServiceWorker extends js.dom.EventTarget {
 	var scriptURL(default, null) : String;
 	var state(default, null) : ServiceWorkerState;
 	var onstatechange : js.html.EventHandler;

@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSMathValue extends CSSNumericValue {
+@:native("CSSMathValue") extern class CSSMathValue extends CSSNumericValue {
 	@:native("operator")
 	var operator_(default, null) : CSSMathOperator;
 }

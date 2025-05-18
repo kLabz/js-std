@@ -24,7 +24,7 @@
 
 package js.webcodecs;
 
-extern class ImageDecoder {
+@:native("ImageDecoder") extern class ImageDecoder {
 	var type(default, null) : String;
 	var complete(default, null) : Bool;
 	var completed(default, null) : js.lib.Promise<Void>;

@@ -24,7 +24,7 @@
 
 package js.handwritingRecognition;
 
-extern class HandwritingStroke {
+@:native("HandwritingStroke") extern class HandwritingStroke {
 	function new():Void;
 	function addPoint(point:HandwritingPoint):Void;
 	function clear():Void;

@@ -27,6 +27,6 @@ package js.cssFontLoading;
 /**
 	TODO SetlikeDeclaration handling
 **/
-extern class FontFaceVariations {
+@:native("FontFaceVariations") extern class FontFaceVariations {
 
 }

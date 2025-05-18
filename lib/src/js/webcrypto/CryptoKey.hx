@@ -24,7 +24,7 @@
 
 package js.webcrypto;
 
-extern class CryptoKey {
+@:native("CryptoKey") extern class CryptoKey {
 	var type(default, null) : KeyType;
 	var extractable(default, null) : Bool;
 	var algorithm(default, null) : { };

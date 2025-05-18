@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLOutputElement extends HTMLElement {
+@:native("HTMLOutputElement") extern class HTMLOutputElement extends HTMLElement {
 	var htmlFor(default, null) : js.dom.DOMTokenList;
 	var form(default, null) : Null<HTMLFormElement>;
 	var name : String;

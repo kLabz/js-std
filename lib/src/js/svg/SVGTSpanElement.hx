@@ -24,6 +24,6 @@
 
 package js.svg;
 
-extern class SVGTSpanElement extends SVGTextPositioningElement {
+@:native("SVGTSpanElement") extern class SVGTSpanElement extends SVGTextPositioningElement {
 
 }

@@ -24,7 +24,7 @@
 
 package js.cssomView;
 
-extern class MediaQueryListEvent extends js.dom.Event {
+@:native("MediaQueryListEvent") extern class MediaQueryListEvent extends js.dom.Event {
 	var media(default, null) : CSSOMString;
 	var matches(default, null) : Bool;
 	function new(type:CSSOMString, ?eventInitDict:MediaQueryListEventInit = {  }):Void;

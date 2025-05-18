@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class UserActivation {
+@:native("UserActivation") extern class UserActivation {
 	var hasBeenActive(default, null) : Bool;
 	var isActive(default, null) : Bool;
 }

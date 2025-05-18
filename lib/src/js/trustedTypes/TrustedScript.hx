@@ -24,7 +24,7 @@
 
 package js.trustedTypes;
 
-extern class TrustedScript {
+@:native("TrustedScript") extern class TrustedScript {
 	/**
 		(special = stringifier)
 	**/

@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class AudioListener {
+@:native("AudioListener") extern class AudioListener {
 	var positionX(default, null) : AudioParam;
 	var positionY(default, null) : AudioParam;
 	var positionZ(default, null) : AudioParam;

@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class BarProp {
+@:native("BarProp") extern class BarProp {
 	var visible(default, null) : Bool;
 }

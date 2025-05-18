@@ -24,8 +24,8 @@
 
 package js.fs;
 
-extern class FileSystemDirectoryHandle extends FileSystemHandle {
-	function entries():Iterator<Array<Dynamic>>;
+@:native("FileSystemDirectoryHandle") extern class FileSystemDirectoryHandle extends FileSystemHandle {
+	function entries():Iterator<js.lib.Tuple<String, FileSystemHandle>>;
 	function getDirectoryHandle(name:String, ?options:FileSystemGetDirectoryOptions = {  }):js.lib.Promise<FileSystemDirectoryHandle>;
 	function getFileHandle(name:String, ?options:FileSystemGetFileOptions = {  }):js.lib.Promise<FileSystemFileHandle>;
 	function keys():Iterator<String>;

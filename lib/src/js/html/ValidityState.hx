@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class ValidityState {
+@:native("ValidityState") extern class ValidityState {
 	var valueMissing(default, null) : Bool;
 	var typeMismatch(default, null) : Bool;
 	var patternMismatch(default, null) : Bool;

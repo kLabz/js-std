@@ -24,7 +24,7 @@
 
 package js.writingAssistanceApis;
 
-extern class Writer {
+@:native("Writer") extern class Writer {
 	var sharedContext(default, null) : String;
 	var tone(default, null) : WriterTone;
 	var format(default, null) : WriterFormat;

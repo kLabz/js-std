@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUAdapterInfo {
+@:native("GPUAdapterInfo") extern class GPUAdapterInfo {
 	var vendor(default, null) : String;
 	var architecture(default, null) : String;
 	var device(default, null) : String;

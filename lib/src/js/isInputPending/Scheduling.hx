@@ -24,6 +24,6 @@
 
 package js.isInputPending;
 
-extern class Scheduling {
+@:native("Scheduling") extern class Scheduling {
 	function isInputPending(?isInputPendingOptions:IsInputPendingOptions = {  }):Bool;
 }

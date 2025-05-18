@@ -24,7 +24,7 @@
 
 package js.credentialManagement;
 
-extern class Credential {
+@:native("Credential") extern class Credential {
 	var id(default, null) : String;
 	var type(default, null) : String;
 	function isConditionalMediationAvailable():js.lib.Promise<Bool>;

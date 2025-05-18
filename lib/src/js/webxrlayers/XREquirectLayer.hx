@@ -24,7 +24,7 @@
 
 package js.webxrlayers;
 
-extern class XREquirectLayer extends XRCompositionLayer {
+@:native("XREquirectLayer") extern class XREquirectLayer extends XRCompositionLayer {
 	var space : js.webxr.XRSpace;
 	var transform : js.webxr.XRRigidTransform;
 	var radius : Float;

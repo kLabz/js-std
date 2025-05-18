@@ -24,7 +24,7 @@
 
 package js.webxr;
 
-extern class XRViewport {
+@:native("XRViewport") extern class XRViewport {
 	var x(default, null) : Int;
 	var y(default, null) : Int;
 	var width(default, null) : Int;

@@ -24,7 +24,7 @@
 
 package js.webxr;
 
-extern class XRInputSource {
+@:native("XRInputSource") extern class XRInputSource {
 	var handedness(default, null) : XRHandedness;
 	var targetRayMode(default, null) : XRTargetRayMode;
 	var targetRaySpace(default, null) : XRSpace;

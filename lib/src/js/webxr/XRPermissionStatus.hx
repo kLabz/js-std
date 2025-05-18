@@ -24,6 +24,6 @@
 
 package js.webxr;
 
-extern class XRPermissionStatus extends js.permissions.PermissionStatus {
+@:native("XRPermissionStatus") extern class XRPermissionStatus extends js.permissions.PermissionStatus {
 	var granted : Array<String>;
 }

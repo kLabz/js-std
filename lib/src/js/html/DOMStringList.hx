@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class DOMStringList {
+@:native("DOMStringList") extern class DOMStringList {
 	var length(default, null) : Int;
 	function contains(string:String):Bool;
 	function item(index:Int):Null<String>;

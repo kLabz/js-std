@@ -24,6 +24,6 @@
 
 package js.webnn;
 
-extern class MLGraph {
+@:native("MLGraph") extern class MLGraph {
 	function destroy():Void;
 }

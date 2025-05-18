@@ -24,7 +24,7 @@
 
 package js.serviceWorkers;
 
-extern class FetchEvent extends ExtendableEvent {
+@:native("FetchEvent") extern class FetchEvent extends ExtendableEvent {
 	var request(default, null) : js.fetch.Request;
 	var preloadResponse(default, null) : js.lib.Promise<Any>;
 	var clientId(default, null) : String;

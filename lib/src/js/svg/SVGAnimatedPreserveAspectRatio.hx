@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGAnimatedPreserveAspectRatio {
+@:native("SVGAnimatedPreserveAspectRatio") extern class SVGAnimatedPreserveAspectRatio {
 	var baseVal(default, null) : SVGPreserveAspectRatio;
 	var animVal(default, null) : SVGPreserveAspectRatio;
 }

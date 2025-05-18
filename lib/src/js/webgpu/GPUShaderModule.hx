@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUShaderModule {
+@:native("GPUShaderModule") extern class GPUShaderModule {
 	/**
 		From interface mixin GPUObjectBase
 	**/

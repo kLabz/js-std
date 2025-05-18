@@ -24,6 +24,6 @@
 
 package js.webxr;
 
-extern class XRViewerPose extends XRPose {
+@:native("XRViewerPose") extern class XRViewerPose extends XRPose {
 	var views(default, null) : Array<XRView>;
 }

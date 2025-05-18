@@ -24,7 +24,7 @@
 
 package js.cssom;
 
-extern class CSSImportRule extends CSSRule {
+@:native("CSSImportRule") extern class CSSImportRule extends CSSRule {
 	var href(default, null) : String;
 	var media(default, null) : MediaList;
 	var styleSheet(default, null) : Null<CSSStyleSheet>;

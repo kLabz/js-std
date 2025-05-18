@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGGraphicsElement extends SVGElement {
+@:native("SVGGraphicsElement") extern class SVGGraphicsElement extends SVGElement {
 	var transform(default, null) : SVGAnimatedTransformList;
 	/**
 		From interface mixin SVGTests

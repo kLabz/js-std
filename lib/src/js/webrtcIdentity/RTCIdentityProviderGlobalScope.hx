@@ -24,6 +24,6 @@
 
 package js.webrtcIdentity;
 
-extern class RTCIdentityProviderGlobalScope extends js.html.WorkerGlobalScope {
+@:native("RTCIdentityProviderGlobalScope") extern class RTCIdentityProviderGlobalScope extends js.html.WorkerGlobalScope {
 	var rtcIdentityProvider(default, null) : RTCIdentityProviderRegistrar;
 }

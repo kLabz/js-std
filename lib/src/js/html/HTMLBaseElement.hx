@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLBaseElement extends HTMLElement {
+@:native("HTMLBaseElement") extern class HTMLBaseElement extends HTMLElement {
 	var href : String;
 	var target : String;
 	function new():Void;

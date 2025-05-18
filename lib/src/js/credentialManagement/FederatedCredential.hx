@@ -24,7 +24,7 @@
 
 package js.credentialManagement;
 
-extern class FederatedCredential extends Credential {
+@:native("FederatedCredential") extern class FederatedCredential extends Credential {
 	var provider(default, null) : String;
 	var protocol(default, null) : Null<String>;
 	/**

@@ -24,7 +24,7 @@
 
 package js.computePressure;
 
-extern class PressureRecord {
+@:native("PressureRecord") extern class PressureRecord {
 	var source(default, null) : PressureSource;
 	var state(default, null) : PressureState;
 	var time(default, null) : js.hrTime.DOMHighResTimeStamp;

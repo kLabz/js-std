@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class EventSource extends js.dom.EventTarget {
+@:native("EventSource") extern class EventSource extends js.dom.EventTarget {
 	var url(default, null) : String;
 	var withCredentials(default, null) : Bool;
 	static inline var CONNECTING : Int = 0;

@@ -24,6 +24,6 @@
 
 package js.filterEffects;
 
-extern class SVGFEMergeNodeElement extends js.svg.SVGElement {
+@:native("SVGFEMergeNodeElement") extern class SVGFEMergeNodeElement extends js.svg.SVGElement {
 	var in1(default, null) : js.svg.SVGAnimatedString;
 }

@@ -24,7 +24,7 @@
 
 package js.filterEffects;
 
-extern class SVGFEImageElement extends js.svg.SVGElement {
+@:native("SVGFEImageElement") extern class SVGFEImageElement extends js.svg.SVGElement {
 	var preserveAspectRatio(default, null) : js.svg.SVGAnimatedPreserveAspectRatio;
 	var crossOrigin(default, null) : js.svg.SVGAnimatedString;
 	/**

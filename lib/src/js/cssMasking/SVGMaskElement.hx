@@ -24,7 +24,7 @@
 
 package js.cssMasking;
 
-extern class SVGMaskElement extends js.svg.SVGElement {
+@:native("SVGMaskElement") extern class SVGMaskElement extends js.svg.SVGElement {
 	var maskUnits(default, null) : js.svg.SVGAnimatedEnumeration;
 	var maskContentUnits(default, null) : js.svg.SVGAnimatedEnumeration;
 	var x(default, null) : js.svg.SVGAnimatedLength;

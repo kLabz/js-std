@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLBodyElement extends HTMLElement {
+@:native("HTMLBodyElement") extern class HTMLBodyElement extends HTMLElement {
 	/**
 		From interface mixin WindowEventHandlers
 	**/

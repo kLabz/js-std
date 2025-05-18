@@ -24,7 +24,7 @@
 
 package js.webgl1;
 
-extern class WebGLActiveInfo {
+@:native("WebGLActiveInfo") extern class WebGLActiveInfo {
 	var size(default, null) : GLint;
 	var type(default, null) : GLenum;
 	var name(default, null) : String;

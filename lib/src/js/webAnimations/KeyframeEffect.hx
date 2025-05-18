@@ -24,7 +24,7 @@
 
 package js.webAnimations;
 
-extern class KeyframeEffect extends AnimationEffect {
+@:native("KeyframeEffect") extern class KeyframeEffect extends AnimationEffect {
 	var target : Null<js.dom.Element>;
 	var pseudoElement : Null<CSSOMString>;
 	var composite : CompositeOperation;

@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGTextContentElement extends SVGGraphicsElement {
+@:native("SVGTextContentElement") extern class SVGTextContentElement extends SVGGraphicsElement {
 	static inline var LENGTHADJUST_UNKNOWN : Int = 0;
 	static inline var LENGTHADJUST_SPACING : Int = 1;
 	static inline var LENGTHADJUST_SPACINGANDGLYPHS : Int = 2;

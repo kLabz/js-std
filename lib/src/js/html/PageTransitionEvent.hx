@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class PageTransitionEvent extends js.dom.Event {
+@:native("PageTransitionEvent") extern class PageTransitionEvent extends js.dom.Event {
 	var persisted(default, null) : Bool;
 	function new(type:String, ?eventInitDict:PageTransitionEventInit = {  }):Void;
 }

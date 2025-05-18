@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSKeywordValue extends CSSStyleValue {
+@:native("CSSKeywordValue") extern class CSSKeywordValue extends CSSStyleValue {
 	var value : String;
 	function new(value:String):Void;
 }

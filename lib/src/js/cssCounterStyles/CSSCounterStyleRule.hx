@@ -24,7 +24,7 @@
 
 package js.cssCounterStyles;
 
-extern class CSSCounterStyleRule extends js.cssom.CSSRule {
+@:native("CSSCounterStyleRule") extern class CSSCounterStyleRule extends js.cssom.CSSRule {
 	var name : CSSOMString;
 	var system : CSSOMString;
 	var symbols : CSSOMString;

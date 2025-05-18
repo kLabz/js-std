@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLMenuElement extends HTMLElement {
+@:native("HTMLMenuElement") extern class HTMLMenuElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
 	**/

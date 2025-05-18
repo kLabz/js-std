@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class DOMImplementation {
+@:native("DOMImplementation") extern class DOMImplementation {
 	function createDocument(namespace:Null<String>, qualifiedName:String, ?doctype:Null<DocumentType> = null):XMLDocument;
 	function createDocumentType(qualifiedName:String, publicId:String, systemId:String):DocumentType;
 	function createHTMLDocument(?title:String):Document;

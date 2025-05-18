@@ -24,7 +24,7 @@
 
 package js.webxrlayers;
 
-extern class XRWebGLBinding {
+@:native("XRWebGLBinding") extern class XRWebGLBinding {
 	var nativeProjectionScaleFactor(default, null) : Float;
 	var usesDepthValues(default, null) : Bool;
 	function new(session:js.webxr.XRSession, context:js.webxr.XRWebGLRenderingContext):Void;

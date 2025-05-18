@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGAnimatedAngle {
+@:native("SVGAnimatedAngle") extern class SVGAnimatedAngle {
 	var baseVal(default, null) : SVGAngle;
 	var animVal(default, null) : SVGAngle;
 }

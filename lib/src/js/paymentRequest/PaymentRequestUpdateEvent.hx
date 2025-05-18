@@ -24,7 +24,7 @@
 
 package js.paymentRequest;
 
-extern class PaymentRequestUpdateEvent extends js.dom.Event {
+@:native("PaymentRequestUpdateEvent") extern class PaymentRequestUpdateEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:PaymentRequestUpdateEventInit = {  }):Void;
 	function updateWith(detailsPromise:js.lib.Promise<PaymentDetailsUpdate>):Void;
 }

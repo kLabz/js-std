@@ -24,7 +24,7 @@
 
 package js.webxrHitTest;
 
-extern class XRRay {
+@:native("XRRay") extern class XRRay {
 	var origin(default, null) : js.geometry.DOMPointReadOnly;
 	var direction(default, null) : js.geometry.DOMPointReadOnly;
 	var matrix(default, null) : Float32Array;

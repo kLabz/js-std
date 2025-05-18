@@ -24,7 +24,7 @@
 
 package js.anchors;
 
-extern class XRAnchor {
+@:native("XRAnchor") extern class XRAnchor {
 	var anchorSpace(default, null) : js.webxr.XRSpace;
 	function delete():Void;
 	function requestPersistentHandle():js.lib.Promise<String>;

@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class DynamicsCompressorNode extends AudioNode {
+@:native("DynamicsCompressorNode") extern class DynamicsCompressorNode extends AudioNode {
 	var threshold(default, null) : AudioParam;
 	var knee(default, null) : AudioParam;
 	var ratio(default, null) : AudioParam;

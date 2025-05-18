@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLTableRowElement extends HTMLElement {
+@:native("HTMLTableRowElement") extern class HTMLTableRowElement extends HTMLElement {
 	var rowIndex(default, null) : Int;
 	var sectionRowIndex(default, null) : Int;
 	var cells(default, null) : js.dom.HTMLCollection;

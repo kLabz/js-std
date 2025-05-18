@@ -24,6 +24,6 @@
 
 package js.webxr;
 
-extern class XRLayer extends js.dom.EventTarget {
+@:native("XRLayer") extern class XRLayer extends js.dom.EventTarget {
 
 }

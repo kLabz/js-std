@@ -24,7 +24,7 @@
 
 package js.netinfo;
 
-extern class NetworkInformation extends js.dom.EventTarget {
+@:native("NetworkInformation") extern class NetworkInformation extends js.dom.EventTarget {
 	var type(default, null) : ConnectionType;
 	var effectiveType(default, null) : EffectiveConnectionType;
 	var downlinkMax(default, null) : Megabit;

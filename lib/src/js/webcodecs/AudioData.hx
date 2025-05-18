@@ -24,7 +24,7 @@
 
 package js.webcodecs;
 
-extern class AudioData {
+@:native("AudioData") extern class AudioData {
 	var format(default, null) : Null<AudioSampleFormat>;
 	var sampleRate(default, null) : Float;
 	var numberOfFrames(default, null) : Int;

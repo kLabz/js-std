@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLVideoElement extends HTMLMediaElement {
+@:native("HTMLVideoElement") extern class HTMLVideoElement extends HTMLMediaElement {
 	var width : Int;
 	var height : Int;
 	var videoWidth(default, null) : Int;

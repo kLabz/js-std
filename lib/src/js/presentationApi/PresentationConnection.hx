@@ -24,7 +24,7 @@
 
 package js.presentationApi;
 
-extern class PresentationConnection extends js.dom.EventTarget {
+@:native("PresentationConnection") extern class PresentationConnection extends js.dom.EventTarget {
 	var id(default, null) : String;
 	var url(default, null) : String;
 	var state(default, null) : PresentationConnectionState;

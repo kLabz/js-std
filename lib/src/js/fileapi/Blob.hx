@@ -24,7 +24,7 @@
 
 package js.fileapi;
 
-extern class Blob {
+@:native("Blob") extern class Blob {
 	var size(default, null) : Float;
 	var type(default, null) : String;
 	function new(?blobParts:Array<BlobPart>, ?options:BlobPropertyBag = {  }):Void;

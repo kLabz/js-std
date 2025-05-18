@@ -24,7 +24,7 @@
 
 package js.eventTiming;
 
-extern class PerformanceEventTiming extends js.performanceTimeline.PerformanceEntry {
+@:native("PerformanceEventTiming") extern class PerformanceEventTiming extends js.performanceTimeline.PerformanceEntry {
 	var processingStart(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var processingEnd(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var cancelable(default, null) : Bool;

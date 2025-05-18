@@ -24,7 +24,7 @@
 
 package js.urlpattern;
 
-extern class URLPattern {
+@:native("URLPattern") extern class URLPattern {
 	var protocol(default, null) : String;
 	var username(default, null) : String;
 	var password(default, null) : String;

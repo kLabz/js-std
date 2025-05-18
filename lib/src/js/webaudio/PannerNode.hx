@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class PannerNode extends AudioNode {
+@:native("PannerNode") extern class PannerNode extends AudioNode {
 	var panningModel : PanningModelType;
 	var positionX(default, null) : AudioParam;
 	var positionY(default, null) : AudioParam;

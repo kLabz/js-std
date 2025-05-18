@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCRtpReceiver {
+@:native("RTCRtpReceiver") extern class RTCRtpReceiver {
 	var track(default, null) : js.mediacaptureStreams.MediaStreamTrack;
 	var transport(default, null) : Null<RTCDtlsTransport>;
 	var jitterBufferTarget : Null<js.hrTime.DOMHighResTimeStamp>;

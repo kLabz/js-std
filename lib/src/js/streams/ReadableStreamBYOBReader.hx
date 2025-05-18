@@ -24,7 +24,7 @@
 
 package js.streams;
 
-extern class ReadableStreamBYOBReader {
+@:native("ReadableStreamBYOBReader") extern class ReadableStreamBYOBReader {
 	/**
 		From interface mixin ReadableStreamGenericReader
 	**/

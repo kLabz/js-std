@@ -24,6 +24,6 @@
 
 package js.dom;
 
-extern class Comment extends CharacterData {
+@:native("Comment") extern class Comment extends CharacterData {
 	function new(?data:String = ""):Void;
 }

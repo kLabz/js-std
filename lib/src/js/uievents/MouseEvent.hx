@@ -24,7 +24,7 @@
 
 package js.uievents;
 
-extern class MouseEvent extends UIEvent {
+@:native("MouseEvent") extern class MouseEvent extends UIEvent {
 	var screenX(default, null) : Int;
 	var screenY(default, null) : Int;
 	var clientX(default, null) : Int;

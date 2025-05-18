@@ -24,7 +24,7 @@
 
 package js.geolocation;
 
-extern class GeolocationCoordinates {
+@:native("GeolocationCoordinates") extern class GeolocationCoordinates {
 	var accuracy(default, null) : Float;
 	var latitude(default, null) : Float;
 	var longitude(default, null) : Float;

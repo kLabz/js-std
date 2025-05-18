@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGPointList {
+@:native("SVGPointList") extern class SVGPointList {
 	var length(default, null) : Int;
 	var numberOfItems(default, null) : Int;
 	/**

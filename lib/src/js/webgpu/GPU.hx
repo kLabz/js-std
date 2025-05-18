@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPU {
+@:native("GPU") extern class GPU {
 	var wgslLanguageFeatures(default, null) : WGSLLanguageFeatures;
 	function getPreferredCanvasFormat():GPUTextureFormat;
 	function requestAdapter(?options:GPURequestAdapterOptions = {  }):js.lib.Promise<Null<GPUAdapter>>;

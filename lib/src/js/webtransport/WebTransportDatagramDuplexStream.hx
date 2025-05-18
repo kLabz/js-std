@@ -24,7 +24,7 @@
 
 package js.webtransport;
 
-extern class WebTransportDatagramDuplexStream {
+@:native("WebTransportDatagramDuplexStream") extern class WebTransportDatagramDuplexStream {
 	var readable(default, null) : js.streams.ReadableStream;
 	var maxDatagramSize(default, null) : Int;
 	var incomingMaxAge : Null<Float>;

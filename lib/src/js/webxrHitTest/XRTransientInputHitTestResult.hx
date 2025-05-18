@@ -24,7 +24,7 @@
 
 package js.webxrHitTest;
 
-extern class XRTransientInputHitTestResult {
+@:native("XRTransientInputHitTestResult") extern class XRTransientInputHitTestResult {
 	var inputSource(default, null) : js.webxr.XRInputSource;
 	var results(default, null) : Array<XRHitTestResult>;
 }

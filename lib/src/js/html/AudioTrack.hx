@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class AudioTrack {
+@:native("AudioTrack") extern class AudioTrack {
 	var id(default, null) : String;
 	var kind(default, null) : String;
 	var label(default, null) : String;

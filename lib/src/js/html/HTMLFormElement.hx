@@ -41,7 +41,7 @@ package js.html;
 			}
 		})
 **/
-extern class HTMLFormElement extends HTMLElement implements ArrayAccess<js.dom.Element> {
+@:native("HTMLFormElement") extern class HTMLFormElement extends HTMLElement implements ArrayAccess<js.dom.Element> {
 	var acceptCharset : String;
 	var action : String;
 	var autocomplete : String;

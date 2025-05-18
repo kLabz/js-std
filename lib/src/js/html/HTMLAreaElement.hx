@@ -27,7 +27,7 @@ package js.html;
 /**
 	TODO attribute href: special=stringifier readonly=false
 **/
-extern class HTMLAreaElement extends HTMLElement {
+@:native("HTMLAreaElement") extern class HTMLAreaElement extends HTMLElement {
 	var alt : String;
 	var coords : String;
 	var shape : String;

@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLCanvasElement extends HTMLElement {
+@:native("HTMLCanvasElement") extern class HTMLCanvasElement extends HTMLElement {
 	var width : Int;
 	var height : Int;
 	function new():Void;

@@ -24,7 +24,7 @@
 
 package js.webnn;
 
-extern class MLOperand {
+@:native("MLOperand") extern class MLOperand {
 	var dataType(default, null) : MLOperandDataType;
 	var shape(default, null) : Array<Int>;
 }

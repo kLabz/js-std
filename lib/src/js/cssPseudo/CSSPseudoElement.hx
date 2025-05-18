@@ -24,7 +24,7 @@
 
 package js.cssPseudo;
 
-extern class CSSPseudoElement extends js.dom.EventTarget {
+@:native("CSSPseudoElement") extern class CSSPseudoElement extends js.dom.EventTarget {
 	var type(default, null) : CSSOMString;
 	var element(default, null) : js.dom.Element;
 	var parent(default, null) : haxe.extern.EitherType<js.dom.Element, CSSPseudoElement>;

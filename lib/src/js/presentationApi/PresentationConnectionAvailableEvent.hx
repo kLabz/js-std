@@ -24,7 +24,7 @@
 
 package js.presentationApi;
 
-extern class PresentationConnectionAvailableEvent extends js.dom.Event {
+@:native("PresentationConnectionAvailableEvent") extern class PresentationConnectionAvailableEvent extends js.dom.Event {
 	var connection(default, null) : PresentationConnection;
 	function new(type:String, eventInitDict:PresentationConnectionAvailableEventInit):Void;
 }

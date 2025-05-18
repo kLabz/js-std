@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSUnparsedValue extends CSSStyleValue implements ArrayAccess<CSSUnparsedSegment> {
+@:native("CSSUnparsedValue") extern class CSSUnparsedValue extends CSSStyleValue implements ArrayAccess<CSSUnparsedSegment> {
 	var length(default, null) : Int;
 	function new(members:Array<CSSUnparsedSegment>):Void;
 	/**

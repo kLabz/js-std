@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class XMLSerializer {
+@:native("XMLSerializer") extern class XMLSerializer {
 	function new():Void;
 	function serializeToString(root:js.dom.Node):String;
 }

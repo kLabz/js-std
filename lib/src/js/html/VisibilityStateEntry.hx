@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class VisibilityStateEntry extends js.performanceTimeline.PerformanceEntry {
+@:native("VisibilityStateEntry") extern class VisibilityStateEntry extends js.performanceTimeline.PerformanceEntry {
 	var name(default, null) : String;
 	var entryType(default, null) : String;
 	var startTime(default, null) : js.hrTime.DOMHighResTimeStamp;

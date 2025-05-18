@@ -24,6 +24,6 @@
 
 package js.modelElement;
 
-extern class HTMLModelElement extends js.html.HTMLElement {
+@:native("HTMLModelElement") extern class HTMLModelElement extends js.html.HTMLElement {
 
 }

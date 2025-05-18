@@ -24,7 +24,7 @@
 
 package js.ppa;
 
-extern class PrivateAttribution {
+@:native("PrivateAttribution") extern class PrivateAttribution {
 	var aggregationServices(default, null) : PrivateAttributionAggregationServices;
 	/**
 		From partial interface in ppa.idl

@@ -24,7 +24,7 @@
 
 package js.pushApi;
 
-extern class PushSubscription {
+@:native("PushSubscription") extern class PushSubscription {
 	var endpoint(default, null) : String;
 	var expirationTime(default, null) : Null<js.hrTime.EpochTimeStamp>;
 	var options(default, null) : PushSubscriptionOptions;

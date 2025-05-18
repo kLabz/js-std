@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCError extends js.webidl.DOMException {
+@:native("RTCError") extern class RTCError extends js.webidl.DOMException {
 	var errorDetail(default, null) : RTCErrorDetailType;
 	var sdpLineNumber(default, null) : Null<Int>;
 	var sctpCauseCode(default, null) : Null<Int>;

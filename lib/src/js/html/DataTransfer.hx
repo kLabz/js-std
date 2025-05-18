@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class DataTransfer {
+@:native("DataTransfer") extern class DataTransfer {
 	var dropEffect : String;
 	var effectAllowed : String;
 	var items(default, null) : DataTransferItemList;

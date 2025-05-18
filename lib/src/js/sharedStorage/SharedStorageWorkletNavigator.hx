@@ -24,7 +24,7 @@
 
 package js.sharedStorage;
 
-extern class SharedStorageWorkletNavigator {
+@:native("SharedStorageWorkletNavigator") extern class SharedStorageWorkletNavigator {
 	/**
 		From interface mixin NavigatorLocks
 	**/

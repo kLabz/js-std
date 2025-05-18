@@ -24,7 +24,7 @@
 
 package js.indexeddb;
 
-extern class IDBTransaction extends js.dom.EventTarget {
+@:native("IDBTransaction") extern class IDBTransaction extends js.dom.EventTarget {
 	var objectStoreNames(default, null) : js.html.DOMStringList;
 	var mode(default, null) : IDBTransactionMode;
 	var durability(default, null) : IDBTransactionDurability;

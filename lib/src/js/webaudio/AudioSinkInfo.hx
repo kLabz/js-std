@@ -24,6 +24,6 @@
 
 package js.webaudio;
 
-extern class AudioSinkInfo {
+@:native("AudioSinkInfo") extern class AudioSinkInfo {
 	var type(default, null) : AudioSinkType;
 }

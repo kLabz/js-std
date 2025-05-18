@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSStyleValue {
+@:native("CSSStyleValue") extern class CSSStyleValue {
 	/**
 		(special = stringifier)
 	**/

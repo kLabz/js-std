@@ -24,6 +24,6 @@
 
 package js.oesElementIndexUint;
 
-extern class OES_element_index_uint {
+@:native("OES_element_index_uint") extern class OES_element_index_uint {
 
 }

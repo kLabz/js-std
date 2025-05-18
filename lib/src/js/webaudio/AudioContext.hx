@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class AudioContext extends BaseAudioContext {
+@:native("AudioContext") extern class AudioContext extends BaseAudioContext {
 	var baseLatency(default, null) : Float;
 	var outputLatency(default, null) : Float;
 	var sinkId(default, null) : haxe.extern.EitherType<String, AudioSinkInfo>;

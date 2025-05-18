@@ -24,7 +24,7 @@
 
 package js.filterEffects;
 
-extern class SVGFEBlendElement extends js.svg.SVGElement {
+@:native("SVGFEBlendElement") extern class SVGFEBlendElement extends js.svg.SVGElement {
 	static inline var SVG_FEBLEND_MODE_UNKNOWN : Int = 0;
 	static inline var SVG_FEBLEND_MODE_NORMAL : Int = 1;
 	static inline var SVG_FEBLEND_MODE_MULTIPLY : Int = 2;

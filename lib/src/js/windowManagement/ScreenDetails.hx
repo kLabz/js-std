@@ -24,7 +24,7 @@
 
 package js.windowManagement;
 
-extern class ScreenDetails extends js.dom.EventTarget {
+@:native("ScreenDetails") extern class ScreenDetails extends js.dom.EventTarget {
 	var screens(default, null) : Array<ScreenDetailed>;
 	var currentScreen(default, null) : ScreenDetailed;
 	var onscreenschange : js.html.EventHandler;

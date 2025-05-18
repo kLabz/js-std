@@ -24,7 +24,7 @@
 
 package js.cssPaintApi;
 
-extern class PaintRenderingContext2D {
+@:native("PaintRenderingContext2D") extern class PaintRenderingContext2D {
 	/**
 		From interface mixin CanvasCompositing
 	**/

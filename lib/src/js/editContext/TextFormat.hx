@@ -24,7 +24,7 @@
 
 package js.editContext;
 
-extern class TextFormat {
+@:native("TextFormat") extern class TextFormat {
 	var rangeStart(default, null) : Int;
 	var rangeEnd(default, null) : Int;
 	var underlineStyle(default, null) : UnderlineStyle;

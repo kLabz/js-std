@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class PromiseRejectionEvent extends js.dom.Event {
+@:native("PromiseRejectionEvent") extern class PromiseRejectionEvent extends js.dom.Event {
 	var promise(default, null) : { };
 	var reason(default, null) : Any;
 	function new(type:String, eventInitDict:PromiseRejectionEventInit):Void;

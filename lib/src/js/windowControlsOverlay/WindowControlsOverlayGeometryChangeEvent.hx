@@ -24,7 +24,7 @@
 
 package js.windowControlsOverlay;
 
-extern class WindowControlsOverlayGeometryChangeEvent extends js.dom.Event {
+@:native("WindowControlsOverlayGeometryChangeEvent") extern class WindowControlsOverlayGeometryChangeEvent extends js.dom.Event {
 	var titlebarAreaRect(default, null) : js.geometry.DOMRect;
 	var visible(default, null) : Bool;
 	function new(type:String, eventInitDict:WindowControlsOverlayGeometryChangeEventInit):Void;

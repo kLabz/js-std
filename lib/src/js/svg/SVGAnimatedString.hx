@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGAnimatedString {
+@:native("SVGAnimatedString") extern class SVGAnimatedString {
 	var baseVal : String;
 	var animVal(default, null) : String;
 }

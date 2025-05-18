@@ -24,7 +24,7 @@
 
 package js.backgroundFetch;
 
-extern class BackgroundFetchRegistration extends js.dom.EventTarget {
+@:native("BackgroundFetchRegistration") extern class BackgroundFetchRegistration extends js.dom.EventTarget {
 	var id(default, null) : String;
 	var uploadTotal(default, null) : Float;
 	var uploaded(default, null) : Float;

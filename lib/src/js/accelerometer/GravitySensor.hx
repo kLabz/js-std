@@ -24,6 +24,6 @@
 
 package js.accelerometer;
 
-extern class GravitySensor extends Accelerometer {
+@:native("GravitySensor") extern class GravitySensor extends Accelerometer {
 	function new(?options:AccelerometerSensorOptions = {  }):Void;
 }

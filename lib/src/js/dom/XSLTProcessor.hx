@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class XSLTProcessor {
+@:native("XSLTProcessor") extern class XSLTProcessor {
 	function new():Void;
 	function clearParameters():Void;
 	function getParameter(namespaceURI:String, localName:String):Any;

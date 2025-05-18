@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class MessageChannel {
+@:native("MessageChannel") extern class MessageChannel {
 	var port1(default, null) : MessagePort;
 	var port2(default, null) : MessagePort;
 	function new():Void;

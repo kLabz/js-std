@@ -24,7 +24,7 @@
 
 package js.webcodecs;
 
-extern class AudioEncoder extends js.dom.EventTarget {
+@:native("AudioEncoder") extern class AudioEncoder extends js.dom.EventTarget {
 	var state(default, null) : CodecState;
 	var encodeQueueSize(default, null) : Int;
 	var ondequeue : js.html.EventHandler;

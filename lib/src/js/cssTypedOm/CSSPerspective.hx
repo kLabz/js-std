@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSPerspective extends CSSTransformComponent {
+@:native("CSSPerspective") extern class CSSPerspective extends CSSTransformComponent {
 	var length : CSSPerspectiveValue;
 	function new(length:CSSPerspectiveValue):Void;
 }

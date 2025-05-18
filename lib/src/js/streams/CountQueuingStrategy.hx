@@ -24,7 +24,7 @@
 
 package js.streams;
 
-extern class CountQueuingStrategy {
+@:native("CountQueuingStrategy") extern class CountQueuingStrategy {
 	var highWaterMark(default, null) : Float;
 	var size(default, null) : js.webidl.Function;
 	function new(init:QueuingStrategyInit):Void;

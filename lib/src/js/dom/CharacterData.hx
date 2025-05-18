@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class CharacterData extends Node {
+@:native("CharacterData") extern class CharacterData extends Node {
 	var data : String;
 	var length(default, null) : Int;
 	/**

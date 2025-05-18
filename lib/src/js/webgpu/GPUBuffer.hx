@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPUBuffer {
+@:native("GPUBuffer") extern class GPUBuffer {
 	var size(default, null) : GPUSize64Out;
 	var usage(default, null) : GPUFlagsConstant;
 	var mapState(default, null) : GPUBufferMapState;

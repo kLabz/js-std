@@ -24,6 +24,6 @@
 
 package js.webBluetoothScanning;
 
-extern class BluetoothLEScanPermissionResult extends js.permissions.PermissionStatus {
+@:native("BluetoothLEScanPermissionResult") extern class BluetoothLEScanPermissionResult extends js.permissions.PermissionStatus {
 	var scans : Array<BluetoothLEScan>;
 }

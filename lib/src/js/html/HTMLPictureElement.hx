@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class HTMLPictureElement extends HTMLElement {
+@:native("HTMLPictureElement") extern class HTMLPictureElement extends HTMLElement {
 	function new():Void;
 }

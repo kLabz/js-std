@@ -24,7 +24,7 @@
 
 package js.storage;
 
-extern class StorageManager {
+@:native("StorageManager") extern class StorageManager {
 	function estimate():js.lib.Promise<StorageEstimate>;
 	/**
 		From partial interface in fs.idl

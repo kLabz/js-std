@@ -27,7 +27,7 @@ package js.dom;
 /**
 	TODO attribute value: special=stringifier readonly=false
 **/
-extern class DOMTokenList {
+@:native("DOMTokenList") extern class DOMTokenList {
 	var length(default, null) : Int;
 	function add(tokens:String):Void;
 	function contains(token:String):Bool;

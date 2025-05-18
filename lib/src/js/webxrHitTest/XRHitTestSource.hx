@@ -24,6 +24,6 @@
 
 package js.webxrHitTest;
 
-extern class XRHitTestSource {
+@:native("XRHitTestSource") extern class XRHitTestSource {
 	function cancel():Void;
 }

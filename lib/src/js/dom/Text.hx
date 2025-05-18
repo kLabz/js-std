@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class Text extends CharacterData {
+@:native("Text") extern class Text extends CharacterData {
 	var wholeText(default, null) : String;
 	/**
 		From interface mixin Slottable

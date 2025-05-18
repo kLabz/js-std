@@ -24,7 +24,7 @@
 
 package js.webxr;
 
-extern class XRInputSourceArray implements ArrayAccess<XRInputSource> {
+@:native("XRInputSourceArray") extern class XRInputSourceArray implements ArrayAccess<XRInputSource> {
 	var length(default, null) : Int;
 	function values():Iterator<XRInputSource>;
 	function values():Iterator<XRInputSource>;

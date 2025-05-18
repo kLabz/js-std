@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLImageElement extends HTMLElement {
+@:native("HTMLImageElement") extern class HTMLImageElement extends HTMLElement {
 	var alt : String;
 	var src : String;
 	var srcset : String;

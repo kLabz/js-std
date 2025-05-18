@@ -24,7 +24,7 @@
 
 package js.webxr;
 
-extern class XRRenderState {
+@:native("XRRenderState") extern class XRRenderState {
 	var depthNear(default, null) : Float;
 	var depthFar(default, null) : Float;
 	var passthroughFullyObscured(default, null) : Null<Bool>;

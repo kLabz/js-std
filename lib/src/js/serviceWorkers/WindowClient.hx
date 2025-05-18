@@ -24,7 +24,7 @@
 
 package js.serviceWorkers;
 
-extern class WindowClient extends Client {
+@:native("WindowClient") extern class WindowClient extends Client {
 	var visibilityState(default, null) : js.html.DocumentVisibilityState;
 	var focused(default, null) : Bool;
 	var ancestorOrigins(default, null) : Array<String>;

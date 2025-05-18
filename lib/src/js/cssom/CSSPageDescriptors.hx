@@ -24,7 +24,7 @@
 
 package js.cssom;
 
-extern class CSSPageDescriptors extends CSSStyleDeclaration {
+@:native("CSSPageDescriptors") extern class CSSPageDescriptors extends CSSStyleDeclaration {
 	var margin : CSSOMString;
 	var marginTop : CSSOMString;
 	var marginRight : CSSOMString;

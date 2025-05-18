@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class ElementInternals {
+@:native("ElementInternals") extern class ElementInternals {
 	var shadowRoot(default, null) : Null<js.dom.ShadowRoot>;
 	var form(default, null) : Null<HTMLFormElement>;
 	var willValidate(default, null) : Bool;

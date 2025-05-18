@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCDataChannel extends js.dom.EventTarget {
+@:native("RTCDataChannel") extern class RTCDataChannel extends js.dom.EventTarget {
 	var label(default, null) : String;
 	var ordered(default, null) : Bool;
 	var maxPacketLifeTime(default, null) : Null<Int>;

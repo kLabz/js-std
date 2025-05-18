@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLTimeElement extends HTMLElement {
+@:native("HTMLTimeElement") extern class HTMLTimeElement extends HTMLElement {
 	var dateTime : String;
 	function new():Void;
 }

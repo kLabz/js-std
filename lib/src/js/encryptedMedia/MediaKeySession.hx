@@ -24,7 +24,7 @@
 
 package js.encryptedMedia;
 
-extern class MediaKeySession extends js.dom.EventTarget {
+@:native("MediaKeySession") extern class MediaKeySession extends js.dom.EventTarget {
 	var sessionId(default, null) : String;
 	var expiration(default, null) : Float;
 	var closed(default, null) : js.lib.Promise<MediaKeySessionClosedReason>;

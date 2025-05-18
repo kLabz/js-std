@@ -24,6 +24,6 @@
 
 package js.webgl1;
 
-extern class WebGLObject {
+@:native("WebGLObject") extern class WebGLObject {
 	var label : String;
 }

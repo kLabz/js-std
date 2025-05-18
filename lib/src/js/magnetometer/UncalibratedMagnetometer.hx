@@ -24,7 +24,7 @@
 
 package js.magnetometer;
 
-extern class UncalibratedMagnetometer extends js.genericSensor.Sensor {
+@:native("UncalibratedMagnetometer") extern class UncalibratedMagnetometer extends js.genericSensor.Sensor {
 	var x(default, null) : Null<Float>;
 	var y(default, null) : Null<Float>;
 	var z(default, null) : Null<Float>;

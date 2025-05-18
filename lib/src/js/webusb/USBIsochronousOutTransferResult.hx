@@ -24,7 +24,7 @@
 
 package js.webusb;
 
-extern class USBIsochronousOutTransferResult {
+@:native("USBIsochronousOutTransferResult") extern class USBIsochronousOutTransferResult {
 	var packets(default, null) : Array<USBIsochronousOutTransferPacket>;
 	function new(packets:Array<USBIsochronousOutTransferPacket>):Void;
 }

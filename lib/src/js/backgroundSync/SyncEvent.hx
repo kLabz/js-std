@@ -24,7 +24,7 @@
 
 package js.backgroundSync;
 
-extern class SyncEvent extends js.serviceWorkers.ExtendableEvent {
+@:native("SyncEvent") extern class SyncEvent extends js.serviceWorkers.ExtendableEvent {
 	var tag(default, null) : String;
 	var lastChance(default, null) : Bool;
 	function new(type:String, init:SyncEventInit):Void;

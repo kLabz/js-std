@@ -24,6 +24,6 @@
 
 package js.webgpu;
 
-extern class GPUError {
+@:native("GPUError") extern class GPUError {
 	var message(default, null) : String;
 }

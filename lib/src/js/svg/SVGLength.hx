@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGLength {
+@:native("SVGLength") extern class SVGLength {
 	static inline var SVG_LENGTHTYPE_UNKNOWN : Int = 0;
 	static inline var SVG_LENGTHTYPE_NUMBER : Int = 1;
 	static inline var SVG_LENGTHTYPE_PERCENTAGE : Int = 2;

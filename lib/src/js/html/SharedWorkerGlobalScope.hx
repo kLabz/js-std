@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class SharedWorkerGlobalScope extends WorkerGlobalScope {
+@:native("SharedWorkerGlobalScope") extern class SharedWorkerGlobalScope extends WorkerGlobalScope {
 	var name(default, null) : String;
 	var onconnect : EventHandler;
 	function close():Void;

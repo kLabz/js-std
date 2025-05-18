@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSRotate extends CSSTransformComponent {
+@:native("CSSRotate") extern class CSSRotate extends CSSTransformComponent {
 	var x : CSSNumberish;
 	var y : CSSNumberish;
 	var z : CSSNumberish;

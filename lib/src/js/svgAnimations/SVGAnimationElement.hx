@@ -24,7 +24,7 @@
 
 package js.svgAnimations;
 
-extern class SVGAnimationElement extends js.svg.SVGElement {
+@:native("SVGAnimationElement") extern class SVGAnimationElement extends js.svg.SVGElement {
 	var targetElement(default, null) : Null<js.svg.SVGElement>;
 	var onbegin : js.html.EventHandler;
 	var onend : js.html.EventHandler;

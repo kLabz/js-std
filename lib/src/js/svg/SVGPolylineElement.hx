@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGPolylineElement extends SVGGeometryElement {
+@:native("SVGPolylineElement") extern class SVGPolylineElement extends SVGGeometryElement {
 	/**
 		From interface mixin SVGAnimatedPoints
 	**/

@@ -24,7 +24,7 @@
 
 package js.filterEffects;
 
-extern class SVGFEDiffuseLightingElement extends js.svg.SVGElement {
+@:native("SVGFEDiffuseLightingElement") extern class SVGFEDiffuseLightingElement extends js.svg.SVGElement {
 	var in1(default, null) : js.svg.SVGAnimatedString;
 	var surfaceScale(default, null) : js.svg.SVGAnimatedNumber;
 	var diffuseConstant(default, null) : js.svg.SVGAnimatedNumber;

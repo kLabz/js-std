@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class WorkerNavigator {
+@:native("WorkerNavigator") extern class WorkerNavigator {
 	/**
 		From interface mixin NavigatorDeviceMemory
 	**/

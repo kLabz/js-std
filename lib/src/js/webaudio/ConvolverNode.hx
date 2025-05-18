@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class ConvolverNode extends AudioNode {
+@:native("ConvolverNode") extern class ConvolverNode extends AudioNode {
 	var buffer : Null<AudioBuffer>;
 	var normalize : Bool;
 	function new(context:BaseAudioContext, ?options:ConvolverOptions = {  }):Void;

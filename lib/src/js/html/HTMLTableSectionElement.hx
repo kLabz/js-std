@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLTableSectionElement extends HTMLElement {
+@:native("HTMLTableSectionElement") extern class HTMLTableSectionElement extends HTMLElement {
 	var rows(default, null) : js.dom.HTMLCollection;
 	/**
 		From partial interface in html.idl

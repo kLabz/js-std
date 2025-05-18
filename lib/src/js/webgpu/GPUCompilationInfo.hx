@@ -24,6 +24,6 @@
 
 package js.webgpu;
 
-extern class GPUCompilationInfo {
+@:native("GPUCompilationInfo") extern class GPUCompilationInfo {
 	var messages(default, null) : Array<GPUCompilationMessage>;
 }

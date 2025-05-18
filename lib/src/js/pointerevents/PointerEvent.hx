@@ -24,7 +24,7 @@
 
 package js.pointerevents;
 
-extern class PointerEvent extends js.uievents.MouseEvent {
+@:native("PointerEvent") extern class PointerEvent extends js.uievents.MouseEvent {
 	var pointerId(default, null) : Int;
 	var width(default, null) : Float;
 	var height(default, null) : Float;

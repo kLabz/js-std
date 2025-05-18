@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLQuoteElement extends HTMLElement {
+@:native("HTMLQuoteElement") extern class HTMLQuoteElement extends HTMLElement {
 	var cite : String;
 	function new():Void;
 }

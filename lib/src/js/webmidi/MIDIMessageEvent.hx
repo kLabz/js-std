@@ -24,7 +24,7 @@
 
 package js.webmidi;
 
-extern class MIDIMessageEvent extends js.dom.Event {
+@:native("MIDIMessageEvent") extern class MIDIMessageEvent extends js.dom.Event {
 	var data(default, null) : Null<Uint8Array>;
 	function new(type:String, ?eventInitDict:MIDIMessageEventInit = {  }):Void;
 }

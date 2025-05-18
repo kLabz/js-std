@@ -24,6 +24,6 @@
 
 package js.webmidi;
 
-extern class MIDIInput extends MIDIPort {
+@:native("MIDIInput") extern class MIDIInput extends MIDIPort {
 	var onmidimessage : js.html.EventHandler;
 }

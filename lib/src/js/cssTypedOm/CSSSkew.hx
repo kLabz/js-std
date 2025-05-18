@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSSkew extends CSSTransformComponent {
+@:native("CSSSkew") extern class CSSSkew extends CSSTransformComponent {
 	var ax : CSSNumericValue;
 	var ay : CSSNumericValue;
 	function new(ax:CSSNumericValue, ay:CSSNumericValue):Void;

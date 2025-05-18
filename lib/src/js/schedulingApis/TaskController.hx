@@ -24,7 +24,7 @@
 
 package js.schedulingApis;
 
-extern class TaskController extends js.dom.AbortController {
+@:native("TaskController") extern class TaskController extends js.dom.AbortController {
 	function new(?init:TaskControllerInit = {  }):Void;
 	function setPriority(priority:TaskPriority):Void;
 }

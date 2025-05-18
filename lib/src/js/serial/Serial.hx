@@ -24,7 +24,7 @@
 
 package js.serial;
 
-extern class Serial extends js.dom.EventTarget {
+@:native("Serial") extern class Serial extends js.dom.EventTarget {
 	var onconnect : js.html.EventHandler;
 	var ondisconnect : js.html.EventHandler;
 	function getPorts():js.lib.Promise<Array<SerialPort>>;

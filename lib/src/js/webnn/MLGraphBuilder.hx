@@ -24,7 +24,7 @@
 
 package js.webnn;
 
-extern class MLGraphBuilder {
+@:native("MLGraphBuilder") extern class MLGraphBuilder {
 	function new(context:MLContext):Void;
 	/**
 		From partial interface in webnn.idl

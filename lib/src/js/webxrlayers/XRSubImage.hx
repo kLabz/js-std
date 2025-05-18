@@ -24,6 +24,6 @@
 
 package js.webxrlayers;
 
-extern class XRSubImage {
+@:native("XRSubImage") extern class XRSubImage {
 	var viewport(default, null) : js.webxr.XRViewport;
 }

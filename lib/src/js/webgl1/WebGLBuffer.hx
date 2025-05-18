@@ -24,6 +24,6 @@
 
 package js.webgl1;
 
-extern class WebGLBuffer extends WebGLObject {
+@:native("WebGLBuffer") extern class WebGLBuffer extends WebGLObject {
 
 }

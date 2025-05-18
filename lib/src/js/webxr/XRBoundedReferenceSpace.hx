@@ -24,6 +24,6 @@
 
 package js.webxr;
 
-extern class XRBoundedReferenceSpace extends XRReferenceSpace {
+@:native("XRBoundedReferenceSpace") extern class XRBoundedReferenceSpace extends XRReferenceSpace {
 	var boundsGeometry(default, null) : Array<js.geometry.DOMPointReadOnly>;
 }

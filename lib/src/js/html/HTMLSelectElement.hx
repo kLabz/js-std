@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLSelectElement extends HTMLElement {
+@:native("HTMLSelectElement") extern class HTMLSelectElement extends HTMLElement {
 	var autocomplete : String;
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;

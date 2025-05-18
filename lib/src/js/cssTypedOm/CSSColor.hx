@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSColor extends CSSColorValue {
+@:native("CSSColor") extern class CSSColor extends CSSColorValue {
 	var colorSpace : CSSKeywordish;
 	var channels : Array<CSSColorPercent>;
 	var alpha : CSSNumberish;

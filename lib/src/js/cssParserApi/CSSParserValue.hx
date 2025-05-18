@@ -24,6 +24,6 @@
 
 package js.cssParserApi;
 
-extern class CSSParserValue {
+@:native("CSSParserValue") extern class CSSParserValue {
 
 }

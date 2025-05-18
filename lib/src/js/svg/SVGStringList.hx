@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGStringList {
+@:native("SVGStringList") extern class SVGStringList {
 	var length(default, null) : Int;
 	var numberOfItems(default, null) : Int;
 	/**

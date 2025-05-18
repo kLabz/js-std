@@ -24,6 +24,6 @@
 
 package js.reporting;
 
-extern class ReportBody {
+@:native("ReportBody") extern class ReportBody {
 	function toJSON():{ };
 }

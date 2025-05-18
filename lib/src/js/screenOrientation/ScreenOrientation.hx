@@ -24,7 +24,7 @@
 
 package js.screenOrientation;
 
-extern class ScreenOrientation extends js.dom.EventTarget {
+@:native("ScreenOrientation") extern class ScreenOrientation extends js.dom.EventTarget {
 	var type(default, null) : OrientationType;
 	var angle(default, null) : Int;
 	var onchange : js.html.EventHandler;

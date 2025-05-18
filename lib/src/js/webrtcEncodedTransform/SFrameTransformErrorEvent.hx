@@ -24,7 +24,7 @@
 
 package js.webrtcEncodedTransform;
 
-extern class SFrameTransformErrorEvent extends js.dom.Event {
+@:native("SFrameTransformErrorEvent") extern class SFrameTransformErrorEvent extends js.dom.Event {
 	var errorType(default, null) : SFrameTransformErrorEventType;
 	var keyID(default, null) : Null<CryptoKeyID>;
 	var frame(default, null) : Any;

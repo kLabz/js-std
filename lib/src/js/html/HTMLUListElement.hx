@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLUListElement extends HTMLElement {
+@:native("HTMLUListElement") extern class HTMLUListElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
 	**/

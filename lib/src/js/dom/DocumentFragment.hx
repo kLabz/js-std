@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class DocumentFragment extends Node {
+@:native("DocumentFragment") extern class DocumentFragment extends Node {
 	/**
 		From interface mixin ParentNode
 	**/

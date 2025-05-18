@@ -24,7 +24,7 @@
 
 package js.webglMultiDrawInstancedBaseVertexBaseInstance;
 
-extern class WEBGL_multi_draw_instanced_base_vertex_base_instance {
+@:native("WEBGL_multi_draw_instanced_base_vertex_base_instance") extern class WEBGL_multi_draw_instanced_base_vertex_base_instance {
 	function multiDrawArraysInstancedBaseInstanceWEBGL(mode:js.webgl1.GLenum, firstsList:haxe.extern.EitherType<Int32Array, Array<js.webgl1.GLint>>, firstsOffset:Float, countsList:haxe.extern.EitherType<Int32Array, Array<js.webgl1.GLsizei>>, countsOffset:Float, instanceCountsList:haxe.extern.EitherType<Int32Array, Array<js.webgl1.GLsizei>>, instanceCountsOffset:Float, baseInstancesList:haxe.extern.EitherType<Uint32Array, Array<js.webgl1.GLuint>>, baseInstancesOffset:Float, drawcount:js.webgl1.GLsizei):Void;
 	function multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode:js.webgl1.GLenum, countsList:haxe.extern.EitherType<Int32Array, Array<js.webgl1.GLsizei>>, countsOffset:Float, type:js.webgl1.GLenum, offsetsList:haxe.extern.EitherType<Int32Array, Array<js.webgl1.GLsizei>>, offsetsOffset:Float, instanceCountsList:haxe.extern.EitherType<Int32Array, Array<js.webgl1.GLsizei>>, instanceCountsOffset:Float, baseVerticesList:haxe.extern.EitherType<Int32Array, Array<js.webgl1.GLint>>, baseVerticesOffset:Float, baseInstancesList:haxe.extern.EitherType<Uint32Array, Array<js.webgl1.GLuint>>, baseInstancesOffset:Float, drawcount:js.webgl1.GLsizei):Void;
 }

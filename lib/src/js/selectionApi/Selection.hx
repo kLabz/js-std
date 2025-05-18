@@ -24,7 +24,7 @@
 
 package js.selectionApi;
 
-extern class Selection {
+@:native("Selection") extern class Selection {
 	var anchorNode(default, null) : Null<js.dom.Node>;
 	var anchorOffset(default, null) : Int;
 	var focusNode(default, null) : Null<js.dom.Node>;

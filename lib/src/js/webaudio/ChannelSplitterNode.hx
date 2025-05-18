@@ -24,6 +24,6 @@
 
 package js.webaudio;
 
-extern class ChannelSplitterNode extends AudioNode {
+@:native("ChannelSplitterNode") extern class ChannelSplitterNode extends AudioNode {
 	function new(context:BaseAudioContext, ?options:ChannelSplitterOptions = {  }):Void;
 }

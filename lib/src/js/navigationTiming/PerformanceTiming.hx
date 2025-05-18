@@ -24,7 +24,7 @@
 
 package js.navigationTiming;
 
-extern class PerformanceTiming {
+@:native("PerformanceTiming") extern class PerformanceTiming {
 	var navigationStart(default, null) : Float;
 	var unloadEventStart(default, null) : Float;
 	var unloadEventEnd(default, null) : Float;

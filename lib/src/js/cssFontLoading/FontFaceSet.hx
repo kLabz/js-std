@@ -27,7 +27,7 @@ package js.cssFontLoading;
 /**
 	TODO SetlikeDeclaration handling
 **/
-extern class FontFaceSet extends js.dom.EventTarget {
+@:native("FontFaceSet") extern class FontFaceSet extends js.dom.EventTarget {
 	var onloading : js.html.EventHandler;
 	var onloadingdone : js.html.EventHandler;
 	var onloadingerror : js.html.EventHandler;

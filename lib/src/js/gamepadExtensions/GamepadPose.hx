@@ -24,7 +24,7 @@
 
 package js.gamepadExtensions;
 
-extern class GamepadPose {
+@:native("GamepadPose") extern class GamepadPose {
 	var hasOrientation(default, null) : Bool;
 	var hasPosition(default, null) : Bool;
 	var position(default, null) : Null<Float32Array>;

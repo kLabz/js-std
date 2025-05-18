@@ -24,6 +24,6 @@
 
 package js.turtledove;
 
-extern class RealTimeReporting {
+@:native("RealTimeReporting") extern class RealTimeReporting {
 	function contributeToHistogram(contribution:RealTimeContribution):Void;
 }

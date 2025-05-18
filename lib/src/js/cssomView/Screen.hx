@@ -24,7 +24,7 @@
 
 package js.cssomView;
 
-extern class Screen {
+@:native("Screen") extern class Screen {
 	var availWidth(default, null) : Int;
 	var availHeight(default, null) : Int;
 	var width(default, null) : Int;

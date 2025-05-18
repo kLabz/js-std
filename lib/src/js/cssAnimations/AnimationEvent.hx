@@ -24,7 +24,7 @@
 
 package js.cssAnimations;
 
-extern class AnimationEvent extends js.dom.Event {
+@:native("AnimationEvent") extern class AnimationEvent extends js.dom.Event {
 	var animationName(default, null) : CSSOMString;
 	var elapsedTime(default, null) : Float;
 	var pseudoElement(default, null) : CSSOMString;

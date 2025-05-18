@@ -24,6 +24,6 @@
 
 package js.webgl2;
 
-extern class WebGLQuery extends js.webgl1.WebGLObject {
+@:native("WebGLQuery") extern class WebGLQuery extends js.webgl1.WebGLObject {
 
 }

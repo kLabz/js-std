@@ -24,7 +24,7 @@
 
 package js.notifications;
 
-extern class NotificationEvent extends js.serviceWorkers.ExtendableEvent {
+@:native("NotificationEvent") extern class NotificationEvent extends js.serviceWorkers.ExtendableEvent {
 	var notification(default, null) : Notification;
 	var action(default, null) : String;
 	function new(type:String, eventInitDict:NotificationEventInit):Void;

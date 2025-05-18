@@ -24,7 +24,7 @@
 
 package js.entriesApi;
 
-extern class FileSystemDirectoryEntry extends FileSystemEntry {
+@:native("FileSystemDirectoryEntry") extern class FileSystemDirectoryEntry extends FileSystemEntry {
 	function createReader():FileSystemDirectoryReader;
 	function getDirectory(?path:Null<String>, ?options:FileSystemFlags = {  }, ?successCallback:FileSystemEntryCallback, ?errorCallback:ErrorCallback):Void;
 	function getFile(?path:Null<String>, ?options:FileSystemFlags = {  }, ?successCallback:FileSystemEntryCallback, ?errorCallback:ErrorCallback):Void;

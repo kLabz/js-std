@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class AudioParam {
+@:native("AudioParam") extern class AudioParam {
 	var value : Float;
 	var automationRate : AutomationRate;
 	var defaultValue(default, null) : Float;

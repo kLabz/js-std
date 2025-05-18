@@ -24,7 +24,7 @@
 
 package js.filterEffects;
 
-extern class SVGFEDropShadowElement extends js.svg.SVGElement {
+@:native("SVGFEDropShadowElement") extern class SVGFEDropShadowElement extends js.svg.SVGElement {
 	var in1(default, null) : js.svg.SVGAnimatedString;
 	var dx(default, null) : js.svg.SVGAnimatedNumber;
 	var dy(default, null) : js.svg.SVGAnimatedNumber;

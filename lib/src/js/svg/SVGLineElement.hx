@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGLineElement extends SVGGeometryElement {
+@:native("SVGLineElement") extern class SVGLineElement extends SVGGeometryElement {
 	var x1(default, null) : SVGAnimatedLength;
 	var y1(default, null) : SVGAnimatedLength;
 	var x2(default, null) : SVGAnimatedLength;

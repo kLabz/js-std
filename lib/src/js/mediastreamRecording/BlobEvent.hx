@@ -24,7 +24,7 @@
 
 package js.mediastreamRecording;
 
-extern class BlobEvent extends js.dom.Event {
+@:native("BlobEvent") extern class BlobEvent extends js.dom.Event {
 	var data(default, null) : js.fileapi.Blob;
 	var timecode(default, null) : js.hrTime.DOMHighResTimeStamp;
 	function new(type:String, eventInitDict:BlobEventInit):Void;

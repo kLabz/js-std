@@ -24,6 +24,6 @@
 
 package js.indexeddb;
 
-extern class IDBCursorWithValue extends IDBCursor {
+@:native("IDBCursorWithValue") extern class IDBCursorWithValue extends IDBCursor {
 	var value(default, null) : Any;
 }

@@ -24,6 +24,6 @@
 
 package js.webrtcEncodedTransform;
 
-extern class RTCRtpScriptTransform {
+@:native("RTCRtpScriptTransform") extern class RTCRtpScriptTransform {
 	function new(worker:js.html.Worker, ?options:Any, ?transfer:Array<{ }>):Void;
 }

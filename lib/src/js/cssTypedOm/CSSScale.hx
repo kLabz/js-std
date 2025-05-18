@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSScale extends CSSTransformComponent {
+@:native("CSSScale") extern class CSSScale extends CSSTransformComponent {
 	var x : CSSNumberish;
 	var y : CSSNumberish;
 	var z : CSSNumberish;

@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class PluginArray {
+@:native("PluginArray") extern class PluginArray {
 	var length(default, null) : Int;
 	function item(index:Int):Null<Plugin>;
 	function namedItem(name:String):Null<Plugin>;

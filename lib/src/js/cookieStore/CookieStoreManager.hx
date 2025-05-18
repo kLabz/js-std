@@ -24,7 +24,7 @@
 
 package js.cookieStore;
 
-extern class CookieStoreManager {
+@:native("CookieStoreManager") extern class CookieStoreManager {
 	function getSubscriptions():js.lib.Promise<Array<CookieStoreGetOptions>>;
 	function subscribe(subscriptions:Array<CookieStoreGetOptions>):js.lib.Promise<Void>;
 	function unsubscribe(subscriptions:Array<CookieStoreGetOptions>):js.lib.Promise<Void>;

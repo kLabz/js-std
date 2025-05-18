@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class ImageBitmap {
+@:native("ImageBitmap") extern class ImageBitmap {
 	var width(default, null) : Int;
 	var height(default, null) : Int;
 	function close():Void;

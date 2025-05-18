@@ -24,7 +24,7 @@
 
 package js.webauthn;
 
-extern class PublicKeyCredential extends js.credentialManagement.Credential {
+@:native("PublicKeyCredential") extern class PublicKeyCredential extends js.credentialManagement.Credential {
 	var rawId(default, null) : ArrayBuffer;
 	var response(default, null) : AuthenticatorResponse;
 	var authenticatorAttachment(default, null) : Null<String>;

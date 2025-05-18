@@ -24,7 +24,7 @@
 
 package js.csp;
 
-extern class CSPViolationReportBody extends js.reporting.ReportBody {
+@:native("CSPViolationReportBody") extern class CSPViolationReportBody extends js.reporting.ReportBody {
 	var documentURL(default, null) : String;
 	var referrer(default, null) : Null<String>;
 	var blockedURL(default, null) : Null<String>;

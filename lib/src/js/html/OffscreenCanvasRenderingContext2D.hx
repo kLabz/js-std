@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class OffscreenCanvasRenderingContext2D {
+@:native("OffscreenCanvasRenderingContext2D") extern class OffscreenCanvasRenderingContext2D {
 	var canvas(default, null) : OffscreenCanvas;
 	/**
 		From interface mixin CanvasCompositing

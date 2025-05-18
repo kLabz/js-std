@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class Range extends AbstractRange {
+@:native("Range") extern class Range extends AbstractRange {
 	var commonAncestorContainer(default, null) : Node;
 	static inline var START_TO_START : Int = 0;
 	static inline var START_TO_END : Int = 1;

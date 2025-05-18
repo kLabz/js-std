@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class MediaElementAudioSourceNode extends AudioNode {
+@:native("MediaElementAudioSourceNode") extern class MediaElementAudioSourceNode extends AudioNode {
 	var mediaElement(default, null) : js.html.HTMLMediaElement;
 	function new(context:AudioContext, options:MediaElementAudioSourceOptions):Void;
 }

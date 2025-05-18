@@ -24,7 +24,7 @@
 
 package js.localFontAccess;
 
-extern class FontData {
+@:native("FontData") extern class FontData {
 	var postscriptName(default, null) : String;
 	var fullName(default, null) : String;
 	var family(default, null) : String;

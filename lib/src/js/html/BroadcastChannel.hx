@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class BroadcastChannel extends js.dom.EventTarget {
+@:native("BroadcastChannel") extern class BroadcastChannel extends js.dom.EventTarget {
 	var name(default, null) : String;
 	var onmessage : EventHandler;
 	var onmessageerror : EventHandler;

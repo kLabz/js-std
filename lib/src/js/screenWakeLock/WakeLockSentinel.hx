@@ -24,7 +24,7 @@
 
 package js.screenWakeLock;
 
-extern class WakeLockSentinel extends js.dom.EventTarget {
+@:native("WakeLockSentinel") extern class WakeLockSentinel extends js.dom.EventTarget {
 	var released(default, null) : Bool;
 	var type(default, null) : WakeLockType;
 	var onrelease : js.html.EventHandler;

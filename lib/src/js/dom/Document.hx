@@ -27,7 +27,7 @@ package js.dom;
 /**
 	TODO ArrayAccess<> for tkey=String tvalue=TAnonymous([])
 **/
-extern class Document extends Node {
+@:native("Document") extern class Document extends Node {
 	var implementation(default, null) : DOMImplementation;
 	var URL(default, null) : String;
 	var documentURI(default, null) : String;

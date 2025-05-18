@@ -24,7 +24,7 @@
 
 package js.webgpu;
 
-extern class GPURenderBundle {
+@:native("GPURenderBundle") extern class GPURenderBundle {
 	/**
 		From interface mixin GPUObjectBase
 	**/

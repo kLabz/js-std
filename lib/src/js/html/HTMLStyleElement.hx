@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLStyleElement extends HTMLElement {
+@:native("HTMLStyleElement") extern class HTMLStyleElement extends HTMLElement {
 	var disabled : Bool;
 	var media : String;
 	var blocking(default, null) : js.dom.DOMTokenList;

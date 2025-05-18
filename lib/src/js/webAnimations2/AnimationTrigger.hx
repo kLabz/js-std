@@ -24,7 +24,7 @@
 
 package js.webAnimations2;
 
-extern class AnimationTrigger {
+@:native("AnimationTrigger") extern class AnimationTrigger {
 	var timeline : js.webAnimations.AnimationTimeline;
 	var type : AnimationTriggerType;
 	var rangeStart : Any;

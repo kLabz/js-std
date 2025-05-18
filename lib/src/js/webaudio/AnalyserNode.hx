@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class AnalyserNode extends AudioNode {
+@:native("AnalyserNode") extern class AnalyserNode extends AudioNode {
 	var fftSize : Int;
 	var frequencyBinCount(default, null) : Int;
 	var minDecibels : Float;

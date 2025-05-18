@@ -24,6 +24,6 @@
 
 package js.html;
 
-extern class RadioNodeList extends js.dom.NodeList {
+@:native("RadioNodeList") extern class RadioNodeList extends js.dom.NodeList {
 	var value : String;
 }

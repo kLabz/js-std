@@ -24,6 +24,6 @@
 
 package js.khrParallelShaderCompile;
 
-extern class KHR_parallel_shader_compile {
+@:native("KHR_parallel_shader_compile") extern class KHR_parallel_shader_compile {
 	static inline var COMPLETION_STATUS_KHR : js.webgl1.GLenum = 0x91B1;
 }

@@ -24,7 +24,7 @@
 
 package js.webxr;
 
-extern class XRInputSourcesChangeEvent extends js.dom.Event {
+@:native("XRInputSourcesChangeEvent") extern class XRInputSourcesChangeEvent extends js.dom.Event {
 	var session(default, null) : XRSession;
 	var added(default, null) : Array<XRInputSource>;
 	var removed(default, null) : Array<XRInputSource>;

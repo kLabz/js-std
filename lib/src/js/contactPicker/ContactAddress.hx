@@ -24,7 +24,7 @@
 
 package js.contactPicker;
 
-extern class ContactAddress {
+@:native("ContactAddress") extern class ContactAddress {
 	var city(default, null) : String;
 	var country(default, null) : String;
 	var dependentLocality(default, null) : String;

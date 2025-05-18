@@ -24,7 +24,7 @@
 
 package js.dom;
 
-extern class Attr extends Node {
+@:native("Attr") extern class Attr extends Node {
 	var namespaceURI(default, null) : Null<String>;
 	var prefix(default, null) : Null<String>;
 	var localName(default, null) : String;

@@ -24,7 +24,7 @@
 
 package js.serviceWorkers;
 
-extern class ServiceWorkerContainer extends js.dom.EventTarget {
+@:native("ServiceWorkerContainer") extern class ServiceWorkerContainer extends js.dom.EventTarget {
 	var controller(default, null) : Null<ServiceWorker>;
 	var ready(default, null) : js.lib.Promise<ServiceWorkerRegistration>;
 	var oncontrollerchange : js.html.EventHandler;

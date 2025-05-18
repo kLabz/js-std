@@ -24,7 +24,7 @@
 
 package js.svg;
 
-extern class SVGAnimatedLengthList {
+@:native("SVGAnimatedLengthList") extern class SVGAnimatedLengthList {
 	var baseVal(default, null) : SVGLengthList;
 	var animVal(default, null) : SVGLengthList;
 }

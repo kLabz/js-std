@@ -24,7 +24,7 @@
 
 package js.webhid;
 
-extern class HIDConnectionEvent extends js.dom.Event {
+@:native("HIDConnectionEvent") extern class HIDConnectionEvent extends js.dom.Event {
 	var device(default, null) : HIDDevice;
 	function new(type:String, eventInitDict:HIDConnectionEventInit):Void;
 }

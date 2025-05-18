@@ -24,7 +24,7 @@
 
 package js.webcodecs;
 
-extern class VideoDecoder extends js.dom.EventTarget {
+@:native("VideoDecoder") extern class VideoDecoder extends js.dom.EventTarget {
 	var state(default, null) : CodecState;
 	var decodeQueueSize(default, null) : Int;
 	var ondequeue : js.html.EventHandler;

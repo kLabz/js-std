@@ -24,6 +24,6 @@
 
 package js.webxr;
 
-extern class XRSpace extends js.dom.EventTarget {
+@:native("XRSpace") extern class XRSpace extends js.dom.EventTarget {
 
 }

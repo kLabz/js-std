@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSVariableReferenceValue {
+@:native("CSSVariableReferenceValue") extern class CSSVariableReferenceValue {
 	var variable : String;
 	var fallback(default, null) : Null<CSSUnparsedValue>;
 	function new(variable:String, ?fallback:Null<CSSUnparsedValue> = null):Void;

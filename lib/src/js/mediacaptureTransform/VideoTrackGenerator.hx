@@ -24,7 +24,7 @@
 
 package js.mediacaptureTransform;
 
-extern class VideoTrackGenerator {
+@:native("VideoTrackGenerator") extern class VideoTrackGenerator {
 	var writable(default, null) : js.streams.WritableStream;
 	var muted : Bool;
 	var track(default, null) : js.mediacaptureStreams.MediaStreamTrack;

@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class HTMLDataElement extends HTMLElement {
+@:native("HTMLDataElement") extern class HTMLDataElement extends HTMLElement {
 	var value : String;
 	function new():Void;
 }

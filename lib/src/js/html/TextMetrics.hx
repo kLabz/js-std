@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class TextMetrics {
+@:native("TextMetrics") extern class TextMetrics {
 	var width(default, null) : Float;
 	var actualBoundingBoxLeft(default, null) : Float;
 	var actualBoundingBoxRight(default, null) : Float;

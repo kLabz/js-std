@@ -24,7 +24,7 @@
 
 package js.angleInstancedArrays;
 
-extern class ANGLE_instanced_arrays {
+@:native("ANGLE_instanced_arrays") extern class ANGLE_instanced_arrays {
 	static inline var VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE : js.webgl1.GLenum = 0x88FE;
 	function drawArraysInstancedANGLE(mode:js.webgl1.GLenum, first:js.webgl1.GLint, count:js.webgl1.GLsizei, primcount:js.webgl1.GLsizei):Void;
 	function drawElementsInstancedANGLE(mode:js.webgl1.GLenum, count:js.webgl1.GLsizei, type:js.webgl1.GLenum, offset:js.webgl1.GLintptr, primcount:js.webgl1.GLsizei):Void;

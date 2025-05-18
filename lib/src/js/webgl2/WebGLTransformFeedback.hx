@@ -24,6 +24,6 @@
 
 package js.webgl2;
 
-extern class WebGLTransformFeedback extends js.webgl1.WebGLObject {
+@:native("WebGLTransformFeedback") extern class WebGLTransformFeedback extends js.webgl1.WebGLObject {
 
 }

@@ -24,14 +24,14 @@
 
 package js.sharedStorage;
 
-extern class SharedStorage {
+@:native("SharedStorage") extern class SharedStorage {
 	var worklet(default, null) : SharedStorageWorklet;
 	function append(key:String, value:String, ?options:SharedStorageModifierMethodOptions = {  }):js.lib.Promise<Any>;
 	function batchUpdate(methods:Array<SharedStorageModifierMethod>, ?options:SharedStorageModifierMethodOptions = {  }):js.lib.Promise<Any>;
 	function clear(?options:SharedStorageModifierMethodOptions = {  }):js.lib.Promise<Any>;
 	function createWorklet(moduleURL:String, ?options:SharedStorageWorkletOptions = {  }):js.lib.Promise<SharedStorageWorklet>;
 	function delete(key:String, ?options:SharedStorageModifierMethodOptions = {  }):js.lib.Promise<Any>;
-	function entries():Iterator<Array<Dynamic>>;
+	function entries():Iterator<js.lib.Tuple<String, String>>;
 	function get(key:String):js.lib.Promise<String>;
 	function keys():Iterator<String>;
 	function length():js.lib.Promise<Int>;

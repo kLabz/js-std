@@ -24,7 +24,7 @@
 
 package js.filterEffects;
 
-extern class SVGFESpotLightElement extends js.svg.SVGElement {
+@:native("SVGFESpotLightElement") extern class SVGFESpotLightElement extends js.svg.SVGElement {
 	var x(default, null) : js.svg.SVGAnimatedNumber;
 	var y(default, null) : js.svg.SVGAnimatedNumber;
 	var z(default, null) : js.svg.SVGAnimatedNumber;

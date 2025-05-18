@@ -24,7 +24,7 @@
 
 package js.filterEffects;
 
-extern class SVGFEMorphologyElement extends js.svg.SVGElement {
+@:native("SVGFEMorphologyElement") extern class SVGFEMorphologyElement extends js.svg.SVGElement {
 	static inline var SVG_MORPHOLOGY_OPERATOR_UNKNOWN : Int = 0;
 	static inline var SVG_MORPHOLOGY_OPERATOR_ERODE : Int = 1;
 	static inline var SVG_MORPHOLOGY_OPERATOR_DILATE : Int = 2;

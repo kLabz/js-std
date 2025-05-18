@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class ScriptProcessorNode extends AudioNode {
+@:native("ScriptProcessorNode") extern class ScriptProcessorNode extends AudioNode {
 	var onaudioprocess : js.html.EventHandler;
 	var bufferSize(default, null) : Int;
 }

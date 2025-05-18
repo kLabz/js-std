@@ -24,6 +24,6 @@
 
 package js.cssTransitions2;
 
-extern class CSSStartingStyleRule extends js.cssom.CSSGroupingRule {
+@:native("CSSStartingStyleRule") extern class CSSStartingStyleRule extends js.cssom.CSSGroupingRule {
 
 }

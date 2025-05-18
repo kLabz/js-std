@@ -24,7 +24,7 @@
 
 package js.digitalGoods;
 
-extern class DigitalGoodsService {
+@:native("DigitalGoodsService") extern class DigitalGoodsService {
 	function consume(purchaseToken:String):js.lib.Promise<Void>;
 	function getDetails(itemIds:Array<String>):js.lib.Promise<Array<ItemDetails>>;
 	function listPurchaseHistory():js.lib.Promise<Array<PurchaseDetails>>;

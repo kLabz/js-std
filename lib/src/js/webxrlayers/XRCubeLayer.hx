@@ -24,7 +24,7 @@
 
 package js.webxrlayers;
 
-extern class XRCubeLayer extends XRCompositionLayer {
+@:native("XRCubeLayer") extern class XRCubeLayer extends XRCompositionLayer {
 	var space : js.webxr.XRSpace;
 	var orientation : js.geometry.DOMPointReadOnly;
 	var onredraw : js.html.EventHandler;

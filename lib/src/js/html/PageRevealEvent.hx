@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class PageRevealEvent extends js.dom.Event {
+@:native("PageRevealEvent") extern class PageRevealEvent extends js.dom.Event {
 	var viewTransition(default, null) : Null<js.cssViewTransitions.ViewTransition>;
 	function new(type:String, ?eventInitDict:PageRevealEventInit = {  }):Void;
 }

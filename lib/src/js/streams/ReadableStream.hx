@@ -24,7 +24,7 @@
 
 package js.streams;
 
-extern class ReadableStream {
+@:native("ReadableStream") extern class ReadableStream {
 	var locked(default, null) : Bool;
 	function new(?underlyingSource:{ }, ?strategy:QueuingStrategy = {  }):Void;
 	function cancel(?reason:Any):js.lib.Promise<Void>;

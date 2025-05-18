@@ -24,7 +24,7 @@
 
 package js.jsSelfProfiling;
 
-extern class Profiler extends js.dom.EventTarget {
+@:native("Profiler") extern class Profiler extends js.dom.EventTarget {
 	var sampleInterval(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var stopped(default, null) : Bool;
 	function new(options:ProfilerInitOptions):Void;

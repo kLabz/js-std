@@ -24,7 +24,7 @@
 
 package js.longtasks;
 
-extern class TaskAttributionTiming extends js.performanceTimeline.PerformanceEntry {
+@:native("TaskAttributionTiming") extern class TaskAttributionTiming extends js.performanceTimeline.PerformanceEntry {
 	var startTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var duration(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var name(default, null) : String;

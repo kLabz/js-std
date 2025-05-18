@@ -24,7 +24,7 @@
 
 package js.fontMetricsApi;
 
-extern class Baseline {
+@:native("Baseline") extern class Baseline {
 	var name(default, null) : String;
 	var value(default, null) : Float;
 }

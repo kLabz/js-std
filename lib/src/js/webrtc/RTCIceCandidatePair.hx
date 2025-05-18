@@ -24,7 +24,7 @@
 
 package js.webrtc;
 
-extern class RTCIceCandidatePair {
+@:native("RTCIceCandidatePair") extern class RTCIceCandidatePair {
 	var local(default, null) : RTCIceCandidate;
 	var remote(default, null) : RTCIceCandidate;
 }

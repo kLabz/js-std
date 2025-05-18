@@ -24,7 +24,7 @@
 
 package js.editContext;
 
-extern class TextFormatUpdateEvent extends js.dom.Event {
+@:native("TextFormatUpdateEvent") extern class TextFormatUpdateEvent extends js.dom.Event {
 	function new(type:String, ?options:TextFormatUpdateEventInit = {  }):Void;
 	function getTextFormats():Array<TextFormat>;
 }

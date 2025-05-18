@@ -24,7 +24,7 @@
 
 package js.webusb;
 
-extern class USB extends js.dom.EventTarget {
+@:native("USB") extern class USB extends js.dom.EventTarget {
 	var onconnect : js.html.EventHandler;
 	var ondisconnect : js.html.EventHandler;
 	function getDevices():js.lib.Promise<Array<USBDevice>>;

@@ -24,7 +24,7 @@
 
 package js.html;
 
-extern class External {
+@:native("External") extern class External {
 	function AddSearchProvider():Void;
 	function IsSearchProviderInstalled():Void;
 }

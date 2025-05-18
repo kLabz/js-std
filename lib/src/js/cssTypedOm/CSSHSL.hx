@@ -24,7 +24,7 @@
 
 package js.cssTypedOm;
 
-extern class CSSHSL extends CSSColorValue {
+@:native("CSSHSL") extern class CSSHSL extends CSSColorValue {
 	var h : CSSColorAngle;
 	var s : CSSColorPercent;
 	var l : CSSColorPercent;

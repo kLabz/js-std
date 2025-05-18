@@ -24,7 +24,7 @@
 
 package js.streams;
 
-extern class ReadableStreamDefaultController {
+@:native("ReadableStreamDefaultController") extern class ReadableStreamDefaultController {
 	var desiredSize(default, null) : Null<Float>;
 	function close():Void;
 	function enqueue(?chunk:Any):Void;

@@ -24,7 +24,7 @@
 
 package js.indexeddb;
 
-extern class IDBFactory {
+@:native("IDBFactory") extern class IDBFactory {
 	function cmp(first:Any, second:Any):Int;
 	function databases():js.lib.Promise<Array<IDBDatabaseInfo>>;
 	function deleteDatabase(name:String):IDBOpenDBRequest;

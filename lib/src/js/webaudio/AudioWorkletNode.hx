@@ -24,7 +24,7 @@
 
 package js.webaudio;
 
-extern class AudioWorkletNode extends AudioNode {
+@:native("AudioWorkletNode") extern class AudioWorkletNode extends AudioNode {
 	var parameters(default, null) : AudioParamMap;
 	var port(default, null) : js.html.MessagePort;
 	var onprocessorerror : js.html.EventHandler;

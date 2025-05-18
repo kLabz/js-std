@@ -24,6 +24,6 @@
 
 package js.webrtcEncodedTransform;
 
-extern class RTCTransformEvent extends js.dom.Event {
+@:native("RTCTransformEvent") extern class RTCTransformEvent extends js.dom.Event {
 	var transformer(default, null) : RTCRtpScriptTransformer;
 }

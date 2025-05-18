@@ -27,6 +27,6 @@ package js.webBluetooth;
 /**
 	TODO MaplikeDeclaration handling
 **/
-extern class BluetoothManufacturerDataMap {
+@:native("BluetoothManufacturerDataMap") extern class BluetoothManufacturerDataMap {
 
 }

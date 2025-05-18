@@ -24,7 +24,7 @@
 
 package js.cssLayoutApi;
 
-extern class ChildBreakToken {
+@:native("ChildBreakToken") extern class ChildBreakToken {
 	var breakType(default, null) : BreakType;
 	var child(default, null) : LayoutChild;
 }

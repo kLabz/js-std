@@ -24,7 +24,7 @@
 
 package js.contentIndex;
 
-extern class ContentIndexEvent extends js.serviceWorkers.ExtendableEvent {
+@:native("ContentIndexEvent") extern class ContentIndexEvent extends js.serviceWorkers.ExtendableEvent {
 	var id(default, null) : String;
 	function new(type:String, init:ContentIndexEventInit):Void;
 }

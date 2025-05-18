@@ -24,7 +24,7 @@
 
 package js.webtransport;
 
-extern class WebTransport {
+@:native("WebTransport") extern class WebTransport {
 	var ready(default, null) : js.lib.Promise<Void>;
 	var reliability(default, null) : WebTransportReliabilityMode;
 	var congestionControl(default, null) : WebTransportCongestionControl;

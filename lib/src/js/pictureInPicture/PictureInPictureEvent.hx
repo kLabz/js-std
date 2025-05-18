@@ -24,7 +24,7 @@
 
 package js.pictureInPicture;
 
-extern class PictureInPictureEvent extends js.dom.Event {
+@:native("PictureInPictureEvent") extern class PictureInPictureEvent extends js.dom.Event {
 	var pictureInPictureWindow(default, null) : PictureInPictureWindow;
 	function new(type:String, eventInitDict:PictureInPictureEventInit):Void;
 }

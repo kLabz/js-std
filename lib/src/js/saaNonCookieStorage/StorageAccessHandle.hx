@@ -24,7 +24,7 @@
 
 package js.saaNonCookieStorage;
 
-extern class StorageAccessHandle {
+@:native("StorageAccessHandle") extern class StorageAccessHandle {
 	var sessionStorage(default, null) : js.html.Storage;
 	var localStorage(default, null) : js.html.Storage;
 	var indexedDB(default, null) : js.indexeddb.IDBFactory;

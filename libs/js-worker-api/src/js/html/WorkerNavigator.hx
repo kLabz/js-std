@@ -94,13 +94,13 @@ package js.html;
 	**/
 	var connection(default, null) : js.netinfo.NetworkInformation;
 	/**
-		From interface mixin NavigatorStorage
-	**/
-	var storage(default, null) : js.storage.StorageManager;
-	/**
 		From interface mixin NavigatorStorageBuckets
 	**/
 	var storageBuckets(default, null) : js.storageBuckets.StorageBucketManager;
+	/**
+		From interface mixin NavigatorStorage
+	**/
+	var storage(default, null) : js.storage.StorageManager;
 	/**
 		From interface mixin NavigatorUA
 	**/
@@ -128,16 +128,16 @@ package js.html;
 	**/
 	var permissions(default, null) : js.permissions.Permissions;
 	/**
-		From partial interface in serial.idl
-		Unhandled extended attribute SameObject
-	**/
-	var serial(default, null) : js.serial.Serial;
-	/**
 		From partial interface in service-workers.idl
 		Unhandled extended attribute SecureContext
 		Unhandled extended attribute SameObject
 	**/
 	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
+	/**
+		From partial interface in serial.idl
+		Unhandled extended attribute SameObject
+	**/
+	var serial(default, null) : js.serial.Serial;
 	/**
 		From partial interface in webhid.idl
 		Unhandled extended attribute SameObject

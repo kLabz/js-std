@@ -47,6 +47,10 @@ package js.dom;
 	var shadowRoot(default, null) : Null<ShadowRoot>;
 	var customElementRegistry(default, null) : Null<js.html.CustomElementRegistry>;
 	/**
+		From interface mixin Region
+	**/
+	var regionOverset(default, null) : CSSOMString;
+	/**
 		From interface mixin ParentNode
 	**/
 	var children(default, null) : HTMLCollection;
@@ -74,10 +78,6 @@ package js.dom;
 		From interface mixin Slottable
 	**/
 	var assignedSlot(default, null) : Null<js.html.HTMLSlotElement>;
-	/**
-		From interface mixin Region
-	**/
-	var regionOverset(default, null) : CSSOMString;
 	/**
 		From interface mixin ARIAMixin
 	**/

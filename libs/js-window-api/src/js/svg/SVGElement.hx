@@ -34,22 +34,6 @@ package js.svg;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onanimationstart : js.html.EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onanimationiteration : js.html.EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onanimationend : js.html.EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onanimationcancel : js.html.EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
 	var onsnapchanged : js.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -71,6 +55,22 @@ package js.svg;
 		From interface mixin GlobalEventHandlers
 	**/
 	var ontransitioncancel : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationstart : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationiteration : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationend : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationcancel : js.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/

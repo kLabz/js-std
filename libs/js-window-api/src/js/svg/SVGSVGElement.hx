@@ -59,14 +59,6 @@ package js.svg;
 	/**
 		From interface mixin WindowEventHandlers
 	**/
-	var ongamepadconnected : js.html.EventHandler;
-	/**
-		From interface mixin WindowEventHandlers
-	**/
-	var ongamepaddisconnected : js.html.EventHandler;
-	/**
-		From interface mixin WindowEventHandlers
-	**/
 	var onafterprint : js.html.EventHandler;
 	/**
 		From interface mixin WindowEventHandlers
@@ -136,6 +128,14 @@ package js.svg;
 		From interface mixin WindowEventHandlers
 	**/
 	var onunload : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ongamepadconnected : js.html.EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ongamepaddisconnected : js.html.EventHandler;
 	/**
 		From interface mixin WindowEventHandlers
 	**/

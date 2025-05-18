@@ -104,22 +104,6 @@ package js.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onanimationstart : EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onanimationiteration : EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onanimationend : EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onanimationcancel : EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
 	var onsnapchanged : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -141,6 +125,22 @@ package js.html;
 		From interface mixin GlobalEventHandlers
 	**/
 	var ontransitioncancel : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationstart : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationiteration : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationend : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationcancel : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -524,14 +524,6 @@ package js.html;
 	/**
 		From interface mixin WindowEventHandlers
 	**/
-	var ongamepadconnected : EventHandler;
-	/**
-		From interface mixin WindowEventHandlers
-	**/
-	var ongamepaddisconnected : EventHandler;
-	/**
-		From interface mixin WindowEventHandlers
-	**/
 	var onafterprint : EventHandler;
 	/**
 		From interface mixin WindowEventHandlers
@@ -601,6 +593,14 @@ package js.html;
 		From interface mixin WindowEventHandlers
 	**/
 	var onunload : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ongamepadconnected : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ongamepaddisconnected : EventHandler;
 	/**
 		From interface mixin WindowEventHandlers
 	**/

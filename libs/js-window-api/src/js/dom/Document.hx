@@ -70,11 +70,11 @@ package js.dom;
 	/**
 		From interface mixin DocumentOrShadowRoot
 	**/
-	var pointerLockElement(default, null) : Null<Element>;
+	var pictureInPictureElement(default, null) : Null<Element>;
 	/**
 		From interface mixin DocumentOrShadowRoot
 	**/
-	var pictureInPictureElement(default, null) : Null<Element>;
+	var pointerLockElement(default, null) : Null<Element>;
 	/**
 		From interface mixin ParentNode
 		Unhandled extended attribute SameObject
@@ -92,22 +92,6 @@ package js.dom;
 		From interface mixin ParentNode
 	**/
 	var childElementCount(default, null) : Int;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onanimationstart : js.html.EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onanimationiteration : js.html.EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onanimationend : js.html.EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onanimationcancel : js.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -132,6 +116,22 @@ package js.dom;
 		From interface mixin GlobalEventHandlers
 	**/
 	var ontransitioncancel : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationstart : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationiteration : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationend : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationcancel : js.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -517,13 +517,13 @@ package js.dom;
 	**/
 	var rootElement(default, null) : Null<js.svg.SVGSVGElement>;
 	/**
-		From partial interface in cssom-view.idl
-	**/
-	var scrollingElement(default, null) : Null<Element>;
-	/**
 		From partial interface in css-regions.idl
 	**/
 	var namedFlows(default, null) : js.cssRegions.NamedFlowMap;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var scrollingElement(default, null) : Null<Element>;
 	/**
 		From partial interface in fullscreen.idl
 		Unhandled extended attribute LegacyLenientSetter
@@ -697,6 +697,10 @@ package js.dom;
 	**/
 	var permissionsPolicy(default, null) : js.permissionsPolicy.PermissionsPolicy;
 	/**
+		From partial interface in picture-in-picture.idl
+	**/
+	var pictureInPictureEnabled(default, null) : Bool;
+	/**
 		From partial interface in pointerlock.idl
 	**/
 	var onpointerlockchange : js.html.EventHandler;
@@ -704,10 +708,6 @@ package js.dom;
 		From partial interface in pointerlock.idl
 	**/
 	var onpointerlockerror : js.html.EventHandler;
-	/**
-		From partial interface in picture-in-picture.idl
-	**/
-	var pictureInPictureEnabled(default, null) : Bool;
 	/**
 		From partial interface in prerendering-revamped.idl
 	**/

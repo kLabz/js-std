@@ -28,14 +28,6 @@ package js.html;
 	/**
 		From interface mixin WindowEventHandlers
 	**/
-	var ongamepadconnected : EventHandler;
-	/**
-		From interface mixin WindowEventHandlers
-	**/
-	var ongamepaddisconnected : EventHandler;
-	/**
-		From interface mixin WindowEventHandlers
-	**/
 	var onafterprint : EventHandler;
 	/**
 		From interface mixin WindowEventHandlers
@@ -105,6 +97,14 @@ package js.html;
 		From interface mixin WindowEventHandlers
 	**/
 	var onunload : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ongamepadconnected : EventHandler;
+	/**
+		From interface mixin WindowEventHandlers
+	**/
+	var ongamepaddisconnected : EventHandler;
 	/**
 		From interface mixin WindowEventHandlers
 	**/

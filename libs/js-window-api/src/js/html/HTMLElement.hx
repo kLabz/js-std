@@ -52,22 +52,6 @@ package js.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onanimationstart : EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onanimationiteration : EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onanimationend : EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onanimationcancel : EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
 	var onsnapchanged : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -89,6 +73,22 @@ package js.html;
 		From interface mixin GlobalEventHandlers
 	**/
 	var ontransitioncancel : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationstart : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationiteration : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationend : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onanimationcancel : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/

@@ -55,11 +55,11 @@ package js.dom;
 	/**
 		From interface mixin DocumentOrShadowRoot
 	**/
-	var pointerLockElement(default, null) : Null<Element>;
+	var pictureInPictureElement(default, null) : Null<Element>;
 	/**
 		From interface mixin DocumentOrShadowRoot
 	**/
-	var pictureInPictureElement(default, null) : Null<Element>;
+	var pointerLockElement(default, null) : Null<Element>;
 	/**
 		From partial interface in html.idl
 	**/

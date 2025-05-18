@@ -757,6 +757,12 @@ package js.html;
 	**/
 	var devicePixelRatio(default, null) : Float;
 	/**
+		From partial interface in document-picture-in-picture.idl
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute SecureContext
+	**/
+	var documentPictureInPicture(default, null) : js.documentPictureInPicture.DocumentPictureInPicture;
+	/**
 		From partial interface in dom.idl
 		Unhandled extended attribute Replaceable
 	**/
@@ -765,12 +771,6 @@ package js.html;
 		From partial interface in fenced-frame.idl
 	**/
 	var fence(default, null) : Null<js.fencedFrame.Fence>;
-	/**
-		From partial interface in document-picture-in-picture.idl
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute SecureContext
-	**/
-	var documentPictureInPicture(default, null) : js.documentPictureInPicture.DocumentPictureInPicture;
 	/**
 		From partial interface in html.idl
 		Unhandled extended attribute Replaceable

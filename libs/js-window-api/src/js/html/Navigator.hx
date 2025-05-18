@@ -117,15 +117,15 @@ package js.html;
 	**/
 	var connection(default, null) : js.netinfo.NetworkInformation;
 	/**
-		From interface mixin NavigatorStorage
-		Unhandled extended attribute SameObject
-	**/
-	var storage(default, null) : js.storage.StorageManager;
-	/**
 		From interface mixin NavigatorStorageBuckets
 		Unhandled extended attribute SameObject
 	**/
 	var storageBuckets(default, null) : js.storageBuckets.StorageBucketManager;
+	/**
+		From interface mixin NavigatorStorage
+		Unhandled extended attribute SameObject
+	**/
+	var storage(default, null) : js.storage.StorageManager;
 	/**
 		From interface mixin NavigatorUA
 		Unhandled extended attribute SecureContext
@@ -189,11 +189,6 @@ package js.html;
 	**/
 	var ink(default, null) : js.inkEnhancement.Ink;
 	/**
-		From partial interface in html.idl
-		Unhandled extended attribute SameObject
-	**/
-	var userActivation(default, null) : UserActivation;
-	/**
 		From partial interface in is-input-pending.idl
 	**/
 	var scheduling(default, null) : js.isInputPending.Scheduling;
@@ -203,6 +198,11 @@ package js.html;
 		Unhandled extended attribute SameObject
 	**/
 	var keyboard(default, null) : js.keyboardLock.Keyboard;
+	/**
+		From partial interface in html.idl
+		Unhandled extended attribute SameObject
+	**/
+	var userActivation(default, null) : UserActivation;
 	/**
 		From partial interface in login-status.idl
 		Unhandled extended attribute SecureContext
@@ -226,15 +226,15 @@ package js.html;
 	**/
 	var mediaDevices(default, null) : js.mediacaptureStreams.MediaDevices;
 	/**
-		From partial interface in mediasession.idl
-		Unhandled extended attribute SameObject
-	**/
-	var mediaSession(default, null) : js.mediasession.MediaSession;
-	/**
 		From partial interface in mediaqueries-5.idl
 		Unhandled extended attribute SameObject
 	**/
 	var preferences(default, null) : js.mediaqueries5.PreferenceManager;
+	/**
+		From partial interface in mediasession.idl
+		Unhandled extended attribute SameObject
+	**/
+	var mediaSession(default, null) : js.mediasession.MediaSession;
 	/**
 		From partial interface in permissions.idl
 		Unhandled extended attribute SameObject
@@ -262,22 +262,16 @@ package js.html;
 	**/
 	var wakeLock(default, null) : js.screenWakeLock.WakeLock;
 	/**
-		From partial interface in serial.idl
-		Unhandled extended attribute SameObject
-	**/
-	var serial(default, null) : js.serial.Serial;
-	/**
 		From partial interface in service-workers.idl
 		Unhandled extended attribute SecureContext
 		Unhandled extended attribute SameObject
 	**/
 	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
 	/**
-		From partial interface in virtual-keyboard.idl
-		Unhandled extended attribute SecureContext
+		From partial interface in serial.idl
 		Unhandled extended attribute SameObject
 	**/
-	var virtualKeyboard(default, null) : js.virtualKeyboard.VirtualKeyboard;
+	var serial(default, null) : js.serial.Serial;
 	/**
 		From partial interface in turtledove.idl
 	**/
@@ -287,6 +281,12 @@ package js.html;
 		Unhandled extended attribute SameObject
 	**/
 	var protectedAudience(default, null) : js.turtledove.ProtectedAudience;
+	/**
+		From partial interface in virtual-keyboard.idl
+		Unhandled extended attribute SecureContext
+		Unhandled extended attribute SameObject
+	**/
+	var virtualKeyboard(default, null) : js.virtualKeyboard.VirtualKeyboard;
 	/**
 		From partial interface in web-bluetooth.idl
 		Unhandled extended attribute SameObject

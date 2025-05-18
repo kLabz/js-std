@@ -83,13 +83,13 @@ package js.html;
 	**/
 	var permissionsPolicy(default, null) : js.permissionsPolicy.PermissionsPolicy;
 	/**
+		From partial interface in turtledove.idl
+	**/
+	var adAuctionHeaders : Bool;
+	/**
 		From partial interface in trust-token-api.idl
 		Unhandled extended attribute SecureContext
 	**/
 	var privateToken : String;
-	/**
-		From partial interface in turtledove.idl
-	**/
-	var adAuctionHeaders : Bool;
 	function getSVGDocument():Null<js.dom.Document>;
 }

@@ -111,25 +111,25 @@ class Main {
 				function handleGeneric<T:AbstractNonUnionTypeDescription<T>>(t:T) {
 					return switch (t.generic) {
 						case IDLFrozenArrayTypeDescription:
-							var inner = convertType(currentPack, t.idlType.element0);
+							var inner = convertType(currentPack, t.idlType.first);
 							// if (inner == null) inner = macro :Dynamic;
 							// TODO: FrozenArray in std
 							macro :Array<$inner>;
 
 						case IDLObservableArrayTypeDescription:
-							var inner = convertType(currentPack, t.idlType.element0);
+							var inner = convertType(currentPack, t.idlType.first);
 							// if (inner == null) inner = macro :Dynamic;
 							// TODO: ObservableArray in std
 							macro :Array<$inner>;
 
 						case IDLPromiseTypeDescription:
-							var inner = convertType(currentPack, t.idlType.element0);
+							var inner = convertType(currentPack, t.idlType.first);
 							// if (inner == null) inner = macro :Dynamic;
 							macro :js.lib.Promise<$inner>;
 
 						case IDLRecordTypeDescription:
-							var tkey = convertType(currentPack, t.idlType.element0);
-							var tvalue = convertType(currentPack, t.idlType.element1);
+							var tkey = convertType(currentPack, t.idlType.first);
+							var tvalue = convertType(currentPack, t.idlType.second);
 							switch (tkey) {
 								case TPath({pack: [], name: "DOMString" | "USVString" | "String"}):
 									macro :haxe.DynamicAccess<$tvalue>;
@@ -138,7 +138,7 @@ class Main {
 							}
 
 						case IDLSequenceTypeDescription:
-							var inner = convertType(currentPack, t.idlType.element0);
+							var inner = convertType(currentPack, t.idlType.first);
 							// if (inner == null) inner = macro :Dynamic;
 							macro :Array<$inner>;
 
@@ -349,7 +349,7 @@ class Main {
 											newFields = (macro class A {
 												function keys():Iterator<$tkey>;
 												function values():Iterator<$tvalue>;
-												function entries():Iterator<Array<Dynamic>>; // TODO: key/value pairs
+												function entries():Iterator<js.lib.Tuple<$tkey, $tvalue>>;
 											}).fields;
 										}
 										for (f in newFields) fields.push(f);

@@ -1,12 +1,13 @@
 package webidl2;
 
+import js.lib.Tuple.HomogeneousTuple;
 import util.EitherType;
 
 extern interface MaplikeDeclarationMemberType extends AbstractBase<MaplikeDeclarationMemberType> {
 	/**
 		An array with one or more IDL Types representing the declared type arguments.
 	**/
-	var idlType : ts.Tuple2<IDLTypeDescription, IDLTypeDescription>;
+	var idlType : HomogeneousTuple<IDLTypeDescription>;
 	/**
 		Whether the iterable is declared as async.
 	**/

@@ -1,12 +1,13 @@
 package webidl2;
 
+import js.lib.Tuple.SingletonTuple;
 import util.EitherType;
 
 extern interface SetlikeDeclarationMemberType extends AbstractBase<SetlikeDeclarationMemberType> {
 	/**
 		An array with one or more IDL Types representing the declared type arguments.
 	**/
-	var idlType : ts.Tuple1<IDLTypeDescription>;
+	var idlType : SingletonTuple<IDLTypeDescription>;
 	/**
 		Whether the iterable is declared as async.
 	**/

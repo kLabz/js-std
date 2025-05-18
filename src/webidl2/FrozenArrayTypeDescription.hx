@@ -1,5 +1,7 @@
 package webidl2;
 
+import js.lib.Tuple.SingletonTuple;
+
 extern interface FrozenArrayTypeDescription extends AbstractGenericTypeDescription<FrozenArrayTypeDescription> {
 	/**
 		String indicating the generic type (e.g. "Promise", "sequence"). The empty string otherwise.
@@ -9,5 +11,5 @@ extern interface FrozenArrayTypeDescription extends AbstractGenericTypeDescripti
 		Contains the IDL type description for the type in the sequence,
 		the eventual value of the promise, etc.
 	**/
-	var idlType : ts.Tuple1<IDLTypeDescription>;
+	var idlType : SingletonTuple<IDLTypeDescription>;
 }

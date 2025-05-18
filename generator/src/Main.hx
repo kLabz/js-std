@@ -303,6 +303,7 @@ class Main {
 
 						tasks.push(() -> {
 							var ctx:Context = {file: file, pack: pack, scope: scope};
+							if (ctx.scope == null) ctx.scope = scopeMap.get(t.name);
 
 							var ct = TFunction(
 								// TODO: make sure that arguments' extended attributes are handled
@@ -341,6 +342,7 @@ class Main {
 
 						tasks.push(() -> {
 							var ctx:Context = {file: file, pack: pack, scope: scope};
+							if (ctx.scope == null) ctx.scope = scopeMap.get(t.name);
 
 							var partials = partialDictionaries.get(t.name).or([]);
 							var members = partials.fold((p, acc) -> acc.concat(p.members), t.members);
@@ -379,6 +381,7 @@ class Main {
 
 						tasks.push(() -> {
 							var ctx:Context = {file: file, pack: pack, scope: scope};
+							if (ctx.scope == null) ctx.scope = scopeMap.get(t.name);
 
 							var td:TypeDefinition = {
 								pack: pack,
@@ -419,6 +422,7 @@ class Main {
 
 						tasks.push(() -> {
 							var ctx:Context = {file: file, pack: pack, scope: scope};
+							if (ctx.scope == null) ctx.scope = scopeMap.get(t.name);
 
 							var partials = partialInterfaces.get(t.name).or([]);
 							var members = partials.fold((p, acc) -> acc.concat(p.t.members), t.members);
@@ -653,6 +657,7 @@ class Main {
 
 						tasks.push(() -> {
 							var ctx:Context = {file: file, pack: pack, scope: scope};
+							if (ctx.scope == null) ctx.scope = scopeMap.get(t.name);
 							var ct = convertType(ctx, t.idlType);
 
 							var td:TypeDefinition = {

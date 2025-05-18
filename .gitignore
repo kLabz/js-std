@@ -1,2 +1,3 @@
 generator/.haxelib/**
 generator/bin/**
+libs/js-unused-api/**

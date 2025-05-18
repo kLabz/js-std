@@ -34,6 +34,7 @@ using Lambda;
 using NullHelper;
 
 typedef Context = {
+	var t:String;
 	var file:FileHandler;
 	var pack:Array<String>;
 	var scope:Null<Array<String>>;
@@ -71,7 +72,8 @@ class Main {
 
 		// TODO: scope?
 		var packMap:Map<String, Array<String>> = [];
-		var scopeMap:Map<String, Null<Array<String>>> = [];
+		var scopeMap:Map<String, Null<Set<String>>> = [];
+		var dependents:Map<String, Set<String>> = [];
 
 		var tasks:Array<() -> Void> = [];
 		var saveTasks:Array<{ctx:Context, t:String, td:TypeDefinition}> = [];
@@ -159,10 +161,7 @@ class Main {
 				// TODO: other special types
 
 				case _:
-					if (ctx.scope != null && scopeMap[t] == null) {
-						Sys.println('Setting scope of $t to ${ctx.scope} through dependency in ${ctx.file.shortname}');
-						scopeMap.set(t, ctx.scope);
-					}
+					dependents.set(t, dependents.get(t).or([]).copyWith(ctx.t));
 					TPath({pack: resolvePackage(ctx, t), name: t});
 			};
 		}
@@ -262,13 +261,42 @@ class Main {
 		}
 
 		function doSave(ctx:Context, t:String, td:TypeDefinition) {
-			if (ctx.scope == null) ctx.scope = scopeMap.get(t);
-
 			if (ctx.scope == null) {
-				Sys.println('ERROR: Cannot find target library for $t (scope=${ctx.scope})');
-				// TODO: if scope is null, we need to add the type to the library using it
-				// Adding it to core for now, though that's not correct and will likely cause errors
-				ctx.scope = ["*"];
+				var scope = new Set();
+				var handledDependents = [t];
+				var abort = false;
+
+				function handleType(dep:String) {
+					if (abort) return;
+
+					var depScope = scopeMap.get(dep).or([]);
+					for (s in depScope) {
+						if (s == "*") {
+							scope = Set.fromArray(["*"]);
+							abort = true;
+							return;
+						}
+						scope.add(s);
+					}
+
+					var deps = dependents.get(dep).or([]);
+					for (d in deps) {
+						if (!handledDependents.contains(d)) {
+							handledDependents.push(d);
+							handleType(d);
+						}
+					}
+				}
+
+				handleType(t);
+				ctx.scope = scope;
+
+				if (ctx.scope.length == 0) {
+					Sys.println('ERROR: Cannot find target library for $t (scope=${ctx.scope})');
+					// TODO: if scope is null, we need to add the type to the library using it
+					// Adding it to core for now, though that's not correct and will likely cause errors
+					ctx.scope = ["*"];
+				}
 			}
 
 			var generated = false;
@@ -302,8 +330,7 @@ class Main {
 						scopeMap.set(t.name, scope);
 
 						tasks.push(() -> {
-							var ctx:Context = {file: file, pack: pack, scope: scope};
-							if (ctx.scope == null) ctx.scope = scopeMap.get(t.name);
+							var ctx:Context = {t: t.name, file: file, pack: pack, scope: scope};
 
 							var ct = TFunction(
 								// TODO: make sure that arguments' extended attributes are handled
@@ -341,8 +368,7 @@ class Main {
 						scopeMap.set(t.name, scope);
 
 						tasks.push(() -> {
-							var ctx:Context = {file: file, pack: pack, scope: scope};
-							if (ctx.scope == null) ctx.scope = scopeMap.get(t.name);
+							var ctx:Context = {t: t.name, file: file, pack: pack, scope: scope};
 
 							var partials = partialDictionaries.get(t.name).or([]);
 							var members = partials.fold((p, acc) -> acc.concat(p.members), t.members);
@@ -380,8 +406,7 @@ class Main {
 						scopeMap.set(t.name, scope);
 
 						tasks.push(() -> {
-							var ctx:Context = {file: file, pack: pack, scope: scope};
-							if (ctx.scope == null) ctx.scope = scopeMap.get(t.name);
+							var ctx:Context = {t: t.name, file: file, pack: pack, scope: scope};
 
 							var td:TypeDefinition = {
 								pack: pack,
@@ -421,8 +446,7 @@ class Main {
 						scopeMap.set(t.name, scope);
 
 						tasks.push(() -> {
-							var ctx:Context = {file: file, pack: pack, scope: scope};
-							if (ctx.scope == null) ctx.scope = scopeMap.get(t.name);
+							var ctx:Context = {t: t.name, file: file, pack: pack, scope: scope};
 
 							var partials = partialInterfaces.get(t.name).or([]);
 							var members = partials.fold((p, acc) -> acc.concat(p.t.members), t.members);
@@ -656,8 +680,7 @@ class Main {
 						scopeMap.set(t.name, scope);
 
 						tasks.push(() -> {
-							var ctx:Context = {file: file, pack: pack, scope: scope};
-							if (ctx.scope == null) ctx.scope = scopeMap.get(t.name);
+							var ctx:Context = {t: t.name, file: file, pack: pack, scope: scope};
 							var ct = convertType(ctx, t.idlType);
 
 							var td:TypeDefinition = {

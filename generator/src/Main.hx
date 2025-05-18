@@ -33,6 +33,12 @@ import webidl2.ValueDescription;
 using Lambda;
 using NullHelper;
 
+typedef Context = {
+	var file:FileHandler;
+	var pack:Array<String>;
+	var scope:Null<Array<String>>;
+}
+
 // TODO: clean up that POC
 class Main {
 	public static function main() {
@@ -65,14 +71,16 @@ class Main {
 
 		// TODO: scope?
 		var packMap:Map<String, Array<String>> = [];
+		var scopeMap:Map<String, Null<Array<String>>> = [];
 
 		var tasks:Array<() -> Void> = [];
+		var saveTasks:Array<{ctx:Context, t:String, td:TypeDefinition}> = [];
 		var partialDictionaries:Map<String, Array<DictionaryType>> = [];
 		var partialInterfaces:Map<String, Array<{t:InterfaceType, file:FileHandler}>> = [];
 		var includesTypes:Array<IncludesType> = [];
 		var mixins:Map<String, Array<IDLInterfaceMixinMemberType>> = [];
 
-		function resolvePackage(currentPack:Array<String>, t:String):Array<String> {
+		function resolvePackage(ctx:Context, t:String):Array<String> {
 			var ret = packMap.get(t);
 			if (ret == null) {
 				Sys.println('WARNING: cannot resolve type $t');
@@ -80,8 +88,8 @@ class Main {
 			}
 
 			// ignore package if same as current (or parent package)
-			var currentPackLength = currentPack.length;
-			for (i => part in ret) if (currentPackLength <= i || currentPack[i] != part) return ret;
+			var currentPackLength = ctx.pack.length;
+			for (i => part in ret) if (currentPackLength <= i || ctx.pack[i] != part) return ret;
 			return [];
 		}
 
@@ -130,7 +138,7 @@ class Main {
 			return doc;
 		}
 
-		function resolveType(currentPack:Array<String>, t:String):ComplexType {
+		function resolveType(ctx:Context, t:String):ComplexType {
 			if (t == "undefined") return macro :Void; // TODO: not allowed everywhere..
 
 			// TODO: see https://webidl.spec.whatwg.org/#idl-types
@@ -150,16 +158,21 @@ class Main {
 				case "unrestricted float" | "unrestricted double": macro :Float;
 				// TODO: other special types
 
-				case _: TPath({pack: resolvePackage(currentPack, t), name: t});
+				case _:
+					if (ctx.scope != null && scopeMap[t] == null) {
+						Sys.println('Setting scope of $t to ${ctx.scope} through dependency in ${ctx.file.shortname}');
+						scopeMap.set(t, ctx.scope);
+					}
+					TPath({pack: resolvePackage(ctx, t), name: t});
 			};
 		}
 
-		function convertType(currentPack:Array<String>, t:IDLTypeDescription) {
+		function convertType(ctx:Context, t:IDLTypeDescription) {
 			if (t == null) return null;
 
 			if (t.isSingle()) {
 				var t = t.asSingle();
-				var ct = resolveType(currentPack, t.idlType);
+				var ct = resolveType(ctx, t.idlType);
 				assertEmptyAttributes(t.extAttrs);
 				return if (t.nullable) macro :Null<$ct> else ct;
 			} else if (t.isUnion()) {
@@ -167,9 +180,9 @@ class Main {
 				var ct = switch (t.idlType) {
 					case []: macro :Dynamic;
 					case types:
-						var current = convertType(currentPack, types.pop());
+						var current = convertType(ctx, types.pop());
 						while (types.length > 0) {
-							var t = convertType(currentPack, types.pop());
+							var t = convertType(ctx, types.pop());
 							current = macro :haxe.extern.EitherType<$t, $current>;
 						}
 						current;
@@ -180,25 +193,25 @@ class Main {
 				function handleGeneric<T:AbstractNonUnionTypeDescription<T>>(t:T) {
 					return switch (t.generic) {
 						case IDLFrozenArrayTypeDescription:
-							var inner = convertType(currentPack, t.idlType.get);
+							var inner = convertType(ctx, t.idlType.get);
 							// if (inner == null) inner = macro :Dynamic;
 							// TODO: FrozenArray in std
 							macro :Array<$inner>;
 
 						case IDLObservableArrayTypeDescription:
-							var inner = convertType(currentPack, t.idlType.get);
+							var inner = convertType(ctx, t.idlType.get);
 							// if (inner == null) inner = macro :Dynamic;
 							// TODO: ObservableArray in std
 							macro :Array<$inner>;
 
 						case IDLPromiseTypeDescription:
-							var inner = convertType(currentPack, t.idlType.get);
+							var inner = convertType(ctx, t.idlType.get);
 							// if (inner == null) inner = macro :Dynamic;
 							macro :js.lib.Promise<$inner>;
 
 						case IDLRecordTypeDescription:
-							var tkey = convertType(currentPack, t.idlType.first);
-							var tvalue = convertType(currentPack, t.idlType.second);
+							var tkey = convertType(ctx, t.idlType.first);
+							var tvalue = convertType(ctx, t.idlType.second);
 							switch (tkey) {
 								case TPath({pack: [], name: "DOMString" | "USVString" | "String"}):
 									macro :haxe.DynamicAccess<$tvalue>;
@@ -208,7 +221,7 @@ class Main {
 
 						// TODO: handle tuples
 						case IDLSequenceTypeDescription:
-							var inner = convertType(currentPack, t.idlType.get);
+							var inner = convertType(ctx, t.idlType.get);
 							// if (inner == null) inner = macro :Dynamic;
 							macro :Array<$inner>;
 
@@ -222,55 +235,60 @@ class Main {
 			}
 		}
 
+		function save(ctx:Context, t:String, td:TypeDefinition) {
+			saveTasks.push({ctx: ctx, t: t, td: td});
+		}
+
+		function saveTo(ctx:Context, lib:String, t:String, td:TypeDefinition) {
+			var path = Path.join(["..", "libs", lib, "src"].concat(ctx.pack.concat(['$t.hx'])));
+			if (saved.exists(path)) {
+				var prev = saved.get(path);
+				throw 'WARNING [${ctx.file.shortname}] Cannot save $path: already generated from $prev';
+			}
+
+			saved.set(path, ctx.file.shortname);
+			if (!FileSystem.exists(Path.directory(path))) FileSystem.createDirectory(Path.directory(path));
+
+			var out = new StringBuf();
+			out.add(Resource.getString("copyright"));
+			out.add("// This file is generated from @webref/idl/");
+			out.add(ctx.file.filename);
+			out.add(". Do not edit!\n\n");
+			out.add(printer.printTypeDefinition(td));
+
+			#if !no_output
+			File.saveContent(path, out.toString());
+			#end
+		}
+
+		function doSave(ctx:Context, t:String, td:TypeDefinition) {
+			if (ctx.scope == null) ctx.scope = scopeMap.get(t);
+
+			if (ctx.scope == null) {
+				Sys.println('ERROR: Cannot find target library for $t (scope=${ctx.scope})');
+				// TODO: if scope is null, we need to add the type to the library using it
+				// Adding it to core for now, though that's not correct and will likely cause errors
+				ctx.scope = ["*"];
+			}
+
+			var generated = false;
+			for (s in ctx.scope) {
+				if (!libs.exists(s)) Sys.println('WARNING: Cannot find target library for $t (scope=$s)');
+
+				var lib = libs[s];
+				if (lib == null) continue;
+
+				generated = true;
+				saveTo(ctx, lib, t, td);
+			}
+
+			if (!generated) Sys.println('WARNING: type $t was not generated in any lib');
+		}
+
 		function handleFile(file:FileHandler, res:Array<IDLRootType>) {
 			var pack = ["js", sanitizePackage(file.shortname)];
 			var pos = PositionTools.make({min: 0, max: 0, file: file.path});
 			var optMeta:MetadataEntry = {name: ":optional", pos: pos};
-
-			function saveTo(lib:String, t:String, td:TypeDefinition) {
-				var path = Path.join(["..", "libs", lib, "src"].concat(pack.concat(['$t.hx'])));
-				if (saved.exists(path)) {
-					var prev = saved.get(path);
-					throw 'WARNING [${file.shortname}] Cannot save $path: already generated from $prev';
-				}
-
-				saved.set(path, file.shortname);
-				if (!FileSystem.exists(Path.directory(path))) FileSystem.createDirectory(Path.directory(path));
-
-				var out = new StringBuf();
-				out.add(Resource.getString("copyright"));
-				out.add("// This file is generated from @webref/idl/");
-				out.add(file.filename);
-				out.add(". Do not edit!\n\n");
-				out.add(printer.printTypeDefinition(td));
-
-				#if !no_output
-				File.saveContent(path, out.toString());
-				#end
-			}
-
-			function save(scope:Array<String>, t:String, td:TypeDefinition) {
-				if (scope == null) {
-					Sys.println('ERROR: Cannot find target library for $t (scope=$scope)');
-					// TODO: if scope is null, we need to add the type to the library using it
-					// Adding it to core for now, though that's not correct and will likely cause errors
-					scope = ["*"];
-				}
-
-				var generated = false;
-				for (s in scope) {
-					if (!libs.exists(s)) Sys.println('WARNING: Cannot find target library for $t (scope=$s)');
-
-					var lib = libs[s];
-					if (lib == null) continue;
-
-					generated = true;
-					saveTo(lib, t, td);
-				}
-
-				if (!generated) Sys.println('WARNING: type $t was not generated in any lib');
-			}
-
 
 			Sys.println('Parsed ${file.filename}: ${res.length} declarations.');
 
@@ -280,13 +298,18 @@ class Main {
 				switch (t.type) {
 					case IDLCallbackType:
 						packMap.set(t.name, pack);
+						var scope = extractScope(t.extAttrs);
+						scopeMap.set(t.name, scope);
+
 						tasks.push(() -> {
+							var ctx:Context = {file: file, pack: pack, scope: scope};
+
 							var ct = TFunction(
 								// TODO: make sure that arguments' extended attributes are handled
 								t.arguments.map(a ->
-									a.optional ? TOptional(TNamed(a.name, convertType(pack, a.idlType))) : TNamed(a.name, convertType(pack, a.idlType))
+									a.optional ? TOptional(TNamed(a.name, convertType(ctx, a.idlType))) : TNamed(a.name, convertType(ctx, a.idlType))
 								),
-								convertType(pack, t.idlType)
+								convertType(ctx, t.idlType)
 							);
 
 							var td:TypeDefinition = {
@@ -299,10 +322,9 @@ class Main {
 								fields: []
 							};
 
-							var scope = extractScope(t.extAttrs);
 							assertEmptyAttributes(t.extAttrs);
 							Sys.println(' > Exported callback typedef ${pack.concat([t.name]).join(".")}');
-							save(scope, t.name, td);
+							save(ctx, t.name, td);
 						});
 
 					case IDLCallbackInterfaceType:
@@ -314,21 +336,24 @@ class Main {
 
 					case IDLDictionaryType:
 						packMap.set(t.name, pack);
+						var scope = extractScope(t.extAttrs);
+						scopeMap.set(t.name, scope);
 
 						tasks.push(() -> {
+							var ctx:Context = {file: file, pack: pack, scope: scope};
+
 							var partials = partialDictionaries.get(t.name).or([]);
 							var members = partials.fold((p, acc) -> acc.concat(p.members), t.members);
 							var fields = members.map(m -> {
 								({
 									name: m.name, // TODO: sanitize (note: no @:native on typedef..)
 									doc: addUnhandledAttributesToDoc(null, m.extAttrs), // TODO retrieve docs
-									kind: FVar(convertType(pack, m.idlType), convertValue(m.default_, pos)),
+									kind: FVar(convertType(ctx, m.idlType), convertValue(m.default_, pos)),
 									pos: pos,
 									meta: m.required ? null : [optMeta]
 								}:Field);
 							});
 
-							var scope = extractScope(t.extAttrs);
 							var td:TypeDefinition = {
 								pack: pack,
 								name: t.name,
@@ -337,21 +362,24 @@ class Main {
 								isExtern: null,
 								kind: TDAlias(t.inheritance == null
 									? TAnonymous(fields)
-									: TExtend([toTPath(resolveType(pack, t.inheritance))], fields)
+									: TExtend([toTPath(resolveType(ctx, t.inheritance))], fields)
 								),
 								fields: []
 							};
 
 							assertEmptyAttributes(t.extAttrs);
 							Sys.println(' > Exported typedef ${pack.concat([t.name]).join(".")}');
-							save(scope, t.name, td);
+							save(ctx, t.name, td);
 						});
 
 					case IDLEnumType:
 						packMap.set(t.name, pack);
+						var scope = extractScope(t.extAttrs);
+						scopeMap.set(t.name, scope);
 
 						tasks.push(() -> {
-							var scope = extractScope(t.extAttrs);
+							var ctx:Context = {file: file, pack: pack, scope: scope};
+
 							var td:TypeDefinition = {
 								pack: pack,
 								name: t.name,
@@ -369,7 +397,7 @@ class Main {
 
 							assertEmptyAttributes(t.extAttrs);
 							Sys.println(' > Exported enum abstract ${pack.concat([t.name]).join(".")}');
-							save(scope, t.name, td);
+							save(ctx, t.name, td);
 						});
 
 					case IDLIncludesType:
@@ -386,8 +414,12 @@ class Main {
 
 					case IDLInterfaceType:
 						packMap.set(t.name, pack);
+						var scope = extractScope(t.extAttrs);
+						scopeMap.set(t.name, scope);
 
 						tasks.push(() -> {
+							var ctx:Context = {file: file, pack: pack, scope: scope};
+
 							var partials = partialInterfaces.get(t.name).or([]);
 							var members = partials.fold((p, acc) -> acc.concat(p.t.members), t.members);
 
@@ -422,7 +454,7 @@ class Main {
 											name: sanitizeFieldName(m.name, meta, pos),
 											doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
 											access: [AStatic, AInline],
-											kind: FVar(convertType(pack, m.idlType), convertValue(m.value, pos)),
+											kind: FVar(convertType(ctx, m.idlType), convertValue(m.value, pos)),
 											pos: pos,
 											meta: meta
 										});
@@ -440,15 +472,15 @@ class Main {
 									case IDLIterableDeclarationMemberType:
 										var newFields:Array<Field> = [];
 										if (m.idlType.length == 1) {
-											var tvalue = convertType(pack, m.idlType.first);
+											var tvalue = convertType(ctx, m.idlType.first);
 
 											newFields = (macro class A {
 												function values():Iterator<$tvalue>;
 											}).fields;
 											for (f in newFields) fields.push(f);
 										} else {
-											var tkey = convertType(pack, m.idlType.first);
-											var tvalue = convertType(pack, m.idlType.second);
+											var tkey = convertType(ctx, m.idlType.first);
+											var tvalue = convertType(ctx, m.idlType.second);
 
 											newFields = (macro class A {
 												function keys():Iterator<$tkey>;
@@ -477,7 +509,7 @@ class Main {
 													args: m.arguments.map(a -> {
 														name: a.name,
 														opt: a.optional,
-														type: convertType(pack, a.idlType),
+														type: convertType(ctx, a.idlType),
 														value: convertValue(a.default_, pos),
 														meta: null
 													}),
@@ -507,14 +539,14 @@ class Main {
 											name: sanitizeFieldName(m.name, meta, pos),
 											doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
 											access: m.special == "static" ? [AStatic] : [],
-											kind: m.readonly ? FProp("default", "null", convertType(pack, m.idlType)) : FVar(convertType(pack, m.idlType)),
+											kind: m.readonly ? FProp("default", "null", convertType(ctx, m.idlType)) : FVar(convertType(ctx, m.idlType)),
 											pos: pos,
 											meta: meta
 										});
 
 									case IDLOperationMemberType if (m.name.or("") == "" && m.special == "getter"):
-										var tkey = convertType(pack, m.arguments.pop().idlType);
-										var tvalue = convertType(pack, m.idlType);
+										var tkey = convertType(ctx, m.arguments.pop().idlType);
+										var tvalue = convertType(ctx, m.idlType);
 										switch (tkey) {
 											case TPath({pack: [], name: "Int"}):
 												interfaces.push(toTPath(macro :ArrayAccess<$tvalue>));
@@ -547,11 +579,11 @@ class Main {
 												args: m.arguments.map(a -> {
 													name: a.name,
 													opt: a.optional,
-													type: convertType(pack, a.idlType),
+													type: convertType(ctx, a.idlType),
 													value: convertValue(a.default_, pos),
 													meta: null
 												}),
-												ret: convertType(pack, m.idlType).or(macro :Void),
+												ret: convertType(ctx, m.idlType).or(macro :Void),
 												expr: null,
 												params: null
 											}),
@@ -588,7 +620,6 @@ class Main {
 								}
 							});
 
-							var scope = extractScope(t.extAttrs);
 							var td:TypeDefinition = {
 								pack: pack,
 								name: t.name,
@@ -596,7 +627,7 @@ class Main {
 								pos: pos,
 								isExtern: true,
 								kind: TDClass(
-									t.inheritance.maybeApply(t -> toTPath(resolveType(pack, t))),
+									t.inheritance.maybeApply(t -> toTPath(resolveType(ctx, t))),
 									interfaces.length == 0 ? null : interfaces
 								),
 								meta: [{
@@ -609,7 +640,7 @@ class Main {
 
 							assertEmptyAttributes(t.extAttrs);
 							Sys.println(' > Exported class ${pack.concat([t.name]).join(".")}');
-							save(scope, t.name, td);
+							save(ctx, t.name, td);
 						});
 
 					case IDLNamespaceType:
@@ -617,10 +648,12 @@ class Main {
 
 					case IDLTypedefType:
 						packMap.set(t.name, pack);
+						var scope = extractScope(t.extAttrs);
+						scopeMap.set(t.name, scope);
 
 						tasks.push(() -> {
-							var ct = convertType(pack, t.idlType);
-							var scope = extractScope(t.extAttrs);
+							var ctx:Context = {file: file, pack: pack, scope: scope};
+							var ct = convertType(ctx, t.idlType);
 
 							var td:TypeDefinition = {
 								pack: pack,
@@ -634,7 +667,7 @@ class Main {
 
 							assertEmptyAttributes(t.extAttrs);
 							Sys.println(' > Exported typedef ${pack.concat([t.name]).join(".")}');
-							save(scope, t.name, td);
+							save(ctx, t.name, td);
 						});
 
 					case type: throw 'Unexpected node type $type.';
@@ -654,6 +687,7 @@ class Main {
 			Promise.all(promises).then(_ -> {
 				// TODO: empty out directory before processing
 				for (task in tasks) task();
+				for (task in saveTasks) doSave(task.ctx, task.t, task.td);
 			});
 		});
 	}

@@ -44,13 +44,13 @@ package js.webxr;
 	var profiles(default, null) : Array<String>;
 	var skipRendering(default, null) : Bool;
 	/**
-		From partial interface in webxr-gamepads-module.idl
-		Unhandled extended attribute SameObject
-	**/
-	var gamepad(default, null) : Null<js.gamepad.Gamepad>;
-	/**
 		From partial interface in webxr-hand-input.idl
 		Unhandled extended attribute SameObject
 	**/
 	var hand(default, null) : Null<js.webxrHandInput.XRHand>;
+	/**
+		From partial interface in webxr-gamepads-module.idl
+		Unhandled extended attribute SameObject
+	**/
+	var gamepad(default, null) : Null<js.gamepad.Gamepad>;
 }

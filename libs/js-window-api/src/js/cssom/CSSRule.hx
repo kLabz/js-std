@@ -38,6 +38,14 @@ package js.cssom;
 	static inline var MARGIN_RULE : Int = 9;
 	static inline var NAMESPACE_RULE : Int = 10;
 	/**
+		From partial interface in css-animations.idl
+	**/
+	static inline var KEYFRAMES_RULE : Int = 7;
+	/**
+		From partial interface in css-animations.idl
+	**/
+	static inline var KEYFRAME_RULE : Int = 8;
+	/**
 		From partial interface in css-conditional.idl
 	**/
 	static inline var SUPPORTS_RULE : Int = 12;
@@ -49,12 +57,4 @@ package js.cssom;
 		From partial interface in css-fonts.idl
 	**/
 	static inline var FONT_FEATURE_VALUES_RULE : Int = 14;
-	/**
-		From partial interface in css-animations.idl
-	**/
-	static inline var KEYFRAMES_RULE : Int = 7;
-	/**
-		From partial interface in css-animations.idl
-	**/
-	static inline var KEYFRAME_RULE : Int = 8;
 }

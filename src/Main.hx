@@ -466,7 +466,11 @@ class Main {
 									t.inheritance.maybeApply(t -> toTPath(resolveType(pack, t))),
 									interfaces.length == 0 ? null : interfaces
 								),
-								meta: [], // TODO: @:native etc.
+								meta: [{
+									name: ":native",
+									params: [{pos: pos, expr: EConst(CString(t.name))}],
+									pos: pos
+								}],
 								fields: fields
 							};
 

@@ -1,0 +1,10 @@
+{
+  "name": "js-core-api",
+  "description": "Auto-generated javascript standard library.",
+  "version": "3.63.0",
+  "url": "TODO",
+  "license": "MIT",
+  "tags": [],
+  "classPath": "src",
+  "contributors": ["kLabz"]
+}

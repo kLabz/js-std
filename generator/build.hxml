@@ -1,0 +1,6 @@
+-cp src
+-cp js-core-api
+-lib hxnodejs
+-resource res/copyright.md@copyright
+-main Main
+-js bin/index.js

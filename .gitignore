@@ -1,2 +1,2 @@
-.haxelib/**
-bin/**
+generator/.haxelib/**
+generator/bin/**

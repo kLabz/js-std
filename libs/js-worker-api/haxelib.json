@@ -1,0 +1,13 @@
+{
+  "name": "js-worker-api",
+  "description": "Auto-generated javascript standard library.",
+  "version": "3.63.0",
+  "url": "TODO",
+  "license": "MIT",
+  "tags": [],
+  "classPath": "src",
+  "dependencies": {
+    "js-core-api": "3.63.0"
+  },
+  "contributors": ["kLabz"]
+}

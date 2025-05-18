@@ -1,5 +1,0 @@
-package webidl2;
-
-import util.EitherType;
-
-typedef ExtendedAttributeRightHandSideList = EitherType<ExtendedAttributeRightHandSideIdentifierList, ExtendedAttributeRightHandSideStringList, ExtendedAttributeRightHandSideDecimalList, ExtendedAttributeRightHandSideIntegerList>;

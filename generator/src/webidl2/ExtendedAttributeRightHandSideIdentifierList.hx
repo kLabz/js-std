@@ -1,0 +1,8 @@
+package webidl2;
+
+import webidl2.ExtendedAttributeRightHandSide.ExtendedAttributeRightHandSideKind;
+
+extern interface ExtendedAttributeRightHandSideIdentifierList extends ExtendedAttributeRightHandSide<ExtendedAttributeRightHandSideIdentifierList> {
+	var type : ExtendedAttributeRightHandSideKind<ExtendedAttributeRightHandSideIdentifierList>;
+	var value : Array<ExtendedAttributeRightHandSideIdentifier>;
+}

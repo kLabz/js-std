@@ -1,0 +1,8 @@
+package webidl2;
+
+import webidl2.ExtendedAttributeRightHandSide.ExtendedAttributeRightHandSideKind;
+
+extern interface ExtendedAttributeRightHandSideDecimalList extends ExtendedAttributeRightHandSide<ExtendedAttributeRightHandSideDecimalList> {
+	var type : ExtendedAttributeRightHandSideKind<ExtendedAttributeRightHandSideDecimalList>;
+	var value : Array<ExtendedAttributeRightHandSideDecimal>;
+}

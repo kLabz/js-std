@@ -1,5 +1,0 @@
--cp src
--lib hxnodejs
--resource res/copyright.md@copyright
--main Main
--js bin/index.js

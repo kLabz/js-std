@@ -47,6 +47,10 @@ package js.serviceWorkers;
 	var onmessage : js.html.EventHandler;
 	var onmessageerror : js.html.EventHandler;
 	/**
+		From partial interface in background-sync.idl
+	**/
+	var onsync : js.html.EventHandler;
+	/**
 		From partial interface in background-fetch.idl
 	**/
 	var onbackgroundfetchsuccess : js.html.EventHandler;
@@ -62,10 +66,6 @@ package js.serviceWorkers;
 		From partial interface in background-fetch.idl
 	**/
 	var onbackgroundfetchclick : js.html.EventHandler;
-	/**
-		From partial interface in background-sync.idl
-	**/
-	var onsync : js.html.EventHandler;
 	/**
 		From partial interface in content-index.idl
 	**/
@@ -88,6 +88,10 @@ package js.serviceWorkers;
 	**/
 	var onnotificationclose : js.html.EventHandler;
 	/**
+		From partial interface in periodic-background-sync.idl
+	**/
+	var onperiodicsync : js.html.EventHandler;
+	/**
 		From partial interface in payment-handler.idl
 	**/
 	var oncanmakepayment : js.html.EventHandler;
@@ -95,10 +99,6 @@ package js.serviceWorkers;
 		From partial interface in payment-handler.idl
 	**/
 	var onpaymentrequest : js.html.EventHandler;
-	/**
-		From partial interface in periodic-background-sync.idl
-	**/
-	var onperiodicsync : js.html.EventHandler;
 	/**
 		From partial interface in push-api.idl
 	**/

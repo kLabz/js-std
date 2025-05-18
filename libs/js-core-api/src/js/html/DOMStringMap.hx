@@ -20,31 +20,35 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from @webref/idl/webcodecs.idl. Do not edit!
+// This file is generated from @webref/idl/html.idl. Do not edit!
 
-package js.webcodecs;
+package js.html;
 
-typedef AudioEncoderConfig = {
-	var codec : String;
+/**
+	TODO ArrayAccess<> for tkey=String tvalue=TPath({
+			pack : [], 
+			name : String, 
+			params : [], 
+			pos : {
+				file : src/Main.hx, 
+				min : 5126, 
+				max : 5132
+			}, 
+			posPath : {
+				file : src/Main.hx, 
+				min : 5126, 
+				max : 5132
+			}
+		})
+	Unhandled extended attribute LegacyOverrideBuiltIns
+**/
+@:native("DOMStringMap") extern class DOMStringMap {
 	/**
-		Unhandled extended attribute EnforceRange
+		(special = setter)
 	**/
-	var sampleRate : Int;
+	overload function (name:String, value:String):Void;
 	/**
-		Unhandled extended attribute EnforceRange
+		(special = deleter)
 	**/
-	var numberOfChannels : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
-	@:optional
-	var bitrate : Float;
-	@:optional
-	var bitrateMode : js.mediastreamRecording.BitrateMode = "variable";
-	@:optional
-	var aac : js.webcodecsAacCodecRegistration.AacEncoderConfig;
-	@:optional
-	var flac : js.webcodecsFlacCodecRegistration.FlacEncoderConfig;
-	@:optional
-	var opus : js.webcodecsOpusCodecRegistration.OpusEncoderConfig;
-};
+	overload function (name:String):Void;
+}

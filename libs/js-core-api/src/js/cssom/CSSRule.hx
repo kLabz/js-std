@@ -20,31 +20,41 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from @webref/idl/webcodecs.idl. Do not edit!
+// This file is generated from @webref/idl/cssom.idl. Do not edit!
 
-package js.webcodecs;
+package js.cssom;
 
-typedef AudioEncoderConfig = {
-	var codec : String;
+@:native("CSSRule") extern class CSSRule {
+	var cssText : CSSOMString;
+	var parentRule(default, null) : Null<CSSRule>;
+	var parentStyleSheet(default, null) : Null<CSSStyleSheet>;
+	var type(default, null) : Int;
+	static inline var STYLE_RULE : Int = 1;
+	static inline var CHARSET_RULE : Int = 2;
+	static inline var IMPORT_RULE : Int = 3;
+	static inline var MEDIA_RULE : Int = 4;
+	static inline var FONT_FACE_RULE : Int = 5;
+	static inline var PAGE_RULE : Int = 6;
+	static inline var MARGIN_RULE : Int = 9;
+	static inline var NAMESPACE_RULE : Int = 10;
 	/**
-		Unhandled extended attribute EnforceRange
+		From partial interface in css-animations.idl
 	**/
-	var sampleRate : Int;
+	static inline var KEYFRAMES_RULE : Int = 7;
 	/**
-		Unhandled extended attribute EnforceRange
+		From partial interface in css-animations.idl
 	**/
-	var numberOfChannels : Int;
+	static inline var KEYFRAME_RULE : Int = 8;
 	/**
-		Unhandled extended attribute EnforceRange
+		From partial interface in css-conditional.idl
 	**/
-	@:optional
-	var bitrate : Float;
-	@:optional
-	var bitrateMode : js.mediastreamRecording.BitrateMode = "variable";
-	@:optional
-	var aac : js.webcodecsAacCodecRegistration.AacEncoderConfig;
-	@:optional
-	var flac : js.webcodecsFlacCodecRegistration.FlacEncoderConfig;
-	@:optional
-	var opus : js.webcodecsOpusCodecRegistration.OpusEncoderConfig;
-};
+	static inline var SUPPORTS_RULE : Int = 12;
+	/**
+		From partial interface in css-counter-styles.idl
+	**/
+	static inline var COUNTER_STYLE_RULE : Int = 11;
+	/**
+		From partial interface in css-fonts.idl
+	**/
+	static inline var FONT_FEATURE_VALUES_RULE : Int = 14;
+}

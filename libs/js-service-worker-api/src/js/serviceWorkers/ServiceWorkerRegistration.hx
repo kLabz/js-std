@@ -39,13 +39,13 @@ package js.serviceWorkers;
 	var updateViaCache(default, null) : ServiceWorkerUpdateViaCache;
 	var onupdatefound : js.html.EventHandler;
 	/**
-		From partial interface in background-fetch.idl
-	**/
-	var backgroundFetch(default, null) : js.backgroundFetch.BackgroundFetchManager;
-	/**
 		From partial interface in background-sync.idl
 	**/
 	var sync(default, null) : js.backgroundSync.SyncManager;
+	/**
+		From partial interface in background-fetch.idl
+	**/
+	var backgroundFetch(default, null) : js.backgroundFetch.BackgroundFetchManager;
 	/**
 		From partial interface in content-index.idl
 		Unhandled extended attribute SameObject
@@ -57,14 +57,14 @@ package js.serviceWorkers;
 	**/
 	var cookies(default, null) : js.cookieStore.CookieStoreManager;
 	/**
+		From partial interface in periodic-background-sync.idl
+	**/
+	var periodicSync(default, null) : js.periodicBackgroundSync.PeriodicSyncManager;
+	/**
 		From partial interface in payment-handler.idl
 		Unhandled extended attribute SameObject
 	**/
 	var paymentManager(default, null) : js.paymentHandler.PaymentManager;
-	/**
-		From partial interface in periodic-background-sync.idl
-	**/
-	var periodicSync(default, null) : js.periodicBackgroundSync.PeriodicSyncManager;
 	/**
 		From partial interface in push-api.idl
 	**/

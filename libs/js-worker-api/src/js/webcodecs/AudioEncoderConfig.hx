@@ -42,9 +42,9 @@ typedef AudioEncoderConfig = {
 	@:optional
 	var bitrateMode : js.mediastreamRecording.BitrateMode = "variable";
 	@:optional
-	var flac : js.webcodecsFlacCodecRegistration.FlacEncoderConfig;
-	@:optional
 	var aac : js.webcodecsAacCodecRegistration.AacEncoderConfig;
+	@:optional
+	var flac : js.webcodecsFlacCodecRegistration.FlacEncoderConfig;
 	@:optional
 	var opus : js.webcodecsOpusCodecRegistration.OpusEncoderConfig;
 };

@@ -40,6 +40,13 @@ typedef Context = {
 	var scope:Null<Set<String>>;
 }
 
+enum abstract Libraries(String) to String {
+	var WindowAPI = "js-window-api";
+	var WorkerAPI = "js-worker-api";
+	var ServiceWorkerAPI = "js-service-worker-api";
+	var WorkletAPI = "js-worklet-api";
+}
+
 // TODO: clean up that POC
 class Main {
 	public static function main() {
@@ -47,20 +54,20 @@ class Main {
 		var saved = new haxe.ds.StringMap<String>();
 
 		var libs = [
-			"*" => "js-core-api",
-			"Window" => "js-window-api",
+			"*" => cast "js-core-api",
+			"Window" => WindowAPI,
 
-			"Worker" => "js-worker-api",
-			"ServiceWorker" => "js-service-worker-api",
-			"DedicatedWorker" => "js-worker-api", // See https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope
+			"Worker" => WorkerAPI,
+			"ServiceWorker" => ServiceWorkerAPI,
+			"DedicatedWorker" => WorkerAPI, // See https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope
 			"SharedWorker" => null, // TODO
 
-			"Worklet" => "js-worklet-api",
-			"AnimationWorklet" => "js-worklet-api",
-			"AudioWorklet" => "js-worklet-api",
-			"LayoutWorklet" => "js-worklet-api",
-			"PaintWorklet" => "js-worklet-api",
-			"SharedStorageWorklet" => "js-worklet-api",
+			"Worklet" => WorkletAPI,
+			"AnimationWorklet" => WorkletAPI,
+			"AudioWorklet" => WorkletAPI,
+			"LayoutWorklet" => WorkletAPI,
+			"PaintWorklet" => WorkletAPI,
+			"SharedStorageWorklet" => WorkletAPI,
 
 			// TODO (?)
 			"RTCIdentityProvider" => null,
@@ -301,7 +308,10 @@ class Main {
 				targetLibs.add(lib);
 			}
 
-			// TODO: if present in all libs, generate in core instead
+			// if present in all libs, generate in core instead
+			if (targetLibs.has(WindowAPI) && targetLibs.has(WorkerAPI) && targetLibs.has(ServiceWorkerAPI) && targetLibs.has(WorkletAPI)) {
+				targetLibs = [libs["*"]];
+			}
 
 			if (targetLibs.length > 0) {
 				for (lib in targetLibs) saveTo(ctx, lib, t, td);

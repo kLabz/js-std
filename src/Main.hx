@@ -1,3 +1,4 @@
+import haxe.PosInfos;
 import haxe.Resource;
 import haxe.io.Path;
 import haxe.macro.Expr.ComplexType;
@@ -19,6 +20,7 @@ import webidl2.AbstractNonUnionTypeDescription;
 import webidl2.AbstractValueDescription;
 import webidl2.DictionaryType;
 import webidl2.EnumType;
+import webidl2.ExtendedAttribute;
 import webidl2.IDLInterfaceMemberType;
 import webidl2.IDLInterfaceMixinMemberType;
 import webidl2.IDLRootType;
@@ -63,6 +65,23 @@ class Main {
 			};
 		}
 
+		function handleAttributes(attr:Array<ExtendedAttribute>, cb:ExtendedAttribute->Bool):Void {
+			attr.filter(cb);
+		}
+
+		function assertEmptyAttributes(attr:Array<ExtendedAttribute>, ?pos:PosInfos):Void {
+			for (a in attr) haxe.Log.trace('ERROR: unhandled extended attribute ${a.name}', pos);
+		}
+
+		function addUnhandledAttributesToDoc(doc:Null<String>, attr:Array<ExtendedAttribute>):Null<String> {
+			while (attr.length > 0) {
+				var a = attr.shift();
+				doc = doc.concat('Unhandled extended attribute ${a.name}', "\n");
+			}
+
+			return doc;
+		}
+
 		function resolveType(currentPack:Array<String>, t:String):ComplexType {
 			if (t == "undefined") return macro :Void; // TODO: not allowed everywhere..
 
@@ -93,6 +112,7 @@ class Main {
 			if (t.isSingle()) {
 				var t = t.asSingle();
 				var ct = resolveType(currentPack, t.idlType);
+				assertEmptyAttributes(t.extAttrs);
 				return if (t.nullable) macro :Null<$ct> else ct;
 			} else if (t.isUnion()) {
 				var t = t.asUnion();
@@ -106,6 +126,7 @@ class Main {
 						}
 						current;
 				};
+				assertEmptyAttributes(t.extAttrs);
 				return if (t.nullable) macro :Null<$ct> else ct;
 			} else {
 				function handleGeneric<T:AbstractNonUnionTypeDescription<T>>(t:T) {
@@ -147,6 +168,7 @@ class Main {
 				}
 				var t = t.asGeneric();
 				var ct = handleGeneric(cast t);
+				assertEmptyAttributes(t.extAttrs);
 				return if (t.nullable) macro :Null<$ct> else ct;
 			}
 		}
@@ -196,13 +218,14 @@ class Main {
 							var td:TypeDefinition = {
 								pack: pack,
 								name: t.name,
-								doc: null, // TODO retrieve docs
+								doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
 								pos: pos,
 								isExtern: null,
 								kind: TDAlias(ct),
 								fields: []
 							};
 
+							assertEmptyAttributes(t.extAttrs);
 							Sys.println(' > Exported callback typedef ${pack.concat([t.name]).join(".")}');
 							save(t.name, td);
 						});
@@ -223,7 +246,7 @@ class Main {
 							var fields = members.map(m -> {
 								({
 									name: m.name, // TODO: sanitize (note: no @:native on typedef..)
-									doc: null, // TODO retrieve docs
+									doc: addUnhandledAttributesToDoc(null, m.extAttrs), // TODO retrieve docs
 									kind: FVar(convertType(pack, m.idlType), convertValue(m.default_, pos)),
 									pos: pos,
 									meta: m.required ? null : [optMeta]
@@ -233,7 +256,7 @@ class Main {
 							var td:TypeDefinition = {
 								pack: pack,
 								name: t.name,
-								doc: null, // TODO retrieve docs
+								doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
 								pos: pos,
 								isExtern: null,
 								kind: TDAlias(t.inheritance == null
@@ -243,6 +266,7 @@ class Main {
 								fields: []
 							};
 
+							assertEmptyAttributes(t.extAttrs);
 							Sys.println(' > Exported typedef ${pack.concat([t.name]).join(".")}');
 							save(t.name, td);
 						});
@@ -254,7 +278,7 @@ class Main {
 							var td:TypeDefinition = {
 								pack: pack,
 								name: t.name,
-								doc: null, // TODO retrieve docs
+								doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
 								pos: pos,
 								isExtern: null,
 								kind: TDAbstract(macro :String, [AbEnum]),
@@ -266,6 +290,7 @@ class Main {
 								}:Field))
 							};
 
+							assertEmptyAttributes(t.extAttrs);
 							Sys.println(' > Exported enum abstract ${pack.concat([t.name]).join(".")}');
 							save(t.name, td);
 						});
@@ -318,7 +343,7 @@ class Main {
 										var meta = [];
 										fields.push({
 											name: sanitizeFieldName(m.name, meta, pos),
-											doc: doc, // TODO
+											doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
 											access: [AStatic, AInline],
 											kind: FVar(convertType(pack, m.idlType), convertValue(m.value, pos)),
 											pos: pos,
@@ -355,25 +380,39 @@ class Main {
 										for (f in newFields) fields.push(f);
 
 									case IDLConstructorMemberType:
-										fields.push({
-											name: "new",
-											doc: doc, // TODO
-											access: isOverload(m, members) ? [AOverload] : [],
-											kind: FFun({
-												args: m.arguments.map(a -> {
-													name: a.name,
-													opt: a.optional,
-													type: convertType(pack, a.idlType),
-													value: convertValue(a.default_, pos),
-													meta: null
-												}),
-												ret: macro :Void,
-												expr: null,
-												params: null
-											}),
-											pos: pos,
-											meta: []
+										var skip = false;
+										handleAttributes(m.extAttrs, function(a) {
+											return switch (a.name) {
+												case "HTMLConstructor":
+													skip = true;
+													false;
+
+												case _:
+													true;
+											}
 										});
+
+										if (!skip) {
+											fields.push({
+												name: "new",
+												doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
+												access: isOverload(m, members) ? [AOverload] : [],
+												kind: FFun({
+													args: m.arguments.map(a -> {
+														name: a.name,
+														opt: a.optional,
+														type: convertType(pack, a.idlType),
+														value: convertValue(a.default_, pos),
+														meta: null
+													}),
+													ret: macro :Void,
+													expr: null,
+													params: null
+												}),
+												pos: pos,
+												meta: []
+											});
+										}
 
 									case IDLAttributeMemberType if (m.special.or("") != "" && m.special != "static"):
 										trace('WARNING [${file.shortname}] TODO ${t.name}.${m.name}: special=${m.special} readonly=${m.readonly}');
@@ -383,7 +422,7 @@ class Main {
 										var meta = [];
 										fields.push({
 											name: sanitizeFieldName(m.name, meta, pos),
-											doc: doc, // TODO
+											doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
 											access: m.special == "static" ? [AStatic] : [],
 											kind: m.readonly ? FProp("default", "null", convertType(pack, m.idlType)) : FVar(convertType(pack, m.idlType)),
 											pos: pos,
@@ -411,7 +450,7 @@ class Main {
 										var meta = [];
 										fields.push({
 											name: sanitizeFieldName(m.name, meta, pos),
-											doc: doc, // TODO
+											doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
 											access: isOverload(m, members) ? [AOverload] : [],
 											kind: FFun({
 												args: m.arguments.map(a -> {
@@ -430,7 +469,9 @@ class Main {
 										});
 
 									case _: throw 'Unexpected member type ${m.type}.';
-								};
+								}
+
+								assertEmptyAttributes(m.extAttrs);
 							}
 
 							for (m in t.members) handleMember(m);
@@ -459,7 +500,7 @@ class Main {
 							var td:TypeDefinition = {
 								pack: pack,
 								name: t.name,
-								doc: typeDoc.length == 0 ? null : typeDoc.join("\n"), // TODO retrieve docs
+								doc: addUnhandledAttributesToDoc(typeDoc.length == 0 ? null : typeDoc.join("\n"), t.extAttrs), // TODO retrieve docs
 								pos: pos,
 								isExtern: true,
 								kind: TDClass(
@@ -474,6 +515,7 @@ class Main {
 								fields: fields
 							};
 
+							assertEmptyAttributes(t.extAttrs);
 							Sys.println(' > Exported class ${pack.concat([t.name]).join(".")}');
 							save(t.name, td);
 						});
@@ -489,13 +531,14 @@ class Main {
 							var td:TypeDefinition = {
 								pack: pack,
 								name: t.name,
-								doc: null, // TODO retrieve docs
+								doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
 								pos: pos,
 								isExtern: null,
 								kind: TDAlias(ct),
 								fields: []
 							};
 
+							assertEmptyAttributes(t.extAttrs);
 							Sys.println(' > Exported typedef ${pack.concat([t.name]).join(".")}');
 							save(t.name, td);
 						});

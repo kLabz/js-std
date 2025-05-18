@@ -66,7 +66,8 @@ class Main {
 		}
 
 		function handleAttributes(attr:Array<ExtendedAttribute>, cb:ExtendedAttribute->Bool):Void {
-			attr.filter(cb);
+			var removed = [for (a in attr) if (!cb(a)) continue else a];
+			while (removed.length > 0) attr.remove(removed.shift());
 		}
 
 		function assertEmptyAttributes(attr:Array<ExtendedAttribute>, ?pos:PosInfos):Void {
@@ -210,6 +211,7 @@ class Main {
 						packMap.set(t.name, pack);
 						tasks.push(() -> {
 							var ct = TFunction(
+								// TODO: make sure that arguments' extended attributes are handled
 								t.arguments.map(a ->
 									a.optional ? TOptional(TNamed(a.name, convertType(pack, a.idlType))) : TNamed(a.name, convertType(pack, a.idlType))
 								),
@@ -386,12 +388,8 @@ class Main {
 										var skip = false;
 										handleAttributes(m.extAttrs, function(a) {
 											return switch (a.name) {
-												case "HTMLConstructor":
-													skip = true;
-													false;
-
-												case _:
-													true;
+												case "HTMLConstructor": skip = true;
+												case _: false;
 											}
 										});
 
@@ -401,6 +399,7 @@ class Main {
 												doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
 												access: isOverload(m, members) ? [AOverload] : [],
 												kind: FFun({
+													// TODO: make sure that arguments' extended attributes are handled
 													args: m.arguments.map(a -> {
 														name: a.name,
 														opt: a.optional,
@@ -422,6 +421,13 @@ class Main {
 										typeDoc.push('TODO attribute ${m.name}: special=${m.special} readonly=${m.readonly}');
 
 									case IDLAttributeMemberType:
+										handleAttributes(m.extAttrs, function(a) {
+											return switch (a.name) {
+												case "CEReactions": true;
+												case _: false;
+											}
+										});
+
 										var meta = [];
 										fields.push({
 											name: sanitizeFieldName(m.name, meta, pos),
@@ -445,6 +451,13 @@ class Main {
 										}
 
 									case IDLOperationMemberType:
+										handleAttributes(m.extAttrs, function(a) {
+											return switch (a.name) {
+												case "CEReactions": true;
+												case _: false;
+											}
+										});
+
 										if (m.name == "" || m.name == null) {
 											trace('WARNING Operation member name is ${m.name} (special = ${m.special})');
 											var newDoc = '(special = ${m.special})';
@@ -456,6 +469,7 @@ class Main {
 											doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
 											access: isOverload(m, members) ? [AOverload] : [],
 											kind: FFun({
+												// TODO: make sure that arguments' extended attributes are handled
 												args: m.arguments.map(a -> {
 													name: a.name,
 													opt: a.optional,

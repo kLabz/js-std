@@ -24,6 +24,9 @@
 
 package js.xhr;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XMLHttpRequestUpload") extern class XMLHttpRequestUpload extends XMLHttpRequestEventTarget {
 
 }

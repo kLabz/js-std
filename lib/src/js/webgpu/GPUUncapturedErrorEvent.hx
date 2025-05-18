@@ -24,7 +24,14 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUUncapturedErrorEvent") extern class GPUUncapturedErrorEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var error(default, null) : GPUError;
 	function new(type:String, gpuUncapturedErrorEventInitDict:GPUUncapturedErrorEventInit):Void;
 }

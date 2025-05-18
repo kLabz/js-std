@@ -24,6 +24,9 @@
 
 package js.svgAnimations;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TimeEvent") extern class TimeEvent extends js.dom.Event {
 	var view(default, null) : Null<WindowProxy>;
 	var detail(default, null) : Int;

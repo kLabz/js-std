@@ -24,12 +24,25 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AbortSignal") extern class AbortSignal extends EventTarget {
 	var aborted(default, null) : Bool;
 	var reason(default, null) : Any;
 	var onabort : js.html.EventHandler;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function abort(?reason:Any):AbortSignal;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function any(signals:Array<AbortSignal>):AbortSignal;
 	function throwIfAborted():Void;
+	/**
+		Unhandled extended attribute Exposed
+		Unhandled extended attribute NewObject
+	**/
 	function timeout(milliseconds:Float):AbortSignal;
 }

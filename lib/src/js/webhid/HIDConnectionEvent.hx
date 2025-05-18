@@ -24,7 +24,14 @@
 
 package js.webhid;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("HIDConnectionEvent") extern class HIDConnectionEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var device(default, null) : HIDDevice;
 	function new(type:String, eventInitDict:HIDConnectionEventInit):Void;
 }

@@ -24,6 +24,10 @@
 
 package js.webBluetooth;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("BluetoothDevice") extern class BluetoothDevice extends js.dom.EventTarget {
 	var id(default, null) : String;
 	var name(default, null) : Null<String>;

@@ -24,6 +24,9 @@
 
 package js.backgroundFetch;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BackgroundFetchUpdateUIEvent") extern class BackgroundFetchUpdateUIEvent extends BackgroundFetchEvent {
 	function new(type:String, init:BackgroundFetchEventInit):Void;
 	function updateUI(?options:BackgroundFetchUIOptions = {  }):js.lib.Promise<Void>;

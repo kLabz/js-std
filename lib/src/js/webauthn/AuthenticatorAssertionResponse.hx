@@ -24,8 +24,21 @@
 
 package js.webauthn;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("AuthenticatorAssertionResponse") extern class AuthenticatorAssertionResponse extends AuthenticatorResponse {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var authenticatorData(default, null) : ArrayBuffer;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var signature(default, null) : ArrayBuffer;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var userHandle(default, null) : Null<ArrayBuffer>;
 }

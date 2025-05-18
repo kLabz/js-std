@@ -24,6 +24,9 @@
 
 package js.turtledove;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("InterestGroupScriptRunnerGlobalScope") extern class InterestGroupScriptRunnerGlobalScope {
 	var privateAggregation(default, null) : Null<js.privateAggregationApi.PrivateAggregation>;
 	var protectedAudience(default, null) : ProtectedAudienceUtilities;

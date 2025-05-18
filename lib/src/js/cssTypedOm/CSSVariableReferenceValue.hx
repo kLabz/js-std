@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSVariableReferenceValue") extern class CSSVariableReferenceValue {
 	var variable : String;
 	var fallback(default, null) : Null<CSSUnparsedValue>;

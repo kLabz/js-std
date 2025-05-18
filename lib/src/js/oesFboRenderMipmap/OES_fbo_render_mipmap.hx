@@ -24,6 +24,10 @@
 
 package js.oesFboRenderMipmap;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("OES_fbo_render_mipmap") extern class OES_fbo_render_mipmap {
 
 }

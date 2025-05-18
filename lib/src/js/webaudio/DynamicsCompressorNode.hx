@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DynamicsCompressorNode") extern class DynamicsCompressorNode extends AudioNode {
 	var threshold(default, null) : AudioParam;
 	var knee(default, null) : AudioParam;

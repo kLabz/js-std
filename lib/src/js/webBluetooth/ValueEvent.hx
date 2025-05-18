@@ -24,6 +24,10 @@
 
 package js.webBluetooth;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("ValueEvent") extern class ValueEvent extends js.dom.Event {
 	var value(default, null) : Any;
 	function new(type:String, ?initDict:ValueEventInit = {  }):Void;

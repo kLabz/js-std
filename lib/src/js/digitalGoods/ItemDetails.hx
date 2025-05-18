@@ -42,6 +42,9 @@ typedef ItemDetails = {
 	var introductoryPrice : js.paymentRequest.PaymentCurrencyAmount;
 	@:optional
 	var introductoryPricePeriod : String;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var introductoryPriceCycles : Float;
 };

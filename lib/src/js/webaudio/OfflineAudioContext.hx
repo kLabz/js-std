@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("OfflineAudioContext") extern class OfflineAudioContext extends BaseAudioContext {
 	var length(default, null) : Int;
 	var oncomplete : js.html.EventHandler;

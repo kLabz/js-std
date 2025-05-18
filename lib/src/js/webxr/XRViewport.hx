@@ -24,6 +24,10 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRViewport") extern class XRViewport {
 	var x(default, null) : Int;
 	var y(default, null) : Int;

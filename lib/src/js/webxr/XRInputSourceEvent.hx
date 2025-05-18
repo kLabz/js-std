@@ -24,8 +24,18 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRInputSourceEvent") extern class XRInputSourceEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var frame(default, null) : XRFrame;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var inputSource(default, null) : XRInputSource;
 	function new(type:String, eventInitDict:XRInputSourceEventInit):Void;
 }

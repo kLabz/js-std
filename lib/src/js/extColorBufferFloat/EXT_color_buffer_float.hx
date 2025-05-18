@@ -24,6 +24,10 @@
 
 package js.extColorBufferFloat;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("EXT_color_buffer_float") extern class EXT_color_buffer_float {
 
 }

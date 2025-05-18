@@ -24,6 +24,9 @@
 
 package js.cssAnimations;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSKeyframesRule") extern class CSSKeyframesRule extends js.cssom.CSSRule implements ArrayAccess<CSSKeyframeRule> {
 	var name : CSSOMString;
 	var cssRules(default, null) : js.cssom.CSSRuleList;

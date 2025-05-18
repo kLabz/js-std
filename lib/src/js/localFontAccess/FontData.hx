@@ -24,6 +24,9 @@
 
 package js.localFontAccess;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FontData") extern class FontData {
 	var postscriptName(default, null) : String;
 	var fullName(default, null) : String;

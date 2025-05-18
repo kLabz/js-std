@@ -24,6 +24,9 @@
 
 package js.observable;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Observable") extern class Observable {
 	function new(callback:SubscribeCallback):Void;
 	@:native("catch")

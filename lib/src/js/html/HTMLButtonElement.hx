@@ -24,18 +24,54 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLButtonElement") extern class HTMLButtonElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var command : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var commandForElement : Null<js.dom.Element>;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var formAction : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var formEnctype : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var formMethod : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var formNoValidate : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var formTarget : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var name : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var type : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var value : String;
 	var willValidate(default, null) : Bool;
 	var validity(default, null) : ValidityState;
@@ -49,7 +85,6 @@ package js.html;
 		From interface mixin PopoverInvokerElement
 	**/
 	var popoverTargetAction : String;
-	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
 	function setCustomValidity(error:String):Void;

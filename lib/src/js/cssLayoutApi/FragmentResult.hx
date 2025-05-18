@@ -24,6 +24,9 @@
 
 package js.cssLayoutApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FragmentResult") extern class FragmentResult {
 	var inlineSize(default, null) : Float;
 	var blockSize(default, null) : Float;

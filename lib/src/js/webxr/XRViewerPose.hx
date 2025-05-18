@@ -24,6 +24,13 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRViewerPose") extern class XRViewerPose extends XRPose {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var views(default, null) : Array<XRView>;
 }

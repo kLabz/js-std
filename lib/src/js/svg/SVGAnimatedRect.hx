@@ -24,7 +24,16 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGAnimatedRect") extern class SVGAnimatedRect {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var baseVal(default, null) : js.geometry.DOMRect;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var animVal(default, null) : js.geometry.DOMRectReadOnly;
 }

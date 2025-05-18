@@ -24,6 +24,9 @@
 
 package js.cssTransitions2;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSTransition") extern class CSSTransition extends js.webAnimations.Animation {
 	var transitionProperty(default, null) : CSSOMString;
 }

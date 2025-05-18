@@ -24,6 +24,9 @@
 
 package js.audioSession;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AudioSession") extern class AudioSession extends js.dom.EventTarget {
 	var type : AudioSessionType;
 	var state(default, null) : AudioSessionState;

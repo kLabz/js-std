@@ -24,6 +24,9 @@
 
 package js.cssTransitions2;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSStartingStyleRule") extern class CSSStartingStyleRule extends js.cssom.CSSGroupingRule {
 
 }

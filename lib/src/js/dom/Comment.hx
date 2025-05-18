@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Comment") extern class Comment extends CharacterData {
 	function new(?data:String = ""):Void;
 }

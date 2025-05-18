@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DataTransferItemList") extern class DataTransferItemList implements ArrayAccess<DataTransferItem> {
 	var length(default, null) : Int;
 	overload function add(data:String, type:String):Null<DataTransferItem>;

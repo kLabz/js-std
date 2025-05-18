@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSMathSum") extern class CSSMathSum extends CSSMathValue {
 	var values(default, null) : CSSNumericArray;
 	function new(args:CSSNumberish):Void;

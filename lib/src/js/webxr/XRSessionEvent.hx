@@ -24,7 +24,14 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRSessionEvent") extern class XRSessionEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var session(default, null) : XRSession;
 	function new(type:String, eventInitDict:XRSessionEventInit):Void;
 }

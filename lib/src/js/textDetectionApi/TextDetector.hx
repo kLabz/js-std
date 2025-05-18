@@ -24,6 +24,10 @@
 
 package js.textDetectionApi;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("TextDetector") extern class TextDetector {
 	function new():Void;
 	function detect(image:js.html.ImageBitmapSource):js.lib.Promise<Array<DetectedText>>;

@@ -24,6 +24,9 @@
 
 package js.gamepad;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Gamepad") extern class Gamepad {
 	var id(default, null) : String;
 	var index(default, null) : Int;
@@ -33,6 +36,9 @@ package js.gamepad;
 	var axes(default, null) : Array<Float>;
 	var buttons(default, null) : Array<GamepadButton>;
 	var touches(default, null) : Array<GamepadTouch>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var vibrationActuator(default, null) : GamepadHapticActuator;
 	/**
 		From partial interface in gamepad-extensions.idl

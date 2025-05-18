@@ -24,7 +24,14 @@
 
 package js.cssom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSPageRule") extern class CSSPageRule extends CSSGroupingRule {
 	var selectorText : CSSOMString;
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var style(default, null) : CSSPageDescriptors;
 }

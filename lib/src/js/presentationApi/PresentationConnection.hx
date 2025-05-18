@@ -24,6 +24,10 @@
 
 package js.presentationApi;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("PresentationConnection") extern class PresentationConnection extends js.dom.EventTarget {
 	var id(default, null) : String;
 	var url(default, null) : String;

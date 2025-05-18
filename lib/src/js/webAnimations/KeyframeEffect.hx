@@ -24,6 +24,9 @@
 
 package js.webAnimations;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("KeyframeEffect") extern class KeyframeEffect extends AnimationEffect {
 	var target : Null<js.dom.Element>;
 	var pseudoElement : Null<CSSOMString>;

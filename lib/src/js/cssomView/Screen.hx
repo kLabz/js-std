@@ -24,6 +24,9 @@
 
 package js.cssomView;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Screen") extern class Screen {
 	var availWidth(default, null) : Int;
 	var availHeight(default, null) : Int;
@@ -33,14 +36,17 @@ package js.cssomView;
 	var pixelDepth(default, null) : Int;
 	/**
 		From partial interface in screen-orientation.idl
+		Unhandled extended attribute SameObject
 	**/
 	var orientation(default, null) : js.screenOrientation.ScreenOrientation;
 	/**
 		From partial interface in window-management.idl
+		Unhandled extended attribute SecureContext
 	**/
 	var isExtended(default, null) : Bool;
 	/**
 		From partial interface in window-management.idl
+		Unhandled extended attribute SecureContext
 	**/
 	var onchange : js.html.EventHandler;
 }

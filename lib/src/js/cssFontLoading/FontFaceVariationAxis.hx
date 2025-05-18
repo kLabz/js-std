@@ -24,6 +24,9 @@
 
 package js.cssFontLoading;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FontFaceVariationAxis") extern class FontFaceVariationAxis {
 	var name(default, null) : String;
 	var axisTag(default, null) : String;

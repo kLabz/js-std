@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSMathProduct") extern class CSSMathProduct extends CSSMathValue {
 	var values(default, null) : CSSNumericArray;
 	function new(args:CSSNumberish):Void;

@@ -24,10 +24,28 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGTextPositioningElement") extern class SVGTextPositioningElement extends SVGTextContentElement {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var x(default, null) : SVGAnimatedLengthList;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var y(default, null) : SVGAnimatedLengthList;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var dx(default, null) : SVGAnimatedLengthList;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var dy(default, null) : SVGAnimatedLengthList;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var rotate(default, null) : SVGAnimatedNumberList;
 }

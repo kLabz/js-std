@@ -24,6 +24,9 @@
 
 package js.svgAnimations;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGMPathElement") extern class SVGMPathElement extends js.svg.SVGElement {
 	/**
 		From interface mixin SVGURIReference

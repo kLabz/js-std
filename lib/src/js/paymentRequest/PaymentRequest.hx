@@ -24,6 +24,10 @@
 
 package js.paymentRequest;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("PaymentRequest") extern class PaymentRequest extends js.dom.EventTarget {
 	var id(default, null) : String;
 	var shippingAddress(default, null) : Null<js.contactPicker.ContactAddress>;
@@ -33,11 +37,20 @@ package js.paymentRequest;
 	var onshippingoptionchange : js.html.EventHandler;
 	var onpaymentmethodchange : js.html.EventHandler;
 	function new(methodData:Array<PaymentMethodData>, details:PaymentDetailsInit, ?options:PaymentOptions = {  }):Void;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function abort():js.lib.Promise<Void>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function canMakePayment():js.lib.Promise<Bool>;
 	/**
 		From partial interface in secure-payment-confirmation.idl
 	**/
 	function securePaymentConfirmationAvailability():js.lib.Promise<js.securePaymentConfirmation.SecurePaymentConfirmationAvailability>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function show(?detailsPromise:js.lib.Promise<PaymentDetailsUpdate>):js.lib.Promise<PaymentResponse>;
 }

@@ -24,10 +24,14 @@
 
 package js.hrTime;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Performance") extern class Performance extends js.dom.EventTarget {
 	var timeOrigin(default, null) : DOMHighResTimeStamp;
 	/**
 		From partial interface in event-timing.idl
+		Unhandled extended attribute SameObject
 	**/
 	var eventCounts(default, null) : js.eventTiming.EventCounts;
 	/**
@@ -36,10 +40,12 @@ package js.hrTime;
 	var interactionCount(default, null) : Float;
 	/**
 		From partial interface in navigation-timing.idl
+		Unhandled extended attribute SameObject
 	**/
 	var timing(default, null) : js.navigationTiming.PerformanceTiming;
 	/**
 		From partial interface in navigation-timing.idl
+		Unhandled extended attribute SameObject
 	**/
 	var navigation(default, null) : js.navigationTiming.PerformanceNavigation;
 	/**
@@ -80,6 +86,8 @@ package js.hrTime;
 	function measure(measureName:String, ?startOrMeasureOptions:haxe.extern.EitherType<String, js.userTiming.PerformanceMeasureOptions> = {  }, ?endMark:String):js.userTiming.PerformanceMeasure;
 	/**
 		From partial interface in performance-measure-memory.idl
+		Unhandled extended attribute Exposed
+		Unhandled extended attribute CrossOriginIsolated
 	**/
 	function measureUserAgentSpecificMemory():js.lib.Promise<js.performanceMeasureMemory.MemoryMeasurement>;
 	function now():DOMHighResTimeStamp;
@@ -87,5 +95,8 @@ package js.hrTime;
 		From partial interface in resource-timing.idl
 	**/
 	function setResourceTimingBufferSize(maxSize:Int):Void;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

@@ -24,6 +24,9 @@
 
 package js.webrtc;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCPeerConnectionIceErrorEvent") extern class RTCPeerConnectionIceErrorEvent extends js.dom.Event {
 	var address(default, null) : Null<String>;
 	var port(default, null) : Null<Int>;

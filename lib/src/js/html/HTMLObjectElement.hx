@@ -24,12 +24,30 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLObjectElement") extern class HTMLObjectElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var data : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var type : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var name : String;
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var width : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var height : String;
 	var contentDocument(default, null) : Null<js.dom.Document>;
 	var contentWindow(default, null) : Null<WindowProxy>;
@@ -38,49 +56,59 @@ package js.html;
 	var validationMessage(default, null) : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var archive : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var code : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var declare : Bool;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var hspace : Int;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var standby : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var vspace : Int;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var codeBase : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var codeType : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var useMap : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var border : String;
-	function new():Void;
 	function checkValidity():Bool;
 	function getSVGDocument():Null<js.dom.Document>;
 	function reportValidity():Bool;

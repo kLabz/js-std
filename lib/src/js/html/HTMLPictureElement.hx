@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLPictureElement") extern class HTMLPictureElement extends HTMLElement {
-	function new():Void;
+
 }

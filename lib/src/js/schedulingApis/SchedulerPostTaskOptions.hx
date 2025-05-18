@@ -29,6 +29,9 @@ typedef SchedulerPostTaskOptions = {
 	var signal : js.dom.AbortSignal;
 	@:optional
 	var priority : TaskPriority;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var delay : Float = 0;
 };

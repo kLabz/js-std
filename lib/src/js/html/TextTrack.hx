@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TextTrack") extern class TextTrack extends js.dom.EventTarget {
 	var kind(default, null) : TextTrackKind;
 	var label(default, null) : String;

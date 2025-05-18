@@ -24,9 +24,20 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLFontElement") extern class HTMLFontElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var color : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var face : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var size : String;
-	function new():Void;
 }

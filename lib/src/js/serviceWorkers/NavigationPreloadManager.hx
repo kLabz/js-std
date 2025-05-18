@@ -24,6 +24,10 @@
 
 package js.serviceWorkers;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("NavigationPreloadManager") extern class NavigationPreloadManager {
 	function disable():js.lib.Promise<Void>;
 	function enable():js.lib.Promise<Void>;

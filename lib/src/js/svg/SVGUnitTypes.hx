@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGUnitTypes") extern class SVGUnitTypes {
 	static inline var SVG_UNIT_TYPE_UNKNOWN : Int = 0;
 	static inline var SVG_UNIT_TYPE_USERSPACEONUSE : Int = 1;

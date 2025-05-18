@@ -24,8 +24,18 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRReferenceSpaceEvent") extern class XRReferenceSpaceEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var referenceSpace(default, null) : XRReferenceSpace;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var transform(default, null) : Null<XRRigidTransform>;
 	function new(type:String, eventInitDict:XRReferenceSpaceEventInit):Void;
 }

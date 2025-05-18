@@ -24,10 +24,22 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MutationRecord") extern class MutationRecord {
 	var type(default, null) : String;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var target(default, null) : Node;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var addedNodes(default, null) : NodeList;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var removedNodes(default, null) : NodeList;
 	var previousSibling(default, null) : Null<Node>;
 	var nextSibling(default, null) : Null<Node>;

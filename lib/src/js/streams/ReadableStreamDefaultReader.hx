@@ -24,6 +24,9 @@
 
 package js.streams;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ReadableStreamDefaultReader") extern class ReadableStreamDefaultReader {
 	/**
 		From interface mixin ReadableStreamGenericReader

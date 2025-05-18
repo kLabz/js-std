@@ -24,7 +24,16 @@
 
 package js.webrtc;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCIceCandidatePair") extern class RTCIceCandidatePair {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var local(default, null) : RTCIceCandidate;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var remote(default, null) : RTCIceCandidate;
 }

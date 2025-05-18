@@ -24,6 +24,9 @@
 
 package js.selectionApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Selection") extern class Selection {
 	var anchorNode(default, null) : Null<js.dom.Node>;
 	var anchorOffset(default, null) : Int;
@@ -42,6 +45,9 @@ package js.selectionApi;
 	function collapseToEnd():Void;
 	function collapseToStart():Void;
 	function containsNode(node:js.dom.Node, ?allowPartialContainment:Bool = false):Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	function deleteFromDocument():Void;
 	function empty():Void;
 	function extend(node:js.dom.Node, ?offset:Int = 0):Void;

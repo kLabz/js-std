@@ -24,6 +24,9 @@
 
 package js.resizeObserver;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ResizeObserverSize") extern class ResizeObserverSize {
 	var inlineSize(default, null) : Float;
 	var blockSize(default, null) : Float;

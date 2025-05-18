@@ -24,8 +24,15 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRSystem") extern class XRSystem extends js.dom.EventTarget {
 	var ondevicechange : js.html.EventHandler;
 	function isSessionSupported(mode:XRSessionMode):js.lib.Promise<Bool>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function requestSession(mode:XRSessionMode, ?options:XRSessionInit = {  }):js.lib.Promise<XRSession>;
 }

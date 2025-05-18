@@ -24,6 +24,9 @@
 
 package js.webrtc;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCPeerConnection") extern class RTCPeerConnection extends js.dom.EventTarget {
 	var localDescription(default, null) : Null<RTCSessionDescription>;
 	var currentLocalDescription(default, null) : Null<RTCSessionDescription>;

@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ErrorEvent") extern class ErrorEvent extends js.dom.Event {
 	var message(default, null) : String;
 	var filename(default, null) : String;

@@ -24,11 +24,17 @@
 
 package js.mediasession;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MediaMetadata") extern class MediaMetadata {
 	var title : String;
 	var artist : String;
 	var album : String;
 	var artwork : Array<{ }>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var chapterInfo(default, null) : Array<ChapterInformation>;
 	function new(?init:MediaMetadataInit = {  }):Void;
 }

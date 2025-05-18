@@ -24,6 +24,13 @@
 
 package js.cssMixins;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSFunctionDeclarations") extern class CSSFunctionDeclarations extends js.cssom.CSSRule {
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var style(default, null) : CSSFunctionDescriptors;
 }

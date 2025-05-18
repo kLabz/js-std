@@ -24,6 +24,9 @@
 
 package js.webusb;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("USBPermissionResult") extern class USBPermissionResult extends js.permissions.PermissionStatus {
 	var devices : Array<USBDevice>;
 }

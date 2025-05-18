@@ -24,6 +24,9 @@
 
 package js.cssMasking;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGClipPathElement") extern class SVGClipPathElement extends js.svg.SVGElement {
 	var clipPathUnits(default, null) : js.svg.SVGAnimatedEnumeration;
 	var transform(default, null) : js.svg.SVGAnimatedTransformList;

@@ -24,6 +24,9 @@
 
 package js.cssLayoutApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("LayoutEdges") extern class LayoutEdges {
 	var inlineStart(default, null) : Float;
 	var inlineEnd(default, null) : Float;

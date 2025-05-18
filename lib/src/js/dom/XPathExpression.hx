@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XPathExpression") extern class XPathExpression {
 	function evaluate(contextNode:Node, ?type:Int = 0, ?result:Null<XPathResult> = null):XPathResult;
 }

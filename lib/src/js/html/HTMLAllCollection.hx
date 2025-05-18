@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyUnenumerableNamedProperties
+**/
 @:native("HTMLAllCollection") extern class HTMLAllCollection implements ArrayAccess<js.dom.Element> {
 	var length(default, null) : Int;
 	function item(?nameOrIndex:String):Null<haxe.extern.EitherType<js.dom.HTMLCollection, js.dom.Element>>;

@@ -24,6 +24,10 @@
 
 package js.rawCameraAccess;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRCamera") extern class XRCamera {
 	var width(default, null) : Int;
 	var height(default, null) : Int;

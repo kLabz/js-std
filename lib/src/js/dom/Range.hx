@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Range") extern class Range extends AbstractRange {
 	var commonAncestorContainer(default, null) : Node;
 	static inline var START_TO_START : Int = 0;
@@ -35,26 +38,46 @@ package js.dom;
 		(special = stringifier)
 	**/
 	function ():Void;
+	/**
+		Unhandled extended attribute CEReactions
+		Unhandled extended attribute NewObject
+	**/
 	function cloneContents():DocumentFragment;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function cloneRange():Range;
 	function collapse(?toStart:Bool = false):Void;
 	function compareBoundaryPoints(how:Int, sourceRange:Range):Int;
 	function comparePoint(node:Node, offset:Int):Int;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
+		Unhandled extended attribute NewObject
 	**/
 	function createContextualFragment(string:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>):DocumentFragment;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	function deleteContents():Void;
 	function detach():Void;
+	/**
+		Unhandled extended attribute CEReactions
+		Unhandled extended attribute NewObject
+	**/
 	function extractContents():DocumentFragment;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute NewObject
 	**/
 	function getBoundingClientRect():js.geometry.DOMRect;
 	/**
 		From partial interface in cssom-view.idl
 	**/
 	function getClientRects():js.geometry.DOMRectList;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	function insertNode(node:Node):Void;
 	function intersectsNode(node:Node):Bool;
 	function isPointInRange(node:Node, offset:Int):Bool;
@@ -66,5 +89,8 @@ package js.dom;
 	function setStart(node:Node, offset:Int):Void;
 	function setStartAfter(node:Node):Void;
 	function setStartBefore(node:Node):Void;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	function surroundContents(newParent:Node):Void;
 }

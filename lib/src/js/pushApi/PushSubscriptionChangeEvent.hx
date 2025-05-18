@@ -24,6 +24,10 @@
 
 package js.pushApi;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("PushSubscriptionChangeEvent") extern class PushSubscriptionChangeEvent extends js.serviceWorkers.ExtendableEvent {
 	var newSubscription(default, null) : Null<PushSubscription>;
 	var oldSubscription(default, null) : Null<PushSubscription>;

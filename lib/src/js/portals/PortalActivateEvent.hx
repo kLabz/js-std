@@ -24,6 +24,9 @@
 
 package js.portals;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PortalActivateEvent") extern class PortalActivateEvent extends js.dom.Event {
 	var data(default, null) : Any;
 	function new(type:String, ?eventInitDict:PortalActivateEventInit = {  }):Void;

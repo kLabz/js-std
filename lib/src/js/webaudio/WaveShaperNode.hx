@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WaveShaperNode") extern class WaveShaperNode extends AudioNode {
 	var curve : Null<Float32Array>;
 	var oversample : OverSampleType;

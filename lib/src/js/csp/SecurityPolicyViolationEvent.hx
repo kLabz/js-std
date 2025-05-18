@@ -24,6 +24,9 @@
 
 package js.csp;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SecurityPolicyViolationEvent") extern class SecurityPolicyViolationEvent extends js.dom.Event {
 	var documentURI(default, null) : String;
 	var referrer(default, null) : String;

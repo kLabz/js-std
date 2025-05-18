@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSRotate") extern class CSSRotate extends CSSTransformComponent {
 	var x : CSSNumberish;
 	var y : CSSNumberish;

@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUQuerySet") extern class GPUQuerySet {
 	var type(default, null) : GPUQueryType;
 	var count(default, null) : GPUSize32Out;

@@ -24,10 +24,16 @@
 
 package js.indexeddb;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IDBTransaction") extern class IDBTransaction extends js.dom.EventTarget {
 	var objectStoreNames(default, null) : js.html.DOMStringList;
 	var mode(default, null) : IDBTransactionMode;
 	var durability(default, null) : IDBTransactionDurability;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var db(default, null) : IDBDatabase;
 	var error(default, null) : Null<js.webidl.DOMException>;
 	var onabort : js.html.EventHandler;

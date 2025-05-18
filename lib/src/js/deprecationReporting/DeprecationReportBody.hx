@@ -24,6 +24,9 @@
 
 package js.deprecationReporting;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DeprecationReportBody") extern class DeprecationReportBody extends js.reporting.ReportBody {
 	var id(default, null) : String;
 	var anticipatedRemoval(default, null) : Null<{ }>;
@@ -31,5 +34,8 @@ package js.deprecationReporting;
 	var sourceFile(default, null) : Null<String>;
 	var lineNumber(default, null) : Null<Int>;
 	var columnNumber(default, null) : Null<Int>;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

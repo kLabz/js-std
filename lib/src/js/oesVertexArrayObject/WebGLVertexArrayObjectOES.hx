@@ -24,6 +24,10 @@
 
 package js.oesVertexArrayObject;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("WebGLVertexArrayObjectOES") extern class WebGLVertexArrayObjectOES extends js.webgl1.WebGLObject {
 
 }

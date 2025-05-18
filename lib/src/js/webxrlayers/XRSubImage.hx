@@ -24,6 +24,12 @@
 
 package js.webxrlayers;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XRSubImage") extern class XRSubImage {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var viewport(default, null) : js.webxr.XRViewport;
 }

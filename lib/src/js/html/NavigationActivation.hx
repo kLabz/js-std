@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("NavigationActivation") extern class NavigationActivation {
 	var from(default, null) : Null<NavigationHistoryEntry>;
 	var entry(default, null) : NavigationHistoryEntry;

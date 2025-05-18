@@ -24,6 +24,9 @@
 
 package js.streams;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ReadableStreamDefaultController") extern class ReadableStreamDefaultController {
 	var desiredSize(default, null) : Null<Float>;
 	function close():Void;

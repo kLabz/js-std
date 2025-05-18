@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("StylePropertyMap") extern class StylePropertyMap extends StylePropertyMapReadOnly {
 	function append(property:String, values:haxe.extern.EitherType<CSSStyleValue, String>):Void;
 	function clear():Void;

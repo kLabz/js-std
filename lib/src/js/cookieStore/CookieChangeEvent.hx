@@ -24,8 +24,18 @@
 
 package js.cookieStore;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("CookieChangeEvent") extern class CookieChangeEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var changed(default, null) : Array<CookieListItem>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var deleted(default, null) : Array<CookieListItem>;
 	function new(type:String, ?eventInitDict:CookieChangeEventInit = {  }):Void;
 }

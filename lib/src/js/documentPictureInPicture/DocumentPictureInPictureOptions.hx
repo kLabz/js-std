@@ -25,8 +25,14 @@
 package js.documentPictureInPicture;
 
 typedef DocumentPictureInPictureOptions = {
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var width : Float = 0;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var height : Float = 0;
 	@:optional

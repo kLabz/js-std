@@ -24,6 +24,9 @@
 
 package js.webrtcIdentity;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCIdentityAssertion") extern class RTCIdentityAssertion {
 	var idp : String;
 	var name : String;

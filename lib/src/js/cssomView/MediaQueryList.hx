@@ -24,6 +24,9 @@
 
 package js.cssomView;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MediaQueryList") extern class MediaQueryList extends js.dom.EventTarget {
 	var media(default, null) : CSSOMString;
 	var matches(default, null) : Bool;

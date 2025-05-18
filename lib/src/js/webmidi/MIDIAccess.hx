@@ -24,6 +24,11 @@
 
 package js.webmidi;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Transferable
+**/
 @:native("MIDIAccess") extern class MIDIAccess extends js.dom.EventTarget {
 	var inputs(default, null) : MIDIInputMap;
 	var outputs(default, null) : MIDIOutputMap;

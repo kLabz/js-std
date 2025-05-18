@@ -26,12 +26,27 @@ package js.webcodecs;
 
 typedef VideoEncoderConfig = {
 	var codec : String;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	var width : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	var height : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var displayWidth : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var displayHeight : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var bitrate : Float;
 	@:optional

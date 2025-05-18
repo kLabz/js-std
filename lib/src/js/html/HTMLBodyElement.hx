@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLBodyElement") extern class HTMLBodyElement extends HTMLElement {
 	/**
 		From interface mixin WindowEventHandlers
@@ -115,27 +118,32 @@ package js.html;
 	var onorientationchange : EventHandler;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var text : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var link : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var vLink : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var aLink : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var bgColor : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var background : String;
-	function new():Void;
 }

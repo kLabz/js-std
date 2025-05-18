@@ -24,6 +24,10 @@
 
 package js.extTextureNorm16;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("EXT_texture_norm16") extern class EXT_texture_norm16 {
 	static inline var R16_EXT : js.webgl1.GLenum = 0x822A;
 	static inline var RG16_EXT : js.webgl1.GLenum = 0x822C;

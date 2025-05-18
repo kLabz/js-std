@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RadioNodeList") extern class RadioNodeList extends js.dom.NodeList {
 	var value : String;
 }

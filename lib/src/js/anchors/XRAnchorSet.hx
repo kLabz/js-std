@@ -26,6 +26,7 @@ package js.anchors;
 
 /**
 	TODO SetlikeDeclaration handling
+	Unhandled extended attribute Exposed
 **/
 @:native("XRAnchorSet") extern class XRAnchorSet {
 

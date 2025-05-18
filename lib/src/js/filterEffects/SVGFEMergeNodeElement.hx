@@ -24,6 +24,9 @@
 
 package js.filterEffects;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGFEMergeNodeElement") extern class SVGFEMergeNodeElement extends js.svg.SVGElement {
 	var in1(default, null) : js.svg.SVGAnimatedString;
 }

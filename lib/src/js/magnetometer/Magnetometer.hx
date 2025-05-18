@@ -24,6 +24,10 @@
 
 package js.magnetometer;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("Magnetometer") extern class Magnetometer extends js.genericSensor.Sensor {
 	var x(default, null) : Null<Float>;
 	var y(default, null) : Null<Float>;

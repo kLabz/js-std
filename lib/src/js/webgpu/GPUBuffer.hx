@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUBuffer") extern class GPUBuffer {
 	var size(default, null) : GPUSize64Out;
 	var usage(default, null) : GPUFlagsConstant;

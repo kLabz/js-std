@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AudioDestinationNode") extern class AudioDestinationNode extends AudioNode {
 	var maxChannelCount(default, null) : Int;
 }

@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PromiseRejectionEvent") extern class PromiseRejectionEvent extends js.dom.Event {
 	var promise(default, null) : { };
 	var reason(default, null) : Any;

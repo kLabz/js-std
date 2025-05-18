@@ -24,10 +24,13 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLHtmlElement") extern class HTMLHtmlElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var version : String;
-	function new():Void;
 }

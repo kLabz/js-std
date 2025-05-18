@@ -24,10 +24,23 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRRigidTransform") extern class XRRigidTransform {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var position(default, null) : js.geometry.DOMPointReadOnly;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var orientation(default, null) : js.geometry.DOMPointReadOnly;
 	var matrix(default, null) : Float32Array;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var inverse(default, null) : XRRigidTransform;
 	function new(?position:js.geometry.DOMPointInit = {  }, ?orientation:js.geometry.DOMPointInit = {  }):Void;
 }

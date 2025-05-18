@@ -24,6 +24,10 @@
 
 package js.webglClipCullDistance;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("WEBGL_clip_cull_distance") extern class WEBGL_clip_cull_distance {
 	static inline var MAX_CLIP_DISTANCES_WEBGL : js.webgl1.GLenum = 0x0D32;
 	static inline var MAX_CULL_DISTANCES_WEBGL : js.webgl1.GLenum = 0x82F9;

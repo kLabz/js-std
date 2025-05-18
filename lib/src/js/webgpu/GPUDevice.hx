@@ -24,10 +24,26 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUDevice") extern class GPUDevice extends js.dom.EventTarget {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var features(default, null) : GPUSupportedFeatures;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var limits(default, null) : GPUSupportedLimits;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var adapterInfo(default, null) : GPUAdapterInfo;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var queue(default, null) : GPUQueue;
 	/**
 		From interface mixin GPUObjectBase

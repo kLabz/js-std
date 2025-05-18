@@ -24,7 +24,13 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DOMParser") extern class DOMParser {
 	function new():Void;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function parseFromString(string:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>, type:DOMParserSupportedType):js.dom.Document;
 }

@@ -24,6 +24,10 @@
 
 package js.geolocationSensor;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("GeolocationSensor") extern class GeolocationSensor extends js.genericSensor.Sensor {
 	var latitude(default, null) : Null<Float>;
 	var longitude(default, null) : Null<Float>;

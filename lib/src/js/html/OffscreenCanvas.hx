@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Transferable
+**/
 @:native("OffscreenCanvas") extern class OffscreenCanvas extends js.dom.EventTarget {
 	var width : Float;
 	var height : Float;

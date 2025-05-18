@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ProcessingInstruction") extern class ProcessingInstruction extends CharacterData {
 	var target(default, null) : String;
 	/**

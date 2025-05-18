@@ -24,6 +24,9 @@
 
 package js.cssParserApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSParserRule") extern class CSSParserRule {
 
 }

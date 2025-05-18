@@ -24,6 +24,9 @@
 
 package js.webrtcEncodedTransform;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCRtpScriptTransform") extern class RTCRtpScriptTransform {
 	function new(worker:js.html.Worker, ?options:Any, ?transfer:Array<{ }>):Void;
 }

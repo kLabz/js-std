@@ -24,6 +24,10 @@
 
 package js.translationApi;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("LanguageDetector") extern class LanguageDetector {
 	var expectedInputLanguages(default, null) : Null<Array<String>>;
 	var inputQuota(default, null) : Float;

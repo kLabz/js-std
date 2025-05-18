@@ -24,6 +24,10 @@
 
 package js.geolocation;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GeolocationCoordinates") extern class GeolocationCoordinates {
 	var accuracy(default, null) : Float;
 	var latitude(default, null) : Float;
@@ -32,5 +36,8 @@ package js.geolocation;
 	var altitudeAccuracy(default, null) : Null<Float>;
 	var heading(default, null) : Null<Float>;
 	var speed(default, null) : Null<Float>;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

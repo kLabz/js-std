@@ -24,6 +24,9 @@
 
 package js.cssPaintApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PaintSize") extern class PaintSize {
 	var width(default, null) : Float;
 	var height(default, null) : Float;

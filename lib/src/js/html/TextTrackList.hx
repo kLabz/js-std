@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TextTrackList") extern class TextTrackList extends js.dom.EventTarget implements ArrayAccess<TextTrack> {
 	var length(default, null) : Int;
 	var onchange : EventHandler;

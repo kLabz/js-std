@@ -24,6 +24,9 @@
 
 package js.editContext;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TextFormatUpdateEvent") extern class TextFormatUpdateEvent extends js.dom.Event {
 	function new(type:String, ?options:TextFormatUpdateEventInit = {  }):Void;
 	function getTextFormats():Array<TextFormat>;

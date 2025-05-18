@@ -24,7 +24,13 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MediaStreamAudioSourceNode") extern class MediaStreamAudioSourceNode extends AudioNode {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var mediaStream(default, null) : js.mediacaptureStreams.MediaStream;
 	function new(context:AudioContext, options:MediaStreamAudioSourceOptions):Void;
 }

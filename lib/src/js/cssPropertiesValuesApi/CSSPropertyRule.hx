@@ -24,6 +24,9 @@
 
 package js.cssPropertiesValuesApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSPropertyRule") extern class CSSPropertyRule extends js.cssom.CSSRule {
 	var name(default, null) : CSSOMString;
 	var syntax(default, null) : CSSOMString;

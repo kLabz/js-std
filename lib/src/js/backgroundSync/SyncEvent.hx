@@ -24,6 +24,9 @@
 
 package js.backgroundSync;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SyncEvent") extern class SyncEvent extends js.serviceWorkers.ExtendableEvent {
 	var tag(default, null) : String;
 	var lastChance(default, null) : Bool;

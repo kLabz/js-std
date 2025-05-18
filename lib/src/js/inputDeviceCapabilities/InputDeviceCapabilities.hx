@@ -24,6 +24,9 @@
 
 package js.inputDeviceCapabilities;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("InputDeviceCapabilities") extern class InputDeviceCapabilities {
 	var firesTouchEvents(default, null) : Bool;
 	var pointerMovementScrolls(default, null) : Bool;

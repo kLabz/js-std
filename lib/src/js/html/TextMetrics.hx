@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TextMetrics") extern class TextMetrics {
 	var width(default, null) : Float;
 	var actualBoundingBoxLeft(default, null) : Float;

@@ -24,7 +24,14 @@
 
 package js.pushApi;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("PushSubscriptionOptions") extern class PushSubscriptionOptions {
 	var userVisibleOnly(default, null) : Bool;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var applicationServerKey(default, null) : Null<ArrayBuffer>;
 }

@@ -24,6 +24,9 @@
 
 package js.mediacaptureFromelement;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CanvasCaptureMediaStreamTrack") extern class CanvasCaptureMediaStreamTrack extends js.mediacaptureStreams.MediaStreamTrack {
 	var canvas(default, null) : js.html.HTMLCanvasElement;
 	function requestFrame():Void;

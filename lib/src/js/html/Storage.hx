@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Storage") extern class Storage {
 	var length(default, null) : Int;
 	function clear():Void;

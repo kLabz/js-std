@@ -24,11 +24,17 @@
 
 package js.longtasks;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformanceLongTaskTiming") extern class PerformanceLongTaskTiming extends js.performanceTimeline.PerformanceEntry {
 	var startTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var duration(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var name(default, null) : String;
 	var entryType(default, null) : String;
 	var attribution(default, null) : Array<TaskAttributionTiming>;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

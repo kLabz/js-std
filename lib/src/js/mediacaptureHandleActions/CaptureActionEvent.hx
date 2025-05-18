@@ -24,6 +24,9 @@
 
 package js.mediacaptureHandleActions;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CaptureActionEvent") extern class CaptureActionEvent extends js.dom.Event {
 	var action(default, null) : CaptureAction;
 	function new(?init:CaptureActionEventInit = {  }):Void;

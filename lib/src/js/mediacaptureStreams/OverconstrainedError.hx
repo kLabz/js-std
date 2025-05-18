@@ -24,6 +24,9 @@
 
 package js.mediacaptureStreams;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("OverconstrainedError") extern class OverconstrainedError extends js.webidl.DOMException {
 	var constraint(default, null) : String;
 	function new(constraint:String, ?message:String = ""):Void;

@@ -24,6 +24,9 @@
 
 package js.serviceWorkers;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("InstallEvent") extern class InstallEvent extends ExtendableEvent {
 	function new(type:String, ?eventInitDict:ExtendableEventInit = {  }):Void;
 	function addRoutes(rules:haxe.extern.EitherType<RouterRule, Array<RouterRule>>):js.lib.Promise<Void>;

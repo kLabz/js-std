@@ -24,6 +24,10 @@
 
 package js.paymentHandler;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("PaymentManager") extern class PaymentManager {
 	var userHint : String;
 	function enableDelegations(delegations:Array<PaymentDelegation>):js.lib.Promise<Void>;

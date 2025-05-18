@@ -24,6 +24,9 @@
 
 package js.csp;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSPViolationReportBody") extern class CSPViolationReportBody extends js.reporting.ReportBody {
 	var documentURL(default, null) : String;
 	var referrer(default, null) : Null<String>;
@@ -36,5 +39,8 @@ package js.csp;
 	var statusCode(default, null) : Int;
 	var lineNumber(default, null) : Null<Int>;
 	var columnNumber(default, null) : Null<Int>;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

@@ -24,6 +24,10 @@
 
 package js.webmidi;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("MIDIInput") extern class MIDIInput extends MIDIPort {
 	var onmidimessage : js.html.EventHandler;
 }

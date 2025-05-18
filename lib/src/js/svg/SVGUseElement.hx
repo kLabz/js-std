@@ -24,15 +24,37 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGUseElement") extern class SVGUseElement extends SVGGraphicsElement {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var x(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var y(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var width(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var height(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var instanceRoot(default, null) : Null<SVGElement>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var animatedInstanceRoot(default, null) : Null<SVGElement>;
 	/**
 		From interface mixin SVGURIReference
+		Unhandled extended attribute SameObject
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

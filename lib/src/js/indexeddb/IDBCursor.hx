@@ -24,16 +24,28 @@
 
 package js.indexeddb;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IDBCursor") extern class IDBCursor {
 	var source(default, null) : haxe.extern.EitherType<IDBObjectStore, IDBIndex>;
 	var direction(default, null) : IDBCursorDirection;
 	var key(default, null) : Any;
 	var primaryKey(default, null) : Any;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var request(default, null) : IDBRequest;
 	function advance(count:Int):Void;
 	function continuePrimaryKey(key:Any, primaryKey:Any):Void;
 	@:native("continue")
 	function continue_(?key:Any):Void;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function delete():IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function update(value:Any):IDBRequest;
 }

@@ -24,6 +24,9 @@
 
 package js.serviceWorkers;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ExtendableEvent") extern class ExtendableEvent extends js.dom.Event {
 	function new(type:String, ?eventInitDict:ExtendableEventInit = {  }):Void;
 	function waitUntil(f:js.lib.Promise<Any>):Void;

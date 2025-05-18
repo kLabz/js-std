@@ -25,6 +25,9 @@
 package js.computePressure;
 
 typedef PressureObserverOptions = {
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var sampleInterval : Int = 0;
 };

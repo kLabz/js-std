@@ -24,6 +24,10 @@
 
 package js.credentialManagement;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("CredentialsContainer") extern class CredentialsContainer {
 	function create(?options:CredentialCreationOptions = {  }):js.lib.Promise<Null<Credential>>;
 	function get(?options:CredentialRequestOptions = {  }):js.lib.Promise<Null<Credential>>;

@@ -24,6 +24,9 @@
 
 package js.userTiming;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformanceMark") extern class PerformanceMark extends js.performanceTimeline.PerformanceEntry {
 	var detail(default, null) : Any;
 	function new(markName:String, ?markOptions:PerformanceMarkOptions = {  }):Void;

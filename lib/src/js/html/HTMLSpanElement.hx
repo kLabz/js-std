@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLSpanElement") extern class HTMLSpanElement extends HTMLElement {
-	function new():Void;
+
 }

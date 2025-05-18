@@ -26,6 +26,7 @@ package js.cssom;
 
 /**
 	TODO attribute mediaText: special=stringifier readonly=false
+	Unhandled extended attribute Exposed
 **/
 @:native("MediaList") extern class MediaList {
 	var length(default, null) : Int;

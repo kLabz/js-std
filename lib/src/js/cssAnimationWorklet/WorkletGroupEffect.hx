@@ -24,6 +24,9 @@
 
 package js.cssAnimationWorklet;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WorkletGroupEffect") extern class WorkletGroupEffect {
 	function getChildren():Array<WorkletAnimationEffect>;
 }

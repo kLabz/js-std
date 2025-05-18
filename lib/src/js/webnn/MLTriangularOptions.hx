@@ -27,6 +27,9 @@ package js.webnn;
 typedef MLTriangularOptions = MLOperatorOptions & {
 	@:optional
 	var upper : Bool = true;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var diagonal : Int = 0;
 };

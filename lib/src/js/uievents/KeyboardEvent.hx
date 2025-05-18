@@ -24,6 +24,9 @@
 
 package js.uievents;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("KeyboardEvent") extern class KeyboardEvent extends UIEvent {
 	static inline var DOM_KEY_LOCATION_STANDARD : Int = 0x00;
 	static inline var DOM_KEY_LOCATION_LEFT : Int = 0x01;

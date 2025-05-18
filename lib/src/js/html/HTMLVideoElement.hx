@@ -24,12 +24,27 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLVideoElement") extern class HTMLVideoElement extends HTMLMediaElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var width : Int;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var height : Int;
 	var videoWidth(default, null) : Int;
 	var videoHeight(default, null) : Int;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var poster : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var playsInline : Bool;
 	/**
 		From partial interface in picture-in-picture.idl
@@ -41,9 +56,9 @@ package js.html;
 	var onleavepictureinpicture : EventHandler;
 	/**
 		From partial interface in picture-in-picture.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var disablePictureInPicture : Bool;
-	function new():Void;
 	/**
 		From partial interface in video-rvfc.idl
 	**/
@@ -54,6 +69,7 @@ package js.html;
 	function getVideoPlaybackQuality():js.mediaPlaybackQuality.VideoPlaybackQuality;
 	/**
 		From partial interface in picture-in-picture.idl
+		Unhandled extended attribute NewObject
 	**/
 	function requestPictureInPicture():js.lib.Promise<js.pictureInPicture.PictureInPictureWindow>;
 	/**

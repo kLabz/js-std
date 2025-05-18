@@ -24,6 +24,10 @@
 
 package js.extBlendMinmax;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("EXT_blend_minmax") extern class EXT_blend_minmax {
 	static inline var MIN_EXT : js.webgl1.GLenum = 0x8007;
 	static inline var MAX_EXT : js.webgl1.GLenum = 0x8008;

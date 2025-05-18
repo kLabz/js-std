@@ -24,6 +24,10 @@
 
 package js.webxrLightingEstimation;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRLightEstimate") extern class XRLightEstimate {
 	var sphericalHarmonicsCoefficients(default, null) : Float32Array;
 	var primaryLightDirection(default, null) : js.geometry.DOMPointReadOnly;

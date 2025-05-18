@@ -24,17 +24,47 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLSelectElement") extern class HTMLSelectElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var autocomplete : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var multiple : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var name : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var required : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var size : Int;
 	var type(default, null) : String;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var options(default, null) : HTMLOptionsCollection;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var length : Int;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var selectedOptions(default, null) : js.dom.HTMLCollection;
 	var selectedIndex : Int;
 	var value : String;
@@ -42,16 +72,25 @@ package js.html;
 	var validity(default, null) : ValidityState;
 	var validationMessage(default, null) : String;
 	var labels(default, null) : js.dom.NodeList;
-	function new():Void;
 	/**
 		(special = setter)
+		Unhandled extended attribute CEReactions
 	**/
 	function (index:Int, option:Null<HTMLOptionElement>):Void;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	function add(element:haxe.extern.EitherType<HTMLOptionElement, HTMLOptGroupElement>, ?before:Null<haxe.extern.EitherType<HTMLElement, Int>> = null):Void;
 	function checkValidity():Bool;
 	function item(index:Int):Null<HTMLOptionElement>;
 	function namedItem(name:String):Null<HTMLOptionElement>;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	overload function remove():Void;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	overload function remove(index:Int):Void;
 	function reportValidity():Bool;
 	function setCustomValidity(error:String):Void;

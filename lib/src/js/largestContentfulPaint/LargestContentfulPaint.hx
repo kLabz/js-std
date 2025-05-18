@@ -24,6 +24,9 @@
 
 package js.largestContentfulPaint;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("LargestContentfulPaint") extern class LargestContentfulPaint extends js.performanceTimeline.PerformanceEntry {
 	var loadTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var size(default, null) : Int;
@@ -38,5 +41,8 @@ package js.largestContentfulPaint;
 		From interface mixin PaintTimingMixin
 	**/
 	var presentationTime(default, null) : Null<js.hrTime.DOMHighResTimeStamp>;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

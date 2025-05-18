@@ -24,6 +24,9 @@
 
 package js.pointerevents;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PointerEvent") extern class PointerEvent extends js.uievents.MouseEvent {
 	var pointerId(default, null) : Int;
 	var width(default, null) : Float;
@@ -39,6 +42,9 @@ package js.pointerevents;
 	var isPrimary(default, null) : Bool;
 	var persistentDeviceId(default, null) : Int;
 	function new(type:String, ?eventInitDict:PointerEventInit = {  }):Void;
+	/**
+		Unhandled extended attribute SecureContext
+	**/
 	function getCoalescedEvents():Array<PointerEvent>;
 	function getPredictedEvents():Array<PointerEvent>;
 }

@@ -24,6 +24,9 @@
 
 package js.cssFontLoading;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FontFace") extern class FontFace {
 	var family : CSSOMString;
 	var style : CSSOMString;

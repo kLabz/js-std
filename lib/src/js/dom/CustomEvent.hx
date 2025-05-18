@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CustomEvent") extern class CustomEvent extends Event {
 	var detail(default, null) : Any;
 	function new(type:String, ?eventInitDict:CustomEventInit = {  }):Void;

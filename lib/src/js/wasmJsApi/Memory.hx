@@ -24,6 +24,10 @@
 
 package js.wasmJsApi;
 
+/**
+	Unhandled extended attribute LegacyNamespace
+	Unhandled extended attribute Exposed
+**/
 @:native("Memory") extern class Memory {
 	var buffer(default, null) : ArrayBuffer;
 	function new(descriptor:MemoryDescriptor):Void;

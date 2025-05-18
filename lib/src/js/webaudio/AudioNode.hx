@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AudioNode") extern class AudioNode extends js.dom.EventTarget {
 	var context(default, null) : BaseAudioContext;
 	var numberOfInputs(default, null) : Int;

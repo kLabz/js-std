@@ -24,13 +24,26 @@
 
 package js.storageBuckets;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("StorageBucket") extern class StorageBucket {
 	var name(default, null) : String;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var indexedDB(default, null) : js.indexeddb.IDBFactory;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var caches(default, null) : js.serviceWorkers.CacheStorage;
 	function estimate():js.lib.Promise<js.storage.StorageEstimate>;
 	function expires():js.lib.Promise<Null<js.hrTime.DOMHighResTimeStamp>>;
 	function getDirectory():js.lib.Promise<js.fs.FileSystemDirectoryHandle>;
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	function persist():js.lib.Promise<Bool>;
 	function persisted():js.lib.Promise<Bool>;
 	function setExpires(expires:js.hrTime.DOMHighResTimeStamp):js.lib.Promise<Void>;

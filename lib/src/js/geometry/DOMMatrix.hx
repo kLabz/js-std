@@ -47,11 +47,23 @@ package js.geometry;
 	TODO attribute m42: special=inherit readonly=false
 	TODO attribute m43: special=inherit readonly=false
 	TODO attribute m44: special=inherit readonly=false
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+	Unhandled extended attribute LegacyWindowAlias
 **/
 @:native("DOMMatrix") extern class DOMMatrix extends DOMMatrixReadOnly {
 	function new(?init:haxe.extern.EitherType<String, Array<Float>>):Void;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function fromFloat32Array(array32:Float32Array):DOMMatrix;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function fromFloat64Array(array64:Float64Array):DOMMatrix;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function fromMatrix(?other:DOMMatrixInit = {  }):DOMMatrix;
 	function invertSelf():DOMMatrix;
 	function multiplySelf(?other:DOMMatrixInit = {  }):DOMMatrix;
@@ -61,6 +73,9 @@ package js.geometry;
 	function rotateSelf(?rotX:Float = 0, ?rotY:Float, ?rotZ:Float):DOMMatrix;
 	function scale3dSelf(?scale:Float = 1, ?originX:Float = 0, ?originY:Float = 0, ?originZ:Float = 0):DOMMatrix;
 	function scaleSelf(?scaleX:Float = 1, ?scaleY:Float, ?scaleZ:Float = 1, ?originX:Float = 0, ?originY:Float = 0, ?originZ:Float = 0):DOMMatrix;
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	function setMatrixValue(transformList:String):DOMMatrix;
 	function skewXSelf(?sx:Float = 0):DOMMatrix;
 	function skewYSelf(?sy:Float = 0):DOMMatrix;

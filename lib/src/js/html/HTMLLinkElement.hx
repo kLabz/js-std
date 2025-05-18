@@ -24,22 +24,76 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLLinkElement") extern class HTMLLinkElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var href : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var crossOrigin : Null<String>;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var rel : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var as : String;
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var relList(default, null) : js.dom.DOMTokenList;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var media : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var integrity : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var hreflang : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var type : String;
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var sizes(default, null) : js.dom.DOMTokenList;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var imageSrcset : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var imageSizes : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var referrerPolicy : String;
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var blocking(default, null) : js.dom.DOMTokenList;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var disabled : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var fetchPriority : String;
 	/**
 		From interface mixin LinkStyle
@@ -47,15 +101,17 @@ package js.html;
 	var sheet(default, null) : Null<js.cssom.CSSStyleSheet>;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var charset : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var rev : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var target : String;
-	function new():Void;
 }

@@ -24,6 +24,12 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSColorValue") extern class CSSColorValue extends CSSStyleValue {
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	function parse(cssText:String):haxe.extern.EitherType<CSSColorValue, CSSStyleValue>;
 }

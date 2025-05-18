@@ -26,6 +26,7 @@ package js.realWorldMeshing;
 
 /**
 	TODO SetlikeDeclaration handling
+	Unhandled extended attribute Exposed
 **/
 @:native("XRMeshSet") extern class XRMeshSet {
 

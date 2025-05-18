@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLFormControlsCollection") extern class HTMLFormControlsCollection extends js.dom.HTMLCollection {
 	function namedItem(name:String):Null<haxe.extern.EitherType<RadioNodeList, js.dom.Element>>;
 }

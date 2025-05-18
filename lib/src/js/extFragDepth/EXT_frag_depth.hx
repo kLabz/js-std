@@ -24,6 +24,10 @@
 
 package js.extFragDepth;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("EXT_frag_depth") extern class EXT_frag_depth {
 
 }

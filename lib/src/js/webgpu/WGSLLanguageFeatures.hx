@@ -26,6 +26,8 @@ package js.webgpu;
 
 /**
 	TODO SetlikeDeclaration handling
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
 **/
 @:native("WGSLLanguageFeatures") extern class WGSLLanguageFeatures {
 

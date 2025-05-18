@@ -24,6 +24,10 @@
 
 package js.presentationApi;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("Presentation") extern class Presentation {
 	/**
 		From partial interface in presentation-api.idl

@@ -24,6 +24,10 @@
 
 package js.writingAssistanceApis;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("CreateMonitor") extern class CreateMonitor extends js.dom.EventTarget {
 	var ondownloadprogress : js.html.EventHandler;
 }

@@ -24,6 +24,10 @@
 
 package js.orientationEvent;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("DeviceMotionEvent") extern class DeviceMotionEvent extends js.dom.Event {
 	var acceleration(default, null) : Null<DeviceMotionEventAcceleration>;
 	var accelerationIncludingGravity(default, null) : Null<DeviceMotionEventAcceleration>;

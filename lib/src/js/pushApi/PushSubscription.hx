@@ -24,9 +24,16 @@
 
 package js.pushApi;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("PushSubscription") extern class PushSubscription {
 	var endpoint(default, null) : String;
 	var expirationTime(default, null) : Null<js.hrTime.EpochTimeStamp>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var options(default, null) : PushSubscriptionOptions;
 	function getKey(name:PushEncryptionKeyName):Null<ArrayBuffer>;
 	function toJSON():PushSubscriptionJSON;

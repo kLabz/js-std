@@ -24,6 +24,9 @@
 
 package js.xhr;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XMLHttpRequestEventTarget") extern class XMLHttpRequestEventTarget extends js.dom.EventTarget {
 	var onloadstart : js.html.EventHandler;
 	var onprogress : js.html.EventHandler;

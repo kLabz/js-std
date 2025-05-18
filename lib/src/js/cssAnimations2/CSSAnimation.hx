@@ -24,6 +24,9 @@
 
 package js.cssAnimations2;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSAnimation") extern class CSSAnimation extends js.webAnimations.Animation {
 	var animationName(default, null) : CSSOMString;
 }

@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUTexture") extern class GPUTexture {
 	var width(default, null) : GPUIntegerCoordinateOut;
 	var height(default, null) : GPUIntegerCoordinateOut;

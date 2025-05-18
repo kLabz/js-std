@@ -24,6 +24,9 @@
 
 package js.mediaSource;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SourceBuffer") extern class SourceBuffer extends js.dom.EventTarget {
 	var mode : AppendMode;
 	var updating(default, null) : Bool;

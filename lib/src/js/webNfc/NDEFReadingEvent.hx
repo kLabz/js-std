@@ -24,8 +24,15 @@
 
 package js.webNfc;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("NDEFReadingEvent") extern class NDEFReadingEvent extends js.dom.Event {
 	var serialNumber(default, null) : String;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var message(default, null) : NDEFMessage;
 	function new(type:String, readingEventInitDict:NDEFReadingEventInit):Void;
 }

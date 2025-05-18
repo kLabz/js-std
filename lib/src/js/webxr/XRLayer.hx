@@ -24,6 +24,10 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRLayer") extern class XRLayer extends js.dom.EventTarget {
 
 }

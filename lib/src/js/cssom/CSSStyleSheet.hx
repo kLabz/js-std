@@ -24,11 +24,18 @@
 
 package js.cssom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSStyleSheet") extern class CSSStyleSheet extends StyleSheet {
 	var ownerRule(default, null) : Null<CSSRule>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var cssRules(default, null) : CSSRuleList;
 	/**
 		From partial interface in cssom.idl
+		Unhandled extended attribute SameObject
 	**/
 	var rules(default, null) : CSSRuleList;
 	function new(?options:CSSStyleSheetInit = {  }):Void;

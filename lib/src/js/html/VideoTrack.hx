@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("VideoTrack") extern class VideoTrack {
 	var id(default, null) : String;
 	var kind(default, null) : String;

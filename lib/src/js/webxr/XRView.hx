@@ -24,6 +24,10 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRView") extern class XRView {
 	var eye(default, null) : XREye;
 	var recommendedViewportScale(default, null) : Null<Float>;
@@ -37,6 +41,7 @@ package js.webxr;
 	var transform(default, null) : XRRigidTransform;
 	/**
 		From partial interface in raw-camera-access.idl
+		Unhandled extended attribute SameObject
 	**/
 	var camera(default, null) : Null<js.rawCameraAccess.XRCamera>;
 	/**

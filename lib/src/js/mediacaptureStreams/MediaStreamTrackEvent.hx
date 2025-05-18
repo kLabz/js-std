@@ -24,7 +24,13 @@
 
 package js.mediacaptureStreams;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MediaStreamTrackEvent") extern class MediaStreamTrackEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var track(default, null) : MediaStreamTrack;
 	function new(type:String, eventInitDict:MediaStreamTrackEventInit):Void;
 }

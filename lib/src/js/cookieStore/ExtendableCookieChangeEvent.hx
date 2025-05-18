@@ -24,8 +24,17 @@
 
 package js.cookieStore;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ExtendableCookieChangeEvent") extern class ExtendableCookieChangeEvent extends js.serviceWorkers.ExtendableEvent {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var changed(default, null) : Array<CookieListItem>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var deleted(default, null) : Array<CookieListItem>;
 	function new(type:String, ?eventInitDict:ExtendableCookieChangeEventInit = {  }):Void;
 }

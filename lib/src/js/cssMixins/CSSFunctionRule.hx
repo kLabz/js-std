@@ -24,6 +24,9 @@
 
 package js.cssMixins;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSFunctionRule") extern class CSSFunctionRule extends js.cssom.CSSGroupingRule {
 	var name(default, null) : CSSOMString;
 	var returnType(default, null) : CSSOMString;

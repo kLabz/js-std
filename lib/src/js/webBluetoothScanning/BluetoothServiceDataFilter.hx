@@ -26,6 +26,8 @@ package js.webBluetoothScanning;
 
 /**
 	TODO MaplikeDeclaration handling
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
 **/
 @:native("BluetoothServiceDataFilter") extern class BluetoothServiceDataFilter {
 	function new(?init:{ }):Void;

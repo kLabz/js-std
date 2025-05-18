@@ -24,6 +24,10 @@
 
 package js.webrtcEncodedTransform;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+**/
 @:native("RTCEncodedVideoFrame") extern class RTCEncodedVideoFrame {
 	var type(default, null) : RTCEncodedVideoFrameType;
 	var data : ArrayBuffer;

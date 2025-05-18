@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ShadowRoot") extern class ShadowRoot extends DocumentFragment {
 	var mode(default, null) : ShadowRootMode;
 	var delegatesFocus(default, null) : Bool;
@@ -62,6 +65,7 @@ package js.dom;
 	var pointerLockElement(default, null) : Null<Element>;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var innerHTML : haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>;
 	/**
@@ -74,6 +78,7 @@ package js.dom;
 	function getHTML(?options:js.html.GetHTMLOptions = {  }):String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	function setHTMLUnsafe(html:haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>):Void;
 }

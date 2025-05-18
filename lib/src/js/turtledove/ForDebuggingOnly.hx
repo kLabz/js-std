@@ -24,6 +24,9 @@
 
 package js.turtledove;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ForDebuggingOnly") extern class ForDebuggingOnly {
 	function reportAdAuctionLoss(url:String):Void;
 	function reportAdAuctionWin(url:String):Void;

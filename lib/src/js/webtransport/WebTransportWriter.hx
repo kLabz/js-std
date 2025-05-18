@@ -24,6 +24,10 @@
 
 package js.webtransport;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("WebTransportWriter") extern class WebTransportWriter extends js.streams.WritableStreamDefaultWriter {
 	function atomicWrite(?chunk:Any):js.lib.Promise<Void>;
 }

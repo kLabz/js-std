@@ -24,6 +24,9 @@
 
 package js.indexeddb;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IDBCursorWithValue") extern class IDBCursorWithValue extends IDBCursor {
 	var value(default, null) : Any;
 }

@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUSampler") extern class GPUSampler {
 	/**
 		From interface mixin GPUObjectBase

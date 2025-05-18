@@ -24,6 +24,9 @@
 
 package js.webAnimations;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AnimationEffect") extern class AnimationEffect {
 	/**
 		From partial interface in web-animations-2.idl

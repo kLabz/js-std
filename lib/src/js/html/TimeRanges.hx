@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TimeRanges") extern class TimeRanges {
 	var length(default, null) : Int;
 	function end(index:Int):Float;

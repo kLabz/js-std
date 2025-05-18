@@ -24,6 +24,9 @@
 
 package js.performanceTimeline;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformanceObserverEntryList") extern class PerformanceObserverEntryList {
 	function getEntries():PerformanceEntryList;
 	function getEntriesByName(name:String, ?type:String):PerformanceEntryList;

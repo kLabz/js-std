@@ -24,6 +24,10 @@
 
 package js.webglDebugShaders;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("WEBGL_debug_shaders") extern class WEBGL_debug_shaders {
 	function getTranslatedShaderSource(shader:js.webgl1.WebGLShader):String;
 }

@@ -24,6 +24,9 @@
 
 package js.navigationTiming;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformanceTiming") extern class PerformanceTiming {
 	var navigationStart(default, null) : Float;
 	var unloadEventStart(default, null) : Float;
@@ -46,5 +49,8 @@ package js.navigationTiming;
 	var domComplete(default, null) : Float;
 	var loadEventStart(default, null) : Float;
 	var loadEventEnd(default, null) : Float;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

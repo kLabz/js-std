@@ -26,6 +26,7 @@ package js.webaudio;
 
 /**
 	TODO MaplikeDeclaration handling
+	Unhandled extended attribute Exposed
 **/
 @:native("AudioParamMap") extern class AudioParamMap {
 

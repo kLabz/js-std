@@ -24,7 +24,13 @@
 
 package js.webxrDepthSensing;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XRCPUDepthInformation") extern class XRCPUDepthInformation extends XRDepthInformation {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var data(default, null) : ArrayBuffer;
 	function getDepthInMeters(x:Float, y:Float):Float;
 }

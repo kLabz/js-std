@@ -24,6 +24,10 @@
 
 package js.virtualKeyboard;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("VirtualKeyboard") extern class VirtualKeyboard extends js.dom.EventTarget {
 	var boundingRect(default, null) : js.geometry.DOMRect;
 	var overlaysContent : Bool;

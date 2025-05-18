@@ -24,6 +24,9 @@
 
 package js.streams;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CountQueuingStrategy") extern class CountQueuingStrategy {
 	var highWaterMark(default, null) : Float;
 	var size(default, null) : js.webidl.Function;

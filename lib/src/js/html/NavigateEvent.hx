@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("NavigateEvent") extern class NavigateEvent extends js.dom.Event {
 	var navigationType(default, null) : NavigationType;
 	var destination(default, null) : NavigationDestination;

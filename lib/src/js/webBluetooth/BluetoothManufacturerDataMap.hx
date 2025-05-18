@@ -26,6 +26,8 @@ package js.webBluetooth;
 
 /**
 	TODO MaplikeDeclaration handling
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
 **/
 @:native("BluetoothManufacturerDataMap") extern class BluetoothManufacturerDataMap {
 

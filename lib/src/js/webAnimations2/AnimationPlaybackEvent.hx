@@ -24,6 +24,9 @@
 
 package js.webAnimations2;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AnimationPlaybackEvent") extern class AnimationPlaybackEvent extends js.dom.Event {
 	var currentTime(default, null) : Null<js.cssTypedOm.CSSNumberish>;
 	var timelineTime(default, null) : Null<js.cssTypedOm.CSSNumberish>;

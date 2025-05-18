@@ -24,6 +24,9 @@
 
 package js.webcodecs;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ImageTrack") extern class ImageTrack {
 	var animated(default, null) : Bool;
 	var frameCount(default, null) : Int;

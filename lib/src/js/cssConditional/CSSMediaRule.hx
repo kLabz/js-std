@@ -24,7 +24,14 @@
 
 package js.cssConditional;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSMediaRule") extern class CSSMediaRule extends CSSConditionRule {
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var media(default, null) : js.cssom.MediaList;
 	var matches(default, null) : Bool;
 }

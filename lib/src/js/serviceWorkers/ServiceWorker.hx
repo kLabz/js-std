@@ -24,6 +24,10 @@
 
 package js.serviceWorkers;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("ServiceWorker") extern class ServiceWorker extends js.dom.EventTarget {
 	var scriptURL(default, null) : String;
 	var state(default, null) : ServiceWorkerState;

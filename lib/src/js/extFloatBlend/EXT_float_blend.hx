@@ -24,6 +24,10 @@
 
 package js.extFloatBlend;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("EXT_float_blend") extern class EXT_float_blend {
 
 }

@@ -24,6 +24,9 @@
 
 package js.editContext;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CharacterBoundsUpdateEvent") extern class CharacterBoundsUpdateEvent extends js.dom.Event {
 	var rangeStart(default, null) : Int;
 	var rangeEnd(default, null) : Int;

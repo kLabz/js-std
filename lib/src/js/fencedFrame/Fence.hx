@@ -24,6 +24,9 @@
 
 package js.fencedFrame;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Fence") extern class Fence {
 	function disableUntrustedNetwork():js.lib.Promise<Void>;
 	function getNestedConfigs():Array<FencedFrameConfig>;

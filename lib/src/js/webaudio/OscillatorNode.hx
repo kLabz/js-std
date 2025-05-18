@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("OscillatorNode") extern class OscillatorNode extends AudioScheduledSourceNode {
 	var type : OscillatorType;
 	var frequency(default, null) : AudioParam;

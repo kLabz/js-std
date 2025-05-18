@@ -24,7 +24,13 @@
 
 package js.webxrPlaneDetection;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XRPlane") extern class XRPlane {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var planeSpace(default, null) : js.webxr.XRSpace;
 	var polygon(default, null) : Array<js.geometry.DOMPointReadOnly>;
 	var orientation(default, null) : Null<XRPlaneOrientation>;

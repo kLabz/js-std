@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSColor") extern class CSSColor extends CSSColorValue {
 	var colorSpace : CSSKeywordish;
 	var channels : Array<CSSColorPercent>;

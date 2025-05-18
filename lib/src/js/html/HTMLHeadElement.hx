@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLHeadElement") extern class HTMLHeadElement extends HTMLElement {
-	function new():Void;
+
 }

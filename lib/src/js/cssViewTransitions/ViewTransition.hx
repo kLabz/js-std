@@ -24,6 +24,9 @@
 
 package js.cssViewTransitions;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ViewTransition") extern class ViewTransition {
 	var updateCallbackDone(default, null) : js.lib.Promise<Void>;
 	var ready(default, null) : js.lib.Promise<Void>;

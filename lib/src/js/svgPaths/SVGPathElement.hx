@@ -24,6 +24,9 @@
 
 package js.svgPaths;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGPathElement") extern class SVGPathElement extends js.svg.SVGGeometryElement {
 	var pathLength(default, null) : js.svg.SVGAnimatedNumber;
 	/**

@@ -26,6 +26,8 @@ package js.ppa;
 
 /**
 	TODO MaplikeDeclaration handling
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
 **/
 @:native("PrivateAttributionAggregationServices") extern class PrivateAttributionAggregationServices {
 

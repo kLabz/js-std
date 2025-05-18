@@ -24,6 +24,10 @@
 
 package js.streams;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Transferable
+**/
 @:native("ReadableStream") extern class ReadableStream {
 	var locked(default, null) : Bool;
 	function new(?underlyingSource:{ }, ?strategy:QueuingStrategy = {  }):Void;

@@ -24,7 +24,14 @@
 
 package js.webauthn;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("AuthenticatorAttestationResponse") extern class AuthenticatorAttestationResponse extends AuthenticatorResponse {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var attestationObject(default, null) : ArrayBuffer;
 	function getAuthenticatorData():ArrayBuffer;
 	function getPublicKey():Null<ArrayBuffer>;

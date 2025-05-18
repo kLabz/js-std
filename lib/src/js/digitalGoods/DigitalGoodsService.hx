@@ -24,6 +24,10 @@
 
 package js.digitalGoods;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("DigitalGoodsService") extern class DigitalGoodsService {
 	function consume(purchaseToken:String):js.lib.Promise<Void>;
 	function getDetails(itemIds:Array<String>):js.lib.Promise<Array<ItemDetails>>;

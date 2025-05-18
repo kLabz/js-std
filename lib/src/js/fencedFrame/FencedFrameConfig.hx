@@ -24,6 +24,10 @@
 
 package js.fencedFrame;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+**/
 @:native("FencedFrameConfig") extern class FencedFrameConfig {
 	function new(url:String):Void;
 	function setSharedStorageContext(contextString:String):Void;

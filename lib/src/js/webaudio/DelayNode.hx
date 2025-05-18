@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DelayNode") extern class DelayNode extends AudioNode {
 	var delayTime(default, null) : AudioParam;
 	function new(context:BaseAudioContext, ?options:DelayOptions = {  }):Void;

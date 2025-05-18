@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MutationObserver") extern class MutationObserver {
 	function new(callback:MutationCallback):Void;
 	function disconnect():Void;

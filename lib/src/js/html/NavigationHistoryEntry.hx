@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("NavigationHistoryEntry") extern class NavigationHistoryEntry extends js.dom.EventTarget {
 	var url(default, null) : Null<String>;
 	var key(default, null) : String;

@@ -24,7 +24,13 @@
 
 package js.realWorldMeshing;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XRMesh") extern class XRMesh {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var meshSpace(default, null) : js.webxr.XRSpace;
 	var vertices(default, null) : Array<Float32Array>;
 	var indices(default, null) : Uint32Array;

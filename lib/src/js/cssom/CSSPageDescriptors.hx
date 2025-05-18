@@ -24,6 +24,9 @@
 
 package js.cssom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSPageDescriptors") extern class CSSPageDescriptors extends CSSStyleDeclaration {
 	var margin : CSSOMString;
 	var marginTop : CSSOMString;

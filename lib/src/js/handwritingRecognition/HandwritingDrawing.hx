@@ -24,6 +24,10 @@
 
 package js.handwritingRecognition;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("HandwritingDrawing") extern class HandwritingDrawing {
 	function addStroke(stroke:HandwritingStroke):Void;
 	function clear():Void;

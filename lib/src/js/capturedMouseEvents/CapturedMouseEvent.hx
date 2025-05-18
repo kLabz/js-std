@@ -24,6 +24,9 @@
 
 package js.capturedMouseEvents;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CapturedMouseEvent") extern class CapturedMouseEvent extends js.dom.Event {
 	var surfaceX(default, null) : Int;
 	var surfaceY(default, null) : Int;

@@ -24,7 +24,14 @@
 
 package js.webBluetooth;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("BluetoothRemoteGATTDescriptor") extern class BluetoothRemoteGATTDescriptor {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var characteristic(default, null) : BluetoothRemoteGATTCharacteristic;
 	var uuid(default, null) : UUID;
 	var value(default, null) : Null<DataView>;

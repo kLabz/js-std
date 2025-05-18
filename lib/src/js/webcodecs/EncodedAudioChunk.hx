@@ -24,6 +24,10 @@
 
 package js.webcodecs;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+**/
 @:native("EncodedAudioChunk") extern class EncodedAudioChunk {
 	var type(default, null) : EncodedAudioChunkType;
 	var timestamp(default, null) : Float;

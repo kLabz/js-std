@@ -24,6 +24,9 @@
 
 package js.paymentHandler;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CanMakePaymentEvent") extern class CanMakePaymentEvent extends js.serviceWorkers.ExtendableEvent {
 	function new(type:String):Void;
 	function respondWith(canMakePaymentResponse:js.lib.Promise<Bool>):Void;

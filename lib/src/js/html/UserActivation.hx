@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("UserActivation") extern class UserActivation {
 	var hasBeenActive(default, null) : Bool;
 	var isActive(default, null) : Bool;

@@ -24,6 +24,9 @@
 
 package js.webgl1;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WebGLTexture") extern class WebGLTexture extends WebGLObject {
 
 }

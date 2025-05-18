@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyFactoryFunction
+**/
 @:native("HTMLAudioElement") extern class HTMLAudioElement extends HTMLMediaElement {
-	function new():Void;
+
 }

@@ -26,6 +26,7 @@ package js.webxrPlaneDetection;
 
 /**
 	TODO SetlikeDeclaration handling
+	Unhandled extended attribute Exposed
 **/
 @:native("XRPlaneSet") extern class XRPlaneSet {
 

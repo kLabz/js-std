@@ -26,6 +26,7 @@ package js.cssHighlightApi;
 
 /**
 	TODO MaplikeDeclaration handling
+	Unhandled extended attribute Exposed
 **/
 @:native("HighlightRegistry") extern class HighlightRegistry {
 	/**

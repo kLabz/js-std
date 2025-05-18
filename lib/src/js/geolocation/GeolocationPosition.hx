@@ -24,8 +24,15 @@
 
 package js.geolocation;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GeolocationPosition") extern class GeolocationPosition {
 	var coords(default, null) : GeolocationCoordinates;
 	var timestamp(default, null) : js.hrTime.EpochTimeStamp;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

@@ -24,6 +24,10 @@
 
 package js.extDisjointTimerQueryWebgl2;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("EXT_disjoint_timer_query_webgl2") extern class EXT_disjoint_timer_query_webgl2 {
 	static inline var QUERY_COUNTER_BITS_EXT : js.webgl1.GLenum = 0x8864;
 	static inline var TIME_ELAPSED_EXT : js.webgl1.GLenum = 0x88BF;

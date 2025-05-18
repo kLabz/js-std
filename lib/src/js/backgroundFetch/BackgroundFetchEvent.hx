@@ -24,6 +24,9 @@
 
 package js.backgroundFetch;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BackgroundFetchEvent") extern class BackgroundFetchEvent extends js.serviceWorkers.ExtendableEvent {
 	var registration(default, null) : BackgroundFetchRegistration;
 	function new(type:String, init:BackgroundFetchEventInit):Void;

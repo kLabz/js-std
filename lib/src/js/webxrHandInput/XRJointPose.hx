@@ -24,6 +24,9 @@
 
 package js.webxrHandInput;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XRJointPose") extern class XRJointPose extends js.webxr.XRPose {
 	var radius(default, null) : Float;
 }

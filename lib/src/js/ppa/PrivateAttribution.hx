@@ -24,6 +24,10 @@
 
 package js.ppa;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("PrivateAttribution") extern class PrivateAttribution {
 	var aggregationServices(default, null) : PrivateAttributionAggregationServices;
 	/**

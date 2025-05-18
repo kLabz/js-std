@@ -24,7 +24,14 @@
 
 package js.webxrHitTest;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRTransientInputHitTestResult") extern class XRTransientInputHitTestResult {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var inputSource(default, null) : js.webxr.XRInputSource;
 	var results(default, null) : Array<XRHitTestResult>;
 }

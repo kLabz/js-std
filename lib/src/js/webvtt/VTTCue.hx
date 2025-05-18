@@ -24,6 +24,9 @@
 
 package js.webvtt;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("VTTCue") extern class VTTCue extends js.html.TextTrackCue {
 	var region : Null<VTTRegion>;
 	var vertical : DirectionSetting;

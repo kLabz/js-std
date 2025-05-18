@@ -24,6 +24,9 @@
 
 package js.mediastreamRecording;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MediaRecorder") extern class MediaRecorder extends js.dom.EventTarget {
 	var stream(default, null) : js.mediacaptureStreams.MediaStream;
 	var mimeType(default, null) : String;

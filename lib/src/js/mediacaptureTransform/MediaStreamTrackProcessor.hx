@@ -24,6 +24,9 @@
 
 package js.mediacaptureTransform;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MediaStreamTrackProcessor") extern class MediaStreamTrackProcessor {
 	var readable(default, null) : js.streams.ReadableStream;
 	function new(init:MediaStreamTrackProcessorInit):Void;

@@ -24,6 +24,9 @@
 
 package js.speechApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SpeechSynthesis") extern class SpeechSynthesis extends js.dom.EventTarget {
 	var pending(default, null) : Bool;
 	var speaking(default, null) : Bool;

@@ -24,6 +24,9 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XRPermissionStatus") extern class XRPermissionStatus extends js.permissions.PermissionStatus {
 	var granted : Array<String>;
 }

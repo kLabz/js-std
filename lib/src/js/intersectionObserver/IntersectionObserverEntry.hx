@@ -24,6 +24,9 @@
 
 package js.intersectionObserver;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IntersectionObserverEntry") extern class IntersectionObserverEntry {
 	var time(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var rootBounds(default, null) : Null<js.geometry.DOMRectReadOnly>;

@@ -24,6 +24,10 @@
 
 package js.webtransport;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("WebTransportDatagramDuplexStream") extern class WebTransportDatagramDuplexStream {
 	var readable(default, null) : js.streams.ReadableStream;
 	var maxDatagramSize(default, null) : Int;

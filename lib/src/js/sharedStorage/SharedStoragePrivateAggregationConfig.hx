@@ -29,8 +29,14 @@ typedef SharedStoragePrivateAggregationConfig = {
 	var aggregationCoordinatorOrigin : String;
 	@:optional
 	var contextId : String;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var filteringIdMaxBytes : Float;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var maxContributions : Float;
 };

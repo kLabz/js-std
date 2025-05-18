@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGMarkerElement") extern class SVGMarkerElement extends SVGElement {
 	static inline var SVG_MARKERUNITS_UNKNOWN : Int = 0;
 	static inline var SVG_MARKERUNITS_USERSPACEONUSE : Int = 1;
@@ -31,12 +34,33 @@ package js.svg;
 	static inline var SVG_MARKER_ORIENT_UNKNOWN : Int = 0;
 	static inline var SVG_MARKER_ORIENT_AUTO : Int = 1;
 	static inline var SVG_MARKER_ORIENT_ANGLE : Int = 2;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var refX(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var refY(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var markerUnits(default, null) : SVGAnimatedEnumeration;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var markerWidth(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var markerHeight(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var orientType(default, null) : SVGAnimatedEnumeration;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var orientAngle(default, null) : SVGAnimatedAngle;
 	var orient : String;
 	/**

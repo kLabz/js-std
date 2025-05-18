@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MimeType") extern class MimeType {
 	var type(default, null) : String;
 	var description(default, null) : String;

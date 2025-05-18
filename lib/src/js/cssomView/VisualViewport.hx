@@ -24,6 +24,9 @@
 
 package js.cssomView;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("VisualViewport") extern class VisualViewport extends js.dom.EventTarget {
 	var offsetLeft(default, null) : Float;
 	var offsetTop(default, null) : Float;

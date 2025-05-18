@@ -24,6 +24,9 @@
 
 package js.filterEffects;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGFETurbulenceElement") extern class SVGFETurbulenceElement extends js.svg.SVGElement {
 	static inline var SVG_TURBULENCE_TYPE_UNKNOWN : Int = 0;
 	static inline var SVG_TURBULENCE_TYPE_FRACTALNOISE : Int = 1;

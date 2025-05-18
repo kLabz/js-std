@@ -24,6 +24,9 @@
 
 package js.webgl2;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WebGLSampler") extern class WebGLSampler extends js.webgl1.WebGLObject {
 
 }

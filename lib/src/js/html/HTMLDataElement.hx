@@ -24,7 +24,12 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLDataElement") extern class HTMLDataElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var value : String;
-	function new():Void;
 }

@@ -24,6 +24,9 @@
 
 package js.geolocation;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Geolocation") extern class Geolocation {
 	function clearWatch(watchId:Int):Void;
 	function getCurrentPosition(successCallback:PositionCallback, ?errorCallback:Null<PositionErrorCallback> = null, ?options:PositionOptions = {  }):Void;

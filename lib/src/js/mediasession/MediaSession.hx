@@ -24,6 +24,9 @@
 
 package js.mediasession;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MediaSession") extern class MediaSession {
 	var metadata : Null<MediaMetadata>;
 	var playbackState : MediaSessionPlaybackState;

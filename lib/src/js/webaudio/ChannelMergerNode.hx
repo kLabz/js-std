@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ChannelMergerNode") extern class ChannelMergerNode extends AudioNode {
 	function new(context:BaseAudioContext, ?options:ChannelMergerOptions = {  }):Void;
 }

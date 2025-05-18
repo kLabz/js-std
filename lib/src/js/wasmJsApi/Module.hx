@@ -24,6 +24,10 @@
 
 package js.wasmJsApi;
 
+/**
+	Unhandled extended attribute LegacyNamespace
+	Unhandled extended attribute Exposed
+**/
 @:native("Module") extern class Module {
 	function new(bytes:js.webidl.BufferSource):Void;
 	function customSections(moduleObject:Module, sectionName:String):Array<ArrayBuffer>;

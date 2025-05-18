@@ -24,6 +24,10 @@
 
 package js.webOtp;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("OTPCredential") extern class OTPCredential extends js.credentialManagement.Credential {
 	var code(default, null) : String;
 }

@@ -24,14 +24,42 @@
 
 package js.geometry;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+**/
 @:native("DOMQuad") extern class DOMQuad {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var p1(default, null) : DOMPoint;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var p2(default, null) : DOMPoint;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var p3(default, null) : DOMPoint;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var p4(default, null) : DOMPoint;
 	function new(?p1:DOMPointInit = {  }, ?p2:DOMPointInit = {  }, ?p3:DOMPointInit = {  }, ?p4:DOMPointInit = {  }):Void;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function fromQuad(?other:DOMQuadInit = {  }):DOMQuad;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function fromRect(?other:DOMRectInit = {  }):DOMQuad;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function getBounds():DOMRect;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

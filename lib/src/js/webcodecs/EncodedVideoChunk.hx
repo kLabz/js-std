@@ -24,6 +24,10 @@
 
 package js.webcodecs;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+**/
 @:native("EncodedVideoChunk") extern class EncodedVideoChunk {
 	var type(default, null) : EncodedVideoChunkType;
 	var timestamp(default, null) : Float;

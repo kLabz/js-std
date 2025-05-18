@@ -24,6 +24,9 @@
 
 package js.filterEffects;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGComponentTransferFunctionElement") extern class SVGComponentTransferFunctionElement extends js.svg.SVGElement {
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN : Int = 0;
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_IDENTITY : Int = 1;

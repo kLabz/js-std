@@ -24,10 +24,22 @@
 
 package js.serviceWorkers;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WindowClient") extern class WindowClient extends Client {
 	var visibilityState(default, null) : js.html.DocumentVisibilityState;
 	var focused(default, null) : Bool;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var ancestorOrigins(default, null) : Array<String>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function focus():js.lib.Promise<WindowClient>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function navigate(url:String):js.lib.Promise<Null<WindowClient>>;
 }

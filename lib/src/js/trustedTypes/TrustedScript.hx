@@ -24,6 +24,9 @@
 
 package js.trustedTypes;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TrustedScript") extern class TrustedScript {
 	/**
 		(special = stringifier)

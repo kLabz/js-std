@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUCommandBuffer") extern class GPUCommandBuffer {
 	/**
 		From interface mixin GPUObjectBase

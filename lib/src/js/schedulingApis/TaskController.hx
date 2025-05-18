@@ -24,6 +24,9 @@
 
 package js.schedulingApis;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TaskController") extern class TaskController extends js.dom.AbortController {
 	function new(?init:TaskControllerInit = {  }):Void;
 	function setPriority(priority:TaskPriority):Void;

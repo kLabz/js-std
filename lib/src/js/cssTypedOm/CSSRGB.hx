@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSRGB") extern class CSSRGB extends CSSColorValue {
 	var r : CSSColorRGBComp;
 	var g : CSSColorRGBComp;

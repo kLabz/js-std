@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("VideoTrackList") extern class VideoTrackList extends js.dom.EventTarget implements ArrayAccess<VideoTrack> {
 	var length(default, null) : Int;
 	var selectedIndex(default, null) : Int;

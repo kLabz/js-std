@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUDeviceLostInfo") extern class GPUDeviceLostInfo {
 	var reason(default, null) : GPUDeviceLostReason;
 	var message(default, null) : String;

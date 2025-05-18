@@ -24,6 +24,10 @@
 
 package js.wasmJsApi;
 
+/**
+	Unhandled extended attribute LegacyNamespace
+	Unhandled extended attribute Exposed
+**/
 @:native("Instance") extern class Instance {
 	var exports(default, null) : { };
 	function new(module:Module, ?importObject:{ }):Void;

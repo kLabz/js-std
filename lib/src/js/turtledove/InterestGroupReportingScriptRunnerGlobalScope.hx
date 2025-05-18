@@ -24,6 +24,10 @@
 
 package js.turtledove;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Global
+**/
 @:native("InterestGroupReportingScriptRunnerGlobalScope") extern class InterestGroupReportingScriptRunnerGlobalScope extends InterestGroupScriptRunnerGlobalScope {
 	function registerAdBeacon(map:haxe.DynamicAccess<String>):Void;
 	function registerAdMacro(name:String, value:String):Void;

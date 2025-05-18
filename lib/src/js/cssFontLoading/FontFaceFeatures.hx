@@ -24,6 +24,9 @@
 
 package js.cssFontLoading;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FontFaceFeatures") extern class FontFaceFeatures {
 
 }

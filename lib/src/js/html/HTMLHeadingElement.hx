@@ -24,10 +24,13 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLHeadingElement") extern class HTMLHeadingElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
-	function new():Void;
 }

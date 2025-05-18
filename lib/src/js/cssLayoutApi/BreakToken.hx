@@ -24,6 +24,9 @@
 
 package js.cssLayoutApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BreakToken") extern class BreakToken {
 	var childBreakTokens(default, null) : Array<ChildBreakToken>;
 	var data(default, null) : Any;

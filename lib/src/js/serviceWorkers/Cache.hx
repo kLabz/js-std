@@ -24,12 +24,37 @@
 
 package js.serviceWorkers;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("Cache") extern class Cache {
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function add(request:js.fetch.RequestInfo):js.lib.Promise<Void>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function addAll(requests:Array<js.fetch.RequestInfo>):js.lib.Promise<Void>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function delete(request:js.fetch.RequestInfo, ?options:CacheQueryOptions = {  }):js.lib.Promise<Bool>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function keys(?request:js.fetch.RequestInfo, ?options:CacheQueryOptions = {  }):js.lib.Promise<Array<js.fetch.Request>>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function match(request:js.fetch.RequestInfo, ?options:CacheQueryOptions = {  }):js.lib.Promise<haxe.extern.EitherType<js.fetch.Response, Void>>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function matchAll(?request:js.fetch.RequestInfo, ?options:CacheQueryOptions = {  }):js.lib.Promise<Array<js.fetch.Response>>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function put(request:js.fetch.RequestInfo, response:js.fetch.Response):js.lib.Promise<Void>;
 }

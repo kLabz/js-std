@@ -24,6 +24,9 @@
 
 package js.webvtt;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("VTTRegion") extern class VTTRegion {
 	var id : String;
 	var width : Float;

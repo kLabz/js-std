@@ -24,6 +24,10 @@
 
 package js.webglDrawInstancedBaseVertexBaseInstance;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("WEBGL_draw_instanced_base_vertex_base_instance") extern class WEBGL_draw_instanced_base_vertex_base_instance {
 	function drawArraysInstancedBaseInstanceWEBGL(mode:js.webgl1.GLenum, first:js.webgl1.GLint, count:js.webgl1.GLsizei, instanceCount:js.webgl1.GLsizei, baseInstance:js.webgl1.GLuint):Void;
 	function drawElementsInstancedBaseVertexBaseInstanceWEBGL(mode:js.webgl1.GLenum, count:js.webgl1.GLsizei, type:js.webgl1.GLenum, offset:js.webgl1.GLintptr, instanceCount:js.webgl1.GLsizei, baseVertex:js.webgl1.GLint, baseInstance:js.webgl1.GLuint):Void;

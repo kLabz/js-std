@@ -24,11 +24,14 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLLegendElement") extern class HTMLLegendElement extends HTMLElement {
 	var form(default, null) : Null<HTMLFormElement>;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
-	function new():Void;
 }

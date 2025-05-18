@@ -24,9 +24,24 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGForeignObjectElement") extern class SVGForeignObjectElement extends SVGGraphicsElement {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var x(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var y(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var width(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var height(default, null) : SVGAnimatedLength;
 }

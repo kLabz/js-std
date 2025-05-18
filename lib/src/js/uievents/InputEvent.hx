@@ -24,6 +24,9 @@
 
 package js.uievents;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("InputEvent") extern class InputEvent extends UIEvent {
 	var data(default, null) : Null<String>;
 	var isComposing(default, null) : Bool;

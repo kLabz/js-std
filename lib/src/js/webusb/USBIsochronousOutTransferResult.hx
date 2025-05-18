@@ -24,6 +24,10 @@
 
 package js.webusb;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("USBIsochronousOutTransferResult") extern class USBIsochronousOutTransferResult {
 	var packets(default, null) : Array<USBIsochronousOutTransferPacket>;
 	function new(packets:Array<USBIsochronousOutTransferPacket>):Void;

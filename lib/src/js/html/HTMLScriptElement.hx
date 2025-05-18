@@ -24,17 +24,54 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLScriptElement") extern class HTMLScriptElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var src : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var type : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var noModule : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var async : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var defer : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var crossOrigin : Null<String>;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var text : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var integrity : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var referrerPolicy : String;
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var blocking(default, null) : js.dom.DOMTokenList;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var fetchPriority : String;
 	/**
 		From interface mixin HTMLAttributionSrcElementUtils
@@ -42,16 +79,18 @@ package js.html;
 	var attributionSrc : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var charset : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var event : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var htmlFor : String;
-	function new():Void;
 	function supports(type:String):Bool;
 }

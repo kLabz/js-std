@@ -24,6 +24,9 @@
 
 package js.webAnimations2;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("GroupEffect") extern class GroupEffect {
 	var children(default, null) : AnimationNodeList;
 	var firstChild(default, null) : Null<js.webAnimations.AnimationEffect>;

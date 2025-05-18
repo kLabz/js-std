@@ -24,7 +24,13 @@
 
 package js.cssViewTransitions2;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSViewTransitionRule") extern class CSSViewTransitionRule extends js.cssom.CSSRule {
 	var navigation(default, null) : CSSOMString;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var types(default, null) : Array<CSSOMString>;
 }

@@ -24,7 +24,12 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLTitleElement") extern class HTMLTitleElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var text : String;
-	function new():Void;
 }

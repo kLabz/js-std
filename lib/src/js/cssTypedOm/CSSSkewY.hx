@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSSkewY") extern class CSSSkewY extends CSSTransformComponent {
 	var ay : CSSNumericValue;
 	function new(ay:CSSNumericValue):Void;

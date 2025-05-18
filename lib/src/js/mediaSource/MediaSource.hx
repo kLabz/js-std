@@ -24,7 +24,14 @@
 
 package js.mediaSource;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MediaSource") extern class MediaSource extends js.dom.EventTarget {
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute Exposed
+	**/
 	var handle(default, null) : MediaSourceHandle;
 	var sourceBuffers(default, null) : SourceBufferList;
 	var activeSourceBuffers(default, null) : SourceBufferList;

@@ -24,6 +24,11 @@
 
 package js.fs;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Serializable
+**/
 @:native("FileSystemHandle") extern class FileSystemHandle {
 	var kind(default, null) : FileSystemHandleKind;
 	var name(default, null) : String;

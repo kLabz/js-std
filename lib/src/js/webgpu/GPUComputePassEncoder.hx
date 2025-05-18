@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUComputePassEncoder") extern class GPUComputePassEncoder {
 	/**
 		From interface mixin GPUObjectBase

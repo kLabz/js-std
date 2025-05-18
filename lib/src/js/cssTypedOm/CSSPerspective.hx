@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSPerspective") extern class CSSPerspective extends CSSTransformComponent {
 	var length : CSSPerspectiveValue;
 	function new(length:CSSPerspectiveValue):Void;

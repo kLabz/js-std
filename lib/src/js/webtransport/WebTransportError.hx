@@ -24,6 +24,11 @@
 
 package js.webtransport;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+	Unhandled extended attribute SecureContext
+**/
 @:native("WebTransportError") extern class WebTransportError extends js.webidl.DOMException {
 	var source(default, null) : WebTransportErrorSource;
 	var streamErrorCode(default, null) : Null<Int>;

@@ -24,6 +24,9 @@
 
 package js.indexeddb;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IDBDatabase") extern class IDBDatabase extends js.dom.EventTarget {
 	var name(default, null) : String;
 	var version(default, null) : Float;
@@ -33,7 +36,13 @@ package js.indexeddb;
 	var onerror : js.html.EventHandler;
 	var onversionchange : js.html.EventHandler;
 	function close():Void;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function createObjectStore(name:String, ?options:IDBObjectStoreParameters = {  }):IDBObjectStore;
 	function deleteObjectStore(name:String):Void;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function transaction(storeNames:haxe.extern.EitherType<String, Array<String>>, ?mode:IDBTransactionMode = "readonly", ?options:IDBTransactionOptions = {  }):IDBTransaction;
 }

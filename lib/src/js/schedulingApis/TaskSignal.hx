@@ -24,8 +24,14 @@
 
 package js.schedulingApis;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TaskSignal") extern class TaskSignal extends js.dom.AbortSignal {
 	var priority(default, null) : TaskPriority;
 	var onprioritychange : js.html.EventHandler;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function any(signals:Array<js.dom.AbortSignal>, ?init:TaskSignalAnyInit = {  }):TaskSignal;
 }

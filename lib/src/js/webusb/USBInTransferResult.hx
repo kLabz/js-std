@@ -24,6 +24,10 @@
 
 package js.webusb;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("USBInTransferResult") extern class USBInTransferResult {
 	var data(default, null) : Null<DataView>;
 	var status(default, null) : USBTransferStatus;

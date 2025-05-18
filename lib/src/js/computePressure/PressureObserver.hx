@@ -24,7 +24,14 @@
 
 package js.computePressure;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("PressureObserver") extern class PressureObserver {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	static var knownSources(default, null) : Array<PressureSource>;
 	function new(callback:PressureUpdateCallback):Void;
 	function disconnect():Void;

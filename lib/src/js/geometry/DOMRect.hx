@@ -29,8 +29,14 @@ package js.geometry;
 	TODO attribute y: special=inherit readonly=false
 	TODO attribute width: special=inherit readonly=false
 	TODO attribute height: special=inherit readonly=false
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+	Unhandled extended attribute LegacyWindowAlias
 **/
 @:native("DOMRect") extern class DOMRect extends DOMRectReadOnly {
 	function new(?x:Float = 0, ?y:Float = 0, ?width:Float = 0, ?height:Float = 0):Void;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function fromRect(?other:DOMRectInit = {  }):DOMRect;
 }

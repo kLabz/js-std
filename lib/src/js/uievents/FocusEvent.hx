@@ -24,6 +24,9 @@
 
 package js.uievents;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FocusEvent") extern class FocusEvent extends UIEvent {
 	var relatedTarget(default, null) : Null<js.dom.EventTarget>;
 	function new(type:String, ?eventInitDict:FocusEventInit = {  }):Void;

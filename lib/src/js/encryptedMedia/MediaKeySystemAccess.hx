@@ -24,6 +24,10 @@
 
 package js.encryptedMedia;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("MediaKeySystemAccess") extern class MediaKeySystemAccess {
 	var keySystem(default, null) : String;
 	function createMediaKeys():js.lib.Promise<MediaKeys>;

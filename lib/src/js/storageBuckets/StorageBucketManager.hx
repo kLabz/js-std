@@ -24,6 +24,10 @@
 
 package js.storageBuckets;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("StorageBucketManager") extern class StorageBucketManager {
 	function delete(name:String):js.lib.Promise<Void>;
 	function keys():js.lib.Promise<Array<String>>;

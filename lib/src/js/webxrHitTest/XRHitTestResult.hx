@@ -24,6 +24,10 @@
 
 package js.webxrHitTest;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRHitTestResult") extern class XRHitTestResult {
 	/**
 		From partial interface in anchors.idl

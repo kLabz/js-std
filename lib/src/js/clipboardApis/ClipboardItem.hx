@@ -24,6 +24,10 @@
 
 package js.clipboardApis;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("ClipboardItem") extern class ClipboardItem {
 	var presentationStyle(default, null) : PresentationStyle;
 	var types(default, null) : Array<String>;

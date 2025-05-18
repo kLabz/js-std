@@ -24,6 +24,9 @@
 
 package js.urlpattern;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("URLPattern") extern class URLPattern {
 	var protocol(default, null) : String;
 	var username(default, null) : String;

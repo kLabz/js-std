@@ -24,6 +24,9 @@
 
 package js.longAnimationFrames;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformanceLongAnimationFrameTiming") extern class PerformanceLongAnimationFrameTiming extends js.performanceTimeline.PerformanceEntry {
 	var startTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var duration(default, null) : js.hrTime.DOMHighResTimeStamp;
@@ -33,6 +36,9 @@ package js.longAnimationFrames;
 	var styleAndLayoutStart(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var blockingDuration(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var firstUIEventTimestamp(default, null) : js.hrTime.DOMHighResTimeStamp;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var scripts(default, null) : Array<PerformanceScriptTiming>;
 	/**
 		From interface mixin PaintTimingMixin
@@ -42,5 +48,8 @@ package js.longAnimationFrames;
 		From interface mixin PaintTimingMixin
 	**/
 	var presentationTime(default, null) : Null<js.hrTime.DOMHighResTimeStamp>;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

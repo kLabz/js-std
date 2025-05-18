@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TextTrackCueList") extern class TextTrackCueList implements ArrayAccess<TextTrackCue> {
 	var length(default, null) : Int;
 	function getCueById(id:String):Null<TextTrackCue>;

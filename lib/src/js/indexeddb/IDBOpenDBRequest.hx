@@ -24,6 +24,9 @@
 
 package js.indexeddb;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IDBOpenDBRequest") extern class IDBOpenDBRequest extends IDBRequest {
 	var onblocked : js.html.EventHandler;
 	var onupgradeneeded : js.html.EventHandler;

@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("VisibilityStateEntry") extern class VisibilityStateEntry extends js.performanceTimeline.PerformanceEntry {
 	var name(default, null) : String;
 	var entryType(default, null) : String;

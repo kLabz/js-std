@@ -24,6 +24,9 @@
 
 package js.webAnimations;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Animation") extern class Animation extends js.dom.EventTarget {
 	var id : String;
 	var effect : Null<AnimationEffect>;
@@ -55,6 +58,9 @@ package js.webAnimations;
 	var overallProgress(default, null) : Null<Float>;
 	function new(?effect:Null<AnimationEffect> = null, ?timeline:Null<AnimationTimeline>):Void;
 	function cancel():Void;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	function commitStyles():Void;
 	function finish():Void;
 	function pause():Void;

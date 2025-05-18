@@ -24,44 +24,140 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLInputElement") extern class HTMLInputElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var accept : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var alpha : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var alt : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var autocomplete : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var defaultChecked : Bool;
 	var checked : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var colorSpace : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var dirName : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;
 	var files : Null<js.fileapi.FileList>;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var formAction : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var formEnctype : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var formMethod : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var formNoValidate : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var formTarget : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var height : Int;
 	var indeterminate : Bool;
 	var list(default, null) : Null<HTMLDataListElement>;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var max : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var maxLength : Int;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var min : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var minLength : Int;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var multiple : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var name : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var pattern : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var placeholder : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var readOnly : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var required : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var size : Int;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var src : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var step : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var type : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var defaultValue : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var value : String;
 	var valueAsDate : Null<{ }>;
 	var valueAsNumber : Float;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var width : Int;
 	var willValidate(default, null) : Bool;
 	var validity(default, null) : ValidityState;
@@ -72,10 +168,12 @@ package js.html;
 	var selectionDirection : Null<String>;
 	/**
 		From interface mixin PopoverInvokerElement
+		Unhandled extended attribute CEReactions
 	**/
 	var popoverTargetElement : Null<js.dom.Element>;
 	/**
 		From interface mixin PopoverInvokerElement
+		Unhandled extended attribute CEReactions
 	**/
 	var popoverTargetAction : String;
 	/**
@@ -88,17 +186,19 @@ package js.html;
 	var webkitEntries(default, null) : Array<js.entriesApi.FileSystemEntry>;
 	/**
 		From partial interface in html-media-capture.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var capture : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var useMap : String;
-	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
 	function select():Void;

@@ -24,6 +24,9 @@
 
 package js.webgl2;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WebGLQuery") extern class WebGLQuery extends js.webgl1.WebGLObject {
 
 }

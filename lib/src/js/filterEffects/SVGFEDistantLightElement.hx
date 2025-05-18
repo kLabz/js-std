@@ -24,6 +24,9 @@
 
 package js.filterEffects;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGFEDistantLightElement") extern class SVGFEDistantLightElement extends js.svg.SVGElement {
 	var azimuth(default, null) : js.svg.SVGAnimatedNumber;
 	var elevation(default, null) : js.svg.SVGAnimatedNumber;

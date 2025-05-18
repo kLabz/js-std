@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("OfflineAudioCompletionEvent") extern class OfflineAudioCompletionEvent extends js.dom.Event {
 	var renderedBuffer(default, null) : AudioBuffer;
 	function new(type:String, eventInitDict:OfflineAudioCompletionEventInit):Void;

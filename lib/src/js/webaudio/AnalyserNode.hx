@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AnalyserNode") extern class AnalyserNode extends AudioNode {
 	var fftSize : Int;
 	var frequencyBinCount(default, null) : Int;

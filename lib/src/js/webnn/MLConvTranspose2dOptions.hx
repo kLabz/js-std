@@ -35,6 +35,9 @@ typedef MLConvTranspose2dOptions = MLOperatorOptions & {
 	var outputPadding : Array<Int>;
 	@:optional
 	var outputSizes : Array<Int>;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var groups : Int = 1;
 	@:optional

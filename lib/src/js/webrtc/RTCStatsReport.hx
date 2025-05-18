@@ -26,6 +26,7 @@ package js.webrtc;
 
 /**
 	TODO MaplikeDeclaration handling
+	Unhandled extended attribute Exposed
 **/
 @:native("RTCStatsReport") extern class RTCStatsReport {
 

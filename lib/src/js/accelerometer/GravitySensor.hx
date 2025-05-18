@@ -24,6 +24,10 @@
 
 package js.accelerometer;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("GravitySensor") extern class GravitySensor extends Accelerometer {
 	function new(?options:AccelerometerSensorOptions = {  }):Void;
 }

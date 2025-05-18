@@ -24,6 +24,12 @@
 
 package js.reporting;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ReportBody") extern class ReportBody {
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

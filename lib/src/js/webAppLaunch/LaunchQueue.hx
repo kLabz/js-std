@@ -24,6 +24,9 @@
 
 package js.webAppLaunch;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("LaunchQueue") extern class LaunchQueue {
 	function setConsumer(consumer:LaunchConsumer):Void;
 }

@@ -24,6 +24,14 @@
 
 package js.elementCapture;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+**/
 @:native("RestrictionTarget") extern class RestrictionTarget {
+	/**
+		Unhandled extended attribute Exposed
+		Unhandled extended attribute SecureContext
+	**/
 	function fromElement(element:js.dom.Element):js.lib.Promise<RestrictionTarget>;
 }

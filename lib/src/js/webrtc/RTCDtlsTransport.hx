@@ -24,7 +24,13 @@
 
 package js.webrtc;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCDtlsTransport") extern class RTCDtlsTransport extends js.dom.EventTarget {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var iceTransport(default, null) : RTCIceTransport;
 	var state(default, null) : RTCDtlsTransportState;
 	var onstatechange : js.html.EventHandler;

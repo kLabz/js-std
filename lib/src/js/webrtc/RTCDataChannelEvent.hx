@@ -24,6 +24,9 @@
 
 package js.webrtc;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCDataChannelEvent") extern class RTCDataChannelEvent extends js.dom.Event {
 	var channel(default, null) : RTCDataChannel;
 	function new(type:String, eventInitDict:RTCDataChannelEventInit):Void;

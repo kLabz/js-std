@@ -24,6 +24,9 @@
 
 package js.backgroundFetch;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BackgroundFetchRegistration") extern class BackgroundFetchRegistration extends js.dom.EventTarget {
 	var id(default, null) : String;
 	var uploadTotal(default, null) : Float;

@@ -24,6 +24,9 @@
 
 package js.webxrlayers;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XRCompositionLayer") extern class XRCompositionLayer extends js.webxr.XRLayer {
 	var layout(default, null) : XRLayerLayout;
 	var blendTextureSourceAlpha : Bool;

@@ -24,14 +24,29 @@
 
 package js.indexeddb;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IDBKeyRange") extern class IDBKeyRange {
 	var lower(default, null) : Any;
 	var upper(default, null) : Any;
 	var lowerOpen(default, null) : Bool;
 	var upperOpen(default, null) : Bool;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function bound(lower:Any, upper:Any, ?lowerOpen:Bool = false, ?upperOpen:Bool = false):IDBKeyRange;
 	function includes(key:Any):Bool;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function lowerBound(lower:Any, ?open:Bool = false):IDBKeyRange;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function only(value:Any):IDBKeyRange;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function upperBound(upper:Any, ?open:Bool = false):IDBKeyRange;
 }

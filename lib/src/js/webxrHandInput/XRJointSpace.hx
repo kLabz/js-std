@@ -24,6 +24,9 @@
 
 package js.webxrHandInput;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XRJointSpace") extern class XRJointSpace extends js.webxr.XRSpace {
 	var jointName(default, null) : XRHandJoint;
 }

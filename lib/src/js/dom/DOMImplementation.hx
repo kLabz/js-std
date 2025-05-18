@@ -24,9 +24,21 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DOMImplementation") extern class DOMImplementation {
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function createDocument(namespace:Null<String>, qualifiedName:String, ?doctype:Null<DocumentType> = null):XMLDocument;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function createDocumentType(qualifiedName:String, publicId:String, systemId:String):DocumentType;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function createHTMLDocument(?title:String):Document;
 	function hasFeature():Bool;
 }

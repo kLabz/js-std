@@ -29,8 +29,14 @@ typedef ImageDecoderInit = {
 	var data : ImageBufferSource;
 	@:optional
 	var colorSpaceConversion : js.html.ColorSpaceConversion = "default";
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var desiredWidth : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var desiredHeight : Int;
 	@:optional

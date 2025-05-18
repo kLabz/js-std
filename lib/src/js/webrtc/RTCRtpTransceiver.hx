@@ -24,9 +24,18 @@
 
 package js.webrtc;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCRtpTransceiver") extern class RTCRtpTransceiver {
 	var mid(default, null) : Null<String>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var sender(default, null) : RTCRtpSender;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var receiver(default, null) : RTCRtpReceiver;
 	var direction : RTCRtpTransceiverDirection;
 	var currentDirection(default, null) : Null<RTCRtpTransceiverDirection>;

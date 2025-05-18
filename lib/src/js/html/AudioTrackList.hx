@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AudioTrackList") extern class AudioTrackList extends js.dom.EventTarget implements ArrayAccess<AudioTrack> {
 	var length(default, null) : Int;
 	var onchange : EventHandler;

@@ -24,6 +24,10 @@
 
 package js.turtledove;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Global
+**/
 @:native("InterestGroupBiddingScriptRunnerGlobalScope") extern class InterestGroupBiddingScriptRunnerGlobalScope extends InterestGroupBiddingAndScoringScriptRunnerGlobalScope {
 	function setBid(?oneOrManyBids:haxe.extern.EitherType<GenerateBidOutput, Array<GenerateBidOutput>> = []):Bool;
 	function setPriority(priority:Float):Void;

@@ -24,6 +24,10 @@
 
 package js.webcodecs;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("VideoEncoder") extern class VideoEncoder extends js.dom.EventTarget {
 	var state(default, null) : CodecState;
 	var encodeQueueSize(default, null) : Int;

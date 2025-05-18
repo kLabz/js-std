@@ -24,7 +24,13 @@
 
 package js.cssom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSGroupingRule") extern class CSSGroupingRule extends CSSRule {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var cssRules(default, null) : CSSRuleList;
 	function deleteRule(index:Int):Void;
 	function insertRule(rule:CSSOMString, ?index:Int = 0):Int;

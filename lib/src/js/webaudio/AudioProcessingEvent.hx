@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AudioProcessingEvent") extern class AudioProcessingEvent extends js.dom.Event {
 	var playbackTime(default, null) : Float;
 	var inputBuffer(default, null) : AudioBuffer;

@@ -24,6 +24,9 @@
 
 package js.indexeddb;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IDBRequest") extern class IDBRequest extends js.dom.EventTarget {
 	var result(default, null) : Any;
 	var error(default, null) : Null<js.webidl.DOMException>;

@@ -24,6 +24,9 @@
 
 package js.webgl1;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WebGLContextEvent") extern class WebGLContextEvent extends js.dom.Event {
 	var statusMessage(default, null) : String;
 	function new(type:String, ?eventInit:WebGLContextEventInit = {  }):Void;

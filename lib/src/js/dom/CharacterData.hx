@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CharacterData") extern class CharacterData extends Node {
 	var data : String;
 	var length(default, null) : Int;

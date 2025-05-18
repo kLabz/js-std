@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BaseAudioContext") extern class BaseAudioContext extends js.dom.EventTarget {
 	var destination(default, null) : AudioDestinationNode;
 	var sampleRate(default, null) : Float;
@@ -31,6 +34,10 @@ package js.webaudio;
 	var listener(default, null) : AudioListener;
 	var state(default, null) : AudioContextState;
 	var renderQuantumSize(default, null) : Int;
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute SecureContext
+	**/
 	var audioWorklet(default, null) : AudioWorklet;
 	var onstatechange : js.html.EventHandler;
 	function createAnalyser():AnalyserNode;

@@ -24,6 +24,10 @@
 
 package js.webrtc;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Transferable
+**/
 @:native("RTCDataChannel") extern class RTCDataChannel extends js.dom.EventTarget {
 	var label(default, null) : String;
 	var ordered(default, null) : Bool;
@@ -34,6 +38,9 @@ package js.webrtc;
 	var id(default, null) : Null<Int>;
 	var readyState(default, null) : RTCDataChannelState;
 	var bufferedAmount(default, null) : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	var bufferedAmountLowThreshold : Int;
 	var onopen : js.html.EventHandler;
 	var onbufferedamountlow : js.html.EventHandler;

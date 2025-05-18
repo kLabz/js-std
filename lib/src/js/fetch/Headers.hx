@@ -24,6 +24,9 @@
 
 package js.fetch;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Headers") extern class Headers {
 	function new(?init:HeadersInit):Void;
 	function append(name:String, value:String):Void;

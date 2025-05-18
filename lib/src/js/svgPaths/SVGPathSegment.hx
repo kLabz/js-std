@@ -24,6 +24,10 @@
 
 package js.svgPaths;
 
+/**
+	Unhandled extended attribute LegacyNoInterfaceObject
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGPathSegment") extern class SVGPathSegment {
 	var type : String;
 	var values : Array<Float>;

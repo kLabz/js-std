@@ -24,11 +24,29 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLTrackElement") extern class HTMLTrackElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var kind : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var src : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var srclang : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var label : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	@:native("default")
 	var default_ : Bool;
 	static inline var NONE : Int = 0;
@@ -37,5 +55,4 @@ package js.html;
 	static inline var ERROR : Int = 3;
 	var readyState(default, null) : Int;
 	var track(default, null) : TextTrack;
-	function new():Void;
 }

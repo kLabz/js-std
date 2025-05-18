@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ToggleEvent") extern class ToggleEvent extends js.dom.Event {
 	var oldState(default, null) : String;
 	var newState(default, null) : String;

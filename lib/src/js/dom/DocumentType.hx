@@ -24,24 +24,35 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DocumentType") extern class DocumentType extends Node {
 	var name(default, null) : String;
 	var publicId(default, null) : String;
 	var systemId(default, null) : String;
 	/**
 		From interface mixin ChildNode
+		Unhandled extended attribute CEReactions
+		Unhandled extended attribute Unscopable
 	**/
 	function after(nodes:haxe.extern.EitherType<Node, String>):Void;
 	/**
 		From interface mixin ChildNode
+		Unhandled extended attribute CEReactions
+		Unhandled extended attribute Unscopable
 	**/
 	function before(nodes:haxe.extern.EitherType<Node, String>):Void;
 	/**
 		From interface mixin ChildNode
+		Unhandled extended attribute CEReactions
+		Unhandled extended attribute Unscopable
 	**/
 	function remove():Void;
 	/**
 		From interface mixin ChildNode
+		Unhandled extended attribute CEReactions
+		Unhandled extended attribute Unscopable
 	**/
 	function replaceWith(nodes:haxe.extern.EitherType<Node, String>):Void;
 }

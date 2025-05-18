@@ -24,6 +24,10 @@
 
 package js.webglCompressedTextureAstc;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("WEBGL_compressed_texture_astc") extern class WEBGL_compressed_texture_astc {
 	static inline var COMPRESSED_RGBA_ASTC_4x4_KHR : js.webgl1.GLenum = 0x93B0;
 	static inline var COMPRESSED_RGBA_ASTC_5x4_KHR : js.webgl1.GLenum = 0x93B1;

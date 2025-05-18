@@ -24,7 +24,14 @@
 
 package js.webhid;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("HIDInputReportEvent") extern class HIDInputReportEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var device(default, null) : HIDDevice;
 	var reportId(default, null) : Int;
 	var data(default, null) : DataView;

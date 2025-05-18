@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CommandEvent") extern class CommandEvent extends js.dom.Event {
 	var source(default, null) : Null<js.dom.Element>;
 	var command(default, null) : String;

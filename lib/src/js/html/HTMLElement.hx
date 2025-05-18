@@ -24,22 +24,70 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLElement") extern class HTMLElement extends js.dom.Element {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var title : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var lang : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var translate : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var dir : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var hidden : Null<haxe.extern.EitherType<Bool, haxe.extern.EitherType<Float, String>>>;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var inert : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var accessKey : String;
 	var accessKeyLabel(default, null) : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var draggable : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var spellcheck : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var writingSuggestions : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var autocapitalize : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var autocorrect : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var innerText : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var outerText : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var popover : Null<String>;
 	/**
 		From interface mixin ElementCSSInlineStyle
@@ -471,10 +519,12 @@ package js.html;
 	var onbeforexrselect : EventHandler;
 	/**
 		From interface mixin ElementContentEditable
+		Unhandled extended attribute CEReactions
 	**/
 	var contentEditable : String;
 	/**
 		From interface mixin ElementContentEditable
+		Unhandled extended attribute CEReactions
 	**/
 	var enterKeyHint : String;
 	/**
@@ -483,10 +533,12 @@ package js.html;
 	var isContentEditable(default, null) : Bool;
 	/**
 		From interface mixin ElementContentEditable
+		Unhandled extended attribute CEReactions
 	**/
 	var inputMode : String;
 	/**
 		From interface mixin ElementContentEditable
+		Unhandled extended attribute CEReactions
 	**/
 	var virtualKeyboardPolicy : String;
 	/**
@@ -529,7 +581,6 @@ package js.html;
 		From partial interface in edit-context.idl
 	**/
 	var editContext : Null<js.editContext.EditContext>;
-	function new():Void;
 	function attachInternals():ElementInternals;
 	/**
 		From interface mixin HTMLOrSVGElement

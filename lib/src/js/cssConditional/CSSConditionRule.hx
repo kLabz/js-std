@@ -24,6 +24,9 @@
 
 package js.cssConditional;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSConditionRule") extern class CSSConditionRule extends js.cssom.CSSGroupingRule {
 	var conditionText(default, null) : CSSOMString;
 }

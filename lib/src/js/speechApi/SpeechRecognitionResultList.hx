@@ -24,6 +24,10 @@
 
 package js.speechApi;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("SpeechRecognitionResultList") extern class SpeechRecognitionResultList {
 	var length(default, null) : Int;
 	function item(index:Int):SpeechRecognitionResult;

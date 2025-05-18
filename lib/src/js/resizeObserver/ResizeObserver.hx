@@ -24,6 +24,9 @@
 
 package js.resizeObserver;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ResizeObserver") extern class ResizeObserver {
 	function new(callback:ResizeObserverCallback):Void;
 	function disconnect():Void;

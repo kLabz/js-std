@@ -24,6 +24,9 @@
 
 package js.streams;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ReadableByteStreamController") extern class ReadableByteStreamController {
 	var byobRequest(default, null) : Null<ReadableStreamBYOBRequest>;
 	var desiredSize(default, null) : Null<Float>;

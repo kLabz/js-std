@@ -25,6 +25,9 @@
 package js.webnn;
 
 typedef MLScatterOptions = MLOperatorOptions & {
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var axis : Int = 0;
 };

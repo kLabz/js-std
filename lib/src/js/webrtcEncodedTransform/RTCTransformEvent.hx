@@ -24,6 +24,9 @@
 
 package js.webrtcEncodedTransform;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCTransformEvent") extern class RTCTransformEvent extends js.dom.Event {
 	var transformer(default, null) : RTCRtpScriptTransformer;
 }

@@ -43,6 +43,9 @@ typedef GPUSamplerDescriptor = GPUObjectDescriptorBase & {
 	var lodMaxClamp : Float = 32;
 	@:optional
 	var compare : GPUCompareFunction;
+	/**
+		Unhandled extended attribute Clamp
+	**/
 	@:optional
 	var maxAnisotropy : Int = 1;
 };

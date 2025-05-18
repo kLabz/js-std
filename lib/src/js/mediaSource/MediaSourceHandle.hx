@@ -24,6 +24,10 @@
 
 package js.mediaSource;
 
+/**
+	Unhandled extended attribute Transferable
+	Unhandled extended attribute Exposed
+**/
 @:native("MediaSourceHandle") extern class MediaSourceHandle {
 
 }

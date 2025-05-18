@@ -24,6 +24,9 @@
 
 package js.cssCascade;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSLayerStatementRule") extern class CSSLayerStatementRule extends js.cssom.CSSRule {
 	var nameList(default, null) : Array<CSSOMString>;
 }

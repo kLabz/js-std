@@ -24,6 +24,9 @@
 
 package js.streams;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ByteLengthQueuingStrategy") extern class ByteLengthQueuingStrategy {
 	var highWaterMark(default, null) : Float;
 	var size(default, null) : js.webidl.Function;

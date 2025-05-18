@@ -24,11 +24,17 @@
 
 package js.eventTiming;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformanceEventTiming") extern class PerformanceEventTiming extends js.performanceTimeline.PerformanceEntry {
 	var processingStart(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var processingEnd(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var cancelable(default, null) : Bool;
 	var target(default, null) : Null<js.dom.Node>;
 	var interactionId(default, null) : Float;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

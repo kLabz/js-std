@@ -24,6 +24,10 @@
 
 package js.webnn;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("MLTensor") extern class MLTensor {
 	var dataType(default, null) : MLOperandDataType;
 	var shape(default, null) : Array<Int>;

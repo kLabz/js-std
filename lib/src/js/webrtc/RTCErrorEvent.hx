@@ -24,7 +24,13 @@
 
 package js.webrtc;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCErrorEvent") extern class RTCErrorEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var error(default, null) : RTCError;
 	function new(type:String, eventInitDict:RTCErrorEventInit):Void;
 }

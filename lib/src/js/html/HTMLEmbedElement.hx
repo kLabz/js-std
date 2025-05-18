@@ -24,19 +24,35 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLEmbedElement") extern class HTMLEmbedElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var src : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var type : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var width : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var height : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var name : String;
-	function new():Void;
 	function getSVGDocument():Null<js.dom.Document>;
 }

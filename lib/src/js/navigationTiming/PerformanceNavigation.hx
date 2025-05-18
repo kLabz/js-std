@@ -24,6 +24,9 @@
 
 package js.navigationTiming;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformanceNavigation") extern class PerformanceNavigation {
 	static inline var TYPE_NAVIGATE : Int = 0;
 	static inline var TYPE_RELOAD : Int = 1;
@@ -31,5 +34,8 @@ package js.navigationTiming;
 	static inline var TYPE_RESERVED : Int = 255;
 	var type(default, null) : Int;
 	var redirectCount(default, null) : Int;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

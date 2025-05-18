@@ -28,6 +28,9 @@ typedef AesGcmParams = Algorithm & {
 	var iv : js.webidl.BufferSource;
 	@:optional
 	var additionalData : js.webidl.BufferSource;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var tagLength : Int;
 };

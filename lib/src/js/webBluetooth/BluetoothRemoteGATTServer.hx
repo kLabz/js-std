@@ -24,7 +24,14 @@
 
 package js.webBluetooth;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("BluetoothRemoteGATTServer") extern class BluetoothRemoteGATTServer {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var device(default, null) : BluetoothDevice;
 	var connected(default, null) : Bool;
 	function connect():js.lib.Promise<BluetoothRemoteGATTServer>;

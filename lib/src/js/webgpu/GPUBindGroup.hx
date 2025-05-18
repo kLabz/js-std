@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUBindGroup") extern class GPUBindGroup {
 	/**
 		From interface mixin GPUObjectBase

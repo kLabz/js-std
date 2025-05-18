@@ -26,6 +26,7 @@ package js.cssViewTransitions2;
 
 /**
 	TODO SetlikeDeclaration handling
+	Unhandled extended attribute Exposed
 **/
 @:native("ViewTransitionTypeSet") extern class ViewTransitionTypeSet {
 

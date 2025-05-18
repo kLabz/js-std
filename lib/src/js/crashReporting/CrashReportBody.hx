@@ -24,10 +24,16 @@
 
 package js.crashReporting;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CrashReportBody") extern class CrashReportBody extends js.reporting.ReportBody {
 	var reason(default, null) : Null<String>;
 	var stack(default, null) : Null<String>;
 	var is_top_level(default, null) : Null<String>;
 	var page_visibility(default, null) : Null<js.html.DocumentVisibilityState>;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

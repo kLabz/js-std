@@ -24,9 +24,15 @@
 
 package js.webrtc;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCTrackEvent") extern class RTCTrackEvent extends js.dom.Event {
 	var receiver(default, null) : RTCRtpReceiver;
 	var track(default, null) : js.mediacaptureStreams.MediaStreamTrack;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var streams(default, null) : Array<js.mediacaptureStreams.MediaStream>;
 	var transceiver(default, null) : RTCRtpTransceiver;
 	function new(type:String, eventInitDict:RTCTrackEventInit):Void;

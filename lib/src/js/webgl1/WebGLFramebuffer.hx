@@ -24,6 +24,9 @@
 
 package js.webgl1;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WebGLFramebuffer") extern class WebGLFramebuffer extends WebGLObject {
 
 }

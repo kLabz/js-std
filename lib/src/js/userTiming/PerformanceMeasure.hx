@@ -24,6 +24,9 @@
 
 package js.userTiming;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformanceMeasure") extern class PerformanceMeasure extends js.performanceTimeline.PerformanceEntry {
 	var detail(default, null) : Any;
 }

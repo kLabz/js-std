@@ -24,6 +24,10 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Global
+	Unhandled extended attribute Exposed
+**/
 @:native("AudioWorkletGlobalScope") extern class AudioWorkletGlobalScope extends js.html.WorkletGlobalScope {
 	var currentFrame(default, null) : Float;
 	var currentTime(default, null) : Float;

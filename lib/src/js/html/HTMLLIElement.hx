@@ -24,11 +24,17 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLLIElement") extern class HTMLLIElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var value : Int;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var type : String;
-	function new():Void;
 }

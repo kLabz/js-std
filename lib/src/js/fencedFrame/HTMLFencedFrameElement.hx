@@ -24,11 +24,29 @@
 
 package js.fencedFrame;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLFencedFrameElement") extern class HTMLFencedFrameElement extends js.html.HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var config : Null<FencedFrameConfig>;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var width : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var height : String;
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var sandbox(default, null) : js.dom.DOMTokenList;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var allow : String;
-	function new():Void;
 }

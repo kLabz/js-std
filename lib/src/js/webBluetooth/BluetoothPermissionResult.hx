@@ -24,6 +24,9 @@
 
 package js.webBluetooth;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BluetoothPermissionResult") extern class BluetoothPermissionResult extends js.permissions.PermissionStatus {
 	var devices : Array<BluetoothDevice>;
 }

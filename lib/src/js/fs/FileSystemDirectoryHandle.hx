@@ -24,6 +24,11 @@
 
 package js.fs;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Serializable
+**/
 @:native("FileSystemDirectoryHandle") extern class FileSystemDirectoryHandle extends FileSystemHandle {
 	function entries():Iterator<js.lib.Tuple<String, FileSystemHandle>>;
 	function getDirectoryHandle(name:String, ?options:FileSystemGetDirectoryOptions = {  }):js.lib.Promise<FileSystemDirectoryHandle>;

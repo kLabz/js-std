@@ -26,6 +26,7 @@ package js.eventTiming;
 
 /**
 	TODO MaplikeDeclaration handling
+	Unhandled extended attribute Exposed
 **/
 @:native("EventCounts") extern class EventCounts {
 

@@ -24,7 +24,14 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPU") extern class GPU {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var wgslLanguageFeatures(default, null) : WGSLLanguageFeatures;
 	function getPreferredCanvasFormat():GPUTextureFormat;
 	function requestAdapter(?options:GPURequestAdapterOptions = {  }):js.lib.Promise<Null<GPUAdapter>>;

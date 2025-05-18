@@ -24,11 +24,20 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSStyleValue") extern class CSSStyleValue {
 	/**
 		(special = stringifier)
 	**/
 	function ():Void;
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	function parse(property:String, cssText:String):CSSStyleValue;
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	function parseAll(property:String, cssText:String):Array<CSSStyleValue>;
 }

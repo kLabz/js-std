@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGViewElement") extern class SVGViewElement extends SVGElement {
 	/**
 		From interface mixin SVGFitToViewBox

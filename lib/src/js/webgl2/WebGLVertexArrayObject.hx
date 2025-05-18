@@ -24,6 +24,9 @@
 
 package js.webgl2;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WebGLVertexArrayObject") extern class WebGLVertexArrayObject extends js.webgl1.WebGLObject {
 
 }

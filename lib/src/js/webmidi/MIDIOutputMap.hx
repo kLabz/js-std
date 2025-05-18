@@ -26,6 +26,8 @@ package js.webmidi;
 
 /**
 	TODO MaplikeDeclaration handling
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
 **/
 @:native("MIDIOutputMap") extern class MIDIOutputMap {
 

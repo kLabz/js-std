@@ -24,8 +24,18 @@
 
 package js.webauthn;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("PublicKeyCredential") extern class PublicKeyCredential extends js.credentialManagement.Credential {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var rawId(default, null) : ArrayBuffer;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var response(default, null) : AuthenticatorResponse;
 	var authenticatorAttachment(default, null) : Null<String>;
 	/**

@@ -24,6 +24,10 @@
 
 package js.fs;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("FileSystemWritableFileStream") extern class FileSystemWritableFileStream extends js.streams.WritableStream {
 	function seek(position:Float):js.lib.Promise<Void>;
 	function truncate(size:Float):js.lib.Promise<Void>;

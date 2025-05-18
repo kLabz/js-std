@@ -24,6 +24,10 @@
 
 package js.clipboardApis;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("Clipboard") extern class Clipboard extends js.dom.EventTarget {
 	function read(?formats:ClipboardUnsanitizedFormats = {  }):js.lib.Promise<ClipboardItems>;
 	function readText():js.lib.Promise<String>;

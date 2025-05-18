@@ -24,6 +24,10 @@
 
 package js.orientationEvent;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("DeviceOrientationEvent") extern class DeviceOrientationEvent extends js.dom.Event {
 	var alpha(default, null) : Null<Float>;
 	var beta(default, null) : Null<Float>;

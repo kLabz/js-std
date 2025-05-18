@@ -24,6 +24,10 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRInputSourceArray") extern class XRInputSourceArray implements ArrayAccess<XRInputSource> {
 	var length(default, null) : Int;
 	function values():Iterator<XRInputSource>;

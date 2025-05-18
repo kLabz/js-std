@@ -24,6 +24,11 @@
 
 package js.webcodecs;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+	Unhandled extended attribute Transferable
+**/
 @:native("VideoFrame") extern class VideoFrame {
 	var format(default, null) : Null<VideoPixelFormat>;
 	var codedWidth(default, null) : Int;

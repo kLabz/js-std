@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGNumber") extern class SVGNumber {
 	var value : Float;
 }

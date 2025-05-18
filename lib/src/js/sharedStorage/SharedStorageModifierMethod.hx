@@ -24,6 +24,9 @@
 
 package js.sharedStorage;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SharedStorageModifierMethod") extern class SharedStorageModifierMethod {
 
 }

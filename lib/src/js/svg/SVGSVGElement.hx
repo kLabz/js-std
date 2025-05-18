@@ -24,19 +24,39 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGSVGElement") extern class SVGSVGElement extends SVGGraphicsElement {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var x(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var y(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var width(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var height(default, null) : SVGAnimatedLength;
 	var currentScale : Float;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var currentTranslate(default, null) : js.geometry.DOMPointReadOnly;
 	/**
 		From interface mixin SVGFitToViewBox
+		Unhandled extended attribute SameObject
 	**/
 	var viewBox(default, null) : SVGAnimatedRect;
 	/**
 		From interface mixin SVGFitToViewBox
+		Unhandled extended attribute SameObject
 	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 	/**

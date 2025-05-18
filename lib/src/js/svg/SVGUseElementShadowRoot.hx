@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGUseElementShadowRoot") extern class SVGUseElementShadowRoot extends js.dom.ShadowRoot {
 
 }

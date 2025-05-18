@@ -24,6 +24,9 @@
 
 package js.portals;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PortalHost") extern class PortalHost extends js.dom.EventTarget {
 	var onmessage : js.html.EventHandler;
 	var onmessageerror : js.html.EventHandler;

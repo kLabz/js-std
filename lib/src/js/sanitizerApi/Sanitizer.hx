@@ -24,6 +24,9 @@
 
 package js.sanitizerApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Sanitizer") extern class Sanitizer {
 	function new(?configuration:haxe.extern.EitherType<SanitizerConfig, SanitizerPresets> = "default"):Void;
 	function allowAttribute(attribute:SanitizerAttribute):Void;

@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGGElement") extern class SVGGElement extends SVGGraphicsElement {
 
 }

@@ -24,6 +24,10 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyUnenumerableNamedProperties
+**/
 @:native("HTMLCollection") extern class HTMLCollection {
 	var length(default, null) : Int;
 	function item(index:Int):Null<Element>;

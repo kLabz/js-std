@@ -24,6 +24,9 @@
 
 package js.webrtc;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCDTMFToneChangeEvent") extern class RTCDTMFToneChangeEvent extends js.dom.Event {
 	var tone(default, null) : String;
 	function new(type:String, ?eventInitDict:RTCDTMFToneChangeEventInit = {  }):Void;

@@ -24,6 +24,9 @@
 
 package js.webrtc;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCIceTransport") extern class RTCIceTransport extends js.dom.EventTarget {
 	var role(default, null) : RTCIceRole;
 	var component(default, null) : RTCIceComponent;

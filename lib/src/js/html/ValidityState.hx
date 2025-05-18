@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ValidityState") extern class ValidityState {
 	var valueMissing(default, null) : Bool;
 	var typeMismatch(default, null) : Bool;

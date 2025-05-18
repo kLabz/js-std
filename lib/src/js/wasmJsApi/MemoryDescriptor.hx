@@ -26,6 +26,9 @@ package js.wasmJsApi;
 
 typedef MemoryDescriptor = {
 	var initial : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var maximum : Int;
 };

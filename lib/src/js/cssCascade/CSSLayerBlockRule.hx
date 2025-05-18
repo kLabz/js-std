@@ -24,6 +24,9 @@
 
 package js.cssCascade;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSLayerBlockRule") extern class CSSLayerBlockRule extends js.cssom.CSSGroupingRule {
 	var name(default, null) : CSSOMString;
 }

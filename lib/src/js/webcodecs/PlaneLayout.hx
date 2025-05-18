@@ -25,6 +25,12 @@
 package js.webcodecs;
 
 typedef PlaneLayout = {
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	var offset : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	var stride : Int;
 };

@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MessageEvent") extern class MessageEvent extends js.dom.Event {
 	var data(default, null) : Any;
 	var origin(default, null) : String;

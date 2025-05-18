@@ -24,6 +24,9 @@
 
 package js.notifications;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("NotificationEvent") extern class NotificationEvent extends js.serviceWorkers.ExtendableEvent {
 	var notification(default, null) : Notification;
 	var action(default, null) : String;

@@ -24,6 +24,9 @@
 
 package js.schedulingApis;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TaskPriorityChangeEvent") extern class TaskPriorityChangeEvent extends js.dom.Event {
 	var previousPriority(default, null) : TaskPriority;
 	function new(type:String, priorityChangeEventInitDict:TaskPriorityChangeEventInit):Void;

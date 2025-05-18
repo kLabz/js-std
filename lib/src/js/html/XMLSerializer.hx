@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XMLSerializer") extern class XMLSerializer {
 	function new():Void;
 	function serializeToString(root:js.dom.Node):String;

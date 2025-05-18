@@ -24,6 +24,9 @@
 
 package js.cssColor5;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSColorProfileRule") extern class CSSColorProfileRule extends js.cssom.CSSRule {
 	var name(default, null) : CSSOMString;
 	var src(default, null) : CSSOMString;

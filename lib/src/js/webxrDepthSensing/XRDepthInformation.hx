@@ -24,9 +24,16 @@
 
 package js.webxrDepthSensing;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRDepthInformation") extern class XRDepthInformation {
 	var width(default, null) : Int;
 	var height(default, null) : Int;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var normDepthBufferFromNormView(default, null) : js.webxr.XRRigidTransform;
 	var rawValueToMeters(default, null) : Float;
 	/**
@@ -35,6 +42,7 @@ package js.webxrDepthSensing;
 	var projectionMatrix(default, null) : Float32Array;
 	/**
 		From interface mixin XRViewGeometry
+		Unhandled extended attribute SameObject
 	**/
 	var transform(default, null) : js.webxr.XRRigidTransform;
 }

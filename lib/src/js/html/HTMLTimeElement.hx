@@ -24,7 +24,12 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLTimeElement") extern class HTMLTimeElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var dateTime : String;
-	function new():Void;
 }

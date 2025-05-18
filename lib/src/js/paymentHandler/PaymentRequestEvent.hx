@@ -24,6 +24,9 @@
 
 package js.paymentHandler;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PaymentRequestEvent") extern class PaymentRequestEvent extends js.serviceWorkers.ExtendableEvent {
 	var topOrigin(default, null) : String;
 	var paymentRequestOrigin(default, null) : String;

@@ -25,6 +25,9 @@
 package js.webnn;
 
 typedef MLSplitOptions = MLOperatorOptions & {
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var axis : Int = 0;
 };

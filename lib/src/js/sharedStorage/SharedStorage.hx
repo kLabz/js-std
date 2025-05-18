@@ -24,19 +24,40 @@
 
 package js.sharedStorage;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SharedStorage") extern class SharedStorage {
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	var worklet(default, null) : SharedStorageWorklet;
 	function append(key:String, value:String, ?options:SharedStorageModifierMethodOptions = {  }):js.lib.Promise<Any>;
 	function batchUpdate(methods:Array<SharedStorageModifierMethod>, ?options:SharedStorageModifierMethodOptions = {  }):js.lib.Promise<Any>;
 	function clear(?options:SharedStorageModifierMethodOptions = {  }):js.lib.Promise<Any>;
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	function createWorklet(moduleURL:String, ?options:SharedStorageWorkletOptions = {  }):js.lib.Promise<SharedStorageWorklet>;
 	function delete(key:String, ?options:SharedStorageModifierMethodOptions = {  }):js.lib.Promise<Any>;
 	function entries():Iterator<js.lib.Tuple<String, String>>;
 	function get(key:String):js.lib.Promise<String>;
 	function keys():Iterator<String>;
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	function length():js.lib.Promise<Int>;
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	function remainingBudget():js.lib.Promise<Float>;
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	function run(name:String, ?options:SharedStorageRunOperationMethodOptions = {  }):js.lib.Promise<Any>;
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	function selectURL(name:String, urls:Array<SharedStorageUrlWithMetadata>, ?options:SharedStorageRunOperationMethodOptions = {  }):js.lib.Promise<SharedStorageResponse>;
 	function set(key:String, value:String, ?options:SharedStorageSetMethodOptions = {  }):js.lib.Promise<Any>;
 	function values():Iterator<String>;

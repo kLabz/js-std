@@ -24,6 +24,10 @@
 
 package js.loginStatus;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("NavigatorLogin") extern class NavigatorLogin {
 	function setStatus(status:LoginStatus):js.lib.Promise<Void>;
 }

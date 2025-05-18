@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGAnimatedString") extern class SVGAnimatedString {
 	var baseVal : String;
 	var animVal(default, null) : String;

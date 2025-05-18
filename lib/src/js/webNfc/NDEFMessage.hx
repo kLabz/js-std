@@ -24,6 +24,10 @@
 
 package js.webNfc;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("NDEFMessage") extern class NDEFMessage {
 	var records(default, null) : Array<NDEFRecord>;
 	function new(messageInit:NDEFMessageInit):Void;

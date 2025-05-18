@@ -24,6 +24,9 @@
 
 package js.filterEffects;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGFESpotLightElement") extern class SVGFESpotLightElement extends js.svg.SVGElement {
 	var x(default, null) : js.svg.SVGAnimatedNumber;
 	var y(default, null) : js.svg.SVGAnimatedNumber;

@@ -33,6 +33,9 @@ typedef UnderlyingSource = {
 	var cancel : UnderlyingSourceCancelCallback;
 	@:optional
 	var type : ReadableStreamType;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var autoAllocateChunkSize : Float;
 };

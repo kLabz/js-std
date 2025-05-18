@@ -24,6 +24,9 @@
 
 package js.webgl1;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WebGLProgram") extern class WebGLProgram extends WebGLObject {
 
 }

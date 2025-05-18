@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CloseWatcher") extern class CloseWatcher extends js.dom.EventTarget {
 	var oncancel : EventHandler;
 	var onclose : EventHandler;

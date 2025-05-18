@@ -24,6 +24,9 @@
 
 package js.resourceTiming;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformanceResourceTiming") extern class PerformanceResourceTiming extends js.performanceTimeline.PerformanceEntry {
 	var initiatorType(default, null) : String;
 	var deliveryType(default, null) : String;
@@ -52,5 +55,8 @@ package js.resourceTiming;
 		From partial interface in server-timing.idl
 	**/
 	var serverTiming(default, null) : Array<js.serverTiming.PerformanceServerTiming>;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

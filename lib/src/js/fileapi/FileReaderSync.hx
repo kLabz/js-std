@@ -24,6 +24,9 @@
 
 package js.fileapi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FileReaderSync") extern class FileReaderSync {
 	function new():Void;
 	function readAsArrayBuffer(blob:Blob):ArrayBuffer;

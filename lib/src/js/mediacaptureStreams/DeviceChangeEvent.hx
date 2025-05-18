@@ -24,8 +24,17 @@
 
 package js.mediacaptureStreams;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DeviceChangeEvent") extern class DeviceChangeEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var devices(default, null) : Array<MediaDeviceInfo>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var userInsertedDevices(default, null) : Array<MediaDeviceInfo>;
 	function new(type:String, ?eventInitDict:DeviceChangeEventInit = {  }):Void;
 }

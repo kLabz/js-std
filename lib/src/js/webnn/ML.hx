@@ -24,6 +24,10 @@
 
 package js.webnn;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("ML") extern class ML {
 	overload function createContext(?options:MLContextOptions = {  }):js.lib.Promise<MLContext>;
 	overload function createContext(gpuDevice:js.webgpu.GPUDevice):js.lib.Promise<MLContext>;

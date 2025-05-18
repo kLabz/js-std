@@ -24,6 +24,9 @@
 
 package js.streams;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WritableStreamDefaultWriter") extern class WritableStreamDefaultWriter {
 	var closed(default, null) : js.lib.Promise<Void>;
 	var desiredSize(default, null) : Null<Float>;

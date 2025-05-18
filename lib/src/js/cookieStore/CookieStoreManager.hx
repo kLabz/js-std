@@ -24,6 +24,10 @@
 
 package js.cookieStore;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("CookieStoreManager") extern class CookieStoreManager {
 	function getSubscriptions():js.lib.Promise<Array<CookieStoreGetOptions>>;
 	function subscribe(subscriptions:Array<CookieStoreGetOptions>):js.lib.Promise<Void>;

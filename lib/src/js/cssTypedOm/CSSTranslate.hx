@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSTranslate") extern class CSSTranslate extends CSSTransformComponent {
 	var x : CSSNumericValue;
 	var y : CSSNumericValue;

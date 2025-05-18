@@ -24,6 +24,9 @@
 
 package js.xhr;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FormData") extern class FormData {
 	function new(?form:js.html.HTMLFormElement, ?submitter:Null<js.html.HTMLElement> = null):Void;
 	overload function append(name:String, value:String):Void;

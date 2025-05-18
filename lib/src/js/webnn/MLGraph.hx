@@ -24,6 +24,10 @@
 
 package js.webnn;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("MLGraph") extern class MLGraph {
 	function destroy():Void;
 }

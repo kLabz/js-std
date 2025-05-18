@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("StaticRange") extern class StaticRange extends AbstractRange {
 	function new(init:StaticRangeInit):Void;
 }

@@ -24,8 +24,20 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGCircleElement") extern class SVGCircleElement extends SVGGeometryElement {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var cx(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var cy(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var r(default, null) : SVGAnimatedLength;
 }

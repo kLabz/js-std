@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGTextElement") extern class SVGTextElement extends SVGTextPositioningElement {
 
 }

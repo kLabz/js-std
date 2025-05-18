@@ -24,9 +24,22 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRInputSourcesChangeEvent") extern class XRInputSourcesChangeEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var session(default, null) : XRSession;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var added(default, null) : Array<XRInputSource>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var removed(default, null) : Array<XRInputSource>;
 	function new(type:String, eventInitDict:XRInputSourcesChangeEventInit):Void;
 }

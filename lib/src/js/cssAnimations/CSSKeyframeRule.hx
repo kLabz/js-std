@@ -24,7 +24,14 @@
 
 package js.cssAnimations;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSKeyframeRule") extern class CSSKeyframeRule extends js.cssom.CSSRule {
 	var keyText : CSSOMString;
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var style(default, null) : js.cssom.CSSStyleProperties;
 }

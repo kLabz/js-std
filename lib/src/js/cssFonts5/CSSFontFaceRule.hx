@@ -24,6 +24,13 @@
 
 package js.cssFonts5;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSFontFaceRule") extern class CSSFontFaceRule extends js.cssom.CSSRule {
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var style(default, null) : CSSFontFaceDescriptors;
 }

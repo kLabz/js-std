@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DocumentFragment") extern class DocumentFragment extends Node {
 	/**
 		From interface mixin ParentNode

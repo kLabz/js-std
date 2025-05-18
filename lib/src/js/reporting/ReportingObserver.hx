@@ -24,6 +24,9 @@
 
 package js.reporting;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ReportingObserver") extern class ReportingObserver {
 	function new(callback:ReportingObserverCallback, ?options:ReportingObserverOptions = {  }):Void;
 	function disconnect():Void;

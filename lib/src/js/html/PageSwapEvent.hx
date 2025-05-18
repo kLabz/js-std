@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PageSwapEvent") extern class PageSwapEvent extends js.dom.Event {
 	var activation(default, null) : Null<NavigationActivation>;
 	var viewTransition(default, null) : Null<js.cssViewTransitions.ViewTransition>;

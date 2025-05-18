@@ -24,6 +24,9 @@
 
 package js.streams;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ReadableStreamBYOBRequest") extern class ReadableStreamBYOBRequest {
 	var view(default, null) : Null<js.webidl.ArrayBufferView>;
 	function respond(bytesWritten:Float):Void;

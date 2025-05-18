@@ -24,6 +24,9 @@
 
 package js.entriesApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FileSystemFileEntry") extern class FileSystemFileEntry extends FileSystemEntry {
 	function file(successCallback:FileCallback, ?errorCallback:ErrorCallback):Void;
 }

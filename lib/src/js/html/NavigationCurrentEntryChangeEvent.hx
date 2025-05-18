@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("NavigationCurrentEntryChangeEvent") extern class NavigationCurrentEntryChangeEvent extends js.dom.Event {
 	var navigationType(default, null) : Null<NavigationType>;
 	var from(default, null) : NavigationHistoryEntry;

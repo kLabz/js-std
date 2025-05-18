@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AudioWorkletProcessor") extern class AudioWorkletProcessor {
 	var port(default, null) : js.html.MessagePort;
 	function new():Void;

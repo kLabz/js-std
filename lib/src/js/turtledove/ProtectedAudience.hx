@@ -24,6 +24,10 @@
 
 package js.turtledove;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("ProtectedAudience") extern class ProtectedAudience {
 	function queryFeatureSupport(feature:String):Any;
 }

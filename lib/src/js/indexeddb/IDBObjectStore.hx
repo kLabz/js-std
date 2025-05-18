@@ -24,24 +24,66 @@
 
 package js.indexeddb;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IDBObjectStore") extern class IDBObjectStore {
 	var name : String;
 	var keyPath(default, null) : Any;
 	var indexNames(default, null) : js.html.DOMStringList;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var transaction(default, null) : IDBTransaction;
 	var autoIncrement(default, null) : Bool;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function add(value:Any, ?key:Any):IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function clear():IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function count(?query:Any):IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function createIndex(name:String, keyPath:haxe.extern.EitherType<String, Array<String>>, ?options:IDBIndexParameters = {  }):IDBIndex;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function delete(query:Any):IDBRequest;
 	function deleteIndex(name:String):Void;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function get(query:Any):IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function getAll(?query:Any, ?count:Int):IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function getAllKeys(?query:Any, ?count:Int):IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function getKey(query:Any):IDBRequest;
 	function index(name:String):IDBIndex;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function openCursor(?query:Any, ?direction:IDBCursorDirection = "next"):IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function openKeyCursor(?query:Any, ?direction:IDBCursorDirection = "next"):IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function put(value:Any, ?key:Any):IDBRequest;
 }

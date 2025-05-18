@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUTextureView") extern class GPUTextureView {
 	/**
 		From interface mixin GPUObjectBase

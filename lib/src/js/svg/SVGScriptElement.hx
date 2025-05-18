@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGScriptElement") extern class SVGScriptElement extends SVGElement {
 	var type : String;
 	var crossOrigin : Null<String>;

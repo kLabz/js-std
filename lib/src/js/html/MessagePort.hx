@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Transferable
+**/
 @:native("MessagePort") extern class MessagePort extends js.dom.EventTarget {
 	var onclose : EventHandler;
 	/**

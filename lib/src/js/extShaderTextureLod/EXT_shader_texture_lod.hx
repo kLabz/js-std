@@ -24,6 +24,10 @@
 
 package js.extShaderTextureLod;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("EXT_shader_texture_lod") extern class EXT_shader_texture_lod {
 
 }

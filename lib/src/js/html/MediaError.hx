@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MediaError") extern class MediaError {
 	static inline var MEDIA_ERR_ABORTED : Int = 1;
 	static inline var MEDIA_ERR_NETWORK : Int = 2;

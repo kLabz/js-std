@@ -24,6 +24,10 @@
 
 package js.webglLoseContext;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("WEBGL_lose_context") extern class WEBGL_lose_context {
 	function loseContext():Void;
 	function restoreContext():Void;

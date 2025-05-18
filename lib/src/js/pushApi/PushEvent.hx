@@ -24,6 +24,10 @@
 
 package js.pushApi;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("PushEvent") extern class PushEvent extends js.serviceWorkers.ExtendableEvent {
 	var data(default, null) : Null<PushMessageData>;
 	function new(type:String, ?eventInitDict:PushEventInit = {  }):Void;

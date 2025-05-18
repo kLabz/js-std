@@ -24,6 +24,9 @@
 
 package js.webAnimations;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DocumentTimeline") extern class DocumentTimeline extends AnimationTimeline {
 	function new(?options:DocumentTimelineOptions = {  }):Void;
 }

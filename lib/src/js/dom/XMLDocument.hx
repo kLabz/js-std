@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XMLDocument") extern class XMLDocument extends Document {
 
 }

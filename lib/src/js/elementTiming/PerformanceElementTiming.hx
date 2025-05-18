@@ -24,6 +24,9 @@
 
 package js.elementTiming;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformanceElementTiming") extern class PerformanceElementTiming extends js.performanceTimeline.PerformanceEntry {
 	var renderTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var loadTime(default, null) : js.hrTime.DOMHighResTimeStamp;
@@ -42,5 +45,8 @@ package js.elementTiming;
 		From interface mixin PaintTimingMixin
 	**/
 	var presentationTime(default, null) : Null<js.hrTime.DOMHighResTimeStamp>;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

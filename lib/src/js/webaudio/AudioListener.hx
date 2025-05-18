@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AudioListener") extern class AudioListener {
 	var positionX(default, null) : AudioParam;
 	var positionY(default, null) : AudioParam;

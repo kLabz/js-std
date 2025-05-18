@@ -24,6 +24,10 @@
 
 package js.oesElementIndexUint;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("OES_element_index_uint") extern class OES_element_index_uint {
 
 }

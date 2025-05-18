@@ -24,6 +24,9 @@
 
 package js.cssLayoutApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("LayoutChild") extern class LayoutChild {
 	var styleMap(default, null) : js.cssTypedOm.StylePropertyMapReadOnly;
 	function intrinsicSizes():js.lib.Promise<IntrinsicSizes>;

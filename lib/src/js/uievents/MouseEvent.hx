@@ -24,6 +24,9 @@
 
 package js.uievents;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MouseEvent") extern class MouseEvent extends UIEvent {
 	var screenX(default, null) : Int;
 	var screenY(default, null) : Int;

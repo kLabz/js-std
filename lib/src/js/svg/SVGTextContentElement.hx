@@ -24,11 +24,20 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGTextContentElement") extern class SVGTextContentElement extends SVGGraphicsElement {
 	static inline var LENGTHADJUST_UNKNOWN : Int = 0;
 	static inline var LENGTHADJUST_SPACING : Int = 1;
 	static inline var LENGTHADJUST_SPACINGANDGLYPHS : Int = 2;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var textLength(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var lengthAdjust(default, null) : SVGAnimatedEnumeration;
 	function getCharNumAtPosition(?point:js.geometry.DOMPointInit = {  }):Int;
 	function getComputedTextLength():Float;

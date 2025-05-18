@@ -24,8 +24,15 @@
 
 package js.documentPictureInPicture;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("DocumentPictureInPicture") extern class DocumentPictureInPicture extends js.dom.EventTarget {
 	var window(default, null) : js.html.Window;
 	var onenter : js.html.EventHandler;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function requestWindow(?options:DocumentPictureInPictureOptions = {  }):js.lib.Promise<js.html.Window>;
 }

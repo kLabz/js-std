@@ -24,6 +24,9 @@
 
 package js.cssAnimationWorklet;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WorkletAnimationEffect") extern class WorkletAnimationEffect {
 	var localTime : Null<Float>;
 	function getComputedTiming():js.webAnimations.ComputedEffectTiming;

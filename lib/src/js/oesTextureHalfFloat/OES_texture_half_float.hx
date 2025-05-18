@@ -24,6 +24,10 @@
 
 package js.oesTextureHalfFloat;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("OES_texture_half_float") extern class OES_texture_half_float {
 	static inline var HALF_FLOAT_OES : js.webgl1.GLenum = 0x8D61;
 }

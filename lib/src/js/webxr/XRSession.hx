@@ -24,12 +24,25 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRSession") extern class XRSession extends js.dom.EventTarget {
 	var visibilityState(default, null) : XRVisibilityState;
 	var frameRate(default, null) : Null<Float>;
 	var supportedFrameRates(default, null) : Null<Float32Array>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var renderState(default, null) : XRRenderState;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var inputSources(default, null) : XRInputSourceArray;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var trackedSources(default, null) : XRInputSourceArray;
 	var enabledFeatures(default, null) : Array<String>;
 	var isSystemKeyboardSupported(default, null) : Bool;
@@ -106,6 +119,9 @@ package js.webxr;
 		From partial interface in webxr-lighting-estimation.idl
 	**/
 	function requestLightProbe(?options:js.webxrLightingEstimation.XRLightProbeInit = {  }):js.lib.Promise<js.webxrLightingEstimation.XRLightProbe>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function requestReferenceSpace(type:XRReferenceSpaceType):js.lib.Promise<XRReferenceSpace>;
 	/**
 		From partial interface in anchors.idl

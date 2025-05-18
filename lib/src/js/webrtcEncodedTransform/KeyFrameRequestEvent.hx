@@ -24,6 +24,9 @@
 
 package js.webrtcEncodedTransform;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("KeyFrameRequestEvent") extern class KeyFrameRequestEvent extends js.dom.Event {
 	var rid(default, null) : Null<String>;
 	function new(type:String, ?rid:String):Void;

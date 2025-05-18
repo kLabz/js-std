@@ -24,6 +24,9 @@
 
 package js.cssPaintApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PaintRenderingContext2D") extern class PaintRenderingContext2D {
 	/**
 		From interface mixin CanvasCompositing
@@ -167,6 +170,7 @@ package js.cssPaintApi;
 	function getLineDash():Array<Float>;
 	/**
 		From interface mixin CanvasTransform
+		Unhandled extended attribute NewObject
 	**/
 	function getTransform():js.geometry.DOMMatrix;
 	/**

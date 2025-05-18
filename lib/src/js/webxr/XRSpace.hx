@@ -24,6 +24,10 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRSpace") extern class XRSpace extends js.dom.EventTarget {
 
 }

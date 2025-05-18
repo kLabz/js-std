@@ -24,11 +24,18 @@
 
 package js.cspNext;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("ScriptingPolicyReportBody") extern class ScriptingPolicyReportBody extends js.reporting.ReportBody {
 	var violationType(default, null) : String;
 	var violationURL(default, null) : Null<String>;
 	var violationSample(default, null) : Null<String>;
 	var lineno(default, null) : Int;
 	var colno(default, null) : Int;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

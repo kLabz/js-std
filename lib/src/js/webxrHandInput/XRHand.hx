@@ -24,6 +24,9 @@
 
 package js.webxrHandInput;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XRHand") extern class XRHand {
 	var size(default, null) : Int;
 	function entries():Iterator<js.lib.Tuple<XRHandJoint, XRJointSpace>>;

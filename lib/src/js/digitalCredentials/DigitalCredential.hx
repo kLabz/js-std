@@ -24,7 +24,14 @@
 
 package js.digitalCredentials;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("DigitalCredential") extern class DigitalCredential extends js.credentialManagement.Credential {
 	var protocol(default, null) : String;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var data(default, null) : { };
 }

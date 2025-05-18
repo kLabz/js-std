@@ -24,6 +24,9 @@
 
 package js.mediaSource;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SourceBufferList") extern class SourceBufferList extends js.dom.EventTarget implements ArrayAccess<SourceBuffer> {
 	var length(default, null) : Int;
 	var onaddsourcebuffer : js.html.EventHandler;

@@ -24,6 +24,9 @@
 
 package js.webgl2;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WebGLSync") extern class WebGLSync extends js.webgl1.WebGLObject {
 
 }

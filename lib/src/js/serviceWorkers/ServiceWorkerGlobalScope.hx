@@ -24,15 +24,33 @@
 
 package js.serviceWorkers;
 
+/**
+	Unhandled extended attribute Global
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("ServiceWorkerGlobalScope") extern class ServiceWorkerGlobalScope extends js.html.WorkerGlobalScope {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var clients(default, null) : Clients;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var registration(default, null) : ServiceWorkerRegistration;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var serviceWorker(default, null) : ServiceWorker;
 	var oninstall : js.html.EventHandler;
 	var onactivate : js.html.EventHandler;
 	var onfetch : js.html.EventHandler;
 	var onmessage : js.html.EventHandler;
 	var onmessageerror : js.html.EventHandler;
+	/**
+		From partial interface in background-sync.idl
+	**/
+	var onsync : js.html.EventHandler;
 	/**
 		From partial interface in background-fetch.idl
 	**/
@@ -50,21 +68,18 @@ package js.serviceWorkers;
 	**/
 	var onbackgroundfetchclick : js.html.EventHandler;
 	/**
-		From partial interface in background-sync.idl
+		From partial interface in content-index.idl
 	**/
-	var onsync : js.html.EventHandler;
+	var oncontentdelete : js.html.EventHandler;
 	/**
 		From partial interface in cookie-store.idl
+		Unhandled extended attribute SameObject
 	**/
 	var cookieStore(default, null) : js.cookieStore.CookieStore;
 	/**
 		From partial interface in cookie-store.idl
 	**/
 	var oncookiechange : js.html.EventHandler;
-	/**
-		From partial interface in content-index.idl
-	**/
-	var oncontentdelete : js.html.EventHandler;
 	/**
 		From partial interface in notifications.idl
 	**/
@@ -93,5 +108,8 @@ package js.serviceWorkers;
 		From partial interface in push-api.idl
 	**/
 	var onpushsubscriptionchange : js.html.EventHandler;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function skipWaiting():js.lib.Promise<Void>;
 }

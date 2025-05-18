@@ -24,6 +24,9 @@
 
 package js.cssom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSRuleList") extern class CSSRuleList {
 	var length(default, null) : Int;
 	function item(index:Int):Null<CSSRule>;

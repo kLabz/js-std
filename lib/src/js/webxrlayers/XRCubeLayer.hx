@@ -24,6 +24,9 @@
 
 package js.webxrlayers;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XRCubeLayer") extern class XRCubeLayer extends XRCompositionLayer {
 	var space : js.webxr.XRSpace;
 	var orientation : js.geometry.DOMPointReadOnly;

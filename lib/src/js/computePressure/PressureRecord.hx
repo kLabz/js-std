@@ -24,9 +24,16 @@
 
 package js.computePressure;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("PressureRecord") extern class PressureRecord {
 	var source(default, null) : PressureSource;
 	var state(default, null) : PressureState;
 	var time(default, null) : js.hrTime.DOMHighResTimeStamp;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

@@ -24,6 +24,9 @@
 
 package js.permissionsPolicy;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PermissionsPolicy") extern class PermissionsPolicy {
 	function allowedFeatures():Array<String>;
 	function allowsFeature(feature:String, ?origin:String):Bool;

@@ -24,6 +24,10 @@
 
 package js.webcodecs;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("ImageDecoder") extern class ImageDecoder {
 	var type(default, null) : String;
 	var complete(default, null) : Bool;

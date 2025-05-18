@@ -24,6 +24,10 @@
 
 package js.pushApi;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("PushMessageData") extern class PushMessageData {
 	function arrayBuffer():ArrayBuffer;
 	function blob():js.fileapi.Blob;

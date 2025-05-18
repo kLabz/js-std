@@ -25,6 +25,9 @@
 package js.webcodecs;
 
 typedef ImageDecodeOptions = {
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var frameIndex : Int = 0;
 	@:optional

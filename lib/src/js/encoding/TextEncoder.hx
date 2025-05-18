@@ -24,12 +24,18 @@
 
 package js.encoding;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TextEncoder") extern class TextEncoder {
 	/**
 		From interface mixin TextEncoderCommon
 	**/
 	var encoding(default, null) : String;
 	function new():Void;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function encode(?input:String = ""):Uint8Array;
 	function encodeInto(source:String, destination:Uint8Array):TextEncoderEncodeIntoResult;
 }

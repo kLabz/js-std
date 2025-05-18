@@ -24,7 +24,12 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLQuoteElement") extern class HTMLQuoteElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var cite : String;
-	function new():Void;
 }

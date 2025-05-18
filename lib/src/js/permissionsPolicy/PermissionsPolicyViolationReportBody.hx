@@ -24,6 +24,9 @@
 
 package js.permissionsPolicy;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PermissionsPolicyViolationReportBody") extern class PermissionsPolicyViolationReportBody extends js.reporting.ReportBody {
 	var featureId(default, null) : String;
 	var sourceFile(default, null) : Null<String>;
@@ -32,5 +35,8 @@ package js.permissionsPolicy;
 	var disposition(default, null) : String;
 	var allowAttribute(default, null) : Null<String>;
 	var srcAttribute(default, null) : Null<String>;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

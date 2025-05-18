@@ -24,6 +24,9 @@
 
 package js.cssLayoutApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IntrinsicSizes") extern class IntrinsicSizes {
 	var minContentSize(default, null) : Float;
 	var maxContentSize(default, null) : Float;

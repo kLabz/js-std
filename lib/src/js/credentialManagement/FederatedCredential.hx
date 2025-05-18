@@ -24,6 +24,10 @@
 
 package js.credentialManagement;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("FederatedCredential") extern class FederatedCredential extends Credential {
 	var provider(default, null) : String;
 	var protocol(default, null) : Null<String>;

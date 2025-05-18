@@ -24,6 +24,10 @@
 
 package js.webcodecs;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("AudioDecoder") extern class AudioDecoder extends js.dom.EventTarget {
 	var state(default, null) : CodecState;
 	var decodeQueueSize(default, null) : Int;

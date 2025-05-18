@@ -24,6 +24,10 @@
 
 package js.streams;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Transferable
+**/
 @:native("WritableStream") extern class WritableStream {
 	var locked(default, null) : Bool;
 	function new(?underlyingSink:{ }, ?strategy:QueuingStrategy = {  }):Void;

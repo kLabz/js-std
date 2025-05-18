@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BarProp") extern class BarProp {
 	var visible(default, null) : Bool;
 }

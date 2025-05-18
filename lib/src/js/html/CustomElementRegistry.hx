@@ -24,12 +24,21 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CustomElementRegistry") extern class CustomElementRegistry {
 	function new():Void;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	function define(name:String, constructor:CustomElementConstructor, ?options:ElementDefinitionOptions = {  }):Void;
 	function get(name:String):haxe.extern.EitherType<CustomElementConstructor, Void>;
 	function getName(constructor:CustomElementConstructor):Null<String>;
 	function initialize(root:js.dom.Node):Void;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	function upgrade(root:js.dom.Node):Void;
 	function whenDefined(name:String):js.lib.Promise<CustomElementConstructor>;
 }

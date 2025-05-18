@@ -24,6 +24,10 @@
 
 package js.sharedStorage;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Global
+**/
 @:native("SharedStorageWorkletGlobalScope") extern class SharedStorageWorkletGlobalScope extends js.html.WorkletGlobalScope {
 	var sharedStorage(default, null) : SharedStorage;
 	var privateAggregation(default, null) : js.privateAggregationApi.PrivateAggregation;

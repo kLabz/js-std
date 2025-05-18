@@ -31,23 +31,27 @@ package js.html;
 			params : [], 
 			pos : {
 				file : src/Main.hx, 
-				min : 2405, 
-				max : 2411
+				min : 3074, 
+				max : 3080
 			}, 
 			posPath : {
 				file : src/Main.hx, 
-				min : 2405, 
-				max : 2411
+				min : 3074, 
+				max : 3080
 			}
 		})
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyOverrideBuiltIns
 **/
 @:native("DOMStringMap") extern class DOMStringMap {
 	/**
 		(special = setter)
+		Unhandled extended attribute CEReactions
 	**/
 	overload function (name:String, value:String):Void;
 	/**
 		(special = deleter)
+		Unhandled extended attribute CEReactions
 	**/
 	overload function (name:String):Void;
 }

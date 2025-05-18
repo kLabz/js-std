@@ -25,9 +25,18 @@
 package js.webcodecs;
 
 typedef AudioDataCopyToOptions = {
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	var planeIndex : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var frameOffset : Int = 0;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var frameCount : Int;
 	@:optional

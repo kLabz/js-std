@@ -24,6 +24,10 @@
 
 package js.webcrypto;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("SubtleCrypto") extern class SubtleCrypto {
 	function decrypt(algorithm:AlgorithmIdentifier, key:CryptoKey, data:js.webidl.BufferSource):js.lib.Promise<ArrayBuffer>;
 	function deriveBits(algorithm:AlgorithmIdentifier, baseKey:CryptoKey, ?length:Null<Int> = null):js.lib.Promise<ArrayBuffer>;

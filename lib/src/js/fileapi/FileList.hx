@@ -24,6 +24,10 @@
 
 package js.fileapi;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+**/
 @:native("FileList") extern class FileList {
 	var length(default, null) : Int;
 	function item(index:Int):Null<File>;

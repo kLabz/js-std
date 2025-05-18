@@ -26,7 +26,13 @@ package js.webcodecs;
 
 typedef EncodedAudioChunkInit = {
 	var type : EncodedAudioChunkType;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	var timestamp : Float;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var duration : Float;
 	var data : js.webidl.AllowSharedBufferSource;

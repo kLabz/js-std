@@ -28,12 +28,24 @@ typedef VideoDecoderConfig = {
 	var codec : String;
 	@:optional
 	var description : js.webidl.AllowSharedBufferSource;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var codedWidth : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var codedHeight : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var displayAspectWidth : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var displayAspectHeight : Int;
 	@:optional

@@ -24,6 +24,10 @@
 
 package js.speechApi;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("SpeechRecognitionPhrase") extern class SpeechRecognitionPhrase {
 	var phrase(default, null) : String;
 	var boost(default, null) : Float;

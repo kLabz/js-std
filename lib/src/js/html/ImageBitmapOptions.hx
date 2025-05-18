@@ -31,8 +31,14 @@ typedef ImageBitmapOptions = {
 	var premultiplyAlpha : PremultiplyAlpha = "default";
 	@:optional
 	var colorSpaceConversion : ColorSpaceConversion = "default";
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var resizeWidth : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var resizeHeight : Int;
 	@:optional

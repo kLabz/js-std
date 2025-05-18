@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AudioScheduledSourceNode") extern class AudioScheduledSourceNode extends AudioNode {
 	var onended : js.html.EventHandler;
 	function start(?when:Float = 0):Void;

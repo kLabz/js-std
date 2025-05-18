@@ -24,6 +24,10 @@
 
 package js.managedConfiguration;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("NavigatorManagedData") extern class NavigatorManagedData extends js.dom.EventTarget {
 	var onmanagedconfigurationchange : js.html.EventHandler;
 	/**

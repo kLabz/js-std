@@ -24,6 +24,9 @@
 
 package js.modelElement;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLModelElement") extern class HTMLModelElement extends js.html.HTMLElement {
 
 }

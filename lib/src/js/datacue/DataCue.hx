@@ -24,6 +24,9 @@
 
 package js.datacue;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DataCue") extern class DataCue extends js.html.TextTrackCue {
 	var value : Any;
 	var type(default, null) : String;

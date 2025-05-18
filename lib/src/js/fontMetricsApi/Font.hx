@@ -24,6 +24,9 @@
 
 package js.fontMetricsApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Font") extern class Font {
 	var name(default, null) : String;
 	var glyphsRendered(default, null) : Int;

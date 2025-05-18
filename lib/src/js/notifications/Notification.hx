@@ -24,6 +24,9 @@
 
 package js.notifications;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Notification") extern class Notification extends js.dom.EventTarget {
 	static var permission(default, null) : NotificationPermission;
 	static var maxActions(default, null) : Int;
@@ -39,14 +42,26 @@ package js.notifications;
 	var image(default, null) : String;
 	var icon(default, null) : String;
 	var badge(default, null) : String;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var vibrate(default, null) : Array<Int>;
 	var timestamp(default, null) : js.hrTime.EpochTimeStamp;
 	var renotify(default, null) : Bool;
 	var silent(default, null) : Null<Bool>;
 	var requireInteraction(default, null) : Bool;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var data(default, null) : Any;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var actions(default, null) : Array<NotificationAction>;
 	function new(title:String, ?options:NotificationOptions = {  }):Void;
 	function close():Void;
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	function requestPermission(?deprecatedCallback:NotificationPermissionCallback):js.lib.Promise<NotificationPermission>;
 }

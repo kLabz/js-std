@@ -24,10 +24,17 @@
 
 package js.mediacaptureStreams;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("MediaDeviceInfo") extern class MediaDeviceInfo {
 	var deviceId(default, null) : String;
 	var kind(default, null) : MediaDeviceKind;
 	var label(default, null) : String;
 	var groupId(default, null) : String;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

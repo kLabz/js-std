@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGMetadataElement") extern class SVGMetadataElement extends SVGElement {
 
 }

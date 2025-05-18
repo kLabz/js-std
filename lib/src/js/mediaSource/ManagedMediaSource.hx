@@ -24,6 +24,9 @@
 
 package js.mediaSource;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ManagedMediaSource") extern class ManagedMediaSource extends MediaSource {
 	var streaming(default, null) : Bool;
 	var onstartstreaming : js.html.EventHandler;

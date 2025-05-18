@@ -24,6 +24,10 @@
 
 package js.presentationApi;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("PresentationConnectionCloseEvent") extern class PresentationConnectionCloseEvent extends js.dom.Event {
 	var reason(default, null) : PresentationConnectionCloseReason;
 	var message(default, null) : String;

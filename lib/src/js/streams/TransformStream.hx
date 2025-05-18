@@ -24,6 +24,10 @@
 
 package js.streams;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Transferable
+**/
 @:native("TransformStream") extern class TransformStream {
 	var readable(default, null) : ReadableStream;
 	var writable(default, null) : WritableStream;

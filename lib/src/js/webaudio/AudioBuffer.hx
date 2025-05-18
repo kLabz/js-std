@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AudioBuffer") extern class AudioBuffer {
 	var sampleRate(default, null) : Float;
 	var length(default, null) : Int;

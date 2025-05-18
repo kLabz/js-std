@@ -24,6 +24,10 @@
 
 package js.webBluetoothScanning;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("BluetoothLEScan") extern class BluetoothLEScan {
 	var filters(default, null) : Array<BluetoothLEScanFilter>;
 	var keepRepeatedDevices(default, null) : Bool;

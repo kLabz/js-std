@@ -24,6 +24,9 @@
 
 package js.websockets;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CloseEvent") extern class CloseEvent extends js.dom.Event {
 	var wasClean(default, null) : Bool;
 	var code(default, null) : Int;

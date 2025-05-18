@@ -24,6 +24,12 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGStopElement") extern class SVGStopElement extends SVGElement {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var offset(default, null) : SVGAnimatedNumber;
 }

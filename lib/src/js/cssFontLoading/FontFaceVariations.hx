@@ -26,6 +26,7 @@ package js.cssFontLoading;
 
 /**
 	TODO SetlikeDeclaration handling
+	Unhandled extended attribute Exposed
 **/
 @:native("FontFaceVariations") extern class FontFaceVariations {
 

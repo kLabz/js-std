@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AbstractRange") extern class AbstractRange {
 	var startContainer(default, null) : Node;
 	var startOffset(default, null) : Int;

@@ -24,8 +24,17 @@
 
 package js.mediaSource;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BufferedChangeEvent") extern class BufferedChangeEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var addedRanges(default, null) : js.html.TimeRanges;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var removedRanges(default, null) : js.html.TimeRanges;
 	function new(type:String, ?eventInitDict:BufferedChangeEventInit = {  }):Void;
 }

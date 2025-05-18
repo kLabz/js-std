@@ -24,8 +24,14 @@
 
 package js.cssomView;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CaretPosition") extern class CaretPosition {
 	var offsetNode(default, null) : js.dom.Node;
 	var offset(default, null) : Int;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function getClientRect():Null<js.geometry.DOMRect>;
 }

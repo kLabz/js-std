@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Event") extern class Event {
 	var type(default, null) : String;
 	var target(default, null) : Null<EventTarget>;
@@ -40,6 +43,9 @@ package js.dom;
 	var returnValue : Bool;
 	var defaultPrevented(default, null) : Bool;
 	var composed(default, null) : Bool;
+	/**
+		Unhandled extended attribute LegacyUnforgeable
+	**/
 	var isTrusted(default, null) : Bool;
 	var timeStamp(default, null) : js.hrTime.DOMHighResTimeStamp;
 	function new(type:String, ?eventInitDict:EventInit = {  }):Void;

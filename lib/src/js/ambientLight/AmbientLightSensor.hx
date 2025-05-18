@@ -24,6 +24,10 @@
 
 package js.ambientLight;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("AmbientLightSensor") extern class AmbientLightSensor extends js.genericSensor.Sensor {
 	var illuminance(default, null) : Null<Float>;
 	function new(?sensorOptions:js.genericSensor.SensorOptions = {  }):Void;

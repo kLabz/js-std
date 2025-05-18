@@ -24,18 +24,33 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLOutputElement") extern class HTMLOutputElement extends HTMLElement {
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var htmlFor(default, null) : js.dom.DOMTokenList;
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var name : String;
 	var type(default, null) : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var defaultValue : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var value : String;
 	var willValidate(default, null) : Bool;
 	var validity(default, null) : ValidityState;
 	var validationMessage(default, null) : String;
 	var labels(default, null) : js.dom.NodeList;
-	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
 	function setCustomValidity(error:String):Void;

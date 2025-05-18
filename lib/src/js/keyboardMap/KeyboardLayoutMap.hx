@@ -26,6 +26,7 @@ package js.keyboardMap;
 
 /**
 	TODO MaplikeDeclaration handling
+	Unhandled extended attribute Exposed
 **/
 @:native("KeyboardLayoutMap") extern class KeyboardLayoutMap {
 

@@ -24,6 +24,9 @@
 
 package js.filterEffects;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGFilterElement") extern class SVGFilterElement extends js.svg.SVGElement {
 	var filterUnits(default, null) : js.svg.SVGAnimatedEnumeration;
 	var primitiveUnits(default, null) : js.svg.SVGAnimatedEnumeration;

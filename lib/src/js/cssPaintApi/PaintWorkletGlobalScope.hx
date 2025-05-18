@@ -24,6 +24,10 @@
 
 package js.cssPaintApi;
 
+/**
+	Unhandled extended attribute Global
+	Unhandled extended attribute Exposed
+**/
 @:native("PaintWorkletGlobalScope") extern class PaintWorkletGlobalScope extends js.html.WorkletGlobalScope {
 	var devicePixelRatio(default, null) : Float;
 	function registerPaint(name:String, paintCtor:js.webidl.VoidFunction):Void;

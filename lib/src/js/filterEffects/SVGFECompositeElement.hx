@@ -24,6 +24,9 @@
 
 package js.filterEffects;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGFECompositeElement") extern class SVGFECompositeElement extends js.svg.SVGElement {
 	static inline var SVG_FECOMPOSITE_OPERATOR_UNKNOWN : Int = 0;
 	static inline var SVG_FECOMPOSITE_OPERATOR_OVER : Int = 1;

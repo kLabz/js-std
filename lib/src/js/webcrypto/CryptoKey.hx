@@ -24,6 +24,11 @@
 
 package js.webcrypto;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+**/
 @:native("CryptoKey") extern class CryptoKey {
 	var type(default, null) : KeyType;
 	var extractable(default, null) : Bool;

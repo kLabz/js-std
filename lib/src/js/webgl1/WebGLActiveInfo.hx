@@ -24,6 +24,9 @@
 
 package js.webgl1;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WebGLActiveInfo") extern class WebGLActiveInfo {
 	var size(default, null) : GLint;
 	var type(default, null) : GLenum;

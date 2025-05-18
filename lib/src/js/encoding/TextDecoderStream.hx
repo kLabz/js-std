@@ -24,6 +24,9 @@
 
 package js.encoding;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TextDecoderStream") extern class TextDecoderStream {
 	/**
 		From interface mixin TextDecoderCommon

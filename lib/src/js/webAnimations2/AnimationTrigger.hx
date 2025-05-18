@@ -24,6 +24,9 @@
 
 package js.webAnimations2;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AnimationTrigger") extern class AnimationTrigger {
 	var timeline : js.webAnimations.AnimationTimeline;
 	var type : AnimationTriggerType;

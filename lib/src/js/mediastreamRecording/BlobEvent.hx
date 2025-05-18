@@ -24,7 +24,13 @@
 
 package js.mediastreamRecording;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BlobEvent") extern class BlobEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var data(default, null) : js.fileapi.Blob;
 	var timecode(default, null) : js.hrTime.DOMHighResTimeStamp;
 	function new(type:String, eventInitDict:BlobEventInit):Void;

@@ -24,6 +24,9 @@
 
 package js.mediaPlaybackQuality;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("VideoPlaybackQuality") extern class VideoPlaybackQuality {
 	var creationTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var droppedVideoFrames(default, null) : Int;

@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGPreserveAspectRatio") extern class SVGPreserveAspectRatio {
 	static inline var SVG_PRESERVEASPECTRATIO_UNKNOWN : Int = 0;
 	static inline var SVG_PRESERVEASPECTRATIO_NONE : Int = 1;

@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("NavigationDestination") extern class NavigationDestination {
 	var url(default, null) : String;
 	var key(default, null) : String;

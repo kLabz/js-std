@@ -24,14 +24,29 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLMetaElement") extern class HTMLMetaElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var name : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var httpEquiv : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var content : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var media : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var scheme : String;
-	function new():Void;
 }

@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyUnenumerableNamedProperties
+**/
 @:native("Plugin") extern class Plugin {
 	var name(default, null) : String;
 	var description(default, null) : String;

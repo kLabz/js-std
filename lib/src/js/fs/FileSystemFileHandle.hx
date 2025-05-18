@@ -24,7 +24,15 @@
 
 package js.fs;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Serializable
+**/
 @:native("FileSystemFileHandle") extern class FileSystemFileHandle extends FileSystemHandle {
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	function createSyncAccessHandle():js.lib.Promise<FileSystemSyncAccessHandle>;
 	function createWritable(?options:FileSystemCreateWritableOptions = {  }):js.lib.Promise<FileSystemWritableFileStream>;
 	function getFile():js.lib.Promise<js.fileapi.File>;

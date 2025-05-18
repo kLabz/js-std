@@ -24,6 +24,9 @@
 
 package js.intersectionObserver;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IntersectionObserver") extern class IntersectionObserver {
 	var root(default, null) : Null<haxe.extern.EitherType<js.dom.Element, js.dom.Document>>;
 	var rootMargin(default, null) : String;

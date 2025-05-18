@@ -24,6 +24,9 @@
 
 package js.cssParserApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSParserFunction") extern class CSSParserFunction extends CSSParserValue {
 	var name(default, null) : String;
 	var args(default, null) : Array<Array<CSSParserValue>>;

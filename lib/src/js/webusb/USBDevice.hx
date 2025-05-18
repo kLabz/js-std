@@ -24,6 +24,10 @@
 
 package js.webusb;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("USBDevice") extern class USBDevice {
 	var usbVersionMajor(default, null) : Int;
 	var usbVersionMinor(default, null) : Int;

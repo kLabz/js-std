@@ -24,16 +24,30 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLFieldSetElement") extern class HTMLFieldSetElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var name : String;
 	var type(default, null) : String;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var elements(default, null) : js.dom.HTMLCollection;
 	var willValidate(default, null) : Bool;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var validity(default, null) : ValidityState;
 	var validationMessage(default, null) : String;
-	function new():Void;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
 	function setCustomValidity(error:String):Void;

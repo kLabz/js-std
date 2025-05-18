@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("NodeList") extern class NodeList {
 	var length(default, null) : Int;
 	function item(index:Int):Null<Node>;

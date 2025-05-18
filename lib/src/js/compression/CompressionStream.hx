@@ -24,6 +24,9 @@
 
 package js.compression;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CompressionStream") extern class CompressionStream {
 	/**
 		From interface mixin GenericTransformStream

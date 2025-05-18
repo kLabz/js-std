@@ -27,8 +27,14 @@ package js.geolocation;
 typedef PositionOptions = {
 	@:optional
 	var enableHighAccuracy : Bool = false;
+	/**
+		Unhandled extended attribute Clamp
+	**/
 	@:optional
 	var timeout : Int = 0xFFFFFFFF;
+	/**
+		Unhandled extended attribute Clamp
+	**/
 	@:optional
 	var maximumAge : Int = 0;
 };

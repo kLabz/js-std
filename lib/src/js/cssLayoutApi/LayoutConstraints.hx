@@ -24,6 +24,9 @@
 
 package js.cssLayoutApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("LayoutConstraints") extern class LayoutConstraints {
 	var availableInlineSize(default, null) : Float;
 	var availableBlockSize(default, null) : Float;

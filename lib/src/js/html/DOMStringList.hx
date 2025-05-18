@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DOMStringList") extern class DOMStringList {
 	var length(default, null) : Int;
 	function contains(string:String):Bool;

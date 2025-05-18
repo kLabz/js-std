@@ -24,19 +24,34 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRInputSource") extern class XRInputSource {
 	var handedness(default, null) : XRHandedness;
 	var targetRayMode(default, null) : XRTargetRayMode;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var targetRaySpace(default, null) : XRSpace;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var gripSpace(default, null) : Null<XRSpace>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var profiles(default, null) : Array<String>;
 	var skipRendering(default, null) : Bool;
 	/**
 		From partial interface in webxr-gamepads-module.idl
+		Unhandled extended attribute SameObject
 	**/
 	var gamepad(default, null) : Null<js.gamepad.Gamepad>;
 	/**
 		From partial interface in webxr-hand-input.idl
+		Unhandled extended attribute SameObject
 	**/
 	var hand(default, null) : Null<js.webxrHandInput.XRHand>;
 }

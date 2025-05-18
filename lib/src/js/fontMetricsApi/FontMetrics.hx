@@ -24,6 +24,9 @@
 
 package js.fontMetricsApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FontMetrics") extern class FontMetrics {
 	var width(default, null) : Float;
 	var advances(default, null) : Array<Float>;

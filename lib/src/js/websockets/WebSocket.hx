@@ -24,6 +24,9 @@
 
 package js.websockets;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WebSocket") extern class WebSocket extends js.dom.EventTarget {
 	var url(default, null) : String;
 	static inline var CONNECTING : Int = 0;

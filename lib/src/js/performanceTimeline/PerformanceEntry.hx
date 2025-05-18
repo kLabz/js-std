@@ -24,6 +24,9 @@
 
 package js.performanceTimeline;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformanceEntry") extern class PerformanceEntry {
 	var id(default, null) : Float;
 	var name(default, null) : String;
@@ -31,5 +34,8 @@ package js.performanceTimeline;
 	var startTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var duration(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var navigationId(default, null) : Float;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

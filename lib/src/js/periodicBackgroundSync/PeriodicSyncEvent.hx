@@ -24,6 +24,9 @@
 
 package js.periodicBackgroundSync;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PeriodicSyncEvent") extern class PeriodicSyncEvent extends js.serviceWorkers.ExtendableEvent {
 	var tag(default, null) : String;
 	function new(type:String, init:PeriodicSyncEventInit):Void;

@@ -24,6 +24,9 @@
 
 package js.scrollToTextFragment;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FragmentDirective") extern class FragmentDirective {
 
 }

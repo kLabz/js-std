@@ -24,6 +24,9 @@
 
 package js.requestidlecallback;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IdleDeadline") extern class IdleDeadline {
 	var didTimeout(default, null) : Bool;
 	function timeRemaining():js.hrTime.DOMHighResTimeStamp;

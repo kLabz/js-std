@@ -24,6 +24,9 @@
 
 package js.editContext;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TextUpdateEvent") extern class TextUpdateEvent extends js.dom.Event {
 	var updateRangeStart(default, null) : Int;
 	var updateRangeEnd(default, null) : Int;

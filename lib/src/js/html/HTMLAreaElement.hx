@@ -26,16 +26,45 @@ package js.html;
 
 /**
 	TODO attribute href: special=stringifier readonly=false
+	Unhandled extended attribute Exposed
 **/
 @:native("HTMLAreaElement") extern class HTMLAreaElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var alt : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var coords : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var shape : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var target : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var download : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var ping : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var rel : String;
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var relList(default, null) : js.dom.DOMTokenList;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var referrerPolicy : String;
 	/**
 		From interface mixin HTMLAttributionSrcElementUtils
@@ -83,7 +112,7 @@ package js.html;
 	var hash : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var noHref : Bool;
-	function new():Void;
 }

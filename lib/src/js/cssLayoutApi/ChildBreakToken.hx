@@ -24,6 +24,9 @@
 
 package js.cssLayoutApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ChildBreakToken") extern class ChildBreakToken {
 	var breakType(default, null) : BreakType;
 	var child(default, null) : LayoutChild;

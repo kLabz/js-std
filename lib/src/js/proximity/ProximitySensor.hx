@@ -24,6 +24,10 @@
 
 package js.proximity;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("ProximitySensor") extern class ProximitySensor extends js.genericSensor.Sensor {
 	var distance(default, null) : Null<Float>;
 	var max(default, null) : Null<Float>;

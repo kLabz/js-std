@@ -24,11 +24,19 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRFrame") extern class XRFrame {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var session(default, null) : XRSession;
 	var predictedDisplayTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	/**
 		From partial interface in anchors.idl
+		Unhandled extended attribute SameObject
 	**/
 	var trackedAnchors(default, null) : js.anchors.XRAnchorSet;
 	/**

@@ -24,6 +24,9 @@
 
 package js.editContext;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TextFormat") extern class TextFormat {
 	var rangeStart(default, null) : Int;
 	var rangeEnd(default, null) : Int;

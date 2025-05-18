@@ -26,6 +26,7 @@ package js.cssRegions;
 
 /**
 	TODO MaplikeDeclaration handling
+	Unhandled extended attribute Exposed
 **/
 @:native("NamedFlowMap") extern class NamedFlowMap {
 

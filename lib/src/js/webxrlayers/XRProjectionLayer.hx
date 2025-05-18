@@ -24,6 +24,9 @@
 
 package js.webxrlayers;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XRProjectionLayer") extern class XRProjectionLayer extends XRCompositionLayer {
 	var textureWidth(default, null) : Int;
 	var textureHeight(default, null) : Int;

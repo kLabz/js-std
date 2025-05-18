@@ -24,6 +24,10 @@
 
 package js.extTextureFilterAnisotropic;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("EXT_texture_filter_anisotropic") extern class EXT_texture_filter_anisotropic {
 	static inline var TEXTURE_MAX_ANISOTROPY_EXT : js.webgl1.GLenum = 0x84FE;
 	static inline var MAX_TEXTURE_MAX_ANISOTROPY_EXT : js.webgl1.GLenum = 0x84FF;

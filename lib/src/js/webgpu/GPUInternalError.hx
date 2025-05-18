@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUInternalError") extern class GPUInternalError extends GPUError {
 	function new(message:String):Void;
 }

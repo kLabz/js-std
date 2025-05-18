@@ -24,7 +24,13 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ShadowAnimation") extern class ShadowAnimation extends js.webAnimations.Animation {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var sourceAnimation(default, null) : js.webAnimations.Animation;
 	function new(source:js.webAnimations.Animation, newTarget:haxe.extern.EitherType<js.dom.Element, js.cssPseudo.CSSPseudoElement>):Void;
 }

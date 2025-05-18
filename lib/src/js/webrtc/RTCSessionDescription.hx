@@ -24,9 +24,15 @@
 
 package js.webrtc;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCSessionDescription") extern class RTCSessionDescription {
 	var type(default, null) : RTCSdpType;
 	var sdp(default, null) : String;
 	function new(descriptionInitDict:RTCSessionDescriptionInit):Void;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():RTCSessionDescriptionInit;
 }

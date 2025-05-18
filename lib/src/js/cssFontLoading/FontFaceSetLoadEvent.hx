@@ -24,7 +24,13 @@
 
 package js.cssFontLoading;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FontFaceSetLoadEvent") extern class FontFaceSetLoadEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var fontfaces(default, null) : Array<FontFace>;
 	function new(type:CSSOMString, ?eventInitDict:FontFaceSetLoadEventInit = {  }):Void;
 }

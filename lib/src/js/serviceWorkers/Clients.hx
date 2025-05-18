@@ -24,9 +24,24 @@
 
 package js.serviceWorkers;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Clients") extern class Clients {
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function claim():js.lib.Promise<Void>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function get(id:String):js.lib.Promise<haxe.extern.EitherType<Client, Void>>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function matchAll(?options:ClientQueryOptions = {  }):js.lib.Promise<Array<Client>>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function openWindow(url:String):js.lib.Promise<Null<WindowClient>>;
 }

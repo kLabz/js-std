@@ -24,6 +24,9 @@
 
 package js.schedulingApis;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Scheduler") extern class Scheduler {
 	function postTask(callback:SchedulerPostTaskCallback, ?options:SchedulerPostTaskOptions = {  }):js.lib.Promise<Any>;
 	function yield():js.lib.Promise<Void>;

@@ -25,6 +25,9 @@
 package js.idleDetection;
 
 typedef IdleOptions = {
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var threshold : Float;
 	@:optional

@@ -24,6 +24,10 @@
 
 package js.webglDebugRendererInfo;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("WEBGL_debug_renderer_info") extern class WEBGL_debug_renderer_info {
 	static inline var UNMASKED_VENDOR_WEBGL : js.webgl1.GLenum = 0x9245;
 	static inline var UNMASKED_RENDERER_WEBGL : js.webgl1.GLenum = 0x9246;

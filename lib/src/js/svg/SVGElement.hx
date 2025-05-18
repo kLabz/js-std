@@ -24,7 +24,13 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGElement") extern class SVGElement extends js.dom.Element {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var className(default, null) : SVGAnimatedString;
 	var ownerSVGElement(default, null) : Null<SVGSVGElement>;
 	var viewportElement(default, null) : Null<SVGElement>;
@@ -246,10 +252,12 @@ package js.svg;
 	var onmousedown : js.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
+		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseenter : js.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
+		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseleave : js.html.EventHandler;
 	/**
@@ -394,6 +402,7 @@ package js.svg;
 	var onpointermove : js.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
+		Unhandled extended attribute SecureContext
 	**/
 	var onpointerrawupdate : js.html.EventHandler;
 	/**
@@ -450,14 +459,17 @@ package js.svg;
 	var onbeforexrselect : js.html.EventHandler;
 	/**
 		From interface mixin SVGElementInstance
+		Unhandled extended attribute SameObject
 	**/
 	var correspondingElement(default, null) : Null<SVGElement>;
 	/**
 		From interface mixin SVGElementInstance
+		Unhandled extended attribute SameObject
 	**/
 	var correspondingUseElement(default, null) : Null<SVGUseElement>;
 	/**
 		From interface mixin HTMLOrSVGElement
+		Unhandled extended attribute SameObject
 	**/
 	var dataset(default, null) : js.html.DOMStringMap;
 	/**
@@ -466,18 +478,23 @@ package js.svg;
 	var nonce : String;
 	/**
 		From interface mixin HTMLOrSVGElement
+		Unhandled extended attribute CEReactions
 	**/
 	var autofocus : Bool;
 	/**
 		From interface mixin HTMLOrSVGElement
+		Unhandled extended attribute CEReactions
 	**/
 	var tabIndex : Int;
 	/**
 		From interface mixin ElementCSSInlineStyle
+		Unhandled extended attribute SameObject
 	**/
 	var attributeStyleMap(default, null) : js.cssTypedOm.StylePropertyMap;
 	/**
 		From interface mixin ElementCSSInlineStyle
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
 	**/
 	var style(default, null) : js.cssom.CSSStyleDeclaration;
 	/**

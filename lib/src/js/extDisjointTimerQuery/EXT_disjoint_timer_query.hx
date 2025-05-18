@@ -24,6 +24,10 @@
 
 package js.extDisjointTimerQuery;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("EXT_disjoint_timer_query") extern class EXT_disjoint_timer_query {
 	static inline var QUERY_COUNTER_BITS_EXT : js.webgl1.GLenum = 0x8864;
 	static inline var CURRENT_QUERY_EXT : js.webgl1.GLenum = 0x8865;
@@ -38,6 +42,9 @@ package js.extDisjointTimerQuery;
 	function endQueryEXT(target:js.webgl1.GLenum):Void;
 	function getQueryEXT(target:js.webgl1.GLenum, pname:js.webgl1.GLenum):Any;
 	function getQueryObjectEXT(query:WebGLTimerQueryEXT, pname:js.webgl1.GLenum):Any;
+	/**
+		Unhandled extended attribute WebGLHandlesContextLoss
+	**/
 	function isQueryEXT(query:Null<WebGLTimerQueryEXT>):Bool;
 	function queryCounterEXT(query:WebGLTimerQueryEXT, target:js.webgl1.GLenum):Void;
 }

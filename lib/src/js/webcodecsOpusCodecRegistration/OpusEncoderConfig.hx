@@ -31,10 +31,19 @@ typedef OpusEncoderConfig = {
 	var signal : OpusSignal = "auto";
 	@:optional
 	var application : OpusApplication = "audio";
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var frameDuration : Float = 20000;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var complexity : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var packetlossperc : Int = 0;
 	@:optional

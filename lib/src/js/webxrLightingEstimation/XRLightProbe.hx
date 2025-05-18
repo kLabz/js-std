@@ -24,6 +24,10 @@
 
 package js.webxrLightingEstimation;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRLightProbe") extern class XRLightProbe extends js.dom.EventTarget {
 	var probeSpace(default, null) : js.webxr.XRSpace;
 	var onreflectionchange : js.html.EventHandler;

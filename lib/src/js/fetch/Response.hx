@@ -24,6 +24,9 @@
 
 package js.fetch;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Response") extern class Response {
 	var type(default, null) : ResponseType;
 	var url(default, null) : String;
@@ -31,6 +34,9 @@ package js.fetch;
 	var status(default, null) : Int;
 	var ok(default, null) : Bool;
 	var statusText(default, null) : String;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var headers(default, null) : Headers;
 	/**
 		From interface mixin Body
@@ -53,17 +59,29 @@ package js.fetch;
 		From interface mixin Body
 	**/
 	function bytes():js.lib.Promise<Uint8Array>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function clone():Response;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function error():Response;
 	/**
 		From interface mixin Body
 	**/
 	function formData():js.lib.Promise<js.xhr.FormData>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	overload function json(data:Any, ?init:ResponseInit = {  }):Response;
 	/**
 		From interface mixin Body
 	**/
 	overload function json():js.lib.Promise<Any>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function redirect(url:String, ?status:Int = 302):Response;
 	/**
 		From interface mixin Body

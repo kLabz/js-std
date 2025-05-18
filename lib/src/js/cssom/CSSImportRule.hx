@@ -24,9 +24,19 @@
 
 package js.cssom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSImportRule") extern class CSSImportRule extends CSSRule {
 	var href(default, null) : String;
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var media(default, null) : MediaList;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var styleSheet(default, null) : Null<CSSStyleSheet>;
 	var layerName(default, null) : Null<CSSOMString>;
 	var supportsText(default, null) : Null<CSSOMString>;

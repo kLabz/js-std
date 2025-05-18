@@ -24,6 +24,9 @@
 
 package js.observable;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Subscriber") extern class Subscriber {
 	var active(default, null) : Bool;
 	var signal(default, null) : js.dom.AbortSignal;

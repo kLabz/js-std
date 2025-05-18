@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSMathInvert") extern class CSSMathInvert extends CSSMathValue {
 	var value(default, null) : CSSNumericValue;
 	function new(arg:CSSNumberish):Void;

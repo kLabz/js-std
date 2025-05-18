@@ -24,6 +24,9 @@
 
 package js.cssFonts;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSFontPaletteValuesRule") extern class CSSFontPaletteValuesRule extends js.cssom.CSSRule {
 	var name(default, null) : CSSOMString;
 	var fontFamily(default, null) : CSSOMString;

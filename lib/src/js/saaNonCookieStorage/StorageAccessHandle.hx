@@ -24,6 +24,9 @@
 
 package js.saaNonCookieStorage;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("StorageAccessHandle") extern class StorageAccessHandle {
 	var sessionStorage(default, null) : js.html.Storage;
 	var localStorage(default, null) : js.html.Storage;

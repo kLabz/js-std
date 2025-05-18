@@ -24,6 +24,9 @@
 
 package js.turtledove;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ProtectedAudienceUtilities") extern class ProtectedAudienceUtilities {
 	function decodeUtf8(bytes:Uint8Array):String;
 	function encodeUtf8(input:String):Uint8Array;

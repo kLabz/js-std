@@ -24,6 +24,10 @@
 
 package js.paymentRequest;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("PaymentMethodChangeEvent") extern class PaymentMethodChangeEvent extends PaymentRequestUpdateEvent {
 	var methodName(default, null) : String;
 	var methodDetails(default, null) : Null<{ }>;

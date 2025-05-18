@@ -24,6 +24,9 @@
 
 package js.backgroundFetch;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BackgroundFetchManager") extern class BackgroundFetchManager {
 	function fetch(id:String, requests:haxe.extern.EitherType<js.fetch.RequestInfo, Array<js.fetch.RequestInfo>>, ?options:BackgroundFetchOptions = {  }):js.lib.Promise<BackgroundFetchRegistration>;
 	function get(id:String):js.lib.Promise<Null<BackgroundFetchRegistration>>;

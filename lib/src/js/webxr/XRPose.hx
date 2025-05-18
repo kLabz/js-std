@@ -24,9 +24,22 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRPose") extern class XRPose {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var transform(default, null) : XRRigidTransform;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var linearVelocity(default, null) : Null<js.geometry.DOMPointReadOnly>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var angularVelocity(default, null) : Null<js.geometry.DOMPointReadOnly>;
 	var emulatedPosition(default, null) : Bool;
 }

@@ -24,6 +24,9 @@
 
 package js.webrtc;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCError") extern class RTCError extends js.webidl.DOMException {
 	var errorDetail(default, null) : RTCErrorDetailType;
 	var sdpLineNumber(default, null) : Null<Int>;

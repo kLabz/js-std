@@ -25,8 +25,14 @@
 package js.webcodecsFlacCodecRegistration;
 
 typedef FlacEncoderConfig = {
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var blockSize : Int = 0;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var compressLevel : Int = 5;
 };

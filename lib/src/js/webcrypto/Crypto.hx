@@ -24,8 +24,17 @@
 
 package js.webcrypto;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Crypto") extern class Crypto {
+	/**
+		Unhandled extended attribute SecureContext
+	**/
 	var subtle(default, null) : SubtleCrypto;
 	function getRandomValues(array:js.webidl.ArrayBufferView):js.webidl.ArrayBufferView;
+	/**
+		Unhandled extended attribute SecureContext
+	**/
 	function randomUUID():String;
 }

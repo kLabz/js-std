@@ -24,13 +24,25 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGGradientElement") extern class SVGGradientElement extends SVGElement {
 	static inline var SVG_SPREADMETHOD_UNKNOWN : Int = 0;
 	static inline var SVG_SPREADMETHOD_PAD : Int = 1;
 	static inline var SVG_SPREADMETHOD_REFLECT : Int = 2;
 	static inline var SVG_SPREADMETHOD_REPEAT : Int = 3;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var gradientUnits(default, null) : SVGAnimatedEnumeration;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var gradientTransform(default, null) : SVGAnimatedTransformList;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var spreadMethod(default, null) : SVGAnimatedEnumeration;
 	/**
 		From interface mixin SVGURIReference

@@ -24,6 +24,9 @@
 
 package js.filterEffects;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGFEBlendElement") extern class SVGFEBlendElement extends js.svg.SVGElement {
 	static inline var SVG_FEBLEND_MODE_UNKNOWN : Int = 0;
 	static inline var SVG_FEBLEND_MODE_NORMAL : Int = 1;

@@ -24,7 +24,14 @@
 
 package js.cssom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSMarginRule") extern class CSSMarginRule extends CSSRule {
 	var name(default, null) : CSSOMString;
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var style(default, null) : CSSStyleDeclaration;
 }

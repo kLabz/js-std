@@ -24,6 +24,10 @@
 
 package js.screenCapture;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("CaptureController") extern class CaptureController extends js.dom.EventTarget {
 	/**
 		From partial interface in captured-mouse-events.idl

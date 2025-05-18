@@ -24,6 +24,10 @@
 
 package js.imageCapture;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("ImageCapture") extern class ImageCapture {
 	var track(default, null) : js.mediacaptureStreams.MediaStreamTrack;
 	function new(videoTrack:js.mediacaptureStreams.MediaStreamTrack):Void;

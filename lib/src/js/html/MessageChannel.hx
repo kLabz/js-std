@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MessageChannel") extern class MessageChannel {
 	var port1(default, null) : MessagePort;
 	var port2(default, null) : MessagePort;

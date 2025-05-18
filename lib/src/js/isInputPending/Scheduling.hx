@@ -24,6 +24,9 @@
 
 package js.isInputPending;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Scheduling") extern class Scheduling {
 	function isInputPending(?isInputPendingOptions:IsInputPendingOptions = {  }):Bool;
 }

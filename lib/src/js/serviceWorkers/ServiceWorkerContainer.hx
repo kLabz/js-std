@@ -24,14 +24,27 @@
 
 package js.serviceWorkers;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("ServiceWorkerContainer") extern class ServiceWorkerContainer extends js.dom.EventTarget {
 	var controller(default, null) : Null<ServiceWorker>;
 	var ready(default, null) : js.lib.Promise<ServiceWorkerRegistration>;
 	var oncontrollerchange : js.html.EventHandler;
 	var onmessage : js.html.EventHandler;
 	var onmessageerror : js.html.EventHandler;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function getRegistration(?clientURL:String = ""):js.lib.Promise<haxe.extern.EitherType<ServiceWorkerRegistration, Void>>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function getRegistrations():js.lib.Promise<Array<ServiceWorkerRegistration>>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function register(scriptURL:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>, ?options:RegistrationOptions = {  }):js.lib.Promise<ServiceWorkerRegistration>;
 	function startMessages():Void;
 }

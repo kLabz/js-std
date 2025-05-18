@@ -24,6 +24,9 @@
 
 package js.webAnimations2;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AnimationNodeList") extern class AnimationNodeList {
 	var length(default, null) : Int;
 	function item(index:Int):Null<js.webAnimations.AnimationEffect>;

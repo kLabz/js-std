@@ -24,6 +24,9 @@
 
 package js.webxrlayers;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XRMediaBinding") extern class XRMediaBinding {
 	function new(session:js.webxr.XRSession):Void;
 	function createCylinderLayer(video:js.html.HTMLVideoElement, ?init:XRMediaCylinderLayerInit = {  }):XRCylinderLayer;

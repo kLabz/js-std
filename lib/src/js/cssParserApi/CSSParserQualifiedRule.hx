@@ -24,6 +24,9 @@
 
 package js.cssParserApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSParserQualifiedRule") extern class CSSParserQualifiedRule extends CSSParserRule {
 	var prelude(default, null) : Array<CSSParserValue>;
 	var body(default, null) : Array<CSSParserRule>;

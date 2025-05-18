@@ -24,6 +24,9 @@
 
 package js.screenOrientation;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ScreenOrientation") extern class ScreenOrientation extends js.dom.EventTarget {
 	var type(default, null) : OrientationType;
 	var angle(default, null) : Int;

@@ -24,6 +24,10 @@
 
 package js.webglDrawBuffers;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("WEBGL_draw_buffers") extern class WEBGL_draw_buffers {
 	static inline var COLOR_ATTACHMENT0_WEBGL : js.webgl1.GLenum = 0x8CE0;
 	static inline var COLOR_ATTACHMENT1_WEBGL : js.webgl1.GLenum = 0x8CE1;

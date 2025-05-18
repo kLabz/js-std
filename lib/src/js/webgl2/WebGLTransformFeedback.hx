@@ -24,6 +24,9 @@
 
 package js.webgl2;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WebGLTransformFeedback") extern class WebGLTransformFeedback extends js.webgl1.WebGLObject {
 
 }

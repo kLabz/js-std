@@ -24,6 +24,9 @@
 
 package js.webxrlayers;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XRWebGLBinding") extern class XRWebGLBinding {
 	var nativeProjectionScaleFactor(default, null) : Float;
 	var usesDepthValues(default, null) : Bool;

@@ -24,6 +24,9 @@
 
 package js.webBluetooth;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BluetoothUUID") extern class BluetoothUUID {
 	function canonicalUUID(alias:Int):UUID;
 	function getCharacteristic(name:haxe.extern.EitherType<String, Int>):UUID;

@@ -24,6 +24,10 @@
 
 package js.webglCompressedTextureS3tcSrgb;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("WEBGL_compressed_texture_s3tc_srgb") extern class WEBGL_compressed_texture_s3tc_srgb {
 	static inline var COMPRESSED_SRGB_S3TC_DXT1_EXT : js.webgl1.GLenum = 0x8C4C;
 	static inline var COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT : js.webgl1.GLenum = 0x8C4D;

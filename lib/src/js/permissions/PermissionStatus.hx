@@ -24,6 +24,9 @@
 
 package js.permissions;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PermissionStatus") extern class PermissionStatus extends js.dom.EventTarget {
 	var state(default, null) : PermissionState;
 	var name(default, null) : String;

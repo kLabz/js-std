@@ -24,6 +24,9 @@
 
 package js.speechApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SpeechSynthesisUtterance") extern class SpeechSynthesisUtterance extends js.dom.EventTarget {
 	var text : String;
 	var lang : String;

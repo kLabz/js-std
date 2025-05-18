@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGLengthList") extern class SVGLengthList {
 	var length(default, null) : Int;
 	var numberOfItems(default, null) : Int;

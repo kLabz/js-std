@@ -24,6 +24,10 @@
 
 package js.webLocks;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("LockManager") extern class LockManager {
 	function query():js.lib.Promise<LockManagerSnapshot>;
 	overload function request(name:String, callback:LockGrantedCallback):js.lib.Promise<Any>;

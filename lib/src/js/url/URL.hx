@@ -26,6 +26,8 @@ package js.url;
 
 /**
 	TODO attribute href: special=stringifier readonly=false
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyWindowAlias
 **/
 @:native("URL") extern class URL {
 	var origin(default, null) : String;
@@ -37,6 +39,9 @@ package js.url;
 	var port : String;
 	var pathname : String;
 	var search : String;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var searchParams(default, null) : URLSearchParams;
 	var hash : String;
 	function new(url:String, ?base:String):Void;

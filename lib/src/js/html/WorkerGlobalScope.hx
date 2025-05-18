@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WorkerGlobalScope") extern class WorkerGlobalScope extends js.dom.EventTarget {
 	var self(default, null) : WorkerGlobalScope;
 	var location(default, null) : WorkerLocation;

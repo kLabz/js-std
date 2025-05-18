@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("OffscreenCanvasRenderingContext2D") extern class OffscreenCanvasRenderingContext2D {
 	var canvas(default, null) : OffscreenCanvas;
 	/**

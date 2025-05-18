@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGAnimatedBoolean") extern class SVGAnimatedBoolean {
 	var baseVal : Bool;
 	var animVal(default, null) : Bool;

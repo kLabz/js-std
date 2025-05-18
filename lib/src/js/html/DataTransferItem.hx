@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DataTransferItem") extern class DataTransferItem {
 	var kind(default, null) : String;
 	var type(default, null) : String;

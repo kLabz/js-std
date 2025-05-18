@@ -24,7 +24,13 @@
 
 package js.gamepad;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("GamepadHapticActuator") extern class GamepadHapticActuator {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var effects(default, null) : Array<GamepadHapticEffectType>;
 	function playEffect(type:GamepadHapticEffectType, ?params:GamepadEffectParameters = {  }):js.lib.Promise<GamepadHapticsResult>;
 	/**

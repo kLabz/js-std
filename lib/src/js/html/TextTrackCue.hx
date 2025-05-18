@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TextTrackCue") extern class TextTrackCue extends js.dom.EventTarget {
 	var track(default, null) : Null<TextTrack>;
 	var id : String;

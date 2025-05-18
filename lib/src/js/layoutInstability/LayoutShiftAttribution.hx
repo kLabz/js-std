@@ -24,6 +24,9 @@
 
 package js.layoutInstability;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("LayoutShiftAttribution") extern class LayoutShiftAttribution {
 	var node(default, null) : Null<js.dom.Node>;
 	var previousRect(default, null) : js.geometry.DOMRectReadOnly;

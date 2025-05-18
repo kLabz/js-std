@@ -24,7 +24,13 @@
 
 package js.windowControlsOverlay;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WindowControlsOverlayGeometryChangeEvent") extern class WindowControlsOverlayGeometryChangeEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var titlebarAreaRect(default, null) : js.geometry.DOMRect;
 	var visible(default, null) : Bool;
 	function new(type:String, eventInitDict:WindowControlsOverlayGeometryChangeEventInit):Void;

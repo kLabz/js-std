@@ -24,6 +24,10 @@
 
 package js.mediaqueries5;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("PreferenceManager") extern class PreferenceManager {
 	var colorScheme(default, null) : PreferenceObject;
 	var contrast(default, null) : PreferenceObject;

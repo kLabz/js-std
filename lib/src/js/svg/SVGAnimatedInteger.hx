@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGAnimatedInteger") extern class SVGAnimatedInteger {
 	var baseVal : Int;
 	var animVal(default, null) : Int;

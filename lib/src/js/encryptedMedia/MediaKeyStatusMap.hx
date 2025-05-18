@@ -24,6 +24,10 @@
 
 package js.encryptedMedia;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("MediaKeyStatusMap") extern class MediaKeyStatusMap {
 	var size(default, null) : Int;
 	function entries():Iterator<js.lib.Tuple<js.webidl.BufferSource, MediaKeyStatus>>;

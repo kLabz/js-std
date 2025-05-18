@@ -25,6 +25,9 @@
 package js.streams;
 
 typedef ReadableStreamBYOBReaderReadOptions = {
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var min : Float = 1;
 };

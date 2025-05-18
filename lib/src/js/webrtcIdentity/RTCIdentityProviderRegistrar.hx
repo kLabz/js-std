@@ -24,6 +24,9 @@
 
 package js.webrtcIdentity;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCIdentityProviderRegistrar") extern class RTCIdentityProviderRegistrar {
 	function register(idp:RTCIdentityProvider):Void;
 }

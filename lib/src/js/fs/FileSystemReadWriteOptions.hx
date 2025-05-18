@@ -25,6 +25,9 @@
 package js.fs;
 
 typedef FileSystemReadWriteOptions = {
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var at : Float;
 };

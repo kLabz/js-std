@@ -24,6 +24,10 @@
 
 package js.oesTextureFloatLinear;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("OES_texture_float_linear") extern class OES_texture_float_linear {
 
 }

@@ -24,6 +24,9 @@
 
 package js.cssRegions;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("NamedFlow") extern class NamedFlow extends js.dom.EventTarget {
 	var name(default, null) : CSSOMString;
 	var overset(default, null) : Bool;

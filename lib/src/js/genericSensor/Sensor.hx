@@ -24,6 +24,10 @@
 
 package js.genericSensor;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("Sensor") extern class Sensor extends js.dom.EventTarget {
 	var activated(default, null) : Bool;
 	var hasReading(default, null) : Bool;

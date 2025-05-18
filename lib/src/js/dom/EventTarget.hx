@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("EventTarget") extern class EventTarget {
 	function new():Void;
 	function addEventListener(type:String, callback:Null<EventListener>, ?options:haxe.extern.EitherType<AddEventListenerOptions, Bool> = {  }):Void;

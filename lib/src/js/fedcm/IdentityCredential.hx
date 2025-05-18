@@ -24,6 +24,10 @@
 
 package js.fedcm;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("IdentityCredential") extern class IdentityCredential extends js.credentialManagement.Credential {
 	var token(default, null) : Null<String>;
 	var isAutoSelected(default, null) : Bool;

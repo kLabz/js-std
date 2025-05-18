@@ -24,6 +24,10 @@
 
 package js.writingAssistanceApis;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("Rewriter") extern class Rewriter {
 	var sharedContext(default, null) : String;
 	var tone(default, null) : RewriterTone;

@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSNumericArray") extern class CSSNumericArray implements ArrayAccess<CSSNumericValue> {
 	var length(default, null) : Int;
 	function values():Iterator<CSSNumericValue>;

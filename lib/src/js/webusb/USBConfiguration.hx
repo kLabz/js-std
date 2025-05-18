@@ -24,6 +24,10 @@
 
 package js.webusb;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("USBConfiguration") extern class USBConfiguration {
 	var configurationValue(default, null) : Int;
 	var configurationName(default, null) : Null<String>;

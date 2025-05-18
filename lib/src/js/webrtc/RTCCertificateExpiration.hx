@@ -25,6 +25,9 @@
 package js.webrtc;
 
 typedef RTCCertificateExpiration = {
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var expires : Float;
 };

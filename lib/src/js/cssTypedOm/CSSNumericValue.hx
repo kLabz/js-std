@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSNumericValue") extern class CSSNumericValue extends CSSStyleValue {
 	function add(values:CSSNumberish):CSSNumericValue;
 	function div(values:CSSNumberish):CSSNumericValue;
@@ -31,6 +34,9 @@ package js.cssTypedOm;
 	function max(values:CSSNumberish):CSSNumericValue;
 	function min(values:CSSNumberish):CSSNumericValue;
 	function mul(values:CSSNumberish):CSSNumericValue;
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	function parse(cssText:String):CSSNumericValue;
 	function sub(values:CSSNumberish):CSSNumericValue;
 	function to(unit:String):CSSUnitValue;

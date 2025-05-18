@@ -24,6 +24,10 @@
 
 package js.webglMultiDraw;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("WEBGL_multi_draw") extern class WEBGL_multi_draw {
 	function multiDrawArraysInstancedWEBGL(mode:js.webgl1.GLenum, firstsList:haxe.extern.EitherType<Int32Array, Array<js.webgl1.GLint>>, firstsOffset:Float, countsList:haxe.extern.EitherType<Int32Array, Array<js.webgl1.GLsizei>>, countsOffset:Float, instanceCountsList:haxe.extern.EitherType<Int32Array, Array<js.webgl1.GLsizei>>, instanceCountsOffset:Float, drawcount:js.webgl1.GLsizei):Void;
 	function multiDrawArraysWEBGL(mode:js.webgl1.GLenum, firstsList:haxe.extern.EitherType<Int32Array, Array<js.webgl1.GLint>>, firstsOffset:Float, countsList:haxe.extern.EitherType<Int32Array, Array<js.webgl1.GLsizei>>, countsOffset:Float, drawcount:js.webgl1.GLsizei):Void;

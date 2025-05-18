@@ -24,6 +24,9 @@
 
 package js.geolocation;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("GeolocationPositionError") extern class GeolocationPositionError {
 	static inline var PERMISSION_DENIED : Int = 1;
 	static inline var POSITION_UNAVAILABLE : Int = 2;

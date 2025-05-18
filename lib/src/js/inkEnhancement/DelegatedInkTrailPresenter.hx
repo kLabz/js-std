@@ -24,6 +24,9 @@
 
 package js.inkEnhancement;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DelegatedInkTrailPresenter") extern class DelegatedInkTrailPresenter {
 	var presentationArea(default, null) : Null<js.dom.Element>;
 	function updateInkTrailStartPoint(event:js.pointerevents.PointerEvent, style:InkTrailStyle):Void;

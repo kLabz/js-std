@@ -24,6 +24,9 @@
 
 package js.filterEffects;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGFEDisplacementMapElement") extern class SVGFEDisplacementMapElement extends js.svg.SVGElement {
 	static inline var SVG_CHANNEL_UNKNOWN : Int = 0;
 	static inline var SVG_CHANNEL_R : Int = 1;

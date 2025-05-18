@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGPolygonElement") extern class SVGPolygonElement extends SVGGeometryElement {
 	/**
 		From interface mixin SVGAnimatedPoints

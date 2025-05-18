@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("EventSource") extern class EventSource extends js.dom.EventTarget {
 	var url(default, null) : String;
 	var withCredentials(default, null) : Bool;

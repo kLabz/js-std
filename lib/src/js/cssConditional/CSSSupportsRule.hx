@@ -24,6 +24,9 @@
 
 package js.cssConditional;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSSupportsRule") extern class CSSSupportsRule extends CSSConditionRule {
 	var matches(default, null) : Bool;
 }

@@ -24,6 +24,10 @@
 
 package js.translationApi;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("Translator") extern class Translator {
 	var sourceLanguage(default, null) : String;
 	var targetLanguage(default, null) : String;

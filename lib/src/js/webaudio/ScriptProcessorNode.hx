@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ScriptProcessorNode") extern class ScriptProcessorNode extends AudioNode {
 	var onaudioprocess : js.html.EventHandler;
 	var bufferSize(default, null) : Int;

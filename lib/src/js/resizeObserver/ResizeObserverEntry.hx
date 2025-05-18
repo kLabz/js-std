@@ -24,6 +24,9 @@
 
 package js.resizeObserver;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ResizeObserverEntry") extern class ResizeObserverEntry {
 	var target(default, null) : js.dom.Element;
 	var contentRect(default, null) : js.geometry.DOMRectReadOnly;

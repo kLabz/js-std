@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLUnknownElement") extern class HTMLUnknownElement extends HTMLElement {
 
 }

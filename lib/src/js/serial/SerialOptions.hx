@@ -25,13 +25,25 @@
 package js.serial;
 
 typedef SerialOptions = {
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	var baudRate : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var dataBits : Int = 8;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var stopBits : Int = 1;
 	@:optional
 	var parity : ParityType = "none";
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var bufferSize : Int = 255;
 	@:optional

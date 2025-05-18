@@ -24,6 +24,10 @@
 
 package js.ovrMultiview2;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("OVR_multiview2") extern class OVR_multiview2 {
 	static inline var FRAMEBUFFER_ATTACHMENT_TEXTURE_NUM_VIEWS_OVR : js.webgl1.GLenum = 0x9630;
 	static inline var FRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR : js.webgl1.GLenum = 0x9632;

@@ -24,6 +24,9 @@
 
 package js.netinfo;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("NetworkInformation") extern class NetworkInformation extends js.dom.EventTarget {
 	var type(default, null) : ConnectionType;
 	var effectiveType(default, null) : EffectiveConnectionType;
@@ -33,6 +36,7 @@ package js.netinfo;
 	var onchange : js.html.EventHandler;
 	/**
 		From interface mixin NetworkInformationSaveData
+		Unhandled extended attribute SameObject
 	**/
 	var saveData(default, null) : Bool;
 }

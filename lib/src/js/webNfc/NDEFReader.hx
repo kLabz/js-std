@@ -24,6 +24,10 @@
 
 package js.webNfc;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("NDEFReader") extern class NDEFReader extends js.dom.EventTarget {
 	var onreading : js.html.EventHandler;
 	var onreadingerror : js.html.EventHandler;

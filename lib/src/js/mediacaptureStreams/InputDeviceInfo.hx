@@ -24,6 +24,10 @@
 
 package js.mediacaptureStreams;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("InputDeviceInfo") extern class InputDeviceInfo extends MediaDeviceInfo {
 	function getCapabilities():MediaTrackCapabilities;
 }

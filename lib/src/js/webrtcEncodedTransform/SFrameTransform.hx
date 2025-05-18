@@ -24,6 +24,9 @@
 
 package js.webrtcEncodedTransform;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SFrameTransform") extern class SFrameTransform extends js.dom.EventTarget {
 	var onerror : js.html.EventHandler;
 	/**

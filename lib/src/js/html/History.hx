@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("History") extern class History {
 	var length(default, null) : Int;
 	var scrollRestoration : ScrollRestoration;

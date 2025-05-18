@@ -24,9 +24,24 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGLineElement") extern class SVGLineElement extends SVGGeometryElement {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var x1(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var y1(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var x2(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var y2(default, null) : SVGAnimatedLength;
 }

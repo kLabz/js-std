@@ -24,6 +24,9 @@
 
 package js.geometry;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DOMRectList") extern class DOMRectList {
 	var length(default, null) : Int;
 	function item(index:Int):Null<DOMRect>;

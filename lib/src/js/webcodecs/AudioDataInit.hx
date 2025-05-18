@@ -27,8 +27,17 @@ package js.webcodecs;
 typedef AudioDataInit = {
 	var format : AudioSampleFormat;
 	var sampleRate : Float;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	var numberOfFrames : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	var numberOfChannels : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	var timestamp : Float;
 	var data : js.webidl.BufferSource;
 	@:optional

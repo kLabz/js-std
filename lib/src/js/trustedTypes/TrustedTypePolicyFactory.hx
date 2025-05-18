@@ -24,6 +24,9 @@
 
 package js.trustedTypes;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TrustedTypePolicyFactory") extern class TrustedTypePolicyFactory {
 	var emptyHTML(default, null) : TrustedHTML;
 	var emptyScript(default, null) : TrustedScript;

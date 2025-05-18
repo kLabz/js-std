@@ -24,11 +24,20 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("DataTransfer") extern class DataTransfer {
 	var dropEffect : String;
 	var effectAllowed : String;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var items(default, null) : DataTransferItemList;
 	var types(default, null) : Array<String>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var files(default, null) : js.fileapi.FileList;
 	function new():Void;
 	function clearData(?format:String):Void;

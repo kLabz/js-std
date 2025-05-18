@@ -24,7 +24,14 @@
 
 package js.pushApi;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("PushManager") extern class PushManager {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	static var supportedContentEncodings(default, null) : Array<String>;
 	function getSubscription():js.lib.Promise<Null<PushSubscription>>;
 	function permissionState(?options:PushSubscriptionOptionsInit = {  }):js.lib.Promise<js.permissions.PermissionState>;

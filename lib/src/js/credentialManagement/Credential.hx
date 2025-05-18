@@ -24,6 +24,10 @@
 
 package js.credentialManagement;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("Credential") extern class Credential {
 	var id(default, null) : String;
 	var type(default, null) : String;

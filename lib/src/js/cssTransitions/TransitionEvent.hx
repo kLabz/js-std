@@ -24,6 +24,9 @@
 
 package js.cssTransitions;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TransitionEvent") extern class TransitionEvent extends js.dom.Event {
 	var propertyName(default, null) : CSSOMString;
 	var elapsedTime(default, null) : Float;

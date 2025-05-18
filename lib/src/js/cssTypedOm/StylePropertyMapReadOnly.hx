@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("StylePropertyMapReadOnly") extern class StylePropertyMapReadOnly {
 	var size(default, null) : Int;
 	function entries():Iterator<js.lib.Tuple<String, Array<CSSStyleValue>>>;

@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSKeywordValue") extern class CSSKeywordValue extends CSSStyleValue {
 	var value : String;
 	function new(value:String):Void;

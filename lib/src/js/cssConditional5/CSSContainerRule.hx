@@ -24,6 +24,9 @@
 
 package js.cssConditional5;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSContainerRule") extern class CSSContainerRule extends js.cssConditional.CSSConditionRule {
 	var containerName(default, null) : CSSOMString;
 	var containerQuery(default, null) : CSSOMString;

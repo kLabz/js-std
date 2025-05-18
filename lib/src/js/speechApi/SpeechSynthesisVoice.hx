@@ -24,6 +24,9 @@
 
 package js.speechApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SpeechSynthesisVoice") extern class SpeechSynthesisVoice {
 	var voiceURI(default, null) : String;
 	var name(default, null) : String;

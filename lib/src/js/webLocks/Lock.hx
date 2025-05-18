@@ -24,6 +24,10 @@
 
 package js.webLocks;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("Lock") extern class Lock {
 	var name(default, null) : String;
 	var mode(default, null) : LockMode;

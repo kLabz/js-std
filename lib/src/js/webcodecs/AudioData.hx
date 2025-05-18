@@ -24,6 +24,11 @@
 
 package js.webcodecs;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+	Unhandled extended attribute Transferable
+**/
 @:native("AudioData") extern class AudioData {
 	var format(default, null) : Null<AudioSampleFormat>;
 	var sampleRate(default, null) : Float;

@@ -24,6 +24,9 @@
 
 package js.permissions;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Permissions") extern class Permissions {
 	function query(permissionDesc:{ }):js.lib.Promise<PermissionStatus>;
 	/**

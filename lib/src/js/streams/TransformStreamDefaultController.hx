@@ -24,6 +24,9 @@
 
 package js.streams;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TransformStreamDefaultController") extern class TransformStreamDefaultController {
 	var desiredSize(default, null) : Null<Float>;
 	function enqueue(?chunk:Any):Void;

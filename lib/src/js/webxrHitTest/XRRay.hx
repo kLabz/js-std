@@ -24,9 +24,22 @@
 
 package js.webxrHitTest;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRRay") extern class XRRay {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var origin(default, null) : js.geometry.DOMPointReadOnly;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var direction(default, null) : js.geometry.DOMPointReadOnly;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var matrix(default, null) : Float32Array;
 	overload function new(transform:js.webxr.XRRigidTransform):Void;
 	overload function new(?origin:js.geometry.DOMPointInit = {  }, ?direction:XRRayDirectionInit = {  }):Void;

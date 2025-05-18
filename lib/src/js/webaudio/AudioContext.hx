@@ -24,9 +24,15 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AudioContext") extern class AudioContext extends BaseAudioContext {
 	var baseLatency(default, null) : Float;
 	var outputLatency(default, null) : Float;
+	/**
+		Unhandled extended attribute SecureContext
+	**/
 	var sinkId(default, null) : haxe.extern.EitherType<String, AudioSinkInfo>;
 	var onsinkchange : js.html.EventHandler;
 	var onerror : js.html.EventHandler;
@@ -38,6 +44,9 @@ package js.webaudio;
 	function createMediaStreamTrackSource(mediaStreamTrack:js.mediacaptureStreams.MediaStreamTrack):MediaStreamTrackAudioSourceNode;
 	function getOutputTimestamp():AudioTimestamp;
 	function resume():js.lib.Promise<Void>;
+	/**
+		Unhandled extended attribute SecureContext
+	**/
 	function setSinkId(sinkId:haxe.extern.EitherType<String, AudioSinkOptions>):js.lib.Promise<Void>;
 	function suspend():js.lib.Promise<Void>;
 }

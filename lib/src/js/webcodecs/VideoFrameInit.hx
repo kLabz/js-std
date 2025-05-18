@@ -37,8 +37,14 @@ typedef VideoFrameInit = {
 	var rotation : Float = 0;
 	@:optional
 	var flip : Bool = false;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var displayWidth : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var displayHeight : Int;
 	@:optional

@@ -24,13 +24,37 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGPatternElement") extern class SVGPatternElement extends SVGElement {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var patternUnits(default, null) : SVGAnimatedEnumeration;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var patternContentUnits(default, null) : SVGAnimatedEnumeration;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var patternTransform(default, null) : SVGAnimatedTransformList;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var x(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var y(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var width(default, null) : SVGAnimatedLength;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFitToViewBox

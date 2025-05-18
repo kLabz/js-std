@@ -24,7 +24,13 @@
 
 package js.serviceWorkers;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FetchEvent") extern class FetchEvent extends ExtendableEvent {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var request(default, null) : js.fetch.Request;
 	var preloadResponse(default, null) : js.lib.Promise<Any>;
 	var clientId(default, null) : String;

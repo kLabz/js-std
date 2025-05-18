@@ -24,6 +24,9 @@
 
 package js.navigationTiming;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformanceNavigationTiming") extern class PerformanceNavigationTiming extends js.resourceTiming.PerformanceResourceTiming {
 	var unloadEventStart(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var unloadEventEnd(default, null) : js.hrTime.DOMHighResTimeStamp;
@@ -41,5 +44,8 @@ package js.navigationTiming;
 		From partial interface in prerendering-revamped.idl
 	**/
 	var activationStart(default, null) : js.hrTime.DOMHighResTimeStamp;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

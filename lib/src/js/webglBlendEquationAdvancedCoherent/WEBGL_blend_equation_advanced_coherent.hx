@@ -24,6 +24,10 @@
 
 package js.webglBlendEquationAdvancedCoherent;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("WEBGL_blend_equation_advanced_coherent") extern class WEBGL_blend_equation_advanced_coherent {
 	static inline var MULTIPLY : js.webgl1.GLenum = 0x9294;
 	static inline var SCREEN : js.webgl1.GLenum = 0x9295;

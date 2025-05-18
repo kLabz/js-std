@@ -24,6 +24,10 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRRenderState") extern class XRRenderState {
 	var depthNear(default, null) : Float;
 	var depthFar(default, null) : Float;

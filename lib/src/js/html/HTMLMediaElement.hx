@@ -24,17 +24,29 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLMediaElement") extern class HTMLMediaElement extends HTMLElement {
 	var error(default, null) : Null<MediaError>;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var src : String;
 	var srcObject : Null<MediaProvider>;
 	var currentSrc(default, null) : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var crossOrigin : Null<String>;
 	static inline var NETWORK_EMPTY : Int = 0;
 	static inline var NETWORK_IDLE : Int = 1;
 	static inline var NETWORK_LOADING : Int = 2;
 	static inline var NETWORK_NO_SOURCE : Int = 3;
 	var networkState(default, null) : Int;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var preload : String;
 	var buffered(default, null) : TimeRanges;
 	static inline var HAVE_NOTHING : Int = 0;
@@ -53,21 +65,44 @@ package js.html;
 	var played(default, null) : TimeRanges;
 	var seekable(default, null) : TimeRanges;
 	var ended(default, null) : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var autoplay : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var loop : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var controls : Bool;
 	var volume : Float;
 	var muted : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var defaultMuted : Bool;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var audioTracks(default, null) : AudioTrackList;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var videoTracks(default, null) : VideoTrackList;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var textTracks(default, null) : TextTrackList;
 	/**
 		From partial interface in audio-output.idl
+		Unhandled extended attribute SecureContext
 	**/
 	var sinkId(default, null) : String;
 	/**
 		From partial interface in encrypted-media.idl
+		Unhandled extended attribute SecureContext
 	**/
 	var mediaKeys(default, null) : Null<js.encryptedMedia.MediaKeys>;
 	/**
@@ -80,10 +115,12 @@ package js.html;
 	var onwaitingforkey : EventHandler;
 	/**
 		From partial interface in remote-playback.idl
+		Unhandled extended attribute SameObject
 	**/
 	var remote(default, null) : js.remotePlayback.RemotePlayback;
 	/**
 		From partial interface in remote-playback.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var disableRemotePlayback : Bool;
 	function addTextTrack(kind:TextTrackKind, ?label:String = "", ?language:String = ""):TextTrack;
@@ -99,10 +136,12 @@ package js.html;
 	function play():js.lib.Promise<Void>;
 	/**
 		From partial interface in encrypted-media.idl
+		Unhandled extended attribute SecureContext
 	**/
 	function setMediaKeys(mediaKeys:Null<js.encryptedMedia.MediaKeys>):js.lib.Promise<Void>;
 	/**
 		From partial interface in audio-output.idl
+		Unhandled extended attribute SecureContext
 	**/
 	function setSinkId(sinkId:String):js.lib.Promise<Void>;
 }

@@ -24,6 +24,10 @@
 
 package js.webmidi;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("MIDIOutput") extern class MIDIOutput extends MIDIPort {
 	function clear():Void;
 	function send(data:Array<Int>, ?timestamp:js.hrTime.DOMHighResTimeStamp = 0):Void;

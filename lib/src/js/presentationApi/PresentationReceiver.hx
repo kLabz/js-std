@@ -24,6 +24,10 @@
 
 package js.presentationApi;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("PresentationReceiver") extern class PresentationReceiver {
 	var connectionList(default, null) : js.lib.Promise<PresentationConnectionList>;
 }

@@ -35,6 +35,9 @@ typedef RTCConfiguration = {
 	var rtcpMuxPolicy : RTCRtcpMuxPolicy = "require";
 	@:optional
 	var certificates : Array<RTCCertificate> = [];
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var iceCandidatePoolSize : Int = 0;
 	@:optional

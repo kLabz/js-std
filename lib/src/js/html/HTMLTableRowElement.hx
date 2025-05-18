@@ -24,31 +24,44 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLTableRowElement") extern class HTMLTableRowElement extends HTMLElement {
 	var rowIndex(default, null) : Int;
 	var sectionRowIndex(default, null) : Int;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var cells(default, null) : js.dom.HTMLCollection;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var ch : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var chOff : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var vAlign : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var bgColor : String;
-	function new():Void;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	function deleteCell(index:Int):Void;
 	function insertCell(?index:Int = -1):HTMLTableCellElement;
 }

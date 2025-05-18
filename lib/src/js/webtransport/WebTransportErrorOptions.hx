@@ -27,6 +27,9 @@ package js.webtransport;
 typedef WebTransportErrorOptions = {
 	@:optional
 	var source : WebTransportErrorSource = "stream";
+	/**
+		Unhandled extended attribute Clamp
+	**/
 	@:optional
 	var streamErrorCode : Null<Int> = null;
 };

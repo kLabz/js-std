@@ -24,32 +24,42 @@
 
 package js.serviceWorkers;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("ServiceWorkerRegistration") extern class ServiceWorkerRegistration extends js.dom.EventTarget {
 	var installing(default, null) : Null<ServiceWorker>;
 	var waiting(default, null) : Null<ServiceWorker>;
 	var active(default, null) : Null<ServiceWorker>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var navigationPreload(default, null) : NavigationPreloadManager;
 	var scope(default, null) : String;
 	var updateViaCache(default, null) : ServiceWorkerUpdateViaCache;
 	var onupdatefound : js.html.EventHandler;
 	/**
-		From partial interface in background-fetch.idl
-	**/
-	var backgroundFetch(default, null) : js.backgroundFetch.BackgroundFetchManager;
-	/**
 		From partial interface in background-sync.idl
 	**/
 	var sync(default, null) : js.backgroundSync.SyncManager;
 	/**
-		From partial interface in cookie-store.idl
+		From partial interface in background-fetch.idl
 	**/
-	var cookies(default, null) : js.cookieStore.CookieStoreManager;
+	var backgroundFetch(default, null) : js.backgroundFetch.BackgroundFetchManager;
 	/**
 		From partial interface in content-index.idl
+		Unhandled extended attribute SameObject
 	**/
 	var index(default, null) : js.contentIndex.ContentIndex;
 	/**
+		From partial interface in cookie-store.idl
+		Unhandled extended attribute SameObject
+	**/
+	var cookies(default, null) : js.cookieStore.CookieStoreManager;
+	/**
 		From partial interface in payment-handler.idl
+		Unhandled extended attribute SameObject
 	**/
 	var paymentManager(default, null) : js.paymentHandler.PaymentManager;
 	/**
@@ -68,6 +78,12 @@ package js.serviceWorkers;
 		From partial interface in notifications.idl
 	**/
 	function showNotification(title:String, ?options:js.notifications.NotificationOptions = {  }):js.lib.Promise<Void>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function unregister():js.lib.Promise<Bool>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function update():js.lib.Promise<ServiceWorkerRegistration>;
 }

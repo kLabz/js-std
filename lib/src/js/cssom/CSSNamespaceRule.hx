@@ -24,6 +24,9 @@
 
 package js.cssom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSNamespaceRule") extern class CSSNamespaceRule extends CSSRule {
 	var namespaceURI(default, null) : CSSOMString;
 	var prefix(default, null) : CSSOMString;

@@ -24,6 +24,11 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUCompilationMessage") extern class GPUCompilationMessage {
 	var message(default, null) : String;
 	var type(default, null) : GPUCompilationMessageType;

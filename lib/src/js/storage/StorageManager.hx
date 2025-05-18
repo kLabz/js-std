@@ -24,12 +24,19 @@
 
 package js.storage;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("StorageManager") extern class StorageManager {
 	function estimate():js.lib.Promise<StorageEstimate>;
 	/**
 		From partial interface in fs.idl
 	**/
 	function getDirectory():js.lib.Promise<js.fs.FileSystemDirectoryHandle>;
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	function persist():js.lib.Promise<Bool>;
 	function persisted():js.lib.Promise<Bool>;
 }

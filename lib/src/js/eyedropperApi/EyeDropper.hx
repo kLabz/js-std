@@ -24,6 +24,10 @@
 
 package js.eyedropperApi;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("EyeDropper") extern class EyeDropper {
 	function new():Void;
 	function open(?options:ColorSelectionOptions = {  }):js.lib.Promise<ColorSelectionResult>;

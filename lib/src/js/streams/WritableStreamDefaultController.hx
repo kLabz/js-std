@@ -24,6 +24,9 @@
 
 package js.streams;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WritableStreamDefaultController") extern class WritableStreamDefaultController {
 	var signal(default, null) : js.dom.AbortSignal;
 	function error(?e:Any):Void;

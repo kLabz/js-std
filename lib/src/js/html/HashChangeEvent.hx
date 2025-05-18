@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HashChangeEvent") extern class HashChangeEvent extends js.dom.Event {
 	var oldURL(default, null) : String;
 	var newURL(default, null) : String;

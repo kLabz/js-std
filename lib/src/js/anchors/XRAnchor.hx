@@ -24,6 +24,10 @@
 
 package js.anchors;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRAnchor") extern class XRAnchor {
 	var anchorSpace(default, null) : js.webxr.XRSpace;
 	function delete():Void;

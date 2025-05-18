@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IIRFilterNode") extern class IIRFilterNode extends AudioNode {
 	function new(context:BaseAudioContext, options:IIRFilterOptions):Void;
 	function getFrequencyResponse(frequencyHz:Float32Array, magResponse:Float32Array, phaseResponse:Float32Array):Void;

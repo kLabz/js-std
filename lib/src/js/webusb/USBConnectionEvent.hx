@@ -24,7 +24,14 @@
 
 package js.webusb;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("USBConnectionEvent") extern class USBConnectionEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var device(default, null) : USBDevice;
 	function new(type:String, eventInitDict:USBConnectionEventInit):Void;
 }

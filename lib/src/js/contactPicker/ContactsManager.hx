@@ -24,6 +24,10 @@
 
 package js.contactPicker;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("ContactsManager") extern class ContactsManager {
 	function getProperties():js.lib.Promise<Array<ContactProperty>>;
 	function select(properties:Array<ContactProperty>, ?options:ContactsSelectOptions = {  }):js.lib.Promise<Array<ContactInfo>>;

@@ -24,7 +24,14 @@
 
 package js.webBluetooth;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("BluetoothRemoteGATTCharacteristic") extern class BluetoothRemoteGATTCharacteristic extends js.dom.EventTarget {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var service(default, null) : BluetoothRemoteGATTService;
 	var uuid(default, null) : UUID;
 	var properties(default, null) : BluetoothCharacteristicProperties;

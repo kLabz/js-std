@@ -24,6 +24,10 @@
 
 package js.screenWakeLock;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("WakeLock") extern class WakeLock {
 	function request(?type:WakeLockType = "screen"):js.lib.Promise<WakeLockSentinel>;
 }

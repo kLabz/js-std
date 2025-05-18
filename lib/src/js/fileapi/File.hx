@@ -24,6 +24,10 @@
 
 package js.fileapi;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+**/
 @:native("File") extern class File extends Blob {
 	var name(default, null) : String;
 	var lastModified(default, null) : Float;

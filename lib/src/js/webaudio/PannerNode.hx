@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PannerNode") extern class PannerNode extends AudioNode {
 	var panningModel : PanningModelType;
 	var positionX(default, null) : AudioParam;

@@ -24,6 +24,10 @@
 
 package js.wasmJsApi;
 
+/**
+	Unhandled extended attribute LegacyNamespace
+	Unhandled extended attribute Exposed
+**/
 @:native("Table") extern class Table {
 	var length(default, null) : Int;
 	function new(descriptor:TableDescriptor, ?value:Any):Void;

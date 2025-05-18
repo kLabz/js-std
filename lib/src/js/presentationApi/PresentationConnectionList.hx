@@ -24,6 +24,10 @@
 
 package js.presentationApi;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("PresentationConnectionList") extern class PresentationConnectionList extends js.dom.EventTarget {
 	var connections(default, null) : Array<PresentationConnection>;
 	var onconnectionavailable : js.html.EventHandler;

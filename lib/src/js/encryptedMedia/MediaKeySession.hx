@@ -24,6 +24,10 @@
 
 package js.encryptedMedia;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("MediaKeySession") extern class MediaKeySession extends js.dom.EventTarget {
 	var sessionId(default, null) : String;
 	var expiration(default, null) : Float;

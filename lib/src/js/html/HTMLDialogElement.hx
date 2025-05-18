@@ -24,13 +24,33 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLDialogElement") extern class HTMLDialogElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var open : Bool;
 	var returnValue : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var closedBy : String;
-	function new():Void;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	function close(?returnValue:String):Void;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	function requestClose(?returnValue:String):Void;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	function show():Void;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	function showModal():Void;
 }

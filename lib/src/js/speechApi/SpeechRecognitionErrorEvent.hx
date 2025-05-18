@@ -24,6 +24,10 @@
 
 package js.speechApi;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("SpeechRecognitionErrorEvent") extern class SpeechRecognitionErrorEvent extends js.dom.Event {
 	var error(default, null) : SpeechRecognitionErrorCode;
 	var message(default, null) : String;

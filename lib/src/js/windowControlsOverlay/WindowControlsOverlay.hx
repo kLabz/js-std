@@ -24,6 +24,9 @@
 
 package js.windowControlsOverlay;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WindowControlsOverlay") extern class WindowControlsOverlay extends js.dom.EventTarget {
 	var visible(default, null) : Bool;
 	var ongeometrychange : js.html.EventHandler;

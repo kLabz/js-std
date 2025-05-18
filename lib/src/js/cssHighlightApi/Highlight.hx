@@ -26,6 +26,7 @@ package js.cssHighlightApi;
 
 /**
 	TODO SetlikeDeclaration handling
+	Unhandled extended attribute Exposed
 **/
 @:native("Highlight") extern class Highlight {
 	var priority : Int;

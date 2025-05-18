@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGTransform") extern class SVGTransform {
 	static inline var SVG_TRANSFORM_UNKNOWN : Int = 0;
 	static inline var SVG_TRANSFORM_MATRIX : Int = 1;
@@ -33,6 +36,9 @@ package js.svg;
 	static inline var SVG_TRANSFORM_SKEWX : Int = 5;
 	static inline var SVG_TRANSFORM_SKEWY : Int = 6;
 	var type(default, null) : Int;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var matrix(default, null) : js.geometry.DOMMatrix;
 	var angle(default, null) : Float;
 	function setMatrix(?matrix:js.geometry.DOMMatrix2DInit = {  }):Void;

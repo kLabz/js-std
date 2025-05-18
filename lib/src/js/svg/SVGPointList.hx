@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGPointList") extern class SVGPointList {
 	var length(default, null) : Int;
 	var numberOfItems(default, null) : Int;

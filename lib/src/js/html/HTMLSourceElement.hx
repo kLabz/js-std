@@ -24,13 +24,36 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLSourceElement") extern class HTMLSourceElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var src : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var type : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var srcset : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var sizes : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var media : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var width : Int;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var height : Int;
-	function new():Void;
 }

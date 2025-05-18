@@ -24,6 +24,10 @@
 
 package js.encryptedMedia;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("MediaKeyMessageEvent") extern class MediaKeyMessageEvent extends js.dom.Event {
 	var messageType(default, null) : MediaKeyMessageType;
 	var message(default, null) : ArrayBuffer;

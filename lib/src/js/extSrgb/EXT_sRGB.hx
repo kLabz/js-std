@@ -24,6 +24,10 @@
 
 package js.extSrgb;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("EXT_sRGB") extern class EXT_sRGB {
 	static inline var SRGB_EXT : js.webgl1.GLenum = 0x8C40;
 	static inline var SRGB_ALPHA_EXT : js.webgl1.GLenum = 0x8C42;

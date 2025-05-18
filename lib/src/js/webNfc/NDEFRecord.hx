@@ -24,6 +24,10 @@
 
 package js.webNfc;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("NDEFRecord") extern class NDEFRecord {
 	var recordType(default, null) : String;
 	var mediaType(default, null) : Null<String>;

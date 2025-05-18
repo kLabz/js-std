@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("External") extern class External {
 	function AddSearchProvider():Void;
 	function IsSearchProviderInstalled():Void;

@@ -24,6 +24,10 @@
 
 package js.fs;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("FileSystemSyncAccessHandle") extern class FileSystemSyncAccessHandle {
 	function close():Void;
 	function flush():Void;

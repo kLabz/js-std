@@ -26,31 +26,80 @@ package js.html;
 
 /**
 	TODO ArrayAccess<> for tkey=String tvalue=TAnonymous([])
+	Unhandled extended attribute Global
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyUnenumerableNamedProperties
 **/
 @:native("Window") extern class Window extends js.dom.EventTarget {
+	/**
+		Unhandled extended attribute LegacyUnforgeable
+	**/
 	var window(default, null) : WindowProxy;
+	/**
+		Unhandled extended attribute Replaceable
+	**/
 	var self(default, null) : WindowProxy;
+	/**
+		Unhandled extended attribute LegacyUnforgeable
+	**/
 	var document(default, null) : js.dom.Document;
 	var name : String;
+	/**
+		Unhandled extended attribute PutForwards
+		Unhandled extended attribute LegacyUnforgeable
+	**/
 	var location(default, null) : Location;
 	var history(default, null) : History;
 	var navigation(default, null) : Navigation;
 	var customElements(default, null) : CustomElementRegistry;
+	/**
+		Unhandled extended attribute Replaceable
+	**/
 	var locationbar(default, null) : BarProp;
+	/**
+		Unhandled extended attribute Replaceable
+	**/
 	var menubar(default, null) : BarProp;
+	/**
+		Unhandled extended attribute Replaceable
+	**/
 	var personalbar(default, null) : BarProp;
+	/**
+		Unhandled extended attribute Replaceable
+	**/
 	var scrollbars(default, null) : BarProp;
+	/**
+		Unhandled extended attribute Replaceable
+	**/
 	var statusbar(default, null) : BarProp;
+	/**
+		Unhandled extended attribute Replaceable
+	**/
 	var toolbar(default, null) : BarProp;
 	var status : String;
 	var closed(default, null) : Bool;
+	/**
+		Unhandled extended attribute Replaceable
+	**/
 	var frames(default, null) : WindowProxy;
+	/**
+		Unhandled extended attribute Replaceable
+	**/
 	var length(default, null) : Int;
+	/**
+		Unhandled extended attribute LegacyUnforgeable
+	**/
 	var top(default, null) : Null<WindowProxy>;
 	var opener : Any;
+	/**
+		Unhandled extended attribute Replaceable
+	**/
 	var parent(default, null) : Null<WindowProxy>;
 	var frameElement(default, null) : Null<js.dom.Element>;
 	var navigator(default, null) : Navigator;
+	/**
+		Unhandled extended attribute Replaceable
+	**/
 	var clientInformation(default, null) : Navigator;
 	var originAgentCluster(default, null) : Bool;
 	/**
@@ -559,14 +608,17 @@ package js.html;
 	var onportalactivate : EventHandler;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
+		Unhandled extended attribute SameObject
 	**/
 	var indexedDB(default, null) : js.indexeddb.IDBFactory;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
+		Unhandled extended attribute Replaceable
 	**/
 	var performance(default, null) : js.hrTime.Performance;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
+		Unhandled extended attribute Replaceable
 	**/
 	var origin(default, null) : String;
 	/**
@@ -579,10 +631,13 @@ package js.html;
 	var crossOriginIsolated(default, null) : Bool;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
+		Unhandled extended attribute Replaceable
 	**/
 	var scheduler(default, null) : js.schedulingApis.Scheduler;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
+		Unhandled extended attribute SecureContext
+		Unhandled extended attribute SameObject
 	**/
 	var caches(default, null) : js.serviceWorkers.CacheStorage;
 	/**
@@ -591,6 +646,7 @@ package js.html;
 	var trustedTypes(default, null) : js.trustedTypes.TrustedTypePolicyFactory;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
+		Unhandled extended attribute SameObject
 	**/
 	var crypto(default, null) : js.webcrypto.Crypto;
 	/**
@@ -615,86 +671,111 @@ package js.html;
 	var onorientationchange : EventHandler;
 	/**
 		From partial interface in cookie-store.idl
+		Unhandled extended attribute SameObject
 	**/
 	var cookieStore(default, null) : js.cookieStore.CookieStore;
 	/**
+		From partial interface in css-viewport.idl
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute Replaceable
+	**/
+	var viewport(default, null) : js.cssViewport.Viewport;
+	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute Replaceable
 	**/
 	var screen(default, null) : js.cssomView.Screen;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute Replaceable
 	**/
 	var visualViewport(default, null) : Null<js.cssomView.VisualViewport>;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute Replaceable
 	**/
 	var innerWidth(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute Replaceable
 	**/
 	var innerHeight(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute Replaceable
 	**/
 	var scrollX(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute Replaceable
 	**/
 	var pageXOffset(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute Replaceable
 	**/
 	var scrollY(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute Replaceable
 	**/
 	var pageYOffset(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute Replaceable
 	**/
 	var screenX(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute Replaceable
 	**/
 	var screenLeft(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute Replaceable
 	**/
 	var screenY(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute Replaceable
 	**/
 	var screenTop(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute Replaceable
 	**/
 	var outerWidth(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute Replaceable
 	**/
 	var outerHeight(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute Replaceable
 	**/
 	var devicePixelRatio(default, null) : Float;
 	/**
-		From partial interface in css-viewport.idl
-	**/
-	var viewport(default, null) : js.cssViewport.Viewport;
-	/**
-		From partial interface in document-picture-in-picture.idl
-	**/
-	var documentPictureInPicture(default, null) : js.documentPictureInPicture.DocumentPictureInPicture;
-	/**
 		From partial interface in dom.idl
+		Unhandled extended attribute Replaceable
 	**/
 	var event(default, null) : haxe.extern.EitherType<js.dom.Event, Void>;
+	/**
+		From partial interface in document-picture-in-picture.idl
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute SecureContext
+	**/
+	var documentPictureInPicture(default, null) : js.documentPictureInPicture.DocumentPictureInPicture;
 	/**
 		From partial interface in fenced-frame.idl
 	**/
 	var fence(default, null) : Null<js.fencedFrame.Fence>;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Replaceable
+		Unhandled extended attribute SameObject
 	**/
 	var external(default, null) : External;
 	/**
@@ -707,14 +788,17 @@ package js.html;
 	var onbeforeinstallprompt : EventHandler;
 	/**
 		From partial interface in orientation-event.idl
+		Unhandled extended attribute SecureContext
 	**/
 	var ondeviceorientation : EventHandler;
 	/**
 		From partial interface in orientation-event.idl
+		Unhandled extended attribute SecureContext
 	**/
 	var ondeviceorientationabsolute : EventHandler;
 	/**
 		From partial interface in orientation-event.idl
+		Unhandled extended attribute SecureContext
 	**/
 	var ondevicemotion : EventHandler;
 	/**
@@ -723,10 +807,12 @@ package js.html;
 	var portalHost(default, null) : Null<js.portals.PortalHost>;
 	/**
 		From partial interface in shared-storage.idl
+		Unhandled extended attribute SecureContext
 	**/
 	var sharedStorage(default, null) : Null<js.sharedStorage.SharedStorage>;
 	/**
 		From partial interface in speech-api.idl
+		Unhandled extended attribute SameObject
 	**/
 	var speechSynthesis(default, null) : js.speechApi.SpeechSynthesis;
 	/**
@@ -776,19 +862,23 @@ package js.html;
 	overload function createImageBitmap(image:ImageBitmapSource, sx:Int, sy:Int, sw:Int, sh:Int, ?options:ImageBitmapOptions = {  }):js.lib.Promise<ImageBitmap>;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
+		Unhandled extended attribute NewObject
 	**/
 	function fetch(input:js.fetch.RequestInfo, ?init:js.fetch.RequestInit = {  }):js.lib.Promise<js.fetch.Response>;
 	function focus():Void;
 	/**
 		From partial interface in cssom.idl
+		Unhandled extended attribute NewObject
 	**/
 	function getComputedStyle(elt:js.dom.Element, ?pseudoElt:Null<CSSOMString>):js.cssom.CSSStyleDeclaration;
 	/**
 		From partial interface in digital-goods.idl
+		Unhandled extended attribute SecureContext
 	**/
 	function getDigitalGoodsService(serviceProvider:String):js.lib.Promise<js.digitalGoods.DigitalGoodsService>;
 	/**
 		From partial interface in window-management.idl
+		Unhandled extended attribute SecureContext
 	**/
 	function getScreenDetails():js.lib.Promise<js.windowManagement.ScreenDetails>;
 	/**
@@ -797,6 +887,7 @@ package js.html;
 	function getSelection():Null<js.selectionApi.Selection>;
 	/**
 		From partial interface in cssom-view.idl
+		Unhandled extended attribute NewObject
 	**/
 	function matchMedia(query:CSSOMString):js.cssomView.MediaQueryList;
 	/**

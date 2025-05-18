@@ -24,6 +24,10 @@
 
 package js.webmidi;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("MIDIConnectionEvent") extern class MIDIConnectionEvent extends js.dom.Event {
 	var port(default, null) : Null<MIDIPort>;
 	function new(type:String, ?eventInitDict:MIDIConnectionEventInit = {  }):Void;

@@ -24,6 +24,9 @@
 
 package js.indexeddb;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IDBVersionChangeEvent") extern class IDBVersionChangeEvent extends js.dom.Event {
 	var oldVersion(default, null) : Float;
 	var newVersion(default, null) : Null<Float>;

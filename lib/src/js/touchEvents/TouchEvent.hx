@@ -24,6 +24,9 @@
 
 package js.touchEvents;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TouchEvent") extern class TouchEvent extends js.uievents.UIEvent {
 	var touches(default, null) : TouchList;
 	var targetTouches(default, null) : TouchList;

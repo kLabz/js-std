@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("NotRestoredReasons") extern class NotRestoredReasons {
 	var src(default, null) : Null<String>;
 	var id(default, null) : Null<String>;
@@ -31,5 +34,8 @@ package js.html;
 	var url(default, null) : Null<String>;
 	var reasons(default, null) : Null<Array<NotRestoredReasonDetails>>;
 	var children(default, null) : Null<Array<NotRestoredReasons>>;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

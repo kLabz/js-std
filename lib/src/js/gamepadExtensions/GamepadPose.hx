@@ -24,6 +24,9 @@
 
 package js.gamepadExtensions;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("GamepadPose") extern class GamepadPose {
 	var hasOrientation(default, null) : Bool;
 	var hasPosition(default, null) : Bool;

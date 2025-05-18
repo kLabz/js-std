@@ -24,6 +24,10 @@
 
 package js.extDisjointTimerQuery;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("WebGLTimerQueryEXT") extern class WebGLTimerQueryEXT extends js.webgl1.WebGLObject {
 
 }

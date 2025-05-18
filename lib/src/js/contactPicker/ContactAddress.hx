@@ -24,6 +24,9 @@
 
 package js.contactPicker;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ContactAddress") extern class ContactAddress {
 	var city(default, null) : String;
 	var country(default, null) : String;
@@ -35,5 +38,8 @@ package js.contactPicker;
 	var region(default, null) : String;
 	var sortingCode(default, null) : String;
 	var addressLine(default, null) : Array<String>;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

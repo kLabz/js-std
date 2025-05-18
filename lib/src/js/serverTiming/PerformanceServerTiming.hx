@@ -24,9 +24,15 @@
 
 package js.serverTiming;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformanceServerTiming") extern class PerformanceServerTiming {
 	var name(default, null) : String;
 	var duration(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var description(default, null) : String;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

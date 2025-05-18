@@ -24,6 +24,10 @@
 
 package js.webxrHitTest;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRTransientInputHitTestSource") extern class XRTransientInputHitTestSource {
 	function cancel():Void;
 }

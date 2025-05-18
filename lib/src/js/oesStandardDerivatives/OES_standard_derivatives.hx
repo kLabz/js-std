@@ -24,6 +24,10 @@
 
 package js.oesStandardDerivatives;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("OES_standard_derivatives") extern class OES_standard_derivatives {
 	static inline var FRAGMENT_SHADER_DERIVATIVE_HINT_OES : js.webgl1.GLenum = 0x8B8B;
 }

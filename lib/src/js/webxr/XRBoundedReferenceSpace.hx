@@ -24,6 +24,10 @@
 
 package js.webxr;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("XRBoundedReferenceSpace") extern class XRBoundedReferenceSpace extends XRReferenceSpace {
 	var boundsGeometry(default, null) : Array<js.geometry.DOMPointReadOnly>;
 }

@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSImageValue") extern class CSSImageValue extends CSSStyleValue {
 
 }

@@ -24,6 +24,9 @@
 
 package js.longAnimationFrames;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformanceScriptTiming") extern class PerformanceScriptTiming extends js.performanceTimeline.PerformanceEntry {
 	var startTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var duration(default, null) : js.hrTime.DOMHighResTimeStamp;
@@ -39,5 +42,8 @@ package js.longAnimationFrames;
 	var forcedStyleAndLayoutDuration(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var window(default, null) : Null<js.html.Window>;
 	var windowAttribution(default, null) : ScriptWindowAttribution;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

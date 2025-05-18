@@ -24,6 +24,11 @@
 
 package js.webtransport;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Transferable
+**/
 @:native("WebTransportReceiveStream") extern class WebTransportReceiveStream extends js.streams.ReadableStream {
 	function getStats():js.lib.Promise<WebTransportReceiveStreamStats>;
 }

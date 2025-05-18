@@ -24,6 +24,10 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("AudioWorklet") extern class AudioWorklet extends js.html.Worklet {
 	var port(default, null) : js.html.MessagePort;
 }

@@ -24,6 +24,9 @@
 
 package js.xhr;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XMLHttpRequest") extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
 	var onreadystatechange : js.html.EventHandler;
 	static inline var UNSENT : Int = 0;
@@ -34,6 +37,9 @@ package js.xhr;
 	var readyState(default, null) : Int;
 	var timeout : Int;
 	var withCredentials : Bool;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var upload(default, null) : XMLHttpRequestUpload;
 	var responseURL(default, null) : String;
 	var status(default, null) : Int;
@@ -41,6 +47,9 @@ package js.xhr;
 	var responseType : XMLHttpRequestResponseType;
 	var response(default, null) : Any;
 	var responseText(default, null) : String;
+	/**
+		Unhandled extended attribute Exposed
+	**/
 	var responseXML(default, null) : Null<js.dom.Document>;
 	function new():Void;
 	function abort():Void;
@@ -52,6 +61,7 @@ package js.xhr;
 	function send(?body:Null<haxe.extern.EitherType<js.dom.Document, js.fetch.XMLHttpRequestBodyInit>> = null):Void;
 	/**
 		From partial interface in attribution-reporting-api.idl
+		Unhandled extended attribute SecureContext
 	**/
 	function setAttributionReporting(options:js.attributionReportingApi.AttributionReportingRequestOptions):Void;
 	/**

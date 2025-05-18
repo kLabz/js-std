@@ -24,7 +24,14 @@
 
 package js.presentationApi;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("PresentationConnectionAvailableEvent") extern class PresentationConnectionAvailableEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var connection(default, null) : PresentationConnection;
 	function new(type:String, eventInitDict:PresentationConnectionAvailableEventInit):Void;
 }

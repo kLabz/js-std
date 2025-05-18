@@ -24,6 +24,9 @@
 
 package js.uaClientHints;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("NavigatorUAData") extern class NavigatorUAData {
 	var brands(default, null) : Array<NavigatorUABrandVersion>;
 	var mobile(default, null) : Bool;

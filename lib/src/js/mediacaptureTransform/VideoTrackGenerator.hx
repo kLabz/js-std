@@ -24,6 +24,9 @@
 
 package js.mediacaptureTransform;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("VideoTrackGenerator") extern class VideoTrackGenerator {
 	var writable(default, null) : js.streams.WritableStream;
 	var muted : Bool;

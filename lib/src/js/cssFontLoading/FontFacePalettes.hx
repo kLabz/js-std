@@ -24,6 +24,9 @@
 
 package js.cssFontLoading;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FontFacePalettes") extern class FontFacePalettes implements ArrayAccess<FontFacePalette> {
 	var length(default, null) : Int;
 	function values():Iterator<FontFacePalette>;

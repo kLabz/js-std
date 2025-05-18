@@ -24,6 +24,10 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyUnenumerableNamedProperties
+**/
 @:native("PluginArray") extern class PluginArray {
 	var length(default, null) : Int;
 	function item(index:Int):Null<Plugin>;

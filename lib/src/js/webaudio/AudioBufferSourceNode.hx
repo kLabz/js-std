@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AudioBufferSourceNode") extern class AudioBufferSourceNode extends AudioScheduledSourceNode {
 	var buffer : Null<AudioBuffer>;
 	var playbackRate(default, null) : AudioParam;

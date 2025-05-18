@@ -24,6 +24,9 @@
 
 package js.webgl1;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WebGLShaderPrecisionFormat") extern class WebGLShaderPrecisionFormat {
 	var rangeMin(default, null) : GLint;
 	var rangeMax(default, null) : GLint;

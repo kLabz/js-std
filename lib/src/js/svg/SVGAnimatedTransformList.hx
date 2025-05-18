@@ -24,7 +24,16 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGAnimatedTransformList") extern class SVGAnimatedTransformList {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var baseVal(default, null) : SVGTransformList;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var animVal(default, null) : SVGTransformList;
 }

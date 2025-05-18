@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUQueue") extern class GPUQueue {
 	/**
 		From interface mixin GPUObjectBase

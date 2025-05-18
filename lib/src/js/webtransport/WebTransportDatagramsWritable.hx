@@ -24,6 +24,11 @@
 
 package js.webtransport;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Transferable
+**/
 @:native("WebTransportDatagramsWritable") extern class WebTransportDatagramsWritable extends js.streams.WritableStream {
 	var sendGroup : Null<WebTransportSendGroup>;
 	var sendOrder : Float;

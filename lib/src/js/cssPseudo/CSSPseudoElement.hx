@@ -24,6 +24,9 @@
 
 package js.cssPseudo;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSPseudoElement") extern class CSSPseudoElement extends js.dom.EventTarget {
 	var type(default, null) : CSSOMString;
 	var element(default, null) : js.dom.Element;

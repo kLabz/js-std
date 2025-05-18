@@ -24,11 +24,17 @@
 
 package js.interventionReporting;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("InterventionReportBody") extern class InterventionReportBody extends js.reporting.ReportBody {
 	var id(default, null) : String;
 	var message(default, null) : String;
 	var sourceFile(default, null) : Null<String>;
 	var lineNumber(default, null) : Null<Int>;
 	var columnNumber(default, null) : Null<Int>;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

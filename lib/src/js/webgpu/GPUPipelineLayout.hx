@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUPipelineLayout") extern class GPUPipelineLayout {
 	/**
 		From interface mixin GPUObjectBase

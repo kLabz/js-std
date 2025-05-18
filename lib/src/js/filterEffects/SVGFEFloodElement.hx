@@ -24,6 +24,9 @@
 
 package js.filterEffects;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGFEFloodElement") extern class SVGFEFloodElement extends js.svg.SVGElement {
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes

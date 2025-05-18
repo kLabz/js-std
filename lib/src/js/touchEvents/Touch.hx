@@ -24,6 +24,9 @@
 
 package js.touchEvents;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Touch") extern class Touch {
 	var identifier(default, null) : Int;
 	var target(default, null) : js.dom.EventTarget;

@@ -24,6 +24,10 @@
 
 package js.cssAnimationWorklet;
 
+/**
+	Unhandled extended attribute Global
+	Unhandled extended attribute Exposed
+**/
 @:native("AnimationWorkletGlobalScope") extern class AnimationWorkletGlobalScope extends js.html.WorkletGlobalScope {
 	function registerAnimator(name:String, animatorCtor:AnimatorInstanceConstructor):Void;
 }

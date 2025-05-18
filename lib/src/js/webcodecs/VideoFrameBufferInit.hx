@@ -29,6 +29,9 @@ typedef VideoFrameBufferInit = {
 	var codedWidth : Int;
 	var codedHeight : Int;
 	var timestamp : Float;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var duration : Float;
 	@:optional
@@ -39,8 +42,14 @@ typedef VideoFrameBufferInit = {
 	var rotation : Float = 0;
 	@:optional
 	var flip : Bool = false;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var displayWidth : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var displayHeight : Int;
 	@:optional

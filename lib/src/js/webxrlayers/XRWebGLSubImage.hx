@@ -24,9 +24,21 @@
 
 package js.webxrlayers;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XRWebGLSubImage") extern class XRWebGLSubImage extends XRSubImage {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var colorTexture(default, null) : js.webgl1.WebGLTexture;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var depthStencilTexture(default, null) : Null<js.webgl1.WebGLTexture>;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var motionVectorTexture(default, null) : Null<js.webgl1.WebGLTexture>;
 	var imageIndex(default, null) : Null<Int>;
 	var colorTextureWidth(default, null) : Int;

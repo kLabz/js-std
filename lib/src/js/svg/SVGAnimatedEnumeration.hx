@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGAnimatedEnumeration") extern class SVGAnimatedEnumeration {
 	var baseVal : Int;
 	var animVal(default, null) : Int;

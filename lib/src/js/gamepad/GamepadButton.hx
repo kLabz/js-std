@@ -24,6 +24,9 @@
 
 package js.gamepad;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("GamepadButton") extern class GamepadButton {
 	var pressed(default, null) : Bool;
 	var touched(default, null) : Bool;

@@ -24,11 +24,21 @@
 
 package js.webtransport;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("WebTransport") extern class WebTransport {
 	var ready(default, null) : js.lib.Promise<Void>;
 	var reliability(default, null) : WebTransportReliabilityMode;
 	var congestionControl(default, null) : WebTransportCongestionControl;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	var anticipatedConcurrentIncomingUnidirectionalStreams : Null<Int>;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	var anticipatedConcurrentIncomingBidirectionalStreams : Null<Int>;
 	var protocol(default, null) : String;
 	var closed(default, null) : js.lib.Promise<WebTransportCloseInfo>;

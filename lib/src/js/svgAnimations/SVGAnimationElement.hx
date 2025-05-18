@@ -24,6 +24,9 @@
 
 package js.svgAnimations;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGAnimationElement") extern class SVGAnimationElement extends js.svg.SVGElement {
 	var targetElement(default, null) : Null<js.svg.SVGElement>;
 	var onbegin : js.html.EventHandler;

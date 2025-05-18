@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSLCH") extern class CSSLCH extends CSSColorValue {
 	var l : CSSColorPercent;
 	var c : CSSColorPercent;

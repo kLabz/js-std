@@ -27,6 +27,9 @@ package js.wasmJsApi;
 typedef TableDescriptor = {
 	var element : TableKind;
 	var initial : Int;
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var maximum : Int;
 };

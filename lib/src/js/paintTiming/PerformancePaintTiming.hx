@@ -24,6 +24,9 @@
 
 package js.paintTiming;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PerformancePaintTiming") extern class PerformancePaintTiming extends js.performanceTimeline.PerformanceEntry {
 	/**
 		From interface mixin PaintTimingMixin

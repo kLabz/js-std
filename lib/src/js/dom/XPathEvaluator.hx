@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XPathEvaluator") extern class XPathEvaluator {
 	function new():Void;
 	/**

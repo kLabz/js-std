@@ -29,8 +29,14 @@ package js.geometry;
 	TODO attribute y: special=inherit readonly=false
 	TODO attribute z: special=inherit readonly=false
 	TODO attribute w: special=inherit readonly=false
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+	Unhandled extended attribute LegacyWindowAlias
 **/
 @:native("DOMPoint") extern class DOMPoint extends DOMPointReadOnly {
 	function new(?x:Float = 0, ?y:Float = 0, ?z:Float = 0, ?w:Float = 1):Void;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function fromPoint(?other:DOMPointInit = {  }):DOMPoint;
 }

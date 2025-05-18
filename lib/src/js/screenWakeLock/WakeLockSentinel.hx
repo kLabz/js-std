@@ -24,6 +24,10 @@
 
 package js.screenWakeLock;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("WakeLockSentinel") extern class WakeLockSentinel extends js.dom.EventTarget {
 	var released(default, null) : Bool;
 	var type(default, null) : WakeLockType;

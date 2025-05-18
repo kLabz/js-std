@@ -24,6 +24,9 @@
 
 package js.periodicBackgroundSync;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PeriodicSyncManager") extern class PeriodicSyncManager {
 	function getTags():js.lib.Promise<Array<String>>;
 	function register(tag:String, ?options:BackgroundSyncOptions = {  }):js.lib.Promise<Void>;

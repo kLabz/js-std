@@ -24,8 +24,14 @@
 
 package js.mediasession;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ChapterInformation") extern class ChapterInformation {
 	var title(default, null) : String;
 	var startTime(default, null) : Float;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var artwork(default, null) : Array<MediaImage>;
 }

@@ -24,6 +24,9 @@
 
 package js.webrtc;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RTCRtpReceiver") extern class RTCRtpReceiver {
 	var track(default, null) : js.mediacaptureStreams.MediaStreamTrack;
 	var transport(default, null) : Null<RTCDtlsTransport>;

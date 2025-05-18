@@ -24,6 +24,13 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("Worklet") extern class Worklet {
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function addModule(moduleURL:String, ?options:WorkletOptions = {  }):js.lib.Promise<Void>;
 }

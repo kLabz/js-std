@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Text") extern class Text extends CharacterData {
 	var wholeText(default, null) : String;
 	/**
@@ -47,5 +50,8 @@ package js.dom;
 		From interface mixin GeometryUtils
 	**/
 	function getBoxQuads(?options:js.cssomView.BoxQuadOptions = {  }):Array<js.geometry.DOMQuad>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function splitText(offset:Int):Text;
 }

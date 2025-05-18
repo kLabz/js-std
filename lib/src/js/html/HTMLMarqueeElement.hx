@@ -24,19 +24,54 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLMarqueeElement") extern class HTMLMarqueeElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var behavior : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var bgColor : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var direction : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var height : String;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var hspace : Int;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var loop : Int;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var scrollAmount : Int;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var scrollDelay : Int;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var trueSpeed : Bool;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var vspace : Int;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var width : String;
-	function new():Void;
 	function start():Void;
 	function stop():Void;
 }

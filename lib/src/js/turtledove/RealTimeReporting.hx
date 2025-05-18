@@ -24,6 +24,9 @@
 
 package js.turtledove;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RealTimeReporting") extern class RealTimeReporting {
 	function contributeToHistogram(contribution:RealTimeContribution):Void;
 }

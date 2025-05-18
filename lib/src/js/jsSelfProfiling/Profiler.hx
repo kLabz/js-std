@@ -24,6 +24,9 @@
 
 package js.jsSelfProfiling;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Profiler") extern class Profiler extends js.dom.EventTarget {
 	var sampleInterval(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var stopped(default, null) : Bool;

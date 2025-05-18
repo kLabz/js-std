@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("StereoPannerNode") extern class StereoPannerNode extends AudioNode {
 	var pan(default, null) : AudioParam;
 	function new(context:BaseAudioContext, ?options:StereoPannerOptions = {  }):Void;

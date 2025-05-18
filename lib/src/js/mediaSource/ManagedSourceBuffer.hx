@@ -24,6 +24,9 @@
 
 package js.mediaSource;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ManagedSourceBuffer") extern class ManagedSourceBuffer extends SourceBuffer {
 	var onbufferedchange : js.html.EventHandler;
 }

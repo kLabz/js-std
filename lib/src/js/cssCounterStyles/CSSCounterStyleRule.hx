@@ -24,6 +24,9 @@
 
 package js.cssCounterStyles;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSCounterStyleRule") extern class CSSCounterStyleRule extends js.cssom.CSSRule {
 	var name : CSSOMString;
 	var system : CSSOMString;

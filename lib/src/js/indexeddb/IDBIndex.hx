@@ -24,17 +24,44 @@
 
 package js.indexeddb;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IDBIndex") extern class IDBIndex {
 	var name : String;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var objectStore(default, null) : IDBObjectStore;
 	var keyPath(default, null) : Any;
 	var multiEntry(default, null) : Bool;
 	var unique(default, null) : Bool;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function count(?query:Any):IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function get(query:Any):IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function getAll(?query:Any, ?count:Int):IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function getAllKeys(?query:Any, ?count:Int):IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function getKey(query:Any):IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function openCursor(?query:Any, ?direction:IDBCursorDirection = "next"):IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function openKeyCursor(?query:Any, ?direction:IDBCursorDirection = "next"):IDBRequest;
 }

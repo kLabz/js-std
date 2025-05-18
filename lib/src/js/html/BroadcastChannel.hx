@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BroadcastChannel") extern class BroadcastChannel extends js.dom.EventTarget {
 	var name(default, null) : String;
 	var onmessage : EventHandler;

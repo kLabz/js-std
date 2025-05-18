@@ -24,9 +24,15 @@
 
 package js.fetch;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Request") extern class Request {
 	var method(default, null) : String;
 	var url(default, null) : String;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var headers(default, null) : Headers;
 	var destination(default, null) : RequestDestination;
 	var referrer(default, null) : String;
@@ -56,27 +62,36 @@ package js.fetch;
 	function new(input:RequestInfo, ?init:RequestInit = {  }):Void;
 	/**
 		From interface mixin Body
+		Unhandled extended attribute NewObject
 	**/
 	function arrayBuffer():js.lib.Promise<ArrayBuffer>;
 	/**
 		From interface mixin Body
+		Unhandled extended attribute NewObject
 	**/
 	function blob():js.lib.Promise<js.fileapi.Blob>;
 	/**
 		From interface mixin Body
+		Unhandled extended attribute NewObject
 	**/
 	function bytes():js.lib.Promise<Uint8Array>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function clone():Request;
 	/**
 		From interface mixin Body
+		Unhandled extended attribute NewObject
 	**/
 	function formData():js.lib.Promise<js.xhr.FormData>;
 	/**
 		From interface mixin Body
+		Unhandled extended attribute NewObject
 	**/
 	function json():js.lib.Promise<Any>;
 	/**
 		From interface mixin Body
+		Unhandled extended attribute NewObject
 	**/
 	function text():js.lib.Promise<String>;
 }

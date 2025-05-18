@@ -24,6 +24,13 @@
 
 package js.cssNesting;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSNestedDeclarations") extern class CSSNestedDeclarations extends js.cssom.CSSRule {
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var style(default, null) : js.cssom.CSSStyleProperties;
 }

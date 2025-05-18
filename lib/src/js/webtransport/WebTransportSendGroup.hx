@@ -24,6 +24,10 @@
 
 package js.webtransport;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("WebTransportSendGroup") extern class WebTransportSendGroup {
 	function getStats():js.lib.Promise<WebTransportSendStreamStats>;
 }

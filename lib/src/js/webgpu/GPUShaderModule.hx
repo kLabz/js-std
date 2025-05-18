@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUShaderModule") extern class GPUShaderModule {
 	/**
 		From interface mixin GPUObjectBase

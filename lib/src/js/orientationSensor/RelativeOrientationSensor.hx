@@ -24,6 +24,10 @@
 
 package js.orientationSensor;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("RelativeOrientationSensor") extern class RelativeOrientationSensor extends OrientationSensor {
 	function new(?sensorOptions:OrientationSensorOptions = {  }):Void;
 }

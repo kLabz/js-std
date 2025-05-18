@@ -24,6 +24,10 @@
 
 package js.webglDepthTexture;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("WEBGL_depth_texture") extern class WEBGL_depth_texture {
 	static inline var UNSIGNED_INT_24_8_WEBGL : js.webgl1.GLenum = 0x84FA;
 }

@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPURenderBundle") extern class GPURenderBundle {
 	/**
 		From interface mixin GPUObjectBase

@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ConvolverNode") extern class ConvolverNode extends AudioNode {
 	var buffer : Null<AudioBuffer>;
 	var normalize : Bool;

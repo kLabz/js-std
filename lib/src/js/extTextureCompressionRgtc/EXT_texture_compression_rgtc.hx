@@ -24,6 +24,10 @@
 
 package js.extTextureCompressionRgtc;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("EXT_texture_compression_rgtc") extern class EXT_texture_compression_rgtc {
 	static inline var COMPRESSED_RED_RGTC1_EXT : js.webgl1.GLenum = 0x8DBB;
 	static inline var COMPRESSED_SIGNED_RED_RGTC1_EXT : js.webgl1.GLenum = 0x8DBC;

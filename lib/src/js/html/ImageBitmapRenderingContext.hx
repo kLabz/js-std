@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ImageBitmapRenderingContext") extern class ImageBitmapRenderingContext {
 	var canvas(default, null) : haxe.extern.EitherType<HTMLCanvasElement, OffscreenCanvas>;
 	function transferFromImageBitmap(bitmap:Null<ImageBitmap>):Void;

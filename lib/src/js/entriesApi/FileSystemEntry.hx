@@ -24,6 +24,9 @@
 
 package js.entriesApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FileSystemEntry") extern class FileSystemEntry {
 	var isFile(default, null) : Bool;
 	var isDirectory(default, null) : Bool;

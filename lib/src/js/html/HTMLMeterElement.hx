@@ -24,13 +24,33 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLMeterElement") extern class HTMLMeterElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var value : Float;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var min : Float;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var max : Float;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var low : Float;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var high : Float;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var optimum : Float;
 	var labels(default, null) : js.dom.NodeList;
-	function new():Void;
 }

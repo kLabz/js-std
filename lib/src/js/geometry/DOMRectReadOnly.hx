@@ -24,6 +24,10 @@
 
 package js.geometry;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+**/
 @:native("DOMRectReadOnly") extern class DOMRectReadOnly {
 	var x(default, null) : Float;
 	var y(default, null) : Float;
@@ -34,6 +38,12 @@ package js.geometry;
 	var bottom(default, null) : Float;
 	var left(default, null) : Float;
 	function new(?x:Float = 0, ?y:Float = 0, ?width:Float = 0, ?height:Float = 0):Void;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function fromRect(?other:DOMRectInit = {  }):DOMRectReadOnly;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

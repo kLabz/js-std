@@ -24,6 +24,9 @@
 
 package js.cssNav;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("NavigationEvent") extern class NavigationEvent extends js.uievents.UIEvent {
 	var dir(default, null) : SpatialNavigationDirection;
 	var relatedTarget(default, null) : Null<js.dom.EventTarget>;

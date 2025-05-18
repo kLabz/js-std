@@ -24,6 +24,10 @@
 
 package js.mediaqueries5;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("PreferenceObject") extern class PreferenceObject extends js.dom.EventTarget {
 	var override(default, null) : Null<String>;
 	var value(default, null) : String;

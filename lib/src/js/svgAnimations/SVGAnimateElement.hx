@@ -24,6 +24,9 @@
 
 package js.svgAnimations;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGAnimateElement") extern class SVGAnimateElement extends SVGAnimationElement {
 
 }

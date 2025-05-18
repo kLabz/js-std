@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CanvasGradient") extern class CanvasGradient {
 	function addColorStop(offset:Float, color:String):Void;
 }

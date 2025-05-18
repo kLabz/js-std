@@ -24,6 +24,9 @@
 
 package js.uievents;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CompositionEvent") extern class CompositionEvent extends UIEvent {
 	var data(default, null) : String;
 	function new(type:String, ?eventInitDict:CompositionEventInit = {  }):Void;

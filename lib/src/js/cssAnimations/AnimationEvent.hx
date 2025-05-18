@@ -24,6 +24,9 @@
 
 package js.cssAnimations;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AnimationEvent") extern class AnimationEvent extends js.dom.Event {
 	var animationName(default, null) : CSSOMString;
 	var elapsedTime(default, null) : Float;

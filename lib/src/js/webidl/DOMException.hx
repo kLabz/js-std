@@ -24,6 +24,10 @@
 
 package js.webidl;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+**/
 @:native("DOMException") extern class DOMException {
 	var name(default, null) : String;
 	var message(default, null) : String;

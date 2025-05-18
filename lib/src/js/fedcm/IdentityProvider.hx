@@ -24,6 +24,10 @@
 
 package js.fedcm;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("IdentityProvider") extern class IdentityProvider {
 	function close():Void;
 	function getUserInfo(config:IdentityProviderConfig):js.lib.Promise<Array<IdentityUserInfo>>;

@@ -24,6 +24,9 @@
 
 package js.webxrlayers;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XREquirectLayer") extern class XREquirectLayer extends XRCompositionLayer {
 	var space : js.webxr.XRSpace;
 	var transform : js.webxr.XRRigidTransform;

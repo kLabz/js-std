@@ -24,6 +24,9 @@
 
 package js.sharedStorage;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SharedStorageClearMethod") extern class SharedStorageClearMethod extends SharedStorageModifierMethod {
 	function new(?options:SharedStorageModifierMethodOptions = {  }):Void;
 }

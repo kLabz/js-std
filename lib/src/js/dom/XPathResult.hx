@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("XPathResult") extern class XPathResult {
 	static inline var ANY_TYPE : Int = 0;
 	static inline var NUMBER_TYPE : Int = 1;

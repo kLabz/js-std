@@ -24,10 +24,29 @@
 
 package js.serviceWorkers;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("CacheStorage") extern class CacheStorage {
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function delete(cacheName:String):js.lib.Promise<Bool>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function has(cacheName:String):js.lib.Promise<Bool>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function keys():js.lib.Promise<Array<String>>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function match(request:js.fetch.RequestInfo, ?options:MultiCacheQueryOptions = {  }):js.lib.Promise<haxe.extern.EitherType<js.fetch.Response, Void>>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function open(cacheName:String):js.lib.Promise<Cache>;
 }

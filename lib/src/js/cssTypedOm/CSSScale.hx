@@ -24,6 +24,9 @@
 
 package js.cssTypedOm;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSScale") extern class CSSScale extends CSSTransformComponent {
 	var x : CSSNumberish;
 	var y : CSSNumberish;

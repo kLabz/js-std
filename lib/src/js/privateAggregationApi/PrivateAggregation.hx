@@ -24,6 +24,10 @@
 
 package js.privateAggregationApi;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("PrivateAggregation") extern class PrivateAggregation {
 	function contributeToHistogram(contribution:PAHistogramContribution):Void;
 	function contributeToHistogramOnEvent(event:String, contribution:haxe.DynamicAccess<Any>):Void;

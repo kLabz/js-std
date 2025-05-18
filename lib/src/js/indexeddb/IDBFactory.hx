@@ -24,9 +24,18 @@
 
 package js.indexeddb;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("IDBFactory") extern class IDBFactory {
 	function cmp(first:Any, second:Any):Int;
 	function databases():js.lib.Promise<Array<IDBDatabaseInfo>>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function deleteDatabase(name:String):IDBOpenDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function open(name:String, ?version:Float):IDBOpenDBRequest;
 }

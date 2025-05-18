@@ -24,6 +24,9 @@
 
 package js.entriesApi;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("FileSystemDirectoryReader") extern class FileSystemDirectoryReader {
 	function readEntries(successCallback:FileSystemEntriesCallback, ?errorCallback:ErrorCallback):Void;
 }

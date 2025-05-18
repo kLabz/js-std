@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CanvasPattern") extern class CanvasPattern {
 	function setTransform(?transform:js.geometry.DOMMatrix2DInit = {  }):Void;
 }

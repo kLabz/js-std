@@ -24,6 +24,9 @@
 
 package js.backgroundFetch;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BackgroundFetchRecord") extern class BackgroundFetchRecord {
 	var request(default, null) : js.fetch.Request;
 	var responseReady(default, null) : js.lib.Promise<js.fetch.Response>;

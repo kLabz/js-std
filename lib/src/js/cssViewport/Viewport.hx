@@ -24,6 +24,9 @@
 
 package js.cssViewport;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Viewport") extern class Viewport {
 	var segments(default, null) : Null<Array<js.geometry.DOMRect>>;
 }

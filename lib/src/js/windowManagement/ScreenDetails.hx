@@ -24,6 +24,10 @@
 
 package js.windowManagement;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("ScreenDetails") extern class ScreenDetails extends js.dom.EventTarget {
 	var screens(default, null) : Array<ScreenDetailed>;
 	var currentScreen(default, null) : ScreenDetailed;

@@ -24,6 +24,10 @@
 
 package js.batteryStatus;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("BatteryManager") extern class BatteryManager extends js.dom.EventTarget {
 	var charging(default, null) : Bool;
 	var chargingTime(default, null) : Float;

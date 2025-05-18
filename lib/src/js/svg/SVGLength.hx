@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGLength") extern class SVGLength {
 	static inline var SVG_LENGTHTYPE_UNKNOWN : Int = 0;
 	static inline var SVG_LENGTHTYPE_NUMBER : Int = 1;

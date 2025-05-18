@@ -24,7 +24,13 @@
 
 package js.pictureInPicture;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PictureInPictureEvent") extern class PictureInPictureEvent extends js.dom.Event {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var pictureInPictureWindow(default, null) : PictureInPictureWindow;
 	function new(type:String, eventInitDict:PictureInPictureEventInit):Void;
 }

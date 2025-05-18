@@ -24,6 +24,10 @@
 
 package js.mediacaptureStreams;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("MediaDevices") extern class MediaDevices extends js.dom.EventTarget {
 	var ondevicechange : js.html.EventHandler;
 	/**

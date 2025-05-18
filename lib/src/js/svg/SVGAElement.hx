@@ -24,11 +24,21 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGAElement") extern class SVGAElement extends SVGGraphicsElement {
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var target(default, null) : SVGAnimatedString;
 	var download : String;
 	var ping : String;
 	var rel : String;
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var relList(default, null) : js.dom.DOMTokenList;
 	var hreflang : String;
 	var type : String;
@@ -44,38 +54,47 @@ package js.svg;
 	var origin(default, null) : String;
 	/**
 		From partial interface in SVG.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var protocol : String;
 	/**
 		From partial interface in SVG.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var username : String;
 	/**
 		From partial interface in SVG.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var password : String;
 	/**
 		From partial interface in SVG.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var host : String;
 	/**
 		From partial interface in SVG.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var hostname : String;
 	/**
 		From partial interface in SVG.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var port : String;
 	/**
 		From partial interface in SVG.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var pathname : String;
 	/**
 		From partial interface in SVG.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var search : String;
 	/**
 		From partial interface in SVG.idl
+		Unhandled extended attribute CEReactions
 	**/
 	var hash : String;
 }

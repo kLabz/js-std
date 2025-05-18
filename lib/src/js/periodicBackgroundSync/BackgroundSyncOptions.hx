@@ -25,6 +25,9 @@
 package js.periodicBackgroundSync;
 
 typedef BackgroundSyncOptions = {
+	/**
+		Unhandled extended attribute EnforceRange
+	**/
 	@:optional
 	var minInterval : Float = 0;
 };

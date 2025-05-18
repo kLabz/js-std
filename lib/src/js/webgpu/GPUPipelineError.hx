@@ -24,6 +24,11 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Serializable
+**/
 @:native("GPUPipelineError") extern class GPUPipelineError extends js.webidl.DOMException {
 	var reason(default, null) : GPUPipelineErrorReason;
 	function new(?message:String = "", options:GPUPipelineErrorInit):Void;

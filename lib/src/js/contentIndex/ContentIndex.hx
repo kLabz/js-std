@@ -24,6 +24,9 @@
 
 package js.contentIndex;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ContentIndex") extern class ContentIndex {
 	function add(description:ContentDescription):js.lib.Promise<Void>;
 	function delete(id:String):js.lib.Promise<Void>;

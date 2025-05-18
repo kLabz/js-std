@@ -24,6 +24,10 @@
 
 package js.wasmJsApi;
 
+/**
+	Unhandled extended attribute LegacyNamespace
+	Unhandled extended attribute Exposed
+**/
 @:native("Global") extern class Global {
 	var value : Any;
 	function new(descriptor:GlobalDescriptor, ?v:Any):Void;

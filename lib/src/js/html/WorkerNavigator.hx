@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("WorkerNavigator") extern class WorkerNavigator {
 	/**
 		From interface mixin NavigatorDeviceMemory
@@ -119,26 +122,33 @@ package js.html;
 	var ml(default, null) : js.webnn.ML;
 	/**
 		From partial interface in media-capabilities.idl
+		Unhandled extended attribute SameObject
 	**/
 	var mediaCapabilities(default, null) : js.mediaCapabilities.MediaCapabilities;
 	/**
 		From partial interface in permissions.idl
+		Unhandled extended attribute SameObject
 	**/
 	var permissions(default, null) : js.permissions.Permissions;
 	/**
 		From partial interface in serial.idl
+		Unhandled extended attribute SameObject
 	**/
 	var serial(default, null) : js.serial.Serial;
 	/**
 		From partial interface in service-workers.idl
+		Unhandled extended attribute SecureContext
+		Unhandled extended attribute SameObject
 	**/
 	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
 	/**
 		From partial interface in webhid.idl
+		Unhandled extended attribute SameObject
 	**/
 	var hid(default, null) : js.webhid.HID;
 	/**
 		From partial interface in webusb.idl
+		Unhandled extended attribute SameObject
 	**/
 	var usb(default, null) : js.webusb.USB;
 	/**

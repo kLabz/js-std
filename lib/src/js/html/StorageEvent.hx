@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("StorageEvent") extern class StorageEvent extends js.dom.Event {
 	var key(default, null) : Null<String>;
 	var oldValue(default, null) : Null<String>;

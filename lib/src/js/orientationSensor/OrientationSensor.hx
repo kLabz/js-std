@@ -24,6 +24,10 @@
 
 package js.orientationSensor;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("OrientationSensor") extern class OrientationSensor extends js.genericSensor.Sensor {
 	var quaternion(default, null) : Null<Array<Float>>;
 	function populateMatrix(targetMatrix:RotationMatrixType):Void;

@@ -24,6 +24,9 @@
 
 package js.filterEffects;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGFESpecularLightingElement") extern class SVGFESpecularLightingElement extends js.svg.SVGElement {
 	var in1(default, null) : js.svg.SVGAnimatedString;
 	var surfaceScale(default, null) : js.svg.SVGAnimatedNumber;

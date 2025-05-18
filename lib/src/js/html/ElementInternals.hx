@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ElementInternals") extern class ElementInternals {
 	var shadowRoot(default, null) : Null<js.dom.ShadowRoot>;
 	var form(default, null) : Null<HTMLFormElement>;
@@ -31,6 +34,9 @@ package js.html;
 	var validity(default, null) : ValidityState;
 	var validationMessage(default, null) : String;
 	var labels(default, null) : js.dom.NodeList;
+	/**
+		Unhandled extended attribute SameObject
+	**/
 	var states(default, null) : CustomStateSet;
 	/**
 		From interface mixin ARIAMixin

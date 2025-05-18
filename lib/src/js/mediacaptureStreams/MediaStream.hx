@@ -24,6 +24,9 @@
 
 package js.mediacaptureStreams;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("MediaStream") extern class MediaStream extends js.dom.EventTarget {
 	var id(default, null) : String;
 	var active(default, null) : Bool;

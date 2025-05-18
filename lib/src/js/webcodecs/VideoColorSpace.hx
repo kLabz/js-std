@@ -24,11 +24,17 @@
 
 package js.webcodecs;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("VideoColorSpace") extern class VideoColorSpace {
 	var primaries(default, null) : Null<VideoColorPrimaries>;
 	var transfer(default, null) : Null<VideoTransferCharacteristics>;
 	var matrix(default, null) : Null<VideoMatrixCoefficients>;
 	var fullRange(default, null) : Null<Bool>;
 	function new(?init:VideoColorSpaceInit = {  }):Void;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():VideoColorSpaceInit;
 }

@@ -24,6 +24,9 @@
 
 package js.remotePlayback;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("RemotePlayback") extern class RemotePlayback extends js.dom.EventTarget {
 	var state(default, null) : RemotePlaybackState;
 	var onconnecting : js.html.EventHandler;

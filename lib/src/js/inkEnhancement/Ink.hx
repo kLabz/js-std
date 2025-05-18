@@ -24,6 +24,9 @@
 
 package js.inkEnhancement;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Ink") extern class Ink {
 	function requestPresenter(?param:InkPresenterParam = {  }):js.lib.Promise<DelegatedInkTrailPresenter>;
 }

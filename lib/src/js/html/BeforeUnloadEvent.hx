@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BeforeUnloadEvent") extern class BeforeUnloadEvent extends js.dom.Event {
 	var returnValue : String;
 }

@@ -24,6 +24,9 @@
 
 package js.serviceWorkers;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("Client") extern class Client {
 	var url(default, null) : String;
 	var frameType(default, null) : FrameType;

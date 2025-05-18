@@ -26,6 +26,7 @@ package js.html;
 
 /**
 	TODO attribute href: special=stringifier readonly=true
+	Unhandled extended attribute Exposed
 **/
 @:native("WorkerLocation") extern class WorkerLocation {
 	var origin(default, null) : String;

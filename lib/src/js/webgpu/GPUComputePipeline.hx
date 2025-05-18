@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUComputePipeline") extern class GPUComputePipeline {
 	/**
 		From interface mixin GPUObjectBase
@@ -31,6 +35,7 @@ package js.webgpu;
 	var label : String;
 	/**
 		From interface mixin GPUPipelineBase
+		Unhandled extended attribute NewObject
 	**/
 	function getBindGroupLayout(index:Int):GPUBindGroupLayout;
 }

@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SharedWorker") extern class SharedWorker extends js.dom.EventTarget {
 	var port(default, null) : MessagePort;
 	/**

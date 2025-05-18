@@ -24,6 +24,10 @@
 
 package js.webglColorBufferFloat;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("WEBGL_color_buffer_float") extern class WEBGL_color_buffer_float {
 	static inline var RGBA32F_EXT : js.webgl1.GLenum = 0x8814;
 	static inline var FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT : js.webgl1.GLenum = 0x8211;

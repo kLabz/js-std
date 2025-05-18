@@ -24,6 +24,9 @@
 
 package js.scrollAnimations;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ScrollTimeline") extern class ScrollTimeline extends js.webAnimations.AnimationTimeline {
 	var source(default, null) : Null<js.dom.Element>;
 	var axis(default, null) : ScrollAxis;

@@ -24,6 +24,10 @@
 
 package js.keyboardLock;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("Keyboard") extern class Keyboard extends js.dom.EventTarget {
 	/**
 		From partial interface in keyboard-map.idl

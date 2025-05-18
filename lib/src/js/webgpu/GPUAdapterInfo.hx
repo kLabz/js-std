@@ -24,6 +24,10 @@
 
 package js.webgpu;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("GPUAdapterInfo") extern class GPUAdapterInfo {
 	var vendor(default, null) : String;
 	var architecture(default, null) : String;

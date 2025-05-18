@@ -24,6 +24,10 @@
 
 package js.webBluetooth;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("BluetoothCharacteristicProperties") extern class BluetoothCharacteristicProperties {
 	var broadcast(default, null) : Bool;
 	var read(default, null) : Bool;

@@ -24,13 +24,26 @@
 
 package js.geometry;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute Serializable
+**/
 @:native("DOMPointReadOnly") extern class DOMPointReadOnly {
 	var x(default, null) : Float;
 	var y(default, null) : Float;
 	var z(default, null) : Float;
 	var w(default, null) : Float;
 	function new(?x:Float = 0, ?y:Float = 0, ?z:Float = 0, ?w:Float = 1):Void;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function fromPoint(?other:DOMPointInit = {  }):DOMPointReadOnly;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function matrixTransform(?matrix:DOMMatrixInit = {  }):DOMPoint;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("BiquadFilterNode") extern class BiquadFilterNode extends AudioNode {
 	var type : BiquadFilterType;
 	var frequency(default, null) : AudioParam;

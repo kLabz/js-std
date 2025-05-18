@@ -24,6 +24,10 @@
 
 package js.genericSensor;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("SensorErrorEvent") extern class SensorErrorEvent extends js.dom.Event {
 	var error(default, null) : js.webidl.DOMException;
 	function new(type:String, errorEventInitDict:SensorErrorEventInit):Void;

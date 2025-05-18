@@ -24,6 +24,10 @@
 
 package js.webtransport;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("WebTransportBidirectionalStream") extern class WebTransportBidirectionalStream {
 	var readable(default, null) : WebTransportReceiveStream;
 	var writable(default, null) : WebTransportSendStream;

@@ -24,6 +24,9 @@
 
 package js.sharedStorage;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SharedStorageWorkletNavigator") extern class SharedStorageWorkletNavigator {
 	/**
 		From interface mixin NavigatorLocks

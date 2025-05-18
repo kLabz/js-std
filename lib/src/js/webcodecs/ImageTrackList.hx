@@ -24,6 +24,9 @@
 
 package js.webcodecs;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ImageTrackList") extern class ImageTrackList implements ArrayAccess<ImageTrack> {
 	var ready(default, null) : js.lib.Promise<Void>;
 	var length(default, null) : Int;

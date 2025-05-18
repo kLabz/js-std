@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AudioParam") extern class AudioParam {
 	var value : Float;
 	var automationRate : AutomationRate;

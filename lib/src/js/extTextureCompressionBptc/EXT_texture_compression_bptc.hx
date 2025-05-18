@@ -24,6 +24,10 @@
 
 package js.extTextureCompressionBptc;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute LegacyNoInterfaceObject
+**/
 @:native("EXT_texture_compression_bptc") extern class EXT_texture_compression_bptc {
 	static inline var COMPRESSED_RGBA_BPTC_UNORM_EXT : js.webgl1.GLenum = 0x8E8C;
 	static inline var COMPRESSED_SRGB_ALPHA_BPTC_UNORM_EXT : js.webgl1.GLenum = 0x8E8D;

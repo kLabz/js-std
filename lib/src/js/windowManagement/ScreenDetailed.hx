@@ -24,6 +24,10 @@
 
 package js.windowManagement;
 
+/**
+	Unhandled extended attribute Exposed
+	Unhandled extended attribute SecureContext
+**/
 @:native("ScreenDetailed") extern class ScreenDetailed extends js.cssomView.Screen {
 	var availLeft(default, null) : Int;
 	var availTop(default, null) : Int;

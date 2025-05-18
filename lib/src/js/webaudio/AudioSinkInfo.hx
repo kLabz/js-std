@@ -24,6 +24,9 @@
 
 package js.webaudio;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("AudioSinkInfo") extern class AudioSinkInfo {
 	var type(default, null) : AudioSinkType;
 }

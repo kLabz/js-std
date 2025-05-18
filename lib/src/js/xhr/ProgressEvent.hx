@@ -24,6 +24,9 @@
 
 package js.xhr;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("ProgressEvent") extern class ProgressEvent extends js.dom.Event {
 	var lengthComputable(default, null) : Bool;
 	var loaded(default, null) : Float;

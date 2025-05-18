@@ -24,11 +24,19 @@
 
 package js.cssom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("CSSStyleRule") extern class CSSStyleRule extends CSSGroupingRule {
 	var selectorText : CSSOMString;
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var style(default, null) : CSSStyleProperties;
 	/**
 		From partial interface in css-typed-om.idl
+		Unhandled extended attribute SameObject
 	**/
 	var styleMap(default, null) : js.cssTypedOm.StylePropertyMap;
 }

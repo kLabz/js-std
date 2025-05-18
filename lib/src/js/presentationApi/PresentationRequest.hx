@@ -24,6 +24,10 @@
 
 package js.presentationApi;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("PresentationRequest") extern class PresentationRequest extends js.dom.EventTarget {
 	var onconnectionavailable : js.html.EventHandler;
 	overload function new(urls:Array<String>):Void;

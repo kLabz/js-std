@@ -24,7 +24,13 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("NotRestoredReasonDetails") extern class NotRestoredReasonDetails {
 	var reason(default, null) : String;
+	/**
+		Unhandled extended attribute Default
+	**/
 	function toJSON():{ };
 }

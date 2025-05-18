@@ -24,12 +24,19 @@
 
 package js.cssom;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("StyleSheet") extern class StyleSheet {
 	var type(default, null) : CSSOMString;
 	var href(default, null) : Null<String>;
 	var ownerNode(default, null) : Null<haxe.extern.EitherType<js.dom.Element, js.dom.ProcessingInstruction>>;
 	var parentStyleSheet(default, null) : Null<CSSStyleSheet>;
 	var title(default, null) : Null<String>;
+	/**
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
+	**/
 	var media(default, null) : MediaList;
 	var disabled : Bool;
 }

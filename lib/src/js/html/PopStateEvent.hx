@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("PopStateEvent") extern class PopStateEvent extends js.dom.Event {
 	var state(default, null) : Any;
 	var hasUAVisualTransition(default, null) : Bool;

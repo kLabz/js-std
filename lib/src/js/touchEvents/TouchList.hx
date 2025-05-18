@@ -24,6 +24,9 @@
 
 package js.touchEvents;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("TouchList") extern class TouchList {
 	var length(default, null) : Int;
 	function item(index:Int):Null<Touch>;

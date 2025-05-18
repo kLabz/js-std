@@ -24,6 +24,9 @@
 
 package js.svg;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("SVGAngle") extern class SVGAngle {
 	static inline var SVG_ANGLETYPE_UNKNOWN : Int = 0;
 	static inline var SVG_ANGLETYPE_UNSPECIFIED : Int = 1;

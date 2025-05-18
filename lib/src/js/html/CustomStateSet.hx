@@ -26,6 +26,7 @@ package js.html;
 
 /**
 	TODO SetlikeDeclaration handling
+	Unhandled extended attribute Exposed
 **/
 @:native("CustomStateSet") extern class CustomStateSet {
 

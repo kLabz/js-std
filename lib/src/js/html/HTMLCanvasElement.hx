@@ -24,10 +24,18 @@
 
 package js.html;
 
+/**
+	Unhandled extended attribute Exposed
+**/
 @:native("HTMLCanvasElement") extern class HTMLCanvasElement extends HTMLElement {
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var width : Int;
+	/**
+		Unhandled extended attribute CEReactions
+	**/
 	var height : Int;
-	function new():Void;
 	/**
 		From partial interface in mediacapture-fromelement.idl
 	**/

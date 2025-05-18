@@ -24,6 +24,10 @@
 
 package js.webnn;
 
+/**
+	Unhandled extended attribute SecureContext
+	Unhandled extended attribute Exposed
+**/
 @:native("MLContext") extern class MLContext {
 	var lost(default, null) : js.lib.Promise<MLContextLostInfo>;
 	function createConstantTensor(descriptor:MLOperandDescriptor, inputData:js.webidl.AllowSharedBufferSource):js.lib.Promise<MLTensor>;

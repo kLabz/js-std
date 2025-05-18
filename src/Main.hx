@@ -132,19 +132,19 @@ class Main {
 				function handleGeneric<T:AbstractNonUnionTypeDescription<T>>(t:T) {
 					return switch (t.generic) {
 						case IDLFrozenArrayTypeDescription:
-							var inner = convertType(currentPack, t.idlType.first);
+							var inner = convertType(currentPack, t.idlType.get);
 							// if (inner == null) inner = macro :Dynamic;
 							// TODO: FrozenArray in std
 							macro :Array<$inner>;
 
 						case IDLObservableArrayTypeDescription:
-							var inner = convertType(currentPack, t.idlType.first);
+							var inner = convertType(currentPack, t.idlType.get);
 							// if (inner == null) inner = macro :Dynamic;
 							// TODO: ObservableArray in std
 							macro :Array<$inner>;
 
 						case IDLPromiseTypeDescription:
-							var inner = convertType(currentPack, t.idlType.first);
+							var inner = convertType(currentPack, t.idlType.get);
 							// if (inner == null) inner = macro :Dynamic;
 							macro :js.lib.Promise<$inner>;
 
@@ -158,8 +158,9 @@ class Main {
 									throw 'Unexpected record key type $tkey.';
 							}
 
+						// TODO: handle tuples
 						case IDLSequenceTypeDescription:
-							var inner = convertType(currentPack, t.idlType.first);
+							var inner = convertType(currentPack, t.idlType.get);
 							// if (inner == null) inner = macro :Dynamic;
 							macro :Array<$inner>;
 
@@ -361,16 +362,18 @@ class Main {
 										typeDoc.push('TODO MaplikeDeclaration handling');
 
 									case IDLIterableDeclarationMemberType:
-										var tkey = convertType(pack, m.idlType[0]);
-										var tvalue = convertType(pack, m.idlType[1]);
 										var newFields:Array<Field> = [];
-										if (tvalue == null) {
-											tvalue = tkey;
+										if (m.idlType.length == 1) {
+											var tvalue = convertType(pack, m.idlType.first);
+
 											newFields = (macro class A {
 												function values():Iterator<$tvalue>;
 											}).fields;
 											for (f in newFields) fields.push(f);
 										} else {
+											var tkey = convertType(pack, m.idlType.first);
+											var tvalue = convertType(pack, m.idlType.second);
+
 											newFields = (macro class A {
 												function keys():Iterator<$tkey>;
 												function values():Iterator<$tvalue>;

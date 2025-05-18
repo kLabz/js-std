@@ -1,12 +1,13 @@
 package webidl2;
 
+import js.lib.Tuple.HomogeneousTuple;
 import util.EitherType;
 
 extern interface IterableDeclarationMemberType extends AbstractBase<IterableDeclarationMemberType> {
 	/**
 		An array with one or two IDL Types representing the declared type arguments.
 	**/
-	var idlType : Array<IDLTypeDescription>;
+	var idlType : HomogeneousTuple<IDLTypeDescription>;
 	/**
 		Whether the iterable is declared as async.
 	**/

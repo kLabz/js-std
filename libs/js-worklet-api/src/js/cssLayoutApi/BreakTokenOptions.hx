@@ -28,5 +28,5 @@ typedef BreakTokenOptions = {
 	@:optional
 	var childBreakTokens : Array<ChildBreakToken>;
 	@:optional
-	var data : Any = null;
+	var data : Any;
 };

@@ -53,11 +53,11 @@ package js.webxr;
 	/**
 		From partial interface in webxr-hand-input.idl
 	**/
-	function fillJointRadii(jointSpaces:Array<js.webxrHandInput.XRJointSpace>, radii:Float32Array):Bool;
+	function fillJointRadii(jointSpaces:Array<js.webxrHandInput.XRJointSpace>, radii:js.lib.Float32Array):Bool;
 	/**
 		From partial interface in webxr-hand-input.idl
 	**/
-	function fillPoses(spaces:Array<XRSpace>, baseSpace:XRSpace, transforms:Float32Array):Bool;
+	function fillPoses(spaces:Array<XRSpace>, baseSpace:XRSpace, transforms:js.lib.Float32Array):Bool;
 	/**
 		From partial interface in webxr-depth-sensing.idl
 	**/

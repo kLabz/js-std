@@ -43,7 +43,7 @@ package js.serviceWorkers;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function match(request:js.fetch.RequestInfo, ?options:MultiCacheQueryOptions = {  }):js.lib.Promise<haxe.extern.EitherType<js.fetch.Response, Void>>;
+	function match(request:js.fetch.RequestInfo, ?options:MultiCacheQueryOptions):js.lib.Promise<haxe.extern.EitherType<js.fetch.Response, Void>>;
 	/**
 		Unhandled extended attribute NewObject
 	**/

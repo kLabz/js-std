@@ -29,7 +29,7 @@ package js.gamepad;
 		Unhandled extended attribute SameObject
 	**/
 	var effects(default, null) : Array<GamepadHapticEffectType>;
-	function playEffect(type:GamepadHapticEffectType, ?params:GamepadEffectParameters = {  }):js.lib.Promise<GamepadHapticsResult>;
+	function playEffect(type:GamepadHapticEffectType, ?params:GamepadEffectParameters):js.lib.Promise<GamepadHapticsResult>;
 	/**
 		From partial interface in gamepad-extensions.idl
 	**/

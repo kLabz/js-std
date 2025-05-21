@@ -31,5 +31,5 @@ package js.webaudio;
 	var reduction(default, null) : Float;
 	var attack(default, null) : AudioParam;
 	var release(default, null) : AudioParam;
-	function new(context:BaseAudioContext, ?options:DynamicsCompressorOptions = {  }):Void;
+	function new(context:BaseAudioContext, ?options:DynamicsCompressorOptions):Void;
 }

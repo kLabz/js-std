@@ -55,6 +55,6 @@ package js.webrtc;
 	function close():Void;
 	overload function send(data:String):Void;
 	overload function send(data:js.fileapi.Blob):Void;
-	overload function send(data:ArrayBuffer):Void;
-	overload function send(data:js.webidl.ArrayBufferView):Void;
+	overload function send(data:js.lib.ArrayBuffer):Void;
+	overload function send(data:js.lib.ArrayBufferView):Void;
 }

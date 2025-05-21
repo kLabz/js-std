@@ -39,32 +39,32 @@ package js.serviceWorkers;
 	var updateViaCache(default, null) : ServiceWorkerUpdateViaCache;
 	var onupdatefound : js.html.EventHandler;
 	/**
-		From partial interface in background-sync.idl
-	**/
-	var sync(default, null) : js.backgroundSync.SyncManager;
-	/**
 		From partial interface in background-fetch.idl
 	**/
 	var backgroundFetch(default, null) : js.backgroundFetch.BackgroundFetchManager;
 	/**
-		From partial interface in content-index.idl
-		Unhandled extended attribute SameObject
+		From partial interface in background-sync.idl
 	**/
-	var index(default, null) : js.contentIndex.ContentIndex;
+	var sync(default, null) : js.backgroundSync.SyncManager;
 	/**
 		From partial interface in cookie-store.idl
 		Unhandled extended attribute SameObject
 	**/
 	var cookies(default, null) : js.cookieStore.CookieStoreManager;
 	/**
-		From partial interface in periodic-background-sync.idl
+		From partial interface in content-index.idl
+		Unhandled extended attribute SameObject
 	**/
-	var periodicSync(default, null) : js.periodicBackgroundSync.PeriodicSyncManager;
+	var index(default, null) : js.contentIndex.ContentIndex;
 	/**
 		From partial interface in payment-handler.idl
 		Unhandled extended attribute SameObject
 	**/
 	var paymentManager(default, null) : js.paymentHandler.PaymentManager;
+	/**
+		From partial interface in periodic-background-sync.idl
+	**/
+	var periodicSync(default, null) : js.periodicBackgroundSync.PeriodicSyncManager;
 	/**
 		From partial interface in push-api.idl
 	**/
@@ -72,11 +72,11 @@ package js.serviceWorkers;
 	/**
 		From partial interface in notifications.idl
 	**/
-	function getNotifications(?filter:js.notifications.GetNotificationOptions = {  }):js.lib.Promise<Array<js.notifications.Notification>>;
+	function getNotifications(?filter:js.notifications.GetNotificationOptions):js.lib.Promise<Array<js.notifications.Notification>>;
 	/**
 		From partial interface in notifications.idl
 	**/
-	function showNotification(title:String, ?options:js.notifications.NotificationOptions = {  }):js.lib.Promise<Void>;
+	function showNotification(title:String, ?options:js.notifications.NotificationOptions):js.lib.Promise<Void>;
 	/**
 		Unhandled extended attribute NewObject
 	**/

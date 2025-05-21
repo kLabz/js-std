@@ -28,11 +28,11 @@ package js.webxrlayers;
 	var nativeProjectionScaleFactor(default, null) : Float;
 	var usesDepthValues(default, null) : Bool;
 	function new(session:js.webxr.XRSession, context:js.webxr.XRWebGLRenderingContext):Void;
-	function createCubeLayer(?init:XRCubeLayerInit = {  }):XRCubeLayer;
-	function createCylinderLayer(?init:XRCylinderLayerInit = {  }):XRCylinderLayer;
-	function createEquirectLayer(?init:XREquirectLayerInit = {  }):XREquirectLayer;
-	function createProjectionLayer(?init:XRProjectionLayerInit = {  }):XRProjectionLayer;
-	function createQuadLayer(?init:XRQuadLayerInit = {  }):XRQuadLayer;
+	function createCubeLayer(?init:XRCubeLayerInit):XRCubeLayer;
+	function createCylinderLayer(?init:XRCylinderLayerInit):XRCylinderLayer;
+	function createEquirectLayer(?init:XREquirectLayerInit):XREquirectLayer;
+	function createProjectionLayer(?init:XRProjectionLayerInit):XRProjectionLayer;
+	function createQuadLayer(?init:XRQuadLayerInit):XRQuadLayer;
 	function foveateBoundTexture(target:js.webgl1.GLenum, fixed_foveation:Float):Void;
 	/**
 		From partial interface in raw-camera-access.idl

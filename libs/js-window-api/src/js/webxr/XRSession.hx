@@ -30,7 +30,7 @@ package js.webxr;
 @:native("XRSession") extern class XRSession extends js.dom.EventTarget {
 	var visibilityState(default, null) : XRVisibilityState;
 	var frameRate(default, null) : Null<Float>;
-	var supportedFrameRates(default, null) : Null<Float32Array>;
+	var supportedFrameRates(default, null) : Null<js.lib.Float32Array>;
 	/**
 		Unhandled extended attribute SameObject
 	**/
@@ -60,6 +60,18 @@ package js.webxr;
 	**/
 	var persistentAnchors(default, null) : Array<String>;
 	/**
+		From partial interface in webxr-ar-module.idl
+	**/
+	var environmentBlendMode(default, null) : js.webxrArModule.XREnvironmentBlendMode;
+	/**
+		From partial interface in webxr-ar-module.idl
+	**/
+	var interactionMode(default, null) : js.webxrArModule.XRInteractionMode;
+	/**
+		From partial interface in webxr-dom-overlays.idl
+	**/
+	var domOverlayState(default, null) : Null<js.webxrDomOverlays.XRDOMOverlayState>;
+	/**
 		From partial interface in webxr-depth-sensing.idl
 	**/
 	var depthUsage(default, null) : js.webxrDepthSensing.XRDepthUsage;
@@ -75,18 +87,6 @@ package js.webxr;
 		From partial interface in webxr-depth-sensing.idl
 	**/
 	var depthActive(default, null) : Null<Bool>;
-	/**
-		From partial interface in webxr-ar-module.idl
-	**/
-	var environmentBlendMode(default, null) : js.webxrArModule.XREnvironmentBlendMode;
-	/**
-		From partial interface in webxr-ar-module.idl
-	**/
-	var interactionMode(default, null) : js.webxrArModule.XRInteractionMode;
-	/**
-		From partial interface in webxr-dom-overlays.idl
-	**/
-	var domOverlayState(default, null) : Null<js.webxrDomOverlays.XRDOMOverlayState>;
 	/**
 		From partial interface in webxr-lighting-estimation.idl
 	**/
@@ -117,7 +117,7 @@ package js.webxr;
 	/**
 		From partial interface in webxr-lighting-estimation.idl
 	**/
-	function requestLightProbe(?options:js.webxrLightingEstimation.XRLightProbeInit = {  }):js.lib.Promise<js.webxrLightingEstimation.XRLightProbe>;
+	function requestLightProbe(?options:js.webxrLightingEstimation.XRLightProbeInit):js.lib.Promise<js.webxrLightingEstimation.XRLightProbe>;
 	/**
 		Unhandled extended attribute NewObject
 	**/
@@ -130,6 +130,6 @@ package js.webxr;
 		From partial interface in webxr-depth-sensing.idl
 	**/
 	function resumeDepthSensing():Void;
-	function updateRenderState(?state:XRRenderStateInit = {  }):Void;
+	function updateRenderState(?state:XRRenderStateInit):Void;
 	function updateTargetFrameRate(rate:Float):js.lib.Promise<Void>;
 }

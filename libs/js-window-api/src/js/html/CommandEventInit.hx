@@ -26,7 +26,7 @@ package js.html;
 
 typedef CommandEventInit = js.dom.EventInit & {
 	@:optional
-	var source : Null<js.dom.Element> = null;
+	var source : Null<js.dom.Element>;
 	@:optional
-	var command : String = "";
+	var command : String;
 };

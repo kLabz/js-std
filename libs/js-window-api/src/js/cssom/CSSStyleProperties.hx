@@ -25,5 +25,5 @@
 package js.cssom;
 
 @:native("CSSStyleProperties") extern class CSSStyleProperties extends CSSStyleDeclaration {
-	var cssFloat : CSSOMString;
+	var cssFloat : String;
 }

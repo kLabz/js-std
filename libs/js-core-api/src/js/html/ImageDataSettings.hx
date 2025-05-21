@@ -28,5 +28,5 @@ typedef ImageDataSettings = {
 	@:optional
 	var colorSpace : PredefinedColorSpace;
 	@:optional
-	var pixelFormat : ImageDataPixelFormat = "rgba-unorm8";
+	var pixelFormat : ImageDataPixelFormat;
 };

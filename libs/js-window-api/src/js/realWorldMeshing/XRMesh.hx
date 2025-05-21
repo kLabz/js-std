@@ -29,8 +29,8 @@ package js.realWorldMeshing;
 		Unhandled extended attribute SameObject
 	**/
 	var meshSpace(default, null) : js.webxr.XRSpace;
-	var vertices(default, null) : Array<Float32Array>;
-	var indices(default, null) : Uint32Array;
+	var vertices(default, null) : Array<js.lib.Float32Array>;
+	var indices(default, null) : js.lib.Uint32Array;
 	var lastChangedTime(default, null) : js.hrTime.DOMHighResTimeStamp;
 	var semanticLabel(default, null) : Null<String>;
 }

@@ -26,5 +26,5 @@ package js.pointerlock;
 
 typedef PointerLockOptions = {
 	@:optional
-	var unadjustedMovement : Bool = false;
+	var unadjustedMovement : Bool;
 };

@@ -26,5 +26,5 @@ package js.webcodecsAacCodecRegistration;
 
 typedef AacEncoderConfig = {
 	@:optional
-	var format : AacBitstreamFormat = "aac";
+	var format : AacBitstreamFormat;
 };

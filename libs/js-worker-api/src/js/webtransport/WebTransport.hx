@@ -46,10 +46,10 @@ package js.webtransport;
 	var incomingBidirectionalStreams(default, null) : js.streams.ReadableStream;
 	var incomingUnidirectionalStreams(default, null) : js.streams.ReadableStream;
 	static var supportsReliableOnly(default, null) : Bool;
-	function new(url:String, ?options:WebTransportOptions = {  }):Void;
-	function close(?closeInfo:WebTransportCloseInfo = {  }):Void;
-	function createBidirectionalStream(?options:WebTransportSendStreamOptions = {  }):js.lib.Promise<WebTransportBidirectionalStream>;
+	function new(url:String, ?options:WebTransportOptions):Void;
+	function close(?closeInfo:WebTransportCloseInfo):Void;
+	function createBidirectionalStream(?options:WebTransportSendStreamOptions):js.lib.Promise<WebTransportBidirectionalStream>;
 	function createSendGroup():WebTransportSendGroup;
-	function createUnidirectionalStream(?options:WebTransportSendStreamOptions = {  }):js.lib.Promise<WebTransportSendStream>;
+	function createUnidirectionalStream(?options:WebTransportSendStreamOptions):js.lib.Promise<WebTransportSendStream>;
 	function getStats():js.lib.Promise<WebTransportConnectionStats>;
 }

@@ -25,5 +25,5 @@
 package js.trustTokenApi;
 
 enum abstract TokenVersion(String) {
-	var 1 = "1";
+	var _1 = "1";
 }

@@ -32,7 +32,7 @@ package js.html;
 	var width : String;
 	var height : String;
 	var contentDocument(default, null) : Null<js.dom.Document>;
-	var contentWindow(default, null) : Null<WindowProxy>;
+	var contentWindow(default, null) : Null<js.html.Window>;
 	var willValidate(default, null) : Bool;
 	var validity(default, null) : ValidityState;
 	var validationMessage(default, null) : String;

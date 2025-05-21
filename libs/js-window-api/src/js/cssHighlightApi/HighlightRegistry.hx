@@ -31,5 +31,5 @@ package js.cssHighlightApi;
 	/**
 		From partial interface in css-highlight-api.idl
 	**/
-	function highlightsFromPoint(x:Float, y:Float, ?options:HighlightsFromPointOptions = {  }):Array<Highlight>;
+	function highlightsFromPoint(x:Float, y:Float, ?options:HighlightsFromPointOptions):Array<Highlight>;
 }

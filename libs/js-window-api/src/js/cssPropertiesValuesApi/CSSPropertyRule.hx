@@ -25,8 +25,8 @@
 package js.cssPropertiesValuesApi;
 
 @:native("CSSPropertyRule") extern class CSSPropertyRule extends js.cssom.CSSRule {
-	var name(default, null) : CSSOMString;
-	var syntax(default, null) : CSSOMString;
+	var name(default, null) : String;
+	var syntax(default, null) : String;
 	var inherits(default, null) : Bool;
-	var initialValue(default, null) : Null<CSSOMString>;
+	var initialValue(default, null) : Null<String>;
 }

@@ -25,14 +25,11 @@
 package js.serial;
 
 /**
+	TODO member requestPort (?options:SerialPortRequestOptions) -> js.lib.Promise<SerialPort> exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("Serial") extern class Serial extends js.dom.EventTarget {
 	var onconnect : js.html.EventHandler;
 	var ondisconnect : js.html.EventHandler;
 	function getPorts():js.lib.Promise<Array<SerialPort>>;
-	/**
-		Unhandled extended attribute Exposed
-	**/
-	function requestPort(?options:SerialPortRequestOptions = {  }):js.lib.Promise<SerialPort>;
 }

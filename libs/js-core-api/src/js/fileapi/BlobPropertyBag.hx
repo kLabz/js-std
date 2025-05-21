@@ -26,7 +26,7 @@ package js.fileapi;
 
 typedef BlobPropertyBag = {
 	@:optional
-	var type : String = "";
+	var type : String;
 	@:optional
-	var endings : EndingType = "transparent";
+	var endings : EndingType;
 };

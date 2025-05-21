@@ -33,5 +33,5 @@ package js.documentPictureInPicture;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function requestWindow(?options:DocumentPictureInPictureOptions = {  }):js.lib.Promise<js.html.Window>;
+	function requestWindow(?options:DocumentPictureInPictureOptions):js.lib.Promise<js.html.Window>;
 }

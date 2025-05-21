@@ -30,5 +30,5 @@ package js.cssom;
 	**/
 	var cssRules(default, null) : CSSRuleList;
 	function deleteRule(index:Int):Void;
-	function insertRule(rule:CSSOMString, ?index:Int = 0):Int;
+	function insertRule(rule:String, ?index:Int = 0):Int;
 }

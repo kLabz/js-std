@@ -26,9 +26,9 @@ package js.html;
 
 typedef WorkerOptions = {
 	@:optional
-	var type : WorkerType = "classic";
+	var type : WorkerType;
 	@:optional
-	var credentials : js.fetch.RequestCredentials = "same-origin";
+	var credentials : js.fetch.RequestCredentials;
 	@:optional
-	var name : String = "";
+	var name : String;
 };

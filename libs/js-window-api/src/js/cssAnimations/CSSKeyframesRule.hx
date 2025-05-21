@@ -25,10 +25,10 @@
 package js.cssAnimations;
 
 @:native("CSSKeyframesRule") extern class CSSKeyframesRule extends js.cssom.CSSRule implements ArrayAccess<CSSKeyframeRule> {
-	var name : CSSOMString;
+	var name : String;
 	var cssRules(default, null) : js.cssom.CSSRuleList;
 	var length(default, null) : Int;
-	function appendRule(rule:CSSOMString):Void;
-	function deleteRule(select:CSSOMString):Void;
-	function findRule(select:CSSOMString):Null<CSSKeyframeRule>;
+	function appendRule(rule:String):Void;
+	function deleteRule(select:String):Void;
+	function findRule(select:String):Null<CSSKeyframeRule>;
 }

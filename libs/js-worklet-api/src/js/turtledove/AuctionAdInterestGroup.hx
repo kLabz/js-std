@@ -26,7 +26,7 @@ package js.turtledove;
 
 typedef AuctionAdInterestGroup = GenerateBidInterestGroup & {
 	@:optional
-	var priority : Float = 0.0;
+	var priority : Float;
 	@:optional
 	var prioritySignalsOverrides : haxe.DynamicAccess<Float>;
 	var lifetimeMs : Float;

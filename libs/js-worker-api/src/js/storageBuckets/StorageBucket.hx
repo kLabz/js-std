@@ -25,6 +25,7 @@
 package js.storageBuckets;
 
 /**
+	TODO member persist () -> js.lib.Promise<Bool> exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("StorageBucket") extern class StorageBucket {
@@ -40,10 +41,6 @@ package js.storageBuckets;
 	function estimate():js.lib.Promise<js.storage.StorageEstimate>;
 	function expires():js.lib.Promise<Null<js.hrTime.DOMHighResTimeStamp>>;
 	function getDirectory():js.lib.Promise<js.fs.FileSystemDirectoryHandle>;
-	/**
-		Unhandled extended attribute Exposed
-	**/
-	function persist():js.lib.Promise<Bool>;
 	function persisted():js.lib.Promise<Bool>;
 	function setExpires(expires:js.hrTime.DOMHighResTimeStamp):js.lib.Promise<Void>;
 }

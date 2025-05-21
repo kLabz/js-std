@@ -26,5 +26,5 @@ package js.fs;
 
 typedef FileSystemGetFileOptions = {
 	@:optional
-	var create : Bool = false;
+	var create : Bool;
 };

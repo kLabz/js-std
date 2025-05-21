@@ -28,5 +28,5 @@ typedef WaveShaperOptions = AudioNodeOptions & {
 	@:optional
 	var curve : Array<Float>;
 	@:optional
-	var oversample : OverSampleType = "none";
+	var oversample : OverSampleType;
 };

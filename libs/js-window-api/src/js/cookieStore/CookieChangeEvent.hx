@@ -36,5 +36,5 @@ package js.cookieStore;
 		Unhandled extended attribute SameObject
 	**/
 	var deleted(default, null) : Array<CookieListItem>;
-	function new(type:String, ?eventInitDict:CookieChangeEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:CookieChangeEventInit):Void;
 }

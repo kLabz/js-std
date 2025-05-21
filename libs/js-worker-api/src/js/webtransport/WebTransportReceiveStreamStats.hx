@@ -26,7 +26,7 @@ package js.webtransport;
 
 typedef WebTransportReceiveStreamStats = {
 	@:optional
-	var bytesReceived : Float = 0;
+	var bytesReceived : Float;
 	@:optional
-	var bytesRead : Float = 0;
+	var bytesRead : Float;
 };

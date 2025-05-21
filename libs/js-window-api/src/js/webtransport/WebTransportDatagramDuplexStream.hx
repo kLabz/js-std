@@ -34,5 +34,5 @@ package js.webtransport;
 	var outgoingMaxAge : Null<Float>;
 	var incomingHighWaterMark : Float;
 	var outgoingHighWaterMark : Float;
-	function createWritable(?options:WebTransportSendOptions = {  }):WebTransportDatagramsWritable;
+	function createWritable(?options:WebTransportSendOptions):WebTransportDatagramsWritable;
 }

@@ -29,14 +29,14 @@ typedef DocumentPictureInPictureOptions = {
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var width : Float = 0;
+	var width : Float;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var height : Float = 0;
+	var height : Float;
 	@:optional
-	var disallowReturnToOpener : Bool = false;
+	var disallowReturnToOpener : Bool;
 	@:optional
-	var preferInitialWindowPlacement : Bool = false;
+	var preferInitialWindowPlacement : Bool;
 };

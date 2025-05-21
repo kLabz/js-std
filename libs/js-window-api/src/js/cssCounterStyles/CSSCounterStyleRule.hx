@@ -25,15 +25,15 @@
 package js.cssCounterStyles;
 
 @:native("CSSCounterStyleRule") extern class CSSCounterStyleRule extends js.cssom.CSSRule {
-	var name : CSSOMString;
-	var system : CSSOMString;
-	var symbols : CSSOMString;
-	var additiveSymbols : CSSOMString;
-	var negative : CSSOMString;
-	var prefix : CSSOMString;
-	var suffix : CSSOMString;
-	var range : CSSOMString;
-	var pad : CSSOMString;
-	var speakAs : CSSOMString;
-	var fallback : CSSOMString;
+	var name : String;
+	var system : String;
+	var symbols : String;
+	var additiveSymbols : String;
+	var negative : String;
+	var prefix : String;
+	var suffix : String;
+	var range : String;
+	var pad : String;
+	var speakAs : String;
+	var fallback : String;
 }

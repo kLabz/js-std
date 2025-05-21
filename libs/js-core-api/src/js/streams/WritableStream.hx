@@ -29,7 +29,7 @@ package js.streams;
 **/
 @:native("WritableStream") extern class WritableStream {
 	var locked(default, null) : Bool;
-	function new(?underlyingSink:{ }, ?strategy:QueuingStrategy = {  }):Void;
+	function new(?underlyingSink:{ }, ?strategy:QueuingStrategy):Void;
 	function abort(?reason:Any):js.lib.Promise<Void>;
 	function close():js.lib.Promise<Void>;
 	function getWriter():WritableStreamDefaultWriter;

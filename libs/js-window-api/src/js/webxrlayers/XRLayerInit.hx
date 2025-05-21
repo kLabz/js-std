@@ -27,17 +27,17 @@ package js.webxrlayers;
 typedef XRLayerInit = {
 	var space : js.webxr.XRSpace;
 	@:optional
-	var colorFormat : js.webgl1.GLenum = 0x1908;
+	var colorFormat : js.webgl1.GLenum;
 	@:optional
 	var depthFormat : Null<js.webgl1.GLenum>;
 	@:optional
-	var mipLevels : Int = 1;
+	var mipLevels : Int;
 	var viewPixelWidth : Int;
 	var viewPixelHeight : Int;
 	@:optional
-	var layout : XRLayerLayout = "mono";
+	var layout : XRLayerLayout;
 	@:optional
-	var isStatic : Bool = false;
+	var isStatic : Bool;
 	@:optional
-	var clearOnAccess : Bool = true;
+	var clearOnAccess : Bool;
 };

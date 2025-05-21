@@ -26,9 +26,10 @@ package js.cssomView;
 
 typedef ScrollIntoViewOptions = ScrollOptions & {
 	@:optional
-	var block : ScrollLogicalPosition = "start";
+	var block : ScrollLogicalPosition;
 	@:optional
-	var inline : ScrollLogicalPosition = "nearest";
+	@:native("inline")
+	var inline_ : ScrollLogicalPosition;
 	@:optional
-	var container : ScrollIntoViewContainer = "all";
+	var container : ScrollIntoViewContainer;
 };

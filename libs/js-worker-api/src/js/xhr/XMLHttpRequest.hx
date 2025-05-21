@@ -24,6 +24,9 @@
 
 package js.xhr;
 
+/**
+	TODO attribute responseXML Null<js.dom.Document> exposed for [Window]
+**/
 @:native("XMLHttpRequest") extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
 	var onreadystatechange : js.html.EventHandler;
 	static inline var UNSENT : Int = 0;
@@ -44,10 +47,6 @@ package js.xhr;
 	var responseType : XMLHttpRequestResponseType;
 	var response(default, null) : Any;
 	var responseText(default, null) : String;
-	/**
-		Unhandled extended attribute Exposed
-	**/
-	var responseXML(default, null) : Null<js.dom.Document>;
 	function new():Void;
 	function abort():Void;
 	function getAllResponseHeaders():String;

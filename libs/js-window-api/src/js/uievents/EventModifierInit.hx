@@ -26,31 +26,31 @@ package js.uievents;
 
 typedef EventModifierInit = UIEventInit & {
 	@:optional
-	var ctrlKey : Bool = false;
+	var ctrlKey : Bool;
 	@:optional
-	var shiftKey : Bool = false;
+	var shiftKey : Bool;
 	@:optional
-	var altKey : Bool = false;
+	var altKey : Bool;
 	@:optional
-	var metaKey : Bool = false;
+	var metaKey : Bool;
 	@:optional
-	var modifierAltGraph : Bool = false;
+	var modifierAltGraph : Bool;
 	@:optional
-	var modifierCapsLock : Bool = false;
+	var modifierCapsLock : Bool;
 	@:optional
-	var modifierFn : Bool = false;
+	var modifierFn : Bool;
 	@:optional
-	var modifierFnLock : Bool = false;
+	var modifierFnLock : Bool;
 	@:optional
-	var modifierHyper : Bool = false;
+	var modifierHyper : Bool;
 	@:optional
-	var modifierNumLock : Bool = false;
+	var modifierNumLock : Bool;
 	@:optional
-	var modifierScrollLock : Bool = false;
+	var modifierScrollLock : Bool;
 	@:optional
-	var modifierSuper : Bool = false;
+	var modifierSuper : Bool;
 	@:optional
-	var modifierSymbol : Bool = false;
+	var modifierSymbol : Bool;
 	@:optional
-	var modifierSymbolLock : Bool = false;
+	var modifierSymbolLock : Bool;
 };

@@ -70,7 +70,7 @@ package js.uievents;
 		From partial interface in pointerlock.idl
 	**/
 	var movementY(default, null) : Float;
-	function new(type:String, ?eventInitDict:MouseEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:MouseEventInit):Void;
 	function getModifierState(keyArg:String):Bool;
 	/**
 		From partial interface in uievents.idl

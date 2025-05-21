@@ -26,5 +26,5 @@ package js.webgpu;
 
 typedef GPUSamplerBindingLayout = {
 	@:optional
-	var type : GPUSamplerBindingType = "filtering";
+	var type : GPUSamplerBindingType;
 };

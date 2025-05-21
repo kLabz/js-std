@@ -26,7 +26,7 @@ package js.webnn;
 
 typedef MLTensorDescriptor = MLOperandDescriptor & {
 	@:optional
-	var readable : Bool = false;
+	var readable : Bool;
 	@:optional
-	var writable : Bool = false;
+	var writable : Bool;
 };

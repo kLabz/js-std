@@ -26,11 +26,11 @@ package js.webtransport;
 
 typedef WebTransportDatagramStats = {
 	@:optional
-	var droppedIncoming : Float = 0;
+	var droppedIncoming : Float;
 	@:optional
-	var expiredIncoming : Float = 0;
+	var expiredIncoming : Float;
 	@:optional
-	var expiredOutgoing : Float = 0;
+	var expiredOutgoing : Float;
 	@:optional
-	var lostOutgoing : Float = 0;
+	var lostOutgoing : Float;
 };

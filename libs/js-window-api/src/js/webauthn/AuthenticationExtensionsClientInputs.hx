@@ -28,9 +28,9 @@ typedef AuthenticationExtensionsClientInputs = {
 	@:optional
 	var credentialProtectionPolicy : String;
 	@:optional
-	var enforceCredentialProtectionPolicy : Bool = false;
+	var enforceCredentialProtectionPolicy : Bool;
 	@:optional
-	var credBlob : ArrayBuffer;
+	var credBlob : js.lib.ArrayBuffer;
 	@:optional
 	var getCredBlob : Bool;
 	@:optional

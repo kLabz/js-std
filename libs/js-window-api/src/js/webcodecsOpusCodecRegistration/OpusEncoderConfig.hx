@@ -26,16 +26,16 @@ package js.webcodecsOpusCodecRegistration;
 
 typedef OpusEncoderConfig = {
 	@:optional
-	var format : OpusBitstreamFormat = "opus";
+	var format : OpusBitstreamFormat;
 	@:optional
-	var signal : OpusSignal = "auto";
+	var signal : OpusSignal;
 	@:optional
-	var application : OpusApplication = "audio";
+	var application : OpusApplication;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var frameDuration : Float = 20000;
+	var frameDuration : Float;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/
@@ -45,9 +45,9 @@ typedef OpusEncoderConfig = {
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var packetlossperc : Int = 0;
+	var packetlossperc : Int;
 	@:optional
-	var useinbandfec : Bool = false;
+	var useinbandfec : Bool;
 	@:optional
-	var usedtx : Bool = false;
+	var usedtx : Bool;
 };

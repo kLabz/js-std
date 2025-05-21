@@ -25,10 +25,10 @@
 package js.webgpu;
 
 enum abstract GPUTextureViewDimension(String) {
-	var 1D = "1d";
-	var 2D = "2d";
-	var 2D_ARRAY = "2d-array";
+	var _1D = "1d";
+	var _2D = "2d";
+	var _2D_ARRAY = "2d-array";
 	var CUBE = "cube";
 	var CUBE_ARRAY = "cube-array";
-	var 3D = "3d";
+	var _3D = "3d";
 }

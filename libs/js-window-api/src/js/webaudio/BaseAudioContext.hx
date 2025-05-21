@@ -51,9 +51,9 @@ package js.webaudio;
 	function createIIRFilter(feedforward:Array<Float>, feedback:Array<Float>):IIRFilterNode;
 	function createOscillator():OscillatorNode;
 	function createPanner():PannerNode;
-	function createPeriodicWave(real:Array<Float>, imag:Array<Float>, ?constraints:PeriodicWaveConstraints = {  }):PeriodicWave;
+	function createPeriodicWave(real:Array<Float>, imag:Array<Float>, ?constraints:PeriodicWaveConstraints):PeriodicWave;
 	function createScriptProcessor(?bufferSize:Int = 0, ?numberOfInputChannels:Int = 2, ?numberOfOutputChannels:Int = 2):ScriptProcessorNode;
 	function createStereoPanner():StereoPannerNode;
 	function createWaveShaper():WaveShaperNode;
-	function decodeAudioData(audioData:ArrayBuffer, ?successCallback:Null<DecodeSuccessCallback>, ?errorCallback:Null<DecodeErrorCallback>):js.lib.Promise<AudioBuffer>;
+	function decodeAudioData(audioData:js.lib.ArrayBuffer, ?successCallback:Null<DecodeSuccessCallback>, ?errorCallback:Null<DecodeErrorCallback>):js.lib.Promise<AudioBuffer>;
 }

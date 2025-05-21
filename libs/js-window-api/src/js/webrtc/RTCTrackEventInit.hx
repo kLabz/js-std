@@ -28,6 +28,6 @@ typedef RTCTrackEventInit = js.dom.EventInit & {
 	var receiver : RTCRtpReceiver;
 	var track : js.mediacaptureStreams.MediaStreamTrack;
 	@:optional
-	var streams : Array<js.mediacaptureStreams.MediaStream> = [];
+	var streams : Array<js.mediacaptureStreams.MediaStream>;
 	var transceiver : RTCRtpTransceiver;
 };

@@ -33,7 +33,7 @@ typedef AudioDataCopyToOptions = {
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var frameOffset : Int = 0;
+	var frameOffset : Int;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/

@@ -27,7 +27,7 @@ package js.html;
 @:native("CloseWatcher") extern class CloseWatcher extends js.dom.EventTarget {
 	var oncancel : EventHandler;
 	var onclose : EventHandler;
-	function new(?options:CloseWatcherOptions = {  }):Void;
+	function new(?options:CloseWatcherOptions):Void;
 	function close():Void;
 	function destroy():Void;
 	function requestClose():Void;

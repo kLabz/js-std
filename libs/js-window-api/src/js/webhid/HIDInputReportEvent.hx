@@ -33,6 +33,6 @@ package js.webhid;
 	**/
 	var device(default, null) : HIDDevice;
 	var reportId(default, null) : Int;
-	var data(default, null) : DataView;
+	var data(default, null) : js.lib.DataView;
 	function new(type:String, eventInitDict:HIDInputReportEventInit):Void;
 }

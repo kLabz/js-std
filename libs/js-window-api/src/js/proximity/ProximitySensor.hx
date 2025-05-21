@@ -31,5 +31,5 @@ package js.proximity;
 	var distance(default, null) : Null<Float>;
 	var max(default, null) : Null<Float>;
 	var near(default, null) : Null<Bool>;
-	function new(?sensorOptions:js.genericSensor.SensorOptions = {  }):Void;
+	function new(?sensorOptions:js.genericSensor.SensorOptions):Void;
 }

@@ -28,9 +28,9 @@ package js.pushApi;
 	Unhandled extended attribute SecureContext
 **/
 @:native("PushMessageData") extern class PushMessageData {
-	function arrayBuffer():ArrayBuffer;
+	function arrayBuffer():js.lib.ArrayBuffer;
 	function blob():js.fileapi.Blob;
-	function bytes():Uint8Array;
+	function bytes():js.lib.Uint8Array;
 	function json():Any;
 	function text():String;
 }

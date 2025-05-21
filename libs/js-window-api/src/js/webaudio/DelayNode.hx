@@ -26,5 +26,5 @@ package js.webaudio;
 
 @:native("DelayNode") extern class DelayNode extends AudioNode {
 	var delayTime(default, null) : AudioParam;
-	function new(context:BaseAudioContext, ?options:DelayOptions = {  }):Void;
+	function new(context:BaseAudioContext, ?options:DelayOptions):Void;
 }

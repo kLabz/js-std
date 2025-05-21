@@ -29,10 +29,10 @@ typedef FlacEncoderConfig = {
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var blockSize : Int = 0;
+	var blockSize : Int;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var compressLevel : Int = 5;
+	var compressLevel : Int;
 };

@@ -26,11 +26,11 @@ package js.webxrlayers;
 
 typedef XRQuadLayerInit = XRLayerInit & {
 	@:optional
-	var textureType : XRTextureType = "texture";
+	var textureType : XRTextureType;
 	@:optional
 	var transform : Null<js.webxr.XRRigidTransform>;
 	@:optional
-	var width : Float = 1.0;
+	var width : Float;
 	@:optional
-	var height : Float = 1.0;
+	var height : Float;
 };

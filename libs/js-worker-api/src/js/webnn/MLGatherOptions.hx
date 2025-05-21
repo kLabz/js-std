@@ -29,5 +29,5 @@ typedef MLGatherOptions = MLOperatorOptions & {
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var axis : Int = 0;
+	var axis : Int;
 };

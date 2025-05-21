@@ -28,6 +28,6 @@ package js.streams;
 	var byobRequest(default, null) : Null<ReadableStreamBYOBRequest>;
 	var desiredSize(default, null) : Null<Float>;
 	function close():Void;
-	function enqueue(chunk:js.webidl.ArrayBufferView):Void;
+	function enqueue(chunk:js.lib.ArrayBufferView):Void;
 	function error(?e:Any):Void;
 }

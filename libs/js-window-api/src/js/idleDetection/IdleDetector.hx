@@ -25,6 +25,7 @@
 package js.idleDetection;
 
 /**
+	TODO member requestPermission () -> js.lib.Promise<js.permissions.PermissionState> exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("IdleDetector") extern class IdleDetector extends js.dom.EventTarget {
@@ -32,9 +33,5 @@ package js.idleDetection;
 	var screenState(default, null) : Null<ScreenIdleState>;
 	var onchange : js.html.EventHandler;
 	function new():Void;
-	/**
-		Unhandled extended attribute Exposed
-	**/
-	function requestPermission():js.lib.Promise<js.permissions.PermissionState>;
-	function start(?options:IdleOptions = {  }):js.lib.Promise<Void>;
+	function start(?options:IdleOptions):js.lib.Promise<Void>;
 }

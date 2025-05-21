@@ -24,13 +24,12 @@
 
 package js.svg;
 
+/**
+	TODO special=setter (index:Int, newItem:js.geometry.DOMPoint) -> Void
+**/
 @:native("SVGPointList") extern class SVGPointList {
 	var length(default, null) : Int;
 	var numberOfItems(default, null) : Int;
-	/**
-		(special = setter)
-	**/
-	function (index:Int, newItem:js.geometry.DOMPoint):Void;
 	function appendItem(newItem:js.geometry.DOMPoint):js.geometry.DOMPoint;
 	function clear():Void;
 	function getItem(index:Int):js.geometry.DOMPoint;

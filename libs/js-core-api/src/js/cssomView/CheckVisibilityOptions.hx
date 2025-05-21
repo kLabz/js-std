@@ -26,13 +26,13 @@ package js.cssomView;
 
 typedef CheckVisibilityOptions = {
 	@:optional
-	var checkOpacity : Bool = false;
+	var checkOpacity : Bool;
 	@:optional
-	var checkVisibilityCSS : Bool = false;
+	var checkVisibilityCSS : Bool;
 	@:optional
-	var contentVisibilityAuto : Bool = false;
+	var contentVisibilityAuto : Bool;
 	@:optional
-	var opacityProperty : Bool = false;
+	var opacityProperty : Bool;
 	@:optional
-	var visibilityProperty : Bool = false;
+	var visibilityProperty : Bool;
 };

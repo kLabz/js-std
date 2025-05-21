@@ -31,17 +31,17 @@ typedef GPUDepthStencilState = {
 	@:optional
 	var depthCompare : GPUCompareFunction;
 	@:optional
-	var stencilFront : GPUStencilFaceState = {  };
+	var stencilFront : GPUStencilFaceState;
 	@:optional
-	var stencilBack : GPUStencilFaceState = {  };
+	var stencilBack : GPUStencilFaceState;
 	@:optional
-	var stencilReadMask : GPUStencilValue = 0xFFFFFFFF;
+	var stencilReadMask : GPUStencilValue;
 	@:optional
-	var stencilWriteMask : GPUStencilValue = 0xFFFFFFFF;
+	var stencilWriteMask : GPUStencilValue;
 	@:optional
-	var depthBias : GPUDepthBias = 0;
+	var depthBias : GPUDepthBias;
 	@:optional
-	var depthBiasSlopeScale : Float = 0;
+	var depthBiasSlopeScale : Float;
 	@:optional
-	var depthBiasClamp : Float = 0;
+	var depthBiasClamp : Float;
 };

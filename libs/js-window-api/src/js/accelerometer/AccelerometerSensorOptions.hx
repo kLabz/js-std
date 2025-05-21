@@ -26,5 +26,5 @@ package js.accelerometer;
 
 typedef AccelerometerSensorOptions = js.genericSensor.SensorOptions & {
 	@:optional
-	var referenceFrame : AccelerometerLocalCoordinateSystem = "device";
+	var referenceFrame : AccelerometerLocalCoordinateSystem;
 };

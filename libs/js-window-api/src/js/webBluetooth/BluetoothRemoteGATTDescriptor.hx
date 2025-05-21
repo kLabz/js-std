@@ -33,7 +33,7 @@ package js.webBluetooth;
 	**/
 	var characteristic(default, null) : BluetoothRemoteGATTCharacteristic;
 	var uuid(default, null) : UUID;
-	var value(default, null) : Null<DataView>;
-	function readValue():js.lib.Promise<DataView>;
+	var value(default, null) : Null<js.lib.DataView>;
+	function readValue():js.lib.Promise<js.lib.DataView>;
 	function writeValue(value:js.webidl.BufferSource):js.lib.Promise<Void>;
 }

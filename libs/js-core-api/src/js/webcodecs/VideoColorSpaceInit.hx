@@ -26,11 +26,11 @@ package js.webcodecs;
 
 typedef VideoColorSpaceInit = {
 	@:optional
-	var primaries : Null<VideoColorPrimaries> = null;
+	var primaries : Null<VideoColorPrimaries>;
 	@:optional
-	var transfer : Null<VideoTransferCharacteristics> = null;
+	var transfer : Null<VideoTransferCharacteristics>;
 	@:optional
-	var matrix : Null<VideoMatrixCoefficients> = null;
+	var matrix : Null<VideoMatrixCoefficients>;
 	@:optional
-	var fullRange : Null<Bool> = null;
+	var fullRange : Null<Bool>;
 };

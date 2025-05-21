@@ -29,7 +29,7 @@ package js.svgPaths;
 	/**
 		From interface mixin SVGPathData
 	**/
-	function getPathData(?settings:SVGPathDataSettings = {  }):Array<SVGPathSegment>;
+	function getPathData(?settings:SVGPathDataSettings):Array<SVGPathSegment>;
 	function getPathSegmentAtLength(distance:Float):Null<SVGPathSegment>;
 	function getPointAtLength(distance:Float):js.geometry.DOMPoint;
 	function getTotalLength():Float;

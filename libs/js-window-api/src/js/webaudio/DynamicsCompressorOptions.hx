@@ -26,13 +26,13 @@ package js.webaudio;
 
 typedef DynamicsCompressorOptions = AudioNodeOptions & {
 	@:optional
-	var attack : Float = 0.003;
+	var attack : Float;
 	@:optional
-	var knee : Float = 30;
+	var knee : Float;
 	@:optional
-	var ratio : Float = 12;
+	var ratio : Float;
 	@:optional
-	var release : Float = 0.25;
+	var release : Float;
 	@:optional
-	var threshold : Float = -24;
+	var threshold : Float;
 };

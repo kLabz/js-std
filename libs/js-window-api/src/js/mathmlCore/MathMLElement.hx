@@ -52,14 +52,6 @@ package js.mathmlCore;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onsnapchanged : js.html.EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onsnapchanging : js.html.EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
 	var ontransitionrun : js.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -73,6 +65,14 @@ package js.mathmlCore;
 		From interface mixin GlobalEventHandlers
 	**/
 	var ontransitioncancel : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsnapchanged : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsnapchanging : js.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -476,5 +476,5 @@ package js.mathmlCore;
 	/**
 		From interface mixin HTMLOrSVGElement
 	**/
-	function focus(?options:js.html.FocusOptions = {  }):Void;
+	function focus(?options:js.html.FocusOptions):Void;
 }

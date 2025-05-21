@@ -28,5 +28,5 @@ typedef ReportingObserverOptions = {
 	@:optional
 	var types : Array<String>;
 	@:optional
-	var buffered : Bool = false;
+	var buffered : Bool;
 };

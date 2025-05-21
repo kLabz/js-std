@@ -26,11 +26,11 @@ package js.webaudio;
 
 typedef OscillatorOptions = AudioNodeOptions & {
 	@:optional
-	var type : OscillatorType = "sine";
+	var type : OscillatorType;
 	@:optional
-	var frequency : Float = 440;
+	var frequency : Float;
 	@:optional
-	var detune : Float = 0;
+	var detune : Float;
 	@:optional
 	var periodicWave : PeriodicWave;
 };

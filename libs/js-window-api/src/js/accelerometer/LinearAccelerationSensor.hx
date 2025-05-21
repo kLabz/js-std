@@ -28,5 +28,5 @@ package js.accelerometer;
 	Unhandled extended attribute SecureContext
 **/
 @:native("LinearAccelerationSensor") extern class LinearAccelerationSensor extends Accelerometer {
-	function new(?options:AccelerometerSensorOptions = {  }):Void;
+	function new(?options:AccelerometerSensorOptions):Void;
 }

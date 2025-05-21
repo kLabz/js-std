@@ -26,7 +26,7 @@ package js.paymentRequest;
 
 typedef PaymentMethodChangeEventInit = PaymentRequestUpdateEventInit & {
 	@:optional
-	var methodName : String = "";
+	var methodName : String;
 	@:optional
-	var methodDetails : Null<{ }> = null;
+	var methodDetails : Null<{ }>;
 };

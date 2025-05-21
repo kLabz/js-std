@@ -28,6 +28,6 @@ package js.webxrDepthSensing;
 	/**
 		Unhandled extended attribute SameObject
 	**/
-	var data(default, null) : ArrayBuffer;
+	var data(default, null) : js.lib.ArrayBuffer;
 	function getDepthInMeters(x:Float, y:Float):Float;
 }

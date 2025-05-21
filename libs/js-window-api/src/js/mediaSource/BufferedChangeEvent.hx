@@ -33,5 +33,5 @@ package js.mediaSource;
 		Unhandled extended attribute SameObject
 	**/
 	var removedRanges(default, null) : js.html.TimeRanges;
-	function new(type:String, ?eventInitDict:BufferedChangeEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:BufferedChangeEventInit):Void;
 }

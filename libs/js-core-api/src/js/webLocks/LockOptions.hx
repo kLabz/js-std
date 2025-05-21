@@ -26,11 +26,11 @@ package js.webLocks;
 
 typedef LockOptions = {
 	@:optional
-	var mode : LockMode = "exclusive";
+	var mode : LockMode;
 	@:optional
-	var ifAvailable : Bool = false;
+	var ifAvailable : Bool;
 	@:optional
-	var steal : Bool = false;
+	var steal : Bool;
 	@:optional
 	var signal : js.dom.AbortSignal;
 };

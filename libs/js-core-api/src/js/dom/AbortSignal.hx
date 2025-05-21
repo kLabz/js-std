@@ -24,6 +24,9 @@
 
 package js.dom;
 
+/**
+	TODO member timeout (milliseconds:Float) -> AbortSignal exposed for [Window,Worker]
+**/
 @:native("AbortSignal") extern class AbortSignal extends EventTarget {
 	var aborted(default, null) : Bool;
 	var reason(default, null) : Any;
@@ -37,9 +40,4 @@ package js.dom;
 	**/
 	function any(signals:Array<AbortSignal>):AbortSignal;
 	function throwIfAborted():Void;
-	/**
-		Unhandled extended attribute Exposed
-		Unhandled extended attribute NewObject
-	**/
-	function timeout(milliseconds:Float):AbortSignal;
 }

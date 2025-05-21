@@ -26,7 +26,7 @@ package js.webAnimations;
 
 typedef GetAnimationsOptions = {
 	@:optional
-	var subtree : Bool = false;
+	var subtree : Bool;
 	@:optional
-	var pseudoElement : Null<CSSOMString> = null;
+	var pseudoElement : Null<String>;
 };

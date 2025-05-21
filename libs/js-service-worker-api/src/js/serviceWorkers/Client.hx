@@ -34,5 +34,5 @@ package js.serviceWorkers;
 	**/
 	var lifecycleState(default, null) : js.pageLifecycle.ClientLifecycleState;
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
-	overload function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions = {  }):Void;
+	overload function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;
 }

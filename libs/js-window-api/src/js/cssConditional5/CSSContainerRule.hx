@@ -25,6 +25,6 @@
 package js.cssConditional5;
 
 @:native("CSSContainerRule") extern class CSSContainerRule extends js.cssConditional.CSSConditionRule {
-	var containerName(default, null) : CSSOMString;
-	var containerQuery(default, null) : CSSOMString;
+	var containerName(default, null) : String;
+	var containerQuery(default, null) : String;
 }

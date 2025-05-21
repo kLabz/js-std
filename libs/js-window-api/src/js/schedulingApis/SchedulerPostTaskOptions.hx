@@ -33,5 +33,5 @@ typedef SchedulerPostTaskOptions = {
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var delay : Float = 0;
+	var delay : Float;
 };

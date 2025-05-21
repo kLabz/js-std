@@ -26,23 +26,23 @@ package js.webtransport;
 
 typedef WebTransportConnectionStats = {
 	@:optional
-	var bytesSent : Float = 0;
+	var bytesSent : Float;
 	@:optional
-	var packetsSent : Float = 0;
+	var packetsSent : Float;
 	@:optional
-	var bytesLost : Float = 0;
+	var bytesLost : Float;
 	@:optional
-	var packetsLost : Float = 0;
+	var packetsLost : Float;
 	@:optional
-	var bytesReceived : Float = 0;
+	var bytesReceived : Float;
 	@:optional
-	var packetsReceived : Float = 0;
+	var packetsReceived : Float;
 	var smoothedRtt : js.hrTime.DOMHighResTimeStamp;
 	var rttVariation : js.hrTime.DOMHighResTimeStamp;
 	var minRtt : js.hrTime.DOMHighResTimeStamp;
 	var datagrams : WebTransportDatagramStats;
 	@:optional
-	var estimatedSendRate : Null<Float> = null;
+	var estimatedSendRate : Null<Float>;
 	@:optional
-	var atSendCapacity : Bool = false;
+	var atSendCapacity : Bool;
 };

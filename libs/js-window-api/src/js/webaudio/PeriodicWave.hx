@@ -25,5 +25,5 @@
 package js.webaudio;
 
 @:native("PeriodicWave") extern class PeriodicWave {
-	function new(context:BaseAudioContext, ?options:PeriodicWaveOptions = {  }):Void;
+	function new(context:BaseAudioContext, ?options:PeriodicWaveOptions):Void;
 }

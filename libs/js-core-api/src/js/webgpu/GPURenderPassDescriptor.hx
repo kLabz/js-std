@@ -33,5 +33,5 @@ typedef GPURenderPassDescriptor = GPUObjectDescriptorBase & {
 	@:optional
 	var timestampWrites : GPURenderPassTimestampWrites;
 	@:optional
-	var maxDrawCount : GPUSize64 = 50000000;
+	var maxDrawCount : GPUSize64;
 };

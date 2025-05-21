@@ -28,5 +28,5 @@ typedef ConvolverOptions = AudioNodeOptions & {
 	@:optional
 	var buffer : Null<AudioBuffer>;
 	@:optional
-	var disableNormalization : Bool = false;
+	var disableNormalization : Bool;
 };

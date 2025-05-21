@@ -25,7 +25,7 @@
 package js.reporting;
 
 @:native("ReportingObserver") extern class ReportingObserver {
-	function new(callback:ReportingObserverCallback, ?options:ReportingObserverOptions = {  }):Void;
+	function new(callback:ReportingObserverCallback, ?options:ReportingObserverOptions):Void;
 	function disconnect():Void;
 	function observe():Void;
 	function takeRecords():ReportList;

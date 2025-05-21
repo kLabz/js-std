@@ -26,13 +26,13 @@ package js.html;
 
 typedef CanvasRenderingContext2DSettings = {
 	@:optional
-	var alpha : Bool = true;
+	var alpha : Bool;
 	@:optional
-	var desynchronized : Bool = false;
+	var desynchronized : Bool;
 	@:optional
-	var colorSpace : PredefinedColorSpace = "srgb";
+	var colorSpace : PredefinedColorSpace;
 	@:optional
-	var colorType : CanvasColorType = "unorm8";
+	var colorType : CanvasColorType;
 	@:optional
-	var willReadFrequently : Bool = false;
+	var willReadFrequently : Bool;
 };

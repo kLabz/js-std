@@ -25,7 +25,7 @@
 package js.cssAnchorPosition;
 
 @:native("CSSPositionTryRule") extern class CSSPositionTryRule extends js.cssom.CSSRule {
-	var name(default, null) : CSSOMString;
+	var name(default, null) : String;
 	/**
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute PutForwards

@@ -24,10 +24,8 @@
 
 package js.html;
 
-/**
-	TODO attribute href: special=stringifier readonly=true
-**/
 @:native("WorkerLocation") extern class WorkerLocation {
+	var href(default, null) : String;
 	var origin(default, null) : String;
 	var protocol(default, null) : String;
 	var host(default, null) : String;
@@ -36,4 +34,8 @@ package js.html;
 	var pathname(default, null) : String;
 	var search(default, null) : String;
 	var hash(default, null) : String;
+	/**
+		Returns `this.href`.
+	**/
+	function toString():String;
 }

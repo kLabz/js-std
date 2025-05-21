@@ -30,5 +30,5 @@ package js.editContext;
 	var text(default, null) : String;
 	var selectionStart(default, null) : Int;
 	var selectionEnd(default, null) : Int;
-	function new(type:String, ?options:TextUpdateEventInit = {  }):Void;
+	function new(type:String, ?options:TextUpdateEventInit):Void;
 }

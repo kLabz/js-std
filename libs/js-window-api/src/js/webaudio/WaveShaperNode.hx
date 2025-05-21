@@ -25,7 +25,7 @@
 package js.webaudio;
 
 @:native("WaveShaperNode") extern class WaveShaperNode extends AudioNode {
-	var curve : Null<Float32Array>;
+	var curve : Null<js.lib.Float32Array>;
 	var oversample : OverSampleType;
-	function new(context:BaseAudioContext, ?options:WaveShaperOptions = {  }):Void;
+	function new(context:BaseAudioContext, ?options:WaveShaperOptions):Void;
 }

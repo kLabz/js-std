@@ -28,6 +28,6 @@ package js.paymentRequest;
 	Unhandled extended attribute SecureContext
 **/
 @:native("PaymentRequestUpdateEvent") extern class PaymentRequestUpdateEvent extends js.dom.Event {
-	function new(type:String, ?eventInitDict:PaymentRequestUpdateEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:PaymentRequestUpdateEventInit):Void;
 	function updateWith(detailsPromise:js.lib.Promise<PaymentDetailsUpdate>):Void;
 }

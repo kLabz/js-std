@@ -26,11 +26,11 @@ package js.webgpu;
 
 typedef GPUStencilFaceState = {
 	@:optional
-	var compare : GPUCompareFunction = "always";
+	var compare : GPUCompareFunction;
 	@:optional
-	var failOp : GPUStencilOperation = "keep";
+	var failOp : GPUStencilOperation;
 	@:optional
-	var depthFailOp : GPUStencilOperation = "keep";
+	var depthFailOp : GPUStencilOperation;
 	@:optional
-	var passOp : GPUStencilOperation = "keep";
+	var passOp : GPUStencilOperation;
 };

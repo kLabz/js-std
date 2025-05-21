@@ -26,9 +26,9 @@ package js.screenCapture;
 
 typedef DisplayMediaStreamOptions = {
 	@:optional
-	var video : haxe.extern.EitherType<Bool, js.mediacaptureStreams.MediaTrackConstraints> = true;
+	var video : haxe.extern.EitherType<Bool, js.mediacaptureStreams.MediaTrackConstraints>;
 	@:optional
-	var audio : haxe.extern.EitherType<Bool, js.mediacaptureStreams.MediaTrackConstraints> = false;
+	var audio : haxe.extern.EitherType<Bool, js.mediacaptureStreams.MediaTrackConstraints>;
 	@:optional
 	var controller : CaptureController;
 	@:optional

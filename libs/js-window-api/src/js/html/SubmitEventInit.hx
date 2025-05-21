@@ -26,5 +26,5 @@ package js.html;
 
 typedef SubmitEventInit = js.dom.EventInit & {
 	@:optional
-	var submitter : Null<HTMLElement> = null;
+	var submitter : Null<HTMLElement>;
 };

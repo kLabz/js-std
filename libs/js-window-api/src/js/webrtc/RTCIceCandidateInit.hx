@@ -26,11 +26,11 @@ package js.webrtc;
 
 typedef RTCIceCandidateInit = {
 	@:optional
-	var candidate : String = "";
+	var candidate : String;
 	@:optional
-	var sdpMid : Null<String> = null;
+	var sdpMid : Null<String>;
 	@:optional
-	var sdpMLineIndex : Null<Int> = null;
+	var sdpMLineIndex : Null<Int>;
 	@:optional
-	var usernameFragment : Null<String> = null;
+	var usernameFragment : Null<String>;
 };

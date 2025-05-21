@@ -47,10 +47,6 @@ package js.serviceWorkers;
 	var onmessage : js.html.EventHandler;
 	var onmessageerror : js.html.EventHandler;
 	/**
-		From partial interface in background-sync.idl
-	**/
-	var onsync : js.html.EventHandler;
-	/**
 		From partial interface in background-fetch.idl
 	**/
 	var onbackgroundfetchsuccess : js.html.EventHandler;
@@ -67,9 +63,9 @@ package js.serviceWorkers;
 	**/
 	var onbackgroundfetchclick : js.html.EventHandler;
 	/**
-		From partial interface in content-index.idl
+		From partial interface in background-sync.idl
 	**/
-	var oncontentdelete : js.html.EventHandler;
+	var onsync : js.html.EventHandler;
 	/**
 		From partial interface in cookie-store.idl
 		Unhandled extended attribute SameObject
@@ -80,6 +76,10 @@ package js.serviceWorkers;
 	**/
 	var oncookiechange : js.html.EventHandler;
 	/**
+		From partial interface in content-index.idl
+	**/
+	var oncontentdelete : js.html.EventHandler;
+	/**
 		From partial interface in notifications.idl
 	**/
 	var onnotificationclick : js.html.EventHandler;
@@ -88,10 +88,6 @@ package js.serviceWorkers;
 	**/
 	var onnotificationclose : js.html.EventHandler;
 	/**
-		From partial interface in periodic-background-sync.idl
-	**/
-	var onperiodicsync : js.html.EventHandler;
-	/**
 		From partial interface in payment-handler.idl
 	**/
 	var oncanmakepayment : js.html.EventHandler;
@@ -99,6 +95,10 @@ package js.serviceWorkers;
 		From partial interface in payment-handler.idl
 	**/
 	var onpaymentrequest : js.html.EventHandler;
+	/**
+		From partial interface in periodic-background-sync.idl
+	**/
+	var onperiodicsync : js.html.EventHandler;
 	/**
 		From partial interface in push-api.idl
 	**/

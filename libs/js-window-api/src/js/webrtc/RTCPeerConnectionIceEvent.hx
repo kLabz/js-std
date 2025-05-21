@@ -27,5 +27,5 @@ package js.webrtc;
 @:native("RTCPeerConnectionIceEvent") extern class RTCPeerConnectionIceEvent extends js.dom.Event {
 	var candidate(default, null) : Null<RTCIceCandidate>;
 	var url(default, null) : Null<String>;
-	function new(type:String, ?eventInitDict:RTCPeerConnectionIceEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:RTCPeerConnectionIceEventInit):Void;
 }

@@ -34,14 +34,14 @@ package js.webBluetooth;
 	var service(default, null) : BluetoothRemoteGATTService;
 	var uuid(default, null) : UUID;
 	var properties(default, null) : BluetoothCharacteristicProperties;
-	var value(default, null) : Null<DataView>;
+	var value(default, null) : Null<js.lib.DataView>;
 	/**
 		From interface mixin CharacteristicEventHandlers
 	**/
 	var oncharacteristicvaluechanged : js.html.EventHandler;
 	function getDescriptor(descriptor:BluetoothDescriptorUUID):js.lib.Promise<BluetoothRemoteGATTDescriptor>;
 	function getDescriptors(?descriptor:BluetoothDescriptorUUID):js.lib.Promise<Array<BluetoothRemoteGATTDescriptor>>;
-	function readValue():js.lib.Promise<DataView>;
+	function readValue():js.lib.Promise<js.lib.DataView>;
 	function startNotifications():js.lib.Promise<BluetoothRemoteGATTCharacteristic>;
 	function stopNotifications():js.lib.Promise<BluetoothRemoteGATTCharacteristic>;
 	function writeValue(value:js.webidl.BufferSource):js.lib.Promise<Void>;

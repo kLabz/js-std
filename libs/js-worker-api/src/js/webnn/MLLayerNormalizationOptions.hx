@@ -32,5 +32,5 @@ typedef MLLayerNormalizationOptions = MLOperatorOptions & {
 	@:optional
 	var axes : Array<Int>;
 	@:optional
-	var epsilon : Float = 1e-5;
+	var epsilon : Float;
 };

@@ -29,5 +29,5 @@ typedef GPUProgrammableStage = {
 	@:optional
 	var entryPoint : String;
 	@:optional
-	var constants : haxe.DynamicAccess<GPUPipelineConstantValue> = {  };
+	var constants : haxe.DynamicAccess<GPUPipelineConstantValue>;
 };

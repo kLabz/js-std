@@ -28,8 +28,5 @@ package js.cssParserApi;
 	var prelude(default, null) : Array<CSSParserValue>;
 	var body(default, null) : Array<CSSParserRule>;
 	function new(prelude:Array<CSSToken>, ?body:Null<Array<CSSParserRule>>):Void;
-	/**
-		(special = stringifier)
-	**/
-	function ():Void;
+	function toString():String;
 }

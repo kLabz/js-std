@@ -26,7 +26,7 @@ package js.mediaCapabilities;
 
 typedef KeySystemTrackConfiguration = {
 	@:optional
-	var robustness : String = "";
+	var robustness : String;
 	@:optional
-	var encryptionScheme : Null<String> = null;
+	var encryptionScheme : Null<String>;
 };

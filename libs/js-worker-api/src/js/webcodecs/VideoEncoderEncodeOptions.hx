@@ -26,7 +26,7 @@ package js.webcodecs;
 
 typedef VideoEncoderEncodeOptions = {
 	@:optional
-	var keyFrame : Bool = false;
+	var keyFrame : Bool;
 	@:optional
 	var av1 : js.webcodecsAv1CodecRegistration.VideoEncoderEncodeOptionsForAv1;
 	@:optional

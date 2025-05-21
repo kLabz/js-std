@@ -26,11 +26,11 @@ package js.geometry;
 
 typedef DOMRectInit = {
 	@:optional
-	var x : Float = 0;
+	var x : Float;
 	@:optional
-	var y : Float = 0;
+	var y : Float;
 	@:optional
-	var width : Float = 0;
+	var width : Float;
 	@:optional
-	var height : Float = 0;
+	var height : Float;
 };

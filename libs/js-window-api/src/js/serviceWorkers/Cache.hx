@@ -39,19 +39,19 @@ package js.serviceWorkers;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function delete(request:js.fetch.RequestInfo, ?options:CacheQueryOptions = {  }):js.lib.Promise<Bool>;
+	function delete(request:js.fetch.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Bool>;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function keys(?request:js.fetch.RequestInfo, ?options:CacheQueryOptions = {  }):js.lib.Promise<Array<js.fetch.Request>>;
+	function keys(?request:js.fetch.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Array<js.fetch.Request>>;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function match(request:js.fetch.RequestInfo, ?options:CacheQueryOptions = {  }):js.lib.Promise<haxe.extern.EitherType<js.fetch.Response, Void>>;
+	function match(request:js.fetch.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<haxe.extern.EitherType<js.fetch.Response, Void>>;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function matchAll(?request:js.fetch.RequestInfo, ?options:CacheQueryOptions = {  }):js.lib.Promise<Array<js.fetch.Response>>;
+	function matchAll(?request:js.fetch.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Array<js.fetch.Response>>;
 	/**
 		Unhandled extended attribute NewObject
 	**/

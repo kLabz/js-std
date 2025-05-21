@@ -28,13 +28,13 @@ typedef GenerateBidInterestGroup = {
 	var owner : String;
 	var name : String;
 	@:optional
-	var enableBiddingSignalsPrioritization : Bool = false;
+	var enableBiddingSignalsPrioritization : Bool;
 	@:optional
 	var priorityVector : haxe.DynamicAccess<Float>;
 	@:optional
 	var sellerCapabilities : haxe.DynamicAccess<Array<String>>;
 	@:optional
-	var executionMode : String = "compatibility";
+	var executionMode : String;
 	@:optional
 	var biddingLogicURL : String;
 	@:optional
@@ -46,7 +46,7 @@ typedef GenerateBidInterestGroup = {
 	@:optional
 	var trustedBiddingSignalsKeys : Array<String>;
 	@:optional
-	var trustedBiddingSignalsSlotSizeMode : String = "none";
+	var trustedBiddingSignalsSlotSizeMode : String;
 	@:optional
 	var maxTrustedBiddingSignalsURLLength : Int;
 	@:optional

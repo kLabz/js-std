@@ -26,5 +26,5 @@ package js.encoding;
 
 typedef TextDecodeOptions = {
 	@:optional
-	var stream : Bool = false;
+	var stream : Bool;
 };

@@ -59,10 +59,10 @@ package js.webBluetooth;
 	var onserviceremoved : js.html.EventHandler;
 	function getAvailability():js.lib.Promise<Bool>;
 	function getDevices():js.lib.Promise<Array<BluetoothDevice>>;
-	function requestDevice(?options:RequestDeviceOptions = {  }):js.lib.Promise<BluetoothDevice>;
+	function requestDevice(?options:RequestDeviceOptions):js.lib.Promise<BluetoothDevice>;
 	/**
 		From partial interface in web-bluetooth-scanning.idl
 		Unhandled extended attribute SecureContext
 	**/
-	function requestLEScan(?options:js.webBluetoothScanning.BluetoothLEScanOptions = {  }):js.lib.Promise<js.webBluetoothScanning.BluetoothLEScan>;
+	function requestLEScan(?options:js.webBluetoothScanning.BluetoothLEScanOptions):js.lib.Promise<js.webBluetoothScanning.BluetoothLEScan>;
 }

@@ -26,11 +26,11 @@ package js.dom;
 
 @:native("EventTarget") extern class EventTarget {
 	function new():Void;
-	function addEventListener(type:String, callback:Null<EventListener>, ?options:haxe.extern.EitherType<AddEventListenerOptions, Bool> = {  }):Void;
+	function addEventListener(type:String, callback:Null<EventListener>, ?options:haxe.extern.EitherType<AddEventListenerOptions, Bool>):Void;
 	function dispatchEvent(event:Event):Bool;
-	function removeEventListener(type:String, callback:Null<EventListener>, ?options:haxe.extern.EitherType<EventListenerOptions, Bool> = {  }):Void;
+	function removeEventListener(type:String, callback:Null<EventListener>, ?options:haxe.extern.EitherType<EventListenerOptions, Bool>):Void;
 	/**
 		From partial interface in observable.idl
 	**/
-	function when(type:String, ?options:js.observable.ObservableEventListenerOptions = {  }):js.observable.Observable;
+	function when(type:String, ?options:js.observable.ObservableEventListenerOptions):js.observable.Observable;
 }

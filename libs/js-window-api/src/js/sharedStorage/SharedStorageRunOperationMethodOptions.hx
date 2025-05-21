@@ -28,9 +28,9 @@ typedef SharedStorageRunOperationMethodOptions = {
 	@:optional
 	var data : { };
 	@:optional
-	var resolveToConfig : Bool = false;
+	var resolveToConfig : Bool;
 	@:optional
-	var keepAlive : Bool = false;
+	var keepAlive : Bool;
 	@:optional
 	var privateAggregationConfig : SharedStoragePrivateAggregationConfig;
 	@:optional

@@ -26,7 +26,7 @@ package js.fileSystemAccess;
 
 typedef FilePickerAcceptType = {
 	@:optional
-	var description : String = "";
+	var description : String;
 	@:optional
 	var accept : haxe.DynamicAccess<haxe.extern.EitherType<String, Array<String>>>;
 };

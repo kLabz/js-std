@@ -26,7 +26,7 @@ package js.trustedTypes;
 
 @:native("TrustedTypePolicy") extern class TrustedTypePolicy {
 	var name(default, null) : String;
-	function createHTML(input:String, arguments:Any):TrustedHTML;
-	function createScript(input:String, arguments:Any):TrustedScript;
-	function createScriptURL(input:String, arguments:Any):TrustedScriptURL;
+	function createHTML(input:String, arguments:haxe.Rest<Any>):TrustedHTML;
+	function createScript(input:String, arguments:haxe.Rest<Any>):TrustedScript;
+	function createScriptURL(input:String, arguments:haxe.Rest<Any>):TrustedScriptURL;
 }

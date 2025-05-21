@@ -30,5 +30,5 @@ package js.html;
 	var lineno(default, null) : Int;
 	var colno(default, null) : Int;
 	var error(default, null) : Any;
-	function new(type:String, ?eventInitDict:ErrorEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:ErrorEventInit):Void;
 }

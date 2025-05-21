@@ -28,5 +28,5 @@ typedef NavigationNavigateOptions = NavigationOptions & {
 	@:optional
 	var state : Any;
 	@:optional
-	var history : NavigationHistoryBehavior = "auto";
+	var history : NavigationHistoryBehavior;
 };

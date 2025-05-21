@@ -24,4 +24,4 @@
 
 package js.webgl1;
 
-typedef Float32List = haxe.extern.EitherType<Float32Array, Array<GLfloat>>;
+typedef Float32List = haxe.extern.EitherType<js.lib.Float32Array, Array<GLfloat>>;

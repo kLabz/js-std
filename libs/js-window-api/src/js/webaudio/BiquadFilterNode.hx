@@ -30,6 +30,6 @@ package js.webaudio;
 	var detune(default, null) : AudioParam;
 	var Q(default, null) : AudioParam;
 	var gain(default, null) : AudioParam;
-	function new(context:BaseAudioContext, ?options:BiquadFilterOptions = {  }):Void;
-	function getFrequencyResponse(frequencyHz:Float32Array, magResponse:Float32Array, phaseResponse:Float32Array):Void;
+	function new(context:BaseAudioContext, ?options:BiquadFilterOptions):Void;
+	function getFrequencyResponse(frequencyHz:js.lib.Float32Array, magResponse:js.lib.Float32Array, phaseResponse:js.lib.Float32Array):Void;
 }

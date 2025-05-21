@@ -28,9 +28,9 @@ package js.wasmJsApi;
 	Unhandled extended attribute LegacyNamespace
 **/
 @:native("Memory") extern class Memory {
-	var buffer(default, null) : ArrayBuffer;
+	var buffer(default, null) : js.lib.ArrayBuffer;
 	function new(descriptor:MemoryDescriptor):Void;
 	function grow(delta:Int):Int;
-	function toFixedLengthBuffer():ArrayBuffer;
-	function toResizableBuffer():ArrayBuffer;
+	function toFixedLengthBuffer():js.lib.ArrayBuffer;
+	function toResizableBuffer():js.lib.ArrayBuffer;
 }

@@ -26,13 +26,13 @@ package js.webaudio;
 
 typedef BiquadFilterOptions = AudioNodeOptions & {
 	@:optional
-	var type : BiquadFilterType = "lowpass";
+	var type : BiquadFilterType;
 	@:optional
-	var Q : Float = 1;
+	var Q : Float;
 	@:optional
-	var detune : Float = 0;
+	var detune : Float;
 	@:optional
-	var frequency : Float = 350;
+	var frequency : Float;
 	@:optional
-	var gain : Float = 0;
+	var gain : Float;
 };

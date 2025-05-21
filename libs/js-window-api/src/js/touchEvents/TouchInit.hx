@@ -28,29 +28,29 @@ typedef TouchInit = {
 	var identifier : Int;
 	var target : js.dom.EventTarget;
 	@:optional
-	var clientX : Float = 0;
+	var clientX : Float;
 	@:optional
-	var clientY : Float = 0;
+	var clientY : Float;
 	@:optional
-	var screenX : Float = 0;
+	var screenX : Float;
 	@:optional
-	var screenY : Float = 0;
+	var screenY : Float;
 	@:optional
-	var pageX : Float = 0;
+	var pageX : Float;
 	@:optional
-	var pageY : Float = 0;
+	var pageY : Float;
 	@:optional
-	var radiusX : Float = 0;
+	var radiusX : Float;
 	@:optional
-	var radiusY : Float = 0;
+	var radiusY : Float;
 	@:optional
-	var rotationAngle : Float = 0;
+	var rotationAngle : Float;
 	@:optional
-	var force : Float = 0;
+	var force : Float;
 	@:optional
-	var altitudeAngle : Float = 0;
+	var altitudeAngle : Float;
 	@:optional
-	var azimuthAngle : Float = 0;
+	var azimuthAngle : Float;
 	@:optional
-	var touchType : TouchType = "direct";
+	var touchType : TouchType;
 };

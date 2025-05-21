@@ -7,7 +7,7 @@
   "tags": [],
   "classPath": "src",
   "dependencies": {
-    "js-core-api": "3.63.0"
+    "js-core-api": ""
   },
   "contributors": ["kLabz"]
 }

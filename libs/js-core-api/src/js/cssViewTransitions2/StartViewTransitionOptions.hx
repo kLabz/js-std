@@ -26,7 +26,7 @@ package js.cssViewTransitions2;
 
 typedef StartViewTransitionOptions = {
 	@:optional
-	var update : Null<js.cssViewTransitions.ViewTransitionUpdateCallback> = null;
+	var update : Null<js.cssViewTransitions.ViewTransitionUpdateCallback>;
 	@:optional
-	var types : Null<Array<String>> = null;
+	var types : Null<Array<String>>;
 };

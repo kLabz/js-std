@@ -40,7 +40,7 @@ typedef LayoutConstraintsOptions = {
 	@:optional
 	var blockFragmentationOffset : Float;
 	@:optional
-	var blockFragmentationType : BlockFragmentationType = "none";
+	var blockFragmentationType : BlockFragmentationType;
 	@:optional
 	var data : Any;
 };

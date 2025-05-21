@@ -38,7 +38,7 @@ package js.pointerevents;
 	var pointerType(default, null) : String;
 	var isPrimary(default, null) : Bool;
 	var persistentDeviceId(default, null) : Int;
-	function new(type:String, ?eventInitDict:PointerEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:PointerEventInit):Void;
 	/**
 		Unhandled extended attribute SecureContext
 	**/

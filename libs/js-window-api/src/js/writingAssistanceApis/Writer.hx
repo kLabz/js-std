@@ -36,13 +36,13 @@ package js.writingAssistanceApis;
 	var expectedContextLanguages(default, null) : Null<Array<String>>;
 	var outputLanguage(default, null) : Null<String>;
 	var inputQuota(default, null) : Float;
-	function availability(?options:WriterCreateCoreOptions = {  }):js.lib.Promise<Availability>;
-	function create(?options:WriterCreateOptions = {  }):js.lib.Promise<Writer>;
+	function availability(?options:WriterCreateCoreOptions):js.lib.Promise<Availability>;
+	function create(?options:WriterCreateOptions):js.lib.Promise<Writer>;
 	/**
 		From interface mixin DestroyableModel
 	**/
 	function destroy():Void;
-	function measureInputUsage(input:String, ?options:WriterWriteOptions = {  }):js.lib.Promise<Float>;
-	function write(input:String, ?options:WriterWriteOptions = {  }):js.lib.Promise<String>;
-	function writeStreaming(input:String, ?options:WriterWriteOptions = {  }):js.streams.ReadableStream;
+	function measureInputUsage(input:String, ?options:WriterWriteOptions):js.lib.Promise<Float>;
+	function write(input:String, ?options:WriterWriteOptions):js.lib.Promise<String>;
+	function writeStreaming(input:String, ?options:WriterWriteOptions):js.streams.ReadableStream;
 }

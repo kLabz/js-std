@@ -28,7 +28,7 @@ typedef PrivateToken = {
 	var version : TokenVersion;
 	var operation : OperationType;
 	@:optional
-	var refreshPolicy : RefreshPolicy = "none";
+	var refreshPolicy : RefreshPolicy;
 	@:optional
 	var issuers : Array<String>;
 };

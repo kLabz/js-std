@@ -25,8 +25,8 @@
 package js.cssColor5;
 
 @:native("CSSColorProfileRule") extern class CSSColorProfileRule extends js.cssom.CSSRule {
-	var name(default, null) : CSSOMString;
-	var src(default, null) : CSSOMString;
-	var renderingIntent(default, null) : CSSOMString;
-	var components(default, null) : CSSOMString;
+	var name(default, null) : String;
+	var src(default, null) : String;
+	var renderingIntent(default, null) : String;
+	var components(default, null) : String;
 }

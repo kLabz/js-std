@@ -25,7 +25,7 @@
 package js.fido;
 
 typedef HMACGetSecretInput = {
-	var salt1 : ArrayBuffer;
+	var salt1 : js.lib.ArrayBuffer;
 	@:optional
-	var salt2 : ArrayBuffer;
+	var salt2 : js.lib.ArrayBuffer;
 };

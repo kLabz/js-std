@@ -25,7 +25,7 @@
 package js.cssMixins;
 
 @:native("CSSFunctionRule") extern class CSSFunctionRule extends js.cssom.CSSGroupingRule {
-	var name(default, null) : CSSOMString;
-	var returnType(default, null) : CSSOMString;
+	var name(default, null) : String;
+	var returnType(default, null) : String;
 	function getParameters():Array<FunctionParameter>;
 }

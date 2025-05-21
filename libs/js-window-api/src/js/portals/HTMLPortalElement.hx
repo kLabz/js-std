@@ -32,6 +32,6 @@ package js.portals;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function activate(?options:PortalActivateOptions = {  }):js.lib.Promise<Void>;
-	function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions = {  }):Void;
+	function activate(?options:PortalActivateOptions):js.lib.Promise<Void>;
+	function postMessage(message:Any, ?options:js.html.StructuredSerializeOptions):Void;
 }

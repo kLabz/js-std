@@ -25,14 +25,11 @@
 package js.webhid;
 
 /**
+	TODO member requestDevice (options:HIDDeviceRequestOptions) -> js.lib.Promise<Array<HIDDevice>> exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("HID") extern class HID extends js.dom.EventTarget {
 	var onconnect : js.html.EventHandler;
 	var ondisconnect : js.html.EventHandler;
 	function getDevices():js.lib.Promise<Array<HIDDevice>>;
-	/**
-		Unhandled extended attribute Exposed
-	**/
-	function requestDevice(options:HIDDeviceRequestOptions):js.lib.Promise<Array<HIDDevice>>;
 }

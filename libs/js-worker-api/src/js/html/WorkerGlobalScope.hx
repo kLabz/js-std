@@ -93,16 +93,16 @@ package js.html;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	overload function createImageBitmap(image:ImageBitmapSource, ?options:ImageBitmapOptions = {  }):js.lib.Promise<ImageBitmap>;
+	overload function createImageBitmap(image:ImageBitmapSource, ?options:ImageBitmapOptions):js.lib.Promise<ImageBitmap>;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	overload function createImageBitmap(image:ImageBitmapSource, sx:Int, sy:Int, sw:Int, sh:Int, ?options:ImageBitmapOptions = {  }):js.lib.Promise<ImageBitmap>;
+	overload function createImageBitmap(image:ImageBitmapSource, sx:Int, sy:Int, sw:Int, sh:Int, ?options:ImageBitmapOptions):js.lib.Promise<ImageBitmap>;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function fetch(input:js.fetch.RequestInfo, ?init:js.fetch.RequestInit = {  }):js.lib.Promise<js.fetch.Response>;
-	function importScripts(urls:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>):Void;
+	function fetch(input:js.fetch.RequestInfo, ?init:js.fetch.RequestInit):js.lib.Promise<js.fetch.Response>;
+	function importScripts(urls:haxe.Rest<haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>>):Void;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
@@ -114,13 +114,13 @@ package js.html;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:Any):Int;
+	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:Any):Int;
+	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function structuredClone(value:Any, ?options:StructuredSerializeOptions = {  }):Any;
+	function structuredClone(value:Any, ?options:StructuredSerializeOptions):Any;
 }

@@ -35,9 +35,9 @@ package js.fs;
 	/**
 		From partial interface in file-system-access.idl
 	**/
-	function queryPermission(?descriptor:js.fileSystemAccess.FileSystemHandlePermissionDescriptor = {  }):js.lib.Promise<js.permissions.PermissionState>;
+	function queryPermission(?descriptor:js.fileSystemAccess.FileSystemHandlePermissionDescriptor):js.lib.Promise<js.permissions.PermissionState>;
 	/**
 		From partial interface in file-system-access.idl
 	**/
-	function requestPermission(?descriptor:js.fileSystemAccess.FileSystemHandlePermissionDescriptor = {  }):js.lib.Promise<js.permissions.PermissionState>;
+	function requestPermission(?descriptor:js.fileSystemAccess.FileSystemHandlePermissionDescriptor):js.lib.Promise<js.permissions.PermissionState>;
 }

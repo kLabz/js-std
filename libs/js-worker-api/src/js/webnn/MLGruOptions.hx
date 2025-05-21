@@ -32,13 +32,13 @@ typedef MLGruOptions = MLOperatorOptions & {
 	@:optional
 	var initialHiddenState : MLOperand;
 	@:optional
-	var resetAfter : Bool = true;
+	var resetAfter : Bool;
 	@:optional
-	var returnSequence : Bool = false;
+	var returnSequence : Bool;
 	@:optional
-	var direction : MLRecurrentNetworkDirection = "forward";
+	var direction : MLRecurrentNetworkDirection;
 	@:optional
-	var layout : MLGruWeightLayout = "zrn";
+	var layout : MLGruWeightLayout;
 	@:optional
 	var activations : Array<MLRecurrentNetworkActivation>;
 };

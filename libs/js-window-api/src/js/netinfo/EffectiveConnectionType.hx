@@ -25,8 +25,8 @@
 package js.netinfo;
 
 enum abstract EffectiveConnectionType(String) {
-	var 2G = "2g";
-	var 3G = "3g";
-	var 4G = "4g";
+	var _2G = "2g";
+	var _3G = "3g";
+	var _4G = "4g";
 	var SLOW_2G = "slow-2g";
 }

@@ -28,5 +28,5 @@ typedef MLReduceOptions = MLOperatorOptions & {
 	@:optional
 	var axes : Array<Int>;
 	@:optional
-	var keepDimensions : Bool = false;
+	var keepDimensions : Bool;
 };

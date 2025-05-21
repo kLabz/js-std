@@ -26,11 +26,11 @@ package js.orientationEvent;
 
 typedef DeviceOrientationEventInit = js.dom.EventInit & {
 	@:optional
-	var alpha : Null<Float> = null;
+	var alpha : Null<Float>;
 	@:optional
-	var beta : Null<Float> = null;
+	var beta : Null<Float>;
 	@:optional
-	var gamma : Null<Float> = null;
+	var gamma : Null<Float>;
 	@:optional
-	var absolute : Bool = false;
+	var absolute : Bool;
 };

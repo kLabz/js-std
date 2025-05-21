@@ -26,9 +26,9 @@ package js.webaudio;
 
 typedef AudioWorkletNodeOptions = AudioNodeOptions & {
 	@:optional
-	var numberOfInputs : Int = 1;
+	var numberOfInputs : Int;
 	@:optional
-	var numberOfOutputs : Int = 1;
+	var numberOfOutputs : Int;
 	@:optional
 	var outputChannelCount : Array<Int>;
 	@:optional

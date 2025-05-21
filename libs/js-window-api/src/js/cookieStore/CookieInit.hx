@@ -28,13 +28,13 @@ typedef CookieInit = {
 	var name : String;
 	var value : String;
 	@:optional
-	var expires : Null<js.hrTime.DOMHighResTimeStamp> = null;
+	var expires : Null<js.hrTime.DOMHighResTimeStamp>;
 	@:optional
-	var domain : Null<String> = null;
+	var domain : Null<String>;
 	@:optional
-	var path : String = "/";
+	var path : String;
 	@:optional
-	var sameSite : CookieSameSite = "strict";
+	var sameSite : CookieSameSite;
 	@:optional
-	var partitioned : Bool = false;
+	var partitioned : Bool;
 };

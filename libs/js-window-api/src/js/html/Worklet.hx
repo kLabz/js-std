@@ -31,5 +31,5 @@ package js.html;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function addModule(moduleURL:String, ?options:WorkletOptions = {  }):js.lib.Promise<Void>;
+	function addModule(moduleURL:String, ?options:WorkletOptions):js.lib.Promise<Void>;
 }

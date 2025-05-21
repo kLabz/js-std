@@ -25,6 +25,6 @@
 package js.cssom;
 
 @:native("CSSNamespaceRule") extern class CSSNamespaceRule extends CSSRule {
-	var namespaceURI(default, null) : CSSOMString;
-	var prefix(default, null) : CSSOMString;
+	var namespaceURI(default, null) : String;
+	var prefix(default, null) : String;
 }

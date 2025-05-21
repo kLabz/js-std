@@ -32,7 +32,7 @@ package js.uievents;
 		From partial interface in input-events.idl
 	**/
 	var dataTransfer(default, null) : Null<js.html.DataTransfer>;
-	function new(type:String, ?eventInitDict:InputEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:InputEventInit):Void;
 	/**
 		From partial interface in input-events.idl
 	**/

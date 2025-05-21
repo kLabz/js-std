@@ -33,19 +33,19 @@ typedef SerialOptions = {
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var dataBits : Int = 8;
+	var dataBits : Int;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var stopBits : Int = 1;
+	var stopBits : Int;
 	@:optional
-	var parity : ParityType = "none";
+	var parity : ParityType;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var bufferSize : Int = 255;
+	var bufferSize : Int;
 	@:optional
-	var flowControl : FlowControlType = "none";
+	var flowControl : FlowControlType;
 };

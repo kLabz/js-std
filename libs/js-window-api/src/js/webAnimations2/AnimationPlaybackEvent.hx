@@ -27,5 +27,5 @@ package js.webAnimations2;
 @:native("AnimationPlaybackEvent") extern class AnimationPlaybackEvent extends js.dom.Event {
 	var currentTime(default, null) : Null<js.cssTypedOm.CSSNumberish>;
 	var timelineTime(default, null) : Null<js.cssTypedOm.CSSNumberish>;
-	function new(type:String, ?eventInitDict:AnimationPlaybackEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:AnimationPlaybackEventInit):Void;
 }

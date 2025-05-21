@@ -27,7 +27,7 @@ package js.fedcm;
 typedef IdentityCredentialRequestOptions = {
 	var providers : Array<IdentityProviderRequestOptions>;
 	@:optional
-	var context : IdentityCredentialRequestOptionsContext = "signin";
+	var context : IdentityCredentialRequestOptionsContext;
 	@:optional
-	var mode : IdentityCredentialRequestOptionsMode = "passive";
+	var mode : IdentityCredentialRequestOptionsMode;
 };

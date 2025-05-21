@@ -26,7 +26,7 @@ package js.cssomView;
 
 typedef ConvertCoordinateOptions = {
 	@:optional
-	var fromBox : CSSBoxType = "border";
+	var fromBox : CSSBoxType;
 	@:optional
-	var toBox : CSSBoxType = "border";
+	var toBox : CSSBoxType;
 };

@@ -36,7 +36,7 @@ package js.svg;
 		Unhandled extended attribute SameObject
 	**/
 	var lengthAdjust(default, null) : SVGAnimatedEnumeration;
-	function getCharNumAtPosition(?point:js.geometry.DOMPointInit = {  }):Int;
+	function getCharNumAtPosition(?point:js.geometry.DOMPointInit):Int;
 	function getComputedTextLength():Float;
 	function getEndPositionOfChar(charnum:Int):js.geometry.DOMPoint;
 	function getExtentOfChar(charnum:Int):js.geometry.DOMRect;

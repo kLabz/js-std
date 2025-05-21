@@ -24,6 +24,13 @@
 
 package js.html;
 
+/**
+	TODO attribute productSub String exposed for [Window]
+	TODO attribute vendor String exposed for [Window]
+	TODO attribute vendorSub String exposed for [Window]
+	TODO member taintEnabled () -> Bool exposed for [Window]
+	TODO attribute oscpu String exposed for [Window]
+**/
 @:native("Navigator") extern class Navigator {
 	/**
 		From interface mixin NavigatorDeviceMemory
@@ -55,28 +62,8 @@ package js.html;
 	var product(default, null) : String;
 	/**
 		From interface mixin NavigatorID
-		Unhandled extended attribute Exposed
-	**/
-	var productSub(default, null) : String;
-	/**
-		From interface mixin NavigatorID
 	**/
 	var userAgent(default, null) : String;
-	/**
-		From interface mixin NavigatorID
-		Unhandled extended attribute Exposed
-	**/
-	var vendor(default, null) : String;
-	/**
-		From interface mixin NavigatorID
-		Unhandled extended attribute Exposed
-	**/
-	var vendorSub(default, null) : String;
-	/**
-		From interface mixin NavigatorID
-		Unhandled extended attribute Exposed
-	**/
-	var oscpu(default, null) : String;
 	/**
 		From interface mixin NavigatorLanguage
 	**/
@@ -209,6 +196,11 @@ package js.html;
 	**/
 	var login(default, null) : js.loginStatus.NavigatorLogin;
 	/**
+		From partial interface in media-capabilities.idl
+		Unhandled extended attribute SameObject
+	**/
+	var mediaCapabilities(default, null) : js.mediaCapabilities.MediaCapabilities;
+	/**
 		From partial interface in managed-configuration.idl
 		Unhandled extended attribute SecureContext
 		Unhandled extended attribute SameObject
@@ -231,11 +223,6 @@ package js.html;
 	**/
 	var mediaSession(default, null) : js.mediasession.MediaSession;
 	/**
-		From partial interface in media-capabilities.idl
-		Unhandled extended attribute SameObject
-	**/
-	var mediaCapabilities(default, null) : js.mediaCapabilities.MediaCapabilities;
-	/**
 		From partial interface in pointerevents.idl
 	**/
 	var maxTouchPoints(default, null) : Int;
@@ -257,16 +244,16 @@ package js.html;
 	**/
 	var presentation(default, null) : js.presentationApi.Presentation;
 	/**
+		From partial interface in screen-wake-lock.idl
+		Unhandled extended attribute SameObject
+	**/
+	var wakeLock(default, null) : js.screenWakeLock.WakeLock;
+	/**
 		From partial interface in service-workers.idl
 		Unhandled extended attribute SecureContext
 		Unhandled extended attribute SameObject
 	**/
 	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
-	/**
-		From partial interface in screen-wake-lock.idl
-		Unhandled extended attribute SameObject
-	**/
-	var wakeLock(default, null) : js.screenWakeLock.WakeLock;
 	/**
 		From partial interface in serial.idl
 		Unhandled extended attribute SameObject
@@ -303,16 +290,16 @@ package js.html;
 	**/
 	var usb(default, null) : js.webusb.USB;
 	/**
+		From partial interface in window-controls-overlay.idl
+		Unhandled extended attribute SameObject
+	**/
+	var windowControlsOverlay(default, null) : js.windowControlsOverlay.WindowControlsOverlay;
+	/**
 		From partial interface in webxr.idl
 		Unhandled extended attribute SecureContext
 		Unhandled extended attribute SameObject
 	**/
 	var xr(default, null) : js.webxr.XRSystem;
-	/**
-		From partial interface in window-controls-overlay.idl
-		Unhandled extended attribute SameObject
-	**/
-	var windowControlsOverlay(default, null) : js.windowControlsOverlay.WindowControlsOverlay;
 	/**
 		From partial interface in fenced-frame.idl
 	**/
@@ -325,7 +312,7 @@ package js.html;
 		From partial interface in web-share.idl
 		Unhandled extended attribute SecureContext
 	**/
-	function canShare(?data:js.webShare.ShareData = {  }):Bool;
+	function canShare(?data:js.webShare.ShareData):Bool;
 	/**
 		From interface mixin NavigatorBadge
 	**/
@@ -333,7 +320,7 @@ package js.html;
 	/**
 		From partial interface in turtledove.idl
 	**/
-	function clearOriginJoinedAdInterestGroups(owner:String, ?interestGroupsToKeep:Array<String> = []):js.lib.Promise<Void>;
+	function clearOriginJoinedAdInterestGroups(owner:String, ?interestGroupsToKeep:Array<String>):js.lib.Promise<Void>;
 	/**
 		From partial interface in turtledove.idl
 	**/
@@ -378,7 +365,7 @@ package js.html;
 	/**
 		From partial interface in turtledove.idl
 	**/
-	function getInterestGroupAdAuctionData(?config:js.turtledove.AdAuctionDataConfig = {  }):js.lib.Promise<js.turtledove.AdAuctionData>;
+	function getInterestGroupAdAuctionData(?config:js.turtledove.AdAuctionDataConfig):js.lib.Promise<js.turtledove.AdAuctionData>;
 	/**
 		From interface mixin NavigatorPlugins
 	**/
@@ -390,7 +377,7 @@ package js.html;
 	/**
 		From partial interface in turtledove.idl
 	**/
-	function leaveAdInterestGroup(?group:js.turtledove.AuctionAdInterestGroupKey = {  }):js.lib.Promise<Void>;
+	function leaveAdInterestGroup(?group:js.turtledove.AuctionAdInterestGroupKey):js.lib.Promise<Void>;
 	/**
 		From partial interface in handwriting-recognition.idl
 	**/
@@ -404,7 +391,7 @@ package js.html;
 		From partial interface in webmidi.idl
 		Unhandled extended attribute SecureContext
 	**/
-	function requestMIDIAccess(?options:js.webmidi.MIDIOptions = {  }):js.lib.Promise<js.webmidi.MIDIAccess>;
+	function requestMIDIAccess(?options:js.webmidi.MIDIOptions):js.lib.Promise<js.webmidi.MIDIAccess>;
 	/**
 		From partial interface in encrypted-media.idl
 		Unhandled extended attribute SecureContext
@@ -426,12 +413,7 @@ package js.html;
 		From partial interface in web-share.idl
 		Unhandled extended attribute SecureContext
 	**/
-	function share(?data:js.webShare.ShareData = {  }):js.lib.Promise<Void>;
-	/**
-		From interface mixin NavigatorID
-		Unhandled extended attribute Exposed
-	**/
-	function taintEnabled():Bool;
+	function share(?data:js.webShare.ShareData):js.lib.Promise<Void>;
 	/**
 		From interface mixin NavigatorContentUtils
 		Unhandled extended attribute SecureContext

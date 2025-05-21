@@ -30,7 +30,7 @@ typedef MLInstanceNormalizationOptions = MLOperatorOptions & {
 	@:optional
 	var bias : MLOperand;
 	@:optional
-	var epsilon : Float = 1e-5;
+	var epsilon : Float;
 	@:optional
-	var layout : MLInputOperandLayout = "nchw";
+	var layout : MLInputOperandLayout;
 };

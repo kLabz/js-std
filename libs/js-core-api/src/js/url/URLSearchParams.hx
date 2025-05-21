@@ -27,10 +27,6 @@ package js.url;
 @:native("URLSearchParams") extern class URLSearchParams {
 	var size(default, null) : Int;
 	function new(?init:haxe.extern.EitherType<Array<Array<String>>, haxe.extern.EitherType<haxe.DynamicAccess<String>, String>> = ""):Void;
-	/**
-		(special = stringifier)
-	**/
-	function ():Void;
 	function append(name:String, value:String):Void;
 	function delete(name:String, ?value:String):Void;
 	function entries():Iterator<js.lib.Tuple<String, String>>;
@@ -40,5 +36,6 @@ package js.url;
 	function keys():Iterator<String>;
 	function set(name:String, value:String):Void;
 	function sort():Void;
+	function toString():String;
 	function values():Iterator<String>;
 }

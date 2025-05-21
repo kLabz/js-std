@@ -24,4 +24,4 @@
 
 package js.html;
 
-typedef MessageEventSource = haxe.extern.EitherType<WindowProxy, haxe.extern.EitherType<MessagePort, js.serviceWorkers.ServiceWorker>>;
+typedef MessageEventSource = haxe.extern.EitherType<js.html.Window, haxe.extern.EitherType<MessagePort, js.serviceWorkers.ServiceWorker>>;

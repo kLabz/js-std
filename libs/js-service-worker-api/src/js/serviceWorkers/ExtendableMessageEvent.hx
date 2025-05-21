@@ -33,5 +33,5 @@ package js.serviceWorkers;
 	**/
 	var source(default, null) : Null<haxe.extern.EitherType<Client, haxe.extern.EitherType<ServiceWorker, js.html.MessagePort>>>;
 	var ports(default, null) : Array<js.html.MessagePort>;
-	function new(type:String, ?eventInitDict:ExtendableMessageEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:ExtendableMessageEventInit):Void;
 }

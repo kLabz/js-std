@@ -26,5 +26,5 @@ package js.webOtp;
 
 typedef OTPCredentialRequestOptions = {
 	@:optional
-	var transport : Array<OTPCredentialTransportType> = [];
+	var transport : Array<OTPCredentialTransportType>;
 };

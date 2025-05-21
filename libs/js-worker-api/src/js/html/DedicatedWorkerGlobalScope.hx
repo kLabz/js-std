@@ -50,7 +50,7 @@ package js.html;
 	function cancelAnimationFrame(handle:Int):Void;
 	function close():Void;
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
-	overload function postMessage(message:Any, ?options:StructuredSerializeOptions = {  }):Void;
+	overload function postMessage(message:Any, ?options:StructuredSerializeOptions):Void;
 	/**
 		From interface mixin AnimationFrameProvider
 	**/

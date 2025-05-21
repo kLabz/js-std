@@ -26,15 +26,15 @@ package js.intersectionObserver;
 
 typedef IntersectionObserverInit = {
 	@:optional
-	var root : Null<haxe.extern.EitherType<js.dom.Element, js.dom.Document>> = null;
+	var root : Null<haxe.extern.EitherType<js.dom.Element, js.dom.Document>>;
 	@:optional
-	var rootMargin : String = "0px";
+	var rootMargin : String;
 	@:optional
-	var scrollMargin : String = "0px";
+	var scrollMargin : String;
 	@:optional
-	var threshold : haxe.extern.EitherType<Float, Array<Float>> = 0;
+	var threshold : haxe.extern.EitherType<Float, Array<Float>>;
 	@:optional
-	var delay : Int = 0;
+	var delay : Int;
 	@:optional
-	var trackVisibility : Bool = false;
+	var trackVisibility : Bool;
 };

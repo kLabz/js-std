@@ -25,5 +25,5 @@
 package js.cssMixins;
 
 @:native("CSSFunctionDescriptors") extern class CSSFunctionDescriptors extends js.cssom.CSSStyleDeclaration {
-	var result : CSSOMString;
+	var result : String;
 }

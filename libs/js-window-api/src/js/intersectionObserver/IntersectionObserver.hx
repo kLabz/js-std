@@ -31,7 +31,7 @@ package js.intersectionObserver;
 	var thresholds(default, null) : Array<Float>;
 	var delay(default, null) : Int;
 	var trackVisibility(default, null) : Bool;
-	function new(callback:IntersectionObserverCallback, ?options:IntersectionObserverInit = {  }):Void;
+	function new(callback:IntersectionObserverCallback, ?options:IntersectionObserverInit):Void;
 	function disconnect():Void;
 	function observe(target:js.dom.Element):Void;
 	function takeRecords():Array<IntersectionObserverEntry>;

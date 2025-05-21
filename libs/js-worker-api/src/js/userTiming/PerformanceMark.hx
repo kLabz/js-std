@@ -26,5 +26,5 @@ package js.userTiming;
 
 @:native("PerformanceMark") extern class PerformanceMark extends js.performanceTimeline.PerformanceEntry {
 	var detail(default, null) : Any;
-	function new(markName:String, ?markOptions:PerformanceMarkOptions = {  }):Void;
+	function new(markName:String, ?markOptions:PerformanceMarkOptions):Void;
 }

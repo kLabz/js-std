@@ -25,5 +25,5 @@
 package js.ppa;
 
 typedef PrivateAttributionConversionResult = {
-	var report : Uint8Array;
+	var report : js.lib.Uint8Array;
 };

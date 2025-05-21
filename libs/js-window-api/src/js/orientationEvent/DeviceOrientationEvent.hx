@@ -32,6 +32,6 @@ package js.orientationEvent;
 	var beta(default, null) : Null<Float>;
 	var gamma(default, null) : Null<Float>;
 	var absolute(default, null) : Bool;
-	function new(type:String, ?eventInitDict:DeviceOrientationEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:DeviceOrientationEventInit):Void;
 	function requestPermission(?absolute:Bool = false):js.lib.Promise<js.permissions.PermissionState>;
 }

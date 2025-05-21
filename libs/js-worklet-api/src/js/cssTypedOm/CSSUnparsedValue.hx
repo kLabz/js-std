@@ -24,13 +24,11 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO special=setter (index:Int, val:CSSUnparsedSegment) -> CSSUnparsedSegment
+**/
 @:native("CSSUnparsedValue") extern class CSSUnparsedValue extends CSSStyleValue implements ArrayAccess<CSSUnparsedSegment> {
 	var length(default, null) : Int;
 	function new(members:Array<CSSUnparsedSegment>):Void;
-	/**
-		(special = setter)
-	**/
-	overload function (index:Int, val:CSSUnparsedSegment):CSSUnparsedSegment;
-	function values():Iterator<CSSUnparsedSegment>;
 	function values():Iterator<CSSUnparsedSegment>;
 }

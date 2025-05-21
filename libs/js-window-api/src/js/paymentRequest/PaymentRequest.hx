@@ -35,7 +35,7 @@ package js.paymentRequest;
 	var onshippingaddresschange : js.html.EventHandler;
 	var onshippingoptionchange : js.html.EventHandler;
 	var onpaymentmethodchange : js.html.EventHandler;
-	function new(methodData:Array<PaymentMethodData>, details:PaymentDetailsInit, ?options:PaymentOptions = {  }):Void;
+	function new(methodData:Array<PaymentMethodData>, details:PaymentDetailsInit, ?options:PaymentOptions):Void;
 	/**
 		Unhandled extended attribute NewObject
 	**/

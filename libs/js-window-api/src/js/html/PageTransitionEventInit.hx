@@ -26,5 +26,5 @@ package js.html;
 
 typedef PageTransitionEventInit = js.dom.EventInit & {
 	@:optional
-	var persisted : Bool = false;
+	var persisted : Bool;
 };

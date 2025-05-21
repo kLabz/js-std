@@ -26,79 +26,79 @@ package js.mediacaptureStreams;
 
 typedef MediaTrackSupportedConstraints = {
 	@:optional
-	var width : Bool = true;
+	var width : Bool;
 	@:optional
-	var height : Bool = true;
+	var height : Bool;
 	@:optional
-	var aspectRatio : Bool = true;
+	var aspectRatio : Bool;
 	@:optional
-	var frameRate : Bool = true;
+	var frameRate : Bool;
 	@:optional
-	var facingMode : Bool = true;
+	var facingMode : Bool;
 	@:optional
-	var resizeMode : Bool = true;
+	var resizeMode : Bool;
 	@:optional
-	var sampleRate : Bool = true;
+	var sampleRate : Bool;
 	@:optional
-	var sampleSize : Bool = true;
+	var sampleSize : Bool;
 	@:optional
-	var echoCancellation : Bool = true;
+	var echoCancellation : Bool;
 	@:optional
-	var autoGainControl : Bool = true;
+	var autoGainControl : Bool;
 	@:optional
-	var noiseSuppression : Bool = true;
+	var noiseSuppression : Bool;
 	@:optional
-	var latency : Bool = true;
+	var latency : Bool;
 	@:optional
-	var channelCount : Bool = true;
+	var channelCount : Bool;
 	@:optional
-	var deviceId : Bool = true;
+	var deviceId : Bool;
 	@:optional
-	var groupId : Bool = true;
+	var groupId : Bool;
 	@:optional
-	var backgroundBlur : Bool = true;
+	var backgroundBlur : Bool;
 	@:optional
-	var whiteBalanceMode : Bool = true;
+	var whiteBalanceMode : Bool;
 	@:optional
-	var exposureMode : Bool = true;
+	var exposureMode : Bool;
 	@:optional
-	var focusMode : Bool = true;
+	var focusMode : Bool;
 	@:optional
-	var pointsOfInterest : Bool = true;
+	var pointsOfInterest : Bool;
 	@:optional
-	var exposureCompensation : Bool = true;
+	var exposureCompensation : Bool;
 	@:optional
-	var exposureTime : Bool = true;
+	var exposureTime : Bool;
 	@:optional
-	var colorTemperature : Bool = true;
+	var colorTemperature : Bool;
 	@:optional
-	var iso : Bool = true;
+	var iso : Bool;
 	@:optional
-	var brightness : Bool = true;
+	var brightness : Bool;
 	@:optional
-	var contrast : Bool = true;
+	var contrast : Bool;
 	@:optional
-	var pan : Bool = true;
+	var pan : Bool;
 	@:optional
-	var saturation : Bool = true;
+	var saturation : Bool;
 	@:optional
-	var sharpness : Bool = true;
+	var sharpness : Bool;
 	@:optional
-	var focusDistance : Bool = true;
+	var focusDistance : Bool;
 	@:optional
-	var tilt : Bool = true;
+	var tilt : Bool;
 	@:optional
-	var zoom : Bool = true;
+	var zoom : Bool;
 	@:optional
-	var torch : Bool = true;
+	var torch : Bool;
 	@:optional
-	var displaySurface : Bool = true;
+	var displaySurface : Bool;
 	@:optional
-	var logicalSurface : Bool = true;
+	var logicalSurface : Bool;
 	@:optional
-	var cursor : Bool = true;
+	var cursor : Bool;
 	@:optional
-	var restrictOwnAudio : Bool = true;
+	var restrictOwnAudio : Bool;
 	@:optional
-	var suppressLocalAudioPlayback : Bool = true;
+	var suppressLocalAudioPlayback : Bool;
 };

@@ -37,5 +37,5 @@ package js.csp;
 	var statusCode(default, null) : Int;
 	var lineNumber(default, null) : Int;
 	var columnNumber(default, null) : Int;
-	function new(type:String, ?eventInitDict:SecurityPolicyViolationEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:SecurityPolicyViolationEventInit):Void;
 }

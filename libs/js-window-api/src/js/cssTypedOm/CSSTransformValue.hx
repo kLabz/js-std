@@ -24,15 +24,13 @@
 
 package js.cssTypedOm;
 
+/**
+	TODO special=setter (index:Int, val:CSSTransformComponent) -> CSSTransformComponent
+**/
 @:native("CSSTransformValue") extern class CSSTransformValue extends CSSStyleValue implements ArrayAccess<CSSTransformComponent> {
 	var length(default, null) : Int;
 	var is2D(default, null) : Bool;
 	function new(transforms:Array<CSSTransformComponent>):Void;
-	/**
-		(special = setter)
-	**/
-	overload function (index:Int, val:CSSTransformComponent):CSSTransformComponent;
 	function toMatrix():js.geometry.DOMMatrix;
-	function values():Iterator<CSSTransformComponent>;
 	function values():Iterator<CSSTransformComponent>;
 }

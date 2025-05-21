@@ -32,6 +32,6 @@ package js.touchEvents;
 	var metaKey(default, null) : Bool;
 	var ctrlKey(default, null) : Bool;
 	var shiftKey(default, null) : Bool;
-	function new(type:String, ?eventInitDict:TouchEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:TouchEventInit):Void;
 	function getModifierState(keyArg:String):Bool;
 }

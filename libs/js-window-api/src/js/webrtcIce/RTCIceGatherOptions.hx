@@ -26,7 +26,7 @@ package js.webrtcIce;
 
 typedef RTCIceGatherOptions = {
 	@:optional
-	var gatherPolicy : js.webrtc.RTCIceTransportPolicy = "all";
+	var gatherPolicy : js.webrtc.RTCIceTransportPolicy;
 	@:optional
 	var iceServers : Array<js.webrtc.RTCIceServer>;
 };

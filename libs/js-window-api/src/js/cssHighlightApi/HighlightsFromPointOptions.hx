@@ -26,5 +26,5 @@ package js.cssHighlightApi;
 
 typedef HighlightsFromPointOptions = {
 	@:optional
-	var shadowRoots : Array<js.dom.ShadowRoot> = [];
+	var shadowRoots : Array<js.dom.ShadowRoot>;
 };

@@ -28,5 +28,5 @@ typedef PaymentCredentialInstrument = {
 	var displayName : String;
 	var icon : String;
 	@:optional
-	var iconMustBeShown : Bool = true;
+	var iconMustBeShown : Bool;
 };

@@ -26,15 +26,15 @@ package js.paymentRequest;
 
 typedef PaymentOptions = {
 	@:optional
-	var requestPayerName : Bool = false;
+	var requestPayerName : Bool;
 	@:optional
-	var requestBillingAddress : Bool = false;
+	var requestBillingAddress : Bool;
 	@:optional
-	var requestPayerEmail : Bool = false;
+	var requestPayerEmail : Bool;
 	@:optional
-	var requestPayerPhone : Bool = false;
+	var requestPayerPhone : Bool;
 	@:optional
-	var requestShipping : Bool = false;
+	var requestShipping : Bool;
 	@:optional
-	var shippingType : PaymentShippingType = "shipping";
+	var shippingType : PaymentShippingType;
 };

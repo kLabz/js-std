@@ -26,9 +26,6 @@ package js.cssTypedOm;
 
 @:native("CSSTransformComponent") extern class CSSTransformComponent {
 	var is2D : Bool;
-	/**
-		(special = stringifier)
-	**/
-	function ():Void;
 	function toMatrix():js.geometry.DOMMatrix;
+	function toString():String;
 }

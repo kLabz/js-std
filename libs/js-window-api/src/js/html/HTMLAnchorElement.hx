@@ -24,9 +24,6 @@
 
 package js.html;
 
-/**
-	TODO attribute href: special=stringifier readonly=false
-**/
 @:native("HTMLAnchorElement") extern class HTMLAnchorElement extends HTMLElement {
 	var target : String;
 	var download : String;
@@ -46,6 +43,10 @@ package js.html;
 		Unhandled extended attribute SecureContext
 	**/
 	var attributionSrc : String;
+	/**
+		From interface mixin HTMLHyperlinkElementUtils
+	**/
+	var href : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
 	**/
@@ -110,4 +111,8 @@ package js.html;
 		From partial interface in private-click-measurement.idl
 	**/
 	var attributionSourceId : Int;
+	/**
+		Returns `this.href`.
+	**/
+	function toString():String;
 }

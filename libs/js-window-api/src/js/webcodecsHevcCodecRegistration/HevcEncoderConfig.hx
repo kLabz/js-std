@@ -26,5 +26,5 @@ package js.webcodecsHevcCodecRegistration;
 
 typedef HevcEncoderConfig = {
 	@:optional
-	var format : HevcBitstreamFormat = "hevc";
+	var format : HevcBitstreamFormat;
 };

@@ -28,5 +28,5 @@ package js.xhr;
 	var lengthComputable(default, null) : Bool;
 	var loaded(default, null) : Float;
 	var total(default, null) : Float;
-	function new(type:String, ?eventInitDict:ProgressEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:ProgressEventInit):Void;
 }

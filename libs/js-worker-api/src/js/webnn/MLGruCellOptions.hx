@@ -30,9 +30,9 @@ typedef MLGruCellOptions = MLOperatorOptions & {
 	@:optional
 	var recurrentBias : MLOperand;
 	@:optional
-	var resetAfter : Bool = true;
+	var resetAfter : Bool;
 	@:optional
-	var layout : MLGruWeightLayout = "zrn";
+	var layout : MLGruWeightLayout;
 	@:optional
 	var activations : Array<MLRecurrentNetworkActivation>;
 };

@@ -26,7 +26,7 @@ package js.fileapi;
 
 @:native("FileReaderSync") extern class FileReaderSync {
 	function new():Void;
-	function readAsArrayBuffer(blob:Blob):ArrayBuffer;
+	function readAsArrayBuffer(blob:Blob):js.lib.ArrayBuffer;
 	function readAsBinaryString(blob:Blob):String;
 	function readAsDataURL(blob:Blob):String;
 	function readAsText(blob:Blob, ?encoding:String):String;

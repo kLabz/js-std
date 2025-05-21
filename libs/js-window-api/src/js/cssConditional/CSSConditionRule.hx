@@ -25,5 +25,5 @@
 package js.cssConditional;
 
 @:native("CSSConditionRule") extern class CSSConditionRule extends js.cssom.CSSGroupingRule {
-	var conditionText(default, null) : CSSOMString;
+	var conditionText(default, null) : String;
 }

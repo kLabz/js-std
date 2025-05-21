@@ -25,7 +25,7 @@
 package js.cssom;
 
 @:native("CSSPageRule") extern class CSSPageRule extends CSSGroupingRule {
-	var selectorText : CSSOMString;
+	var selectorText : String;
 	/**
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute PutForwards

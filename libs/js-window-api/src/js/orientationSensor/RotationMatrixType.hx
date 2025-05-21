@@ -24,4 +24,4 @@
 
 package js.orientationSensor;
 
-typedef RotationMatrixType = haxe.extern.EitherType<Float32Array, haxe.extern.EitherType<Float64Array, js.geometry.DOMMatrix>>;
+typedef RotationMatrixType = haxe.extern.EitherType<js.lib.Float32Array, haxe.extern.EitherType<js.lib.Float64Array, js.geometry.DOMMatrix>>;

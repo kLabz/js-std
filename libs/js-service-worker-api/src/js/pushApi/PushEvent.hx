@@ -29,5 +29,5 @@ package js.pushApi;
 **/
 @:native("PushEvent") extern class PushEvent extends js.serviceWorkers.ExtendableEvent {
 	var data(default, null) : Null<PushMessageData>;
-	function new(type:String, ?eventInitDict:PushEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:PushEventInit):Void;
 }

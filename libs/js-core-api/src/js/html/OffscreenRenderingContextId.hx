@@ -25,7 +25,7 @@
 package js.html;
 
 enum abstract OffscreenRenderingContextId(String) {
-	var 2D = "2d";
+	var _2D = "2d";
 	var BITMAPRENDERER = "bitmaprenderer";
 	var WEBGL = "webgl";
 	var WEBGL2 = "webgl2";

@@ -24,4 +24,4 @@
 
 package js.webidl;
 
-typedef BufferSource = haxe.extern.EitherType<ArrayBufferView, ArrayBuffer>;
+typedef BufferSource = haxe.extern.EitherType<js.lib.ArrayBufferView, js.lib.ArrayBuffer>;

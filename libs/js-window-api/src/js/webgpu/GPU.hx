@@ -33,5 +33,5 @@ package js.webgpu;
 	**/
 	var wgslLanguageFeatures(default, null) : WGSLLanguageFeatures;
 	function getPreferredCanvasFormat():GPUTextureFormat;
-	function requestAdapter(?options:GPURequestAdapterOptions = {  }):js.lib.Promise<Null<GPUAdapter>>;
+	function requestAdapter(?options:GPURequestAdapterOptions):js.lib.Promise<Null<GPUAdapter>>;
 }

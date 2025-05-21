@@ -31,13 +31,13 @@ package js.webauthn;
 	/**
 		Unhandled extended attribute SameObject
 	**/
-	var authenticatorData(default, null) : ArrayBuffer;
+	var authenticatorData(default, null) : js.lib.ArrayBuffer;
 	/**
 		Unhandled extended attribute SameObject
 	**/
-	var signature(default, null) : ArrayBuffer;
+	var signature(default, null) : js.lib.ArrayBuffer;
 	/**
 		Unhandled extended attribute SameObject
 	**/
-	var userHandle(default, null) : Null<ArrayBuffer>;
+	var userHandle(default, null) : Null<js.lib.ArrayBuffer>;
 }

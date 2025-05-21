@@ -26,7 +26,7 @@ package js.credentialManagement;
 
 typedef CredentialCreationOptions = {
 	@:optional
-	var mediation : CredentialMediationRequirement = "optional";
+	var mediation : CredentialMediationRequirement;
 	@:optional
 	var signal : js.dom.AbortSignal;
 	@:optional

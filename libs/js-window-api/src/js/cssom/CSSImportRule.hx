@@ -35,6 +35,6 @@ package js.cssom;
 		Unhandled extended attribute SameObject
 	**/
 	var styleSheet(default, null) : Null<CSSStyleSheet>;
-	var layerName(default, null) : Null<CSSOMString>;
-	var supportsText(default, null) : Null<CSSOMString>;
+	var layerName(default, null) : Null<String>;
+	var supportsText(default, null) : Null<String>;
 }

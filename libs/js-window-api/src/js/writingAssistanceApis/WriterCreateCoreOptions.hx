@@ -26,11 +26,11 @@ package js.writingAssistanceApis;
 
 typedef WriterCreateCoreOptions = {
 	@:optional
-	var tone : WriterTone = "neutral";
+	var tone : WriterTone;
 	@:optional
-	var format : WriterFormat = "markdown";
+	var format : WriterFormat;
 	@:optional
-	var length : WriterLength = "short";
+	var length : WriterLength;
 	@:optional
 	var expectedInputLanguages : Array<String>;
 	@:optional

@@ -38,5 +38,5 @@ package js.serial;
 	function getInfo():SerialPortInfo;
 	function getSignals():js.lib.Promise<SerialInputSignals>;
 	function open(options:SerialOptions):js.lib.Promise<Void>;
-	function setSignals(?signals:SerialOutputSignals = {  }):js.lib.Promise<Void>;
+	function setSignals(?signals:SerialOutputSignals):js.lib.Promise<Void>;
 }

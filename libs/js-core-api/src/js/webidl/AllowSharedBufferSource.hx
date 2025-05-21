@@ -24,4 +24,4 @@
 
 package js.webidl;
 
-typedef AllowSharedBufferSource = haxe.extern.EitherType<ArrayBuffer, haxe.extern.EitherType<SharedArrayBuffer, ArrayBufferView>>;
+typedef AllowSharedBufferSource = haxe.extern.EitherType<js.lib.ArrayBuffer, haxe.extern.EitherType<js.lib.SharedArrayBuffer, js.lib.ArrayBufferView>>;

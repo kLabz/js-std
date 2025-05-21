@@ -28,5 +28,5 @@ typedef RTCLocalSessionDescriptionInit = {
 	@:optional
 	var type : RTCSdpType;
 	@:optional
-	var sdp : String = "";
+	var sdp : String;
 };

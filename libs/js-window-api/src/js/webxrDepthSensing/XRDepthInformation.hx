@@ -38,7 +38,7 @@ package js.webxrDepthSensing;
 	/**
 		From interface mixin XRViewGeometry
 	**/
-	var projectionMatrix(default, null) : Float32Array;
+	var projectionMatrix(default, null) : js.lib.Float32Array;
 	/**
 		From interface mixin XRViewGeometry
 		Unhandled extended attribute SameObject

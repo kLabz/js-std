@@ -24,4 +24,4 @@
 
 package js.webrtcEncodedTransform;
 
-typedef CryptoKeyID = haxe.extern.EitherType<SmallCryptoKeyID, bigint>;
+typedef CryptoKeyID = haxe.extern.EitherType<SmallCryptoKeyID, js.lib.BigInt>;

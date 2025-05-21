@@ -25,8 +25,8 @@
 package js.cssAnimations;
 
 @:native("AnimationEvent") extern class AnimationEvent extends js.dom.Event {
-	var animationName(default, null) : CSSOMString;
+	var animationName(default, null) : String;
 	var elapsedTime(default, null) : Float;
-	var pseudoElement(default, null) : CSSOMString;
-	function new(type:CSSOMString, ?animationEventInitDict:AnimationEventInit = {  }):Void;
+	var pseudoElement(default, null) : String;
+	function new(type:String, ?animationEventInitDict:AnimationEventInit):Void;
 }

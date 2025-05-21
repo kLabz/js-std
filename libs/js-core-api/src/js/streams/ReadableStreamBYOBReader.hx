@@ -34,6 +34,6 @@ package js.streams;
 		From interface mixin ReadableStreamGenericReader
 	**/
 	function cancel(?reason:Any):js.lib.Promise<Void>;
-	function read(view:js.webidl.ArrayBufferView, ?options:ReadableStreamBYOBReaderReadOptions = {  }):js.lib.Promise<ReadableStreamReadResult>;
+	function read(view:js.lib.ArrayBufferView, ?options:ReadableStreamBYOBReaderReadOptions):js.lib.Promise<ReadableStreamReadResult>;
 	function releaseLock():Void;
 }

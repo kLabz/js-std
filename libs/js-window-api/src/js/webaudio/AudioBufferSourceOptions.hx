@@ -28,13 +28,13 @@ typedef AudioBufferSourceOptions = {
 	@:optional
 	var buffer : Null<AudioBuffer>;
 	@:optional
-	var detune : Float = 0;
+	var detune : Float;
 	@:optional
-	var loop : Bool = false;
+	var loop : Bool;
 	@:optional
-	var loopEnd : Float = 0;
+	var loopEnd : Float;
 	@:optional
-	var loopStart : Float = 0;
+	var loopStart : Float;
 	@:optional
-	var playbackRate : Float = 1;
+	var playbackRate : Float;
 };

@@ -27,5 +27,5 @@ package js.html;
 @:native("PageSwapEvent") extern class PageSwapEvent extends js.dom.Event {
 	var activation(default, null) : Null<NavigationActivation>;
 	var viewTransition(default, null) : Null<js.cssViewTransitions.ViewTransition>;
-	function new(type:String, ?eventInitDict:PageSwapEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:PageSwapEventInit):Void;
 }

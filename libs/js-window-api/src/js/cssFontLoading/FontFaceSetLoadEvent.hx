@@ -29,5 +29,5 @@ package js.cssFontLoading;
 		Unhandled extended attribute SameObject
 	**/
 	var fontfaces(default, null) : Array<FontFace>;
-	function new(type:CSSOMString, ?eventInitDict:FontFaceSetLoadEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:FontFaceSetLoadEventInit):Void;
 }

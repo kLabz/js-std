@@ -33,6 +33,6 @@ package js.encoding;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function encode(?input:String = ""):Uint8Array;
-	function encodeInto(source:String, destination:Uint8Array):TextEncoderEncodeIntoResult;
+	function encode(?input:String = ""):js.lib.Uint8Array;
+	function encodeInto(source:String, destination:js.lib.Uint8Array):TextEncoderEncodeIntoResult;
 }

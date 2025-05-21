@@ -26,13 +26,13 @@ package js.html;
 
 typedef ErrorEventInit = js.dom.EventInit & {
 	@:optional
-	var message : String = "";
+	var message : String;
 	@:optional
-	var filename : String = "";
+	var filename : String;
 	@:optional
-	var lineno : Int = 0;
+	var lineno : Int;
 	@:optional
-	var colno : Int = 0;
+	var colno : Int;
 	@:optional
 	var error : Any;
 };

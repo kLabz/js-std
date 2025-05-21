@@ -26,6 +26,6 @@ package js.html;
 
 typedef NavigationCurrentEntryChangeEventInit = js.dom.EventInit & {
 	@:optional
-	var navigationType : Null<NavigationType> = null;
+	var navigationType : Null<NavigationType>;
 	var from : NavigationHistoryEntry;
 };

@@ -26,6 +26,6 @@ package js.dom;
 
 @:native("CustomEvent") extern class CustomEvent extends Event {
 	var detail(default, null) : Any;
-	function new(type:String, ?eventInitDict:CustomEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:CustomEventInit):Void;
 	function initCustomEvent(type:String, ?bubbles:Bool = false, ?cancelable:Bool = false, ?detail:Any = null):Void;
 }

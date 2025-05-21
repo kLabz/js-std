@@ -25,12 +25,9 @@
 package js.elementCapture;
 
 /**
+	TODO member fromElement (element:js.dom.Element) -> js.lib.Promise<RestrictionTarget> exposed for [Window]
 	Unhandled extended attribute Serializable
 **/
 @:native("RestrictionTarget") extern class RestrictionTarget {
-	/**
-		Unhandled extended attribute Exposed
-		Unhandled extended attribute SecureContext
-	**/
-	function fromElement(element:js.dom.Element):js.lib.Promise<RestrictionTarget>;
+
 }

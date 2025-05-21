@@ -25,19 +25,16 @@
 package js.cookieStore;
 
 /**
+	TODO attribute onchange js.html.EventHandler exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("CookieStore") extern class CookieStore extends js.dom.EventTarget {
-	/**
-		Unhandled extended attribute Exposed
-	**/
-	var onchange : js.html.EventHandler;
 	overload function delete(name:String):js.lib.Promise<Void>;
 	overload function delete(options:CookieStoreDeleteOptions):js.lib.Promise<Void>;
 	overload function get(name:String):js.lib.Promise<Null<CookieListItem>>;
-	overload function get(?options:CookieStoreGetOptions = {  }):js.lib.Promise<Null<CookieListItem>>;
+	overload function get(?options:CookieStoreGetOptions):js.lib.Promise<Null<CookieListItem>>;
 	overload function getAll(name:String):js.lib.Promise<CookieList>;
-	overload function getAll(?options:CookieStoreGetOptions = {  }):js.lib.Promise<CookieList>;
+	overload function getAll(?options:CookieStoreGetOptions):js.lib.Promise<CookieList>;
 	overload function set(name:String, value:String):js.lib.Promise<Void>;
 	overload function set(options:CookieInit):js.lib.Promise<Void>;
 }

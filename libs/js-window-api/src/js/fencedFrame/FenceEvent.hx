@@ -32,9 +32,9 @@ typedef FenceEvent = {
 	@:optional
 	var destination : Array<FenceReportingDestination>;
 	@:optional
-	var crossOriginExposed : Bool = false;
+	var crossOriginExposed : Bool;
 	@:optional
-	var once : Bool = false;
+	var once : Bool;
 	@:optional
 	var destinationURL : String;
 };

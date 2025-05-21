@@ -26,5 +26,5 @@ package js.selectionApi;
 
 typedef GetComposedRangesOptions = {
 	@:optional
-	var shadowRoots : Array<js.dom.ShadowRoot> = [];
+	var shadowRoots : Array<js.dom.ShadowRoot>;
 };

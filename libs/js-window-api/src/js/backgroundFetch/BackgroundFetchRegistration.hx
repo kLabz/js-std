@@ -35,6 +35,6 @@ package js.backgroundFetch;
 	var recordsAvailable(default, null) : Bool;
 	var onprogress : js.html.EventHandler;
 	function abort():js.lib.Promise<Bool>;
-	function match(request:js.fetch.RequestInfo, ?options:js.serviceWorkers.CacheQueryOptions = {  }):js.lib.Promise<BackgroundFetchRecord>;
-	function matchAll(?request:js.fetch.RequestInfo, ?options:js.serviceWorkers.CacheQueryOptions = {  }):js.lib.Promise<Array<BackgroundFetchRecord>>;
+	function match(request:js.fetch.RequestInfo, ?options:js.serviceWorkers.CacheQueryOptions):js.lib.Promise<BackgroundFetchRecord>;
+	function matchAll(?request:js.fetch.RequestInfo, ?options:js.serviceWorkers.CacheQueryOptions):js.lib.Promise<Array<BackgroundFetchRecord>>;
 }

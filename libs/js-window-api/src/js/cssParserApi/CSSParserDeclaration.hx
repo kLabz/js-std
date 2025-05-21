@@ -28,8 +28,5 @@ package js.cssParserApi;
 	var name(default, null) : String;
 	var body(default, null) : Array<CSSParserValue>;
 	function new(name:String, ?body:Array<CSSParserRule>):Void;
-	/**
-		(special = stringifier)
-	**/
-	function ():Void;
+	function toString():String;
 }

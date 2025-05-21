@@ -26,20 +26,20 @@ package js.webrtc;
 
 typedef RTCConfiguration = {
 	@:optional
-	var iceServers : Array<RTCIceServer> = [];
+	var iceServers : Array<RTCIceServer>;
 	@:optional
-	var iceTransportPolicy : RTCIceTransportPolicy = "all";
+	var iceTransportPolicy : RTCIceTransportPolicy;
 	@:optional
-	var bundlePolicy : RTCBundlePolicy = "balanced";
+	var bundlePolicy : RTCBundlePolicy;
 	@:optional
-	var rtcpMuxPolicy : RTCRtcpMuxPolicy = "require";
+	var rtcpMuxPolicy : RTCRtcpMuxPolicy;
 	@:optional
-	var certificates : Array<RTCCertificate> = [];
+	var certificates : Array<RTCCertificate>;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var iceCandidatePoolSize : Int = 0;
+	var iceCandidatePoolSize : Int;
 	@:optional
 	var peerIdentity : String;
 };

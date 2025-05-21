@@ -24,6 +24,9 @@
 
 package js.hrTime;
 
+/**
+	TODO member measureUserAgentSpecificMemory () -> js.lib.Promise<js.performanceMeasureMemory.MemoryMeasurement> exposed for [Window,ServiceWorker,SharedWorker]
+**/
 @:native("Performance") extern class Performance extends js.dom.EventTarget {
 	var timeOrigin(default, null) : DOMHighResTimeStamp;
 	/**
@@ -76,17 +79,11 @@ package js.hrTime;
 	/**
 		From partial interface in user-timing.idl
 	**/
-	function mark(markName:String, ?markOptions:js.userTiming.PerformanceMarkOptions = {  }):js.userTiming.PerformanceMark;
+	function mark(markName:String, ?markOptions:js.userTiming.PerformanceMarkOptions):js.userTiming.PerformanceMark;
 	/**
 		From partial interface in user-timing.idl
 	**/
-	function measure(measureName:String, ?startOrMeasureOptions:haxe.extern.EitherType<String, js.userTiming.PerformanceMeasureOptions> = {  }, ?endMark:String):js.userTiming.PerformanceMeasure;
-	/**
-		From partial interface in performance-measure-memory.idl
-		Unhandled extended attribute Exposed
-		Unhandled extended attribute CrossOriginIsolated
-	**/
-	function measureUserAgentSpecificMemory():js.lib.Promise<js.performanceMeasureMemory.MemoryMeasurement>;
+	function measure(measureName:String, ?startOrMeasureOptions:haxe.extern.EitherType<String, js.userTiming.PerformanceMeasureOptions>, ?endMark:String):js.userTiming.PerformanceMeasure;
 	function now():DOMHighResTimeStamp;
 	/**
 		From partial interface in resource-timing.idl

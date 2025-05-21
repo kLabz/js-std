@@ -27,6 +27,6 @@ package js.webgpu;
 typedef GPUVertexBufferLayout = {
 	var arrayStride : GPUSize64;
 	@:optional
-	var stepMode : GPUVertexStepMode = "vertex";
+	var stepMode : GPUVertexStepMode;
 	var attributes : Array<GPUVertexAttribute>;
 };

@@ -44,8 +44,8 @@ package js.dom;
 		Unhandled extended attribute LegacyUnforgeable
 	**/
 	var isTrusted(default, null) : Bool;
-	var timeStamp(default, null) : js.hrTime.DOMHighResTimeStamp;
-	function new(type:String, ?eventInitDict:EventInit = {  }):Void;
+	var timeStamp(default, null) : Float;
+	function new(type:String, ?eventInitDict:EventInit):Void;
 	function composedPath():Array<EventTarget>;
 	function initEvent(type:String, ?bubbles:Bool = false, ?cancelable:Bool = false):Void;
 	function preventDefault():Void;

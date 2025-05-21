@@ -29,5 +29,5 @@ typedef BackgroundSyncOptions = {
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var minInterval : Float = 0;
+	var minInterval : Float;
 };

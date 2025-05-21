@@ -26,5 +26,5 @@ package js.orientationSensor;
 
 typedef OrientationSensorOptions = js.genericSensor.SensorOptions & {
 	@:optional
-	var referenceFrame : OrientationSensorLocalCoordinateSystem = "device";
+	var referenceFrame : OrientationSensorLocalCoordinateSystem;
 };

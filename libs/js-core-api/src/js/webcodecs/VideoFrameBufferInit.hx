@@ -39,9 +39,9 @@ typedef VideoFrameBufferInit = {
 	@:optional
 	var visibleRect : js.geometry.DOMRectInit;
 	@:optional
-	var rotation : Float = 0;
+	var rotation : Float;
 	@:optional
-	var flip : Bool = false;
+	var flip : Bool;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/
@@ -55,7 +55,7 @@ typedef VideoFrameBufferInit = {
 	@:optional
 	var colorSpace : VideoColorSpaceInit;
 	@:optional
-	var transfer : Array<ArrayBuffer> = [];
+	var transfer : Array<js.lib.ArrayBuffer>;
 	@:optional
 	var metadata : VideoFrameMetadata;
 };

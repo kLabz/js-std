@@ -26,9 +26,9 @@ package js.webAnimations;
 
 typedef KeyframeEffectOptions = EffectTiming & {
 	@:optional
-	var composite : CompositeOperation = "replace";
+	var composite : CompositeOperation;
 	@:optional
-	var pseudoElement : Null<CSSOMString> = null;
+	var pseudoElement : Null<String>;
 	@:optional
-	var iterationComposite : js.webAnimations2.IterationCompositeOperation = "replace";
+	var iterationComposite : js.webAnimations2.IterationCompositeOperation;
 };

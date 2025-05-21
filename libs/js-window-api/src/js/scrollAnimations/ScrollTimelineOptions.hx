@@ -28,5 +28,5 @@ typedef ScrollTimelineOptions = {
 	@:optional
 	var source : Null<js.dom.Element>;
 	@:optional
-	var axis : ScrollAxis = "block";
+	var axis : ScrollAxis;
 };

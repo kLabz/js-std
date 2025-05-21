@@ -25,74 +25,105 @@
 package js.cssAnchorPosition;
 
 @:native("CSSPositionTryDescriptors") extern class CSSPositionTryDescriptors extends js.cssom.CSSStyleDeclaration {
-	var margin : CSSOMString;
-	var marginTop : CSSOMString;
-	var marginRight : CSSOMString;
-	var marginBottom : CSSOMString;
-	var marginLeft : CSSOMString;
-	var marginBlock : CSSOMString;
-	var marginBlockStart : CSSOMString;
-	var marginBlockEnd : CSSOMString;
-	var marginInline : CSSOMString;
-	var marginInlineStart : CSSOMString;
-	var marginInlineEnd : CSSOMString;
-	var margin-top : CSSOMString;
-	var margin-right : CSSOMString;
-	var margin-bottom : CSSOMString;
-	var margin-left : CSSOMString;
-	var margin-block : CSSOMString;
-	var margin-block-start : CSSOMString;
-	var margin-block-end : CSSOMString;
-	var margin-inline : CSSOMString;
-	var margin-inline-start : CSSOMString;
-	var margin-inline-end : CSSOMString;
-	var inset : CSSOMString;
-	var insetBlock : CSSOMString;
-	var insetBlockStart : CSSOMString;
-	var insetBlockEnd : CSSOMString;
-	var insetInline : CSSOMString;
-	var insetInlineStart : CSSOMString;
-	var insetInlineEnd : CSSOMString;
-	var top : CSSOMString;
-	var left : CSSOMString;
-	var right : CSSOMString;
-	var bottom : CSSOMString;
-	var inset-block : CSSOMString;
-	var inset-block-start : CSSOMString;
-	var inset-block-end : CSSOMString;
-	var inset-inline : CSSOMString;
-	var inset-inline-start : CSSOMString;
-	var inset-inline-end : CSSOMString;
-	var width : CSSOMString;
-	var minWidth : CSSOMString;
-	var maxWidth : CSSOMString;
-	var height : CSSOMString;
-	var minHeight : CSSOMString;
-	var maxHeight : CSSOMString;
-	var blockSize : CSSOMString;
-	var minBlockSize : CSSOMString;
-	var maxBlockSize : CSSOMString;
-	var inlineSize : CSSOMString;
-	var minInlineSize : CSSOMString;
-	var maxInlineSize : CSSOMString;
-	var min-width : CSSOMString;
-	var max-width : CSSOMString;
-	var min-height : CSSOMString;
-	var max-height : CSSOMString;
-	var block-size : CSSOMString;
-	var min-block-size : CSSOMString;
-	var max-block-size : CSSOMString;
-	var inline-size : CSSOMString;
-	var min-inline-size : CSSOMString;
-	var max-inline-size : CSSOMString;
-	var placeSelf : CSSOMString;
-	var alignSelf : CSSOMString;
-	var justifySelf : CSSOMString;
-	var place-self : CSSOMString;
-	var align-self : CSSOMString;
-	var justify-self : CSSOMString;
-	var positionAnchor : CSSOMString;
-	var position-anchor : CSSOMString;
-	var positionArea : CSSOMString;
-	var position-area : CSSOMString;
+	var margin : String;
+	var marginTop : String;
+	var marginRight : String;
+	var marginBottom : String;
+	var marginLeft : String;
+	var marginBlock : String;
+	var marginBlockStart : String;
+	var marginBlockEnd : String;
+	var marginInline : String;
+	var marginInlineStart : String;
+	var marginInlineEnd : String;
+	@:native("margin-top")
+	var marginTop : String;
+	@:native("margin-right")
+	var marginRight : String;
+	@:native("margin-bottom")
+	var marginBottom : String;
+	@:native("margin-left")
+	var marginLeft : String;
+	@:native("margin-block")
+	var marginBlock : String;
+	@:native("margin-block-start")
+	var marginBlockStart : String;
+	@:native("margin-block-end")
+	var marginBlockEnd : String;
+	@:native("margin-inline")
+	var marginInline : String;
+	@:native("margin-inline-start")
+	var marginInlineStart : String;
+	@:native("margin-inline-end")
+	var marginInlineEnd : String;
+	var inset : String;
+	var insetBlock : String;
+	var insetBlockStart : String;
+	var insetBlockEnd : String;
+	var insetInline : String;
+	var insetInlineStart : String;
+	var insetInlineEnd : String;
+	var top : String;
+	var left : String;
+	var right : String;
+	var bottom : String;
+	@:native("inset-block")
+	var insetBlock : String;
+	@:native("inset-block-start")
+	var insetBlockStart : String;
+	@:native("inset-block-end")
+	var insetBlockEnd : String;
+	@:native("inset-inline")
+	var insetInline : String;
+	@:native("inset-inline-start")
+	var insetInlineStart : String;
+	@:native("inset-inline-end")
+	var insetInlineEnd : String;
+	var width : String;
+	var minWidth : String;
+	var maxWidth : String;
+	var height : String;
+	var minHeight : String;
+	var maxHeight : String;
+	var blockSize : String;
+	var minBlockSize : String;
+	var maxBlockSize : String;
+	var inlineSize : String;
+	var minInlineSize : String;
+	var maxInlineSize : String;
+	@:native("min-width")
+	var minWidth : String;
+	@:native("max-width")
+	var maxWidth : String;
+	@:native("min-height")
+	var minHeight : String;
+	@:native("max-height")
+	var maxHeight : String;
+	@:native("block-size")
+	var blockSize : String;
+	@:native("min-block-size")
+	var minBlockSize : String;
+	@:native("max-block-size")
+	var maxBlockSize : String;
+	@:native("inline-size")
+	var inlineSize : String;
+	@:native("min-inline-size")
+	var minInlineSize : String;
+	@:native("max-inline-size")
+	var maxInlineSize : String;
+	var placeSelf : String;
+	var alignSelf : String;
+	var justifySelf : String;
+	@:native("place-self")
+	var placeSelf : String;
+	@:native("align-self")
+	var alignSelf : String;
+	@:native("justify-self")
+	var justifySelf : String;
+	var positionAnchor : String;
+	@:native("position-anchor")
+	var positionAnchor : String;
+	var positionArea : String;
+	@:native("position-area")
+	var positionArea : String;
 }

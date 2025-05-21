@@ -26,7 +26,7 @@ package js.cssomView;
 
 typedef MediaQueryListEventInit = js.dom.EventInit & {
 	@:optional
-	var media : CSSOMString = "";
+	var media : String;
 	@:optional
-	var matches : Bool = false;
+	var matches : Bool;
 };

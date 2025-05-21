@@ -28,5 +28,5 @@ typedef GPUBufferDescriptor = GPUObjectDescriptorBase & {
 	var size : GPUSize64;
 	var usage : GPUBufferUsageFlags;
 	@:optional
-	var mappedAtCreation : Bool = false;
+	var mappedAtCreation : Bool;
 };

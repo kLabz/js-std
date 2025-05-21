@@ -26,7 +26,7 @@ package js.webnn;
 
 typedef MLLinearOptions = MLOperatorOptions & {
 	@:optional
-	var alpha : Float = 1;
+	var alpha : Float;
 	@:optional
-	var beta : Float = 0;
+	var beta : Float;
 };

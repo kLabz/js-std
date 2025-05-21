@@ -30,5 +30,6 @@ typedef SerialOutputSignals = {
 	@:optional
 	var requestToSend : Bool;
 	@:optional
-	var break : Bool;
+	@:native("break")
+	var break_ : Bool;
 };

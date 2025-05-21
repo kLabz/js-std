@@ -25,9 +25,6 @@
 package js.trustedTypes;
 
 @:native("TrustedScriptURL") extern class TrustedScriptURL {
-	/**
-		(special = stringifier)
-	**/
-	function ():Void;
 	function toJSON():String;
+	function toString():String;
 }

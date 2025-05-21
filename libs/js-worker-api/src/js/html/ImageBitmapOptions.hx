@@ -26,11 +26,11 @@ package js.html;
 
 typedef ImageBitmapOptions = {
 	@:optional
-	var imageOrientation : ImageOrientation = "from-image";
+	var imageOrientation : ImageOrientation;
 	@:optional
-	var premultiplyAlpha : PremultiplyAlpha = "default";
+	var premultiplyAlpha : PremultiplyAlpha;
 	@:optional
-	var colorSpaceConversion : ColorSpaceConversion = "default";
+	var colorSpaceConversion : ColorSpaceConversion;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/
@@ -42,5 +42,5 @@ typedef ImageBitmapOptions = {
 	@:optional
 	var resizeHeight : Int;
 	@:optional
-	var resizeQuality : ResizeQuality = "low";
+	var resizeQuality : ResizeQuality;
 };

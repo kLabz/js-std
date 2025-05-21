@@ -28,7 +28,7 @@ package js.webusb;
 	Unhandled extended attribute SecureContext
 **/
 @:native("USBIsochronousInTransferPacket") extern class USBIsochronousInTransferPacket {
-	var data(default, null) : Null<DataView>;
+	var data(default, null) : Null<js.lib.DataView>;
 	var status(default, null) : USBTransferStatus;
-	function new(status:USBTransferStatus, ?data:Null<DataView>):Void;
+	function new(status:USBTransferStatus, ?data:Null<js.lib.DataView>):Void;
 }

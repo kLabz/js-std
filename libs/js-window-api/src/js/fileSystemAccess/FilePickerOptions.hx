@@ -28,7 +28,7 @@ typedef FilePickerOptions = {
 	@:optional
 	var types : Array<FilePickerAcceptType>;
 	@:optional
-	var excludeAcceptAllOption : Bool = false;
+	var excludeAcceptAllOption : Bool;
 	@:optional
 	var id : String;
 	@:optional

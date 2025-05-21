@@ -26,5 +26,5 @@ package js.indexeddb;
 
 typedef IDBTransactionOptions = {
 	@:optional
-	var durability : IDBTransactionDurability = "default";
+	var durability : IDBTransactionDurability;
 };

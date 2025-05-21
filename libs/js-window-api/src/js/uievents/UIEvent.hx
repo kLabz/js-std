@@ -35,7 +35,7 @@ package js.uievents;
 		From partial interface in uievents.idl
 	**/
 	var which(default, null) : Int;
-	function new(type:String, ?eventInitDict:UIEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:UIEventInit):Void;
 	/**
 		From partial interface in uievents.idl
 	**/

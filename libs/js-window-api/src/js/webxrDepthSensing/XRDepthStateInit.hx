@@ -30,5 +30,5 @@ typedef XRDepthStateInit = {
 	@:optional
 	var depthTypeRequest : Array<XRDepthType>;
 	@:optional
-	var matchDepthView : Bool = true;
+	var matchDepthView : Bool;
 };

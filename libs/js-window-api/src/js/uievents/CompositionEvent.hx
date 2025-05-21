@@ -26,9 +26,9 @@ package js.uievents;
 
 @:native("CompositionEvent") extern class CompositionEvent extends UIEvent {
 	var data(default, null) : String;
-	function new(type:String, ?eventInitDict:CompositionEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:CompositionEventInit):Void;
 	/**
 		From partial interface in uievents.idl
 	**/
-	function initCompositionEvent(typeArg:String, ?bubblesArg:Bool = false, ?cancelableArg:Bool = false, ?viewArg:Null<WindowProxy> = null, ?dataArg:String = ""):Void;
+	function initCompositionEvent(typeArg:String, ?bubblesArg:Bool = false, ?cancelableArg:Bool = false, ?viewArg:Null<js.html.Window> = null, ?dataArg:String = ""):Void;
 }

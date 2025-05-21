@@ -33,11 +33,11 @@ package js.html;
 	/**
 		Unhandled extended attribute LegacyUnforgeable
 	**/
-	var window(default, null) : WindowProxy;
+	var window(default, null) : js.html.Window;
 	/**
 		Unhandled extended attribute Replaceable
 	**/
-	var self(default, null) : WindowProxy;
+	var self(default, null) : js.html.Window;
 	/**
 		Unhandled extended attribute LegacyUnforgeable
 	**/
@@ -80,7 +80,7 @@ package js.html;
 	/**
 		Unhandled extended attribute Replaceable
 	**/
-	var frames(default, null) : WindowProxy;
+	var frames(default, null) : js.html.Window;
 	/**
 		Unhandled extended attribute Replaceable
 	**/
@@ -88,12 +88,12 @@ package js.html;
 	/**
 		Unhandled extended attribute LegacyUnforgeable
 	**/
-	var top(default, null) : Null<WindowProxy>;
+	var top(default, null) : Null<js.html.Window>;
 	var opener : Any;
 	/**
 		Unhandled extended attribute Replaceable
 	**/
-	var parent(default, null) : Null<WindowProxy>;
+	var parent(default, null) : Null<js.html.Window>;
 	var frameElement(default, null) : Null<js.dom.Element>;
 	var navigator(default, null) : Navigator;
 	/**
@@ -120,14 +120,6 @@ package js.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onsnapchanged : EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onsnapchanging : EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
 	var ontransitionrun : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -141,6 +133,14 @@ package js.html;
 		From interface mixin GlobalEventHandlers
 	**/
 	var ontransitioncancel : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsnapchanged : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsnapchanging : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -674,12 +674,6 @@ package js.html;
 	**/
 	var cookieStore(default, null) : js.cookieStore.CookieStore;
 	/**
-		From partial interface in css-viewport.idl
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute Replaceable
-	**/
-	var viewport(default, null) : js.cssViewport.Viewport;
-	/**
 		From partial interface in cssom-view.idl
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute Replaceable
@@ -757,16 +751,22 @@ package js.html;
 	**/
 	var devicePixelRatio(default, null) : Float;
 	/**
-		From partial interface in document-picture-in-picture.idl
+		From partial interface in css-viewport.idl
 		Unhandled extended attribute SameObject
-		Unhandled extended attribute SecureContext
+		Unhandled extended attribute Replaceable
 	**/
-	var documentPictureInPicture(default, null) : js.documentPictureInPicture.DocumentPictureInPicture;
+	var viewport(default, null) : js.cssViewport.Viewport;
 	/**
 		From partial interface in dom.idl
 		Unhandled extended attribute Replaceable
 	**/
 	var event(default, null) : haxe.extern.EitherType<js.dom.Event, Void>;
+	/**
+		From partial interface in document-picture-in-picture.idl
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute SecureContext
+	**/
+	var documentPictureInPicture(default, null) : js.documentPictureInPicture.DocumentPictureInPicture;
 	/**
 		From partial interface in fenced-frame.idl
 	**/
@@ -854,22 +854,22 @@ package js.html;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	overload function createImageBitmap(image:ImageBitmapSource, ?options:ImageBitmapOptions = {  }):js.lib.Promise<ImageBitmap>;
+	overload function createImageBitmap(image:ImageBitmapSource, ?options:ImageBitmapOptions):js.lib.Promise<ImageBitmap>;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	overload function createImageBitmap(image:ImageBitmapSource, sx:Int, sy:Int, sw:Int, sh:Int, ?options:ImageBitmapOptions = {  }):js.lib.Promise<ImageBitmap>;
+	overload function createImageBitmap(image:ImageBitmapSource, sx:Int, sy:Int, sw:Int, sh:Int, ?options:ImageBitmapOptions):js.lib.Promise<ImageBitmap>;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 		Unhandled extended attribute NewObject
 	**/
-	function fetch(input:js.fetch.RequestInfo, ?init:js.fetch.RequestInit = {  }):js.lib.Promise<js.fetch.Response>;
+	function fetch(input:js.fetch.RequestInfo, ?init:js.fetch.RequestInit):js.lib.Promise<js.fetch.Response>;
 	function focus():Void;
 	/**
 		From partial interface in cssom.idl
 		Unhandled extended attribute NewObject
 	**/
-	function getComputedStyle(elt:js.dom.Element, ?pseudoElt:Null<CSSOMString>):js.cssom.CSSStyleDeclaration;
+	function getComputedStyle(elt:js.dom.Element, ?pseudoElt:Null<String>):js.cssom.CSSStyleDeclaration;
 	/**
 		From partial interface in digital-goods.idl
 		Unhandled extended attribute SecureContext
@@ -888,7 +888,7 @@ package js.html;
 		From partial interface in cssom-view.idl
 		Unhandled extended attribute NewObject
 	**/
-	function matchMedia(query:CSSOMString):js.cssomView.MediaQueryList;
+	function matchMedia(query:String):js.cssomView.MediaQueryList;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -901,15 +901,15 @@ package js.html;
 		From partial interface in css-nav.idl
 	**/
 	function navigate(dir:js.cssNav.SpatialNavigationDirection):Void;
-	function open(?url:String = "", ?target:String = "_blank", ?features:String = ""):Null<WindowProxy>;
-	overload function postMessage(message:Any, targetOrigin:String, ?transfer:Array<{ }> = []):Void;
-	overload function postMessage(message:Any, ?options:WindowPostMessageOptions = {  }):Void;
+	function open(?url:String = "", ?target:String = "_blank", ?features:String = ""):Null<js.html.Window>;
+	overload function postMessage(message:Any, targetOrigin:String, ?transfer:Array<{ }>):Void;
+	overload function postMessage(message:Any, ?options:WindowPostMessageOptions):Void;
 	function print():Void;
-	function prompt(?message:String = "", ?default:String = ""):Null<String>;
+	function prompt(?message:String = "", ?default_:String = ""):Null<String>;
 	/**
 		From partial interface in local-font-access.idl
 	**/
-	function queryLocalFonts(?options:js.localFontAccess.QueryOptions = {  }):js.lib.Promise<Array<js.localFontAccess.FontData>>;
+	function queryLocalFonts(?options:js.localFontAccess.QueryOptions):js.lib.Promise<Array<js.localFontAccess.FontData>>;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
@@ -929,7 +929,7 @@ package js.html;
 	/**
 		From partial interface in requestidlecallback.idl
 	**/
-	function requestIdleCallback(callback:js.requestidlecallback.IdleRequestCallback, ?options:js.requestidlecallback.IdleRequestOptions = {  }):Int;
+	function requestIdleCallback(callback:js.requestidlecallback.IdleRequestCallback, ?options:js.requestidlecallback.IdleRequestOptions):Int;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -941,7 +941,7 @@ package js.html;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scroll(?options:js.cssomView.ScrollToOptions = {  }):Void;
+	overload function scroll(?options:js.cssomView.ScrollToOptions):Void;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -949,7 +949,7 @@ package js.html;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scrollBy(?options:js.cssomView.ScrollToOptions = {  }):Void;
+	overload function scrollBy(?options:js.cssomView.ScrollToOptions):Void;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -957,7 +957,7 @@ package js.html;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scrollTo(?options:js.cssomView.ScrollToOptions = {  }):Void;
+	overload function scrollTo(?options:js.cssomView.ScrollToOptions):Void;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -965,26 +965,26 @@ package js.html;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:Any):Int;
+	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:Any):Int;
+	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
 	/**
 		From partial interface in file-system-access.idl
 	**/
-	function showDirectoryPicker(?options:js.fileSystemAccess.DirectoryPickerOptions = {  }):js.lib.Promise<js.fs.FileSystemDirectoryHandle>;
+	function showDirectoryPicker(?options:js.fileSystemAccess.DirectoryPickerOptions):js.lib.Promise<js.fs.FileSystemDirectoryHandle>;
 	/**
 		From partial interface in file-system-access.idl
 	**/
-	function showOpenFilePicker(?options:js.fileSystemAccess.OpenFilePickerOptions = {  }):js.lib.Promise<Array<js.fs.FileSystemFileHandle>>;
+	function showOpenFilePicker(?options:js.fileSystemAccess.OpenFilePickerOptions):js.lib.Promise<Array<js.fs.FileSystemFileHandle>>;
 	/**
 		From partial interface in file-system-access.idl
 	**/
-	function showSaveFilePicker(?options:js.fileSystemAccess.SaveFilePickerOptions = {  }):js.lib.Promise<js.fs.FileSystemFileHandle>;
+	function showSaveFilePicker(?options:js.fileSystemAccess.SaveFilePickerOptions):js.lib.Promise<js.fs.FileSystemFileHandle>;
 	function stop():Void;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function structuredClone(value:Any, ?options:StructuredSerializeOptions = {  }):Any;
+	function structuredClone(value:Any, ?options:StructuredSerializeOptions):Any;
 }

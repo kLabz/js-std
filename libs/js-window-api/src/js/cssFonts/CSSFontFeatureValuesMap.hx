@@ -28,5 +28,5 @@ package js.cssFonts;
 	TODO MaplikeDeclaration handling
 **/
 @:native("CSSFontFeatureValuesMap") extern class CSSFontFeatureValuesMap {
-	function set(featureValueName:CSSOMString, values:haxe.extern.EitherType<Int, Array<Int>>):Void;
+	function set(featureValueName:String, values:haxe.extern.EitherType<Int, Array<Int>>):Void;
 }

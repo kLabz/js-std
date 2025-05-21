@@ -26,21 +26,21 @@ package js.webAnimations;
 
 typedef EffectTiming = {
 	@:optional
-	var fill : FillMode = "auto";
+	var fill : FillMode;
 	@:optional
-	var iterationStart : Float = 0.0;
+	var iterationStart : Float;
 	@:optional
-	var iterations : Float = 1.0;
+	var iterations : Float;
 	@:optional
-	var direction : PlaybackDirection = "normal";
+	var direction : PlaybackDirection;
 	@:optional
-	var easing : String = "linear";
+	var easing : String;
 	@:optional
 	var delay : Float;
 	@:optional
 	var endDelay : Float;
 	@:optional
-	var playbackRate : Float = 1.0;
+	var playbackRate : Float;
 	@:optional
-	var duration : haxe.extern.EitherType<Float, haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, String>> = "auto";
+	var duration : haxe.extern.EitherType<Float, haxe.extern.EitherType<js.cssTypedOm.CSSNumericValue, String>>;
 };

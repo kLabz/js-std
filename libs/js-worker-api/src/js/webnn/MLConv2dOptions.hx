@@ -35,11 +35,11 @@ typedef MLConv2dOptions = MLOperatorOptions & {
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var groups : Int = 1;
+	var groups : Int;
 	@:optional
-	var inputLayout : MLInputOperandLayout = "nchw";
+	var inputLayout : MLInputOperandLayout;
 	@:optional
-	var filterLayout : MLConv2dFilterOperandLayout = "oihw";
+	var filterLayout : MLConv2dFilterOperandLayout;
 	@:optional
 	var bias : MLOperand;
 };

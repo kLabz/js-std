@@ -24,4 +24,4 @@
 
 package js.webgl1;
 
-typedef Int32List = haxe.extern.EitherType<Int32Array, Array<GLint>>;
+typedef Int32List = haxe.extern.EitherType<js.lib.Int32Array, Array<GLint>>;

@@ -26,14 +26,14 @@ package js.webAnimations;
 
 @:native("KeyframeEffect") extern class KeyframeEffect extends AnimationEffect {
 	var target : Null<js.dom.Element>;
-	var pseudoElement : Null<CSSOMString>;
+	var pseudoElement : Null<String>;
 	var composite : CompositeOperation;
 	/**
 		From partial interface in web-animations-2.idl
 	**/
 	var iterationComposite : js.webAnimations2.IterationCompositeOperation;
 	overload function new(source:KeyframeEffect):Void;
-	overload function new(target:Null<js.dom.Element>, keyframes:Null<{ }>, ?options:haxe.extern.EitherType<Float, KeyframeEffectOptions> = {  }):Void;
+	overload function new(target:Null<js.dom.Element>, keyframes:Null<{ }>, ?options:haxe.extern.EitherType<Float, KeyframeEffectOptions>):Void;
 	function getKeyframes():Array<{ }>;
 	function setKeyframes(keyframes:Null<{ }>):Void;
 }

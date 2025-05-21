@@ -26,11 +26,11 @@ package js.geometry;
 
 typedef DOMPointInit = {
 	@:optional
-	var x : Float = 0;
+	var x : Float;
 	@:optional
-	var y : Float = 0;
+	var y : Float;
 	@:optional
-	var z : Float = 0;
+	var z : Float;
 	@:optional
-	var w : Float = 1;
+	var w : Float;
 };

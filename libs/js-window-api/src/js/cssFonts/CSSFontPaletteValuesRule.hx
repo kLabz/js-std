@@ -25,8 +25,8 @@
 package js.cssFonts;
 
 @:native("CSSFontPaletteValuesRule") extern class CSSFontPaletteValuesRule extends js.cssom.CSSRule {
-	var name(default, null) : CSSOMString;
-	var fontFamily(default, null) : CSSOMString;
-	var basePalette(default, null) : CSSOMString;
-	var overrideColors(default, null) : CSSOMString;
+	var name(default, null) : String;
+	var fontFamily(default, null) : String;
+	var basePalette(default, null) : String;
+	var overrideColors(default, null) : String;
 }

@@ -28,13 +28,13 @@ typedef GPUCanvasConfiguration = {
 	var device : GPUDevice;
 	var format : GPUTextureFormat;
 	@:optional
-	var usage : GPUTextureUsageFlags = 0x10;
+	var usage : GPUTextureUsageFlags;
 	@:optional
-	var viewFormats : Array<GPUTextureFormat> = [];
+	var viewFormats : Array<GPUTextureFormat>;
 	@:optional
-	var colorSpace : js.html.PredefinedColorSpace = "srgb";
+	var colorSpace : js.html.PredefinedColorSpace;
 	@:optional
-	var toneMapping : GPUCanvasToneMapping = {  };
+	var toneMapping : GPUCanvasToneMapping;
 	@:optional
-	var alphaMode : GPUCanvasAlphaMode = "opaque";
+	var alphaMode : GPUCanvasAlphaMode;
 };

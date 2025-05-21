@@ -30,12 +30,12 @@ package js.translationApi;
 @:native("LanguageDetector") extern class LanguageDetector {
 	var expectedInputLanguages(default, null) : Null<Array<String>>;
 	var inputQuota(default, null) : Float;
-	function availability(?options:LanguageDetectorCreateCoreOptions = {  }):js.lib.Promise<js.writingAssistanceApis.Availability>;
-	function create(?options:LanguageDetectorCreateOptions = {  }):js.lib.Promise<LanguageDetector>;
+	function availability(?options:LanguageDetectorCreateCoreOptions):js.lib.Promise<js.writingAssistanceApis.Availability>;
+	function create(?options:LanguageDetectorCreateOptions):js.lib.Promise<LanguageDetector>;
 	/**
 		From interface mixin DestroyableModel
 	**/
 	function destroy():Void;
-	function detect(input:String, ?options:LanguageDetectorDetectOptions = {  }):js.lib.Promise<Array<LanguageDetectionResult>>;
-	function measureInputUsage(input:String, ?options:LanguageDetectorDetectOptions = {  }):js.lib.Promise<Float>;
+	function detect(input:String, ?options:LanguageDetectorDetectOptions):js.lib.Promise<Array<LanguageDetectionResult>>;
+	function measureInputUsage(input:String, ?options:LanguageDetectorDetectOptions):js.lib.Promise<Float>;
 }

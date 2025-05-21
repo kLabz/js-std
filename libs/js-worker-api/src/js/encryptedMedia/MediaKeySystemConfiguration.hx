@@ -26,17 +26,17 @@ package js.encryptedMedia;
 
 typedef MediaKeySystemConfiguration = {
 	@:optional
-	var label : String = "";
+	var label : String;
 	@:optional
-	var initDataTypes : Array<String> = [];
+	var initDataTypes : Array<String>;
 	@:optional
-	var audioCapabilities : Array<MediaKeySystemMediaCapability> = [];
+	var audioCapabilities : Array<MediaKeySystemMediaCapability>;
 	@:optional
-	var videoCapabilities : Array<MediaKeySystemMediaCapability> = [];
+	var videoCapabilities : Array<MediaKeySystemMediaCapability>;
 	@:optional
-	var distinctiveIdentifier : MediaKeysRequirement = "optional";
+	var distinctiveIdentifier : MediaKeysRequirement;
 	@:optional
-	var persistentState : MediaKeysRequirement = "optional";
+	var persistentState : MediaKeysRequirement;
 	@:optional
 	var sessionTypes : Array<String>;
 };

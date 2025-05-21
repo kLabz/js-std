@@ -24,13 +24,12 @@
 
 package js.svg;
 
+/**
+	TODO special=setter (index:Int, newItem:SVGLength) -> Void
+**/
 @:native("SVGLengthList") extern class SVGLengthList {
 	var length(default, null) : Int;
 	var numberOfItems(default, null) : Int;
-	/**
-		(special = setter)
-	**/
-	function (index:Int, newItem:SVGLength):Void;
 	function appendItem(newItem:SVGLength):SVGLength;
 	function clear():Void;
 	function getItem(index:Int):SVGLength;

@@ -31,7 +31,7 @@ package js.webNfc;
 	var recordType(default, null) : String;
 	var mediaType(default, null) : Null<String>;
 	var id(default, null) : Null<String>;
-	var data(default, null) : Null<DataView>;
+	var data(default, null) : Null<js.lib.DataView>;
 	var encoding(default, null) : Null<String>;
 	var lang(default, null) : Null<String>;
 	function new(recordInit:NDEFRecordInit):Void;

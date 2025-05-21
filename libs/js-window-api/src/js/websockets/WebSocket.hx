@@ -39,7 +39,7 @@ package js.websockets;
 	var protocol(default, null) : String;
 	var onmessage : js.html.EventHandler;
 	var binaryType : BinaryType;
-	function new(url:String, ?protocols:haxe.extern.EitherType<String, Array<String>> = []):Void;
+	function new(url:String, ?protocols:haxe.extern.EitherType<String, Array<String>>):Void;
 	function close(?code:Int, ?reason:String):Void;
 	function send(data:haxe.extern.EitherType<js.webidl.BufferSource, haxe.extern.EitherType<js.fileapi.Blob, String>>):Void;
 }

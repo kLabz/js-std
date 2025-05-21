@@ -30,7 +30,7 @@ package js.webaudio;
 	var duration(default, null) : Float;
 	var numberOfChannels(default, null) : Int;
 	function new(options:AudioBufferOptions):Void;
-	function copyFromChannel(destination:Float32Array, channelNumber:Int, ?bufferOffset:Int = 0):Void;
-	function copyToChannel(source:Float32Array, channelNumber:Int, ?bufferOffset:Int = 0):Void;
-	function getChannelData(channel:Int):Float32Array;
+	function copyFromChannel(destination:js.lib.Float32Array, channelNumber:Int, ?bufferOffset:Int = 0):Void;
+	function copyToChannel(source:js.lib.Float32Array, channelNumber:Int, ?bufferOffset:Int = 0):Void;
+	function getChannelData(channel:Int):js.lib.Float32Array;
 }

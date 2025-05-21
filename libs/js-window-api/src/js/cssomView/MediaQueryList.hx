@@ -25,9 +25,9 @@
 package js.cssomView;
 
 @:native("MediaQueryList") extern class MediaQueryList extends js.dom.EventTarget {
-	var media(default, null) : CSSOMString;
+	var media(default, null) : String;
 	var matches(default, null) : Bool;
 	var onchange : js.html.EventHandler;
-	function addListener(callback:Null<EventListener>):Void;
-	function removeListener(callback:Null<EventListener>):Void;
+	function addListener(callback:Null<js.dom.EventListener>):Void;
+	function removeListener(callback:Null<js.dom.EventListener>):Void;
 }

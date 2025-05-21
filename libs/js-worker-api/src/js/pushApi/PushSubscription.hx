@@ -34,7 +34,7 @@ package js.pushApi;
 		Unhandled extended attribute SameObject
 	**/
 	var options(default, null) : PushSubscriptionOptions;
-	function getKey(name:PushEncryptionKeyName):Null<ArrayBuffer>;
+	function getKey(name:PushEncryptionKeyName):Null<js.lib.ArrayBuffer>;
 	function toJSON():PushSubscriptionJSON;
 	function unsubscribe():js.lib.Promise<Bool>;
 }

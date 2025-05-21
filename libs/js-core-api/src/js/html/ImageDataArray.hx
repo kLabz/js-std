@@ -24,4 +24,4 @@
 
 package js.html;
 
-typedef ImageDataArray = haxe.extern.EitherType<Uint8ClampedArray, Float16Array>;
+typedef ImageDataArray = haxe.extern.EitherType<js.lib.Uint8ClampedArray, js.lib.Float16Array>;

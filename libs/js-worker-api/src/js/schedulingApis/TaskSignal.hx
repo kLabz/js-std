@@ -30,5 +30,5 @@ package js.schedulingApis;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function any(signals:Array<js.dom.AbortSignal>, ?init:TaskSignalAnyInit = {  }):TaskSignal;
+	function any(signals:Array<js.dom.AbortSignal>, ?init:TaskSignalAnyInit):TaskSignal;
 }

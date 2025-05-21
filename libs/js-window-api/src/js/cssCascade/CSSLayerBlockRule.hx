@@ -25,5 +25,5 @@
 package js.cssCascade;
 
 @:native("CSSLayerBlockRule") extern class CSSLayerBlockRule extends js.cssom.CSSGroupingRule {
-	var name(default, null) : CSSOMString;
+	var name(default, null) : String;
 }

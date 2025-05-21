@@ -28,7 +28,7 @@ typedef AddEventListenerOptions = EventListenerOptions & {
 	@:optional
 	var passive : Bool;
 	@:optional
-	var once : Bool = false;
+	var once : Bool;
 	@:optional
 	var signal : AbortSignal;
 };

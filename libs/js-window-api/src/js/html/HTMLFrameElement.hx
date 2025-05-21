@@ -32,7 +32,7 @@ package js.html;
 	var longDesc : String;
 	var noResize : Bool;
 	var contentDocument(default, null) : Null<js.dom.Document>;
-	var contentWindow(default, null) : Null<WindowProxy>;
+	var contentWindow(default, null) : Null<js.html.Window>;
 	var marginHeight : String;
 	var marginWidth : String;
 }

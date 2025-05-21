@@ -32,5 +32,5 @@ package js.pushApi;
 	/**
 		Unhandled extended attribute SameObject
 	**/
-	var applicationServerKey(default, null) : Null<ArrayBuffer>;
+	var applicationServerKey(default, null) : Null<js.lib.ArrayBuffer>;
 }

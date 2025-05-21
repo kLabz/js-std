@@ -24,4 +24,4 @@
 
 package js.webnn;
 
-typedef MLNumber = haxe.extern.EitherType<bigint, Float>;
+typedef MLNumber = haxe.extern.EitherType<js.lib.BigInt, Float>;

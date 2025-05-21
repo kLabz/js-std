@@ -29,5 +29,5 @@ typedef PressureObserverOptions = {
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var sampleInterval : Int = 0;
+	var sampleInterval : Int;
 };

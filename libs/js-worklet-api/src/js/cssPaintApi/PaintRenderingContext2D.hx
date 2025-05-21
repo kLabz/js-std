@@ -245,7 +245,7 @@ package js.cssPaintApi;
 	/**
 		From interface mixin CanvasTransform
 	**/
-	overload function setTransform(?transform:js.geometry.DOMMatrix2DInit = {  }):Void;
+	overload function setTransform(?transform:js.geometry.DOMMatrix2DInit):Void;
 	/**
 		From interface mixin CanvasDrawPath
 	**/

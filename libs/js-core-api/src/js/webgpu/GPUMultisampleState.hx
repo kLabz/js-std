@@ -26,9 +26,9 @@ package js.webgpu;
 
 typedef GPUMultisampleState = {
 	@:optional
-	var count : GPUSize32 = 1;
+	var count : GPUSize32;
 	@:optional
-	var mask : GPUSampleMask = 0xFFFFFFFF;
+	var mask : GPUSampleMask;
 	@:optional
-	var alphaToCoverageEnabled : Bool = false;
+	var alphaToCoverageEnabled : Bool;
 };

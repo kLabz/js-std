@@ -24,9 +24,6 @@
 
 package js.html;
 
-/**
-	TODO attribute href: special=stringifier readonly=false
-**/
 @:native("HTMLAreaElement") extern class HTMLAreaElement extends HTMLElement {
 	var alt : String;
 	var coords : String;
@@ -45,6 +42,10 @@ package js.html;
 		From interface mixin HTMLAttributionSrcElementUtils
 	**/
 	var attributionSrc : String;
+	/**
+		From interface mixin HTMLHyperlinkElementUtils
+	**/
+	var href : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
 	**/
@@ -89,4 +90,8 @@ package js.html;
 		From partial interface in html.idl
 	**/
 	var noHref : Bool;
+	/**
+		Returns `this.href`.
+	**/
+	function toString():String;
 }

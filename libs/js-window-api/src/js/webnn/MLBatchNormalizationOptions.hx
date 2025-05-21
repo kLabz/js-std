@@ -33,7 +33,7 @@ typedef MLBatchNormalizationOptions = MLOperatorOptions & {
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var axis : Int = 1;
+	var axis : Int;
 	@:optional
-	var epsilon : Float = 1e-5;
+	var epsilon : Float;
 };

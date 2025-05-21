@@ -25,18 +25,23 @@
 package js.cssom;
 
 @:native("CSSPageDescriptors") extern class CSSPageDescriptors extends CSSStyleDeclaration {
-	var margin : CSSOMString;
-	var marginTop : CSSOMString;
-	var marginRight : CSSOMString;
-	var marginBottom : CSSOMString;
-	var marginLeft : CSSOMString;
-	var margin-top : CSSOMString;
-	var margin-right : CSSOMString;
-	var margin-bottom : CSSOMString;
-	var margin-left : CSSOMString;
-	var size : CSSOMString;
-	var pageOrientation : CSSOMString;
-	var page-orientation : CSSOMString;
-	var marks : CSSOMString;
-	var bleed : CSSOMString;
+	var margin : String;
+	var marginTop : String;
+	var marginRight : String;
+	var marginBottom : String;
+	var marginLeft : String;
+	@:native("margin-top")
+	var marginTop : String;
+	@:native("margin-right")
+	var marginRight : String;
+	@:native("margin-bottom")
+	var marginBottom : String;
+	@:native("margin-left")
+	var marginLeft : String;
+	var size : String;
+	var pageOrientation : String;
+	@:native("page-orientation")
+	var pageOrientation : String;
+	var marks : String;
+	var bleed : String;
 }

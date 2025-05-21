@@ -57,5 +57,5 @@ package js.webBluetooth;
 	**/
 	var onserviceremoved : js.html.EventHandler;
 	function forget():js.lib.Promise<Void>;
-	function watchAdvertisements(?options:WatchAdvertisementsOptions = {  }):js.lib.Promise<Void>;
+	function watchAdvertisements(?options:WatchAdvertisementsOptions):js.lib.Promise<Void>;
 }

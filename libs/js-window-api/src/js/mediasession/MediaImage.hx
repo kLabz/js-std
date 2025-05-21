@@ -27,7 +27,7 @@ package js.mediasession;
 typedef MediaImage = {
 	var src : String;
 	@:optional
-	var sizes : String = "";
+	var sizes : String;
 	@:optional
-	var type : String = "";
+	var type : String;
 };

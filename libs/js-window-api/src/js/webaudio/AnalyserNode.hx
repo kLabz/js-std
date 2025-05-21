@@ -30,9 +30,9 @@ package js.webaudio;
 	var minDecibels : Float;
 	var maxDecibels : Float;
 	var smoothingTimeConstant : Float;
-	function new(context:BaseAudioContext, ?options:AnalyserOptions = {  }):Void;
-	function getByteFrequencyData(array:Uint8Array):Void;
-	function getByteTimeDomainData(array:Uint8Array):Void;
-	function getFloatFrequencyData(array:Float32Array):Void;
-	function getFloatTimeDomainData(array:Float32Array):Void;
+	function new(context:BaseAudioContext, ?options:AnalyserOptions):Void;
+	function getByteFrequencyData(array:js.lib.Uint8Array):Void;
+	function getByteTimeDomainData(array:js.lib.Uint8Array):Void;
+	function getFloatFrequencyData(array:js.lib.Float32Array):Void;
+	function getFloatTimeDomainData(array:js.lib.Float32Array):Void;
 }

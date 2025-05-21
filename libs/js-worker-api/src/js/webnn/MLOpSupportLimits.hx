@@ -45,7 +45,8 @@ typedef MLOpSupportLimits = {
 	@:optional
 	var batchNormalization : MLBatchNormalizationSupportLimits;
 	@:optional
-	var cast : MLSingleInputSupportLimits;
+	@:native("cast")
+	var cast_ : MLSingleInputSupportLimits;
 	@:optional
 	var clamp : MLSingleInputSupportLimits;
 	@:optional

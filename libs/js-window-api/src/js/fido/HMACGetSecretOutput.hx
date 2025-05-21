@@ -25,7 +25,7 @@
 package js.fido;
 
 typedef HMACGetSecretOutput = {
-	var output1 : ArrayBuffer;
+	var output1 : js.lib.ArrayBuffer;
 	@:optional
-	var output2 : ArrayBuffer;
+	var output2 : js.lib.ArrayBuffer;
 };

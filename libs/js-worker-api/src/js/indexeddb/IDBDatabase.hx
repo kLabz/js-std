@@ -36,10 +36,10 @@ package js.indexeddb;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function createObjectStore(name:String, ?options:IDBObjectStoreParameters = {  }):IDBObjectStore;
+	function createObjectStore(name:String, ?options:IDBObjectStoreParameters):IDBObjectStore;
 	function deleteObjectStore(name:String):Void;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function transaction(storeNames:haxe.extern.EitherType<String, Array<String>>, ?mode:IDBTransactionMode = "readonly", ?options:IDBTransactionOptions = {  }):IDBTransaction;
+	function transaction(storeNames:haxe.extern.EitherType<String, Array<String>>, ?mode:IDBTransactionMode = "readonly", ?options:IDBTransactionOptions):IDBTransaction;
 }

@@ -31,5 +31,5 @@ package js.webauthn;
 	/**
 		Unhandled extended attribute SameObject
 	**/
-	var clientDataJSON(default, null) : ArrayBuffer;
+	var clientDataJSON(default, null) : js.lib.ArrayBuffer;
 }

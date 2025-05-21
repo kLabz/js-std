@@ -46,7 +46,7 @@ package js.uievents;
 		From partial interface in uievents.idl
 	**/
 	var keyCode(default, null) : Int;
-	function new(type:String, ?eventInitDict:KeyboardEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:KeyboardEventInit):Void;
 	function getModifierState(keyArg:String):Bool;
 	/**
 		From partial interface in uievents.idl

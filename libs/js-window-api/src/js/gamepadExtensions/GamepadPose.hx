@@ -27,10 +27,10 @@ package js.gamepadExtensions;
 @:native("GamepadPose") extern class GamepadPose {
 	var hasOrientation(default, null) : Bool;
 	var hasPosition(default, null) : Bool;
-	var position(default, null) : Null<Float32Array>;
-	var linearVelocity(default, null) : Null<Float32Array>;
-	var linearAcceleration(default, null) : Null<Float32Array>;
-	var orientation(default, null) : Null<Float32Array>;
-	var angularVelocity(default, null) : Null<Float32Array>;
-	var angularAcceleration(default, null) : Null<Float32Array>;
+	var position(default, null) : Null<js.lib.Float32Array>;
+	var linearVelocity(default, null) : Null<js.lib.Float32Array>;
+	var linearAcceleration(default, null) : Null<js.lib.Float32Array>;
+	var orientation(default, null) : Null<js.lib.Float32Array>;
+	var angularVelocity(default, null) : Null<js.lib.Float32Array>;
+	var angularAcceleration(default, null) : Null<js.lib.Float32Array>;
 }

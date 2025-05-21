@@ -56,12 +56,12 @@ package js.fetch;
 		From partial interface in private-network-access.idl
 	**/
 	var targetAddressSpace(default, null) : js.privateNetworkAccess.IPAddressSpace;
-	function new(input:RequestInfo, ?init:RequestInit = {  }):Void;
+	function new(input:RequestInfo, ?init:RequestInit):Void;
 	/**
 		From interface mixin Body
 		Unhandled extended attribute NewObject
 	**/
-	function arrayBuffer():js.lib.Promise<ArrayBuffer>;
+	function arrayBuffer():js.lib.Promise<js.lib.ArrayBuffer>;
 	/**
 		From interface mixin Body
 		Unhandled extended attribute NewObject
@@ -71,7 +71,7 @@ package js.fetch;
 		From interface mixin Body
 		Unhandled extended attribute NewObject
 	**/
-	function bytes():js.lib.Promise<Uint8Array>;
+	function bytes():js.lib.Promise<js.lib.Uint8Array>;
 	/**
 		Unhandled extended attribute NewObject
 	**/

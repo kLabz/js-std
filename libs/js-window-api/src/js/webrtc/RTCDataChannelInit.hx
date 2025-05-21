@@ -26,7 +26,7 @@ package js.webrtc;
 
 typedef RTCDataChannelInit = {
 	@:optional
-	var ordered : Bool = true;
+	var ordered : Bool;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/
@@ -38,14 +38,14 @@ typedef RTCDataChannelInit = {
 	@:optional
 	var maxRetransmits : Int;
 	@:optional
-	var protocol : String = "";
+	var protocol : String;
 	@:optional
-	var negotiated : Bool = false;
+	var negotiated : Bool;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
 	var id : Int;
 	@:optional
-	var priority : js.webrtcPriority.RTCPriorityType = "low";
+	var priority : js.webrtcPriority.RTCPriorityType;
 };

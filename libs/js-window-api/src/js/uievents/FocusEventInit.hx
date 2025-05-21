@@ -26,5 +26,5 @@ package js.uievents;
 
 typedef FocusEventInit = UIEventInit & {
 	@:optional
-	var relatedTarget : Null<js.dom.EventTarget> = null;
+	var relatedTarget : Null<js.dom.EventTarget>;
 };

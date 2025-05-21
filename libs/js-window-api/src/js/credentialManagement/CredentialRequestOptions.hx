@@ -26,11 +26,11 @@ package js.credentialManagement;
 
 typedef CredentialRequestOptions = {
 	@:optional
-	var mediation : CredentialMediationRequirement = "optional";
+	var mediation : CredentialMediationRequirement;
 	@:optional
 	var signal : js.dom.AbortSignal;
 	@:optional
-	var password : Bool = false;
+	var password : Bool;
 	@:optional
 	var federated : FederatedCredentialRequestOptions;
 	@:optional

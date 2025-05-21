@@ -39,7 +39,7 @@ package js.webxrHitTest;
 	/**
 		Unhandled extended attribute SameObject
 	**/
-	var matrix(default, null) : Float32Array;
+	var matrix(default, null) : js.lib.Float32Array;
 	overload function new(transform:js.webxr.XRRigidTransform):Void;
-	overload function new(?origin:js.geometry.DOMPointInit = {  }, ?direction:XRRayDirectionInit = {  }):Void;
+	overload function new(?origin:js.geometry.DOMPointInit, ?direction:XRRayDirectionInit):Void;
 }

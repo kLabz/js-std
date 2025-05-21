@@ -25,7 +25,7 @@
 package js.cssRegions;
 
 @:native("NamedFlow") extern class NamedFlow extends js.dom.EventTarget {
-	var name(default, null) : CSSOMString;
+	var name(default, null) : String;
 	var overset(default, null) : Bool;
 	var firstEmptyRegionIndex(default, null) : Int;
 	function getContent():Array<js.dom.Node>;

@@ -25,7 +25,7 @@
 package js.webgpu;
 
 enum abstract GPUTextureDimension(String) {
-	var 1D = "1d";
-	var 2D = "2d";
-	var 3D = "3d";
+	var _1D = "1d";
+	var _2D = "2d";
+	var _3D = "3d";
 }

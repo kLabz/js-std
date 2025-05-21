@@ -26,23 +26,23 @@ package js.html;
 
 typedef NavigateEventInit = js.dom.EventInit & {
 	@:optional
-	var navigationType : NavigationType = "push";
+	var navigationType : NavigationType;
 	var destination : NavigationDestination;
 	@:optional
-	var canIntercept : Bool = false;
+	var canIntercept : Bool;
 	@:optional
-	var userInitiated : Bool = false;
+	var userInitiated : Bool;
 	@:optional
-	var hashChange : Bool = false;
+	var hashChange : Bool;
 	var signal : js.dom.AbortSignal;
 	@:optional
-	var formData : Null<js.xhr.FormData> = null;
+	var formData : Null<js.xhr.FormData>;
 	@:optional
-	var downloadRequest : Null<String> = null;
+	var downloadRequest : Null<String>;
 	@:optional
 	var info : Any;
 	@:optional
-	var hasUAVisualTransition : Bool = false;
+	var hasUAVisualTransition : Bool;
 	@:optional
-	var sourceElement : Null<js.dom.Element> = null;
+	var sourceElement : Null<js.dom.Element>;
 };

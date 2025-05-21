@@ -28,7 +28,7 @@ package js.webrtcEncodedTransform;
 	Unhandled extended attribute Serializable
 **/
 @:native("RTCEncodedAudioFrame") extern class RTCEncodedAudioFrame {
-	var data : ArrayBuffer;
-	function new(originalFrame:RTCEncodedAudioFrame, ?options:RTCEncodedAudioFrameOptions = {  }):Void;
+	var data : js.lib.ArrayBuffer;
+	function new(originalFrame:RTCEncodedAudioFrame, ?options:RTCEncodedAudioFrameOptions):Void;
 	function getMetadata():RTCEncodedAudioFrameMetadata;
 }

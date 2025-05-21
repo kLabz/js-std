@@ -67,26 +67,26 @@ package js.webrtc;
 		From partial interface in webrtc.idl
 	**/
 	var ondatachannel : js.html.EventHandler;
-	function new(?configuration:RTCConfiguration = {  }):Void;
-	overload function addIceCandidate(?candidate:RTCIceCandidateInit = {  }):js.lib.Promise<Void>;
+	function new(?configuration:RTCConfiguration):Void;
+	overload function addIceCandidate(?candidate:RTCIceCandidateInit):js.lib.Promise<Void>;
 	overload function addIceCandidate(candidate:RTCIceCandidateInit, successCallback:js.webidl.VoidFunction, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
 	/**
 		From partial interface in webrtc.idl
 	**/
-	function addTrack(track:js.mediacaptureStreams.MediaStreamTrack, streams:js.mediacaptureStreams.MediaStream):RTCRtpSender;
+	function addTrack(track:js.mediacaptureStreams.MediaStreamTrack, streams:haxe.Rest<js.mediacaptureStreams.MediaStream>):RTCRtpSender;
 	/**
 		From partial interface in webrtc.idl
 	**/
-	function addTransceiver(trackOrKind:haxe.extern.EitherType<js.mediacaptureStreams.MediaStreamTrack, String>, ?init:RTCRtpTransceiverInit = {  }):RTCRtpTransceiver;
+	function addTransceiver(trackOrKind:haxe.extern.EitherType<js.mediacaptureStreams.MediaStreamTrack, String>, ?init:RTCRtpTransceiverInit):RTCRtpTransceiver;
 	function close():Void;
-	overload function createAnswer(?options:RTCAnswerOptions = {  }):js.lib.Promise<RTCSessionDescriptionInit>;
+	overload function createAnswer(?options:RTCAnswerOptions):js.lib.Promise<RTCSessionDescriptionInit>;
 	overload function createAnswer(successCallback:RTCSessionDescriptionCallback, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
 	/**
 		From partial interface in webrtc.idl
 	**/
-	function createDataChannel(label:String, ?dataChannelDict:RTCDataChannelInit = {  }):RTCDataChannel;
-	overload function createOffer(?options:RTCOfferOptions = {  }):js.lib.Promise<RTCSessionDescriptionInit>;
-	overload function createOffer(successCallback:RTCSessionDescriptionCallback, failureCallback:RTCPeerConnectionErrorCallback, ?options:RTCOfferOptions = {  }):js.lib.Promise<Void>;
+	function createDataChannel(label:String, ?dataChannelDict:RTCDataChannelInit):RTCDataChannel;
+	overload function createOffer(?options:RTCOfferOptions):js.lib.Promise<RTCSessionDescriptionInit>;
+	overload function createOffer(successCallback:RTCSessionDescriptionCallback, failureCallback:RTCPeerConnectionErrorCallback, ?options:RTCOfferOptions):js.lib.Promise<Void>;
 	/**
 		From partial interface in webrtc.idl
 	**/
@@ -117,12 +117,12 @@ package js.webrtc;
 	**/
 	function removeTrack(sender:RTCRtpSender):Void;
 	function restartIce():Void;
-	function setConfiguration(?configuration:RTCConfiguration = {  }):Void;
+	function setConfiguration(?configuration:RTCConfiguration):Void;
 	/**
 		From partial interface in webrtc-identity.idl
 	**/
-	function setIdentityProvider(provider:String, ?options:js.webrtcIdentity.RTCIdentityProviderOptions = {  }):Void;
-	overload function setLocalDescription(?description:RTCLocalSessionDescriptionInit = {  }):js.lib.Promise<Void>;
+	function setIdentityProvider(provider:String, ?options:js.webrtcIdentity.RTCIdentityProviderOptions):Void;
+	overload function setLocalDescription(?description:RTCLocalSessionDescriptionInit):js.lib.Promise<Void>;
 	overload function setLocalDescription(description:RTCLocalSessionDescriptionInit, successCallback:js.webidl.VoidFunction, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
 	overload function setRemoteDescription(description:RTCSessionDescriptionInit):js.lib.Promise<Void>;
 	overload function setRemoteDescription(description:RTCSessionDescriptionInit, successCallback:js.webidl.VoidFunction, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;

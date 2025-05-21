@@ -26,6 +26,6 @@ package js.webaudio;
 
 enum abstract OverSampleType(String) {
 	var NONE = "none";
-	var 2X = "2x";
-	var 4X = "4x";
+	var _2X = "2x";
+	var _4X = "4x";
 }

@@ -26,5 +26,5 @@ package js.html;
 
 typedef PageRevealEventInit = js.dom.EventInit & {
 	@:optional
-	var viewTransition : Null<js.cssViewTransitions.ViewTransition> = null;
+	var viewTransition : Null<js.cssViewTransitions.ViewTransition>;
 };

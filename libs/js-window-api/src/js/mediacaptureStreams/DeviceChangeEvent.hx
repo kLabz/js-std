@@ -33,5 +33,5 @@ package js.mediacaptureStreams;
 		Unhandled extended attribute SameObject
 	**/
 	var userInsertedDevices(default, null) : Array<MediaDeviceInfo>;
-	function new(type:String, ?eventInitDict:DeviceChangeEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:DeviceChangeEventInit):Void;
 }

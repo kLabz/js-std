@@ -33,5 +33,5 @@ package js.webxr;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function requestSession(mode:XRSessionMode, ?options:XRSessionInit = {  }):js.lib.Promise<XRSession>;
+	function requestSession(mode:XRSessionMode, ?options:XRSessionInit):js.lib.Promise<XRSession>;
 }

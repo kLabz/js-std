@@ -34,7 +34,7 @@ package js.webnn;
 	function destroy():Void;
 	function dispatch(graph:MLGraph, inputs:MLNamedTensors, outputs:MLNamedTensors):Void;
 	function opSupportLimits():MLOpSupportLimits;
-	overload function readTensor(tensor:MLTensor):js.lib.Promise<ArrayBuffer>;
+	overload function readTensor(tensor:MLTensor):js.lib.Promise<js.lib.ArrayBuffer>;
 	overload function readTensor(tensor:MLTensor, outputData:js.webidl.AllowSharedBufferSource):js.lib.Promise<Void>;
 	function writeTensor(tensor:MLTensor, inputData:js.webidl.AllowSharedBufferSource):Void;
 }

@@ -28,11 +28,11 @@ typedef MLGemmOptions = MLOperatorOptions & {
 	@:optional
 	var c : MLOperand;
 	@:optional
-	var alpha : Float = 1.0;
+	var alpha : Float;
 	@:optional
-	var beta : Float = 1.0;
+	var beta : Float;
 	@:optional
-	var aTranspose : Bool = false;
+	var aTranspose : Bool;
 	@:optional
-	var bTranspose : Bool = false;
+	var bTranspose : Bool;
 };

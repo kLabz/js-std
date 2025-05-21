@@ -32,6 +32,6 @@ package js.orientationEvent;
 	var accelerationIncludingGravity(default, null) : Null<DeviceMotionEventAcceleration>;
 	var rotationRate(default, null) : Null<DeviceMotionEventRotationRate>;
 	var interval(default, null) : Float;
-	function new(type:String, ?eventInitDict:DeviceMotionEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:DeviceMotionEventInit):Void;
 	function requestPermission():js.lib.Promise<js.permissions.PermissionState>;
 }

@@ -32,5 +32,5 @@ package js.webrtc;
 	var state(default, null) : RTCDtlsTransportState;
 	var onstatechange : js.html.EventHandler;
 	var onerror : js.html.EventHandler;
-	function getRemoteCertificates():Array<ArrayBuffer>;
+	function getRemoteCertificates():Array<js.lib.ArrayBuffer>;
 }

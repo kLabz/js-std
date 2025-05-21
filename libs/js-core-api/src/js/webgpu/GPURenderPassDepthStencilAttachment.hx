@@ -33,13 +33,13 @@ typedef GPURenderPassDepthStencilAttachment = {
 	@:optional
 	var depthStoreOp : GPUStoreOp;
 	@:optional
-	var depthReadOnly : Bool = false;
+	var depthReadOnly : Bool;
 	@:optional
-	var stencilClearValue : GPUStencilValue = 0;
+	var stencilClearValue : GPUStencilValue;
 	@:optional
 	var stencilLoadOp : GPULoadOp;
 	@:optional
 	var stencilStoreOp : GPUStoreOp;
 	@:optional
-	var stencilReadOnly : Bool = false;
+	var stencilReadOnly : Bool;
 };

@@ -39,7 +39,7 @@ package js.webaudio;
 	var coneInnerAngle : Float;
 	var coneOuterAngle : Float;
 	var coneOuterGain : Float;
-	function new(context:BaseAudioContext, ?options:PannerOptions = {  }):Void;
+	function new(context:BaseAudioContext, ?options:PannerOptions):Void;
 	function setOrientation(x:Float, y:Float, z:Float):Void;
 	function setPosition(x:Float, y:Float, z:Float):Void;
 }

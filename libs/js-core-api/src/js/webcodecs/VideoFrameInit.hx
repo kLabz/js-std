@@ -30,13 +30,13 @@ typedef VideoFrameInit = {
 	@:optional
 	var timestamp : Float;
 	@:optional
-	var alpha : AlphaOption = "keep";
+	var alpha : AlphaOption;
 	@:optional
 	var visibleRect : js.geometry.DOMRectInit;
 	@:optional
-	var rotation : Float = 0;
+	var rotation : Float;
 	@:optional
-	var flip : Bool = false;
+	var flip : Bool;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/

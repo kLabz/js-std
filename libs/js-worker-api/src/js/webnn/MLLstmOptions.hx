@@ -36,11 +36,11 @@ typedef MLLstmOptions = MLOperatorOptions & {
 	@:optional
 	var initialCellState : MLOperand;
 	@:optional
-	var returnSequence : Bool = false;
+	var returnSequence : Bool;
 	@:optional
-	var direction : MLRecurrentNetworkDirection = "forward";
+	var direction : MLRecurrentNetworkDirection;
 	@:optional
-	var layout : MLLstmWeightLayout = "iofg";
+	var layout : MLLstmWeightLayout;
 	@:optional
 	var activations : Array<MLRecurrentNetworkActivation>;
 };

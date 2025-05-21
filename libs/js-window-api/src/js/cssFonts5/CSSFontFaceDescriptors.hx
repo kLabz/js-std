@@ -25,45 +25,65 @@
 package js.cssFonts5;
 
 @:native("CSSFontFaceDescriptors") extern class CSSFontFaceDescriptors extends js.cssom.CSSStyleDeclaration {
-	var src : CSSOMString;
-	var fontFamily : CSSOMString;
-	var font-family : CSSOMString;
-	var fontStyle : CSSOMString;
-	var font-style : CSSOMString;
-	var fontWeight : CSSOMString;
-	var font-weight : CSSOMString;
-	var fontStretch : CSSOMString;
-	var font-stretch : CSSOMString;
-	var fontWidth : CSSOMString;
-	var font-width : CSSOMString;
-	var fontSize : CSSOMString;
-	var font-size : CSSOMString;
-	var sizeAdjust : CSSOMString;
-	var size-adjust : CSSOMString;
-	var unicodeRange : CSSOMString;
-	var unicode-range : CSSOMString;
-	var fontFeatureSettings : CSSOMString;
-	var font-feature-settings : CSSOMString;
-	var fontVariationSettings : CSSOMString;
-	var font-variation-settings : CSSOMString;
-	var fontNamedInstance : CSSOMString;
-	var font-named-instance : CSSOMString;
-	var fontDisplay : CSSOMString;
-	var font-display : CSSOMString;
-	var fontLanguageOverride : CSSOMString;
-	var font-language-override : CSSOMString;
-	var ascentOverride : CSSOMString;
-	var ascent-override : CSSOMString;
-	var descentOverride : CSSOMString;
-	var descent-override : CSSOMString;
-	var lineGapOverride : CSSOMString;
-	var line-gap-override : CSSOMString;
-	var superscriptPositionOverride : CSSOMString;
-	var superscript-position-override : CSSOMString;
-	var subscriptPositionOverride : CSSOMString;
-	var subscript-position-override : CSSOMString;
-	var superscriptSizeOverride : CSSOMString;
-	var superscript-size-override : CSSOMString;
-	var subscriptSizeOverride : CSSOMString;
-	var subscript-size-override : CSSOMString;
+	var src : String;
+	var fontFamily : String;
+	@:native("font-family")
+	var fontFamily : String;
+	var fontStyle : String;
+	@:native("font-style")
+	var fontStyle : String;
+	var fontWeight : String;
+	@:native("font-weight")
+	var fontWeight : String;
+	var fontStretch : String;
+	@:native("font-stretch")
+	var fontStretch : String;
+	var fontWidth : String;
+	@:native("font-width")
+	var fontWidth : String;
+	var fontSize : String;
+	@:native("font-size")
+	var fontSize : String;
+	var sizeAdjust : String;
+	@:native("size-adjust")
+	var sizeAdjust : String;
+	var unicodeRange : String;
+	@:native("unicode-range")
+	var unicodeRange : String;
+	var fontFeatureSettings : String;
+	@:native("font-feature-settings")
+	var fontFeatureSettings : String;
+	var fontVariationSettings : String;
+	@:native("font-variation-settings")
+	var fontVariationSettings : String;
+	var fontNamedInstance : String;
+	@:native("font-named-instance")
+	var fontNamedInstance : String;
+	var fontDisplay : String;
+	@:native("font-display")
+	var fontDisplay : String;
+	var fontLanguageOverride : String;
+	@:native("font-language-override")
+	var fontLanguageOverride : String;
+	var ascentOverride : String;
+	@:native("ascent-override")
+	var ascentOverride : String;
+	var descentOverride : String;
+	@:native("descent-override")
+	var descentOverride : String;
+	var lineGapOverride : String;
+	@:native("line-gap-override")
+	var lineGapOverride : String;
+	var superscriptPositionOverride : String;
+	@:native("superscript-position-override")
+	var superscriptPositionOverride : String;
+	var subscriptPositionOverride : String;
+	@:native("subscript-position-override")
+	var subscriptPositionOverride : String;
+	var superscriptSizeOverride : String;
+	@:native("superscript-size-override")
+	var superscriptSizeOverride : String;
+	var subscriptSizeOverride : String;
+	@:native("subscript-size-override")
+	var subscriptSizeOverride : String;
 }

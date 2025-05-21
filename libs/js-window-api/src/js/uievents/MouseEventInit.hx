@@ -26,21 +26,21 @@ package js.uievents;
 
 typedef MouseEventInit = EventModifierInit & {
 	@:optional
-	var screenX : Int = 0;
+	var screenX : Int;
 	@:optional
-	var screenY : Int = 0;
+	var screenY : Int;
 	@:optional
-	var clientX : Int = 0;
+	var clientX : Int;
 	@:optional
-	var clientY : Int = 0;
+	var clientY : Int;
 	@:optional
-	var button : Int = 0;
+	var button : Int;
 	@:optional
-	var buttons : Int = 0;
+	var buttons : Int;
 	@:optional
-	var relatedTarget : Null<js.dom.EventTarget> = null;
+	var relatedTarget : Null<js.dom.EventTarget>;
 	@:optional
-	var movementX : Float = 0;
+	var movementX : Float;
 	@:optional
-	var movementY : Float = 0;
+	var movementY : Float;
 };

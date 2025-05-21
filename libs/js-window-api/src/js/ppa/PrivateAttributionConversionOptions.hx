@@ -27,20 +27,20 @@ package js.ppa;
 typedef PrivateAttributionConversionOptions = {
 	var aggregationService : String;
 	@:optional
-	var epsilon : Float = 1.0;
+	var epsilon : Float;
 	var histogramSize : Int;
 	@:optional
 	var lookbackDays : Int;
 	@:optional
 	var filterData : Int;
 	@:optional
-	var impressionSites : Array<String> = [];
+	var impressionSites : Array<String>;
 	@:optional
-	var intermediarySites : Array<String> = [];
+	var intermediarySites : Array<String>;
 	@:optional
-	var logic : PrivateAttributionLogic = "last-touch";
+	var logic : PrivateAttributionLogic;
 	@:optional
-	var value : Int = 1;
+	var value : Int;
 	@:optional
-	var maxValue : Int = 1;
+	var maxValue : Int;
 };

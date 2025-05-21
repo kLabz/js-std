@@ -26,23 +26,23 @@ package js.paymentHandler;
 
 typedef AddressInit = {
 	@:optional
-	var country : String = "";
+	var country : String;
 	@:optional
-	var addressLine : Array<String> = [];
+	var addressLine : Array<String>;
 	@:optional
-	var region : String = "";
+	var region : String;
 	@:optional
-	var city : String = "";
+	var city : String;
 	@:optional
-	var dependentLocality : String = "";
+	var dependentLocality : String;
 	@:optional
-	var postalCode : String = "";
+	var postalCode : String;
 	@:optional
-	var sortingCode : String = "";
+	var sortingCode : String;
 	@:optional
-	var organization : String = "";
+	var organization : String;
 	@:optional
-	var recipient : String = "";
+	var recipient : String;
 	@:optional
-	var phone : String = "";
+	var phone : String;
 };

@@ -30,7 +30,7 @@ typedef XRSessionInit = {
 	@:optional
 	var optionalFeatures : Array<String>;
 	@:optional
-	var depthSensing : js.webxrDepthSensing.XRDepthStateInit;
-	@:optional
 	var domOverlay : Null<js.webxrDomOverlays.XRDOMOverlayInit>;
+	@:optional
+	var depthSensing : js.webxrDepthSensing.XRDepthStateInit;
 };

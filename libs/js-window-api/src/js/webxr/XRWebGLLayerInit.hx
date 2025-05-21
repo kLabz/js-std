@@ -26,15 +26,15 @@ package js.webxr;
 
 typedef XRWebGLLayerInit = {
 	@:optional
-	var antialias : Bool = true;
+	var antialias : Bool;
 	@:optional
-	var depth : Bool = true;
+	var depth : Bool;
 	@:optional
-	var stencil : Bool = false;
+	var stencil : Bool;
 	@:optional
-	var alpha : Bool = true;
+	var alpha : Bool;
 	@:optional
-	var ignoreDepthValues : Bool = false;
+	var ignoreDepthValues : Bool;
 	@:optional
-	var framebufferScaleFactor : Float = 1.0;
+	var framebufferScaleFactor : Float;
 };

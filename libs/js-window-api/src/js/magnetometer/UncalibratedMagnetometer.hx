@@ -34,5 +34,5 @@ package js.magnetometer;
 	var xBias(default, null) : Null<Float>;
 	var yBias(default, null) : Null<Float>;
 	var zBias(default, null) : Null<Float>;
-	function new(?sensorOptions:MagnetometerSensorOptions = {  }):Void;
+	function new(?sensorOptions:MagnetometerSensorOptions):Void;
 }

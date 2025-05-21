@@ -26,5 +26,5 @@ package js.clipboardApis;
 
 @:native("ClipboardEvent") extern class ClipboardEvent extends js.dom.Event {
 	var clipboardData(default, null) : Null<js.html.DataTransfer>;
-	function new(type:String, ?eventInitDict:ClipboardEventInit = {  }):Void;
+	function new(type:String, ?eventInitDict:ClipboardEventInit):Void;
 }

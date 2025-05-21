@@ -26,5 +26,5 @@ package js.webnn;
 
 typedef MLEluOptions = MLOperatorOptions & {
 	@:optional
-	var alpha : Float = 1;
+	var alpha : Float;
 };

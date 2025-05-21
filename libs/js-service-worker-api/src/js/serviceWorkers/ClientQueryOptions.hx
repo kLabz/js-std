@@ -26,7 +26,7 @@ package js.serviceWorkers;
 
 typedef ClientQueryOptions = {
 	@:optional
-	var includeUncontrolled : Bool = false;
+	var includeUncontrolled : Bool;
 	@:optional
-	var type : ClientType = "window";
+	var type : ClientType;
 };

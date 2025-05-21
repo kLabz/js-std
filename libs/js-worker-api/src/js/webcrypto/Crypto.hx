@@ -29,7 +29,7 @@ package js.webcrypto;
 		Unhandled extended attribute SecureContext
 	**/
 	var subtle(default, null) : SubtleCrypto;
-	function getRandomValues(array:js.webidl.ArrayBufferView):js.webidl.ArrayBufferView;
+	function getRandomValues(array:js.lib.ArrayBufferView):js.lib.ArrayBufferView;
 	/**
 		Unhandled extended attribute SecureContext
 	**/

@@ -28,5 +28,5 @@ typedef PaymentItem = {
 	var label : String;
 	var amount : PaymentCurrencyAmount;
 	@:optional
-	var pending : Bool = false;
+	var pending : Bool;
 };

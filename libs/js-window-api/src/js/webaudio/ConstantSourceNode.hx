@@ -26,5 +26,5 @@ package js.webaudio;
 
 @:native("ConstantSourceNode") extern class ConstantSourceNode extends AudioScheduledSourceNode {
 	var offset(default, null) : AudioParam;
-	function new(context:BaseAudioContext, ?options:ConstantSourceOptions = {  }):Void;
+	function new(context:BaseAudioContext, ?options:ConstantSourceOptions):Void;
 }

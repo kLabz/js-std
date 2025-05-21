@@ -25,8 +25,8 @@
 package js.cssTransitions;
 
 @:native("TransitionEvent") extern class TransitionEvent extends js.dom.Event {
-	var propertyName(default, null) : CSSOMString;
+	var propertyName(default, null) : String;
 	var elapsedTime(default, null) : Float;
-	var pseudoElement(default, null) : CSSOMString;
-	function new(type:CSSOMString, ?transitionEventInitDict:TransitionEventInit = {  }):Void;
+	var pseudoElement(default, null) : String;
+	function new(type:String, ?transitionEventInitDict:TransitionEventInit):Void;
 }

@@ -31,9 +31,9 @@ package js.webauthn;
 	/**
 		Unhandled extended attribute SameObject
 	**/
-	var attestationObject(default, null) : ArrayBuffer;
-	function getAuthenticatorData():ArrayBuffer;
-	function getPublicKey():Null<ArrayBuffer>;
+	var attestationObject(default, null) : js.lib.ArrayBuffer;
+	function getAuthenticatorData():js.lib.ArrayBuffer;
+	function getPublicKey():Null<js.lib.ArrayBuffer>;
 	function getPublicKeyAlgorithm():COSEAlgorithmIdentifier;
 	function getTransports():Array<String>;
 }

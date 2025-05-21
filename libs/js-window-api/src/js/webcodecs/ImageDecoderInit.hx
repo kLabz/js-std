@@ -28,7 +28,7 @@ typedef ImageDecoderInit = {
 	var type : String;
 	var data : ImageBufferSource;
 	@:optional
-	var colorSpaceConversion : js.html.ColorSpaceConversion = "default";
+	var colorSpaceConversion : js.html.ColorSpaceConversion;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/
@@ -42,5 +42,5 @@ typedef ImageDecoderInit = {
 	@:optional
 	var preferAnimation : Bool;
 	@:optional
-	var transfer : Array<ArrayBuffer> = [];
+	var transfer : Array<js.lib.ArrayBuffer>;
 };

@@ -28,5 +28,5 @@ typedef ImportNodeOptions = {
 	@:optional
 	var customElementRegistry : js.html.CustomElementRegistry;
 	@:optional
-	var selfOnly : Bool = false;
+	var selfOnly : Bool;
 };

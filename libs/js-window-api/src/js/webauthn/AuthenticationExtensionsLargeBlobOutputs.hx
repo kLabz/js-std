@@ -28,7 +28,7 @@ typedef AuthenticationExtensionsLargeBlobOutputs = {
 	@:optional
 	var supported : Bool;
 	@:optional
-	var blob : ArrayBuffer;
+	var blob : js.lib.ArrayBuffer;
 	@:optional
 	var written : Bool;
 };

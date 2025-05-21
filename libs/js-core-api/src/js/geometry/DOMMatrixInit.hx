@@ -26,25 +26,25 @@ package js.geometry;
 
 typedef DOMMatrixInit = DOMMatrix2DInit & {
 	@:optional
-	var m13 : Float = 0;
+	var m13 : Float;
 	@:optional
-	var m14 : Float = 0;
+	var m14 : Float;
 	@:optional
-	var m23 : Float = 0;
+	var m23 : Float;
 	@:optional
-	var m24 : Float = 0;
+	var m24 : Float;
 	@:optional
-	var m31 : Float = 0;
+	var m31 : Float;
 	@:optional
-	var m32 : Float = 0;
+	var m32 : Float;
 	@:optional
-	var m33 : Float = 1;
+	var m33 : Float;
 	@:optional
-	var m34 : Float = 0;
+	var m34 : Float;
 	@:optional
-	var m43 : Float = 0;
+	var m43 : Float;
 	@:optional
-	var m44 : Float = 1;
+	var m44 : Float;
 	@:optional
 	var is2D : Bool;
 };

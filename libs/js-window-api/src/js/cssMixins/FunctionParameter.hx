@@ -25,8 +25,8 @@
 package js.cssMixins;
 
 typedef FunctionParameter = {
-	var name : CSSOMString;
-	var type : CSSOMString;
+	var name : String;
+	var type : String;
 	@:optional
-	var defaultValue : Null<CSSOMString>;
+	var defaultValue : Null<String>;
 };

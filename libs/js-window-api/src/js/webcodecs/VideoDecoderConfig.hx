@@ -51,11 +51,11 @@ typedef VideoDecoderConfig = {
 	@:optional
 	var colorSpace : VideoColorSpaceInit;
 	@:optional
-	var hardwareAcceleration : HardwareAcceleration = "no-preference";
+	var hardwareAcceleration : HardwareAcceleration;
 	@:optional
 	var optimizeForLatency : Bool;
 	@:optional
-	var rotation : Float = 0;
+	var rotation : Float;
 	@:optional
-	var flip : Bool = false;
+	var flip : Bool;
 };

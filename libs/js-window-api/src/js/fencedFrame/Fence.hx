@@ -28,6 +28,6 @@ package js.fencedFrame;
 	function disableUntrustedNetwork():js.lib.Promise<Void>;
 	function getNestedConfigs():Array<FencedFrameConfig>;
 	function notifyEvent(event:js.dom.Event):Void;
-	function reportEvent(?event:ReportEventType = {  }):Void;
-	function setReportEventDataForAutomaticBeacons(?event:FenceEvent = {  }):Void;
+	function reportEvent(?event:ReportEventType):Void;
+	function setReportEventDataForAutomaticBeacons(?event:FenceEvent):Void;
 }

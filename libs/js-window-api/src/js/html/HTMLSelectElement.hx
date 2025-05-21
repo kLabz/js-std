@@ -24,6 +24,9 @@
 
 package js.html;
 
+/**
+	TODO special=setter (index:Int, option:Null<HTMLOptionElement>) -> Void
+**/
 @:native("HTMLSelectElement") extern class HTMLSelectElement extends HTMLElement {
 	var autocomplete : String;
 	var disabled : Bool;
@@ -48,10 +51,6 @@ package js.html;
 	var validity(default, null) : ValidityState;
 	var validationMessage(default, null) : String;
 	var labels(default, null) : js.dom.NodeList;
-	/**
-		(special = setter)
-	**/
-	function (index:Int, option:Null<HTMLOptionElement>):Void;
 	function add(element:haxe.extern.EitherType<HTMLOptionElement, HTMLOptGroupElement>, ?before:Null<haxe.extern.EitherType<HTMLElement, Int>> = null):Void;
 	function checkValidity():Bool;
 	function item(index:Int):Null<HTMLOptionElement>;

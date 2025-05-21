@@ -26,17 +26,17 @@ package js.uievents;
 
 typedef KeyboardEventInit = EventModifierInit & {
 	@:optional
-	var key : String = "";
+	var key : String;
 	@:optional
-	var code : String = "";
+	var code : String;
 	@:optional
-	var location : Int = 0;
+	var location : Int;
 	@:optional
-	var repeat : Bool = false;
+	var repeat : Bool;
 	@:optional
-	var isComposing : Bool = false;
+	var isComposing : Bool;
 	@:optional
-	var charCode : Int = 0;
+	var charCode : Int;
 	@:optional
-	var keyCode : Int = 0;
+	var keyCode : Int;
 };

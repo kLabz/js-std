@@ -37,6 +37,6 @@ package js.html;
 	var hasUAVisualTransition(default, null) : Bool;
 	var sourceElement(default, null) : Null<js.dom.Element>;
 	function new(type:String, eventInitDict:NavigateEventInit):Void;
-	function intercept(?options:NavigationInterceptOptions = {  }):Void;
+	function intercept(?options:NavigationInterceptOptions):Void;
 	function scroll():Void;
 }

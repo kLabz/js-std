@@ -25,7 +25,7 @@
 package js.cssFonts;
 
 @:native("CSSFontFeatureValuesRule") extern class CSSFontFeatureValuesRule extends js.cssom.CSSRule {
-	var fontFamily : CSSOMString;
+	var fontFamily : String;
 	var annotation(default, null) : CSSFontFeatureValuesMap;
 	var ornaments(default, null) : CSSFontFeatureValuesMap;
 	var stylistic(default, null) : CSSFontFeatureValuesMap;

@@ -28,7 +28,7 @@ package js.webBluetoothScanning;
 	Unhandled extended attribute SecureContext
 **/
 @:native("BluetoothDataFilter") extern class BluetoothDataFilter {
-	var dataPrefix(default, null) : ArrayBuffer;
-	var mask(default, null) : ArrayBuffer;
-	function new(?init:js.webBluetooth.BluetoothDataFilterInit = {  }):Void;
+	var dataPrefix(default, null) : js.lib.ArrayBuffer;
+	var mask(default, null) : js.lib.ArrayBuffer;
+	function new(?init:js.webBluetooth.BluetoothDataFilterInit):Void;
 }

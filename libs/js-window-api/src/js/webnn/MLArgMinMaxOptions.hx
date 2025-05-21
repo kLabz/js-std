@@ -26,7 +26,7 @@ package js.webnn;
 
 typedef MLArgMinMaxOptions = MLOperatorOptions & {
 	@:optional
-	var keepDimensions : Bool = false;
+	var keepDimensions : Bool;
 	@:optional
-	var outputDataType : MLOperandDataType = "int32";
+	var outputDataType : MLOperandDataType;
 };

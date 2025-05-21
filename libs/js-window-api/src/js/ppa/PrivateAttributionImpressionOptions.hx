@@ -27,8 +27,8 @@ package js.ppa;
 typedef PrivateAttributionImpressionOptions = {
 	var histogramIndex : Int;
 	@:optional
-	var filterData : Int = 0;
+	var filterData : Int;
 	var conversionSite : String;
 	@:optional
-	var lifetimeDays : Int = 30;
+	var lifetimeDays : Int;
 };

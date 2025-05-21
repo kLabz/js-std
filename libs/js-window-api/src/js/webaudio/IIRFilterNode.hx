@@ -26,5 +26,5 @@ package js.webaudio;
 
 @:native("IIRFilterNode") extern class IIRFilterNode extends AudioNode {
 	function new(context:BaseAudioContext, options:IIRFilterOptions):Void;
-	function getFrequencyResponse(frequencyHz:Float32Array, magResponse:Float32Array, phaseResponse:Float32Array):Void;
+	function getFrequencyResponse(frequencyHz:js.lib.Float32Array, magResponse:js.lib.Float32Array, phaseResponse:js.lib.Float32Array):Void;
 }

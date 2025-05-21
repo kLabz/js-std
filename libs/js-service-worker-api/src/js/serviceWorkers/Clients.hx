@@ -36,7 +36,7 @@ package js.serviceWorkers;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function matchAll(?options:ClientQueryOptions = {  }):js.lib.Promise<Array<Client>>;
+	function matchAll(?options:ClientQueryOptions):js.lib.Promise<Array<Client>>;
 	/**
 		Unhandled extended attribute NewObject
 	**/

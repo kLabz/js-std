@@ -28,16 +28,16 @@ package js.webcrypto;
 	Unhandled extended attribute SecureContext
 **/
 @:native("SubtleCrypto") extern class SubtleCrypto {
-	function decrypt(algorithm:AlgorithmIdentifier, key:CryptoKey, data:js.webidl.BufferSource):js.lib.Promise<ArrayBuffer>;
-	function deriveBits(algorithm:AlgorithmIdentifier, baseKey:CryptoKey, ?length:Null<Int> = null):js.lib.Promise<ArrayBuffer>;
+	function decrypt(algorithm:AlgorithmIdentifier, key:CryptoKey, data:js.webidl.BufferSource):js.lib.Promise<js.lib.ArrayBuffer>;
+	function deriveBits(algorithm:AlgorithmIdentifier, baseKey:CryptoKey, ?length:Null<Int> = null):js.lib.Promise<js.lib.ArrayBuffer>;
 	function deriveKey(algorithm:AlgorithmIdentifier, baseKey:CryptoKey, derivedKeyType:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<KeyUsage>):js.lib.Promise<CryptoKey>;
-	function digest(algorithm:AlgorithmIdentifier, data:js.webidl.BufferSource):js.lib.Promise<ArrayBuffer>;
-	function encrypt(algorithm:AlgorithmIdentifier, key:CryptoKey, data:js.webidl.BufferSource):js.lib.Promise<ArrayBuffer>;
-	function exportKey(format:KeyFormat, key:CryptoKey):js.lib.Promise<haxe.extern.EitherType<ArrayBuffer, JsonWebKey>>;
+	function digest(algorithm:AlgorithmIdentifier, data:js.webidl.BufferSource):js.lib.Promise<js.lib.ArrayBuffer>;
+	function encrypt(algorithm:AlgorithmIdentifier, key:CryptoKey, data:js.webidl.BufferSource):js.lib.Promise<js.lib.ArrayBuffer>;
+	function exportKey(format:KeyFormat, key:CryptoKey):js.lib.Promise<haxe.extern.EitherType<js.lib.ArrayBuffer, JsonWebKey>>;
 	function generateKey(algorithm:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<KeyUsage>):js.lib.Promise<haxe.extern.EitherType<CryptoKey, CryptoKeyPair>>;
 	function importKey(format:KeyFormat, keyData:haxe.extern.EitherType<js.webidl.BufferSource, JsonWebKey>, algorithm:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<KeyUsage>):js.lib.Promise<CryptoKey>;
-	function sign(algorithm:AlgorithmIdentifier, key:CryptoKey, data:js.webidl.BufferSource):js.lib.Promise<ArrayBuffer>;
+	function sign(algorithm:AlgorithmIdentifier, key:CryptoKey, data:js.webidl.BufferSource):js.lib.Promise<js.lib.ArrayBuffer>;
 	function unwrapKey(format:KeyFormat, wrappedKey:js.webidl.BufferSource, unwrappingKey:CryptoKey, unwrapAlgorithm:AlgorithmIdentifier, unwrappedKeyAlgorithm:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<KeyUsage>):js.lib.Promise<CryptoKey>;
 	function verify(algorithm:AlgorithmIdentifier, key:CryptoKey, signature:js.webidl.BufferSource, data:js.webidl.BufferSource):js.lib.Promise<Bool>;
-	function wrapKey(format:KeyFormat, key:CryptoKey, wrappingKey:CryptoKey, wrapAlgorithm:AlgorithmIdentifier):js.lib.Promise<ArrayBuffer>;
+	function wrapKey(format:KeyFormat, key:CryptoKey, wrappingKey:CryptoKey, wrapAlgorithm:AlgorithmIdentifier):js.lib.Promise<js.lib.ArrayBuffer>;
 }

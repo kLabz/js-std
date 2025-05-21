@@ -26,15 +26,15 @@ package js.webxrlayers;
 
 typedef XREquirectLayerInit = XRLayerInit & {
 	@:optional
-	var textureType : XRTextureType = "texture";
+	var textureType : XRTextureType;
 	@:optional
 	var transform : Null<js.webxr.XRRigidTransform>;
 	@:optional
-	var radius : Float = 0;
+	var radius : Float;
 	@:optional
-	var centralHorizontalAngle : Float = 6.28318;
+	var centralHorizontalAngle : Float;
 	@:optional
-	var upperVerticalAngle : Float = 1.570795;
+	var upperVerticalAngle : Float;
 	@:optional
-	var lowerVerticalAngle : Float = -1.570795;
+	var lowerVerticalAngle : Float;
 };

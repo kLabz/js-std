@@ -27,7 +27,7 @@ package js.webxrlayers;
 typedef XRMediaLayerInit = {
 	var space : js.webxr.XRSpace;
 	@:optional
-	var layout : XRLayerLayout = "mono";
+	var layout : XRLayerLayout;
 	@:optional
-	var invertStereo : Bool = false;
+	var invertStereo : Bool;
 };

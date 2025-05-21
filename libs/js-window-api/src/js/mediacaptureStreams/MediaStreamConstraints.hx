@@ -26,11 +26,11 @@ package js.mediacaptureStreams;
 
 typedef MediaStreamConstraints = {
 	@:optional
-	var video : haxe.extern.EitherType<Bool, MediaTrackConstraints> = false;
+	var video : haxe.extern.EitherType<Bool, MediaTrackConstraints>;
 	@:optional
-	var audio : haxe.extern.EitherType<Bool, MediaTrackConstraints> = false;
+	var audio : haxe.extern.EitherType<Bool, MediaTrackConstraints>;
 	@:optional
-	var preferCurrentTab : Bool = false;
+	var preferCurrentTab : Bool;
 	@:optional
 	var peerIdentity : String;
 };

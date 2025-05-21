@@ -26,5 +26,5 @@ package js.webxrLightingEstimation;
 
 typedef XRLightProbeInit = {
 	@:optional
-	var reflectionFormat : XRReflectionFormat = "srgba8";
+	var reflectionFormat : XRReflectionFormat;
 };

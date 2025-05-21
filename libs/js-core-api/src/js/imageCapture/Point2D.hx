@@ -26,7 +26,7 @@ package js.imageCapture;
 
 typedef Point2D = {
 	@:optional
-	var x : Float = 0.0;
+	var x : Float;
 	@:optional
-	var y : Float = 0.0;
+	var y : Float;
 };

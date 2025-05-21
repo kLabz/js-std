@@ -37,5 +37,5 @@ typedef EncodedAudioChunkInit = {
 	var duration : Float;
 	var data : js.webidl.AllowSharedBufferSource;
 	@:optional
-	var transfer : Array<ArrayBuffer> = [];
+	var transfer : Array<js.lib.ArrayBuffer>;
 };

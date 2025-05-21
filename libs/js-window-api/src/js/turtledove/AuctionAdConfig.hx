@@ -70,7 +70,7 @@ typedef AuctionAdConfig = {
 	@:optional
 	var perBuyerPrioritySignals : haxe.DynamicAccess<haxe.DynamicAccess<Float>>;
 	@:optional
-	var auctionReportBuyerKeys : Array<bigint>;
+	var auctionReportBuyerKeys : Array<js.lib.BigInt>;
 	@:optional
 	var auctionReportBuyers : haxe.DynamicAccess<AuctionReportBuyersConfig>;
 	@:optional
@@ -92,13 +92,13 @@ typedef AuctionAdConfig = {
 	@:optional
 	var perBuyerRealTimeReportingConfig : haxe.DynamicAccess<AuctionRealTimeReportingConfig>;
 	@:optional
-	var componentAuctions : Array<AuctionAdConfig> = [];
+	var componentAuctions : Array<AuctionAdConfig>;
 	@:optional
 	var signal : Null<js.dom.AbortSignal>;
 	@:optional
 	var resolveToConfig : js.lib.Promise<Bool>;
 	@:optional
-	var serverResponse : js.lib.Promise<Uint8Array>;
+	var serverResponse : js.lib.Promise<js.lib.Uint8Array>;
 	@:optional
 	var requestId : String;
 };

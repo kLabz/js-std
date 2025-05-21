@@ -43,11 +43,11 @@ package js.fetch;
 		From interface mixin Body
 	**/
 	var bodyUsed(default, null) : Bool;
-	function new(?body:Null<BodyInit> = null, ?init:ResponseInit = {  }):Void;
+	function new(?body:Null<BodyInit> = null, ?init:ResponseInit):Void;
 	/**
 		From interface mixin Body
 	**/
-	function arrayBuffer():js.lib.Promise<ArrayBuffer>;
+	function arrayBuffer():js.lib.Promise<js.lib.ArrayBuffer>;
 	/**
 		From interface mixin Body
 	**/
@@ -55,7 +55,7 @@ package js.fetch;
 	/**
 		From interface mixin Body
 	**/
-	function bytes():js.lib.Promise<Uint8Array>;
+	function bytes():js.lib.Promise<js.lib.Uint8Array>;
 	/**
 		Unhandled extended attribute NewObject
 	**/
@@ -71,7 +71,7 @@ package js.fetch;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	overload function json(data:Any, ?init:ResponseInit = {  }):Response;
+	overload function json(data:Any, ?init:ResponseInit):Response;
 	/**
 		From interface mixin Body
 	**/

@@ -40,7 +40,7 @@ package js.html;
 	var referrerPolicy : String;
 	var loading : String;
 	var contentDocument(default, null) : Null<js.dom.Document>;
-	var contentWindow(default, null) : Null<WindowProxy>;
+	var contentWindow(default, null) : Null<js.html.Window>;
 	/**
 		From interface mixin HTMLSharedStorageWritableElementUtils
 	**/

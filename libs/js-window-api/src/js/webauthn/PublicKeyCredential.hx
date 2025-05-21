@@ -31,7 +31,7 @@ package js.webauthn;
 	/**
 		Unhandled extended attribute SameObject
 	**/
-	var rawId(default, null) : ArrayBuffer;
+	var rawId(default, null) : js.lib.ArrayBuffer;
 	/**
 		Unhandled extended attribute SameObject
 	**/

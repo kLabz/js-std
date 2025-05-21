@@ -26,7 +26,7 @@ package js.indexeddb;
 
 typedef IDBIndexParameters = {
 	@:optional
-	var unique : Bool = false;
+	var unique : Bool;
 	@:optional
-	var multiEntry : Bool = false;
+	var multiEntry : Bool;
 };

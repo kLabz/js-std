@@ -30,15 +30,15 @@ typedef GPUTextureViewDescriptor = GPUObjectDescriptorBase & {
 	@:optional
 	var dimension : GPUTextureViewDimension;
 	@:optional
-	var usage : GPUTextureUsageFlags = 0;
+	var usage : GPUTextureUsageFlags;
 	@:optional
-	var aspect : GPUTextureAspect = "all";
+	var aspect : GPUTextureAspect;
 	@:optional
-	var baseMipLevel : GPUIntegerCoordinate = 0;
+	var baseMipLevel : GPUIntegerCoordinate;
 	@:optional
 	var mipLevelCount : GPUIntegerCoordinate;
 	@:optional
-	var baseArrayLayer : GPUIntegerCoordinate = 0;
+	var baseArrayLayer : GPUIntegerCoordinate;
 	@:optional
 	var arrayLayerCount : GPUIntegerCoordinate;
 };

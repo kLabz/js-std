@@ -26,7 +26,7 @@ package js.serviceWorkers;
 
 typedef NavigationPreloadState = {
 	@:optional
-	var enabled : Bool = false;
+	var enabled : Bool;
 	@:optional
 	var headerValue : String;
 };

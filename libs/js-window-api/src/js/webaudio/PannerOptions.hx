@@ -26,31 +26,31 @@ package js.webaudio;
 
 typedef PannerOptions = AudioNodeOptions & {
 	@:optional
-	var panningModel : PanningModelType = "equalpower";
+	var panningModel : PanningModelType;
 	@:optional
-	var distanceModel : DistanceModelType = "inverse";
+	var distanceModel : DistanceModelType;
 	@:optional
-	var positionX : Float = 0;
+	var positionX : Float;
 	@:optional
-	var positionY : Float = 0;
+	var positionY : Float;
 	@:optional
-	var positionZ : Float = 0;
+	var positionZ : Float;
 	@:optional
-	var orientationX : Float = 1;
+	var orientationX : Float;
 	@:optional
-	var orientationY : Float = 0;
+	var orientationY : Float;
 	@:optional
-	var orientationZ : Float = 0;
+	var orientationZ : Float;
 	@:optional
-	var refDistance : Float = 1;
+	var refDistance : Float;
 	@:optional
-	var maxDistance : Float = 10000;
+	var maxDistance : Float;
 	@:optional
-	var rolloffFactor : Float = 1;
+	var rolloffFactor : Float;
 	@:optional
-	var coneInnerAngle : Float = 360;
+	var coneInnerAngle : Float;
 	@:optional
-	var coneOuterAngle : Float = 360;
+	var coneOuterAngle : Float;
 	@:optional
-	var coneOuterGain : Float = 0;
+	var coneOuterGain : Float;
 };

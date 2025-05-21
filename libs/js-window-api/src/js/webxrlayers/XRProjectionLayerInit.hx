@@ -26,13 +26,13 @@ package js.webxrlayers;
 
 typedef XRProjectionLayerInit = {
 	@:optional
-	var textureType : XRTextureType = "texture";
+	var textureType : XRTextureType;
 	@:optional
-	var colorFormat : js.webgl1.GLenum = 0x1908;
+	var colorFormat : js.webgl1.GLenum;
 	@:optional
-	var depthFormat : js.webgl1.GLenum = 0x1902;
+	var depthFormat : js.webgl1.GLenum;
 	@:optional
-	var scaleFactor : Float = 1.0;
+	var scaleFactor : Float;
 	@:optional
-	var clearOnAccess : Bool = true;
+	var clearOnAccess : Bool;
 };

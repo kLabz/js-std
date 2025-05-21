@@ -26,5 +26,6 @@ package js.html;
 
 typedef ElementDefinitionOptions = {
 	@:optional
-	var extends : String;
+	@:native("extends")
+	var extends_ : String;
 };

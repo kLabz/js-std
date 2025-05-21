@@ -33,5 +33,5 @@ package js.mediasession;
 		Unhandled extended attribute SameObject
 	**/
 	var chapterInfo(default, null) : Array<ChapterInformation>;
-	function new(?init:MediaMetadataInit = {  }):Void;
+	function new(?init:MediaMetadataInit):Void;
 }

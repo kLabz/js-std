@@ -41,5 +41,5 @@ typedef AudioDataInit = {
 	var timestamp : Float;
 	var data : js.webidl.BufferSource;
 	@:optional
-	var transfer : Array<ArrayBuffer> = [];
+	var transfer : Array<js.lib.ArrayBuffer>;
 };

@@ -37,7 +37,7 @@ package js.translationApi;
 		From interface mixin DestroyableModel
 	**/
 	function destroy():Void;
-	function measureInputUsage(input:String, ?options:TranslatorTranslateOptions = {  }):js.lib.Promise<Float>;
-	function translate(input:String, ?options:TranslatorTranslateOptions = {  }):js.lib.Promise<String>;
-	function translateStreaming(input:String, ?options:TranslatorTranslateOptions = {  }):js.streams.ReadableStream;
+	function measureInputUsage(input:String, ?options:TranslatorTranslateOptions):js.lib.Promise<Float>;
+	function translate(input:String, ?options:TranslatorTranslateOptions):js.lib.Promise<String>;
+	function translateStreaming(input:String, ?options:TranslatorTranslateOptions):js.streams.ReadableStream;
 }

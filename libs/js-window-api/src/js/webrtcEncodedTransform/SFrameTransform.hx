@@ -34,6 +34,6 @@ package js.webrtcEncodedTransform;
 		From interface mixin GenericTransformStream
 	**/
 	var writable(default, null) : js.streams.WritableStream;
-	function new(?options:SFrameTransformOptions = {  }):Void;
+	function new(?options:SFrameTransformOptions):Void;
 	function setEncryptionKey(key:js.webcrypto.CryptoKey, ?keyID:CryptoKeyID):js.lib.Promise<Void>;
 }

@@ -29,7 +29,7 @@ typedef ImageDecodeOptions = {
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var frameIndex : Int = 0;
+	var frameIndex : Int;
 	@:optional
-	var completeFramesOnly : Bool = true;
+	var completeFramesOnly : Bool;
 };

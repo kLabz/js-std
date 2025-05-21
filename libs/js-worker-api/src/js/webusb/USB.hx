@@ -25,14 +25,11 @@
 package js.webusb;
 
 /**
+	TODO member requestDevice (options:USBDeviceRequestOptions) -> js.lib.Promise<USBDevice> exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("USB") extern class USB extends js.dom.EventTarget {
 	var onconnect : js.html.EventHandler;
 	var ondisconnect : js.html.EventHandler;
 	function getDevices():js.lib.Promise<Array<USBDevice>>;
-	/**
-		Unhandled extended attribute Exposed
-	**/
-	function requestDevice(options:USBDeviceRequestOptions):js.lib.Promise<USBDevice>;
 }

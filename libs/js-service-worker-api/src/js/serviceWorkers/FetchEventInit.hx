@@ -29,11 +29,11 @@ typedef FetchEventInit = ExtendableEventInit & {
 	@:optional
 	var preloadResponse : js.lib.Promise<Any>;
 	@:optional
-	var clientId : String = "";
+	var clientId : String;
 	@:optional
-	var resultingClientId : String = "";
+	var resultingClientId : String;
 	@:optional
-	var replacesClientId : String = "";
+	var replacesClientId : String;
 	@:optional
 	var handled : js.lib.Promise<Void>;
 };

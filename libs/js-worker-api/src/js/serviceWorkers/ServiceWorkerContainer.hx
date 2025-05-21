@@ -44,6 +44,6 @@ package js.serviceWorkers;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function register(scriptURL:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>, ?options:RegistrationOptions = {  }):js.lib.Promise<ServiceWorkerRegistration>;
+	function register(scriptURL:haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>, ?options:RegistrationOptions):js.lib.Promise<ServiceWorkerRegistration>;
 	function startMessages():Void;
 }

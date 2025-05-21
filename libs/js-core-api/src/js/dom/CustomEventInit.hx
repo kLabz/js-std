@@ -26,5 +26,5 @@ package js.dom;
 
 typedef CustomEventInit = EventInit & {
 	@:optional
-	var detail : Any = null;
+	var detail : Any;
 };

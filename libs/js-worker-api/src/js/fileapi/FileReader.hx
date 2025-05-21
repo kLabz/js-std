@@ -29,7 +29,7 @@ package js.fileapi;
 	static inline var LOADING : Int = 1;
 	static inline var DONE : Int = 2;
 	var readyState(default, null) : Int;
-	var result(default, null) : Null<haxe.extern.EitherType<String, ArrayBuffer>>;
+	var result(default, null) : Null<haxe.extern.EitherType<String, js.lib.ArrayBuffer>>;
 	var error(default, null) : Null<js.webidl.DOMException>;
 	var onloadstart : js.html.EventHandler;
 	var onprogress : js.html.EventHandler;

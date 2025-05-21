@@ -26,23 +26,23 @@ package js.webtransport;
 
 typedef WebTransportOptions = {
 	@:optional
-	var allowPooling : Bool = false;
+	var allowPooling : Bool;
 	@:optional
-	var requireUnreliable : Bool = false;
+	var requireUnreliable : Bool;
 	@:optional
 	var serverCertificateHashes : Array<WebTransportHash>;
 	@:optional
-	var congestionControl : WebTransportCongestionControl = "default";
+	var congestionControl : WebTransportCongestionControl;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var anticipatedConcurrentIncomingUnidirectionalStreams : Null<Int> = null;
+	var anticipatedConcurrentIncomingUnidirectionalStreams : Null<Int>;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/
 	@:optional
-	var anticipatedConcurrentIncomingBidirectionalStreams : Null<Int> = null;
+	var anticipatedConcurrentIncomingBidirectionalStreams : Null<Int>;
 	@:optional
-	var protocols : Array<String> = [];
+	var protocols : Array<String>;
 };

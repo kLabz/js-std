@@ -25,5 +25,5 @@
 package js.privateAggregationApi;
 
 typedef PADebugModeOptions = {
-	var debugKey : bigint;
+	var debugKey : js.lib.BigInt;
 };

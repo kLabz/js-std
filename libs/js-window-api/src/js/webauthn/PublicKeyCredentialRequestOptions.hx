@@ -31,11 +31,11 @@ typedef PublicKeyCredentialRequestOptions = {
 	@:optional
 	var rpId : String;
 	@:optional
-	var allowCredentials : Array<PublicKeyCredentialDescriptor> = [];
+	var allowCredentials : Array<PublicKeyCredentialDescriptor>;
 	@:optional
-	var userVerification : String = "preferred";
+	var userVerification : String;
 	@:optional
-	var hints : Array<String> = [];
+	var hints : Array<String>;
 	@:optional
 	var extensions : AuthenticationExtensionsClientInputs;
 };

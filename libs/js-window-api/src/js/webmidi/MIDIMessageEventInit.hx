@@ -26,5 +26,5 @@ package js.webmidi;
 
 typedef MIDIMessageEventInit = js.dom.EventInit & {
 	@:optional
-	var data : Uint8Array;
+	var data : js.lib.Uint8Array;
 };

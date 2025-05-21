@@ -25,10 +25,10 @@
 package js.url;
 
 /**
-	TODO attribute href: special=stringifier readonly=false
 	Unhandled extended attribute LegacyWindowAlias
 **/
 @:native("URL") extern class URL {
+	var href : String;
 	var origin(default, null) : String;
 	var protocol : String;
 	var username : String;
@@ -55,4 +55,8 @@ package js.url;
 	**/
 	function revokeObjectURL(url:String):Void;
 	function toJSON():String;
+	/**
+		Returns `this.href`.
+	**/
+	function toString():String;
 }

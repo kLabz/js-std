@@ -32,7 +32,7 @@ typedef MLLstmCellOptions = MLOperatorOptions & {
 	@:optional
 	var peepholeWeight : MLOperand;
 	@:optional
-	var layout : MLLstmWeightLayout = "iofg";
+	var layout : MLLstmWeightLayout;
 	@:optional
 	var activations : Array<MLRecurrentNetworkActivation>;
 };

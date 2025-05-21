@@ -45,5 +45,5 @@ package js.encoding;
 		From interface mixin GenericTransformStream
 	**/
 	var writable(default, null) : js.streams.WritableStream;
-	function new(?label:String = "utf-8", ?options:TextDecoderOptions = {  }):Void;
+	function new(?label:String = "utf-8", ?options:TextDecoderOptions):Void;
 }

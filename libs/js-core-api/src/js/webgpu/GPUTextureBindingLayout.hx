@@ -26,9 +26,9 @@ package js.webgpu;
 
 typedef GPUTextureBindingLayout = {
 	@:optional
-	var sampleType : GPUTextureSampleType = "float";
+	var sampleType : GPUTextureSampleType;
 	@:optional
-	var viewDimension : GPUTextureViewDimension = "2d";
+	var viewDimension : GPUTextureViewDimension;
 	@:optional
-	var multisampled : Bool = false;
+	var multisampled : Bool;
 };

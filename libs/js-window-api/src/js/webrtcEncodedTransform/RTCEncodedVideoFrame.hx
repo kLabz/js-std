@@ -29,7 +29,7 @@ package js.webrtcEncodedTransform;
 **/
 @:native("RTCEncodedVideoFrame") extern class RTCEncodedVideoFrame {
 	var type(default, null) : RTCEncodedVideoFrameType;
-	var data : ArrayBuffer;
-	function new(originalFrame:RTCEncodedVideoFrame, ?options:RTCEncodedVideoFrameOptions = {  }):Void;
+	var data : js.lib.ArrayBuffer;
+	function new(originalFrame:RTCEncodedVideoFrame, ?options:RTCEncodedVideoFrameOptions):Void;
 	function getMetadata():RTCEncodedVideoFrameMetadata;
 }

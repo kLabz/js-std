@@ -26,5 +26,5 @@ package js.webcodecsAvcCodecRegistration;
 
 typedef AvcEncoderConfig = {
 	@:optional
-	var format : AvcBitstreamFormat = "avc";
+	var format : AvcBitstreamFormat;
 };

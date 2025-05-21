@@ -28,5 +28,5 @@ typedef RTCRtpHeaderExtensionParameters = {
 	var uri : String;
 	var id : Int;
 	@:optional
-	var encrypted : Bool = false;
+	var encrypted : Bool;
 };

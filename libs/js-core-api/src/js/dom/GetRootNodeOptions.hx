@@ -26,5 +26,5 @@ package js.dom;
 
 typedef GetRootNodeOptions = {
 	@:optional
-	var composed : Bool = false;
+	var composed : Bool;
 };

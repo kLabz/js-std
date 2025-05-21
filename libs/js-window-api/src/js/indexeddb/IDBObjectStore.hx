@@ -48,7 +48,7 @@ package js.indexeddb;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function createIndex(name:String, keyPath:haxe.extern.EitherType<String, Array<String>>, ?options:IDBIndexParameters = {  }):IDBIndex;
+	function createIndex(name:String, keyPath:haxe.extern.EitherType<String, Array<String>>, ?options:IDBIndexParameters):IDBIndex;
 	/**
 		Unhandled extended attribute NewObject
 	**/

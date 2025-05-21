@@ -6,6 +6,7 @@ import haxe.macro.Expr.Expr;
 import haxe.macro.Expr.ExprDef;
 import haxe.macro.Expr.Field;
 import haxe.macro.Expr.MetadataEntry;
+import haxe.macro.Expr.Position;
 import haxe.macro.Expr.TypeDefinition;
 import haxe.macro.Expr.TypePath;
 import haxe.macro.PositionTools;
@@ -18,6 +19,7 @@ import webref.IDL;
 import webidl2.AbstractBase;
 import webidl2.AbstractNonUnionTypeDescription;
 import webidl2.AbstractValueDescription;
+import webidl2.ConstantMemberType;
 import webidl2.DictionaryType;
 import webidl2.EnumType;
 import webidl2.ExtendedAttribute;
@@ -35,9 +37,17 @@ using NullHelper;
 
 typedef Context = {
 	var t:String;
+	var pos:Position;
 	var file:FileHandler;
 	var pack:Array<String>;
 	var scope:Null<Set<String>>;
+}
+
+typedef ClassContext = Context & {
+	var fields:Array<Field>;
+	var members:Array<IDLInterfaceMemberType>;
+	var interfaces:Array<TypePath>;
+	var typeDoc:Array<String>;
 }
 
 enum abstract Libraries(String) to String {
@@ -49,34 +59,52 @@ enum abstract Libraries(String) to String {
 
 // TODO: clean up that POC
 class Main {
-	public static function main() {
+	public static function main() new Main();
+
+	static var libs = [
+		"*" => cast "js-core-api",
+		"Window" => WindowAPI,
+
+		"Worker" => WorkerAPI,
+		"ServiceWorker" => ServiceWorkerAPI,
+		"DedicatedWorker" => WorkerAPI, // See https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope
+		"SharedWorker" => null, // TODO
+
+		"Worklet" => WorkletAPI,
+		"AnimationWorklet" => WorkletAPI,
+		"AudioWorklet" => WorkletAPI,
+		"LayoutWorklet" => WorkletAPI,
+		"PaintWorklet" => WorkletAPI,
+		"SharedStorageWorklet" => WorkletAPI,
+
+		// TODO (?)
+		"RTCIdentityProvider" => null,
+		"InterestGroupScriptRunnerGlobalScope" => null,
+		"InterestGroupScoringScriptRunnerGlobalScope" => null,
+		"InterestGroupBiddingScriptRunnerGlobalScope" => null,
+		"InterestGroupReportingScriptRunnerGlobalScope" => null,
+		"InterestGroupBiddingAndScoringScriptRunnerGlobalScope" => null
+	];
+
+
+	function new() {
+		IDL.listAll().then(function(files) {
+			// TODO: predictable order (because of partials..)
+			var promises = [for (f in files) {
+				if (isFileIgnored(f)) continue;
+				f.parse().then(handleFile.bind(f));
+			}];
+
+			Promise.all(promises).then(_ -> {
+				// TODO: empty out directory before processing
+				for (task in tasks) task();
+				for (task in saveTasks) doSave(task.ctx, task.t, task.td);
+			});
+		});
+	}
+
 		var printer = new Printer();
 		var saved = new haxe.ds.StringMap<String>();
-
-		var libs = [
-			"*" => cast "js-core-api",
-			"Window" => WindowAPI,
-
-			"Worker" => WorkerAPI,
-			"ServiceWorker" => ServiceWorkerAPI,
-			"DedicatedWorker" => WorkerAPI, // See https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope
-			"SharedWorker" => null, // TODO
-
-			"Worklet" => WorkletAPI,
-			"AnimationWorklet" => WorkletAPI,
-			"AudioWorklet" => WorkletAPI,
-			"LayoutWorklet" => WorkletAPI,
-			"PaintWorklet" => WorkletAPI,
-			"SharedStorageWorklet" => WorkletAPI,
-
-			// TODO (?)
-			"RTCIdentityProvider" => null,
-			"InterestGroupScriptRunnerGlobalScope" => null,
-			"InterestGroupScoringScriptRunnerGlobalScope" => null,
-			"InterestGroupBiddingScriptRunnerGlobalScope" => null,
-			"InterestGroupReportingScriptRunnerGlobalScope" => null,
-			"InterestGroupBiddingAndScoringScriptRunnerGlobalScope" => null
-		];
 
 		var packMap:Map<String, Array<String>> = [];
 		var scopeMap:Map<String, Null<Set<String>>> = [];
@@ -156,7 +184,7 @@ class Main {
 				case "any": macro :Any;
 				case "boolean": macro :Bool;
 				case "object": macro :{};
-				case "DOMString" | "USVString": macro :String;
+				case "DOMString" | "USVString" | "CSSOMString": macro :String;
 				case "ByteString": macro :String; // ?
 				case "byte" | "octet" | "short" | "long": macro :Int;
 				case "unsigned short": macro :Int;
@@ -166,6 +194,26 @@ class Main {
 				case "float" | "double": macro :Float;
 				case "unrestricted float" | "unrestricted double": macro :Float;
 				// TODO: other special types
+
+				case "ArrayBuffer": macro :js.lib.ArrayBuffer;
+				case "ArrayBufferView": macro :js.lib.ArrayBufferView;
+				case "SharedArrayBuffer": macro :js.lib.SharedArrayBuffer;
+				case "DataView": macro :js.lib.DataView;
+				case "Int8Array": macro :js.lib.Int8Array;
+				case "Int16Array": macro :js.lib.Int16Array;
+				case "Int32Array": macro :js.lib.Int32Array;
+				case "Uint8Array": macro :js.lib.Uint8Array;
+				case "Uint16Array": macro :js.lib.Uint16Array;
+				case "Uint32Array": macro :js.lib.Uint32Array;
+				case "Uint8ClampedArray": macro :js.lib.Uint8ClampedArray;
+				case "Float16Array": macro :js.lib.Float16Array; // TODO
+				case "Float32Array": macro :js.lib.Float32Array;
+				case "Float64Array": macro :js.lib.Float64Array;
+				case "bigint": macro :js.lib.BigInt; // TODO
+				case "BigInt64Array": macro :js.lib.BigInt64Array; // TODO
+				case "BigUint64Array": macro :js.lib.BigUint64Array; // TODO
+
+				case "WindowProxy": macro :js.html.Window;
 
 				case _:
 					dependents.set(t, dependents.get(t).or([]).copyWith(ctx.t));
@@ -268,7 +316,6 @@ class Main {
 		}
 
 		function doSave(ctx:Context, t:String, td:TypeDefinition) {
-			if (ctx.scope == null) ctx.scope = new Set();
 			var handledDependents:Set<String> = [t];
 			var abort = false;
 
@@ -295,7 +342,10 @@ class Main {
 				}
 			}
 
-			handleType(t);
+			if (ctx.scope.or([]).length == 0) {
+				ctx.scope = new Set();
+				handleType(t);
+			}
 
 			// Doesn't seem needed atm, but doesn't hurt to check
 			if (ctx.scope.has("*")) ctx.scope = ["*"];
@@ -325,10 +375,32 @@ class Main {
 			}
 		}
 
+		function initCtx(file:FileHandler, tname:String, scope:Null<Set<String>>):Context {
+			return {
+				t: tname,
+				pos: PositionTools.make({min: 0, max: 0, file: file.path}),
+				file: file,
+				pack: ["js", sanitizePackage(file.shortname)],
+				scope: scope
+			};
+		}
+
+		function initClassCtx(file:FileHandler, tname:String, scope:Null<Set<String>>, members:Array<IDLInterfaceMemberType>):ClassContext {
+			return {
+				t: tname,
+				pos: PositionTools.make({min: 0, max: 0, file: file.path}),
+				file: file,
+				pack: ["js", sanitizePackage(file.shortname)],
+				scope: scope,
+				typeDoc: [],
+				fields: [],
+				interfaces: [],
+				members: members
+			};
+		}
+
 		function handleFile(file:FileHandler, res:Array<IDLRootType>) {
 			var pack = ["js", sanitizePackage(file.shortname)];
-			var pos = PositionTools.make({min: 0, max: 0, file: file.path});
-			var optMeta:MetadataEntry = {name: ":optional", pos: pos};
 
 			Sys.println('Parsed ${file.filename}: ${res.length} declarations.');
 
@@ -342,12 +414,14 @@ class Main {
 						scopeMap.set(t.name, scope);
 
 						tasks.push(() -> {
-							var ctx:Context = {t: t.name, file: file, pack: pack, scope: scope};
+							var ctx = initCtx(file, t.name, scope);
 
 							var ct = TFunction(
 								// TODO: make sure that arguments' extended attributes are handled
 								t.arguments.map(a ->
-									a.optional ? TOptional(TNamed(a.name, convertType(ctx, a.idlType))) : TNamed(a.name, convertType(ctx, a.idlType))
+									a.optional
+										? TOptional(TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType)))
+										: TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType))
 								),
 								convertType(ctx, t.idlType)
 							);
@@ -356,7 +430,7 @@ class Main {
 								pack: pack,
 								name: t.name,
 								doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
-								pos: pos,
+								pos: ctx.pos,
 								isExtern: null,
 								kind: TDAlias(ct),
 								fields: []
@@ -368,7 +442,73 @@ class Main {
 						});
 
 					case IDLCallbackInterfaceType:
-						trace(' > TODO: callback interface ${pack.concat([t.name]).join(".")}');
+						packMap.set(t.name, pack);
+						var scope = extractScope(t.extAttrs);
+						scopeMap.set(t.name, scope);
+
+						tasks.push(() -> {
+							var constants = t.members.filter(function _<T:AbstractBase<T>>(m:T):Bool {
+								return switch (m.type) {
+									case IDLConstantMemberType: true;
+									case _: false;
+								};
+							});
+
+							// - Generate constants in `@:native(TypeName) extern class TypeNameConstants {}`
+							if (constants.length > 0) {
+								var ctx = initCtx(file, t.name, scope);
+								var td:TypeDefinition = {
+									pack: pack,
+									name: '${t.name}Constants',
+									doc: null, // TODO retrieve docs
+									pos: ctx.pos,
+									isExtern: true,
+									kind: TDClass(),
+									meta: [{
+										name: ":native",
+										params: [{pos: ctx.pos, expr: EConst(CString(t.name))}],
+										pos: ctx.pos
+									}],
+									fields: constants.map(function _(m:ConstantMemberType):Field {
+										var meta = [];
+										return {
+											name: sanitizeIdentifier(m.name, meta, ctx.pos),
+											doc: addUnhandledAttributesToDoc(null, m.extAttrs), // TODO
+											access: [AStatic, AInline], // TODO: extern but not inline? (if so, drop value below)
+											kind: FVar(convertType(ctx, m.idlType), convertValue(m.value, false, ctx.pos)),
+											pos: ctx.pos,
+											meta: meta
+										};
+									})
+								};
+								Sys.println(' > Exported constants class ${pack.concat([td.name]).join(".")}');
+								save(ctx, td.name, td);
+							}
+
+							var ctx = initClassCtx(file, t.name, scope, t.members.filter(function _<T:AbstractBase<T>>(m:T):Bool {
+								return switch (m.type) {
+									case IDLConstantMemberType: false;
+									case _: true;
+								};
+							}));
+
+							// - Generate other members in `typedef TypeName {}`
+							for (m in ctx.members) handleMember(ctx, m);
+
+							var td:TypeDefinition = {
+								pack: pack,
+								name: t.name,
+								doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
+								pos: ctx.pos,
+								isExtern: null,
+								kind: TDAlias(TAnonymous(ctx.fields)),
+								fields: []
+							};
+
+							assertEmptyAttributes(t.extAttrs);
+							Sys.println(' > Exported typedef ${pack.concat([t.name]).join(".")}');
+							save(ctx, t.name, td);
+						});
 
 					case IDLDictionaryType if (t.partial):
 						// see https://webidl.spec.whatwg.org/#dfn-partial-dictionary
@@ -380,17 +520,22 @@ class Main {
 						scopeMap.set(t.name, scope);
 
 						tasks.push(() -> {
-							var ctx:Context = {t: t.name, file: file, pack: pack, scope: scope};
+							var ctx = initCtx(file, t.name, scope);
 
 							var partials = partialDictionaries.get(t.name).or([]);
 							var members = partials.fold((p, acc) -> acc.concat(p.members), t.members);
+							// TODO: check that generating FVar is enough..
 							var fields = members.map(m -> {
+								var meta = m.required ? [] : [{name: ":optional", pos: ctx.pos}];
 								({
-									name: m.name, // TODO: sanitize (note: no @:native on typedef..)
+									// TODO: @:native won't be enough for typedef..
+									name: sanitizeIdentifier(m.name, meta, ctx.pos),
 									doc: addUnhandledAttributesToDoc(null, m.extAttrs), // TODO retrieve docs
-									kind: FVar(convertType(ctx, m.idlType), convertValue(m.default_, pos)),
-									pos: pos,
-									meta: m.required ? null : [optMeta]
+									// TODO: add default value in doc
+									kind: FVar(convertType(ctx, m.idlType)),
+									// kind: FVar(convertType(ctx, m.idlType), convertValue(m.default_, ctx.pos)),
+									pos: ctx.pos,
+									meta: meta
 								}:Field);
 							});
 
@@ -398,7 +543,7 @@ class Main {
 								pack: pack,
 								name: t.name,
 								doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
-								pos: pos,
+								pos: ctx.pos,
 								isExtern: null,
 								kind: TDAlias(t.inheritance == null
 									? TAnonymous(fields)
@@ -417,21 +562,23 @@ class Main {
 						var scope = extractScope(t.extAttrs);
 						scopeMap.set(t.name, scope);
 
+						// TODO: save enum values to use in default values
+
 						tasks.push(() -> {
-							var ctx:Context = {t: t.name, file: file, pack: pack, scope: scope};
+							var ctx = initCtx(file, t.name, scope);
 
 							var td:TypeDefinition = {
 								pack: pack,
 								name: t.name,
 								doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
-								pos: pos,
+								pos: ctx.pos,
 								isExtern: null,
 								kind: TDAbstract(macro :String, [AbEnum]),
 								fields: t.values.map(e -> ({
 									name: sanitizeEnumValueName(e),
 									doc: null, // TODO retrieve docs
-									kind: FVar(null, {pos: pos, expr: EConst(CString(e.value))}),
-									pos: pos
+									kind: FVar(null, {pos: ctx.pos, expr: EConst(CString(e.value))}),
+									pos: ctx.pos
 								}:Field))
 							};
 
@@ -458,196 +605,35 @@ class Main {
 						scopeMap.set(t.name, scope);
 
 						tasks.push(() -> {
-							var ctx:Context = {t: t.name, file: file, pack: pack, scope: scope};
-
+							// TODO (? not 100% clear atm, either that or need to implement `WindowProxy` for all scopes):
+							// some interfaces (for example `js.dom.Document`) will need to have a
+							// base definition in `js-core-api` and some partials (mostly from
+							// `html` for `js.dom.Document`?) only be applied to override in
+							// specific scope (`js-window-api` here?)
 							var partials = partialInterfaces.get(t.name).or([]);
-							var members = partials.fold((p, acc) -> acc.concat(p.t.members), t.members);
+
+							var ctx = initClassCtx(file, t.name, scope, partials.fold((p, acc) -> acc.concat(p.t.members), t.members));
 
 							var includes:Map<String, Array<IDLInterfaceMemberType>> = [];
 							for (i in includesTypes) {
 								if (i.target != t.name) continue;
 								if (!mixins.exists(i.includes)) throw 'Cannot find mixin ${i.includes}';
 								var includesMembers = mixins.get(i.includes);
-								members = members.concat(includesMembers);
+								ctx.members = ctx.members.concat(includesMembers);
 								includes.set(i.includes, includesMembers);
 							}
 
-							// TODO: remove this once implemented
-							var typeDoc = [];
-
-							var fields:Array<Field> = [];
-							var interfaces = [];
-
-							function handleMember<T:AbstractBase<T>>(
-								m:T,
-								?fromInclude:String,
-								?fromPartial:{t:InterfaceType, file:FileHandler}
-							) {
-								// TODO: proper doc handling
-								var doc = fromPartial.maybeApply(p -> 'From partial interface in ${p.file.filename}');
-								doc = doc.maybeConcat(fromInclude.maybeApply(i -> 'From interface mixin $i'), "\n");
-
-								switch (m.type) {
-									case IDLConstantMemberType:
-										var meta = [];
-										fields.push({
-											name: sanitizeFieldName(m.name, meta, pos),
-											doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
-											access: [AStatic, AInline],
-											kind: FVar(convertType(ctx, m.idlType), convertValue(m.value, pos)),
-											pos: pos,
-											meta: meta
-										});
-
-									case IDLSetlikeDeclarationMemberType:
-										// TODO
-										trace('TODO Setlike for ${t.name}', m);
-										typeDoc.push('TODO SetlikeDeclaration handling');
-
-									case IDLMaplikeDeclarationMemberType:
-										// TODO
-										trace('TODO Maplike for ${t.name}', m);
-										typeDoc.push('TODO MaplikeDeclaration handling');
-
-									case IDLIterableDeclarationMemberType:
-										var newFields:Array<Field> = [];
-										if (m.idlType.length == 1) {
-											var tvalue = convertType(ctx, m.idlType.first);
-
-											newFields = (macro class A {
-												function values():Iterator<$tvalue>;
-											}).fields;
-											for (f in newFields) fields.push(f);
-										} else {
-											var tkey = convertType(ctx, m.idlType.first);
-											var tvalue = convertType(ctx, m.idlType.second);
-
-											newFields = (macro class A {
-												function keys():Iterator<$tkey>;
-												function values():Iterator<$tvalue>;
-												function entries():Iterator<js.lib.Tuple<$tkey, $tvalue>>;
-											}).fields;
-										}
-										for (f in newFields) fields.push(f);
-
-									case IDLConstructorMemberType:
-										var skip = false;
-										handleAttributes(m.extAttrs, function(a) {
-											return switch (a.name) {
-												case "HTMLConstructor": skip = true;
-												case _: false;
-											}
-										});
-
-										if (!skip) {
-											fields.push({
-												name: "new",
-												doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
-												access: isOverload(m, members) ? [AOverload] : [],
-												kind: FFun({
-													// TODO: make sure that arguments' extended attributes are handled
-													args: m.arguments.map(a -> {
-														name: a.name,
-														opt: a.optional,
-														type: convertType(ctx, a.idlType),
-														value: convertValue(a.default_, pos),
-														meta: null
-													}),
-													ret: macro :Void,
-													expr: null,
-													params: null
-												}),
-												pos: pos,
-												meta: []
-											});
-										}
-
-									case IDLAttributeMemberType if (m.special.or("") != "" && m.special != "static"):
-										trace('WARNING [${file.shortname}] TODO ${t.name}.${m.name}: special=${m.special} readonly=${m.readonly}');
-										typeDoc.push('TODO attribute ${m.name}: special=${m.special} readonly=${m.readonly}');
-
-									case IDLAttributeMemberType:
-										handleAttributes(m.extAttrs, function(a) {
-											return switch (a.name) {
-												case "CEReactions": true;
-												case _: false;
-											}
-										});
-
-										var meta = [];
-										fields.push({
-											name: sanitizeFieldName(m.name, meta, pos),
-											doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
-											access: m.special == "static" ? [AStatic] : [],
-											kind: m.readonly ? FProp("default", "null", convertType(ctx, m.idlType)) : FVar(convertType(ctx, m.idlType)),
-											pos: pos,
-											meta: meta
-										});
-
-									case IDLOperationMemberType if (m.name.or("") == "" && m.special == "getter"):
-										var tkey = convertType(ctx, m.arguments.pop().idlType);
-										var tvalue = convertType(ctx, m.idlType);
-										switch (tkey) {
-											case TPath({pack: [], name: "Int"}):
-												interfaces.push(toTPath(macro :ArrayAccess<$tvalue>));
-											case TPath({pack: [], name: "String"}):
-												typeDoc.push('TODO ArrayAccess<> for tkey=String tvalue=${Std.string(tvalue)}');
-											case _:
-												typeDoc.push('TODO ArrayAccess<> for tkey=${Std.string(tkey)} tvalue=${Std.string(tvalue)}');
-										}
-
-									case IDLOperationMemberType:
-										handleAttributes(m.extAttrs, function(a) {
-											return switch (a.name) {
-												case "CEReactions": true;
-												case _: false;
-											}
-										});
-
-										if (m.name == "" || m.name == null) {
-											trace('WARNING Operation member name is ${m.name} (special = ${m.special})');
-											var newDoc = '(special = ${m.special})';
-											doc = doc.concat(newDoc, "\n");
-										}
-										var meta = [];
-										fields.push({
-											name: sanitizeFieldName(m.name, meta, pos),
-											doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
-											access: isOverload(m, members) ? [AOverload] : [],
-											kind: FFun({
-												// TODO: make sure that arguments' extended attributes are handled
-												args: m.arguments.map(a -> {
-													name: a.name,
-													opt: a.optional,
-													type: convertType(ctx, a.idlType),
-													value: convertValue(a.default_, pos),
-													meta: null
-												}),
-												ret: convertType(ctx, m.idlType).or(macro :Void),
-												expr: null,
-												params: null
-											}),
-											pos: pos,
-											meta: meta
-										});
-
-									case _: throw 'Unexpected member type ${m.type}.';
-								}
-
-								assertEmptyAttributes(m.extAttrs);
-							}
-
-							for (m in t.members) handleMember(m);
+							for (m in t.members) handleMember(ctx, m);
 
 							for (i => members in includes) {
-								for (m in members) handleMember(m, i);
+								for (m in members) handleMember(ctx, m, i);
 							}
 
 							for (p in partials) {
-								for (m in p.t.members) handleMember(m, p);
+								for (m in p.t.members) handleMember(ctx, m, p);
 							}
 
-							fields.sort((f1, f2) -> {
+							ctx.fields.sort((f1, f2) -> {
 								switch [f1.kind, f2.kind] {
 									case [FVar(_) | FProp(_), FVar(_) | FProp(_)]: 0;
 									case [FFun(_), FFun(_)] if (f1.name == "new"): -1;
@@ -663,19 +649,19 @@ class Main {
 							var td:TypeDefinition = {
 								pack: pack,
 								name: t.name,
-								doc: addUnhandledAttributesToDoc(typeDoc.length == 0 ? null : typeDoc.join("\n"), t.extAttrs), // TODO retrieve docs
-								pos: pos,
+								doc: addUnhandledAttributesToDoc(ctx.typeDoc.length == 0 ? null : ctx.typeDoc.join("\n"), t.extAttrs), // TODO retrieve docs
+								pos: ctx.pos,
 								isExtern: true,
 								kind: TDClass(
 									t.inheritance.maybeApply(t -> toTPath(resolveType(ctx, t))),
-									interfaces.length == 0 ? null : interfaces
+									ctx.interfaces.length == 0 ? null : ctx.interfaces
 								),
 								meta: [{
 									name: ":native",
-									params: [{pos: pos, expr: EConst(CString(t.name))}],
-									pos: pos
+									params: [{pos: ctx.pos, expr: EConst(CString(t.name))}],
+									pos: ctx.pos
 								}],
-								fields: fields
+								fields: ctx.fields
 							};
 
 							assertEmptyAttributes(t.extAttrs);
@@ -692,14 +678,14 @@ class Main {
 						scopeMap.set(t.name, scope);
 
 						tasks.push(() -> {
-							var ctx:Context = {t: t.name, file: file, pack: pack, scope: scope};
+							var ctx = initCtx(file, t.name, scope);
 							var ct = convertType(ctx, t.idlType);
 
 							var td:TypeDefinition = {
 								pack: pack,
 								name: t.name,
 								doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
-								pos: pos,
+								pos: ctx.pos,
 								isExtern: null,
 								kind: TDAlias(ct),
 								fields: []
@@ -717,32 +703,12 @@ class Main {
 			res.iter(f -> handle(f));
 		}
 
-		IDL.listAll().then(function(files) {
-			// TODO: predictable order (because of partials..)
-			var promises = [for (f in files) {
-				if (isFileIgnored(f)) continue;
-				f.parse().then(handleFile.bind(f));
-			}];
-
-			Promise.all(promises).then(_ -> {
-				// TODO: empty out directory before processing
-				for (task in tasks) task();
-				for (task in saveTasks) doSave(task.ctx, task.t, task.td);
-			});
-		});
-	}
-
-	static var ignoredFiles = [
-		// TODO
-	];
+	static var ignoredFiles = [];
+	static var ignoredTypes:Map<String, Array<String>> = [];
 
 	static function isFileIgnored(file) {
 		return ignoredFiles.contains(file.shortname);
 	}
-
-	static var ignoredTypes:Map<String, Array<String>> = [
-		// TODO
-	];
 
 	static function isTypeIgnored<T:AbstractBase<T>>(file, t:T) {
 		return ignoredTypes.get(file.shortname)?.contains((cast t).name) ?? false;
@@ -754,28 +720,267 @@ class Main {
 
 	static function sanitizeEnumValueName(e:{type:String, value:String, parent:EnumType}) {
 		if (e.value == "") return "NONE";
-		return ~/[^A-Z0-9]+/g.replace(e.value.toUpperCase(), "_");
+		var value = e.value;
+		value = ~/[^A-Z0-9]+/g.replace(value.toUpperCase(), "_");
+		return switch (value.charCodeAt(0)) {
+			case _ >= '0'.code && _ <= '9'.code: '_$value';
+			case _: value;
+		};
 	}
 
-	static function sanitizeFieldName(name:String, meta:Array<MetadataEntry>, pos):String {
+	static function sanitizeIdentifier(name:String, meta:Array<MetadataEntry>, pos):String {
+		function addNative() meta.push({name: ":native", params: [{pos: pos, expr: EConst(CString(name))}], pos: pos});
+
 		return switch (name) {
-			case "default" | "operator" | "inline" | "continue" | "catch" | "for":
-				meta.push({name: ":native", params: [{pos: pos, expr: EConst(CString(name))}], pos: pos});
+			case "": throw 'unexpected empty identifier';
+			case "default" | "operator" | "inline" | "continue" | "catch" | "for" | "interface" | "extends" | "break" | "override" | "cast":
+				addNative();
 				'${name}_';
 
-			case _: name;
+			case _:
+				// Snake case to camelCase
+				var newName = ~/([a-z]+)-([a-z])/g.map(name, r -> r.matched(1) + r.matched(2).toUpperCase());
+
+				// Unexpected characters
+				newName = ~/[^a-z0-9_]+/gi.replace(newName, "_");
+
+				// Do not start with a digit
+				newName = switch (newName.charCodeAt(0)) {
+					case _ >= '0'.code && _ <= '9'.code: '_$newName';
+					case _: newName;
+				};
+
+				if (newName != name) addNative();
+				newName;
 		}
 	}
 
-	static function convertValue(v:Null<ValueDescription>, pos):Null<Expr> {
+	function handleMember<T:AbstractBase<T>>(
+		ctx:ClassContext,
+		m:T,
+		?fromInclude:String,
+		?fromPartial:{t:InterfaceType, file:FileHandler}
+	) {
+		// TODO: proper doc handling
+		var doc = fromPartial.maybeApply(p -> 'From partial interface in ${p.file.filename}');
+		doc = doc.maybeConcat(fromInclude.maybeApply(i -> 'From interface mixin $i'), "\n");
+
+		// Apply patches
+		Patch.patchMember(ctx, m, fromInclude);
+
+		var scope = extractScope(m.extAttrs).or([]);
+		if (scope.length > 0) {
+			var desc = switch (m.type) {
+				case IDLIterableDeclarationMemberType: 'iterable';
+				case IDLConstantMemberType: 'const ${m.name}';
+				case IDLConstructorMemberType: 'constructor';
+				case IDLAttributeMemberType:
+					var ct = convertType(ctx, m.idlType);
+					'attribute ${m.name} ${printer.printComplexType(ct)}';
+				case IDLOperationMemberType:
+					var args = m.arguments.map(a ->
+						a.optional
+							? TOptional(TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType)))
+							: TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType))
+					);
+					var tret = convertType(ctx, m.idlType).or(macro :Void);
+					var ct = TFunction(args, tret);
+					'member ${m.name} ${printer.printComplexType(ct)}';
+				case _: throw 'Unexpected member type ${m.type}.';
+			};
+
+			ctx.typeDoc.push('TODO ${desc} exposed for ${scope}');
+			return;
+		}
+
+		switch (m.type) {
+			case IDLConstantMemberType:
+				var meta = [];
+				ctx.fields.push({
+					name: sanitizeIdentifier(m.name, meta, ctx.pos),
+					doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
+					access: [AStatic, AInline], // TODO: extern but not inline? (if so, drop value below)
+					kind: FVar(convertType(ctx, m.idlType), convertValue(m.value, false, ctx.pos)),
+					pos: ctx.pos,
+					meta: meta
+				});
+
+			case IDLSetlikeDeclarationMemberType:
+				// TODO
+				trace('TODO Setlike for ${ctx.t}', m);
+				ctx.typeDoc.push('TODO SetlikeDeclaration handling');
+
+			case IDLMaplikeDeclarationMemberType:
+				// TODO
+				trace('TODO Maplike for ${ctx.t}', m);
+				ctx.typeDoc.push('TODO MaplikeDeclaration handling');
+
+			case IDLIterableDeclarationMemberType:
+				var newFields:Array<Field> = [];
+				if (m.idlType.length == 1) {
+					var tvalue = convertType(ctx, m.idlType.first);
+
+					newFields = (macro class A {
+						function values():Iterator<$tvalue>;
+					}).fields;
+				} else {
+					var tkey = convertType(ctx, m.idlType.first);
+					var tvalue = convertType(ctx, m.idlType.second);
+
+					newFields = (macro class A {
+						function keys():Iterator<$tkey>;
+						function values():Iterator<$tvalue>;
+						function entries():Iterator<js.lib.Tuple<$tkey, $tvalue>>;
+					}).fields;
+				}
+				for (f in newFields) ctx.fields.push(f);
+
+			case IDLConstructorMemberType:
+				var skip = false;
+				handleAttributes(m.extAttrs, function(a) {
+					return switch (a.name) {
+						case "HTMLConstructor": skip = true;
+						case _: false;
+					}
+				});
+
+				if (!skip) {
+					ctx.fields.push({
+						name: "new",
+						doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
+						access: isOverload(m, ctx.members) ? [AOverload] : [],
+						kind: FFun({
+							// TODO: make sure that arguments' extended attributes are handled
+							// TODO: handle a.variadic
+							args: m.arguments.map(a -> {
+								name: sanitizeIdentifier(a.name, [], ctx.pos),
+								opt: a.optional,
+								type: convertType(ctx, a.idlType),
+								value: convertValue(a.default_, true, ctx.pos),
+								meta: null
+							}),
+							ret: macro :Void,
+							expr: null,
+							params: null
+						}),
+						pos: ctx.pos,
+						meta: []
+					});
+				}
+
+			case IDLAttributeMemberType if (m.special == "inherit"):
+				// Nothing to do; this attribute was defined in parent type
+
+			case IDLAttributeMemberType if (m.special.or("") != "" && m.special != "static" && m.special != "stringifier"):
+				trace('WARNING [${ctx.file.shortname}] TODO ${ctx.t}.${m.name}: special=${m.special} readonly=${m.readonly}');
+				ctx.typeDoc.push('TODO attribute ${m.name}: special=${m.special} readonly=${m.readonly}');
+
+			case IDLAttributeMemberType:
+				handleAttributes(m.extAttrs, function(a) {
+					return switch (a.name) {
+						case "CEReactions": true;
+						case _: false;
+					}
+				});
+
+				if (m.special == "stringifier") {
+					var toString = (macro class A {
+						function toString():String;
+					}).fields[0];
+					toString.doc = 'Returns `this.${m.name}`.';
+					ctx.fields.push(toString);
+				}
+
+				var meta = [];
+				ctx.fields.push({
+					name: sanitizeIdentifier(m.name, meta, ctx.pos),
+					doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
+					access: m.special == "static" ? [AStatic] : [],
+					kind: m.readonly ? FProp("default", "null", convertType(ctx, m.idlType)) : FVar(convertType(ctx, m.idlType)),
+					pos: ctx.pos,
+					meta: meta
+				});
+
+			case IDLOperationMemberType if (m.name.or("") == "" && m.special == "stringifier"):
+				ctx.fields.push((macro class A {
+					function toString():String;
+				}).fields[0]);
+
+			case IDLOperationMemberType if (m.name.or("") == "" && m.special == "getter"):
+				// TODO: handle a.optional/a.variadic
+				var tkey = convertType(ctx, m.arguments.pop().idlType);
+				var tvalue = convertType(ctx, m.idlType);
+				switch (tkey) {
+					case TPath({pack: [], name: "Int"}):
+						ctx.interfaces.push(toTPath(macro :ArrayAccess<$tvalue>));
+					case TPath({pack: [], name: "String"}):
+						ctx.typeDoc.push('TODO ArrayAccess<> for tkey=String tvalue=${Std.string(tvalue)}');
+					case _:
+						ctx.typeDoc.push('TODO ArrayAccess<> for tkey=${Std.string(tkey)} tvalue=${Std.string(tvalue)}');
+				}
+
+			case IDLOperationMemberType if (m.name.or("") == "" && m.special.or("") != ""):
+				// TODO: factorize arg handling
+				var args = m.arguments.map(a ->
+					a.optional
+						? TOptional(TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType)))
+						: TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType))
+				);
+				var tret = convertType(ctx, m.idlType).or(macro :Void);
+				var ct = TFunction(args, tret);
+				ctx.typeDoc.push('TODO special=${m.special} ${printer.printComplexType(ct)}');
+
+			case IDLOperationMemberType:
+				handleAttributes(m.extAttrs, function(a) {
+					return switch (a.name) {
+						case "CEReactions": true;
+						case _: false;
+					}
+				});
+
+				var meta = [];
+				ctx.fields.push({
+					name: sanitizeIdentifier(m.name, meta, ctx.pos),
+					doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
+					access: isOverload(m, ctx.members) ? [AOverload] : [],
+					kind: FFun({
+						// TODO: make sure that arguments' extended attributes are handled
+						// TODO: factorize arg handling
+						args: m.arguments.map(a -> {
+							name: sanitizeIdentifier(a.name, [], ctx.pos),
+							opt: a.optional,
+							type: {
+								var ct = convertType(ctx, a.idlType);
+								a.variadic ? macro :haxe.Rest<$ct> : ct;
+							},
+							value: convertValue(a.default_, true, ctx.pos),
+							meta: null
+						}),
+						ret: convertType(ctx, m.idlType).or(macro :Void),
+						expr: null,
+						params: null
+					}),
+					pos: ctx.pos,
+					meta: meta
+				});
+
+			case _: throw 'Unexpected member type ${m.type}.';
+		}
+
+		assertEmptyAttributes(m.extAttrs);
+	}
+
+	static function convertValue(v:Null<ValueDescription>, constOnly:Bool, pos):Null<Expr> {
 		if (v == null) return null;
 
-		function extractValue<T:AbstractValueDescription<T>>(v:T):ExprDef {
+		function extractValue<T:AbstractValueDescription<T>>(v:T):Null<ExprDef> {
 			return switch (v.type) {
+				case IDLValueDescriptionString if (v.value == "undefined"): null;
 				case IDLValueDescriptionString: EConst(CString(v.value));
 				case IDLValueDescriptionNumber: EConst(CInt(v.value));
 				case IDLValueDescriptionBoolean: EConst(CIdent(v.value ? "true" : "false"));
 				case IDLValueDescriptionNull: EConst(CIdent("null"));
+				case _ if (constOnly): null;
 				// TODO: this is not supported everywhere in Haxe..
 				case IDLValueDescriptionInfinity: EConst(CIdent(v.negative ? "Math.NEGATIVE_INFINITY" : "Math.POSITIVE_INFINITY"));
 				// TODO: this is not supported everywhere in Haxe..
@@ -788,10 +993,9 @@ class Main {
 			};
 		}
 
-		return {
-			pos: pos,
-			expr: extractValue(cast v)
-		}
+		var expr = extractValue(cast v);
+		if (expr == null) return null;
+		return {pos: pos, expr: expr};
 	}
 
 	static function getName(member:IDLInterfaceMemberType):String {

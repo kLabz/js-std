@@ -921,9 +921,17 @@ class Main {
 					case TPath({pack: [], name: "Int"}):
 						ctx.interfaces.push(toTPath(macro :ArrayAccess<$tvalue>));
 					case TPath({pack: [], name: "String"}):
-						ctx.typeDoc.push('TODO ArrayAccess<> for tkey=String tvalue=${Std.string(tvalue)}');
+						var tvalue = try {
+							var tvalue = toTPath(tvalue);
+							Std.string(TPath({pack: tvalue.pack, name: tvalue.name, params: tvalue.params}));
+						} catch(_) "TAnonymous([])";
+						ctx.typeDoc.push('TODO ArrayAccess<> for tkey=String tvalue=${tvalue}');
 					case _:
-						ctx.typeDoc.push('TODO ArrayAccess<> for tkey=${Std.string(tkey)} tvalue=${Std.string(tvalue)}');
+						var tvalue = try {
+							var tvalue = toTPath(tvalue);
+							Std.string(TPath({pack: tvalue.pack, name: tvalue.name, params: tvalue.params}));
+						} catch(_) "TAnonymous([])";
+						ctx.typeDoc.push('TODO ArrayAccess<> for tkey=${Std.string(tkey)} tvalue=${tvalue}');
 				}
 
 			case IDLOperationMemberType if (m.name.or("") == "" && m.special.or("") != ""):

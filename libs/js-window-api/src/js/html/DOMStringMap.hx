@@ -28,17 +28,7 @@ package js.html;
 	TODO ArrayAccess<> for tkey=String tvalue=TPath({
 			pack : [], 
 			name : String, 
-			params : [], 
-			pos : {
-				file : src/Main.hx, 
-				min : 6392, 
-				max : 6398
-			}, 
-			posPath : {
-				file : src/Main.hx, 
-				min : 6392, 
-				max : 6398
-			}
+			params : []
 		})
 	TODO special=setter (name:String, value:String) -> Void
 	TODO special=deleter (name:String) -> Void

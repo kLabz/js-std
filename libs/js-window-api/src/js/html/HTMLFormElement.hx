@@ -28,17 +28,7 @@ package js.html;
 	TODO ArrayAccess<> for tkey=String tvalue=TPath({
 			pack : [haxe,extern], 
 			name : EitherType, 
-			params : [TPType(TPath(<...>)),TPType(TPath(<...>))], 
-			pos : {
-				file : src/Main.hx, 
-				min : 8704, 
-				max : 8740
-			}, 
-			posPath : {
-				file : src/Main.hx, 
-				min : 8704, 
-				max : 8726
-			}
+			params : [TPType(TPath(<...>)),TPType(TPath(<...>))]
 		})
 	Unhandled extended attribute LegacyOverrideBuiltIns
 	Unhandled extended attribute LegacyUnenumerableNamedProperties

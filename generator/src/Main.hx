@@ -89,17 +89,23 @@ class Main {
 
 	function new() {
 		IDL.listAll().then(function(files) {
-			// TODO: predictable order (because of partials..)
-			var promises = [for (f in files) {
-				if (isFileIgnored(f)) continue;
-				f.parse().then(handleFile.bind(f));
-			}];
+			var files = [for (f in files) f];
+			var next:Void->Void = null;
+			next = function() {
+				if (files.length == 0) {
+					// TODO: empty out directory before processing
+					for (task in tasks) task();
+					for (task in saveTasks) doSave(task.ctx, task.t, task.td);
+					return;
+				}
 
-			Promise.all(promises).then(_ -> {
-				// TODO: empty out directory before processing
-				for (task in tasks) task();
-				for (task in saveTasks) doSave(task.ctx, task.t, task.td);
-			});
+				var f = files.shift();
+				f.parse().then(res -> {
+					handleFile(f, res);
+					next();
+				});
+			}
+			next();
 		});
 	}
 

@@ -109,605 +109,606 @@ class Main {
 		});
 	}
 
-		var printer = new Printer();
-		var saved = new haxe.ds.StringMap<String>();
+	var printer = new Printer();
+	var saved = new haxe.ds.StringMap<String>();
 
-		var packMap:Map<String, Array<String>> = [];
-		var scopeMap:Map<String, Null<Set<String>>> = [];
-		var dependents:Map<String, Set<String>> = [];
+	var packMap:Map<String, Array<String>> = [];
+	var scopeMap:Map<String, Null<Set<String>>> = [];
+	var dependents:Map<String, Set<String>> = [];
 
-		var tasks:Array<() -> Void> = [];
-		var saveTasks:Array<{ctx:Context, t:String, td:TypeDefinition}> = [];
-		var partialDictionaries:Map<String, Array<DictionaryType>> = [];
-		var partialInterfaces:Map<String, Array<{t:InterfaceType, file:FileHandler}>> = [];
-		var includesTypes:Array<IncludesType> = [];
-		var mixins:Map<String, Array<IDLInterfaceMixinMemberType>> = [];
+	var tasks:Array<() -> Void> = [];
+	var saveTasks:Array<{ctx:Context, t:String, td:TypeDefinition}> = [];
+	var partialDictionaries:Map<String, Array<DictionaryType>> = [];
+	var partialInterfaces:Map<String, Array<{t:InterfaceType, file:FileHandler}>> = [];
+	var includesTypes:Array<IncludesType> = [];
+	var mixins:Map<String, Array<IDLInterfaceMixinMemberType>> = [];
 
-		function resolvePackage(ctx:Context, t:String):Array<String> {
-			var ret = packMap.get(t);
-			if (ret == null) {
-				Sys.println('WARNING: cannot resolve type $t');
-				return [];
-			}
-
-			// ignore package if same as current (or parent package)
-			var currentPackLength = ctx.pack.length;
-			for (i => part in ret) if (currentPackLength <= i || ctx.pack[i] != part) return ret;
+	function resolvePackage(ctx:Context, t:String):Array<String> {
+		var ret = packMap.get(t);
+		if (ret == null) {
+			Sys.println('WARNING: cannot resolve type $t');
 			return [];
 		}
 
-		function toTPath(ct:ComplexType):TypePath {
-			return switch (ct) {
-				case TPath(tp): tp;
-				case _: throw 'Unexpected ComplexType $ct';
-			};
-		}
+		// ignore package if same as current (or parent package)
+		var currentPackLength = ctx.pack.length;
+		for (i => part in ret) if (currentPackLength <= i || ctx.pack[i] != part) return ret;
+		return [];
+	}
 
-		function handleAttributes(attr:Array<ExtendedAttribute<Dynamic>>, cb:ExtendedAttribute<Dynamic>->Bool):Void {
-			var removed = [for (a in attr) if (!cb(a)) continue else a];
-			while (removed.length > 0) attr.remove(removed.shift());
-		}
+	function toTPath(ct:ComplexType):TypePath {
+		return switch (ct) {
+			case TPath(tp): tp;
+			case _: throw 'Unexpected ComplexType $ct';
+		};
+	}
 
-		function extractScope(attr:Array<ExtendedAttribute<Dynamic>>):Null<Set<String>> {
-			var scope = null;
-			handleAttributes(attr, function<T:ExtendedAttributeRightHandSide<T>>(a:ExtendedAttribute<T>) {
-				return switch (a.name) {
-					case "Exposed":
-						switch (a.rhs.type) {
-							case RHSIdentifier: scope = [a.rhs.value];
-							case RHSIdentifierList: scope = a.rhs.value.map(rhs -> rhs.value);
+	function handleAttributes(attr:Array<ExtendedAttribute<Dynamic>>, cb:ExtendedAttribute<Dynamic>->Bool):Void {
+		var removed = [for (a in attr) if (!cb(a)) continue else a];
+		while (removed.length > 0) attr.remove(removed.shift());
+	}
 
-							case t:
-								if ((cast t:String) != "*") throw 'Unexpected extended attribute right hand side type $t.';
-								scope = [cast t];
-						}
-						true;
-					case _: false;
-				}
-			});
-			return scope;
-		}
+	function extractScope(attr:Array<ExtendedAttribute<Dynamic>>):Null<Set<String>> {
+		var scope = null;
+		handleAttributes(attr, function<T:ExtendedAttributeRightHandSide<T>>(a:ExtendedAttribute<T>) {
+			return switch (a.name) {
+				case "Exposed":
+					switch (a.rhs.type) {
+						case RHSIdentifier: scope = [a.rhs.value];
+						case RHSIdentifierList: scope = a.rhs.value.map(rhs -> rhs.value);
 
-		function assertEmptyAttributes(attr:Array<ExtendedAttribute<Dynamic>>, ?pos:PosInfos):Void {
-			for (a in attr) haxe.Log.trace('ERROR: unhandled extended attribute ${a.name}', pos);
-		}
-
-		function addUnhandledAttributesToDoc(doc:Null<String>, attr:Array<ExtendedAttribute<Dynamic>>):Null<String> {
-			while (attr.length > 0) {
-				var a = attr.shift();
-				doc = doc.concat('Unhandled extended attribute ${a.name}', "\n");
-			}
-
-			return doc;
-		}
-
-		function resolveType(ctx:Context, t:String):ComplexType {
-			if (t == "undefined") return macro :Void; // TODO: not allowed everywhere..
-
-			// TODO: see https://webidl.spec.whatwg.org/#idl-types
-			// TODO: might be interesting to have abstracts for some of those as a documentation
-			return switch (t) {
-				case "any": macro :Any;
-				case "boolean": macro :Bool;
-				case "object": macro :{};
-				case "DOMString" | "USVString" | "CSSOMString": macro :String;
-				case "ByteString": macro :String; // ?
-				case "byte" | "octet" | "short" | "long": macro :Int;
-				case "unsigned short": macro :Int;
-				case "unsigned long": macro :Int;
-				case "long long": macro :Float; // TODO: can haxe.Int64 be used here?
-				case "unsigned long long": macro :Float; // TODO: can haxe.Int64 be used here?
-				case "float" | "double": macro :Float;
-				case "unrestricted float" | "unrestricted double": macro :Float;
-				// TODO: other special types
-
-				case "ArrayBuffer": macro :js.lib.ArrayBuffer;
-				case "ArrayBufferView": macro :js.lib.ArrayBufferView;
-				case "SharedArrayBuffer": macro :js.lib.SharedArrayBuffer;
-				case "DataView": macro :js.lib.DataView;
-				case "Int8Array": macro :js.lib.Int8Array;
-				case "Int16Array": macro :js.lib.Int16Array;
-				case "Int32Array": macro :js.lib.Int32Array;
-				case "Uint8Array": macro :js.lib.Uint8Array;
-				case "Uint16Array": macro :js.lib.Uint16Array;
-				case "Uint32Array": macro :js.lib.Uint32Array;
-				case "Uint8ClampedArray": macro :js.lib.Uint8ClampedArray;
-				case "Float16Array": macro :js.lib.Float16Array; // TODO
-				case "Float32Array": macro :js.lib.Float32Array;
-				case "Float64Array": macro :js.lib.Float64Array;
-				case "bigint": macro :js.lib.BigInt; // TODO
-				case "BigInt64Array": macro :js.lib.BigInt64Array; // TODO
-				case "BigUint64Array": macro :js.lib.BigUint64Array; // TODO
-
-				case "WindowProxy": macro :js.html.Window;
-
-				case _:
-					dependents.set(t, dependents.get(t).or([]).copyWith(ctx.t));
-					TPath({pack: resolvePackage(ctx, t), name: t});
-			};
-		}
-
-		function convertType(ctx:Context, t:IDLTypeDescription) {
-			if (t == null) return null;
-
-			if (t.isSingle()) {
-				var t = t.asSingle();
-				var ct = resolveType(ctx, t.idlType);
-				assertEmptyAttributes(t.extAttrs);
-				return if (t.nullable) macro :Null<$ct> else ct;
-			} else if (t.isUnion()) {
-				var t = t.asUnion();
-				var ct = switch (t.idlType) {
-					case []: macro :Dynamic;
-					case types:
-						var current = convertType(ctx, types.pop());
-						while (types.length > 0) {
-							var t = convertType(ctx, types.pop());
-							current = macro :haxe.extern.EitherType<$t, $current>;
-						}
-						current;
-				};
-				assertEmptyAttributes(t.extAttrs);
-				return if (t.nullable) macro :Null<$ct> else ct;
-			} else {
-				function handleGeneric<T:AbstractNonUnionTypeDescription<T>>(t:T) {
-					return switch (t.generic) {
-						case IDLFrozenArrayTypeDescription:
-							var inner = convertType(ctx, t.idlType.get);
-							// if (inner == null) inner = macro :Dynamic;
-							// TODO: FrozenArray in std
-							macro :Array<$inner>;
-
-						case IDLObservableArrayTypeDescription:
-							var inner = convertType(ctx, t.idlType.get);
-							// if (inner == null) inner = macro :Dynamic;
-							// TODO: ObservableArray in std
-							macro :Array<$inner>;
-
-						case IDLPromiseTypeDescription:
-							var inner = convertType(ctx, t.idlType.get);
-							// if (inner == null) inner = macro :Dynamic;
-							macro :js.lib.Promise<$inner>;
-
-						case IDLRecordTypeDescription:
-							var tkey = convertType(ctx, t.idlType.first);
-							var tvalue = convertType(ctx, t.idlType.second);
-							switch (tkey) {
-								case TPath({pack: [], name: "DOMString" | "USVString" | "String"}):
-									macro :haxe.DynamicAccess<$tvalue>;
-								case _:
-									throw 'Unexpected record key type $tkey.';
-							}
-
-						// TODO: handle tuples
-						case IDLSequenceTypeDescription:
-							var inner = convertType(ctx, t.idlType.get);
-							// if (inner == null) inner = macro :Dynamic;
-							macro :Array<$inner>;
-
-						case _: throw 'Unexpected generic ${t.generic}.';
+						case t:
+							if ((cast t:String) != "*") throw 'Unexpected extended attribute right hand side type $t.';
+							scope = [cast t];
 					}
+					true;
+				case _: false;
+			}
+		});
+		return scope;
+	}
+
+	function assertEmptyAttributes(attr:Array<ExtendedAttribute<Dynamic>>, ?pos:PosInfos):Void {
+		for (a in attr) haxe.Log.trace('ERROR: unhandled extended attribute ${a.name}', pos);
+	}
+
+	function addUnhandledAttributesToDoc(doc:Null<String>, attr:Array<ExtendedAttribute<Dynamic>>):Null<String> {
+		while (attr.length > 0) {
+			var a = attr.shift();
+			doc = doc.concat('Unhandled extended attribute ${a.name}', "\n");
+		}
+
+		return doc;
+	}
+
+	function resolveType(ctx:Context, t:String):ComplexType {
+		if (t == "undefined") return macro :Void; // TODO: not allowed everywhere..
+
+		// TODO: see https://webidl.spec.whatwg.org/#idl-types
+		// TODO: might be interesting to have abstracts for some of those as a documentation
+		return switch (t) {
+			case "any": macro :Any;
+			case "boolean": macro :Bool;
+			case "object": macro :{};
+			case "DOMString" | "USVString" | "CSSOMString": macro :String;
+			case "ByteString": macro :String; // ?
+			case "byte" | "octet" | "short" | "long": macro :Int;
+			case "unsigned short": macro :Int;
+			case "unsigned long": macro :Int;
+			case "long long": macro :Float; // TODO: can haxe.Int64 be used here?
+			case "unsigned long long": macro :Float; // TODO: can haxe.Int64 be used here?
+			case "float" | "double": macro :Float;
+			case "unrestricted float" | "unrestricted double": macro :Float;
+			// TODO: other special types
+
+			case "ArrayBuffer": macro :js.lib.ArrayBuffer;
+			case "ArrayBufferView": macro :js.lib.ArrayBufferView;
+			case "SharedArrayBuffer": macro :js.lib.SharedArrayBuffer;
+			case "DataView": macro :js.lib.DataView;
+			case "Int8Array": macro :js.lib.Int8Array;
+			case "Int16Array": macro :js.lib.Int16Array;
+			case "Int32Array": macro :js.lib.Int32Array;
+			case "Uint8Array": macro :js.lib.Uint8Array;
+			case "Uint16Array": macro :js.lib.Uint16Array;
+			case "Uint32Array": macro :js.lib.Uint32Array;
+			case "Uint8ClampedArray": macro :js.lib.Uint8ClampedArray;
+			case "Float16Array": macro :js.lib.Float16Array; // TODO
+			case "Float32Array": macro :js.lib.Float32Array;
+			case "Float64Array": macro :js.lib.Float64Array;
+			case "bigint": macro :js.lib.BigInt; // TODO
+			case "BigInt64Array": macro :js.lib.BigInt64Array; // TODO
+			case "BigUint64Array": macro :js.lib.BigUint64Array; // TODO
+
+			case "WindowProxy": macro :js.html.Window;
+
+			case _:
+				dependents.set(t, dependents.get(t).or([]).copyWith(ctx.t));
+				TPath({pack: resolvePackage(ctx, t), name: t});
+		};
+	}
+
+	function convertType(ctx:Context, t:IDLTypeDescription) {
+		if (t == null) return null;
+
+		if (t.isSingle()) {
+			var t = t.asSingle();
+			var ct = resolveType(ctx, t.idlType);
+			assertEmptyAttributes(t.extAttrs);
+			return if (t.nullable) macro :Null<$ct> else ct;
+		} else if (t.isUnion()) {
+			var t = t.asUnion();
+			var ct = switch (t.idlType) {
+				case []: macro :Dynamic;
+				case types:
+					var current = convertType(ctx, types.pop());
+					while (types.length > 0) {
+						var t = convertType(ctx, types.pop());
+						current = macro :haxe.extern.EitherType<$t, $current>;
+					}
+					current;
+			};
+			assertEmptyAttributes(t.extAttrs);
+			return if (t.nullable) macro :Null<$ct> else ct;
+		} else {
+			function handleGeneric<T:AbstractNonUnionTypeDescription<T>>(t:T) {
+				return switch (t.generic) {
+					case IDLFrozenArrayTypeDescription:
+						var inner = convertType(ctx, t.idlType.get);
+						// if (inner == null) inner = macro :Dynamic;
+						// TODO: FrozenArray in std
+						macro :Array<$inner>;
+
+					case IDLObservableArrayTypeDescription:
+						var inner = convertType(ctx, t.idlType.get);
+						// if (inner == null) inner = macro :Dynamic;
+						// TODO: ObservableArray in std
+						macro :Array<$inner>;
+
+					case IDLPromiseTypeDescription:
+						var inner = convertType(ctx, t.idlType.get);
+						// if (inner == null) inner = macro :Dynamic;
+						macro :js.lib.Promise<$inner>;
+
+					case IDLRecordTypeDescription:
+						var tkey = convertType(ctx, t.idlType.first);
+						var tvalue = convertType(ctx, t.idlType.second);
+						switch (tkey) {
+							case TPath({pack: [], name: "DOMString" | "USVString" | "String"}):
+								macro :haxe.DynamicAccess<$tvalue>;
+							case _:
+								throw 'Unexpected record key type $tkey.';
+						}
+
+					// TODO: handle tuples
+					case IDLSequenceTypeDescription:
+						var inner = convertType(ctx, t.idlType.get);
+						// if (inner == null) inner = macro :Dynamic;
+						macro :Array<$inner>;
+
+					case _: throw 'Unexpected generic ${t.generic}.';
 				}
-				var t = t.asGeneric();
-				var ct = handleGeneric(cast t);
-				assertEmptyAttributes(t.extAttrs);
-				return if (t.nullable) macro :Null<$ct> else ct;
+			}
+			var t = t.asGeneric();
+			var ct = handleGeneric(cast t);
+			assertEmptyAttributes(t.extAttrs);
+			return if (t.nullable) macro :Null<$ct> else ct;
+		}
+	}
+
+	function save(ctx:Context, t:String, td:TypeDefinition) {
+		saveTasks.push({ctx: ctx, t: t, td: td});
+	}
+
+	function saveTo(ctx:Context, lib:String, t:String, td:TypeDefinition) {
+		var path = Path.join(["..", "libs", lib, "src"].concat(ctx.pack.concat(['$t.hx'])));
+		if (saved.exists(path)) {
+			var prev = saved.get(path);
+			throw 'WARNING [${ctx.file.shortname}] Cannot save $path: already generated from $prev';
+		}
+
+		saved.set(path, ctx.file.shortname);
+		if (!FileSystem.exists(Path.directory(path))) FileSystem.createDirectory(Path.directory(path));
+
+		var out = new StringBuf();
+		out.add(Resource.getString("copyright"));
+		out.add("// This file is generated from @webref/idl/");
+		out.add(ctx.file.filename);
+		out.add(". Do not edit!\n\n");
+		out.add(printer.printTypeDefinition(td));
+
+		#if !no_output
+		File.saveContent(path, out.toString());
+		#end
+	}
+
+	function doSave(ctx:Context, t:String, td:TypeDefinition) {
+		var handledDependents:Set<String> = [t];
+		var abort = false;
+
+		function handleType(dep:String) {
+			if (abort) return;
+
+			var depScope = scopeMap.get(dep).or([]);
+			for (s in depScope) {
+				if (s == "*") {
+					ctx.scope = ["*"];
+					abort = true;
+					return;
+				}
+				ctx.scope.add(s);
+			}
+
+			var deps = dependents.get(dep).or([]);
+			for (d in deps) {
+				if (abort) return;
+				if (!handledDependents.has(d)) {
+					handledDependents.add(d);
+					handleType(d);
+				}
 			}
 		}
 
-		function save(ctx:Context, t:String, td:TypeDefinition) {
-			saveTasks.push({ctx: ctx, t: t, td: td});
+		if (ctx.scope.or([]).length == 0) {
+			ctx.scope = new Set();
+			handleType(t);
 		}
 
-		function saveTo(ctx:Context, lib:String, t:String, td:TypeDefinition) {
-			var path = Path.join(["..", "libs", lib, "src"].concat(ctx.pack.concat(['$t.hx'])));
-			if (saved.exists(path)) {
-				var prev = saved.get(path);
-				throw 'WARNING [${ctx.file.shortname}] Cannot save $path: already generated from $prev';
-			}
+		// Doesn't seem needed atm, but doesn't hurt to check
+		if (ctx.scope.has("*")) ctx.scope = ["*"];
 
-			saved.set(path, ctx.file.shortname);
-			if (!FileSystem.exists(Path.directory(path))) FileSystem.createDirectory(Path.directory(path));
+		var targetLibs:Set<String> = [];
+		for (s in ctx.scope) {
+			if (!libs.exists(s)) Sys.println('WARNING: Cannot find target library for $t (scope=$s)');
+			var lib = libs[s];
+			if (lib == null) continue;
+			targetLibs.add(lib);
+		}
 
-			var out = new StringBuf();
-			out.add(Resource.getString("copyright"));
-			out.add("// This file is generated from @webref/idl/");
-			out.add(ctx.file.filename);
-			out.add(". Do not edit!\n\n");
-			out.add(printer.printTypeDefinition(td));
+		// if present in all libs, generate in core instead
+		if (targetLibs.has(WindowAPI) && targetLibs.has(WorkerAPI) && targetLibs.has(ServiceWorkerAPI) && targetLibs.has(WorkletAPI)) {
+			targetLibs = [libs["*"]];
+		}
 
-			#if !no_output
-			File.saveContent(path, out.toString());
+		if (targetLibs.length > 0) {
+			for (lib in targetLibs) saveTo(ctx, lib, t, td);
+		} else {
+			// TODO: make sure the type really is not used
+			Sys.println('WARNING: type $t was not generated in any lib');
+
+			#if generate_unused_api
+			saveTo(ctx, "js-unused-api", t, td);
 			#end
 		}
+	}
 
-		function doSave(ctx:Context, t:String, td:TypeDefinition) {
-			var handledDependents:Set<String> = [t];
-			var abort = false;
+	function initCtx(file:FileHandler, tname:String, scope:Null<Set<String>>):Context {
+		return {
+			t: tname,
+			pos: PositionTools.make({min: 0, max: 0, file: file.path}),
+			file: file,
+			pack: ["js", sanitizePackage(file.shortname)],
+			scope: scope
+		};
+	}
 
-			function handleType(dep:String) {
-				if (abort) return;
+	function initClassCtx(file:FileHandler, tname:String, scope:Null<Set<String>>, members:Array<IDLInterfaceMemberType>):ClassContext {
+		return {
+			t: tname,
+			pos: PositionTools.make({min: 0, max: 0, file: file.path}),
+			file: file,
+			pack: ["js", sanitizePackage(file.shortname)],
+			scope: scope,
+			typeDoc: [],
+			fields: [],
+			interfaces: [],
+			members: members
+		};
+	}
 
-				var depScope = scopeMap.get(dep).or([]);
-				for (s in depScope) {
-					if (s == "*") {
-						ctx.scope = ["*"];
-						abort = true;
-						return;
-					}
-					ctx.scope.add(s);
-				}
+	function handleFile(file:FileHandler, res:Array<IDLRootType>) {
+		var pack = ["js", sanitizePackage(file.shortname)];
 
-				var deps = dependents.get(dep).or([]);
-				for (d in deps) {
-					if (abort) return;
-					if (!handledDependents.has(d)) {
-						handledDependents.add(d);
-						handleType(d);
-					}
-				}
-			}
+		Sys.println('Parsed ${file.filename}: ${res.length} declarations.');
 
-			if (ctx.scope.or([]).length == 0) {
-				ctx.scope = new Set();
-				handleType(t);
-			}
+		function handle<T:AbstractBase<T>>(t:T) {
+			if (isTypeIgnored(file, t)) return;
 
-			// Doesn't seem needed atm, but doesn't hurt to check
-			if (ctx.scope.has("*")) ctx.scope = ["*"];
+			switch (t.type) {
+				case IDLCallbackType:
+					packMap.set(t.name, pack);
+					var scope = extractScope(t.extAttrs);
+					scopeMap.set(t.name, scope);
 
-			var targetLibs:Set<String> = [];
-			for (s in ctx.scope) {
-				if (!libs.exists(s)) Sys.println('WARNING: Cannot find target library for $t (scope=$s)');
-				var lib = libs[s];
-				if (lib == null) continue;
-				targetLibs.add(lib);
-			}
+					tasks.push(() -> {
+						var ctx = initCtx(file, t.name, scope);
 
-			// if present in all libs, generate in core instead
-			if (targetLibs.has(WindowAPI) && targetLibs.has(WorkerAPI) && targetLibs.has(ServiceWorkerAPI) && targetLibs.has(WorkletAPI)) {
-				targetLibs = [libs["*"]];
-			}
+						var ct = TFunction(
+							// TODO: make sure that arguments' extended attributes are handled
+							// TODO: handle a.variadic
+							t.arguments.map(a ->
+								a.optional
+									? TOptional(TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType)))
+									: TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType))
+							),
+							convertType(ctx, t.idlType)
+						);
 
-			if (targetLibs.length > 0) {
-				for (lib in targetLibs) saveTo(ctx, lib, t, td);
-			} else {
-				// TODO: make sure the type really is not used
-				Sys.println('WARNING: type $t was not generated in any lib');
+						var td:TypeDefinition = {
+							pack: pack,
+							name: t.name,
+							doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
+							pos: ctx.pos,
+							isExtern: null,
+							kind: TDAlias(ct),
+							fields: []
+						};
 
-				#if generate_unused_api
-				saveTo(ctx, "js-unused-api", t, td);
-				#end
-			}
-		}
+						assertEmptyAttributes(t.extAttrs);
+						Sys.println(' > Exported callback typedef ${pack.concat([t.name]).join(".")}');
+						save(ctx, t.name, td);
+					});
 
-		function initCtx(file:FileHandler, tname:String, scope:Null<Set<String>>):Context {
-			return {
-				t: tname,
-				pos: PositionTools.make({min: 0, max: 0, file: file.path}),
-				file: file,
-				pack: ["js", sanitizePackage(file.shortname)],
-				scope: scope
-			};
-		}
+				case IDLCallbackInterfaceType:
+					packMap.set(t.name, pack);
+					var scope = extractScope(t.extAttrs);
+					scopeMap.set(t.name, scope);
 
-		function initClassCtx(file:FileHandler, tname:String, scope:Null<Set<String>>, members:Array<IDLInterfaceMemberType>):ClassContext {
-			return {
-				t: tname,
-				pos: PositionTools.make({min: 0, max: 0, file: file.path}),
-				file: file,
-				pack: ["js", sanitizePackage(file.shortname)],
-				scope: scope,
-				typeDoc: [],
-				fields: [],
-				interfaces: [],
-				members: members
-			};
-		}
+					tasks.push(() -> {
+						var constants = t.members.filter(function _<T:AbstractBase<T>>(m:T):Bool {
+							return switch (m.type) {
+								case IDLConstantMemberType: true;
+								case _: false;
+							};
+						});
 
-		function handleFile(file:FileHandler, res:Array<IDLRootType>) {
-			var pack = ["js", sanitizePackage(file.shortname)];
-
-			Sys.println('Parsed ${file.filename}: ${res.length} declarations.');
-
-			function handle<T:AbstractBase<T>>(t:T) {
-				if (isTypeIgnored(file, t)) return;
-
-				switch (t.type) {
-					case IDLCallbackType:
-						packMap.set(t.name, pack);
-						var scope = extractScope(t.extAttrs);
-						scopeMap.set(t.name, scope);
-
-						tasks.push(() -> {
+						// - Generate constants in `@:native(TypeName) extern class TypeNameConstants {}`
+						if (constants.length > 0) {
 							var ctx = initCtx(file, t.name, scope);
-
-							var ct = TFunction(
-								// TODO: make sure that arguments' extended attributes are handled
-								t.arguments.map(a ->
-									a.optional
-										? TOptional(TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType)))
-										: TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType))
-								),
-								convertType(ctx, t.idlType)
-							);
-
 							var td:TypeDefinition = {
 								pack: pack,
-								name: t.name,
-								doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
-								pos: ctx.pos,
-								isExtern: null,
-								kind: TDAlias(ct),
-								fields: []
-							};
-
-							assertEmptyAttributes(t.extAttrs);
-							Sys.println(' > Exported callback typedef ${pack.concat([t.name]).join(".")}');
-							save(ctx, t.name, td);
-						});
-
-					case IDLCallbackInterfaceType:
-						packMap.set(t.name, pack);
-						var scope = extractScope(t.extAttrs);
-						scopeMap.set(t.name, scope);
-
-						tasks.push(() -> {
-							var constants = t.members.filter(function _<T:AbstractBase<T>>(m:T):Bool {
-								return switch (m.type) {
-									case IDLConstantMemberType: true;
-									case _: false;
-								};
-							});
-
-							// - Generate constants in `@:native(TypeName) extern class TypeNameConstants {}`
-							if (constants.length > 0) {
-								var ctx = initCtx(file, t.name, scope);
-								var td:TypeDefinition = {
-									pack: pack,
-									name: '${t.name}Constants',
-									doc: null, // TODO retrieve docs
-									pos: ctx.pos,
-									isExtern: true,
-									kind: TDClass(),
-									meta: [{
-										name: ":native",
-										params: [{pos: ctx.pos, expr: EConst(CString(t.name))}],
-										pos: ctx.pos
-									}],
-									fields: constants.map(function _(m:ConstantMemberType):Field {
-										var meta = [];
-										return {
-											name: sanitizeIdentifier(m.name, meta, ctx.pos),
-											doc: addUnhandledAttributesToDoc(null, m.extAttrs), // TODO
-											access: [AStatic, AInline], // TODO: extern but not inline? (if so, drop value below)
-											kind: FVar(convertType(ctx, m.idlType), convertValue(m.value, false, ctx.pos)),
-											pos: ctx.pos,
-											meta: meta
-										};
-									})
-								};
-								Sys.println(' > Exported constants class ${pack.concat([td.name]).join(".")}');
-								save(ctx, td.name, td);
-							}
-
-							var ctx = initClassCtx(file, t.name, scope, t.members.filter(function _<T:AbstractBase<T>>(m:T):Bool {
-								return switch (m.type) {
-									case IDLConstantMemberType: false;
-									case _: true;
-								};
-							}));
-
-							// - Generate other members in `typedef TypeName {}`
-							for (m in ctx.members) handleMember(ctx, m);
-
-							var td:TypeDefinition = {
-								pack: pack,
-								name: t.name,
-								doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
-								pos: ctx.pos,
-								isExtern: null,
-								kind: TDAlias(TAnonymous(ctx.fields)),
-								fields: []
-							};
-
-							assertEmptyAttributes(t.extAttrs);
-							Sys.println(' > Exported typedef ${pack.concat([t.name]).join(".")}');
-							save(ctx, t.name, td);
-						});
-
-					case IDLDictionaryType if (t.partial):
-						// see https://webidl.spec.whatwg.org/#dfn-partial-dictionary
-						partialDictionaries.set(t.name, partialDictionaries.get(t.name).or([]).concat([t]));
-
-					case IDLDictionaryType:
-						packMap.set(t.name, pack);
-						var scope = extractScope(t.extAttrs);
-						scopeMap.set(t.name, scope);
-
-						tasks.push(() -> {
-							var ctx = initCtx(file, t.name, scope);
-
-							var partials = partialDictionaries.get(t.name).or([]);
-							var members = partials.fold((p, acc) -> acc.concat(p.members), t.members);
-							// TODO: check that generating FVar is enough..
-							var fields = members.map(m -> {
-								var meta = m.required ? [] : [{name: ":optional", pos: ctx.pos}];
-								({
-									// TODO: @:native won't be enough for typedef..
-									name: sanitizeIdentifier(m.name, meta, ctx.pos),
-									doc: addUnhandledAttributesToDoc(null, m.extAttrs), // TODO retrieve docs
-									// TODO: add default value in doc
-									kind: FVar(convertType(ctx, m.idlType)),
-									// kind: FVar(convertType(ctx, m.idlType), convertValue(m.default_, ctx.pos)),
-									pos: ctx.pos,
-									meta: meta
-								}:Field);
-							});
-
-							var td:TypeDefinition = {
-								pack: pack,
-								name: t.name,
-								doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
-								pos: ctx.pos,
-								isExtern: null,
-								kind: TDAlias(t.inheritance == null
-									? TAnonymous(fields)
-									: TExtend([toTPath(resolveType(ctx, t.inheritance))], fields)
-								),
-								fields: []
-							};
-
-							assertEmptyAttributes(t.extAttrs);
-							Sys.println(' > Exported typedef ${pack.concat([t.name]).join(".")}');
-							save(ctx, t.name, td);
-						});
-
-					case IDLEnumType:
-						packMap.set(t.name, pack);
-						var scope = extractScope(t.extAttrs);
-						scopeMap.set(t.name, scope);
-
-						// TODO: save enum values to use in default values
-
-						tasks.push(() -> {
-							var ctx = initCtx(file, t.name, scope);
-
-							var td:TypeDefinition = {
-								pack: pack,
-								name: t.name,
-								doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
-								pos: ctx.pos,
-								isExtern: null,
-								kind: TDAbstract(macro :String, [AbEnum]),
-								fields: t.values.map(e -> ({
-									name: sanitizeEnumValueName(e),
-									doc: null, // TODO retrieve docs
-									kind: FVar(null, {pos: ctx.pos, expr: EConst(CString(e.value))}),
-									pos: ctx.pos
-								}:Field))
-							};
-
-							assertEmptyAttributes(t.extAttrs);
-							Sys.println(' > Exported enum abstract ${pack.concat([t.name]).join(".")}');
-							save(ctx, t.name, td);
-						});
-
-					case IDLIncludesType:
-						Sys.println(' > ${t.target} includes interface mixin ${t.includes}');
-						includesTypes.push(t);
-
-					case IDLInterfaceMixinType:
-						Sys.println(' > interface mixin ${pack.concat([t.name]).join(".")}');
-						mixins.set(t.name, mixins.get(t.name).or([]).concat(t.members));
-
-					case IDLInterfaceType if (t.partial):
-						// see https://webidl.spec.whatwg.org/#dfn-partial-interface
-						partialInterfaces.set(t.name, partialInterfaces.get(t.name).or([]).concat([{t: t, file: file}]));
-
-					case IDLInterfaceType:
-						packMap.set(t.name, pack);
-						var scope = extractScope(t.extAttrs);
-						scopeMap.set(t.name, scope);
-
-						tasks.push(() -> {
-							// TODO (? not 100% clear atm, either that or need to implement `WindowProxy` for all scopes):
-							// some interfaces (for example `js.dom.Document`) will need to have a
-							// base definition in `js-core-api` and some partials (mostly from
-							// `html` for `js.dom.Document`?) only be applied to override in
-							// specific scope (`js-window-api` here?)
-							var partials = partialInterfaces.get(t.name).or([]);
-
-							var ctx = initClassCtx(file, t.name, scope, partials.fold((p, acc) -> acc.concat(p.t.members), t.members));
-
-							var includes:Map<String, Array<IDLInterfaceMemberType>> = [];
-							for (i in includesTypes) {
-								if (i.target != t.name) continue;
-								if (!mixins.exists(i.includes)) throw 'Cannot find mixin ${i.includes}';
-								var includesMembers = mixins.get(i.includes);
-								ctx.members = ctx.members.concat(includesMembers);
-								includes.set(i.includes, includesMembers);
-							}
-
-							for (m in t.members) handleMember(ctx, m);
-
-							for (i => members in includes) {
-								for (m in members) handleMember(ctx, m, i);
-							}
-
-							for (p in partials) {
-								for (m in p.t.members) handleMember(ctx, m, p);
-							}
-
-							ctx.fields.sort((f1, f2) -> {
-								switch [f1.kind, f2.kind] {
-									case [FVar(_) | FProp(_), FVar(_) | FProp(_)]: 0;
-									case [FFun(_), FFun(_)] if (f1.name == "new"): -1;
-									case [FFun(_), FFun(_)] if (f2.name == "new"): 1;
-									case [FVar(_) | FProp(_), FFun(_)]: -1;
-									case [FFun(_), FVar(_) | FProp(_)]: 1;
-
-									case [FFun(_), FFun(_)]:
-										Reflect.compare(f1.name, f2.name);
-								}
-							});
-
-							var td:TypeDefinition = {
-								pack: pack,
-								name: t.name,
-								doc: addUnhandledAttributesToDoc(ctx.typeDoc.length == 0 ? null : ctx.typeDoc.join("\n"), t.extAttrs), // TODO retrieve docs
+								name: '${t.name}Constants',
+								doc: null, // TODO retrieve docs
 								pos: ctx.pos,
 								isExtern: true,
-								kind: TDClass(
-									t.inheritance.maybeApply(t -> toTPath(resolveType(ctx, t))),
-									ctx.interfaces.length == 0 ? null : ctx.interfaces
-								),
+								kind: TDClass(),
 								meta: [{
 									name: ":native",
 									params: [{pos: ctx.pos, expr: EConst(CString(t.name))}],
 									pos: ctx.pos
 								}],
-								fields: ctx.fields
+								fields: constants.map(function _(m:ConstantMemberType):Field {
+									var meta = [];
+									return {
+										name: sanitizeIdentifier(m.name, meta, ctx.pos),
+										doc: addUnhandledAttributesToDoc(null, m.extAttrs), // TODO
+										access: [AStatic, AInline], // TODO: extern but not inline? (if so, drop value below)
+										kind: FVar(convertType(ctx, m.idlType), convertValue(m.value, false, ctx.pos)),
+										pos: ctx.pos,
+										meta: meta
+									};
+								})
 							};
+							Sys.println(' > Exported constants class ${pack.concat([td.name]).join(".")}');
+							save(ctx, td.name, td);
+						}
 
-							assertEmptyAttributes(t.extAttrs);
-							Sys.println(' > Exported class ${pack.concat([t.name]).join(".")}');
-							save(ctx, t.name, td);
-						});
+						var ctx = initClassCtx(file, t.name, scope, t.members.filter(function _<T:AbstractBase<T>>(m:T):Bool {
+							return switch (m.type) {
+								case IDLConstantMemberType: false;
+								case _: true;
+							};
+						}));
 
-					case IDLNamespaceType:
-						trace(' > TODO: namespace ${pack.concat([t.name]).join(".")}');
+						// - Generate other members in `typedef TypeName {}`
+						for (m in ctx.members) handleMember(ctx, m);
 
-					case IDLTypedefType:
-						packMap.set(t.name, pack);
-						var scope = extractScope(t.extAttrs);
-						scopeMap.set(t.name, scope);
+						var td:TypeDefinition = {
+							pack: pack,
+							name: t.name,
+							doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
+							pos: ctx.pos,
+							isExtern: null,
+							kind: TDAlias(TAnonymous(ctx.fields)),
+							fields: []
+						};
 
-						tasks.push(() -> {
-							var ctx = initCtx(file, t.name, scope);
-							var ct = convertType(ctx, t.idlType);
+						assertEmptyAttributes(t.extAttrs);
+						Sys.println(' > Exported typedef ${pack.concat([t.name]).join(".")}');
+						save(ctx, t.name, td);
+					});
 
-							var td:TypeDefinition = {
-								pack: pack,
-								name: t.name,
-								doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
+				case IDLDictionaryType if (t.partial):
+					// see https://webidl.spec.whatwg.org/#dfn-partial-dictionary
+					partialDictionaries.set(t.name, partialDictionaries.get(t.name).or([]).concat([t]));
+
+				case IDLDictionaryType:
+					packMap.set(t.name, pack);
+					var scope = extractScope(t.extAttrs);
+					scopeMap.set(t.name, scope);
+
+					tasks.push(() -> {
+						var ctx = initCtx(file, t.name, scope);
+
+						var partials = partialDictionaries.get(t.name).or([]);
+						var members = partials.fold((p, acc) -> acc.concat(p.members), t.members);
+						// TODO: check that generating FVar is enough..
+						var fields = members.map(m -> {
+							var meta = m.required ? [] : [{name: ":optional", pos: ctx.pos}];
+							({
+								// TODO: @:native won't be enough for typedef..
+								name: sanitizeIdentifier(m.name, meta, ctx.pos),
+								doc: addUnhandledAttributesToDoc(null, m.extAttrs), // TODO retrieve docs
+								// TODO: add default value in doc
+								kind: FVar(convertType(ctx, m.idlType)),
+								// kind: FVar(convertType(ctx, m.idlType), convertValue(m.default_, ctx.pos)),
 								pos: ctx.pos,
-								isExtern: null,
-								kind: TDAlias(ct),
-								fields: []
-							};
-
-							assertEmptyAttributes(t.extAttrs);
-							Sys.println(' > Exported typedef ${pack.concat([t.name]).join(".")}');
-							save(ctx, t.name, td);
+								meta: meta
+							}:Field);
 						});
 
-					case type: throw 'Unexpected node type $type.';
-				}
-			}
+						var td:TypeDefinition = {
+							pack: pack,
+							name: t.name,
+							doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
+							pos: ctx.pos,
+							isExtern: null,
+							kind: TDAlias(t.inheritance == null
+								? TAnonymous(fields)
+								: TExtend([toTPath(resolveType(ctx, t.inheritance))], fields)
+							),
+							fields: []
+						};
 
-			res.iter(f -> handle(f));
+						assertEmptyAttributes(t.extAttrs);
+						Sys.println(' > Exported typedef ${pack.concat([t.name]).join(".")}');
+						save(ctx, t.name, td);
+					});
+
+				case IDLEnumType:
+					packMap.set(t.name, pack);
+					var scope = extractScope(t.extAttrs);
+					scopeMap.set(t.name, scope);
+
+					// TODO: save enum values to use in default values
+
+					tasks.push(() -> {
+						var ctx = initCtx(file, t.name, scope);
+
+						var td:TypeDefinition = {
+							pack: pack,
+							name: t.name,
+							doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
+							pos: ctx.pos,
+							isExtern: null,
+							kind: TDAbstract(macro :String, [AbEnum]),
+							fields: t.values.map(e -> ({
+								name: sanitizeEnumValueName(e),
+								doc: null, // TODO retrieve docs
+								kind: FVar(null, {pos: ctx.pos, expr: EConst(CString(e.value))}),
+								pos: ctx.pos
+							}:Field))
+						};
+
+						assertEmptyAttributes(t.extAttrs);
+						Sys.println(' > Exported enum abstract ${pack.concat([t.name]).join(".")}');
+						save(ctx, t.name, td);
+					});
+
+				case IDLIncludesType:
+					Sys.println(' > ${t.target} includes interface mixin ${t.includes}');
+					includesTypes.push(t);
+
+				case IDLInterfaceMixinType:
+					Sys.println(' > interface mixin ${pack.concat([t.name]).join(".")}');
+					mixins.set(t.name, mixins.get(t.name).or([]).concat(t.members));
+
+				case IDLInterfaceType if (t.partial):
+					// see https://webidl.spec.whatwg.org/#dfn-partial-interface
+					partialInterfaces.set(t.name, partialInterfaces.get(t.name).or([]).concat([{t: t, file: file}]));
+
+				case IDLInterfaceType:
+					packMap.set(t.name, pack);
+					var scope = extractScope(t.extAttrs);
+					scopeMap.set(t.name, scope);
+
+					tasks.push(() -> {
+						// TODO (? not 100% clear atm, either that or need to implement `WindowProxy` for all scopes):
+						// some interfaces (for example `js.dom.Document`) will need to have a
+						// base definition in `js-core-api` and some partials (mostly from
+						// `html` for `js.dom.Document`?) only be applied to override in
+						// specific scope (`js-window-api` here?)
+						var partials = partialInterfaces.get(t.name).or([]);
+
+						var ctx = initClassCtx(file, t.name, scope, partials.fold((p, acc) -> acc.concat(p.t.members), t.members));
+
+						var includes:Map<String, Array<IDLInterfaceMemberType>> = [];
+						for (i in includesTypes) {
+							if (i.target != t.name) continue;
+							if (!mixins.exists(i.includes)) throw 'Cannot find mixin ${i.includes}';
+							var includesMembers = mixins.get(i.includes);
+							ctx.members = ctx.members.concat(includesMembers);
+							includes.set(i.includes, includesMembers);
+						}
+
+						for (m in t.members) handleMember(ctx, m);
+
+						for (i => members in includes) {
+							for (m in members) handleMember(ctx, m, i);
+						}
+
+						for (p in partials) {
+							for (m in p.t.members) handleMember(ctx, m, p);
+						}
+
+						ctx.fields.sort((f1, f2) -> {
+							switch [f1.kind, f2.kind] {
+								case [FVar(_) | FProp(_), FVar(_) | FProp(_)]: 0;
+								case [FFun(_), FFun(_)] if (f1.name == "new"): -1;
+								case [FFun(_), FFun(_)] if (f2.name == "new"): 1;
+								case [FVar(_) | FProp(_), FFun(_)]: -1;
+								case [FFun(_), FVar(_) | FProp(_)]: 1;
+
+								case [FFun(_), FFun(_)]:
+									Reflect.compare(f1.name, f2.name);
+							}
+						});
+
+						var td:TypeDefinition = {
+							pack: pack,
+							name: t.name,
+							doc: addUnhandledAttributesToDoc(ctx.typeDoc.length == 0 ? null : ctx.typeDoc.join("\n"), t.extAttrs), // TODO retrieve docs
+							pos: ctx.pos,
+							isExtern: true,
+							kind: TDClass(
+								t.inheritance.maybeApply(t -> toTPath(resolveType(ctx, t))),
+								ctx.interfaces.length == 0 ? null : ctx.interfaces
+							),
+							meta: [{
+								name: ":native",
+								params: [{pos: ctx.pos, expr: EConst(CString(t.name))}],
+								pos: ctx.pos
+							}],
+							fields: ctx.fields
+						};
+
+						assertEmptyAttributes(t.extAttrs);
+						Sys.println(' > Exported class ${pack.concat([t.name]).join(".")}');
+						save(ctx, t.name, td);
+					});
+
+				case IDLNamespaceType:
+					trace(' > TODO: namespace ${pack.concat([t.name]).join(".")}');
+
+				case IDLTypedefType:
+					packMap.set(t.name, pack);
+					var scope = extractScope(t.extAttrs);
+					scopeMap.set(t.name, scope);
+
+					tasks.push(() -> {
+						var ctx = initCtx(file, t.name, scope);
+						var ct = convertType(ctx, t.idlType);
+
+						var td:TypeDefinition = {
+							pack: pack,
+							name: t.name,
+							doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
+							pos: ctx.pos,
+							isExtern: null,
+							kind: TDAlias(ct),
+							fields: []
+						};
+
+						assertEmptyAttributes(t.extAttrs);
+						Sys.println(' > Exported typedef ${pack.concat([t.name]).join(".")}');
+						save(ctx, t.name, td);
+					});
+
+				case type: throw 'Unexpected node type $type.';
+			}
 		}
+
+		res.iter(f -> handle(f));
+	}
 
 	static var ignoredFiles = [];
 	static var ignoredTypes:Map<String, Array<String>> = [];

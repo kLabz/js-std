@@ -11,7 +11,6 @@ import haxe.macro.Expr.TypeDefinition;
 import haxe.macro.Expr.TypePath;
 import haxe.macro.PositionTools;
 import haxe.macro.Printer;
-import js.lib.Promise;
 import sys.FileSystem;
 import sys.io.File;
 
@@ -114,6 +113,7 @@ class Main {
 
 	var packMap:Map<String, Array<String>> = [];
 	var scopeMap:Map<String, Null<Set<String>>> = [];
+	var enumValues:Map<String, Map<String, String>> = [];
 	var dependents:Map<String, Set<String>> = [];
 
 	var tasks:Array<() -> Void> = [];
@@ -478,11 +478,12 @@ class Main {
 								}],
 								fields: constants.map(function _(m:ConstantMemberType):Field {
 									var meta = [];
+									var ct = convertType(ctx, m.idlType);
 									return {
 										name: sanitizeIdentifier(m.name, meta, ctx.pos),
 										doc: addUnhandledAttributesToDoc(null, m.extAttrs), // TODO
 										access: [AStatic, AInline], // TODO: extern but not inline? (if so, drop value below)
-										kind: FVar(convertType(ctx, m.idlType), convertValue(m.value, false, ctx.pos)),
+										kind: FVar(ct, convertValue(m.value, ct, false, ctx.pos)),
 										pos: ctx.pos,
 										meta: meta
 									};
@@ -568,8 +569,7 @@ class Main {
 					packMap.set(t.name, pack);
 					var scope = extractScope(t.extAttrs);
 					scopeMap.set(t.name, scope);
-
-					// TODO: save enum values to use in default values
+					enumValues.set(t.name, [for (e in t.values) e.value => sanitizeEnumValueName(e)]);
 
 					tasks.push(() -> {
 						var ctx = initCtx(file, t.name, scope);
@@ -803,11 +803,12 @@ class Main {
 		switch (m.type) {
 			case IDLConstantMemberType:
 				var meta = [];
+				var ct = convertType(ctx, m.idlType);
 				ctx.fields.push({
 					name: sanitizeIdentifier(m.name, meta, ctx.pos),
 					doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
 					access: [AStatic, AInline], // TODO: extern but not inline? (if so, drop value below)
-					kind: FVar(convertType(ctx, m.idlType), convertValue(m.value, false, ctx.pos)),
+					kind: FVar(ct, convertValue(m.value, ct, false, ctx.pos)),
 					pos: ctx.pos,
 					meta: meta
 				});
@@ -860,11 +861,14 @@ class Main {
 							// TODO: make sure that arguments' extended attributes are handled
 							// TODO: handle a.variadic
 							args: m.arguments.map(a -> {
-								name: sanitizeIdentifier(a.name, [], ctx.pos),
-								opt: a.optional,
-								type: convertType(ctx, a.idlType),
-								value: convertValue(a.default_, true, ctx.pos),
-								meta: null
+								var ct = convertType(ctx, a.idlType);
+								{
+									name: sanitizeIdentifier(a.name, [], ctx.pos),
+									opt: a.optional,
+									type: ct,
+									value: convertValue(a.default_, ct, true, ctx.pos),
+									meta: null
+								}
 							}),
 							ret: macro :Void,
 							expr: null,
@@ -962,14 +966,16 @@ class Main {
 						// TODO: make sure that arguments' extended attributes are handled
 						// TODO: factorize arg handling
 						args: m.arguments.map(a -> {
-							name: sanitizeIdentifier(a.name, [], ctx.pos),
-							opt: a.optional,
-							type: {
-								var ct = convertType(ctx, a.idlType);
-								a.variadic ? macro :haxe.Rest<$ct> : ct;
-							},
-							value: convertValue(a.default_, true, ctx.pos),
-							meta: null
+							var ct = convertType(ctx, a.idlType);
+							ct = a.variadic ? macro :haxe.Rest<$ct> : ct;
+
+							return {
+								name: sanitizeIdentifier(a.name, [], ctx.pos),
+								opt: a.optional,
+								type: a.variadic ? macro :haxe.Rest<$ct> : ct,
+								value: convertValue(a.default_, ct, true, ctx.pos),
+								meta: null
+							}
 						}),
 						ret: convertType(ctx, m.idlType).or(macro :Void),
 						expr: null,
@@ -985,13 +991,20 @@ class Main {
 		assertEmptyAttributes(m.extAttrs);
 	}
 
-	static function convertValue(v:Null<ValueDescription>, constOnly:Bool, pos):Null<Expr> {
+	function convertValue(v:Null<ValueDescription>, expectedType:Null<ComplexType>, constOnly:Bool, pos):Null<Expr> {
 		if (v == null) return null;
 
 		function extractValue<T:AbstractValueDescription<T>>(v:T):Null<ExprDef> {
 			return switch (v.type) {
 				case IDLValueDescriptionString if (v.value == "undefined"): null;
-				case IDLValueDescriptionString: EConst(CString(v.value));
+				case IDLValueDescriptionString:
+					try {
+						var tp = toTPath(expectedType);
+						var values = enumValues.get(tp.name);
+						var v = values.get(v.value);
+						if (v == null) throw v;
+						EConst(CIdent(v));
+					} catch(_) EConst(CString(v.value));
 				case IDLValueDescriptionNumber: EConst(CInt(v.value));
 				case IDLValueDescriptionBoolean: EConst(CIdent(v.value ? "true" : "false"));
 				case IDLValueDescriptionNull: EConst(CIdent("null"));

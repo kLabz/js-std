@@ -171,6 +171,11 @@ package js.html;
 	**/
 	var geolocation(default, null) : js.geolocation.Geolocation;
 	/**
+		From partial interface in html.idl
+		Unhandled extended attribute SameObject
+	**/
+	var userActivation(default, null) : UserActivation;
+	/**
 		From partial interface in ink-enhancement.idl
 		Unhandled extended attribute SameObject
 	**/
@@ -179,11 +184,6 @@ package js.html;
 		From partial interface in is-input-pending.idl
 	**/
 	var scheduling(default, null) : js.isInputPending.Scheduling;
-	/**
-		From partial interface in html.idl
-		Unhandled extended attribute SameObject
-	**/
-	var userActivation(default, null) : UserActivation;
 	/**
 		From partial interface in keyboard-lock.idl
 		Unhandled extended attribute SecureContext
@@ -196,16 +196,16 @@ package js.html;
 	**/
 	var login(default, null) : js.loginStatus.NavigatorLogin;
 	/**
-		From partial interface in media-capabilities.idl
-		Unhandled extended attribute SameObject
-	**/
-	var mediaCapabilities(default, null) : js.mediaCapabilities.MediaCapabilities;
-	/**
 		From partial interface in managed-configuration.idl
 		Unhandled extended attribute SecureContext
 		Unhandled extended attribute SameObject
 	**/
 	var managed(default, null) : js.managedConfiguration.NavigatorManagedData;
+	/**
+		From partial interface in media-capabilities.idl
+		Unhandled extended attribute SameObject
+	**/
+	var mediaCapabilities(default, null) : js.mediaCapabilities.MediaCapabilities;
 	/**
 		From partial interface in mediacapture-streams.idl
 		Unhandled extended attribute SameObject
@@ -223,14 +223,14 @@ package js.html;
 	**/
 	var mediaSession(default, null) : js.mediasession.MediaSession;
 	/**
-		From partial interface in pointerevents.idl
-	**/
-	var maxTouchPoints(default, null) : Int;
-	/**
 		From partial interface in permissions.idl
 		Unhandled extended attribute SameObject
 	**/
 	var permissions(default, null) : js.permissions.Permissions;
+	/**
+		From partial interface in pointerevents.idl
+	**/
+	var maxTouchPoints(default, null) : Int;
 	/**
 		From partial interface in ppa.idl
 		Unhandled extended attribute SecureContext
@@ -249,16 +249,16 @@ package js.html;
 	**/
 	var wakeLock(default, null) : js.screenWakeLock.WakeLock;
 	/**
+		From partial interface in serial.idl
+		Unhandled extended attribute SameObject
+	**/
+	var serial(default, null) : js.serial.Serial;
+	/**
 		From partial interface in service-workers.idl
 		Unhandled extended attribute SecureContext
 		Unhandled extended attribute SameObject
 	**/
 	var serviceWorker(default, null) : js.serviceWorkers.ServiceWorkerContainer;
-	/**
-		From partial interface in serial.idl
-		Unhandled extended attribute SameObject
-	**/
-	var serial(default, null) : js.serial.Serial;
 	/**
 		From partial interface in turtledove.idl
 	**/
@@ -290,16 +290,16 @@ package js.html;
 	**/
 	var usb(default, null) : js.webusb.USB;
 	/**
-		From partial interface in window-controls-overlay.idl
-		Unhandled extended attribute SameObject
-	**/
-	var windowControlsOverlay(default, null) : js.windowControlsOverlay.WindowControlsOverlay;
-	/**
 		From partial interface in webxr.idl
 		Unhandled extended attribute SecureContext
 		Unhandled extended attribute SameObject
 	**/
 	var xr(default, null) : js.webxr.XRSystem;
+	/**
+		From partial interface in window-controls-overlay.idl
+		Unhandled extended attribute SameObject
+	**/
+	var windowControlsOverlay(default, null) : js.windowControlsOverlay.WindowControlsOverlay;
 	/**
 		From partial interface in fenced-frame.idl
 	**/

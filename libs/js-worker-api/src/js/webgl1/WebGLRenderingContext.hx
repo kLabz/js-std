@@ -1299,6 +1299,7 @@ package js.webgl1;
 	function bufferSubData(target:GLenum, offset:GLintptr, data:js.webidl.AllowSharedBufferSource):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		Unhandled extended attribute WebGLHandlesContextLoss
 	**/
 	function checkFramebufferStatus(target:GLenum):GLenum;
 	/**
@@ -1475,6 +1476,7 @@ package js.webgl1;
 	function getAttachedShaders(program:WebGLProgram):Null<Array<WebGLShader>>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		Unhandled extended attribute WebGLHandlesContextLoss
 	**/
 	function getAttribLocation(program:WebGLProgram, name:String):GLint;
 	/**
@@ -1483,10 +1485,12 @@ package js.webgl1;
 	function getBufferParameter(target:GLenum, pname:GLenum):Any;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		Unhandled extended attribute WebGLHandlesContextLoss
 	**/
 	function getContextAttributes():Null<WebGLContextAttributes>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		Unhandled extended attribute WebGLHandlesContextLoss
 	**/
 	function getError():GLenum;
 	/**
@@ -1551,6 +1555,7 @@ package js.webgl1;
 	function getVertexAttrib(index:GLuint, pname:GLenum):Any;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		Unhandled extended attribute WebGLHandlesContextLoss
 	**/
 	function getVertexAttribOffset(index:GLuint, pname:GLenum):GLintptr;
 	/**
@@ -1559,34 +1564,42 @@ package js.webgl1;
 	function hint(target:GLenum, mode:GLenum):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		Unhandled extended attribute WebGLHandlesContextLoss
 	**/
 	function isBuffer(buffer:Null<WebGLBuffer>):GLboolean;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		Unhandled extended attribute WebGLHandlesContextLoss
 	**/
 	function isContextLost():Bool;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		Unhandled extended attribute WebGLHandlesContextLoss
 	**/
 	function isEnabled(cap:GLenum):GLboolean;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		Unhandled extended attribute WebGLHandlesContextLoss
 	**/
 	function isFramebuffer(framebuffer:Null<WebGLFramebuffer>):GLboolean;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		Unhandled extended attribute WebGLHandlesContextLoss
 	**/
 	function isProgram(program:Null<WebGLProgram>):GLboolean;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		Unhandled extended attribute WebGLHandlesContextLoss
 	**/
 	function isRenderbuffer(renderbuffer:Null<WebGLRenderbuffer>):GLboolean;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		Unhandled extended attribute WebGLHandlesContextLoss
 	**/
 	function isShader(shader:Null<WebGLShader>):GLboolean;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		Unhandled extended attribute WebGLHandlesContextLoss
 	**/
 	function isTexture(texture:Null<WebGLTexture>):GLboolean;
 	/**
@@ -1599,6 +1612,7 @@ package js.webgl1;
 	function linkProgram(program:WebGLProgram):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		Unhandled extended attribute NewObject
 	**/
 	function makeXRCompatible():js.lib.Promise<Void>;
 	/**

@@ -70,11 +70,11 @@ package js.dom;
 	/**
 		From interface mixin DocumentOrShadowRoot
 	**/
-	var pointerLockElement(default, null) : Null<Element>;
+	var pictureInPictureElement(default, null) : Null<Element>;
 	/**
 		From interface mixin DocumentOrShadowRoot
 	**/
-	var pictureInPictureElement(default, null) : Null<Element>;
+	var pointerLockElement(default, null) : Null<Element>;
 	/**
 		From interface mixin ParentNode
 		Unhandled extended attribute SameObject
@@ -111,6 +111,14 @@ package js.dom;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
+	var onsnapchanged : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsnapchanging : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
 	var ontransitionrun : js.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -124,14 +132,6 @@ package js.dom;
 		From interface mixin GlobalEventHandlers
 	**/
 	var ontransitioncancel : js.html.EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onsnapchanged : js.html.EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onsnapchanging : js.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -697,6 +697,10 @@ package js.dom;
 	**/
 	var permissionsPolicy(default, null) : js.permissionsPolicy.PermissionsPolicy;
 	/**
+		From partial interface in picture-in-picture.idl
+	**/
+	var pictureInPictureEnabled(default, null) : Bool;
+	/**
 		From partial interface in pointerlock.idl
 	**/
 	var onpointerlockchange : js.html.EventHandler;
@@ -704,10 +708,6 @@ package js.dom;
 		From partial interface in pointerlock.idl
 	**/
 	var onpointerlockerror : js.html.EventHandler;
-	/**
-		From partial interface in picture-in-picture.idl
-	**/
-	var pictureInPictureEnabled(default, null) : Bool;
 	/**
 		From partial interface in prerendering-revamped.idl
 	**/

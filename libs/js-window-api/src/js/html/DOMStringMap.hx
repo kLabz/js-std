@@ -31,13 +31,13 @@ package js.html;
 			params : [], 
 			pos : {
 				file : src/Main.hx, 
-				min : 5829, 
-				max : 5835
+				min : 6392, 
+				max : 6398
 			}, 
 			posPath : {
 				file : src/Main.hx, 
-				min : 5829, 
-				max : 5835
+				min : 6392, 
+				max : 6398
 			}
 		})
 	TODO special=setter (name:String, value:String) -> Void

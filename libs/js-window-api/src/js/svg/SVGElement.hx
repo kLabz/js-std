@@ -50,6 +50,14 @@ package js.svg;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
+	var onsnapchanged : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsnapchanging : js.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
 	var ontransitionrun : js.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -63,14 +71,6 @@ package js.svg;
 		From interface mixin GlobalEventHandlers
 	**/
 	var ontransitioncancel : js.html.EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onsnapchanged : js.html.EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onsnapchanging : js.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/

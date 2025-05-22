@@ -68,6 +68,14 @@ package js.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
+	var onsnapchanged : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
+	var onsnapchanging : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
 	var ontransitionrun : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -81,14 +89,6 @@ package js.html;
 		From interface mixin GlobalEventHandlers
 	**/
 	var ontransitioncancel : EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onsnapchanged : EventHandler;
-	/**
-		From interface mixin GlobalEventHandlers
-	**/
-	var onsnapchanging : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/

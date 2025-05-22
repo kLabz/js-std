@@ -102,7 +102,7 @@ package js.html;
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
 	function fetch(input:js.fetch.RequestInfo, ?init:js.fetch.RequestInit):js.lib.Promise<js.fetch.Response>;
-	function importScripts(urls:haxe.Rest<haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>>):Void;
+	function importScripts(urls:haxe.Rest<haxe.Rest<haxe.extern.EitherType<js.trustedTypes.TrustedScriptURL, String>>>):Void;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
@@ -114,11 +114,11 @@ package js.html;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
+	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<haxe.Rest<Any>>):Int;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
+	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<haxe.Rest<Any>>):Int;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/

@@ -108,11 +108,11 @@ package js.cssPaintApi;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function clip(?fillRule:js.html.CanvasFillRule = "nonzero"):Void;
+	overload function clip(?fillRule:js.html.CanvasFillRule = NONZERO):Void;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function clip(path:js.html.Path2D, ?fillRule:js.html.CanvasFillRule = "nonzero"):Void;
+	overload function clip(path:js.html.Path2D, ?fillRule:js.html.CanvasFillRule = NONZERO):Void;
 	/**
 		From interface mixin CanvasPath
 	**/
@@ -152,11 +152,11 @@ package js.cssPaintApi;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function fill(?fillRule:js.html.CanvasFillRule = "nonzero"):Void;
+	overload function fill(?fillRule:js.html.CanvasFillRule = NONZERO):Void;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function fill(path:js.html.Path2D, ?fillRule:js.html.CanvasFillRule = "nonzero"):Void;
+	overload function fill(path:js.html.Path2D, ?fillRule:js.html.CanvasFillRule = NONZERO):Void;
 	/**
 		From interface mixin CanvasRect
 	**/
@@ -177,11 +177,11 @@ package js.cssPaintApi;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function isPointInPath(x:Float, y:Float, ?fillRule:js.html.CanvasFillRule = "nonzero"):Bool;
+	overload function isPointInPath(x:Float, y:Float, ?fillRule:js.html.CanvasFillRule = NONZERO):Bool;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function isPointInPath(path:js.html.Path2D, x:Float, y:Float, ?fillRule:js.html.CanvasFillRule = "nonzero"):Bool;
+	overload function isPointInPath(path:js.html.Path2D, x:Float, y:Float, ?fillRule:js.html.CanvasFillRule = NONZERO):Bool;
 	/**
 		From interface mixin CanvasDrawPath
 	**/

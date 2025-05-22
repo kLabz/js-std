@@ -965,11 +965,11 @@ package js.html;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
+	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<haxe.Rest<Any>>):Int;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
+	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<haxe.Rest<Any>>):Int;
 	/**
 		From partial interface in file-system-access.idl
 	**/

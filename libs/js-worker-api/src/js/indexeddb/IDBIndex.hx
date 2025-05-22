@@ -56,9 +56,9 @@ package js.indexeddb;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function openCursor(?query:Any, ?direction:IDBCursorDirection = "next"):IDBRequest;
+	function openCursor(?query:Any, ?direction:IDBCursorDirection = NEXT):IDBRequest;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function openKeyCursor(?query:Any, ?direction:IDBCursorDirection = "next"):IDBRequest;
+	function openKeyCursor(?query:Any, ?direction:IDBCursorDirection = NEXT):IDBRequest;
 }

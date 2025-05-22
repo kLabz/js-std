@@ -157,11 +157,11 @@ package js.html;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function clip(?fillRule:CanvasFillRule = "nonzero"):Void;
+	overload function clip(?fillRule:CanvasFillRule = NONZERO):Void;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function clip(path:Path2D, ?fillRule:CanvasFillRule = "nonzero"):Void;
+	overload function clip(path:Path2D, ?fillRule:CanvasFillRule = NONZERO):Void;
 	/**
 		From interface mixin CanvasPath
 	**/
@@ -217,11 +217,11 @@ package js.html;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function fill(?fillRule:CanvasFillRule = "nonzero"):Void;
+	overload function fill(?fillRule:CanvasFillRule = NONZERO):Void;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function fill(path:Path2D, ?fillRule:CanvasFillRule = "nonzero"):Void;
+	overload function fill(path:Path2D, ?fillRule:CanvasFillRule = NONZERO):Void;
 	/**
 		From interface mixin CanvasRect
 	**/
@@ -253,11 +253,11 @@ package js.html;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function isPointInPath(x:Float, y:Float, ?fillRule:CanvasFillRule = "nonzero"):Bool;
+	overload function isPointInPath(x:Float, y:Float, ?fillRule:CanvasFillRule = NONZERO):Bool;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function isPointInPath(path:Path2D, x:Float, y:Float, ?fillRule:CanvasFillRule = "nonzero"):Bool;
+	overload function isPointInPath(path:Path2D, x:Float, y:Float, ?fillRule:CanvasFillRule = NONZERO):Bool;
 	/**
 		From interface mixin CanvasDrawPath
 	**/

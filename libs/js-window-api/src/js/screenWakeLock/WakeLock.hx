@@ -28,5 +28,5 @@ package js.screenWakeLock;
 	Unhandled extended attribute SecureContext
 **/
 @:native("WakeLock") extern class WakeLock {
-	function request(?type:WakeLockType = "screen"):js.lib.Promise<WakeLockSentinel>;
+	function request(?type:WakeLockType = SCREEN):js.lib.Promise<WakeLockSentinel>;
 }

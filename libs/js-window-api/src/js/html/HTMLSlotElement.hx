@@ -26,7 +26,7 @@ package js.html;
 
 @:native("HTMLSlotElement") extern class HTMLSlotElement extends HTMLElement {
 	var name : String;
-	function assign(nodes:haxe.Rest<haxe.extern.EitherType<js.dom.Element, js.dom.Text>>):Void;
+	function assign(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<js.dom.Element, js.dom.Text>>>):Void;
 	function assignedElements(?options:AssignedNodesOptions):Array<js.dom.Element>;
 	function assignedNodes(?options:AssignedNodesOptions):Array<js.dom.Node>;
 }

@@ -40,11 +40,11 @@ package js.webAnimations;
 	/**
 		From partial interface in web-animations-2.idl
 	**/
-	function after(effects:haxe.Rest<AnimationEffect>):Void;
+	function after(effects:haxe.Rest<haxe.Rest<AnimationEffect>>):Void;
 	/**
 		From partial interface in web-animations-2.idl
 	**/
-	function before(effects:haxe.Rest<AnimationEffect>):Void;
+	function before(effects:haxe.Rest<haxe.Rest<AnimationEffect>>):Void;
 	function getComputedTiming():ComputedEffectTiming;
 	function getTiming():EffectTiming;
 	/**
@@ -54,6 +54,6 @@ package js.webAnimations;
 	/**
 		From partial interface in web-animations-2.idl
 	**/
-	function replace(effects:haxe.Rest<AnimationEffect>):Void;
+	function replace(effects:haxe.Rest<haxe.Rest<AnimationEffect>>):Void;
 	function updateTiming(?timing:OptionalEffectTiming):Void;
 }

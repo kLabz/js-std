@@ -731,7 +731,7 @@ package js.dom;
 		From interface mixin ParentNode
 		Unhandled extended attribute Unscopable
 	**/
-	function append(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function append(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
 		From partial interface in html.idl
 	**/
@@ -925,7 +925,7 @@ package js.dom;
 		From interface mixin ParentNode
 		Unhandled extended attribute Unscopable
 	**/
-	function prepend(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function prepend(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
 		From partial interface in html.idl
 	**/
@@ -963,7 +963,7 @@ package js.dom;
 		From interface mixin ParentNode
 		Unhandled extended attribute Unscopable
 	**/
-	function replaceChildren(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function replaceChildren(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
 		From partial interface in storage-access.idl
 	**/
@@ -979,9 +979,9 @@ package js.dom;
 	/**
 		From partial interface in html.idl
 	**/
-	function write(text:haxe.Rest<haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>>):Void;
+	function write(text:haxe.Rest<haxe.Rest<haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>>>):Void;
 	/**
 		From partial interface in html.idl
 	**/
-	function writeln(text:haxe.Rest<haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>>):Void;
+	function writeln(text:haxe.Rest<haxe.Rest<haxe.extern.EitherType<js.trustedTypes.TrustedHTML, String>>>):Void;
 }

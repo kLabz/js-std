@@ -41,5 +41,5 @@ package js.indexeddb;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function transaction(storeNames:haxe.extern.EitherType<String, Array<String>>, ?mode:IDBTransactionMode = "readonly", ?options:IDBTransactionOptions):IDBTransaction;
+	function transaction(storeNames:haxe.extern.EitherType<String, Array<String>>, ?mode:IDBTransactionMode = READONLY, ?options:IDBTransactionOptions):IDBTransaction;
 }

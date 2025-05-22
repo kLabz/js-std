@@ -27,10 +27,10 @@ package js.dom;
 @:native("DOMTokenList") extern class DOMTokenList {
 	var length(default, null) : Int;
 	var value : String;
-	function add(tokens:haxe.Rest<String>):Void;
+	function add(tokens:haxe.Rest<haxe.Rest<String>>):Void;
 	function contains(token:String):Bool;
 	function item(index:Int):Null<String>;
-	function remove(tokens:haxe.Rest<String>):Void;
+	function remove(tokens:haxe.Rest<haxe.Rest<String>>):Void;
 	function replace(token:String, newToken:String):Bool;
 	function supports(token:String):Bool;
 	/**

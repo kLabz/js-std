@@ -28,7 +28,7 @@ package js.encryptedMedia;
 	Unhandled extended attribute SecureContext
 **/
 @:native("MediaKeys") extern class MediaKeys {
-	function createSession(?sessionType:MediaKeySessionType = "temporary"):MediaKeySession;
+	function createSession(?sessionType:MediaKeySessionType = TEMPORARY):MediaKeySession;
 	function getStatusForPolicy(?policy:MediaKeysPolicy):js.lib.Promise<MediaKeyStatus>;
 	function setServerCertificate(serverCertificate:js.webidl.BufferSource):js.lib.Promise<Bool>;
 }

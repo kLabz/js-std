@@ -38,12 +38,12 @@ package js.dom;
 	/**
 		From interface mixin ChildNode
 	**/
-	function after(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function after(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	function appendData(data:String):Void;
 	/**
 		From interface mixin ChildNode
 	**/
-	function before(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function before(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	function deleteData(offset:Int, count:Int):Void;
 	function insertData(offset:Int, data:String):Void;
 	/**
@@ -54,6 +54,6 @@ package js.dom;
 	/**
 		From interface mixin ChildNode
 	**/
-	function replaceWith(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function replaceWith(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	function substringData(offset:Int, count:Int):String;
 }

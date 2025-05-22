@@ -40,7 +40,7 @@ package js.paymentRequest;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function complete(?result:PaymentComplete = "unknown", ?details:PaymentCompleteDetails):js.lib.Promise<Void>;
+	function complete(?result:PaymentComplete = UNKNOWN, ?details:PaymentCompleteDetails):js.lib.Promise<Void>;
 	/**
 		Unhandled extended attribute NewObject
 	**/

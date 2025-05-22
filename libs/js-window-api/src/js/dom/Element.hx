@@ -351,7 +351,7 @@ package js.dom;
 	/**
 		From interface mixin ChildNode
 	**/
-	function after(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function after(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
 		From interface mixin Animatable
 	**/
@@ -359,12 +359,12 @@ package js.dom;
 	/**
 		From interface mixin ParentNode
 	**/
-	function append(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function append(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	function attachShadow(init:ShadowRootInit):ShadowRoot;
 	/**
 		From interface mixin ChildNode
 	**/
-	function before(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function before(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -449,7 +449,7 @@ package js.dom;
 	/**
 		From interface mixin ParentNode
 	**/
-	function prepend(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function prepend(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
 		From partial interface in css-pseudo.idl
 	**/
@@ -476,11 +476,11 @@ package js.dom;
 	/**
 		From interface mixin ParentNode
 	**/
-	function replaceChildren(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function replaceChildren(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
 		From interface mixin ChildNode
 	**/
-	function replaceWith(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function replaceWith(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
 		From partial interface in fullscreen.idl
 	**/

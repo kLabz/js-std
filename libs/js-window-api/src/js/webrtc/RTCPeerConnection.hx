@@ -73,7 +73,7 @@ package js.webrtc;
 	/**
 		From partial interface in webrtc.idl
 	**/
-	function addTrack(track:js.mediacaptureStreams.MediaStreamTrack, streams:haxe.Rest<js.mediacaptureStreams.MediaStream>):RTCRtpSender;
+	function addTrack(track:js.mediacaptureStreams.MediaStreamTrack, streams:haxe.Rest<haxe.Rest<js.mediacaptureStreams.MediaStream>>):RTCRtpSender;
 	/**
 		From partial interface in webrtc.idl
 	**/

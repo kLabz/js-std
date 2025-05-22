@@ -44,5 +44,5 @@ package js.webrtc;
 	function getStats():js.lib.Promise<RTCStatsReport>;
 	function replaceTrack(withTrack:Null<js.mediacaptureStreams.MediaStreamTrack>):js.lib.Promise<Void>;
 	function setParameters(parameters:RTCRtpSendParameters, ?setParameterOptions:RTCSetParameterOptions):js.lib.Promise<Void>;
-	function setStreams(streams:haxe.Rest<js.mediacaptureStreams.MediaStream>):Void;
+	function setStreams(streams:haxe.Rest<haxe.Rest<js.mediacaptureStreams.MediaStream>>):Void;
 }

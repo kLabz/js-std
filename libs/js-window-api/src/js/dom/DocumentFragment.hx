@@ -45,7 +45,7 @@ package js.dom;
 	/**
 		From interface mixin ParentNode
 	**/
-	function append(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function append(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
 		From interface mixin NonElementParentNode
 	**/
@@ -57,7 +57,7 @@ package js.dom;
 	/**
 		From interface mixin ParentNode
 	**/
-	function prepend(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function prepend(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
 		From interface mixin ParentNode
 	**/
@@ -69,5 +69,5 @@ package js.dom;
 	/**
 		From interface mixin ParentNode
 	**/
-	function replaceChildren(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
+	function replaceChildren(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 }

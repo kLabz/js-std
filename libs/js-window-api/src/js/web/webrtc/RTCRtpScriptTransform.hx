@@ -37,5 +37,5 @@ package js.web.webrtc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransform/RTCRtpScriptTransform>
 	**/
-	function new(workerOrWorkerAndParameters:WorkerOrWorkerAndParameters, ?options:Any, ?transfer:Array<{ }>):Void;
+	function new(workerOrWorkerAndParameters:WorkerOrWorkerAndParameters, ?options:Null<Any>, ?transfer:Array<{ }>):Void;
 }

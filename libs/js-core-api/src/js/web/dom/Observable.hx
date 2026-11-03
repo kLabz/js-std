@@ -76,13 +76,13 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Observable/find>
 	**/
-	function find(predicate:Predicate, ?options:SubscribeOptions):js.lib.Promise<Any>;
+	function find(predicate:Predicate, ?options:SubscribeOptions):js.lib.Promise<Null<Any>>;
 	/**
 		The **`first()`** method of the `Observable` interface returns a promise that fulfills with the first value emitted by the source observable.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Observable/first>
 	**/
-	function first(?options:SubscribeOptions):js.lib.Promise<Any>;
+	function first(?options:SubscribeOptions):js.lib.Promise<Null<Any>>;
 	/**
 		The **`flatMap()`** method of the `Observable` interface returns a new observable that maps each value of the source observable to an inner observable and emits the inner observables' values sequentially.
 		
@@ -100,7 +100,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Observable/from_static>
 	**/
-	static function from(value:Any):Observable;
+	static function from(value:Null<Any>):Observable;
 	/**
 		The **`inspect()`** method of the `Observable` interface returns a new observable that mirrors the source observable and calls callbacks to inspect its values and subscription lifecycle.
 		
@@ -112,7 +112,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Observable/last>
 	**/
-	function last(?options:SubscribeOptions):js.lib.Promise<Any>;
+	function last(?options:SubscribeOptions):js.lib.Promise<Null<Any>>;
 	/**
 		The **`map()`** method of the `Observable` interface returns a new observable that emits the values of the source observable, each transformed by a mapping function.
 		
@@ -124,7 +124,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Observable/reduce>
 	**/
-	function reduce(reducer:Reducer, ?initialValue:Any, ?options:SubscribeOptions):js.lib.Promise<Any>;
+	function reduce(reducer:Reducer, ?initialValue:Null<Any>, ?options:SubscribeOptions):js.lib.Promise<Null<Any>>;
 	/**
 		The **`some()`** method of the `Observable` interface returns a promise that fulfills with a boolean indicating whether any value emitted by the source observable satisfies the provided testing function.
 		
@@ -154,11 +154,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Observable/takeUntil>
 	**/
-	function takeUntil(value:Any):Observable;
+	function takeUntil(value:Null<Any>):Observable;
 	/**
 		The **`toArray()`** method of the `Observable` interface returns a promise that fulfills with a new array containing the source observable's values in the order they were emitted.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Observable/toArray>
 	**/
-	function toArray(?options:SubscribeOptions):js.lib.Promise<Array<Any>>;
+	function toArray(?options:SubscribeOptions):js.lib.Promise<Array<Null<Any>>>;
 }

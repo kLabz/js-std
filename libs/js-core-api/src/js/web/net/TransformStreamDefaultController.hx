@@ -43,13 +43,13 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/TransformStreamDefaultController/enqueue>
 	**/
-	function enqueue(?chunk:Any):Void;
+	function enqueue(?chunk:Null<Any>):Void;
 	/**
 		The **`error()`** method of the `TransformStreamDefaultController` interface errors both sides of the stream. Any further interactions with it will fail with the given error message, and any chunks in the queue will be discarded.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/TransformStreamDefaultController/error>
 	**/
-	function error(?reason:Any):Void;
+	function error(?reason:Null<Any>):Void;
 	/**
 		The **`terminate()`** method of the `TransformStreamDefaultController` interface closes the readable side and errors the writable side of the stream.
 		

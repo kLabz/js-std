@@ -43,7 +43,7 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBObjectStore/keyPath>
 	**/
-	var keyPath(default, null) : Any;
+	var keyPath(default, null) : Null<Any>;
 	/**
 		The **`indexNames`** read-only property of the `IDBObjectStore` interface returns a list of the names of [indexes](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Terminology#index) on objects in this object store.
 		
@@ -67,7 +67,7 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBObjectStore/add>
 	**/
-	function add(value:Any, ?key:Any):IDBRequest;
+	function add(value:Null<Any>, ?key:Null<Any>):IDBRequest;
 	/**
 		The **`clear()`** method of the `IDBObjectStore` interface creates and immediately returns an `IDBRequest` object, and clears this object store in a separate thread. This is for deleting all the current data out of an object store.
 		
@@ -79,7 +79,7 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBObjectStore/count>
 	**/
-	function count(?query:Any):IDBRequest;
+	function count(?query:Null<Any>):IDBRequest;
 	/**
 		The **`createIndex()`** method of the `IDBObjectStore` interface creates and returns a new `IDBIndex` object in the connected database. It creates a new field/column defining a new data point for each database record to contain.
 		
@@ -91,7 +91,7 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBObjectStore/delete>
 	**/
-	function delete(query:Any):IDBRequest;
+	function delete(query:Null<Any>):IDBRequest;
 	/**
 		The **`deleteIndex()`** method of the `IDBObjectStore` interface destroys the index with the specified name in the connected database, used during a version upgrade.
 		
@@ -103,19 +103,19 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBObjectStore/get>
 	**/
-	function get(query:Any):IDBRequest;
+	function get(query:Null<Any>):IDBRequest;
 	/**
 		The **`getAll()`** method of the `IDBObjectStore` interface returns an `IDBRequest` object containing all objects in the object store matching the specified parameter or all objects in the store if no parameters are given.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBObjectStore/getAll>
 	**/
-	function getAll(?queryOrOptions:Any, ?count:Int):IDBRequest;
+	function getAll(?queryOrOptions:Null<Any>, ?count:Int):IDBRequest;
 	/**
 		The `getAllKeys()` method of the `IDBObjectStore` interface returns an `IDBRequest` object retrieves record keys for all objects in the object store matching the specified parameter or all objects in the store if no parameters are given.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBObjectStore/getAllKeys>
 	**/
-	function getAllKeys(?queryOrOptions:Any, ?count:Int):IDBRequest;
+	function getAllKeys(?queryOrOptions:Null<Any>, ?count:Int):IDBRequest;
 	/**
 		The **`getAllRecords()`** method of the `IDBObjectStore` interface retrieves all records (including primary keys and values) from the object store.
 		
@@ -127,7 +127,7 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBObjectStore/getKey>
 	**/
-	function getKey(query:Any):IDBRequest;
+	function getKey(query:Null<Any>):IDBRequest;
 	/**
 		The **`index()`** method of the `IDBObjectStore` interface opens a named index in the current object store, after which it can be used to, for example, return a series of records sorted by that index using a cursor.
 		
@@ -139,17 +139,17 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBObjectStore/openCursor>
 	**/
-	function openCursor(?query:Any, ?direction:IDBCursorDirection = IDBCursorDirection.NEXT):IDBRequest;
+	function openCursor(?query:Null<Any>, ?direction:IDBCursorDirection = IDBCursorDirection.NEXT):IDBRequest;
 	/**
 		The **`openKeyCursor()`** method of the `IDBObjectStore` interface returns an `IDBRequest` object whose result will be set to an `IDBCursor` that can be used to iterate through matching results. Used for iterating through the keys of an object store with a cursor.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBObjectStore/openKeyCursor>
 	**/
-	function openKeyCursor(?query:Any, ?direction:IDBCursorDirection = IDBCursorDirection.NEXT):IDBRequest;
+	function openKeyCursor(?query:Null<Any>, ?direction:IDBCursorDirection = IDBCursorDirection.NEXT):IDBRequest;
 	/**
 		The **`put()`** method of the `IDBObjectStore` interface updates a given record in a database, or inserts a new record if the given item does not already exist.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBObjectStore/put>
 	**/
-	function put(value:Any, ?key:Any):IDBRequest;
+	function put(value:Null<Any>, ?key:Null<Any>):IDBRequest;
 }

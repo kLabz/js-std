@@ -24,4 +24,4 @@
 
 package js.web.dom;
 
-typedef ObservableInspectorAbortHandler = (value:Any) -> Void;
+typedef ObservableInspectorAbortHandler = (value:Null<Any>) -> Void;

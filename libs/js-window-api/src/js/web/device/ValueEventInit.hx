@@ -29,5 +29,5 @@ typedef ValueEventInit = js.web.dom.EventInit & {
 		Default: `null`
 	**/
 	@:optional
-	var value : Any;
+	var value : Null<Any>;
 };

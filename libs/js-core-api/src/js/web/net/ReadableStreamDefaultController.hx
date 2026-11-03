@@ -49,11 +49,11 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultController/enqueue>
 	**/
-	function enqueue(?chunk:Any):Void;
+	function enqueue(?chunk:Null<Any>):Void;
 	/**
 		The **`error()`** method of the `ReadableStreamDefaultController` interface causes any future interactions with the associated stream to error.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultController/error>
 	**/
-	function error(?e:Any):Void;
+	function error(?e:Null<Any>):Void;
 }

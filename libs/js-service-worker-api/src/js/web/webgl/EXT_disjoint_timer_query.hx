@@ -72,13 +72,13 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/getQueryEXT>
 	**/
-	function getQueryEXT(target:GLenum, pname:GLenum):Any;
+	function getQueryEXT(target:GLenum, pname:GLenum):Null<Any>;
 	/**
 		The **`EXT_disjoint_timer_query.getQueryObjectEXT()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns the state of a query object.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/getQueryObjectEXT>
 	**/
-	function getQueryObjectEXT(query:WebGLTimerQueryEXT, pname:GLenum):Any;
+	function getQueryObjectEXT(query:WebGLTimerQueryEXT, pname:GLenum):Null<Any>;
 	/**
 		The **`EXT_disjoint_timer_query.isQueryEXT()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns `true` if the passed object is a `WebGLQuery` object.
 		

@@ -61,7 +61,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/abort>
 	**/
-	function abort(?reason:Any):js.lib.Promise<Void>;
+	function abort(?reason:Null<Any>):js.lib.Promise<Void>;
 	/**
 		The **`close()`** method of the `WritableStreamDefaultWriter` interface closes the associated writable stream.
 		
@@ -79,5 +79,5 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/write>
 	**/
-	function write(?chunk:Any):js.lib.Promise<Void>;
+	function write(?chunk:Null<Any>):js.lib.Promise<Void>;
 }

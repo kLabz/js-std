@@ -24,4 +24,4 @@
 
 package js.web.net;
 
-typedef TransformerCancelCallback = (reason:Any) -> js.lib.Promise<Void>;
+typedef TransformerCancelCallback = (reason:Null<Any>) -> js.lib.Promise<Void>;

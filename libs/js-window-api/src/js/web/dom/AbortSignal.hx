@@ -43,14 +43,14 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/reason>
 	**/
-	var reason(default, null) : Any;
+	var reason(default, null) : Null<Any>;
 	var onabort : js.web.html.EventHandler;
 	/**
 		The **`AbortSignal.abort()`** static method returns an `AbortSignal` that is already set as aborted (and which does not trigger an `abort` event).
 		
 		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/abort_static>
 	**/
-	static function abort(?reason:Any):AbortSignal;
+	static function abort(?reason:Null<Any>):AbortSignal;
 	/**
 		The **`AbortSignal.any()`** static method takes an iterable of abort signals and returns an `AbortSignal`. The returned abort signal is aborted when any of the input iterable abort signals are aborted. The `abort reason` will be set to the reason of the first signal that is aborted. If any of the given abort signals are already aborted then so will be the returned `AbortSignal`.
 		

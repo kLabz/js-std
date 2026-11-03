@@ -85,7 +85,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/info>
 	**/
-	var info(default, null) : Any;
+	var info(default, null) : Null<Any>;
 	/**
 		The **`hasUAVisualTransition`** read-only property of the `NavigateEvent` interface returns `true` if the user agent performed a visual transition for this navigation before dispatching this event, or `false` otherwise.
 		

@@ -57,7 +57,7 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PushMessageData/json>
 	**/
-	function json():Any;
+	function json():Null<Any>;
 	/**
 		The **`text()`** method of the `PushMessageData` interface extracts push message data as a plain text string.
 		

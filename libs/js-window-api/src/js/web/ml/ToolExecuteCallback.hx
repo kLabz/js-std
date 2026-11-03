@@ -24,4 +24,4 @@
 
 package js.web.ml;
 
-typedef ToolExecuteCallback = (inputObject:{ }, options:ToolExecuteCallbackOptions) -> js.lib.Promise<Any>;
+typedef ToolExecuteCallback = (inputObject:{ }, options:ToolExecuteCallbackOptions) -> js.lib.Promise<Null<Any>>;

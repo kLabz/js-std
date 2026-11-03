@@ -24,4 +24,4 @@
 
 package js.web.net;
 
-typedef UnderlyingSourceStartCallback = (controller:ReadableStreamController) -> Any;
+typedef UnderlyingSourceStartCallback = (controller:ReadableStreamController) -> Null<Any>;

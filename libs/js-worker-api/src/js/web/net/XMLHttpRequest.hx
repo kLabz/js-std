@@ -91,7 +91,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/response>
 	**/
-	var response(default, null) : Any;
+	var response(default, null) : Null<Any>;
 	/**
 		The read-only `XMLHttpRequest` property **`responseText`** returns the text received from a server following a request being sent.
 		

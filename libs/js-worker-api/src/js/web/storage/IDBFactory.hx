@@ -37,7 +37,7 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBFactory/cmp>
 	**/
-	function cmp(first:Any, second:Any):Int;
+	function cmp(first:Null<Any>, second:Null<Any>):Int;
 	/**
 		The **`databases`** method of the `IDBFactory` interface returns a `Promise` that fulfills with an array of objects containing the name and version of all the available databases.
 		

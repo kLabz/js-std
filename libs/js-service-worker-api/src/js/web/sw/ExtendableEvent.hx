@@ -43,5 +43,5 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableEvent/waitUntil>
 	**/
-	function waitUntil(f:js.lib.Promise<Any>):Void;
+	function waitUntil(f:js.lib.Promise<Null<Any>>):Void;
 }

@@ -49,5 +49,5 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/AbortController/abort>
 	**/
-	function abort(?reason:Any):Void;
+	function abort(?reason:Null<Any>):Void;
 }

@@ -71,13 +71,13 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/postMessage>
 	**/
-	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
+	overload function postMessage(message:Null<Any>, transfer:Array<{ }>):Void;
 	/**
 		The **`postMessage()`** method of the `DedicatedWorkerGlobalScope` interface sends a message to the main thread that spawned it.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/postMessage>
 	**/
-	overload function postMessage(message:Any, ?options:StructuredSerializeOptions):Void;
+	overload function postMessage(message:Null<Any>, ?options:StructuredSerializeOptions):Void;
 	/**
 		The **`requestAnimationFrame()`** method of the `DedicatedWorkerGlobalScope` interface tells the browser you wish to perform an animation frame request and call a user-supplied callback function before the next repaint.
 		

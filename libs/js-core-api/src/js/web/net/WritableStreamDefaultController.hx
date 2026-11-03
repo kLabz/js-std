@@ -43,5 +43,5 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultController/error>
 	**/
-	function error(?e:Any):Void;
+	function error(?e:Null<Any>):Void;
 }

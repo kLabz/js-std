@@ -37,7 +37,7 @@ package js.web.perf;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceMark/detail>
 	**/
-	var detail(default, null) : Any;
+	var detail(default, null) : Null<Any>;
 	/**
 		The **`PerformanceMark()`** constructor creates a `timestamp` with the given name.
 		

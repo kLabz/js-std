@@ -26,7 +26,7 @@ package js.web.perf;
 
 typedef PerformanceMeasureOptions = {
 	@:optional
-	var detail : Any;
+	var detail : Null<Any>;
 	@:optional
 	var start : haxe.extern.EitherType<String, DOMHighResTimeStamp>;
 	@:optional

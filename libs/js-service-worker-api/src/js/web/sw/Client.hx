@@ -65,11 +65,11 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Client/postMessage>
 	**/
-	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
+	overload function postMessage(message:Null<Any>, transfer:Array<{ }>):Void;
 	/**
 		The **`postMessage()`** method of the `Client` interface allows a service worker to send a message to a client (a `Window`, `Worker`, or `SharedWorker`). The message is received in the `message` event on `navigator.serviceWorker`.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Client/postMessage>
 	**/
-	overload function postMessage(message:Any, ?options:js.web.html.StructuredSerializeOptions):Void;
+	overload function postMessage(message:Null<Any>, ?options:js.web.html.StructuredSerializeOptions):Void;
 }

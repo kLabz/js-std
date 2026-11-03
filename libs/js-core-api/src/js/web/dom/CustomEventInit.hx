@@ -29,5 +29,5 @@ typedef CustomEventInit = EventInit & {
 		Default: `null`
 	**/
 	@:optional
-	var detail : Any;
+	var detail : Null<Any>;
 };

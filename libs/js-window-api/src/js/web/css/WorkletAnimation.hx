@@ -29,5 +29,5 @@ package js.web.css;
 **/
 @:native("WorkletAnimation") @:require(js_experimental_api, "WorkletAnimation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WorkletAnimation extends Animation {
 	var animatorName(default, null) : String;
-	function new(animatorName:String, ?effects:Null<haxe.extern.EitherType<AnimationEffect, Array<AnimationEffect>>> = null, ?timeline:Null<AnimationTimeline>, ?options:Any):Void;
+	function new(animatorName:String, ?effects:Null<haxe.extern.EitherType<AnimationEffect, Array<AnimationEffect>>> = null, ?timeline:Null<AnimationTimeline>, ?options:Null<Any>):Void;
 }

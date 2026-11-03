@@ -24,4 +24,4 @@
 
 package js.web.css;
 
-typedef ViewTransitionUpdateCallback = () -> js.lib.Promise<Any>;
+typedef ViewTransitionUpdateCallback = () -> js.lib.Promise<Null<Any>>;

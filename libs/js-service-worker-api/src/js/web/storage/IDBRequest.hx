@@ -37,7 +37,7 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBRequest/result>
 	**/
-	var result(default, null) : Any;
+	var result(default, null) : Null<Any>;
 	/**
 		The **`error`** read-only property of the `IDBRequest` interface returns the error in the event of an unsuccessful request.
 		

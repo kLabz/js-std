@@ -154,7 +154,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/opener>
 	**/
-	var opener : Any;
+	var opener : Null<Any>;
 	/**
 		The **`Window.parent`** property is a reference to the parent of the current window or subframe.
 		
@@ -1172,13 +1172,13 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/postMessage>
 	**/
-	overload function postMessage(message:Any, targetOrigin:String, ?transfer:Array<{ }>):Void;
+	overload function postMessage(message:Null<Any>, targetOrigin:String, ?transfer:Array<{ }>):Void;
 	/**
 		The **`window.postMessage()`** method safely enables cross-origin communication between `Window` objects; _e.g.,_ between a page and a pop-up that it spawned, or between a page and an iframe embedded within it.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/postMessage>
 	**/
-	overload function postMessage(message:Any, ?options:WindowPostMessageOptions):Void;
+	overload function postMessage(message:Null<Any>, ?options:WindowPostMessageOptions):Void;
 	/**
 		Opens the print dialog to print the current document.
 		
@@ -1216,7 +1216,7 @@ package js.web.html;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function reportError(e:Any):Void;
+	function reportError(e:Null<Any>):Void;
 	/**
 		The **`window.requestAnimationFrame()`** method tells the browser you wish to perform an animation. It requests the browser to call a user-supplied callback function before the next repaint.
 		
@@ -1315,7 +1315,7 @@ package js.web.html;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
+	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Null<Any>>):Int;
 	/**
 		This method does nothing; it is a no-op. It is solely kept for compatibility with Netscape 4.x.
 		
@@ -1329,7 +1329,7 @@ package js.web.html;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
+	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Null<Any>>):Int;
 	/**
 		The **`showDirectoryPicker()`** method of the `Window` interface displays a directory picker which allows the user to select a directory.
 		
@@ -1366,5 +1366,5 @@ package js.web.html;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function structuredClone(value:Any, ?options:StructuredSerializeOptions):Any;
+	function structuredClone(value:Null<Any>, ?options:StructuredSerializeOptions):Null<Any>;
 }

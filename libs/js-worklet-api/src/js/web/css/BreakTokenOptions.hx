@@ -31,5 +31,5 @@ typedef BreakTokenOptions = {
 		Default: `null`
 	**/
 	@:optional
-	var data : Any;
+	var data : Null<Any>;
 };

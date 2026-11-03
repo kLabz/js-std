@@ -37,7 +37,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PopStateEvent/state>
 	**/
-	var state(default, null) : Any;
+	var state(default, null) : Null<Any>;
 	/**
 		The **`hasUAVisualTransition`** read-only property of the `PopStateEvent` interface returns `true` if the user agent performed a visual transition for this navigation before dispatching this event, or `false` otherwise.
 		

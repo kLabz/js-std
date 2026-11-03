@@ -24,4 +24,4 @@
 
 package js.web.dom;
 
-typedef Reducer = (accumulator:Any, currentValue:Any, index:Float) -> Any;
+typedef Reducer = (accumulator:Null<Any>, currentValue:Null<Any>, index:Float) -> Null<Any>;

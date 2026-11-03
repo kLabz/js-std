@@ -73,17 +73,17 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicyFactory/isHTML>
 	**/
-	function isHTML(value:Any):Bool;
+	function isHTML(value:Null<Any>):Bool;
 	/**
 		The **`isScript()`** method of the `TrustedTypePolicyFactory` interface returns true if it is passed a valid `TrustedScript` object.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicyFactory/isScript>
 	**/
-	function isScript(value:Any):Bool;
+	function isScript(value:Null<Any>):Bool;
 	/**
 		The **`isScriptURL()`** method of the `TrustedTypePolicyFactory` interface returns true if it is passed a valid `TrustedScriptURL` object.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicyFactory/isScriptURL>
 	**/
-	function isScriptURL(value:Any):Bool;
+	function isScriptURL(value:Null<Any>):Bool;
 }

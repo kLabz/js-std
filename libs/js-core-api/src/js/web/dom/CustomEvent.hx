@@ -37,7 +37,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CustomEvent/detail>
 	**/
-	var detail(default, null) : Any;
+	var detail(default, null) : Null<Any>;
 	/**
 		The **`CustomEvent()`** constructor creates a new `CustomEvent` object.
 		
@@ -50,5 +50,5 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/CustomEvent/initCustomEvent>
 	**/
 	@:deprecated
-	function initCustomEvent(type:String, ?bubbles:Bool = false, ?cancelable:Bool = false, ?detail:Any = null):Void;
+	function initCustomEvent(type:String, ?bubbles:Bool = false, ?cancelable:Bool = false, ?detail:Null<Any> = null):Void;
 }

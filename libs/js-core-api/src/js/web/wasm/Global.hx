@@ -37,12 +37,12 @@ package js.web.wasm;
 		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Global/value>
 	**/
-	var value : Any;
-	function new(descriptor:GlobalDescriptor, ?v:Any):Void;
+	var value : Null<Any>;
+	function new(descriptor:GlobalDescriptor, ?v:Null<Any>):Void;
 	/**
 		The **`valueOf`** method of the [`WebAssembly.Global`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Global) object prototype returns the value contained inside the global variable.
 		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Global/valueOf>
 	**/
-	function valueOf():Any;
+	function valueOf():Null<Any>;
 }

@@ -29,5 +29,5 @@ package js.web.css;
 **/
 @:native("BreakToken") @:require(js_experimental_api, "BreakToken is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BreakToken {
 	var childBreakTokens(default, null) : haxe.ds.ReadOnlyArray<ChildBreakToken>;
-	var data(default, null) : Any;
+	var data(default, null) : Null<Any>;
 }

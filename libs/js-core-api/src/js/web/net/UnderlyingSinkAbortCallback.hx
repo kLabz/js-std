@@ -24,4 +24,4 @@
 
 package js.web.net;
 
-typedef UnderlyingSinkAbortCallback = (?reason:Any) -> js.lib.Promise<Void>;
+typedef UnderlyingSinkAbortCallback = (?reason:Null<Any>) -> js.lib.Promise<Void>;

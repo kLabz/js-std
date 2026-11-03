@@ -142,17 +142,17 @@ package js.web.html;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function reportError(e:Any):Void;
+	function reportError(e:Null<Any>):Void;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
+	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Null<Any>>):Int;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
+	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Null<Any>>):Int;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function structuredClone(value:Any, ?options:StructuredSerializeOptions):Any;
+	function structuredClone(value:Null<Any>, ?options:StructuredSerializeOptions):Null<Any>;
 }

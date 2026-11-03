@@ -43,7 +43,7 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/FetchEvent/preloadResponse>
 	**/
-	var preloadResponse(default, null) : js.lib.Promise<Any>;
+	var preloadResponse(default, null) : js.lib.Promise<Null<Any>>;
 	/**
 		The **`clientId`** read-only property of the `FetchEvent` interface returns the id of the `Client` that the current service worker is controlling.
 		

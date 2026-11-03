@@ -27,7 +27,7 @@ package js.web.sw;
 typedef FetchEventInit = ExtendableEventInit & {
 	var request : js.web.net.Request;
 	@:optional
-	var preloadResponse : js.lib.Promise<Any>;
+	var preloadResponse : js.lib.Promise<Null<Any>>;
 	/**
 		Default: `""`
 	**/

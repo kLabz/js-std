@@ -52,7 +52,7 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/getParameter>
 	**/
 	@:deprecated
-	function getParameter(namespaceURI:String, localName:String):Any;
+	function getParameter(namespaceURI:String, localName:String):Null<Any>;
 	/**
 		The `importStylesheet()` method of the `XSLTProcessor` interface imports an XSLT stylesheet for the processor.
 		
@@ -80,7 +80,7 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/setParameter>
 	**/
 	@:deprecated
-	function setParameter(namespaceURI:String, localName:String, value:Any):Void;
+	function setParameter(namespaceURI:String, localName:String, value:Null<Any>):Void;
 	/**
 		The `transformToDocument()` method of the `XSLTProcessor` interface transforms the provided `Node` source to a `Document` using the XSLT stylesheet associated with `XSLTProcessor`.
 		

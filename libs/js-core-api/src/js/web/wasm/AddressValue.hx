@@ -24,4 +24,4 @@
 
 package js.web.wasm;
 
-typedef AddressValue = Any;
+typedef AddressValue = Null<Any>;

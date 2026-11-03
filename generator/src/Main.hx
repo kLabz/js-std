@@ -247,7 +247,8 @@ class Main {
 		// TODO: see https://webidl.spec.whatwg.org/#idl-types
 		// TODO: might be interesting to have abstracts for some of those as a documentation
 		return switch (t) {
-			case "any": macro :Any;
+			// `any` includes null and undefined; matters with null safety
+			case "any": macro :Null<Any>;
 			case "boolean": macro :Bool;
 			case "object": macro :{};
 			case "DOMString" | "USVString" | "CSSOMString": macro :String;
@@ -314,7 +315,7 @@ class Main {
 					current;
 			};
 			assertEmptyAttributes(t.extAttrs);
-			return if (t.nullable || optional) macro :Null<$ct> else ct;
+			return if ((t.nullable || optional) && !ct.match(TPath({pack: [], name: "Null"}))) macro :Null<$ct> else ct;
 		} else {
 			function handleGeneric<T:AbstractNonUnionTypeDescription<T>>(t:T) {
 				return switch (t.generic) {

@@ -48,5 +48,5 @@ package js.web.auth;
 		@see <https://developer.mozilla.org/docs/Web/API/IdentityProvider/getUserInfo_static>
 	**/
 	static function getUserInfo(config:IdentityProviderConfig):js.lib.Promise<Array<IdentityUserInfo>>;
-	static function resolve(token:Any, ?options:IdentityResolveOptions):js.lib.Promise<Void>;
+	static function resolve(token:Null<Any>, ?options:IdentityResolveOptions):js.lib.Promise<Void>;
 }

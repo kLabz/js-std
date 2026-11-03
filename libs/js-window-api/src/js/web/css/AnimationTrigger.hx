@@ -30,9 +30,9 @@ package js.web.css;
 @:native("AnimationTrigger") @:require(js_experimental_api, "AnimationTrigger is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AnimationTrigger {
 	var timeline : AnimationTimeline;
 	var behavior : AnimationTriggerBehavior;
-	var activationRangeStart : Any;
-	var activationRangeEnd : Any;
-	var activeRangeStart : Any;
-	var activeRangeEnd : Any;
+	var activationRangeStart : Null<Any>;
+	var activationRangeEnd : Null<Any>;
+	var activeRangeStart : Null<Any>;
+	var activeRangeEnd : Null<Any>;
 	function new(?options:AnimationTriggerOptions):Void;
 }

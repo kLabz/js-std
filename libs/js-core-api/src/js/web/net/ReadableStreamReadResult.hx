@@ -26,7 +26,7 @@ package js.web.net;
 
 typedef ReadableStreamReadResult = {
 	@:optional
-	var value : Any;
+	var value : Null<Any>;
 	@:optional
 	var done : Bool;
 };

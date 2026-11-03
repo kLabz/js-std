@@ -49,7 +49,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/History/state>
 	**/
-	var state(default, null) : Any;
+	var state(default, null) : Null<Any>;
 	/**
 		The **`back()`** method of the `History` interface causes the browser to move back one page in the session history.
 		
@@ -73,11 +73,11 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/History/pushState>
 	**/
-	function pushState(data:Any, unused:String, ?url:Null<String> = null):Void;
+	function pushState(data:Null<Any>, unused:String, ?url:Null<String> = null):Void;
 	/**
 		The **`replaceState()`** method of the `History` interface modifies the current history entry, replacing it with the state object and URL passed in the method parameters. This method is particularly useful when you want to update the state object or URL of the current history entry in response to some user action.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/History/replaceState>
 	**/
-	function replaceState(data:Any, unused:String, ?url:Null<String> = null):Void;
+	function replaceState(data:Null<Any>, unused:String, ?url:Null<String> = null):Void;
 }

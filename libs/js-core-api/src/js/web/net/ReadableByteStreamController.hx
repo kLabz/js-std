@@ -61,5 +61,5 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableByteStreamController/error>
 	**/
-	function error(?e:Any):Void;
+	function error(?e:Null<Any>):Void;
 }

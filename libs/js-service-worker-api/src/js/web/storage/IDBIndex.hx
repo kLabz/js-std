@@ -49,7 +49,7 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/keyPath>
 	**/
-	var keyPath(default, null) : Any;
+	var keyPath(default, null) : Null<Any>;
 	/**
 		The **`multiEntry`** read-only property of the `IDBIndex` interface returns a boolean value that affects how the index behaves when the result of evaluating the index's key path yields an array.
 		
@@ -67,25 +67,25 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/count>
 	**/
-	function count(?query:Any):IDBRequest;
+	function count(?query:Null<Any>):IDBRequest;
 	/**
 		The **`get()`** method of the `IDBIndex` interface returns an `IDBRequest` object, and, in a separate thread, finds either the value in the referenced object store that corresponds to the given key or the first corresponding value, if `key` is set to an `IDBKeyRange`.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/get>
 	**/
-	function get(query:Any):IDBRequest;
+	function get(query:Null<Any>):IDBRequest;
 	/**
 		The **`getAll()`** method of the `IDBIndex` interface retrieves all objects that are inside the index.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/getAll>
 	**/
-	function getAll(?queryOrOptions:Any, ?count:Int):IDBRequest;
+	function getAll(?queryOrOptions:Null<Any>, ?count:Int):IDBRequest;
 	/**
 		The **`getAllKeys()`** method of the `IDBIndex` interface asynchronously retrieves the primary keys of all objects inside the index, setting them as the `result` of the request object.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/getAllKeys>
 	**/
-	function getAllKeys(?queryOrOptions:Any, ?count:Int):IDBRequest;
+	function getAllKeys(?queryOrOptions:Null<Any>, ?count:Int):IDBRequest;
 	/**
 		The **`getAllRecords()`** method of the `IDBIndex` interface retrieves all records (including index keys, primary keys, and values) from the index.
 		
@@ -97,17 +97,17 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/getKey>
 	**/
-	function getKey(query:Any):IDBRequest;
+	function getKey(query:Null<Any>):IDBRequest;
 	/**
 		The **`openCursor()`** method of the `IDBIndex` interface returns an `IDBRequest` object, and, in a separate thread, creates a [cursor](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Terminology#cursor) over the specified key range.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/openCursor>
 	**/
-	function openCursor(?query:Any, ?direction:IDBCursorDirection = IDBCursorDirection.NEXT):IDBRequest;
+	function openCursor(?query:Null<Any>, ?direction:IDBCursorDirection = IDBCursorDirection.NEXT):IDBRequest;
 	/**
 		The **`openKeyCursor()`** method of the `IDBIndex` interface returns an `IDBRequest` object, and, in a separate thread, creates a cursor over the specified key range, as arranged by this index.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/openKeyCursor>
 	**/
-	function openKeyCursor(?query:Any, ?direction:IDBCursorDirection = IDBCursorDirection.NEXT):IDBRequest;
+	function openKeyCursor(?query:Null<Any>, ?direction:IDBCursorDirection = IDBCursorDirection.NEXT):IDBRequest;
 }

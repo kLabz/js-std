@@ -49,7 +49,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WritableStream/abort>
 	**/
-	function abort(?reason:Any):js.lib.Promise<Void>;
+	function abort(?reason:Null<Any>):js.lib.Promise<Void>;
 	/**
 		The **`close()`** method of the `WritableStream` interface closes the associated stream. All chunks written before this method is called are sent before the returned promise is fulfilled.
 		

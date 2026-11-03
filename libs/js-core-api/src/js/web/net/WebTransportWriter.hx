@@ -30,6 +30,6 @@ package js.web.net;
 	Experimental: requires `-D js-experimental-api`.
 **/
 @:native("WebTransportWriter") @:require(js_experimental_api, "WebTransportWriter is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WebTransportWriter extends WritableStreamDefaultWriter {
-	function atomicWrite(?chunk:Any):js.lib.Promise<Void>;
+	function atomicWrite(?chunk:Null<Any>):js.lib.Promise<Void>;
 	function commit():Void;
 }

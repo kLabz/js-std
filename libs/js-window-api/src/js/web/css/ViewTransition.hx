@@ -75,5 +75,5 @@ package js.web.css;
 		@see <https://developer.mozilla.org/docs/Web/API/ViewTransition/waitUntil>
 	**/
 	@:require(js_experimental_api, "ViewTransition.waitUntil is experimental (shipped in fewer than two engines); use -D js-experimental-api")
-	function waitUntil(promise:js.lib.Promise<Any>):Void;
+	function waitUntil(promise:js.lib.Promise<Null<Any>>):Void;
 }

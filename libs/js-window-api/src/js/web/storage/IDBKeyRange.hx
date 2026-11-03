@@ -37,13 +37,13 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lower>
 	**/
-	var lower(default, null) : Any;
+	var lower(default, null) : Null<Any>;
 	/**
 		The **`upper`** read-only property of the `IDBKeyRange` interface returns the upper bound of the key range.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upper>
 	**/
-	var upper(default, null) : Any;
+	var upper(default, null) : Null<Any>;
 	/**
 		The **`lowerOpen`** read-only property of the `IDBKeyRange` interface returns a boolean indicating whether the lower-bound value is included in the key range.
 		
@@ -61,29 +61,29 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/bound_static>
 	**/
-	static function bound(lower:Any, upper:Any, ?lowerOpen:Bool = false, ?upperOpen:Bool = false):IDBKeyRange;
+	static function bound(lower:Null<Any>, upper:Null<Any>, ?lowerOpen:Bool = false, ?upperOpen:Bool = false):IDBKeyRange;
 	/**
 		The `includes()` method of the `IDBKeyRange` interface returns a boolean indicating whether a specified key is inside the key range.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/includes>
 	**/
-	function includes(key:Any):Bool;
+	function includes(key:Null<Any>):Bool;
 	/**
 		The **`lowerBound()`** static method of the `IDBKeyRange` interface creates a new key range with only a lower bound. By default, it includes the lower endpoint value and is closed.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lowerBound_static>
 	**/
-	static function lowerBound(lower:Any, ?open:Bool = false):IDBKeyRange;
+	static function lowerBound(lower:Null<Any>, ?open:Bool = false):IDBKeyRange;
 	/**
 		The **`only()`** static method of the `IDBKeyRange` interface creates a new key range containing a single value.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/only_static>
 	**/
-	static function only(value:Any):IDBKeyRange;
+	static function only(value:Null<Any>):IDBKeyRange;
 	/**
 		The **`upperBound()`** static method of the `IDBKeyRange` interface creates a new upper-bound key range. By default, it includes the upper endpoint value and is closed.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upperBound_static>
 	**/
-	static function upperBound(upper:Any, ?open:Bool = false):IDBKeyRange;
+	static function upperBound(upper:Null<Any>, ?open:Bool = false):IDBKeyRange;
 }

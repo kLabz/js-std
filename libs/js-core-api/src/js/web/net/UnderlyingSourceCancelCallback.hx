@@ -24,4 +24,4 @@
 
 package js.web.net;
 
-typedef UnderlyingSourceCancelCallback = (?reason:Any) -> js.lib.Promise<Void>;
+typedef UnderlyingSourceCancelCallback = (?reason:Null<Any>) -> js.lib.Promise<Void>;

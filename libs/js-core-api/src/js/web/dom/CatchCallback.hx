@@ -24,4 +24,4 @@
 
 package js.web.dom;
 
-typedef CatchCallback = (value:Any) -> Any;
+typedef CatchCallback = (value:Null<Any>) -> Null<Any>;

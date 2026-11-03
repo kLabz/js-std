@@ -49,13 +49,13 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/key>
 	**/
-	var key(default, null) : Any;
+	var key(default, null) : Null<Any>;
 	/**
 		The **`primaryKey`** read-only property of the `IDBCursor` interface returns the cursor's current effective key. If the cursor is currently being iterated or has iterated outside its range, this is set to undefined. The cursor's primary key can be any data type.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/primaryKey>
 	**/
-	var primaryKey(default, null) : Any;
+	var primaryKey(default, null) : Null<Any>;
 	/**
 		The **`request`** read-only property of the `IDBCursor` interface returns the `IDBRequest` used to obtain the cursor.
 		
@@ -73,14 +73,14 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/continuePrimaryKey>
 	**/
-	function continuePrimaryKey(key:Any, primaryKey:Any):Void;
+	function continuePrimaryKey(key:Null<Any>, primaryKey:Null<Any>):Void;
 	/**
 		The **`continue()`** method of the `IDBCursor` interface advances the cursor to the next position along its direction, to the item whose key matches the optional key parameter. If no key is specified, the cursor advances to the immediate next position, based on its direction.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/continue>
 	**/
 	@:native("continue")
-	function continue_(?key:Any):Void;
+	function continue_(?key:Null<Any>):Void;
 	/**
 		The **`delete()`** method of the `IDBCursor` interface returns an `IDBRequest` object, and, in a separate thread, deletes the record at the cursor's position, without changing the cursor's position. Once the record is deleted, the cursor's value is set to null.
 		
@@ -92,5 +92,5 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/update>
 	**/
-	function update(value:Any):IDBRequest;
+	function update(value:Null<Any>):IDBRequest;
 }

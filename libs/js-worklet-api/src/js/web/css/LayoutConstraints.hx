@@ -36,5 +36,5 @@ package js.web.css;
 	var percentageBlockSize(default, null) : Float;
 	var blockFragmentationOffset(default, null) : Null<Float>;
 	var blockFragmentationType(default, null) : BlockFragmentationType;
-	var data(default, null) : Any;
+	var data(default, null) : Null<Any>;
 }

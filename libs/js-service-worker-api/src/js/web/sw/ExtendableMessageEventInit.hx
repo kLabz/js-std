@@ -29,7 +29,7 @@ typedef ExtendableMessageEventInit = ExtendableEventInit & {
 		Default: `null`
 	**/
 	@:optional
-	var data : Any;
+	var data : Null<Any>;
 	/**
 		Default: `""`
 	**/

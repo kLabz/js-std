@@ -24,4 +24,4 @@
 
 package js.web.html;
 
-typedef AutofillValueEntry = Array<Any>;
+typedef AutofillValueEntry = Array<Null<Any>>;

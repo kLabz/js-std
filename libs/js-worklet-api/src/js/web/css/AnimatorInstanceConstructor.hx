@@ -24,4 +24,4 @@
 
 package js.web.css;
 
-typedef AnimatorInstanceConstructor = (options:Any, ?state:Any) -> Any;
+typedef AnimatorInstanceConstructor = (options:Null<Any>, ?state:Null<Any>) -> Null<Any>;

@@ -49,7 +49,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStream/cancel>
 	**/
-	function cancel(?reason:Any):js.lib.Promise<Void>;
+	function cancel(?reason:Null<Any>):js.lib.Promise<Void>;
 	/**
 		The **`ReadableStream.from()`** static method returns a `ReadableStream` from a provided iterable or async iterable object.
 		
@@ -80,5 +80,5 @@ package js.web.net;
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStream/tee>
 	**/
 	function tee():Array<ReadableStream>;
-	function values(?options:ReadableStreamIteratorOptions):js.lib.Iterator.AsyncIterator<Any>;
+	function values(?options:ReadableStreamIteratorOptions):js.lib.Iterator.AsyncIterator<Null<Any>>;
 }

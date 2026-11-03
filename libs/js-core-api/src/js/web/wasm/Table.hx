@@ -38,23 +38,23 @@ package js.web.wasm;
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table/length>
 	**/
 	var length(default, null) : AddressValue;
-	function new(descriptor:TableDescriptor, ?value:Any):Void;
+	function new(descriptor:TableDescriptor, ?value:Null<Any>):Void;
 	/**
 		The **`get()`** prototype method of the [`WebAssembly.Table()`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Table) object retrieves the element stored at a given index.
 		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table/get>
 	**/
-	function get(index:AddressValue):Any;
+	function get(index:AddressValue):Null<Any>;
 	/**
 		The **`grow()`** prototype method of the [`WebAssembly.Table`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Table) object increases the size of the `Table` instance by a specified number of elements, filled with the provided value.
 		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table/grow>
 	**/
-	function grow(delta:AddressValue, ?value:Any):AddressValue;
+	function grow(delta:AddressValue, ?value:Null<Any>):AddressValue;
 	/**
 		The **`set()`** prototype method of the [`WebAssembly.Table`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Table) object mutates a reference stored at a given index to a different value.
 		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table/set>
 	**/
-	function set(index:AddressValue, ?value:Any):Void;
+	function set(index:AddressValue, ?value:Null<Any>):Void;
 }

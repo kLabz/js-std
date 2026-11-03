@@ -45,5 +45,5 @@ typedef LayoutConstraintsOptions = {
 	@:optional
 	var blockFragmentationType : BlockFragmentationType;
 	@:optional
-	var data : Any;
+	var data : Null<Any>;
 };

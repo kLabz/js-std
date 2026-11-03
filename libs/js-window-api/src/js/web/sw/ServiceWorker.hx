@@ -56,11 +56,11 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorker/postMessage>
 	**/
-	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
+	overload function postMessage(message:Null<Any>, transfer:Array<{ }>):Void;
 	/**
 		The **`postMessage()`** method of the `ServiceWorker` interface sends a message to the worker. The first parameter is the data to send to the worker. The data may be any JavaScript object which can be handled by the [structured clone algorithm](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm).
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorker/postMessage>
 	**/
-	overload function postMessage(message:Any, ?options:js.web.html.StructuredSerializeOptions):Void;
+	overload function postMessage(message:Null<Any>, ?options:js.web.html.StructuredSerializeOptions):Void;
 }

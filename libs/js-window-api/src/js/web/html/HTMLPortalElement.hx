@@ -33,5 +33,5 @@ package js.web.html;
 	var onmessage : EventHandler;
 	var onmessageerror : EventHandler;
 	function activate(?options:PortalActivateOptions):js.lib.Promise<Void>;
-	function postMessage(message:Any, ?options:StructuredSerializeOptions):Void;
+	function postMessage(message:Null<Any>, ?options:StructuredSerializeOptions):Void;
 }

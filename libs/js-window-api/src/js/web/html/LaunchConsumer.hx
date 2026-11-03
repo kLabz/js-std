@@ -24,4 +24,4 @@
 
 package js.web.html;
 
-typedef LaunchConsumer = (params:LaunchParams) -> Any;
+typedef LaunchConsumer = (params:LaunchParams) -> Null<Any>;

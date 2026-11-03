@@ -37,5 +37,5 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBCursorWithValue/value>
 	**/
-	var value(default, null) : Any;
+	var value(default, null) : Null<Any>;
 }

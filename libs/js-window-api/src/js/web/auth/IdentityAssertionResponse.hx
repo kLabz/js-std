@@ -26,7 +26,7 @@ package js.web.auth;
 
 typedef IdentityAssertionResponse = {
 	@:optional
-	var token : Any;
+	var token : Null<Any>;
 	@:optional
 	var continue_on : String;
 	@:optional

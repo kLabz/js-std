@@ -25,5 +25,5 @@
 package js.web.html;
 
 typedef NavigationUpdateCurrentEntryOptions = {
-	var state : Any;
+	var state : Null<Any>;
 };

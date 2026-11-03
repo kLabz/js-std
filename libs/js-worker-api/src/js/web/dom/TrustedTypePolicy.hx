@@ -43,17 +43,17 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/createHTML>
 	**/
-	function createHTML(input:String, arguments:haxe.Rest<Any>):TrustedHTML;
+	function createHTML(input:String, arguments:haxe.Rest<Null<Any>>):TrustedHTML;
 	/**
 		The **`createScript()`** method of the `TrustedTypePolicy` interface creates a `TrustedScript` object using a policy created by `TrustedTypePolicyFactory.createPolicy()`.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/createScript>
 	**/
-	function createScript(input:String, arguments:haxe.Rest<Any>):TrustedScript;
+	function createScript(input:String, arguments:haxe.Rest<Null<Any>>):TrustedScript;
 	/**
 		The **`createScriptURL()`** method of the `TrustedTypePolicy` interface creates a `TrustedScriptURL` object using a policy created by `TrustedTypePolicyFactory.createPolicy()`.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/createScriptURL>
 	**/
-	function createScriptURL(input:String, arguments:haxe.Rest<Any>):TrustedScriptURL;
+	function createScriptURL(input:String, arguments:haxe.Rest<Null<Any>>):TrustedScriptURL;
 }

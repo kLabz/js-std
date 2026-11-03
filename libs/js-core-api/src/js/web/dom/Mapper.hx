@@ -24,4 +24,4 @@
 
 package js.web.dom;
 
-typedef Mapper = (value:Any, index:Float) -> Any;
+typedef Mapper = (value:Null<Any>, index:Float) -> Null<Any>;

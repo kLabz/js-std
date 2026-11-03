@@ -57,5 +57,5 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/BroadcastChannel/postMessage>
 	**/
-	function postMessage(message:Any):Void;
+	function postMessage(message:Null<Any>):Void;
 }

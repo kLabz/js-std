@@ -24,4 +24,4 @@
 
 package js.web.html;
 
-typedef SchedulerPostTaskCallback = () -> Any;
+typedef SchedulerPostTaskCallback = () -> Null<Any>;

@@ -61,7 +61,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent/error>
 	**/
-	var error(default, null) : Any;
+	var error(default, null) : Null<Any>;
 	/**
 		The **`ErrorEvent()`** constructor creates a new `ErrorEvent` object.
 		

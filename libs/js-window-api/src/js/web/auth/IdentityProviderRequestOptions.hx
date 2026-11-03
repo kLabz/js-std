@@ -32,5 +32,5 @@ typedef IdentityProviderRequestOptions = IdentityProviderConfig & {
 	@:optional
 	var fields : Array<String>;
 	@:optional
-	var params : Any;
+	var params : Null<Any>;
 };

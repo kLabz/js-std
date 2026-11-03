@@ -2985,7 +2985,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getActiveUniformBlockParameter>
 	**/
-	function getActiveUniformBlockParameter(program:WebGLProgram, uniformBlockIndex:GLuint, pname:GLenum):Any;
+	function getActiveUniformBlockParameter(program:WebGLProgram, uniformBlockIndex:GLuint, pname:GLenum):Null<Any>;
 	/**
 		The **`WebGL2RenderingContext.getActiveUniforms()`** method of the [WebGL 2 API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) retrieves information about active uniforms within a `WebGLProgram`.
 		
@@ -2993,7 +2993,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getActiveUniforms>
 	**/
-	function getActiveUniforms(program:WebGLProgram, uniformIndices:Array<GLuint>, pname:GLenum):Any;
+	function getActiveUniforms(program:WebGLProgram, uniformIndices:Array<GLuint>, pname:GLenum):Null<Any>;
 	/**
 		From interface mixin WebGLRenderingContextBase
 		
@@ -3011,7 +3011,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getBufferParameter>
 	**/
-	function getBufferParameter(target:GLenum, pname:GLenum):Any;
+	function getBufferParameter(target:GLenum, pname:GLenum):Null<Any>;
 	/**
 		The **`WebGL2RenderingContext.getBufferSubData()`** method of the [WebGL 2 API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) reads data from a buffer binding point and writes them to an `ArrayBuffer` or `SharedArrayBuffer`.
 		
@@ -3051,7 +3051,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getFramebufferAttachmentParameter>
 	**/
-	function getFramebufferAttachmentParameter(target:GLenum, attachment:GLenum, pname:GLenum):Any;
+	function getFramebufferAttachmentParameter(target:GLenum, attachment:GLenum, pname:GLenum):Null<Any>;
 	/**
 		The **`WebGL2RenderingContext.getIndexedParameter()`** method of the [WebGL 2 API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns indexed information about a given `target`.
 		
@@ -3059,7 +3059,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getIndexedParameter>
 	**/
-	function getIndexedParameter(target:GLenum, index:GLuint):Any;
+	function getIndexedParameter(target:GLenum, index:GLuint):Null<Any>;
 	/**
 		The **`WebGL2RenderingContext.getInternalformatParameter()`** method of the [WebGL 2 API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns information about implementation-dependent support for internal formats.
 		
@@ -3067,13 +3067,13 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getInternalformatParameter>
 	**/
-	function getInternalformatParameter(target:GLenum, internalformat:GLenum, pname:GLenum):Any;
+	function getInternalformatParameter(target:GLenum, internalformat:GLenum, pname:GLenum):Null<Any>;
 	/**
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getParameter>
 	**/
-	function getParameter(pname:GLenum):Any;
+	function getParameter(pname:GLenum):Null<Any>;
 	/**
 		From interface mixin WebGLRenderingContextBase
 		
@@ -3085,7 +3085,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getProgramParameter>
 	**/
-	function getProgramParameter(program:WebGLProgram, pname:GLenum):Any;
+	function getProgramParameter(program:WebGLProgram, pname:GLenum):Null<Any>;
 	/**
 		The **`WebGL2RenderingContext.getQuery()`** method of the [WebGL 2 API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns the currently active `WebGLQuery` for the `target`, or [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null).
 		
@@ -3101,13 +3101,13 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getQueryParameter>
 	**/
-	function getQueryParameter(query:WebGLQuery, pname:GLenum):Any;
+	function getQueryParameter(query:WebGLQuery, pname:GLenum):Null<Any>;
 	/**
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getRenderbufferParameter>
 	**/
-	function getRenderbufferParameter(target:GLenum, pname:GLenum):Any;
+	function getRenderbufferParameter(target:GLenum, pname:GLenum):Null<Any>;
 	/**
 		The **`WebGL2RenderingContext.getSamplerParameter()`** method of the [WebGL 2 API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns parameter information of a `WebGLSampler` object.
 		
@@ -3115,7 +3115,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getSamplerParameter>
 	**/
-	function getSamplerParameter(sampler:WebGLSampler, pname:GLenum):Any;
+	function getSamplerParameter(sampler:WebGLSampler, pname:GLenum):Null<Any>;
 	/**
 		From interface mixin WebGLRenderingContextBase
 		
@@ -3127,7 +3127,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderParameter>
 	**/
-	function getShaderParameter(shader:WebGLShader, pname:GLenum):Any;
+	function getShaderParameter(shader:WebGLShader, pname:GLenum):Null<Any>;
 	/**
 		From interface mixin WebGLRenderingContextBase
 		
@@ -3153,13 +3153,13 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getSyncParameter>
 	**/
-	function getSyncParameter(sync:WebGLSync, pname:GLenum):Any;
+	function getSyncParameter(sync:WebGLSync, pname:GLenum):Null<Any>;
 	/**
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getTexParameter>
 	**/
-	function getTexParameter(target:GLenum, pname:GLenum):Any;
+	function getTexParameter(target:GLenum, pname:GLenum):Null<Any>;
 	/**
 		The **`WebGL2RenderingContext.getTransformFeedbackVarying()`** method of the [WebGL 2 API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns information about varying variables from `WebGLTransformFeedback` buffers.
 		
@@ -3173,7 +3173,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getUniform>
 	**/
-	function getUniform(program:WebGLProgram, location:WebGLUniformLocation):Any;
+	function getUniform(program:WebGLProgram, location:WebGLUniformLocation):Null<Any>;
 	/**
 		The **`WebGL2RenderingContext.getUniformBlockIndex()`** method of the [WebGL 2 API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) retrieves the index of a uniform block within a `WebGLProgram`.
 		
@@ -3201,7 +3201,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getVertexAttrib>
 	**/
-	function getVertexAttrib(index:GLuint, pname:GLenum):Any;
+	function getVertexAttrib(index:GLuint, pname:GLenum):Null<Any>;
 	/**
 		From interface mixin WebGLRenderingContextBase
 		

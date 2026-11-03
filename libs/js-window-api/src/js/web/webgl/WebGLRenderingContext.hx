@@ -1749,7 +1749,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getBufferParameter>
 	**/
-	function getBufferParameter(target:GLenum, pname:GLenum):Any;
+	function getBufferParameter(target:GLenum, pname:GLenum):Null<Any>;
 	/**
 		The **`WebGLRenderingContext.getContextAttributes()`** method returns a `WebGLContextAttributes` object that contains the actual context parameters. Might return [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null), if the context is lost.
 		
@@ -1781,7 +1781,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getFramebufferAttachmentParameter>
 	**/
-	function getFramebufferAttachmentParameter(target:GLenum, attachment:GLenum, pname:GLenum):Any;
+	function getFramebufferAttachmentParameter(target:GLenum, attachment:GLenum, pname:GLenum):Null<Any>;
 	/**
 		The **`WebGLRenderingContext.getParameter()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns a value for the passed parameter name.
 		
@@ -1789,7 +1789,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getParameter>
 	**/
-	function getParameter(pname:GLenum):Any;
+	function getParameter(pname:GLenum):Null<Any>;
 	/**
 		The **WebGLRenderingContext.getProgramInfoLog** returns the information log for the specified `WebGLProgram` object. It contains errors that occurred during failed linking or validation of `WebGLProgram` objects.
 		
@@ -1805,7 +1805,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getProgramParameter>
 	**/
-	function getProgramParameter(program:WebGLProgram, pname:GLenum):Any;
+	function getProgramParameter(program:WebGLProgram, pname:GLenum):Null<Any>;
 	/**
 		The **`WebGLRenderingContext.getRenderbufferParameter()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns information about the renderbuffer.
 		
@@ -1813,7 +1813,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getRenderbufferParameter>
 	**/
-	function getRenderbufferParameter(target:GLenum, pname:GLenum):Any;
+	function getRenderbufferParameter(target:GLenum, pname:GLenum):Null<Any>;
 	/**
 		The **WebGLRenderingContext.getShaderInfoLog** returns the information log for the specified `WebGLShader` object. It contains warnings, debugging and compile information.
 		
@@ -1829,7 +1829,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderParameter>
 	**/
-	function getShaderParameter(shader:WebGLShader, pname:GLenum):Any;
+	function getShaderParameter(shader:WebGLShader, pname:GLenum):Null<Any>;
 	/**
 		The **`WebGLRenderingContext.getShaderPrecisionFormat()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns a new `WebGLShaderPrecisionFormat` object describing the range and precision for the specified shader numeric format.
 		
@@ -1861,7 +1861,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getTexParameter>
 	**/
-	function getTexParameter(target:GLenum, pname:GLenum):Any;
+	function getTexParameter(target:GLenum, pname:GLenum):Null<Any>;
 	/**
 		The **`WebGLRenderingContext.getUniform()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns the value of a uniform variable at a given location.
 		
@@ -1869,7 +1869,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getUniform>
 	**/
-	function getUniform(program:WebGLProgram, location:WebGLUniformLocation):Any;
+	function getUniform(program:WebGLProgram, location:WebGLUniformLocation):Null<Any>;
 	/**
 		Part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API), the `WebGLRenderingContext` method **`getUniformLocation()`** returns the location of a specific **uniform** variable which is part of a given `WebGLProgram`.
 		
@@ -1885,7 +1885,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getVertexAttrib>
 	**/
-	function getVertexAttrib(index:GLuint, pname:GLenum):Any;
+	function getVertexAttrib(index:GLuint, pname:GLenum):Null<Any>;
 	/**
 		The **`WebGLRenderingContext.getVertexAttribOffset()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns the address of a specified vertex attribute.
 		

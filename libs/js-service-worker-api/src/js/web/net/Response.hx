@@ -145,7 +145,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Response/json_static>
 	**/
-	static overload function json(data:Any, ?init:ResponseInit):Response;
+	static overload function json(data:Null<Any>, ?init:ResponseInit):Response;
 	/**
 		The **`json()`** method of the `Response` interface takes a `Response` stream and reads it to completion. It returns a promise which resolves with the result of parsing the body text as `JSON`.
 		
@@ -153,7 +153,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Response/json>
 	**/
-	overload function json():js.lib.Promise<Any>;
+	overload function json():js.lib.Promise<Null<Any>>;
 	/**
 		The **`redirect()`** static method of the `Response` interface returns a `Response` resulting in a redirect to the specified URL.
 		

@@ -41,7 +41,7 @@ package js.web.auth;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IdentityCredential/token>
 	**/
-	var token(default, null) : Any;
+	var token(default, null) : Null<Any>;
 	/**
 		The **`isAutoSelected`** read-only property of the `IdentityCredential` interface indicates whether the federated sign-in flow was carried out using [auto-reauthentication](https://developer.mozilla.org/en-US/docs/Web/API/FedCM_API/RP_sign-in#auto-reauthentication) (i.e., without user mediation) or not.
 		

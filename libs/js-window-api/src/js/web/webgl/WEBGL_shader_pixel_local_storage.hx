@@ -52,7 +52,7 @@ package js.web.webgl;
 	function framebufferPixelLocalClearValueivWEBGL(plane:GLint, value:Int32List, ?srcOffset:Float = 0):Void;
 	function framebufferPixelLocalClearValueuivWEBGL(plane:GLint, value:Uint32List, ?srcOffset:Float = 0):Void;
 	function framebufferTexturePixelLocalStorageWEBGL(plane:GLint, texture:Null<WebGLTexture>, level:GLint, layer:GLint, usage:GLbitfield):Void;
-	function getFramebufferPixelLocalStorageParameterWEBGL(plane:GLint, pname:GLenum):Any;
+	function getFramebufferPixelLocalStorageParameterWEBGL(plane:GLint, pname:GLenum):Null<Any>;
 	function isCoherent():GLboolean;
 	function pixelLocalStorageBarrierWEBGL():Void;
 }

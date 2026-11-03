@@ -37,7 +37,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MessageEvent/data>
 	**/
-	var data(default, null) : Any;
+	var data(default, null) : Null<Any>;
 	/**
 		The **`origin`** read-only property of the `MessageEvent` interface is a string representing the origin of the message emitter.
 		
@@ -69,5 +69,5 @@ package js.web.html;
 	**/
 	function new(type:String, ?eventInitDict:MessageEventInit):Void;
 	@:deprecated
-	function initMessageEvent(type:String, ?bubbles:Bool = false, ?cancelable:Bool = false, ?data:Any = null, ?origin:String = "", ?lastEventId:String = "", ?source:Null<MessageEventSource> = null, ?ports:Array<MessagePort>):Void;
+	function initMessageEvent(type:String, ?bubbles:Bool = false, ?cancelable:Bool = false, ?data:Null<Any> = null, ?origin:String = "", ?lastEventId:String = "", ?source:Null<MessageEventSource> = null, ?ports:Array<MessagePort>):Void;
 }

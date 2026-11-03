@@ -24,4 +24,4 @@
 
 package js.web.storage;
 
-typedef LockGrantedCallback = (lock:Null<Lock>) -> js.lib.Promise<Any>;
+typedef LockGrantedCallback = (lock:Null<Lock>) -> js.lib.Promise<Null<Any>>;

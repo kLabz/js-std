@@ -53,7 +53,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBReader/cancel>
 	**/
-	function cancel(?reason:Any):js.lib.Promise<Void>;
+	function cancel(?reason:Null<Any>):js.lib.Promise<Void>;
 	/**
 		The **`read()`** method of the `ReadableStreamBYOBReader` interface is used to read data into a view on a user-supplied buffer from an associated [readable byte stream](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Using_readable_byte_streams). A request for data will be satisfied from the stream's internal queues if there is any data present. If the stream queues are empty, the request may be supplied as a zero-copy transfer from the underlying byte source.
 		

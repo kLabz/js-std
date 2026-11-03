@@ -26,5 +26,5 @@ package js.web.html;
 
 typedef PortalActivateOptions = StructuredSerializeOptions & {
 	@:optional
-	var data : Any;
+	var data : Null<Any>;
 };

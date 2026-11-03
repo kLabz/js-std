@@ -45,11 +45,11 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/LockManager/request>
 	**/
-	overload function request(name:String, callback:LockGrantedCallback):js.lib.Promise<Any>;
+	overload function request(name:String, callback:LockGrantedCallback):js.lib.Promise<Null<Any>>;
 	/**
 		The **`request()`** method of the `LockManager` interface requests a `Lock` object with parameters specifying its name and characteristics. The requested `Lock` is passed to a callback, while the function itself returns a `Promise` that resolves (or rejects) with the result of the callback after the lock is released, or rejects if the request is aborted.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/LockManager/request>
 	**/
-	overload function request(name:String, options:LockOptions, callback:LockGrantedCallback):js.lib.Promise<Any>;
+	overload function request(name:String, options:LockOptions, callback:LockGrantedCallback):js.lib.Promise<Null<Any>>;
 }

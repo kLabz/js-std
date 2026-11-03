@@ -57,19 +57,19 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/getContext>
 	**/
-	function getContext(contextId:String, ?options:Any = null):Null<js.web.canvas.RenderingContext>;
+	function getContext(contextId:String, ?options:Null<Any> = null):Null<js.web.canvas.RenderingContext>;
 	/**
 		The **`HTMLCanvasElement.toBlob()`** method creates a `Blob` object representing the image contained in the canvas. This file may be cached on the disk or stored in memory at the discretion of the user agent.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/toBlob>
 	**/
-	function toBlob(callback:BlobCallback, ?type:String = "image/png", ?quality:Any):Void;
+	function toBlob(callback:BlobCallback, ?type:String = "image/png", ?quality:Null<Any>):Void;
 	/**
 		The **`HTMLCanvasElement.toDataURL()`** method returns a [data URL](https://developer.mozilla.org/en-US/docs/Web/URI/Reference/Schemes/data) containing a representation of the image in the format specified by the `type` parameter.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/toDataURL>
 	**/
-	function toDataURL(?type:String = "image/png", ?quality:Any):String;
+	function toDataURL(?type:String = "image/png", ?quality:Null<Any>):String;
 	/**
 		The **`HTMLCanvasElement.transferControlToOffscreen()`** method transfers control to an `OffscreenCanvas` object, either on the main thread or on a worker.
 		

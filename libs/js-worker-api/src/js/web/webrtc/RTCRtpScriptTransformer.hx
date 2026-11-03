@@ -50,7 +50,7 @@ package js.web.webrtc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer/options>
 	**/
-	var options(default, null) : Any;
+	var options(default, null) : Null<Any>;
 	/**
 		The **`generateKeyFrame()`** method of the `RTCRtpScriptTransformer` interface causes a video encoder to generate a key frame.
 		

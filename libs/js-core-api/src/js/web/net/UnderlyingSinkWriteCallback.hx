@@ -24,4 +24,4 @@
 
 package js.web.net;
 
-typedef UnderlyingSinkWriteCallback = (chunk:Any, controller:WritableStreamDefaultController) -> js.lib.Promise<Void>;
+typedef UnderlyingSinkWriteCallback = (chunk:Null<Any>, controller:WritableStreamDefaultController) -> js.lib.Promise<Void>;

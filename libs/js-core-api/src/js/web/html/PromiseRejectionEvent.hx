@@ -43,7 +43,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PromiseRejectionEvent/reason>
 	**/
-	var reason(default, null) : Any;
+	var reason(default, null) : Null<Any>;
 	/**
 		The **`PromiseRejectionEvent()`** constructor returns a new `PromiseRejectionEvent` object, which represents events fired when a JavaScript `Promise` is rejected.
 		

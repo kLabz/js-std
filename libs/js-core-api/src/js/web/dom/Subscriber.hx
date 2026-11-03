@@ -63,11 +63,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Subscriber/error>
 	**/
-	function error(error:Any):Void;
+	function error(error:Null<Any>):Void;
 	/**
 		The **`next()`** method of the `Subscriber` interface sends a value to each observer of the subscription, invoking its `next` callback synchronously. These callbacks are supplied to `Observable.subscribe()`.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Subscriber/next>
 	**/
-	function next(value:Any):Void;
+	function next(value:Null<Any>):Void;
 }

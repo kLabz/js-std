@@ -51,13 +51,13 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MessagePort/postMessage>
 	**/
-	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
+	overload function postMessage(message:Null<Any>, transfer:Array<{ }>):Void;
 	/**
 		The **`postMessage()`** method of the `MessagePort` interface sends a message from the port, and optionally, transfers ownership of objects to other browsing contexts.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MessagePort/postMessage>
 	**/
-	overload function postMessage(message:Any, ?options:StructuredSerializeOptions):Void;
+	overload function postMessage(message:Null<Any>, ?options:StructuredSerializeOptions):Void;
 	/**
 		The **`start()`** method of the `MessagePort` interface starts the sending of messages queued on the port. This method is only needed when using `EventTarget.addEventListener`; it is implied when using `onmessage`.
 		

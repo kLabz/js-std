@@ -24,4 +24,4 @@
 
 package js.web.net;
 
-typedef TransformerStartCallback = (controller:TransformStreamDefaultController) -> Any;
+typedef TransformerStartCallback = (controller:TransformStreamDefaultController) -> Null<Any>;

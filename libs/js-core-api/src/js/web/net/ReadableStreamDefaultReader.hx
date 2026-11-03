@@ -53,7 +53,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultReader/cancel>
 	**/
-	function cancel(?reason:Any):js.lib.Promise<Void>;
+	function cancel(?reason:Null<Any>):js.lib.Promise<Void>;
 	/**
 		The **`read()`** method of the `ReadableStreamDefaultReader` interface returns a `Promise` providing access to the next chunk in the stream's internal queue.
 		

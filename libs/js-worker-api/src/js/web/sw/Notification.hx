@@ -135,7 +135,7 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Notification/data>
 	**/
-	var data(default, null) : Any;
+	var data(default, null) : Null<Any>;
 	/**
 		The **`actions`** read-only property of the `Notification` interface provides the actions available for users to select when interacting with the notification.
 		

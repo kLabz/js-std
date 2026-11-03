@@ -34,7 +34,7 @@ typedef Transformer = {
 	@:optional
 	var cancel : TransformerCancelCallback;
 	@:optional
-	var readableType : Any;
+	var readableType : Null<Any>;
 	@:optional
-	var writableType : Any;
+	var writableType : Null<Any>;
 };

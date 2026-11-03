@@ -24,4 +24,4 @@
 
 package js.web.dom;
 
-typedef Predicate = (value:Any, index:Float) -> Bool;
+typedef Predicate = (value:Null<Any>, index:Float) -> Bool;

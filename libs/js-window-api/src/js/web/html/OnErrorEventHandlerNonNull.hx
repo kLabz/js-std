@@ -24,4 +24,4 @@
 
 package js.web.html;
 
-typedef OnErrorEventHandlerNonNull = (event:haxe.extern.EitherType<js.web.dom.Event, String>, ?source:String, ?lineno:Int, ?colno:Int, ?error:Any) -> Any;
+typedef OnErrorEventHandlerNonNull = (event:haxe.extern.EitherType<js.web.dom.Event, String>, ?source:String, ?lineno:Int, ?colno:Int, ?error:Null<Any>) -> Null<Any>;

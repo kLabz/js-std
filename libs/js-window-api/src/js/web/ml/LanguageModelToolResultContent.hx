@@ -26,5 +26,5 @@ package js.web.ml;
 
 typedef LanguageModelToolResultContent = {
 	var type : LanguageModelToolResultType;
-	var value : Any;
+	var value : Null<Any>;
 };

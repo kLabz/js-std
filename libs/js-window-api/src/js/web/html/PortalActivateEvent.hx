@@ -28,7 +28,7 @@ package js.web.html;
 	Experimental: requires `-D js-experimental-api`.
 **/
 @:native("PortalActivateEvent") @:require(js_experimental_api, "PortalActivateEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PortalActivateEvent extends js.web.dom.Event {
-	var data(default, null) : Any;
+	var data(default, null) : Null<Any>;
 	function new(type:String, ?eventInitDict:PortalActivateEventInit):Void;
 	function adoptPredecessor():HTMLPortalElement;
 }

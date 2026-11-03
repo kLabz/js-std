@@ -74,7 +74,7 @@ typedef NotificationOptions = {
 		Default: `null`
 	**/
 	@:optional
-	var data : Any;
+	var data : Null<Any>;
 	/**
 		Default: `[]`
 	**/

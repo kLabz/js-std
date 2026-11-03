@@ -207,7 +207,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Request/json>
 	**/
-	function json():js.lib.Promise<Any>;
+	function json():js.lib.Promise<Null<Any>>;
 	/**
 		The **`text()`** method of the `Request` interface reads the request body and returns it as a promise that resolves with a `String`. The response is _always_ decoded using UTF-8.
 		

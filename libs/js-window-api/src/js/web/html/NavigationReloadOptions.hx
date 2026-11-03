@@ -26,5 +26,5 @@ package js.web.html;
 
 typedef NavigationReloadOptions = NavigationOptions & {
 	@:optional
-	var state : Any;
+	var state : Null<Any>;
 };

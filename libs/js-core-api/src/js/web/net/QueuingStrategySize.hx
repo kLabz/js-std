@@ -24,4 +24,4 @@
 
 package js.web.net;
 
-typedef QueuingStrategySize = (chunk:Any) -> Float;
+typedef QueuingStrategySize = (chunk:Null<Any>) -> Float;

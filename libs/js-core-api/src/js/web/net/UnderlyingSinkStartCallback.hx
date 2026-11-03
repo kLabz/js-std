@@ -24,4 +24,4 @@
 
 package js.web.net;
 
-typedef UnderlyingSinkStartCallback = (controller:WritableStreamDefaultController) -> Any;
+typedef UnderlyingSinkStartCallback = (controller:WritableStreamDefaultController) -> Null<Any>;

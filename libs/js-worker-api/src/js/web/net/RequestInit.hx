@@ -54,7 +54,7 @@ typedef RequestInit = {
 	@:optional
 	var priority : RequestPriority;
 	@:optional
-	var window : Any;
+	var window : Null<Any>;
 	@:optional
 	var targetAddressSpace : IPAddressSpace;
 	@:optional

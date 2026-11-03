@@ -43,19 +43,19 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/createHTML>
 	**/
-	function createHTML(input:String, arguments:haxe.Rest<Any>):TrustedHTML;
+	function createHTML(input:String, arguments:haxe.Rest<Null<Any>>):TrustedHTML;
 	@:require(js_experimental_api, "TrustedTypePolicy.createParserOptions is experimental (shipped in fewer than two engines); use -D js-experimental-api")
-	function createParserOptions(?options:js.web.html.SetHTMLUnsafeOptions, arguments:haxe.Rest<Any>):TrustedHTMLParserOptions;
+	function createParserOptions(?options:js.web.html.SetHTMLUnsafeOptions, arguments:haxe.Rest<Null<Any>>):TrustedHTMLParserOptions;
 	/**
 		The **`createScript()`** method of the `TrustedTypePolicy` interface creates a `TrustedScript` object using a policy created by `TrustedTypePolicyFactory.createPolicy()`.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/createScript>
 	**/
-	function createScript(input:String, arguments:haxe.Rest<Any>):TrustedScript;
+	function createScript(input:String, arguments:haxe.Rest<Null<Any>>):TrustedScript;
 	/**
 		The **`createScriptURL()`** method of the `TrustedTypePolicy` interface creates a `TrustedScriptURL` object using a policy created by `TrustedTypePolicyFactory.createPolicy()`.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/createScriptURL>
 	**/
-	function createScriptURL(input:String, arguments:haxe.Rest<Any>):TrustedScriptURL;
+	function createScriptURL(input:String, arguments:haxe.Rest<Null<Any>>):TrustedScriptURL;
 }

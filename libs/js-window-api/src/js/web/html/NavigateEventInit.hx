@@ -58,7 +58,7 @@ typedef NavigateEventInit = js.web.dom.EventInit & {
 	@:optional
 	var downloadRequest : Null<String>;
 	@:optional
-	var info : Any;
+	var info : Null<Any>;
 	/**
 		Default: `false`
 	**/

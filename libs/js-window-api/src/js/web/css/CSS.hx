@@ -117,7 +117,7 @@ package js.web.css;
 		@see <https://developer.mozilla.org/docs/Web/API/CSS/factory_functions_static>
 	**/
 	static function dvw(value:Float):CSSUnitValue;
-	static var elementSources(default, null) : Any;
+	static var elementSources(default, null) : Null<Any>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSS/factory_functions_static>
 	**/

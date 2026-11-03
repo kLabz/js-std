@@ -37,7 +37,7 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/data>
 	**/
-	var data(default, null) : Any;
+	var data(default, null) : Null<Any>;
 	/**
 		The **`origin`** read-only property of the `ExtendableMessageEvent` interface returns the origin of the `Client` that sent the message.
 		

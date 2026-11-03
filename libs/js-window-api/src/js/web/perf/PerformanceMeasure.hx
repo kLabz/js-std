@@ -37,5 +37,5 @@ package js.web.perf;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceMeasure/detail>
 	**/
-	var detail(default, null) : Any;
+	var detail(default, null) : Null<Any>;
 }

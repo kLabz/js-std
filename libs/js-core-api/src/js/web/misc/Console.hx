@@ -37,7 +37,7 @@ package js.web.misc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/console/assert_static>
 	**/
-	static function assert(?condition:Bool = false, data:haxe.Rest<Any>):Void;
+	static function assert(?condition:Bool = false, data:haxe.Rest<Null<Any>>):Void;
 	/**
 		The **`console.clear()`** static method clears the console if possible.
 		
@@ -61,37 +61,37 @@ package js.web.misc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/console/debug_static>
 	**/
-	static function debug(data:haxe.Rest<Any>):Void;
+	static function debug(data:haxe.Rest<Null<Any>>):Void;
 	/**
 		The **`console.dir()`** static method displays a list of the properties of the specified JavaScript object. In browser consoles, the output is presented as a hierarchical listing with disclosure triangles that let you see the contents of child objects.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/console/dir_static>
 	**/
-	static function dir(?item:Any, ?options:Null<{ }>):Void;
+	static function dir(?item:Null<Any>, ?options:Null<{ }>):Void;
 	/**
 		The **`console.dirxml()`** static method displays an interactive tree of the descendant elements of the specified XML/HTML element. If it is not possible to display as an element the JavaScript Object view is shown instead. The output is presented as a hierarchical listing of expandable nodes that let you see the contents of child nodes.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/console/dirxml_static>
 	**/
-	static function dirxml(data:haxe.Rest<Any>):Void;
+	static function dirxml(data:haxe.Rest<Null<Any>>):Void;
 	/**
 		The **`console.error()`** static method outputs a message to the console at the "error" log level. The message is only displayed to the user if the console is configured to display error output. In most cases, the log level is configured within the console UI. The message may be formatted as an error, with red colors and call stack information.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/console/error_static>
 	**/
-	static function error(data:haxe.Rest<Any>):Void;
+	static function error(data:haxe.Rest<Null<Any>>):Void;
 	/**
 		The **`console.group()`** static method creates a new inline group in the [Web console](https://firefox-source-docs.mozilla.org/devtools-user/web_console/index.html) log, causing any subsequent console messages to be indented by an additional level, until `console.groupEnd()` is called.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/console/group_static>
 	**/
-	static function group(data:haxe.Rest<Any>):Void;
+	static function group(data:haxe.Rest<Null<Any>>):Void;
 	/**
 		The **`console.groupCollapsed()`** static method creates a new inline group in the console. Unlike `console.group()`, however, the new group is created collapsed. The user will need to use the disclosure button next to it to expand it, revealing the entries created in the group.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/console/groupCollapsed_static>
 	**/
-	static function groupCollapsed(data:haxe.Rest<Any>):Void;
+	static function groupCollapsed(data:haxe.Rest<Null<Any>>):Void;
 	/**
 		The **`console.groupEnd()`** static method exits the current inline group in the console. See [Using groups in the console](https://developer.mozilla.org/en-US/docs/Web/API/console#using_groups_in_the_console) in the `console` documentation for details and examples.
 		
@@ -103,19 +103,19 @@ package js.web.misc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/console/info_static>
 	**/
-	static function info(data:haxe.Rest<Any>):Void;
+	static function info(data:haxe.Rest<Null<Any>>):Void;
 	/**
 		The **`console.log()`** static method outputs a message to the console.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/console/log_static>
 	**/
-	static function log(data:haxe.Rest<Any>):Void;
+	static function log(data:haxe.Rest<Null<Any>>):Void;
 	/**
 		The **`console.table()`** static method displays tabular data as a table.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/console/table_static>
 	**/
-	static function table(?tabularData:Any, ?properties:Array<String>):Void;
+	static function table(?tabularData:Null<Any>, ?properties:Array<String>):Void;
 	/**
 		The **`console.time()`** static method starts a timer you can use to track how long an operation takes. You give each timer a unique name, and may have up to 10,000 timers running on a given page. When you call `console.timeEnd()` with the same name, the browser will output the time, in milliseconds, that elapsed since the timer was started.
 		
@@ -133,17 +133,17 @@ package js.web.misc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/console/timeLog_static>
 	**/
-	static function timeLog(?label:String = "default", data:haxe.Rest<Any>):Void;
+	static function timeLog(?label:String = "default", data:haxe.Rest<Null<Any>>):Void;
 	/**
 		The **`console.trace()`** static method outputs a stack trace to the console.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/console/trace_static>
 	**/
-	static function trace(data:haxe.Rest<Any>):Void;
+	static function trace(data:haxe.Rest<Null<Any>>):Void;
 	/**
 		The **`console.warn()`** static method outputs a warning message to the console at the "warning" log level. The message is only displayed to the user if the console is configured to display warning output. In most cases, the log level is configured within the console UI. The message may receive special formatting, such as yellow colors and a warning icon.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/console/warn_static>
 	**/
-	static function warn(data:haxe.Rest<Any>):Void;
+	static function warn(data:haxe.Rest<Null<Any>>):Void;
 }

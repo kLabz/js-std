@@ -39,7 +39,7 @@ package js.web.media;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DataCue/value>
 	**/
-	var value : Any;
+	var value : Null<Any>;
 	/**
 		The **`type`** read-only property of the `DataCue` interface returns a string identifying the type or schema of the data stored in the cue's `value` property. This is typically a reverse-domain notation string (e.g., `"org.id3"`, `"com.apple.itunes"`) that allows applications to interpret the cue's data payload correctly.
 		
@@ -51,5 +51,5 @@ package js.web.media;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DataCue/DataCue>
 	**/
-	function new(startTime:Float, endTime:Float, value:Any, ?type:String):Void;
+	function new(startTime:Float, endTime:Float, value:Null<Any>, ?type:String):Void;
 }

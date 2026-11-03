@@ -24,4 +24,4 @@
 
 package js.web.dom;
 
-typedef Visitor = (value:Any, index:Float) -> Void;
+typedef Visitor = (value:Null<Any>, index:Float) -> Void;

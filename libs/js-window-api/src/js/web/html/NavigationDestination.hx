@@ -67,5 +67,5 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/NavigationDestination/getState>
 	**/
-	function getState():Any;
+	function getState():Null<Any>;
 }

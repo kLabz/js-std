@@ -37,7 +37,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Scheduler/postTask>
 	**/
-	function postTask(callback:SchedulerPostTaskCallback, ?options:SchedulerPostTaskOptions):js.lib.Promise<Any>;
+	function postTask(callback:SchedulerPostTaskCallback, ?options:SchedulerPostTaskOptions):js.lib.Promise<Null<Any>>;
 	/**
 		The **`yield()`** method of the `Scheduler` interface is used for yielding to the [main thread](https://developer.mozilla.org/en-US/docs/Glossary/Main_thread) during a task and continuing execution later, with the continuation scheduled as a prioritized task (see the [Prioritized Task Scheduling API](https://developer.mozilla.org/en-US/docs/Web/API/Prioritized_Task_Scheduling_API) for more information). This allows long-running work to be broken up so the browser stays responsive.
 		

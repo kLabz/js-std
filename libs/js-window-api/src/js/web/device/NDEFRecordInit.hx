@@ -35,5 +35,5 @@ typedef NDEFRecordInit = {
 	@:optional
 	var lang : String;
 	@:optional
-	var data : Any;
+	var data : Null<Any>;
 };

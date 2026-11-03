@@ -24,4 +24,4 @@
 
 package js.web.net;
 
-typedef TransformerTransformCallback = (chunk:Any, controller:TransformStreamDefaultController) -> js.lib.Promise<Void>;
+typedef TransformerTransformCallback = (chunk:Null<Any>, controller:TransformStreamDefaultController) -> js.lib.Promise<Void>;

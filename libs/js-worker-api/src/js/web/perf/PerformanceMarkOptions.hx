@@ -26,7 +26,7 @@ package js.web.perf;
 
 typedef PerformanceMarkOptions = {
 	@:optional
-	var detail : Any;
+	var detail : Null<Any>;
 	@:optional
 	var startTime : DOMHighResTimeStamp;
 };

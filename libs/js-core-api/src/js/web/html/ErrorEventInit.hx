@@ -46,5 +46,5 @@ typedef ErrorEventInit = js.web.dom.EventInit & {
 	@:optional
 	var colno : Int;
 	@:optional
-	var error : Any;
+	var error : Null<Any>;
 };

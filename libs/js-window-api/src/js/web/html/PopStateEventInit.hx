@@ -29,7 +29,7 @@ typedef PopStateEventInit = js.web.dom.EventInit & {
 		Default: `null`
 	**/
 	@:optional
-	var state : Any;
+	var state : Null<Any>;
 	/**
 		Default: `false`
 	**/

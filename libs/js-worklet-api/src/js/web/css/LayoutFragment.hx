@@ -32,6 +32,6 @@ package js.web.css;
 	var blockSize(default, null) : Float;
 	var inlineOffset : Float;
 	var blockOffset : Float;
-	var data(default, null) : Any;
+	var data(default, null) : Null<Any>;
 	var breakToken(default, null) : Null<ChildBreakToken>;
 }

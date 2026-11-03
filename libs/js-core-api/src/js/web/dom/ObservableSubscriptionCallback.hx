@@ -24,4 +24,4 @@
 
 package js.web.dom;
 
-typedef ObservableSubscriptionCallback = (value:Any) -> Void;
+typedef ObservableSubscriptionCallback = (value:Null<Any>) -> Void;

@@ -29,7 +29,7 @@ typedef IDBGetAllOptions = {
 		Default: `null`
 	**/
 	@:optional
-	var query : Any;
+	var query : Null<Any>;
 	@:optional
 	var count : Int;
 	/**

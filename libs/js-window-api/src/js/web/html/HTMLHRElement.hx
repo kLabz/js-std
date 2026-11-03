@@ -24,25 +24,33 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLHRElement>
+**/
 @:native("HTMLHRElement") extern class HTMLHRElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var align : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var color : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var noShade : Bool;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var size : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var width : String;
 }

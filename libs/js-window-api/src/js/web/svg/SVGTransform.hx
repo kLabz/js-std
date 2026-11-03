@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGTransform>
+**/
 @:native("SVGTransform") extern class SVGTransform {
 	static inline var SVG_TRANSFORM_UNKNOWN : Int = 0;
 	static inline var SVG_TRANSFORM_MATRIX : Int = 1;
@@ -32,13 +35,40 @@ package js.web.svg;
 	static inline var SVG_TRANSFORM_ROTATE : Int = 4;
 	static inline var SVG_TRANSFORM_SKEWX : Int = 5;
 	static inline var SVG_TRANSFORM_SKEWY : Int = 6;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransform/type>
+	**/
 	var type(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransform/matrix>
+	**/
 	var matrix(default, null) : js.web.dom.SVGMatrix;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransform/angle>
+	**/
 	var angle(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransform/setMatrix>
+	**/
 	function setMatrix(?matrix:js.web.dom.DOMMatrix2DInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransform/setRotate>
+	**/
 	function setRotate(angle:Float, cx:Float, cy:Float):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransform/setScale>
+	**/
 	function setScale(sx:Float, sy:Float):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransform/setSkewX>
+	**/
 	function setSkewX(angle:Float):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransform/setSkewY>
+	**/
 	function setSkewY(angle:Float):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransform/setTranslate>
+	**/
 	function setTranslate(tx:Float, ty:Float):Void;
 }

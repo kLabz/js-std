@@ -24,6 +24,9 @@
 
 package js.web.webgl;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WebGLFramebuffer>
+**/
 @:native("WebGLFramebuffer") extern class WebGLFramebuffer extends WebGLObject {
 
 }

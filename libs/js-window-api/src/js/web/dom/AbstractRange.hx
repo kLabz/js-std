@@ -24,10 +24,28 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AbstractRange>
+**/
 @:native("AbstractRange") extern class AbstractRange {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AbstractRange/startContainer>
+	**/
 	var startContainer(default, null) : Node;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AbstractRange/startOffset>
+	**/
 	var startOffset(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AbstractRange/endContainer>
+	**/
 	var endContainer(default, null) : Node;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AbstractRange/endOffset>
+	**/
 	var endOffset(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AbstractRange/collapsed>
+	**/
 	var collapsed(default, null) : Bool;
 }

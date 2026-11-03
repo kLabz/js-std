@@ -26,9 +26,20 @@ package js.web.storage;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/LockManager>
 **/
 @:native("LockManager") extern class LockManager {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LockManager/query>
+	**/
 	function query():js.lib.Promise<LockManagerSnapshot>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LockManager/request>
+	**/
 	overload function request(name:String, callback:LockGrantedCallback):js.lib.Promise<Any>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LockManager/request>
+	**/
 	overload function request(name:String, options:LockOptions, callback:LockGrantedCallback):js.lib.Promise<Any>;
 }

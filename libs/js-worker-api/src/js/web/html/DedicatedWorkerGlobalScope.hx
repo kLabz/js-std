@@ -26,8 +26,13 @@ package js.web.html;
 
 /**
 	Unhandled extended attribute Global
+	
+	@see <https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope>
 **/
 @:native("DedicatedWorkerGlobalScope") extern class DedicatedWorkerGlobalScope extends WorkerGlobalScope {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/name>
+	**/
 	var name(default, null) : String;
 	/**
 		From interface mixin MessageEventTarget
@@ -43,13 +48,26 @@ package js.web.html;
 	var onrtctransform : EventHandler;
 	/**
 		From interface mixin AnimationFrameProvider
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/cancelAnimationFrame>
 	**/
 	function cancelAnimationFrame(handle:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/postMessage>
+	**/
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/postMessage>
+	**/
 	overload function postMessage(message:Any, ?options:StructuredSerializeOptions):Void;
 	/**
 		From interface mixin AnimationFrameProvider
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/requestAnimationFrame>
 	**/
 	function requestAnimationFrame(callback:FrameRequestCallback):Int;
 }

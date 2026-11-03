@@ -24,9 +24,24 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ToggleEvent>
+**/
 @:native("ToggleEvent") extern class ToggleEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ToggleEvent/oldState>
+	**/
 	var oldState(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ToggleEvent/newState>
+	**/
 	var newState(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ToggleEvent/source>
+	**/
 	var source(default, null) : Null<js.web.dom.Element>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ToggleEvent/ToggleEvent>
+	**/
 	function new(type:String, ?eventInitDict:ToggleEventInit):Void;
 }

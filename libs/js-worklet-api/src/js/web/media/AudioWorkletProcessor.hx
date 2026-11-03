@@ -24,7 +24,16 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletProcessor>
+**/
 @:native("AudioWorkletProcessor") extern class AudioWorkletProcessor {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletProcessor/port>
+	**/
 	var port(default, null) : js.web.html.MessagePort;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletProcessor/AudioWorkletProcessor>
+	**/
 	function new():Void;
 }

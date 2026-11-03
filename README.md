@@ -70,6 +70,6 @@ haxe build.hxml
 node bin/index.js
 ```
 
-Bumping `@webref/idl` in `generator/package.json` and regenerating updates all libraries.
+MDN links and deprecation come from [`@mdn/browser-compat-data`](https://github.com/mdn/browser-compat-data). Bumping `@webref/idl` or `@mdn/browser-compat-data` in `generator/package.json` and regenerating updates all libraries.
 
 `./check.sh` typechecks every generated type of each library and must pass before committing generated output.

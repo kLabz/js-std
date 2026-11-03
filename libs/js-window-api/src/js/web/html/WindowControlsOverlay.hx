@@ -24,8 +24,17 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlay>
+**/
 @:native("WindowControlsOverlay") extern class WindowControlsOverlay extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlay/visible>
+	**/
 	var visible(default, null) : Bool;
 	var ongeometrychange : EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlay/getTitlebarAreaRect>
+	**/
 	function getTitlebarAreaRect():js.web.dom.DOMRect;
 }

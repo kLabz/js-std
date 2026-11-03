@@ -26,12 +26,29 @@ package js.web.media;
 
 /**
 	Unhandled extended attribute Global
+	
+	@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletGlobalScope>
 **/
 @:native("AudioWorkletGlobalScope") extern class AudioWorkletGlobalScope extends js.web.html.WorkletGlobalScope {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletGlobalScope/currentFrame>
+	**/
 	var currentFrame(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletGlobalScope/currentTime>
+	**/
 	var currentTime(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletGlobalScope/sampleRate>
+	**/
 	var sampleRate(default, null) : Float;
 	var renderQuantumSize(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletGlobalScope/port>
+	**/
 	var port(default, null) : js.web.html.MessagePort;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletGlobalScope/registerProcessor>
+	**/
 	function registerProcessor(name:String, processorCtor:AudioWorkletProcessorConstructor):Void;
 }

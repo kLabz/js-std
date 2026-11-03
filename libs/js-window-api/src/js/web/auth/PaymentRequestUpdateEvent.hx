@@ -26,8 +26,16 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestUpdateEvent>
 **/
 @:native("PaymentRequestUpdateEvent") extern class PaymentRequestUpdateEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestUpdateEvent/PaymentRequestUpdateEvent>
+	**/
 	function new(type:String, ?eventInitDict:PaymentRequestUpdateEventInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestUpdateEvent/updateWith>
+	**/
 	function updateWith(detailsPromise:js.lib.Promise<PaymentDetailsUpdate>):Void;
 }

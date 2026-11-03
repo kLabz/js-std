@@ -24,9 +24,24 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ReportingObserver>
+**/
 @:native("ReportingObserver") extern class ReportingObserver {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReportingObserver/ReportingObserver>
+	**/
 	function new(callback:ReportingObserverCallback, ?options:ReportingObserverOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReportingObserver/disconnect>
+	**/
 	function disconnect():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReportingObserver/observe>
+	**/
 	function observe():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReportingObserver/takeRecords>
+	**/
 	function takeRecords():ReportList;
 }

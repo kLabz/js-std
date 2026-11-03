@@ -26,9 +26,20 @@ package js.web.storage;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/CookieChangeEvent>
 **/
 @:native("CookieChangeEvent") extern class CookieChangeEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CookieChangeEvent/changed>
+	**/
 	var changed(default, null) : Array<CookieListItem>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CookieChangeEvent/deleted>
+	**/
 	var deleted(default, null) : Array<CookieListItem>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CookieChangeEvent/CookieChangeEvent>
+	**/
 	function new(type:String, ?eventInitDict:CookieChangeEventInit):Void;
 }

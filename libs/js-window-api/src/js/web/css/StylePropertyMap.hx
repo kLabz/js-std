@@ -24,9 +24,24 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMap>
+**/
 @:native("StylePropertyMap") extern class StylePropertyMap extends StylePropertyMapReadOnly {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMap/append>
+	**/
 	function append(property:String, values:haxe.Rest<haxe.extern.EitherType<CSSStyleValue, String>>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMap/clear>
+	**/
 	function clear():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMap/delete>
+	**/
 	function delete(property:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMap/set>
+	**/
 	function set(property:String, values:haxe.Rest<haxe.extern.EitherType<CSSStyleValue, String>>):Void;
 }

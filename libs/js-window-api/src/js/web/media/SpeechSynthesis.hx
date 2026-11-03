@@ -24,14 +24,41 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesis>
+**/
 @:native("SpeechSynthesis") extern class SpeechSynthesis extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesis/pending>
+	**/
 	var pending(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesis/speaking>
+	**/
 	var speaking(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesis/paused>
+	**/
 	var paused(default, null) : Bool;
 	var onvoiceschanged : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesis/cancel>
+	**/
 	function cancel():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesis/getVoices>
+	**/
 	function getVoices():Array<SpeechSynthesisVoice>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesis/pause>
+	**/
 	function pause():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesis/resume>
+	**/
 	function resume():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesis/speak>
+	**/
 	function speak(utterance:SpeechSynthesisUtterance):Void;
 }

@@ -24,11 +24,32 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/VideoColorSpace>
+**/
 @:native("VideoColorSpace") extern class VideoColorSpace {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoColorSpace/primaries>
+	**/
 	var primaries(default, null) : Null<VideoColorPrimaries>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoColorSpace/transfer>
+	**/
 	var transfer(default, null) : Null<VideoTransferCharacteristics>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoColorSpace/matrix>
+	**/
 	var matrix(default, null) : Null<VideoMatrixCoefficients>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoColorSpace/fullRange>
+	**/
 	var fullRange(default, null) : Null<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoColorSpace/VideoColorSpace>
+	**/
 	function new(?init:VideoColorSpaceInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoColorSpace/toJSON>
+	**/
 	function toJSON():VideoColorSpaceInit;
 }

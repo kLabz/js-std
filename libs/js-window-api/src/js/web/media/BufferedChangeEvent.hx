@@ -24,8 +24,20 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent>
+**/
 @:native("BufferedChangeEvent") extern class BufferedChangeEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent/addedRanges>
+	**/
 	var addedRanges(default, null) : js.web.html.TimeRanges;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent/removedRanges>
+	**/
 	var removedRanges(default, null) : js.web.html.TimeRanges;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent/BufferedChangeEvent>
+	**/
 	function new(type:String, ?eventInitDict:BufferedChangeEventInit):Void;
 }

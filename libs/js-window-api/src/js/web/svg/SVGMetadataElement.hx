@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGMetadataElement>
+**/
 @:native("SVGMetadataElement") extern class SVGMetadataElement extends SVGElement {
 
 }

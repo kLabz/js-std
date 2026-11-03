@@ -24,14 +24,41 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry>
+**/
 @:native("IntersectionObserverEntry") extern class IntersectionObserverEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/time>
+	**/
 	var time(default, null) : js.web.perf.DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/rootBounds>
+	**/
 	var rootBounds(default, null) : Null<DOMRectReadOnly>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/boundingClientRect>
+	**/
 	var boundingClientRect(default, null) : DOMRectReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/intersectionRect>
+	**/
 	var intersectionRect(default, null) : DOMRectReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/isIntersecting>
+	**/
 	var isIntersecting(default, null) : Bool;
 	var isVisible(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/intersectionRatio>
+	**/
 	var intersectionRatio(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/target>
+	**/
 	var target(default, null) : Element;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/IntersectionObserverEntry>
+	**/
 	function new(intersectionObserverEntryInit:IntersectionObserverEntryInit):Void;
 }

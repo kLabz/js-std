@@ -24,6 +24,9 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSFontFaceDescriptors>
+**/
 @:native("CSSFontFaceDescriptors") extern class CSSFontFaceDescriptors extends CSSStyleDeclaration {
 	var src : String;
 	var fontFamily : String;

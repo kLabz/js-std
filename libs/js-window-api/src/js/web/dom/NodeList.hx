@@ -24,11 +24,32 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NodeList>
+**/
 @:native("NodeList") extern class NodeList implements ArrayAccess<Null<Node>> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NodeList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NodeList/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<Int, Node>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NodeList/forEach>
+	**/
 	function forEach(callback:(value:Node, key:Int, parent:NodeList) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NodeList/item>
+	**/
 	function item(index:Int):Null<Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NodeList/keys>
+	**/
 	function keys():js.lib.Iterator<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NodeList/values>
+	**/
 	function values():js.lib.Iterator<Node>;
 }

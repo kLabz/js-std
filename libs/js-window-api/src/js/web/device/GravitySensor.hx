@@ -26,7 +26,12 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GravitySensor>
 **/
 @:native("GravitySensor") extern class GravitySensor extends Accelerometer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GravitySensor/GravitySensor>
+	**/
 	function new(?options:AccelerometerSensorOptions):Void;
 }

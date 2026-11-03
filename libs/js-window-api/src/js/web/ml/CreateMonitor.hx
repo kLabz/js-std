@@ -26,6 +26,8 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/CreateMonitor>
 **/
 @:native("CreateMonitor") extern class CreateMonitor extends js.web.dom.EventTarget {
 	var ondownloadprogress : js.web.html.EventHandler;

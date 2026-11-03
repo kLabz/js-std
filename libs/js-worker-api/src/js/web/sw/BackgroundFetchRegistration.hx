@@ -24,17 +24,53 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration>
+**/
 @:native("BackgroundFetchRegistration") extern class BackgroundFetchRegistration extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration/uploadTotal>
+	**/
 	var uploadTotal(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration/uploaded>
+	**/
 	var uploaded(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration/downloadTotal>
+	**/
 	var downloadTotal(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration/downloaded>
+	**/
 	var downloaded(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration/result>
+	**/
 	var result(default, null) : BackgroundFetchResult;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration/failureReason>
+	**/
 	var failureReason(default, null) : BackgroundFetchFailureReason;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration/recordsAvailable>
+	**/
 	var recordsAvailable(default, null) : Bool;
 	var onprogress : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration/abort>
+	**/
 	function abort():js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration/match>
+	**/
 	function match(request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<BackgroundFetchRecord>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration/matchAll>
+	**/
 	function matchAll(?request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Array<BackgroundFetchRecord>>;
 }

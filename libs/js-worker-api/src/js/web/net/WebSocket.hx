@@ -24,22 +24,52 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WebSocket>
+**/
 @:native("WebSocket") extern class WebSocket extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebSocket/url>
+	**/
 	var url(default, null) : String;
 	static inline var CONNECTING : Int = 0;
 	static inline var OPEN : Int = 1;
 	static inline var CLOSING : Int = 2;
 	static inline var CLOSED : Int = 3;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebSocket/readyState>
+	**/
 	var readyState(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebSocket/bufferedAmount>
+	**/
 	var bufferedAmount(default, null) : Float;
 	var onopen : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
 	var onclose : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebSocket/extensions>
+	**/
 	var extensions(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebSocket/protocol>
+	**/
 	var protocol(default, null) : String;
 	var onmessage : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebSocket/binaryType>
+	**/
 	var binaryType : BinaryType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebSocket/WebSocket>
+	**/
 	function new(url:String, ?protocols:haxe.extern.EitherType<String, Array<String>>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebSocket/close>
+	**/
 	function close(?code:Int, ?reason:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebSocket/send>
+	**/
 	function send(data:haxe.extern.EitherType<js.web.dom.BufferSource, haxe.extern.EitherType<Blob, String>>):Void;
 }

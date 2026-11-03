@@ -24,8 +24,17 @@
 
 package js.web.misc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PermissionStatus>
+**/
 @:native("PermissionStatus") extern class PermissionStatus extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PermissionStatus/state>
+	**/
 	var state(default, null) : PermissionState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PermissionStatus/name>
+	**/
 	var name(default, null) : String;
 	var onchange : js.web.html.EventHandler;
 }

@@ -24,8 +24,20 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SnapEvent>
+**/
 @:native("SnapEvent") extern class SnapEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SnapEvent/snapTargetBlock>
+	**/
 	var snapTargetBlock(default, null) : Null<js.web.dom.Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SnapEvent/snapTargetInline>
+	**/
 	var snapTargetInline(default, null) : Null<js.web.dom.Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SnapEvent/SnapEvent>
+	**/
 	function new(type:String, ?eventInitDict:SnapEventInit):Void;
 }

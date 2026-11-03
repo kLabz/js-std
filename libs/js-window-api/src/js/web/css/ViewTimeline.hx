@@ -24,9 +24,24 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ViewTimeline>
+**/
 @:native("ViewTimeline") extern class ViewTimeline extends ScrollTimeline {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ViewTimeline/subject>
+	**/
 	var subject(default, null) : js.web.dom.Element;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ViewTimeline/startOffset>
+	**/
 	var startOffset(default, null) : CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ViewTimeline/endOffset>
+	**/
 	var endOffset(default, null) : CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ViewTimeline/ViewTimeline>
+	**/
 	function new(options:ViewTimelineOptions):Void;
 }

@@ -26,9 +26,20 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionErrorEvent>
 **/
 @:native("SpeechRecognitionErrorEvent") extern class SpeechRecognitionErrorEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionErrorEvent/error>
+	**/
 	var error(default, null) : SpeechRecognitionErrorCode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionErrorEvent/message>
+	**/
 	var message(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionErrorEvent/SpeechRecognitionErrorEvent>
+	**/
 	function new(type:String, eventInitDict:SpeechRecognitionErrorEventInit):Void;
 }

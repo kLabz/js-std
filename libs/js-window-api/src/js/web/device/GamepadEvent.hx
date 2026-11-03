@@ -24,7 +24,16 @@
 
 package js.web.device;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/GamepadEvent>
+**/
 @:native("GamepadEvent") extern class GamepadEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadEvent/gamepad>
+	**/
 	var gamepad(default, null) : Gamepad;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadEvent/GamepadEvent>
+	**/
 	function new(type:String, ?eventInitDict:GamepadEventInit):Void;
 }

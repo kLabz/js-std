@@ -24,22 +24,78 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PannerNode>
+**/
 @:native("PannerNode") extern class PannerNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/panningModel>
+	**/
 	var panningModel : PanningModelType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/positionX>
+	**/
 	var positionX(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/positionY>
+	**/
 	var positionY(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/positionZ>
+	**/
 	var positionZ(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/orientationX>
+	**/
 	var orientationX(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/orientationY>
+	**/
 	var orientationY(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/orientationZ>
+	**/
 	var orientationZ(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/distanceModel>
+	**/
 	var distanceModel : DistanceModelType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/refDistance>
+	**/
 	var refDistance : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/maxDistance>
+	**/
 	var maxDistance : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/rolloffFactor>
+	**/
 	var rolloffFactor : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/coneInnerAngle>
+	**/
 	var coneInnerAngle : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/coneOuterAngle>
+	**/
 	var coneOuterAngle : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/coneOuterGain>
+	**/
 	var coneOuterGain : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/PannerNode>
+	**/
 	function new(context:BaseAudioContext, ?options:PannerOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/setOrientation>
+	**/
+	@:deprecated
 	function setOrientation(x:Float, y:Float, z:Float):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PannerNode/setPosition>
+	**/
+	@:deprecated
 	function setPosition(x:Float, y:Float, z:Float):Void;
 }

@@ -24,8 +24,17 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/InputDeviceCapabilities>
+**/
 @:native("InputDeviceCapabilities") extern class InputDeviceCapabilities {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/InputDeviceCapabilities/firesTouchEvents>
+	**/
 	var firesTouchEvents(default, null) : Bool;
 	var pointerMovementScrolls(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/InputDeviceCapabilities/InputDeviceCapabilities>
+	**/
 	function new(?deviceInitDict:InputDeviceCapabilitiesInit):Void;
 }

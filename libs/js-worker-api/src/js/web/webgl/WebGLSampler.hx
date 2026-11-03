@@ -24,6 +24,9 @@
 
 package js.web.webgl;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WebGLSampler>
+**/
 @:native("WebGLSampler") extern class WebGLSampler extends WebGLObject {
 
 }

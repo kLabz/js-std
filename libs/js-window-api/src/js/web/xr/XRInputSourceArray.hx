@@ -26,11 +26,28 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceArray>
 **/
 @:native("XRInputSourceArray") extern class XRInputSourceArray implements ArrayAccess<XRInputSource> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<Int, XRInputSource>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/forEach>
+	**/
 	function forEach(callback:(value:XRInputSource, key:Int, parent:XRInputSourceArray) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/keys>
+	**/
 	function keys():js.lib.Iterator<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/values>
+	**/
 	function values():js.lib.Iterator<XRInputSource>;
 }

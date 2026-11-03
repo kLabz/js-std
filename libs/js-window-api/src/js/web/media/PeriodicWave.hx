@@ -24,6 +24,12 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PeriodicWave>
+**/
 @:native("PeriodicWave") extern class PeriodicWave {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PeriodicWave/PeriodicWave>
+	**/
 	function new(context:BaseAudioContext, ?options:PeriodicWaveOptions):Void;
 }

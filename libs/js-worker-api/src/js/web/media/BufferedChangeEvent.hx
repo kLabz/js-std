@@ -24,6 +24,12 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent>
+**/
 @:native("BufferedChangeEvent") extern class BufferedChangeEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent/BufferedChangeEvent>
+	**/
 	function new(type:String, ?eventInitDict:BufferedChangeEventInit):Void;
 }

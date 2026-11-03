@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGUnitTypes>
+**/
 @:native("SVGUnitTypes") extern class SVGUnitTypes {
 	static inline var SVG_UNIT_TYPE_UNKNOWN : Int = 0;
 	static inline var SVG_UNIT_TYPE_USERSPACEONUSE : Int = 1;

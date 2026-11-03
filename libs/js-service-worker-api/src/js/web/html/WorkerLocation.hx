@@ -24,18 +24,50 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WorkerLocation>
+**/
 @:native("WorkerLocation") extern class WorkerLocation {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerLocation/href>
+	**/
 	var href(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerLocation/origin>
+	**/
 	var origin(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerLocation/protocol>
+	**/
 	var protocol(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerLocation/host>
+	**/
 	var host(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerLocation/hostname>
+	**/
 	var hostname(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerLocation/port>
+	**/
 	var port(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerLocation/pathname>
+	**/
 	var pathname(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerLocation/search>
+	**/
 	var search(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerLocation/hash>
+	**/
 	var hash(default, null) : String;
 	/**
 		Returns `this.href`.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerLocation/toString>
 	**/
 	function toString():String;
 }

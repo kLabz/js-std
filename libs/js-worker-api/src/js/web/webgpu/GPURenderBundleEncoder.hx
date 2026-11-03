@@ -26,47 +26,72 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder>
 **/
 @:native("GPURenderBundleEncoder") extern class GPURenderBundleEncoder {
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder/label>
 	**/
 	var label : String;
 	/**
 		From interface mixin GPURenderCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder/draw>
 	**/
 	function draw(vertexCount:GPUSize32, ?instanceCount:GPUSize32 = 1, ?firstVertex:GPUSize32 = 0, ?firstInstance:GPUSize32 = 0):Void;
 	/**
 		From interface mixin GPURenderCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder/drawIndexed>
 	**/
 	function drawIndexed(indexCount:GPUSize32, ?instanceCount:GPUSize32 = 1, ?firstIndex:GPUSize32 = 0, ?baseVertex:GPUSignedOffset32 = 0, ?firstInstance:GPUSize32 = 0):Void;
 	/**
 		From interface mixin GPURenderCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder/drawIndexedIndirect>
 	**/
 	function drawIndexedIndirect(indirectBuffer:GPUBuffer, indirectOffset:GPUSize64):Void;
 	/**
 		From interface mixin GPURenderCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder/drawIndirect>
 	**/
 	function drawIndirect(indirectBuffer:GPUBuffer, indirectOffset:GPUSize64):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder/finish>
+	**/
 	function finish(?descriptor:GPURenderBundleDescriptor):GPURenderBundle;
 	/**
 		From interface mixin GPUDebugCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder/insertDebugMarker>
 	**/
 	function insertDebugMarker(markerLabel:String):Void;
 	/**
 		From interface mixin GPUDebugCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder/popDebugGroup>
 	**/
 	function popDebugGroup():Void;
 	/**
 		From interface mixin GPUDebugCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder/pushDebugGroup>
 	**/
 	function pushDebugGroup(groupLabel:String):Void;
 	/**
 		From interface mixin GPUBindingCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder/setBindGroup>
 	**/
 	overload function setBindGroup(index:GPUIndex32, bindGroup:Null<GPUBindGroup>, ?dynamicOffsets:Array<GPUBufferDynamicOffset>):Void;
 	/**
 		From interface mixin GPUBindingCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder/setBindGroup>
 	**/
 	overload function setBindGroup(index:GPUIndex32, bindGroup:Null<GPUBindGroup>, dynamicOffsetsData:js.lib.Uint32Array, dynamicOffsetsDataStart:GPUSize64, dynamicOffsetsDataLength:GPUSize32):Void;
 	/**
@@ -75,14 +100,20 @@ package js.web.webgpu;
 	function setImmediates(rangeOffset:GPUSize32, data:js.web.dom.AllowSharedBufferSource, ?dataOffset:GPUSize64 = 0, ?dataSize:GPUSize64):Void;
 	/**
 		From interface mixin GPURenderCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder/setIndexBuffer>
 	**/
 	function setIndexBuffer(buffer:GPUBuffer, indexFormat:GPUIndexFormat, ?offset:GPUSize64 = 0, ?size:GPUSize64):Void;
 	/**
 		From interface mixin GPURenderCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder/setPipeline>
 	**/
 	function setPipeline(pipeline:GPURenderPipeline):Void;
 	/**
 		From interface mixin GPURenderCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundleEncoder/setVertexBuffer>
 	**/
 	function setVertexBuffer(slot:GPUIndex32, buffer:Null<GPUBuffer>, ?offset:GPUSize64 = 0, ?size:GPUSize64):Void;
 }

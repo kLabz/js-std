@@ -24,10 +24,27 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaQueryList>
+**/
 @:native("MediaQueryList") extern class MediaQueryList extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryList/media>
+	**/
 	var media(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryList/matches>
+	**/
 	var matches(default, null) : Bool;
 	var onchange : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryList/addListener>
+	**/
+	@:deprecated
 	function addListener(callback:Null<js.web.dom.EventListener>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryList/removeListener>
+	**/
+	@:deprecated
 	function removeListener(callback:Null<js.web.dom.EventListener>):Void;
 }

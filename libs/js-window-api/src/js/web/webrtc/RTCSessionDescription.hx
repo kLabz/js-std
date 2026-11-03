@@ -24,9 +24,25 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCSessionDescription>
+**/
 @:native("RTCSessionDescription") extern class RTCSessionDescription {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCSessionDescription/type>
+	**/
 	var type(default, null) : RTCSdpType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCSessionDescription/sdp>
+	**/
 	var sdp(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCSessionDescription/RTCSessionDescription>
+	**/
+	@:deprecated
 	function new(descriptionInitDict:RTCSessionDescriptionInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCSessionDescription/toJSON>
+	**/
 	function toJSON():RTCSessionDescriptionInit;
 }

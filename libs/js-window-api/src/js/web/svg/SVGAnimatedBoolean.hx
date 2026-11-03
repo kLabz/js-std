@@ -24,7 +24,16 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedBoolean>
+**/
 @:native("SVGAnimatedBoolean") extern class SVGAnimatedBoolean {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedBoolean/baseVal>
+	**/
 	var baseVal : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedBoolean/animVal>
+	**/
 	var animVal(default, null) : Bool;
 }

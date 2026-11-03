@@ -24,7 +24,16 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedEnumeration>
+**/
 @:native("SVGAnimatedEnumeration") extern class SVGAnimatedEnumeration {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedEnumeration/baseVal>
+	**/
 	var baseVal : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedEnumeration/animVal>
+	**/
 	var animVal(default, null) : Int;
 }

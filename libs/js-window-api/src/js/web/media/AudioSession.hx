@@ -24,8 +24,17 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioSession>
+**/
 @:native("AudioSession") extern class AudioSession extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioSession/type>
+	**/
 	var type : AudioSessionType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioSession/state>
+	**/
 	var state(default, null) : AudioSessionState;
 	var onstatechange : js.web.html.EventHandler;
 }

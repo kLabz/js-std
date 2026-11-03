@@ -26,17 +26,43 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PaymentRequest>
 **/
 @:native("PaymentRequest") extern class PaymentRequest extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequest/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequest/shippingAddress>
+	**/
+	@:deprecated
 	var shippingAddress(default, null) : Null<js.web.misc.ContactAddress>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequest/shippingOption>
+	**/
+	@:deprecated
 	var shippingOption(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequest/shippingType>
+	**/
+	@:deprecated
 	var shippingType(default, null) : Null<PaymentShippingType>;
 	var onshippingaddresschange : js.web.html.EventHandler;
 	var onshippingoptionchange : js.web.html.EventHandler;
 	var onpaymentmethodchange : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequest/PaymentRequest>
+	**/
 	function new(methodData:Array<PaymentMethodData>, details:PaymentDetailsInit, ?options:PaymentOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequest/abort>
+	**/
 	function abort():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequest/canMakePayment>
+	**/
 	function canMakePayment():js.lib.Promise<Bool>;
 	/**
 		From partial interface in secure-payment-confirmation.idl
@@ -46,5 +72,8 @@ package js.web.auth;
 		From partial interface in secure-payment-confirmation.idl
 	**/
 	function securePaymentConfirmationAvailability():js.lib.Promise<SecurePaymentConfirmationAvailability>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequest/show>
+	**/
 	function show(?detailsPromise:js.lib.Promise<PaymentDetailsUpdate>):js.lib.Promise<PaymentResponse>;
 }

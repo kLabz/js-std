@@ -24,12 +24,33 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry>
+**/
 @:native("NavigationHistoryEntry") extern class NavigationHistoryEntry extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/url>
+	**/
 	var url(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/key>
+	**/
 	var key(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/index>
+	**/
 	var index(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/sameDocument>
+	**/
 	var sameDocument(default, null) : Bool;
 	var ondispose : EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/getState>
+	**/
 	function getState():Any;
 }

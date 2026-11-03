@@ -24,6 +24,9 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioParamMap>
+**/
 @:native("AudioParamMap") extern class AudioParamMap {
 	var size(default, null) : Int;
 	function entries():js.lib.Iterator<js.lib.Tuple<String, AudioParam>>;

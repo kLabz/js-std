@@ -24,19 +24,34 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CharacterData>
+**/
 @:native("CharacterData") extern class CharacterData extends Node {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/data>
+	**/
 	var data : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/length>
+	**/
 	var length(default, null) : Int;
 	/**
 		From interface mixin NonDocumentTypeChildNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/previousElementSibling>
 	**/
 	var previousElementSibling(default, null) : Null<Element>;
 	/**
 		From interface mixin NonDocumentTypeChildNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/nextElementSibling>
 	**/
 	var nextElementSibling(default, null) : Null<Element>;
 	/**
 		From interface mixin ChildNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/after>
 	**/
 	function after(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
@@ -47,9 +62,14 @@ package js.web.dom;
 		From interface mixin NonDocumentTypeChildNode
 	**/
 	function afterHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/appendData>
+	**/
 	function appendData(data:String):Void;
 	/**
 		From interface mixin ChildNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/before>
 	**/
 	function before(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
@@ -60,15 +80,28 @@ package js.web.dom;
 		From interface mixin NonDocumentTypeChildNode
 	**/
 	function beforeHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/deleteData>
+	**/
 	function deleteData(offset:Int, count:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/insertData>
+	**/
 	function insertData(offset:Int, data:String):Void;
 	/**
 		From interface mixin ChildNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/remove>
 	**/
 	function remove():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/replaceData>
+	**/
 	function replaceData(offset:Int, count:Int, data:String):Void;
 	/**
 		From interface mixin ChildNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/replaceWith>
 	**/
 	function replaceWith(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
@@ -79,5 +112,8 @@ package js.web.dom;
 		From interface mixin NonDocumentTypeChildNode
 	**/
 	function replaceWithHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/substringData>
+	**/
 	function substringData(offset:Int, count:Int):String;
 }

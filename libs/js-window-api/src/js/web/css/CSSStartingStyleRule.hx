@@ -24,6 +24,9 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSStartingStyleRule>
+**/
 @:native("CSSStartingStyleRule") extern class CSSStartingStyleRule extends CSSGroupingRule {
 
 }

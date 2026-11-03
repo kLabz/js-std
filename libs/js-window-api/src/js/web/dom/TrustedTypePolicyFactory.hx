@@ -24,14 +24,44 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicyFactory>
+**/
 @:native("TrustedTypePolicyFactory") extern class TrustedTypePolicyFactory {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicyFactory/emptyHTML>
+	**/
 	var emptyHTML(default, null) : TrustedHTML;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicyFactory/emptyScript>
+	**/
 	var emptyScript(default, null) : TrustedScript;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicyFactory/defaultPolicy>
+	**/
 	var defaultPolicy(default, null) : Null<TrustedTypePolicy>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicyFactory/createPolicy>
+	**/
 	function createPolicy(policyName:String, ?policyOptions:TrustedTypePolicyOptions):TrustedTypePolicy;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicyFactory/getAttributeType>
+	**/
 	function getAttributeType(tagName:String, attribute:String, ?elementNs:Null<String> = "", ?attrNs:Null<String> = ""):Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicyFactory/getPropertyType>
+	**/
 	function getPropertyType(tagName:String, property:String, ?elementNs:Null<String> = ""):Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicyFactory/isHTML>
+	**/
 	function isHTML(value:Any):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicyFactory/isScript>
+	**/
 	function isScript(value:Any):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicyFactory/isScriptURL>
+	**/
 	function isScriptURL(value:Any):Bool;
 }

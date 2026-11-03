@@ -26,10 +26,21 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/IdentityCredential>
 **/
 @:native("IdentityCredential") extern class IdentityCredential extends Credential {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IdentityCredential/token>
+	**/
 	var token(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IdentityCredential/isAutoSelected>
+	**/
 	var isAutoSelected(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IdentityCredential/configURL>
+	**/
 	var configURL(default, null) : String;
 	function disconnect(options:IdentityCredentialDisconnectOptions):js.lib.Promise<Void>;
 }

@@ -24,8 +24,20 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSUnitValue>
+**/
 @:native("CSSUnitValue") extern class CSSUnitValue extends CSSNumericValue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSUnitValue/value>
+	**/
 	var value : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSUnitValue/unit>
+	**/
 	var unit(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSUnitValue/CSSUnitValue>
+	**/
 	function new(value:Float, unit:String):Void;
 }

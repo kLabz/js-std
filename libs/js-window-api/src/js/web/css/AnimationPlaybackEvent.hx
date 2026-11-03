@@ -24,8 +24,20 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AnimationPlaybackEvent>
+**/
 @:native("AnimationPlaybackEvent") extern class AnimationPlaybackEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnimationPlaybackEvent/currentTime>
+	**/
 	var currentTime(default, null) : Null<CSSNumberish>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnimationPlaybackEvent/timelineTime>
+	**/
 	var timelineTime(default, null) : Null<CSSNumberish>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnimationPlaybackEvent/AnimationPlaybackEvent>
+	**/
 	function new(type:String, ?eventInitDict:AnimationPlaybackEventInit):Void;
 }

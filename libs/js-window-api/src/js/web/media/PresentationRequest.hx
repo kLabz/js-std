@@ -26,12 +26,29 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PresentationRequest>
 **/
 @:native("PresentationRequest") extern class PresentationRequest extends js.web.dom.EventTarget {
 	var onconnectionavailable : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationRequest/PresentationRequest>
+	**/
 	overload function new(urls:Array<String>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationRequest/PresentationRequest>
+	**/
 	overload function new(url:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationRequest/getAvailability>
+	**/
 	function getAvailability():js.lib.Promise<PresentationAvailability>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationRequest/reconnect>
+	**/
 	function reconnect(presentationId:String):js.lib.Promise<PresentationConnection>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationRequest/start>
+	**/
 	function start():js.lib.Promise<PresentationConnection>;
 }

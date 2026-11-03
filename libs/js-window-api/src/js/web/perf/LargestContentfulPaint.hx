@@ -24,19 +24,44 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/LargestContentfulPaint>
+**/
 @:native("LargestContentfulPaint") extern class LargestContentfulPaint extends PerformanceEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LargestContentfulPaint/loadTime>
+	**/
 	var loadTime(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LargestContentfulPaint/renderTime>
+	**/
 	var renderTime(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LargestContentfulPaint/size>
+	**/
 	var size(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LargestContentfulPaint/url>
+	**/
 	var url(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LargestContentfulPaint/element>
+	**/
 	var element(default, null) : Null<js.web.dom.Element>;
 	/**
 		From interface mixin PaintTimingMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/LargestContentfulPaint/paintTime>
 	**/
 	var paintTime(default, null) : DOMHighResTimeStamp;
 	/**
 		From interface mixin PaintTimingMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/LargestContentfulPaint/presentationTime>
 	**/
 	var presentationTime(default, null) : Null<DOMHighResTimeStamp>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LargestContentfulPaint/toJSON>
+	**/
 	function toJSON():{ };
 }

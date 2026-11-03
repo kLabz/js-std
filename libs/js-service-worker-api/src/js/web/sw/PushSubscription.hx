@@ -26,12 +26,32 @@ package js.web.sw;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PushSubscription>
 **/
 @:native("PushSubscription") extern class PushSubscription {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushSubscription/endpoint>
+	**/
 	var endpoint(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushSubscription/expirationTime>
+	**/
 	var expirationTime(default, null) : Null<js.web.perf.EpochTimeStamp>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushSubscription/options>
+	**/
 	var options(default, null) : PushSubscriptionOptions;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushSubscription/getKey>
+	**/
 	function getKey(name:PushEncryptionKeyName):Null<js.lib.ArrayBuffer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushSubscription/toJSON>
+	**/
 	function toJSON():PushSubscriptionJSON;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushSubscription/unsubscribe>
+	**/
 	function unsubscribe():js.lib.Promise<Bool>;
 }

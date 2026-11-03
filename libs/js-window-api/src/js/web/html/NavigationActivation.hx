@@ -24,8 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NavigationActivation>
+**/
 @:native("NavigationActivation") extern class NavigationActivation {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationActivation/from>
+	**/
 	var from(default, null) : Null<NavigationHistoryEntry>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationActivation/entry>
+	**/
 	var entry(default, null) : NavigationHistoryEntry;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationActivation/navigationType>
+	**/
 	var navigationType(default, null) : NavigationType;
 }

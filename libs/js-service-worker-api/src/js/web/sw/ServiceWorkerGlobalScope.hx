@@ -27,10 +27,21 @@ package js.web.sw;
 /**
 	Unhandled extended attribute Global
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope>
 **/
 @:native("ServiceWorkerGlobalScope") extern class ServiceWorkerGlobalScope extends js.web.html.WorkerGlobalScope {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope/clients>
+	**/
 	var clients(default, null) : Clients;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope/registration>
+	**/
 	var registration(default, null) : ServiceWorkerRegistration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope/serviceWorker>
+	**/
 	var serviceWorker(default, null) : ServiceWorker;
 	var oninstall : js.web.html.EventHandler;
 	var onactivate : js.web.html.EventHandler;
@@ -63,6 +74,8 @@ package js.web.sw;
 	var oncontentdelete : js.web.html.EventHandler;
 	/**
 		From partial interface in cookiestore.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope/cookieStore>
 	**/
 	var cookieStore(default, null) : js.web.storage.CookieStore;
 	/**
@@ -97,5 +110,8 @@ package js.web.sw;
 		From partial interface in web-based-payment-handler.idl
 	**/
 	var onpaymentrequest : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting>
+	**/
 	function skipWaiting():js.lib.Promise<Void>;
 }

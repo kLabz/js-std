@@ -24,6 +24,9 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FragmentDirective>
+**/
 @:native("FragmentDirective") extern class FragmentDirective {
 
 }

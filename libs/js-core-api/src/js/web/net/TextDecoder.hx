@@ -24,19 +24,34 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TextDecoder>
+**/
 @:native("TextDecoder") extern class TextDecoder {
 	/**
 		From interface mixin TextDecoderCommon
+		
+		@see <https://developer.mozilla.org/docs/Web/API/TextDecoder/encoding>
 	**/
 	var encoding(default, null) : String;
 	/**
 		From interface mixin TextDecoderCommon
+		
+		@see <https://developer.mozilla.org/docs/Web/API/TextDecoder/fatal>
 	**/
 	var fatal(default, null) : Bool;
 	/**
 		From interface mixin TextDecoderCommon
+		
+		@see <https://developer.mozilla.org/docs/Web/API/TextDecoder/ignoreBOM>
 	**/
 	var ignoreBOM(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextDecoder/TextDecoder>
+	**/
 	function new(?label:String = "utf-8", ?options:TextDecoderOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextDecoder/decode>
+	**/
 	function decode(?input:js.web.dom.AllowSharedBufferSource, ?options:TextDecodeOptions):String;
 }

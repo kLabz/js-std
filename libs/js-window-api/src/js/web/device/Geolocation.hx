@@ -24,8 +24,20 @@
 
 package js.web.device;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Geolocation>
+**/
 @:native("Geolocation") extern class Geolocation {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Geolocation/clearWatch>
+	**/
 	function clearWatch(watchId:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Geolocation/getCurrentPosition>
+	**/
 	function getCurrentPosition(successCallback:PositionCallback, ?errorCallback:Null<PositionErrorCallback> = null, ?options:PositionOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Geolocation/watchPosition>
+	**/
 	function watchPosition(successCallback:PositionCallback, ?errorCallback:Null<PositionErrorCallback> = null, ?options:PositionOptions):Int;
 }

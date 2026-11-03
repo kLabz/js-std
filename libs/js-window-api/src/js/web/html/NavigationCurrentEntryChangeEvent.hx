@@ -24,8 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent>
+**/
 @:native("NavigationCurrentEntryChangeEvent") extern class NavigationCurrentEntryChangeEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/navigationType>
+	**/
 	var navigationType(default, null) : Null<NavigationType>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/from>
+	**/
 	var from(default, null) : NavigationHistoryEntry;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/NavigationCurrentEntryChangeEvent>
+	**/
 	function new(type:String, eventInitDict:NavigationCurrentEntryChangeEventInit):Void;
 }

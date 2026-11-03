@@ -26,10 +26,21 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService>
 **/
 @:native("BluetoothRemoteGATTService") extern class BluetoothRemoteGATTService extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService/device>
+	**/
 	var device(default, null) : BluetoothDevice;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService/uuid>
+	**/
 	var uuid(default, null) : UUID;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService/isPrimary>
+	**/
 	var isPrimary(default, null) : Bool;
 	/**
 		From interface mixin CharacteristicEventHandlers
@@ -47,7 +58,13 @@ package js.web.device;
 		From interface mixin ServiceEventHandlers
 	**/
 	var onserviceremoved : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService/getCharacteristic>
+	**/
 	function getCharacteristic(characteristic:BluetoothCharacteristicUUID):js.lib.Promise<BluetoothRemoteGATTCharacteristic>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService/getCharacteristics>
+	**/
 	function getCharacteristics(?characteristic:BluetoothCharacteristicUUID):js.lib.Promise<Array<BluetoothRemoteGATTCharacteristic>>;
 	function getIncludedService(service:BluetoothServiceUUID):js.lib.Promise<BluetoothRemoteGATTService>;
 	function getIncludedServices(?service:BluetoothServiceUUID):js.lib.Promise<Array<BluetoothRemoteGATTService>>;

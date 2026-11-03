@@ -24,12 +24,36 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CustomElementRegistry>
+**/
 @:native("CustomElementRegistry") extern class CustomElementRegistry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/CustomElementRegistry>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/define>
+	**/
 	function define(name:String, constructor:CustomElementConstructor, ?options:ElementDefinitionOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/get>
+	**/
 	function get(name:String):haxe.extern.EitherType<CustomElementConstructor, Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/getName>
+	**/
 	function getName(constructor:CustomElementConstructor):Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/initialize>
+	**/
 	function initialize(root:js.web.dom.Node):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/upgrade>
+	**/
 	function upgrade(root:js.web.dom.Node):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/whenDefined>
+	**/
 	function whenDefined(name:String):js.lib.Promise<CustomElementConstructor>;
 }

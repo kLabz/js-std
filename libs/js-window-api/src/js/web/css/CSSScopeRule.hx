@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSScopeRule>
+**/
 @:native("CSSScopeRule") extern class CSSScopeRule extends CSSGroupingRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSScopeRule/start>
+	**/
 	var start(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSScopeRule/end>
+	**/
 	var end(default, null) : Null<String>;
 }

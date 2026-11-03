@@ -24,6 +24,12 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSStyleProperties>
+**/
 @:native("CSSStyleProperties") extern class CSSStyleProperties extends CSSStyleDeclaration {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleProperties/cssFloat>
+	**/
 	var cssFloat : String;
 }

@@ -24,11 +24,29 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLVideoElement>
+**/
 @:native("HTMLVideoElement") extern class HTMLVideoElement extends HTMLMediaElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/width>
+	**/
 	var width : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/height>
+	**/
 	var height : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/videoWidth>
+	**/
 	var videoWidth(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/videoHeight>
+	**/
 	var videoHeight(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/poster>
+	**/
 	var poster : String;
 	var playsInline : Bool;
 	/**
@@ -41,22 +59,32 @@ package js.web.html;
 	var onleavepictureinpicture : EventHandler;
 	/**
 		From partial interface in picture-in-picture.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/disablePictureInPicture>
 	**/
 	var disablePictureInPicture : Bool;
 	/**
 		From partial interface in video-rvfc.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/cancelVideoFrameCallback>
 	**/
 	function cancelVideoFrameCallback(handle:Int):Void;
 	/**
 		From partial interface in media-playback-quality.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/getVideoPlaybackQuality>
 	**/
 	function getVideoPlaybackQuality():js.web.media.VideoPlaybackQuality;
 	/**
 		From partial interface in picture-in-picture.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/requestPictureInPicture>
 	**/
 	function requestPictureInPicture():js.lib.Promise<PictureInPictureWindow>;
 	/**
 		From partial interface in video-rvfc.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/requestVideoFrameCallback>
 	**/
 	function requestVideoFrameCallback(callback:js.web.media.VideoFrameRequestCallback):Int;
 }

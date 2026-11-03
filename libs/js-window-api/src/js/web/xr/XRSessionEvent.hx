@@ -26,8 +26,16 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRSessionEvent>
 **/
 @:native("XRSessionEvent") extern class XRSessionEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRSessionEvent/session>
+	**/
 	var session(default, null) : XRSession;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRSessionEvent/XRSessionEvent>
+	**/
 	function new(type:String, eventInitDict:XRSessionEventInit):Void;
 }

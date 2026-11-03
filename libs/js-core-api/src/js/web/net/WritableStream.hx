@@ -24,10 +24,28 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WritableStream>
+**/
 @:native("WritableStream") extern class WritableStream {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStream/locked>
+	**/
 	var locked(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStream/WritableStream>
+	**/
 	function new(?underlyingSink:{ }, ?strategy:QueuingStrategy):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStream/abort>
+	**/
 	function abort(?reason:Any):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStream/close>
+	**/
 	function close():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStream/getWriter>
+	**/
 	function getWriter():WritableStreamDefaultWriter;
 }

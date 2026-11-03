@@ -24,33 +24,58 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement>
+**/
 @:native("SVGFEMorphologyElement") extern class SVGFEMorphologyElement extends SVGElement {
 	static inline var SVG_MORPHOLOGY_OPERATOR_UNKNOWN : Int = 0;
 	static inline var SVG_MORPHOLOGY_OPERATOR_ERODE : Int = 1;
 	static inline var SVG_MORPHOLOGY_OPERATOR_DILATE : Int = 2;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/in1>
+	**/
 	var in1(default, null) : SVGAnimatedString;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/operator>
+	**/
 	@:native("operator")
 	var operator_(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/radiusX>
+	**/
 	var radiusX(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/radiusY>
+	**/
 	var radiusY(default, null) : SVGAnimatedNumber;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/result>
 	**/
 	var result(default, null) : SVGAnimatedString;
 }

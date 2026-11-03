@@ -26,15 +26,41 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRWebGLLayer>
 **/
 @:native("XRWebGLLayer") extern class XRWebGLLayer extends XRLayer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLLayer/antialias>
+	**/
 	var antialias(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLLayer/ignoreDepthValues>
+	**/
 	var ignoreDepthValues(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLLayer/fixedFoveation>
+	**/
 	var fixedFoveation : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLLayer/framebuffer>
+	**/
 	var framebuffer(default, null) : Null<js.web.webgl.WebGLFramebuffer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLLayer/framebufferWidth>
+	**/
 	var framebufferWidth(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLLayer/framebufferHeight>
+	**/
 	var framebufferHeight(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLLayer/XRWebGLLayer>
+	**/
 	function new(session:XRSession, context:XRWebGLRenderingContext, ?layerInit:XRWebGLLayerInit):Void;
 	function getNativeFramebufferScaleFactor(session:XRSession):Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLLayer/getViewport>
+	**/
 	function getViewport(view:XRView):Null<XRViewport>;
 }

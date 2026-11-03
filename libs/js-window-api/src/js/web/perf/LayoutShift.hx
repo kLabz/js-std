@@ -24,10 +24,28 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/LayoutShift>
+**/
 @:native("LayoutShift") extern class LayoutShift extends PerformanceEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LayoutShift/value>
+	**/
 	var value(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LayoutShift/hadRecentInput>
+	**/
 	var hadRecentInput(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LayoutShift/lastInputTime>
+	**/
 	var lastInputTime(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LayoutShift/sources>
+	**/
 	var sources(default, null) : Array<LayoutShiftAttribution>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LayoutShift/toJSON>
+	**/
 	function toJSON():{ };
 }

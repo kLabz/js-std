@@ -26,11 +26,28 @@ package js.web.sw;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PushMessageData>
 **/
 @:native("PushMessageData") extern class PushMessageData {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushMessageData/arrayBuffer>
+	**/
 	function arrayBuffer():js.lib.ArrayBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushMessageData/blob>
+	**/
 	function blob():js.web.net.Blob;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushMessageData/bytes>
+	**/
 	function bytes():js.lib.Uint8Array;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushMessageData/json>
+	**/
 	function json():Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushMessageData/text>
+	**/
 	function text():String;
 }

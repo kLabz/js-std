@@ -24,7 +24,16 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DelayNode>
+**/
 @:native("DelayNode") extern class DelayNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DelayNode/delayTime>
+	**/
 	var delayTime(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DelayNode/DelayNode>
+	**/
 	function new(context:BaseAudioContext, ?options:DelayOptions):Void;
 }

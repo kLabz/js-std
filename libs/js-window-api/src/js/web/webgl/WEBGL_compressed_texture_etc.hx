@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_etc>
 **/
 @:native("WEBGL_compressed_texture_etc") extern class WEBGL_compressed_texture_etc {
 	static inline var COMPRESSED_R11_EAC : GLenum = 0x9270;

@@ -24,11 +24,23 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/VideoTrackList>
+**/
 @:native("VideoTrackList") extern class VideoTrackList extends js.web.dom.EventTarget implements ArrayAccess<VideoTrack> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoTrackList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoTrackList/selectedIndex>
+	**/
 	var selectedIndex(default, null) : Int;
 	var onchange : EventHandler;
 	var onaddtrack : EventHandler;
 	var onremovetrack : EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoTrackList/getTrackById>
+	**/
 	function getTrackById(id:String):Null<VideoTrack>;
 }

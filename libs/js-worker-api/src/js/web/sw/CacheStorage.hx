@@ -26,11 +26,28 @@ package js.web.sw;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/CacheStorage>
 **/
 @:native("CacheStorage") extern class CacheStorage {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CacheStorage/delete>
+	**/
 	function delete(cacheName:String):js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CacheStorage/has>
+	**/
 	function has(cacheName:String):js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CacheStorage/keys>
+	**/
 	function keys():js.lib.Promise<Array<String>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CacheStorage/match>
+	**/
 	function match(request:js.web.net.RequestInfo, ?options:MultiCacheQueryOptions):js.lib.Promise<haxe.extern.EitherType<js.web.net.Response, Void>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CacheStorage/open>
+	**/
 	function open(cacheName:String):js.lib.Promise<Cache>;
 }

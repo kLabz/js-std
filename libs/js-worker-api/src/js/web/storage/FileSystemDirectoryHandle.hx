@@ -26,13 +26,36 @@ package js.web.storage;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle>
 **/
 @:native("FileSystemDirectoryHandle") extern class FileSystemDirectoryHandle extends FileSystemHandle {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle/entries>
+	**/
 	function entries():js.lib.Iterator.AsyncIterator<js.lib.Tuple<String, FileSystemHandle>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle/getDirectoryHandle>
+	**/
 	function getDirectoryHandle(name:String, ?options:FileSystemGetDirectoryOptions):js.lib.Promise<FileSystemDirectoryHandle>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle/getFileHandle>
+	**/
 	function getFileHandle(name:String, ?options:FileSystemGetFileOptions):js.lib.Promise<FileSystemFileHandle>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle/keys>
+	**/
 	function keys():js.lib.Iterator.AsyncIterator<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle/removeEntry>
+	**/
 	function removeEntry(name:String, ?options:FileSystemRemoveOptions):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle/resolve>
+	**/
 	function resolve(possibleDescendant:FileSystemHandle):js.lib.Promise<Null<Array<String>>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle/values>
+	**/
 	function values():js.lib.Iterator.AsyncIterator<FileSystemHandle>;
 }

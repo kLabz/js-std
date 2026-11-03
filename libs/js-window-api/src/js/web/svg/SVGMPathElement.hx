@@ -24,9 +24,14 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGMPathElement>
+**/
 @:native("SVGMPathElement") extern class SVGMPathElement extends SVGElement {
 	/**
 		From interface mixin SVGURIReference
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMPathElement/href>
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

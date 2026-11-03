@@ -26,6 +26,8 @@ package js.web.html;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WorkletGlobalScope>
 **/
 @:native("WorkletGlobalScope") extern class WorkletGlobalScope {
 

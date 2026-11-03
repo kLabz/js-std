@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSPerspective>
+**/
 @:native("CSSPerspective") extern class CSSPerspective extends CSSTransformComponent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPerspective/length>
+	**/
 	var length : CSSPerspectiveValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPerspective/CSSPerspective>
+	**/
 	function new(length:CSSPerspectiveValue):Void;
 }

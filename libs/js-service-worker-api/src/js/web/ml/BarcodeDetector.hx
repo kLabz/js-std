@@ -26,9 +26,17 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/BarcodeDetector>
 **/
 @:native("BarcodeDetector") extern class BarcodeDetector {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BarcodeDetector/BarcodeDetector>
+	**/
 	function new(?barcodeDetectorOptions:BarcodeDetectorOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BarcodeDetector/detect>
+	**/
 	function detect(image:js.web.canvas.ImageBitmapSource):js.lib.Promise<Array<DetectedBarcode>>;
 	function getSupportedFormats():js.lib.Promise<Array<BarcodeFormat>>;
 }

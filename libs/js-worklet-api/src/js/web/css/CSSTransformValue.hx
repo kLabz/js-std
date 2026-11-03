@@ -24,12 +24,36 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue>
+**/
 @:native("CSSTransformValue") extern class CSSTransformValue extends CSSStyleValue implements ArrayAccess<CSSTransformComponent> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/is2D>
+	**/
 	var is2D(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/CSSTransformValue>
+	**/
 	function new(transforms:Array<CSSTransformComponent>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<Int, CSSTransformComponent>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/forEach>
+	**/
 	function forEach(callback:(value:CSSTransformComponent, key:Int, parent:CSSTransformValue) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/keys>
+	**/
 	function keys():js.lib.Iterator<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/values>
+	**/
 	function values():js.lib.Iterator<CSSTransformComponent>;
 }

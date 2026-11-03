@@ -24,9 +24,21 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope>
+**/
 @:native("WorkerGlobalScope") extern class WorkerGlobalScope extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope/self>
+	**/
 	var self(default, null) : WorkerGlobalScope;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope/location>
+	**/
 	var location(default, null) : WorkerLocation;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope/navigator>
+	**/
 	var navigator(default, null) : WorkerNavigator;
 	var onerror : OnErrorEventHandler;
 	var onlanguagechange : EventHandler;
@@ -36,6 +48,8 @@ package js.web.html;
 	var onunhandledrejection : EventHandler;
 	/**
 		From interface mixin FontFaceSource
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope/fonts>
 	**/
 	var fonts(default, null) : js.web.css.FontFaceSet;
 	/**
@@ -103,6 +117,9 @@ package js.web.html;
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
 	function fetch(input:js.web.net.RequestInfo, ?init:js.web.net.RequestInit):js.lib.Promise<js.web.net.Response>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope/importScripts>
+	**/
 	function importScripts(urls:haxe.Rest<haxe.extern.EitherType<js.web.dom.TrustedScriptURL, String>>):Void;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope

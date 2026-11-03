@@ -26,10 +26,14 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUPipelineLayout>
 **/
 @:native("GPUPipelineLayout") extern class GPUPipelineLayout {
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUPipelineLayout/label>
 	**/
 	var label : String;
 }

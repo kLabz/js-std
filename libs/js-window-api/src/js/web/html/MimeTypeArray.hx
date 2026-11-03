@@ -24,8 +24,14 @@
 
 package js.web.html;
 
-@:native("MimeTypeArray") extern class MimeTypeArray implements ArrayAccess<Null<MimeType>> {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MimeTypeArray>
+**/
+@:native("MimeTypeArray") @:deprecated extern class MimeTypeArray implements ArrayAccess<Null<MimeType>> {
+	@:deprecated
 	var length(default, null) : Int;
+	@:deprecated
 	function item(index:Int):Null<MimeType>;
+	@:deprecated
 	function namedItem(name:String):Null<MimeType>;
 }

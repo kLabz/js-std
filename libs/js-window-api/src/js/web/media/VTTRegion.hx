@@ -24,14 +24,44 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/VTTRegion>
+**/
 @:native("VTTRegion") extern class VTTRegion {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTRegion/id>
+	**/
 	var id : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTRegion/width>
+	**/
 	var width : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTRegion/lines>
+	**/
 	var lines : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTRegion/regionAnchorX>
+	**/
 	var regionAnchorX : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTRegion/regionAnchorY>
+	**/
 	var regionAnchorY : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTRegion/viewportAnchorX>
+	**/
 	var viewportAnchorX : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTRegion/viewportAnchorY>
+	**/
 	var viewportAnchorY : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTRegion/scroll>
+	**/
 	var scroll : ScrollSetting;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTRegion/VTTRegion>
+	**/
 	function new():Void;
 }

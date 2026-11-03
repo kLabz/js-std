@@ -24,16 +24,32 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/InteractionContentfulPaint>
+**/
 @:native("InteractionContentfulPaint") extern class InteractionContentfulPaint extends PerformanceEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/InteractionContentfulPaint/largestContentfulPaint>
+	**/
 	var largestContentfulPaint(default, null) : LargestContentfulPaint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/InteractionContentfulPaint/interactionId>
+	**/
 	var interactionId(default, null) : Float;
 	/**
 		From interface mixin PaintTimingMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/InteractionContentfulPaint/paintTime>
 	**/
 	var paintTime(default, null) : DOMHighResTimeStamp;
 	/**
 		From interface mixin PaintTimingMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/InteractionContentfulPaint/presentationTime>
 	**/
 	var presentationTime(default, null) : Null<DOMHighResTimeStamp>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/InteractionContentfulPaint/toJSON>
+	**/
 	function toJSON():{ };
 }

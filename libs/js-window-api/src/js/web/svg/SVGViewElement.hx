@@ -24,13 +24,20 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGViewElement>
+**/
 @:native("SVGViewElement") extern class SVGViewElement extends SVGElement {
 	/**
 		From interface mixin SVGFitToViewBox
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGViewElement/viewBox>
 	**/
 	var viewBox(default, null) : SVGAnimatedRect;
 	/**
 		From interface mixin SVGFitToViewBox
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGViewElement/preserveAspectRatio>
 	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 }

@@ -24,27 +24,90 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Observable>
+**/
 @:native("Observable") extern class Observable {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/Observable>
+	**/
 	function new(callback:SubscribeCallback):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/catch>
+	**/
 	@:native("catch")
 	function catch_(callback:CatchCallback):Observable;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/drop>
+	**/
 	function drop(amount:Float):Observable;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/every>
+	**/
 	function every(predicate:Predicate, ?options:SubscribeOptions):js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/filter>
+	**/
 	function filter(predicate:Predicate):Observable;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/finally>
+	**/
 	function finally(callback:VoidFunction):Observable;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/find>
+	**/
 	function find(predicate:Predicate, ?options:SubscribeOptions):js.lib.Promise<Any>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/first>
+	**/
 	function first(?options:SubscribeOptions):js.lib.Promise<Any>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/flatMap>
+	**/
 	function flatMap(mapper:Mapper):Observable;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/forEach>
+	**/
 	function forEach(callback:Visitor, ?options:SubscribeOptions):js.lib.Promise<Void>;
 	function from(value:Any):Observable;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/inspect>
+	**/
 	function inspect(?inspectorUnion:ObservableInspectorUnion):Observable;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/last>
+	**/
 	function last(?options:SubscribeOptions):js.lib.Promise<Any>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/map>
+	**/
 	function map(mapper:Mapper):Observable;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/reduce>
+	**/
 	function reduce(reducer:Reducer, ?initialValue:Any, ?options:SubscribeOptions):js.lib.Promise<Any>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/some>
+	**/
 	function some(predicate:Predicate, ?options:SubscribeOptions):js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/subscribe>
+	**/
 	function subscribe(?observer:ObserverUnion, ?options:SubscribeOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/switchMap>
+	**/
 	function switchMap(mapper:Mapper):Observable;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/take>
+	**/
 	function take(amount:Float):Observable;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/takeUntil>
+	**/
 	function takeUntil(value:Any):Observable;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/toArray>
+	**/
 	function toArray(?options:SubscribeOptions):js.lib.Promise<Array<Any>>;
 }

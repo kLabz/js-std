@@ -24,18 +24,60 @@
 
 package js.web.misc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent>
+**/
 @:native("SecurityPolicyViolationEvent") extern class SecurityPolicyViolationEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent/documentURI>
+	**/
 	var documentURI(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent/referrer>
+	**/
 	var referrer(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent/blockedURI>
+	**/
 	var blockedURI(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent/effectiveDirective>
+	**/
 	var effectiveDirective(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent/violatedDirective>
+	**/
 	var violatedDirective(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent/originalPolicy>
+	**/
 	var originalPolicy(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent/sourceFile>
+	**/
 	var sourceFile(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent/sample>
+	**/
 	var sample(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent/disposition>
+	**/
 	var disposition(default, null) : SecurityPolicyViolationEventDisposition;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent/statusCode>
+	**/
 	var statusCode(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent/lineNumber>
+	**/
 	var lineNumber(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent/columnNumber>
+	**/
 	var columnNumber(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SecurityPolicyViolationEvent/SecurityPolicyViolationEvent>
+	**/
 	function new(type:String, ?eventInitDict:SecurityPolicyViolationEventInit):Void;
 }

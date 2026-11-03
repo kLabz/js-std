@@ -26,9 +26,14 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Serial>
 **/
 @:native("Serial") extern class Serial extends js.web.dom.EventTarget {
 	var onconnect : js.web.html.EventHandler;
 	var ondisconnect : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Serial/getPorts>
+	**/
 	function getPorts():js.lib.Promise<Array<SerialPort>>;
 }

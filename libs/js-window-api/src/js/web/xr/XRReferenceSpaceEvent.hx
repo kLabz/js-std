@@ -26,9 +26,20 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRReferenceSpaceEvent>
 **/
 @:native("XRReferenceSpaceEvent") extern class XRReferenceSpaceEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRReferenceSpaceEvent/referenceSpace>
+	**/
 	var referenceSpace(default, null) : XRReferenceSpace;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRReferenceSpaceEvent/transform>
+	**/
 	var transform(default, null) : Null<XRRigidTransform>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRReferenceSpaceEvent/XRReferenceSpaceEvent>
+	**/
 	function new(type:String, eventInitDict:XRReferenceSpaceEventInit):Void;
 }

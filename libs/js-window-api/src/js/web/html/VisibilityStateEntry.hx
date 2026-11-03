@@ -24,6 +24,9 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/VisibilityStateEntry>
+**/
 @:native("VisibilityStateEntry") extern class VisibilityStateEntry extends js.web.perf.PerformanceEntry {
 
 }

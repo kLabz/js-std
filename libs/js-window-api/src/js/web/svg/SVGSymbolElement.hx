@@ -24,13 +24,20 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGSymbolElement>
+**/
 @:native("SVGSymbolElement") extern class SVGSymbolElement extends SVGGraphicsElement {
 	/**
 		From interface mixin SVGFitToViewBox
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSymbolElement/viewBox>
 	**/
 	var viewBox(default, null) : SVGAnimatedRect;
 	/**
 		From interface mixin SVGFitToViewBox
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSymbolElement/preserveAspectRatio>
 	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 }

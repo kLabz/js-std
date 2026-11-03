@@ -24,7 +24,16 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFToneChangeEvent>
+**/
 @:native("RTCDTMFToneChangeEvent") extern class RTCDTMFToneChangeEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFToneChangeEvent/tone>
+	**/
 	var tone(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFToneChangeEvent/RTCDTMFToneChangeEvent>
+	**/
 	function new(type:String, ?eventInitDict:RTCDTMFToneChangeEventInit):Void;
 }

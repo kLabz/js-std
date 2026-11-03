@@ -24,11 +24,32 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGRectElement>
+**/
 @:native("SVGRectElement") extern class SVGRectElement extends SVGGeometryElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGRectElement/x>
+	**/
 	var x(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGRectElement/y>
+	**/
 	var y(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGRectElement/width>
+	**/
 	var width(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGRectElement/height>
+	**/
 	var height(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGRectElement/rx>
+	**/
 	var rx(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGRectElement/ry>
+	**/
 	var ry(default, null) : SVGAnimatedLength;
 }

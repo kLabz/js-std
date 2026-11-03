@@ -24,6 +24,12 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSLayerStatementRule>
+**/
 @:native("CSSLayerStatementRule") extern class CSSLayerStatementRule extends CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSLayerStatementRule/nameList>
+	**/
 	var nameList(default, null) : Array<String>;
 }

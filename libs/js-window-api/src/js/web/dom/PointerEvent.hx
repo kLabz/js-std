@@ -24,24 +24,74 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PointerEvent>
+**/
 @:native("PointerEvent") extern class PointerEvent extends MouseEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/pointerId>
+	**/
 	var pointerId(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/width>
+	**/
 	var width(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/height>
+	**/
 	var height(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/pressure>
+	**/
 	var pressure(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/tangentialPressure>
+	**/
 	var tangentialPressure(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/tiltX>
+	**/
 	var tiltX(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/tiltY>
+	**/
 	var tiltY(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/twist>
+	**/
 	var twist(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/altitudeAngle>
+	**/
 	var altitudeAngle(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/azimuthAngle>
+	**/
 	var azimuthAngle(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/pointerType>
+	**/
 	var pointerType(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/isPrimary>
+	**/
 	var isPrimary(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/persistentDeviceId>
+	**/
 	var persistentDeviceId(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/PointerEvent>
+	**/
 	function new(type:String, ?eventInitDict:PointerEventInit):Void;
 	/**
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/getCoalescedEvents>
 	**/
 	function getCoalescedEvents():Array<PointerEvent>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PointerEvent/getPredictedEvents>
+	**/
 	function getPredictedEvents():Array<PointerEvent>;
 }

@@ -26,16 +26,42 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/VideoEncoder>
 **/
 @:native("VideoEncoder") extern class VideoEncoder extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoEncoder/state>
+	**/
 	var state(default, null) : CodecState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoEncoder/encodeQueueSize>
+	**/
 	var encodeQueueSize(default, null) : Int;
 	var ondequeue : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoEncoder/VideoEncoder>
+	**/
 	function new(init:VideoEncoderInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoEncoder/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoEncoder/configure>
+	**/
 	function configure(config:VideoEncoderConfig):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoEncoder/encode>
+	**/
 	function encode(frame:VideoFrame, ?options:VideoEncoderEncodeOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoEncoder/flush>
+	**/
 	function flush():js.lib.Promise<Void>;
 	function isConfigSupported(config:VideoEncoderConfig):js.lib.Promise<VideoEncoderSupport>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoEncoder/reset>
+	**/
 	function reset():Void;
 }

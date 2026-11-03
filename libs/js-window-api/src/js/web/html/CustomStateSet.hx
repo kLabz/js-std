@@ -24,14 +24,44 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CustomStateSet>
+**/
 @:native("CustomStateSet") extern class CustomStateSet {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomStateSet/size>
+	**/
 	var size(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomStateSet/add>
+	**/
 	function add(value:String):CustomStateSet;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomStateSet/clear>
+	**/
 	function clear():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomStateSet/delete>
+	**/
 	function delete(value:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomStateSet/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<String, String>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomStateSet/forEach>
+	**/
 	function forEach(callback:(value:String, key:String, set:CustomStateSet) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomStateSet/has>
+	**/
 	function has(value:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomStateSet/keys>
+	**/
 	function keys():js.lib.Iterator<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomStateSet/values>
+	**/
 	function values():js.lib.Iterator<String>;
 }

@@ -24,6 +24,7 @@
 
 package js.web.html;
 
-@:native("HTMLDirectoryElement") extern class HTMLDirectoryElement extends HTMLElement {
+@:native("HTMLDirectoryElement") @:deprecated extern class HTMLDirectoryElement extends HTMLElement {
+	@:deprecated
 	var compact : Bool;
 }

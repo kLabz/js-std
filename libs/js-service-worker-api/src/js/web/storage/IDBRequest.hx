@@ -24,11 +24,29 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/IDBRequest>
+**/
 @:native("IDBRequest") extern class IDBRequest extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBRequest/result>
+	**/
 	var result(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBRequest/error>
+	**/
 	var error(default, null) : Null<js.web.dom.DOMException>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBRequest/source>
+	**/
 	var source(default, null) : Null<haxe.extern.EitherType<IDBObjectStore, haxe.extern.EitherType<IDBIndex, IDBCursor>>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBRequest/transaction>
+	**/
 	var transaction(default, null) : Null<IDBTransaction>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBRequest/readyState>
+	**/
 	var readyState(default, null) : IDBRequestReadyState;
 	var onsuccess : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;

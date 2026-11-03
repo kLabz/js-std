@@ -24,12 +24,33 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer>
+**/
 @:native("XREquirectLayer") extern class XREquirectLayer extends XRCompositionLayer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer/space>
+	**/
 	var space : XRSpace;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer/transform>
+	**/
 	var transform : XRRigidTransform;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer/radius>
+	**/
 	var radius : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer/centralHorizontalAngle>
+	**/
 	var centralHorizontalAngle : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer/upperVerticalAngle>
+	**/
 	var upperVerticalAngle : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer/lowerVerticalAngle>
+	**/
 	var lowerVerticalAngle : Float;
 	var onredraw : js.web.html.EventHandler;
 }

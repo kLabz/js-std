@@ -26,10 +26,21 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/HIDInputReportEvent>
 **/
 @:native("HIDInputReportEvent") extern class HIDInputReportEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDInputReportEvent/device>
+	**/
 	var device(default, null) : HIDDevice;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDInputReportEvent/reportId>
+	**/
 	var reportId(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDInputReportEvent/data>
+	**/
 	var data(default, null) : js.lib.DataView;
 	function new(type:String, eventInitDict:HIDInputReportEventInit):Void;
 }

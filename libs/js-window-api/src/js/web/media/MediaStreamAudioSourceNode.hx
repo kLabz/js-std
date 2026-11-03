@@ -24,7 +24,16 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaStreamAudioSourceNode>
+**/
 @:native("MediaStreamAudioSourceNode") extern class MediaStreamAudioSourceNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamAudioSourceNode/mediaStream>
+	**/
 	var mediaStream(default, null) : MediaStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamAudioSourceNode/MediaStreamAudioSourceNode>
+	**/
 	function new(context:AudioContext, options:MediaStreamAudioSourceOptions):Void;
 }

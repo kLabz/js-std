@@ -24,6 +24,12 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSTransition>
+**/
 @:native("CSSTransition") extern class CSSTransition extends Animation {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSTransition/transitionProperty>
+	**/
 	var transitionProperty(default, null) : String;
 }

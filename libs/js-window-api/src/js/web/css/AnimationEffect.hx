@@ -24,6 +24,9 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AnimationEffect>
+**/
 @:native("AnimationEffect") extern class AnimationEffect {
 	/**
 		From partial interface in web-animations-2.idl
@@ -45,7 +48,13 @@ package js.web.css;
 		From partial interface in web-animations-2.idl
 	**/
 	function before(effects:haxe.Rest<AnimationEffect>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnimationEffect/getComputedTiming>
+	**/
 	function getComputedTiming():ComputedEffectTiming;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnimationEffect/getTiming>
+	**/
 	function getTiming():EffectTiming;
 	/**
 		From partial interface in web-animations-2.idl
@@ -55,5 +64,8 @@ package js.web.css;
 		From partial interface in web-animations-2.idl
 	**/
 	function replace(effects:haxe.Rest<AnimationEffect>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnimationEffect/updateTiming>
+	**/
 	function updateTiming(?timing:OptionalEffectTiming):Void;
 }

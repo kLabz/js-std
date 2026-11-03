@@ -24,18 +24,51 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Sanitizer>
+**/
 @:native("Sanitizer") extern class Sanitizer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/Sanitizer>
+	**/
 	function new(?configuration:haxe.extern.EitherType<SanitizerConfig, SanitizerPresets> = SanitizerPresets.DEFAULT):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/allowAttribute>
+	**/
 	function allowAttribute(attribute:SanitizerAttribute):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/allowElement>
+	**/
 	function allowElement(element:SanitizerElementWithAttributes):Bool;
 	function allowProcessingInstruction(pi:SanitizerPI):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/get>
+	**/
 	function get():SanitizerConfig;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/removeAttribute>
+	**/
 	function removeAttribute(attribute:SanitizerAttribute):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/removeElement>
+	**/
 	function removeElement(element:SanitizerElement):Bool;
 	function removeProcessingInstruction(pi:SanitizerPI):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/removeUnsafe>
+	**/
 	function removeUnsafe():Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/replaceElementWithChildren>
+	**/
 	function replaceElementWithChildren(element:SanitizerElement):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/setComments>
+	**/
 	function setComments(allow:Bool):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/setDataAttributes>
+	**/
 	function setDataAttributes(allow:Bool):Bool;
 	function setJavascriptURLs(allow:Bool):Bool;
 }

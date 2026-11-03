@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryRule>
+**/
 @:native("CSSPositionTryRule") extern class CSSPositionTryRule extends CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryRule/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryRule/style>
+	**/
 	var style(default, null) : CSSPositionTryDescriptors;
 }

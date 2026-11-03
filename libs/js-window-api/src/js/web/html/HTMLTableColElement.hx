@@ -24,26 +24,45 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLTableColElement>
+**/
 @:native("HTMLTableColElement") extern class HTMLTableColElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableColElement/span>
+	**/
 	var span : Int;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableColElement/align>
 	**/
+	@:deprecated
 	var align : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableColElement/ch>
 	**/
+	@:deprecated
 	var ch : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableColElement/chOff>
 	**/
+	@:deprecated
 	var chOff : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableColElement/vAlign>
 	**/
+	@:deprecated
 	var vAlign : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var width : String;
 }

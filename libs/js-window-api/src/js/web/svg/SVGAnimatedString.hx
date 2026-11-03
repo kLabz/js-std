@@ -24,7 +24,16 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedString>
+**/
 @:native("SVGAnimatedString") extern class SVGAnimatedString {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedString/baseVal>
+	**/
 	var baseVal : haxe.extern.EitherType<String, js.web.dom.TrustedScriptURL>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedString/animVal>
+	**/
 	var animVal(default, null) : String;
 }

@@ -26,11 +26,25 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/BatteryManager>
 **/
 @:native("BatteryManager") extern class BatteryManager extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BatteryManager/charging>
+	**/
 	var charging(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BatteryManager/chargingTime>
+	**/
 	var chargingTime(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BatteryManager/dischargingTime>
+	**/
 	var dischargingTime(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BatteryManager/level>
+	**/
 	var level(default, null) : Float;
 	var onchargingchange : js.web.html.EventHandler;
 	var onchargingtimechange : js.web.html.EventHandler;

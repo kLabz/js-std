@@ -24,7 +24,16 @@
 
 package js.web.webgl;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WebGLContextEvent>
+**/
 @:native("WebGLContextEvent") extern class WebGLContextEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLContextEvent/statusMessage>
+	**/
 	var statusMessage(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLContextEvent/WebGLContextEvent>
+	**/
 	function new(type:String, ?eventInit:WebGLContextEventInit):Void;
 }

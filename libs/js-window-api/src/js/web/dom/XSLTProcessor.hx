@@ -24,14 +24,53 @@
 
 package js.web.dom;
 
-@:native("XSLTProcessor") extern class XSLTProcessor {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor>
+**/
+@:native("XSLTProcessor") @:deprecated extern class XSLTProcessor {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/XSLTProcessor>
+	**/
+	@:deprecated
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/clearParameters>
+	**/
+	@:deprecated
 	function clearParameters():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/getParameter>
+	**/
+	@:deprecated
 	function getParameter(namespaceURI:String, localName:String):Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/importStylesheet>
+	**/
+	@:deprecated
 	function importStylesheet(style:Node):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/removeParameter>
+	**/
+	@:deprecated
 	function removeParameter(namespaceURI:String, localName:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/reset>
+	**/
+	@:deprecated
 	function reset():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/setParameter>
+	**/
+	@:deprecated
 	function setParameter(namespaceURI:String, localName:String, value:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/transformToDocument>
+	**/
+	@:deprecated
 	function transformToDocument(source:Node):Document;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/transformToFragment>
+	**/
+	@:deprecated
 	function transformToFragment(source:Node, output:Document):DocumentFragment;
 }

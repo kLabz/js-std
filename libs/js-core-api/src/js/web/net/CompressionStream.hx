@@ -24,14 +24,24 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CompressionStream>
+**/
 @:native("CompressionStream") extern class CompressionStream {
 	/**
 		From interface mixin GenericTransformStream
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CompressionStream/readable>
 	**/
 	var readable(default, null) : ReadableStream;
 	/**
 		From interface mixin GenericTransformStream
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CompressionStream/writable>
 	**/
 	var writable(default, null) : WritableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CompressionStream/CompressionStream>
+	**/
 	function new(format:CompressionFormat):Void;
 }

@@ -26,6 +26,8 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/USBEndpoint>
 **/
 @:native("USBEndpoint") extern class USBEndpoint {
 	var endpointNumber(default, null) : Int;

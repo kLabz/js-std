@@ -24,17 +24,36 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement>
+**/
 @:native("SVGGraphicsElement") extern class SVGGraphicsElement extends SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement/transform>
+	**/
 	var transform(default, null) : SVGAnimatedTransformList;
 	/**
 		From interface mixin SVGTests
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement/requiredExtensions>
 	**/
 	var requiredExtensions(default, null) : SVGStringList;
 	/**
 		From interface mixin SVGTests
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement/systemLanguage>
 	**/
 	var systemLanguage(default, null) : SVGStringList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement/getBBox>
+	**/
 	function getBBox(?options:SVGBoundingBoxOptions):js.web.dom.SVGRect;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement/getCTM>
+	**/
 	function getCTM():Null<js.web.dom.SVGMatrix>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement/getScreenCTM>
+	**/
 	function getScreenCTM():Null<js.web.dom.SVGMatrix>;
 }

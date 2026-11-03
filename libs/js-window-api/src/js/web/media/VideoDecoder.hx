@@ -26,16 +26,42 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder>
 **/
 @:native("VideoDecoder") extern class VideoDecoder extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/state>
+	**/
 	var state(default, null) : CodecState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/decodeQueueSize>
+	**/
 	var decodeQueueSize(default, null) : Int;
 	var ondequeue : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/VideoDecoder>
+	**/
 	function new(init:VideoDecoderInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/configure>
+	**/
 	function configure(config:VideoDecoderConfig):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/decode>
+	**/
 	function decode(chunk:EncodedVideoChunk):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/flush>
+	**/
 	function flush():js.lib.Promise<Void>;
 	function isConfigSupported(config:VideoDecoderConfig):js.lib.Promise<VideoDecoderSupport>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/reset>
+	**/
 	function reset():Void;
 }

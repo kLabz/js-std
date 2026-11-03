@@ -24,6 +24,9 @@
 
 package js.web.webgl;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WebGLProgram>
+**/
 @:native("WebGLProgram") extern class WebGLProgram extends WebGLObject {
 
 }

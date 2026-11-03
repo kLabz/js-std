@@ -24,10 +24,28 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ReadableByteStreamController>
+**/
 @:native("ReadableByteStreamController") extern class ReadableByteStreamController {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableByteStreamController/byobRequest>
+	**/
 	var byobRequest(default, null) : Null<ReadableStreamBYOBRequest>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableByteStreamController/desiredSize>
+	**/
 	var desiredSize(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableByteStreamController/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableByteStreamController/enqueue>
+	**/
 	function enqueue(chunk:js.lib.ArrayBufferView):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableByteStreamController/error>
+	**/
 	function error(?e:Any):Void;
 }

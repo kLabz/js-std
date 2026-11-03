@@ -26,15 +26,41 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/ImageDecoder>
 **/
 @:native("ImageDecoder") extern class ImageDecoder {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageDecoder/type>
+	**/
 	var type(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageDecoder/complete>
+	**/
 	var complete(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageDecoder/completed>
+	**/
 	var completed(default, null) : js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageDecoder/tracks>
+	**/
 	var tracks(default, null) : ImageTrackList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageDecoder/ImageDecoder>
+	**/
 	function new(init:ImageDecoderInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageDecoder/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageDecoder/decode>
+	**/
 	function decode(?options:ImageDecodeOptions):js.lib.Promise<ImageDecodeResult>;
 	function isTypeSupported(type:String):js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageDecoder/reset>
+	**/
 	function reset():Void;
 }

@@ -24,11 +24,32 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TextUpdateEvent>
+**/
 @:native("TextUpdateEvent") extern class TextUpdateEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextUpdateEvent/updateRangeStart>
+	**/
 	var updateRangeStart(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextUpdateEvent/updateRangeEnd>
+	**/
 	var updateRangeEnd(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextUpdateEvent/text>
+	**/
 	var text(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextUpdateEvent/selectionStart>
+	**/
 	var selectionStart(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextUpdateEvent/selectionEnd>
+	**/
 	var selectionEnd(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextUpdateEvent/TextUpdateEvent>
+	**/
 	function new(type:String, ?options:TextUpdateEventInit):Void;
 }

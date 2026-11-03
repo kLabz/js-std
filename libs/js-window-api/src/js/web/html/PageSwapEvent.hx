@@ -24,8 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PageSwapEvent>
+**/
 @:native("PageSwapEvent") extern class PageSwapEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PageSwapEvent/activation>
+	**/
 	var activation(default, null) : Null<NavigationActivation>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PageSwapEvent/viewTransition>
+	**/
 	var viewTransition(default, null) : Null<js.web.css.ViewTransition>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PageSwapEvent/PageSwapEvent>
+	**/
 	function new(type:String, ?eventInitDict:PageSwapEventInit):Void;
 }

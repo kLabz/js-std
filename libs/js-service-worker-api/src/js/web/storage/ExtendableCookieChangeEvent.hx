@@ -24,8 +24,20 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ExtendableCookieChangeEvent>
+**/
 @:native("ExtendableCookieChangeEvent") extern class ExtendableCookieChangeEvent extends js.web.sw.ExtendableEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ExtendableCookieChangeEvent/changed>
+	**/
 	var changed(default, null) : Array<CookieListItem>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ExtendableCookieChangeEvent/deleted>
+	**/
 	var deleted(default, null) : Array<CookieListItem>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ExtendableCookieChangeEvent/ExtendableCookieChangeEvent>
+	**/
 	function new(type:String, ?eventInitDict:ExtendableCookieChangeEventInit):Void;
 }

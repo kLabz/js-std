@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSKeywordValue>
+**/
 @:native("CSSKeywordValue") extern class CSSKeywordValue extends CSSStyleValue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSKeywordValue/value>
+	**/
 	var value : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSKeywordValue/CSSKeywordValue>
+	**/
 	function new(value:String):Void;
 }

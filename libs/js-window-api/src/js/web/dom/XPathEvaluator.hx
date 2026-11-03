@@ -24,18 +24,31 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XPathEvaluator>
+**/
 @:native("XPathEvaluator") extern class XPathEvaluator {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XPathEvaluator/XPathEvaluator>
+	**/
 	function new():Void;
 	/**
 		From interface mixin XPathEvaluatorBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XPathEvaluator/createExpression>
 	**/
 	function createExpression(expression:String, ?resolver:Null<XPathNSResolver> = null):XPathExpression;
 	/**
 		From interface mixin XPathEvaluatorBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XPathEvaluator/createNSResolver>
 	**/
+	@:deprecated
 	function createNSResolver(nodeResolver:Node):Node;
 	/**
 		From interface mixin XPathEvaluatorBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XPathEvaluator/evaluate>
 	**/
 	function evaluate(expression:String, contextNode:Node, ?resolver:Null<XPathNSResolver> = null, ?type:Int = 0, ?result:Null<XPathResult> = null):XPathResult;
 }

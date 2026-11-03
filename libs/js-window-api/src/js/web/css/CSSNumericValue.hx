@@ -24,16 +24,49 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSNumericValue>
+**/
 @:native("CSSNumericValue") extern class CSSNumericValue extends CSSStyleValue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericValue/add>
+	**/
 	function add(values:haxe.Rest<CSSNumberish>):CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericValue/div>
+	**/
 	function div(values:haxe.Rest<CSSNumberish>):CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericValue/equals>
+	**/
 	function equals(value:haxe.Rest<CSSNumberish>):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericValue/max>
+	**/
 	function max(values:haxe.Rest<CSSNumberish>):CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericValue/min>
+	**/
 	function min(values:haxe.Rest<CSSNumberish>):CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericValue/mul>
+	**/
 	function mul(values:haxe.Rest<CSSNumberish>):CSSNumericValue;
 	function parse(cssText:String):CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericValue/sub>
+	**/
 	function sub(values:haxe.Rest<CSSNumberish>):CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericValue/to>
+	**/
 	function to(unit:String):CSSUnitValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericValue/toSum>
+	**/
 	function toSum(units:haxe.Rest<String>):CSSMathSum;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericValue/type>
+	**/
 	function type():CSSNumericType;
 }

@@ -26,6 +26,8 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PresentationReceiver>
 **/
 @:native("PresentationReceiver") extern class PresentationReceiver {
 	var connectionList(default, null) : js.lib.Promise<PresentationConnectionList>;

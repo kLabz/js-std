@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/StyleSheetList>
+**/
 @:native("StyleSheetList") extern class StyleSheetList implements ArrayAccess<Null<CSSStyleSheet>> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StyleSheetList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StyleSheetList/item>
+	**/
 	function item(index:Int):Null<CSSStyleSheet>;
 }

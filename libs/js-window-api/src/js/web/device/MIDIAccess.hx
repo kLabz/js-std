@@ -26,10 +26,21 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/MIDIAccess>
 **/
 @:native("MIDIAccess") extern class MIDIAccess extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIAccess/inputs>
+	**/
 	var inputs(default, null) : MIDIInputMap;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIAccess/outputs>
+	**/
 	var outputs(default, null) : MIDIOutputMap;
 	var onstatechange : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIAccess/sysexEnabled>
+	**/
 	var sysexEnabled(default, null) : Bool;
 }

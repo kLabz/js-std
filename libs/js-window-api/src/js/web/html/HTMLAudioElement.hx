@@ -26,6 +26,8 @@ package js.web.html;
 
 /**
 	Unhandled extended attribute LegacyFactoryFunction
+	
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLAudioElement>
 **/
 @:native("HTMLAudioElement") extern class HTMLAudioElement extends HTMLMediaElement {
 

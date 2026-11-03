@@ -26,13 +26,30 @@ package js.web.css;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject>
 **/
 @:native("PreferenceObject") extern class PreferenceObject extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject/override>
+	**/
 	@:native("override")
 	var override_(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject/value>
+	**/
 	var value(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject/validValues>
+	**/
 	var validValues(default, null) : Array<String>;
 	var onchange : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject/clearOverride>
+	**/
 	function clearOverride():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject/requestOverride>
+	**/
 	function requestOverride(value:Null<String>):js.lib.Promise<Void>;
 }

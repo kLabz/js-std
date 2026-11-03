@@ -24,6 +24,12 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLDataListElement>
+**/
 @:native("HTMLDataListElement") extern class HTMLDataListElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLDataListElement/options>
+	**/
 	var options(default, null) : js.web.dom.HTMLCollection;
 }

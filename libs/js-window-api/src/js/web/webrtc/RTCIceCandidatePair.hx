@@ -24,7 +24,16 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidatePair>
+**/
 @:native("RTCIceCandidatePair") extern class RTCIceCandidatePair {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidatePair/local>
+	**/
 	var local(default, null) : RTCIceCandidate;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidatePair/remote>
+	**/
 	var remote(default, null) : RTCIceCandidate;
 }

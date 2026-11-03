@@ -24,7 +24,16 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ExtendableEvent>
+**/
 @:native("ExtendableEvent") extern class ExtendableEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ExtendableEvent/ExtendableEvent>
+	**/
 	function new(type:String, ?eventInitDict:ExtendableEventInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ExtendableEvent/waitUntil>
+	**/
 	function waitUntil(f:js.lib.Promise<Any>):Void;
 }

@@ -26,15 +26,31 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRRenderState>
 **/
 @:native("XRRenderState") extern class XRRenderState {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRRenderState/depthNear>
+	**/
 	var depthNear(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRRenderState/depthFar>
+	**/
 	var depthFar(default, null) : Float;
 	var passthroughFullyObscured(default, null) : Null<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRRenderState/inlineVerticalFieldOfView>
+	**/
 	var inlineVerticalFieldOfView(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRRenderState/baseLayer>
+	**/
 	var baseLayer(default, null) : Null<XRWebGLLayer>;
 	/**
 		From partial interface in webxrlayers.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRRenderState/layers>
 	**/
 	var layers(default, null) : Array<XRLayer>;
 }

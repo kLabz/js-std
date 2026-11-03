@@ -24,6 +24,12 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BarProp>
+**/
 @:native("BarProp") extern class BarProp {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BarProp/visible>
+	**/
 	var visible(default, null) : Bool;
 }

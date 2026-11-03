@@ -26,10 +26,24 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRInputSourcesChangeEvent>
 **/
 @:native("XRInputSourcesChangeEvent") extern class XRInputSourcesChangeEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourcesChangeEvent/session>
+	**/
 	var session(default, null) : XRSession;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourcesChangeEvent/added>
+	**/
 	var added(default, null) : Array<XRInputSource>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourcesChangeEvent/removed>
+	**/
 	var removed(default, null) : Array<XRInputSource>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourcesChangeEvent/XRInputSourcesChangeEvent>
+	**/
 	function new(type:String, eventInitDict:XRInputSourcesChangeEventInit):Void;
 }

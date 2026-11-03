@@ -24,8 +24,20 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ConvolverNode>
+**/
 @:native("ConvolverNode") extern class ConvolverNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ConvolverNode/buffer>
+	**/
 	var buffer : Null<AudioBuffer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ConvolverNode/normalize>
+	**/
 	var normalize : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ConvolverNode/ConvolverNode>
+	**/
 	function new(context:BaseAudioContext, ?options:ConvolverOptions):Void;
 }

@@ -24,13 +24,31 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGStyleElement>
+**/
 @:native("SVGStyleElement") extern class SVGStyleElement extends SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGStyleElement/type>
+	**/
+	@:deprecated
 	var type : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGStyleElement/media>
+	**/
 	var media : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGStyleElement/title>
+	**/
 	var title : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGStyleElement/disabled>
+	**/
 	var disabled : Bool;
 	/**
 		From interface mixin LinkStyle
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGStyleElement/sheet>
 	**/
 	var sheet(default, null) : Null<js.web.css.CSSStyleSheet>;
 }

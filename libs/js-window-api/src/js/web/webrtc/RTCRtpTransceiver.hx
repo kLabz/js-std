@@ -24,12 +24,36 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver>
+**/
 @:native("RTCRtpTransceiver") extern class RTCRtpTransceiver {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver/mid>
+	**/
 	var mid(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver/sender>
+	**/
 	var sender(default, null) : RTCRtpSender;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver/receiver>
+	**/
 	var receiver(default, null) : RTCRtpReceiver;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver/direction>
+	**/
 	var direction : RTCRtpTransceiverDirection;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver/currentDirection>
+	**/
 	var currentDirection(default, null) : Null<RTCRtpTransceiverDirection>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver/setCodecPreferences>
+	**/
 	function setCodecPreferences(codecs:Array<RTCRtpCodec>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver/stop>
+	**/
 	function stop():Void;
 }

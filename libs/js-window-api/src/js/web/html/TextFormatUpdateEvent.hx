@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TextFormatUpdateEvent>
+**/
 @:native("TextFormatUpdateEvent") extern class TextFormatUpdateEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextFormatUpdateEvent/TextFormatUpdateEvent>
+	**/
 	function new(type:String, ?options:TextFormatUpdateEventInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextFormatUpdateEvent/getTextFormats>
+	**/
 	function getTextFormats():Array<TextFormat>;
 }

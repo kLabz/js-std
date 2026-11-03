@@ -24,19 +24,52 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent>
+**/
 @:native("PaymentRequestEvent") extern class PaymentRequestEvent extends ExtendableEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/topOrigin>
+	**/
 	var topOrigin(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/paymentRequestOrigin>
+	**/
 	var paymentRequestOrigin(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/paymentRequestId>
+	**/
 	var paymentRequestId(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/methodData>
+	**/
 	var methodData(default, null) : Array<js.web.auth.PaymentMethodData>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/total>
+	**/
 	var total(default, null) : { };
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/modifiers>
+	**/
 	var modifiers(default, null) : Array<js.web.auth.PaymentDetailsModifier>;
 	var paymentOptions(default, null) : Null<{ }>;
 	var shippingOptions(default, null) : Null<Array<js.web.auth.PaymentShippingOption>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/PaymentRequestEvent>
+	**/
 	function new(type:String, ?eventInitDict:PaymentRequestEventInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/changePaymentMethod>
+	**/
 	function changePaymentMethod(methodName:String, ?methodDetails:Null<{ }> = null):js.lib.Promise<Null<PaymentRequestDetailsUpdate>>;
 	function changeShippingAddress(?shippingAddress:AddressInit):js.lib.Promise<Null<PaymentRequestDetailsUpdate>>;
 	function changeShippingOption(shippingOption:String):js.lib.Promise<Null<PaymentRequestDetailsUpdate>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/openWindow>
+	**/
 	function openWindow(url:String):js.lib.Promise<Null<WindowClient>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/respondWith>
+	**/
 	function respondWith(handlerResponsePromise:js.lib.Promise<PaymentHandlerResponse>):Void;
 }

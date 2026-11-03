@@ -24,10 +24,28 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSImportRule>
+**/
 @:native("CSSImportRule") extern class CSSImportRule extends CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSImportRule/href>
+	**/
 	var href(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSImportRule/media>
+	**/
 	var media(default, null) : MediaList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSImportRule/styleSheet>
+	**/
 	var styleSheet(default, null) : Null<CSSStyleSheet>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSImportRule/layerName>
+	**/
 	var layerName(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSImportRule/supportsText>
+	**/
 	var supportsText(default, null) : Null<String>;
 }

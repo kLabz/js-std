@@ -24,11 +24,32 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent>
+**/
 @:native("ExtendableMessageEvent") extern class ExtendableMessageEvent extends ExtendableEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/data>
+	**/
 	var data(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/origin>
+	**/
 	var origin(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/lastEventId>
+	**/
 	var lastEventId(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/source>
+	**/
 	var source(default, null) : Null<haxe.extern.EitherType<Client, haxe.extern.EitherType<ServiceWorker, js.web.html.MessagePort>>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/ports>
+	**/
 	var ports(default, null) : Array<js.web.html.MessagePort>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/ExtendableMessageEvent>
+	**/
 	function new(type:String, ?eventInitDict:ExtendableMessageEventInit):Void;
 }

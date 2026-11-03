@@ -24,14 +24,41 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TouchEvent>
+**/
 @:native("TouchEvent") extern class TouchEvent extends UIEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TouchEvent/touches>
+	**/
 	var touches(default, null) : TouchList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TouchEvent/targetTouches>
+	**/
 	var targetTouches(default, null) : TouchList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TouchEvent/changedTouches>
+	**/
 	var changedTouches(default, null) : TouchList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TouchEvent/altKey>
+	**/
 	var altKey(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TouchEvent/metaKey>
+	**/
 	var metaKey(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TouchEvent/ctrlKey>
+	**/
 	var ctrlKey(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TouchEvent/shiftKey>
+	**/
 	var shiftKey(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TouchEvent/TouchEvent>
+	**/
 	function new(type:String, ?eventInitDict:TouchEventInit):Void;
 	function getModifierState(keyArg:String):Bool;
 }

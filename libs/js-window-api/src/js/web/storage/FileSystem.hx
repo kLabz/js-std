@@ -24,7 +24,16 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FileSystem>
+**/
 @:native("FileSystem") extern class FileSystem {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystem/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystem/root>
+	**/
 	var root(default, null) : FileSystemDirectoryEntry;
 }

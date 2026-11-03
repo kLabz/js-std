@@ -24,6 +24,12 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioDestinationNode>
+**/
 @:native("AudioDestinationNode") extern class AudioDestinationNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioDestinationNode/maxChannelCount>
+	**/
 	var maxChannelCount(default, null) : Int;
 }

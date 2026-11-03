@@ -24,6 +24,12 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSFontFaceRule>
+**/
 @:native("CSSFontFaceRule") extern class CSSFontFaceRule extends CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFaceRule/style>
+	**/
 	var style(default, null) : CSSFontFaceDescriptors;
 }

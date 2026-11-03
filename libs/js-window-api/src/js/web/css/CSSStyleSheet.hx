@@ -24,24 +24,57 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSStyleSheet>
+**/
 @:native("CSSStyleSheet") extern class CSSStyleSheet extends StyleSheet {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/ownerRule>
+	**/
 	var ownerRule(default, null) : Null<CSSRule>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/cssRules>
+	**/
 	var cssRules(default, null) : CSSRuleList;
 	/**
 		From partial interface in cssom.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/rules>
 	**/
+	@:deprecated
 	var rules(default, null) : CSSRuleList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/CSSStyleSheet>
+	**/
 	function new(?options:CSSStyleSheetInit):Void;
 	/**
 		From partial interface in cssom.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/addRule>
 	**/
+	@:deprecated
 	function addRule(?selector:String, ?style:String, ?index:Int):Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/deleteRule>
+	**/
 	function deleteRule(index:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/insertRule>
+	**/
 	function insertRule(rule:String, ?index:Int = 0):Int;
 	/**
 		From partial interface in cssom.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/removeRule>
 	**/
+	@:deprecated
 	function removeRule(?index:Int = 0):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/replace>
+	**/
 	function replace(text:String):js.lib.Promise<CSSStyleSheet>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleSheet/replaceSync>
+	**/
 	function replaceSync(text:String):Void;
 }

@@ -24,9 +24,15 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLDListElement>
+**/
 @:native("HTMLDListElement") extern class HTMLDListElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLDListElement/compact>
 	**/
+	@:deprecated
 	var compact : Bool;
 }

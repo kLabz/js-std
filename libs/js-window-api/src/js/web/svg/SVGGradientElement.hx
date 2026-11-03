@@ -24,16 +24,30 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGGradientElement>
+**/
 @:native("SVGGradientElement") extern class SVGGradientElement extends SVGElement {
 	static inline var SVG_SPREADMETHOD_UNKNOWN : Int = 0;
 	static inline var SVG_SPREADMETHOD_PAD : Int = 1;
 	static inline var SVG_SPREADMETHOD_REFLECT : Int = 2;
 	static inline var SVG_SPREADMETHOD_REPEAT : Int = 3;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGradientElement/gradientUnits>
+	**/
 	var gradientUnits(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGradientElement/gradientTransform>
+	**/
 	var gradientTransform(default, null) : SVGAnimatedTransformList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGradientElement/spreadMethod>
+	**/
 	var spreadMethod(default, null) : SVGAnimatedEnumeration;
 	/**
 		From interface mixin SVGURIReference
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGradientElement/href>
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

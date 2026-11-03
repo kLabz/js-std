@@ -24,13 +24,40 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/History>
+**/
 @:native("History") extern class History {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/History/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/History/scrollRestoration>
+	**/
 	var scrollRestoration : ScrollRestoration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/History/state>
+	**/
 	var state(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/History/back>
+	**/
 	function back():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/History/forward>
+	**/
 	function forward():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/History/go>
+	**/
 	function go(?delta:Int = 0):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/History/pushState>
+	**/
 	function pushState(data:Any, unused:String, ?url:Null<String> = null):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/History/replaceState>
+	**/
 	function replaceState(data:Any, unused:String, ?url:Null<String> = null):Void;
 }

@@ -24,7 +24,16 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannelEvent>
+**/
 @:native("RTCDataChannelEvent") extern class RTCDataChannelEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannelEvent/channel>
+	**/
 	var channel(default, null) : RTCDataChannel;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannelEvent/RTCDataChannelEvent>
+	**/
 	function new(type:String, eventInitDict:RTCDataChannelEventInit):Void;
 }

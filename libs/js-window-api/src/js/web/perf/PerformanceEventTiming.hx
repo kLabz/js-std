@@ -24,12 +24,33 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming>
+**/
 @:native("PerformanceEventTiming") extern class PerformanceEventTiming extends PerformanceEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/processingStart>
+	**/
 	var processingStart(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/processingEnd>
+	**/
 	var processingEnd(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/cancelable>
+	**/
 	var cancelable(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/target>
+	**/
 	var target(default, null) : Null<js.web.dom.Node>;
 	var targetSelector(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/interactionId>
+	**/
 	var interactionId(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/toJSON>
+	**/
 	function toJSON():{ };
 }

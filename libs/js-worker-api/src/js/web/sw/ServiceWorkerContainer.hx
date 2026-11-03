@@ -26,15 +26,35 @@ package js.web.sw;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer>
 **/
 @:native("ServiceWorkerContainer") extern class ServiceWorkerContainer extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/controller>
+	**/
 	var controller(default, null) : Null<ServiceWorker>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/ready>
+	**/
 	var ready(default, null) : js.lib.Promise<ServiceWorkerRegistration>;
 	var oncontrollerchange : js.web.html.EventHandler;
 	var onmessage : js.web.html.EventHandler;
 	var onmessageerror : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/getRegistration>
+	**/
 	function getRegistration(?clientURL:String = ""):js.lib.Promise<haxe.extern.EitherType<ServiceWorkerRegistration, Void>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/getRegistrations>
+	**/
 	function getRegistrations():js.lib.Promise<Array<ServiceWorkerRegistration>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/register>
+	**/
 	function register(scriptURL:haxe.extern.EitherType<js.web.dom.TrustedScriptURL, String>, ?options:RegistrationOptions):js.lib.Promise<ServiceWorkerRegistration>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/startMessages>
+	**/
 	function startMessages():Void;
 }

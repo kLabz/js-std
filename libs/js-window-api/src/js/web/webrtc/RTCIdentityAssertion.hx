@@ -24,8 +24,17 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCIdentityAssertion>
+**/
 @:native("RTCIdentityAssertion") extern class RTCIdentityAssertion {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIdentityAssertion/idp>
+	**/
 	var idp : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIdentityAssertion/name>
+	**/
 	var name : String;
 	function new(idp:String, name:String):Void;
 }

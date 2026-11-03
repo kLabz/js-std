@@ -24,13 +24,40 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSStyleDeclaration>
+**/
 @:native("CSSStyleDeclaration") extern class CSSStyleDeclaration implements ArrayAccess<String> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleDeclaration/cssText>
+	**/
 	var cssText : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleDeclaration/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleDeclaration/parentRule>
+	**/
 	var parentRule(default, null) : Null<CSSRule>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleDeclaration/getPropertyPriority>
+	**/
 	function getPropertyPriority(property:String):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleDeclaration/getPropertyValue>
+	**/
 	function getPropertyValue(property:String):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleDeclaration/item>
+	**/
 	function item(index:Int):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleDeclaration/removeProperty>
+	**/
 	function removeProperty(property:String):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleDeclaration/setProperty>
+	**/
 	function setProperty(property:String, value:String, ?priority:String = ""):Void;
 }

@@ -24,16 +24,52 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TreeWalker>
+**/
 @:native("TreeWalker") extern class TreeWalker {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TreeWalker/root>
+	**/
 	var root(default, null) : Node;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TreeWalker/whatToShow>
+	**/
 	var whatToShow(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TreeWalker/filter>
+	**/
 	var filter(default, null) : Null<NodeFilter>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TreeWalker/currentNode>
+	**/
 	var currentNode : Node;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TreeWalker/firstChild>
+	**/
 	function firstChild():Null<Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TreeWalker/lastChild>
+	**/
 	function lastChild():Null<Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TreeWalker/nextNode>
+	**/
 	function nextNode():Null<Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TreeWalker/nextSibling>
+	**/
 	function nextSibling():Null<Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TreeWalker/parentNode>
+	**/
 	function parentNode():Null<Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TreeWalker/previousNode>
+	**/
 	function previousNode():Null<Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TreeWalker/previousSibling>
+	**/
 	function previousSibling():Null<Node>;
 }

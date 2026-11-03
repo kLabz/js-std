@@ -26,12 +26,32 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer>
 **/
 @:native("BluetoothRemoteGATTServer") extern class BluetoothRemoteGATTServer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer/device>
+	**/
 	var device(default, null) : BluetoothDevice;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer/connected>
+	**/
 	var connected(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer/connect>
+	**/
 	function connect():js.lib.Promise<BluetoothRemoteGATTServer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer/disconnect>
+	**/
 	function disconnect():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer/getPrimaryService>
+	**/
 	function getPrimaryService(service:BluetoothServiceUUID):js.lib.Promise<BluetoothRemoteGATTService>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer/getPrimaryServices>
+	**/
 	function getPrimaryServices(?service:BluetoothServiceUUID):js.lib.Promise<Array<BluetoothRemoteGATTService>>;
 }

@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGTextPathElement>
+**/
 @:native("SVGTextPathElement") extern class SVGTextPathElement extends SVGTextContentElement {
 	static inline var TEXTPATH_METHODTYPE_UNKNOWN : Int = 0;
 	static inline var TEXTPATH_METHODTYPE_ALIGN : Int = 1;
@@ -34,12 +37,26 @@ package js.web.svg;
 	static inline var TEXTPATH_SIDETYPE_UNKNOWN : Int = 0;
 	static inline var TEXTPATH_SIDETYPE_LEFT : Int = 1;
 	static inline var TEXTPATH_SIDETYPE_RIGHT : Int = 2;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPathElement/startOffset>
+	**/
 	var startOffset(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPathElement/method>
+	**/
 	var method(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPathElement/spacing>
+	**/
 	var spacing(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPathElement/side>
+	**/
 	var side(default, null) : SVGAnimatedEnumeration;
 	/**
 		From interface mixin SVGURIReference
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPathElement/href>
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

@@ -24,9 +24,24 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy>
+**/
 @:native("TrustedTypePolicy") extern class TrustedTypePolicy {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/createHTML>
+	**/
 	function createHTML(input:String, arguments:haxe.Rest<Any>):TrustedHTML;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/createScript>
+	**/
 	function createScript(input:String, arguments:haxe.Rest<Any>):TrustedScript;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/createScriptURL>
+	**/
 	function createScriptURL(input:String, arguments:haxe.Rest<Any>):TrustedScriptURL;
 }

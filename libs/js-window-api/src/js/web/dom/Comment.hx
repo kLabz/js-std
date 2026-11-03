@@ -24,6 +24,12 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Comment>
+**/
 @:native("Comment") extern class Comment extends CharacterData {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Comment/Comment>
+	**/
 	function new(?data:String = ""):Void;
 }

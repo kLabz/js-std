@@ -24,7 +24,16 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisErrorEvent>
+**/
 @:native("SpeechSynthesisErrorEvent") extern class SpeechSynthesisErrorEvent extends SpeechSynthesisEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisErrorEvent/error>
+	**/
 	var error(default, null) : SpeechSynthesisErrorCode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisErrorEvent/SpeechSynthesisErrorEvent>
+	**/
 	function new(type:String, eventInitDict:SpeechSynthesisErrorEventInit):Void;
 }

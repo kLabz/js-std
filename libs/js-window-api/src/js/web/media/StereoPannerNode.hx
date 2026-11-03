@@ -24,7 +24,16 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/StereoPannerNode>
+**/
 @:native("StereoPannerNode") extern class StereoPannerNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StereoPannerNode/pan>
+	**/
 	var pan(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StereoPannerNode/StereoPannerNode>
+	**/
 	function new(context:BaseAudioContext, ?options:StereoPannerOptions):Void;
 }

@@ -24,10 +24,28 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCTrackEvent>
+**/
 @:native("RTCTrackEvent") extern class RTCTrackEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCTrackEvent/receiver>
+	**/
 	var receiver(default, null) : RTCRtpReceiver;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCTrackEvent/track>
+	**/
 	var track(default, null) : js.web.media.MediaStreamTrack;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCTrackEvent/streams>
+	**/
 	var streams(default, null) : Array<js.web.media.MediaStream>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCTrackEvent/transceiver>
+	**/
 	var transceiver(default, null) : RTCRtpTransceiver;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCTrackEvent/RTCTrackEvent>
+	**/
 	function new(type:String, eventInitDict:RTCTrackEventInit):Void;
 }

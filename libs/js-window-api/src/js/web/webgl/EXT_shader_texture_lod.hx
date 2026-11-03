@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/EXT_shader_texture_lod>
 **/
 @:native("EXT_shader_texture_lod") extern class EXT_shader_texture_lod {
 

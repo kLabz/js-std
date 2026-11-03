@@ -24,8 +24,20 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/IDBVersionChangeEvent>
+**/
 @:native("IDBVersionChangeEvent") extern class IDBVersionChangeEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBVersionChangeEvent/oldVersion>
+	**/
 	var oldVersion(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBVersionChangeEvent/newVersion>
+	**/
 	var newVersion(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBVersionChangeEvent/IDBVersionChangeEvent>
+	**/
 	function new(type:String, ?eventInitDict:IDBVersionChangeEventInit):Void;
 }

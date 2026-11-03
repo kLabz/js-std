@@ -26,12 +26,32 @@ package js.web.storage;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/FileSystemSyncAccessHandle>
 **/
 @:native("FileSystemSyncAccessHandle") extern class FileSystemSyncAccessHandle {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemSyncAccessHandle/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemSyncAccessHandle/flush>
+	**/
 	function flush():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemSyncAccessHandle/getSize>
+	**/
 	function getSize():Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemSyncAccessHandle/read>
+	**/
 	function read(buffer:js.web.dom.AllowSharedBufferSource, ?options:FileSystemReadWriteOptions):Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemSyncAccessHandle/truncate>
+	**/
 	function truncate(newSize:Float):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemSyncAccessHandle/write>
+	**/
 	function write(buffer:js.web.dom.AllowSharedBufferSource, ?options:FileSystemReadWriteOptions):Float;
 }

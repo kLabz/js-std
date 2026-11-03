@@ -24,7 +24,16 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFEDistantLightElement>
+**/
 @:native("SVGFEDistantLightElement") extern class SVGFEDistantLightElement extends SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEDistantLightElement/azimuth>
+	**/
 	var azimuth(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEDistantLightElement/elevation>
+	**/
 	var elevation(default, null) : SVGAnimatedNumber;
 }

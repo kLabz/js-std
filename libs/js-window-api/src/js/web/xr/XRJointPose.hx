@@ -24,6 +24,12 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XRJointPose>
+**/
 @:native("XRJointPose") extern class XRJointPose extends XRPose {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRJointPose/radius>
+	**/
 	var radius(default, null) : Float;
 }

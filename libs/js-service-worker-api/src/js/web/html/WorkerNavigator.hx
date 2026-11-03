@@ -24,6 +24,9 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator>
+**/
 @:native("WorkerNavigator") extern class WorkerNavigator {
 	/**
 		From interface mixin NavigatorCrossOriginStorage
@@ -32,50 +35,74 @@ package js.web.html;
 	var crossOriginStorage(default, null) : js.web.storage.CrossOriginStorageManager;
 	/**
 		From interface mixin GlobalPrivacyControl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/globalPrivacyControl>
 	**/
 	var globalPrivacyControl(default, null) : Bool;
 	/**
 		From interface mixin NavigatorID
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/appCodeName>
 	**/
 	var appCodeName(default, null) : String;
 	/**
 		From interface mixin NavigatorID
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/appName>
 	**/
 	var appName(default, null) : String;
 	/**
 		From interface mixin NavigatorID
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/appVersion>
 	**/
 	var appVersion(default, null) : String;
 	/**
 		From interface mixin NavigatorID
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/platform>
 	**/
 	var platform(default, null) : String;
 	/**
 		From interface mixin NavigatorID
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/product>
 	**/
 	var product(default, null) : String;
 	/**
 		From interface mixin NavigatorID
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/userAgent>
 	**/
 	var userAgent(default, null) : String;
 	/**
 		From interface mixin NavigatorLanguage
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/language>
 	**/
 	var language(default, null) : String;
 	/**
 		From interface mixin NavigatorLanguage
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/languages>
 	**/
 	var languages(default, null) : Array<String>;
 	/**
 		From interface mixin NavigatorOnLine
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/onLine>
 	**/
 	var onLine(default, null) : Bool;
 	/**
 		From interface mixin NavigatorConcurrentHardware
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/hardwareConcurrency>
 	**/
 	var hardwareConcurrency(default, null) : Float;
 	/**
 		From interface mixin NavigatorNetworkInformation
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/connection>
 	**/
 	var connection(default, null) : js.web.net.NetworkInformation;
 	/**
@@ -84,20 +111,28 @@ package js.web.html;
 	var storageBuckets(default, null) : js.web.storage.StorageBucketManager;
 	/**
 		From interface mixin NavigatorStorage
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/storage>
 	**/
 	var storage(default, null) : js.web.storage.StorageManager;
 	/**
 		From interface mixin NavigatorUA
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/userAgentData>
 	**/
 	var userAgentData(default, null) : js.web.misc.NavigatorUAData;
 	/**
 		From interface mixin NavigatorLocks
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/locks>
 	**/
 	var locks(default, null) : js.web.storage.LockManager;
 	/**
 		From interface mixin NavigatorGPU
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/gpu>
 	**/
 	var gpu(default, null) : js.web.webgpu.GPU;
 	/**
@@ -107,23 +142,33 @@ package js.web.html;
 	var ml(default, null) : js.web.ml.ML;
 	/**
 		From partial interface in hid.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/hid>
 	**/
 	var hid(default, null) : js.web.device.HID;
 	/**
 		From partial interface in media-capabilities.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/mediaCapabilities>
 	**/
 	var mediaCapabilities(default, null) : js.web.media.MediaCapabilities;
 	/**
 		From partial interface in permissions.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/permissions>
 	**/
 	var permissions(default, null) : js.web.misc.Permissions;
 	/**
 		From partial interface in service-workers.idl
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/serviceWorker>
 	**/
 	var serviceWorker(default, null) : js.web.sw.ServiceWorkerContainer;
 	/**
 		From partial interface in usb.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/usb>
 	**/
 	var usb(default, null) : js.web.device.USB;
 	/**

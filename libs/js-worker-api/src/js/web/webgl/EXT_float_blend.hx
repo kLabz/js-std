@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/EXT_float_blend>
 **/
 @:native("EXT_float_blend") extern class EXT_float_blend {
 

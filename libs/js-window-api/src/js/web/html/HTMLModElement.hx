@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLModElement>
+**/
 @:native("HTMLModElement") extern class HTMLModElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLModElement/cite>
+	**/
 	var cite : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLModElement/dateTime>
+	**/
 	var dateTime : String;
 }

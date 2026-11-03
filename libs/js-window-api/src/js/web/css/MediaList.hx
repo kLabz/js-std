@@ -24,14 +24,34 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaList>
+**/
 @:native("MediaList") extern class MediaList implements ArrayAccess<Null<String>> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaList/mediaText>
+	**/
 	var mediaText : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaList/appendMedium>
+	**/
 	function appendMedium(medium:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaList/deleteMedium>
+	**/
 	function deleteMedium(medium:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaList/item>
+	**/
 	function item(index:Int):Null<String>;
 	/**
 		Returns `this.mediaText`.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MediaList/toString>
 	**/
 	function toString():String;
 }

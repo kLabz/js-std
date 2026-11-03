@@ -24,6 +24,12 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSAnimation>
+**/
 @:native("CSSAnimation") extern class CSSAnimation extends Animation {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSAnimation/animationName>
+	**/
 	var animationName(default, null) : String;
 }

@@ -26,9 +26,20 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRLightEstimate>
 **/
 @:native("XRLightEstimate") extern class XRLightEstimate {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRLightEstimate/sphericalHarmonicsCoefficients>
+	**/
 	var sphericalHarmonicsCoefficients(default, null) : js.lib.Float32Array;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRLightEstimate/primaryLightDirection>
+	**/
 	var primaryLightDirection(default, null) : js.web.dom.DOMPointReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRLightEstimate/primaryLightIntensity>
+	**/
 	var primaryLightIntensity(default, null) : js.web.dom.DOMPointReadOnly;
 }

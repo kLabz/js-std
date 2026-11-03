@@ -24,8 +24,20 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLCollection>
+**/
 @:native("HTMLCollection") extern class HTMLCollection implements ArrayAccess<Null<Element>> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLCollection/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLCollection/item>
+	**/
 	function item(index:Int):Null<Element>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLCollection/namedItem>
+	**/
 	function namedItem(name:String):Null<Element>;
 }

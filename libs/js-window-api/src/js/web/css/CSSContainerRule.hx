@@ -24,8 +24,20 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSContainerRule>
+**/
 @:native("CSSContainerRule") extern class CSSContainerRule extends CSSConditionRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSContainerRule/containerName>
+	**/
 	var containerName(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSContainerRule/containerQuery>
+	**/
 	var containerQuery(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSContainerRule/conditions>
+	**/
 	var conditions(default, null) : Array<CSSContainerCondition>;
 }

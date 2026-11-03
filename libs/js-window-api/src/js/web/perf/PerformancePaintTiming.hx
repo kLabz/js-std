@@ -24,14 +24,24 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming>
+**/
 @:native("PerformancePaintTiming") extern class PerformancePaintTiming extends PerformanceEntry {
 	/**
 		From interface mixin PaintTimingMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming/paintTime>
 	**/
 	var paintTime(default, null) : DOMHighResTimeStamp;
 	/**
 		From interface mixin PaintTimingMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming/presentationTime>
 	**/
 	var presentationTime(default, null) : Null<DOMHighResTimeStamp>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming/toJSON>
+	**/
 	function toJSON():{ };
 }

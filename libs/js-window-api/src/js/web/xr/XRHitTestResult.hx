@@ -26,11 +26,18 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRHitTestResult>
 **/
 @:native("XRHitTestResult") extern class XRHitTestResult {
 	/**
 		From partial interface in anchors.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRHitTestResult/createAnchor>
 	**/
 	function createAnchor():js.lib.Promise<XRAnchor>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRHitTestResult/getPose>
+	**/
 	function getPose(baseSpace:XRSpace):Null<XRPose>;
 }

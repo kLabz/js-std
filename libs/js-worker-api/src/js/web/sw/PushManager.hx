@@ -26,10 +26,24 @@ package js.web.sw;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PushManager>
 **/
 @:native("PushManager") extern class PushManager {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushManager/supportedContentEncodings_static>
+	**/
 	static var supportedContentEncodings(default, null) : Array<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushManager/getSubscription>
+	**/
 	function getSubscription():js.lib.Promise<Null<PushSubscription>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushManager/permissionState>
+	**/
 	function permissionState(?options:PushSubscriptionOptionsInit):js.lib.Promise<js.web.misc.PermissionState>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushManager/subscribe>
+	**/
 	function subscribe(?options:PushSubscriptionOptionsInit):js.lib.Promise<PushSubscription>;
 }

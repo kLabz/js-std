@@ -26,15 +26,29 @@ package js.web.sw;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/ServiceWorker>
 **/
 @:native("ServiceWorker") extern class ServiceWorker extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorker/scriptURL>
+	**/
 	var scriptURL(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorker/state>
+	**/
 	var state(default, null) : ServiceWorkerState;
 	var onstatechange : js.web.html.EventHandler;
 	/**
 		From interface mixin AbstractWorker
 	**/
 	var onerror : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorker/postMessage>
+	**/
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorker/postMessage>
+	**/
 	overload function postMessage(message:Any, ?options:js.web.html.StructuredSerializeOptions):Void;
 }

@@ -24,6 +24,12 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/StaticRange>
+**/
 @:native("StaticRange") extern class StaticRange extends AbstractRange {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StaticRange/StaticRange>
+	**/
 	function new(init:StaticRangeInit):Void;
 }

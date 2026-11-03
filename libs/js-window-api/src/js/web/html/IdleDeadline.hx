@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/IdleDeadline>
+**/
 @:native("IdleDeadline") extern class IdleDeadline {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IdleDeadline/didTimeout>
+	**/
 	var didTimeout(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IdleDeadline/timeRemaining>
+	**/
 	function timeRemaining():js.web.perf.DOMHighResTimeStamp;
 }

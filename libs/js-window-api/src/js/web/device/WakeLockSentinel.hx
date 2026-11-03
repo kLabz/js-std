@@ -26,10 +26,21 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WakeLockSentinel>
 **/
 @:native("WakeLockSentinel") extern class WakeLockSentinel extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WakeLockSentinel/released>
+	**/
 	var released(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WakeLockSentinel/type>
+	**/
 	var type(default, null) : WakeLockType;
 	var onrelease : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WakeLockSentinel/release>
+	**/
 	function release():js.lib.Promise<Void>;
 }

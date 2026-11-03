@@ -24,13 +24,40 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter>
+**/
 @:native("WritableStreamDefaultWriter") extern class WritableStreamDefaultWriter {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/closed>
+	**/
 	var closed(default, null) : js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/desiredSize>
+	**/
 	var desiredSize(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/ready>
+	**/
 	var ready(default, null) : js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/WritableStreamDefaultWriter>
+	**/
 	function new(stream:WritableStream):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/abort>
+	**/
 	function abort(?reason:Any):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/close>
+	**/
 	function close():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/releaseLock>
+	**/
 	function releaseLock():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/write>
+	**/
 	function write(?chunk:Any):js.lib.Promise<Void>;
 }

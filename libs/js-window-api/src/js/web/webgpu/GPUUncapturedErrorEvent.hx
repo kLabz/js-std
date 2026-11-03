@@ -26,8 +26,16 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUUncapturedErrorEvent>
 **/
 @:native("GPUUncapturedErrorEvent") extern class GPUUncapturedErrorEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUUncapturedErrorEvent/error>
+	**/
 	var error(default, null) : GPUError;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUUncapturedErrorEvent/GPUUncapturedErrorEvent>
+	**/
 	function new(type:String, gpuUncapturedErrorEventInitDict:GPUUncapturedErrorEventInit):Void;
 }

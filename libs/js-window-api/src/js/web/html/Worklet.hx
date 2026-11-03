@@ -26,7 +26,12 @@ package js.web.html;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Worklet>
 **/
 @:native("Worklet") extern class Worklet {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Worklet/addModule>
+	**/
 	function addModule(moduleURL:String, ?options:WorkletOptions):js.lib.Promise<Void>;
 }

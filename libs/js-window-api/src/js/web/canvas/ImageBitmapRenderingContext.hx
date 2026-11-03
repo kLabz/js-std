@@ -24,7 +24,16 @@
 
 package js.web.canvas;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ImageBitmapRenderingContext>
+**/
 @:native("ImageBitmapRenderingContext") extern class ImageBitmapRenderingContext {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageBitmapRenderingContext/canvas>
+	**/
 	var canvas(default, null) : haxe.extern.EitherType<js.web.html.HTMLCanvasElement, OffscreenCanvas>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageBitmapRenderingContext/transferFromImageBitmap>
+	**/
 	function transferFromImageBitmap(bitmap:Null<ImageBitmap>):Void;
 }

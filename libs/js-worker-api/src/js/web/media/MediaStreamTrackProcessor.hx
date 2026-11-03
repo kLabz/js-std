@@ -24,9 +24,24 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackProcessor>
+**/
 @:native("MediaStreamTrackProcessor") extern class MediaStreamTrackProcessor {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackProcessor/readable>
+	**/
 	var readable(default, null) : js.web.net.ReadableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackProcessor/discardedFrames>
+	**/
 	var discardedFrames(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackProcessor/totalFrames>
+	**/
 	var totalFrames(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackProcessor/MediaStreamTrackProcessor>
+	**/
 	function new(init:MediaStreamTrackProcessorInit):Void;
 }

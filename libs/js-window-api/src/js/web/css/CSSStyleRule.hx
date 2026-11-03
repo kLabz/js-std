@@ -24,11 +24,22 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSStyleRule>
+**/
 @:native("CSSStyleRule") extern class CSSStyleRule extends CSSGroupingRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleRule/selectorText>
+	**/
 	var selectorText : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleRule/style>
+	**/
 	var style(default, null) : CSSStyleProperties;
 	/**
 		From partial interface in css-typed-om.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleRule/styleMap>
 	**/
 	var styleMap(default, null) : StylePropertyMap;
 }

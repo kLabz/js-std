@@ -24,6 +24,9 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XMLDocument>
+**/
 @:native("XMLDocument") extern class XMLDocument extends Document {
 
 }

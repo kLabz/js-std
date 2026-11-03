@@ -24,11 +24,32 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Subscriber>
+**/
 @:native("Subscriber") extern class Subscriber {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Subscriber/active>
+	**/
 	var active(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Subscriber/signal>
+	**/
 	var signal(default, null) : AbortSignal;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Subscriber/addTeardown>
+	**/
 	function addTeardown(teardown:VoidFunction):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Subscriber/complete>
+	**/
 	function complete():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Subscriber/error>
+	**/
 	function error(error:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Subscriber/next>
+	**/
 	function next(value:Any):Void;
 }

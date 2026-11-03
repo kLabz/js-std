@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WebGLVertexArrayObject>
 **/
 @:native("WebGLVertexArrayObjectOES") extern class WebGLVertexArrayObjectOES extends WebGLObject {
 

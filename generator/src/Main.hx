@@ -404,6 +404,8 @@ class Main {
 			).filterType(td);
 		}
 
+		for (task in pendingSaves) Docs.apply(task.td);
+
 		// Dropping a type from a lib can make its dependents unavailable there too
 		var changed = true;
 		while (changed) {

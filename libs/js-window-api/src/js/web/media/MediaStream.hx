@@ -24,19 +24,58 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaStream>
+**/
 @:native("MediaStream") extern class MediaStream extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/active>
+	**/
 	var active(default, null) : Bool;
 	var onaddtrack : js.web.html.EventHandler;
 	var onremovetrack : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/MediaStream>
+	**/
 	overload function new(tracks:Array<MediaStreamTrack>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/MediaStream>
+	**/
 	overload function new(stream:MediaStream):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/MediaStream>
+	**/
 	overload function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/addTrack>
+	**/
 	function addTrack(track:MediaStreamTrack):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/clone>
+	**/
 	function clone():MediaStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/getAudioTracks>
+	**/
 	function getAudioTracks():Array<MediaStreamTrack>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/getTrackById>
+	**/
 	function getTrackById(trackId:String):Null<MediaStreamTrack>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/getTracks>
+	**/
 	function getTracks():Array<MediaStreamTrack>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/getVideoTracks>
+	**/
 	function getVideoTracks():Array<MediaStreamTrack>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/removeTrack>
+	**/
 	function removeTrack(track:MediaStreamTrack):Void;
 }

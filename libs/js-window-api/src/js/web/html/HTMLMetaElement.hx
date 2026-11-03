@@ -24,13 +24,31 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLMetaElement>
+**/
 @:native("HTMLMetaElement") extern class HTMLMetaElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMetaElement/name>
+	**/
 	var name : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMetaElement/httpEquiv>
+	**/
 	var httpEquiv : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMetaElement/content>
+	**/
 	var content : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMetaElement/media>
+	**/
 	var media : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMetaElement/scheme>
 	**/
+	@:deprecated
 	var scheme : String;
 }

@@ -24,15 +24,36 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Client>
+**/
 @:native("Client") extern class Client {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Client/url>
+	**/
 	var url(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Client/frameType>
+	**/
 	var frameType(default, null) : FrameType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Client/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Client/type>
+	**/
 	var type(default, null) : ClientType;
 	/**
 		From partial interface in page-lifecycle.idl
 	**/
 	var lifecycleState(default, null) : js.web.html.ClientLifecycleState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Client/postMessage>
+	**/
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Client/postMessage>
+	**/
 	overload function postMessage(message:Any, ?options:js.web.html.StructuredSerializeOptions):Void;
 }

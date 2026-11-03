@@ -24,8 +24,17 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioScheduledSourceNode>
+**/
 @:native("AudioScheduledSourceNode") extern class AudioScheduledSourceNode extends AudioNode {
 	var onended : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioScheduledSourceNode/start>
+	**/
 	function start(?when:Float = 0):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioScheduledSourceNode/stop>
+	**/
 	function stop(?when:Float = 0):Void;
 }

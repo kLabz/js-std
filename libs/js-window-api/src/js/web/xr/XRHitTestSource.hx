@@ -26,7 +26,12 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRHitTestSource>
 **/
 @:native("XRHitTestSource") extern class XRHitTestSource {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRHitTestSource/cancel>
+	**/
 	function cancel():Void;
 }

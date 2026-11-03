@@ -26,6 +26,8 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/CaptureController>
 **/
 @:native("CaptureController") extern class CaptureController extends js.web.dom.EventTarget {
 	/**
@@ -34,32 +36,50 @@ package js.web.media;
 	var oncapturedmousechange : js.web.html.EventHandler;
 	/**
 		From partial interface in mediacapture-surface-control.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/zoomLevel>
 	**/
 	var zoomLevel(default, null) : Null<Int>;
 	/**
 		From partial interface in mediacapture-surface-control.idl
 	**/
 	var onzoomlevelchange : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/CaptureController>
+	**/
 	overload function new():Void;
 	/**
 		From partial interface in mediacapture-surface-control.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/decreaseZoomLevel>
 	**/
 	function decreaseZoomLevel():js.lib.Promise<Void>;
 	/**
 		From partial interface in mediacapture-surface-control.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/forwardWheel>
 	**/
 	function forwardWheel(element:Null<js.web.html.HTMLElement>):js.lib.Promise<Void>;
 	/**
 		From partial interface in mediacapture-surface-control.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/getSupportedZoomLevels>
 	**/
 	function getSupportedZoomLevels():Array<Int>;
 	/**
 		From partial interface in mediacapture-surface-control.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/increaseZoomLevel>
 	**/
 	function increaseZoomLevel():js.lib.Promise<Void>;
 	/**
 		From partial interface in mediacapture-surface-control.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/resetZoomLevel>
 	**/
 	function resetZoomLevel():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/setFocusBehavior>
+	**/
 	function setFocusBehavior(focusBehavior:CaptureStartFocusBehavior):Void;
 }

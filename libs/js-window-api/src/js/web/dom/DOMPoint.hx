@@ -24,7 +24,13 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DOMPoint>
+**/
 @:native("DOMPoint") extern class DOMPoint extends DOMPointReadOnly {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMPoint/DOMPoint>
+	**/
 	function new(?x:Float = 0, ?y:Float = 0, ?z:Float = 0, ?w:Float = 1):Void;
 	function fromPoint(?other:DOMPointInit):DOMPoint;
 }

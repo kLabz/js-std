@@ -24,6 +24,12 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaCapabilities>
+**/
 @:native("MediaCapabilities") extern class MediaCapabilities {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaCapabilities/encodingInfo>
+	**/
 	function encodingInfo(configuration:MediaEncodingConfiguration):js.lib.Promise<MediaCapabilitiesEncodingInfo>;
 }

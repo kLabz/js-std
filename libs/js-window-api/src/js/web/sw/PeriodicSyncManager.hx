@@ -24,8 +24,20 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PeriodicSyncManager>
+**/
 @:native("PeriodicSyncManager") extern class PeriodicSyncManager {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PeriodicSyncManager/getTags>
+	**/
 	function getTags():js.lib.Promise<Array<String>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PeriodicSyncManager/register>
+	**/
 	function register(tag:String, ?options:BackgroundSyncOptions):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PeriodicSyncManager/unregister>
+	**/
 	function unregister(tag:String):js.lib.Promise<Void>;
 }

@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGClipPathElement>
+**/
 @:native("SVGClipPathElement") extern class SVGClipPathElement extends js.web.svg.SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGClipPathElement/clipPathUnits>
+	**/
 	var clipPathUnits(default, null) : js.web.svg.SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGClipPathElement/transform>
+	**/
 	var transform(default, null) : js.web.svg.SVGAnimatedTransformList;
 }

@@ -26,9 +26,20 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/AuthenticatorAssertionResponse>
 **/
 @:native("AuthenticatorAssertionResponse") extern class AuthenticatorAssertionResponse extends AuthenticatorResponse {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AuthenticatorAssertionResponse/authenticatorData>
+	**/
 	var authenticatorData(default, null) : js.lib.ArrayBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AuthenticatorAssertionResponse/signature>
+	**/
 	var signature(default, null) : js.lib.ArrayBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AuthenticatorAssertionResponse/userHandle>
+	**/
 	var userHandle(default, null) : Null<js.lib.ArrayBuffer>;
 }

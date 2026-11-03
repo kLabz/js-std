@@ -24,12 +24,36 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BiquadFilterNode>
+**/
 @:native("BiquadFilterNode") extern class BiquadFilterNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BiquadFilterNode/type>
+	**/
 	var type : BiquadFilterType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BiquadFilterNode/frequency>
+	**/
 	var frequency(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BiquadFilterNode/detune>
+	**/
 	var detune(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BiquadFilterNode/Q>
+	**/
 	var Q(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BiquadFilterNode/gain>
+	**/
 	var gain(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BiquadFilterNode/BiquadFilterNode>
+	**/
 	function new(context:BaseAudioContext, ?options:BiquadFilterOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BiquadFilterNode/getFrequencyResponse>
+	**/
 	function getFrequencyResponse(frequencyHz:js.lib.Float32Array, magResponse:js.lib.Float32Array, phaseResponse:js.lib.Float32Array):Void;
 }

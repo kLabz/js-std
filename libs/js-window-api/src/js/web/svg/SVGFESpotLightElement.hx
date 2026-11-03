@@ -24,13 +24,40 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement>
+**/
 @:native("SVGFESpotLightElement") extern class SVGFESpotLightElement extends SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/x>
+	**/
 	var x(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/y>
+	**/
 	var y(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/z>
+	**/
 	var z(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/pointsAtX>
+	**/
 	var pointsAtX(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/pointsAtY>
+	**/
 	var pointsAtY(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/pointsAtZ>
+	**/
 	var pointsAtZ(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/specularExponent>
+	**/
 	var specularExponent(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFESpotLightElement/limitingConeAngle>
+	**/
 	var limitingConeAngle(default, null) : SVGAnimatedNumber;
 }

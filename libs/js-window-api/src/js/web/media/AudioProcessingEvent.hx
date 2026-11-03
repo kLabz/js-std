@@ -24,9 +24,28 @@
 
 package js.web.media;
 
-@:native("AudioProcessingEvent") extern class AudioProcessingEvent extends js.web.dom.Event {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioProcessingEvent>
+**/
+@:native("AudioProcessingEvent") @:deprecated extern class AudioProcessingEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioProcessingEvent/playbackTime>
+	**/
+	@:deprecated
 	var playbackTime(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioProcessingEvent/inputBuffer>
+	**/
+	@:deprecated
 	var inputBuffer(default, null) : AudioBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioProcessingEvent/outputBuffer>
+	**/
+	@:deprecated
 	var outputBuffer(default, null) : AudioBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioProcessingEvent/AudioProcessingEvent>
+	**/
+	@:deprecated
 	function new(type:String, eventInitDict:AudioProcessingEventInit):Void;
 }

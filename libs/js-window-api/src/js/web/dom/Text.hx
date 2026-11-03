@@ -24,12 +24,23 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Text>
+**/
 @:native("Text") extern class Text extends CharacterData {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Text/wholeText>
+	**/
 	var wholeText(default, null) : String;
 	/**
 		From interface mixin Slottable
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Text/assignedSlot>
 	**/
 	var assignedSlot(default, null) : Null<js.web.html.HTMLSlotElement>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Text/Text>
+	**/
 	function new(?data:String = ""):Void;
 	/**
 		From interface mixin GeometryUtils
@@ -47,5 +58,8 @@ package js.web.dom;
 		From interface mixin GeometryUtils
 	**/
 	function getBoxQuads(?options:js.web.css.BoxQuadOptions):Array<DOMQuad>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Text/splitText>
+	**/
 	function splitText(offset:Int):Text;
 }

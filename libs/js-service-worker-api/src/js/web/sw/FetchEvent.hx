@@ -24,13 +24,37 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FetchEvent>
+**/
 @:native("FetchEvent") extern class FetchEvent extends ExtendableEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FetchEvent/request>
+	**/
 	var request(default, null) : js.web.net.Request;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FetchEvent/preloadResponse>
+	**/
 	var preloadResponse(default, null) : js.lib.Promise<Any>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FetchEvent/clientId>
+	**/
 	var clientId(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FetchEvent/resultingClientId>
+	**/
 	var resultingClientId(default, null) : String;
 	var replacesClientId(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FetchEvent/handled>
+	**/
 	var handled(default, null) : js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FetchEvent/FetchEvent>
+	**/
 	function new(type:String, eventInitDict:FetchEventInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FetchEvent/respondWith>
+	**/
 	function respondWith(r:js.lib.Promise<js.web.net.Response>):Void;
 }

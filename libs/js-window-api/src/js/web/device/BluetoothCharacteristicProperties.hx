@@ -26,15 +26,44 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties>
 **/
 @:native("BluetoothCharacteristicProperties") extern class BluetoothCharacteristicProperties {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/broadcast>
+	**/
 	var broadcast(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/read>
+	**/
 	var read(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/writeWithoutResponse>
+	**/
 	var writeWithoutResponse(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/write>
+	**/
 	var write(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/notify>
+	**/
 	var notify(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/indicate>
+	**/
 	var indicate(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/authenticatedSignedWrites>
+	**/
 	var authenticatedSignedWrites(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/reliableWrite>
+	**/
 	var reliableWrite(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/writableAuxiliaries>
+	**/
 	var writableAuxiliaries(default, null) : Bool;
 }

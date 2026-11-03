@@ -24,30 +24,63 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLTableRowElement>
+**/
 @:native("HTMLTableRowElement") extern class HTMLTableRowElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableRowElement/rowIndex>
+	**/
 	var rowIndex(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableRowElement/sectionRowIndex>
+	**/
 	var sectionRowIndex(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableRowElement/cells>
+	**/
 	var cells(default, null) : js.web.dom.HTMLCollection;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableRowElement/align>
 	**/
+	@:deprecated
 	var align : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableRowElement/ch>
 	**/
+	@:deprecated
 	var ch : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableRowElement/chOff>
 	**/
+	@:deprecated
 	var chOff : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableRowElement/vAlign>
 	**/
+	@:deprecated
 	var vAlign : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableRowElement/bgColor>
 	**/
+	@:deprecated
 	var bgColor : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableRowElement/deleteCell>
+	**/
 	function deleteCell(index:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableRowElement/insertCell>
+	**/
 	function insertCell(?index:Int = -1):HTMLTableCellElement;
 }

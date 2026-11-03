@@ -24,6 +24,9 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSImageValue>
+**/
 @:native("CSSImageValue") extern class CSSImageValue extends CSSStyleValue {
 
 }

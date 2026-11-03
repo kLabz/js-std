@@ -24,9 +24,24 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLSlotElement>
+**/
 @:native("HTMLSlotElement") extern class HTMLSlotElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLSlotElement/name>
+	**/
 	var name : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLSlotElement/assign>
+	**/
 	function assign(nodes:haxe.Rest<haxe.extern.EitherType<js.web.dom.Element, js.web.dom.Text>>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLSlotElement/assignedElements>
+	**/
 	function assignedElements(?options:AssignedNodesOptions):Array<js.web.dom.Element>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLSlotElement/assignedNodes>
+	**/
 	function assignedNodes(?options:AssignedNodesOptions):Array<js.web.dom.Node>;
 }

@@ -24,6 +24,9 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLBodyElement>
+**/
 @:native("HTMLBodyElement") extern class HTMLBodyElement extends HTMLElement {
 	/**
 		From interface mixin WindowEventHandlers
@@ -116,25 +119,31 @@ package js.web.html;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var text : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var link : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var vLink : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var aLink : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var bgColor : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var background : String;
 }

@@ -24,10 +24,17 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLLIElement>
+**/
 @:native("HTMLLIElement") extern class HTMLLIElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLIElement/value>
+	**/
 	var value : Int;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var type : String;
 }

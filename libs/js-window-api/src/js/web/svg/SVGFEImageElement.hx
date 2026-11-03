@@ -24,31 +24,49 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement>
+**/
 @:native("SVGFEImageElement") extern class SVGFEImageElement extends SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/preserveAspectRatio>
+	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 	var crossOrigin(default, null) : SVGAnimatedString;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/result>
 	**/
 	var result(default, null) : SVGAnimatedString;
 	/**
 		From interface mixin SVGURIReference
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/href>
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

@@ -24,37 +24,93 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement>
+**/
 @:native("HTMLLinkElement") extern class HTMLLinkElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/href>
+	**/
 	var href : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/crossOrigin>
+	**/
 	var crossOrigin : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/rel>
+	**/
 	var rel : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/as>
+	**/
 	var as : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/relList>
+	**/
 	var relList(default, null) : js.web.dom.DOMTokenList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/media>
+	**/
 	var media : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/integrity>
+	**/
 	var integrity : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/hreflang>
+	**/
 	var hreflang : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/type>
+	**/
 	var type : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/sizes>
+	**/
 	var sizes(default, null) : js.web.dom.DOMTokenList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/imageSrcset>
+	**/
 	var imageSrcset : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/imageSizes>
+	**/
 	var imageSizes : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/referrerPolicy>
+	**/
 	var referrerPolicy : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/blocking>
+	**/
 	var blocking(default, null) : js.web.dom.DOMTokenList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/disabled>
+	**/
 	var disabled : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/fetchPriority>
+	**/
 	var fetchPriority : String;
 	/**
 		From interface mixin LinkStyle
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/sheet>
 	**/
 	var sheet(default, null) : Null<js.web.css.CSSStyleSheet>;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var charset : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var rev : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var target : String;
 }

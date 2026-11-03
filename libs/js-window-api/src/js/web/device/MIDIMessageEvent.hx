@@ -26,8 +26,16 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/MIDIMessageEvent>
 **/
 @:native("MIDIMessageEvent") extern class MIDIMessageEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIMessageEvent/data>
+	**/
 	var data(default, null) : Null<js.lib.Uint8Array>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIMessageEvent/MIDIMessageEvent>
+	**/
 	function new(type:String, ?eventInitDict:MIDIMessageEventInit):Void;
 }

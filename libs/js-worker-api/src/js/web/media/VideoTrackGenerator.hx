@@ -24,8 +24,20 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/VideoTrackGenerator>
+**/
 @:native("VideoTrackGenerator") extern class VideoTrackGenerator {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoTrackGenerator/writable>
+	**/
 	var writable(default, null) : js.web.net.WritableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoTrackGenerator/muted>
+	**/
 	var muted : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoTrackGenerator/VideoTrackGenerator>
+	**/
 	function new():Void;
 }

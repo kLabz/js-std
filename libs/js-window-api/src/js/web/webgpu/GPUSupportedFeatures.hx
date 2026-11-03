@@ -26,6 +26,8 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedFeatures>
 **/
 @:native("GPUSupportedFeatures") extern class GPUSupportedFeatures {
 	var size(default, null) : Int;

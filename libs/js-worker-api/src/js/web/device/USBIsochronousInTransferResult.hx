@@ -26,6 +26,8 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/USBIsochronousInTransferResult>
 **/
 @:native("USBIsochronousInTransferResult") extern class USBIsochronousInTransferResult {
 	var data(default, null) : Null<js.lib.DataView>;

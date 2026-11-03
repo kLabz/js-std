@@ -24,8 +24,20 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NotificationEvent>
+**/
 @:native("NotificationEvent") extern class NotificationEvent extends ExtendableEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NotificationEvent/notification>
+	**/
 	var notification(default, null) : Notification;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NotificationEvent/action>
+	**/
 	var action(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NotificationEvent/NotificationEvent>
+	**/
 	function new(type:String, eventInitDict:NotificationEventInit):Void;
 }

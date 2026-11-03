@@ -24,6 +24,9 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/EventCounts>
+**/
 @:native("EventCounts") extern class EventCounts {
 	var size(default, null) : Int;
 	function entries():js.lib.Iterator<js.lib.Tuple<String, Float>>;

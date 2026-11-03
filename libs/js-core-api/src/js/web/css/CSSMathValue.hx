@@ -24,7 +24,13 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSMathValue>
+**/
 @:native("CSSMathValue") extern class CSSMathValue extends CSSNumericValue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathValue/operator>
+	**/
 	@:native("operator")
 	var operator_(default, null) : CSSMathOperator;
 }

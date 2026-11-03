@@ -26,10 +26,21 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/BluetoothDevice>
 **/
 @:native("BluetoothDevice") extern class BluetoothDevice extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothDevice/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothDevice/name>
+	**/
 	var name(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothDevice/gatt>
+	**/
 	var gatt(default, null) : Null<BluetoothRemoteGATTServer>;
 	var watchingAdvertisements(default, null) : Bool;
 	/**

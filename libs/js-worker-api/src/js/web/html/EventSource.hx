@@ -24,16 +24,34 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/EventSource>
+**/
 @:native("EventSource") extern class EventSource extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EventSource/url>
+	**/
 	var url(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EventSource/withCredentials>
+	**/
 	var withCredentials(default, null) : Bool;
 	static inline var CONNECTING : Int = 0;
 	static inline var OPEN : Int = 1;
 	static inline var CLOSED : Int = 2;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EventSource/readyState>
+	**/
 	var readyState(default, null) : Int;
 	var onopen : EventHandler;
 	var onmessage : EventHandler;
 	var onerror : EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EventSource/EventSource>
+	**/
 	function new(url:String, ?eventSourceInitDict:EventSourceInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EventSource/close>
+	**/
 	function close():Void;
 }

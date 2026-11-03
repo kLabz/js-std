@@ -26,10 +26,24 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUAdapter>
 **/
 @:native("GPUAdapter") extern class GPUAdapter {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapter/features>
+	**/
 	var features(default, null) : GPUSupportedFeatures;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapter/limits>
+	**/
 	var limits(default, null) : GPUSupportedLimits;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapter/info>
+	**/
 	var info(default, null) : GPUAdapterInfo;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapter/requestDevice>
+	**/
 	function requestDevice(?descriptor:GPUDeviceDescriptor):js.lib.Promise<GPUDevice>;
 }

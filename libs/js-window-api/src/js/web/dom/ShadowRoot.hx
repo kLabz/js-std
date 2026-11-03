@@ -24,44 +24,81 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot>
+**/
 @:native("ShadowRoot") extern class ShadowRoot extends DocumentFragment {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/mode>
+	**/
 	var mode(default, null) : ShadowRootMode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/delegatesFocus>
+	**/
 	var delegatesFocus(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/serializable>
+	**/
 	var serializable(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/slotAssignment>
+	**/
 	var slotAssignment(default, null) : SlotAssignmentMode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/clonable>
+	**/
 	var clonable(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/host>
+	**/
 	var host(default, null) : Element;
 	var onslotchange : js.web.html.EventHandler;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/styleSheets>
 	**/
 	var styleSheets(default, null) : js.web.css.StyleSheetList;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/adoptedStyleSheets>
 	**/
 	var adoptedStyleSheets : Array<js.web.css.CSSStyleSheet>;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/customElementRegistry>
 	**/
 	var customElementRegistry(default, null) : Null<js.web.html.CustomElementRegistry>;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/fullscreenElement>
 	**/
 	var fullscreenElement(default, null) : Null<Element>;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/activeElement>
 	**/
 	var activeElement(default, null) : Null<Element>;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/pictureInPictureElement>
 	**/
 	var pictureInPictureElement(default, null) : Null<Element>;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/pointerLockElement>
 	**/
 	var pointerLockElement(default, null) : Null<Element>;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/innerHTML>
 	**/
 	var innerHTML : haxe.extern.EitherType<TrustedHTML, String>;
 	/**
@@ -74,10 +111,14 @@ package js.web.dom;
 	function appendHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/getAnimations>
 	**/
 	function getAnimations():Array<js.web.css.Animation>;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/getHTML>
 	**/
 	function getHTML(?options:js.web.html.GetHTMLOptions):String;
 	/**
@@ -90,10 +131,14 @@ package js.web.dom;
 	function prependHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/setHTML>
 	**/
 	function setHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/setHTMLUnsafe>
 	**/
 	function setHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 }

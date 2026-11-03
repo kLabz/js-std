@@ -26,12 +26,23 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/NDEFReader>
 **/
 @:native("NDEFReader") extern class NDEFReader extends js.web.dom.EventTarget {
 	var onreading : js.web.html.EventHandler;
 	var onreadingerror : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFReader/NDEFReader>
+	**/
 	function new():Void;
 	function makeReadOnly(?options:NDEFMakeReadOnlyOptions):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFReader/scan>
+	**/
 	function scan(?options:NDEFScanOptions):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFReader/write>
+	**/
 	function write(message:NDEFMessageSource, ?options:NDEFWriteOptions):js.lib.Promise<Void>;
 }

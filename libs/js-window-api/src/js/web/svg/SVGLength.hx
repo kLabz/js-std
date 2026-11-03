@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGLength>
+**/
 @:native("SVGLength") extern class SVGLength {
 	static inline var SVG_LENGTHTYPE_UNKNOWN : Int = 0;
 	static inline var SVG_LENGTHTYPE_NUMBER : Int = 1;
@@ -36,10 +39,28 @@ package js.web.svg;
 	static inline var SVG_LENGTHTYPE_IN : Int = 8;
 	static inline var SVG_LENGTHTYPE_PT : Int = 9;
 	static inline var SVG_LENGTHTYPE_PC : Int = 10;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLength/unitType>
+	**/
 	var unitType(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLength/value>
+	**/
 	var value : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLength/valueInSpecifiedUnits>
+	**/
 	var valueInSpecifiedUnits : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLength/valueAsString>
+	**/
 	var valueAsString : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLength/convertToSpecifiedUnits>
+	**/
 	function convertToSpecifiedUnits(unitType:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLength/newValueSpecifiedUnits>
+	**/
 	function newValueSpecifiedUnits(unitType:Int, valueInSpecifiedUnits:Float):Void;
 }

@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_debug_renderer_info>
 **/
 @:native("WEBGL_debug_renderer_info") extern class WEBGL_debug_renderer_info {
 	static inline var UNMASKED_VENDOR_WEBGL : GLenum = 0x9245;

@@ -26,9 +26,17 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRSystem>
 **/
 @:native("XRSystem") extern class XRSystem extends js.web.dom.EventTarget {
 	var ondevicechange : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRSystem/isSessionSupported>
+	**/
 	function isSessionSupported(mode:XRSessionMode):js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRSystem/requestSession>
+	**/
 	function requestSession(mode:XRSessionMode, ?options:XRSessionInit):js.lib.Promise<XRSession>;
 }

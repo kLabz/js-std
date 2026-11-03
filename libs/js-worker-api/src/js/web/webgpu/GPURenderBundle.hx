@@ -26,10 +26,14 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundle>
 **/
 @:native("GPURenderBundle") extern class GPURenderBundle {
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundle/label>
 	**/
 	var label : String;
 }

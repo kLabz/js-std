@@ -24,11 +24,32 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Storage>
+**/
 @:native("Storage") extern class Storage {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Storage/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Storage/clear>
+	**/
 	function clear():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Storage/getItem>
+	**/
 	function getItem(key:String):Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Storage/key>
+	**/
 	function key(index:Int):Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Storage/removeItem>
+	**/
 	function removeItem(key:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Storage/setItem>
+	**/
 	function setItem(key:String, value:String):Void;
 }

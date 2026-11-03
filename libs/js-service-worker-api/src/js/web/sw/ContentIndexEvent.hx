@@ -24,7 +24,16 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ContentIndexEvent>
+**/
 @:native("ContentIndexEvent") extern class ContentIndexEvent extends ExtendableEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContentIndexEvent/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContentIndexEvent/ContentIndexEvent>
+	**/
 	function new(type:String, init:ContentIndexEventInit):Void;
 }

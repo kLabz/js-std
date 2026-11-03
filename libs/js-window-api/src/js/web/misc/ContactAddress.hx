@@ -24,16 +24,52 @@
 
 package js.web.misc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ContactAddress>
+**/
 @:native("ContactAddress") extern class ContactAddress {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContactAddress/city>
+	**/
 	var city(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContactAddress/country>
+	**/
 	var country(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContactAddress/dependentLocality>
+	**/
 	var dependentLocality(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContactAddress/organization>
+	**/
 	var organization(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContactAddress/phone>
+	**/
 	var phone(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContactAddress/postalCode>
+	**/
 	var postalCode(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContactAddress/recipient>
+	**/
 	var recipient(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContactAddress/region>
+	**/
 	var region(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContactAddress/sortingCode>
+	**/
 	var sortingCode(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContactAddress/addressLine>
+	**/
 	var addressLine(default, null) : Array<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContactAddress/toJSON>
+	**/
 	function toJSON():{ };
 }

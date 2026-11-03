@@ -24,6 +24,12 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioSinkInfo>
+**/
 @:native("AudioSinkInfo") extern class AudioSinkInfo {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioSinkInfo/type>
+	**/
 	var type(default, null) : AudioSinkType;
 }

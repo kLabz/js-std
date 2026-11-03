@@ -26,9 +26,17 @@ package js.web.html;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/ScreenDetails>
 **/
 @:native("ScreenDetails") extern class ScreenDetails extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScreenDetails/screens>
+	**/
 	var screens(default, null) : Array<ScreenDetailed>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScreenDetails/currentScreen>
+	**/
 	var currentScreen(default, null) : ScreenDetailed;
 	var onscreenschange : EventHandler;
 	var oncurrentscreenchange : EventHandler;

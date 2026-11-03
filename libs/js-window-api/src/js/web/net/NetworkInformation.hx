@@ -24,15 +24,35 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NetworkInformation>
+**/
 @:native("NetworkInformation") extern class NetworkInformation extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NetworkInformation/type>
+	**/
 	var type(default, null) : ConnectionType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NetworkInformation/effectiveType>
+	**/
 	var effectiveType(default, null) : EffectiveConnectionType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NetworkInformation/downlinkMax>
+	**/
 	var downlinkMax(default, null) : Megabit;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NetworkInformation/downlink>
+	**/
 	var downlink(default, null) : Megabit;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NetworkInformation/rtt>
+	**/
 	var rtt(default, null) : Millisecond;
 	var onchange : js.web.html.EventHandler;
 	/**
 		From interface mixin NetworkInformationSaveData
+		
+		@see <https://developer.mozilla.org/docs/Web/API/NetworkInformation/saveData>
 	**/
 	var saveData(default, null) : Bool;
 }

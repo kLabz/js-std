@@ -26,10 +26,24 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRViewport>
 **/
 @:native("XRViewport") extern class XRViewport {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRViewport/x>
+	**/
 	var x(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRViewport/y>
+	**/
 	var y(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRViewport/width>
+	**/
 	var width(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRViewport/height>
+	**/
 	var height(default, null) : Int;
 }

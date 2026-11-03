@@ -24,8 +24,21 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceEvent>
+**/
 @:native("RTCPeerConnectionIceEvent") extern class RTCPeerConnectionIceEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceEvent/candidate>
+	**/
 	var candidate(default, null) : Null<RTCIceCandidate>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceEvent/url>
+	**/
+	@:deprecated
 	var url(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceEvent/RTCPeerConnectionIceEvent>
+	**/
 	function new(type:String, ?eventInitDict:RTCPeerConnectionIceEventInit):Void;
 }

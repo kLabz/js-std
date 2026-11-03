@@ -24,18 +24,34 @@
 
 package js.web.html;
 
-@:native("HTMLMarqueeElement") extern class HTMLMarqueeElement extends HTMLElement {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLMarqueeElement>
+**/
+@:native("HTMLMarqueeElement") @:deprecated extern class HTMLMarqueeElement extends HTMLElement {
+	@:deprecated
 	var behavior : String;
+	@:deprecated
 	var bgColor : String;
+	@:deprecated
 	var direction : String;
+	@:deprecated
 	var height : String;
+	@:deprecated
 	var hspace : Int;
+	@:deprecated
 	var loop : Int;
+	@:deprecated
 	var scrollAmount : Int;
+	@:deprecated
 	var scrollDelay : Int;
+	@:deprecated
 	var trueSpeed : Bool;
+	@:deprecated
 	var vspace : Int;
+	@:deprecated
 	var width : String;
+	@:deprecated
 	function start():Void;
+	@:deprecated
 	function stop():Void;
 }

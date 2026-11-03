@@ -24,7 +24,16 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/OverconstrainedError>
+**/
 @:native("OverconstrainedError") extern class OverconstrainedError extends js.web.dom.DOMException {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OverconstrainedError/constraint>
+	**/
 	var constraint(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OverconstrainedError/OverconstrainedError>
+	**/
 	function new(constraint:String, ?message:String = ""):Void;
 }

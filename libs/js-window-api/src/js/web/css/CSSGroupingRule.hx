@@ -24,8 +24,20 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSGroupingRule>
+**/
 @:native("CSSGroupingRule") extern class CSSGroupingRule extends CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSGroupingRule/cssRules>
+	**/
 	var cssRules(default, null) : CSSRuleList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSGroupingRule/deleteRule>
+	**/
 	function deleteRule(index:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSGroupingRule/insertRule>
+	**/
 	function insertRule(rule:String, ?index:Int = 0):Int;
 }

@@ -24,7 +24,16 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CanvasCaptureMediaStreamTrack>
+**/
 @:native("CanvasCaptureMediaStreamTrack") extern class CanvasCaptureMediaStreamTrack extends MediaStreamTrack {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasCaptureMediaStreamTrack/canvas>
+	**/
 	var canvas(default, null) : js.web.html.HTMLCanvasElement;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasCaptureMediaStreamTrack/requestFrame>
+	**/
 	function requestFrame():Void;
 }

@@ -24,14 +24,44 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGStringList>
+**/
 @:native("SVGStringList") extern class SVGStringList implements ArrayAccess<String> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGStringList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGStringList/numberOfItems>
+	**/
 	var numberOfItems(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGStringList/appendItem>
+	**/
 	function appendItem(newItem:String):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGStringList/clear>
+	**/
 	function clear():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGStringList/getItem>
+	**/
 	function getItem(index:Int):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGStringList/initialize>
+	**/
 	function initialize(newItem:String):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGStringList/insertItemBefore>
+	**/
 	function insertItemBefore(newItem:String, index:Int):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGStringList/removeItem>
+	**/
 	function removeItem(index:Int):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGStringList/replaceItem>
+	**/
 	function replaceItem(newItem:String, index:Int):String;
 }

@@ -24,9 +24,18 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Profiler>
+**/
 @:native("Profiler") extern class Profiler extends js.web.dom.EventTarget {
 	var sampleInterval(default, null) : DOMHighResTimeStamp;
 	var stopped(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Profiler/Profiler>
+	**/
 	function new(options:ProfilerInitOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Profiler/stop>
+	**/
 	function stop():js.lib.Promise<ProfilerTrace>;
 }

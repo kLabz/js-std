@@ -24,55 +24,127 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement>
+**/
 @:native("HTMLTableElement") extern class HTMLTableElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/caption>
+	**/
 	var caption : Null<HTMLTableCaptionElement>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/tHead>
+	**/
 	var tHead : Null<HTMLTableSectionElement>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/tFoot>
+	**/
 	var tFoot : Null<HTMLTableSectionElement>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/tBodies>
+	**/
 	var tBodies(default, null) : js.web.dom.HTMLCollection;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/rows>
+	**/
 	var rows(default, null) : js.web.dom.HTMLCollection;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/align>
 	**/
+	@:deprecated
 	var align : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/border>
 	**/
+	@:deprecated
 	var border : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/frame>
 	**/
+	@:deprecated
 	var frame : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/rules>
 	**/
+	@:deprecated
 	var rules : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/summary>
 	**/
+	@:deprecated
 	var summary : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/width>
 	**/
+	@:deprecated
 	var width : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/bgColor>
 	**/
+	@:deprecated
 	var bgColor : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/cellPadding>
 	**/
+	@:deprecated
 	var cellPadding : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/cellSpacing>
 	**/
+	@:deprecated
 	var cellSpacing : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/createCaption>
+	**/
 	function createCaption():HTMLTableCaptionElement;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/createTBody>
+	**/
 	function createTBody():HTMLTableSectionElement;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/createTFoot>
+	**/
 	function createTFoot():HTMLTableSectionElement;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/createTHead>
+	**/
 	function createTHead():HTMLTableSectionElement;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/deleteCaption>
+	**/
 	function deleteCaption():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/deleteRow>
+	**/
 	function deleteRow(index:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/deleteTFoot>
+	**/
 	function deleteTFoot():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/deleteTHead>
+	**/
 	function deleteTHead():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableElement/insertRow>
+	**/
 	function insertRow(?index:Int = -1):HTMLTableRowElement;
 }

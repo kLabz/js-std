@@ -24,6 +24,12 @@
 
 package js.web.canvas;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CanvasPattern>
+**/
 @:native("CanvasPattern") extern class CanvasPattern {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasPattern/setTransform>
+	**/
 	function setTransform(?transform:js.web.dom.DOMMatrix2DInit):Void;
 }

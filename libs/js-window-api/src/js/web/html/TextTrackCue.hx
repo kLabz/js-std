@@ -24,11 +24,29 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TextTrackCue>
+**/
 @:native("TextTrackCue") extern class TextTrackCue extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrackCue/track>
+	**/
 	var track(default, null) : Null<TextTrack>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrackCue/id>
+	**/
 	var id : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrackCue/startTime>
+	**/
 	var startTime : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrackCue/endTime>
+	**/
 	var endTime : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrackCue/pauseOnExit>
+	**/
 	var pauseOnExit : Bool;
 	var onenter : EventHandler;
 	var onexit : EventHandler;

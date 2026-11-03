@@ -26,8 +26,16 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestResult>
 **/
 @:native("XRTransientInputHitTestResult") extern class XRTransientInputHitTestResult {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestResult/inputSource>
+	**/
 	var inputSource(default, null) : XRInputSource;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestResult/results>
+	**/
 	var results(default, null) : Array<XRHitTestResult>;
 }

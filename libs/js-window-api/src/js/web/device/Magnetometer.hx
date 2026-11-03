@@ -26,10 +26,24 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Magnetometer>
 **/
 @:native("Magnetometer") extern class Magnetometer extends Sensor {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Magnetometer/x>
+	**/
 	var x(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Magnetometer/y>
+	**/
 	var y(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Magnetometer/z>
+	**/
 	var z(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Magnetometer/Magnetometer>
+	**/
 	function new(?sensorOptions:MagnetometerSensorOptions):Void;
 }

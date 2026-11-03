@@ -24,9 +24,24 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGEllipseElement>
+**/
 @:native("SVGEllipseElement") extern class SVGEllipseElement extends SVGGeometryElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGEllipseElement/cx>
+	**/
 	var cx(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGEllipseElement/cy>
+	**/
 	var cy(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGEllipseElement/rx>
+	**/
 	var rx(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGEllipseElement/ry>
+	**/
 	var ry(default, null) : SVGAnimatedLength;
 }

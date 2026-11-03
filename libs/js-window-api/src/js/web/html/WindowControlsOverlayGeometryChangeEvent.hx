@@ -24,8 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlayGeometryChangeEvent>
+**/
 @:native("WindowControlsOverlayGeometryChangeEvent") extern class WindowControlsOverlayGeometryChangeEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlayGeometryChangeEvent/titlebarAreaRect>
+	**/
 	var titlebarAreaRect(default, null) : js.web.dom.DOMRect;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlayGeometryChangeEvent/visible>
+	**/
 	var visible(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlayGeometryChangeEvent/WindowControlsOverlayGeometryChangeEvent>
+	**/
 	function new(type:String, eventInitDict:WindowControlsOverlayGeometryChangeEventInit):Void;
 }

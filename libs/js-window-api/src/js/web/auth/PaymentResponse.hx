@@ -26,18 +26,53 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PaymentResponse>
 **/
 @:native("PaymentResponse") extern class PaymentResponse extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentResponse/requestId>
+	**/
 	var requestId(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentResponse/methodName>
+	**/
 	var methodName(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentResponse/details>
+	**/
 	var details(default, null) : { };
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentResponse/shippingAddress>
+	**/
 	var shippingAddress(default, null) : Null<js.web.misc.ContactAddress>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentResponse/shippingOption>
+	**/
 	var shippingOption(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentResponse/payerName>
+	**/
 	var payerName(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentResponse/payerEmail>
+	**/
 	var payerEmail(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentResponse/payerPhone>
+	**/
 	var payerPhone(default, null) : Null<String>;
 	var onpayerdetailchange : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentResponse/complete>
+	**/
 	function complete(?result:PaymentComplete = PaymentComplete.UNKNOWN, ?details:PaymentCompleteDetails):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentResponse/retry>
+	**/
 	function retry(?errorFields:PaymentValidationErrors):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentResponse/toJSON>
+	**/
 	function toJSON():{ };
 }

@@ -24,13 +24,40 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioBufferSourceNode>
+**/
 @:native("AudioBufferSourceNode") extern class AudioBufferSourceNode extends AudioScheduledSourceNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBufferSourceNode/buffer>
+	**/
 	var buffer : Null<AudioBuffer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBufferSourceNode/playbackRate>
+	**/
 	var playbackRate(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBufferSourceNode/detune>
+	**/
 	var detune(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBufferSourceNode/loop>
+	**/
 	var loop : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBufferSourceNode/loopStart>
+	**/
 	var loopStart : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBufferSourceNode/loopEnd>
+	**/
 	var loopEnd : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBufferSourceNode/AudioBufferSourceNode>
+	**/
 	function new(context:BaseAudioContext, ?options:AudioBufferSourceOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBufferSourceNode/start>
+	**/
 	function start(?when:Float = 0, ?offset:Float, ?duration:Float):Void;
 }

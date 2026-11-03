@@ -24,14 +24,24 @@
 
 package js.web.auth;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Crypto>
+**/
 @:native("Crypto") extern class Crypto {
 	/**
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Crypto/subtle>
 	**/
 	var subtle(default, null) : SubtleCrypto;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Crypto/getRandomValues>
+	**/
 	function getRandomValues(array:js.lib.ArrayBufferView):js.lib.ArrayBufferView;
 	/**
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Crypto/randomUUID>
 	**/
 	function randomUUID():String;
 }

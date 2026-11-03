@@ -24,8 +24,20 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager>
+**/
 @:native("BackgroundFetchManager") extern class BackgroundFetchManager {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/fetch>
+	**/
 	function fetch(id:String, requests:haxe.extern.EitherType<js.web.net.RequestInfo, Array<js.web.net.RequestInfo>>, ?options:BackgroundFetchOptions):js.lib.Promise<BackgroundFetchRegistration>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/get>
+	**/
 	function get(id:String):js.lib.Promise<Null<BackgroundFetchRegistration>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/getIds>
+	**/
 	function getIds():js.lib.Promise<Array<String>>;
 }

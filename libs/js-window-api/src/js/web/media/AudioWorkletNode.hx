@@ -26,10 +26,21 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletNode>
 **/
 @:native("AudioWorkletNode") extern class AudioWorkletNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletNode/parameters>
+	**/
 	var parameters(default, null) : AudioParamMap;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletNode/port>
+	**/
 	var port(default, null) : js.web.html.MessagePort;
 	var onprocessorerror : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletNode/AudioWorkletNode>
+	**/
 	function new(context:BaseAudioContext, name:String, ?options:AudioWorkletNodeOptions):Void;
 }

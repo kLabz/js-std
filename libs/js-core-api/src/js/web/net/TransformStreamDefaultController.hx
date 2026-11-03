@@ -24,9 +24,24 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TransformStreamDefaultController>
+**/
 @:native("TransformStreamDefaultController") extern class TransformStreamDefaultController {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TransformStreamDefaultController/desiredSize>
+	**/
 	var desiredSize(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TransformStreamDefaultController/enqueue>
+	**/
 	function enqueue(?chunk:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TransformStreamDefaultController/error>
+	**/
 	function error(?reason:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TransformStreamDefaultController/terminate>
+	**/
 	function terminate():Void;
 }

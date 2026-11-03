@@ -24,11 +24,26 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BroadcastChannel>
+**/
 @:native("BroadcastChannel") extern class BroadcastChannel extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BroadcastChannel/name>
+	**/
 	var name(default, null) : String;
 	var onmessage : EventHandler;
 	var onmessageerror : EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BroadcastChannel/BroadcastChannel>
+	**/
 	function new(name:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BroadcastChannel/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BroadcastChannel/postMessage>
+	**/
 	function postMessage(message:Any):Void;
 }

@@ -24,8 +24,20 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ContentIndex>
+**/
 @:native("ContentIndex") extern class ContentIndex {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContentIndex/add>
+	**/
 	function add(description:ContentDescription):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContentIndex/delete>
+	**/
 	function delete(id:String):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContentIndex/getAll>
+	**/
 	function getAll():js.lib.Promise<Array<ContentDescription>>;
 }

@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/OES_texture_float_linear>
 **/
 @:native("OES_texture_float_linear") extern class OES_texture_float_linear {
 

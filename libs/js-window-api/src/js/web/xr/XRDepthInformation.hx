@@ -26,11 +26,25 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRDepthInformation>
 **/
 @:native("XRDepthInformation") extern class XRDepthInformation {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRDepthInformation/width>
+	**/
 	var width(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRDepthInformation/height>
+	**/
 	var height(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRDepthInformation/normDepthBufferFromNormView>
+	**/
 	var normDepthBufferFromNormView(default, null) : XRRigidTransform;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRDepthInformation/rawValueToMeters>
+	**/
 	var rawValueToMeters(default, null) : Float;
 	/**
 		From interface mixin XRViewGeometry

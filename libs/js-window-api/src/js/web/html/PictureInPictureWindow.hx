@@ -24,8 +24,17 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PictureInPictureWindow>
+**/
 @:native("PictureInPictureWindow") extern class PictureInPictureWindow extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PictureInPictureWindow/width>
+	**/
 	var width(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PictureInPictureWindow/height>
+	**/
 	var height(default, null) : Int;
 	var onresize : EventHandler;
 }

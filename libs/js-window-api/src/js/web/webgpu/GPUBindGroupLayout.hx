@@ -26,10 +26,14 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUBindGroupLayout>
 **/
 @:native("GPUBindGroupLayout") extern class GPUBindGroupLayout {
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUBindGroupLayout/label>
 	**/
 	var label : String;
 }

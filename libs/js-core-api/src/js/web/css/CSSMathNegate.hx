@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSMathNegate>
+**/
 @:native("CSSMathNegate") extern class CSSMathNegate extends CSSMathValue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathNegate/value>
+	**/
 	var value(default, null) : CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathNegate/CSSMathNegate>
+	**/
 	function new(arg:CSSNumberish):Void;
 }

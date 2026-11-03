@@ -26,6 +26,8 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/USBAlternateInterface>
 **/
 @:native("USBAlternateInterface") extern class USBAlternateInterface {
 	var alternateSetting(default, null) : Int;

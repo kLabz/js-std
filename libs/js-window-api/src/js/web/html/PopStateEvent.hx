@@ -24,8 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PopStateEvent>
+**/
 @:native("PopStateEvent") extern class PopStateEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PopStateEvent/state>
+	**/
 	var state(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PopStateEvent/hasUAVisualTransition>
+	**/
 	var hasUAVisualTransition(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PopStateEvent/PopStateEvent>
+	**/
 	function new(type:String, ?eventInitDict:PopStateEventInit):Void;
 }

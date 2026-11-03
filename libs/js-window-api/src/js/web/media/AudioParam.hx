@@ -24,17 +24,53 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioParam>
+**/
 @:native("AudioParam") extern class AudioParam {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioParam/value>
+	**/
 	var value : Float;
 	var automationRate : AutomationRate;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioParam/defaultValue>
+	**/
 	var defaultValue(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioParam/minValue>
+	**/
 	var minValue(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioParam/maxValue>
+	**/
 	var maxValue(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioParam/cancelAndHoldAtTime>
+	**/
 	function cancelAndHoldAtTime(cancelTime:Float):AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioParam/cancelScheduledValues>
+	**/
 	function cancelScheduledValues(cancelTime:Float):AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioParam/exponentialRampToValueAtTime>
+	**/
 	function exponentialRampToValueAtTime(value:Float, endTime:Float):AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioParam/linearRampToValueAtTime>
+	**/
 	function linearRampToValueAtTime(value:Float, endTime:Float):AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioParam/setTargetAtTime>
+	**/
 	function setTargetAtTime(target:Float, startTime:Float, timeConstant:Float):AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioParam/setValueAtTime>
+	**/
 	function setValueAtTime(value:Float, startTime:Float):AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioParam/setValueCurveAtTime>
+	**/
 	function setValueCurveAtTime(values:Array<Float>, startTime:Float, duration:Float):AudioParam;
 }

@@ -26,7 +26,12 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRBoundedReferenceSpace>
 **/
 @:native("XRBoundedReferenceSpace") extern class XRBoundedReferenceSpace extends XRReferenceSpace {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRBoundedReferenceSpace/boundsGeometry>
+	**/
 	var boundsGeometry(default, null) : Array<js.web.dom.DOMPointReadOnly>;
 }

@@ -26,10 +26,21 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/ANGLE_instanced_arrays>
 **/
 @:native("ANGLE_instanced_arrays") extern class ANGLE_instanced_arrays {
 	static inline var VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE : GLenum = 0x88FE;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ANGLE_instanced_arrays/drawArraysInstancedANGLE>
+	**/
 	function drawArraysInstancedANGLE(mode:GLenum, first:GLint, count:GLsizei, primcount:GLsizei):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ANGLE_instanced_arrays/drawElementsInstancedANGLE>
+	**/
 	function drawElementsInstancedANGLE(mode:GLenum, count:GLsizei, type:GLenum, offset:GLintptr, primcount:GLsizei):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ANGLE_instanced_arrays/vertexAttribDivisorANGLE>
+	**/
 	function vertexAttribDivisorANGLE(index:GLuint, divisor:GLuint):Void;
 }

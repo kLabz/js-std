@@ -24,6 +24,12 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSLayerBlockRule>
+**/
 @:native("CSSLayerBlockRule") extern class CSSLayerBlockRule extends CSSGroupingRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSLayerBlockRule/name>
+	**/
 	var name(default, null) : String;
 }

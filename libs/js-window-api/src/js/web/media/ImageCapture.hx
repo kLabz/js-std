@@ -26,12 +26,32 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/ImageCapture>
 **/
 @:native("ImageCapture") extern class ImageCapture {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageCapture/track>
+	**/
 	var track(default, null) : MediaStreamTrack;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageCapture/ImageCapture>
+	**/
 	function new(videoTrack:MediaStreamTrack):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageCapture/getPhotoCapabilities>
+	**/
 	function getPhotoCapabilities():js.lib.Promise<PhotoCapabilities>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageCapture/getPhotoSettings>
+	**/
 	function getPhotoSettings():js.lib.Promise<PhotoSettings>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageCapture/grabFrame>
+	**/
 	function grabFrame():js.lib.Promise<js.web.canvas.ImageBitmap>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageCapture/takePhoto>
+	**/
 	function takePhoto(?photoSettings:PhotoSettings):js.lib.Promise<js.web.net.Blob>;
 }

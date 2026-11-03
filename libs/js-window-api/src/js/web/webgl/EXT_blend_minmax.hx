@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/EXT_blend_minmax>
 **/
 @:native("EXT_blend_minmax") extern class EXT_blend_minmax {
 	static inline var MIN_EXT : GLenum = 0x8007;

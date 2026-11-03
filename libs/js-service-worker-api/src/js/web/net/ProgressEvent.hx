@@ -24,9 +24,24 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ProgressEvent>
+**/
 @:native("ProgressEvent") extern class ProgressEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ProgressEvent/lengthComputable>
+	**/
 	var lengthComputable(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ProgressEvent/loaded>
+	**/
 	var loaded(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ProgressEvent/total>
+	**/
 	var total(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ProgressEvent/ProgressEvent>
+	**/
 	function new(type:String, ?eventInitDict:ProgressEventInit):Void;
 }

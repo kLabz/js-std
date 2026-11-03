@@ -24,8 +24,20 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SyncEvent>
+**/
 @:native("SyncEvent") extern class SyncEvent extends ExtendableEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SyncEvent/tag>
+	**/
 	var tag(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SyncEvent/lastChance>
+	**/
 	var lastChance(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SyncEvent/SyncEvent>
+	**/
 	function new(type:String, init:SyncEventInit):Void;
 }

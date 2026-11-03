@@ -24,6 +24,12 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCTransformEvent>
+**/
 @:native("RTCTransformEvent") extern class RTCTransformEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCTransformEvent/transformer>
+	**/
 	var transformer(default, null) : RTCRtpScriptTransformer;
 }

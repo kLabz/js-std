@@ -24,6 +24,12 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLDataElement>
+**/
 @:native("HTMLDataElement") extern class HTMLDataElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLDataElement/value>
+	**/
 	var value : String;
 }

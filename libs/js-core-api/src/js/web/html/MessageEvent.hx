@@ -24,12 +24,34 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MessageEvent>
+**/
 @:native("MessageEvent") extern class MessageEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MessageEvent/data>
+	**/
 	var data(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MessageEvent/origin>
+	**/
 	var origin(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MessageEvent/lastEventId>
+	**/
 	var lastEventId(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MessageEvent/source>
+	**/
 	var source(default, null) : Null<MessageEventSource>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MessageEvent/ports>
+	**/
 	var ports(default, null) : Array<MessagePort>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MessageEvent/MessageEvent>
+	**/
 	function new(type:String, ?eventInitDict:MessageEventInit):Void;
+	@:deprecated
 	function initMessageEvent(type:String, ?bubbles:Bool = false, ?cancelable:Bool = false, ?data:Any = null, ?origin:String = "", ?lastEventId:String = "", ?source:Null<MessageEventSource> = null, ?ports:Array<MessagePort>):Void;
 }

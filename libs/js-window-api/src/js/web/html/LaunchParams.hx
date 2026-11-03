@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/LaunchParams>
+**/
 @:native("LaunchParams") extern class LaunchParams {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LaunchParams/targetURL>
+	**/
 	var targetURL(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LaunchParams/files>
+	**/
 	var files(default, null) : Array<js.web.storage.FileSystemHandle>;
 }

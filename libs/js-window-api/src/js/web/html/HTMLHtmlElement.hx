@@ -24,9 +24,15 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLHtmlElement>
+**/
 @:native("HTMLHtmlElement") extern class HTMLHtmlElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLHtmlElement/version>
 	**/
+	@:deprecated
 	var version : String;
 }

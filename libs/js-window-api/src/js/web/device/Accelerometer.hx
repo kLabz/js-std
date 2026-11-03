@@ -26,10 +26,24 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Accelerometer>
 **/
 @:native("Accelerometer") extern class Accelerometer extends Sensor {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Accelerometer/x>
+	**/
 	var x(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Accelerometer/y>
+	**/
 	var y(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Accelerometer/z>
+	**/
 	var z(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Accelerometer/Accelerometer>
+	**/
 	function new(?options:AccelerometerSensorOptions):Void;
 }

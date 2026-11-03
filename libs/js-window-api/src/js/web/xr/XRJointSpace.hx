@@ -24,6 +24,12 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XRJointSpace>
+**/
 @:native("XRJointSpace") extern class XRJointSpace extends XRSpace {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRJointSpace/jointName>
+	**/
 	var jointName(default, null) : XRHandJoint;
 }

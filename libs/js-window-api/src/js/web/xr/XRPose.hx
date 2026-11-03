@@ -26,10 +26,24 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRPose>
 **/
 @:native("XRPose") extern class XRPose {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRPose/transform>
+	**/
 	var transform(default, null) : XRRigidTransform;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRPose/linearVelocity>
+	**/
 	var linearVelocity(default, null) : Null<js.web.dom.DOMPointReadOnly>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRPose/angularVelocity>
+	**/
 	var angularVelocity(default, null) : Null<js.web.dom.DOMPointReadOnly>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRPose/emulatedPosition>
+	**/
 	var emulatedPosition(default, null) : Bool;
 }

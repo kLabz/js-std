@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGMarkerElement>
+**/
 @:native("SVGMarkerElement") extern class SVGMarkerElement extends SVGElement {
 	static inline var SVG_MARKERUNITS_UNKNOWN : Int = 0;
 	static inline var SVG_MARKERUNITS_USERSPACEONUSE : Int = 1;
@@ -32,22 +35,56 @@ package js.web.svg;
 	static inline var SVG_MARKER_ORIENT_AUTO : Int = 1;
 	static inline var SVG_MARKER_ORIENT_ANGLE : Int = 2;
 	static inline var SVG_MARKER_ORIENT_AUTO_START_REVERSE : Int = 3;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/refX>
+	**/
 	var refX(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/refY>
+	**/
 	var refY(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/markerUnits>
+	**/
 	var markerUnits(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/markerWidth>
+	**/
 	var markerWidth(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/markerHeight>
+	**/
 	var markerHeight(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/orientType>
+	**/
 	var orientType(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/orientAngle>
+	**/
 	var orientAngle(default, null) : SVGAnimatedAngle;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/orient>
+	**/
 	var orient : String;
 	/**
 		From interface mixin SVGFitToViewBox
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/viewBox>
 	**/
 	var viewBox(default, null) : SVGAnimatedRect;
 	/**
 		From interface mixin SVGFitToViewBox
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/preserveAspectRatio>
 	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/setOrientToAngle>
+	**/
 	function setOrientToAngle(angle:SVGAngle):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/setOrientToAuto>
+	**/
 	function setOrientToAuto():Void;
 }

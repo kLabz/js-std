@@ -24,9 +24,21 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFSender>
+**/
 @:native("RTCDTMFSender") extern class RTCDTMFSender extends js.web.dom.EventTarget {
 	var ontonechange : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFSender/canInsertDTMF>
+	**/
 	var canInsertDTMF(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFSender/toneBuffer>
+	**/
 	var toneBuffer(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFSender/insertDTMF>
+	**/
 	function insertDTMF(tones:String, ?duration:Int = 100, ?interToneGap:Int = 70):Void;
 }

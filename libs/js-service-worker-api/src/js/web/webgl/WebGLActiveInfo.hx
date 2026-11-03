@@ -24,8 +24,20 @@
 
 package js.web.webgl;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo>
+**/
 @:native("WebGLActiveInfo") extern class WebGLActiveInfo {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo/size>
+	**/
 	var size(default, null) : GLint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo/type>
+	**/
 	var type(default, null) : GLenum;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo/name>
+	**/
 	var name(default, null) : String;
 }

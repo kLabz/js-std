@@ -24,7 +24,16 @@
 
 package js.web.device;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DelegatedInkTrailPresenter>
+**/
 @:native("DelegatedInkTrailPresenter") extern class DelegatedInkTrailPresenter {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DelegatedInkTrailPresenter/presentationArea>
+	**/
 	var presentationArea(default, null) : Null<js.web.dom.Element>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DelegatedInkTrailPresenter/updateInkTrailStartPoint>
+	**/
 	function updateInkTrailStartPoint(event:js.web.dom.PointerEvent, style:InkTrailStyle):Void;
 }

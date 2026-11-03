@@ -24,20 +24,55 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TextTrack>
+**/
 @:native("TextTrack") extern class TextTrack extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrack/kind>
+	**/
 	var kind(default, null) : TextTrackKind;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrack/label>
+	**/
 	var label(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrack/language>
+	**/
 	var language(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrack/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrack/inBandMetadataTrackDispatchType>
+	**/
 	var inBandMetadataTrackDispatchType(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrack/mode>
+	**/
 	var mode : TextTrackMode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrack/cues>
+	**/
 	var cues(default, null) : Null<TextTrackCueList>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrack/activeCues>
+	**/
 	var activeCues(default, null) : Null<TextTrackCueList>;
 	var oncuechange : EventHandler;
 	/**
 		From partial interface in media-source.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrack/sourceBuffer>
 	**/
 	var sourceBuffer(default, null) : Null<js.web.media.SourceBuffer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrack/addCue>
+	**/
 	function addCue(cue:TextTrackCue):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrack/removeCue>
+	**/
 	function removeCue(cue:TextTrackCue):Void;
 }

@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TrackEvent>
+**/
 @:native("TrackEvent") extern class TrackEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrackEvent/track>
+	**/
 	var track(default, null) : Null<haxe.extern.EitherType<VideoTrack, haxe.extern.EitherType<AudioTrack, TextTrack>>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrackEvent/TrackEvent>
+	**/
 	function new(type:String, ?eventInitDict:TrackEventInit):Void;
 }

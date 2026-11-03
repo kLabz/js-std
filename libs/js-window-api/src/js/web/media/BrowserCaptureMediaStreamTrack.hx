@@ -24,11 +24,22 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BrowserCaptureMediaStreamTrack>
+**/
 @:native("BrowserCaptureMediaStreamTrack") extern class BrowserCaptureMediaStreamTrack extends MediaStreamTrack {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BrowserCaptureMediaStreamTrack/clone>
+	**/
 	function clone():BrowserCaptureMediaStreamTrack;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BrowserCaptureMediaStreamTrack/cropTo>
+	**/
 	function cropTo(cropTarget:Null<CropTarget>):js.lib.Promise<Void>;
 	/**
 		From partial interface in element-capture.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/BrowserCaptureMediaStreamTrack/restrictTo>
 	**/
 	function restrictTo(RestrictionTarget:Null<RestrictionTarget>):js.lib.Promise<Void>;
 }

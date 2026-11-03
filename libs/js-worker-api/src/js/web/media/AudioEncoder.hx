@@ -26,16 +26,42 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/AudioEncoder>
 **/
 @:native("AudioEncoder") extern class AudioEncoder extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioEncoder/state>
+	**/
 	var state(default, null) : CodecState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioEncoder/encodeQueueSize>
+	**/
 	var encodeQueueSize(default, null) : Int;
 	var ondequeue : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioEncoder/AudioEncoder>
+	**/
 	function new(init:AudioEncoderInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioEncoder/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioEncoder/configure>
+	**/
 	function configure(config:AudioEncoderConfig):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioEncoder/encode>
+	**/
 	function encode(data:AudioData):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioEncoder/flush>
+	**/
 	function flush():js.lib.Promise<Void>;
 	function isConfigSupported(config:AudioEncoderConfig):js.lib.Promise<AudioEncoderSupport>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioEncoder/reset>
+	**/
 	function reset():Void;
 }

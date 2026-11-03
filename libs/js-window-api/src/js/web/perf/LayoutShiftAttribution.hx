@@ -24,8 +24,20 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/LayoutShiftAttribution>
+**/
 @:native("LayoutShiftAttribution") extern class LayoutShiftAttribution {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LayoutShiftAttribution/node>
+	**/
 	var node(default, null) : Null<js.web.dom.Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LayoutShiftAttribution/previousRect>
+	**/
 	var previousRect(default, null) : js.web.dom.DOMRectReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LayoutShiftAttribution/currentRect>
+	**/
 	var currentRect(default, null) : js.web.dom.DOMRectReadOnly;
 }

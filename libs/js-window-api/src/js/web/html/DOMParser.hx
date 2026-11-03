@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DOMParser>
+**/
 @:native("DOMParser") extern class DOMParser {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMParser/DOMParser>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMParser/parseFromString>
+	**/
 	function parseFromString(string:haxe.extern.EitherType<js.web.dom.TrustedHTML, String>, type:DOMParserSupportedType):js.web.dom.Document;
 }

@@ -24,16 +24,52 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle>
+**/
 @:native("StorageAccessHandle") extern class StorageAccessHandle {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/sessionStorage>
+	**/
 	var sessionStorage(default, null) : js.web.html.Storage;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/localStorage>
+	**/
 	var localStorage(default, null) : js.web.html.Storage;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/indexedDB>
+	**/
 	var indexedDB(default, null) : IDBFactory;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/locks>
+	**/
 	var locks(default, null) : LockManager;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/caches>
+	**/
 	var caches(default, null) : js.web.sw.CacheStorage;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/BroadcastChannel>
+	**/
 	function BroadcastChannel(name:String):js.web.html.BroadcastChannel;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/SharedWorker>
+	**/
 	function SharedWorker(scriptURL:String, ?options:haxe.extern.EitherType<String, js.web.html.SharedWorkerOptions>):js.web.html.SharedWorker;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/createObjectURL>
+	**/
 	function createObjectURL(obj:haxe.extern.EitherType<js.web.net.Blob, js.web.media.MediaSource>):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/estimate>
+	**/
 	function estimate():js.lib.Promise<StorageEstimate>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/getDirectory>
+	**/
 	function getDirectory():js.lib.Promise<FileSystemDirectoryHandle>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/revokeObjectURL>
+	**/
 	function revokeObjectURL(url:String):Void;
 }

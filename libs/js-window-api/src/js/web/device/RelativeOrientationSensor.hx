@@ -26,7 +26,12 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/RelativeOrientationSensor>
 **/
 @:native("RelativeOrientationSensor") extern class RelativeOrientationSensor extends OrientationSensor {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RelativeOrientationSensor/RelativeOrientationSensor>
+	**/
 	function new(?sensorOptions:OrientationSensorOptions):Void;
 }

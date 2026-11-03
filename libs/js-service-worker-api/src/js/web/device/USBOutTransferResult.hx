@@ -26,6 +26,8 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/USBOutTransferResult>
 **/
 @:native("USBOutTransferResult") extern class USBOutTransferResult {
 	var bytesWritten(default, null) : Int;

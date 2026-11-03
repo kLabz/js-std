@@ -26,10 +26,14 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUCommandBuffer>
 **/
 @:native("GPUCommandBuffer") extern class GPUCommandBuffer {
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandBuffer/label>
 	**/
 	var label : String;
 }

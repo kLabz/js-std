@@ -24,14 +24,44 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MutationRecord>
+**/
 @:native("MutationRecord") extern class MutationRecord {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/type>
+	**/
 	var type(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/target>
+	**/
 	var target(default, null) : Node;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/addedNodes>
+	**/
 	var addedNodes(default, null) : NodeList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/removedNodes>
+	**/
 	var removedNodes(default, null) : NodeList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/previousSibling>
+	**/
 	var previousSibling(default, null) : Null<Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/nextSibling>
+	**/
 	var nextSibling(default, null) : Null<Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/attributeName>
+	**/
 	var attributeName(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/attributeNamespace>
+	**/
 	var attributeNamespace(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/oldValue>
+	**/
 	var oldValue(default, null) : Null<String>;
 }

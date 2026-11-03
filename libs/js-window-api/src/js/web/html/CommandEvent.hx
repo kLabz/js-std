@@ -24,8 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CommandEvent>
+**/
 @:native("CommandEvent") extern class CommandEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CommandEvent/source>
+	**/
 	var source(default, null) : Null<js.web.dom.Element>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CommandEvent/command>
+	**/
 	var command(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CommandEvent/CommandEvent>
+	**/
 	function new(type:String, ?eventInitDict:CommandEventInit):Void;
 }

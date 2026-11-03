@@ -24,6 +24,12 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLTitleElement>
+**/
 @:native("HTMLTitleElement") extern class HTMLTitleElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTitleElement/text>
+	**/
 	var text : String;
 }

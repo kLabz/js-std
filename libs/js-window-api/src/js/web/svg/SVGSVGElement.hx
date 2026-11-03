@@ -24,19 +24,44 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement>
+**/
 @:native("SVGSVGElement") extern class SVGSVGElement extends SVGGraphicsElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/x>
+	**/
 	var x(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/y>
+	**/
 	var y(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/width>
+	**/
 	var width(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/height>
+	**/
 	var height(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/currentScale>
+	**/
 	var currentScale : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/currentTranslate>
+	**/
 	var currentTranslate(default, null) : js.web.dom.SVGPoint;
 	/**
 		From interface mixin SVGFitToViewBox
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/viewBox>
 	**/
 	var viewBox(default, null) : SVGAnimatedRect;
 	/**
 		From interface mixin SVGFitToViewBox
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/preserveAspectRatio>
 	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 	/**
@@ -125,40 +150,90 @@ package js.web.svg;
 	var onportalactivate : js.web.html.EventHandler;
 	/**
 		From partial interface in svg-animations.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/animationsPaused>
 	**/
 	function animationsPaused():Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/checkEnclosure>
+	**/
 	function checkEnclosure(element:SVGElement, rect:js.web.dom.SVGRect):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/checkIntersection>
+	**/
 	function checkIntersection(element:SVGElement, rect:js.web.dom.SVGRect):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/createSVGAngle>
+	**/
 	function createSVGAngle():SVGAngle;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/createSVGLength>
+	**/
 	function createSVGLength():SVGLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/createSVGMatrix>
+	**/
 	function createSVGMatrix():js.web.dom.SVGMatrix;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/createSVGNumber>
+	**/
 	function createSVGNumber():SVGNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/createSVGPoint>
+	**/
 	function createSVGPoint():js.web.dom.SVGPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/createSVGRect>
+	**/
 	function createSVGRect():js.web.dom.SVGRect;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/createSVGTransform>
+	**/
 	function createSVGTransform():SVGTransform;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/createSVGTransformFromMatrix>
+	**/
 	function createSVGTransformFromMatrix(?matrix:js.web.dom.DOMMatrix2DInit):SVGTransform;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/deselectAll>
+	**/
 	function deselectAll():Void;
+	@:deprecated
 	function forceRedraw():Void;
 	/**
 		From partial interface in svg-animations.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/getCurrentTime>
 	**/
 	function getCurrentTime():Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/getElementById>
+	**/
 	function getElementById(elementId:String):Null<js.web.dom.Element>;
 	function getEnclosureList(rect:js.web.dom.SVGRect, referenceElement:Null<SVGElement>):js.web.dom.NodeList;
 	function getIntersectionList(rect:js.web.dom.SVGRect, referenceElement:Null<SVGElement>):js.web.dom.NodeList;
 	/**
 		From partial interface in svg-animations.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/pauseAnimations>
 	**/
 	function pauseAnimations():Void;
 	/**
 		From partial interface in svg-animations.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/setCurrentTime>
 	**/
 	function setCurrentTime(seconds:Float):Void;
+	@:deprecated
 	function suspendRedraw(maxWaitMilliseconds:Int):Int;
 	/**
 		From partial interface in svg-animations.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/unpauseAnimations>
 	**/
 	function unpauseAnimations():Void;
+	@:deprecated
 	function unsuspendRedraw(suspendHandleID:Int):Void;
+	@:deprecated
 	function unsuspendRedrawAll():Void;
 }

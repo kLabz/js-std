@@ -24,6 +24,12 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RadioNodeList>
+**/
 @:native("RadioNodeList") extern class RadioNodeList extends js.web.dom.NodeList {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RadioNodeList/value>
+	**/
 	var value : String;
 }

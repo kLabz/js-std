@@ -24,9 +24,24 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGLinearGradientElement>
+**/
 @:native("SVGLinearGradientElement") extern class SVGLinearGradientElement extends SVGGradientElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLinearGradientElement/x1>
+	**/
 	var x1(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLinearGradientElement/y1>
+	**/
 	var y1(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLinearGradientElement/x2>
+	**/
 	var x2(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLinearGradientElement/y2>
+	**/
 	var y2(default, null) : SVGAnimatedLength;
 }

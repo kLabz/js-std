@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSKeyframeRule>
+**/
 @:native("CSSKeyframeRule") extern class CSSKeyframeRule extends CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSKeyframeRule/keyText>
+	**/
 	var keyText : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSKeyframeRule/style>
+	**/
 	var style(default, null) : CSSStyleProperties;
 }

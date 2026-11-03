@@ -24,7 +24,18 @@
 
 package js.web.dom;
 
-@:native("TextEvent") extern class TextEvent extends UIEvent {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TextEvent>
+**/
+@:native("TextEvent") @:deprecated extern class TextEvent extends UIEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextEvent/data>
+	**/
+	@:deprecated
 	var data(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextEvent/initTextEvent>
+	**/
+	@:deprecated
 	function initTextEvent(type:String, ?bubbles:Bool = false, ?cancelable:Bool = false, ?view:Null<js.web.html.Window> = null, ?data:String):Void;
 }

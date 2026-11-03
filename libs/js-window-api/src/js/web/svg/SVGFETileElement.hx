@@ -24,26 +24,42 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFETileElement>
+**/
 @:native("SVGFETileElement") extern class SVGFETileElement extends SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETileElement/in1>
+	**/
 	var in1(default, null) : SVGAnimatedString;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETileElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETileElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETileElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETileElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETileElement/result>
 	**/
 	var result(default, null) : SVGAnimatedString;
 }

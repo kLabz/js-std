@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/KHR_parallel_shader_compile>
 **/
 @:native("KHR_parallel_shader_compile") extern class KHR_parallel_shader_compile {
 	static inline var COMPLETION_STATUS_KHR : GLenum = 0x91B1;

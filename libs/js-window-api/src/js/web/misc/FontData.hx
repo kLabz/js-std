@@ -24,10 +24,28 @@
 
 package js.web.misc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FontData>
+**/
 @:native("FontData") extern class FontData {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontData/postscriptName>
+	**/
 	var postscriptName(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontData/fullName>
+	**/
 	var fullName(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontData/family>
+	**/
 	var family(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontData/style>
+	**/
 	var style(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontData/blob>
+	**/
 	function blob():js.lib.Promise<js.web.net.Blob>;
 }

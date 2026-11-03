@@ -26,7 +26,12 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/LinearAccelerationSensor>
 **/
 @:native("LinearAccelerationSensor") extern class LinearAccelerationSensor extends Accelerometer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LinearAccelerationSensor/LinearAccelerationSensor>
+	**/
 	function new(?options:AccelerometerSensorOptions):Void;
 }

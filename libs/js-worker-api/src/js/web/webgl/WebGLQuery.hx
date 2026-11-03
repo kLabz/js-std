@@ -24,6 +24,9 @@
 
 package js.web.webgl;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WebGLQuery>
+**/
 @:native("WebGLQuery") extern class WebGLQuery extends WebGLObject {
 
 }

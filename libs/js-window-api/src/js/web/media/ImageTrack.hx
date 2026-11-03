@@ -26,10 +26,24 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/ImageTrack>
 **/
 @:native("ImageTrack") extern class ImageTrack {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageTrack/animated>
+	**/
 	var animated(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageTrack/frameCount>
+	**/
 	var frameCount(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageTrack/repetitionCount>
+	**/
 	var repetitionCount(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageTrack/selected>
+	**/
 	var selected : Bool;
 }

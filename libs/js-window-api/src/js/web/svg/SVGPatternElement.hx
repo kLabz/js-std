@@ -24,24 +24,54 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGPatternElement>
+**/
 @:native("SVGPatternElement") extern class SVGPatternElement extends SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPatternElement/patternUnits>
+	**/
 	var patternUnits(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPatternElement/patternContentUnits>
+	**/
 	var patternContentUnits(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPatternElement/patternTransform>
+	**/
 	var patternTransform(default, null) : SVGAnimatedTransformList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPatternElement/x>
+	**/
 	var x(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPatternElement/y>
+	**/
 	var y(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPatternElement/width>
+	**/
 	var width(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPatternElement/height>
+	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFitToViewBox
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPatternElement/viewBox>
 	**/
 	var viewBox(default, null) : SVGAnimatedRect;
 	/**
 		From interface mixin SVGFitToViewBox
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPatternElement/preserveAspectRatio>
 	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 	/**
 		From interface mixin SVGURIReference
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPatternElement/href>
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

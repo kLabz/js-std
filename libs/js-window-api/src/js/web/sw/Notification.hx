@@ -24,29 +24,89 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Notification>
+**/
 @:native("Notification") extern class Notification extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/permission_static>
+	**/
 	static var permission(default, null) : NotificationPermission;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/maxActions_static>
+	**/
 	static var maxActions(default, null) : Int;
 	var onclick : js.web.html.EventHandler;
 	var onshow : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
 	var onclose : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/title>
+	**/
 	var title(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/dir>
+	**/
 	var dir(default, null) : NotificationDirection;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/lang>
+	**/
 	var lang(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/body>
+	**/
 	var body(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/navigate>
+	**/
 	var navigate(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/tag>
+	**/
 	var tag(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/image>
+	**/
 	var image(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/icon>
+	**/
 	var icon(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/badge>
+	**/
 	var badge(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/timestamp>
+	**/
 	var timestamp(default, null) : js.web.perf.EpochTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/renotify>
+	**/
 	var renotify(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/silent>
+	**/
 	var silent(default, null) : Null<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/requireInteraction>
+	**/
 	var requireInteraction(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/data>
+	**/
 	var data(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/actions>
+	**/
 	var actions(default, null) : Array<NotificationAction>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/Notification>
+	**/
 	function new(title:String, ?options:NotificationOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/close>
+	**/
 	function close():Void;
 	function requestPermission(?deprecatedCallback:NotificationPermissionCallback):js.lib.Promise<NotificationPermission>;
 }

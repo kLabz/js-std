@@ -24,10 +24,22 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCDtlsTransport>
+**/
 @:native("RTCDtlsTransport") extern class RTCDtlsTransport extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDtlsTransport/iceTransport>
+	**/
 	var iceTransport(default, null) : RTCIceTransport;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDtlsTransport/state>
+	**/
 	var state(default, null) : RTCDtlsTransportState;
 	var onstatechange : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDtlsTransport/getRemoteCertificates>
+	**/
 	function getRemoteCertificates():Array<js.lib.ArrayBuffer>;
 }

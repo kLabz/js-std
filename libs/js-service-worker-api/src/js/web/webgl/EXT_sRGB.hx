@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/EXT_sRGB>
 **/
 @:native("EXT_sRGB") extern class EXT_sRGB {
 	static inline var SRGB_EXT : GLenum = 0x8C40;

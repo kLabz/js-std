@@ -26,7 +26,12 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/NavigatorLogin>
 **/
 @:native("NavigatorLogin") extern class NavigatorLogin {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigatorLogin/setStatus>
+	**/
 	function setStatus(status:LoginStatus):js.lib.Promise<Void>;
 }

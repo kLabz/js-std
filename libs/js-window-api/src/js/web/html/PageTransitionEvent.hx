@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PageTransitionEvent>
+**/
 @:native("PageTransitionEvent") extern class PageTransitionEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PageTransitionEvent/persisted>
+	**/
 	var persisted(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PageTransitionEvent/PageTransitionEvent>
+	**/
 	function new(type:String, ?eventInitDict:PageTransitionEventInit):Void;
 }

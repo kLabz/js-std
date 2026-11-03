@@ -24,10 +24,30 @@
 
 package js.web.ads;
 
-@:native("HTMLFencedFrameElement") extern class HTMLFencedFrameElement extends js.web.html.HTMLElement {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLFencedFrameElement>
+**/
+@:native("HTMLFencedFrameElement") @:deprecated extern class HTMLFencedFrameElement extends js.web.html.HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFencedFrameElement/config>
+	**/
+	@:deprecated
 	var config : Null<FencedFrameConfig>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFencedFrameElement/width>
+	**/
+	@:deprecated
 	var width : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFencedFrameElement/height>
+	**/
+	@:deprecated
 	var height : String;
+	@:deprecated
 	var sandbox(default, null) : js.web.dom.DOMTokenList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFencedFrameElement/allow>
+	**/
+	@:deprecated
 	var allow : String;
 }

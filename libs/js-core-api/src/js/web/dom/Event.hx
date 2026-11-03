@@ -24,28 +24,92 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Event>
+**/
 @:native("Event") extern class Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/type>
+	**/
 	var type(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/target>
+	**/
 	var target(default, null) : Null<EventTarget>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/srcElement>
+	**/
+	@:deprecated
 	var srcElement(default, null) : Null<EventTarget>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/currentTarget>
+	**/
 	var currentTarget(default, null) : Null<EventTarget>;
 	static inline var NONE : Int = 0;
 	static inline var CAPTURING_PHASE : Int = 1;
 	static inline var AT_TARGET : Int = 2;
 	static inline var BUBBLING_PHASE : Int = 3;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/eventPhase>
+	**/
 	var eventPhase(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/cancelBubble>
+	**/
+	@:deprecated
 	var cancelBubble : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/bubbles>
+	**/
 	var bubbles(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/cancelable>
+	**/
 	var cancelable(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/returnValue>
+	**/
+	@:deprecated
 	var returnValue : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/defaultPrevented>
+	**/
 	var defaultPrevented(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/composed>
+	**/
 	var composed(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/isTrusted>
+	**/
 	var isTrusted(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/timeStamp>
+	**/
 	var timeStamp(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/Event>
+	**/
 	function new(type:String, ?eventInitDict:EventInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/composedPath>
+	**/
 	function composedPath():Array<EventTarget>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/initEvent>
+	**/
+	@:deprecated
 	function initEvent(type:String, ?bubbles:Bool = false, ?cancelable:Bool = false):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/preventDefault>
+	**/
 	function preventDefault():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/stopImmediatePropagation>
+	**/
 	function stopImmediatePropagation():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Event/stopPropagation>
+	**/
 	function stopPropagation():Void;
 }

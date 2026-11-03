@@ -24,13 +24,40 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioBuffer>
+**/
 @:native("AudioBuffer") extern class AudioBuffer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBuffer/sampleRate>
+	**/
 	var sampleRate(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBuffer/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBuffer/duration>
+	**/
 	var duration(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBuffer/numberOfChannels>
+	**/
 	var numberOfChannels(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBuffer/AudioBuffer>
+	**/
 	function new(options:AudioBufferOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBuffer/copyFromChannel>
+	**/
 	function copyFromChannel(destination:js.lib.Float32Array, channelNumber:Int, ?bufferOffset:Int = 0):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBuffer/copyToChannel>
+	**/
 	function copyToChannel(source:js.lib.Float32Array, channelNumber:Int, ?bufferOffset:Int = 0):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioBuffer/getChannelData>
+	**/
 	function getChannelData(channel:Int):js.lib.Float32Array;
 }

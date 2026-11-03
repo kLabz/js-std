@@ -24,8 +24,20 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WaveShaperNode>
+**/
 @:native("WaveShaperNode") extern class WaveShaperNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WaveShaperNode/curve>
+	**/
 	var curve : Null<js.lib.Float32Array>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WaveShaperNode/oversample>
+	**/
 	var oversample : OverSampleType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WaveShaperNode/WaveShaperNode>
+	**/
 	function new(context:BaseAudioContext, ?options:WaveShaperOptions):Void;
 }

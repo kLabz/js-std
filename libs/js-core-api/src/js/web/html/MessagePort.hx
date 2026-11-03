@@ -24,6 +24,9 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MessagePort>
+**/
 @:native("MessagePort") extern class MessagePort extends js.web.dom.EventTarget {
 	/**
 		From interface mixin MessageEventTarget
@@ -33,8 +36,20 @@ package js.web.html;
 		From interface mixin MessageEventTarget
 	**/
 	var onmessageerror : EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MessagePort/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MessagePort/postMessage>
+	**/
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MessagePort/postMessage>
+	**/
 	overload function postMessage(message:Any, ?options:StructuredSerializeOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MessagePort/start>
+	**/
 	function start():Void;
 }

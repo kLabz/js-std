@@ -24,16 +24,52 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule>
+**/
 @:native("CSSCounterStyleRule") extern class CSSCounterStyleRule extends CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/name>
+	**/
 	var name : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/system>
+	**/
 	var system : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/symbols>
+	**/
 	var symbols : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/additiveSymbols>
+	**/
 	var additiveSymbols : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/negative>
+	**/
 	var negative : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/prefix>
+	**/
 	var prefix : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/suffix>
+	**/
 	var suffix : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/range>
+	**/
 	var range : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/pad>
+	**/
 	var pad : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/speakAs>
+	**/
 	var speakAs : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/fallback>
+	**/
 	var fallback : String;
 }

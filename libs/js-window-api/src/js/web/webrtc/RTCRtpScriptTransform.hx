@@ -24,6 +24,12 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransform>
+**/
 @:native("RTCRtpScriptTransform") extern class RTCRtpScriptTransform {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransform/RTCRtpScriptTransform>
+	**/
 	function new(workerOrWorkerAndParameters:WorkerOrWorkerAndParameters, ?options:Any, ?transfer:Array<{ }>):Void;
 }

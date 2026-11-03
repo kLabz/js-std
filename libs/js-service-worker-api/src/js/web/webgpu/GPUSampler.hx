@@ -26,10 +26,14 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUSampler>
 **/
 @:native("GPUSampler") extern class GPUSampler {
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSampler/label>
 	**/
 	var label : String;
 }

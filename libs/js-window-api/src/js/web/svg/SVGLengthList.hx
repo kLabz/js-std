@@ -24,14 +24,44 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGLengthList>
+**/
 @:native("SVGLengthList") extern class SVGLengthList implements ArrayAccess<SVGLength> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLengthList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLengthList/numberOfItems>
+	**/
 	var numberOfItems(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLengthList/appendItem>
+	**/
 	function appendItem(newItem:SVGLength):SVGLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLengthList/clear>
+	**/
 	function clear():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLengthList/getItem>
+	**/
 	function getItem(index:Int):SVGLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLengthList/initialize>
+	**/
 	function initialize(newItem:SVGLength):SVGLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLengthList/insertItemBefore>
+	**/
 	function insertItemBefore(newItem:SVGLength, index:Int):SVGLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLengthList/removeItem>
+	**/
 	function removeItem(index:Int):SVGLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLengthList/replaceItem>
+	**/
 	function replaceItem(newItem:SVGLength, index:Int):SVGLength;
 }

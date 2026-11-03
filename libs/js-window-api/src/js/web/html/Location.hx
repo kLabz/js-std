@@ -24,22 +24,66 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Location>
+**/
 @:native("Location") extern class Location {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Location/href>
+	**/
 	var href : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Location/origin>
+	**/
 	var origin(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Location/protocol>
+	**/
 	var protocol : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Location/host>
+	**/
 	var host : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Location/hostname>
+	**/
 	var hostname : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Location/port>
+	**/
 	var port : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Location/pathname>
+	**/
 	var pathname : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Location/search>
+	**/
 	var search : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Location/hash>
+	**/
 	var hash : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Location/ancestorOrigins>
+	**/
 	var ancestorOrigins(default, null) : DOMStringList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Location/assign>
+	**/
 	function assign(url:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Location/reload>
+	**/
 	function reload():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Location/replace>
+	**/
 	function replace(url:String):Void;
 	/**
 		Returns `this.href`.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Location/toString>
 	**/
 	function toString():String;
 }

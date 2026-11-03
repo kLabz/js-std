@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLMapElement>
+**/
 @:native("HTMLMapElement") extern class HTMLMapElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMapElement/name>
+	**/
 	var name : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMapElement/areas>
+	**/
 	var areas(default, null) : js.web.dom.HTMLCollection;
 }

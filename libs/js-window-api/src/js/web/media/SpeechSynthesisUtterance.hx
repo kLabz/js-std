@@ -24,12 +24,33 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisUtterance>
+**/
 @:native("SpeechSynthesisUtterance") extern class SpeechSynthesisUtterance extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisUtterance/text>
+	**/
 	var text : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisUtterance/lang>
+	**/
 	var lang : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisUtterance/voice>
+	**/
 	var voice : Null<SpeechSynthesisVoice>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisUtterance/volume>
+	**/
 	var volume : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisUtterance/rate>
+	**/
 	var rate : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisUtterance/pitch>
+	**/
 	var pitch : Float;
 	var onstart : js.web.html.EventHandler;
 	var onend : js.web.html.EventHandler;
@@ -38,5 +59,8 @@ package js.web.media;
 	var onresume : js.web.html.EventHandler;
 	var onmark : js.web.html.EventHandler;
 	var onboundary : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisUtterance/SpeechSynthesisUtterance>
+	**/
 	function new(?text:String):Void;
 }

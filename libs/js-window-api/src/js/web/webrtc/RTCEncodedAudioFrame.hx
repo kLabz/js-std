@@ -24,8 +24,20 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedAudioFrame>
+**/
 @:native("RTCEncodedAudioFrame") extern class RTCEncodedAudioFrame {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedAudioFrame/data>
+	**/
 	var data : js.lib.ArrayBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedAudioFrame/RTCEncodedAudioFrame>
+	**/
 	function new(originalFrame:RTCEncodedAudioFrame, ?options:RTCEncodedAudioFrameOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedAudioFrame/getMetadata>
+	**/
 	function getMetadata():RTCEncodedAudioFrameMetadata;
 }

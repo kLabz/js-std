@@ -26,13 +26,26 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUQuerySet>
 **/
 @:native("GPUQuerySet") extern class GPUQuerySet {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUQuerySet/type>
+	**/
 	var type(default, null) : GPUQueryType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUQuerySet/count>
+	**/
 	var count(default, null) : GPUSize32Out;
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUQuerySet/label>
 	**/
 	var label : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUQuerySet/destroy>
+	**/
 	function destroy():Void;
 }

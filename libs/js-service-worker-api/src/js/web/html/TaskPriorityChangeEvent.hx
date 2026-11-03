@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent>
+**/
 @:native("TaskPriorityChangeEvent") extern class TaskPriorityChangeEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent/previousPriority>
+	**/
 	var previousPriority(default, null) : TaskPriority;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent/TaskPriorityChangeEvent>
+	**/
 	function new(type:String, priorityChangeEventInitDict:TaskPriorityChangeEventInit):Void;
 }

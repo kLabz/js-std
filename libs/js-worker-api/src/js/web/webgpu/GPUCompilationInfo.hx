@@ -26,7 +26,12 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUCompilationInfo>
 **/
 @:native("GPUCompilationInfo") extern class GPUCompilationInfo {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCompilationInfo/messages>
+	**/
 	var messages(default, null) : Array<GPUCompilationMessage>;
 }

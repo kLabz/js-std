@@ -24,17 +24,56 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/VTTCue>
+**/
 @:native("VTTCue") extern class VTTCue extends js.web.html.TextTrackCue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTCue/region>
+	**/
 	var region : Null<VTTRegion>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTCue/vertical>
+	**/
 	var vertical : DirectionSetting;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTCue/snapToLines>
+	**/
 	var snapToLines : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTCue/line>
+	**/
 	var line : LineAndPositionSetting;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTCue/lineAlign>
+	**/
 	var lineAlign : LineAlignSetting;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTCue/position>
+	**/
 	var position : LineAndPositionSetting;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTCue/positionAlign>
+	**/
 	var positionAlign : PositionAlignSetting;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTCue/size>
+	**/
 	var size : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTCue/align>
+	**/
 	var align : AlignSetting;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTCue/text>
+	**/
 	var text : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTCue/VTTCue>
+	**/
 	function new(startTime:Float, endTime:Float, text:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VTTCue/getCueAsHTML>
+	**/
 	function getCueAsHTML():js.web.dom.DocumentFragment;
 }

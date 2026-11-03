@@ -24,6 +24,12 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackAudioSourceNode>
+**/
 @:native("MediaStreamTrackAudioSourceNode") extern class MediaStreamTrackAudioSourceNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackAudioSourceNode/MediaStreamTrackAudioSourceNode>
+	**/
 	function new(context:AudioContext, options:MediaStreamTrackAudioSourceOptions):Void;
 }

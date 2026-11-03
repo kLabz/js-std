@@ -24,15 +24,48 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesMap>
+**/
 @:native("CSSFontFeatureValuesMap") extern class CSSFontFeatureValuesMap {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesMap/size>
+	**/
 	var size(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesMap/clear>
+	**/
 	function clear():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesMap/delete>
+	**/
 	function delete(key:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesMap/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<String, Array<Int>>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesMap/forEach>
+	**/
 	function forEach(callback:(value:Array<Int>, key:String, map:CSSFontFeatureValuesMap) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesMap/get>
+	**/
 	function get(key:String):Null<Array<Int>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesMap/has>
+	**/
 	function has(key:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesMap/keys>
+	**/
 	function keys():js.lib.Iterator<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesMap/set>
+	**/
 	function set(featureValueName:String, values:haxe.extern.EitherType<Int, Array<Int>>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesMap/values>
+	**/
 	function values():js.lib.Iterator<Array<Int>>;
 }

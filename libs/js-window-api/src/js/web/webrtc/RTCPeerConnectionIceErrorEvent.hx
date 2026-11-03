@@ -24,11 +24,32 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceErrorEvent>
+**/
 @:native("RTCPeerConnectionIceErrorEvent") extern class RTCPeerConnectionIceErrorEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceErrorEvent/address>
+	**/
 	var address(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceErrorEvent/port>
+	**/
 	var port(default, null) : Null<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceErrorEvent/url>
+	**/
 	var url(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceErrorEvent/errorCode>
+	**/
 	var errorCode(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceErrorEvent/errorText>
+	**/
 	var errorText(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceErrorEvent/RTCPeerConnectionIceErrorEvent>
+	**/
 	function new(type:String, eventInitDict:RTCPeerConnectionIceErrorEventInit):Void;
 }

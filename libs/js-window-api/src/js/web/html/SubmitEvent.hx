@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SubmitEvent>
+**/
 @:native("SubmitEvent") extern class SubmitEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SubmitEvent/submitter>
+	**/
 	var submitter(default, null) : Null<HTMLElement>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SubmitEvent/SubmitEvent>
+	**/
 	function new(type:String, ?eventInitDict:SubmitEventInit):Void;
 }

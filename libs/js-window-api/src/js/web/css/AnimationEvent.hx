@@ -24,13 +24,30 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AnimationEvent>
+**/
 @:native("AnimationEvent") extern class AnimationEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnimationEvent/animationName>
+	**/
 	var animationName(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnimationEvent/elapsedTime>
+	**/
 	var elapsedTime(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnimationEvent/pseudoElement>
+	**/
 	var pseudoElement(default, null) : String;
 	/**
 		From partial interface in css-animations-2.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/AnimationEvent/animation>
 	**/
 	var animation(default, null) : Null<CSSAnimation>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnimationEvent/AnimationEvent>
+	**/
 	function new(type:String, ?animationEventInitDict:AnimationEventInit):Void;
 }

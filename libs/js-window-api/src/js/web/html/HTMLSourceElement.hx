@@ -24,12 +24,36 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLSourceElement>
+**/
 @:native("HTMLSourceElement") extern class HTMLSourceElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLSourceElement/src>
+	**/
 	var src : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLSourceElement/type>
+	**/
 	var type : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLSourceElement/srcset>
+	**/
 	var srcset : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLSourceElement/sizes>
+	**/
 	var sizes : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLSourceElement/media>
+	**/
 	var media : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLSourceElement/width>
+	**/
 	var width : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLSourceElement/height>
+	**/
 	var height : Int;
 }

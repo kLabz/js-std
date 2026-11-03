@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSMathMax>
+**/
 @:native("CSSMathMax") extern class CSSMathMax extends CSSMathValue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathMax/values>
+	**/
 	var values(default, null) : CSSNumericArray;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathMax/CSSMathMax>
+	**/
 	function new(args:haxe.Rest<CSSNumberish>):Void;
 }

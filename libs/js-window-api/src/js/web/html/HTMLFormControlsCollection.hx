@@ -24,6 +24,12 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLFormControlsCollection>
+**/
 @:native("HTMLFormControlsCollection") extern class HTMLFormControlsCollection extends js.web.dom.HTMLCollection {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormControlsCollection/namedItem>
+	**/
 	function namedItem(name:String):Null<haxe.extern.EitherType<RadioNodeList, js.web.dom.Element>>;
 }

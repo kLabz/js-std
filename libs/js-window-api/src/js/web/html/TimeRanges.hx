@@ -24,8 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TimeRanges>
+**/
 @:native("TimeRanges") extern class TimeRanges {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TimeRanges/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TimeRanges/end>
+	**/
 	function end(index:Int):Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TimeRanges/start>
+	**/
 	function start(index:Int):Float;
 }

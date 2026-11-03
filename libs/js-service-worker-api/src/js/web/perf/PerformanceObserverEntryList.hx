@@ -24,8 +24,20 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserverEntryList>
+**/
 @:native("PerformanceObserverEntryList") extern class PerformanceObserverEntryList {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserverEntryList/getEntries>
+	**/
 	function getEntries():PerformanceEntryList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserverEntryList/getEntriesByName>
+	**/
 	function getEntriesByName(name:String, ?type:String):PerformanceEntryList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserverEntryList/getEntriesByType>
+	**/
 	function getEntriesByType(type:String):PerformanceEntryList;
 }

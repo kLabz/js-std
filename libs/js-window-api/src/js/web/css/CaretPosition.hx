@@ -24,8 +24,20 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CaretPosition>
+**/
 @:native("CaretPosition") extern class CaretPosition {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CaretPosition/offsetNode>
+	**/
 	var offsetNode(default, null) : js.web.dom.Node;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CaretPosition/offset>
+	**/
 	var offset(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CaretPosition/getClientRect>
+	**/
 	function getClientRect():Null<js.web.dom.DOMRect>;
 }

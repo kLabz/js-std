@@ -24,25 +24,38 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFEFloodElement>
+**/
 @:native("SVGFEFloodElement") extern class SVGFEFloodElement extends SVGElement {
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEFloodElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEFloodElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEFloodElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEFloodElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEFloodElement/result>
 	**/
 	var result(default, null) : SVGAnimatedString;
 }

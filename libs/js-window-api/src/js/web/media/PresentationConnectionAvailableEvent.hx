@@ -26,8 +26,16 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PresentationConnectionAvailableEvent>
 **/
 @:native("PresentationConnectionAvailableEvent") extern class PresentationConnectionAvailableEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnectionAvailableEvent/connection>
+	**/
 	var connection(default, null) : PresentationConnection;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnectionAvailableEvent/PresentationConnectionAvailableEvent>
+	**/
 	function new(type:String, eventInitDict:PresentationConnectionAvailableEventInit):Void;
 }

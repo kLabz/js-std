@@ -24,7 +24,16 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PeriodicSyncEvent>
+**/
 @:native("PeriodicSyncEvent") extern class PeriodicSyncEvent extends ExtendableEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PeriodicSyncEvent/tag>
+	**/
 	var tag(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PeriodicSyncEvent/PeriodicSyncEvent>
+	**/
 	function new(type:String, init:PeriodicSyncEventInit):Void;
 }

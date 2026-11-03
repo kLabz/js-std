@@ -26,15 +26,41 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition>
 **/
 @:native("SpeechRecognition") extern class SpeechRecognition extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/grammars>
+	**/
 	var grammars : SpeechGrammarList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/lang>
+	**/
 	var lang : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/continuous>
+	**/
 	var continuous : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/interimResults>
+	**/
 	var interimResults : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/unspokenPunctuation>
+	**/
 	var unspokenPunctuation : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/maxAlternatives>
+	**/
 	var maxAlternatives : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/processLocally>
+	**/
 	var processLocally : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/phrases>
+	**/
 	var phrases : Array<SpeechRecognitionPhrase>;
 	var onaudiostart : js.web.html.EventHandler;
 	var onsoundstart : js.web.html.EventHandler;
@@ -47,11 +73,26 @@ package js.web.media;
 	var onerror : js.web.html.EventHandler;
 	var onstart : js.web.html.EventHandler;
 	var onend : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/SpeechRecognition>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/abort>
+	**/
 	function abort():Void;
 	function available(options:SpeechRecognitionOptions):js.lib.Promise<SpeechRecognitionAvailabilityStatus>;
 	function install(options:SpeechRecognitionOptions):js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/start>
+	**/
 	overload function start():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/start>
+	**/
 	overload function start(audioTrack:MediaStreamTrack):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/stop>
+	**/
 	function stop():Void;
 }

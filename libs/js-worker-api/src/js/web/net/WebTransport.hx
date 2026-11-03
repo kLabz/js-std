@@ -26,26 +26,79 @@ package js.web.net;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WebTransport>
 **/
 @:native("WebTransport") extern class WebTransport {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/ready>
+	**/
 	var ready(default, null) : js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/reliability>
+	**/
 	var reliability(default, null) : WebTransportReliabilityMode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/congestionControl>
+	**/
 	var congestionControl(default, null) : WebTransportCongestionControl;
 	var anticipatedConcurrentIncomingUnidirectionalStreams : Null<Int>;
 	var anticipatedConcurrentIncomingBidirectionalStreams : Null<Int>;
 	var responseHeaders(default, null) : Null<Headers>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/protocol>
+	**/
 	var protocol(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/closed>
+	**/
 	var closed(default, null) : js.lib.Promise<WebTransportCloseInfo>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/draining>
+	**/
 	var draining(default, null) : js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/datagrams>
+	**/
 	var datagrams(default, null) : WebTransportDatagramDuplexStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/incomingBidirectionalStreams>
+	**/
 	var incomingBidirectionalStreams(default, null) : ReadableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/incomingUnidirectionalStreams>
+	**/
 	var incomingUnidirectionalStreams(default, null) : ReadableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/supportsReliableOnly_static>
+	**/
 	static var supportsReliableOnly(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/WebTransport>
+	**/
 	function new(url:String, ?options:WebTransportOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/close>
+	**/
 	function close(?closeInfo:WebTransportCloseInfo):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/createBidirectionalStream>
+	**/
 	function createBidirectionalStream(?options:WebTransportSendStreamOptions):js.lib.Promise<WebTransportBidirectionalStream>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/createSendGroup>
+	**/
 	function createSendGroup():WebTransportSendGroup;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/createUnidirectionalStream>
+	**/
 	function createUnidirectionalStream(?options:WebTransportSendStreamOptions):js.lib.Promise<WebTransportSendStream>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/exportKeyingMaterial>
+	**/
 	function exportKeyingMaterial(label:js.web.dom.BufferSource, context:js.web.dom.BufferSource, outputLength:Int):js.lib.Promise<js.lib.Uint8Array>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/getStats>
+	**/
 	function getStats():js.lib.Promise<WebTransportConnectionStats>;
 }

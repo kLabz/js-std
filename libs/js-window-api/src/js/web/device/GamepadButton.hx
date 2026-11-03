@@ -24,8 +24,20 @@
 
 package js.web.device;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/GamepadButton>
+**/
 @:native("GamepadButton") extern class GamepadButton {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadButton/pressed>
+	**/
 	var pressed(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadButton/touched>
+	**/
 	var touched(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadButton/value>
+	**/
 	var value(default, null) : Float;
 }

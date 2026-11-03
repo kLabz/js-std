@@ -24,11 +24,32 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSRotate>
+**/
 @:native("CSSRotate") extern class CSSRotate extends CSSTransformComponent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSRotate/x>
+	**/
 	var x : CSSNumberish;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSRotate/y>
+	**/
 	var y : CSSNumberish;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSRotate/z>
+	**/
 	var z : CSSNumberish;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSRotate/angle>
+	**/
 	var angle : CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSRotate/CSSRotate>
+	**/
 	overload function new(x:CSSNumberish, y:CSSNumberish, z:CSSNumberish, angle:CSSNumericValue):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSRotate/CSSRotate>
+	**/
 	overload function new(angle:CSSNumericValue):Void;
 }

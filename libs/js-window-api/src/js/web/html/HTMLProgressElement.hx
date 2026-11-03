@@ -24,9 +24,24 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLProgressElement>
+**/
 @:native("HTMLProgressElement") extern class HTMLProgressElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLProgressElement/value>
+	**/
 	var value : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLProgressElement/max>
+	**/
 	var max : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLProgressElement/position>
+	**/
 	var position(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLProgressElement/labels>
+	**/
 	var labels(default, null) : js.web.dom.NodeList;
 }

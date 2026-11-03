@@ -24,18 +24,57 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FormData>
+**/
 @:native("FormData") extern class FormData {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FormData/FormData>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FormData/append>
+	**/
 	overload function append(name:String, value:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FormData/append>
+	**/
 	overload function append(name:String, blobValue:Blob, ?filename:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FormData/delete>
+	**/
 	function delete(name:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FormData/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<String, FormDataEntryValue>>;
 	function forEach(callback:(value:FormDataEntryValue, key:String, parent:FormData) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FormData/get>
+	**/
 	function get(name:String):Null<FormDataEntryValue>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FormData/getAll>
+	**/
 	function getAll(name:String):Array<FormDataEntryValue>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FormData/has>
+	**/
 	function has(name:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FormData/keys>
+	**/
 	function keys():js.lib.Iterator<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FormData/set>
+	**/
 	overload function set(name:String, value:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FormData/set>
+	**/
 	overload function set(name:String, blobValue:Blob, ?filename:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FormData/values>
+	**/
 	function values():js.lib.Iterator<FormDataEntryValue>;
 }

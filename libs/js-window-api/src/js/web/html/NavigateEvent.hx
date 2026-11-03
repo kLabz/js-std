@@ -24,19 +24,64 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent>
+**/
 @:native("NavigateEvent") extern class NavigateEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/navigationType>
+	**/
 	var navigationType(default, null) : NavigationType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/destination>
+	**/
 	var destination(default, null) : NavigationDestination;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/canIntercept>
+	**/
 	var canIntercept(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/userInitiated>
+	**/
 	var userInitiated(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/hashChange>
+	**/
 	var hashChange(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/signal>
+	**/
 	var signal(default, null) : js.web.dom.AbortSignal;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/formData>
+	**/
 	var formData(default, null) : Null<js.web.net.FormData>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/downloadRequest>
+	**/
 	var downloadRequest(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/info>
+	**/
 	var info(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/hasUAVisualTransition>
+	**/
 	var hasUAVisualTransition(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/sourceElement>
+	**/
 	var sourceElement(default, null) : Null<js.web.dom.Element>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/NavigateEvent>
+	**/
 	function new(type:String, eventInitDict:NavigateEventInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/intercept>
+	**/
 	function intercept(?options:NavigationInterceptOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/scroll>
+	**/
 	function scroll():Void;
 }

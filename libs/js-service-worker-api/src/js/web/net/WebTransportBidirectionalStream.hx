@@ -26,8 +26,16 @@ package js.web.net;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WebTransportBidirectionalStream>
 **/
 @:native("WebTransportBidirectionalStream") extern class WebTransportBidirectionalStream {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportBidirectionalStream/readable>
+	**/
 	var readable(default, null) : WebTransportReceiveStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportBidirectionalStream/writable>
+	**/
 	var writable(default, null) : WebTransportSendStream;
 }

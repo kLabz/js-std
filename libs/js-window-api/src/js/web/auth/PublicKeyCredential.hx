@@ -26,15 +26,29 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential>
 **/
 @:native("PublicKeyCredential") extern class PublicKeyCredential extends Credential {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/rawId>
+	**/
 	var rawId(default, null) : js.lib.ArrayBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/response>
+	**/
 	var response(default, null) : AuthenticatorResponse;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/authenticatorAttachment>
+	**/
 	var authenticatorAttachment(default, null) : Null<String>;
 	/**
 		From partial interface in webauthn.idl
 	**/
 	function getClientCapabilities():js.lib.Promise<PublicKeyCredentialClientCapabilities>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/getClientExtensionResults>
+	**/
 	function getClientExtensionResults():AuthenticationExtensionsClientOutputs;
 	function isConditionalMediationAvailable():js.lib.Promise<Bool>;
 	/**
@@ -61,5 +75,8 @@ package js.web.auth;
 		From partial interface in webauthn.idl
 	**/
 	function signalUnknownCredential(options:UnknownCredentialOptions):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/toJSON>
+	**/
 	function toJSON():PublicKeyCredentialJSON;
 }

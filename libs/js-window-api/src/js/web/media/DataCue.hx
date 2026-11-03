@@ -24,8 +24,20 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DataCue>
+**/
 @:native("DataCue") extern class DataCue extends js.web.html.TextTrackCue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataCue/value>
+	**/
 	var value : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataCue/type>
+	**/
 	var type(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataCue/DataCue>
+	**/
 	function new(startTime:Float, endTime:Float, value:Any, ?type:String):Void;
 }

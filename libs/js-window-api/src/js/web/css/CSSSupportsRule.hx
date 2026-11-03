@@ -24,6 +24,9 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSSupportsRule>
+**/
 @:native("CSSSupportsRule") extern class CSSSupportsRule extends CSSConditionRule {
 	var matches(default, null) : Bool;
 }

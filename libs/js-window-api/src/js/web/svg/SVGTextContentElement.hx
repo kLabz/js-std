@@ -24,19 +24,53 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGTextContentElement>
+**/
 @:native("SVGTextContentElement") extern class SVGTextContentElement extends SVGGraphicsElement {
 	static inline var LENGTHADJUST_UNKNOWN : Int = 0;
 	static inline var LENGTHADJUST_SPACING : Int = 1;
 	static inline var LENGTHADJUST_SPACINGANDGLYPHS : Int = 2;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextContentElement/textLength>
+	**/
 	var textLength(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextContentElement/lengthAdjust>
+	**/
 	var lengthAdjust(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextContentElement/getCharNumAtPosition>
+	**/
 	function getCharNumAtPosition(?point:js.web.dom.DOMPointInit):Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextContentElement/getComputedTextLength>
+	**/
 	function getComputedTextLength():Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextContentElement/getEndPositionOfChar>
+	**/
 	function getEndPositionOfChar(charnum:Int):js.web.dom.SVGPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextContentElement/getExtentOfChar>
+	**/
 	function getExtentOfChar(charnum:Int):js.web.dom.SVGRect;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextContentElement/getNumberOfChars>
+	**/
 	function getNumberOfChars():Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextContentElement/getRotationOfChar>
+	**/
 	function getRotationOfChar(charnum:Int):Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextContentElement/getStartPositionOfChar>
+	**/
 	function getStartPositionOfChar(charnum:Int):js.web.dom.SVGPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextContentElement/getSubStringLength>
+	**/
 	function getSubStringLength(charnum:Int, nchars:Int):Float;
+	@:deprecated
 	function selectSubString(charnum:Int, nchars:Int):Void;
 }

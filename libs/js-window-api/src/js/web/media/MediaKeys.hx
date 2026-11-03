@@ -26,9 +26,20 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/MediaKeys>
 **/
 @:native("MediaKeys") extern class MediaKeys {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeys/createSession>
+	**/
 	function createSession(?sessionType:MediaKeySessionType = MediaKeySessionType.TEMPORARY):MediaKeySession;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeys/getStatusForPolicy>
+	**/
 	function getStatusForPolicy(?policy:MediaKeysPolicy):js.lib.Promise<MediaKeyStatus>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeys/setServerCertificate>
+	**/
 	function setServerCertificate(serverCertificate:js.web.dom.BufferSource):js.lib.Promise<Bool>;
 }

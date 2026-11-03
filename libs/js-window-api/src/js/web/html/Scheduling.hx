@@ -24,6 +24,12 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Scheduling>
+**/
 @:native("Scheduling") extern class Scheduling {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Scheduling/isInputPending>
+	**/
 	function isInputPending(?isInputPendingOptions:IsInputPendingOptions):Bool;
 }

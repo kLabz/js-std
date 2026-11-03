@@ -26,9 +26,17 @@ package js.web.html;
 
 /**
 	Unhandled extended attribute Global
+	
+	@see <https://developer.mozilla.org/docs/Web/API/SharedWorkerGlobalScope>
 **/
 @:native("SharedWorkerGlobalScope") extern class SharedWorkerGlobalScope extends WorkerGlobalScope {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SharedWorkerGlobalScope/name>
+	**/
 	var name(default, null) : String;
 	var onconnect : EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SharedWorkerGlobalScope/close>
+	**/
 	function close():Void;
 }

@@ -24,17 +24,36 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/InputEvent>
+**/
 @:native("InputEvent") extern class InputEvent extends UIEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/InputEvent/data>
+	**/
 	var data(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/InputEvent/isComposing>
+	**/
 	var isComposing(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/InputEvent/inputType>
+	**/
 	var inputType(default, null) : String;
 	/**
 		From partial interface in input-events.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/InputEvent/dataTransfer>
 	**/
 	var dataTransfer(default, null) : Null<js.web.html.DataTransfer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/InputEvent/InputEvent>
+	**/
 	function new(type:String, ?eventInitDict:InputEventInit):Void;
 	/**
 		From partial interface in input-events.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/InputEvent/getTargetRanges>
 	**/
 	function getTargetRanges():Array<StaticRange>;
 }

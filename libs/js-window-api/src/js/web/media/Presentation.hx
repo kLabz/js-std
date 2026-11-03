@@ -26,14 +26,20 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Presentation>
 **/
 @:native("Presentation") extern class Presentation {
 	/**
 		From partial interface in presentation-api.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Presentation/defaultRequest>
 	**/
 	var defaultRequest : Null<PresentationRequest>;
 	/**
 		From partial interface in presentation-api.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Presentation/receiver>
 	**/
 	var receiver(default, null) : Null<PresentationReceiver>;
 }

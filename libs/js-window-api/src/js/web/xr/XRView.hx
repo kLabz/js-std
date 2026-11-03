@@ -26,17 +26,32 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRView>
 **/
 @:native("XRView") extern class XRView {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRView/eye>
+	**/
 	var eye(default, null) : XREye;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRView/index>
+	**/
 	var index(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRView/recommendedViewportScale>
+	**/
 	var recommendedViewportScale(default, null) : Null<Float>;
 	/**
 		From interface mixin XRViewGeometry
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRView/projectionMatrix>
 	**/
 	var projectionMatrix(default, null) : js.lib.Float32Array;
 	/**
 		From interface mixin XRViewGeometry
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRView/transform>
 	**/
 	var transform(default, null) : XRRigidTransform;
 	/**
@@ -45,7 +60,12 @@ package js.web.xr;
 	var camera(default, null) : Null<XRCamera>;
 	/**
 		From partial interface in webxr-ar-module.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRView/isFirstPersonObserver>
 	**/
 	var isFirstPersonObserver(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRView/requestViewportScale>
+	**/
 	function requestViewportScale(scale:Null<Float>):Void;
 }

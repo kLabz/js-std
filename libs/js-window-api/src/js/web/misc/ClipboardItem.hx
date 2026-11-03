@@ -26,11 +26,25 @@ package js.web.misc;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/ClipboardItem>
 **/
 @:native("ClipboardItem") extern class ClipboardItem {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ClipboardItem/presentationStyle>
+	**/
 	var presentationStyle(default, null) : PresentationStyle;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ClipboardItem/types>
+	**/
 	var types(default, null) : Array<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ClipboardItem/ClipboardItem>
+	**/
 	function new(items:haxe.DynamicAccess<ClipboardItemData>, ?options:ClipboardItemOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ClipboardItem/getType>
+	**/
 	function getType(type:String):js.lib.Promise<js.web.net.Blob>;
 	function supports(type:String):Bool;
 }

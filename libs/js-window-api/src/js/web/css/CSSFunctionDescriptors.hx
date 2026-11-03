@@ -24,6 +24,12 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionDescriptors>
+**/
 @:native("CSSFunctionDescriptors") extern class CSSFunctionDescriptors extends CSSStyleDeclaration {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionDescriptors/result>
+	**/
 	var result : String;
 }

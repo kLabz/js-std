@@ -26,15 +26,34 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUQueue>
 **/
 @:native("GPUQueue") extern class GPUQueue {
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUQueue/label>
 	**/
 	var label : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUQueue/copyExternalImageToTexture>
+	**/
 	function copyExternalImageToTexture(source:GPUCopyExternalImageSourceInfo, destination:GPUCopyExternalImageDestInfo, copySize:GPUExtent3D):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUQueue/onSubmittedWorkDone>
+	**/
 	function onSubmittedWorkDone():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUQueue/submit>
+	**/
 	function submit(commandBuffers:Array<GPUCommandBuffer>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUQueue/writeBuffer>
+	**/
 	function writeBuffer(buffer:GPUBuffer, bufferOffset:GPUSize64, data:js.web.dom.AllowSharedBufferSource, ?dataOffset:GPUSize64 = 0, ?size:GPUSize64):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUQueue/writeTexture>
+	**/
 	function writeTexture(destination:GPUTexelCopyTextureInfo, data:js.web.dom.AllowSharedBufferSource, dataLayout:GPUTexelCopyBufferLayout, size:GPUExtent3D):Void;
 }

@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFECompositeElement>
+**/
 @:native("SVGFECompositeElement") extern class SVGFECompositeElement extends SVGElement {
 	static inline var SVG_FECOMPOSITE_OPERATOR_UNKNOWN : Int = 0;
 	static inline var SVG_FECOMPOSITE_OPERATOR_OVER : Int = 1;
@@ -32,32 +35,63 @@ package js.web.svg;
 	static inline var SVG_FECOMPOSITE_OPERATOR_ATOP : Int = 4;
 	static inline var SVG_FECOMPOSITE_OPERATOR_XOR : Int = 5;
 	static inline var SVG_FECOMPOSITE_OPERATOR_ARITHMETIC : Int = 6;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFECompositeElement/in1>
+	**/
 	var in1(default, null) : SVGAnimatedString;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFECompositeElement/in2>
+	**/
 	var in2(default, null) : SVGAnimatedString;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFECompositeElement/operator>
+	**/
 	@:native("operator")
 	var operator_(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFECompositeElement/k1>
+	**/
 	var k1(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFECompositeElement/k2>
+	**/
 	var k2(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFECompositeElement/k3>
+	**/
 	var k3(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFECompositeElement/k4>
+	**/
 	var k4(default, null) : SVGAnimatedNumber;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFECompositeElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFECompositeElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFECompositeElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFECompositeElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFECompositeElement/result>
 	**/
 	var result(default, null) : SVGAnimatedString;
 }

@@ -26,16 +26,32 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/LanguageDetector>
 **/
 @:native("LanguageDetector") extern class LanguageDetector {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageDetector/expectedInputLanguages>
+	**/
 	var expectedInputLanguages(default, null) : Null<Array<String>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageDetector/inputQuota>
+	**/
 	var inputQuota(default, null) : Float;
 	function availability(?options:LanguageDetectorCreateCoreOptions):js.lib.Promise<Availability>;
 	function create(?options:LanguageDetectorCreateOptions):js.lib.Promise<LanguageDetector>;
 	/**
 		From interface mixin DestroyableModel
+		
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageDetector/destroy>
 	**/
 	function destroy():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageDetector/detect>
+	**/
 	function detect(input:String, ?options:LanguageDetectorDetectOptions):js.lib.Promise<Array<LanguageDetectionResult>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageDetector/measureInputUsage>
+	**/
 	function measureInputUsage(input:String, ?options:LanguageDetectorDetectOptions):js.lib.Promise<Float>;
 }

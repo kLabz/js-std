@@ -24,12 +24,36 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement>
+**/
 @:native("HTMLDialogElement") extern class HTMLDialogElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/open>
+	**/
 	var open : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/returnValue>
+	**/
 	var returnValue : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/closedBy>
+	**/
 	var closedBy : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/close>
+	**/
 	function close(?returnValue:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/requestClose>
+	**/
 	function requestClose(?returnValue:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/show>
+	**/
 	function show():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/showModal>
+	**/
 	function showModal():Void;
 }

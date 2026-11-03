@@ -26,7 +26,12 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUInternalError>
 **/
 @:native("GPUInternalError") extern class GPUInternalError extends GPUError {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUInternalError/GPUInternalError>
+	**/
 	function new(message:String):Void;
 }

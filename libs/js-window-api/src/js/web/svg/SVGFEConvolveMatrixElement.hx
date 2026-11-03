@@ -24,41 +24,90 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement>
+**/
 @:native("SVGFEConvolveMatrixElement") extern class SVGFEConvolveMatrixElement extends SVGElement {
 	static inline var SVG_EDGEMODE_UNKNOWN : Int = 0;
 	static inline var SVG_EDGEMODE_DUPLICATE : Int = 1;
 	static inline var SVG_EDGEMODE_WRAP : Int = 2;
 	static inline var SVG_EDGEMODE_NONE : Int = 3;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/in1>
+	**/
 	var in1(default, null) : SVGAnimatedString;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/orderX>
+	**/
 	var orderX(default, null) : SVGAnimatedInteger;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/orderY>
+	**/
 	var orderY(default, null) : SVGAnimatedInteger;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/kernelMatrix>
+	**/
 	var kernelMatrix(default, null) : SVGAnimatedNumberList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/divisor>
+	**/
 	var divisor(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/bias>
+	**/
 	var bias(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/targetX>
+	**/
 	var targetX(default, null) : SVGAnimatedInteger;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/targetY>
+	**/
 	var targetY(default, null) : SVGAnimatedInteger;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/edgeMode>
+	**/
 	var edgeMode(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/kernelUnitLengthX>
+	**/
 	var kernelUnitLengthX(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/kernelUnitLengthY>
+	**/
 	var kernelUnitLengthY(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/preserveAlpha>
+	**/
 	var preserveAlpha(default, null) : SVGAnimatedBoolean;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEConvolveMatrixElement/result>
 	**/
 	var result(default, null) : SVGAnimatedString;
 }

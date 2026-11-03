@@ -24,12 +24,36 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaSession>
+**/
 @:native("MediaSession") extern class MediaSession {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSession/metadata>
+	**/
 	var metadata : Null<MediaMetadata>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSession/playbackState>
+	**/
 	var playbackState : MediaSessionPlaybackState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSession/setActionHandler>
+	**/
 	function setActionHandler(action:MediaSessionAction, handler:Null<MediaSessionActionHandler>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSession/setCameraActive>
+	**/
 	function setCameraActive(active:Bool):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSession/setMicrophoneActive>
+	**/
 	function setMicrophoneActive(active:Bool):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSession/setPositionState>
+	**/
 	function setPositionState(?state:MediaPositionState):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSession/setScreenshareActive>
+	**/
 	function setScreenshareActive(active:Bool):js.lib.Promise<Void>;
 }

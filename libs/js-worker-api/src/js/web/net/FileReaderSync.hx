@@ -24,10 +24,29 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FileReaderSync>
+**/
 @:native("FileReaderSync") extern class FileReaderSync {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileReaderSync/FileReaderSync>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileReaderSync/readAsArrayBuffer>
+	**/
 	function readAsArrayBuffer(blob:Blob):js.lib.ArrayBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileReaderSync/readAsBinaryString>
+	**/
+	@:deprecated
 	function readAsBinaryString(blob:Blob):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileReaderSync/readAsDataURL>
+	**/
 	function readAsDataURL(blob:Blob):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileReaderSync/readAsText>
+	**/
 	function readAsText(blob:Blob, ?encoding:String):String;
 }

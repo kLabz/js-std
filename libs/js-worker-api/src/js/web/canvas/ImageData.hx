@@ -24,12 +24,36 @@
 
 package js.web.canvas;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ImageData>
+**/
 @:native("ImageData") extern class ImageData {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageData/width>
+	**/
 	var width(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageData/height>
+	**/
 	var height(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageData/data>
+	**/
 	var data(default, null) : js.web.html.ImageDataArray;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageData/pixelFormat>
+	**/
 	var pixelFormat(default, null) : js.web.html.ImageDataPixelFormat;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageData/colorSpace>
+	**/
 	var colorSpace(default, null) : PredefinedColorSpace;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageData/ImageData>
+	**/
 	overload function new(data:js.web.html.ImageDataArray, sw:Int, ?sh:Int, ?settings:ImageDataSettings):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageData/ImageData>
+	**/
 	overload function new(sw:Int, sh:Int, ?settings:ImageDataSettings):Void;
 }

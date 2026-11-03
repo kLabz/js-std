@@ -24,8 +24,20 @@
 
 package js.web.webgl;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WebGLShaderPrecisionFormat>
+**/
 @:native("WebGLShaderPrecisionFormat") extern class WebGLShaderPrecisionFormat {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLShaderPrecisionFormat/rangeMin>
+	**/
 	var rangeMin(default, null) : GLint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLShaderPrecisionFormat/rangeMax>
+	**/
 	var rangeMax(default, null) : GLint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLShaderPrecisionFormat/precision>
+	**/
 	var precision(default, null) : GLint;
 }

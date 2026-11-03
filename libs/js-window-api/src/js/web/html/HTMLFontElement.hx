@@ -24,8 +24,23 @@
 
 package js.web.html;
 
-@:native("HTMLFontElement") extern class HTMLFontElement extends HTMLElement {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLFontElement>
+**/
+@:native("HTMLFontElement") @:deprecated extern class HTMLFontElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFontElement/color>
+	**/
+	@:deprecated
 	var color : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFontElement/face>
+	**/
+	@:deprecated
 	var face : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFontElement/size>
+	**/
+	@:deprecated
 	var size : String;
 }

@@ -26,8 +26,16 @@ package js.web.css;
 
 /**
 	Unhandled extended attribute Global
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PaintWorkletGlobalScope>
 **/
 @:native("PaintWorkletGlobalScope") extern class PaintWorkletGlobalScope extends js.web.html.WorkletGlobalScope {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaintWorkletGlobalScope/devicePixelRatio>
+	**/
 	var devicePixelRatio(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaintWorkletGlobalScope/registerPaint>
+	**/
 	function registerPaint(name:String, paintCtor:js.web.dom.VoidFunction):Void;
 }

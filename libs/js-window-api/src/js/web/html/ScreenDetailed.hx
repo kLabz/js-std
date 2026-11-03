@@ -26,14 +26,40 @@ package js.web.html;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/ScreenDetailed>
 **/
 @:native("ScreenDetailed") extern class ScreenDetailed extends js.web.css.Screen {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScreenDetailed/availLeft>
+	**/
 	var availLeft(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScreenDetailed/availTop>
+	**/
 	var availTop(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScreenDetailed/left>
+	**/
 	var left(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScreenDetailed/top>
+	**/
 	var top(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScreenDetailed/isPrimary>
+	**/
 	var isPrimary(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScreenDetailed/isInternal>
+	**/
 	var isInternal(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScreenDetailed/devicePixelRatio>
+	**/
 	var devicePixelRatio(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScreenDetailed/label>
+	**/
 	var label(default, null) : String;
 }

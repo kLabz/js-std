@@ -24,6 +24,9 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DOMStringMap>
+**/
 @:native("DOMStringMap") extern class DOMStringMap implements Dynamic<String> {
 
 }

@@ -24,47 +24,89 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCellElement>
+**/
 @:native("HTMLTableCellElement") extern class HTMLTableCellElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCellElement/colSpan>
+	**/
 	var colSpan : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCellElement/rowSpan>
+	**/
 	var rowSpan : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCellElement/headers>
+	**/
 	var headers : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCellElement/cellIndex>
+	**/
 	var cellIndex(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCellElement/scope>
+	**/
 	var scope : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCellElement/abbr>
+	**/
 	var abbr : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCellElement/align>
 	**/
+	@:deprecated
 	var align : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var axis : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var height : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var width : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCellElement/ch>
 	**/
+	@:deprecated
 	var ch : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCellElement/chOff>
 	**/
+	@:deprecated
 	var chOff : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCellElement/noWrap>
 	**/
+	@:deprecated
 	var noWrap : Bool;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCellElement/vAlign>
 	**/
+	@:deprecated
 	var vAlign : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCellElement/bgColor>
 	**/
+	@:deprecated
 	var bgColor : String;
 }

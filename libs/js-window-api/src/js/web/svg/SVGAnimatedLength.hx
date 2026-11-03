@@ -24,7 +24,16 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedLength>
+**/
 @:native("SVGAnimatedLength") extern class SVGAnimatedLength {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedLength/baseVal>
+	**/
 	var baseVal(default, null) : SVGLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedLength/animVal>
+	**/
 	var animVal(default, null) : SVGLength;
 }

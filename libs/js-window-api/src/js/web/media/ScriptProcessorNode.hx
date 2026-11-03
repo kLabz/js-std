@@ -24,7 +24,14 @@
 
 package js.web.media;
 
-@:native("ScriptProcessorNode") extern class ScriptProcessorNode extends AudioNode {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ScriptProcessorNode>
+**/
+@:native("ScriptProcessorNode") @:deprecated extern class ScriptProcessorNode extends AudioNode {
 	var onaudioprocess : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScriptProcessorNode/bufferSize>
+	**/
+	@:deprecated
 	var bufferSize(default, null) : Int;
 }

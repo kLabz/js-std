@@ -26,9 +26,20 @@ package js.web.storage;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/CookieStoreManager>
 **/
 @:native("CookieStoreManager") extern class CookieStoreManager {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CookieStoreManager/getSubscriptions>
+	**/
 	function getSubscriptions():js.lib.Promise<Array<CookieStoreGetOptions>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CookieStoreManager/subscribe>
+	**/
 	function subscribe(subscriptions:Array<CookieStoreGetOptions>):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CookieStoreManager/unsubscribe>
+	**/
 	function unsubscribe(subscriptions:Array<CookieStoreGetOptions>):js.lib.Promise<Void>;
 }

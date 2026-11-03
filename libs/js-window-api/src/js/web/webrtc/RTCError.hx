@@ -24,15 +24,36 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCError>
+**/
 @:native("RTCError") extern class RTCError extends js.web.dom.DOMException {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCError/errorDetail>
+	**/
 	var errorDetail(default, null) : RTCErrorDetailType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCError/sdpLineNumber>
+	**/
 	var sdpLineNumber(default, null) : Null<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCError/sctpCauseCode>
+	**/
 	var sctpCauseCode(default, null) : Null<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCError/receivedAlert>
+	**/
 	var receivedAlert(default, null) : Null<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCError/sentAlert>
+	**/
 	var sentAlert(default, null) : Null<Int>;
 	/**
 		From partial interface in webrtc-identity.idl
 	**/
 	var httpRequestStatusCode(default, null) : Null<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCError/RTCError>
+	**/
 	function new(init:RTCErrorInit, ?message:String = ""):Void;
 }

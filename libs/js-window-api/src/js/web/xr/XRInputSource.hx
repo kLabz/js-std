@@ -26,20 +26,41 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRInputSource>
 **/
 @:native("XRInputSource") extern class XRInputSource {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSource/handedness>
+	**/
 	var handedness(default, null) : XRHandedness;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSource/targetRayMode>
+	**/
 	var targetRayMode(default, null) : XRTargetRayMode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSource/targetRaySpace>
+	**/
 	var targetRaySpace(default, null) : XRSpace;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSource/gripSpace>
+	**/
 	var gripSpace(default, null) : Null<XRSpace>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSource/profiles>
+	**/
 	var profiles(default, null) : Array<String>;
 	var skipRendering(default, null) : Bool;
 	/**
 		From partial interface in webxr-gamepads-module.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSource/gamepad>
 	**/
 	var gamepad(default, null) : Null<js.web.device.Gamepad>;
 	/**
 		From partial interface in webxr-hand-input.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSource/hand>
 	**/
 	var hand(default, null) : Null<XRHand>;
 }

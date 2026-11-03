@@ -24,6 +24,9 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest>
+**/
 @:native("XMLHttpRequest") extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
 	var onreadystatechange : js.web.html.EventHandler;
 	static inline var UNSENT : Int = 0;
@@ -31,28 +34,90 @@ package js.web.net;
 	static inline var HEADERS_RECEIVED : Int = 2;
 	static inline var LOADING : Int = 3;
 	static inline var DONE : Int = 4;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/readyState>
+	**/
 	var readyState(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/timeout>
+	**/
 	var timeout : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/withCredentials>
+	**/
 	var withCredentials : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/upload>
+	**/
 	var upload(default, null) : XMLHttpRequestUpload;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/responseURL>
+	**/
 	var responseURL(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/status>
+	**/
 	var status(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/statusText>
+	**/
 	var statusText(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/responseType>
+	**/
 	var responseType : XMLHttpRequestResponseType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/response>
+	**/
 	var response(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/responseText>
+	**/
 	var responseText(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/responseXML>
+	**/
 	var responseXML(default, null) : Null<js.web.dom.Document>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/XMLHttpRequest>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/abort>
+	**/
 	function abort():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/getAllResponseHeaders>
+	**/
 	function getAllResponseHeaders():String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/getResponseHeader>
+	**/
 	function getResponseHeader(name:String):Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/open>
+	**/
 	overload function open(method:String, url:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/open>
+	**/
 	overload function open(method:String, url:String, async:Bool, ?username:Null<String> = null, ?password:Null<String> = null):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/overrideMimeType>
+	**/
 	function overrideMimeType(mime:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/send>
+	**/
 	function send(?body:Null<haxe.extern.EitherType<js.web.dom.Document, XMLHttpRequestBodyInit>> = null):Void;
 	/**
 		From partial interface in trust-token-api.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/setPrivateToken>
 	**/
 	function setPrivateToken(privateToken:js.web.ads.PrivateToken):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/setRequestHeader>
+	**/
 	function setRequestHeader(name:String, value:String):Void;
 }

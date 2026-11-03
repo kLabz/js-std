@@ -26,7 +26,12 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/AuthenticatorResponse>
 **/
 @:native("AuthenticatorResponse") extern class AuthenticatorResponse {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AuthenticatorResponse/clientDataJSON>
+	**/
 	var clientDataJSON(default, null) : js.lib.ArrayBuffer;
 }

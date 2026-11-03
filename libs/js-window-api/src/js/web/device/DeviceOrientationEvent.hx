@@ -26,12 +26,29 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent>
 **/
 @:native("DeviceOrientationEvent") extern class DeviceOrientationEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/alpha>
+	**/
 	var alpha(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/beta>
+	**/
 	var beta(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/gamma>
+	**/
 	var gamma(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/absolute>
+	**/
 	var absolute(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/DeviceOrientationEvent>
+	**/
 	function new(type:String, ?eventInitDict:DeviceOrientationEventInit):Void;
 	function requestPermission(?absolute:Bool = false):js.lib.Promise<js.web.misc.PermissionState>;
 }

@@ -24,21 +24,62 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement>
+**/
 @:native("HTMLIFrameElement") extern class HTMLIFrameElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/src>
+	**/
 	var src : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/srcdoc>
+	**/
 	var srcdoc : haxe.extern.EitherType<js.web.dom.TrustedHTML, String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/name>
+	**/
 	var name : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/sandbox>
+	**/
 	var sandbox(default, null) : js.web.dom.DOMTokenList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/allow>
+	**/
 	var allow : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/allowFullscreen>
+	**/
 	var allowFullscreen : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/width>
+	**/
 	var width : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/height>
+	**/
 	var height : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/referrerPolicy>
+	**/
 	var referrerPolicy : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/loading>
+	**/
 	var loading : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/contentDocument>
+	**/
 	var contentDocument(default, null) : Null<js.web.dom.Document>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/contentWindow>
+	**/
 	var contentWindow(default, null) : Null<Window>;
 	/**
 		From partial interface in anonymous-iframe.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/credentialless>
 	**/
 	var credentialless : Bool;
 	/**
@@ -47,31 +88,39 @@ package js.web.html;
 	var connectionAllowlist : String;
 	/**
 		From partial interface in csp-embedded-enforcement.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/csp>
 	**/
 	var csp : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var align : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var scrolling : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var frameBorder : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var longDesc : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var marginHeight : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var marginWidth : String;
 	/**
 		From partial interface in permissions-policy.idl
@@ -80,7 +129,12 @@ package js.web.html;
 	/**
 		From partial interface in trust-token-api.idl
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/privateToken>
 	**/
 	var privateToken : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/getSVGDocument>
+	**/
 	function getSVGDocument():Null<js.web.dom.Document>;
 }

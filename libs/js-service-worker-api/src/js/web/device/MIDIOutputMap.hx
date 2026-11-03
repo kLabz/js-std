@@ -26,6 +26,8 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/MIDIOutputMap>
 **/
 @:native("MIDIOutputMap") extern class MIDIOutputMap {
 	var size(default, null) : Int;

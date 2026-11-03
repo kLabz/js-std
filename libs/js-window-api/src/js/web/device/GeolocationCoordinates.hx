@@ -26,14 +26,40 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates>
 **/
 @:native("GeolocationCoordinates") extern class GeolocationCoordinates {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/accuracy>
+	**/
 	var accuracy(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/latitude>
+	**/
 	var latitude(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/longitude>
+	**/
 	var longitude(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/altitude>
+	**/
 	var altitude(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/altitudeAccuracy>
+	**/
 	var altitudeAccuracy(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/heading>
+	**/
 	var heading(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/speed>
+	**/
 	var speed(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/toJSON>
+	**/
 	function toJSON():{ };
 }

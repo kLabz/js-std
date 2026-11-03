@@ -24,12 +24,36 @@
 
 package js.web.device;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap>
+**/
 @:native("KeyboardLayoutMap") extern class KeyboardLayoutMap {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/size>
+	**/
 	var size(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<String, String>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/forEach>
+	**/
 	function forEach(callback:(value:String, key:String, map:KeyboardLayoutMap) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/get>
+	**/
 	function get(key:String):Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/has>
+	**/
 	function has(key:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/keys>
+	**/
 	function keys():js.lib.Iterator<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/values>
+	**/
 	function values():js.lib.Iterator<String>;
 }

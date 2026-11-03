@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGTextElement>
+**/
 @:native("SVGTextElement") extern class SVGTextElement extends SVGTextPositioningElement {
 
 }

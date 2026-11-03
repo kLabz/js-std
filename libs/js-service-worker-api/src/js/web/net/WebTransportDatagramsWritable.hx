@@ -26,8 +26,16 @@ package js.web.net;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramsWritable>
 **/
 @:native("WebTransportDatagramsWritable") extern class WebTransportDatagramsWritable extends WritableStream {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramsWritable/sendGroup>
+	**/
 	var sendGroup : Null<WebTransportSendGroup>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramsWritable/sendOrder>
+	**/
 	var sendOrder : Float;
 }

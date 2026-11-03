@@ -24,9 +24,24 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSTranslate>
+**/
 @:native("CSSTranslate") extern class CSSTranslate extends CSSTransformComponent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSTranslate/x>
+	**/
 	var x : CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSTranslate/y>
+	**/
 	var y : CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSTranslate/z>
+	**/
 	var z : CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSTranslate/CSSTranslate>
+	**/
 	function new(x:CSSNumericValue, y:CSSNumericValue, ?z:CSSNumericValue):Void;
 }

@@ -24,7 +24,16 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackEvent>
+**/
 @:native("MediaStreamTrackEvent") extern class MediaStreamTrackEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackEvent/track>
+	**/
 	var track(default, null) : MediaStreamTrack;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackEvent/MediaStreamTrackEvent>
+	**/
 	function new(type:String, eventInitDict:MediaStreamTrackEventInit):Void;
 }

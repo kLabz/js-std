@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_astc>
 **/
 @:native("WEBGL_compressed_texture_astc") extern class WEBGL_compressed_texture_astc {
 	static inline var COMPRESSED_RGBA_ASTC_4x4_KHR : GLenum = 0x93B0;
@@ -56,5 +58,8 @@ package js.web.webgl;
 	static inline var COMPRESSED_SRGB8_ALPHA8_ASTC_10x10_KHR : GLenum = 0x93DB;
 	static inline var COMPRESSED_SRGB8_ALPHA8_ASTC_12x10_KHR : GLenum = 0x93DC;
 	static inline var COMPRESSED_SRGB8_ALPHA8_ASTC_12x12_KHR : GLenum = 0x93DD;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_astc/getSupportedProfiles>
+	**/
 	function getSupportedProfiles():Array<String>;
 }

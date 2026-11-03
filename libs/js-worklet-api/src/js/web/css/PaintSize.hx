@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PaintSize>
+**/
 @:native("PaintSize") extern class PaintSize {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaintSize/width>
+	**/
 	var width(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaintSize/height>
+	**/
 	var height(default, null) : Float;
 }

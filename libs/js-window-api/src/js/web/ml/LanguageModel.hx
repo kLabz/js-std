@@ -26,9 +26,17 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/LanguageModel>
 **/
 @:native("LanguageModel") extern class LanguageModel extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageModel/contextUsage>
+	**/
 	var contextUsage(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageModel/contextWindow>
+	**/
 	var contextWindow(default, null) : Float;
 	var oncontextoverflow : js.web.html.EventHandler;
 	var inputUsage(default, null) : Float;
@@ -37,17 +45,34 @@ package js.web.ml;
 	var topK(default, null) : Int;
 	var temperature(default, null) : Float;
 	var samplingMode(default, null) : Null<LanguageModelSamplingMode>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageModel/append>
+	**/
 	function append(input:LanguageModelPrompt, ?options:LanguageModelAppendOptions):js.lib.Promise<Void>;
 	function availability(?options:LanguageModelCreateCoreOptions):js.lib.Promise<Availability>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageModel/clone>
+	**/
 	function clone(?options:LanguageModelCloneOptions):js.lib.Promise<LanguageModel>;
 	function create(?options:LanguageModelCreateOptions):js.lib.Promise<LanguageModel>;
 	/**
 		From interface mixin DestroyableModel
+		
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageModel/destroy>
 	**/
 	function destroy():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageModel/measureContextUsage>
+	**/
 	function measureContextUsage(input:LanguageModelPrompt, ?options:LanguageModelPromptOptions):js.lib.Promise<Float>;
 	function measureInputUsage(input:LanguageModelPrompt, ?options:LanguageModelPromptOptions):js.lib.Promise<Float>;
 	function params():js.lib.Promise<Null<LanguageModelParams>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageModel/prompt>
+	**/
 	function prompt(input:LanguageModelPrompt, ?options:LanguageModelPromptOptions):js.lib.Promise<LanguageModelPromptResult>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageModel/promptStreaming>
+	**/
 	function promptStreaming(input:LanguageModelPrompt, ?options:LanguageModelPromptOptions):js.web.net.ReadableStream;
 }

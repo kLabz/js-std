@@ -26,7 +26,12 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/AudioWorklet>
 **/
 @:native("AudioWorklet") extern class AudioWorklet extends js.web.html.Worklet {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioWorklet/port>
+	**/
 	var port(default, null) : js.web.html.MessagePort;
 }

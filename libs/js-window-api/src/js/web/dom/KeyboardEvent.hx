@@ -24,32 +24,77 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent>
+**/
 @:native("KeyboardEvent") extern class KeyboardEvent extends UIEvent {
 	static inline var DOM_KEY_LOCATION_STANDARD : Int = 0x00;
 	static inline var DOM_KEY_LOCATION_LEFT : Int = 0x01;
 	static inline var DOM_KEY_LOCATION_RIGHT : Int = 0x02;
 	static inline var DOM_KEY_LOCATION_NUMPAD : Int = 0x03;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/key>
+	**/
 	var key(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/code>
+	**/
 	var code(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/location>
+	**/
 	var location(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/ctrlKey>
+	**/
 	var ctrlKey(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/shiftKey>
+	**/
 	var shiftKey(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/altKey>
+	**/
 	var altKey(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/metaKey>
+	**/
 	var metaKey(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/repeat>
+	**/
 	var repeat(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/isComposing>
+	**/
 	var isComposing(default, null) : Bool;
 	/**
 		From partial interface in uievents.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/charCode>
 	**/
+	@:deprecated
 	var charCode(default, null) : Int;
 	/**
 		From partial interface in uievents.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/keyCode>
 	**/
+	@:deprecated
 	var keyCode(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/KeyboardEvent>
+	**/
 	function new(type:String, ?eventInitDict:KeyboardEventInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/getModifierState>
+	**/
 	function getModifierState(keyArg:String):Bool;
 	/**
 		From partial interface in uievents.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/initKeyboardEvent>
 	**/
+	@:deprecated
 	function initKeyboardEvent(typeArg:String, ?bubblesArg:Bool = false, ?cancelableArg:Bool = false, ?viewArg:Null<js.web.html.Window> = null, ?keyArg:String = "", ?locationArg:Int = 0, ?ctrlKey:Bool = false, ?altKey:Bool = false, ?shiftKey:Bool = false, ?metaKey:Bool = false):Void;
 }

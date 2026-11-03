@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NavigationPrecommitController>
+**/
 @:native("NavigationPrecommitController") extern class NavigationPrecommitController {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationPrecommitController/addHandler>
+	**/
 	function addHandler(handler:NavigationInterceptHandler):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationPrecommitController/redirect>
+	**/
 	function redirect(url:String, ?options:NavigationNavigateOptions):Void;
 }

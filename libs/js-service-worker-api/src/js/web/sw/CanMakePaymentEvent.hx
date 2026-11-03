@@ -24,7 +24,16 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CanMakePaymentEvent>
+**/
 @:native("CanMakePaymentEvent") extern class CanMakePaymentEvent extends ExtendableEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CanMakePaymentEvent/CanMakePaymentEvent>
+	**/
 	function new(type:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CanMakePaymentEvent/respondWith>
+	**/
 	function respondWith(canMakePaymentResponse:js.lib.Promise<Bool>):Void;
 }

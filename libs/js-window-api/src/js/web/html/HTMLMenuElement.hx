@@ -24,9 +24,15 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLMenuElement>
+**/
 @:native("HTMLMenuElement") extern class HTMLMenuElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMenuElement/compact>
 	**/
+	@:deprecated
 	var compact : Bool;
 }

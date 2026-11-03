@@ -24,7 +24,16 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ConstantSourceNode>
+**/
 @:native("ConstantSourceNode") extern class ConstantSourceNode extends AudioScheduledSourceNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ConstantSourceNode/offset>
+	**/
 	var offset(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ConstantSourceNode/ConstantSourceNode>
+	**/
 	function new(context:BaseAudioContext, ?options:ConstantSourceOptions):Void;
 }

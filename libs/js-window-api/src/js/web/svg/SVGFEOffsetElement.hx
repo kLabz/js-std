@@ -24,28 +24,50 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement>
+**/
 @:native("SVGFEOffsetElement") extern class SVGFEOffsetElement extends SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/in1>
+	**/
 	var in1(default, null) : SVGAnimatedString;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/dx>
+	**/
 	var dx(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/dy>
+	**/
 	var dy(default, null) : SVGAnimatedNumber;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/result>
 	**/
 	var result(default, null) : SVGAnimatedString;
 }

@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/EXT_texture_norm16>
 **/
 @:native("EXT_texture_norm16") extern class EXT_texture_norm16 {
 	static inline var R16_EXT : GLenum = 0x822A;

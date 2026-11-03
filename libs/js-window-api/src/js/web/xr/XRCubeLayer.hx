@@ -24,8 +24,17 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XRCubeLayer>
+**/
 @:native("XRCubeLayer") extern class XRCubeLayer extends XRCompositionLayer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRCubeLayer/space>
+	**/
 	var space : XRSpace;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRCubeLayer/orientation>
+	**/
 	var orientation : js.web.dom.DOMPointReadOnly;
 	var onredraw : js.web.html.EventHandler;
 }

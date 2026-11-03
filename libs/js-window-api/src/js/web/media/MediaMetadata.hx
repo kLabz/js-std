@@ -24,11 +24,32 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaMetadata>
+**/
 @:native("MediaMetadata") extern class MediaMetadata {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaMetadata/title>
+	**/
 	var title : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaMetadata/artist>
+	**/
 	var artist : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaMetadata/album>
+	**/
 	var album : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaMetadata/artwork>
+	**/
 	var artwork : Array<{ }>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaMetadata/chapterInfo>
+	**/
 	var chapterInfo(default, null) : Array<ChapterInformation>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaMetadata/MediaMetadata>
+	**/
 	function new(?init:MediaMetadataInit):Void;
 }

@@ -24,26 +24,42 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TextDecoderStream>
+**/
 @:native("TextDecoderStream") extern class TextDecoderStream {
 	/**
 		From interface mixin TextDecoderCommon
+		
+		@see <https://developer.mozilla.org/docs/Web/API/TextDecoderStream/encoding>
 	**/
 	var encoding(default, null) : String;
 	/**
 		From interface mixin TextDecoderCommon
+		
+		@see <https://developer.mozilla.org/docs/Web/API/TextDecoderStream/fatal>
 	**/
 	var fatal(default, null) : Bool;
 	/**
 		From interface mixin TextDecoderCommon
+		
+		@see <https://developer.mozilla.org/docs/Web/API/TextDecoderStream/ignoreBOM>
 	**/
 	var ignoreBOM(default, null) : Bool;
 	/**
 		From interface mixin GenericTransformStream
+		
+		@see <https://developer.mozilla.org/docs/Web/API/TextDecoderStream/readable>
 	**/
 	var readable(default, null) : ReadableStream;
 	/**
 		From interface mixin GenericTransformStream
+		
+		@see <https://developer.mozilla.org/docs/Web/API/TextDecoderStream/writable>
 	**/
 	var writable(default, null) : WritableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextDecoderStream/TextDecoderStream>
+	**/
 	function new(?label:String = "utf-8", ?options:TextDecoderOptions):Void;
 }

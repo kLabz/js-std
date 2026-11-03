@@ -24,21 +24,49 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCRtpSender>
+**/
 @:native("RTCRtpSender") extern class RTCRtpSender {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpSender/track>
+	**/
 	var track(default, null) : Null<js.web.media.MediaStreamTrack>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpSender/transport>
+	**/
 	var transport(default, null) : Null<RTCDtlsTransport>;
 	/**
 		From partial interface in webrtc-encoded-transform.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpSender/transform>
 	**/
 	var transform : Null<RTCRtpSenderTransform>;
 	/**
 		From partial interface in webrtc.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpSender/dtmf>
 	**/
 	var dtmf(default, null) : Null<RTCDTMFSender>;
 	function getCapabilities(kind:String):Null<RTCRtpCapabilities>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpSender/getParameters>
+	**/
 	function getParameters():RTCRtpSendParameters;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpSender/getStats>
+	**/
 	function getStats():js.lib.Promise<RTCStatsReport>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpSender/replaceTrack>
+	**/
 	function replaceTrack(withTrack:Null<js.web.media.MediaStreamTrack>):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpSender/setParameters>
+	**/
 	function setParameters(parameters:RTCRtpSendParameters, ?setParameterOptions:RTCSetParameterOptions):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpSender/setStreams>
+	**/
 	function setStreams(streams:haxe.Rest<js.web.media.MediaStream>):Void;
 }

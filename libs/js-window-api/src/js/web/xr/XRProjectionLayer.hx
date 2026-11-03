@@ -24,11 +24,29 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XRProjectionLayer>
+**/
 @:native("XRProjectionLayer") extern class XRProjectionLayer extends XRCompositionLayer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRProjectionLayer/textureWidth>
+	**/
 	var textureWidth(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRProjectionLayer/textureHeight>
+	**/
 	var textureHeight(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRProjectionLayer/textureArrayLength>
+	**/
 	var textureArrayLength(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRProjectionLayer/ignoreDepthValues>
+	**/
 	var ignoreDepthValues(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRProjectionLayer/fixedFoveation>
+	**/
 	var fixedFoveation : Null<Float>;
 	var deltaPose : Null<XRRigidTransform>;
 }

@@ -24,13 +24,30 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/EventTarget>
+**/
 @:native("EventTarget") extern class EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/EventTarget>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener>
+	**/
 	function addEventListener(type:String, callback:Null<EventListener>, ?options:haxe.extern.EitherType<AddEventListenerOptions, Bool>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/dispatchEvent>
+	**/
 	function dispatchEvent(event:Event):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener>
+	**/
 	function removeEventListener(type:String, callback:Null<EventListener>, ?options:haxe.extern.EitherType<EventListenerOptions, Bool>):Void;
 	/**
 		From partial interface in observable.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/when>
 	**/
 	function when(type:String, ?options:ObservableEventListenerOptions):Observable;
 }

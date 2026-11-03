@@ -24,6 +24,9 @@
 
 package js.web.webgl;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WebGLShader>
+**/
 @:native("WebGLShader") extern class WebGLShader extends WebGLObject {
 
 }

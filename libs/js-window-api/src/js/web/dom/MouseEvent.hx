@@ -24,56 +24,123 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MouseEvent>
+**/
 @:native("MouseEvent") extern class MouseEvent extends UIEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/screenX>
+	**/
 	var screenX(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/screenY>
+	**/
 	var screenY(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/clientX>
+	**/
 	var clientX(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/clientY>
+	**/
 	var clientY(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/layerX>
+	**/
 	var layerX(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/layerY>
+	**/
 	var layerY(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/ctrlKey>
+	**/
 	var ctrlKey(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/shiftKey>
+	**/
 	var shiftKey(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/altKey>
+	**/
 	var altKey(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/metaKey>
+	**/
 	var metaKey(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/button>
+	**/
 	var button(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/buttons>
+	**/
 	var buttons(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/relatedTarget>
+	**/
 	var relatedTarget(default, null) : Null<EventTarget>;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/pageX>
 	**/
 	var pageX(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/pageY>
 	**/
 	var pageY(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/x>
 	**/
 	var x(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/y>
 	**/
 	var y(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/offsetX>
 	**/
 	var offsetX(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/offsetY>
 	**/
 	var offsetY(default, null) : Float;
 	/**
 		From partial interface in pointerlock.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/movementX>
 	**/
 	var movementX(default, null) : Float;
 	/**
 		From partial interface in pointerlock.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/movementY>
 	**/
 	var movementY(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/MouseEvent>
+	**/
 	function new(type:String, ?eventInitDict:MouseEventInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/getModifierState>
+	**/
 	function getModifierState(keyArg:String):Bool;
 	/**
 		From partial interface in pointerevents.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MouseEvent/initMouseEvent>
 	**/
+	@:deprecated
 	function initMouseEvent(typeArg:String, ?bubblesArg:Bool = false, ?cancelableArg:Bool = false, ?viewArg:Null<js.web.html.Window> = null, ?detailArg:Int = 0, ?screenXArg:Int = 0, ?screenYArg:Int = 0, ?clientXArg:Int = 0, ?clientYArg:Int = 0, ?ctrlKeyArg:Bool = false, ?altKeyArg:Bool = false, ?shiftKeyArg:Bool = false, ?metaKeyArg:Bool = false, ?buttonArg:Int = 0, ?relatedTargetArg:Null<EventTarget> = null):Void;
 }

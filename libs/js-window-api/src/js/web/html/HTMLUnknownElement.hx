@@ -24,6 +24,9 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLUnknownElement>
+**/
 @:native("HTMLUnknownElement") extern class HTMLUnknownElement extends HTMLElement {
 
 }

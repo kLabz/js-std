@@ -24,7 +24,16 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumberList>
+**/
 @:native("SVGAnimatedNumberList") extern class SVGAnimatedNumberList {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumberList/baseVal>
+	**/
 	var baseVal(default, null) : SVGNumberList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumberList/animVal>
+	**/
 	var animVal(default, null) : SVGNumberList;
 }

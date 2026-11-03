@@ -24,9 +24,22 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DOMException>
+**/
 @:native("DOMException") extern class DOMException {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMException/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMException/message>
+	**/
 	var message(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMException/code>
+	**/
+	@:deprecated
 	var code(default, null) : Int;
 	static inline var INDEX_SIZE_ERR : Int = 1;
 	static inline var DOMSTRING_SIZE_ERR : Int = 2;
@@ -53,5 +66,8 @@ package js.web.dom;
 	static inline var TIMEOUT_ERR : Int = 23;
 	static inline var INVALID_NODE_TYPE_ERR : Int = 24;
 	static inline var DATA_CLONE_ERR : Int = 25;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMException/DOMException>
+	**/
 	function new(?message:String = "", ?name:String = "Error"):Void;
 }

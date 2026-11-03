@@ -24,7 +24,16 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XRCPUDepthInformation>
+**/
 @:native("XRCPUDepthInformation") extern class XRCPUDepthInformation extends XRDepthInformation {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRCPUDepthInformation/data>
+	**/
 	var data(default, null) : js.lib.ArrayBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRCPUDepthInformation/getDepthInMeters>
+	**/
 	function getDepthInMeters(x:Float, y:Float):Float;
 }

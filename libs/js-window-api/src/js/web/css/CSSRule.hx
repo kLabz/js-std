@@ -24,10 +24,26 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSRule>
+**/
 @:native("CSSRule") extern class CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSRule/cssText>
+	**/
 	var cssText : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSRule/parentRule>
+	**/
 	var parentRule(default, null) : Null<CSSRule>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSRule/parentStyleSheet>
+	**/
 	var parentStyleSheet(default, null) : Null<CSSStyleSheet>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSRule/type>
+	**/
+	@:deprecated
 	var type(default, null) : Int;
 	static inline var STYLE_RULE : Int = 1;
 	static inline var CHARSET_RULE : Int = 2;

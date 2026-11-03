@@ -24,8 +24,20 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ChapterInformation>
+**/
 @:native("ChapterInformation") extern class ChapterInformation {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ChapterInformation/title>
+	**/
 	var title(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ChapterInformation/startTime>
+	**/
 	var startTime(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ChapterInformation/artwork>
+	**/
 	var artwork(default, null) : Array<MediaImage>;
 }

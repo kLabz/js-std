@@ -24,33 +24,55 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFEColorMatrixElement>
+**/
 @:native("SVGFEColorMatrixElement") extern class SVGFEColorMatrixElement extends SVGElement {
 	static inline var SVG_FECOLORMATRIX_TYPE_UNKNOWN : Int = 0;
 	static inline var SVG_FECOLORMATRIX_TYPE_MATRIX : Int = 1;
 	static inline var SVG_FECOLORMATRIX_TYPE_SATURATE : Int = 2;
 	static inline var SVG_FECOLORMATRIX_TYPE_HUEROTATE : Int = 3;
 	static inline var SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA : Int = 4;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEColorMatrixElement/in1>
+	**/
 	var in1(default, null) : SVGAnimatedString;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEColorMatrixElement/type>
+	**/
 	var type(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEColorMatrixElement/values>
+	**/
 	var values(default, null) : SVGAnimatedNumberList;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEColorMatrixElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEColorMatrixElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEColorMatrixElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEColorMatrixElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEColorMatrixElement/result>
 	**/
 	var result(default, null) : SVGAnimatedString;
 }

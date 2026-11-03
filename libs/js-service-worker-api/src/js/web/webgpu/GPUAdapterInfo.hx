@@ -26,13 +26,36 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo>
 **/
 @:native("GPUAdapterInfo") extern class GPUAdapterInfo {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/vendor>
+	**/
 	var vendor(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/architecture>
+	**/
 	var architecture(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/device>
+	**/
 	var device(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/description>
+	**/
 	var description(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/subgroupMinSize>
+	**/
 	var subgroupMinSize(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/subgroupMaxSize>
+	**/
 	var subgroupMaxSize(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/isFallbackAdapter>
+	**/
 	var isFallbackAdapter(default, null) : Bool;
 }

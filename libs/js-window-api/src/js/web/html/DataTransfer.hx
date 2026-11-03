@@ -24,15 +24,48 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DataTransfer>
+**/
 @:native("DataTransfer") extern class DataTransfer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransfer/dropEffect>
+	**/
 	var dropEffect : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransfer/effectAllowed>
+	**/
 	var effectAllowed : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransfer/items>
+	**/
 	var items(default, null) : DataTransferItemList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransfer/types>
+	**/
 	var types(default, null) : Array<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransfer/files>
+	**/
 	var files(default, null) : js.web.net.FileList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransfer/DataTransfer>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransfer/clearData>
+	**/
 	function clearData(?format:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransfer/getData>
+	**/
 	function getData(format:String):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransfer/setData>
+	**/
 	function setData(format:String, data:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransfer/setDragImage>
+	**/
 	function setDragImage(image:js.web.dom.Element, x:Int, y:Int):Void;
 }

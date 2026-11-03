@@ -24,8 +24,20 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ScrollTimeline>
+**/
 @:native("ScrollTimeline") extern class ScrollTimeline extends AnimationTimeline {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScrollTimeline/source>
+	**/
 	var source(default, null) : Null<js.web.dom.Element>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScrollTimeline/axis>
+	**/
 	var axis(default, null) : ScrollAxis;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScrollTimeline/ScrollTimeline>
+	**/
 	function new(?options:ScrollTimelineOptions):Void;
 }

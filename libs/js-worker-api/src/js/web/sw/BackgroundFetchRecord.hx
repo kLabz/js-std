@@ -24,7 +24,16 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRecord>
+**/
 @:native("BackgroundFetchRecord") extern class BackgroundFetchRecord {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRecord/request>
+	**/
 	var request(default, null) : js.web.net.Request;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRecord/responseReady>
+	**/
 	var responseReady(default, null) : js.lib.Promise<js.web.net.Response>;
 }

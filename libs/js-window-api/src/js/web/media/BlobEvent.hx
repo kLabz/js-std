@@ -24,8 +24,20 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BlobEvent>
+**/
 @:native("BlobEvent") extern class BlobEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BlobEvent/data>
+	**/
 	var data(default, null) : js.web.net.Blob;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BlobEvent/timecode>
+	**/
 	var timecode(default, null) : js.web.perf.DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BlobEvent/BlobEvent>
+	**/
 	function new(type:String, eventInitDict:BlobEventInit):Void;
 }

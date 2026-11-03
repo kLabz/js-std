@@ -24,15 +24,38 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement>
+**/
 @:native("HTMLCanvasElement") extern class HTMLCanvasElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/width>
+	**/
 	var width : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/height>
+	**/
 	var height : Int;
 	/**
 		From partial interface in mediacapture-fromelement.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/captureStream>
 	**/
 	function captureStream(?frameRequestRate:Float):js.web.media.MediaStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/getContext>
+	**/
 	function getContext(contextId:String, ?options:Any = null):Null<js.web.canvas.RenderingContext>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/toBlob>
+	**/
 	function toBlob(callback:BlobCallback, ?type:String = "image/png", ?quality:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/toDataURL>
+	**/
 	function toDataURL(?type:String = "image/png", ?quality:Any):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/transferControlToOffscreen>
+	**/
 	function transferControlToOffscreen():js.web.canvas.OffscreenCanvas;
 }

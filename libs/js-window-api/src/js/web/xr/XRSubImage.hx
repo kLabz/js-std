@@ -24,6 +24,12 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XRSubImage>
+**/
 @:native("XRSubImage") extern class XRSubImage {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRSubImage/viewport>
+	**/
 	var viewport(default, null) : XRViewport;
 }

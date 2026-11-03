@@ -26,38 +26,64 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUComputePassEncoder>
 **/
 @:native("GPUComputePassEncoder") extern class GPUComputePassEncoder {
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUComputePassEncoder/label>
 	**/
 	var label : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUComputePassEncoder/dispatchWorkgroups>
+	**/
 	function dispatchWorkgroups(workgroupCountX:GPUSize32, ?workgroupCountY:GPUSize32 = 1, ?workgroupCountZ:GPUSize32 = 1):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUComputePassEncoder/dispatchWorkgroupsIndirect>
+	**/
 	function dispatchWorkgroupsIndirect(indirectBuffer:GPUBuffer, indirectOffset:GPUSize64):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUComputePassEncoder/end>
+	**/
 	function end():Void;
 	/**
 		From interface mixin GPUDebugCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUComputePassEncoder/insertDebugMarker>
 	**/
 	function insertDebugMarker(markerLabel:String):Void;
 	/**
 		From interface mixin GPUDebugCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUComputePassEncoder/popDebugGroup>
 	**/
 	function popDebugGroup():Void;
 	/**
 		From interface mixin GPUDebugCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUComputePassEncoder/pushDebugGroup>
 	**/
 	function pushDebugGroup(groupLabel:String):Void;
 	/**
 		From interface mixin GPUBindingCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUComputePassEncoder/setBindGroup>
 	**/
 	overload function setBindGroup(index:GPUIndex32, bindGroup:Null<GPUBindGroup>, ?dynamicOffsets:Array<GPUBufferDynamicOffset>):Void;
 	/**
 		From interface mixin GPUBindingCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUComputePassEncoder/setBindGroup>
 	**/
 	overload function setBindGroup(index:GPUIndex32, bindGroup:Null<GPUBindGroup>, dynamicOffsetsData:js.lib.Uint32Array, dynamicOffsetsDataStart:GPUSize64, dynamicOffsetsDataLength:GPUSize32):Void;
 	/**
 		From interface mixin GPUBindingCommandsMixin
 	**/
 	function setImmediates(rangeOffset:GPUSize32, data:js.web.dom.AllowSharedBufferSource, ?dataOffset:GPUSize64 = 0, ?dataSize:GPUSize64):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUComputePassEncoder/setPipeline>
+	**/
 	function setPipeline(pipeline:GPUComputePipeline):Void;
 }

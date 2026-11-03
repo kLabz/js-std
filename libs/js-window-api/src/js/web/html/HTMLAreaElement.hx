@@ -24,53 +24,100 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement>
+**/
 @:native("HTMLAreaElement") extern class HTMLAreaElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/alt>
+	**/
 	var alt : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/coords>
+	**/
 	var coords : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/shape>
+	**/
 	var shape : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/download>
+	**/
 	var download : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/ping>
+	**/
 	var ping : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/rel>
+	**/
 	var rel : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/relList>
+	**/
 	var relList(default, null) : js.web.dom.DOMTokenList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/referrerPolicy>
+	**/
 	var referrerPolicy : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/origin>
 	**/
 	var origin(default, null) : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/protocol>
 	**/
 	var protocol : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/username>
 	**/
 	var username : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/password>
 	**/
 	var password : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/host>
 	**/
 	var host : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/hostname>
 	**/
 	var hostname : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/port>
 	**/
 	var port : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/pathname>
 	**/
 	var pathname : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/search>
 	**/
 	var search : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/hash>
 	**/
 	var hash : String;
 	/**
@@ -83,18 +130,25 @@ package js.web.html;
 	var type : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/href>
 	**/
 	var href : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/target>
 	**/
 	var target : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var noHref : Bool;
 	/**
 		Returns `this.href`.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAreaElement/toString>
 	**/
 	function toString():String;
 }

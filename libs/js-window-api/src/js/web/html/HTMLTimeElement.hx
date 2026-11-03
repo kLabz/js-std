@@ -24,6 +24,12 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLTimeElement>
+**/
 @:native("HTMLTimeElement") extern class HTMLTimeElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTimeElement/dateTime>
+	**/
 	var dateTime : String;
 }

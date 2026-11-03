@@ -26,7 +26,12 @@ package js.web.net;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WebTransportReceiveStream>
 **/
 @:native("WebTransportReceiveStream") extern class WebTransportReceiveStream extends ReadableStream {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportReceiveStream/getStats>
+	**/
 	function getStats():js.lib.Promise<WebTransportReceiveStreamStats>;
 }

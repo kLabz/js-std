@@ -24,25 +24,72 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/URL>
+**/
 @:native("URL") extern class URL {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/href>
+	**/
 	var href : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/origin>
+	**/
 	var origin(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/protocol>
+	**/
 	var protocol : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/username>
+	**/
 	var username : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/password>
+	**/
 	var password : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/host>
+	**/
 	var host : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/hostname>
+	**/
 	var hostname : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/port>
+	**/
 	var port : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/pathname>
+	**/
 	var pathname : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/search>
+	**/
 	var search : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/searchParams>
+	**/
 	var searchParams(default, null) : URLSearchParams;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/hash>
+	**/
 	var hash : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/URL>
+	**/
 	function new(url:String, ?base:String):Void;
 	function canParse(url:String, ?base:String):Bool;
 	function parse(url:String, ?base:String):Null<URL>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/toJSON>
+	**/
 	function toJSON():String;
 	/**
 		Returns `this.href`.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/URL/toString>
 	**/
 	function toString():String;
 }

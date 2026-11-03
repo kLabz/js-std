@@ -24,17 +24,36 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceSoftNavigation>
+**/
 @:native("PerformanceSoftNavigation") extern class PerformanceSoftNavigation extends PerformanceEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceSoftNavigation/navigationType>
+	**/
 	var navigationType(default, null) : js.web.html.NavigationType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceSoftNavigation/interactionId>
+	**/
 	var interactionId(default, null) : Float;
 	/**
 		From interface mixin PaintTimingMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceSoftNavigation/paintTime>
 	**/
 	var paintTime(default, null) : DOMHighResTimeStamp;
 	/**
 		From interface mixin PaintTimingMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceSoftNavigation/presentationTime>
 	**/
 	var presentationTime(default, null) : Null<DOMHighResTimeStamp>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceSoftNavigation/getLargestInteractionContentfulPaint>
+	**/
 	function getLargestInteractionContentfulPaint():Null<InteractionContentfulPaint>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceSoftNavigation/toJSON>
+	**/
 	function toJSON():{ };
 }

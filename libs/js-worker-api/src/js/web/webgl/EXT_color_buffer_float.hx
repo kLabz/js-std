@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/EXT_color_buffer_float>
 **/
 @:native("EXT_color_buffer_float") extern class EXT_color_buffer_float {
 

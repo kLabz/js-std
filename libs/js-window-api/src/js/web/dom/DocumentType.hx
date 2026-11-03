@@ -24,24 +24,44 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DocumentType>
+**/
 @:native("DocumentType") extern class DocumentType extends Node {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentType/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentType/publicId>
+	**/
 	var publicId(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentType/systemId>
+	**/
 	var systemId(default, null) : String;
 	/**
 		From interface mixin ChildNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentType/after>
 	**/
 	function after(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From interface mixin ChildNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentType/before>
 	**/
 	function before(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From interface mixin ChildNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentType/remove>
 	**/
 	function remove():Void;
 	/**
 		From interface mixin ChildNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentType/replaceWith>
 	**/
 	function replaceWith(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 }

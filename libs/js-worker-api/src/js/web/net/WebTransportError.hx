@@ -26,9 +26,20 @@ package js.web.net;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WebTransportError>
 **/
 @:native("WebTransportError") extern class WebTransportError extends js.web.dom.DOMException {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportError/source>
+	**/
 	var source(default, null) : WebTransportErrorSource;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportError/streamErrorCode>
+	**/
 	var streamErrorCode(default, null) : Null<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportError/WebTransportError>
+	**/
 	function new(?message:String = "", ?options:WebTransportErrorOptions):Void;
 }

@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DragEvent>
+**/
 @:native("DragEvent") extern class DragEvent extends js.web.dom.MouseEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DragEvent/dataTransfer>
+	**/
 	var dataTransfer(default, null) : Null<DataTransfer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DragEvent/DragEvent>
+	**/
 	function new(type:String, ?eventInitDict:DragEventInit):Void;
 }

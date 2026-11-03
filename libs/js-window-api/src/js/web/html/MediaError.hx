@@ -24,11 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaError>
+**/
 @:native("MediaError") extern class MediaError {
 	static inline var MEDIA_ERR_ABORTED : Int = 1;
 	static inline var MEDIA_ERR_NETWORK : Int = 2;
 	static inline var MEDIA_ERR_DECODE : Int = 3;
 	static inline var MEDIA_ERR_SRC_NOT_SUPPORTED : Int = 4;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaError/code>
+	**/
 	var code(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaError/message>
+	**/
 	var message(default, null) : String;
 }

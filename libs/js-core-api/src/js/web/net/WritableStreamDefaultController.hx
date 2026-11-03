@@ -24,7 +24,16 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultController>
+**/
 @:native("WritableStreamDefaultController") extern class WritableStreamDefaultController {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultController/signal>
+	**/
 	var signal(default, null) : js.web.dom.AbortSignal;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultController/error>
+	**/
 	function error(?e:Any):Void;
 }

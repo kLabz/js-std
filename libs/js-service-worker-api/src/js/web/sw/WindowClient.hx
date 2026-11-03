@@ -24,10 +24,28 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WindowClient>
+**/
 @:native("WindowClient") extern class WindowClient extends Client {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WindowClient/visibilityState>
+	**/
 	var visibilityState(default, null) : js.web.html.DocumentVisibilityState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WindowClient/focused>
+	**/
 	var focused(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WindowClient/ancestorOrigins>
+	**/
 	var ancestorOrigins(default, null) : Array<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WindowClient/focus>
+	**/
 	function focus():js.lib.Promise<WindowClient>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WindowClient/navigate>
+	**/
 	function navigate(url:String):js.lib.Promise<Null<WindowClient>>;
 }

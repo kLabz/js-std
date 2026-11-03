@@ -24,8 +24,20 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CrashReportContext>
+**/
 @:native("CrashReportContext") extern class CrashReportContext {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CrashReportContext/delete>
+	**/
 	function delete(key:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CrashReportContext/initialize>
+	**/
 	function initialize(length:Float):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CrashReportContext/set>
+	**/
 	function set(key:String, value:String):Void;
 }

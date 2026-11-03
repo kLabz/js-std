@@ -26,14 +26,40 @@ package js.web.html;
 
 /**
 	Unhandled extended attribute LegacyFactoryFunction
+	
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionElement>
 **/
 @:native("HTMLOptionElement") extern class HTMLOptionElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionElement/disabled>
+	**/
 	var disabled : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionElement/form>
+	**/
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionElement/label>
+	**/
 	var label : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionElement/defaultSelected>
+	**/
 	var defaultSelected : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionElement/selected>
+	**/
 	var selected : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionElement/value>
+	**/
 	var value : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionElement/text>
+	**/
 	var text : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionElement/index>
+	**/
 	var index(default, null) : Int;
 }

@@ -24,12 +24,36 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ViewTransition>
+**/
 @:native("ViewTransition") extern class ViewTransition {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ViewTransition/updateCallbackDone>
+	**/
 	var updateCallbackDone(default, null) : js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ViewTransition/ready>
+	**/
 	var ready(default, null) : js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ViewTransition/finished>
+	**/
 	var finished(default, null) : js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ViewTransition/types>
+	**/
 	var types(default, null) : ViewTransitionTypeSet;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ViewTransition/transitionRoot>
+	**/
 	var transitionRoot(default, null) : js.web.dom.Element;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ViewTransition/skipTransition>
+	**/
 	function skipTransition():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ViewTransition/waitUntil>
+	**/
 	function waitUntil(promise:js.lib.Promise<Any>):Void;
 }

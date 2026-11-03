@@ -24,11 +24,32 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent>
+**/
 @:native("ErrorEvent") extern class ErrorEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent/message>
+	**/
 	var message(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent/filename>
+	**/
 	var filename(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent/lineno>
+	**/
 	var lineno(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent/colno>
+	**/
 	var colno(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent/error>
+	**/
 	var error(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent/ErrorEvent>
+	**/
 	function new(type:String, ?eventInitDict:ErrorEventInit):Void;
 }

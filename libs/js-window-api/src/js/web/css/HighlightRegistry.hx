@@ -24,19 +24,54 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HighlightRegistry>
+**/
 @:native("HighlightRegistry") extern class HighlightRegistry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HighlightRegistry/size>
+	**/
 	var size(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HighlightRegistry/clear>
+	**/
 	function clear():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HighlightRegistry/delete>
+	**/
 	function delete(key:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HighlightRegistry/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<String, Highlight>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HighlightRegistry/forEach>
+	**/
 	function forEach(callback:(value:Highlight, key:String, map:HighlightRegistry) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HighlightRegistry/get>
+	**/
 	function get(key:String):Null<Highlight>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HighlightRegistry/has>
+	**/
 	function has(key:String):Bool;
 	/**
 		From partial interface in css-highlight-api.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HighlightRegistry/highlightsFromPoint>
 	**/
 	function highlightsFromPoint(x:Float, y:Float, ?options:HighlightsFromPointOptions):Array<HighlightHitResult>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HighlightRegistry/keys>
+	**/
 	function keys():js.lib.Iterator<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HighlightRegistry/set>
+	**/
 	function set(key:String, value:Highlight):HighlightRegistry;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HighlightRegistry/values>
+	**/
 	function values():js.lib.Iterator<Highlight>;
 }

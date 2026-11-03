@@ -24,16 +24,52 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Headers>
+**/
 @:native("Headers") extern class Headers {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Headers/Headers>
+	**/
 	function new(?init:HeadersInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Headers/append>
+	**/
 	function append(name:String, value:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Headers/delete>
+	**/
 	function delete(name:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Headers/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<String, String>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Headers/forEach>
+	**/
 	function forEach(callback:(value:String, key:String, parent:Headers) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Headers/get>
+	**/
 	function get(name:String):Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Headers/getSetCookie>
+	**/
 	function getSetCookie():Array<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Headers/has>
+	**/
 	function has(name:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Headers/keys>
+	**/
 	function keys():js.lib.Iterator<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Headers/set>
+	**/
 	function set(name:String, value:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Headers/values>
+	**/
 	function values():js.lib.Iterator<String>;
 }

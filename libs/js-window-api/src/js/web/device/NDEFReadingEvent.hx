@@ -26,9 +26,20 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/NDEFReadingEvent>
 **/
 @:native("NDEFReadingEvent") extern class NDEFReadingEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFReadingEvent/serialNumber>
+	**/
 	var serialNumber(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFReadingEvent/message>
+	**/
 	var message(default, null) : NDEFMessage;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFReadingEvent/NDEFReadingEvent>
+	**/
 	function new(type:String, readingEventInitDict:NDEFReadingEventInit):Void;
 }

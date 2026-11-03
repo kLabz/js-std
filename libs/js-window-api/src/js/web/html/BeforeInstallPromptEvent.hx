@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BeforeInstallPromptEvent>
+**/
 @:native("BeforeInstallPromptEvent") extern class BeforeInstallPromptEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BeforeInstallPromptEvent/BeforeInstallPromptEvent>
+	**/
 	function new(type:String, ?eventInitDict:js.web.dom.EventInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BeforeInstallPromptEvent/prompt>
+	**/
 	function prompt():js.lib.Promise<PromptResponseObject>;
 }

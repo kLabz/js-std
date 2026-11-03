@@ -24,17 +24,41 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLTrackElement>
+**/
 @:native("HTMLTrackElement") extern class HTMLTrackElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/kind>
+	**/
 	var kind : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/src>
+	**/
 	var src : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/srclang>
+	**/
 	var srclang : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/label>
+	**/
 	var label : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/default>
+	**/
 	@:native("default")
 	var default_ : Bool;
 	static inline var NONE : Int = 0;
 	static inline var LOADING : Int = 1;
 	static inline var LOADED : Int = 2;
 	static inline var ERROR : Int = 3;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/readyState>
+	**/
 	var readyState(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/track>
+	**/
 	var track(default, null) : TextTrack;
 }

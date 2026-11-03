@@ -26,10 +26,24 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PressureRecord>
 **/
 @:native("PressureRecord") extern class PressureRecord {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PressureRecord/source>
+	**/
 	var source(default, null) : PressureSource;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PressureRecord/state>
+	**/
 	var state(default, null) : PressureState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PressureRecord/time>
+	**/
 	var time(default, null) : js.web.perf.DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PressureRecord/toJSON>
+	**/
 	function toJSON():{ };
 }

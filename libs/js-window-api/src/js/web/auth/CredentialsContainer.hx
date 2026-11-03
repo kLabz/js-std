@@ -26,10 +26,24 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/CredentialsContainer>
 **/
 @:native("CredentialsContainer") extern class CredentialsContainer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CredentialsContainer/create>
+	**/
 	function create(?options:CredentialCreationOptions):js.lib.Promise<Null<Credential>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CredentialsContainer/get>
+	**/
 	function get(?options:CredentialRequestOptions):js.lib.Promise<Null<Credential>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CredentialsContainer/preventSilentAccess>
+	**/
 	function preventSilentAccess():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CredentialsContainer/store>
+	**/
 	function store(credential:Credential):js.lib.Promise<Void>;
 }

@@ -24,9 +24,21 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder>
+**/
 @:native("MediaRecorder") extern class MediaRecorder extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/stream>
+	**/
 	var stream(default, null) : MediaStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/mimeType>
+	**/
 	var mimeType(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/state>
+	**/
 	var state(default, null) : RecordingState;
 	var onstart : js.web.html.EventHandler;
 	var onstop : js.web.html.EventHandler;
@@ -34,14 +46,41 @@ package js.web.media;
 	var onpause : js.web.html.EventHandler;
 	var onresume : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/videoBitsPerSecond>
+	**/
 	var videoBitsPerSecond(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/audioBitsPerSecond>
+	**/
 	var audioBitsPerSecond(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/audioBitrateMode>
+	**/
 	var audioBitrateMode(default, null) : BitrateMode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/MediaRecorder>
+	**/
 	function new(stream:MediaStream, ?options:MediaRecorderOptions):Void;
 	function isTypeSupported(type:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/pause>
+	**/
 	function pause():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/requestData>
+	**/
 	function requestData():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/resume>
+	**/
 	function resume():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/start>
+	**/
 	function start(?timeslice:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/stop>
+	**/
 	function stop():Void;
 }

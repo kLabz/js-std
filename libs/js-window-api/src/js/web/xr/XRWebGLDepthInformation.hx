@@ -24,7 +24,13 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XRWebGLDepthInformation>
+**/
 @:native("XRWebGLDepthInformation") extern class XRWebGLDepthInformation extends XRDepthInformation {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLDepthInformation/texture>
+	**/
 	var texture(default, null) : js.web.webgl.WebGLTexture;
 	var textureType(default, null) : XRTextureType;
 	var imageIndex(default, null) : Null<Int>;

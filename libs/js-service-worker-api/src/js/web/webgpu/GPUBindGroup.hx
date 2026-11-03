@@ -26,10 +26,14 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUBindGroup>
 **/
 @:native("GPUBindGroup") extern class GPUBindGroup {
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUBindGroup/label>
 	**/
 	var label : String;
 }

@@ -24,12 +24,27 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RemotePlayback>
+**/
 @:native("RemotePlayback") extern class RemotePlayback extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RemotePlayback/state>
+	**/
 	var state(default, null) : RemotePlaybackState;
 	var onconnecting : js.web.html.EventHandler;
 	var onconnect : js.web.html.EventHandler;
 	var ondisconnect : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RemotePlayback/cancelWatchAvailability>
+	**/
 	function cancelWatchAvailability(?id:Int):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RemotePlayback/prompt>
+	**/
 	function prompt():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RemotePlayback/watchAvailability>
+	**/
 	function watchAvailability(callback:RemotePlaybackAvailabilityCallback):js.lib.Promise<Int>;
 }

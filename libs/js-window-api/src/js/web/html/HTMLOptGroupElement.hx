@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLOptGroupElement>
+**/
 @:native("HTMLOptGroupElement") extern class HTMLOptGroupElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptGroupElement/disabled>
+	**/
 	var disabled : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptGroupElement/label>
+	**/
 	var label : String;
 }

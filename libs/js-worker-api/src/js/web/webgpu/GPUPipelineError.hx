@@ -26,8 +26,16 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUPipelineError>
 **/
 @:native("GPUPipelineError") extern class GPUPipelineError extends js.web.dom.DOMException {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUPipelineError/reason>
+	**/
 	var reason(default, null) : GPUPipelineErrorReason;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUPipelineError/GPUPipelineError>
+	**/
 	function new(?message:String = "", options:GPUPipelineErrorInit):Void;
 }

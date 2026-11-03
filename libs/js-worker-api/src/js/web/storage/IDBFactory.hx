@@ -24,9 +24,24 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/IDBFactory>
+**/
 @:native("IDBFactory") extern class IDBFactory {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBFactory/cmp>
+	**/
 	function cmp(first:Any, second:Any):Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBFactory/databases>
+	**/
 	function databases():js.lib.Promise<Array<IDBDatabaseInfo>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBFactory/deleteDatabase>
+	**/
 	function deleteDatabase(name:String):IDBOpenDBRequest;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBFactory/open>
+	**/
 	function open(name:String, ?version:Float):IDBOpenDBRequest;
 }

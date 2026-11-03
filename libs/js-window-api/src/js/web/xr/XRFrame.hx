@@ -26,12 +26,19 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRFrame>
 **/
 @:native("XRFrame") extern class XRFrame {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRFrame/session>
+	**/
 	var session(default, null) : XRSession;
 	var predictedDisplayTime(default, null) : js.web.perf.DOMHighResTimeStamp;
 	/**
 		From partial interface in anchors.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRFrame/trackedAnchors>
 	**/
 	var trackedAnchors(default, null) : XRAnchorSet;
 	/**
@@ -48,36 +55,58 @@ package js.web.xr;
 	var detectedPlanes(default, null) : XRPlaneSet;
 	/**
 		From partial interface in anchors.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRFrame/createAnchor>
 	**/
 	function createAnchor(pose:XRRigidTransform, space:XRSpace):js.lib.Promise<XRAnchor>;
 	/**
 		From partial interface in webxr-hand-input.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRFrame/fillJointRadii>
 	**/
 	function fillJointRadii(jointSpaces:Array<XRJointSpace>, radii:js.lib.Float32Array):Bool;
 	/**
 		From partial interface in webxr-hand-input.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRFrame/fillPoses>
 	**/
 	function fillPoses(spaces:Array<XRSpace>, baseSpace:XRSpace, transforms:js.lib.Float32Array):Bool;
 	/**
 		From partial interface in webxr-depth-sensing.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRFrame/getDepthInformation>
 	**/
 	function getDepthInformation(view:XRView):Null<XRCPUDepthInformation>;
 	/**
 		From partial interface in webxr-hit-test.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRFrame/getHitTestResults>
 	**/
 	function getHitTestResults(hitTestSource:XRHitTestSource):Array<XRHitTestResult>;
 	/**
 		From partial interface in webxr-hit-test.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRFrame/getHitTestResultsForTransientInput>
 	**/
 	function getHitTestResultsForTransientInput(hitTestSource:XRTransientInputHitTestSource):Array<XRTransientInputHitTestResult>;
 	/**
 		From partial interface in webxr-hand-input.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRFrame/getJointPose>
 	**/
 	function getJointPose(joint:XRJointSpace, baseSpace:XRSpace):Null<XRJointPose>;
 	/**
 		From partial interface in webxr-lighting-estimation.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRFrame/getLightEstimate>
 	**/
 	function getLightEstimate(lightProbe:XRLightProbe):Null<XRLightEstimate>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRFrame/getPose>
+	**/
 	function getPose(space:XRSpace, baseSpace:XRSpace):Null<XRPose>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRFrame/getViewerPose>
+	**/
 	function getViewerPose(referenceSpace:XRReferenceSpace):Null<XRViewerPose>;
 }

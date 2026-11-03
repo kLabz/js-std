@@ -24,26 +24,59 @@
 
 package js.web.device;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Gamepad>
+**/
 @:native("Gamepad") extern class Gamepad {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/index>
+	**/
 	var index(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/connected>
+	**/
 	var connected(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/timestamp>
+	**/
 	var timestamp(default, null) : js.web.perf.DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/mapping>
+	**/
 	var mapping(default, null) : GamepadMappingType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/axes>
+	**/
 	var axes(default, null) : Array<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/buttons>
+	**/
 	var buttons(default, null) : Array<GamepadButton>;
 	var touches(default, null) : Array<GamepadTouch>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/vibrationActuator>
+	**/
 	var vibrationActuator(default, null) : GamepadHapticActuator;
 	/**
 		From partial interface in gamepad-extensions.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/hand>
 	**/
 	var hand(default, null) : GamepadHand;
 	/**
 		From partial interface in gamepad-extensions.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/hapticActuators>
 	**/
 	var hapticActuators(default, null) : Array<GamepadHapticActuator>;
 	/**
 		From partial interface in gamepad-extensions.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/pose>
 	**/
 	var pose(default, null) : Null<GamepadPose>;
 }

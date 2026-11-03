@@ -24,16 +24,39 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement>
+**/
 @:native("SVGImageElement") extern class SVGImageElement extends SVGGraphicsElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement/x>
+	**/
 	var x(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement/y>
+	**/
 	var y(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement/width>
+	**/
 	var width(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement/height>
+	**/
 	var height(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement/preserveAspectRatio>
+	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement/crossOrigin>
+	**/
 	var crossOrigin : Null<String>;
 	var referrerPolicy : String;
 	/**
 		From interface mixin SVGURIReference
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement/href>
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

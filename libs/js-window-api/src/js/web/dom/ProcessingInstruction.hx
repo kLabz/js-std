@@ -24,18 +24,47 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction>
+**/
 @:native("ProcessingInstruction") extern class ProcessingInstruction extends CharacterData {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/target>
+	**/
 	var target(default, null) : String;
 	/**
 		From interface mixin LinkStyle
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/sheet>
 	**/
 	var sheet(default, null) : Null<js.web.css.CSSStyleSheet>;
 	function new(target:String, ?data:String = ""):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/getAttribute>
+	**/
 	function getAttribute(name:String):Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/getAttributeNames>
+	**/
 	function getAttributeNames():Array<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/hasAttribute>
+	**/
 	function hasAttribute(name:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/hasAttributes>
+	**/
 	function hasAttributes():Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/removeAttribute>
+	**/
 	function removeAttribute(name:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/setAttribute>
+	**/
 	function setAttribute(name:String, value:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/toggleAttribute>
+	**/
 	function toggleAttribute(name:String, ?force:Bool):Bool;
 }

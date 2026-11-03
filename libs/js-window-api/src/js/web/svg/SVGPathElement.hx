@@ -24,16 +24,32 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement>
+**/
 @:native("SVGPathElement") extern class SVGPathElement extends SVGGeometryElement {
 	/**
 		From interface mixin SVGPathData
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement/getPathData>
 	**/
 	function getPathData(?settings:SVGPathDataSettings):Array<SVGPathSegment>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement/getPathSegmentAtLength>
+	**/
 	function getPathSegmentAtLength(distance:Float):Null<SVGPathSegment>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement/getPointAtLength>
+	**/
 	function getPointAtLength(distance:Float):js.web.dom.DOMPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement/getTotalLength>
+	**/
 	function getTotalLength():Float;
 	/**
 		From interface mixin SVGPathData
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement/setPathData>
 	**/
 	function setPathData(pathData:Array<SVGPathSegment>):Void;
 }

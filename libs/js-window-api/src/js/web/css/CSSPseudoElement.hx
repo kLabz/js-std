@@ -24,9 +24,21 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSPseudoElement>
+**/
 @:native("CSSPseudoElement") extern class CSSPseudoElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPseudoElement/type>
+	**/
 	var type(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPseudoElement/element>
+	**/
 	var element(default, null) : js.web.dom.Element;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPseudoElement/parent>
+	**/
 	var parent(default, null) : haxe.extern.EitherType<js.web.dom.Element, CSSPseudoElement>;
 	var selectorText(default, null) : String;
 	/**
@@ -45,5 +57,8 @@ package js.web.css;
 		From interface mixin GeometryUtils
 	**/
 	function getBoxQuads(?options:BoxQuadOptions):Array<js.web.dom.DOMQuad>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPseudoElement/pseudo>
+	**/
 	function pseudo(type:String):Null<CSSPseudoElement>;
 }

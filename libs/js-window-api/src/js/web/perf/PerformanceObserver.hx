@@ -24,10 +24,28 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserver>
+**/
 @:native("PerformanceObserver") extern class PerformanceObserver {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserver/supportedEntryTypes_static>
+	**/
 	static var supportedEntryTypes(default, null) : Array<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserver/PerformanceObserver>
+	**/
 	function new(callback:PerformanceObserverCallback):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserver/disconnect>
+	**/
 	function disconnect():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserver/observe>
+	**/
 	function observe(?options:PerformanceObserverInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserver/takeRecords>
+	**/
 	function takeRecords():PerformanceEntryList;
 }

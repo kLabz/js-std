@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_color_buffer_float>
 **/
 @:native("WEBGL_color_buffer_float") extern class WEBGL_color_buffer_float {
 	static inline var RGBA32F_EXT : GLenum = 0x8814;

@@ -24,7 +24,16 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCErrorEvent>
+**/
 @:native("RTCErrorEvent") extern class RTCErrorEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCErrorEvent/error>
+	**/
 	var error(default, null) : RTCError;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCErrorEvent/RTCErrorEvent>
+	**/
 	function new(type:String, eventInitDict:RTCErrorEventInit):Void;
 }

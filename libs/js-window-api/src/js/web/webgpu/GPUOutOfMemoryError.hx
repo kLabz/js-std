@@ -26,7 +26,12 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUOutOfMemoryError>
 **/
 @:native("GPUOutOfMemoryError") extern class GPUOutOfMemoryError extends GPUError {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUOutOfMemoryError/GPUOutOfMemoryError>
+	**/
 	function new(message:String):Void;
 }

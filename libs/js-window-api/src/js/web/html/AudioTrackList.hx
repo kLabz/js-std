@@ -24,10 +24,19 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioTrackList>
+**/
 @:native("AudioTrackList") extern class AudioTrackList extends js.web.dom.EventTarget implements ArrayAccess<AudioTrack> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioTrackList/length>
+	**/
 	var length(default, null) : Int;
 	var onchange : EventHandler;
 	var onaddtrack : EventHandler;
 	var onremovetrack : EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioTrackList/getTrackById>
+	**/
 	function getTrackById(id:String):Null<AudioTrack>;
 }

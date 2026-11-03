@@ -24,22 +24,66 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList>
+**/
 @:native("DOMTokenList") extern class DOMTokenList implements ArrayAccess<Null<String>> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/value>
+	**/
 	var value : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/add>
+	**/
 	function add(tokens:haxe.Rest<String>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/contains>
+	**/
 	function contains(token:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<Int, String>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/forEach>
+	**/
 	function forEach(callback:(value:String, key:Int, parent:DOMTokenList) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/item>
+	**/
 	function item(index:Int):Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/keys>
+	**/
 	function keys():js.lib.Iterator<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/remove>
+	**/
 	function remove(tokens:haxe.Rest<String>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/replace>
+	**/
 	function replace(token:String, newToken:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/supports>
+	**/
 	function supports(token:String):Bool;
 	/**
 		Returns `this.value`.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/toString>
 	**/
 	function toString():String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/toggle>
+	**/
 	function toggle(token:String, ?force:Bool):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/values>
+	**/
 	function values():js.lib.Iterator<String>;
 }

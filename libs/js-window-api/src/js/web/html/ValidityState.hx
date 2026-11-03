@@ -24,16 +24,52 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ValidityState>
+**/
 @:native("ValidityState") extern class ValidityState {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ValidityState/valueMissing>
+	**/
 	var valueMissing(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ValidityState/typeMismatch>
+	**/
 	var typeMismatch(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ValidityState/patternMismatch>
+	**/
 	var patternMismatch(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ValidityState/tooLong>
+	**/
 	var tooLong(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ValidityState/tooShort>
+	**/
 	var tooShort(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ValidityState/rangeUnderflow>
+	**/
 	var rangeUnderflow(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ValidityState/rangeOverflow>
+	**/
 	var rangeOverflow(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ValidityState/stepMismatch>
+	**/
 	var stepMismatch(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ValidityState/badInput>
+	**/
 	var badInput(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ValidityState/customError>
+	**/
 	var customError(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ValidityState/valid>
+	**/
 	var valid(default, null) : Bool;
 }

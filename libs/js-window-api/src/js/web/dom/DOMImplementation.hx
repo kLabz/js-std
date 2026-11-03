@@ -24,9 +24,25 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DOMImplementation>
+**/
 @:native("DOMImplementation") extern class DOMImplementation {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMImplementation/createDocument>
+	**/
 	function createDocument(namespace:Null<String>, qualifiedName:String, ?doctype:Null<DocumentType> = null):XMLDocument;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMImplementation/createDocumentType>
+	**/
 	function createDocumentType(name:String, publicId:String, systemId:String):DocumentType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMImplementation/createHTMLDocument>
+	**/
 	function createHTMLDocument(?title:String):Document;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMImplementation/hasFeature>
+	**/
+	@:deprecated
 	function hasFeature():Bool;
 }

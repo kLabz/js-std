@@ -26,6 +26,8 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/MediaDevices>
 **/
 @:native("MediaDevices") extern class MediaDevices extends js.web.dom.EventTarget {
 	var ondevicechange : js.web.html.EventHandler;
@@ -37,17 +39,26 @@ package js.web.media;
 		From partial interface in mediacapture-handle-actions.idl
 	**/
 	var oncaptureaction : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaDevices/enumerateDevices>
+	**/
 	function enumerateDevices():js.lib.Promise<Array<MediaDeviceInfo>>;
 	/**
 		From partial interface in screen-capture.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MediaDevices/getDisplayMedia>
 	**/
 	function getDisplayMedia(?options:DisplayMediaStreamOptions):js.lib.Promise<MediaStream>;
 	/**
 		From partial interface in mediacapture-streams.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MediaDevices/getSupportedConstraints>
 	**/
 	function getSupportedConstraints():MediaTrackSupportedConstraints;
 	/**
 		From partial interface in mediacapture-streams.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MediaDevices/getUserMedia>
 	**/
 	function getUserMedia(?constraints:MediaStreamConstraints):js.lib.Promise<MediaStream>;
 	/**
@@ -56,6 +67,8 @@ package js.web.media;
 	function getViewportMedia(?options:DisplayMediaStreamOptions):js.lib.Promise<MediaStream>;
 	/**
 		From partial interface in audio-output.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MediaDevices/selectAudioOutput>
 	**/
 	function selectAudioOutput(?options:AudioOutputOptions):js.lib.Promise<MediaDeviceInfo>;
 	/**

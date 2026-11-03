@@ -24,8 +24,20 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionRule>
+**/
 @:native("CSSFunctionRule") extern class CSSFunctionRule extends CSSGroupingRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionRule/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionRule/returnType>
+	**/
 	var returnType(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionRule/getParameters>
+	**/
 	function getParameters():Array<FunctionParameter>;
 }

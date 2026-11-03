@@ -26,11 +26,18 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUShaderModule>
 **/
 @:native("GPUShaderModule") extern class GPUShaderModule {
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUShaderModule/label>
 	**/
 	var label : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUShaderModule/getCompilationInfo>
+	**/
 	function getCompilationInfo():js.lib.Promise<GPUCompilationInfo>;
 }

@@ -26,9 +26,20 @@ package js.web.storage;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle>
 **/
 @:native("FileSystemFileHandle") extern class FileSystemFileHandle extends FileSystemHandle {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle/createSyncAccessHandle>
+	**/
 	function createSyncAccessHandle():js.lib.Promise<FileSystemSyncAccessHandle>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle/createWritable>
+	**/
 	function createWritable(?options:FileSystemCreateWritableOptions):js.lib.Promise<FileSystemWritableFileStream>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle/getFile>
+	**/
 	function getFile():js.lib.Promise<js.web.net.File>;
 }

@@ -24,12 +24,33 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry>
+**/
 @:native("PerformanceEntry") extern class PerformanceEntry {
 	var id(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry/entryType>
+	**/
 	var entryType(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry/startTime>
+	**/
 	var startTime(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry/duration>
+	**/
 	var duration(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry/navigationId>
+	**/
 	var navigationId(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry/toJSON>
+	**/
 	function toJSON():{ };
 }

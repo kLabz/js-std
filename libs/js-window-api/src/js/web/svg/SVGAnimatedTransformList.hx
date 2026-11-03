@@ -24,7 +24,16 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedTransformList>
+**/
 @:native("SVGAnimatedTransformList") extern class SVGAnimatedTransformList {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedTransformList/baseVal>
+	**/
 	var baseVal(default, null) : SVGTransformList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedTransformList/animVal>
+	**/
 	var animVal(default, null) : SVGTransformList;
 }

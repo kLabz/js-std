@@ -24,7 +24,16 @@
 
 package js.web.misc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ClipboardEvent>
+**/
 @:native("ClipboardEvent") extern class ClipboardEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ClipboardEvent/clipboardData>
+	**/
 	var clipboardData(default, null) : Null<js.web.html.DataTransfer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ClipboardEvent/ClipboardEvent>
+	**/
 	function new(type:String, ?eventInitDict:ClipboardEventInit):Void;
 }

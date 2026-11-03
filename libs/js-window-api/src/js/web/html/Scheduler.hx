@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Scheduler>
+**/
 @:native("Scheduler") extern class Scheduler {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Scheduler/postTask>
+	**/
 	function postTask(callback:SchedulerPostTaskCallback, ?options:SchedulerPostTaskOptions):js.lib.Promise<Any>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Scheduler/yield>
+	**/
 	function yield():js.lib.Promise<Void>;
 }

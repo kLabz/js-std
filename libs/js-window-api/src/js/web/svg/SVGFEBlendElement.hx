@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFEBlendElement>
+**/
 @:native("SVGFEBlendElement") extern class SVGFEBlendElement extends SVGElement {
 	static inline var SVG_FEBLEND_MODE_UNKNOWN : Int = 0;
 	static inline var SVG_FEBLEND_MODE_NORMAL : Int = 1;
@@ -42,27 +45,46 @@ package js.web.svg;
 	static inline var SVG_FEBLEND_MODE_SATURATION : Int = 14;
 	static inline var SVG_FEBLEND_MODE_COLOR : Int = 15;
 	static inline var SVG_FEBLEND_MODE_LUMINOSITY : Int = 16;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEBlendElement/in1>
+	**/
 	var in1(default, null) : SVGAnimatedString;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEBlendElement/in2>
+	**/
 	var in2(default, null) : SVGAnimatedString;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEBlendElement/mode>
+	**/
 	var mode(default, null) : SVGAnimatedEnumeration;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEBlendElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEBlendElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEBlendElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEBlendElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEBlendElement/result>
 	**/
 	var result(default, null) : SVGAnimatedString;
 }

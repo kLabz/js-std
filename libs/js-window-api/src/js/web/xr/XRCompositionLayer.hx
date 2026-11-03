@@ -24,13 +24,31 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XRCompositionLayer>
+**/
 @:native("XRCompositionLayer") extern class XRCompositionLayer extends XRLayer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRCompositionLayer/layout>
+	**/
 	var layout(default, null) : XRLayerLayout;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRCompositionLayer/blendTextureSourceAlpha>
+	**/
 	var blendTextureSourceAlpha : Bool;
 	var forceMonoPresentation : Bool;
 	var opacity : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRCompositionLayer/mipLevels>
+	**/
 	var mipLevels(default, null) : Int;
 	var quality : XRLayerQuality;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRCompositionLayer/needsRedraw>
+	**/
 	var needsRedraw(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRCompositionLayer/destroy>
+	**/
 	function destroy():Void;
 }

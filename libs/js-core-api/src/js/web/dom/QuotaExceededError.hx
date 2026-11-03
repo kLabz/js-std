@@ -24,8 +24,20 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/QuotaExceededError>
+**/
 @:native("QuotaExceededError") extern class QuotaExceededError extends DOMException {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/QuotaExceededError/quota>
+	**/
 	var quota(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/QuotaExceededError/requested>
+	**/
 	var requested(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/QuotaExceededError/QuotaExceededError>
+	**/
 	function new(?message:String = "", ?options:QuotaExceededErrorOptions):Void;
 }

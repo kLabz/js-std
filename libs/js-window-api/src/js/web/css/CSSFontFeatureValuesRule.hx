@@ -24,13 +24,37 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesRule>
+**/
 @:native("CSSFontFeatureValuesRule") extern class CSSFontFeatureValuesRule extends CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesRule/fontFamily>
+	**/
 	var fontFamily : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesRule/annotation>
+	**/
 	var annotation(default, null) : CSSFontFeatureValuesMap;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesRule/ornaments>
+	**/
 	var ornaments(default, null) : CSSFontFeatureValuesMap;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesRule/stylistic>
+	**/
 	var stylistic(default, null) : CSSFontFeatureValuesMap;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesRule/swash>
+	**/
 	var swash(default, null) : CSSFontFeatureValuesMap;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesRule/characterVariant>
+	**/
 	var characterVariant(default, null) : CSSFontFeatureValuesMap;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesRule/styleset>
+	**/
 	var styleset(default, null) : CSSFontFeatureValuesMap;
 	var historicalForms(default, null) : CSSFontFeatureValuesMap;
 }

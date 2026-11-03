@@ -24,7 +24,16 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/GainNode>
+**/
 @:native("GainNode") extern class GainNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GainNode/gain>
+	**/
 	var gain(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GainNode/GainNode>
+	**/
 	function new(context:BaseAudioContext, ?options:GainOptions):Void;
 }

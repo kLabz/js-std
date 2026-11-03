@@ -24,6 +24,9 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaSourceHandle>
+**/
 @:native("MediaSourceHandle") extern class MediaSourceHandle {
 
 }

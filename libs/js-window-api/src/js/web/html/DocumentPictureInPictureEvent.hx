@@ -26,8 +26,16 @@ package js.web.html;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/DocumentPictureInPictureEvent>
 **/
 @:native("DocumentPictureInPictureEvent") extern class DocumentPictureInPictureEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentPictureInPictureEvent/window>
+	**/
 	var window(default, null) : Window;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentPictureInPictureEvent/DocumentPictureInPictureEvent>
+	**/
 	function new(type:String, eventInitDict:DocumentPictureInPictureEventInit):Void;
 }

@@ -24,8 +24,20 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy>
+**/
 @:native("ByteLengthQueuingStrategy") extern class ByteLengthQueuingStrategy {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/highWaterMark>
+	**/
 	var highWaterMark(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/size>
+	**/
 	var size(default, null) : js.web.dom.Function;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/ByteLengthQueuingStrategy>
+	**/
 	function new(init:QueuingStrategyInit):Void;
 }

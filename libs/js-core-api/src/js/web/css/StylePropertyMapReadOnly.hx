@@ -24,13 +24,40 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMapReadOnly>
+**/
 @:native("StylePropertyMapReadOnly") extern class StylePropertyMapReadOnly {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMapReadOnly/size>
+	**/
 	var size(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMapReadOnly/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<String, Array<CSSStyleValue>>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMapReadOnly/forEach>
+	**/
 	function forEach(callback:(value:Array<CSSStyleValue>, key:String, parent:StylePropertyMapReadOnly) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMapReadOnly/get>
+	**/
 	function get(property:String):haxe.extern.EitherType<Void, CSSStyleValue>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMapReadOnly/getAll>
+	**/
 	function getAll(property:String):Array<CSSStyleValue>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMapReadOnly/has>
+	**/
 	function has(property:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMapReadOnly/keys>
+	**/
 	function keys():js.lib.Iterator<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMapReadOnly/values>
+	**/
 	function values():js.lib.Iterator<Array<CSSStyleValue>>;
 }

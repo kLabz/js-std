@@ -24,6 +24,12 @@
 
 package js.web.canvas;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CanvasGradient>
+**/
 @:native("CanvasGradient") extern class CanvasGradient {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasGradient/addColorStop>
+	**/
 	function addColorStop(offset:Float, color:String):Void;
 }

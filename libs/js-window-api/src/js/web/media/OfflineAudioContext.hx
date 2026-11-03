@@ -24,13 +24,34 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext>
+**/
 @:native("OfflineAudioContext") extern class OfflineAudioContext extends BaseAudioContext {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/length>
+	**/
 	var length(default, null) : Null<Int>;
 	var oncomplete : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/OfflineAudioContext>
+	**/
 	overload function new(numberOfChannels:Int, length:Int, sampleRate:Float):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/OfflineAudioContext>
+	**/
 	overload function new(contextOptions:OfflineAudioContextOptions):Void;
 	function close():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/resume>
+	**/
 	function resume():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/startRendering>
+	**/
 	function startRendering(?chunkSize:Null<Int> = null):js.lib.Promise<AudioBuffer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/suspend>
+	**/
 	function suspend(suspendTime:Float):js.lib.Promise<Void>;
 }

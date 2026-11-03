@@ -26,12 +26,32 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUCompilationMessage>
 **/
 @:native("GPUCompilationMessage") extern class GPUCompilationMessage {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCompilationMessage/message>
+	**/
 	var message(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCompilationMessage/type>
+	**/
 	var type(default, null) : GPUCompilationMessageType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCompilationMessage/lineNum>
+	**/
 	var lineNum(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCompilationMessage/linePos>
+	**/
 	var linePos(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCompilationMessage/offset>
+	**/
 	var offset(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCompilationMessage/length>
+	**/
 	var length(default, null) : Float;
 }

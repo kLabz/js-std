@@ -24,6 +24,12 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSNestedDeclarations>
+**/
 @:native("CSSNestedDeclarations") extern class CSSNestedDeclarations extends CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNestedDeclarations/style>
+	**/
 	var style(default, null) : CSSStyleProperties;
 }

@@ -24,18 +24,38 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLEmbedElement>
+**/
 @:native("HTMLEmbedElement") extern class HTMLEmbedElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLEmbedElement/src>
+	**/
 	var src : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLEmbedElement/type>
+	**/
 	var type : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLEmbedElement/width>
+	**/
 	var width : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLEmbedElement/height>
+	**/
 	var height : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var align : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var name : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLEmbedElement/getSVGDocument>
+	**/
 	function getSVGDocument():Null<js.web.dom.Document>;
 }

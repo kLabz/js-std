@@ -24,17 +24,36 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem>
+**/
 @:native("DataTransferItem") extern class DataTransferItem {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem/kind>
+	**/
 	var kind(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem/type>
+	**/
 	var type(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem/getAsFile>
+	**/
 	function getAsFile():Null<js.web.net.File>;
 	/**
 		From partial interface in file-system-access.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem/getAsFileSystemHandle>
 	**/
 	function getAsFileSystemHandle():js.lib.Promise<Null<js.web.storage.FileSystemHandle>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem/getAsString>
+	**/
 	function getAsString(callback:Null<FunctionStringCallback>):Void;
 	/**
 		From partial interface in entries-api.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem/webkitGetAsEntry>
 	**/
 	function webkitGetAsEntry():Null<js.web.storage.FileSystemEntry>;
 }

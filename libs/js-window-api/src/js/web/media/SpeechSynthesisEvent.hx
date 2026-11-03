@@ -24,11 +24,32 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisEvent>
+**/
 @:native("SpeechSynthesisEvent") extern class SpeechSynthesisEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisEvent/utterance>
+	**/
 	var utterance(default, null) : SpeechSynthesisUtterance;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisEvent/charIndex>
+	**/
 	var charIndex(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisEvent/charLength>
+	**/
 	var charLength(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisEvent/elapsedTime>
+	**/
 	var elapsedTime(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisEvent/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisEvent/SpeechSynthesisEvent>
+	**/
 	function new(type:String, eventInitDict:SpeechSynthesisEventInit):Void;
 }

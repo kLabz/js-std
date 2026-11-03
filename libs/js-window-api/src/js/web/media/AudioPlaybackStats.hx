@@ -26,14 +26,40 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/AudioPlaybackStats>
 **/
 @:native("AudioPlaybackStats") extern class AudioPlaybackStats {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioPlaybackStats/underrunDuration>
+	**/
 	var underrunDuration(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioPlaybackStats/underrunEvents>
+	**/
 	var underrunEvents(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioPlaybackStats/totalDuration>
+	**/
 	var totalDuration(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioPlaybackStats/averageLatency>
+	**/
 	var averageLatency(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioPlaybackStats/minimumLatency>
+	**/
 	var minimumLatency(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioPlaybackStats/maximumLatency>
+	**/
 	var maximumLatency(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioPlaybackStats/resetLatency>
+	**/
 	function resetLatency():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioPlaybackStats/toJSON>
+	**/
 	function toJSON():{ };
 }

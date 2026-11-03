@@ -24,13 +24,20 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MathMLElement>
+**/
 @:native("MathMLElement") extern class MathMLElement extends js.web.dom.Element {
 	/**
 		From interface mixin ElementCSSInlineStyle
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/attributeStyleMap>
 	**/
 	var attributeStyleMap(default, null) : js.web.css.StylePropertyMap;
 	/**
 		From interface mixin ElementCSSInlineStyle
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/style>
 	**/
 	var style(default, null) : js.web.css.CSSStyleProperties;
 	/**
@@ -460,26 +467,38 @@ package js.web.svg;
 	var onbeforexrselect : js.web.html.EventHandler;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/dataset>
 	**/
 	var dataset(default, null) : js.web.html.DOMStringMap;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/nonce>
 	**/
 	var nonce : String;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/autofocus>
 	**/
 	var autofocus : Bool;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/tabIndex>
 	**/
 	var tabIndex : Int;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/blur>
 	**/
 	function blur():Void;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/focus>
 	**/
 	function focus(?options:js.web.html.FocusOptions):Void;
 }

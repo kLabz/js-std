@@ -24,6 +24,9 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XPathResult>
+**/
 @:native("XPathResult") extern class XPathResult {
 	static inline var ANY_TYPE : Int = 0;
 	static inline var NUMBER_TYPE : Int = 1;
@@ -35,13 +38,40 @@ package js.web.dom;
 	static inline var ORDERED_NODE_SNAPSHOT_TYPE : Int = 7;
 	static inline var ANY_UNORDERED_NODE_TYPE : Int = 8;
 	static inline var FIRST_ORDERED_NODE_TYPE : Int = 9;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XPathResult/resultType>
+	**/
 	var resultType(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XPathResult/numberValue>
+	**/
 	var numberValue(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XPathResult/stringValue>
+	**/
 	var stringValue(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XPathResult/booleanValue>
+	**/
 	var booleanValue(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XPathResult/singleNodeValue>
+	**/
 	var singleNodeValue(default, null) : Null<Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XPathResult/invalidIteratorState>
+	**/
 	var invalidIteratorState(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XPathResult/snapshotLength>
+	**/
 	var snapshotLength(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XPathResult/iterateNext>
+	**/
 	function iterateNext():Null<Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XPathResult/snapshotItem>
+	**/
 	function snapshotItem(index:Int):Null<Node>;
 }

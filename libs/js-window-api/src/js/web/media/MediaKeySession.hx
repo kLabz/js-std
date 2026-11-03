@@ -26,17 +26,46 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/MediaKeySession>
 **/
 @:native("MediaKeySession") extern class MediaKeySession extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySession/sessionId>
+	**/
 	var sessionId(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySession/expiration>
+	**/
 	var expiration(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySession/closed>
+	**/
 	var closed(default, null) : js.lib.Promise<MediaKeySessionClosedReason>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySession/keyStatuses>
+	**/
 	var keyStatuses(default, null) : MediaKeyStatusMap;
 	var onkeystatuseschange : js.web.html.EventHandler;
 	var onmessage : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySession/close>
+	**/
 	function close():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySession/generateRequest>
+	**/
 	function generateRequest(initDataType:String, initData:js.web.dom.BufferSource):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySession/load>
+	**/
 	function load(sessionId:String):js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySession/remove>
+	**/
 	function remove():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySession/update>
+	**/
 	function update(response:js.web.dom.BufferSource):js.lib.Promise<Void>;
 }

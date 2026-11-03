@@ -24,10 +24,29 @@
 
 package js.web.media;
 
-@:native("SpeechGrammarList") extern class SpeechGrammarList implements ArrayAccess<Null<SpeechGrammar>> {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SpeechGrammarList>
+**/
+@:native("SpeechGrammarList") @:deprecated extern class SpeechGrammarList implements ArrayAccess<Null<SpeechGrammar>> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechGrammarList/length>
+	**/
+	@:deprecated
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechGrammarList/SpeechGrammarList>
+	**/
+	@:deprecated
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechGrammarList/addFromString>
+	**/
+	@:deprecated
 	function addFromString(string:String, ?weight:Float = 1.0):Void;
 	function addFromUri(src:String, ?weight:Float = 1.0):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechGrammarList/item>
+	**/
+	@:deprecated
 	function item(index:Int):Null<SpeechGrammar>;
 }

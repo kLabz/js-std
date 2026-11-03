@@ -26,20 +26,52 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection>
 **/
 @:native("PresentationConnection") extern class PresentationConnection extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/url>
+	**/
 	var url(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/state>
+	**/
 	var state(default, null) : PresentationConnectionState;
 	var onconnect : js.web.html.EventHandler;
 	var onclose : js.web.html.EventHandler;
 	var onterminate : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/binaryType>
+	**/
 	var binaryType : js.web.net.BinaryType;
 	var onmessage : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/send>
+	**/
 	overload function send(message:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/send>
+	**/
 	overload function send(data:js.web.net.Blob):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/send>
+	**/
 	overload function send(data:js.lib.ArrayBuffer):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/send>
+	**/
 	overload function send(data:js.lib.ArrayBufferView):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/terminate>
+	**/
 	function terminate():Void;
 }

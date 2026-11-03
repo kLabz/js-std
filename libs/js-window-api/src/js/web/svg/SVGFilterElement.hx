@@ -24,11 +24,32 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFilterElement>
+**/
 @:native("SVGFilterElement") extern class SVGFilterElement extends SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFilterElement/filterUnits>
+	**/
 	var filterUnits(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFilterElement/primitiveUnits>
+	**/
 	var primitiveUnits(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFilterElement/x>
+	**/
 	var x(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFilterElement/y>
+	**/
 	var y(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFilterElement/width>
+	**/
 	var width(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFilterElement/height>
+	**/
 	var height(default, null) : SVGAnimatedLength;
 }

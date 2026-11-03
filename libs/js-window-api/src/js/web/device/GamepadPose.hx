@@ -24,13 +24,40 @@
 
 package js.web.device;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/GamepadPose>
+**/
 @:native("GamepadPose") extern class GamepadPose {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/hasOrientation>
+	**/
 	var hasOrientation(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/hasPosition>
+	**/
 	var hasPosition(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/position>
+	**/
 	var position(default, null) : Null<js.lib.Float32Array>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/linearVelocity>
+	**/
 	var linearVelocity(default, null) : Null<js.lib.Float32Array>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/linearAcceleration>
+	**/
 	var linearAcceleration(default, null) : Null<js.lib.Float32Array>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/orientation>
+	**/
 	var orientation(default, null) : Null<js.lib.Float32Array>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/angularVelocity>
+	**/
 	var angularVelocity(default, null) : Null<js.lib.Float32Array>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/angularAcceleration>
+	**/
 	var angularAcceleration(default, null) : Null<js.lib.Float32Array>;
 }

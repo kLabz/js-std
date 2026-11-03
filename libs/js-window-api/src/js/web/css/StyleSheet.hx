@@ -24,12 +24,36 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/StyleSheet>
+**/
 @:native("StyleSheet") extern class StyleSheet {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StyleSheet/type>
+	**/
 	var type(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StyleSheet/href>
+	**/
 	var href(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StyleSheet/ownerNode>
+	**/
 	var ownerNode(default, null) : Null<haxe.extern.EitherType<js.web.dom.Element, js.web.dom.ProcessingInstruction>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StyleSheet/parentStyleSheet>
+	**/
 	var parentStyleSheet(default, null) : Null<CSSStyleSheet>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StyleSheet/title>
+	**/
 	var title(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StyleSheet/media>
+	**/
 	var media(default, null) : MediaList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StyleSheet/disabled>
+	**/
 	var disabled : Bool;
 }

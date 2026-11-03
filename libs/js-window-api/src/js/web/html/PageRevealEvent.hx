@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PageRevealEvent>
+**/
 @:native("PageRevealEvent") extern class PageRevealEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PageRevealEvent/viewTransition>
+	**/
 	var viewTransition(default, null) : Null<js.web.css.ViewTransition>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PageRevealEvent/PageRevealEvent>
+	**/
 	function new(type:String, ?eventInitDict:PageRevealEventInit):Void;
 }

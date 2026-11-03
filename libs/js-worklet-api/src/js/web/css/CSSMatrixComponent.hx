@@ -24,6 +24,9 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSMatrixComponent>
+**/
 @:native("CSSMatrixComponent") extern class CSSMatrixComponent extends CSSTransformComponent {
 
 }

@@ -26,13 +26,36 @@ package js.web.sw;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Cache>
 **/
 @:native("Cache") extern class Cache {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Cache/add>
+	**/
 	function add(request:js.web.net.RequestInfo):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Cache/addAll>
+	**/
 	function addAll(requests:Array<js.web.net.RequestInfo>):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Cache/delete>
+	**/
 	function delete(request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Cache/keys>
+	**/
 	function keys(?request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Array<js.web.net.Request>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Cache/match>
+	**/
 	function match(request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<haxe.extern.EitherType<js.web.net.Response, Void>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Cache/matchAll>
+	**/
 	function matchAll(?request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Array<js.web.net.Response>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Cache/put>
+	**/
 	function put(request:js.web.net.RequestInfo, response:js.web.net.Response):js.lib.Promise<Void>;
 }

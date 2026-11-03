@@ -24,12 +24,23 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGScriptElement>
+**/
 @:native("SVGScriptElement") extern class SVGScriptElement extends SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGScriptElement/type>
+	**/
 	var type : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGScriptElement/crossOrigin>
+	**/
 	var crossOrigin : Null<String>;
 	var referrerPolicy : String;
 	/**
 		From interface mixin SVGURIReference
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGScriptElement/href>
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

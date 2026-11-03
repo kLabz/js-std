@@ -26,7 +26,12 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/OTPCredential>
 **/
 @:native("OTPCredential") extern class OTPCredential extends Credential {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OTPCredential/code>
+	**/
 	var code(default, null) : String;
 }

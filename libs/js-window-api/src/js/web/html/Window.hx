@@ -26,32 +26,107 @@ package js.web.html;
 
 /**
 	Unhandled extended attribute Global
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Window>
 **/
 @:native("Window") extern class Window extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/window>
+	**/
 	var window(default, null) : Window;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/self>
+	**/
 	var self(default, null) : Window;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/document>
+	**/
 	var document(default, null) : js.web.dom.Document;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/name>
+	**/
 	var name : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/location>
+	**/
 	var location(default, null) : Location;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/history>
+	**/
 	var history(default, null) : History;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/navigation>
+	**/
 	var navigation(default, null) : Navigation;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/customElements>
+	**/
 	var customElements(default, null) : CustomElementRegistry;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/locationbar>
+	**/
 	var locationbar(default, null) : BarProp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/menubar>
+	**/
 	var menubar(default, null) : BarProp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/personalbar>
+	**/
 	var personalbar(default, null) : BarProp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/scrollbars>
+	**/
 	var scrollbars(default, null) : BarProp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/statusbar>
+	**/
 	var statusbar(default, null) : BarProp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/toolbar>
+	**/
 	var toolbar(default, null) : BarProp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/status>
+	**/
+	@:deprecated
 	var status : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/closed>
+	**/
 	var closed(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/frames>
+	**/
 	var frames(default, null) : Window;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/top>
+	**/
 	var top(default, null) : Null<Window>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/opener>
+	**/
 	var opener : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/parent>
+	**/
 	var parent(default, null) : Null<Window>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/frameElement>
+	**/
 	var frameElement(default, null) : Null<js.web.dom.Element>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/navigator>
+	**/
 	var navigator(default, null) : Navigator;
 	var clientInformation(default, null) : Navigator;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/originAgentCluster>
+	**/
 	var originAgentCluster(default, null) : Bool;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -601,10 +676,14 @@ package js.web.html;
 	var crypto(default, null) : js.web.auth.Crypto;
 	/**
 		From interface mixin WindowSessionStorage
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/sessionStorage>
 	**/
 	var sessionStorage(default, null) : Storage;
 	/**
 		From interface mixin WindowLocalStorage
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/localStorage>
 	**/
 	var localStorage(default, null) : Storage;
 	/**
@@ -613,11 +692,16 @@ package js.web.html;
 	var pushManager(default, null) : js.web.sw.PushManager;
 	/**
 		From partial interface in anonymous-iframe.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/credentialless>
 	**/
 	var credentialless(default, null) : Bool;
 	/**
 		From partial interface in compat.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/orientation>
 	**/
+	@:deprecated
 	var orientation(default, null) : Int;
 	/**
 		From partial interface in compat.idl
@@ -625,34 +709,50 @@ package js.web.html;
 	var onorientationchange : EventHandler;
 	/**
 		From partial interface in cookiestore.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/cookieStore>
 	**/
 	var cookieStore(default, null) : js.web.storage.CookieStore;
 	/**
 		From partial interface in crash-reporting.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/crashReport>
 	**/
 	var crashReport(default, null) : js.web.perf.CrashReportContext;
 	/**
 		From partial interface in css-viewport.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/viewport>
 	**/
 	var viewport(default, null) : js.web.css.Viewport;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/screen>
 	**/
 	var screen(default, null) : js.web.css.Screen;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/visualViewport>
 	**/
 	var visualViewport(default, null) : Null<js.web.css.VisualViewport>;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/innerWidth>
 	**/
 	var innerWidth(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/innerHeight>
 	**/
 	var innerHeight(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/scrollX>
 	**/
 	var scrollX(default, null) : Float;
 	/**
@@ -661,6 +761,8 @@ package js.web.html;
 	var pageXOffset(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/scrollY>
 	**/
 	var scrollY(default, null) : Float;
 	/**
@@ -669,48 +771,73 @@ package js.web.html;
 	var pageYOffset(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/screenX>
 	**/
 	var screenX(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/screenLeft>
 	**/
 	var screenLeft(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/screenY>
 	**/
 	var screenY(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/screenTop>
 	**/
 	var screenTop(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/outerWidth>
 	**/
 	var outerWidth(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/outerHeight>
 	**/
 	var outerHeight(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio>
 	**/
 	var devicePixelRatio(default, null) : Float;
 	/**
 		From partial interface in document-picture-in-picture.idl
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/documentPictureInPicture>
 	**/
 	var documentPictureInPicture(default, null) : DocumentPictureInPicture;
 	/**
 		From partial interface in dom.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/event>
 	**/
+	@:deprecated
 	var event(default, null) : haxe.extern.EitherType<js.web.dom.Event, Void>;
 	/**
 		From partial interface in fenced-frame.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/fence>
 	**/
+	@:deprecated
 	var fence(default, null) : Null<js.web.ads.Fence>;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/external>
 	**/
+	@:deprecated
 	var external(default, null) : External;
 	/**
 		From partial interface in manifest-incubations.idl
@@ -741,18 +868,32 @@ package js.web.html;
 	var portalHost(default, null) : Null<PortalHost>;
 	/**
 		From partial interface in speech-api.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/speechSynthesis>
 	**/
 	var speechSynthesis(default, null) : js.web.media.SpeechSynthesis;
 	/**
 		From partial interface in web-app-launch.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/launchQueue>
 	**/
 	var launchQueue(default, null) : LaunchQueue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/alert>
+	**/
 	overload function alert():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/alert>
+	**/
 	overload function alert(message:String):Void;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
 	function atob(data:String):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/blur>
+	**/
+	@:deprecated
 	function blur():Void;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
@@ -760,15 +901,22 @@ package js.web.html;
 	function btoa(data:String):String;
 	/**
 		From interface mixin AnimationFrameProvider
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/cancelAnimationFrame>
 	**/
 	function cancelAnimationFrame(handle:Int):Void;
 	/**
 		From partial interface in requestidlecallback.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/cancelIdleCallback>
 	**/
 	function cancelIdleCallback(handle:Int):Void;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/captureEvents>
 	**/
+	@:deprecated
 	function captureEvents():Void;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
@@ -778,7 +926,13 @@ package js.web.html;
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
 	function clearTimeout(?id:Int = 0):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/confirm>
+	**/
 	function confirm(?message:String = ""):Bool;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
@@ -795,11 +949,18 @@ package js.web.html;
 	/**
 		From partial interface in fetch.idl
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/fetchLater>
 	**/
 	function fetchLater(input:js.web.net.RequestInfo, ?init:js.web.net.DeferredRequestInit):js.web.net.FetchLaterResult;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/focus>
+	**/
 	function focus():Void;
 	/**
 		From partial interface in cssom.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/getComputedStyle>
 	**/
 	function getComputedStyle(elt:js.web.dom.Element, ?pseudoElt:Null<String>):js.web.css.CSSStyleProperties;
 	/**
@@ -810,14 +971,20 @@ package js.web.html;
 	/**
 		From partial interface in window-management.idl
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/getScreenDetails>
 	**/
 	function getScreenDetails():js.lib.Promise<ScreenDetails>;
 	/**
 		From partial interface in selection-api.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/getSelection>
 	**/
 	function getSelection():Null<js.web.dom.Selection>;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/matchMedia>
 	**/
 	function matchMedia(query:String):js.web.css.MediaQueryList;
 	/**
@@ -832,23 +999,44 @@ package js.web.html;
 	function minimize():js.lib.Promise<Void>;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/moveBy>
 	**/
 	function moveBy(x:Int, y:Int):Void;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/moveTo>
 	**/
 	function moveTo(x:Int, y:Int):Void;
 	/**
 		From partial interface in css-nav.idl
 	**/
 	function navigate(dir:js.web.css.SpatialNavigationDirection):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/open>
+	**/
 	function open(?url:String = "", ?target:String = "_blank", ?features:String = ""):Null<Window>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/postMessage>
+	**/
 	overload function postMessage(message:Any, targetOrigin:String, ?transfer:Array<{ }>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/postMessage>
+	**/
 	overload function postMessage(message:Any, ?options:WindowPostMessageOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/print>
+	**/
 	function print():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/prompt>
+	**/
 	function prompt(?message:String = "", ?default_:String = ""):Null<String>;
 	/**
 		From partial interface in local-font-access.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/queryLocalFonts>
 	**/
 	function queryLocalFonts(?options:js.web.misc.QueryOptions):js.lib.Promise<Array<js.web.misc.FontData>>;
 	/**
@@ -857,7 +1045,10 @@ package js.web.html;
 	function queueMicrotask(callback:js.web.dom.VoidFunction):Void;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/releaseEvents>
 	**/
+	@:deprecated
 	function releaseEvents():Void;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
@@ -865,22 +1056,32 @@ package js.web.html;
 	function reportError(e:Any):Void;
 	/**
 		From interface mixin AnimationFrameProvider
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/requestAnimationFrame>
 	**/
 	function requestAnimationFrame(callback:FrameRequestCallback):Int;
 	/**
 		From partial interface in requestidlecallback.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback>
 	**/
 	function requestIdleCallback(callback:IdleRequestCallback, ?options:IdleRequestOptions):Int;
 	/**
 		From partial interface in css-sizing-4.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/requestResize>
 	**/
 	function requestResize():Void;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/resizeBy>
 	**/
 	function resizeBy(x:Int, y:Int):Void;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/resizeTo>
 	**/
 	function resizeTo(width:Int, height:Int):Void;
 	/**
@@ -890,26 +1091,38 @@ package js.web.html;
 	function restore():js.lib.Promise<Void>;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/scroll>
 	**/
 	overload function scroll(?options:js.web.css.ScrollToOptions):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/scroll>
 	**/
 	overload function scroll(x:Float, y:Float):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/scrollBy>
 	**/
 	overload function scrollBy(?options:js.web.css.ScrollToOptions):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/scrollBy>
 	**/
 	overload function scrollBy(x:Float, y:Float):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/scrollTo>
 	**/
 	overload function scrollTo(?options:js.web.css.ScrollToOptions):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/scrollTo>
 	**/
 	overload function scrollTo(x:Float, y:Float):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
@@ -919,6 +1132,8 @@ package js.web.html;
 	/**
 		From partial interface in window-management.idl
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/setResizable>
 	**/
 	function setResizable(resizable:Bool):js.lib.Promise<Void>;
 	/**
@@ -927,16 +1142,25 @@ package js.web.html;
 	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
 	/**
 		From partial interface in file-system-access.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/showDirectoryPicker>
 	**/
 	function showDirectoryPicker(?options:js.web.storage.DirectoryPickerOptions):js.lib.Promise<js.web.storage.FileSystemDirectoryHandle>;
 	/**
 		From partial interface in file-system-access.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/showOpenFilePicker>
 	**/
 	function showOpenFilePicker(?options:js.web.storage.OpenFilePickerOptions):js.lib.Promise<Array<js.web.storage.FileSystemFileHandle>>;
 	/**
 		From partial interface in file-system-access.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Window/showSaveFilePicker>
 	**/
 	function showSaveFilePicker(?options:js.web.storage.SaveFilePickerOptions):js.lib.Promise<js.web.storage.FileSystemFileHandle>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Window/stop>
+	**/
 	function stop():Void;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope

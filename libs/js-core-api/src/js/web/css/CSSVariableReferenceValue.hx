@@ -24,8 +24,20 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSVariableReferenceValue>
+**/
 @:native("CSSVariableReferenceValue") extern class CSSVariableReferenceValue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSVariableReferenceValue/variable>
+	**/
 	var variable : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSVariableReferenceValue/fallback>
+	**/
 	var fallback(default, null) : Null<CSSUnparsedValue>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSVariableReferenceValue/CSSVariableReferenceValue>
+	**/
 	function new(variable:String, ?fallback:Null<CSSUnparsedValue> = null):Void;
 }

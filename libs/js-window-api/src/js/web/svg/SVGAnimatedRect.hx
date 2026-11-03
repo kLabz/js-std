@@ -24,7 +24,16 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedRect>
+**/
 @:native("SVGAnimatedRect") extern class SVGAnimatedRect {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedRect/baseVal>
+	**/
 	var baseVal(default, null) : js.web.dom.SVGRect;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedRect/animVal>
+	**/
 	var animVal(default, null) : js.web.dom.SVGRect;
 }

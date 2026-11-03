@@ -24,16 +24,52 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver>
+**/
 @:native("IntersectionObserver") extern class IntersectionObserver {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/root>
+	**/
 	var root(default, null) : Null<haxe.extern.EitherType<Element, Document>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/rootMargin>
+	**/
 	var rootMargin(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/scrollMargin>
+	**/
 	var scrollMargin(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/thresholds>
+	**/
 	var thresholds(default, null) : Array<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/delay>
+	**/
 	var delay(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/trackVisibility>
+	**/
 	var trackVisibility(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/IntersectionObserver>
+	**/
 	function new(callback:IntersectionObserverCallback, ?options:IntersectionObserverInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/disconnect>
+	**/
 	function disconnect():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/observe>
+	**/
 	function observe(target:Element):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/takeRecords>
+	**/
 	function takeRecords():Array<IntersectionObserverEntry>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/unobserve>
+	**/
 	function unobserve(target:Element):Void;
 }

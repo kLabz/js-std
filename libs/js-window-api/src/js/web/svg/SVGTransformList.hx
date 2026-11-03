@@ -24,16 +24,52 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGTransformList>
+**/
 @:native("SVGTransformList") extern class SVGTransformList implements ArrayAccess<SVGTransform> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransformList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransformList/numberOfItems>
+	**/
 	var numberOfItems(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransformList/appendItem>
+	**/
 	function appendItem(newItem:SVGTransform):SVGTransform;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransformList/clear>
+	**/
 	function clear():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransformList/consolidate>
+	**/
 	function consolidate():Null<SVGTransform>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransformList/createSVGTransformFromMatrix>
+	**/
 	function createSVGTransformFromMatrix(?matrix:js.web.dom.DOMMatrix2DInit):SVGTransform;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransformList/getItem>
+	**/
 	function getItem(index:Int):SVGTransform;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransformList/initialize>
+	**/
 	function initialize(newItem:SVGTransform):SVGTransform;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransformList/insertItemBefore>
+	**/
 	function insertItemBefore(newItem:SVGTransform, index:Int):SVGTransform;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransformList/removeItem>
+	**/
 	function removeItem(index:Int):SVGTransform;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTransformList/replaceItem>
+	**/
 	function replaceItem(newItem:SVGTransform, index:Int):SVGTransform;
 }

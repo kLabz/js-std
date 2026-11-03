@@ -26,8 +26,16 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionAlternative>
 **/
 @:native("SpeechRecognitionAlternative") extern class SpeechRecognitionAlternative {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionAlternative/transcript>
+	**/
 	var transcript(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionAlternative/confidence>
+	**/
 	var confidence(default, null) : Float;
 }

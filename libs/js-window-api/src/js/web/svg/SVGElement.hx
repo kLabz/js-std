@@ -24,8 +24,17 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGElement>
+**/
 @:native("SVGElement") extern class SVGElement extends js.web.dom.Element {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/ownerSVGElement>
+	**/
 	var ownerSVGElement(default, null) : Null<SVGSVGElement>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/viewportElement>
+	**/
 	var viewportElement(default, null) : Null<SVGElement>;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -454,34 +463,50 @@ package js.web.svg;
 	var onbeforexrselect : js.web.html.EventHandler;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/dataset>
 	**/
 	var dataset(default, null) : js.web.html.DOMStringMap;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/nonce>
 	**/
 	var nonce : String;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/autofocus>
 	**/
 	var autofocus : Bool;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/tabIndex>
 	**/
 	var tabIndex : Int;
 	/**
 		From interface mixin ElementCSSInlineStyle
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/attributeStyleMap>
 	**/
 	var attributeStyleMap(default, null) : js.web.css.StylePropertyMap;
 	/**
 		From interface mixin ElementCSSInlineStyle
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/style>
 	**/
 	var style(default, null) : js.web.css.CSSStyleProperties;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/blur>
 	**/
 	function blur():Void;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/focus>
 	**/
 	function focus(?options:js.web.html.FocusOptions):Void;
 }

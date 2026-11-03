@@ -26,8 +26,16 @@ package js.web.misc;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/ContactsManager>
 **/
 @:native("ContactsManager") extern class ContactsManager {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContactsManager/getProperties>
+	**/
 	function getProperties():js.lib.Promise<Array<ContactProperty>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContactsManager/select>
+	**/
 	function select(properties:Array<ContactProperty>, ?options:ContactsSelectOptions):js.lib.Promise<Array<ContactInfo>>;
 }

@@ -24,18 +24,37 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLGeolocationElement>
+**/
 @:native("HTMLGeolocationElement") extern class HTMLGeolocationElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLGeolocationElement/position>
+	**/
 	var position(default, null) : Null<js.web.device.GeolocationPosition>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLGeolocationElement/error>
+	**/
 	var error(default, null) : Null<js.web.device.GeolocationPositionError>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLGeolocationElement/autolocate>
+	**/
 	var autolocate : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLGeolocationElement/watch>
+	**/
 	var watch : Bool;
 	var onlocation : EventHandler;
 	/**
 		From interface mixin ActivationBlockersMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLGeolocationElement/isValid>
 	**/
 	var isValid(default, null) : Bool;
 	/**
 		From interface mixin ActivationBlockersMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLGeolocationElement/invalidReason>
 	**/
 	var invalidReason(default, null) : ActivationBlockersMixinBlockerReason;
 	/**
@@ -44,10 +63,15 @@ package js.web.html;
 	var onvalidationstatuschange : EventHandler;
 	/**
 		From interface mixin PowerfulFeatureObserver
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLGeolocationElement/initialPermissionStatus>
 	**/
+	@:deprecated
 	var initialPermissionStatus(default, null) : js.web.misc.PermissionState;
 	/**
 		From interface mixin PowerfulFeatureObserver
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLGeolocationElement/permissionStatus>
 	**/
 	var permissionStatus(default, null) : js.web.misc.PermissionState;
 	/**

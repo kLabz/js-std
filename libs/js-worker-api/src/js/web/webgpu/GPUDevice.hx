@@ -26,46 +26,116 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUDevice>
 **/
 @:native("GPUDevice") extern class GPUDevice extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/features>
+	**/
 	var features(default, null) : GPUSupportedFeatures;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/limits>
+	**/
 	var limits(default, null) : GPUSupportedLimits;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/adapterInfo>
+	**/
 	var adapterInfo(default, null) : GPUAdapterInfo;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/queue>
+	**/
 	var queue(default, null) : GPUQueue;
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/label>
 	**/
 	var label : String;
 	/**
 		From partial interface in webgpu.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/lost>
 	**/
 	var lost(default, null) : js.lib.Promise<GPUDeviceLostInfo>;
 	/**
 		From partial interface in webgpu.idl
 	**/
 	var onuncapturederror : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/createBindGroup>
+	**/
 	function createBindGroup(descriptor:GPUBindGroupDescriptor):GPUBindGroup;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/createBindGroupLayout>
+	**/
 	function createBindGroupLayout(descriptor:GPUBindGroupLayoutDescriptor):GPUBindGroupLayout;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/createBuffer>
+	**/
 	function createBuffer(descriptor:GPUBufferDescriptor):GPUBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/createCommandEncoder>
+	**/
 	function createCommandEncoder(?descriptor:GPUCommandEncoderDescriptor):GPUCommandEncoder;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/createComputePipeline>
+	**/
 	function createComputePipeline(descriptor:GPUComputePipelineDescriptor):GPUComputePipeline;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/createComputePipelineAsync>
+	**/
 	function createComputePipelineAsync(descriptor:GPUComputePipelineDescriptor):js.lib.Promise<GPUComputePipeline>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/createPipelineLayout>
+	**/
 	function createPipelineLayout(descriptor:GPUPipelineLayoutDescriptor):GPUPipelineLayout;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/createQuerySet>
+	**/
 	function createQuerySet(descriptor:GPUQuerySetDescriptor):GPUQuerySet;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/createRenderBundleEncoder>
+	**/
 	function createRenderBundleEncoder(descriptor:GPURenderBundleEncoderDescriptor):GPURenderBundleEncoder;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/createRenderPipeline>
+	**/
 	function createRenderPipeline(descriptor:GPURenderPipelineDescriptor):GPURenderPipeline;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/createRenderPipelineAsync>
+	**/
 	function createRenderPipelineAsync(descriptor:GPURenderPipelineDescriptor):js.lib.Promise<GPURenderPipeline>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/createSampler>
+	**/
 	function createSampler(?descriptor:GPUSamplerDescriptor):GPUSampler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/createShaderModule>
+	**/
 	function createShaderModule(descriptor:GPUShaderModuleDescriptor):GPUShaderModule;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/createTexture>
+	**/
 	function createTexture(descriptor:GPUTextureDescriptor):GPUTexture;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/destroy>
+	**/
 	function destroy():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/importExternalTexture>
+	**/
 	function importExternalTexture(descriptor:GPUExternalTextureDescriptor):GPUExternalTexture;
 	/**
 		From partial interface in webgpu.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/popErrorScope>
 	**/
 	function popErrorScope():js.lib.Promise<Null<GPUError>>;
 	/**
 		From partial interface in webgpu.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDevice/pushErrorScope>
 	**/
 	function pushErrorScope(filter:GPUErrorFilter):Void;
 }

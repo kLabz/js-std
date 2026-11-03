@@ -24,9 +24,24 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedVideoFrame>
+**/
 @:native("RTCEncodedVideoFrame") extern class RTCEncodedVideoFrame {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedVideoFrame/type>
+	**/
 	var type(default, null) : js.web.media.EncodedVideoChunkType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedVideoFrame/data>
+	**/
 	var data : js.lib.ArrayBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedVideoFrame/RTCEncodedVideoFrame>
+	**/
 	function new(originalFrame:RTCEncodedVideoFrame, ?options:RTCEncodedVideoFrameOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedVideoFrame/getMetadata>
+	**/
 	function getMetadata():RTCEncodedVideoFrameMetadata;
 }

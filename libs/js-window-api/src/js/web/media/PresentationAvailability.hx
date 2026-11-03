@@ -26,8 +26,13 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PresentationAvailability>
 **/
 @:native("PresentationAvailability") extern class PresentationAvailability extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PresentationAvailability/value>
+	**/
 	var value(default, null) : Bool;
 	var onchange : js.web.html.EventHandler;
 }

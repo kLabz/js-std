@@ -24,9 +24,24 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Clients>
+**/
 @:native("Clients") extern class Clients {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Clients/claim>
+	**/
 	function claim():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Clients/get>
+	**/
 	function get(id:String):js.lib.Promise<haxe.extern.EitherType<Client, Void>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Clients/matchAll>
+	**/
 	function matchAll(?options:ClientQueryOptions):js.lib.Promise<Array<Client>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Clients/openWindow>
+	**/
 	function openWindow(url:String):js.lib.Promise<Null<WindowClient>>;
 }

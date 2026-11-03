@@ -26,8 +26,16 @@ package js.web.misc;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/EyeDropper>
 **/
 @:native("EyeDropper") extern class EyeDropper {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EyeDropper/EyeDropper>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EyeDropper/open>
+	**/
 	function open(?options:ColorSelectionOptions):js.lib.Promise<ColorSelectionResult>;
 }

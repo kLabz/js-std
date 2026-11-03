@@ -24,16 +24,49 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly>
+**/
 @:native("DOMRectReadOnly") extern class DOMRectReadOnly {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/x>
+	**/
 	var x(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/y>
+	**/
 	var y(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/width>
+	**/
 	var width(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/height>
+	**/
 	var height(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/top>
+	**/
 	var top(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/right>
+	**/
 	var right(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/bottom>
+	**/
 	var bottom(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/left>
+	**/
 	var left(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/DOMRectReadOnly>
+	**/
 	function new(?x:Float = 0, ?y:Float = 0, ?width:Float = 0, ?height:Float = 0):Void;
 	function fromRect(?other:DOMRectInit):DOMRectReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/toJSON>
+	**/
 	function toJSON():{ };
 }

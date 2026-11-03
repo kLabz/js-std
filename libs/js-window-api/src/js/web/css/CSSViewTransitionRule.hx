@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSViewTransitionRule>
+**/
 @:native("CSSViewTransitionRule") extern class CSSViewTransitionRule extends CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSViewTransitionRule/navigation>
+	**/
 	var navigation(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSViewTransitionRule/types>
+	**/
 	var types(default, null) : Array<String>;
 }

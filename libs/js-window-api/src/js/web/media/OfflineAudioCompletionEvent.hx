@@ -24,7 +24,16 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioCompletionEvent>
+**/
 @:native("OfflineAudioCompletionEvent") extern class OfflineAudioCompletionEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioCompletionEvent/renderedBuffer>
+	**/
 	var renderedBuffer(default, null) : AudioBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioCompletionEvent/OfflineAudioCompletionEvent>
+	**/
 	function new(type:String, eventInitDict:OfflineAudioCompletionEventInit):Void;
 }

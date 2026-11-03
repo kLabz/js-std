@@ -24,17 +24,43 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver>
+**/
 @:native("RTCRtpReceiver") extern class RTCRtpReceiver {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/track>
+	**/
 	var track(default, null) : js.web.media.MediaStreamTrack;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/transport>
+	**/
 	var transport(default, null) : Null<RTCDtlsTransport>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/jitterBufferTarget>
+	**/
 	var jitterBufferTarget : Null<js.web.perf.DOMHighResTimeStamp>;
 	/**
 		From partial interface in webrtc-encoded-transform.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/transform>
 	**/
 	var transform : Null<RTCRtpReceiverTransform>;
 	function getCapabilities(kind:String):Null<RTCRtpCapabilities>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/getContributingSources>
+	**/
 	function getContributingSources():Array<RTCRtpContributingSource>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/getParameters>
+	**/
 	function getParameters():RTCRtpReceiveParameters;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/getStats>
+	**/
 	function getStats():js.lib.Promise<RTCStatsReport>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/getSynchronizationSources>
+	**/
 	function getSynchronizationSources():Array<RTCRtpSynchronizationSource>;
 }

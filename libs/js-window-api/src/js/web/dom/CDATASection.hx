@@ -24,6 +24,9 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CDATASection>
+**/
 @:native("CDATASection") extern class CDATASection extends Text {
 
 }

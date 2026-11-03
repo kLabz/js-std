@@ -24,12 +24,36 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons>
+**/
 @:native("NotRestoredReasons") extern class NotRestoredReasons {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/src>
+	**/
 	var src(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/id>
+	**/
 	var id(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/name>
+	**/
 	var name(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/url>
+	**/
 	var url(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/reasons>
+	**/
 	var reasons(default, null) : Null<Array<NotRestoredReasonDetails>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/children>
+	**/
 	var children(default, null) : Null<Array<NotRestoredReasons>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/toJSON>
+	**/
 	function toJSON():{ };
 }

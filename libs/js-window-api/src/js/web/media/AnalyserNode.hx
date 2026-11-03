@@ -24,15 +24,48 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AnalyserNode>
+**/
 @:native("AnalyserNode") extern class AnalyserNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnalyserNode/fftSize>
+	**/
 	var fftSize : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnalyserNode/frequencyBinCount>
+	**/
 	var frequencyBinCount(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnalyserNode/minDecibels>
+	**/
 	var minDecibels : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnalyserNode/maxDecibels>
+	**/
 	var maxDecibels : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnalyserNode/smoothingTimeConstant>
+	**/
 	var smoothingTimeConstant : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnalyserNode/AnalyserNode>
+	**/
 	function new(context:BaseAudioContext, ?options:AnalyserOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnalyserNode/getByteFrequencyData>
+	**/
 	function getByteFrequencyData(array:js.lib.Uint8Array):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnalyserNode/getByteTimeDomainData>
+	**/
 	function getByteTimeDomainData(array:js.lib.Uint8Array):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnalyserNode/getFloatFrequencyData>
+	**/
 	function getFloatFrequencyData(array:js.lib.Float32Array):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AnalyserNode/getFloatTimeDomainData>
+	**/
 	function getFloatTimeDomainData(array:js.lib.Float32Array):Void;
 }

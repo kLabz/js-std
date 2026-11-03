@@ -24,7 +24,13 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SourceBufferList>
+**/
 @:native("SourceBufferList") extern class SourceBufferList extends js.web.dom.EventTarget implements ArrayAccess<SourceBuffer> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SourceBufferList/length>
+	**/
 	var length(default, null) : Int;
 	var onaddsourcebuffer : js.web.html.EventHandler;
 	var onremovesourcebuffer : js.web.html.EventHandler;

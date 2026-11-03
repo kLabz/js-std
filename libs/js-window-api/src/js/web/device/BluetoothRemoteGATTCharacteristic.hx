@@ -26,22 +26,61 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTCharacteristic>
 **/
 @:native("BluetoothRemoteGATTCharacteristic") extern class BluetoothRemoteGATTCharacteristic extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTCharacteristic/service>
+	**/
 	var service(default, null) : BluetoothRemoteGATTService;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTCharacteristic/uuid>
+	**/
 	var uuid(default, null) : UUID;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTCharacteristic/properties>
+	**/
 	var properties(default, null) : BluetoothCharacteristicProperties;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTCharacteristic/value>
+	**/
 	var value(default, null) : Null<js.lib.DataView>;
 	/**
 		From interface mixin CharacteristicEventHandlers
 	**/
 	var oncharacteristicvaluechanged : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTCharacteristic/getDescriptor>
+	**/
 	function getDescriptor(descriptor:BluetoothDescriptorUUID):js.lib.Promise<BluetoothRemoteGATTDescriptor>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTCharacteristic/getDescriptors>
+	**/
 	function getDescriptors(?descriptor:BluetoothDescriptorUUID):js.lib.Promise<Array<BluetoothRemoteGATTDescriptor>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTCharacteristic/readValue>
+	**/
 	function readValue():js.lib.Promise<js.lib.DataView>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTCharacteristic/startNotifications>
+	**/
 	function startNotifications():js.lib.Promise<BluetoothRemoteGATTCharacteristic>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTCharacteristic/stopNotifications>
+	**/
 	function stopNotifications():js.lib.Promise<BluetoothRemoteGATTCharacteristic>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTCharacteristic/writeValue>
+	**/
+	@:deprecated
 	function writeValue(value:js.web.dom.BufferSource):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTCharacteristic/writeValueWithResponse>
+	**/
 	function writeValueWithResponse(value:js.web.dom.BufferSource):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTCharacteristic/writeValueWithoutResponse>
+	**/
 	function writeValueWithoutResponse(value:js.web.dom.BufferSource):js.lib.Promise<Void>;
 }

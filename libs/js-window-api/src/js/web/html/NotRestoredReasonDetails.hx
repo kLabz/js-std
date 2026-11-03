@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasonDetails>
+**/
 @:native("NotRestoredReasonDetails") extern class NotRestoredReasonDetails {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasonDetails/reason>
+	**/
 	var reason(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasonDetails/toJSON>
+	**/
 	function toJSON():{ };
 }

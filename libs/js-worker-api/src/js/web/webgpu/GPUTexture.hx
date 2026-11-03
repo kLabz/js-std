@@ -26,21 +26,55 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUTexture>
 **/
 @:native("GPUTexture") extern class GPUTexture {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUTexture/width>
+	**/
 	var width(default, null) : GPUIntegerCoordinateOut;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUTexture/height>
+	**/
 	var height(default, null) : GPUIntegerCoordinateOut;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUTexture/depthOrArrayLayers>
+	**/
 	var depthOrArrayLayers(default, null) : GPUIntegerCoordinateOut;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUTexture/mipLevelCount>
+	**/
 	var mipLevelCount(default, null) : GPUIntegerCoordinateOut;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUTexture/sampleCount>
+	**/
 	var sampleCount(default, null) : GPUSize32Out;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUTexture/dimension>
+	**/
 	var dimension(default, null) : GPUTextureDimension;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUTexture/format>
+	**/
 	var format(default, null) : GPUTextureFormat;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUTexture/usage>
+	**/
 	var usage(default, null) : GPUFlagsConstant;
 	var textureBindingViewDimension(default, null) : haxe.extern.EitherType<GPUTextureViewDimension, Void>;
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUTexture/label>
 	**/
 	var label : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUTexture/createView>
+	**/
 	function createView(?descriptor:GPUTextureViewDescriptor):GPUTextureView;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUTexture/destroy>
+	**/
 	function destroy():Void;
 }

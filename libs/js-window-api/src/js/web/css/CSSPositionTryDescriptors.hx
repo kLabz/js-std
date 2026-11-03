@@ -24,44 +24,164 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors>
+**/
 @:native("CSSPositionTryDescriptors") extern class CSSPositionTryDescriptors extends CSSStyleDeclaration {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var margin : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var marginTop : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var marginRight : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var marginBottom : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var marginLeft : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var marginBlock : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var marginBlockStart : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var marginBlockEnd : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var marginInline : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var marginInlineStart : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var marginInlineEnd : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var inset : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var insetBlock : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var insetBlockStart : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var insetBlockEnd : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var insetInline : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var insetInlineStart : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var insetInlineEnd : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var top : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var left : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var right : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var bottom : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var width : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var minWidth : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var maxWidth : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var height : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var minHeight : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var maxHeight : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var blockSize : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var minBlockSize : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var maxBlockSize : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var inlineSize : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var minInlineSize : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var maxInlineSize : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var placeSelf : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var alignSelf : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var justifySelf : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var positionAnchor : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors#instance_properties>
+	**/
 	var positionArea : String;
 }

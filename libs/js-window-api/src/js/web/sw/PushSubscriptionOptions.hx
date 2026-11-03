@@ -26,8 +26,16 @@ package js.web.sw;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PushSubscriptionOptions>
 **/
 @:native("PushSubscriptionOptions") extern class PushSubscriptionOptions {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushSubscriptionOptions/userVisibleOnly>
+	**/
 	var userVisibleOnly(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushSubscriptionOptions/applicationServerKey>
+	**/
 	var applicationServerKey(default, null) : Null<js.lib.ArrayBuffer>;
 }

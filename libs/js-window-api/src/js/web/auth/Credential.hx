@@ -26,9 +26,17 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Credential>
 **/
 @:native("Credential") extern class Credential {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Credential/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Credential/type>
+	**/
 	var type(default, null) : String;
 	function isConditionalMediationAvailable():js.lib.Promise<Bool>;
 }

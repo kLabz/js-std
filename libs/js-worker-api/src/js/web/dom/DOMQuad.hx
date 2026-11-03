@@ -24,14 +24,38 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DOMQuad>
+**/
 @:native("DOMQuad") extern class DOMQuad {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMQuad/p1>
+	**/
 	var p1(default, null) : DOMPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMQuad/p2>
+	**/
 	var p2(default, null) : DOMPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMQuad/p3>
+	**/
 	var p3(default, null) : DOMPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMQuad/p4>
+	**/
 	var p4(default, null) : DOMPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMQuad/DOMQuad>
+	**/
 	function new(?p1:DOMPointInit, ?p2:DOMPointInit, ?p3:DOMPointInit, ?p4:DOMPointInit):Void;
 	function fromQuad(?other:DOMQuadInit):DOMQuad;
 	function fromRect(?other:DOMRectInit):DOMQuad;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMQuad/getBounds>
+	**/
 	function getBounds():DOMRect;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMQuad/toJSON>
+	**/
 	function toJSON():{ };
 }

@@ -26,9 +26,17 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/FederatedCredential>
 **/
 @:native("FederatedCredential") extern class FederatedCredential extends Credential {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FederatedCredential/provider>
+	**/
 	var provider(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FederatedCredential/protocol>
+	**/
 	var protocol(default, null) : Null<String>;
 	/**
 		From interface mixin CredentialUserData
@@ -38,5 +46,8 @@ package js.web.auth;
 		From interface mixin CredentialUserData
 	**/
 	var iconURL(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FederatedCredential/FederatedCredential>
+	**/
 	function new(data:FederatedCredentialInit):Void;
 }

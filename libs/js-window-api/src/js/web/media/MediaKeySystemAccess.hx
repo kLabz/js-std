@@ -26,9 +26,20 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/MediaKeySystemAccess>
 **/
 @:native("MediaKeySystemAccess") extern class MediaKeySystemAccess {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySystemAccess/keySystem>
+	**/
 	var keySystem(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySystemAccess/createMediaKeys>
+	**/
 	function createMediaKeys():js.lib.Promise<MediaKeys>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySystemAccess/getConfiguration>
+	**/
 	function getConfiguration():MediaKeySystemConfiguration;
 }

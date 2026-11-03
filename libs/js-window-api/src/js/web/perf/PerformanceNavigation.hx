@@ -24,12 +24,27 @@
 
 package js.web.perf;
 
-@:native("PerformanceNavigation") extern class PerformanceNavigation {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigation>
+**/
+@:native("PerformanceNavigation") @:deprecated extern class PerformanceNavigation {
 	static inline var TYPE_NAVIGATE : Int = 0;
 	static inline var TYPE_RELOAD : Int = 1;
 	static inline var TYPE_BACK_FORWARD : Int = 2;
 	static inline var TYPE_RESERVED : Int = 255;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigation/type>
+	**/
+	@:deprecated
 	var type(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigation/redirectCount>
+	**/
+	@:deprecated
 	var redirectCount(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigation/toJSON>
+	**/
+	@:deprecated
 	function toJSON():{ };
 }

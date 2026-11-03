@@ -24,17 +24,56 @@
 
 package js.web.canvas;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TextMetrics>
+**/
 @:native("TextMetrics") extern class TextMetrics {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextMetrics/width>
+	**/
 	var width(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextMetrics/actualBoundingBoxLeft>
+	**/
 	var actualBoundingBoxLeft(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextMetrics/actualBoundingBoxRight>
+	**/
 	var actualBoundingBoxRight(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextMetrics/fontBoundingBoxAscent>
+	**/
 	var fontBoundingBoxAscent(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextMetrics/fontBoundingBoxDescent>
+	**/
 	var fontBoundingBoxDescent(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextMetrics/actualBoundingBoxAscent>
+	**/
 	var actualBoundingBoxAscent(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextMetrics/actualBoundingBoxDescent>
+	**/
 	var actualBoundingBoxDescent(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextMetrics/emHeightAscent>
+	**/
 	var emHeightAscent(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextMetrics/emHeightDescent>
+	**/
 	var emHeightDescent(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextMetrics/hangingBaseline>
+	**/
 	var hangingBaseline(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextMetrics/alphabeticBaseline>
+	**/
 	var alphabeticBaseline(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextMetrics/ideographicBaseline>
+	**/
 	var ideographicBaseline(default, null) : Float;
 }

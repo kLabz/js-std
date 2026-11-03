@@ -24,8 +24,20 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy>
+**/
 @:native("CountQueuingStrategy") extern class CountQueuingStrategy {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/highWaterMark>
+	**/
 	var highWaterMark(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/size>
+	**/
 	var size(default, null) : js.web.dom.Function;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/CountQueuingStrategy>
+	**/
 	function new(init:QueuingStrategyInit):Void;
 }

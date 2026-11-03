@@ -24,18 +24,30 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TextEncoderStream>
+**/
 @:native("TextEncoderStream") extern class TextEncoderStream {
 	/**
 		From interface mixin TextEncoderCommon
+		
+		@see <https://developer.mozilla.org/docs/Web/API/TextEncoderStream/encoding>
 	**/
 	var encoding(default, null) : String;
 	/**
 		From interface mixin GenericTransformStream
+		
+		@see <https://developer.mozilla.org/docs/Web/API/TextEncoderStream/readable>
 	**/
 	var readable(default, null) : ReadableStream;
 	/**
 		From interface mixin GenericTransformStream
+		
+		@see <https://developer.mozilla.org/docs/Web/API/TextEncoderStream/writable>
 	**/
 	var writable(default, null) : WritableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextEncoderStream/TextEncoderStream>
+	**/
 	function new():Void;
 }

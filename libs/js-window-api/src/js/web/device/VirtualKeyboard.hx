@@ -26,11 +26,25 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/VirtualKeyboard>
 **/
 @:native("VirtualKeyboard") extern class VirtualKeyboard extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VirtualKeyboard/boundingRect>
+	**/
 	var boundingRect(default, null) : js.web.dom.DOMRect;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VirtualKeyboard/overlaysContent>
+	**/
 	var overlaysContent : Bool;
 	var ongeometrychange : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VirtualKeyboard/hide>
+	**/
 	function hide():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VirtualKeyboard/show>
+	**/
 	function show():Void;
 }

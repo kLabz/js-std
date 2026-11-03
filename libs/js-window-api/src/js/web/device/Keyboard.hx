@@ -26,6 +26,8 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Keyboard>
 **/
 @:native("Keyboard") extern class Keyboard extends js.web.dom.EventTarget {
 	/**
@@ -34,8 +36,16 @@ package js.web.device;
 	var onlayoutchange : js.web.html.EventHandler;
 	/**
 		From partial interface in keyboard-map.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Keyboard/getLayoutMap>
 	**/
 	function getLayoutMap():js.lib.Promise<KeyboardLayoutMap>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Keyboard/lock>
+	**/
 	function lock(?keyCodes:Array<String>):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Keyboard/unlock>
+	**/
 	function unlock():Void;
 }

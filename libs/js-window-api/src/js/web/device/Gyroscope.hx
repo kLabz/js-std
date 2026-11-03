@@ -26,10 +26,24 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Gyroscope>
 **/
 @:native("Gyroscope") extern class Gyroscope extends Sensor {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Gyroscope/x>
+	**/
 	var x(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Gyroscope/y>
+	**/
 	var y(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Gyroscope/z>
+	**/
 	var z(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Gyroscope/Gyroscope>
+	**/
 	function new(?sensorOptions:GyroscopeSensorOptions):Void;
 }

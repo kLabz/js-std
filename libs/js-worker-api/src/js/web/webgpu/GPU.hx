@@ -26,9 +26,20 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPU>
 **/
 @:native("GPU") extern class GPU {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPU/wgslLanguageFeatures>
+	**/
 	var wgslLanguageFeatures(default, null) : WGSLLanguageFeatures;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPU/getPreferredCanvasFormat>
+	**/
 	function getPreferredCanvasFormat():GPUTextureFormat;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPU/requestAdapter>
+	**/
 	function requestAdapter(?options:GPURequestAdapterOptions):js.lib.Promise<Null<GPUAdapter>>;
 }

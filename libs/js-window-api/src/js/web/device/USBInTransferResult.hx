@@ -26,6 +26,8 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/USBInTransferResult>
 **/
 @:native("USBInTransferResult") extern class USBInTransferResult {
 	var data(default, null) : Null<js.lib.DataView>;

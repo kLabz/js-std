@@ -24,7 +24,16 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DOMRectList>
+**/
 @:native("DOMRectList") extern class DOMRectList implements ArrayAccess<Null<DOMRect>> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMRectList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMRectList/item>
+	**/
 	function item(index:Int):Null<DOMRect>;
 }

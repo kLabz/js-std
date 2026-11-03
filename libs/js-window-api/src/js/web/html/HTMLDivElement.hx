@@ -24,9 +24,13 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLDivElement>
+**/
 @:native("HTMLDivElement") extern class HTMLDivElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var align : String;
 }

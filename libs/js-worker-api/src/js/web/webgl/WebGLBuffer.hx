@@ -24,6 +24,9 @@
 
 package js.web.webgl;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WebGLBuffer>
+**/
 @:native("WebGLBuffer") extern class WebGLBuffer extends WebGLObject {
 
 }

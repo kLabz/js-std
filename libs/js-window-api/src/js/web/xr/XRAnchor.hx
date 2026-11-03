@@ -26,9 +26,17 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRAnchor>
 **/
 @:native("XRAnchor") extern class XRAnchor {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRAnchor/anchorSpace>
+	**/
 	var anchorSpace(default, null) : XRSpace;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRAnchor/delete>
+	**/
 	function delete():Void;
 	function requestPersistentHandle():js.lib.Promise<String>;
 }

@@ -24,8 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLLabelElement>
+**/
 @:native("HTMLLabelElement") extern class HTMLLabelElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLabelElement/form>
+	**/
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLabelElement/htmlFor>
+	**/
 	var htmlFor : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLabelElement/control>
+	**/
 	var control(default, null) : Null<HTMLElement>;
 }

@@ -24,7 +24,18 @@
 
 package js.web.media;
 
-@:native("SpeechGrammar") extern class SpeechGrammar {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SpeechGrammar>
+**/
+@:native("SpeechGrammar") @:deprecated extern class SpeechGrammar {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechGrammar/src>
+	**/
+	@:deprecated
 	var src : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechGrammar/weight>
+	**/
+	@:deprecated
 	var weight : Float;
 }

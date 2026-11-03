@@ -24,12 +24,36 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DynamicsCompressorNode>
+**/
 @:native("DynamicsCompressorNode") extern class DynamicsCompressorNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DynamicsCompressorNode/threshold>
+	**/
 	var threshold(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DynamicsCompressorNode/knee>
+	**/
 	var knee(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DynamicsCompressorNode/ratio>
+	**/
 	var ratio(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DynamicsCompressorNode/reduction>
+	**/
 	var reduction(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DynamicsCompressorNode/attack>
+	**/
 	var attack(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DynamicsCompressorNode/release>
+	**/
 	var release(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DynamicsCompressorNode/DynamicsCompressorNode>
+	**/
 	function new(context:BaseAudioContext, ?options:DynamicsCompressorOptions):Void;
 }

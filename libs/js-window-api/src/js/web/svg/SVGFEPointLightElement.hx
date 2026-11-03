@@ -24,8 +24,20 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFEPointLightElement>
+**/
 @:native("SVGFEPointLightElement") extern class SVGFEPointLightElement extends SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEPointLightElement/x>
+	**/
 	var x(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEPointLightElement/y>
+	**/
 	var y(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEPointLightElement/z>
+	**/
 	var z(default, null) : SVGAnimatedNumber;
 }

@@ -24,7 +24,16 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedPreserveAspectRatio>
+**/
 @:native("SVGAnimatedPreserveAspectRatio") extern class SVGAnimatedPreserveAspectRatio {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedPreserveAspectRatio/baseVal>
+	**/
 	var baseVal(default, null) : SVGPreserveAspectRatio;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedPreserveAspectRatio/animVal>
+	**/
 	var animVal(default, null) : SVGPreserveAspectRatio;
 }

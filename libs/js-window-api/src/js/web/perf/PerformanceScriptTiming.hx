@@ -24,20 +24,56 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming>
+**/
 @:native("PerformanceScriptTiming") extern class PerformanceScriptTiming extends PerformanceEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming/invokerType>
+	**/
 	var invokerType(default, null) : ScriptInvokerType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming/invoker>
+	**/
 	var invoker(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming/executionStart>
+	**/
 	var executionStart(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming/sourceURL>
+	**/
 	var sourceURL(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming/sourceFunctionName>
+	**/
 	var sourceFunctionName(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming/sourceCharPosition>
+	**/
 	var sourceCharPosition(default, null) : Float;
 	var sourceLine(default, null) : Float;
 	var sourceColumn(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming/pauseDuration>
+	**/
 	var pauseDuration(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming/forcedStyleAndLayoutDuration>
+	**/
 	var forcedStyleAndLayoutDuration(default, null) : DOMHighResTimeStamp;
 	var forcedStyleDuration(default, null) : DOMHighResTimeStamp;
 	var forcedLayoutDuration(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming/window>
+	**/
 	var window(default, null) : Null<js.web.html.Window>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming/windowAttribution>
+	**/
 	var windowAttribution(default, null) : ScriptWindowAttribution;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming/toJSON>
+	**/
 	function toJSON():{ };
 }

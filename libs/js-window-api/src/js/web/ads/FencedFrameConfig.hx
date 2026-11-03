@@ -24,7 +24,14 @@
 
 package js.web.ads;
 
-@:native("FencedFrameConfig") extern class FencedFrameConfig {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FencedFrameConfig>
+**/
+@:native("FencedFrameConfig") @:deprecated extern class FencedFrameConfig {
 	function new(url:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FencedFrameConfig/setSharedStorageContext>
+	**/
+	@:deprecated
 	function setSharedStorageContext(contextString:String):Void;
 }

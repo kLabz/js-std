@@ -24,6 +24,12 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionDeclarations>
+**/
 @:native("CSSFunctionDeclarations") extern class CSSFunctionDeclarations extends CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionDeclarations/style>
+	**/
 	var style(default, null) : CSSFunctionDescriptors;
 }

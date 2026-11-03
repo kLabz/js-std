@@ -24,10 +24,17 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLLegendElement>
+**/
 @:native("HTMLLegendElement") extern class HTMLLegendElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLLegendElement/form>
+	**/
 	var form(default, null) : Null<HTMLFormElement>;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var align : String;
 }

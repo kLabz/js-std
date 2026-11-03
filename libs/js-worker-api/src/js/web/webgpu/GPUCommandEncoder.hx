@@ -26,32 +26,72 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder>
 **/
 @:native("GPUCommandEncoder") extern class GPUCommandEncoder {
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder/label>
 	**/
 	var label : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder/beginComputePass>
+	**/
 	function beginComputePass(?descriptor:GPUComputePassDescriptor):GPUComputePassEncoder;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder/beginRenderPass>
+	**/
 	function beginRenderPass(descriptor:GPURenderPassDescriptor):GPURenderPassEncoder;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder/clearBuffer>
+	**/
 	function clearBuffer(buffer:GPUBuffer, ?offset:GPUSize64 = 0, ?size:GPUSize64):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder/copyBufferToBuffer>
+	**/
 	overload function copyBufferToBuffer(source:GPUBuffer, destination:GPUBuffer, ?size:GPUSize64):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder/copyBufferToBuffer>
+	**/
 	overload function copyBufferToBuffer(source:GPUBuffer, sourceOffset:GPUSize64, destination:GPUBuffer, destinationOffset:GPUSize64, ?size:GPUSize64):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder/copyBufferToTexture>
+	**/
 	function copyBufferToTexture(source:GPUTexelCopyBufferInfo, destination:GPUTexelCopyTextureInfo, copySize:GPUExtent3D):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder/copyTextureToBuffer>
+	**/
 	function copyTextureToBuffer(source:GPUTexelCopyTextureInfo, destination:GPUTexelCopyBufferInfo, copySize:GPUExtent3D):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder/copyTextureToTexture>
+	**/
 	function copyTextureToTexture(source:GPUTexelCopyTextureInfo, destination:GPUTexelCopyTextureInfo, copySize:GPUExtent3D):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder/finish>
+	**/
 	function finish(?descriptor:GPUCommandBufferDescriptor):GPUCommandBuffer;
 	/**
 		From interface mixin GPUDebugCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder/insertDebugMarker>
 	**/
 	function insertDebugMarker(markerLabel:String):Void;
 	/**
 		From interface mixin GPUDebugCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder/popDebugGroup>
 	**/
 	function popDebugGroup():Void;
 	/**
 		From interface mixin GPUDebugCommandsMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder/pushDebugGroup>
 	**/
 	function pushDebugGroup(groupLabel:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder/resolveQuerySet>
+	**/
 	function resolveQuerySet(querySet:GPUQuerySet, firstQuery:GPUSize32, queryCount:GPUSize32, destination:GPUBuffer, destinationOffset:GPUSize64):Void;
 }

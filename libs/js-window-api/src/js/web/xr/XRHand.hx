@@ -24,6 +24,9 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XRHand>
+**/
 @:native("XRHand") extern class XRHand {
 	var size(default, null) : Int;
 	function entries():js.lib.Iterator<js.lib.Tuple<XRHandJoint, XRJointSpace>>;

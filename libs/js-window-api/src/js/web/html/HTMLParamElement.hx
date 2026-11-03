@@ -24,9 +24,16 @@
 
 package js.web.html;
 
-@:native("HTMLParamElement") extern class HTMLParamElement extends HTMLElement {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLParamElement>
+**/
+@:native("HTMLParamElement") @:deprecated extern class HTMLParamElement extends HTMLElement {
+	@:deprecated
 	var name : String;
+	@:deprecated
 	var value : String;
+	@:deprecated
 	var type : String;
+	@:deprecated
 	var valueType : String;
 }

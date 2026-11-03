@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimateTransformElement>
+**/
 @:native("SVGAnimateTransformElement") extern class SVGAnimateTransformElement extends SVGAnimationElement {
 
 }

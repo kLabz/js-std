@@ -24,9 +24,24 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule>
+**/
 @:native("CSSFontPaletteValuesRule") extern class CSSFontPaletteValuesRule extends CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/fontFamily>
+	**/
 	var fontFamily(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/basePalette>
+	**/
 	var basePalette(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/overrideColors>
+	**/
 	var overrideColors(default, null) : String;
 }

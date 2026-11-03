@@ -24,7 +24,16 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedAngle>
+**/
 @:native("SVGAnimatedAngle") extern class SVGAnimatedAngle {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedAngle/baseVal>
+	**/
 	var baseVal(default, null) : SVGAngle;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedAngle/animVal>
+	**/
 	var animVal(default, null) : SVGAngle;
 }

@@ -26,9 +26,17 @@ package js.web.sw;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PushEvent>
 **/
 @:native("PushEvent") extern class PushEvent extends ExtendableEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushEvent/data>
+	**/
 	var data(default, null) : Null<PushMessageData>;
 	var notification(default, null) : Null<Notification>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PushEvent/PushEvent>
+	**/
 	function new(type:String, ?eventInitDict:PushEventInit):Void;
 }

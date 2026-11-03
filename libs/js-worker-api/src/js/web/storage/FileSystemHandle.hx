@@ -26,17 +26,32 @@ package js.web.storage;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/FileSystemHandle>
 **/
 @:native("FileSystemHandle") extern class FileSystemHandle {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemHandle/kind>
+	**/
 	var kind(default, null) : FileSystemHandleKind;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemHandle/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemHandle/isSameEntry>
+	**/
 	function isSameEntry(other:FileSystemHandle):js.lib.Promise<Bool>;
 	/**
 		From partial interface in file-system-access.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemHandle/queryPermission>
 	**/
 	function queryPermission(?descriptor:FileSystemHandlePermissionDescriptor):js.lib.Promise<js.web.misc.PermissionState>;
 	/**
 		From partial interface in file-system-access.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemHandle/requestPermission>
 	**/
 	function requestPermission(?descriptor:FileSystemHandlePermissionDescriptor):js.lib.Promise<js.web.misc.PermissionState>;
 }

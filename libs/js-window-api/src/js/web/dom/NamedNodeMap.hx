@@ -24,13 +24,40 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NamedNodeMap>
+**/
 @:native("NamedNodeMap") extern class NamedNodeMap implements ArrayAccess<Null<Attr>> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NamedNodeMap/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NamedNodeMap/getNamedItem>
+	**/
 	function getNamedItem(qualifiedName:String):Null<Attr>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NamedNodeMap/getNamedItemNS>
+	**/
 	function getNamedItemNS(namespace:Null<String>, localName:String):Null<Attr>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NamedNodeMap/item>
+	**/
 	function item(index:Int):Null<Attr>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NamedNodeMap/removeNamedItem>
+	**/
 	function removeNamedItem(qualifiedName:String):Attr;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NamedNodeMap/removeNamedItemNS>
+	**/
 	function removeNamedItemNS(namespace:Null<String>, localName:String):Attr;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NamedNodeMap/setNamedItem>
+	**/
 	function setNamedItem(attr:Attr):Null<Attr>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NamedNodeMap/setNamedItemNS>
+	**/
 	function setNamedItemNS(attr:Attr):Null<Attr>;
 }

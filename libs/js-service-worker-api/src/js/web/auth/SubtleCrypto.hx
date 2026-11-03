@@ -26,6 +26,8 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto>
 **/
 @:native("SubtleCrypto") extern class SubtleCrypto {
 	/**
@@ -36,9 +38,21 @@ package js.web.auth;
 		From partial interface in webcrypto-modern-algos.idl
 	**/
 	function decapsulateKey(decapsulationAlgorithm:AlgorithmIdentifier, decapsulationKey:CryptoKey, ciphertext:js.web.dom.BufferSource, sharedKeyAlgorithm:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<KeyUsage>):js.lib.Promise<CryptoKey>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/decrypt>
+	**/
 	function decrypt(algorithm:AlgorithmIdentifier, key:CryptoKey, data:js.web.dom.BufferSource):js.lib.Promise<js.lib.ArrayBuffer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/deriveBits>
+	**/
 	function deriveBits(algorithm:AlgorithmIdentifier, baseKey:CryptoKey, ?length:Null<Int> = null):js.lib.Promise<js.lib.ArrayBuffer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/deriveKey>
+	**/
 	function deriveKey(algorithm:AlgorithmIdentifier, baseKey:CryptoKey, derivedKeyType:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<KeyUsage>):js.lib.Promise<CryptoKey>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/digest>
+	**/
 	function digest(algorithm:AlgorithmIdentifier, data:js.web.dom.BufferSource):js.lib.Promise<js.lib.ArrayBuffer>;
 	/**
 		From partial interface in webcrypto-modern-algos.idl
@@ -48,14 +62,29 @@ package js.web.auth;
 		From partial interface in webcrypto-modern-algos.idl
 	**/
 	function encapsulateKey(encapsulationAlgorithm:AlgorithmIdentifier, encapsulationKey:CryptoKey, sharedKeyAlgorithm:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<KeyUsage>):js.lib.Promise<EncapsulatedKey>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/encrypt>
+	**/
 	function encrypt(algorithm:AlgorithmIdentifier, key:CryptoKey, data:js.web.dom.BufferSource):js.lib.Promise<js.lib.ArrayBuffer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/exportKey>
+	**/
 	function exportKey(format:KeyFormat, key:CryptoKey):js.lib.Promise<haxe.extern.EitherType<js.lib.ArrayBuffer, JsonWebKey>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/generateKey>
+	**/
 	function generateKey(algorithm:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<KeyUsage>):js.lib.Promise<haxe.extern.EitherType<CryptoKey, CryptoKeyPair>>;
 	/**
 		From partial interface in webcrypto-modern-algos.idl
 	**/
 	function getPublicKey(key:CryptoKey, keyUsages:Array<KeyUsage>):js.lib.Promise<CryptoKey>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/importKey>
+	**/
 	function importKey(format:KeyFormat, keyData:haxe.extern.EitherType<js.web.dom.BufferSource, JsonWebKey>, algorithm:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<KeyUsage>):js.lib.Promise<CryptoKey>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/sign>
+	**/
 	function sign(algorithm:AlgorithmIdentifier, key:CryptoKey, data:js.web.dom.BufferSource):js.lib.Promise<js.lib.ArrayBuffer>;
 	/**
 		From partial interface in webcrypto-modern-algos.idl
@@ -65,7 +94,16 @@ package js.web.auth;
 		From partial interface in webcrypto-modern-algos.idl
 	**/
 	overload function supports(operation:String, algorithm:AlgorithmIdentifier, additionalAlgorithm:AlgorithmIdentifier):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/unwrapKey>
+	**/
 	function unwrapKey(format:KeyFormat, wrappedKey:js.web.dom.BufferSource, unwrappingKey:CryptoKey, unwrapAlgorithm:AlgorithmIdentifier, unwrappedKeyAlgorithm:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<KeyUsage>):js.lib.Promise<CryptoKey>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/verify>
+	**/
 	function verify(algorithm:AlgorithmIdentifier, key:CryptoKey, signature:js.web.dom.BufferSource, data:js.web.dom.BufferSource):js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/wrapKey>
+	**/
 	function wrapKey(format:KeyFormat, key:CryptoKey, wrappingKey:CryptoKey, wrapAlgorithm:AlgorithmIdentifier):js.lib.Promise<js.lib.ArrayBuffer>;
 }

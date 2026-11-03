@@ -24,6 +24,12 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSStyleValue>
+**/
 @:native("CSSStyleValue") extern class CSSStyleValue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleValue/toString>
+	**/
 	function toString():String;
 }

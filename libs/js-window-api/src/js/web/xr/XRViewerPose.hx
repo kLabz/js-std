@@ -26,7 +26,12 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRViewerPose>
 **/
 @:native("XRViewerPose") extern class XRViewerPose extends XRPose {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRViewerPose/views>
+	**/
 	var views(default, null) : Array<XRView>;
 }

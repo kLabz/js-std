@@ -26,9 +26,20 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PaymentMethodChangeEvent>
 **/
 @:native("PaymentMethodChangeEvent") extern class PaymentMethodChangeEvent extends PaymentRequestUpdateEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentMethodChangeEvent/methodName>
+	**/
 	var methodName(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentMethodChangeEvent/methodDetails>
+	**/
 	var methodDetails(default, null) : Null<{ }>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentMethodChangeEvent/PaymentMethodChangeEvent>
+	**/
 	function new(type:String, ?eventInitDict:PaymentMethodChangeEventInit):Void;
 }

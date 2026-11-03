@@ -24,8 +24,23 @@
 
 package js.web.html;
 
-@:native("HTMLAllCollection") extern class HTMLAllCollection implements ArrayAccess<js.web.dom.Element> {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLAllCollection>
+**/
+@:native("HTMLAllCollection") @:deprecated extern class HTMLAllCollection implements ArrayAccess<js.web.dom.Element> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAllCollection/length>
+	**/
+	@:deprecated
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAllCollection/item>
+	**/
+	@:deprecated
 	function item(?nameOrIndex:String):Null<haxe.extern.EitherType<js.web.dom.HTMLCollection, js.web.dom.Element>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLAllCollection/namedItem>
+	**/
+	@:deprecated
 	function namedItem(name:String):Null<haxe.extern.EitherType<js.web.dom.HTMLCollection, js.web.dom.Element>>;
 }

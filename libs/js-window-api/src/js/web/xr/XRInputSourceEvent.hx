@@ -26,9 +26,20 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceEvent>
 **/
 @:native("XRInputSourceEvent") extern class XRInputSourceEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceEvent/frame>
+	**/
 	var frame(default, null) : XRFrame;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceEvent/inputSource>
+	**/
 	var inputSource(default, null) : XRInputSource;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceEvent/XRInputSourceEvent>
+	**/
 	function new(type:String, eventInitDict:XRInputSourceEventInit):Void;
 }

@@ -26,8 +26,16 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/SensorErrorEvent>
 **/
 @:native("SensorErrorEvent") extern class SensorErrorEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SensorErrorEvent/error>
+	**/
 	var error(default, null) : js.web.dom.DOMException;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SensorErrorEvent/SensorErrorEvent>
+	**/
 	function new(type:String, errorEventInitDict:SensorErrorEventInit):Void;
 }

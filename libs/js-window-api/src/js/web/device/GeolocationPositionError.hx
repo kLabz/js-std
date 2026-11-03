@@ -24,10 +24,19 @@
 
 package js.web.device;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/GeolocationPositionError>
+**/
 @:native("GeolocationPositionError") extern class GeolocationPositionError {
 	static inline var PERMISSION_DENIED : Int = 1;
 	static inline var POSITION_UNAVAILABLE : Int = 2;
 	static inline var TIMEOUT : Int = 3;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GeolocationPositionError/code>
+	**/
 	var code(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GeolocationPositionError/message>
+	**/
 	var message(default, null) : String;
 }

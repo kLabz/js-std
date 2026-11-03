@@ -26,14 +26,20 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUComputePipeline>
 **/
 @:native("GPUComputePipeline") extern class GPUComputePipeline {
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUComputePipeline/label>
 	**/
 	var label : String;
 	/**
 		From interface mixin GPUPipelineBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUComputePipeline/getBindGroupLayout>
 	**/
 	function getBindGroupLayout(index:Int):GPUBindGroupLayout;
 }

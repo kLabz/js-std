@@ -24,31 +24,86 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLElement>
+**/
 @:native("HTMLElement") extern class HTMLElement extends js.web.dom.Element {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/title>
+	**/
 	var title : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/lang>
+	**/
 	var lang : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/translate>
+	**/
 	var translate : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/dir>
+	**/
 	var dir : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/hidden>
+	**/
 	var hidden : Null<haxe.extern.EitherType<Bool, haxe.extern.EitherType<Float, String>>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/inert>
+	**/
 	var inert : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/accessKey>
+	**/
 	var accessKey : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/accessKeyLabel>
+	**/
 	var accessKeyLabel(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/draggable>
+	**/
 	var draggable : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/spellcheck>
+	**/
 	var spellcheck : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/writingSuggestions>
+	**/
 	var writingSuggestions : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/autocapitalize>
+	**/
 	var autocapitalize : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/autocorrect>
+	**/
 	var autocorrect : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/innerText>
+	**/
 	var innerText : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/outerText>
+	**/
 	var outerText : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/popover>
+	**/
 	var popover : Null<String>;
 	var headingOffset : Int;
 	var headingReset : Bool;
 	/**
 		From interface mixin ElementCSSInlineStyle
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/attributeStyleMap>
 	**/
 	var attributeStyleMap(default, null) : js.web.css.StylePropertyMap;
 	/**
 		From interface mixin ElementCSSInlineStyle
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/style>
 	**/
 	var style(default, null) : js.web.css.CSSStyleProperties;
 	/**
@@ -478,46 +533,68 @@ package js.web.html;
 	var onbeforexrselect : EventHandler;
 	/**
 		From interface mixin ElementContentEditable
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/contentEditable>
 	**/
 	var contentEditable : String;
 	/**
 		From interface mixin ElementContentEditable
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/enterKeyHint>
 	**/
 	var enterKeyHint : String;
 	/**
 		From interface mixin ElementContentEditable
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/isContentEditable>
 	**/
 	var isContentEditable(default, null) : Bool;
 	/**
 		From interface mixin ElementContentEditable
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/inputMode>
 	**/
 	var inputMode : String;
 	/**
 		From interface mixin ElementContentEditable
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/virtualKeyboardPolicy>
 	**/
 	var virtualKeyboardPolicy : String;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/dataset>
 	**/
 	var dataset(default, null) : DOMStringMap;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/nonce>
 	**/
 	var nonce : String;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/autofocus>
 	**/
 	var autofocus : Bool;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/tabIndex>
 	**/
 	var tabIndex : Int;
 	/**
 		From partial interface in container-timing.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/containerTiming>
 	**/
 	var containerTiming : String;
 	/**
 		From partial interface in container-timing.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/containerTimingIgnore>
 	**/
 	var containerTimingIgnore : Bool;
 	/**
@@ -526,39 +603,70 @@ package js.web.html;
 	var scrollParent(default, null) : Null<js.web.dom.Element>;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetParent>
 	**/
 	var offsetParent(default, null) : Null<js.web.dom.Element>;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetTop>
 	**/
 	var offsetTop(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetLeft>
 	**/
 	var offsetLeft(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetWidth>
 	**/
 	var offsetWidth(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetHeight>
 	**/
 	var offsetHeight(default, null) : Int;
 	/**
 		From partial interface in edit-context.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/editContext>
 	**/
 	var editContext : Null<EditContext>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/attachInternals>
+	**/
 	function attachInternals():ElementInternals;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/blur>
 	**/
 	function blur():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/click>
+	**/
 	function click():Void;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/focus>
 	**/
 	function focus(?options:FocusOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/hidePopover>
+	**/
 	function hidePopover():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/showPopover>
+	**/
 	function showPopover(?options:ShowPopoverOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/togglePopover>
+	**/
 	function togglePopover(?options:haxe.extern.EitherType<TogglePopoverOptions, Bool>):Bool;
 }

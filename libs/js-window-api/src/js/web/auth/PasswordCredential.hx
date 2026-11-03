@@ -26,17 +26,32 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PasswordCredential>
 **/
 @:native("PasswordCredential") extern class PasswordCredential extends Credential {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PasswordCredential/password>
+	**/
 	var password(default, null) : String;
 	/**
 		From interface mixin CredentialUserData
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PasswordCredential/name>
 	**/
 	var name(default, null) : String;
 	/**
 		From interface mixin CredentialUserData
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PasswordCredential/iconURL>
 	**/
 	var iconURL(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PasswordCredential/PasswordCredential>
+	**/
 	overload function new(data:PasswordCredentialData):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PasswordCredential/PasswordCredential>
+	**/
 	overload function new(form:js.web.html.HTMLFormElement):Void;
 }

@@ -26,10 +26,24 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw>
 **/
 @:native("WEBGL_multi_draw") extern class WEBGL_multi_draw {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw/multiDrawArraysInstancedWEBGL>
+	**/
 	function multiDrawArraysInstancedWEBGL(mode:GLenum, firstsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLint>>, firstsOffset:Float, countsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, countsOffset:Float, instanceCountsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, instanceCountsOffset:Float, drawcount:GLsizei):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw/multiDrawArraysWEBGL>
+	**/
 	function multiDrawArraysWEBGL(mode:GLenum, firstsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLint>>, firstsOffset:Float, countsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, countsOffset:Float, drawcount:GLsizei):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw/multiDrawElementsInstancedWEBGL>
+	**/
 	function multiDrawElementsInstancedWEBGL(mode:GLenum, countsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, countsOffset:Float, type:GLenum, offsetsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, offsetsOffset:Float, instanceCountsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, instanceCountsOffset:Float, drawcount:GLsizei):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw/multiDrawElementsWEBGL>
+	**/
 	function multiDrawElementsWEBGL(mode:GLenum, countsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, countsOffset:Float, type:GLenum, offsetsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, offsetsOffset:Float, drawcount:GLsizei):Void;
 }

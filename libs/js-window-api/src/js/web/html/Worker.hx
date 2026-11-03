@@ -24,6 +24,9 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Worker>
+**/
 @:native("Worker") extern class Worker extends js.web.dom.EventTarget {
 	/**
 		From interface mixin AbstractWorker
@@ -37,8 +40,20 @@ package js.web.html;
 		From interface mixin MessageEventTarget
 	**/
 	var onmessageerror : EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Worker/Worker>
+	**/
 	function new(scriptURL:haxe.extern.EitherType<js.web.dom.TrustedScriptURL, String>, ?options:WorkerOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Worker/postMessage>
+	**/
 	overload function postMessage(message:Any, transfer:Array<{ }>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Worker/postMessage>
+	**/
 	overload function postMessage(message:Any, ?options:StructuredSerializeOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Worker/terminate>
+	**/
 	function terminate():Void;
 }

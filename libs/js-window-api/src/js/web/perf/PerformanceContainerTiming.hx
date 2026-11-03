@@ -24,20 +24,48 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceContainerTiming>
+**/
 @:native("PerformanceContainerTiming") extern class PerformanceContainerTiming extends PerformanceEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceContainerTiming/identifier>
+	**/
 	var identifier(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceContainerTiming/intersectionRect>
+	**/
 	var intersectionRect(default, null) : js.web.dom.DOMRectReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceContainerTiming/size>
+	**/
 	var size(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceContainerTiming/firstRenderTime>
+	**/
 	var firstRenderTime(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceContainerTiming/lastPaintedElement>
+	**/
 	var lastPaintedElement(default, null) : Null<js.web.html.HTMLElement>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceContainerTiming/rootElement>
+	**/
 	var rootElement(default, null) : Null<js.web.html.HTMLElement>;
 	/**
 		From interface mixin PaintTimingMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceContainerTiming/paintTime>
 	**/
 	var paintTime(default, null) : DOMHighResTimeStamp;
 	/**
 		From interface mixin PaintTimingMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceContainerTiming/presentationTime>
 	**/
 	var presentationTime(default, null) : Null<DOMHighResTimeStamp>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceContainerTiming/toJSON>
+	**/
 	function toJSON():{ };
 }

@@ -24,21 +24,60 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaSource>
+**/
 @:native("MediaSource") extern class MediaSource extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/handle>
+	**/
 	var handle(default, null) : MediaSourceHandle;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/sourceBuffers>
+	**/
 	var sourceBuffers(default, null) : SourceBufferList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/activeSourceBuffers>
+	**/
 	var activeSourceBuffers(default, null) : SourceBufferList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/readyState>
+	**/
 	var readyState(default, null) : ReadyState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/duration>
+	**/
 	var duration : Float;
 	var onsourceopen : js.web.html.EventHandler;
 	var onsourceended : js.web.html.EventHandler;
 	var onsourceclose : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/canConstructInDedicatedWorker_static>
+	**/
 	static var canConstructInDedicatedWorker(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/MediaSource>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/addSourceBuffer>
+	**/
 	function addSourceBuffer(type:String):SourceBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/clearLiveSeekableRange>
+	**/
 	function clearLiveSeekableRange():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/endOfStream>
+	**/
 	function endOfStream(?error:EndOfStreamError):Void;
 	function isTypeSupported(type:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/removeSourceBuffer>
+	**/
 	function removeSourceBuffer(sourceBuffer:SourceBuffer):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/setLiveSeekableRange>
+	**/
 	function setLiveSeekableRange(start:Float, end:Float):Void;
 }

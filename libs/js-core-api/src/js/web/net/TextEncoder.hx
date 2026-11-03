@@ -24,12 +24,26 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TextEncoder>
+**/
 @:native("TextEncoder") extern class TextEncoder {
 	/**
 		From interface mixin TextEncoderCommon
+		
+		@see <https://developer.mozilla.org/docs/Web/API/TextEncoder/encoding>
 	**/
 	var encoding(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextEncoder/TextEncoder>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextEncoder/encode>
+	**/
 	function encode(?input:String = ""):js.lib.Uint8Array;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextEncoder/encodeInto>
+	**/
 	function encodeInto(source:String, destination:js.lib.Uint8Array):TextEncoderEncodeIntoResult;
 }

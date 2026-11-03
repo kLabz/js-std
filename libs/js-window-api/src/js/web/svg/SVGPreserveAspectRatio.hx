@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGPreserveAspectRatio>
+**/
 @:native("SVGPreserveAspectRatio") extern class SVGPreserveAspectRatio {
 	static inline var SVG_PRESERVEASPECTRATIO_UNKNOWN : Int = 0;
 	static inline var SVG_PRESERVEASPECTRATIO_NONE : Int = 1;
@@ -39,6 +42,12 @@ package js.web.svg;
 	static inline var SVG_MEETORSLICE_UNKNOWN : Int = 0;
 	static inline var SVG_MEETORSLICE_MEET : Int = 1;
 	static inline var SVG_MEETORSLICE_SLICE : Int = 2;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPreserveAspectRatio/align>
+	**/
 	var align : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPreserveAspectRatio/meetOrSlice>
+	**/
 	var meetOrSlice : Int;
 }

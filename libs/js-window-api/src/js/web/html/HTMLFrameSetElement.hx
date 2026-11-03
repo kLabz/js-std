@@ -24,8 +24,13 @@
 
 package js.web.html;
 
-@:native("HTMLFrameSetElement") extern class HTMLFrameSetElement extends HTMLElement {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLFrameSetElement>
+**/
+@:native("HTMLFrameSetElement") @:deprecated extern class HTMLFrameSetElement extends HTMLElement {
+	@:deprecated
 	var cols : String;
+	@:deprecated
 	var rows : String;
 	/**
 		From interface mixin WindowEventHandlers

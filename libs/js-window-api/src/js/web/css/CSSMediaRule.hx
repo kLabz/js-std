@@ -24,7 +24,13 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSMediaRule>
+**/
 @:native("CSSMediaRule") extern class CSSMediaRule extends CSSConditionRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMediaRule/media>
+	**/
 	var media(default, null) : MediaList;
 	var matches(default, null) : Bool;
 }

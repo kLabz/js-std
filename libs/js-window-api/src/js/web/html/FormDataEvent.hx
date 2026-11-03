@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FormDataEvent>
+**/
 @:native("FormDataEvent") extern class FormDataEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FormDataEvent/formData>
+	**/
 	var formData(default, null) : js.web.net.FormData;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FormDataEvent/FormDataEvent>
+	**/
 	function new(type:String, eventInitDict:FormDataEventInit):Void;
 }

@@ -24,22 +24,56 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceElementTiming>
+**/
 @:native("PerformanceElementTiming") extern class PerformanceElementTiming extends PerformanceEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceElementTiming/renderTime>
+	**/
 	var renderTime(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceElementTiming/loadTime>
+	**/
 	var loadTime(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceElementTiming/intersectionRect>
+	**/
 	var intersectionRect(default, null) : js.web.dom.DOMRectReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceElementTiming/identifier>
+	**/
 	var identifier(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceElementTiming/naturalWidth>
+	**/
 	var naturalWidth(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceElementTiming/naturalHeight>
+	**/
 	var naturalHeight(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceElementTiming/element>
+	**/
 	var element(default, null) : Null<js.web.dom.Element>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceElementTiming/url>
+	**/
 	var url(default, null) : String;
 	/**
 		From interface mixin PaintTimingMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceElementTiming/paintTime>
 	**/
 	var paintTime(default, null) : DOMHighResTimeStamp;
 	/**
 		From interface mixin PaintTimingMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceElementTiming/presentationTime>
 	**/
 	var presentationTime(default, null) : Null<DOMHighResTimeStamp>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceElementTiming/toJSON>
+	**/
 	function toJSON():{ };
 }

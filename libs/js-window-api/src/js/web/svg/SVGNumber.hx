@@ -24,6 +24,12 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGNumber>
+**/
 @:native("SVGNumber") extern class SVGNumber {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGNumber/value>
+	**/
 	var value : Float;
 }

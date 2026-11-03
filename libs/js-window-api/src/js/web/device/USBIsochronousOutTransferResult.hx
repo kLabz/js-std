@@ -26,6 +26,8 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/USBIsochronousOutTransferResult>
 **/
 @:native("USBIsochronousOutTransferResult") extern class USBIsochronousOutTransferResult {
 	var packets(default, null) : Array<USBIsochronousOutTransferPacket>;

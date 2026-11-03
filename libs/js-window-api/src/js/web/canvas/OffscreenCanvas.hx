@@ -24,13 +24,34 @@
 
 package js.web.canvas;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/OffscreenCanvas>
+**/
 @:native("OffscreenCanvas") extern class OffscreenCanvas extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/width>
+	**/
 	var width : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/height>
+	**/
 	var height : Float;
 	var oncontextlost : js.web.html.EventHandler;
 	var oncontextrestored : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/OffscreenCanvas>
+	**/
 	function new(width:Float, height:Float):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/convertToBlob>
+	**/
 	function convertToBlob(?options:ImageEncodeOptions):js.lib.Promise<js.web.net.Blob>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/getContext>
+	**/
 	function getContext(contextId:OffscreenRenderingContextId, ?options:Any = null):Null<OffscreenRenderingContext>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/transferToImageBitmap>
+	**/
 	function transferToImageBitmap():ImageBitmap;
 }

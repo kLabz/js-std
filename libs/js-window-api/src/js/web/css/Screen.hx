@@ -24,20 +24,45 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Screen>
+**/
 @:native("Screen") extern class Screen {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Screen/availWidth>
+	**/
 	var availWidth(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Screen/availHeight>
+	**/
 	var availHeight(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Screen/width>
+	**/
 	var width(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Screen/height>
+	**/
 	var height(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Screen/colorDepth>
+	**/
 	var colorDepth(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Screen/pixelDepth>
+	**/
 	var pixelDepth(default, null) : Int;
 	/**
 		From partial interface in screen-orientation.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Screen/orientation>
 	**/
 	var orientation(default, null) : js.web.device.ScreenOrientation;
 	/**
 		From partial interface in window-management.idl
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Screen/isExtended>
 	**/
 	var isExtended(default, null) : Bool;
 	/**

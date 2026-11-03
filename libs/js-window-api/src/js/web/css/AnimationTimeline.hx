@@ -24,13 +24,20 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AnimationTimeline>
+**/
 @:native("AnimationTimeline") extern class AnimationTimeline {
 	/**
 		From partial interface in web-animations-2.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/AnimationTimeline/currentTime>
 	**/
 	var currentTime(default, null) : Null<CSSNumberish>;
 	/**
 		From partial interface in web-animations-2.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/AnimationTimeline/duration>
 	**/
 	var duration(default, null) : Null<CSSNumberish>;
 	/**

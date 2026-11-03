@@ -24,23 +24,74 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate>
+**/
 @:native("RTCIceCandidate") extern class RTCIceCandidate {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/candidate>
+	**/
 	var candidate(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/sdpMid>
+	**/
 	var sdpMid(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/sdpMLineIndex>
+	**/
 	var sdpMLineIndex(default, null) : Null<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/foundation>
+	**/
 	var foundation(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/component>
+	**/
 	var component(default, null) : Null<RTCIceComponent>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/priority>
+	**/
 	var priority(default, null) : Null<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/address>
+	**/
 	var address(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/protocol>
+	**/
 	var protocol(default, null) : Null<RTCIceProtocol>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/port>
+	**/
 	var port(default, null) : Null<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/type>
+	**/
 	var type(default, null) : Null<RTCIceCandidateType>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/tcpType>
+	**/
 	var tcpType(default, null) : Null<RTCIceTcpCandidateType>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/relatedAddress>
+	**/
 	var relatedAddress(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/relatedPort>
+	**/
 	var relatedPort(default, null) : Null<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/usernameFragment>
+	**/
 	var usernameFragment(default, null) : Null<String>;
 	var relayProtocol(default, null) : Null<RTCIceServerTransportProtocol>;
 	var url(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/RTCIceCandidate>
+	**/
 	function new(?candidateInitDict:RTCLocalIceCandidateInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/toJSON>
+	**/
 	function toJSON():RTCIceCandidateInit;
 }

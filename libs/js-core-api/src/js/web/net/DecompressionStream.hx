@@ -24,14 +24,24 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DecompressionStream>
+**/
 @:native("DecompressionStream") extern class DecompressionStream {
 	/**
 		From interface mixin GenericTransformStream
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DecompressionStream/readable>
 	**/
 	var readable(default, null) : ReadableStream;
 	/**
 		From interface mixin GenericTransformStream
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DecompressionStream/writable>
 	**/
 	var writable(default, null) : WritableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DecompressionStream/DecompressionStream>
+	**/
 	function new(format:CompressionFormat):Void;
 }

@@ -24,10 +24,25 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCSctpTransport>
+**/
 @:native("RTCSctpTransport") extern class RTCSctpTransport extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCSctpTransport/transport>
+	**/
 	var transport(default, null) : RTCDtlsTransport;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCSctpTransport/state>
+	**/
 	var state(default, null) : RTCSctpTransportState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCSctpTransport/maxMessageSize>
+	**/
 	var maxMessageSize(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCSctpTransport/maxChannels>
+	**/
 	var maxChannels(default, null) : Null<Int>;
 	var onstatechange : js.web.html.EventHandler;
 }

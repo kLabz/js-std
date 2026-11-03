@@ -24,7 +24,13 @@
 
 package js.web.misc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Permissions>
+**/
 @:native("Permissions") extern class Permissions {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Permissions/query>
+	**/
 	function query(permissionDesc:{ }):js.lib.Promise<PermissionStatus>;
 	/**
 		From partial interface in permissions-request.idl
@@ -32,6 +38,9 @@ package js.web.misc;
 	function request(permissionDesc:{ }):js.lib.Promise<PermissionStatus>;
 	/**
 		From partial interface in permissions-revoke.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Permissions/revoke>
 	**/
+	@:deprecated
 	function revoke(permissionDesc:{ }):js.lib.Promise<PermissionStatus>;
 }

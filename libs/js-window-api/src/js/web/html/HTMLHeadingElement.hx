@@ -24,9 +24,13 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLHeadingElement>
+**/
 @:native("HTMLHeadingElement") extern class HTMLHeadingElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var align : String;
 }

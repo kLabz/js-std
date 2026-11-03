@@ -26,10 +26,24 @@ package js.web.sw;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager>
 **/
 @:native("NavigationPreloadManager") extern class NavigationPreloadManager {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/disable>
+	**/
 	function disable():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/enable>
+	**/
 	function enable():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/getState>
+	**/
 	function getState():js.lib.Promise<NavigationPreloadState>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/setHeaderValue>
+	**/
 	function setHeaderValue(value:String):js.lib.Promise<Void>;
 }

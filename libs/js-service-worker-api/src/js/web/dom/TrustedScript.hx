@@ -24,7 +24,16 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TrustedScript>
+**/
 @:native("TrustedScript") extern class TrustedScript {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedScript/toJSON>
+	**/
 	function toJSON():String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TrustedScript/toString>
+	**/
 	function toString():String;
 }

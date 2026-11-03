@@ -24,9 +24,24 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CloseEvent>
+**/
 @:native("CloseEvent") extern class CloseEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CloseEvent/wasClean>
+	**/
 	var wasClean(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CloseEvent/code>
+	**/
 	var code(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CloseEvent/reason>
+	**/
 	var reason(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CloseEvent/CloseEvent>
+	**/
 	function new(type:String, ?eventInitDict:CloseEventInit):Void;
 }

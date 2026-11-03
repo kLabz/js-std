@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/EXT_texture_filter_anisotropic>
 **/
 @:native("EXT_texture_filter_anisotropic") extern class EXT_texture_filter_anisotropic {
 	static inline var TEXTURE_MAX_ANISOTROPY_EXT : GLenum = 0x84FE;

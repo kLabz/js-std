@@ -24,11 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SharedWorker>
+**/
 @:native("SharedWorker") extern class SharedWorker extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SharedWorker/port>
+	**/
 	var port(default, null) : MessagePort;
 	/**
 		From interface mixin AbstractWorker
 	**/
 	var onerror : EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SharedWorker/SharedWorker>
+	**/
 	function new(scriptURL:haxe.extern.EitherType<js.web.dom.TrustedScriptURL, String>, ?options:haxe.extern.EitherType<String, SharedWorkerOptions>):Void;
 }

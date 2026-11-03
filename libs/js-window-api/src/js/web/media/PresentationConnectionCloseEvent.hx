@@ -26,6 +26,8 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PresentationConnectionCloseEvent>
 **/
 @:native("PresentationConnectionCloseEvent") extern class PresentationConnectionCloseEvent extends js.web.dom.Event {
 	var reason(default, null) : PresentationConnectionCloseReason;

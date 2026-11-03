@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PictureInPictureEvent>
+**/
 @:native("PictureInPictureEvent") extern class PictureInPictureEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PictureInPictureEvent/pictureInPictureWindow>
+	**/
 	var pictureInPictureWindow(default, null) : PictureInPictureWindow;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PictureInPictureEvent/PictureInPictureEvent>
+	**/
 	function new(type:String, eventInitDict:PictureInPictureEventInit):Void;
 }

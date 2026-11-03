@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/OES_standard_derivatives>
 **/
 @:native("OES_standard_derivatives") extern class OES_standard_derivatives {
 	static inline var FRAGMENT_SHADER_DERIVATIVE_HINT_OES : GLenum = 0x8B8B;

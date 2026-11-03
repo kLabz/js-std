@@ -24,8 +24,20 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest>
+**/
 @:native("ReadableStreamBYOBRequest") extern class ReadableStreamBYOBRequest {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest/view>
+	**/
 	var view(default, null) : Null<js.lib.Uint8Array>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest/respond>
+	**/
 	function respond(bytesWritten:Float):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest/respondWithNewView>
+	**/
 	function respondWithNewView(view:js.lib.ArrayBufferView):Void;
 }

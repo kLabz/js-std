@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ContentVisibilityAutoStateChangeEvent>
+**/
 @:native("ContentVisibilityAutoStateChangeEvent") extern class ContentVisibilityAutoStateChangeEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContentVisibilityAutoStateChangeEvent/skipped>
+	**/
 	var skipped(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ContentVisibilityAutoStateChangeEvent/ContentVisibilityAutoStateChangeEvent>
+	**/
 	function new(type:String, ?eventInitDict:ContentVisibilityAutoStateChangeEventInit):Void;
 }

@@ -24,16 +24,54 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioListener>
+**/
 @:native("AudioListener") extern class AudioListener {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioListener/positionX>
+	**/
 	var positionX(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioListener/positionY>
+	**/
 	var positionY(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioListener/positionZ>
+	**/
 	var positionZ(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioListener/forwardX>
+	**/
 	var forwardX(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioListener/forwardY>
+	**/
 	var forwardY(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioListener/forwardZ>
+	**/
 	var forwardZ(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioListener/upX>
+	**/
 	var upX(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioListener/upY>
+	**/
 	var upY(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioListener/upZ>
+	**/
 	var upZ(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioListener/setOrientation>
+	**/
+	@:deprecated
 	function setOrientation(x:Float, y:Float, z:Float, xUp:Float, yUp:Float, zUp:Float):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioListener/setPosition>
+	**/
+	@:deprecated
 	function setPosition(x:Float, y:Float, z:Float):Void;
 }

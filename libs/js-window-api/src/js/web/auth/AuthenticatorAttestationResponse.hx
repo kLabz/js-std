@@ -26,11 +26,28 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse>
 **/
 @:native("AuthenticatorAttestationResponse") extern class AuthenticatorAttestationResponse extends AuthenticatorResponse {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/attestationObject>
+	**/
 	var attestationObject(default, null) : js.lib.ArrayBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/getAuthenticatorData>
+	**/
 	function getAuthenticatorData():js.lib.ArrayBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/getPublicKey>
+	**/
 	function getPublicKey():Null<js.lib.ArrayBuffer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/getPublicKeyAlgorithm>
+	**/
 	function getPublicKeyAlgorithm():COSEAlgorithmIdentifier;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/getTransports>
+	**/
 	function getTransports():Array<String>;
 }

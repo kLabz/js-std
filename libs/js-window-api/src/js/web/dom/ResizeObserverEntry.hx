@@ -24,10 +24,28 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry>
+**/
 @:native("ResizeObserverEntry") extern class ResizeObserverEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/target>
+	**/
 	var target(default, null) : Element;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/contentRect>
+	**/
 	var contentRect(default, null) : DOMRectReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/borderBoxSize>
+	**/
 	var borderBoxSize(default, null) : Array<ResizeObserverSize>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/contentBoxSize>
+	**/
 	var contentBoxSize(default, null) : Array<ResizeObserverSize>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/devicePixelContentBoxSize>
+	**/
 	var devicePixelContentBoxSize(default, null) : Array<ResizeObserverSize>;
 }

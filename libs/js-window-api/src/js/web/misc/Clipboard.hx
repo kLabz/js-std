@@ -26,10 +26,24 @@ package js.web.misc;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Clipboard>
 **/
 @:native("Clipboard") extern class Clipboard extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Clipboard/read>
+	**/
 	function read(?formats:ClipboardUnsanitizedFormats):js.lib.Promise<ClipboardItems>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Clipboard/readText>
+	**/
 	function readText():js.lib.Promise<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Clipboard/write>
+	**/
 	function write(data:ClipboardItems):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Clipboard/writeText>
+	**/
 	function writeText(data:String):js.lib.Promise<Void>;
 }

@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSMathMin>
+**/
 @:native("CSSMathMin") extern class CSSMathMin extends CSSMathValue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathMin/values>
+	**/
 	var values(default, null) : CSSNumericArray;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathMin/CSSMathMin>
+	**/
 	function new(args:haxe.Rest<CSSNumberish>):Void;
 }

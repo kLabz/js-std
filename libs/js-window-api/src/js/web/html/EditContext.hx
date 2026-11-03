@@ -24,22 +24,61 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/EditContext>
+**/
 @:native("EditContext") extern class EditContext extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EditContext/text>
+	**/
 	var text(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EditContext/selectionStart>
+	**/
 	var selectionStart(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EditContext/selectionEnd>
+	**/
 	var selectionEnd(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EditContext/characterBoundsRangeStart>
+	**/
 	var characterBoundsRangeStart(default, null) : Int;
 	var ontextupdate : EventHandler;
 	var ontextformatupdate : EventHandler;
 	var oncharacterboundsupdate : EventHandler;
 	var oncompositionstart : EventHandler;
 	var oncompositionend : EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EditContext/EditContext>
+	**/
 	function new(?options:EditContextInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EditContext/attachedElements>
+	**/
 	function attachedElements():Array<HTMLElement>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EditContext/characterBounds>
+	**/
 	function characterBounds():Array<js.web.dom.DOMRect>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EditContext/updateCharacterBounds>
+	**/
 	function updateCharacterBounds(rangeStart:Int, characterBounds:Array<js.web.dom.DOMRect>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EditContext/updateControlBounds>
+	**/
 	function updateControlBounds(controlBounds:js.web.dom.DOMRect):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EditContext/updateSelection>
+	**/
 	function updateSelection(start:Int, end:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EditContext/updateSelectionBounds>
+	**/
 	function updateSelectionBounds(selectionBounds:js.web.dom.DOMRect):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EditContext/updateText>
+	**/
 	function updateText(rangeStart:Int, rangeEnd:Int, text:String):Void;
 }

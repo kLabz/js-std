@@ -26,11 +26,28 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUCanvasContext>
 **/
 @:native("GPUCanvasContext") extern class GPUCanvasContext {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCanvasContext/canvas>
+	**/
 	var canvas(default, null) : js.web.canvas.OffscreenCanvas;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCanvasContext/configure>
+	**/
 	function configure(configuration:GPUCanvasConfiguration):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCanvasContext/getConfiguration>
+	**/
 	function getConfiguration():Null<GPUCanvasConfiguration>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCanvasContext/getCurrentTexture>
+	**/
 	function getCurrentTexture():GPUTexture;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUCanvasContext/unconfigure>
+	**/
 	function unconfigure():Void;
 }

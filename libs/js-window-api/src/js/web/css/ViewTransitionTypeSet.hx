@@ -24,6 +24,9 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ViewTransitionTypeSet>
+**/
 @:native("ViewTransitionTypeSet") extern class ViewTransitionTypeSet {
 	var size(default, null) : Int;
 	function add(value:String):ViewTransitionTypeSet;

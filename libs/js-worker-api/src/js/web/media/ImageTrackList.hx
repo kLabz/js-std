@@ -26,10 +26,24 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/ImageTrackList>
 **/
 @:native("ImageTrackList") extern class ImageTrackList implements ArrayAccess<ImageTrack> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageTrackList/ready>
+	**/
 	var ready(default, null) : js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageTrackList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageTrackList/selectedIndex>
+	**/
 	var selectedIndex(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageTrackList/selectedTrack>
+	**/
 	var selectedTrack(default, null) : Null<ImageTrack>;
 }

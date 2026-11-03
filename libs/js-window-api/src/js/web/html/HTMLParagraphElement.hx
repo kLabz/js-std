@@ -24,9 +24,13 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLParagraphElement>
+**/
 @:native("HTMLParagraphElement") extern class HTMLParagraphElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var align : String;
 }

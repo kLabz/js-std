@@ -24,7 +24,16 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TouchList>
+**/
 @:native("TouchList") extern class TouchList implements ArrayAccess<Null<Touch>> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TouchList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TouchList/item>
+	**/
 	function item(index:Int):Null<Touch>;
 }

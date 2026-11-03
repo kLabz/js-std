@@ -24,7 +24,16 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverSize>
+**/
 @:native("ResizeObserverSize") extern class ResizeObserverSize {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverSize/inlineSize>
+	**/
 	var inlineSize(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverSize/blockSize>
+	**/
 	var blockSize(default, null) : Float;
 }

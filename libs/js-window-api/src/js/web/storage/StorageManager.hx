@@ -26,13 +26,26 @@ package js.web.storage;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/StorageManager>
 **/
 @:native("StorageManager") extern class StorageManager {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageManager/estimate>
+	**/
 	function estimate():js.lib.Promise<StorageEstimate>;
 	/**
 		From partial interface in fs.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/StorageManager/getDirectory>
 	**/
 	function getDirectory():js.lib.Promise<FileSystemDirectoryHandle>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageManager/persist>
+	**/
 	function persist():js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageManager/persisted>
+	**/
 	function persisted():js.lib.Promise<Bool>;
 }

@@ -24,7 +24,16 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceMark>
+**/
 @:native("PerformanceMark") extern class PerformanceMark extends PerformanceEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceMark/detail>
+	**/
 	var detail(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceMark/PerformanceMark>
+	**/
 	function new(markName:String, ?markOptions:PerformanceMarkOptions):Void;
 }

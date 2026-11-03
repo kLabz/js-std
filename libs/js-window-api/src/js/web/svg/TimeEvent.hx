@@ -24,8 +24,20 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TimeEvent>
+**/
 @:native("TimeEvent") extern class TimeEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TimeEvent/view>
+	**/
 	var view(default, null) : Null<js.web.html.Window>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TimeEvent/detail>
+	**/
 	var detail(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TimeEvent/initTimeEvent>
+	**/
 	function initTimeEvent(typeArg:String, ?viewArg:Null<js.web.html.Window> = null, ?detailArg:Int = 0):Void;
 }

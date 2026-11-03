@@ -24,21 +24,72 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Touch>
+**/
 @:native("Touch") extern class Touch {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/identifier>
+	**/
 	var identifier(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/target>
+	**/
 	var target(default, null) : EventTarget;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/screenX>
+	**/
 	var screenX(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/screenY>
+	**/
 	var screenY(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/clientX>
+	**/
 	var clientX(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/clientY>
+	**/
 	var clientY(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/pageX>
+	**/
 	var pageX(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/pageY>
+	**/
 	var pageY(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/radiusX>
+	**/
 	var radiusX(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/radiusY>
+	**/
 	var radiusY(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/rotationAngle>
+	**/
 	var rotationAngle(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/force>
+	**/
 	var force(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/altitudeAngle>
+	**/
 	var altitudeAngle(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/azimuthAngle>
+	**/
 	var azimuthAngle(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/touchType>
+	**/
 	var touchType(default, null) : TouchType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Touch/Touch>
+	**/
 	function new(touchInitDict:TouchInit):Void;
 }

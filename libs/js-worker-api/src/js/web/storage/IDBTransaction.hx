@@ -24,16 +24,43 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/IDBTransaction>
+**/
 @:native("IDBTransaction") extern class IDBTransaction extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBTransaction/objectStoreNames>
+	**/
 	var objectStoreNames(default, null) : js.web.html.DOMStringList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBTransaction/mode>
+	**/
 	var mode(default, null) : IDBTransactionMode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBTransaction/durability>
+	**/
 	var durability(default, null) : IDBTransactionDurability;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBTransaction/db>
+	**/
 	var db(default, null) : IDBDatabase;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBTransaction/error>
+	**/
 	var error(default, null) : Null<js.web.dom.DOMException>;
 	var onabort : js.web.html.EventHandler;
 	var oncomplete : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBTransaction/abort>
+	**/
 	function abort():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBTransaction/commit>
+	**/
 	function commit():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBTransaction/objectStore>
+	**/
 	function objectStore(name:String):IDBObjectStore;
 }

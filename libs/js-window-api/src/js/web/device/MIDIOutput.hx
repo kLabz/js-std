@@ -26,8 +26,16 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/MIDIOutput>
 **/
 @:native("MIDIOutput") extern class MIDIOutput extends MIDIPort {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIOutput/clear>
+	**/
 	function clear():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIOutput/send>
+	**/
 	function send(data:Array<Int>, ?timestamp:js.web.perf.DOMHighResTimeStamp = 0):Void;
 }

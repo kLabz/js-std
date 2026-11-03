@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSRuleList>
+**/
 @:native("CSSRuleList") extern class CSSRuleList implements ArrayAccess<Null<CSSRule>> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSRuleList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSRuleList/item>
+	**/
 	function item(index:Int):Null<CSSRule>;
 }

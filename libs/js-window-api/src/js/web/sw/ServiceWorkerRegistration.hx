@@ -26,51 +26,95 @@ package js.web.sw;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration>
 **/
 @:native("ServiceWorkerRegistration") extern class ServiceWorkerRegistration extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/installing>
+	**/
 	var installing(default, null) : Null<ServiceWorker>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/waiting>
+	**/
 	var waiting(default, null) : Null<ServiceWorker>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/active>
+	**/
 	var active(default, null) : Null<ServiceWorker>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/navigationPreload>
+	**/
 	var navigationPreload(default, null) : NavigationPreloadManager;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/scope>
+	**/
 	var scope(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/updateViaCache>
+	**/
 	var updateViaCache(default, null) : ServiceWorkerUpdateViaCache;
 	var onupdatefound : js.web.html.EventHandler;
 	/**
 		From interface mixin PushManagerAttribute
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/pushManager>
 	**/
 	var pushManager(default, null) : PushManager;
 	/**
 		From partial interface in background-fetch.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/backgroundFetch>
 	**/
 	var backgroundFetch(default, null) : BackgroundFetchManager;
 	/**
 		From partial interface in background-sync.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/sync>
 	**/
 	var sync(default, null) : SyncManager;
 	/**
 		From partial interface in content-index.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/index>
 	**/
 	var index(default, null) : ContentIndex;
 	/**
 		From partial interface in cookiestore.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/cookies>
 	**/
 	var cookies(default, null) : js.web.storage.CookieStoreManager;
 	/**
 		From partial interface in periodic-background-sync.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/periodicSync>
 	**/
 	var periodicSync(default, null) : PeriodicSyncManager;
 	/**
 		From partial interface in web-based-payment-handler.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/paymentManager>
 	**/
 	var paymentManager(default, null) : PaymentManager;
 	/**
 		From partial interface in notifications.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/getNotifications>
 	**/
 	function getNotifications(?filter:GetNotificationOptions):js.lib.Promise<Array<Notification>>;
 	/**
 		From partial interface in notifications.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/showNotification>
 	**/
 	function showNotification(title:String, ?options:NotificationOptions):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/unregister>
+	**/
 	function unregister():js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/update>
+	**/
 	function update():js.lib.Promise<ServiceWorkerRegistration>;
 }

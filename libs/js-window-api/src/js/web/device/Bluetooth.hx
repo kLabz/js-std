@@ -26,6 +26,8 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Bluetooth>
 **/
 @:native("Bluetooth") extern class Bluetooth extends js.web.dom.EventTarget {
 	var onavailabilitychanged : js.web.html.EventHandler;
@@ -54,8 +56,17 @@ package js.web.device;
 		From interface mixin ServiceEventHandlers
 	**/
 	var onserviceremoved : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Bluetooth/getAvailability>
+	**/
 	function getAvailability():js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Bluetooth/getDevices>
+	**/
 	function getDevices():js.lib.Promise<Array<BluetoothDevice>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Bluetooth/requestDevice>
+	**/
 	function requestDevice(?options:RequestDeviceOptions):js.lib.Promise<BluetoothDevice>;
 	/**
 		From partial interface in bluetooth-scanning.idl

@@ -24,9 +24,24 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ResizeObserver>
+**/
 @:native("ResizeObserver") extern class ResizeObserver {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserver/ResizeObserver>
+	**/
 	function new(callback:ResizeObserverCallback):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserver/disconnect>
+	**/
 	function disconnect():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserver/observe>
+	**/
 	function observe(target:Element, ?options:ResizeObserverOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserver/unobserve>
+	**/
 	function unobserve(target:Element):Void;
 }

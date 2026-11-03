@@ -24,10 +24,28 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NavigationTransition>
+**/
 @:native("NavigationTransition") extern class NavigationTransition {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationTransition/navigationType>
+	**/
 	var navigationType(default, null) : NavigationType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationTransition/from>
+	**/
 	var from(default, null) : NavigationHistoryEntry;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationTransition/to>
+	**/
 	var to(default, null) : NavigationDestination;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationTransition/committed>
+	**/
 	var committed(default, null) : js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationTransition/finished>
+	**/
 	var finished(default, null) : js.lib.Promise<Void>;
 }

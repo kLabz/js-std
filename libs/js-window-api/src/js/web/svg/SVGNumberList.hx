@@ -24,14 +24,44 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGNumberList>
+**/
 @:native("SVGNumberList") extern class SVGNumberList implements ArrayAccess<SVGNumber> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGNumberList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGNumberList/numberOfItems>
+	**/
 	var numberOfItems(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGNumberList/appendItem>
+	**/
 	function appendItem(newItem:SVGNumber):SVGNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGNumberList/clear>
+	**/
 	function clear():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGNumberList/getItem>
+	**/
 	function getItem(index:Int):SVGNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGNumberList/initialize>
+	**/
 	function initialize(newItem:SVGNumber):SVGNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGNumberList/insertItemBefore>
+	**/
 	function insertItemBefore(newItem:SVGNumber, index:Int):SVGNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGNumberList/removeItem>
+	**/
 	function removeItem(index:Int):SVGNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGNumberList/replaceItem>
+	**/
 	function replaceItem(newItem:SVGNumber, index:Int):SVGNumber;
 }

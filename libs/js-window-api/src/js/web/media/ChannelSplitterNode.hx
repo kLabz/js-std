@@ -24,6 +24,12 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ChannelSplitterNode>
+**/
 @:native("ChannelSplitterNode") extern class ChannelSplitterNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ChannelSplitterNode/ChannelSplitterNode>
+	**/
 	function new(context:BaseAudioContext, ?options:ChannelSplitterOptions):Void;
 }

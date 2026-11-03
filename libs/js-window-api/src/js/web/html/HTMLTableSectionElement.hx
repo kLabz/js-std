@@ -24,24 +24,48 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement>
+**/
 @:native("HTMLTableSectionElement") extern class HTMLTableSectionElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/rows>
+	**/
 	var rows(default, null) : js.web.dom.HTMLCollection;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/align>
 	**/
+	@:deprecated
 	var align : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/ch>
 	**/
+	@:deprecated
 	var ch : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/chOff>
 	**/
+	@:deprecated
 	var chOff : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/vAlign>
 	**/
+	@:deprecated
 	var vAlign : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/deleteRow>
+	**/
 	function deleteRow(index:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/insertRow>
+	**/
 	function insertRow(?index:Int = -1):HTMLTableRowElement;
 }

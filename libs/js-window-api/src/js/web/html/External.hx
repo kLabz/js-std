@@ -24,7 +24,9 @@
 
 package js.web.html;
 
-@:native("External") extern class External {
+@:native("External") @:deprecated extern class External {
+	@:deprecated
 	function AddSearchProvider():Void;
+	@:deprecated
 	function IsSearchProviderInstalled():Void;
 }

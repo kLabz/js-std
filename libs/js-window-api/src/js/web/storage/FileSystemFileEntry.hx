@@ -24,6 +24,12 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FileSystemFileEntry>
+**/
 @:native("FileSystemFileEntry") extern class FileSystemFileEntry extends FileSystemEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemFileEntry/file>
+	**/
 	function file(successCallback:FileCallback, ?errorCallback:ErrorCallback):Void;
 }

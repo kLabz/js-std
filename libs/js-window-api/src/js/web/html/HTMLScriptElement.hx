@@ -24,29 +24,68 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLScriptElement>
+**/
 @:native("HTMLScriptElement") extern class HTMLScriptElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/type>
+	**/
 	var type : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/src>
+	**/
 	var src : haxe.extern.EitherType<js.web.dom.TrustedScriptURL, String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/noModule>
+	**/
 	var noModule : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/async>
+	**/
 	var async : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/defer>
+	**/
 	var defer : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/blocking>
+	**/
 	var blocking(default, null) : js.web.dom.DOMTokenList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/crossOrigin>
+	**/
 	var crossOrigin : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/referrerPolicy>
+	**/
 	var referrerPolicy : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/integrity>
+	**/
 	var integrity : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/fetchPriority>
+	**/
 	var fetchPriority : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/text>
+	**/
 	var text : haxe.extern.EitherType<js.web.dom.TrustedScript, String>;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var charset : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var event : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var htmlFor : String;
 	function supports(type:String):Bool;
 }

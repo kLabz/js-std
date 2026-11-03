@@ -24,9 +24,24 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MutationObserver>
+**/
 @:native("MutationObserver") extern class MutationObserver {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MutationObserver/MutationObserver>
+	**/
 	function new(callback:MutationCallback):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MutationObserver/disconnect>
+	**/
 	function disconnect():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MutationObserver/observe>
+	**/
 	function observe(target:Node, ?options:MutationObserverInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MutationObserver/takeRecords>
+	**/
 	function takeRecords():Array<MutationRecord>;
 }

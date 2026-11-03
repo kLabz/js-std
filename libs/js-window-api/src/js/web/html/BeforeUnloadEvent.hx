@@ -24,6 +24,9 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BeforeUnloadEvent>
+**/
 @:native("BeforeUnloadEvent") extern class BeforeUnloadEvent extends js.web.dom.Event {
 
 }

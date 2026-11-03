@@ -26,6 +26,8 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRLayer>
 **/
 @:native("XRLayer") extern class XRLayer extends js.web.dom.EventTarget {
 

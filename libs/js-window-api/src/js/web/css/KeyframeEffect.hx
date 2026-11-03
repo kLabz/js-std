@@ -24,16 +24,42 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/KeyframeEffect>
+**/
 @:native("KeyframeEffect") extern class KeyframeEffect extends AnimationEffect {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyframeEffect/target>
+	**/
 	var target : Null<js.web.dom.Element>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyframeEffect/pseudoElement>
+	**/
 	var pseudoElement : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyframeEffect/composite>
+	**/
 	var composite : CompositeOperation;
 	/**
 		From partial interface in web-animations-2.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/KeyframeEffect/iterationComposite>
 	**/
 	var iterationComposite : IterationCompositeOperation;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyframeEffect/KeyframeEffect>
+	**/
 	overload function new(source:KeyframeEffect):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyframeEffect/KeyframeEffect>
+	**/
 	overload function new(target:Null<js.web.dom.Element>, keyframes:Null<{ }>, ?options:haxe.extern.EitherType<Float, KeyframeEffectOptions>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyframeEffect/getKeyframes>
+	**/
 	function getKeyframes():Array<{ }>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/KeyframeEffect/setKeyframes>
+	**/
 	function setKeyframes(keyframes:Null<{ }>):Void;
 }

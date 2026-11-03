@@ -24,12 +24,26 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/File>
+**/
 @:native("File") extern class File extends Blob {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/File/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/File/lastModified>
+	**/
 	var lastModified(default, null) : Float;
 	/**
 		From partial interface in entries-api.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/File/webkitRelativePath>
 	**/
 	var webkitRelativePath(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/File/File>
+	**/
 	function new(fileBits:Array<BlobPart>, fileName:String, ?options:FilePropertyBag):Void;
 }

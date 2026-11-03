@@ -26,11 +26,28 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRRay>
 **/
 @:native("XRRay") extern class XRRay {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRRay/origin>
+	**/
 	var origin(default, null) : js.web.dom.DOMPointReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRRay/direction>
+	**/
 	var direction(default, null) : js.web.dom.DOMPointReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRRay/matrix>
+	**/
 	var matrix(default, null) : js.lib.Float32Array;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRRay/XRRay>
+	**/
 	overload function new(transform:XRRigidTransform):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRRay/XRRay>
+	**/
 	overload function new(?origin:js.web.dom.DOMPointInit, ?direction:XRRayDirectionInit):Void;
 }

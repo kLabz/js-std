@@ -24,7 +24,16 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchEvent>
+**/
 @:native("BackgroundFetchEvent") extern class BackgroundFetchEvent extends ExtendableEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchEvent/registration>
+	**/
 	var registration(default, null) : BackgroundFetchRegistration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchEvent/BackgroundFetchEvent>
+	**/
 	function new(type:String, init:BackgroundFetchEventInit):Void;
 }

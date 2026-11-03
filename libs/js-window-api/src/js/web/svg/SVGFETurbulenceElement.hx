@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement>
+**/
 @:native("SVGFETurbulenceElement") extern class SVGFETurbulenceElement extends SVGElement {
 	static inline var SVG_TURBULENCE_TYPE_UNKNOWN : Int = 0;
 	static inline var SVG_TURBULENCE_TYPE_FRACTALNOISE : Int = 1;
@@ -31,30 +34,58 @@ package js.web.svg;
 	static inline var SVG_STITCHTYPE_UNKNOWN : Int = 0;
 	static inline var SVG_STITCHTYPE_STITCH : Int = 1;
 	static inline var SVG_STITCHTYPE_NOSTITCH : Int = 2;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/baseFrequencyX>
+	**/
 	var baseFrequencyX(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/baseFrequencyY>
+	**/
 	var baseFrequencyY(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/numOctaves>
+	**/
 	var numOctaves(default, null) : SVGAnimatedInteger;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/seed>
+	**/
 	var seed(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/stitchTiles>
+	**/
 	var stitchTiles(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/type>
+	**/
 	var type(default, null) : SVGAnimatedEnumeration;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFETurbulenceElement/result>
 	**/
 	var result(default, null) : SVGAnimatedString;
 }

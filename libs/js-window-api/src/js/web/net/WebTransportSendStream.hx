@@ -26,10 +26,24 @@ package js.web.net;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WebTransportSendStream>
 **/
 @:native("WebTransportSendStream") extern class WebTransportSendStream extends WritableStream {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportSendStream/sendGroup>
+	**/
 	var sendGroup : Null<WebTransportSendGroup>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportSendStream/sendOrder>
+	**/
 	var sendOrder : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportSendStream/getStats>
+	**/
 	function getStats():js.lib.Promise<WebTransportSendStreamStats>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportSendStream/getWriter>
+	**/
 	function getWriter():WebTransportWriter;
 }

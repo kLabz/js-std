@@ -24,11 +24,32 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement>
+**/
 @:native("SVGRadialGradientElement") extern class SVGRadialGradientElement extends SVGGradientElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement/cx>
+	**/
 	var cx(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement/cy>
+	**/
 	var cy(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement/r>
+	**/
 	var r(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement/fx>
+	**/
 	var fx(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement/fy>
+	**/
 	var fy(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement/fr>
+	**/
 	var fr(default, null) : SVGAnimatedLength;
 }

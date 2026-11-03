@@ -24,34 +24,62 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFEGaussianBlurElement>
+**/
 @:native("SVGFEGaussianBlurElement") extern class SVGFEGaussianBlurElement extends SVGElement {
 	static inline var SVG_EDGEMODE_UNKNOWN : Int = 0;
 	static inline var SVG_EDGEMODE_DUPLICATE : Int = 1;
 	static inline var SVG_EDGEMODE_WRAP : Int = 2;
 	static inline var SVG_EDGEMODE_NONE : Int = 3;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEGaussianBlurElement/in1>
+	**/
 	var in1(default, null) : SVGAnimatedString;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEGaussianBlurElement/stdDeviationX>
+	**/
 	var stdDeviationX(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEGaussianBlurElement/stdDeviationY>
+	**/
 	var stdDeviationY(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEGaussianBlurElement/edgeMode>
+	**/
 	var edgeMode(default, null) : SVGAnimatedEnumeration;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEGaussianBlurElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEGaussianBlurElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEGaussianBlurElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEGaussianBlurElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEGaussianBlurElement/result>
 	**/
 	var result(default, null) : SVGAnimatedString;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEGaussianBlurElement/setStdDeviation>
+	**/
 	function setStdDeviation(stdDeviationX:Float, stdDeviationY:Float):Void;
 }

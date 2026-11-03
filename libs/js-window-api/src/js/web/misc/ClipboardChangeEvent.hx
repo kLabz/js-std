@@ -24,8 +24,20 @@
 
 package js.web.misc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ClipboardChangeEvent>
+**/
 @:native("ClipboardChangeEvent") extern class ClipboardChangeEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ClipboardChangeEvent/types>
+	**/
 	var types(default, null) : Array<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ClipboardChangeEvent/changeId>
+	**/
 	var changeId(default, null) : js.lib.BigInt;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ClipboardChangeEvent/ClipboardChangeEvent>
+	**/
 	function new(type:String, ?eventInitDict:ClipboardChangeEventInit):Void;
 }

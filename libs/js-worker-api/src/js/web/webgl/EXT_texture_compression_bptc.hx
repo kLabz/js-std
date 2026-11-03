@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/EXT_texture_compression_bptc>
 **/
 @:native("EXT_texture_compression_bptc") extern class EXT_texture_compression_bptc {
 	static inline var COMPRESSED_RGBA_BPTC_UNORM_EXT : GLenum = 0x8E8C;

@@ -24,12 +24,36 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLMeterElement>
+**/
 @:native("HTMLMeterElement") extern class HTMLMeterElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMeterElement/value>
+	**/
 	var value : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMeterElement/min>
+	**/
 	var min : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMeterElement/max>
+	**/
 	var max : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMeterElement/low>
+	**/
 	var low : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMeterElement/high>
+	**/
 	var high : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMeterElement/optimum>
+	**/
 	var optimum : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLMeterElement/labels>
+	**/
 	var labels(default, null) : js.web.dom.NodeList;
 }

@@ -26,9 +26,20 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEventAcceleration>
 **/
 @:native("DeviceMotionEventAcceleration") extern class DeviceMotionEventAcceleration {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEventAcceleration/x>
+	**/
 	var x(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEventAcceleration/y>
+	**/
 	var y(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEventAcceleration/z>
+	**/
 	var z(default, null) : Null<Float>;
 }

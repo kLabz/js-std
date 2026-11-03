@@ -24,27 +24,70 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioContext>
+**/
 @:native("AudioContext") extern class AudioContext extends BaseAudioContext {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/baseLatency>
+	**/
 	var baseLatency(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/outputLatency>
+	**/
 	var outputLatency(default, null) : Float;
 	/**
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/sinkId>
 	**/
 	var sinkId(default, null) : haxe.extern.EitherType<String, AudioSinkInfo>;
 	var onsinkchange : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/playbackStats>
+	**/
 	var playbackStats(default, null) : AudioPlaybackStats;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/AudioContext>
+	**/
 	function new(?contextOptions:AudioContextOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/close>
+	**/
 	function close():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/createMediaElementSource>
+	**/
 	function createMediaElementSource(mediaElement:js.web.html.HTMLMediaElement):MediaElementAudioSourceNode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/createMediaStreamDestination>
+	**/
 	function createMediaStreamDestination():MediaStreamAudioDestinationNode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/createMediaStreamSource>
+	**/
 	function createMediaStreamSource(mediaStream:MediaStream):MediaStreamAudioSourceNode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/createMediaStreamTrackSource>
+	**/
 	function createMediaStreamTrackSource(mediaStreamTrack:MediaStreamTrack):MediaStreamTrackAudioSourceNode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/getOutputTimestamp>
+	**/
 	function getOutputTimestamp():AudioTimestamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/resume>
+	**/
 	function resume():js.lib.Promise<Void>;
 	/**
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/setSinkId>
 	**/
 	function setSinkId(sinkId:haxe.extern.EitherType<String, AudioSinkOptions>):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/suspend>
+	**/
 	function suspend():js.lib.Promise<Void>;
 }

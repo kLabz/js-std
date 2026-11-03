@@ -26,7 +26,12 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WakeLock>
 **/
 @:native("WakeLock") extern class WakeLock {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WakeLock/request>
+	**/
 	function request(?type:WakeLockType = WakeLockType.SCREEN):js.lib.Promise<WakeLockSentinel>;
 }

@@ -26,15 +26,41 @@ package js.web.storage;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/CookieStore>
 **/
 @:native("CookieStore") extern class CookieStore extends js.web.dom.EventTarget {
 	var onchange : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/delete>
+	**/
 	overload function delete(name:String):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/delete>
+	**/
 	overload function delete(options:CookieStoreDeleteOptions):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/get>
+	**/
 	overload function get(name:String):js.lib.Promise<Null<CookieListItem>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/get>
+	**/
 	overload function get(?options:CookieStoreGetOptions):js.lib.Promise<Null<CookieListItem>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/getAll>
+	**/
 	overload function getAll(name:String):js.lib.Promise<CookieList>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/getAll>
+	**/
 	overload function getAll(?options:CookieStoreGetOptions):js.lib.Promise<CookieList>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/set>
+	**/
 	overload function set(name:String, value:String):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/set>
+	**/
 	overload function set(options:CookieInit):js.lib.Promise<Void>;
 }

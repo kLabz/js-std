@@ -24,10 +24,28 @@
 
 package js.web.misc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NavigatorUAData>
+**/
 @:native("NavigatorUAData") extern class NavigatorUAData {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigatorUAData/brands>
+	**/
 	var brands(default, null) : Array<NavigatorUABrandVersion>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigatorUAData/mobile>
+	**/
 	var mobile(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigatorUAData/platform>
+	**/
 	var platform(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigatorUAData/getHighEntropyValues>
+	**/
 	function getHighEntropyValues(hints:Array<String>):js.lib.Promise<UADataValues>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigatorUAData/toJSON>
+	**/
 	function toJSON():UALowEntropyJSON;
 }

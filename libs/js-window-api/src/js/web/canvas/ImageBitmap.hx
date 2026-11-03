@@ -24,8 +24,20 @@
 
 package js.web.canvas;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ImageBitmap>
+**/
 @:native("ImageBitmap") extern class ImageBitmap {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageBitmap/width>
+	**/
 	var width(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageBitmap/height>
+	**/
 	var height(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageBitmap/close>
+	**/
 	function close():Void;
 }

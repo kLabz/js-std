@@ -24,19 +24,49 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SourceBuffer>
+**/
 @:native("SourceBuffer") extern class SourceBuffer extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SourceBuffer/mode>
+	**/
 	var mode : AppendMode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SourceBuffer/updating>
+	**/
 	var updating(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SourceBuffer/timestampOffset>
+	**/
 	var timestampOffset : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SourceBuffer/appendWindowStart>
+	**/
 	var appendWindowStart : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SourceBuffer/appendWindowEnd>
+	**/
 	var appendWindowEnd : Float;
 	var onupdatestart : js.web.html.EventHandler;
 	var onupdate : js.web.html.EventHandler;
 	var onupdateend : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
 	var onabort : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SourceBuffer/abort>
+	**/
 	function abort():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SourceBuffer/appendBuffer>
+	**/
 	function appendBuffer(data:js.web.dom.BufferSource):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SourceBuffer/changeType>
+	**/
 	function changeType(type:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SourceBuffer/remove>
+	**/
 	function remove(start:Float, end:Float):Void;
 }

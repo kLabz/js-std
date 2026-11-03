@@ -24,16 +24,40 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase>
+**/
 @:native("IDBDatabase") extern class IDBDatabase extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase/version>
+	**/
 	var version(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase/objectStoreNames>
+	**/
 	var objectStoreNames(default, null) : js.web.html.DOMStringList;
 	var onabort : js.web.html.EventHandler;
 	var onclose : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
 	var onversionchange : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase/createObjectStore>
+	**/
 	function createObjectStore(name:String, ?options:IDBObjectStoreParameters):IDBObjectStore;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase/deleteObjectStore>
+	**/
 	function deleteObjectStore(name:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase/transaction>
+	**/
 	function transaction(storeNames:haxe.extern.EitherType<String, Array<String>>, ?mode:IDBTransactionMode = IDBTransactionMode.READONLY, ?options:IDBTransactionOptions):IDBTransaction;
 }

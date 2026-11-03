@@ -26,8 +26,16 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_lose_context>
 **/
 @:native("WEBGL_lose_context") extern class WEBGL_lose_context {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_lose_context/loseContext>
+	**/
 	function loseContext():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_lose_context/restoreContext>
+	**/
 	function restoreContext():Void;
 }

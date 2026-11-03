@@ -26,6 +26,8 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WGSLLanguageFeatures>
 **/
 @:native("WGSLLanguageFeatures") extern class WGSLLanguageFeatures {
 	var size(default, null) : Int;

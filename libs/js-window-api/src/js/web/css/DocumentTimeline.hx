@@ -24,6 +24,12 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DocumentTimeline>
+**/
 @:native("DocumentTimeline") extern class DocumentTimeline extends AnimationTimeline {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentTimeline/DocumentTimeline>
+	**/
 	function new(?options:DocumentTimelineOptions):Void;
 }

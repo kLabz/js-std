@@ -24,21 +24,60 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Navigation>
+**/
 @:native("Navigation") extern class Navigation extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Navigation/currentEntry>
+	**/
 	var currentEntry(default, null) : Null<NavigationHistoryEntry>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Navigation/transition>
+	**/
 	var transition(default, null) : Null<NavigationTransition>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Navigation/activation>
+	**/
 	var activation(default, null) : Null<NavigationActivation>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Navigation/canGoBack>
+	**/
 	var canGoBack(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Navigation/canGoForward>
+	**/
 	var canGoForward(default, null) : Bool;
 	var onnavigate : EventHandler;
 	var onnavigatesuccess : EventHandler;
 	var onnavigateerror : EventHandler;
 	var oncurrententrychange : EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Navigation/back>
+	**/
 	function back(?options:NavigationOptions):NavigationResult;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Navigation/entries>
+	**/
 	function entries():Array<NavigationHistoryEntry>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Navigation/forward>
+	**/
 	function forward(?options:NavigationOptions):NavigationResult;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Navigation/navigate>
+	**/
 	function navigate(url:String, ?options:NavigationNavigateOptions):NavigationResult;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Navigation/reload>
+	**/
 	function reload(?options:NavigationReloadOptions):NavigationResult;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Navigation/traverseTo>
+	**/
 	function traverseTo(key:String, ?options:NavigationOptions):NavigationResult;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Navigation/updateCurrentEntry>
+	**/
 	function updateCurrentEntry(options:NavigationUpdateCurrentEntryOptions):Void;
 }

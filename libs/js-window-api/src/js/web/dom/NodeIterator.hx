@@ -24,13 +24,41 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NodeIterator>
+**/
 @:native("NodeIterator") extern class NodeIterator {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NodeIterator/root>
+	**/
 	var root(default, null) : Node;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NodeIterator/referenceNode>
+	**/
 	var referenceNode(default, null) : Node;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NodeIterator/pointerBeforeReferenceNode>
+	**/
 	var pointerBeforeReferenceNode(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NodeIterator/whatToShow>
+	**/
 	var whatToShow(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NodeIterator/filter>
+	**/
 	var filter(default, null) : Null<NodeFilter>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NodeIterator/detach>
+	**/
+	@:deprecated
 	function detach():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NodeIterator/nextNode>
+	**/
 	function nextNode():Null<Node>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NodeIterator/previousNode>
+	**/
 	function previousNode():Null<Node>;
 }

@@ -26,9 +26,20 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/MediaKeyMessageEvent>
 **/
 @:native("MediaKeyMessageEvent") extern class MediaKeyMessageEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeyMessageEvent/messageType>
+	**/
 	var messageType(default, null) : MediaKeyMessageType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeyMessageEvent/message>
+	**/
 	var message(default, null) : js.lib.ArrayBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeyMessageEvent/MediaKeyMessageEvent>
+	**/
 	function new(type:String, eventInitDict:MediaKeyMessageEventInit):Void;
 }

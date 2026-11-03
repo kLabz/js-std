@@ -26,7 +26,12 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_debug_shaders>
 **/
 @:native("WEBGL_debug_shaders") extern class WEBGL_debug_shaders {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_debug_shaders/getTranslatedShaderSource>
+	**/
 	function getTranslatedShaderSource(shader:WebGLShader):String;
 }

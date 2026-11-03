@@ -24,7 +24,16 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/IIRFilterNode>
+**/
 @:native("IIRFilterNode") extern class IIRFilterNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IIRFilterNode/IIRFilterNode>
+	**/
 	function new(context:BaseAudioContext, options:IIRFilterOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IIRFilterNode/getFrequencyResponse>
+	**/
 	function getFrequencyResponse(frequencyHz:js.lib.Float32Array, magResponse:js.lib.Float32Array, phaseResponse:js.lib.Float32Array):Void;
 }

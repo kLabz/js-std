@@ -24,9 +24,13 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLBRElement>
+**/
 @:native("HTMLBRElement") extern class HTMLBRElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var clear : String;
 }

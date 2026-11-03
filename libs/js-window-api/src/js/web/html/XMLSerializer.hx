@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XMLSerializer>
+**/
 @:native("XMLSerializer") extern class XMLSerializer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLSerializer/XMLSerializer>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XMLSerializer/serializeToString>
+	**/
 	function serializeToString(root:js.web.dom.Node):String;
 }

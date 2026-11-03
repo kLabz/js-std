@@ -24,11 +24,23 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AbortSignal>
+**/
 @:native("AbortSignal") extern class AbortSignal extends EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/aborted>
+	**/
 	var aborted(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/reason>
+	**/
 	var reason(default, null) : Any;
 	var onabort : js.web.html.EventHandler;
 	function abort(?reason:Any):AbortSignal;
 	function any(signals:Array<AbortSignal>):AbortSignal;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/throwIfAborted>
+	**/
 	function throwIfAborted():Void;
 }

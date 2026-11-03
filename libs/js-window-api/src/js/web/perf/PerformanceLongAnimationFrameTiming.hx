@@ -24,21 +24,46 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceLongAnimationFrameTiming>
+**/
 @:native("PerformanceLongAnimationFrameTiming") extern class PerformanceLongAnimationFrameTiming extends PerformanceEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceLongAnimationFrameTiming/renderStart>
+	**/
 	var renderStart(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceLongAnimationFrameTiming/styleAndLayoutStart>
+	**/
 	var styleAndLayoutStart(default, null) : DOMHighResTimeStamp;
 	var styleDuration(default, null) : DOMHighResTimeStamp;
 	var layoutDuration(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceLongAnimationFrameTiming/blockingDuration>
+	**/
 	var blockingDuration(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceLongAnimationFrameTiming/firstUIEventTimestamp>
+	**/
 	var firstUIEventTimestamp(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceLongAnimationFrameTiming/scripts>
+	**/
 	var scripts(default, null) : Array<PerformanceScriptTiming>;
 	/**
 		From interface mixin PaintTimingMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceLongAnimationFrameTiming/paintTime>
 	**/
 	var paintTime(default, null) : DOMHighResTimeStamp;
 	/**
 		From interface mixin PaintTimingMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceLongAnimationFrameTiming/presentationTime>
 	**/
 	var presentationTime(default, null) : Null<DOMHighResTimeStamp>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceLongAnimationFrameTiming/toJSON>
+	**/
 	function toJSON():{ };
 }

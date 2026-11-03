@@ -24,16 +24,32 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultReader>
+**/
 @:native("ReadableStreamDefaultReader") extern class ReadableStreamDefaultReader {
 	/**
 		From interface mixin ReadableStreamGenericReader
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultReader/closed>
 	**/
 	var closed(default, null) : js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultReader/ReadableStreamDefaultReader>
+	**/
 	function new(stream:ReadableStream):Void;
 	/**
 		From interface mixin ReadableStreamGenericReader
+		
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultReader/cancel>
 	**/
 	function cancel(?reason:Any):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultReader/read>
+	**/
 	function read():js.lib.Promise<ReadableStreamReadResult>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultReader/releaseLock>
+	**/
 	function releaseLock():Void;
 }

@@ -24,14 +24,44 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Blob>
+**/
 @:native("Blob") extern class Blob {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Blob/size>
+	**/
 	var size(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Blob/type>
+	**/
 	var type(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Blob/Blob>
+	**/
 	function new(?blobParts:Array<BlobPart>, ?options:BlobPropertyBag):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Blob/arrayBuffer>
+	**/
 	function arrayBuffer():js.lib.Promise<js.lib.ArrayBuffer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Blob/bytes>
+	**/
 	function bytes():js.lib.Promise<js.lib.Uint8Array>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Blob/slice>
+	**/
 	function slice(?start:Float, ?end:Float, ?contentType:String):Blob;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Blob/stream>
+	**/
 	function stream():ReadableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Blob/text>
+	**/
 	function text():js.lib.Promise<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Blob/textStream>
+	**/
 	function textStream():ReadableStream;
 }

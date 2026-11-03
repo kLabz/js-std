@@ -24,8 +24,20 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TransformStream>
+**/
 @:native("TransformStream") extern class TransformStream {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TransformStream/readable>
+	**/
 	var readable(default, null) : ReadableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TransformStream/writable>
+	**/
 	var writable(default, null) : WritableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TransformStream/TransformStream>
+	**/
 	function new(?transformer:{ }, ?writableStrategy:QueuingStrategy, ?readableStrategy:QueuingStrategy):Void;
 }

@@ -24,7 +24,16 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/InstallEvent>
+**/
 @:native("InstallEvent") extern class InstallEvent extends ExtendableEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/InstallEvent/InstallEvent>
+	**/
 	function new(type:String, ?eventInitDict:ExtendableEventInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/InstallEvent/addRoutes>
+	**/
 	function addRoutes(rules:haxe.extern.EitherType<RouterRule, Array<RouterRule>>):js.lib.Promise<Void>;
 }

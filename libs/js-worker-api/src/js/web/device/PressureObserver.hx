@@ -26,12 +26,32 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PressureObserver>
 **/
 @:native("PressureObserver") extern class PressureObserver {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PressureObserver/knownSources_static>
+	**/
 	static var knownSources(default, null) : Array<PressureSource>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PressureObserver/PressureObserver>
+	**/
 	function new(callback:PressureUpdateCallback):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PressureObserver/disconnect>
+	**/
 	function disconnect():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PressureObserver/observe>
+	**/
 	function observe(source:PressureSource, ?options:PressureObserverOptions):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PressureObserver/takeRecords>
+	**/
 	function takeRecords():Array<PressureRecord>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PressureObserver/unobserve>
+	**/
 	function unobserve(source:PressureSource):Void;
 }

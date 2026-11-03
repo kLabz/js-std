@@ -24,11 +24,32 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FileSystemEntry>
+**/
 @:native("FileSystemEntry") extern class FileSystemEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemEntry/isFile>
+	**/
 	var isFile(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemEntry/isDirectory>
+	**/
 	var isDirectory(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemEntry/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemEntry/fullPath>
+	**/
 	var fullPath(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemEntry/filesystem>
+	**/
 	var filesystem(default, null) : FileSystem;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemEntry/getParent>
+	**/
 	function getParent(?successCallback:FileSystemEntryCallback, ?errorCallback:ErrorCallback):Void;
 }

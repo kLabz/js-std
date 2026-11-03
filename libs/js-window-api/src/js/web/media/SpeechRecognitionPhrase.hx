@@ -26,9 +26,20 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionPhrase>
 **/
 @:native("SpeechRecognitionPhrase") extern class SpeechRecognitionPhrase {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionPhrase/phrase>
+	**/
 	var phrase(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionPhrase/boost>
+	**/
 	var boost(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionPhrase/SpeechRecognitionPhrase>
+	**/
 	function new(phrase:String, ?boost:Float = 1.0):Void;
 }

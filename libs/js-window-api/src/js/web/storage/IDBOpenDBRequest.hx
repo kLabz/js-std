@@ -24,6 +24,9 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/IDBOpenDBRequest>
+**/
 @:native("IDBOpenDBRequest") extern class IDBOpenDBRequest extends IDBRequest {
 	var onblocked : js.web.html.EventHandler;
 	var onupgradeneeded : js.web.html.EventHandler;

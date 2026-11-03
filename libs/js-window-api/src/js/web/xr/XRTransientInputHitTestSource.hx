@@ -26,7 +26,12 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestSource>
 **/
 @:native("XRTransientInputHitTestSource") extern class XRTransientInputHitTestSource {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestSource/cancel>
+	**/
 	function cancel():Void;
 }

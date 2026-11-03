@@ -26,8 +26,16 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRLayerEvent>
 **/
 @:native("XRLayerEvent") extern class XRLayerEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRLayerEvent/layer>
+	**/
 	var layer(default, null) : XRLayer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRLayerEvent/XRLayerEvent>
+	**/
 	function new(type:String, eventInitDict:XRLayerEventInit):Void;
 }

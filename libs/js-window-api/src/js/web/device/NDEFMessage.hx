@@ -26,8 +26,16 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/NDEFMessage>
 **/
 @:native("NDEFMessage") extern class NDEFMessage {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFMessage/records>
+	**/
 	var records(default, null) : Array<NDEFRecord>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFMessage/NDEFMessage>
+	**/
 	function new(messageInit:NDEFMessageInit):Void;
 }

@@ -24,10 +24,25 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XRQuadLayer>
+**/
 @:native("XRQuadLayer") extern class XRQuadLayer extends XRCompositionLayer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRQuadLayer/space>
+	**/
 	var space : XRSpace;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRQuadLayer/transform>
+	**/
 	var transform : XRRigidTransform;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRQuadLayer/width>
+	**/
 	var width : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRQuadLayer/height>
+	**/
 	var height : Float;
 	var onredraw : js.web.html.EventHandler;
 }

@@ -24,9 +24,25 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality>
+**/
 @:native("VideoPlaybackQuality") extern class VideoPlaybackQuality {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/creationTime>
+	**/
 	var creationTime(default, null) : js.web.perf.DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/droppedVideoFrames>
+	**/
 	var droppedVideoFrames(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/totalVideoFrames>
+	**/
 	var totalVideoFrames(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/corruptedVideoFrames>
+	**/
+	@:deprecated
 	var corruptedVideoFrames(default, null) : Int;
 }

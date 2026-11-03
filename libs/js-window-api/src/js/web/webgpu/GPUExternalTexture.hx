@@ -26,10 +26,14 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUExternalTexture>
 **/
 @:native("GPUExternalTexture") extern class GPUExternalTexture {
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUExternalTexture/label>
 	**/
 	var label : String;
 }

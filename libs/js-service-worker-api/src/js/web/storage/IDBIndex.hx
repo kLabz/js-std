@@ -24,18 +24,60 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/IDBIndex>
+**/
 @:native("IDBIndex") extern class IDBIndex {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/name>
+	**/
 	var name : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/objectStore>
+	**/
 	var objectStore(default, null) : IDBObjectStore;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/keyPath>
+	**/
 	var keyPath(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/multiEntry>
+	**/
 	var multiEntry(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/unique>
+	**/
 	var unique(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/count>
+	**/
 	function count(?query:Any):IDBRequest;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/get>
+	**/
 	function get(query:Any):IDBRequest;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/getAll>
+	**/
 	function getAll(?queryOrOptions:Any, ?count:Int):IDBRequest;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/getAllKeys>
+	**/
 	function getAllKeys(?queryOrOptions:Any, ?count:Int):IDBRequest;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/getAllRecords>
+	**/
 	function getAllRecords(?options:IDBGetAllOptions):IDBRequest;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/getKey>
+	**/
 	function getKey(query:Any):IDBRequest;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/openCursor>
+	**/
 	function openCursor(?query:Any, ?direction:IDBCursorDirection = IDBCursorDirection.NEXT):IDBRequest;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBIndex/openKeyCursor>
+	**/
 	function openKeyCursor(?query:Any, ?direction:IDBCursorDirection = IDBCursorDirection.NEXT):IDBRequest;
 }

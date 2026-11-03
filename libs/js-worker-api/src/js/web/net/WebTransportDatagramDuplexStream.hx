@@ -26,13 +26,30 @@ package js.web.net;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramDuplexStream>
 **/
 @:native("WebTransportDatagramDuplexStream") extern class WebTransportDatagramDuplexStream {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramDuplexStream/readable>
+	**/
 	var readable(default, null) : ReadableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramDuplexStream/maxDatagramSize>
+	**/
 	var maxDatagramSize(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramDuplexStream/incomingMaxAge>
+	**/
 	var incomingMaxAge : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramDuplexStream/outgoingMaxAge>
+	**/
 	var outgoingMaxAge : Null<Float>;
 	var incomingMaxBufferedDatagrams : Int;
 	var outgoingMaxBufferedDatagrams : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramDuplexStream/createWritable>
+	**/
 	function createWritable(?options:WebTransportSendOptions):WebTransportDatagramsWritable;
 }

@@ -26,8 +26,16 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/HIDConnectionEvent>
 **/
 @:native("HIDConnectionEvent") extern class HIDConnectionEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDConnectionEvent/device>
+	**/
 	var device(default, null) : HIDDevice;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDConnectionEvent/HIDConnectionEvent>
+	**/
 	function new(type:String, eventInitDict:HIDConnectionEventInit):Void;
 }

@@ -26,8 +26,13 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/DevicePosture>
 **/
 @:native("DevicePosture") extern class DevicePosture extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DevicePosture/type>
+	**/
 	var type(default, null) : DevicePostureType;
 	var onchange : js.web.html.EventHandler;
 }

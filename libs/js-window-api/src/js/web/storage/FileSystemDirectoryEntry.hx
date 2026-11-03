@@ -24,8 +24,20 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryEntry>
+**/
 @:native("FileSystemDirectoryEntry") extern class FileSystemDirectoryEntry extends FileSystemEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryEntry/createReader>
+	**/
 	function createReader():FileSystemDirectoryReader;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryEntry/getDirectory>
+	**/
 	function getDirectory(?path:Null<String>, ?options:FileSystemFlags, ?successCallback:FileSystemEntryCallback, ?errorCallback:ErrorCallback):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryEntry/getFile>
+	**/
 	function getFile(?path:Null<String>, ?options:FileSystemFlags, ?successCallback:FileSystemEntryCallback, ?errorCallback:ErrorCallback):Void;
 }

@@ -24,11 +24,32 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/EncodedAudioChunk>
+**/
 @:native("EncodedAudioChunk") extern class EncodedAudioChunk {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EncodedAudioChunk/type>
+	**/
 	var type(default, null) : EncodedAudioChunkType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EncodedAudioChunk/timestamp>
+	**/
 	var timestamp(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EncodedAudioChunk/duration>
+	**/
 	var duration(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EncodedAudioChunk/byteLength>
+	**/
 	var byteLength(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EncodedAudioChunk/EncodedAudioChunk>
+	**/
 	function new(init:EncodedAudioChunkInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EncodedAudioChunk/copyTo>
+	**/
 	function copyTo(destination:js.web.dom.AllowSharedBufferSource):Void;
 }

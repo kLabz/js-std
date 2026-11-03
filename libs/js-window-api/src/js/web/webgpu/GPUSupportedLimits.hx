@@ -26,42 +26,137 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits>
 **/
 @:native("GPUSupportedLimits") extern class GPUSupportedLimits {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxTextureDimension1D(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxTextureDimension2D(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxTextureDimension3D(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxTextureArrayLayers(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxBindGroups(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxBindGroupsPlusVertexBuffers(default, null) : Int;
 	var maxImmediateSize(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxBindingsPerBindGroup(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxDynamicUniformBuffersPerPipelineLayout(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxDynamicStorageBuffersPerPipelineLayout(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxSampledTexturesPerShaderStage(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxSamplersPerShaderStage(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxStorageBuffersPerShaderStage(default, null) : Int;
 	var maxStorageBuffersInVertexStage(default, null) : Int;
 	var maxStorageBuffersInFragmentStage(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxStorageTexturesPerShaderStage(default, null) : Int;
 	var maxStorageTexturesInVertexStage(default, null) : Int;
 	var maxStorageTexturesInFragmentStage(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxUniformBuffersPerShaderStage(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxUniformBufferBindingSize(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxStorageBufferBindingSize(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var minUniformBufferOffsetAlignment(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var minStorageBufferOffsetAlignment(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxVertexBuffers(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxBufferSize(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxVertexAttributes(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxVertexBufferArrayStride(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxInterStageShaderVariables(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxColorAttachments(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxColorAttachmentBytesPerSample(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxComputeWorkgroupStorageSize(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxComputeInvocationsPerWorkgroup(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxComputeWorkgroupSizeX(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxComputeWorkgroupSizeY(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxComputeWorkgroupSizeZ(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
+	**/
 	var maxComputeWorkgroupsPerDimension(default, null) : Int;
 }

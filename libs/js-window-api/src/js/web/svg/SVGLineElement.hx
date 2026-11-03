@@ -24,9 +24,24 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGLineElement>
+**/
 @:native("SVGLineElement") extern class SVGLineElement extends SVGGeometryElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLineElement/x1>
+	**/
 	var x1(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLineElement/y1>
+	**/
 	var y1(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLineElement/x2>
+	**/
 	var x2(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGLineElement/y2>
+	**/
 	var y2(default, null) : SVGAnimatedLength;
 }

@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSTransformComponent>
+**/
 @:native("CSSTransformComponent") extern class CSSTransformComponent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformComponent/is2D>
+	**/
 	var is2D : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformComponent/toString>
+	**/
 	function toString():String;
 }

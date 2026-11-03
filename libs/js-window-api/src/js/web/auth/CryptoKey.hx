@@ -26,10 +26,24 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/CryptoKey>
 **/
 @:native("CryptoKey") extern class CryptoKey {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CryptoKey/type>
+	**/
 	var type(default, null) : KeyType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CryptoKey/extractable>
+	**/
 	var extractable(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CryptoKey/algorithm>
+	**/
 	var algorithm(default, null) : { };
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CryptoKey/usages>
+	**/
 	var usages(default, null) : { };
 }

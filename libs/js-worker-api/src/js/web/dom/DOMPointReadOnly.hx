@@ -24,13 +24,37 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DOMPointReadOnly>
+**/
 @:native("DOMPointReadOnly") extern class DOMPointReadOnly {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMPointReadOnly/x>
+	**/
 	var x(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMPointReadOnly/y>
+	**/
 	var y(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMPointReadOnly/z>
+	**/
 	var z(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMPointReadOnly/w>
+	**/
 	var w(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMPointReadOnly/DOMPointReadOnly>
+	**/
 	function new(?x:Float = 0, ?y:Float = 0, ?z:Float = 0, ?w:Float = 1):Void;
 	function fromPoint(?other:DOMPointInit):DOMPointReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMPointReadOnly/matrixTransform>
+	**/
 	function matrixTransform(?matrix:DOMMatrixInit):DOMPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMPointReadOnly/toJSON>
+	**/
 	function toJSON():{ };
 }

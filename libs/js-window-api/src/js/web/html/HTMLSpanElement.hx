@@ -24,6 +24,9 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLSpanElement>
+**/
 @:native("HTMLSpanElement") extern class HTMLSpanElement extends HTMLElement {
 
 }

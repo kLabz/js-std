@@ -24,10 +24,19 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TextTrackList>
+**/
 @:native("TextTrackList") extern class TextTrackList extends js.web.dom.EventTarget implements ArrayAccess<TextTrack> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrackList/length>
+	**/
 	var length(default, null) : Int;
 	var onchange : EventHandler;
 	var onaddtrack : EventHandler;
 	var onremovetrack : EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrackList/getTrackById>
+	**/
 	function getTrackById(id:String):Null<TextTrack>;
 }

@@ -24,64 +24,125 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement>
+**/
 @:native("HTMLObjectElement") extern class HTMLObjectElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/data>
+	**/
 	var data : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/type>
+	**/
 	var type : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/name>
+	**/
 	var name : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/form>
+	**/
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/width>
+	**/
 	var width : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/height>
+	**/
 	var height : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/contentDocument>
+	**/
 	var contentDocument(default, null) : Null<js.web.dom.Document>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/contentWindow>
+	**/
 	var contentWindow(default, null) : Null<Window>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/willValidate>
+	**/
 	var willValidate(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/validity>
+	**/
 	var validity(default, null) : ValidityState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/validationMessage>
+	**/
 	var validationMessage(default, null) : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var align : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var archive : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var code : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var declare : Bool;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var hspace : Int;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var standby : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var vspace : Int;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var codeBase : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var codeType : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/useMap>
 	**/
+	@:deprecated
 	var useMap : String;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var border : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/checkValidity>
+	**/
 	function checkValidity():Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/getSVGDocument>
+	**/
 	function getSVGDocument():Null<js.web.dom.Document>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/reportValidity>
+	**/
 	function reportValidity():Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLObjectElement/setCustomValidity>
+	**/
 	function setCustomValidity(error:String):Void;
 }

@@ -24,12 +24,27 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLOListElement>
+**/
 @:native("HTMLOListElement") extern class HTMLOListElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOListElement/reversed>
+	**/
 	var reversed : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOListElement/start>
+	**/
 	var start : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOListElement/type>
+	**/
 	var type : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOListElement/compact>
 	**/
+	@:deprecated
 	var compact : Bool;
 }

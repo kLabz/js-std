@@ -26,12 +26,26 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/IdleDetector>
 **/
 @:native("IdleDetector") extern class IdleDetector extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IdleDetector/userState>
+	**/
 	var userState(default, null) : Null<UserIdleState>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IdleDetector/screenState>
+	**/
 	var screenState(default, null) : Null<ScreenIdleState>;
 	var onchange : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IdleDetector/IdleDetector>
+	**/
 	function new():Void;
 	function requestPermission():js.lib.Promise<js.web.misc.PermissionState>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IdleDetector/start>
+	**/
 	function start(?options:IdleOptions):js.lib.Promise<Void>;
 }

@@ -24,12 +24,30 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage>
+**/
 @:native("XRWebGLSubImage") extern class XRWebGLSubImage extends XRSubImage {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage/colorTexture>
+	**/
 	var colorTexture(default, null) : js.web.webgl.WebGLTexture;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage/depthStencilTexture>
+	**/
 	var depthStencilTexture(default, null) : Null<js.web.webgl.WebGLTexture>;
 	var motionVectorTexture(default, null) : Null<js.web.webgl.WebGLTexture>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage/imageIndex>
+	**/
 	var imageIndex(default, null) : Null<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage/colorTextureWidth>
+	**/
 	var colorTextureWidth(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage/colorTextureHeight>
+	**/
 	var colorTextureHeight(default, null) : Int;
 	var depthStencilTextureWidth(default, null) : Null<Int>;
 	var depthStencilTextureHeight(default, null) : Null<Int>;

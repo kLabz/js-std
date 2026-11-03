@@ -24,12 +24,36 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport>
+**/
 @:native("RTCStatsReport") extern class RTCStatsReport {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/size>
+	**/
 	var size(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<String, { }>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/forEach>
+	**/
 	function forEach(callback:(value:{ }, key:String, map:RTCStatsReport) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/get>
+	**/
 	function get(key:String):Null<{ }>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/has>
+	**/
 	function has(key:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/keys>
+	**/
 	function keys():js.lib.Iterator<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/values>
+	**/
 	function values():js.lib.Iterator<{ }>;
 }

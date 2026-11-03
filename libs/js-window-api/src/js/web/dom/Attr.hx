@@ -24,12 +24,37 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Attr>
+**/
 @:native("Attr") extern class Attr extends Node {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Attr/namespaceURI>
+	**/
 	var namespaceURI(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Attr/prefix>
+	**/
 	var prefix(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Attr/localName>
+	**/
 	var localName(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Attr/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Attr/value>
+	**/
 	var value : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Attr/ownerElement>
+	**/
 	var ownerElement(default, null) : Null<Element>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Attr/specified>
+	**/
+	@:deprecated
 	var specified(default, null) : Bool;
 }

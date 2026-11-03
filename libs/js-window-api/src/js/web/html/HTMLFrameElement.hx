@@ -24,15 +24,25 @@
 
 package js.web.html;
 
-@:native("HTMLFrameElement") extern class HTMLFrameElement extends HTMLElement {
+@:native("HTMLFrameElement") @:deprecated extern class HTMLFrameElement extends HTMLElement {
+	@:deprecated
 	var name : String;
+	@:deprecated
 	var scrolling : String;
+	@:deprecated
 	var src : String;
+	@:deprecated
 	var frameBorder : String;
+	@:deprecated
 	var longDesc : String;
+	@:deprecated
 	var noResize : Bool;
+	@:deprecated
 	var contentDocument(default, null) : Null<js.web.dom.Document>;
+	@:deprecated
 	var contentWindow(default, null) : Null<Window>;
+	@:deprecated
 	var marginHeight : String;
+	@:deprecated
 	var marginWidth : String;
 }

@@ -26,9 +26,14 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/USB>
 **/
 @:native("USB") extern class USB extends js.web.dom.EventTarget {
 	var onconnect : js.web.html.EventHandler;
 	var ondisconnect : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/USB/getDevices>
+	**/
 	function getDevices():js.lib.Promise<Array<USBDevice>>;
 }

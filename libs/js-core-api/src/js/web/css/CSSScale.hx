@@ -24,9 +24,24 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSScale>
+**/
 @:native("CSSScale") extern class CSSScale extends CSSTransformComponent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSScale/x>
+	**/
 	var x : CSSNumberish;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSScale/y>
+	**/
 	var y : CSSNumberish;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSScale/z>
+	**/
 	var z : CSSNumberish;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSScale/CSSScale>
+	**/
 	function new(x:CSSNumberish, y:CSSNumberish, ?z:CSSNumberish):Void;
 }

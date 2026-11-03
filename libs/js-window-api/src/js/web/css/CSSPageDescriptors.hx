@@ -24,13 +24,37 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSPageDescriptors>
+**/
 @:native("CSSPageDescriptors") extern class CSSPageDescriptors extends CSSStyleDeclaration {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPageDescriptors#margin>
+	**/
 	var margin : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPageDescriptors#margintop>
+	**/
 	var marginTop : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPageDescriptors#marginright>
+	**/
 	var marginRight : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPageDescriptors#marginbottom>
+	**/
 	var marginBottom : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPageDescriptors#marginleft>
+	**/
 	var marginLeft : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPageDescriptors#size>
+	**/
 	var size : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPageDescriptors#pageorientation>
+	**/
 	var pageOrientation : String;
 	var marks : String;
 	var bleed : String;

@@ -26,11 +26,16 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/OVR_multiview2>
 **/
 @:native("OVR_multiview2") extern class OVR_multiview2 {
 	static inline var FRAMEBUFFER_ATTACHMENT_TEXTURE_NUM_VIEWS_OVR : GLenum = 0x9630;
 	static inline var FRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR : GLenum = 0x9632;
 	static inline var MAX_VIEWS_OVR : GLenum = 0x9631;
 	static inline var FRAMEBUFFER_INCOMPLETE_VIEW_TARGETS_OVR : GLenum = 0x9633;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OVR_multiview2/framebufferTextureMultiviewOVR>
+	**/
 	function framebufferTextureMultiviewOVR(target:GLenum, attachment:GLenum, texture:Null<WebGLTexture>, level:GLint, baseViewIndex:GLint, numViews:GLsizei):Void;
 }

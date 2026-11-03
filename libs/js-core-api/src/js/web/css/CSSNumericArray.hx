@@ -24,10 +24,28 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSNumericArray>
+**/
 @:native("CSSNumericArray") extern class CSSNumericArray implements ArrayAccess<CSSNumericValue> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericArray/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericArray/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<Int, CSSNumericValue>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericArray/forEach>
+	**/
 	function forEach(callback:(value:CSSNumericValue, key:Int, parent:CSSNumericArray) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericArray/keys>
+	**/
 	function keys():js.lib.Iterator<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericArray/values>
+	**/
 	function values():js.lib.Iterator<CSSNumericValue>;
 }

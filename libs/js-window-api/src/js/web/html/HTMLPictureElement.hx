@@ -24,6 +24,9 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLPictureElement>
+**/
 @:native("HTMLPictureElement") extern class HTMLPictureElement extends HTMLElement {
 
 }

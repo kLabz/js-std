@@ -24,8 +24,21 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CustomEvent>
+**/
 @:native("CustomEvent") extern class CustomEvent extends Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomEvent/detail>
+	**/
 	var detail(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomEvent/CustomEvent>
+	**/
 	function new(type:String, ?eventInitDict:CustomEventInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CustomEvent/initCustomEvent>
+	**/
+	@:deprecated
 	function initCustomEvent(type:String, ?bubbles:Bool = false, ?cancelable:Bool = false, ?detail:Any = null):Void;
 }

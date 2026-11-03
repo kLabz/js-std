@@ -26,6 +26,8 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/MIDIInput>
 **/
 @:native("MIDIInput") extern class MIDIInput extends MIDIPort {
 	var onmidimessage : js.web.html.EventHandler;

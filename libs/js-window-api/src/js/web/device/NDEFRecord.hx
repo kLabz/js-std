@@ -26,14 +26,40 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/NDEFRecord>
 **/
 @:native("NDEFRecord") extern class NDEFRecord {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFRecord/recordType>
+	**/
 	var recordType(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFRecord/mediaType>
+	**/
 	var mediaType(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFRecord/id>
+	**/
 	var id(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFRecord/data>
+	**/
 	var data(default, null) : Null<js.lib.DataView>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFRecord/encoding>
+	**/
 	var encoding(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFRecord/lang>
+	**/
 	var lang(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFRecord/NDEFRecord>
+	**/
 	function new(recordInit:NDEFRecordInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NDEFRecord/toRecords>
+	**/
 	function toRecords():Null<Array<NDEFRecord>>;
 }

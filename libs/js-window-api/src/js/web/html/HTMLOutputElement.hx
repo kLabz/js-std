@@ -24,18 +24,60 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLOutputElement>
+**/
 @:native("HTMLOutputElement") extern class HTMLOutputElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOutputElement/htmlFor>
+	**/
 	var htmlFor(default, null) : js.web.dom.DOMTokenList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOutputElement/form>
+	**/
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOutputElement/name>
+	**/
 	var name : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOutputElement/type>
+	**/
 	var type(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOutputElement/defaultValue>
+	**/
 	var defaultValue : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOutputElement/value>
+	**/
 	var value : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOutputElement/willValidate>
+	**/
 	var willValidate(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOutputElement/validity>
+	**/
 	var validity(default, null) : ValidityState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOutputElement/validationMessage>
+	**/
 	var validationMessage(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOutputElement/labels>
+	**/
 	var labels(default, null) : js.web.dom.NodeList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOutputElement/checkValidity>
+	**/
 	function checkValidity():Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOutputElement/reportValidity>
+	**/
 	function reportValidity():Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOutputElement/setCustomValidity>
+	**/
 	function setCustomValidity(error:String):Void;
 }

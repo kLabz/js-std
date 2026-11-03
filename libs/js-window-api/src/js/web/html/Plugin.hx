@@ -24,11 +24,20 @@
 
 package js.web.html;
 
-@:native("Plugin") extern class Plugin implements ArrayAccess<Null<MimeType>> {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Plugin>
+**/
+@:native("Plugin") @:deprecated extern class Plugin implements ArrayAccess<Null<MimeType>> {
+	@:deprecated
 	var name(default, null) : String;
+	@:deprecated
 	var description(default, null) : String;
+	@:deprecated
 	var filename(default, null) : String;
+	@:deprecated
 	var length(default, null) : Int;
+	@:deprecated
 	function item(index:Int):Null<MimeType>;
+	@:deprecated
 	function namedItem(name:String):Null<MimeType>;
 }

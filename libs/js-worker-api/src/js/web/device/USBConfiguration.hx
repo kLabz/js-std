@@ -26,10 +26,24 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/USBConfiguration>
 **/
 @:native("USBConfiguration") extern class USBConfiguration {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/USBConfiguration/configurationValue>
+	**/
 	var configurationValue(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/USBConfiguration/configurationName>
+	**/
 	var configurationName(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/USBConfiguration/interfaces>
+	**/
 	var interfaces(default, null) : Array<USBInterface>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/USBConfiguration/USBConfiguration>
+	**/
 	function new(device:USBDevice, configurationValue:Int):Void;
 }

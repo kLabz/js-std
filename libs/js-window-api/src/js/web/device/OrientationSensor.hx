@@ -26,8 +26,16 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/OrientationSensor>
 **/
 @:native("OrientationSensor") extern class OrientationSensor extends Sensor {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OrientationSensor/quaternion>
+	**/
 	var quaternion(default, null) : Null<Array<Float>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OrientationSensor/populateMatrix>
+	**/
 	function populateMatrix(targetMatrix:RotationMatrixType):Void;
 }

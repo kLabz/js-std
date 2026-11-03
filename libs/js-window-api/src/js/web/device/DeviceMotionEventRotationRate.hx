@@ -26,9 +26,20 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEventRotationRate>
 **/
 @:native("DeviceMotionEventRotationRate") extern class DeviceMotionEventRotationRate {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEventRotationRate/alpha>
+	**/
 	var alpha(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEventRotationRate/beta>
+	**/
 	var beta(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEventRotationRate/gamma>
+	**/
 	var gamma(default, null) : Null<Float>;
 }

@@ -24,330 +24,498 @@
 
 package js.web.canvas;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/OffscreenCanvasRenderingContext2D>
+**/
 @:native("OffscreenCanvasRenderingContext2D") extern class OffscreenCanvasRenderingContext2D {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/canvas>
+	**/
 	var canvas(default, null) : OffscreenCanvas;
 	/**
 		From interface mixin CanvasCompositing
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/globalAlpha>
 	**/
 	var globalAlpha : Float;
 	/**
 		From interface mixin CanvasCompositing
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation>
 	**/
 	var globalCompositeOperation : String;
 	/**
 		From interface mixin CanvasImageSmoothing
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/imageSmoothingEnabled>
 	**/
 	var imageSmoothingEnabled : Bool;
 	/**
 		From interface mixin CanvasImageSmoothing
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/imageSmoothingQuality>
 	**/
 	var imageSmoothingQuality : ImageSmoothingQuality;
 	/**
 		From interface mixin CanvasFillStrokeStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/strokeStyle>
 	**/
 	var strokeStyle : haxe.extern.EitherType<String, haxe.extern.EitherType<CanvasGradient, CanvasPattern>>;
 	/**
 		From interface mixin CanvasFillStrokeStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/fillStyle>
 	**/
 	var fillStyle : haxe.extern.EitherType<String, haxe.extern.EitherType<CanvasGradient, CanvasPattern>>;
 	/**
 		From interface mixin CanvasShadowStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/shadowOffsetX>
 	**/
 	var shadowOffsetX : Float;
 	/**
 		From interface mixin CanvasShadowStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/shadowOffsetY>
 	**/
 	var shadowOffsetY : Float;
 	/**
 		From interface mixin CanvasShadowStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/shadowBlur>
 	**/
 	var shadowBlur : Float;
 	/**
 		From interface mixin CanvasShadowStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/shadowColor>
 	**/
 	var shadowColor : String;
 	/**
 		From interface mixin CanvasFilters
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/filter>
 	**/
 	var filter : String;
 	/**
 		From interface mixin CanvasPathDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/lineWidth>
 	**/
 	var lineWidth : Float;
 	/**
 		From interface mixin CanvasPathDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/lineCap>
 	**/
 	var lineCap : CanvasLineCap;
 	/**
 		From interface mixin CanvasPathDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/lineJoin>
 	**/
 	var lineJoin : CanvasLineJoin;
 	/**
 		From interface mixin CanvasPathDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/miterLimit>
 	**/
 	var miterLimit : Float;
 	/**
 		From interface mixin CanvasPathDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/lineDashOffset>
 	**/
 	var lineDashOffset : Float;
 	/**
 		From interface mixin CanvasTextDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/lang>
 	**/
 	var lang : String;
 	/**
 		From interface mixin CanvasTextDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/font>
 	**/
 	var font : String;
 	/**
 		From interface mixin CanvasTextDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/textAlign>
 	**/
 	var textAlign : CanvasTextAlign;
 	/**
 		From interface mixin CanvasTextDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/textBaseline>
 	**/
 	var textBaseline : CanvasTextBaseline;
 	/**
 		From interface mixin CanvasTextDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/direction>
 	**/
 	var direction : CanvasDirection;
 	/**
 		From interface mixin CanvasTextDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/letterSpacing>
 	**/
 	var letterSpacing : String;
 	/**
 		From interface mixin CanvasTextDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/fontKerning>
 	**/
 	var fontKerning : CanvasFontKerning;
 	/**
 		From interface mixin CanvasTextDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/fontStretch>
 	**/
 	var fontStretch : CanvasFontStretch;
 	/**
 		From interface mixin CanvasTextDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/fontVariantCaps>
 	**/
 	var fontVariantCaps : CanvasFontVariantCaps;
 	/**
 		From interface mixin CanvasTextDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/textRendering>
 	**/
 	var textRendering : CanvasTextRendering;
 	/**
 		From interface mixin CanvasTextDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/wordSpacing>
 	**/
 	var wordSpacing : String;
 	/**
 		From interface mixin CanvasPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/arc>
 	**/
 	function arc(x:Float, y:Float, radius:Float, startAngle:Float, endAngle:Float, ?counterclockwise:Bool = false):Void;
 	/**
 		From interface mixin CanvasPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/arcTo>
 	**/
 	function arcTo(x1:Float, y1:Float, x2:Float, y2:Float, radius:Float):Void;
 	/**
 		From interface mixin CanvasDrawPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/beginPath>
 	**/
 	function beginPath():Void;
 	/**
 		From interface mixin CanvasPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/bezierCurveTo>
 	**/
 	function bezierCurveTo(cp1x:Float, cp1y:Float, cp2x:Float, cp2y:Float, x:Float, y:Float):Void;
 	/**
 		From interface mixin CanvasRect
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/clearRect>
 	**/
 	function clearRect(x:Float, y:Float, w:Float, h:Float):Void;
 	/**
 		From interface mixin CanvasDrawPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/clip>
 	**/
 	overload function clip(?fillRule:CanvasFillRule = CanvasFillRule.NONZERO):Void;
 	/**
 		From interface mixin CanvasDrawPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/clip>
 	**/
 	overload function clip(path:Path2D, ?fillRule:CanvasFillRule = CanvasFillRule.NONZERO):Void;
 	/**
 		From interface mixin CanvasPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/closePath>
 	**/
 	function closePath():Void;
 	/**
 		From interface mixin CanvasFillStrokeStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/createConicGradient>
 	**/
 	function createConicGradient(startAngle:Float, x:Float, y:Float):CanvasGradient;
 	/**
 		From interface mixin CanvasImageData
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/createImageData>
 	**/
 	overload function createImageData(sw:Int, sh:Int, ?settings:ImageDataSettings):ImageData;
 	/**
 		From interface mixin CanvasImageData
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/createImageData>
 	**/
 	overload function createImageData(imageData:ImageData):ImageData;
 	/**
 		From interface mixin CanvasFillStrokeStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/createLinearGradient>
 	**/
 	function createLinearGradient(x0:Float, y0:Float, x1:Float, y1:Float):CanvasGradient;
 	/**
 		From interface mixin CanvasFillStrokeStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/createPattern>
 	**/
 	function createPattern(image:CanvasImageSource, repetition:String):Null<CanvasPattern>;
 	/**
 		From interface mixin CanvasFillStrokeStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/createRadialGradient>
 	**/
 	function createRadialGradient(x0:Float, y0:Float, r0:Float, x1:Float, y1:Float, r1:Float):CanvasGradient;
 	/**
 		From interface mixin CanvasDrawImage
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/drawImage>
 	**/
 	overload function drawImage(image:CanvasImageSource, dx:Float, dy:Float):Void;
 	/**
 		From interface mixin CanvasDrawImage
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/drawImage>
 	**/
 	overload function drawImage(image:CanvasImageSource, dx:Float, dy:Float, dw:Float, dh:Float):Void;
 	/**
 		From interface mixin CanvasDrawImage
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/drawImage>
 	**/
 	overload function drawImage(image:CanvasImageSource, sx:Float, sy:Float, sw:Float, sh:Float, dx:Float, dy:Float, dw:Float, dh:Float):Void;
 	/**
 		From interface mixin CanvasPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/ellipse>
 	**/
 	function ellipse(x:Float, y:Float, radiusX:Float, radiusY:Float, rotation:Float, startAngle:Float, endAngle:Float, ?counterclockwise:Bool = false):Void;
 	/**
 		From interface mixin CanvasDrawPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/fill>
 	**/
 	overload function fill(?fillRule:CanvasFillRule = CanvasFillRule.NONZERO):Void;
 	/**
 		From interface mixin CanvasDrawPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/fill>
 	**/
 	overload function fill(path:Path2D, ?fillRule:CanvasFillRule = CanvasFillRule.NONZERO):Void;
 	/**
 		From interface mixin CanvasRect
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/fillRect>
 	**/
 	function fillRect(x:Float, y:Float, w:Float, h:Float):Void;
 	/**
 		From interface mixin CanvasText
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/fillText>
 	**/
 	function fillText(text:String, x:Float, y:Float, ?maxWidth:Float):Void;
 	/**
 		From interface mixin CanvasSettings
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/getContextAttributes>
 	**/
 	function getContextAttributes():CanvasRenderingContext2DSettings;
 	/**
 		From interface mixin CanvasImageData
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/getImageData>
 	**/
 	function getImageData(sx:Int, sy:Int, sw:Int, sh:Int, ?settings:ImageDataSettings):ImageData;
 	/**
 		From interface mixin CanvasPathDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/getLineDash>
 	**/
 	function getLineDash():Array<Float>;
 	/**
 		From interface mixin CanvasTransform
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/getTransform>
 	**/
 	function getTransform():js.web.dom.DOMMatrix;
 	/**
 		From interface mixin CanvasState
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/isContextLost>
 	**/
 	function isContextLost():Bool;
 	/**
 		From interface mixin CanvasDrawPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/isPointInPath>
 	**/
 	overload function isPointInPath(x:Float, y:Float, ?fillRule:CanvasFillRule = CanvasFillRule.NONZERO):Bool;
 	/**
 		From interface mixin CanvasDrawPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/isPointInPath>
 	**/
 	overload function isPointInPath(path:Path2D, x:Float, y:Float, ?fillRule:CanvasFillRule = CanvasFillRule.NONZERO):Bool;
 	/**
 		From interface mixin CanvasDrawPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/isPointInStroke>
 	**/
 	overload function isPointInStroke(x:Float, y:Float):Bool;
 	/**
 		From interface mixin CanvasDrawPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/isPointInStroke>
 	**/
 	overload function isPointInStroke(path:Path2D, x:Float, y:Float):Bool;
 	/**
 		From interface mixin CanvasPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/lineTo>
 	**/
 	function lineTo(x:Float, y:Float):Void;
 	/**
 		From interface mixin CanvasText
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/measureText>
 	**/
 	function measureText(text:String):TextMetrics;
 	/**
 		From interface mixin CanvasPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/moveTo>
 	**/
 	function moveTo(x:Float, y:Float):Void;
 	/**
 		From interface mixin CanvasImageData
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/putImageData>
 	**/
 	overload function putImageData(imageData:ImageData, dx:Int, dy:Int):Void;
 	/**
 		From interface mixin CanvasImageData
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/putImageData>
 	**/
 	overload function putImageData(imageData:ImageData, dx:Int, dy:Int, dirtyX:Int, dirtyY:Int, dirtyWidth:Int, dirtyHeight:Int):Void;
 	/**
 		From interface mixin CanvasPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/quadraticCurveTo>
 	**/
 	function quadraticCurveTo(cpx:Float, cpy:Float, x:Float, y:Float):Void;
 	/**
 		From interface mixin CanvasPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/rect>
 	**/
 	function rect(x:Float, y:Float, w:Float, h:Float):Void;
 	/**
 		From interface mixin CanvasState
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/reset>
 	**/
 	function reset():Void;
 	/**
 		From interface mixin CanvasTransform
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/resetTransform>
 	**/
 	function resetTransform():Void;
 	/**
 		From interface mixin CanvasState
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/restore>
 	**/
 	function restore():Void;
 	/**
 		From interface mixin CanvasTransform
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/rotate>
 	**/
 	function rotate(angle:Float):Void;
 	/**
 		From interface mixin CanvasPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/roundRect>
 	**/
 	function roundRect(x:Float, y:Float, w:Float, h:Float, ?radii:haxe.extern.EitherType<Float, haxe.extern.EitherType<js.web.dom.DOMPointInit, Array<haxe.extern.EitherType<Float, js.web.dom.DOMPointInit>>>> = 0):Void;
 	/**
 		From interface mixin CanvasState
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/save>
 	**/
 	function save():Void;
 	/**
 		From interface mixin CanvasTransform
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/scale>
 	**/
 	function scale(x:Float, y:Float):Void;
 	/**
 		From interface mixin CanvasPathDrawingStyles
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/setLineDash>
 	**/
 	function setLineDash(segments:Array<Float>):Void;
 	/**
 		From interface mixin CanvasTransform
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/setTransform>
 	**/
 	overload function setTransform(a:Float, b:Float, c:Float, d:Float, e:Float, f:Float):Void;
 	/**
 		From interface mixin CanvasTransform
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/setTransform>
 	**/
 	overload function setTransform(?transform:js.web.dom.DOMMatrix2DInit):Void;
 	/**
 		From interface mixin CanvasDrawPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/stroke>
 	**/
 	overload function stroke():Void;
 	/**
 		From interface mixin CanvasDrawPath
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/stroke>
 	**/
 	overload function stroke(path:Path2D):Void;
 	/**
 		From interface mixin CanvasRect
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/strokeRect>
 	**/
 	function strokeRect(x:Float, y:Float, w:Float, h:Float):Void;
 	/**
 		From interface mixin CanvasText
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/strokeText>
 	**/
 	function strokeText(text:String, x:Float, y:Float, ?maxWidth:Float):Void;
 	/**
 		From interface mixin CanvasTransform
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/transform>
 	**/
 	function transform(a:Float, b:Float, c:Float, d:Float, e:Float, f:Float):Void;
 	/**
 		From interface mixin CanvasTransform
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/translate>
 	**/
 	function translate(x:Float, y:Float):Void;
 }

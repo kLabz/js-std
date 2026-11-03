@@ -24,8 +24,20 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceTimingConfidence>
+**/
 @:native("PerformanceTimingConfidence") extern class PerformanceTimingConfidence {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTimingConfidence/randomizedTriggerRate>
+	**/
 	var randomizedTriggerRate(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTimingConfidence/value>
+	**/
 	var value(default, null) : PerformanceTimingConfidenceValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTimingConfidence/toJSON>
+	**/
 	function toJSON():{ };
 }

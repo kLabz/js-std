@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSMathProduct>
+**/
 @:native("CSSMathProduct") extern class CSSMathProduct extends CSSMathValue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathProduct/values>
+	**/
 	var values(default, null) : CSSNumericArray;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathProduct/CSSMathProduct>
+	**/
 	function new(args:haxe.Rest<CSSNumberish>):Void;
 }

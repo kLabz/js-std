@@ -24,6 +24,9 @@
 
 package js.web.device;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BluetoothUUID>
+**/
 @:native("BluetoothUUID") extern class BluetoothUUID {
 	function canonicalUUID(alias:Int):UUID;
 	function getCharacteristic(name:haxe.extern.EitherType<String, Int>):UUID;

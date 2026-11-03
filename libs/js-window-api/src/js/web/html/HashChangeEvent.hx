@@ -24,8 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HashChangeEvent>
+**/
 @:native("HashChangeEvent") extern class HashChangeEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HashChangeEvent/oldURL>
+	**/
 	var oldURL(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HashChangeEvent/newURL>
+	**/
 	var newURL(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HashChangeEvent/HashChangeEvent>
+	**/
 	function new(type:String, ?eventInitDict:HashChangeEventInit):Void;
 }

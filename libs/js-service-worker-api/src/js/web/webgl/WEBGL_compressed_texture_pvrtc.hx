@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_pvrtc>
 **/
 @:native("WEBGL_compressed_texture_pvrtc") extern class WEBGL_compressed_texture_pvrtc {
 	static inline var COMPRESSED_RGB_PVRTC_4BPPV1_IMG : GLenum = 0x8C00;

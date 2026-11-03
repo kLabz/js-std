@@ -24,13 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLUListElement>
+**/
 @:native("HTMLUListElement") extern class HTMLUListElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLUListElement/compact>
 	**/
+	@:deprecated
 	var compact : Bool;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var type : String;
 }

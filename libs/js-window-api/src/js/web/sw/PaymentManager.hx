@@ -26,8 +26,16 @@ package js.web.sw;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PaymentManager>
 **/
 @:native("PaymentManager") extern class PaymentManager {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentManager/userHint>
+	**/
 	var userHint : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentManager/enableDelegations>
+	**/
 	function enableDelegations(delegations:Array<PaymentDelegation>):js.lib.Promise<Void>;
 }

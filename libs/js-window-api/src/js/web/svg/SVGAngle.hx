@@ -24,16 +24,37 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGAngle>
+**/
 @:native("SVGAngle") extern class SVGAngle {
 	static inline var SVG_ANGLETYPE_UNKNOWN : Int = 0;
 	static inline var SVG_ANGLETYPE_UNSPECIFIED : Int = 1;
 	static inline var SVG_ANGLETYPE_DEG : Int = 2;
 	static inline var SVG_ANGLETYPE_RAD : Int = 3;
 	static inline var SVG_ANGLETYPE_GRAD : Int = 4;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAngle/unitType>
+	**/
 	var unitType(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAngle/value>
+	**/
 	var value : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAngle/valueInSpecifiedUnits>
+	**/
 	var valueInSpecifiedUnits : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAngle/valueAsString>
+	**/
 	var valueAsString : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAngle/convertToSpecifiedUnits>
+	**/
 	function convertToSpecifiedUnits(unitType:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAngle/newValueSpecifiedUnits>
+	**/
 	function newValueSpecifiedUnits(unitType:Int, valueInSpecifiedUnits:Float):Void;
 }

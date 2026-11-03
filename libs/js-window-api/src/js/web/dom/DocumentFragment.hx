@@ -24,50 +24,78 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment>
+**/
 @:native("DocumentFragment") extern class DocumentFragment extends Node {
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/children>
 	**/
 	var children(default, null) : HTMLCollection;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/firstElementChild>
 	**/
 	var firstElementChild(default, null) : Null<Element>;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/lastElementChild>
 	**/
 	var lastElementChild(default, null) : Null<Element>;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/childElementCount>
 	**/
 	var childElementCount(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/DocumentFragment>
+	**/
 	function new():Void;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/append>
 	**/
 	function append(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From interface mixin NonElementParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/getElementById>
 	**/
 	function getElementById(elementId:String):Null<Element>;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/moveBefore>
 	**/
 	function moveBefore(node:Node, child:Null<Node>):Void;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/prepend>
 	**/
 	function prepend(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/querySelector>
 	**/
 	function querySelector(selectors:String):Null<Element>;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/querySelectorAll>
 	**/
 	function querySelectorAll(selectors:String):NodeList;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/replaceChildren>
 	**/
 	function replaceChildren(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 }

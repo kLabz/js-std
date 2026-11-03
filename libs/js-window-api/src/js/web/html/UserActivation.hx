@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/UserActivation>
+**/
 @:native("UserActivation") extern class UserActivation {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/UserActivation/hasBeenActive>
+	**/
 	var hasBeenActive(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/UserActivation/isActive>
+	**/
 	var isActive(default, null) : Bool;
 }

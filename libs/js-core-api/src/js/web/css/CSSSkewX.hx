@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSSkewX>
+**/
 @:native("CSSSkewX") extern class CSSSkewX extends CSSTransformComponent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSSkewX/ax>
+	**/
 	var ax : CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSSkewX/CSSSkewX>
+	**/
 	function new(ax:CSSNumericValue):Void;
 }

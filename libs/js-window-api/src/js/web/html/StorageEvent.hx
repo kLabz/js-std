@@ -24,12 +24,37 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/StorageEvent>
+**/
 @:native("StorageEvent") extern class StorageEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageEvent/key>
+	**/
 	var key(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageEvent/oldValue>
+	**/
 	var oldValue(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageEvent/newValue>
+	**/
 	var newValue(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageEvent/url>
+	**/
 	var url(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageEvent/storageArea>
+	**/
 	var storageArea(default, null) : Null<Storage>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageEvent/StorageEvent>
+	**/
 	function new(type:String, ?eventInitDict:StorageEventInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/StorageEvent/initStorageEvent>
+	**/
+	@:deprecated
 	function initStorageEvent(type:String, ?bubbles:Bool = false, ?cancelable:Bool = false, ?key:Null<String> = null, ?oldValue:Null<String> = null, ?newValue:Null<String> = null, ?url:String = "", ?storageArea:Null<Storage> = null):Void;
 }

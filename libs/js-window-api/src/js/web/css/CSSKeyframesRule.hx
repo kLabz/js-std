@@ -24,11 +24,32 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSKeyframesRule>
+**/
 @:native("CSSKeyframesRule") extern class CSSKeyframesRule extends CSSRule implements ArrayAccess<CSSKeyframeRule> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSKeyframesRule/name>
+	**/
 	var name : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSKeyframesRule/cssRules>
+	**/
 	var cssRules(default, null) : CSSRuleList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSKeyframesRule/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSKeyframesRule/appendRule>
+	**/
 	function appendRule(rule:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSKeyframesRule/deleteRule>
+	**/
 	function deleteRule(select:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSKeyframesRule/findRule>
+	**/
 	function findRule(select:String):Null<CSSKeyframeRule>;
 }

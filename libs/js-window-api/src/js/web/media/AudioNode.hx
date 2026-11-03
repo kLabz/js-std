@@ -24,20 +24,68 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioNode>
+**/
 @:native("AudioNode") extern class AudioNode extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/context>
+	**/
 	var context(default, null) : BaseAudioContext;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/numberOfInputs>
+	**/
 	var numberOfInputs(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/numberOfOutputs>
+	**/
 	var numberOfOutputs(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/channelCount>
+	**/
 	var channelCount : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/channelCountMode>
+	**/
 	var channelCountMode : ChannelCountMode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/channelInterpretation>
+	**/
 	var channelInterpretation : ChannelInterpretation;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/connect>
+	**/
 	overload function connect(destinationNode:AudioNode, ?output:Int = 0, ?input:Int = 0):AudioNode;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/connect>
+	**/
 	overload function connect(destinationParam:AudioParam, ?output:Int = 0):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/disconnect>
+	**/
 	overload function disconnect():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/disconnect>
+	**/
 	overload function disconnect(output:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/disconnect>
+	**/
 	overload function disconnect(destinationNode:AudioNode):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/disconnect>
+	**/
 	overload function disconnect(destinationNode:AudioNode, output:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/disconnect>
+	**/
 	overload function disconnect(destinationNode:AudioNode, output:Int, input:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/disconnect>
+	**/
 	overload function disconnect(destinationParam:AudioParam):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioNode/disconnect>
+	**/
 	overload function disconnect(destinationParam:AudioParam, output:Int):Void;
 }

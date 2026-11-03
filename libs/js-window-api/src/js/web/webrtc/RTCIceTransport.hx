@@ -24,10 +24,22 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCIceTransport>
+**/
 @:native("RTCIceTransport") extern class RTCIceTransport extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceTransport/role>
+	**/
 	var role(default, null) : RTCIceRole;
 	var component(default, null) : RTCIceComponent;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceTransport/state>
+	**/
 	var state(default, null) : RTCIceTransportState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceTransport/gatheringState>
+	**/
 	var gatheringState(default, null) : RTCIceGathererState;
 	var onstatechange : js.web.html.EventHandler;
 	var ongatheringstatechange : js.web.html.EventHandler;
@@ -52,10 +64,25 @@ package js.web.webrtc;
 		From partial interface in webrtc-ice.idl
 	**/
 	function gather(?options:RTCIceGatherOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getLocalCandidates>
+	**/
 	function getLocalCandidates():Array<RTCIceCandidate>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getLocalParameters>
+	**/
 	function getLocalParameters():Null<RTCIceParameters>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getRemoteCandidates>
+	**/
 	function getRemoteCandidates():Array<RTCIceCandidate>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getRemoteParameters>
+	**/
 	function getRemoteParameters():Null<RTCIceParameters>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getSelectedCandidatePair>
+	**/
 	function getSelectedCandidatePair():Null<RTCIceCandidatePair>;
 	/**
 		From partial interface in webrtc-ice.idl

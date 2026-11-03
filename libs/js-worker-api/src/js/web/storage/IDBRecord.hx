@@ -24,6 +24,9 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/IDBRecord>
+**/
 @:native("IDBRecord") extern class IDBRecord {
 	var key(default, null) : Any;
 	var primaryKey(default, null) : Any;

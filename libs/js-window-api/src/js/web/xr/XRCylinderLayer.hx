@@ -24,11 +24,29 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XRCylinderLayer>
+**/
 @:native("XRCylinderLayer") extern class XRCylinderLayer extends XRCompositionLayer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRCylinderLayer/space>
+	**/
 	var space : XRSpace;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRCylinderLayer/transform>
+	**/
 	var transform : XRRigidTransform;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRCylinderLayer/radius>
+	**/
 	var radius : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRCylinderLayer/centralAngle>
+	**/
 	var centralAngle : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRCylinderLayer/aspectRatio>
+	**/
 	var aspectRatio : Float;
 	var onredraw : js.web.html.EventHandler;
 }

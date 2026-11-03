@@ -24,7 +24,16 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaElementAudioSourceNode>
+**/
 @:native("MediaElementAudioSourceNode") extern class MediaElementAudioSourceNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaElementAudioSourceNode/mediaElement>
+	**/
 	var mediaElement(default, null) : js.web.html.HTMLMediaElement;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaElementAudioSourceNode/MediaElementAudioSourceNode>
+	**/
 	function new(context:AudioContext, options:MediaElementAudioSourceOptions):Void;
 }

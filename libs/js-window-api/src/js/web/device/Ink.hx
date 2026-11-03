@@ -24,6 +24,12 @@
 
 package js.web.device;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Ink>
+**/
 @:native("Ink") extern class Ink {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Ink/requestPresenter>
+	**/
 	function requestPresenter(?param:InkPresenterParam):js.lib.Promise<DelegatedInkTrailPresenter>;
 }

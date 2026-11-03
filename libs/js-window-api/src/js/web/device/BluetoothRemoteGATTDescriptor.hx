@@ -26,11 +26,28 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTDescriptor>
 **/
 @:native("BluetoothRemoteGATTDescriptor") extern class BluetoothRemoteGATTDescriptor {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTDescriptor/characteristic>
+	**/
 	var characteristic(default, null) : BluetoothRemoteGATTCharacteristic;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTDescriptor/uuid>
+	**/
 	var uuid(default, null) : UUID;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTDescriptor/value>
+	**/
 	var value(default, null) : Null<js.lib.DataView>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTDescriptor/readValue>
+	**/
 	function readValue():js.lib.Promise<js.lib.DataView>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTDescriptor/writeValue>
+	**/
 	function writeValue(value:js.web.dom.BufferSource):js.lib.Promise<Void>;
 }

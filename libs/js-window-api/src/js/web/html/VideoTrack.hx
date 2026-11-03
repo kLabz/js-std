@@ -24,14 +24,34 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/VideoTrack>
+**/
 @:native("VideoTrack") extern class VideoTrack {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoTrack/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoTrack/kind>
+	**/
 	var kind(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoTrack/label>
+	**/
 	var label(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoTrack/language>
+	**/
 	var language(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoTrack/selected>
+	**/
 	var selected : Bool;
 	/**
 		From partial interface in media-source.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/VideoTrack/sourceBuffer>
 	**/
 	var sourceBuffer(default, null) : Null<js.web.media.SourceBuffer>;
 }

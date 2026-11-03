@@ -24,27 +24,118 @@
 
 package js.web.perf;
 
-@:native("PerformanceTiming") extern class PerformanceTiming {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming>
+**/
+@:native("PerformanceTiming") @:deprecated extern class PerformanceTiming {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/navigationStart>
+	**/
+	@:deprecated
 	var navigationStart(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/unloadEventStart>
+	**/
+	@:deprecated
 	var unloadEventStart(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/unloadEventEnd>
+	**/
+	@:deprecated
 	var unloadEventEnd(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/redirectStart>
+	**/
+	@:deprecated
 	var redirectStart(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/redirectEnd>
+	**/
+	@:deprecated
 	var redirectEnd(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/fetchStart>
+	**/
+	@:deprecated
 	var fetchStart(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/domainLookupStart>
+	**/
+	@:deprecated
 	var domainLookupStart(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/domainLookupEnd>
+	**/
+	@:deprecated
 	var domainLookupEnd(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/connectStart>
+	**/
+	@:deprecated
 	var connectStart(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/connectEnd>
+	**/
+	@:deprecated
 	var connectEnd(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/secureConnectionStart>
+	**/
+	@:deprecated
 	var secureConnectionStart(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/requestStart>
+	**/
+	@:deprecated
 	var requestStart(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/responseStart>
+	**/
+	@:deprecated
 	var responseStart(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/responseEnd>
+	**/
+	@:deprecated
 	var responseEnd(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/domLoading>
+	**/
+	@:deprecated
 	var domLoading(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/domInteractive>
+	**/
+	@:deprecated
 	var domInteractive(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/domContentLoadedEventStart>
+	**/
+	@:deprecated
 	var domContentLoadedEventStart(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/domContentLoadedEventEnd>
+	**/
+	@:deprecated
 	var domContentLoadedEventEnd(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/domComplete>
+	**/
+	@:deprecated
 	var domComplete(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/loadEventStart>
+	**/
+	@:deprecated
 	var loadEventStart(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/loadEventEnd>
+	**/
+	@:deprecated
 	var loadEventEnd(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTiming/toJSON>
+	**/
+	@:deprecated
 	function toJSON():{ };
 }

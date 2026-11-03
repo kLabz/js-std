@@ -24,12 +24,30 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange>
+**/
 @:native("IDBKeyRange") extern class IDBKeyRange {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lower>
+	**/
 	var lower(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upper>
+	**/
 	var upper(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lowerOpen>
+	**/
 	var lowerOpen(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upperOpen>
+	**/
 	var upperOpen(default, null) : Bool;
 	function bound(lower:Any, upper:Any, ?lowerOpen:Bool = false, ?upperOpen:Bool = false):IDBKeyRange;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/includes>
+	**/
 	function includes(key:Any):Bool;
 	function lowerBound(lower:Any, ?open:Bool = false):IDBKeyRange;
 	function only(value:Any):IDBKeyRange;

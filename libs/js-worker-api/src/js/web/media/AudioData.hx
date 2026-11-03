@@ -24,16 +24,52 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioData>
+**/
 @:native("AudioData") extern class AudioData {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioData/format>
+	**/
 	var format(default, null) : Null<AudioSampleFormat>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioData/sampleRate>
+	**/
 	var sampleRate(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioData/numberOfFrames>
+	**/
 	var numberOfFrames(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioData/numberOfChannels>
+	**/
 	var numberOfChannels(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioData/duration>
+	**/
 	var duration(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioData/timestamp>
+	**/
 	var timestamp(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioData/AudioData>
+	**/
 	function new(init:AudioDataInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioData/allocationSize>
+	**/
 	function allocationSize(options:AudioDataCopyToOptions):Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioData/clone>
+	**/
 	function clone():AudioData;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioData/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioData/copyTo>
+	**/
 	function copyTo(destination:js.web.dom.AllowSharedBufferSource, options:AudioDataCopyToOptions):Void;
 }

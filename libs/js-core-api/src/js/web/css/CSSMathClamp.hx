@@ -24,9 +24,24 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSMathClamp>
+**/
 @:native("CSSMathClamp") extern class CSSMathClamp extends CSSMathValue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathClamp/lower>
+	**/
 	var lower(default, null) : CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathClamp/value>
+	**/
 	var value(default, null) : CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathClamp/upper>
+	**/
 	var upper(default, null) : CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathClamp/CSSMathClamp>
+	**/
 	function new(lower:CSSNumberish, value:CSSNumberish, upper:CSSNumberish):Void;
 }

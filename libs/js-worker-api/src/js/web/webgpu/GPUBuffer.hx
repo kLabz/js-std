@@ -26,17 +26,42 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer>
 **/
 @:native("GPUBuffer") extern class GPUBuffer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/size>
+	**/
 	var size(default, null) : GPUSize64Out;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/usage>
+	**/
 	var usage(default, null) : GPUFlagsConstant;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/mapState>
+	**/
 	var mapState(default, null) : GPUBufferMapState;
 	/**
 		From interface mixin GPUObjectBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/label>
 	**/
 	var label : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/destroy>
+	**/
 	function destroy():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/getMappedRange>
+	**/
 	function getMappedRange(?offset:GPUSize64 = 0, ?size:GPUSize64):js.lib.ArrayBuffer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/mapAsync>
+	**/
 	function mapAsync(mode:GPUMapModeFlags, ?offset:GPUSize64 = 0, ?size:GPUSize64):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/unmap>
+	**/
 	function unmap():Void;
 }

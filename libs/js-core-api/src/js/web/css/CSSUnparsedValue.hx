@@ -24,11 +24,32 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSUnparsedValue>
+**/
 @:native("CSSUnparsedValue") extern class CSSUnparsedValue extends CSSStyleValue implements ArrayAccess<CSSUnparsedSegment> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSUnparsedValue/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSUnparsedValue/CSSUnparsedValue>
+	**/
 	function new(members:Array<CSSUnparsedSegment>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSUnparsedValue/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<Int, CSSUnparsedSegment>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSUnparsedValue/forEach>
+	**/
 	function forEach(callback:(value:CSSUnparsedSegment, key:Int, parent:CSSUnparsedValue) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSUnparsedValue/keys>
+	**/
 	function keys():js.lib.Iterator<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSUnparsedValue/values>
+	**/
 	function values():js.lib.Iterator<CSSUnparsedSegment>;
 }

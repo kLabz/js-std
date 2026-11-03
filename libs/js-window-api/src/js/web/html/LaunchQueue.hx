@@ -24,6 +24,12 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/LaunchQueue>
+**/
 @:native("LaunchQueue") extern class LaunchQueue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LaunchQueue/setConsumer>
+	**/
 	function setConsumer(consumer:LaunchConsumer):Void;
 }

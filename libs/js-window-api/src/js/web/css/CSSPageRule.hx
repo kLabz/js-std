@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSPageRule>
+**/
 @:native("CSSPageRule") extern class CSSPageRule extends CSSGroupingRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPageRule/selectorText>
+	**/
 	var selectorText : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPageRule/style>
+	**/
 	var style(default, null) : CSSPageDescriptors;
 }

@@ -24,20 +24,40 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/UIEvent>
+**/
 @:native("UIEvent") extern class UIEvent extends Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/UIEvent/view>
+	**/
 	var view(default, null) : Null<js.web.html.Window>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/UIEvent/detail>
+	**/
 	var detail(default, null) : Int;
 	/**
 		From partial interface in input-device-capabilities.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/UIEvent/sourceCapabilities>
 	**/
 	var sourceCapabilities(default, null) : Null<InputDeviceCapabilities>;
 	/**
 		From partial interface in uievents.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/UIEvent/which>
 	**/
+	@:deprecated
 	var which(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/UIEvent/UIEvent>
+	**/
 	function new(type:String, ?eventInitDict:UIEventInit):Void;
 	/**
 		From partial interface in uievents.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/UIEvent/initUIEvent>
 	**/
+	@:deprecated
 	function initUIEvent(typeArg:String, ?bubblesArg:Bool = false, ?cancelableArg:Bool = false, ?viewArg:Null<js.web.html.Window> = null, ?detailArg:Int = 0):Void;
 }

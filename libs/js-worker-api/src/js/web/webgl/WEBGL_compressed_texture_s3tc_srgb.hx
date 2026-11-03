@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_s3tc_srgb>
 **/
 @:native("WEBGL_compressed_texture_s3tc_srgb") extern class WEBGL_compressed_texture_s3tc_srgb {
 	static inline var COMPRESSED_SRGB_S3TC_DXT1_EXT : GLenum = 0x8C4C;

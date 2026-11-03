@@ -24,23 +24,70 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming>
+**/
 @:native("PerformanceNavigationTiming") extern class PerformanceNavigationTiming extends PerformanceResourceTiming {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/unloadEventStart>
+	**/
 	var unloadEventStart(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/unloadEventEnd>
+	**/
 	var unloadEventEnd(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/domInteractive>
+	**/
 	var domInteractive(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/domContentLoadedEventStart>
+	**/
 	var domContentLoadedEventStart(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/domContentLoadedEventEnd>
+	**/
 	var domContentLoadedEventEnd(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/domComplete>
+	**/
 	var domComplete(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/loadEventStart>
+	**/
 	var loadEventStart(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/loadEventEnd>
+	**/
 	var loadEventEnd(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/type>
+	**/
 	var type(default, null) : NavigationTimingType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/redirectCount>
+	**/
 	var redirectCount(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/criticalCHRestart>
+	**/
 	var criticalCHRestart(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/notRestoredReasons>
+	**/
 	var notRestoredReasons(default, null) : Null<js.web.html.NotRestoredReasons>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/confidence>
+	**/
 	var confidence(default, null) : PerformanceTimingConfidence;
 	/**
 		From partial interface in prerendering-revamped.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/activationStart>
 	**/
 	var activationStart(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/toJSON>
+	**/
 	function toJSON():{ };
 }

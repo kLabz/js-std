@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/OES_texture_half_float>
 **/
 @:native("OES_texture_half_float") extern class OES_texture_half_float {
 	static inline var HALF_FLOAT_OES : GLenum = 0x8D61;

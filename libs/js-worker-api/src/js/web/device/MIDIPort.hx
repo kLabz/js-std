@@ -26,16 +26,45 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/MIDIPort>
 **/
 @:native("MIDIPort") extern class MIDIPort extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/manufacturer>
+	**/
 	var manufacturer(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/name>
+	**/
 	var name(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/type>
+	**/
 	var type(default, null) : MIDIPortType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/version>
+	**/
 	var version(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/state>
+	**/
 	var state(default, null) : MIDIPortDeviceState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/connection>
+	**/
 	var connection(default, null) : MIDIPortConnectionState;
 	var onstatechange : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/close>
+	**/
 	function close():js.lib.Promise<MIDIPort>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/open>
+	**/
 	function open():js.lib.Promise<MIDIPort>;
 }

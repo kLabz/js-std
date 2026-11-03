@@ -24,9 +24,24 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultController>
+**/
 @:native("ReadableStreamDefaultController") extern class ReadableStreamDefaultController {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultController/desiredSize>
+	**/
 	var desiredSize(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultController/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultController/enqueue>
+	**/
 	function enqueue(?chunk:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultController/error>
+	**/
 	function error(?e:Any):Void;
 }

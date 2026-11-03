@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/EXT_color_buffer_half_float>
 **/
 @:native("EXT_color_buffer_half_float") extern class EXT_color_buffer_half_float {
 	static inline var RGBA16F_EXT : GLenum = 0x881A;

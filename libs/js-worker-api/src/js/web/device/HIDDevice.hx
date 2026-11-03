@@ -26,18 +26,53 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/HIDDevice>
 **/
 @:native("HIDDevice") extern class HIDDevice extends js.web.dom.EventTarget {
 	var oninputreport : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDDevice/opened>
+	**/
 	var opened(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDDevice/vendorId>
+	**/
 	var vendorId(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDDevice/productId>
+	**/
 	var productId(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDDevice/productName>
+	**/
 	var productName(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDDevice/collections>
+	**/
 	var collections(default, null) : Array<HIDCollectionInfo>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDDevice/close>
+	**/
 	function close():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDDevice/forget>
+	**/
 	function forget():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDDevice/open>
+	**/
 	function open():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDDevice/receiveFeatureReport>
+	**/
 	function receiveFeatureReport(reportId:Int):js.lib.Promise<js.lib.DataView>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDDevice/sendFeatureReport>
+	**/
 	function sendFeatureReport(reportId:Int, data:js.web.dom.BufferSource):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HIDDevice/sendReport>
+	**/
 	function sendReport(reportId:Int, data:js.web.dom.BufferSource):js.lib.Promise<Void>;
 }

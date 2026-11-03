@@ -26,9 +26,20 @@ package js.web.storage;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/FileSystemWritableFileStream>
 **/
 @:native("FileSystemWritableFileStream") extern class FileSystemWritableFileStream extends js.web.net.WritableStream {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemWritableFileStream/seek>
+	**/
 	function seek(position:Float):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemWritableFileStream/truncate>
+	**/
 	function truncate(size:Float):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileSystemWritableFileStream/write>
+	**/
 	function write(data:FileSystemWriteChunkType):js.lib.Promise<Void>;
 }

@@ -24,6 +24,12 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FetchLaterResult>
+**/
 @:native("FetchLaterResult") extern class FetchLaterResult {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FetchLaterResult/activated>
+	**/
 	var activated(default, null) : Bool;
 }

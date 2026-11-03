@@ -24,7 +24,16 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchUpdateUIEvent>
+**/
 @:native("BackgroundFetchUpdateUIEvent") extern class BackgroundFetchUpdateUIEvent extends BackgroundFetchEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchUpdateUIEvent/BackgroundFetchUpdateUIEvent>
+	**/
 	function new(type:String, init:BackgroundFetchEventInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchUpdateUIEvent/updateUI>
+	**/
 	function updateUI(?options:BackgroundFetchUIOptions):js.lib.Promise<Void>;
 }

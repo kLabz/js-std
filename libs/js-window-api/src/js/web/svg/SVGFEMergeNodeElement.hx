@@ -24,6 +24,12 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFEMergeNodeElement>
+**/
 @:native("SVGFEMergeNodeElement") extern class SVGFEMergeNodeElement extends SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMergeNodeElement/in1>
+	**/
 	var in1(default, null) : SVGAnimatedString;
 }

@@ -24,10 +24,28 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DataTransferItemList>
+**/
 @:native("DataTransferItemList") extern class DataTransferItemList implements ArrayAccess<DataTransferItem> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItemList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItemList/add>
+	**/
 	overload function add(data:String, type:String):Null<DataTransferItem>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItemList/add>
+	**/
 	overload function add(data:js.web.net.File):Null<DataTransferItem>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItemList/clear>
+	**/
 	function clear():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItemList/remove>
+	**/
 	function remove(index:Int):Void;
 }

@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_depth_texture>
 **/
 @:native("WEBGL_depth_texture") extern class WEBGL_depth_texture {
 	static inline var UNSIGNED_INT_24_8_WEBGL : GLenum = 0x84FA;

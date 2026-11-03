@@ -24,7 +24,16 @@
 
 package js.web.sw;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SyncManager>
+**/
 @:native("SyncManager") extern class SyncManager {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SyncManager/getTags>
+	**/
 	function getTags():js.lib.Promise<Array<String>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SyncManager/register>
+	**/
 	function register(tag:String):js.lib.Promise<Void>;
 }

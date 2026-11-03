@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLBaseElement>
+**/
 @:native("HTMLBaseElement") extern class HTMLBaseElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLBaseElement/href>
+	**/
 	var href : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLBaseElement/target>
+	**/
 	var target : String;
 }

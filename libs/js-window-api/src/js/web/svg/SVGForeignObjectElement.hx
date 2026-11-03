@@ -24,9 +24,24 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGForeignObjectElement>
+**/
 @:native("SVGForeignObjectElement") extern class SVGForeignObjectElement extends SVGGraphicsElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGForeignObjectElement/x>
+	**/
 	var x(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGForeignObjectElement/y>
+	**/
 	var y(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGForeignObjectElement/width>
+	**/
 	var width(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGForeignObjectElement/height>
+	**/
 	var height(default, null) : SVGAnimatedLength;
 }

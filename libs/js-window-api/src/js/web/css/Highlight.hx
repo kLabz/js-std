@@ -24,17 +24,56 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Highlight>
+**/
 @:native("Highlight") extern class Highlight {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Highlight/size>
+	**/
 	var size(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Highlight/priority>
+	**/
 	var priority : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Highlight/type>
+	**/
 	var type : HighlightType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Highlight/Highlight>
+	**/
 	function new(initialRanges:haxe.Rest<js.web.dom.AbstractRange>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Highlight/add>
+	**/
 	function add(value:js.web.dom.AbstractRange):Highlight;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Highlight/clear>
+	**/
 	function clear():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Highlight/delete>
+	**/
 	function delete(value:js.web.dom.AbstractRange):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Highlight/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<js.web.dom.AbstractRange, js.web.dom.AbstractRange>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Highlight/forEach>
+	**/
 	function forEach(callback:(value:js.web.dom.AbstractRange, key:js.web.dom.AbstractRange, set:Highlight) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Highlight/has>
+	**/
 	function has(value:js.web.dom.AbstractRange):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Highlight/keys>
+	**/
 	function keys():js.lib.Iterator<js.web.dom.AbstractRange>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Highlight/values>
+	**/
 	function values():js.lib.Iterator<js.web.dom.AbstractRange>;
 }

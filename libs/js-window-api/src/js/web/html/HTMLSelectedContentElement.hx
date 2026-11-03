@@ -24,6 +24,9 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLSelectedContentElement>
+**/
 @:native("HTMLSelectedContentElement") extern class HTMLSelectedContentElement extends HTMLElement {
 
 }

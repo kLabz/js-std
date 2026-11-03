@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/OES_element_index_uint>
 **/
 @:native("OES_element_index_uint") extern class OES_element_index_uint {
 

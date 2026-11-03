@@ -24,14 +24,32 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WheelEvent>
+**/
 @:native("WheelEvent") extern class WheelEvent extends MouseEvent {
 	static inline var DOM_DELTA_PIXEL : Int = 0x00;
 	static inline var DOM_DELTA_LINE : Int = 0x01;
 	static inline var DOM_DELTA_PAGE : Int = 0x02;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WheelEvent/deltaX>
+	**/
 	var deltaX(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WheelEvent/deltaY>
+	**/
 	var deltaY(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WheelEvent/deltaZ>
+	**/
 	var deltaZ(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WheelEvent/deltaMode>
+	**/
 	var deltaMode(default, null) : Int;
 	var momentum(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WheelEvent/WheelEvent>
+	**/
 	function new(type:String, ?eventInitDict:WheelEventInit):Void;
 }

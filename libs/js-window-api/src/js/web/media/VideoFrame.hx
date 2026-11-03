@@ -24,24 +24,84 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/VideoFrame>
+**/
 @:native("VideoFrame") extern class VideoFrame {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/format>
+	**/
 	var format(default, null) : Null<VideoPixelFormat>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/codedWidth>
+	**/
 	var codedWidth(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/codedHeight>
+	**/
 	var codedHeight(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/codedRect>
+	**/
 	var codedRect(default, null) : Null<js.web.dom.DOMRectReadOnly>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/visibleRect>
+	**/
 	var visibleRect(default, null) : Null<js.web.dom.DOMRectReadOnly>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/rotation>
+	**/
 	var rotation(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/flip>
+	**/
 	var flip(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/displayWidth>
+	**/
 	var displayWidth(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/displayHeight>
+	**/
 	var displayHeight(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/duration>
+	**/
 	var duration(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/timestamp>
+	**/
 	var timestamp(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/colorSpace>
+	**/
 	var colorSpace(default, null) : VideoColorSpace;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/VideoFrame>
+	**/
 	overload function new(data:js.web.dom.AllowSharedBufferSource, init:VideoFrameBufferInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/VideoFrame>
+	**/
 	overload function new(image:js.web.canvas.CanvasImageSource, ?init:VideoFrameInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/allocationSize>
+	**/
 	function allocationSize(?options:VideoFrameCopyToOptions):Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/clone>
+	**/
 	function clone():VideoFrame;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/copyTo>
+	**/
 	function copyTo(destination:js.web.dom.AllowSharedBufferSource, ?options:VideoFrameCopyToOptions):js.lib.Promise<Array<PlaneLayout>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/metadata>
+	**/
 	function metadata():VideoFrameMetadata;
 }

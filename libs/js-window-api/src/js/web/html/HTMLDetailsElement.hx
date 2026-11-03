@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement>
+**/
 @:native("HTMLDetailsElement") extern class HTMLDetailsElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement/name>
+	**/
 	var name : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement/open>
+	**/
 	var open : Bool;
 }

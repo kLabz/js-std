@@ -26,11 +26,22 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionResult>
 **/
 @:native("SpeechRecognitionResult") extern class SpeechRecognitionResult implements ArrayAccess<Null<SpeechRecognitionAlternative>> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionResult/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionResult/isFinal>
+	**/
 	var isFinal(default, null) : Bool;
 	var speechStartTime(default, null) : Float;
 	var speechEndTime(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionResult/item>
+	**/
 	function item(index:Int):Null<SpeechRecognitionAlternative>;
 }

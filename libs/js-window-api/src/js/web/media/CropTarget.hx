@@ -24,6 +24,9 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CropTarget>
+**/
 @:native("CropTarget") extern class CropTarget {
 	/**
 		Only available in secure contexts (HTTPS).

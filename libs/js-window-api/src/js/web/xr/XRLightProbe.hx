@@ -26,8 +26,13 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRLightProbe>
 **/
 @:native("XRLightProbe") extern class XRLightProbe extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRLightProbe/probeSpace>
+	**/
 	var probeSpace(default, null) : XRSpace;
 	var onreflectionchange : js.web.html.EventHandler;
 }

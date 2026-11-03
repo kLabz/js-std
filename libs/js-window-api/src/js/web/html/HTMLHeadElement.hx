@@ -24,6 +24,9 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLHeadElement>
+**/
 @:native("HTMLHeadElement") extern class HTMLHeadElement extends HTMLElement {
 
 }

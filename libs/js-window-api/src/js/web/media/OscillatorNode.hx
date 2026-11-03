@@ -24,10 +24,28 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/OscillatorNode>
+**/
 @:native("OscillatorNode") extern class OscillatorNode extends AudioScheduledSourceNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OscillatorNode/type>
+	**/
 	var type : OscillatorType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OscillatorNode/frequency>
+	**/
 	var frequency(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OscillatorNode/detune>
+	**/
 	var detune(default, null) : AudioParam;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OscillatorNode/OscillatorNode>
+	**/
 	function new(context:BaseAudioContext, ?options:OscillatorOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OscillatorNode/setPeriodicWave>
+	**/
 	function setPeriodicWave(periodicWave:PeriodicWave):Void;
 }

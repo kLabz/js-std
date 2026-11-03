@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGGElement>
+**/
 @:native("SVGGElement") extern class SVGGElement extends SVGGraphicsElement {
 
 }

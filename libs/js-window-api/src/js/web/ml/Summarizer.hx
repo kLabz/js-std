@@ -26,24 +26,61 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Summarizer>
 **/
 @:native("Summarizer") extern class Summarizer {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/sharedContext>
+	**/
 	var sharedContext(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/type>
+	**/
 	var type(default, null) : SummarizerType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/format>
+	**/
 	var format(default, null) : SummarizerFormat;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/length>
+	**/
 	var length(default, null) : SummarizerLength;
 	var preference(default, null) : PerformancePreference;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/expectedInputLanguages>
+	**/
 	var expectedInputLanguages(default, null) : Null<Array<String>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/expectedContextLanguages>
+	**/
 	var expectedContextLanguages(default, null) : Null<Array<String>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/outputLanguage>
+	**/
 	var outputLanguage(default, null) : Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/inputQuota>
+	**/
 	var inputQuota(default, null) : Float;
 	function availability(?options:SummarizerCreateCoreOptions):js.lib.Promise<Availability>;
 	function create(?options:SummarizerCreateOptions):js.lib.Promise<Summarizer>;
 	/**
 		From interface mixin DestroyableModel
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/destroy>
 	**/
 	function destroy():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/measureInputUsage>
+	**/
 	function measureInputUsage(input:String, ?options:SummarizerSummarizeOptions):js.lib.Promise<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/summarize>
+	**/
 	function summarize(input:String, ?options:SummarizerSummarizeOptions):js.lib.Promise<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/summarizeStreaming>
+	**/
 	function summarizeStreaming(input:String, ?options:SummarizerSummarizeOptions):js.web.net.ReadableStream;
 }

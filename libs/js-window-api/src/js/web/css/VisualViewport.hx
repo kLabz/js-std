@@ -24,13 +24,37 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/VisualViewport>
+**/
 @:native("VisualViewport") extern class VisualViewport extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VisualViewport/offsetLeft>
+	**/
 	var offsetLeft(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VisualViewport/offsetTop>
+	**/
 	var offsetTop(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VisualViewport/pageLeft>
+	**/
 	var pageLeft(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VisualViewport/pageTop>
+	**/
 	var pageTop(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VisualViewport/width>
+	**/
 	var width(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VisualViewport/height>
+	**/
 	var height(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VisualViewport/scale>
+	**/
 	var scale(default, null) : Float;
 	var onresize : js.web.html.EventHandler;
 	var onscroll : js.web.html.EventHandler;

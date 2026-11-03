@@ -24,14 +24,44 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGPointList>
+**/
 @:native("SVGPointList") extern class SVGPointList implements ArrayAccess<js.web.dom.SVGPoint> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPointList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPointList/numberOfItems>
+	**/
 	var numberOfItems(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPointList/appendItem>
+	**/
 	function appendItem(newItem:js.web.dom.SVGPoint):js.web.dom.SVGPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPointList/clear>
+	**/
 	function clear():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPointList/getItem>
+	**/
 	function getItem(index:Int):js.web.dom.SVGPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPointList/initialize>
+	**/
 	function initialize(newItem:js.web.dom.SVGPoint):js.web.dom.SVGPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPointList/insertItemBefore>
+	**/
 	function insertItemBefore(newItem:js.web.dom.SVGPoint, index:Int):js.web.dom.SVGPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPointList/removeItem>
+	**/
 	function removeItem(index:Int):js.web.dom.SVGPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPointList/replaceItem>
+	**/
 	function replaceItem(newItem:js.web.dom.SVGPoint, index:Int):js.web.dom.SVGPoint;
 }

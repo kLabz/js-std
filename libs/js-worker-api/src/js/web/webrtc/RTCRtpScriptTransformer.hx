@@ -24,11 +24,29 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer>
+**/
 @:native("RTCRtpScriptTransformer") extern class RTCRtpScriptTransformer extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer/readable>
+	**/
 	var readable(default, null) : js.web.net.ReadableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer/writable>
+	**/
 	var writable(default, null) : js.web.net.WritableStream;
 	var onkeyframerequest : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer/options>
+	**/
 	var options(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer/generateKeyFrame>
+	**/
 	function generateKeyFrame(?rid:String):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer/sendKeyFrameRequest>
+	**/
 	function sendKeyFrameRequest():js.lib.Promise<Void>;
 }

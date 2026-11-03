@@ -24,6 +24,12 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XPathExpression>
+**/
 @:native("XPathExpression") extern class XPathExpression {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XPathExpression/evaluate>
+	**/
 	function evaluate(contextNode:Node, ?type:Int = 0, ?result:Null<XPathResult> = null):XPathResult;
 }

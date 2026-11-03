@@ -26,12 +26,32 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRVisibilityMaskChangeEvent>
 **/
 @:native("XRVisibilityMaskChangeEvent") extern class XRVisibilityMaskChangeEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRVisibilityMaskChangeEvent/session>
+	**/
 	var session(default, null) : XRSession;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRVisibilityMaskChangeEvent/eye>
+	**/
 	var eye(default, null) : XREye;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRVisibilityMaskChangeEvent/index>
+	**/
 	var index(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRVisibilityMaskChangeEvent/vertices>
+	**/
 	var vertices(default, null) : js.lib.Float32Array;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRVisibilityMaskChangeEvent/indices>
+	**/
 	var indices(default, null) : js.lib.Uint32Array;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRVisibilityMaskChangeEvent/XRVisibilityMaskChangeEvent>
+	**/
 	function new(type:String, eventInitDict:XRVisibilityMaskChangeEventInit):Void;
 }

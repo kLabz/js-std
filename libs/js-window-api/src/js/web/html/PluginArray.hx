@@ -24,9 +24,16 @@
 
 package js.web.html;
 
-@:native("PluginArray") extern class PluginArray implements ArrayAccess<Null<Plugin>> {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PluginArray>
+**/
+@:native("PluginArray") @:deprecated extern class PluginArray implements ArrayAccess<Null<Plugin>> {
+	@:deprecated
 	var length(default, null) : Int;
+	@:deprecated
 	function item(index:Int):Null<Plugin>;
+	@:deprecated
 	function namedItem(name:String):Null<Plugin>;
+	@:deprecated
 	function refresh():Void;
 }

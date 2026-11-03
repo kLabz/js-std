@@ -24,8 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PromiseRejectionEvent>
+**/
 @:native("PromiseRejectionEvent") extern class PromiseRejectionEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PromiseRejectionEvent/promise>
+	**/
 	var promise(default, null) : { };
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PromiseRejectionEvent/reason>
+	**/
 	var reason(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PromiseRejectionEvent/PromiseRejectionEvent>
+	**/
 	function new(type:String, eventInitDict:PromiseRejectionEventInit):Void;
 }

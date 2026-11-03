@@ -24,55 +24,88 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement>
+**/
 @:native("MathMLAnchorElement") extern class MathMLAnchorElement extends MathMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/href>
+	**/
 	var href : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/target>
+	**/
 	var target : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/origin>
 	**/
 	var origin(default, null) : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/protocol>
 	**/
 	var protocol : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/username>
 	**/
 	var username : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/password>
 	**/
 	var password : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/host>
 	**/
 	var host : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/hostname>
 	**/
 	var hostname : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/port>
 	**/
 	var port : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/pathname>
 	**/
 	var pathname : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/search>
 	**/
 	var search : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/hash>
 	**/
 	var hash : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/hreflang>
 	**/
 	var hreflang : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		
+		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/type>
 	**/
 	var type : String;
 }

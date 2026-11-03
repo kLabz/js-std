@@ -24,7 +24,16 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCCertificate>
+**/
 @:native("RTCCertificate") extern class RTCCertificate {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCCertificate/expires>
+	**/
 	var expires(default, null) : js.web.perf.EpochTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCCertificate/getFingerprints>
+	**/
 	function getFingerprints():Array<RTCDtlsFingerprint>;
 }

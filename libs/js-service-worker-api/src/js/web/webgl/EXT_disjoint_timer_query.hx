@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query>
 **/
 @:native("EXT_disjoint_timer_query") extern class EXT_disjoint_timer_query {
 	static inline var QUERY_COUNTER_BITS_EXT : GLenum = 0x8864;
@@ -35,12 +37,36 @@ package js.web.webgl;
 	static inline var TIME_ELAPSED_EXT : GLenum = 0x88BF;
 	static inline var TIMESTAMP_EXT : GLenum = 0x8E28;
 	static inline var GPU_DISJOINT_EXT : GLenum = 0x8FBB;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/beginQueryEXT>
+	**/
 	function beginQueryEXT(target:GLenum, query:WebGLTimerQueryEXT):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/createQueryEXT>
+	**/
 	function createQueryEXT():WebGLTimerQueryEXT;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/deleteQueryEXT>
+	**/
 	function deleteQueryEXT(query:Null<WebGLTimerQueryEXT>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/endQueryEXT>
+	**/
 	function endQueryEXT(target:GLenum):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/getQueryEXT>
+	**/
 	function getQueryEXT(target:GLenum, pname:GLenum):Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/getQueryObjectEXT>
+	**/
 	function getQueryObjectEXT(query:WebGLTimerQueryEXT, pname:GLenum):Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/isQueryEXT>
+	**/
 	function isQueryEXT(query:Null<WebGLTimerQueryEXT>):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/queryCounterEXT>
+	**/
 	function queryCounterEXT(query:WebGLTimerQueryEXT, target:GLenum):Void;
 }

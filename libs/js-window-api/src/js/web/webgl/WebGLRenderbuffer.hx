@@ -24,6 +24,9 @@
 
 package js.web.webgl;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderbuffer>
+**/
 @:native("WebGLRenderbuffer") extern class WebGLRenderbuffer extends WebGLObject {
 
 }

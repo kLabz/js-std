@@ -24,8 +24,20 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AbortController>
+**/
 @:native("AbortController") extern class AbortController {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AbortController/signal>
+	**/
 	var signal(default, null) : AbortSignal;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AbortController/AbortController>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AbortController/abort>
+	**/
 	function abort(?reason:Any):Void;
 }

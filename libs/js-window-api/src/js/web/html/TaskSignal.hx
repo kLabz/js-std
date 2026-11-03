@@ -24,7 +24,13 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TaskSignal>
+**/
 @:native("TaskSignal") extern class TaskSignal extends js.web.dom.AbortSignal {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TaskSignal/priority>
+	**/
 	var priority(default, null) : TaskPriority;
 	var onprioritychange : EventHandler;
 	function any(signals:Array<js.web.dom.AbortSignal>, ?init:TaskSignalAnyInit):TaskSignal;

@@ -26,8 +26,16 @@ package js.web.storage;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Lock>
 **/
 @:native("Lock") extern class Lock {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Lock/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Lock/mode>
+	**/
 	var mode(default, null) : LockMode;
 }

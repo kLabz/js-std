@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_draw_buffers>
 **/
 @:native("WEBGL_draw_buffers") extern class WEBGL_draw_buffers {
 	static inline var COLOR_ATTACHMENT0_WEBGL : GLenum = 0x8CE0;
@@ -62,5 +64,8 @@ package js.web.webgl;
 	static inline var DRAW_BUFFER15_WEBGL : GLenum = 0x8834;
 	static inline var MAX_COLOR_ATTACHMENTS_WEBGL : GLenum = 0x8CDF;
 	static inline var MAX_DRAW_BUFFERS_WEBGL : GLenum = 0x8824;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_draw_buffers/drawBuffersWEBGL>
+	**/
 	function drawBuffersWEBGL(buffers:Array<GLenum>):Void;
 }

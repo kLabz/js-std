@@ -26,8 +26,16 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/MIDIConnectionEvent>
 **/
 @:native("MIDIConnectionEvent") extern class MIDIConnectionEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIConnectionEvent/port>
+	**/
 	var port(default, null) : Null<MIDIPort>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MIDIConnectionEvent/MIDIConnectionEvent>
+	**/
 	function new(type:String, ?eventInitDict:MIDIConnectionEventInit):Void;
 }

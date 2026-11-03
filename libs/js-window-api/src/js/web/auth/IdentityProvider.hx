@@ -26,6 +26,8 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/IdentityProvider>
 **/
 @:native("IdentityProvider") extern class IdentityProvider {
 	function close():Void;

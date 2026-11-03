@@ -24,19 +24,64 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams>
+**/
 @:native("URLSearchParams") extern class URLSearchParams {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/size>
+	**/
 	var size(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/URLSearchParams>
+	**/
 	function new(?init:haxe.extern.EitherType<Array<Array<String>>, haxe.extern.EitherType<haxe.DynamicAccess<String>, String>> = ""):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/append>
+	**/
 	function append(name:String, value:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/delete>
+	**/
 	function delete(name:String, ?value:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<String, String>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/forEach>
+	**/
 	function forEach(callback:(value:String, key:String, parent:URLSearchParams) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/get>
+	**/
 	function get(name:String):Null<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/getAll>
+	**/
 	function getAll(name:String):Array<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/has>
+	**/
 	function has(name:String, ?value:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/keys>
+	**/
 	function keys():js.lib.Iterator<String>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/set>
+	**/
 	function set(name:String, value:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/sort>
+	**/
 	function sort():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/toString>
+	**/
 	function toString():String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/values>
+	**/
 	function values():js.lib.Iterator<String>;
 }

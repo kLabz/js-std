@@ -26,14 +26,31 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/Sensor>
 **/
 @:native("Sensor") extern class Sensor extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sensor/activated>
+	**/
 	var activated(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sensor/hasReading>
+	**/
 	var hasReading(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sensor/timestamp>
+	**/
 	var timestamp(default, null) : Null<js.web.perf.DOMHighResTimeStamp>;
 	var onreading : js.web.html.EventHandler;
 	var onactivate : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sensor/start>
+	**/
 	function start():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Sensor/stop>
+	**/
 	function stop():Void;
 }

@@ -24,7 +24,16 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FocusEvent>
+**/
 @:native("FocusEvent") extern class FocusEvent extends UIEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FocusEvent/relatedTarget>
+	**/
 	var relatedTarget(default, null) : Null<EventTarget>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FocusEvent/FocusEvent>
+	**/
 	function new(type:String, ?eventInitDict:FocusEventInit):Void;
 }

@@ -24,9 +24,13 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLPreElement>
+**/
 @:native("HTMLPreElement") extern class HTMLPreElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	var width : Int;
 }

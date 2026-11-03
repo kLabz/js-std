@@ -24,6 +24,12 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceMeasure>
+**/
 @:native("PerformanceMeasure") extern class PerformanceMeasure extends PerformanceEntry {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceMeasure/detail>
+	**/
 	var detail(default, null) : Any;
 }

@@ -24,11 +24,32 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/NavigationDestination>
+**/
 @:native("NavigationDestination") extern class NavigationDestination {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationDestination/url>
+	**/
 	var url(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationDestination/key>
+	**/
 	var key(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationDestination/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationDestination/index>
+	**/
 	var index(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationDestination/sameDocument>
+	**/
 	var sameDocument(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/NavigationDestination/getState>
+	**/
 	function getState():Any;
 }

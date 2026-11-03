@@ -24,8 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/DOMStringList>
+**/
 @:native("DOMStringList") extern class DOMStringList implements ArrayAccess<Null<String>> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMStringList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMStringList/contains>
+	**/
 	function contains(string:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMStringList/item>
+	**/
 	function item(index:Int):Null<String>;
 }

@@ -24,6 +24,12 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ChannelMergerNode>
+**/
 @:native("ChannelMergerNode") extern class ChannelMergerNode extends AudioNode {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ChannelMergerNode/ChannelMergerNode>
+	**/
 	function new(context:BaseAudioContext, ?options:ChannelMergerOptions):Void;
 }

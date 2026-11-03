@@ -24,18 +24,60 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/URLPattern>
+**/
 @:native("URLPattern") extern class URLPattern {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/protocol>
+	**/
 	var protocol(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/username>
+	**/
 	var username(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/password>
+	**/
 	var password(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/hostname>
+	**/
 	var hostname(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/port>
+	**/
 	var port(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/pathname>
+	**/
 	var pathname(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/search>
+	**/
 	var search(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/hash>
+	**/
 	var hash(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/hasRegExpGroups>
+	**/
 	var hasRegExpGroups(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/URLPattern>
+	**/
 	overload function new(?input:URLPatternInput, ?options:URLPatternOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/URLPattern>
+	**/
 	overload function new(input:URLPatternInput, baseURL:String, ?options:URLPatternOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/exec>
+	**/
 	function exec(?input:URLPatternInput, ?baseURL:String):Null<URLPatternResult>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/test>
+	**/
 	function test(?input:URLPatternInput, ?baseURL:String):Bool;
 }

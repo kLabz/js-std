@@ -24,11 +24,23 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CompositionEvent>
+**/
 @:native("CompositionEvent") extern class CompositionEvent extends UIEvent {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CompositionEvent/data>
+	**/
 	var data(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CompositionEvent/CompositionEvent>
+	**/
 	function new(type:String, ?eventInitDict:CompositionEventInit):Void;
 	/**
 		From partial interface in uievents.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CompositionEvent/initCompositionEvent>
 	**/
+	@:deprecated
 	function initCompositionEvent(typeArg:String, ?bubblesArg:Bool = false, ?cancelableArg:Bool = false, ?viewArg:Null<js.web.html.Window> = null, ?dataArg:String = ""):Void;
 }

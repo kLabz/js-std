@@ -24,7 +24,16 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FileList>
+**/
 @:native("FileList") extern class FileList implements ArrayAccess<Null<File>> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileList/item>
+	**/
 	function item(index:Int):Null<File>;
 }

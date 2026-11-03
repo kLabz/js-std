@@ -24,9 +24,24 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSPropertyRule>
+**/
 @:native("CSSPropertyRule") extern class CSSPropertyRule extends CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPropertyRule/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPropertyRule/syntax>
+	**/
 	var syntax(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPropertyRule/inherits>
+	**/
 	var inherits(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSPropertyRule/initialValue>
+	**/
 	var initialValue(default, null) : Null<String>;
 }

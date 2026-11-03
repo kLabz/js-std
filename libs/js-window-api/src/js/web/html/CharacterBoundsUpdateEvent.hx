@@ -24,8 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CharacterBoundsUpdateEvent>
+**/
 @:native("CharacterBoundsUpdateEvent") extern class CharacterBoundsUpdateEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterBoundsUpdateEvent/rangeStart>
+	**/
 	var rangeStart(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterBoundsUpdateEvent/rangeEnd>
+	**/
 	var rangeEnd(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CharacterBoundsUpdateEvent/CharacterBoundsUpdateEvent>
+	**/
 	function new(type:String, ?options:CharacterBoundsUpdateEventInit):Void;
 }

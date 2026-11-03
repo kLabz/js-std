@@ -26,11 +26,28 @@ package js.web.css;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PreferenceManager>
 **/
 @:native("PreferenceManager") extern class PreferenceManager {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PreferenceManager/colorScheme>
+	**/
 	var colorScheme(default, null) : PreferenceObject;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PreferenceManager/contrast>
+	**/
 	var contrast(default, null) : PreferenceObject;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PreferenceManager/reducedMotion>
+	**/
 	var reducedMotion(default, null) : PreferenceObject;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PreferenceManager/reducedTransparency>
+	**/
 	var reducedTransparency(default, null) : PreferenceObject;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PreferenceManager/reducedData>
+	**/
 	var reducedData(default, null) : PreferenceObject;
 }

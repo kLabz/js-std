@@ -24,14 +24,38 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ReadableStream>
+**/
 @:native("ReadableStream") extern class ReadableStream {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStream/locked>
+	**/
 	var locked(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStream/ReadableStream>
+	**/
 	function new(?underlyingSource:{ }, ?strategy:QueuingStrategy):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStream/cancel>
+	**/
 	function cancel(?reason:Any):js.lib.Promise<Void>;
 	function from(asyncIterable:Dynamic):ReadableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStream/getReader>
+	**/
 	function getReader(?options:ReadableStreamGetReaderOptions):ReadableStreamReader;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStream/pipeThrough>
+	**/
 	function pipeThrough(transform:ReadableWritablePair, ?options:StreamPipeOptions):ReadableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStream/pipeTo>
+	**/
 	function pipeTo(destination:WritableStream, ?options:StreamPipeOptions):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStream/tee>
+	**/
 	function tee():Array<ReadableStream>;
 	function values(?options:ReadableStreamIteratorOptions):js.lib.Iterator.AsyncIterator<Any>;
 }

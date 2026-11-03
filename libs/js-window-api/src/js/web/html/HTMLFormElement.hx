@@ -24,23 +24,80 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement>
+**/
 @:native("HTMLFormElement") extern class HTMLFormElement extends HTMLElement implements ArrayAccess<js.web.dom.Element> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/acceptCharset>
+	**/
 	var acceptCharset : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/action>
+	**/
 	var action : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/autocomplete>
+	**/
 	var autocomplete : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/enctype>
+	**/
 	var enctype : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/encoding>
+	**/
 	var encoding : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/method>
+	**/
 	var method : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/name>
+	**/
 	var name : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/noValidate>
+	**/
 	var noValidate : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/target>
+	**/
 	var target : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/rel>
+	**/
 	var rel : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/relList>
+	**/
 	var relList(default, null) : js.web.dom.DOMTokenList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/elements>
+	**/
 	var elements(default, null) : HTMLFormControlsCollection;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/checkValidity>
+	**/
 	function checkValidity():Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/reportValidity>
+	**/
 	function reportValidity():Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/requestSubmit>
+	**/
 	function requestSubmit(?submitter:Null<HTMLElement> = null):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/reset>
+	**/
 	function reset():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormElement/submit>
+	**/
 	function submit():Void;
 }

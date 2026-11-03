@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSMathInvert>
+**/
 @:native("CSSMathInvert") extern class CSSMathInvert extends CSSMathValue {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathInvert/value>
+	**/
 	var value(default, null) : CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSMathInvert/CSSMathInvert>
+	**/
 	function new(arg:CSSNumberish):Void;
 }

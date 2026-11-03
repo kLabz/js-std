@@ -24,11 +24,32 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGMaskElement>
+**/
 @:native("SVGMaskElement") extern class SVGMaskElement extends js.web.svg.SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMaskElement/maskUnits>
+	**/
 	var maskUnits(default, null) : js.web.svg.SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMaskElement/maskContentUnits>
+	**/
 	var maskContentUnits(default, null) : js.web.svg.SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMaskElement/x>
+	**/
 	var x(default, null) : js.web.svg.SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMaskElement/y>
+	**/
 	var y(default, null) : js.web.svg.SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMaskElement/width>
+	**/
 	var width(default, null) : js.web.svg.SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGMaskElement/height>
+	**/
 	var height(default, null) : js.web.svg.SVGAnimatedLength;
 }

@@ -26,6 +26,8 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/PresentationConnectionList>
 **/
 @:native("PresentationConnectionList") extern class PresentationConnectionList extends js.web.dom.EventTarget {
 	var connections(default, null) : Array<PresentationConnection>;

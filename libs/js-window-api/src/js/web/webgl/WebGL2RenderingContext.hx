@@ -24,6 +24,9 @@
 
 package js.web.webgl;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext>
+**/
 @:native("WebGL2RenderingContext") extern class WebGL2RenderingContext {
 	/**
 		From interface mixin WebGLRenderingContextBase
@@ -1215,14 +1218,20 @@ package js.web.webgl;
 	static inline var BROWSER_DEFAULT_WEBGL : GLenum = 0x9244;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/canvas>
 	**/
 	var canvas(default, null) : haxe.extern.EitherType<js.web.html.HTMLCanvasElement, js.web.canvas.OffscreenCanvas>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawingBufferWidth>
 	**/
 	var drawingBufferWidth(default, null) : GLsizei;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawingBufferHeight>
 	**/
 	var drawingBufferHeight(default, null) : GLsizei;
 	/**
@@ -1231,10 +1240,14 @@ package js.web.webgl;
 	var drawingBufferFormat(default, null) : GLenum;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/drawingBufferColorSpace>
 	**/
 	var drawingBufferColorSpace : js.web.canvas.PredefinedColorSpace;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/unpackColorSpace>
 	**/
 	var unpackColorSpace : js.web.canvas.PredefinedColorSpace;
 	/**
@@ -2287,334 +2300,500 @@ package js.web.webgl;
 	static inline var MAX_CLIENT_WAIT_TIMEOUT_WEBGL : GLenum = 0x9247;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/activeTexture>
 	**/
 	function activeTexture(texture:GLenum):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/attachShader>
 	**/
 	function attachShader(program:WebGLProgram, shader:WebGLShader):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/beginQuery>
 	**/
 	function beginQuery(target:GLenum, query:WebGLQuery):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/beginTransformFeedback>
 	**/
 	function beginTransformFeedback(primitiveMode:GLenum):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindAttribLocation>
 	**/
 	function bindAttribLocation(program:WebGLProgram, index:GLuint, name:String):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindBuffer>
 	**/
 	function bindBuffer(target:GLenum, buffer:Null<WebGLBuffer>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bindBufferBase>
 	**/
 	function bindBufferBase(target:GLenum, index:GLuint, buffer:Null<WebGLBuffer>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bindBufferRange>
 	**/
 	function bindBufferRange(target:GLenum, index:GLuint, buffer:Null<WebGLBuffer>, offset:GLintptr, size:GLsizeiptr):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindFramebuffer>
 	**/
 	function bindFramebuffer(target:GLenum, framebuffer:Null<WebGLFramebuffer>):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindRenderbuffer>
 	**/
 	function bindRenderbuffer(target:GLenum, renderbuffer:Null<WebGLRenderbuffer>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bindSampler>
 	**/
 	function bindSampler(unit:GLuint, sampler:Null<WebGLSampler>):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindTexture>
 	**/
 	function bindTexture(target:GLenum, texture:Null<WebGLTexture>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bindTransformFeedback>
 	**/
 	function bindTransformFeedback(target:GLenum, tf:Null<WebGLTransformFeedback>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bindVertexArray>
 	**/
 	function bindVertexArray(array:Null<WebGLVertexArrayObject>):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendColor>
 	**/
 	function blendColor(red:GLclampf, green:GLclampf, blue:GLclampf, alpha:GLclampf):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendEquation>
 	**/
 	function blendEquation(mode:GLenum):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendEquationSeparate>
 	**/
 	function blendEquationSeparate(modeRGB:GLenum, modeAlpha:GLenum):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendFunc>
 	**/
 	function blendFunc(sfactor:GLenum, dfactor:GLenum):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendFuncSeparate>
 	**/
 	function blendFuncSeparate(srcRGB:GLenum, dstRGB:GLenum, srcAlpha:GLenum, dstAlpha:GLenum):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/blitFramebuffer>
 	**/
 	function blitFramebuffer(srcX0:GLint, srcY0:GLint, srcX1:GLint, srcY1:GLint, dstX0:GLint, dstY0:GLint, dstX1:GLint, dstY1:GLint, mask:GLbitfield, filter:GLenum):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bufferData>
 	**/
 	overload function bufferData(target:GLenum, size:GLsizeiptr, usage:GLenum):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bufferData>
 	**/
 	overload function bufferData(target:GLenum, srcData:Null<js.web.dom.AllowSharedBufferSource>, usage:GLenum):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bufferData>
 	**/
 	overload function bufferData(target:GLenum, srcData:js.lib.ArrayBufferView, usage:GLenum, srcOffset:Float, ?length:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bufferSubData>
 	**/
 	overload function bufferSubData(target:GLenum, dstByteOffset:GLintptr, srcData:js.web.dom.AllowSharedBufferSource):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bufferSubData>
 	**/
 	overload function bufferSubData(target:GLenum, dstByteOffset:GLintptr, srcData:js.lib.ArrayBufferView, srcOffset:Float, ?length:GLuint = 0):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/checkFramebufferStatus>
 	**/
 	function checkFramebufferStatus(target:GLenum):GLenum;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clear>
 	**/
 	function clear(mask:GLbitfield):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/clearBuffer>
 	**/
 	function clearBufferfi(buffer:GLenum, drawbuffer:GLint, depth:GLfloat, stencil:GLint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/clearBuffer>
 	**/
 	function clearBufferfv(buffer:GLenum, drawbuffer:GLint, values:Float32List, ?srcOffset:Float = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/clearBuffer>
 	**/
 	function clearBufferiv(buffer:GLenum, drawbuffer:GLint, values:Int32List, ?srcOffset:Float = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/clearBuffer>
 	**/
 	function clearBufferuiv(buffer:GLenum, drawbuffer:GLint, values:Uint32List, ?srcOffset:Float = 0):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clearColor>
 	**/
 	function clearColor(red:GLclampf, green:GLclampf, blue:GLclampf, alpha:GLclampf):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clearDepth>
 	**/
 	function clearDepth(depth:GLclampf):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clearStencil>
 	**/
 	function clearStencil(s:GLint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/clientWaitSync>
 	**/
 	function clientWaitSync(sync:WebGLSync, flags:GLbitfield, timeout:GLuint64):GLenum;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/colorMask>
 	**/
 	function colorMask(red:GLboolean, green:GLboolean, blue:GLboolean, alpha:GLboolean):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/compileShader>
 	**/
 	function compileShader(shader:WebGLShader):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/compressedTexImage2D>
 	**/
 	overload function compressedTexImage2D(target:GLenum, level:GLint, internalformat:GLenum, width:GLsizei, height:GLsizei, border:GLint, imageSize:GLsizei, offset:GLintptr):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/compressedTexImage2D>
 	**/
 	overload function compressedTexImage2D(target:GLenum, level:GLint, internalformat:GLenum, width:GLsizei, height:GLsizei, border:GLint, srcData:js.lib.ArrayBufferView, ?srcOffset:Float = 0, ?srcLengthOverride:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/compressedTexImage3D>
 	**/
 	overload function compressedTexImage3D(target:GLenum, level:GLint, internalformat:GLenum, width:GLsizei, height:GLsizei, depth:GLsizei, border:GLint, imageSize:GLsizei, offset:GLintptr):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/compressedTexImage3D>
 	**/
 	overload function compressedTexImage3D(target:GLenum, level:GLint, internalformat:GLenum, width:GLsizei, height:GLsizei, depth:GLsizei, border:GLint, srcData:js.lib.ArrayBufferView, ?srcOffset:Float = 0, ?srcLengthOverride:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/compressedTexSubImage2D>
 	**/
 	overload function compressedTexSubImage2D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, width:GLsizei, height:GLsizei, format:GLenum, imageSize:GLsizei, offset:GLintptr):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/compressedTexSubImage2D>
 	**/
 	overload function compressedTexSubImage2D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, width:GLsizei, height:GLsizei, format:GLenum, srcData:js.lib.ArrayBufferView, ?srcOffset:Float = 0, ?srcLengthOverride:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/compressedTexSubImage3D>
 	**/
 	overload function compressedTexSubImage3D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, zoffset:GLint, width:GLsizei, height:GLsizei, depth:GLsizei, format:GLenum, imageSize:GLsizei, offset:GLintptr):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/compressedTexSubImage3D>
 	**/
 	overload function compressedTexSubImage3D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, zoffset:GLint, width:GLsizei, height:GLsizei, depth:GLsizei, format:GLenum, srcData:js.lib.ArrayBufferView, ?srcOffset:Float = 0, ?srcLengthOverride:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/copyBufferSubData>
 	**/
 	function copyBufferSubData(readTarget:GLenum, writeTarget:GLenum, readOffset:GLintptr, writeOffset:GLintptr, size:GLsizeiptr):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/copyTexImage2D>
 	**/
 	function copyTexImage2D(target:GLenum, level:GLint, internalformat:GLenum, x:GLint, y:GLint, width:GLsizei, height:GLsizei, border:GLint):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/copyTexSubImage2D>
 	**/
 	function copyTexSubImage2D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, x:GLint, y:GLint, width:GLsizei, height:GLsizei):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/copyTexSubImage3D>
 	**/
 	function copyTexSubImage3D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, zoffset:GLint, x:GLint, y:GLint, width:GLsizei, height:GLsizei):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createBuffer>
 	**/
 	function createBuffer():WebGLBuffer;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createFramebuffer>
 	**/
 	function createFramebuffer():WebGLFramebuffer;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createProgram>
 	**/
 	function createProgram():WebGLProgram;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/createQuery>
 	**/
 	function createQuery():WebGLQuery;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createRenderbuffer>
 	**/
 	function createRenderbuffer():WebGLRenderbuffer;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/createSampler>
 	**/
 	function createSampler():WebGLSampler;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createShader>
 	**/
 	function createShader(type:GLenum):Null<WebGLShader>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createTexture>
 	**/
 	function createTexture():WebGLTexture;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/createTransformFeedback>
 	**/
 	function createTransformFeedback():WebGLTransformFeedback;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/createVertexArray>
 	**/
 	function createVertexArray():WebGLVertexArrayObject;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/cullFace>
 	**/
 	function cullFace(mode:GLenum):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteBuffer>
 	**/
 	function deleteBuffer(buffer:Null<WebGLBuffer>):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteFramebuffer>
 	**/
 	function deleteFramebuffer(framebuffer:Null<WebGLFramebuffer>):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteProgram>
 	**/
 	function deleteProgram(program:Null<WebGLProgram>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/deleteQuery>
 	**/
 	function deleteQuery(query:Null<WebGLQuery>):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteRenderbuffer>
 	**/
 	function deleteRenderbuffer(renderbuffer:Null<WebGLRenderbuffer>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/deleteSampler>
 	**/
 	function deleteSampler(sampler:Null<WebGLSampler>):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteShader>
 	**/
 	function deleteShader(shader:Null<WebGLShader>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/deleteSync>
 	**/
 	function deleteSync(sync:Null<WebGLSync>):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteTexture>
 	**/
 	function deleteTexture(texture:Null<WebGLTexture>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/deleteTransformFeedback>
 	**/
 	function deleteTransformFeedback(tf:Null<WebGLTransformFeedback>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/deleteVertexArray>
 	**/
 	function deleteVertexArray(vertexArray:Null<WebGLVertexArrayObject>):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/depthFunc>
 	**/
 	function depthFunc(func:GLenum):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/depthMask>
 	**/
 	function depthMask(flag:GLboolean):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/depthRange>
 	**/
 	function depthRange(zNear:GLclampf, zFar:GLclampf):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/detachShader>
 	**/
 	function detachShader(program:WebGLProgram, shader:WebGLShader):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/disable>
 	**/
 	function disable(cap:GLenum):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/disableVertexAttribArray>
 	**/
 	function disableVertexAttribArray(index:GLuint):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawArrays>
 	**/
 	function drawArrays(mode:GLenum, first:GLint, count:GLsizei):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/drawArraysInstanced>
 	**/
 	function drawArraysInstanced(mode:GLenum, first:GLint, count:GLsizei, instanceCount:GLsizei):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/drawBuffers>
 	**/
 	function drawBuffers(buffers:Array<GLenum>):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawElements>
 	**/
 	function drawElements(mode:GLenum, count:GLsizei, type:GLenum, offset:GLintptr):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/drawElementsInstanced>
 	**/
 	function drawElementsInstanced(mode:GLenum, count:GLsizei, type:GLenum, offset:GLintptr, instanceCount:GLsizei):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/drawRangeElements>
 	**/
 	function drawRangeElements(mode:GLenum, start:GLuint, end:GLuint, count:GLsizei, type:GLenum, offset:GLintptr):Void;
 	/**
@@ -2623,658 +2802,986 @@ package js.web.webgl;
 	function drawingBufferStorage(sizedFormat:GLenum, width:Int, height:Int):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/enable>
 	**/
 	function enable(cap:GLenum):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/enableVertexAttribArray>
 	**/
 	function enableVertexAttribArray(index:GLuint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/endQuery>
 	**/
 	function endQuery(target:GLenum):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/endTransformFeedback>
 	**/
 	function endTransformFeedback():Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/fenceSync>
 	**/
 	function fenceSync(condition:GLenum, flags:GLbitfield):Null<WebGLSync>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/finish>
 	**/
 	function finish():Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/flush>
 	**/
 	function flush():Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/framebufferRenderbuffer>
 	**/
 	function framebufferRenderbuffer(target:GLenum, attachment:GLenum, renderbuffertarget:GLenum, renderbuffer:Null<WebGLRenderbuffer>):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/framebufferTexture2D>
 	**/
 	function framebufferTexture2D(target:GLenum, attachment:GLenum, textarget:GLenum, texture:Null<WebGLTexture>, level:GLint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/framebufferTextureLayer>
 	**/
 	function framebufferTextureLayer(target:GLenum, attachment:GLenum, texture:Null<WebGLTexture>, level:GLint, layer:GLint):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/frontFace>
 	**/
 	function frontFace(mode:GLenum):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/generateMipmap>
 	**/
 	function generateMipmap(target:GLenum):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getActiveAttrib>
 	**/
 	function getActiveAttrib(program:WebGLProgram, index:GLuint):Null<WebGLActiveInfo>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getActiveUniform>
 	**/
 	function getActiveUniform(program:WebGLProgram, index:GLuint):Null<WebGLActiveInfo>;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getActiveUniformBlockName>
 	**/
 	function getActiveUniformBlockName(program:WebGLProgram, uniformBlockIndex:GLuint):Null<String>;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getActiveUniformBlockParameter>
 	**/
 	function getActiveUniformBlockParameter(program:WebGLProgram, uniformBlockIndex:GLuint, pname:GLenum):Any;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getActiveUniforms>
 	**/
 	function getActiveUniforms(program:WebGLProgram, uniformIndices:Array<GLuint>, pname:GLenum):Any;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getAttachedShaders>
 	**/
 	function getAttachedShaders(program:WebGLProgram):Null<Array<WebGLShader>>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getAttribLocation>
 	**/
 	function getAttribLocation(program:WebGLProgram, name:String):GLint;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getBufferParameter>
 	**/
 	function getBufferParameter(target:GLenum, pname:GLenum):Any;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getBufferSubData>
 	**/
 	function getBufferSubData(target:GLenum, srcByteOffset:GLintptr, dstBuffer:js.lib.ArrayBufferView, ?dstOffset:Float = 0, ?length:GLuint = 0):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getContextAttributes>
 	**/
 	function getContextAttributes():Null<WebGLContextAttributes>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getError>
 	**/
 	function getError():GLenum;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getExtension>
 	**/
 	function getExtension(name:String):Null<{ }>;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getFragDataLocation>
 	**/
 	function getFragDataLocation(program:WebGLProgram, name:String):GLint;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getFramebufferAttachmentParameter>
 	**/
 	function getFramebufferAttachmentParameter(target:GLenum, attachment:GLenum, pname:GLenum):Any;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getIndexedParameter>
 	**/
 	function getIndexedParameter(target:GLenum, index:GLuint):Any;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getInternalformatParameter>
 	**/
 	function getInternalformatParameter(target:GLenum, internalformat:GLenum, pname:GLenum):Any;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getParameter>
 	**/
 	function getParameter(pname:GLenum):Any;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getProgramInfoLog>
 	**/
 	function getProgramInfoLog(program:WebGLProgram):Null<String>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getProgramParameter>
 	**/
 	function getProgramParameter(program:WebGLProgram, pname:GLenum):Any;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getQuery>
 	**/
 	function getQuery(target:GLenum, pname:GLenum):Null<WebGLQuery>;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getQueryParameter>
 	**/
 	function getQueryParameter(query:WebGLQuery, pname:GLenum):Any;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getRenderbufferParameter>
 	**/
 	function getRenderbufferParameter(target:GLenum, pname:GLenum):Any;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getSamplerParameter>
 	**/
 	function getSamplerParameter(sampler:WebGLSampler, pname:GLenum):Any;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderInfoLog>
 	**/
 	function getShaderInfoLog(shader:WebGLShader):Null<String>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderParameter>
 	**/
 	function getShaderParameter(shader:WebGLShader, pname:GLenum):Any;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderPrecisionFormat>
 	**/
 	function getShaderPrecisionFormat(shadertype:GLenum, precisiontype:GLenum):Null<WebGLShaderPrecisionFormat>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderSource>
 	**/
 	function getShaderSource(shader:WebGLShader):Null<String>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getSupportedExtensions>
 	**/
 	function getSupportedExtensions():Null<Array<String>>;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getSyncParameter>
 	**/
 	function getSyncParameter(sync:WebGLSync, pname:GLenum):Any;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getTexParameter>
 	**/
 	function getTexParameter(target:GLenum, pname:GLenum):Any;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getTransformFeedbackVarying>
 	**/
 	function getTransformFeedbackVarying(program:WebGLProgram, index:GLuint):Null<WebGLActiveInfo>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getUniform>
 	**/
 	function getUniform(program:WebGLProgram, location:WebGLUniformLocation):Any;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getUniformBlockIndex>
 	**/
 	function getUniformBlockIndex(program:WebGLProgram, uniformBlockName:String):GLuint;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getUniformIndices>
 	**/
 	function getUniformIndices(program:WebGLProgram, uniformNames:Array<String>):Null<Array<GLuint>>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getUniformLocation>
 	**/
 	function getUniformLocation(program:WebGLProgram, name:String):Null<WebGLUniformLocation>;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getVertexAttrib>
 	**/
 	function getVertexAttrib(index:GLuint, pname:GLenum):Any;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getVertexAttribOffset>
 	**/
 	function getVertexAttribOffset(index:GLuint, pname:GLenum):GLintptr;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/hint>
 	**/
 	function hint(target:GLenum, mode:GLenum):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/invalidateFramebuffer>
 	**/
 	function invalidateFramebuffer(target:GLenum, attachments:Array<GLenum>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/invalidateSubFramebuffer>
 	**/
 	function invalidateSubFramebuffer(target:GLenum, attachments:Array<GLenum>, x:GLint, y:GLint, width:GLsizei, height:GLsizei):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isBuffer>
 	**/
 	function isBuffer(buffer:Null<WebGLBuffer>):GLboolean;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isContextLost>
 	**/
 	function isContextLost():Bool;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isEnabled>
 	**/
 	function isEnabled(cap:GLenum):GLboolean;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isFramebuffer>
 	**/
 	function isFramebuffer(framebuffer:Null<WebGLFramebuffer>):GLboolean;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isProgram>
 	**/
 	function isProgram(program:Null<WebGLProgram>):GLboolean;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/isQuery>
 	**/
 	function isQuery(query:Null<WebGLQuery>):GLboolean;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isRenderbuffer>
 	**/
 	function isRenderbuffer(renderbuffer:Null<WebGLRenderbuffer>):GLboolean;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/isSampler>
 	**/
 	function isSampler(sampler:Null<WebGLSampler>):GLboolean;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isShader>
 	**/
 	function isShader(shader:Null<WebGLShader>):GLboolean;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/isSync>
 	**/
 	function isSync(sync:Null<WebGLSync>):GLboolean;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isTexture>
 	**/
 	function isTexture(texture:Null<WebGLTexture>):GLboolean;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/isTransformFeedback>
 	**/
 	function isTransformFeedback(tf:Null<WebGLTransformFeedback>):GLboolean;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/isVertexArray>
 	**/
 	function isVertexArray(vertexArray:Null<WebGLVertexArrayObject>):GLboolean;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/lineWidth>
 	**/
 	function lineWidth(width:GLfloat):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/linkProgram>
 	**/
 	function linkProgram(program:WebGLProgram):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/makeXRCompatible>
 	**/
 	function makeXRCompatible():js.lib.Promise<Void>;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/pauseTransformFeedback>
 	**/
 	function pauseTransformFeedback():Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/pixelStorei>
 	**/
 	function pixelStorei(pname:GLenum, param:GLint):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/polygonOffset>
 	**/
 	function polygonOffset(factor:GLfloat, units:GLfloat):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/readBuffer>
 	**/
 	function readBuffer(src:GLenum):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/readPixels>
 	**/
 	overload function readPixels(x:GLint, y:GLint, width:GLsizei, height:GLsizei, format:GLenum, type:GLenum, dstData:Null<js.lib.ArrayBufferView>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/readPixels>
 	**/
 	overload function readPixels(x:GLint, y:GLint, width:GLsizei, height:GLsizei, format:GLenum, type:GLenum, offset:GLintptr):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/readPixels>
 	**/
 	overload function readPixels(x:GLint, y:GLint, width:GLsizei, height:GLsizei, format:GLenum, type:GLenum, dstData:js.lib.ArrayBufferView, dstOffset:Float):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/renderbufferStorage>
 	**/
 	function renderbufferStorage(target:GLenum, internalformat:GLenum, width:GLsizei, height:GLsizei):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/renderbufferStorageMultisample>
 	**/
 	function renderbufferStorageMultisample(target:GLenum, samples:GLsizei, internalformat:GLenum, width:GLsizei, height:GLsizei):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/resumeTransformFeedback>
 	**/
 	function resumeTransformFeedback():Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/sampleCoverage>
 	**/
 	function sampleCoverage(value:GLclampf, invert:GLboolean):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/samplerParameter>
 	**/
 	function samplerParameterf(sampler:WebGLSampler, pname:GLenum, param:GLfloat):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/samplerParameter>
 	**/
 	function samplerParameteri(sampler:WebGLSampler, pname:GLenum, param:GLint):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/scissor>
 	**/
 	function scissor(x:GLint, y:GLint, width:GLsizei, height:GLsizei):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/shaderSource>
 	**/
 	function shaderSource(shader:WebGLShader, source:String):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilFunc>
 	**/
 	function stencilFunc(func:GLenum, ref:GLint, mask:GLuint):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilFuncSeparate>
 	**/
 	function stencilFuncSeparate(face:GLenum, func:GLenum, ref:GLint, mask:GLuint):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilMask>
 	**/
 	function stencilMask(mask:GLuint):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilMaskSeparate>
 	**/
 	function stencilMaskSeparate(face:GLenum, mask:GLuint):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilOp>
 	**/
 	function stencilOp(fail:GLenum, zfail:GLenum, zpass:GLenum):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilOpSeparate>
 	**/
 	function stencilOpSeparate(face:GLenum, fail:GLenum, zfail:GLenum, zpass:GLenum):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texImage2D>
 	**/
 	overload function texImage2D(target:GLenum, level:GLint, internalformat:GLint, width:GLsizei, height:GLsizei, border:GLint, format:GLenum, type:GLenum, pixels:Null<js.lib.ArrayBufferView>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texImage2D>
 	**/
 	overload function texImage2D(target:GLenum, level:GLint, internalformat:GLint, format:GLenum, type:GLenum, source:TexImageSource):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texImage2D>
 	**/
 	overload function texImage2D(target:GLenum, level:GLint, internalformat:GLint, width:GLsizei, height:GLsizei, border:GLint, format:GLenum, type:GLenum, pboOffset:GLintptr):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texImage2D>
 	**/
 	overload function texImage2D(target:GLenum, level:GLint, internalformat:GLint, width:GLsizei, height:GLsizei, border:GLint, format:GLenum, type:GLenum, source:TexImageSource):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texImage2D>
 	**/
 	overload function texImage2D(target:GLenum, level:GLint, internalformat:GLint, width:GLsizei, height:GLsizei, border:GLint, format:GLenum, type:GLenum, srcData:js.lib.ArrayBufferView, srcOffset:Float):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/texImage3D>
 	**/
 	overload function texImage3D(target:GLenum, level:GLint, internalformat:GLint, width:GLsizei, height:GLsizei, depth:GLsizei, border:GLint, format:GLenum, type:GLenum, pboOffset:GLintptr):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/texImage3D>
 	**/
 	overload function texImage3D(target:GLenum, level:GLint, internalformat:GLint, width:GLsizei, height:GLsizei, depth:GLsizei, border:GLint, format:GLenum, type:GLenum, source:TexImageSource):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/texImage3D>
 	**/
 	overload function texImage3D(target:GLenum, level:GLint, internalformat:GLint, width:GLsizei, height:GLsizei, depth:GLsizei, border:GLint, format:GLenum, type:GLenum, srcData:Null<js.lib.ArrayBufferView>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/texImage3D>
 	**/
 	overload function texImage3D(target:GLenum, level:GLint, internalformat:GLint, width:GLsizei, height:GLsizei, depth:GLsizei, border:GLint, format:GLenum, type:GLenum, srcData:js.lib.ArrayBufferView, srcOffset:Float):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texParameter>
 	**/
 	function texParameterf(target:GLenum, pname:GLenum, param:GLfloat):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texParameter>
 	**/
 	function texParameteri(target:GLenum, pname:GLenum, param:GLint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/texStorage2D>
 	**/
 	function texStorage2D(target:GLenum, levels:GLsizei, internalformat:GLenum, width:GLsizei, height:GLsizei):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/texStorage3D>
 	**/
 	function texStorage3D(target:GLenum, levels:GLsizei, internalformat:GLenum, width:GLsizei, height:GLsizei, depth:GLsizei):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texSubImage2D>
 	**/
 	overload function texSubImage2D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, width:GLsizei, height:GLsizei, format:GLenum, type:GLenum, pixels:Null<js.lib.ArrayBufferView>):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texSubImage2D>
 	**/
 	overload function texSubImage2D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, format:GLenum, type:GLenum, source:TexImageSource):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texSubImage2D>
 	**/
 	overload function texSubImage2D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, width:GLsizei, height:GLsizei, format:GLenum, type:GLenum, pboOffset:GLintptr):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texSubImage2D>
 	**/
 	overload function texSubImage2D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, width:GLsizei, height:GLsizei, format:GLenum, type:GLenum, source:TexImageSource):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texSubImage2D>
 	**/
 	overload function texSubImage2D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, width:GLsizei, height:GLsizei, format:GLenum, type:GLenum, srcData:js.lib.ArrayBufferView, srcOffset:Float):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/texSubImage3D>
 	**/
 	overload function texSubImage3D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, zoffset:GLint, width:GLsizei, height:GLsizei, depth:GLsizei, format:GLenum, type:GLenum, pboOffset:GLintptr):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/texSubImage3D>
 	**/
 	overload function texSubImage3D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, zoffset:GLint, width:GLsizei, height:GLsizei, depth:GLsizei, format:GLenum, type:GLenum, source:TexImageSource):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/texSubImage3D>
 	**/
 	overload function texSubImage3D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, zoffset:GLint, width:GLsizei, height:GLsizei, depth:GLsizei, format:GLenum, type:GLenum, srcData:Null<js.lib.ArrayBufferView>, ?srcOffset:Float = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/transformFeedbackVaryings>
 	**/
 	function transformFeedbackVaryings(program:WebGLProgram, varyings:Array<String>, bufferMode:GLenum):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform1f(location:Null<WebGLUniformLocation>, x:GLfloat):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform1fv(location:Null<WebGLUniformLocation>, data:Float32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform1i(location:Null<WebGLUniformLocation>, x:GLint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform1iv(location:Null<WebGLUniformLocation>, data:Int32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform>
 	**/
 	function uniform1ui(location:Null<WebGLUniformLocation>, v0:GLuint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform>
 	**/
 	function uniform1uiv(location:Null<WebGLUniformLocation>, data:Uint32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform2f(location:Null<WebGLUniformLocation>, x:GLfloat, y:GLfloat):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform2fv(location:Null<WebGLUniformLocation>, data:Float32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform2i(location:Null<WebGLUniformLocation>, x:GLint, y:GLint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform2iv(location:Null<WebGLUniformLocation>, data:Int32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform>
 	**/
 	function uniform2ui(location:Null<WebGLUniformLocation>, v0:GLuint, v1:GLuint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform>
 	**/
 	function uniform2uiv(location:Null<WebGLUniformLocation>, data:Uint32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform3f(location:Null<WebGLUniformLocation>, x:GLfloat, y:GLfloat, z:GLfloat):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform3fv(location:Null<WebGLUniformLocation>, data:Float32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform3i(location:Null<WebGLUniformLocation>, x:GLint, y:GLint, z:GLint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform3iv(location:Null<WebGLUniformLocation>, data:Int32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform>
 	**/
 	function uniform3ui(location:Null<WebGLUniformLocation>, v0:GLuint, v1:GLuint, v2:GLuint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform>
 	**/
 	function uniform3uiv(location:Null<WebGLUniformLocation>, data:Uint32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform4f(location:Null<WebGLUniformLocation>, x:GLfloat, y:GLfloat, z:GLfloat, w:GLfloat):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform4fv(location:Null<WebGLUniformLocation>, data:Float32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform4i(location:Null<WebGLUniformLocation>, x:GLint, y:GLint, z:GLint, w:GLint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
 	**/
 	function uniform4iv(location:Null<WebGLUniformLocation>, data:Int32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform>
 	**/
 	function uniform4ui(location:Null<WebGLUniformLocation>, v0:GLuint, v1:GLuint, v2:GLuint, v3:GLuint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform>
 	**/
 	function uniform4uiv(location:Null<WebGLUniformLocation>, data:Uint32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformBlockBinding>
 	**/
 	function uniformBlockBinding(program:WebGLProgram, uniformBlockIndex:GLuint, uniformBlockBinding:GLuint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformMatrix>
 	**/
 	function uniformMatrix2fv(location:Null<WebGLUniformLocation>, transpose:GLboolean, data:Float32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformMatrix>
 	**/
 	function uniformMatrix2x3fv(location:Null<WebGLUniformLocation>, transpose:GLboolean, data:Float32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformMatrix>
 	**/
 	function uniformMatrix2x4fv(location:Null<WebGLUniformLocation>, transpose:GLboolean, data:Float32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniformMatrix>
 	**/
 	function uniformMatrix3fv(location:Null<WebGLUniformLocation>, transpose:GLboolean, data:Float32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformMatrix>
 	**/
 	function uniformMatrix3x2fv(location:Null<WebGLUniformLocation>, transpose:GLboolean, data:Float32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformMatrix>
 	**/
 	function uniformMatrix3x4fv(location:Null<WebGLUniformLocation>, transpose:GLboolean, data:Float32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextOverloads
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniformMatrix>
 	**/
 	function uniformMatrix4fv(location:Null<WebGLUniformLocation>, transpose:GLboolean, data:Float32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformMatrix>
 	**/
 	function uniformMatrix4x2fv(location:Null<WebGLUniformLocation>, transpose:GLboolean, data:Float32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformMatrix>
 	**/
 	function uniformMatrix4x3fv(location:Null<WebGLUniformLocation>, transpose:GLboolean, data:Float32List, ?srcOffset:Float = 0, ?srcLength:GLuint = 0):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/useProgram>
 	**/
 	function useProgram(program:Null<WebGLProgram>):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/validateProgram>
 	**/
 	function validateProgram(program:WebGLProgram):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib>
 	**/
 	function vertexAttrib1f(index:GLuint, x:GLfloat):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib>
 	**/
 	function vertexAttrib1fv(index:GLuint, values:Float32List):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib>
 	**/
 	function vertexAttrib2f(index:GLuint, x:GLfloat, y:GLfloat):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib>
 	**/
 	function vertexAttrib2fv(index:GLuint, values:Float32List):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib>
 	**/
 	function vertexAttrib3f(index:GLuint, x:GLfloat, y:GLfloat, z:GLfloat):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib>
 	**/
 	function vertexAttrib3fv(index:GLuint, values:Float32List):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib>
 	**/
 	function vertexAttrib4f(index:GLuint, x:GLfloat, y:GLfloat, z:GLfloat, w:GLfloat):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib>
 	**/
 	function vertexAttrib4fv(index:GLuint, values:Float32List):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/vertexAttribDivisor>
 	**/
 	function vertexAttribDivisor(index:GLuint, divisor:GLuint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/vertexAttribI>
 	**/
 	function vertexAttribI4i(index:GLuint, x:GLint, y:GLint, z:GLint, w:GLint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/vertexAttribI>
 	**/
 	function vertexAttribI4iv(index:GLuint, values:Int32List):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/vertexAttribI>
 	**/
 	function vertexAttribI4ui(index:GLuint, x:GLuint, y:GLuint, z:GLuint, w:GLuint):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/vertexAttribI>
 	**/
 	function vertexAttribI4uiv(index:GLuint, values:Uint32List):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/vertexAttribIPointer>
 	**/
 	function vertexAttribIPointer(index:GLuint, size:GLint, type:GLenum, stride:GLsizei, offset:GLintptr):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttribPointer>
 	**/
 	function vertexAttribPointer(index:GLuint, size:GLint, type:GLenum, normalized:GLboolean, stride:GLsizei, offset:GLintptr):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/viewport>
 	**/
 	function viewport(x:GLint, y:GLint, width:GLsizei, height:GLsizei):Void;
 	/**
 		From interface mixin WebGL2RenderingContextBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/waitSync>
 	**/
 	function waitSync(sync:WebGLSync, flags:GLbitfield, timeout:GLint64):Void;
 }

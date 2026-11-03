@@ -24,8 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MessageChannel>
+**/
 @:native("MessageChannel") extern class MessageChannel {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MessageChannel/port1>
+	**/
 	var port1(default, null) : MessagePort;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MessageChannel/port2>
+	**/
 	var port2(default, null) : MessagePort;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MessageChannel/MessageChannel>
+	**/
 	function new():Void;
 }

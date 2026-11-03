@@ -26,12 +26,29 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEvent>
 **/
 @:native("DeviceMotionEvent") extern class DeviceMotionEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEvent/acceleration>
+	**/
 	var acceleration(default, null) : Null<DeviceMotionEventAcceleration>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEvent/accelerationIncludingGravity>
+	**/
 	var accelerationIncludingGravity(default, null) : Null<DeviceMotionEventAcceleration>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEvent/rotationRate>
+	**/
 	var rotationRate(default, null) : Null<DeviceMotionEventRotationRate>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEvent/interval>
+	**/
 	var interval(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEvent/DeviceMotionEvent>
+	**/
 	function new(type:String, ?eventInitDict:DeviceMotionEventInit):Void;
 	function requestPermission():js.lib.Promise<js.web.misc.PermissionState>;
 }

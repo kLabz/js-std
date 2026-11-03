@@ -24,8 +24,20 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection>
+**/
 @:native("HTMLOptionsCollection") extern class HTMLOptionsCollection extends js.web.dom.HTMLCollection {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection/selectedIndex>
+	**/
 	var selectedIndex : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection/add>
+	**/
 	function add(element:haxe.extern.EitherType<HTMLOptionElement, HTMLOptGroupElement>, ?before:Null<haxe.extern.EitherType<HTMLElement, Int>> = null):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection/remove>
+	**/
 	function remove(index:Int):Void;
 }

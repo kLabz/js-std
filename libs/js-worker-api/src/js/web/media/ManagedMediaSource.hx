@@ -24,9 +24,18 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ManagedMediaSource>
+**/
 @:native("ManagedMediaSource") extern class ManagedMediaSource extends MediaSource {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ManagedMediaSource/streaming>
+	**/
 	var streaming(default, null) : Bool;
 	var onstartstreaming : js.web.html.EventHandler;
 	var onendstreaming : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ManagedMediaSource/ManagedMediaSource>
+	**/
 	function new():Void;
 }

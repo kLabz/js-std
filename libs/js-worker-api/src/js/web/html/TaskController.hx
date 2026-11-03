@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TaskController>
+**/
 @:native("TaskController") extern class TaskController extends js.web.dom.AbortController {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TaskController/TaskController>
+	**/
 	function new(?init:TaskControllerInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TaskController/setPriority>
+	**/
 	function setPriority(priority:TaskPriority):Void;
 }

@@ -24,14 +24,34 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/AudioTrack>
+**/
 @:native("AudioTrack") extern class AudioTrack {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioTrack/id>
+	**/
 	var id(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioTrack/kind>
+	**/
 	var kind(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioTrack/label>
+	**/
 	var label(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioTrack/language>
+	**/
 	var language(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioTrack/enabled>
+	**/
 	var enabled : Bool;
 	/**
 		From partial interface in media-source.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/AudioTrack/sourceBuffer>
 	**/
 	var sourceBuffer(default, null) : Null<js.web.media.SourceBuffer>;
 }

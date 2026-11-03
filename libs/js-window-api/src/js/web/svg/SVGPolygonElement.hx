@@ -24,13 +24,20 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGPolygonElement>
+**/
 @:native("SVGPolygonElement") extern class SVGPolygonElement extends SVGGeometryElement {
 	/**
 		From interface mixin SVGAnimatedPoints
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPolygonElement/points>
 	**/
 	var points(default, null) : SVGPointList;
 	/**
 		From interface mixin SVGAnimatedPoints
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGPolygonElement/animatedPoints>
 	**/
 	var animatedPoints(default, null) : SVGPointList;
 }

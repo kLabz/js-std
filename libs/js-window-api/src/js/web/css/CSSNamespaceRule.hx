@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSNamespaceRule>
+**/
 @:native("CSSNamespaceRule") extern class CSSNamespaceRule extends CSSRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNamespaceRule/namespaceURI>
+	**/
 	var namespaceURI(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNamespaceRule/prefix>
+	**/
 	var prefix(default, null) : String;
 }

@@ -24,9 +24,24 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XRMediaBinding>
+**/
 @:native("XRMediaBinding") extern class XRMediaBinding {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRMediaBinding/XRMediaBinding>
+	**/
 	function new(session:XRSession):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRMediaBinding/createCylinderLayer>
+	**/
 	function createCylinderLayer(video:js.web.html.HTMLVideoElement, ?init:XRMediaCylinderLayerInit):XRCylinderLayer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRMediaBinding/createEquirectLayer>
+	**/
 	function createEquirectLayer(video:js.web.html.HTMLVideoElement, ?init:XRMediaEquirectLayerInit):XREquirectLayer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRMediaBinding/createQuadLayer>
+	**/
 	function createQuadLayer(video:js.web.html.HTMLVideoElement, ?init:XRMediaQuadLayerInit):XRQuadLayer;
 }

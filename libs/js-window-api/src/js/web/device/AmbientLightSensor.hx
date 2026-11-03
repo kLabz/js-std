@@ -26,8 +26,16 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/AmbientLightSensor>
 **/
 @:native("AmbientLightSensor") extern class AmbientLightSensor extends Sensor {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AmbientLightSensor/illuminance>
+	**/
 	var illuminance(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AmbientLightSensor/AmbientLightSensor>
+	**/
 	function new(?sensorOptions:SensorOptions):Void;
 }

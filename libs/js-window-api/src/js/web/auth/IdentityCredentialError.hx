@@ -26,9 +26,20 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/IdentityCredentialError>
 **/
 @:native("IdentityCredentialError") extern class IdentityCredentialError extends js.web.dom.DOMException {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IdentityCredentialError/error>
+	**/
 	var error(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IdentityCredentialError/url>
+	**/
 	var url(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IdentityCredentialError/IdentityCredentialError>
+	**/
 	function new(?message:String = "", ?options:IdentityCredentialErrorInit):Void;
 }

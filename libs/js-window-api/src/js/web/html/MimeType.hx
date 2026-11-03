@@ -24,9 +24,16 @@
 
 package js.web.html;
 
-@:native("MimeType") extern class MimeType {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MimeType>
+**/
+@:native("MimeType") @:deprecated extern class MimeType {
+	@:deprecated
 	var type(default, null) : String;
+	@:deprecated
 	var description(default, null) : String;
+	@:deprecated
 	var suffixes(default, null) : String;
+	@:deprecated
 	var enabledPlugin(default, null) : Plugin;
 }

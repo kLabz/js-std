@@ -24,8 +24,20 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGCircleElement>
+**/
 @:native("SVGCircleElement") extern class SVGCircleElement extends SVGGeometryElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGCircleElement/cx>
+	**/
 	var cx(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGCircleElement/cy>
+	**/
 	var cy(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGCircleElement/r>
+	**/
 	var r(default, null) : SVGAnimatedLength;
 }

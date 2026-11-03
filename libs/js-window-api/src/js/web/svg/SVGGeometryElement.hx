@@ -24,10 +24,28 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGGeometryElement>
+**/
 @:native("SVGGeometryElement") extern class SVGGeometryElement extends SVGGraphicsElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGeometryElement/pathLength>
+	**/
 	var pathLength(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGeometryElement/getPointAtLength>
+	**/
 	function getPointAtLength(distance:Float):js.web.dom.SVGPoint;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGeometryElement/getTotalLength>
+	**/
 	function getTotalLength():Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGeometryElement/isPointInFill>
+	**/
 	function isPointInFill(?point:js.web.dom.DOMPointInit):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGGeometryElement/isPointInStroke>
+	**/
 	function isPointInStroke(?point:js.web.dom.DOMPointInit):Bool;
 }

@@ -26,9 +26,20 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GeolocationPosition>
 **/
 @:native("GeolocationPosition") extern class GeolocationPosition {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GeolocationPosition/coords>
+	**/
 	var coords(default, null) : GeolocationCoordinates;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GeolocationPosition/timestamp>
+	**/
 	var timestamp(default, null) : js.web.perf.EpochTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GeolocationPosition/toJSON>
+	**/
 	function toJSON():{ };
 }

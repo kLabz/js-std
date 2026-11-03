@@ -24,11 +24,29 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice>
+**/
 @:native("SpeechSynthesisVoice") extern class SpeechSynthesisVoice {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/voiceURI>
+	**/
 	var voiceURI(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/lang>
+	**/
 	var lang(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/localService>
+	**/
 	var localService(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/default>
+	**/
 	@:native("default")
 	var default_(default, null) : Bool;
 }

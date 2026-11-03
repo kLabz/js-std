@@ -26,13 +26,36 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed>
 **/
 @:native("OES_draw_buffers_indexed") extern class OES_draw_buffers_indexed {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/blendEquationSeparateiOES>
+	**/
 	function blendEquationSeparateiOES(buf:GLuint, modeRGB:GLenum, modeAlpha:GLenum):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/blendEquationiOES>
+	**/
 	function blendEquationiOES(buf:GLuint, mode:GLenum):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/blendFuncSeparateiOES>
+	**/
 	function blendFuncSeparateiOES(buf:GLuint, srcRGB:GLenum, dstRGB:GLenum, srcAlpha:GLenum, dstAlpha:GLenum):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/blendFunciOES>
+	**/
 	function blendFunciOES(buf:GLuint, src:GLenum, dst:GLenum):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/colorMaskiOES>
+	**/
 	function colorMaskiOES(buf:GLuint, r:GLboolean, g:GLboolean, b:GLboolean, a:GLboolean):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/disableiOES>
+	**/
 	function disableiOES(target:GLenum, index:GLuint):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/enableiOES>
+	**/
 	function enableiOES(target:GLenum, index:GLuint):Void;
 }

@@ -24,6 +24,12 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CSSConditionRule>
+**/
 @:native("CSSConditionRule") extern class CSSConditionRule extends CSSGroupingRule {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSConditionRule/conditionText>
+	**/
 	var conditionText(default, null) : String;
 }

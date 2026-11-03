@@ -26,11 +26,28 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo>
 **/
 @:native("MediaDeviceInfo") extern class MediaDeviceInfo {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/deviceId>
+	**/
 	var deviceId(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/kind>
+	**/
 	var kind(default, null) : MediaDeviceKind;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/label>
+	**/
 	var label(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/groupId>
+	**/
 	var groupId(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/toJSON>
+	**/
 	function toJSON():{ };
 }

@@ -26,8 +26,16 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/USBConnectionEvent>
 **/
 @:native("USBConnectionEvent") extern class USBConnectionEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/USBConnectionEvent/device>
+	**/
 	var device(default, null) : USBDevice;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/USBConnectionEvent/USBConnectionEvent>
+	**/
 	function new(type:String, eventInitDict:USBConnectionEventInit):Void;
 }

@@ -24,13 +24,30 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TransitionEvent>
+**/
 @:native("TransitionEvent") extern class TransitionEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TransitionEvent/propertyName>
+	**/
 	var propertyName(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TransitionEvent/elapsedTime>
+	**/
 	var elapsedTime(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TransitionEvent/pseudoElement>
+	**/
 	var pseudoElement(default, null) : String;
 	/**
 		From partial interface in css-transitions-2.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/TransitionEvent/animation>
 	**/
 	var animation(default, null) : Null<CSSTransition>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TransitionEvent/TransitionEvent>
+	**/
 	function new(type:String, ?transitionEventInitDict:TransitionEventInit):Void;
 }

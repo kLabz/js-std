@@ -24,13 +24,40 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement>
+**/
 @:native("HTMLTemplateElement") extern class HTMLTemplateElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement/content>
+	**/
 	var content(default, null) : js.web.dom.DocumentFragment;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement/htmlFor>
+	**/
 	var htmlFor : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement/shadowRootMode>
+	**/
 	var shadowRootMode : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement/shadowRootDelegatesFocus>
+	**/
 	var shadowRootDelegatesFocus : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement/shadowRootSerializable>
+	**/
 	var shadowRootSerializable : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement/shadowRootSlotAssignment>
+	**/
 	var shadowRootSlotAssignment : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement/shadowRootClonable>
+	**/
 	var shadowRootClonable : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement/shadowRootCustomElementRegistry>
+	**/
 	var shadowRootCustomElementRegistry : String;
 }

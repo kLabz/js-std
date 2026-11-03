@@ -24,16 +24,49 @@
 
 package js.web.webrtc;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel>
+**/
 @:native("RTCDataChannel") extern class RTCDataChannel extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/label>
+	**/
 	var label(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/ordered>
+	**/
 	var ordered(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/maxPacketLifeTime>
+	**/
 	var maxPacketLifeTime(default, null) : Null<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/maxRetransmits>
+	**/
 	var maxRetransmits(default, null) : Null<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/protocol>
+	**/
 	var protocol(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/negotiated>
+	**/
 	var negotiated(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/id>
+	**/
 	var id(default, null) : Null<Int>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/readyState>
+	**/
 	var readyState(default, null) : RTCDataChannelState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/bufferedAmount>
+	**/
 	var bufferedAmount(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/bufferedAmountLowThreshold>
+	**/
 	var bufferedAmountLowThreshold : Int;
 	var onopen : js.web.html.EventHandler;
 	var onbufferedamountlow : js.web.html.EventHandler;
@@ -41,14 +74,34 @@ package js.web.webrtc;
 	var onclosing : js.web.html.EventHandler;
 	var onclose : js.web.html.EventHandler;
 	var onmessage : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/binaryType>
+	**/
 	var binaryType : js.web.net.BinaryType;
 	/**
 		From partial interface in webrtc-priority.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/priority>
 	**/
 	var priority(default, null) : RTCPriorityType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/send>
+	**/
 	overload function send(data:String):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/send>
+	**/
 	overload function send(data:js.web.net.Blob):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/send>
+	**/
 	overload function send(data:js.lib.ArrayBuffer):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/send>
+	**/
 	overload function send(data:js.lib.ArrayBufferView):Void;
 }

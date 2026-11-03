@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/OES_fbo_render_mipmap>
 **/
 @:native("OES_fbo_render_mipmap") extern class OES_fbo_render_mipmap {
 

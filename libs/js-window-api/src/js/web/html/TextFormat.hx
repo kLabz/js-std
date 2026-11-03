@@ -24,10 +24,28 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TextFormat>
+**/
 @:native("TextFormat") extern class TextFormat {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextFormat/rangeStart>
+	**/
 	var rangeStart(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextFormat/rangeEnd>
+	**/
 	var rangeEnd(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextFormat/underlineStyle>
+	**/
 	var underlineStyle(default, null) : UnderlineStyle;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextFormat/underlineThickness>
+	**/
 	var underlineThickness(default, null) : UnderlineThickness;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextFormat/TextFormat>
+	**/
 	function new(?options:TextFormatInit):Void;
 }

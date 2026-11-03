@@ -24,7 +24,16 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/TextTrackCueList>
+**/
 @:native("TextTrackCueList") extern class TextTrackCueList implements ArrayAccess<TextTrackCue> {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrackCueList/length>
+	**/
 	var length(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TextTrackCueList/getCueById>
+	**/
 	function getCueById(id:String):Null<TextTrackCue>;
 }

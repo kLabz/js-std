@@ -24,6 +24,9 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/RestrictionTarget>
+**/
 @:native("RestrictionTarget") extern class RestrictionTarget {
 	/**
 		Only available in secure contexts (HTTPS).

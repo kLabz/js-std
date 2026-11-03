@@ -24,10 +24,28 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGTextPositioningElement>
+**/
 @:native("SVGTextPositioningElement") extern class SVGTextPositioningElement extends SVGTextContentElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPositioningElement/x>
+	**/
 	var x(default, null) : SVGAnimatedLengthList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPositioningElement/y>
+	**/
 	var y(default, null) : SVGAnimatedLengthList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPositioningElement/dx>
+	**/
 	var dx(default, null) : SVGAnimatedLengthList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPositioningElement/dy>
+	**/
 	var dy(default, null) : SVGAnimatedLengthList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPositioningElement/rotate>
+	**/
 	var rotate(default, null) : SVGAnimatedNumberList;
 }

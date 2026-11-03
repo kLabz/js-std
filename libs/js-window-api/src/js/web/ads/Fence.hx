@@ -24,10 +24,25 @@
 
 package js.web.ads;
 
-@:native("Fence") extern class Fence {
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Fence>
+**/
+@:native("Fence") @:deprecated extern class Fence {
 	function disableUntrustedNetwork():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Fence/getNestedConfigs>
+	**/
+	@:deprecated
 	function getNestedConfigs():Array<FencedFrameConfig>;
 	function notifyEvent(event:js.web.dom.Event):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Fence/reportEvent>
+	**/
+	@:deprecated
 	function reportEvent(?event:ReportEventType):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Fence/setReportEventDataForAutomaticBeacons>
+	**/
+	@:deprecated
 	function setReportEventDataForAutomaticBeacons(?event:FenceEvent):Void;
 }

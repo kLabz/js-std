@@ -24,16 +24,52 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLFieldSetElement>
+**/
 @:native("HTMLFieldSetElement") extern class HTMLFieldSetElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFieldSetElement/disabled>
+	**/
 	var disabled : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFieldSetElement/form>
+	**/
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFieldSetElement/name>
+	**/
 	var name : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFieldSetElement/type>
+	**/
 	var type(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFieldSetElement/elements>
+	**/
 	var elements(default, null) : js.web.dom.HTMLCollection;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFieldSetElement/willValidate>
+	**/
 	var willValidate(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFieldSetElement/validity>
+	**/
 	var validity(default, null) : ValidityState;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFieldSetElement/validationMessage>
+	**/
 	var validationMessage(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFieldSetElement/checkValidity>
+	**/
 	function checkValidity():Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFieldSetElement/reportValidity>
+	**/
 	function reportValidity():Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLFieldSetElement/setCustomValidity>
+	**/
 	function setCustomValidity(error:String):Void;
 }

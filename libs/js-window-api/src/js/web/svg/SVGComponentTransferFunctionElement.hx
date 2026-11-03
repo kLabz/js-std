@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement>
+**/
 @:native("SVGComponentTransferFunctionElement") extern class SVGComponentTransferFunctionElement extends SVGElement {
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN : Int = 0;
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_IDENTITY : Int = 1;
@@ -31,11 +34,32 @@ package js.web.svg;
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE : Int = 3;
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_LINEAR : Int = 4;
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_GAMMA : Int = 5;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/type>
+	**/
 	var type(default, null) : SVGAnimatedEnumeration;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/tableValues>
+	**/
 	var tableValues(default, null) : SVGAnimatedNumberList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/slope>
+	**/
 	var slope(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/intercept>
+	**/
 	var intercept(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/amplitude>
+	**/
 	var amplitude(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/exponent>
+	**/
 	var exponent(default, null) : SVGAnimatedNumber;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/offset>
+	**/
 	var offset(default, null) : SVGAnimatedNumber;
 }

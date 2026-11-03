@@ -24,9 +24,15 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCaptionElement>
+**/
 @:native("HTMLTableCaptionElement") extern class HTMLTableCaptionElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCaptionElement/align>
 	**/
+	@:deprecated
 	var align : String;
 }

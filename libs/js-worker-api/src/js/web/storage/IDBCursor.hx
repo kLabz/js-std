@@ -24,16 +24,49 @@
 
 package js.web.storage;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/IDBCursor>
+**/
 @:native("IDBCursor") extern class IDBCursor {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/source>
+	**/
 	var source(default, null) : haxe.extern.EitherType<IDBObjectStore, IDBIndex>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/direction>
+	**/
 	var direction(default, null) : IDBCursorDirection;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/key>
+	**/
 	var key(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/primaryKey>
+	**/
 	var primaryKey(default, null) : Any;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/request>
+	**/
 	var request(default, null) : IDBRequest;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/advance>
+	**/
 	function advance(count:Int):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/continuePrimaryKey>
+	**/
 	function continuePrimaryKey(key:Any, primaryKey:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/continue>
+	**/
 	@:native("continue")
 	function continue_(?key:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/delete>
+	**/
 	function delete():IDBRequest;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBCursor/update>
+	**/
 	function update(value:Any):IDBRequest;
 }

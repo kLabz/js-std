@@ -24,63 +24,114 @@
 
 package js.web.dom;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/Document>
+**/
 @:native("Document") extern class Document extends Node {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/implementation>
+	**/
 	var implementation(default, null) : DOMImplementation;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/URL>
+	**/
 	var URL(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/documentURI>
+	**/
 	var documentURI(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/compatMode>
+	**/
 	var compatMode(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/characterSet>
+	**/
 	var characterSet(default, null) : String;
 	var charset(default, null) : String;
 	var inputEncoding(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/contentType>
+	**/
 	var contentType(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/doctype>
+	**/
 	var doctype(default, null) : Null<DocumentType>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/documentElement>
+	**/
 	var documentElement(default, null) : Null<Element>;
 	/**
 		From interface mixin FontFaceSource
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/fonts>
 	**/
 	var fonts(default, null) : js.web.css.FontFaceSet;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/styleSheets>
 	**/
 	var styleSheets(default, null) : js.web.css.StyleSheetList;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/adoptedStyleSheets>
 	**/
 	var adoptedStyleSheets : Array<js.web.css.CSSStyleSheet>;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/customElementRegistry>
 	**/
 	var customElementRegistry(default, null) : Null<js.web.html.CustomElementRegistry>;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/fullscreenElement>
 	**/
 	var fullscreenElement(default, null) : Null<Element>;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/activeElement>
 	**/
 	var activeElement(default, null) : Null<Element>;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/pictureInPictureElement>
 	**/
 	var pictureInPictureElement(default, null) : Null<Element>;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/pointerLockElement>
 	**/
 	var pointerLockElement(default, null) : Null<Element>;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/children>
 	**/
 	var children(default, null) : HTMLCollection;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/firstElementChild>
 	**/
 	var firstElementChild(default, null) : Null<Element>;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/lastElementChild>
 	**/
 	var lastElementChild(default, null) : Null<Element>;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/childElementCount>
 	**/
 	var childElementCount(default, null) : Int;
 	/**
@@ -510,7 +561,10 @@ package js.web.dom;
 	var onbeforexrselect : js.web.html.EventHandler;
 	/**
 		From partial interface in SVG.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/rootElement>
 	**/
+	@:deprecated
 	var rootElement(default, null) : Null<js.web.svg.SVGSVGElement>;
 	/**
 		From partial interface in css-regions.idl
@@ -518,19 +572,28 @@ package js.web.dom;
 	var namedFlows(default, null) : js.web.css.NamedFlowMap;
 	/**
 		From partial interface in css-view-transitions.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/activeViewTransition>
 	**/
 	var activeViewTransition(default, null) : Null<js.web.css.ViewTransition>;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/scrollingElement>
 	**/
 	var scrollingElement(default, null) : Null<Element>;
 	/**
 		From partial interface in fullscreen.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/fullscreenEnabled>
 	**/
 	var fullscreenEnabled(default, null) : Bool;
 	/**
 		From partial interface in fullscreen.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/fullscreen>
 	**/
+	@:deprecated
 	var fullscreen(default, null) : Bool;
 	/**
 		From partial interface in fullscreen.idl
@@ -542,86 +605,129 @@ package js.web.dom;
 	var onfullscreenerror : js.web.html.EventHandler;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/location>
 	**/
 	var location(default, null) : Null<js.web.html.Location>;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/domain>
 	**/
+	@:deprecated
 	var domain : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/referrer>
 	**/
 	var referrer(default, null) : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/cookie>
 	**/
 	var cookie : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/lastModified>
 	**/
 	var lastModified(default, null) : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/readyState>
 	**/
 	var readyState(default, null) : js.web.html.DocumentReadyState;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/title>
 	**/
 	var title : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/dir>
 	**/
 	var dir : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/body>
 	**/
 	var body : Null<js.web.html.HTMLElement>;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/head>
 	**/
 	var head(default, null) : Null<js.web.html.HTMLHeadElement>;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/images>
 	**/
 	var images(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/embeds>
 	**/
 	var embeds(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/plugins>
 	**/
 	var plugins(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/links>
 	**/
 	var links(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/forms>
 	**/
 	var forms(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/scripts>
 	**/
 	var scripts(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/currentScript>
 	**/
 	var currentScript(default, null) : Null<js.web.html.HTMLOrSVGScriptElement>;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/defaultView>
 	**/
 	var defaultView(default, null) : Null<js.web.html.Window>;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/designMode>
 	**/
 	var designMode : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/hidden>
 	**/
 	var hidden(default, null) : Bool;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/visibilityState>
 	**/
 	var visibilityState(default, null) : js.web.html.DocumentVisibilityState;
 	/**
@@ -634,35 +740,59 @@ package js.web.dom;
 	var onvisibilitychange : js.web.html.EventHandler;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/fgColor>
 	**/
+	@:deprecated
 	var fgColor : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/linkColor>
 	**/
+	@:deprecated
 	var linkColor : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/vlinkColor>
 	**/
+	@:deprecated
 	var vlinkColor : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/alinkColor>
 	**/
+	@:deprecated
 	var alinkColor : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/bgColor>
 	**/
+	@:deprecated
 	var bgColor : String;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/anchors>
 	**/
+	@:deprecated
 	var anchors(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/applets>
 	**/
+	@:deprecated
 	var applets(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/all>
 	**/
+	@:deprecated
 	var all(default, null) : js.web.html.HTMLAllCollection;
 	/**
 		From partial interface in page-lifecycle.idl
@@ -682,6 +812,8 @@ package js.web.dom;
 	var permissionsPolicy(default, null) : js.web.misc.PermissionsPolicy;
 	/**
 		From partial interface in picture-in-picture.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/pictureInPictureEnabled>
 	**/
 	var pictureInPictureEnabled(default, null) : Bool;
 	/**
@@ -694,6 +826,8 @@ package js.web.dom;
 	var onpointerlockerror : js.web.html.EventHandler;
 	/**
 		From partial interface in prerendering-revamped.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/prerendering>
 	**/
 	var prerendering(default, null) : Bool;
 	/**
@@ -702,10 +836,14 @@ package js.web.dom;
 	var onprerenderingchange : js.web.html.EventHandler;
 	/**
 		From partial interface in scroll-to-text-fragment.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/fragmentDirective>
 	**/
 	var fragmentDirective(default, null) : FragmentDirective;
 	/**
 		From partial interface in web-animations.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/timeline>
 	**/
 	var timeline(default, null) : js.web.css.DocumentTimeline;
 	/**
@@ -713,30 +851,48 @@ package js.web.dom;
 		Only available in secure contexts (HTTPS).
 	**/
 	var modelContext(default, null) : js.web.ml.ModelContext;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/Document>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/adoptNode>
+	**/
 	function adoptNode(node:Node):Node;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/append>
 	**/
 	function append(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From interface mixin ARIANotifyMixin
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/ariaNotify>
 	**/
 	function ariaNotify(announcement:String, ?options:AriaNotificationOptions):Void;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	function captureEvents():Void;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/caretPositionFromPoint>
 	**/
 	function caretPositionFromPoint(x:Float, y:Float, ?options:js.web.css.CaretPositionFromPointOptions):Null<js.web.css.CaretPosition>;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/clear>
 	**/
+	@:deprecated
 	function clear():Void;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/close>
 	**/
 	function close():Void;
 	/**
@@ -751,57 +907,119 @@ package js.web.dom;
 		From interface mixin GeometryUtils
 	**/
 	function convertRectFromNode(rect:DOMRectReadOnly, from:js.web.css.GeometryNode, ?options:js.web.css.ConvertCoordinateOptions):DOMQuad;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createAttribute>
+	**/
 	function createAttribute(localName:String):Attr;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createAttributeNS>
+	**/
 	function createAttributeNS(namespace:Null<String>, qualifiedName:String):Attr;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createCDATASection>
+	**/
 	function createCDATASection(data:String):CDATASection;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createComment>
+	**/
 	function createComment(data:String):Comment;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createDocumentFragment>
+	**/
 	function createDocumentFragment():DocumentFragment;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createElement>
+	**/
 	function createElement(localName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createElementNS>
+	**/
 	function createElementNS(namespace:Null<String>, qualifiedName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createEvent>
+	**/
+	@:deprecated
 	function createEvent(interface_:String):Event;
 	/**
 		From interface mixin XPathEvaluatorBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createExpression>
 	**/
 	function createExpression(expression:String, ?resolver:Null<XPathNSResolver> = null):XPathExpression;
 	/**
 		From interface mixin XPathEvaluatorBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createNSResolver>
 	**/
+	@:deprecated
 	function createNSResolver(nodeResolver:Node):Node;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createNodeIterator>
+	**/
 	function createNodeIterator(root:Node, ?whatToShow:Int = 0xFFFFFFFF, ?filter:Null<NodeFilter> = null):NodeIterator;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createProcessingInstruction>
+	**/
 	function createProcessingInstruction(target:String, data:String):ProcessingInstruction;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createRange>
+	**/
 	function createRange():Range;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createTextNode>
+	**/
 	function createTextNode(data:String):Text;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createTreeWalker>
+	**/
 	function createTreeWalker(root:Node, ?whatToShow:Int = 0xFFFFFFFF, ?filter:Null<NodeFilter> = null):TreeWalker;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/elementFromPoint>
 	**/
 	function elementFromPoint(x:Float, y:Float):Null<Element>;
 	/**
 		From partial interface in cssom-view.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/elementsFromPoint>
 	**/
 	function elementsFromPoint(x:Float, y:Float):Array<Element>;
 	/**
 		From interface mixin XPathEvaluatorBase
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/evaluate>
 	**/
 	function evaluate(expression:String, contextNode:Node, ?resolver:Null<XPathNSResolver> = null, ?type:Int = 0, ?result:Null<XPathResult> = null):XPathResult;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/execCommand>
 	**/
+	@:deprecated
 	function execCommand(commandId:String, ?showUI:Bool = false, ?value:String = ""):Bool;
 	/**
 		From partial interface in fullscreen.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/exitFullscreen>
 	**/
 	function exitFullscreen():js.lib.Promise<Void>;
 	/**
 		From partial interface in picture-in-picture.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/exitPictureInPicture>
 	**/
 	function exitPictureInPicture():js.lib.Promise<Void>;
 	/**
 		From partial interface in pointerlock.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/exitPointerLock>
 	**/
 	function exitPointerLock():Void;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/getAnimations>
 	**/
 	function getAnimations():Array<js.web.css.Animation>;
 	/**
@@ -810,39 +1028,67 @@ package js.web.dom;
 	function getBoxQuads(?options:js.web.css.BoxQuadOptions):Array<DOMQuad>;
 	/**
 		From interface mixin NonElementParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/getElementById>
 	**/
 	function getElementById(elementId:String):Null<Element>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/getElementsByClassName>
+	**/
 	function getElementsByClassName(classNames:String):HTMLCollection;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/getElementsByName>
 	**/
 	function getElementsByName(elementName:String):NodeList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/getElementsByTagName>
+	**/
 	function getElementsByTagName(qualifiedName:String):HTMLCollection;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/getElementsByTagNameNS>
+	**/
 	function getElementsByTagNameNS(namespace:Null<String>, localName:String):HTMLCollection;
 	/**
 		From partial interface in selection-api.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/getSelection>
 	**/
 	function getSelection():Null<Selection>;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/hasFocus>
 	**/
 	function hasFocus():Bool;
 	/**
 		From partial interface in trust-token-api.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/hasPrivateToken>
 	**/
 	function hasPrivateToken(issuer:String):js.lib.Promise<Bool>;
 	/**
 		From partial interface in trust-token-api.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/hasRedemptionRecord>
 	**/
 	function hasRedemptionRecord(issuer:String):js.lib.Promise<Bool>;
 	/**
 		From partial interface in storage-access.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess>
 	**/
 	function hasStorageAccess():js.lib.Promise<Bool>;
 	/**
 		From partial interface in saa-non-cookie-storage.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/hasUnpartitionedCookieAccess>
 	**/
 	function hasUnpartitionedCookieAccess():js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Document/importNode>
+	**/
 	function importNode(node:Node, ?options:haxe.extern.EitherType<Bool, ImportNodeOptions> = false):Node;
 	/**
 		From partial interface in font-metrics-api.idl
@@ -854,14 +1100,20 @@ package js.web.dom;
 	function measureText(text:String, styleMap:js.web.css.StylePropertyMapReadOnly):js.web.css.FontMetrics;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/moveBefore>
 	**/
 	function moveBefore(node:Node, child:Null<Node>):Void;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/open>
 	**/
 	overload function open(?unused1:String, ?unused2:String):Document;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/open>
 	**/
 	overload function open(url:String, name:String, features:String):Null<js.web.html.Window>;
 	/**
@@ -874,58 +1126,88 @@ package js.web.dom;
 	function parseHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.ParseHTMLUnsafeOptions, TrustedHTMLParserOptions>):Document;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/prepend>
 	**/
 	function prepend(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/queryCommandEnabled>
 	**/
+	@:deprecated
 	function queryCommandEnabled(commandId:String):Bool;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	function queryCommandIndeterm(commandId:String):Bool;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/queryCommandState>
 	**/
+	@:deprecated
 	function queryCommandState(commandId:String):Bool;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/queryCommandSupported>
 	**/
+	@:deprecated
 	function queryCommandSupported(commandId:String):Bool;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	function queryCommandValue(commandId:String):String;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/querySelector>
 	**/
 	function querySelector(selectors:String):Null<Element>;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll>
 	**/
 	function querySelectorAll(selectors:String):NodeList;
 	/**
 		From partial interface in html.idl
 	**/
+	@:deprecated
 	function releaseEvents():Void;
 	/**
 		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/replaceChildren>
 	**/
 	function replaceChildren(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From partial interface in storage-access.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess>
 	**/
 	function requestStorageAccess():js.lib.Promise<Void>;
 	/**
 		From partial interface in css-view-transitions.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/startViewTransition>
 	**/
 	function startViewTransition(?callbackOptions:haxe.extern.EitherType<js.web.css.ViewTransitionUpdateCallback, js.web.css.StartViewTransitionOptions>):js.web.css.ViewTransition;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/write>
 	**/
+	@:deprecated
 	function write(text:haxe.Rest<haxe.extern.EitherType<TrustedHTML, String>>):Void;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/writeln>
 	**/
+	@:deprecated
 	function writeln(text:haxe.Rest<haxe.extern.EitherType<TrustedHTML, String>>):Void;
 }

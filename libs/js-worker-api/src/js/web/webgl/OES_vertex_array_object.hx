@@ -26,11 +26,25 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/OES_vertex_array_object>
 **/
 @:native("OES_vertex_array_object") extern class OES_vertex_array_object {
 	static inline var VERTEX_ARRAY_BINDING_OES : GLenum = 0x85B5;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OES_vertex_array_object/bindVertexArrayOES>
+	**/
 	function bindVertexArrayOES(arrayObject:Null<WebGLVertexArrayObjectOES>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OES_vertex_array_object/createVertexArrayOES>
+	**/
 	function createVertexArrayOES():WebGLVertexArrayObjectOES;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OES_vertex_array_object/deleteVertexArrayOES>
+	**/
 	function deleteVertexArrayOES(arrayObject:Null<WebGLVertexArrayObjectOES>):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/OES_vertex_array_object/isVertexArrayOES>
+	**/
 	function isVertexArrayOES(arrayObject:Null<WebGLVertexArrayObjectOES>):GLboolean;
 }

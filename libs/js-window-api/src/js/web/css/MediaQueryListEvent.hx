@@ -24,8 +24,20 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaQueryListEvent>
+**/
 @:native("MediaQueryListEvent") extern class MediaQueryListEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryListEvent/media>
+	**/
 	var media(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryListEvent/matches>
+	**/
 	var matches(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryListEvent/MediaQueryListEvent>
+	**/
 	function new(type:String, ?eventInitDict:MediaQueryListEventInit):Void;
 }

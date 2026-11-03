@@ -24,6 +24,12 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLQuoteElement>
+**/
 @:native("HTMLQuoteElement") extern class HTMLQuoteElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLQuoteElement/cite>
+	**/
 	var cite : String;
 }

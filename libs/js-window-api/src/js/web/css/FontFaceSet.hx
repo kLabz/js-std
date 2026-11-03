@@ -24,21 +24,63 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet>
+**/
 @:native("FontFaceSet") extern class FontFaceSet extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/size>
+	**/
 	var size(default, null) : Int;
 	var onloading : js.web.html.EventHandler;
 	var onloadingdone : js.web.html.EventHandler;
 	var onloadingerror : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/ready>
+	**/
 	var ready(default, null) : js.lib.Promise<FontFaceSet>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/status>
+	**/
 	var status(default, null) : FontFaceSetLoadStatus;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/add>
+	**/
 	function add(font:FontFace):FontFaceSet;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/check>
+	**/
 	function check(font:String, ?text:String = " "):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/clear>
+	**/
 	function clear():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/delete>
+	**/
 	function delete(font:FontFace):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<FontFace, FontFace>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/forEach>
+	**/
 	function forEach(callback:(value:FontFace, key:FontFace, set:FontFaceSet) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/has>
+	**/
 	function has(value:FontFace):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/keys>
+	**/
 	function keys():js.lib.Iterator<FontFace>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/load>
+	**/
 	function load(font:String, ?text:String = " "):js.lib.Promise<Array<FontFace>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/values>
+	**/
 	function values():js.lib.Iterator<FontFace>;
 }

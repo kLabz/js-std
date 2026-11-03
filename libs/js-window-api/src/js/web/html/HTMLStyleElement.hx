@@ -24,16 +24,33 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/HTMLStyleElement>
+**/
 @:native("HTMLStyleElement") extern class HTMLStyleElement extends HTMLElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLStyleElement/disabled>
+	**/
 	var disabled : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLStyleElement/media>
+	**/
 	var media : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLStyleElement/blocking>
+	**/
 	var blocking(default, null) : js.web.dom.DOMTokenList;
 	/**
 		From interface mixin LinkStyle
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLStyleElement/sheet>
 	**/
 	var sheet(default, null) : Null<js.web.css.CSSStyleSheet>;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLStyleElement/type>
 	**/
+	@:deprecated
 	var type : String;
 }

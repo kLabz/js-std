@@ -26,13 +26,36 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap>
 **/
 @:native("MediaKeyStatusMap") extern class MediaKeyStatusMap {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap/size>
+	**/
 	var size(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap/entries>
+	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<js.web.dom.BufferSource, MediaKeyStatus>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap/forEach>
+	**/
 	function forEach(callback:(value:MediaKeyStatus, key:js.web.dom.BufferSource, parent:MediaKeyStatusMap) -> Void, ?thisArg:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap/get>
+	**/
 	function get(keyId:js.web.dom.BufferSource):haxe.extern.EitherType<MediaKeyStatus, Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap/has>
+	**/
 	function has(keyId:js.web.dom.BufferSource):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap/keys>
+	**/
 	function keys():js.lib.Iterator<js.web.dom.BufferSource>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap/values>
+	**/
 	function values():js.lib.Iterator<MediaKeyStatus>;
 }

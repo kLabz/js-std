@@ -24,12 +24,26 @@
 
 package js.web.device;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/GamepadHapticActuator>
+**/
 @:native("GamepadHapticActuator") extern class GamepadHapticActuator {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadHapticActuator/effects>
+	**/
 	var effects(default, null) : Array<GamepadHapticEffectType>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadHapticActuator/playEffect>
+	**/
 	function playEffect(type:GamepadHapticEffectType, ?params:GamepadEffectParameters):js.lib.Promise<GamepadHapticsResult>;
 	/**
 		From partial interface in gamepad-extensions.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadHapticActuator/pulse>
 	**/
 	function pulse(value:Float, duration:Float):js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GamepadHapticActuator/reset>
+	**/
 	function reset():js.lib.Promise<GamepadHapticsResult>;
 }

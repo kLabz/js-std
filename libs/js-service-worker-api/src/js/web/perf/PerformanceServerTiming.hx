@@ -24,9 +24,24 @@
 
 package js.web.perf;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming>
+**/
 @:native("PerformanceServerTiming") extern class PerformanceServerTiming {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming/name>
+	**/
 	var name(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming/duration>
+	**/
 	var duration(default, null) : DOMHighResTimeStamp;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming/description>
+	**/
 	var description(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming/toJSON>
+	**/
 	function toJSON():{ };
 }

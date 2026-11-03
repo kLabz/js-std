@@ -24,12 +24,24 @@
 
 package js.web.net;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FileReader>
+**/
 @:native("FileReader") extern class FileReader extends js.web.dom.EventTarget {
 	static inline var EMPTY : Int = 0;
 	static inline var LOADING : Int = 1;
 	static inline var DONE : Int = 2;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileReader/readyState>
+	**/
 	var readyState(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileReader/result>
+	**/
 	var result(default, null) : Null<haxe.extern.EitherType<String, js.lib.ArrayBuffer>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileReader/error>
+	**/
 	var error(default, null) : Null<js.web.dom.DOMException>;
 	var onloadstart : js.web.html.EventHandler;
 	var onprogress : js.web.html.EventHandler;
@@ -37,10 +49,29 @@ package js.web.net;
 	var onabort : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
 	var onloadend : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileReader/FileReader>
+	**/
 	function new():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileReader/abort>
+	**/
 	function abort():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileReader/readAsArrayBuffer>
+	**/
 	function readAsArrayBuffer(blob:Blob):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileReader/readAsBinaryString>
+	**/
+	@:deprecated
 	function readAsBinaryString(blob:Blob):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileReader/readAsDataURL>
+	**/
 	function readAsDataURL(blob:Blob):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FileReader/readAsText>
+	**/
 	function readAsText(blob:Blob, ?encoding:String):Void;
 }

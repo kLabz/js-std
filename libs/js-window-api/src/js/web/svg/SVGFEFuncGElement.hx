@@ -24,6 +24,9 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGFEFuncGElement>
+**/
 @:native("SVGFEFuncGElement") extern class SVGFEFuncGElement extends SVGComponentTransferFunctionElement {
 
 }

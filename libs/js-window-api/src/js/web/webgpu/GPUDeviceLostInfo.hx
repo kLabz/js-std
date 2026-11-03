@@ -26,8 +26,16 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/GPUDeviceLostInfo>
 **/
 @:native("GPUDeviceLostInfo") extern class GPUDeviceLostInfo {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDeviceLostInfo/reason>
+	**/
 	var reason(default, null) : GPUDeviceLostReason;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/GPUDeviceLostInfo/message>
+	**/
 	var message(default, null) : String;
 }

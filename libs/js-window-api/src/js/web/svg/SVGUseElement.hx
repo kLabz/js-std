@@ -24,13 +24,30 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGUseElement>
+**/
 @:native("SVGUseElement") extern class SVGUseElement extends SVGGraphicsElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGUseElement/x>
+	**/
 	var x(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGUseElement/y>
+	**/
 	var y(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGUseElement/width>
+	**/
 	var width(default, null) : SVGAnimatedLength;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGUseElement/height>
+	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGURIReference
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGUseElement/href>
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

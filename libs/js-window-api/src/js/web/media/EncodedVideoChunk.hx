@@ -24,11 +24,32 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/EncodedVideoChunk>
+**/
 @:native("EncodedVideoChunk") extern class EncodedVideoChunk {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EncodedVideoChunk/type>
+	**/
 	var type(default, null) : EncodedVideoChunkType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EncodedVideoChunk/timestamp>
+	**/
 	var timestamp(default, null) : Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EncodedVideoChunk/duration>
+	**/
 	var duration(default, null) : Null<Float>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EncodedVideoChunk/byteLength>
+	**/
 	var byteLength(default, null) : Int;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EncodedVideoChunk/EncodedVideoChunk>
+	**/
 	function new(init:EncodedVideoChunkInit):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/EncodedVideoChunk/copyTo>
+	**/
 	function copyTo(destination:js.web.dom.AllowSharedBufferSource):Void;
 }

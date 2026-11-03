@@ -24,11 +24,26 @@
 
 package js.web.html;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/CloseWatcher>
+**/
 @:native("CloseWatcher") extern class CloseWatcher extends js.web.dom.EventTarget {
 	var oncancel : EventHandler;
 	var onclose : EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CloseWatcher/CloseWatcher>
+	**/
 	function new(?options:CloseWatcherOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CloseWatcher/close>
+	**/
 	function close():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CloseWatcher/destroy>
+	**/
 	function destroy():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CloseWatcher/requestClose>
+	**/
 	function requestClose():Void;
 }

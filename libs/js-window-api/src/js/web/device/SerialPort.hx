@@ -26,17 +26,46 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/SerialPort>
 **/
 @:native("SerialPort") extern class SerialPort extends js.web.dom.EventTarget {
 	var onconnect : js.web.html.EventHandler;
 	var ondisconnect : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SerialPort/connected>
+	**/
 	var connected(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SerialPort/readable>
+	**/
 	var readable(default, null) : Null<js.web.net.ReadableStream>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SerialPort/writable>
+	**/
 	var writable(default, null) : Null<js.web.net.WritableStream>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SerialPort/close>
+	**/
 	function close():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SerialPort/forget>
+	**/
 	function forget():js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SerialPort/getInfo>
+	**/
 	function getInfo():SerialPortInfo;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SerialPort/getSignals>
+	**/
 	function getSignals():js.lib.Promise<SerialInputSignals>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SerialPort/open>
+	**/
 	function open(options:SerialOptions):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SerialPort/setSignals>
+	**/
 	function setSignals(?signals:SerialOutputSignals):js.lib.Promise<Void>;
 }

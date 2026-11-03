@@ -24,24 +24,55 @@
 
 package js.web.svg;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement>
+**/
 @:native("SVGAnimationElement") extern class SVGAnimationElement extends SVGElement {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/targetElement>
+	**/
 	var targetElement(default, null) : Null<SVGElement>;
 	var onbegin : js.web.html.EventHandler;
 	var onend : js.web.html.EventHandler;
 	var onrepeat : js.web.html.EventHandler;
 	/**
 		From interface mixin SVGTests
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/requiredExtensions>
 	**/
 	var requiredExtensions(default, null) : SVGStringList;
 	/**
 		From interface mixin SVGTests
+		
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/systemLanguage>
 	**/
 	var systemLanguage(default, null) : SVGStringList;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/beginElement>
+	**/
 	function beginElement():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/beginElementAt>
+	**/
 	function beginElementAt(offset:Float):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/endElement>
+	**/
 	function endElement():Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/endElementAt>
+	**/
 	function endElementAt(offset:Float):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/getCurrentTime>
+	**/
 	function getCurrentTime():Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/getSimpleDuration>
+	**/
 	function getSimpleDuration():Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/getStartTime>
+	**/
 	function getStartTime():Float;
 }

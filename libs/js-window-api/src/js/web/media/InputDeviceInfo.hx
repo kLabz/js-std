@@ -26,7 +26,12 @@ package js.web.media;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/InputDeviceInfo>
 **/
 @:native("InputDeviceInfo") extern class InputDeviceInfo extends MediaDeviceInfo {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/InputDeviceInfo/getCapabilities>
+	**/
 	function getCapabilities():MediaTrackCapabilities;
 }

@@ -26,11 +26,28 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	@see <https://developer.mozilla.org/docs/Web/API/XRRigidTransform>
 **/
 @:native("XRRigidTransform") extern class XRRigidTransform {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRRigidTransform/position>
+	**/
 	var position(default, null) : js.web.dom.DOMPointReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRRigidTransform/orientation>
+	**/
 	var orientation(default, null) : js.web.dom.DOMPointReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRRigidTransform/matrix>
+	**/
 	var matrix(default, null) : js.lib.Float32Array;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRRigidTransform/inverse>
+	**/
 	var inverse(default, null) : XRRigidTransform;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRRigidTransform/XRRigidTransform>
+	**/
 	function new(?position:js.web.dom.DOMPointInit, ?orientation:js.web.dom.DOMPointInit):Void;
 }

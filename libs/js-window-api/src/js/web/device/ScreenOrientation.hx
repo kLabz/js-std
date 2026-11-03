@@ -24,10 +24,25 @@
 
 package js.web.device;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/ScreenOrientation>
+**/
 @:native("ScreenOrientation") extern class ScreenOrientation extends js.web.dom.EventTarget {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScreenOrientation/type>
+	**/
 	var type(default, null) : OrientationType;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScreenOrientation/angle>
+	**/
 	var angle(default, null) : Int;
 	var onchange : js.web.html.EventHandler;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScreenOrientation/lock>
+	**/
 	function lock(orientation:OrientationLockType):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ScreenOrientation/unlock>
+	**/
 	function unlock():Void;
 }

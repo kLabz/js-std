@@ -24,14 +24,38 @@
 
 package js.web.xr;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/XRWebGLBinding>
+**/
 @:native("XRWebGLBinding") extern class XRWebGLBinding {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLBinding/nativeProjectionScaleFactor>
+	**/
 	var nativeProjectionScaleFactor(default, null) : Float;
 	var usesDepthValues(default, null) : Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLBinding/XRWebGLBinding>
+	**/
 	function new(session:XRSession, context:XRWebGLRenderingContext):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLBinding/createCubeLayer>
+	**/
 	function createCubeLayer(?init:XRCubeLayerInit):XRCubeLayer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLBinding/createCylinderLayer>
+	**/
 	function createCylinderLayer(?init:XRCylinderLayerInit):XRCylinderLayer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLBinding/createEquirectLayer>
+	**/
 	function createEquirectLayer(?init:XREquirectLayerInit):XREquirectLayer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLBinding/createProjectionLayer>
+	**/
 	function createProjectionLayer(?init:XRProjectionLayerInit):XRProjectionLayer;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLBinding/createQuadLayer>
+	**/
 	function createQuadLayer(?init:XRQuadLayerInit):XRQuadLayer;
 	function foveateBoundTexture(target:js.web.webgl.GLenum, fixed_foveation:Float):Void;
 	/**
@@ -40,12 +64,22 @@ package js.web.xr;
 	function getCameraImage(camera:XRCamera):Null<js.web.webgl.WebGLTexture>;
 	/**
 		From partial interface in webxr-depth-sensing.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLBinding/getDepthInformation>
 	**/
 	function getDepthInformation(view:XRView):Null<XRWebGLDepthInformation>;
 	/**
 		From partial interface in webxr-lighting-estimation.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLBinding/getReflectionCubeMap>
 	**/
 	function getReflectionCubeMap(lightProbe:XRLightProbe):Null<js.web.webgl.WebGLTexture>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLBinding/getSubImage>
+	**/
 	function getSubImage(layer:XRCompositionLayer, frame:XRFrame, ?eye:XREye = XREye.NONE):XRWebGLSubImage;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLBinding/getViewSubImage>
+	**/
 	function getViewSubImage(layer:XRProjectionLayer, view:XRView):XRWebGLSubImage;
 }

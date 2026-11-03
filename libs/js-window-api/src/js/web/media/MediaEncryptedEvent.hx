@@ -24,8 +24,20 @@
 
 package js.web.media;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/MediaEncryptedEvent>
+**/
 @:native("MediaEncryptedEvent") extern class MediaEncryptedEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaEncryptedEvent/initDataType>
+	**/
 	var initDataType(default, null) : String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaEncryptedEvent/initData>
+	**/
 	var initData(default, null) : Null<js.lib.ArrayBuffer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaEncryptedEvent/MediaEncryptedEvent>
+	**/
 	function new(type:String, ?eventInitDict:MediaEncryptedEventInit):Void;
 }

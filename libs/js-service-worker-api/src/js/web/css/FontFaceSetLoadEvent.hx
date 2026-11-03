@@ -24,7 +24,16 @@
 
 package js.web.css;
 
+/**
+	@see <https://developer.mozilla.org/docs/Web/API/FontFaceSetLoadEvent>
+**/
 @:native("FontFaceSetLoadEvent") extern class FontFaceSetLoadEvent extends js.web.dom.Event {
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSetLoadEvent/fontfaces>
+	**/
 	var fontfaces(default, null) : Array<FontFace>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSetLoadEvent/FontFaceSetLoadEvent>
+	**/
 	function new(type:String, ?eventInitDict:FontFaceSetLoadEventInit):Void;
 }

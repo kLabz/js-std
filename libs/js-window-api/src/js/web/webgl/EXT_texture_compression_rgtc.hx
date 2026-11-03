@@ -26,6 +26,8 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	@see <https://developer.mozilla.org/docs/Web/API/EXT_texture_compression_rgtc>
 **/
 @:native("EXT_texture_compression_rgtc") extern class EXT_texture_compression_rgtc {
 	static inline var COMPRESSED_RED_RGTC1_EXT : GLenum = 0x8DBB;

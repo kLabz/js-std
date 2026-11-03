@@ -71,3 +71,5 @@ node bin/index.js
 ```
 
 Bumping `@webref/idl` in `generator/package.json` and regenerating updates all libraries.
+
+`./check.sh` typechecks every generated type of each library and must pass before committing generated output.

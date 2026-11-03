@@ -27,8 +27,5 @@ package js.web.html;
 @:native("TaskSignal") extern class TaskSignal extends js.web.dom.AbortSignal {
 	var priority(default, null) : TaskPriority;
 	var onprioritychange : EventHandler;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function any(signals:Array<js.web.dom.AbortSignal>, ?init:TaskSignalAnyInit):TaskSignal;
 }

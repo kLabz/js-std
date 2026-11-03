@@ -25,12 +25,6 @@
 package js.web.html;
 
 @:native("HTMLModElement") extern class HTMLModElement extends HTMLElement {
-	/**
-		Unhandled extended attribute ReflectURL
-	**/
 	var cite : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var dateTime : String;
 }

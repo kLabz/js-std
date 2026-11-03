@@ -25,20 +25,11 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRPose") extern class XRPose {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var transform(default, null) : XRRigidTransform;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var linearVelocity(default, null) : Null<js.web.dom.DOMPointReadOnly>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var angularVelocity(default, null) : Null<js.web.dom.DOMPointReadOnly>;
 	var emulatedPosition(default, null) : Bool;
 }

@@ -24,9 +24,11 @@
 
 package js.web.xr;
 
-/**
-	TODO SetlikeDeclaration handling
-**/
 @:native("XRMeshSet") extern class XRMeshSet {
-
+	var size(default, null) : Int;
+	function entries():js.lib.Iterator<js.lib.Tuple<XRMesh, XRMesh>>;
+	function forEach(callback:(value:XRMesh, key:XRMesh, set:XRMeshSet) -> Void, ?thisArg:Any):Void;
+	function has(value:XRMesh):Bool;
+	function keys():js.lib.Iterator<XRMesh>;
+	function values():js.lib.Iterator<XRMesh>;
 }

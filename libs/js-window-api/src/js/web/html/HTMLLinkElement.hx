@@ -25,62 +25,20 @@
 package js.web.html;
 
 @:native("HTMLLinkElement") extern class HTMLLinkElement extends HTMLElement {
-	/**
-		Unhandled extended attribute ReflectURL
-	**/
 	var href : String;
 	var crossOrigin : Null<String>;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var rel : String;
 	var as : String;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-		Unhandled extended attribute Reflect
-	**/
 	var relList(default, null) : js.web.dom.DOMTokenList;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var media : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var integrity : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var hreflang : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var type : String;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-		Unhandled extended attribute Reflect
-	**/
 	var sizes(default, null) : js.web.dom.DOMTokenList;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var imageSrcset : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var imageSizes : String;
 	var referrerPolicy : String;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-		Unhandled extended attribute Reflect
-	**/
 	var blocking(default, null) : js.web.dom.DOMTokenList;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var disabled : Bool;
 	var fetchPriority : String;
 	/**
@@ -89,17 +47,14 @@ package js.web.html;
 	var sheet(default, null) : Null<js.web.css.CSSStyleSheet>;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var charset : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var rev : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var target : String;
 }

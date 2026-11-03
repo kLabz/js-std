@@ -25,7 +25,7 @@
 package js.web.ml;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("Rewriter") extern class Rewriter {
 	var sharedContext(default, null) : String;

@@ -25,7 +25,7 @@
 package js.web.ml;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("CreateMonitor") extern class CreateMonitor extends js.web.dom.EventTarget {
 	var ondownloadprogress : js.web.html.EventHandler;

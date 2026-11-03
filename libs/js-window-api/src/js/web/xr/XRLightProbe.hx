@@ -25,7 +25,7 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRLightProbe") extern class XRLightProbe extends js.web.dom.EventTarget {
 	var probeSpace(default, null) : XRSpace;

@@ -31,31 +31,20 @@ package js.web.dom;
 	static inline var END_TO_END : Int = 2;
 	static inline var END_TO_START : Int = 3;
 	function new():Void;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function cloneContents():DocumentFragment;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function cloneRange():Range;
 	function collapse(?toStart:Bool = false):Void;
 	function compareBoundaryPoints(how:Int, sourceRange:Range):Int;
 	function comparePoint(node:Node, offset:Int):Int;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute NewObject
 	**/
 	function createContextualFragment(string:haxe.extern.EitherType<TrustedHTML, String>):DocumentFragment;
 	function deleteContents():Void;
 	function detach():Void;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function extractContents():DocumentFragment;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute NewObject
 	**/
 	function getBoundingClientRect():DOMRect;
 	/**

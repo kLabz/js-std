@@ -24,9 +24,11 @@
 
 package js.web.xr;
 
-/**
-	TODO SetlikeDeclaration handling
-**/
 @:native("XRAnchorSet") extern class XRAnchorSet {
-
+	var size(default, null) : Int;
+	function entries():js.lib.Iterator<js.lib.Tuple<XRAnchor, XRAnchor>>;
+	function forEach(callback:(value:XRAnchor, key:XRAnchor, set:XRAnchorSet) -> Void, ?thisArg:Any):Void;
+	function has(value:XRAnchor):Bool;
+	function keys():js.lib.Iterator<XRAnchor>;
+	function values():js.lib.Iterator<XRAnchor>;
 }

@@ -25,7 +25,7 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("FederatedCredential") extern class FederatedCredential extends Credential {
 	var provider(default, null) : String;

@@ -26,12 +26,12 @@ package js.web.auth;
 
 @:native("Crypto") extern class Crypto {
 	/**
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var subtle(default, null) : SubtleCrypto;
 	function getRandomValues(array:js.lib.ArrayBufferView):js.lib.ArrayBufferView;
 	/**
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function randomUUID():String;
 }

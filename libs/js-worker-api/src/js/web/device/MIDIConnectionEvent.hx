@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("MIDIConnectionEvent") extern class MIDIConnectionEvent extends js.web.dom.Event {
 	var port(default, null) : Null<MIDIPort>;

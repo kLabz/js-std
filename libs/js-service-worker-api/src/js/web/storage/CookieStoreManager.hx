@@ -25,7 +25,7 @@
 package js.web.storage;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("CookieStoreManager") extern class CookieStoreManager {
 	function getSubscriptions():js.lib.Promise<Array<CookieStoreGetOptions>>;

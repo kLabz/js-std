@@ -25,9 +25,5 @@
 package js.web.css;
 
 @:native("CSSNestedDeclarations") extern class CSSNestedDeclarations extends CSSRule {
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-	**/
 	var style(default, null) : CSSStyleProperties;
 }

@@ -25,7 +25,7 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PresentationConnectionCloseEvent") extern class PresentationConnectionCloseEvent extends js.web.dom.Event {
 	var reason(default, null) : PresentationConnectionCloseReason;

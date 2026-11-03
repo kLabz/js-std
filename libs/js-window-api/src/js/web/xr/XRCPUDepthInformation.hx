@@ -25,9 +25,6 @@
 package js.web.xr;
 
 @:native("XRCPUDepthInformation") extern class XRCPUDepthInformation extends XRDepthInformation {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var data(default, null) : js.lib.ArrayBuffer;
 	function getDepthInMeters(x:Float, y:Float):Float;
 }

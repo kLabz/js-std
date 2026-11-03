@@ -24,9 +24,14 @@
 
 package js.web.css;
 
-/**
-	TODO SetlikeDeclaration handling
-**/
 @:native("ViewTransitionTypeSet") extern class ViewTransitionTypeSet {
-
+	var size(default, null) : Int;
+	function add(value:String):ViewTransitionTypeSet;
+	function clear():Void;
+	function delete(value:String):Bool;
+	function entries():js.lib.Iterator<js.lib.Tuple<String, String>>;
+	function forEach(callback:(value:String, key:String, set:ViewTransitionTypeSet) -> Void, ?thisArg:Any):Void;
+	function has(value:String):Bool;
+	function keys():js.lib.Iterator<String>;
+	function values():js.lib.Iterator<String>;
 }

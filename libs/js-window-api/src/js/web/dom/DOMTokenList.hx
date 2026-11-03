@@ -24,13 +24,16 @@
 
 package js.web.dom;
 
-@:native("DOMTokenList") extern class DOMTokenList {
+@:native("DOMTokenList") extern class DOMTokenList implements ArrayAccess<Null<String>> {
 	var length(default, null) : Int;
 	var value : String;
-	function add(tokens:haxe.Rest<haxe.Rest<String>>):Void;
+	function add(tokens:haxe.Rest<String>):Void;
 	function contains(token:String):Bool;
+	function entries():js.lib.Iterator<js.lib.Tuple<Int, String>>;
+	function forEach(callback:(value:String, key:Int, parent:DOMTokenList) -> Void, ?thisArg:Any):Void;
 	function item(index:Int):Null<String>;
-	function remove(tokens:haxe.Rest<haxe.Rest<String>>):Void;
+	function keys():js.lib.Iterator<Int>;
+	function remove(tokens:haxe.Rest<String>):Void;
 	function replace(token:String, newToken:String):Bool;
 	function supports(token:String):Bool;
 	/**
@@ -38,5 +41,5 @@ package js.web.dom;
 	**/
 	function toString():String;
 	function toggle(token:String, ?force:Bool):Bool;
-	function values():Iterator<String>;
+	function values():js.lib.Iterator<String>;
 }

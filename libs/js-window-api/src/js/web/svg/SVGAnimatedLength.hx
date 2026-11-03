@@ -25,12 +25,6 @@
 package js.web.svg;
 
 @:native("SVGAnimatedLength") extern class SVGAnimatedLength {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var baseVal(default, null) : SVGLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var animVal(default, null) : SVGLength;
 }

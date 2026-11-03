@@ -26,9 +26,6 @@ package js.web.html;
 
 @:native("HTMLLabelElement") extern class HTMLLabelElement extends HTMLElement {
 	var form(default, null) : Null<HTMLFormElement>;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var htmlFor : String;
 	var control(default, null) : Null<HTMLElement>;
 }

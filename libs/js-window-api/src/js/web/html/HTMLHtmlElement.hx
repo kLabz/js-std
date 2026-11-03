@@ -27,7 +27,6 @@ package js.web.html;
 @:native("HTMLHtmlElement") extern class HTMLHtmlElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var version : String;
 }

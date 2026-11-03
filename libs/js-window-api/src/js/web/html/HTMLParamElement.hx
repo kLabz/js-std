@@ -25,20 +25,8 @@
 package js.web.html;
 
 @:native("HTMLParamElement") extern class HTMLParamElement extends HTMLElement {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var name : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var value : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var type : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var valueType : String;
 }

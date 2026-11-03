@@ -25,22 +25,17 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRFrame") extern class XRFrame {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var session(default, null) : XRSession;
 	var predictedDisplayTime(default, null) : js.web.perf.DOMHighResTimeStamp;
 	/**
 		From partial interface in anchors.idl
-		Unhandled extended attribute SameObject
 	**/
 	var trackedAnchors(default, null) : XRAnchorSet;
 	/**
 		From partial interface in body-tracking.idl
-		Unhandled extended attribute SameObject
 	**/
 	var body(default, null) : Null<XRBody>;
 	/**

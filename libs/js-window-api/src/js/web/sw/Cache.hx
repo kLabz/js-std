@@ -25,35 +25,14 @@
 package js.web.sw;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("Cache") extern class Cache {
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function add(request:js.web.net.RequestInfo):js.lib.Promise<Void>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function addAll(requests:Array<js.web.net.RequestInfo>):js.lib.Promise<Void>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function delete(request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Bool>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function keys(?request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Array<js.web.net.Request>>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function match(request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<haxe.extern.EitherType<js.web.net.Response, Void>>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function matchAll(?request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Array<js.web.net.Response>>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function put(request:js.web.net.RequestInfo, response:js.web.net.Response):js.lib.Promise<Void>;
 }

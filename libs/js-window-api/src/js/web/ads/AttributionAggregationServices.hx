@@ -25,9 +25,14 @@
 package js.web.ads;
 
 /**
-	TODO MaplikeDeclaration handling
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("AttributionAggregationServices") extern class AttributionAggregationServices {
-
+	var size(default, null) : Int;
+	function entries():js.lib.Iterator<js.lib.Tuple<String, AttributionAggregationService>>;
+	function forEach(callback:(value:AttributionAggregationService, key:String, map:AttributionAggregationServices) -> Void, ?thisArg:Any):Void;
+	function get(key:String):Null<AttributionAggregationService>;
+	function has(key:String):Bool;
+	function keys():js.lib.Iterator<String>;
+	function values():js.lib.Iterator<AttributionAggregationService>;
 }

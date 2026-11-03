@@ -31,9 +31,6 @@ package js.web.net;
 	var status(default, null) : Int;
 	var ok(default, null) : Bool;
 	var statusText(default, null) : String;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var headers(default, null) : Headers;
 	/**
 		From interface mixin Body
@@ -46,53 +43,34 @@ package js.web.net;
 	function new(?body:Null<BodyInit> = null, ?init:ResponseInit):Void;
 	/**
 		From interface mixin Body
-		Unhandled extended attribute NewObject
 	**/
 	function arrayBuffer():js.lib.Promise<js.lib.ArrayBuffer>;
 	/**
 		From interface mixin Body
-		Unhandled extended attribute NewObject
 	**/
 	function blob():js.lib.Promise<Blob>;
 	/**
 		From interface mixin Body
-		Unhandled extended attribute NewObject
 	**/
 	function bytes():js.lib.Promise<js.lib.Uint8Array>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function clone():Response;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function error():Response;
 	/**
 		From interface mixin Body
-		Unhandled extended attribute NewObject
 	**/
 	function formData():js.lib.Promise<FormData>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	overload function json(data:Any, ?init:ResponseInit):Response;
 	/**
 		From interface mixin Body
-		Unhandled extended attribute NewObject
 	**/
 	overload function json():js.lib.Promise<Any>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function redirect(url:String, ?status:Int = 302):Response;
 	/**
 		From interface mixin Body
-		Unhandled extended attribute NewObject
 	**/
 	function text():js.lib.Promise<String>;
 	/**
 		From interface mixin Body
-		Unhandled extended attribute NewObject
 	**/
 	function textStream():ReadableStream;
 }

@@ -25,7 +25,7 @@
 package js.web.webgpu;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("GPUQuerySet") extern class GPUQuerySet {
 	var type(default, null) : GPUQueryType;

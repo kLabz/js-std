@@ -25,7 +25,7 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("DigitalGoodsService") extern class DigitalGoodsService {
 	function consume(purchaseToken:String):js.lib.Promise<Void>;

@@ -25,14 +25,8 @@
 package js.web.media;
 
 typedef ULongRange = {
-	/**
-		Unhandled extended attribute Clamp
-	**/
 	@:optional
 	var max : Int;
-	/**
-		Unhandled extended attribute Clamp
-	**/
 	@:optional
 	var min : Int;
 };

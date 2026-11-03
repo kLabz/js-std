@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("USBIsochronousInTransferPacket") extern class USBIsochronousInTransferPacket {
 	var data(default, null) : Null<js.lib.DataView>;

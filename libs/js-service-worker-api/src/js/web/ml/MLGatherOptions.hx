@@ -25,9 +25,6 @@
 package js.web.ml;
 
 typedef MLGatherOptions = MLOperatorOptions & {
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var axis : Int;
 };

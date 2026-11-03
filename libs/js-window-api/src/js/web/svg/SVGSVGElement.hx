@@ -25,35 +25,18 @@
 package js.web.svg;
 
 @:native("SVGSVGElement") extern class SVGSVGElement extends SVGGraphicsElement {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var x(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var y(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var width(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var height(default, null) : SVGAnimatedLength;
 	var currentScale : Float;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var currentTranslate(default, null) : js.web.dom.SVGPoint;
 	/**
 		From interface mixin SVGFitToViewBox
-		Unhandled extended attribute SameObject
 	**/
 	var viewBox(default, null) : SVGAnimatedRect;
 	/**
 		From interface mixin SVGFitToViewBox
-		Unhandled extended attribute SameObject
 	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 	/**
@@ -146,37 +129,13 @@ package js.web.svg;
 	function animationsPaused():Bool;
 	function checkEnclosure(element:SVGElement, rect:js.web.dom.SVGRect):Bool;
 	function checkIntersection(element:SVGElement, rect:js.web.dom.SVGRect):Bool;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createSVGAngle():SVGAngle;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createSVGLength():SVGLength;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createSVGMatrix():js.web.dom.SVGMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createSVGNumber():SVGNumber;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createSVGPoint():js.web.dom.SVGPoint;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createSVGRect():js.web.dom.SVGRect;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createSVGTransform():SVGTransform;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createSVGTransformFromMatrix(?matrix:js.web.dom.DOMMatrix2DInit):SVGTransform;
 	function deselectAll():Void;
 	function forceRedraw():Void;

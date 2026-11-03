@@ -28,9 +28,6 @@ package js.web.css;
 	var updateCallbackDone(default, null) : js.lib.Promise<Void>;
 	var ready(default, null) : js.lib.Promise<Void>;
 	var finished(default, null) : js.lib.Promise<Void>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var types(default, null) : ViewTransitionTypeSet;
 	var transitionRoot(default, null) : js.web.dom.Element;
 	function skipTransition():Void;

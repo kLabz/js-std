@@ -24,7 +24,7 @@
 
 package js.web.css;
 
-@:native("AnimationNodeList") extern class AnimationNodeList {
+@:native("AnimationNodeList") extern class AnimationNodeList implements ArrayAccess<Null<AnimationEffect>> {
 	var length(default, null) : Int;
 	function item(index:Int):Null<AnimationEffect>;
 }

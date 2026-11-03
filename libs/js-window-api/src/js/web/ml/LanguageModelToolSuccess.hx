@@ -25,7 +25,7 @@
 package js.web.ml;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("LanguageModelToolSuccess") extern class LanguageModelToolSuccess {
 	var callId(default, null) : String;

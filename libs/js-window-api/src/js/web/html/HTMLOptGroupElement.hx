@@ -25,12 +25,6 @@
 package js.web.html;
 
 @:native("HTMLOptGroupElement") extern class HTMLOptGroupElement extends HTMLElement {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var disabled : Bool;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var label : String;
 }

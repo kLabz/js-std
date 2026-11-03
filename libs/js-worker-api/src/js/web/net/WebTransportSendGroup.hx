@@ -25,7 +25,7 @@
 package js.web.net;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("WebTransportSendGroup") extern class WebTransportSendGroup {
 	function getStats():js.lib.Promise<WebTransportSendStreamStats>;

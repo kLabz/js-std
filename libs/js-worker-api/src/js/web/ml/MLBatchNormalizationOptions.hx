@@ -29,9 +29,6 @@ typedef MLBatchNormalizationOptions = MLOperatorOptions & {
 	var scale : MLOperand;
 	@:optional
 	var bias : MLOperand;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var axis : Int;
 	@:optional

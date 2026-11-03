@@ -24,9 +24,12 @@
 
 package js.web.device;
 
-/**
-	TODO MaplikeDeclaration handling
-**/
 @:native("KeyboardLayoutMap") extern class KeyboardLayoutMap {
-
+	var size(default, null) : Int;
+	function entries():js.lib.Iterator<js.lib.Tuple<String, String>>;
+	function forEach(callback:(value:String, key:String, map:KeyboardLayoutMap) -> Void, ?thisArg:Any):Void;
+	function get(key:String):Null<String>;
+	function has(key:String):Bool;
+	function keys():js.lib.Iterator<String>;
+	function values():js.lib.Iterator<String>;
 }

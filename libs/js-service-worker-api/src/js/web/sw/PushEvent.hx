@@ -25,7 +25,7 @@
 package js.web.sw;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PushEvent") extern class PushEvent extends ExtendableEvent {
 	var data(default, null) : Null<PushMessageData>;

@@ -26,9 +26,6 @@ package js.web.media;
 
 typedef MediaStreamTrackProcessorInit = {
 	var track : MediaStreamTrackOrHandle;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var maxBufferSize : Int;
 };

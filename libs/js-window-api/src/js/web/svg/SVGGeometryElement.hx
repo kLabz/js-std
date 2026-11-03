@@ -25,9 +25,6 @@
 package js.web.svg;
 
 @:native("SVGGeometryElement") extern class SVGGeometryElement extends SVGGraphicsElement {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var pathLength(default, null) : SVGAnimatedNumber;
 	function getPointAtLength(distance:Float):js.web.dom.SVGPoint;
 	function getTotalLength():Float;

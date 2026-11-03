@@ -25,8 +25,5 @@
 package js.web.xr;
 
 @:native("XRSubImage") extern class XRSubImage {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var viewport(default, null) : XRViewport;
 }

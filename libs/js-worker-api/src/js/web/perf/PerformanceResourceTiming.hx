@@ -57,8 +57,5 @@ package js.web.perf;
 		From partial interface in server-timing.idl
 	**/
 	var serverTiming(default, null) : Array<PerformanceServerTiming>;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

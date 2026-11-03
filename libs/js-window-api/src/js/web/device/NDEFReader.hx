@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("NDEFReader") extern class NDEFReader extends js.web.dom.EventTarget {
 	var onreading : js.web.html.EventHandler;

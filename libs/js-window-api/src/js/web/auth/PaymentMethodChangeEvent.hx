@@ -25,7 +25,7 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PaymentMethodChangeEvent") extern class PaymentMethodChangeEvent extends PaymentRequestUpdateEvent {
 	var methodName(default, null) : String;

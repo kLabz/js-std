@@ -30,9 +30,6 @@ package js.web.net;
 	**/
 	var encoding(default, null) : String;
 	function new():Void;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function encode(?input:String = ""):js.lib.Uint8Array;
 	function encodeInto(source:String, destination:js.lib.Uint8Array):TextEncoderEncodeIntoResult;
 }

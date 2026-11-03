@@ -24,9 +24,6 @@
 
 package js.web.dom;
 
-/**
-	Unhandled extended attribute Serializable
-**/
 @:native("DOMMatrixReadOnly") extern class DOMMatrixReadOnly {
 	var a(default, null) : Float;
 	var b(default, null) : Float;
@@ -53,84 +50,24 @@ package js.web.dom;
 	var is2D(default, null) : Bool;
 	var isIdentity(default, null) : Bool;
 	function new(?init:haxe.extern.EitherType<String, Array<Float>>):Void;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function flipX():DOMMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function flipY():DOMMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function fromFloat32Array(array32:js.lib.Float32Array):DOMMatrixReadOnly;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function fromFloat64Array(array64:js.lib.Float64Array):DOMMatrixReadOnly;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function fromMatrix(?other:DOMMatrixInit):DOMMatrixReadOnly;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function inverse():DOMMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function multiply(?other:DOMMatrixInit):DOMMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function rotate(?rotX:Float = 0, ?rotY:Float, ?rotZ:Float):DOMMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function rotateAxisAngle(?x:Float = 0, ?y:Float = 0, ?z:Float = 0, ?angle:Float = 0):DOMMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function rotateFromVector(?x:Float = 0, ?y:Float = 0):DOMMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function scale(?scaleX:Float = 1, ?scaleY:Float, ?scaleZ:Float = 1, ?originX:Float = 0, ?originY:Float = 0, ?originZ:Float = 0):DOMMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function scale3d(?scale:Float = 1, ?originX:Float = 0, ?originY:Float = 0, ?originZ:Float = 0):DOMMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function scaleNonUniform(?scaleX:Float = 1, ?scaleY:Float = 1):DOMMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function skewX(?sx:Float = 0):DOMMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function skewY(?sy:Float = 0):DOMMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function toFloat32Array():js.lib.Float32Array;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function toFloat64Array():js.lib.Float64Array;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function transformPoint(?point:DOMPointInit):DOMPoint;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function translate(?tx:Float = 0, ?ty:Float = 0, ?tz:Float = 0):DOMMatrix;
 }

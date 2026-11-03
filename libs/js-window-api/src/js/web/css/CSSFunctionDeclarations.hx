@@ -25,9 +25,5 @@
 package js.web.css;
 
 @:native("CSSFunctionDeclarations") extern class CSSFunctionDeclarations extends CSSRule {
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-	**/
 	var style(default, null) : CSSFunctionDescriptors;
 }

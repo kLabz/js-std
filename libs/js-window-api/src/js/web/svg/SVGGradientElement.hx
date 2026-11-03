@@ -29,21 +29,11 @@ package js.web.svg;
 	static inline var SVG_SPREADMETHOD_PAD : Int = 1;
 	static inline var SVG_SPREADMETHOD_REFLECT : Int = 2;
 	static inline var SVG_SPREADMETHOD_REPEAT : Int = 3;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var gradientUnits(default, null) : SVGAnimatedEnumeration;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var gradientTransform(default, null) : SVGAnimatedTransformList;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var spreadMethod(default, null) : SVGAnimatedEnumeration;
 	/**
 		From interface mixin SVGURIReference
-		Unhandled extended attribute SameObject
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

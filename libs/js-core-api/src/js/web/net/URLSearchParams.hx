@@ -29,13 +29,14 @@ package js.web.net;
 	function new(?init:haxe.extern.EitherType<Array<Array<String>>, haxe.extern.EitherType<haxe.DynamicAccess<String>, String>> = ""):Void;
 	function append(name:String, value:String):Void;
 	function delete(name:String, ?value:String):Void;
-	function entries():Iterator<js.lib.Tuple<String, String>>;
+	function entries():js.lib.Iterator<js.lib.Tuple<String, String>>;
+	function forEach(callback:(value:String, key:String, parent:URLSearchParams) -> Void, ?thisArg:Any):Void;
 	function get(name:String):Null<String>;
 	function getAll(name:String):Array<String>;
 	function has(name:String, ?value:String):Bool;
-	function keys():Iterator<String>;
+	function keys():js.lib.Iterator<String>;
 	function set(name:String, value:String):Void;
 	function sort():Void;
 	function toString():String;
-	function values():Iterator<String>;
+	function values():js.lib.Iterator<String>;
 }

@@ -25,7 +25,7 @@
 package js.web.ml;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("MLTensor") extern class MLTensor {
 	var dataType(default, null) : MLOperandDataType;

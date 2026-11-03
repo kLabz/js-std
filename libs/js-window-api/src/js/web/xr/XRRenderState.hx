@@ -25,7 +25,7 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRRenderState") extern class XRRenderState {
 	var depthNear(default, null) : Float;

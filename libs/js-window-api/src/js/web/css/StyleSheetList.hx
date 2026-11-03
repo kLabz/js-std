@@ -24,7 +24,7 @@
 
 package js.web.css;
 
-@:native("StyleSheetList") extern class StyleSheetList {
+@:native("StyleSheetList") extern class StyleSheetList implements ArrayAccess<Null<CSSStyleSheet>> {
 	var length(default, null) : Int;
 	function item(index:Int):Null<CSSStyleSheet>;
 }

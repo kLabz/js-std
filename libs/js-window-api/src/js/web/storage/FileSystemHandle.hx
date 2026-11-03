@@ -25,8 +25,7 @@
 package js.web.storage;
 
 /**
-	Unhandled extended attribute SecureContext
-	Unhandled extended attribute Serializable
+	Only available in secure contexts (HTTPS).
 **/
 @:native("FileSystemHandle") extern class FileSystemHandle {
 	var kind(default, null) : FileSystemHandleKind;

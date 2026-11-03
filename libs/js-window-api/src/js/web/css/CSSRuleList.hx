@@ -24,7 +24,7 @@
 
 package js.web.css;
 
-@:native("CSSRuleList") extern class CSSRuleList {
+@:native("CSSRuleList") extern class CSSRuleList implements ArrayAccess<Null<CSSRule>> {
 	var length(default, null) : Int;
 	function item(index:Int):Null<CSSRule>;
 }

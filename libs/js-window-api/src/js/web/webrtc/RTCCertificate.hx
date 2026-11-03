@@ -24,9 +24,6 @@
 
 package js.web.webrtc;
 
-/**
-	Unhandled extended attribute Serializable
-**/
 @:native("RTCCertificate") extern class RTCCertificate {
 	var expires(default, null) : js.web.perf.EpochTimeStamp;
 	function getFingerprints():Array<RTCDtlsFingerprint>;

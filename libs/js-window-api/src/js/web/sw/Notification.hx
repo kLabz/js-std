@@ -44,13 +44,7 @@ package js.web.sw;
 	var renotify(default, null) : Bool;
 	var silent(default, null) : Null<Bool>;
 	var requireInteraction(default, null) : Bool;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var data(default, null) : Any;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var actions(default, null) : Array<NotificationAction>;
 	function new(title:String, ?options:NotificationOptions):Void;
 	function close():Void;

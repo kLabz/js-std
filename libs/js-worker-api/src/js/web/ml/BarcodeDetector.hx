@@ -25,7 +25,7 @@
 package js.web.ml;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("BarcodeDetector") extern class BarcodeDetector {
 	function new(?barcodeDetectorOptions:BarcodeDetectorOptions):Void;

@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("UncalibratedMagnetometer") extern class UncalibratedMagnetometer extends Sensor {
 	var x(default, null) : Null<Float>;

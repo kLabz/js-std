@@ -25,7 +25,7 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("IdentityCredential") extern class IdentityCredential extends Credential {
 	var token(default, null) : Any;

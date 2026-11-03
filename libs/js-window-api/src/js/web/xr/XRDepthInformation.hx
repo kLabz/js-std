@@ -25,14 +25,11 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRDepthInformation") extern class XRDepthInformation {
 	var width(default, null) : Int;
 	var height(default, null) : Int;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var normDepthBufferFromNormView(default, null) : XRRigidTransform;
 	var rawValueToMeters(default, null) : Float;
 	/**
@@ -41,7 +38,6 @@ package js.web.xr;
 	var projectionMatrix(default, null) : js.lib.Float32Array;
 	/**
 		From interface mixin XRViewGeometry
-		Unhandled extended attribute SameObject
 	**/
 	var transform(default, null) : XRRigidTransform;
 }

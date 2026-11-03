@@ -29,7 +29,7 @@ package js.web.css;
 	var firstChild(default, null) : Null<AnimationEffect>;
 	var lastChild(default, null) : Null<AnimationEffect>;
 	function new(children:Null<Array<AnimationEffect>>, ?timing:haxe.extern.EitherType<Float, EffectTiming>):Void;
-	function append(effects:haxe.Rest<haxe.Rest<AnimationEffect>>):Void;
+	function append(effects:haxe.Rest<AnimationEffect>):Void;
 	function clone():GroupEffect;
-	function prepend(effects:haxe.Rest<haxe.Rest<AnimationEffect>>):Void;
+	function prepend(effects:haxe.Rest<AnimationEffect>):Void;
 }

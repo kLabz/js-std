@@ -41,9 +41,6 @@ package js.web.webgl;
 	function endQueryEXT(target:GLenum):Void;
 	function getQueryEXT(target:GLenum, pname:GLenum):Any;
 	function getQueryObjectEXT(query:WebGLTimerQueryEXT, pname:GLenum):Any;
-	/**
-		Unhandled extended attribute WebGLHandlesContextLoss
-	**/
 	function isQueryEXT(query:Null<WebGLTimerQueryEXT>):Bool;
 	function queryCounterEXT(query:WebGLTimerQueryEXT, target:GLenum):Void;
 }

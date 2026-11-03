@@ -24,9 +24,6 @@
 
 package js.web.dom;
 
-/**
-	Unhandled extended attribute Serializable
-**/
 @:native("DOMException") extern class DOMException {
 	var name(default, null) : String;
 	var message(default, null) : String;

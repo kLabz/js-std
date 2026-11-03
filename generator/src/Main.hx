@@ -5,6 +5,7 @@ import haxe.macro.Expr.ComplexType;
 import haxe.macro.Expr.Expr;
 import haxe.macro.Expr.ExprDef;
 import haxe.macro.Expr.Field;
+import haxe.macro.Expr.FunctionArg;
 import haxe.macro.Expr.MetadataEntry;
 import haxe.macro.Expr.Position;
 import haxe.macro.Expr.TypeDefinition;
@@ -29,6 +30,7 @@ import webidl2.IDLRootType;
 import webidl2.IDLTypeDescription;
 import webidl2.IncludesType;
 import webidl2.InterfaceType;
+import webidl2.NamespaceType;
 import webidl2.ValueDescription;
 
 using Lambda;
@@ -124,6 +126,7 @@ class Main {
 	var saveTasks:Array<{ctx:Context, t:String, td:TypeDefinition}> = [];
 	var partialDictionaries:Map<String, Array<DictionaryType>> = [];
 	var partialInterfaces:Map<String, Array<{t:InterfaceType, file:FileHandler}>> = [];
+	var partialNamespaces:Map<String, Array<NamespaceType>> = [];
 	var includesTypes:Array<IncludesType> = [];
 	var mixins:Map<String, Array<IDLInterfaceMixinMemberType>> = [];
 
@@ -190,14 +193,31 @@ class Main {
 		return aliases.filter(a -> a.charAt(0) == a.charAt(0).toUpperCase());
 	}
 
+	// Extended attributes that don't affect how the API is used from Haxe
+	static final irrelevantAttributes = [
+		"SameObject", "NewObject", "Reflect", "ReflectSetter", "ReflectURL", "ReflectDefault", "ReflectRange",
+		"ReflectNonNegative", "ReflectPositive", "ReflectPositiveWithFallback", "EnforceRange", "Clamp",
+		"AllowShared", "LegacyNullToEmptyString", "CEReactions", "WebGLHandlesContextLoss", "Serializable",
+		"Transferable", "Default", "Replaceable", "PutForwards", "Unscopable", "LegacyUnforgeable",
+		"LegacyLenientThis", "LegacyLenientSetter", "LegacyUnenumerableNamedProperties",
+		"LegacyTreatNonObjectAsNull", "LegacyOverrideBuiltIns"
+	];
+
+	static final documentedAttributes = [
+		"SecureContext" => "Only available in secure contexts (HTTPS).",
+		"CrossOriginIsolated" => "Only available in cross-origin isolated contexts."
+	];
+
 	function assertEmptyAttributes(attr:Array<ExtendedAttribute<Dynamic>>, ?pos:PosInfos):Void {
-		for (a in attr) haxe.Log.trace('ERROR: unhandled extended attribute ${a.name}', pos);
+		for (a in attr) if (!irrelevantAttributes.contains(a.name)) haxe.Log.trace('ERROR: unhandled extended attribute ${a.name}', pos);
 	}
 
 	function addUnhandledAttributesToDoc(doc:Null<String>, attr:Array<ExtendedAttribute<Dynamic>>):Null<String> {
 		while (attr.length > 0) {
 			var a = attr.shift();
-			doc = doc.concat('Unhandled extended attribute ${a.name}', "\n");
+			if (irrelevantAttributes.contains(a.name)) continue;
+			var line = documentedAttributes.get(a.name) ?? 'Unhandled extended attribute ${a.name}';
+			doc = doc.concat(line, "\n");
 		}
 
 		return doc;
@@ -450,6 +470,9 @@ class Main {
 		if (ctx.scope.or([]).length == 0) {
 			ctx.scope = new Set();
 			handleType(t);
+
+			// Unreferenced in IDL, but often referenced in prose (e.g. `UnderlyingSource` for `object underlyingSource`)
+			if (ctx.scope.length == 0) ctx.scope = ["*"];
 		}
 
 		// Doesn't seem needed atm, but doesn't hurt to check
@@ -788,8 +811,48 @@ class Main {
 						save(ctx, t.name, td);
 					});
 
+				case IDLNamespaceType if (t.partial):
+					var scope = extractScope(t.extAttrs);
+					for (m in t.members) ownerScopes.set(m, scope);
+					partialNamespaces.set(t.name, partialNamespaces.get(t.name).or([]).concat([t]));
+
 				case IDLNamespaceType:
-					trace(' > TODO: namespace ${pack.concat([t.name]).join(".")}');
+					// `console` isn't a valid Haxe type name
+					var name = t.name.charAt(0).toUpperCase() + t.name.substr(1);
+					packMap.set(name, pack);
+					var scope = extractScope(t.extAttrs);
+					scopeMap.set(name, scope);
+
+					tasks.push(() -> {
+						var partials = partialNamespaces.get(t.name).or([]);
+						var members:Array<Dynamic> = partials.fold((p, acc:Array<Dynamic>) -> acc.concat(p.members), (t.members:Array<Dynamic>));
+						var ctx = initClassCtx(file, name, scope, cast members);
+						for (m in members) handleMember(ctx, m);
+
+						for (f in ctx.fields) {
+							if (f.access == null) f.access = [];
+							if (!f.access.contains(AStatic)) f.access.unshift(AStatic);
+						}
+						ctx.fields.sort((f1, f2) -> Reflect.compare(f1.name, f2.name));
+
+						var td:TypeDefinition = {
+							pack: pack,
+							name: name,
+							doc: addUnhandledAttributesToDoc(null, t.extAttrs),
+							pos: ctx.pos,
+							isExtern: true,
+							kind: TDClass(),
+							meta: [{
+								name: ":native",
+								params: [{pos: ctx.pos, expr: EConst(CString(t.name))}],
+								pos: ctx.pos
+							}],
+							fields: ctx.fields
+						};
+
+						Sys.println(' > Exported namespace ${pack.concat([name]).join(".")}');
+						save(ctx, name, td);
+					});
 
 				case IDLTypedefType:
 					packMap.set(t.name, pack);
@@ -848,7 +911,11 @@ class Main {
 
 		return switch (name) {
 			case "": throw 'unexpected empty identifier';
-			case "default" | "operator" | "inline" | "continue" | "catch" | "for" | "interface" | "extends" | "break" | "override" | "cast":
+			case "abstract" | "break" | "case" | "cast" | "catch" | "class" | "continue" | "default" | "do" | "dynamic"
+				| "else" | "enum" | "extends" | "extern" | "false" | "final" | "for" | "function" | "if" | "implements"
+				| "import" | "in" | "inline" | "interface" | "macro" | "new" | "null" | "operator" | "overload"
+				| "override" | "package" | "private" | "public" | "return" | "static" | "switch" | "this" | "throw"
+				| "true" | "try" | "typedef" | "untyped" | "using" | "var" | "while":
 				addNative();
 				'${name}_';
 
@@ -907,6 +974,12 @@ class Main {
 		}
 	}
 
+	// Declarations (iterable, maplike, setlike) don't add members the interface declares itself
+	function addDeclarationFields(ctx:ClassContext, fields:Array<Field>) {
+		var declared = [for (m in ctx.members) getName(m)];
+		for (f in fields) if (!declared.contains(f.name)) ctx.fields.push(f);
+	}
+
 	function signature(f:Field):String {
 		return switch (f.kind) {
 			case FVar(_) | FProp(_): 'var ${f.name}';
@@ -955,6 +1028,14 @@ class Main {
 		Patch.patchMember(ctx, m, fromInclude);
 
 
+		var self = TPath({pack: [], name: ctx.t});
+
+		// Named getters (`getter Node? item(unsigned long index)`) are both a method and keyed access
+		switch (m.type) {
+			case IDLOperationMemberType if (m.name.or("") != "" && m.special == "getter"): addKeyedAccess(ctx, m);
+			case _:
+		}
+
 		switch (m.type) {
 			case IDLConstantMemberType:
 				var meta = [];
@@ -969,39 +1050,74 @@ class Main {
 				});
 
 			case IDLSetlikeDeclarationMemberType:
-				// TODO
-				trace('TODO Setlike for ${ctx.t}', m);
-				ctx.typeDoc.push('TODO SetlikeDeclaration handling');
+				var tvalue = convertType(ctx, m.idlType.first);
+				var fields = (macro class A {
+					var size(default, null):Int;
+					function entries():js.lib.Iterator<js.lib.Tuple<$tvalue, $tvalue>>;
+					function keys():js.lib.Iterator<$tvalue>;
+					function values():js.lib.Iterator<$tvalue>;
+					function forEach(callback:(value:$tvalue, key:$tvalue, set:$self) -> Void, ?thisArg:Any):Void;
+					function has(value:$tvalue):Bool;
+				}).fields;
+				if (!m.readonly) fields = fields.concat((macro class A {
+					function add(value:$tvalue):$self;
+					function delete(value:$tvalue):Bool;
+					function clear():Void;
+				}).fields);
+				addDeclarationFields(ctx, fields);
 
 			case IDLMaplikeDeclarationMemberType:
-				// TODO
-				trace('TODO Maplike for ${ctx.t}', m);
-				ctx.typeDoc.push('TODO MaplikeDeclaration handling');
+				var tkey = convertType(ctx, m.idlType.first);
+				var tvalue = convertType(ctx, m.idlType.second);
+				var fields = (macro class A {
+					var size(default, null):Int;
+					function entries():js.lib.Iterator<js.lib.Tuple<$tkey, $tvalue>>;
+					function keys():js.lib.Iterator<$tkey>;
+					function values():js.lib.Iterator<$tvalue>;
+					function forEach(callback:(value:$tvalue, key:$tkey, map:$self) -> Void, ?thisArg:Any):Void;
+					function get(key:$tkey):Null<$tvalue>;
+					function has(key:$tkey):Bool;
+				}).fields;
+				if (!m.readonly) fields = fields.concat((macro class A {
+					function set(key:$tkey, value:$tvalue):$self;
+					function delete(key:$tkey):Bool;
+					function clear():Void;
+				}).fields);
+				addDeclarationFields(ctx, fields);
 
 			case IDLAsyncIterableDeclarationMemberType:
-				// TODO
-				trace('TODO async_iterable for ${ctx.t}', m);
-				ctx.typeDoc.push('TODO async_iterable handling');
-
-			case IDLIterableDeclarationMemberType:
-				var newFields:Array<Field> = [];
-				if (m.idlType.length == 1) {
+				var args = m.arguments.map(a -> convertArgument(ctx, a));
+				var fields = if (m.idlType.length == 1) {
 					var tvalue = convertType(ctx, m.idlType.first);
-
-					newFields = (macro class A {
-						function values():Iterator<$tvalue>;
+					(macro class A {
+						function values():js.lib.Iterator.AsyncIterator<$tvalue>;
 					}).fields;
 				} else {
 					var tkey = convertType(ctx, m.idlType.first);
 					var tvalue = convertType(ctx, m.idlType.second);
-
-					newFields = (macro class A {
-						function keys():Iterator<$tkey>;
-						function values():Iterator<$tvalue>;
-						function entries():Iterator<js.lib.Tuple<$tkey, $tvalue>>;
+					(macro class A {
+						function entries():js.lib.Iterator.AsyncIterator<js.lib.Tuple<$tkey, $tvalue>>;
+						function keys():js.lib.Iterator.AsyncIterator<$tkey>;
+						function values():js.lib.Iterator.AsyncIterator<$tvalue>;
 					}).fields;
+				};
+				for (f in fields) switch (f.kind) {
+					case FFun(fn): fn.args = args.copy();
+					case _:
 				}
-				for (f in newFields) ctx.fields.push(f);
+				addDeclarationFields(ctx, fields);
+
+			case IDLIterableDeclarationMemberType:
+				// Value iterators are indexed: keys are indices
+				var single = m.idlType.length == 1;
+				var tkey = single ? macro :Int : convertType(ctx, m.idlType.first);
+				var tvalue = convertType(ctx, single ? m.idlType.first : m.idlType.second);
+				addDeclarationFields(ctx, (macro class A {
+					function entries():js.lib.Iterator<js.lib.Tuple<$tkey, $tvalue>>;
+					function keys():js.lib.Iterator<$tkey>;
+					function values():js.lib.Iterator<$tvalue>;
+					function forEach(callback:(value:$tvalue, key:$tkey, parent:$self) -> Void, ?thisArg:Any):Void;
+				}).fields);
 
 			case IDLConstructorMemberType:
 				var skip = false;
@@ -1018,18 +1134,7 @@ class Main {
 						doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
 						access: isOverload(m, ctx.members) ? [AOverload] : [],
 						kind: FFun({
-							// TODO: make sure that arguments' extended attributes are handled
-							// TODO: handle a.variadic
-							args: m.arguments.map(a -> {
-								var ct = convertType(ctx, a.idlType);
-								{
-									name: sanitizeIdentifier(a.name, [], ctx.pos),
-									opt: a.optional,
-									type: ct,
-									value: convertValue(a.default_, ct, true, ctx.pos),
-									meta: null
-								}
-							}),
+							args: m.arguments.map(a -> convertArgument(ctx, a)),
 							ret: macro :Void,
 							expr: null,
 							params: null
@@ -1081,36 +1186,10 @@ class Main {
 				}).fields[0]);
 
 			case IDLOperationMemberType if (m.name.or("") == "" && m.special == "getter"):
-				// TODO: handle a.optional/a.variadic
-				var tkey = convertType(ctx, m.arguments[m.arguments.length - 1].idlType);
-				var tvalue = convertType(ctx, m.idlType);
-				switch (tkey) {
-					case TPath({pack: [], name: "Int"}):
-						ctx.interfaces.push(toTPath(macro :ArrayAccess<$tvalue>));
-					case TPath({pack: [], name: "String"}):
-						var tvalue = try {
-							var tvalue = toTPath(tvalue);
-							Std.string(TPath({pack: tvalue.pack, name: tvalue.name, params: tvalue.params}));
-						} catch(_) "TAnonymous([])";
-						ctx.typeDoc.push('TODO ArrayAccess<> for tkey=String tvalue=${tvalue}');
-					case _:
-						var tvalue = try {
-							var tvalue = toTPath(tvalue);
-							Std.string(TPath({pack: tvalue.pack, name: tvalue.name, params: tvalue.params}));
-						} catch(_) "TAnonymous([])";
-						ctx.typeDoc.push('TODO ArrayAccess<> for tkey=${Std.string(tkey)} tvalue=${tvalue}');
-				}
+				addKeyedAccess(ctx, m);
 
 			case IDLOperationMemberType if (m.name.or("") == "" && m.special.or("") != ""):
-				// TODO: factorize arg handling
-				var args = m.arguments.map(a ->
-					a.optional
-						? TOptional(TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType)))
-						: TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType))
-				);
-				var tret = convertType(ctx, m.idlType).or(macro :Void);
-				var ct = TFunction(args, tret);
-				ctx.typeDoc.push('TODO special=${m.special} ${printer.printComplexType(ct)}');
+				// Unnamed setters/deleters: writes are covered by ArrayAccess/Dynamic
 
 			case IDLOperationMemberType:
 				handleAttributes(m.extAttrs, function(a) {
@@ -1126,20 +1205,7 @@ class Main {
 					doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
 					access: isOverload(m, ctx.members) ? [AOverload] : [],
 					kind: FFun({
-						// TODO: make sure that arguments' extended attributes are handled
-						// TODO: factorize arg handling
-						args: m.arguments.map(a -> {
-							var ct = convertType(ctx, a.idlType);
-							ct = a.variadic ? macro :haxe.Rest<$ct> : ct;
-
-							return {
-								name: sanitizeIdentifier(a.name, [], ctx.pos),
-								opt: a.optional,
-								type: a.variadic ? macro :haxe.Rest<$ct> : ct,
-								value: convertValue(a.default_, ct, true, ctx.pos),
-								meta: null
-							}
-						}),
+						args: m.arguments.map(a -> convertArgument(ctx, a)),
 						ret: convertType(ctx, m.idlType).or(macro :Void),
 						expr: null,
 						params: null
@@ -1152,6 +1218,17 @@ class Main {
 		}
 
 		assertEmptyAttributes(m.extAttrs);
+	}
+
+	function convertArgument(ctx:Context, a:webidl2.Argument):FunctionArg {
+		var ct = convertType(ctx, a.idlType);
+		return {
+			name: sanitizeIdentifier(a.name, [], ctx.pos),
+			opt: a.optional,
+			type: a.variadic ? macro :haxe.Rest<$ct> : ct,
+			value: convertValue(a.default_, ct, true, ctx.pos),
+			meta: null
+		};
 	}
 
 	static function candidatePaths(ct:Null<ComplexType>):Array<TypePath> {
@@ -1220,6 +1297,24 @@ class Main {
 		}
 
 		return get(cast member);
+	}
+
+	function addKeyedAccess(ctx:ClassContext, m:webidl2.OperationMemberType) {
+		var tkey = convertType(ctx, m.arguments[m.arguments.length - 1].idlType);
+		var tvalue = convertType(ctx, m.idlType);
+		var access = switch (tkey) {
+			case TPath({pack: [], name: "Int"}): macro :ArrayAccess<$tvalue>;
+			// Only for pure maps (DOMStringMap): elsewhere it would accept any typo as a field
+			case TPath({pack: [], name: "String"}) if (ctx.members.foreach(isSpecialOperation)): macro :Dynamic<$tvalue>;
+			case _: return;
+		};
+		var tp = toTPath(access);
+		if (!ctx.interfaces.exists(i -> printer.printTypePath(i) == printer.printTypePath(tp))) ctx.interfaces.push(tp);
+	}
+
+	static function isSpecialOperation(member:IDLInterfaceMemberType):Bool {
+		var m:Dynamic = member;
+		return m.type == "operation" && (m.name ?? "") == "" && (m.special ?? "") != "";
 	}
 
 	static function isOverload(member:IDLInterfaceMemberType, members:Array<IDLInterfaceMemberType>):Bool {

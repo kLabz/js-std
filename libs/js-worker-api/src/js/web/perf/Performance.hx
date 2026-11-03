@@ -64,7 +64,7 @@ package js.web.perf;
 	function measure(measureName:String, ?startOrMeasureOptions:haxe.extern.EitherType<String, PerformanceMeasureOptions>, ?endMark:String):PerformanceMeasure;
 	/**
 		From partial interface in performance-measure-memory.idl
-		Unhandled extended attribute CrossOriginIsolated
+		Only available in cross-origin isolated contexts.
 	**/
 	function measureUserAgentSpecificMemory():js.lib.Promise<MemoryMeasurement>;
 	function now():DOMHighResTimeStamp;
@@ -72,8 +72,5 @@ package js.web.perf;
 		From partial interface in resource-timing.idl
 	**/
 	function setResourceTimingBufferSize(maxSize:Int):Void;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

@@ -25,16 +25,10 @@
 package js.web.storage;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("CookieChangeEvent") extern class CookieChangeEvent extends js.web.dom.Event {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var changed(default, null) : Array<CookieListItem>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var deleted(default, null) : Array<CookieListItem>;
 	function new(type:String, ?eventInitDict:CookieChangeEventInit):Void;
 }

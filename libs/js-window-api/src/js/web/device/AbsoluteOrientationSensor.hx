@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("AbsoluteOrientationSensor") extern class AbsoluteOrientationSensor extends OrientationSensor {
 	function new(?sensorOptions:OrientationSensorOptions):Void;

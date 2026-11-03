@@ -25,13 +25,10 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("Bluetooth") extern class Bluetooth extends js.web.dom.EventTarget {
 	var onavailabilitychanged : js.web.html.EventHandler;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var referringDevice(default, null) : Null<BluetoothDevice>;
 	/**
 		From interface mixin BluetoothDeviceEventHandlers
@@ -62,7 +59,7 @@ package js.web.device;
 	function requestDevice(?options:RequestDeviceOptions):js.lib.Promise<BluetoothDevice>;
 	/**
 		From partial interface in bluetooth-scanning.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function requestLEScan(?options:BluetoothLEScanOptions):js.lib.Promise<BluetoothLEScan>;
 }

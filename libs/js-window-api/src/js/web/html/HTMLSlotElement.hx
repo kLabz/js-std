@@ -25,11 +25,8 @@
 package js.web.html;
 
 @:native("HTMLSlotElement") extern class HTMLSlotElement extends HTMLElement {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var name : String;
-	function assign(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<js.web.dom.Element, js.web.dom.Text>>>):Void;
+	function assign(nodes:haxe.Rest<haxe.extern.EitherType<js.web.dom.Element, js.web.dom.Text>>):Void;
 	function assignedElements(?options:AssignedNodesOptions):Array<js.web.dom.Element>;
 	function assignedNodes(?options:AssignedNodesOptions):Array<js.web.dom.Node>;
 }

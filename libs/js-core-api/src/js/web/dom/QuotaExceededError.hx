@@ -24,9 +24,6 @@
 
 package js.web.dom;
 
-/**
-	Unhandled extended attribute Serializable
-**/
 @:native("QuotaExceededError") extern class QuotaExceededError extends DOMException {
 	var quota(default, null) : Null<Float>;
 	var requested(default, null) : Null<Float>;

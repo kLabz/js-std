@@ -24,9 +24,14 @@
 
 package js.web.html;
 
-/**
-	TODO SetlikeDeclaration handling
-**/
 @:native("CustomStateSet") extern class CustomStateSet {
-
+	var size(default, null) : Int;
+	function add(value:String):CustomStateSet;
+	function clear():Void;
+	function delete(value:String):Bool;
+	function entries():js.lib.Iterator<js.lib.Tuple<String, String>>;
+	function forEach(callback:(value:String, key:String, set:CustomStateSet) -> Void, ?thisArg:Any):Void;
+	function has(value:String):Bool;
+	function keys():js.lib.Iterator<String>;
+	function values():js.lib.Iterator<String>;
 }

@@ -26,9 +26,5 @@ package js.web.css;
 
 @:native("CSSPageRule") extern class CSSPageRule extends CSSGroupingRule {
 	var selectorText : String;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-	**/
 	var style(default, null) : CSSPageDescriptors;
 }

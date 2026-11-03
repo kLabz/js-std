@@ -24,9 +24,6 @@
 
 package js.web.canvas;
 
-/**
-	Unhandled extended attribute Serializable
-**/
 @:native("ImageData") extern class ImageData {
 	var width(default, null) : Int;
 	var height(default, null) : Int;

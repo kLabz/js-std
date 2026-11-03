@@ -24,7 +24,7 @@
 
 package js.web.dom;
 
-@:native("TouchList") extern class TouchList {
+@:native("TouchList") extern class TouchList implements ArrayAccess<Null<Touch>> {
 	var length(default, null) : Int;
 	function item(index:Int):Null<Touch>;
 }

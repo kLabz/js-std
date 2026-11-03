@@ -24,9 +24,11 @@
 
 package js.web.css;
 
-/**
-	TODO SetlikeDeclaration handling
-**/
 @:native("FontFaceVariations") extern class FontFaceVariations {
-
+	var size(default, null) : Int;
+	function entries():js.lib.Iterator<js.lib.Tuple<FontFaceVariationAxis, FontFaceVariationAxis>>;
+	function forEach(callback:(value:FontFaceVariationAxis, key:FontFaceVariationAxis, set:FontFaceVariations) -> Void, ?thisArg:Any):Void;
+	function has(value:FontFaceVariationAxis):Bool;
+	function keys():js.lib.Iterator<FontFaceVariationAxis>;
+	function values():js.lib.Iterator<FontFaceVariationAxis>;
 }

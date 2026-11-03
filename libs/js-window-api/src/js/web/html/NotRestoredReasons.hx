@@ -31,8 +31,5 @@ package js.web.html;
 	var url(default, null) : Null<String>;
 	var reasons(default, null) : Null<Array<NotRestoredReasonDetails>>;
 	var children(default, null) : Null<Array<NotRestoredReasons>>;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

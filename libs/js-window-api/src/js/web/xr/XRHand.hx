@@ -26,8 +26,9 @@ package js.web.xr;
 
 @:native("XRHand") extern class XRHand {
 	var size(default, null) : Int;
-	function entries():Iterator<js.lib.Tuple<XRHandJoint, XRJointSpace>>;
+	function entries():js.lib.Iterator<js.lib.Tuple<XRHandJoint, XRJointSpace>>;
+	function forEach(callback:(value:XRJointSpace, key:XRHandJoint, parent:XRHand) -> Void, ?thisArg:Any):Void;
 	function get(key:XRHandJoint):XRJointSpace;
-	function keys():Iterator<XRHandJoint>;
-	function values():Iterator<XRJointSpace>;
+	function keys():js.lib.Iterator<XRHandJoint>;
+	function values():js.lib.Iterator<XRJointSpace>;
 }

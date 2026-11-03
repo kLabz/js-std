@@ -25,7 +25,7 @@
 package js.web.html;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ScreenDetailed") extern class ScreenDetailed extends js.web.css.Screen {
 	var availLeft(default, null) : Int;

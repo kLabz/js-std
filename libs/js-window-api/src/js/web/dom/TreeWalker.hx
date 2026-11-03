@@ -25,9 +25,6 @@
 package js.web.dom;
 
 @:native("TreeWalker") extern class TreeWalker {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var root(default, null) : Node;
 	var whatToShow(default, null) : Int;
 	var filter(default, null) : Null<NodeFilter>;

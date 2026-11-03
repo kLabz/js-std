@@ -24,10 +24,7 @@
 
 package js.web.html;
 
-/**
-	Unhandled extended attribute LegacyUnenumerableNamedProperties
-**/
-@:native("Plugin") extern class Plugin {
+@:native("Plugin") extern class Plugin implements ArrayAccess<Null<MimeType>> {
 	var name(default, null) : String;
 	var description(default, null) : String;
 	var filename(default, null) : String;

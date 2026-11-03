@@ -24,9 +24,6 @@
 
 package js.web.media;
 
-/**
-	Unhandled extended attribute Transferable
-**/
 @:native("MediaStreamTrackHandle") extern class MediaStreamTrackHandle {
 
 }

@@ -25,13 +25,10 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("NDEFReadingEvent") extern class NDEFReadingEvent extends js.web.dom.Event {
 	var serialNumber(default, null) : String;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var message(default, null) : NDEFMessage;
 	function new(type:String, readingEventInitDict:NDEFReadingEventInit):Void;
 }

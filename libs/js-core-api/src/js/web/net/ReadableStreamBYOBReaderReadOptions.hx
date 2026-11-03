@@ -25,9 +25,6 @@
 package js.web.net;
 
 typedef ReadableStreamBYOBReaderReadOptions = {
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var min : Float;
 };

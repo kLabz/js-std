@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("BluetoothLEScanPermissionResult") extern class BluetoothLEScanPermissionResult extends js.web.misc.PermissionStatus {
 	var scans : Array<BluetoothLEScan>;

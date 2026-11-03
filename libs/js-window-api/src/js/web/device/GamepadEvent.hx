@@ -25,9 +25,6 @@
 package js.web.device;
 
 @:native("GamepadEvent") extern class GamepadEvent extends js.web.dom.Event {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var gamepad(default, null) : Gamepad;
 	function new(type:String, ?eventInitDict:GamepadEventInit):Void;
 }

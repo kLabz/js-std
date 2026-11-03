@@ -24,13 +24,7 @@
 
 package js.web.dom;
 
-/**
-	Unhandled extended attribute Serializable
-**/
 @:native("DOMRect") extern class DOMRect extends DOMRectReadOnly {
 	function new(?x:Float = 0, ?y:Float = 0, ?width:Float = 0, ?height:Float = 0):Void;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function fromRect(?other:DOMRectInit):DOMRect;
 }

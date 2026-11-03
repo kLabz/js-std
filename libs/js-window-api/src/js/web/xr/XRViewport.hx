@@ -25,7 +25,7 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRViewport") extern class XRViewport {
 	var x(default, null) : Int;

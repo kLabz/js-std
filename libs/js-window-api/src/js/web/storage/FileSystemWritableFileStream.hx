@@ -25,7 +25,7 @@
 package js.web.storage;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("FileSystemWritableFileStream") extern class FileSystemWritableFileStream extends js.web.net.WritableStream {
 	function seek(position:Float):js.lib.Promise<Void>;

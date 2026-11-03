@@ -24,7 +24,4 @@
 
 package js.web.html;
 
-/**
-	Unhandled extended attribute LegacyTreatNonObjectAsNull
-**/
 typedef OnErrorEventHandlerNonNull = (event:haxe.extern.EitherType<js.web.dom.Event, String>, ?source:String, ?lineno:Int, ?colno:Int, ?error:Any) -> Any;

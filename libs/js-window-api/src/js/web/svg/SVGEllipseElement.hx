@@ -25,20 +25,8 @@
 package js.web.svg;
 
 @:native("SVGEllipseElement") extern class SVGEllipseElement extends SVGGeometryElement {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var cx(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var cy(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var rx(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var ry(default, null) : SVGAnimatedLength;
 }

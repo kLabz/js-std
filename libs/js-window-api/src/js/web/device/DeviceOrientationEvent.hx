@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("DeviceOrientationEvent") extern class DeviceOrientationEvent extends js.web.dom.Event {
 	var alpha(default, null) : Null<Float>;

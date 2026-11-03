@@ -25,9 +25,14 @@
 package js.web.device;
 
 /**
-	TODO MaplikeDeclaration handling
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("MIDIInputMap") extern class MIDIInputMap {
-
+	var size(default, null) : Int;
+	function entries():js.lib.Iterator<js.lib.Tuple<String, MIDIInput>>;
+	function forEach(callback:(value:MIDIInput, key:String, map:MIDIInputMap) -> Void, ?thisArg:Any):Void;
+	function get(key:String):Null<MIDIInput>;
+	function has(key:String):Bool;
+	function keys():js.lib.Iterator<String>;
+	function values():js.lib.Iterator<MIDIInput>;
 }

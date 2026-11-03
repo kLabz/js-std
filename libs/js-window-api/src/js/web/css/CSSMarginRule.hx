@@ -26,9 +26,5 @@ package js.web.css;
 
 @:native("CSSMarginRule") extern class CSSMarginRule extends CSSRule {
 	var name(default, null) : String;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-	**/
 	var style(default, null) : CSSStyleDeclaration;
 }

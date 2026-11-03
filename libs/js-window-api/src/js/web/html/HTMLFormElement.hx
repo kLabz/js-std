@@ -24,53 +24,18 @@
 
 package js.web.html;
 
-/**
-	TODO ArrayAccess<> for tkey=String tvalue=TPath({
-			pack : [haxe,extern], 
-			name : EitherType, 
-			params : [TPType(TPath(<...>)),TPType(TPath(<...>))]
-		})
-	Unhandled extended attribute LegacyOverrideBuiltIns
-	Unhandled extended attribute LegacyUnenumerableNamedProperties
-**/
 @:native("HTMLFormElement") extern class HTMLFormElement extends HTMLElement implements ArrayAccess<js.web.dom.Element> {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var acceptCharset : String;
-	/**
-		Unhandled extended attribute ReflectSetter
-	**/
 	var action : String;
 	var autocomplete : String;
 	var enctype : String;
 	var encoding : String;
 	var method : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var name : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var noValidate : Bool;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var target : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var rel : String;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-		Unhandled extended attribute Reflect
-	**/
 	var relList(default, null) : js.web.dom.DOMTokenList;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var elements(default, null) : HTMLFormControlsCollection;
 	var length(default, null) : Int;
 	function checkValidity():Bool;

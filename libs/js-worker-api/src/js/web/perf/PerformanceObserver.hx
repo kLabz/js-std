@@ -25,9 +25,6 @@
 package js.web.perf;
 
 @:native("PerformanceObserver") extern class PerformanceObserver {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	static var supportedEntryTypes(default, null) : Array<String>;
 	function new(callback:PerformanceObserverCallback):Void;
 	function disconnect():Void;

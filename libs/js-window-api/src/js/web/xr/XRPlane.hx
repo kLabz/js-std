@@ -25,9 +25,6 @@
 package js.web.xr;
 
 @:native("XRPlane") extern class XRPlane {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var planeSpace(default, null) : XRSpace;
 	var polygon(default, null) : Array<js.web.dom.DOMPointReadOnly>;
 	var orientation(default, null) : Null<XRPlaneOrientation>;

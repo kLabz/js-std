@@ -33,7 +33,6 @@ package js.web.net;
 	var onchange : js.web.html.EventHandler;
 	/**
 		From interface mixin NetworkInformationSaveData
-		Unhandled extended attribute SameObject
 	**/
 	var saveData(default, null) : Bool;
 }

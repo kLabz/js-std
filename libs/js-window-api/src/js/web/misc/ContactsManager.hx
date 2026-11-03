@@ -25,7 +25,7 @@
 package js.web.misc;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ContactsManager") extern class ContactsManager {
 	function getProperties():js.lib.Promise<Array<ContactProperty>>;

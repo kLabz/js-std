@@ -33,9 +33,6 @@ package js.web.svg;
 	static inline var SVG_TRANSFORM_SKEWX : Int = 5;
 	static inline var SVG_TRANSFORM_SKEWY : Int = 6;
 	var type(default, null) : Int;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var matrix(default, null) : js.web.dom.SVGMatrix;
 	var angle(default, null) : Float;
 	function setMatrix(?matrix:js.web.dom.DOMMatrix2DInit):Void;

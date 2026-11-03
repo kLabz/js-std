@@ -27,9 +27,6 @@ package js.web.ml;
 typedef MLTriangularOptions = MLOperatorOptions & {
 	@:optional
 	var upper : Bool;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var diagonal : Int;
 };

@@ -25,7 +25,7 @@
 package js.web.sw;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ServiceWorker") extern class ServiceWorker extends js.web.dom.EventTarget {
 	var scriptURL(default, null) : String;

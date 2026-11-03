@@ -25,9 +25,6 @@
 package js.web.device;
 
 typedef PressureObserverOptions = {
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var sampleInterval : Int;
 };

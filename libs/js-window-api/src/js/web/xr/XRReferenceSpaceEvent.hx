@@ -25,16 +25,10 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRReferenceSpaceEvent") extern class XRReferenceSpaceEvent extends js.web.dom.Event {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var referenceSpace(default, null) : XRReferenceSpace;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var transform(default, null) : Null<XRRigidTransform>;
 	function new(type:String, eventInitDict:XRReferenceSpaceEventInit):Void;
 }

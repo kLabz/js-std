@@ -24,7 +24,7 @@
 
 package js.web.dom;
 
-@:native("DOMRectList") extern class DOMRectList {
+@:native("DOMRectList") extern class DOMRectList implements ArrayAccess<Null<DOMRect>> {
 	var length(default, null) : Int;
 	function item(index:Int):Null<DOMRect>;
 }

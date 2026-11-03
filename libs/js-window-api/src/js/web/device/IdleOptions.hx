@@ -25,9 +25,6 @@
 package js.web.device;
 
 typedef IdleOptions = {
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var threshold : Float;
 	@:optional

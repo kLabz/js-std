@@ -46,8 +46,5 @@ package js.web.perf;
 	var domComplete(default, null) : Float;
 	var loadEventStart(default, null) : Float;
 	var loadEventEnd(default, null) : Float;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

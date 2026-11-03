@@ -26,14 +26,8 @@ package js.web.media;
 
 typedef AudioDataCopyToOptions = {
 	var planeIndex : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var frameOffset : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var frameCount : Int;
 	@:optional

@@ -25,9 +25,6 @@
 package js.web.media;
 
 typedef ImageDecodeOptions = {
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var frameIndex : Int;
 	@:optional

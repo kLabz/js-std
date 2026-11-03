@@ -24,9 +24,12 @@
 
 package js.web.webrtc;
 
-/**
-	TODO MaplikeDeclaration handling
-**/
 @:native("RTCStatsReport") extern class RTCStatsReport {
-
+	var size(default, null) : Int;
+	function entries():js.lib.Iterator<js.lib.Tuple<String, { }>>;
+	function forEach(callback:(value:{ }, key:String, map:RTCStatsReport) -> Void, ?thisArg:Any):Void;
+	function get(key:String):Null<{ }>;
+	function has(key:String):Bool;
+	function keys():js.lib.Iterator<String>;
+	function values():js.lib.Iterator<{ }>;
 }

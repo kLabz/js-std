@@ -25,24 +25,12 @@
 package js.web.html;
 
 @:native("HTMLFieldSetElement") extern class HTMLFieldSetElement extends HTMLElement {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var name : String;
 	var type(default, null) : String;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var elements(default, null) : js.web.dom.HTMLCollection;
 	var willValidate(default, null) : Bool;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var validity(default, null) : ValidityState;
 	var validationMessage(default, null) : String;
 	function checkValidity():Bool;

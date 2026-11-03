@@ -25,17 +25,8 @@
 package js.web.dom;
 
 @:native("DOMImplementation") extern class DOMImplementation {
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createDocument(namespace:Null<String>, qualifiedName:String, ?doctype:Null<DocumentType> = null):XMLDocument;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createDocumentType(name:String, publicId:String, systemId:String):DocumentType;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createHTMLDocument(?title:String):Document;
 	function hasFeature():Bool;
 }

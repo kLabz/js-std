@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("IdleDetector") extern class IdleDetector extends js.web.dom.EventTarget {
 	var userState(default, null) : Null<UserIdleState>;

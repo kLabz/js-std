@@ -25,7 +25,7 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("MediaKeys") extern class MediaKeys {
 	function createSession(?sessionType:MediaKeySessionType = MediaKeySessionType.TEMPORARY):MediaKeySession;

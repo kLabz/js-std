@@ -25,36 +25,13 @@
 package js.web.html;
 
 @:native("HTMLIFrameElement") extern class HTMLIFrameElement extends HTMLElement {
-	/**
-		Unhandled extended attribute ReflectURL
-	**/
 	var src : String;
 	var srcdoc : haxe.extern.EitherType<js.web.dom.TrustedHTML, String>;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var name : String;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-		Unhandled extended attribute Reflect
-	**/
 	var sandbox(default, null) : js.web.dom.DOMTokenList;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var allow : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var allowFullscreen : Bool;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var width : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var height : String;
 	var referrerPolicy : String;
 	var loading : String;
@@ -74,42 +51,35 @@ package js.web.html;
 	var csp : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var scrolling : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var frameBorder : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute ReflectURL
 	**/
 	var longDesc : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var marginHeight : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var marginWidth : String;
 	/**
 		From partial interface in permissions-policy.idl
-		Unhandled extended attribute SameObject
 	**/
 	var permissionsPolicy(default, null) : js.web.misc.PermissionsPolicy;
 	/**
 		From partial interface in trust-token-api.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var privateToken : String;
 	function getSVGDocument():Null<js.web.dom.Document>;

@@ -25,17 +25,11 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("DigitalCredential") extern class DigitalCredential extends Credential {
 	var protocol(default, null) : DigitalCredentialProtocol;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var data(default, null) : { };
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 	function userAgentAllowsProtocol(protocol:String):Bool;
 }

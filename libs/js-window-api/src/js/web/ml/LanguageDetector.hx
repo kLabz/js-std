@@ -25,7 +25,7 @@
 package js.web.ml;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("LanguageDetector") extern class LanguageDetector {
 	var expectedInputLanguages(default, null) : Null<Array<String>>;

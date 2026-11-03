@@ -25,15 +25,12 @@
 package js.web.sw;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ServiceWorkerRegistration") extern class ServiceWorkerRegistration extends js.web.dom.EventTarget {
 	var installing(default, null) : Null<ServiceWorker>;
 	var waiting(default, null) : Null<ServiceWorker>;
 	var active(default, null) : Null<ServiceWorker>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var navigationPreload(default, null) : NavigationPreloadManager;
 	var scope(default, null) : String;
 	var updateViaCache(default, null) : ServiceWorkerUpdateViaCache;
@@ -52,7 +49,6 @@ package js.web.sw;
 	var sync(default, null) : SyncManager;
 	/**
 		From partial interface in content-index.idl
-		Unhandled extended attribute SameObject
 	**/
 	var index(default, null) : ContentIndex;
 	/**
@@ -67,12 +63,6 @@ package js.web.sw;
 		From partial interface in notifications.idl
 	**/
 	function showNotification(title:String, ?options:NotificationOptions):js.lib.Promise<Void>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function unregister():js.lib.Promise<Bool>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function update():js.lib.Promise<ServiceWorkerRegistration>;
 }

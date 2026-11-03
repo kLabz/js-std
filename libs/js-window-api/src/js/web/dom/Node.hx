@@ -44,9 +44,6 @@ package js.web.dom;
 	var ownerDocument(default, null) : Null<Document>;
 	var parentNode(default, null) : Null<Node>;
 	var parentElement(default, null) : Null<Element>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var childNodes(default, null) : NodeList;
 	var firstChild(default, null) : Null<Node>;
 	var lastChild(default, null) : Null<Node>;
@@ -61,9 +58,6 @@ package js.web.dom;
 	static inline var DOCUMENT_POSITION_CONTAINED_BY : Int = 0x10;
 	static inline var DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC : Int = 0x20;
 	function appendChild(node:Node):Node;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function cloneNode(?subtree:Bool = false):Node;
 	function compareDocumentPosition(other:Node):Int;
 	function contains(other:Null<Node>):Bool;

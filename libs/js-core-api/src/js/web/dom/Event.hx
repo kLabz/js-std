@@ -40,9 +40,6 @@ package js.web.dom;
 	var returnValue : Bool;
 	var defaultPrevented(default, null) : Bool;
 	var composed(default, null) : Bool;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var isTrusted(default, null) : Bool;
 	var timeStamp(default, null) : Float;
 	function new(type:String, ?eventInitDict:EventInit):Void;

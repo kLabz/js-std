@@ -25,7 +25,7 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("AudioPlaybackStats") extern class AudioPlaybackStats {
 	var underrunDuration(default, null) : Float;
@@ -35,8 +35,5 @@ package js.web.media;
 	var minimumLatency(default, null) : Float;
 	var maximumLatency(default, null) : Float;
 	function resetLatency():Void;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

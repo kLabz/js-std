@@ -24,16 +24,6 @@
 
 package js.web.html;
 
-/**
-	TODO ArrayAccess<> for tkey=String tvalue=TPath({
-			pack : [], 
-			name : String, 
-			params : []
-		})
-	TODO special=setter (name:String, value:String) -> Void
-	TODO special=deleter (name:String) -> Void
-	Unhandled extended attribute LegacyOverrideBuiltIns
-**/
-@:native("DOMStringMap") extern class DOMStringMap {
+@:native("DOMStringMap") extern class DOMStringMap implements Dynamic<String> {
 
 }

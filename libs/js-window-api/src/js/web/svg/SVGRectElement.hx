@@ -25,28 +25,10 @@
 package js.web.svg;
 
 @:native("SVGRectElement") extern class SVGRectElement extends SVGGeometryElement {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var x(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var y(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var width(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var height(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var rx(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var ry(default, null) : SVGAnimatedLength;
 }

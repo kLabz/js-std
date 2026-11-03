@@ -25,20 +25,11 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRGPUSubImage") extern class XRGPUSubImage extends XRSubImage {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var colorTexture(default, null) : js.web.webgpu.GPUTexture;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var depthStencilTexture(default, null) : Null<js.web.webgpu.GPUTexture>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var motionVectorTexture(default, null) : Null<js.web.webgpu.GPUTexture>;
 	function getViewDescriptor():js.web.webgpu.GPUTextureViewDescriptor;
 }

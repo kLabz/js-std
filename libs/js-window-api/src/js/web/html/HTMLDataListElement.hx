@@ -25,8 +25,5 @@
 package js.web.html;
 
 @:native("HTMLDataListElement") extern class HTMLDataListElement extends HTMLElement {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var options(default, null) : js.web.dom.HTMLCollection;
 }

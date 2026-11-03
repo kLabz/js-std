@@ -47,8 +47,5 @@ package js.web.dom;
 		From interface mixin GeometryUtils
 	**/
 	function getBoxQuads(?options:js.web.css.BoxQuadOptions):Array<DOMQuad>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function splitText(offset:Int):Text;
 }

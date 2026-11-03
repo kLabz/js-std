@@ -25,15 +25,11 @@
 package js.web.svg;
 
 @:native("SVGScriptElement") extern class SVGScriptElement extends SVGElement {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var type : String;
 	var crossOrigin : Null<String>;
 	var referrerPolicy : String;
 	/**
 		From interface mixin SVGURIReference
-		Unhandled extended attribute SameObject
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

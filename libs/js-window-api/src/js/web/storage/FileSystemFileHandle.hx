@@ -25,8 +25,7 @@
 package js.web.storage;
 
 /**
-	Unhandled extended attribute SecureContext
-	Unhandled extended attribute Serializable
+	Only available in secure contexts (HTTPS).
 **/
 @:native("FileSystemFileHandle") extern class FileSystemFileHandle extends FileSystemHandle {
 	function createWritable(?options:FileSystemCreateWritableOptions):js.lib.Promise<FileSystemWritableFileStream>;

@@ -25,7 +25,7 @@
 package js.web.sw;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("NavigationPreloadManager") extern class NavigationPreloadManager {
 	function disable():js.lib.Promise<Void>;

@@ -25,25 +25,12 @@
 package js.web.svg;
 
 @:native("SVGUseElement") extern class SVGUseElement extends SVGGraphicsElement {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var x(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var y(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var width(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGURIReference
-		Unhandled extended attribute SameObject
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

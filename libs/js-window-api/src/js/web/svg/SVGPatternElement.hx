@@ -25,47 +25,23 @@
 package js.web.svg;
 
 @:native("SVGPatternElement") extern class SVGPatternElement extends SVGElement {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var patternUnits(default, null) : SVGAnimatedEnumeration;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var patternContentUnits(default, null) : SVGAnimatedEnumeration;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var patternTransform(default, null) : SVGAnimatedTransformList;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var x(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var y(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var width(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFitToViewBox
-		Unhandled extended attribute SameObject
 	**/
 	var viewBox(default, null) : SVGAnimatedRect;
 	/**
 		From interface mixin SVGFitToViewBox
-		Unhandled extended attribute SameObject
 	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 	/**
 		From interface mixin SVGURIReference
-		Unhandled extended attribute SameObject
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

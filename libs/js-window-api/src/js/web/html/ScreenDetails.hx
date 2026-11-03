@@ -25,7 +25,7 @@
 package js.web.html;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ScreenDetails") extern class ScreenDetails extends js.web.dom.EventTarget {
 	var screens(default, null) : Array<ScreenDetailed>;

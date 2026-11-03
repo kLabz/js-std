@@ -25,13 +25,7 @@
 package js.web.storage;
 
 @:native("ExtendableCookieChangeEvent") extern class ExtendableCookieChangeEvent extends js.web.sw.ExtendableEvent {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var changed(default, null) : Array<CookieListItem>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var deleted(default, null) : Array<CookieListItem>;
 	function new(type:String, ?eventInitDict:ExtendableCookieChangeEventInit):Void;
 }

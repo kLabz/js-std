@@ -25,9 +25,13 @@
 package js.web.webgpu;
 
 /**
-	TODO SetlikeDeclaration handling
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("WGSLLanguageFeatures") extern class WGSLLanguageFeatures {
-
+	var size(default, null) : Int;
+	function entries():js.lib.Iterator<js.lib.Tuple<String, String>>;
+	function forEach(callback:(value:String, key:String, set:WGSLLanguageFeatures) -> Void, ?thisArg:Any):Void;
+	function has(value:String):Bool;
+	function keys():js.lib.Iterator<String>;
+	function values():js.lib.Iterator<String>;
 }

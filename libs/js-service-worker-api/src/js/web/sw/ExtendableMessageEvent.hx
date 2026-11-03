@@ -28,9 +28,6 @@ package js.web.sw;
 	var data(default, null) : Any;
 	var origin(default, null) : String;
 	var lastEventId(default, null) : String;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var source(default, null) : Null<haxe.extern.EitherType<Client, haxe.extern.EitherType<ServiceWorker, js.web.html.MessagePort>>>;
 	var ports(default, null) : Array<js.web.html.MessagePort>;
 	function new(type:String, ?eventInitDict:ExtendableMessageEventInit):Void;

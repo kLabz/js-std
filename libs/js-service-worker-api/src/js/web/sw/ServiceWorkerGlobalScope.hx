@@ -26,20 +26,11 @@ package js.web.sw;
 
 /**
 	Unhandled extended attribute Global
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ServiceWorkerGlobalScope") extern class ServiceWorkerGlobalScope extends js.web.html.WorkerGlobalScope {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var clients(default, null) : Clients;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var registration(default, null) : ServiceWorkerRegistration;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var serviceWorker(default, null) : ServiceWorker;
 	var oninstall : js.web.html.EventHandler;
 	var onactivate : js.web.html.EventHandler;
@@ -72,7 +63,6 @@ package js.web.sw;
 	var oncontentdelete : js.web.html.EventHandler;
 	/**
 		From partial interface in cookiestore.idl
-		Unhandled extended attribute SameObject
 	**/
 	var cookieStore(default, null) : js.web.storage.CookieStore;
 	/**
@@ -107,8 +97,5 @@ package js.web.sw;
 		From partial interface in web-based-payment-handler.idl
 	**/
 	var onpaymentrequest : js.web.html.EventHandler;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function skipWaiting():js.lib.Promise<Void>;
 }

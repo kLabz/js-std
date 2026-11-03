@@ -25,7 +25,7 @@
 package js.web.sw;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PushMessageData") extern class PushMessageData {
 	function arrayBuffer():js.lib.ArrayBuffer;

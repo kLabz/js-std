@@ -25,13 +25,14 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("MediaKeyStatusMap") extern class MediaKeyStatusMap {
 	var size(default, null) : Int;
-	function entries():Iterator<js.lib.Tuple<js.web.dom.BufferSource, MediaKeyStatus>>;
+	function entries():js.lib.Iterator<js.lib.Tuple<js.web.dom.BufferSource, MediaKeyStatus>>;
+	function forEach(callback:(value:MediaKeyStatus, key:js.web.dom.BufferSource, parent:MediaKeyStatusMap) -> Void, ?thisArg:Any):Void;
 	function get(keyId:js.web.dom.BufferSource):haxe.extern.EitherType<MediaKeyStatus, Void>;
 	function has(keyId:js.web.dom.BufferSource):Bool;
-	function keys():Iterator<js.web.dom.BufferSource>;
-	function values():Iterator<MediaKeyStatus>;
+	function keys():js.lib.Iterator<js.web.dom.BufferSource>;
+	function values():js.lib.Iterator<MediaKeyStatus>;
 }

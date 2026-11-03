@@ -25,7 +25,7 @@
 package js.web.html;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("WorkletGlobalScope") extern class WorkletGlobalScope {
 

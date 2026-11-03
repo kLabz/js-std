@@ -27,14 +27,8 @@ package js.web.html;
 @:native("DataTransfer") extern class DataTransfer {
 	var dropEffect : String;
 	var effectAllowed : String;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var items(default, null) : DataTransferItemList;
 	var types(default, null) : Array<String>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var files(default, null) : js.web.net.FileList;
 	function new():Void;
 	function clearData(?format:String):Void;

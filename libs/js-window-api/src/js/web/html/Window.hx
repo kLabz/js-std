@@ -25,83 +25,32 @@
 package js.web.html;
 
 /**
-	TODO ArrayAccess<> for tkey=String tvalue=TAnonymous([])
 	Unhandled extended attribute Global
-	Unhandled extended attribute LegacyUnenumerableNamedProperties
 **/
 @:native("Window") extern class Window extends js.web.dom.EventTarget {
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var window(default, null) : Window;
-	/**
-		Unhandled extended attribute Replaceable
-	**/
 	var self(default, null) : Window;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var document(default, null) : js.web.dom.Document;
 	var name : String;
-	/**
-		Unhandled extended attribute PutForwards
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var location(default, null) : Location;
 	var history(default, null) : History;
-	/**
-		Unhandled extended attribute Replaceable
-	**/
 	var navigation(default, null) : Navigation;
 	var customElements(default, null) : CustomElementRegistry;
-	/**
-		Unhandled extended attribute Replaceable
-	**/
 	var locationbar(default, null) : BarProp;
-	/**
-		Unhandled extended attribute Replaceable
-	**/
 	var menubar(default, null) : BarProp;
-	/**
-		Unhandled extended attribute Replaceable
-	**/
 	var personalbar(default, null) : BarProp;
-	/**
-		Unhandled extended attribute Replaceable
-	**/
 	var scrollbars(default, null) : BarProp;
-	/**
-		Unhandled extended attribute Replaceable
-	**/
 	var statusbar(default, null) : BarProp;
-	/**
-		Unhandled extended attribute Replaceable
-	**/
 	var toolbar(default, null) : BarProp;
 	var status : String;
 	var closed(default, null) : Bool;
-	/**
-		Unhandled extended attribute Replaceable
-	**/
 	var frames(default, null) : Window;
-	/**
-		Unhandled extended attribute Replaceable
-	**/
 	var length(default, null) : Int;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var top(default, null) : Null<Window>;
 	var opener : Any;
-	/**
-		Unhandled extended attribute Replaceable
-	**/
 	var parent(default, null) : Null<Window>;
 	var frameElement(default, null) : Null<js.web.dom.Element>;
 	var navigator(default, null) : Navigator;
-	/**
-		Unhandled extended attribute Replaceable
-	**/
 	var clientInformation(default, null) : Navigator;
 	var originAgentCluster(default, null) : Bool;
 	/**
@@ -322,12 +271,10 @@ package js.web.html;
 	var onmousedown : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
-		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseenter : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
-		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseleave : EventHandler;
 	/**
@@ -476,7 +423,7 @@ package js.web.html;
 	var onpointermove : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var onpointerrawupdate : EventHandler;
 	/**
@@ -617,17 +564,14 @@ package js.web.html;
 	var onportalactivate : EventHandler;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
-		Unhandled extended attribute SameObject
 	**/
 	var indexedDB(default, null) : js.web.storage.IDBFactory;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
-		Unhandled extended attribute Replaceable
 	**/
 	var performance(default, null) : js.web.perf.Performance;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
-		Unhandled extended attribute Replaceable
 	**/
 	var origin(default, null) : String;
 	/**
@@ -640,13 +584,11 @@ package js.web.html;
 	var crossOriginIsolated(default, null) : Bool;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
-		Unhandled extended attribute Replaceable
 	**/
 	var scheduler(default, null) : Scheduler;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
+		Only available in secure contexts (HTTPS).
 	**/
 	var caches(default, null) : js.web.sw.CacheStorage;
 	/**
@@ -655,7 +597,6 @@ package js.web.html;
 	var trustedTypes(default, null) : js.web.dom.TrustedTypePolicyFactory;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
-		Unhandled extended attribute SameObject
 	**/
 	var crypto(default, null) : js.web.auth.Crypto;
 	/**
@@ -684,7 +625,6 @@ package js.web.html;
 	var onorientationchange : EventHandler;
 	/**
 		From partial interface in cookiestore.idl
-		Unhandled extended attribute SameObject
 	**/
 	var cookieStore(default, null) : js.web.storage.CookieStore;
 	/**
@@ -693,96 +633,75 @@ package js.web.html;
 	var crashReport(default, null) : js.web.perf.CrashReportContext;
 	/**
 		From partial interface in css-viewport.idl
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute Replaceable
 	**/
 	var viewport(default, null) : js.web.css.Viewport;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute Replaceable
 	**/
 	var screen(default, null) : js.web.css.Screen;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute Replaceable
 	**/
 	var visualViewport(default, null) : Null<js.web.css.VisualViewport>;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute Replaceable
 	**/
 	var innerWidth(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute Replaceable
 	**/
 	var innerHeight(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute Replaceable
 	**/
 	var scrollX(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute Replaceable
 	**/
 	var pageXOffset(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute Replaceable
 	**/
 	var scrollY(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute Replaceable
 	**/
 	var pageYOffset(default, null) : Float;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute Replaceable
 	**/
 	var screenX(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute Replaceable
 	**/
 	var screenLeft(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute Replaceable
 	**/
 	var screenY(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute Replaceable
 	**/
 	var screenTop(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute Replaceable
 	**/
 	var outerWidth(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute Replaceable
 	**/
 	var outerHeight(default, null) : Int;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute Replaceable
 	**/
 	var devicePixelRatio(default, null) : Float;
 	/**
 		From partial interface in document-picture-in-picture.idl
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var documentPictureInPicture(default, null) : DocumentPictureInPicture;
 	/**
 		From partial interface in dom.idl
-		Unhandled extended attribute Replaceable
 	**/
 	var event(default, null) : haxe.extern.EitherType<js.web.dom.Event, Void>;
 	/**
@@ -791,8 +710,6 @@ package js.web.html;
 	var fence(default, null) : Null<js.web.ads.Fence>;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Replaceable
-		Unhandled extended attribute SameObject
 	**/
 	var external(default, null) : External;
 	/**
@@ -805,17 +722,17 @@ package js.web.html;
 	var onbeforeinstallprompt : EventHandler;
 	/**
 		From partial interface in orientation-event.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var ondeviceorientation : EventHandler;
 	/**
 		From partial interface in orientation-event.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var ondeviceorientationabsolute : EventHandler;
 	/**
 		From partial interface in orientation-event.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var ondevicemotion : EventHandler;
 	/**
@@ -824,7 +741,6 @@ package js.web.html;
 	var portalHost(default, null) : Null<PortalHost>;
 	/**
 		From partial interface in speech-api.idl
-		Unhandled extended attribute SameObject
 	**/
 	var speechSynthesis(default, null) : js.web.media.SpeechSynthesis;
 	/**
@@ -874,29 +790,26 @@ package js.web.html;
 	overload function createImageBitmap(image:js.web.canvas.ImageBitmapSource, sx:Int, sy:Int, sw:Int, sh:Int, ?options:js.web.canvas.ImageBitmapOptions):js.lib.Promise<js.web.canvas.ImageBitmap>;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
-		Unhandled extended attribute NewObject
 	**/
 	function fetch(input:js.web.net.RequestInfo, ?init:js.web.net.RequestInit):js.lib.Promise<js.web.net.Response>;
 	/**
 		From partial interface in fetch.idl
-		Unhandled extended attribute NewObject
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function fetchLater(input:js.web.net.RequestInfo, ?init:js.web.net.DeferredRequestInit):js.web.net.FetchLaterResult;
 	function focus():Void;
 	/**
 		From partial interface in cssom.idl
-		Unhandled extended attribute NewObject
 	**/
 	function getComputedStyle(elt:js.web.dom.Element, ?pseudoElt:Null<String>):js.web.css.CSSStyleProperties;
 	/**
 		From partial interface in digital-goods.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function getDigitalGoodsService(serviceProvider:String):js.lib.Promise<js.web.auth.DigitalGoodsService>;
 	/**
 		From partial interface in window-management.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function getScreenDetails():js.lib.Promise<ScreenDetails>;
 	/**
@@ -905,17 +818,16 @@ package js.web.html;
 	function getSelection():Null<js.web.dom.Selection>;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute NewObject
 	**/
 	function matchMedia(query:String):js.web.css.MediaQueryList;
 	/**
 		From partial interface in window-management.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function maximize():js.lib.Promise<Void>;
 	/**
 		From partial interface in window-management.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function minimize():js.lib.Promise<Void>;
 	/**
@@ -973,7 +885,7 @@ package js.web.html;
 	function resizeTo(width:Int, height:Int):Void;
 	/**
 		From partial interface in window-management.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function restore():js.lib.Promise<Void>;
 	/**
@@ -1003,16 +915,16 @@ package js.web.html;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<haxe.Rest<Any>>):Int;
+	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
 	/**
 		From partial interface in window-management.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function setResizable(resizable:Bool):js.lib.Promise<Void>;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<haxe.Rest<Any>>):Int;
+	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
 	/**
 		From partial interface in file-system-access.idl
 	**/

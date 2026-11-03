@@ -25,7 +25,7 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRView") extern class XRView {
 	var eye(default, null) : XREye;
@@ -37,12 +37,10 @@ package js.web.xr;
 	var projectionMatrix(default, null) : js.lib.Float32Array;
 	/**
 		From interface mixin XRViewGeometry
-		Unhandled extended attribute SameObject
 	**/
 	var transform(default, null) : XRRigidTransform;
 	/**
 		From partial interface in raw-camera-access.idl
-		Unhandled extended attribute SameObject
 	**/
 	var camera(default, null) : Null<XRCamera>;
 	/**

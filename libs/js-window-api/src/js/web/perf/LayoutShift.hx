@@ -29,8 +29,5 @@ package js.web.perf;
 	var hadRecentInput(default, null) : Bool;
 	var lastInputTime(default, null) : DOMHighResTimeStamp;
 	var sources(default, null) : Array<LayoutShiftAttribution>;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

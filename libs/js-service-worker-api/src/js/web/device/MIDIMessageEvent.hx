@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("MIDIMessageEvent") extern class MIDIMessageEvent extends js.web.dom.Event {
 	var data(default, null) : Null<js.lib.Uint8Array>;

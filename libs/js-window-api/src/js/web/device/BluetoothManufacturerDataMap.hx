@@ -25,9 +25,14 @@
 package js.web.device;
 
 /**
-	TODO MaplikeDeclaration handling
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("BluetoothManufacturerDataMap") extern class BluetoothManufacturerDataMap {
-
+	var size(default, null) : Int;
+	function entries():js.lib.Iterator<js.lib.Tuple<Int, js.lib.DataView>>;
+	function forEach(callback:(value:js.lib.DataView, key:Int, map:BluetoothManufacturerDataMap) -> Void, ?thisArg:Any):Void;
+	function get(key:Int):Null<js.lib.DataView>;
+	function has(key:Int):Bool;
+	function keys():js.lib.Iterator<Int>;
+	function values():js.lib.Iterator<js.lib.DataView>;
 }

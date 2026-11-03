@@ -30,10 +30,6 @@ package js.web.css;
 	var ownerNode(default, null) : Null<haxe.extern.EitherType<js.web.dom.Element, js.web.dom.ProcessingInstruction>>;
 	var parentStyleSheet(default, null) : Null<CSSStyleSheet>;
 	var title(default, null) : Null<String>;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-	**/
 	var media(default, null) : MediaList;
 	var disabled : Bool;
 }

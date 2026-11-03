@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("GeolocationCoordinates") extern class GeolocationCoordinates {
 	var accuracy(default, null) : Float;
@@ -35,8 +35,5 @@ package js.web.device;
 	var altitudeAccuracy(default, null) : Null<Float>;
 	var heading(default, null) : Null<Float>;
 	var speed(default, null) : Null<Float>;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

@@ -25,44 +25,17 @@
 package js.web.html;
 
 @:native("HTMLButtonElement") extern class HTMLButtonElement extends HTMLElement {
-	/**
-		Unhandled extended attribute ReflectSetter
-	**/
 	var command : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var commandForElement : Null<js.web.dom.Element>;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;
-	/**
-		Unhandled extended attribute ReflectSetter
-	**/
 	var formAction : String;
 	var formEnctype : String;
 	var formMethod : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var formNoValidate : Bool;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var formTarget : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var name : String;
-	/**
-		Unhandled extended attribute ReflectSetter
-	**/
 	var type : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var value : String;
 	var willValidate(default, null) : Bool;
 	var validity(default, null) : ValidityState;
@@ -70,7 +43,6 @@ package js.web.html;
 	var labels(default, null) : js.web.dom.NodeList;
 	/**
 		From interface mixin PopoverTargetAttributes
-		Unhandled extended attribute Reflect
 	**/
 	var popoverTargetElement : Null<js.web.dom.Element>;
 	/**

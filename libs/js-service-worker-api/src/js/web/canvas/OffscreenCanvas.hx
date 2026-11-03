@@ -24,9 +24,6 @@
 
 package js.web.canvas;
 
-/**
-	Unhandled extended attribute Transferable
-**/
 @:native("OffscreenCanvas") extern class OffscreenCanvas extends js.web.dom.EventTarget {
 	var width : Float;
 	var height : Float;

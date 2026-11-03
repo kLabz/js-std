@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("USBDevice") extern class USBDevice {
 	var usbVersionMajor(default, null) : Int;

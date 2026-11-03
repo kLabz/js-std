@@ -25,7 +25,7 @@
 package js.web.ml;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("HandwritingDrawing") extern class HandwritingDrawing {
 	function addStroke(stroke:HandwritingStroke):Void;

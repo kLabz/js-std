@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("DeviceMotionEventAcceleration") extern class DeviceMotionEventAcceleration {
 	var x(default, null) : Null<Float>;

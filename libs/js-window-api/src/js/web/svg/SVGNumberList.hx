@@ -24,10 +24,7 @@
 
 package js.web.svg;
 
-/**
-	TODO special=setter (index:Int, newItem:SVGNumber) -> Void
-**/
-@:native("SVGNumberList") extern class SVGNumberList {
+@:native("SVGNumberList") extern class SVGNumberList implements ArrayAccess<SVGNumber> {
 	var length(default, null) : Int;
 	var numberOfItems(default, null) : Int;
 	function appendItem(newItem:SVGNumber):SVGNumber;

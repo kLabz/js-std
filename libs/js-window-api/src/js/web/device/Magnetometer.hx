@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("Magnetometer") extern class Magnetometer extends Sensor {
 	var x(default, null) : Null<Float>;

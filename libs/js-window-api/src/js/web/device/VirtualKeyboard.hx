@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("VirtualKeyboard") extern class VirtualKeyboard extends js.web.dom.EventTarget {
 	var boundingRect(default, null) : js.web.dom.DOMRect;

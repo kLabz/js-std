@@ -25,8 +25,7 @@
 package js.web.net;
 
 /**
-	Unhandled extended attribute SecureContext
-	Unhandled extended attribute Transferable
+	Only available in secure contexts (HTTPS).
 **/
 @:native("WebTransportReceiveStream") extern class WebTransportReceiveStream extends ReadableStream {
 	function getStats():js.lib.Promise<WebTransportReceiveStreamStats>;

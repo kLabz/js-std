@@ -42,8 +42,5 @@ package js.web.perf;
 		From partial interface in prerendering-revamped.idl
 	**/
 	var activationStart(default, null) : DOMHighResTimeStamp;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

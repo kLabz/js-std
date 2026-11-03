@@ -25,7 +25,7 @@
 package js.web.sw;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PushSubscriptionChangeEvent") extern class PushSubscriptionChangeEvent extends ExtendableEvent {
 	var newSubscription(default, null) : Null<PushSubscription>;

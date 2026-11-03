@@ -25,12 +25,9 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("HIDInputReportEvent") extern class HIDInputReportEvent extends js.web.dom.Event {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var device(default, null) : HIDDevice;
 	var reportId(default, null) : Int;
 	var data(default, null) : js.lib.DataView;

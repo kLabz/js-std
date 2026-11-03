@@ -24,7 +24,4 @@
 
 package js.web.html;
 
-/**
-	Unhandled extended attribute LegacyTreatNonObjectAsNull
-**/
 typedef EventHandlerNonNull = (event:js.web.dom.Event) -> Any;

@@ -28,9 +28,6 @@ package js.web.html;
 	Unhandled extended attribute Global
 **/
 @:native("DedicatedWorkerGlobalScope") extern class DedicatedWorkerGlobalScope extends WorkerGlobalScope {
-	/**
-		Unhandled extended attribute Replaceable
-	**/
 	var name(default, null) : String;
 	/**
 		From interface mixin MessageEventTarget

@@ -25,35 +25,25 @@
 package js.web.html;
 
 @:native("HTMLTableColElement") extern class HTMLTableColElement extends HTMLElement {
-	/**
-		Unhandled extended attribute Reflect
-		Unhandled extended attribute ReflectDefault
-		Unhandled extended attribute ReflectRange
-	**/
 	var span : Int;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var ch : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var chOff : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var vAlign : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var width : String;
 }

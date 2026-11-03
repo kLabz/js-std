@@ -25,13 +25,10 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("GeolocationPosition") extern class GeolocationPosition {
 	var coords(default, null) : GeolocationCoordinates;
 	var timestamp(default, null) : js.web.perf.EpochTimeStamp;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

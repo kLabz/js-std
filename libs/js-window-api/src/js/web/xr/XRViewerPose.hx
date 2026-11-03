@@ -25,11 +25,8 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRViewerPose") extern class XRViewerPose extends XRPose {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var views(default, null) : Array<XRView>;
 }

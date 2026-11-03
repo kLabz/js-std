@@ -35,8 +35,5 @@ package js.web.misc;
 	var region(default, null) : String;
 	var sortingCode(default, null) : String;
 	var addressLine(default, null) : Array<String>;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

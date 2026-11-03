@@ -25,9 +25,6 @@
 package js.web.media;
 
 @:native("MediaStreamTrackEvent") extern class MediaStreamTrackEvent extends js.web.dom.Event {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var track(default, null) : MediaStreamTrack;
 	function new(type:String, eventInitDict:MediaStreamTrackEventInit):Void;
 }

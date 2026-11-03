@@ -25,9 +25,12 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRInputSourceArray") extern class XRInputSourceArray implements ArrayAccess<XRInputSource> {
 	var length(default, null) : Int;
-	function values():Iterator<XRInputSource>;
+	function entries():js.lib.Iterator<js.lib.Tuple<Int, XRInputSource>>;
+	function forEach(callback:(value:XRInputSource, key:Int, parent:XRInputSourceArray) -> Void, ?thisArg:Any):Void;
+	function keys():js.lib.Iterator<Int>;
+	function values():js.lib.Iterator<XRInputSource>;
 }

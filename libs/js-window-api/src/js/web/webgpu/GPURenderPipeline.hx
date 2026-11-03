@@ -25,7 +25,7 @@
 package js.web.webgpu;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("GPURenderPipeline") extern class GPURenderPipeline {
 	/**
@@ -34,7 +34,6 @@ package js.web.webgpu;
 	var label : String;
 	/**
 		From interface mixin GPUPipelineBase
-		Unhandled extended attribute NewObject
 	**/
 	function getBindGroupLayout(index:Int):GPUBindGroupLayout;
 }

@@ -28,17 +28,8 @@ package js.web.dom;
 	var aborted(default, null) : Bool;
 	var reason(default, null) : Any;
 	var onabort : js.web.html.EventHandler;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function abort(?reason:Any):AbortSignal;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function any(signals:Array<AbortSignal>):AbortSignal;
 	function throwIfAborted():Void;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function timeout(milliseconds:Float):AbortSignal;
 }

@@ -25,7 +25,7 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ImageTrack") extern class ImageTrack {
 	var animated(default, null) : Bool;

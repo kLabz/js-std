@@ -25,23 +25,9 @@
 package js.web.html;
 
 @:native("HTMLAnchorElement") extern class HTMLAnchorElement extends HTMLElement {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var download : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var ping : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var rel : String;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-		Unhandled extended attribute Reflect
-	**/
 	var relList(default, null) : js.web.dom.DOMTokenList;
 	var text : String;
 	var referrerPolicy : String;
@@ -87,47 +73,38 @@ package js.web.html;
 	var hash : String;
 	/**
 		From interface mixin HyperlinkElementUtils
-		Unhandled extended attribute Reflect
 	**/
 	var hreflang : String;
 	/**
 		From interface mixin HyperlinkElementUtils
-		Unhandled extended attribute Reflect
 	**/
 	var type : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
-		Unhandled extended attribute ReflectSetter
 	**/
 	var href : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
-		Unhandled extended attribute Reflect
 	**/
 	var target : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var coords : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var charset : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var name : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var rev : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var shape : String;
 	/**

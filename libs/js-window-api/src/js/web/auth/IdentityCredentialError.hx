@@ -25,7 +25,7 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("IdentityCredentialError") extern class IdentityCredentialError extends js.web.dom.DOMException {
 	var error(default, null) : String;

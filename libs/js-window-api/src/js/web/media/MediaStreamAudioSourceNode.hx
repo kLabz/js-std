@@ -25,9 +25,6 @@
 package js.web.media;
 
 @:native("MediaStreamAudioSourceNode") extern class MediaStreamAudioSourceNode extends AudioNode {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var mediaStream(default, null) : MediaStream;
 	function new(context:AudioContext, options:MediaStreamAudioSourceOptions):Void;
 }

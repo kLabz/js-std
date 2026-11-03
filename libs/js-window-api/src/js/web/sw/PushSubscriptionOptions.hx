@@ -25,12 +25,9 @@
 package js.web.sw;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PushSubscriptionOptions") extern class PushSubscriptionOptions {
 	var userVisibleOnly(default, null) : Bool;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var applicationServerKey(default, null) : Null<js.lib.ArrayBuffer>;
 }

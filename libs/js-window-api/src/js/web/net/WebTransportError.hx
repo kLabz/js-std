@@ -25,8 +25,7 @@
 package js.web.net;
 
 /**
-	Unhandled extended attribute Serializable
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("WebTransportError") extern class WebTransportError extends js.web.dom.DOMException {
 	var source(default, null) : WebTransportErrorSource;

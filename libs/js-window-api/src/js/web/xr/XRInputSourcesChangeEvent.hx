@@ -25,20 +25,11 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRInputSourcesChangeEvent") extern class XRInputSourcesChangeEvent extends js.web.dom.Event {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var session(default, null) : XRSession;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var added(default, null) : Array<XRInputSource>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var removed(default, null) : Array<XRInputSource>;
 	function new(type:String, eventInitDict:XRInputSourcesChangeEventInit):Void;
 }

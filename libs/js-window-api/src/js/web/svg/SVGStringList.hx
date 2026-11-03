@@ -24,10 +24,7 @@
 
 package js.web.svg;
 
-/**
-	TODO special=setter (index:Int, newItem:String) -> Void
-**/
-@:native("SVGStringList") extern class SVGStringList {
+@:native("SVGStringList") extern class SVGStringList implements ArrayAccess<String> {
 	var length(default, null) : Int;
 	var numberOfItems(default, null) : Int;
 	function appendItem(newItem:String):String;

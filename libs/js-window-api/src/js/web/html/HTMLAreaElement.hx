@@ -25,35 +25,12 @@
 package js.web.html;
 
 @:native("HTMLAreaElement") extern class HTMLAreaElement extends HTMLElement {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var alt : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var coords : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var shape : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var download : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var ping : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var rel : String;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-		Unhandled extended attribute Reflect
-	**/
 	var relList(default, null) : js.web.dom.DOMTokenList;
 	var referrerPolicy : String;
 	/**
@@ -98,27 +75,22 @@ package js.web.html;
 	var hash : String;
 	/**
 		From interface mixin HyperlinkElementUtils
-		Unhandled extended attribute Reflect
 	**/
 	var hreflang : String;
 	/**
 		From interface mixin HyperlinkElementUtils
-		Unhandled extended attribute Reflect
 	**/
 	var type : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
-		Unhandled extended attribute ReflectSetter
 	**/
 	var href : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
-		Unhandled extended attribute Reflect
 	**/
 	var target : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var noHref : Bool;
 	/**

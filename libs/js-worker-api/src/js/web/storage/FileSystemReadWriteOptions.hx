@@ -25,9 +25,6 @@
 package js.web.storage;
 
 typedef FileSystemReadWriteOptions = {
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var at : Float;
 };

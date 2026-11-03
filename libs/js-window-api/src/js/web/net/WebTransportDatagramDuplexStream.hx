@@ -25,7 +25,7 @@
 package js.web.net;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("WebTransportDatagramDuplexStream") extern class WebTransportDatagramDuplexStream {
 	var readable(default, null) : ReadableStream;

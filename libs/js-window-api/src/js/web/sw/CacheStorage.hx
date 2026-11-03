@@ -25,27 +25,12 @@
 package js.web.sw;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("CacheStorage") extern class CacheStorage {
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function delete(cacheName:String):js.lib.Promise<Bool>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function has(cacheName:String):js.lib.Promise<Bool>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function keys():js.lib.Promise<Array<String>>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function match(request:js.web.net.RequestInfo, ?options:MultiCacheQueryOptions):js.lib.Promise<haxe.extern.EitherType<js.web.net.Response, Void>>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function open(cacheName:String):js.lib.Promise<Cache>;
 }

@@ -24,7 +24,7 @@
 
 package js.web.css;
 
-@:native("CSSStyleDeclaration") extern class CSSStyleDeclaration {
+@:native("CSSStyleDeclaration") extern class CSSStyleDeclaration implements ArrayAccess<String> {
 	var cssText : String;
 	var length(default, null) : Int;
 	var parentRule(default, null) : Null<CSSRule>;

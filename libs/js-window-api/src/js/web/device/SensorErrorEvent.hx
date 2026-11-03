@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("SensorErrorEvent") extern class SensorErrorEvent extends js.web.dom.Event {
 	var error(default, null) : js.web.dom.DOMException;

@@ -39,8 +39,5 @@ package js.web.perf;
 	var forcedLayoutDuration(default, null) : DOMHighResTimeStamp;
 	var window(default, null) : Null<js.web.html.Window>;
 	var windowAttribution(default, null) : ScriptWindowAttribution;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

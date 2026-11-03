@@ -35,14 +35,8 @@ typedef WebTransportOptions = {
 	var serverCertificateHashes : Array<WebTransportHash>;
 	@:optional
 	var congestionControl : WebTransportCongestionControl;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var anticipatedConcurrentIncomingUnidirectionalStreams : Null<Int>;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var anticipatedConcurrentIncomingBidirectionalStreams : Null<Int>;
 	@:optional

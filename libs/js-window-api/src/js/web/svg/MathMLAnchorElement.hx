@@ -25,13 +25,7 @@
 package js.web.svg;
 
 @:native("MathMLAnchorElement") extern class MathMLAnchorElement extends MathMLElement {
-	/**
-		Unhandled extended attribute ReflectSetter
-	**/
 	var href : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var target : String;
 	/**
 		From interface mixin HyperlinkElementUtils
@@ -75,12 +69,10 @@ package js.web.svg;
 	var hash : String;
 	/**
 		From interface mixin HyperlinkElementUtils
-		Unhandled extended attribute Reflect
 	**/
 	var hreflang : String;
 	/**
 		From interface mixin HyperlinkElementUtils
-		Unhandled extended attribute Reflect
 	**/
 	var type : String;
 }

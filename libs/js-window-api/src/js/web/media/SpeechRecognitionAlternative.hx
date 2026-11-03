@@ -25,7 +25,7 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("SpeechRecognitionAlternative") extern class SpeechRecognitionAlternative {
 	var transcript(default, null) : String;

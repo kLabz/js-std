@@ -25,7 +25,7 @@
 package js.web.webgpu;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("GPUTexture") extern class GPUTexture {
 	var width(default, null) : GPUIntegerCoordinateOut;

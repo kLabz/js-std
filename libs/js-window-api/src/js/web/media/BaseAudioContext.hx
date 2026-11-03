@@ -32,8 +32,7 @@ package js.web.media;
 	var state(default, null) : AudioContextState;
 	var renderQuantumSize(default, null) : Int;
 	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var audioWorklet(default, null) : AudioWorklet;
 	var onstatechange : js.web.html.EventHandler;

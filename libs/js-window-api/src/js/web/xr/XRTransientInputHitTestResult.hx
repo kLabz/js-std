@@ -25,12 +25,9 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRTransientInputHitTestResult") extern class XRTransientInputHitTestResult {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var inputSource(default, null) : XRInputSource;
 	var results(default, null) : Array<XRHitTestResult>;
 }

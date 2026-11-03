@@ -25,7 +25,7 @@
 package js.web.sw;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ServiceWorkerContainer") extern class ServiceWorkerContainer extends js.web.dom.EventTarget {
 	var controller(default, null) : Null<ServiceWorker>;
@@ -33,17 +33,8 @@ package js.web.sw;
 	var oncontrollerchange : js.web.html.EventHandler;
 	var onmessage : js.web.html.EventHandler;
 	var onmessageerror : js.web.html.EventHandler;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function getRegistration(?clientURL:String = ""):js.lib.Promise<haxe.extern.EitherType<ServiceWorkerRegistration, Void>>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function getRegistrations():js.lib.Promise<Array<ServiceWorkerRegistration>>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function register(scriptURL:haxe.extern.EitherType<js.web.dom.TrustedScriptURL, String>, ?options:RegistrationOptions):js.lib.Promise<ServiceWorkerRegistration>;
 	function startMessages():Void;
 }

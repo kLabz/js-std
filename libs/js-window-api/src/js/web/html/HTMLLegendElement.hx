@@ -28,7 +28,6 @@ package js.web.html;
 	var form(default, null) : Null<HTMLFormElement>;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var align : String;
 }

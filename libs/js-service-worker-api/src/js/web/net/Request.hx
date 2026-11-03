@@ -27,9 +27,6 @@ package js.web.net;
 @:native("Request") extern class Request {
 	var method(default, null) : String;
 	var url(default, null) : String;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var headers(default, null) : Headers;
 	var destination(default, null) : RequestDestination;
 	var referrer(default, null) : String;
@@ -59,41 +56,31 @@ package js.web.net;
 	function new(input:RequestInfo, ?init:RequestInit):Void;
 	/**
 		From interface mixin Body
-		Unhandled extended attribute NewObject
 	**/
 	function arrayBuffer():js.lib.Promise<js.lib.ArrayBuffer>;
 	/**
 		From interface mixin Body
-		Unhandled extended attribute NewObject
 	**/
 	function blob():js.lib.Promise<Blob>;
 	/**
 		From interface mixin Body
-		Unhandled extended attribute NewObject
 	**/
 	function bytes():js.lib.Promise<js.lib.Uint8Array>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function clone():Request;
 	/**
 		From interface mixin Body
-		Unhandled extended attribute NewObject
 	**/
 	function formData():js.lib.Promise<FormData>;
 	/**
 		From interface mixin Body
-		Unhandled extended attribute NewObject
 	**/
 	function json():js.lib.Promise<Any>;
 	/**
 		From interface mixin Body
-		Unhandled extended attribute NewObject
 	**/
 	function text():js.lib.Promise<String>;
 	/**
 		From interface mixin Body
-		Unhandled extended attribute NewObject
 	**/
 	function textStream():ReadableStream;
 }

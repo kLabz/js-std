@@ -25,12 +25,6 @@
 package js.web.svg;
 
 @:native("SVGAnimatedPreserveAspectRatio") extern class SVGAnimatedPreserveAspectRatio {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var baseVal(default, null) : SVGPreserveAspectRatio;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var animVal(default, null) : SVGPreserveAspectRatio;
 }

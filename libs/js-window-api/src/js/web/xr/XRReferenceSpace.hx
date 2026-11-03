@@ -25,12 +25,9 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRReferenceSpace") extern class XRReferenceSpace extends XRSpace {
 	var onreset : js.web.html.EventHandler;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function getOffsetReferenceSpace(originOffset:XRRigidTransform):XRReferenceSpace;
 }

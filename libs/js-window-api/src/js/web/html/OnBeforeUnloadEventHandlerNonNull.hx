@@ -24,7 +24,4 @@
 
 package js.web.html;
 
-/**
-	Unhandled extended attribute LegacyTreatNonObjectAsNull
-**/
 typedef OnBeforeUnloadEventHandlerNonNull = (event:js.web.dom.Event) -> Null<String>;

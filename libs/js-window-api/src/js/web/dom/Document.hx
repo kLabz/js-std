@@ -24,13 +24,7 @@
 
 package js.web.dom;
 
-/**
-	TODO ArrayAccess<> for tkey=String tvalue=TAnonymous([])
-**/
 @:native("Document") extern class Document extends Node {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var implementation(default, null) : DOMImplementation;
 	var URL(default, null) : String;
 	var documentURI(default, null) : String;
@@ -47,7 +41,6 @@ package js.web.dom;
 	var fonts(default, null) : js.web.css.FontFaceSet;
 	/**
 		From interface mixin DocumentOrShadowRoot
-		Unhandled extended attribute SameObject
 	**/
 	var styleSheets(default, null) : js.web.css.StyleSheetList;
 	/**
@@ -60,7 +53,6 @@ package js.web.dom;
 	var customElementRegistry(default, null) : Null<js.web.html.CustomElementRegistry>;
 	/**
 		From interface mixin DocumentOrShadowRoot
-		Unhandled extended attribute LegacyLenientSetter
 	**/
 	var fullscreenElement(default, null) : Null<Element>;
 	/**
@@ -77,7 +69,6 @@ package js.web.dom;
 	var pointerLockElement(default, null) : Null<Element>;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute SameObject
 	**/
 	var children(default, null) : HTMLCollection;
 	/**
@@ -310,12 +301,10 @@ package js.web.dom;
 	var onmousedown : js.web.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
-		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseenter : js.web.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
-		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseleave : js.web.html.EventHandler;
 	/**
@@ -464,7 +453,7 @@ package js.web.dom;
 	var onpointermove : js.web.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var onpointerrawupdate : js.web.html.EventHandler;
 	/**
@@ -537,13 +526,10 @@ package js.web.dom;
 	var scrollingElement(default, null) : Null<Element>;
 	/**
 		From partial interface in fullscreen.idl
-		Unhandled extended attribute LegacyLenientSetter
 	**/
 	var fullscreenEnabled(default, null) : Bool;
 	/**
 		From partial interface in fullscreen.idl
-		Unhandled extended attribute LegacyLenientSetter
-		Unhandled extended attribute Unscopable
 	**/
 	var fullscreen(default, null) : Bool;
 	/**
@@ -556,8 +542,6 @@ package js.web.dom;
 	var onfullscreenerror : js.web.html.EventHandler;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute PutForwards
-		Unhandled extended attribute LegacyUnforgeable
 	**/
 	var location(default, null) : Null<js.web.html.Location>;
 	/**
@@ -598,32 +582,26 @@ package js.web.dom;
 	var head(default, null) : Null<js.web.html.HTMLHeadElement>;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute SameObject
 	**/
 	var images(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute SameObject
 	**/
 	var embeds(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute SameObject
 	**/
 	var plugins(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute SameObject
 	**/
 	var links(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute SameObject
 	**/
 	var forms(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute SameObject
 	**/
 	var scripts(default, null) : HTMLCollection;
 	/**
@@ -648,7 +626,6 @@ package js.web.dom;
 	var visibilityState(default, null) : js.web.html.DocumentVisibilityState;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onreadystatechange : js.web.html.EventHandler;
 	/**
@@ -677,17 +654,14 @@ package js.web.dom;
 	var bgColor : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute SameObject
 	**/
 	var anchors(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute SameObject
 	**/
 	var applets(default, null) : HTMLCollection;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute SameObject
 	**/
 	var all(default, null) : js.web.html.HTMLAllCollection;
 	/**
@@ -704,7 +678,6 @@ package js.web.dom;
 	var wasDiscarded(default, null) : Bool;
 	/**
 		From partial interface in permissions-policy.idl
-		Unhandled extended attribute SameObject
 	**/
 	var permissionsPolicy(default, null) : js.web.misc.PermissionsPolicy;
 	/**
@@ -729,7 +702,6 @@ package js.web.dom;
 	var onprerenderingchange : js.web.html.EventHandler;
 	/**
 		From partial interface in scroll-to-text-fragment.idl
-		Unhandled extended attribute SameObject
 	**/
 	var fragmentDirective(default, null) : FragmentDirective;
 	/**
@@ -738,17 +710,15 @@ package js.web.dom;
 	var timeline(default, null) : js.web.css.DocumentTimeline;
 	/**
 		From partial interface in webmcp.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
+		Only available in secure contexts (HTTPS).
 	**/
 	var modelContext(default, null) : js.web.ml.ModelContext;
 	function new():Void;
 	function adoptNode(node:Node):Node;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute Unscopable
 	**/
-	function append(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	function append(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From interface mixin ARIANotifyMixin
 	**/
@@ -781,66 +751,26 @@ package js.web.dom;
 		From interface mixin GeometryUtils
 	**/
 	function convertRectFromNode(rect:DOMRectReadOnly, from:js.web.css.GeometryNode, ?options:js.web.css.ConvertCoordinateOptions):DOMQuad;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createAttribute(localName:String):Attr;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createAttributeNS(namespace:Null<String>, qualifiedName:String):Attr;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createCDATASection(data:String):CDATASection;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createComment(data:String):Comment;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createDocumentFragment():DocumentFragment;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createElement(localName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createElementNS(namespace:Null<String>, qualifiedName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createEvent(interface_:String):Event;
 	/**
 		From interface mixin XPathEvaluatorBase
-		Unhandled extended attribute NewObject
 	**/
 	function createExpression(expression:String, ?resolver:Null<XPathNSResolver> = null):XPathExpression;
 	/**
 		From interface mixin XPathEvaluatorBase
 	**/
 	function createNSResolver(nodeResolver:Node):Node;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createNodeIterator(root:Node, ?whatToShow:Int = 0xFFFFFFFF, ?filter:Null<NodeFilter> = null):NodeIterator;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createProcessingInstruction(target:String, data:String):ProcessingInstruction;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createRange():Range;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createTextNode(data:String):Text;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createTreeWalker(root:Node, ?whatToShow:Int = 0xFFFFFFFF, ?filter:Null<NodeFilter> = null):TreeWalker;
 	/**
 		From partial interface in cssom-view.idl
@@ -864,7 +794,6 @@ package js.web.dom;
 	function exitFullscreen():js.lib.Promise<Void>;
 	/**
 		From partial interface in picture-in-picture.idl
-		Unhandled extended attribute NewObject
 	**/
 	function exitPictureInPicture():js.lib.Promise<Void>;
 	/**
@@ -914,9 +843,6 @@ package js.web.dom;
 		From partial interface in saa-non-cookie-storage.idl
 	**/
 	function hasUnpartitionedCookieAccess():js.lib.Promise<Bool>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function importNode(node:Node, ?options:haxe.extern.EitherType<Bool, ImportNodeOptions> = false):Node;
 	/**
 		From partial interface in font-metrics-api.idl
@@ -948,9 +874,8 @@ package js.web.dom;
 	function parseHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.ParseHTMLUnsafeOptions, TrustedHTMLParserOptions>):Document;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute Unscopable
 	**/
-	function prepend(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	function prepend(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From partial interface in html.idl
 	**/
@@ -977,7 +902,6 @@ package js.web.dom;
 	function querySelector(selectors:String):Null<Element>;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute NewObject
 	**/
 	function querySelectorAll(selectors:String):NodeList;
 	/**
@@ -986,9 +910,8 @@ package js.web.dom;
 	function releaseEvents():Void;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute Unscopable
 	**/
-	function replaceChildren(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	function replaceChildren(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From partial interface in storage-access.idl
 	**/
@@ -1000,9 +923,9 @@ package js.web.dom;
 	/**
 		From partial interface in html.idl
 	**/
-	function write(text:haxe.Rest<haxe.Rest<haxe.extern.EitherType<TrustedHTML, String>>>):Void;
+	function write(text:haxe.Rest<haxe.extern.EitherType<TrustedHTML, String>>):Void;
 	/**
 		From partial interface in html.idl
 	**/
-	function writeln(text:haxe.Rest<haxe.Rest<haxe.extern.EitherType<TrustedHTML, String>>>):Void;
+	function writeln(text:haxe.Rest<haxe.extern.EitherType<TrustedHTML, String>>):Void;
 }

@@ -25,57 +25,18 @@
 package js.web.html;
 
 @:native("Location") extern class Location {
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var href : String;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var origin(default, null) : String;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var protocol : String;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var host : String;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var hostname : String;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var port : String;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var pathname : String;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var search : String;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var hash : String;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	var ancestorOrigins(default, null) : DOMStringList;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	function assign(url:String):Void;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	function reload():Void;
-	/**
-		Unhandled extended attribute LegacyUnforgeable
-	**/
 	function replace(url:String):Void;
 	/**
 		Returns `this.href`.

@@ -25,7 +25,7 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("OTPCredential") extern class OTPCredential extends Credential {
 	var code(default, null) : String;

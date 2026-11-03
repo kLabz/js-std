@@ -25,47 +25,27 @@
 package js.web.html;
 
 @:native("HTMLScriptElement") extern class HTMLScriptElement extends HTMLElement {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var type : String;
 	var src : haxe.extern.EitherType<js.web.dom.TrustedScriptURL, String>;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var noModule : Bool;
 	var async : Bool;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var defer : Bool;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-		Unhandled extended attribute Reflect
-	**/
 	var blocking(default, null) : js.web.dom.DOMTokenList;
 	var crossOrigin : Null<String>;
 	var referrerPolicy : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var integrity : String;
 	var fetchPriority : String;
 	var text : haxe.extern.EitherType<js.web.dom.TrustedScript, String>;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var charset : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var event : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var htmlFor : String;
 	function supports(type:String):Bool;

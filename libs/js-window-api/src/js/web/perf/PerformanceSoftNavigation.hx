@@ -36,8 +36,5 @@ package js.web.perf;
 	**/
 	var presentationTime(default, null) : Null<DOMHighResTimeStamp>;
 	function getLargestInteractionContentfulPaint():Null<InteractionContentfulPaint>;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

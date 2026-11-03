@@ -24,10 +24,7 @@
 
 package js.web.html;
 
-/**
-	Unhandled extended attribute LegacyUnenumerableNamedProperties
-**/
-@:native("MimeTypeArray") extern class MimeTypeArray {
+@:native("MimeTypeArray") extern class MimeTypeArray implements ArrayAccess<Null<MimeType>> {
 	var length(default, null) : Int;
 	function item(index:Int):Null<MimeType>;
 	function namedItem(name:String):Null<MimeType>;

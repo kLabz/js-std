@@ -24,9 +24,6 @@
 
 package js.web.media;
 
-/**
-	Unhandled extended attribute Serializable
-**/
 @:native("CropTarget") extern class CropTarget {
 
 }

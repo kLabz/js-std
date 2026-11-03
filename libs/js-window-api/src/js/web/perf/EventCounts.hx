@@ -24,9 +24,12 @@
 
 package js.web.perf;
 
-/**
-	TODO MaplikeDeclaration handling
-**/
 @:native("EventCounts") extern class EventCounts {
-
+	var size(default, null) : Int;
+	function entries():js.lib.Iterator<js.lib.Tuple<String, Float>>;
+	function forEach(callback:(value:Float, key:String, map:EventCounts) -> Void, ?thisArg:Any):Void;
+	function get(key:String):Null<Float>;
+	function has(key:String):Bool;
+	function keys():js.lib.Iterator<String>;
+	function values():js.lib.Iterator<Float>;
 }

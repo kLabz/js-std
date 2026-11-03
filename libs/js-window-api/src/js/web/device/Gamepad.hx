@@ -33,9 +33,6 @@ package js.web.device;
 	var axes(default, null) : Array<Float>;
 	var buttons(default, null) : Array<GamepadButton>;
 	var touches(default, null) : Array<GamepadTouch>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var vibrationActuator(default, null) : GamepadHapticActuator;
 	/**
 		From partial interface in gamepad-extensions.idl

@@ -25,7 +25,7 @@
 package js.web.ads;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("Attribution") extern class Attribution {
 	var aggregationServices(default, null) : AttributionAggregationServices;

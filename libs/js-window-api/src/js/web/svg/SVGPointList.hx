@@ -24,10 +24,7 @@
 
 package js.web.svg;
 
-/**
-	TODO special=setter (index:Int, newItem:js.web.dom.SVGPoint) -> Void
-**/
-@:native("SVGPointList") extern class SVGPointList {
+@:native("SVGPointList") extern class SVGPointList implements ArrayAccess<js.web.dom.SVGPoint> {
 	var length(default, null) : Int;
 	var numberOfItems(default, null) : Int;
 	function appendItem(newItem:js.web.dom.SVGPoint):js.web.dom.SVGPoint;

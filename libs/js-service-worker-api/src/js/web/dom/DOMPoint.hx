@@ -24,13 +24,7 @@
 
 package js.web.dom;
 
-/**
-	Unhandled extended attribute Serializable
-**/
 @:native("DOMPoint") extern class DOMPoint extends DOMPointReadOnly {
 	function new(?x:Float = 0, ?y:Float = 0, ?z:Float = 0, ?w:Float = 1):Void;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function fromPoint(?other:DOMPointInit):DOMPoint;
 }

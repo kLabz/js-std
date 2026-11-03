@@ -24,11 +24,17 @@
 
 package js.web.css;
 
-/**
-	TODO SetlikeDeclaration handling
-**/
 @:native("Highlight") extern class Highlight {
+	var size(default, null) : Int;
 	var priority : Int;
 	var type : HighlightType;
-	function new(initialRanges:js.web.dom.AbstractRange):Void;
+	function new(initialRanges:haxe.Rest<js.web.dom.AbstractRange>):Void;
+	function add(value:js.web.dom.AbstractRange):Highlight;
+	function clear():Void;
+	function delete(value:js.web.dom.AbstractRange):Bool;
+	function entries():js.lib.Iterator<js.lib.Tuple<js.web.dom.AbstractRange, js.web.dom.AbstractRange>>;
+	function forEach(callback:(value:js.web.dom.AbstractRange, key:js.web.dom.AbstractRange, set:Highlight) -> Void, ?thisArg:Any):Void;
+	function has(value:js.web.dom.AbstractRange):Bool;
+	function keys():js.lib.Iterator<js.web.dom.AbstractRange>;
+	function values():js.lib.Iterator<js.web.dom.AbstractRange>;
 }

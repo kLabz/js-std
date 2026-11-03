@@ -25,9 +25,6 @@
 package js.web.media;
 
 @:native("MediaElementAudioSourceNode") extern class MediaElementAudioSourceNode extends AudioNode {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var mediaElement(default, null) : js.web.html.HTMLMediaElement;
 	function new(context:AudioContext, options:MediaElementAudioSourceOptions):Void;
 }

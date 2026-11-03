@@ -25,9 +25,6 @@
 package js.web.html;
 
 @:native("PictureInPictureEvent") extern class PictureInPictureEvent extends js.web.dom.Event {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var pictureInPictureWindow(default, null) : PictureInPictureWindow;
 	function new(type:String, eventInitDict:PictureInPictureEventInit):Void;
 }

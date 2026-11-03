@@ -30,8 +30,5 @@ package js.web.media;
 	var minimumLatency(default, null) : js.web.perf.DOMHighResTimeStamp;
 	var maximumLatency(default, null) : js.web.perf.DOMHighResTimeStamp;
 	function resetLatency():Void;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

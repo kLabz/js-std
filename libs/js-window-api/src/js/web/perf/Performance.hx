@@ -28,7 +28,6 @@ package js.web.perf;
 	var timeOrigin(default, null) : DOMHighResTimeStamp;
 	/**
 		From partial interface in event-timing.idl
-		Unhandled extended attribute SameObject
 	**/
 	var eventCounts(default, null) : EventCounts;
 	/**
@@ -37,12 +36,10 @@ package js.web.perf;
 	var interactionCount(default, null) : Float;
 	/**
 		From partial interface in navigation-timing.idl
-		Unhandled extended attribute SameObject
 	**/
 	var timing(default, null) : PerformanceTiming;
 	/**
 		From partial interface in navigation-timing.idl
-		Unhandled extended attribute SameObject
 	**/
 	var navigation(default, null) : PerformanceNavigation;
 	/**
@@ -83,7 +80,7 @@ package js.web.perf;
 	function measure(measureName:String, ?startOrMeasureOptions:haxe.extern.EitherType<String, PerformanceMeasureOptions>, ?endMark:String):PerformanceMeasure;
 	/**
 		From partial interface in performance-measure-memory.idl
-		Unhandled extended attribute CrossOriginIsolated
+		Only available in cross-origin isolated contexts.
 	**/
 	function measureUserAgentSpecificMemory():js.lib.Promise<MemoryMeasurement>;
 	function now():DOMHighResTimeStamp;
@@ -91,8 +88,5 @@ package js.web.perf;
 		From partial interface in resource-timing.idl
 	**/
 	function setResourceTimingBufferSize(maxSize:Int):Void;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

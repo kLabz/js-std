@@ -25,7 +25,7 @@
 package js.web.ml;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("LanguageModel") extern class LanguageModel extends js.web.dom.EventTarget {
 	var contextUsage(default, null) : Float;

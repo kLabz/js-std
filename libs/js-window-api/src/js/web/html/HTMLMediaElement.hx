@@ -26,9 +26,6 @@ package js.web.html;
 
 @:native("HTMLMediaElement") extern class HTMLMediaElement extends HTMLElement {
 	var error(default, null) : Null<MediaError>;
-	/**
-		Unhandled extended attribute ReflectURL
-	**/
 	var src : String;
 	var srcObject : Null<MediaProvider>;
 	var currentSrc(default, null) : String;
@@ -56,45 +53,24 @@ package js.web.html;
 	var played(default, null) : TimeRanges;
 	var seekable(default, null) : TimeRanges;
 	var ended(default, null) : Bool;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var autoplay : Bool;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var loop : Bool;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var controls : Bool;
 	var volume : Float;
 	var muted : Bool;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var defaultMuted : Bool;
 	var loading : String;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var audioTracks(default, null) : AudioTrackList;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var videoTracks(default, null) : VideoTrackList;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var textTracks(default, null) : TextTrackList;
 	/**
 		From partial interface in audio-output.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var sinkId(default, null) : String;
 	/**
 		From partial interface in encrypted-media.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var mediaKeys(default, null) : Null<js.web.media.MediaKeys>;
 	/**
@@ -107,7 +83,6 @@ package js.web.html;
 	var onwaitingforkey : EventHandler;
 	/**
 		From partial interface in remote-playback.idl
-		Unhandled extended attribute SameObject
 	**/
 	var remote(default, null) : js.web.media.RemotePlayback;
 	/**
@@ -127,12 +102,12 @@ package js.web.html;
 	function play():js.lib.Promise<Void>;
 	/**
 		From partial interface in encrypted-media.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function setMediaKeys(mediaKeys:Null<js.web.media.MediaKeys>):js.lib.Promise<Void>;
 	/**
 		From partial interface in audio-output.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function setSinkId(sinkId:String):js.lib.Promise<Void>;
 }

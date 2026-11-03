@@ -31,8 +31,5 @@ package js.web.perf;
 	var startTime(default, null) : DOMHighResTimeStamp;
 	var duration(default, null) : DOMHighResTimeStamp;
 	var navigationId(default, null) : Float;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

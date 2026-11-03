@@ -25,8 +25,5 @@
 package js.web.html;
 
 @:native("HTMLTimeElement") extern class HTMLTimeElement extends HTMLElement {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var dateTime : String;
 }

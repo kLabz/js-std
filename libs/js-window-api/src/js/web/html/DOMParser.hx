@@ -26,8 +26,5 @@ package js.web.html;
 
 @:native("DOMParser") extern class DOMParser {
 	function new():Void;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function parseFromString(string:haxe.extern.EitherType<js.web.dom.TrustedHTML, String>, type:DOMParserSupportedType):js.web.dom.Document;
 }

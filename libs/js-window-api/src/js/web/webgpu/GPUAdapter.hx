@@ -25,20 +25,11 @@
 package js.web.webgpu;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("GPUAdapter") extern class GPUAdapter {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var features(default, null) : GPUSupportedFeatures;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var limits(default, null) : GPUSupportedLimits;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var info(default, null) : GPUAdapterInfo;
 	function requestDevice(?descriptor:GPUDeviceDescriptor):js.lib.Promise<GPUDevice>;
 }

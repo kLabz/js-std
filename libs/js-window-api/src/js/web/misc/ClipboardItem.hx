@@ -25,7 +25,7 @@
 package js.web.misc;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ClipboardItem") extern class ClipboardItem {
 	var presentationStyle(default, null) : PresentationStyle;

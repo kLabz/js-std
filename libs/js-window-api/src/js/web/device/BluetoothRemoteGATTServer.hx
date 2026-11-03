@@ -25,12 +25,9 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("BluetoothRemoteGATTServer") extern class BluetoothRemoteGATTServer {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var device(default, null) : BluetoothDevice;
 	var connected(default, null) : Bool;
 	function connect():js.lib.Promise<BluetoothRemoteGATTServer>;

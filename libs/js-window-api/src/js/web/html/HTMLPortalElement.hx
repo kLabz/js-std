@@ -29,9 +29,6 @@ package js.web.html;
 	var referrerPolicy : String;
 	var onmessage : EventHandler;
 	var onmessageerror : EventHandler;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function activate(?options:PortalActivateOptions):js.lib.Promise<Void>;
 	function postMessage(message:Any, ?options:StructuredSerializeOptions):Void;
 }

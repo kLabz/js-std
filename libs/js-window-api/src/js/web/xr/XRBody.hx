@@ -26,8 +26,9 @@ package js.web.xr;
 
 @:native("XRBody") extern class XRBody {
 	var size(default, null) : Int;
-	function entries():Iterator<js.lib.Tuple<XRBodyJoint, XRBodySpace>>;
+	function entries():js.lib.Iterator<js.lib.Tuple<XRBodyJoint, XRBodySpace>>;
+	function forEach(callback:(value:XRBodySpace, key:XRBodyJoint, parent:XRBody) -> Void, ?thisArg:Any):Void;
 	function get(key:XRBodyJoint):XRBodySpace;
-	function keys():Iterator<XRBodyJoint>;
-	function values():Iterator<XRBodySpace>;
+	function keys():js.lib.Iterator<XRBodyJoint>;
+	function values():js.lib.Iterator<XRBodySpace>;
 }

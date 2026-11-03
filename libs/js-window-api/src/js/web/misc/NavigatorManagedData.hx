@@ -25,7 +25,7 @@
 package js.web.misc;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("NavigatorManagedData") extern class NavigatorManagedData extends js.web.dom.EventTarget {
 	var onmanagedconfigurationchange : js.web.html.EventHandler;

@@ -25,9 +25,6 @@
 package js.web.dom;
 
 @:native("AbortController") extern class AbortController {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var signal(default, null) : AbortSignal;
 	function new():Void;
 	function abort(?reason:Any):Void;

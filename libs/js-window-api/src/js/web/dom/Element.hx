@@ -31,18 +31,8 @@ package js.web.dom;
 	var tagName(default, null) : String;
 	var id : String;
 	var className : String;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-	**/
 	var classList(default, null) : DOMTokenList;
-	/**
-		Unhandled extended attribute Unscopable
-	**/
 	var slot : String;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var attributes(default, null) : NamedNodeMap;
 	var shadowRoot(default, null) : Null<ShadowRoot>;
 	var customElementRegistry(default, null) : Null<js.web.html.CustomElementRegistry>;
@@ -52,7 +42,6 @@ package js.web.dom;
 	var regionOverset(default, null) : String;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute SameObject
 	**/
 	var children(default, null) : HTMLCollection;
 	/**
@@ -81,268 +70,214 @@ package js.web.dom;
 	var assignedSlot(default, null) : Null<js.web.html.HTMLSlotElement>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var role : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaActiveDescendantElement : Null<Element>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaAtomic : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaAutoComplete : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaBrailleLabel : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaBrailleRoleDescription : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaBusy : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaChecked : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaColCount : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaColIndex : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaColIndexText : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaColSpan : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaControlsElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaCurrent : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaDescribedByElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaDescription : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaDetailsElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaDisabled : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaErrorMessageElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaExpanded : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaFlowToElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaHasPopup : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaHidden : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaInvalid : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaKeyShortcuts : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaLabel : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaLabelledByElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaLevel : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaLive : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaModal : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaMultiLine : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaMultiSelectable : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaOrientation : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaOwnsElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaPlaceholder : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaPosInSet : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaPressed : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaReadOnly : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaRelevant : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaRequired : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaRoleDescription : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaRowCount : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaRowIndex : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaRowIndexText : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaRowSpan : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaSelected : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaSetSize : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaSort : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaValueMax : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaValueMin : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaValueNow : Null<String>;
 	/**
 		From interface mixin ARIAMixin
-		Unhandled extended attribute Reflect
 	**/
 	var ariaValueText : Null<String>;
 	/**
 		From partial interface in css-shadow.idl
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
 	**/
 	var part(default, null) : DOMTokenList;
 	/**
@@ -387,7 +322,6 @@ package js.web.dom;
 	var currentCSSZoom(default, null) : Float;
 	/**
 		From partial interface in element-timing.idl
-		Unhandled extended attribute Reflect
 	**/
 	var elementTiming : String;
 	/**
@@ -408,9 +342,8 @@ package js.web.dom;
 	var outerHTML : haxe.extern.EitherType<TrustedHTML, String>;
 	/**
 		From interface mixin ChildNode
-		Unhandled extended attribute Unscopable
 	**/
-	function after(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	function after(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/
@@ -425,9 +358,8 @@ package js.web.dom;
 	function animate(keyframes:Null<{ }>, ?options:haxe.extern.EitherType<Float, js.web.css.KeyframeAnimationOptions>):js.web.css.Animation;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute Unscopable
 	**/
-	function append(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	function append(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From partial interface in html.idl
 	**/
@@ -443,9 +375,8 @@ package js.web.dom;
 	function attachShadow(init:ShadowRootInit):ShadowRoot;
 	/**
 		From interface mixin ChildNode
-		Unhandled extended attribute Unscopable
 	**/
-	function before(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	function before(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/
@@ -461,7 +392,6 @@ package js.web.dom;
 	function closest(selectors:String):Null<Element>;
 	/**
 		From partial interface in css-typed-om.idl
-		Unhandled extended attribute SameObject
 	**/
 	function computedStyleMap():js.web.css.StylePropertyMapReadOnly;
 	/**
@@ -491,7 +421,6 @@ package js.web.dom;
 	function getAttributeNodeNS(namespace:Null<String>, localName:String):Null<Attr>;
 	/**
 		From partial interface in cssom-view.idl
-		Unhandled extended attribute NewObject
 	**/
 	function getBoundingClientRect():DOMRect;
 	/**
@@ -537,9 +466,8 @@ package js.web.dom;
 	function moveBefore(node:Node, child:Null<Node>):Void;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute Unscopable
 	**/
-	function prepend(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	function prepend(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From partial interface in html.idl
 	**/
@@ -558,7 +486,6 @@ package js.web.dom;
 	function querySelector(selectors:String):Null<Element>;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute NewObject
 	**/
 	function querySelectorAll(selectors:String):NodeList;
 	/**
@@ -567,7 +494,6 @@ package js.web.dom;
 	function releasePointerCapture(pointerId:Int):Void;
 	/**
 		From interface mixin ChildNode
-		Unhandled extended attribute Unscopable
 	**/
 	function remove():Void;
 	function removeAttribute(qualifiedName:String):Void;
@@ -575,14 +501,12 @@ package js.web.dom;
 	function removeAttributeNode(attr:Attr):Attr;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute Unscopable
 	**/
-	function replaceChildren(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	function replaceChildren(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From interface mixin ChildNode
-		Unhandled extended attribute Unscopable
 	**/
-	function replaceWith(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	function replaceWith(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/

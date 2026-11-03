@@ -25,20 +25,11 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRRay") extern class XRRay {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var origin(default, null) : js.web.dom.DOMPointReadOnly;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var direction(default, null) : js.web.dom.DOMPointReadOnly;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var matrix(default, null) : js.lib.Float32Array;
 	overload function new(transform:XRRigidTransform):Void;
 	overload function new(?origin:js.web.dom.DOMPointInit, ?direction:XRRayDirectionInit):Void;

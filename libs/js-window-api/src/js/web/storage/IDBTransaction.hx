@@ -28,9 +28,6 @@ package js.web.storage;
 	var objectStoreNames(default, null) : js.web.html.DOMStringList;
 	var mode(default, null) : IDBTransactionMode;
 	var durability(default, null) : IDBTransactionDurability;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var db(default, null) : IDBDatabase;
 	var error(default, null) : Null<js.web.dom.DOMException>;
 	var onabort : js.web.html.EventHandler;

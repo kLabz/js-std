@@ -25,21 +25,12 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRRigidTransform") extern class XRRigidTransform {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var position(default, null) : js.web.dom.DOMPointReadOnly;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var orientation(default, null) : js.web.dom.DOMPointReadOnly;
 	var matrix(default, null) : js.lib.Float32Array;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var inverse(default, null) : XRRigidTransform;
 	function new(?position:js.web.dom.DOMPointInit, ?orientation:js.web.dom.DOMPointInit):Void;
 }

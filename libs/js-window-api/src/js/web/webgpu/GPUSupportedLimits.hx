@@ -25,7 +25,7 @@
 package js.web.webgpu;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("GPUSupportedLimits") extern class GPUSupportedLimits {
 	var maxTextureDimension1D(default, null) : Int;

@@ -25,31 +25,15 @@
 package js.web.svg;
 
 @:native("SVGImageElement") extern class SVGImageElement extends SVGGraphicsElement {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var x(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var y(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var width(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var height(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 	var crossOrigin : Null<String>;
 	var referrerPolicy : String;
 	/**
 		From interface mixin SVGURIReference
-		Unhandled extended attribute SameObject
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

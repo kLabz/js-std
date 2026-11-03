@@ -28,57 +28,42 @@ package js.web.html;
 	var caption : Null<HTMLTableCaptionElement>;
 	var tHead : Null<HTMLTableSectionElement>;
 	var tFoot : Null<HTMLTableSectionElement>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var tBodies(default, null) : js.web.dom.HTMLCollection;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var rows(default, null) : js.web.dom.HTMLCollection;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var border : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var frame : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var rules : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var summary : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var width : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var bgColor : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var cellPadding : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var cellSpacing : String;
 	function createCaption():HTMLTableCaptionElement;

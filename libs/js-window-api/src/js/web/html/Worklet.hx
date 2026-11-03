@@ -25,11 +25,8 @@
 package js.web.html;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("Worklet") extern class Worklet {
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function addModule(moduleURL:String, ?options:WorkletOptions):js.lib.Promise<Void>;
 }

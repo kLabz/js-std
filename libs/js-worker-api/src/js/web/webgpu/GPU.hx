@@ -25,12 +25,9 @@
 package js.web.webgpu;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("GPU") extern class GPU {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var wgslLanguageFeatures(default, null) : WGSLLanguageFeatures;
 	function getPreferredCanvasFormat():GPUTextureFormat;
 	function requestAdapter(?options:GPURequestAdapterOptions):js.lib.Promise<Null<GPUAdapter>>;

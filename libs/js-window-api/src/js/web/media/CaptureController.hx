@@ -25,7 +25,7 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("CaptureController") extern class CaptureController extends js.web.dom.EventTarget {
 	/**

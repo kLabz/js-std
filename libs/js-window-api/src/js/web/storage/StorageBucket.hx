@@ -25,17 +25,11 @@
 package js.web.storage;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("StorageBucket") extern class StorageBucket {
 	var name(default, null) : String;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var indexedDB(default, null) : IDBFactory;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var caches(default, null) : js.web.sw.CacheStorage;
 	function estimate():js.lib.Promise<StorageEstimate>;
 	function expires():js.lib.Promise<Null<js.web.perf.DOMHighResTimeStamp>>;

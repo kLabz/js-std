@@ -25,7 +25,7 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PaymentRequest") extern class PaymentRequest extends js.web.dom.EventTarget {
 	var id(default, null) : String;
@@ -36,13 +36,7 @@ package js.web.auth;
 	var onshippingoptionchange : js.web.html.EventHandler;
 	var onpaymentmethodchange : js.web.html.EventHandler;
 	function new(methodData:Array<PaymentMethodData>, details:PaymentDetailsInit, ?options:PaymentOptions):Void;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function abort():js.lib.Promise<Void>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function canMakePayment():js.lib.Promise<Bool>;
 	/**
 		From partial interface in secure-payment-confirmation.idl
@@ -52,8 +46,5 @@ package js.web.auth;
 		From partial interface in secure-payment-confirmation.idl
 	**/
 	function securePaymentConfirmationAvailability():js.lib.Promise<SecurePaymentConfirmationAvailability>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function show(?detailsPromise:js.lib.Promise<PaymentDetailsUpdate>):js.lib.Promise<PaymentResponse>;
 }

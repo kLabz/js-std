@@ -28,8 +28,5 @@ package js.web.media;
 	var deliveredFrames(default, null) : Float;
 	var discardedFrames(default, null) : Float;
 	var totalFrames(default, null) : Float;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

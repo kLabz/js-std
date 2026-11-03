@@ -244,7 +244,6 @@ package js.web.canvas;
 	function getLineDash():Array<Float>;
 	/**
 		From interface mixin CanvasTransform
-		Unhandled extended attribute NewObject
 	**/
 	function getTransform():js.web.dom.DOMMatrix;
 	/**

@@ -27,7 +27,6 @@ package js.web.svg;
 @:native("SVGMPathElement") extern class SVGMPathElement extends SVGElement {
 	/**
 		From interface mixin SVGURIReference
-		Unhandled extended attribute SameObject
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

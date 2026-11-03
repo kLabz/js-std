@@ -25,9 +25,6 @@
 package js.web.dom;
 
 @:native("NodeIterator") extern class NodeIterator {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var root(default, null) : Node;
 	var referenceNode(default, null) : Node;
 	var pointerBeforeReferenceNode(default, null) : Bool;

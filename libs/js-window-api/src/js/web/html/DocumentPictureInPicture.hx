@@ -25,13 +25,10 @@
 package js.web.html;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("DocumentPictureInPicture") extern class DocumentPictureInPicture extends js.web.dom.EventTarget {
 	var window(default, null) : Window;
 	var onenter : EventHandler;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function requestWindow(?options:DocumentPictureInPictureOptions):js.lib.Promise<Window>;
 }

@@ -32,8 +32,5 @@ package js.web.webgl;
 	function bindVertexArrayOES(arrayObject:Null<WebGLVertexArrayObjectOES>):Void;
 	function createVertexArrayOES():WebGLVertexArrayObjectOES;
 	function deleteVertexArrayOES(arrayObject:Null<WebGLVertexArrayObjectOES>):Void;
-	/**
-		Unhandled extended attribute WebGLHandlesContextLoss
-	**/
 	function isVertexArrayOES(arrayObject:Null<WebGLVertexArrayObjectOES>):GLboolean;
 }

@@ -25,7 +25,7 @@
 package js.web.storage;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("LockManager") extern class LockManager {
 	function query():js.lib.Promise<LockManagerSnapshot>;

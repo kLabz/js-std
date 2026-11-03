@@ -25,7 +25,7 @@
 package js.web.webgpu;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("GPUOutOfMemoryError") extern class GPUOutOfMemoryError extends GPUError {
 	function new(message:String):Void;

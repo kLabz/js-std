@@ -24,10 +24,7 @@
 
 package js.web.html;
 
-/**
-	Unhandled extended attribute LegacyUnenumerableNamedProperties
-**/
-@:native("PluginArray") extern class PluginArray {
+@:native("PluginArray") extern class PluginArray implements ArrayAccess<Null<Plugin>> {
 	var length(default, null) : Int;
 	function item(index:Int):Null<Plugin>;
 	function namedItem(name:String):Null<Plugin>;

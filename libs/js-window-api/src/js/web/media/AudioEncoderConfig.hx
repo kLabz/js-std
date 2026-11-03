@@ -28,9 +28,6 @@ typedef AudioEncoderConfig = {
 	var codec : String;
 	var sampleRate : Int;
 	var numberOfChannels : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var bitrate : Float;
 	@:optional

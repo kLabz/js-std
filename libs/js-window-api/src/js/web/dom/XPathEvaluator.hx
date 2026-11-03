@@ -28,7 +28,6 @@ package js.web.dom;
 	function new():Void;
 	/**
 		From interface mixin XPathEvaluatorBase
-		Unhandled extended attribute NewObject
 	**/
 	function createExpression(expression:String, ?resolver:Null<XPathNSResolver> = null):XPathExpression;
 	/**

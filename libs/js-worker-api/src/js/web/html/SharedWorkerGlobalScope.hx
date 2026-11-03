@@ -28,9 +28,6 @@ package js.web.html;
 	Unhandled extended attribute Global
 **/
 @:native("SharedWorkerGlobalScope") extern class SharedWorkerGlobalScope extends WorkerGlobalScope {
-	/**
-		Unhandled extended attribute Replaceable
-	**/
 	var name(default, null) : String;
 	var onconnect : EventHandler;
 	function close():Void;

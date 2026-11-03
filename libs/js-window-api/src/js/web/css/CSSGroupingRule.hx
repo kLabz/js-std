@@ -25,9 +25,6 @@
 package js.web.css;
 
 @:native("CSSGroupingRule") extern class CSSGroupingRule extends CSSRule {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var cssRules(default, null) : CSSRuleList;
 	function deleteRule(index:Int):Void;
 	function insertRule(rule:String, ?index:Int = 0):Int;

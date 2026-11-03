@@ -25,15 +25,12 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRWebGLLayer") extern class XRWebGLLayer extends XRLayer {
 	var antialias(default, null) : Bool;
 	var ignoreDepthValues(default, null) : Bool;
 	var fixedFoveation : Null<Float>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var framebuffer(default, null) : Null<js.web.webgl.WebGLFramebuffer>;
 	var framebufferWidth(default, null) : Int;
 	var framebufferHeight(default, null) : Int;

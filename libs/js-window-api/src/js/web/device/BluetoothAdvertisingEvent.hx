@@ -25,25 +25,16 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("BluetoothAdvertisingEvent") extern class BluetoothAdvertisingEvent extends js.web.dom.Event {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var device(default, null) : BluetoothDevice;
 	var uuids(default, null) : Array<UUID>;
 	var name(default, null) : Null<String>;
 	var appearance(default, null) : Null<Int>;
 	var txPower(default, null) : Null<Int>;
 	var rssi(default, null) : Null<Int>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var manufacturerData(default, null) : BluetoothManufacturerDataMap;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var serviceData(default, null) : BluetoothServiceDataMap;
 	function new(type:String, init:BluetoothAdvertisingEventInit):Void;
 }

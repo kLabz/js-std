@@ -25,7 +25,7 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("SpeechRecognition") extern class SpeechRecognition extends js.web.dom.EventTarget {
 	var grammars : SpeechGrammarList;

@@ -25,7 +25,7 @@
 package js.web.misc;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("EyeDropper") extern class EyeDropper {
 	function new():Void;

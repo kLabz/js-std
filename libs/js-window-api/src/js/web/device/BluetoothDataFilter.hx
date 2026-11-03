@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("BluetoothDataFilter") extern class BluetoothDataFilter {
 	var dataPrefix(default, null) : js.lib.ArrayBuffer;

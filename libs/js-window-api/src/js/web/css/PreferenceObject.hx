@@ -25,7 +25,7 @@
 package js.web.css;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PreferenceObject") extern class PreferenceObject extends js.web.dom.EventTarget {
 	@:native("override")

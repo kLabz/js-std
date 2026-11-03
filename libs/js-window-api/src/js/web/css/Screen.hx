@@ -33,17 +33,16 @@ package js.web.css;
 	var pixelDepth(default, null) : Int;
 	/**
 		From partial interface in screen-orientation.idl
-		Unhandled extended attribute SameObject
 	**/
 	var orientation(default, null) : js.web.device.ScreenOrientation;
 	/**
 		From partial interface in window-management.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var isExtended(default, null) : Bool;
 	/**
 		From partial interface in window-management.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var onchange : js.web.html.EventHandler;
 }

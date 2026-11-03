@@ -27,12 +27,10 @@ package js.web.svg;
 @:native("SVGPolygonElement") extern class SVGPolygonElement extends SVGGeometryElement {
 	/**
 		From interface mixin SVGAnimatedPoints
-		Unhandled extended attribute SameObject
 	**/
 	var points(default, null) : SVGPointList;
 	/**
 		From interface mixin SVGAnimatedPoints
-		Unhandled extended attribute SameObject
 	**/
 	var animatedPoints(default, null) : SVGPointList;
 }

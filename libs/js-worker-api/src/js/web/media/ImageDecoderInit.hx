@@ -29,14 +29,8 @@ typedef ImageDecoderInit = {
 	var data : ImageBufferSource;
 	@:optional
 	var colorSpaceConversion : js.web.canvas.ColorSpaceConversion;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var desiredWidth : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var desiredHeight : Int;
 	@:optional

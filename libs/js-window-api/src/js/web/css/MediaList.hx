@@ -24,7 +24,7 @@
 
 package js.web.css;
 
-@:native("MediaList") extern class MediaList {
+@:native("MediaList") extern class MediaList implements ArrayAccess<Null<String>> {
 	var mediaText : String;
 	var length(default, null) : Int;
 	function appendMedium(medium:String):Void;

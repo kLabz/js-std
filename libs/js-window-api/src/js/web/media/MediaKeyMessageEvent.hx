@@ -25,7 +25,7 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("MediaKeyMessageEvent") extern class MediaKeyMessageEvent extends js.web.dom.Event {
 	var messageType(default, null) : MediaKeyMessageType;

@@ -25,19 +25,10 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("AuthenticatorAssertionResponse") extern class AuthenticatorAssertionResponse extends AuthenticatorResponse {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var authenticatorData(default, null) : js.lib.ArrayBuffer;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var signature(default, null) : js.lib.ArrayBuffer;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var userHandle(default, null) : Null<js.lib.ArrayBuffer>;
 }

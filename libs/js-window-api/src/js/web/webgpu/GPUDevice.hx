@@ -25,24 +25,12 @@
 package js.web.webgpu;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("GPUDevice") extern class GPUDevice extends js.web.dom.EventTarget {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var features(default, null) : GPUSupportedFeatures;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var limits(default, null) : GPUSupportedLimits;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var adapterInfo(default, null) : GPUAdapterInfo;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var queue(default, null) : GPUQueue;
 	/**
 		From interface mixin GPUObjectBase

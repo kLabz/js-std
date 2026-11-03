@@ -24,7 +24,7 @@
 
 package js.web.media;
 
-@:native("SpeechGrammarList") extern class SpeechGrammarList {
+@:native("SpeechGrammarList") extern class SpeechGrammarList implements ArrayAccess<Null<SpeechGrammar>> {
 	var length(default, null) : Int;
 	function new():Void;
 	function addFromString(string:String, ?weight:Float = 1.0):Void;

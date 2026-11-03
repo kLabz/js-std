@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("AmbientLightSensor") extern class AmbientLightSensor extends Sensor {
 	var illuminance(default, null) : Null<Float>;

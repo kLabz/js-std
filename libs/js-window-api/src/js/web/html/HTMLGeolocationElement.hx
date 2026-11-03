@@ -27,13 +27,7 @@ package js.web.html;
 @:native("HTMLGeolocationElement") extern class HTMLGeolocationElement extends HTMLElement {
 	var position(default, null) : Null<js.web.device.GeolocationPosition>;
 	var error(default, null) : Null<js.web.device.GeolocationPositionError>;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var autolocate : Bool;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var watch : Bool;
 	var onlocation : EventHandler;
 	/**

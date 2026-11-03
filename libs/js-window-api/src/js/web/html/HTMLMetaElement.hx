@@ -25,25 +25,12 @@
 package js.web.html;
 
 @:native("HTMLMetaElement") extern class HTMLMetaElement extends HTMLElement {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var name : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var httpEquiv : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var content : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var media : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var scheme : String;
 }

@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("BatteryManager") extern class BatteryManager extends js.web.dom.EventTarget {
 	var charging(default, null) : Bool;

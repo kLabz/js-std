@@ -24,8 +24,11 @@
 
 package js.web.dom;
 
-@:native("NodeList") extern class NodeList {
+@:native("NodeList") extern class NodeList implements ArrayAccess<Null<Node>> {
 	var length(default, null) : Int;
+	function entries():js.lib.Iterator<js.lib.Tuple<Int, Node>>;
+	function forEach(callback:(value:Node, key:Int, parent:NodeList) -> Void, ?thisArg:Any):Void;
 	function item(index:Int):Null<Node>;
-	function values():Iterator<Node>;
+	function keys():js.lib.Iterator<Int>;
+	function values():js.lib.Iterator<Node>;
 }

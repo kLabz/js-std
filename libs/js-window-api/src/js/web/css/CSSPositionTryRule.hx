@@ -26,9 +26,5 @@ package js.web.css;
 
 @:native("CSSPositionTryRule") extern class CSSPositionTryRule extends CSSRule {
 	var name(default, null) : String;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-	**/
 	var style(default, null) : CSSPositionTryDescriptors;
 }

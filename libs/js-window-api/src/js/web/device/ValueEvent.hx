@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ValueEvent") extern class ValueEvent extends js.web.dom.Event {
 	var value(default, null) : Any;

@@ -24,10 +24,7 @@
 
 package js.web.svg;
 
-/**
-	TODO special=setter (index:Int, newItem:SVGTransform) -> Void
-**/
-@:native("SVGTransformList") extern class SVGTransformList {
+@:native("SVGTransformList") extern class SVGTransformList implements ArrayAccess<SVGTransform> {
 	var length(default, null) : Int;
 	var numberOfItems(default, null) : Int;
 	function appendItem(newItem:SVGTransform):SVGTransform;

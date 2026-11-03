@@ -25,12 +25,9 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("BluetoothRemoteGATTDescriptor") extern class BluetoothRemoteGATTDescriptor {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var characteristic(default, null) : BluetoothRemoteGATTCharacteristic;
 	var uuid(default, null) : UUID;
 	var value(default, null) : Null<js.lib.DataView>;

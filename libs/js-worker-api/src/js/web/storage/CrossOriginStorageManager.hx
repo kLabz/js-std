@@ -25,7 +25,7 @@
 package js.web.storage;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("CrossOriginStorageManager") extern class CrossOriginStorageManager {
 	function getFileHandle(hash:CrossOriginStorageGetFileHandleHash, ?options:CrossOriginStorageGetFileHandleOptions):js.lib.Promise<FileSystemFileHandle>;

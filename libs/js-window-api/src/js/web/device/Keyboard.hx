@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("Keyboard") extern class Keyboard extends js.web.dom.EventTarget {
 	/**

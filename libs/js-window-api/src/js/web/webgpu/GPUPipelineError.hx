@@ -25,8 +25,7 @@
 package js.web.webgpu;
 
 /**
-	Unhandled extended attribute SecureContext
-	Unhandled extended attribute Serializable
+	Only available in secure contexts (HTTPS).
 **/
 @:native("GPUPipelineError") extern class GPUPipelineError extends js.web.dom.DOMException {
 	var reason(default, null) : GPUPipelineErrorReason;

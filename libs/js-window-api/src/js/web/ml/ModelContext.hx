@@ -25,7 +25,7 @@
 package js.web.ml;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ModelContext") extern class ModelContext extends js.web.dom.EventTarget {
 	var ontoolchange : js.web.html.EventHandler;

@@ -24,10 +24,7 @@
 
 package js.web.dom;
 
-/**
-	Unhandled extended attribute LegacyUnenumerableNamedProperties
-**/
-@:native("NamedNodeMap") extern class NamedNodeMap {
+@:native("NamedNodeMap") extern class NamedNodeMap implements ArrayAccess<Null<Attr>> {
 	var length(default, null) : Int;
 	function getNamedItem(qualifiedName:String):Null<Attr>;
 	function getNamedItemNS(namespace:Null<String>, localName:String):Null<Attr>;

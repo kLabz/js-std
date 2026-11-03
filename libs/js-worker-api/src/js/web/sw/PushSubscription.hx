@@ -25,14 +25,11 @@
 package js.web.sw;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PushSubscription") extern class PushSubscription {
 	var endpoint(default, null) : String;
 	var expirationTime(default, null) : Null<js.web.perf.EpochTimeStamp>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var options(default, null) : PushSubscriptionOptions;
 	function getKey(name:PushEncryptionKeyName):Null<js.lib.ArrayBuffer>;
 	function toJSON():PushSubscriptionJSON;

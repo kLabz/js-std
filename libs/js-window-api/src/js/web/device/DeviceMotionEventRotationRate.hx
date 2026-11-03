@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("DeviceMotionEventRotationRate") extern class DeviceMotionEventRotationRate {
 	var alpha(default, null) : Null<Float>;

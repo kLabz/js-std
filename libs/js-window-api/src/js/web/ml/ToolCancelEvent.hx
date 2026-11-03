@@ -25,7 +25,7 @@
 package js.web.ml;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ToolCancelEvent") extern class ToolCancelEvent extends js.web.dom.Event {
 	var toolName(default, null) : String;

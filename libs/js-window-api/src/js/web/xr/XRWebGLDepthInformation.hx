@@ -25,9 +25,6 @@
 package js.web.xr;
 
 @:native("XRWebGLDepthInformation") extern class XRWebGLDepthInformation extends XRDepthInformation {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var texture(default, null) : js.web.webgl.WebGLTexture;
 	var textureType(default, null) : XRTextureType;
 	var imageIndex(default, null) : Null<Int>;

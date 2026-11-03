@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ProximitySensor") extern class ProximitySensor extends Sensor {
 	var distance(default, null) : Null<Float>;

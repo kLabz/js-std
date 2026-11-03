@@ -26,14 +26,7 @@ package js.web.css;
 
 @:native("CSSImportRule") extern class CSSImportRule extends CSSRule {
 	var href(default, null) : String;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-	**/
 	var media(default, null) : MediaList;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var styleSheet(default, null) : Null<CSSStyleSheet>;
 	var layerName(default, null) : Null<String>;
 	var supportsText(default, null) : Null<String>;

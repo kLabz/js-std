@@ -25,12 +25,9 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRSessionEvent") extern class XRSessionEvent extends js.web.dom.Event {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var session(default, null) : XRSession;
 	function new(type:String, eventInitDict:XRSessionEventInit):Void;
 }

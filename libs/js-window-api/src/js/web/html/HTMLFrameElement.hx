@@ -25,38 +25,14 @@
 package js.web.html;
 
 @:native("HTMLFrameElement") extern class HTMLFrameElement extends HTMLElement {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var name : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var scrolling : String;
-	/**
-		Unhandled extended attribute ReflectURL
-	**/
 	var src : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var frameBorder : String;
-	/**
-		Unhandled extended attribute ReflectURL
-	**/
 	var longDesc : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var noResize : Bool;
 	var contentDocument(default, null) : Null<js.web.dom.Document>;
 	var contentWindow(default, null) : Null<Window>;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var marginHeight : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var marginWidth : String;
 }

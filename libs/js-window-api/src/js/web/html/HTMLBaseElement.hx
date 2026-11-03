@@ -25,12 +25,6 @@
 package js.web.html;
 
 @:native("HTMLBaseElement") extern class HTMLBaseElement extends HTMLElement {
-	/**
-		Unhandled extended attribute ReflectSetter
-	**/
 	var href : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var target : String;
 }

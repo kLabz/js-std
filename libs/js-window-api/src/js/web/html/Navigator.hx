@@ -27,8 +27,7 @@ package js.web.html;
 @:native("Navigator") extern class Navigator {
 	/**
 		From interface mixin NavigatorCrossOriginStorage
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var crossOriginStorage(default, null) : js.web.storage.CrossOriginStorageManager;
 	/**
@@ -93,12 +92,10 @@ package js.web.html;
 	var cookieEnabled(default, null) : Bool;
 	/**
 		From interface mixin NavigatorPlugins
-		Unhandled extended attribute SameObject
 	**/
 	var plugins(default, null) : PluginArray;
 	/**
 		From interface mixin NavigatorPlugins
-		Unhandled extended attribute SameObject
 	**/
 	var mimeTypes(default, null) : MimeTypeArray;
 	/**
@@ -111,22 +108,19 @@ package js.web.html;
 	var hardwareConcurrency(default, null) : Float;
 	/**
 		From interface mixin NavigatorNetworkInformation
-		Unhandled extended attribute SameObject
 	**/
 	var connection(default, null) : js.web.net.NetworkInformation;
 	/**
 		From interface mixin NavigatorStorageBuckets
-		Unhandled extended attribute SameObject
 	**/
 	var storageBuckets(default, null) : js.web.storage.StorageBucketManager;
 	/**
 		From interface mixin NavigatorStorage
-		Unhandled extended attribute SameObject
 	**/
 	var storage(default, null) : js.web.storage.StorageManager;
 	/**
 		From interface mixin NavigatorUA
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var userAgentData(default, null) : js.web.misc.NavigatorUAData;
 	/**
@@ -139,20 +133,17 @@ package js.web.html;
 	var webdriver(default, null) : Bool;
 	/**
 		From interface mixin NavigatorGPU
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var gpu(default, null) : js.web.webgpu.GPU;
 	/**
 		From interface mixin NavigatorML
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
+		Only available in secure contexts (HTTPS).
 	**/
 	var ml(default, null) : js.web.ml.ML;
 	/**
 		From partial interface in attribution.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
+		Only available in secure contexts (HTTPS).
 	**/
 	var attribution(default, null) : js.web.ads.Attribution;
 	/**
@@ -161,19 +152,16 @@ package js.web.html;
 	var audioSession(default, null) : js.web.media.AudioSession;
 	/**
 		From partial interface in bluetooth.idl
-		Unhandled extended attribute SameObject
 	**/
 	var bluetooth(default, null) : js.web.device.Bluetooth;
 	/**
 		From partial interface in clipboard-apis.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
+		Only available in secure contexts (HTTPS).
 	**/
 	var clipboard(default, null) : js.web.misc.Clipboard;
 	/**
 		From partial interface in contact-picker.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
+		Only available in secure contexts (HTTPS).
 	**/
 	var contacts(default, null) : js.web.misc.ContactsManager;
 	/**
@@ -182,33 +170,27 @@ package js.web.html;
 	var cpuPerformance(default, null) : Int;
 	/**
 		From partial interface in credential-management.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
+		Only available in secure contexts (HTTPS).
 	**/
 	var credentials(default, null) : js.web.auth.CredentialsContainer;
 	/**
 		From partial interface in device-posture.idl
-		Unhandled extended attribute SameObject
 	**/
 	var devicePosture(default, null) : js.web.device.DevicePosture;
 	/**
 		From partial interface in geolocation.idl
-		Unhandled extended attribute SameObject
 	**/
 	var geolocation(default, null) : js.web.device.Geolocation;
 	/**
 		From partial interface in hid.idl
-		Unhandled extended attribute SameObject
 	**/
 	var hid(default, null) : js.web.device.HID;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute SameObject
 	**/
 	var userActivation(default, null) : UserActivation;
 	/**
 		From partial interface in ink-enhancement.idl
-		Unhandled extended attribute SameObject
 	**/
 	var ink(default, null) : js.web.device.Ink;
 	/**
@@ -217,45 +199,38 @@ package js.web.html;
 	var scheduling(default, null) : Scheduling;
 	/**
 		From partial interface in keyboard-lock.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
+		Only available in secure contexts (HTTPS).
 	**/
 	var keyboard(default, null) : js.web.device.Keyboard;
 	/**
 		From partial interface in login-status.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var login(default, null) : js.web.auth.NavigatorLogin;
 	/**
 		From partial interface in managed-configuration.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
+		Only available in secure contexts (HTTPS).
 	**/
 	var managed(default, null) : js.web.misc.NavigatorManagedData;
 	/**
 		From partial interface in media-capabilities.idl
-		Unhandled extended attribute SameObject
 	**/
 	var mediaCapabilities(default, null) : js.web.media.MediaCapabilities;
 	/**
 		From partial interface in mediacapture-streams.idl
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var mediaDevices(default, null) : js.web.media.MediaDevices;
 	/**
 		From partial interface in mediaqueries-5.idl
-		Unhandled extended attribute SameObject
 	**/
 	var preferences(default, null) : js.web.css.PreferenceManager;
 	/**
 		From partial interface in mediasession.idl
-		Unhandled extended attribute SameObject
 	**/
 	var mediaSession(default, null) : js.web.media.MediaSession;
 	/**
 		From partial interface in permissions.idl
-		Unhandled extended attribute SameObject
 	**/
 	var permissions(default, null) : js.web.misc.Permissions;
 	/**
@@ -264,46 +239,38 @@ package js.web.html;
 	var maxTouchPoints(default, null) : Int;
 	/**
 		From partial interface in presentation-api.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
+		Only available in secure contexts (HTTPS).
 	**/
 	var presentation(default, null) : js.web.media.Presentation;
 	/**
 		From partial interface in screen-wake-lock.idl
-		Unhandled extended attribute SameObject
 	**/
 	var wakeLock(default, null) : js.web.device.WakeLock;
 	/**
 		From partial interface in serial.idl
-		Unhandled extended attribute SameObject
 	**/
 	var serial(default, null) : js.web.device.Serial;
 	/**
 		From partial interface in service-workers.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
+		Only available in secure contexts (HTTPS).
 	**/
 	var serviceWorker(default, null) : js.web.sw.ServiceWorkerContainer;
 	/**
 		From partial interface in usb.idl
-		Unhandled extended attribute SameObject
 	**/
 	var usb(default, null) : js.web.device.USB;
 	/**
 		From partial interface in virtual-keyboard.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
+		Only available in secure contexts (HTTPS).
 	**/
 	var virtualKeyboard(default, null) : js.web.device.VirtualKeyboard;
 	/**
 		From partial interface in webxr.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
+		Only available in secure contexts (HTTPS).
 	**/
 	var xr(default, null) : js.web.xr.XRSystem;
 	/**
 		From partial interface in window-controls-overlay.idl
-		Unhandled extended attribute SameObject
 	**/
 	var windowControlsOverlay(default, null) : WindowControlsOverlay;
 	/**
@@ -312,7 +279,7 @@ package js.web.html;
 	function adAuctionComponents(numAdComponents:Int):Array<String>;
 	/**
 		From partial interface in web-share.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function canShare(?data:js.web.misc.ShareData):Bool;
 	/**
@@ -353,17 +320,17 @@ package js.web.html;
 	function getGamepads():Array<Null<js.web.device.Gamepad>>;
 	/**
 		From partial interface in get-installed-related-apps.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function getInstalledRelatedApps():js.lib.Promise<Array<js.web.misc.RelatedApplication>>;
 	/**
 		From partial interface in install-element.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	overload function install():js.lib.Promise<WebInstallResult>;
 	/**
 		From partial interface in install-element.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	overload function install(options:InstallParams):js.lib.Promise<WebInstallResult>;
 	/**
@@ -376,17 +343,17 @@ package js.web.html;
 	function queryHandwritingRecognizer(constraint:js.web.ml.HandwritingModelConstraint):js.lib.Promise<Null<js.web.ml.HandwritingRecognizerQueryResult>>;
 	/**
 		From interface mixin NavigatorContentUtils
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function registerProtocolHandler(scheme:String, url:String):Void;
 	/**
 		From partial interface in webmidi.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function requestMIDIAccess(?options:js.web.device.MIDIOptions):js.lib.Promise<js.web.device.MIDIAccess>;
 	/**
 		From partial interface in encrypted-media.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function requestMediaKeySystemAccess(keySystem:String, supportedConfigurations:Array<js.web.media.MediaKeySystemConfiguration>):js.lib.Promise<js.web.media.MediaKeySystemAccess>;
 	/**
@@ -399,7 +366,7 @@ package js.web.html;
 	function setAppBadge(?contents:Float):js.lib.Promise<Void>;
 	/**
 		From partial interface in web-share.idl
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function share(?data:js.web.misc.ShareData):js.lib.Promise<Void>;
 	/**
@@ -408,7 +375,7 @@ package js.web.html;
 	function taintEnabled():Bool;
 	/**
 		From interface mixin NavigatorContentUtils
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function unregisterProtocolHandler(scheme:String, url:String):Void;
 	/**

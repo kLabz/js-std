@@ -25,48 +25,16 @@
 package js.web.html;
 
 @:native("HTMLMarqueeElement") extern class HTMLMarqueeElement extends HTMLElement {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var behavior : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var bgColor : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var direction : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var height : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var hspace : Int;
 	var loop : Int;
-	/**
-		Unhandled extended attribute Reflect
-		Unhandled extended attribute ReflectDefault
-	**/
 	var scrollAmount : Int;
-	/**
-		Unhandled extended attribute Reflect
-		Unhandled extended attribute ReflectDefault
-	**/
 	var scrollDelay : Int;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var trueSpeed : Bool;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var vspace : Int;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var width : String;
 	function start():Void;
 	function stop():Void;

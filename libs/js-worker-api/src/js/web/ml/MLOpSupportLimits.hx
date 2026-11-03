@@ -27,9 +27,6 @@ package js.web.ml;
 typedef MLOpSupportLimits = {
 	@:optional
 	var preferredInputLayout : MLInputOperandLayout;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var maxTensorByteLength : Float;
 	@:optional

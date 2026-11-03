@@ -24,9 +24,6 @@
 
 package js.web.ads;
 
-/**
-	Unhandled extended attribute Serializable
-**/
 @:native("FencedFrameConfig") extern class FencedFrameConfig {
 	function new(url:String):Void;
 	function setSharedStorageContext(contextString:String):Void;

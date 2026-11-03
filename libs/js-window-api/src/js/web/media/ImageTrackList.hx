@@ -25,7 +25,7 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ImageTrackList") extern class ImageTrackList implements ArrayAccess<ImageTrack> {
 	var ready(default, null) : js.lib.Promise<Void>;

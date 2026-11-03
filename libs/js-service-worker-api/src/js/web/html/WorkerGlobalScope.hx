@@ -40,17 +40,14 @@ package js.web.html;
 	var fonts(default, null) : js.web.css.FontFaceSet;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
-		Unhandled extended attribute SameObject
 	**/
 	var indexedDB(default, null) : js.web.storage.IDBFactory;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
-		Unhandled extended attribute Replaceable
 	**/
 	var performance(default, null) : js.web.perf.Performance;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
-		Unhandled extended attribute Replaceable
 	**/
 	var origin(default, null) : String;
 	/**
@@ -63,13 +60,11 @@ package js.web.html;
 	var crossOriginIsolated(default, null) : Bool;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
-		Unhandled extended attribute Replaceable
 	**/
 	var scheduler(default, null) : Scheduler;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
+		Only available in secure contexts (HTTPS).
 	**/
 	var caches(default, null) : js.web.sw.CacheStorage;
 	/**
@@ -78,7 +73,6 @@ package js.web.html;
 	var trustedTypes(default, null) : js.web.dom.TrustedTypePolicyFactory;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
-		Unhandled extended attribute SameObject
 	**/
 	var crypto(default, null) : js.web.auth.Crypto;
 	/**
@@ -107,10 +101,9 @@ package js.web.html;
 	overload function createImageBitmap(image:js.web.canvas.ImageBitmapSource, sx:Int, sy:Int, sw:Int, sh:Int, ?options:js.web.canvas.ImageBitmapOptions):js.lib.Promise<js.web.canvas.ImageBitmap>;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
-		Unhandled extended attribute NewObject
 	**/
 	function fetch(input:js.web.net.RequestInfo, ?init:js.web.net.RequestInit):js.lib.Promise<js.web.net.Response>;
-	function importScripts(urls:haxe.Rest<haxe.Rest<haxe.extern.EitherType<js.web.dom.TrustedScriptURL, String>>>):Void;
+	function importScripts(urls:haxe.Rest<haxe.extern.EitherType<js.web.dom.TrustedScriptURL, String>>):Void;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
@@ -122,11 +115,11 @@ package js.web.html;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<haxe.Rest<Any>>):Int;
+	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
-	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<haxe.Rest<Any>>):Int;
+	function setTimeout(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<Any>):Int;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/

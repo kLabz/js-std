@@ -28,5 +28,8 @@ package js.web.css;
 	var length(default, null) : Int;
 	var usableWithLightBackground(default, null) : Bool;
 	var usableWithDarkBackground(default, null) : Bool;
-	function values():Iterator<String>;
+	function entries():js.lib.Iterator<js.lib.Tuple<Int, String>>;
+	function forEach(callback:(value:String, key:Int, parent:FontFacePalette) -> Void, ?thisArg:Any):Void;
+	function keys():js.lib.Iterator<Int>;
+	function values():js.lib.Iterator<String>;
 }

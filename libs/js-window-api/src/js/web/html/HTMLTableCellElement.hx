@@ -25,71 +25,46 @@
 package js.web.html;
 
 @:native("HTMLTableCellElement") extern class HTMLTableCellElement extends HTMLElement {
-	/**
-		Unhandled extended attribute Reflect
-		Unhandled extended attribute ReflectDefault
-		Unhandled extended attribute ReflectRange
-	**/
 	var colSpan : Int;
-	/**
-		Unhandled extended attribute Reflect
-		Unhandled extended attribute ReflectDefault
-		Unhandled extended attribute ReflectRange
-	**/
 	var rowSpan : Int;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var headers : String;
 	var cellIndex(default, null) : Int;
 	var scope : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var abbr : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var axis : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var height : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var width : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var ch : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var chOff : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var noWrap : Bool;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var vAlign : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var bgColor : String;
 }

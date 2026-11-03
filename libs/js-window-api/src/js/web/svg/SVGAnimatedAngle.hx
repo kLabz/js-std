@@ -25,12 +25,6 @@
 package js.web.svg;
 
 @:native("SVGAnimatedAngle") extern class SVGAnimatedAngle {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var baseVal(default, null) : SVGAngle;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var animVal(default, null) : SVGAngle;
 }

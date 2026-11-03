@@ -31,8 +31,5 @@ package js.web.perf;
 	var target(default, null) : Null<js.web.dom.Node>;
 	var targetSelector(default, null) : String;
 	var interactionId(default, null) : Float;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

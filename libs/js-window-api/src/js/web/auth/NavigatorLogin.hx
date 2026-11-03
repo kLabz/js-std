@@ -25,7 +25,7 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("NavigatorLogin") extern class NavigatorLogin {
 	function setStatus(status:LoginStatus):js.lib.Promise<Void>;

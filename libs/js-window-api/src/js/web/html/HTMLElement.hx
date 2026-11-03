@@ -25,58 +25,30 @@
 package js.web.html;
 
 @:native("HTMLElement") extern class HTMLElement extends js.web.dom.Element {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var title : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var lang : String;
 	var translate : Bool;
 	var dir : String;
 	var hidden : Null<haxe.extern.EitherType<Bool, haxe.extern.EitherType<Float, String>>>;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var inert : Bool;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var accessKey : String;
 	var accessKeyLabel(default, null) : String;
 	var draggable : Bool;
 	var spellcheck : Bool;
-	/**
-		Unhandled extended attribute ReflectSetter
-	**/
 	var writingSuggestions : String;
-	/**
-		Unhandled extended attribute ReflectSetter
-	**/
 	var autocapitalize : String;
 	var autocorrect : Bool;
 	var innerText : String;
 	var outerText : String;
 	var popover : Null<String>;
-	/**
-		Unhandled extended attribute Reflect
-		Unhandled extended attribute ReflectRange
-	**/
 	var headingOffset : Int;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var headingReset : Bool;
 	/**
 		From interface mixin ElementCSSInlineStyle
-		Unhandled extended attribute SameObject
 	**/
 	var attributeStyleMap(default, null) : js.web.css.StylePropertyMap;
 	/**
 		From interface mixin ElementCSSInlineStyle
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
 	**/
 	var style(default, null) : js.web.css.CSSStyleProperties;
 	/**
@@ -297,12 +269,10 @@ package js.web.html;
 	var onmousedown : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
-		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseenter : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
-		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseleave : EventHandler;
 	/**
@@ -451,7 +421,7 @@ package js.web.html;
 	var onpointermove : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var onpointerrawupdate : EventHandler;
 	/**
@@ -528,7 +498,6 @@ package js.web.html;
 	var virtualKeyboardPolicy : String;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
-		Unhandled extended attribute SameObject
 	**/
 	var dataset(default, null) : DOMStringMap;
 	/**
@@ -537,22 +506,18 @@ package js.web.html;
 	var nonce : String;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
-		Unhandled extended attribute Reflect
 	**/
 	var autofocus : Bool;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
-		Unhandled extended attribute ReflectSetter
 	**/
 	var tabIndex : Int;
 	/**
 		From partial interface in container-timing.idl
-		Unhandled extended attribute Reflect
 	**/
 	var containerTiming : String;
 	/**
 		From partial interface in container-timing.idl
-		Unhandled extended attribute Reflect
 	**/
 	var containerTimingIgnore : Bool;
 	/**

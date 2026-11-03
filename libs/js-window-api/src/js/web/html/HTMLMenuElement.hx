@@ -27,7 +27,6 @@ package js.web.html;
 @:native("HTMLMenuElement") extern class HTMLMenuElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var compact : Bool;
 }

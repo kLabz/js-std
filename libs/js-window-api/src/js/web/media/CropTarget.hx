@@ -24,12 +24,9 @@
 
 package js.web.media;
 
-/**
-	Unhandled extended attribute Serializable
-**/
 @:native("CropTarget") extern class CropTarget {
 	/**
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function fromElement(element:js.web.dom.Element):js.lib.Promise<CropTarget>;
 }

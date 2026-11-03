@@ -30,8 +30,5 @@ package js.web.media;
 	var matrix(default, null) : Null<VideoMatrixCoefficients>;
 	var fullRange(default, null) : Null<Bool>;
 	function new(?init:VideoColorSpaceInit):Void;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():VideoColorSpaceInit;
 }

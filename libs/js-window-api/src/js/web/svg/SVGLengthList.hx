@@ -24,10 +24,7 @@
 
 package js.web.svg;
 
-/**
-	TODO special=setter (index:Int, newItem:SVGLength) -> Void
-**/
-@:native("SVGLengthList") extern class SVGLengthList {
+@:native("SVGLengthList") extern class SVGLengthList implements ArrayAccess<SVGLength> {
 	var length(default, null) : Int;
 	var numberOfItems(default, null) : Int;
 	function appendItem(newItem:SVGLength):SVGLength;

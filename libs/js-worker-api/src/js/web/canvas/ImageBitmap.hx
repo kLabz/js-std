@@ -24,10 +24,6 @@
 
 package js.web.canvas;
 
-/**
-	Unhandled extended attribute Serializable
-	Unhandled extended attribute Transferable
-**/
 @:native("ImageBitmap") extern class ImageBitmap {
 	var width(default, null) : Int;
 	var height(default, null) : Int;

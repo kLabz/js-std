@@ -26,9 +26,5 @@ package js.web.css;
 
 @:native("CSSKeyframeRule") extern class CSSKeyframeRule extends CSSRule {
 	var keyText : String;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-	**/
 	var style(default, null) : CSSStyleProperties;
 }

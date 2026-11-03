@@ -27,14 +27,8 @@ package js.web.device;
 typedef PositionOptions = {
 	@:optional
 	var enableHighAccuracy : Bool;
-	/**
-		Unhandled extended attribute Clamp
-	**/
 	@:optional
 	var timeout : Int;
-	/**
-		Unhandled extended attribute Clamp
-	**/
 	@:optional
 	var maximumAge : Int;
 };

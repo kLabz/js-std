@@ -25,7 +25,7 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PaymentRequestUpdateEvent") extern class PaymentRequestUpdateEvent extends js.web.dom.Event {
 	function new(type:String, ?eventInitDict:PaymentRequestUpdateEventInit):Void;

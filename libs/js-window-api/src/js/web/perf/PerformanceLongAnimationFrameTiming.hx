@@ -31,9 +31,6 @@ package js.web.perf;
 	var layoutDuration(default, null) : DOMHighResTimeStamp;
 	var blockingDuration(default, null) : DOMHighResTimeStamp;
 	var firstUIEventTimestamp(default, null) : DOMHighResTimeStamp;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var scripts(default, null) : Array<PerformanceScriptTiming>;
 	/**
 		From interface mixin PaintTimingMixin
@@ -43,8 +40,5 @@ package js.web.perf;
 		From interface mixin PaintTimingMixin
 	**/
 	var presentationTime(default, null) : Null<DOMHighResTimeStamp>;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

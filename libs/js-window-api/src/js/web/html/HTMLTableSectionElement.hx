@@ -25,28 +25,21 @@
 package js.web.html;
 
 @:native("HTMLTableSectionElement") extern class HTMLTableSectionElement extends HTMLElement {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var rows(default, null) : js.web.dom.HTMLCollection;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var ch : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var chOff : String;
 	/**
 		From partial interface in html.idl
-		Unhandled extended attribute Reflect
 	**/
 	var vAlign : String;
 	function deleteRow(index:Int):Void;

@@ -25,9 +25,6 @@
 package js.web.xr;
 
 @:native("XRMesh") extern class XRMesh {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var meshSpace(default, null) : XRSpace;
 	var vertices(default, null) : js.lib.Float32Array;
 	var indices(default, null) : js.lib.Uint32Array;

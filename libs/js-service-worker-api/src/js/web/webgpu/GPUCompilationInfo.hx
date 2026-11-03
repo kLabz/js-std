@@ -25,8 +25,7 @@
 package js.web.webgpu;
 
 /**
-	Unhandled extended attribute Serializable
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("GPUCompilationInfo") extern class GPUCompilationInfo {
 	var messages(default, null) : Array<GPUCompilationMessage>;

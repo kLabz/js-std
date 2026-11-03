@@ -24,10 +24,7 @@
 
 package js.web.dom;
 
-/**
-	Unhandled extended attribute LegacyUnenumerableNamedProperties
-**/
-@:native("HTMLCollection") extern class HTMLCollection {
+@:native("HTMLCollection") extern class HTMLCollection implements ArrayAccess<Null<Element>> {
 	var length(default, null) : Int;
 	function item(index:Int):Null<Element>;
 	function namedItem(name:String):Null<Element>;

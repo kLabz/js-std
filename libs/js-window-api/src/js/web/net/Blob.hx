@@ -24,32 +24,14 @@
 
 package js.web.net;
 
-/**
-	Unhandled extended attribute Serializable
-**/
 @:native("Blob") extern class Blob {
 	var size(default, null) : Float;
 	var type(default, null) : String;
 	function new(?blobParts:Array<BlobPart>, ?options:BlobPropertyBag):Void;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function arrayBuffer():js.lib.Promise<js.lib.ArrayBuffer>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function bytes():js.lib.Promise<js.lib.Uint8Array>;
 	function slice(?start:Float, ?end:Float, ?contentType:String):Blob;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function stream():ReadableStream;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function text():js.lib.Promise<String>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function textStream():ReadableStream;
 }

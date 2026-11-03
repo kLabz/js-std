@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("Serial") extern class Serial extends js.web.dom.EventTarget {
 	var onconnect : js.web.html.EventHandler;

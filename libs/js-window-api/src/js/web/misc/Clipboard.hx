@@ -25,7 +25,7 @@
 package js.web.misc;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("Clipboard") extern class Clipboard extends js.web.dom.EventTarget {
 	function read(?formats:ClipboardUnsanitizedFormats):js.lib.Promise<ClipboardItems>;

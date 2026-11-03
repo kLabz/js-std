@@ -24,10 +24,8 @@
 
 package js.web.css;
 
-/**
-	TODO SetlikeDeclaration handling
-**/
 @:native("FontFaceSet") extern class FontFaceSet extends js.web.dom.EventTarget {
+	var size(default, null) : Int;
 	var onloading : js.web.html.EventHandler;
 	var onloadingdone : js.web.html.EventHandler;
 	var onloadingerror : js.web.html.EventHandler;
@@ -37,5 +35,10 @@ package js.web.css;
 	function check(font:String, ?text:String = " "):Bool;
 	function clear():Void;
 	function delete(font:FontFace):Bool;
+	function entries():js.lib.Iterator<js.lib.Tuple<FontFace, FontFace>>;
+	function forEach(callback:(value:FontFace, key:FontFace, set:FontFaceSet) -> Void, ?thisArg:Any):Void;
+	function has(value:FontFace):Bool;
+	function keys():js.lib.Iterator<FontFace>;
 	function load(font:String, ?text:String = " "):js.lib.Promise<Array<FontFace>>;
+	function values():js.lib.Iterator<FontFace>;
 }

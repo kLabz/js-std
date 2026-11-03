@@ -25,16 +25,10 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PublicKeyCredential") extern class PublicKeyCredential extends Credential {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var rawId(default, null) : js.lib.ArrayBuffer;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var response(default, null) : AuthenticatorResponse;
 	var authenticatorAttachment(default, null) : Null<String>;
 	/**

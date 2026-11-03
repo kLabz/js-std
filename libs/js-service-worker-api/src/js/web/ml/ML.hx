@@ -25,7 +25,7 @@
 package js.web.ml;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("ML") extern class ML {
 	overload function createContext(?options:MLContextOptions):js.lib.Promise<MLContext>;

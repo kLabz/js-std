@@ -29,9 +29,6 @@ package js.web.media;
 	var artist : String;
 	var album : String;
 	var artwork : Array<{ }>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var chapterInfo(default, null) : Array<ChapterInformation>;
 	function new(?init:MediaMetadataInit):Void;
 }

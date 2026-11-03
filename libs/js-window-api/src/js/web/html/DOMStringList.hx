@@ -24,7 +24,7 @@
 
 package js.web.html;
 
-@:native("DOMStringList") extern class DOMStringList {
+@:native("DOMStringList") extern class DOMStringList implements ArrayAccess<Null<String>> {
 	var length(default, null) : Int;
 	function contains(string:String):Bool;
 	function item(index:Int):Null<String>;

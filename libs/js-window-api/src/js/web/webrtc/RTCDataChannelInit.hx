@@ -27,23 +27,14 @@ package js.web.webrtc;
 typedef RTCDataChannelInit = {
 	@:optional
 	var ordered : Bool;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var maxPacketLifeTime : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var maxRetransmits : Int;
 	@:optional
 	var protocol : String;
 	@:optional
 	var negotiated : Bool;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var id : Int;
 	@:optional

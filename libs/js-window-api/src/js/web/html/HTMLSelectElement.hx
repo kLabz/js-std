@@ -24,45 +24,17 @@
 
 package js.web.html;
 
-/**
-	TODO special=setter (index:Int, option:Null<HTMLOptionElement>) -> Void
-**/
-@:native("HTMLSelectElement") extern class HTMLSelectElement extends HTMLElement {
-	/**
-		Unhandled extended attribute ReflectSetter
-	**/
+@:native("HTMLSelectElement") extern class HTMLSelectElement extends HTMLElement implements ArrayAccess<Null<HTMLOptionElement>> {
 	var autocomplete : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var multiple : Bool;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var name : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var required : Bool;
-	/**
-		Unhandled extended attribute Reflect
-		Unhandled extended attribute ReflectDefault
-	**/
 	var size : Int;
 	var type(default, null) : String;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var options(default, null) : HTMLOptionsCollection;
 	var length : Int;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var selectedOptions(default, null) : js.web.dom.HTMLCollection;
 	var selectedIndex : Int;
 	var value : String;

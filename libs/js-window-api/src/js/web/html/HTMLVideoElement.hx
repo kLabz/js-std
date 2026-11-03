@@ -25,23 +25,11 @@
 package js.web.html;
 
 @:native("HTMLVideoElement") extern class HTMLVideoElement extends HTMLMediaElement {
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var width : Int;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var height : Int;
 	var videoWidth(default, null) : Int;
 	var videoHeight(default, null) : Int;
-	/**
-		Unhandled extended attribute ReflectURL
-	**/
 	var poster : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var playsInline : Bool;
 	/**
 		From partial interface in picture-in-picture.idl
@@ -65,7 +53,6 @@ package js.web.html;
 	function getVideoPlaybackQuality():js.web.media.VideoPlaybackQuality;
 	/**
 		From partial interface in picture-in-picture.idl
-		Unhandled extended attribute NewObject
 	**/
 	function requestPictureInPicture():js.lib.Promise<PictureInPictureWindow>;
 	/**

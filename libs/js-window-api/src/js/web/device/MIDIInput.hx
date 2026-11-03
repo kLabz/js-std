@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("MIDIInput") extern class MIDIInput extends MIDIPort {
 	var onmidimessage : js.web.html.EventHandler;

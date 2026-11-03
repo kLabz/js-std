@@ -25,9 +25,6 @@
 package js.web.sw;
 
 @:native("FetchEvent") extern class FetchEvent extends ExtendableEvent {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var request(default, null) : js.web.net.Request;
 	var preloadResponse(default, null) : js.lib.Promise<Any>;
 	var clientId(default, null) : String;

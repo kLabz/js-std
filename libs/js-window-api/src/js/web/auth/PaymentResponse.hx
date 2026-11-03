@@ -25,7 +25,7 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PaymentResponse") extern class PaymentResponse extends js.web.dom.EventTarget {
 	var requestId(default, null) : String;
@@ -37,16 +37,7 @@ package js.web.auth;
 	var payerEmail(default, null) : Null<String>;
 	var payerPhone(default, null) : Null<String>;
 	var onpayerdetailchange : js.web.html.EventHandler;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function complete(?result:PaymentComplete = PaymentComplete.UNKNOWN, ?details:PaymentCompleteDetails):js.lib.Promise<Void>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function retry(?errorFields:PaymentValidationErrors):js.lib.Promise<Void>;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

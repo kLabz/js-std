@@ -25,7 +25,7 @@
 package js.web.net;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("WebTransportWriter") extern class WebTransportWriter extends WritableStreamDefaultWriter {
 	function atomicWrite(?chunk:Any):js.lib.Promise<Void>;

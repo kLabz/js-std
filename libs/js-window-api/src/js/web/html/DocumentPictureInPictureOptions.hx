@@ -25,14 +25,8 @@
 package js.web.html;
 
 typedef DocumentPictureInPictureOptions = {
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var width : Float;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var height : Float;
 	@:optional

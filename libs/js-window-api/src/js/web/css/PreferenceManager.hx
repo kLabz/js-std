@@ -25,7 +25,7 @@
 package js.web.css;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PreferenceManager") extern class PreferenceManager {
 	var colorScheme(default, null) : PreferenceObject;

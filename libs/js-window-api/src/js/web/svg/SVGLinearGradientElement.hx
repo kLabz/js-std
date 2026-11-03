@@ -25,20 +25,8 @@
 package js.web.svg;
 
 @:native("SVGLinearGradientElement") extern class SVGLinearGradientElement extends SVGGradientElement {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var x1(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var y1(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var x2(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var y2(default, null) : SVGAnimatedLength;
 }

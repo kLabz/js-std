@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("DevicePosture") extern class DevicePosture extends js.web.dom.EventTarget {
 	var type(default, null) : DevicePostureType;

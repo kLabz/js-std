@@ -24,22 +24,10 @@
 
 package js.web.dom;
 
-/**
-	Unhandled extended attribute Serializable
-**/
 @:native("DOMMatrix") extern class DOMMatrix extends DOMMatrixReadOnly {
 	function new(?init:haxe.extern.EitherType<String, Array<Float>>):Void;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function fromFloat32Array(array32:js.lib.Float32Array):DOMMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function fromFloat64Array(array64:js.lib.Float64Array):DOMMatrix;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function fromMatrix(?other:DOMMatrixInit):DOMMatrix;
 	function invertSelf():DOMMatrix;
 	function multiplySelf(?other:DOMMatrixInit):DOMMatrix;

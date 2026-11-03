@@ -34,9 +34,6 @@ package js.web.net;
 	var readyState(default, null) : Int;
 	var timeout : Int;
 	var withCredentials : Bool;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var upload(default, null) : XMLHttpRequestUpload;
 	var responseURL(default, null) : String;
 	var status(default, null) : Int;

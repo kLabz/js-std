@@ -29,12 +29,13 @@ package js.web.net;
 	overload function append(name:String, value:String):Void;
 	overload function append(name:String, blobValue:Blob, ?filename:String):Void;
 	function delete(name:String):Void;
-	function entries():Iterator<js.lib.Tuple<String, FormDataEntryValue>>;
+	function entries():js.lib.Iterator<js.lib.Tuple<String, FormDataEntryValue>>;
+	function forEach(callback:(value:FormDataEntryValue, key:String, parent:FormData) -> Void, ?thisArg:Any):Void;
 	function get(name:String):Null<FormDataEntryValue>;
 	function getAll(name:String):Array<FormDataEntryValue>;
 	function has(name:String):Bool;
-	function keys():Iterator<String>;
+	function keys():js.lib.Iterator<String>;
 	overload function set(name:String, value:String):Void;
 	overload function set(name:String, blobValue:Blob, ?filename:String):Void;
-	function values():Iterator<FormDataEntryValue>;
+	function values():js.lib.Iterator<FormDataEntryValue>;
 }

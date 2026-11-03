@@ -25,14 +25,11 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PressureRecord") extern class PressureRecord {
 	var source(default, null) : PressureSource;
 	var state(default, null) : PressureState;
 	var time(default, null) : js.web.perf.DOMHighResTimeStamp;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

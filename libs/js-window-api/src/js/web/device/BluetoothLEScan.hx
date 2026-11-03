@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("BluetoothLEScan") extern class BluetoothLEScan {
 	var filters(default, null) : Array<BluetoothLEScanFilter>;

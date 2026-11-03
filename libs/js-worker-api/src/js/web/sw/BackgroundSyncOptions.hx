@@ -25,9 +25,6 @@
 package js.web.sw;
 
 typedef BackgroundSyncOptions = {
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var minInterval : Float;
 };

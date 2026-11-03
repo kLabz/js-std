@@ -25,18 +25,13 @@
 package js.web.svg;
 
 @:native("SVGGraphicsElement") extern class SVGGraphicsElement extends SVGElement {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var transform(default, null) : SVGAnimatedTransformList;
 	/**
 		From interface mixin SVGTests
-		Unhandled extended attribute SameObject
 	**/
 	var requiredExtensions(default, null) : SVGStringList;
 	/**
 		From interface mixin SVGTests
-		Unhandled extended attribute SameObject
 	**/
 	var systemLanguage(default, null) : SVGStringList;
 	function getBBox(?options:SVGBoundingBoxOptions):js.web.dom.SVGRect;

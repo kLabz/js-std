@@ -24,9 +24,12 @@
 
 package js.web.media;
 
-/**
-	TODO MaplikeDeclaration handling
-**/
 @:native("AudioParamMap") extern class AudioParamMap {
-
+	var size(default, null) : Int;
+	function entries():js.lib.Iterator<js.lib.Tuple<String, AudioParam>>;
+	function forEach(callback:(value:AudioParam, key:String, map:AudioParamMap) -> Void, ?thisArg:Any):Void;
+	function get(key:String):Null<AudioParam>;
+	function has(key:String):Bool;
+	function keys():js.lib.Iterator<String>;
+	function values():js.lib.Iterator<AudioParam>;
 }

@@ -25,17 +25,8 @@
 package js.web.xr;
 
 @:native("XRWebGLSubImage") extern class XRWebGLSubImage extends XRSubImage {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var colorTexture(default, null) : js.web.webgl.WebGLTexture;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var depthStencilTexture(default, null) : Null<js.web.webgl.WebGLTexture>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var motionVectorTexture(default, null) : Null<js.web.webgl.WebGLTexture>;
 	var imageIndex(default, null) : Null<Int>;
 	var colorTextureWidth(default, null) : Int;

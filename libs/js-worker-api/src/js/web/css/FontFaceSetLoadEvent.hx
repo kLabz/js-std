@@ -25,9 +25,6 @@
 package js.web.css;
 
 @:native("FontFaceSetLoadEvent") extern class FontFaceSetLoadEvent extends js.web.dom.Event {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var fontfaces(default, null) : Array<FontFace>;
 	function new(type:String, ?eventInitDict:FontFaceSetLoadEventInit):Void;
 }

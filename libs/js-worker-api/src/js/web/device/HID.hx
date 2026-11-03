@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("HID") extern class HID extends js.web.dom.EventTarget {
 	var onconnect : js.web.html.EventHandler;

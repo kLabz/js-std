@@ -25,7 +25,7 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("SpeechRecognitionErrorEvent") extern class SpeechRecognitionErrorEvent extends js.web.dom.Event {
 	var error(default, null) : SpeechRecognitionErrorCode;

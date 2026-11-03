@@ -27,8 +27,5 @@ package js.web.css;
 @:native("CaretPosition") extern class CaretPosition {
 	var offsetNode(default, null) : js.web.dom.Node;
 	var offset(default, null) : Int;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function getClientRect():Null<js.web.dom.DOMRect>;
 }

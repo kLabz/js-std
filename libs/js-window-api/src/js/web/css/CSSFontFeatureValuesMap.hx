@@ -24,9 +24,15 @@
 
 package js.web.css;
 
-/**
-	TODO MaplikeDeclaration handling
-**/
 @:native("CSSFontFeatureValuesMap") extern class CSSFontFeatureValuesMap {
+	var size(default, null) : Int;
+	function clear():Void;
+	function delete(key:String):Bool;
+	function entries():js.lib.Iterator<js.lib.Tuple<String, Array<Int>>>;
+	function forEach(callback:(value:Array<Int>, key:String, map:CSSFontFeatureValuesMap) -> Void, ?thisArg:Any):Void;
+	function get(key:String):Null<Array<Int>>;
+	function has(key:String):Bool;
+	function keys():js.lib.Iterator<String>;
 	function set(featureValueName:String, values:haxe.extern.EitherType<Int, Array<Int>>):Void;
+	function values():js.lib.Iterator<Array<Int>>;
 }

@@ -26,21 +26,12 @@ package js.web.device;
 
 typedef SerialOptions = {
 	var baudRate : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var dataBits : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var stopBits : Int;
 	@:optional
 	var parity : ParityType;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var bufferSize : Int;
 	@:optional

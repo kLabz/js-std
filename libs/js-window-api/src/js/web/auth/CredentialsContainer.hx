@@ -25,7 +25,7 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("CredentialsContainer") extern class CredentialsContainer {
 	function create(?options:CredentialCreationOptions):js.lib.Promise<Null<Credential>>;

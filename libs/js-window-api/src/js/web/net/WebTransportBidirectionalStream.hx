@@ -25,7 +25,7 @@
 package js.web.net;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("WebTransportBidirectionalStream") extern class WebTransportBidirectionalStream {
 	var readable(default, null) : WebTransportReceiveStream;

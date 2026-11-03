@@ -25,9 +25,6 @@
 package js.web.device;
 
 @:native("GamepadHapticActuator") extern class GamepadHapticActuator {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var effects(default, null) : Array<GamepadHapticEffectType>;
 	function playEffect(type:GamepadHapticEffectType, ?params:GamepadEffectParameters):js.lib.Promise<GamepadHapticsResult>;
 	/**

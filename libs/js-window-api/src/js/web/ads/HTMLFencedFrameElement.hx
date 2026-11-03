@@ -28,10 +28,6 @@ package js.web.ads;
 	var config : Null<FencedFrameConfig>;
 	var width : String;
 	var height : String;
-	/**
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-	**/
 	var sandbox(default, null) : js.web.dom.DOMTokenList;
 	var allow : String;
 }

@@ -26,8 +26,5 @@ package js.web.css;
 
 @:native("CSSViewTransitionRule") extern class CSSViewTransitionRule extends CSSRule {
 	var navigation(default, null) : String;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var types(default, null) : Array<String>;
 }

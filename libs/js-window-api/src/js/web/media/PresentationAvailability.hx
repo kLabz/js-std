@@ -25,7 +25,7 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PresentationAvailability") extern class PresentationAvailability extends js.web.dom.EventTarget {
 	var value(default, null) : Bool;

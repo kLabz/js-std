@@ -24,12 +24,19 @@
 
 package js.web.css;
 
-/**
-	TODO MaplikeDeclaration handling
-**/
 @:native("HighlightRegistry") extern class HighlightRegistry {
+	var size(default, null) : Int;
+	function clear():Void;
+	function delete(key:String):Bool;
+	function entries():js.lib.Iterator<js.lib.Tuple<String, Highlight>>;
+	function forEach(callback:(value:Highlight, key:String, map:HighlightRegistry) -> Void, ?thisArg:Any):Void;
+	function get(key:String):Null<Highlight>;
+	function has(key:String):Bool;
 	/**
 		From partial interface in css-highlight-api.idl
 	**/
 	function highlightsFromPoint(x:Float, y:Float, ?options:HighlightsFromPointOptions):Array<HighlightHitResult>;
+	function keys():js.lib.Iterator<String>;
+	function set(key:String, value:Highlight):HighlightRegistry;
+	function values():js.lib.Iterator<Highlight>;
 }

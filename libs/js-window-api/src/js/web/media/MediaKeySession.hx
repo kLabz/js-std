@@ -25,7 +25,7 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("MediaKeySession") extern class MediaKeySession extends js.web.dom.EventTarget {
 	var sessionId(default, null) : String;

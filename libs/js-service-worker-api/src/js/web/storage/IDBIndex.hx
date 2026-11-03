@@ -26,43 +26,16 @@ package js.web.storage;
 
 @:native("IDBIndex") extern class IDBIndex {
 	var name : String;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var objectStore(default, null) : IDBObjectStore;
 	var keyPath(default, null) : Any;
 	var multiEntry(default, null) : Bool;
 	var unique(default, null) : Bool;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function count(?query:Any):IDBRequest;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function get(query:Any):IDBRequest;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function getAll(?queryOrOptions:Any, ?count:Int):IDBRequest;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function getAllKeys(?queryOrOptions:Any, ?count:Int):IDBRequest;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function getAllRecords(?options:IDBGetAllOptions):IDBRequest;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function getKey(query:Any):IDBRequest;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function openCursor(?query:Any, ?direction:IDBCursorDirection = IDBCursorDirection.NEXT):IDBRequest;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function openKeyCursor(?query:Any, ?direction:IDBCursorDirection = IDBCursorDirection.NEXT):IDBRequest;
 }

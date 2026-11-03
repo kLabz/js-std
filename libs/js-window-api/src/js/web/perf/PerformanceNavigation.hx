@@ -31,8 +31,5 @@ package js.web.perf;
 	static inline var TYPE_RESERVED : Int = 255;
 	var type(default, null) : Int;
 	var redirectCount(default, null) : Int;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

@@ -28,14 +28,11 @@ package js.web.media;
 	var baseLatency(default, null) : Float;
 	var outputLatency(default, null) : Float;
 	/**
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var sinkId(default, null) : haxe.extern.EitherType<String, AudioSinkInfo>;
 	var onsinkchange : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var playbackStats(default, null) : AudioPlaybackStats;
 	function new(?contextOptions:AudioContextOptions):Void;
 	function close():js.lib.Promise<Void>;
@@ -46,7 +43,7 @@ package js.web.media;
 	function getOutputTimestamp():AudioTimestamp;
 	function resume():js.lib.Promise<Void>;
 	/**
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function setSinkId(sinkId:haxe.extern.EitherType<String, AudioSinkOptions>):js.lib.Promise<Void>;
 	function suspend():js.lib.Promise<Void>;

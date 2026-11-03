@@ -26,10 +26,11 @@ package js.web.css;
 
 @:native("StylePropertyMapReadOnly") extern class StylePropertyMapReadOnly {
 	var size(default, null) : Int;
-	function entries():Iterator<js.lib.Tuple<String, Array<CSSStyleValue>>>;
+	function entries():js.lib.Iterator<js.lib.Tuple<String, Array<CSSStyleValue>>>;
+	function forEach(callback:(value:Array<CSSStyleValue>, key:String, parent:StylePropertyMapReadOnly) -> Void, ?thisArg:Any):Void;
 	function get(property:String):haxe.extern.EitherType<Void, CSSStyleValue>;
 	function getAll(property:String):Array<CSSStyleValue>;
 	function has(property:String):Bool;
-	function keys():Iterator<String>;
-	function values():Iterator<Array<CSSStyleValue>>;
+	function keys():js.lib.Iterator<String>;
+	function values():js.lib.Iterator<Array<CSSStyleValue>>;
 }

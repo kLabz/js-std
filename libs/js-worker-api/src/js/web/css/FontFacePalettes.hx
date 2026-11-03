@@ -26,5 +26,8 @@ package js.web.css;
 
 @:native("FontFacePalettes") extern class FontFacePalettes implements ArrayAccess<FontFacePalette> {
 	var length(default, null) : Int;
-	function values():Iterator<FontFacePalette>;
+	function entries():js.lib.Iterator<js.lib.Tuple<Int, FontFacePalette>>;
+	function forEach(callback:(value:FontFacePalette, key:Int, parent:FontFacePalettes) -> Void, ?thisArg:Any):Void;
+	function keys():js.lib.Iterator<Int>;
+	function values():js.lib.Iterator<FontFacePalette>;
 }

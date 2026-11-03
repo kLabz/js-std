@@ -33,13 +33,7 @@ package js.web.storage;
 	var onerror : js.web.html.EventHandler;
 	var onversionchange : js.web.html.EventHandler;
 	function close():Void;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function createObjectStore(name:String, ?options:IDBObjectStoreParameters):IDBObjectStore;
 	function deleteObjectStore(name:String):Void;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function transaction(storeNames:haxe.extern.EitherType<String, Array<String>>, ?mode:IDBTransactionMode = IDBTransactionMode.READONLY, ?options:IDBTransactionOptions):IDBTransaction;
 }

@@ -25,7 +25,7 @@
 package js.web.net;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("WebTransport") extern class WebTransport {
 	var ready(default, null) : js.lib.Promise<Void>;
@@ -46,9 +46,6 @@ package js.web.net;
 	function createBidirectionalStream(?options:WebTransportSendStreamOptions):js.lib.Promise<WebTransportBidirectionalStream>;
 	function createSendGroup():WebTransportSendGroup;
 	function createUnidirectionalStream(?options:WebTransportSendStreamOptions):js.lib.Promise<WebTransportSendStream>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function exportKeyingMaterial(label:js.web.dom.BufferSource, context:js.web.dom.BufferSource, outputLength:Int):js.lib.Promise<js.lib.Uint8Array>;
 	function getStats():js.lib.Promise<WebTransportConnectionStats>;
 }

@@ -25,12 +25,9 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRLayerEvent") extern class XRLayerEvent extends js.web.dom.Event {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var layer(default, null) : XRLayer;
 	function new(type:String, eventInitDict:XRLayerEventInit):Void;
 }

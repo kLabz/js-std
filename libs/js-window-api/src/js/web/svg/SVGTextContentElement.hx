@@ -28,13 +28,7 @@ package js.web.svg;
 	static inline var LENGTHADJUST_UNKNOWN : Int = 0;
 	static inline var LENGTHADJUST_SPACING : Int = 1;
 	static inline var LENGTHADJUST_SPACINGANDGLYPHS : Int = 2;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var textLength(default, null) : SVGAnimatedLength;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var lengthAdjust(default, null) : SVGAnimatedEnumeration;
 	function getCharNumAtPosition(?point:js.web.dom.DOMPointInit):Int;
 	function getComputedTextLength():Float;

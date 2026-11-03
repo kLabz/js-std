@@ -24,11 +24,11 @@
 
 package js.web.css;
 
-/**
-	TODO special=setter (index:Int, val:CSSUnparsedSegment) -> Void
-**/
 @:native("CSSUnparsedValue") extern class CSSUnparsedValue extends CSSStyleValue implements ArrayAccess<CSSUnparsedSegment> {
 	var length(default, null) : Int;
 	function new(members:Array<CSSUnparsedSegment>):Void;
-	function values():Iterator<CSSUnparsedSegment>;
+	function entries():js.lib.Iterator<js.lib.Tuple<Int, CSSUnparsedSegment>>;
+	function forEach(callback:(value:CSSUnparsedSegment, key:Int, parent:CSSUnparsedValue) -> Void, ?thisArg:Any):Void;
+	function keys():js.lib.Iterator<Int>;
+	function values():js.lib.Iterator<CSSUnparsedSegment>;
 }

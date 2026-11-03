@@ -25,14 +25,8 @@
 package js.web.media;
 
 typedef FlacEncoderConfig = {
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var blockSize : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var compressLevel : Int;
 };

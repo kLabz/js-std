@@ -28,8 +28,5 @@ package js.web.perf;
 	var name(default, null) : String;
 	var duration(default, null) : DOMHighResTimeStamp;
 	var description(default, null) : String;
-	/**
-		Unhandled extended attribute Default
-	**/
 	function toJSON():{ };
 }

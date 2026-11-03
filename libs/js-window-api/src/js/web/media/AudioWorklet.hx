@@ -25,7 +25,7 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("AudioWorklet") extern class AudioWorklet extends js.web.html.Worklet {
 	var port(default, null) : js.web.html.MessagePort;

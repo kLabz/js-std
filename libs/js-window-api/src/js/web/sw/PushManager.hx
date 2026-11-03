@@ -25,12 +25,9 @@
 package js.web.sw;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PushManager") extern class PushManager {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	static var supportedContentEncodings(default, null) : Array<String>;
 	function getSubscription():js.lib.Promise<Null<PushSubscription>>;
 	function permissionState(?options:PushSubscriptionOptionsInit):js.lib.Promise<js.web.misc.PermissionState>;

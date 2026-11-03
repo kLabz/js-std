@@ -25,12 +25,9 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("PressureObserver") extern class PressureObserver {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	static var knownSources(default, null) : Array<PressureSource>;
 	function new(callback:PressureUpdateCallback):Void;
 	function disconnect():Void;

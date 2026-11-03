@@ -25,15 +25,15 @@
 package js.web.css;
 
 @:native("CSSNumericValue") extern class CSSNumericValue extends CSSStyleValue {
-	function add(values:haxe.Rest<haxe.Rest<CSSNumberish>>):CSSNumericValue;
-	function div(values:haxe.Rest<haxe.Rest<CSSNumberish>>):CSSNumericValue;
-	function equals(value:haxe.Rest<haxe.Rest<CSSNumberish>>):Bool;
-	function max(values:haxe.Rest<haxe.Rest<CSSNumberish>>):CSSNumericValue;
-	function min(values:haxe.Rest<haxe.Rest<CSSNumberish>>):CSSNumericValue;
-	function mul(values:haxe.Rest<haxe.Rest<CSSNumberish>>):CSSNumericValue;
+	function add(values:haxe.Rest<CSSNumberish>):CSSNumericValue;
+	function div(values:haxe.Rest<CSSNumberish>):CSSNumericValue;
+	function equals(value:haxe.Rest<CSSNumberish>):Bool;
+	function max(values:haxe.Rest<CSSNumberish>):CSSNumericValue;
+	function min(values:haxe.Rest<CSSNumberish>):CSSNumericValue;
+	function mul(values:haxe.Rest<CSSNumberish>):CSSNumericValue;
 	function parse(cssText:String):CSSNumericValue;
-	function sub(values:haxe.Rest<haxe.Rest<CSSNumberish>>):CSSNumericValue;
+	function sub(values:haxe.Rest<CSSNumberish>):CSSNumericValue;
 	function to(unit:String):CSSUnitValue;
-	function toSum(units:haxe.Rest<haxe.Rest<String>>):CSSMathSum;
+	function toSum(units:haxe.Rest<String>):CSSMathSum;
 	function type():CSSNumericType;
 }

@@ -27,9 +27,6 @@ package js.web.storage;
 typedef IDBGetAllOptions = {
 	@:optional
 	var query : Any;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var count : Int;
 	@:optional

@@ -28,19 +28,10 @@ typedef VideoEncoderConfig = {
 	var codec : String;
 	var width : Int;
 	var height : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var displayWidth : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var displayHeight : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var bitrate : Float;
 	@:optional

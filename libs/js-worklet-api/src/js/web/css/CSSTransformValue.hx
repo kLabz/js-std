@@ -24,12 +24,12 @@
 
 package js.web.css;
 
-/**
-	TODO special=setter (index:Int, val:CSSTransformComponent) -> Void
-**/
 @:native("CSSTransformValue") extern class CSSTransformValue extends CSSStyleValue implements ArrayAccess<CSSTransformComponent> {
 	var length(default, null) : Int;
 	var is2D(default, null) : Bool;
 	function new(transforms:Array<CSSTransformComponent>):Void;
-	function values():Iterator<CSSTransformComponent>;
+	function entries():js.lib.Iterator<js.lib.Tuple<Int, CSSTransformComponent>>;
+	function forEach(callback:(value:CSSTransformComponent, key:Int, parent:CSSTransformValue) -> Void, ?thisArg:Any):Void;
+	function keys():js.lib.Iterator<Int>;
+	function values():js.lib.Iterator<CSSTransformComponent>;
 }

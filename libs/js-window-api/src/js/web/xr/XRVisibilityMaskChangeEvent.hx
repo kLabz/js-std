@@ -25,22 +25,13 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRVisibilityMaskChangeEvent") extern class XRVisibilityMaskChangeEvent extends js.web.dom.Event {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var session(default, null) : XRSession;
 	var eye(default, null) : XREye;
 	var index(default, null) : Int;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var vertices(default, null) : js.lib.Float32Array;
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var indices(default, null) : js.lib.Uint32Array;
 	function new(type:String, eventInitDict:XRVisibilityMaskChangeEventInit):Void;
 }

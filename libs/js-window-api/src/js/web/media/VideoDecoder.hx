@@ -25,7 +25,7 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("VideoDecoder") extern class VideoDecoder extends js.web.dom.EventTarget {
 	var state(default, null) : CodecState;

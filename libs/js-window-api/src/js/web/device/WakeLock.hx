@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("WakeLock") extern class WakeLock {
 	function request(?type:WakeLockType = WakeLockType.SCREEN):js.lib.Promise<WakeLockSentinel>;

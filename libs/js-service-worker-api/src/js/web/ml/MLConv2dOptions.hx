@@ -31,9 +31,6 @@ typedef MLConv2dOptions = MLOperatorOptions & {
 	var strides : Array<Int>;
 	@:optional
 	var dilations : Array<Int>;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	@:optional
 	var groups : Int;
 	@:optional

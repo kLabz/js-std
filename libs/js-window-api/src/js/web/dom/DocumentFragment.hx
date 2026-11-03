@@ -27,7 +27,6 @@ package js.web.dom;
 @:native("DocumentFragment") extern class DocumentFragment extends Node {
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute SameObject
 	**/
 	var children(default, null) : HTMLCollection;
 	/**
@@ -45,9 +44,8 @@ package js.web.dom;
 	function new():Void;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute Unscopable
 	**/
-	function append(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	function append(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From interface mixin NonElementParentNode
 	**/
@@ -58,21 +56,18 @@ package js.web.dom;
 	function moveBefore(node:Node, child:Null<Node>):Void;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute Unscopable
 	**/
-	function prepend(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	function prepend(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
 		From interface mixin ParentNode
 	**/
 	function querySelector(selectors:String):Null<Element>;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute NewObject
 	**/
 	function querySelectorAll(selectors:String):NodeList;
 	/**
 		From interface mixin ParentNode
-		Unhandled extended attribute Unscopable
 	**/
-	function replaceChildren(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	function replaceChildren(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 }

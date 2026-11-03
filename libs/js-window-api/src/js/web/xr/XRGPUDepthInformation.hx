@@ -25,9 +25,6 @@
 package js.web.xr;
 
 @:native("XRGPUDepthInformation") extern class XRGPUDepthInformation extends XRDepthInformation {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var texture(default, null) : js.web.webgpu.GPUTexture;
 	function getViewDescriptor():js.web.webgpu.GPUTextureViewDescriptor;
 }

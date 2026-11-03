@@ -40,7 +40,7 @@ package js.web.dom;
 	var persistentDeviceId(default, null) : Int;
 	function new(type:String, ?eventInitDict:PointerEventInit):Void;
 	/**
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	function getCoalescedEvents():Array<PointerEvent>;
 	function getPredictedEvents():Array<PointerEvent>;

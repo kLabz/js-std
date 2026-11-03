@@ -25,9 +25,9 @@
 package js.web.media;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
-@:native("SpeechRecognitionResult") extern class SpeechRecognitionResult {
+@:native("SpeechRecognitionResult") extern class SpeechRecognitionResult implements ArrayAccess<Null<SpeechRecognitionAlternative>> {
 	var length(default, null) : Int;
 	var isFinal(default, null) : Bool;
 	var speechStartTime(default, null) : Float;

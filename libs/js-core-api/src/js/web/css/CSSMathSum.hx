@@ -26,5 +26,5 @@ package js.web.css;
 
 @:native("CSSMathSum") extern class CSSMathSum extends CSSMathValue {
 	var values(default, null) : CSSNumericArray;
-	function new(args:CSSNumberish):Void;
+	function new(args:haxe.Rest<CSSNumberish>):Void;
 }

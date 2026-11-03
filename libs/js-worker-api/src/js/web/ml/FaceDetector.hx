@@ -25,7 +25,7 @@
 package js.web.ml;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("FaceDetector") extern class FaceDetector {
 	function new(?faceDetectorOptions:FaceDetectorOptions):Void;

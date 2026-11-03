@@ -25,8 +25,7 @@
 package js.web.auth;
 
 /**
-	Unhandled extended attribute SecureContext
-	Unhandled extended attribute Serializable
+	Only available in secure contexts (HTTPS).
 **/
 @:native("CryptoKey") extern class CryptoKey {
 	var type(default, null) : KeyType;

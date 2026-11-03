@@ -24,9 +24,6 @@
 
 package js.web.net;
 
-/**
-	Unhandled extended attribute Transferable
-**/
 @:native("WritableStream") extern class WritableStream {
 	var locked(default, null) : Bool;
 	function new(?underlyingSink:{ }, ?strategy:QueuingStrategy):Void;

@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("USBEndpoint") extern class USBEndpoint {
 	var endpointNumber(default, null) : Int;

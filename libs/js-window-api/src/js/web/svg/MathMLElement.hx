@@ -27,13 +27,10 @@ package js.web.svg;
 @:native("MathMLElement") extern class MathMLElement extends js.web.dom.Element {
 	/**
 		From interface mixin ElementCSSInlineStyle
-		Unhandled extended attribute SameObject
 	**/
 	var attributeStyleMap(default, null) : js.web.css.StylePropertyMap;
 	/**
 		From interface mixin ElementCSSInlineStyle
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
 	**/
 	var style(default, null) : js.web.css.CSSStyleProperties;
 	/**
@@ -254,12 +251,10 @@ package js.web.svg;
 	var onmousedown : js.web.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
-		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseenter : js.web.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
-		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseleave : js.web.html.EventHandler;
 	/**
@@ -408,7 +403,7 @@ package js.web.svg;
 	var onpointermove : js.web.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
-		Unhandled extended attribute SecureContext
+		Only available in secure contexts (HTTPS).
 	**/
 	var onpointerrawupdate : js.web.html.EventHandler;
 	/**
@@ -465,7 +460,6 @@ package js.web.svg;
 	var onbeforexrselect : js.web.html.EventHandler;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
-		Unhandled extended attribute SameObject
 	**/
 	var dataset(default, null) : js.web.html.DOMStringMap;
 	/**
@@ -474,12 +468,10 @@ package js.web.svg;
 	var nonce : String;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
-		Unhandled extended attribute Reflect
 	**/
 	var autofocus : Bool;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
-		Unhandled extended attribute ReflectSetter
 	**/
 	var tabIndex : Int;
 	/**

@@ -24,10 +24,7 @@
 
 package js.web.net;
 
-/**
-	Unhandled extended attribute Serializable
-**/
-@:native("FileList") extern class FileList {
+@:native("FileList") extern class FileList implements ArrayAccess<Null<File>> {
 	var length(default, null) : Int;
 	function item(index:Int):Null<File>;
 }

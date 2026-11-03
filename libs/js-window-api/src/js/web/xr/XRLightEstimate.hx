@@ -25,7 +25,7 @@
 package js.web.xr;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("XRLightEstimate") extern class XRLightEstimate {
 	var sphericalHarmonicsCoefficients(default, null) : js.lib.Float32Array;

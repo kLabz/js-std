@@ -25,9 +25,6 @@
 package js.web.media;
 
 @:native("BlobEvent") extern class BlobEvent extends js.web.dom.Event {
-	/**
-		Unhandled extended attribute SameObject
-	**/
 	var data(default, null) : js.web.net.Blob;
 	var timecode(default, null) : js.web.perf.DOMHighResTimeStamp;
 	function new(type:String, eventInitDict:BlobEventInit):Void;

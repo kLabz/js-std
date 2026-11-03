@@ -25,7 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
+	Only available in secure contexts (HTTPS).
 **/
 @:native("WakeLockSentinel") extern class WakeLockSentinel extends js.web.dom.EventTarget {
 	var released(default, null) : Bool;

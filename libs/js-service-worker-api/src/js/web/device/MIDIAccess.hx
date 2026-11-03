@@ -25,8 +25,7 @@
 package js.web.device;
 
 /**
-	Unhandled extended attribute SecureContext
-	Unhandled extended attribute Transferable
+	Only available in secure contexts (HTTPS).
 **/
 @:native("MIDIAccess") extern class MIDIAccess extends js.web.dom.EventTarget {
 	var inputs(default, null) : MIDIInputMap;

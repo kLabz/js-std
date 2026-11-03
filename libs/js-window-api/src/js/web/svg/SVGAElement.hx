@@ -25,33 +25,14 @@
 package js.web.svg;
 
 @:native("SVGAElement") extern class SVGAElement extends SVGGraphicsElement {
-	/**
-		Unhandled extended attribute Reflect
-		Unhandled extended attribute SameObject
-	**/
 	var target(default, null) : SVGAnimatedString;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var download : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var ping : String;
-	/**
-		Unhandled extended attribute Reflect
-	**/
 	var rel : String;
-	/**
-		Unhandled extended attribute Reflect
-		Unhandled extended attribute SameObject
-		Unhandled extended attribute PutForwards
-	**/
 	var relList(default, null) : js.web.dom.DOMTokenList;
 	var referrerPolicy : String;
 	/**
 		From interface mixin SVGURIReference
-		Unhandled extended attribute SameObject
 	**/
 	var href(default, null) : SVGAnimatedString;
 	/**
@@ -96,12 +77,10 @@ package js.web.svg;
 	var hash : String;
 	/**
 		From interface mixin HyperlinkElementUtils
-		Unhandled extended attribute Reflect
 	**/
 	var hreflang : String;
 	/**
 		From interface mixin HyperlinkElementUtils
-		Unhandled extended attribute Reflect
 	**/
 	var type : String;
 }

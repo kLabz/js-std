@@ -25,13 +25,7 @@
 package js.web.html;
 
 @:native("HTMLInstallElement") extern class HTMLInstallElement extends HTMLElement {
-	/**
-		Unhandled extended attribute ReflectURL
-	**/
 	var manifest : String;
-	/**
-		Unhandled extended attribute ReflectURL
-	**/
 	var manifestId : String;
 	var isValid(default, null) : Bool;
 	var invalidReason(default, null) : String;

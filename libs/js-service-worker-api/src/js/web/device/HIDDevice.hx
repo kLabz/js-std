@@ -66,7 +66,7 @@ package js.web.device;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HIDDevice/collections>
 	**/
-	var collections(default, null) : Array<HIDCollectionInfo>;
+	var collections(default, null) : haxe.ds.ReadOnlyArray<HIDCollectionInfo>;
 	/**
 		The **`close()`** method of the `HIDDevice` interface closes the connection to the HID device.
 		

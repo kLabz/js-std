@@ -334,7 +334,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLInputElement/webkitEntries>
 	**/
-	var webkitEntries(default, null) : Array<js.web.storage.FileSystemEntry>;
+	var webkitEntries(default, null) : haxe.ds.ReadOnlyArray<js.web.storage.FileSystemEntry>;
 	/**
 		The **`capture`** property of the `HTMLInputElement` interface reflects the `<input>` element's [`capture`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/capture) attribute. Only relevant to the [`<input>` of type `file`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/file), the property and attribute specify whether, a new file should be captured from a user-facing (`user`) or outward facing (`environment`) camera or microphone. The type of file is defined the [`accept`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/accept) attribute. If the attribute is not explicitly set, the `capture` property is an empty string.
 		

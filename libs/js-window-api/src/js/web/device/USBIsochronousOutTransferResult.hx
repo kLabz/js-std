@@ -36,6 +36,6 @@ package js.web.device;
 	@see <https://developer.mozilla.org/docs/Web/API/USBIsochronousOutTransferResult>
 **/
 @:native("USBIsochronousOutTransferResult") @:require(js_experimental_api, "USBIsochronousOutTransferResult is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class USBIsochronousOutTransferResult {
-	var packets(default, null) : Array<USBIsochronousOutTransferPacket>;
+	var packets(default, null) : haxe.ds.ReadOnlyArray<USBIsochronousOutTransferPacket>;
 	function new(packets:Array<USBIsochronousOutTransferPacket>):Void;
 }

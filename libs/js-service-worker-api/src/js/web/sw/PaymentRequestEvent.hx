@@ -57,7 +57,7 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/methodData>
 	**/
-	var methodData(default, null) : Array<js.web.auth.PaymentMethodData>;
+	var methodData(default, null) : haxe.ds.ReadOnlyArray<js.web.auth.PaymentMethodData>;
 	/**
 		The **`total`** read-only property of the `PaymentRequestEvent` interface returns a `PaymentCurrencyAmount` object containing the total amount being requested for payment.
 		
@@ -69,9 +69,9 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/modifiers>
 	**/
-	var modifiers(default, null) : Array<js.web.auth.PaymentDetailsModifier>;
+	var modifiers(default, null) : haxe.ds.ReadOnlyArray<js.web.auth.PaymentDetailsModifier>;
 	var paymentOptions(default, null) : Null<{ }>;
-	var shippingOptions(default, null) : Null<Array<js.web.auth.PaymentShippingOption>>;
+	var shippingOptions(default, null) : Null<haxe.ds.ReadOnlyArray<js.web.auth.PaymentShippingOption>>;
 	/**
 		The **`PaymentRequestEvent`** constructor creates a new `PaymentRequestEvent` object instance.
 		

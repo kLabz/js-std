@@ -28,7 +28,7 @@ package js.web.html;
 	Experimental: requires `-D js-experimental-api`.
 **/
 @:native("AutofillEvent") @:require(js_experimental_api, "AutofillEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AutofillEvent extends js.web.dom.Event {
-	var autofillValues(default, null) : Array<AutofillValueEntry>;
+	var autofillValues(default, null) : haxe.ds.ReadOnlyArray<AutofillValueEntry>;
 	var refill(default, null) : Null<RefillCallback>;
 	function new(type:String, ?eventInitDict:AutofillEventInit):Void;
 }

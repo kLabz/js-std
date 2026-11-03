@@ -39,7 +39,7 @@ package js.web.misc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/NavigatorUAData/brands>
 	**/
-	var brands(default, null) : Array<NavigatorUABrandVersion>;
+	var brands(default, null) : haxe.ds.ReadOnlyArray<NavigatorUABrandVersion>;
 	/**
 		The **`mobile`** read-only property of the `NavigatorUAData` interface returns a value indicating whether the device is a mobile device.
 		

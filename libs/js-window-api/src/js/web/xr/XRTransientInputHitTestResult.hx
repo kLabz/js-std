@@ -47,5 +47,5 @@ package js.web.xr;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestResult/results>
 	**/
-	var results(default, null) : Array<XRHitTestResult>;
+	var results(default, null) : haxe.ds.ReadOnlyArray<XRHitTestResult>;
 }

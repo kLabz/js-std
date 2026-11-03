@@ -37,13 +37,13 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableCookieChangeEvent/changed>
 	**/
-	var changed(default, null) : Array<CookieListItem>;
+	var changed(default, null) : haxe.ds.ReadOnlyArray<CookieListItem>;
 	/**
 		The **`deleted`** read-only property of the `ExtendableCookieChangeEvent` interface returns any cookies that have been deleted by the given `ExtendableCookieChangeEvent` instance.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableCookieChangeEvent/deleted>
 	**/
-	var deleted(default, null) : Array<CookieListItem>;
+	var deleted(default, null) : haxe.ds.ReadOnlyArray<CookieListItem>;
 	/**
 		The **`ExtendableCookieChangeEvent()`** constructor creates a new `ExtendableCookieChangeEvent` object which is the event type passed to `cookiechange` event fired at the `ServiceWorkerGlobalScope` when any cookie changes occur which match the service worker's cookie change subscription list. This constructor is called by the browser when a change event occurs.
 		

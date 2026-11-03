@@ -28,5 +28,5 @@ typedef URLPatternComponentResult = {
 	@:optional
 	var input : String;
 	@:optional
-	var groups : haxe.DynamicAccess<haxe.extern.EitherType<String, Void>>;
+	var groups : haxe.DynamicAccess<Null<String>>;
 };

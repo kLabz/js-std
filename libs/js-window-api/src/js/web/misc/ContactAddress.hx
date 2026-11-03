@@ -93,7 +93,7 @@ package js.web.misc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ContactAddress/addressLine>
 	**/
-	var addressLine(default, null) : Array<String>;
+	var addressLine(default, null) : haxe.ds.ReadOnlyArray<String>;
 	/**
 		The **`toJSON()`** method of the `ContactAddress` interface returns a JSON-serializable plain object representing the `ContactAddress` object.
 		

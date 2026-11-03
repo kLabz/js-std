@@ -43,13 +43,13 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Clients/get>
 	**/
-	function get(id:String):js.lib.Promise<haxe.extern.EitherType<Client, Void>>;
+	function get(id:String):js.lib.Promise<Null<Client>>;
 	/**
 		The **`matchAll()`** method of the `Clients` interface returns a `Promise` for a list of service worker `Client` objects. Include the `options` parameter to return all service worker clients whose origin is the same as the associated service worker's origin. If options are not included, the method returns only the service worker clients controlled by the service worker.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Clients/matchAll>
 	**/
-	function matchAll(?options:ClientQueryOptions):js.lib.Promise<Array<Client>>;
+	function matchAll(?options:ClientQueryOptions):js.lib.Promise<haxe.ds.ReadOnlyArray<Client>>;
 	/**
 		The **`openWindow()`** method of the `Clients` interface creates a new top-level browsing context and loads a given URL. If the calling script doesn't have permission to show popups, `openWindow()` will throw an `InvalidAccessError`.
 		

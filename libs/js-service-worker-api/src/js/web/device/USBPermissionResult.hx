@@ -28,5 +28,5 @@ package js.web.device;
 	Experimental: requires `-D js-experimental-api`.
 **/
 @:native("USBPermissionResult") @:require(js_experimental_api, "USBPermissionResult is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class USBPermissionResult extends js.web.misc.PermissionStatus {
-	var devices : Array<USBDevice>;
+	var devices : haxe.ds.ReadOnlyArray<USBDevice>;
 }

@@ -28,5 +28,5 @@ package js.web.xr;
 	Experimental: requires `-D js-experimental-api`.
 **/
 @:native("XRPermissionStatus") @:require(js_experimental_api, "XRPermissionStatus is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRPermissionStatus extends js.web.misc.PermissionStatus {
-	var granted : Array<String>;
+	var granted : haxe.ds.ReadOnlyArray<String>;
 }

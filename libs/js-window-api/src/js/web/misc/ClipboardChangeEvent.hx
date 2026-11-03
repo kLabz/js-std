@@ -39,7 +39,7 @@ package js.web.misc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ClipboardChangeEvent/types>
 	**/
-	var types(default, null) : Array<String>;
+	var types(default, null) : haxe.ds.ReadOnlyArray<String>;
 	/**
 		The **`changeId`** read-only property of the `ClipboardChangeEvent` interface returns an integer representing a unique identifier for this specific clipboard change operation.
 		

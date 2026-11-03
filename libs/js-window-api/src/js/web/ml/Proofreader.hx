@@ -32,7 +32,7 @@ package js.web.ml;
 @:native("Proofreader") @:require(js_experimental_api, "Proofreader is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Proofreader {
 	var includeCorrectionTypes(default, null) : Bool;
 	var includeCorrectionExplanations(default, null) : Bool;
-	var expectedInputLanguages(default, null) : Null<Array<String>>;
+	var expectedInputLanguages(default, null) : Null<haxe.ds.ReadOnlyArray<String>>;
 	var correctionExplanationLanguage(default, null) : Null<String>;
 	static function availability(?options:ProofreaderCreateCoreOptions):js.lib.Promise<Availability>;
 	static function create(?options:ProofreaderCreateOptions):js.lib.Promise<Proofreader>;

@@ -29,8 +29,8 @@ package js.web.css;
 **/
 @:native("CSSParserAtRule") @:require(js_experimental_api, "CSSParserAtRule is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSParserAtRule extends CSSParserRule {
 	var name(default, null) : String;
-	var prelude(default, null) : Array<CSSParserValue>;
-	var body(default, null) : Null<Array<CSSParserRule>>;
+	var prelude(default, null) : haxe.ds.ReadOnlyArray<CSSParserValue>;
+	var body(default, null) : Null<haxe.ds.ReadOnlyArray<CSSParserRule>>;
 	function new(name:String, prelude:Array<CSSToken>, ?body:Null<Array<CSSParserRule>>):Void;
 	function toString():String;
 }

@@ -37,7 +37,7 @@ package js.web.perf;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserver/supportedEntryTypes_static>
 	**/
-	static var supportedEntryTypes(default, null) : Array<String>;
+	static var supportedEntryTypes(default, null) : haxe.ds.ReadOnlyArray<String>;
 	/**
 		The **`PerformanceObserver()`** constructor creates a new `PerformanceObserver` object with the given observer `callback`. The observer callback is invoked when `performance entry events` are recorded for the `entry types` that have been registered, via the `observe()` method.
 		

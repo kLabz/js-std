@@ -36,6 +36,6 @@ package js.web.media;
 	@see <https://developer.mozilla.org/docs/Web/API/PresentationConnectionList>
 **/
 @:native("PresentationConnectionList") @:require(js_experimental_api, "PresentationConnectionList is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PresentationConnectionList extends js.web.dom.EventTarget {
-	var connections(default, null) : Array<PresentationConnection>;
+	var connections(default, null) : haxe.ds.ReadOnlyArray<PresentationConnection>;
 	var onconnectionavailable : js.web.html.EventHandler;
 }

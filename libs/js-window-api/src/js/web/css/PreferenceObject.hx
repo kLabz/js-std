@@ -54,7 +54,7 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject/validValues>
 	**/
-	var validValues(default, null) : Array<String>;
+	var validValues(default, null) : haxe.ds.ReadOnlyArray<String>;
 	var onchange : js.web.html.EventHandler;
 	/**
 		The **`clearOverride`** method of the `PreferenceObject` interface resets the `override` value.

@@ -57,7 +57,7 @@ package js.web.media;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap/get>
 	**/
-	function get(keyId:js.web.dom.BufferSource):haxe.extern.EitherType<MediaKeyStatus, Void>;
+	function get(keyId:js.web.dom.BufferSource):Null<MediaKeyStatus>;
 	/**
 		The **`has()`** method of the `MediaKeyStatusMap` interface returns a `Boolean`, asserting whether a value has been associated with the given key.
 		

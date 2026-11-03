@@ -54,13 +54,13 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/getRegistration>
 	**/
-	function getRegistration(?clientURL:String = ""):js.lib.Promise<haxe.extern.EitherType<ServiceWorkerRegistration, Void>>;
+	function getRegistration(?clientURL:String = ""):js.lib.Promise<Null<ServiceWorkerRegistration>>;
 	/**
 		The **`getRegistrations()`** method of the `ServiceWorkerContainer` interface gets all `ServiceWorkerRegistration`s associated with a `ServiceWorkerContainer`, in an array. The method returns a `Promise` that resolves to an array of `ServiceWorkerRegistration`.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/getRegistrations>
 	**/
-	function getRegistrations():js.lib.Promise<Array<ServiceWorkerRegistration>>;
+	function getRegistrations():js.lib.Promise<haxe.ds.ReadOnlyArray<ServiceWorkerRegistration>>;
 	/**
 		The **`register()`** method of the `ServiceWorkerContainer` interface creates or updates a `ServiceWorkerRegistration` for the given scope.
 		

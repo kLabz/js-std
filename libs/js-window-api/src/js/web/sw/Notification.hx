@@ -141,7 +141,7 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Notification/actions>
 	**/
-	var actions(default, null) : Array<NotificationAction>;
+	var actions(default, null) : haxe.ds.ReadOnlyArray<NotificationAction>;
 	/**
 		The **`Notification()`** constructor creates a new `Notification` object instance, which represents a user notification.
 		

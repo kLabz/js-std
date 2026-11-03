@@ -28,7 +28,7 @@ typedef GPUDeviceDescriptor = GPUObjectDescriptorBase & {
 	@:optional
 	var requiredFeatures : Array<GPUFeatureName>;
 	@:optional
-	var requiredLimits : haxe.DynamicAccess<haxe.extern.EitherType<GPUSize64, Void>>;
+	var requiredLimits : haxe.DynamicAccess<Null<GPUSize64>>;
 	@:optional
 	var defaultQueue : GPUQueueDescriptor;
 };

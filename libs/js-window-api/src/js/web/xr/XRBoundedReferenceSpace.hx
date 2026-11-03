@@ -41,5 +41,5 @@ package js.web.xr;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRBoundedReferenceSpace/boundsGeometry>
 	**/
-	var boundsGeometry(default, null) : Array<js.web.dom.DOMPointReadOnly>;
+	var boundsGeometry(default, null) : haxe.ds.ReadOnlyArray<js.web.dom.DOMPointReadOnly>;
 }

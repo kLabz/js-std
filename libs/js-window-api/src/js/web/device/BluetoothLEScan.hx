@@ -30,7 +30,7 @@ package js.web.device;
 	Experimental: requires `-D js-experimental-api`.
 **/
 @:native("BluetoothLEScan") @:require(js_experimental_api, "BluetoothLEScan is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothLEScan {
-	var filters(default, null) : Array<BluetoothLEScanFilter>;
+	var filters(default, null) : haxe.ds.ReadOnlyArray<BluetoothLEScanFilter>;
 	var keepRepeatedDevices(default, null) : Bool;
 	var acceptAllAdvertisements(default, null) : Bool;
 	var active(default, null) : Bool;

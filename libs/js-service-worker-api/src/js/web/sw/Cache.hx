@@ -57,19 +57,19 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Cache/keys>
 	**/
-	function keys(?request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Array<js.web.net.Request>>;
+	function keys(?request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<haxe.ds.ReadOnlyArray<js.web.net.Request>>;
 	/**
 		The **`match()`** method of the `Cache` interface returns a `Promise` that resolves to the `Response` associated with the first matching request in the `Cache` object. If no match is found, the `Promise` resolves to `undefined`.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Cache/match>
 	**/
-	function match(request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<haxe.extern.EitherType<js.web.net.Response, Void>>;
+	function match(request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Null<js.web.net.Response>>;
 	/**
 		The **`matchAll()`** method of the `Cache` interface returns a `Promise` that resolves to an array of all matching responses in the `Cache` object.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Cache/matchAll>
 	**/
-	function matchAll(?request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<Array<js.web.net.Response>>;
+	function matchAll(?request:js.web.net.RequestInfo, ?options:CacheQueryOptions):js.lib.Promise<haxe.ds.ReadOnlyArray<js.web.net.Response>>;
 	/**
 		The **`put()`** method of the `Cache` interface allows key/value pairs to be added to the current `Cache` object.
 		

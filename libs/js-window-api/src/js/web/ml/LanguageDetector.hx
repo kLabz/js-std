@@ -41,7 +41,7 @@ package js.web.ml;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/LanguageDetector/expectedInputLanguages>
 	**/
-	var expectedInputLanguages(default, null) : Null<Array<String>>;
+	var expectedInputLanguages(default, null) : Null<haxe.ds.ReadOnlyArray<String>>;
 	/**
 		The **`inputQuota`** read-only property of the `LanguageDetector` interface returns the input quota available to the browser for detecting languages.
 		

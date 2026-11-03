@@ -31,5 +31,5 @@ package js.web.ml;
 **/
 @:native("MLOperand") @:require(js_experimental_api, "MLOperand is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class MLOperand {
 	var dataType(default, null) : MLOperandDataType;
-	var shape(default, null) : Array<Int>;
+	var shape(default, null) : haxe.ds.ReadOnlyArray<Int>;
 }

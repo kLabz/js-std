@@ -41,7 +41,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ScreenDetails/screens>
 	**/
-	var screens(default, null) : Array<ScreenDetailed>;
+	var screens(default, null) : haxe.ds.ReadOnlyArray<ScreenDetailed>;
 	/**
 		The **`currentScreen`** read-only property of the `ScreenDetails` interface contains a single `ScreenDetailed` object representing detailed information about the screen that the current browser window is displayed in.
 		

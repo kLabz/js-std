@@ -49,7 +49,7 @@ package js.web.webrtc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCTrackEvent/streams>
 	**/
-	var streams(default, null) : Array<js.web.media.MediaStream>;
+	var streams(default, null) : haxe.ds.ReadOnlyArray<js.web.media.MediaStream>;
 	/**
 		The WebRTC API interface `RTCTrackEvent`'s read-only **`transceiver`** property indicates the `RTCRtpTransceiver` affiliated with the event's `track`.
 		

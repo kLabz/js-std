@@ -83,7 +83,7 @@ package js.web.webgpu;
 	**/
 	var usage(default, null) : GPUFlagsConstant;
 	@:require(js_experimental_api, "GPUTexture.textureBindingViewDimension is experimental (shipped in fewer than two engines); use -D js-experimental-api")
-	var textureBindingViewDimension(default, null) : haxe.extern.EitherType<GPUTextureViewDimension, Void>;
+	var textureBindingViewDimension(default, null) : Null<GPUTextureViewDimension>;
 	/**
 		The **`label`** property of the `GPUTexture` interface provides a label that can be used to identify the object, for example in `GPUError` messages or console warnings.
 		

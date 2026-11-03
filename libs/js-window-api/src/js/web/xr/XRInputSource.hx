@@ -65,7 +65,7 @@ package js.web.xr;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRInputSource/profiles>
 	**/
-	var profiles(default, null) : Array<String>;
+	var profiles(default, null) : haxe.ds.ReadOnlyArray<String>;
 	var skipRendering(default, null) : Bool;
 	/**
 		The read-only `XRInputSource` property **`gamepad`** returns a `Gamepad` object describing the state of the buttons and axes on the XR input source, if it is a gamepad or comparable device. If the device isn't a gamepad-like device, this property's value is `null`.

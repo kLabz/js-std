@@ -53,7 +53,7 @@ package js.web.device;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/USBConfiguration/interfaces>
 	**/
-	var interfaces(default, null) : Array<USBInterface>;
+	var interfaces(default, null) : haxe.ds.ReadOnlyArray<USBInterface>;
 	/**
 		The **`USBConfiguration()`** constructor creates a new `USBConfiguration` object which contains information about the configuration on the provided USBDevice with the given configuration value.
 		

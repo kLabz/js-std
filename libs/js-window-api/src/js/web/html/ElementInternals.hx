@@ -177,7 +177,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ElementInternals/ariaControlsElements>
 	**/
-	var ariaControlsElements : Null<Array<js.web.dom.Element>>;
+	var ariaControlsElements : Null<haxe.ds.ReadOnlyArray<js.web.dom.Element>>;
 	/**
 		The **`ariaCurrent`** property of the `ElementInternals` interface reflects the value of the [`aria-current`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-current) attribute, which indicates the element that represents the current item within a container or set of related elements.
 		
@@ -193,7 +193,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ElementInternals/ariaDescribedByElements>
 	**/
-	var ariaDescribedByElements : Null<Array<js.web.dom.Element>>;
+	var ariaDescribedByElements : Null<haxe.ds.ReadOnlyArray<js.web.dom.Element>>;
 	/**
 		The **`ariaDescription`** property of the `ElementInternals` interface reflects the value of the [`aria-description`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-description) attribute, which defines a string value that describes or annotates the current element.
 		
@@ -209,7 +209,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ElementInternals/ariaDetailsElements>
 	**/
-	var ariaDetailsElements : Null<Array<js.web.dom.Element>>;
+	var ariaDetailsElements : Null<haxe.ds.ReadOnlyArray<js.web.dom.Element>>;
 	/**
 		The **`ariaDisabled`** property of the `ElementInternals` interface reflects the value of the [`aria-disabled`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-disabled) attribute, which indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
 		
@@ -225,7 +225,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ElementInternals/ariaErrorMessageElements>
 	**/
-	var ariaErrorMessageElements : Null<Array<js.web.dom.Element>>;
+	var ariaErrorMessageElements : Null<haxe.ds.ReadOnlyArray<js.web.dom.Element>>;
 	/**
 		The **`ariaExpanded`** property of the `ElementInternals` interface reflects the value of the [`aria-expanded`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-expanded) attribute, which indicates whether a grouping element owned or controlled by this element is expanded or collapsed.
 		
@@ -241,7 +241,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ElementInternals/ariaFlowToElements>
 	**/
-	var ariaFlowToElements : Null<Array<js.web.dom.Element>>;
+	var ariaFlowToElements : Null<haxe.ds.ReadOnlyArray<js.web.dom.Element>>;
 	/**
 		The **`ariaHasPopup`** property of the `ElementInternals` interface reflects the value of the [`aria-haspopup`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-haspopup) attribute, which indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element.
 		
@@ -289,7 +289,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ElementInternals/ariaLabelledByElements>
 	**/
-	var ariaLabelledByElements : Null<Array<js.web.dom.Element>>;
+	var ariaLabelledByElements : Null<haxe.ds.ReadOnlyArray<js.web.dom.Element>>;
 	/**
 		The **`ariaLevel`** property of the `ElementInternals` interface reflects the value of the [`aria-level`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-level) attribute, which defines the hierarchical level of an element within a structure.
 		
@@ -345,7 +345,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ElementInternals/ariaOwnsElements>
 	**/
-	var ariaOwnsElements : Null<Array<js.web.dom.Element>>;
+	var ariaOwnsElements : Null<haxe.ds.ReadOnlyArray<js.web.dom.Element>>;
 	/**
 		The **`ariaPlaceholder`** property of the `ElementInternals` interface reflects the value of the [`aria-placeholder`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-placeholder) attribute, which defines a short hint intended to aid the user with data entry when the control has no value.
 		

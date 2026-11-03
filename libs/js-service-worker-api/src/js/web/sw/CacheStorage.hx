@@ -57,7 +57,7 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CacheStorage/match>
 	**/
-	function match(request:js.web.net.RequestInfo, ?options:MultiCacheQueryOptions):js.lib.Promise<haxe.extern.EitherType<js.web.net.Response, Void>>;
+	function match(request:js.web.net.RequestInfo, ?options:MultiCacheQueryOptions):js.lib.Promise<Null<js.web.net.Response>>;
 	/**
 		The **`open()`** method of the `CacheStorage` interface returns a `Promise` that resolves to the `Cache` object matching the `cacheName`.
 		

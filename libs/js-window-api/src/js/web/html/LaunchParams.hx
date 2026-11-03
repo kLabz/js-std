@@ -45,5 +45,5 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/LaunchParams/files>
 	**/
-	var files(default, null) : Array<js.web.storage.FileSystemHandle>;
+	var files(default, null) : haxe.ds.ReadOnlyArray<js.web.storage.FileSystemHandle>;
 }

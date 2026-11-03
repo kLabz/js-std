@@ -65,7 +65,7 @@ package js.web.perf;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceLongAnimationFrameTiming/scripts>
 	**/
-	var scripts(default, null) : Array<PerformanceScriptTiming>;
+	var scripts(default, null) : haxe.ds.ReadOnlyArray<PerformanceScriptTiming>;
 	/**
 		The **`paintTime`** read-only property of the `PerformanceLongAnimationFrameTiming` interface returns the `timestamp` when the rendering phase ended and the animation frame started.
 		

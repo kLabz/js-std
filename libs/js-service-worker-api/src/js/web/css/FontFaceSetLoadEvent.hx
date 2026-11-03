@@ -37,7 +37,7 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSetLoadEvent/fontfaces>
 	**/
-	var fontfaces(default, null) : Array<FontFace>;
+	var fontfaces(default, null) : haxe.ds.ReadOnlyArray<FontFace>;
 	/**
 		The **`FontFaceSetLoadEvent()`** constructor creates a new `FontFaceSetLoadEvent` object which is fired whenever a `FontFaceSet` loads.
 		

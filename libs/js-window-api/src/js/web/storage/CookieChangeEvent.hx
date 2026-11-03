@@ -39,13 +39,13 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieChangeEvent/changed>
 	**/
-	var changed(default, null) : Array<CookieListItem>;
+	var changed(default, null) : haxe.ds.ReadOnlyArray<CookieListItem>;
 	/**
 		The **`deleted`** read-only property of the `CookieChangeEvent` interface returns an array of the cookies that have been deleted by the given `CookieChangeEvent` instance.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieChangeEvent/deleted>
 	**/
-	var deleted(default, null) : Array<CookieListItem>;
+	var deleted(default, null) : haxe.ds.ReadOnlyArray<CookieListItem>;
 	/**
 		The **`CookieChangeEvent()`** constructor creates a new `CookieChangeEvent` object which is the event type of the `change` event fired at a `CookieStore` when any cookie changes occur. This constructor is called by the browser when a change event occurs.
 		

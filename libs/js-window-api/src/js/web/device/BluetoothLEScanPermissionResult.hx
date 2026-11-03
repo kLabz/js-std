@@ -30,5 +30,5 @@ package js.web.device;
 	Experimental: requires `-D js-experimental-api`.
 **/
 @:native("BluetoothLEScanPermissionResult") @:require(js_experimental_api, "BluetoothLEScanPermissionResult is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothLEScanPermissionResult extends js.web.misc.PermissionStatus {
-	var scans : Array<BluetoothLEScan>;
+	var scans : haxe.ds.ReadOnlyArray<BluetoothLEScan>;
 }

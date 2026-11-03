@@ -37,7 +37,7 @@ package js.web.wasm;
 		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Exception/stack>
 	**/
-	var stack(default, null) : haxe.extern.EitherType<String, Void>;
+	var stack(default, null) : Null<String>;
 	function new(exceptionTag:Tag, payload:Array<Any>, ?options:ExceptionOptions):Void;
 	/**
 		The **`getArg()`** method of the [`Exception`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Exception) object can be used to get the value of a specified item in the exception's data arguments.

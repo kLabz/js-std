@@ -31,5 +31,5 @@ package js.web.svg;
 **/
 @:native("SVGPathSegment") @:require(js_experimental_api, "SVGPathSegment is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class SVGPathSegment {
 	var type : String;
-	var values : Array<Float>;
+	var values : haxe.ds.ReadOnlyArray<Float>;
 }

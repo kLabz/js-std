@@ -39,7 +39,7 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PushManager/supportedContentEncodings_static>
 	**/
-	static var supportedContentEncodings(default, null) : Array<String>;
+	static var supportedContentEncodings(default, null) : haxe.ds.ReadOnlyArray<String>;
 	/**
 		The **`PushManager.getSubscription()`** method of the `PushManager` interface retrieves an existing push subscription.
 		

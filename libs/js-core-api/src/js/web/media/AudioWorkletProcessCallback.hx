@@ -24,4 +24,4 @@
 
 package js.web.media;
 
-typedef AudioWorkletProcessCallback = (inputs:Array<Array<js.lib.Float32Array>>, outputs:Array<Array<js.lib.Float32Array>>, parameters:{ }) -> Bool;
+typedef AudioWorkletProcessCallback = (inputs:haxe.ds.ReadOnlyArray<haxe.ds.ReadOnlyArray<js.lib.Float32Array>>, outputs:haxe.ds.ReadOnlyArray<haxe.ds.ReadOnlyArray<js.lib.Float32Array>>, parameters:{ }) -> Bool;

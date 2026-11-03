@@ -49,7 +49,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/get>
 	**/
-	function get(name:String):haxe.extern.EitherType<CustomElementConstructor, Void>;
+	function get(name:String):Null<CustomElementConstructor>;
 	/**
 		The **`getName()`** method of the `CustomElementRegistry` interface returns the name for a previously-defined custom element.
 		

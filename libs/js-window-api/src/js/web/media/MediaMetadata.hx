@@ -55,14 +55,14 @@ package js.web.media;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaMetadata/artwork>
 	**/
-	var artwork : Array<{ }>;
+	var artwork : haxe.ds.ReadOnlyArray<{ }>;
 	/**
 		The **`chapterInfo`** read-only property of the `MediaMetadata` interface returns an array of chapter information metadata associated with playing media, represented by `ChapterInformation` object instances.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaMetadata/chapterInfo>
 	**/
 	@:require(js_experimental_api, "MediaMetadata.chapterInfo is experimental (shipped in fewer than two engines); use -D js-experimental-api")
-	var chapterInfo(default, null) : Array<ChapterInformation>;
+	var chapterInfo(default, null) : haxe.ds.ReadOnlyArray<ChapterInformation>;
 	/**
 		The **`MediaMetadata()`** constructor creates a new `MediaMetadata` object.
 		

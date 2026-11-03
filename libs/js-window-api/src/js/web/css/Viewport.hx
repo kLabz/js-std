@@ -39,5 +39,5 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Viewport/segments>
 	**/
-	var segments(default, null) : Null<Array<js.web.dom.DOMRect>>;
+	var segments(default, null) : Null<haxe.ds.ReadOnlyArray<js.web.dom.DOMRect>>;
 }

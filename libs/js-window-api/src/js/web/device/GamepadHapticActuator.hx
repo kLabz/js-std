@@ -38,7 +38,7 @@ package js.web.device;
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadHapticActuator/effects>
 	**/
 	@:require(js_experimental_api, "GamepadHapticActuator.effects is experimental (shipped in fewer than two engines); use -D js-experimental-api")
-	var effects(default, null) : Array<GamepadHapticEffectType>;
+	var effects(default, null) : haxe.ds.ReadOnlyArray<GamepadHapticEffectType>;
 	/**
 		The **`playEffect()`** method of the `GamepadHapticActuator` interface causes the hardware to play a specific vibration effect.
 		

@@ -49,5 +49,5 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSContainerRule/conditions>
 	**/
-	var conditions(default, null) : Array<CSSContainerCondition>;
+	var conditions(default, null) : haxe.ds.ReadOnlyArray<CSSContainerCondition>;
 }

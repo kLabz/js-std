@@ -50,7 +50,7 @@ package js.web.sw;
 		@see <https://developer.mozilla.org/docs/Web/API/WindowClient/ancestorOrigins>
 	**/
 	@:require(js_experimental_api, "WindowClient.ancestorOrigins is experimental (shipped in fewer than two engines); use -D js-experimental-api")
-	var ancestorOrigins(default, null) : Array<String>;
+	var ancestorOrigins(default, null) : haxe.ds.ReadOnlyArray<String>;
 	/**
 		The **`focus()`** method of the `WindowClient` interface gives user input focus to the current client and returns a `Promise` that resolves to the existing `WindowClient`.
 		

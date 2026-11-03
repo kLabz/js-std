@@ -131,7 +131,7 @@ package js.web.device;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/USBDevice/configurations>
 	**/
-	var configurations(default, null) : Array<USBConfiguration>;
+	var configurations(default, null) : haxe.ds.ReadOnlyArray<USBConfiguration>;
 	/**
 		The **`opened`** read-only property of the `USBDevice` interface indicates whether a session has been started with a paired USB device. A device must be opened before it can be controlled by a web page.
 		

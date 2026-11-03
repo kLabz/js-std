@@ -55,7 +55,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/thresholds>
 	**/
-	var thresholds(default, null) : Array<Float>;
+	var thresholds(default, null) : haxe.ds.ReadOnlyArray<Float>;
 	/**
 		The **`delay`** read-only property of the `IntersectionObserver` interface indicates the minimum delay between notifications from this observer.
 		

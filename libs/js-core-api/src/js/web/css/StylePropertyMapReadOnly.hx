@@ -55,7 +55,7 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMapReadOnly/get>
 	**/
-	function get(property:String):haxe.extern.EitherType<Void, CSSStyleValue>;
+	function get(property:String):Null<CSSStyleValue>;
 	/**
 		The **`getAll()`** method of the `StylePropertyMapReadOnly` interface returns an array of `CSSStyleValue` objects containing the values for the provided property.
 		

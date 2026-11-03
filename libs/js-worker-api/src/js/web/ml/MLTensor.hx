@@ -31,7 +31,7 @@ package js.web.ml;
 **/
 @:native("MLTensor") @:require(js_experimental_api, "MLTensor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class MLTensor {
 	var dataType(default, null) : MLOperandDataType;
-	var shape(default, null) : Array<Int>;
+	var shape(default, null) : haxe.ds.ReadOnlyArray<Int>;
 	var readable(default, null) : Bool;
 	var writable(default, null) : Bool;
 	var constant(default, null) : Bool;

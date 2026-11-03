@@ -51,5 +51,5 @@ package js.web.media;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ChapterInformation/artwork>
 	**/
-	var artwork(default, null) : Array<MediaImage>;
+	var artwork(default, null) : haxe.ds.ReadOnlyArray<MediaImage>;
 }

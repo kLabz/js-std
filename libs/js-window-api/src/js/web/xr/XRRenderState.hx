@@ -68,5 +68,5 @@ package js.web.xr;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRRenderState/layers>
 	**/
-	var layers(default, null) : Array<XRLayer>;
+	var layers(default, null) : haxe.ds.ReadOnlyArray<XRLayer>;
 }

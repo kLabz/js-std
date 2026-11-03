@@ -31,7 +31,7 @@ package js.web.device;
 **/
 @:native("BluetoothAdvertisingEvent") @:require(js_experimental_api, "BluetoothAdvertisingEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothAdvertisingEvent extends js.web.dom.Event {
 	var device(default, null) : BluetoothDevice;
-	var uuids(default, null) : Array<UUID>;
+	var uuids(default, null) : haxe.ds.ReadOnlyArray<UUID>;
 	var name(default, null) : Null<String>;
 	var appearance(default, null) : Null<Int>;
 	var txPower(default, null) : Null<Int>;

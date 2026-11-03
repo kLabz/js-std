@@ -41,7 +41,7 @@ package js.web.device;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/OrientationSensor/quaternion>
 	**/
-	var quaternion(default, null) : Null<Array<Float>>;
+	var quaternion(default, null) : Null<haxe.ds.ReadOnlyArray<Float>>;
 	/**
 		The **`populateMatrix()`** method of the `OrientationSensor` interface populates the given target matrix with the rotation matrix based on the latest sensor reading. The rotation matrix is shown below.
 		

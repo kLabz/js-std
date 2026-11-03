@@ -63,13 +63,13 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/reasons>
 	**/
-	var reasons(default, null) : Null<Array<NotRestoredReasonDetails>>;
+	var reasons(default, null) : Null<haxe.ds.ReadOnlyArray<NotRestoredReasonDetails>>;
 	/**
 		The **`children`** read-only property of the `NotRestoredReasons` interface returns an array of `NotRestoredReasons` objects, one for each child `<iframe>` embedded in the current document, which may contain reasons why the top-level frame was blocked relating to the child frames.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/children>
 	**/
-	var children(default, null) : Null<Array<NotRestoredReasons>>;
+	var children(default, null) : Null<haxe.ds.ReadOnlyArray<NotRestoredReasons>>;
 	/**
 		The **`toJSON()`** method of the `NotRestoredReasons` interface returns a JSON-serializable plain object representing the `NotRestoredReasons` object.
 		

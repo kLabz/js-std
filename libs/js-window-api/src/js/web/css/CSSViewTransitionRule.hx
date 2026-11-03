@@ -43,5 +43,5 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSViewTransitionRule/types>
 	**/
-	var types(default, null) : Array<String>;
+	var types(default, null) : haxe.ds.ReadOnlyArray<String>;
 }

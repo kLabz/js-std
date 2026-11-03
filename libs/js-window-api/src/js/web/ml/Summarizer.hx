@@ -66,13 +66,13 @@ package js.web.ml;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/expectedInputLanguages>
 	**/
-	var expectedInputLanguages(default, null) : Null<Array<String>>;
+	var expectedInputLanguages(default, null) : Null<haxe.ds.ReadOnlyArray<String>>;
 	/**
 		The **`expectedContextLanguages`** read-only property of the `Summarizer` interface returns the languages the context strings should be written in.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/expectedContextLanguages>
 	**/
-	var expectedContextLanguages(default, null) : Null<Array<String>>;
+	var expectedContextLanguages(default, null) : Null<haxe.ds.ReadOnlyArray<String>>;
 	/**
 		The **`outputLanguage`** read-only property of the `Summarizer` interface returns the language the summary should be generated in.
 		

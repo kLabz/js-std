@@ -47,13 +47,13 @@ package js.web.xr;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourcesChangeEvent/added>
 	**/
-	var added(default, null) : Array<XRInputSource>;
+	var added(default, null) : haxe.ds.ReadOnlyArray<XRInputSource>;
 	/**
 		The read-only `XRInputSourcesChangeEvent` property `removed` is an array of zero or more `XRInputSource` objects representing the input sources that have been removed from the `XRSession`.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourcesChangeEvent/removed>
 	**/
-	var removed(default, null) : Array<XRInputSource>;
+	var removed(default, null) : haxe.ds.ReadOnlyArray<XRInputSource>;
 	/**
 		The **`XRInputSourcesChangeEvent()`** constructor creates and returns a new `XRInputSourcesChangeEvent` object, representing an update to the list of available [WebXR](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) input devices. You won't typically call this constructor yourself, as these events are created and sent to you by the WebXR system.
 		

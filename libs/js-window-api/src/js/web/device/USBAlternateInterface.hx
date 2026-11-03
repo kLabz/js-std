@@ -41,6 +41,6 @@ package js.web.device;
 	var interfaceSubclass(default, null) : Int;
 	var interfaceProtocol(default, null) : Int;
 	var interfaceName(default, null) : Null<String>;
-	var endpoints(default, null) : Array<USBEndpoint>;
+	var endpoints(default, null) : haxe.ds.ReadOnlyArray<USBEndpoint>;
 	function new(deviceInterface:USBInterface, alternateSetting:Int):Void;
 }

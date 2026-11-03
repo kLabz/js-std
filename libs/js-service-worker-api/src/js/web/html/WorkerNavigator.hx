@@ -109,7 +109,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/languages>
 	**/
-	var languages(default, null) : Array<String>;
+	var languages(default, null) : haxe.ds.ReadOnlyArray<String>;
 	/**
 		Returns the online status of the browser. The property returns a boolean value, with `true` meaning online and `false` meaning offline. The property sends updates whenever the browser's ability to connect to the network changes. The update occurs when the user follows links or when a script requests a remote page.
 		

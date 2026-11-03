@@ -41,7 +41,7 @@ package js.web.device;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/NDEFMessage/records>
 	**/
-	var records(default, null) : Array<NDEFRecord>;
+	var records(default, null) : haxe.ds.ReadOnlyArray<NDEFRecord>;
 	/**
 		The **`NDEFMessage()`** constructor creates a new `NDEFMessage` object, initialized with the given NDEF records.
 		

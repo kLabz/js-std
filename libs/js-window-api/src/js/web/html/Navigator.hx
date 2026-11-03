@@ -142,7 +142,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/languages>
 	**/
-	var languages(default, null) : Array<String>;
+	var languages(default, null) : haxe.ds.ReadOnlyArray<String>;
 	/**
 		The **`onLine`** property of the `Navigator` interface returns whether the device is connected to the network, with `true` meaning online and `false` meaning offline. The property's value changes after the browser checks its network connection, usually when the user follows links or when a script requests a remote page. For example, the property should return `false` when users click links soon after they lose internet connection. When its value changes, an [`online`](https://developer.mozilla.org/en-US/docs/Web/API/Window/online_event) or [`offline`](https://developer.mozilla.org/en-US/docs/Web/API/Window/offline_event) event is fired on the `window`.
 		

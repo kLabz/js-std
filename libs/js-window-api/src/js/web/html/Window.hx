@@ -925,7 +925,7 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/Window/event>
 	**/
 	@:deprecated
-	var event(default, null) : haxe.extern.EitherType<js.web.dom.Event, Void>;
+	var event(default, null) : Null<js.web.dom.Event>;
 	/**
 		The `fence` read-only property of the `Window` interface returns a `Fence` object instance for the current document context.
 		

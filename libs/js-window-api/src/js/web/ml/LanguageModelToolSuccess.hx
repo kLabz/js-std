@@ -32,6 +32,6 @@ package js.web.ml;
 @:native("LanguageModelToolSuccess") @:require(js_experimental_api, "LanguageModelToolSuccess is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LanguageModelToolSuccess {
 	var callId(default, null) : String;
 	var name(default, null) : String;
-	var result(default, null) : Array<LanguageModelToolResultContent>;
+	var result(default, null) : haxe.ds.ReadOnlyArray<LanguageModelToolResultContent>;
 	function new(init:LanguageModelToolSuccessInit):Void;
 }

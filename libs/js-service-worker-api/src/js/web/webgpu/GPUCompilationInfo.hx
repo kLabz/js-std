@@ -39,5 +39,5 @@ package js.web.webgpu;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUCompilationInfo/messages>
 	**/
-	var messages(default, null) : Array<GPUCompilationMessage>;
+	var messages(default, null) : haxe.ds.ReadOnlyArray<GPUCompilationMessage>;
 }

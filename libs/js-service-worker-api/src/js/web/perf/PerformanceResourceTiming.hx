@@ -191,7 +191,7 @@ package js.web.perf;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/serverTiming>
 	**/
-	var serverTiming(default, null) : Array<PerformanceServerTiming>;
+	var serverTiming(default, null) : haxe.ds.ReadOnlyArray<PerformanceServerTiming>;
 	/**
 		The **`toJSON()`** method of the `PerformanceResourceTiming` interface returns a JSON-serializable plain object representing the `PerformanceResourceTiming` object.
 		

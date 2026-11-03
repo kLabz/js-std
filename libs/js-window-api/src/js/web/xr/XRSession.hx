@@ -62,7 +62,7 @@ package js.web.xr;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/enabledFeatures>
 	**/
-	var enabledFeatures(default, null) : Array<String>;
+	var enabledFeatures(default, null) : haxe.ds.ReadOnlyArray<String>;
 	var isSystemKeyboardSupported(default, null) : Bool;
 	var onend : js.web.html.EventHandler;
 	var oninputsourceschange : js.web.html.EventHandler;
@@ -77,7 +77,7 @@ package js.web.xr;
 	/**
 		From partial interface in anchors.idl
 	**/
-	var persistentAnchors(default, null) : Array<String>;
+	var persistentAnchors(default, null) : haxe.ds.ReadOnlyArray<String>;
 	/**
 		The `XRSession` interface's _read-only_ **`environmentBlendMode`** property identifies if, and to what degree, the computer-generated imagery is overlaid atop the real world.
 		

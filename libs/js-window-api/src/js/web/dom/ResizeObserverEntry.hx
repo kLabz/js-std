@@ -49,17 +49,17 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/borderBoxSize>
 	**/
-	var borderBoxSize(default, null) : Array<ResizeObserverSize>;
+	var borderBoxSize(default, null) : haxe.ds.ReadOnlyArray<ResizeObserverSize>;
 	/**
 		The **`contentBoxSize`** read-only property of the `ResizeObserverEntry` interface returns an array containing the new content box size of the observed element when the callback is run.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/contentBoxSize>
 	**/
-	var contentBoxSize(default, null) : Array<ResizeObserverSize>;
+	var contentBoxSize(default, null) : haxe.ds.ReadOnlyArray<ResizeObserverSize>;
 	/**
 		The **`devicePixelContentBoxSize`** read-only property of the `ResizeObserverEntry` interface returns an array containing the size in device pixels of the observed element when the callback is run.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/devicePixelContentBoxSize>
 	**/
-	var devicePixelContentBoxSize(default, null) : Array<ResizeObserverSize>;
+	var devicePixelContentBoxSize(default, null) : haxe.ds.ReadOnlyArray<ResizeObserverSize>;
 }

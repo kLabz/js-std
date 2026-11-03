@@ -57,7 +57,7 @@ package js.web.perf;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/LayoutShift/sources>
 	**/
-	var sources(default, null) : Array<LayoutShiftAttribution>;
+	var sources(default, null) : haxe.ds.ReadOnlyArray<LayoutShiftAttribution>;
 	/**
 		The **`toJSON()`** method of the `LayoutShift` interface returns a JSON-serializable plain object representing the `LayoutShift` object.
 		

@@ -261,7 +261,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/ariaControlsElements>
 	**/
-	var ariaControlsElements : Null<Array<Element>>;
+	var ariaControlsElements : Null<haxe.ds.ReadOnlyArray<Element>>;
 	/**
 		The **`ariaCurrent`** property of the `Element` interface reflects the value of the [`aria-current`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-current) attribute, which indicates the element that represents the current item within a container or set of related elements.
 		
@@ -277,7 +277,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/ariaDescribedByElements>
 	**/
-	var ariaDescribedByElements : Null<Array<Element>>;
+	var ariaDescribedByElements : Null<haxe.ds.ReadOnlyArray<Element>>;
 	/**
 		The **`ariaDescription`** property of the `Element` interface reflects the value of the [`aria-description`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-description) attribute, which defines a string value that describes or annotates the current element.
 		
@@ -293,7 +293,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/ariaDetailsElements>
 	**/
-	var ariaDetailsElements : Null<Array<Element>>;
+	var ariaDetailsElements : Null<haxe.ds.ReadOnlyArray<Element>>;
 	/**
 		The **`ariaDisabled`** property of the `Element` interface reflects the value of the [`aria-disabled`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-disabled) attribute, which indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
 		
@@ -309,7 +309,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/ariaErrorMessageElements>
 	**/
-	var ariaErrorMessageElements : Null<Array<Element>>;
+	var ariaErrorMessageElements : Null<haxe.ds.ReadOnlyArray<Element>>;
 	/**
 		The **`ariaExpanded`** property of the `Element` interface reflects the value of the [`aria-expanded`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-expanded) attribute, which indicates whether a grouping element owned or controlled by this element is expanded or collapsed.
 		
@@ -325,7 +325,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/ariaFlowToElements>
 	**/
-	var ariaFlowToElements : Null<Array<Element>>;
+	var ariaFlowToElements : Null<haxe.ds.ReadOnlyArray<Element>>;
 	/**
 		The **`ariaHasPopup`** property of the `Element` interface reflects the value of the [`aria-haspopup`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-haspopup) attribute, which indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element.
 		
@@ -373,7 +373,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/ariaLabelledByElements>
 	**/
-	var ariaLabelledByElements : Null<Array<Element>>;
+	var ariaLabelledByElements : Null<haxe.ds.ReadOnlyArray<Element>>;
 	/**
 		The **`ariaLevel`** property of the `Element` interface reflects the value of the `aria-level` attribute, which defines the hierarchical level of an element within a structure.
 		
@@ -429,7 +429,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/ariaOwnsElements>
 	**/
-	var ariaOwnsElements : Null<Array<Element>>;
+	var ariaOwnsElements : Null<haxe.ds.ReadOnlyArray<Element>>;
 	/**
 		The **`ariaPlaceholder`** property of the `Element` interface reflects the value of the `aria-placeholder` attribute, which defines a short hint intended to aid the user with data entry when the control has no value.
 		

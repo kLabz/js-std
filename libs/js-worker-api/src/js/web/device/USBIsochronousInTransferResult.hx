@@ -37,6 +37,6 @@ package js.web.device;
 **/
 @:native("USBIsochronousInTransferResult") @:require(js_experimental_api, "USBIsochronousInTransferResult is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class USBIsochronousInTransferResult {
 	var data(default, null) : Null<js.lib.DataView>;
-	var packets(default, null) : Array<USBIsochronousInTransferPacket>;
+	var packets(default, null) : haxe.ds.ReadOnlyArray<USBIsochronousInTransferPacket>;
 	function new(packets:Array<USBIsochronousInTransferPacket>, ?data:Null<js.lib.DataView>):Void;
 }

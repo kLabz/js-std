@@ -29,7 +29,7 @@ package js.web.css;
 **/
 @:native("FontMetrics") @:require(js_experimental_api, "FontMetrics is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class FontMetrics {
 	var width(default, null) : Float;
-	var advances(default, null) : Array<Float>;
+	var advances(default, null) : haxe.ds.ReadOnlyArray<Float>;
 	var boundingBoxLeft(default, null) : Float;
 	var boundingBoxRight(default, null) : Float;
 	var height(default, null) : Float;
@@ -40,6 +40,6 @@ package js.web.css;
 	var fontBoundingBoxAscent(default, null) : Float;
 	var fontBoundingBoxDescent(default, null) : Float;
 	var dominantBaseline(default, null) : Baseline;
-	var baselines(default, null) : Array<Baseline>;
-	var fonts(default, null) : Array<Font>;
+	var baselines(default, null) : haxe.ds.ReadOnlyArray<Baseline>;
+	var fonts(default, null) : haxe.ds.ReadOnlyArray<Font>;
 }

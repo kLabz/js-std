@@ -37,5 +37,5 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSLayerStatementRule/nameList>
 	**/
-	var nameList(default, null) : Array<String>;
+	var nameList(default, null) : haxe.ds.ReadOnlyArray<String>;
 }

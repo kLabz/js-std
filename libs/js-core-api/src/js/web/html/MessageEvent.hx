@@ -61,7 +61,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MessageEvent/ports>
 	**/
-	var ports(default, null) : Array<MessagePort>;
+	var ports(default, null) : haxe.ds.ReadOnlyArray<MessagePort>;
 	/**
 		The **`MessageEvent()`** constructor creates a new `MessageEvent` object.
 		

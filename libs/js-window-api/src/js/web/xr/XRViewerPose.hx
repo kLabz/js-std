@@ -41,5 +41,5 @@ package js.web.xr;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRViewerPose/views>
 	**/
-	var views(default, null) : Array<XRView>;
+	var views(default, null) : haxe.ds.ReadOnlyArray<XRView>;
 }

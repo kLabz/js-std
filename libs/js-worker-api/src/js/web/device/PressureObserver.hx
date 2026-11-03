@@ -41,7 +41,7 @@ package js.web.device;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PressureObserver/knownSources_static>
 	**/
-	static var knownSources(default, null) : Array<PressureSource>;
+	static var knownSources(default, null) : haxe.ds.ReadOnlyArray<PressureSource>;
 	/**
 		The **`PressureObserver()`** constructor creates a new `PressureObserver` object to watch for changes to pressure changes of system resources such as the CPU.
 		

@@ -67,14 +67,14 @@ package js.web.device;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/axes>
 	**/
-	var axes(default, null) : Array<Float>;
+	var axes(default, null) : haxe.ds.ReadOnlyArray<Float>;
 	/**
 		The **`buttons`** read-only property of the `Gamepad` interface returns an array of `GamepadButton` objects representing the buttons present on the device.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/buttons>
 	**/
-	var buttons(default, null) : Array<GamepadButton>;
-	var touches(default, null) : Array<GamepadTouch>;
+	var buttons(default, null) : haxe.ds.ReadOnlyArray<GamepadButton>;
+	var touches(default, null) : haxe.ds.ReadOnlyArray<GamepadTouch>;
 	/**
 		The **`vibrationActuator`** read-only property of the `Gamepad` interface returns a `GamepadHapticActuator` object, which represents haptic feedback hardware available on the controller.
 		
@@ -98,7 +98,7 @@ package js.web.device;
 		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/hapticActuators>
 	**/
 	@:require(js_experimental_api, "Gamepad.hapticActuators is experimental (shipped in fewer than two engines); use -D js-experimental-api")
-	var hapticActuators(default, null) : Array<GamepadHapticActuator>;
+	var hapticActuators(default, null) : haxe.ds.ReadOnlyArray<GamepadHapticActuator>;
 	/**
 		The **`pose`** read-only property of the `Gamepad` interface returns a `GamepadPose` object representing the pose information associated with a WebVR controller (e.g., its position and orientation in 3D space).
 		

@@ -32,7 +32,7 @@ package js.web.device;
 @:native("BluetoothLEScanFilter") @:require(js_experimental_api, "BluetoothLEScanFilter is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothLEScanFilter {
 	var name(default, null) : Null<String>;
 	var namePrefix(default, null) : Null<String>;
-	var services(default, null) : Array<UUID>;
+	var services(default, null) : haxe.ds.ReadOnlyArray<UUID>;
 	var manufacturerData(default, null) : BluetoothManufacturerDataFilter;
 	var serviceData(default, null) : BluetoothServiceDataFilter;
 	function new(?init:BluetoothLEScanFilterInit):Void;

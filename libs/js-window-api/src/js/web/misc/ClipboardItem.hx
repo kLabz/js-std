@@ -45,7 +45,7 @@ package js.web.misc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ClipboardItem/types>
 	**/
-	var types(default, null) : Array<String>;
+	var types(default, null) : haxe.ds.ReadOnlyArray<String>;
 	/**
 		The **`ClipboardItem()`** constructor creates a new `ClipboardItem` object, which represents data to be stored or retrieved via the [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API) `clipboard.write()` and `clipboard.read()` methods, respectively.
 		

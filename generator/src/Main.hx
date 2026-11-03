@@ -241,7 +241,8 @@ class Main {
 	}
 
 	function resolveType(ctx:Context, t:String):ComplexType {
-		if (t == "undefined") return macro :Void; // TODO: not allowed everywhere..
+		// In unions, `undefined` becomes `Null<>` instead (see convertType)
+		if (t == "undefined") return macro :Void;
 
 		// TODO: see https://webidl.spec.whatwg.org/#idl-types
 		// TODO: might be interesting to have abstracts for some of those as a documentation
@@ -254,8 +255,9 @@ class Main {
 			case "byte" | "octet" | "short" | "long": macro :Int;
 			case "unsigned short": macro :Int;
 			case "unsigned long": macro :Int;
-			case "long long": macro :Float; // TODO: can haxe.Int64 be used here?
-			case "unsigned long long": macro :Float; // TODO: can haxe.Int64 be used here?
+			// JS represents these as (possibly imprecise) numbers
+			case "long long": macro :Float;
+			case "unsigned long long": macro :Float;
 			case "float" | "double": macro :Float;
 			case "unrestricted float" | "unrestricted double": macro :Float;
 			// TODO: other special types
@@ -271,12 +273,12 @@ class Main {
 			case "Uint16Array": macro :js.lib.Uint16Array;
 			case "Uint32Array": macro :js.lib.Uint32Array;
 			case "Uint8ClampedArray": macro :js.lib.Uint8ClampedArray;
-			case "Float16Array": macro :js.lib.Float16Array; // TODO
+			case "Float16Array": macro :js.lib.Float16Array;
 			case "Float32Array": macro :js.lib.Float32Array;
 			case "Float64Array": macro :js.lib.Float64Array;
-			case "bigint": macro :js.lib.BigInt; // TODO
-			case "BigInt64Array": macro :js.lib.BigInt64Array; // TODO
-			case "BigUint64Array": macro :js.lib.BigUint64Array; // TODO
+			case "bigint": macro :js.lib.BigInt;
+			case "BigInt64Array": macro :js.lib.BigInt64Array;
+			case "BigUint64Array": macro :js.lib.BigUint64Array;
 
 			case "WindowProxy": resolveType(ctx, "Window");
 
@@ -296,11 +298,14 @@ class Main {
 			return if (t.nullable) macro :Null<$ct> else ct;
 		} else if (t.isUnion()) {
 			var t = t.asUnion();
-			var ct = switch (t.idlType) {
+			// idlType is a live view on the AST: popping it would corrupt shared (mixin) members
+			var types = t.idlType.copy();
+			var isUndefined = (u:IDLTypeDescription) -> u.isSingle() && u.asSingle().idlType == "undefined";
+			var optional = types.exists(isUndefined);
+			types = types.filter(u -> !isUndefined(u));
+			var ct = switch (types) {
 				case []: macro :Dynamic;
 				case types:
-					// idlType is a live view on the AST: popping it would corrupt shared (mixin) members
-					var types = types.copy();
 					var current = convertType(ctx, types.pop());
 					while (types.length > 0) {
 						var t = convertType(ctx, types.pop());
@@ -309,15 +314,13 @@ class Main {
 					current;
 			};
 			assertEmptyAttributes(t.extAttrs);
-			return if (t.nullable) macro :Null<$ct> else ct;
+			return if (t.nullable || optional) macro :Null<$ct> else ct;
 		} else {
 			function handleGeneric<T:AbstractNonUnionTypeDescription<T>>(t:T) {
 				return switch (t.generic) {
 					case IDLFrozenArrayTypeDescription:
 						var inner = convertType(ctx, t.idlType.get);
-						// if (inner == null) inner = macro :Dynamic;
-						// TODO: FrozenArray in std
-						macro :Array<$inner>;
+						macro :haxe.ds.ReadOnlyArray<$inner>;
 
 					case IDLObservableArrayTypeDescription:
 						var inner = convertType(ctx, t.idlType.get);
@@ -507,7 +510,6 @@ class Main {
 			savedLibs.set(t, targetLibs);
 			pendingSaves.push({ctx: ctx, t: t, td: td});
 		} else {
-			// TODO: make sure the type really is not used
 			Sys.println('WARNING: type $t was not generated in any lib');
 
 			#if generate_unused_api
@@ -570,7 +572,7 @@ class Main {
 						var td:TypeDefinition = {
 							pack: pack,
 							name: t.name,
-							doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
+							doc: addUnhandledAttributesToDoc(null, t.extAttrs),
 							pos: ctx.pos,
 							isExtern: null,
 							kind: TDAlias(ct),
@@ -601,7 +603,7 @@ class Main {
 							var td:TypeDefinition = {
 								pack: pack,
 								name: '${t.name}Constants',
-								doc: null, // TODO retrieve docs
+								doc: null,
 								pos: ctx.pos,
 								isExtern: true,
 								kind: TDClass(),
@@ -615,8 +617,8 @@ class Main {
 									var ct = convertType(ctx, m.idlType);
 									return {
 										name: sanitizeIdentifier(m.name, meta, ctx.pos),
-										doc: addUnhandledAttributesToDoc(null, m.extAttrs), // TODO
-										access: [AStatic, AInline], // TODO: extern but not inline? (if so, drop value below)
+										doc: addUnhandledAttributesToDoc(null, m.extAttrs),
+										access: [AStatic, AInline],
 										kind: FVar(ct, convertValue(m.value, ct, false, ctx.pos)),
 										pos: ctx.pos,
 										meta: meta
@@ -652,7 +654,7 @@ class Main {
 						var td:TypeDefinition = {
 							pack: pack,
 							name: t.name,
-							doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
+							doc: addUnhandledAttributesToDoc(null, t.extAttrs),
 							pos: ctx.pos,
 							isExtern: null,
 							kind: TDAlias(ct),
@@ -678,13 +680,12 @@ class Main {
 
 						var partials = partialDictionaries.get(t.name).or([]);
 						var members = partials.fold((p, acc) -> acc.concat(p.members), t.members);
-						// TODO: check that generating FVar is enough..
 						var fields = members.map(m -> {
 							var meta = m.required ? [] : [{name: ":optional", pos: ctx.pos}];
 							({
 								// TODO: @:native won't be enough for typedef..
 								name: sanitizeIdentifier(m.name, meta, ctx.pos),
-								doc: addUnhandledAttributesToDoc(null, m.extAttrs), // TODO retrieve docs
+								doc: addUnhandledAttributesToDoc(null, m.extAttrs),
 								// TODO: add default value in doc
 								kind: FVar(convertType(ctx, m.idlType)),
 								// kind: FVar(convertType(ctx, m.idlType), convertValue(m.default_, ctx.pos)),
@@ -696,7 +697,7 @@ class Main {
 						var td:TypeDefinition = {
 							pack: pack,
 							name: t.name,
-							doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
+							doc: addUnhandledAttributesToDoc(null, t.extAttrs),
 							pos: ctx.pos,
 							isExtern: null,
 							kind: TDAlias(t.inheritance == null
@@ -723,13 +724,13 @@ class Main {
 						var td:TypeDefinition = {
 							pack: pack,
 							name: t.name,
-							doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
+							doc: addUnhandledAttributesToDoc(null, t.extAttrs),
 							pos: ctx.pos,
 							isExtern: null,
 							kind: TDAbstract(macro :String, [AbEnum]),
 							fields: t.values.map(e -> ({
 								name: sanitizeEnumValueName(e),
-								doc: null, // TODO retrieve docs
+								doc: null,
 								kind: FVar(null, {pos: ctx.pos, expr: EConst(CString(e.value))}),
 								pos: ctx.pos
 							}:Field))
@@ -778,11 +779,6 @@ class Main {
 					}
 
 					tasks.push(() -> {
-						// TODO (? not 100% clear atm, either that or need to implement `WindowProxy` for all scopes):
-						// some interfaces (for example `js.dom.Document`) will need to have a
-						// base definition in `js-core-api` and some partials (mostly from
-						// `html` for `js.dom.Document`?) only be applied to override in
-						// specific scope (`js-window-api` here?)
 						var partials = partialInterfaces.get(t.name).or([]);
 
 						var ctx = initClassCtx(file, t.name, scope, partials.fold((p, acc) -> acc.concat(p.t.members), t.members));
@@ -825,7 +821,7 @@ class Main {
 						var td:TypeDefinition = {
 							pack: pack,
 							name: t.name,
-							doc: addUnhandledAttributesToDoc(ctx.typeDoc.length == 0 ? null : ctx.typeDoc.join("\n"), t.extAttrs), // TODO retrieve docs
+							doc: addUnhandledAttributesToDoc(ctx.typeDoc.length == 0 ? null : ctx.typeDoc.join("\n"), t.extAttrs),
 							pos: ctx.pos,
 							isExtern: true,
 							kind: TDClass(
@@ -900,7 +896,7 @@ class Main {
 						var td:TypeDefinition = {
 							pack: pack,
 							name: t.name,
-							doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
+							doc: addUnhandledAttributesToDoc(null, t.extAttrs),
 							pos: ctx.pos,
 							isExtern: null,
 							kind: TDAlias(ct),
@@ -1054,7 +1050,6 @@ class Main {
 		?fromInclude:String,
 		?fromPartial:{t:InterfaceType, file:FileHandler}
 	) {
-		// TODO: proper doc handling
 		var doc = fromPartial.maybeApply(p -> 'From partial interface in ${p.file.filename}');
 		doc = doc.maybeConcat(fromInclude.maybeApply(i -> 'From interface mixin $i'), "\n");
 
@@ -1076,8 +1071,8 @@ class Main {
 				var ct = convertType(ctx, m.idlType);
 				ctx.fields.push({
 					name: sanitizeIdentifier(m.name, meta, ctx.pos),
-					doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
-					access: [AStatic, AInline], // TODO: extern but not inline? (if so, drop value below)
+					doc: addUnhandledAttributesToDoc(doc, m.extAttrs),
+					access: [AStatic, AInline],
 					kind: FVar(ct, convertValue(m.value, ct, false, ctx.pos)),
 					pos: ctx.pos,
 					meta: meta
@@ -1165,7 +1160,7 @@ class Main {
 				if (!skip) {
 					ctx.fields.push({
 						name: "new",
-						doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
+						doc: addUnhandledAttributesToDoc(doc, m.extAttrs),
 						access: isOverload(m, ctx.members) ? [AOverload] : [],
 						kind: FFun({
 							args: m.arguments.map(a -> convertArgument(ctx, a)),
@@ -1207,7 +1202,7 @@ class Main {
 				var meta = [];
 				ctx.fields.push({
 					name: sanitizeIdentifier(m.name, meta, ctx.pos),
-					doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
+					doc: addUnhandledAttributesToDoc(doc, m.extAttrs),
 					access: m.special == "static" ? [AStatic] : [],
 					kind: m.readonly ? FProp("default", "null", convertType(ctx, m.idlType)) : FVar(convertType(ctx, m.idlType)),
 					pos: ctx.pos,
@@ -1236,7 +1231,7 @@ class Main {
 				var meta = [];
 				ctx.fields.push({
 					name: sanitizeIdentifier(m.name, meta, ctx.pos),
-					doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
+					doc: addUnhandledAttributesToDoc(doc, m.extAttrs),
 					access: (m.special == "static" ? [haxe.macro.Expr.Access.AStatic] : []).concat(isOverload(m, ctx.members) ? [haxe.macro.Expr.Access.AOverload] : []),
 					kind: FFun({
 						args: m.arguments.map(a -> convertArgument(ctx, a)),

@@ -61,7 +61,7 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/ports>
 	**/
-	var ports(default, null) : Array<js.web.html.MessagePort>;
+	var ports(default, null) : haxe.ds.ReadOnlyArray<js.web.html.MessagePort>;
 	/**
 		The **`ExtendableMessageEvent()`** constructor creates a new `ExtendableMessageEvent` object.
 		

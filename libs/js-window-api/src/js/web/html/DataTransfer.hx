@@ -55,7 +55,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DataTransfer/types>
 	**/
-	var types(default, null) : Array<String>;
+	var types(default, null) : haxe.ds.ReadOnlyArray<String>;
 	/**
 		The **`files`** read-only property of the `DataTransfer` interface is a [list of the files](https://developer.mozilla.org/en-US/docs/Web/API/FileList) in the drag operation. If the operation includes no files, the list is empty.
 		

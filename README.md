@@ -72,4 +72,4 @@ node bin/index.js
 
 MDN links and deprecation come from [`@mdn/browser-compat-data`](https://github.com/mdn/browser-compat-data). Bumping `@webref/idl` or `@mdn/browser-compat-data` in `generator/package.json` and regenerating updates all libraries.
 
-`./check.sh` typechecks every generated type of each library, and `./tests/run.sh` compiles small programs against them (running the worker one on Node.js). Both accept a `HAXE` environment variable to use another compiler. CI runs them on Haxe 4.3 and the latest nightly, and checks that `libs/` matches the generator output.
+`./check.sh` typechecks every generated type of each library, and `./tests/run.sh` compiles small programs against them (running the worker one on Node.js). Both accept a `HAXE` environment variable to use another compiler. CI runs them on Haxe 4.3, on Haxe 5 preview (where `js-core-api` provides `js.lib.BigInt` and other ECMAScript types missing from std) and on a Haxe 5 build that has them in std, and checks that `libs/` matches the generator output.

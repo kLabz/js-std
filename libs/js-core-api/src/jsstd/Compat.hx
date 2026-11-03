@@ -15,6 +15,7 @@ class Compat {
 		if (!hasStdTypes) {
 			var self = Context.resolvePath("jsstd/Compat.hx");
 			Compiler.addClassPath(Path.normalize(Path.join([Path.directory(self), "..", "..", "compat"])));
+			Compiler.define("js_std_compat");
 		}
 	}
 }

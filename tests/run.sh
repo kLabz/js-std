@@ -7,6 +7,13 @@ libs=../libs
 core="-cp $libs/js-core-api/src $(cat $libs/js-core-api/extraParams.hxml)"
 
 status=0
+
+# EXPECT_COMPAT=1/0 asserts whether js-core-api had to provide its own ECMAScript types
+if [ -n "$EXPECT_COMPAT" ]; then
+	# shellcheck disable=SC2086
+	"$HAXE" $core -cp . --no-output --macro "CompatCheck.run()" \
+		&& echo "compat types: as expected (EXPECT_COMPAT=$EXPECT_COMPAT)" || status=1
+fi
 # shellcheck disable=SC2086
 "$HAXE" $core -cp $libs/js-worker-api/src -cp worker -main Main -js bin/worker.js && node bin/worker.js || status=1
 # shellcheck disable=SC2086

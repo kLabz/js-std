@@ -25,13 +25,20 @@
 package js.web.wasm;
 
 /**
-	Unhandled extended attribute LegacyNamespace
-	
-	Experimental: requires `-D js-experimental-api`.
+	@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Exception>
 **/
-@:native("Exception") @:require(js_experimental_api, "Exception is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Exception {
+@:native("WebAssembly.Exception") extern class Exception {
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Exception/stack>
+	**/
 	var stack(default, null) : haxe.extern.EitherType<String, Void>;
 	function new(exceptionTag:Tag, payload:Array<Any>, ?options:ExceptionOptions):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Exception/getArg>
+	**/
 	function getArg(exceptionTag:Tag, index:Int):Any;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Exception/is>
+	**/
 	function is(exceptionTag:Tag):Bool;
 }

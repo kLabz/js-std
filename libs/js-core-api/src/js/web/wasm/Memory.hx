@@ -25,13 +25,17 @@
 package js.web.wasm;
 
 /**
-	Unhandled extended attribute LegacyNamespace
-	
-	Experimental: requires `-D js-experimental-api`.
+	@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Memory>
 **/
-@:native("Memory") @:require(js_experimental_api, "Memory is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Memory {
+@:native("WebAssembly.Memory") extern class Memory {
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Memory/buffer>
+	**/
 	var buffer(default, null) : js.lib.ArrayBuffer;
 	function new(descriptor:MemoryDescriptor):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Memory/grow>
+	**/
 	function grow(delta:AddressValue):AddressValue;
 	function toFixedLengthBuffer():js.lib.ArrayBuffer;
 	function toResizableBuffer():js.lib.ArrayBuffer;

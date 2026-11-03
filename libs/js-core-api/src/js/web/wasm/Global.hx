@@ -25,12 +25,16 @@
 package js.web.wasm;
 
 /**
-	Unhandled extended attribute LegacyNamespace
-	
-	Experimental: requires `-D js-experimental-api`.
+	@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Global>
 **/
-@:native("Global") @:require(js_experimental_api, "Global is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Global {
+@:native("WebAssembly.Global") extern class Global {
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Global/value>
+	**/
 	var value : Any;
 	function new(descriptor:GlobalDescriptor, ?v:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Global/valueOf>
+	**/
 	function valueOf():Any;
 }

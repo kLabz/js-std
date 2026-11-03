@@ -25,14 +25,32 @@
 package js.web.wasm;
 
 /**
-	Experimental: requires `-D js-experimental-api`.
+	@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface>
 **/
-@:native("WebAssembly") @:require(js_experimental_api, "WebAssembly is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WebAssembly {
+@:native("WebAssembly") extern class WebAssembly {
 	static var JSTag(default, null) : Tag;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/compile_static>
+	**/
 	static function compile(bytes:js.web.dom.AllowSharedBufferSource, ?options:WebAssemblyCompileOptions):js.lib.Promise<Module>;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/compileStreaming_static>
+	**/
 	static function compileStreaming(source:js.lib.Promise<js.web.net.Response>, ?options:WebAssemblyCompileOptions):js.lib.Promise<Module>;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/instantiate_static>
+	**/
 	static overload function instantiate(bytes:js.web.dom.AllowSharedBufferSource, ?importObject:{ }, ?options:WebAssemblyCompileOptions):js.lib.Promise<WebAssemblyInstantiatedSource>;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/instantiate_static>
+	**/
 	static overload function instantiate(moduleObject:Module, ?importObject:{ }):js.lib.Promise<Instance>;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/instantiateStreaming_static>
+	**/
 	static function instantiateStreaming(source:js.lib.Promise<js.web.net.Response>, ?importObject:{ }, ?options:WebAssemblyCompileOptions):js.lib.Promise<WebAssemblyInstantiatedSource>;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/validate_static>
+	**/
 	static function validate(bytes:js.web.dom.AllowSharedBufferSource, ?options:WebAssemblyCompileOptions):Bool;
 }

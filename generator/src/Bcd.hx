@@ -17,7 +17,7 @@ class Bcd {
 		if (!td.kind.match(TDClass(_))) return;
 
 		var name = nativeName(td.meta, td.name);
-		var entry:Null<DynamicAccess<Dynamic>> = api.get(name);
+		var entry = lookup(name);
 		td.meta = td.meta ?? [];
 
 		// Unknown to BCD: not shipped anywhere yet
@@ -45,6 +45,15 @@ class Bcd {
 				f.meta.push(experimental('$name.$key', f.pos));
 			}
 		}
+	}
+
+	static var webassembly:DynamicAccess<Dynamic> = (js.Lib.require("@mdn/browser-compat-data") : Dynamic).webassembly.api;
+
+	// BCD files the WebAssembly JS API outside of `api`
+	static function lookup(nativeName:String):Null<DynamicAccess<Dynamic>> {
+		if (nativeName == "WebAssembly") return webassembly;
+		if (StringTools.startsWith(nativeName, "WebAssembly.")) return webassembly.get(nativeName.substr("WebAssembly.".length));
+		return api.get(nativeName);
 	}
 
 	/** Adds the MDN link to the doc; returns whether the API is deprecated. **/

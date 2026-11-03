@@ -94,11 +94,14 @@ class Main {
 			var next:Void->Void = null;
 			next = function() {
 				if (files.length == 0) {
-					// TODO: empty out directory before processing
+					#if !no_output StaticFiles.clearOutput(); #end
 					for (task in tasks) task();
 					for (task in saveTasks) doSave(task.ctx, task.t, task.td);
 					finalizeLibs();
-					#if !no_output HaxelibJson.writeAll(); #end
+					#if !no_output
+					StaticFiles.copyAll();
+					HaxelibJson.writeAll();
+					#end
 					return;
 				}
 
@@ -174,6 +177,19 @@ class Main {
 			}
 		});
 		return scope;
+	}
+
+	function extractLegacyNamespace(attr:Array<ExtendedAttribute<Dynamic>>):Null<String> {
+		var namespace = null;
+		handleAttributes(attr, function<T:ExtendedAttributeRightHandSide<T>>(a:ExtendedAttribute<T>) {
+			return switch (a.name) {
+				case "LegacyNamespace":
+					namespace = (cast a.rhs).value;
+					true;
+				case _: false;
+			}
+		});
+		return namespace;
 	}
 
 	function extractWindowAliases(attr:Array<ExtendedAttribute<Dynamic>>):Array<String> {
@@ -791,6 +807,9 @@ class Main {
 							}
 						});
 
+						var namespace = extractLegacyNamespace(t.extAttrs);
+						var nativeName = namespace == null ? t.name : '$namespace.${t.name}';
+
 						var td:TypeDefinition = {
 							pack: pack,
 							name: t.name,
@@ -803,7 +822,7 @@ class Main {
 							),
 							meta: [{
 								name: ":native",
-								params: [{pos: ctx.pos, expr: EConst(CString(t.name))}],
+								params: [{pos: ctx.pos, expr: EConst(CString(nativeName))}],
 								pos: ctx.pos
 							}],
 							fields: ctx.fields

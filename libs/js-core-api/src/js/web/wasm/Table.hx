@@ -25,14 +25,24 @@
 package js.web.wasm;
 
 /**
-	Unhandled extended attribute LegacyNamespace
-	
-	Experimental: requires `-D js-experimental-api`.
+	@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table>
 **/
-@:native("Table") @:require(js_experimental_api, "Table is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Table {
+@:native("WebAssembly.Table") extern class Table {
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table/length>
+	**/
 	var length(default, null) : AddressValue;
 	function new(descriptor:TableDescriptor, ?value:Any):Void;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table/get>
+	**/
 	function get(index:AddressValue):Any;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table/grow>
+	**/
 	function grow(delta:AddressValue, ?value:Any):AddressValue;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table/set>
+	**/
 	function set(index:AddressValue, ?value:Any):Void;
 }

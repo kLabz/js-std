@@ -386,7 +386,7 @@ class Main {
 			t: tname,
 			pos: PositionTools.make({min: 0, max: 0, file: file.path}),
 			file: file,
-			pack: ["js", sanitizePackage(file.shortname)],
+			pack: Packages.get(file.shortname, tname),
 			scope: scope
 		};
 	}
@@ -396,7 +396,7 @@ class Main {
 			t: tname,
 			pos: PositionTools.make({min: 0, max: 0, file: file.path}),
 			file: file,
-			pack: ["js", sanitizePackage(file.shortname)],
+			pack: Packages.get(file.shortname, tname),
 			scope: scope,
 			typeDoc: [],
 			fields: [],
@@ -406,12 +406,11 @@ class Main {
 	}
 
 	function handleFile(file:FileHandler, res:Array<IDLRootType>) {
-		var pack = ["js", sanitizePackage(file.shortname)];
-
 		Sys.println('Parsed ${file.filename}: ${res.length} declarations.');
 
 		function handle<T:AbstractBase<T>>(t:T) {
 			if (isTypeIgnored(file, t)) return;
+			var pack = Packages.get(file.shortname, (cast t).name);
 
 			switch (t.type) {
 				case IDLCallbackType:
@@ -719,10 +718,6 @@ class Main {
 
 	static function isTypeIgnored<T:AbstractBase<T>>(file, t:T) {
 		return ignoredTypes.get(file.shortname)?.contains((cast t).name) ?? false;
-	}
-
-	static function sanitizePackage(p:String):String {
-		return ~/[^a-z0-9]+/g.replace(p.toLowerCase(), "_").split("_").mapi((i,p) -> i == 0 ? p : p.charAt(0).toUpperCase() + p.substr(1)).join("");
 	}
 
 	static function sanitizeEnumValueName(e:{type:String, value:String, parent:EnumType}) {

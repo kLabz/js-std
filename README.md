@@ -27,7 +27,7 @@ Types keep their WebIDL names (`HTMLElement`, `Element`, `Request`…) and are g
 | Package | Holds | Specs (examples / rule) |
 |---|---|---|
 | `js.web.dom` | Core DOM, events, observers, selection | dom, uievents, pointerevents, touch-events, input-events, selection-api, resize-observer, intersection-observer, geometry, trusted-types, sanitizer-api |
-| `js.web.html` | Elements, document, window, history, forms, workers, messaging | html, fullscreen, pointerlock, picture-in-picture, edit-context, anchors, page-lifecycle, scheduling-apis |
+| `js.web.html` | Elements, document, window, history, forms, workers, messaging | html, fullscreen, pointerlock, picture-in-picture, edit-context, page-lifecycle, scheduling-apis |
 | `js.web.css` | CSSOM, typed OM, houdini, animations, view transitions | `css-*`, cssom, cssom-view, mediaqueries-5, `web-animations*`, scroll-animations |
 | `js.web.svg` | SVG and MathML | SVG, `svg-*`, filter-effects, mathml-core |
 | `js.web.canvas` | 2D canvas, OffscreenCanvas, ImageBitmap | taken from html per interface |
@@ -35,7 +35,7 @@ Types keep their WebIDL names (`HTMLElement`, `Element`, `Request`…) and are g
 | `js.web.webgpu` | WebGPU | webgpu |
 | `js.web.media` | Media elements, MSE, EME, capture, recording, Web Audio, speech, codecs | `mediacapture-*`, media-source, encrypted-media, mediastream-recording, webaudio, `webcodecs*`, speech-api, webvtt, image-capture, remote-playback, `audio-*` |
 | `js.web.webrtc` | Peer connections, stats, transforms | `webrtc*` |
-| `js.web.xr` | WebXR | `webxr*`, real-world-meshing, raw-camera-access |
+| `js.web.xr` | WebXR | `webxr*`, anchors, real-world-meshing, raw-camera-access |
 | `js.web.net` | fetch, XHR, WebSocket, WebTransport, URL, streams, encoding, compression | fetch, xhr, websockets, webtransport, url, urlpattern, streams, encoding, compression, beacon, FileAPI |
 | `js.web.storage` | IndexedDB, cookies, quotas, file systems, locks | IndexedDB, cookie-store, `storage*`, fs, file-system-access, entries-api, web-locks, shared-storage |
 | `js.web.sw` | Service workers and the APIs running in them | service-workers, push-api, notifications, `background-*`, periodic-background-sync, content-index, payment-handler |
@@ -53,7 +53,7 @@ Each type's documentation names the spec it comes from.
 
 ## Status
 
-Work in progress. Generated output still uses one package per spec (`js.dom`, `js.cssomView`…); the layout above is the target.
+Work in progress.
 
 ## Generator
 

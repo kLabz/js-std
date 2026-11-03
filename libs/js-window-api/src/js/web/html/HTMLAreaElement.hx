@@ -98,18 +98,22 @@ package js.web.html;
 	var hash : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		Unhandled extended attribute Reflect
 	**/
 	var hreflang : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		Unhandled extended attribute Reflect
 	**/
 	var type : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
+		Unhandled extended attribute ReflectSetter
 	**/
 	var href : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
+		Unhandled extended attribute Reflect
 	**/
 	var target : String;
 	/**

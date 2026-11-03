@@ -25,11 +25,11 @@
 package js.web.storage;
 
 /**
-	TODO member createSyncAccessHandle () -> js.lib.Promise<FileSystemSyncAccessHandle> exposed for [DedicatedWorker]
 	Unhandled extended attribute SecureContext
 	Unhandled extended attribute Serializable
 **/
 @:native("FileSystemFileHandle") extern class FileSystemFileHandle extends FileSystemHandle {
+	function createSyncAccessHandle():js.lib.Promise<FileSystemSyncAccessHandle>;
 	function createWritable(?options:FileSystemCreateWritableOptions):js.lib.Promise<FileSystemWritableFileStream>;
 	function getFile():js.lib.Promise<js.web.net.File>;
 }

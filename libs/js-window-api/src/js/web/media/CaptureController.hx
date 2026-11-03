@@ -40,10 +40,6 @@ package js.web.media;
 		From partial interface in mediacapture-surface-control.idl
 	**/
 	var onzoomlevelchange : js.web.html.EventHandler;
-	/**
-		From partial interface in mediacapture-surface-control.idl
-	**/
-	overload function new():Void;
 	overload function new():Void;
 	/**
 		From partial interface in mediacapture-surface-control.idl

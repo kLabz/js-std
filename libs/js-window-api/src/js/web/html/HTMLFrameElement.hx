@@ -50,7 +50,7 @@ package js.web.html;
 	**/
 	var noResize : Bool;
 	var contentDocument(default, null) : Null<js.web.dom.Document>;
-	var contentWindow(default, null) : Null<js.html.Window>;
+	var contentWindow(default, null) : Null<Window>;
 	/**
 		Unhandled extended attribute Reflect
 	**/

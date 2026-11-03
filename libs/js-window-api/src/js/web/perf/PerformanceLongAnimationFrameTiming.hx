@@ -25,10 +25,6 @@
 package js.web.perf;
 
 @:native("PerformanceLongAnimationFrameTiming") extern class PerformanceLongAnimationFrameTiming extends PerformanceEntry {
-	var startTime(default, null) : DOMHighResTimeStamp;
-	var duration(default, null) : DOMHighResTimeStamp;
-	var name(default, null) : String;
-	var entryType(default, null) : String;
 	var renderStart(default, null) : DOMHighResTimeStamp;
 	var styleAndLayoutStart(default, null) : DOMHighResTimeStamp;
 	var styleDuration(default, null) : DOMHighResTimeStamp;

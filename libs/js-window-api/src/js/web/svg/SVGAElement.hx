@@ -51,6 +51,7 @@ package js.web.svg;
 	var referrerPolicy : String;
 	/**
 		From interface mixin SVGURIReference
+		Unhandled extended attribute SameObject
 	**/
 	var href(default, null) : SVGAnimatedString;
 	/**

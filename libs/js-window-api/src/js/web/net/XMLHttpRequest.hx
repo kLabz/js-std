@@ -24,9 +24,6 @@
 
 package js.web.net;
 
-/**
-	TODO attribute responseXML Null<js.web.dom.Document> exposed for [Window]
-**/
 @:native("XMLHttpRequest") extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
 	var onreadystatechange : js.web.html.EventHandler;
 	static inline var UNSENT : Int = 0;
@@ -47,6 +44,7 @@ package js.web.net;
 	var responseType : XMLHttpRequestResponseType;
 	var response(default, null) : Any;
 	var responseText(default, null) : String;
+	var responseXML(default, null) : Null<js.web.dom.Document>;
 	function new():Void;
 	function abort():Void;
 	function getAllResponseHeaders():String;

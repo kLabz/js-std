@@ -25,7 +25,6 @@
 package js.web.device;
 
 /**
-	TODO member requestPort (?options:SerialPortRequestOptions) -> js.lib.Promise<SerialPort> exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("Serial") extern class Serial extends js.web.dom.EventTarget {

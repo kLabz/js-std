@@ -25,7 +25,6 @@
 package js.web.device;
 
 /**
-	TODO member requestDevice (options:USBDeviceRequestOptions) -> js.lib.Promise<USBDevice> exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("USB") extern class USB extends js.web.dom.EventTarget {

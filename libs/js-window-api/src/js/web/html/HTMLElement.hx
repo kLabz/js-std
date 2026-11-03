@@ -70,10 +70,13 @@ package js.web.html;
 	var headingReset : Bool;
 	/**
 		From interface mixin ElementCSSInlineStyle
+		Unhandled extended attribute SameObject
 	**/
 	var attributeStyleMap(default, null) : js.web.css.StylePropertyMap;
 	/**
 		From interface mixin ElementCSSInlineStyle
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute PutForwards
 	**/
 	var style(default, null) : js.web.css.CSSStyleProperties;
 	/**
@@ -294,10 +297,12 @@ package js.web.html;
 	var onmousedown : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
+		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseenter : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
+		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseleave : EventHandler;
 	/**
@@ -446,6 +451,7 @@ package js.web.html;
 	var onpointermove : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
+		Unhandled extended attribute SecureContext
 	**/
 	var onpointerrawupdate : EventHandler;
 	/**
@@ -522,6 +528,7 @@ package js.web.html;
 	var virtualKeyboardPolicy : String;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		Unhandled extended attribute SameObject
 	**/
 	var dataset(default, null) : DOMStringMap;
 	/**
@@ -530,10 +537,12 @@ package js.web.html;
 	var nonce : String;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		Unhandled extended attribute Reflect
 	**/
 	var autofocus : Bool;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
+		Unhandled extended attribute ReflectSetter
 	**/
 	var tabIndex : Int;
 	/**

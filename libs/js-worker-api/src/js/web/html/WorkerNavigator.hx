@@ -27,6 +27,8 @@ package js.web.html;
 @:native("WorkerNavigator") extern class WorkerNavigator {
 	/**
 		From interface mixin NavigatorCrossOriginStorage
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute SecureContext
 	**/
 	var crossOriginStorage(default, null) : js.web.storage.CrossOriginStorageManager;
 	/**
@@ -56,23 +58,7 @@ package js.web.html;
 	/**
 		From interface mixin NavigatorID
 	**/
-	var productSub(default, null) : String;
-	/**
-		From interface mixin NavigatorID
-	**/
 	var userAgent(default, null) : String;
-	/**
-		From interface mixin NavigatorID
-	**/
-	var vendor(default, null) : String;
-	/**
-		From interface mixin NavigatorID
-	**/
-	var vendorSub(default, null) : String;
-	/**
-		From interface mixin NavigatorID
-	**/
-	var oscpu(default, null) : String;
 	/**
 		From interface mixin NavigatorLanguage
 	**/
@@ -91,18 +77,22 @@ package js.web.html;
 	var hardwareConcurrency(default, null) : Float;
 	/**
 		From interface mixin NavigatorNetworkInformation
+		Unhandled extended attribute SameObject
 	**/
 	var connection(default, null) : js.web.net.NetworkInformation;
 	/**
 		From interface mixin NavigatorStorageBuckets
+		Unhandled extended attribute SameObject
 	**/
 	var storageBuckets(default, null) : js.web.storage.StorageBucketManager;
 	/**
 		From interface mixin NavigatorStorage
+		Unhandled extended attribute SameObject
 	**/
 	var storage(default, null) : js.web.storage.StorageManager;
 	/**
 		From interface mixin NavigatorUA
+		Unhandled extended attribute SecureContext
 	**/
 	var userAgentData(default, null) : js.web.misc.NavigatorUAData;
 	/**
@@ -111,10 +101,14 @@ package js.web.html;
 	var locks(default, null) : js.web.storage.LockManager;
 	/**
 		From interface mixin NavigatorGPU
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute SecureContext
 	**/
 	var gpu(default, null) : js.web.webgpu.GPU;
 	/**
 		From interface mixin NavigatorML
+		Unhandled extended attribute SecureContext
+		Unhandled extended attribute SameObject
 	**/
 	var ml(default, null) : js.web.ml.ML;
 	/**
@@ -156,8 +150,4 @@ package js.web.html;
 		From interface mixin NavigatorBadge
 	**/
 	function setAppBadge(?contents:Float):js.lib.Promise<Void>;
-	/**
-		From interface mixin NavigatorID
-	**/
-	function taintEnabled():Bool;
 }

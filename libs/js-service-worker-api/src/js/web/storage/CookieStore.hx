@@ -25,7 +25,6 @@
 package js.web.storage;
 
 /**
-	TODO attribute onchange js.web.html.EventHandler exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("CookieStore") extern class CookieStore extends js.web.dom.EventTarget {

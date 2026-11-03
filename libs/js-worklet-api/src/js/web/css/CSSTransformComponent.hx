@@ -26,6 +26,5 @@ package js.web.css;
 
 @:native("CSSTransformComponent") extern class CSSTransformComponent {
 	var is2D : Bool;
-	function toMatrix():js.web.dom.DOMMatrix;
 	function toString():String;
 }

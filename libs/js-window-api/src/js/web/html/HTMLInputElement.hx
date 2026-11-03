@@ -194,7 +194,7 @@ package js.web.html;
 	function select():Void;
 	function setCustomValidity(error:String):Void;
 	overload function setRangeText(replacement:String):Void;
-	overload function setRangeText(replacement:String, start:Int, end:Int, ?selectionMode:SelectionMode = PRESERVE):Void;
+	overload function setRangeText(replacement:String, start:Int, end:Int, ?selectionMode:SelectionMode = SelectionMode.PRESERVE):Void;
 	function setSelectionRange(start:Int, end:Int, ?direction:String):Void;
 	function showPicker():Void;
 	function stepDown(?n:Int = 1):Void;

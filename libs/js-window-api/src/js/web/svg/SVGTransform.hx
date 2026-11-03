@@ -36,7 +36,7 @@ package js.web.svg;
 	/**
 		Unhandled extended attribute SameObject
 	**/
-	var matrix(default, null) : SVGMatrix;
+	var matrix(default, null) : js.web.dom.SVGMatrix;
 	var angle(default, null) : Float;
 	function setMatrix(?matrix:js.web.dom.DOMMatrix2DInit):Void;
 	function setRotate(angle:Float, cx:Float, cy:Float):Void;

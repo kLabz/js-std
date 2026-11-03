@@ -25,7 +25,6 @@
 package js.web.media;
 
 /**
-	TODO member fromElement (element:js.web.dom.Element) -> js.lib.Promise<RestrictionTarget> exposed for [Window]
 	Unhandled extended attribute Serializable
 **/
 @:native("RestrictionTarget") extern class RestrictionTarget {

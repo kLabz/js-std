@@ -28,7 +28,5 @@ package js.web.media;
 	var stream(default, null) : Null<MediaStream>;
 	var error(default, null) : Null<js.web.dom.DOMException>;
 	var onstream : js.web.html.EventHandler;
-	var onerror : js.web.html.EventHandler;
-	var oncancel : js.web.html.EventHandler;
 	function setConstraints(?constraints:HTMLMediaStreamConstraints):Void;
 }

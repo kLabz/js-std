@@ -47,7 +47,7 @@ package js.web.html;
 	**/
 	var height : String;
 	var contentDocument(default, null) : Null<js.web.dom.Document>;
-	var contentWindow(default, null) : Null<js.html.Window>;
+	var contentWindow(default, null) : Null<Window>;
 	var willValidate(default, null) : Bool;
 	var validity(default, null) : ValidityState;
 	var validationMessage(default, null) : String;

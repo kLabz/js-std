@@ -37,6 +37,7 @@ package js.web.dom;
 	var nextElementSibling(default, null) : Null<Element>;
 	/**
 		From interface mixin ChildNode
+		Unhandled extended attribute Unscopable
 	**/
 	function after(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
@@ -50,6 +51,7 @@ package js.web.dom;
 	function appendData(data:String):Void;
 	/**
 		From interface mixin ChildNode
+		Unhandled extended attribute Unscopable
 	**/
 	function before(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
@@ -64,11 +66,13 @@ package js.web.dom;
 	function insertData(offset:Int, data:String):Void;
 	/**
 		From interface mixin ChildNode
+		Unhandled extended attribute Unscopable
 	**/
 	function remove():Void;
 	function replaceData(offset:Int, count:Int, data:String):Void;
 	/**
 		From interface mixin ChildNode
+		Unhandled extended attribute Unscopable
 	**/
 	function replaceWith(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**

@@ -30,17 +30,7 @@ package js.web.css;
 	var marginRight : String;
 	var marginBottom : String;
 	var marginLeft : String;
-	@:native("margin-top")
-	var marginTop : String;
-	@:native("margin-right")
-	var marginRight : String;
-	@:native("margin-bottom")
-	var marginBottom : String;
-	@:native("margin-left")
-	var marginLeft : String;
 	var size : String;
-	var pageOrientation : String;
-	@:native("page-orientation")
 	var pageOrientation : String;
 	var marks : String;
 	var bleed : String;

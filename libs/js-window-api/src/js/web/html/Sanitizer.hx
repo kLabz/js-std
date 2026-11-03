@@ -25,7 +25,7 @@
 package js.web.html;
 
 @:native("Sanitizer") extern class Sanitizer {
-	function new(?configuration:haxe.extern.EitherType<SanitizerConfig, SanitizerPresets> = "default"):Void;
+	function new(?configuration:haxe.extern.EitherType<SanitizerConfig, SanitizerPresets> = SanitizerPresets.DEFAULT):Void;
 	function allowAttribute(attribute:SanitizerAttribute):Bool;
 	function allowElement(element:SanitizerElementWithAttributes):Bool;
 	function allowProcessingInstruction(pi:SanitizerPI):Bool;

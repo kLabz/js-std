@@ -24,13 +24,6 @@
 
 package js.web.html;
 
-/**
-	TODO attribute productSub String exposed for [Window]
-	TODO attribute vendor String exposed for [Window]
-	TODO attribute vendorSub String exposed for [Window]
-	TODO member taintEnabled () -> Bool exposed for [Window]
-	TODO attribute oscpu String exposed for [Window]
-**/
 @:native("Navigator") extern class Navigator {
 	/**
 		From interface mixin NavigatorCrossOriginStorage
@@ -65,7 +58,23 @@ package js.web.html;
 	/**
 		From interface mixin NavigatorID
 	**/
+	var productSub(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
 	var userAgent(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var vendor(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var vendorSub(default, null) : String;
+	/**
+		From interface mixin NavigatorID
+	**/
+	var oscpu(default, null) : String;
 	/**
 		From interface mixin NavigatorLanguage
 	**/
@@ -393,6 +402,10 @@ package js.web.html;
 		Unhandled extended attribute SecureContext
 	**/
 	function share(?data:js.web.misc.ShareData):js.lib.Promise<Void>;
+	/**
+		From interface mixin NavigatorID
+	**/
+	function taintEnabled():Bool;
 	/**
 		From interface mixin NavigatorContentUtils
 		Unhandled extended attribute SecureContext

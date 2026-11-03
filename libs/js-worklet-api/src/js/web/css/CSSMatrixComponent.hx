@@ -25,6 +25,5 @@
 package js.web.css;
 
 @:native("CSSMatrixComponent") extern class CSSMatrixComponent extends CSSTransformComponent {
-	var matrix : js.web.dom.DOMMatrix;
-	function new(matrix:js.web.dom.DOMMatrixReadOnly, ?options:CSSMatrixComponentOptions):Void;
+
 }

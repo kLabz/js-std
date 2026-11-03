@@ -10,7 +10,7 @@ Types are split by the global scopes they are exposed in (WebIDL `[Exposed]`). D
 
 | Library | Contents |
 |---|---|
-| `js-core-api` | Types exposed in every scope |
+| `js-core-api` | Types exposed, identically, in every scope |
 | `js-window-api` | Types exposed in `Window` (pages, iframes, Electron renderers) |
 | `js-worker-api` | Types exposed in dedicated and shared workers |
 | `js-service-worker-api` | Types exposed in service workers |
@@ -18,7 +18,11 @@ Types are split by the global scopes they are exposed in (WebIDL `[Exposed]`). D
 
 All scope libraries depend on `js-core-api`.
 
-A type exposed in several scopes, but not in all of them, is generated into each matching library. These copies are identical, so libraries can be combined in a single build (e.g. `js-window-api` with `hxnodejs` for an Electron renderer). All libraries are released together under the same version and must be used at matching versions.
+A type exposed in several scopes is generated into each matching library, restricted to what that scope provides: members not exposed there are left out, and so are union branches referencing types that don't exist there. For example, `WebGLRenderingContext.canvas` is `HTMLCanvasElement` or `OffscreenCanvas` in `js-window-api`, but only `OffscreenCanvas` in `js-worker-api`. A type only lands in `js-core-api` when it is the same in every scope.
+
+Combining a scope library with a non-web one works as usual (e.g. `js-window-api` with `hxnodejs` for an Electron renderer). Combining two scope libraries in one build is not supported: types they share may differ, and whichever comes first on the classpath wins.
+
+All libraries are released together under the same version and must be used at matching versions.
 
 ## Packages
 

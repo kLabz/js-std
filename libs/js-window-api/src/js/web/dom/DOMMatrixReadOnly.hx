@@ -25,7 +25,6 @@
 package js.web.dom;
 
 /**
-	TODO member  () -> Void exposed for [Window]
 	Unhandled extended attribute Serializable
 **/
 @:native("DOMMatrixReadOnly") extern class DOMMatrixReadOnly {
@@ -126,6 +125,7 @@ package js.web.dom;
 		Unhandled extended attribute Default
 	**/
 	function toJSON():{ };
+	function toString():String;
 	/**
 		Unhandled extended attribute NewObject
 	**/

@@ -41,5 +41,5 @@ package js.web.storage;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function transaction(storeNames:haxe.extern.EitherType<String, Array<String>>, ?mode:IDBTransactionMode = READONLY, ?options:IDBTransactionOptions):IDBTransaction;
+	function transaction(storeNames:haxe.extern.EitherType<String, Array<String>>, ?mode:IDBTransactionMode = IDBTransactionMode.READONLY, ?options:IDBTransactionOptions):IDBTransaction;
 }

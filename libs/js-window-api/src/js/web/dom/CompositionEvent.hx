@@ -30,5 +30,5 @@ package js.web.dom;
 	/**
 		From partial interface in uievents.idl
 	**/
-	function initCompositionEvent(typeArg:String, ?bubblesArg:Bool = false, ?cancelableArg:Bool = false, ?viewArg:Null<js.html.Window> = null, ?dataArg:String = ""):Void;
+	function initCompositionEvent(typeArg:String, ?bubblesArg:Bool = false, ?cancelableArg:Bool = false, ?viewArg:Null<js.web.html.Window> = null, ?dataArg:String = ""):Void;
 }

@@ -25,13 +25,5 @@
 package js.web.media;
 
 @:native("BufferedChangeEvent") extern class BufferedChangeEvent extends js.web.dom.Event {
-	/**
-		Unhandled extended attribute SameObject
-	**/
-	var addedRanges(default, null) : js.web.html.TimeRanges;
-	/**
-		Unhandled extended attribute SameObject
-	**/
-	var removedRanges(default, null) : js.web.html.TimeRanges;
 	function new(type:String, ?eventInitDict:BufferedChangeEventInit):Void;
 }

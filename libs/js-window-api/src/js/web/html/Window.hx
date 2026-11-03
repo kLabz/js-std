@@ -33,11 +33,11 @@ package js.web.html;
 	/**
 		Unhandled extended attribute LegacyUnforgeable
 	**/
-	var window(default, null) : js.html.Window;
+	var window(default, null) : Window;
 	/**
 		Unhandled extended attribute Replaceable
 	**/
-	var self(default, null) : js.html.Window;
+	var self(default, null) : Window;
 	/**
 		Unhandled extended attribute LegacyUnforgeable
 	**/
@@ -83,7 +83,7 @@ package js.web.html;
 	/**
 		Unhandled extended attribute Replaceable
 	**/
-	var frames(default, null) : js.html.Window;
+	var frames(default, null) : Window;
 	/**
 		Unhandled extended attribute Replaceable
 	**/
@@ -91,12 +91,12 @@ package js.web.html;
 	/**
 		Unhandled extended attribute LegacyUnforgeable
 	**/
-	var top(default, null) : Null<js.html.Window>;
+	var top(default, null) : Null<Window>;
 	var opener : Any;
 	/**
 		Unhandled extended attribute Replaceable
 	**/
-	var parent(default, null) : Null<js.html.Window>;
+	var parent(default, null) : Null<Window>;
 	var frameElement(default, null) : Null<js.web.dom.Element>;
 	var navigator(default, null) : Navigator;
 	/**
@@ -322,10 +322,12 @@ package js.web.html;
 	var onmousedown : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
+		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseenter : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
+		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseleave : EventHandler;
 	/**
@@ -474,6 +476,7 @@ package js.web.html;
 	var onpointermove : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
+		Unhandled extended attribute SecureContext
 	**/
 	var onpointerrawupdate : EventHandler;
 	/**
@@ -927,7 +930,7 @@ package js.web.html;
 		From partial interface in css-nav.idl
 	**/
 	function navigate(dir:js.web.css.SpatialNavigationDirection):Void;
-	function open(?url:String = "", ?target:String = "_blank", ?features:String = ""):Null<js.html.Window>;
+	function open(?url:String = "", ?target:String = "_blank", ?features:String = ""):Null<Window>;
 	overload function postMessage(message:Any, targetOrigin:String, ?transfer:Array<{ }>):Void;
 	overload function postMessage(message:Any, ?options:WindowPostMessageOptions):Void;
 	function print():Void;

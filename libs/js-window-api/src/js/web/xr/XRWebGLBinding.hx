@@ -46,6 +46,6 @@ package js.web.xr;
 		From partial interface in webxr-lighting-estimation.idl
 	**/
 	function getReflectionCubeMap(lightProbe:XRLightProbe):Null<js.web.webgl.WebGLTexture>;
-	function getSubImage(layer:XRCompositionLayer, frame:XRFrame, ?eye:XREye = NONE):XRWebGLSubImage;
+	function getSubImage(layer:XRCompositionLayer, frame:XRFrame, ?eye:XREye = XREye.NONE):XRWebGLSubImage;
 	function getViewSubImage(layer:XRProjectionLayer, view:XRView):XRWebGLSubImage;
 }

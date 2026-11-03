@@ -28,9 +28,9 @@ package js.web.svg;
 	/**
 		Unhandled extended attribute SameObject
 	**/
-	var baseVal(default, null) : SVGRect;
+	var baseVal(default, null) : js.web.dom.SVGRect;
 	/**
 		Unhandled extended attribute SameObject
 	**/
-	var animVal(default, null) : SVGRect;
+	var animVal(default, null) : js.web.dom.SVGRect;
 }

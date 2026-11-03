@@ -25,7 +25,6 @@
 package js.web.storage;
 
 /**
-	TODO member createSyncAccessHandle () -> js.lib.Promise<FileSystemSyncAccessHandle> exposed for [DedicatedWorker]
 	Unhandled extended attribute SecureContext
 	Unhandled extended attribute Serializable
 **/

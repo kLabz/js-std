@@ -157,11 +157,11 @@ package js.web.canvas;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function clip(?fillRule:CanvasFillRule = NONZERO):Void;
+	overload function clip(?fillRule:CanvasFillRule = CanvasFillRule.NONZERO):Void;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function clip(path:Path2D, ?fillRule:CanvasFillRule = NONZERO):Void;
+	overload function clip(path:Path2D, ?fillRule:CanvasFillRule = CanvasFillRule.NONZERO):Void;
 	/**
 		From interface mixin CanvasPath
 	**/
@@ -209,11 +209,11 @@ package js.web.canvas;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function fill(?fillRule:CanvasFillRule = NONZERO):Void;
+	overload function fill(?fillRule:CanvasFillRule = CanvasFillRule.NONZERO):Void;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function fill(path:Path2D, ?fillRule:CanvasFillRule = NONZERO):Void;
+	overload function fill(path:Path2D, ?fillRule:CanvasFillRule = CanvasFillRule.NONZERO):Void;
 	/**
 		From interface mixin CanvasRect
 	**/
@@ -236,6 +236,7 @@ package js.web.canvas;
 	function getLineDash():Array<Float>;
 	/**
 		From interface mixin CanvasTransform
+		Unhandled extended attribute NewObject
 	**/
 	function getTransform():js.web.dom.DOMMatrix;
 	/**
@@ -245,11 +246,11 @@ package js.web.canvas;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function isPointInPath(x:Float, y:Float, ?fillRule:CanvasFillRule = NONZERO):Bool;
+	overload function isPointInPath(x:Float, y:Float, ?fillRule:CanvasFillRule = CanvasFillRule.NONZERO):Bool;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function isPointInPath(path:Path2D, x:Float, y:Float, ?fillRule:CanvasFillRule = NONZERO):Bool;
+	overload function isPointInPath(path:Path2D, x:Float, y:Float, ?fillRule:CanvasFillRule = CanvasFillRule.NONZERO):Bool;
 	/**
 		From interface mixin CanvasDrawPath
 	**/

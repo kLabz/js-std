@@ -25,10 +25,6 @@
 package js.web.perf;
 
 @:native("PerformanceScriptTiming") extern class PerformanceScriptTiming extends PerformanceEntry {
-	var startTime(default, null) : DOMHighResTimeStamp;
-	var duration(default, null) : DOMHighResTimeStamp;
-	var name(default, null) : String;
-	var entryType(default, null) : String;
 	var invokerType(default, null) : ScriptInvokerType;
 	var invoker(default, null) : String;
 	var executionStart(default, null) : DOMHighResTimeStamp;

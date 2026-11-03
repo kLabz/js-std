@@ -52,8 +52,6 @@ package js.web.html;
 	**/
 	var integrity : String;
 	var fetchPriority : String;
-	var innerText : haxe.extern.EitherType<js.web.dom.TrustedScript, String>;
-	var textContent : Null<haxe.extern.EitherType<js.web.dom.TrustedScript, String>>;
 	var text : haxe.extern.EitherType<js.web.dom.TrustedScript, String>;
 	/**
 		From partial interface in html.idl

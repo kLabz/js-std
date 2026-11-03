@@ -25,8 +25,4 @@
 package js.web.media;
 
 typedef BufferedChangeEventInit = js.web.dom.EventInit & {
-	@:optional
-	var addedRanges : js.web.html.TimeRanges;
-	@:optional
-	var removedRanges : js.web.html.TimeRanges;
 };

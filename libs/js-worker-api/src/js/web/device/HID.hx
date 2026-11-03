@@ -25,7 +25,6 @@
 package js.web.device;
 
 /**
-	TODO member requestDevice (options:HIDDeviceRequestOptions) -> js.lib.Promise<Array<HIDDevice>> exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("HID") extern class HID extends js.web.dom.EventTarget {

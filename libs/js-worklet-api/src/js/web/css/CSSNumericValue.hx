@@ -24,9 +24,6 @@
 
 package js.web.css;
 
-/**
-	TODO member parse (cssText:String) -> CSSNumericValue exposed for [Window]
-**/
 @:native("CSSNumericValue") extern class CSSNumericValue extends CSSStyleValue {
 	function add(values:haxe.Rest<haxe.Rest<CSSNumberish>>):CSSNumericValue;
 	function div(values:haxe.Rest<haxe.Rest<CSSNumberish>>):CSSNumericValue;

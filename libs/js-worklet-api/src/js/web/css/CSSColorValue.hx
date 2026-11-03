@@ -24,9 +24,6 @@
 
 package js.web.css;
 
-/**
-	TODO member parse (cssText:String) -> haxe.extern.EitherType<CSSColorValue, CSSStyleValue> exposed for [Window]
-**/
 @:native("CSSColorValue") extern class CSSColorValue extends CSSStyleValue {
 
 }

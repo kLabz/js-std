@@ -25,7 +25,6 @@
 package js.web.device;
 
 /**
-	TODO member requestPermission () -> js.lib.Promise<js.web.misc.PermissionState> exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("IdleDetector") extern class IdleDetector extends js.web.dom.EventTarget {

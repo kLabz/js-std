@@ -26,7 +26,6 @@ package js.web.dom;
 
 /**
 	Unhandled extended attribute Serializable
-	Unhandled extended attribute LegacyWindowAlias
 **/
 @:native("DOMRect") extern class DOMRect extends DOMRectReadOnly {
 	function new(?x:Float = 0, ?y:Float = 0, ?width:Float = 0, ?height:Float = 0):Void;

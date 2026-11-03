@@ -25,7 +25,7 @@
 package js.web.net;
 
 @:native("FormData") extern class FormData {
-	function new(?form:js.web.html.HTMLFormElement, ?submitter:Null<js.web.html.HTMLElement> = null):Void;
+	function new():Void;
 	overload function append(name:String, value:String):Void;
 	overload function append(name:String, blobValue:Blob, ?filename:String):Void;
 	function delete(name:String):Void;

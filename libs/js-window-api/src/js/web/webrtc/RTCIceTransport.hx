@@ -60,7 +60,7 @@ package js.web.webrtc;
 	/**
 		From partial interface in webrtc-ice.idl
 	**/
-	function start(?remoteParameters:RTCIceParameters, ?role:RTCIceRole = CONTROLLED):Void;
+	function start(?remoteParameters:RTCIceParameters, ?role:RTCIceRole = RTCIceRole.CONTROLLED):Void;
 	/**
 		From partial interface in webrtc-ice.idl
 	**/

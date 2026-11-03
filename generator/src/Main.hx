@@ -60,29 +60,29 @@ enum abstract Libraries(String) to String {
 class Main {
 	public static function main() new Main();
 
-	static var libs = [
-		"*" => cast "js-core-api",
-		"Window" => WindowAPI,
+	static var libs:Map<String, Array<String>> = [
+		"*" => ["js-core-api"],
+		"Window" => [WindowAPI],
 
-		"Worker" => WorkerAPI,
-		"ServiceWorker" => ServiceWorkerAPI,
-		"DedicatedWorker" => WorkerAPI, // See https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope
-		"SharedWorker" => null, // TODO
+		// ServiceWorkerGlobalScope is a WorkerGlobalScope too
+		"Worker" => [WorkerAPI, ServiceWorkerAPI],
+		"DedicatedWorker" => [WorkerAPI],
+		"SharedWorker" => [WorkerAPI],
+		"ServiceWorker" => [ServiceWorkerAPI],
 
-		"Worklet" => WorkletAPI,
-		"AnimationWorklet" => WorkletAPI,
-		"AudioWorklet" => WorkletAPI,
-		"LayoutWorklet" => WorkletAPI,
-		"PaintWorklet" => WorkletAPI,
-		"SharedStorageWorklet" => WorkletAPI,
+		"Worklet" => [WorkletAPI],
+		"AnimationWorklet" => [WorkletAPI],
+		"AudioWorklet" => [WorkletAPI],
+		"LayoutWorklet" => [WorkletAPI],
+		"PaintWorklet" => [WorkletAPI],
+		"SharedStorageWorklet" => [WorkletAPI],
 
-		// TODO (?)
-		"RTCIdentityProvider" => null,
-		"InterestGroupScriptRunnerGlobalScope" => null,
-		"InterestGroupScoringScriptRunnerGlobalScope" => null,
-		"InterestGroupBiddingScriptRunnerGlobalScope" => null,
-		"InterestGroupReportingScriptRunnerGlobalScope" => null,
-		"InterestGroupBiddingAndScoringScriptRunnerGlobalScope" => null
+		"RTCIdentityProvider" => [],
+		"InterestGroupScriptRunnerGlobalScope" => [],
+		"InterestGroupScoringScriptRunnerGlobalScope" => [],
+		"InterestGroupBiddingScriptRunnerGlobalScope" => [],
+		"InterestGroupReportingScriptRunnerGlobalScope" => [],
+		"InterestGroupBiddingAndScoringScriptRunnerGlobalScope" => []
 	];
 
 
@@ -95,6 +95,7 @@ class Main {
 					// TODO: empty out directory before processing
 					for (task in tasks) task();
 					for (task in saveTasks) doSave(task.ctx, task.t, task.td);
+					finalizeLibs();
 					return;
 				}
 
@@ -171,6 +172,24 @@ class Main {
 		return scope;
 	}
 
+	function extractWindowAliases(attr:Array<ExtendedAttribute<Dynamic>>):Array<String> {
+		var aliases = [];
+		handleAttributes(attr, function<T:ExtendedAttributeRightHandSide<T>>(a:ExtendedAttribute<T>) {
+			return switch (a.name) {
+				case "LegacyWindowAlias":
+					switch (a.rhs.type) {
+						case RHSIdentifier: aliases.push(a.rhs.value);
+						case RHSIdentifierList: for (rhs in a.rhs.value) aliases.push(rhs.value);
+						case t: throw 'Unexpected LegacyWindowAlias right hand side type $t.';
+					}
+					true;
+				case _: false;
+			}
+		});
+		// Vendor-prefixed aliases (`webkitURL`) aren't valid Haxe type names
+		return aliases.filter(a -> a.charAt(0) == a.charAt(0).toUpperCase());
+	}
+
 	function assertEmptyAttributes(attr:Array<ExtendedAttribute<Dynamic>>, ?pos:PosInfos):Void {
 		for (a in attr) haxe.Log.trace('ERROR: unhandled extended attribute ${a.name}', pos);
 	}
@@ -222,7 +241,7 @@ class Main {
 			case "BigInt64Array": macro :js.lib.BigInt64Array; // TODO
 			case "BigUint64Array": macro :js.lib.BigUint64Array; // TODO
 
-			case "WindowProxy": macro :js.html.Window;
+			case "WindowProxy": resolveType(ctx, "Window");
 
 			case _:
 				dependents.set(t, dependents.get(t).or([]).copyWith(ctx.t));
@@ -330,6 +349,74 @@ class Main {
 		#end
 	}
 
+	var savedLibs:Map<String, Set<String>> = [];
+	var pendingSaves:Array<{ctx:Context, t:String, td:TypeDefinition}> = [];
+	var ownerScopes = new haxe.ds.ObjectMap<Dynamic, Null<Set<String>>>();
+	var interfaceDefs:Map<String, InterfaceType> = [];
+
+	function ancestorAttributes(name:String):Set<String> {
+		var ret = new Set<String>();
+		var parent = interfaceDefs.get(name)?.inheritance;
+		while (parent != null) {
+			var members:Array<Dynamic> = interfaceDefs.get(parent)?.members ?? [];
+			for (p in partialInterfaces.get(parent).or([])) members = members.concat(p.t.members);
+			for (i in includesTypes) if (i.target == parent) members = members.concat(mixins.get(i.includes).or([]));
+			for (m in members) if (m.type == "attribute") ret.add(m.name);
+			parent = interfaceDefs.get(parent)?.inheritance;
+		}
+		return ret;
+	}
+	var attributeSnapshots = new haxe.ds.ObjectMap<Dynamic, Array<{attrs:Array<Dynamic>, copy:Array<Dynamic>}>>();
+
+	static final scopeLibs:Array<String> = [WindowAPI, WorkerAPI, ServiceWorkerAPI, WorkletAPI];
+
+	static function libsForScope(scope:String):Array<String> {
+		return scope == "*" ? scopeLibs : libs.get(scope).or([]);
+	}
+
+	function finalizeLibs() {
+		function filter(lib:String, td:TypeDefinition) {
+			return new LibFilter(
+				lib,
+				t -> packMap.exists(t),
+				(lib, t) -> savedLibs.get(t)?.has(lib) ?? false,
+				libsForScope
+			).filterType(td);
+		}
+
+		// Dropping a type from a lib can make its dependents unavailable there too
+		var changed = true;
+		while (changed) {
+			changed = false;
+			for (task in pendingSaves) {
+				var libs = savedLibs.get(task.t);
+				for (lib in libs.copy()) if (filter(lib, task.td) == null) {
+					libs = libs.filter(l -> l != lib);
+					savedLibs.set(task.t, libs);
+					changed = true;
+				}
+			}
+		}
+
+		for (task in pendingSaves) {
+			var libs = savedLibs.get(task.t);
+			if (libs.length == 0) {
+				Sys.println('WARNING: type ${task.t} is not available in any lib');
+				continue;
+			}
+
+			var filtered = [for (lib in libs) lib => filter(lib, task.td)];
+			var printed = [for (lib => td in filtered) printer.printTypeDefinition(td)];
+			var identical = printed.foreach(p -> p == printed[0]);
+
+			if (identical && scopeLibs.foreach(l -> libs.has(l))) {
+				saveTo(task.ctx, "js-core-api", task.t, filtered[WindowAPI]);
+			} else {
+				for (lib => td in filtered) saveTo(task.ctx, lib, task.t, td);
+			}
+		}
+	}
+
 	function doSave(ctx:Context, t:String, td:TypeDefinition) {
 		var handledDependents:Set<String> = [t];
 		var abort = false;
@@ -346,6 +433,9 @@ class Main {
 				}
 				ctx.scope.add(s);
 			}
+
+			// A type with its own [Exposed] bounds where its dependencies can be used
+			if (dep != t && depScope.length > 0) return;
 
 			var deps = dependents.get(dep).or([]);
 			for (d in deps) {
@@ -368,18 +458,12 @@ class Main {
 		var targetLibs:Set<String> = [];
 		for (s in ctx.scope) {
 			if (!libs.exists(s)) Sys.println('WARNING: Cannot find target library for $t (scope=$s)');
-			var lib = libs[s];
-			if (lib == null) continue;
-			targetLibs.add(lib);
-		}
-
-		// if present in all libs, generate in core instead
-		if (targetLibs.has(WindowAPI) && targetLibs.has(WorkerAPI) && targetLibs.has(ServiceWorkerAPI) && targetLibs.has(WorkletAPI)) {
-			targetLibs = [libs["*"]];
+			for (lib in libsForScope(s)) targetLibs.add(lib);
 		}
 
 		if (targetLibs.length > 0) {
-			for (lib in targetLibs) saveTo(ctx, lib, t, td);
+			savedLibs.set(t, targetLibs);
+			pendingSaves.push({ctx: ctx, t: t, td: td});
 		} else {
 			// TODO: make sure the type really is not used
 			Sys.println('WARNING: type $t was not generated in any lib');
@@ -608,16 +692,36 @@ class Main {
 
 				case IDLInterfaceMixinType:
 					Sys.println(' > interface mixin ${pack.concat([t.name]).join(".")}');
+					var scope = extractScope(t.extAttrs);
+					for (m in t.members) ownerScopes.set(m, scope);
 					mixins.set(t.name, mixins.get(t.name).or([]).concat(t.members));
 
 				case IDLInterfaceType if (t.partial):
 					// see https://webidl.spec.whatwg.org/#dfn-partial-interface
+					var scope = extractScope(t.extAttrs);
+					for (m in t.members) ownerScopes.set(m, scope);
 					partialInterfaces.set(t.name, partialInterfaces.get(t.name).or([]).concat([{t: t, file: file}]));
 
 				case IDLInterfaceType:
 					packMap.set(t.name, pack);
+					interfaceDefs.set(t.name, t);
 					var scope = extractScope(t.extAttrs);
 					scopeMap.set(t.name, scope);
+
+					for (alias in extractWindowAliases(t.extAttrs)) {
+						packMap.set(alias, pack);
+						scopeMap.set(alias, ["Window"]);
+						tasks.push(() -> {
+							var ctx = initCtx(file, alias, ["Window"]);
+							save(ctx, alias, {
+								pack: pack,
+								name: alias,
+								pos: ctx.pos,
+								kind: TDAlias(resolveType(ctx, t.name)),
+								fields: []
+							});
+						});
+					}
 
 					tasks.push(() -> {
 						// TODO (? not 100% clear atm, either that or need to implement `WindowProxy` for all scopes):
@@ -772,6 +876,77 @@ class Main {
 		?fromInclude:String,
 		?fromPartial:{t:InterfaceType, file:FileHandler}
 	) {
+		// Mixin members are shared by every including interface, and handling consumes their extended attributes
+		if (fromInclude != null) restoreAttributes(m);
+
+		var scope = extractScope(m.extAttrs);
+		if (scope == null || scope.length == 0) scope = ownerScopes.get(m);
+		var fieldCount = ctx.fields.length;
+		handleMemberFields(ctx, m, fromInclude, fromPartial);
+
+		// Dashed CSS properties (`margin-top`) map to the same identifier as their camelCase twin,
+		// and some partial interfaces redeclare members (e.g. `constructor()`)
+		var i = fieldCount;
+		while (i < ctx.fields.length) {
+			var f = ctx.fields[i];
+			var sig = signature(f);
+			if (ctx.fields.slice(0, fieldCount).exists(o -> signature(o) == sig)) {
+				ctx.fields.splice(i, 1);
+			} else {
+				i++;
+			}
+		}
+
+		if (scope != null && scope.length > 0 && !scope.has("*")) {
+			var params = [for (s in scope) {pos: ctx.pos, expr: EConst(CString(s))}];
+			for (i in fieldCount...ctx.fields.length) {
+				var f = ctx.fields[i];
+				if (f.meta == null) f.meta = [];
+				f.meta.push({name: LibFilter.EXPOSED_META, params: params, pos: ctx.pos});
+			}
+		}
+	}
+
+	function signature(f:Field):String {
+		return switch (f.kind) {
+			case FVar(_) | FProp(_): 'var ${f.name}';
+			case FFun(fn): 'function ${f.name}(' + fn.args.map(a -> printer.printComplexType(a.type)).join(",") + ')';
+		};
+	}
+
+	function restoreAttributes(m:Dynamic) {
+		var snapshot = attributeSnapshots.get(m);
+		if (snapshot == null) {
+			snapshot = [];
+			collectAttributes(m, snapshot);
+			attributeSnapshots.set(m, snapshot);
+		} else {
+			for (s in snapshot) {
+				s.attrs.splice(0, s.attrs.length);
+				for (a in s.copy) s.attrs.push(a);
+			}
+		}
+	}
+
+	function collectAttributes(o:Dynamic, out:Array<{attrs:Array<Dynamic>, copy:Array<Dynamic>}>) {
+		if (o == null || (o is String)) return;
+		if (o is Array) {
+			for (x in (o:Array<Dynamic>)) collectAttributes(x, out);
+			return;
+		}
+
+		var attrs:Null<Array<Dynamic>> = o.extAttrs;
+		if (attrs != null) out.push({attrs: attrs, copy: attrs.copy()});
+		collectAttributes(o.arguments, out);
+		collectAttributes(o.idlType, out);
+	}
+
+	function handleMemberFields<T:AbstractBase<T>>(
+		ctx:ClassContext,
+		m:T,
+		?fromInclude:String,
+		?fromPartial:{t:InterfaceType, file:FileHandler}
+	) {
 		// TODO: proper doc handling
 		var doc = fromPartial.maybeApply(p -> 'From partial interface in ${p.file.filename}');
 		doc = doc.maybeConcat(fromInclude.maybeApply(i -> 'From interface mixin $i'), "\n");
@@ -779,31 +954,6 @@ class Main {
 		// Apply patches
 		Patch.patchMember(ctx, m, fromInclude);
 
-		var scope = extractScope(m.extAttrs).or([]);
-		if (scope.length > 0) {
-			var desc = switch (m.type) {
-				case IDLIterableDeclarationMemberType: 'iterable';
-				case IDLAsyncIterableDeclarationMemberType: 'async_iterable';
-				case IDLConstantMemberType: 'const ${m.name}';
-				case IDLConstructorMemberType: 'constructor';
-				case IDLAttributeMemberType:
-					var ct = convertType(ctx, m.idlType);
-					'attribute ${m.name} ${printer.printComplexType(ct)}';
-				case IDLOperationMemberType:
-					var args = m.arguments.map(a ->
-						a.optional
-							? TOptional(TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType)))
-							: TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType))
-					);
-					var tret = convertType(ctx, m.idlType).or(macro :Void);
-					var ct = TFunction(args, tret);
-					'member ${m.name} ${printer.printComplexType(ct)}';
-				case _: throw 'Unexpected member type ${m.type}.';
-			};
-
-			ctx.typeDoc.push('TODO ${desc} exposed for ${scope}');
-			return;
-		}
 
 		switch (m.type) {
 			case IDLConstantMemberType:
@@ -888,6 +1038,9 @@ class Main {
 						meta: []
 					});
 				}
+
+			case IDLAttributeMemberType if (ancestorAttributes(ctx.t).has(m.name)):
+				// Haxe doesn't allow redefining inherited variables; keep the parent's declaration
 
 			case IDLAttributeMemberType if (m.special == "inherit"):
 				// Nothing to do; this attribute was defined in parent type
@@ -1001,6 +1154,16 @@ class Main {
 		assertEmptyAttributes(m.extAttrs);
 	}
 
+	static function candidatePaths(ct:Null<ComplexType>):Array<TypePath> {
+		return switch (ct) {
+			case null: [];
+			case TPath({pack: [], name: "Null", params: [TPType(t)]}): candidatePaths(t);
+			case TPath({pack: ["haxe", "extern"], name: "EitherType", params: [TPType(a), TPType(b)]}): candidatePaths(a).concat(candidatePaths(b));
+			case TPath(tp): [tp];
+			case _: [];
+		};
+	}
+
 	function convertValue(v:Null<ValueDescription>, expectedType:Null<ComplexType>, constOnly:Bool, pos):Null<Expr> {
 		if (v == null) return null;
 
@@ -1008,13 +1171,16 @@ class Main {
 			return switch (v.type) {
 				case IDLValueDescriptionString if (v.value == "undefined"): null;
 				case IDLValueDescriptionString:
-					try {
-						var tp = toTPath(expectedType);
-						var values = enumValues.get(tp.name);
-						var v = values.get(v.value);
-						if (v == null) throw v;
-						EConst(CIdent(v));
-					} catch(_) EConst(CString(v.value));
+					var value = null;
+					for (tp in candidatePaths(expectedType)) {
+						var name = enumValues.get(tp.name)?.get(v.value);
+						if (name != null) {
+							// Qualified, so it also resolves when the expected type is a union
+							value = (macro $p{tp.pack.concat([tp.name, name])}).expr;
+							break;
+						}
+					}
+					value ?? EConst(CString(v.value));
 				case IDLValueDescriptionNumber: EConst(CInt(v.value));
 				case IDLValueDescriptionBoolean: EConst(CIdent(v.value ? "true" : "false"));
 				case IDLValueDescriptionNull: EConst(CIdent("null"));

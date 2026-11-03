@@ -24,12 +24,10 @@
 
 package js.web.dom;
 
-/**
-	TODO member createParserOptions (?options:js.web.html.SetHTMLUnsafeOptions, arguments:Any) -> TrustedHTMLParserOptions exposed for [Window]
-**/
 @:native("TrustedTypePolicy") extern class TrustedTypePolicy {
 	var name(default, null) : String;
 	function createHTML(input:String, arguments:haxe.Rest<haxe.Rest<Any>>):TrustedHTML;
+	function createParserOptions(?options:js.web.html.SetHTMLUnsafeOptions, arguments:haxe.Rest<haxe.Rest<Any>>):TrustedHTMLParserOptions;
 	function createScript(input:String, arguments:haxe.Rest<haxe.Rest<Any>>):TrustedScript;
 	function createScriptURL(input:String, arguments:haxe.Rest<haxe.Rest<Any>>):TrustedScriptURL;
 }

@@ -29,7 +29,7 @@ package js.web.svg;
 		Unhandled extended attribute SameObject
 	**/
 	var pathLength(default, null) : SVGAnimatedNumber;
-	function getPointAtLength(distance:Float):SVGPoint;
+	function getPointAtLength(distance:Float):js.web.dom.SVGPoint;
 	function getTotalLength():Float;
 	function isPointInFill(?point:js.web.dom.DOMPointInit):Bool;
 	function isPointInStroke(?point:js.web.dom.DOMPointInit):Bool;

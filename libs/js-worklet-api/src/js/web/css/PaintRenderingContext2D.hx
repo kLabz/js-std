@@ -44,11 +44,11 @@ package js.web.css;
 	/**
 		From interface mixin CanvasFillStrokeStyles
 	**/
-	var strokeStyle : haxe.extern.EitherType<String, haxe.extern.EitherType<js.web.canvas.CanvasGradient, js.web.canvas.CanvasPattern>>;
+	var strokeStyle : String;
 	/**
 		From interface mixin CanvasFillStrokeStyles
 	**/
-	var fillStyle : haxe.extern.EitherType<String, haxe.extern.EitherType<js.web.canvas.CanvasGradient, js.web.canvas.CanvasPattern>>;
+	var fillStyle : String;
 	/**
 		From interface mixin CanvasShadowStyles
 	**/
@@ -108,43 +108,11 @@ package js.web.css;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function clip(?fillRule:js.web.canvas.CanvasFillRule = NONZERO):Void;
-	/**
-		From interface mixin CanvasDrawPath
-	**/
-	overload function clip(path:js.web.canvas.Path2D, ?fillRule:js.web.canvas.CanvasFillRule = NONZERO):Void;
+	overload function clip(?fillRule:js.web.canvas.CanvasFillRule = js.web.canvas.CanvasFillRule.NONZERO):Void;
 	/**
 		From interface mixin CanvasPath
 	**/
 	function closePath():Void;
-	/**
-		From interface mixin CanvasFillStrokeStyles
-	**/
-	function createConicGradient(startAngle:Float, x:Float, y:Float):js.web.canvas.CanvasGradient;
-	/**
-		From interface mixin CanvasFillStrokeStyles
-	**/
-	function createLinearGradient(x0:Float, y0:Float, x1:Float, y1:Float):js.web.canvas.CanvasGradient;
-	/**
-		From interface mixin CanvasFillStrokeStyles
-	**/
-	function createPattern(image:js.web.canvas.CanvasImageSource, repetition:String):Null<js.web.canvas.CanvasPattern>;
-	/**
-		From interface mixin CanvasFillStrokeStyles
-	**/
-	function createRadialGradient(x0:Float, y0:Float, r0:Float, x1:Float, y1:Float, r1:Float):js.web.canvas.CanvasGradient;
-	/**
-		From interface mixin CanvasDrawImage
-	**/
-	overload function drawImage(image:js.web.canvas.CanvasImageSource, dx:Float, dy:Float):Void;
-	/**
-		From interface mixin CanvasDrawImage
-	**/
-	overload function drawImage(image:js.web.canvas.CanvasImageSource, dx:Float, dy:Float, dw:Float, dh:Float):Void;
-	/**
-		From interface mixin CanvasDrawImage
-	**/
-	overload function drawImage(image:js.web.canvas.CanvasImageSource, sx:Float, sy:Float, sw:Float, sh:Float, dx:Float, dy:Float, dw:Float, dh:Float):Void;
 	/**
 		From interface mixin CanvasPath
 	**/
@@ -152,11 +120,7 @@ package js.web.css;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function fill(?fillRule:js.web.canvas.CanvasFillRule = NONZERO):Void;
-	/**
-		From interface mixin CanvasDrawPath
-	**/
-	overload function fill(path:js.web.canvas.Path2D, ?fillRule:js.web.canvas.CanvasFillRule = NONZERO):Void;
+	overload function fill(?fillRule:js.web.canvas.CanvasFillRule = js.web.canvas.CanvasFillRule.NONZERO):Void;
 	/**
 		From interface mixin CanvasRect
 	**/
@@ -166,30 +130,17 @@ package js.web.css;
 	**/
 	function getLineDash():Array<Float>;
 	/**
-		From interface mixin CanvasTransform
-		Unhandled extended attribute NewObject
-	**/
-	function getTransform():js.web.dom.DOMMatrix;
-	/**
 		From interface mixin CanvasState
 	**/
 	function isContextLost():Bool;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
-	overload function isPointInPath(x:Float, y:Float, ?fillRule:js.web.canvas.CanvasFillRule = NONZERO):Bool;
-	/**
-		From interface mixin CanvasDrawPath
-	**/
-	overload function isPointInPath(path:js.web.canvas.Path2D, x:Float, y:Float, ?fillRule:js.web.canvas.CanvasFillRule = NONZERO):Bool;
+	overload function isPointInPath(x:Float, y:Float, ?fillRule:js.web.canvas.CanvasFillRule = js.web.canvas.CanvasFillRule.NONZERO):Bool;
 	/**
 		From interface mixin CanvasDrawPath
 	**/
 	overload function isPointInStroke(x:Float, y:Float):Bool;
-	/**
-		From interface mixin CanvasDrawPath
-	**/
-	overload function isPointInStroke(path:js.web.canvas.Path2D, x:Float, y:Float):Bool;
 	/**
 		From interface mixin CanvasPath
 	**/
@@ -250,10 +201,6 @@ package js.web.css;
 		From interface mixin CanvasDrawPath
 	**/
 	overload function stroke():Void;
-	/**
-		From interface mixin CanvasDrawPath
-	**/
-	overload function stroke(path:js.web.canvas.Path2D):Void;
 	/**
 		From interface mixin CanvasRect
 	**/

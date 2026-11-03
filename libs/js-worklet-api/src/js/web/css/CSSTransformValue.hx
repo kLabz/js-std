@@ -31,6 +31,5 @@ package js.web.css;
 	var length(default, null) : Int;
 	var is2D(default, null) : Bool;
 	function new(transforms:Array<CSSTransformComponent>):Void;
-	function toMatrix():js.web.dom.DOMMatrix;
 	function values():Iterator<CSSTransformComponent>;
 }

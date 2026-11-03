@@ -25,10 +25,6 @@
 package js.web.svg;
 
 @:native("SVGElement") extern class SVGElement extends js.web.dom.Element {
-	/**
-		Unhandled extended attribute SameObject
-	**/
-	var className(default, null) : SVGAnimatedString;
 	var ownerSVGElement(default, null) : Null<SVGSVGElement>;
 	var viewportElement(default, null) : Null<SVGElement>;
 	/**

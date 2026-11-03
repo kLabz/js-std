@@ -52,6 +52,7 @@ package js.web.dom;
 	var regionOverset(default, null) : String;
 	/**
 		From interface mixin ParentNode
+		Unhandled extended attribute SameObject
 	**/
 	var children(default, null) : HTMLCollection;
 	/**
@@ -407,6 +408,7 @@ package js.web.dom;
 	var outerHTML : haxe.extern.EitherType<TrustedHTML, String>;
 	/**
 		From interface mixin ChildNode
+		Unhandled extended attribute Unscopable
 	**/
 	function after(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
@@ -423,6 +425,7 @@ package js.web.dom;
 	function animate(keyframes:Null<{ }>, ?options:haxe.extern.EitherType<Float, js.web.css.KeyframeAnimationOptions>):js.web.css.Animation;
 	/**
 		From interface mixin ParentNode
+		Unhandled extended attribute Unscopable
 	**/
 	function append(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
@@ -440,6 +443,7 @@ package js.web.dom;
 	function attachShadow(init:ShadowRootInit):ShadowRoot;
 	/**
 		From interface mixin ChildNode
+		Unhandled extended attribute Unscopable
 	**/
 	function before(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
@@ -533,6 +537,7 @@ package js.web.dom;
 	function moveBefore(node:Node, child:Null<Node>):Void;
 	/**
 		From interface mixin ParentNode
+		Unhandled extended attribute Unscopable
 	**/
 	function prepend(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
@@ -553,6 +558,7 @@ package js.web.dom;
 	function querySelector(selectors:String):Null<Element>;
 	/**
 		From interface mixin ParentNode
+		Unhandled extended attribute NewObject
 	**/
 	function querySelectorAll(selectors:String):NodeList;
 	/**
@@ -561,6 +567,7 @@ package js.web.dom;
 	function releasePointerCapture(pointerId:Int):Void;
 	/**
 		From interface mixin ChildNode
+		Unhandled extended attribute Unscopable
 	**/
 	function remove():Void;
 	function removeAttribute(qualifiedName:String):Void;
@@ -568,10 +575,12 @@ package js.web.dom;
 	function removeAttributeNode(attr:Attr):Attr;
 	/**
 		From interface mixin ParentNode
+		Unhandled extended attribute Unscopable
 	**/
 	function replaceChildren(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
 		From interface mixin ChildNode
+		Unhandled extended attribute Unscopable
 	**/
 	function replaceWith(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**

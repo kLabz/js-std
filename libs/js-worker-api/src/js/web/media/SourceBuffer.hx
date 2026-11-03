@@ -24,15 +24,9 @@
 
 package js.web.media;
 
-/**
-	TODO attribute audioTracks js.web.html.AudioTrackList exposed for [Window]
-	TODO attribute videoTracks js.web.html.VideoTrackList exposed for [Window]
-	TODO attribute textTracks js.web.html.TextTrackList exposed for [Window]
-**/
 @:native("SourceBuffer") extern class SourceBuffer extends js.web.dom.EventTarget {
 	var mode : AppendMode;
 	var updating(default, null) : Bool;
-	var buffered(default, null) : js.web.html.TimeRanges;
 	var timestampOffset : Float;
 	var appendWindowStart : Float;
 	var appendWindowEnd : Float;

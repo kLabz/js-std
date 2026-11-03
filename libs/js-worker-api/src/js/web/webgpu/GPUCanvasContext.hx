@@ -28,7 +28,7 @@ package js.web.webgpu;
 	Unhandled extended attribute SecureContext
 **/
 @:native("GPUCanvasContext") extern class GPUCanvasContext {
-	var canvas(default, null) : haxe.extern.EitherType<js.web.html.HTMLCanvasElement, js.web.canvas.OffscreenCanvas>;
+	var canvas(default, null) : js.web.canvas.OffscreenCanvas;
 	function configure(configuration:GPUCanvasConfiguration):Void;
 	function getConfiguration():Null<GPUCanvasConfiguration>;
 	function getCurrentTexture():GPUTexture;

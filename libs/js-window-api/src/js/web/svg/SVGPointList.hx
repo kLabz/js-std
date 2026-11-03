@@ -25,16 +25,16 @@
 package js.web.svg;
 
 /**
-	TODO special=setter (index:Int, newItem:SVGPoint) -> Void
+	TODO special=setter (index:Int, newItem:js.web.dom.SVGPoint) -> Void
 **/
 @:native("SVGPointList") extern class SVGPointList {
 	var length(default, null) : Int;
 	var numberOfItems(default, null) : Int;
-	function appendItem(newItem:SVGPoint):SVGPoint;
+	function appendItem(newItem:js.web.dom.SVGPoint):js.web.dom.SVGPoint;
 	function clear():Void;
-	function getItem(index:Int):SVGPoint;
-	function initialize(newItem:SVGPoint):SVGPoint;
-	function insertItemBefore(newItem:SVGPoint, index:Int):SVGPoint;
-	function removeItem(index:Int):SVGPoint;
-	function replaceItem(newItem:SVGPoint, index:Int):SVGPoint;
+	function getItem(index:Int):js.web.dom.SVGPoint;
+	function initialize(newItem:js.web.dom.SVGPoint):js.web.dom.SVGPoint;
+	function insertItemBefore(newItem:js.web.dom.SVGPoint, index:Int):js.web.dom.SVGPoint;
+	function removeItem(index:Int):js.web.dom.SVGPoint;
+	function replaceItem(newItem:js.web.dom.SVGPoint, index:Int):js.web.dom.SVGPoint;
 }

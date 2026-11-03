@@ -24,9 +24,6 @@
 
 package js.web.media;
 
-/**
-	TODO attribute handle MediaSourceHandle exposed for [DedicatedWorker]
-**/
 @:native("MediaSource") extern class MediaSource extends js.web.dom.EventTarget {
 	var sourceBuffers(default, null) : SourceBufferList;
 	var activeSourceBuffers(default, null) : SourceBufferList;

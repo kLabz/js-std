@@ -59,7 +59,7 @@ package js.web.html;
 	var referrerPolicy : String;
 	var loading : String;
 	var contentDocument(default, null) : Null<js.web.dom.Document>;
-	var contentWindow(default, null) : Null<js.html.Window>;
+	var contentWindow(default, null) : Null<Window>;
 	/**
 		From partial interface in anonymous-iframe.idl
 	**/

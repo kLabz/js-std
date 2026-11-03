@@ -28,7 +28,6 @@ package js.web.perf;
 	var loadTime(default, null) : DOMHighResTimeStamp;
 	var renderTime(default, null) : DOMHighResTimeStamp;
 	var size(default, null) : Int;
-	var id(default, null) : String;
 	var url(default, null) : String;
 	var element(default, null) : Null<js.web.dom.Element>;
 	/**

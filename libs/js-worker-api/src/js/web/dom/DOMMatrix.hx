@@ -25,9 +25,7 @@
 package js.web.dom;
 
 /**
-	TODO member setMatrixValue (transformList:String) -> DOMMatrix exposed for [Window]
 	Unhandled extended attribute Serializable
-	Unhandled extended attribute LegacyWindowAlias
 **/
 @:native("DOMMatrix") extern class DOMMatrix extends DOMMatrixReadOnly {
 	function new(?init:haxe.extern.EitherType<String, Array<Float>>):Void;

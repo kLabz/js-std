@@ -25,7 +25,6 @@
 package js.web.storage;
 
 /**
-	TODO member persist () -> js.lib.Promise<Bool> exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("StorageManager") extern class StorageManager {
@@ -34,5 +33,6 @@ package js.web.storage;
 		From partial interface in fs.idl
 	**/
 	function getDirectory():js.lib.Promise<FileSystemDirectoryHandle>;
+	function persist():js.lib.Promise<Bool>;
 	function persisted():js.lib.Promise<Bool>;
 }

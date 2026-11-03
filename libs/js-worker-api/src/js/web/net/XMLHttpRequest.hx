@@ -24,9 +24,6 @@
 
 package js.web.net;
 
-/**
-	TODO attribute responseXML Null<js.web.dom.Document> exposed for [Window]
-**/
 @:native("XMLHttpRequest") extern class XMLHttpRequest extends XMLHttpRequestEventTarget {
 	var onreadystatechange : js.web.html.EventHandler;
 	static inline var UNSENT : Int = 0;
@@ -54,7 +51,7 @@ package js.web.net;
 	overload function open(method:String, url:String):Void;
 	overload function open(method:String, url:String, async:Bool, ?username:Null<String> = null, ?password:Null<String> = null):Void;
 	function overrideMimeType(mime:String):Void;
-	function send(?body:Null<haxe.extern.EitherType<js.web.dom.Document, XMLHttpRequestBodyInit>> = null):Void;
+	function send(?body:Null<XMLHttpRequestBodyInit> = null):Void;
 	/**
 		From partial interface in trust-token-api.idl
 	**/

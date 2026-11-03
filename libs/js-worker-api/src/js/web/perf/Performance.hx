@@ -24,30 +24,8 @@
 
 package js.web.perf;
 
-/**
-	TODO member measureUserAgentSpecificMemory () -> js.lib.Promise<MemoryMeasurement> exposed for [Window,ServiceWorker,SharedWorker]
-**/
 @:native("Performance") extern class Performance extends js.web.dom.EventTarget {
 	var timeOrigin(default, null) : DOMHighResTimeStamp;
-	/**
-		From partial interface in event-timing.idl
-		Unhandled extended attribute SameObject
-	**/
-	var eventCounts(default, null) : EventCounts;
-	/**
-		From partial interface in event-timing.idl
-	**/
-	var interactionCount(default, null) : Float;
-	/**
-		From partial interface in navigation-timing.idl
-		Unhandled extended attribute SameObject
-	**/
-	var timing(default, null) : PerformanceTiming;
-	/**
-		From partial interface in navigation-timing.idl
-		Unhandled extended attribute SameObject
-	**/
-	var navigation(default, null) : PerformanceNavigation;
 	/**
 		From partial interface in resource-timing.idl
 	**/
@@ -84,6 +62,11 @@ package js.web.perf;
 		From partial interface in user-timing.idl
 	**/
 	function measure(measureName:String, ?startOrMeasureOptions:haxe.extern.EitherType<String, PerformanceMeasureOptions>, ?endMark:String):PerformanceMeasure;
+	/**
+		From partial interface in performance-measure-memory.idl
+		Unhandled extended attribute CrossOriginIsolated
+	**/
+	function measureUserAgentSpecificMemory():js.lib.Promise<MemoryMeasurement>;
 	function now():DOMHighResTimeStamp;
 	/**
 		From partial interface in resource-timing.idl

@@ -34,6 +34,7 @@ package js.web.webgpu;
 	var label : String;
 	/**
 		From interface mixin GPUPipelineBase
+		Unhandled extended attribute NewObject
 	**/
 	function getBindGroupLayout(index:Int):GPUBindGroupLayout;
 }

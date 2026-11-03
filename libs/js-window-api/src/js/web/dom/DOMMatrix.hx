@@ -25,9 +25,7 @@
 package js.web.dom;
 
 /**
-	TODO member setMatrixValue (transformList:String) -> DOMMatrix exposed for [Window]
 	Unhandled extended attribute Serializable
-	Unhandled extended attribute LegacyWindowAlias
 **/
 @:native("DOMMatrix") extern class DOMMatrix extends DOMMatrixReadOnly {
 	function new(?init:haxe.extern.EitherType<String, Array<Float>>):Void;
@@ -51,6 +49,7 @@ package js.web.dom;
 	function rotateSelf(?rotX:Float = 0, ?rotY:Float, ?rotZ:Float):DOMMatrix;
 	function scale3dSelf(?scale:Float = 1, ?originX:Float = 0, ?originY:Float = 0, ?originZ:Float = 0):DOMMatrix;
 	function scaleSelf(?scaleX:Float = 1, ?scaleY:Float, ?scaleZ:Float = 1, ?originX:Float = 0, ?originY:Float = 0, ?originZ:Float = 0):DOMMatrix;
+	function setMatrixValue(transformList:String):DOMMatrix;
 	function skewXSelf(?sx:Float = 0):DOMMatrix;
 	function skewYSelf(?sy:Float = 0):DOMMatrix;
 	function translateSelf(?tx:Float = 0, ?ty:Float = 0, ?tz:Float = 0):DOMMatrix;

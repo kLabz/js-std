@@ -310,10 +310,12 @@ package js.web.dom;
 	var onmousedown : js.web.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
+		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseenter : js.web.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
+		Unhandled extended attribute LegacyLenientThis
 	**/
 	var onmouseleave : js.web.html.EventHandler;
 	/**
@@ -462,6 +464,7 @@ package js.web.dom;
 	var onpointermove : js.web.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
+		Unhandled extended attribute SecureContext
 	**/
 	var onpointerrawupdate : js.web.html.EventHandler;
 	/**
@@ -630,7 +633,7 @@ package js.web.dom;
 	/**
 		From partial interface in html.idl
 	**/
-	var defaultView(default, null) : Null<js.html.Window>;
+	var defaultView(default, null) : Null<js.web.html.Window>;
 	/**
 		From partial interface in html.idl
 	**/
@@ -934,7 +937,7 @@ package js.web.dom;
 	/**
 		From partial interface in html.idl
 	**/
-	overload function open(url:String, name:String, features:String):Null<js.html.Window>;
+	overload function open(url:String, name:String, features:String):Null<js.web.html.Window>;
 	/**
 		From partial interface in html.idl
 	**/

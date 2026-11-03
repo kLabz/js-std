@@ -25,7 +25,6 @@
 package js.web.storage;
 
 /**
-	TODO member persist () -> js.lib.Promise<Bool> exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("StorageManager") extern class StorageManager {

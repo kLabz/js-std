@@ -27,6 +27,5 @@ package js.web.media;
 @:native("VideoTrackGenerator") extern class VideoTrackGenerator {
 	var writable(default, null) : js.web.net.WritableStream;
 	var muted : Bool;
-	var track(default, null) : MediaStreamTrack;
 	function new():Void;
 }

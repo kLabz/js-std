@@ -25,7 +25,6 @@
 package js.web.storage;
 
 /**
-	TODO member persist () -> js.lib.Promise<Bool> exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("StorageBucket") extern class StorageBucket {
@@ -41,6 +40,7 @@ package js.web.storage;
 	function estimate():js.lib.Promise<StorageEstimate>;
 	function expires():js.lib.Promise<Null<js.web.perf.DOMHighResTimeStamp>>;
 	function getDirectory():js.lib.Promise<FileSystemDirectoryHandle>;
+	function persist():js.lib.Promise<Bool>;
 	function persisted():js.lib.Promise<Bool>;
 	function setExpires(expires:js.web.perf.DOMHighResTimeStamp):js.lib.Promise<Void>;
 }

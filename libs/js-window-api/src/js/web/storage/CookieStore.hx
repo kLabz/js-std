@@ -25,10 +25,10 @@
 package js.web.storage;
 
 /**
-	TODO attribute onchange js.web.html.EventHandler exposed for [Window]
 	Unhandled extended attribute SecureContext
 **/
 @:native("CookieStore") extern class CookieStore extends js.web.dom.EventTarget {
+	var onchange : js.web.html.EventHandler;
 	overload function delete(name:String):js.lib.Promise<Void>;
 	overload function delete(options:CookieStoreDeleteOptions):js.lib.Promise<Void>;
 	overload function get(name:String):js.lib.Promise<Null<CookieListItem>>;

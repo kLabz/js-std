@@ -25,7 +25,6 @@
 package js.web.svg;
 
 @:native("SVGPathElement") extern class SVGPathElement extends SVGGeometryElement {
-	var pathLength(default, null) : SVGAnimatedNumber;
 	/**
 		From interface mixin SVGPathData
 	**/

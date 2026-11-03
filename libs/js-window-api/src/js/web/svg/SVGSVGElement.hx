@@ -45,7 +45,7 @@ package js.web.svg;
 	/**
 		Unhandled extended attribute SameObject
 	**/
-	var currentTranslate(default, null) : SVGPoint;
+	var currentTranslate(default, null) : js.web.dom.SVGPoint;
 	/**
 		From interface mixin SVGFitToViewBox
 		Unhandled extended attribute SameObject
@@ -144,8 +144,8 @@ package js.web.svg;
 		From partial interface in svg-animations.idl
 	**/
 	function animationsPaused():Bool;
-	function checkEnclosure(element:SVGElement, rect:SVGRect):Bool;
-	function checkIntersection(element:SVGElement, rect:SVGRect):Bool;
+	function checkEnclosure(element:SVGElement, rect:js.web.dom.SVGRect):Bool;
+	function checkIntersection(element:SVGElement, rect:js.web.dom.SVGRect):Bool;
 	/**
 		Unhandled extended attribute NewObject
 	**/
@@ -157,7 +157,7 @@ package js.web.svg;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function createSVGMatrix():SVGMatrix;
+	function createSVGMatrix():js.web.dom.SVGMatrix;
 	/**
 		Unhandled extended attribute NewObject
 	**/
@@ -165,11 +165,11 @@ package js.web.svg;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function createSVGPoint():SVGPoint;
+	function createSVGPoint():js.web.dom.SVGPoint;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function createSVGRect():SVGRect;
+	function createSVGRect():js.web.dom.SVGRect;
 	/**
 		Unhandled extended attribute NewObject
 	**/
@@ -185,8 +185,8 @@ package js.web.svg;
 	**/
 	function getCurrentTime():Float;
 	function getElementById(elementId:String):Null<js.web.dom.Element>;
-	function getEnclosureList(rect:SVGRect, referenceElement:Null<SVGElement>):js.web.dom.NodeList;
-	function getIntersectionList(rect:SVGRect, referenceElement:Null<SVGElement>):js.web.dom.NodeList;
+	function getEnclosureList(rect:js.web.dom.SVGRect, referenceElement:Null<SVGElement>):js.web.dom.NodeList;
+	function getIntersectionList(rect:js.web.dom.SVGRect, referenceElement:Null<SVGElement>):js.web.dom.NodeList;
 	/**
 		From partial interface in svg-animations.idl
 	**/

@@ -24,9 +24,6 @@
 
 package js.web.sw;
 
-/**
-	TODO member requestPermission (?deprecatedCallback:NotificationPermissionCallback) -> js.lib.Promise<NotificationPermission> exposed for [Window]
-**/
 @:native("Notification") extern class Notification extends js.web.dom.EventTarget {
 	static var permission(default, null) : NotificationPermission;
 	static var maxActions(default, null) : Int;
@@ -57,4 +54,5 @@ package js.web.sw;
 	var actions(default, null) : Array<NotificationAction>;
 	function new(title:String, ?options:NotificationOptions):Void;
 	function close():Void;
+	function requestPermission(?deprecatedCallback:NotificationPermissionCallback):js.lib.Promise<NotificationPermission>;
 }

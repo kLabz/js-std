@@ -24,10 +24,8 @@
 
 package js.web.css;
 
-/**
-	TODO member parse (property:String, cssText:String) -> CSSStyleValue exposed for [Window]
-	TODO member parseAll (property:String, cssText:String) -> Array<CSSStyleValue> exposed for [Window]
-**/
 @:native("CSSStyleValue") extern class CSSStyleValue {
+	function parse(property:String, cssText:String):CSSStyleValue;
+	function parseAll(property:String, cssText:String):Array<CSSStyleValue>;
 	function toString():String;
 }

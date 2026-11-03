@@ -55,14 +55,17 @@ package js.web.svg;
 	var height(default, null) : SVGAnimatedLength;
 	/**
 		From interface mixin SVGFitToViewBox
+		Unhandled extended attribute SameObject
 	**/
 	var viewBox(default, null) : SVGAnimatedRect;
 	/**
 		From interface mixin SVGFitToViewBox
+		Unhandled extended attribute SameObject
 	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 	/**
 		From interface mixin SVGURIReference
+		Unhandled extended attribute SameObject
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

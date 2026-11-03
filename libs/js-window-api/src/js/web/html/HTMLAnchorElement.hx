@@ -87,10 +87,12 @@ package js.web.html;
 	var hash : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		Unhandled extended attribute Reflect
 	**/
 	var hreflang : String;
 	/**
 		From interface mixin HyperlinkElementUtils
+		Unhandled extended attribute Reflect
 	**/
 	var type : String;
 	/**

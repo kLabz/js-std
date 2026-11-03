@@ -25,8 +25,5 @@
 package js.web.html;
 
 @:native("VisibilityStateEntry") extern class VisibilityStateEntry extends js.web.perf.PerformanceEntry {
-	var name(default, null) : String;
-	var entryType(default, null) : String;
-	var startTime(default, null) : js.web.perf.DOMHighResTimeStamp;
-	var duration(default, null) : Int;
+
 }

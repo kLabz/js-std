@@ -24,4 +24,4 @@
 
 package js.web.media;
 
-typedef MediaStreamTrackOrHandle = haxe.extern.EitherType<MediaStreamTrack, MediaStreamTrackHandle>;
+typedef MediaStreamTrackOrHandle = MediaStreamTrackHandle;

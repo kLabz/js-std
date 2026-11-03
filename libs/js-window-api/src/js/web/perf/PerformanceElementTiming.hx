@@ -31,7 +31,6 @@ package js.web.perf;
 	var identifier(default, null) : String;
 	var naturalWidth(default, null) : Int;
 	var naturalHeight(default, null) : Int;
-	var id(default, null) : String;
 	var element(default, null) : Null<js.web.dom.Element>;
 	var url(default, null) : String;
 	/**

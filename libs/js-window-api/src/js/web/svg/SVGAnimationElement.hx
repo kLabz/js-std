@@ -31,10 +31,12 @@ package js.web.svg;
 	var onrepeat : js.web.html.EventHandler;
 	/**
 		From interface mixin SVGTests
+		Unhandled extended attribute SameObject
 	**/
 	var requiredExtensions(default, null) : SVGStringList;
 	/**
 		From interface mixin SVGTests
+		Unhandled extended attribute SameObject
 	**/
 	var systemLanguage(default, null) : SVGStringList;
 	function beginElement():Void;

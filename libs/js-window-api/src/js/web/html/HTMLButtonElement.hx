@@ -70,6 +70,7 @@ package js.web.html;
 	var labels(default, null) : js.web.dom.NodeList;
 	/**
 		From interface mixin PopoverTargetAttributes
+		Unhandled extended attribute Reflect
 	**/
 	var popoverTargetElement : Null<js.web.dom.Element>;
 	/**

@@ -28,7 +28,6 @@ package js.web.html;
 	TODO special=setter (index:Int, option:Null<HTMLOptionElement>) -> Void
 **/
 @:native("HTMLOptionsCollection") extern class HTMLOptionsCollection extends js.web.dom.HTMLCollection {
-	var length : Int;
 	var selectedIndex : Int;
 	function add(element:haxe.extern.EitherType<HTMLOptionElement, HTMLOptGroupElement>, ?before:Null<haxe.extern.EitherType<HTMLElement, Int>> = null):Void;
 	function remove(index:Int):Void;

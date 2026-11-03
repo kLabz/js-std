@@ -25,7 +25,6 @@
 package js.web.dom;
 
 /**
-	TODO member  () -> Void exposed for [Window]
 	Unhandled extended attribute Serializable
 **/
 @:native("DOMMatrixReadOnly") extern class DOMMatrixReadOnly {

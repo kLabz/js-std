@@ -49,6 +49,7 @@ package js.web.svg;
 	var result(default, null) : SVGAnimatedString;
 	/**
 		From interface mixin SVGURIReference
+		Unhandled extended attribute SameObject
 	**/
 	var href(default, null) : SVGAnimatedString;
 }

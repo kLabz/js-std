@@ -1216,7 +1216,7 @@ package js.web.webgl;
 	/**
 		From interface mixin WebGLRenderingContextBase
 	**/
-	var canvas(default, null) : haxe.extern.EitherType<js.web.html.HTMLCanvasElement, js.web.canvas.OffscreenCanvas>;
+	var canvas(default, null) : js.web.canvas.OffscreenCanvas;
 	/**
 		From interface mixin WebGLRenderingContextBase
 	**/

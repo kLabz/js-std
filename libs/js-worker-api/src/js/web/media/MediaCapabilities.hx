@@ -28,9 +28,5 @@ package js.web.media;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function decodingInfo(configuration:MediaDecodingConfiguration):js.lib.Promise<MediaCapabilitiesDecodingInfo>;
-	/**
-		Unhandled extended attribute NewObject
-	**/
 	function encodingInfo(configuration:MediaEncodingConfiguration):js.lib.Promise<MediaCapabilitiesEncodingInfo>;
 }

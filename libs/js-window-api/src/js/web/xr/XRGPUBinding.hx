@@ -41,6 +41,6 @@ package js.web.xr;
 	**/
 	function getDepthInformation(view:XRView):Null<XRGPUDepthInformation>;
 	function getPreferredColorFormat():js.web.webgpu.GPUTextureFormat;
-	function getSubImage(layer:XRCompositionLayer, frame:XRFrame, ?eye:XREye = NONE):XRGPUSubImage;
+	function getSubImage(layer:XRCompositionLayer, frame:XRFrame, ?eye:XREye = XREye.NONE):XRGPUSubImage;
 	function getViewSubImage(layer:XRProjectionLayer, view:XRView):XRGPUSubImage;
 }

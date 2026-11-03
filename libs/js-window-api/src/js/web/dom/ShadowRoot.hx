@@ -34,6 +34,7 @@ package js.web.dom;
 	var onslotchange : js.web.html.EventHandler;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		Unhandled extended attribute SameObject
 	**/
 	var styleSheets(default, null) : js.web.css.StyleSheetList;
 	/**
@@ -46,6 +47,7 @@ package js.web.dom;
 	var customElementRegistry(default, null) : Null<js.web.html.CustomElementRegistry>;
 	/**
 		From interface mixin DocumentOrShadowRoot
+		Unhandled extended attribute LegacyLenientSetter
 	**/
 	var fullscreenElement(default, null) : Null<Element>;
 	/**

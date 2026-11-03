@@ -56,19 +56,9 @@ package js.web.sw;
 	**/
 	var index(default, null) : ContentIndex;
 	/**
-		From partial interface in cookiestore.idl
-		Unhandled extended attribute SameObject
-	**/
-	var cookies(default, null) : js.web.storage.CookieStoreManager;
-	/**
 		From partial interface in periodic-background-sync.idl
 	**/
 	var periodicSync(default, null) : PeriodicSyncManager;
-	/**
-		From partial interface in web-based-payment-handler.idl
-		Unhandled extended attribute SameObject
-	**/
-	var paymentManager(default, null) : PaymentManager;
 	/**
 		From partial interface in notifications.idl
 	**/

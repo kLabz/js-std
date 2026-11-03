@@ -37,6 +37,7 @@ package js.web.xr;
 	var projectionMatrix(default, null) : js.lib.Float32Array;
 	/**
 		From interface mixin XRViewGeometry
+		Unhandled extended attribute SameObject
 	**/
 	var transform(default, null) : XRRigidTransform;
 	/**

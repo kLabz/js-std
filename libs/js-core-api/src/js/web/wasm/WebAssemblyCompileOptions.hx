@@ -25,8 +25,14 @@
 package js.web.wasm;
 
 typedef WebAssemblyCompileOptions = {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var importedStringConstants : Null<String>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var builtins : Array<String>;
 };

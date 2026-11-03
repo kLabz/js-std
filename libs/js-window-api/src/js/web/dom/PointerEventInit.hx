@@ -25,34 +25,67 @@
 package js.web.dom;
 
 typedef PointerEventInit = MouseEventInit & {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var pointerId : Int;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var width : Float;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var height : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var pressure : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var tangentialPressure : Float;
 	@:optional
 	var tiltX : Int;
 	@:optional
 	var tiltY : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var twist : Int;
 	@:optional
 	var altitudeAngle : Float;
 	@:optional
 	var azimuthAngle : Float;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var pointerType : String;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var isPrimary : Bool;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var persistentDeviceId : Int;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var coalescedEvents : Array<PointerEvent>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var predictedEvents : Array<PointerEvent>;
 };

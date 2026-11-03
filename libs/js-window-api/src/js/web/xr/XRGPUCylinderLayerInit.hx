@@ -27,10 +27,19 @@ package js.web.xr;
 typedef XRGPUCylinderLayerInit = XRGPULayerInit & {
 	@:optional
 	var transform : Null<XRRigidTransform>;
+	/**
+		Default: `2.0`
+	**/
 	@:optional
 	var radius : Float;
+	/**
+		Default: `0.78539`
+	**/
 	@:optional
 	var centralAngle : Float;
+	/**
+		Default: `2.0`
+	**/
 	@:optional
 	var aspectRatio : Float;
 };

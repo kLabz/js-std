@@ -27,6 +27,9 @@ package js.web.html;
 typedef SetHTMLUnsafeOptions = {
 	@:optional
 	var sanitizer : haxe.extern.EitherType<SanitizerConfig, SanitizerPresets>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var runScripts : Bool;
 };

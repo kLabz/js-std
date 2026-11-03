@@ -25,10 +25,19 @@
 package js.web.webgpu;
 
 typedef GPUOrigin3DDict = {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var x : GPUIntegerCoordinate;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var y : GPUIntegerCoordinate;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var z : GPUIntegerCoordinate;
 };

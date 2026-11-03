@@ -55,7 +55,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Headers/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<String, String>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, String>>;
 	/**
 		The **`Headers.forEach()`** method executes a callback function once per each key/value pair in the [`Headers`](https://developer.mozilla.org/en-US/docs/Web/API/Headers) object.
 		

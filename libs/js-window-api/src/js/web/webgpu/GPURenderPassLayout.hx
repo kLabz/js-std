@@ -28,6 +28,9 @@ typedef GPURenderPassLayout = GPUObjectDescriptorBase & {
 	var colorFormats : Array<Null<GPUTextureFormat>>;
 	@:optional
 	var depthStencilFormat : GPUTextureFormat;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var sampleCount : GPUSize32;
 };

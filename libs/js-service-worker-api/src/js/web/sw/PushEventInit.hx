@@ -25,8 +25,14 @@
 package js.web.sw;
 
 typedef PushEventInit = ExtendableEventInit & {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var data : Null<PushMessageDataInit>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var notification : Null<Notification>;
 };

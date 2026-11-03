@@ -26,8 +26,14 @@ package js.web.css;
 
 typedef ViewTimelineOptions = {
 	var subject : js.web.dom.Element;
+	/**
+		Default: `ScrollAxis.BLOCK`
+	**/
 	@:optional
 	var axis : ScrollAxis;
+	/**
+		Default: `"auto"`
+	**/
 	@:optional
 	var inset : haxe.extern.EitherType<String, Array<haxe.extern.EitherType<CSSNumericValue, CSSKeywordValue>>>;
 };

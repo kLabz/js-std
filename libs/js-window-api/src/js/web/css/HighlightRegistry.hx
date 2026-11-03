@@ -55,7 +55,7 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HighlightRegistry/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<String, Highlight>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, Highlight>>;
 	/**
 		The **`forEach()`** method of the `HighlightRegistry` interface executes a provided function once for each `Highlight` object in the registry, in insertion order.
 		

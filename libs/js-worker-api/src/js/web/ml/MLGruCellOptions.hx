@@ -29,8 +29,14 @@ typedef MLGruCellOptions = MLOperatorOptions & {
 	var bias : MLOperand;
 	@:optional
 	var recurrentBias : MLOperand;
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var resetAfter : Bool;
+	/**
+		Default: `MLGruWeightLayout.ZRN`
+	**/
 	@:optional
 	var layout : MLGruWeightLayout;
 	@:optional

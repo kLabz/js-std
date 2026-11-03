@@ -25,6 +25,9 @@
 package js.web.net;
 
 typedef ReadableStreamIteratorOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var preventCancel : Bool;
 };

@@ -25,22 +25,43 @@
 package js.web.css;
 
 typedef EffectTiming = {
+	/**
+		Default: `FillMode.AUTO`
+	**/
 	@:optional
 	var fill : FillMode;
+	/**
+		Default: `0.0`
+	**/
 	@:optional
 	var iterationStart : Float;
+	/**
+		Default: `1.0`
+	**/
 	@:optional
 	var iterations : Float;
+	/**
+		Default: `PlaybackDirection.NORMAL`
+	**/
 	@:optional
 	var direction : PlaybackDirection;
+	/**
+		Default: `"linear"`
+	**/
 	@:optional
 	var easing : String;
 	@:optional
 	var delay : Float;
 	@:optional
 	var endDelay : Float;
+	/**
+		Default: `1.0`
+	**/
 	@:optional
 	var playbackRate : Float;
+	/**
+		Default: `"auto"`
+	**/
 	@:optional
 	var duration : haxe.extern.EitherType<Float, haxe.extern.EitherType<CSSNumericValue, String>>;
 };

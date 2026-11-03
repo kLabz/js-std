@@ -25,6 +25,9 @@
 package js.web.css;
 
 typedef FontFaceSetLoadEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var fontfaces : Array<FontFace>;
 };

@@ -38,12 +38,24 @@ typedef VideoDecoderConfig = {
 	var displayAspectHeight : Int;
 	@:optional
 	var colorSpace : VideoColorSpaceInit;
+	/**
+		Default: `HardwareAcceleration.NO_PREFERENCE`
+	**/
 	@:optional
 	var hardwareAcceleration : HardwareAcceleration;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var optimizeForLatency : Bool;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var rotation : Float;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var flip : Bool;
 };

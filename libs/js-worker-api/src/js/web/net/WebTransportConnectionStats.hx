@@ -48,8 +48,14 @@ typedef WebTransportConnectionStats = {
 	@:optional
 	var minRtt : js.web.perf.DOMHighResTimeStamp;
 	var datagrams : WebTransportDatagramStats;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var estimatedSendRate : Null<Float>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var atSendCapacity : Bool;
 };

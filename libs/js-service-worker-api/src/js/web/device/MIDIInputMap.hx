@@ -35,7 +35,7 @@ package js.web.device;
 **/
 @:native("MIDIInputMap") extern class MIDIInputMap {
 	var size(default, null) : Int;
-	function entries():js.lib.Iterator<js.lib.Tuple<String, MIDIInput>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, MIDIInput>>;
 	function forEach(callback:(value:MIDIInput, key:String, map:MIDIInputMap) -> Void, ?thisArg:Any):Void;
 	function get(key:String):Null<MIDIInput>;
 	function has(key:String):Bool;

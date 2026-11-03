@@ -25,8 +25,14 @@
 package js.web.ml;
 
 typedef MLArgMinMaxOptions = MLOperatorOptions & {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var keepDimensions : Bool;
+	/**
+		Default: `MLOperandDataType.INT32`
+	**/
 	@:optional
 	var outputDataType : MLOperandDataType;
 };

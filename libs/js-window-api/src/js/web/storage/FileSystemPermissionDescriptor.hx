@@ -26,6 +26,9 @@ package js.web.storage;
 
 typedef FileSystemPermissionDescriptor = js.web.misc.PermissionDescriptor & {
 	var handle : FileSystemHandle;
+	/**
+		Default: `FileSystemPermissionMode.READ`
+	**/
 	@:optional
 	var mode : FileSystemPermissionMode;
 };

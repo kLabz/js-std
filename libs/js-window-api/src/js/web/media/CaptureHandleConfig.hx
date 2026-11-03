@@ -25,10 +25,19 @@
 package js.web.media;
 
 typedef CaptureHandleConfig = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var exposeOrigin : Bool;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var handle : String;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var permittedOrigins : Array<String>;
 };

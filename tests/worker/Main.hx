@@ -25,6 +25,8 @@ class Main {
 		var headers = new Headers();
 		headers.set("X-Test", "1");
 		check(headers.get("x-test") == "1", "Headers.get");
+		var entry = headers.entries().next().value;
+		check(entry.key == "x-test" && entry.value == "1", "Headers.entries");
 
 		var bytes = new TextEncoder().encode("héllo");
 		check(bytes.length == 6, "TextEncoder.encode");

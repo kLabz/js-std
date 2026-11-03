@@ -27,8 +27,14 @@ package js.web.device;
 typedef BluetoothLEScanOptions = {
 	@:optional
 	var filters : Array<BluetoothLEScanFilterInit>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var keepRepeatedDevices : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var acceptAllAdvertisements : Bool;
 };

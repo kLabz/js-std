@@ -25,6 +25,9 @@
 package js.web.xr;
 
 typedef XRLightProbeInit = {
+	/**
+		Default: `XRReflectionFormat.SRGBA8`
+	**/
 	@:optional
 	var reflectionFormat : XRReflectionFormat;
 };

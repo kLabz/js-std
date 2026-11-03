@@ -25,10 +25,19 @@
 package js.web.css;
 
 typedef KeyframeEffectOptions = EffectTiming & {
+	/**
+		Default: `CompositeOperation.REPLACE`
+	**/
 	@:optional
 	var composite : CompositeOperation;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var pseudoElement : Null<String>;
+	/**
+		Default: `IterationCompositeOperation.REPLACE`
+	**/
 	@:optional
 	var iterationComposite : IterationCompositeOperation;
 };

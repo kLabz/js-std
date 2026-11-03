@@ -25,6 +25,9 @@
 package js.web.net;
 
 typedef TextDecodeOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var stream : Bool;
 };

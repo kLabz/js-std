@@ -25,6 +25,9 @@
 package js.web.net;
 
 typedef ReadableStreamBYOBReaderReadOptions = {
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var min : Float;
 };

@@ -25,11 +25,20 @@
 package js.web.css;
 
 typedef ScrollIntoViewOptions = ScrollOptions & {
+	/**
+		Default: `ScrollLogicalPosition.START`
+	**/
 	@:optional
 	var block : ScrollLogicalPosition;
+	/**
+		Default: `ScrollLogicalPosition.NEAREST`
+	**/
 	@:optional
 	@:native("inline")
 	var inline_ : ScrollLogicalPosition;
+	/**
+		Default: `ScrollIntoViewContainer.ALL`
+	**/
 	@:optional
 	var container : ScrollIntoViewContainer;
 };

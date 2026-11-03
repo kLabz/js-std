@@ -25,6 +25,9 @@
 package js.web.ml;
 
 typedef MLOperatorOptions = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var label : String;
 };

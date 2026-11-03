@@ -25,12 +25,18 @@
 package js.web.auth;
 
 typedef CredentialRequestOptions = {
+	/**
+		Default: `CredentialMediationRequirement.OPTIONAL`
+	**/
 	@:optional
 	var mediation : CredentialMediationRequirement;
 	@:optional
 	var uiMode : String;
 	@:optional
 	var signal : js.web.dom.AbortSignal;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var password : Bool;
 	@:optional

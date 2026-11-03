@@ -25,6 +25,9 @@
 package js.web.dom;
 
 typedef EventListenerOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var capture : Bool;
 };

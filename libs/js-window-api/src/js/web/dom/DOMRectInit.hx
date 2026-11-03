@@ -25,12 +25,24 @@
 package js.web.dom;
 
 typedef DOMRectInit = {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var x : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var y : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var width : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var height : Float;
 };

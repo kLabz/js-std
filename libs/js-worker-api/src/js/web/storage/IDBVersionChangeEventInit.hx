@@ -25,8 +25,14 @@
 package js.web.storage;
 
 typedef IDBVersionChangeEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var oldVersion : Float;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var newVersion : Null<Float>;
 };

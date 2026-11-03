@@ -27,14 +27,29 @@ package js.web.css;
 typedef AnimationTriggerOptions = {
 	@:optional
 	var timeline : Null<AnimationTimeline>;
+	/**
+		Default: `AnimationTriggerBehavior.ONCE`
+	**/
 	@:optional
 	var behavior : Null<AnimationTriggerBehavior>;
+	/**
+		Default: `"normal"`
+	**/
 	@:optional
 	var activationRangeStart : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<CSSNumericValue, haxe.extern.EitherType<CSSKeywordValue, String>>>;
+	/**
+		Default: `"normal"`
+	**/
 	@:optional
 	var activationRangeEnd : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<CSSNumericValue, haxe.extern.EitherType<CSSKeywordValue, String>>>;
+	/**
+		Default: `"auto"`
+	**/
 	@:optional
 	var activeRangeStart : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<CSSNumericValue, haxe.extern.EitherType<CSSKeywordValue, String>>>;
+	/**
+		Default: `"auto"`
+	**/
 	@:optional
 	var activeRangeEnd : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<CSSNumericValue, haxe.extern.EitherType<CSSKeywordValue, String>>>;
 };

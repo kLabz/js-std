@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef ChannelSplitterOptions = AudioNodeOptions & {
+	/**
+		Default: `6`
+	**/
 	@:optional
 	var numberOfOutputs : Int;
 };

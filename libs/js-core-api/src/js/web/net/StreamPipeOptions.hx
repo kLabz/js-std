@@ -25,10 +25,19 @@
 package js.web.net;
 
 typedef StreamPipeOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var preventClose : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var preventAbort : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var preventCancel : Bool;
 	@:optional

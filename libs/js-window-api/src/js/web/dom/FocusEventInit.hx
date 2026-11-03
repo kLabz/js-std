@@ -25,6 +25,9 @@
 package js.web.dom;
 
 typedef FocusEventInit = UIEventInit & {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var relatedTarget : Null<EventTarget>;
 };

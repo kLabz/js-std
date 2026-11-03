@@ -26,8 +26,14 @@ package js.web.media;
 
 typedef SpeechRecognitionOptions = {
 	var langs : Array<String>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var processLocally : Bool;
+	/**
+		Default: `SpeechRecognitionQuality.COMMAND`
+	**/
 	@:optional
 	var quality : SpeechRecognitionQuality;
 };

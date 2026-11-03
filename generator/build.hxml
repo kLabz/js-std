@@ -1,5 +1,4 @@
 -cp src
--cp static/js-core-api/src
 -lib hxnodejs
 -resource res/copyright.md@copyright
 -main Main

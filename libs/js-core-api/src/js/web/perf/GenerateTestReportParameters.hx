@@ -26,6 +26,9 @@ package js.web.perf;
 
 typedef GenerateTestReportParameters = {
 	var message : String;
+	/**
+		Default: `"default"`
+	**/
 	@:optional
 	var group : String;
 };

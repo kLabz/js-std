@@ -31,10 +31,19 @@ typedef MLConv2dOptions = MLOperatorOptions & {
 	var strides : Array<Int>;
 	@:optional
 	var dilations : Array<Int>;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var groups : Int;
+	/**
+		Default: `MLInputOperandLayout.NCHW`
+	**/
 	@:optional
 	var inputLayout : MLInputOperandLayout;
+	/**
+		Default: `MLConv2dFilterOperandLayout.OIHW`
+	**/
 	@:optional
 	var filterLayout : MLConv2dFilterOperandLayout;
 	@:optional

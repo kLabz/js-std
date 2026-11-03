@@ -26,6 +26,9 @@ package js.web.wasm;
 
 typedef GlobalDescriptor = {
 	var value : ValueType;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var mutable : Bool;
 };

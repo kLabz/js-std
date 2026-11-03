@@ -25,8 +25,14 @@
 package js.web.css;
 
 typedef MediaQueryListEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var media : String;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var matches : Bool;
 };

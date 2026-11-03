@@ -25,8 +25,14 @@
 package js.web.html;
 
 typedef FullscreenOptions = {
+	/**
+		Default: `FullscreenKeyboardLock.NONE`
+	**/
 	@:optional
 	var keyboardLock : FullscreenKeyboardLock;
+	/**
+		Default: `FullscreenNavigationUI.AUTO`
+	**/
 	@:optional
 	var navigationUI : FullscreenNavigationUI;
 	@:optional

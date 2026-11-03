@@ -25,6 +25,9 @@
 package js.web.webrtc;
 
 typedef RTCIdentityProviderOptions = {
+	/**
+		Default: `"default"`
+	**/
 	@:optional
 	var protocol : String;
 	@:optional

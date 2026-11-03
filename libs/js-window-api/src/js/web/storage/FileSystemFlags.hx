@@ -25,8 +25,14 @@
 package js.web.storage;
 
 typedef FileSystemFlags = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var create : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var exclusive : Bool;
 };

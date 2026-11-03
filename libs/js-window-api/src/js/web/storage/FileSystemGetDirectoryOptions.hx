@@ -25,6 +25,9 @@
 package js.web.storage;
 
 typedef FileSystemGetDirectoryOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var create : Bool;
 };

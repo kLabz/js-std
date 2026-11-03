@@ -25,6 +25,9 @@
 package js.web.net;
 
 typedef URLPatternOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var ignoreCase : Bool;
 };

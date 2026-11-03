@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef DragEventInit = js.web.dom.MouseEventInit & {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var dataTransfer : Null<DataTransfer>;
 };

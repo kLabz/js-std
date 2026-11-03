@@ -25,8 +25,14 @@
 package js.web.media;
 
 typedef DisplayMediaStreamOptions = {
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var video : haxe.extern.EitherType<Bool, MediaTrackConstraints>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var audio : haxe.extern.EitherType<Bool, MediaTrackConstraints>;
 	@:optional

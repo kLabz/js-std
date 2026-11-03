@@ -350,8 +350,8 @@ class Main {
 						macro :Array<$inner>;
 
 					case IDLAsyncSequenceTypeDescription:
-						// TODO: needs an AsyncIterable type in std
-						macro :Dynamic;
+						// Async iterables are recognized by a `Symbol.asyncIterator` method, which Haxe structures can't declare
+						macro :Any;
 
 					case _: throw 'Unexpected generic ${t.generic}.';
 				}
@@ -558,10 +558,11 @@ class Main {
 					tasks.push(() -> {
 						var ctx = initCtx(file, t.name, scope);
 
-						var ct = TFunction(
-							// TODO: make sure that arguments' extended attributes are handled
-							// TODO: handle a.variadic
-							t.arguments.map(a ->
+						// Haxe function types need matching arity: a trailing `any... arguments` would force callers
+						// to declare it, while JS simply ignores extra arguments
+						var args = t.arguments.filter(a -> !a.variadic);
+						var ct = t.name == "Function" ? macro :haxe.Constraints.Function : TFunction(
+							args.map(a ->
 								a.optional
 									? TOptional(TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType)))
 									: TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType))
@@ -682,13 +683,16 @@ class Main {
 						var members = partials.fold((p, acc) -> acc.concat(p.members), t.members);
 						var fields = members.map(m -> {
 							var meta = m.required ? [] : [{name: ":optional", pos: ctx.pos}];
+							var ct = convertType(ctx, m.idlType);
+							var doc = addUnhandledAttributesToDoc(null, m.extAttrs);
+							// Structure fields can't carry default values
+							var value = try convertValue(m.default_, ct, false, ctx.pos) catch (_) null;
+							if (value != null) doc = doc.concat('Default: `${printer.printExpr(value)}`', "\n");
 							({
-								// TODO: @:native won't be enough for typedef..
+								// TODO: Haxe ignores @:native on structure fields, so keyword-named members (`inline`) get the wrong name
 								name: sanitizeIdentifier(m.name, meta, ctx.pos),
-								doc: addUnhandledAttributesToDoc(null, m.extAttrs),
-								// TODO: add default value in doc
-								kind: FVar(convertType(ctx, m.idlType)),
-								// kind: FVar(convertType(ctx, m.idlType), convertValue(m.default_, ctx.pos)),
+								doc: doc,
+								kind: FVar(ct),
 								pos: ctx.pos,
 								meta: meta
 							}:Field);
@@ -1082,7 +1086,7 @@ class Main {
 				var tvalue = convertType(ctx, m.idlType.first);
 				var fields = (macro class A {
 					var size(default, null):Int;
-					function entries():js.lib.Iterator<js.lib.Tuple<$tvalue, $tvalue>>;
+					function entries():js.lib.Iterator<js.lib.KeyValue<$tvalue, $tvalue>>;
 					function keys():js.lib.Iterator<$tvalue>;
 					function values():js.lib.Iterator<$tvalue>;
 					function forEach(callback:(value:$tvalue, key:$tvalue, set:$self) -> Void, ?thisArg:Any):Void;
@@ -1100,7 +1104,7 @@ class Main {
 				var tvalue = convertType(ctx, m.idlType.second);
 				var fields = (macro class A {
 					var size(default, null):Int;
-					function entries():js.lib.Iterator<js.lib.Tuple<$tkey, $tvalue>>;
+					function entries():js.lib.Iterator<js.lib.KeyValue<$tkey, $tvalue>>;
 					function keys():js.lib.Iterator<$tkey>;
 					function values():js.lib.Iterator<$tvalue>;
 					function forEach(callback:(value:$tvalue, key:$tkey, map:$self) -> Void, ?thisArg:Any):Void;
@@ -1125,7 +1129,7 @@ class Main {
 					var tkey = convertType(ctx, m.idlType.first);
 					var tvalue = convertType(ctx, m.idlType.second);
 					(macro class A {
-						function entries():js.lib.Iterator.AsyncIterator<js.lib.Tuple<$tkey, $tvalue>>;
+						function entries():js.lib.Iterator.AsyncIterator<js.lib.KeyValue<$tkey, $tvalue>>;
 						function keys():js.lib.Iterator.AsyncIterator<$tkey>;
 						function values():js.lib.Iterator.AsyncIterator<$tvalue>;
 					}).fields;
@@ -1142,7 +1146,7 @@ class Main {
 				var tkey = single ? macro :Int : convertType(ctx, m.idlType.first);
 				var tvalue = convertType(ctx, single ? m.idlType.first : m.idlType.second);
 				addDeclarationFields(ctx, (macro class A {
-					function entries():js.lib.Iterator<js.lib.Tuple<$tkey, $tvalue>>;
+					function entries():js.lib.Iterator<js.lib.KeyValue<$tkey, $tvalue>>;
 					function keys():js.lib.Iterator<$tkey>;
 					function values():js.lib.Iterator<$tvalue>;
 					function forEach(callback:(value:$tvalue, key:$tkey, parent:$self) -> Void, ?thisArg:Any):Void;
@@ -1311,7 +1315,7 @@ class Main {
 	static function getName(member:IDLInterfaceMemberType):String {
 		function get<T:AbstractBase<T>>(m:T):String {
 			return switch (m.type) {
-				// TODO
+				// At most one declaration per interface; their generated methods are deduplicated separately
 				case IDLSetlikeDeclarationMemberType: null;
 				case IDLMaplikeDeclarationMemberType: null;
 				case IDLIterableDeclarationMemberType: null;

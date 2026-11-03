@@ -25,6 +25,9 @@
 package js.web.dom;
 
 typedef CompositionEventInit = UIEventInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var data : String;
 };

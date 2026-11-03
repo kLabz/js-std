@@ -29,8 +29,14 @@ typedef MLBatchNormalizationOptions = MLOperatorOptions & {
 	var scale : MLOperand;
 	@:optional
 	var bias : MLOperand;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var axis : Int;
+	/**
+		Default: `1e-5`
+	**/
 	@:optional
 	var epsilon : Float;
 };

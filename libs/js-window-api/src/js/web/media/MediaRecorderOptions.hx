@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef MediaRecorderOptions = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var mimeType : String;
 	@:optional
@@ -33,6 +36,9 @@ typedef MediaRecorderOptions = {
 	var videoBitsPerSecond : Int;
 	@:optional
 	var bitsPerSecond : Int;
+	/**
+		Default: `BitrateMode.VARIABLE`
+	**/
 	@:optional
 	var audioBitrateMode : BitrateMode;
 	@:optional

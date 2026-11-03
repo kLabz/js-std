@@ -25,20 +25,44 @@
 package js.web.net;
 
 typedef WebTransportOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var allowPooling : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var requireUnreliable : Bool;
+	/**
+		Default: `{  }`
+	**/
 	@:optional
 	var headers : HeadersInit;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var serverCertificateHashes : Array<WebTransportHash>;
+	/**
+		Default: `WebTransportCongestionControl.DEFAULT`
+	**/
 	@:optional
 	var congestionControl : WebTransportCongestionControl;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var anticipatedConcurrentIncomingUnidirectionalStreams : Null<Int>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var anticipatedConcurrentIncomingBidirectionalStreams : Null<Int>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var protocols : Array<String>;
 	@:optional

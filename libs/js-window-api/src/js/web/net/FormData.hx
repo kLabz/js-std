@@ -61,7 +61,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/FormData/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<String, FormDataEntryValue>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, FormDataEntryValue>>;
 	function forEach(callback:(value:FormDataEntryValue, key:String, parent:FormData) -> Void, ?thisArg:Any):Void;
 	/**
 		The **`get()`** method of the `FormData` interface returns the first value associated with a given key from within a `FormData` object. If you expect multiple values and want all of them, use the `getAll()` method instead.

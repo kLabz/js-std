@@ -25,6 +25,9 @@
 package js.web.webrtc;
 
 typedef RTCDTMFToneChangeEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var tone : String;
 };

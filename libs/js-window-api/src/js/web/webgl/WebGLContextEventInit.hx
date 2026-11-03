@@ -25,6 +25,9 @@
 package js.web.webgl;
 
 typedef WebGLContextEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var statusMessage : String;
 };

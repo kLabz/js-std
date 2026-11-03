@@ -25,8 +25,14 @@
 package js.web.html;
 
 typedef AutofillEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var autofillValues : Array<AutofillValueEntry>;
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var allowRefill : Bool;
 };

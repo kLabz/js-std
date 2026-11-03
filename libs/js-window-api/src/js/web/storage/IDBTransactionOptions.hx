@@ -25,6 +25,9 @@
 package js.web.storage;
 
 typedef IDBTransactionOptions = {
+	/**
+		Default: `IDBTransactionDurability.DEFAULT`
+	**/
 	@:optional
 	var durability : IDBTransactionDurability;
 };

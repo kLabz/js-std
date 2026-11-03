@@ -27,14 +27,29 @@ package js.web.webgpu;
 typedef GPUCanvasConfiguration = {
 	var device : GPUDevice;
 	var format : GPUTextureFormat;
+	/**
+		Default: `0x10`
+	**/
 	@:optional
 	var usage : GPUTextureUsageFlags;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var viewFormats : Array<GPUTextureFormat>;
+	/**
+		Default: `js.web.canvas.PredefinedColorSpace.SRGB`
+	**/
 	@:optional
 	var colorSpace : js.web.canvas.PredefinedColorSpace;
+	/**
+		Default: `{  }`
+	**/
 	@:optional
 	var toneMapping : GPUCanvasToneMapping;
+	/**
+		Default: `GPUCanvasAlphaMode.OPAQUE`
+	**/
 	@:optional
 	var alphaMode : GPUCanvasAlphaMode;
 };

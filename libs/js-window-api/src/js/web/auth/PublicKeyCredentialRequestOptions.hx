@@ -30,10 +30,19 @@ typedef PublicKeyCredentialRequestOptions = {
 	var timeout : Int;
 	@:optional
 	var rpId : String;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var allowCredentials : Array<PublicKeyCredentialDescriptor>;
+	/**
+		Default: `"preferred"`
+	**/
 	@:optional
 	var userVerification : String;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var hints : Array<String>;
 	@:optional

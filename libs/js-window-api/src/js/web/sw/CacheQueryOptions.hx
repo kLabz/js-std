@@ -25,10 +25,19 @@
 package js.web.sw;
 
 typedef CacheQueryOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var ignoreSearch : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var ignoreMethod : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var ignoreVary : Bool;
 };

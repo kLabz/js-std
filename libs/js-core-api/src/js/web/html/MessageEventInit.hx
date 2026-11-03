@@ -25,14 +25,29 @@
 package js.web.html;
 
 typedef MessageEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var data : Any;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var origin : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var lastEventId : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var source : Null<MessageEventSource>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var ports : Array<MessagePort>;
 };

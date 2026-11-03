@@ -25,6 +25,9 @@
 package js.web.dom;
 
 typedef ResizeObserverOptions = {
+	/**
+		Default: `ResizeObserverBoxOptions.CONTENT_BOX`
+	**/
 	@:optional
 	var box : ResizeObserverBoxOptions;
 };

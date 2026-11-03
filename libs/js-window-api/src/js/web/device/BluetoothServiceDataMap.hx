@@ -31,7 +31,7 @@ package js.web.device;
 **/
 @:native("BluetoothServiceDataMap") @:require(js_experimental_api, "BluetoothServiceDataMap is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothServiceDataMap {
 	var size(default, null) : Int;
-	function entries():js.lib.Iterator<js.lib.Tuple<UUID, js.lib.DataView>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<UUID, js.lib.DataView>>;
 	function forEach(callback:(value:js.lib.DataView, key:UUID, map:BluetoothServiceDataMap) -> Void, ?thisArg:Any):Void;
 	function get(key:UUID):Null<js.lib.DataView>;
 	function has(key:UUID):Bool;

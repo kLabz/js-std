@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef PointerLockOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var unadjustedMovement : Bool;
 };

@@ -49,7 +49,7 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSUnparsedValue/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<Int, CSSUnparsedSegment>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<Int, CSSUnparsedSegment>>;
 	/**
 		The **`forEach()`** method of the `CSSUnparsedValue` interface executes a provided function once for each item in the object.
 		

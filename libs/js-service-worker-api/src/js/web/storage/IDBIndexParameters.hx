@@ -25,8 +25,14 @@
 package js.web.storage;
 
 typedef IDBIndexParameters = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var unique : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var multiEntry : Bool;
 };

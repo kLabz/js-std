@@ -25,10 +25,19 @@
 package js.web.webgpu;
 
 typedef GPUBufferBindingLayout = {
+	/**
+		Default: `GPUBufferBindingType.UNIFORM`
+	**/
 	@:optional
 	var type : GPUBufferBindingType;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var hasDynamicOffset : Bool;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var minBindingSize : GPUSize64;
 };

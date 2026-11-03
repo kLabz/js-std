@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef SharedWorkerOptions = WorkerOptions & {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var extendedLifetime : Bool;
 	@:optional

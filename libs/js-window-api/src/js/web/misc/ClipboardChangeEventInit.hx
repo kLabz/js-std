@@ -25,8 +25,14 @@
 package js.web.misc;
 
 typedef ClipboardChangeEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var types : Array<String>;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var changeId : js.lib.BigInt;
 };

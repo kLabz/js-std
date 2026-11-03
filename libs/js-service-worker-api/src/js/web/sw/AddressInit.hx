@@ -25,24 +25,54 @@
 package js.web.sw;
 
 typedef AddressInit = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var country : String;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var addressLine : Array<String>;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var region : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var city : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var dependentLocality : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var postalCode : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var sortingCode : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var organization : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var recipient : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var phone : String;
 };

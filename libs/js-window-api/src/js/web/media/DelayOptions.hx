@@ -25,8 +25,14 @@
 package js.web.media;
 
 typedef DelayOptions = AudioNodeOptions & {
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var maxDelayTime : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var delayTime : Float;
 };

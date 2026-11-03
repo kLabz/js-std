@@ -25,6 +25,9 @@
 package js.web.webrtc;
 
 typedef RTCRtpEncodingParameters = RTCRtpCodingParameters & {
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var active : Bool;
 	@:optional
@@ -35,6 +38,9 @@ typedef RTCRtpEncodingParameters = RTCRtpCodingParameters & {
 	var maxFramerate : Float;
 	@:optional
 	var scaleResolutionDownBy : Float;
+	/**
+		Default: `RTCPriorityType.LOW`
+	**/
 	@:optional
 	var priority : RTCPriorityType;
 	@:optional

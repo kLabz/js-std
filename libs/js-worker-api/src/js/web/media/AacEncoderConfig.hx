@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef AacEncoderConfig = {
+	/**
+		Default: `AacBitstreamFormat.AAC`
+	**/
 	@:optional
 	var format : AacBitstreamFormat;
 };

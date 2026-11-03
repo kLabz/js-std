@@ -25,20 +25,41 @@
 package js.web.media;
 
 typedef OpusEncoderConfig = {
+	/**
+		Default: `OpusBitstreamFormat.OPUS`
+	**/
 	@:optional
 	var format : OpusBitstreamFormat;
+	/**
+		Default: `OpusSignal.AUTO`
+	**/
 	@:optional
 	var signal : OpusSignal;
+	/**
+		Default: `OpusApplication.AUDIO`
+	**/
 	@:optional
 	var application : OpusApplication;
+	/**
+		Default: `20000`
+	**/
 	@:optional
 	var frameDuration : Float;
 	@:optional
 	var complexity : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var packetlossperc : Int;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var useinbandfec : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var usedtx : Bool;
 };

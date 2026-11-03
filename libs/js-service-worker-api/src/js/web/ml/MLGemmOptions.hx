@@ -27,12 +27,24 @@ package js.web.ml;
 typedef MLGemmOptions = MLOperatorOptions & {
 	@:optional
 	var c : MLOperand;
+	/**
+		Default: `1.0`
+	**/
 	@:optional
 	var alpha : Float;
+	/**
+		Default: `1.0`
+	**/
 	@:optional
 	var beta : Float;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var aTranspose : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var bTranspose : Bool;
 };

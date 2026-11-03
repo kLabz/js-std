@@ -29,6 +29,9 @@ typedef DirectoryPickerOptions = {
 	var id : String;
 	@:optional
 	var startIn : StartInDirectory;
+	/**
+		Default: `FileSystemPermissionMode.READ`
+	**/
 	@:optional
 	var mode : FileSystemPermissionMode;
 };

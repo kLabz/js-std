@@ -25,12 +25,21 @@
 package js.web.css;
 
 typedef BaseComputedKeyframe = {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var offset : Null<Float>;
 	@:optional
 	var computedOffset : Float;
+	/**
+		Default: `"linear"`
+	**/
 	@:optional
 	var easing : String;
+	/**
+		Default: `CompositeOperationOrAuto.AUTO`
+	**/
 	@:optional
 	var composite : CompositeOperationOrAuto;
 };

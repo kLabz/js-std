@@ -25,30 +25,69 @@
 package js.web.storage;
 
 typedef StorageAccessTypes = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var all : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var cookies : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var sessionStorage : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var localStorage : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var indexedDB : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var locks : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var caches : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var getDirectory : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var estimate : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var createObjectURL : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var revokeObjectURL : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var BroadcastChannel : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var SharedWorker : Bool;
 };

@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef WorkletOptions = {
+	/**
+		Default: `js.web.net.RequestCredentials.SAME_ORIGIN`
+	**/
 	@:optional
 	var credentials : js.web.net.RequestCredentials;
 };

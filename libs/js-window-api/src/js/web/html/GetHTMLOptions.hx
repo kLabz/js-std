@@ -25,8 +25,14 @@
 package js.web.html;
 
 typedef GetHTMLOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var serializableShadowRoots : Bool;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var shadowRoots : Array<js.web.dom.ShadowRoot>;
 };

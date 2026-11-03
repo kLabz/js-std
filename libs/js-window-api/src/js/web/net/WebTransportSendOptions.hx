@@ -25,8 +25,14 @@
 package js.web.net;
 
 typedef WebTransportSendOptions = {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var sendGroup : Null<WebTransportSendGroup>;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var sendOrder : Float;
 };

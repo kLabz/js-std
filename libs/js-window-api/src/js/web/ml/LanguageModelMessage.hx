@@ -27,6 +27,9 @@ package js.web.ml;
 typedef LanguageModelMessage = {
 	var role : LanguageModelMessageRole;
 	var content : haxe.extern.EitherType<String, Array<LanguageModelMessageContent>>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var prefix : Bool;
 };

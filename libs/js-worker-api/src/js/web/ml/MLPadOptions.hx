@@ -25,8 +25,14 @@
 package js.web.ml;
 
 typedef MLPadOptions = MLOperatorOptions & {
+	/**
+		Default: `MLPaddingMode.CONSTANT`
+	**/
 	@:optional
 	var mode : MLPaddingMode;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var value : MLNumber;
 };

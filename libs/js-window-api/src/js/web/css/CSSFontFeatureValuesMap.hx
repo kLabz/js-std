@@ -57,7 +57,7 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesMap/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<String, Array<Int>>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, Array<Int>>>;
 	/**
 		The **`forEach()`** method of `CSSFontFeatureValuesMap` instances executes a provided function once per each key/value pair in this map, in insertion order.
 		

@@ -25,6 +25,9 @@
 package js.web.sw;
 
 typedef BackgroundFetchOptions = BackgroundFetchUIOptions & {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var downloadTotal : Float;
 };

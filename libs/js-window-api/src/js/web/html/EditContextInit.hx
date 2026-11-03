@@ -25,10 +25,19 @@
 package js.web.html;
 
 typedef EditContextInit = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var text : String;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var selectionStart : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var selectionEnd : Int;
 };

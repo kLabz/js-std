@@ -27,8 +27,14 @@ package js.web.xr;
 typedef XRQuadLayerInit = XRLayerInit & {
 	@:optional
 	var transform : Null<XRRigidTransform>;
+	/**
+		Default: `1.0`
+	**/
 	@:optional
 	var width : Float;
+	/**
+		Default: `1.0`
+	**/
 	@:optional
 	var height : Float;
 };

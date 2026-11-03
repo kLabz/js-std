@@ -25,6 +25,9 @@
 package js.web.ml;
 
 typedef MLResample2dOptions = MLOperatorOptions & {
+	/**
+		Default: `MLInterpolationMode.NEAREST_NEIGHBOR`
+	**/
 	@:optional
 	var mode : MLInterpolationMode;
 	@:optional

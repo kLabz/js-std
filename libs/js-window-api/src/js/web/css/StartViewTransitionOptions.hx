@@ -25,8 +25,14 @@
 package js.web.css;
 
 typedef StartViewTransitionOptions = {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var update : Null<ViewTransitionUpdateCallback>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var types : Null<Array<String>>;
 };

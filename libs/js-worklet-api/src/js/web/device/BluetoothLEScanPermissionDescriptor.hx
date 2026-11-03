@@ -25,8 +25,14 @@
 package js.web.device;
 
 typedef BluetoothLEScanPermissionDescriptor = js.web.misc.PermissionDescriptor & {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var keepRepeatedDevices : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var acceptAllAdvertisements : Bool;
 };

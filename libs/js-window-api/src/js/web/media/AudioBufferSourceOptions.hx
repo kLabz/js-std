@@ -27,14 +27,29 @@ package js.web.media;
 typedef AudioBufferSourceOptions = {
 	@:optional
 	var buffer : Null<AudioBuffer>;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var detune : Float;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var loop : Bool;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var loopEnd : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var loopStart : Float;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var playbackRate : Float;
 };

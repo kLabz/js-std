@@ -43,7 +43,7 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericArray/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<Int, CSSNumericValue>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<Int, CSSNumericValue>>;
 	/**
 		The **`forEach()`** method of the `CSSNumericArray` interface executes a provided function once for each item in the object.
 		

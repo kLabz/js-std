@@ -25,14 +25,26 @@
 package js.web.sw;
 
 typedef NotificationOptions = {
+	/**
+		Default: `NotificationDirection.AUTO`
+	**/
 	@:optional
 	var dir : NotificationDirection;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var lang : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var body : String;
 	@:optional
 	var navigate : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var tag : String;
 	@:optional
@@ -43,14 +55,29 @@ typedef NotificationOptions = {
 	var badge : String;
 	@:optional
 	var timestamp : js.web.perf.EpochTimeStamp;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var renotify : Bool;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var silent : Null<Bool>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var requireInteraction : Bool;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var data : Any;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var actions : Array<NotificationAction>;
 };

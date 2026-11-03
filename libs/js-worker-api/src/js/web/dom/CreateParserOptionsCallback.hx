@@ -24,4 +24,4 @@
 
 package js.web.dom;
 
-typedef CreateParserOptionsCallback = (options:js.web.html.SetHTMLUnsafeOptions, arguments:Any) -> Null<js.web.html.SetHTMLUnsafeOptions>;
+typedef CreateParserOptionsCallback = (options:js.web.html.SetHTMLUnsafeOptions) -> Null<js.web.html.SetHTMLUnsafeOptions>;

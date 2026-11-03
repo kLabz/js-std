@@ -25,10 +25,19 @@
 package js.web.net;
 
 typedef ProgressEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var lengthComputable : Bool;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var loaded : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var total : Float;
 };

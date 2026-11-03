@@ -25,6 +25,9 @@
 package js.web.dom;
 
 typedef ObservableEventListenerOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var capture : Bool;
 	@:optional

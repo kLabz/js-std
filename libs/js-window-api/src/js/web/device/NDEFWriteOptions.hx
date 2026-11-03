@@ -25,6 +25,9 @@
 package js.web.device;
 
 typedef NDEFWriteOptions = {
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var overwrite : Bool;
 	@:optional

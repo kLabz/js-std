@@ -25,6 +25,9 @@
 package js.web.net;
 
 typedef WebTransportSendStreamOptions = WebTransportSendOptions & {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var waitUntilAvailable : Bool;
 };

@@ -19,6 +19,7 @@ class Main {
 		trace(gl);
 
 		window.requestAnimationFrame(t -> trace(t));
+		window.setTimeout(() -> trace("timeout"), 10);
 		window.fetch("https://haxe.org").then(r -> r.text()).then(t -> trace(t.length));
 	}
 }

@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef AudioOutputOptions = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var deviceId : String;
 };

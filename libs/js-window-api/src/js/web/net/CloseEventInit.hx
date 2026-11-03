@@ -25,10 +25,19 @@
 package js.web.net;
 
 typedef CloseEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var wasClean : Bool;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var code : Int;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var reason : String;
 };

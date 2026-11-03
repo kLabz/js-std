@@ -25,6 +25,9 @@
 package js.web.wasm;
 
 typedef ExceptionOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var traceStack : Bool;
 };

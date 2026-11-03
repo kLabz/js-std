@@ -25,8 +25,14 @@
 package js.web.auth;
 
 typedef PaymentMethodChangeEventInit = PaymentRequestUpdateEventInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var methodName : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var methodDetails : Null<{ }>;
 };

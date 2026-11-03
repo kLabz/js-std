@@ -25,12 +25,18 @@
 package js.web.media;
 
 typedef AudioContextOptions = {
+	/**
+		Default: `AudioContextLatencyCategory.INTERACTIVE`
+	**/
 	@:optional
 	var latencyHint : haxe.extern.EitherType<AudioContextLatencyCategory, Float>;
 	@:optional
 	var sampleRate : Float;
 	@:optional
 	var sinkId : haxe.extern.EitherType<String, AudioSinkOptions>;
+	/**
+		Default: `AudioContextRenderSizeCategory.DEFAULT`
+	**/
 	@:optional
 	var renderSizeHint : haxe.extern.EitherType<AudioContextRenderSizeCategory, Int>;
 };

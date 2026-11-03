@@ -25,12 +25,24 @@
 package js.web.svg;
 
 typedef SVGBoundingBoxOptions = {
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var fill : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var stroke : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var markers : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var clipped : Bool;
 };

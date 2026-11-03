@@ -33,7 +33,7 @@ package js.web.perf;
 **/
 @:native("EventCounts") extern class EventCounts {
 	var size(default, null) : Int;
-	function entries():js.lib.Iterator<js.lib.Tuple<String, Float>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, Float>>;
 	function forEach(callback:(value:Float, key:String, map:EventCounts) -> Void, ?thisArg:Any):Void;
 	function get(key:String):Null<Float>;
 	function has(key:String):Bool;

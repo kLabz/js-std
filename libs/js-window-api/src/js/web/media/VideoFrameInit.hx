@@ -29,12 +29,21 @@ typedef VideoFrameInit = {
 	var duration : Float;
 	@:optional
 	var timestamp : Float;
+	/**
+		Default: `AlphaOption.KEEP`
+	**/
 	@:optional
 	var alpha : AlphaOption;
 	@:optional
 	var visibleRect : js.web.dom.DOMRectInit;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var rotation : Float;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var flip : Bool;
 	@:optional

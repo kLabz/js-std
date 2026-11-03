@@ -28,8 +28,14 @@ typedef XRGPUProjectionLayerInit = {
 	var colorFormat : js.web.webgpu.GPUTextureFormat;
 	@:optional
 	var depthStencilFormat : Null<js.web.webgpu.GPUTextureFormat>;
+	/**
+		Default: `0x10`
+	**/
 	@:optional
 	var textureUsage : js.web.webgpu.GPUTextureUsageFlags;
+	/**
+		Default: `1.0`
+	**/
 	@:optional
 	var scaleFactor : Float;
 };

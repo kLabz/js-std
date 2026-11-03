@@ -25,6 +25,9 @@
 package js.web.css;
 
 typedef ContentVisibilityAutoStateChangeEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var skipped : Bool;
 };

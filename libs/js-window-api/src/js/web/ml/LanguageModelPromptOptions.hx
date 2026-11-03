@@ -27,6 +27,9 @@ package js.web.ml;
 typedef LanguageModelPromptOptions = {
 	@:optional
 	var responseConstraint : { };
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var omitResponseConstraintInput : Bool;
 	@:optional

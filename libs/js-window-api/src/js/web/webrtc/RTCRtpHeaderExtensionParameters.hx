@@ -27,6 +27,9 @@ package js.web.webrtc;
 typedef RTCRtpHeaderExtensionParameters = {
 	var uri : String;
 	var id : Int;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var encrypted : Bool;
 };

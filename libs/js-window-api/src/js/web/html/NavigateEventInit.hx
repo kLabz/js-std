@@ -25,24 +25,48 @@
 package js.web.html;
 
 typedef NavigateEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `NavigationType.PUSH`
+	**/
 	@:optional
 	var navigationType : NavigationType;
 	var destination : NavigationDestination;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var canIntercept : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var userInitiated : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var hashChange : Bool;
 	var signal : js.web.dom.AbortSignal;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var formData : Null<js.web.net.FormData>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var downloadRequest : Null<String>;
 	@:optional
 	var info : Any;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var hasUAVisualTransition : Bool;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var sourceElement : Null<js.web.dom.Element>;
 };

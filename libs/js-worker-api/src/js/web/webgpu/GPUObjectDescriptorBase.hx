@@ -25,6 +25,9 @@
 package js.web.webgpu;
 
 typedef GPUObjectDescriptorBase = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var label : String;
 };

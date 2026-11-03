@@ -35,6 +35,9 @@ typedef LanguageModelCreateCoreOptions = {
 	var expectedInputs : Array<LanguageModelExpected>;
 	@:optional
 	var expectedOutputs : Array<LanguageModelExpected>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var tools : Array<LanguageModelToolDeclaration>;
 };

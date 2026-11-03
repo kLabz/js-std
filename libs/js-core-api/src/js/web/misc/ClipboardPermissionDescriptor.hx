@@ -25,6 +25,9 @@
 package js.web.misc;
 
 typedef ClipboardPermissionDescriptor = PermissionDescriptor & {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var allowWithoutGesture : Bool;
 };

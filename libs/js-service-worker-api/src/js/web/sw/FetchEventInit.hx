@@ -28,10 +28,19 @@ typedef FetchEventInit = ExtendableEventInit & {
 	var request : js.web.net.Request;
 	@:optional
 	var preloadResponse : js.lib.Promise<Any>;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var clientId : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var resultingClientId : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var replacesClientId : String;
 	@:optional

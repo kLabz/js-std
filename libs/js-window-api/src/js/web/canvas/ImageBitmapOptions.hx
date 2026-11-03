@@ -25,16 +25,28 @@
 package js.web.canvas;
 
 typedef ImageBitmapOptions = {
+	/**
+		Default: `ImageOrientation.FROM_IMAGE`
+	**/
 	@:optional
 	var imageOrientation : ImageOrientation;
+	/**
+		Default: `PremultiplyAlpha.DEFAULT`
+	**/
 	@:optional
 	var premultiplyAlpha : PremultiplyAlpha;
+	/**
+		Default: `ColorSpaceConversion.DEFAULT`
+	**/
 	@:optional
 	var colorSpaceConversion : ColorSpaceConversion;
 	@:optional
 	var resizeWidth : Int;
 	@:optional
 	var resizeHeight : Int;
+	/**
+		Default: `ResizeQuality.LOW`
+	**/
 	@:optional
 	var resizeQuality : ResizeQuality;
 };

@@ -25,6 +25,9 @@
 package js.web.canvas;
 
 typedef ImageBitmapRenderingContextSettings = {
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var alpha : Bool;
 };

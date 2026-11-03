@@ -33,7 +33,7 @@ package js.web.media;
 **/
 @:native("AudioParamMap") extern class AudioParamMap {
 	var size(default, null) : Int;
-	function entries():js.lib.Iterator<js.lib.Tuple<String, AudioParam>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, AudioParam>>;
 	function forEach(callback:(value:AudioParam, key:String, map:AudioParamMap) -> Void, ?thisArg:Any):Void;
 	function get(key:String):Null<AudioParam>;
 	function has(key:String):Bool;

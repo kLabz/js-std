@@ -25,32 +25,74 @@
 package js.web.dom;
 
 typedef EventModifierInit = UIEventInit & {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var ctrlKey : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var shiftKey : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var altKey : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var metaKey : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var modifierAltGraph : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var modifierCapsLock : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var modifierFn : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var modifierFnLock : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var modifierHyper : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var modifierNumLock : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var modifierScrollLock : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var modifierSuper : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var modifierSymbol : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var modifierSymbolLock : Bool;
 };

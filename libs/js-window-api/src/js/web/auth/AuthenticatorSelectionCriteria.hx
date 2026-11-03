@@ -29,8 +29,14 @@ typedef AuthenticatorSelectionCriteria = {
 	var authenticatorAttachment : String;
 	@:optional
 	var residentKey : String;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var requireResidentKey : Bool;
+	/**
+		Default: `"preferred"`
+	**/
 	@:optional
 	var userVerification : String;
 };

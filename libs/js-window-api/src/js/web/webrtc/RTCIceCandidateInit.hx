@@ -25,12 +25,24 @@
 package js.web.webrtc;
 
 typedef RTCIceCandidateInit = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var candidate : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var sdpMid : Null<String>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var sdpMLineIndex : Null<Int>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var usernameFragment : Null<String>;
 };

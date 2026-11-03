@@ -29,10 +29,19 @@ typedef RequestDeviceOptions = {
 	var filters : Array<BluetoothLEScanFilterInit>;
 	@:optional
 	var exclusionFilters : Array<BluetoothLEScanFilterInit>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var optionalServices : Array<BluetoothServiceUUID>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var optionalManufacturerData : Array<Int>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var acceptAllDevices : Bool;
 };

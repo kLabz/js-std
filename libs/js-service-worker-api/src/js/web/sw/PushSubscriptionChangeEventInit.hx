@@ -25,8 +25,14 @@
 package js.web.sw;
 
 typedef PushSubscriptionChangeEventInit = ExtendableEventInit & {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var newSubscription : PushSubscription;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var oldSubscription : PushSubscription;
 };

@@ -25,6 +25,9 @@
 package js.web.ml;
 
 typedef MLSplitOptions = MLOperatorOptions & {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var axis : Int;
 };

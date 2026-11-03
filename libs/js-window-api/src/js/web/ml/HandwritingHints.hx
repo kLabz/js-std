@@ -25,12 +25,21 @@
 package js.web.ml;
 
 typedef HandwritingHints = {
+	/**
+		Default: `"text"`
+	**/
 	@:optional
 	var recognitionType : String;
+	/**
+		Default: `"mouse"`
+	**/
 	@:optional
 	var inputType : String;
 	@:optional
 	var textContext : String;
+	/**
+		Default: `3`
+	**/
 	@:optional
 	var alternatives : Int;
 };

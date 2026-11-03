@@ -25,16 +25,34 @@
 package js.web.media;
 
 typedef MediaKeySystemConfiguration = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var label : String;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var initDataTypes : Array<String>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var audioCapabilities : Array<MediaKeySystemMediaCapability>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var videoCapabilities : Array<MediaKeySystemMediaCapability>;
+	/**
+		Default: `MediaKeysRequirement.OPTIONAL`
+	**/
 	@:optional
 	var distinctiveIdentifier : MediaKeysRequirement;
+	/**
+		Default: `MediaKeysRequirement.OPTIONAL`
+	**/
 	@:optional
 	var persistentState : MediaKeysRequirement;
 	@:optional

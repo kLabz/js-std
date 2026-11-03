@@ -29,7 +29,7 @@ package js.web.xr;
 **/
 @:native("XRMeshSet") @:require(js_experimental_api, "XRMeshSet is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRMeshSet {
 	var size(default, null) : Int;
-	function entries():js.lib.Iterator<js.lib.Tuple<XRMesh, XRMesh>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<XRMesh, XRMesh>>;
 	function forEach(callback:(value:XRMesh, key:XRMesh, set:XRMeshSet) -> Void, ?thisArg:Any):Void;
 	function has(value:XRMesh):Bool;
 	function keys():js.lib.Iterator<XRMesh>;

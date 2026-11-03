@@ -25,10 +25,19 @@
 package js.web.device;
 
 typedef DeviceMotionEventRotationRateInit = {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var alpha : Null<Float>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var beta : Null<Float>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var gamma : Null<Float>;
 };

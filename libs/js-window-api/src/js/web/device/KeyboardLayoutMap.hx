@@ -45,7 +45,7 @@ package js.web.device;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<String, String>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, String>>;
 	/**
 		The **`forEach()`** method of the `KeyboardLayoutMap` interface executes a provided function once for each element of the map.
 		

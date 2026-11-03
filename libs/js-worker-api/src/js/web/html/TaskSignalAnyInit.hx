@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef TaskSignalAnyInit = {
+	/**
+		Default: `TaskPriority.USER_VISIBLE`
+	**/
 	@:optional
 	var priority : haxe.extern.EitherType<TaskPriority, TaskSignal>;
 };

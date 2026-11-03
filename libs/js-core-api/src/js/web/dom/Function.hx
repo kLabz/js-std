@@ -24,4 +24,4 @@
 
 package js.web.dom;
 
-typedef Function = (arguments:Any) -> Any;
+typedef Function = haxe.Constraints.Function;

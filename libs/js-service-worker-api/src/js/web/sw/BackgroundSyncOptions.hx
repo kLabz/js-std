@@ -25,6 +25,9 @@
 package js.web.sw;
 
 typedef BackgroundSyncOptions = {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var minInterval : Float;
 };

@@ -25,24 +25,54 @@
 package js.web.dom;
 
 typedef DOMMatrixInit = DOMMatrix2DInit & {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var m13 : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var m14 : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var m23 : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var m24 : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var m31 : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var m32 : Float;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var m33 : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var m34 : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var m43 : Float;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var m44 : Float;
 	@:optional

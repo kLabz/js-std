@@ -25,10 +25,19 @@
 package js.web.webgpu;
 
 typedef GPUBlendComponent = {
+	/**
+		Default: `GPUBlendOperation.ADD`
+	**/
 	@:optional
 	var operation : GPUBlendOperation;
+	/**
+		Default: `GPUBlendFactor.ONE`
+	**/
 	@:optional
 	var srcFactor : GPUBlendFactor;
+	/**
+		Default: `GPUBlendFactor.ZERO`
+	**/
 	@:optional
 	var dstFactor : GPUBlendFactor;
 };

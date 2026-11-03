@@ -25,12 +25,24 @@
 package js.web.dom;
 
 typedef DOMPointInit = {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var x : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var y : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var z : Float;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var w : Float;
 };

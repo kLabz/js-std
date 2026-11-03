@@ -27,6 +27,9 @@ package js.web.media;
 typedef ConvolverOptions = AudioNodeOptions & {
 	@:optional
 	var buffer : Null<AudioBuffer>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var disableNormalization : Bool;
 };

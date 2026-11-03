@@ -25,16 +25,34 @@
 package js.web.device;
 
 typedef GamepadEffectParameters = {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var duration : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var startDelay : Float;
+	/**
+		Default: `0.0`
+	**/
 	@:optional
 	var strongMagnitude : Float;
+	/**
+		Default: `0.0`
+	**/
 	@:optional
 	var weakMagnitude : Float;
+	/**
+		Default: `0.0`
+	**/
 	@:optional
 	var leftTrigger : Float;
+	/**
+		Default: `0.0`
+	**/
 	@:optional
 	var rightTrigger : Float;
 };

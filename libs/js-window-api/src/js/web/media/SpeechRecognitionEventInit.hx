@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef SpeechRecognitionEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var resultIndex : Int;
 	var results : SpeechRecognitionResultList;

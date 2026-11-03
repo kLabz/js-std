@@ -28,8 +28,14 @@ typedef ContentDescription = {
 	var id : String;
 	var title : String;
 	var description : String;
+	/**
+		Default: `ContentCategory.NONE`
+	**/
 	@:optional
 	var category : ContentCategory;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var icons : Array<js.web.misc.ImageResource>;
 	var url : String;

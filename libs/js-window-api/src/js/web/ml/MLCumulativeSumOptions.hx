@@ -25,8 +25,14 @@
 package js.web.ml;
 
 typedef MLCumulativeSumOptions = MLOperatorOptions & {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var exclusive : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var reversed : Bool;
 };

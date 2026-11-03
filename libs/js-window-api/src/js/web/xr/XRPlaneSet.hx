@@ -29,7 +29,7 @@ package js.web.xr;
 **/
 @:native("XRPlaneSet") @:require(js_experimental_api, "XRPlaneSet is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRPlaneSet {
 	var size(default, null) : Int;
-	function entries():js.lib.Iterator<js.lib.Tuple<XRPlane, XRPlane>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<XRPlane, XRPlane>>;
 	function forEach(callback:(value:XRPlane, key:XRPlane, set:XRPlaneSet) -> Void, ?thisArg:Any):Void;
 	function has(value:XRPlane):Bool;
 	function keys():js.lib.Iterator<XRPlane>;

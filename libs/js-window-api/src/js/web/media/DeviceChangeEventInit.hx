@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef DeviceChangeEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var devices : Array<MediaDeviceInfo>;
 };

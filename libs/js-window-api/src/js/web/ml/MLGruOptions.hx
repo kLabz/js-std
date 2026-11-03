@@ -31,12 +31,24 @@ typedef MLGruOptions = MLOperatorOptions & {
 	var recurrentBias : MLOperand;
 	@:optional
 	var initialHiddenState : MLOperand;
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var resetAfter : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var returnSequence : Bool;
+	/**
+		Default: `MLRecurrentNetworkDirection.FORWARD`
+	**/
 	@:optional
 	var direction : MLRecurrentNetworkDirection;
+	/**
+		Default: `MLGruWeightLayout.ZRN`
+	**/
 	@:optional
 	var layout : MLGruWeightLayout;
 	@:optional

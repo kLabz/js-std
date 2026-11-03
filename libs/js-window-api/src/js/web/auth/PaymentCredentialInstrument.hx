@@ -27,6 +27,9 @@ package js.web.auth;
 typedef PaymentCredentialInstrument = {
 	var displayName : String;
 	var icon : String;
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var iconMustBeShown : Bool;
 	@:optional

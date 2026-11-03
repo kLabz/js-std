@@ -25,12 +25,24 @@
 package js.web.dom;
 
 typedef UIEventInit = EventInit & {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var view : Null<js.web.html.Window>;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var detail : Int;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var sourceCapabilities : Null<InputDeviceCapabilities>;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var which : Int;
 };

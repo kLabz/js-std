@@ -27,30 +27,69 @@ package js.web.dom;
 typedef TouchInit = {
 	var identifier : Int;
 	var target : EventTarget;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var clientX : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var clientY : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var screenX : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var screenY : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var pageX : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var pageY : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var radiusX : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var radiusY : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var rotationAngle : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var force : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var altitudeAngle : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var azimuthAngle : Float;
+	/**
+		Default: `TouchType.DIRECT`
+	**/
 	@:optional
 	var touchType : TouchType;
 };

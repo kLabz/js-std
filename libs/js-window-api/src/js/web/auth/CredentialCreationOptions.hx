@@ -25,6 +25,9 @@
 package js.web.auth;
 
 typedef CredentialCreationOptions = {
+	/**
+		Default: `CredentialMediationRequirement.OPTIONAL`
+	**/
 	@:optional
 	var mediation : CredentialMediationRequirement;
 	@:optional

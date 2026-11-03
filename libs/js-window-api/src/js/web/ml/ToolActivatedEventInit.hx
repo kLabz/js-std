@@ -25,6 +25,9 @@
 package js.web.ml;
 
 typedef ToolActivatedEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var toolName : String;
 };

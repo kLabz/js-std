@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef SetHTMLOptions = {
+	/**
+		Default: `SanitizerPresets.DEFAULT`
+	**/
 	@:optional
 	var sanitizer : haxe.extern.EitherType<Sanitizer, haxe.extern.EitherType<SanitizerConfig, SanitizerPresets>>;
 };

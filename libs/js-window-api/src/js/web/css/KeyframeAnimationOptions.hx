@@ -25,12 +25,21 @@
 package js.web.css;
 
 typedef KeyframeAnimationOptions = KeyframeEffectOptions & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var id : String;
 	@:optional
 	var timeline : Null<AnimationTimeline>;
+	/**
+		Default: `"normal"`
+	**/
 	@:optional
 	var rangeStart : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<CSSNumericValue, haxe.extern.EitherType<CSSKeywordValue, String>>>;
+	/**
+		Default: `"normal"`
+	**/
 	@:optional
 	var rangeEnd : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<CSSNumericValue, haxe.extern.EitherType<CSSKeywordValue, String>>>;
 	@:optional

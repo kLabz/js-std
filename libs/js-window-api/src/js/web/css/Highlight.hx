@@ -79,7 +79,7 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Highlight/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<js.web.dom.AbstractRange, js.web.dom.AbstractRange>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<js.web.dom.AbstractRange, js.web.dom.AbstractRange>>;
 	/**
 		The **`forEach()`** method of the `Highlight` interface executes a provided function once for each `AbstractRange` object in the `Highlight` object, in insertion order.
 		

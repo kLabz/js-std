@@ -25,16 +25,34 @@
 package js.web.webrtc;
 
 typedef RTCConfiguration = {
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var iceServers : Array<RTCIceServer>;
+	/**
+		Default: `RTCIceTransportPolicy.ALL`
+	**/
 	@:optional
 	var iceTransportPolicy : RTCIceTransportPolicy;
+	/**
+		Default: `RTCBundlePolicy.BALANCED`
+	**/
 	@:optional
 	var bundlePolicy : RTCBundlePolicy;
+	/**
+		Default: `RTCRtcpMuxPolicy.REQUIRE`
+	**/
 	@:optional
 	var rtcpMuxPolicy : RTCRtcpMuxPolicy;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var certificates : Array<RTCCertificate>;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var iceCandidatePoolSize : Int;
 	@:optional

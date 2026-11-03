@@ -31,6 +31,9 @@ typedef MLLstmCellOptions = MLOperatorOptions & {
 	var recurrentBias : MLOperand;
 	@:optional
 	var peepholeWeight : MLOperand;
+	/**
+		Default: `MLLstmWeightLayout.IOFG`
+	**/
 	@:optional
 	var layout : MLLstmWeightLayout;
 	@:optional

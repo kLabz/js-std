@@ -25,14 +25,29 @@
 package js.web.media;
 
 typedef MediaMetadataInit = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var title : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var artist : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var album : String;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var artwork : Array<MediaImage>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var chapterInfo : Array<ChapterInformationInit>;
 };

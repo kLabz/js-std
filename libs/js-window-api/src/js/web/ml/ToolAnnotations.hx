@@ -25,12 +25,24 @@
 package js.web.ml;
 
 typedef ToolAnnotations = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var readOnlyHint : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var untrustedContentHint : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var consequentialHint : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var debugging : Bool;
 };

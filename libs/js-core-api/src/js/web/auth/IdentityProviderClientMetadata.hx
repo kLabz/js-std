@@ -29,6 +29,9 @@ typedef IdentityProviderClientMetadata = {
 	var privacy_policy_url : String;
 	@:optional
 	var terms_of_service_url : String;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var client_is_third_party_to_top_frame_origin : Bool;
 };

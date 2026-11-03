@@ -25,14 +25,29 @@
 package js.web.css;
 
 typedef CheckVisibilityOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var checkOpacity : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var checkVisibilityCSS : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var contentVisibilityAuto : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var opacityProperty : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var visibilityProperty : Bool;
 };

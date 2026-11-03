@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef ChannelMergerOptions = AudioNodeOptions & {
+	/**
+		Default: `6`
+	**/
 	@:optional
 	var numberOfInputs : Int;
 };

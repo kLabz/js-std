@@ -29,18 +29,33 @@ typedef GPUTextureViewDescriptor = GPUObjectDescriptorBase & {
 	var format : GPUTextureFormat;
 	@:optional
 	var dimension : GPUTextureViewDimension;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var usage : GPUTextureUsageFlags;
+	/**
+		Default: `GPUTextureAspect.ALL`
+	**/
 	@:optional
 	var aspect : GPUTextureAspect;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var baseMipLevel : GPUIntegerCoordinate;
 	@:optional
 	var mipLevelCount : GPUIntegerCoordinate;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var baseArrayLayer : GPUIntegerCoordinate;
 	@:optional
 	var arrayLayerCount : GPUIntegerCoordinate;
+	/**
+		Default: `"rgba"`
+	**/
 	@:optional
 	var swizzle : String;
 };

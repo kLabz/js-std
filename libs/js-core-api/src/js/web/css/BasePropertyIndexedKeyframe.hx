@@ -25,10 +25,19 @@
 package js.web.css;
 
 typedef BasePropertyIndexedKeyframe = {
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var offset : haxe.extern.EitherType<Null<Float>, Array<Null<Float>>>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var easing : haxe.extern.EitherType<String, Array<String>>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var composite : haxe.extern.EitherType<CompositeOperationOrAuto, Array<CompositeOperationOrAuto>>;
 };

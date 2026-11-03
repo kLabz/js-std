@@ -25,14 +25,29 @@
 package js.web.sw;
 
 typedef ExtendableMessageEventInit = ExtendableEventInit & {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var data : Any;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var origin : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var lastEventId : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var source : Null<haxe.extern.EitherType<Client, haxe.extern.EitherType<ServiceWorker, js.web.html.MessagePort>>>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var ports : Array<js.web.html.MessagePort>;
 };

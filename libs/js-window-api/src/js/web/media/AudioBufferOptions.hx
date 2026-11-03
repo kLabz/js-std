@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef AudioBufferOptions = {
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var numberOfChannels : Int;
 	var length : Int;

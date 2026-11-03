@@ -55,7 +55,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStream/from_static>
 	**/
-	static function from(asyncIterable:Dynamic):ReadableStream;
+	static function from(asyncIterable:Any):ReadableStream;
 	/**
 		The **`getReader()`** method of the `ReadableStream` interface creates a reader and locks the stream to it. While the stream is locked, no other reader can be acquired until this one is released.
 		

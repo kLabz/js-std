@@ -31,6 +31,9 @@ typedef AudioDataInit = {
 	var numberOfChannels : Int;
 	var timestamp : Float;
 	var data : js.web.dom.AllowSharedBufferSource;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var transfer : Array<js.lib.ArrayBuffer>;
 };

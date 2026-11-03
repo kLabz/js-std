@@ -25,8 +25,14 @@
 package js.web.net;
 
 typedef BlobPropertyBag = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var type : String;
+	/**
+		Default: `EndingType.TRANSPARENT`
+	**/
 	@:optional
 	var endings : EndingType;
 };

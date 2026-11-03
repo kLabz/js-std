@@ -25,6 +25,9 @@
 package js.web.device;
 
 typedef NDEFReadingEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var serialNumber : Null<String>;
 	var message : NDEFMessageInit;

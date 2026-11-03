@@ -25,10 +25,19 @@
 package js.web.media;
 
 typedef ChapterInformationInit = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var title : String;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var startTime : Float;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var artwork : Array<MediaImage>;
 };

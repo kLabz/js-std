@@ -25,32 +25,74 @@
 package js.web.media;
 
 typedef PannerOptions = AudioNodeOptions & {
+	/**
+		Default: `PanningModelType.EQUALPOWER`
+	**/
 	@:optional
 	var panningModel : PanningModelType;
+	/**
+		Default: `DistanceModelType.INVERSE`
+	**/
 	@:optional
 	var distanceModel : DistanceModelType;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var positionX : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var positionY : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var positionZ : Float;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var orientationX : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var orientationY : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var orientationZ : Float;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var refDistance : Float;
+	/**
+		Default: `10000`
+	**/
 	@:optional
 	var maxDistance : Float;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var rolloffFactor : Float;
+	/**
+		Default: `360`
+	**/
 	@:optional
 	var coneInnerAngle : Float;
+	/**
+		Default: `360`
+	**/
 	@:optional
 	var coneOuterAngle : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var coneOuterGain : Float;
 };

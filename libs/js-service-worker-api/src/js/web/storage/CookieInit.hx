@@ -27,16 +27,34 @@ package js.web.storage;
 typedef CookieInit = {
 	var name : String;
 	var value : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var expires : Null<js.web.perf.DOMHighResTimeStamp>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var domain : Null<String>;
+	/**
+		Default: `"/"`
+	**/
 	@:optional
 	var path : String;
+	/**
+		Default: `CookieSameSite.STRICT`
+	**/
 	@:optional
 	var sameSite : CookieSameSite;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var partitioned : Bool;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var maxAge : Null<Float>;
 };

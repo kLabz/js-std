@@ -25,6 +25,9 @@
 package js.web.ml;
 
 typedef ToolCancelEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var toolName : String;
 };

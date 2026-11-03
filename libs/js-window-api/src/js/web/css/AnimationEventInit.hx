@@ -25,12 +25,24 @@
 package js.web.css;
 
 typedef AnimationEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var animationName : String;
+	/**
+		Default: `0.0`
+	**/
 	@:optional
 	var elapsedTime : Float;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var pseudoElement : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var animation : Null<CSSAnimation>;
 };

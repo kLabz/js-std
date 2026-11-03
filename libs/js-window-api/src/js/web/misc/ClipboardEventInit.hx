@@ -25,6 +25,9 @@
 package js.web.misc;
 
 typedef ClipboardEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var clipboardData : Null<js.web.html.DataTransfer>;
 };

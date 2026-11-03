@@ -27,6 +27,9 @@ package js.web.media;
 typedef ImageDecoderInit = {
 	var type : String;
 	var data : ImageBufferSource;
+	/**
+		Default: `js.web.canvas.ColorSpaceConversion.DEFAULT`
+	**/
 	@:optional
 	var colorSpaceConversion : js.web.canvas.ColorSpaceConversion;
 	@:optional
@@ -35,6 +38,9 @@ typedef ImageDecoderInit = {
 	var desiredHeight : Int;
 	@:optional
 	var preferAnimation : Bool;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var transfer : Array<js.lib.ArrayBuffer>;
 };

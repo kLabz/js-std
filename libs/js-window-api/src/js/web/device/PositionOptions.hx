@@ -25,10 +25,19 @@
 package js.web.device;
 
 typedef PositionOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var enableHighAccuracy : Bool;
+	/**
+		Default: `0xFFFFFFFF`
+	**/
 	@:optional
 	var timeout : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var maximumAge : Int;
 };

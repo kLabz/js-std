@@ -34,6 +34,9 @@ typedef IdentityProviderAPIConfig = {
 	var disconnect_endpoint : String;
 	@:optional
 	var branding : IdentityProviderBranding;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var supports_use_other_account : Bool;
 	@:optional

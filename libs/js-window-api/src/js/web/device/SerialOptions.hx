@@ -26,14 +26,29 @@ package js.web.device;
 
 typedef SerialOptions = {
 	var baudRate : Int;
+	/**
+		Default: `8`
+	**/
 	@:optional
 	var dataBits : Int;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var stopBits : Int;
+	/**
+		Default: `ParityType.NONE`
+	**/
 	@:optional
 	var parity : ParityType;
+	/**
+		Default: `255`
+	**/
 	@:optional
 	var bufferSize : Int;
+	/**
+		Default: `FlowControlType.NONE`
+	**/
 	@:optional
 	var flowControl : FlowControlType;
 };

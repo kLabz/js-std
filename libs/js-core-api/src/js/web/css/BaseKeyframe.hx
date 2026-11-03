@@ -25,10 +25,19 @@
 package js.web.css;
 
 typedef BaseKeyframe = {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var offset : Null<Float>;
+	/**
+		Default: `"linear"`
+	**/
 	@:optional
 	var easing : String;
+	/**
+		Default: `CompositeOperationOrAuto.AUTO`
+	**/
 	@:optional
 	var composite : CompositeOperationOrAuto;
 };

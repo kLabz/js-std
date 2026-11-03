@@ -25,10 +25,19 @@
 package js.web.ml;
 
 typedef RewriterCreateCoreOptions = {
+	/**
+		Default: `RewriterTone.AS_IS`
+	**/
 	@:optional
 	var tone : RewriterTone;
+	/**
+		Default: `RewriterFormat.AS_IS`
+	**/
 	@:optional
 	var format : RewriterFormat;
+	/**
+		Default: `RewriterLength.AS_IS`
+	**/
 	@:optional
 	var length : RewriterLength;
 	@:optional

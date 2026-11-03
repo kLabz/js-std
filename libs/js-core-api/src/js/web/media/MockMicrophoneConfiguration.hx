@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef MockMicrophoneConfiguration = MockCaptureDeviceConfiguration & {
+	/**
+		Default: `44100`
+	**/
 	@:optional
 	var defaultSampleRate : Int;
 };

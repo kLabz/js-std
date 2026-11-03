@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef CameraDevicePermissionDescriptor = js.web.misc.PermissionDescriptor & {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var panTiltZoom : Bool;
 };

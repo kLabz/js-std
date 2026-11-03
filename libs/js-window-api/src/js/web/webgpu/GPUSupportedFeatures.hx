@@ -35,7 +35,7 @@ package js.web.webgpu;
 **/
 @:native("GPUSupportedFeatures") extern class GPUSupportedFeatures {
 	var size(default, null) : Int;
-	function entries():js.lib.Iterator<js.lib.Tuple<String, String>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, String>>;
 	function forEach(callback:(value:String, key:String, set:GPUSupportedFeatures) -> Void, ?thisArg:Any):Void;
 	function has(value:String):Bool;
 	function keys():js.lib.Iterator<String>;

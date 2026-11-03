@@ -25,6 +25,9 @@
 package js.web.dom;
 
 typedef GetComposedRangesOptions = {
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var shadowRoots : Array<ShadowRoot>;
 };

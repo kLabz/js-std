@@ -27,6 +27,9 @@ package js.web.storage;
 typedef FilePickerOptions = {
 	@:optional
 	var types : Array<FilePickerAcceptType>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var excludeAcceptAllOption : Bool;
 	@:optional

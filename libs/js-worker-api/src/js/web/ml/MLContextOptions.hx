@@ -25,8 +25,14 @@
 package js.web.ml;
 
 typedef MLContextOptions = {
+	/**
+		Default: `MLPowerPreference.DEFAULT`
+	**/
 	@:optional
 	var powerPreference : MLPowerPreference;
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var accelerated : Bool;
 };

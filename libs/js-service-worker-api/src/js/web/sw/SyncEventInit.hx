@@ -26,6 +26,9 @@ package js.web.sw;
 
 typedef SyncEventInit = ExtendableEventInit & {
 	var tag : String;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var lastChance : Bool;
 };

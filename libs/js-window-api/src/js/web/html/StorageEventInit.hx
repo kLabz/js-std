@@ -25,14 +25,29 @@
 package js.web.html;
 
 typedef StorageEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var key : Null<String>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var oldValue : Null<String>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var newValue : Null<String>;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var url : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var storageArea : Null<Storage>;
 };

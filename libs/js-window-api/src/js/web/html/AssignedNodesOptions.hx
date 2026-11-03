@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef AssignedNodesOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var flatten : Bool;
 };

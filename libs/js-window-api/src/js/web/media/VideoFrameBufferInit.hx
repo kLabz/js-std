@@ -35,8 +35,14 @@ typedef VideoFrameBufferInit = {
 	var layout : Array<PlaneLayout>;
 	@:optional
 	var visibleRect : js.web.dom.DOMRectInit;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var rotation : Float;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var flip : Bool;
 	@:optional
@@ -45,6 +51,9 @@ typedef VideoFrameBufferInit = {
 	var displayHeight : Int;
 	@:optional
 	var colorSpace : VideoColorSpaceInit;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var transfer : Array<js.lib.ArrayBuffer>;
 	@:optional

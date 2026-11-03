@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef VideoEncoderEncodeOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var keyFrame : Bool;
 	@:optional

@@ -24,4 +24,4 @@
 
 package js.web.dom;
 
-typedef CreateHTMLCallback = (input:String, arguments:Any) -> Null<String>;
+typedef CreateHTMLCallback = (input:String) -> Null<String>;

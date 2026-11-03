@@ -25,12 +25,18 @@
 package js.web.dom;
 
 typedef MutationObserverInit = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var childList : Bool;
 	@:optional
 	var attributes : Bool;
 	@:optional
 	var characterData : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var subtree : Bool;
 	@:optional

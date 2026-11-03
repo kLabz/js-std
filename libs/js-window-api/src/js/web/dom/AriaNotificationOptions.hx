@@ -25,6 +25,9 @@
 package js.web.dom;
 
 typedef AriaNotificationOptions = {
+	/**
+		Default: `AriaNotifyPriority.NORMAL`
+	**/
 	@:optional
 	var priority : AriaNotifyPriority;
 };

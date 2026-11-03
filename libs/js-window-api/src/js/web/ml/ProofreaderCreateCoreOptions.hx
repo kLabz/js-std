@@ -25,8 +25,14 @@
 package js.web.ml;
 
 typedef ProofreaderCreateCoreOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var includeCorrectionTypes : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var includeCorrectionExplanations : Bool;
 	@:optional

@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef EventSourceInit = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var withCredentials : Bool;
 };

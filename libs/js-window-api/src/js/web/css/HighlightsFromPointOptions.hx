@@ -25,6 +25,9 @@
 package js.web.css;
 
 typedef HighlightsFromPointOptions = {
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var shadowRoots : Array<js.web.dom.ShadowRoot>;
 };

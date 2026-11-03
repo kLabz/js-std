@@ -26,14 +26,26 @@ package js.web.webgpu;
 
 typedef GPUTextureDescriptor = GPUObjectDescriptorBase & {
 	var size : GPUExtent3D;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var mipLevelCount : GPUIntegerCoordinate;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var sampleCount : GPUSize32;
+	/**
+		Default: `GPUTextureDimension._2D`
+	**/
 	@:optional
 	var dimension : GPUTextureDimension;
 	var format : GPUTextureFormat;
 	var usage : GPUTextureUsageFlags;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var viewFormats : Array<GPUTextureFormat>;
 	@:optional

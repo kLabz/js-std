@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef InstallResultEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `InstallResult.ABORTED`
+	**/
 	@:optional
 	var result : InstallResult;
 };

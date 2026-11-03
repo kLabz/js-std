@@ -26,6 +26,9 @@ package js.web.html;
 
 typedef SanitizerAttributeNamespace = {
 	var name : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var namespace : Null<String>;
 };

@@ -27,6 +27,9 @@ package js.web.sw;
 typedef PushSubscriptionJSON = {
 	@:optional
 	var endpoint : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var expirationTime : Null<js.web.perf.EpochTimeStamp>;
 	@:optional

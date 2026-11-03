@@ -25,12 +25,24 @@
 package js.web.ml;
 
 typedef SummarizerCreateCoreOptions = {
+	/**
+		Default: `SummarizerType.KEY_POINTS`
+	**/
 	@:optional
 	var type : SummarizerType;
+	/**
+		Default: `SummarizerFormat.MARKDOWN`
+	**/
 	@:optional
 	var format : SummarizerFormat;
+	/**
+		Default: `SummarizerLength.SHORT`
+	**/
 	@:optional
 	var length : SummarizerLength;
+	/**
+		Default: `PerformancePreference.AUTO`
+	**/
 	@:optional
 	var preference : PerformancePreference;
 	@:optional

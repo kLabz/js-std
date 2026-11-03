@@ -25,16 +25,34 @@
 package js.web.dom;
 
 typedef IntersectionObserverInit = {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var root : Null<haxe.extern.EitherType<Element, Document>>;
+	/**
+		Default: `"0px"`
+	**/
 	@:optional
 	var rootMargin : String;
+	/**
+		Default: `"0px"`
+	**/
 	@:optional
 	var scrollMargin : String;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var threshold : haxe.extern.EitherType<Float, Array<Float>>;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var delay : Int;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var trackVisibility : Bool;
 };

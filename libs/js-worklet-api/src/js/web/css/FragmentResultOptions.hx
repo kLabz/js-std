@@ -25,16 +25,34 @@
 package js.web.css;
 
 typedef FragmentResultOptions = {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var inlineSize : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var blockSize : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var autoBlockSize : Float;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var childFragments : Array<LayoutFragment>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var data : Any;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var breakToken : BreakTokenOptions;
 };

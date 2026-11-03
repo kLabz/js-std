@@ -27,6 +27,9 @@ package js.web.css;
 typedef PointerTimelineOptions = {
 	@:optional
 	var source : Null<js.web.dom.Element>;
+	/**
+		Default: `PointerAxis.BLOCK`
+	**/
 	@:optional
 	var axis : PointerAxis;
 };

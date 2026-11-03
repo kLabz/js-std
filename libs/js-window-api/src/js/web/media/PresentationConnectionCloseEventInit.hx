@@ -26,6 +26,9 @@ package js.web.media;
 
 typedef PresentationConnectionCloseEventInit = js.web.dom.EventInit & {
 	var reason : PresentationConnectionCloseReason;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var message : String;
 };

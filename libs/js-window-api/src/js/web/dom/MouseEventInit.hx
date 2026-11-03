@@ -25,22 +25,49 @@
 package js.web.dom;
 
 typedef MouseEventInit = EventModifierInit & {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var screenX : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var screenY : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var clientX : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var clientY : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var button : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var buttons : Int;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var relatedTarget : Null<EventTarget>;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var movementX : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var movementY : Float;
 };

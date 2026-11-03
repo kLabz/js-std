@@ -25,10 +25,19 @@
 package js.web.html;
 
 typedef WorkerOptions = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var name : String;
+	/**
+		Default: `WorkerType.CLASSIC`
+	**/
 	@:optional
 	var type : WorkerType;
+	/**
+		Default: `js.web.net.RequestCredentials.SAME_ORIGIN`
+	**/
 	@:optional
 	var credentials : js.web.net.RequestCredentials;
 };

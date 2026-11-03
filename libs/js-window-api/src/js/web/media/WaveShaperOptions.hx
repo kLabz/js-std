@@ -27,6 +27,9 @@ package js.web.media;
 typedef WaveShaperOptions = AudioNodeOptions & {
 	@:optional
 	var curve : Array<Float>;
+	/**
+		Default: `OverSampleType.NONE`
+	**/
 	@:optional
 	var oversample : OverSampleType;
 };

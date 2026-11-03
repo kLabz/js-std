@@ -36,14 +36,26 @@ typedef VideoEncoderConfig = {
 	var bitrate : Float;
 	@:optional
 	var framerate : Float;
+	/**
+		Default: `HardwareAcceleration.NO_PREFERENCE`
+	**/
 	@:optional
 	var hardwareAcceleration : HardwareAcceleration;
+	/**
+		Default: `AlphaOption.DISCARD`
+	**/
 	@:optional
 	var alpha : AlphaOption;
 	@:optional
 	var scalabilityMode : String;
+	/**
+		Default: `VideoEncoderBitrateMode.VARIABLE`
+	**/
 	@:optional
 	var bitrateMode : VideoEncoderBitrateMode;
+	/**
+		Default: `LatencyMode.QUALITY`
+	**/
 	@:optional
 	var latencyMode : LatencyMode;
 	@:optional

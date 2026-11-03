@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef HevcEncoderConfig = {
+	/**
+		Default: `HevcBitstreamFormat.HEVC`
+	**/
 	@:optional
 	var format : HevcBitstreamFormat;
 };

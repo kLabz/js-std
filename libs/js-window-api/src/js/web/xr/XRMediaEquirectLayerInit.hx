@@ -27,12 +27,24 @@ package js.web.xr;
 typedef XRMediaEquirectLayerInit = XRMediaLayerInit & {
 	@:optional
 	var transform : Null<XRRigidTransform>;
+	/**
+		Default: `0.0`
+	**/
 	@:optional
 	var radius : Float;
+	/**
+		Default: `6.28318`
+	**/
 	@:optional
 	var centralHorizontalAngle : Float;
+	/**
+		Default: `1.570795`
+	**/
 	@:optional
 	var upperVerticalAngle : Float;
+	/**
+		Default: `-1.570795`
+	**/
 	@:optional
 	var lowerVerticalAngle : Float;
 };

@@ -31,7 +31,7 @@ package js.web.css;
 	var size(default, null) : Int;
 	function clear():Void;
 	function delete(key:String):Bool;
-	function entries():js.lib.Iterator<js.lib.Tuple<String, NamedFlow>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, NamedFlow>>;
 	function forEach(callback:(value:NamedFlow, key:String, map:NamedFlowMap) -> Void, ?thisArg:Any):Void;
 	function get(key:String):Null<NamedFlow>;
 	function has(key:String):Bool;

@@ -25,24 +25,54 @@
 package js.web.webgl;
 
 typedef WebGLContextAttributes = {
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var alpha : Bool;
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var depth : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var stencil : Bool;
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var antialias : Bool;
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var premultipliedAlpha : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var preserveDrawingBuffer : Bool;
+	/**
+		Default: `WebGLPowerPreference.DEFAULT`
+	**/
 	@:optional
 	var powerPreference : WebGLPowerPreference;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var failIfMajorPerformanceCaveat : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var desynchronized : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var xrCompatible : Bool;
 };

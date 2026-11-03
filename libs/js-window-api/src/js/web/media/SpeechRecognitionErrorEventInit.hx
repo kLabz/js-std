@@ -26,6 +26,9 @@ package js.web.media;
 
 typedef SpeechRecognitionErrorEventInit = js.web.dom.EventInit & {
 	var error : SpeechRecognitionErrorCode;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var message : String;
 };

@@ -25,8 +25,14 @@
 package js.web.sw;
 
 typedef ClientQueryOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var includeUncontrolled : Bool;
+	/**
+		Default: `ClientType.WINDOW`
+	**/
 	@:optional
 	var type : ClientType;
 };

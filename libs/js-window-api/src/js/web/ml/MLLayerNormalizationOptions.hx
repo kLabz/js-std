@@ -31,6 +31,9 @@ typedef MLLayerNormalizationOptions = MLOperatorOptions & {
 	var bias : MLOperand;
 	@:optional
 	var axes : Array<Int>;
+	/**
+		Default: `1e-5`
+	**/
 	@:optional
 	var epsilon : Float;
 };

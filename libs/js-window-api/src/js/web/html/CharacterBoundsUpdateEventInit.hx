@@ -25,8 +25,14 @@
 package js.web.html;
 
 typedef CharacterBoundsUpdateEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var rangeStart : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var rangeEnd : Int;
 };

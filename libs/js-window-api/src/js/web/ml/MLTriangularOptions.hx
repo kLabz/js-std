@@ -25,8 +25,14 @@
 package js.web.ml;
 
 typedef MLTriangularOptions = MLOperatorOptions & {
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var upper : Bool;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var diagonal : Int;
 };

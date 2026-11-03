@@ -25,10 +25,19 @@
 package js.web.css;
 
 typedef CSSStyleSheetInit = {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var baseURL : Null<String>;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var media : haxe.extern.EitherType<MediaList, String>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var disabled : Bool;
 };

@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef AvcEncoderConfig = {
+	/**
+		Default: `AvcBitstreamFormat.AVC`
+	**/
 	@:optional
 	var format : AvcBitstreamFormat;
 };

@@ -26,8 +26,14 @@ package js.web.media;
 
 typedef MediaImage = {
 	var src : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var sizes : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var type : String;
 };

@@ -25,10 +25,19 @@
 package js.web.media;
 
 typedef OscillatorOptions = AudioNodeOptions & {
+	/**
+		Default: `OscillatorType.SINE`
+	**/
 	@:optional
 	var type : OscillatorType;
+	/**
+		Default: `440`
+	**/
 	@:optional
 	var frequency : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var detune : Float;
 	@:optional

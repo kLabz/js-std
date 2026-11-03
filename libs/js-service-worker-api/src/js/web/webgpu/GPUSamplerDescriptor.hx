@@ -25,24 +25,51 @@
 package js.web.webgpu;
 
 typedef GPUSamplerDescriptor = GPUObjectDescriptorBase & {
+	/**
+		Default: `GPUAddressMode.CLAMP_TO_EDGE`
+	**/
 	@:optional
 	var addressModeU : GPUAddressMode;
+	/**
+		Default: `GPUAddressMode.CLAMP_TO_EDGE`
+	**/
 	@:optional
 	var addressModeV : GPUAddressMode;
+	/**
+		Default: `GPUAddressMode.CLAMP_TO_EDGE`
+	**/
 	@:optional
 	var addressModeW : GPUAddressMode;
+	/**
+		Default: `GPUFilterMode.NEAREST`
+	**/
 	@:optional
 	var magFilter : GPUFilterMode;
+	/**
+		Default: `GPUFilterMode.NEAREST`
+	**/
 	@:optional
 	var minFilter : GPUFilterMode;
+	/**
+		Default: `GPUMipmapFilterMode.NEAREST`
+	**/
 	@:optional
 	var mipmapFilter : GPUMipmapFilterMode;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var lodMinClamp : Float;
+	/**
+		Default: `32`
+	**/
 	@:optional
 	var lodMaxClamp : Float;
 	@:optional
 	var compare : GPUCompareFunction;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var maxAnisotropy : Int;
 };

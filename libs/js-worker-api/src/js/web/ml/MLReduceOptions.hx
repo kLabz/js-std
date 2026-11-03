@@ -27,6 +27,9 @@ package js.web.ml;
 typedef MLReduceOptions = MLOperatorOptions & {
 	@:optional
 	var axes : Array<Int>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var keepDimensions : Bool;
 };

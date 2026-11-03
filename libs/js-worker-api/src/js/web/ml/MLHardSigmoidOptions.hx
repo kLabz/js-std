@@ -25,8 +25,14 @@
 package js.web.ml;
 
 typedef MLHardSigmoidOptions = MLOperatorOptions & {
+	/**
+		Default: `0.2`
+	**/
 	@:optional
 	var alpha : Float;
+	/**
+		Default: `0.5`
+	**/
 	@:optional
 	var beta : Float;
 };

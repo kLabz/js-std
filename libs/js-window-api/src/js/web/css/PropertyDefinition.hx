@@ -26,8 +26,14 @@ package js.web.css;
 
 typedef PropertyDefinition = {
 	var name : String;
+	/**
+		Default: `"*"`
+	**/
 	@:optional
 	var syntax : String;
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var inherits : Bool;
 	@:optional

@@ -28,6 +28,9 @@ typedef GPUColorTargetState = {
 	var format : GPUTextureFormat;
 	@:optional
 	var blend : GPUBlendState;
+	/**
+		Default: `0xF`
+	**/
 	@:optional
 	var writeMask : GPUColorWriteFlags;
 };

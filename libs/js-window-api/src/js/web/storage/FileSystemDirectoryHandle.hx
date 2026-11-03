@@ -39,7 +39,7 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle/entries>
 	**/
-	function entries():js.lib.Iterator.AsyncIterator<js.lib.Tuple<String, FileSystemHandle>>;
+	function entries():js.lib.Iterator.AsyncIterator<js.lib.KeyValue<String, FileSystemHandle>>;
 	/**
 		The **`getDirectoryHandle()`** method of the `FileSystemDirectoryHandle` interface returns a `FileSystemDirectoryHandle` for a subdirectory with the specified name within the directory handle on which the method is called.
 		

@@ -25,6 +25,9 @@
 package js.web.device;
 
 typedef GamepadEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var gamepad : Null<Gamepad>;
 };

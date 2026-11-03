@@ -25,6 +25,9 @@
 package js.web.css;
 
 typedef PaintRenderingContext2DSettings = {
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var alpha : Bool;
 };

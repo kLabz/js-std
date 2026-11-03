@@ -25,8 +25,14 @@
 package js.web.ml;
 
 typedef MLLinearOptions = MLOperatorOptions & {
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var alpha : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var beta : Float;
 };

@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef IsInputPendingOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var includeContinuous : Bool;
 };

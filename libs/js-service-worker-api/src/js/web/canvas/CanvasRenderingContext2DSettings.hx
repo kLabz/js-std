@@ -25,14 +25,29 @@
 package js.web.canvas;
 
 typedef CanvasRenderingContext2DSettings = {
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var alpha : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var desynchronized : Bool;
+	/**
+		Default: `PredefinedColorSpace.SRGB`
+	**/
 	@:optional
 	var colorSpace : PredefinedColorSpace;
+	/**
+		Default: `CanvasColorType.UNORM8`
+	**/
 	@:optional
 	var colorType : CanvasColorType;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var willReadFrequently : Bool;
 };

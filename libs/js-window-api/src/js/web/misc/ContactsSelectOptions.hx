@@ -25,6 +25,9 @@
 package js.web.misc;
 
 typedef ContactsSelectOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var multiple : Bool;
 };

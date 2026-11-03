@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef GainOptions = AudioNodeOptions & {
+	/**
+		Default: `1.0`
+	**/
 	@:optional
 	var gain : Float;
 };

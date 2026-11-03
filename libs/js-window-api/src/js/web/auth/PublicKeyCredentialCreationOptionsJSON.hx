@@ -31,14 +31,26 @@ typedef PublicKeyCredentialCreationOptionsJSON = {
 	var pubKeyCredParams : Array<PublicKeyCredentialParameters>;
 	@:optional
 	var timeout : Int;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var excludeCredentials : Array<PublicKeyCredentialDescriptorJSON>;
 	@:optional
 	var authenticatorSelection : AuthenticatorSelectionCriteria;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var hints : Array<String>;
+	/**
+		Default: `"none"`
+	**/
 	@:optional
 	var attestation : String;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var attestationFormats : Array<String>;
 	@:optional

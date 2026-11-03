@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef ConstantSourceOptions = {
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var offset : Float;
 };

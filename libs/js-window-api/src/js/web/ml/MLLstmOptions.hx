@@ -35,10 +35,19 @@ typedef MLLstmOptions = MLOperatorOptions & {
 	var initialHiddenState : MLOperand;
 	@:optional
 	var initialCellState : MLOperand;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var returnSequence : Bool;
+	/**
+		Default: `MLRecurrentNetworkDirection.FORWARD`
+	**/
 	@:optional
 	var direction : MLRecurrentNetworkDirection;
+	/**
+		Default: `MLLstmWeightLayout.IOFG`
+	**/
 	@:optional
 	var layout : MLLstmWeightLayout;
 	@:optional

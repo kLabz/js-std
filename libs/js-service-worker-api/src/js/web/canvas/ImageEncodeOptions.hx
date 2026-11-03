@@ -25,6 +25,9 @@
 package js.web.canvas;
 
 typedef ImageEncodeOptions = {
+	/**
+		Default: `"image/png"`
+	**/
 	@:optional
 	var type : String;
 	@:optional

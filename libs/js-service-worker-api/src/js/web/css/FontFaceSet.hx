@@ -82,7 +82,7 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<FontFace, FontFace>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<FontFace, FontFace>>;
 	/**
 		The **`forEach()`** method of the `FontFaceSet` interface executes a provided function for each value in the `FontFaceSet` object.
 		

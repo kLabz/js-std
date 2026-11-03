@@ -25,14 +25,29 @@
 package js.web.dom;
 
 typedef WheelEventInit = MouseEventInit & {
+	/**
+		Default: `0.0`
+	**/
 	@:optional
 	var deltaX : Float;
+	/**
+		Default: `0.0`
+	**/
 	@:optional
 	var deltaY : Float;
+	/**
+		Default: `0.0`
+	**/
 	@:optional
 	var deltaZ : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var deltaMode : Int;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var momentum : Bool;
 };

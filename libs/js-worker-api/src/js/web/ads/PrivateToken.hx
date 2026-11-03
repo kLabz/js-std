@@ -27,6 +27,9 @@ package js.web.ads;
 typedef PrivateToken = {
 	var version : TokenVersion;
 	var operation : OperationType;
+	/**
+		Default: `RefreshPolicy.NONE`
+	**/
 	@:optional
 	var refreshPolicy : RefreshPolicy;
 	@:optional

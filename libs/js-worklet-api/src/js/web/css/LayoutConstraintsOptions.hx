@@ -39,6 +39,9 @@ typedef LayoutConstraintsOptions = {
 	var percentageBlockSize : Float;
 	@:optional
 	var blockFragmentationOffset : Float;
+	/**
+		Default: `BlockFragmentationType.NONE`
+	**/
 	@:optional
 	var blockFragmentationType : BlockFragmentationType;
 	@:optional

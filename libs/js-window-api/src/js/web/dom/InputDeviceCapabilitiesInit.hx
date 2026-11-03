@@ -25,8 +25,14 @@
 package js.web.dom;
 
 typedef InputDeviceCapabilitiesInit = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var firesTouchEvents : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var pointerMovementScrolls : Bool;
 };

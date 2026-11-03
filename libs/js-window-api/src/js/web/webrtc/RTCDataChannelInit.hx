@@ -25,18 +25,30 @@
 package js.web.webrtc;
 
 typedef RTCDataChannelInit = {
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var ordered : Bool;
 	@:optional
 	var maxPacketLifeTime : Int;
 	@:optional
 	var maxRetransmits : Int;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var protocol : String;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var negotiated : Bool;
 	@:optional
 	var id : Int;
+	/**
+		Default: `RTCPriorityType.LOW`
+	**/
 	@:optional
 	var priority : RTCPriorityType;
 };

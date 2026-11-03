@@ -25,8 +25,14 @@
 package js.web.media;
 
 typedef MockCameraConfiguration = MockCaptureDeviceConfiguration & {
+	/**
+		Default: `30`
+	**/
 	@:optional
 	var defaultFrameRate : Float;
+	/**
+		Default: `"user"`
+	**/
 	@:optional
 	var facingMode : String;
 };

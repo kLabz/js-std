@@ -25,6 +25,9 @@
 package js.web.ml;
 
 typedef MLEluOptions = MLOperatorOptions & {
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var alpha : Float;
 };

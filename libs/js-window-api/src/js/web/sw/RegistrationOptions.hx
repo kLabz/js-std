@@ -27,8 +27,14 @@ package js.web.sw;
 typedef RegistrationOptions = {
 	@:optional
 	var scope : String;
+	/**
+		Default: `js.web.html.WorkerType.CLASSIC`
+	**/
 	@:optional
 	var type : js.web.html.WorkerType;
+	/**
+		Default: `ServiceWorkerUpdateViaCache.IMPORTS`
+	**/
 	@:optional
 	var updateViaCache : ServiceWorkerUpdateViaCache;
 };

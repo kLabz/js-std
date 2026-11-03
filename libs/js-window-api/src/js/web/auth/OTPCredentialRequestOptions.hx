@@ -25,6 +25,9 @@
 package js.web.auth;
 
 typedef OTPCredentialRequestOptions = {
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var transport : Array<OTPCredentialTransportType>;
 };

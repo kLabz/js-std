@@ -25,28 +25,64 @@
 package js.web.misc;
 
 typedef SecurityPolicyViolationEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var documentURI : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var referrer : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var blockedURI : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var violatedDirective : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var effectiveDirective : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var originalPolicy : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var sourceFile : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var sample : String;
+	/**
+		Default: `SecurityPolicyViolationEventDisposition.ENFORCE`
+	**/
 	@:optional
 	var disposition : SecurityPolicyViolationEventDisposition;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var statusCode : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var lineNumber : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var columnNumber : Int;
 };

@@ -25,12 +25,24 @@
 package js.web.css;
 
 typedef TransitionEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var propertyName : String;
+	/**
+		Default: `0.0`
+	**/
 	@:optional
 	var elapsedTime : Float;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var pseudoElement : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var animation : Null<CSSTransition>;
 };

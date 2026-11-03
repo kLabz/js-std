@@ -25,8 +25,14 @@
 package js.web.media;
 
 typedef KeySystemTrackConfiguration = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var robustness : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var encryptionScheme : Null<String>;
 };

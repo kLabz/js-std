@@ -27,6 +27,9 @@ package js.web.auth;
 typedef PaymentItem = {
 	var label : String;
 	var amount : PaymentCurrencyAmount;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var pending : Bool;
 };

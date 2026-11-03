@@ -25,8 +25,14 @@
 package js.web.media;
 
 typedef CapturedMouseEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `-1`
+	**/
 	@:optional
 	var surfaceX : Int;
+	/**
+		Default: `-1`
+	**/
 	@:optional
 	var surfaceY : Int;
 };

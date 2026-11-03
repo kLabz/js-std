@@ -24,4 +24,4 @@
 
 package js.web.dom;
 
-typedef CreateScriptCallback = (input:String, arguments:Any) -> Null<String>;
+typedef CreateScriptCallback = (input:String) -> Null<String>;

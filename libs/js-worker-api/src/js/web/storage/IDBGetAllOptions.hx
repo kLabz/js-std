@@ -25,10 +25,16 @@
 package js.web.storage;
 
 typedef IDBGetAllOptions = {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var query : Any;
 	@:optional
 	var count : Int;
+	/**
+		Default: `IDBCursorDirection.NEXT`
+	**/
 	@:optional
 	var direction : IDBCursorDirection;
 };

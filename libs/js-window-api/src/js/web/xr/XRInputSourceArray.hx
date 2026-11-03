@@ -47,7 +47,7 @@ package js.web.xr;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<Int, XRInputSource>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<Int, XRInputSource>>;
 	/**
 		The `XRInputSourceArray` method **`forEach()`** executes the specified callback once for each input source in the array, starting at index 0 and progressing until the end of the list.
 		

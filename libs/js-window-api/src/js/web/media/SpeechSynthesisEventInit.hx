@@ -26,12 +26,24 @@ package js.web.media;
 
 typedef SpeechSynthesisEventInit = js.web.dom.EventInit & {
 	var utterance : SpeechSynthesisUtterance;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var charIndex : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var charLength : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var elapsedTime : Float;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var name : String;
 };

@@ -25,8 +25,14 @@
 package js.web.net;
 
 typedef WebTransportErrorOptions = {
+	/**
+		Default: `WebTransportErrorSource.STREAM`
+	**/
 	@:optional
 	var source : WebTransportErrorSource;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var streamErrorCode : Null<Int>;
 };

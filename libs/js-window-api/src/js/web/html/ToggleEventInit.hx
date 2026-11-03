@@ -25,10 +25,19 @@
 package js.web.html;
 
 typedef ToggleEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var oldState : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var newState : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var source : Null<js.web.dom.Element>;
 };

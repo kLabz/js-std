@@ -25,6 +25,9 @@
 package js.web.css;
 
 typedef BoxQuadOptions = {
+	/**
+		Default: `CSSBoxType.BORDER`
+	**/
 	@:optional
 	var box : CSSBoxType;
 	@:optional

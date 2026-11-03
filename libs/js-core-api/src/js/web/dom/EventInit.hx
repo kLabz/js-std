@@ -25,10 +25,19 @@
 package js.web.dom;
 
 typedef EventInit = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var bubbles : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var cancelable : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var composed : Bool;
 };

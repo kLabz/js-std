@@ -29,8 +29,14 @@ typedef MLInstanceNormalizationOptions = MLOperatorOptions & {
 	var scale : MLOperand;
 	@:optional
 	var bias : MLOperand;
+	/**
+		Default: `1e-5`
+	**/
 	@:optional
 	var epsilon : Float;
+	/**
+		Default: `MLInputOperandLayout.NCHW`
+	**/
 	@:optional
 	var layout : MLInputOperandLayout;
 };

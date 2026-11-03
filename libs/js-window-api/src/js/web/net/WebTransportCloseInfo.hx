@@ -25,8 +25,14 @@
 package js.web.net;
 
 typedef WebTransportCloseInfo = {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var closeCode : Int;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var reason : String;
 };

@@ -26,20 +26,38 @@ package js.web.xr;
 
 typedef XRLayerInit = {
 	var space : XRSpace;
+	/**
+		Default: `XRTextureType.TEXTURE`
+	**/
 	@:optional
 	var textureType : XRTextureType;
+	/**
+		Default: `0x1908`
+	**/
 	@:optional
 	var colorFormat : js.web.webgl.GLenum;
 	@:optional
 	var depthFormat : Null<js.web.webgl.GLenum>;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var mipLevels : Int;
 	var viewPixelWidth : Int;
 	var viewPixelHeight : Int;
+	/**
+		Default: `XRLayerLayout.MONO`
+	**/
 	@:optional
 	var layout : XRLayerLayout;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var isStatic : Bool;
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var clearOnAccess : Bool;
 };

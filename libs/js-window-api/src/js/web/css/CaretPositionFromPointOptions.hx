@@ -25,6 +25,9 @@
 package js.web.css;
 
 typedef CaretPositionFromPointOptions = {
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var shadowRoots : Array<js.web.dom.ShadowRoot>;
 };

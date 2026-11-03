@@ -25,8 +25,14 @@
 package js.web.media;
 
 typedef AudioWorkletNodeOptions = AudioNodeOptions & {
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var numberOfInputs : Int;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var numberOfOutputs : Int;
 	@:optional

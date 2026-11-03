@@ -26,21 +26,39 @@ package js.web.ads;
 
 typedef AttributionConversionOptions = {
 	var aggregationService : String;
+	/**
+		Default: `1.0`
+	**/
 	@:optional
 	var epsilon : Float;
 	var histogramSize : Int;
 	@:optional
 	var lookbackDays : Int;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var matchValues : Array<Int>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var impressionSites : Array<String>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var impressionCallers : Array<String>;
 	@:optional
 	var credit : Array<Float>;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var value : Int;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var maxValue : Int;
 };

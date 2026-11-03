@@ -25,12 +25,24 @@
 package js.web.media;
 
 typedef VideoColorSpaceInit = {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var primaries : Null<VideoColorPrimaries>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var transfer : Null<VideoTransferCharacteristics>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var matrix : Null<VideoMatrixCoefficients>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var fullRange : Null<Bool>;
 };

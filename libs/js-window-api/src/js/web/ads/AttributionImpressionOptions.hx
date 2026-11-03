@@ -26,14 +26,29 @@ package js.web.ads;
 
 typedef AttributionImpressionOptions = {
 	var histogramIndex : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var matchValue : Int;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var conversionSites : Array<String>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var conversionCallers : Array<String>;
+	/**
+		Default: `30`
+	**/
 	@:optional
 	var lifetimeDays : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var priority : Int;
 };

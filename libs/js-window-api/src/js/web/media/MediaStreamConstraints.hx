@@ -25,12 +25,21 @@
 package js.web.media;
 
 typedef MediaStreamConstraints = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var video : haxe.extern.EitherType<Bool, MediaTrackConstraints>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var audio : haxe.extern.EitherType<Bool, MediaTrackConstraints>;
 	@:optional
 	var semantics : GetUserMediaSemantics;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var preferCurrentTab : Bool;
 	@:optional

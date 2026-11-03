@@ -32,7 +32,7 @@ package js.web.device;
 @:native("BluetoothManufacturerDataFilter") @:require(js_experimental_api, "BluetoothManufacturerDataFilter is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothManufacturerDataFilter {
 	var size(default, null) : Int;
 	function new(?init:{ }):Void;
-	function entries():js.lib.Iterator<js.lib.Tuple<Int, BluetoothDataFilter>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<Int, BluetoothDataFilter>>;
 	function forEach(callback:(value:BluetoothDataFilter, key:Int, map:BluetoothManufacturerDataFilter) -> Void, ?thisArg:Any):Void;
 	function get(key:Int):Null<BluetoothDataFilter>;
 	function has(key:Int):Bool;

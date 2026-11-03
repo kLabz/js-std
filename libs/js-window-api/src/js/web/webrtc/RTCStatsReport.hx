@@ -43,7 +43,7 @@ package js.web.webrtc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<String, { }>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, { }>>;
 	/**
 		The **`forEach()`** method of the `RTCStatsReport` interface executes a provided function once for each key/value pair in the `RTCStatsReport` object, in insertion order.
 		

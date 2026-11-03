@@ -25,6 +25,9 @@
 package js.web.media;
 
 typedef PeriodicWaveConstraints = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var disableNormalization : Bool;
 };

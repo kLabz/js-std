@@ -25,6 +25,9 @@
 package js.web.webrtc;
 
 typedef RTCRtpSFrameEncryptorOptions = SFrameTransformOptions & {
+	/**
+		Default: `SFrameType.PER_FRAME`
+	**/
 	@:optional
 	var type : SFrameType;
 };

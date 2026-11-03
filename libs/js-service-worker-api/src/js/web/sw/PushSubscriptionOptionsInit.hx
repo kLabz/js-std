@@ -25,8 +25,14 @@
 package js.web.sw;
 
 typedef PushSubscriptionOptionsInit = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var userVisibleOnly : Bool;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var applicationServerKey : Null<haxe.extern.EitherType<js.web.dom.BufferSource, String>>;
 };

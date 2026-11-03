@@ -26,6 +26,9 @@ package js.web.media;
 
 typedef AudioDataCopyToOptions = {
 	var planeIndex : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var frameOffset : Int;
 	@:optional

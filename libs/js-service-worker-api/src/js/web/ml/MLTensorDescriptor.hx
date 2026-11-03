@@ -25,8 +25,14 @@
 package js.web.ml;
 
 typedef MLTensorDescriptor = MLOperandDescriptor & {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var readable : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var writable : Bool;
 };

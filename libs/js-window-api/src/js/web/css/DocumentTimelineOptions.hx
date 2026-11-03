@@ -25,6 +25,9 @@
 package js.web.css;
 
 typedef DocumentTimelineOptions = {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var originTime : js.web.perf.DOMHighResTimeStamp;
 };

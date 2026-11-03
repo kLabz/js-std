@@ -28,6 +28,9 @@ typedef PaymentShippingOption = {
 	var id : String;
 	var label : String;
 	var amount : PaymentCurrencyAmount;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var selected : Bool;
 };

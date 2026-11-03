@@ -25,12 +25,24 @@
 package js.web.media;
 
 typedef AnalyserOptions = AudioNodeOptions & {
+	/**
+		Default: `2048`
+	**/
 	@:optional
 	var fftSize : Int;
+	/**
+		Default: `-30`
+	**/
 	@:optional
 	var maxDecibels : Float;
+	/**
+		Default: `-100`
+	**/
 	@:optional
 	var minDecibels : Float;
+	/**
+		Default: `0.8`
+	**/
 	@:optional
 	var smoothingTimeConstant : Float;
 };

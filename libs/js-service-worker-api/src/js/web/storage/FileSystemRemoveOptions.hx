@@ -25,6 +25,9 @@
 package js.web.storage;
 
 typedef FileSystemRemoveOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var recursive : Bool;
 };

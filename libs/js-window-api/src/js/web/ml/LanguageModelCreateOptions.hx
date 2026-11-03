@@ -29,6 +29,9 @@ typedef LanguageModelCreateOptions = LanguageModelCreateCoreOptions & {
 	var signal : js.web.dom.AbortSignal;
 	@:optional
 	var monitor : CreateMonitorCallback;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var initialPrompts : Array<LanguageModelMessage>;
 };

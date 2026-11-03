@@ -26,6 +26,9 @@ package js.web.html;
 
 typedef WindowControlsOverlayGeometryChangeEventInit = js.web.dom.EventInit & {
 	var titlebarAreaRect : js.web.dom.DOMRect;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var visible : Bool;
 };

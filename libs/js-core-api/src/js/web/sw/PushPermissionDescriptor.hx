@@ -25,6 +25,9 @@
 package js.web.sw;
 
 typedef PushPermissionDescriptor = js.web.misc.PermissionDescriptor & {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var userVisibleOnly : Bool;
 };

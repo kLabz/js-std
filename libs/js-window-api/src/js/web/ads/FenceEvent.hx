@@ -31,8 +31,14 @@ typedef FenceEvent = {
 	var eventData : String;
 	@:optional
 	var destination : Array<FenceReportingDestination>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var crossOriginExposed : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var once : Bool;
 	@:optional

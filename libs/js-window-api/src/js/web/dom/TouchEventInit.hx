@@ -25,10 +25,19 @@
 package js.web.dom;
 
 typedef TouchEventInit = EventModifierInit & {
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var touches : Array<Touch>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var targetTouches : Array<Touch>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var changedTouches : Array<Touch>;
 };

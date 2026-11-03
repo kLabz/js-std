@@ -27,6 +27,9 @@ package js.web.css;
 typedef ScrollTimelineOptions = {
 	@:optional
 	var source : Null<js.web.dom.Element>;
+	/**
+		Default: `ScrollAxis.BLOCK`
+	**/
 	@:optional
 	var axis : ScrollAxis;
 };

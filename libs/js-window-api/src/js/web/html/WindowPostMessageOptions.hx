@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef WindowPostMessageOptions = StructuredSerializeOptions & {
+	/**
+		Default: `"/"`
+	**/
 	@:optional
 	var targetOrigin : String;
 };

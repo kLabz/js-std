@@ -29,6 +29,9 @@ typedef XRDepthStateInit = {
 	var dataFormatPreference : Array<XRDepthDataFormat>;
 	@:optional
 	var depthTypeRequest : Array<XRDepthType>;
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var matchDepthView : Bool;
 };

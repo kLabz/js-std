@@ -25,10 +25,19 @@
 package js.web.storage;
 
 typedef LockOptions = {
+	/**
+		Default: `LockMode.EXCLUSIVE`
+	**/
 	@:optional
 	var mode : LockMode;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var ifAvailable : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var steal : Bool;
 	@:optional

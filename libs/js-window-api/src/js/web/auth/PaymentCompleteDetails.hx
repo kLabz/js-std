@@ -25,6 +25,9 @@
 package js.web.auth;
 
 typedef PaymentCompleteDetails = {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var data : Null<{ }>;
 };

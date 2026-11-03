@@ -61,7 +61,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/URLSearchParams/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<String, String>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, String>>;
 	/**
 		The **`forEach()`** method of the `URLSearchParams` interface allows iteration through all values contained in this object via a callback function.
 		

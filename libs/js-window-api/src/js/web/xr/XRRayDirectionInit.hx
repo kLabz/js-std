@@ -25,12 +25,24 @@
 package js.web.xr;
 
 typedef XRRayDirectionInit = {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var x : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var y : Float;
+	/**
+		Default: `-1`
+	**/
 	@:optional
 	var z : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var w : Float;
 };

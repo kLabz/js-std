@@ -31,6 +31,9 @@ typedef DeviceMotionEventInit = js.web.dom.EventInit & {
 	var accelerationIncludingGravity : DeviceMotionEventAccelerationInit;
 	@:optional
 	var rotationRate : DeviceMotionEventRotationRateInit;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var interval : Float;
 };

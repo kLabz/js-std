@@ -25,8 +25,14 @@
 package js.web.media;
 
 typedef ImageDecodeOptions = {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var frameIndex : Int;
+	/**
+		Default: `true`
+	**/
 	@:optional
 	var completeFramesOnly : Bool;
 };

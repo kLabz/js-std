@@ -61,7 +61,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CustomStateSet/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<String, String>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, String>>;
 	/**
 		The **`forEach()`** method of the `CustomStateSet` interface executes a provided function for each value in the `CustomStateSet` object.
 		

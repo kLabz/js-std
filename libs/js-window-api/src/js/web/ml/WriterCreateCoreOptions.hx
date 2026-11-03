@@ -25,10 +25,19 @@
 package js.web.ml;
 
 typedef WriterCreateCoreOptions = {
+	/**
+		Default: `WriterTone.NEUTRAL`
+	**/
 	@:optional
 	var tone : WriterTone;
+	/**
+		Default: `WriterFormat.MARKDOWN`
+	**/
 	@:optional
 	var format : WriterFormat;
+	/**
+		Default: `WriterLength.SHORT`
+	**/
 	@:optional
 	var length : WriterLength;
 	@:optional

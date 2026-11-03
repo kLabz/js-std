@@ -25,24 +25,54 @@
 package js.web.css;
 
 typedef FontFaceDescriptors = {
+	/**
+		Default: `"normal"`
+	**/
 	@:optional
 	var style : String;
+	/**
+		Default: `"normal"`
+	**/
 	@:optional
 	var weight : String;
+	/**
+		Default: `"normal"`
+	**/
 	@:optional
 	var stretch : String;
+	/**
+		Default: `"U+0-10FFFF"`
+	**/
 	@:optional
 	var unicodeRange : String;
+	/**
+		Default: `"normal"`
+	**/
 	@:optional
 	var featureSettings : String;
+	/**
+		Default: `"normal"`
+	**/
 	@:optional
 	var variationSettings : String;
+	/**
+		Default: `"auto"`
+	**/
 	@:optional
 	var display : String;
+	/**
+		Default: `"normal"`
+	**/
 	@:optional
 	var ascentOverride : String;
+	/**
+		Default: `"normal"`
+	**/
 	@:optional
 	var descentOverride : String;
+	/**
+		Default: `"normal"`
+	**/
 	@:optional
 	var lineGapOverride : String;
 };

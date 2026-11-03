@@ -26,12 +26,24 @@ package js.web.media;
 
 typedef AudioParamDescriptor = {
 	var name : String;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var defaultValue : Float;
+	/**
+		Default: `-3.4028235e38`
+	**/
 	@:optional
 	var minValue : Float;
+	/**
+		Default: `3.4028235e38`
+	**/
 	@:optional
 	var maxValue : Float;
+	/**
+		Default: `AutomationRate.A_RATE`
+	**/
 	@:optional
 	var automationRate : AutomationRate;
 };

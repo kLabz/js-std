@@ -25,12 +25,21 @@
 package js.web.webgpu;
 
 typedef GPURequestAdapterOptions = {
+	/**
+		Default: `"core"`
+	**/
 	@:optional
 	var featureLevel : String;
 	@:optional
 	var powerPreference : GPUPowerPreference;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var forceFallbackAdapter : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var xrCompatible : Bool;
 };

@@ -25,6 +25,9 @@
 package js.web.storage;
 
 typedef FileSystemCreateWritableOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var keepExistingData : Bool;
 };

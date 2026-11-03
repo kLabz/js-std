@@ -25,10 +25,19 @@
 package js.web.media;
 
 typedef MediaKeySystemMediaCapability = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var contentType : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var encryptionScheme : Null<String>;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var robustness : String;
 };

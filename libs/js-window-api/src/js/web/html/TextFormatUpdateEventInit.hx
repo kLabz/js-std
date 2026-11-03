@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef TextFormatUpdateEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var textFormats : Array<TextFormat>;
 };

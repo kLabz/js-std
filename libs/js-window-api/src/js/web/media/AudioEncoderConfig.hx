@@ -30,6 +30,9 @@ typedef AudioEncoderConfig = {
 	var numberOfChannels : Int;
 	@:optional
 	var bitrate : Float;
+	/**
+		Default: `BitrateMode.VARIABLE`
+	**/
 	@:optional
 	var bitrateMode : BitrateMode;
 	@:optional

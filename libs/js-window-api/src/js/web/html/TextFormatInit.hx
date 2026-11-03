@@ -25,12 +25,24 @@
 package js.web.html;
 
 typedef TextFormatInit = {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var rangeStart : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var rangeEnd : Int;
+	/**
+		Default: `UnderlineStyle.NONE`
+	**/
 	@:optional
 	var underlineStyle : UnderlineStyle;
+	/**
+		Default: `UnderlineThickness.NONE`
+	**/
 	@:optional
 	var underlineThickness : UnderlineThickness;
 };

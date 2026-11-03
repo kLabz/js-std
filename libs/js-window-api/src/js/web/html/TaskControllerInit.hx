@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef TaskControllerInit = {
+	/**
+		Default: `TaskPriority.USER_VISIBLE`
+	**/
 	@:optional
 	var priority : TaskPriority;
 };

@@ -25,6 +25,9 @@
 package js.web.storage;
 
 typedef StorageBucketOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var persisted : Bool;
 	@:optional

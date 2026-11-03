@@ -25,6 +25,9 @@
 package js.web.device;
 
 typedef OrientationSensorOptions = SensorOptions & {
+	/**
+		Default: `OrientationSensorLocalCoordinateSystem.DEVICE`
+	**/
 	@:optional
 	var referenceFrame : OrientationSensorLocalCoordinateSystem;
 };

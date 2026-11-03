@@ -25,8 +25,14 @@
 package js.web.media;
 
 typedef Point2D = {
+	/**
+		Default: `0.0`
+	**/
 	@:optional
 	var x : Float;
+	/**
+		Default: `0.0`
+	**/
 	@:optional
 	var y : Float;
 };

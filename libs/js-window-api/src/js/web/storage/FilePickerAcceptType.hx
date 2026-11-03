@@ -25,6 +25,9 @@
 package js.web.storage;
 
 typedef FilePickerAcceptType = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var description : String;
 	@:optional

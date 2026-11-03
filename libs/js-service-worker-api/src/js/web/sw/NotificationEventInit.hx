@@ -26,6 +26,9 @@ package js.web.sw;
 
 typedef NotificationEventInit = ExtendableEventInit & {
 	var notification : Notification;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var action : String;
 };

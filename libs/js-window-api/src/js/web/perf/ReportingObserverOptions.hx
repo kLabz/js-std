@@ -27,6 +27,9 @@ package js.web.perf;
 typedef ReportingObserverOptions = {
 	@:optional
 	var types : Array<String>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var buffered : Bool;
 };

@@ -25,8 +25,14 @@
 package js.web.html;
 
 typedef HashChangeEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var oldURL : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var newURL : String;
 };

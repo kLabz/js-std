@@ -27,6 +27,9 @@ package js.web.auth;
 typedef AuthenticationExtensionsClientInputs = {
 	@:optional
 	var credentialProtectionPolicy : String;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var enforceCredentialProtectionPolicy : Bool;
 	@:optional

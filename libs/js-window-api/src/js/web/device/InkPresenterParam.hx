@@ -25,6 +25,9 @@
 package js.web.device;
 
 typedef InkPresenterParam = {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var presentationArea : Null<js.web.dom.Element>;
 };

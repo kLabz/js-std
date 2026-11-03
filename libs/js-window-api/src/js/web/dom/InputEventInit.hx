@@ -25,14 +25,29 @@
 package js.web.dom;
 
 typedef InputEventInit = UIEventInit & {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var data : Null<String>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var isComposing : Bool;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var inputType : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var dataTransfer : Null<js.web.html.DataTransfer>;
+	/**
+		Default: `[]`
+	**/
 	@:optional
 	var targetRanges : Array<StaticRange>;
 };

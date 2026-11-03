@@ -43,7 +43,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/NodeList/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<Int, Node>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<Int, Node>>;
 	/**
 		The **`forEach()`** method of the `NodeList` interface calls the callback given in parameter once for each value pair in the list, in insertion order.
 		

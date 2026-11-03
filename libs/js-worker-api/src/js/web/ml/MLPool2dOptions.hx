@@ -33,8 +33,14 @@ typedef MLPool2dOptions = MLOperatorOptions & {
 	var strides : Array<Int>;
 	@:optional
 	var dilations : Array<Int>;
+	/**
+		Default: `MLInputOperandLayout.NCHW`
+	**/
 	@:optional
 	var layout : MLInputOperandLayout;
+	/**
+		Default: `MLRoundingType.FLOOR`
+	**/
 	@:optional
 	var outputShapeRounding : MLRoundingType;
 	@:optional

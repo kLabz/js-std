@@ -28,6 +28,9 @@ typedef GPUProgrammableStage = {
 	var module : GPUShaderModule;
 	@:optional
 	var entryPoint : String;
+	/**
+		Default: `{  }`
+	**/
 	@:optional
 	var constants : haxe.DynamicAccess<GPUPipelineConstantValue>;
 };

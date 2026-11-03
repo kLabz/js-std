@@ -28,15 +28,27 @@ typedef XRGPULayerInit = {
 	var colorFormat : js.web.webgpu.GPUTextureFormat;
 	@:optional
 	var depthStencilFormat : Null<js.web.webgpu.GPUTextureFormat>;
+	/**
+		Default: `0x10`
+	**/
 	@:optional
 	var textureUsage : js.web.webgpu.GPUTextureUsageFlags;
 	var space : XRSpace;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var mipLevels : Int;
 	var viewPixelWidth : Int;
 	var viewPixelHeight : Int;
+	/**
+		Default: `XRLayerLayout.MONO`
+	**/
 	@:optional
 	var layout : XRLayerLayout;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var isStatic : Bool;
 };

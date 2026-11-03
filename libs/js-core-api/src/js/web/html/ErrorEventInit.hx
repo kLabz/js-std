@@ -25,12 +25,24 @@
 package js.web.html;
 
 typedef ErrorEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var message : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var filename : String;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var lineno : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var colno : Int;
 	@:optional

@@ -25,6 +25,9 @@
 package js.web.svg;
 
 typedef SVGPathDataSettings = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var normalize : Bool;
 };

@@ -25,6 +25,9 @@
 package js.web.webrtc;
 
 typedef RTCIceGatherOptions = {
+	/**
+		Default: `RTCIceTransportPolicy.ALL`
+	**/
 	@:optional
 	var gatherPolicy : RTCIceTransportPolicy;
 	@:optional

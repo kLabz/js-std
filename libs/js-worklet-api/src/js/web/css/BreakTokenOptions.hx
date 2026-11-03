@@ -27,6 +27,9 @@ package js.web.css;
 typedef BreakTokenOptions = {
 	@:optional
 	var childBreakTokens : Array<ChildBreakToken>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var data : Any;
 };

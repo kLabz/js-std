@@ -55,7 +55,7 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<Int, CSSTransformComponent>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<Int, CSSTransformComponent>>;
 	/**
 		The **`forEach()`** method of the `CSSTransformValue` interface executes a provided function once for each item in the object.
 		

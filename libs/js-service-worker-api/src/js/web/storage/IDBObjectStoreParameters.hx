@@ -25,8 +25,14 @@
 package js.web.storage;
 
 typedef IDBObjectStoreParameters = {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var keyPath : Null<haxe.extern.EitherType<String, Array<String>>>;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var autoIncrement : Bool;
 };

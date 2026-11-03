@@ -25,10 +25,19 @@
 package js.web.device;
 
 typedef DeviceMotionEventAccelerationInit = {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var x : Null<Float>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var y : Null<Float>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var z : Null<Float>;
 };

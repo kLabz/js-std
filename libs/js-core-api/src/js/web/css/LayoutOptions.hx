@@ -25,8 +25,14 @@
 package js.web.css;
 
 typedef LayoutOptions = {
+	/**
+		Default: `ChildDisplayType.BLOCK`
+	**/
 	@:optional
 	var childDisplay : ChildDisplayType;
+	/**
+		Default: `LayoutSizingMode.BLOCK_LIKE`
+	**/
 	@:optional
 	var sizing : LayoutSizingMode;
 };

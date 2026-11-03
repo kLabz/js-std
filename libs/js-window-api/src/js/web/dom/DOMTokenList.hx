@@ -61,7 +61,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DOMTokenList/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<Int, String>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<Int, String>>;
 	/**
 		The **`forEach()`** method of the `DOMTokenList` interface calls the callback given in parameter once for each value pair in the list, in insertion order.
 		

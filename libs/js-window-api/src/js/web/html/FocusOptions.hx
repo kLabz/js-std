@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef FocusOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var preventScroll : Bool;
 	@:optional

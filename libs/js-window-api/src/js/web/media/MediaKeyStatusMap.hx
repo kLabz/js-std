@@ -45,7 +45,7 @@ package js.web.media;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<js.web.dom.BufferSource, MediaKeyStatus>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<js.web.dom.BufferSource, MediaKeyStatus>>;
 	/**
 		The **`forEach()`** method of the `MediaKeyStatusMap` interface calls callback once for each key-value pair in the status map, in insertion order. If an argument is present it will be passed to the callback.
 		

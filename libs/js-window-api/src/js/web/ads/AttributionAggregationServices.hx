@@ -31,7 +31,7 @@ package js.web.ads;
 **/
 @:native("AttributionAggregationServices") @:require(js_experimental_api, "AttributionAggregationServices is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AttributionAggregationServices {
 	var size(default, null) : Int;
-	function entries():js.lib.Iterator<js.lib.Tuple<String, AttributionAggregationService>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, AttributionAggregationService>>;
 	function forEach(callback:(value:AttributionAggregationService, key:String, map:AttributionAggregationServices) -> Void, ?thisArg:Any):Void;
 	function get(key:String):Null<AttributionAggregationService>;
 	function has(key:String):Bool;

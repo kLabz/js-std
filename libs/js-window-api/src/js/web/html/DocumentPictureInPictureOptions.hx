@@ -25,12 +25,24 @@
 package js.web.html;
 
 typedef DocumentPictureInPictureOptions = {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var width : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var height : Float;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var disallowReturnToOpener : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var preferInitialWindowPlacement : Bool;
 };

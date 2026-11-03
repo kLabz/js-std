@@ -26,6 +26,9 @@ package js.web.webgpu;
 
 typedef GPUExternalTextureDescriptor = GPUObjectDescriptorBase & {
 	var source : haxe.extern.EitherType<js.web.html.HTMLVideoElement, js.web.media.VideoFrame>;
+	/**
+		Default: `js.web.canvas.PredefinedColorSpace.SRGB`
+	**/
 	@:optional
 	var colorSpace : js.web.canvas.PredefinedColorSpace;
 };

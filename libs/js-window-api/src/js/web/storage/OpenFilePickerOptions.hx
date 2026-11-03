@@ -25,6 +25,9 @@
 package js.web.storage;
 
 typedef OpenFilePickerOptions = FilePickerOptions & {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var multiple : Bool;
 };

@@ -27,6 +27,9 @@ package js.web.css;
 typedef NavigationEventInit = js.web.dom.UIEventInit & {
 	@:optional
 	var dir : SpatialNavigationDirection;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var relatedTarget : Null<js.web.dom.EventTarget>;
 };

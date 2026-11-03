@@ -27,6 +27,9 @@ package js.web.canvas;
 typedef ImageDataSettings = {
 	@:optional
 	var colorSpace : PredefinedColorSpace;
+	/**
+		Default: `js.web.html.ImageDataPixelFormat.RGBA_UNORM8`
+	**/
 	@:optional
 	var pixelFormat : js.web.html.ImageDataPixelFormat;
 };

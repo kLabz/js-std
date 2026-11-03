@@ -25,6 +25,9 @@
 package js.web.device;
 
 typedef PressureObserverOptions = {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var sampleInterval : Int;
 };

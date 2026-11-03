@@ -25,14 +25,29 @@
 package js.web.media;
 
 typedef BiquadFilterOptions = AudioNodeOptions & {
+	/**
+		Default: `BiquadFilterType.LOWPASS`
+	**/
 	@:optional
 	var type : BiquadFilterType;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var Q : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var detune : Float;
+	/**
+		Default: `350`
+	**/
 	@:optional
 	var frequency : Float;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var gain : Float;
 };

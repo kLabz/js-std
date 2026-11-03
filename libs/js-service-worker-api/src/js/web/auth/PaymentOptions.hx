@@ -25,16 +25,34 @@
 package js.web.auth;
 
 typedef PaymentOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var requestPayerName : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var requestBillingAddress : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var requestPayerEmail : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var requestPayerPhone : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var requestShipping : Bool;
+	/**
+		Default: `PaymentShippingType.SHIPPING`
+	**/
 	@:optional
 	var shippingType : PaymentShippingType;
 };

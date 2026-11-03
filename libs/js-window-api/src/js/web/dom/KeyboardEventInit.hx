@@ -25,18 +25,39 @@
 package js.web.dom;
 
 typedef KeyboardEventInit = EventModifierInit & {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var key : String;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var code : String;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var location : Int;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var repeat : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var isComposing : Bool;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var charCode : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var keyCode : Int;
 };

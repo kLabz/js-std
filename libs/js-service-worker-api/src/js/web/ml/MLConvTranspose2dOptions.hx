@@ -35,10 +35,19 @@ typedef MLConvTranspose2dOptions = MLOperatorOptions & {
 	var outputPadding : Array<Int>;
 	@:optional
 	var outputSizes : Array<Int>;
+	/**
+		Default: `1`
+	**/
 	@:optional
 	var groups : Int;
+	/**
+		Default: `MLInputOperandLayout.NCHW`
+	**/
 	@:optional
 	var inputLayout : MLInputOperandLayout;
+	/**
+		Default: `MLConvTranspose2dFilterOperandLayout.IOHW`
+	**/
 	@:optional
 	var filterLayout : MLConvTranspose2dFilterOperandLayout;
 	@:optional

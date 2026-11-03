@@ -26,10 +26,19 @@ package js.web.storage;
 
 typedef CookieStoreDeleteOptions = {
 	var name : String;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var domain : Null<String>;
+	/**
+		Default: `"/"`
+	**/
 	@:optional
 	var path : String;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var partitioned : Bool;
 };

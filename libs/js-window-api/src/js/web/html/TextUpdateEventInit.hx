@@ -25,14 +25,29 @@
 package js.web.html;
 
 typedef TextUpdateEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var updateRangeStart : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var updateRangeEnd : Int;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var text : String;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var selectionStart : Int;
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var selectionEnd : Int;
 };

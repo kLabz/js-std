@@ -26,8 +26,14 @@ package js.web.auth;
 
 typedef IdentityCredentialRequestOptions = {
 	var providers : Array<IdentityProviderRequestOptions>;
+	/**
+		Default: `IdentityCredentialRequestOptionsContext.SIGNIN`
+	**/
 	@:optional
 	var context : IdentityCredentialRequestOptionsContext;
+	/**
+		Default: `IdentityCredentialRequestOptionsMode.PASSIVE`
+	**/
 	@:optional
 	var mode : IdentityCredentialRequestOptionsMode;
 };

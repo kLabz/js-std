@@ -25,6 +25,9 @@
 package js.web.html;
 
 typedef PortalActivateEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var data : Any;
 };

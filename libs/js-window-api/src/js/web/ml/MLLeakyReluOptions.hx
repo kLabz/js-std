@@ -25,6 +25,9 @@
 package js.web.ml;
 
 typedef MLLeakyReluOptions = MLOperatorOptions & {
+	/**
+		Default: `0.01`
+	**/
 	@:optional
 	var alpha : Float;
 };

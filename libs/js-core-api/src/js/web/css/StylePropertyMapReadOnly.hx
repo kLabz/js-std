@@ -43,7 +43,7 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMapReadOnly/entries>
 	**/
-	function entries():js.lib.Iterator<js.lib.Tuple<String, Array<CSSStyleValue>>>;
+	function entries():js.lib.Iterator<js.lib.KeyValue<String, Array<CSSStyleValue>>>;
 	/**
 		The **`StylePropertyMapReadOnly.forEach()`** method executes a provided function once for each element of `StylePropertyMapReadOnly`.
 		

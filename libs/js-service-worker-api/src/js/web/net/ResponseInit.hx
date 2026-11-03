@@ -25,8 +25,14 @@
 package js.web.net;
 
 typedef ResponseInit = {
+	/**
+		Default: `200`
+	**/
 	@:optional
 	var status : Int;
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var statusText : String;
 	@:optional

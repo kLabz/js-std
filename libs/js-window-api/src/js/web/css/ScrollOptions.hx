@@ -25,6 +25,9 @@
 package js.web.css;
 
 typedef ScrollOptions = {
+	/**
+		Default: `ScrollBehavior.AUTO`
+	**/
 	@:optional
 	var behavior : ScrollBehavior;
 };

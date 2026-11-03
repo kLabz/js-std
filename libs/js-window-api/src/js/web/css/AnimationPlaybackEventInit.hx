@@ -25,8 +25,14 @@
 package js.web.css;
 
 typedef AnimationPlaybackEventInit = js.web.dom.EventInit & {
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var currentTime : Null<CSSNumberish>;
+	/**
+		Default: `null`
+	**/
 	@:optional
 	var timelineTime : Null<CSSNumberish>;
 };

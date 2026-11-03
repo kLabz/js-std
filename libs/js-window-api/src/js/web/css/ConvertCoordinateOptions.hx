@@ -25,8 +25,14 @@
 package js.web.css;
 
 typedef ConvertCoordinateOptions = {
+	/**
+		Default: `CSSBoxType.BORDER`
+	**/
 	@:optional
 	var fromBox : CSSBoxType;
+	/**
+		Default: `CSSBoxType.BORDER`
+	**/
 	@:optional
 	var toBox : CSSBoxType;
 };

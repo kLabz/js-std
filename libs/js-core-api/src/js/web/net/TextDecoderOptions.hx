@@ -25,8 +25,14 @@
 package js.web.net;
 
 typedef TextDecoderOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var fatal : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var ignoreBOM : Bool;
 };

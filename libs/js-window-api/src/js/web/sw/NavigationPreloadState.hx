@@ -25,6 +25,9 @@
 package js.web.sw;
 
 typedef NavigationPreloadState = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var enabled : Bool;
 	@:optional

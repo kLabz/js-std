@@ -25,8 +25,14 @@
 package js.web.media;
 
 typedef FlacEncoderConfig = {
+	/**
+		Default: `0`
+	**/
 	@:optional
 	var blockSize : Int;
+	/**
+		Default: `5`
+	**/
 	@:optional
 	var compressLevel : Int;
 };

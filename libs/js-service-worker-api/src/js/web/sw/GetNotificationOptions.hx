@@ -25,6 +25,9 @@
 package js.web.sw;
 
 typedef GetNotificationOptions = {
+	/**
+		Default: `""`
+	**/
 	@:optional
 	var tag : String;
 };

@@ -25,6 +25,9 @@
 package js.web.storage;
 
 typedef CrossOriginStorageGetFileHandleOptions = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var create : Bool;
 	@:optional

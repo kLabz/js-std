@@ -25,24 +25,54 @@
 package js.web.html;
 
 typedef ValidityStateFlags = {
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var valueMissing : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var typeMismatch : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var patternMismatch : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var tooLong : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var tooShort : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var rangeUnderflow : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var rangeOverflow : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var stepMismatch : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var badInput : Bool;
+	/**
+		Default: `false`
+	**/
 	@:optional
 	var customError : Bool;
 };

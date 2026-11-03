@@ -13,9 +13,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - uses: krdlab/setup-haxe@v1
+      # The generator itself needs Haxe 5
+      - uses: HaxeFoundation/setup-haxe@v2
         with:
-          haxe-version: 4.3.7
+          haxe-version: latest
       - name: Install generator dependencies
         working-directory: generator
         run: |
@@ -41,23 +42,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        haxe: [4.3.7, nightly]
+        haxe: [4.3.7, latest]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Install Haxe ${{ matrix.haxe }}
-        run: |
-          if [ "${{ matrix.haxe }}" = nightly ]; then
-            url=https://build.haxe.org/builds/haxe/linux64/haxe_latest.tar.gz
-          else
-            url=https://github.com/HaxeFoundation/haxe/releases/download/${{ matrix.haxe }}/haxe-${{ matrix.haxe }}-linux64.tar.gz
-          fi
-          mkdir -p "$RUNNER_TEMP/haxe"
-          curl -sSL "$url" | tar xz -C "$RUNNER_TEMP/haxe" --strip-components=1
-          echo "$RUNNER_TEMP/haxe" >> "$GITHUB_PATH"
-          echo "HAXE_STD_PATH=$RUNNER_TEMP/haxe/std" >> "$GITHUB_ENV"
+      - uses: HaxeFoundation/setup-haxe@v2
+        with:
+          haxe-version: ${{ matrix.haxe }}
       - run: haxe --version
       - name: Typecheck all libraries
         run: ./check.sh

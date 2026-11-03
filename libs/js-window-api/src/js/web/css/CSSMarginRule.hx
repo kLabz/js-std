@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("CSSMarginRule") extern class CSSMarginRule extends CSSRule {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSMarginRule") @:require(js_experimental_api, "CSSMarginRule is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSMarginRule extends CSSRule {
 	var name(default, null) : String;
 	var style(default, null) : CSSStyleDeclaration;
 }

@@ -25,9 +25,11 @@
 package js.web.dom;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Subscriber>
 **/
-@:native("Subscriber") extern class Subscriber {
+@:native("Subscriber") @:require(js_experimental_api, "Subscriber is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Subscriber {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Subscriber/active>
 	**/

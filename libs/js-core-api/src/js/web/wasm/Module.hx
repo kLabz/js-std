@@ -26,8 +26,10 @@ package js.web.wasm;
 
 /**
 	Unhandled extended attribute LegacyNamespace
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("Module") extern class Module {
+@:native("Module") @:require(js_experimental_api, "Module is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Module {
 	function new(bytes:js.web.dom.AllowSharedBufferSource, ?options:WebAssemblyCompileOptions):Void;
 	function customSections(moduleObject:Module, sectionName:String):Array<js.lib.ArrayBuffer>;
 	function exports(moduleObject:Module):Array<ModuleExportDescriptor>;

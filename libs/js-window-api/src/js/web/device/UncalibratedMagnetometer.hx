@@ -26,8 +26,10 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("UncalibratedMagnetometer") extern class UncalibratedMagnetometer extends Sensor {
+@:native("UncalibratedMagnetometer") @:require(js_experimental_api, "UncalibratedMagnetometer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class UncalibratedMagnetometer extends Sensor {
 	var x(default, null) : Null<Float>;
 	var y(default, null) : Null<Float>;
 	var z(default, null) : Null<Float>;

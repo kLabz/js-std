@@ -26,8 +26,10 @@ package js.web.svg;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("SVGPathSegment") extern class SVGPathSegment {
+@:native("SVGPathSegment") @:require(js_experimental_api, "SVGPathSegment is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class SVGPathSegment {
 	var type : String;
 	var values : Array<Float>;
 }

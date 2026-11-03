@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("ToolActivatedEvent") extern class ToolActivatedEvent extends js.web.dom.Event {
+@:native("ToolActivatedEvent") @:require(js_experimental_api, "ToolActivatedEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ToolActivatedEvent extends js.web.dom.Event {
 	var toolName(default, null) : String;
 	function new(type:String, ?eventInitDict:ToolActivatedEventInit):Void;
 }

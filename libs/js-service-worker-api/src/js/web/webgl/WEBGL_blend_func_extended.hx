@@ -26,8 +26,10 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("WEBGL_blend_func_extended") extern class WEBGL_blend_func_extended {
+@:native("WEBGL_blend_func_extended") @:require(js_experimental_api, "WEBGL_blend_func_extended is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WEBGL_blend_func_extended {
 	static inline var SRC1_COLOR_WEBGL : GLenum = 0x88F9;
 	static inline var SRC1_ALPHA_WEBGL : GLenum = 0x8589;
 	static inline var ONE_MINUS_SRC1_COLOR_WEBGL : GLenum = 0x88FA;

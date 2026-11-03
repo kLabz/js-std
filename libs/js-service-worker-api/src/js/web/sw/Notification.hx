@@ -67,6 +67,7 @@ package js.web.sw;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Notification/image>
 	**/
+	@:require(js_experimental_api, "Notification.image is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var image(default, null) : String;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Notification/icon>
@@ -75,14 +76,17 @@ package js.web.sw;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Notification/badge>
 	**/
+	@:require(js_experimental_api, "Notification.badge is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var badge(default, null) : String;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Notification/timestamp>
 	**/
+	@:require(js_experimental_api, "Notification.timestamp is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var timestamp(default, null) : js.web.perf.EpochTimeStamp;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Notification/renotify>
 	**/
+	@:require(js_experimental_api, "Notification.renotify is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var renotify(default, null) : Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Notification/silent>

@@ -24,7 +24,10 @@
 
 package js.web.xr;
 
-@:native("XRGPUDepthInformation") extern class XRGPUDepthInformation extends XRDepthInformation {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("XRGPUDepthInformation") @:require(js_experimental_api, "XRGPUDepthInformation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRGPUDepthInformation extends XRDepthInformation {
 	var texture(default, null) : js.web.webgpu.GPUTexture;
 	function getViewDescriptor():js.web.webgpu.GPUTextureViewDescriptor;
 }

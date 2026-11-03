@@ -48,6 +48,7 @@ package js.web.media;
 		@see <https://developer.mozilla.org/docs/Web/API/BaseAudioContext/state>
 	**/
 	var state(default, null) : AudioContextState;
+	@:require(js_experimental_api, "BaseAudioContext.renderQuantumSize is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var renderQuantumSize(default, null) : Int;
 	/**
 		Only available in secure contexts (HTTPS).

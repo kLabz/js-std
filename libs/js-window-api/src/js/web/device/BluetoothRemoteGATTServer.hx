@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer>
 **/
-@:native("BluetoothRemoteGATTServer") extern class BluetoothRemoteGATTServer {
+@:native("BluetoothRemoteGATTServer") @:require(js_experimental_api, "BluetoothRemoteGATTServer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothRemoteGATTServer {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer/device>
 	**/

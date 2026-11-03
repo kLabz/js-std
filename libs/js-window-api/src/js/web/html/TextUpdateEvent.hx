@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TextUpdateEvent>
 **/
-@:native("TextUpdateEvent") extern class TextUpdateEvent extends js.web.dom.Event {
+@:native("TextUpdateEvent") @:require(js_experimental_api, "TextUpdateEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class TextUpdateEvent extends js.web.dom.Event {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/TextUpdateEvent/updateRangeStart>
 	**/

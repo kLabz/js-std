@@ -113,6 +113,7 @@ package js.web.webgpu;
 	/**
 		From interface mixin GPUBindingCommandsMixin
 	**/
+	@:require(js_experimental_api, "GPURenderPassEncoder.setImmediates is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function setImmediates(rangeOffset:GPUSize32, data:js.web.dom.AllowSharedBufferSource, ?dataOffset:GPUSize64 = 0, ?dataSize:GPUSize64):Void;
 	/**
 		From interface mixin GPURenderCommandsMixin

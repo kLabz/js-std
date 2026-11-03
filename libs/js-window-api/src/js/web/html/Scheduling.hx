@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Scheduling>
 **/
-@:native("Scheduling") extern class Scheduling {
+@:native("Scheduling") @:require(js_experimental_api, "Scheduling is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Scheduling {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Scheduling/isInputPending>
 	**/

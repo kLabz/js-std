@@ -27,9 +27,11 @@ package js.web.css;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject>
 **/
-@:native("PreferenceObject") extern class PreferenceObject extends js.web.dom.EventTarget {
+@:native("PreferenceObject") @:require(js_experimental_api, "PreferenceObject is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PreferenceObject extends js.web.dom.EventTarget {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject/override>
 	**/

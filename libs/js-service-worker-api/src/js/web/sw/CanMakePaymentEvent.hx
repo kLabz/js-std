@@ -25,9 +25,11 @@
 package js.web.sw;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CanMakePaymentEvent>
 **/
-@:native("CanMakePaymentEvent") extern class CanMakePaymentEvent extends ExtendableEvent {
+@:native("CanMakePaymentEvent") @:require(js_experimental_api, "CanMakePaymentEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CanMakePaymentEvent extends ExtendableEvent {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CanMakePaymentEvent/CanMakePaymentEvent>
 	**/

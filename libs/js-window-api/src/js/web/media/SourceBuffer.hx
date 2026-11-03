@@ -47,14 +47,17 @@ package js.web.media;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SourceBuffer/audioTracks>
 	**/
+	@:require(js_experimental_api, "SourceBuffer.audioTracks is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var audioTracks(default, null) : js.web.html.AudioTrackList;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SourceBuffer/videoTracks>
 	**/
+	@:require(js_experimental_api, "SourceBuffer.videoTracks is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var videoTracks(default, null) : js.web.html.VideoTrackList;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SourceBuffer/textTracks>
 	**/
+	@:require(js_experimental_api, "SourceBuffer.textTracks is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var textTracks(default, null) : js.web.html.TextTrackList;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SourceBuffer/appendWindowStart>

@@ -66,6 +66,7 @@ package js.web.svg;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/orient>
 	**/
+	@:require(js_experimental_api, "SVGMarkerElement.orient is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var orient : String;
 	/**
 		From interface mixin SVGFitToViewBox

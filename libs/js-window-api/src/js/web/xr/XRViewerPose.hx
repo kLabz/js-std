@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRViewerPose>
 **/
-@:native("XRViewerPose") extern class XRViewerPose extends XRPose {
+@:native("XRViewerPose") @:require(js_experimental_api, "XRViewerPose is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRViewerPose extends XRPose {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRViewerPose/views>
 	**/

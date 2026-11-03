@@ -27,8 +27,10 @@ package js.web.media;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PresentationReceiver>
 **/
-@:native("PresentationReceiver") extern class PresentationReceiver {
+@:native("PresentationReceiver") @:require(js_experimental_api, "PresentationReceiver is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PresentationReceiver {
 	var connectionList(default, null) : js.lib.Promise<PresentationConnectionList>;
 }

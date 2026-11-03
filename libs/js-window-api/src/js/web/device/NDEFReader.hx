@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/NDEFReader>
 **/
-@:native("NDEFReader") extern class NDEFReader extends js.web.dom.EventTarget {
+@:native("NDEFReader") @:require(js_experimental_api, "NDEFReader is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NDEFReader extends js.web.dom.EventTarget {
 	var onreading : js.web.html.EventHandler;
 	var onreadingerror : js.web.html.EventHandler;
 	/**

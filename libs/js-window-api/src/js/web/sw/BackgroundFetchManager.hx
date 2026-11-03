@@ -25,9 +25,11 @@
 package js.web.sw;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager>
 **/
-@:native("BackgroundFetchManager") extern class BackgroundFetchManager {
+@:native("BackgroundFetchManager") @:require(js_experimental_api, "BackgroundFetchManager is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BackgroundFetchManager {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/fetch>
 	**/

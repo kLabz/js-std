@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/USB>
 **/
-@:native("USB") extern class USB extends js.web.dom.EventTarget {
+@:native("USB") @:require(js_experimental_api, "USB is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class USB extends js.web.dom.EventTarget {
 	var onconnect : js.web.html.EventHandler;
 	var ondisconnect : js.web.html.EventHandler;
 	/**

@@ -25,9 +25,11 @@
 package js.web.css;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Viewport>
 **/
-@:native("Viewport") extern class Viewport {
+@:native("Viewport") @:require(js_experimental_api, "Viewport is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Viewport {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Viewport/segments>
 	**/

@@ -25,9 +25,11 @@
 package js.web.media;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SpeechGrammar>
 **/
-@:native("SpeechGrammar") @:deprecated extern class SpeechGrammar {
+@:native("SpeechGrammar") @:require(js_experimental_api, "SpeechGrammar is experimental (shipped in fewer than two engines); use -D js-experimental-api") @:deprecated extern class SpeechGrammar {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechGrammar/src>
 	**/

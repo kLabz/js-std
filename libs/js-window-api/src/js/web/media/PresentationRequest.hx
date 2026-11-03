@@ -27,9 +27,11 @@ package js.web.media;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PresentationRequest>
 **/
-@:native("PresentationRequest") extern class PresentationRequest extends js.web.dom.EventTarget {
+@:native("PresentationRequest") @:require(js_experimental_api, "PresentationRequest is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PresentationRequest extends js.web.dom.EventTarget {
 	var onconnectionavailable : js.web.html.EventHandler;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationRequest/PresentationRequest>

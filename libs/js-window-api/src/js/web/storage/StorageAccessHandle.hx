@@ -25,9 +25,11 @@
 package js.web.storage;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle>
 **/
-@:native("StorageAccessHandle") extern class StorageAccessHandle {
+@:native("StorageAccessHandle") @:require(js_experimental_api, "StorageAccessHandle is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class StorageAccessHandle {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/sessionStorage>
 	**/

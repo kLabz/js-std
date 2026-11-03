@@ -36,6 +36,7 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/createHTML>
 	**/
 	function createHTML(input:String, arguments:haxe.Rest<Any>):TrustedHTML;
+	@:require(js_experimental_api, "TrustedTypePolicy.createParserOptions is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function createParserOptions(?options:js.web.html.SetHTMLUnsafeOptions, arguments:haxe.Rest<Any>):TrustedHTMLParserOptions;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/createScript>

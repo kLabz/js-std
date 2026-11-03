@@ -47,6 +47,7 @@ package js.web.media;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MediaMetadata/chapterInfo>
 	**/
+	@:require(js_experimental_api, "MediaMetadata.chapterInfo is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var chapterInfo(default, null) : Array<ChapterInformation>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MediaMetadata/MediaMetadata>

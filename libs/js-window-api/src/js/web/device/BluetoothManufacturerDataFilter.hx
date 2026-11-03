@@ -26,8 +26,10 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("BluetoothManufacturerDataFilter") extern class BluetoothManufacturerDataFilter {
+@:native("BluetoothManufacturerDataFilter") @:require(js_experimental_api, "BluetoothManufacturerDataFilter is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothManufacturerDataFilter {
 	var size(default, null) : Int;
 	function new(?init:{ }):Void;
 	function entries():js.lib.Iterator<js.lib.Tuple<Int, BluetoothDataFilter>>;

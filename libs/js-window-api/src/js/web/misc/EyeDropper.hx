@@ -27,9 +27,11 @@ package js.web.misc;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/EyeDropper>
 **/
-@:native("EyeDropper") extern class EyeDropper {
+@:native("EyeDropper") @:require(js_experimental_api, "EyeDropper is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class EyeDropper {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/EyeDropper/EyeDropper>
 	**/

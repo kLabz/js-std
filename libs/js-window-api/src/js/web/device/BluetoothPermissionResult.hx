@@ -24,6 +24,9 @@
 
 package js.web.device;
 
-@:native("BluetoothPermissionResult") extern class BluetoothPermissionResult extends js.web.misc.PermissionStatus {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("BluetoothPermissionResult") @:require(js_experimental_api, "BluetoothPermissionResult is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothPermissionResult extends js.web.misc.PermissionStatus {
 	var devices : Array<BluetoothDevice>;
 }

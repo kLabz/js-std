@@ -26,7 +26,9 @@ package js.web.css;
 
 /**
 	Unhandled extended attribute Global
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("LayoutWorkletGlobalScope") extern class LayoutWorkletGlobalScope extends js.web.html.WorkletGlobalScope {
+@:native("LayoutWorkletGlobalScope") @:require(js_experimental_api, "LayoutWorkletGlobalScope is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LayoutWorkletGlobalScope extends js.web.html.WorkletGlobalScope {
 	function registerLayout(name:String, layoutCtor:js.web.dom.VoidFunction):Void;
 }

@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRFrame>
 **/
-@:native("XRFrame") extern class XRFrame {
+@:native("XRFrame") @:require(js_experimental_api, "XRFrame is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRFrame {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRFrame/session>
 	**/

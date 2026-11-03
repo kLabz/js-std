@@ -123,10 +123,12 @@ package js.web.html;
 	/**
 		From interface mixin HyperlinkElementUtils
 	**/
+	@:require(js_experimental_api, "HTMLAreaElement.hreflang is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var hreflang : String;
 	/**
 		From interface mixin HyperlinkElementUtils
 	**/
+	@:require(js_experimental_api, "HTMLAreaElement.type is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var type : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils

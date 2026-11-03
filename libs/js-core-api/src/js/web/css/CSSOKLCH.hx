@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("CSSOKLCH") extern class CSSOKLCH extends CSSColorValue {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSOKLCH") @:require(js_experimental_api, "CSSOKLCH is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSOKLCH extends CSSColorValue {
 	var l : CSSColorPercent;
 	var c : CSSColorPercent;
 	var h : CSSColorAngle;

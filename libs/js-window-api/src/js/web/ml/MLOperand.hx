@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("MLOperand") extern class MLOperand {
+@:native("MLOperand") @:require(js_experimental_api, "MLOperand is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class MLOperand {
 	var dataType(default, null) : MLOperandDataType;
 	var shape(default, null) : Array<Int>;
 }

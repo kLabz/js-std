@@ -27,9 +27,11 @@ package js.web.auth;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/IdentityCredentialError>
 **/
-@:native("IdentityCredentialError") extern class IdentityCredentialError extends js.web.dom.DOMException {
+@:native("IdentityCredentialError") @:require(js_experimental_api, "IdentityCredentialError is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class IdentityCredentialError extends js.web.dom.DOMException {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/IdentityCredentialError/error>
 	**/

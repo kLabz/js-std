@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("LayoutConstraints") extern class LayoutConstraints {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("LayoutConstraints") @:require(js_experimental_api, "LayoutConstraints is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LayoutConstraints {
 	var availableInlineSize(default, null) : Float;
 	var availableBlockSize(default, null) : Float;
 	var fixedInlineSize(default, null) : Null<Float>;

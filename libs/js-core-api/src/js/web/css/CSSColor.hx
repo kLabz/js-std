@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("CSSColor") extern class CSSColor extends CSSColorValue {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSColor") @:require(js_experimental_api, "CSSColor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSColor extends CSSColorValue {
 	var colorSpace : CSSKeywordish;
 	var channels : Array<CSSColorPercent>;
 	var alpha : CSSNumberish;

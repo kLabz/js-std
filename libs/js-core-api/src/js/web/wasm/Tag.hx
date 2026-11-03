@@ -26,7 +26,9 @@ package js.web.wasm;
 
 /**
 	Unhandled extended attribute LegacyNamespace
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("Tag") extern class Tag {
+@:native("Tag") @:require(js_experimental_api, "Tag is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Tag {
 	function new(type:TagType):Void;
 }

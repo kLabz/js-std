@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("CSSCustomMediaRule") extern class CSSCustomMediaRule extends CSSRule {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSCustomMediaRule") @:require(js_experimental_api, "CSSCustomMediaRule is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSCustomMediaRule extends CSSRule {
 	var name(default, null) : String;
 	var query(default, null) : CustomMediaQuery;
 }

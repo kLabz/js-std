@@ -27,9 +27,11 @@ package js.web.html;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ScreenDetails>
 **/
-@:native("ScreenDetails") extern class ScreenDetails extends js.web.dom.EventTarget {
+@:native("ScreenDetails") @:require(js_experimental_api, "ScreenDetails is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ScreenDetails extends js.web.dom.EventTarget {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ScreenDetails/screens>
 	**/

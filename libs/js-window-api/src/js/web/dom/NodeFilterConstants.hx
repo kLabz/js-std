@@ -24,7 +24,10 @@
 
 package js.web.dom;
 
-@:native("NodeFilter") extern class NodeFilterConstants {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("NodeFilter") @:require(js_experimental_api, "NodeFilter is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NodeFilterConstants {
 	static inline var FILTER_ACCEPT : Int = 1;
 	static inline var FILTER_REJECT : Int = 2;
 	static inline var FILTER_SKIP : Int = 3;

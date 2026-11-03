@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("HandwritingDrawing") extern class HandwritingDrawing {
+@:native("HandwritingDrawing") @:require(js_experimental_api, "HandwritingDrawing is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class HandwritingDrawing {
 	function addStroke(stroke:HandwritingStroke):Void;
 	function clear():Void;
 	function getPrediction():js.lib.Promise<Array<HandwritingPrediction>>;

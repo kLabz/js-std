@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRInputSourcesChangeEvent>
 **/
-@:native("XRInputSourcesChangeEvent") extern class XRInputSourcesChangeEvent extends js.web.dom.Event {
+@:native("XRInputSourcesChangeEvent") @:require(js_experimental_api, "XRInputSourcesChangeEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRInputSourcesChangeEvent extends js.web.dom.Event {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourcesChangeEvent/session>
 	**/

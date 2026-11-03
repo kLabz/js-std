@@ -48,6 +48,7 @@ package js.web.perf;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry/navigationId>
 	**/
+	@:require(js_experimental_api, "PerformanceEntry.navigationId is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var navigationId(default, null) : Float;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry/toJSON>

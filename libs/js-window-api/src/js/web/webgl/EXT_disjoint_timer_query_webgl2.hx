@@ -26,8 +26,10 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("EXT_disjoint_timer_query_webgl2") extern class EXT_disjoint_timer_query_webgl2 {
+@:native("EXT_disjoint_timer_query_webgl2") @:require(js_experimental_api, "EXT_disjoint_timer_query_webgl2 is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class EXT_disjoint_timer_query_webgl2 {
 	static inline var QUERY_COUNTER_BITS_EXT : GLenum = 0x8864;
 	static inline var TIME_ELAPSED_EXT : GLenum = 0x88BF;
 	static inline var TIMESTAMP_EXT : GLenum = 0x8E28;

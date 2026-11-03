@@ -331,6 +331,7 @@ package js.web.canvas;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/getContextAttributes>
 	**/
+	@:require(js_experimental_api, "OffscreenCanvasRenderingContext2D.getContextAttributes is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getContextAttributes():CanvasRenderingContext2DSettings;
 	/**
 		From interface mixin CanvasImageData

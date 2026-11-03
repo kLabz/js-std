@@ -33,6 +33,7 @@ package js.web.device;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIOutput/clear>
 	**/
+	@:require(js_experimental_api, "MIDIOutput.clear is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function clear():Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIOutput/send>

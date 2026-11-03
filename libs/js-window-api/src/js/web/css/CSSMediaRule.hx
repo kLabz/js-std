@@ -32,5 +32,6 @@ package js.web.css;
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMediaRule/media>
 	**/
 	var media(default, null) : MediaList;
+	@:require(js_experimental_api, "CSSMediaRule.matches is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var matches(default, null) : Bool;
 }

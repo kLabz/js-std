@@ -24,7 +24,10 @@
 
 package js.web.webrtc;
 
-@:native("SFrameDecryptorStream") extern class SFrameDecryptorStream extends js.web.dom.EventTarget {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("SFrameDecryptorStream") @:require(js_experimental_api, "SFrameDecryptorStream is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class SFrameDecryptorStream extends js.web.dom.EventTarget {
 	/**
 		From interface mixin GenericTransformStream
 	**/

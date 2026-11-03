@@ -25,9 +25,11 @@
 package js.web.svg;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement>
 **/
-@:native("MathMLAnchorElement") extern class MathMLAnchorElement extends MathMLElement {
+@:native("MathMLAnchorElement") @:require(js_experimental_api, "MathMLAnchorElement is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class MathMLAnchorElement extends MathMLElement {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MathMLAnchorElement/href>
 	**/

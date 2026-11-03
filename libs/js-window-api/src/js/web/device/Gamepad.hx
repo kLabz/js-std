@@ -66,17 +66,20 @@ package js.web.device;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/hand>
 	**/
+	@:require(js_experimental_api, "Gamepad.hand is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var hand(default, null) : GamepadHand;
 	/**
 		From partial interface in gamepad-extensions.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/hapticActuators>
 	**/
+	@:require(js_experimental_api, "Gamepad.hapticActuators is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var hapticActuators(default, null) : Array<GamepadHapticActuator>;
 	/**
 		From partial interface in gamepad-extensions.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Gamepad/pose>
 	**/
+	@:require(js_experimental_api, "Gamepad.pose is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var pose(default, null) : Null<GamepadPose>;
 }

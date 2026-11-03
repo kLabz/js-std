@@ -27,9 +27,11 @@ package js.web.media;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PresentationConnectionList>
 **/
-@:native("PresentationConnectionList") extern class PresentationConnectionList extends js.web.dom.EventTarget {
+@:native("PresentationConnectionList") @:require(js_experimental_api, "PresentationConnectionList is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PresentationConnectionList extends js.web.dom.EventTarget {
 	var connections(default, null) : Array<PresentationConnection>;
 	var onconnectionavailable : js.web.html.EventHandler;
 }

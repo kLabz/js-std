@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceEvent>
 **/
-@:native("XRInputSourceEvent") extern class XRInputSourceEvent extends js.web.dom.Event {
+@:native("XRInputSourceEvent") @:require(js_experimental_api, "XRInputSourceEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRInputSourceEvent extends js.web.dom.Event {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceEvent/frame>
 	**/

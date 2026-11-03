@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("FontFaceVariations") extern class FontFaceVariations {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("FontFaceVariations") @:require(js_experimental_api, "FontFaceVariations is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class FontFaceVariations {
 	var size(default, null) : Int;
 	function entries():js.lib.Iterator<js.lib.Tuple<FontFaceVariationAxis, FontFaceVariationAxis>>;
 	function forEach(callback:(value:FontFaceVariationAxis, key:FontFaceVariationAxis, set:FontFaceVariations) -> Void, ?thisArg:Any):Void;

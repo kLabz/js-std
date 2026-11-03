@@ -47,6 +47,7 @@ package js.web.svg;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEGaussianBlurElement/edgeMode>
 	**/
+	@:require(js_experimental_api, "SVGFEGaussianBlurElement.edgeMode is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var edgeMode(default, null) : SVGAnimatedEnumeration;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes

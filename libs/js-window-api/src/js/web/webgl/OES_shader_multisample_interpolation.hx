@@ -26,8 +26,10 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("OES_shader_multisample_interpolation") extern class OES_shader_multisample_interpolation {
+@:native("OES_shader_multisample_interpolation") @:require(js_experimental_api, "OES_shader_multisample_interpolation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class OES_shader_multisample_interpolation {
 	static inline var MIN_FRAGMENT_INTERPOLATION_OFFSET_OES : GLenum = 0x8E5B;
 	static inline var MAX_FRAGMENT_INTERPOLATION_OFFSET_OES : GLenum = 0x8E5C;
 	static inline var FRAGMENT_INTERPOLATION_OFFSET_BITS_OES : GLenum = 0x8E5D;

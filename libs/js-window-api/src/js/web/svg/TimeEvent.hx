@@ -25,9 +25,11 @@
 package js.web.svg;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TimeEvent>
 **/
-@:native("TimeEvent") extern class TimeEvent extends js.web.dom.Event {
+@:native("TimeEvent") @:require(js_experimental_api, "TimeEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class TimeEvent extends js.web.dom.Event {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/TimeEvent/view>
 	**/

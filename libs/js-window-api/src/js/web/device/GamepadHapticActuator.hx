@@ -31,6 +31,7 @@ package js.web.device;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadHapticActuator/effects>
 	**/
+	@:require(js_experimental_api, "GamepadHapticActuator.effects is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var effects(default, null) : Array<GamepadHapticEffectType>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadHapticActuator/playEffect>
@@ -41,6 +42,7 @@ package js.web.device;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadHapticActuator/pulse>
 	**/
+	@:require(js_experimental_api, "GamepadHapticActuator.pulse is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function pulse(value:Float, duration:Float):js.lib.Promise<Bool>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadHapticActuator/reset>

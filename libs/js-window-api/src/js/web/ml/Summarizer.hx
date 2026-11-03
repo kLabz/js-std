@@ -27,9 +27,11 @@ package js.web.ml;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Summarizer>
 **/
-@:native("Summarizer") extern class Summarizer {
+@:native("Summarizer") @:require(js_experimental_api, "Summarizer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Summarizer {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/sharedContext>
 	**/

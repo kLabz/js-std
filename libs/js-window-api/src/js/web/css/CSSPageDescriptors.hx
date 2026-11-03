@@ -55,6 +55,7 @@ package js.web.css;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSPageDescriptors#pageorientation>
 	**/
+	@:require(js_experimental_api, "CSSPageDescriptors.pageOrientation is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var pageOrientation : String;
 	var marks : String;
 	var bleed : String;

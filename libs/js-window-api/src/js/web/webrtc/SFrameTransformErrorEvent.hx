@@ -24,7 +24,10 @@
 
 package js.web.webrtc;
 
-@:native("SFrameTransformErrorEvent") extern class SFrameTransformErrorEvent extends js.web.dom.Event {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("SFrameTransformErrorEvent") @:require(js_experimental_api, "SFrameTransformErrorEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class SFrameTransformErrorEvent extends js.web.dom.Event {
 	var errorType(default, null) : SFrameTransformErrorEventType;
 	var keyID(default, null) : Null<CryptoKeyID>;
 	var frame(default, null) : haxe.extern.EitherType<RTCEncodedVideoFrame, RTCEncodedAudioFrame>;

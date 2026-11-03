@@ -35,6 +35,7 @@ package js.web.html;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLInputElement/alpha>
 	**/
+	@:require(js_experimental_api, "HTMLInputElement.alpha is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var alpha : Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLInputElement/alt>
@@ -237,6 +238,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLInputElement/capture>
 	**/
+	@:require(js_experimental_api, "HTMLInputElement.capture is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var capture : String;
 	/**
 		From partial interface in html.idl

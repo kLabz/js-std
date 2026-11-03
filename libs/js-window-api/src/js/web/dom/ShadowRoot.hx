@@ -104,10 +104,12 @@ package js.web.dom;
 	/**
 		From partial interface in html.idl
 	**/
+	@:require(js_experimental_api, "ShadowRoot.appendHTML is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function appendHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
 	/**
 		From partial interface in html.idl
 	**/
+	@:require(js_experimental_api, "ShadowRoot.appendHTMLUnsafe is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function appendHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	/**
 		From interface mixin DocumentOrShadowRoot
@@ -124,10 +126,12 @@ package js.web.dom;
 	/**
 		From partial interface in html.idl
 	**/
+	@:require(js_experimental_api, "ShadowRoot.prependHTML is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function prependHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
 	/**
 		From partial interface in html.idl
 	**/
+	@:require(js_experimental_api, "ShadowRoot.prependHTMLUnsafe is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function prependHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	/**
 		From partial interface in html.idl

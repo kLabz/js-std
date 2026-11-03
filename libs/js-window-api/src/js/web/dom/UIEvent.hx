@@ -41,6 +41,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/UIEvent/sourceCapabilities>
 	**/
+	@:require(js_experimental_api, "UIEvent.sourceCapabilities is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var sourceCapabilities(default, null) : Null<InputDeviceCapabilities>;
 	/**
 		From partial interface in uievents.idl

@@ -48,6 +48,7 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/isIntersecting>
 	**/
 	var isIntersecting(default, null) : Bool;
+	@:require(js_experimental_api, "IntersectionObserverEntry.isVisible is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var isVisible(default, null) : Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/intersectionRatio>
@@ -60,5 +61,6 @@ package js.web.dom;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/IntersectionObserverEntry>
 	**/
+	@:require(js_experimental_api, "IntersectionObserverEntry.IntersectionObserverEntry is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function new(intersectionObserverEntryInit:IntersectionObserverEntryInit):Void;
 }

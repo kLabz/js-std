@@ -25,9 +25,11 @@
 package js.web.perf;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PerformanceLongAnimationFrameTiming>
 **/
-@:native("PerformanceLongAnimationFrameTiming") extern class PerformanceLongAnimationFrameTiming extends PerformanceEntry {
+@:native("PerformanceLongAnimationFrameTiming") @:require(js_experimental_api, "PerformanceLongAnimationFrameTiming is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PerformanceLongAnimationFrameTiming extends PerformanceEntry {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceLongAnimationFrameTiming/renderStart>
 	**/

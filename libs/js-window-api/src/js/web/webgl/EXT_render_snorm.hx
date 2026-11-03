@@ -26,7 +26,9 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("EXT_render_snorm") extern class EXT_render_snorm {
+@:native("EXT_render_snorm") @:require(js_experimental_api, "EXT_render_snorm is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class EXT_render_snorm {
 
 }

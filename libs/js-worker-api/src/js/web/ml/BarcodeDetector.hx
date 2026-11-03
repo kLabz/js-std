@@ -27,9 +27,11 @@ package js.web.ml;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/BarcodeDetector>
 **/
-@:native("BarcodeDetector") extern class BarcodeDetector {
+@:native("BarcodeDetector") @:require(js_experimental_api, "BarcodeDetector is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BarcodeDetector {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/BarcodeDetector/BarcodeDetector>
 	**/

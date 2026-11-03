@@ -33,5 +33,6 @@ package js.web.media;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AudioWorklet/port>
 	**/
+	@:require(js_experimental_api, "AudioWorklet.port is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var port(default, null) : js.web.html.MessagePort;
 }

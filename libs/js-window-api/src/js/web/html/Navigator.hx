@@ -38,6 +38,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/globalPrivacyControl>
 	**/
+	@:require(js_experimental_api, "Navigator.globalPrivacyControl is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var globalPrivacyControl(default, null) : Bool;
 	/**
 		From interface mixin NavigatorID
@@ -98,6 +99,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/oscpu>
 	**/
+	@:require(js_experimental_api, "Navigator.oscpu is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var oscpu(default, null) : String;
 	/**
 		From interface mixin NavigatorLanguage
@@ -152,10 +154,12 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/connection>
 	**/
+	@:require(js_experimental_api, "Navigator.connection is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var connection(default, null) : js.web.net.NetworkInformation;
 	/**
 		From interface mixin NavigatorStorageBuckets
 	**/
+	@:require(js_experimental_api, "Navigator.storageBuckets is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var storageBuckets(default, null) : js.web.storage.StorageBucketManager;
 	/**
 		From interface mixin NavigatorStorage
@@ -169,6 +173,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/userAgentData>
 	**/
+	@:require(js_experimental_api, "Navigator.userAgentData is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var userAgentData(default, null) : js.web.misc.NavigatorUAData;
 	/**
 		From interface mixin NavigatorLocks
@@ -193,6 +198,7 @@ package js.web.html;
 		From interface mixin NavigatorML
 		Only available in secure contexts (HTTPS).
 	**/
+	@:require(js_experimental_api, "Navigator.ml is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var ml(default, null) : js.web.ml.ML;
 	/**
 		From partial interface in attribution.idl
@@ -204,12 +210,14 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/audioSession>
 	**/
+	@:require(js_experimental_api, "Navigator.audioSession is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var audioSession(default, null) : js.web.media.AudioSession;
 	/**
 		From partial interface in bluetooth.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/bluetooth>
 	**/
+	@:require(js_experimental_api, "Navigator.bluetooth is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var bluetooth(default, null) : js.web.device.Bluetooth;
 	/**
 		From partial interface in clipboard-apis.idl
@@ -224,10 +232,12 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/contacts>
 	**/
+	@:require(js_experimental_api, "Navigator.contacts is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var contacts(default, null) : js.web.misc.ContactsManager;
 	/**
 		From partial interface in cpu-performance.idl
 	**/
+	@:require(js_experimental_api, "Navigator.cpuPerformance is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var cpuPerformance(default, null) : Int;
 	/**
 		From partial interface in credential-management.idl
@@ -241,6 +251,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/devicePosture>
 	**/
+	@:require(js_experimental_api, "Navigator.devicePosture is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var devicePosture(default, null) : js.web.device.DevicePosture;
 	/**
 		From partial interface in geolocation.idl
@@ -253,6 +264,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/hid>
 	**/
+	@:require(js_experimental_api, "Navigator.hid is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var hid(default, null) : js.web.device.HID;
 	/**
 		From partial interface in html.idl
@@ -265,12 +277,14 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/ink>
 	**/
+	@:require(js_experimental_api, "Navigator.ink is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var ink(default, null) : js.web.device.Ink;
 	/**
 		From partial interface in is-input-pending.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/scheduling>
 	**/
+	@:require(js_experimental_api, "Navigator.scheduling is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var scheduling(default, null) : Scheduling;
 	/**
 		From partial interface in keyboard-lock.idl
@@ -278,6 +292,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/keyboard>
 	**/
+	@:require(js_experimental_api, "Navigator.keyboard is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var keyboard(default, null) : js.web.device.Keyboard;
 	/**
 		From partial interface in login-status.idl
@@ -290,6 +305,7 @@ package js.web.html;
 		From partial interface in managed-configuration.idl
 		Only available in secure contexts (HTTPS).
 	**/
+	@:require(js_experimental_api, "Navigator.managed is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var managed(default, null) : js.web.misc.NavigatorManagedData;
 	/**
 		From partial interface in media-capabilities.idl
@@ -309,6 +325,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/preferences>
 	**/
+	@:require(js_experimental_api, "Navigator.preferences is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var preferences(default, null) : js.web.css.PreferenceManager;
 	/**
 		From partial interface in mediasession.idl
@@ -334,6 +351,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/presentation>
 	**/
+	@:require(js_experimental_api, "Navigator.presentation is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var presentation(default, null) : js.web.media.Presentation;
 	/**
 		From partial interface in screen-wake-lock.idl
@@ -359,6 +377,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/usb>
 	**/
+	@:require(js_experimental_api, "Navigator.usb is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var usb(default, null) : js.web.device.USB;
 	/**
 		From partial interface in virtual-keyboard.idl
@@ -366,6 +385,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/virtualKeyboard>
 	**/
+	@:require(js_experimental_api, "Navigator.virtualKeyboard is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var virtualKeyboard(default, null) : js.web.device.VirtualKeyboard;
 	/**
 		From partial interface in webxr.idl
@@ -373,16 +393,19 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/xr>
 	**/
+	@:require(js_experimental_api, "Navigator.xr is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var xr(default, null) : js.web.xr.XRSystem;
 	/**
 		From partial interface in window-controls-overlay.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/windowControlsOverlay>
 	**/
+	@:require(js_experimental_api, "Navigator.windowControlsOverlay is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var windowControlsOverlay(default, null) : WindowControlsOverlay;
 	/**
 		From partial interface in fenced-frame.idl
 	**/
+	@:require(js_experimental_api, "Navigator.adAuctionComponents is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function adAuctionComponents(numAdComponents:Int):Array<String>;
 	/**
 		From partial interface in web-share.idl
@@ -406,6 +429,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/deprecatedReplaceInURN>
 	**/
+	@:require(js_experimental_api, "Navigator.deprecatedReplaceInURN is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function deprecatedReplaceInURN(urnOrConfig:js.web.ads.UrnOrConfig, replacements:haxe.DynamicAccess<String>):js.lib.Promise<Void>;
 	/**
 		From partial interface in fenced-frame.idl
@@ -416,24 +440,28 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/getAutoplayPolicy>
 	**/
+	@:require(js_experimental_api, "Navigator.getAutoplayPolicy is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	overload function getAutoplayPolicy(type:js.web.media.AutoplayPolicyMediaType):js.web.media.AutoplayPolicy;
 	/**
 		From partial interface in autoplay-detection.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/getAutoplayPolicy>
 	**/
+	@:require(js_experimental_api, "Navigator.getAutoplayPolicy is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	overload function getAutoplayPolicy(element:HTMLMediaElement):js.web.media.AutoplayPolicy;
 	/**
 		From partial interface in autoplay-detection.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/getAutoplayPolicy>
 	**/
+	@:require(js_experimental_api, "Navigator.getAutoplayPolicy is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	overload function getAutoplayPolicy(context:js.web.media.AudioContext):js.web.media.AutoplayPolicy;
 	/**
 		From partial interface in battery-status.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/getBattery>
 	**/
+	@:require(js_experimental_api, "Navigator.getBattery is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getBattery():js.lib.Promise<js.web.device.BatteryManager>;
 	/**
 		From partial interface in gamepad.idl
@@ -447,16 +475,19 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/getInstalledRelatedApps>
 	**/
+	@:require(js_experimental_api, "Navigator.getInstalledRelatedApps is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getInstalledRelatedApps():js.lib.Promise<Array<js.web.misc.RelatedApplication>>;
 	/**
 		From partial interface in install-element.idl
 		Only available in secure contexts (HTTPS).
 	**/
+	@:require(js_experimental_api, "Navigator.install is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	overload function install():js.lib.Promise<WebInstallResult>;
 	/**
 		From partial interface in install-element.idl
 		Only available in secure contexts (HTTPS).
 	**/
+	@:require(js_experimental_api, "Navigator.install is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	overload function install(options:InstallParams):js.lib.Promise<WebInstallResult>;
 	/**
 		From interface mixin NavigatorPlugins
@@ -513,6 +544,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/taintEnabled>
 	**/
+	@:require(js_experimental_api, "Navigator.taintEnabled is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function taintEnabled():Bool;
 	/**
 		From interface mixin NavigatorContentUtils
@@ -520,11 +552,13 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/unregisterProtocolHandler>
 	**/
+	@:require(js_experimental_api, "Navigator.unregisterProtocolHandler is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function unregisterProtocolHandler(scheme:String, url:String):Void;
 	/**
 		From partial interface in vibration.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Navigator/vibrate>
 	**/
+	@:require(js_experimental_api, "Navigator.vibrate is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function vibrate(pattern:js.web.device.VibratePattern):Bool;
 }

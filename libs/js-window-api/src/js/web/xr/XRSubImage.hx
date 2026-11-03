@@ -25,9 +25,11 @@
 package js.web.xr;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRSubImage>
 **/
-@:native("XRSubImage") extern class XRSubImage {
+@:native("XRSubImage") @:require(js_experimental_api, "XRSubImage is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRSubImage {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRSubImage/viewport>
 	**/

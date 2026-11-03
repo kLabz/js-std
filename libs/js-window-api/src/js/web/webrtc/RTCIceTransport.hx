@@ -67,18 +67,22 @@ package js.web.webrtc;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getLocalCandidates>
 	**/
+	@:require(js_experimental_api, "RTCIceTransport.getLocalCandidates is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getLocalCandidates():Array<RTCIceCandidate>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getLocalParameters>
 	**/
+	@:require(js_experimental_api, "RTCIceTransport.getLocalParameters is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getLocalParameters():Null<RTCIceParameters>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getRemoteCandidates>
 	**/
+	@:require(js_experimental_api, "RTCIceTransport.getRemoteCandidates is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getRemoteCandidates():Array<RTCIceCandidate>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getRemoteParameters>
 	**/
+	@:require(js_experimental_api, "RTCIceTransport.getRemoteParameters is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getRemoteParameters():Null<RTCIceParameters>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCIceTransport/getSelectedCandidatePair>

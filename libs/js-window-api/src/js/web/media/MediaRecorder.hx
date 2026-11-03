@@ -57,6 +57,7 @@ package js.web.media;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/audioBitrateMode>
 	**/
+	@:require(js_experimental_api, "MediaRecorder.audioBitrateMode is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var audioBitrateMode(default, null) : BitrateMode;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/MediaRecorder>

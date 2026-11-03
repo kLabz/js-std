@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("NamedFlowMap") extern class NamedFlowMap {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("NamedFlowMap") @:require(js_experimental_api, "NamedFlowMap is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NamedFlowMap {
 	var size(default, null) : Int;
 	function clear():Void;
 	function delete(key:String):Bool;

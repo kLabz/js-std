@@ -36,6 +36,7 @@ package js.web.webrtc;
 		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceEvent/url>
 	**/
 	@:deprecated
+	@:require(js_experimental_api, "RTCPeerConnectionIceEvent.url is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var url(default, null) : Null<String>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceEvent/RTCPeerConnectionIceEvent>

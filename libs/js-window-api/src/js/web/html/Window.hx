@@ -689,12 +689,14 @@ package js.web.html;
 	/**
 		From interface mixin PushManagerAttribute
 	**/
+	@:require(js_experimental_api, "Window.pushManager is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var pushManager(default, null) : js.web.sw.PushManager;
 	/**
 		From partial interface in anonymous-iframe.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/credentialless>
 	**/
+	@:require(js_experimental_api, "Window.credentialless is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var credentialless(default, null) : Bool;
 	/**
 		From partial interface in compat.idl
@@ -702,6 +704,7 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/Window/orientation>
 	**/
 	@:deprecated
+	@:require(js_experimental_api, "Window.orientation is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var orientation(default, null) : Int;
 	/**
 		From partial interface in compat.idl
@@ -718,12 +721,14 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/crashReport>
 	**/
+	@:require(js_experimental_api, "Window.crashReport is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var crashReport(default, null) : js.web.perf.CrashReportContext;
 	/**
 		From partial interface in css-viewport.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/viewport>
 	**/
+	@:require(js_experimental_api, "Window.viewport is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var viewport(default, null) : js.web.css.Viewport;
 	/**
 		From partial interface in cssom-view.idl
@@ -831,6 +836,7 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/Window/fence>
 	**/
 	@:deprecated
+	@:require(js_experimental_api, "Window.fence is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var fence(default, null) : Null<js.web.ads.Fence>;
 	/**
 		From partial interface in html.idl
@@ -877,6 +883,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/launchQueue>
 	**/
+	@:require(js_experimental_api, "Window.launchQueue is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var launchQueue(default, null) : LaunchQueue;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Window/alert>
@@ -952,6 +959,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/fetchLater>
 	**/
+	@:require(js_experimental_api, "Window.fetchLater is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function fetchLater(input:js.web.net.RequestInfo, ?init:js.web.net.DeferredRequestInit):js.web.net.FetchLaterResult;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Window/focus>
@@ -967,6 +975,7 @@ package js.web.html;
 		From partial interface in digital-goods.idl
 		Only available in secure contexts (HTTPS).
 	**/
+	@:require(js_experimental_api, "Window.getDigitalGoodsService is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getDigitalGoodsService(serviceProvider:String):js.lib.Promise<js.web.auth.DigitalGoodsService>;
 	/**
 		From partial interface in window-management.idl
@@ -974,6 +983,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/getScreenDetails>
 	**/
+	@:require(js_experimental_api, "Window.getScreenDetails is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getScreenDetails():js.lib.Promise<ScreenDetails>;
 	/**
 		From partial interface in selection-api.idl
@@ -991,11 +1001,13 @@ package js.web.html;
 		From partial interface in window-management.idl
 		Only available in secure contexts (HTTPS).
 	**/
+	@:require(js_experimental_api, "Window.maximize is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function maximize():js.lib.Promise<Void>;
 	/**
 		From partial interface in window-management.idl
 		Only available in secure contexts (HTTPS).
 	**/
+	@:require(js_experimental_api, "Window.minimize is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function minimize():js.lib.Promise<Void>;
 	/**
 		From partial interface in cssom-view.idl
@@ -1038,6 +1050,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/queryLocalFonts>
 	**/
+	@:require(js_experimental_api, "Window.queryLocalFonts is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function queryLocalFonts(?options:js.web.misc.QueryOptions):js.lib.Promise<Array<js.web.misc.FontData>>;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
@@ -1071,6 +1084,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/requestResize>
 	**/
+	@:require(js_experimental_api, "Window.requestResize is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function requestResize():Void;
 	/**
 		From partial interface in cssom-view.idl
@@ -1088,6 +1102,7 @@ package js.web.html;
 		From partial interface in window-management.idl
 		Only available in secure contexts (HTTPS).
 	**/
+	@:require(js_experimental_api, "Window.restore is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function restore():js.lib.Promise<Void>;
 	/**
 		From partial interface in cssom-view.idl
@@ -1135,6 +1150,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/setResizable>
 	**/
+	@:require(js_experimental_api, "Window.setResizable is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function setResizable(resizable:Bool):js.lib.Promise<Void>;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
@@ -1145,18 +1161,21 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/showDirectoryPicker>
 	**/
+	@:require(js_experimental_api, "Window.showDirectoryPicker is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function showDirectoryPicker(?options:js.web.storage.DirectoryPickerOptions):js.lib.Promise<js.web.storage.FileSystemDirectoryHandle>;
 	/**
 		From partial interface in file-system-access.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/showOpenFilePicker>
 	**/
+	@:require(js_experimental_api, "Window.showOpenFilePicker is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function showOpenFilePicker(?options:js.web.storage.OpenFilePickerOptions):js.lib.Promise<Array<js.web.storage.FileSystemFileHandle>>;
 	/**
 		From partial interface in file-system-access.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/showSaveFilePicker>
 	**/
+	@:require(js_experimental_api, "Window.showSaveFilePicker is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function showSaveFilePicker(?options:js.web.storage.SaveFilePickerOptions):js.lib.Promise<js.web.storage.FileSystemFileHandle>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Window/stop>

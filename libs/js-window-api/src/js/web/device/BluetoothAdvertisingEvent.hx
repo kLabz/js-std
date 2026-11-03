@@ -26,8 +26,10 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("BluetoothAdvertisingEvent") extern class BluetoothAdvertisingEvent extends js.web.dom.Event {
+@:native("BluetoothAdvertisingEvent") @:require(js_experimental_api, "BluetoothAdvertisingEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothAdvertisingEvent extends js.web.dom.Event {
 	var device(default, null) : BluetoothDevice;
 	var uuids(default, null) : Array<UUID>;
 	var name(default, null) : Null<String>;

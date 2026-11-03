@@ -26,8 +26,10 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("WEBGL_draw_instanced_base_vertex_base_instance") extern class WEBGL_draw_instanced_base_vertex_base_instance {
+@:native("WEBGL_draw_instanced_base_vertex_base_instance") @:require(js_experimental_api, "WEBGL_draw_instanced_base_vertex_base_instance is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WEBGL_draw_instanced_base_vertex_base_instance {
 	function drawArraysInstancedBaseInstanceWEBGL(mode:GLenum, first:GLint, count:GLsizei, instanceCount:GLsizei, baseInstance:GLuint):Void;
 	function drawElementsInstancedBaseVertexBaseInstanceWEBGL(mode:GLenum, count:GLsizei, type:GLenum, offset:GLintptr, instanceCount:GLsizei, baseVertex:GLint, baseInstance:GLuint):Void;
 }

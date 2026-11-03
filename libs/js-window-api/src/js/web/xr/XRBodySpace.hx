@@ -24,6 +24,9 @@
 
 package js.web.xr;
 
-@:native("XRBodySpace") extern class XRBodySpace extends XRSpace {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("XRBodySpace") @:require(js_experimental_api, "XRBodySpace is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRBodySpace extends XRSpace {
 	var jointName(default, null) : XRBodyJoint;
 }

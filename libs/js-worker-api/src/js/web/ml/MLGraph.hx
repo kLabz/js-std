@@ -26,7 +26,9 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("MLGraph") extern class MLGraph {
+@:native("MLGraph") @:require(js_experimental_api, "MLGraph is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class MLGraph {
 	function destroy():Void;
 }

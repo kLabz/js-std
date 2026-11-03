@@ -47,10 +47,12 @@ package js.web.dom;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/delay>
 	**/
+	@:require(js_experimental_api, "IntersectionObserver.delay is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var delay(default, null) : Int;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/trackVisibility>
 	**/
+	@:require(js_experimental_api, "IntersectionObserver.trackVisibility is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var trackVisibility(default, null) : Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserver/IntersectionObserver>

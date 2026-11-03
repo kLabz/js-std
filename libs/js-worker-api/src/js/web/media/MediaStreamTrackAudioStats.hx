@@ -24,7 +24,10 @@
 
 package js.web.media;
 
-@:native("MediaStreamTrackAudioStats") extern class MediaStreamTrackAudioStats {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("MediaStreamTrackAudioStats") @:require(js_experimental_api, "MediaStreamTrackAudioStats is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class MediaStreamTrackAudioStats {
 	var latency(default, null) : js.web.perf.DOMHighResTimeStamp;
 	var averageLatency(default, null) : js.web.perf.DOMHighResTimeStamp;
 	var minimumLatency(default, null) : js.web.perf.DOMHighResTimeStamp;

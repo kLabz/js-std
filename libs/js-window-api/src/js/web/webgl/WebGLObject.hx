@@ -25,8 +25,10 @@
 package js.web.webgl;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WebGLObject>
 **/
-@:native("WebGLObject") extern class WebGLObject {
+@:native("WebGLObject") @:require(js_experimental_api, "WebGLObject is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WebGLObject {
 	var label : String;
 }

@@ -24,6 +24,9 @@
 
 package js.web.css;
 
-@:native("CSSSupportsConditionRule") extern class CSSSupportsConditionRule extends CSSGroupingRule {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSSupportsConditionRule") @:require(js_experimental_api, "CSSSupportsConditionRule is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSSupportsConditionRule extends CSSGroupingRule {
 	var name(default, null) : String;
 }

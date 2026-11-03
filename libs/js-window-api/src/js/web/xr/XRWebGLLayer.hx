@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRWebGLLayer>
 **/
-@:native("XRWebGLLayer") extern class XRWebGLLayer extends XRLayer {
+@:native("XRWebGLLayer") @:require(js_experimental_api, "XRWebGLLayer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRWebGLLayer extends XRLayer {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLLayer/antialias>
 	**/

@@ -26,7 +26,9 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("NV_shader_noperspective_interpolation") extern class NV_shader_noperspective_interpolation {
+@:native("NV_shader_noperspective_interpolation") @:require(js_experimental_api, "NV_shader_noperspective_interpolation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NV_shader_noperspective_interpolation {
 
 }

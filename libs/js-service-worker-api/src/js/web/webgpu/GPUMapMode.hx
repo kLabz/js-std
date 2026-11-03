@@ -26,8 +26,10 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("GPUMapMode") extern class GPUMapMode {
+@:native("GPUMapMode") @:require(js_experimental_api, "GPUMapMode is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class GPUMapMode {
 	static inline var READ : GPUFlagsConstant = 0x0001;
 	static inline var WRITE : GPUFlagsConstant = 0x0002;
 }

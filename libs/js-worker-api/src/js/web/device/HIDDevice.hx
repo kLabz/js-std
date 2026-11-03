@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HIDDevice>
 **/
-@:native("HIDDevice") extern class HIDDevice extends js.web.dom.EventTarget {
+@:native("HIDDevice") @:require(js_experimental_api, "HIDDevice is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class HIDDevice extends js.web.dom.EventTarget {
 	var oninputreport : js.web.html.EventHandler;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HIDDevice/opened>

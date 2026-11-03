@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Bluetooth>
 **/
-@:native("Bluetooth") extern class Bluetooth extends js.web.dom.EventTarget {
+@:native("Bluetooth") @:require(js_experimental_api, "Bluetooth is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Bluetooth extends js.web.dom.EventTarget {
 	var onavailabilitychanged : js.web.html.EventHandler;
 	var referringDevice(default, null) : Null<BluetoothDevice>;
 	/**

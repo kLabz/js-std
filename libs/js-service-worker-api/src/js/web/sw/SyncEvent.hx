@@ -25,9 +25,11 @@
 package js.web.sw;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SyncEvent>
 **/
-@:native("SyncEvent") extern class SyncEvent extends ExtendableEvent {
+@:native("SyncEvent") @:require(js_experimental_api, "SyncEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class SyncEvent extends ExtendableEvent {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SyncEvent/tag>
 	**/

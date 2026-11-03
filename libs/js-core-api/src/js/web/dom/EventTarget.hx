@@ -49,5 +49,6 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/when>
 	**/
+	@:require(js_experimental_api, "EventTarget.when is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function when(type:String, ?options:ObservableEventListenerOptions):Observable;
 }

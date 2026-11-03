@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/AmbientLightSensor>
 **/
-@:native("AmbientLightSensor") extern class AmbientLightSensor extends Sensor {
+@:native("AmbientLightSensor") @:require(js_experimental_api, "AmbientLightSensor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AmbientLightSensor extends Sensor {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AmbientLightSensor/illuminance>
 	**/

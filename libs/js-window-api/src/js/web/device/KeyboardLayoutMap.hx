@@ -25,9 +25,11 @@
 package js.web.device;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap>
 **/
-@:native("KeyboardLayoutMap") extern class KeyboardLayoutMap {
+@:native("KeyboardLayoutMap") @:require(js_experimental_api, "KeyboardLayoutMap is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class KeyboardLayoutMap {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/KeyboardLayoutMap/size>
 	**/

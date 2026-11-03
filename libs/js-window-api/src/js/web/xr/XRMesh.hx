@@ -24,7 +24,10 @@
 
 package js.web.xr;
 
-@:native("XRMesh") extern class XRMesh {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("XRMesh") @:require(js_experimental_api, "XRMesh is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRMesh {
 	var meshSpace(default, null) : XRSpace;
 	var vertices(default, null) : js.lib.Float32Array;
 	var indices(default, null) : js.lib.Uint32Array;

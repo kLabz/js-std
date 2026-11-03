@@ -26,8 +26,10 @@ package js.web.ads;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("Attribution") extern class Attribution {
+@:native("Attribution") @:require(js_experimental_api, "Attribution is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Attribution {
 	var aggregationServices(default, null) : AttributionAggregationServices;
 	/**
 		From partial interface in attribution.idl

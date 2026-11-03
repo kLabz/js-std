@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/USBEndpoint>
 **/
-@:native("USBEndpoint") extern class USBEndpoint {
+@:native("USBEndpoint") @:require(js_experimental_api, "USBEndpoint is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class USBEndpoint {
 	var endpointNumber(default, null) : Int;
 	var direction(default, null) : USBDirection;
 	var type(default, null) : USBEndpointType;

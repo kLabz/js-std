@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRRay>
 **/
-@:native("XRRay") extern class XRRay {
+@:native("XRRay") @:require(js_experimental_api, "XRRay is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRRay {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRRay/origin>
 	**/

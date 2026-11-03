@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("AnimationTrigger") extern class AnimationTrigger {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("AnimationTrigger") @:require(js_experimental_api, "AnimationTrigger is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AnimationTrigger {
 	var timeline : AnimationTimeline;
 	var behavior : AnimationTriggerBehavior;
 	var activationRangeStart : Any;

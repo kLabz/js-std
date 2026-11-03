@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("MLGraphBuilder") extern class MLGraphBuilder {
+@:native("MLGraphBuilder") @:require(js_experimental_api, "MLGraphBuilder is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class MLGraphBuilder {
 	function new(context:MLContext):Void;
 	/**
 		From partial interface in webnn.idl

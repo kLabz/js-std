@@ -26,8 +26,10 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("WEBGL_blend_equation_advanced_coherent") extern class WEBGL_blend_equation_advanced_coherent {
+@:native("WEBGL_blend_equation_advanced_coherent") @:require(js_experimental_api, "WEBGL_blend_equation_advanced_coherent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WEBGL_blend_equation_advanced_coherent {
 	static inline var MULTIPLY : GLenum = 0x9294;
 	static inline var SCREEN : GLenum = 0x9295;
 	static inline var OVERLAY : GLenum = 0x9296;

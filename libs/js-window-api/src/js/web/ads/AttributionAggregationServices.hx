@@ -26,8 +26,10 @@ package js.web.ads;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("AttributionAggregationServices") extern class AttributionAggregationServices {
+@:native("AttributionAggregationServices") @:require(js_experimental_api, "AttributionAggregationServices is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AttributionAggregationServices {
 	var size(default, null) : Int;
 	function entries():js.lib.Iterator<js.lib.Tuple<String, AttributionAggregationService>>;
 	function forEach(callback:(value:AttributionAggregationService, key:String, map:AttributionAggregationServices) -> Void, ?thisArg:Any):Void;

@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("CSSMixinRule") extern class CSSMixinRule extends CSSGroupingRule {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSMixinRule") @:require(js_experimental_api, "CSSMixinRule is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSMixinRule extends CSSGroupingRule {
 	var name(default, null) : String;
 	var contents(default, null) : Bool;
 	function getParameters():Array<FunctionParameter>;

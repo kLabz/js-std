@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("Proofreader") extern class Proofreader {
+@:native("Proofreader") @:require(js_experimental_api, "Proofreader is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Proofreader {
 	var includeCorrectionTypes(default, null) : Bool;
 	var includeCorrectionExplanations(default, null) : Bool;
 	var expectedInputLanguages(default, null) : Null<Array<String>>;

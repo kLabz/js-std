@@ -25,8 +25,10 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/VisibilityStateEntry>
 **/
-@:native("VisibilityStateEntry") extern class VisibilityStateEntry extends js.web.perf.PerformanceEntry {
+@:native("VisibilityStateEntry") @:require(js_experimental_api, "VisibilityStateEntry is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class VisibilityStateEntry extends js.web.perf.PerformanceEntry {
 
 }

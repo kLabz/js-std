@@ -26,8 +26,10 @@ package js.web.storage;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("StorageBucket") extern class StorageBucket {
+@:native("StorageBucket") @:require(js_experimental_api, "StorageBucket is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class StorageBucket {
 	var name(default, null) : String;
 	var indexedDB(default, null) : IDBFactory;
 	var caches(default, null) : js.web.sw.CacheStorage;

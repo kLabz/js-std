@@ -27,9 +27,11 @@ package js.web.ml;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Translator>
 **/
-@:native("Translator") extern class Translator {
+@:native("Translator") @:require(js_experimental_api, "Translator is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Translator {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Translator/sourceLanguage>
 	**/

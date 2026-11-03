@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRBoundedReferenceSpace>
 **/
-@:native("XRBoundedReferenceSpace") extern class XRBoundedReferenceSpace extends XRReferenceSpace {
+@:native("XRBoundedReferenceSpace") @:require(js_experimental_api, "XRBoundedReferenceSpace is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRBoundedReferenceSpace extends XRReferenceSpace {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRBoundedReferenceSpace/boundsGeometry>
 	**/

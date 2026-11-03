@@ -24,7 +24,10 @@
 
 package js.web.html;
 
-@:native("HTMLInstallElement") extern class HTMLInstallElement extends HTMLElement {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("HTMLInstallElement") @:require(js_experimental_api, "HTMLInstallElement is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class HTMLInstallElement extends HTMLElement {
 	var manifest : String;
 	var manifestId : String;
 	var isValid(default, null) : Bool;

@@ -26,7 +26,9 @@ package js.web.css;
 
 /**
 	Unhandled extended attribute Global
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("AnimationWorkletGlobalScope") extern class AnimationWorkletGlobalScope extends js.web.html.WorkletGlobalScope {
+@:native("AnimationWorkletGlobalScope") @:require(js_experimental_api, "AnimationWorkletGlobalScope is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AnimationWorkletGlobalScope extends js.web.html.WorkletGlobalScope {
 	function registerAnimator(name:String, animatorCtor:AnimatorInstanceConstructor):Void;
 }

@@ -25,9 +25,11 @@
 package js.web.ads;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/FencedFrameConfig>
 **/
-@:native("FencedFrameConfig") @:deprecated extern class FencedFrameConfig {
+@:native("FencedFrameConfig") @:require(js_experimental_api, "FencedFrameConfig is experimental (shipped in fewer than two engines); use -D js-experimental-api") @:deprecated extern class FencedFrameConfig {
 	function new(url:String):Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/FencedFrameConfig/setSharedStorageContext>

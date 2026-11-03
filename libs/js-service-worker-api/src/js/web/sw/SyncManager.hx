@@ -25,9 +25,11 @@
 package js.web.sw;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SyncManager>
 **/
-@:native("SyncManager") extern class SyncManager {
+@:native("SyncManager") @:require(js_experimental_api, "SyncManager is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class SyncManager {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SyncManager/getTags>
 	**/

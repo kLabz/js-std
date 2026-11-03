@@ -25,9 +25,11 @@
 package js.web.media;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ChapterInformation>
 **/
-@:native("ChapterInformation") extern class ChapterInformation {
+@:native("ChapterInformation") @:require(js_experimental_api, "ChapterInformation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ChapterInformation {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ChapterInformation/title>
 	**/

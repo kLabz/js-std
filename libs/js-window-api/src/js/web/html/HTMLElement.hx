@@ -92,7 +92,9 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/popover>
 	**/
 	var popover : Null<String>;
+	@:require(js_experimental_api, "HTMLElement.headingOffset is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var headingOffset : Int;
+	@:require(js_experimental_api, "HTMLElement.headingReset is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var headingReset : Bool;
 	/**
 		From interface mixin ElementCSSInlineStyle
@@ -560,6 +562,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/virtualKeyboardPolicy>
 	**/
+	@:require(js_experimental_api, "HTMLElement.virtualKeyboardPolicy is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var virtualKeyboardPolicy : String;
 	/**
 		From interface mixin HTMLOrSVGOrMathMLElement
@@ -590,12 +593,14 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/containerTiming>
 	**/
+	@:require(js_experimental_api, "HTMLElement.containerTiming is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var containerTiming : String;
 	/**
 		From partial interface in container-timing.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/containerTimingIgnore>
 	**/
+	@:require(js_experimental_api, "HTMLElement.containerTimingIgnore is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var containerTimingIgnore : Bool;
 	/**
 		From partial interface in cssom-view.idl
@@ -636,6 +641,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/editContext>
 	**/
+	@:require(js_experimental_api, "HTMLElement.editContext is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var editContext : Null<EditContext>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/attachInternals>

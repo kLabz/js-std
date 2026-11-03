@@ -25,9 +25,11 @@
 package js.web.media;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/AudioSinkInfo>
 **/
-@:native("AudioSinkInfo") extern class AudioSinkInfo {
+@:native("AudioSinkInfo") @:require(js_experimental_api, "AudioSinkInfo is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AudioSinkInfo {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AudioSinkInfo/type>
 	**/

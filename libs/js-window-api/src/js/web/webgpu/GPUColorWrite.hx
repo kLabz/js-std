@@ -26,8 +26,10 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("GPUColorWrite") extern class GPUColorWrite {
+@:native("GPUColorWrite") @:require(js_experimental_api, "GPUColorWrite is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class GPUColorWrite {
 	static inline var ALL : GPUFlagsConstant = 0xF;
 	static inline var ALPHA : GPUFlagsConstant = 0x8;
 	static inline var BLUE : GPUFlagsConstant = 0x4;

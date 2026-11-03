@@ -25,9 +25,11 @@
 package js.web.device;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Ink>
 **/
-@:native("Ink") extern class Ink {
+@:native("Ink") @:require(js_experimental_api, "Ink is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Ink {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Ink/requestPresenter>
 	**/

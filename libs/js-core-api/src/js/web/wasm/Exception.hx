@@ -26,8 +26,10 @@ package js.web.wasm;
 
 /**
 	Unhandled extended attribute LegacyNamespace
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("Exception") extern class Exception {
+@:native("Exception") @:require(js_experimental_api, "Exception is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Exception {
 	var stack(default, null) : haxe.extern.EitherType<String, Void>;
 	function new(exceptionTag:Tag, payload:Array<Any>, ?options:ExceptionOptions):Void;
 	function getArg(exceptionTag:Tag, index:Int):Any;

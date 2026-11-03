@@ -25,9 +25,11 @@
 package js.web.device;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/DelegatedInkTrailPresenter>
 **/
-@:native("DelegatedInkTrailPresenter") extern class DelegatedInkTrailPresenter {
+@:native("DelegatedInkTrailPresenter") @:require(js_experimental_api, "DelegatedInkTrailPresenter is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class DelegatedInkTrailPresenter {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/DelegatedInkTrailPresenter/presentationArea>
 	**/

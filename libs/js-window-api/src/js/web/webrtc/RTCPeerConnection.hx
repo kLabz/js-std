@@ -84,12 +84,14 @@ package js.web.webrtc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/peerIdentity>
 	**/
+	@:require(js_experimental_api, "RTCPeerConnection.peerIdentity is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var peerIdentity(default, null) : js.lib.Promise<RTCIdentityAssertion>;
 	/**
 		From partial interface in webrtc-identity.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/idpLoginUrl>
 	**/
+	@:require(js_experimental_api, "RTCPeerConnection.idpLoginUrl is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var idpLoginUrl(default, null) : Null<String>;
 	/**
 		From partial interface in webrtc-identity.idl
@@ -176,6 +178,7 @@ package js.web.webrtc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/getIdentityAssertion>
 	**/
+	@:require(js_experimental_api, "RTCPeerConnection.getIdentityAssertion is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getIdentityAssertion():js.lib.Promise<String>;
 	/**
 		From partial interface in webrtc.idl
@@ -220,6 +223,7 @@ package js.web.webrtc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/setIdentityProvider>
 	**/
+	@:require(js_experimental_api, "RTCPeerConnection.setIdentityProvider is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function setIdentityProvider(provider:String, ?options:RTCIdentityProviderOptions):Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/setLocalDescription>

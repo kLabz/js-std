@@ -62,6 +62,7 @@ package js.web.media;
 	/**
 		From partial interface in mediacapture-extensions.idl
 	**/
+	@:require(js_experimental_api, "MediaStreamTrack.stats is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var stats(default, null) : Null<haxe.extern.EitherType<MediaStreamTrackAudioStats, MediaStreamTrackVideoStats>>;
 	/**
 		From partial interface in mediacapture-extensions.idl
@@ -96,6 +97,7 @@ package js.web.media;
 	/**
 		From partial interface in capture-handle-identity.idl
 	**/
+	@:require(js_experimental_api, "MediaStreamTrack.getCaptureHandle is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getCaptureHandle():Null<CaptureHandle>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrack/getConstraints>

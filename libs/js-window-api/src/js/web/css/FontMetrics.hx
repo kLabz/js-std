@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("FontMetrics") extern class FontMetrics {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("FontMetrics") @:require(js_experimental_api, "FontMetrics is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class FontMetrics {
 	var width(default, null) : Float;
 	var advances(default, null) : Array<Float>;
 	var boundingBoxLeft(default, null) : Float;

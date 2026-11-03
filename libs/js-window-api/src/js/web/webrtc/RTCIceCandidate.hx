@@ -84,7 +84,9 @@ package js.web.webrtc;
 		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/usernameFragment>
 	**/
 	var usernameFragment(default, null) : Null<String>;
+	@:require(js_experimental_api, "RTCIceCandidate.relayProtocol is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var relayProtocol(default, null) : Null<RTCIceServerTransportProtocol>;
+	@:require(js_experimental_api, "RTCIceCandidate.url is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var url(default, null) : Null<String>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidate/RTCIceCandidate>

@@ -33,10 +33,12 @@ package js.web.svg;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement/getPathData>
 	**/
+	@:require(js_experimental_api, "SVGPathElement.getPathData is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getPathData(?settings:SVGPathDataSettings):Array<SVGPathSegment>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement/getPathSegmentAtLength>
 	**/
+	@:require(js_experimental_api, "SVGPathElement.getPathSegmentAtLength is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getPathSegmentAtLength(distance:Float):Null<SVGPathSegment>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement/getPointAtLength>
@@ -51,5 +53,6 @@ package js.web.svg;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement/setPathData>
 	**/
+	@:require(js_experimental_api, "SVGPathElement.setPathData is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function setPathData(pathData:Array<SVGPathSegment>):Void;
 }

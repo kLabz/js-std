@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlayGeometryChangeEvent>
 **/
-@:native("WindowControlsOverlayGeometryChangeEvent") extern class WindowControlsOverlayGeometryChangeEvent extends js.web.dom.Event {
+@:native("WindowControlsOverlayGeometryChangeEvent") @:require(js_experimental_api, "WindowControlsOverlayGeometryChangeEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WindowControlsOverlayGeometryChangeEvent extends js.web.dom.Event {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlayGeometryChangeEvent/titlebarAreaRect>
 	**/

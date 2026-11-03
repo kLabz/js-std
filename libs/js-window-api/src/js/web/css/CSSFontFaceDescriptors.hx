@@ -38,12 +38,17 @@ package js.web.css;
 	var sizeAdjust : String;
 	var unicodeRange : String;
 	var fontFeatureSettings : String;
+	@:require(js_experimental_api, "CSSFontFaceDescriptors.fontVariationSettings is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var fontVariationSettings : String;
 	var fontNamedInstance : String;
 	var fontDisplay : String;
+	@:require(js_experimental_api, "CSSFontFaceDescriptors.fontLanguageOverride is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var fontLanguageOverride : String;
+	@:require(js_experimental_api, "CSSFontFaceDescriptors.ascentOverride is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var ascentOverride : String;
+	@:require(js_experimental_api, "CSSFontFaceDescriptors.descentOverride is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var descentOverride : String;
+	@:require(js_experimental_api, "CSSFontFaceDescriptors.lineGapOverride is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var lineGapOverride : String;
 	var superscriptPositionOverride : String;
 	var subscriptPositionOverride : String;

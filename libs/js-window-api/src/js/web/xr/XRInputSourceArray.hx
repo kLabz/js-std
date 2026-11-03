@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceArray>
 **/
-@:native("XRInputSourceArray") extern class XRInputSourceArray implements ArrayAccess<XRInputSource> {
+@:native("XRInputSourceArray") @:require(js_experimental_api, "XRInputSourceArray is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRInputSourceArray implements ArrayAccess<XRInputSource> {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRInputSourceArray/length>
 	**/

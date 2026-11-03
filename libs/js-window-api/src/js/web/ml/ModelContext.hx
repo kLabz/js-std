@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("ModelContext") extern class ModelContext extends js.web.dom.EventTarget {
+@:native("ModelContext") @:require(js_experimental_api, "ModelContext is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ModelContext extends js.web.dom.EventTarget {
 	var ontoolchange : js.web.html.EventHandler;
 	var ontoolactivated : js.web.html.EventHandler;
 	var ontoolcancel : js.web.html.EventHandler;

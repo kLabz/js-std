@@ -24,6 +24,9 @@
 
 package js.web.media;
 
-@:native("MediaStreamTrackHandle") extern class MediaStreamTrackHandle {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("MediaStreamTrackHandle") @:require(js_experimental_api, "MediaStreamTrackHandle is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class MediaStreamTrackHandle {
 	function new(track:MediaStreamTrack):Void;
 }

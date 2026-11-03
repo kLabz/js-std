@@ -24,6 +24,9 @@
 
 package js.web.css;
 
-@:native("FontFaceFeatures") extern class FontFaceFeatures {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("FontFaceFeatures") @:require(js_experimental_api, "FontFaceFeatures is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class FontFaceFeatures {
 
 }

@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/NDEFMessage>
 **/
-@:native("NDEFMessage") extern class NDEFMessage {
+@:native("NDEFMessage") @:require(js_experimental_api, "NDEFMessage is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NDEFMessage {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/NDEFMessage/records>
 	**/

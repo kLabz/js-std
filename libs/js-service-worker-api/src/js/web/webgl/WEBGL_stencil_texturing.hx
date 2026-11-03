@@ -26,8 +26,10 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("WEBGL_stencil_texturing") extern class WEBGL_stencil_texturing {
+@:native("WEBGL_stencil_texturing") @:require(js_experimental_api, "WEBGL_stencil_texturing is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WEBGL_stencil_texturing {
 	static inline var DEPTH_STENCIL_TEXTURE_MODE_WEBGL : GLenum = 0x90EA;
 	static inline var STENCIL_INDEX_WEBGL : GLenum = 0x1901;
 }

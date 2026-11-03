@@ -25,9 +25,11 @@
 package js.web.css;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesMap>
 **/
-@:native("CSSFontFeatureValuesMap") extern class CSSFontFeatureValuesMap {
+@:native("CSSFontFeatureValuesMap") @:require(js_experimental_api, "CSSFontFeatureValuesMap is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSFontFeatureValuesMap {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesMap/size>
 	**/

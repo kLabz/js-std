@@ -26,8 +26,10 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("GPUTextureUsage") extern class GPUTextureUsage {
+@:native("GPUTextureUsage") @:require(js_experimental_api, "GPUTextureUsage is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class GPUTextureUsage {
 	static inline var COPY_DST : GPUFlagsConstant = 0x02;
 	static inline var COPY_SRC : GPUFlagsConstant = 0x01;
 	static inline var RENDER_ATTACHMENT : GPUFlagsConstant = 0x10;

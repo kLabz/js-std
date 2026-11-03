@@ -25,9 +25,11 @@
 package js.web.perf;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/InteractionContentfulPaint>
 **/
-@:native("InteractionContentfulPaint") extern class InteractionContentfulPaint extends PerformanceEntry {
+@:native("InteractionContentfulPaint") @:require(js_experimental_api, "InteractionContentfulPaint is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class InteractionContentfulPaint extends PerformanceEntry {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/InteractionContentfulPaint/largestContentfulPaint>
 	**/

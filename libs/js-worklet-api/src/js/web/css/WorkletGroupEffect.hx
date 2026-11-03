@@ -24,6 +24,9 @@
 
 package js.web.css;
 
-@:native("WorkletGroupEffect") extern class WorkletGroupEffect {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("WorkletGroupEffect") @:require(js_experimental_api, "WorkletGroupEffect is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WorkletGroupEffect {
 	function getChildren():Array<WorkletAnimationEffect>;
 }

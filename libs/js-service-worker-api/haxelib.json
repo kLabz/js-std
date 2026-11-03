@@ -1,13 +1,20 @@
 {
   "name": "js-service-worker-api",
-  "description": "Auto-generated javascript standard library.",
-  "version": "3.63.0",
-  "url": "TODO",
+  "description": "Web API externs for Haxe: types available in service workers.",
+  "version": "0.1.0",
+  "url": "https://github.com/kLabz/js-std",
   "license": "MIT",
-  "tags": [],
+  "tags": [
+    "js",
+    "externs",
+    "web"
+  ],
   "classPath": "src",
+  "releasenote": "Generated from @webref/idl 3.86.0 and @mdn/browser-compat-data 8.1.8.",
+  "contributors": [
+    "kLabz"
+  ],
   "dependencies": {
-    "js-core-api": ""
-  },
-  "contributors": ["kLabz"]
+    "js-core-api": "0.1.0"
+  }
 }

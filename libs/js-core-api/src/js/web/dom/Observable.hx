@@ -25,9 +25,11 @@
 package js.web.dom;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Observable>
 **/
-@:native("Observable") extern class Observable {
+@:native("Observable") @:require(js_experimental_api, "Observable is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Observable {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Observable/Observable>
 	**/

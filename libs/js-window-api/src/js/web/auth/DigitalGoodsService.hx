@@ -26,8 +26,10 @@ package js.web.auth;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("DigitalGoodsService") extern class DigitalGoodsService {
+@:native("DigitalGoodsService") @:require(js_experimental_api, "DigitalGoodsService is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class DigitalGoodsService {
 	function consume(purchaseToken:String):js.lib.Promise<Void>;
 	function getDetails(itemIds:Array<String>):js.lib.Promise<Array<ItemDetails>>;
 	function listPurchaseHistory():js.lib.Promise<Array<PurchaseDetails>>;

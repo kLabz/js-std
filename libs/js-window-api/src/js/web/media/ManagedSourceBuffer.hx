@@ -25,8 +25,10 @@
 package js.web.media;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ManagedSourceBuffer>
 **/
-@:native("ManagedSourceBuffer") extern class ManagedSourceBuffer extends SourceBuffer {
+@:native("ManagedSourceBuffer") @:require(js_experimental_api, "ManagedSourceBuffer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ManagedSourceBuffer extends SourceBuffer {
 	var onbufferedchange : js.web.html.EventHandler;
 }

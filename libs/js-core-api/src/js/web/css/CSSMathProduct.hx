@@ -35,5 +35,6 @@ package js.web.css;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathProduct/CSSMathProduct>
 	**/
+	@:require(js_experimental_api, "CSSMathProduct.CSSMathProduct is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function new(args:haxe.Rest<CSSNumberish>):Void;
 }

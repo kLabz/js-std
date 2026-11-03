@@ -26,8 +26,10 @@ package js.web.storage;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("StorageBucketManager") extern class StorageBucketManager {
+@:native("StorageBucketManager") @:require(js_experimental_api, "StorageBucketManager is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class StorageBucketManager {
 	function delete(name:String):js.lib.Promise<Void>;
 	function keys():js.lib.Promise<Array<String>>;
 	function open(name:String, ?options:StorageBucketOptions):js.lib.Promise<StorageBucket>;

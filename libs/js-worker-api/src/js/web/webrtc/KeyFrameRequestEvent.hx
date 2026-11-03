@@ -24,7 +24,10 @@
 
 package js.web.webrtc;
 
-@:native("KeyFrameRequestEvent") extern class KeyFrameRequestEvent extends js.web.dom.Event {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("KeyFrameRequestEvent") @:require(js_experimental_api, "KeyFrameRequestEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class KeyFrameRequestEvent extends js.web.dom.Event {
 	var rid(default, null) : Null<String>;
 	function new(type:String, ?rid:String):Void;
 }

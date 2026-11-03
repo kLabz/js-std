@@ -43,6 +43,7 @@ package js.web.canvas;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ImageData/pixelFormat>
 	**/
+	@:require(js_experimental_api, "ImageData.pixelFormat is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var pixelFormat(default, null) : js.web.html.ImageDataPixelFormat;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ImageData/colorSpace>

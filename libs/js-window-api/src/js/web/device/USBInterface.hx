@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/USBInterface>
 **/
-@:native("USBInterface") extern class USBInterface {
+@:native("USBInterface") @:require(js_experimental_api, "USBInterface is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class USBInterface {
 	var interfaceNumber(default, null) : Int;
 	var alternate(default, null) : USBAlternateInterface;
 	var alternates(default, null) : Array<USBAlternateInterface>;

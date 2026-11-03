@@ -116,6 +116,7 @@ package js.web.perf;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Performance/measureUserAgentSpecificMemory>
 	**/
+	@:require(js_experimental_api, "Performance.measureUserAgentSpecificMemory is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function measureUserAgentSpecificMemory():js.lib.Promise<MemoryMeasurement>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Performance/now>

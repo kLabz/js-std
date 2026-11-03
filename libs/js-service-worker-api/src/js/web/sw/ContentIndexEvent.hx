@@ -25,9 +25,11 @@
 package js.web.sw;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ContentIndexEvent>
 **/
-@:native("ContentIndexEvent") extern class ContentIndexEvent extends ExtendableEvent {
+@:native("ContentIndexEvent") @:require(js_experimental_api, "ContentIndexEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ContentIndexEvent extends ExtendableEvent {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ContentIndexEvent/id>
 	**/

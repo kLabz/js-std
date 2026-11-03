@@ -25,9 +25,11 @@
 package js.web.misc;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/FontData>
 **/
-@:native("FontData") extern class FontData {
+@:native("FontData") @:require(js_experimental_api, "FontData is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class FontData {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/FontData/postscriptName>
 	**/

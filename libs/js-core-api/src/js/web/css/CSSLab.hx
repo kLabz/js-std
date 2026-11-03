@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("CSSLab") extern class CSSLab extends CSSColorValue {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSLab") @:require(js_experimental_api, "CSSLab is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSLab extends CSSColorValue {
 	var l : CSSColorPercent;
 	var a : CSSColorNumber;
 	var b : CSSColorNumber;

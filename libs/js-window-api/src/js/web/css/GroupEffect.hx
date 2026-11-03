@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("GroupEffect") extern class GroupEffect {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("GroupEffect") @:require(js_experimental_api, "GroupEffect is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class GroupEffect {
 	var children(default, null) : AnimationNodeList;
 	var firstChild(default, null) : Null<AnimationEffect>;
 	var lastChild(default, null) : Null<AnimationEffect>;

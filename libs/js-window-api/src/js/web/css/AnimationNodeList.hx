@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("AnimationNodeList") extern class AnimationNodeList implements ArrayAccess<Null<AnimationEffect>> {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("AnimationNodeList") @:require(js_experimental_api, "AnimationNodeList is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AnimationNodeList implements ArrayAccess<Null<AnimationEffect>> {
 	var length(default, null) : Int;
 	function item(index:Int):Null<AnimationEffect>;
 }

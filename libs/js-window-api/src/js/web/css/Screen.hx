@@ -64,6 +64,7 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Screen/isExtended>
 	**/
+	@:require(js_experimental_api, "Screen.isExtended is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var isExtended(default, null) : Bool;
 	/**
 		From partial interface in window-management.idl

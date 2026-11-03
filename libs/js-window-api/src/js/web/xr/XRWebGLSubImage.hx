@@ -25,9 +25,11 @@
 package js.web.xr;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage>
 **/
-@:native("XRWebGLSubImage") extern class XRWebGLSubImage extends XRSubImage {
+@:native("XRWebGLSubImage") @:require(js_experimental_api, "XRWebGLSubImage is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRWebGLSubImage extends XRSubImage {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage/colorTexture>
 	**/

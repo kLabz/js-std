@@ -26,8 +26,10 @@ package js.web.wasm;
 
 /**
 	Unhandled extended attribute LegacyNamespace
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("Instance") extern class Instance {
+@:native("Instance") @:require(js_experimental_api, "Instance is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Instance {
 	var exports(default, null) : { };
 	function new(module:Module, ?importObject:{ }):Void;
 }

@@ -27,9 +27,11 @@ package js.web.auth;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/FederatedCredential>
 **/
-@:native("FederatedCredential") extern class FederatedCredential extends Credential {
+@:native("FederatedCredential") @:require(js_experimental_api, "FederatedCredential is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class FederatedCredential extends Credential {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/FederatedCredential/provider>
 	**/

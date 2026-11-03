@@ -35,10 +35,12 @@ package js.web.media;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackProcessor/discardedFrames>
 	**/
+	@:require(js_experimental_api, "MediaStreamTrackProcessor.discardedFrames is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var discardedFrames(default, null) : Float;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackProcessor/totalFrames>
 	**/
+	@:require(js_experimental_api, "MediaStreamTrackProcessor.totalFrames is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var totalFrames(default, null) : Float;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackProcessor/MediaStreamTrackProcessor>

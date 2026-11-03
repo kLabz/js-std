@@ -35,6 +35,7 @@ package js.web.svg;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SVGScriptElement/crossOrigin>
 	**/
+	@:require(js_experimental_api, "SVGScriptElement.crossOrigin is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var crossOrigin : Null<String>;
 	var referrerPolicy : String;
 	/**

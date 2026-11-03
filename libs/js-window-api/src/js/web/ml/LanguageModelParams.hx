@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("LanguageModelParams") extern class LanguageModelParams {
+@:native("LanguageModelParams") @:require(js_experimental_api, "LanguageModelParams is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LanguageModelParams {
 	var defaultTopK(default, null) : Int;
 	var maxTopK(default, null) : Int;
 	var defaultTemperature(default, null) : Float;

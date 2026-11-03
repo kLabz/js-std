@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("Baseline") extern class Baseline {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("Baseline") @:require(js_experimental_api, "Baseline is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Baseline {
 	var name(default, null) : String;
 	var value(default, null) : Float;
 }

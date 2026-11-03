@@ -79,10 +79,12 @@ package js.web.net;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Request/isReloadNavigation>
 	**/
+	@:require(js_experimental_api, "Request.isReloadNavigation is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var isReloadNavigation(default, null) : Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Request/isHistoryNavigation>
 	**/
+	@:require(js_experimental_api, "Request.isHistoryNavigation is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var isHistoryNavigation(default, null) : Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Request/signal>
@@ -91,6 +93,7 @@ package js.web.net;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Request/duplex>
 	**/
+	@:require(js_experimental_api, "Request.duplex is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var duplex(default, null) : RequestDuplex;
 	/**
 		From interface mixin Body
@@ -109,6 +112,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Request/targetAddressSpace>
 	**/
+	@:require(js_experimental_api, "Request.targetAddressSpace is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var targetAddressSpace(default, null) : IPAddressSpace;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Request/Request>
@@ -159,5 +163,6 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Request/textStream>
 	**/
+	@:require(js_experimental_api, "Request.textStream is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function textStream():ReadableStream;
 }

@@ -25,9 +25,11 @@
 package js.web.media;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackAudioSourceNode>
 **/
-@:native("MediaStreamTrackAudioSourceNode") extern class MediaStreamTrackAudioSourceNode extends AudioNode {
+@:native("MediaStreamTrackAudioSourceNode") @:require(js_experimental_api, "MediaStreamTrackAudioSourceNode is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class MediaStreamTrackAudioSourceNode extends AudioNode {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackAudioSourceNode/MediaStreamTrackAudioSourceNode>
 	**/

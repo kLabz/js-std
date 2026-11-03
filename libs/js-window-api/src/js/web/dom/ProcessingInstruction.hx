@@ -42,29 +42,36 @@ package js.web.dom;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/getAttribute>
 	**/
+	@:require(js_experimental_api, "ProcessingInstruction.getAttribute is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getAttribute(name:String):Null<String>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/getAttributeNames>
 	**/
+	@:require(js_experimental_api, "ProcessingInstruction.getAttributeNames is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getAttributeNames():Array<String>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/hasAttribute>
 	**/
+	@:require(js_experimental_api, "ProcessingInstruction.hasAttribute is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function hasAttribute(name:String):Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/hasAttributes>
 	**/
+	@:require(js_experimental_api, "ProcessingInstruction.hasAttributes is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function hasAttributes():Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/removeAttribute>
 	**/
+	@:require(js_experimental_api, "ProcessingInstruction.removeAttribute is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function removeAttribute(name:String):Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/setAttribute>
 	**/
+	@:require(js_experimental_api, "ProcessingInstruction.setAttribute is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function setAttribute(name:String, value:String):Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ProcessingInstruction/toggleAttribute>
 	**/
+	@:require(js_experimental_api, "ProcessingInstruction.toggleAttribute is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function toggleAttribute(name:String, ?force:Bool):Bool;
 }

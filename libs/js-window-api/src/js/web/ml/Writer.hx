@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("Writer") extern class Writer {
+@:native("Writer") @:require(js_experimental_api, "Writer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Writer {
 	var sharedContext(default, null) : String;
 	var tone(default, null) : WriterTone;
 	var format(default, null) : WriterFormat;

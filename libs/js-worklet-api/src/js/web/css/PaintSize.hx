@@ -25,9 +25,11 @@
 package js.web.css;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PaintSize>
 **/
-@:native("PaintSize") extern class PaintSize {
+@:native("PaintSize") @:require(js_experimental_api, "PaintSize is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PaintSize {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PaintSize/width>
 	**/

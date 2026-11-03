@@ -25,9 +25,11 @@
 package js.web.misc;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ClipboardChangeEvent>
 **/
-@:native("ClipboardChangeEvent") extern class ClipboardChangeEvent extends js.web.dom.Event {
+@:native("ClipboardChangeEvent") @:require(js_experimental_api, "ClipboardChangeEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ClipboardChangeEvent extends js.web.dom.Event {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ClipboardChangeEvent/types>
 	**/

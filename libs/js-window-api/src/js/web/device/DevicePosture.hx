@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/DevicePosture>
 **/
-@:native("DevicePosture") extern class DevicePosture extends js.web.dom.EventTarget {
+@:native("DevicePosture") @:require(js_experimental_api, "DevicePosture is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class DevicePosture extends js.web.dom.EventTarget {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/DevicePosture/type>
 	**/

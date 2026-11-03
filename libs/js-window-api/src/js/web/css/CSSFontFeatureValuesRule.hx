@@ -35,26 +35,32 @@ package js.web.css;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesRule/annotation>
 	**/
+	@:require(js_experimental_api, "CSSFontFeatureValuesRule.annotation is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var annotation(default, null) : CSSFontFeatureValuesMap;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesRule/ornaments>
 	**/
+	@:require(js_experimental_api, "CSSFontFeatureValuesRule.ornaments is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var ornaments(default, null) : CSSFontFeatureValuesMap;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesRule/stylistic>
 	**/
+	@:require(js_experimental_api, "CSSFontFeatureValuesRule.stylistic is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var stylistic(default, null) : CSSFontFeatureValuesMap;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesRule/swash>
 	**/
+	@:require(js_experimental_api, "CSSFontFeatureValuesRule.swash is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var swash(default, null) : CSSFontFeatureValuesMap;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesRule/characterVariant>
 	**/
+	@:require(js_experimental_api, "CSSFontFeatureValuesRule.characterVariant is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var characterVariant(default, null) : CSSFontFeatureValuesMap;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFeatureValuesRule/styleset>
 	**/
+	@:require(js_experimental_api, "CSSFontFeatureValuesRule.styleset is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var styleset(default, null) : CSSFontFeatureValuesMap;
 	var historicalForms(default, null) : CSSFontFeatureValuesMap;
 }

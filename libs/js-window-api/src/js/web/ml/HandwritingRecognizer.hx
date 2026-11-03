@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("HandwritingRecognizer") extern class HandwritingRecognizer {
+@:native("HandwritingRecognizer") @:require(js_experimental_api, "HandwritingRecognizer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class HandwritingRecognizer {
 	function finish():Void;
 	function startDrawing(?hints:HandwritingHints):HandwritingDrawing;
 }

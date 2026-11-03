@@ -25,9 +25,11 @@
 package js.web.sw;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration>
 **/
-@:native("BackgroundFetchRegistration") extern class BackgroundFetchRegistration extends js.web.dom.EventTarget {
+@:native("BackgroundFetchRegistration") @:require(js_experimental_api, "BackgroundFetchRegistration is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BackgroundFetchRegistration extends js.web.dom.EventTarget {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration/id>
 	**/

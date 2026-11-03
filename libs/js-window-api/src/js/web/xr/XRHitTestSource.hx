@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRHitTestSource>
 **/
-@:native("XRHitTestSource") extern class XRHitTestSource {
+@:native("XRHitTestSource") @:require(js_experimental_api, "XRHitTestSource is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRHitTestSource {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRHitTestSource/cancel>
 	**/

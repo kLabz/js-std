@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("CSSParserFunction") extern class CSSParserFunction extends CSSParserValue {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSParserFunction") @:require(js_experimental_api, "CSSParserFunction is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSParserFunction extends CSSParserValue {
 	var name(default, null) : String;
 	var args(default, null) : Array<Array<CSSParserValue>>;
 	function new(name:String, args:Array<Array<CSSParserValue>>):Void;

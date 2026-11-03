@@ -26,8 +26,10 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("BluetoothServiceDataMap") extern class BluetoothServiceDataMap {
+@:native("BluetoothServiceDataMap") @:require(js_experimental_api, "BluetoothServiceDataMap is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothServiceDataMap {
 	var size(default, null) : Int;
 	function entries():js.lib.Iterator<js.lib.Tuple<UUID, js.lib.DataView>>;
 	function forEach(callback:(value:js.lib.DataView, key:UUID, map:BluetoothServiceDataMap) -> Void, ?thisArg:Any):Void;

@@ -98,7 +98,9 @@ package js.web.perf;
 	var responseEnd(default, null) : DOMHighResTimeStamp;
 	var workerRouterEvaluationStart(default, null) : DOMHighResTimeStamp;
 	var workerCacheLookupStart(default, null) : DOMHighResTimeStamp;
+	@:require(js_experimental_api, "PerformanceResourceTiming.workerMatchedRouterSource is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var workerMatchedRouterSource(default, null) : String;
+	@:require(js_experimental_api, "PerformanceResourceTiming.workerFinalRouterSource is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var workerFinalRouterSource(default, null) : String;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/transferSize>
@@ -119,6 +121,7 @@ package js.web.perf;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/renderBlockingStatus>
 	**/
+	@:require(js_experimental_api, "PerformanceResourceTiming.renderBlockingStatus is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var renderBlockingStatus(default, null) : RenderBlockingStatusType;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/contentType>
@@ -127,6 +130,7 @@ package js.web.perf;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/contentEncoding>
 	**/
+	@:require(js_experimental_api, "PerformanceResourceTiming.contentEncoding is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var contentEncoding(default, null) : String;
 	/**
 		From partial interface in server-timing.idl

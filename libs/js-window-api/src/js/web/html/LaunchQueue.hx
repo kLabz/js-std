@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/LaunchQueue>
 **/
-@:native("LaunchQueue") extern class LaunchQueue {
+@:native("LaunchQueue") @:require(js_experimental_api, "LaunchQueue is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LaunchQueue {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/LaunchQueue/setConsumer>
 	**/

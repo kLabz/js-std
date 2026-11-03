@@ -63,60 +63,70 @@ package js.web.svg;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAElement/origin>
 	**/
+	@:require(js_experimental_api, "SVGAElement.origin is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var origin(default, null) : String;
 	/**
 		From interface mixin HyperlinkElementUtils
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAElement/protocol>
 	**/
+	@:require(js_experimental_api, "SVGAElement.protocol is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var protocol : String;
 	/**
 		From interface mixin HyperlinkElementUtils
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAElement/username>
 	**/
+	@:require(js_experimental_api, "SVGAElement.username is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var username : String;
 	/**
 		From interface mixin HyperlinkElementUtils
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAElement/password>
 	**/
+	@:require(js_experimental_api, "SVGAElement.password is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var password : String;
 	/**
 		From interface mixin HyperlinkElementUtils
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAElement/host>
 	**/
+	@:require(js_experimental_api, "SVGAElement.host is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var host : String;
 	/**
 		From interface mixin HyperlinkElementUtils
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAElement/hostname>
 	**/
+	@:require(js_experimental_api, "SVGAElement.hostname is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var hostname : String;
 	/**
 		From interface mixin HyperlinkElementUtils
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAElement/port>
 	**/
+	@:require(js_experimental_api, "SVGAElement.port is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var port : String;
 	/**
 		From interface mixin HyperlinkElementUtils
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAElement/pathname>
 	**/
+	@:require(js_experimental_api, "SVGAElement.pathname is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var pathname : String;
 	/**
 		From interface mixin HyperlinkElementUtils
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAElement/search>
 	**/
+	@:require(js_experimental_api, "SVGAElement.search is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var search : String;
 	/**
 		From interface mixin HyperlinkElementUtils
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAElement/hash>
 	**/
+	@:require(js_experimental_api, "SVGAElement.hash is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var hash : String;
 	/**
 		From interface mixin HyperlinkElementUtils

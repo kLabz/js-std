@@ -25,9 +25,11 @@
 package js.web.media;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/DataCue>
 **/
-@:native("DataCue") extern class DataCue extends js.web.html.TextTrackCue {
+@:native("DataCue") @:require(js_experimental_api, "DataCue is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class DataCue extends js.web.html.TextTrackCue {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/DataCue/value>
 	**/

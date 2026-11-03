@@ -25,9 +25,11 @@
 package js.web.ads;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Fence>
 **/
-@:native("Fence") @:deprecated extern class Fence {
+@:native("Fence") @:require(js_experimental_api, "Fence is experimental (shipped in fewer than two engines); use -D js-experimental-api") @:deprecated extern class Fence {
 	function disableUntrustedNetwork():js.lib.Promise<Void>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Fence/getNestedConfigs>

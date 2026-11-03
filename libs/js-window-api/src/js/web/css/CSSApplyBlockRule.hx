@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("CSSApplyBlockRule") extern class CSSApplyBlockRule extends CSSGroupingRule {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSApplyBlockRule") @:require(js_experimental_api, "CSSApplyBlockRule is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSApplyBlockRule extends CSSGroupingRule {
 	var name(default, null) : String;
 	function getArguments():Array<String>;
 }

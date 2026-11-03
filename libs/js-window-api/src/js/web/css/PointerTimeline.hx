@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("PointerTimeline") extern class PointerTimeline extends AnimationTimeline {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("PointerTimeline") @:require(js_experimental_api, "PointerTimeline is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PointerTimeline extends AnimationTimeline {
 	var source(default, null) : Null<js.web.dom.Element>;
 	var axis(default, null) : PointerAxis;
 	function new(?options:PointerTimelineOptions):Void;

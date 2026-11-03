@@ -24,7 +24,10 @@
 
 package js.web.misc;
 
-@:native("PermissionsPolicy") extern class PermissionsPolicy {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("PermissionsPolicy") @:require(js_experimental_api, "PermissionsPolicy is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PermissionsPolicy {
 	function allowedFeatures():Array<String>;
 	function allowsFeature(feature:String, ?origin:String):Bool;
 	function features():Array<String>;

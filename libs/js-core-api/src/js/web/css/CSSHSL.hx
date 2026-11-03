@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("CSSHSL") extern class CSSHSL extends CSSColorValue {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSHSL") @:require(js_experimental_api, "CSSHSL is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSHSL extends CSSColorValue {
 	var h : CSSColorAngle;
 	var s : CSSColorPercent;
 	var l : CSSColorPercent;

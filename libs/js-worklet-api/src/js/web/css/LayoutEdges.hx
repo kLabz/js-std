@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("LayoutEdges") extern class LayoutEdges {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("LayoutEdges") @:require(js_experimental_api, "LayoutEdges is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LayoutEdges {
 	var inlineStart(default, null) : Float;
 	var inlineEnd(default, null) : Float;
 	var blockStart(default, null) : Float;

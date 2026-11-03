@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/VideoTrack>
 **/
-@:native("VideoTrack") extern class VideoTrack {
+@:native("VideoTrack") @:require(js_experimental_api, "VideoTrack is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class VideoTrack {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrack/id>
 	**/

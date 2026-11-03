@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/GravitySensor>
 **/
-@:native("GravitySensor") extern class GravitySensor extends Accelerometer {
+@:native("GravitySensor") @:require(js_experimental_api, "GravitySensor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class GravitySensor extends Accelerometer {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/GravitySensor/GravitySensor>
 	**/

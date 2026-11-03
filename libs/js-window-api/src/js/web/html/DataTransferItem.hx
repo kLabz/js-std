@@ -45,6 +45,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem/getAsFileSystemHandle>
 	**/
+	@:require(js_experimental_api, "DataTransferItem.getAsFileSystemHandle is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getAsFileSystemHandle():js.lib.Promise<Null<js.web.storage.FileSystemHandle>>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem/getAsString>

@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("MLTensor") extern class MLTensor {
+@:native("MLTensor") @:require(js_experimental_api, "MLTensor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class MLTensor {
 	var dataType(default, null) : MLOperandDataType;
 	var shape(default, null) : Array<Int>;
 	var readable(default, null) : Bool;

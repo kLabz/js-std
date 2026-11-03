@@ -26,8 +26,10 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("XRGPUBinding") extern class XRGPUBinding {
+@:native("XRGPUBinding") @:require(js_experimental_api, "XRGPUBinding is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRGPUBinding {
 	var nativeProjectionScaleFactor(default, null) : Float;
 	var usesDepthValues(default, null) : Bool;
 	function new(session:XRSession, device:js.web.webgpu.GPUDevice):Void;

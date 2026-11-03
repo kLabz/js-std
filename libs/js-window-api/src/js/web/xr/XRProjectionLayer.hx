@@ -25,9 +25,11 @@
 package js.web.xr;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRProjectionLayer>
 **/
-@:native("XRProjectionLayer") extern class XRProjectionLayer extends XRCompositionLayer {
+@:native("XRProjectionLayer") @:require(js_experimental_api, "XRProjectionLayer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRProjectionLayer extends XRCompositionLayer {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRProjectionLayer/textureWidth>
 	**/

@@ -25,9 +25,11 @@
 package js.web.perf;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PerformanceTimingConfidence>
 **/
-@:native("PerformanceTimingConfidence") extern class PerformanceTimingConfidence {
+@:native("PerformanceTimingConfidence") @:require(js_experimental_api, "PerformanceTimingConfidence is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PerformanceTimingConfidence {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceTimingConfidence/randomizedTriggerRate>
 	**/

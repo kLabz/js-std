@@ -47,11 +47,13 @@ package js.web.storage;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/FileSystemHandle/queryPermission>
 	**/
+	@:require(js_experimental_api, "FileSystemHandle.queryPermission is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function queryPermission(?descriptor:FileSystemHandlePermissionDescriptor):js.lib.Promise<js.web.misc.PermissionState>;
 	/**
 		From partial interface in file-system-access.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/FileSystemHandle/requestPermission>
 	**/
+	@:require(js_experimental_api, "FileSystemHandle.requestPermission is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function requestPermission(?descriptor:FileSystemHandlePermissionDescriptor):js.lib.Promise<js.web.misc.PermissionState>;
 }

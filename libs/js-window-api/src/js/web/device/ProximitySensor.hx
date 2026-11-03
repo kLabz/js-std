@@ -26,8 +26,10 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("ProximitySensor") extern class ProximitySensor extends Sensor {
+@:native("ProximitySensor") @:require(js_experimental_api, "ProximitySensor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ProximitySensor extends Sensor {
 	var distance(default, null) : Null<Float>;
 	var max(default, null) : Null<Float>;
 	var near(default, null) : Null<Bool>;

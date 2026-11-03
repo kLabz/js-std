@@ -25,9 +25,11 @@
 package js.web.net;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/FetchLaterResult>
 **/
-@:native("FetchLaterResult") extern class FetchLaterResult {
+@:native("FetchLaterResult") @:require(js_experimental_api, "FetchLaterResult is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class FetchLaterResult {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/FetchLaterResult/activated>
 	**/

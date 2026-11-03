@@ -51,6 +51,7 @@ package js.web.webrtc;
 	/**
 		From partial interface in webrtc-identity.idl
 	**/
+	@:require(js_experimental_api, "RTCError.httpRequestStatusCode is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var httpRequestStatusCode(default, null) : Null<Int>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCError/RTCError>

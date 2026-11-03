@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("LanguageModelToolError") extern class LanguageModelToolError {
+@:native("LanguageModelToolError") @:require(js_experimental_api, "LanguageModelToolError is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LanguageModelToolError {
 	var callId(default, null) : String;
 	var name(default, null) : String;
 	var errorMessage(default, null) : String;

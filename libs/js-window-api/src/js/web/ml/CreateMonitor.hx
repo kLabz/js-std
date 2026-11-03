@@ -27,8 +27,10 @@ package js.web.ml;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CreateMonitor>
 **/
-@:native("CreateMonitor") extern class CreateMonitor extends js.web.dom.EventTarget {
+@:native("CreateMonitor") @:require(js_experimental_api, "CreateMonitor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CreateMonitor extends js.web.dom.EventTarget {
 	var ondownloadprogress : js.web.html.EventHandler;
 }

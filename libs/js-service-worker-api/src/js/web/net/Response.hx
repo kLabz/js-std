@@ -123,5 +123,6 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Response/textStream>
 	**/
+	@:require(js_experimental_api, "Response.textStream is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function textStream():ReadableStream;
 }

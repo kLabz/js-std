@@ -26,8 +26,10 @@ package js.web.misc;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("NavigatorManagedData") extern class NavigatorManagedData extends js.web.dom.EventTarget {
+@:native("NavigatorManagedData") @:require(js_experimental_api, "NavigatorManagedData is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NavigatorManagedData extends js.web.dom.EventTarget {
 	var onmanagedconfigurationchange : js.web.html.EventHandler;
 	/**
 		From partial interface in device-attributes.idl

@@ -27,9 +27,11 @@ package js.web.auth;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/IdentityProvider>
 **/
-@:native("IdentityProvider") extern class IdentityProvider {
+@:native("IdentityProvider") @:require(js_experimental_api, "IdentityProvider is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class IdentityProvider {
 	function close():Void;
 	function getUserInfo(config:IdentityProviderConfig):js.lib.Promise<Array<IdentityUserInfo>>;
 	function resolve(token:Any, ?options:IdentityResolveOptions):js.lib.Promise<Void>;

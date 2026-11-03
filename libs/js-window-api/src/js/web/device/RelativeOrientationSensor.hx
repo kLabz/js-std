@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RelativeOrientationSensor>
 **/
-@:native("RelativeOrientationSensor") extern class RelativeOrientationSensor extends OrientationSensor {
+@:native("RelativeOrientationSensor") @:require(js_experimental_api, "RelativeOrientationSensor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class RelativeOrientationSensor extends OrientationSensor {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RelativeOrientationSensor/RelativeOrientationSensor>
 	**/

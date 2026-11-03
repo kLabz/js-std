@@ -26,8 +26,10 @@ package js.web.wasm;
 
 /**
 	Unhandled extended attribute LegacyNamespace
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("Memory") extern class Memory {
+@:native("Memory") @:require(js_experimental_api, "Memory is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Memory {
 	var buffer(default, null) : js.lib.ArrayBuffer;
 	function new(descriptor:MemoryDescriptor):Void;
 	function grow(delta:AddressValue):AddressValue;

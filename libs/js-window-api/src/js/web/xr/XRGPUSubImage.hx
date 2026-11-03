@@ -26,8 +26,10 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("XRGPUSubImage") extern class XRGPUSubImage extends XRSubImage {
+@:native("XRGPUSubImage") @:require(js_experimental_api, "XRGPUSubImage is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRGPUSubImage extends XRSubImage {
 	var colorTexture(default, null) : js.web.webgpu.GPUTexture;
 	var depthStencilTexture(default, null) : Null<js.web.webgpu.GPUTexture>;
 	var motionVectorTexture(default, null) : Null<js.web.webgpu.GPUTexture>;

@@ -25,9 +25,11 @@
 package js.web.sw;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PeriodicSyncEvent>
 **/
-@:native("PeriodicSyncEvent") extern class PeriodicSyncEvent extends ExtendableEvent {
+@:native("PeriodicSyncEvent") @:require(js_experimental_api, "PeriodicSyncEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PeriodicSyncEvent extends ExtendableEvent {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PeriodicSyncEvent/tag>
 	**/

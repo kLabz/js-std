@@ -25,9 +25,11 @@
 package js.web.webrtc;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidatePair>
 **/
-@:native("RTCIceCandidatePair") extern class RTCIceCandidatePair {
+@:native("RTCIceCandidatePair") @:require(js_experimental_api, "RTCIceCandidatePair is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class RTCIceCandidatePair {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidatePair/local>
 	**/

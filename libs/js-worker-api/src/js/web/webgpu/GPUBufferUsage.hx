@@ -26,8 +26,10 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("GPUBufferUsage") extern class GPUBufferUsage {
+@:native("GPUBufferUsage") @:require(js_experimental_api, "GPUBufferUsage is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class GPUBufferUsage {
 	static inline var COPY_DST : GPUFlagsConstant = 0x0008;
 	static inline var COPY_SRC : GPUFlagsConstant = 0x0004;
 	static inline var INDEX : GPUFlagsConstant = 0x0010;

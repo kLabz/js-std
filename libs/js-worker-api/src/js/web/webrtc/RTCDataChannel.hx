@@ -83,6 +83,7 @@ package js.web.webrtc;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/priority>
 	**/
+	@:require(js_experimental_api, "RTCDataChannel.priority is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var priority(default, null) : RTCPriorityType;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannel/close>

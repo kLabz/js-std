@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("MLContext") extern class MLContext {
+@:native("MLContext") @:require(js_experimental_api, "MLContext is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class MLContext {
 	var accelerated(default, null) : Bool;
 	var lost(default, null) : js.lib.Promise<MLContextLostInfo>;
 	function createConstantTensor(descriptor:MLOperandDescriptor, inputData:js.web.dom.AllowSharedBufferSource):js.lib.Promise<MLTensor>;

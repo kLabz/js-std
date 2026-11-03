@@ -25,9 +25,11 @@
 package js.web.webrtc;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCIdentityAssertion>
 **/
-@:native("RTCIdentityAssertion") extern class RTCIdentityAssertion {
+@:native("RTCIdentityAssertion") @:require(js_experimental_api, "RTCIdentityAssertion is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class RTCIdentityAssertion {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCIdentityAssertion/idp>
 	**/

@@ -25,9 +25,11 @@
 package js.web.xr;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRWebGLDepthInformation>
 **/
-@:native("XRWebGLDepthInformation") extern class XRWebGLDepthInformation extends XRDepthInformation {
+@:native("XRWebGLDepthInformation") @:require(js_experimental_api, "XRWebGLDepthInformation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRWebGLDepthInformation extends XRDepthInformation {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLDepthInformation/texture>
 	**/

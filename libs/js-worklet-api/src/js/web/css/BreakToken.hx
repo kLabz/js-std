@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("BreakToken") extern class BreakToken {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("BreakToken") @:require(js_experimental_api, "BreakToken is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BreakToken {
 	var childBreakTokens(default, null) : Array<ChildBreakToken>;
 	var data(default, null) : Any;
 }

@@ -26,8 +26,10 @@ package js.web.xr;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("XRCamera") extern class XRCamera {
+@:native("XRCamera") @:require(js_experimental_api, "XRCamera is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRCamera {
 	var width(default, null) : Int;
 	var height(default, null) : Int;
 }

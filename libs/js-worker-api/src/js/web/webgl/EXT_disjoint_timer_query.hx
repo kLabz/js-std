@@ -27,9 +27,11 @@ package js.web.webgl;
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query>
 **/
-@:native("EXT_disjoint_timer_query") extern class EXT_disjoint_timer_query {
+@:native("EXT_disjoint_timer_query") @:require(js_experimental_api, "EXT_disjoint_timer_query is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class EXT_disjoint_timer_query {
 	static inline var QUERY_COUNTER_BITS_EXT : GLenum = 0x8864;
 	static inline var CURRENT_QUERY_EXT : GLenum = 0x8865;
 	static inline var QUERY_RESULT_EXT : GLenum = 0x8866;

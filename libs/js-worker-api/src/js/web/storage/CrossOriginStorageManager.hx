@@ -26,7 +26,9 @@ package js.web.storage;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("CrossOriginStorageManager") extern class CrossOriginStorageManager {
+@:native("CrossOriginStorageManager") @:require(js_experimental_api, "CrossOriginStorageManager is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CrossOriginStorageManager {
 	function getFileHandle(hash:CrossOriginStorageGetFileHandleHash, ?options:CrossOriginStorageGetFileHandleOptions):js.lib.Promise<FileSystemFileHandle>;
 }

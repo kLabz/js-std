@@ -25,9 +25,11 @@
 package js.web.media;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ManagedMediaSource>
 **/
-@:native("ManagedMediaSource") extern class ManagedMediaSource extends MediaSource {
+@:native("ManagedMediaSource") @:require(js_experimental_api, "ManagedMediaSource is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ManagedMediaSource extends MediaSource {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ManagedMediaSource/streaming>
 	**/

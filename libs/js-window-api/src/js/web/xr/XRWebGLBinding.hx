@@ -25,9 +25,11 @@
 package js.web.xr;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRWebGLBinding>
 **/
-@:native("XRWebGLBinding") extern class XRWebGLBinding {
+@:native("XRWebGLBinding") @:require(js_experimental_api, "XRWebGLBinding is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRWebGLBinding {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLBinding/nativeProjectionScaleFactor>
 	**/

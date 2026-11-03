@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRRigidTransform>
 **/
-@:native("XRRigidTransform") extern class XRRigidTransform {
+@:native("XRRigidTransform") @:require(js_experimental_api, "XRRigidTransform is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRRigidTransform {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRRigidTransform/position>
 	**/

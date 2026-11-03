@@ -27,9 +27,11 @@ package js.web.ml;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/LanguageModel>
 **/
-@:native("LanguageModel") extern class LanguageModel extends js.web.dom.EventTarget {
+@:native("LanguageModel") @:require(js_experimental_api, "LanguageModel is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LanguageModel extends js.web.dom.EventTarget {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/LanguageModel/contextUsage>
 	**/

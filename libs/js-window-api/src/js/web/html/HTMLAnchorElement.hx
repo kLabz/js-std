@@ -166,6 +166,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/attributionSourceId>
 	**/
+	@:require(js_experimental_api, "HTMLAnchorElement.attributionSourceId is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var attributionSourceId : Int;
 	/**
 		Returns `this.href`.

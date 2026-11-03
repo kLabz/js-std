@@ -59,6 +59,7 @@ package js.web.dom;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/TouchEvent/TouchEvent>
 	**/
+	@:require(js_experimental_api, "TouchEvent.TouchEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function new(type:String, ?eventInitDict:TouchEventInit):Void;
 	function getModifierState(keyArg:String):Bool;
 }

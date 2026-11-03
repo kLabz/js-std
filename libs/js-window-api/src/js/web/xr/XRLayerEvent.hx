@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRLayerEvent>
 **/
-@:native("XRLayerEvent") extern class XRLayerEvent extends js.web.dom.Event {
+@:native("XRLayerEvent") @:require(js_experimental_api, "XRLayerEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRLayerEvent extends js.web.dom.Event {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRLayerEvent/layer>
 	**/

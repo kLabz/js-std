@@ -27,9 +27,11 @@ package js.web.media;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/AudioPlaybackStats>
 **/
-@:native("AudioPlaybackStats") extern class AudioPlaybackStats {
+@:native("AudioPlaybackStats") @:require(js_experimental_api, "AudioPlaybackStats is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AudioPlaybackStats {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AudioPlaybackStats/underrunDuration>
 	**/

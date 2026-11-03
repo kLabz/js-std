@@ -63,5 +63,6 @@ package js.web.net;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Blob/textStream>
 	**/
+	@:require(js_experimental_api, "Blob.textStream is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function textStream():ReadableStream;
 }

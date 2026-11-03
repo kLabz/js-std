@@ -47,6 +47,7 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/WheelEvent/deltaMode>
 	**/
 	var deltaMode(default, null) : Int;
+	@:require(js_experimental_api, "WheelEvent.momentum is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var momentum(default, null) : Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/WheelEvent/WheelEvent>

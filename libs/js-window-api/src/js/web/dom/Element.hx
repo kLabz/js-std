@@ -441,6 +441,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/activeViewTransition>
 	**/
+	@:require(js_experimental_api, "Element.activeViewTransition is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var activeViewTransition(default, null) : Null<js.web.css.ViewTransition>;
 	/**
 		From partial interface in cssom-view.idl
@@ -501,6 +502,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/elementTiming>
 	**/
+	@:require(js_experimental_api, "Element.elementTiming is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var elementTiming : String;
 	/**
 		From partial interface in fullscreen.idl
@@ -531,10 +533,12 @@ package js.web.dom;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/
+	@:require(js_experimental_api, "Element.afterHTML is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function afterHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/
+	@:require(js_experimental_api, "Element.afterHTMLUnsafe is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function afterHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	/**
 		From interface mixin Animatable
@@ -551,10 +555,12 @@ package js.web.dom;
 	/**
 		From partial interface in html.idl
 	**/
+	@:require(js_experimental_api, "Element.appendHTML is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function appendHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
 	/**
 		From partial interface in html.idl
 	**/
+	@:require(js_experimental_api, "Element.appendHTMLUnsafe is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function appendHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	/**
 		From interface mixin ARIANotifyMixin
@@ -575,10 +581,12 @@ package js.web.dom;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/
+	@:require(js_experimental_api, "Element.beforeHTML is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function beforeHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/
+	@:require(js_experimental_api, "Element.beforeHTMLUnsafe is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function beforeHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	/**
 		From partial interface in cssom-view.idl
@@ -647,6 +655,7 @@ package js.web.dom;
 	/**
 		From interface mixin GeometryUtils
 	**/
+	@:require(js_experimental_api, "Element.getBoxQuads is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getBoxQuads(?options:js.web.css.BoxQuadOptions):Array<DOMQuad>;
 	/**
 		From partial interface in cssom-view.idl
@@ -731,16 +740,19 @@ package js.web.dom;
 	/**
 		From partial interface in html.idl
 	**/
+	@:require(js_experimental_api, "Element.prependHTML is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function prependHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
 	/**
 		From partial interface in html.idl
 	**/
+	@:require(js_experimental_api, "Element.prependHTMLUnsafe is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function prependHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	/**
 		From partial interface in css-pseudo.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/pseudo>
 	**/
+	@:require(js_experimental_api, "Element.pseudo is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function pseudo(type:String):Null<js.web.css.CSSPseudoElement>;
 	/**
 		From interface mixin ParentNode
@@ -793,10 +805,12 @@ package js.web.dom;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/
+	@:require(js_experimental_api, "Element.replaceWithHTML is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function replaceWithHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/
+	@:require(js_experimental_api, "Element.replaceWithHTMLUnsafe is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function replaceWithHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	/**
 		From partial interface in fullscreen.idl
@@ -895,6 +909,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/startViewTransition>
 	**/
+	@:require(js_experimental_api, "Element.startViewTransition is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function startViewTransition(?callbackOptions:haxe.extern.EitherType<js.web.css.ViewTransitionUpdateCallback, js.web.css.StartViewTransitionOptions>):js.web.css.ViewTransition;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Element/toggleAttribute>

@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("NavigationEvent") extern class NavigationEvent extends js.web.dom.UIEvent {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("NavigationEvent") @:require(js_experimental_api, "NavigationEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NavigationEvent extends js.web.dom.UIEvent {
 	var dir(default, null) : SpatialNavigationDirection;
 	var relatedTarget(default, null) : Null<js.web.dom.EventTarget>;
 	function new(type:String, ?eventInitDict:NavigationEventInit):Void;

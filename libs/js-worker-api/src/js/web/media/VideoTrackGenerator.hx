@@ -25,9 +25,11 @@
 package js.web.media;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/VideoTrackGenerator>
 **/
-@:native("VideoTrackGenerator") extern class VideoTrackGenerator {
+@:native("VideoTrackGenerator") @:require(js_experimental_api, "VideoTrackGenerator is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class VideoTrackGenerator {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrackGenerator/writable>
 	**/

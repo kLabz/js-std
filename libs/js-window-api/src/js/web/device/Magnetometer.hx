@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Magnetometer>
 **/
-@:native("Magnetometer") extern class Magnetometer extends Sensor {
+@:native("Magnetometer") @:require(js_experimental_api, "Magnetometer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Magnetometer extends Sensor {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Magnetometer/x>
 	**/

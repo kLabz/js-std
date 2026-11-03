@@ -25,9 +25,11 @@
 package js.web.xr;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRJointPose>
 **/
-@:native("XRJointPose") extern class XRJointPose extends XRPose {
+@:native("XRJointPose") @:require(js_experimental_api, "XRJointPose is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRJointPose extends XRPose {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRJointPose/radius>
 	**/

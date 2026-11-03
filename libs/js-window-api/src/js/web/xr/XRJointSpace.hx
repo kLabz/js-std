@@ -25,9 +25,11 @@
 package js.web.xr;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRJointSpace>
 **/
-@:native("XRJointSpace") extern class XRJointSpace extends XRSpace {
+@:native("XRJointSpace") @:require(js_experimental_api, "XRJointSpace is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRJointSpace extends XRSpace {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRJointSpace/jointName>
 	**/

@@ -24,6 +24,9 @@
 
 package js.web.css;
 
-@:native("CSSParserRule") extern class CSSParserRule {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSParserRule") @:require(js_experimental_api, "CSSParserRule is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSParserRule {
 
 }

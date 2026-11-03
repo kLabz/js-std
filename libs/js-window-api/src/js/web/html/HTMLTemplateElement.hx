@@ -35,6 +35,7 @@ package js.web.html;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement/htmlFor>
 	**/
+	@:require(js_experimental_api, "HTMLTemplateElement.htmlFor is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var htmlFor : String;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement/shadowRootMode>

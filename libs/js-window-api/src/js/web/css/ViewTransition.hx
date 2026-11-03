@@ -47,6 +47,7 @@ package js.web.css;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ViewTransition/transitionRoot>
 	**/
+	@:require(js_experimental_api, "ViewTransition.transitionRoot is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var transitionRoot(default, null) : js.web.dom.Element;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ViewTransition/skipTransition>
@@ -55,5 +56,6 @@ package js.web.css;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ViewTransition/waitUntil>
 	**/
+	@:require(js_experimental_api, "ViewTransition.waitUntil is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function waitUntil(promise:js.lib.Promise<Any>):Void;
 }

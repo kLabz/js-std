@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRRenderState>
 **/
-@:native("XRRenderState") extern class XRRenderState {
+@:native("XRRenderState") @:require(js_experimental_api, "XRRenderState is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRRenderState {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRRenderState/depthNear>
 	**/

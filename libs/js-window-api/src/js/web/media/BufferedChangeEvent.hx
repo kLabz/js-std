@@ -25,9 +25,11 @@
 package js.web.media;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent>
 **/
-@:native("BufferedChangeEvent") extern class BufferedChangeEvent extends js.web.dom.Event {
+@:native("BufferedChangeEvent") @:require(js_experimental_api, "BufferedChangeEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BufferedChangeEvent extends js.web.dom.Event {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent/addedRanges>
 	**/

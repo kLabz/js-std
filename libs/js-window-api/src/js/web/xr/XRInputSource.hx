@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRInputSource>
 **/
-@:native("XRInputSource") extern class XRInputSource {
+@:native("XRInputSource") @:require(js_experimental_api, "XRInputSource is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRInputSource {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRInputSource/handedness>
 	**/

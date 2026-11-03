@@ -25,9 +25,11 @@
 package js.web.sw;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ContentIndex>
 **/
-@:native("ContentIndex") extern class ContentIndex {
+@:native("ContentIndex") @:require(js_experimental_api, "ContentIndex is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ContentIndex {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ContentIndex/add>
 	**/

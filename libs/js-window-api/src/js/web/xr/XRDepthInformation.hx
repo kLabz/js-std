@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRDepthInformation>
 **/
-@:native("XRDepthInformation") extern class XRDepthInformation {
+@:native("XRDepthInformation") @:require(js_experimental_api, "XRDepthInformation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRDepthInformation {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRDepthInformation/width>
 	**/

@@ -25,9 +25,11 @@
 package js.web.css;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionDeclarations>
 **/
-@:native("CSSFunctionDeclarations") extern class CSSFunctionDeclarations extends CSSRule {
+@:native("CSSFunctionDeclarations") @:require(js_experimental_api, "CSSFunctionDeclarations is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSFunctionDeclarations extends CSSRule {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionDeclarations/style>
 	**/

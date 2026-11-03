@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRLightProbe>
 **/
-@:native("XRLightProbe") extern class XRLightProbe extends js.web.dom.EventTarget {
+@:native("XRLightProbe") @:require(js_experimental_api, "XRLightProbe is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRLightProbe extends js.web.dom.EventTarget {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRLightProbe/probeSpace>
 	**/

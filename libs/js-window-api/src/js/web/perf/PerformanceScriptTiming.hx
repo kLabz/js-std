@@ -25,9 +25,11 @@
 package js.web.perf;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming>
 **/
-@:native("PerformanceScriptTiming") extern class PerformanceScriptTiming extends PerformanceEntry {
+@:native("PerformanceScriptTiming") @:require(js_experimental_api, "PerformanceScriptTiming is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PerformanceScriptTiming extends PerformanceEntry {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceScriptTiming/invokerType>
 	**/

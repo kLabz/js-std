@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CharacterBoundsUpdateEvent>
 **/
-@:native("CharacterBoundsUpdateEvent") extern class CharacterBoundsUpdateEvent extends js.web.dom.Event {
+@:native("CharacterBoundsUpdateEvent") @:require(js_experimental_api, "CharacterBoundsUpdateEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CharacterBoundsUpdateEvent extends js.web.dom.Event {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CharacterBoundsUpdateEvent/rangeStart>
 	**/

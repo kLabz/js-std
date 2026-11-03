@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestSource>
 **/
-@:native("XRTransientInputHitTestSource") extern class XRTransientInputHitTestSource {
+@:native("XRTransientInputHitTestSource") @:require(js_experimental_api, "XRTransientInputHitTestSource is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRTransientInputHitTestSource {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestSource/cancel>
 	**/

@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/AudioTrackList>
 **/
-@:native("AudioTrackList") extern class AudioTrackList extends js.web.dom.EventTarget implements ArrayAccess<AudioTrack> {
+@:native("AudioTrackList") @:require(js_experimental_api, "AudioTrackList is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AudioTrackList extends js.web.dom.EventTarget implements ArrayAccess<AudioTrack> {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AudioTrackList/length>
 	**/

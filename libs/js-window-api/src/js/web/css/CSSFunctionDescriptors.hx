@@ -25,9 +25,11 @@
 package js.web.css;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionDescriptors>
 **/
-@:native("CSSFunctionDescriptors") extern class CSSFunctionDescriptors extends CSSStyleDeclaration {
+@:native("CSSFunctionDescriptors") @:require(js_experimental_api, "CSSFunctionDescriptors is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSFunctionDescriptors extends CSSStyleDeclaration {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionDescriptors/result>
 	**/

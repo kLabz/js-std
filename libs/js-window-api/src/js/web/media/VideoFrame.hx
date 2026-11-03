@@ -51,10 +51,12 @@ package js.web.media;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/rotation>
 	**/
+	@:require(js_experimental_api, "VideoFrame.rotation is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var rotation(default, null) : Float;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/flip>
 	**/
+	@:require(js_experimental_api, "VideoFrame.flip is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var flip(default, null) : Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/displayWidth>
@@ -103,5 +105,6 @@ package js.web.media;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/metadata>
 	**/
+	@:require(js_experimental_api, "VideoFrame.metadata is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function metadata():VideoFrameMetadata;
 }

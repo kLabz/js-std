@@ -24,7 +24,10 @@
 
 package js.web.html;
 
-@:native("HTMLPortalElement") extern class HTMLPortalElement extends HTMLElement {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("HTMLPortalElement") @:require(js_experimental_api, "HTMLPortalElement is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class HTMLPortalElement extends HTMLElement {
 	var src : String;
 	var referrerPolicy : String;
 	var onmessage : EventHandler;

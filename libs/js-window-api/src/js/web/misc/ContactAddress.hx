@@ -25,9 +25,11 @@
 package js.web.misc;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ContactAddress>
 **/
-@:native("ContactAddress") extern class ContactAddress {
+@:native("ContactAddress") @:require(js_experimental_api, "ContactAddress is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ContactAddress {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ContactAddress/city>
 	**/

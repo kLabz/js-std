@@ -25,9 +25,11 @@
 package js.web.css;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PaintRenderingContext2D>
 **/
-@:native("PaintRenderingContext2D") extern class PaintRenderingContext2D {
+@:native("PaintRenderingContext2D") @:require(js_experimental_api, "PaintRenderingContext2D is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PaintRenderingContext2D {
 	/**
 		From interface mixin CanvasCompositing
 		

@@ -24,7 +24,10 @@
 
 package js.web.media;
 
-@:native("DeviceChangeEvent") extern class DeviceChangeEvent extends js.web.dom.Event {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("DeviceChangeEvent") @:require(js_experimental_api, "DeviceChangeEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class DeviceChangeEvent extends js.web.dom.Event {
 	var devices(default, null) : Array<MediaDeviceInfo>;
 	var userInsertedDevices(default, null) : Array<MediaDeviceInfo>;
 	function new(type:String, ?eventInitDict:DeviceChangeEventInit):Void;

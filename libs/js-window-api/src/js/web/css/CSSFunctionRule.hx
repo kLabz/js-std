@@ -25,9 +25,11 @@
 package js.web.css;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionRule>
 **/
-@:native("CSSFunctionRule") extern class CSSFunctionRule extends CSSGroupingRule {
+@:native("CSSFunctionRule") @:require(js_experimental_api, "CSSFunctionRule is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSFunctionRule extends CSSGroupingRule {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionRule/name>
 	**/

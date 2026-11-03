@@ -24,6 +24,9 @@
 
 package js.web.css;
 
-@:native("CSSContentsStatementRule") extern class CSSContentsStatementRule extends CSSRule {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSContentsStatementRule") @:require(js_experimental_api, "CSSContentsStatementRule is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSContentsStatementRule extends CSSRule {
 
 }

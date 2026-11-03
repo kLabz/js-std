@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("CSSParserBlock") extern class CSSParserBlock extends CSSParserValue {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSParserBlock") @:require(js_experimental_api, "CSSParserBlock is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSParserBlock extends CSSParserValue {
 	var name(default, null) : String;
 	var body(default, null) : Array<CSSParserValue>;
 	function new(name:String, body:Array<CSSParserValue>):Void;

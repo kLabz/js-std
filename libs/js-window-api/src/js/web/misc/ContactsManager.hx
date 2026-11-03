@@ -27,9 +27,11 @@ package js.web.misc;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ContactsManager>
 **/
-@:native("ContactsManager") extern class ContactsManager {
+@:native("ContactsManager") @:require(js_experimental_api, "ContactsManager is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ContactsManager {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ContactsManager/getProperties>
 	**/

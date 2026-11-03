@@ -25,9 +25,11 @@
 package js.web.css;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSPseudoElement>
 **/
-@:native("CSSPseudoElement") extern class CSSPseudoElement {
+@:native("CSSPseudoElement") @:require(js_experimental_api, "CSSPseudoElement is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSPseudoElement {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSPseudoElement/type>
 	**/

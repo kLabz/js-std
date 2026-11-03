@@ -24,6 +24,9 @@
 
 package js.web.dom;
 
-@:native("TrustedHTMLParserOptions") extern class TrustedHTMLParserOptions {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("TrustedHTMLParserOptions") @:require(js_experimental_api, "TrustedHTMLParserOptions is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class TrustedHTMLParserOptions {
 
 }

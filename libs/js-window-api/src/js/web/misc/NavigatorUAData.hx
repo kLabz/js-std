@@ -25,9 +25,11 @@
 package js.web.misc;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/NavigatorUAData>
 **/
-@:native("NavigatorUAData") extern class NavigatorUAData {
+@:native("NavigatorUAData") @:require(js_experimental_api, "NavigatorUAData is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NavigatorUAData {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/NavigatorUAData/brands>
 	**/

@@ -24,7 +24,10 @@
 
 package js.web.webrtc;
 
-@:native("SFrameEncryptorStream") extern class SFrameEncryptorStream {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("SFrameEncryptorStream") @:require(js_experimental_api, "SFrameEncryptorStream is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class SFrameEncryptorStream {
 	/**
 		From interface mixin GenericTransformStream
 	**/

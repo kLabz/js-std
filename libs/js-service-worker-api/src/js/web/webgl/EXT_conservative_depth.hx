@@ -26,7 +26,9 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("EXT_conservative_depth") extern class EXT_conservative_depth {
+@:native("EXT_conservative_depth") @:require(js_experimental_api, "EXT_conservative_depth is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class EXT_conservative_depth {
 
 }

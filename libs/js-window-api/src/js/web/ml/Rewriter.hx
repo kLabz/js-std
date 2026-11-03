@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("Rewriter") extern class Rewriter {
+@:native("Rewriter") @:require(js_experimental_api, "Rewriter is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Rewriter {
 	var sharedContext(default, null) : String;
 	var tone(default, null) : RewriterTone;
 	var format(default, null) : RewriterFormat;

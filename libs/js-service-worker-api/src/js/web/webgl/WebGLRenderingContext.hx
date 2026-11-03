@@ -1237,6 +1237,7 @@ package js.web.webgl;
 	/**
 		From interface mixin WebGLRenderingContextBase
 	**/
+	@:require(js_experimental_api, "WebGLRenderingContext.drawingBufferFormat is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var drawingBufferFormat(default, null) : GLenum;
 	/**
 		From interface mixin WebGLRenderingContextBase
@@ -1535,6 +1536,7 @@ package js.web.webgl;
 	/**
 		From interface mixin WebGLRenderingContextBase
 	**/
+	@:require(js_experimental_api, "WebGLRenderingContext.drawingBufferStorage is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function drawingBufferStorage(sizedFormat:GLenum, width:Int, height:Int):Void;
 	/**
 		From interface mixin WebGLRenderingContextBase
@@ -1793,6 +1795,7 @@ package js.web.webgl;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/makeXRCompatible>
 	**/
+	@:require(js_experimental_api, "WebGLRenderingContext.makeXRCompatible is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function makeXRCompatible():js.lib.Promise<Void>;
 	/**
 		From interface mixin WebGLRenderingContextBase

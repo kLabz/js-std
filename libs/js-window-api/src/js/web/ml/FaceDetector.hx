@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("FaceDetector") extern class FaceDetector {
+@:native("FaceDetector") @:require(js_experimental_api, "FaceDetector is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class FaceDetector {
 	function new(?faceDetectorOptions:FaceDetectorOptions):Void;
 	function detect(image:js.web.canvas.ImageBitmapSource):js.lib.Promise<Array<DetectedFace>>;
 }

@@ -98,6 +98,7 @@ class Main {
 					for (task in tasks) task();
 					for (task in saveTasks) doSave(task.ctx, task.t, task.td);
 					finalizeLibs();
+					#if !no_output HaxelibJson.writeAll(); #end
 					return;
 				}
 
@@ -404,7 +405,7 @@ class Main {
 			).filterType(td);
 		}
 
-		for (task in pendingSaves) Docs.apply(task.td);
+		for (task in pendingSaves) Bcd.apply(task.td);
 
 		// Dropping a type from a lib can make its dependents unavailable there too
 		var changed = true;

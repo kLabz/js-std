@@ -195,6 +195,7 @@ package js.web.css;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSS/paintWorklet_static>
 	**/
+	@:require(js_experimental_api, "CSS.paintWorklet is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	static var paintWorklet(default, null) : js.web.html.Worklet;
 	static function parseCommaValueList(css:String):Array<Array<CSSToken>>;
 	static function parseDeclaration(css:String, ?options:CSSParserOptions):CSSParserDeclaration;

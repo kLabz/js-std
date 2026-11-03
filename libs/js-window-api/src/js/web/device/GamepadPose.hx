@@ -25,9 +25,11 @@
 package js.web.device;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/GamepadPose>
 **/
-@:native("GamepadPose") extern class GamepadPose {
+@:native("GamepadPose") @:require(js_experimental_api, "GamepadPose is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class GamepadPose {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/hasOrientation>
 	**/

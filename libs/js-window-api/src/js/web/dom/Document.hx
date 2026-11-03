@@ -805,6 +805,7 @@ package js.web.dom;
 	/**
 		From partial interface in page-lifecycle.idl
 	**/
+	@:require(js_experimental_api, "Document.wasDiscarded is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var wasDiscarded(default, null) : Bool;
 	/**
 		From partial interface in permissions-policy.idl
@@ -829,6 +830,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/prerendering>
 	**/
+	@:require(js_experimental_api, "Document.prerendering is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var prerendering(default, null) : Bool;
 	/**
 		From partial interface in prerendering-revamped.idl
@@ -1025,6 +1027,7 @@ package js.web.dom;
 	/**
 		From interface mixin GeometryUtils
 	**/
+	@:require(js_experimental_api, "Document.getBoxQuads is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getBoxQuads(?options:js.web.css.BoxQuadOptions):Array<DOMQuad>;
 	/**
 		From interface mixin NonElementParentNode
@@ -1067,12 +1070,14 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/hasPrivateToken>
 	**/
+	@:require(js_experimental_api, "Document.hasPrivateToken is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function hasPrivateToken(issuer:String):js.lib.Promise<Bool>;
 	/**
 		From partial interface in trust-token-api.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/hasRedemptionRecord>
 	**/
+	@:require(js_experimental_api, "Document.hasRedemptionRecord is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function hasRedemptionRecord(issuer:String):js.lib.Promise<Bool>;
 	/**
 		From partial interface in storage-access.idl
@@ -1085,6 +1090,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/hasUnpartitionedCookieAccess>
 	**/
+	@:require(js_experimental_api, "Document.hasUnpartitionedCookieAccess is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function hasUnpartitionedCookieAccess():js.lib.Promise<Bool>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Document/importNode>

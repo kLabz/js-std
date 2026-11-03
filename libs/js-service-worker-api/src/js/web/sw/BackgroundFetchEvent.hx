@@ -25,9 +25,11 @@
 package js.web.sw;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchEvent>
 **/
-@:native("BackgroundFetchEvent") extern class BackgroundFetchEvent extends ExtendableEvent {
+@:native("BackgroundFetchEvent") @:require(js_experimental_api, "BackgroundFetchEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BackgroundFetchEvent extends ExtendableEvent {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchEvent/registration>
 	**/

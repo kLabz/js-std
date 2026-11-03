@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRPose>
 **/
-@:native("XRPose") extern class XRPose {
+@:native("XRPose") @:require(js_experimental_api, "XRPose is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRPose {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRPose/transform>
 	**/

@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("FontFaceVariationAxis") extern class FontFaceVariationAxis {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("FontFaceVariationAxis") @:require(js_experimental_api, "FontFaceVariationAxis is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class FontFaceVariationAxis {
 	var name(default, null) : String;
 	var axisTag(default, null) : String;
 	var minimumValue(default, null) : Float;

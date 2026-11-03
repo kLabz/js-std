@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("HandwritingStroke") extern class HandwritingStroke {
+@:native("HandwritingStroke") @:require(js_experimental_api, "HandwritingStroke is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class HandwritingStroke {
 	function new():Void;
 	function addPoint(point:HandwritingPoint):Void;
 	function clear():Void;

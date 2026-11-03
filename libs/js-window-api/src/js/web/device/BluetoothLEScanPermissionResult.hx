@@ -26,7 +26,9 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("BluetoothLEScanPermissionResult") extern class BluetoothLEScanPermissionResult extends js.web.misc.PermissionStatus {
+@:native("BluetoothLEScanPermissionResult") @:require(js_experimental_api, "BluetoothLEScanPermissionResult is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothLEScanPermissionResult extends js.web.misc.PermissionStatus {
 	var scans : Array<BluetoothLEScan>;
 }

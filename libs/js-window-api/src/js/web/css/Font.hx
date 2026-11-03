@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("Font") extern class Font {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("Font") @:require(js_experimental_api, "Font is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Font {
 	var name(default, null) : String;
 	var glyphsRendered(default, null) : Int;
 }

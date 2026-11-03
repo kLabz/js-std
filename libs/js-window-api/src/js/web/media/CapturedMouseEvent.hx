@@ -24,7 +24,10 @@
 
 package js.web.media;
 
-@:native("CapturedMouseEvent") extern class CapturedMouseEvent extends js.web.dom.Event {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CapturedMouseEvent") @:require(js_experimental_api, "CapturedMouseEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CapturedMouseEvent extends js.web.dom.Event {
 	var surfaceX(default, null) : Int;
 	var surfaceY(default, null) : Int;
 	function new(type:String, ?eventInitDict:CapturedMouseEventInit):Void;

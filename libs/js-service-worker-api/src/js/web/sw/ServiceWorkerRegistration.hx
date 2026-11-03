@@ -66,18 +66,21 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/backgroundFetch>
 	**/
+	@:require(js_experimental_api, "ServiceWorkerRegistration.backgroundFetch is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var backgroundFetch(default, null) : BackgroundFetchManager;
 	/**
 		From partial interface in background-sync.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/sync>
 	**/
+	@:require(js_experimental_api, "ServiceWorkerRegistration.sync is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var sync(default, null) : SyncManager;
 	/**
 		From partial interface in content-index.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/index>
 	**/
+	@:require(js_experimental_api, "ServiceWorkerRegistration.index is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var index(default, null) : ContentIndex;
 	/**
 		From partial interface in cookiestore.idl
@@ -90,6 +93,7 @@ package js.web.sw;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/periodicSync>
 	**/
+	@:require(js_experimental_api, "ServiceWorkerRegistration.periodicSync is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var periodicSync(default, null) : PeriodicSyncManager;
 	/**
 		From partial interface in notifications.idl

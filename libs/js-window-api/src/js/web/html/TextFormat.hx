@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TextFormat>
 **/
-@:native("TextFormat") extern class TextFormat {
+@:native("TextFormat") @:require(js_experimental_api, "TextFormat is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class TextFormat {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/TextFormat/rangeStart>
 	**/

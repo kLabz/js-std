@@ -33,10 +33,12 @@ package js.web.auth;
 	/**
 		From partial interface in webcrypto-modern-algos.idl
 	**/
+	@:require(js_experimental_api, "SubtleCrypto.decapsulateBits is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function decapsulateBits(decapsulationAlgorithm:AlgorithmIdentifier, decapsulationKey:CryptoKey, ciphertext:js.web.dom.BufferSource):js.lib.Promise<js.lib.ArrayBuffer>;
 	/**
 		From partial interface in webcrypto-modern-algos.idl
 	**/
+	@:require(js_experimental_api, "SubtleCrypto.decapsulateKey is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function decapsulateKey(decapsulationAlgorithm:AlgorithmIdentifier, decapsulationKey:CryptoKey, ciphertext:js.web.dom.BufferSource, sharedKeyAlgorithm:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<KeyUsage>):js.lib.Promise<CryptoKey>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/decrypt>
@@ -57,10 +59,12 @@ package js.web.auth;
 	/**
 		From partial interface in webcrypto-modern-algos.idl
 	**/
+	@:require(js_experimental_api, "SubtleCrypto.encapsulateBits is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function encapsulateBits(encapsulationAlgorithm:AlgorithmIdentifier, encapsulationKey:CryptoKey):js.lib.Promise<EncapsulatedBits>;
 	/**
 		From partial interface in webcrypto-modern-algos.idl
 	**/
+	@:require(js_experimental_api, "SubtleCrypto.encapsulateKey is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function encapsulateKey(encapsulationAlgorithm:AlgorithmIdentifier, encapsulationKey:CryptoKey, sharedKeyAlgorithm:AlgorithmIdentifier, extractable:Bool, keyUsages:Array<KeyUsage>):js.lib.Promise<EncapsulatedKey>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/encrypt>
@@ -77,6 +81,7 @@ package js.web.auth;
 	/**
 		From partial interface in webcrypto-modern-algos.idl
 	**/
+	@:require(js_experimental_api, "SubtleCrypto.getPublicKey is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getPublicKey(key:CryptoKey, keyUsages:Array<KeyUsage>):js.lib.Promise<CryptoKey>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/importKey>

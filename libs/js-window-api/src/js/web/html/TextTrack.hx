@@ -66,6 +66,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/TextTrack/sourceBuffer>
 	**/
+	@:require(js_experimental_api, "TextTrack.sourceBuffer is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var sourceBuffer(default, null) : Null<js.web.media.SourceBuffer>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/TextTrack/addCue>

@@ -28,5 +28,6 @@ package js.web.css;
 	@see <https://developer.mozilla.org/docs/Web/API/CSSSupportsRule>
 **/
 @:native("CSSSupportsRule") extern class CSSSupportsRule extends CSSConditionRule {
+	@:require(js_experimental_api, "CSSSupportsRule.matches is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var matches(default, null) : Bool;
 }

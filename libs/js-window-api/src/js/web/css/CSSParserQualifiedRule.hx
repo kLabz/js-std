@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("CSSParserQualifiedRule") extern class CSSParserQualifiedRule extends CSSParserRule {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSParserQualifiedRule") @:require(js_experimental_api, "CSSParserQualifiedRule is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSParserQualifiedRule extends CSSParserRule {
 	var prelude(default, null) : Array<CSSParserValue>;
 	var body(default, null) : Array<CSSParserRule>;
 	function new(prelude:Array<CSSToken>, ?body:Null<Array<CSSParserRule>>):Void;

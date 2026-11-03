@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("FontFacePalettes") extern class FontFacePalettes implements ArrayAccess<FontFacePalette> {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("FontFacePalettes") @:require(js_experimental_api, "FontFacePalettes is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class FontFacePalettes implements ArrayAccess<FontFacePalette> {
 	var length(default, null) : Int;
 	function entries():js.lib.Iterator<js.lib.Tuple<Int, FontFacePalette>>;
 	function forEach(callback:(value:FontFacePalette, key:Int, parent:FontFacePalettes) -> Void, ?thisArg:Any):Void;

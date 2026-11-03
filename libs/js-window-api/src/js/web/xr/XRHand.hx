@@ -25,9 +25,11 @@
 package js.web.xr;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRHand>
 **/
-@:native("XRHand") extern class XRHand {
+@:native("XRHand") @:require(js_experimental_api, "XRHand is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRHand {
 	var size(default, null) : Int;
 	function entries():js.lib.Iterator<js.lib.Tuple<XRHandJoint, XRJointSpace>>;
 	function forEach(callback:(value:XRJointSpace, key:XRHandJoint, parent:XRHand) -> Void, ?thisArg:Any):Void;

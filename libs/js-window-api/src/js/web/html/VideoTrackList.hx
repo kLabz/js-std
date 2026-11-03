@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/VideoTrackList>
 **/
-@:native("VideoTrackList") extern class VideoTrackList extends js.web.dom.EventTarget implements ArrayAccess<VideoTrack> {
+@:native("VideoTrackList") @:require(js_experimental_api, "VideoTrackList is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class VideoTrackList extends js.web.dom.EventTarget implements ArrayAccess<VideoTrack> {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrackList/length>
 	**/

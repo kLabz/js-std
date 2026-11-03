@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("CSSApplyStatementRule") extern class CSSApplyStatementRule extends CSSRule {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSApplyStatementRule") @:require(js_experimental_api, "CSSApplyStatementRule is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSApplyStatementRule extends CSSRule {
 	var name(default, null) : String;
 	function getArguments():Array<String>;
 }

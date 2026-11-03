@@ -35,5 +35,6 @@ package js.web.css;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathSum/CSSMathSum>
 	**/
+	@:require(js_experimental_api, "CSSMathSum.CSSMathSum is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function new(args:haxe.Rest<CSSNumberish>):Void;
 }

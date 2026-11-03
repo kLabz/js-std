@@ -26,8 +26,10 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("ValueEvent") extern class ValueEvent extends js.web.dom.Event {
+@:native("ValueEvent") @:require(js_experimental_api, "ValueEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ValueEvent extends js.web.dom.Event {
 	var value(default, null) : Any;
 	function new(type:String, ?initDict:ValueEventInit):Void;
 }

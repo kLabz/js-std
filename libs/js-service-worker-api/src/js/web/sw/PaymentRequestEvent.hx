@@ -25,9 +25,11 @@
 package js.web.sw;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent>
 **/
-@:native("PaymentRequestEvent") extern class PaymentRequestEvent extends ExtendableEvent {
+@:native("PaymentRequestEvent") @:require(js_experimental_api, "PaymentRequestEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PaymentRequestEvent extends ExtendableEvent {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequestEvent/topOrigin>
 	**/

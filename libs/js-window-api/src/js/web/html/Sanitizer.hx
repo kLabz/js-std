@@ -40,6 +40,7 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/allowElement>
 	**/
 	function allowElement(element:SanitizerElementWithAttributes):Bool;
+	@:require(js_experimental_api, "Sanitizer.allowProcessingInstruction is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function allowProcessingInstruction(pi:SanitizerPI):Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/get>
@@ -53,6 +54,7 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/removeElement>
 	**/
 	function removeElement(element:SanitizerElement):Bool;
+	@:require(js_experimental_api, "Sanitizer.removeProcessingInstruction is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function removeProcessingInstruction(pi:SanitizerPI):Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/removeUnsafe>
@@ -70,5 +72,6 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/Sanitizer/setDataAttributes>
 	**/
 	function setDataAttributes(allow:Bool):Bool;
+	@:require(js_experimental_api, "Sanitizer.setJavascriptURLs is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function setJavascriptURLs(allow:Bool):Bool;
 }

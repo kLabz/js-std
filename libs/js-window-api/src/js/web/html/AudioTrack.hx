@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/AudioTrack>
 **/
-@:native("AudioTrack") extern class AudioTrack {
+@:native("AudioTrack") @:require(js_experimental_api, "AudioTrack is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AudioTrack {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AudioTrack/id>
 	**/

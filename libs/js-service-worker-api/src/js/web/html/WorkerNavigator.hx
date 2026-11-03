@@ -38,6 +38,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/globalPrivacyControl>
 	**/
+	@:require(js_experimental_api, "WorkerNavigator.globalPrivacyControl is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var globalPrivacyControl(default, null) : Bool;
 	/**
 		From interface mixin NavigatorID
@@ -104,10 +105,12 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/connection>
 	**/
+	@:require(js_experimental_api, "WorkerNavigator.connection is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var connection(default, null) : js.web.net.NetworkInformation;
 	/**
 		From interface mixin NavigatorStorageBuckets
 	**/
+	@:require(js_experimental_api, "WorkerNavigator.storageBuckets is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var storageBuckets(default, null) : js.web.storage.StorageBucketManager;
 	/**
 		From interface mixin NavigatorStorage
@@ -121,6 +124,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/userAgentData>
 	**/
+	@:require(js_experimental_api, "WorkerNavigator.userAgentData is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var userAgentData(default, null) : js.web.misc.NavigatorUAData;
 	/**
 		From interface mixin NavigatorLocks
@@ -139,12 +143,14 @@ package js.web.html;
 		From interface mixin NavigatorML
 		Only available in secure contexts (HTTPS).
 	**/
+	@:require(js_experimental_api, "WorkerNavigator.ml is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var ml(default, null) : js.web.ml.ML;
 	/**
 		From partial interface in hid.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/hid>
 	**/
+	@:require(js_experimental_api, "WorkerNavigator.hid is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var hid(default, null) : js.web.device.HID;
 	/**
 		From partial interface in media-capabilities.idl
@@ -170,6 +176,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WorkerNavigator/usb>
 	**/
+	@:require(js_experimental_api, "WorkerNavigator.usb is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var usb(default, null) : js.web.device.USB;
 	/**
 		From interface mixin NavigatorBadge

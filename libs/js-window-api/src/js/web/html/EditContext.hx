@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/EditContext>
 **/
-@:native("EditContext") extern class EditContext extends js.web.dom.EventTarget {
+@:native("EditContext") @:require(js_experimental_api, "EditContext is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class EditContext extends js.web.dom.EventTarget {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/EditContext/text>
 	**/

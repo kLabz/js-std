@@ -32,6 +32,7 @@ package js.web.svg;
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/preserveAspectRatio>
 	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
+	@:require(js_experimental_api, "SVGFEImageElement.crossOrigin is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var crossOrigin(default, null) : SVGAnimatedString;
 	/**
 		From interface mixin SVGFilterPrimitiveStandardAttributes

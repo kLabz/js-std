@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/USBDevice>
 **/
-@:native("USBDevice") extern class USBDevice {
+@:native("USBDevice") @:require(js_experimental_api, "USBDevice is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class USBDevice {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/USBDevice/usbVersionMajor>
 	**/

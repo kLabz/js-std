@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TextFormatUpdateEvent>
 **/
-@:native("TextFormatUpdateEvent") extern class TextFormatUpdateEvent extends js.web.dom.Event {
+@:native("TextFormatUpdateEvent") @:require(js_experimental_api, "TextFormatUpdateEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class TextFormatUpdateEvent extends js.web.dom.Event {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/TextFormatUpdateEvent/TextFormatUpdateEvent>
 	**/

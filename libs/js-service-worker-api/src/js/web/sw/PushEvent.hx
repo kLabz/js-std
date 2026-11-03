@@ -34,6 +34,7 @@ package js.web.sw;
 		@see <https://developer.mozilla.org/docs/Web/API/PushEvent/data>
 	**/
 	var data(default, null) : Null<PushMessageData>;
+	@:require(js_experimental_api, "PushEvent.notification is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var notification(default, null) : Null<Notification>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PushEvent/PushEvent>

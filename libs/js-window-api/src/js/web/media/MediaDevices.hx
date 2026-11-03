@@ -70,10 +70,12 @@ package js.web.media;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaDevices/selectAudioOutput>
 	**/
+	@:require(js_experimental_api, "MediaDevices.selectAudioOutput is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function selectAudioOutput(?options:AudioOutputOptions):js.lib.Promise<MediaDeviceInfo>;
 	/**
 		From partial interface in capture-handle-identity.idl
 	**/
+	@:require(js_experimental_api, "MediaDevices.setCaptureHandleConfig is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function setCaptureHandleConfig(?config:CaptureHandleConfig):Void;
 	/**
 		From partial interface in mediacapture-handle-actions.idl

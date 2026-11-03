@@ -24,6 +24,9 @@
 
 package js.web.misc;
 
-@:native("TestUtils") extern class TestUtils {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("TestUtils") @:require(js_experimental_api, "TestUtils is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class TestUtils {
 	static function gc():js.lib.Promise<Void>;
 }

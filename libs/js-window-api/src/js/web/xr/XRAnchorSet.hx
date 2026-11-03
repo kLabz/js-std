@@ -25,9 +25,11 @@
 package js.web.xr;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRAnchorSet>
 **/
-@:native("XRAnchorSet") extern class XRAnchorSet {
+@:native("XRAnchorSet") @:require(js_experimental_api, "XRAnchorSet is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRAnchorSet {
 	var size(default, null) : Int;
 	function entries():js.lib.Iterator<js.lib.Tuple<XRAnchor, XRAnchor>>;
 	function forEach(callback:(value:XRAnchor, key:XRAnchor, set:XRAnchorSet) -> Void, ?thisArg:Any):Void;

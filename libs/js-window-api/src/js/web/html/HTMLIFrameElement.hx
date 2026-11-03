@@ -81,6 +81,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/credentialless>
 	**/
+	@:require(js_experimental_api, "HTMLIFrameElement.credentialless is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var credentialless : Bool;
 	/**
 		From partial interface in connection-allowlists.idl
@@ -91,6 +92,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/csp>
 	**/
+	@:require(js_experimental_api, "HTMLIFrameElement.csp is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var csp : String;
 	/**
 		From partial interface in html.idl
@@ -132,6 +134,7 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/privateToken>
 	**/
+	@:require(js_experimental_api, "HTMLIFrameElement.privateToken is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var privateToken : String;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLIFrameElement/getSVGDocument>

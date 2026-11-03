@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons>
 **/
-@:native("NotRestoredReasons") extern class NotRestoredReasons {
+@:native("NotRestoredReasons") @:require(js_experimental_api, "NotRestoredReasons is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NotRestoredReasons {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/src>
 	**/

@@ -27,9 +27,11 @@ package js.web.css;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PreferenceManager>
 **/
-@:native("PreferenceManager") extern class PreferenceManager {
+@:native("PreferenceManager") @:require(js_experimental_api, "PreferenceManager is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PreferenceManager {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PreferenceManager/colorScheme>
 	**/

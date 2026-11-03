@@ -26,8 +26,10 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("WEBGL_multi_draw_instanced_base_vertex_base_instance") extern class WEBGL_multi_draw_instanced_base_vertex_base_instance {
+@:native("WEBGL_multi_draw_instanced_base_vertex_base_instance") @:require(js_experimental_api, "WEBGL_multi_draw_instanced_base_vertex_base_instance is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WEBGL_multi_draw_instanced_base_vertex_base_instance {
 	function multiDrawArraysInstancedBaseInstanceWEBGL(mode:GLenum, firstsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLint>>, firstsOffset:Float, countsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, countsOffset:Float, instanceCountsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, instanceCountsOffset:Float, baseInstancesList:haxe.extern.EitherType<js.lib.Uint32Array, Array<GLuint>>, baseInstancesOffset:Float, drawcount:GLsizei):Void;
 	function multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode:GLenum, countsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, countsOffset:Float, type:GLenum, offsetsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, offsetsOffset:Float, instanceCountsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, instanceCountsOffset:Float, baseVerticesList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLint>>, baseVerticesOffset:Float, baseInstancesList:haxe.extern.EitherType<js.lib.Uint32Array, Array<GLuint>>, baseInstancesOffset:Float, drawcount:GLsizei):Void;
 }

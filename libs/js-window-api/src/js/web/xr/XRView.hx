@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRView>
 **/
-@:native("XRView") extern class XRView {
+@:native("XRView") @:require(js_experimental_api, "XRView is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRView {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRView/eye>
 	**/

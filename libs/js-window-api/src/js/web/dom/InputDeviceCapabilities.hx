@@ -25,9 +25,11 @@
 package js.web.dom;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/InputDeviceCapabilities>
 **/
-@:native("InputDeviceCapabilities") extern class InputDeviceCapabilities {
+@:native("InputDeviceCapabilities") @:require(js_experimental_api, "InputDeviceCapabilities is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class InputDeviceCapabilities {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/InputDeviceCapabilities/firesTouchEvents>
 	**/

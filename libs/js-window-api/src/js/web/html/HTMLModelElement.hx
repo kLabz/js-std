@@ -26,8 +26,10 @@ package js.web.html;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("HTMLModelElement") extern class HTMLModelElement extends HTMLElement {
+@:native("HTMLModelElement") @:require(js_experimental_api, "HTMLModelElement is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class HTMLModelElement extends HTMLElement {
 	var ready(default, null) : js.lib.Promise<HTMLModelElement>;
 	var boundingBoxCenter(default, null) : js.web.dom.DOMPointReadOnly;
 	var boundingBoxExtents(default, null) : js.web.dom.DOMPointReadOnly;

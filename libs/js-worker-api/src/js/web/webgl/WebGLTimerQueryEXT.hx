@@ -26,7 +26,9 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("WebGLTimerQueryEXT") extern class WebGLTimerQueryEXT extends WebGLObject {
+@:native("WebGLTimerQueryEXT") @:require(js_experimental_api, "WebGLTimerQueryEXT is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WebGLTimerQueryEXT extends WebGLObject {
 
 }

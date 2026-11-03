@@ -26,7 +26,9 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("EXT_depth_clamp") extern class EXT_depth_clamp {
+@:native("EXT_depth_clamp") @:require(js_experimental_api, "EXT_depth_clamp is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class EXT_depth_clamp {
 	static inline var DEPTH_CLAMP_EXT : GLenum = 0x864F;
 }

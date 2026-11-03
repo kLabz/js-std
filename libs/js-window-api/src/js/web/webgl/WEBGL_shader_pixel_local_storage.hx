@@ -26,8 +26,10 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("WEBGL_shader_pixel_local_storage") extern class WEBGL_shader_pixel_local_storage {
+@:native("WEBGL_shader_pixel_local_storage") @:require(js_experimental_api, "WEBGL_shader_pixel_local_storage is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WEBGL_shader_pixel_local_storage {
 	static inline var MAX_PIXEL_LOCAL_STORAGE_PLANES_WEBGL : GLenum = 0x96E0;
 	static inline var MAX_COMBINED_DRAW_BUFFERS_AND_PIXEL_LOCAL_STORAGE_PLANES_WEBGL : GLenum = 0x96E1;
 	static inline var PIXEL_LOCAL_STORAGE_ACTIVE_PLANES_WEBGL : GLenum = 0x96E2;

@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/USBIsochronousOutTransferResult>
 **/
-@:native("USBIsochronousOutTransferResult") extern class USBIsochronousOutTransferResult {
+@:native("USBIsochronousOutTransferResult") @:require(js_experimental_api, "USBIsochronousOutTransferResult is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class USBIsochronousOutTransferResult {
 	var packets(default, null) : Array<USBIsochronousOutTransferPacket>;
 	function new(packets:Array<USBIsochronousOutTransferPacket>):Void;
 }

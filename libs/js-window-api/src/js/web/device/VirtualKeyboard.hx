@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/VirtualKeyboard>
 **/
-@:native("VirtualKeyboard") extern class VirtualKeyboard extends js.web.dom.EventTarget {
+@:native("VirtualKeyboard") @:require(js_experimental_api, "VirtualKeyboard is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class VirtualKeyboard extends js.web.dom.EventTarget {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/VirtualKeyboard/boundingRect>
 	**/

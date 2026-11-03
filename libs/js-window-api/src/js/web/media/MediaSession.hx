@@ -55,5 +55,6 @@ package js.web.media;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MediaSession/setScreenshareActive>
 	**/
+	@:require(js_experimental_api, "MediaSession.setScreenshareActive is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function setScreenshareActive(active:Bool):js.lib.Promise<Void>;
 }

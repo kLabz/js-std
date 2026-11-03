@@ -26,8 +26,10 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("WEBGL_clip_cull_distance") extern class WEBGL_clip_cull_distance {
+@:native("WEBGL_clip_cull_distance") @:require(js_experimental_api, "WEBGL_clip_cull_distance is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WEBGL_clip_cull_distance {
 	static inline var MAX_CLIP_DISTANCES_WEBGL : GLenum = 0x0D32;
 	static inline var MAX_CULL_DISTANCES_WEBGL : GLenum = 0x82F9;
 	static inline var MAX_COMBINED_CLIP_AND_CULL_DISTANCES_WEBGL : GLenum = 0x82FA;

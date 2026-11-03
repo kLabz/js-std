@@ -25,9 +25,11 @@
 package js.web.sw;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PeriodicSyncManager>
 **/
-@:native("PeriodicSyncManager") extern class PeriodicSyncManager {
+@:native("PeriodicSyncManager") @:require(js_experimental_api, "PeriodicSyncManager is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PeriodicSyncManager {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PeriodicSyncManager/getTags>
 	**/

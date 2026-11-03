@@ -57,6 +57,7 @@ package js.web.dom;
 	/**
 		From interface mixin GeometryUtils
 	**/
+	@:require(js_experimental_api, "Text.getBoxQuads is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getBoxQuads(?options:js.web.css.BoxQuadOptions):Array<DOMQuad>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Text/splitText>

@@ -26,8 +26,10 @@ package js.web.webgpu;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("GPUShaderStage") extern class GPUShaderStage {
+@:native("GPUShaderStage") @:require(js_experimental_api, "GPUShaderStage is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class GPUShaderStage {
 	static inline var COMPUTE : GPUFlagsConstant = 0x4;
 	static inline var FRAGMENT : GPUFlagsConstant = 0x2;
 	static inline var VERTEX : GPUFlagsConstant = 0x1;

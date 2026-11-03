@@ -24,7 +24,10 @@
 
 package js.web.html;
 
-@:native("InstallResultEvent") extern class InstallResultEvent extends js.web.dom.Event {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("InstallResultEvent") @:require(js_experimental_api, "InstallResultEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class InstallResultEvent extends js.web.dom.Event {
 	var result(default, null) : InstallResult;
 	function new(type:String, ?eventInitDict:InstallResultEventInit):Void;
 }

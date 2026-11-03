@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("NamedFlow") extern class NamedFlow extends js.web.dom.EventTarget {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("NamedFlow") @:require(js_experimental_api, "NamedFlow is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NamedFlow extends js.web.dom.EventTarget {
 	var name(default, null) : String;
 	var overset(default, null) : Bool;
 	var firstEmptyRegionIndex(default, null) : Int;

@@ -96,6 +96,7 @@ package js.web.net;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/exportKeyingMaterial>
 	**/
+	@:require(js_experimental_api, "WebTransport.exportKeyingMaterial is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function exportKeyingMaterial(label:js.web.dom.BufferSource, context:js.web.dom.BufferSource, outputLength:Int):js.lib.Promise<js.lib.Uint8Array>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/WebTransport/getStats>

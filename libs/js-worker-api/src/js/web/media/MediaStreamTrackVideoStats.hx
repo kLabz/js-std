@@ -24,7 +24,10 @@
 
 package js.web.media;
 
-@:native("MediaStreamTrackVideoStats") extern class MediaStreamTrackVideoStats {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("MediaStreamTrackVideoStats") @:require(js_experimental_api, "MediaStreamTrackVideoStats is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class MediaStreamTrackVideoStats {
 	var deliveredFrames(default, null) : Float;
 	var discardedFrames(default, null) : Float;
 	var totalFrames(default, null) : Float;

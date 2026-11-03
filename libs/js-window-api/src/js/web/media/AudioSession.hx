@@ -25,9 +25,11 @@
 package js.web.media;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/AudioSession>
 **/
-@:native("AudioSession") extern class AudioSession extends js.web.dom.EventTarget {
+@:native("AudioSession") @:require(js_experimental_api, "AudioSession is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AudioSession extends js.web.dom.EventTarget {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AudioSession/type>
 	**/

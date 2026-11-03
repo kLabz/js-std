@@ -24,7 +24,10 @@
 
 package js.web.media;
 
-@:native("HTMLUserMediaElement") extern class HTMLUserMediaElement extends js.web.html.HTMLElement {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("HTMLUserMediaElement") @:require(js_experimental_api, "HTMLUserMediaElement is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class HTMLUserMediaElement extends js.web.html.HTMLElement {
 	var stream(default, null) : Null<MediaStream>;
 	var error(default, null) : Null<js.web.dom.DOMException>;
 	var onstream : js.web.html.EventHandler;

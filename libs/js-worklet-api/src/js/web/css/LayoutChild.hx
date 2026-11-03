@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("LayoutChild") extern class LayoutChild {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("LayoutChild") @:require(js_experimental_api, "LayoutChild is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LayoutChild {
 	var styleMap(default, null) : StylePropertyMapReadOnly;
 	function intrinsicSizes():js.lib.Promise<IntrinsicSizes>;
 	function layoutNextFragment(constraints:LayoutConstraintsOptions, breakToken:ChildBreakToken):js.lib.Promise<LayoutFragment>;

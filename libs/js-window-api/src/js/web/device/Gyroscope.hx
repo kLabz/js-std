@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Gyroscope>
 **/
-@:native("Gyroscope") extern class Gyroscope extends Sensor {
+@:native("Gyroscope") @:require(js_experimental_api, "Gyroscope is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Gyroscope extends Sensor {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Gyroscope/x>
 	**/

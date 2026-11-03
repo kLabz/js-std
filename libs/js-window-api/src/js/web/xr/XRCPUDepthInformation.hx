@@ -25,9 +25,11 @@
 package js.web.xr;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRCPUDepthInformation>
 **/
-@:native("XRCPUDepthInformation") extern class XRCPUDepthInformation extends XRDepthInformation {
+@:native("XRCPUDepthInformation") @:require(js_experimental_api, "XRCPUDepthInformation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRCPUDepthInformation extends XRDepthInformation {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRCPUDepthInformation/data>
 	**/

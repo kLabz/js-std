@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("WorkletAnimationEffect") extern class WorkletAnimationEffect {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("WorkletAnimationEffect") @:require(js_experimental_api, "WorkletAnimationEffect is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WorkletAnimationEffect {
 	var localTime : Null<Float>;
 	function getComputedTiming():ComputedEffectTiming;
 	function getTiming():EffectTiming;

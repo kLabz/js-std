@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/LaunchParams>
 **/
-@:native("LaunchParams") extern class LaunchParams {
+@:native("LaunchParams") @:require(js_experimental_api, "LaunchParams is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LaunchParams {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/LaunchParams/targetURL>
 	**/

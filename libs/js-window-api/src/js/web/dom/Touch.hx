@@ -79,14 +79,17 @@ package js.web.dom;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Touch/altitudeAngle>
 	**/
+	@:require(js_experimental_api, "Touch.altitudeAngle is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var altitudeAngle(default, null) : Float;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Touch/azimuthAngle>
 	**/
+	@:require(js_experimental_api, "Touch.azimuthAngle is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var azimuthAngle(default, null) : Float;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Touch/touchType>
 	**/
+	@:require(js_experimental_api, "Touch.touchType is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var touchType(default, null) : TouchType;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Touch/Touch>

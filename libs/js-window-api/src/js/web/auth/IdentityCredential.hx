@@ -27,9 +27,11 @@ package js.web.auth;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/IdentityCredential>
 **/
-@:native("IdentityCredential") extern class IdentityCredential extends Credential {
+@:native("IdentityCredential") @:require(js_experimental_api, "IdentityCredential is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class IdentityCredential extends Credential {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/IdentityCredential/token>
 	**/

@@ -25,9 +25,11 @@
 package js.web.perf;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PerformanceSoftNavigation>
 **/
-@:native("PerformanceSoftNavigation") extern class PerformanceSoftNavigation extends PerformanceEntry {
+@:native("PerformanceSoftNavigation") @:require(js_experimental_api, "PerformanceSoftNavigation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PerformanceSoftNavigation extends PerformanceEntry {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceSoftNavigation/navigationType>
 	**/

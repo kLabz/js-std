@@ -27,9 +27,11 @@ package js.web.media;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PresentationConnectionCloseEvent>
 **/
-@:native("PresentationConnectionCloseEvent") extern class PresentationConnectionCloseEvent extends js.web.dom.Event {
+@:native("PresentationConnectionCloseEvent") @:require(js_experimental_api, "PresentationConnectionCloseEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PresentationConnectionCloseEvent extends js.web.dom.Event {
 	var reason(default, null) : PresentationConnectionCloseReason;
 	var message(default, null) : String;
 	function new(type:String, eventInitDict:PresentationConnectionCloseEventInit):Void;

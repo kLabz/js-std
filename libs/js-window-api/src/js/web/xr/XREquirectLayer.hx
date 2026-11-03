@@ -25,9 +25,11 @@
 package js.web.xr;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer>
 **/
-@:native("XREquirectLayer") extern class XREquirectLayer extends XRCompositionLayer {
+@:native("XREquirectLayer") @:require(js_experimental_api, "XREquirectLayer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XREquirectLayer extends XRCompositionLayer {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer/space>
 	**/

@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("FragmentResult") extern class FragmentResult {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("FragmentResult") @:require(js_experimental_api, "FragmentResult is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class FragmentResult {
 	var inlineSize(default, null) : Float;
 	var blockSize(default, null) : Float;
 	function new(?options:FragmentResultOptions):Void;

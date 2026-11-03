@@ -24,6 +24,9 @@
 
 package js.web.css;
 
-@:native("CSSContentsBlockRule") extern class CSSContentsBlockRule extends CSSGroupingRule {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSContentsBlockRule") @:require(js_experimental_api, "CSSContentsBlockRule is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSContentsBlockRule extends CSSGroupingRule {
 
 }

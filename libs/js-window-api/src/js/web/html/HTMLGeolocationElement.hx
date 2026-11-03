@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLGeolocationElement>
 **/
-@:native("HTMLGeolocationElement") extern class HTMLGeolocationElement extends HTMLElement {
+@:native("HTMLGeolocationElement") @:require(js_experimental_api, "HTMLGeolocationElement is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class HTMLGeolocationElement extends HTMLElement {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLGeolocationElement/position>
 	**/

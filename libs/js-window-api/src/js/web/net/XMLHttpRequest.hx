@@ -115,6 +115,7 @@ package js.web.net;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/setPrivateToken>
 	**/
+	@:require(js_experimental_api, "XMLHttpRequest.setPrivateToken is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function setPrivateToken(privateToken:js.web.ads.PrivateToken):Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/setRequestHeader>

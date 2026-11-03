@@ -25,9 +25,11 @@
 package js.web.ads;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLFencedFrameElement>
 **/
-@:native("HTMLFencedFrameElement") @:deprecated extern class HTMLFencedFrameElement extends js.web.html.HTMLElement {
+@:native("HTMLFencedFrameElement") @:require(js_experimental_api, "HTMLFencedFrameElement is experimental (shipped in fewer than two engines); use -D js-experimental-api") @:deprecated extern class HTMLFencedFrameElement extends js.web.html.HTMLElement {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLFencedFrameElement/config>
 	**/

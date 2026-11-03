@@ -26,8 +26,10 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("WEBGL_polygon_mode") extern class WEBGL_polygon_mode {
+@:native("WEBGL_polygon_mode") @:require(js_experimental_api, "WEBGL_polygon_mode is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WEBGL_polygon_mode {
 	static inline var POLYGON_MODE_WEBGL : GLenum = 0x0B40;
 	static inline var POLYGON_OFFSET_LINE_WEBGL : GLenum = 0x2A02;
 	static inline var LINE_WEBGL : GLenum = 0x1B01;

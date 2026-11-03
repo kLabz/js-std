@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/NDEFRecord>
 **/
-@:native("NDEFRecord") extern class NDEFRecord {
+@:native("NDEFRecord") @:require(js_experimental_api, "NDEFRecord is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NDEFRecord {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/NDEFRecord/recordType>
 	**/

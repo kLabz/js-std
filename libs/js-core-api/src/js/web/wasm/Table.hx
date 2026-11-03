@@ -26,8 +26,10 @@ package js.web.wasm;
 
 /**
 	Unhandled extended attribute LegacyNamespace
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("Table") extern class Table {
+@:native("Table") @:require(js_experimental_api, "Table is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Table {
 	var length(default, null) : AddressValue;
 	function new(descriptor:TableDescriptor, ?value:Any):Void;
 	function get(index:AddressValue):Any;

@@ -25,9 +25,11 @@
 package js.web.perf;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CrashReportContext>
 **/
-@:native("CrashReportContext") extern class CrashReportContext {
+@:native("CrashReportContext") @:require(js_experimental_api, "CrashReportContext is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CrashReportContext {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CrashReportContext/delete>
 	**/

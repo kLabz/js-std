@@ -71,20 +71,24 @@ package js.web.perf;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/criticalCHRestart>
 	**/
+	@:require(js_experimental_api, "PerformanceNavigationTiming.criticalCHRestart is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var criticalCHRestart(default, null) : DOMHighResTimeStamp;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/notRestoredReasons>
 	**/
+	@:require(js_experimental_api, "PerformanceNavigationTiming.notRestoredReasons is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var notRestoredReasons(default, null) : Null<js.web.html.NotRestoredReasons>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/confidence>
 	**/
+	@:require(js_experimental_api, "PerformanceNavigationTiming.confidence is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var confidence(default, null) : PerformanceTimingConfidence;
 	/**
 		From partial interface in prerendering-revamped.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/activationStart>
 	**/
+	@:require(js_experimental_api, "PerformanceNavigationTiming.activationStart is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var activationStart(default, null) : DOMHighResTimeStamp;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/toJSON>

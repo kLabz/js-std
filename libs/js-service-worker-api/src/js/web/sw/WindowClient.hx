@@ -39,6 +39,7 @@ package js.web.sw;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/WindowClient/ancestorOrigins>
 	**/
+	@:require(js_experimental_api, "WindowClient.ancestorOrigins is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var ancestorOrigins(default, null) : Array<String>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/WindowClient/focus>

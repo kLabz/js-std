@@ -25,9 +25,11 @@
 package js.web.perf;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/LayoutShift>
 **/
-@:native("LayoutShift") extern class LayoutShift extends PerformanceEntry {
+@:native("LayoutShift") @:require(js_experimental_api, "LayoutShift is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LayoutShift extends PerformanceEntry {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/LayoutShift/value>
 	**/

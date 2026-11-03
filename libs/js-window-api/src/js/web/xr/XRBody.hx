@@ -24,7 +24,10 @@
 
 package js.web.xr;
 
-@:native("XRBody") extern class XRBody {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("XRBody") @:require(js_experimental_api, "XRBody is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRBody {
 	var size(default, null) : Int;
 	function entries():js.lib.Iterator<js.lib.Tuple<XRBodyJoint, XRBodySpace>>;
 	function forEach(callback:(value:XRBodySpace, key:XRBodyJoint, parent:XRBody) -> Void, ?thisArg:Any):Void;

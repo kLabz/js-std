@@ -26,7 +26,9 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("WEBGL_render_shared_exponent") extern class WEBGL_render_shared_exponent {
+@:native("WEBGL_render_shared_exponent") @:require(js_experimental_api, "WEBGL_render_shared_exponent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WEBGL_render_shared_exponent {
 
 }

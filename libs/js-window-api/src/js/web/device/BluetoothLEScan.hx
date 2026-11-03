@@ -26,8 +26,10 @@ package js.web.device;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("BluetoothLEScan") extern class BluetoothLEScan {
+@:native("BluetoothLEScan") @:require(js_experimental_api, "BluetoothLEScan is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothLEScan {
 	var filters(default, null) : Array<BluetoothLEScanFilter>;
 	var keepRepeatedDevices(default, null) : Bool;
 	var acceptAllAdvertisements(default, null) : Bool;

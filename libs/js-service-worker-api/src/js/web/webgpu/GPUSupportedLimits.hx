@@ -54,6 +54,7 @@ package js.web.webgpu;
 		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>
 	**/
 	var maxBindGroupsPlusVertexBuffers(default, null) : Int;
+	@:require(js_experimental_api, "GPUSupportedLimits.maxImmediateSize is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var maxImmediateSize(default, null) : Int;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits#instance_properties>

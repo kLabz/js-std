@@ -26,8 +26,10 @@ package js.web.wasm;
 
 /**
 	Unhandled extended attribute LegacyNamespace
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("Global") extern class Global {
+@:native("Global") @:require(js_experimental_api, "Global is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Global {
 	var value : Any;
 	function new(descriptor:GlobalDescriptor, ?v:Any):Void;
 	function valueOf():Any;

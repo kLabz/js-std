@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/LinearAccelerationSensor>
 **/
-@:native("LinearAccelerationSensor") extern class LinearAccelerationSensor extends Accelerometer {
+@:native("LinearAccelerationSensor") @:require(js_experimental_api, "LinearAccelerationSensor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LinearAccelerationSensor extends Accelerometer {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/LinearAccelerationSensor/LinearAccelerationSensor>
 	**/

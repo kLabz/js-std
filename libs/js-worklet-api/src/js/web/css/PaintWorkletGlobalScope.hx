@@ -27,9 +27,11 @@ package js.web.css;
 /**
 	Unhandled extended attribute Global
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PaintWorkletGlobalScope>
 **/
-@:native("PaintWorkletGlobalScope") extern class PaintWorkletGlobalScope extends js.web.html.WorkletGlobalScope {
+@:native("PaintWorkletGlobalScope") @:require(js_experimental_api, "PaintWorkletGlobalScope is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PaintWorkletGlobalScope extends js.web.html.WorkletGlobalScope {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PaintWorkletGlobalScope/devicePixelRatio>
 	**/

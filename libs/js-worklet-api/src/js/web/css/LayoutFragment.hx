@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("LayoutFragment") extern class LayoutFragment {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("LayoutFragment") @:require(js_experimental_api, "LayoutFragment is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LayoutFragment {
 	var inlineSize(default, null) : Float;
 	var blockSize(default, null) : Float;
 	var inlineOffset : Float;

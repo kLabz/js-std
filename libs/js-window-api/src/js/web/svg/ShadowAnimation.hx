@@ -24,7 +24,10 @@
 
 package js.web.svg;
 
-@:native("ShadowAnimation") extern class ShadowAnimation extends js.web.css.Animation {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("ShadowAnimation") @:require(js_experimental_api, "ShadowAnimation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ShadowAnimation extends js.web.css.Animation {
 	var sourceAnimation(default, null) : js.web.css.Animation;
 	function new(source:js.web.css.Animation, newTarget:haxe.extern.EitherType<js.web.dom.Element, js.web.css.CSSPseudoElement>):Void;
 }

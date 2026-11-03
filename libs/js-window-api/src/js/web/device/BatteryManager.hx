@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/BatteryManager>
 **/
-@:native("BatteryManager") extern class BatteryManager extends js.web.dom.EventTarget {
+@:native("BatteryManager") @:require(js_experimental_api, "BatteryManager is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BatteryManager extends js.web.dom.EventTarget {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/BatteryManager/charging>
 	**/

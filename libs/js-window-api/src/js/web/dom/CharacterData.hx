@@ -57,10 +57,12 @@ package js.web.dom;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/
+	@:require(js_experimental_api, "CharacterData.afterHTML is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function afterHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/
+	@:require(js_experimental_api, "CharacterData.afterHTMLUnsafe is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function afterHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/appendData>
@@ -75,10 +77,12 @@ package js.web.dom;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/
+	@:require(js_experimental_api, "CharacterData.beforeHTML is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function beforeHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/
+	@:require(js_experimental_api, "CharacterData.beforeHTMLUnsafe is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function beforeHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/deleteData>
@@ -107,10 +111,12 @@ package js.web.dom;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/
+	@:require(js_experimental_api, "CharacterData.replaceWithHTML is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function replaceWithHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
 	/**
 		From interface mixin NonDocumentTypeChildNode
 	**/
+	@:require(js_experimental_api, "CharacterData.replaceWithHTMLUnsafe is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function replaceWithHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/substringData>

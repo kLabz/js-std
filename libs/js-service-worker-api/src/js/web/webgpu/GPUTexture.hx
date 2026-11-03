@@ -62,6 +62,7 @@ package js.web.webgpu;
 		@see <https://developer.mozilla.org/docs/Web/API/GPUTexture/usage>
 	**/
 	var usage(default, null) : GPUFlagsConstant;
+	@:require(js_experimental_api, "GPUTexture.textureBindingViewDimension is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var textureBindingViewDimension(default, null) : haxe.extern.EitherType<GPUTextureViewDimension, Void>;
 	/**
 		From interface mixin GPUObjectBase

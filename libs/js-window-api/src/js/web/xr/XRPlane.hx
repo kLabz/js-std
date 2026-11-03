@@ -24,7 +24,10 @@
 
 package js.web.xr;
 
-@:native("XRPlane") extern class XRPlane {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("XRPlane") @:require(js_experimental_api, "XRPlane is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRPlane {
 	var planeSpace(default, null) : XRSpace;
 	var polygon(default, null) : Array<js.web.dom.DOMPointReadOnly>;
 	var orientation(default, null) : Null<XRPlaneOrientation>;

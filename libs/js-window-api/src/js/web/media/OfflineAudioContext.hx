@@ -41,6 +41,7 @@ package js.web.media;
 		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/OfflineAudioContext>
 	**/
 	overload function new(contextOptions:OfflineAudioContextOptions):Void;
+	@:require(js_experimental_api, "OfflineAudioContext.close is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function close():js.lib.Promise<Void>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/resume>

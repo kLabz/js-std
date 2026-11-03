@@ -25,9 +25,11 @@
 package js.web.css;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SnapEvent>
 **/
-@:native("SnapEvent") extern class SnapEvent extends js.web.dom.Event {
+@:native("SnapEvent") @:require(js_experimental_api, "SnapEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class SnapEvent extends js.web.dom.Event {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SnapEvent/snapTargetBlock>
 	**/

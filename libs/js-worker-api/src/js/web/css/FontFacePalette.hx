@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("FontFacePalette") extern class FontFacePalette implements ArrayAccess<String> {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("FontFacePalette") @:require(js_experimental_api, "FontFacePalette is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class FontFacePalette implements ArrayAccess<String> {
 	var length(default, null) : Int;
 	var usableWithLightBackground(default, null) : Bool;
 	var usableWithDarkBackground(default, null) : Bool;

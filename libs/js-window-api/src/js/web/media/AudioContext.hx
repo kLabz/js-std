@@ -41,12 +41,14 @@ package js.web.media;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/sinkId>
 	**/
+	@:require(js_experimental_api, "AudioContext.sinkId is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var sinkId(default, null) : haxe.extern.EitherType<String, AudioSinkInfo>;
 	var onsinkchange : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/playbackStats>
 	**/
+	@:require(js_experimental_api, "AudioContext.playbackStats is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var playbackStats(default, null) : AudioPlaybackStats;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/AudioContext>
@@ -71,6 +73,7 @@ package js.web.media;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/createMediaStreamTrackSource>
 	**/
+	@:require(js_experimental_api, "AudioContext.createMediaStreamTrackSource is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function createMediaStreamTrackSource(mediaStreamTrack:MediaStreamTrack):MediaStreamTrackAudioSourceNode;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/getOutputTimestamp>
@@ -85,6 +88,7 @@ package js.web.media;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/setSinkId>
 	**/
+	@:require(js_experimental_api, "AudioContext.setSinkId is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function setSinkId(sinkId:haxe.extern.EitherType<String, AudioSinkOptions>):js.lib.Promise<Void>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/suspend>

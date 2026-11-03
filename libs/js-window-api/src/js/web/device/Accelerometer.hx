@@ -27,9 +27,11 @@ package js.web.device;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Accelerometer>
 **/
-@:native("Accelerometer") extern class Accelerometer extends Sensor {
+@:native("Accelerometer") @:require(js_experimental_api, "Accelerometer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Accelerometer extends Sensor {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Accelerometer/x>
 	**/

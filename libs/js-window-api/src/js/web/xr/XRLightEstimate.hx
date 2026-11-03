@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRLightEstimate>
 **/
-@:native("XRLightEstimate") extern class XRLightEstimate {
+@:native("XRLightEstimate") @:require(js_experimental_api, "XRLightEstimate is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRLightEstimate {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRLightEstimate/sphericalHarmonicsCoefficients>
 	**/

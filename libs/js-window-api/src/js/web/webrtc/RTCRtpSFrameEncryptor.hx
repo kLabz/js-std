@@ -24,7 +24,10 @@
 
 package js.web.webrtc;
 
-@:native("RTCRtpSFrameEncryptor") extern class RTCRtpSFrameEncryptor {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("RTCRtpSFrameEncryptor") @:require(js_experimental_api, "RTCRtpSFrameEncryptor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class RTCRtpSFrameEncryptor {
 	function new(options:RTCRtpSFrameEncryptorOptions):Void;
 	/**
 		From interface mixin SFrameEncryptorManager

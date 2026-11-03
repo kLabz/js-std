@@ -24,7 +24,10 @@
 
 package js.web.media;
 
-@:native("CaptureActionEvent") extern class CaptureActionEvent extends js.web.dom.Event {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CaptureActionEvent") @:require(js_experimental_api, "CaptureActionEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CaptureActionEvent extends js.web.dom.Event {
 	var action(default, null) : CaptureAction;
 	function new(?init:CaptureActionEventInit):Void;
 }

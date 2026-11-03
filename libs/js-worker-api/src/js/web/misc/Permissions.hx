@@ -35,6 +35,7 @@ package js.web.misc;
 	/**
 		From partial interface in permissions-request.idl
 	**/
+	@:require(js_experimental_api, "Permissions.request is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function request(permissionDesc:{ }):js.lib.Promise<PermissionStatus>;
 	/**
 		From partial interface in permissions-revoke.idl
@@ -42,5 +43,6 @@ package js.web.misc;
 		@see <https://developer.mozilla.org/docs/Web/API/Permissions/revoke>
 	**/
 	@:deprecated
+	@:require(js_experimental_api, "Permissions.revoke is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function revoke(permissionDesc:{ }):js.lib.Promise<PermissionStatus>;
 }

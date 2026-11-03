@@ -24,7 +24,10 @@
 
 package js.web.html;
 
-@:native("PortalHost") extern class PortalHost extends js.web.dom.EventTarget {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("PortalHost") @:require(js_experimental_api, "PortalHost is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PortalHost extends js.web.dom.EventTarget {
 	var onmessage : EventHandler;
 	var onmessageerror : EventHandler;
 	function postMessage(message:Any, ?options:StructuredSerializeOptions):Void;

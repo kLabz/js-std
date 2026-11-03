@@ -24,7 +24,10 @@
 
 package js.web.media;
 
-@:native("HTMLMicrophoneElement") extern class HTMLMicrophoneElement extends js.web.html.HTMLElement {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("HTMLMicrophoneElement") @:require(js_experimental_api, "HTMLMicrophoneElement is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class HTMLMicrophoneElement extends js.web.html.HTMLElement {
 	var track(default, null) : Null<MediaStreamTrack>;
 	var error(default, null) : Null<js.web.dom.DOMException>;
 	var ontrack : js.web.html.EventHandler;

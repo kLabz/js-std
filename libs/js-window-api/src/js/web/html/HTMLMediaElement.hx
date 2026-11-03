@@ -140,14 +140,17 @@ package js.web.html;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loading>
 	**/
+	@:require(js_experimental_api, "HTMLMediaElement.loading is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var loading : String;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/audioTracks>
 	**/
+	@:require(js_experimental_api, "HTMLMediaElement.audioTracks is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var audioTracks(default, null) : AudioTrackList;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/videoTracks>
 	**/
+	@:require(js_experimental_api, "HTMLMediaElement.videoTracks is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var videoTracks(default, null) : VideoTrackList;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/textTracks>
@@ -208,6 +211,7 @@ package js.web.html;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/getStartDate>
 	**/
+	@:require(js_experimental_api, "HTMLMediaElement.getStartDate is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getStartDate():{ };
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/load>

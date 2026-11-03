@@ -25,9 +25,11 @@
 package js.web.perf;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/LayoutShiftAttribution>
 **/
-@:native("LayoutShiftAttribution") extern class LayoutShiftAttribution {
+@:native("LayoutShiftAttribution") @:require(js_experimental_api, "LayoutShiftAttribution is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LayoutShiftAttribution {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/LayoutShiftAttribution/node>
 	**/

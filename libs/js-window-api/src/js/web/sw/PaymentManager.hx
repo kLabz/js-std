@@ -27,9 +27,11 @@ package js.web.sw;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PaymentManager>
 **/
-@:native("PaymentManager") extern class PaymentManager {
+@:native("PaymentManager") @:require(js_experimental_api, "PaymentManager is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PaymentManager {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PaymentManager/userHint>
 	**/

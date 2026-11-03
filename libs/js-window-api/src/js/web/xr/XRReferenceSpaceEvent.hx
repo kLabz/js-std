@@ -27,9 +27,11 @@ package js.web.xr;
 /**
 	Only available in secure contexts (HTTPS).
 	
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XRReferenceSpaceEvent>
 **/
-@:native("XRReferenceSpaceEvent") extern class XRReferenceSpaceEvent extends js.web.dom.Event {
+@:native("XRReferenceSpaceEvent") @:require(js_experimental_api, "XRReferenceSpaceEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRReferenceSpaceEvent extends js.web.dom.Event {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRReferenceSpaceEvent/referenceSpace>
 	**/

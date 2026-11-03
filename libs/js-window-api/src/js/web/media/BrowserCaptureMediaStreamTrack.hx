@@ -25,9 +25,11 @@
 package js.web.media;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/BrowserCaptureMediaStreamTrack>
 **/
-@:native("BrowserCaptureMediaStreamTrack") extern class BrowserCaptureMediaStreamTrack extends MediaStreamTrack {
+@:native("BrowserCaptureMediaStreamTrack") @:require(js_experimental_api, "BrowserCaptureMediaStreamTrack is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BrowserCaptureMediaStreamTrack extends MediaStreamTrack {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/BrowserCaptureMediaStreamTrack/clone>
 	**/

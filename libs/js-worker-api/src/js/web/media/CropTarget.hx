@@ -25,8 +25,10 @@
 package js.web.media;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CropTarget>
 **/
-@:native("CropTarget") extern class CropTarget {
+@:native("CropTarget") @:require(js_experimental_api, "CropTarget is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CropTarget {
 
 }

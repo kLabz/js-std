@@ -25,9 +25,11 @@
 package js.web.html;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlay>
 **/
-@:native("WindowControlsOverlay") extern class WindowControlsOverlay extends js.web.dom.EventTarget {
+@:native("WindowControlsOverlay") @:require(js_experimental_api, "WindowControlsOverlay is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WindowControlsOverlay extends js.web.dom.EventTarget {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlay/visible>
 	**/

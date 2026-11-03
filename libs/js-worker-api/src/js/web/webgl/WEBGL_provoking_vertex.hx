@@ -26,8 +26,10 @@ package js.web.webgl;
 
 /**
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("WEBGL_provoking_vertex") extern class WEBGL_provoking_vertex {
+@:native("WEBGL_provoking_vertex") @:require(js_experimental_api, "WEBGL_provoking_vertex is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WEBGL_provoking_vertex {
 	static inline var FIRST_VERTEX_CONVENTION_WEBGL : GLenum = 0x8E4D;
 	static inline var LAST_VERTEX_CONVENTION_WEBGL : GLenum = 0x8E4E;
 	static inline var PROVOKING_VERTEX_WEBGL : GLenum = 0x8E4F;

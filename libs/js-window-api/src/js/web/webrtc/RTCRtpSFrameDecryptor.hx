@@ -24,7 +24,10 @@
 
 package js.web.webrtc;
 
-@:native("RTCRtpSFrameDecryptor") extern class RTCRtpSFrameDecryptor extends js.web.dom.EventTarget {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("RTCRtpSFrameDecryptor") @:require(js_experimental_api, "RTCRtpSFrameDecryptor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class RTCRtpSFrameDecryptor extends js.web.dom.EventTarget {
 	/**
 		From interface mixin SFrameDecryptorManager
 	**/

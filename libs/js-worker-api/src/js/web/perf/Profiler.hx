@@ -25,9 +25,11 @@
 package js.web.perf;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Profiler>
 **/
-@:native("Profiler") extern class Profiler extends js.web.dom.EventTarget {
+@:native("Profiler") @:require(js_experimental_api, "Profiler is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Profiler extends js.web.dom.EventTarget {
 	var sampleInterval(default, null) : DOMHighResTimeStamp;
 	var stopped(default, null) : Bool;
 	/**

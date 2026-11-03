@@ -24,7 +24,10 @@
 
 package js.web.wasm;
 
-@:native("WebAssembly") extern class WebAssembly {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("WebAssembly") @:require(js_experimental_api, "WebAssembly is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WebAssembly {
 	static var JSTag(default, null) : Tag;
 	static function compile(bytes:js.web.dom.AllowSharedBufferSource, ?options:WebAssemblyCompileOptions):js.lib.Promise<Module>;
 	static function compileStreaming(source:js.lib.Promise<js.web.net.Response>, ?options:WebAssemblyCompileOptions):js.lib.Promise<Module>;

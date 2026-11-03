@@ -24,7 +24,10 @@
 
 package js.web.css;
 
-@:native("CSSRGB") extern class CSSRGB extends CSSColorValue {
+/**
+	Experimental: requires `-D js-experimental-api`.
+**/
+@:native("CSSRGB") @:require(js_experimental_api, "CSSRGB is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSRGB extends CSSColorValue {
 	var r : CSSColorRGBComp;
 	var g : CSSColorRGBComp;
 	var b : CSSColorRGBComp;

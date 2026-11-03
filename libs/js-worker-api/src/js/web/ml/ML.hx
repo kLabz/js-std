@@ -26,8 +26,10 @@ package js.web.ml;
 
 /**
 	Only available in secure contexts (HTTPS).
+	
+	Experimental: requires `-D js-experimental-api`.
 **/
-@:native("ML") extern class ML {
+@:native("ML") @:require(js_experimental_api, "ML is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ML {
 	overload function createContext(?options:MLContextOptions):js.lib.Promise<MLContext>;
 	overload function createContext(gpuDevice:js.web.webgpu.GPUDevice):js.lib.Promise<MLContext>;
 }

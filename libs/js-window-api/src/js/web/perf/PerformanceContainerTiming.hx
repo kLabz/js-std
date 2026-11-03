@@ -25,9 +25,11 @@
 package js.web.perf;
 
 /**
+	Experimental: requires `-D js-experimental-api`.
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PerformanceContainerTiming>
 **/
-@:native("PerformanceContainerTiming") extern class PerformanceContainerTiming extends PerformanceEntry {
+@:native("PerformanceContainerTiming") @:require(js_experimental_api, "PerformanceContainerTiming is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PerformanceContainerTiming extends PerformanceEntry {
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceContainerTiming/identifier>
 	**/

@@ -51,41 +51,31 @@ jobs:
           - name: Haxe 5 preview
             haxe: 5.0.0-preview.1
             compat: 1
-          # std with js.lib.BigInt & co (HaxeFoundation/haxe#js/stdlib-cleanup)
-          - name: Haxe 5 js/stdlib-cleanup
-            haxe: branch:js/stdlib-cleanup
+          # std with js.lib.BigInt & co: the change is std-only, so a nightly
+          # compiler with the std of HaxeFoundation/haxe#js/stdlib-cleanup
+          - name: Haxe 5 js/stdlib-cleanup std
+            haxe: latest
+            std-branch: js/stdlib-cleanup
             compat: 0
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Resolve Haxe version
-        id: haxe
-        run: |
-          version='${{ matrix.haxe }}'
-          case "$version" in branch:*)
-            # build.haxe.org names branch builds haxe_<date>_<branch, / as _>_<short sha>
-            branch=${version#branch:}
-            name=$(echo "$branch" | tr / _)
-            builds=$(curl -sSL https://build.haxe.org/builds/haxe/linux64/ \
-              | grep -oE "haxe_[0-9]{4}-[0-9]{2}-[0-9]{2}_${name}_[0-9a-f]+\.tar\.gz" | sort -u)
-            head=$(curl -sSL "https://api.github.com/repos/HaxeFoundation/haxe/commits/$branch" | jq -r '.sha[0:7]')
-            build=$(echo "$builds" | grep "_${head}\.tar\.gz$" | tail -1)
-            if [ -z "$build" ]; then
-              build=$(echo "$builds" | tail -1)
-              [ -n "$build" ] && echo "::warning::No build of $branch at $head yet, using $build"
-            fi
-            if [ -z "$build" ]; then
-              echo "::error::No build of $branch on build.haxe.org yet"
-              exit 1
-            fi
-            version=$(echo "$build" | sed -E 's/^haxe_//; s/\.tar\.gz$//')
-          esac
-          echo "version=$version" >> "$GITHUB_OUTPUT"
       - uses: HaxeFoundation/setup-haxe@v2
         with:
-          haxe-version: ${{ steps.haxe.outputs.version }}
+          haxe-version: ${{ matrix.haxe }}
+      - name: Check out std from ${{ matrix.std-branch }}
+        if: matrix.std-branch
+        uses: actions/checkout@v4
+        with:
+          repository: HaxeFoundation/haxe
+          ref: ${{ matrix.std-branch }}
+          path: haxe-src
+          sparse-checkout: std
+      - name: Use std from ${{ matrix.std-branch }}
+        if: matrix.std-branch
+        run: echo "HAXE_STD_PATH=$GITHUB_WORKSPACE/haxe-src/std" >> "$GITHUB_ENV"
       - run: haxe --version
       - name: Typecheck all libraries
         run: ./check.sh

@@ -25,15 +25,13 @@
 package js.web.storage;
 
 /**
+	TODO async_iterable handling
 	Unhandled extended attribute SecureContext
 	Unhandled extended attribute Serializable
 **/
 @:native("FileSystemDirectoryHandle") extern class FileSystemDirectoryHandle extends FileSystemHandle {
-	function entries():Iterator<js.lib.Tuple<String, FileSystemHandle>>;
 	function getDirectoryHandle(name:String, ?options:FileSystemGetDirectoryOptions):js.lib.Promise<FileSystemDirectoryHandle>;
 	function getFileHandle(name:String, ?options:FileSystemGetFileOptions):js.lib.Promise<FileSystemFileHandle>;
-	function keys():Iterator<String>;
 	function removeEntry(name:String, ?options:FileSystemRemoveOptions):js.lib.Promise<Void>;
 	function resolve(possibleDescendant:FileSystemHandle):js.lib.Promise<Null<Array<String>>>;
-	function values():Iterator<FileSystemHandle>;
 }

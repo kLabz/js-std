@@ -42,6 +42,4 @@ package js.web.xr;
 	var colorTextureHeight(default, null) : Int;
 	var depthStencilTextureWidth(default, null) : Null<Int>;
 	var depthStencilTextureHeight(default, null) : Null<Int>;
-	var motionVectorTextureWidth(default, null) : Null<Int>;
-	var motionVectorTextureHeight(default, null) : Null<Int>;
 }

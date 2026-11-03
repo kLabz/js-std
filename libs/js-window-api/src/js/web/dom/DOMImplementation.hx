@@ -32,7 +32,7 @@ package js.web.dom;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function createDocumentType(qualifiedName:String, publicId:String, systemId:String):DocumentType;
+	function createDocumentType(name:String, publicId:String, systemId:String):DocumentType;
 	/**
 		Unhandled extended attribute NewObject
 	**/

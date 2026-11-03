@@ -28,9 +28,9 @@ package js.web.wasm;
 	Unhandled extended attribute LegacyNamespace
 **/
 @:native("Table") extern class Table {
-	var length(default, null) : Int;
+	var length(default, null) : AddressValue;
 	function new(descriptor:TableDescriptor, ?value:Any):Void;
-	function get(index:Int):Any;
-	function grow(delta:Int, ?value:Any):Int;
-	function set(index:Int, ?value:Any):Void;
+	function get(index:AddressValue):Any;
+	function grow(delta:AddressValue, ?value:Any):AddressValue;
+	function set(index:AddressValue, ?value:Any):Void;
 }

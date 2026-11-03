@@ -26,5 +26,7 @@ package js.web.media;
 
 @:native("MediaStreamTrackProcessor") extern class MediaStreamTrackProcessor {
 	var readable(default, null) : js.web.net.ReadableStream;
+	var discardedFrames(default, null) : Float;
+	var totalFrames(default, null) : Float;
 	function new(init:MediaStreamTrackProcessorInit):Void;
 }

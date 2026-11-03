@@ -102,6 +102,9 @@ class Main {
 				f.parse().then(res -> {
 					handleFile(f, res);
 					next();
+				}).catchError(e -> {
+					Sys.println('ERROR while handling ${f.filename}: ${Std.string(e)}');
+					Sys.exit(1);
 				});
 			}
 			next();
@@ -240,6 +243,8 @@ class Main {
 			var ct = switch (t.idlType) {
 				case []: macro :Dynamic;
 				case types:
+					// idlType is a live view on the AST: popping it would corrupt shared (mixin) members
+					var types = types.copy();
 					var current = convertType(ctx, types.pop());
 					while (types.length > 0) {
 						var t = convertType(ctx, types.pop());
@@ -284,6 +289,10 @@ class Main {
 						var inner = convertType(ctx, t.idlType.get);
 						// if (inner == null) inner = macro :Dynamic;
 						macro :Array<$inner>;
+
+					case IDLAsyncSequenceTypeDescription:
+						// TODO: needs an AsyncIterable type in std
+						macro :Dynamic;
 
 					case _: throw 'Unexpected generic ${t.generic}.';
 				}
@@ -774,6 +783,7 @@ class Main {
 		if (scope.length > 0) {
 			var desc = switch (m.type) {
 				case IDLIterableDeclarationMemberType: 'iterable';
+				case IDLAsyncIterableDeclarationMemberType: 'async_iterable';
 				case IDLConstantMemberType: 'const ${m.name}';
 				case IDLConstructorMemberType: 'constructor';
 				case IDLAttributeMemberType:
@@ -817,6 +827,11 @@ class Main {
 				// TODO
 				trace('TODO Maplike for ${ctx.t}', m);
 				ctx.typeDoc.push('TODO MaplikeDeclaration handling');
+
+			case IDLAsyncIterableDeclarationMemberType:
+				// TODO
+				trace('TODO async_iterable for ${ctx.t}', m);
+				ctx.typeDoc.push('TODO async_iterable handling');
 
 			case IDLIterableDeclarationMemberType:
 				var newFields:Array<Field> = [];
@@ -914,7 +929,7 @@ class Main {
 
 			case IDLOperationMemberType if (m.name.or("") == "" && m.special == "getter"):
 				// TODO: handle a.optional/a.variadic
-				var tkey = convertType(ctx, m.arguments.pop().idlType);
+				var tkey = convertType(ctx, m.arguments[m.arguments.length - 1].idlType);
 				var tvalue = convertType(ctx, m.idlType);
 				switch (tkey) {
 					case TPath({pack: [], name: "Int"}):
@@ -1028,6 +1043,7 @@ class Main {
 				case IDLSetlikeDeclarationMemberType: null;
 				case IDLMaplikeDeclarationMemberType: null;
 				case IDLIterableDeclarationMemberType: null;
+				case IDLAsyncIterableDeclarationMemberType: null;
 
 				case IDLConstructorMemberType: "new";
 				case IDLConstantMemberType: m.name;

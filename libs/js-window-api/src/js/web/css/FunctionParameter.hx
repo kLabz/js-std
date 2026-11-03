@@ -28,5 +28,5 @@ typedef FunctionParameter = {
 	var name : String;
 	var type : String;
 	@:optional
-	var defaultValue : Null<String>;
+	var defaultValue : String;
 };

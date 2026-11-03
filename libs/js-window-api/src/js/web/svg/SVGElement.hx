@@ -384,6 +384,10 @@ package js.web.svg;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
+	var oninstallresult : js.web.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
 	var onpointerover : js.web.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -455,30 +459,22 @@ package js.web.svg;
 	**/
 	var onbeforexrselect : js.web.html.EventHandler;
 	/**
-		From interface mixin SVGElementInstance
-		Unhandled extended attribute SameObject
-	**/
-	var correspondingElement(default, null) : Null<SVGElement>;
-	/**
-		From interface mixin SVGElementInstance
-		Unhandled extended attribute SameObject
-	**/
-	var correspondingUseElement(default, null) : Null<SVGUseElement>;
-	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 		Unhandled extended attribute SameObject
 	**/
 	var dataset(default, null) : js.web.html.DOMStringMap;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	var nonce : String;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
+		Unhandled extended attribute Reflect
 	**/
 	var autofocus : Bool;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
+		Unhandled extended attribute ReflectSetter
 	**/
 	var tabIndex : Int;
 	/**
@@ -491,13 +487,13 @@ package js.web.svg;
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute PutForwards
 	**/
-	var style(default, null) : js.web.css.CSSStyleDeclaration;
+	var style(default, null) : js.web.css.CSSStyleProperties;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	function blur():Void;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	function focus(?options:js.web.html.FocusOptions):Void;
 }

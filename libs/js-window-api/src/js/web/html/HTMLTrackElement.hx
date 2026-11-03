@@ -26,9 +26,21 @@ package js.web.html;
 
 @:native("HTMLTrackElement") extern class HTMLTrackElement extends HTMLElement {
 	var kind : String;
+	/**
+		Unhandled extended attribute ReflectURL
+	**/
 	var src : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var srclang : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var label : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	@:native("default")
 	var default_ : Bool;
 	static inline var NONE : Int = 0;

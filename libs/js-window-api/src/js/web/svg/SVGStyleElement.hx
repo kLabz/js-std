@@ -25,9 +25,19 @@
 package js.web.svg;
 
 @:native("SVGStyleElement") extern class SVGStyleElement extends SVGElement {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var type : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var media : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var title : String;
+	var disabled : Bool;
 	/**
 		From interface mixin LinkStyle
 	**/

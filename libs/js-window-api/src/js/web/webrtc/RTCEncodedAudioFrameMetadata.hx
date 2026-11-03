@@ -24,23 +24,9 @@
 
 package js.web.webrtc;
 
-typedef RTCEncodedAudioFrameMetadata = {
-	@:optional
-	var synchronizationSource : Int;
-	@:optional
-	var payloadType : Int;
-	@:optional
-	var contributingSources : Array<Int>;
+typedef RTCEncodedAudioFrameMetadata = RTCEncodedFrameMetadata & {
 	@:optional
 	var sequenceNumber : Int;
 	@:optional
-	var rtpTimestamp : Int;
-	@:optional
-	var receiveTime : js.web.perf.DOMHighResTimeStamp;
-	@:optional
-	var captureTime : js.web.perf.DOMHighResTimeStamp;
-	@:optional
-	var senderCaptureTimeOffset : js.web.perf.DOMHighResTimeStamp;
-	@:optional
-	var mimeType : String;
+	var audioLevel : Float;
 };

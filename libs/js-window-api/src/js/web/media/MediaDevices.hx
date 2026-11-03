@@ -30,6 +30,10 @@ package js.web.media;
 @:native("MediaDevices") extern class MediaDevices extends js.web.dom.EventTarget {
 	var ondevicechange : js.web.html.EventHandler;
 	/**
+		From partial interface in mediacapture-extensions.idl
+	**/
+	var defaultSemantics(default, null) : GetUserMediaSemantics;
+	/**
 		From partial interface in mediacapture-handle-actions.idl
 	**/
 	var oncaptureaction : js.web.html.EventHandler;

@@ -28,7 +28,6 @@ package js.web.html;
 	Unhandled extended attribute Transferable
 **/
 @:native("MessagePort") extern class MessagePort extends js.web.dom.EventTarget {
-	var onclose : EventHandler;
 	/**
 		From interface mixin MessageEventTarget
 	**/

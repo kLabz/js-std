@@ -28,12 +28,14 @@ package js.web.media;
 	Unhandled extended attribute SecureContext
 **/
 @:native("SpeechRecognition") extern class SpeechRecognition extends js.web.dom.EventTarget {
+	var grammars : SpeechGrammarList;
 	var lang : String;
 	var continuous : Bool;
 	var interimResults : Bool;
+	var unspokenPunctuation : Bool;
 	var maxAlternatives : Int;
-	var mode : SpeechRecognitionMode;
-	var phrases : SpeechRecognitionPhraseList;
+	var processLocally : Bool;
+	var phrases : Array<SpeechRecognitionPhrase>;
 	var onaudiostart : js.web.html.EventHandler;
 	var onsoundstart : js.web.html.EventHandler;
 	var onspeechstart : js.web.html.EventHandler;
@@ -47,8 +49,8 @@ package js.web.media;
 	var onend : js.web.html.EventHandler;
 	function new():Void;
 	function abort():Void;
-	function availableOnDevice(lang:String):js.lib.Promise<AvailabilityStatus>;
-	function installOnDevice(lang:String):js.lib.Promise<Bool>;
+	function available(options:SpeechRecognitionOptions):js.lib.Promise<SpeechRecognitionAvailabilityStatus>;
+	function install(options:SpeechRecognitionOptions):js.lib.Promise<Bool>;
 	overload function start():Void;
 	overload function start(audioTrack:MediaStreamTrack):Void;
 	function stop():Void;

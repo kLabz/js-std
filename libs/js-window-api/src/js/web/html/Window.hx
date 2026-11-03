@@ -49,6 +49,9 @@ package js.web.html;
 	**/
 	var location(default, null) : Location;
 	var history(default, null) : History;
+	/**
+		Unhandled extended attribute Replaceable
+	**/
 	var navigation(default, null) : Navigation;
 	var customElements(default, null) : CustomElementRegistry;
 	/**
@@ -452,6 +455,10 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
+	var oninstallresult : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
 	var onpointerover : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -657,6 +664,10 @@ package js.web.html;
 	**/
 	var localStorage(default, null) : Storage;
 	/**
+		From interface mixin PushManagerAttribute
+	**/
+	var pushManager(default, null) : js.web.sw.PushManager;
+	/**
 		From partial interface in anonymous-iframe.idl
 	**/
 	var credentialless(default, null) : Bool;
@@ -669,10 +680,14 @@ package js.web.html;
 	**/
 	var onorientationchange : EventHandler;
 	/**
-		From partial interface in cookie-store.idl
+		From partial interface in cookiestore.idl
 		Unhandled extended attribute SameObject
 	**/
 	var cookieStore(default, null) : js.web.storage.CookieStore;
+	/**
+		From partial interface in crash-reporting.idl
+	**/
+	var crashReport(default, null) : js.web.perf.CrashReportContext;
 	/**
 		From partial interface in css-viewport.idl
 		Unhandled extended attribute SameObject
@@ -805,11 +820,6 @@ package js.web.html;
 	**/
 	var portalHost(default, null) : Null<PortalHost>;
 	/**
-		From partial interface in shared-storage.idl
-		Unhandled extended attribute SecureContext
-	**/
-	var sharedStorage(default, null) : Null<js.web.storage.SharedStorage>;
-	/**
 		From partial interface in speech-api.idl
 		Unhandled extended attribute SameObject
 	**/
@@ -864,12 +874,18 @@ package js.web.html;
 		Unhandled extended attribute NewObject
 	**/
 	function fetch(input:js.web.net.RequestInfo, ?init:js.web.net.RequestInit):js.lib.Promise<js.web.net.Response>;
+	/**
+		From partial interface in fetch.idl
+		Unhandled extended attribute NewObject
+		Unhandled extended attribute SecureContext
+	**/
+	function fetchLater(input:js.web.net.RequestInfo, ?init:js.web.net.DeferredRequestInit):js.web.net.FetchLaterResult;
 	function focus():Void;
 	/**
 		From partial interface in cssom.idl
 		Unhandled extended attribute NewObject
 	**/
-	function getComputedStyle(elt:js.web.dom.Element, ?pseudoElt:Null<String>):js.web.css.CSSStyleDeclaration;
+	function getComputedStyle(elt:js.web.dom.Element, ?pseudoElt:Null<String>):js.web.css.CSSStyleProperties;
 	/**
 		From partial interface in digital-goods.idl
 		Unhandled extended attribute SecureContext
@@ -889,6 +905,16 @@ package js.web.html;
 		Unhandled extended attribute NewObject
 	**/
 	function matchMedia(query:String):js.web.css.MediaQueryList;
+	/**
+		From partial interface in window-management.idl
+		Unhandled extended attribute SecureContext
+	**/
+	function maximize():js.lib.Promise<Void>;
+	/**
+		From partial interface in window-management.idl
+		Unhandled extended attribute SecureContext
+	**/
+	function minimize():js.lib.Promise<Void>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -931,6 +957,10 @@ package js.web.html;
 	**/
 	function requestIdleCallback(callback:IdleRequestCallback, ?options:IdleRequestOptions):Int;
 	/**
+		From partial interface in css-sizing-4.idl
+	**/
+	function requestResize():Void;
+	/**
 		From partial interface in cssom-view.idl
 	**/
 	function resizeBy(x:Int, y:Int):Void;
@@ -939,33 +969,43 @@ package js.web.html;
 	**/
 	function resizeTo(width:Int, height:Int):Void;
 	/**
-		From partial interface in cssom-view.idl
+		From partial interface in window-management.idl
+		Unhandled extended attribute SecureContext
 	**/
-	overload function scroll(?options:js.web.css.ScrollToOptions):Void;
+	function restore():js.lib.Promise<Void>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scroll(x:Float, y:Float):Void;
+	overload function scroll(?options:js.web.css.ScrollToOptions):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scrollBy(?options:js.web.css.ScrollToOptions):Void;
+	overload function scroll(x:Float, y:Float):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scrollBy(x:Float, y:Float):Void;
+	overload function scrollBy(?options:js.web.css.ScrollToOptions):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scrollTo(?options:js.web.css.ScrollToOptions):Void;
+	overload function scrollBy(x:Float, y:Float):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scrollTo(x:Float, y:Float):Void;
+	overload function scrollTo(?options:js.web.css.ScrollToOptions):js.lib.Promise<js.web.css.ScrollResult>;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	overload function scrollTo(x:Float, y:Float):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/
 	function setInterval(handler:TimerHandler, ?timeout:Int = 0, arguments:haxe.Rest<haxe.Rest<Any>>):Int;
+	/**
+		From partial interface in window-management.idl
+		Unhandled extended attribute SecureContext
+	**/
+	function setResizable(resizable:Bool):js.lib.Promise<Void>;
 	/**
 		From interface mixin WindowOrWorkerGlobalScope
 	**/

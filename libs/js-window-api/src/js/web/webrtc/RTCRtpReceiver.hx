@@ -31,7 +31,7 @@ package js.web.webrtc;
 	/**
 		From partial interface in webrtc-encoded-transform.idl
 	**/
-	var transform : Null<RTCRtpTransform>;
+	var transform : Null<RTCRtpReceiverTransform>;
 	function getCapabilities(kind:String):Null<RTCRtpCapabilities>;
 	function getContributingSources():Array<RTCRtpContributingSource>;
 	function getParameters():RTCRtpReceiveParameters;

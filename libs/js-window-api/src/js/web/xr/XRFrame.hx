@@ -39,6 +39,11 @@ package js.web.xr;
 	**/
 	var trackedAnchors(default, null) : XRAnchorSet;
 	/**
+		From partial interface in body-tracking.idl
+		Unhandled extended attribute SameObject
+	**/
+	var body(default, null) : Null<XRBody>;
+	/**
 		From partial interface in real-world-meshing.idl
 	**/
 	var detectedMeshes(default, null) : XRMeshSet;

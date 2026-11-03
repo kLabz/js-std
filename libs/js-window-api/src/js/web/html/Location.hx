@@ -63,7 +63,6 @@ package js.web.html;
 	var hash : String;
 	/**
 		Unhandled extended attribute LegacyUnforgeable
-		Unhandled extended attribute SameObject
 	**/
 	var ancestorOrigins(default, null) : DOMStringList;
 	/**

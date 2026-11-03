@@ -53,7 +53,7 @@ package js.web.net;
 	**/
 	var bodyUsed(default, null) : Bool;
 	/**
-		From partial interface in private-network-access.idl
+		From partial interface in local-network-access.idl
 	**/
 	var targetAddressSpace(default, null) : IPAddressSpace;
 	function new(input:RequestInfo, ?init:RequestInit):Void;
@@ -91,4 +91,9 @@ package js.web.net;
 		Unhandled extended attribute NewObject
 	**/
 	function text():js.lib.Promise<String>;
+	/**
+		From interface mixin Body
+		Unhandled extended attribute NewObject
+	**/
+	function textStream():ReadableStream;
 }

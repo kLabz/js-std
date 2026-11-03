@@ -28,14 +28,42 @@ package js.web.html;
 	Unhandled extended attribute LegacyFactoryFunction
 **/
 @:native("HTMLImageElement") extern class HTMLImageElement extends HTMLElement {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var alt : String;
+	/**
+		Unhandled extended attribute ReflectURL
+	**/
 	var src : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var srcset : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var sizes : String;
 	var crossOrigin : Null<String>;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var useMap : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var isMap : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
+	var controls : Bool;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var width : Int;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var height : Int;
 	var naturalWidth(default, null) : Int;
 	var naturalHeight(default, null) : Int;
@@ -46,15 +74,6 @@ package js.web.html;
 	var loading : String;
 	var fetchPriority : String;
 	/**
-		From interface mixin HTMLAttributionSrcElementUtils
-	**/
-	var attributionSrc : String;
-	/**
-		From interface mixin HTMLSharedStorageWritableElementUtils
-		Unhandled extended attribute SecureContext
-	**/
-	var sharedStorageWritable : Bool;
-	/**
 		From partial interface in cssom-view.idl
 	**/
 	var x(default, null) : Int;
@@ -64,30 +83,37 @@ package js.web.html;
 	var y(default, null) : Int;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var name : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute ReflectURL
 	**/
 	var lowsrc : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var hspace : Int;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var vspace : Int;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute ReflectURL
 	**/
 	var longDesc : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var border : String;
 	function decode():js.lib.Promise<Void>;

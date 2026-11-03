@@ -25,10 +25,9 @@
 package js.web.wasm;
 
 typedef MemoryDescriptor = {
-	var initial : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
+	var initial : AddressValue;
 	@:optional
-	var maximum : Int;
+	var maximum : AddressValue;
+	@:optional
+	var address : AddressType;
 };

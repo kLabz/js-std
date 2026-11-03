@@ -33,6 +33,10 @@ package js.web.media;
 	var sinkId(default, null) : haxe.extern.EitherType<String, AudioSinkInfo>;
 	var onsinkchange : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
+	/**
+		Unhandled extended attribute SameObject
+	**/
+	var playbackStats(default, null) : AudioPlaybackStats;
 	function new(?contextOptions:AudioContextOptions):Void;
 	function close():js.lib.Promise<Void>;
 	function createMediaElementSource(mediaElement:js.web.html.HTMLMediaElement):MediaElementAudioSourceNode;

@@ -31,7 +31,7 @@ package js.web.storage;
 	var locks(default, null) : LockManager;
 	var caches(default, null) : js.web.sw.CacheStorage;
 	function BroadcastChannel(name:String):js.web.html.BroadcastChannel;
-	function SharedWorker(scriptURL:String, ?options:haxe.extern.EitherType<String, SharedWorkerOptions>):js.web.html.SharedWorker;
+	function SharedWorker(scriptURL:String, ?options:haxe.extern.EitherType<String, js.web.html.SharedWorkerOptions>):js.web.html.SharedWorker;
 	function createObjectURL(obj:haxe.extern.EitherType<js.web.net.Blob, js.web.media.MediaSource>):String;
 	function estimate():js.lib.Promise<StorageEstimate>;
 	function getDirectory():js.lib.Promise<FileSystemDirectoryHandle>;

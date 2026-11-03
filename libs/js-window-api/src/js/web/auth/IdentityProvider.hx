@@ -30,5 +30,5 @@ package js.web.auth;
 @:native("IdentityProvider") extern class IdentityProvider {
 	function close():Void;
 	function getUserInfo(config:IdentityProviderConfig):js.lib.Promise<Array<IdentityUserInfo>>;
-	function resolve(token:String, ?options:IdentityResolveOptions):Void;
+	function resolve(token:Any, ?options:IdentityResolveOptions):js.lib.Promise<Void>;
 }

@@ -33,22 +33,27 @@ package js.web.html;
 	var cells(default, null) : js.web.dom.HTMLCollection;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var ch : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var chOff : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var vAlign : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var bgColor : String;
 	function deleteCell(index:Int):Void;

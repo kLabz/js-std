@@ -30,7 +30,7 @@ package js.web.wasm;
 @:native("Memory") extern class Memory {
 	var buffer(default, null) : js.lib.ArrayBuffer;
 	function new(descriptor:MemoryDescriptor):Void;
-	function grow(delta:Int):Int;
+	function grow(delta:AddressValue):AddressValue;
 	function toFixedLengthBuffer():js.lib.ArrayBuffer;
 	function toResizableBuffer():js.lib.ArrayBuffer;
 }

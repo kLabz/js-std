@@ -31,6 +31,8 @@ package js.web.perf;
 	var entryType(default, null) : String;
 	var renderStart(default, null) : DOMHighResTimeStamp;
 	var styleAndLayoutStart(default, null) : DOMHighResTimeStamp;
+	var styleDuration(default, null) : DOMHighResTimeStamp;
+	var layoutDuration(default, null) : DOMHighResTimeStamp;
 	var blockingDuration(default, null) : DOMHighResTimeStamp;
 	var firstUIEventTimestamp(default, null) : DOMHighResTimeStamp;
 	/**

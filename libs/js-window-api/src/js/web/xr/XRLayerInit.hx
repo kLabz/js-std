@@ -27,6 +27,8 @@ package js.web.xr;
 typedef XRLayerInit = {
 	var space : XRSpace;
 	@:optional
+	var textureType : XRTextureType;
+	@:optional
 	var colorFormat : js.web.webgl.GLenum;
 	@:optional
 	var depthFormat : Null<js.web.webgl.GLenum>;

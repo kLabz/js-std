@@ -25,11 +25,22 @@
 package js.web.html;
 
 @:native("HTMLOListElement") extern class HTMLOListElement extends HTMLElement {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var reversed : Bool;
+	/**
+		Unhandled extended attribute Reflect
+		Unhandled extended attribute ReflectDefault
+	**/
 	var start : Int;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var type : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var compact : Bool;
 }

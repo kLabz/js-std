@@ -29,6 +29,6 @@ package js.web.webrtc;
 	var writable(default, null) : js.web.net.WritableStream;
 	var onkeyframerequest : js.web.html.EventHandler;
 	var options(default, null) : Any;
-	function generateKeyFrame(?rid:String):js.lib.Promise<Float>;
+	function generateKeyFrame(?rid:String):js.lib.Promise<Void>;
 	function sendKeyFrameRequest():js.lib.Promise<Void>;
 }

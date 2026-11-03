@@ -26,9 +26,6 @@ package js.web.media;
 
 typedef EncodedVideoChunkInit = {
 	var type : EncodedVideoChunkType;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	var timestamp : Float;
 	/**
 		Unhandled extended attribute EnforceRange

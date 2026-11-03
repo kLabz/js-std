@@ -26,7 +26,7 @@ package js.web.webrtc;
 
 typedef SFrameTransformErrorEventInit = js.web.dom.EventInit & {
 	var errorType : SFrameTransformErrorEventType;
-	var frame : Any;
+	var frame : haxe.extern.EitherType<RTCEncodedVideoFrame, RTCEncodedAudioFrame>;
 	@:optional
 	var keyID : Null<CryptoKeyID>;
 };

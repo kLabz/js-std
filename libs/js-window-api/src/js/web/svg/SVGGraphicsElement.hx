@@ -39,7 +39,7 @@ package js.web.svg;
 		Unhandled extended attribute SameObject
 	**/
 	var systemLanguage(default, null) : SVGStringList;
-	function getBBox(?options:SVGBoundingBoxOptions):js.web.dom.DOMRect;
-	function getCTM():Null<js.web.dom.DOMMatrix>;
-	function getScreenCTM():Null<js.web.dom.DOMMatrix>;
+	function getBBox(?options:SVGBoundingBoxOptions):SVGRect;
+	function getCTM():Null<SVGMatrix>;
+	function getScreenCTM():Null<SVGMatrix>;
 }

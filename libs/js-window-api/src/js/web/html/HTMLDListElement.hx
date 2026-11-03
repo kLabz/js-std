@@ -27,6 +27,7 @@ package js.web.html;
 @:native("HTMLDListElement") extern class HTMLDListElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var compact : Bool;
 }

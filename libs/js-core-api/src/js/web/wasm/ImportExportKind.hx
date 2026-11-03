@@ -29,4 +29,5 @@ enum abstract ImportExportKind(String) {
 	var TABLE = "table";
 	var MEMORY = "memory";
 	var GLOBAL = "global";
+	var TAG = "tag";
 }

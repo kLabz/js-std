@@ -39,6 +39,15 @@ package js.web.media;
 	**/
 	var oncapturehandlechange : js.web.html.EventHandler;
 	/**
+		From partial interface in mediacapture-extensions.idl
+		Unhandled extended attribute SameObject
+	**/
+	var stats(default, null) : Null<haxe.extern.EitherType<MediaStreamTrackAudioStats, MediaStreamTrackVideoStats>>;
+	/**
+		From partial interface in mediacapture-extensions.idl
+	**/
+	var onconfigurationchange : js.web.html.EventHandler;
+	/**
 		From partial interface in mst-content-hint.idl
 	**/
 	var contentHint : String;

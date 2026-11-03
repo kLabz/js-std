@@ -27,6 +27,7 @@ package js.web.html;
 @:native("HTMLHeadingElement") extern class HTMLHeadingElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var align : String;
 }

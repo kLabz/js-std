@@ -27,5 +27,6 @@ package js.web.html;
 @:native("ToggleEvent") extern class ToggleEvent extends js.web.dom.Event {
 	var oldState(default, null) : String;
 	var newState(default, null) : String;
+	var source(default, null) : Null<js.web.dom.Element>;
 	function new(type:String, ?eventInitDict:ToggleEventInit):Void;
 }

@@ -28,5 +28,5 @@ package js.web.css;
 	var subject(default, null) : js.web.dom.Element;
 	var startOffset(default, null) : CSSNumericValue;
 	var endOffset(default, null) : CSSNumericValue;
-	function new(?options:ViewTimelineOptions):Void;
+	function new(options:ViewTimelineOptions):Void;
 }

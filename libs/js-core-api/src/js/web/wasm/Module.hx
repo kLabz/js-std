@@ -28,7 +28,7 @@ package js.web.wasm;
 	Unhandled extended attribute LegacyNamespace
 **/
 @:native("Module") extern class Module {
-	function new(bytes:js.web.dom.BufferSource):Void;
+	function new(bytes:js.web.dom.AllowSharedBufferSource, ?options:WebAssemblyCompileOptions):Void;
 	function customSections(moduleObject:Module, sectionName:String):Array<js.lib.ArrayBuffer>;
 	function exports(moduleObject:Module):Array<ModuleExportDescriptor>;
 	function imports(moduleObject:Module):Array<ModuleImportDescriptor>;

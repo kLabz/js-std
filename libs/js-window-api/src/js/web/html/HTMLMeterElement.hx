@@ -25,11 +25,29 @@
 package js.web.html;
 
 @:native("HTMLMeterElement") extern class HTMLMeterElement extends HTMLElement {
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var value : Float;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var min : Float;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var max : Float;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var low : Float;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var high : Float;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var optimum : Float;
 	var labels(default, null) : js.web.dom.NodeList;
 }

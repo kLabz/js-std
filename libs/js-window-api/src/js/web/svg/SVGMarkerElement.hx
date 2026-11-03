@@ -31,6 +31,7 @@ package js.web.svg;
 	static inline var SVG_MARKER_ORIENT_UNKNOWN : Int = 0;
 	static inline var SVG_MARKER_ORIENT_AUTO : Int = 1;
 	static inline var SVG_MARKER_ORIENT_ANGLE : Int = 2;
+	static inline var SVG_MARKER_ORIENT_AUTO_START_REVERSE : Int = 3;
 	/**
 		Unhandled extended attribute SameObject
 	**/

@@ -28,11 +28,14 @@ package js.web.ml;
 	Unhandled extended attribute SecureContext
 **/
 @:native("MLContext") extern class MLContext {
+	var accelerated(default, null) : Bool;
 	var lost(default, null) : js.lib.Promise<MLContextLostInfo>;
 	function createConstantTensor(descriptor:MLOperandDescriptor, inputData:js.web.dom.AllowSharedBufferSource):js.lib.Promise<MLTensor>;
+	function createExportableTensor(descriptor:MLTensorDescriptor, gpuDevice:js.web.webgpu.GPUDevice):js.lib.Promise<MLTensor>;
 	function createTensor(descriptor:MLTensorDescriptor):js.lib.Promise<MLTensor>;
 	function destroy():Void;
 	function dispatch(graph:MLGraph, inputs:MLNamedTensors, outputs:MLNamedTensors):Void;
+	function exportToGPU(tensor:MLTensor):js.web.webgpu.GPUBuffer;
 	function opSupportLimits():MLOpSupportLimits;
 	overload function readTensor(tensor:MLTensor):js.lib.Promise<js.lib.ArrayBuffer>;
 	overload function readTensor(tensor:MLTensor, outputData:js.web.dom.AllowSharedBufferSource):js.lib.Promise<Void>;

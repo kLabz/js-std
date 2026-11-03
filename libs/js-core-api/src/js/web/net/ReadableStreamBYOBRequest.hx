@@ -25,7 +25,7 @@
 package js.web.net;
 
 @:native("ReadableStreamBYOBRequest") extern class ReadableStreamBYOBRequest {
-	var view(default, null) : Null<js.lib.ArrayBufferView>;
+	var view(default, null) : Null<js.lib.Uint8Array>;
 	function respond(bytesWritten:Float):Void;
 	function respondWithNewView(view:js.lib.ArrayBufferView):Void;
 }

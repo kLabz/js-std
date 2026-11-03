@@ -32,7 +32,7 @@ package js.web.svg;
 	/**
 		From interface mixin ElementCSSInlineStyle
 	**/
-	var style(default, null) : js.web.css.CSSStyleDeclaration;
+	var style(default, null) : js.web.css.CSSStyleProperties;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -384,6 +384,10 @@ package js.web.svg;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
+	var oninstallresult : js.web.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
 	var onpointerover : js.web.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -454,27 +458,27 @@ package js.web.svg;
 	**/
 	var onbeforexrselect : js.web.html.EventHandler;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	var dataset(default, null) : js.web.html.DOMStringMap;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	var nonce : String;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	var autofocus : Bool;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	var tabIndex : Int;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	function blur():Void;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	function focus(?options:js.web.html.FocusOptions):Void;
 }

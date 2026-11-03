@@ -45,7 +45,7 @@ package js.web.svg;
 	/**
 		Unhandled extended attribute SameObject
 	**/
-	var currentTranslate(default, null) : js.web.dom.DOMPointReadOnly;
+	var currentTranslate(default, null) : SVGPoint;
 	/**
 		From interface mixin SVGFitToViewBox
 		Unhandled extended attribute SameObject
@@ -144,15 +144,39 @@ package js.web.svg;
 		From partial interface in svg-animations.idl
 	**/
 	function animationsPaused():Bool;
-	function checkEnclosure(element:SVGElement, rect:js.web.dom.DOMRectReadOnly):Bool;
-	function checkIntersection(element:SVGElement, rect:js.web.dom.DOMRectReadOnly):Bool;
+	function checkEnclosure(element:SVGElement, rect:SVGRect):Bool;
+	function checkIntersection(element:SVGElement, rect:SVGRect):Bool;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function createSVGAngle():SVGAngle;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function createSVGLength():SVGLength;
-	function createSVGMatrix():js.web.dom.DOMMatrix;
+	/**
+		Unhandled extended attribute NewObject
+	**/
+	function createSVGMatrix():SVGMatrix;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function createSVGNumber():SVGNumber;
-	function createSVGPoint():js.web.dom.DOMPoint;
-	function createSVGRect():js.web.dom.DOMRect;
+	/**
+		Unhandled extended attribute NewObject
+	**/
+	function createSVGPoint():SVGPoint;
+	/**
+		Unhandled extended attribute NewObject
+	**/
+	function createSVGRect():SVGRect;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function createSVGTransform():SVGTransform;
+	/**
+		Unhandled extended attribute NewObject
+	**/
 	function createSVGTransformFromMatrix(?matrix:js.web.dom.DOMMatrix2DInit):SVGTransform;
 	function deselectAll():Void;
 	function forceRedraw():Void;
@@ -160,9 +184,9 @@ package js.web.svg;
 		From partial interface in svg-animations.idl
 	**/
 	function getCurrentTime():Float;
-	function getElementById(elementId:String):js.web.dom.Element;
-	function getEnclosureList(rect:js.web.dom.DOMRectReadOnly, referenceElement:Null<SVGElement>):js.web.dom.NodeList;
-	function getIntersectionList(rect:js.web.dom.DOMRectReadOnly, referenceElement:Null<SVGElement>):js.web.dom.NodeList;
+	function getElementById(elementId:String):Null<js.web.dom.Element>;
+	function getEnclosureList(rect:SVGRect, referenceElement:Null<SVGElement>):js.web.dom.NodeList;
+	function getIntersectionList(rect:SVGRect, referenceElement:Null<SVGElement>):js.web.dom.NodeList;
 	/**
 		From partial interface in svg-animations.idl
 	**/

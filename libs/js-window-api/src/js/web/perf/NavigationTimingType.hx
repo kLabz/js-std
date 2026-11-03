@@ -28,5 +28,4 @@ enum abstract NavigationTimingType(String) {
 	var NAVIGATE = "navigate";
 	var RELOAD = "reload";
 	var BACK_FORWARD = "back_forward";
-	var PRERENDER = "prerender";
 }

@@ -24,10 +24,11 @@
 
 package js.web.css;
 
-@:native("CSSPseudoElement") extern class CSSPseudoElement extends js.web.dom.EventTarget {
+@:native("CSSPseudoElement") extern class CSSPseudoElement {
 	var type(default, null) : String;
 	var element(default, null) : js.web.dom.Element;
 	var parent(default, null) : haxe.extern.EitherType<js.web.dom.Element, CSSPseudoElement>;
+	var selectorText(default, null) : String;
 	/**
 		From interface mixin GeometryUtils
 	**/

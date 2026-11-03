@@ -24,6 +24,18 @@
 
 package js.web.html;
 
+/**
+	Unhandled extended attribute SecureContext
+**/
 @:native("HTMLModelElement") extern class HTMLModelElement extends HTMLElement {
-
+	var ready(default, null) : js.lib.Promise<HTMLModelElement>;
+	var boundingBoxCenter(default, null) : js.web.dom.DOMPointReadOnly;
+	var boundingBoxExtents(default, null) : js.web.dom.DOMPointReadOnly;
+	var entityTransform : js.web.dom.DOMMatrixReadOnly;
+	var environmentMap : String;
+	var environmentMapReady(default, null) : js.lib.Promise<Void>;
+	/**
+		Unhandled extended attribute Reflect
+	**/
+	var stageMode : String;
 }

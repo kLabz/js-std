@@ -27,5 +27,7 @@ package js.web.html;
 @:native("NavigationTransition") extern class NavigationTransition {
 	var navigationType(default, null) : NavigationType;
 	var from(default, null) : NavigationHistoryEntry;
+	var to(default, null) : NavigationDestination;
+	var committed(default, null) : js.lib.Promise<Void>;
 	var finished(default, null) : js.lib.Promise<Void>;
 }

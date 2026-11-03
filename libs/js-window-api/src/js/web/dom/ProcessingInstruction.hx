@@ -30,4 +30,12 @@ package js.web.dom;
 		From interface mixin LinkStyle
 	**/
 	var sheet(default, null) : Null<js.web.css.CSSStyleSheet>;
+	function new(target:String, ?data:String = ""):Void;
+	function getAttribute(name:String):Null<String>;
+	function getAttributeNames():Array<String>;
+	function hasAttribute(name:String):Bool;
+	function hasAttributes():Bool;
+	function removeAttribute(name:String):Void;
+	function setAttribute(name:String, value:String):Void;
+	function toggleAttribute(name:String, ?force:Bool):Bool;
 }

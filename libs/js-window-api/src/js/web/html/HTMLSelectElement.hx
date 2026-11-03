@@ -28,12 +28,31 @@ package js.web.html;
 	TODO special=setter (index:Int, option:Null<HTMLOptionElement>) -> Void
 **/
 @:native("HTMLSelectElement") extern class HTMLSelectElement extends HTMLElement {
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var autocomplete : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var multiple : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var name : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var required : Bool;
+	/**
+		Unhandled extended attribute Reflect
+		Unhandled extended attribute ReflectDefault
+	**/
 	var size : Int;
 	var type(default, null) : String;
 	/**

@@ -26,5 +26,7 @@ package js.web.canvas;
 
 enum abstract PredefinedColorSpace(String) {
 	var SRGB = "srgb";
+	var SRGB_LINEAR = "srgb-linear";
 	var DISPLAY_P3 = "display-p3";
+	var DISPLAY_P3_LINEAR = "display-p3-linear";
 }

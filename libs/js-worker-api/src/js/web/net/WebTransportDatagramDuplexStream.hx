@@ -32,7 +32,7 @@ package js.web.net;
 	var maxDatagramSize(default, null) : Int;
 	var incomingMaxAge : Null<Float>;
 	var outgoingMaxAge : Null<Float>;
-	var incomingHighWaterMark : Float;
-	var outgoingHighWaterMark : Float;
+	var incomingMaxBufferedDatagrams : Int;
+	var outgoingMaxBufferedDatagrams : Int;
 	function createWritable(?options:WebTransportSendOptions):WebTransportDatagramsWritable;
 }

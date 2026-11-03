@@ -78,6 +78,10 @@ package js.web.webrtc;
 		From partial interface in webrtc.idl
 	**/
 	function addTransceiver(trackOrKind:haxe.extern.EitherType<js.web.media.MediaStreamTrack, String>, ?init:RTCRtpTransceiverInit):RTCRtpTransceiver;
+	/**
+		From partial interface in webrtc-diagnostic-logging.idl
+	**/
+	function cancelDiagnosticLogging():Void;
 	function close():Void;
 	overload function createAnswer(?options:RTCAnswerOptions):js.lib.Promise<RTCSessionDescriptionInit>;
 	overload function createAnswer(successCallback:RTCSessionDescriptionCallback, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
@@ -126,4 +130,12 @@ package js.web.webrtc;
 	overload function setLocalDescription(description:RTCLocalSessionDescriptionInit, successCallback:js.web.dom.VoidFunction, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
 	overload function setRemoteDescription(description:RTCSessionDescriptionInit):js.lib.Promise<Void>;
 	overload function setRemoteDescription(description:RTCSessionDescriptionInit, successCallback:js.web.dom.VoidFunction, failureCallback:RTCPeerConnectionErrorCallback):js.lib.Promise<Void>;
+	/**
+		From partial interface in webrtc-diagnostic-logging.idl
+	**/
+	function startDiagnosticLogging(?options:RTCDiagnosticLoggingOptions):String;
+	/**
+		From partial interface in webrtc-diagnostic-logging.idl
+	**/
+	function stopDiagnosticLogging():Void;
 }

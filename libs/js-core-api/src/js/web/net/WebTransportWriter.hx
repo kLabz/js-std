@@ -29,4 +29,5 @@ package js.web.net;
 **/
 @:native("WebTransportWriter") extern class WebTransportWriter extends WritableStreamDefaultWriter {
 	function atomicWrite(?chunk:Any):js.lib.Promise<Void>;
+	function commit():Void;
 }

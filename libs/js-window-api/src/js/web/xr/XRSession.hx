@@ -91,6 +91,10 @@ package js.web.xr;
 		From partial interface in webxr-lighting-estimation.idl
 	**/
 	var preferredReflectionFormat(default, null) : XRReflectionFormat;
+	/**
+		From partial interface in webxrlayers.idl
+	**/
+	var maxRenderLayers(default, null) : Int;
 	function cancelAnimationFrame(handle:Int):Void;
 	/**
 		From partial interface in anchors.idl

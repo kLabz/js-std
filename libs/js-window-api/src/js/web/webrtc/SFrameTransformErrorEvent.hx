@@ -27,6 +27,6 @@ package js.web.webrtc;
 @:native("SFrameTransformErrorEvent") extern class SFrameTransformErrorEvent extends js.web.dom.Event {
 	var errorType(default, null) : SFrameTransformErrorEventType;
 	var keyID(default, null) : Null<CryptoKeyID>;
-	var frame(default, null) : Any;
+	var frame(default, null) : haxe.extern.EitherType<RTCEncodedVideoFrame, RTCEncodedAudioFrame>;
 	function new(type:String, eventInitDict:SFrameTransformErrorEventInit):Void;
 }

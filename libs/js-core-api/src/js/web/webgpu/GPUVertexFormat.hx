@@ -66,4 +66,5 @@ enum abstract GPUVertexFormat(String) {
 	var SINT32X4 = "sint32x4";
 	var UNORM10_10_10_2 = "unorm10-10-10-2";
 	var UNORM8X4_BGRA = "unorm8x4-bgra";
+	var SNORM10_10_10_2 = "snorm10-10-10-2";
 }

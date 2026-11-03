@@ -25,6 +25,7 @@
 package js.web.net;
 
 enum abstract CompressionFormat(String) {
+	var BROTLI = "brotli";
 	var DEFLATE = "deflate";
 	var DEFLATE_RAW = "deflate-raw";
 	var GZIP = "gzip";

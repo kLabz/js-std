@@ -31,6 +31,9 @@ package js.web.svg;
 	static inline var TEXTPATH_SPACINGTYPE_UNKNOWN : Int = 0;
 	static inline var TEXTPATH_SPACINGTYPE_AUTO : Int = 1;
 	static inline var TEXTPATH_SPACINGTYPE_EXACT : Int = 2;
+	static inline var TEXTPATH_SIDETYPE_UNKNOWN : Int = 0;
+	static inline var TEXTPATH_SIDETYPE_LEFT : Int = 1;
+	static inline var TEXTPATH_SIDETYPE_RIGHT : Int = 2;
 	/**
 		Unhandled extended attribute SameObject
 	**/
@@ -43,6 +46,10 @@ package js.web.svg;
 		Unhandled extended attribute SameObject
 	**/
 	var spacing(default, null) : SVGAnimatedEnumeration;
+	/**
+		Unhandled extended attribute SameObject
+	**/
+	var side(default, null) : SVGAnimatedEnumeration;
 	/**
 		From interface mixin SVGURIReference
 	**/

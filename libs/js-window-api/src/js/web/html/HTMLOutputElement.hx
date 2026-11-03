@@ -28,9 +28,13 @@ package js.web.html;
 	/**
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute PutForwards
+		Unhandled extended attribute Reflect
 	**/
 	var htmlFor(default, null) : js.web.dom.DOMTokenList;
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var name : String;
 	var type(default, null) : String;
 	var defaultValue : String;

@@ -25,9 +25,6 @@
 package js.web.media;
 
 typedef AudioDataCopyToOptions = {
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	var planeIndex : Int;
 	/**
 		Unhandled extended attribute EnforceRange

@@ -26,7 +26,7 @@ package js.web.css;
 
 typedef CSSStyleSheetInit = {
 	@:optional
-	var baseURL : String;
+	var baseURL : Null<String>;
 	@:optional
 	var media : haxe.extern.EitherType<MediaList, String>;
 	@:optional

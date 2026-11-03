@@ -61,11 +61,15 @@ package js.web.storage;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function getAll(?query:Any, ?count:Int):IDBRequest;
+	function getAll(?queryOrOptions:Any, ?count:Int):IDBRequest;
 	/**
 		Unhandled extended attribute NewObject
 	**/
-	function getAllKeys(?query:Any, ?count:Int):IDBRequest;
+	function getAllKeys(?queryOrOptions:Any, ?count:Int):IDBRequest;
+	/**
+		Unhandled extended attribute NewObject
+	**/
+	function getAllRecords(?options:IDBGetAllOptions):IDBRequest;
 	/**
 		Unhandled extended attribute NewObject
 	**/

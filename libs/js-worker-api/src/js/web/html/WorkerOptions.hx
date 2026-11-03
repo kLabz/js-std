@@ -26,9 +26,9 @@ package js.web.html;
 
 typedef WorkerOptions = {
 	@:optional
+	var name : String;
+	@:optional
 	var type : WorkerType;
 	@:optional
 	var credentials : js.web.net.RequestCredentials;
-	@:optional
-	var name : String;
 };

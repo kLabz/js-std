@@ -32,6 +32,8 @@ typedef SummarizerCreateCoreOptions = {
 	@:optional
 	var length : SummarizerLength;
 	@:optional
+	var preference : PerformancePreference;
+	@:optional
 	var expectedInputLanguages : Array<String>;
 	@:optional
 	var expectedContextLanguages : Array<String>;

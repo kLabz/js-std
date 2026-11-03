@@ -25,5 +25,8 @@
 package js.web.html;
 
 @:native("HTMLQuoteElement") extern class HTMLQuoteElement extends HTMLElement {
+	/**
+		Unhandled extended attribute ReflectURL
+	**/
 	var cite : String;
 }

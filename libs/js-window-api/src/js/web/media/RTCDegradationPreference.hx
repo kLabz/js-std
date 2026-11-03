@@ -28,4 +28,5 @@ enum abstract RTCDegradationPreference(String) {
 	var MAINTAIN_FRAMERATE = "maintain-framerate";
 	var MAINTAIN_RESOLUTION = "maintain-resolution";
 	var BALANCED = "balanced";
+	var MAINTAIN_FRAMERATE_AND_RESOLUTION = "maintain-framerate-and-resolution";
 }

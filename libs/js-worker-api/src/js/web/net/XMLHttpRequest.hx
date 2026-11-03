@@ -56,11 +56,6 @@ package js.web.net;
 	function overrideMimeType(mime:String):Void;
 	function send(?body:Null<haxe.extern.EitherType<js.web.dom.Document, XMLHttpRequestBodyInit>> = null):Void;
 	/**
-		From partial interface in attribution-reporting-api.idl
-		Unhandled extended attribute SecureContext
-	**/
-	function setAttributionReporting(options:js.web.ads.AttributionReportingRequestOptions):Void;
-	/**
 		From partial interface in trust-token-api.idl
 	**/
 	function setPrivateToken(privateToken:js.web.ads.PrivateToken):Void;

@@ -31,14 +31,9 @@ package js.web.net;
 	var ready(default, null) : js.lib.Promise<Void>;
 	var reliability(default, null) : WebTransportReliabilityMode;
 	var congestionControl(default, null) : WebTransportCongestionControl;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	var anticipatedConcurrentIncomingUnidirectionalStreams : Null<Int>;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	var anticipatedConcurrentIncomingBidirectionalStreams : Null<Int>;
+	var responseHeaders(default, null) : Null<Headers>;
 	var protocol(default, null) : String;
 	var closed(default, null) : js.lib.Promise<WebTransportCloseInfo>;
 	var draining(default, null) : js.lib.Promise<Void>;
@@ -51,5 +46,9 @@ package js.web.net;
 	function createBidirectionalStream(?options:WebTransportSendStreamOptions):js.lib.Promise<WebTransportBidirectionalStream>;
 	function createSendGroup():WebTransportSendGroup;
 	function createUnidirectionalStream(?options:WebTransportSendStreamOptions):js.lib.Promise<WebTransportSendStream>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
+	function exportKeyingMaterial(label:js.web.dom.BufferSource, context:js.web.dom.BufferSource, outputLength:Int):js.lib.Promise<js.lib.Uint8Array>;
 	function getStats():js.lib.Promise<WebTransportConnectionStats>;
 }

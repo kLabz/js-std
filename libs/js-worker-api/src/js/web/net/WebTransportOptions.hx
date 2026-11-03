@@ -30,6 +30,8 @@ typedef WebTransportOptions = {
 	@:optional
 	var requireUnreliable : Bool;
 	@:optional
+	var headers : HeadersInit;
+	@:optional
 	var serverCertificateHashes : Array<WebTransportHash>;
 	@:optional
 	var congestionControl : WebTransportCongestionControl;
@@ -45,4 +47,6 @@ typedef WebTransportOptions = {
 	var anticipatedConcurrentIncomingBidirectionalStreams : Null<Int>;
 	@:optional
 	var protocols : Array<String>;
+	@:optional
+	var datagramsReadableType : ReadableStreamType;
 };

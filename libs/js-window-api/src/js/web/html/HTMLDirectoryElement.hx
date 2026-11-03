@@ -25,5 +25,8 @@
 package js.web.html;
 
 @:native("HTMLDirectoryElement") extern class HTMLDirectoryElement extends HTMLElement {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var compact : Bool;
 }

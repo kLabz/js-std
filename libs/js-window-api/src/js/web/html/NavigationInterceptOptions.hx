@@ -26,6 +26,8 @@ package js.web.html;
 
 typedef NavigationInterceptOptions = {
 	@:optional
+	var precommitHandler : NavigationPrecommitHandler;
+	@:optional
 	var handler : NavigationInterceptHandler;
 	@:optional
 	var focusReset : NavigationFocusReset;

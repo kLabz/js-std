@@ -80,218 +80,274 @@ package js.web.dom;
 	var assignedSlot(default, null) : Null<js.web.html.HTMLSlotElement>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var role : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaActiveDescendantElement : Null<Element>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaAtomic : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaAutoComplete : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaBrailleLabel : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaBrailleRoleDescription : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaBusy : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaChecked : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaColCount : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaColIndex : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaColIndexText : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaColSpan : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaControlsElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaCurrent : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaDescribedByElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaDescription : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaDetailsElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaDisabled : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaErrorMessageElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaExpanded : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaFlowToElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaHasPopup : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaHidden : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaInvalid : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaKeyShortcuts : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaLabel : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaLabelledByElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaLevel : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaLive : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaModal : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaMultiLine : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaMultiSelectable : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaOrientation : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaOwnsElements : Null<Array<Element>>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaPlaceholder : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaPosInSet : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaPressed : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaReadOnly : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaRelevant : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaRequired : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaRoleDescription : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaRowCount : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaRowIndex : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaRowIndexText : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaRowSpan : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaSelected : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaSetSize : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaSort : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaValueMax : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaValueMin : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaValueNow : Null<String>;
 	/**
 		From interface mixin ARIAMixin
+		Unhandled extended attribute Reflect
 	**/
 	var ariaValueText : Null<String>;
 	/**
-		From partial interface in css-shadow-parts.idl
+		From partial interface in css-shadow.idl
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute PutForwards
 	**/
 	var part(default, null) : DOMTokenList;
+	/**
+		From partial interface in css-view-transitions.idl
+	**/
+	var activeViewTransition(default, null) : Null<js.web.css.ViewTransition>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -330,6 +386,7 @@ package js.web.dom;
 	var currentCSSZoom(default, null) : Float;
 	/**
 		From partial interface in element-timing.idl
+		Unhandled extended attribute Reflect
 	**/
 	var elementTiming : String;
 	/**
@@ -353,6 +410,14 @@ package js.web.dom;
 	**/
 	function after(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	function afterHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
+	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	function afterHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
+	/**
 		From interface mixin Animatable
 	**/
 	function animate(keyframes:Null<{ }>, ?options:haxe.extern.EitherType<Float, js.web.css.KeyframeAnimationOptions>):js.web.css.Animation;
@@ -360,11 +425,31 @@ package js.web.dom;
 		From interface mixin ParentNode
 	**/
 	function append(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	/**
+		From partial interface in html.idl
+	**/
+	function appendHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
+	/**
+		From partial interface in html.idl
+	**/
+	function appendHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
+	/**
+		From interface mixin ARIANotifyMixin
+	**/
+	function ariaNotify(announcement:String, ?options:AriaNotificationOptions):Void;
 	function attachShadow(init:ShadowRootInit):ShadowRoot;
 	/**
 		From interface mixin ChildNode
 	**/
 	function before(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	function beforeHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
+	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	function beforeHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -451,6 +536,14 @@ package js.web.dom;
 	**/
 	function prepend(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
+		From partial interface in html.idl
+	**/
+	function prependHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
+	/**
+		From partial interface in html.idl
+	**/
+	function prependHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
+	/**
 		From partial interface in css-pseudo.idl
 	**/
 	function pseudo(type:String):Null<js.web.css.CSSPseudoElement>;
@@ -482,6 +575,14 @@ package js.web.dom;
 	**/
 	function replaceWith(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
 	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	function replaceWithHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
+	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	function replaceWithHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
+	/**
 		From partial interface in fullscreen.idl
 	**/
 	function requestFullscreen(?options:js.web.html.FullscreenOptions):js.lib.Promise<Void>;
@@ -492,39 +593,43 @@ package js.web.dom;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scroll(?options:js.web.css.ScrollToOptions):Void;
+	overload function scroll(?options:js.web.css.ScrollToOptions):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scroll(x:Float, y:Float):Void;
+	overload function scroll(x:Float, y:Float):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scrollBy(?options:js.web.css.ScrollToOptions):Void;
+	overload function scrollBy(?options:js.web.css.ScrollToOptions):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scrollBy(x:Float, y:Float):Void;
+	overload function scrollBy(x:Float, y:Float):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	function scrollIntoView(?arg:haxe.extern.EitherType<Bool, js.web.css.ScrollIntoViewOptions>):Void;
+	function scrollIntoView(?arg:haxe.extern.EitherType<Bool, js.web.css.ScrollIntoViewOptions>):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scrollTo(?options:js.web.css.ScrollToOptions):Void;
+	overload function scrollTo(?options:js.web.css.ScrollToOptions):js.lib.Promise<js.web.css.ScrollResult>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
-	overload function scrollTo(x:Float, y:Float):Void;
-	function setAttribute(qualifiedName:String, value:String):Void;
-	function setAttributeNS(namespace:Null<String>, qualifiedName:String, value:String):Void;
+	overload function scrollTo(x:Float, y:Float):js.lib.Promise<js.web.css.ScrollResult>;
+	function setAttribute(qualifiedName:String, value:haxe.extern.EitherType<TrustedType, String>):Void;
+	function setAttributeNS(namespace:Null<String>, qualifiedName:String, value:haxe.extern.EitherType<TrustedType, String>):Void;
 	function setAttributeNode(attr:Attr):Null<Attr>;
 	function setAttributeNodeNS(attr:Attr):Null<Attr>;
 	/**
 		From partial interface in html.idl
 	**/
-	function setHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>):Void;
+	function setHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
+	/**
+		From partial interface in html.idl
+	**/
+	function setHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	/**
 		From partial interface in pointerevents.idl
 	**/
@@ -533,6 +638,10 @@ package js.web.dom;
 		From partial interface in css-nav.idl
 	**/
 	function spatialNavigationSearch(dir:js.web.css.SpatialNavigationDirection, ?options:js.web.css.SpatialNavigationSearchOptions):Null<Node>;
+	/**
+		From partial interface in css-view-transitions.idl
+	**/
+	function startViewTransition(?callbackOptions:haxe.extern.EitherType<js.web.css.ViewTransitionUpdateCallback, js.web.css.StartViewTransitionOptions>):js.web.css.ViewTransition;
 	function toggleAttribute(qualifiedName:String, ?force:Bool):Bool;
 	function webkitMatchesSelector(selectors:String):Bool;
 }

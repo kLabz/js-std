@@ -25,7 +25,7 @@
 package js.web.webgpu;
 
 typedef GPURenderPassDepthStencilAttachment = {
-	var view : GPUTextureView;
+	var view : haxe.extern.EitherType<GPUTexture, GPUTextureView>;
 	@:optional
 	var depthClearValue : Float;
 	@:optional

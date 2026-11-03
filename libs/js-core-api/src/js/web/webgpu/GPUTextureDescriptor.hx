@@ -36,4 +36,6 @@ typedef GPUTextureDescriptor = GPUObjectDescriptorBase & {
 	var usage : GPUTextureUsageFlags;
 	@:optional
 	var viewFormats : Array<GPUTextureFormat>;
+	@:optional
+	var textureBindingViewDimension : GPUTextureViewDimension;
 };

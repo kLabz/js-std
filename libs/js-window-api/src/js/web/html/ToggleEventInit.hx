@@ -29,4 +29,6 @@ typedef ToggleEventInit = js.web.dom.EventInit & {
 	var oldState : String;
 	@:optional
 	var newState : String;
+	@:optional
+	var source : Null<js.web.dom.Element>;
 };

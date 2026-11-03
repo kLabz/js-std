@@ -29,11 +29,11 @@ typedef ShadowRootInit = {
 	@:optional
 	var delegatesFocus : Bool;
 	@:optional
+	var serializable : Bool;
+	@:optional
 	var slotAssignment : SlotAssignmentMode;
 	@:optional
 	var clonable : Bool;
 	@:optional
-	var serializable : Bool;
-	@:optional
-	var customElementRegistry : js.web.html.CustomElementRegistry;
+	var customElementRegistry : Null<js.web.html.CustomElementRegistry>;
 };

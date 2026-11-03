@@ -25,16 +25,30 @@
 package js.web.html;
 
 @:native("HTMLEmbedElement") extern class HTMLEmbedElement extends HTMLElement {
+	/**
+		Unhandled extended attribute ReflectURL
+	**/
 	var src : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var type : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var width : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var height : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var name : String;
 	function getSVGDocument():Null<js.web.dom.Document>;

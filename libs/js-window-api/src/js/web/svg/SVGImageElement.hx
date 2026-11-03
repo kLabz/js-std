@@ -46,6 +46,7 @@ package js.web.svg;
 	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 	var crossOrigin : Null<String>;
+	var referrerPolicy : String;
 	/**
 		From interface mixin SVGURIReference
 	**/

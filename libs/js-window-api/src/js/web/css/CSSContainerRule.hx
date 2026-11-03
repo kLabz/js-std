@@ -27,4 +27,5 @@ package js.web.css;
 @:native("CSSContainerRule") extern class CSSContainerRule extends CSSConditionRule {
 	var containerName(default, null) : String;
 	var containerQuery(default, null) : String;
+	var conditions(default, null) : Array<CSSContainerCondition>;
 }

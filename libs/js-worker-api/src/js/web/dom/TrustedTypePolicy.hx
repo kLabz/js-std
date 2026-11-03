@@ -24,6 +24,9 @@
 
 package js.web.dom;
 
+/**
+	TODO member createParserOptions (?options:js.web.html.SetHTMLUnsafeOptions, arguments:Any) -> TrustedHTMLParserOptions exposed for [Window]
+**/
 @:native("TrustedTypePolicy") extern class TrustedTypePolicy {
 	var name(default, null) : String;
 	function createHTML(input:String, arguments:haxe.Rest<haxe.Rest<Any>>):TrustedHTML;

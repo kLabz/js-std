@@ -24,4 +24,11 @@
 
 package js.web.media;
 
-typedef VideoFrameMetadata = { };
+typedef VideoFrameMetadata = {
+	@:optional
+	var segments : Array<Segment>;
+	@:optional
+	var backgroundBlur : BackgroundBlur;
+	@:optional
+	var backgroundSegmentationMask : js.web.canvas.ImageBitmap;
+};

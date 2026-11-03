@@ -25,9 +25,13 @@
 package js.web.html;
 
 @:native("HTMLLIElement") extern class HTMLLIElement extends HTMLElement {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var value : Int;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var type : String;
 }

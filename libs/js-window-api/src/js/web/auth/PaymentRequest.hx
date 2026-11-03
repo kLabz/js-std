@@ -47,6 +47,10 @@ package js.web.auth;
 	/**
 		From partial interface in secure-payment-confirmation.idl
 	**/
+	function getSecurePaymentConfirmationCapabilities():js.lib.Promise<SecurePaymentConfirmationCapabilities>;
+	/**
+		From partial interface in secure-payment-confirmation.idl
+	**/
 	function securePaymentConfirmationAvailability():js.lib.Promise<SecurePaymentConfirmationAvailability>;
 	/**
 		Unhandled extended attribute NewObject

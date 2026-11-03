@@ -25,43 +25,121 @@
 package js.web.html;
 
 @:native("HTMLInputElement") extern class HTMLInputElement extends HTMLElement {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var accept : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var alpha : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var alt : String;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var autocomplete : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var defaultChecked : Bool;
 	var checked : Bool;
 	var colorSpace : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var dirName : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;
 	var files : Null<js.web.net.FileList>;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var formAction : String;
 	var formEnctype : String;
 	var formMethod : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var formNoValidate : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var formTarget : String;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var height : Int;
 	var indeterminate : Bool;
 	var list(default, null) : Null<HTMLDataListElement>;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var max : String;
+	/**
+		Unhandled extended attribute ReflectNonNegative
+	**/
 	var maxLength : Int;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var min : String;
+	/**
+		Unhandled extended attribute ReflectNonNegative
+	**/
 	var minLength : Int;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var multiple : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var name : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var pattern : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var placeholder : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var readOnly : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var required : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var size : Int;
+	/**
+		Unhandled extended attribute ReflectURL
+	**/
 	var src : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var step : String;
 	var type : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var defaultValue : String;
 	var value : String;
 	var valueAsDate : Null<{ }>;
 	var valueAsNumber : Float;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var width : Int;
 	var willValidate(default, null) : Bool;
 	var validity(default, null) : ValidityState;
@@ -71,11 +149,12 @@ package js.web.html;
 	var selectionEnd : Null<Int>;
 	var selectionDirection : Null<String>;
 	/**
-		From interface mixin PopoverInvokerElement
+		From interface mixin PopoverTargetAttributes
+		Unhandled extended attribute Reflect
 	**/
 	var popoverTargetElement : Null<js.web.dom.Element>;
 	/**
-		From interface mixin PopoverInvokerElement
+		From interface mixin PopoverTargetAttributes
 	**/
 	var popoverTargetAction : String;
 	/**
@@ -92,12 +171,24 @@ package js.web.html;
 	var capture : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var useMap : String;
+	/**
+		From partial interface in html.idl
+		Unhandled extended attribute Reflect
+	**/
+	var hspace : Int;
+	/**
+		From partial interface in html.idl
+		Unhandled extended attribute Reflect
+	**/
+	var vspace : Int;
 	function checkValidity():Bool;
 	function reportValidity():Bool;
 	function select():Void;

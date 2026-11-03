@@ -25,56 +25,81 @@
 package js.web.html;
 
 @:native("HTMLIFrameElement") extern class HTMLIFrameElement extends HTMLElement {
+	/**
+		Unhandled extended attribute ReflectURL
+	**/
 	var src : String;
 	var srcdoc : haxe.extern.EitherType<js.web.dom.TrustedHTML, String>;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var name : String;
 	/**
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute PutForwards
+		Unhandled extended attribute Reflect
 	**/
 	var sandbox(default, null) : js.web.dom.DOMTokenList;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var allow : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var allowFullscreen : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var width : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var height : String;
 	var referrerPolicy : String;
 	var loading : String;
 	var contentDocument(default, null) : Null<js.web.dom.Document>;
 	var contentWindow(default, null) : Null<js.html.Window>;
 	/**
-		From interface mixin HTMLSharedStorageWritableElementUtils
-	**/
-	var sharedStorageWritable : Bool;
-	/**
 		From partial interface in anonymous-iframe.idl
 	**/
 	var credentialless : Bool;
+	/**
+		From partial interface in connection-allowlists.idl
+	**/
+	var connectionAllowlist : String;
 	/**
 		From partial interface in csp-embedded-enforcement.idl
 	**/
 	var csp : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var scrolling : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var frameBorder : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute ReflectURL
 	**/
 	var longDesc : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var marginHeight : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var marginWidth : String;
 	/**
@@ -87,9 +112,5 @@ package js.web.html;
 		Unhandled extended attribute SecureContext
 	**/
 	var privateToken : String;
-	/**
-		From partial interface in turtledove.idl
-	**/
-	var adAuctionHeaders : Bool;
 	function getSVGDocument():Null<js.web.dom.Document>;
 }

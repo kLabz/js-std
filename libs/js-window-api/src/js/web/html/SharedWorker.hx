@@ -30,5 +30,5 @@ package js.web.html;
 		From interface mixin AbstractWorker
 	**/
 	var onerror : EventHandler;
-	function new(scriptURL:haxe.extern.EitherType<js.web.dom.TrustedScriptURL, String>, ?options:haxe.extern.EitherType<String, WorkerOptions>):Void;
+	function new(scriptURL:haxe.extern.EitherType<js.web.dom.TrustedScriptURL, String>, ?options:haxe.extern.EitherType<String, SharedWorkerOptions>):Void;
 }

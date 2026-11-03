@@ -26,6 +26,9 @@ package js.web.html;
 
 @:native("HTMLMediaElement") extern class HTMLMediaElement extends HTMLElement {
 	var error(default, null) : Null<MediaError>;
+	/**
+		Unhandled extended attribute ReflectURL
+	**/
 	var src : String;
 	var srcObject : Null<MediaProvider>;
 	var currentSrc(default, null) : String;
@@ -53,12 +56,25 @@ package js.web.html;
 	var played(default, null) : TimeRanges;
 	var seekable(default, null) : TimeRanges;
 	var ended(default, null) : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var autoplay : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var loop : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var controls : Bool;
 	var volume : Float;
 	var muted : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var defaultMuted : Bool;
+	var loading : String;
 	/**
 		Unhandled extended attribute SameObject
 	**/

@@ -42,7 +42,7 @@ typedef MediaTrackCapabilities = {
 	@:optional
 	var sampleSize : ULongRange;
 	@:optional
-	var echoCancellation : Array<Bool>;
+	var echoCancellation : Array<haxe.extern.EitherType<Bool, String>>;
 	@:optional
 	var autoGainControl : Array<Bool>;
 	@:optional
@@ -89,6 +89,22 @@ typedef MediaTrackCapabilities = {
 	var zoom : MediaSettingsRange;
 	@:optional
 	var torch : Array<Bool>;
+	@:optional
+	var powerEfficient : Array<Bool>;
+	@:optional
+	var powerEfficientPixelFormat : Array<Bool>;
+	@:optional
+	var gestureReactions : Array<Bool>;
+	@:optional
+	var faceFraming : Array<Bool>;
+	@:optional
+	var eyeGazeCorrection : Array<Bool>;
+	@:optional
+	var voiceIsolation : Array<Bool>;
+	@:optional
+	var humanFaceDetectionMode : Array<String>;
+	@:optional
+	var backgroundSegmentationMask : Array<Bool>;
 	@:optional
 	var displaySurface : String;
 	@:optional

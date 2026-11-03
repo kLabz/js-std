@@ -25,7 +25,6 @@
 package js.web.css;
 
 typedef ViewTimelineOptions = {
-	@:optional
 	var subject : js.web.dom.Element;
 	@:optional
 	var axis : ScrollAxis;

@@ -26,7 +26,7 @@ package js.web.dom;
 
 typedef ElementCreationOptions = {
 	@:optional
-	var customElementRegistry : js.web.html.CustomElementRegistry;
+	var customElementRegistry : Null<js.web.html.CustomElementRegistry>;
 	@:optional
 	var is : String;
 };

@@ -28,7 +28,7 @@ package js.web.webrtc;
 	Unhandled extended attribute Serializable
 **/
 @:native("RTCEncodedVideoFrame") extern class RTCEncodedVideoFrame {
-	var type(default, null) : RTCEncodedVideoFrameType;
+	var type(default, null) : js.web.media.EncodedVideoChunkType;
 	var data : js.lib.ArrayBuffer;
 	function new(originalFrame:RTCEncodedVideoFrame, ?options:RTCEncodedVideoFrameOptions):Void;
 	function getMetadata():RTCEncodedVideoFrameMetadata;

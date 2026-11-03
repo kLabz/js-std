@@ -26,13 +26,7 @@ package js.web.media;
 
 typedef VideoEncoderConfig = {
 	var codec : String;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	var width : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	var height : Int;
 	/**
 		Unhandled extended attribute EnforceRange

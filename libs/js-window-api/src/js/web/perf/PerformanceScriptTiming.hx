@@ -35,8 +35,12 @@ package js.web.perf;
 	var sourceURL(default, null) : String;
 	var sourceFunctionName(default, null) : String;
 	var sourceCharPosition(default, null) : Float;
+	var sourceLine(default, null) : Float;
+	var sourceColumn(default, null) : Float;
 	var pauseDuration(default, null) : DOMHighResTimeStamp;
 	var forcedStyleAndLayoutDuration(default, null) : DOMHighResTimeStamp;
+	var forcedStyleDuration(default, null) : DOMHighResTimeStamp;
+	var forcedLayoutDuration(default, null) : DOMHighResTimeStamp;
 	var window(default, null) : Null<js.web.html.Window>;
 	var windowAttribution(default, null) : ScriptWindowAttribution;
 	/**

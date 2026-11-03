@@ -25,6 +25,12 @@
 package js.web.html;
 
 @:native("HTMLDetailsElement") extern class HTMLDetailsElement extends HTMLElement {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var name : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var open : Bool;
 }

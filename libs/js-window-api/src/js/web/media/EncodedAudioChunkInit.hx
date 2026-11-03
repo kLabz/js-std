@@ -26,9 +26,6 @@ package js.web.media;
 
 typedef EncodedAudioChunkInit = {
 	var type : EncodedAudioChunkType;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	var timestamp : Float;
 	/**
 		Unhandled extended attribute EnforceRange

@@ -27,6 +27,7 @@ package js.web.html;
 @:native("HTMLParagraphElement") extern class HTMLParagraphElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var align : String;
 }

@@ -31,4 +31,6 @@ typedef AnimationEventInit = js.web.dom.EventInit & {
 	var elapsedTime : Float;
 	@:optional
 	var pseudoElement : String;
+	@:optional
+	var animation : Null<CSSAnimation>;
 };

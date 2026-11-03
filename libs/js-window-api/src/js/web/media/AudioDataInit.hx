@@ -27,19 +27,10 @@ package js.web.media;
 typedef AudioDataInit = {
 	var format : AudioSampleFormat;
 	var sampleRate : Float;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	var numberOfFrames : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	var numberOfChannels : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	var timestamp : Float;
-	var data : js.web.dom.BufferSource;
+	var data : js.web.dom.AllowSharedBufferSource;
 	@:optional
 	var transfer : Array<js.lib.ArrayBuffer>;
 };

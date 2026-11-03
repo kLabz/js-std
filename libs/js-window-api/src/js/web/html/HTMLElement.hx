@@ -25,22 +25,49 @@
 package js.web.html;
 
 @:native("HTMLElement") extern class HTMLElement extends js.web.dom.Element {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var title : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var lang : String;
 	var translate : Bool;
 	var dir : String;
 	var hidden : Null<haxe.extern.EitherType<Bool, haxe.extern.EitherType<Float, String>>>;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var inert : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var accessKey : String;
 	var accessKeyLabel(default, null) : String;
 	var draggable : Bool;
 	var spellcheck : Bool;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var writingSuggestions : String;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var autocapitalize : String;
 	var autocorrect : Bool;
 	var innerText : String;
 	var outerText : String;
 	var popover : Null<String>;
+	/**
+		Unhandled extended attribute Reflect
+		Unhandled extended attribute ReflectRange
+	**/
+	var headingOffset : Int;
+	/**
+		Unhandled extended attribute Reflect
+	**/
+	var headingReset : Bool;
 	/**
 		From interface mixin ElementCSSInlineStyle
 	**/
@@ -48,7 +75,7 @@ package js.web.html;
 	/**
 		From interface mixin ElementCSSInlineStyle
 	**/
-	var style(default, null) : js.web.css.CSSStyleDeclaration;
+	var style(default, null) : js.web.css.CSSStyleProperties;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -400,6 +427,10 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
+	var oninstallresult : EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
 	var onpointerover : EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -490,21 +521,35 @@ package js.web.html;
 	**/
 	var virtualKeyboardPolicy : String;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	var dataset(default, null) : DOMStringMap;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	var nonce : String;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	var autofocus : Bool;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	var tabIndex : Int;
+	/**
+		From partial interface in container-timing.idl
+		Unhandled extended attribute Reflect
+	**/
+	var containerTiming : String;
+	/**
+		From partial interface in container-timing.idl
+		Unhandled extended attribute Reflect
+	**/
+	var containerTimingIgnore : Bool;
+	/**
+		From partial interface in cssom-view.idl
+	**/
+	var scrollParent(default, null) : Null<js.web.dom.Element>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -531,12 +576,12 @@ package js.web.html;
 	var editContext : Null<EditContext>;
 	function attachInternals():ElementInternals;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	function blur():Void;
 	function click():Void;
 	/**
-		From interface mixin HTMLOrSVGElement
+		From interface mixin HTMLOrSVGOrMathMLElement
 	**/
 	function focus(?options:FocusOptions):Void;
 	function hidePopover():Void;

@@ -26,9 +26,26 @@ package js.web.html;
 
 @:native("HTMLTemplateElement") extern class HTMLTemplateElement extends HTMLElement {
 	var content(default, null) : js.web.dom.DocumentFragment;
+	/**
+		Unhandled extended attribute Reflect
+	**/
+	var htmlFor : String;
 	var shadowRootMode : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var shadowRootDelegatesFocus : Bool;
-	var shadowRootClonable : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var shadowRootSerializable : Bool;
+	var shadowRootSlotAssignment : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
+	var shadowRootClonable : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var shadowRootCustomElementRegistry : String;
 }

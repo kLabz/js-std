@@ -29,6 +29,7 @@ package js.web.xr;
 **/
 @:native("XRView") extern class XRView {
 	var eye(default, null) : XREye;
+	var index(default, null) : Int;
 	var recommendedViewportScale(default, null) : Null<Float>;
 	/**
 		From interface mixin XRViewGeometry

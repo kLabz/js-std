@@ -28,6 +28,10 @@ typedef WebTransportConnectionStats = {
 	@:optional
 	var bytesSent : Float;
 	@:optional
+	var bytesSentOverhead : Float;
+	@:optional
+	var bytesAcknowledged : Float;
+	@:optional
 	var packetsSent : Float;
 	@:optional
 	var bytesLost : Float;
@@ -37,8 +41,11 @@ typedef WebTransportConnectionStats = {
 	var bytesReceived : Float;
 	@:optional
 	var packetsReceived : Float;
+	@:optional
 	var smoothedRtt : js.web.perf.DOMHighResTimeStamp;
+	@:optional
 	var rttVariation : js.web.perf.DOMHighResTimeStamp;
+	@:optional
 	var minRtt : js.web.perf.DOMHighResTimeStamp;
 	var datagrams : WebTransportDatagramStats;
 	@:optional

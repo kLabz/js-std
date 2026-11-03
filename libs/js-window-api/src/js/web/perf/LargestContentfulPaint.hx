@@ -26,6 +26,7 @@ package js.web.perf;
 
 @:native("LargestContentfulPaint") extern class LargestContentfulPaint extends PerformanceEntry {
 	var loadTime(default, null) : DOMHighResTimeStamp;
+	var renderTime(default, null) : DOMHighResTimeStamp;
 	var size(default, null) : Int;
 	var id(default, null) : String;
 	var url(default, null) : String;

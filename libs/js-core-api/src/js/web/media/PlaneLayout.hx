@@ -25,12 +25,6 @@
 package js.web.media;
 
 typedef PlaneLayout = {
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	var offset : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	var stride : Int;
 };

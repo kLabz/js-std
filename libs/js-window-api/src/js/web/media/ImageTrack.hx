@@ -24,6 +24,9 @@
 
 package js.web.media;
 
+/**
+	Unhandled extended attribute SecureContext
+**/
 @:native("ImageTrack") extern class ImageTrack {
 	var animated(default, null) : Bool;
 	var frameCount(default, null) : Int;

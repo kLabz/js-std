@@ -25,16 +25,16 @@
 package js.web.net;
 
 /**
+	TODO async_iterable handling
 	Unhandled extended attribute Transferable
 **/
 @:native("ReadableStream") extern class ReadableStream {
 	var locked(default, null) : Bool;
 	function new(?underlyingSource:{ }, ?strategy:QueuingStrategy):Void;
 	function cancel(?reason:Any):js.lib.Promise<Void>;
-	function from(asyncIterable:Any):ReadableStream;
+	function from(asyncIterable:Dynamic):ReadableStream;
 	function getReader(?options:ReadableStreamGetReaderOptions):ReadableStreamReader;
 	function pipeThrough(transform:ReadableWritablePair, ?options:StreamPipeOptions):ReadableStream;
 	function pipeTo(destination:WritableStream, ?options:StreamPipeOptions):js.lib.Promise<Void>;
 	function tee():Array<ReadableStream>;
-	function values():Iterator<Any>;
 }

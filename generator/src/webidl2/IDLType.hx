@@ -19,6 +19,7 @@ enum abstract IDLType<T:AbstractBase<T>>(String) {
 	var IDLSetlikeDeclarationMemberType:IDLType<SetlikeDeclarationMemberType> = "setlike";
 	var IDLMaplikeDeclarationMemberType:IDLType<MaplikeDeclarationMemberType> = "maplike";
 	var IDLIterableDeclarationMemberType:IDLType<IterableDeclarationMemberType> = "iterable";
+	var IDLAsyncIterableDeclarationMemberType:IDLType<IterableDeclarationMemberType> = "async_iterable";
 	var IDLConstructorMemberType:IDLType<ConstructorMemberType> = "constructor";
 	var IDLAttributeMemberType:IDLType<AttributeMemberType> = "attribute";
 	var IDLOperationMemberType:IDLType<OperationMemberType> = "operation";

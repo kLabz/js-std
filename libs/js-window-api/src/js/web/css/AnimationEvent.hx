@@ -28,5 +28,9 @@ package js.web.css;
 	var animationName(default, null) : String;
 	var elapsedTime(default, null) : Float;
 	var pseudoElement(default, null) : String;
+	/**
+		From partial interface in css-animations-2.idl
+	**/
+	var animation(default, null) : Null<CSSAnimation>;
 	function new(type:String, ?animationEventInitDict:AnimationEventInit):Void;
 }

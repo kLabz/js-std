@@ -35,4 +35,6 @@ typedef AuthenticationExtensionsClientInputsJSON = {
 	var prf : AuthenticationExtensionsPRFInputsJSON;
 	@:optional
 	var largeBlob : AuthenticationExtensionsLargeBlobInputsJSON;
+	@:optional
+	var remoteClientDataJSON : String;
 };

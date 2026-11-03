@@ -20,7 +20,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from @webref/idl/uievents.idl. Do not edit!
+// This file is generated from @webref/idl/pointerevents.idl. Do not edit!
 
 package js.web.dom;
 
@@ -32,5 +32,6 @@ package js.web.dom;
 	var deltaY(default, null) : Float;
 	var deltaZ(default, null) : Float;
 	var deltaMode(default, null) : Int;
+	var momentum(default, null) : Bool;
 	function new(type:String, ?eventInitDict:WheelEventInit):Void;
 }

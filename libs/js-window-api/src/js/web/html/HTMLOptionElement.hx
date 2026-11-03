@@ -28,11 +28,23 @@ package js.web.html;
 	Unhandled extended attribute LegacyFactoryFunction
 **/
 @:native("HTMLOptionElement") extern class HTMLOptionElement extends HTMLElement {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var label : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var defaultSelected : Bool;
 	var selected : Bool;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var value : String;
 	var text : String;
 	var index(default, null) : Int;

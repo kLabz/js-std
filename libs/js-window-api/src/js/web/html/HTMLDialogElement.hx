@@ -25,8 +25,14 @@
 package js.web.html;
 
 @:native("HTMLDialogElement") extern class HTMLDialogElement extends HTMLElement {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var open : Bool;
 	var returnValue : String;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var closedBy : String;
 	function close(?returnValue:String):Void;
 	function requestClose(?returnValue:String):Void;

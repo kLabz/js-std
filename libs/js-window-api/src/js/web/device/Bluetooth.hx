@@ -20,7 +20,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from @webref/idl/web-bluetooth.idl. Do not edit!
+// This file is generated from @webref/idl/bluetooth.idl. Do not edit!
 
 package js.web.device;
 
@@ -61,7 +61,7 @@ package js.web.device;
 	function getDevices():js.lib.Promise<Array<BluetoothDevice>>;
 	function requestDevice(?options:RequestDeviceOptions):js.lib.Promise<BluetoothDevice>;
 	/**
-		From partial interface in web-bluetooth-scanning.idl
+		From partial interface in bluetooth-scanning.idl
 		Unhandled extended attribute SecureContext
 	**/
 	function requestLEScan(?options:BluetoothLEScanOptions):js.lib.Promise<BluetoothLEScan>;

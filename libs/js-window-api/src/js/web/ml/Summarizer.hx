@@ -32,6 +32,7 @@ package js.web.ml;
 	var type(default, null) : SummarizerType;
 	var format(default, null) : SummarizerFormat;
 	var length(default, null) : SummarizerLength;
+	var preference(default, null) : PerformancePreference;
 	var expectedInputLanguages(default, null) : Null<Array<String>>;
 	var expectedContextLanguages(default, null) : Null<Array<String>>;
 	var outputLanguage(default, null) : Null<String>;

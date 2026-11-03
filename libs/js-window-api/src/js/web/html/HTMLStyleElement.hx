@@ -26,10 +26,14 @@ package js.web.html;
 
 @:native("HTMLStyleElement") extern class HTMLStyleElement extends HTMLElement {
 	var disabled : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var media : String;
 	/**
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute PutForwards
+		Unhandled extended attribute Reflect
 	**/
 	var blocking(default, null) : js.web.dom.DOMTokenList;
 	/**
@@ -38,6 +42,7 @@ package js.web.html;
 	var sheet(default, null) : Null<js.web.css.CSSStyleSheet>;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var type : String;
 }

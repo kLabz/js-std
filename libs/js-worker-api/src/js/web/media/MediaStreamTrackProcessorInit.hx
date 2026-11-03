@@ -25,7 +25,7 @@
 package js.web.media;
 
 typedef MediaStreamTrackProcessorInit = {
-	var track : MediaStreamTrack;
+	var track : MediaStreamTrackOrHandle;
 	/**
 		Unhandled extended attribute EnforceRange
 	**/

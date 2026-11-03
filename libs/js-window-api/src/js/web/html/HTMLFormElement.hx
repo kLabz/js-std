@@ -34,19 +34,38 @@ package js.web.html;
 	Unhandled extended attribute LegacyUnenumerableNamedProperties
 **/
 @:native("HTMLFormElement") extern class HTMLFormElement extends HTMLElement implements ArrayAccess<js.web.dom.Element> {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var acceptCharset : String;
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var action : String;
 	var autocomplete : String;
 	var enctype : String;
 	var encoding : String;
 	var method : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var name : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var noValidate : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var target : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var rel : String;
 	/**
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute PutForwards
+		Unhandled extended attribute Reflect
 	**/
 	var relList(default, null) : js.web.dom.DOMTokenList;
 	/**

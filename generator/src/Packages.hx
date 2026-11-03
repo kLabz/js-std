@@ -7,16 +7,17 @@ class Packages {
 		var groups = [
 			"dom" => [
 				"dom", "uievents", "pointerevents", "touch-events", "input-events", "selection-api",
-				"resize-observer", "intersection-observer", "geometry", "trusted-types", "sanitizer-api",
+				"resize-observer", "intersection-observer", "geometry", "trusted-types",
 				"observable", "webidl", "wai-aria", "input-device-capabilities", "scroll-to-text-fragment"
 			],
 			"html" => [
 				"html", "fullscreen", "pointerlock", "picture-in-picture", "document-picture-in-picture",
 				"edit-context", "page-lifecycle", "scheduling-apis", "requestidlecallback", "is-input-pending",
 				"portals", "anonymous-iframe", "prerendering-revamped", "window-management",
-				"window-controls-overlay", "web-app-launch", "manifest-incubations", "model-element"
+				"window-controls-overlay", "web-app-launch", "manifest-incubations", "model-element",
+				"autofill-event", "geolocation-element", "install-element"
 			],
-			"css" => ["cssom", "cssom-view", "mediaqueries-5", "web-animations", "web-animations-2", "scroll-animations", "font-metrics-api"],
+			"css" => ["cssom", "cssom-view", "mediaqueries-5", "web-animations", "web-animations-2", "scroll-animations", "font-metrics-api", "animation-triggers", "pointer-animations"],
 			"svg" => ["SVG", "svg-animations", "svg-paths", "filter-effects", "mathml-core"],
 			"webgl" => ["webgl1", "webgl2"],
 			"webgpu" => ["webgpu"],
@@ -27,50 +28,47 @@ class Packages {
 				"datacue", "screen-capture", "element-capture", "captured-mouse-events", "capture-handle-identity",
 				"prefer-current-tab", "html-media-capture", "presentation-api"
 			],
-			"xr" => ["real-world-meshing", "raw-camera-access", "anchors"],
+			"xr" => ["real-world-meshing", "raw-camera-access", "anchors", "body-tracking"],
 			"net" => [
 				"fetch", "xhr", "websockets", "webtransport", "url", "urlpattern", "streams", "encoding",
-				"compression", "beacon", "FileAPI", "netinfo", "private-network-access", "referrer-policy", "savedata"
+				"compression", "beacon", "FileAPI", "netinfo", "local-network-access", "connection-allowlists", "referrer-policy", "savedata", "sri"
 			],
 			"storage" => [
-				"IndexedDB", "cookie-store", "storage", "storage-buckets", "fs", "file-system-access", "entries-api",
-				"web-locks", "shared-storage", "saa-non-cookie-storage", "storage-access", "requestStorageAccessFor"
+				"IndexedDB", "cookiestore", "storage", "storage-buckets", "fs", "file-system-access", "entries-api",
+				"web-locks", "saa-non-cookie-storage", "storage-access", "cross-origin-storage"
 			],
 			"sw" => [
 				"service-workers", "push-api", "notifications", "background-fetch", "background-sync",
-				"periodic-background-sync", "content-index", "payment-handler"
+				"periodic-background-sync", "content-index", "web-based-payment-handler"
 			],
 			"auth" => [
-				"webauthn", "fido", "credential-management", "fedcm", "digital-credentials", "login-status",
-				"webcrypto", "webcrypto-secure-curves", "payment-request", "secure-payment-confirmation",
+				"webauthn", "fido-client-to-authenticator-protocol", "credential-management", "fedcm", "digital-credentials", "login-status",
+				"webcrypto", "webcrypto-secure-curves", "webcrypto-modern-algos", "payment-request", "secure-payment-confirmation",
 				"web-otp", "digital-goods"
 			],
 			"device" => [
-				"web-bluetooth", "web-bluetooth-scanning", "webusb", "webhid", "serial", "web-nfc", "webmidi",
+				"bluetooth", "bluetooth-scanning", "usb", "hid", "serial", "web-nfc", "webmidi",
 				"gamepad", "gamepad-extensions", "generic-sensor", "accelerometer", "gyroscope", "magnetometer",
 				"ambient-light", "proximity", "battery-status", "geolocation", "vibration", "screen-wake-lock",
 				"device-posture", "compute-pressure", "idle-detection", "orientation-event", "screen-orientation",
-				"keyboard-lock", "keyboard-map", "virtual-keyboard", "ink-enhancement", "device-memory",
-				"device-attributes"
+				"keyboard-lock", "keyboard-map", "virtual-keyboard", "ink-enhancement", "device-attributes",
+				"cpu-performance"
 			],
 			"perf" => [
-				"performance-timeline", "hr-time", "longtasks", "long-animation-frames", "layout-instability",
+				"performance-timeline", "hr-time", "long-animation-frames", "soft-navigations", "layout-instability",
 				"largest-contentful-paint", "reporting", "js-self-profiling", "performance-measure-memory"
 			],
 			"ml" => [
 				"webnn", "writing-assistance-apis", "translation-api", "handwriting-recognition",
-				"shape-detection-api", "text-detection-api"
+				"shape-detection-api", "text-detection-api", "prompt-api", "proofreader-api", "webmcp"
 			],
-			"ads" => [
-				"turtledove", "attribution-reporting-api", "private-aggregation-api", "fenced-frame",
-				"trust-token-api", "ppa", "private-click-measurement"
-			],
+			"ads" => ["attribution", "fenced-frame", "trust-token-api", "private-click-measurement"],
 			"wasm" => ["wasm-js-api", "wasm-web-api"],
 			"misc" => [
 				"clipboard-apis", "web-share", "permissions", "permissions-request", "permissions-revoke",
 				"permissions-policy", "badging", "console", "compat", "eyedropper-api", "contact-picker",
 				"get-installed-related-apps", "gpc", "CSP", "csp-next", "csp-embedded-enforcement", "image-resource",
-				"ua-client-hints", "local-font-access", "managed-configuration", "webdriver", "testutils"
+				"ua-client-hints", "local-font-access", "managed-configuration", "webdriver", "testutils", "webextensions"
 			]
 		];
 
@@ -84,7 +82,7 @@ class Packages {
 
 	static final rules:Array<{match:String->Bool, group:String}> = [
 		{match: s -> s.startsWith("css-"), group: "css"},
-		{match: s -> ~/^(EXT|OES|WEBGL|KHR|ANGLE|OVR)_/.match(s), group: "webgl"},
+		{match: s -> ~/^(EXT|OES|WEBGL|KHR|ANGLE|OVR|NV)_/.match(s), group: "webgl"},
 		{match: s -> s.startsWith("mediacapture-") || s.startsWith("webcodecs"), group: "media"},
 		{match: s -> s.startsWith("webrtc"), group: "webrtc"},
 		{match: s -> s.startsWith("webxr"), group: "xr"},

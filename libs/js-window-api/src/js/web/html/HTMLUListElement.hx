@@ -27,10 +27,12 @@ package js.web.html;
 @:native("HTMLUListElement") extern class HTMLUListElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var compact : Bool;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var type : String;
 }

@@ -25,6 +25,6 @@
 package js.web.svg;
 
 @:native("SVGAnimatedString") extern class SVGAnimatedString {
-	var baseVal : String;
+	var baseVal : haxe.extern.EitherType<String, js.web.dom.TrustedScriptURL>;
 	var animVal(default, null) : String;
 }

@@ -28,7 +28,7 @@ package js.web.auth;
 	Unhandled extended attribute SecureContext
 **/
 @:native("IdentityCredential") extern class IdentityCredential extends Credential {
-	var token(default, null) : Null<String>;
+	var token(default, null) : Any;
 	var isAutoSelected(default, null) : Bool;
 	var configURL(default, null) : String;
 	function disconnect(options:IdentityCredentialDisconnectOptions):js.lib.Promise<Void>;

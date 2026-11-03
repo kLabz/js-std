@@ -20,7 +20,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from @webref/idl/webusb.idl. Do not edit!
+// This file is generated from @webref/idl/usb.idl. Do not edit!
 
 package js.web.device;
 

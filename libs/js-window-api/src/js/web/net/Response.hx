@@ -84,4 +84,8 @@ package js.web.net;
 		From interface mixin Body
 	**/
 	function text():js.lib.Promise<String>;
+	/**
+		From interface mixin Body
+	**/
+	function textStream():ReadableStream;
 }

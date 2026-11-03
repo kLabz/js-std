@@ -27,6 +27,7 @@ package js.web.html;
 @:native("HTMLPreElement") extern class HTMLPreElement extends HTMLElement {
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var width : Int;
 }

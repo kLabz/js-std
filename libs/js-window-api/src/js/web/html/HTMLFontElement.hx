@@ -25,7 +25,16 @@
 package js.web.html;
 
 @:native("HTMLFontElement") extern class HTMLFontElement extends HTMLElement {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var color : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var face : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var size : String;
 }

@@ -25,7 +25,7 @@
 package js.web.css;
 
 /**
-	TODO special=setter (index:Int, val:CSSUnparsedSegment) -> CSSUnparsedSegment
+	TODO special=setter (index:Int, val:CSSUnparsedSegment) -> Void
 **/
 @:native("CSSUnparsedValue") extern class CSSUnparsedValue extends CSSStyleValue implements ArrayAccess<CSSUnparsedSegment> {
 	var length(default, null) : Int;

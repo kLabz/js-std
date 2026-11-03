@@ -29,8 +29,10 @@ package js.web.css;
 	var ready(default, null) : js.lib.Promise<Void>;
 	var finished(default, null) : js.lib.Promise<Void>;
 	/**
-		From partial interface in css-view-transitions-2.idl
+		Unhandled extended attribute SameObject
 	**/
-	var types : ViewTransitionTypeSet;
+	var types(default, null) : ViewTransitionTypeSet;
+	var transitionRoot(default, null) : js.web.dom.Element;
 	function skipTransition():Void;
+	function waitUntil(promise:js.lib.Promise<Any>):Void;
 }

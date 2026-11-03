@@ -24,4 +24,4 @@
 
 package js.web.webgpu;
 
-typedef GPUBindingResource = haxe.extern.EitherType<GPUSampler, haxe.extern.EitherType<GPUTextureView, haxe.extern.EitherType<GPUBufferBinding, GPUExternalTexture>>>;
+typedef GPUBindingResource = haxe.extern.EitherType<GPUSampler, haxe.extern.EitherType<GPUTexture, haxe.extern.EitherType<GPUTextureView, haxe.extern.EitherType<GPUBuffer, haxe.extern.EitherType<GPUBufferBinding, GPUExternalTexture>>>>>;

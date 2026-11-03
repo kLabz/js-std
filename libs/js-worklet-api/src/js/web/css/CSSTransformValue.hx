@@ -25,7 +25,7 @@
 package js.web.css;
 
 /**
-	TODO special=setter (index:Int, val:CSSTransformComponent) -> CSSTransformComponent
+	TODO special=setter (index:Int, val:CSSTransformComponent) -> Void
 **/
 @:native("CSSTransformValue") extern class CSSTransformValue extends CSSStyleValue implements ArrayAccess<CSSTransformComponent> {
 	var length(default, null) : Int;

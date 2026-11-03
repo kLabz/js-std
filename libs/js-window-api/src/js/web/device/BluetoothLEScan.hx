@@ -20,7 +20,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from @webref/idl/web-bluetooth-scanning.idl. Do not edit!
+// This file is generated from @webref/idl/bluetooth-scanning.idl. Do not edit!
 
 package js.web.device;
 

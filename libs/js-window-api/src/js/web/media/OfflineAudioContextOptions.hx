@@ -27,7 +27,8 @@ package js.web.media;
 typedef OfflineAudioContextOptions = {
 	@:optional
 	var numberOfChannels : Int;
-	var length : Int;
+	@:optional
+	var length : Null<Int>;
 	var sampleRate : Float;
 	@:optional
 	var renderSizeHint : haxe.extern.EitherType<AudioContextRenderSizeCategory, Int>;

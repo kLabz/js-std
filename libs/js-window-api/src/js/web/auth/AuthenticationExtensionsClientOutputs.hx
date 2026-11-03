@@ -26,9 +26,15 @@ package js.web.auth;
 
 typedef AuthenticationExtensionsClientOutputs = {
 	@:optional
+	var credBlob : Bool;
+	@:optional
+	var getCredBlob : js.lib.ArrayBuffer;
+	@:optional
 	var hmacCreateSecret : Bool;
 	@:optional
 	var hmacGetSecret : HMACGetSecretOutput;
+	@:optional
+	var payment : AuthenticationExtensionsPaymentOutputs;
 	@:optional
 	var appid : Bool;
 	@:optional
@@ -39,4 +45,6 @@ typedef AuthenticationExtensionsClientOutputs = {
 	var prf : AuthenticationExtensionsPRFOutputs;
 	@:optional
 	var largeBlob : AuthenticationExtensionsLargeBlobOutputs;
+	@:optional
+	var remoteClientDataJSON : Bool;
 };

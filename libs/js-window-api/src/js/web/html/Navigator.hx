@@ -33,9 +33,11 @@ package js.web.html;
 **/
 @:native("Navigator") extern class Navigator {
 	/**
-		From interface mixin NavigatorDeviceMemory
+		From interface mixin NavigatorCrossOriginStorage
+		Unhandled extended attribute SameObject
+		Unhandled extended attribute SecureContext
 	**/
-	var deviceMemory(default, null) : Float;
+	var crossOriginStorage(default, null) : js.web.storage.CrossOriginStorageManager;
 	/**
 		From interface mixin GlobalPrivacyControl
 	**/
@@ -139,9 +141,20 @@ package js.web.html;
 	**/
 	var ml(default, null) : js.web.ml.ML;
 	/**
+		From partial interface in attribution.idl
+		Unhandled extended attribute SecureContext
+		Unhandled extended attribute SameObject
+	**/
+	var attribution(default, null) : js.web.ads.Attribution;
+	/**
 		From partial interface in audio-session.idl
 	**/
 	var audioSession(default, null) : js.web.media.AudioSession;
+	/**
+		From partial interface in bluetooth.idl
+		Unhandled extended attribute SameObject
+	**/
+	var bluetooth(default, null) : js.web.device.Bluetooth;
 	/**
 		From partial interface in clipboard-apis.idl
 		Unhandled extended attribute SecureContext
@@ -154,6 +167,10 @@ package js.web.html;
 		Unhandled extended attribute SameObject
 	**/
 	var contacts(default, null) : js.web.misc.ContactsManager;
+	/**
+		From partial interface in cpu-performance.idl
+	**/
+	var cpuPerformance(default, null) : Int;
 	/**
 		From partial interface in credential-management.idl
 		Unhandled extended attribute SecureContext
@@ -170,6 +187,11 @@ package js.web.html;
 		Unhandled extended attribute SameObject
 	**/
 	var geolocation(default, null) : js.web.device.Geolocation;
+	/**
+		From partial interface in hid.idl
+		Unhandled extended attribute SameObject
+	**/
+	var hid(default, null) : js.web.device.HID;
 	/**
 		From partial interface in html.idl
 		Unhandled extended attribute SameObject
@@ -232,12 +254,6 @@ package js.web.html;
 	**/
 	var maxTouchPoints(default, null) : Int;
 	/**
-		From partial interface in ppa.idl
-		Unhandled extended attribute SecureContext
-		Unhandled extended attribute SameObject
-	**/
-	var privateAttribution(default, null) : js.web.ads.PrivateAttribution;
-	/**
 		From partial interface in presentation-api.idl
 		Unhandled extended attribute SecureContext
 		Unhandled extended attribute SameObject
@@ -260,35 +276,16 @@ package js.web.html;
 	**/
 	var serviceWorker(default, null) : js.web.sw.ServiceWorkerContainer;
 	/**
-		From partial interface in turtledove.idl
-	**/
-	var deprecatedRunAdAuctionEnforcesKAnonymity(default, null) : Bool;
-	/**
-		From partial interface in turtledove.idl
+		From partial interface in usb.idl
 		Unhandled extended attribute SameObject
 	**/
-	var protectedAudience(default, null) : js.web.ads.ProtectedAudience;
+	var usb(default, null) : js.web.device.USB;
 	/**
 		From partial interface in virtual-keyboard.idl
 		Unhandled extended attribute SecureContext
 		Unhandled extended attribute SameObject
 	**/
 	var virtualKeyboard(default, null) : js.web.device.VirtualKeyboard;
-	/**
-		From partial interface in web-bluetooth.idl
-		Unhandled extended attribute SameObject
-	**/
-	var bluetooth(default, null) : js.web.device.Bluetooth;
-	/**
-		From partial interface in webhid.idl
-		Unhandled extended attribute SameObject
-	**/
-	var hid(default, null) : js.web.device.HID;
-	/**
-		From partial interface in webusb.idl
-		Unhandled extended attribute SameObject
-	**/
-	var usb(default, null) : js.web.device.USB;
 	/**
 		From partial interface in webxr.idl
 		Unhandled extended attribute SecureContext
@@ -305,10 +302,6 @@ package js.web.html;
 	**/
 	function adAuctionComponents(numAdComponents:Int):Array<String>;
 	/**
-		From partial interface in turtledove.idl
-	**/
-	function canLoadAdAuctionFencedFrame():Bool;
-	/**
 		From partial interface in web-share.idl
 		Unhandled extended attribute SecureContext
 	**/
@@ -317,14 +310,6 @@ package js.web.html;
 		From interface mixin NavigatorBadge
 	**/
 	function clearAppBadge():js.lib.Promise<Void>;
-	/**
-		From partial interface in turtledove.idl
-	**/
-	function clearOriginJoinedAdInterestGroups(owner:String, ?interestGroupsToKeep:Array<String>):js.lib.Promise<Void>;
-	/**
-		From partial interface in turtledove.idl
-	**/
-	function createAuctionNonce():js.lib.Promise<String>;
 	/**
 		From partial interface in handwriting-recognition.idl
 	**/
@@ -363,21 +348,19 @@ package js.web.html;
 	**/
 	function getInstalledRelatedApps():js.lib.Promise<Array<js.web.misc.RelatedApplication>>;
 	/**
-		From partial interface in turtledove.idl
+		From partial interface in install-element.idl
+		Unhandled extended attribute SecureContext
 	**/
-	function getInterestGroupAdAuctionData(?config:js.web.ads.AdAuctionDataConfig):js.lib.Promise<js.web.ads.AdAuctionData>;
+	overload function install():js.lib.Promise<WebInstallResult>;
+	/**
+		From partial interface in install-element.idl
+		Unhandled extended attribute SecureContext
+	**/
+	overload function install(options:InstallParams):js.lib.Promise<WebInstallResult>;
 	/**
 		From interface mixin NavigatorPlugins
 	**/
 	function javaEnabled():Bool;
-	/**
-		From partial interface in turtledove.idl
-	**/
-	function joinAdInterestGroup(group:js.web.ads.AuctionAdInterestGroup):js.lib.Promise<Void>;
-	/**
-		From partial interface in turtledove.idl
-	**/
-	function leaveAdInterestGroup(?group:js.web.ads.AuctionAdInterestGroupKey):js.lib.Promise<Void>;
 	/**
 		From partial interface in handwriting-recognition.idl
 	**/
@@ -398,10 +381,6 @@ package js.web.html;
 	**/
 	function requestMediaKeySystemAccess(keySystem:String, supportedConfigurations:Array<js.web.media.MediaKeySystemConfiguration>):js.lib.Promise<js.web.media.MediaKeySystemAccess>;
 	/**
-		From partial interface in turtledove.idl
-	**/
-	function runAdAuction(config:js.web.ads.AuctionAdConfig):js.lib.Promise<Null<haxe.extern.EitherType<String, js.web.ads.FencedFrameConfig>>>;
-	/**
 		From partial interface in beacon.idl
 	**/
 	function sendBeacon(url:String, ?data:Null<js.web.net.BodyInit> = null):Bool;
@@ -419,10 +398,6 @@ package js.web.html;
 		Unhandled extended attribute SecureContext
 	**/
 	function unregisterProtocolHandler(scheme:String, url:String):Void;
-	/**
-		From partial interface in turtledove.idl
-	**/
-	function updateAdInterestGroups():Void;
 	/**
 		From partial interface in vibration.idl
 	**/

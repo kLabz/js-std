@@ -20,16 +20,16 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from @webref/idl/web-animations-2.idl. Do not edit!
+// This file is generated from @webref/idl/animation-triggers.idl. Do not edit!
 
 package js.web.css;
 
 @:native("AnimationTrigger") extern class AnimationTrigger {
 	var timeline : AnimationTimeline;
-	var type : AnimationTriggerType;
-	var rangeStart : Any;
-	var rangeEnd : Any;
-	var exitRangeStart : Any;
-	var exitRangeEnd : Any;
+	var behavior : AnimationTriggerBehavior;
+	var activationRangeStart : Any;
+	var activationRangeEnd : Any;
+	var activeRangeStart : Any;
+	var activeRangeEnd : Any;
 	function new(?options:AnimationTriggerOptions):Void;
 }

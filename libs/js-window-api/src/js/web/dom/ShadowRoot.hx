@@ -27,9 +27,9 @@ package js.web.dom;
 @:native("ShadowRoot") extern class ShadowRoot extends DocumentFragment {
 	var mode(default, null) : ShadowRootMode;
 	var delegatesFocus(default, null) : Bool;
+	var serializable(default, null) : Bool;
 	var slotAssignment(default, null) : SlotAssignmentMode;
 	var clonable(default, null) : Bool;
-	var serializable(default, null) : Bool;
 	var host(default, null) : Element;
 	var onslotchange : js.web.html.EventHandler;
 	/**
@@ -65,6 +65,14 @@ package js.web.dom;
 	**/
 	var innerHTML : haxe.extern.EitherType<TrustedHTML, String>;
 	/**
+		From partial interface in html.idl
+	**/
+	function appendHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
+	/**
+		From partial interface in html.idl
+	**/
+	function appendHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
+	/**
 		From interface mixin DocumentOrShadowRoot
 	**/
 	function getAnimations():Array<js.web.css.Animation>;
@@ -75,5 +83,17 @@ package js.web.dom;
 	/**
 		From partial interface in html.idl
 	**/
-	function setHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>):Void;
+	function prependHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
+	/**
+		From partial interface in html.idl
+	**/
+	function prependHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
+	/**
+		From partial interface in html.idl
+	**/
+	function setHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
+	/**
+		From partial interface in html.idl
+	**/
+	function setHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 }

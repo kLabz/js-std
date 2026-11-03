@@ -42,12 +42,17 @@ package js.web.perf;
 	var firstInterimResponseStart(default, null) : DOMHighResTimeStamp;
 	var responseStart(default, null) : DOMHighResTimeStamp;
 	var responseEnd(default, null) : DOMHighResTimeStamp;
+	var workerRouterEvaluationStart(default, null) : DOMHighResTimeStamp;
+	var workerCacheLookupStart(default, null) : DOMHighResTimeStamp;
+	var workerMatchedRouterSource(default, null) : String;
+	var workerFinalRouterSource(default, null) : String;
 	var transferSize(default, null) : Float;
 	var encodedBodySize(default, null) : Float;
 	var decodedBodySize(default, null) : Float;
 	var responseStatus(default, null) : Int;
 	var renderBlockingStatus(default, null) : RenderBlockingStatusType;
 	var contentType(default, null) : String;
+	var contentEncoding(default, null) : String;
 	/**
 		From partial interface in server-timing.idl
 	**/

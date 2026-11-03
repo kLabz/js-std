@@ -38,11 +38,11 @@ package js.web.svg;
 	var lengthAdjust(default, null) : SVGAnimatedEnumeration;
 	function getCharNumAtPosition(?point:js.web.dom.DOMPointInit):Int;
 	function getComputedTextLength():Float;
-	function getEndPositionOfChar(charnum:Int):js.web.dom.DOMPoint;
-	function getExtentOfChar(charnum:Int):js.web.dom.DOMRect;
+	function getEndPositionOfChar(charnum:Int):SVGPoint;
+	function getExtentOfChar(charnum:Int):SVGRect;
 	function getNumberOfChars():Int;
 	function getRotationOfChar(charnum:Int):Float;
-	function getStartPositionOfChar(charnum:Int):js.web.dom.DOMPoint;
+	function getStartPositionOfChar(charnum:Int):SVGPoint;
 	function getSubStringLength(charnum:Int, nchars:Int):Float;
 	function selectSubString(charnum:Int, nchars:Int):Void;
 }

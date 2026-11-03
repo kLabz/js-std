@@ -39,11 +39,27 @@ package js.web.dom;
 		From interface mixin ChildNode
 	**/
 	function after(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	function afterHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
+	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	function afterHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	function appendData(data:String):Void;
 	/**
 		From interface mixin ChildNode
 	**/
 	function before(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	function beforeHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
+	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	function beforeHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	function deleteData(offset:Int, count:Int):Void;
 	function insertData(offset:Int, data:String):Void;
 	/**
@@ -55,5 +71,13 @@ package js.web.dom;
 		From interface mixin ChildNode
 	**/
 	function replaceWith(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	function replaceWithHTML(html:String, ?options:js.web.html.SetHTMLOptions):Void;
+	/**
+		From interface mixin NonDocumentTypeChildNode
+	**/
+	function replaceWithHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.SetHTMLUnsafeOptions, TrustedHTMLParserOptions>):Void;
 	function substringData(offset:Int, count:Int):String;
 }

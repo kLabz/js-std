@@ -35,8 +35,4 @@ typedef TextUpdateEventInit = js.web.dom.EventInit & {
 	var selectionStart : Int;
 	@:optional
 	var selectionEnd : Int;
-	@:optional
-	var compositionStart : Int;
-	@:optional
-	var compositionEnd : Int;
 };

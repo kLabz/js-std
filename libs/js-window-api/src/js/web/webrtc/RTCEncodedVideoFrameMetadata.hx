@@ -24,7 +24,7 @@
 
 package js.web.webrtc;
 
-typedef RTCEncodedVideoFrameMetadata = {
+typedef RTCEncodedVideoFrameMetadata = RTCEncodedFrameMetadata & {
 	@:optional
 	var frameId : Float;
 	@:optional
@@ -38,21 +38,5 @@ typedef RTCEncodedVideoFrameMetadata = {
 	@:optional
 	var temporalIndex : Int;
 	@:optional
-	var synchronizationSource : Int;
-	@:optional
-	var payloadType : Int;
-	@:optional
-	var contributingSources : Array<Int>;
-	@:optional
 	var timestamp : Float;
-	@:optional
-	var rtpTimestamp : Int;
-	@:optional
-	var receiveTime : js.web.perf.DOMHighResTimeStamp;
-	@:optional
-	var captureTime : js.web.perf.DOMHighResTimeStamp;
-	@:optional
-	var senderCaptureTimeOffset : js.web.perf.DOMHighResTimeStamp;
-	@:optional
-	var mimeType : String;
 };

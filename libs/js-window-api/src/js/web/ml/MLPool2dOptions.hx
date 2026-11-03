@@ -36,7 +36,7 @@ typedef MLPool2dOptions = MLOperatorOptions & {
 	@:optional
 	var layout : MLInputOperandLayout;
 	@:optional
-	var roundingType : MLRoundingType;
+	var outputShapeRounding : MLRoundingType;
 	@:optional
 	var outputSizes : Array<Int>;
 };

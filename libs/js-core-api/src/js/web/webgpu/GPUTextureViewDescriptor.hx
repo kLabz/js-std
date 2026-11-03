@@ -41,4 +41,6 @@ typedef GPUTextureViewDescriptor = GPUObjectDescriptorBase & {
 	var baseArrayLayer : GPUIntegerCoordinate;
 	@:optional
 	var arrayLayerCount : GPUIntegerCoordinate;
+	@:optional
+	var swizzle : String;
 };

@@ -42,7 +42,7 @@ typedef MediaTrackConstraintSet = {
 	@:optional
 	var sampleSize : ConstrainULong;
 	@:optional
-	var echoCancellation : ConstrainBoolean;
+	var echoCancellation : ConstrainBooleanOrDOMString;
 	@:optional
 	var autoGainControl : ConstrainBoolean;
 	@:optional
@@ -91,6 +91,18 @@ typedef MediaTrackConstraintSet = {
 	var zoom : haxe.extern.EitherType<Bool, ConstrainDouble>;
 	@:optional
 	var torch : ConstrainBoolean;
+	@:optional
+	var gestureReactions : ConstrainBoolean;
+	@:optional
+	var faceFraming : ConstrainBoolean;
+	@:optional
+	var eyeGazeCorrection : ConstrainBoolean;
+	@:optional
+	var voiceIsolation : ConstrainBoolean;
+	@:optional
+	var humanFaceDetectionMode : ConstrainDOMString;
+	@:optional
+	var backgroundSegmentationMask : ConstrainBoolean;
 	@:optional
 	var displaySurface : ConstrainDOMString;
 	@:optional

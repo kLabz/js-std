@@ -38,14 +38,11 @@ package js.web.sw;
 	var dir(default, null) : NotificationDirection;
 	var lang(default, null) : String;
 	var body(default, null) : String;
+	var navigate(default, null) : String;
 	var tag(default, null) : String;
 	var image(default, null) : String;
 	var icon(default, null) : String;
 	var badge(default, null) : String;
-	/**
-		Unhandled extended attribute SameObject
-	**/
-	var vibrate(default, null) : Array<Int>;
 	var timestamp(default, null) : js.web.perf.EpochTimeStamp;
 	var renotify(default, null) : Bool;
 	var silent(default, null) : Null<Bool>;

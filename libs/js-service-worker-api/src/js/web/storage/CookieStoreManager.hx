@@ -20,7 +20,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from @webref/idl/cookie-store.idl. Do not edit!
+// This file is generated from @webref/idl/cookiestore.idl. Do not edit!
 
 package js.web.storage;
 

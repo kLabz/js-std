@@ -26,9 +26,9 @@ package js.web.html;
 
 @:native("WorkerNavigator") extern class WorkerNavigator {
 	/**
-		From interface mixin NavigatorDeviceMemory
+		From interface mixin NavigatorCrossOriginStorage
 	**/
-	var deviceMemory(default, null) : Float;
+	var crossOriginStorage(default, null) : js.web.storage.CrossOriginStorageManager;
 	/**
 		From interface mixin GlobalPrivacyControl
 	**/
@@ -118,6 +118,11 @@ package js.web.html;
 	**/
 	var ml(default, null) : js.web.ml.ML;
 	/**
+		From partial interface in hid.idl
+		Unhandled extended attribute SameObject
+	**/
+	var hid(default, null) : js.web.device.HID;
+	/**
 		From partial interface in media-capabilities.idl
 		Unhandled extended attribute SameObject
 	**/
@@ -139,12 +144,7 @@ package js.web.html;
 	**/
 	var serviceWorker(default, null) : js.web.sw.ServiceWorkerContainer;
 	/**
-		From partial interface in webhid.idl
-		Unhandled extended attribute SameObject
-	**/
-	var hid(default, null) : js.web.device.HID;
-	/**
-		From partial interface in webusb.idl
+		From partial interface in usb.idl
 		Unhandled extended attribute SameObject
 	**/
 	var usb(default, null) : js.web.device.USB;

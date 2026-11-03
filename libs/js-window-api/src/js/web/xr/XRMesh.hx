@@ -29,7 +29,7 @@ package js.web.xr;
 		Unhandled extended attribute SameObject
 	**/
 	var meshSpace(default, null) : XRSpace;
-	var vertices(default, null) : Array<js.lib.Float32Array>;
+	var vertices(default, null) : js.lib.Float32Array;
 	var indices(default, null) : js.lib.Uint32Array;
 	var lastChangedTime(default, null) : js.web.perf.DOMHighResTimeStamp;
 	var semanticLabel(default, null) : Null<String>;

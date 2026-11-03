@@ -58,7 +58,7 @@ package js.web.ml;
 		From partial interface in webnn.idl
 	**/
 	@:native("cast")
-	function cast_(input:MLOperand, type:MLOperandDataType, ?options:MLOperatorOptions):MLOperand;
+	function cast_(input:MLOperand, dataType:MLOperandDataType, ?options:MLOperatorOptions):MLOperand;
 	/**
 		From partial interface in webnn.idl
 	**/
@@ -72,7 +72,7 @@ package js.web.ml;
 	**/
 	function concat(inputs:Array<MLOperand>, axis:Int, ?options:MLOperatorOptions):MLOperand;
 	overload function constant(descriptor:MLOperandDescriptor, buffer:js.web.dom.AllowSharedBufferSource):MLOperand;
-	overload function constant(type:MLOperandDataType, value:MLNumber):MLOperand;
+	overload function constant(dataType:MLOperandDataType, value:MLNumber):MLOperand;
 	overload function constant(tensor:MLTensor):MLOperand;
 	/**
 		From partial interface in webnn.idl
@@ -175,6 +175,14 @@ package js.web.ml;
 		From partial interface in webnn.idl
 	**/
 	function instanceNormalization(input:MLOperand, ?options:MLInstanceNormalizationOptions):MLOperand;
+	/**
+		From partial interface in webnn.idl
+	**/
+	function isInfinite(a:MLOperand, ?options:MLOperatorOptions):MLOperand;
+	/**
+		From partial interface in webnn.idl
+	**/
+	function isNaN(a:MLOperand, ?options:MLOperatorOptions):MLOperand;
 	/**
 		From partial interface in webnn.idl
 	**/
@@ -331,6 +339,10 @@ package js.web.ml;
 		From partial interface in webnn.idl
 	**/
 	function reverse(input:MLOperand, ?options:MLReverseOptions):MLOperand;
+	/**
+		From partial interface in webnn.idl
+	**/
+	function roundEven(input:MLOperand, ?options:MLOperatorOptions):MLOperand;
 	/**
 		From partial interface in webnn.idl
 	**/

@@ -25,35 +25,49 @@
 package js.web.html;
 
 @:native("HTMLScriptElement") extern class HTMLScriptElement extends HTMLElement {
-	var src : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var type : String;
+	var src : haxe.extern.EitherType<js.web.dom.TrustedScriptURL, String>;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var noModule : Bool;
 	var async : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var defer : Bool;
-	var crossOrigin : Null<String>;
-	var text : String;
-	var integrity : String;
-	var referrerPolicy : String;
 	/**
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute PutForwards
+		Unhandled extended attribute Reflect
 	**/
 	var blocking(default, null) : js.web.dom.DOMTokenList;
-	var fetchPriority : String;
+	var crossOrigin : Null<String>;
+	var referrerPolicy : String;
 	/**
-		From interface mixin HTMLAttributionSrcElementUtils
+		Unhandled extended attribute Reflect
 	**/
-	var attributionSrc : String;
+	var integrity : String;
+	var fetchPriority : String;
+	var innerText : haxe.extern.EitherType<js.web.dom.TrustedScript, String>;
+	var textContent : Null<haxe.extern.EitherType<js.web.dom.TrustedScript, String>>;
+	var text : haxe.extern.EitherType<js.web.dom.TrustedScript, String>;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var charset : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var event : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var htmlFor : String;
 	function supports(type:String):Bool;

@@ -31,8 +31,4 @@ package js.web.svg;
 	var y(default, null) : SVGAnimatedLength;
 	var width(default, null) : SVGAnimatedLength;
 	var height(default, null) : SVGAnimatedLength;
-	/**
-		From interface mixin SVGURIReference
-	**/
-	var href(default, null) : SVGAnimatedString;
 }

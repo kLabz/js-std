@@ -36,6 +36,7 @@ package js.web.webgpu;
 	var dimension(default, null) : GPUTextureDimension;
 	var format(default, null) : GPUTextureFormat;
 	var usage(default, null) : GPUFlagsConstant;
+	var textureBindingViewDimension(default, null) : haxe.extern.EitherType<GPUTextureViewDimension, Void>;
 	/**
 		From interface mixin GPUObjectBase
 	**/

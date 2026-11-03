@@ -74,6 +74,10 @@ package js.web.webgpu;
 	overload function setBindGroup(index:GPUIndex32, bindGroup:Null<GPUBindGroup>, dynamicOffsetsData:js.lib.Uint32Array, dynamicOffsetsDataStart:GPUSize64, dynamicOffsetsDataLength:GPUSize32):Void;
 	function setBlendConstant(color:GPUColor):Void;
 	/**
+		From interface mixin GPUBindingCommandsMixin
+	**/
+	function setImmediates(rangeOffset:GPUSize32, data:js.web.dom.AllowSharedBufferSource, ?dataOffset:GPUSize64 = 0, ?dataSize:GPUSize64):Void;
+	/**
 		From interface mixin GPURenderCommandsMixin
 	**/
 	function setIndexBuffer(buffer:GPUBuffer, indexFormat:GPUIndexFormat, ?offset:GPUSize64 = 0, ?size:GPUSize64):Void;

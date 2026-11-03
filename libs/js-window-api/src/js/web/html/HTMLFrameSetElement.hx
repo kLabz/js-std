@@ -25,7 +25,13 @@
 package js.web.html;
 
 @:native("HTMLFrameSetElement") extern class HTMLFrameSetElement extends HTMLElement {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var cols : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var rows : String;
 	/**
 		From interface mixin WindowEventHandlers

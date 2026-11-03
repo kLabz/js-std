@@ -29,5 +29,5 @@ package js.web.device;
 		Unhandled extended attribute SameObject
 	**/
 	var gamepad(default, null) : Gamepad;
-	function new(type:String, eventInitDict:GamepadEventInit):Void;
+	function new(type:String, ?eventInitDict:GamepadEventInit):Void;
 }

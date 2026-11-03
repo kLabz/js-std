@@ -25,6 +25,9 @@
 package js.web.html;
 
 @:native("HTMLMapElement") extern class HTMLMapElement extends HTMLElement {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var name : String;
 	/**
 		Unhandled extended attribute SameObject

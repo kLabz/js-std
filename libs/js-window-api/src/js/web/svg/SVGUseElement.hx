@@ -42,14 +42,6 @@ package js.web.svg;
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
-		Unhandled extended attribute SameObject
-	**/
-	var instanceRoot(default, null) : Null<SVGElement>;
-	/**
-		Unhandled extended attribute SameObject
-	**/
-	var animatedInstanceRoot(default, null) : Null<SVGElement>;
-	/**
 		From interface mixin SVGURIReference
 		Unhandled extended attribute SameObject
 	**/

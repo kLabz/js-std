@@ -25,5 +25,5 @@
 package js.web.webrtc;
 
 @:native("RTCRtpScriptTransform") extern class RTCRtpScriptTransform {
-	function new(worker:js.web.html.Worker, ?options:Any, ?transfer:Array<{ }>):Void;
+	function new(workerOrWorkerAndParameters:WorkerOrWorkerAndParameters, ?options:Any, ?transfer:Array<{ }>):Void;
 }

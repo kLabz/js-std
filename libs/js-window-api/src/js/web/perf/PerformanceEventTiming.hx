@@ -29,6 +29,7 @@ package js.web.perf;
 	var processingEnd(default, null) : DOMHighResTimeStamp;
 	var cancelable(default, null) : Bool;
 	var target(default, null) : Null<js.web.dom.Node>;
+	var targetSelector(default, null) : String;
 	var interactionId(default, null) : Float;
 	/**
 		Unhandled extended attribute Default

@@ -20,7 +20,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from @webref/idl/uievents.idl. Do not edit!
+// This file is generated from @webref/idl/pointerevents.idl. Do not edit!
 
 package js.web.dom;
 
@@ -73,7 +73,7 @@ package js.web.dom;
 	function new(type:String, ?eventInitDict:MouseEventInit):Void;
 	function getModifierState(keyArg:String):Bool;
 	/**
-		From partial interface in uievents.idl
+		From partial interface in pointerevents.idl
 	**/
 	function initMouseEvent(typeArg:String, ?bubblesArg:Bool = false, ?cancelableArg:Bool = false, ?viewArg:Null<js.web.html.Window> = null, ?detailArg:Int = 0, ?screenXArg:Int = 0, ?screenYArg:Int = 0, ?clientXArg:Int = 0, ?clientYArg:Int = 0, ?ctrlKeyArg:Bool = false, ?altKeyArg:Bool = false, ?shiftKeyArg:Bool = false, ?metaKeyArg:Bool = false, ?buttonArg:Int = 0, ?relatedTargetArg:Null<EventTarget> = null):Void;
 }

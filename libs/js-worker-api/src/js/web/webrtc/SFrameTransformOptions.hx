@@ -25,6 +25,5 @@
 package js.web.webrtc;
 
 typedef SFrameTransformOptions = {
-	@:optional
-	var role : SFrameTransformRole;
+	var cipherSuite : SFrameCipherSuite;
 };

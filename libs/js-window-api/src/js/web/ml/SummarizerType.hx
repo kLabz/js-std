@@ -25,7 +25,7 @@
 package js.web.ml;
 
 enum abstract SummarizerType(String) {
-	var TL_DR = "tl;dr";
+	var TLDR = "tldr";
 	var TEASER = "teaser";
 	var KEY_POINTS = "key-points";
 	var HEADLINE = "headline";

@@ -37,6 +37,7 @@ package js.web.perf;
 	var redirectCount(default, null) : Int;
 	var criticalCHRestart(default, null) : DOMHighResTimeStamp;
 	var notRestoredReasons(default, null) : Null<js.web.html.NotRestoredReasons>;
+	var confidence(default, null) : PerformanceTimingConfidence;
 	/**
 		From partial interface in prerendering-revamped.idl
 	**/

@@ -71,12 +71,12 @@ package js.web.sw;
 	**/
 	var oncontentdelete : js.web.html.EventHandler;
 	/**
-		From partial interface in cookie-store.idl
+		From partial interface in cookiestore.idl
 		Unhandled extended attribute SameObject
 	**/
 	var cookieStore(default, null) : js.web.storage.CookieStore;
 	/**
-		From partial interface in cookie-store.idl
+		From partial interface in cookiestore.idl
 	**/
 	var oncookiechange : js.web.html.EventHandler;
 	/**
@@ -87,14 +87,6 @@ package js.web.sw;
 		From partial interface in notifications.idl
 	**/
 	var onnotificationclose : js.web.html.EventHandler;
-	/**
-		From partial interface in payment-handler.idl
-	**/
-	var oncanmakepayment : js.web.html.EventHandler;
-	/**
-		From partial interface in payment-handler.idl
-	**/
-	var onpaymentrequest : js.web.html.EventHandler;
 	/**
 		From partial interface in periodic-background-sync.idl
 	**/
@@ -107,6 +99,14 @@ package js.web.sw;
 		From partial interface in push-api.idl
 	**/
 	var onpushsubscriptionchange : js.web.html.EventHandler;
+	/**
+		From partial interface in web-based-payment-handler.idl
+	**/
+	var oncanmakepayment : js.web.html.EventHandler;
+	/**
+		From partial interface in web-based-payment-handler.idl
+	**/
+	var onpaymentrequest : js.web.html.EventHandler;
 	/**
 		Unhandled extended attribute NewObject
 	**/

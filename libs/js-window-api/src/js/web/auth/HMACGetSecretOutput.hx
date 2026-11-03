@@ -20,7 +20,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from @webref/idl/fido.idl. Do not edit!
+// This file is generated from @webref/idl/fido-client-to-authenticator-protocol.idl. Do not edit!
 
 package js.web.auth;
 

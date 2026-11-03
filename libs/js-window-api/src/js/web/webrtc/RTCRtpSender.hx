@@ -30,15 +30,11 @@ package js.web.webrtc;
 	/**
 		From partial interface in webrtc-encoded-transform.idl
 	**/
-	var transform : Null<RTCRtpTransform>;
+	var transform : Null<RTCRtpSenderTransform>;
 	/**
 		From partial interface in webrtc.idl
 	**/
 	var dtmf(default, null) : Null<RTCDTMFSender>;
-	/**
-		From partial interface in webrtc-encoded-transform.idl
-	**/
-	function generateKeyFrame(?rids:Array<String>):js.lib.Promise<Void>;
 	function getCapabilities(kind:String):Null<RTCRtpCapabilities>;
 	function getParameters():RTCRtpSendParameters;
 	function getStats():js.lib.Promise<RTCStatsReport>;

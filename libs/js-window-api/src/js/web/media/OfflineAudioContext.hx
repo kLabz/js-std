@@ -25,11 +25,12 @@
 package js.web.media;
 
 @:native("OfflineAudioContext") extern class OfflineAudioContext extends BaseAudioContext {
-	var length(default, null) : Int;
+	var length(default, null) : Null<Int>;
 	var oncomplete : js.web.html.EventHandler;
 	overload function new(numberOfChannels:Int, length:Int, sampleRate:Float):Void;
 	overload function new(contextOptions:OfflineAudioContextOptions):Void;
+	function close():js.lib.Promise<Void>;
 	function resume():js.lib.Promise<Void>;
-	function startRendering():js.lib.Promise<AudioBuffer>;
+	function startRendering(?chunkSize:Null<Int> = null):js.lib.Promise<AudioBuffer>;
 	function suspend(suspendTime:Float):js.lib.Promise<Void>;
 }

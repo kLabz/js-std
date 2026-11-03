@@ -33,4 +33,8 @@ package js.web.perf;
 		From interface mixin PaintTimingMixin
 	**/
 	var presentationTime(default, null) : Null<DOMHighResTimeStamp>;
+	/**
+		Unhandled extended attribute Default
+	**/
+	function toJSON():{ };
 }

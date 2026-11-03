@@ -25,18 +25,56 @@
 package js.web.html;
 
 @:native("HTMLTextAreaElement") extern class HTMLTextAreaElement extends HTMLElement {
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var autocomplete : String;
+	/**
+		Unhandled extended attribute ReflectPositiveWithFallback
+		Unhandled extended attribute ReflectDefault
+	**/
 	var cols : Int;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var dirName : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var disabled : Bool;
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		Unhandled extended attribute ReflectNonNegative
+	**/
 	var maxLength : Int;
+	/**
+		Unhandled extended attribute ReflectNonNegative
+	**/
 	var minLength : Int;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var name : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var placeholder : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var readOnly : Bool;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var required : Bool;
+	/**
+		Unhandled extended attribute ReflectPositiveWithFallback
+		Unhandled extended attribute ReflectDefault
+	**/
 	var rows : Int;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var wrap : String;
 	var type(default, null) : String;
 	var defaultValue : String;

@@ -25,7 +25,14 @@
 package js.web.html;
 
 @:native("HTMLProgressElement") extern class HTMLProgressElement extends HTMLElement {
+	/**
+		Unhandled extended attribute ReflectSetter
+	**/
 	var value : Float;
+	/**
+		Unhandled extended attribute ReflectPositive
+		Unhandled extended attribute ReflectDefault
+	**/
 	var max : Float;
 	var position(default, null) : Float;
 	var labels(default, null) : js.web.dom.NodeList;

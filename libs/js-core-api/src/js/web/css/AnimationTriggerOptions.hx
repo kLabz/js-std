@@ -20,7 +20,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from @webref/idl/web-animations-2.idl. Do not edit!
+// This file is generated from @webref/idl/animation-triggers.idl. Do not edit!
 
 package js.web.css;
 
@@ -28,13 +28,13 @@ typedef AnimationTriggerOptions = {
 	@:optional
 	var timeline : Null<AnimationTimeline>;
 	@:optional
-	var type : Null<AnimationTriggerType>;
+	var behavior : Null<AnimationTriggerBehavior>;
 	@:optional
-	var rangeStart : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<CSSNumericValue, haxe.extern.EitherType<CSSKeywordValue, String>>>;
+	var activationRangeStart : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<CSSNumericValue, haxe.extern.EitherType<CSSKeywordValue, String>>>;
 	@:optional
-	var rangeEnd : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<CSSNumericValue, haxe.extern.EitherType<CSSKeywordValue, String>>>;
+	var activationRangeEnd : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<CSSNumericValue, haxe.extern.EitherType<CSSKeywordValue, String>>>;
 	@:optional
-	var exitRangeStart : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<CSSNumericValue, haxe.extern.EitherType<CSSKeywordValue, String>>>;
+	var activeRangeStart : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<CSSNumericValue, haxe.extern.EitherType<CSSKeywordValue, String>>>;
 	@:optional
-	var exitRangeEnd : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<CSSNumericValue, haxe.extern.EitherType<CSSKeywordValue, String>>>;
+	var activeRangeEnd : haxe.extern.EitherType<TimelineRangeOffset, haxe.extern.EitherType<CSSNumericValue, haxe.extern.EitherType<CSSKeywordValue, String>>>;
 };

@@ -443,6 +443,10 @@ package js.web.dom;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
+	var oninstallresult : js.web.html.EventHandler;
+	/**
+		From interface mixin GlobalEventHandlers
+	**/
 	var onpointerover : js.web.html.EventHandler;
 	/**
 		From interface mixin GlobalEventHandlers
@@ -520,6 +524,10 @@ package js.web.dom;
 		From partial interface in css-regions.idl
 	**/
 	var namedFlows(default, null) : js.web.css.NamedFlowMap;
+	/**
+		From partial interface in css-view-transitions.idl
+	**/
+	var activeViewTransition(default, null) : Null<js.web.css.ViewTransition>;
 	/**
 		From partial interface in cssom-view.idl
 	**/
@@ -725,6 +733,12 @@ package js.web.dom;
 		From partial interface in web-animations.idl
 	**/
 	var timeline(default, null) : js.web.css.DocumentTimeline;
+	/**
+		From partial interface in webmcp.idl
+		Unhandled extended attribute SecureContext
+		Unhandled extended attribute SameObject
+	**/
+	var modelContext(default, null) : js.web.ml.ModelContext;
 	function new():Void;
 	function adoptNode(node:Node):Node;
 	/**
@@ -732,6 +746,10 @@ package js.web.dom;
 		Unhandled extended attribute Unscopable
 	**/
 	function append(nodes:haxe.Rest<haxe.Rest<haxe.extern.EitherType<Node, String>>>):Void;
+	/**
+		From interface mixin ARIANotifyMixin
+	**/
+	function ariaNotify(announcement:String, ?options:AriaNotificationOptions):Void;
 	/**
 		From partial interface in html.idl
 	**/
@@ -920,7 +938,11 @@ package js.web.dom;
 	/**
 		From partial interface in html.idl
 	**/
-	function parseHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>):Document;
+	function parseHTML(html:String, ?options:js.web.html.SetHTMLOptions):Document;
+	/**
+		From partial interface in html.idl
+	**/
+	function parseHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.ParseHTMLUnsafeOptions, TrustedHTMLParserOptions>):Document;
 	/**
 		From interface mixin ParentNode
 		Unhandled extended attribute Unscopable
@@ -969,11 +991,7 @@ package js.web.dom;
 	**/
 	function requestStorageAccess():js.lib.Promise<Void>;
 	/**
-		From partial interface in requestStorageAccessFor.idl
-	**/
-	function requestStorageAccessFor(requestedOrigin:String):js.lib.Promise<Void>;
-	/**
-		From partial interface in css-view-transitions-2.idl
+		From partial interface in css-view-transitions.idl
 	**/
 	function startViewTransition(?callbackOptions:haxe.extern.EitherType<js.web.css.ViewTransitionUpdateCallback, js.web.css.StartViewTransitionOptions>):js.web.css.ViewTransition;
 	/**

@@ -30,5 +30,7 @@ package js.web.media;
 @:native("SpeechRecognitionResult") extern class SpeechRecognitionResult {
 	var length(default, null) : Int;
 	var isFinal(default, null) : Bool;
-	function item(index:Int):SpeechRecognitionAlternative;
+	var speechStartTime(default, null) : Float;
+	var speechEndTime(default, null) : Float;
+	function item(index:Int):Null<SpeechRecognitionAlternative>;
 }

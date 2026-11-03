@@ -25,23 +25,85 @@
 package js.web.html;
 
 @:native("HTMLAreaElement") extern class HTMLAreaElement extends HTMLElement {
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var alt : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var coords : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var shape : String;
-	var target : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var download : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var ping : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var rel : String;
 	/**
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute PutForwards
+		Unhandled extended attribute Reflect
 	**/
 	var relList(default, null) : js.web.dom.DOMTokenList;
 	var referrerPolicy : String;
 	/**
-		From interface mixin HTMLAttributionSrcElementUtils
+		From interface mixin HyperlinkElementUtils
 	**/
-	var attributionSrc : String;
+	var origin(default, null) : String;
+	/**
+		From interface mixin HyperlinkElementUtils
+	**/
+	var protocol : String;
+	/**
+		From interface mixin HyperlinkElementUtils
+	**/
+	var username : String;
+	/**
+		From interface mixin HyperlinkElementUtils
+	**/
+	var password : String;
+	/**
+		From interface mixin HyperlinkElementUtils
+	**/
+	var host : String;
+	/**
+		From interface mixin HyperlinkElementUtils
+	**/
+	var hostname : String;
+	/**
+		From interface mixin HyperlinkElementUtils
+	**/
+	var port : String;
+	/**
+		From interface mixin HyperlinkElementUtils
+	**/
+	var pathname : String;
+	/**
+		From interface mixin HyperlinkElementUtils
+	**/
+	var search : String;
+	/**
+		From interface mixin HyperlinkElementUtils
+	**/
+	var hash : String;
+	/**
+		From interface mixin HyperlinkElementUtils
+	**/
+	var hreflang : String;
+	/**
+		From interface mixin HyperlinkElementUtils
+	**/
+	var type : String;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
 	**/
@@ -49,45 +111,10 @@ package js.web.html;
 	/**
 		From interface mixin HTMLHyperlinkElementUtils
 	**/
-	var origin(default, null) : String;
-	/**
-		From interface mixin HTMLHyperlinkElementUtils
-	**/
-	var protocol : String;
-	/**
-		From interface mixin HTMLHyperlinkElementUtils
-	**/
-	var username : String;
-	/**
-		From interface mixin HTMLHyperlinkElementUtils
-	**/
-	var password : String;
-	/**
-		From interface mixin HTMLHyperlinkElementUtils
-	**/
-	var host : String;
-	/**
-		From interface mixin HTMLHyperlinkElementUtils
-	**/
-	var hostname : String;
-	/**
-		From interface mixin HTMLHyperlinkElementUtils
-	**/
-	var port : String;
-	/**
-		From interface mixin HTMLHyperlinkElementUtils
-	**/
-	var pathname : String;
-	/**
-		From interface mixin HTMLHyperlinkElementUtils
-	**/
-	var search : String;
-	/**
-		From interface mixin HTMLHyperlinkElementUtils
-	**/
-	var hash : String;
+	var target : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var noHref : Bool;
 	/**

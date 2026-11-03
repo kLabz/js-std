@@ -24,4 +24,4 @@
 
 package js.web.dom;
 
-typedef BufferSource = haxe.extern.EitherType<js.lib.ArrayBufferView, js.lib.ArrayBuffer>;
+typedef BufferSource = haxe.extern.EitherType<js.lib.ArrayBuffer, js.lib.ArrayBufferView>;

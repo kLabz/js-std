@@ -48,4 +48,8 @@ package js.web.net;
 		Unhandled extended attribute NewObject
 	**/
 	function text():js.lib.Promise<String>;
+	/**
+		Unhandled extended attribute NewObject
+	**/
+	function textStream():ReadableStream;
 }

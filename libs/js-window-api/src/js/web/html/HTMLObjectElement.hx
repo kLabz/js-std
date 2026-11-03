@@ -25,11 +25,26 @@
 package js.web.html;
 
 @:native("HTMLObjectElement") extern class HTMLObjectElement extends HTMLElement {
+	/**
+		Unhandled extended attribute ReflectURL
+	**/
 	var data : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var type : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var name : String;
 	var form(default, null) : Null<HTMLFormElement>;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var width : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var height : String;
 	var contentDocument(default, null) : Null<js.web.dom.Document>;
 	var contentWindow(default, null) : Null<js.html.Window>;
@@ -38,46 +53,57 @@ package js.web.html;
 	var validationMessage(default, null) : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var align : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var archive : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var code : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var declare : Bool;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var hspace : Int;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var standby : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var vspace : Int;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute ReflectURL
 	**/
 	var codeBase : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var codeType : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var useMap : String;
 	/**
 		From partial interface in html.idl
+		Unhandled extended attribute Reflect
 	**/
 	var border : String;
 	function checkValidity():Bool;

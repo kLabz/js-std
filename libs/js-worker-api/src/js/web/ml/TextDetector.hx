@@ -29,5 +29,7 @@ package js.web.ml;
 **/
 @:native("TextDetector") extern class TextDetector {
 	function new():Void;
+	function availability(options:TextDetectorOptions):js.lib.Promise<Availability>;
+	function create(?options:TextDetectorCreateOptions):js.lib.Promise<TextDetector>;
 	function detect(image:js.web.canvas.ImageBitmapSource):js.lib.Promise<Array<DetectedText>>;
 }

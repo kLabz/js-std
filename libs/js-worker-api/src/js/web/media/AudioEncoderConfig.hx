@@ -26,13 +26,7 @@ package js.web.media;
 
 typedef AudioEncoderConfig = {
 	var codec : String;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	var sampleRate : Int;
-	/**
-		Unhandled extended attribute EnforceRange
-	**/
 	var numberOfChannels : Int;
 	/**
 		Unhandled extended attribute EnforceRange

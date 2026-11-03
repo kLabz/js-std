@@ -29,5 +29,6 @@ package js.web.sw;
 **/
 @:native("PushEvent") extern class PushEvent extends ExtendableEvent {
 	var data(default, null) : Null<PushMessageData>;
+	var notification(default, null) : Null<Notification>;
 	function new(type:String, ?eventInitDict:PushEventInit):Void;
 }

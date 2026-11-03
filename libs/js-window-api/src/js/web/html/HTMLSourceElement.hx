@@ -25,11 +25,32 @@
 package js.web.html;
 
 @:native("HTMLSourceElement") extern class HTMLSourceElement extends HTMLElement {
+	/**
+		Unhandled extended attribute ReflectURL
+	**/
 	var src : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var type : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var srcset : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var sizes : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var media : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var width : Int;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var height : Int;
 }

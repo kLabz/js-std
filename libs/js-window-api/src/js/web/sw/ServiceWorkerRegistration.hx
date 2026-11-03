@@ -39,6 +39,10 @@ package js.web.sw;
 	var updateViaCache(default, null) : ServiceWorkerUpdateViaCache;
 	var onupdatefound : js.web.html.EventHandler;
 	/**
+		From interface mixin PushManagerAttribute
+	**/
+	var pushManager(default, null) : PushManager;
+	/**
 		From partial interface in background-fetch.idl
 	**/
 	var backgroundFetch(default, null) : BackgroundFetchManager;
@@ -52,23 +56,19 @@ package js.web.sw;
 	**/
 	var index(default, null) : ContentIndex;
 	/**
-		From partial interface in cookie-store.idl
+		From partial interface in cookiestore.idl
 		Unhandled extended attribute SameObject
 	**/
 	var cookies(default, null) : js.web.storage.CookieStoreManager;
-	/**
-		From partial interface in payment-handler.idl
-		Unhandled extended attribute SameObject
-	**/
-	var paymentManager(default, null) : PaymentManager;
 	/**
 		From partial interface in periodic-background-sync.idl
 	**/
 	var periodicSync(default, null) : PeriodicSyncManager;
 	/**
-		From partial interface in push-api.idl
+		From partial interface in web-based-payment-handler.idl
+		Unhandled extended attribute SameObject
 	**/
-	var pushManager(default, null) : PushManager;
+	var paymentManager(default, null) : PaymentManager;
 	/**
 		From partial interface in notifications.idl
 	**/

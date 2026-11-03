@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@webref/idl": "3.63.0",
-    "webidl2": "24.4.1"
+    "@webref/idl": "3.86.0",
+    "webidl2": "24.5.0"
   }
 }

@@ -29,6 +29,8 @@ enum abstract GPUTextureFormat(String) {
 	var R8SNORM = "r8snorm";
 	var R8UINT = "r8uint";
 	var R8SINT = "r8sint";
+	var R16UNORM = "r16unorm";
+	var R16SNORM = "r16snorm";
 	var R16UINT = "r16uint";
 	var R16SINT = "r16sint";
 	var R16FLOAT = "r16float";
@@ -39,6 +41,8 @@ enum abstract GPUTextureFormat(String) {
 	var R32UINT = "r32uint";
 	var R32SINT = "r32sint";
 	var R32FLOAT = "r32float";
+	var RG16UNORM = "rg16unorm";
+	var RG16SNORM = "rg16snorm";
 	var RG16UINT = "rg16uint";
 	var RG16SINT = "rg16sint";
 	var RG16FLOAT = "rg16float";
@@ -56,6 +60,8 @@ enum abstract GPUTextureFormat(String) {
 	var RG32UINT = "rg32uint";
 	var RG32SINT = "rg32sint";
 	var RG32FLOAT = "rg32float";
+	var RGBA16UNORM = "rgba16unorm";
+	var RGBA16SNORM = "rgba16snorm";
 	var RGBA16UINT = "rgba16uint";
 	var RGBA16SINT = "rgba16sint";
 	var RGBA16FLOAT = "rgba16float";

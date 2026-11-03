@@ -26,63 +26,81 @@ package js.web.svg;
 
 @:native("SVGAElement") extern class SVGAElement extends SVGGraphicsElement {
 	/**
+		Unhandled extended attribute Reflect
 		Unhandled extended attribute SameObject
 	**/
 	var target(default, null) : SVGAnimatedString;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var download : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var ping : String;
+	/**
+		Unhandled extended attribute Reflect
+	**/
 	var rel : String;
 	/**
+		Unhandled extended attribute Reflect
 		Unhandled extended attribute SameObject
 		Unhandled extended attribute PutForwards
 	**/
 	var relList(default, null) : js.web.dom.DOMTokenList;
-	var hreflang : String;
-	var type : String;
-	var text : String;
 	var referrerPolicy : String;
 	/**
 		From interface mixin SVGURIReference
 	**/
 	var href(default, null) : SVGAnimatedString;
 	/**
-		From partial interface in SVG.idl
+		From interface mixin HyperlinkElementUtils
 	**/
 	var origin(default, null) : String;
 	/**
-		From partial interface in SVG.idl
+		From interface mixin HyperlinkElementUtils
 	**/
 	var protocol : String;
 	/**
-		From partial interface in SVG.idl
+		From interface mixin HyperlinkElementUtils
 	**/
 	var username : String;
 	/**
-		From partial interface in SVG.idl
+		From interface mixin HyperlinkElementUtils
 	**/
 	var password : String;
 	/**
-		From partial interface in SVG.idl
+		From interface mixin HyperlinkElementUtils
 	**/
 	var host : String;
 	/**
-		From partial interface in SVG.idl
+		From interface mixin HyperlinkElementUtils
 	**/
 	var hostname : String;
 	/**
-		From partial interface in SVG.idl
+		From interface mixin HyperlinkElementUtils
 	**/
 	var port : String;
 	/**
-		From partial interface in SVG.idl
+		From interface mixin HyperlinkElementUtils
 	**/
 	var pathname : String;
 	/**
-		From partial interface in SVG.idl
+		From interface mixin HyperlinkElementUtils
 	**/
 	var search : String;
 	/**
-		From partial interface in SVG.idl
+		From interface mixin HyperlinkElementUtils
 	**/
 	var hash : String;
+	/**
+		From interface mixin HyperlinkElementUtils
+		Unhandled extended attribute Reflect
+	**/
+	var hreflang : String;
+	/**
+		From interface mixin HyperlinkElementUtils
+		Unhandled extended attribute Reflect
+	**/
+	var type : String;
 }

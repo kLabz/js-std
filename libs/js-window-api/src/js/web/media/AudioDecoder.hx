@@ -59,7 +59,10 @@ package js.web.media;
 		@see <https://developer.mozilla.org/docs/Web/API/AudioDecoder/flush>
 	**/
 	function flush():js.lib.Promise<Void>;
-	function isConfigSupported(config:AudioDecoderConfig):js.lib.Promise<AudioDecoderSupport>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioDecoder/isConfigSupported_static>
+	**/
+	static function isConfigSupported(config:AudioDecoderConfig):js.lib.Promise<AudioDecoderSupport>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AudioDecoder/reset>
 	**/

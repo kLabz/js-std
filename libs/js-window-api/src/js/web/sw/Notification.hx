@@ -112,5 +112,8 @@ package js.web.sw;
 		@see <https://developer.mozilla.org/docs/Web/API/Notification/close>
 	**/
 	function close():Void;
-	function requestPermission(?deprecatedCallback:NotificationPermissionCallback):js.lib.Promise<NotificationPermission>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Notification/requestPermission_static>
+	**/
+	static function requestPermission(?deprecatedCallback:NotificationPermissionCallback):js.lib.Promise<NotificationPermission>;
 }

@@ -636,6 +636,18 @@ class Main {
 
 						// - Generate other members in `typedef TypeName {}`
 						for (m in ctx.members) handleMember(ctx, m);
+						var fields = ctx.fields.filter(f -> !(f.access?.contains(AStatic) ?? false));
+
+						// A callback interface with a single operation also accepts a plain function
+						var operations = fields.filter(f -> f.kind.match(FFun(_)));
+						var ct = switch (operations) {
+							case [{kind: FFun(fn)}]:
+								var callback = TFunction([for (a in fn.args) a.opt ? TOptional(TNamed(a.name, a.type)) : TNamed(a.name, a.type)], fn.ret);
+								var struct = TAnonymous(fields);
+								macro :haxe.extern.EitherType<$callback, $struct>;
+							case _:
+								TAnonymous(fields);
+						};
 
 						var td:TypeDefinition = {
 							pack: pack,
@@ -643,7 +655,7 @@ class Main {
 							doc: addUnhandledAttributesToDoc(null, t.extAttrs), // TODO retrieve docs
 							pos: ctx.pos,
 							isExtern: null,
-							kind: TDAlias(TAnonymous(ctx.fields)),
+							kind: TDAlias(ct),
 							fields: []
 						};
 
@@ -1225,7 +1237,7 @@ class Main {
 				ctx.fields.push({
 					name: sanitizeIdentifier(m.name, meta, ctx.pos),
 					doc: addUnhandledAttributesToDoc(doc, m.extAttrs), // TODO
-					access: isOverload(m, ctx.members) ? [AOverload] : [],
+					access: (m.special == "static" ? [haxe.macro.Expr.Access.AStatic] : []).concat(isOverload(m, ctx.members) ? [haxe.macro.Expr.Access.AOverload] : []),
 					kind: FFun({
 						args: m.arguments.map(a -> convertArgument(ctx, a)),
 						ret: convertType(ctx, m.idlType).or(macro :Void),

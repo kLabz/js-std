@@ -28,5 +28,5 @@ package js.web.css;
 	Experimental: requires `-D js-experimental-api`.
 **/
 @:native("CSSColorValue") @:require(js_experimental_api, "CSSColorValue is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSColorValue extends CSSStyleValue {
-	function parse(cssText:String):haxe.extern.EitherType<CSSColorValue, CSSStyleValue>;
+	static function parse(cssText:String):haxe.extern.EitherType<CSSColorValue, CSSStyleValue>;
 }

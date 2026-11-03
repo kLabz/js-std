@@ -81,11 +81,8 @@ package js.web.media;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/VideoFrame>
 	**/
-	overload function new(data:js.web.dom.AllowSharedBufferSource, init:VideoFrameBufferInit):Void;
-	/**
-		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/VideoFrame>
-	**/
-	overload function new(image:js.web.canvas.CanvasImageSource, ?init:VideoFrameInit):Void;
+	@:overload(function(data:js.web.dom.AllowSharedBufferSource, init:VideoFrameBufferInit):Void { })
+	function new(image:js.web.canvas.CanvasImageSource, ?init:VideoFrameInit):Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/VideoFrame/allocationSize>
 	**/

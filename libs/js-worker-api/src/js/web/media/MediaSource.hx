@@ -71,7 +71,10 @@ package js.web.media;
 		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/endOfStream>
 	**/
 	function endOfStream(?error:EndOfStreamError):Void;
-	function isTypeSupported(type:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/isTypeSupported_static>
+	**/
+	static function isTypeSupported(type:String):Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MediaSource/removeSourceBuffer>
 	**/

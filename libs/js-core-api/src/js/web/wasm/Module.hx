@@ -29,7 +29,16 @@ package js.web.wasm;
 **/
 @:native("WebAssembly.Module") extern class Module {
 	function new(bytes:js.web.dom.AllowSharedBufferSource, ?options:WebAssemblyCompileOptions):Void;
-	function customSections(moduleObject:Module, sectionName:String):Array<js.lib.ArrayBuffer>;
-	function exports(moduleObject:Module):Array<ModuleExportDescriptor>;
-	function imports(moduleObject:Module):Array<ModuleImportDescriptor>;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Module/customSections_static>
+	**/
+	static function customSections(moduleObject:Module, sectionName:String):Array<js.lib.ArrayBuffer>;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Module/exports_static>
+	**/
+	static function exports(moduleObject:Module):Array<ModuleExportDescriptor>;
+	/**
+		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Module/imports_static>
+	**/
+	static function imports(moduleObject:Module):Array<ModuleImportDescriptor>;
 }

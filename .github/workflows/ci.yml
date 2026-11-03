@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  generated:
+    name: Generated output is up to date
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: krdlab/setup-haxe@v1
+        with:
+          haxe-version: 4.3.7
+      - name: Install generator dependencies
+        working-directory: generator
+        run: |
+          npm install
+          haxelib newrepo
+          haxelib install hxnodejs --always
+      - name: Regenerate
+        working-directory: generator
+        run: |
+          haxe build.hxml
+          node bin/index.js > /dev/null
+      - name: Compare with committed output
+        run: |
+          if [ -n "$(git status --porcelain libs)" ]; then
+            git status --short libs | head -50
+            echo "::error::libs/ differs from the generator output; regenerate and commit"
+            exit 1
+          fi
+
+  check:
+    name: Typecheck and smoke tests (Haxe ${{ matrix.haxe }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        haxe: [4.3.7, nightly]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Haxe ${{ matrix.haxe }}
+        run: |
+          if [ "${{ matrix.haxe }}" = nightly ]; then
+            url=https://build.haxe.org/builds/haxe/linux64/haxe_latest.tar.gz
+          else
+            url=https://github.com/HaxeFoundation/haxe/releases/download/${{ matrix.haxe }}/haxe-${{ matrix.haxe }}-linux64.tar.gz
+          fi
+          mkdir -p "$RUNNER_TEMP/haxe"
+          curl -sSL "$url" | tar xz -C "$RUNNER_TEMP/haxe" --strip-components=1
+          echo "$RUNNER_TEMP/haxe" >> "$GITHUB_PATH"
+          echo "HAXE_STD_PATH=$RUNNER_TEMP/haxe/std" >> "$GITHUB_ENV"
+      - run: haxe --version
+      - name: Typecheck all libraries
+        run: ./check.sh
+      - name: Smoke tests
+        run: ./tests/run.sh

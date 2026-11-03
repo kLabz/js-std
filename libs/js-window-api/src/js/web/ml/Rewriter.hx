@@ -38,8 +38,8 @@ package js.web.ml;
 	var expectedContextLanguages(default, null) : Null<Array<String>>;
 	var outputLanguage(default, null) : Null<String>;
 	var inputQuota(default, null) : Float;
-	function availability(?options:RewriterCreateCoreOptions):js.lib.Promise<Availability>;
-	function create(?options:RewriterCreateOptions):js.lib.Promise<Rewriter>;
+	static function availability(?options:RewriterCreateCoreOptions):js.lib.Promise<Availability>;
+	static function create(?options:RewriterCreateOptions):js.lib.Promise<Rewriter>;
 	/**
 		From interface mixin DestroyableModel
 	**/

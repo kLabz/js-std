@@ -32,9 +32,18 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/DOMMatrix/DOMMatrix>
 	**/
 	function new(?init:haxe.extern.EitherType<String, Array<Float>>):Void;
-	function fromFloat32Array(array32:js.lib.Float32Array):DOMMatrix;
-	function fromFloat64Array(array64:js.lib.Float64Array):DOMMatrix;
-	function fromMatrix(?other:DOMMatrixInit):DOMMatrix;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMMatrix/fromFloat32Array_static>
+	**/
+	static function fromFloat32Array(array32:js.lib.Float32Array):DOMMatrix;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMMatrix/fromFloat64Array_static>
+	**/
+	static function fromFloat64Array(array64:js.lib.Float64Array):DOMMatrix;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMMatrix/fromMatrix_static>
+	**/
+	static function fromMatrix(?other:DOMMatrixInit):DOMMatrix;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/DOMMatrix/invertSelf>
 	**/

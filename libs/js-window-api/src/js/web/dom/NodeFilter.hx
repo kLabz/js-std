@@ -24,6 +24,4 @@
 
 package js.web.dom;
 
-typedef NodeFilter = {
-	function acceptNode(node:Node):Int;
-};
+typedef NodeFilter = haxe.extern.EitherType<(node:Node) -> Int, { function acceptNode(node:Node):Int; }>;

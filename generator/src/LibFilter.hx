@@ -55,6 +55,7 @@ class LibFilter {
 			var f = filterField(f);
 			if (f != null) fields.push(f);
 		}
+		fields = mergeConstructorOverloads(fields);
 
 		return {
 			pack: td.pack,
@@ -67,6 +68,27 @@ class LibFilter {
 			kind: kind,
 			fields: fields
 		};
+	}
+
+	// Haxe 4 rejects the `overload` modifier on constructors; `@:overload` works everywhere
+	static function mergeConstructorOverloads(fields:Array<Field>):Array<Field> {
+		var ctors = fields.filter(f -> f.name == "new");
+		if (ctors.length < 2) {
+			for (c in ctors) c.access = c.access?.filter(a -> a != AOverload);
+			return fields;
+		}
+
+		var main = ctors[ctors.length - 1];
+		var overloads = [for (c in ctors) if (c != main) switch (c.kind) {
+			case FFun(fn):
+				var expr = {pos: c.pos, expr: EFunction(FAnonymous, {args: fn.args, ret: fn.ret, expr: {pos: c.pos, expr: EBlock([])}})};
+				({name: ":overload", params: [expr], pos: c.pos}:MetadataEntry);
+			case _: throw "unexpected constructor kind";
+		}];
+
+		main.access = main.access?.filter(a -> a != AOverload);
+		main.meta = (main.meta ?? []).concat(overloads);
+		return fields.filter(f -> f.name != "new" || f == main);
 	}
 
 	function isExposedHere(f:Field):Bool {

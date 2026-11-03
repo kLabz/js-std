@@ -49,7 +49,7 @@ package js.web.media;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/CaptureController>
 	**/
-	overload function new():Void;
+	function new():Void;
 	/**
 		From partial interface in mediacapture-surface-control.idl
 		

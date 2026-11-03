@@ -51,9 +51,6 @@ package js.web.auth;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PasswordCredential/PasswordCredential>
 	**/
-	overload function new(data:PasswordCredentialData):Void;
-	/**
-		@see <https://developer.mozilla.org/docs/Web/API/PasswordCredential/PasswordCredential>
-	**/
-	overload function new(form:js.web.html.HTMLFormElement):Void;
+	@:overload(function(data:PasswordCredentialData):Void { })
+	function new(form:js.web.html.HTMLFormElement):Void;
 }

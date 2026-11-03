@@ -64,7 +64,10 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/DOMRectReadOnly>
 	**/
 	function new(?x:Float = 0, ?y:Float = 0, ?width:Float = 0, ?height:Float = 0):Void;
-	function fromRect(?other:DOMRectInit):DOMRectReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/fromRect_static>
+	**/
+	static function fromRect(?other:DOMRectInit):DOMRectReadOnly;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/toJSON>
 	**/

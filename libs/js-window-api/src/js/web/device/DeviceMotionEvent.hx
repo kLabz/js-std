@@ -50,5 +50,9 @@ package js.web.device;
 		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEvent/DeviceMotionEvent>
 	**/
 	function new(type:String, ?eventInitDict:DeviceMotionEventInit):Void;
-	function requestPermission():js.lib.Promise<js.web.misc.PermissionState>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEvent/requestPermission_static>
+	**/
+	@:require(js_experimental_api, "DeviceMotionEvent.requestPermission is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	static function requestPermission():js.lib.Promise<js.web.misc.PermissionState>;
 }

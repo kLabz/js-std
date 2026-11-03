@@ -52,7 +52,10 @@ package js.web.css;
 		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericValue/mul>
 	**/
 	function mul(values:haxe.Rest<CSSNumberish>):CSSNumericValue;
-	function parse(cssText:String):CSSNumericValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericValue/parse_static>
+	**/
+	static function parse(cssText:String):CSSNumericValue;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericValue/sub>
 	**/

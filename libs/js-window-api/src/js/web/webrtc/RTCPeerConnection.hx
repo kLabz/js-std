@@ -138,7 +138,8 @@ package js.web.webrtc;
 	/**
 		From partial interface in webrtc-diagnostic-logging.idl
 	**/
-	function cancelDiagnosticLogging():Void;
+	@:require(js_experimental_api, "RTCPeerConnection.cancelDiagnosticLogging is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	static function cancelDiagnosticLogging():Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/close>
 	**/
@@ -167,8 +168,10 @@ package js.web.webrtc;
 	overload function createOffer(successCallback:RTCSessionDescriptionCallback, failureCallback:RTCPeerConnectionErrorCallback, ?options:RTCOfferOptions):js.lib.Promise<Void>;
 	/**
 		From partial interface in webrtc.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/generateCertificate_static>
 	**/
-	function generateCertificate(keygenAlgorithm:js.web.auth.AlgorithmIdentifier):js.lib.Promise<RTCCertificate>;
+	static function generateCertificate(keygenAlgorithm:js.web.auth.AlgorithmIdentifier):js.lib.Promise<RTCCertificate>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/getConfiguration>
 	**/
@@ -244,9 +247,11 @@ package js.web.webrtc;
 	/**
 		From partial interface in webrtc-diagnostic-logging.idl
 	**/
-	function startDiagnosticLogging(?options:RTCDiagnosticLoggingOptions):String;
+	@:require(js_experimental_api, "RTCPeerConnection.startDiagnosticLogging is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	static function startDiagnosticLogging(?options:RTCDiagnosticLoggingOptions):String;
 	/**
 		From partial interface in webrtc-diagnostic-logging.idl
 	**/
-	function stopDiagnosticLogging():Void;
+	@:require(js_experimental_api, "RTCPeerConnection.stopDiagnosticLogging is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	static function stopDiagnosticLogging():Void;
 }

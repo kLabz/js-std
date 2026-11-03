@@ -40,7 +40,10 @@ package js.web.net;
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStream/cancel>
 	**/
 	function cancel(?reason:Any):js.lib.Promise<Void>;
-	function from(asyncIterable:Dynamic):ReadableStream;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ReadableStream/from_static>
+	**/
+	static function from(asyncIterable:Dynamic):ReadableStream;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStream/getReader>
 	**/

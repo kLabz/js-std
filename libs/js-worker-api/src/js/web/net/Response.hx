@@ -94,7 +94,10 @@ package js.web.net;
 		@see <https://developer.mozilla.org/docs/Web/API/Response/clone>
 	**/
 	function clone():Response;
-	function error():Response;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Response/error_static>
+	**/
+	static function error():Response;
 	/**
 		From interface mixin Body
 		
@@ -102,16 +105,19 @@ package js.web.net;
 	**/
 	function formData():js.lib.Promise<FormData>;
 	/**
-		@see <https://developer.mozilla.org/docs/Web/API/Response/json>
+		@see <https://developer.mozilla.org/docs/Web/API/Response/json_static>
 	**/
-	overload function json(data:Any, ?init:ResponseInit):Response;
+	static overload function json(data:Any, ?init:ResponseInit):Response;
 	/**
 		From interface mixin Body
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Response/json>
 	**/
 	overload function json():js.lib.Promise<Any>;
-	function redirect(url:String, ?status:Int = 302):Response;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Response/redirect_static>
+	**/
+	static function redirect(url:String, ?status:Int = 302):Response;
 	/**
 		From interface mixin Body
 		

@@ -49,11 +49,8 @@ package js.web.css;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/KeyframeEffect/KeyframeEffect>
 	**/
-	overload function new(source:KeyframeEffect):Void;
-	/**
-		@see <https://developer.mozilla.org/docs/Web/API/KeyframeEffect/KeyframeEffect>
-	**/
-	overload function new(target:Null<js.web.dom.Element>, keyframes:Null<{ }>, ?options:haxe.extern.EitherType<Float, KeyframeEffectOptions>):Void;
+	@:overload(function(source:KeyframeEffect):Void { })
+	function new(target:Null<js.web.dom.Element>, keyframes:Null<{ }>, ?options:haxe.extern.EitherType<Float, KeyframeEffectOptions>):Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/KeyframeEffect/getKeyframes>
 	**/

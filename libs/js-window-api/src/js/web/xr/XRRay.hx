@@ -47,9 +47,6 @@ package js.web.xr;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRRay/XRRay>
 	**/
-	overload function new(transform:XRRigidTransform):Void;
-	/**
-		@see <https://developer.mozilla.org/docs/Web/API/XRRay/XRRay>
-	**/
-	overload function new(?origin:js.web.dom.DOMPointInit, ?direction:XRRayDirectionInit):Void;
+	@:overload(function(transform:XRRigidTransform):Void { })
+	function new(?origin:js.web.dom.DOMPointInit, ?direction:XRRayDirectionInit):Void;
 }

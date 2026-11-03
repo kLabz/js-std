@@ -94,11 +94,13 @@ package js.web.auth;
 	/**
 		From partial interface in webcrypto-modern-algos.idl
 	**/
-	overload function supports(operation:String, algorithm:AlgorithmIdentifier, ?length:Null<Int> = null):Bool;
+	@:require(js_experimental_api, "SubtleCrypto.supports is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	static overload function supports(operation:String, algorithm:AlgorithmIdentifier, ?length:Null<Int> = null):Bool;
 	/**
 		From partial interface in webcrypto-modern-algos.idl
 	**/
-	overload function supports(operation:String, algorithm:AlgorithmIdentifier, additionalAlgorithm:AlgorithmIdentifier):Bool;
+	@:require(js_experimental_api, "SubtleCrypto.supports is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	static overload function supports(operation:String, algorithm:AlgorithmIdentifier, additionalAlgorithm:AlgorithmIdentifier):Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SubtleCrypto/unwrapKey>
 	**/

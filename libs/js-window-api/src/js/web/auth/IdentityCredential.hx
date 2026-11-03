@@ -44,5 +44,8 @@ package js.web.auth;
 		@see <https://developer.mozilla.org/docs/Web/API/IdentityCredential/configURL>
 	**/
 	var configURL(default, null) : String;
-	function disconnect(options:IdentityCredentialDisconnectOptions):js.lib.Promise<Void>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IdentityCredential/disconnect_static>
+	**/
+	static function disconnect(options:IdentityCredentialDisconnectOptions):js.lib.Promise<Void>;
 }

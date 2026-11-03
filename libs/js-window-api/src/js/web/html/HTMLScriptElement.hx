@@ -87,5 +87,8 @@ package js.web.html;
 	**/
 	@:deprecated
 	var htmlFor : String;
-	function supports(type:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/supports_static>
+	**/
+	static function supports(type:String):Bool;
 }

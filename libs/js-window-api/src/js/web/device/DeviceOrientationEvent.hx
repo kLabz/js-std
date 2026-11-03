@@ -50,5 +50,9 @@ package js.web.device;
 		@see <https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/DeviceOrientationEvent>
 	**/
 	function new(type:String, ?eventInitDict:DeviceOrientationEventInit):Void;
-	function requestPermission(?absolute:Bool = false):js.lib.Promise<js.web.misc.PermissionState>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/requestPermission_static>
+	**/
+	@:require(js_experimental_api, "DeviceOrientationEvent.requestPermission is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	static function requestPermission(?absolute:Bool = false):js.lib.Promise<js.web.misc.PermissionState>;
 }

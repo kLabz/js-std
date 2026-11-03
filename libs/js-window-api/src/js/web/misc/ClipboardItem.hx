@@ -46,5 +46,8 @@ package js.web.misc;
 		@see <https://developer.mozilla.org/docs/Web/API/ClipboardItem/getType>
 	**/
 	function getType(type:String):js.lib.Promise<js.web.net.Blob>;
-	function supports(type:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ClipboardItem/supports_static>
+	**/
+	static function supports(type:String):Bool;
 }

@@ -47,9 +47,6 @@ package js.web.css;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSRotate/CSSRotate>
 	**/
-	overload function new(x:CSSNumberish, y:CSSNumberish, z:CSSNumberish, angle:CSSNumericValue):Void;
-	/**
-		@see <https://developer.mozilla.org/docs/Web/API/CSSRotate/CSSRotate>
-	**/
-	overload function new(angle:CSSNumericValue):Void;
+	@:overload(function(x:CSSNumberish, y:CSSNumberish, z:CSSNumberish, angle:CSSNumericValue):Void { })
+	function new(angle:CSSNumericValue):Void;
 }

@@ -48,7 +48,10 @@ package js.web.webrtc;
 		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpSender/dtmf>
 	**/
 	var dtmf(default, null) : Null<RTCDTMFSender>;
-	function getCapabilities(kind:String):Null<RTCRtpCapabilities>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpSender/getCapabilities_static>
+	**/
+	static function getCapabilities(kind:String):Null<RTCRtpCapabilities>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpSender/getParameters>
 	**/

@@ -66,12 +66,18 @@ package js.web.auth;
 	function canMakePayment():js.lib.Promise<Bool>;
 	/**
 		From partial interface in secure-payment-confirmation.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequest/getSecurePaymentConfirmationCapabilities_static>
 	**/
-	function getSecurePaymentConfirmationCapabilities():js.lib.Promise<SecurePaymentConfirmationCapabilities>;
+	@:require(js_experimental_api, "PaymentRequest.getSecurePaymentConfirmationCapabilities is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	static function getSecurePaymentConfirmationCapabilities():js.lib.Promise<SecurePaymentConfirmationCapabilities>;
 	/**
 		From partial interface in secure-payment-confirmation.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequest/securePaymentConfirmationAvailability_static>
 	**/
-	function securePaymentConfirmationAvailability():js.lib.Promise<SecurePaymentConfirmationAvailability>;
+	@:require(js_experimental_api, "PaymentRequest.securePaymentConfirmationAvailability is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	static function securePaymentConfirmationAvailability():js.lib.Promise<SecurePaymentConfirmationAvailability>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PaymentRequest/show>
 	**/

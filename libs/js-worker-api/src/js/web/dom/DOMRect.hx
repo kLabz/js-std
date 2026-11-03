@@ -32,5 +32,8 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/DOMRect/DOMRect>
 	**/
 	function new(?x:Float = 0, ?y:Float = 0, ?width:Float = 0, ?height:Float = 0):Void;
-	function fromRect(?other:DOMRectInit):DOMRect;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMRect/fromRect_static>
+	**/
+	static function fromRect(?other:DOMRectInit):DOMRect;
 }

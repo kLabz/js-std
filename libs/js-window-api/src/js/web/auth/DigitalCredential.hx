@@ -31,5 +31,5 @@ package js.web.auth;
 	var protocol(default, null) : DigitalCredentialProtocol;
 	var data(default, null) : { };
 	function toJSON():{ };
-	function userAgentAllowsProtocol(protocol:String):Bool;
+	static function userAgentAllowsProtocol(protocol:String):Bool;
 }

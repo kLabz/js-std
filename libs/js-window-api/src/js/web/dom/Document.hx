@@ -1124,12 +1124,16 @@ package js.web.dom;
 	overload function open(url:String, name:String, features:String):Null<js.web.html.Window>;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/parseHTML_static>
 	**/
-	function parseHTML(html:String, ?options:js.web.html.SetHTMLOptions):Document;
+	static function parseHTML(html:String, ?options:js.web.html.SetHTMLOptions):Document;
 	/**
 		From partial interface in html.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/parseHTMLUnsafe_static>
 	**/
-	function parseHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.ParseHTMLUnsafeOptions, TrustedHTMLParserOptions>):Document;
+	static function parseHTMLUnsafe(html:haxe.extern.EitherType<TrustedHTML, String>, ?options:haxe.extern.EitherType<js.web.html.ParseHTMLUnsafeOptions, TrustedHTMLParserOptions>):Document;
 	/**
 		From interface mixin ParentNode
 		

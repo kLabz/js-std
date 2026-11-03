@@ -81,8 +81,14 @@ package js.web.media;
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/abort>
 	**/
 	function abort():Void;
-	function available(options:SpeechRecognitionOptions):js.lib.Promise<SpeechRecognitionAvailabilityStatus>;
-	function install(options:SpeechRecognitionOptions):js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/available_static>
+	**/
+	static function available(options:SpeechRecognitionOptions):js.lib.Promise<SpeechRecognitionAvailabilityStatus>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/install_static>
+	**/
+	static function install(options:SpeechRecognitionOptions):js.lib.Promise<Bool>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/start>
 	**/

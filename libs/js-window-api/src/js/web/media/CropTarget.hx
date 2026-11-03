@@ -32,6 +32,8 @@ package js.web.media;
 @:native("CropTarget") @:require(js_experimental_api, "CropTarget is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CropTarget {
 	/**
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CropTarget/fromElement_static>
 	**/
-	function fromElement(element:js.web.dom.Element):js.lib.Promise<CropTarget>;
+	static function fromElement(element:js.web.dom.Element):js.lib.Promise<CropTarget>;
 }

@@ -40,5 +40,8 @@ package js.web.ml;
 		@see <https://developer.mozilla.org/docs/Web/API/BarcodeDetector/detect>
 	**/
 	function detect(image:js.web.canvas.ImageBitmapSource):js.lib.Promise<Array<DetectedBarcode>>;
-	function getSupportedFormats():js.lib.Promise<Array<BarcodeFormat>>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BarcodeDetector/getSupportedFormats_static>
+	**/
+	static function getSupportedFormats():js.lib.Promise<Array<BarcodeFormat>>;
 }

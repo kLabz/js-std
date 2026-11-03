@@ -136,9 +136,18 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/flipY>
 	**/
 	function flipY():DOMMatrix;
-	function fromFloat32Array(array32:js.lib.Float32Array):DOMMatrixReadOnly;
-	function fromFloat64Array(array64:js.lib.Float64Array):DOMMatrixReadOnly;
-	function fromMatrix(?other:DOMMatrixInit):DOMMatrixReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/fromFloat32Array_static>
+	**/
+	static function fromFloat32Array(array32:js.lib.Float32Array):DOMMatrixReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/fromFloat64Array_static>
+	**/
+	static function fromFloat64Array(array64:js.lib.Float64Array):DOMMatrixReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/fromMatrix_static>
+	**/
+	static function fromMatrix(?other:DOMMatrixInit):DOMMatrixReadOnly;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/DOMMatrixReadOnly/inverse>
 	**/

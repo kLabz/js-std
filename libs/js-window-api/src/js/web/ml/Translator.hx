@@ -44,8 +44,14 @@ package js.web.ml;
 		@see <https://developer.mozilla.org/docs/Web/API/Translator/inputQuota>
 	**/
 	var inputQuota(default, null) : Float;
-	function availability(options:TranslatorCreateCoreOptions):js.lib.Promise<Availability>;
-	function create(options:TranslatorCreateOptions):js.lib.Promise<Translator>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Translator/availability_static>
+	**/
+	static function availability(options:TranslatorCreateCoreOptions):js.lib.Promise<Availability>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Translator/create_static>
+	**/
+	static function create(options:TranslatorCreateOptions):js.lib.Promise<Translator>;
 	/**
 		From interface mixin DestroyableModel
 		

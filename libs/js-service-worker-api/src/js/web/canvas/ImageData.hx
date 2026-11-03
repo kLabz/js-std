@@ -52,9 +52,6 @@ package js.web.canvas;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ImageData/ImageData>
 	**/
-	overload function new(data:js.web.html.ImageDataArray, sw:Int, ?sh:Int, ?settings:ImageDataSettings):Void;
-	/**
-		@see <https://developer.mozilla.org/docs/Web/API/ImageData/ImageData>
-	**/
-	overload function new(sw:Int, sh:Int, ?settings:ImageDataSettings):Void;
+	@:overload(function(data:js.web.html.ImageDataArray, sw:Int, ?sh:Int, ?settings:ImageDataSettings):Void { })
+	function new(sw:Int, sh:Int, ?settings:ImageDataSettings):Void;
 }

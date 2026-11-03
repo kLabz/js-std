@@ -32,6 +32,8 @@ package js.web.media;
 @:native("RestrictionTarget") @:require(js_experimental_api, "RestrictionTarget is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class RestrictionTarget {
 	/**
 		Only available in secure contexts (HTTPS).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/RestrictionTarget/fromElement_static>
 	**/
-	function fromElement(element:js.web.dom.Element):js.lib.Promise<RestrictionTarget>;
+	static function fromElement(element:js.web.dom.Element):js.lib.Promise<RestrictionTarget>;
 }

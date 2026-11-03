@@ -31,7 +31,7 @@ package js.web.ml;
 **/
 @:native("TextDetector") @:require(js_experimental_api, "TextDetector is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class TextDetector {
 	function new():Void;
-	function availability(options:TextDetectorOptions):js.lib.Promise<Availability>;
-	function create(?options:TextDetectorCreateOptions):js.lib.Promise<TextDetector>;
+	static function availability(options:TextDetectorOptions):js.lib.Promise<Availability>;
+	static function create(?options:TextDetectorCreateOptions):js.lib.Promise<TextDetector>;
 	function detect(image:js.web.canvas.ImageBitmapSource):js.lib.Promise<Array<DetectedText>>;
 }

@@ -48,7 +48,10 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/DOMPointReadOnly/DOMPointReadOnly>
 	**/
 	function new(?x:Float = 0, ?y:Float = 0, ?z:Float = 0, ?w:Float = 1):Void;
-	function fromPoint(?other:DOMPointInit):DOMPointReadOnly;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMPointReadOnly/fromPoint_static>
+	**/
+	static function fromPoint(?other:DOMPointInit):DOMPointReadOnly;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/DOMPointReadOnly/matrixTransform>
 	**/

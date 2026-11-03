@@ -63,7 +63,10 @@ package js.web.media;
 		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/MediaRecorder>
 	**/
 	function new(stream:MediaStream, ?options:MediaRecorderOptions):Void;
-	function isTypeSupported(type:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/isTypeSupported_static>
+	**/
+	static function isTypeSupported(type:String):Bool;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MediaRecorder/pause>
 	**/

@@ -41,15 +41,9 @@ package js.web.media;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/MediaStream>
 	**/
-	overload function new(tracks:Array<MediaStreamTrack>):Void;
-	/**
-		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/MediaStream>
-	**/
-	overload function new(stream:MediaStream):Void;
-	/**
-		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/MediaStream>
-	**/
-	overload function new():Void;
+	@:overload(function(tracks:Array<MediaStreamTrack>):Void { })
+	@:overload(function(stream:MediaStream):Void { })
+	function new():Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/addTrack>
 	**/

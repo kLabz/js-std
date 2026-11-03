@@ -60,7 +60,10 @@ package js.web.xr;
 		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLLayer/XRWebGLLayer>
 	**/
 	function new(session:XRSession, context:XRWebGLRenderingContext, ?layerInit:XRWebGLLayerInit):Void;
-	function getNativeFramebufferScaleFactor(session:XRSession):Float;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLLayer/getNativeFramebufferScaleFactor_static>
+	**/
+	static function getNativeFramebufferScaleFactor(session:XRSession):Float;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLLayer/getViewport>
 	**/

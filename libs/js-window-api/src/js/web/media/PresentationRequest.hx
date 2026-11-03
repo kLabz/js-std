@@ -36,11 +36,8 @@ package js.web.media;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationRequest/PresentationRequest>
 	**/
-	overload function new(urls:Array<String>):Void;
-	/**
-		@see <https://developer.mozilla.org/docs/Web/API/PresentationRequest/PresentationRequest>
-	**/
-	overload function new(url:String):Void;
+	@:overload(function(urls:Array<String>):Void { })
+	function new(url:String):Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationRequest/getAvailability>
 	**/

@@ -27,7 +27,7 @@ package js.web.html;
 @:native("Origin") extern class Origin {
 	var opaque(default, null) : Bool;
 	function new():Void;
-	function from(value:Any):Origin;
+	static function from(value:Any):Origin;
 	function isSameOrigin(other:Origin):Bool;
 	function isSameSite(other:Origin):Bool;
 }

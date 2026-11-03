@@ -24,6 +24,4 @@
 
 package js.web.dom;
 
-typedef XPathNSResolver = {
-	function lookupNamespaceURI(prefix:Null<String>):Null<String>;
-};
+typedef XPathNSResolver = haxe.extern.EitherType<(prefix:Null<String>) -> Null<String>, { function lookupNamespaceURI(prefix:Null<String>):Null<String>; }>;

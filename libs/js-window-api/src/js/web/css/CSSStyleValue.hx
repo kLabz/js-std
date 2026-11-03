@@ -28,8 +28,14 @@ package js.web.css;
 	@see <https://developer.mozilla.org/docs/Web/API/CSSStyleValue>
 **/
 @:native("CSSStyleValue") extern class CSSStyleValue {
-	function parse(property:String, cssText:String):CSSStyleValue;
-	function parseAll(property:String, cssText:String):Array<CSSStyleValue>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleValue/parse_static>
+	**/
+	static function parse(property:String, cssText:String):CSSStyleValue;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleValue/parseAll_static>
+	**/
+	static function parseAll(property:String, cssText:String):Array<CSSStyleValue>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleValue/toString>
 	**/

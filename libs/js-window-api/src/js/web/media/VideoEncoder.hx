@@ -59,7 +59,10 @@ package js.web.media;
 		@see <https://developer.mozilla.org/docs/Web/API/VideoEncoder/flush>
 	**/
 	function flush():js.lib.Promise<Void>;
-	function isConfigSupported(config:VideoEncoderConfig):js.lib.Promise<VideoEncoderSupport>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/VideoEncoder/isConfigSupported_static>
+	**/
+	static function isConfigSupported(config:VideoEncoderConfig):js.lib.Promise<VideoEncoderSupport>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/VideoEncoder/reset>
 	**/

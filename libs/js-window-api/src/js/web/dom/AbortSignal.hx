@@ -37,11 +37,20 @@ package js.web.dom;
 	**/
 	var reason(default, null) : Any;
 	var onabort : js.web.html.EventHandler;
-	function abort(?reason:Any):AbortSignal;
-	function any(signals:Array<AbortSignal>):AbortSignal;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/abort_static>
+	**/
+	static function abort(?reason:Any):AbortSignal;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/any_static>
+	**/
+	static function any(signals:Array<AbortSignal>):AbortSignal;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/throwIfAborted>
 	**/
 	function throwIfAborted():Void;
-	function timeout(milliseconds:Float):AbortSignal;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/timeout_static>
+	**/
+	static function timeout(milliseconds:Float):AbortSignal;
 }

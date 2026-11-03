@@ -58,7 +58,10 @@ package js.web.media;
 		@see <https://developer.mozilla.org/docs/Web/API/ImageDecoder/decode>
 	**/
 	function decode(?options:ImageDecodeOptions):js.lib.Promise<ImageDecodeResult>;
-	function isTypeSupported(type:String):js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/ImageDecoder/isTypeSupported_static>
+	**/
+	static function isTypeSupported(type:String):js.lib.Promise<Bool>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/ImageDecoder/reset>
 	**/

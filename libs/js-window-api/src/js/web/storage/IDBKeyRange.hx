@@ -44,12 +44,24 @@ package js.web.storage;
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upperOpen>
 	**/
 	var upperOpen(default, null) : Bool;
-	function bound(lower:Any, upper:Any, ?lowerOpen:Bool = false, ?upperOpen:Bool = false):IDBKeyRange;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/bound_static>
+	**/
+	static function bound(lower:Any, upper:Any, ?lowerOpen:Bool = false, ?upperOpen:Bool = false):IDBKeyRange;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/includes>
 	**/
 	function includes(key:Any):Bool;
-	function lowerBound(lower:Any, ?open:Bool = false):IDBKeyRange;
-	function only(value:Any):IDBKeyRange;
-	function upperBound(upper:Any, ?open:Bool = false):IDBKeyRange;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lowerBound_static>
+	**/
+	static function lowerBound(lower:Any, ?open:Bool = false):IDBKeyRange;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/only_static>
+	**/
+	static function only(value:Any):IDBKeyRange;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upperBound_static>
+	**/
+	static function upperBound(upper:Any, ?open:Bool = false):IDBKeyRange;
 }

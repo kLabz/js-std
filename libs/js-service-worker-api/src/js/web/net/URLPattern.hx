@@ -67,11 +67,8 @@ package js.web.net;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/URLPattern>
 	**/
-	overload function new(?input:URLPatternInput, ?options:URLPatternOptions):Void;
-	/**
-		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/URLPattern>
-	**/
-	overload function new(input:URLPatternInput, baseURL:String, ?options:URLPatternOptions):Void;
+	@:overload(function(?input:URLPatternInput, ?options:URLPatternOptions):Void { })
+	function new(input:URLPatternInput, baseURL:String, ?options:URLPatternOptions):Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/URLPattern/exec>
 	**/

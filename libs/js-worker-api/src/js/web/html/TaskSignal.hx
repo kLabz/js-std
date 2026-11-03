@@ -33,5 +33,8 @@ package js.web.html;
 	**/
 	var priority(default, null) : TaskPriority;
 	var onprioritychange : EventHandler;
-	function any(signals:Array<js.web.dom.AbortSignal>, ?init:TaskSignalAnyInit):TaskSignal;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/TaskSignal/any_static>
+	**/
+	static function any(signals:Array<js.web.dom.AbortSignal>, ?init:TaskSignalAnyInit):TaskSignal;
 }

@@ -45,7 +45,10 @@ package js.web.device;
 		@see <https://developer.mozilla.org/docs/Web/API/IdleDetector/IdleDetector>
 	**/
 	function new():Void;
-	function requestPermission():js.lib.Promise<js.web.misc.PermissionState>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/IdleDetector/requestPermission_static>
+	**/
+	static function requestPermission():js.lib.Promise<js.web.misc.PermissionState>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/IdleDetector/start>
 	**/

@@ -71,7 +71,10 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/Observable/forEach>
 	**/
 	function forEach(callback:Visitor, ?options:SubscribeOptions):js.lib.Promise<Void>;
-	function from(value:Any):Observable;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Observable/from_static>
+	**/
+	static function from(value:Any):Observable;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/Observable/inspect>
 	**/

@@ -48,8 +48,14 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/DOMQuad/DOMQuad>
 	**/
 	function new(?p1:DOMPointInit, ?p2:DOMPointInit, ?p3:DOMPointInit, ?p4:DOMPointInit):Void;
-	function fromQuad(?other:DOMQuadInit):DOMQuad;
-	function fromRect(?other:DOMRectInit):DOMQuad;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMQuad/fromQuad_static>
+	**/
+	static function fromQuad(?other:DOMQuadInit):DOMQuad;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/DOMQuad/fromRect_static>
+	**/
+	static function fromRect(?other:DOMRectInit):DOMQuad;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/DOMQuad/getBounds>
 	**/

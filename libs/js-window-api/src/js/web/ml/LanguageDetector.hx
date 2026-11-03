@@ -40,8 +40,14 @@ package js.web.ml;
 		@see <https://developer.mozilla.org/docs/Web/API/LanguageDetector/inputQuota>
 	**/
 	var inputQuota(default, null) : Float;
-	function availability(?options:LanguageDetectorCreateCoreOptions):js.lib.Promise<Availability>;
-	function create(?options:LanguageDetectorCreateOptions):js.lib.Promise<LanguageDetector>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageDetector/availability_static>
+	**/
+	static function availability(?options:LanguageDetectorCreateCoreOptions):js.lib.Promise<Availability>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageDetector/create_static>
+	**/
+	static function create(?options:LanguageDetectorCreateOptions):js.lib.Promise<LanguageDetector>;
 	/**
 		From interface mixin DestroyableModel
 		

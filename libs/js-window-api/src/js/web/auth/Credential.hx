@@ -38,5 +38,8 @@ package js.web.auth;
 		@see <https://developer.mozilla.org/docs/Web/API/Credential/type>
 	**/
 	var type(default, null) : String;
-	function isConditionalMediationAvailable():js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Credential/isConditionalMediationAvailable_static>
+	**/
+	static function isConditionalMediationAvailable():js.lib.Promise<Bool>;
 }

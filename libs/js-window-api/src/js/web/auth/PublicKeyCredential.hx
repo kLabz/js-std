@@ -44,37 +44,54 @@ package js.web.auth;
 	var authenticatorAttachment(default, null) : Null<String>;
 	/**
 		From partial interface in webauthn.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/getClientCapabilities_static>
 	**/
-	function getClientCapabilities():js.lib.Promise<PublicKeyCredentialClientCapabilities>;
+	static function getClientCapabilities():js.lib.Promise<PublicKeyCredentialClientCapabilities>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/getClientExtensionResults>
 	**/
 	function getClientExtensionResults():AuthenticationExtensionsClientOutputs;
-	function isConditionalMediationAvailable():js.lib.Promise<Bool>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/isConditionalMediationAvailable_static>
+	**/
+	static function isConditionalMediationAvailable():js.lib.Promise<Bool>;
 	/**
 		From partial interface in webauthn.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/isUserVerifyingPlatformAuthenticatorAvailable_static>
 	**/
-	function isUserVerifyingPlatformAuthenticatorAvailable():js.lib.Promise<Bool>;
+	static function isUserVerifyingPlatformAuthenticatorAvailable():js.lib.Promise<Bool>;
 	/**
 		From partial interface in webauthn.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/parseCreationOptionsFromJSON_static>
 	**/
-	function parseCreationOptionsFromJSON(options:PublicKeyCredentialCreationOptionsJSON):PublicKeyCredentialCreationOptions;
+	static function parseCreationOptionsFromJSON(options:PublicKeyCredentialCreationOptionsJSON):PublicKeyCredentialCreationOptions;
 	/**
 		From partial interface in webauthn.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/parseRequestOptionsFromJSON_static>
 	**/
-	function parseRequestOptionsFromJSON(options:PublicKeyCredentialRequestOptionsJSON):PublicKeyCredentialRequestOptions;
+	static function parseRequestOptionsFromJSON(options:PublicKeyCredentialRequestOptionsJSON):PublicKeyCredentialRequestOptions;
 	/**
 		From partial interface in webauthn.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/signalAllAcceptedCredentials_static>
 	**/
-	function signalAllAcceptedCredentials(options:AllAcceptedCredentialsOptions):js.lib.Promise<Void>;
+	static function signalAllAcceptedCredentials(options:AllAcceptedCredentialsOptions):js.lib.Promise<Void>;
 	/**
 		From partial interface in webauthn.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/signalCurrentUserDetails_static>
 	**/
-	function signalCurrentUserDetails(options:CurrentUserDetailsOptions):js.lib.Promise<Void>;
+	static function signalCurrentUserDetails(options:CurrentUserDetailsOptions):js.lib.Promise<Void>;
 	/**
 		From partial interface in webauthn.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/signalUnknownCredential_static>
 	**/
-	function signalUnknownCredential(options:UnknownCredentialOptions):js.lib.Promise<Void>;
+	static function signalUnknownCredential(options:UnknownCredentialOptions):js.lib.Promise<Void>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/toJSON>
 	**/

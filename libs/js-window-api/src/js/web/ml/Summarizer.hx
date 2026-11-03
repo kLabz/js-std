@@ -65,8 +65,14 @@ package js.web.ml;
 		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/inputQuota>
 	**/
 	var inputQuota(default, null) : Float;
-	function availability(?options:SummarizerCreateCoreOptions):js.lib.Promise<Availability>;
-	function create(?options:SummarizerCreateOptions):js.lib.Promise<Summarizer>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/availability_static>
+	**/
+	static function availability(?options:SummarizerCreateCoreOptions):js.lib.Promise<Availability>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/Summarizer/create_static>
+	**/
+	static function create(?options:SummarizerCreateOptions):js.lib.Promise<Summarizer>;
 	/**
 		From interface mixin DestroyableModel
 		

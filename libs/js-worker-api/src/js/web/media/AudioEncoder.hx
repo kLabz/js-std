@@ -59,7 +59,10 @@ package js.web.media;
 		@see <https://developer.mozilla.org/docs/Web/API/AudioEncoder/flush>
 	**/
 	function flush():js.lib.Promise<Void>;
-	function isConfigSupported(config:AudioEncoderConfig):js.lib.Promise<AudioEncoderSupport>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/AudioEncoder/isConfigSupported_static>
+	**/
+	static function isConfigSupported(config:AudioEncoderConfig):js.lib.Promise<AudioEncoderSupport>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/AudioEncoder/reset>
 	**/

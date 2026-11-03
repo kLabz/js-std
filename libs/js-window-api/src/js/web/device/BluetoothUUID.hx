@@ -30,8 +30,20 @@ package js.web.device;
 	@see <https://developer.mozilla.org/docs/Web/API/BluetoothUUID>
 **/
 @:native("BluetoothUUID") @:require(js_experimental_api, "BluetoothUUID is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothUUID {
-	function canonicalUUID(alias:Int):UUID;
-	function getCharacteristic(name:haxe.extern.EitherType<String, Int>):UUID;
-	function getDescriptor(name:haxe.extern.EitherType<String, Int>):UUID;
-	function getService(name:haxe.extern.EitherType<String, Int>):UUID;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothUUID/canonicalUUID_static>
+	**/
+	static function canonicalUUID(alias:Int):UUID;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothUUID/getCharacteristic_static>
+	**/
+	static function getCharacteristic(name:haxe.extern.EitherType<String, Int>):UUID;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothUUID/getDescriptor_static>
+	**/
+	static function getDescriptor(name:haxe.extern.EitherType<String, Int>):UUID;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/BluetoothUUID/getService_static>
+	**/
+	static function getService(name:haxe.extern.EitherType<String, Int>):UUID;
 }

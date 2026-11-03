@@ -46,7 +46,10 @@ package js.web.webrtc;
 		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/transform>
 	**/
 	var transform : Null<RTCRtpReceiverTransform>;
-	function getCapabilities(kind:String):Null<RTCRtpCapabilities>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/getCapabilities_static>
+	**/
+	static function getCapabilities(kind:String):Null<RTCRtpCapabilities>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/getContributingSources>
 	**/

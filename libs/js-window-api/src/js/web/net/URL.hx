@@ -80,16 +80,26 @@ package js.web.net;
 		@see <https://developer.mozilla.org/docs/Web/API/URL/URL>
 	**/
 	function new(url:String, ?base:String):Void;
-	function canParse(url:String, ?base:String):Bool;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/canParse_static>
+	**/
+	static function canParse(url:String, ?base:String):Bool;
 	/**
 		From partial interface in FileAPI.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/URL/createObjectURL_static>
 	**/
-	function createObjectURL(obj:haxe.extern.EitherType<Blob, js.web.media.MediaSource>):String;
-	function parse(url:String, ?base:String):Null<URL>;
+	static function createObjectURL(obj:haxe.extern.EitherType<Blob, js.web.media.MediaSource>):String;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/URL/parse_static>
+	**/
+	static function parse(url:String, ?base:String):Null<URL>;
 	/**
 		From partial interface in FileAPI.idl
+		
+		@see <https://developer.mozilla.org/docs/Web/API/URL/revokeObjectURL_static>
 	**/
-	function revokeObjectURL(url:String):Void;
+	static function revokeObjectURL(url:String):Void;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/URL/toJSON>
 	**/

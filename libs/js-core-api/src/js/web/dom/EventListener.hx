@@ -24,6 +24,4 @@
 
 package js.web.dom;
 
-typedef EventListener = {
-	function handleEvent(event:Event):Void;
-};
+typedef EventListener = haxe.extern.EitherType<(event:Event) -> Void, { function handleEvent(event:Event):Void; }>;

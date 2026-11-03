@@ -34,7 +34,7 @@ package js.web.ml;
 	var includeCorrectionExplanations(default, null) : Bool;
 	var expectedInputLanguages(default, null) : Null<Array<String>>;
 	var correctionExplanationLanguage(default, null) : Null<String>;
-	function availability(?options:ProofreaderCreateCoreOptions):js.lib.Promise<Availability>;
-	function create(?options:ProofreaderCreateOptions):js.lib.Promise<Proofreader>;
+	static function availability(?options:ProofreaderCreateCoreOptions):js.lib.Promise<Availability>;
+	static function create(?options:ProofreaderCreateOptions):js.lib.Promise<Proofreader>;
 	function proofread(input:String, ?options:ProofreaderProofreadOptions):js.lib.Promise<ProofreadResult>;
 }

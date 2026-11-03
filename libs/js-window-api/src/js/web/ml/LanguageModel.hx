@@ -51,12 +51,18 @@ package js.web.ml;
 		@see <https://developer.mozilla.org/docs/Web/API/LanguageModel/append>
 	**/
 	function append(input:LanguageModelPrompt, ?options:LanguageModelAppendOptions):js.lib.Promise<Void>;
-	function availability(?options:LanguageModelCreateCoreOptions):js.lib.Promise<Availability>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageModel/availability_static>
+	**/
+	static function availability(?options:LanguageModelCreateCoreOptions):js.lib.Promise<Availability>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/LanguageModel/clone>
 	**/
 	function clone(?options:LanguageModelCloneOptions):js.lib.Promise<LanguageModel>;
-	function create(?options:LanguageModelCreateOptions):js.lib.Promise<LanguageModel>;
+	/**
+		@see <https://developer.mozilla.org/docs/Web/API/LanguageModel/create_static>
+	**/
+	static function create(?options:LanguageModelCreateOptions):js.lib.Promise<LanguageModel>;
 	/**
 		From interface mixin DestroyableModel
 		
@@ -68,7 +74,7 @@ package js.web.ml;
 	**/
 	function measureContextUsage(input:LanguageModelPrompt, ?options:LanguageModelPromptOptions):js.lib.Promise<Float>;
 	function measureInputUsage(input:LanguageModelPrompt, ?options:LanguageModelPromptOptions):js.lib.Promise<Float>;
-	function params():js.lib.Promise<Null<LanguageModelParams>>;
+	static function params():js.lib.Promise<Null<LanguageModelParams>>;
 	/**
 		@see <https://developer.mozilla.org/docs/Web/API/LanguageModel/prompt>
 	**/

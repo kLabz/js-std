@@ -25,18 +25,28 @@
 package js.web.webgl;
 
 /**
+	The **WebGLShaderPrecisionFormat** interface is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and represents the information returned by calling the `WebGLRenderingContext.getShaderPrecisionFormat()` method.
+	
+	Documentation [WebGLShaderPrecisionFormat](https://developer.mozilla.org/docs/Web/API/WebGLShaderPrecisionFormat) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WebGLShaderPrecisionFormat/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WebGLShaderPrecisionFormat>
 **/
 @:native("WebGLShaderPrecisionFormat") extern class WebGLShaderPrecisionFormat {
 	/**
+		The read-only **`WebGLShaderPrecisionFormat.rangeMin`** property returns the base 2 log of the absolute value of the minimum value that can be represented.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLShaderPrecisionFormat/rangeMin>
 	**/
 	var rangeMin(default, null) : GLint;
 	/**
+		The read-only **`WebGLShaderPrecisionFormat.rangeMax`** property returns the base 2 log of the absolute value of the maximum value that can be represented.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLShaderPrecisionFormat/rangeMax>
 	**/
 	var rangeMax(default, null) : GLint;
 	/**
+		The read-only **`WebGLShaderPrecisionFormat.precision`** property returns the number of bits of precision that can be represented.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLShaderPrecisionFormat/precision>
 	**/
 	var precision(default, null) : GLint;

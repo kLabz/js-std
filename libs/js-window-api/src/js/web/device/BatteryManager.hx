@@ -25,26 +25,38 @@
 package js.web.device;
 
 /**
+	The **Battery Status API**, more often referred to as the **Battery API**, provides information about the system's battery charge level and lets you be notified by events that are sent when the battery level or charging status change. This can be used to adjust your app's resource usage to reduce battery drain when the battery is low, or to save changes before the battery runs out in order to prevent data loss.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [BatteryManager](https://developer.mozilla.org/docs/Web/API/BatteryManager) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/BatteryManager/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/BatteryManager>
 **/
 @:native("BatteryManager") @:require(js_experimental_api, "BatteryManager is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BatteryManager extends js.web.dom.EventTarget {
 	/**
+		The **`charging`** read-only property of the `BatteryManager` interface is a Boolean value indicating whether or not the device's battery is currently being charged. When its value changes, the `chargingchange` event is fired.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BatteryManager/charging>
 	**/
 	var charging(default, null) : Bool;
 	/**
+		The **`chargingTime`** read-only property of the `BatteryManager` interface indicates the amount of time, in seconds, that remain until the battery is fully charged, or `0` if the battery is already fully charged or the user agent is unable to report the battery status information. If the battery is currently discharging, its value is `Infinity`. When its value changes, the `chargingtimechange` event is fired.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BatteryManager/chargingTime>
 	**/
 	var chargingTime(default, null) : Float;
 	/**
+		The **`dischargingTime`** read-only property of the `BatteryManager` interface indicates the amount of time, in seconds, that remains until the battery is fully discharged, or `Infinity` if the battery is currently charging rather than discharging or the user agent is unable to report the battery status information. When its value changes, the `dischargingtimechange` event is fired.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BatteryManager/dischargingTime>
 	**/
 	var dischargingTime(default, null) : Float;
 	/**
+		The **`level`** read-only property of the `BatteryManager` interface indicates the current battery charge level as a value between `0.0` and `1.0`. A value of `0.0` means the battery is empty and the system is about to be suspended. A value of `1.0` means the battery is full or the user agent is unable to report the battery status information. When its value changes, the `levelchange` event is fired.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BatteryManager/level>
 	**/
 	var level(default, null) : Float;

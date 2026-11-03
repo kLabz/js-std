@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`HTMLDListElement`** interface provides special properties (beyond those of the regular `HTMLElement` interface it also has available to it by inheritance) for manipulating definition list (`<dl>`) elements.
+	
+	Documentation [HTMLDListElement](https://developer.mozilla.org/docs/Web/API/HTMLDListElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLDListElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLDListElement>
 **/
 @:native("HTMLDListElement") extern class HTMLDListElement extends HTMLElement {
 	/**
+		The **`compact`** property of the `HTMLDListElement` interface indicates that spacing between list items should be reduced. The exact handling of the `compact` attribute is browser-specific. Instead of using this property, consider using CSS `line-height` instead.
+		
 		From partial interface in html.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLDListElement/compact>

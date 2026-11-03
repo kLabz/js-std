@@ -25,18 +25,28 @@
 package js.web.svg;
 
 /**
+	The **`SVGFEPointLightElement`** interface corresponds to the `<fePointLight>` element.
+	
+	Documentation [SVGFEPointLightElement](https://developer.mozilla.org/docs/Web/API/SVGFEPointLightElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGFEPointLightElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGFEPointLightElement>
 **/
 @:native("SVGFEPointLightElement") extern class SVGFEPointLightElement extends SVGElement {
 	/**
+		The **`x`** read-only property of the `SVGFEPointLightElement` interface describes the horizontal coordinate of the position of an SVG filter primitive as a `SVGAnimatedNumber`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEPointLightElement/x>
 	**/
 	var x(default, null) : SVGAnimatedNumber;
 	/**
+		The **`y`** read-only property of the `SVGFEPointLightElement` interface describes the vertical coordinate of the position of an SVG filter primitive as a `SVGAnimatedNumber`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEPointLightElement/y>
 	**/
 	var y(default, null) : SVGAnimatedNumber;
 	/**
+		The **`z`** read-only property of the `SVGFEPointLightElement` interface describes the z-axis value of the position of an SVG filter primitive as a `SVGAnimatedNumber`. A positive Z-axis comes out towards the person viewing the content.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEPointLightElement/z>
 	**/
 	var z(default, null) : SVGAnimatedNumber;

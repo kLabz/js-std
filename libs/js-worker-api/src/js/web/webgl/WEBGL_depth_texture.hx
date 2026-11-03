@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The **`WEBGL_depth_texture`** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and defines 2D depth and depth-stencil textures.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [WEBGL_depth_texture](https://developer.mozilla.org/docs/Web/API/WEBGL_depth_texture) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WEBGL_depth_texture/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_depth_texture>
 **/

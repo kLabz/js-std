@@ -25,10 +25,16 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCTransformEvent`** of the [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) represent an event that is fired in a dedicated worker when an encoded frame has been queued for processing by a [WebRTC Encoded Transform](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Using_Encoded_Transforms).
+	
+	Documentation [RTCTransformEvent](https://developer.mozilla.org/docs/Web/API/RTCTransformEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCTransformEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCTransformEvent>
 **/
 @:native("RTCTransformEvent") extern class RTCTransformEvent extends js.web.dom.Event {
 	/**
+		The read-only **`transformer`** property of the `RTCTransformEvent` interface returns the `RTCRtpScriptTransformer` associated with the event.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCTransformEvent/transformer>
 	**/
 	var transformer(default, null) : RTCRtpScriptTransformer;

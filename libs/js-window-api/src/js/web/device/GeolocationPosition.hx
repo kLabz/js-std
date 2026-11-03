@@ -25,20 +25,30 @@
 package js.web.device;
 
 /**
+	The **`GeolocationPosition`** interface represents the position of the concerned device at a given time. The position, represented by a `GeolocationCoordinates` object, comprehends the 2D position of the device, on a spheroid representing the Earth, but also its altitude and its speed.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GeolocationPosition](https://developer.mozilla.org/docs/Web/API/GeolocationPosition) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GeolocationPosition/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GeolocationPosition>
 **/
 @:native("GeolocationPosition") extern class GeolocationPosition {
 	/**
+		The **`coords`** read-only property of the `GeolocationPosition` interface returns a `GeolocationCoordinates` object representing a geographic position. It contains the location, that is longitude and latitude on the Earth, the altitude, and the speed of the object concerned, regrouped inside the returned value. It also contains accuracy information about these values.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GeolocationPosition/coords>
 	**/
 	var coords(default, null) : GeolocationCoordinates;
 	/**
+		The **`timestamp`** read-only property of the `GeolocationPosition` interface represents the date and time that the position was acquired by the device.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GeolocationPosition/timestamp>
 	**/
 	var timestamp(default, null) : js.web.perf.EpochTimeStamp;
 	/**
+		The **`toJSON()`** method of the `GeolocationPosition` interface returns a JSON-serializable plain object representing the `GeolocationPosition` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GeolocationPosition/toJSON>
 	**/
 	function toJSON():{ };

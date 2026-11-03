@@ -25,30 +25,46 @@
 package js.web.svg;
 
 /**
+	The **`SVGRadialGradientElement`** interface corresponds to the `<RadialGradient>` element.
+	
+	Documentation [SVGRadialGradientElement](https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement>
 **/
 @:native("SVGRadialGradientElement") extern class SVGRadialGradientElement extends SVGGradientElement {
 	/**
+		The **`cx`** read-only property of the `SVGRadialGradientElement` interface describes the x-axis coordinate of the center of the radial gradient as an `SVGAnimatedLength`. It reflects the computed value of the `cx` attribute on the `<radialGradient>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement/cx>
 	**/
 	var cx(default, null) : SVGAnimatedLength;
 	/**
+		The **`cy`** read-only property of the `SVGRadialGradientElement` interface describes the y-axis coordinate of the center of the radial gradient as an `SVGAnimatedLength`. It reflects the computed value of the `cy` attribute on the `<radialGradient>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement/cy>
 	**/
 	var cy(default, null) : SVGAnimatedLength;
 	/**
+		The **`r`** read-only property of the `SVGRadialGradientElement` interface describes the radius of the radial gradient as an `SVGAnimatedLength`. It reflects the computed value of the `r` attribute on the `<radialGradient>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement/r>
 	**/
 	var r(default, null) : SVGAnimatedLength;
 	/**
+		The **`fx`** read-only property of the `SVGRadialGradientElement` interface describes the x-axis coordinate of the focal point of the radial gradient as an `SVGAnimatedLength`. It reflects the computed value of the `fx` attribute on the `<radialGradient>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement/fx>
 	**/
 	var fx(default, null) : SVGAnimatedLength;
 	/**
+		The **`fy`** read-only property of the `SVGRadialGradientElement` interface describes the y-axis coordinate of the focal point of the radial gradient as an `SVGAnimatedLength`. It reflects the computed value of the `fy` attribute on the `<radialGradient>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement/fy>
 	**/
 	var fy(default, null) : SVGAnimatedLength;
 	/**
+		The **`fr`** read-only property of the `SVGRadialGradientElement` interface describes the radius of the focal circle of the radial gradient as an `SVGAnimatedLength`. It reflects the computed value of the `fr` attribute on the `<radialGradient>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGRadialGradientElement/fr>
 	**/
 	var fr(default, null) : SVGAnimatedLength;

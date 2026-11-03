@@ -25,9 +25,13 @@
 package js.web.media;
 
 /**
+	The **`CaptureController`** interface provides methods that can be used to further manipulate a captured display surface (captured via `MediaDevices.getDisplayMedia()`)
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [CaptureController](https://developer.mozilla.org/docs/Web/API/CaptureController) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CaptureController/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/CaptureController>
 **/
@@ -37,6 +41,8 @@ package js.web.media;
 	**/
 	var oncapturedmousechange : js.web.html.EventHandler;
 	/**
+		The **`zoomLevel`** read-only property of the `CaptureController` interface returns the captured display surface's current zoom level.
+		
 		From partial interface in mediacapture-surface-control.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/zoomLevel>
@@ -47,40 +53,54 @@ package js.web.media;
 	**/
 	var onzoomlevelchange : js.web.html.EventHandler;
 	/**
+		The `CaptureController` constructor creates a new `CaptureController` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/CaptureController>
 	**/
 	function new():Void;
 	/**
+		The `CaptureController` interface's **`decreaseZoomLevel()`** method decreases the captured display surface's zoom level by one increment.
+		
 		From partial interface in mediacapture-surface-control.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/decreaseZoomLevel>
 	**/
 	function decreaseZoomLevel():js.lib.Promise<Void>;
 	/**
+		The `CaptureController` interface's **`forwardWheel()`** method starts forwarding `wheel` events fired on the referenced element to the viewport of an associated captured display surface.
+		
 		From partial interface in mediacapture-surface-control.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/forwardWheel>
 	**/
 	function forwardWheel(element:Null<js.web.html.HTMLElement>):js.lib.Promise<Void>;
 	/**
+		The `CaptureController` interface's **`getSupportedZoomLevels()`** method returns the different zoom levels that the captured display surface supports.
+		
 		From partial interface in mediacapture-surface-control.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/getSupportedZoomLevels>
 	**/
 	function getSupportedZoomLevels():Array<Int>;
 	/**
+		The `CaptureController` interface's **`increaseZoomLevel()`** method increases the captured display surface's zoom level by one increment.
+		
 		From partial interface in mediacapture-surface-control.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/increaseZoomLevel>
 	**/
 	function increaseZoomLevel():js.lib.Promise<Void>;
 	/**
+		The `CaptureController` interface's **`resetZoomLevel()`** method resets the captured display surface's zoom to its initial level, which is `100`.
+		
 		From partial interface in mediacapture-surface-control.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/resetZoomLevel>
 	**/
 	function resetZoomLevel():js.lib.Promise<Void>;
 	/**
+		The `CaptureController` interface's **`setFocusBehavior()`** method controls whether the captured tab or window will be focused when an associated `MediaDevices.getDisplayMedia()` `Promise` fulfills, or whether the focus will remain with the tab containing the capturing app.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CaptureController/setFocusBehavior>
 	**/
 	function setFocusBehavior(focusBehavior:CaptureStartFocusBehavior):Void;

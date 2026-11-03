@@ -25,20 +25,30 @@
 package js.web.media;
 
 /**
+	The **`ChapterInformation`** interface of the `Media Session API` represents the metadata for an individual chapter of a media resource (i.e., a video or audio file).
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [ChapterInformation](https://developer.mozilla.org/docs/Web/API/ChapterInformation) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ChapterInformation/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/ChapterInformation>
 **/
 @:native("ChapterInformation") @:require(js_experimental_api, "ChapterInformation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ChapterInformation {
 	/**
+		The **`title`** read-only property of the `ChapterInformation` interface returns a string representing the title of the chapter.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ChapterInformation/title>
 	**/
 	var title(default, null) : String;
 	/**
+		The **`startTime`** read-only property of the `ChapterInformation` interface returns a number representing the start time of the chapter in seconds.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ChapterInformation/startTime>
 	**/
 	var startTime(default, null) : Float;
 	/**
+		The **`artwork`** read-only property of the `ChapterInformation` interface returns an `Array` of objects representing images associated with the chapter.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ChapterInformation/artwork>
 	**/
 	var artwork(default, null) : Array<MediaImage>;

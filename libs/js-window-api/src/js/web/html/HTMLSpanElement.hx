@@ -25,6 +25,10 @@
 package js.web.html;
 
 /**
+	The **`HTMLSpanElement`** interface represents a `<span>` element and derives from the `HTMLElement` interface, but without implementing any additional properties or methods.
+	
+	Documentation [HTMLSpanElement](https://developer.mozilla.org/docs/Web/API/HTMLSpanElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLSpanElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLSpanElement>
 **/
 @:native("HTMLSpanElement") extern class HTMLSpanElement extends HTMLElement {

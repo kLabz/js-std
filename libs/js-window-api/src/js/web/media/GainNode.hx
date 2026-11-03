@@ -25,14 +25,22 @@
 package js.web.media;
 
 /**
+	The `GainNode` interface represents a change in volume. It is an `AudioNode` audio-processing module that causes a given gain to be applied to the input data before its propagation to the output. A `GainNode` always has exactly one input and one output, both with the same number of channels.
+	
+	Documentation [GainNode](https://developer.mozilla.org/docs/Web/API/GainNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GainNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/GainNode>
 **/
 @:native("GainNode") extern class GainNode extends AudioNode {
 	/**
+		The `gain` property of the `GainNode` interface is an [a-rate](https://developer.mozilla.org/en-US/docs/Web/API/AudioParam#a-rate) `AudioParam` representing the amount of gain to apply.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GainNode/gain>
 	**/
 	var gain(default, null) : AudioParam;
 	/**
+		The **`GainNode()`** constructor of the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) creates a new `GainNode` object which is an `AudioNode` that represents a change in volume.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GainNode/GainNode>
 	**/
 	function new(context:BaseAudioContext, ?options:GainOptions):Void;

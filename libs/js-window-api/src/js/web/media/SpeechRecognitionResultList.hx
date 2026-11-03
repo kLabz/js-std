@@ -25,16 +25,24 @@
 package js.web.media;
 
 /**
+	The **`SpeechRecognitionResultList`** interface of the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) represents a list of `SpeechRecognitionResult` objects, or a single one if results are being captured in `non-continuous` mode.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [SpeechRecognitionResultList](https://developer.mozilla.org/docs/Web/API/SpeechRecognitionResultList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SpeechRecognitionResultList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionResultList>
 **/
 @:native("SpeechRecognitionResultList") extern class SpeechRecognitionResultList implements ArrayAccess<Null<SpeechRecognitionResult>> {
 	/**
+		The **`length`** read-only property of the `SpeechRecognitionResultList` interface returns the length of the "array" — the number of `SpeechRecognitionResult` objects in the list.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionResultList/length>
 	**/
 	var length(default, null) : Int;
 	/**
+		The **`item`** getter of the `SpeechRecognitionResultList` interface is a standard getter — it allows `SpeechRecognitionResult` objects in the list to be accessed via array syntax.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionResultList/item>
 	**/
 	function item(index:Int):Null<SpeechRecognitionResult>;

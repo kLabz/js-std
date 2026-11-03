@@ -25,24 +25,36 @@
 package js.web.media;
 
 /**
+	The **`ImageTrack`** interface of the `WebCodecs API` represents an individual image track.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [ImageTrack](https://developer.mozilla.org/docs/Web/API/ImageTrack) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ImageTrack/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/ImageTrack>
 **/
 @:native("ImageTrack") extern class ImageTrack {
 	/**
+		The **`animated`** property of the `ImageTrack` interface returns `true` if the track is animated and therefore has multiple frames.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ImageTrack/animated>
 	**/
 	var animated(default, null) : Bool;
 	/**
+		The **`frameCount`** property of the `ImageTrack` interface returns the number of frames in the track.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ImageTrack/frameCount>
 	**/
 	var frameCount(default, null) : Int;
 	/**
+		The **`repetitionCount`** property of the `ImageTrack` interface returns the number of repetitions of this track.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ImageTrack/repetitionCount>
 	**/
 	var repetitionCount(default, null) : Float;
 	/**
+		The **`selected`** property of the `ImageTrack` interface returns `true` if the track is selected for decoding.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ImageTrack/selected>
 	**/
 	var selected : Bool;

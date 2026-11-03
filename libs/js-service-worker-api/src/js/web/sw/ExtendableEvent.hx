@@ -25,14 +25,22 @@
 package js.web.sw;
 
 /**
+	The **`ExtendableEvent`** interface extends the lifetime of the [`install`](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/install_event) and [`activate`](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/activate_event) events dispatched on the global scope as part of the service worker lifecycle. This ensures that any functional events (like `FetchEvent`) are not dispatched until it upgrades database schemas and deletes the outdated cache entries.
+	
+	Documentation [ExtendableEvent](https://developer.mozilla.org/docs/Web/API/ExtendableEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ExtendableEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ExtendableEvent>
 **/
 @:native("ExtendableEvent") extern class ExtendableEvent extends js.web.dom.Event {
 	/**
+		The **`ExtendableEvent()`** constructor creates a new `ExtendableEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableEvent/ExtendableEvent>
 	**/
 	function new(type:String, ?eventInitDict:ExtendableEventInit):Void;
 	/**
+		The **`ExtendableEvent.waitUntil()`** method tells the event dispatcher that work is ongoing. It can also be used to detect whether that work was successful. In service workers, `waitUntil()` tells the browser that work is ongoing until the promise settles, and it shouldn't terminate the service worker if it wants that work to complete.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableEvent/waitUntil>
 	**/
 	function waitUntil(f:js.lib.Promise<Any>):Void;

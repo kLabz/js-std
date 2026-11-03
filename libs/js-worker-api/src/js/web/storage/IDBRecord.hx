@@ -25,6 +25,10 @@
 package js.web.storage;
 
 /**
+	The **`IDBRecord`** interface of the [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) represents a snapshot of a single record in an `IDBObjectStore` or `IDBIndex`.
+	
+	Documentation [IDBRecord](https://developer.mozilla.org/docs/Web/API/IDBRecord) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/IDBRecord/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/IDBRecord>
 **/
 @:native("IDBRecord") extern class IDBRecord {

@@ -25,18 +25,28 @@
 package js.web.css;
 
 /**
+	The CSS Typed Object Model API simplifies CSS property manipulation by exposing CSS values as typed JavaScript objects rather than strings. This not only simplifies CSS manipulation, but also lessens the negative impact on performance as compared to `HTMLElement.style`.
+	
+	Documentation [CSSStyleValue](https://developer.mozilla.org/docs/Web/API/CSSStyleValue) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSStyleValue/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSStyleValue>
 **/
 @:native("CSSStyleValue") extern class CSSStyleValue {
 	/**
+		The **`parse()`** static method of the `CSSStyleValue` interface sets a specific CSS property to the specified values and returns the first value as a `CSSStyleValue` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleValue/parse_static>
 	**/
 	static function parse(property:String, cssText:String):CSSStyleValue;
 	/**
+		The **`parseAll()`** static method of the `CSSStyleValue` interface sets all occurrences of a specific CSS property to the specified value and returns an array of `CSSStyleValue` objects, each containing one of the supplied values.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleValue/parseAll_static>
 	**/
 	static function parseAll(property:String, cssText:String):Array<CSSStyleValue>;
 	/**
+		The **`toString()`** method of the `CSSStyleValue` interface is a stringifier that returns the value formatted as a string of standard CSS text.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleValue/toString>
 	**/
 	function toString():String;

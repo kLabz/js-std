@@ -25,18 +25,26 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUShaderModule`** interface of the `WebGPU API` represents an internal shader module object, a container for [WGSL](https://gpuweb.github.io/gpuweb/wgsl/) shader code that can be submitted to the GPU for execution by a pipeline.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUShaderModule](https://developer.mozilla.org/docs/Web/API/GPUShaderModule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUShaderModule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUShaderModule>
 **/
 @:native("GPUShaderModule") extern class GPUShaderModule {
 	/**
+		The **`label`** property of the `GPUShaderModule` interface provides a label that can be used to identify the object, for example in `GPUError` messages or console warnings.
+		
 		From interface mixin GPUObjectBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUShaderModule/label>
 	**/
 	var label : String;
 	/**
+		The **`getCompilationInfo()`** method of the `GPUShaderModule` interface returns a `Promise` that fulfills with a `GPUCompilationInfo` object containing messages generated during the `GPUShaderModule`'s compilation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUShaderModule/getCompilationInfo>
 	**/
 	function getCompilationInfo():js.lib.Promise<GPUCompilationInfo>;

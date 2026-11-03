@@ -25,14 +25,22 @@
 package js.web.dom;
 
 /**
+	The **`TrustedScript`** interface of the `Trusted Types API` represents a string with an uncompiled script body that a developer can insert into an [injection sink](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API#concepts_and_usage) that might execute the script. These objects are created via `TrustedTypePolicy.createScript()` and therefore have no constructor.
+	
+	Documentation [TrustedScript](https://developer.mozilla.org/docs/Web/API/TrustedScript) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TrustedScript/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TrustedScript>
 **/
 @:native("TrustedScript") extern class TrustedScript {
 	/**
+		The **`toJSON()`** method of the `TrustedScript` interface returns a string representing the `TrustedScript` object. This is the same string that `TrustedScript.toString()` returns.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedScript/toJSON>
 	**/
 	function toJSON():String;
 	/**
+		The **`toString()`** method of the `TrustedScript` interface returns a string which may be safely inserted into an [injection sink](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API#concepts_and_usage).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedScript/toString>
 	**/
 	function toString():String;

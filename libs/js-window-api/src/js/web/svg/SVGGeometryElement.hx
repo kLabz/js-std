@@ -25,26 +25,40 @@
 package js.web.svg;
 
 /**
+	The `SVGGeometryElement` interface represents SVG elements whose rendering is defined by geometry with an equivalent path, and which can be filled and stroked. This includes paths and the basic shapes.
+	
+	Documentation [SVGGeometryElement](https://developer.mozilla.org/docs/Web/API/SVGGeometryElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGGeometryElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGGeometryElement>
 **/
 @:native("SVGGeometryElement") extern class SVGGeometryElement extends SVGGraphicsElement {
 	/**
+		The **`SVGGeometryElement.pathLength`** property reflects the `pathLength` attribute and returns the total length of the path, in user units.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGGeometryElement/pathLength>
 	**/
 	var pathLength(default, null) : SVGAnimatedNumber;
 	/**
+		The **`SVGGeometryElement.getPointAtLength()`** method returns the point at a given distance along the path.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGGeometryElement/getPointAtLength>
 	**/
 	function getPointAtLength(distance:Float):js.web.dom.SVGPoint;
 	/**
+		The **`SVGGeometryElement.getTotalLength()`** method returns the user agent's computed value for the total length of the path in user units.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGGeometryElement/getTotalLength>
 	**/
 	function getTotalLength():Float;
 	/**
+		The **`isPointInFill()`** method of the `SVGGeometryElement` interface determines whether a given point is within the fill shape of an element. The `point` argument is interpreted as a point in the local coordinate system of the element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGGeometryElement/isPointInFill>
 	**/
 	function isPointInFill(?point:js.web.dom.DOMPointInit):Bool;
 	/**
+		The **`isPointInStroke()`** method of the `SVGGeometryElement` interface determines whether a given point is within the stroke shape of an element. The `point` argument is interpreted as a point in the local coordinate system of the element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGGeometryElement/isPointInStroke>
 	**/
 	function isPointInStroke(?point:js.web.dom.DOMPointInit):Bool;

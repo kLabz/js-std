@@ -25,12 +25,18 @@
 package js.web.css;
 
 /**
+	The **`CSSFunctionDeclarations`** interface of the [CSS Object Model](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents a consecutive run of CSS declarations included within a `@function` body.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [CSSFunctionDeclarations](https://developer.mozilla.org/docs/Web/API/CSSFunctionDeclarations) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSFunctionDeclarations/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionDeclarations>
 **/
 @:native("CSSFunctionDeclarations") @:require(js_experimental_api, "CSSFunctionDeclarations is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSFunctionDeclarations extends CSSRule {
 	/**
+		The read-only **`style`** property of the `CSSFunctionDeclarations` interface contains a `CSSFunctionDescriptors` object representing the descriptors available in the `@function` rule's body.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionDeclarations/style>
 	**/
 	var style(default, null) : CSSFunctionDescriptors;

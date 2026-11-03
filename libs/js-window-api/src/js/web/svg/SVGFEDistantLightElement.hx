@@ -25,14 +25,22 @@
 package js.web.svg;
 
 /**
+	The **`SVGFEDistantLightElement`** interface corresponds to the `<feDistantLight>` element.
+	
+	Documentation [SVGFEDistantLightElement](https://developer.mozilla.org/docs/Web/API/SVGFEDistantLightElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGFEDistantLightElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGFEDistantLightElement>
 **/
 @:native("SVGFEDistantLightElement") extern class SVGFEDistantLightElement extends SVGElement {
 	/**
+		The **`azimuth`** read-only property of the `SVGFEDistantLightElement` interface reflects the `azimuth` attribute of the given `<feDistantLight>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEDistantLightElement/azimuth>
 	**/
 	var azimuth(default, null) : SVGAnimatedNumber;
 	/**
+		The **`elevation`** read-only property of the `SVGFEDistantLightElement` interface reflects the `elevation` attribute of the given `<feDistantLight>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEDistantLightElement/elevation>
 	**/
 	var elevation(default, null) : SVGAnimatedNumber;

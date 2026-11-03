@@ -25,14 +25,22 @@
 package js.web.svg;
 
 /**
+	The **`SVGAnimatedNumber`** interface represents attributes of type [\<number>](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/Content_type#number) which can be animated.
+	
+	Documentation [SVGAnimatedNumber](https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumber) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumber/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumber>
 **/
 @:native("SVGAnimatedNumber") extern class SVGAnimatedNumber {
 	/**
+		The **`baseVal`** property of the `SVGAnimatedNumber` interface represents the base (non-animated) value of an animatable numeric attribute.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumber/baseVal>
 	**/
 	var baseVal : Float;
 	/**
+		The **`animVal`** read-only property of the `SVGAnimatedNumber` interface represents the animated value of an SVG element's numeric attribute.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumber/animVal>
 	**/
 	var animVal(default, null) : Float;

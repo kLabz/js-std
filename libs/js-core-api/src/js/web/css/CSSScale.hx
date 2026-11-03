@@ -25,22 +25,34 @@
 package js.web.css;
 
 /**
+	The **`CSSScale`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the `scale()` and `scale3d()` values of the individual `transform` property in CSS.
+	
+	Documentation [CSSScale](https://developer.mozilla.org/docs/Web/API/CSSScale) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSScale/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSScale>
 **/
 @:native("CSSScale") extern class CSSScale extends CSSTransformComponent {
 	/**
+		The **`x`** property of the `CSSScale` interface gets and sets the abscissa or x-axis of the translating vector.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSScale/x>
 	**/
 	var x : CSSNumberish;
 	/**
+		The **`y`** property of the `CSSScale` interface gets and sets the ordinate or y-axis of the translating vector.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSScale/y>
 	**/
 	var y : CSSNumberish;
 	/**
+		The **`z`** property of the `CSSScale` interface represents the z-component of the translating vector. A positive value moves the element towards the viewer, and a negative value farther away.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSScale/z>
 	**/
 	var z : CSSNumberish;
 	/**
+		The **`CSSScale()`** constructor creates a new `CSSScale` object representing the `scale()` and `scale3d()` values of the individual `transform` property in CSS.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSScale/CSSScale>
 	**/
 	function new(x:CSSNumberish, y:CSSNumberish, ?z:CSSNumberish):Void;

@@ -25,6 +25,10 @@
 package js.web.html;
 
 /**
+	The **`HTMLDivElement`** interface provides special properties (beyond the regular `HTMLElement` interface it also has available to it by inheritance) for manipulating `<div>` elements.
+	
+	Documentation [HTMLDivElement](https://developer.mozilla.org/docs/Web/API/HTMLDivElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLDivElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLDivElement>
 **/
 @:native("HTMLDivElement") extern class HTMLDivElement extends HTMLElement {

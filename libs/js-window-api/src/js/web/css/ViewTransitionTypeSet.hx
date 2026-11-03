@@ -25,6 +25,10 @@
 package js.web.css;
 
 /**
+	The **`ViewTransitionTypeSet`** interface of the `View Transition API` is a [set-like object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#set-like_browser_apis) representing the types of an active view transition. This enables the types to be queried or modified on-the-fly during a transition.
+	
+	Documentation [ViewTransitionTypeSet](https://developer.mozilla.org/docs/Web/API/ViewTransitionTypeSet) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ViewTransitionTypeSet/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ViewTransitionTypeSet>
 **/
 @:native("ViewTransitionTypeSet") extern class ViewTransitionTypeSet {

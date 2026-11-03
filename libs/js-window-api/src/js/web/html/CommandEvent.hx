@@ -25,18 +25,28 @@
 package js.web.html;
 
 /**
+	The **`CommandEvent`** interface represents an event notifying the user when a `button` element with valid `commandForElement` and `command` attributes is about to invoke an interactive element.
+	
+	Documentation [CommandEvent](https://developer.mozilla.org/docs/Web/API/CommandEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CommandEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CommandEvent>
 **/
 @:native("CommandEvent") extern class CommandEvent extends js.web.dom.Event {
 	/**
+		The **`source`** read-only property of the `CommandEvent` interface returns an `EventTarget` representing the control that invoked the given command.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CommandEvent/source>
 	**/
 	var source(default, null) : Null<js.web.dom.Element>;
 	/**
+		The **`command`** read-only property of the `CommandEvent` interface returns a string containing the value of the `command` property at the time the event was dispatched.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CommandEvent/command>
 	**/
 	var command(default, null) : String;
 	/**
+		The **`CommandEvent()`** constructor creates a new `CommandEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CommandEvent/CommandEvent>
 	**/
 	function new(type:String, ?eventInitDict:CommandEventInit):Void;

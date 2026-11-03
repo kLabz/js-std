@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The CSS Typed Object Model API simplifies CSS property manipulation by exposing CSS values as typed JavaScript objects rather than strings. This not only simplifies CSS manipulation, but also lessens the negative impact on performance as compared to `HTMLElement.style`.
+	
+	Documentation [CSSKeywordValue](https://developer.mozilla.org/docs/Web/API/CSSKeywordValue) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSKeywordValue/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSKeywordValue>
 **/
 @:native("CSSKeywordValue") extern class CSSKeywordValue extends CSSStyleValue {
 	/**
+		The **`value`** property of the `CSSKeywordValue` interface represents the keyword as a string.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSKeywordValue/value>
 	**/
 	var value : String;
 	/**
+		The **`CSSKeywordValue()`** constructor creates a new `CSSKeywordValue` object which represents a CSS keyword or other identifier.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSKeywordValue/CSSKeywordValue>
 	**/
 	function new(value:String):Void;

@@ -25,14 +25,20 @@
 package js.web.device;
 
 /**
+	The **`GravitySensor`** interface of the [Sensor APIs](https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs) provides on each reading the gravity applied to the device along all three axes.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [GravitySensor](https://developer.mozilla.org/docs/Web/API/GravitySensor) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GravitySensor/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GravitySensor>
 **/
 @:native("GravitySensor") @:require(js_experimental_api, "GravitySensor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class GravitySensor extends Accelerometer {
 	/**
+		The **`GravitySensor()`** constructor creates a new `GravitySensor` object which provides on each reading the gravity applied to the device along all three axes.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GravitySensor/GravitySensor>
 	**/
 	function new(?options:AccelerometerSensorOptions):Void;

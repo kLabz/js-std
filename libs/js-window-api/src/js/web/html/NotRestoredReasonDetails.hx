@@ -25,16 +25,24 @@
 package js.web.html;
 
 /**
+	The **`NotRestoredReasonDetails`** interface of the `Performance API` represents a single reason why a navigated page was blocked from using the back/forward cache (bfcache).
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [NotRestoredReasonDetails](https://developer.mozilla.org/docs/Web/API/NotRestoredReasonDetails) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/NotRestoredReasonDetails/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasonDetails>
 **/
 @:native("NotRestoredReasonDetails") @:require(js_experimental_api, "NotRestoredReasonDetails is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NotRestoredReasonDetails {
 	/**
+		The **`reason`** read-only property of the `NotRestoredReasonDetails` interface returns a string describing a reason that the page was blocked from using the back/forward cache (bfcache).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasonDetails/reason>
 	**/
 	var reason(default, null) : String;
 	/**
+		The **`toJSON()`** method of the `NotRestoredReasonDetails` interface returns a JSON-serializable plain object representing the `NotRestoredReasonDetails` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasonDetails/toJSON>
 	**/
 	function toJSON():{ };

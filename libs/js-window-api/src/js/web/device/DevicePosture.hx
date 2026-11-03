@@ -25,14 +25,20 @@
 package js.web.device;
 
 /**
+	The **Device Posture API** allows developers to create user interfaces that adapt to a foldable device's posture and respond to posture changes.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [DevicePosture](https://developer.mozilla.org/docs/Web/API/DevicePosture) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DevicePosture/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/DevicePosture>
 **/
 @:native("DevicePosture") @:require(js_experimental_api, "DevicePosture is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class DevicePosture extends js.web.dom.EventTarget {
 	/**
+		The **`type`** read-only property of the `DevicePosture` interface returns the device's current posture.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DevicePosture/type>
 	**/
 	var type(default, null) : DevicePostureType;

@@ -25,9 +25,13 @@
 package js.web.device;
 
 /**
+	The `USBAlternateInterface` interface of the [WebUSB API](https://developer.mozilla.org/en-US/docs/Web/API/WebUSB_API) provides information about a particular configuration of an interface provided by the USB device. An interface includes one or more alternate settings which can configure a set of endpoints based on the operating mode of the device.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [USBAlternateInterface](https://developer.mozilla.org/docs/Web/API/USBAlternateInterface) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/USBAlternateInterface/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/USBAlternateInterface>
 **/

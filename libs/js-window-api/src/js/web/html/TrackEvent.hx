@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`TrackEvent`** interface of the [HTML DOM API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API) is used for events which represent changes to a set of available tracks on an HTML media element; these events are `addtrack` and `removetrack`.
+	
+	Documentation [TrackEvent](https://developer.mozilla.org/docs/Web/API/TrackEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TrackEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TrackEvent>
 **/
 @:native("TrackEvent") extern class TrackEvent extends js.web.dom.Event {
 	/**
+		The read-only **`track`** property of the `TrackEvent` interface specifies the media track object to which the event applies.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TrackEvent/track>
 	**/
 	var track(default, null) : Null<haxe.extern.EitherType<VideoTrack, haxe.extern.EitherType<AudioTrack, TextTrack>>>;
 	/**
+		The **`TrackEvent()`** constructor creates and returns a new `TrackEvent` object describing an event which occurred on a list of tracks (`AudioTrackList`, `VideoTrackList`, or `TextTrackList`).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TrackEvent/TrackEvent>
 	**/
 	function new(type:String, ?eventInitDict:TrackEventInit):Void;

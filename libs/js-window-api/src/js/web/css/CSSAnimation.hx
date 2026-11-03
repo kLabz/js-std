@@ -25,10 +25,16 @@
 package js.web.css;
 
 /**
+	The **`CSSAnimation`** interface of the `Web Animations API` represents an `Animation` object.
+	
+	Documentation [CSSAnimation](https://developer.mozilla.org/docs/Web/API/CSSAnimation) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSAnimation/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSAnimation>
 **/
 @:native("CSSAnimation") extern class CSSAnimation extends Animation {
 	/**
+		The **`animationName`** property of the `CSSAnimation` interface returns the `animation-name`. This specifies one or more keyframe at-rules which describe the animation applied to the element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSAnimation/animationName>
 	**/
 	var animationName(default, null) : String;

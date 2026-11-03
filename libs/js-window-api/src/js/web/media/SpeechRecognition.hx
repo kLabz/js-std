@@ -25,40 +25,60 @@
 package js.web.media;
 
 /**
+	The **`SpeechRecognition`** interface of the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) is the controller interface for the recognition service; this also handles the `SpeechRecognitionEvent` sent from the recognition service.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [SpeechRecognition](https://developer.mozilla.org/docs/Web/API/SpeechRecognition) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SpeechRecognition/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition>
 **/
 @:native("SpeechRecognition") extern class SpeechRecognition extends js.web.dom.EventTarget {
 	/**
+		The **`grammars`** property of the `SpeechRecognition` interface returns and sets a collection of `SpeechGrammar` objects that represent the grammars that will be understood by the current `SpeechRecognition`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/grammars>
 	**/
 	var grammars : SpeechGrammarList;
 	/**
+		The **`lang`** property of the `SpeechRecognition` interface returns and sets the language of the current `SpeechRecognition`. If not specified, this defaults to the HTML [`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/lang) attribute value, or the user agent's language setting if that isn't set either.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/lang>
 	**/
 	var lang : String;
 	/**
+		The **`continuous`** property of the `SpeechRecognition` interface controls whether continuous results are returned for each recognition, or only a single result.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/continuous>
 	**/
 	var continuous : Bool;
 	/**
+		The **`interimResults`** property of the `SpeechRecognition` interface controls whether interim results should be returned (`true`) or not (`false`). Interim results are results that are not yet final (e.g., the `SpeechRecognitionResult.isFinal` property is `false`).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/interimResults>
 	**/
 	var interimResults : Bool;
 	/**
+		The **`unspokenPunctuation`** property of the `SpeechRecognition` interface specifies whether the speech recognition engine will infer and insert punctuation marks based on the user's natural speech patterns.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/unspokenPunctuation>
 	**/
 	var unspokenPunctuation : Bool;
 	/**
+		The **`maxAlternatives`** property of the `SpeechRecognition` interface sets the maximum number of `SpeechRecognitionAlternative`s provided per `SpeechRecognitionResult`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/maxAlternatives>
 	**/
 	var maxAlternatives : Int;
 	/**
+		The **`processLocally`** property of the `SpeechRecognition` interface specifies whether speech recognition must be performed locally on the user's device.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/processLocally>
 	**/
 	var processLocally : Bool;
 	/**
+		The **`phrases`** property of the `SpeechRecognition` interface sets an array of `SpeechRecognitionPhrase` objects to be used for [contextual biasing](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API#contextual_biasing_in_speech_recognition).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/phrases>
 	**/
 	var phrases : Array<SpeechRecognitionPhrase>;
@@ -74,30 +94,44 @@ package js.web.media;
 	var onstart : js.web.html.EventHandler;
 	var onend : js.web.html.EventHandler;
 	/**
+		The **`SpeechRecognition()`** constructor creates a new `SpeechRecognition` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/SpeechRecognition>
 	**/
 	function new():Void;
 	/**
+		The **`abort()`** method of the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) stops the speech recognition service from listening to incoming audio, and doesn't attempt to return a `SpeechRecognitionResult`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/abort>
 	**/
 	function abort():Void;
 	/**
+		The **`available()`** static method of the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) checks whether the specified languages are available for speech recognition at the given quality level.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/available_static>
 	**/
 	static function available(options:SpeechRecognitionOptions):js.lib.Promise<SpeechRecognitionAvailabilityStatus>;
 	/**
+		The **`install()`** static method of the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) installs the required language packs for [on-device speech recognition](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API#on-device_speech_recognition) in the specified languages and quality level.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/install_static>
 	**/
 	static function install(options:SpeechRecognitionOptions):js.lib.Promise<Bool>;
 	/**
+		The **`start()`** method of the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) starts the speech recognition service to listen for incoming audio (from a microphone or an audio track) and returns the results of that recognition.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/start>
 	**/
 	overload function start():Void;
 	/**
+		The **`start()`** method of the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) starts the speech recognition service to listen for incoming audio (from a microphone or an audio track) and returns the results of that recognition.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/start>
 	**/
 	overload function start(audioTrack:MediaStreamTrack):Void;
 	/**
+		The **`stop()`** method of the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) stops the speech recognition service from listening for incoming audio and attempts to return a `SpeechRecognitionResult` based on the results captured so far.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognition/stop>
 	**/
 	function stop():Void;

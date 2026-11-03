@@ -25,6 +25,10 @@
 package js.web.html;
 
 /**
+	The **`HTMLParagraphElement`** interface provides special properties (beyond those of the regular `HTMLElement` object interface it inherits) for manipulating `<p>` elements.
+	
+	Documentation [HTMLParagraphElement](https://developer.mozilla.org/docs/Web/API/HTMLParagraphElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLParagraphElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLParagraphElement>
 **/
 @:native("HTMLParagraphElement") extern class HTMLParagraphElement extends HTMLElement {

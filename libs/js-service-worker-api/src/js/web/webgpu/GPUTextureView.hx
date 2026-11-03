@@ -25,12 +25,18 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUTextureView`** interface of the `WebGPU API` represents a view into a subset of the texture resources defined by a particular `GPUTexture`.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUTextureView](https://developer.mozilla.org/docs/Web/API/GPUTextureView) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUTextureView/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUTextureView>
 **/
 @:native("GPUTextureView") extern class GPUTextureView {
 	/**
+		The **`label`** property of the `GPUTextureView` interface provides a label that can be used to identify the object, for example in `GPUError` messages or console warnings.
+		
 		From interface mixin GPUObjectBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUTextureView/label>

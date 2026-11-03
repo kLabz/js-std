@@ -25,24 +25,36 @@
 package js.web.webgl;
 
 /**
+	The **`WEBGL_multi_draw`** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and allows you to render more than one primitive with a single function call. This can improve a WebGL application's performance as it reduces binding costs in the renderer and speeds up GPU thread time with uniform data.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [WEBGL_multi_draw](https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw>
 **/
 @:native("WEBGL_multi_draw") extern class WEBGL_multi_draw {
 	/**
+		The **`WEBGL_multi_draw.multiDrawArraysInstancedWEBGL()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) renders multiple primitives from array data. It is identical to multiple calls to the [`gl.drawArraysInstanced()`](https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/drawArraysInstanced) method.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw/multiDrawArraysInstancedWEBGL>
 	**/
 	function multiDrawArraysInstancedWEBGL(mode:GLenum, firstsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLint>>, firstsOffset:Float, countsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, countsOffset:Float, instanceCountsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, instanceCountsOffset:Float, drawcount:GLsizei):Void;
 	/**
+		The **`WEBGL_multi_draw.multiDrawArraysWEBGL()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) renders multiple primitives from array data. It is identical to multiple calls to the [`gl.drawArrays()`](https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawArrays) method.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw/multiDrawArraysWEBGL>
 	**/
 	function multiDrawArraysWEBGL(mode:GLenum, firstsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLint>>, firstsOffset:Float, countsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, countsOffset:Float, drawcount:GLsizei):Void;
 	/**
+		The **`WEBGL_multi_draw.multiDrawElementsInstancedWEBGL()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) renders multiple primitives from array data. It is identical to multiple calls to the [`gl.drawElementsInstanced()`](https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/drawElementsInstanced) method.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw/multiDrawElementsInstancedWEBGL>
 	**/
 	function multiDrawElementsInstancedWEBGL(mode:GLenum, countsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, countsOffset:Float, type:GLenum, offsetsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, offsetsOffset:Float, instanceCountsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, instanceCountsOffset:Float, drawcount:GLsizei):Void;
 	/**
+		The **`WEBGL_multi_draw.multiDrawElementsWEBGL()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) renders multiple primitives from array data. It is identical to multiple calls to the [`gl.drawElements()`](https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/drawElements) method.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw/multiDrawElementsWEBGL>
 	**/
 	function multiDrawElementsWEBGL(mode:GLenum, countsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, countsOffset:Float, type:GLenum, offsetsList:haxe.extern.EitherType<js.lib.Int32Array, Array<GLsizei>>, offsetsOffset:Float, drawcount:GLsizei):Void;

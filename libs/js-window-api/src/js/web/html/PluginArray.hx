@@ -25,6 +25,10 @@
 package js.web.html;
 
 /**
+	The `PluginArray` interface is used to store a list of `Plugin` objects; it's returned by the `navigator.plugins` property. The `PluginArray` is not a JavaScript array, but has the `length` property and supports accessing individual items using bracket notation (`plugins[2]`), as well as via `item(index)` and `namedItem("name")` methods.
+	
+	Documentation [PluginArray](https://developer.mozilla.org/docs/Web/API/PluginArray) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PluginArray/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PluginArray>
 **/
 @:native("PluginArray") @:deprecated extern class PluginArray implements ArrayAccess<Null<Plugin>> {

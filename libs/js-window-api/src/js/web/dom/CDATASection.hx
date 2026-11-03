@@ -25,6 +25,10 @@
 package js.web.dom;
 
 /**
+	The **`CDATASection`** interface represents a CDATA section that can be used within XML to include extended portions of unescaped text. When inside a CDATA section, the symbols `<` and `&` don't need escaping as they normally do.
+	
+	Documentation [CDATASection](https://developer.mozilla.org/docs/Web/API/CDATASection) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CDATASection/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CDATASection>
 **/
 @:native("CDATASection") extern class CDATASection extends Text {

@@ -25,16 +25,24 @@
 package js.web.sw;
 
 /**
+	The **`ContentIndexEvent`** interface of the [content index](https://developer.mozilla.org/en-US/docs/Web/API/Content_Index_API) defines the object used to represent the `contentdelete` event.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [ContentIndexEvent](https://developer.mozilla.org/docs/Web/API/ContentIndexEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ContentIndexEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/ContentIndexEvent>
 **/
 @:native("ContentIndexEvent") @:require(js_experimental_api, "ContentIndexEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ContentIndexEvent extends ExtendableEvent {
 	/**
+		The **`id`** read-only property of the `ContentIndexEvent` interface is a `String` which identifies the deleted content index via its `id`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ContentIndexEvent/id>
 	**/
 	var id(default, null) : String;
 	/**
+		The **`ContentIndexEvent()`** constructor creates a new `ContentIndexEvent` object whose type and other options are configured as specified.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ContentIndexEvent/ContentIndexEvent>
 	**/
 	function new(type:String, init:ContentIndexEventInit):Void;

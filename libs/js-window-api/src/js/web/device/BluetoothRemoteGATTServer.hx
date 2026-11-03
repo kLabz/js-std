@@ -25,34 +25,50 @@
 package js.web.device;
 
 /**
+	The **`BluetoothRemoteGATTServer`** interface of the [Web Bluetooth API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API) represents a GATT Server on a remote device.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [BluetoothRemoteGATTServer](https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer>
 **/
 @:native("BluetoothRemoteGATTServer") @:require(js_experimental_api, "BluetoothRemoteGATTServer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothRemoteGATTServer {
 	/**
+		The **`BluetoothRemoteGATTServer.device`** read-only property returns a reference to the `BluetoothDevice` running the server.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer/device>
 	**/
 	var device(default, null) : BluetoothDevice;
 	/**
+		The **`BluetoothRemoteGATTServer.connected`** read-only property returns a boolean value that returns true while this script execution environment is connected to `this.device`. It can be false while the user agent is physically connected.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer/connected>
 	**/
 	var connected(default, null) : Bool;
 	/**
+		The **`BluetoothRemoteGATTServer.connect()`** method causes the script execution environment to connect to `this.device`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer/connect>
 	**/
 	function connect():js.lib.Promise<BluetoothRemoteGATTServer>;
 	/**
+		The **`BluetoothRemoteGATTServer.disconnect()`** method causes the script execution environment to disconnect from `this.device`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer/disconnect>
 	**/
 	function disconnect():Void;
 	/**
+		The **`BluetoothRemoteGATTServer.getPrimaryService()`** method returns a promise to the primary `BluetoothRemoteGATTService` offered by the Bluetooth device for a specified bluetooth service UUID.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer/getPrimaryService>
 	**/
 	function getPrimaryService(service:BluetoothServiceUUID):js.lib.Promise<BluetoothRemoteGATTService>;
 	/**
+		The **BluetoothRemoteGATTServer.getPrimaryServices()** method returns a promise to a list of primary `BluetoothRemoteGATTService` objects offered by the Bluetooth device for a specified `BluetoothServiceUUID`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer/getPrimaryServices>
 	**/
 	function getPrimaryServices(?service:BluetoothServiceUUID):js.lib.Promise<Array<BluetoothRemoteGATTService>>;

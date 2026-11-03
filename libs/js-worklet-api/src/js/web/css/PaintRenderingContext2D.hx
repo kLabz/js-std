@@ -25,7 +25,11 @@
 package js.web.css;
 
 /**
+	The **`PaintRenderingContext2D`** interface of the [CSS Painting API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Painting_API) is the API's rendering context for drawing to the bitmap. It implements a subset of the `CanvasRenderingContext2D` API, with the following exceptions:
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [PaintRenderingContext2D](https://developer.mozilla.org/docs/Web/API/PaintRenderingContext2D) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PaintRenderingContext2D/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/PaintRenderingContext2D>
 **/

@@ -25,31 +25,47 @@
 package js.web.dom;
 
 /**
+	The **`AbortSignal`** interface represents a signal object that allows you to communicate with an asynchronous operation (such as a fetch request) and abort it if required via an `AbortController` object.
+	
+	Documentation [AbortSignal](https://developer.mozilla.org/docs/Web/API/AbortSignal) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AbortSignal/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/AbortSignal>
 **/
 @:native("AbortSignal") extern class AbortSignal extends EventTarget {
 	/**
+		The **`aborted`** read-only property returns a value that indicates whether the asynchronous operations the signal is communicating with are aborted (`true`) or not (`false`).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/aborted>
 	**/
 	var aborted(default, null) : Bool;
 	/**
+		The **`reason`** read-only property returns a JavaScript value that indicates the abort reason.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/reason>
 	**/
 	var reason(default, null) : Any;
 	var onabort : js.web.html.EventHandler;
 	/**
+		The **`AbortSignal.abort()`** static method returns an `AbortSignal` that is already set as aborted (and which does not trigger an `abort` event).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/abort_static>
 	**/
 	static function abort(?reason:Any):AbortSignal;
 	/**
+		The **`AbortSignal.any()`** static method takes an iterable of abort signals and returns an `AbortSignal`. The returned abort signal is aborted when any of the input iterable abort signals are aborted. The `abort reason` will be set to the reason of the first signal that is aborted. If any of the given abort signals are already aborted then so will be the returned `AbortSignal`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/any_static>
 	**/
 	static function any(signals:Array<AbortSignal>):AbortSignal;
 	/**
+		The **`throwIfAborted()`** method throws the signal's abort `reason` if the signal has been aborted; otherwise it does nothing.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/throwIfAborted>
 	**/
 	function throwIfAborted():Void;
 	/**
+		The **`AbortSignal.timeout()`** static method returns an `AbortSignal` that will automatically abort after a specified time.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AbortSignal/timeout_static>
 	**/
 	static function timeout(milliseconds:Float):AbortSignal;

@@ -25,34 +25,50 @@
 package js.web.svg;
 
 /**
+	The **`SVGGraphicsElement`** interface represents SVG elements whose primary purpose is to directly render graphics into a group.
+	
+	Documentation [SVGGraphicsElement](https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement>
 **/
 @:native("SVGGraphicsElement") extern class SVGGraphicsElement extends SVGElement {
 	/**
+		The **`transform`** read-only property of the `SVGGraphicsElement` interface reflects the computed value of the transform property and its corresponding `transform` attribute of the given element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement/transform>
 	**/
 	var transform(default, null) : SVGAnimatedTransformList;
 	/**
+		The **`requiredExtensions`** read-only property of the `SVGGraphicsElement` interface reflects the `requiredExtensions` attribute of the given element.
+		
 		From interface mixin SVGTests
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement/requiredExtensions>
 	**/
 	var requiredExtensions(default, null) : SVGStringList;
 	/**
+		The **`systemLanguage`** read-only property of the `SVGGraphicsElement` interface reflects the `systemLanguage` attribute of the given element.
+		
 		From interface mixin SVGTests
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement/systemLanguage>
 	**/
 	var systemLanguage(default, null) : SVGStringList;
 	/**
+		The **`getBBox()`** method of the `SVGGraphicsElement` interface returns the smallest rectangle that contains the element. The rectangle is measured in the user coordinate system of the element, with the geometry attributes of the element and its descendants applied.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement/getBBox>
 	**/
 	function getBBox(?options:SVGBoundingBoxOptions):js.web.dom.SVGRect;
 	/**
+		The `getCTM()` method of the `SVGGraphicsElement` interface represents the matrix that transforms the current element's coordinate system to its SVG viewport's coordinate system.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement/getCTM>
 	**/
 	function getCTM():Null<js.web.dom.SVGMatrix>;
 	/**
+		The `getScreenCTM()` method of the `SVGGraphicsElement` interface represents the matrix that transforms the current element's coordinate system to the coordinate system of the SVG viewport for the SVG document fragment.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGGraphicsElement/getScreenCTM>
 	**/
 	function getScreenCTM():Null<js.web.dom.SVGMatrix>;

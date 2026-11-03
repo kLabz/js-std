@@ -25,14 +25,22 @@
 package js.web.canvas;
 
 /**
+	The **`ImageBitmapRenderingContext`** interface is a canvas rendering context that provides the functionality to replace the canvas's contents with the given `ImageBitmap`. Its context id (the first argument to `HTMLCanvasElement.getContext()` or `OffscreenCanvas.getContext()`) is `"bitmaprenderer"`.
+	
+	Documentation [ImageBitmapRenderingContext](https://developer.mozilla.org/docs/Web/API/ImageBitmapRenderingContext) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ImageBitmapRenderingContext/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ImageBitmapRenderingContext>
 **/
 @:native("ImageBitmapRenderingContext") extern class ImageBitmapRenderingContext {
 	/**
+		The **`ImageBitmapRenderingContext.canvas`** property, part of the [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API), is a read-only reference to the `HTMLCanvasElement` or `OffscreenCanvas` object that is associated with the given context.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ImageBitmapRenderingContext/canvas>
 	**/
 	var canvas(default, null) : haxe.extern.EitherType<js.web.html.HTMLCanvasElement, OffscreenCanvas>;
 	/**
+		The **`ImageBitmapRenderingContext.transferFromImageBitmap()`** method displays the given `ImageBitmap` in the canvas associated with this rendering context. The ownership of the `ImageBitmap` is transferred to the canvas as well.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ImageBitmapRenderingContext/transferFromImageBitmap>
 	**/
 	function transferFromImageBitmap(bitmap:Null<ImageBitmap>):Void;

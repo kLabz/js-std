@@ -25,6 +25,10 @@
 package js.web.html;
 
 /**
+	The **`HTMLSelectedContentElement`** interface represents a `<selectedcontent>` element in the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model).
+	
+	Documentation [HTMLSelectedContentElement](https://developer.mozilla.org/docs/Web/API/HTMLSelectedContentElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLSelectedContentElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLSelectedContentElement>
 **/
 @:native("HTMLSelectedContentElement") extern class HTMLSelectedContentElement extends HTMLElement {

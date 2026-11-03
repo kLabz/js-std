@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`HTMLOptGroupElement`** interface provides special properties and methods (beyond the regular `HTMLElement` object interface they also have available to them by inheritance) for manipulating the layout and presentation of `<optgroup>` elements.
+	
+	Documentation [HTMLOptGroupElement](https://developer.mozilla.org/docs/Web/API/HTMLOptGroupElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLOptGroupElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLOptGroupElement>
 **/
 @:native("HTMLOptGroupElement") extern class HTMLOptGroupElement extends HTMLElement {
 	/**
+		The **`disabled`** property of the `HTMLOptGroupElement` interface is a boolean value that reflects the `<optgroup>` element's [`disabled`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/optgroup#disabled) attribute, which indicates whether the control is disabled.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptGroupElement/disabled>
 	**/
 	var disabled : Bool;
 	/**
+		The **`label`** property of the `HTMLOptGroupElement` interface is a string value that reflects the `<optgroup>` element's [`label`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/optgroup#label) attribute, which provides a textual label to the group of options.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptGroupElement/label>
 	**/
 	var label : String;

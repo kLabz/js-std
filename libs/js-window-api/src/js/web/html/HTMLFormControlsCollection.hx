@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`HTMLFormControlsCollection`** interface represents a _collection_ of HTML _form control elements_, returned by the `HTMLFormElement` interface's `elements` property.
+	
+	Documentation [HTMLFormControlsCollection](https://developer.mozilla.org/docs/Web/API/HTMLFormControlsCollection) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLFormControlsCollection/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLFormControlsCollection>
 **/
 @:native("HTMLFormControlsCollection") extern class HTMLFormControlsCollection extends js.web.dom.HTMLCollection {
 	/**
+		The **`HTMLFormControlsCollection.namedItem()`** method returns the `RadioNodeList` or the `Element` in the collection whose `name` or `id` match the specified name, or `null` if no node matches.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLFormControlsCollection/namedItem>
 	**/
 	function namedItem(name:String):Null<haxe.extern.EitherType<RadioNodeList, js.web.dom.Element>>;

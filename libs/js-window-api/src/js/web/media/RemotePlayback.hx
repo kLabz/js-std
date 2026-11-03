@@ -25,10 +25,16 @@
 package js.web.media;
 
 /**
+	The **Remote Playback API** extends the `HTMLMediaElement` to enable the control of media played on a remote device.
+	
+	Documentation [RemotePlayback](https://developer.mozilla.org/docs/Web/API/RemotePlayback) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RemotePlayback/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RemotePlayback>
 **/
 @:native("RemotePlayback") extern class RemotePlayback extends js.web.dom.EventTarget {
 	/**
+		The **`state`** read-only property of the `RemotePlayback` interface returns the current state of the `RemotePlayback` connection.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RemotePlayback/state>
 	**/
 	var state(default, null) : RemotePlaybackState;
@@ -36,14 +42,20 @@ package js.web.media;
 	var onconnect : js.web.html.EventHandler;
 	var ondisconnect : js.web.html.EventHandler;
 	/**
+		The **`cancelWatchAvailability()`** method of the `RemotePlayback` interface cancels the request to watch for one or all available devices.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RemotePlayback/cancelWatchAvailability>
 	**/
 	function cancelWatchAvailability(?id:Int):js.lib.Promise<Void>;
 	/**
+		The **`prompt()`** method of the `RemotePlayback` interface prompts the user to select an available remote playback device and give permission for the current media to be played using that device.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RemotePlayback/prompt>
 	**/
 	function prompt():js.lib.Promise<Void>;
 	/**
+		The **`watchAvailability()`** method of the `RemotePlayback` interface watches the list of available remote playback devices and returns a `Promise` that resolves with the `callbackId` of a remote playback device.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RemotePlayback/watchAvailability>
 	**/
 	function watchAvailability(callback:RemotePlaybackAvailabilityCallback):js.lib.Promise<Int>;

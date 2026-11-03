@@ -25,16 +25,24 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCIdentityAssertion`** interface of the [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) represents the identity of a remote peer of the current connection. If no peer has yet been set and verified, then this interface returns `null`. Once set it can't be changed.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [RTCIdentityAssertion](https://developer.mozilla.org/docs/Web/API/RTCIdentityAssertion) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCIdentityAssertion/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCIdentityAssertion>
 **/
 @:native("RTCIdentityAssertion") @:require(js_experimental_api, "RTCIdentityAssertion is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class RTCIdentityAssertion {
 	/**
+		The **`idp`** property of the `RTCIdentityAssertion` interface indicates the domain name of the identity provider (IdP) that validated the identity assertion (a verified claim of the remote peer's identity).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCIdentityAssertion/idp>
 	**/
 	var idp : String;
 	/**
+		The **`name`** property of the `RTCIdentityAssertion` interface indicates the verified peer identity. It is a string in an email address-like format (for example, `user@example.com`), as defined by .
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCIdentityAssertion/name>
 	**/
 	var name : String;

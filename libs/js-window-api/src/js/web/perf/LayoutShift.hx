@@ -25,28 +25,42 @@
 package js.web.perf;
 
 /**
+	The `LayoutShift` interface of the [Performance API](https://developer.mozilla.org/en-US/docs/Web/API/Performance_API) provides insights into the layout stability of web pages based on movements of the elements on the page.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [LayoutShift](https://developer.mozilla.org/docs/Web/API/LayoutShift) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/LayoutShift/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/LayoutShift>
 **/
 @:native("LayoutShift") @:require(js_experimental_api, "LayoutShift is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LayoutShift extends PerformanceEntry {
 	/**
+		The **`value`** read-only property of the `LayoutShift` interface returns the layout shift score calculated as the impact fraction (fraction of the viewport that was shifted) multiplied by the distance fraction (distance moved as a fraction of viewport).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LayoutShift/value>
 	**/
 	var value(default, null) : Float;
 	/**
+		The **`hadRecentInput`** read-only property of the `LayoutShift` interface returns `true` if `lastInputTime` is less than 500 milliseconds in the past.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LayoutShift/hadRecentInput>
 	**/
 	var hadRecentInput(default, null) : Bool;
 	/**
+		The **`lastInputTime`** read-only property of the `LayoutShift` interface returns the time of the most recent excluding input or `0` if no excluding input has occurred.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LayoutShift/lastInputTime>
 	**/
 	var lastInputTime(default, null) : DOMHighResTimeStamp;
 	/**
+		The **`sources`** read-only property of the `LayoutShift` interface returns an array of `LayoutShiftAttribution` objects that indicate the DOM elements that moved during the layout shift.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LayoutShift/sources>
 	**/
 	var sources(default, null) : Array<LayoutShiftAttribution>;
 	/**
+		The **`toJSON()`** method of the `LayoutShift` interface returns a JSON-serializable plain object representing the `LayoutShift` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LayoutShift/toJSON>
 	**/
 	function toJSON():{ };

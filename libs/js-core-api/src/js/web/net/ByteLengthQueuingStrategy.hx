@@ -25,18 +25,28 @@
 package js.web.net;
 
 /**
+	The **`ByteLengthQueuingStrategy`** interface of the [Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API) provides a built-in byte length queuing strategy that can be used when constructing streams.
+	
+	Documentation [ByteLengthQueuingStrategy](https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy>
 **/
 @:native("ByteLengthQueuingStrategy") extern class ByteLengthQueuingStrategy {
 	/**
+		The read-only **`ByteLengthQueuingStrategy.highWaterMark`** property returns the total number of bytes that can be contained in the internal queue before [backpressure](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts#backpressure) is applied.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/highWaterMark>
 	**/
 	var highWaterMark(default, null) : Float;
 	/**
+		The **`size()`** method of the `ByteLengthQueuingStrategy` interface returns the given chunk's `byteLength` property.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/size>
 	**/
 	var size(default, null) : js.web.dom.Function;
 	/**
+		The **`ByteLengthQueuingStrategy()`** constructor creates and returns a `ByteLengthQueuingStrategy` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/ByteLengthQueuingStrategy>
 	**/
 	function new(init:QueuingStrategyInit):Void;

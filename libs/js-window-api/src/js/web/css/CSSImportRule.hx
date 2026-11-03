@@ -25,26 +25,40 @@
 package js.web.css;
 
 /**
+	The **`CSSImportRule`** interface represents an `@import` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+	
+	Documentation [CSSImportRule](https://developer.mozilla.org/docs/Web/API/CSSImportRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSImportRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSImportRule>
 **/
 @:native("CSSImportRule") extern class CSSImportRule extends CSSRule {
 	/**
+		The read-only **`href`** property of the `CSSImportRule` interface returns the URL specified by the `@import` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSImportRule/href>
 	**/
 	var href(default, null) : String;
 	/**
+		The read-only **`media`** property of the `CSSImportRule` interface returns a `MediaList` object representing the media query list of the `@import` rule.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSImportRule/media>
 	**/
 	var media(default, null) : MediaList;
 	/**
+		The read-only **`styleSheet`** property of the `CSSImportRule` interface returns the CSS Stylesheet specified by the `@import` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules). This will be in the form of a `CSSStyleSheet` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSImportRule/styleSheet>
 	**/
 	var styleSheet(default, null) : Null<CSSStyleSheet>;
 	/**
+		The read-only **`layerName`** property of the `CSSImportRule` interface returns the name of the cascade layer created by the `@import` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSImportRule/layerName>
 	**/
 	var layerName(default, null) : Null<String>;
 	/**
+		The read-only **`supportsText`** property of the `CSSImportRule` interface returns the supports condition specified by the `@import` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSImportRule/supportsText>
 	**/
 	var supportsText(default, null) : Null<String>;

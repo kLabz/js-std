@@ -25,12 +25,18 @@
 package js.web.html;
 
 /**
+	The **`AudioTrackList`** interface is used to represent a list of the audio tracks contained within a given HTML media element, with each track represented by a separate `AudioTrack` object in the list.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [AudioTrackList](https://developer.mozilla.org/docs/Web/API/AudioTrackList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AudioTrackList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/AudioTrackList>
 **/
 @:native("AudioTrackList") @:require(js_experimental_api, "AudioTrackList is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AudioTrackList extends js.web.dom.EventTarget implements ArrayAccess<AudioTrack> {
 	/**
+		The read-only **`AudioTrackList`** property **`length`** returns the number of entries in the `AudioTrackList`, each of which is an `AudioTrack` representing one audio track in the media element. A value of 0 indicates that there are no audio tracks in the media.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioTrackList/length>
 	**/
 	var length(default, null) : Int;
@@ -38,6 +44,8 @@ package js.web.html;
 	var onaddtrack : EventHandler;
 	var onremovetrack : EventHandler;
 	/**
+		The **`AudioTrackList`** method **`getTrackById()`** returns the first `AudioTrack` object from the track list whose `id` matches the specified string. This lets you find a specified track if you know its ID string.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioTrackList/getTrackById>
 	**/
 	function getTrackById(id:String):Null<AudioTrack>;

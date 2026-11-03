@@ -25,22 +25,34 @@
 package js.web.media;
 
 /**
+	A **`VideoPlaybackQuality`** object is returned by the `HTMLVideoElement.getVideoPlaybackQuality()` method and contains metrics that can be used to determine the playback quality of a video.
+	
+	Documentation [VideoPlaybackQuality](https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality>
 **/
 @:native("VideoPlaybackQuality") extern class VideoPlaybackQuality {
 	/**
+		The read-only **`creationTime`** property on the `VideoPlaybackQuality` interface reports the number of milliseconds since the browsing context was created this quality sample was recorded.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/creationTime>
 	**/
 	var creationTime(default, null) : js.web.perf.DOMHighResTimeStamp;
 	/**
+		The read-only **`droppedVideoFrames`** property of the `VideoPlaybackQuality` interface returns the number of video frames which have been dropped rather than being displayed since the last time the media was loaded into the `HTMLVideoElement`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/droppedVideoFrames>
 	**/
 	var droppedVideoFrames(default, null) : Int;
 	/**
+		The `VideoPlaybackQuality` interface's **`totalVideoFrames`** read-only property returns the total number of video frames that have been displayed or dropped since the media was loaded.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/totalVideoFrames>
 	**/
 	var totalVideoFrames(default, null) : Int;
 	/**
+		The `VideoPlaybackQuality` interface's read-only **`corruptedVideoFrames`** property the number of corrupted video frames that have been received since the `<video>` element was last loaded or reloaded.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/corruptedVideoFrames>
 	**/
 	@:deprecated

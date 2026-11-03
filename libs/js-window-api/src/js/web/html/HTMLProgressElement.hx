@@ -25,22 +25,34 @@
 package js.web.html;
 
 /**
+	The **`HTMLProgressElement`** interface provides special properties and methods (beyond the regular `HTMLElement` interface it also has available to it by inheritance) for manipulating the layout and presentation of `<progress>` elements.
+	
+	Documentation [HTMLProgressElement](https://developer.mozilla.org/docs/Web/API/HTMLProgressElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLProgressElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLProgressElement>
 **/
 @:native("HTMLProgressElement") extern class HTMLProgressElement extends HTMLElement {
 	/**
+		The **`value`** property of the `HTMLProgressElement` interface represents the current progress of the `<progress>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLProgressElement/value>
 	**/
 	var value : Float;
 	/**
+		The **`max`** property of the `HTMLProgressElement` interface represents the upper bound of the `<progress>` element's range.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLProgressElement/max>
 	**/
 	var max : Float;
 	/**
+		The **`position`** read-only property of the `HTMLProgressElement` interface returns current progress of the `<progress>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLProgressElement/position>
 	**/
 	var position(default, null) : Float;
 	/**
+		The **`HTMLProgressElement.labels`** read-only property returns a `NodeList` of the `<label>` elements associated with the `<progress>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLProgressElement/labels>
 	**/
 	var labels(default, null) : js.web.dom.NodeList;

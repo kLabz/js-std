@@ -25,18 +25,28 @@
 package js.web.storage;
 
 /**
+	The **`ExtendableCookieChangeEvent`** interface of the `Cookie Store API` is the event type passed to `cookiechange` event fired at the `ServiceWorkerGlobalScope` when any cookie changes occur which match the service worker's cookie change subscription list. A cookie change event consists of a cookie and a type (either "changed" or "deleted").
+	
+	Documentation [ExtendableCookieChangeEvent](https://developer.mozilla.org/docs/Web/API/ExtendableCookieChangeEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ExtendableCookieChangeEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ExtendableCookieChangeEvent>
 **/
 @:native("ExtendableCookieChangeEvent") extern class ExtendableCookieChangeEvent extends js.web.sw.ExtendableEvent {
 	/**
+		The **`changed`** read-only property of the `ExtendableCookieChangeEvent` interface returns any cookies that have been changed by the given `ExtendableCookieChangeEvent` instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableCookieChangeEvent/changed>
 	**/
 	var changed(default, null) : Array<CookieListItem>;
 	/**
+		The **`deleted`** read-only property of the `ExtendableCookieChangeEvent` interface returns any cookies that have been deleted by the given `ExtendableCookieChangeEvent` instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableCookieChangeEvent/deleted>
 	**/
 	var deleted(default, null) : Array<CookieListItem>;
 	/**
+		The **`ExtendableCookieChangeEvent()`** constructor creates a new `ExtendableCookieChangeEvent` object which is the event type passed to `cookiechange` event fired at the `ServiceWorkerGlobalScope` when any cookie changes occur which match the service worker's cookie change subscription list. This constructor is called by the browser when a change event occurs.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableCookieChangeEvent/ExtendableCookieChangeEvent>
 	**/
 	function new(type:String, ?eventInitDict:ExtendableCookieChangeEventInit):Void;

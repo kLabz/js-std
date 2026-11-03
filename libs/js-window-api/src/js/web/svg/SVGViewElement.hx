@@ -25,16 +25,24 @@
 package js.web.svg;
 
 /**
+	The **`SVGViewElement`** interface provides access to the properties of `<view>` elements, as well as methods to manipulate them.
+	
+	Documentation [SVGViewElement](https://developer.mozilla.org/docs/Web/API/SVGViewElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGViewElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGViewElement>
 **/
 @:native("SVGViewElement") extern class SVGViewElement extends SVGElement {
 	/**
+		The **`viewBox`** read-only property of the `SVGViewElement` interface reflects the `viewBox` attribute of the given `<view>` element. It represents the `x`, `y`, `width`, and `height` values defining the area to be used for the `view`'s `viewBox`.
+		
 		From interface mixin SVGFitToViewBox
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGViewElement/viewBox>
 	**/
 	var viewBox(default, null) : SVGAnimatedRect;
 	/**
+		The **`preserveAspectRatio`** read-only property of the `SVGViewElement` interface reflects the `preserveAspectRatio` attribute of the given `<view>` element. It defines how the content within the `view` should be scaled to fit its viewport while preserving its aspect ratio.
+		
 		From interface mixin SVGFitToViewBox
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGViewElement/preserveAspectRatio>

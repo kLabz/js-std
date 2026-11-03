@@ -25,9 +25,13 @@
 package js.web.media;
 
 /**
+	The **`PresentationReceiver`** interface of the [Presentation API](https://developer.mozilla.org/en-US/docs/Web/API/Presentation_API) provides a means for a receiving browsing context to access controlling browsing contexts and communicate with them.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [PresentationReceiver](https://developer.mozilla.org/docs/Web/API/PresentationReceiver) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PresentationReceiver/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/PresentationReceiver>
 **/

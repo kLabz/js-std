@@ -25,20 +25,30 @@
 package js.web.storage;
 
 /**
+	The **Cookie Store API** is an asynchronous API for managing cookies, available in windows and also [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API).
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [CookieStoreManager](https://developer.mozilla.org/docs/Web/API/CookieStoreManager) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CookieStoreManager/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/CookieStoreManager>
 **/
 @:native("CookieStoreManager") extern class CookieStoreManager {
 	/**
+		The **`getSubscriptions()`** method of the `CookieStoreManager` interface returns a list of all the cookie change subscriptions for this `ServiceWorkerRegistration`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieStoreManager/getSubscriptions>
 	**/
 	function getSubscriptions():js.lib.Promise<Array<CookieStoreGetOptions>>;
 	/**
+		The **`subscribe()`** method of the `CookieStoreManager` interface subscribes a `ServiceWorkerRegistration` to cookie change events.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieStoreManager/subscribe>
 	**/
 	function subscribe(subscriptions:Array<CookieStoreGetOptions>):js.lib.Promise<Void>;
 	/**
+		The **`unsubscribe()`** method of the `CookieStoreManager` interface stops the `ServiceWorkerRegistration` from receiving previously subscribed events.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieStoreManager/unsubscribe>
 	**/
 	function unsubscribe(subscriptions:Array<CookieStoreGetOptions>):js.lib.Promise<Void>;

@@ -25,20 +25,30 @@
 package js.web.net;
 
 /**
+	The **`WebTransportError`** interface of the `WebTransport API` represents an error related to the API, which can arise from server errors, network connection problems, or client-initiated abort operations (for example, arising from a `WritableStream.abort()` call).
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [WebTransportError](https://developer.mozilla.org/docs/Web/API/WebTransportError) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WebTransportError/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WebTransportError>
 **/
 @:native("WebTransportError") extern class WebTransportError extends js.web.dom.DOMException {
 	/**
+		The **`source`** read-only property of the `WebTransportError` interface returns an enumerated value indicating the source of the error.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebTransportError/source>
 	**/
 	var source(default, null) : WebTransportErrorSource;
 	/**
+		The **`streamErrorCode`** read-only property of the `WebTransportError` interface returns a number in the range 0-255 indicating the application protocol error code for this error, or `null` if one is not available.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebTransportError/streamErrorCode>
 	**/
 	var streamErrorCode(default, null) : Null<Int>;
 	/**
+		The **`WebTransportError()`** constructor creates a new `WebTransportError` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebTransportError/WebTransportError>
 	**/
 	function new(?message:String = "", ?options:WebTransportErrorOptions):Void;

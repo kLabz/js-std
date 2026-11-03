@@ -25,14 +25,22 @@
 package js.web.device;
 
 /**
+	The GamepadEvent interface of the Gamepad API contains references to gamepads connected to the system, which is what the gamepad events `gamepadconnected` and `gamepaddisconnected` are fired in response to.
+	
+	Documentation [GamepadEvent](https://developer.mozilla.org/docs/Web/API/GamepadEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GamepadEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/GamepadEvent>
 **/
 @:native("GamepadEvent") extern class GamepadEvent extends js.web.dom.Event {
 	/**
+		The **`GamepadEvent.gamepad`** property of the **`GamepadEvent` interface** returns a `Gamepad` object, providing access to the associated gamepad data for fired `gamepadconnected` and `gamepaddisconnected` events.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadEvent/gamepad>
 	**/
 	var gamepad(default, null) : Gamepad;
 	/**
+		The **`GamepadEvent()`** constructor creates a new `GamepadEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadEvent/GamepadEvent>
 	**/
 	function new(type:String, ?eventInitDict:GamepadEventInit):Void;

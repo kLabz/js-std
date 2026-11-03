@@ -25,29 +25,41 @@
 package js.web.xr;
 
 /**
+	The **`XRSession`** interface of the [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) represents an ongoing session between a web application and a user's XR device (such as a VR headset), providing methods and properties used to interact with and control the session. To open a WebXR session, use the `XRSystem` interface's `requestSession()` method.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRSession](https://developer.mozilla.org/docs/Web/API/XRSession) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRSession/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRSession>
 **/
 @:native("XRSession") @:require(js_experimental_api, "XRSession is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRSession extends js.web.dom.EventTarget {
 	/**
+		The _read-only_ **`visibilityState`** property of the `XRSession` interface is a string indicating whether the WebXR content is currently visible to the user, and if it is, whether it's the primary focus.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/visibilityState>
 	**/
 	var visibilityState(default, null) : XRVisibilityState;
 	var frameRate(default, null) : Null<Float>;
 	var supportedFrameRates(default, null) : Null<js.lib.Float32Array>;
 	/**
+		The _read-only_ **`renderState`** property of an `XRSession` object indicates the returns a `XRRenderState` object describing how the user's environment which should be rendered. The information provided covers the minimum and maximum distance at which to render objects, the vertical field of view to use when rendering the in the `inline` session mode, and the `XRWebGLLayer` to render into for inline composition.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/renderState>
 	**/
 	var renderState(default, null) : XRRenderState;
 	/**
+		The read-only **`inputSources`** property of the `XRSession` interface returns an `XRInputSourceArray` object which lists all controllers and input devices which are expressly associated with the XR device and are currently available. These controllers may include handheld controllers, XR-equipped gloves, optically tracked hands, and gaze-based input methods. Keyboards, gamepads, and mice are _not_ considered WebXR input sources.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/inputSources>
 	**/
 	var inputSources(default, null) : XRInputSourceArray;
 	var trackedSources(default, null) : XRInputSourceArray;
 	/**
+		The `XRSession` interface's _read-only_ **`enabledFeatures`** property returns an array of features enabled (granted) for an `XRSession`. This contains all `requiredFeatures` and a subset of `optionalFeatures` that have been requested with `XRSystem.requestSession()`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/enabledFeatures>
 	**/
 	var enabledFeatures(default, null) : Array<String>;
@@ -67,24 +79,32 @@ package js.web.xr;
 	**/
 	var persistentAnchors(default, null) : Array<String>;
 	/**
+		The `XRSession` interface's _read-only_ **`environmentBlendMode`** property identifies if, and to what degree, the computer-generated imagery is overlaid atop the real world.
+		
 		From partial interface in webxr-ar-module.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/environmentBlendMode>
 	**/
 	var environmentBlendMode(default, null) : XREnvironmentBlendMode;
 	/**
+		The `XRSession` interface's _read-only_ **`interactionMode`** property describes the best space (according to the user agent) for the application to draw an interactive UI for the current session.
+		
 		From partial interface in webxr-ar-module.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/interactionMode>
 	**/
 	var interactionMode(default, null) : XRInteractionMode;
 	/**
+		The _read-only_ **`depthUsage`** property of an `immersive-ar` `XRSession` describes which depth-sensing usage is used.
+		
 		From partial interface in webxr-depth-sensing.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/depthUsage>
 	**/
 	var depthUsage(default, null) : XRDepthUsage;
 	/**
+		The _read-only_ **`depthDataFormat`** property of an `immersive-ar` `XRSession` describes which depth sensing data format is used.
+		
 		From partial interface in webxr-depth-sensing.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/depthDataFormat>
@@ -99,12 +119,16 @@ package js.web.xr;
 	**/
 	var depthActive(default, null) : Null<Bool>;
 	/**
+		The _read-only_ **`domOverlayState`** property of an `immersive-ar` `XRSession` provides information about the DOM overlay, if the feature is enabled.
+		
 		From partial interface in webxr-dom-overlays.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/domOverlayState>
 	**/
 	var domOverlayState(default, null) : Null<XRDOMOverlayState>;
 	/**
+		The _read-only_ **`preferredReflectionFormat`** property of the `XRSession` interface returns this session's preferred reflection format used for lighting estimation texture data.
+		
 		From partial interface in webxr-lighting-estimation.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/preferredReflectionFormat>
@@ -115,6 +139,8 @@ package js.web.xr;
 	**/
 	var maxRenderLayers(default, null) : Int;
 	/**
+		The **`cancelAnimationFrame()`** method of the `XRSession` interface cancels an animation frame which was previously requested by calling `requestAnimationFrame`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/cancelAnimationFrame>
 	**/
 	function cancelAnimationFrame(handle:Int):Void;
@@ -123,6 +149,8 @@ package js.web.xr;
 	**/
 	function deletePersistentAnchor(uuid:String):js.lib.Promise<Void>;
 	/**
+		The **`end()`** method shuts down the `XRSession` on which it's called, returning a promise which resolves once the session has fully shut down.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/end>
 	**/
 	function end():js.lib.Promise<Void>;
@@ -135,28 +163,38 @@ package js.web.xr;
 	**/
 	function pauseDepthSensing():Void;
 	/**
+		The `XRSession` method **`requestAnimationFrame()`**, much like the `Window` method of the same name, schedules a callback to be executed the next time the browser is ready to paint the session's virtual environment to the XR display. The specified callback is executed once before the next repaint; if you wish for it to be executed for the following repaint, you must call `requestAnimationFrame()` again. This can be done from within the callback itself.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/requestAnimationFrame>
 	**/
 	function requestAnimationFrame(callback:XRFrameRequestCallback):Int;
 	/**
+		The **`requestHitTestSource()`** method of the `XRSession` interface returns a `Promise` that resolves with an `XRHitTestSource` object that can be passed to `XRFrame.getHitTestResults()`.
+		
 		From partial interface in webxr-hit-test.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/requestHitTestSource>
 	**/
 	function requestHitTestSource(options:XRHitTestOptionsInit):js.lib.Promise<XRHitTestSource>;
 	/**
+		The **`requestHitTestSourceForTransientInput()`** method of the `XRSession` interface returns a `Promise` that resolves with an `XRTransientInputHitTestSource` object that can be passed to `XRFrame.getHitTestResultsForTransientInput()`.
+		
 		From partial interface in webxr-hit-test.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/requestHitTestSourceForTransientInput>
 	**/
 	function requestHitTestSourceForTransientInput(options:XRTransientInputHitTestOptionsInit):js.lib.Promise<XRTransientInputHitTestSource>;
 	/**
+		The **`requestLightProbe()`** method of the `XRSession` interface returns a `Promise` that resolves with an `XRLightProbe` object that estimates lighting information at a given point in the user's environment.
+		
 		From partial interface in webxr-lighting-estimation.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/requestLightProbe>
 	**/
 	function requestLightProbe(?options:XRLightProbeInit):js.lib.Promise<XRLightProbe>;
 	/**
+		The **`requestReferenceSpace()`** method of the `XRSession` interface returns a `Promise` that resolves with an instance of either `XRReferenceSpace` or `XRBoundedReferenceSpace` as appropriate given the type of reference space requested.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/requestReferenceSpace>
 	**/
 	function requestReferenceSpace(type:XRReferenceSpaceType):js.lib.Promise<XRReferenceSpace>;
@@ -169,6 +207,8 @@ package js.web.xr;
 	**/
 	function resumeDepthSensing():Void;
 	/**
+		The `updateRenderState()` method of the `XRSession` interface of the [WebXR API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) schedules changes to be applied to the active render state (`XRRenderState`) prior to rendering of the next frame.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSession/updateRenderState>
 	**/
 	function updateRenderState(?state:XRRenderStateInit):Void;

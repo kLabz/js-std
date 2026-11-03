@@ -25,16 +25,24 @@
 package js.web.svg;
 
 /**
+	The **`MathMLElement`** interface represents any [MathML](https://developer.mozilla.org/en-US/docs/Web/MathML) element.
+	
+	Documentation [MathMLElement](https://developer.mozilla.org/docs/Web/API/MathMLElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MathMLElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/MathMLElement>
 **/
 @:native("MathMLElement") extern class MathMLElement extends js.web.dom.Element {
 	/**
+		The **`attributeStyleMap`** read-only property of the `MathMLElement` interface returns a live `StylePropertyMap` object that contains a list of style properties of the element that are defined in the element's inline `style` attribute, or assigned using the `style` property of the `MathMLElement` interface via script.
+		
 		From interface mixin ElementCSSInlineStyle
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/attributeStyleMap>
 	**/
 	var attributeStyleMap(default, null) : js.web.css.StylePropertyMap;
 	/**
+		The read-only **`style`** property of the `MathMLElement` interface returns the _inline_ [`style`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/style) of an element in the form of a live `CSSStyleProperties` object. This object can be used to get and set the inline styles of an element.
+		
 		From interface mixin ElementCSSInlineStyle
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/style>
@@ -466,36 +474,48 @@ package js.web.svg;
 	**/
 	var onbeforexrselect : js.web.html.EventHandler;
 	/**
+		The **`dataset`** read-only property of the `MathMLElement` interface provides read/write access to [custom data attributes](https://developer.mozilla.org/en-US/docs/Web/MathML/Reference/Global_attributes/data-*) (`data-*`) on elements. It exposes a map of strings (`DOMStringMap`) with an entry for each `data-*` attribute.
+		
 		From interface mixin HTMLOrSVGOrMathMLElement
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/dataset>
 	**/
 	var dataset(default, null) : js.web.html.DOMStringMap;
 	/**
+		The **`nonce`** property of the `MathMLElement` interface returns the nonce that is used by [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP) to determine whether a given fetch will be allowed to proceed.
+		
 		From interface mixin HTMLOrSVGOrMathMLElement
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/nonce>
 	**/
 	var nonce : String;
 	/**
+		The **`autofocus`** property of the `MathMLElement` interface contains a boolean value reflecting the [`autofocus`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/autofocus) HTML global attribute. It indicates whether the MathML element should be focused when the page loads or when the element becomes shown if the MathML element is inside a `<dialog>` or a [popover](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/popover).
+		
 		From interface mixin HTMLOrSVGOrMathMLElement
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/autofocus>
 	**/
 	var autofocus : Bool;
 	/**
+		The **`tabIndex`** property of the `MathMLElement` interface represents the tab order of the current MathML element.
+		
 		From interface mixin HTMLOrSVGOrMathMLElement
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/tabIndex>
 	**/
 	var tabIndex : Int;
 	/**
+		The **`blur()`** method of the `MathMLElement` interface removes keyboard focus from the current MathML element.
+		
 		From interface mixin HTMLOrSVGOrMathMLElement
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/blur>
 	**/
 	function blur():Void;
 	/**
+		The **`focus()`** method of the `MathMLElement` interface sets focus on the specified MathML element, if it can be focused. The focused element is the element that will receive keyboard and similar events by default.
+		
 		From interface mixin HTMLOrSVGOrMathMLElement
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MathMLElement/focus>

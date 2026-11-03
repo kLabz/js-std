@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`TextTrackCueList`** interface of the [WebVTT API](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API) is an array-like object that represents a dynamically updating list of `TextTrackCue` objects.
+	
+	Documentation [TextTrackCueList](https://developer.mozilla.org/docs/Web/API/TextTrackCueList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TextTrackCueList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TextTrackCueList>
 **/
 @:native("TextTrackCueList") extern class TextTrackCueList implements ArrayAccess<TextTrackCue> {
 	/**
+		The **`length`** read-only property of the `TextTrackCueList` interface returns the number of cues in the list.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TextTrackCueList/length>
 	**/
 	var length(default, null) : Int;
 	/**
+		The **`getCueById()`** method of the `TextTrackCueList` interface returns the first `VTTCue` in the list represented by the `TextTrackCueList` object whose identifier matches the value of `id`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TextTrackCueList/getCueById>
 	**/
 	function getCueById(id:String):Null<TextTrackCue>;

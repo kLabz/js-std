@@ -25,9 +25,13 @@
 package js.web.device;
 
 /**
+	The **`Keyboard`** interface of the `Keyboard API` provides functions that retrieve keyboard layout maps and toggle capturing of key presses from the physical keyboard.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [Keyboard](https://developer.mozilla.org/docs/Web/API/Keyboard) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Keyboard/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Keyboard>
 **/
@@ -37,16 +41,22 @@ package js.web.device;
 	**/
 	var onlayoutchange : js.web.html.EventHandler;
 	/**
+		The **`getLayoutMap()`** method of the `Keyboard` interface returns a `Promise` that resolves with an instance of `KeyboardLayoutMap` which is a map-like object with functions for retrieving the strings associated with specific physical keys.
+		
 		From partial interface in keyboard-map.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Keyboard/getLayoutMap>
 	**/
 	function getLayoutMap():js.lib.Promise<KeyboardLayoutMap>;
 	/**
+		The **`lock()`** method of the `Keyboard` interface returns a `Promise` that resolves after enabling the capture of key presses for any or all of the keys on the physical keyboard. This method can only capture keys that are granted access by the underlying operating system.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Keyboard/lock>
 	**/
 	function lock(?keyCodes:Array<String>):js.lib.Promise<Void>;
 	/**
+		The **`unlock()`** method of the `Keyboard` interface unlocks all keys captured by the `Keyboard.lock()` method and returns synchronously.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Keyboard/unlock>
 	**/
 	function unlock():Void;

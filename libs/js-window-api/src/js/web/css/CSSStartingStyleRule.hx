@@ -25,6 +25,10 @@
 package js.web.css;
 
 /**
+	The **`CSSStartingStyleRule`** interface of the [CSS Object Model](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents a CSS `@starting-style` at-rule.
+	
+	Documentation [CSSStartingStyleRule](https://developer.mozilla.org/docs/Web/API/CSSStartingStyleRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSStartingStyleRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSStartingStyleRule>
 **/
 @:native("CSSStartingStyleRule") extern class CSSStartingStyleRule extends CSSGroupingRule {

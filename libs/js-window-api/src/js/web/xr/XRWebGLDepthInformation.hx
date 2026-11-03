@@ -25,12 +25,18 @@
 package js.web.xr;
 
 /**
+	The **`XRWebGLDepthInformation`** interface contains depth information from the GPU/WebGL (returned by `XRWebGLBinding.getDepthInformation()`).
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRWebGLDepthInformation](https://developer.mozilla.org/docs/Web/API/XRWebGLDepthInformation) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRWebGLDepthInformation/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRWebGLDepthInformation>
 **/
 @:native("XRWebGLDepthInformation") @:require(js_experimental_api, "XRWebGLDepthInformation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRWebGLDepthInformation extends XRDepthInformation {
 	/**
+		The _read-only_ **`texture`** property of the `XRWebGLDepthInformation` interface is a `WebGLTexture` containing depth buffer information as an opaque texture.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLDepthInformation/texture>
 	**/
 	var texture(default, null) : js.web.webgl.WebGLTexture;

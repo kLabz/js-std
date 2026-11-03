@@ -25,16 +25,24 @@
 package js.web.sw;
 
 /**
+	The **`BackgroundFetchUpdateUIEvent`** interface of the `Background Fetch API` is an event type for the `backgroundfetchsuccess` and `backgroundfetchfail` events, and provides a method for updating the title and icon of the app to inform a user of the success or failure of a background fetch.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [BackgroundFetchUpdateUIEvent](https://developer.mozilla.org/docs/Web/API/BackgroundFetchUpdateUIEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/BackgroundFetchUpdateUIEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchUpdateUIEvent>
 **/
 @:native("BackgroundFetchUpdateUIEvent") @:require(js_experimental_api, "BackgroundFetchUpdateUIEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BackgroundFetchUpdateUIEvent extends BackgroundFetchEvent {
 	/**
+		The **`BackgroundFetchUpdateUIEvent()`** constructor creates a new `BackgroundFetchUpdateUIEvent` object. This constructor is not typically used as the browser creates these objects itself and provides them to background fetch event callbacks.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchUpdateUIEvent/BackgroundFetchUpdateUIEvent>
 	**/
 	function new(type:String, init:BackgroundFetchEventInit):Void;
 	/**
+		The **`updateUI()`** method of the `BackgroundFetchUpdateUIEvent` interface updates the title and icon in the user interface to show the status of a background fetch.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchUpdateUIEvent/updateUI>
 	**/
 	function updateUI(?options:BackgroundFetchUIOptions):js.lib.Promise<Void>;

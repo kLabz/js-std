@@ -25,12 +25,18 @@
 package js.web.net;
 
 /**
+	The `WebTransportReceiveStream` interface of the `WebTransport API` is a `ReadableStream` that can be used to read from an incoming unidirectional or bidirectional `WebTransport` stream.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [WebTransportReceiveStream](https://developer.mozilla.org/docs/Web/API/WebTransportReceiveStream) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WebTransportReceiveStream/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WebTransportReceiveStream>
 **/
 @:native("WebTransportReceiveStream") extern class WebTransportReceiveStream extends ReadableStream {
 	/**
+		The **`getStats()`** method of the `WebTransportReceiveStream` interface asynchronously returns an object containing statistics for the current stream.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebTransportReceiveStream/getStats>
 	**/
 	function getStats():js.lib.Promise<WebTransportReceiveStreamStats>;

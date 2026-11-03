@@ -25,16 +25,24 @@
 package js.web.svg;
 
 /**
+	The **`SVGPolylineElement`** interface provides access to the properties of `<polyline>` elements, as well as methods to manipulate them.
+	
+	Documentation [SVGPolylineElement](https://developer.mozilla.org/docs/Web/API/SVGPolylineElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGPolylineElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGPolylineElement>
 **/
 @:native("SVGPolylineElement") extern class SVGPolylineElement extends SVGGeometryElement {
 	/**
+		The **`points`** read-only property of the `SVGPolylineElement` interface reflects the base (i.e., static) value of the element's `points` attribute. Modifications via the `SVGPointList` object are reflected in the `points` attribute, and vice versa.
+		
 		From interface mixin SVGAnimatedPoints
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPolylineElement/points>
 	**/
 	var points(default, null) : SVGPointList;
 	/**
+		The **`animatedPoints`** read-only property of the `SVGPolylineElement` interface reflects the animated value of the element's `points` attribute. If the `points` attribute is not being animated, it contains the same value as the `points` property.
+		
 		From interface mixin SVGAnimatedPoints
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPolylineElement/animatedPoints>

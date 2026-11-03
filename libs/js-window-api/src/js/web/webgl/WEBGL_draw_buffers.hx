@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The **`WEBGL_draw_buffers`** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and enables a fragment shader to write to several textures, which is useful for [deferred shading](https://hacks.mozilla.org/2014/01/webgl-deferred-shading/), for example.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [WEBGL_draw_buffers](https://developer.mozilla.org/docs/Web/API/WEBGL_draw_buffers) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WEBGL_draw_buffers/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_draw_buffers>
 **/
@@ -65,6 +69,8 @@ package js.web.webgl;
 	static inline var MAX_COLOR_ATTACHMENTS_WEBGL : GLenum = 0x8CDF;
 	static inline var MAX_DRAW_BUFFERS_WEBGL : GLenum = 0x8824;
 	/**
+		The **`WEBGL_draw_buffers.drawBuffersWEBGL()`** method is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and allows you to define the draw buffers to which all fragment colors are written.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_draw_buffers/drawBuffersWEBGL>
 	**/
 	function drawBuffersWEBGL(buffers:Array<GLenum>):Void;

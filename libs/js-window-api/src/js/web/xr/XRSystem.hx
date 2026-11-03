@@ -25,19 +25,27 @@
 package js.web.xr;
 
 /**
+	The [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) interface **`XRSystem`** provides methods which let you get access to an `XRSession` object representing a WebXR session. With that `XRSession` in hand, you can use it to interact with the Augmented Reality (AR) or Virtual Reality (VR) device.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRSystem](https://developer.mozilla.org/docs/Web/API/XRSystem) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRSystem/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRSystem>
 **/
 @:native("XRSystem") @:require(js_experimental_api, "XRSystem is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRSystem extends js.web.dom.EventTarget {
 	var ondevicechange : js.web.html.EventHandler;
 	/**
+		The `XRSystem` method **`isSessionSupported()`** returns a promise which resolves to `true` if the specified WebXR session mode is supported by the user's WebXR device. Otherwise, the promise resolves with `false`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSystem/isSessionSupported>
 	**/
 	function isSessionSupported(mode:XRSessionMode):js.lib.Promise<Bool>;
 	/**
+		The **`XRSystem`** interface's **`requestSession()`** method returns a `Promise` which resolves to an `XRSession` object through which you can manage the requested type of WebXR session.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSystem/requestSession>
 	**/
 	function requestSession(mode:XRSessionMode, ?options:XRSessionInit):js.lib.Promise<XRSession>;

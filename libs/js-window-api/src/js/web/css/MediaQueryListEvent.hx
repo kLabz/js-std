@@ -25,18 +25,28 @@
 package js.web.css;
 
 /**
+	The `MediaQueryListEvent` object stores information on the changes that have happened to a `MediaQueryList` object — instances are available as the event object on a function referenced by a `change` event.
+	
+	Documentation [MediaQueryListEvent](https://developer.mozilla.org/docs/Web/API/MediaQueryListEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MediaQueryListEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaQueryListEvent>
 **/
 @:native("MediaQueryListEvent") extern class MediaQueryListEvent extends js.web.dom.Event {
 	/**
+		The **`media`** read-only property of the `MediaQueryListEvent` interface is a string representing a serialized media query.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryListEvent/media>
 	**/
 	var media(default, null) : String;
 	/**
+		The **`matches`** read-only property of the `MediaQueryListEvent` interface is a boolean value that is `true` if the `document` currently matches the media query list, or `false` if not.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryListEvent/matches>
 	**/
 	var matches(default, null) : Bool;
 	/**
+		The **`MediaQueryListEvent()`** constructor creates a new `MediaQueryListEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryListEvent/MediaQueryListEvent>
 	**/
 	function new(type:String, ?eventInitDict:MediaQueryListEventInit):Void;

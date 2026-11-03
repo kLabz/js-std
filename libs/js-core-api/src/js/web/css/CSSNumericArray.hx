@@ -25,26 +25,40 @@
 package js.web.css;
 
 /**
+	The **`CSSNumericArray`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents an iterable of `CSSNumericValue`-based objects.
+	
+	Documentation [CSSNumericArray](https://developer.mozilla.org/docs/Web/API/CSSNumericArray) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSNumericArray/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSNumericArray>
 **/
 @:native("CSSNumericArray") extern class CSSNumericArray implements ArrayAccess<CSSNumericValue> {
 	/**
+		The **`length`** read-only property of the `CSSNumericArray` interface returns the number of items in the object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericArray/length>
 	**/
 	var length(default, null) : Int;
 	/**
+		The **`entries()`** method of the `CSSNumericArray` interface returns a new _array iterator_ that yields `[index, value]` pairs for each item in the object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericArray/entries>
 	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<Int, CSSNumericValue>>;
 	/**
+		The **`forEach()`** method of the `CSSNumericArray` interface executes a provided function once for each item in the object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericArray/forEach>
 	**/
 	function forEach(callback:(value:CSSNumericValue, key:Int, parent:CSSNumericArray) -> Void, ?thisArg:Any):Void;
 	/**
+		The **`keys()`** method of the `CSSNumericArray` interface returns a new _array iterator_ that yields the index of each item in the object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericArray/keys>
 	**/
 	function keys():js.lib.Iterator<Int>;
 	/**
+		The **`values()`** method of the `CSSNumericArray` interface returns a new _array iterator_ that yields each item in the object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSNumericArray/values>
 	**/
 	function values():js.lib.Iterator<CSSNumericValue>;

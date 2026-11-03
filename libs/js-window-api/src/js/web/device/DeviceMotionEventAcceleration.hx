@@ -25,20 +25,30 @@
 package js.web.device;
 
 /**
+	Device orientation events are events that allow you to [detect a device's physical orientation](https://developer.mozilla.org/en-US/docs/Web/API/Device_orientation_events/Detecting_device_orientation#processing_orientation_events), as well as allowing you to [detect the device's motion](https://developer.mozilla.org/en-US/docs/Web/API/Device_orientation_events/Detecting_device_orientation#processing_motion_events).
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [DeviceMotionEventAcceleration](https://developer.mozilla.org/docs/Web/API/DeviceMotionEventAcceleration) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DeviceMotionEventAcceleration/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEventAcceleration>
 **/
 @:native("DeviceMotionEventAcceleration") extern class DeviceMotionEventAcceleration {
 	/**
+		The **`x`** read-only property of the `DeviceMotionEventAcceleration` interface indicates the amount of acceleration that occurred along the X axis in a [`DeviceMotionEventAcceleration`](https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEventAcceleration) object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEventAcceleration/x>
 	**/
 	var x(default, null) : Null<Float>;
 	/**
+		The **`y`** read-only property of the `DeviceMotionEventAcceleration` interface indicates the amount of acceleration that occurred along the Y axis in a [`DeviceMotionEventAcceleration`](https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEventAcceleration) object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEventAcceleration/y>
 	**/
 	var y(default, null) : Null<Float>;
 	/**
+		The **`z`** read-only property of the `DeviceMotionEventAcceleration` interface indicates the amount of acceleration that occurred along the Z axis in a [`DeviceMotionEventAcceleration`](https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEventAcceleration) object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DeviceMotionEventAcceleration/z>
 	**/
 	var z(default, null) : Null<Float>;

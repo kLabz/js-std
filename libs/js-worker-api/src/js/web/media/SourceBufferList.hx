@@ -25,10 +25,16 @@
 package js.web.media;
 
 /**
+	The **`SourceBufferList`** interface represents a simple container list for multiple `SourceBuffer` objects.
+	
+	Documentation [SourceBufferList](https://developer.mozilla.org/docs/Web/API/SourceBufferList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SourceBufferList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SourceBufferList>
 **/
 @:native("SourceBufferList") extern class SourceBufferList extends js.web.dom.EventTarget implements ArrayAccess<SourceBuffer> {
 	/**
+		The **`length`** read-only property of the `SourceBufferList` interface returns the number of `SourceBuffer` objects in the list.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SourceBufferList/length>
 	**/
 	var length(default, null) : Int;

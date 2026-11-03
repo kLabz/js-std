@@ -25,6 +25,10 @@
 package js.web.webgl;
 
 /**
+	The **WebGLTexture** interface is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and represents an opaque texture object providing storage and state for texturing operations.
+	
+	Documentation [WebGLTexture](https://developer.mozilla.org/docs/Web/API/WebGLTexture) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WebGLTexture/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WebGLTexture>
 **/
 @:native("WebGLTexture") extern class WebGLTexture extends WebGLObject {

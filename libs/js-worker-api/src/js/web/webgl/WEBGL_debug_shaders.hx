@@ -25,12 +25,18 @@
 package js.web.webgl;
 
 /**
+	The **`WEBGL_debug_shaders`** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and exposes a method to debug shaders from privileged contexts.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [WEBGL_debug_shaders](https://developer.mozilla.org/docs/Web/API/WEBGL_debug_shaders) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WEBGL_debug_shaders/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_debug_shaders>
 **/
 @:native("WEBGL_debug_shaders") extern class WEBGL_debug_shaders {
 	/**
+		The **`WEBGL_debug_shaders.getTranslatedShaderSource()`** method is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and allows you to debug a translated shader.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_debug_shaders/getTranslatedShaderSource>
 	**/
 	function getTranslatedShaderSource(shader:WebGLShader):String;

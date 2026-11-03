@@ -25,26 +25,38 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUQuerySet`** interface of the `WebGPU API` is used to record the results of queries on passes, such as occlusion or timestamp queries.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUQuerySet](https://developer.mozilla.org/docs/Web/API/GPUQuerySet) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUQuerySet/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUQuerySet>
 **/
 @:native("GPUQuerySet") extern class GPUQuerySet {
 	/**
+		The **`type`** read-only property of the `GPUQuerySet` interface is an enumerated value specifying the type of queries managed by the `GPUQuerySet`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUQuerySet/type>
 	**/
 	var type(default, null) : GPUQueryType;
 	/**
+		The **`count`** read-only property of the `GPUQuerySet` interface is a number specifying the number of queries managed by the `GPUQuerySet`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUQuerySet/count>
 	**/
 	var count(default, null) : GPUSize32Out;
 	/**
+		The **`label`** property of the `GPUQuerySet` interface is a string providing a label that can be used to identify the object, for example in `GPUError` messages or console warnings.
+		
 		From interface mixin GPUObjectBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUQuerySet/label>
 	**/
 	var label : String;
 	/**
+		The **`destroy()`** method of the `GPUQuerySet` interface destroys the `GPUQuerySet`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUQuerySet/destroy>
 	**/
 	function destroy():Void;

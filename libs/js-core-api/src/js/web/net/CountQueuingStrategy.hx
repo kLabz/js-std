@@ -25,18 +25,28 @@
 package js.web.net;
 
 /**
+	The **`CountQueuingStrategy`** interface of the [Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API) provides a built-in chunk counting queuing strategy that can be used when constructing streams.
+	
+	Documentation [CountQueuingStrategy](https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy>
 **/
 @:native("CountQueuingStrategy") extern class CountQueuingStrategy {
 	/**
+		The read-only **`CountQueuingStrategy.highWaterMark`** property returns the total number of chunks that can be contained in the internal queue before backpressure is applied.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/highWaterMark>
 	**/
 	var highWaterMark(default, null) : Float;
 	/**
+		The **`size()`** method of the `CountQueuingStrategy` interface always returns `1`, so that the total queue size is a count of the number of chunks in the queue.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/size>
 	**/
 	var size(default, null) : js.web.dom.Function;
 	/**
+		The **`CountQueuingStrategy()`** constructor creates and returns a `CountQueuingStrategy` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/CountQueuingStrategy>
 	**/
 	function new(init:QueuingStrategyInit):Void;

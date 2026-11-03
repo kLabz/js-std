@@ -25,26 +25,40 @@
 package js.web.storage;
 
 /**
+	The **`IDBRequest`** interface of the IndexedDB API provides access to results of asynchronous requests to databases and database objects using event handler attributes.
+	
+	Documentation [IDBRequest](https://developer.mozilla.org/docs/Web/API/IDBRequest) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/IDBRequest/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/IDBRequest>
 **/
 @:native("IDBRequest") extern class IDBRequest extends js.web.dom.EventTarget {
 	/**
+		The **`result`** read-only property of the `IDBRequest` interface returns the result of the request.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBRequest/result>
 	**/
 	var result(default, null) : Any;
 	/**
+		The **`error`** read-only property of the `IDBRequest` interface returns the error in the event of an unsuccessful request.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBRequest/error>
 	**/
 	var error(default, null) : Null<js.web.dom.DOMException>;
 	/**
+		The **`source`** read-only property of the `IDBRequest` interface returns the source of the request, such as an Index or an object store. If no source exists (such as when calling `IDBFactory.open`), it returns null.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBRequest/source>
 	**/
 	var source(default, null) : Null<haxe.extern.EitherType<IDBObjectStore, haxe.extern.EitherType<IDBIndex, IDBCursor>>>;
 	/**
+		The **`transaction`** read-only property of the IDBRequest interface returns the transaction for the request, that is, the transaction the request is being made inside.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBRequest/transaction>
 	**/
 	var transaction(default, null) : Null<IDBTransaction>;
 	/**
+		The **`readyState`** read-only property of the `IDBRequest` interface returns the state of the request.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBRequest/readyState>
 	**/
 	var readyState(default, null) : IDBRequestReadyState;

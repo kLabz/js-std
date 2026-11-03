@@ -25,22 +25,34 @@
 package js.web.dom;
 
 /**
+	The Resize Observer API provides a performant mechanism by which code can monitor an element for changes to its size, with notifications being delivered to the observer each time the size changes.
+	
+	Documentation [ResizeObserver](https://developer.mozilla.org/docs/Web/API/ResizeObserver) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ResizeObserver/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ResizeObserver>
 **/
 @:native("ResizeObserver") extern class ResizeObserver {
 	/**
+		The **`ResizeObserver`** constructor creates a new `ResizeObserver` object, which can be used to report changes to the content or border box of an `Element` or the bounding box of an `SVGElement`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserver/ResizeObserver>
 	**/
 	function new(callback:ResizeObserverCallback):Void;
 	/**
+		The **`disconnect()`** method of the `ResizeObserver` interface unobserves all observed `Element` or `SVGElement` targets.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserver/disconnect>
 	**/
 	function disconnect():Void;
 	/**
+		The **`observe()`** method of the `ResizeObserver` interface starts observing the specified `Element` or `SVGElement`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserver/observe>
 	**/
 	function observe(target:Element, ?options:ResizeObserverOptions):Void;
 	/**
+		The **`unobserve()`** method of the `ResizeObserver` interface ends the observing of a specified `Element` or `SVGElement`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserver/unobserve>
 	**/
 	function unobserve(target:Element):Void;

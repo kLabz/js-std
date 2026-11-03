@@ -25,14 +25,22 @@
 package js.web.svg;
 
 /**
+	The **`SVGAnimatedNumberList`** interface represents a list of attributes of type [\<number>](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/Content_type#number) which can be animated.
+	
+	Documentation [SVGAnimatedNumberList](https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumberList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumberList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumberList>
 **/
 @:native("SVGAnimatedNumberList") extern class SVGAnimatedNumberList {
 	/**
+		The **`baseVal`** read-only property of the `SVGAnimatedNumberList` interface represents the base (non-animated) value of an animatable attribute that accepts a list of [`<number>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/Content_type#number) values.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumberList/baseVal>
 	**/
 	var baseVal(default, null) : SVGNumberList;
 	/**
+		The **`animVal`** read-only property of the `SVGAnimatedNumberList` interface represents the current animated value of an animatable attribute that accepts a list of [`<number>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/Content_type#number) values.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumberList/animVal>
 	**/
 	var animVal(default, null) : SVGNumberList;

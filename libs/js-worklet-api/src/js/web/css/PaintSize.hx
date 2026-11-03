@@ -25,16 +25,24 @@
 package js.web.css;
 
 /**
+	The **`PaintSize`** interface of the [CSS Painting API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Painting_API) represents the size of the output bitmap that the author should draw.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [PaintSize](https://developer.mozilla.org/docs/Web/API/PaintSize) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PaintSize/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/PaintSize>
 **/
 @:native("PaintSize") @:require(js_experimental_api, "PaintSize is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PaintSize {
 	/**
+		The **`width`** read-only property of the `PaintSize` interface returns the width of the output bitmap that the author should draw.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PaintSize/width>
 	**/
 	var width(default, null) : Float;
 	/**
+		The **`height`** read-only property of the `PaintSize` interface returns the height of the output bitmap that the author should draw.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PaintSize/height>
 	**/
 	var height(default, null) : Float;

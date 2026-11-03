@@ -25,20 +25,30 @@
 package js.web.media;
 
 /**
+	The **`BufferedChangeEvent`** interface of the `Media Source Extensions API` represents the event object for the `bufferedchange` event fired on a `ManagedSourceBuffer`. This event is fired whenever the buffered ranges of the `ManagedSourceBuffer` change, for example as a result of `appendBuffer()`, `remove()`, or `endOfStream()` calls, or when the user agent runs the memory cleanup algorithm.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [BufferedChangeEvent](https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent>
 **/
 @:native("BufferedChangeEvent") @:require(js_experimental_api, "BufferedChangeEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BufferedChangeEvent extends js.web.dom.Event {
 	/**
+		The **`addedRanges`** read-only property of the `BufferedChangeEvent` interface returns a `TimeRanges` object representing the time ranges that were added to the associated `ManagedSourceBuffer`. These are the ranges added between the last `updatestart` and `updateend` events, during the most recent run of the coded frame processing algorithm.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent/addedRanges>
 	**/
 	var addedRanges(default, null) : js.web.html.TimeRanges;
 	/**
+		The **`removedRanges`** read-only property of the `BufferedChangeEvent` interface returns a `TimeRanges` object representing the time ranges that were removed from the associated `ManagedSourceBuffer`. These are the ranges removed between the last `updatestart` and `updateend` events, during the most recent run of the coded frame removal or coded frame eviction algorithm, or as a consequence of the user agent running the memory cleanup algorithm.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent/removedRanges>
 	**/
 	var removedRanges(default, null) : js.web.html.TimeRanges;
 	/**
+		The **`BufferedChangeEvent()`** constructor of the `BufferedChangeEvent` interface creates a new `BufferedChangeEvent` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent/BufferedChangeEvent>
 	**/
 	function new(type:String, ?eventInitDict:BufferedChangeEventInit):Void;

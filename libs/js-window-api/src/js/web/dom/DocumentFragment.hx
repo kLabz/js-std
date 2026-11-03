@@ -25,74 +25,102 @@
 package js.web.dom;
 
 /**
+	The **`DocumentFragment`** interface represents a minimal document object that has no parent.
+	
+	Documentation [DocumentFragment](https://developer.mozilla.org/docs/Web/API/DocumentFragment) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DocumentFragment/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment>
 **/
 @:native("DocumentFragment") extern class DocumentFragment extends Node {
 	/**
+		The read-only **`children`** property returns a live `HTMLCollection` which contains all of the child `elements` of the document fragment upon which it was called.
+		
 		From interface mixin ParentNode
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/children>
 	**/
 	var children(default, null) : HTMLCollection;
 	/**
+		The **`DocumentFragment.firstElementChild`** read-only property returns the document fragment's first child `Element`, or `null` if there are no child elements.
+		
 		From interface mixin ParentNode
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/firstElementChild>
 	**/
 	var firstElementChild(default, null) : Null<Element>;
 	/**
+		The **`DocumentFragment.lastElementChild`** read-only property returns the document fragment's last child `Element`, or `null` if there are no child elements.
+		
 		From interface mixin ParentNode
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/lastElementChild>
 	**/
 	var lastElementChild(default, null) : Null<Element>;
 	/**
+		The **`DocumentFragment.childElementCount`** read-only property returns the number of child elements of a `DocumentFragment`.
+		
 		From interface mixin ParentNode
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/childElementCount>
 	**/
 	var childElementCount(default, null) : Int;
 	/**
+		The **`DocumentFragment()`** constructor returns a new, empty `DocumentFragment` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/DocumentFragment>
 	**/
 	function new():Void;
 	/**
+		The **`DocumentFragment.append()`** method inserts a set of `Node` objects or strings after the last child of the document fragment. Strings are inserted as equivalent `Text` nodes.
+		
 		From interface mixin ParentNode
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/append>
 	**/
 	function append(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
+		The **`getElementById()`** method of the `DocumentFragment` returns an `Element` object representing the element whose `id` property matches the specified string. Since element IDs are required to be unique if specified, they're a useful way to get access to a specific element quickly.
+		
 		From interface mixin NonElementParentNode
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/getElementById>
 	**/
 	function getElementById(elementId:String):Null<Element>;
 	/**
+		The **`moveBefore()`** method of the `DocumentFragment` interface moves a given `Node` inside the invoking `DocumentFragment` as a direct child, before a given reference node.
+		
 		From interface mixin ParentNode
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/moveBefore>
 	**/
 	function moveBefore(node:Node, child:Null<Node>):Void;
 	/**
+		The **`DocumentFragment.prepend()`** method inserts a set of `Node` objects or strings before the first child of the document fragment. Strings are inserted as equivalent `Text` nodes.
+		
 		From interface mixin ParentNode
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/prepend>
 	**/
 	function prepend(nodes:haxe.Rest<haxe.extern.EitherType<Node, String>>):Void;
 	/**
+		The **`DocumentFragment.querySelector()`** method returns the first element, or `null` if no matches are found, within the `DocumentFragment` (using depth-first pre-order traversal of the document's nodes) that matches the specified group of selectors.
+		
 		From interface mixin ParentNode
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/querySelector>
 	**/
 	function querySelector(selectors:String):Null<Element>;
 	/**
+		The **`DocumentFragment.querySelectorAll()`** method returns a `NodeList` of elements within the `DocumentFragment` (using depth-first pre-order traversal of the document's nodes) that matches the specified group of selectors.
+		
 		From interface mixin ParentNode
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/querySelectorAll>
 	**/
 	function querySelectorAll(selectors:String):NodeList;
 	/**
+		The **`DocumentFragment.replaceChildren()`** method replaces the existing children of a `DocumentFragment` with a specified new set of children. These can be string or `Node` objects.
+		
 		From interface mixin ParentNode
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/replaceChildren>

@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The `EXT_texture_compression_rgtc` extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and exposes 4 RGTC compressed texture formats. RGTC is a block-based texture compression format suited for unsigned and signed red and red-green textures (**R**ed-**G**reen **T**exture **C**ompression).
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [EXT_texture_compression_rgtc](https://developer.mozilla.org/docs/Web/API/EXT_texture_compression_rgtc) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/EXT_texture_compression_rgtc/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/EXT_texture_compression_rgtc>
 **/

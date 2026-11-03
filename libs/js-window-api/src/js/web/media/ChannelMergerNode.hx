@@ -25,10 +25,16 @@
 package js.web.media;
 
 /**
+	The `ChannelMergerNode` interface, often used in conjunction with its opposite, `ChannelSplitterNode`, reunites different mono inputs into a single output. Each input is used to fill a channel of the output. This is useful for accessing each channel separately, e.g., for performing channel mixing where gain must be separately controlled on each channel.
+	
+	Documentation [ChannelMergerNode](https://developer.mozilla.org/docs/Web/API/ChannelMergerNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ChannelMergerNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ChannelMergerNode>
 **/
 @:native("ChannelMergerNode") extern class ChannelMergerNode extends AudioNode {
 	/**
+		The **`ChannelMergerNode()`** constructor creates a new `ChannelMergerNode` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ChannelMergerNode/ChannelMergerNode>
 	**/
 	function new(context:BaseAudioContext, ?options:ChannelMergerOptions):Void;

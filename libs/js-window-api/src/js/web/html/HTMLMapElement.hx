@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`HTMLMapElement`** interface provides special properties and methods (beyond those of the regular object `HTMLElement` interface it also has available to it by inheritance) for manipulating the layout and presentation of map elements.
+	
+	Documentation [HTMLMapElement](https://developer.mozilla.org/docs/Web/API/HTMLMapElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLMapElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLMapElement>
 **/
 @:native("HTMLMapElement") extern class HTMLMapElement extends HTMLElement {
 	/**
+		The **`name`** property of the `HTMLMapElement` represents the unique name `<map>` element. Its value can be used with the `useMap` attribute of the `<img>` element to reference a `<map>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLMapElement/name>
 	**/
 	var name : String;
 	/**
+		The **`areas`** read-only property of the `HTMLMapElement` interface returns a collection of `<area>` elements associated with the `<map>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLMapElement/areas>
 	**/
 	var areas(default, null) : js.web.dom.HTMLCollection;

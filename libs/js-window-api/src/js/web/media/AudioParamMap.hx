@@ -25,6 +25,10 @@
 package js.web.media;
 
 /**
+	The **`AudioParamMap`** interface of the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) represents an iterable and read-only set of multiple audio parameters.
+	
+	Documentation [AudioParamMap](https://developer.mozilla.org/docs/Web/API/AudioParamMap) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AudioParamMap/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/AudioParamMap>
 **/
 @:native("AudioParamMap") extern class AudioParamMap {

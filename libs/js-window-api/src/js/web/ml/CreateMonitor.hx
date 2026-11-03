@@ -25,9 +25,13 @@
 package js.web.ml;
 
 /**
+	The **`CreateMonitor`** interface provides information on the progress of an AI model download, for example a language pack or some fine-tuning data.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [CreateMonitor](https://developer.mozilla.org/docs/Web/API/CreateMonitor) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CreateMonitor/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/CreateMonitor>
 **/

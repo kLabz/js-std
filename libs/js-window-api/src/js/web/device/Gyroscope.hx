@@ -25,26 +25,38 @@
 package js.web.device;
 
 /**
+	The **`Gyroscope`** interface of the [Sensor APIs](https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs) provides on each reading the angular velocity of the device along all three axes.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [Gyroscope](https://developer.mozilla.org/docs/Web/API/Gyroscope) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Gyroscope/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Gyroscope>
 **/
 @:native("Gyroscope") @:require(js_experimental_api, "Gyroscope is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Gyroscope extends Sensor {
 	/**
+		The **`x`** read-only property of the `Gyroscope` interface returns a number specifying the angular velocity of the device along its x-axis.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Gyroscope/x>
 	**/
 	var x(default, null) : Null<Float>;
 	/**
+		The **`y`** read-only property of the `Gyroscope` interface returns a number specifying the angular velocity of the device along its y-axis.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Gyroscope/y>
 	**/
 	var y(default, null) : Null<Float>;
 	/**
+		The **`z`** read-only property of the `Gyroscope` interface returns a number specifying the angular velocity of the device along its z-axis.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Gyroscope/z>
 	**/
 	var z(default, null) : Null<Float>;
 	/**
+		The **`Gyroscope()`** constructor creates a new `Gyroscope` object which provides on each reading the angular velocity of the device along all three axes.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Gyroscope/Gyroscope>
 	**/
 	function new(?sensorOptions:GyroscopeSensorOptions):Void;

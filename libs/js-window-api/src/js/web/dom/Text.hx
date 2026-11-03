@@ -25,20 +25,30 @@
 package js.web.dom;
 
 /**
+	The **`Text`** interface represents a text `node` in a DOM tree.
+	
+	Documentation [Text](https://developer.mozilla.org/docs/Web/API/Text) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Text/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Text>
 **/
 @:native("Text") extern class Text extends CharacterData {
 	/**
+		The read-only **`wholeText`** property of the `Text` interface returns the full text of all `Text` nodes logically adjacent to the node. The text is concatenated in document order. This allows specifying any text node and obtaining all adjacent text as a single string.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Text/wholeText>
 	**/
 	var wholeText(default, null) : String;
 	/**
+		The read-only **`assignedSlot`** property of the `Text` interface returns the `HTMLSlotElement` object associated with the element.
+		
 		From interface mixin Slottable
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Text/assignedSlot>
 	**/
 	var assignedSlot(default, null) : Null<js.web.html.HTMLSlotElement>;
 	/**
+		The **`Text()`** constructor returns a new `Text` object with the optional string given in parameter as its textual content.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Text/Text>
 	**/
 	function new(?data:String = ""):Void;
@@ -60,6 +70,8 @@ package js.web.dom;
 	@:require(js_experimental_api, "Text.getBoxQuads is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getBoxQuads(?options:js.web.css.BoxQuadOptions):Array<DOMQuad>;
 	/**
+		The **`splitText()`** method of the `Text` interface breaks the `Text` node into two nodes at the specified offset, keeping both nodes in the tree as siblings.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Text/splitText>
 	**/
 	function splitText(offset:Int):Text;

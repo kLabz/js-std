@@ -25,14 +25,22 @@
 package js.web.media;
 
 /**
+	The `StereoPannerNode` interface of the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) represents a simple stereo panner node that can be used to pan an audio stream left or right. It is an `AudioNode` audio-processing module that positions an incoming audio stream in a stereo image using a low-cost equal-power [panning algorithm](https://webaudio.github.io/web-audio-api/#panning-algorithm).
+	
+	Documentation [StereoPannerNode](https://developer.mozilla.org/docs/Web/API/StereoPannerNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/StereoPannerNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/StereoPannerNode>
 **/
 @:native("StereoPannerNode") extern class StereoPannerNode extends AudioNode {
 	/**
+		The `pan` property of the `StereoPannerNode` interface is an [a-rate](https://developer.mozilla.org/en-US/docs/Web/API/AudioParam#a-rate) `AudioParam` representing the amount of panning to apply. The value can range between `-1` (full left pan) and `1` (full right pan).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StereoPannerNode/pan>
 	**/
 	var pan(default, null) : AudioParam;
 	/**
+		The **`StereoPannerNode()`** constructor of the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) creates a new `StereoPannerNode` object which is an `AudioNode` that represents a simple stereo panner node that can be used to pan an audio stream left or right.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StereoPannerNode/StereoPannerNode>
 	**/
 	function new(context:BaseAudioContext, ?options:StereoPannerOptions):Void;

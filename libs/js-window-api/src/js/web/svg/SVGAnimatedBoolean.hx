@@ -25,14 +25,22 @@
 package js.web.svg;
 
 /**
+	The **`SVGAnimatedBoolean`** interface is used for attributes of type boolean which can be animated.
+	
+	Documentation [SVGAnimatedBoolean](https://developer.mozilla.org/docs/Web/API/SVGAnimatedBoolean) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGAnimatedBoolean/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedBoolean>
 **/
 @:native("SVGAnimatedBoolean") extern class SVGAnimatedBoolean {
 	/**
+		The **`baseVal`** property of the `SVGAnimatedBoolean` interface is the value of the associated animatable boolean SVG attribute in its base (none-animated) state. It reflects the value of the associated animatable boolean attribute when no animations are applied.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedBoolean/baseVal>
 	**/
 	var baseVal : Bool;
 	/**
+		The **`animVal`** read-only property of the `SVGAnimatedBoolean` interface represents the current animated value of the associated animatable boolean SVG attribute. If the attribute is not animated, `animVal` is the same as `SVGAnimatedBoolean.baseVal`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedBoolean/animVal>
 	**/
 	var animVal(default, null) : Bool;

@@ -25,14 +25,22 @@
 package js.web.svg;
 
 /**
+	The **`SVGAnimatedEnumeration`** interface describes attribute values which are constants from a particular enumeration and which can be animated.
+	
+	Documentation [SVGAnimatedEnumeration](https://developer.mozilla.org/docs/Web/API/SVGAnimatedEnumeration) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGAnimatedEnumeration/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedEnumeration>
 **/
 @:native("SVGAnimatedEnumeration") extern class SVGAnimatedEnumeration {
 	/**
+		The **`baseVal`** property of the `SVGAnimatedEnumeration` interface represents the value of an SVG enumeration.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedEnumeration/baseVal>
 	**/
 	var baseVal : Int;
 	/**
+		The **`animVal`** read-only property of the `SVGAnimatedEnumeration` interface represents the value of an SVG enumeration.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedEnumeration/animVal>
 	**/
 	var animVal(default, null) : Int;

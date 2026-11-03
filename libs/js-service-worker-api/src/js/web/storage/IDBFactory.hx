@@ -25,22 +25,34 @@
 package js.web.storage;
 
 /**
+	The **`IDBFactory`** interface of the [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) lets applications asynchronously access the indexed databases. The object that implements the interface is `window.indexedDB`. You open — that is, create and access — and delete a database with this object, and not directly with `IDBFactory`.
+	
+	Documentation [IDBFactory](https://developer.mozilla.org/docs/Web/API/IDBFactory) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/IDBFactory/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/IDBFactory>
 **/
 @:native("IDBFactory") extern class IDBFactory {
 	/**
+		The **`cmp()`** method of the `IDBFactory` interface compares two values as keys to determine equality and ordering for IndexedDB operations, such as storing and iterating.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBFactory/cmp>
 	**/
 	function cmp(first:Any, second:Any):Int;
 	/**
+		The **`databases`** method of the `IDBFactory` interface returns a `Promise` that fulfills with an array of objects containing the name and version of all the available databases.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBFactory/databases>
 	**/
 	function databases():js.lib.Promise<Array<IDBDatabaseInfo>>;
 	/**
+		The **`deleteDatabase()`** method of the `IDBFactory` interface requests the deletion of a database. The method returns an `IDBOpenDBRequest` object immediately, and performs the deletion operation asynchronously.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBFactory/deleteDatabase>
 	**/
 	function deleteDatabase(name:String):IDBOpenDBRequest;
 	/**
+		The **`open()`** method of the `IDBFactory` interface requests opening a [connection to a database](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Terminology#database_connection).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBFactory/open>
 	**/
 	function open(name:String, ?version:Float):IDBOpenDBRequest;

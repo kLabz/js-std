@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The **`KHR_parallel_shader_compile`** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and enables a non-blocking poll operation, so that compile/link status availability (`COMPLETION_STATUS_KHR`) can be queried without potentially incurring stalls. In other words you can check the status of your shaders compiling without blocking the runtime.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [KHR_parallel_shader_compile](https://developer.mozilla.org/docs/Web/API/KHR_parallel_shader_compile) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/KHR_parallel_shader_compile/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/KHR_parallel_shader_compile>
 **/

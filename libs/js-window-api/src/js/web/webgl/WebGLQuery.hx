@@ -25,6 +25,10 @@
 package js.web.webgl;
 
 /**
+	The **`WebGLQuery`** interface is part of the [WebGL 2](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) API and provides ways to asynchronously query for information. By default, occlusion queries and primitive queries are available.
+	
+	Documentation [WebGLQuery](https://developer.mozilla.org/docs/Web/API/WebGLQuery) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WebGLQuery/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WebGLQuery>
 **/
 @:native("WebGLQuery") extern class WebGLQuery extends WebGLObject {

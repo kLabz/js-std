@@ -25,6 +25,10 @@
 package js.web.svg;
 
 /**
+	The **`SVGSetElement`** interface corresponds to the `<set>` element.
+	
+	Documentation [SVGSetElement](https://developer.mozilla.org/docs/Web/API/SVGSetElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGSetElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGSetElement>
 **/
 @:native("SVGSetElement") extern class SVGSetElement extends SVGAnimationElement {

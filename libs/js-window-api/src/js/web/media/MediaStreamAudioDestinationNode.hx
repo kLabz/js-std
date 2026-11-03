@@ -25,14 +25,22 @@
 package js.web.media;
 
 /**
+	The `MediaStreamAudioDestinationNode` interface represents an audio destination consisting of a [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) `MediaStream` with a single `AudioMediaStreamTrack`, which can be used in a similar way to a `MediaStream` obtained from `navigator.mediaDevices.getUserMedia()`.
+	
+	Documentation [MediaStreamAudioDestinationNode](https://developer.mozilla.org/docs/Web/API/MediaStreamAudioDestinationNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MediaStreamAudioDestinationNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaStreamAudioDestinationNode>
 **/
 @:native("MediaStreamAudioDestinationNode") extern class MediaStreamAudioDestinationNode extends AudioNode {
 	/**
+		The `stream` property of the `AudioContext` interface represents a `MediaStream` containing a single audio `MediaStreamTrack` with the same number of channels as the node itself.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamAudioDestinationNode/stream>
 	**/
 	var stream(default, null) : MediaStream;
 	/**
+		The **`MediaStreamAudioDestinationNode()`** constructor of the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) creates a new `MediaStreamAudioDestinationNode` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamAudioDestinationNode/MediaStreamAudioDestinationNode>
 	**/
 	function new(context:AudioContext, ?options:AudioNodeOptions):Void;

@@ -25,22 +25,34 @@
 package js.web.svg;
 
 /**
+	The **`SVGLineElement`** interface provides access to the properties of `<line>` elements, as well as methods to manipulate them.
+	
+	Documentation [SVGLineElement](https://developer.mozilla.org/docs/Web/API/SVGLineElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGLineElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGLineElement>
 **/
 @:native("SVGLineElement") extern class SVGLineElement extends SVGGeometryElement {
 	/**
+		The **`x1`** read-only property of the `SVGLineElement` interface describes the start of the SVG line along the x-axis as an `SVGAnimatedLength`. It reflects the `<line>` element's `x1` geometric attribute.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGLineElement/x1>
 	**/
 	var x1(default, null) : SVGAnimatedLength;
 	/**
+		The **`y1`** read-only property of the `SVGLineElement` interface describes the start of the SVG line along the y-axis as an `SVGAnimatedLength`. It reflects the `<line>` element's `y1` geometric attribute.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGLineElement/y1>
 	**/
 	var y1(default, null) : SVGAnimatedLength;
 	/**
+		The **`x2`** read-only property of the `SVGLineElement` interface describes the x-axis coordinate value of the end of a line as an `SVGAnimatedLength`. It reflects the `<line>` element's `x2` geometric attribute.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGLineElement/x2>
 	**/
 	var x2(default, null) : SVGAnimatedLength;
 	/**
+		The **`y2`** read-only property of the `SVGLineElement` interface describes the v-axis coordinate value of the end of a line as an `SVGAnimatedLength`. It reflects the `<line>` element's `y2` geometric attribute.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGLineElement/y2>
 	**/
 	var y2(default, null) : SVGAnimatedLength;

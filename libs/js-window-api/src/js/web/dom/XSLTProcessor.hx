@@ -25,50 +25,72 @@
 package js.web.dom;
 
 /**
+	An **`XSLTProcessor`** applies an [XSLT](https://developer.mozilla.org/en-US/docs/Web/XML/XSLT) stylesheet transformation to an XML document to produce a new XML document as output. It has methods to load the XSLT stylesheet, to manipulate `<xsl:param>` parameter values, and to apply the transformation to documents.
+	
+	Documentation [XSLTProcessor](https://developer.mozilla.org/docs/Web/API/XSLTProcessor) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XSLTProcessor/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor>
 **/
 @:native("XSLTProcessor") @:deprecated extern class XSLTProcessor {
 	/**
+		The **`XSLTProcessor()`** constructor creates a new `XSLTProcessor` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/XSLTProcessor>
 	**/
 	@:deprecated
 	function new():Void;
 	/**
+		The `clearParameters()` method of the `XSLTProcessor` interface removes all parameters (`<xsl:param>`) and their values from the stylesheet imported in the processor. The `XSLTProcessor` will then use the default values specified in the XSLT stylesheet.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/clearParameters>
 	**/
 	@:deprecated
 	function clearParameters():Void;
 	/**
+		The `getParameter()` method of the `XSLTProcessor` interface returns the value of a parameter (`<xsl:param>`) from the stylesheet imported in the processor.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/getParameter>
 	**/
 	@:deprecated
 	function getParameter(namespaceURI:String, localName:String):Any;
 	/**
+		The `importStylesheet()` method of the `XSLTProcessor` interface imports an XSLT stylesheet for the processor.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/importStylesheet>
 	**/
 	@:deprecated
 	function importStylesheet(style:Node):Void;
 	/**
+		The `removeParameter()` method of the `XSLTProcessor` interface removes the parameter (`<xsl:param>`) and its value from the stylesheet imported in the processor.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/removeParameter>
 	**/
 	@:deprecated
 	function removeParameter(namespaceURI:String, localName:String):Void;
 	/**
+		The `reset()` method of the `XSLTProcessor` interface removes all parameters (`<xsl:param>`) and the XSLT stylesheet from the processor. The `XSLTProcessor` will then be in its original state when it was created.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/reset>
 	**/
 	@:deprecated
 	function reset():Void;
 	/**
+		The `setParameter()` method of the `XSLTProcessor` interface sets the value of a parameter (`<xsl:param>`) in the stylesheet imported in the processor.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/setParameter>
 	**/
 	@:deprecated
 	function setParameter(namespaceURI:String, localName:String, value:Any):Void;
 	/**
+		The `transformToDocument()` method of the `XSLTProcessor` interface transforms the provided `Node` source to a `Document` using the XSLT stylesheet associated with `XSLTProcessor`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/transformToDocument>
 	**/
 	@:deprecated
 	function transformToDocument(source:Node):Document;
 	/**
+		The `transformToFragment()` method of the `XSLTProcessor` interface transforms a provided `Node` source to a `DocumentFragment` using the XSLT stylesheet associated with the `XSLTProcessor`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XSLTProcessor/transformToFragment>
 	**/
 	@:deprecated

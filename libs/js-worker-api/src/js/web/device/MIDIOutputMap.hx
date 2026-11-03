@@ -25,7 +25,11 @@
 package js.web.device;
 
 /**
+	The **`MIDIOutputMap`** read-only interface of the [Web MIDI API](https://developer.mozilla.org/en-US/docs/Web/API/Web_MIDI_API) provides the set of MIDI output ports that are currently available.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [MIDIOutputMap](https://developer.mozilla.org/docs/Web/API/MIDIOutputMap) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MIDIOutputMap/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/MIDIOutputMap>
 **/

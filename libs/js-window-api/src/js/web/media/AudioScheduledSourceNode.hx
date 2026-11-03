@@ -25,15 +25,23 @@
 package js.web.media;
 
 /**
+	The `AudioScheduledSourceNode` interface—part of the Web Audio API—is a parent interface for several types of audio source node interfaces which share the ability to be started and stopped, optionally at specified times. Specifically, this interface defines the `start()` and `stop()` methods, as well as the `ended` event.
+	
+	Documentation [AudioScheduledSourceNode](https://developer.mozilla.org/docs/Web/API/AudioScheduledSourceNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AudioScheduledSourceNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/AudioScheduledSourceNode>
 **/
 @:native("AudioScheduledSourceNode") extern class AudioScheduledSourceNode extends AudioNode {
 	var onended : js.web.html.EventHandler;
 	/**
+		The `start()` method on `AudioScheduledSourceNode` schedules a sound to begin playback at the specified time. If no time is specified, then the sound begins playing immediately.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioScheduledSourceNode/start>
 	**/
 	function start(?when:Float = 0):Void;
 	/**
+		The `stop()` method on `AudioScheduledSourceNode` schedules a sound to cease playback at the specified time. If no time is specified, then the sound stops playing immediately.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioScheduledSourceNode/stop>
 	**/
 	function stop(?when:Float = 0):Void;

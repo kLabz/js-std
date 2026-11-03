@@ -25,18 +25,26 @@
 package js.web.xr;
 
 /**
+	The **`XRAnchor`** interface creates anchors which keep track of the pose that is fixed relative to the real world. With anchors, you can specify poses in the world that need to be updated to correctly reflect the evolving understanding of the world, such that the poses remain aligned with the same place in the physical world. That helps to build an illusion that the placed objects are really present in the user's environment.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRAnchor](https://developer.mozilla.org/docs/Web/API/XRAnchor) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRAnchor/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRAnchor>
 **/
 @:native("XRAnchor") @:require(js_experimental_api, "XRAnchor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRAnchor {
 	/**
+		The read-only **`anchorSpace`** property of the `XRAnchor` interface returns an `XRSpace` object to locate the anchor relative to other `XRSpace` objects. It can be passed to `XRFrame.getPose()` subsequently.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRAnchor/anchorSpace>
 	**/
 	var anchorSpace(default, null) : XRSpace;
 	/**
+		The **`delete()`** method of the `XRAnchor` interface removes an anchor. This can be useful when an application is no longer interested in receiving updates to an anchor.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRAnchor/delete>
 	**/
 	function delete():Void;

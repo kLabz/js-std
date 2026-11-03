@@ -25,16 +25,24 @@
 package js.web.html;
 
 /**
+	The **`VideoTrackList`** interface is used to represent a list of the video tracks contained within a `<video>` element, with each track represented by a separate `VideoTrack` object in the list.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [VideoTrackList](https://developer.mozilla.org/docs/Web/API/VideoTrackList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/VideoTrackList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/VideoTrackList>
 **/
 @:native("VideoTrackList") @:require(js_experimental_api, "VideoTrackList is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class VideoTrackList extends js.web.dom.EventTarget implements ArrayAccess<VideoTrack> {
 	/**
+		The read-only **`VideoTrackList`** property **`length`** returns the number of entries in the `VideoTrackList`, each of which is a `VideoTrack` representing one video track in the media element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrackList/length>
 	**/
 	var length(default, null) : Int;
 	/**
+		The read-only **`VideoTrackList`** property **`selectedIndex`** returns the index of the currently selected track, if any, or `-1` otherwise.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrackList/selectedIndex>
 	**/
 	var selectedIndex(default, null) : Int;
@@ -42,6 +50,8 @@ package js.web.html;
 	var onaddtrack : EventHandler;
 	var onremovetrack : EventHandler;
 	/**
+		The **`VideoTrackList`** method **`getTrackById()`** returns the first `VideoTrack` object from the track list whose `id` matches the specified string.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrackList/getTrackById>
 	**/
 	function getTrackById(id:String):Null<VideoTrack>;

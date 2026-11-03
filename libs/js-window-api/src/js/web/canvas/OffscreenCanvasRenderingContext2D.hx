@@ -25,6 +25,10 @@
 package js.web.canvas;
 
 /**
+	The **`OffscreenCanvasRenderingContext2D`** interface is a `CanvasRenderingContext2D` rendering context for drawing to the bitmap of an `OffscreenCanvas` object. It is similar to the `CanvasRenderingContext2D` object, with the following differences:
+	
+	Documentation [OffscreenCanvasRenderingContext2D](https://developer.mozilla.org/docs/Web/API/OffscreenCanvasRenderingContext2D) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/OffscreenCanvasRenderingContext2D/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/OffscreenCanvasRenderingContext2D>
 **/
 @:native("OffscreenCanvasRenderingContext2D") extern class OffscreenCanvasRenderingContext2D {

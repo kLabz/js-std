@@ -25,21 +25,31 @@
 package js.web.device;
 
 /**
+	The **`MIDIAccess`** interface of the [Web MIDI API](https://developer.mozilla.org/en-US/docs/Web/API/Web_MIDI_API) provides methods for listing MIDI input and output devices, and obtaining access to those devices.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [MIDIAccess](https://developer.mozilla.org/docs/Web/API/MIDIAccess) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MIDIAccess/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/MIDIAccess>
 **/
 @:native("MIDIAccess") extern class MIDIAccess extends js.web.dom.EventTarget {
 	/**
+		The **`inputs`** read-only property of the `MIDIAccess` interface provides access to any available MIDI input ports.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIAccess/inputs>
 	**/
 	var inputs(default, null) : MIDIInputMap;
 	/**
+		The **`outputs`** read-only property of the `MIDIAccess` interface provides access to any available MIDI output ports.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIAccess/outputs>
 	**/
 	var outputs(default, null) : MIDIOutputMap;
 	var onstatechange : js.web.html.EventHandler;
 	/**
+		The **`sysexEnabled`** read-only property of the `MIDIAccess` interface indicates whether system exclusive support is enabled on the current MIDIAccess instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIAccess/sysexEnabled>
 	**/
 	var sysexEnabled(default, null) : Bool;

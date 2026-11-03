@@ -25,21 +25,31 @@
 package js.web.webgl;
 
 /**
+	The **`ANGLE_instanced_arrays`** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and allows you to draw the same object, or groups of similar objects multiple times, if they share the same vertex data, primitive count and type.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [ANGLE_instanced_arrays](https://developer.mozilla.org/docs/Web/API/ANGLE_instanced_arrays) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ANGLE_instanced_arrays/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/ANGLE_instanced_arrays>
 **/
 @:native("ANGLE_instanced_arrays") extern class ANGLE_instanced_arrays {
 	static inline var VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE : GLenum = 0x88FE;
 	/**
+		The **`ANGLE_instanced_arrays.drawArraysInstancedANGLE()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) renders primitives from array data like the `gl.drawArrays()` method. In addition, it can execute multiple instances of the range of elements.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ANGLE_instanced_arrays/drawArraysInstancedANGLE>
 	**/
 	function drawArraysInstancedANGLE(mode:GLenum, first:GLint, count:GLsizei, primcount:GLsizei):Void;
 	/**
+		The **`ANGLE_instanced_arrays.drawElementsInstancedANGLE()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) renders primitives from array data like the `gl.drawElements()` method. In addition, it can execute multiple instances of a set of elements.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ANGLE_instanced_arrays/drawElementsInstancedANGLE>
 	**/
 	function drawElementsInstancedANGLE(mode:GLenum, count:GLsizei, type:GLenum, offset:GLintptr, primcount:GLsizei):Void;
 	/**
+		The **ANGLE_instanced_arrays.vertexAttribDivisorANGLE()** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) modifies the rate at which generic vertex attributes advance when rendering multiple instances of primitives with `ext.drawArraysInstancedANGLE()` and `ext.drawElementsInstancedANGLE()`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ANGLE_instanced_arrays/vertexAttribDivisorANGLE>
 	**/
 	function vertexAttribDivisorANGLE(index:GLuint, divisor:GLuint):Void;

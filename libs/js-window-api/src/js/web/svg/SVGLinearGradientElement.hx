@@ -25,22 +25,34 @@
 package js.web.svg;
 
 /**
+	The **`SVGLinearGradientElement`** interface corresponds to the `<linearGradient>` element.
+	
+	Documentation [SVGLinearGradientElement](https://developer.mozilla.org/docs/Web/API/SVGLinearGradientElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGLinearGradientElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGLinearGradientElement>
 **/
 @:native("SVGLinearGradientElement") extern class SVGLinearGradientElement extends SVGGradientElement {
 	/**
+		The **`x1`** read-only property of the `SVGLinearGradientElement` interface describes the x-axis coordinate of the start point of the gradient as an `SVGAnimatedLength`. It reflects the computed value of the `x1` attribute on the `<linearGradient>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGLinearGradientElement/x1>
 	**/
 	var x1(default, null) : SVGAnimatedLength;
 	/**
+		The **`y1`** read-only property of the `SVGLinearGradientElement` interface describes the y-axis coordinate of the start point of the gradient as an `SVGAnimatedLength`. It reflects the computed value of the `y1` attribute on the `<linearGradient>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGLinearGradientElement/y1>
 	**/
 	var y1(default, null) : SVGAnimatedLength;
 	/**
+		The **`x2`** read-only property of the `SVGLinearGradientElement` interface describes the x-axis coordinate of the start point of the gradient as an `SVGAnimatedLength`. It reflects the computed value of the `x2` attribute on the `<linearGradient>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGLinearGradientElement/x2>
 	**/
 	var x2(default, null) : SVGAnimatedLength;
 	/**
+		The **`y2`** read-only property of the `SVGLinearGradientElement` interface describes the y-axis coordinate of the start point of the gradient as an `SVGAnimatedLength`. It reflects the computed value of the `y2` attribute on the `<linearGradient>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGLinearGradientElement/y2>
 	**/
 	var y2(default, null) : SVGAnimatedLength;

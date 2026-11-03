@@ -25,18 +25,26 @@
 package js.web.media;
 
 /**
+	The **`ManagedMediaSource`** interface of the `Media Source Extensions API` is a `MediaSource` that actively manages its memory content. Unlike a regular `MediaSource`, the user agent can evict content from its `ManagedSourceBuffer` objects at any time, for reasons such as memory or hardware limitations. This makes it suitable for power-efficient streaming scenarios where the user agent needs more control over buffered media data.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [ManagedMediaSource](https://developer.mozilla.org/docs/Web/API/ManagedMediaSource) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ManagedMediaSource/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/ManagedMediaSource>
 **/
 @:native("ManagedMediaSource") @:require(js_experimental_api, "ManagedMediaSource is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ManagedMediaSource extends MediaSource {
 	/**
+		The **`streaming`** read-only property of the `ManagedMediaSource` interface is a boolean indicating whether the application should actively fetch and append media data.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ManagedMediaSource/streaming>
 	**/
 	var streaming(default, null) : Bool;
 	var onstartstreaming : js.web.html.EventHandler;
 	var onendstreaming : js.web.html.EventHandler;
 	/**
+		The **`ManagedMediaSource()`** constructor of the `ManagedMediaSource` interface constructs and returns a new `ManagedMediaSource` object instance with no associated source buffers.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ManagedMediaSource/ManagedMediaSource>
 	**/
 	function new():Void;

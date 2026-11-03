@@ -25,6 +25,10 @@
 package js.web.html;
 
 /**
+	The **`HTMLPreElement`** interface exposes specific properties and methods (beyond those of the `HTMLElement` interface it also has available to it by inheritance) for manipulating a block of preformatted text (`<pre>`).
+	
+	Documentation [HTMLPreElement](https://developer.mozilla.org/docs/Web/API/HTMLPreElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLPreElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLPreElement>
 **/
 @:native("HTMLPreElement") extern class HTMLPreElement extends HTMLElement {

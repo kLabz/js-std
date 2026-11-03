@@ -25,18 +25,28 @@
 package js.web.storage;
 
 /**
+	The **`IDBDatabase`** interface of the IndexedDB API provides a [connection to a database](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Terminology#database_connection); you can use an `IDBDatabase` object to open a [transaction](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Terminology#transaction) on your database then create, manipulate, and delete objects (data) in that database. The interface provides the only way to get and manage versions of the database.
+	
+	Documentation [IDBDatabase](https://developer.mozilla.org/docs/Web/API/IDBDatabase) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/IDBDatabase/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase>
 **/
 @:native("IDBDatabase") extern class IDBDatabase extends js.web.dom.EventTarget {
 	/**
+		The **`name`** read-only property of the `IDBDatabase` interface is a string that contains the name of the connected database.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase/name>
 	**/
 	var name(default, null) : String;
 	/**
+		The **`version`** read-only property of the `IDBDatabase` interface is non-negative integer that contains the version of the connected database.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase/version>
 	**/
 	var version(default, null) : Float;
 	/**
+		The **`objectStoreNames`** read-only property of the `IDBDatabase` interface is a `DOMStringList` containing a list of the names of the [object stores](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Terminology#object_store) currently in the connected database.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase/objectStoreNames>
 	**/
 	var objectStoreNames(default, null) : js.web.html.DOMStringList;
@@ -45,18 +55,26 @@ package js.web.storage;
 	var onerror : js.web.html.EventHandler;
 	var onversionchange : js.web.html.EventHandler;
 	/**
+		The **`close()`** method of the `IDBDatabase` interface returns immediately and closes the connection in a separate thread.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase/close>
 	**/
 	function close():Void;
 	/**
+		The **`createObjectStore()`** method of the `IDBDatabase` interface creates and returns a new `IDBObjectStore`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase/createObjectStore>
 	**/
 	function createObjectStore(name:String, ?options:IDBObjectStoreParameters):IDBObjectStore;
 	/**
+		The **`deleteObjectStore()`** method of the `IDBDatabase` interface destroys the object store with the given name in the connected database, along with any indexes that reference it.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase/deleteObjectStore>
 	**/
 	function deleteObjectStore(name:String):Void;
 	/**
+		The **`transaction`** method of the `IDBDatabase` interface immediately returns a transaction object (`IDBTransaction`) containing the `IDBTransaction.objectStore` method, which you can use to access your object store.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBDatabase/transaction>
 	**/
 	function transaction(storeNames:haxe.extern.EitherType<String, Array<String>>, ?mode:IDBTransactionMode = IDBTransactionMode.READONLY, ?options:IDBTransactionOptions):IDBTransaction;

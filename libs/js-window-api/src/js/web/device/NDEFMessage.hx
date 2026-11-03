@@ -25,18 +25,26 @@
 package js.web.device;
 
 /**
+	The **`NDEFMessage`** interface of the [Web NFC API](https://developer.mozilla.org/en-US/docs/Web/API/Web_NFC_API) represents the content of an NDEF message that has been read from or could be written to an NFC tag. An instance is acquired by calling the `NDEFMessage()` constructor or from the `NDEFReadingEvent.message` property, which is passed to the `reading` event.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [NDEFMessage](https://developer.mozilla.org/docs/Web/API/NDEFMessage) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/NDEFMessage/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/NDEFMessage>
 **/
 @:native("NDEFMessage") @:require(js_experimental_api, "NDEFMessage is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NDEFMessage {
 	/**
+		The `records` property of `NDEFMessage` interface represents a list of `NDEFRecord`s present in the NDEF message.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NDEFMessage/records>
 	**/
 	var records(default, null) : Array<NDEFRecord>;
 	/**
+		The **`NDEFMessage()`** constructor creates a new `NDEFMessage` object, initialized with the given NDEF records.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NDEFMessage/NDEFMessage>
 	**/
 	function new(messageInit:NDEFMessageInit):Void;

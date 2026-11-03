@@ -25,14 +25,20 @@
 package js.web.device;
 
 /**
+	The **`LinearAccelerationSensor`** interface of the [Sensor APIs](https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs) provides on each reading the acceleration applied to the device along all three axes, but without the contribution of gravity.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [LinearAccelerationSensor](https://developer.mozilla.org/docs/Web/API/LinearAccelerationSensor) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/LinearAccelerationSensor/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/LinearAccelerationSensor>
 **/
 @:native("LinearAccelerationSensor") @:require(js_experimental_api, "LinearAccelerationSensor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LinearAccelerationSensor extends Accelerometer {
 	/**
+		The **`LinearAccelerationSensor()`** constructor creates a new `LinearAccelerationSensor` object which provides on each reading the acceleration applied to the device along all three axes, but without the contribution of gravity.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LinearAccelerationSensor/LinearAccelerationSensor>
 	**/
 	function new(?options:AccelerometerSensorOptions):Void;

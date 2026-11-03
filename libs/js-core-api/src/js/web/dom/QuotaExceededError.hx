@@ -25,20 +25,30 @@
 package js.web.dom;
 
 /**
+	The **`QuotaExceededError`** interface represents an error when a requested operation would exceed a system-imposed storage quota.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [QuotaExceededError](https://developer.mozilla.org/docs/Web/API/QuotaExceededError) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/QuotaExceededError/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/QuotaExceededError>
 **/
 @:native("QuotaExceededError") @:require(js_experimental_api, "QuotaExceededError is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class QuotaExceededError extends DOMException {
 	/**
+		The **`quota`** read-only property of the `QuotaExceededError` interface returns the system-defined storage quota (in bytes) that the operation attempted to exceed, or undefined if the information is not available.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/QuotaExceededError/quota>
 	**/
 	var quota(default, null) : Null<Float>;
 	/**
+		The **`requested`** read-only property of the `QuotaExceededError` interface returns the number of bytes that were requested when the error occurred, or undefined if the information is not available.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/QuotaExceededError/requested>
 	**/
 	var requested(default, null) : Null<Float>;
 	/**
+		The **`QuotaExceededError()`** constructor creates a new `QuotaExceededError` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/QuotaExceededError/QuotaExceededError>
 	**/
 	function new(?message:String = "", ?options:QuotaExceededErrorOptions):Void;

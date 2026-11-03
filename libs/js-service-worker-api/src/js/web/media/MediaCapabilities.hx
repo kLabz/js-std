@@ -25,10 +25,16 @@
 package js.web.media;
 
 /**
+	The **Media Capabilities API** allows developers to determine decoding and encoding abilities of the device, exposing information such as whether media is supported and whether playback should be smooth and power efficient.
+	
+	Documentation [MediaCapabilities](https://developer.mozilla.org/docs/Web/API/MediaCapabilities) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MediaCapabilities/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaCapabilities>
 **/
 @:native("MediaCapabilities") extern class MediaCapabilities {
 	/**
+		The **`encodingInfo()`** method of the `MediaCapabilities` interface returns a promise that fulfills with the tested media configuration's capabilities for encoding media. This contains the three boolean properties `supported`, `smooth`, and `powerefficient`, which describe how compatible the device is with the type of media.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaCapabilities/encodingInfo>
 	**/
 	function encodingInfo(configuration:MediaEncodingConfiguration):js.lib.Promise<MediaCapabilitiesEncodingInfo>;

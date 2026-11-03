@@ -25,12 +25,18 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUBindGroupLayout`** interface of the `WebGPU API` defines the structure and purpose of related GPU resources such as buffers that will be used in a pipeline, and is used as a template when creating `GPUBindGroup`s.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUBindGroupLayout](https://developer.mozilla.org/docs/Web/API/GPUBindGroupLayout) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUBindGroupLayout/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUBindGroupLayout>
 **/
 @:native("GPUBindGroupLayout") extern class GPUBindGroupLayout {
 	/**
+		The **`label`** property of the `GPUBindGroupLayout` interface provides a label that can be used to identify the object, for example in `GPUError` messages or console warnings.
+		
 		From interface mixin GPUObjectBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUBindGroupLayout/label>

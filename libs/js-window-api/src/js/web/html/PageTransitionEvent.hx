@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`PageTransitionEvent`** event object is available inside handler functions for the [`pageshow`](https://developer.mozilla.org/en-US/docs/Web/API/Window/pageshow_event) and [`pagehide`](https://developer.mozilla.org/en-US/docs/Web/API/Window/pagehide_event) events, fired when a document is being loaded or unloaded.
+	
+	Documentation [PageTransitionEvent](https://developer.mozilla.org/docs/Web/API/PageTransitionEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PageTransitionEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PageTransitionEvent>
 **/
 @:native("PageTransitionEvent") extern class PageTransitionEvent extends js.web.dom.Event {
 	/**
+		The **`persisted`** read-only property indicates if a webpage is loading from a cache.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PageTransitionEvent/persisted>
 	**/
 	var persisted(default, null) : Bool;
 	/**
+		The **`PageTransitionEvent()`** constructor creates a new `PageTransitionEvent` object, that is used by the `pageshow` or `pagehide` events, fired at the `window` object when a page is loaded or unloaded.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PageTransitionEvent/PageTransitionEvent>
 	**/
 	function new(type:String, ?eventInitDict:PageTransitionEventInit):Void;

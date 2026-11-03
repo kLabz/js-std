@@ -25,22 +25,34 @@
 package js.web.net;
 
 /**
+	A `CloseEvent` is sent to clients using WebSockets when the connection is closed. This is delivered to the listener indicated by the `WebSocket` object's `onclose` attribute.
+	
+	Documentation [CloseEvent](https://developer.mozilla.org/docs/Web/API/CloseEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CloseEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CloseEvent>
 **/
 @:native("CloseEvent") extern class CloseEvent extends js.web.dom.Event {
 	/**
+		The **`wasClean`** read-only property of the `CloseEvent` interface returns `true` if the connection closed cleanly.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CloseEvent/wasClean>
 	**/
 	var wasClean(default, null) : Bool;
 	/**
+		The **`code`** read-only property of the `CloseEvent` interface returns a [WebSocket connection close code](https://www.rfc-editor.org/info/rfc6455/#section-7.1.5) indicating the reason the connection was closed.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CloseEvent/code>
 	**/
 	var code(default, null) : Int;
 	/**
+		The **`reason`** read-only property of the `CloseEvent` interface returns the [WebSocket connection close reason](https://www.rfc-editor.org/info/rfc6455/#section-7.1.6) the server gave for closing the connection; that is, a concise human-readable prose explanation for the closure.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CloseEvent/reason>
 	**/
 	var reason(default, null) : String;
 	/**
+		The **`CloseEvent()`** constructor creates a new `CloseEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CloseEvent/CloseEvent>
 	**/
 	function new(type:String, ?eventInitDict:CloseEventInit):Void;

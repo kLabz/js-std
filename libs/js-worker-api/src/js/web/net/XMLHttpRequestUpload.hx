@@ -25,6 +25,10 @@
 package js.web.net;
 
 /**
+	The **`XMLHttpRequestUpload`** interface represents the upload process for a specific `XMLHttpRequest`. It is an _opaque_ object that represents the underlying, browser-dependent, upload process. It is an `XMLHttpRequestEventTarget` and can be obtained by calling `XMLHttpRequest.upload`.
+	
+	Documentation [XMLHttpRequestUpload](https://developer.mozilla.org/docs/Web/API/XMLHttpRequestUpload) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XMLHttpRequestUpload/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequestUpload>
 **/
 @:native("XMLHttpRequestUpload") extern class XMLHttpRequestUpload extends XMLHttpRequestEventTarget {

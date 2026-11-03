@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The `OES_fbo_render_mipmap` extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and makes it possible to attach any level of a texture to a framebuffer object.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [OES_fbo_render_mipmap](https://developer.mozilla.org/docs/Web/API/OES_fbo_render_mipmap) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/OES_fbo_render_mipmap/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/OES_fbo_render_mipmap>
 **/

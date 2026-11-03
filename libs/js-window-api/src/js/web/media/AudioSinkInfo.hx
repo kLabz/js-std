@@ -25,12 +25,18 @@
 package js.web.media;
 
 /**
+	The **`AudioSinkInfo`** interface of the `Web Audio API` represents information describing an `AudioContext`'s sink ID, retrieved via `AudioContext.sinkId`.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [AudioSinkInfo](https://developer.mozilla.org/docs/Web/API/AudioSinkInfo) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AudioSinkInfo/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/AudioSinkInfo>
 **/
 @:native("AudioSinkInfo") @:require(js_experimental_api, "AudioSinkInfo is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AudioSinkInfo {
 	/**
+		The **`type`** read-only property of the `AudioSinkInfo` interface returns the type of the audio output device.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioSinkInfo/type>
 	**/
 	var type(default, null) : AudioSinkType;

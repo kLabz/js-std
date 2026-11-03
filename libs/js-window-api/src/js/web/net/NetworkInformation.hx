@@ -25,33 +25,49 @@
 package js.web.net;
 
 /**
+	The **Network Information API** provides information about the system's connection in terms of general connection type (e.g., 'wifi, 'cellular', etc.). This can be used to select high definition content or low definition content based on the user's connection.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [NetworkInformation](https://developer.mozilla.org/docs/Web/API/NetworkInformation) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/NetworkInformation/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/NetworkInformation>
 **/
 @:native("NetworkInformation") @:require(js_experimental_api, "NetworkInformation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NetworkInformation extends js.web.dom.EventTarget {
 	/**
+		The **`type`** read-only property of the `NetworkInformation` interface returns the type of connection a device is using to communicate with the network.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NetworkInformation/type>
 	**/
 	var type(default, null) : ConnectionType;
 	/**
+		The **`effectiveType`** read-only property of the `NetworkInformation` interface returns the effective type of the connection meaning one of `slow-2g`, `2g`, `3g`, or `4g`. This value is determined using a combination of recently observed, round-trip time and downlink values.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NetworkInformation/effectiveType>
 	**/
 	var effectiveType(default, null) : EffectiveConnectionType;
 	/**
+		The **`downlinkMax`** read-only property of the `NetworkInformation` interface returns the maximum downlink speed, in megabits per second (Mbps), for the underlying connection technology.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NetworkInformation/downlinkMax>
 	**/
 	var downlinkMax(default, null) : Megabit;
 	/**
+		The **`downlink`** read-only property of the `NetworkInformation` interface returns the effective bandwidth estimate in megabits per second, rounded to the nearest multiple of 25 kilobits per seconds. This value is based on recently observed application layer throughput across recently active connections, excluding connections made to a private address space. In the absence of recent bandwidth measurement data, the attribute value is determined by the properties of the underlying connection technology.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NetworkInformation/downlink>
 	**/
 	var downlink(default, null) : Megabit;
 	/**
+		The **`rtt`** read-only property of the `NetworkInformation` interface returns the estimated effective round-trip time of the current connection, rounded to the nearest multiple of 25 milliseconds. This value is based on recently observed application-layer RTT measurements across recently active connections. It excludes connections made to a private address space. If no recent measurement data is available, the value is based on the properties of the underlying connection technology.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NetworkInformation/rtt>
 	**/
 	var rtt(default, null) : Millisecond;
 	var onchange : js.web.html.EventHandler;
 	/**
+		The **`saveData`** read-only property of the `NetworkInformation` interface returns `true` if the user has set a reduced data usage option on the user agent.
+		
 		From interface mixin NetworkInformationSaveData
 		
 		@see <https://developer.mozilla.org/docs/Web/API/NetworkInformation/saveData>

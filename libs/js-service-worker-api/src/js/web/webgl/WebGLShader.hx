@@ -25,6 +25,10 @@
 package js.web.webgl;
 
 /**
+	The **WebGLShader** is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and can either be a vertex or a fragment shader. A `WebGLProgram` requires both types of shaders.
+	
+	Documentation [WebGLShader](https://developer.mozilla.org/docs/Web/API/WebGLShader) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WebGLShader/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WebGLShader>
 **/
 @:native("WebGLShader") extern class WebGLShader extends WebGLObject {

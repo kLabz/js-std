@@ -25,20 +25,30 @@
 package js.web.media;
 
 /**
+	The **`MediaKeySystemAccess`** interface of the [Encrypted Media Extensions API](https://developer.mozilla.org/en-US/docs/Web/API/Encrypted_Media_Extensions_API) provides access to a Key System for decryption and/or a content protection provider. You can request an instance of this object using the `Navigator.requestMediaKeySystemAccess()` method.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [MediaKeySystemAccess](https://developer.mozilla.org/docs/Web/API/MediaKeySystemAccess) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MediaKeySystemAccess/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaKeySystemAccess>
 **/
 @:native("MediaKeySystemAccess") extern class MediaKeySystemAccess {
 	/**
+		The **`keySystem`** read-only property of the `MediaKeySystemAccess` interface returns a string identifying the key system being used.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySystemAccess/keySystem>
 	**/
 	var keySystem(default, null) : String;
 	/**
+		The `MediaKeySystemAccess.createMediaKeys()` method returns a `Promise` that resolves to a new `MediaKeys` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySystemAccess/createMediaKeys>
 	**/
 	function createMediaKeys():js.lib.Promise<MediaKeys>;
 	/**
+		The **`getConfiguration()`** method of the `MediaKeySystemAccess` interface returns an object with the supported combination of the following configuration options:
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaKeySystemAccess/getConfiguration>
 	**/
 	function getConfiguration():MediaKeySystemConfiguration;

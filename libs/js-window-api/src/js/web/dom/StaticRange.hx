@@ -25,10 +25,16 @@
 package js.web.dom;
 
 /**
+	The [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) **`StaticRange`** interface extends `AbstractRange` to provide a method to specify a range of content in the DOM whose contents don't update to reflect changes which occur within the DOM tree.
+	
+	Documentation [StaticRange](https://developer.mozilla.org/docs/Web/API/StaticRange) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/StaticRange/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/StaticRange>
 **/
 @:native("StaticRange") extern class StaticRange extends AbstractRange {
 	/**
+		The **`StaticRange()`** constructor creates a new `StaticRange` object representing a span of content within the DOM.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StaticRange/StaticRange>
 	**/
 	function new(init:StaticRangeInit):Void;

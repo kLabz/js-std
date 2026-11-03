@@ -25,34 +25,52 @@
 package js.web.css;
 
 /**
+	The **`CSSTransformValue`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents `transform-list` values as used by the CSS `transform` property. It is an iterable of `CSSTransformComponent` objects, each representing a single `transform-function`.
+	
+	Documentation [CSSTransformValue](https://developer.mozilla.org/docs/Web/API/CSSTransformValue) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSTransformValue/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue>
 **/
 @:native("CSSTransformValue") extern class CSSTransformValue extends CSSStyleValue implements ArrayAccess<CSSTransformComponent> {
 	/**
+		The **`length`** read-only property of the `CSSTransformValue` interface returns the number of items in the object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/length>
 	**/
 	var length(default, null) : Int;
 	/**
+		The **`is2D`** read-only property of the `CSSTransformValue` interface returns whether the transform is 2D or 3D.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/is2D>
 	**/
 	var is2D(default, null) : Bool;
 	/**
+		The **`CSSTransformValue()`** constructor creates a new `CSSTransformValue` object, representing a `transform-list` value made up of the given `CSSTransformComponent` objects.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/CSSTransformValue>
 	**/
 	function new(transforms:Array<CSSTransformComponent>):Void;
 	/**
+		The **`entries()`** method of the `CSSTransformValue` interface returns a new _array iterator_ that yields `[index, value]` pairs for each item in the object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/entries>
 	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<Int, CSSTransformComponent>>;
 	/**
+		The **`forEach()`** method of the `CSSTransformValue` interface executes a provided function once for each item in the object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/forEach>
 	**/
 	function forEach(callback:(value:CSSTransformComponent, key:Int, parent:CSSTransformValue) -> Void, ?thisArg:Any):Void;
 	/**
+		The **`keys()`** method of the `CSSTransformValue` interface returns a new _array iterator_ that yields the index of each item in the object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/keys>
 	**/
 	function keys():js.lib.Iterator<Int>;
 	/**
+		The **`values()`** method of the `CSSTransformValue` interface returns a new _array iterator_ that yields each item in the object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformValue/values>
 	**/
 	function values():js.lib.Iterator<CSSTransformComponent>;

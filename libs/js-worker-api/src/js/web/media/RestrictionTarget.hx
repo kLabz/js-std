@@ -25,7 +25,11 @@
 package js.web.media;
 
 /**
+	The **`RestrictionTarget`** interface of the `Screen Capture API` provides a static method, `fromElement()`, which returns a `RestrictionTarget` instance that can be used to restrict a captured video track to a specified DOM element.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [RestrictionTarget](https://developer.mozilla.org/docs/Web/API/RestrictionTarget) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RestrictionTarget/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/RestrictionTarget>
 **/

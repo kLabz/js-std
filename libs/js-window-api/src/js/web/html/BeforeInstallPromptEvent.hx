@@ -25,16 +25,24 @@
 package js.web.html;
 
 /**
+	The **`BeforeInstallPromptEvent`** is the interface of the `beforeinstallprompt` event fired at the `Window` object before a user is prompted to "install" a website to a home screen on mobile.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [BeforeInstallPromptEvent](https://developer.mozilla.org/docs/Web/API/BeforeInstallPromptEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/BeforeInstallPromptEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/BeforeInstallPromptEvent>
 **/
 @:native("BeforeInstallPromptEvent") @:require(js_experimental_api, "BeforeInstallPromptEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BeforeInstallPromptEvent extends js.web.dom.Event {
 	/**
+		The **`BeforeInstallPromptEvent()`** constructor creates a new `BeforeInstallPromptEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BeforeInstallPromptEvent/BeforeInstallPromptEvent>
 	**/
 	function new(type:String, ?eventInitDict:js.web.dom.EventInit):Void;
 	/**
+		The **`prompt()`** method of the `BeforeInstallPromptEvent` interface allows a developer to show the install prompt at a time of their own choosing. Typically this will be called in the event handler for the app's custom install UI.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BeforeInstallPromptEvent/prompt>
 	**/
 	function prompt():js.lib.Promise<PromptResponseObject>;

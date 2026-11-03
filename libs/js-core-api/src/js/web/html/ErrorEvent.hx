@@ -25,30 +25,46 @@
 package js.web.html;
 
 /**
+	The **`ErrorEvent`** interface represents events providing information related to errors in scripts or in files.
+	
+	Documentation [ErrorEvent](https://developer.mozilla.org/docs/Web/API/ErrorEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ErrorEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent>
 **/
 @:native("ErrorEvent") extern class ErrorEvent extends js.web.dom.Event {
 	/**
+		The **`message`** read-only property of the `ErrorEvent` interface returns a string containing a human-readable error message describing the problem.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent/message>
 	**/
 	var message(default, null) : String;
 	/**
+		The **`filename`** read-only property of the `ErrorEvent` interface returns a string containing the name of the script file in which the error occurred.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent/filename>
 	**/
 	var filename(default, null) : String;
 	/**
+		The **`lineno`** read-only property of the `ErrorEvent` interface returns an integer containing the line number of the script file on which the error occurred.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent/lineno>
 	**/
 	var lineno(default, null) : Int;
 	/**
+		The **`colno`** read-only property of the `ErrorEvent` interface returns an integer containing the column number of the script file on which the error occurred.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent/colno>
 	**/
 	var colno(default, null) : Int;
 	/**
+		The **`error`** read-only property of the `ErrorEvent` interface returns a JavaScript value, such as an `Error` or `DOMException`, representing the error associated with this event.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent/error>
 	**/
 	var error(default, null) : Any;
 	/**
+		The **`ErrorEvent()`** constructor creates a new `ErrorEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ErrorEvent/ErrorEvent>
 	**/
 	function new(type:String, ?eventInitDict:ErrorEventInit):Void;

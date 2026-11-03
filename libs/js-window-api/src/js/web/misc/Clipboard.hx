@@ -25,24 +25,36 @@
 package js.web.misc;
 
 /**
+	The **`Clipboard`** interface of the [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API) provides read and write access to the contents of the system clipboard. This allows a web application to implement cut, copy, and paste features.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [Clipboard](https://developer.mozilla.org/docs/Web/API/Clipboard) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Clipboard/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Clipboard>
 **/
 @:native("Clipboard") extern class Clipboard extends js.web.dom.EventTarget {
 	/**
+		The **`read()`** method of the `Clipboard` interface returns a `Promise` that fulfills with a copy of the clipboard's contents.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Clipboard/read>
 	**/
 	function read(?formats:ClipboardUnsanitizedFormats):js.lib.Promise<ClipboardItems>;
 	/**
+		The **`readText()`** method of the `Clipboard` interface returns a `Promise` which fulfills with a copy of the textual contents of the system clipboard.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Clipboard/readText>
 	**/
 	function readText():js.lib.Promise<String>;
 	/**
+		The **`write()`** method of the `Clipboard` interface is used to write data such as images, text, and custom types, to the system clipboard.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Clipboard/write>
 	**/
 	function write(data:ClipboardItems):js.lib.Promise<Void>;
 	/**
+		The **`writeText()`** method of the `Clipboard` interface writes the specified text to the system clipboard, returning a `Promise` that is resolved once the system clipboard has been updated.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Clipboard/writeText>
 	**/
 	function writeText(data:String):js.lib.Promise<Void>;

@@ -25,18 +25,26 @@
 package js.web.device;
 
 /**
+	The **`HIDConnectionEvent`** interface of the [WebHID API](https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API) represents HID connection events, and is the event type passed to `connect` and `disconnect` event handlers when a device's connection state changes.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [HIDConnectionEvent](https://developer.mozilla.org/docs/Web/API/HIDConnectionEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HIDConnectionEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/HIDConnectionEvent>
 **/
 @:native("HIDConnectionEvent") @:require(js_experimental_api, "HIDConnectionEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class HIDConnectionEvent extends js.web.dom.Event {
 	/**
+		The **`device`** read-only property of the `HIDConnectionEvent` interface returns the `HIDDevice` associated with this connection event.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HIDConnectionEvent/device>
 	**/
 	var device(default, null) : HIDDevice;
 	/**
+		The **`HIDConnectionEvent()`** constructor creates a new `HIDConnectionEvent` object. Typically this constructor is not used as events are created when a device's connection state changes.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HIDConnectionEvent/HIDConnectionEvent>
 	**/
 	function new(type:String, eventInitDict:HIDConnectionEventInit):Void;

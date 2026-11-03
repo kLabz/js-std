@@ -25,28 +25,42 @@
 package js.web.media;
 
 /**
+	The **Media Capture and Streams** API, often called the **Media Streams API** or **MediaStream API**, is an API related to [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) which provides support for streaming audio and video data.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [MediaDeviceInfo](https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo>
 **/
 @:native("MediaDeviceInfo") extern class MediaDeviceInfo {
 	/**
+		The **`deviceId`** read-only property of the `MediaDeviceInfo` interface returns a string that is an identifier for the represented device and is persisted across sessions.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/deviceId>
 	**/
 	var deviceId(default, null) : String;
 	/**
+		The **`kind`** read-only property of the `MediaDeviceInfo` interface returns an enumerated value, that is either `"videoinput"`, `"audioinput"` or `"audiooutput"`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/kind>
 	**/
 	var kind(default, null) : MediaDeviceKind;
 	/**
+		The **`label`** read-only property of the `MediaDeviceInfo` interface returns a string describing this device (for example "External USB Webcam").
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/label>
 	**/
 	var label(default, null) : String;
 	/**
+		The **`groupId`** read-only property of the `MediaDeviceInfo` interface returns a string that is a group identifier.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/groupId>
 	**/
 	var groupId(default, null) : String;
 	/**
+		The **`toJSON()`** method of the `MediaDeviceInfo` interface returns a JSON-serializable plain object representing the `MediaDeviceInfo` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/toJSON>
 	**/
 	function toJSON():{ };

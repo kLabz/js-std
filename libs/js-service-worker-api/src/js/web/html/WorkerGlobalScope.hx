@@ -25,18 +25,28 @@
 package js.web.html;
 
 /**
+	The **`WorkerGlobalScope`** interface of the [Web Workers API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API) is an interface representing the scope of any worker. Workers have no browsing context; this scope contains the information usually conveyed by `Window` objects — in this case event handlers, the console or the associated `WorkerNavigator` object. Each `WorkerGlobalScope` has its own event loop.
+	
+	Documentation [WorkerGlobalScope](https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope>
 **/
 @:native("WorkerGlobalScope") extern class WorkerGlobalScope extends js.web.dom.EventTarget {
 	/**
+		The **`self`** read-only property of the `WorkerGlobalScope` interface returns a reference to the `WorkerGlobalScope` itself. Most of the time it is a specific scope like `DedicatedWorkerGlobalScope`, `SharedWorkerGlobalScope`, or `ServiceWorkerGlobalScope`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope/self>
 	**/
 	var self(default, null) : WorkerGlobalScope;
 	/**
+		The read-only **`location`** property of the `WorkerGlobalScope` interface returns the `WorkerLocation` associated with the worker. It is a specific location object, mostly a subset of the `Location` for browsing scopes, but adapted to workers.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope/location>
 	**/
 	var location(default, null) : WorkerLocation;
 	/**
+		The **`navigator`** read-only property of the `WorkerGlobalScope` interface returns the `WorkerNavigator` associated with the worker. It is a specific navigator object, mostly a subset of the `Navigator` for browsing scopes, but adapted to workers.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope/navigator>
 	**/
 	var navigator(default, null) : WorkerNavigator;
@@ -47,6 +57,8 @@ package js.web.html;
 	var onrejectionhandled : EventHandler;
 	var onunhandledrejection : EventHandler;
 	/**
+		The **`fonts`** property of the `WorkerGlobalScope` interface returns the `FontFaceSet` interface of the worker.
+		
 		From interface mixin FontFaceSource
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope/fonts>
@@ -118,6 +130,8 @@ package js.web.html;
 	**/
 	function fetch(input:js.web.net.RequestInfo, ?init:js.web.net.RequestInit):js.lib.Promise<js.web.net.Response>;
 	/**
+		The **`importScripts()`** method of the `WorkerGlobalScope` interface synchronously imports one or more scripts into the scope of a [classic worker](https://developer.mozilla.org/en-US/docs/Web/API/Worker/Worker#module_and_classic_workers) (a worker constructed from a classic script).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WorkerGlobalScope/importScripts>
 	**/
 	function importScripts(urls:haxe.Rest<haxe.extern.EitherType<js.web.dom.TrustedScriptURL, String>>):Void;

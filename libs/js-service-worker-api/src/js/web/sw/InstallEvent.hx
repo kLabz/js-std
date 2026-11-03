@@ -25,14 +25,22 @@
 package js.web.sw;
 
 /**
+	The parameter passed into an `install` event handler function, the `InstallEvent` interface represents an install action that is dispatched on the `ServiceWorkerGlobalScope` of a `ServiceWorker`. As a child of `ExtendableEvent`, it ensures that functional events such as `FetchEvent` are not dispatched during installation.
+	
+	Documentation [InstallEvent](https://developer.mozilla.org/docs/Web/API/InstallEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/InstallEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/InstallEvent>
 **/
 @:native("InstallEvent") extern class InstallEvent extends ExtendableEvent {
 	/**
+		The **`InstallEvent()`** constructor creates a new `InstallEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/InstallEvent/InstallEvent>
 	**/
 	function new(type:String, ?eventInitDict:ExtendableEventInit):Void;
 	/**
+		The **`addRoutes()`** method of the `InstallEvent` interface specifies one or more static routes, which define rules for fetching specified resources that will be used even before service worker startup. This allows you to, for example, bypass a service worker in cases where you always want to fetch a resource from the network or a browser `Cache`, and avoids the performance overhead of unnecessary service worker cycles.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/InstallEvent/addRoutes>
 	**/
 	function addRoutes(rules:haxe.extern.EitherType<RouterRule, Array<RouterRule>>):js.lib.Promise<Void>;

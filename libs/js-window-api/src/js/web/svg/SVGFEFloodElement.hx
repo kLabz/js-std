@@ -25,34 +25,48 @@
 package js.web.svg;
 
 /**
+	The **`SVGFEFloodElement`** interface corresponds to the `<feFlood>` element.
+	
+	Documentation [SVGFEFloodElement](https://developer.mozilla.org/docs/Web/API/SVGFEFloodElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGFEFloodElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGFEFloodElement>
 **/
 @:native("SVGFEFloodElement") extern class SVGFEFloodElement extends SVGElement {
 	/**
+		The **`x`** read-only property of the `SVGFEFloodElement` interface describes the horizontal coordinate of the position of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEFloodElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
+		The **`y`** read-only property of the `SVGFEFloodElement` interface describes the vertical coordinate of the position of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEFloodElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
+		The **`width`** read-only property of the `SVGFEFloodElement` interface describes the horizontal size of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEFloodElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
+		The **`height`** read-only property of the `SVGFEFloodElement` interface describes the vertical size of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEFloodElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
+		The **`result`** read-only property of the `SVGFEFloodElement` interface describes the assigned name of an SVG filter primitive as a `SVGAnimatedString`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEFloodElement/result>

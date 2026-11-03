@@ -25,10 +25,16 @@
 package js.web.css;
 
 /**
+	An object implementing the **`CSSConditionRule`** interface represents a single condition CSS [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules), which consists of a condition and a statement block.
+	
+	Documentation [CSSConditionRule](https://developer.mozilla.org/docs/Web/API/CSSConditionRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSConditionRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSConditionRule>
 **/
 @:native("CSSConditionRule") extern class CSSConditionRule extends CSSGroupingRule {
 	/**
+		The read-only **`conditionText`** property of the `CSSConditionRule` interface returns or sets the text of the CSS rule.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSConditionRule/conditionText>
 	**/
 	var conditionText(default, null) : String;

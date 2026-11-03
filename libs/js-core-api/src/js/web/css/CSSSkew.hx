@@ -25,18 +25,28 @@
 package js.web.css;
 
 /**
+	The **`CSSSkew`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the `skew()` value of the individual `transform` property in CSS.
+	
+	Documentation [CSSSkew](https://developer.mozilla.org/docs/Web/API/CSSSkew) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSSkew/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSSkew>
 **/
 @:native("CSSSkew") extern class CSSSkew extends CSSTransformComponent {
 	/**
+		The **`ax`** property of the `CSSSkew` interface gets and sets the angle used to distort the element along the x-axis (or abscissa).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSSkew/ax>
 	**/
 	var ax : CSSNumericValue;
 	/**
+		The **`ay`** property of the `CSSSkew` interface gets and sets the angle used to distort the element along the y-axis (or ordinate).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSSkew/ay>
 	**/
 	var ay : CSSNumericValue;
 	/**
+		The **`CSSSkew()`** constructor creates a new `CSSSkew` object which represents the `skew()` value of the individual `transform` property in CSS.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSSkew/CSSSkew>
 	**/
 	function new(ax:CSSNumericValue, ay:CSSNumericValue):Void;

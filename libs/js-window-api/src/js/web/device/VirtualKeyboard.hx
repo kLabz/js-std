@@ -25,27 +25,39 @@
 package js.web.device;
 
 /**
+	The **`VirtualKeyboard`** interface of the [VirtualKeyboard API](https://developer.mozilla.org/en-US/docs/Web/API/VirtualKeyboard_API) is useful on devices that have on-screen virtual keyboards, such as tablets, mobile phones, or other devices where a hardware keyboard may not be available.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [VirtualKeyboard](https://developer.mozilla.org/docs/Web/API/VirtualKeyboard) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/VirtualKeyboard/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/VirtualKeyboard>
 **/
 @:native("VirtualKeyboard") @:require(js_experimental_api, "VirtualKeyboard is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class VirtualKeyboard extends js.web.dom.EventTarget {
 	/**
+		The **`boundingRect`** property of the `VirtualKeyboard` interface contains a `DOMRect` indicating the position and size of the on-screen virtual keyboard that overlays the web page.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VirtualKeyboard/boundingRect>
 	**/
 	var boundingRect(default, null) : js.web.dom.DOMRect;
 	/**
+		The **`overlaysContent`** property of the VirtualKeyboard interface can be used to opt out of the automatic way in which browsers handle on-screen virtual keyboards by reducing the size of the viewport to make space for them.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VirtualKeyboard/overlaysContent>
 	**/
 	var overlaysContent : Bool;
 	var ongeometrychange : js.web.html.EventHandler;
 	/**
+		The **`hide()`** method of the `VirtualKeyboard` interface programmatically hides the on-screen virtual keyboard. This is useful when the page needs to implement its own virtual keyboard logic by using the `VirtualKeyboard API`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VirtualKeyboard/hide>
 	**/
 	function hide():Void;
 	/**
+		The **`show()`** method of the `VirtualKeyboard` interface programmatically shows the on-screen virtual keyboard. This is useful when the page needs to implement its own virtual keyboard logic, especially when using the `virtualkeyboardpolicy` attribute on `contenteditable` elements as explained in [Control the virtual keyboard on `contenteditable` elements](https://developer.mozilla.org/en-US/docs/Web/API/VirtualKeyboard_API#control_the_virtual_keyboard_on_contenteditable_elements).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VirtualKeyboard/show>
 	**/
 	function show():Void;

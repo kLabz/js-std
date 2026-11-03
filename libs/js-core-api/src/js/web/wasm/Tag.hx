@@ -25,6 +25,10 @@
 package js.web.wasm;
 
 /**
+	The **`WebAssembly.Tag`** object represents a WebAssembly exception _type_ that can be thrown in a Wasm module.
+	
+	Documentation [WebAssembly.Tag](https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Tag) by [Mozilla Contributors](https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Tag/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Tag>
 **/
 @:native("WebAssembly.Tag") extern class Tag {

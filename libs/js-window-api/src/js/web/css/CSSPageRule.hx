@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	**`CSSPageRule`** represents a single CSS `@page` rule.
+	
+	Documentation [CSSPageRule](https://developer.mozilla.org/docs/Web/API/CSSPageRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSPageRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSPageRule>
 **/
 @:native("CSSPageRule") extern class CSSPageRule extends CSSGroupingRule {
 	/**
+		The **`selectorText`** property of the `CSSPageRule` interface gets and sets the selectors associated with the `CSSPageRule`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSPageRule/selectorText>
 	**/
 	var selectorText : String;
 	/**
+		The read-only **`style`** property of the `CSSPageRule` interface contains a `CSSPageDescriptors` object representing the descriptors available in the `@page` rule's body.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSPageRule/style>
 	**/
 	var style(default, null) : CSSPageDescriptors;

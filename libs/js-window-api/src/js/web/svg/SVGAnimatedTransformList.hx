@@ -25,14 +25,22 @@
 package js.web.svg;
 
 /**
+	The **`SVGAnimatedTransformList`** interface represents attributes which take a list of numbers and which can be animated.
+	
+	Documentation [SVGAnimatedTransformList](https://developer.mozilla.org/docs/Web/API/SVGAnimatedTransformList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGAnimatedTransformList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedTransformList>
 **/
 @:native("SVGAnimatedTransformList") extern class SVGAnimatedTransformList {
 	/**
+		The **`baseVal`** read-only property of the `SVGAnimatedTransformList` interface represents the non-animated value of the `transform` attribute of an SVG element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedTransformList/baseVal>
 	**/
 	var baseVal(default, null) : SVGTransformList;
 	/**
+		The **`animVal`** read-only property of the `SVGAnimatedTransformList` interface represents the animated value of the `transform` attribute of an SVG element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedTransformList/animVal>
 	**/
 	var animVal(default, null) : SVGTransformList;

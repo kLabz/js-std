@@ -25,16 +25,24 @@
 package js.web.device;
 
 /**
+	The **`DelegatedInkTrailPresenter`** interface of the [Ink API](https://developer.mozilla.org/en-US/docs/Web/API/Ink_API) provides the ability to instruct the OS-level compositor to render ink strokes between pointer event dispatches.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [DelegatedInkTrailPresenter](https://developer.mozilla.org/docs/Web/API/DelegatedInkTrailPresenter) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DelegatedInkTrailPresenter/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/DelegatedInkTrailPresenter>
 **/
 @:native("DelegatedInkTrailPresenter") @:require(js_experimental_api, "DelegatedInkTrailPresenter is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class DelegatedInkTrailPresenter {
 	/**
+		The **`presentationArea`** read-only property of the `DelegatedInkTrailPresenter` interface returns the `Element` inside which rendering of ink strokes is confined.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DelegatedInkTrailPresenter/presentationArea>
 	**/
 	var presentationArea(default, null) : Null<js.web.dom.Element>;
 	/**
+		The **`updateInkTrailStartPoint()`** method of the `DelegatedInkTrailPresenter` interface indicates which `PointerEvent` was used as the last rendering point for the current frame, allowing the OS-level compositor to render a delegated ink trail ahead of the next pointer event being dispatched.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DelegatedInkTrailPresenter/updateInkTrailStartPoint>
 	**/
 	function updateInkTrailStartPoint(event:js.web.dom.PointerEvent, style:InkTrailStyle):Void;

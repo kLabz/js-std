@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The `EXT_texture_compression_bptc` extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and exposes 4 BPTC compressed texture formats. These compression formats are called [BC7](https://learn.microsoft.com/en-us/windows/win32/direct3d11/bc7-format) and [BC6H](https://learn.microsoft.com/en-us/windows/win32/direct3d11/bc6h-format) in [Microsoft's DirectX API](https://learn.microsoft.com/en-us/windows/win32/direct3d11/texture-block-compression-in-direct3d-11).
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [EXT_texture_compression_bptc](https://developer.mozilla.org/docs/Web/API/EXT_texture_compression_bptc) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/EXT_texture_compression_bptc/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/EXT_texture_compression_bptc>
 **/

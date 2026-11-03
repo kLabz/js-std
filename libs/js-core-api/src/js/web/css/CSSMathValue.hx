@@ -25,10 +25,16 @@
 package js.web.css;
 
 /**
+	The **`CSSMathValue`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) is the base interface for objects representing complex numeric values produced by the CSS `calc()`, `min()`, `max()`, and `clamp()` functions.
+	
+	Documentation [CSSMathValue](https://developer.mozilla.org/docs/Web/API/CSSMathValue) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSMathValue/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSMathValue>
 **/
 @:native("CSSMathValue") extern class CSSMathValue extends CSSNumericValue {
 	/**
+		The **`operator`** read-only property of the `CSSMathValue` interface returns the operator that the current subtype represents. For example, if the current `CSSMathValue` subtype is `CSSMathSum`, this property will return the string `"sum"`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathValue/operator>
 	**/
 	@:native("operator")

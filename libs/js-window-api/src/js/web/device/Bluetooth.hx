@@ -25,9 +25,13 @@
 package js.web.device;
 
 /**
+	The **`Bluetooth`** interface of the [Web Bluetooth API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API) provides methods to query Bluetooth availability and request access to devices.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [Bluetooth](https://developer.mozilla.org/docs/Web/API/Bluetooth) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Bluetooth/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Bluetooth>
 **/
@@ -59,14 +63,20 @@ package js.web.device;
 	**/
 	var onserviceremoved : js.web.html.EventHandler;
 	/**
+		The **`getAvailability()`** method of the `Bluetooth` interface _nominally_ returns `true` if the user agent can support Bluetooth (because the device has a Bluetooth adapter), and `false` otherwise.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Bluetooth/getAvailability>
 	**/
 	function getAvailability():js.lib.Promise<Bool>;
 	/**
+		The **`getDevices()`** method of the `Bluetooth` interface returns an array containing the Bluetooth devices that this origin is allowed to access — including those that are out of range and powered off.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Bluetooth/getDevices>
 	**/
 	function getDevices():js.lib.Promise<Array<BluetoothDevice>>;
 	/**
+		The **`Bluetooth.requestDevice()`** method of the `Bluetooth` interface returns a `Promise` that fulfills with a `BluetoothDevice` object matching the specified options. If there is no chooser UI, this method returns the first device matching the criteria.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Bluetooth/requestDevice>
 	**/
 	function requestDevice(?options:RequestDeviceOptions):js.lib.Promise<BluetoothDevice>;

@@ -25,6 +25,10 @@
 package js.web.webgl;
 
 /**
+	**WebGL** (Web Graphics Library) is a JavaScript API for rendering high-performance interactive 3D and 2D graphics within any compatible web browser without the use of plug-ins. WebGL does so by introducing an API that closely conforms to OpenGL ES 2.0 that can be used in HTML `<canvas>` elements. This conformance makes it possible for the API to take advantage of hardware graphics acceleration provided by the user's device.
+	
+	Documentation [WebGLRenderingContext](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext>
 **/
 @:native("WebGLRenderingContext") extern class WebGLRenderingContext {
@@ -1217,18 +1221,24 @@ package js.web.webgl;
 	**/
 	static inline var BROWSER_DEFAULT_WEBGL : GLenum = 0x9244;
 	/**
+		The **`WebGLRenderingContext.canvas`** property is a read-only reference to the `HTMLCanvasElement` or `OffscreenCanvas` object that is associated with the context. It might be [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null) if it is not associated with a `<canvas>` element or an `OffscreenCanvas` object.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/canvas>
 	**/
 	var canvas(default, null) : js.web.canvas.OffscreenCanvas;
 	/**
+		The read-only **`WebGLRenderingContext.drawingBufferWidth`** property represents the actual width of the current drawing buffer. It should match the `width` attribute of the `<canvas>` element associated with this context, but might differ if the implementation is not able to provide the requested width.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawingBufferWidth>
 	**/
 	var drawingBufferWidth(default, null) : GLsizei;
 	/**
+		The read-only **`WebGLRenderingContext.drawingBufferHeight`** property represents the actual height of the current drawing buffer. It should match the `height` attribute of the `<canvas>` element associated with this context, but might differ if the implementation is not able to provide the requested height.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawingBufferHeight>
@@ -1240,294 +1250,392 @@ package js.web.webgl;
 	@:require(js_experimental_api, "WebGLRenderingContext.drawingBufferFormat is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var drawingBufferFormat(default, null) : GLenum;
 	/**
+		The **`WebGLRenderingContext.drawingBufferColorSpace`** property specifies the color space of the WebGL drawing buffer. Along with the default (`srgb`), the `display-p3` color space can be used.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawingBufferColorSpace>
 	**/
 	var drawingBufferColorSpace : js.web.canvas.PredefinedColorSpace;
 	/**
+		The **`WebGLRenderingContext.unpackColorSpace`** property specifies the color space to convert to when importing textures. Along with the default (`srgb`), the `display-p3` color space can be used.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/unpackColorSpace>
 	**/
 	var unpackColorSpace : js.web.canvas.PredefinedColorSpace;
 	/**
+		The **`WebGLRenderingContext.activeTexture()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies which texture unit to make active.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/activeTexture>
 	**/
 	function activeTexture(texture:GLenum):Void;
 	/**
+		The **WebGLRenderingContext.attachShader()** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) attaches either a fragment or vertex `WebGLShader` to a `WebGLProgram`.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/attachShader>
 	**/
 	function attachShader(program:WebGLProgram, shader:WebGLShader):Void;
 	/**
+		The **`WebGLRenderingContext.bindAttribLocation()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) binds a generic vertex index to an attribute variable.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindAttribLocation>
 	**/
 	function bindAttribLocation(program:WebGLProgram, index:GLuint, name:String):Void;
 	/**
+		The **`WebGLRenderingContext.bindBuffer()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) binds a given `WebGLBuffer` to a target.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindBuffer>
 	**/
 	function bindBuffer(target:GLenum, buffer:Null<WebGLBuffer>):Void;
 	/**
+		The **`WebGLRenderingContext.bindFramebuffer()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) binds to the specified target the provided `WebGLFramebuffer`, or, if the `framebuffer` argument is null, the default `WebGLFramebuffer`, which is associated with the canvas rendering context.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindFramebuffer>
 	**/
 	function bindFramebuffer(target:GLenum, framebuffer:Null<WebGLFramebuffer>):Void;
 	/**
+		The **`WebGLRenderingContext.bindRenderbuffer()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) binds a given `WebGLRenderbuffer` to a target, which must be `gl.RENDERBUFFER`.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindRenderbuffer>
 	**/
 	function bindRenderbuffer(target:GLenum, renderbuffer:Null<WebGLRenderbuffer>):Void;
 	/**
+		The **`WebGLRenderingContext.bindTexture()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) binds a given `WebGLTexture` to a target (binding point).
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindTexture>
 	**/
 	function bindTexture(target:GLenum, texture:Null<WebGLTexture>):Void;
 	/**
+		The **`WebGLRenderingContext.blendColor()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) is used to set the source and destination blending factors.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendColor>
 	**/
 	function blendColor(red:GLclampf, green:GLclampf, blue:GLclampf, alpha:GLclampf):Void;
 	/**
+		The **`WebGLRenderingContext.blendEquation()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) is used to set both the RGB blend equation and alpha blend equation to a single equation.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendEquation>
 	**/
 	function blendEquation(mode:GLenum):Void;
 	/**
+		The **`WebGLRenderingContext.blendEquationSeparate()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) is used to set the RGB blend equation and alpha blend equation separately.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendEquationSeparate>
 	**/
 	function blendEquationSeparate(modeRGB:GLenum, modeAlpha:GLenum):Void;
 	/**
+		The **`WebGLRenderingContext.blendFunc()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) defines which function is used for blending pixel arithmetic.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendFunc>
 	**/
 	function blendFunc(sfactor:GLenum, dfactor:GLenum):Void;
 	/**
+		The **`WebGLRenderingContext.blendFuncSeparate()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) defines which function is used for blending pixel arithmetic for RGB and alpha components separately.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendFuncSeparate>
 	**/
 	function blendFuncSeparate(srcRGB:GLenum, dstRGB:GLenum, srcAlpha:GLenum, dstAlpha:GLenum):Void;
 	/**
+		The **`WebGLRenderingContext.bufferData()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) initializes and creates the buffer object's data store.
+		
 		From interface mixin WebGLRenderingContextOverloads
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bufferData>
 	**/
 	overload function bufferData(target:GLenum, size:GLsizeiptr, usage:GLenum):Void;
 	/**
+		The **`WebGLRenderingContext.bufferData()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) initializes and creates the buffer object's data store.
+		
 		From interface mixin WebGLRenderingContextOverloads
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bufferData>
 	**/
 	overload function bufferData(target:GLenum, data:Null<js.web.dom.AllowSharedBufferSource>, usage:GLenum):Void;
 	/**
+		The **`WebGLRenderingContext.bufferSubData()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) updates a subset of a buffer object's data store.
+		
 		From interface mixin WebGLRenderingContextOverloads
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bufferSubData>
 	**/
 	function bufferSubData(target:GLenum, offset:GLintptr, data:js.web.dom.AllowSharedBufferSource):Void;
 	/**
+		The **`WebGLRenderingContext.checkFramebufferStatus()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns the completeness status of the `WebGLFramebuffer` object.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/checkFramebufferStatus>
 	**/
 	function checkFramebufferStatus(target:GLenum):GLenum;
 	/**
+		The **`WebGLRenderingContext.clear()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) clears buffers to preset values.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clear>
 	**/
 	function clear(mask:GLbitfield):Void;
 	/**
+		The **`WebGLRenderingContext.clearColor()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies the color values used when clearing color buffers.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clearColor>
 	**/
 	function clearColor(red:GLclampf, green:GLclampf, blue:GLclampf, alpha:GLclampf):Void;
 	/**
+		The **`WebGLRenderingContext.clearDepth()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies the clear value for the depth buffer.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clearDepth>
 	**/
 	function clearDepth(depth:GLclampf):Void;
 	/**
+		The **`WebGLRenderingContext.clearStencil()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies the clear value for the stencil buffer.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clearStencil>
 	**/
 	function clearStencil(s:GLint):Void;
 	/**
+		The **`WebGLRenderingContext.colorMask()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) sets which color components to enable or to disable when drawing or rendering to a `WebGLFramebuffer`.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/colorMask>
 	**/
 	function colorMask(red:GLboolean, green:GLboolean, blue:GLboolean, alpha:GLboolean):Void;
 	/**
+		The **WebGLRenderingContext.compileShader()** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) compiles a GLSL shader into binary data so that it can be used by a `WebGLProgram`.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/compileShader>
 	**/
 	function compileShader(shader:WebGLShader):Void;
 	/**
+		The **`compressedTexImage2D()`** method of the `WebGLRenderingContext` interface of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies a two-dimensional texture image in a compressed format.
+		
 		From interface mixin WebGLRenderingContextOverloads
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/compressedTexImage2D>
 	**/
 	function compressedTexImage2D(target:GLenum, level:GLint, internalformat:GLenum, width:GLsizei, height:GLsizei, border:GLint, data:js.lib.ArrayBufferView):Void;
 	/**
+		The **`compressedTexSubImage2D()`** method of the `WebGLRenderingContext` interface of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies a two-dimensional sub-rectangle for a texture image in a compressed format.
+		
 		From interface mixin WebGLRenderingContextOverloads
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/compressedTexSubImage2D>
 	**/
 	function compressedTexSubImage2D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, width:GLsizei, height:GLsizei, format:GLenum, data:js.lib.ArrayBufferView):Void;
 	/**
+		The **`copyTexImage2D()`** method of the `WebGLRenderingContext` interface of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) copies pixels from the current `WebGLFramebuffer` into a 2D texture image.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/copyTexImage2D>
 	**/
 	function copyTexImage2D(target:GLenum, level:GLint, internalformat:GLenum, x:GLint, y:GLint, width:GLsizei, height:GLsizei, border:GLint):Void;
 	/**
+		The **`copyTexSubImage2D()`** method of the `WebGLRenderingContext` interface of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) copies pixels from the current `WebGLFramebuffer` into a 2D texture sub-image.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/copyTexSubImage2D>
 	**/
 	function copyTexSubImage2D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, x:GLint, y:GLint, width:GLsizei, height:GLsizei):Void;
 	/**
+		The **`WebGLRenderingContext.createBuffer()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) creates and initializes a `WebGLBuffer` storing data such as vertices or colors.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createBuffer>
 	**/
 	function createBuffer():WebGLBuffer;
 	/**
+		The **`WebGLRenderingContext.createFramebuffer()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) creates and initializes a `WebGLFramebuffer` object.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createFramebuffer>
 	**/
 	function createFramebuffer():WebGLFramebuffer;
 	/**
+		The **`WebGLRenderingContext.createProgram()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) creates and initializes a `WebGLProgram` object.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createProgram>
 	**/
 	function createProgram():WebGLProgram;
 	/**
+		The **`WebGLRenderingContext.createRenderbuffer()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) creates and initializes a `WebGLRenderbuffer` object.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createRenderbuffer>
 	**/
 	function createRenderbuffer():WebGLRenderbuffer;
 	/**
+		The `WebGLRenderingContext` method **`createShader()`** of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) creates a `WebGLShader` that can then be configured further using `WebGLRenderingContext.shaderSource()` and `WebGLRenderingContext.compileShader()`.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createShader>
 	**/
 	function createShader(type:GLenum):Null<WebGLShader>;
 	/**
+		The **`WebGLRenderingContext.createTexture()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) creates and initializes a `WebGLTexture` object.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createTexture>
 	**/
 	function createTexture():WebGLTexture;
 	/**
+		The **`WebGLRenderingContext.cullFace()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies whether or not front- and/or back-facing polygons can be culled.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/cullFace>
 	**/
 	function cullFace(mode:GLenum):Void;
 	/**
+		The **`WebGLRenderingContext.deleteBuffer()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) deletes a given `WebGLBuffer`. This method has no effect if the buffer has already been deleted. Normally you don't need to call this method yourself, when the buffer object is dereferenced it will be marked as free.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteBuffer>
 	**/
 	function deleteBuffer(buffer:Null<WebGLBuffer>):Void;
 	/**
+		The **`WebGLRenderingContext.deleteFramebuffer()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) deletes a given `WebGLFramebuffer` object. This method has no effect if the frame buffer has already been deleted.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteFramebuffer>
 	**/
 	function deleteFramebuffer(framebuffer:Null<WebGLFramebuffer>):Void;
 	/**
+		The **`WebGLRenderingContext.deleteProgram()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) deletes a given `WebGLProgram` object. This method has no effect if the program has already been deleted.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteProgram>
 	**/
 	function deleteProgram(program:Null<WebGLProgram>):Void;
 	/**
+		The **`WebGLRenderingContext.deleteRenderbuffer()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) deletes a given `WebGLRenderbuffer` object. This method has no effect if the render buffer has already been deleted.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteRenderbuffer>
 	**/
 	function deleteRenderbuffer(renderbuffer:Null<WebGLRenderbuffer>):Void;
 	/**
+		The **`WebGLRenderingContext.deleteShader()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) marks a given `WebGLShader` object for deletion. It will then be deleted whenever the shader is no longer in use. This method has no effect if the shader has already been deleted, and the `WebGLShader` is automatically marked for deletion when it is destroyed by the garbage collector.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteShader>
 	**/
 	function deleteShader(shader:Null<WebGLShader>):Void;
 	/**
+		The **`WebGLRenderingContext.deleteTexture()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) deletes a given `WebGLTexture` object. This method has no effect if the texture has already been deleted.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteTexture>
 	**/
 	function deleteTexture(texture:Null<WebGLTexture>):Void;
 	/**
+		The **`WebGLRenderingContext.depthFunc()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies a function that compares incoming pixel depth to the current depth buffer value.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/depthFunc>
 	**/
 	function depthFunc(func:GLenum):Void;
 	/**
+		The **`WebGLRenderingContext.depthMask()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) sets whether writing into the depth buffer is enabled or disabled.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/depthMask>
 	**/
 	function depthMask(flag:GLboolean):Void;
 	/**
+		The **`WebGLRenderingContext.depthRange()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies the depth range mapping from normalized device coordinates to window or viewport coordinates.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/depthRange>
 	**/
 	function depthRange(zNear:GLclampf, zFar:GLclampf):Void;
 	/**
+		The **`WebGLRenderingContext.detachShader()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) detaches a previously attached `WebGLShader` from a `WebGLProgram`.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/detachShader>
 	**/
 	function detachShader(program:WebGLProgram, shader:WebGLShader):Void;
 	/**
+		The **`WebGLRenderingContext.disable()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) disables specific WebGL capabilities for this context.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/disable>
 	**/
 	function disable(cap:GLenum):Void;
 	/**
+		The **`WebGLRenderingContext.disableVertexAttribArray()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) turns the generic vertex attribute array off at a given index position.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/disableVertexAttribArray>
 	**/
 	function disableVertexAttribArray(index:GLuint):Void;
 	/**
+		The **`WebGLRenderingContext.drawArrays()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) renders primitives from array data.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawArrays>
 	**/
 	function drawArrays(mode:GLenum, first:GLint, count:GLsizei):Void;
 	/**
+		The **`WebGLRenderingContext.drawElements()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) renders primitives from array data.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawElements>
@@ -1539,258 +1647,344 @@ package js.web.webgl;
 	@:require(js_experimental_api, "WebGLRenderingContext.drawingBufferStorage is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function drawingBufferStorage(sizedFormat:GLenum, width:Int, height:Int):Void;
 	/**
+		The **`WebGLRenderingContext.enable()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) enables specific WebGL capabilities for this context.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/enable>
 	**/
 	function enable(cap:GLenum):Void;
 	/**
+		The `WebGLRenderingContext` method **`enableVertexAttribArray()`**, part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API), turns on the generic vertex attribute array at the specified index into the list of attribute arrays.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/enableVertexAttribArray>
 	**/
 	function enableVertexAttribArray(index:GLuint):Void;
 	/**
+		The **`WebGLRenderingContext.finish()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) blocks execution until all previously called commands are finished.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/finish>
 	**/
 	function finish():Void;
 	/**
+		The **`WebGLRenderingContext.flush()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) empties different buffer commands, causing all commands to be executed as quickly as possible.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/flush>
 	**/
 	function flush():Void;
 	/**
+		The **`WebGLRenderingContext.framebufferRenderbuffer()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) attaches a `WebGLRenderbuffer` object to a `WebGLFramebuffer` object.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/framebufferRenderbuffer>
 	**/
 	function framebufferRenderbuffer(target:GLenum, attachment:GLenum, renderbuffertarget:GLenum, renderbuffer:Null<WebGLRenderbuffer>):Void;
 	/**
+		The **`WebGLRenderingContext.framebufferTexture2D()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) attaches a texture to a `WebGLFramebuffer`.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/framebufferTexture2D>
 	**/
 	function framebufferTexture2D(target:GLenum, attachment:GLenum, textarget:GLenum, texture:Null<WebGLTexture>, level:GLint):Void;
 	/**
+		The **`WebGLRenderingContext.frontFace()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies whether polygons are front- or back-facing by setting a winding orientation.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/frontFace>
 	**/
 	function frontFace(mode:GLenum):Void;
 	/**
+		The **`WebGLRenderingContext.generateMipmap()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) generates a set of mipmaps for a `WebGLTexture` object.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/generateMipmap>
 	**/
 	function generateMipmap(target:GLenum):Void;
 	/**
+		The **`WebGLRenderingContext.getActiveAttrib()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns a `WebGLActiveInfo` object containing size, type, and name of a vertex attribute. It is generally used when querying unknown attributes either for debugging or generic library creation.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getActiveAttrib>
 	**/
 	function getActiveAttrib(program:WebGLProgram, index:GLuint):Null<WebGLActiveInfo>;
 	/**
+		The **`WebGLRenderingContext.getActiveUniform()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns a `WebGLActiveInfo` object containing size, type, and name of a uniform attribute. It is generally used when querying unknown uniforms either for debugging or generic library creation.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getActiveUniform>
 	**/
 	function getActiveUniform(program:WebGLProgram, index:GLuint):Null<WebGLActiveInfo>;
 	/**
+		The **`WebGLRenderingContext.getAttachedShaders()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns a list of `WebGLShader` objects attached to a `WebGLProgram`.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getAttachedShaders>
 	**/
 	function getAttachedShaders(program:WebGLProgram):Null<Array<WebGLShader>>;
 	/**
+		The **`WebGLRenderingContext.getAttribLocation()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns the location of an attribute variable in a given `WebGLProgram`.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getAttribLocation>
 	**/
 	function getAttribLocation(program:WebGLProgram, name:String):GLint;
 	/**
+		The **`WebGLRenderingContext.getBufferParameter()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns information about the buffer.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getBufferParameter>
 	**/
 	function getBufferParameter(target:GLenum, pname:GLenum):Any;
 	/**
+		The **`WebGLRenderingContext.getContextAttributes()`** method returns a `WebGLContextAttributes` object that contains the actual context parameters. Might return [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null), if the context is lost.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getContextAttributes>
 	**/
 	function getContextAttributes():Null<WebGLContextAttributes>;
 	/**
+		The **`WebGLRenderingContext.getError()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns error information.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getError>
 	**/
 	function getError():GLenum;
 	/**
+		The **`WebGLRenderingContext.getExtension()`** method enables a [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) extension.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getExtension>
 	**/
 	function getExtension(name:String):Null<{ }>;
 	/**
+		The **`WebGLRenderingContext.getFramebufferAttachmentParameter()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns information about a framebuffer's attachment.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getFramebufferAttachmentParameter>
 	**/
 	function getFramebufferAttachmentParameter(target:GLenum, attachment:GLenum, pname:GLenum):Any;
 	/**
+		The **`WebGLRenderingContext.getParameter()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns a value for the passed parameter name.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getParameter>
 	**/
 	function getParameter(pname:GLenum):Any;
 	/**
+		The **WebGLRenderingContext.getProgramInfoLog** returns the information log for the specified `WebGLProgram` object. It contains errors that occurred during failed linking or validation of `WebGLProgram` objects.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getProgramInfoLog>
 	**/
 	function getProgramInfoLog(program:WebGLProgram):Null<String>;
 	/**
+		The **`WebGLRenderingContext.getProgramParameter()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns information about the given program.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getProgramParameter>
 	**/
 	function getProgramParameter(program:WebGLProgram, pname:GLenum):Any;
 	/**
+		The **`WebGLRenderingContext.getRenderbufferParameter()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns information about the renderbuffer.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getRenderbufferParameter>
 	**/
 	function getRenderbufferParameter(target:GLenum, pname:GLenum):Any;
 	/**
+		The **WebGLRenderingContext.getShaderInfoLog** returns the information log for the specified `WebGLShader` object. It contains warnings, debugging and compile information.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderInfoLog>
 	**/
 	function getShaderInfoLog(shader:WebGLShader):Null<String>;
 	/**
+		The **`WebGLRenderingContext.getShaderParameter()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns information about the given shader.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderParameter>
 	**/
 	function getShaderParameter(shader:WebGLShader, pname:GLenum):Any;
 	/**
+		The **`WebGLRenderingContext.getShaderPrecisionFormat()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns a new `WebGLShaderPrecisionFormat` object describing the range and precision for the specified shader numeric format.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderPrecisionFormat>
 	**/
 	function getShaderPrecisionFormat(shadertype:GLenum, precisiontype:GLenum):Null<WebGLShaderPrecisionFormat>;
 	/**
+		The **`WebGLRenderingContext.getShaderSource()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns the source code of a `WebGLShader` as a string.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderSource>
 	**/
 	function getShaderSource(shader:WebGLShader):Null<String>;
 	/**
+		The **`WebGLRenderingContext.getSupportedExtensions()`** method returns a list of all the supported [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) extensions.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getSupportedExtensions>
 	**/
 	function getSupportedExtensions():Null<Array<String>>;
 	/**
+		The **`WebGLRenderingContext.getTexParameter()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns information about the given texture.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getTexParameter>
 	**/
 	function getTexParameter(target:GLenum, pname:GLenum):Any;
 	/**
+		The **`WebGLRenderingContext.getUniform()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns the value of a uniform variable at a given location.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getUniform>
 	**/
 	function getUniform(program:WebGLProgram, location:WebGLUniformLocation):Any;
 	/**
+		Part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API), the `WebGLRenderingContext` method **`getUniformLocation()`** returns the location of a specific **uniform** variable which is part of a given `WebGLProgram`.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getUniformLocation>
 	**/
 	function getUniformLocation(program:WebGLProgram, name:String):Null<WebGLUniformLocation>;
 	/**
+		The **`WebGLRenderingContext.getVertexAttrib()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns information about a vertex attribute at a given position.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getVertexAttrib>
 	**/
 	function getVertexAttrib(index:GLuint, pname:GLenum):Any;
 	/**
+		The **`WebGLRenderingContext.getVertexAttribOffset()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns the address of a specified vertex attribute.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getVertexAttribOffset>
 	**/
 	function getVertexAttribOffset(index:GLuint, pname:GLenum):GLintptr;
 	/**
+		The **`WebGLRenderingContext.hint()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies hints for certain behaviors. The interpretation of these hints depend on the implementation.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/hint>
 	**/
 	function hint(target:GLenum, mode:GLenum):Void;
 	/**
+		The **`WebGLRenderingContext.isBuffer()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns `true` if the passed `WebGLBuffer` is valid and `false` otherwise.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isBuffer>
 	**/
 	function isBuffer(buffer:Null<WebGLBuffer>):GLboolean;
 	/**
+		The **`WebGLRenderingContext.isContextLost()`** method returns a boolean value indicating whether or not the WebGL context has been lost and must be re-established before rendering can resume.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isContextLost>
 	**/
 	function isContextLost():Bool;
 	/**
+		The **`WebGLRenderingContext.isEnabled()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) tests whether a specific WebGL capability is enabled or not for this context.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isEnabled>
 	**/
 	function isEnabled(cap:GLenum):GLboolean;
 	/**
+		The **`WebGLRenderingContext.isFramebuffer()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns `true` if the passed `WebGLFramebuffer` is valid and `false` otherwise.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isFramebuffer>
 	**/
 	function isFramebuffer(framebuffer:Null<WebGLFramebuffer>):GLboolean;
 	/**
+		The **`WebGLRenderingContext.isProgram()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns `true` if the passed `WebGLProgram` is valid, `false` otherwise.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isProgram>
 	**/
 	function isProgram(program:Null<WebGLProgram>):GLboolean;
 	/**
+		The **`WebGLRenderingContext.isRenderbuffer()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns `true` if the passed `WebGLRenderbuffer` is valid and `false` otherwise.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isRenderbuffer>
 	**/
 	function isRenderbuffer(renderbuffer:Null<WebGLRenderbuffer>):GLboolean;
 	/**
+		The **`WebGLRenderingContext.isShader()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns `true` if the passed `WebGLShader` is valid, `false` otherwise.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isShader>
 	**/
 	function isShader(shader:Null<WebGLShader>):GLboolean;
 	/**
+		The **`WebGLRenderingContext.isTexture()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns `true` if the passed `WebGLTexture` is valid and `false` otherwise.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isTexture>
 	**/
 	function isTexture(texture:Null<WebGLTexture>):GLboolean;
 	/**
+		The **`WebGLRenderingContext.lineWidth()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) sets the line width of rasterized lines.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/lineWidth>
 	**/
 	function lineWidth(width:GLfloat):Void;
 	/**
+		The `WebGLRenderingContext` interface's **`linkProgram()`** method links a given `WebGLProgram`, completing the process of preparing the GPU code for the program's fragment and vertex shaders.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/linkProgram>
 	**/
 	function linkProgram(program:WebGLProgram):Void;
 	/**
+		The `WebGLRenderingContext` method **`makeXRCompatible()`** ensures that the rendering context described by the `WebGLRenderingContext` is ready to render the scene for the immersive [WebXR](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) device on which it will be displayed. If necessary, the [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) layer may reconfigure the context to be ready to render to a different device than it originally was.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/makeXRCompatible>
@@ -1798,120 +1992,160 @@ package js.web.webgl;
 	@:require(js_experimental_api, "WebGLRenderingContext.makeXRCompatible is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function makeXRCompatible():js.lib.Promise<Void>;
 	/**
+		The **`WebGLRenderingContext.pixelStorei()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies the pixel storage modes.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/pixelStorei>
 	**/
 	function pixelStorei(pname:GLenum, param:GLint):Void;
 	/**
+		The **`WebGLRenderingContext.polygonOffset()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies the scale factors and units to calculate depth values.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/polygonOffset>
 	**/
 	function polygonOffset(factor:GLfloat, units:GLfloat):Void;
 	/**
+		The **`WebGLRenderingContext.readPixels()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) reads a block of pixels from a specified rectangle of the current color framebuffer into a `TypedArray` or a `DataView` object.
+		
 		From interface mixin WebGLRenderingContextOverloads
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/readPixels>
 	**/
 	function readPixels(x:GLint, y:GLint, width:GLsizei, height:GLsizei, format:GLenum, type:GLenum, pixels:Null<js.lib.ArrayBufferView>):Void;
 	/**
+		The **`WebGLRenderingContext.renderbufferStorage()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) creates and initializes a renderbuffer object's data store.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/renderbufferStorage>
 	**/
 	function renderbufferStorage(target:GLenum, internalformat:GLenum, width:GLsizei, height:GLsizei):Void;
 	/**
+		The **`WebGLRenderingContext.sampleCoverage()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies multi-sample coverage parameters for anti-aliasing effects.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/sampleCoverage>
 	**/
 	function sampleCoverage(value:GLclampf, invert:GLboolean):Void;
 	/**
+		The **`WebGLRenderingContext.scissor()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) sets a scissor box, which limits the drawing to a specified rectangle.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/scissor>
 	**/
 	function scissor(x:GLint, y:GLint, width:GLsizei, height:GLsizei):Void;
 	/**
+		The **`WebGLRenderingContext.shaderSource()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) sets the source code of a `WebGLShader`.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/shaderSource>
 	**/
 	function shaderSource(shader:WebGLShader, source:String):Void;
 	/**
+		The **`WebGLRenderingContext.stencilFunc()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) sets the front and back function and reference value for stencil testing.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilFunc>
 	**/
 	function stencilFunc(func:GLenum, ref:GLint, mask:GLuint):Void;
 	/**
+		The **`WebGLRenderingContext.stencilFuncSeparate()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) sets the front and/or back function and reference value for stencil testing.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilFuncSeparate>
 	**/
 	function stencilFuncSeparate(face:GLenum, func:GLenum, ref:GLint, mask:GLuint):Void;
 	/**
+		The **`WebGLRenderingContext.stencilMask()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) controls enabling and disabling of both the front and back writing of individual bits in the stencil planes.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilMask>
 	**/
 	function stencilMask(mask:GLuint):Void;
 	/**
+		The **`WebGLRenderingContext.stencilMaskSeparate()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) controls enabling and disabling of front and/or back writing of individual bits in the stencil planes.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilMaskSeparate>
 	**/
 	function stencilMaskSeparate(face:GLenum, mask:GLuint):Void;
 	/**
+		The **`WebGLRenderingContext.stencilOp()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) sets both the front and back-facing stencil test actions.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilOp>
 	**/
 	function stencilOp(fail:GLenum, zfail:GLenum, zpass:GLenum):Void;
 	/**
+		The **`WebGLRenderingContext.stencilOpSeparate()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) sets the front and/or back-facing stencil test actions.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilOpSeparate>
 	**/
 	function stencilOpSeparate(face:GLenum, fail:GLenum, zfail:GLenum, zpass:GLenum):Void;
 	/**
+		The **`texImage2D()`** method of the `WebGLRenderingContext` interface of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies a two-dimensional texture image.
+		
 		From interface mixin WebGLRenderingContextOverloads
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texImage2D>
 	**/
 	overload function texImage2D(target:GLenum, level:GLint, internalformat:GLint, width:GLsizei, height:GLsizei, border:GLint, format:GLenum, type:GLenum, pixels:Null<js.lib.ArrayBufferView>):Void;
 	/**
+		The **`texImage2D()`** method of the `WebGLRenderingContext` interface of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies a two-dimensional texture image.
+		
 		From interface mixin WebGLRenderingContextOverloads
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texImage2D>
 	**/
 	overload function texImage2D(target:GLenum, level:GLint, internalformat:GLint, format:GLenum, type:GLenum, source:TexImageSource):Void;
 	/**
+		The **`WebGLRenderingContext.texParameter[fi]()`** methods of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) set texture parameters.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texParameter>
 	**/
 	function texParameterf(target:GLenum, pname:GLenum, param:GLfloat):Void;
 	/**
+		The **`WebGLRenderingContext.texParameter[fi]()`** methods of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) set texture parameters.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texParameter>
 	**/
 	function texParameteri(target:GLenum, pname:GLenum, param:GLint):Void;
 	/**
+		The **`texSubImage2D()`** method of the `WebGLRenderingContext` interface of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies a two-dimensional sub-rectangle for a texture image.
+		
 		From interface mixin WebGLRenderingContextOverloads
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texSubImage2D>
 	**/
 	overload function texSubImage2D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, width:GLsizei, height:GLsizei, format:GLenum, type:GLenum, pixels:Null<js.lib.ArrayBufferView>):Void;
 	/**
+		The **`texSubImage2D()`** method of the `WebGLRenderingContext` interface of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specifies a two-dimensional sub-rectangle for a texture image.
+		
 		From interface mixin WebGLRenderingContextOverloads
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texSubImage2D>
 	**/
 	overload function texSubImage2D(target:GLenum, level:GLint, xoffset:GLint, yoffset:GLint, format:GLenum, type:GLenum, source:TexImageSource):Void;
 	/**
+		The **`WebGLRenderingContext.uniform[1234][fi][v]()`** methods of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specify values of uniform variables. All active uniform variables defined in a program object are initialized to 0 when the program object is linked successfully. They retain the values assigned to them by a call to this method until the next successful link operation occurs on the program object, when they are once again initialized to 0.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform>
@@ -2008,6 +2242,8 @@ package js.web.webgl;
 	**/
 	function uniform4iv(location:Null<WebGLUniformLocation>, v:Int32List):Void;
 	/**
+		The **`WebGLRenderingContext.uniformMatrix[234]fv()`** methods of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specify matrix values for uniform variables.
+		
 		From interface mixin WebGLRenderingContextOverloads
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniformMatrix>
@@ -2026,18 +2262,24 @@ package js.web.webgl;
 	**/
 	function uniformMatrix4fv(location:Null<WebGLUniformLocation>, transpose:GLboolean, value:Float32List):Void;
 	/**
+		The **`WebGLRenderingContext.useProgram()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) sets the specified `WebGLProgram` as part of the current rendering state.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/useProgram>
 	**/
 	function useProgram(program:Null<WebGLProgram>):Void;
 	/**
+		The **`WebGLRenderingContext.validateProgram()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) validates a `WebGLProgram`. It checks if it is successfully linked and if it can be used in the current WebGL state.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/validateProgram>
 	**/
 	function validateProgram(program:WebGLProgram):Void;
 	/**
+		The **`WebGLRenderingContext.vertexAttrib[1234]f[v]()`** methods of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) specify constant values for generic vertex attributes.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib>
@@ -2086,12 +2328,16 @@ package js.web.webgl;
 	**/
 	function vertexAttrib4fv(index:GLuint, values:Float32List):Void;
 	/**
+		The **`WebGLRenderingContext.vertexAttribPointer()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) binds the buffer currently bound to `gl.ARRAY_BUFFER` to a generic vertex attribute of the current vertex buffer object and specifies its layout.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttribPointer>
 	**/
 	function vertexAttribPointer(index:GLuint, size:GLint, type:GLenum, normalized:GLboolean, stride:GLsizei, offset:GLintptr):Void;
 	/**
+		The **`WebGLRenderingContext.viewport()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) sets the viewport, which specifies the affine transformation of x and y from normalized device coordinates to window coordinates.
+		
 		From interface mixin WebGLRenderingContextBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/viewport>

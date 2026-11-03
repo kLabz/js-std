@@ -25,15 +25,23 @@
 package js.web.media;
 
 /**
+	The `OfflineAudioContext` interface is an `AudioContext` interface representing an audio-processing graph built from linked together `AudioNode`s. In contrast with a standard `AudioContext`, an `OfflineAudioContext` doesn't render the audio to the device hardware; instead, it generates it, as fast as it can, and outputs the result to an `AudioBuffer`.
+	
+	Documentation [OfflineAudioContext](https://developer.mozilla.org/docs/Web/API/OfflineAudioContext) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext>
 **/
 @:native("OfflineAudioContext") extern class OfflineAudioContext extends BaseAudioContext {
 	/**
+		The **`length`** property of the `OfflineAudioContext` interface returns an integer representing the size of the buffer in sample-frames.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/length>
 	**/
 	var length(default, null) : Null<Int>;
 	var oncomplete : js.web.html.EventHandler;
 	/**
+		The **`OfflineAudioContext()`** constructor—part of the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)—creates and returns a new `OfflineAudioContext` object instance, which can then be used to render audio to an `AudioBuffer` rather than to an audio output device.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/OfflineAudioContext>
 	**/
 	@:overload(function(numberOfChannels:Int, length:Int, sampleRate:Float):Void { })
@@ -41,14 +49,20 @@ package js.web.media;
 	@:require(js_experimental_api, "OfflineAudioContext.close is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function close():js.lib.Promise<Void>;
 	/**
+		The **`resume()`** method of the `OfflineAudioContext` interface resumes the progression of time in an audio context that has been suspended. The promise resolves immediately because the `OfflineAudioContext` does not require the audio hardware.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/resume>
 	**/
 	function resume():js.lib.Promise<Void>;
 	/**
+		The `startRendering()` method of the `OfflineAudioContext` Interface starts rendering the audio graph, taking into account the current connections and the current scheduled changes.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/startRendering>
 	**/
 	function startRendering(?chunkSize:Null<Int> = null):js.lib.Promise<AudioBuffer>;
 	/**
+		The **`suspend()`** method of the `OfflineAudioContext` interface schedules a suspension of the time progression in the audio context at the specified time and returns a promise. This is generally useful at the time of manipulating the audio graph synchronously on OfflineAudioContext.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/suspend>
 	**/
 	function suspend(suspendTime:Float):js.lib.Promise<Void>;

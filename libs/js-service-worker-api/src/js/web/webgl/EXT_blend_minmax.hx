@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The **`EXT_blend_minmax`** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and extends blending capabilities by adding two new blend equations: the minimum or maximum color components of the source and destination colors.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [EXT_blend_minmax](https://developer.mozilla.org/docs/Web/API/EXT_blend_minmax) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/EXT_blend_minmax/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/EXT_blend_minmax>
 **/

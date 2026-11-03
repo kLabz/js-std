@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`RadioNodeList`** interface represents a collection of elements in a `<form>` returned by a call to `HTMLFormControlsCollection.namedItem()`.
+	
+	Documentation [RadioNodeList](https://developer.mozilla.org/docs/Web/API/RadioNodeList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RadioNodeList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RadioNodeList>
 **/
 @:native("RadioNodeList") extern class RadioNodeList extends js.web.dom.NodeList {
 	/**
+		If the underlying element collection contains radio buttons, the **`RadioNodeList.value`** property represents the checked radio button. On retrieving the `value` property, the `value` of the currently `checked` radio button is returned as a string. If the collection does not contain any radio buttons or none of the radio buttons in the collection is in `checked` state, the empty string is returned. On setting the `value` property, the first radio button input element whose `value` property is equal to the new value will be set to `checked`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RadioNodeList/value>
 	**/
 	var value : String;

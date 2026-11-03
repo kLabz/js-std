@@ -25,22 +25,32 @@
 package js.web.device;
 
 /**
+	The **`Sensor`** interface of the [Sensor APIs](https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs) is the base class for all the other sensor interfaces. This interface cannot be used directly. Instead it provides properties, event handlers, and methods accessed by interfaces that inherit from it.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [Sensor](https://developer.mozilla.org/docs/Web/API/Sensor) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Sensor/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Sensor>
 **/
 @:native("Sensor") @:require(js_experimental_api, "Sensor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Sensor extends js.web.dom.EventTarget {
 	/**
+		The **`activated`** read-only property of the `Sensor` interface returns a boolean value indicating whether the sensor is active.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Sensor/activated>
 	**/
 	var activated(default, null) : Bool;
 	/**
+		The **`hasReading`** read-only property of the `Sensor` interface returns a boolean value indicating whether the sensor has a reading.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Sensor/hasReading>
 	**/
 	var hasReading(default, null) : Bool;
 	/**
+		The **`timestamp`** read-only property of the `Sensor` interface returns the timestamp of the latest sensor reading.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Sensor/timestamp>
 	**/
 	var timestamp(default, null) : Null<js.web.perf.DOMHighResTimeStamp>;
@@ -48,10 +58,14 @@ package js.web.device;
 	var onactivate : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
 	/**
+		The **`start()`** method of the `Sensor` interface activates one of the sensors based on `Sensor`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Sensor/start>
 	**/
 	function start():Void;
 	/**
+		The **`stop()`** method of the `Sensor` interface deactivates the current sensor.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Sensor/stop>
 	**/
 	function stop():Void;

@@ -25,12 +25,18 @@
 package js.web.auth;
 
 /**
+	The **`AuthenticatorResponse`** interface of the [Web Authentication API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API) is the base interface for interfaces that provide a cryptographic root of trust for a key pair. The child interfaces include information from the browser such as the challenge origin and either may be returned from `PublicKeyCredential.response`.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [AuthenticatorResponse](https://developer.mozilla.org/docs/Web/API/AuthenticatorResponse) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AuthenticatorResponse/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/AuthenticatorResponse>
 **/
 @:native("AuthenticatorResponse") extern class AuthenticatorResponse {
 	/**
+		The **`clientDataJSON`** property of the `AuthenticatorResponse` interface stores a [JSON](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON) string in an `ArrayBuffer`, representing the client data that was passed to `navigator.credentials.create()` or `navigator.credentials.get()`. This property is only accessed on one of the child objects of `AuthenticatorResponse`, specifically `AuthenticatorAttestationResponse` or `AuthenticatorAssertionResponse`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AuthenticatorResponse/clientDataJSON>
 	**/
 	var clientDataJSON(default, null) : js.lib.ArrayBuffer;

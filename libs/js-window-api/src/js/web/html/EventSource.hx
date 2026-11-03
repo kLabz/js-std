@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`EventSource`** interface is web content's interface to [server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events).
+	
+	Documentation [EventSource](https://developer.mozilla.org/docs/Web/API/EventSource) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/EventSource/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/EventSource>
 **/
 @:native("EventSource") extern class EventSource extends js.web.dom.EventTarget {
 	/**
+		The **`url`** read-only property of the `EventSource` interface returns a string representing the URL of the source.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EventSource/url>
 	**/
 	var url(default, null) : String;
 	/**
+		The **`withCredentials`** read-only property of the `EventSource` interface returns a boolean value indicating whether the `EventSource` object was instantiated with CORS credentials set.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EventSource/withCredentials>
 	**/
 	var withCredentials(default, null) : Bool;
@@ -40,6 +48,8 @@ package js.web.html;
 	static inline var OPEN : Int = 1;
 	static inline var CLOSED : Int = 2;
 	/**
+		The **`readyState`** read-only property of the `EventSource` interface returns a number representing the state of the connection.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EventSource/readyState>
 	**/
 	var readyState(default, null) : Int;
@@ -47,10 +57,14 @@ package js.web.html;
 	var onmessage : EventHandler;
 	var onerror : EventHandler;
 	/**
+		The **`EventSource()`** constructor returns a newly-created `EventSource`, which represents a remote resource.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EventSource/EventSource>
 	**/
 	function new(url:String, ?eventSourceInitDict:EventSourceInit):Void;
 	/**
+		The **`close()`** method of the `EventSource` interface closes the connection, if one is made, and sets the `EventSource.readyState` attribute to `2` (closed).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EventSource/close>
 	**/
 	function close():Void;

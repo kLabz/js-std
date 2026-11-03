@@ -25,10 +25,16 @@
 package js.web.css;
 
 /**
+	The **`CSSTransition`** interface of the `Web Animations API` represents an `Animation` object used for a [CSS Transition](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Transitions).
+	
+	Documentation [CSSTransition](https://developer.mozilla.org/docs/Web/API/CSSTransition) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSTransition/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSTransition>
 **/
 @:native("CSSTransition") extern class CSSTransition extends Animation {
 	/**
+		The **`transitionProperty`** property of the `CSSTransition` interface returns the **expanded transition property name** of the transition. This is the longhand CSS property for which the transition was generated.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTransition/transitionProperty>
 	**/
 	var transitionProperty(default, null) : String;

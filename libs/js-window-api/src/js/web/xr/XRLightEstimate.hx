@@ -25,22 +25,32 @@
 package js.web.xr;
 
 /**
+	The **`XRLightEstimate`** interface of the [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) provides the estimated lighting values for an `XRLightProbe` at the time represented by an `XRFrame`.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRLightEstimate](https://developer.mozilla.org/docs/Web/API/XRLightEstimate) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRLightEstimate/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRLightEstimate>
 **/
 @:native("XRLightEstimate") @:require(js_experimental_api, "XRLightEstimate is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRLightEstimate {
 	/**
+		The _read-only_ **`sphericalHarmonicsCoefficients`** property of the `XRLightEstimate` interface returns a `Float32Array` containing 9 spherical harmonics coefficients.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRLightEstimate/sphericalHarmonicsCoefficients>
 	**/
 	var sphericalHarmonicsCoefficients(default, null) : js.lib.Float32Array;
 	/**
+		The _read-only_ **`primaryLightDirection`** property of the `XRLightEstimate` interface returns a `DOMPointReadOnly` representing the direction to the primary light source from the `probeSpace` of an `XRLightProbe`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRLightEstimate/primaryLightDirection>
 	**/
 	var primaryLightDirection(default, null) : js.web.dom.DOMPointReadOnly;
 	/**
+		The _read-only_ **`primaryLightIntensity`** property of the `XRLightEstimate` interface returns a `DOMPointReadOnly` representing the intensity of the primary light source from the `probeSpace` of an `XRLightProbe`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRLightEstimate/primaryLightIntensity>
 	**/
 	var primaryLightIntensity(default, null) : js.web.dom.DOMPointReadOnly;

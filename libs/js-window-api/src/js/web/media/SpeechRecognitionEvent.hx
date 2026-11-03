@@ -25,20 +25,30 @@
 package js.web.media;
 
 /**
+	The **`SpeechRecognitionEvent`** interface of the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) represents the event object for the `result` and `nomatch` events, and contains all the data associated with an interim or final speech recognition result.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [SpeechRecognitionEvent](https://developer.mozilla.org/docs/Web/API/SpeechRecognitionEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SpeechRecognitionEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionEvent>
 **/
 @:native("SpeechRecognitionEvent") extern class SpeechRecognitionEvent extends js.web.dom.Event {
 	/**
+		The **`resultIndex`** read-only property of the `SpeechRecognitionEvent` interface returns the lowest index value result in the `SpeechRecognitionResultList` "array" that has actually changed.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionEvent/resultIndex>
 	**/
 	var resultIndex(default, null) : Int;
 	/**
+		The **`results`** read-only property of the `SpeechRecognitionEvent` interface returns a `SpeechRecognitionResultList` object representing all the speech recognition results for the current session.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionEvent/results>
 	**/
 	var results(default, null) : SpeechRecognitionResultList;
 	/**
+		The **`SpeechRecognitionEvent()`** constructor creates a new `SpeechRecognitionEvent` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechRecognitionEvent/SpeechRecognitionEvent>
 	**/
 	function new(type:String, eventInitDict:SpeechRecognitionEventInit):Void;

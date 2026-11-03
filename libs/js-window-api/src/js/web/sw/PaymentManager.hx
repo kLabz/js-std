@@ -25,18 +25,26 @@
 package js.web.sw;
 
 /**
+	The **`PaymentManager`** interface of the `Web-based Payment Handler API` is used to manage various aspects of payment app functionality.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [PaymentManager](https://developer.mozilla.org/docs/Web/API/PaymentManager) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PaymentManager/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/PaymentManager>
 **/
 @:native("PaymentManager") @:require(js_experimental_api, "PaymentManager is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PaymentManager {
 	/**
+		The **`userHint`** property of the `PaymentManager` interface provides a hint for the browser to display along with the payment app's name and icon in the Web-based Payment Handler UI.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PaymentManager/userHint>
 	**/
 	var userHint : String;
 	/**
+		The **`enableDelegations()`** method of the `PaymentManager` interface delegates responsibility for providing various parts of the required payment information to the payment app rather than collecting it from the browser (for example, via autofill).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PaymentManager/enableDelegations>
 	**/
 	function enableDelegations(delegations:Array<PaymentDelegation>):js.lib.Promise<Void>;

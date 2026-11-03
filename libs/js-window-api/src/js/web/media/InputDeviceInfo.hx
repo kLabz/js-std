@@ -25,12 +25,18 @@
 package js.web.media;
 
 /**
+	The **`InputDeviceInfo`** interface of the `Media Capture and Streams API` gives access to the capabilities of the input device that it represents.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [InputDeviceInfo](https://developer.mozilla.org/docs/Web/API/InputDeviceInfo) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/InputDeviceInfo/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/InputDeviceInfo>
 **/
 @:native("InputDeviceInfo") extern class InputDeviceInfo extends MediaDeviceInfo {
 	/**
+		The **`getCapabilities()`** method of the `InputDeviceInfo` interface returns a `MediaTrackCapabilities` object describing the primary audio or video track of the device's `MediaStream`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/InputDeviceInfo/getCapabilities>
 	**/
 	function getCapabilities():MediaTrackCapabilities;

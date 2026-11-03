@@ -25,18 +25,28 @@
 package js.web.svg;
 
 /**
+	The **`SVGCircleElement`** interface is an interface for the `<circle>` element.
+	
+	Documentation [SVGCircleElement](https://developer.mozilla.org/docs/Web/API/SVGCircleElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGCircleElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGCircleElement>
 **/
 @:native("SVGCircleElement") extern class SVGCircleElement extends SVGGeometryElement {
 	/**
+		The **`cx`** read-only property of the `SVGCircleElement` interface reflects the `cx` attribute of a `<circle>` element and by that defines the x-coordinate of the circle's center.<
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGCircleElement/cx>
 	**/
 	var cx(default, null) : SVGAnimatedLength;
 	/**
+		The **`cy`** read-only property of the `SVGCircleElement` interface reflects the `cy` attribute of a `<circle>` element and by that defines the y-coordinate of the circle's center.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGCircleElement/cy>
 	**/
 	var cy(default, null) : SVGAnimatedLength;
 	/**
+		The **`r`** read-only property of the `SVGCircleElement` interface reflects the `r` attribute of a `<circle>` element and by that defines the radius of the circle.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGCircleElement/r>
 	**/
 	var r(default, null) : SVGAnimatedLength;

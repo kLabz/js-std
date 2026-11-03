@@ -25,14 +25,22 @@
 package js.web.svg;
 
 /**
+	The **`SVGAnimatedAngle`** interface is used for attributes of basic type [\<angle>](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/Content_type#angle) which can be animated.
+	
+	Documentation [SVGAnimatedAngle](https://developer.mozilla.org/docs/Web/API/SVGAnimatedAngle) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGAnimatedAngle/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedAngle>
 **/
 @:native("SVGAnimatedAngle") extern class SVGAnimatedAngle {
 	/**
+		The **`baseVal`** read-only property of the `SVGAnimatedAngle` interface represents the base (non-animated) value of the associated [`<angle>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/Content_type#angle) on an SVG element. This property is used to retrieve the static value of the `<angle>`, unaffected by any ongoing animations.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedAngle/baseVal>
 	**/
 	var baseVal(default, null) : SVGAngle;
 	/**
+		The **`animVal`** read-only property of the `SVGAnimatedAngle` interface represents the current animated value of the associated [`<angle>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/Content_type#angle) on an SVG element. If the attribute is not currently being animated, `animVal` will be the same as the `baseVal`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedAngle/animVal>
 	**/
 	var animVal(default, null) : SVGAngle;

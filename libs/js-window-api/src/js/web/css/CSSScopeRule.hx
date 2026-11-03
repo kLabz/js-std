@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`CSSScopeRule`** interface of the [CSS Object Model](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents a CSS `@scope` at-rule.
+	
+	Documentation [CSSScopeRule](https://developer.mozilla.org/docs/Web/API/CSSScopeRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSScopeRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSScopeRule>
 **/
 @:native("CSSScopeRule") extern class CSSScopeRule extends CSSGroupingRule {
 	/**
+		The **`start`** property of the `CSSScopeRule` interface returns a string containing the value of the `@scope` at-rule's scope root.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSScopeRule/start>
 	**/
 	var start(default, null) : Null<String>;
 	/**
+		The **`end`** property of the `CSSScopeRule` interface returns a string containing the value of the `@scope` at-rule's scope limit.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSScopeRule/end>
 	**/
 	var end(default, null) : Null<String>;

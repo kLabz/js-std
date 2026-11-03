@@ -25,16 +25,24 @@
 package js.web.svg;
 
 /**
+	The **`SVGSymbolElement`** interface corresponds to the `<symbol>` element.
+	
+	Documentation [SVGSymbolElement](https://developer.mozilla.org/docs/Web/API/SVGSymbolElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGSymbolElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGSymbolElement>
 **/
 @:native("SVGSymbolElement") extern class SVGSymbolElement extends SVGGraphicsElement {
 	/**
+		The **`viewBox`** read-only property of the `SVGSymbolElement` interface reflects the `viewBox` attribute of the given `<symbol>` element.
+		
 		From interface mixin SVGFitToViewBox
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGSymbolElement/viewBox>
 	**/
 	var viewBox(default, null) : SVGAnimatedRect;
 	/**
+		The **`preserveAspectRatio`** read-only property of the `SVGSymbolElement` interface reflects the `preserveAspectRatio` attribute of the given `<symbol>` element. It defines how the `symbol`'s content should be scaled to fit the given space, preserving its aspect ratio.
+		
 		From interface mixin SVGFitToViewBox
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGSymbolElement/preserveAspectRatio>

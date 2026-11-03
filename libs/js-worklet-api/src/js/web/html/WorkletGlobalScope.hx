@@ -25,7 +25,11 @@
 package js.web.html;
 
 /**
+	The **`WorkletGlobalScope`** interface is an abstract class that specific worklet scope classes inherit from. Each `WorkletGlobalScope` defines a new global environment.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [WorkletGlobalScope](https://developer.mozilla.org/docs/Web/API/WorkletGlobalScope) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WorkletGlobalScope/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WorkletGlobalScope>
 **/

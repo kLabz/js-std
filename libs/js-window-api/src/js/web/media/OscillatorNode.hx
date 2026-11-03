@@ -25,26 +25,40 @@
 package js.web.media;
 
 /**
+	The **`OscillatorNode`** interface represents a periodic waveform, such as a sine wave. It is an `AudioScheduledSourceNode` audio-processing module that causes a specified frequency of a given wave to be created—in effect, a constant tone.
+	
+	Documentation [OscillatorNode](https://developer.mozilla.org/docs/Web/API/OscillatorNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/OscillatorNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/OscillatorNode>
 **/
 @:native("OscillatorNode") extern class OscillatorNode extends AudioScheduledSourceNode {
 	/**
+		The **`type`** property of the `OscillatorNode` interface specifies what shape of [waveform](https://en.wikipedia.org/wiki/Waveform) the oscillator will output. There are several common waveforms available, as well as an option to specify a custom waveform shape. The shape of the waveform will affect the tone that is produced.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OscillatorNode/type>
 	**/
 	var type : OscillatorType;
 	/**
+		The **`frequency`** property of the `OscillatorNode` interface is an [a-rate](https://developer.mozilla.org/en-US/docs/Web/API/AudioParam#a-rate) `AudioParam` representing the frequency of oscillation in hertz.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OscillatorNode/frequency>
 	**/
 	var frequency(default, null) : AudioParam;
 	/**
+		The `detune` property of the `OscillatorNode` interface is an [a-rate](https://developer.mozilla.org/en-US/docs/Web/API/AudioParam#a-rate) `AudioParam` representing detuning of oscillation in [cents](https://en.wikipedia.org/wiki/Cent_%28music%29).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OscillatorNode/detune>
 	**/
 	var detune(default, null) : AudioParam;
 	/**
+		The **`OscillatorNode()`** constructor of the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) creates a new `OscillatorNode` object which is an `AudioNode` that represents a periodic waveform, like a sine wave, optionally setting the node's properties' values to match values in a specified object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OscillatorNode/OscillatorNode>
 	**/
 	function new(context:BaseAudioContext, ?options:OscillatorOptions):Void;
 	/**
+		The **`setPeriodicWave()`** method of the `OscillatorNode` interface is used to point to a `PeriodicWave` defining a periodic waveform that can be used to shape the oscillator's output, when `type` is `custom`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OscillatorNode/setPeriodicWave>
 	**/
 	function setPeriodicWave(periodicWave:PeriodicWave):Void;

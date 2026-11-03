@@ -25,32 +25,46 @@
 package js.web.css;
 
 /**
+	The **`PreferenceObject`** interface of the [User Preferences API](https://developer.mozilla.org/en-US/docs/Web/API/User_Preferences_API) provides attributes and methods for reading and overriding user preferences.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [PreferenceObject](https://developer.mozilla.org/docs/Web/API/PreferenceObject) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PreferenceObject/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject>
 **/
 @:native("PreferenceObject") @:require(js_experimental_api, "PreferenceObject is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PreferenceObject extends js.web.dom.EventTarget {
 	/**
+		The **`override`** read-only property of the `PreferenceObject` interface returns the override of a preference if one is set, `null` otherwise.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject/override>
 	**/
 	@:native("override")
 	var override_(default, null) : Null<String>;
 	/**
+		The **`value`** read-only property of the `PreferenceManager` interface returns the override value of a preference if one is set, or the UA-defined value if an override value is not set.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject/value>
 	**/
 	var value(default, null) : String;
 	/**
+		The **`validValues`** read-only property of the `PreferenceObject` interface returns a read-only array of values that are accepted by the override.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject/validValues>
 	**/
 	var validValues(default, null) : Array<String>;
 	var onchange : js.web.html.EventHandler;
 	/**
+		The **`clearOverride`** method of the `PreferenceObject` interface resets the `override` value.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject/clearOverride>
 	**/
 	function clearOverride():Void;
 	/**
+		The **`requestOverride`** method of the `PreferenceObject` interface sets an `override` value for a particular preference.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PreferenceObject/requestOverride>
 	**/
 	function requestOverride(value:Null<String>):js.lib.Promise<Void>;

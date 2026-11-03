@@ -25,36 +25,54 @@
 package js.web.html;
 
 /**
+	The **`NotRestoredReasons`** interface of the `Performance API` provides report data containing reasons why the current document was blocked from using the back/forward cache (bfcache) on navigation.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [NotRestoredReasons](https://developer.mozilla.org/docs/Web/API/NotRestoredReasons) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons>
 **/
 @:native("NotRestoredReasons") @:require(js_experimental_api, "NotRestoredReasons is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NotRestoredReasons {
 	/**
+		The **`src`** read-only property of the `NotRestoredReasons` interface returns a string representing the path to the source of the `<iframe>` the document is contained in (for example `<iframe src="b.html">`).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/src>
 	**/
 	var src(default, null) : Null<String>;
 	/**
+		The **`id`** read-only property of the `NotRestoredReasons` interface returns a string representing the `id` attribute value of the `<iframe>` the document is contained in (for example `<iframe id="foo" src="...">`).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/id>
 	**/
 	var id(default, null) : Null<String>;
 	/**
+		The **`name`** read-only property of the `NotRestoredReasons` interface returns a string representing the `name` attribute value of the `<iframe>` the document is contained in (for example `<iframe name="bar" src="...">`).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/name>
 	**/
 	var name(default, null) : Null<String>;
 	/**
+		The **`url`** read-only property of the `NotRestoredReasons` interface returns a string representing the URL of the navigated page or `<iframe>`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/url>
 	**/
 	var url(default, null) : Null<String>;
 	/**
+		The **`reasons`** read-only property of the `NotRestoredReasons` interface returns an array of `NotRestoredReasonDetails` objects, each representing a reason why the navigated page was blocked from using the back/forward cache (bfcache).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/reasons>
 	**/
 	var reasons(default, null) : Null<Array<NotRestoredReasonDetails>>;
 	/**
+		The **`children`** read-only property of the `NotRestoredReasons` interface returns an array of `NotRestoredReasons` objects, one for each child `<iframe>` embedded in the current document, which may contain reasons why the top-level frame was blocked relating to the child frames.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/children>
 	**/
 	var children(default, null) : Null<Array<NotRestoredReasons>>;
 	/**
+		The **`toJSON()`** method of the `NotRestoredReasons` interface returns a JSON-serializable plain object representing the `NotRestoredReasons` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NotRestoredReasons/toJSON>
 	**/
 	function toJSON():{ };

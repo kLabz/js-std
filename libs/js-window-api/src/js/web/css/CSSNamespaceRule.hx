@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`CSSNamespaceRule`** interface describes an object representing a single CSS `@namespace` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+	
+	Documentation [CSSNamespaceRule](https://developer.mozilla.org/docs/Web/API/CSSNamespaceRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSNamespaceRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSNamespaceRule>
 **/
 @:native("CSSNamespaceRule") extern class CSSNamespaceRule extends CSSRule {
 	/**
+		The read-only **`namespaceURI`** property of the `CSSNamespaceRule` returns a string containing the text of the URI of the given namespace.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSNamespaceRule/namespaceURI>
 	**/
 	var namespaceURI(default, null) : String;
 	/**
+		The read-only **`prefix`** property of the `CSSNamespaceRule` returns a string with the name of the prefix associated to this namespace. If there is no such prefix, it returns an empty string.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSNamespaceRule/prefix>
 	**/
 	var prefix(default, null) : String;

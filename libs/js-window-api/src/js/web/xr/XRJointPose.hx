@@ -25,12 +25,18 @@
 package js.web.xr;
 
 /**
+	The **`XRJointPose`** interface is an `XRPose` with additional information about the size of the skeleton joint it represents.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRJointPose](https://developer.mozilla.org/docs/Web/API/XRJointPose) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRJointPose/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRJointPose>
 **/
 @:native("XRJointPose") @:require(js_experimental_api, "XRJointPose is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRJointPose extends XRPose {
 	/**
+		The read-only **`radius`** property of the `XRJointPose` interface indicates the radius (distance from skin) for a joint.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRJointPose/radius>
 	**/
 	var radius(default, null) : Float;

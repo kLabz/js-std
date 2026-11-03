@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The `XMLSerializer` interface provides the `serializeToString()` method to construct an XML string representing a DOM tree.
+	
+	Documentation [XMLSerializer](https://developer.mozilla.org/docs/Web/API/XMLSerializer) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XMLSerializer/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XMLSerializer>
 **/
 @:native("XMLSerializer") extern class XMLSerializer {
 	/**
+		The **`XMLSerializer()`** constructor creates a new `XMLSerializer`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XMLSerializer/XMLSerializer>
 	**/
 	function new():Void;
 	/**
+		The `XMLSerializer` method **`serializeToString()`** constructs a string representing the specified DOM tree in XML form.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XMLSerializer/serializeToString>
 	**/
 	function serializeToString(root:js.web.dom.Node):String;

@@ -25,28 +25,42 @@
 package js.web.storage;
 
 /**
+	The **`StorageAccessHandle`** interface represents access to [unpartitioned state](https://developer.mozilla.org/en-US/docs/Web/Privacy/Guides/State_Partitioning#state_partitioning) granted by a call to `Document.requestStorageAccess()`.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [StorageAccessHandle](https://developer.mozilla.org/docs/Web/API/StorageAccessHandle) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle>
 **/
 @:native("StorageAccessHandle") @:require(js_experimental_api, "StorageAccessHandle is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class StorageAccessHandle {
 	/**
+		The **`sessionStorage`** property of the `StorageAccessHandle` interface returns an unpartitioned session `Storage` object if access was granted, and throws a `SecurityError` `DOMException` otherwise.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/sessionStorage>
 	**/
 	var sessionStorage(default, null) : js.web.html.Storage;
 	/**
+		The **`localStorage`** property of the `StorageAccessHandle` interface returns an unpartitioned local `Storage` object if access was granted, and throws a `SecurityError` `DOMException` otherwise.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/localStorage>
 	**/
 	var localStorage(default, null) : js.web.html.Storage;
 	/**
+		The **`indexedDB`** property of the `StorageAccessHandle` interface returns an unpartitioned `IDBFactory` object if access was granted, and throws a `SecurityError` `DOMException` otherwise.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/indexedDB>
 	**/
 	var indexedDB(default, null) : IDBFactory;
 	/**
+		The **`locks`** property of the `StorageAccessHandle` interface returns an unpartitioned session `LockManager` object if access was granted, and throws a `SecurityError` `DOMException` otherwise.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/locks>
 	**/
 	var locks(default, null) : LockManager;
 	/**
+		The **`caches`** property of the `StorageAccessHandle` interface returns an unpartitioned `CacheStorage` object if access was granted, and throws a `SecurityError` `DOMException` otherwise.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StorageAccessHandle/caches>
 	**/
 	var caches(default, null) : js.web.sw.CacheStorage;

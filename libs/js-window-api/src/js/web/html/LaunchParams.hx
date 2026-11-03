@@ -25,16 +25,24 @@
 package js.web.html;
 
 /**
+	The **`LaunchParams`** interface of the `Launch Handler API` is used when implementing custom launch navigation handling in a PWA. When `window.launchQueue.setConsumer()` is invoked to set up the launch navigation handling functionality, the callback function inside `setConsumer()` is passed a `LaunchParams` object instance.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [LaunchParams](https://developer.mozilla.org/docs/Web/API/LaunchParams) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/LaunchParams/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/LaunchParams>
 **/
 @:native("LaunchParams") @:require(js_experimental_api, "LaunchParams is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LaunchParams {
 	/**
+		The **`targetURL`** read-only property of the `LaunchParams` interface returns the target URL of the associated web app launch.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LaunchParams/targetURL>
 	**/
 	var targetURL(default, null) : Null<String>;
 	/**
+		The **`files`** read-only property of the `LaunchParams` interface returns an array of `FileSystemHandle` objects representing any files passed along with the launch navigation via the [`POST`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/POST) method.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LaunchParams/files>
 	**/
 	var files(default, null) : Array<js.web.storage.FileSystemHandle>;

@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`CSSMathNegate`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the negation of a `CSSNumericValue`.
+	
+	Documentation [CSSMathNegate](https://developer.mozilla.org/docs/Web/API/CSSMathNegate) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSMathNegate/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSMathNegate>
 **/
 @:native("CSSMathNegate") extern class CSSMathNegate extends CSSMathValue {
 	/**
+		The **`value`** read-only property of the `CSSMathNegate` interface returns the `CSSNumericValue` that is being negated.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathNegate/value>
 	**/
 	var value(default, null) : CSSNumericValue;
 	/**
+		The **`CSSMathNegate()`** constructor creates a new `CSSMathNegate` object which negates the value passed into it.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathNegate/CSSMathNegate>
 	**/
 	function new(arg:CSSNumberish):Void;

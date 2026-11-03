@@ -25,26 +25,40 @@
 package js.web.net;
 
 /**
+	The Streams API allows JavaScript to programmatically access streams of data received over the network and process them as desired by the developer.
+	
+	Documentation [WritableStream](https://developer.mozilla.org/docs/Web/API/WritableStream) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WritableStream/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WritableStream>
 **/
 @:native("WritableStream") extern class WritableStream {
 	/**
+		The **`locked`** read-only property of the `WritableStream` interface returns a boolean indicating whether the `WritableStream` is locked to a writer.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WritableStream/locked>
 	**/
 	var locked(default, null) : Bool;
 	/**
+		The **`WritableStream()`** constructor creates a new `WritableStream` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WritableStream/WritableStream>
 	**/
 	function new(?underlyingSink:{ }, ?strategy:QueuingStrategy):Void;
 	/**
+		The **`abort()`** method of the `WritableStream` interface aborts the stream, signaling that the producer can no longer successfully write to the stream and it is to be immediately moved to an error state, with any queued writes discarded.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WritableStream/abort>
 	**/
 	function abort(?reason:Any):js.lib.Promise<Void>;
 	/**
+		The **`close()`** method of the `WritableStream` interface closes the associated stream. All chunks written before this method is called are sent before the returned promise is fulfilled.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WritableStream/close>
 	**/
 	function close():js.lib.Promise<Void>;
 	/**
+		The **`getWriter()`** method of the `WritableStream` interface returns a new instance of `WritableStreamDefaultWriter` and locks the stream to that instance. While the stream is locked, no other writer can be acquired until this one is released.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WritableStream/getWriter>
 	**/
 	function getWriter():WritableStreamDefaultWriter;

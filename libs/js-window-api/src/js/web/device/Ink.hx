@@ -25,12 +25,18 @@
 package js.web.device;
 
 /**
+	The **`Ink`** interface of the [Ink API](https://developer.mozilla.org/en-US/docs/Web/API/Ink_API) provides access to `DelegatedInkTrailPresenter` objects for the application to use to render ink strokes.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [Ink](https://developer.mozilla.org/docs/Web/API/Ink) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Ink/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Ink>
 **/
 @:native("Ink") @:require(js_experimental_api, "Ink is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Ink {
 	/**
+		The **`requestPresenter()`** method of the `Ink` interface returns a `Promise` that fulfills with a `DelegatedInkTrailPresenter` object to handle rendering strokes.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Ink/requestPresenter>
 	**/
 	function requestPresenter(?param:InkPresenterParam):js.lib.Promise<DelegatedInkTrailPresenter>;

@@ -25,11 +25,17 @@
 package js.web.media;
 
 /**
+	The `ScriptProcessorNode` interface allows the generation, processing, or analyzing of audio using JavaScript.
+	
+	Documentation [ScriptProcessorNode](https://developer.mozilla.org/docs/Web/API/ScriptProcessorNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ScriptProcessorNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ScriptProcessorNode>
 **/
 @:native("ScriptProcessorNode") @:deprecated extern class ScriptProcessorNode extends AudioNode {
 	var onaudioprocess : js.web.html.EventHandler;
 	/**
+		The `bufferSize` property of the `ScriptProcessorNode` interface returns an integer representing both the input and output buffer size, in sample-frames. Its value can be a power of 2 value in the range `256` – `16384`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ScriptProcessorNode/bufferSize>
 	**/
 	@:deprecated

@@ -25,7 +25,11 @@
 package js.web.xr;
 
 /**
+	The **`XRAnchorSet`** interface exposes a collection of anchors. Its instances are returned by `XRFrame.trackedAnchors` and are [`Set`-like objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#set-like_browser_apis).
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRAnchorSet](https://developer.mozilla.org/docs/Web/API/XRAnchorSet) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRAnchorSet/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRAnchorSet>
 **/

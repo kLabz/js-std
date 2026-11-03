@@ -25,20 +25,30 @@
 package js.web.svg;
 
 /**
+	The **`SVGScriptElement`** interface corresponds to the SVG `<script>` element.
+	
+	Documentation [SVGScriptElement](https://developer.mozilla.org/docs/Web/API/SVGScriptElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGScriptElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGScriptElement>
 **/
 @:native("SVGScriptElement") extern class SVGScriptElement extends SVGElement {
 	/**
+		The **`type`** read-only property of the `SVGScriptElement` interface reflects the `type` attribute of the given `<script>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGScriptElement/type>
 	**/
 	var type : String;
 	/**
+		The **`crossOrigin`** property of the `SVGScriptElement` interface reflects the Cross-Origin Resource Sharing settings for the `<script>` element. For classic scripts from other [origins](https://developer.mozilla.org/en-US/docs/Glossary/Origin), this controls whether full error information will be exposed. For module scripts, it controls the script itself and any scripts it imports. See [CORS settings attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/crossorigin) for details.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGScriptElement/crossOrigin>
 	**/
 	@:require(js_experimental_api, "SVGScriptElement.crossOrigin is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var crossOrigin : Null<String>;
 	var referrerPolicy : String;
 	/**
+		The **`href`** read-only property of the `SVGScriptElement` interface reflects the `href` or `xlink:href`  attribute of the given `<script>` element.
+		
 		From interface mixin SVGURIReference
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGScriptElement/href>

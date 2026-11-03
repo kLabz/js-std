@@ -25,22 +25,34 @@
 package js.web.svg;
 
 /**
+	The **`SVGEllipseElement`** interface provides access to the properties of `<ellipse>` elements.
+	
+	Documentation [SVGEllipseElement](https://developer.mozilla.org/docs/Web/API/SVGEllipseElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGEllipseElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGEllipseElement>
 **/
 @:native("SVGEllipseElement") extern class SVGEllipseElement extends SVGGeometryElement {
 	/**
+		The **`cx`** read-only property of the `SVGEllipseElement` interface describes the x-axis coordinate of the center of the ellipse as an `SVGAnimatedLength`. It reflects the computed value of the `cx` attribute on the `<ellipse>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGEllipseElement/cx>
 	**/
 	var cx(default, null) : SVGAnimatedLength;
 	/**
+		The **`cy`** read-only property of the `SVGEllipseElement` interface describes the y-axis coordinate of the center of the ellipse as an `SVGAnimatedLength`. It reflects the computed value of the `cy` attribute on the `<ellipse>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGEllipseElement/cy>
 	**/
 	var cy(default, null) : SVGAnimatedLength;
 	/**
+		The **`rx`** read-only property of the `SVGEllipseElement` interface describes the x-axis radius of the ellipse as an `SVGAnimatedLength`. It reflects the computed value of the `rx` attribute on the `<ellipse>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGEllipseElement/rx>
 	**/
 	var rx(default, null) : SVGAnimatedLength;
 	/**
+		The **`ry`** read-only property of the `SVGEllipseElement` interface describes the y-axis radius of the ellipse as an `SVGAnimatedLength`. It reflects the computed value of the `ry` attribute on the `<ellipse>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGEllipseElement/ry>
 	**/
 	var ry(default, null) : SVGAnimatedLength;

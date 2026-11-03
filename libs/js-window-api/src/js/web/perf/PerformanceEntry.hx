@@ -25,32 +25,48 @@
 package js.web.perf;
 
 /**
+	The **`PerformanceEntry`** object encapsulates a single performance metric that is part of the browser's performance timeline.
+	
+	Documentation [PerformanceEntry](https://developer.mozilla.org/docs/Web/API/PerformanceEntry) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PerformanceEntry/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry>
 **/
 @:native("PerformanceEntry") extern class PerformanceEntry {
 	var id(default, null) : Float;
 	/**
+		The read-only **`name`** property of the `PerformanceEntry` interface is a string representing the name for a performance entry. It acts as an identifier, but it does not have to be unique. The value depends on the subclass.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry/name>
 	**/
 	var name(default, null) : String;
 	/**
+		The read-only **`entryType`** property returns a string representing the type of performance metric that this entry represents.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry/entryType>
 	**/
 	var entryType(default, null) : String;
 	/**
+		The read-only **`startTime`** property returns the first `timestamp` recorded for this `PerformanceEntry`. The meaning of this property depends on the value of this entry's `entryType`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry/startTime>
 	**/
 	var startTime(default, null) : DOMHighResTimeStamp;
 	/**
+		The read-only **`duration`** property returns a `timestamp` that is the duration of the `performance entry`. The meaning of this property depends on the value of this entry's `entryType`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry/duration>
 	**/
 	var duration(default, null) : DOMHighResTimeStamp;
 	/**
+		The **`navigationId`** read-only property of the `PerformanceEntry` interface returns the ID of the navigation that this paint happened under.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry/navigationId>
 	**/
 	@:require(js_experimental_api, "PerformanceEntry.navigationId is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var navigationId(default, null) : Float;
 	/**
+		The **`toJSON()`** method of the `PerformanceEntry` interface returns a JSON-serializable plain object representing the `PerformanceEntry` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEntry/toJSON>
 	**/
 	function toJSON():{ };

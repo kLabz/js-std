@@ -25,18 +25,26 @@
 package js.web.css;
 
 /**
+	The CSS Painting API — part of the [CSS Houdini](https://developer.mozilla.org/en-US/docs/Web/API/Houdini_APIs) umbrella of APIs — allows developers to write JavaScript functions that can draw directly into an element's background, border, or content.
+	
 	Unhandled extended attribute Global
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [PaintWorkletGlobalScope](https://developer.mozilla.org/docs/Web/API/PaintWorkletGlobalScope) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PaintWorkletGlobalScope/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/PaintWorkletGlobalScope>
 **/
 @:native("PaintWorkletGlobalScope") @:require(js_experimental_api, "PaintWorkletGlobalScope is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PaintWorkletGlobalScope extends js.web.html.WorkletGlobalScope {
 	/**
+		The **`devicePixelRatio`** read-only property of the `PaintWorkletGlobalScope` interface returns the current device's ratio of physical pixels to logical pixels.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PaintWorkletGlobalScope/devicePixelRatio>
 	**/
 	var devicePixelRatio(default, null) : Float;
 	/**
+		The **`registerPaint()`** method of the `PaintWorkletGlobalScope` interface registers a class to programmatically generate an image where a CSS property expects a file.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PaintWorkletGlobalScope/registerPaint>
 	**/
 	function registerPaint(name:String, paintCtor:js.web.dom.VoidFunction):Void;

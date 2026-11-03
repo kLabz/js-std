@@ -25,14 +25,22 @@
 package js.web.net;
 
 /**
+	The **`FileList`** interface represents an object of this type returned by the `files` property of the HTML `<input>` element; this lets you access the list of files selected with the `<input type="file">` element. It's also used for a list of files dropped into web content when using the drag and drop API; see the `DataTransfer` object for details on this usage.
+	
+	Documentation [FileList](https://developer.mozilla.org/docs/Web/API/FileList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/FileList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/FileList>
 **/
 @:native("FileList") extern class FileList implements ArrayAccess<Null<File>> {
 	/**
+		The **`length`** read-only property of the `FileList` interface returns the number of files in the `FileList`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FileList/length>
 	**/
 	var length(default, null) : Int;
 	/**
+		The **`item()`** method of the `FileList` interface returns a `File` object representing the file at the specified index in the file list.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FileList/item>
 	**/
 	function item(index:Int):Null<File>;

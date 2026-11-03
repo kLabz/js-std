@@ -25,16 +25,24 @@
 package js.web.storage;
 
 /**
+	The **File System API** — with extensions provided via the [**File System Access API**](https://wicg.github.io/file-system-access/) to access files on the device file system — allows read, write and file management capabilities.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [FileSystemFileHandle](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle>
 **/
 @:native("FileSystemFileHandle") extern class FileSystemFileHandle extends FileSystemHandle {
 	/**
+		The **`createWritable()`** method of the `FileSystemFileHandle` interface creates a `FileSystemWritableFileStream` that can be used to write to a file. The method returns a `Promise` which resolves to this created stream.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle/createWritable>
 	**/
 	function createWritable(?options:FileSystemCreateWritableOptions):js.lib.Promise<FileSystemWritableFileStream>;
 	/**
+		The **`getFile()`** method of the `FileSystemFileHandle` interface returns a `Promise` which resolves to a `File` object representing the state on disk of the entry represented by the handle.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle/getFile>
 	**/
 	function getFile():js.lib.Promise<js.web.net.File>;

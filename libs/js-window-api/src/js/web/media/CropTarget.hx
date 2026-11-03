@@ -25,12 +25,18 @@
 package js.web.media;
 
 /**
+	The **`CropTarget`** interface of the `Screen Capture API` provides a static method, `fromElement()`, which returns a `CropTarget` instance that can be used to crop a captured video track to the area in which a specified element is rendered.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [CropTarget](https://developer.mozilla.org/docs/Web/API/CropTarget) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CropTarget/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/CropTarget>
 **/
 @:native("CropTarget") @:require(js_experimental_api, "CropTarget is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CropTarget {
 	/**
+		The **`fromElement()`** static method of the `CropTarget` interface returns a `CropTarget` instance that can be used to crop a captured video track to the area in which a specified element is rendered.
+		
 		Only available in secure contexts (HTTPS).
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CropTarget/fromElement_static>

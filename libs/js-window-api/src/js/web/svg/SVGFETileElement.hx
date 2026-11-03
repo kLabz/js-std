@@ -25,38 +25,54 @@
 package js.web.svg;
 
 /**
+	The **`SVGFETileElement`** interface corresponds to the `<feTile>` element.
+	
+	Documentation [SVGFETileElement](https://developer.mozilla.org/docs/Web/API/SVGFETileElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGFETileElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGFETileElement>
 **/
 @:native("SVGFETileElement") extern class SVGFETileElement extends SVGElement {
 	/**
+		The **`in1`** read-only property of the `SVGFETileElement` interface reflects the `in` attribute of the given `<feTile>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFETileElement/in1>
 	**/
 	var in1(default, null) : SVGAnimatedString;
 	/**
+		The **`x`** read-only property of the `SVGFETileElement` interface describes the horizontal coordinate of the position of an SVG filter primitive as an `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFETileElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
+		The **`y`** read-only property of the `SVGFETileElement` interface describes the vertical coordinate of the position of an SVG filter primitive as an `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFETileElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
+		The **`width`** read-only property of the `SVGFETileElement` interface describes the horizontal size of an SVG filter primitive as an `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFETileElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
+		The **`height`** read-only property of the `SVGFETileElement` interface describes the vertical size of an SVG filter primitive as an `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFETileElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
+		The **`result`** read-only property of the `SVGFETileElement` interface describes the assigned name of an SVG filter primitive as an `SVGAnimatedString`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFETileElement/result>

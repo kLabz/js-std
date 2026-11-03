@@ -25,6 +25,10 @@
 package js.web.svg;
 
 /**
+	The `SVGAnimateTransformElement` interface corresponds to the `<animateTransform>` element.
+	
+	Documentation [SVGAnimateTransformElement](https://developer.mozilla.org/docs/Web/API/SVGAnimateTransformElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGAnimateTransformElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimateTransformElement>
 **/
 @:native("SVGAnimateTransformElement") extern class SVGAnimateTransformElement extends SVGAnimationElement {

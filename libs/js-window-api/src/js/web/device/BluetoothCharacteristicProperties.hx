@@ -25,46 +25,68 @@
 package js.web.device;
 
 /**
+	The **`BluetoothCharacteristicProperties`** interface of the [Web Bluetooth API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API) provides the operations that are valid on the given `BluetoothRemoteGATTCharacteristic`.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [BluetoothCharacteristicProperties](https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties>
 **/
 @:native("BluetoothCharacteristicProperties") @:require(js_experimental_api, "BluetoothCharacteristicProperties is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothCharacteristicProperties {
 	/**
+		The **`broadcast`** read-only property of the `BluetoothCharacteristicProperties` interface returns a `boolean` that is `true` if the broadcast of the characteristic value is permitted using the Server Characteristic Configuration Descriptor.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/broadcast>
 	**/
 	var broadcast(default, null) : Bool;
 	/**
+		The **`read`** read-only property of the `BluetoothCharacteristicProperties` interface returns a `boolean` that is `true` if the reading of the characteristic value is permitted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/read>
 	**/
 	var read(default, null) : Bool;
 	/**
+		The **`writeWithoutResponse`** read-only property of the `BluetoothCharacteristicProperties` interface returns a `boolean` that is `true` if the writing to the characteristic without response is permitted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/writeWithoutResponse>
 	**/
 	var writeWithoutResponse(default, null) : Bool;
 	/**
+		The **`write`** read-only property of the `BluetoothCharacteristicProperties` interface returns a `boolean` that is `true` if the writing to the characteristic with response is permitted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/write>
 	**/
 	var write(default, null) : Bool;
 	/**
+		The **`notify`** read-only property of the `BluetoothCharacteristicProperties` interface returns a `boolean` that is `true` if notifications of the characteristic value without acknowledgement is permitted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/notify>
 	**/
 	var notify(default, null) : Bool;
 	/**
+		The **`indicate`** read-only property of the `BluetoothCharacteristicProperties` interface returns a `boolean` that is `true` if indications of the characteristic value with acknowledgement is permitted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/indicate>
 	**/
 	var indicate(default, null) : Bool;
 	/**
+		The **`authenticatedSignedWrites`** read-only property of the `BluetoothCharacteristicProperties` interface returns a `boolean` that is `true` if signed writing to the characteristic value is permitted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/authenticatedSignedWrites>
 	**/
 	var authenticatedSignedWrites(default, null) : Bool;
 	/**
+		The **`reliableWrite`** read-only property of the `BluetoothCharacteristicProperties` interface returns a `boolean` that is `true` if reliable writes to the characteristic is permitted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/reliableWrite>
 	**/
 	var reliableWrite(default, null) : Bool;
 	/**
+		The **`writableAuxiliaries`** read-only property of the `BluetoothCharacteristicProperties` interface returns a `boolean` that is `true` if reliable writes to the characteristic descriptor is permitted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothCharacteristicProperties/writableAuxiliaries>
 	**/
 	var writableAuxiliaries(default, null) : Bool;

@@ -25,6 +25,10 @@
 package js.web.css;
 
 /**
+	The **`CSSImageValue`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Typed_OM_API) represents values for CSS properties that take an `image` value, such as `background-image`, `list-style-image`, or `border-image-source`.
+	
+	Documentation [CSSImageValue](https://developer.mozilla.org/docs/Web/API/CSSImageValue) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSImageValue/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSImageValue>
 **/
 @:native("CSSImageValue") extern class CSSImageValue extends CSSStyleValue {

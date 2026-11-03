@@ -25,12 +25,18 @@
 package js.web.html;
 
 /**
+	The **`LaunchQueue`** interface of the `Launch Handler API` is available via the `Window.launchQueue` property. When a [progressive web app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) (PWA) is launched with a [`launch_handler`](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler) `client_mode` value of `focus-existing`, `navigate-new`, or `navigate-existing`, `LaunchQueue` provides access to functionality that allows custom launch navigation handling to be implemented in the PWA. This functionality is controlled by the properties of the `LaunchParams` object passed into the `setConsumer()` callback function.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [LaunchQueue](https://developer.mozilla.org/docs/Web/API/LaunchQueue) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/LaunchQueue/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/LaunchQueue>
 **/
 @:native("LaunchQueue") @:require(js_experimental_api, "LaunchQueue is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LaunchQueue {
 	/**
+		The **`setConsumer()`** method of the `LaunchQueue` interface is used to declare the callback that will handle custom launch navigation handling in a [progressive web app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) (PWA). Such custom navigation is initiated via `Window.launchQueue` when a PWA has been launched with a [`launch_handler`](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler) `client_mode` value of `focus-existing`, `navigate-new`, or `navigate-existing`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LaunchQueue/setConsumer>
 	**/
 	function setConsumer(consumer:LaunchConsumer):Void;

@@ -25,12 +25,18 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUCommandBuffer`** interface of the `WebGPU API` represents a pre-recorded list of GPU commands that can be submitted to a `GPUQueue` for execution.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUCommandBuffer](https://developer.mozilla.org/docs/Web/API/GPUCommandBuffer) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUCommandBuffer/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUCommandBuffer>
 **/
 @:native("GPUCommandBuffer") extern class GPUCommandBuffer {
 	/**
+		The **`label`** property of the `GPUCommandBuffer` interface is a string providing a label that can be used to identify the object, for example in `GPUError` messages or console warnings.
+		
 		From interface mixin GPUObjectBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUCommandBuffer/label>

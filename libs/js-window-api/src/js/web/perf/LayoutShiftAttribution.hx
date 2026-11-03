@@ -25,20 +25,30 @@
 package js.web.perf;
 
 /**
+	The `LayoutShiftAttribution` interface provides debugging information about elements which have shifted.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [LayoutShiftAttribution](https://developer.mozilla.org/docs/Web/API/LayoutShiftAttribution) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/LayoutShiftAttribution/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/LayoutShiftAttribution>
 **/
 @:native("LayoutShiftAttribution") @:require(js_experimental_api, "LayoutShiftAttribution is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class LayoutShiftAttribution {
 	/**
+		The **`node`** read-only property of the `LayoutShiftAttribution` interface returns a `Node` representing the object that has shifted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LayoutShiftAttribution/node>
 	**/
 	var node(default, null) : Null<js.web.dom.Node>;
 	/**
+		The **`previousRect`** read-only property of the `LayoutShiftAttribution` interface returns a `DOMRectReadOnly` object representing the position of the element before the shift.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LayoutShiftAttribution/previousRect>
 	**/
 	var previousRect(default, null) : js.web.dom.DOMRectReadOnly;
 	/**
+		The **`currentRect`** read-only property of the `LayoutShiftAttribution` interface returns a `DOMRectReadOnly` object representing the position of the element after the shift.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LayoutShiftAttribution/currentRect>
 	**/
 	var currentRect(default, null) : js.web.dom.DOMRectReadOnly;

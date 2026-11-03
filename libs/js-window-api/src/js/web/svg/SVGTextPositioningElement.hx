@@ -25,26 +25,40 @@
 package js.web.svg;
 
 /**
+	The **`SVGTextPositioningElement`** interface is implemented by elements that support attributes that position individual text glyphs. It is inherited by `SVGTextElement` and `SVGTSpanElement`.
+	
+	Documentation [SVGTextPositioningElement](https://developer.mozilla.org/docs/Web/API/SVGTextPositioningElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGTextPositioningElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGTextPositioningElement>
 **/
 @:native("SVGTextPositioningElement") extern class SVGTextPositioningElement extends SVGTextContentElement {
 	/**
+		The **`x`** read-only property of the `SVGTextPositioningElement` interface describes the x-axis coordinate of the `SVGTextElement` or `SVGTSpanElement` as an `SVGAnimatedLengthList`. It reflects the `x` attribute's horizontal position of the individual text glyphs in the user coordinate system.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPositioningElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLengthList;
 	/**
+		The **`y`** read-only property of the `SVGTextPositioningElement` interface describes the y-axis coordinate of the `SVGTextElement` or `SVGTSpanElement` as an `SVGAnimatedLengthList`. It reflects the `y` attribute's vertical position of the individual text glyphs in the user coordinate system.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPositioningElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLengthList;
 	/**
+		The **`dx`** read-only property of the `SVGTextPositioningElement` interface describes the x-axis coordinate of the `SVGTextElement` or `SVGTSpanElement` as an `SVGAnimatedLengthList`. It reflects the `dx` attribute's horizontal displacement of the individual text glyphs in the user coordinate system.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPositioningElement/dx>
 	**/
 	var dx(default, null) : SVGAnimatedLengthList;
 	/**
+		The **`dy`** read-only property of the `SVGTextPositioningElement` interface describes the y-axis coordinate of the `SVGTextElement` or `SVGTSpanElement` as an `SVGAnimatedLengthList`. It reflects the `dy` attribute's vertical displacement of the individual text glyphs in the user coordinate system.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPositioningElement/dy>
 	**/
 	var dy(default, null) : SVGAnimatedLengthList;
 	/**
+		The **`rotate`** read-only property of the `SVGTextPositioningElement` interface reflects the rotation of individual text glyphs, as specified by the `rotate` attribute of the given element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGTextPositioningElement/rotate>
 	**/
 	var rotate(default, null) : SVGAnimatedNumberList;

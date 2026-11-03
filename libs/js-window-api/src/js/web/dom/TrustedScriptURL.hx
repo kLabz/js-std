@@ -25,14 +25,22 @@
 package js.web.dom;
 
 /**
+	The **`TrustedScriptURL`** interface of the `Trusted Types API` represents a string that a developer can insert into an [injection sink](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API#concepts_and_usage) that will parse it as a URL of an external script. These objects are created via `TrustedTypePolicy.createScriptURL()` and therefore have no constructor.
+	
+	Documentation [TrustedScriptURL](https://developer.mozilla.org/docs/Web/API/TrustedScriptURL) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TrustedScriptURL/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TrustedScriptURL>
 **/
 @:native("TrustedScriptURL") extern class TrustedScriptURL {
 	/**
+		The **`toJSON()`** method of the `TrustedScriptURL` interface returns a string representing the `TrustedScriptURL` object. This is the same string that `TrustedScriptURL.toString()` returns.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedScriptURL/toJSON>
 	**/
 	function toJSON():String;
 	/**
+		The **`toString()`** method of the `TrustedScriptURL` interface returns a string which may safely inserted into an [injection sink](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API#concepts_and_usage).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedScriptURL/toString>
 	**/
 	function toString():String;

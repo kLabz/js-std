@@ -27,16 +27,18 @@ class Bcd {
 		}
 		if (entry == null) return;
 
-		if (annotate(entry.get("__compat"), td.doc, d -> td.doc = d)) td.meta.push(deprecated(td.pos));
+		var typeKey = bcdKey(name);
+		if (annotate(entry.get("__compat"), td.doc, d -> td.doc = d, typeKey, name)) td.meta.push(deprecated(td.pos));
 
 		for (f in td.fields) {
 			var key = f.name == "new" ? name : nativeName(f.meta, f.name);
 			var isStatic = f.access?.contains(AStatic) ?? false;
-			var member = (isStatic ? entry.get(key + "_static") : null) ?? entry.get(key);
+			var memberKey = isStatic && entry.exists(key + "_static") ? key + "_static" : key;
+			var member = entry.get(memberKey);
 			if (member == null) continue;
 
 			f.meta = f.meta ?? [];
-			if (annotate(member.__compat, f.doc, d -> f.doc = d)) {
+			if (annotate(member.__compat, f.doc, d -> f.doc = d, '$typeKey.$memberKey')) {
 				if (!f.meta.exists(m -> m.name == ":deprecated")) f.meta.push(deprecated(f.pos));
 			}
 
@@ -49,6 +51,12 @@ class Bcd {
 
 	static var webassembly:DynamicAccess<Dynamic> = (js.Lib.require("@mdn/browser-compat-data") : Dynamic).webassembly.api;
 
+	static function bcdKey(nativeName:String):String {
+		if (nativeName == "WebAssembly") return "webassembly.api";
+		if (StringTools.startsWith(nativeName, "WebAssembly.")) return "webassembly.api." + nativeName.substr("WebAssembly.".length);
+		return "api." + nativeName;
+	}
+
 	// BCD files the WebAssembly JS API outside of `api`
 	static function lookup(nativeName:String):Null<DynamicAccess<Dynamic>> {
 		if (nativeName == "WebAssembly") return webassembly;
@@ -57,11 +65,22 @@ class Bcd {
 	}
 
 	/** Adds the MDN link to the doc; returns whether the API is deprecated. **/
-	static function annotate(compat:Null<Dynamic>, doc:Null<String>, setDoc:String->Void):Bool {
+	static function annotate(compat:Null<Dynamic>, doc:Null<String>, setDoc:String->Void, key:String, ?typeName:String):Bool {
 		if (compat == null) return false;
 
 		var url:Null<String> = compat.mdn_url;
-		if (url != null) setDoc((doc == null ? "" : doc + "\n\n") + '@see <$url>');
+		var parts = [];
+		var summary = Mdn.summary(key);
+		if (summary != null) parts.push(summary);
+		if (doc != null) parts.push(doc);
+		if (url != null) {
+			// MDN content is CC-BY-SA, unlike the generated code
+			if (summary != null && typeName != null) {
+				parts.push('Documentation [$typeName]($url) by [Mozilla Contributors]($url/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).');
+			}
+			parts.push('@see <$url>');
+		}
+		if (parts.length > 0) setDoc(parts.join("\n\n"));
 
 		return compat.status?.deprecated == true;
 	}

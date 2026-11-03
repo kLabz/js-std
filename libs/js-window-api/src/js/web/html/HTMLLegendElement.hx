@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`HTMLLegendElement`** is an interface allowing you to access properties of the `<legend>` elements. It inherits properties and methods from the `HTMLElement` interface.
+	
+	Documentation [HTMLLegendElement](https://developer.mozilla.org/docs/Web/API/HTMLLegendElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLLegendElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLLegendElement>
 **/
 @:native("HTMLLegendElement") extern class HTMLLegendElement extends HTMLElement {
 	/**
+		The **`form`** read-only property of the `HTMLLegendElement` interface returns an `HTMLFormElement` object that owns the `HTMLFieldSetElement` associated with this `<legend>`, or `null` if this legend is not associated with a `<fieldset>` owned by a form.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLLegendElement/form>
 	**/
 	var form(default, null) : Null<HTMLFormElement>;

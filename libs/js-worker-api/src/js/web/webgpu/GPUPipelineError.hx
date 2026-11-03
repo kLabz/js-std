@@ -25,16 +25,24 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUPipelineError`** interface of the `WebGPU API` describes a pipeline failure. This is the value received when a `Promise` returned by a `GPUDevice.createComputePipelineAsync()` or `GPUDevice.createRenderPipelineAsync()` call rejects.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUPipelineError](https://developer.mozilla.org/docs/Web/API/GPUPipelineError) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUPipelineError/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUPipelineError>
 **/
 @:native("GPUPipelineError") extern class GPUPipelineError extends js.web.dom.DOMException {
 	/**
+		The **`reason`** read-only property of the `GPUPipelineError` interface defines the reason the pipeline creation failed in a machine-readable way.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUPipelineError/reason>
 	**/
 	var reason(default, null) : GPUPipelineErrorReason;
 	/**
+		The **`GPUPipelineError()`** constructor creates a new `GPUPipelineError` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUPipelineError/GPUPipelineError>
 	**/
 	function new(?message:String = "", options:GPUPipelineErrorInit):Void;

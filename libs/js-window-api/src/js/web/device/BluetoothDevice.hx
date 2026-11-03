@@ -25,22 +25,32 @@
 package js.web.device;
 
 /**
+	The BluetoothDevice interface of the [Web Bluetooth API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API) represents a Bluetooth device inside a particular script execution environment.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [BluetoothDevice](https://developer.mozilla.org/docs/Web/API/BluetoothDevice) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/BluetoothDevice/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/BluetoothDevice>
 **/
 @:native("BluetoothDevice") @:require(js_experimental_api, "BluetoothDevice is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothDevice extends js.web.dom.EventTarget {
 	/**
+		The **`BluetoothDevice.id`** read-only property returns a string that uniquely identifies a device.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothDevice/id>
 	**/
 	var id(default, null) : String;
 	/**
+		The **`BluetoothDevice.name`** read-only property returns a string that provides a human-readable name for the device.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothDevice/name>
 	**/
 	var name(default, null) : Null<String>;
 	/**
+		The **`BluetoothDevice.gatt`** read-only property returns a reference to the device's `BluetoothRemoteGATTServer`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothDevice/gatt>
 	**/
 	var gatt(default, null) : Null<BluetoothRemoteGATTServer>;

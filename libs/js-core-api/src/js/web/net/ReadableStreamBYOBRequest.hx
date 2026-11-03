@@ -25,18 +25,28 @@
 package js.web.net;
 
 /**
+	The **`ReadableStreamBYOBRequest`** interface of the [Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API) represents a "pull request" for data from an underlying source that will be made as a zero-copy transfer to a consumer (bypassing the stream's internal queues).
+	
+	Documentation [ReadableStreamBYOBRequest](https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest>
 **/
 @:native("ReadableStreamBYOBRequest") extern class ReadableStreamBYOBRequest {
 	/**
+		The **`view`** getter property of the `ReadableStreamBYOBRequest` interface returns the current view.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest/view>
 	**/
 	var view(default, null) : Null<js.lib.Uint8Array>;
 	/**
+		The **`respond()`** method of the `ReadableStreamBYOBRequest` interface is used to signal to the associated [readable byte stream](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Using_readable_byte_streams) that the specified number of bytes were written into the `ReadableStreamBYOBRequest.view`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest/respond>
 	**/
 	function respond(bytesWritten:Float):Void;
 	/**
+		The **`respondWithNewView()`** method of the `ReadableStreamBYOBRequest` interface specifies a new view that the consumer of the associated readable byte stream should write to instead of `ReadableStreamBYOBRequest.view`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest/respondWithNewView>
 	**/
 	function respondWithNewView(view:js.lib.ArrayBufferView):Void;

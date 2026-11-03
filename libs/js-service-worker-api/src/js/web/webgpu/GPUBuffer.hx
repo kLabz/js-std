@@ -25,42 +25,62 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUBuffer`** interface of the `WebGPU API` represents a block of memory that can be used to store raw data to use in GPU operations.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUBuffer](https://developer.mozilla.org/docs/Web/API/GPUBuffer) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUBuffer/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer>
 **/
 @:native("GPUBuffer") extern class GPUBuffer {
 	/**
+		The **`size`** read-only property of the `GPUBuffer` interface represents the length of the `GPUBuffer`'s memory allocation, in bytes.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/size>
 	**/
 	var size(default, null) : GPUSize64Out;
 	/**
+		The **`usage`** read-only property of the `GPUBuffer` interface contains the bitwise flags representing the allowed usages of the `GPUBuffer`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/usage>
 	**/
 	var usage(default, null) : GPUFlagsConstant;
 	/**
+		The **`mapState`** read-only property of the `GPUBuffer` interface represents the mapped state of the `GPUBuffer`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/mapState>
 	**/
 	var mapState(default, null) : GPUBufferMapState;
 	/**
+		The **`label`** property of the `GPUBuffer` interface provides a label that can be used to identify the object, for example in `GPUError` messages or console warnings.
+		
 		From interface mixin GPUObjectBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/label>
 	**/
 	var label : String;
 	/**
+		The **`destroy()`** method of the `GPUBuffer` interface destroys the `GPUBuffer`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/destroy>
 	**/
 	function destroy():Void;
 	/**
+		The **`getMappedRange()`** method of the `GPUBuffer` interface returns an `ArrayBuffer` containing the mapped contents of the `GPUBuffer` in the specified range.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/getMappedRange>
 	**/
 	function getMappedRange(?offset:GPUSize64 = 0, ?size:GPUSize64):js.lib.ArrayBuffer;
 	/**
+		The **`mapAsync()`** method of the `GPUBuffer` interface maps the specified range of the `GPUBuffer`. It returns a `Promise` that resolves when the `GPUBuffer`'s content is ready to be accessed. While the `GPUBuffer` is mapped it cannot be used in any GPU commands.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/mapAsync>
 	**/
 	function mapAsync(mode:GPUMapModeFlags, ?offset:GPUSize64 = 0, ?size:GPUSize64):js.lib.Promise<Void>;
 	/**
+		The **`unmap()`** method of the `GPUBuffer` interface unmaps the mapped range of the `GPUBuffer`, making its contents available for use by the GPU again after it has previously been mapped with `GPUBuffer.mapAsync()` (the GPU cannot access a mapped `GPUBuffer`).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUBuffer/unmap>
 	**/
 	function unmap():Void;

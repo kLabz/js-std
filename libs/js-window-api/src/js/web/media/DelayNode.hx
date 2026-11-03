@@ -25,14 +25,22 @@
 package js.web.media;
 
 /**
+	The **`DelayNode`** interface represents a [delay-line](https://en.wikipedia.org/wiki/Digital_delay_line); an `AudioNode` audio-processing module that causes a delay between the arrival of an input data and its propagation to the output.
+	
+	Documentation [DelayNode](https://developer.mozilla.org/docs/Web/API/DelayNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DelayNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/DelayNode>
 **/
 @:native("DelayNode") extern class DelayNode extends AudioNode {
 	/**
+		The `delayTime` property of the `DelayNode` interface is an [a-rate](https://developer.mozilla.org/en-US/docs/Web/API/AudioParam#a-rate) `AudioParam` representing the amount of delay to apply.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DelayNode/delayTime>
 	**/
 	var delayTime(default, null) : AudioParam;
 	/**
+		The **`DelayNode()`** constructor of the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) creates a new `DelayNode` object with a delay-line; an AudioNode audio-processing module that causes a delay between the arrival of an input data, and its propagation to the output.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DelayNode/DelayNode>
 	**/
 	function new(context:BaseAudioContext, ?options:DelayOptions):Void;

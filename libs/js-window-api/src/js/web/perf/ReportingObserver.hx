@@ -25,22 +25,34 @@
 package js.web.perf;
 
 /**
+	The Reporting API provides a generic reporting mechanism for web applications to use to make reports available based on various platform features (for example [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP), [Permissions-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy), or feature deprecation reports) in a consistent manner.
+	
+	Documentation [ReportingObserver](https://developer.mozilla.org/docs/Web/API/ReportingObserver) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ReportingObserver/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ReportingObserver>
 **/
 @:native("ReportingObserver") extern class ReportingObserver {
 	/**
+		The **`ReportingObserver()`** constructor of the [Reporting API](https://developer.mozilla.org/en-US/docs/Web/API/Reporting_API) creates a new `ReportingObserver` object instance, which can be used to collect and access reports.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ReportingObserver/ReportingObserver>
 	**/
 	function new(callback:ReportingObserverCallback, ?options:ReportingObserverOptions):Void;
 	/**
+		The **`disconnect()`** method of the `ReportingObserver` interface stops a reporting observer that had previously started observing from collecting reports.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ReportingObserver/disconnect>
 	**/
 	function disconnect():Void;
 	/**
+		The **`observe()`** method of the `ReportingObserver` interface instructs a reporting observer to start collecting reports in its report queue.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ReportingObserver/observe>
 	**/
 	function observe():Void;
 	/**
+		The **`takeRecords()`** method of the `ReportingObserver` interface returns the current list of reports contained in the observer's report queue, and empties the queue.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ReportingObserver/takeRecords>
 	**/
 	function takeRecords():ReportList;

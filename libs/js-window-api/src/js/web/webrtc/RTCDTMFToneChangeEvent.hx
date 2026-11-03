@@ -25,14 +25,22 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCDTMFToneChangeEvent`** interface represents events sent to indicate that DTMF tones have started or finished playing. This interface is used by the [`tonechange`](https://developer.mozilla.org/en-US/docs/Web/API/RTCDTMFSender/tonechange_event) event.
+	
+	Documentation [RTCDTMFToneChangeEvent](https://developer.mozilla.org/docs/Web/API/RTCDTMFToneChangeEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCDTMFToneChangeEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFToneChangeEvent>
 **/
 @:native("RTCDTMFToneChangeEvent") extern class RTCDTMFToneChangeEvent extends js.web.dom.Event {
 	/**
+		The read-only property **`RTCDTMFToneChangeEvent.tone`** returns the DTMF character which has just begun to play, or an empty string (`""`). if all queued tones have finished playing (that is, `RTCDTMFSender.toneBuffer` is empty).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFToneChangeEvent/tone>
 	**/
 	var tone(default, null) : String;
 	/**
+		The **`RTCDTMFToneChangeEvent()`** constructor creates a new `RTCDTMFToneChangeEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFToneChangeEvent/RTCDTMFToneChangeEvent>
 	**/
 	function new(type:String, ?eventInitDict:RTCDTMFToneChangeEventInit):Void;

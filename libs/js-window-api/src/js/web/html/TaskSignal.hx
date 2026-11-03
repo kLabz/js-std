@@ -25,15 +25,23 @@
 package js.web.html;
 
 /**
+	The **`TaskSignal`** interface of the [Prioritized Task Scheduling API](https://developer.mozilla.org/en-US/docs/Web/API/Prioritized_Task_Scheduling_API) represents a signal object that allows you to communicate with a prioritized task, and abort it or change the [priority](https://developer.mozilla.org/en-US/docs/Web/API/Prioritized_Task_Scheduling_API#task_priorities) (if required) via a `TaskController` object.
+	
+	Documentation [TaskSignal](https://developer.mozilla.org/docs/Web/API/TaskSignal) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TaskSignal/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TaskSignal>
 **/
 @:native("TaskSignal") extern class TaskSignal extends js.web.dom.AbortSignal {
 	/**
+		The read-only **`priority`** property of the `TaskSignal` interface indicates the signal [priority](https://developer.mozilla.org/en-US/docs/Web/API/Prioritized_Task_Scheduling_API#task_priorities).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TaskSignal/priority>
 	**/
 	var priority(default, null) : TaskPriority;
 	var onprioritychange : EventHandler;
 	/**
+		The **`TaskSignal.any()`** static method takes an iterable of `AbortSignal` objects and returns a `TaskSignal`. The returned task signal is aborted when any of the abort signals is aborted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TaskSignal/any_static>
 	**/
 	static function any(signals:Array<js.web.dom.AbortSignal>, ?init:TaskSignalAnyInit):TaskSignal;

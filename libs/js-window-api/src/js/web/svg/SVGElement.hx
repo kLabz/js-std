@@ -25,14 +25,22 @@
 package js.web.svg;
 
 /**
+	All of the SVG DOM interfaces that correspond directly to elements in the SVG language derive from the `SVGElement` interface.
+	
+	Documentation [SVGElement](https://developer.mozilla.org/docs/Web/API/SVGElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGElement>
 **/
 @:native("SVGElement") extern class SVGElement extends js.web.dom.Element {
 	/**
+		The **`ownerSVGElement`** read-only property of the `SVGElement` interface reflects the nearest ancestor `<svg>` element. `null` if the given element is the outermost `<svg>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/ownerSVGElement>
 	**/
 	var ownerSVGElement(default, null) : Null<SVGSVGElement>;
 	/**
+		The **`viewportElement`** read-only property of the `SVGElement` interface represents the `SVGElement` which established the current viewport. Often the nearest ancestor `<svg>` element. `null` if the given element is the outermost `<svg>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/viewportElement>
 	**/
 	var viewportElement(default, null) : Null<SVGElement>;
@@ -462,48 +470,64 @@ package js.web.svg;
 	**/
 	var onbeforexrselect : js.web.html.EventHandler;
 	/**
+		The **`dataset`** read-only property of the `SVGElement` interface provides read/write access to [custom data attributes](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/data-*) (`data-*`) on elements. It exposes a map of strings (`DOMStringMap`) with an entry for each `data-*` attribute.
+		
 		From interface mixin HTMLOrSVGOrMathMLElement
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/dataset>
 	**/
 	var dataset(default, null) : js.web.html.DOMStringMap;
 	/**
+		The **`nonce`** property of the `SVGElement` interface returns the nonce that is used by [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP) to determine whether a given fetch will be allowed to proceed.
+		
 		From interface mixin HTMLOrSVGOrMathMLElement
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/nonce>
 	**/
 	var nonce : String;
 	/**
+		The **`autofocus`** property of the `SVGElement` interface contains a boolean value reflecting the [`autofocus`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/autofocus) HTML global attribute. It indicates whether the SVG element should be focused when the page loads or when the element becomes shown if the SVG element is inside a `<dialog>` or a [popover](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/popover).
+		
 		From interface mixin HTMLOrSVGOrMathMLElement
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/autofocus>
 	**/
 	var autofocus : Bool;
 	/**
+		The **`tabIndex`** property of the `SVGElement` interface represents the tab order of the current SVG element.
+		
 		From interface mixin HTMLOrSVGOrMathMLElement
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/tabIndex>
 	**/
 	var tabIndex : Int;
 	/**
+		The **`attributeStyleMap`** read-only property of the `SVGElement` interface returns a live `StylePropertyMap` object that contains a list of style properties of the element that are defined in the element's inline `style` attribute, or assigned using the `style` property of the `SVGElement` interface via script.
+		
 		From interface mixin ElementCSSInlineStyle
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/attributeStyleMap>
 	**/
 	var attributeStyleMap(default, null) : js.web.css.StylePropertyMap;
 	/**
+		The read-only **`style`** property of the `SVGElement` interface returns the _inline_ [`style`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/style) of an element in the form of a live `CSSStyleProperties` object. This object can be used to get and set the inline styles of an element.
+		
 		From interface mixin ElementCSSInlineStyle
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/style>
 	**/
 	var style(default, null) : js.web.css.CSSStyleProperties;
 	/**
+		The **`SVGElement.blur()`** method removes keyboard focus from the current SVG element.
+		
 		From interface mixin HTMLOrSVGOrMathMLElement
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/blur>
 	**/
 	function blur():Void;
 	/**
+		The **`SVGElement.focus()`** method sets focus on the specified SVG element, if it can be focused. The focused element is the element that will receive keyboard and similar events by default.
+		
 		From interface mixin HTMLOrSVGOrMathMLElement
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGElement/focus>

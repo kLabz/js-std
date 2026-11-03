@@ -25,14 +25,22 @@
 package js.web.dom;
 
 /**
+	The **`ResizeObserverSize`** interface of the [Resize Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Resize_Observer_API) is used by the `ResizeObserverEntry` interface to access the box sizing properties of the element being observed.
+	
+	Documentation [ResizeObserverSize](https://developer.mozilla.org/docs/Web/API/ResizeObserverSize) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ResizeObserverSize/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverSize>
 **/
 @:native("ResizeObserverSize") extern class ResizeObserverSize {
 	/**
+		The **`inlineSize`** read-only property of the `ResizeObserverSize` interface returns the length of the observed element's border box in the inline dimension. For boxes with a horizontal `writing-mode`, this is the horizontal dimension, or width; if the writing-mode is vertical, this is the vertical dimension, or height.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverSize/inlineSize>
 	**/
 	var inlineSize(default, null) : Float;
 	/**
+		The **`blockSize`** read-only property of the `ResizeObserverSize` interface returns the length of the observed element's border box in the block dimension. For boxes with a horizontal `writing-mode`, this is the vertical dimension, or height; if the writing-mode is vertical, this is the horizontal dimension, or width.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverSize/blockSize>
 	**/
 	var blockSize(default, null) : Float;

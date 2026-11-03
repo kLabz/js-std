@@ -25,10 +25,16 @@
 package js.web.canvas;
 
 /**
+	The **`CanvasPattern`** interface represents an [opaque object](https://en.wikipedia.org/wiki/Opaque_data_type) describing a pattern, based on an image, a canvas, or a video, created by the `CanvasRenderingContext2D.createPattern()` method.
+	
+	Documentation [CanvasPattern](https://developer.mozilla.org/docs/Web/API/CanvasPattern) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CanvasPattern/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CanvasPattern>
 **/
 @:native("CanvasPattern") extern class CanvasPattern {
 	/**
+		The **`CanvasPattern.setTransform()`** method uses a `DOMMatrix` object as the pattern's transformation matrix and invokes it on the pattern.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CanvasPattern/setTransform>
 	**/
 	function setTransform(?transform:js.web.dom.DOMMatrix2DInit):Void;

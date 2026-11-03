@@ -25,9 +25,13 @@
 package js.web.webgl;
 
 /**
+	The **EXT_disjoint_timer_query** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and provides a way to measure the duration of a set of GL commands, without stalling the rendering pipeline.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [EXT_disjoint_timer_query](https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query>
 **/
@@ -40,34 +44,50 @@ package js.web.webgl;
 	static inline var TIMESTAMP_EXT : GLenum = 0x8E28;
 	static inline var GPU_DISJOINT_EXT : GLenum = 0x8FBB;
 	/**
+		The **`EXT_disjoint_timer_query.beginQueryEXT()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) starts a timer query.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/beginQueryEXT>
 	**/
 	function beginQueryEXT(target:GLenum, query:WebGLTimerQueryEXT):Void;
 	/**
+		The **`EXT_disjoint_timer_query.createQueryEXT()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) creates and initializes `WebGLQuery` objects, which track the time needed to fully complete a set of GL commands.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/createQueryEXT>
 	**/
 	function createQueryEXT():WebGLTimerQueryEXT;
 	/**
+		The **`EXT_disjoint_timer_query.deleteQueryEXT()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) deletes a given `WebGLQuery` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/deleteQueryEXT>
 	**/
 	function deleteQueryEXT(query:Null<WebGLTimerQueryEXT>):Void;
 	/**
+		The **`EXT_disjoint_timer_query.endQueryEXT()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) ends a timer query.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/endQueryEXT>
 	**/
 	function endQueryEXT(target:GLenum):Void;
 	/**
+		The **`EXT_disjoint_timer_query.getQueryEXT()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns information about a query target.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/getQueryEXT>
 	**/
 	function getQueryEXT(target:GLenum, pname:GLenum):Any;
 	/**
+		The **`EXT_disjoint_timer_query.getQueryObjectEXT()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns the state of a query object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/getQueryObjectEXT>
 	**/
 	function getQueryObjectEXT(query:WebGLTimerQueryEXT, pname:GLenum):Any;
 	/**
+		The **`EXT_disjoint_timer_query.isQueryEXT()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns `true` if the passed object is a `WebGLQuery` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/isQueryEXT>
 	**/
 	function isQueryEXT(query:Null<WebGLTimerQueryEXT>):Bool;
 	/**
+		The **`EXT_disjoint_timer_query.queryCounterEXT()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) records the current time into the corresponding query object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EXT_disjoint_timer_query/queryCounterEXT>
 	**/
 	function queryCounterEXT(query:WebGLTimerQueryEXT, target:GLenum):Void;

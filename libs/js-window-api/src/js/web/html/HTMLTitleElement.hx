@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`HTMLTitleElement`** interface is implemented by a document's `<title>`. This element inherits all of the properties and methods of the `HTMLElement` interface.
+	
+	Documentation [HTMLTitleElement](https://developer.mozilla.org/docs/Web/API/HTMLTitleElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLTitleElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLTitleElement>
 **/
 @:native("HTMLTitleElement") extern class HTMLTitleElement extends HTMLElement {
 	/**
+		The **`text`** property of the `HTMLTitleElement` interface represents the child text content of the document's title as a string. It contains the `<title>` element's content as text; if HTML tags are included within the `<title>` element, they are included as part of the string value rather than being parsed as HTML.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTitleElement/text>
 	**/
 	var text : String;

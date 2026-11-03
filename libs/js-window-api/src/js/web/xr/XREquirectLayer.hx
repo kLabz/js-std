@@ -25,32 +25,48 @@
 package js.web.xr;
 
 /**
+	The **`XREquirectLayer`** interface of the [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) is a layer that maps [equirectangular](https://en.wikipedia.org/wiki/Equirectangular_projection) coded data onto the inside of a sphere.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XREquirectLayer](https://developer.mozilla.org/docs/Web/API/XREquirectLayer) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XREquirectLayer/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer>
 **/
 @:native("XREquirectLayer") @:require(js_experimental_api, "XREquirectLayer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XREquirectLayer extends XRCompositionLayer {
 	/**
+		The **`space`** property of the `XREquirectLayer` interface represents the layer's spatial relationship with the user's physical environment.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer/space>
 	**/
 	var space : XRSpace;
 	/**
+		The **`transform`** property of the `XREquirectLayer` interface represents the offset and orientation relative to the layer's `space`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer/transform>
 	**/
 	var transform : XRRigidTransform;
 	/**
+		The **`radius`** property of the `XREquirectLayer` interface represents the radius of the sphere.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer/radius>
 	**/
 	var radius : Float;
 	/**
+		The **`centralHorizontalAngle`** property of the `XREquirectLayer` interface represents the central horizontal angle in radians for the sphere.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer/centralHorizontalAngle>
 	**/
 	var centralHorizontalAngle : Float;
 	/**
+		The **`upperVerticalAngle`** property of the `XREquirectLayer` interface represents the upper vertical angle in radians for the sphere.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer/upperVerticalAngle>
 	**/
 	var upperVerticalAngle : Float;
 	/**
+		The **`lowerVerticalAngle`** property of the `XREquirectLayer` interface represents the lower vertical angle in radians for the sphere.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XREquirectLayer/lowerVerticalAngle>
 	**/
 	var lowerVerticalAngle : Float;

@@ -25,22 +25,34 @@
 package js.web.html;
 
 /**
+	The **`DataTransferItem`** object represents one drag data item. During a _drag operation_, each `DragEvent` has a `dataTransfer` property which contains a `list` of drag data items. Each item in the list is a `DataTransferItem` object.
+	
+	Documentation [DataTransferItem](https://developer.mozilla.org/docs/Web/API/DataTransferItem) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DataTransferItem/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem>
 **/
 @:native("DataTransferItem") extern class DataTransferItem {
 	/**
+		The **`kind`** read-only property of the `DataTransferItem` interface returns the kind–a string or a file–of the object representing the _drag data item_.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem/kind>
 	**/
 	var kind(default, null) : String;
 	/**
+		The **`type`** read-only property of the `DataTransferItem` interface returns the type (format) of the object representing the drag data item. The `type` is a Unicode string generally given by a MIME type, although a MIME type is not required.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem/type>
 	**/
 	var type(default, null) : String;
 	/**
+		The **`getAsFile()`** method of the `DataTransferItem` interface returns the drag data item's `File` object if the item is a file. If the item is not a file, this method returns `null`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem/getAsFile>
 	**/
 	function getAsFile():Null<js.web.net.File>;
 	/**
+		The **`getAsFileSystemHandle()`** method of the `DataTransferItem` interface returns a `Promise` that fulfills with a `FileSystemFileHandle` if the dragged item is a file, or fulfills with a `FileSystemDirectoryHandle` if the dragged item is a directory.
+		
 		From partial interface in file-system-access.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem/getAsFileSystemHandle>
@@ -48,10 +60,14 @@ package js.web.html;
 	@:require(js_experimental_api, "DataTransferItem.getAsFileSystemHandle is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getAsFileSystemHandle():js.lib.Promise<Null<js.web.storage.FileSystemHandle>>;
 	/**
+		The **`getAsString()`** method of the `DataTransferItem` interface invokes the given callback with the drag data item's string data as the argument if the item's `kind` is a _Plain unicode string_ (i.e., `kind` is `string`).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem/getAsString>
 	**/
 	function getAsString(callback:Null<FunctionStringCallback>):Void;
 	/**
+		The **`webkitGetAsEntry()`** method of the `DataTransferItem` interface returns a `FileSystemFileEntry` or `FileSystemDirectoryEntry` representing the item if it is a file. If the item isn't a file, `null` is returned.
+		
 		From partial interface in entries-api.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DataTransferItem/webkitGetAsEntry>

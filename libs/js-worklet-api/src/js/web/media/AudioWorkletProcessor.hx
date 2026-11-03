@@ -25,14 +25,22 @@
 package js.web.media;
 
 /**
+	The **`AudioWorkletProcessor`** interface of the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) represents an audio processing code behind a custom `AudioWorkletNode`. It lives in the `AudioWorkletGlobalScope` and runs on the Web Audio rendering thread. In turn, an `AudioWorkletNode` based on it runs on the main thread.
+	
+	Documentation [AudioWorkletProcessor](https://developer.mozilla.org/docs/Web/API/AudioWorkletProcessor) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AudioWorkletProcessor/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletProcessor>
 **/
 @:native("AudioWorkletProcessor") extern class AudioWorkletProcessor {
 	/**
+		The read-only **`port`** property of the `AudioWorkletProcessor` interface returns the associated `MessagePort`. It can be used to communicate between the processor and the `AudioWorkletNode` to which it belongs.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletProcessor/port>
 	**/
 	var port(default, null) : js.web.html.MessagePort;
 	/**
+		The **`AudioWorkletProcessor()`** constructor creates a new `AudioWorkletProcessor` object, which represents an underlying audio processing mechanism of an `AudioWorkletNode`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletProcessor/AudioWorkletProcessor>
 	**/
 	function new():Void;

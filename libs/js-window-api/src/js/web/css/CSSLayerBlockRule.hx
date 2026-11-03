@@ -25,10 +25,16 @@
 package js.web.css;
 
 /**
+	The **`CSSLayerBlockRule`** represents a `@layer` block rule.
+	
+	Documentation [CSSLayerBlockRule](https://developer.mozilla.org/docs/Web/API/CSSLayerBlockRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSLayerBlockRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSLayerBlockRule>
 **/
 @:native("CSSLayerBlockRule") extern class CSSLayerBlockRule extends CSSGroupingRule {
 	/**
+		The read-only **`name`** property of the `CSSLayerBlockRule` interface represents the name of the associated cascade layer.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSLayerBlockRule/name>
 	**/
 	var name(default, null) : String;

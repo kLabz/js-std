@@ -25,10 +25,16 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCRtpScriptTransform`** interface of the [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) is used to insert a [WebRTC Encoded Transform](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Using_Encoded_Transforms) (a `TransformStream` running in a worker thread) into the WebRTC sender and receiver pipelines.
+	
+	Documentation [RTCRtpScriptTransform](https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransform) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransform/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransform>
 **/
 @:native("RTCRtpScriptTransform") extern class RTCRtpScriptTransform {
 	/**
+		The **`RTCRtpScriptTransform()`** constructor creates a new `RTCRtpScriptTransform` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransform/RTCRtpScriptTransform>
 	**/
 	function new(workerOrWorkerAndParameters:WorkerOrWorkerAndParameters, ?options:Any, ?transfer:Array<{ }>):Void;

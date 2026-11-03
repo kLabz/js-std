@@ -23,6 +23,7 @@ jobs:
           npm install
           haxelib newrepo
           haxelib install hxnodejs --always
+          ./fetch-mdn-content.sh
       - name: Regenerate
         working-directory: generator
         run: |

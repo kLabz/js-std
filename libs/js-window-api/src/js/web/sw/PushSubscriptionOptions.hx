@@ -25,16 +25,24 @@
 package js.web.sw;
 
 /**
+	The **`PushSubscriptionOptions`** interface of the `Push API` represents the options associated with a push subscription.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [PushSubscriptionOptions](https://developer.mozilla.org/docs/Web/API/PushSubscriptionOptions) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PushSubscriptionOptions/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/PushSubscriptionOptions>
 **/
 @:native("PushSubscriptionOptions") extern class PushSubscriptionOptions {
 	/**
+		The **`userVisibleOnly`** read-only property of the `PushSubscriptionOptions` interface indicates if the returned push subscription will only be used for messages whose effect is made visible to the user.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PushSubscriptionOptions/userVisibleOnly>
 	**/
 	var userVisibleOnly(default, null) : Bool;
 	/**
+		The **`applicationServerKey`** read-only property of the `PushSubscriptionOptions` interface contains the public key used by the push server.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PushSubscriptionOptions/applicationServerKey>
 	**/
 	var applicationServerKey(default, null) : Null<js.lib.ArrayBuffer>;

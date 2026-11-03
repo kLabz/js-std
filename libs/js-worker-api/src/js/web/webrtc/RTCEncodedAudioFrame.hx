@@ -25,18 +25,28 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCEncodedAudioFrame`** of the [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) represents an encoded audio frame in the WebRTC receiver or sender pipeline, which may be modified using a [WebRTC Encoded Transform](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Using_Encoded_Transforms).
+	
+	Documentation [RTCEncodedAudioFrame](https://developer.mozilla.org/docs/Web/API/RTCEncodedAudioFrame) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCEncodedAudioFrame/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedAudioFrame>
 **/
 @:native("RTCEncodedAudioFrame") extern class RTCEncodedAudioFrame {
 	/**
+		The **`data`** property of the `RTCEncodedAudioFrame` interface returns a buffer containing the data for an encoded frame.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedAudioFrame/data>
 	**/
 	var data : js.lib.ArrayBuffer;
 	/**
+		The **`RTCEncodedAudioFrame()`** constructor creates a new and fully independent `RTCEncodedAudioFrame` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedAudioFrame/RTCEncodedAudioFrame>
 	**/
 	function new(originalFrame:RTCEncodedAudioFrame, ?options:RTCEncodedAudioFrameOptions):Void;
 	/**
+		The **`getMetadata()`** method of the `RTCEncodedAudioFrame` interface returns an object containing the metadata associated with the frame.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedAudioFrame/getMetadata>
 	**/
 	function getMetadata():RTCEncodedAudioFrameMetadata;

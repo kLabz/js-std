@@ -25,18 +25,28 @@
 package js.web.device;
 
 /**
+	The **`Geolocation`** interface represents an object able to obtain the position of the device programmatically. It gives Web content access to the location of the device. This allows a website or app to offer customized results based on the user's location.
+	
+	Documentation [Geolocation](https://developer.mozilla.org/docs/Web/API/Geolocation) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Geolocation/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Geolocation>
 **/
 @:native("Geolocation") extern class Geolocation {
 	/**
+		The **`clearWatch()`** method of the `Geolocation` interface is used to unregister location/error monitoring handlers previously installed using `Geolocation.watchPosition()`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Geolocation/clearWatch>
 	**/
 	function clearWatch(watchId:Int):Void;
 	/**
+		The **`getCurrentPosition()`** method of the `Geolocation` interface is used to get the current position of the device.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Geolocation/getCurrentPosition>
 	**/
 	function getCurrentPosition(successCallback:PositionCallback, ?errorCallback:Null<PositionErrorCallback> = null, ?options:PositionOptions):Void;
 	/**
+		The **`watchPosition()`** method of the `Geolocation` interface is used to register a handler function that will be called automatically each time the position of the device changes. You can also, optionally, specify an error handling callback function.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Geolocation/watchPosition>
 	**/
 	function watchPosition(successCallback:PositionCallback, ?errorCallback:Null<PositionErrorCallback> = null, ?options:PositionOptions):Int;

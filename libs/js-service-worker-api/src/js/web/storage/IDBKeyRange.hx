@@ -25,42 +25,64 @@
 package js.web.storage;
 
 /**
+	The **`IDBKeyRange`** interface of the [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) represents a continuous interval over some data type that is used for keys. Records can be retrieved from `IDBObjectStore` and `IDBIndex` objects using keys or a range of keys. You can limit the range using lower and upper bounds. For example, you can iterate over all values of a key in the value range A–Z.
+	
+	Documentation [IDBKeyRange](https://developer.mozilla.org/docs/Web/API/IDBKeyRange) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange>
 **/
 @:native("IDBKeyRange") extern class IDBKeyRange {
 	/**
+		The **`lower`** read-only property of the `IDBKeyRange` interface returns the lower bound of the key range.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lower>
 	**/
 	var lower(default, null) : Any;
 	/**
+		The **`upper`** read-only property of the `IDBKeyRange` interface returns the upper bound of the key range.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upper>
 	**/
 	var upper(default, null) : Any;
 	/**
+		The **`lowerOpen`** read-only property of the `IDBKeyRange` interface returns a boolean indicating whether the lower-bound value is included in the key range.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lowerOpen>
 	**/
 	var lowerOpen(default, null) : Bool;
 	/**
+		The **`upperOpen`** read-only property of the `IDBKeyRange` interface returns a boolean indicating whether the upper-bound value is included in the key range.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upperOpen>
 	**/
 	var upperOpen(default, null) : Bool;
 	/**
+		The **`bound()`** static method of the `IDBKeyRange` interface creates a new key range with the specified upper and lower bounds. The bounds can be open (that is, the bounds exclude the endpoint values) or closed (that is, the bounds include the endpoint values). By default, the bounds are closed.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/bound_static>
 	**/
 	static function bound(lower:Any, upper:Any, ?lowerOpen:Bool = false, ?upperOpen:Bool = false):IDBKeyRange;
 	/**
+		The `includes()` method of the `IDBKeyRange` interface returns a boolean indicating whether a specified key is inside the key range.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/includes>
 	**/
 	function includes(key:Any):Bool;
 	/**
+		The **`lowerBound()`** static method of the `IDBKeyRange` interface creates a new key range with only a lower bound. By default, it includes the lower endpoint value and is closed.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lowerBound_static>
 	**/
 	static function lowerBound(lower:Any, ?open:Bool = false):IDBKeyRange;
 	/**
+		The **`only()`** static method of the `IDBKeyRange` interface creates a new key range containing a single value.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/only_static>
 	**/
 	static function only(value:Any):IDBKeyRange;
 	/**
+		The **`upperBound()`** static method of the `IDBKeyRange` interface creates a new upper-bound key range. By default, it includes the upper endpoint value and is closed.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upperBound_static>
 	**/
 	static function upperBound(upper:Any, ?open:Bool = false):IDBKeyRange;

@@ -25,7 +25,11 @@
 package js.web.webgpu;
 
 /**
+	The **`WGSLLanguageFeatures`** interface of the `WebGPU API` is a [setlike](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) object that reports the [WGSL language extensions](https://gpuweb.github.io/gpuweb/wgsl/#language-extension) supported by the WebGPU implementation.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [WGSLLanguageFeatures](https://developer.mozilla.org/docs/Web/API/WGSLLanguageFeatures) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WGSLLanguageFeatures/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WGSLLanguageFeatures>
 **/

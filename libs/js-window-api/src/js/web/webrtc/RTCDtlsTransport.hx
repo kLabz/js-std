@@ -25,20 +25,30 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCDtlsTransport`** interface provides access to information about the Datagram Transport Layer Security (**DTLS**) transport over which a `RTCPeerConnection`'s RTP and RTCP packets are sent and received by its `RTCRtpSender` and `RTCRtpReceiver` objects.
+	
+	Documentation [RTCDtlsTransport](https://developer.mozilla.org/docs/Web/API/RTCDtlsTransport) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCDtlsTransport/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCDtlsTransport>
 **/
 @:native("RTCDtlsTransport") extern class RTCDtlsTransport extends js.web.dom.EventTarget {
 	/**
+		The **`iceTransport`** read-only property of the **`RTCDtlsTransport`** interface contains a reference to the underlying `RTCIceTransport`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCDtlsTransport/iceTransport>
 	**/
 	var iceTransport(default, null) : RTCIceTransport;
 	/**
+		The **`state`** read-only property of the `RTCDtlsTransport` interface provides information which describes a Datagram Transport Layer Security (**DTLS**) transport state.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCDtlsTransport/state>
 	**/
 	var state(default, null) : RTCDtlsTransportState;
 	var onstatechange : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
 	/**
+		The **`getRemoteCertificates()`** method of the `RTCDtlsTransport` interface returns the certificate chain of the remote peer of the DTLS connection.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCDtlsTransport/getRemoteCertificates>
 	**/
 	function getRemoteCertificates():Array<js.lib.ArrayBuffer>;

@@ -25,20 +25,30 @@
 package js.web.storage;
 
 /**
+	The **`CookieChangeEvent`** interface of the `Cookie Store API` is the event type of the `change` event fired at a `CookieStore` when any cookies are created or deleted.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [CookieChangeEvent](https://developer.mozilla.org/docs/Web/API/CookieChangeEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CookieChangeEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/CookieChangeEvent>
 **/
 @:native("CookieChangeEvent") extern class CookieChangeEvent extends js.web.dom.Event {
 	/**
+		The **`changed`** read-only property of the `CookieChangeEvent` interface returns an array of the cookies that have been changed.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieChangeEvent/changed>
 	**/
 	var changed(default, null) : Array<CookieListItem>;
 	/**
+		The **`deleted`** read-only property of the `CookieChangeEvent` interface returns an array of the cookies that have been deleted by the given `CookieChangeEvent` instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieChangeEvent/deleted>
 	**/
 	var deleted(default, null) : Array<CookieListItem>;
 	/**
+		The **`CookieChangeEvent()`** constructor creates a new `CookieChangeEvent` object which is the event type of the `change` event fired at a `CookieStore` when any cookie changes occur. This constructor is called by the browser when a change event occurs.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieChangeEvent/CookieChangeEvent>
 	**/
 	function new(type:String, ?eventInitDict:CookieChangeEventInit):Void;

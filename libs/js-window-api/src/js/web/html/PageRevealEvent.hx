@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`PageRevealEvent`** event object is made available inside handler functions for the `pagereveal` event.
+	
+	Documentation [PageRevealEvent](https://developer.mozilla.org/docs/Web/API/PageRevealEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PageRevealEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PageRevealEvent>
 **/
 @:native("PageRevealEvent") extern class PageRevealEvent extends js.web.dom.Event {
 	/**
+		The **`viewTransition`** read-only property of the `PageRevealEvent` interface contains a `ViewTransition` object representing the active view transition for the cross-document navigation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PageRevealEvent/viewTransition>
 	**/
 	var viewTransition(default, null) : Null<js.web.css.ViewTransition>;
 	/**
+		The **`PageRevealEvent()`** constructor creates a new `PageRevealEvent` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PageRevealEvent/PageRevealEvent>
 	**/
 	function new(type:String, ?eventInitDict:PageRevealEventInit):Void;

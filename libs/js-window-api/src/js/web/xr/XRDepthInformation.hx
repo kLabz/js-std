@@ -25,26 +25,38 @@
 package js.web.xr;
 
 /**
+	The **`XRDepthInformation`** interface contains information about the distance from the user's device to the real-world geometry in the user's environment.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRDepthInformation](https://developer.mozilla.org/docs/Web/API/XRDepthInformation) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRDepthInformation/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRDepthInformation>
 **/
 @:native("XRDepthInformation") @:require(js_experimental_api, "XRDepthInformation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRDepthInformation {
 	/**
+		The _read-only_ **`width`** property of the `XRDepthInformation` interface contains the width of the depth buffer (number of columns).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRDepthInformation/width>
 	**/
 	var width(default, null) : Int;
 	/**
+		The _read-only_ **`height`** property of the `XRDepthInformation` interface contains the height of the depth buffer (number of rows).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRDepthInformation/height>
 	**/
 	var height(default, null) : Int;
 	/**
+		The _read-only_ **`normDepthBufferFromNormView`** property of the `XRDepthInformation` interface contains the 3D geometric transform that needs to be applied when indexing into the depth buffer.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRDepthInformation/normDepthBufferFromNormView>
 	**/
 	var normDepthBufferFromNormView(default, null) : XRRigidTransform;
 	/**
+		The _read-only_ **`rawValueToMeters`** property of the `XRDepthInformation` interface contains the scale factor by which the raw depth values must be multiplied in order to get the depths in meters.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRDepthInformation/rawValueToMeters>
 	**/
 	var rawValueToMeters(default, null) : Float;

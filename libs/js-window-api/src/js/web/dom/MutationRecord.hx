@@ -25,42 +25,64 @@
 package js.web.dom;
 
 /**
+	The **`MutationRecord`** is a read-only interface that represents an individual DOM mutation observed by a `MutationObserver`. It is the object inside the array passed to the callback of a `MutationObserver`.
+	
+	Documentation [MutationRecord](https://developer.mozilla.org/docs/Web/API/MutationRecord) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MutationRecord/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/MutationRecord>
 **/
 @:native("MutationRecord") extern class MutationRecord {
 	/**
+		The `MutationRecord` read-only property **`type`** is the type of the `MutationRecord` observed by a `MutationObserver`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/type>
 	**/
 	var type(default, null) : String;
 	/**
+		The `MutationRecord` read-only property **`target`** is the target (i.e., the mutated/changed node) of a mutation observed with a `MutationObserver`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/target>
 	**/
 	var target(default, null) : Node;
 	/**
+		The `MutationRecord` read-only property **`addedNodes`** is a `NodeList` of nodes added to a target node by a mutation observed with a `MutationObserver`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/addedNodes>
 	**/
 	var addedNodes(default, null) : NodeList;
 	/**
+		The `MutationRecord` read-only property **`removedNodes`** is a `NodeList` of nodes removed from a target node by a mutation observed with a `MutationObserver`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/removedNodes>
 	**/
 	var removedNodes(default, null) : NodeList;
 	/**
+		The `MutationRecord` read-only property **`previousSibling`** is the previous sibling of an added or removed child node of the [`target`](https://developer.mozilla.org/en-US/docs/Web/API/MutationRecord/target) of a `MutationObserver`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/previousSibling>
 	**/
 	var previousSibling(default, null) : Null<Node>;
 	/**
+		The `MutationRecord` read-only property **`nextSibling`** is the next sibling of an added or removed child node of the [`target`](https://developer.mozilla.org/en-US/docs/Web/API/MutationRecord/target) of a `MutationObserver`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/nextSibling>
 	**/
 	var nextSibling(default, null) : Null<Node>;
 	/**
+		The `MutationRecord` read-only property **`attributeName`** contains the name of a changed attribute belonging to a node that is observed by a `MutationObserver`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/attributeName>
 	**/
 	var attributeName(default, null) : Null<String>;
 	/**
+		The `MutationRecord` read-only property **`attributeNamespace`** is the namespace of the mutated attribute in the `MutationRecord` observed by a `MutationObserver`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/attributeNamespace>
 	**/
 	var attributeNamespace(default, null) : Null<String>;
 	/**
+		The `MutationRecord` read-only property **`oldValue`** contains the character data or attribute value of an observed node before it was changed.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MutationRecord/oldValue>
 	**/
 	var oldValue(default, null) : Null<String>;

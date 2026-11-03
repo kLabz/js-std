@@ -25,10 +25,16 @@
 package js.web.svg;
 
 /**
+	The **`SVGFEMergeNodeElement`** interface corresponds to the `<feMergeNode>` element.
+	
+	Documentation [SVGFEMergeNodeElement](https://developer.mozilla.org/docs/Web/API/SVGFEMergeNodeElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGFEMergeNodeElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGFEMergeNodeElement>
 **/
 @:native("SVGFEMergeNodeElement") extern class SVGFEMergeNodeElement extends SVGElement {
 	/**
+		The **`in1`** read-only property of the `SVGFEMergeNodeElement` interface reflects the `in` attribute of the given `<feMergeNode>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMergeNodeElement/in1>
 	**/
 	var in1(default, null) : SVGAnimatedString;

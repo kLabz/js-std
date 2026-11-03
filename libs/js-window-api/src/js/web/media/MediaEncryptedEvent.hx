@@ -25,18 +25,28 @@
 package js.web.media;
 
 /**
+	The **`MediaEncryptedEvent`** interface of the [Encrypted Media Extensions API](https://developer.mozilla.org/en-US/docs/Web/API/Encrypted_Media_Extensions_API) contains the information associated with an `encrypted` event sent to a `HTMLMediaElement` when some initialization data is encountered in the media.
+	
+	Documentation [MediaEncryptedEvent](https://developer.mozilla.org/docs/Web/API/MediaEncryptedEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MediaEncryptedEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaEncryptedEvent>
 **/
 @:native("MediaEncryptedEvent") extern class MediaEncryptedEvent extends js.web.dom.Event {
 	/**
+		The read-only **`initDataType`** property of the `MediaKeyMessageEvent` returns a case-sensitive string describing the type of the initialization data associated with this event.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaEncryptedEvent/initDataType>
 	**/
 	var initDataType(default, null) : String;
 	/**
+		The read-only **`initData`** property of the `MediaKeyMessageEvent` returns the initialization data contained in this event, if any.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaEncryptedEvent/initData>
 	**/
 	var initData(default, null) : Null<js.lib.ArrayBuffer>;
 	/**
+		The **`MediaEncryptedEvent`** constructor creates a new `MediaEncryptedEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaEncryptedEvent/MediaEncryptedEvent>
 	**/
 	function new(type:String, ?eventInitDict:MediaEncryptedEventInit):Void;

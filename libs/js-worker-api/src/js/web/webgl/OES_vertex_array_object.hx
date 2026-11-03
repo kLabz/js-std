@@ -25,25 +25,37 @@
 package js.web.webgl;
 
 /**
+	The **OES_vertex_array_object** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and provides vertex array objects (VAOs) which encapsulate vertex array states. These objects keep pointers to vertex data and provide names for different sets of vertex data.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [OES_vertex_array_object](https://developer.mozilla.org/docs/Web/API/OES_vertex_array_object) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/OES_vertex_array_object/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/OES_vertex_array_object>
 **/
 @:native("OES_vertex_array_object") extern class OES_vertex_array_object {
 	static inline var VERTEX_ARRAY_BINDING_OES : GLenum = 0x85B5;
 	/**
+		The **`OES_vertex_array_object.bindVertexArrayOES()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) binds a passed `WebGLVertexArrayObject` object to the buffer.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OES_vertex_array_object/bindVertexArrayOES>
 	**/
 	function bindVertexArrayOES(arrayObject:Null<WebGLVertexArrayObjectOES>):Void;
 	/**
+		The **`OES_vertex_array_object.createVertexArrayOES()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) creates and initializes a `WebGLVertexArrayObject` object that represents a vertex array object (VAO) pointing to vertex array data and which provides names for different sets of vertex data.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OES_vertex_array_object/createVertexArrayOES>
 	**/
 	function createVertexArrayOES():WebGLVertexArrayObjectOES;
 	/**
+		The **`OES_vertex_array_object.deleteVertexArrayOES()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) deletes a given `WebGLVertexArrayObject` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OES_vertex_array_object/deleteVertexArrayOES>
 	**/
 	function deleteVertexArrayOES(arrayObject:Null<WebGLVertexArrayObjectOES>):Void;
 	/**
+		The **`OES_vertex_array_object.isVertexArrayOES()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) returns `true` if the passed object is a `WebGLVertexArrayObject` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OES_vertex_array_object/isVertexArrayOES>
 	**/
 	function isVertexArrayOES(arrayObject:Null<WebGLVertexArrayObjectOES>):GLboolean;

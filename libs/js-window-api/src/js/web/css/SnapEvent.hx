@@ -25,20 +25,30 @@
 package js.web.css;
 
 /**
+	The **`SnapEvent`** interface defines the event object for the `scrollsnapchanging` and `scrollsnapchange` events. Respectively, these fire on a [scroll container](https://developer.mozilla.org/en-US/docs/Glossary/Scroll_container) when the browser determines that a new scroll snap target is pending (will be selected when the current scroll gesture ends), and when a new snap target is selected.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [SnapEvent](https://developer.mozilla.org/docs/Web/API/SnapEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SnapEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/SnapEvent>
 **/
 @:native("SnapEvent") @:require(js_experimental_api, "SnapEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class SnapEvent extends js.web.dom.Event {
 	/**
+		The **`snapTargetBlock`** read-only property of the `SnapEvent` interface returns a reference to the element snapped to in the block direction when the event fired.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SnapEvent/snapTargetBlock>
 	**/
 	var snapTargetBlock(default, null) : Null<js.web.dom.Node>;
 	/**
+		The **`snapTargetInline`** read-only property of the `SnapEvent` interface returns a reference to the element snapped to in the inline direction when the event fired.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SnapEvent/snapTargetInline>
 	**/
 	var snapTargetInline(default, null) : Null<js.web.dom.Node>;
 	/**
+		The **`SnapEvent()`** constructor creates a new `SnapEvent` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SnapEvent/SnapEvent>
 	**/
 	function new(type:String, ?eventInitDict:SnapEventInit):Void;

@@ -25,16 +25,24 @@
 package js.web.net;
 
 /**
+	The **`WebTransportDatagramsWritable`** interface of the `WebTransport API` is a specialized `WritableStream` that can be used to write outgoing datagrams to a `WebTransport` connection.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [WebTransportDatagramsWritable](https://developer.mozilla.org/docs/Web/API/WebTransportDatagramsWritable) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WebTransportDatagramsWritable/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramsWritable>
 **/
 @:native("WebTransportDatagramsWritable") extern class WebTransportDatagramsWritable extends WritableStream {
 	/**
+		The **`sendGroup`** property of the `WebTransportDatagramsWritable` interface represents the `WebTransportSendGroup` that this `WebTransportDatagramsWritable` is grouped under for the purposes of `sendOrder` prioritization.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramsWritable/sendGroup>
 	**/
 	var sendGroup : Null<WebTransportSendGroup>;
 	/**
+		The **`sendOrder`** property of the `WebTransportDatagramsWritable` interface represents the priority of this stream's datagrams relative to other streams and datagrams in the same `sendGroup`, as an integer.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramsWritable/sendOrder>
 	**/
 	var sendOrder : Float;

@@ -25,35 +25,53 @@
 package js.web.svg;
 
 /**
+	The **`SVGImageElement`** interface corresponds to the `<image>` element.
+	
+	Documentation [SVGImageElement](https://developer.mozilla.org/docs/Web/API/SVGImageElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGImageElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement>
 **/
 @:native("SVGImageElement") extern class SVGImageElement extends SVGGraphicsElement {
 	/**
+		The **`x`** read-only property of the `SVGImageElement` interface returns an `SVGAnimatedLength` corresponding to the `x` attribute of the given `<image>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
+		The **`y`** read-only property of the `SVGImageElement` interface returns an `SVGAnimatedLength` corresponding to the `y` attribute of the given `<image>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
+		The **`width`** read-only property of the `SVGImageElement` interface returns an `SVGAnimatedLength` corresponding to the `width` attribute of the given `<image>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
+		The **`height`** read-only property of the `SVGImageElement` interface returns an `SVGAnimatedLength` corresponding to the `height` attribute of the given `<image>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
+		The **`preserveAspectRatio`** read-only property of the `SVGImageElement` interface returns an `SVGAnimatedPreserveAspectRatio` corresponding to the `preserveAspectRatio` attribute of the given `<image>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement/preserveAspectRatio>
 	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 	/**
+		The **`crossOrigin`** property of the `SVGImageElement` interface is a string which specifies the Cross-Origin Resource Sharing (CORS) setting to use when retrieving the image. It reflects the `crossorigin` content attribute of the given `<image>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement/crossOrigin>
 	**/
 	var crossOrigin : Null<String>;
 	var referrerPolicy : String;
 	/**
+		The **`href`** read-only property of the `SVGImageElement` interface reflects the `href` or `xlink:href`  attribute of the given `<image>` element.
+		
 		From interface mixin SVGURIReference
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGImageElement/href>

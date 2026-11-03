@@ -25,20 +25,28 @@
 package js.web.xr;
 
 /**
+	The **`XRHitTestResult`** interface of the [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) contains a single result of a hit test. You can get an array of `XRHitTestResult` objects for a frame by calling `XRFrame.getHitTestResults()`.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRHitTestResult](https://developer.mozilla.org/docs/Web/API/XRHitTestResult) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRHitTestResult/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRHitTestResult>
 **/
 @:native("XRHitTestResult") @:require(js_experimental_api, "XRHitTestResult is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRHitTestResult {
 	/**
+		The **`createAnchor()`** method of the `XRHitTestResult` interface creates an `XRAnchor` from a hit test result that is attached to a real-world object.
+		
 		From partial interface in anchors.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/XRHitTestResult/createAnchor>
 	**/
 	function createAnchor():js.lib.Promise<XRAnchor>;
 	/**
+		The **`getPose()`** method of the `XRHitTestResult` interface returns the `XRPose` of the hit test result relative to the given base space.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRHitTestResult/getPose>
 	**/
 	function getPose(baseSpace:XRSpace):Null<XRPose>;

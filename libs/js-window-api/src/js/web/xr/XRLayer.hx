@@ -25,9 +25,13 @@
 package js.web.xr;
 
 /**
+	The **`XRLayer`** interface of the [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) is the base class for WebXR layer types. It inherits methods from `EventTarget`.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRLayer](https://developer.mozilla.org/docs/Web/API/XRLayer) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRLayer/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRLayer>
 **/

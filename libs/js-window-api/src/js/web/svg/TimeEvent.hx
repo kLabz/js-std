@@ -25,20 +25,30 @@
 package js.web.svg;
 
 /**
+	The **`TimeEvent`** interface, a part of [SVG SMIL](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_animation_with_SMIL) animation, provides specific contextual information associated with Time events.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [TimeEvent](https://developer.mozilla.org/docs/Web/API/TimeEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TimeEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/TimeEvent>
 **/
 @:native("TimeEvent") @:require(js_experimental_api, "TimeEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class TimeEvent extends js.web.dom.Event {
 	/**
+		The **`TimeEvent.view`** read-only property identifies the WindowProxy from which the event was generated.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TimeEvent/view>
 	**/
 	var view(default, null) : Null<js.web.html.Window>;
 	/**
+		The **`TimeEvent.detail`** read-only property provides contextual information about the event, depending on the event type.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TimeEvent/detail>
 	**/
 	var detail(default, null) : Int;
 	/**
+		The **`TimeEvent.initTimeEvent()`** method initializes the value of a `TimeEvent` created using `Document.createEvent()`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TimeEvent/initTimeEvent>
 	**/
 	function initTimeEvent(typeArg:String, ?viewArg:Null<js.web.html.Window> = null, ?detailArg:Int = 0):Void;

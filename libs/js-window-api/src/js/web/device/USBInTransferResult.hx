@@ -25,9 +25,13 @@
 package js.web.device;
 
 /**
+	The `USBInTransferResult` interface of the [WebUSB API](https://developer.mozilla.org/en-US/docs/Web/API/WebUSB_API) provides the result from a call to the `transferIn()` and `controlTransferIn()` methods of the `USBDevice` interface. It represents the result from requesting a transfer of data from the USB device to the USB host.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [USBInTransferResult](https://developer.mozilla.org/docs/Web/API/USBInTransferResult) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/USBInTransferResult/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/USBInTransferResult>
 **/

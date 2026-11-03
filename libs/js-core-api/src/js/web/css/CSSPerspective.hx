@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`CSSPerspective`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the `perspective()` value of the individual `transform` property in CSS.
+	
+	Documentation [CSSPerspective](https://developer.mozilla.org/docs/Web/API/CSSPerspective) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSPerspective/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSPerspective>
 **/
 @:native("CSSPerspective") extern class CSSPerspective extends CSSTransformComponent {
 	/**
+		The **`length`** property of the `CSSPerspective` interface represents the distance from z=0.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSPerspective/length>
 	**/
 	var length : CSSPerspectiveValue;
 	/**
+		The **`CSSPerspective()`** constructor creates a new `CSSPerspective` object representing the `perspective()` value of the individual `transform` property in CSS.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSPerspective/CSSPerspective>
 	**/
 	function new(length:CSSPerspectiveValue):Void;

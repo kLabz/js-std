@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`SharedWorker`** interface represents a specific kind of worker that can be _accessed_ from several browsing contexts, such as multiple windows or iframes. Shared workers implement a different interface than dedicated workers, have a different global scope (`SharedWorkerGlobalScope`), and their constructor is not exposed in `DedicatedWorkerGlobalScope`, so they cannot be instantiated from dedicated workers.
+	
+	Documentation [SharedWorker](https://developer.mozilla.org/docs/Web/API/SharedWorker) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SharedWorker/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SharedWorker>
 **/
 @:native("SharedWorker") extern class SharedWorker extends js.web.dom.EventTarget {
 	/**
+		The **`port`** property of the `SharedWorker` interface returns a `MessagePort` object used to communicate and control the shared worker.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SharedWorker/port>
 	**/
 	var port(default, null) : MessagePort;
@@ -37,6 +43,8 @@ package js.web.html;
 	**/
 	var onerror : EventHandler;
 	/**
+		The **`SharedWorker()`** constructor creates a `SharedWorker` object that executes the script at the specified URL.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SharedWorker/SharedWorker>
 	**/
 	function new(scriptURL:haxe.extern.EitherType<js.web.dom.TrustedScriptURL, String>, ?options:haxe.extern.EitherType<String, SharedWorkerOptions>):Void;

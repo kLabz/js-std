@@ -25,6 +25,10 @@
 package js.web.dom;
 
 /**
+	The **`FragmentDirective`** interface is an object exposed to allow code to check whether or not a browser supports [text fragments](https://developer.mozilla.org/en-US/docs/Web/URI/Reference/Fragment/Text_fragments).
+	
+	Documentation [FragmentDirective](https://developer.mozilla.org/docs/Web/API/FragmentDirective) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/FragmentDirective/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/FragmentDirective>
 **/
 @:native("FragmentDirective") extern class FragmentDirective {

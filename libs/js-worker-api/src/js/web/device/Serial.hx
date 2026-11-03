@@ -25,7 +25,11 @@
 package js.web.device;
 
 /**
+	The `Serial` interface of the [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API) provides attributes and methods for finding and connecting to serial ports from a web page.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [Serial](https://developer.mozilla.org/docs/Web/API/Serial) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Serial/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Serial>
 **/
@@ -33,6 +37,8 @@ package js.web.device;
 	var onconnect : js.web.html.EventHandler;
 	var ondisconnect : js.web.html.EventHandler;
 	/**
+		The **`getPorts()`** method of the `Serial` interface returns a `Promise` that resolves with an array of `SerialPort` objects representing serial ports connected to the host that the origin has permission to access.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Serial/getPorts>
 	**/
 	function getPorts():js.lib.Promise<Array<SerialPort>>;

@@ -25,22 +25,34 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCSctpTransport`** interface provides information which describes a Stream Control Transmission Protocol (**SCTP**) transport. This provides information about limitations of the transport, but also provides a way to access the underlying Datagram Transport Layer Security (**DTLS**) transport over which SCTP packets for all of an `RTCPeerConnection`'s data channels are sent and received.
+	
+	Documentation [RTCSctpTransport](https://developer.mozilla.org/docs/Web/API/RTCSctpTransport) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCSctpTransport/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCSctpTransport>
 **/
 @:native("RTCSctpTransport") extern class RTCSctpTransport extends js.web.dom.EventTarget {
 	/**
+		The **`transport`** read-only property of the `RTCSctpTransport` interface returns a `RTCDtlsTransport` object representing the DTLS transport used for the transmission and receipt of data packets.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCSctpTransport/transport>
 	**/
 	var transport(default, null) : RTCDtlsTransport;
 	/**
+		The **`state`** read-only property of the `RTCSctpTransport` interface provides information which describes a Stream Control Transmission Protocol (SCTP) transport state.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCSctpTransport/state>
 	**/
 	var state(default, null) : RTCSctpTransportState;
 	/**
+		The **`maxMessageSize`** read-only property of the `RTCSctpTransport` interface indicates the maximum size of a message that can be sent using the `RTCDataChannel.send()` method.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCSctpTransport/maxMessageSize>
 	**/
 	var maxMessageSize(default, null) : Null<Float>;
 	/**
+		The **`maxChannels`** read-only property of the `RTCSctpTransport` interface indicates the maximum number of `RTCDataChannel` objects that can be opened simultaneously.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCSctpTransport/maxChannels>
 	**/
 	var maxChannels(default, null) : Null<Int>;

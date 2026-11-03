@@ -25,6 +25,10 @@
 package js.web.svg;
 
 /**
+	The **`SVGComponentTransferFunctionElement`** interface represents a base interface used by the component transfer function interfaces.
+	
+	Documentation [SVGComponentTransferFunctionElement](https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement>
 **/
 @:native("SVGComponentTransferFunctionElement") extern class SVGComponentTransferFunctionElement extends SVGElement {
@@ -35,30 +39,44 @@ package js.web.svg;
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_LINEAR : Int = 4;
 	static inline var SVG_FECOMPONENTTRANSFER_TYPE_GAMMA : Int = 5;
 	/**
+		The **`type`** read-only property of the `SVGComponentTransferFunctionElement` interface reflects the `type` attribute of the given element. It takes one of the [`SVG_FECOMPONENTTRANSFER_TYPE_*`](https://developer.mozilla.org/en-US/docs/Web/API/SVGComponentTransferFunctionElement#static_properties) constants defined on this interface.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/type>
 	**/
 	var type(default, null) : SVGAnimatedEnumeration;
 	/**
+		The **`tableValues`** read-only property of the `SVGComponentTransferFunctionElement` interface reflects the `tableValues` attribute of the given element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/tableValues>
 	**/
 	var tableValues(default, null) : SVGAnimatedNumberList;
 	/**
+		The **`slope`** read-only property of the `SVGComponentTransferFunctionElement` interface reflects the `slope` attribute of the given element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/slope>
 	**/
 	var slope(default, null) : SVGAnimatedNumber;
 	/**
+		The **`intercept`** read-only property of the `SVGComponentTransferFunctionElement` interface reflects the `intercept` attribute of the given element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/intercept>
 	**/
 	var intercept(default, null) : SVGAnimatedNumber;
 	/**
+		The **`amplitude`** read-only property of the `SVGComponentTransferFunctionElement` interface reflects the `amplitude` attribute of the given element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/amplitude>
 	**/
 	var amplitude(default, null) : SVGAnimatedNumber;
 	/**
+		The **`exponent`** read-only property of the `SVGComponentTransferFunctionElement` interface reflects the `exponent` attribute of the given element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/exponent>
 	**/
 	var exponent(default, null) : SVGAnimatedNumber;
 	/**
+		The **`offset`** read-only property of the `SVGComponentTransferFunctionElement` interface reflects the `offset` attribute of the given element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement/offset>
 	**/
 	var offset(default, null) : SVGAnimatedNumber;

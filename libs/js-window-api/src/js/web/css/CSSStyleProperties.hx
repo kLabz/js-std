@@ -25,10 +25,16 @@
 package js.web.css;
 
 /**
+	The **`CSSStyleProperties`** interface of the [CSS Object Model (CSSOM)](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents inline or computed styles available on an element, or the styles associated with a CSS style rule.
+	
+	Documentation [CSSStyleProperties](https://developer.mozilla.org/docs/Web/API/CSSStyleProperties) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSStyleProperties/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSStyleProperties>
 **/
 @:native("CSSStyleProperties") extern class CSSStyleProperties extends CSSStyleDeclaration {
 	/**
+		The **`cssFloat`** property of the `CSSStyleProperties` interface returns the CSS `float` property.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSStyleProperties/cssFloat>
 	**/
 	var cssFloat : String;

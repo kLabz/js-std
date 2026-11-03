@@ -25,20 +25,30 @@
 package js.web.media;
 
 /**
+	The **`MediaKeys`** interface of [Encrypted Media Extensions API](https://developer.mozilla.org/en-US/docs/Web/API/Encrypted_Media_Extensions_API) represents a set of keys that an associated `HTMLMediaElement` can use for decryption of media data during playback.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [MediaKeys](https://developer.mozilla.org/docs/Web/API/MediaKeys) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MediaKeys/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaKeys>
 **/
 @:native("MediaKeys") extern class MediaKeys {
 	/**
+		The `createSession()` method of the `MediaKeys` interface returns a new `MediaKeySession` object, which represents a context for message exchange with a content decryption module (CDM).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaKeys/createSession>
 	**/
 	function createSession(?sessionType:MediaKeySessionType = MediaKeySessionType.TEMPORARY):MediaKeySession;
 	/**
+		The `getStatusForPolicy()` method of the `MediaKeys` interface is used to check whether the Content Decryption Module (CDM) would allow the presentation of encrypted media data using the keys, based on the specified policy requirements.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaKeys/getStatusForPolicy>
 	**/
 	function getStatusForPolicy(?policy:MediaKeysPolicy):js.lib.Promise<MediaKeyStatus>;
 	/**
+		The **`setServerCertificate()`** method of the `MediaKeys` interface provides a server certificate to be used to encrypt messages to the license server.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaKeys/setServerCertificate>
 	**/
 	function setServerCertificate(serverCertificate:js.web.dom.BufferSource):js.lib.Promise<Bool>;

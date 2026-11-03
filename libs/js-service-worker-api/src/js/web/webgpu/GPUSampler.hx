@@ -25,12 +25,18 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUSampler`** interface of the `WebGPU API` represents an object that can control how shaders transform and filter texture resource data.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUSampler](https://developer.mozilla.org/docs/Web/API/GPUSampler) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUSampler/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUSampler>
 **/
 @:native("GPUSampler") extern class GPUSampler {
 	/**
+		The **`label`** property of the `GPUSampler` interface provides a label that can be used to identify the object, for example in `GPUError` messages or console warnings.
+		
 		From interface mixin GPUObjectBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUSampler/label>

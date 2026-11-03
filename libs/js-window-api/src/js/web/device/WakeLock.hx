@@ -25,12 +25,18 @@
 package js.web.device;
 
 /**
+	The **Screen Wake Lock API** provides a way to prevent devices from dimming or locking the screen when an application needs to keep running.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [WakeLock](https://developer.mozilla.org/docs/Web/API/WakeLock) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WakeLock/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WakeLock>
 **/
 @:native("WakeLock") extern class WakeLock {
 	/**
+		The **`request()`** method of the `WakeLock` interface returns a `Promise` that fulfills with a `WakeLockSentinel` object if the system screen wake lock is granted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WakeLock/request>
 	**/
 	function request(?type:WakeLockType = WakeLockType.SCREEN):js.lib.Promise<WakeLockSentinel>;

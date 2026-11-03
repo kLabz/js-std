@@ -25,20 +25,30 @@
 package js.web.css;
 
 /**
+	The **`CSSPseudoElement`** interface represents a [pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements).
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [CSSPseudoElement](https://developer.mozilla.org/docs/Web/API/CSSPseudoElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSPseudoElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSPseudoElement>
 **/
 @:native("CSSPseudoElement") @:require(js_experimental_api, "CSSPseudoElement is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSPseudoElement {
 	/**
+		The **`type`** read-only property of the `CSSPseudoElement` interface returns the type of the pseudo-element as a string, represented in the form of a [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Pseudo-elements#selectors).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSPseudoElement/type>
 	**/
 	var type(default, null) : String;
 	/**
+		The **`element`** read-only property of the `CSSPseudoElement` interface returns a reference to the ultimate originating element of the pseudo-element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSPseudoElement/element>
 	**/
 	var element(default, null) : js.web.dom.Element;
 	/**
+		The **`parent`** read-only property of the `CSSPseudoElement` interface returns a reference to the immediate originating element of the pseudo-element, which can be an `Element`, or a `CSSPseudoElement` in the case of a [nested pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements#nesting_pseudo-elements).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSPseudoElement/parent>
 	**/
 	var parent(default, null) : haxe.extern.EitherType<js.web.dom.Element, CSSPseudoElement>;
@@ -60,6 +70,8 @@ package js.web.css;
 	**/
 	function getBoxQuads(?options:BoxQuadOptions):Array<js.web.dom.DOMQuad>;
 	/**
+		The **`pseudo()`** method of the `CSSPseudoElement` interface returns a `CSSPseudoElement` instance representing a specific [nested pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements#nesting_pseudo-elements).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSPseudoElement/pseudo>
 	**/
 	function pseudo(type:String):Null<CSSPseudoElement>;

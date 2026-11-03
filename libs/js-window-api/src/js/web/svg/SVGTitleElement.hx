@@ -25,6 +25,10 @@
 package js.web.svg;
 
 /**
+	The **`SVGTitleElement`** interface corresponds to the `<title>` element.
+	
+	Documentation [SVGTitleElement](https://developer.mozilla.org/docs/Web/API/SVGTitleElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGTitleElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGTitleElement>
 **/
 @:native("SVGTitleElement") extern class SVGTitleElement extends SVGElement {

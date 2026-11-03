@@ -25,20 +25,30 @@
 package js.web.sw;
 
 /**
+	The **Content Index API** allows developers to register their offline enabled content with the browser.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [ContentIndex](https://developer.mozilla.org/docs/Web/API/ContentIndex) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ContentIndex/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/ContentIndex>
 **/
 @:native("ContentIndex") @:require(js_experimental_api, "ContentIndex is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ContentIndex {
 	/**
+		The **`add()`** method of the `ContentIndex` interface registers an item with the [content index](https://developer.mozilla.org/en-US/docs/Web/API/Content_Index_API).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ContentIndex/add>
 	**/
 	function add(description:ContentDescription):js.lib.Promise<Void>;
 	/**
+		The **`delete()`** method of the `ContentIndex` interface unregisters an item from the currently indexed content.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ContentIndex/delete>
 	**/
 	function delete(id:String):js.lib.Promise<Void>;
 	/**
+		The **`getAll()`** method of the `ContentIndex` interface returns a `Promise` that resolves with an iterable list of content index entries.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ContentIndex/getAll>
 	**/
 	function getAll():js.lib.Promise<Array<ContentDescription>>;

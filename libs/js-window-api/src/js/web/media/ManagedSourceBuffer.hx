@@ -25,7 +25,11 @@
 package js.web.media;
 
 /**
+	The **`ManagedSourceBuffer`** interface of the `Media Source Extensions API` is a `SourceBuffer` that is created by a `ManagedMediaSource` when `addSourceBuffer()` is called. It inherits all the properties and methods of `SourceBuffer`, and additionally fires a `bufferedchange` event whenever the buffered ranges change — including when the user agent evicts content as part of its memory cleanup algorithm.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [ManagedSourceBuffer](https://developer.mozilla.org/docs/Web/API/ManagedSourceBuffer) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ManagedSourceBuffer/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/ManagedSourceBuffer>
 **/

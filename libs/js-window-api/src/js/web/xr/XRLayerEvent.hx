@@ -25,18 +25,26 @@
 package js.web.xr;
 
 /**
+	The **`XRLayerEvent`** interface of the [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) is the event type for events related to a change of state of an `XRLayer` object. These events occur, for example, when the layer needs to be redrawn.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRLayerEvent](https://developer.mozilla.org/docs/Web/API/XRLayerEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRLayerEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRLayerEvent>
 **/
 @:native("XRLayerEvent") @:require(js_experimental_api, "XRLayerEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRLayerEvent extends js.web.dom.Event {
 	/**
+		The **`layer`** property of the `XRLayerEvent` interface is a reference to the `XRLayer` which generated the event.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRLayerEvent/layer>
 	**/
 	var layer(default, null) : XRLayer;
 	/**
+		The **`XRLayerEvent`** constructor creates and returns a new `XRLayerEvent` object. These events relate to a change of state of an `XRLayer` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRLayerEvent/XRLayerEvent>
 	**/
 	function new(type:String, eventInitDict:XRLayerEventInit):Void;

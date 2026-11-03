@@ -25,24 +25,36 @@
 package js.web.css;
 
 /**
+	A **`MediaQueryList`** object stores information on a [media query](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries) applied to a document, with support for both immediate and event-driven matching against the state of the document.
+	
+	Documentation [MediaQueryList](https://developer.mozilla.org/docs/Web/API/MediaQueryList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MediaQueryList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaQueryList>
 **/
 @:native("MediaQueryList") extern class MediaQueryList extends js.web.dom.EventTarget {
 	/**
+		The **`media`** read-only property of the `MediaQueryList` interface is a string representing a serialized media query.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryList/media>
 	**/
 	var media(default, null) : String;
 	/**
+		The **`matches`** read-only property of the `MediaQueryList` interface is a boolean value that returns `true` if the `document` currently matches the media query list, or `false` if not.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryList/matches>
 	**/
 	var matches(default, null) : Bool;
 	var onchange : js.web.html.EventHandler;
 	/**
+		The deprecated **`addListener()`** method of the `MediaQueryList` interface adds a listener to the `MediaQueryListener` that will run a custom callback function in response to the media query status changing.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryList/addListener>
 	**/
 	@:deprecated
 	function addListener(callback:Null<js.web.dom.EventListener>):Void;
 	/**
+		The **`removeListener()`** method of the `MediaQueryList` interface removes a listener from the `MediaQueryListener`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryList/removeListener>
 	**/
 	@:deprecated

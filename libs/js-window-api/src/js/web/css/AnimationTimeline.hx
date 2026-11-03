@@ -25,16 +25,24 @@
 package js.web.css;
 
 /**
+	The `AnimationTimeline` interface of the [Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API) represents the timeline of an animation. This interface exists to define timeline features, inherited by other timeline types:
+	
+	Documentation [AnimationTimeline](https://developer.mozilla.org/docs/Web/API/AnimationTimeline) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AnimationTimeline/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/AnimationTimeline>
 **/
 @:native("AnimationTimeline") extern class AnimationTimeline {
 	/**
+		The **`currentTime`** read-only property of the [Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API)'s `AnimationTimeline` interface returns the timeline's current time in milliseconds, or `null` if the timeline is inactive.
+		
 		From partial interface in web-animations-2.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/AnimationTimeline/currentTime>
 	**/
 	var currentTime(default, null) : Null<CSSNumberish>;
 	/**
+		The **`duration`** read-only property of the [Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API)'s `AnimationTimeline` interface returns the maximum value for this timeline or `null`.
+		
 		From partial interface in web-animations-2.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/AnimationTimeline/duration>

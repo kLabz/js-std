@@ -25,18 +25,26 @@
 package js.web.xr;
 
 /**
+	The [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)'s **`XRSessionEvent`** interface describes an event which indicates the change of the state of an `XRSession`. These events occur, for example, when the session ends or the visibility of its context changes.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRSessionEvent](https://developer.mozilla.org/docs/Web/API/XRSessionEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRSessionEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRSessionEvent>
 **/
 @:native("XRSessionEvent") @:require(js_experimental_api, "XRSessionEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRSessionEvent extends js.web.dom.Event {
 	/**
+		The read-only `XRSessionEvent` interface's **`session`** property indicates which `XRSession` the event is about.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSessionEvent/session>
 	**/
 	var session(default, null) : XRSession;
 	/**
+		The WebXR Device API's **`XRSessionEvent()`** constructor creates and returns a new `XRSessionEvent` object. These objects represent events announcing state changes in an `XRSession` representing an augmented or virtual reality session.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSessionEvent/XRSessionEvent>
 	**/
 	function new(type:String, eventInitDict:XRSessionEventInit):Void;

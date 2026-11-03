@@ -25,18 +25,28 @@
 package js.web.html;
 
 /**
+	The **`DOMStringList`** interface is a legacy type returned by some APIs and represents a non-modifiable list of strings (`DOMString`).
+	
+	Documentation [DOMStringList](https://developer.mozilla.org/docs/Web/API/DOMStringList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DOMStringList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/DOMStringList>
 **/
 @:native("DOMStringList") extern class DOMStringList implements ArrayAccess<Null<String>> {
 	/**
+		The read-only **`length`** property indicates the number of strings in the `DOMStringList`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DOMStringList/length>
 	**/
 	var length(default, null) : Int;
 	/**
+		The **`contains()`** method returns a boolean indicating whether the given string is in the list.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DOMStringList/contains>
 	**/
 	function contains(string:String):Bool;
 	/**
+		The **`item()`** method returns a string from a [`DOMStringList`](https://developer.mozilla.org/en-US/docs/Web/API/DOMStringList) by index.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DOMStringList/item>
 	**/
 	function item(index:Int):Null<String>;

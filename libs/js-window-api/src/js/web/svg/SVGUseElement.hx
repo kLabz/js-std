@@ -29,22 +29,32 @@ package js.web.svg;
 **/
 @:native("SVGUseElement") extern class SVGUseElement extends SVGGraphicsElement {
 	/**
+		The **`x`** read-only property of the `SVGUseElement` interface describes the x-axis coordinate of the start point of the referenced element as an `SVGAnimatedLength`. It reflects the computed value of the `x` attribute on the `<use>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGUseElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
+		The **`y`** read-only property of the `SVGUseElement` interface describes the y-axis coordinate of the start point of the referenced element as an `SVGAnimatedLength`. It reflects the computed value of the `y` attribute on the `<use>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGUseElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
+		The **`width`** read-only property of the `SVGUseElement` interface describes the width of the referenced element as an `SVGAnimatedLength`. It reflects the computed value of the `width` attribute on the `<use>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGUseElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
+		The **`height`** read-only property of the `SVGUseElement` interface describes the height of the referenced element as an `SVGAnimatedLength`. It reflects the computed value of the `height` attribute on the `<use>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGUseElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
+		The **`href`** read-only property of the `SVGUseElement` interface reflects the `href` or `xlink:href`  attribute of the given element.
+		
 		From interface mixin SVGURIReference
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGUseElement/href>

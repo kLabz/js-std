@@ -25,32 +25,48 @@
 package js.web.html;
 
 /**
+	The **`AudioTrack`** interface represents a single audio track from one of the HTML media elements, `<audio>` or `<video>`.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [AudioTrack](https://developer.mozilla.org/docs/Web/API/AudioTrack) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AudioTrack/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/AudioTrack>
 **/
 @:native("AudioTrack") @:require(js_experimental_api, "AudioTrack is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AudioTrack {
 	/**
+		The **`id`** property contains a string which uniquely identifies the track represented by the **`AudioTrack`**.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioTrack/id>
 	**/
 	var id(default, null) : String;
 	/**
+		The **`kind`** property contains a string indicating the category of audio contained in the **`AudioTrack`**.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioTrack/kind>
 	**/
 	var kind(default, null) : String;
 	/**
+		The read-only **`AudioTrack`** property **`label`** returns a string specifying the audio track's human-readable label, if one is available; otherwise, it returns an empty string.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioTrack/label>
 	**/
 	var label(default, null) : String;
 	/**
+		The read-only **`AudioTrack`** property **`language`** returns a string identifying the language used in the audio track.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioTrack/language>
 	**/
 	var language(default, null) : String;
 	/**
+		The **`AudioTrack`** property **`enabled`** specifies whether or not the described audio track is currently enabled for use. If the track is disabled by setting `enabled` to `false`, the track is muted and does not produce audio.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioTrack/enabled>
 	**/
 	var enabled : Bool;
 	/**
+		The read-only **`AudioTrack`** property **`sourceBuffer`** returns the `SourceBuffer` that created the track, or null if the track was not created by a `SourceBuffer` or the `SourceBuffer` has been removed from the `MediaSource.sourceBuffers` attribute of its parent media source.
+		
 		From partial interface in media-source.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioTrack/sourceBuffer>

@@ -25,9 +25,13 @@
 package js.web.device;
 
 /**
+	The **`NDEFReader`** interface of the [Web NFC API](https://developer.mozilla.org/en-US/docs/Web/API/Web_NFC_API) is used to read from and write data to compatible NFC devices, e.g., NFC tags supporting NDEF, when these devices are within the reader's magnetic induction field.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [NDEFReader](https://developer.mozilla.org/docs/Web/API/NDEFReader) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/NDEFReader/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/NDEFReader>
 **/
@@ -35,15 +39,21 @@ package js.web.device;
 	var onreading : js.web.html.EventHandler;
 	var onreadingerror : js.web.html.EventHandler;
 	/**
+		The **`NDEFReader()`** constructor of the `NDEFReader` interface returns a new `NDEFReader` object, which is used to read NDEF messages from compatible NFC devices, e.g., NDEF tags, within the reader's magnetic induction field.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NDEFReader/NDEFReader>
 	**/
 	function new():Void;
 	function makeReadOnly(?options:NDEFMakeReadOnlyOptions):js.lib.Promise<Void>;
 	/**
+		The `scan()` method of the `NDEFReader` interface activates a reading device and returns a `Promise` that either resolves when an NFC tag read operation is scheduled or rejects if a hardware or permission error is encountered. This method triggers a permission prompt if the "nfc" permission has not been previously granted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NDEFReader/scan>
 	**/
 	function scan(?options:NDEFScanOptions):js.lib.Promise<Void>;
 	/**
+		The `write()` method of the `NDEFReader` interface attempts to write an NDEF message to a tag and returns a `Promise` that either resolves when a message has been written to the tag or rejects if a hardware or permission error is encountered. This method triggers a permission prompt if the "nfc" permission has not been previously granted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NDEFReader/write>
 	**/
 	function write(message:NDEFMessageSource, ?options:NDEFWriteOptions):js.lib.Promise<Void>;

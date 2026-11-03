@@ -25,18 +25,28 @@
 package js.web.storage;
 
 /**
+	The **`FileSystemDirectoryEntry`** interface of the [File and Directory Entries API](https://developer.mozilla.org/en-US/docs/Web/API/File_and_Directory_Entries_API) represents a directory in a file system. It provides methods which make it possible to access and manipulate the files in a directory, as well as to access the entries within the directory.
+	
+	Documentation [FileSystemDirectoryEntry](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryEntry) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryEntry/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryEntry>
 **/
 @:native("FileSystemDirectoryEntry") extern class FileSystemDirectoryEntry extends FileSystemEntry {
 	/**
+		The `FileSystemDirectoryEntry` interface's method **`createReader()`** returns a `FileSystemDirectoryReader` object which can be used to read the entries in the directory.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryEntry/createReader>
 	**/
 	function createReader():FileSystemDirectoryReader;
 	/**
+		The `FileSystemDirectoryEntry` interface's method **`getDirectory()`** returns a `FileSystemDirectoryEntry` object corresponding to a directory contained somewhere within the directory subtree rooted at the directory on which it's called.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryEntry/getDirectory>
 	**/
 	function getDirectory(?path:Null<String>, ?options:FileSystemFlags, ?successCallback:FileSystemEntryCallback, ?errorCallback:ErrorCallback):Void;
 	/**
+		The `FileSystemDirectoryEntry` interface's method **`getFile()`** returns a `FileSystemFileEntry` object corresponding to a file contained somewhere within the directory subtree rooted at the directory on which it's called.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryEntry/getFile>
 	**/
 	function getFile(?path:Null<String>, ?options:FileSystemFlags, ?successCallback:FileSystemEntryCallback, ?errorCallback:ErrorCallback):Void;

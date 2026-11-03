@@ -25,14 +25,22 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCErrorEvent`** interface of the [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) represents an error event sent to a WebRTC object. It inherits from the standard `Event` interface, adding RTC-specific information describing the error.
+	
+	Documentation [RTCErrorEvent](https://developer.mozilla.org/docs/Web/API/RTCErrorEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCErrorEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCErrorEvent>
 **/
 @:native("RTCErrorEvent") extern class RTCErrorEvent extends js.web.dom.Event {
 	/**
+		The **`error`** read-only property of the `RTCErrorEvent` interface contains an `RTCError` object that describes the WebRTC-specific details of the error.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCErrorEvent/error>
 	**/
 	var error(default, null) : RTCError;
 	/**
+		The **`RTCErrorEvent()`** constructor creates a new `RTCErrorEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCErrorEvent/RTCErrorEvent>
 	**/
 	function new(type:String, eventInitDict:RTCErrorEventInit):Void;

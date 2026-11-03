@@ -25,6 +25,10 @@
 package js.web.html;
 
 /**
+	The **`HTMLMarqueeElement`** interface provides methods to manipulate `<marquee>` elements.
+	
+	Documentation [HTMLMarqueeElement](https://developer.mozilla.org/docs/Web/API/HTMLMarqueeElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLMarqueeElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLMarqueeElement>
 **/
 @:native("HTMLMarqueeElement") @:deprecated extern class HTMLMarqueeElement extends HTMLElement {

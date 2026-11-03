@@ -25,28 +25,42 @@
 package js.web.html;
 
 /**
+	The **`HTMLStyleElement`** interface represents a `<style>` element. It inherits properties and methods from its parent, `HTMLElement`.
+	
+	Documentation [HTMLStyleElement](https://developer.mozilla.org/docs/Web/API/HTMLStyleElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLStyleElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLStyleElement>
 **/
 @:native("HTMLStyleElement") extern class HTMLStyleElement extends HTMLElement {
 	/**
+		The **`HTMLStyleElement.disabled`** property can be used to get and set whether the stylesheet is disabled (`true`) or not (`false`).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLStyleElement/disabled>
 	**/
 	var disabled : Bool;
 	/**
+		The **`HTMLStyleElement.media`** property specifies the intended destination medium for style information.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLStyleElement/media>
 	**/
 	var media : String;
 	/**
+		The read-only **`blocking`** property of the `HTMLStyleElement` returns a live `DOMTokenList` object containing the operations that should be blocked on the fetching of an external resource. It reflects the `<style>` element's [`blocking`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/style#blocking) content attribute.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLStyleElement/blocking>
 	**/
 	var blocking(default, null) : js.web.dom.DOMTokenList;
 	/**
+		The read-only **`sheet`** property of the `HTMLStyleElement` interface contains the stylesheet associated with that element.
+		
 		From interface mixin LinkStyle
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLStyleElement/sheet>
 	**/
 	var sheet(default, null) : Null<js.web.css.CSSStyleSheet>;
 	/**
+		The **`HTMLStyleElement.type`** property returns the type of the current style. The value mirrors the [HTML `<style>` element's `type` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/style#type).
+		
 		From partial interface in html.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLStyleElement/type>

@@ -25,18 +25,28 @@
 package js.web.media;
 
 /**
+	The **`WaveShaperNode`** interface represents a non-linear distorter.
+	
+	Documentation [WaveShaperNode](https://developer.mozilla.org/docs/Web/API/WaveShaperNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WaveShaperNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WaveShaperNode>
 **/
 @:native("WaveShaperNode") extern class WaveShaperNode extends AudioNode {
 	/**
+		The `curve` property of the `WaveShaperNode` interface is a `Float32Array` of numbers describing the distortion to apply.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WaveShaperNode/curve>
 	**/
 	var curve : Null<js.lib.Float32Array>;
 	/**
+		The `oversample` property of the `WaveShaperNode` interface is an enumerated value indicating if oversampling must be used. Oversampling is a technique for creating more samples (up-sampling) before applying a distortion effect to the audio signal.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WaveShaperNode/oversample>
 	**/
 	var oversample : OverSampleType;
 	/**
+		The **`WaveShaperNode()`** constructor of the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) creates a new `WaveShaperNode` object which is an `AudioNode` that represents a non-linear distorter.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WaveShaperNode/WaveShaperNode>
 	**/
 	function new(context:BaseAudioContext, ?options:WaveShaperOptions):Void;

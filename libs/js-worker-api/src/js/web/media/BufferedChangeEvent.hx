@@ -25,12 +25,18 @@
 package js.web.media;
 
 /**
+	The **`BufferedChangeEvent`** interface of the `Media Source Extensions API` represents the event object for the `bufferedchange` event fired on a `ManagedSourceBuffer`. This event is fired whenever the buffered ranges of the `ManagedSourceBuffer` change, for example as a result of `appendBuffer()`, `remove()`, or `endOfStream()` calls, or when the user agent runs the memory cleanup algorithm.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [BufferedChangeEvent](https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent>
 **/
 @:native("BufferedChangeEvent") @:require(js_experimental_api, "BufferedChangeEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BufferedChangeEvent extends js.web.dom.Event {
 	/**
+		The **`BufferedChangeEvent()`** constructor of the `BufferedChangeEvent` interface creates a new `BufferedChangeEvent` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BufferedChangeEvent/BufferedChangeEvent>
 	**/
 	function new(type:String, ?eventInitDict:BufferedChangeEventInit):Void;

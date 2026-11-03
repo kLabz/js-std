@@ -25,14 +25,22 @@
 package js.web.svg;
 
 /**
+	The **`SVGAnimatedInteger`** interface is used for attributes of basic type [\<integer>](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/Content_type#integer) which can be animated.
+	
+	Documentation [SVGAnimatedInteger](https://developer.mozilla.org/docs/Web/API/SVGAnimatedInteger) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGAnimatedInteger/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedInteger>
 **/
 @:native("SVGAnimatedInteger") extern class SVGAnimatedInteger {
 	/**
+		The **`baseVal`** property of the `SVGAnimatedInteger` interface represents the base (non-animated) value of an animatable [`<integer>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/Content_type#integer).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedInteger/baseVal>
 	**/
 	var baseVal : Int;
 	/**
+		The **`animVal`** property of the `SVGAnimatedInteger` interface represents the animated value of an [`<integer>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/Content_type#integer). If no animation is applied, `animVal` equals `baseVal`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedInteger/animVal>
 	**/
 	var animVal(default, null) : Int;

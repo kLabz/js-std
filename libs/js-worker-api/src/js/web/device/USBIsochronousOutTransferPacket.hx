@@ -25,9 +25,13 @@
 package js.web.device;
 
 /**
+	The `USBIsochronousOutTransferPacket` interface of the [WebUSB API](https://developer.mozilla.org/en-US/docs/Web/API/WebUSB_API) is part of the response from a call to the `isochronousTransferOut()` method of the `USBDevice` interface. It represents the status of an individual packet from a request to transfer data from the USB host to the USB device over an isochronous endpoint.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [USBIsochronousOutTransferPacket](https://developer.mozilla.org/docs/Web/API/USBIsochronousOutTransferPacket) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/USBIsochronousOutTransferPacket/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/USBIsochronousOutTransferPacket>
 **/

@@ -25,6 +25,10 @@
 package js.web.css;
 
 /**
+	The **`CSSSupportsRule`** interface represents a single CSS `@supports` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+	
+	Documentation [CSSSupportsRule](https://developer.mozilla.org/docs/Web/API/CSSSupportsRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSSupportsRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSSupportsRule>
 **/
 @:native("CSSSupportsRule") extern class CSSSupportsRule extends CSSConditionRule {

@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`HTMLModElement`** interface provides special properties (beyond the regular methods and properties available through the `HTMLElement` interface they also have available to them by inheritance) for manipulating modification elements, that is `<del>` and `<ins>`.
+	
+	Documentation [HTMLModElement](https://developer.mozilla.org/docs/Web/API/HTMLModElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLModElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLModElement>
 **/
 @:native("HTMLModElement") extern class HTMLModElement extends HTMLElement {
 	/**
+		The **`cite`** property of the `HTMLModElement` interface indicates the URL of the resource explaining the modification. It reflects the `cite` attribute of the `<del>` element and `<ins>` elements.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLModElement/cite>
 	**/
 	var cite : String;
 	/**
+		The **`dateTime`** property of the `HTMLModElement` interface is a string containing a machine-readable date with an optional time value. It reflects the [`datetime`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/time#datetime) HTML attribute of the `<del>` and `<ins>` elements.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLModElement/dateTime>
 	**/
 	var dateTime : String;

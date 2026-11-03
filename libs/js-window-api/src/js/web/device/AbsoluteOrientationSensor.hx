@@ -25,14 +25,20 @@
 package js.web.device;
 
 /**
+	The **`AbsoluteOrientationSensor`** interface of the [Sensor APIs](https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs) describes the device's physical orientation in relation to the Earth's reference coordinate system.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [AbsoluteOrientationSensor](https://developer.mozilla.org/docs/Web/API/AbsoluteOrientationSensor) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AbsoluteOrientationSensor/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/AbsoluteOrientationSensor>
 **/
 @:native("AbsoluteOrientationSensor") @:require(js_experimental_api, "AbsoluteOrientationSensor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AbsoluteOrientationSensor extends OrientationSensor {
 	/**
+		The **`AbsoluteOrientationSensor()`** constructor creates a new `AbsoluteOrientationSensor` object which describes the device's physical orientation in relation to the Earth's reference coordinate system.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AbsoluteOrientationSensor/AbsoluteOrientationSensor>
 	**/
 	function new(?sensorOptions:OrientationSensorOptions):Void;

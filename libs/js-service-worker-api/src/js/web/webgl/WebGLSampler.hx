@@ -25,6 +25,10 @@
 package js.web.webgl;
 
 /**
+	The **`WebGLSampler`** interface is part of the [WebGL 2](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) API and stores sampling parameters for `WebGLTexture` access inside of a shader.
+	
+	Documentation [WebGLSampler](https://developer.mozilla.org/docs/Web/API/WebGLSampler) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WebGLSampler/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WebGLSampler>
 **/
 @:native("WebGLSampler") extern class WebGLSampler extends WebGLObject {

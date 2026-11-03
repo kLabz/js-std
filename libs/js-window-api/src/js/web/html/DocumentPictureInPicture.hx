@@ -25,17 +25,25 @@
 package js.web.html;
 
 /**
+	The **`DocumentPictureInPicture`** interface of the `Document Picture-in-Picture API` is the entry point for creating and handling document picture-in-picture windows.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [DocumentPictureInPicture](https://developer.mozilla.org/docs/Web/API/DocumentPictureInPicture) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DocumentPictureInPicture/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/DocumentPictureInPicture>
 **/
 @:native("DocumentPictureInPicture") extern class DocumentPictureInPicture extends js.web.dom.EventTarget {
 	/**
+		The **`window`** read-only property of the `DocumentPictureInPicture` interface returns a `Window` instance representing the browsing context inside the Picture-in-Picture window.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentPictureInPicture/window>
 	**/
 	var window(default, null) : Window;
 	var onenter : EventHandler;
 	/**
+		The **`requestWindow()`** method of the `DocumentPictureInPicture` interface opens the Picture-in-Picture window for the current main browsing context. It returns a `Promise` that fulfills with a `Window` instance representing the browsing context inside the Picture-in-Picture window.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentPictureInPicture/requestWindow>
 	**/
 	function requestWindow(?options:DocumentPictureInPictureOptions):js.lib.Promise<Window>;

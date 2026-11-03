@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`HTMLTableSectionElement`** interface provides special properties and methods (beyond the `HTMLElement` interface it also has available to it by inheritance) for manipulating the layout and presentation of sections, that is headers, footers and bodies (`<thead>`, `<tfoot>`, and `<tbody>`, respectively) in an HTML table.
+	
+	Documentation [HTMLTableSectionElement](https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement>
 **/
 @:native("HTMLTableSectionElement") extern class HTMLTableSectionElement extends HTMLElement {
 	/**
+		The **`rows`** read-only property of the `HTMLTableSectionElement` interface returns a live `HTMLCollection` containing the rows in the section. The `HTMLCollection` is live and is automatically updated when rows are added or removed.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/rows>
 	**/
 	var rows(default, null) : js.web.dom.HTMLCollection;
 	/**
+		The **`align`** property of the `HTMLTableSectionElement` interface is a string indicating how to horizontally align text in a `<thead>`, `<tbody>` or `<tfoot>` table section. Individual rows and cells can override it.
+		
 		From partial interface in html.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/align>
@@ -40,6 +48,8 @@ package js.web.html;
 	@:deprecated
 	var align : String;
 	/**
+		The **`ch`** property of the `HTMLTableSectionElement` interface does nothing. It reflects the `char` attribute of the section element.
+		
 		From partial interface in html.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/ch>
@@ -47,6 +57,8 @@ package js.web.html;
 	@:deprecated
 	var ch : String;
 	/**
+		The **`chOff`** property of the `HTMLTableSectionElement` interface does nothing. It reflects the `charoff` attribute of the section element.
+		
 		From partial interface in html.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/chOff>
@@ -54,6 +66,8 @@ package js.web.html;
 	@:deprecated
 	var chOff : String;
 	/**
+		The **`vAlign`** property of the `HTMLTableSectionElement` interface is a string indicating how to vertically align text in a `<thead>`, `<tbody>` or `<tfoot>` table section. Individual rows and cells can override it.
+		
 		From partial interface in html.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/vAlign>
@@ -61,10 +75,14 @@ package js.web.html;
 	@:deprecated
 	var vAlign : String;
 	/**
+		The **`deleteRow()`** method of the `HTMLTableSectionElement` interface removes a specific row (`<tr>`) from the given table sectioning element (`<thead>`, `<tfoot>`, or `<tbody>`).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/deleteRow>
 	**/
 	function deleteRow(index:Int):Void;
 	/**
+		The **`insertRow()`** method of the `HTMLTableSectionElement` interface creates a `<tr>` element, inserts it at the specified position in the given table sectioning element (`<thead>`, `<tfoot>`, or `<tbody>`), and returns it.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableSectionElement/insertRow>
 	**/
 	function insertRow(?index:Int = -1):HTMLTableRowElement;

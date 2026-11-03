@@ -25,6 +25,10 @@
 package js.web.css;
 
 /**
+	The **`CSSFontFaceDescriptors`** interface represents a CSS declaration block for an `@font-face` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+	
+	Documentation [CSSFontFaceDescriptors](https://developer.mozilla.org/docs/Web/API/CSSFontFaceDescriptors) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSFontFaceDescriptors/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSFontFaceDescriptors>
 **/
 @:native("CSSFontFaceDescriptors") extern class CSSFontFaceDescriptors extends CSSStyleDeclaration {

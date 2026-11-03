@@ -25,12 +25,18 @@
 package js.web.xr;
 
 /**
+	The **`XRJointSpace`** interface is an `XRSpace` and represents the position and orientation of an `XRHand` joint.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRJointSpace](https://developer.mozilla.org/docs/Web/API/XRJointSpace) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRJointSpace/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRJointSpace>
 **/
 @:native("XRJointSpace") @:require(js_experimental_api, "XRJointSpace is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRJointSpace extends XRSpace {
 	/**
+		The read-only **`jointName`** property of the `XRJointSpace` interface contains the name of the joint it tracks.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRJointSpace/jointName>
 	**/
 	var jointName(default, null) : XRHandJoint;

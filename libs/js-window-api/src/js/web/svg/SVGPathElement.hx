@@ -25,10 +25,16 @@
 package js.web.svg;
 
 /**
+	The **`SVGPathElement`** interface corresponds to the `<path>` element.
+	
+	Documentation [SVGPathElement](https://developer.mozilla.org/docs/Web/API/SVGPathElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGPathElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement>
 **/
 @:native("SVGPathElement") extern class SVGPathElement extends SVGGeometryElement {
 	/**
+		The **`SVGPathElement.getPathData()`** method returns the sequence of path segments that corresponds to the path data, optionally normalizing the values and segment types.
+		
 		From interface mixin SVGPathData
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement/getPathData>
@@ -36,19 +42,27 @@ package js.web.svg;
 	@:require(js_experimental_api, "SVGPathElement.getPathData is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getPathData(?settings:SVGPathDataSettings):Array<SVGPathSegment>;
 	/**
+		The **`getPathSegmentAtLength()`** method of the `SVGPathElement` interface returns the path segment at a given distance along the path.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement/getPathSegmentAtLength>
 	**/
 	@:require(js_experimental_api, "SVGPathElement.getPathSegmentAtLength is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function getPathSegmentAtLength(distance:Float):Null<SVGPathSegment>;
 	/**
+		The **`getPointAtLength()`** method of the `SVGPathElement` interface returns the point at a given distance along the path.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement/getPointAtLength>
 	**/
 	function getPointAtLength(distance:Float):js.web.dom.DOMPoint;
 	/**
+		The **`getTotalLength()`** method of the `SVGPathElement` interface returns the user agent's computed value for the total length of the path in user units.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement/getTotalLength>
 	**/
 	function getTotalLength():Float;
 	/**
+		The **`SVGPathElement.setPathData()`** method sets the sequence of path segments as the new path data.
+		
 		From interface mixin SVGPathData
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPathElement/setPathData>

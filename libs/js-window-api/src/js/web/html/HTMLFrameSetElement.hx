@@ -25,6 +25,10 @@
 package js.web.html;
 
 /**
+	The **`HTMLFrameSetElement`** interface provides special properties (beyond those of the regular `HTMLElement` interface they also inherit) for manipulating `<frameset>` elements.
+	
+	Documentation [HTMLFrameSetElement](https://developer.mozilla.org/docs/Web/API/HTMLFrameSetElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLFrameSetElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLFrameSetElement>
 **/
 @:native("HTMLFrameSetElement") @:deprecated extern class HTMLFrameSetElement extends HTMLElement {

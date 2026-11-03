@@ -25,10 +25,16 @@
 package js.web.css;
 
 /**
+	The **`CSSLayerStatementRule`** represents a `@layer` statement rule. Unlike `CSSLayerBlockRule`, it doesn't contain other rules and merely defines one or several layers by providing their names.
+	
+	Documentation [CSSLayerStatementRule](https://developer.mozilla.org/docs/Web/API/CSSLayerStatementRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSLayerStatementRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSLayerStatementRule>
 **/
 @:native("CSSLayerStatementRule") extern class CSSLayerStatementRule extends CSSRule {
 	/**
+		The read-only **`nameList`** property of the `CSSLayerStatementRule` interface returns the list of associated cascade layer names. The names can't be modified.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSLayerStatementRule/nameList>
 	**/
 	var nameList(default, null) : Array<String>;

@@ -25,10 +25,16 @@
 package js.web.svg;
 
 /**
+	The **`SVGMPathElement`** interface corresponds to the `<mpath>` element.
+	
+	Documentation [SVGMPathElement](https://developer.mozilla.org/docs/Web/API/SVGMPathElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGMPathElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGMPathElement>
 **/
 @:native("SVGMPathElement") extern class SVGMPathElement extends SVGElement {
 	/**
+		The **`href`** read-only property of the `SVGMPathElement` interface reflects the `href` or `xlink:href`  attribute of the given `<mpath>` element.
+		
 		From interface mixin SVGURIReference
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGMPathElement/href>

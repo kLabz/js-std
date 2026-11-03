@@ -25,10 +25,16 @@
 package js.web.storage;
 
 /**
+	The **`FileSystemFileEntry`** interface of the [File and Directory Entries API](https://developer.mozilla.org/en-US/docs/Web/API/File_and_Directory_Entries_API) represents a file in a file system. It offers properties describing the file's attributes, as well as the `file()` method, which creates a `File` object that can be used to read the file.
+	
+	Documentation [FileSystemFileEntry](https://developer.mozilla.org/docs/Web/API/FileSystemFileEntry) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/FileSystemFileEntry/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/FileSystemFileEntry>
 **/
 @:native("FileSystemFileEntry") extern class FileSystemFileEntry extends FileSystemEntry {
 	/**
+		The `FileSystemFileEntry` interface's method **`file()`** returns a `File` object which can be used to read data from the file represented by the directory entry.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FileSystemFileEntry/file>
 	**/
 	function file(successCallback:FileCallback, ?errorCallback:ErrorCallback):Void;

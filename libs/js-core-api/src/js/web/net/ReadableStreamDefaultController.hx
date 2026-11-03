@@ -25,22 +25,34 @@
 package js.web.net;
 
 /**
+	The **`ReadableStreamDefaultController`** interface of the [Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API) represents a controller allowing control of a `ReadableStream`'s state and internal queue. Default controllers are for streams that are not byte streams.
+	
+	Documentation [ReadableStreamDefaultController](https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultController) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultController/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultController>
 **/
 @:native("ReadableStreamDefaultController") extern class ReadableStreamDefaultController {
 	/**
+		The **`desiredSize`** read-only property of the `ReadableStreamDefaultController` interface returns the desired size required to fill the stream's internal queue.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultController/desiredSize>
 	**/
 	var desiredSize(default, null) : Null<Float>;
 	/**
+		The **`close()`** method of the `ReadableStreamDefaultController` interface closes the associated stream.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultController/close>
 	**/
 	function close():Void;
 	/**
+		The **`enqueue()`** method of the `ReadableStreamDefaultController` interface enqueues a given [chunk](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts#chunks) in the associated stream.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultController/enqueue>
 	**/
 	function enqueue(?chunk:Any):Void;
 	/**
+		The **`error()`** method of the `ReadableStreamDefaultController` interface causes any future interactions with the associated stream to error.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ReadableStreamDefaultController/error>
 	**/
 	function error(?e:Any):Void;

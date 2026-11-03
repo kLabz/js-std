@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`PictureInPictureEvent`** interface represents picture-in-picture-related events, including `enterpictureinpicture`, `leavepictureinpicture` and `resize`.
+	
+	Documentation [PictureInPictureEvent](https://developer.mozilla.org/docs/Web/API/PictureInPictureEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PictureInPictureEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PictureInPictureEvent>
 **/
 @:native("PictureInPictureEvent") extern class PictureInPictureEvent extends js.web.dom.Event {
 	/**
+		The read-only **`pictureInPictureWindow`** property of the `PictureInPictureEvent` interface returns the `PictureInPictureWindow` the event relates to.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PictureInPictureEvent/pictureInPictureWindow>
 	**/
 	var pictureInPictureWindow(default, null) : PictureInPictureWindow;
 	/**
+		The **`PictureInPictureEvent()`** constructor returns a new `PictureInPictureEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PictureInPictureEvent/PictureInPictureEvent>
 	**/
 	function new(type:String, eventInitDict:PictureInPictureEventInit):Void;

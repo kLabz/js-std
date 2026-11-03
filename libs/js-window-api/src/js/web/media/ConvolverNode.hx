@@ -25,18 +25,28 @@
 package js.web.media;
 
 /**
+	The `ConvolverNode` interface is an `AudioNode` that performs a Linear Convolution on a given `AudioBuffer`, often used to achieve a reverb effect. A `ConvolverNode` always has exactly one input and one output.
+	
+	Documentation [ConvolverNode](https://developer.mozilla.org/docs/Web/API/ConvolverNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ConvolverNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ConvolverNode>
 **/
 @:native("ConvolverNode") extern class ConvolverNode extends AudioNode {
 	/**
+		The **`buffer`** property of the `ConvolverNode` interface represents a mono, stereo, or 4-channel `AudioBuffer` containing the (possibly multichannel) impulse response used by the `ConvolverNode` to create the reverb effect.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ConvolverNode/buffer>
 	**/
 	var buffer : Null<AudioBuffer>;
 	/**
+		The `normalize` property of the `ConvolverNode` interface is a boolean that controls whether the impulse response from the buffer will be scaled by an equal-power normalization when the `buffer` attribute is set, or not.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ConvolverNode/normalize>
 	**/
 	var normalize : Bool;
 	/**
+		The **`ConvolverNode()`** constructor of the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) creates a new `ConvolverNode` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ConvolverNode/ConvolverNode>
 	**/
 	function new(context:BaseAudioContext, ?options:ConvolverOptions):Void;

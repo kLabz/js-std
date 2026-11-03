@@ -25,22 +25,32 @@
 package js.web.media;
 
 /**
+	The **`PresentationConnection`** interface of the [Presentation API](https://developer.mozilla.org/en-US/docs/Web/API/Presentation_API) provides methods and properties for managing a single presentation. Each [presentation connection](https://www.w3.org/TR/presentation-api/#dfn-presentation-connection) is represented by a `PresentationConnection` object. Both the [controlling user agent](https://www.w3.org/TR/presentation-api/#dfn-controlling-user-agent) and [receiving user agent](https://www.w3.org/TR/presentation-api/#dfn-receiving-user-agent) _MUST_ implement `PresentationConnection`.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [PresentationConnection](https://developer.mozilla.org/docs/Web/API/PresentationConnection) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PresentationConnection/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection>
 **/
 @:native("PresentationConnection") @:require(js_experimental_api, "PresentationConnection is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PresentationConnection extends js.web.dom.EventTarget {
 	/**
+		The **`id`** read-only property of the `PresentationConnection` interface specifies the [presentation identifier](https://www.w3.org/TR/presentation-api/#dfn-presentation-identifier) of a [presentation connection](https://www.w3.org/TR/presentation-api/#dfn-presentation-connection).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/id>
 	**/
 	var id(default, null) : String;
 	/**
+		The **`url`** read-only property of the `PresentationConnection` interface returns the URL used to create or reconnect to the presentation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/url>
 	**/
 	var url(default, null) : String;
 	/**
+		The **`state`** read-only property of the `PresentationConnection` interface reflects the [presentation connection](https://www.w3.org/TR/presentation-api/#dfn-presentation-connection)'s current state. Depending on the current [`PresentationConnectionState`](https://www.w3.org/TR/presentation-api/#idl-def-presentationconnectionstate), the `state` attribute can hold one of the following values.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/state>
 	**/
 	var state(default, null) : PresentationConnectionState;
@@ -48,31 +58,45 @@ package js.web.media;
 	var onclose : js.web.html.EventHandler;
 	var onterminate : js.web.html.EventHandler;
 	/**
+		When a `PresentationConnection` object is created, its `binaryType` IDL attribute _MUST_ be set to the string `"arraybuffer"`. Upon getting, the attribute _MUST_ return its most recent value (the value it was last set as). Upon setting, the user agent _MUST_ set the IDL attribute to the new value.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/binaryType>
 	**/
 	var binaryType : js.web.net.BinaryType;
 	var onmessage : js.web.html.EventHandler;
 	/**
+		When the `close()` method is called on a `PresentationConnection`, the user agent begins the process of closing the connection by sending an empty `closeMessage` with the `closeReason` set to `closed`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/close>
 	**/
 	function close():Void;
 	/**
+		The **`send()`** method of the `PresentationConnection` interface tells a controlling browsing context to send binary or text data to a presenting browsing context.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/send>
 	**/
 	overload function send(message:String):Void;
 	/**
+		The **`send()`** method of the `PresentationConnection` interface tells a controlling browsing context to send binary or text data to a presenting browsing context.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/send>
 	**/
 	overload function send(data:js.web.net.Blob):Void;
 	/**
+		The **`send()`** method of the `PresentationConnection` interface tells a controlling browsing context to send binary or text data to a presenting browsing context.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/send>
 	**/
 	overload function send(data:js.lib.ArrayBuffer):Void;
 	/**
+		The **`send()`** method of the `PresentationConnection` interface tells a controlling browsing context to send binary or text data to a presenting browsing context.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/send>
 	**/
 	overload function send(data:js.lib.ArrayBufferView):Void;
 	/**
+		When the `terminate()` method is called on a `PresentationConnection`, the user agent begins the process of terminating the presentation. The exact process differs depending on whether `terminate()` is called in the controlling or the presenting context.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/terminate>
 	**/
 	function terminate():Void;

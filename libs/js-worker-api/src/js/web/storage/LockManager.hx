@@ -25,20 +25,30 @@
 package js.web.storage;
 
 /**
+	The **`LockManager`** interface of the [Web Locks API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Locks_API) provides methods for requesting a new `Lock` object and querying for an existing `Lock` object. To get an instance of `LockManager`, call `navigator.locks`.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [LockManager](https://developer.mozilla.org/docs/Web/API/LockManager) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/LockManager/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/LockManager>
 **/
 @:native("LockManager") extern class LockManager {
 	/**
+		The **`query()`** method of the `LockManager` interface returns a `Promise` that resolves with an object containing information about held and pending locks.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LockManager/query>
 	**/
 	function query():js.lib.Promise<LockManagerSnapshot>;
 	/**
+		The **`request()`** method of the `LockManager` interface requests a `Lock` object with parameters specifying its name and characteristics. The requested `Lock` is passed to a callback, while the function itself returns a `Promise` that resolves (or rejects) with the result of the callback after the lock is released, or rejects if the request is aborted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LockManager/request>
 	**/
 	overload function request(name:String, callback:LockGrantedCallback):js.lib.Promise<Any>;
 	/**
+		The **`request()`** method of the `LockManager` interface requests a `Lock` object with parameters specifying its name and characteristics. The requested `Lock` is passed to a callback, while the function itself returns a `Promise` that resolves (or rejects) with the result of the callback after the lock is released, or rejects if the request is aborted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/LockManager/request>
 	**/
 	overload function request(name:String, options:LockOptions, callback:LockGrantedCallback):js.lib.Promise<Any>;

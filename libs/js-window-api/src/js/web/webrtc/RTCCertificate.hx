@@ -25,14 +25,22 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCCertificate`** interface of the [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) provides an object representing a certificate that an `RTCPeerConnection` uses to authenticate.
+	
+	Documentation [RTCCertificate](https://developer.mozilla.org/docs/Web/API/RTCCertificate) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCCertificate/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCCertificate>
 **/
 @:native("RTCCertificate") extern class RTCCertificate {
 	/**
+		The read-only **`expires`** property of the `RTCCertificate` interface returns the expiration date of the certificate.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCCertificate/expires>
 	**/
 	var expires(default, null) : js.web.perf.EpochTimeStamp;
 	/**
+		The **`getFingerprints()`** method of the **`RTCCertificate`** interface is used to get an array of certificate fingerprints.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCCertificate/getFingerprints>
 	**/
 	function getFingerprints():Array<RTCDtlsFingerprint>;

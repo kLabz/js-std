@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The **`WEBGL_compressed_texture_s3tc`** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and exposes four [S3TC compressed texture formats](https://en.wikipedia.org/wiki/S3_Texture_Compression).
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [WEBGL_compressed_texture_s3tc](https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_s3tc) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_s3tc/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_s3tc>
 **/

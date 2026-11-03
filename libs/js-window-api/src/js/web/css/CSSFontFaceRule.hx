@@ -25,10 +25,16 @@
 package js.web.css;
 
 /**
+	The **`CSSFontFaceRule`** interface represents an `@font-face` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+	
+	Documentation [CSSFontFaceRule](https://developer.mozilla.org/docs/Web/API/CSSFontFaceRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSFontFaceRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSFontFaceRule>
 **/
 @:native("CSSFontFaceRule") extern class CSSFontFaceRule extends CSSRule {
 	/**
+		The read-only **`style`** property of the `CSSFontFaceRule` interface returns a `CSSFontFaceDescriptors` object representing the descriptors available in the `@font-face` rule's body.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFontFaceRule/style>
 	**/
 	var style(default, null) : CSSFontFaceDescriptors;

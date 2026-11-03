@@ -25,18 +25,26 @@
 package js.web.misc;
 
 /**
+	The **`EyeDropper`** interface represents an instance of an eyedropper tool that can be opened and used by the user to select colors from the screen.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [EyeDropper](https://developer.mozilla.org/docs/Web/API/EyeDropper) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/EyeDropper/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/EyeDropper>
 **/
 @:native("EyeDropper") @:require(js_experimental_api, "EyeDropper is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class EyeDropper {
 	/**
+		The **`EyeDropper()`** constructor returns a new `EyeDropper` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EyeDropper/EyeDropper>
 	**/
 	function new():Void;
 	/**
+		The **`EyeDropper.open()`** method starts the eyedropper mode, returning a promise which is fulfilled once the user has selected a color and exited the eyedropper mode.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/EyeDropper/open>
 	**/
 	function open(?options:ColorSelectionOptions):js.lib.Promise<ColorSelectionResult>;

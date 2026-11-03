@@ -25,22 +25,34 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCEncodedVideoFrame`** of the [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) represents an encoded video frame in the WebRTC receiver or sender pipeline, which may be modified using a [WebRTC Encoded Transform](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Using_Encoded_Transforms).
+	
+	Documentation [RTCEncodedVideoFrame](https://developer.mozilla.org/docs/Web/API/RTCEncodedVideoFrame) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCEncodedVideoFrame/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedVideoFrame>
 **/
 @:native("RTCEncodedVideoFrame") extern class RTCEncodedVideoFrame {
 	/**
+		The **`type`** read-only property of the `RTCEncodedVideoFrame` interface indicates whether this frame is a key frame or a delta frame.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedVideoFrame/type>
 	**/
 	var type(default, null) : js.web.media.EncodedVideoChunkType;
 	/**
+		The **`data`** property of the `RTCEncodedVideoFrame` interface returns a buffer containing the frame data.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedVideoFrame/data>
 	**/
 	var data : js.lib.ArrayBuffer;
 	/**
+		The **`RTCEncodedVideoFrame()`** constructor creates a new and fully independent `RTCEncodedVideoFrame` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedVideoFrame/RTCEncodedVideoFrame>
 	**/
 	function new(originalFrame:RTCEncodedVideoFrame, ?options:RTCEncodedVideoFrameOptions):Void;
 	/**
+		The **`getMetadata()`** method of the `RTCEncodedVideoFrame` interface returns an object containing the metadata associated with the frame.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCEncodedVideoFrame/getMetadata>
 	**/
 	function getMetadata():RTCEncodedVideoFrameMetadata;

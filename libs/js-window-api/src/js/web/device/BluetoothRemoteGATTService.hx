@@ -25,22 +25,32 @@
 package js.web.device;
 
 /**
+	The `BluetoothRemoteGATTService` interface of the [Web Bluetooth API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API) represents a service provided by a GATT server, including a device, a list of referenced services, and a list of the characteristics of this service.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [BluetoothRemoteGATTService](https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService>
 **/
 @:native("BluetoothRemoteGATTService") @:require(js_experimental_api, "BluetoothRemoteGATTService is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BluetoothRemoteGATTService extends js.web.dom.EventTarget {
 	/**
+		The **`BluetoothGATTService.device`** read-only property returns information about a Bluetooth device through an instance of `BluetoothDevice`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService/device>
 	**/
 	var device(default, null) : BluetoothDevice;
 	/**
+		The **`BluetoothGATTService.uuid`** read-only property returns a string representing the UUID of this service.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService/uuid>
 	**/
 	var uuid(default, null) : UUID;
 	/**
+		The **`BluetoothGATTService.isPrimary`** read-only property returns a boolean value that indicates whether this is a primary service. If it is not a primary service, it is a secondary service.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService/isPrimary>
 	**/
 	var isPrimary(default, null) : Bool;
@@ -61,10 +71,14 @@ package js.web.device;
 	**/
 	var onserviceremoved : js.web.html.EventHandler;
 	/**
+		The **`BluetoothGATTService.getCharacteristic()`** method returns a `Promise` to an instance of `BluetoothRemoteGATTCharacteristic` for a given universally unique identifier (UUID).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService/getCharacteristic>
 	**/
 	function getCharacteristic(characteristic:BluetoothCharacteristicUUID):js.lib.Promise<BluetoothRemoteGATTCharacteristic>;
 	/**
+		The **`BluetoothGATTService.getCharacteristics()`** method returns a `Promise` to a list of `BluetoothRemoteGATTCharacteristic` instances for a given universally unique identifier (UUID).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService/getCharacteristics>
 	**/
 	function getCharacteristics(?characteristic:BluetoothCharacteristicUUID):js.lib.Promise<Array<BluetoothRemoteGATTCharacteristic>>;

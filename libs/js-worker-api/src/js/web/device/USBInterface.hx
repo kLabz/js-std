@@ -25,9 +25,13 @@
 package js.web.device;
 
 /**
+	The `USBInterface` interface of the [WebUSB API](https://developer.mozilla.org/en-US/docs/Web/API/WebUSB_API) provides information about an interface provided by the USB device. An interface represents a feature of the device which implements a particular protocol and may contain endpoints for bidirectional communication.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [USBInterface](https://developer.mozilla.org/docs/Web/API/USBInterface) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/USBInterface/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/USBInterface>
 **/

@@ -25,16 +25,24 @@
 package js.web.sw;
 
 /**
+	The **`BackgroundFetchEvent`** interface of the `Background Fetch API` is the event type for background fetch events dispatched on the `service worker global scope`.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [BackgroundFetchEvent](https://developer.mozilla.org/docs/Web/API/BackgroundFetchEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/BackgroundFetchEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchEvent>
 **/
 @:native("BackgroundFetchEvent") @:require(js_experimental_api, "BackgroundFetchEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BackgroundFetchEvent extends ExtendableEvent {
 	/**
+		The **`registration`** read-only property of the `BackgroundFetchEvent` interface returns a `BackgroundFetchRegistration` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchEvent/registration>
 	**/
 	var registration(default, null) : BackgroundFetchRegistration;
 	/**
+		The **`BackgroundFetchEvent()`** constructor creates a new `BackgroundFetchEvent` object. This constructor is not typically used as the browser creates these objects itself and provides them to background fetch event callbacks.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchEvent/BackgroundFetchEvent>
 	**/
 	function new(type:String, init:BackgroundFetchEventInit):Void;

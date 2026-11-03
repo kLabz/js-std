@@ -25,14 +25,22 @@
 package js.web.svg;
 
 /**
+	The **`SVGAnimatedLength`** interface represents attributes of type [\<length>](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/Content_type#length) which can be animated.
+	
+	Documentation [SVGAnimatedLength](https://developer.mozilla.org/docs/Web/API/SVGAnimatedLength) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGAnimatedLength/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedLength>
 **/
 @:native("SVGAnimatedLength") extern class SVGAnimatedLength {
 	/**
+		The **`baseVal`** property of the `SVGAnimatedLength` interface contains the initial value of an SVG enumeration.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedLength/baseVal>
 	**/
 	var baseVal(default, null) : SVGLength;
 	/**
+		The **`animVal`** property of the `SVGAnimatedLength` interface contains the current value of an SVG enumeration. If there is no animation, it is the same value as the `baseVal`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedLength/animVal>
 	**/
 	var animVal(default, null) : SVGLength;

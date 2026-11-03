@@ -25,22 +25,34 @@
 package js.web.css;
 
 /**
+	The **`CSSFontPaletteValuesRule`** interface represents an `@font-palette-values` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+	
+	Documentation [CSSFontPaletteValuesRule](https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule>
 **/
 @:native("CSSFontPaletteValuesRule") extern class CSSFontPaletteValuesRule extends CSSRule {
 	/**
+		The read-only **`name`** property of the `CSSFontPaletteValuesRule` interface represents the name identifying the associated `@font-palette-values` at-rule. A valid name always starts with two dashes, such as `--Alternate`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/name>
 	**/
 	var name(default, null) : String;
 	/**
+		The read-only **`fontFamily`** property of the `CSSFontPaletteValuesRule` interface lists the font families the rule can be applied to. The font families must be _named_ families; _generic_ families like `courier` are not valid.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/fontFamily>
 	**/
 	var fontFamily(default, null) : String;
 	/**
+		The read-only **`basePalette`** property of the `CSSFontPaletteValuesRule` interface indicates the base palette associated with the rule.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/basePalette>
 	**/
 	var basePalette(default, null) : String;
 	/**
+		The read-only **`overrideColors`** property of the `CSSFontPaletteValuesRule` interface is a string containing a list of color index and color pair that are to be used instead. It is specified in the same format as the corresponding `override-colors` descriptor.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/overrideColors>
 	**/
 	var overrideColors(default, null) : String;

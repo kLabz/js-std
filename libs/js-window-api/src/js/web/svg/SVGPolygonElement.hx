@@ -25,16 +25,24 @@
 package js.web.svg;
 
 /**
+	The **`SVGPolygonElement`** interface provides access to the properties of `<polygon>` elements, as well as methods to manipulate them.
+	
+	Documentation [SVGPolygonElement](https://developer.mozilla.org/docs/Web/API/SVGPolygonElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGPolygonElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGPolygonElement>
 **/
 @:native("SVGPolygonElement") extern class SVGPolygonElement extends SVGGeometryElement {
 	/**
+		The **`points`** read-only property of the `SVGPolygonElement` interface reflects the base (i.e., static) value of the element's `points` attribute. Modifications via the `SVGPointList` object are reflected in the `points` attribute, and vice versa.
+		
 		From interface mixin SVGAnimatedPoints
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPolygonElement/points>
 	**/
 	var points(default, null) : SVGPointList;
 	/**
+		The **`animatedPoints`** read-only property of the `SVGPolygonElement` interface reflects the animated value of the element's `points` attribute. If the `points` attribute is not being animated, it contains the same value as the `points` property.
+		
 		From interface mixin SVGAnimatedPoints
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPolygonElement/animatedPoints>

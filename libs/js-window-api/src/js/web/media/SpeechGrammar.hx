@@ -25,17 +25,25 @@
 package js.web.media;
 
 /**
+	The **`SpeechGrammar`** interface of the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) represents a set of words or patterns of words for the recognition service to recognize.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [SpeechGrammar](https://developer.mozilla.org/docs/Web/API/SpeechGrammar) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SpeechGrammar/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/SpeechGrammar>
 **/
 @:native("SpeechGrammar") @:require(js_experimental_api, "SpeechGrammar is experimental (shipped in fewer than two engines); use -D js-experimental-api") @:deprecated extern class SpeechGrammar {
 	/**
+		The **`src`** property of the `SpeechGrammar` interface is used to get or set a string that contains the grammar within the `SpeechGrammar` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechGrammar/src>
 	**/
 	@:deprecated
 	var src : String;
 	/**
+		The optional **`weight`** property of the `SpeechGrammar` interface sets and returns the weight of the `SpeechGrammar` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechGrammar/weight>
 	**/
 	@:deprecated

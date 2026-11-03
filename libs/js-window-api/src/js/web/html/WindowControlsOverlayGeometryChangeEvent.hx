@@ -25,20 +25,30 @@
 package js.web.html;
 
 /**
+	The **`WindowControlsOverlayGeometryChangeEvent`** interface of the [Window Controls Overlay API](https://developer.mozilla.org/en-US/docs/Web/API/Window_Controls_Overlay_API) is passed to `geometrychange` when the size or visibility of a desktop Progress Web App's title bar region changes.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [WindowControlsOverlayGeometryChangeEvent](https://developer.mozilla.org/docs/Web/API/WindowControlsOverlayGeometryChangeEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WindowControlsOverlayGeometryChangeEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlayGeometryChangeEvent>
 **/
 @:native("WindowControlsOverlayGeometryChangeEvent") @:require(js_experimental_api, "WindowControlsOverlayGeometryChangeEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WindowControlsOverlayGeometryChangeEvent extends js.web.dom.Event {
 	/**
+		The **`titlebarAreaRect`** read-only property of the `WindowControlsOverlayGeometryChangeEvent` interface is a `DOMRect` representing the position and size of the area occupied by the title bar in a desktop-installed Progressive Web App.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlayGeometryChangeEvent/titlebarAreaRect>
 	**/
 	var titlebarAreaRect(default, null) : js.web.dom.DOMRect;
 	/**
+		The **`visible`** read-only property of the `WindowControlsOverlayGeometryChangeEvent` interface is a boolean flag that indicates whether the window controls overlay is visible or not in a desktop-installed Progressive Web App.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlayGeometryChangeEvent/visible>
 	**/
 	var visible(default, null) : Bool;
 	/**
+		The **`WindowControlsOverlayGeometryChangeEvent()`** constructor returns a new `WindowControlsOverlayGeometryChangeEvent` object, representing the current geometry of a desktop Progressive Web App's title bar area.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlayGeometryChangeEvent/WindowControlsOverlayGeometryChangeEvent>
 	**/
 	function new(type:String, eventInitDict:WindowControlsOverlayGeometryChangeEventInit):Void;

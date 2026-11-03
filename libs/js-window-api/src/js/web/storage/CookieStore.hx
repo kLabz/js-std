@@ -25,41 +25,61 @@
 package js.web.storage;
 
 /**
+	The **Cookie Store API** is an asynchronous API for managing cookies, available in windows and also [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API).
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [CookieStore](https://developer.mozilla.org/docs/Web/API/CookieStore) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CookieStore/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/CookieStore>
 **/
 @:native("CookieStore") extern class CookieStore extends js.web.dom.EventTarget {
 	var onchange : js.web.html.EventHandler;
 	/**
+		The **`delete()`** method of the `CookieStore` interface deletes a cookie that matches the given `name` or `options` object. The method expires the cookie by changing its date to one in the past.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/delete>
 	**/
 	overload function delete(name:String):js.lib.Promise<Void>;
 	/**
+		The **`delete()`** method of the `CookieStore` interface deletes a cookie that matches the given `name` or `options` object. The method expires the cookie by changing its date to one in the past.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/delete>
 	**/
 	overload function delete(options:CookieStoreDeleteOptions):js.lib.Promise<Void>;
 	/**
+		The **`get()`** method of the `CookieStore` interface returns a `Promise` that resolves to a single cookie matching the given `name` or `options` object. The method will return the first cookie that matches.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/get>
 	**/
 	overload function get(name:String):js.lib.Promise<Null<CookieListItem>>;
 	/**
+		The **`get()`** method of the `CookieStore` interface returns a `Promise` that resolves to a single cookie matching the given `name` or `options` object. The method will return the first cookie that matches.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/get>
 	**/
 	overload function get(?options:CookieStoreGetOptions):js.lib.Promise<Null<CookieListItem>>;
 	/**
+		The **`getAll()`** method of the `CookieStore` interface returns a `Promise` that resolves as an array of cookies that match the `name` or `options` passed to it. Passing no parameters will return all cookies for the current context.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/getAll>
 	**/
 	overload function getAll(name:String):js.lib.Promise<CookieList>;
 	/**
+		The **`getAll()`** method of the `CookieStore` interface returns a `Promise` that resolves as an array of cookies that match the `name` or `options` passed to it. Passing no parameters will return all cookies for the current context.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/getAll>
 	**/
 	overload function getAll(?options:CookieStoreGetOptions):js.lib.Promise<CookieList>;
 	/**
+		The **`set()`** method of the `CookieStore` interface sets a cookie with the given `name` and `value` or `options` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/set>
 	**/
 	overload function set(name:String, value:String):js.lib.Promise<Void>;
 	/**
+		The **`set()`** method of the `CookieStore` interface sets a cookie with the given `name` and `value` or `options` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CookieStore/set>
 	**/
 	overload function set(options:CookieInit):js.lib.Promise<Void>;

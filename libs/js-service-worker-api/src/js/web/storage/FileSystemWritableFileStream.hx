@@ -25,20 +25,30 @@
 package js.web.storage;
 
 /**
+	The **File System API** — with extensions provided via the [**File System Access API**](https://wicg.github.io/file-system-access/) to access files on the device file system — allows read, write and file management capabilities.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [FileSystemWritableFileStream](https://developer.mozilla.org/docs/Web/API/FileSystemWritableFileStream) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/FileSystemWritableFileStream/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/FileSystemWritableFileStream>
 **/
 @:native("FileSystemWritableFileStream") extern class FileSystemWritableFileStream extends js.web.net.WritableStream {
 	/**
+		The **`seek()`** method of the `FileSystemWritableFileStream` interface updates the current file cursor offset to the position (in bytes) specified when calling the method.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FileSystemWritableFileStream/seek>
 	**/
 	function seek(position:Float):js.lib.Promise<Void>;
 	/**
+		The **`truncate()`** method of the `FileSystemWritableFileStream` interface resizes the file associated with the stream to the specified size in bytes.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FileSystemWritableFileStream/truncate>
 	**/
 	function truncate(size:Float):js.lib.Promise<Void>;
 	/**
+		The **`write()`** method of the `FileSystemWritableFileStream` interface writes content into the file the method is called on, at the current file cursor offset.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FileSystemWritableFileStream/write>
 	**/
 	function write(data:FileSystemWriteChunkType):js.lib.Promise<Void>;

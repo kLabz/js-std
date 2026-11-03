@@ -25,10 +25,16 @@
 package js.web.css;
 
 /**
+	The **`CSSNestedDeclarations`** interface of the [CSS Rule API](https://developer.mozilla.org/en-US/docs/Web/API/CSSRule) is used to group nested `CSSRule`s.
+	
+	Documentation [CSSNestedDeclarations](https://developer.mozilla.org/docs/Web/API/CSSNestedDeclarations) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSNestedDeclarations/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSNestedDeclarations>
 **/
 @:native("CSSNestedDeclarations") extern class CSSNestedDeclarations extends CSSRule {
 	/**
+		The read-only **`style`** property of the `CSSNestedDeclarations` interface represents the styles associated with the nested rules.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSNestedDeclarations/style>
 	**/
 	var style(default, null) : CSSStyleProperties;

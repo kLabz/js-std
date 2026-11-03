@@ -25,16 +25,24 @@
 package js.web.sw;
 
 /**
+	The **`CanMakePaymentEvent`** interface of the `Web-based Payment Handler API` is the event object for the `canmakepayment` event, fired on a payment app's service worker to check whether it is ready to handle a payment. Specifically, it is fired when the merchant website calls the `PaymentRequest()` constructor.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [CanMakePaymentEvent](https://developer.mozilla.org/docs/Web/API/CanMakePaymentEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CanMakePaymentEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/CanMakePaymentEvent>
 **/
 @:native("CanMakePaymentEvent") @:require(js_experimental_api, "CanMakePaymentEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CanMakePaymentEvent extends ExtendableEvent {
 	/**
+		The **`CanMakePaymentEvent()`** constructor creates a new `CanMakePaymentEvent` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CanMakePaymentEvent/CanMakePaymentEvent>
 	**/
 	function new(type:String):Void;
 	/**
+		The **`respondWith()`** method of the `CanMakePaymentEvent` interface enables the service worker to respond appropriately to signal whether it is ready to handle payments.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CanMakePaymentEvent/respondWith>
 	**/
 	function respondWith(canMakePaymentResponse:js.lib.Promise<Bool>):Void;

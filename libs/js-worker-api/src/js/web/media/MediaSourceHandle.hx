@@ -25,6 +25,10 @@
 package js.web.media;
 
 /**
+	The **`MediaSourceHandle`** interface of the `Media Source Extensions API` is a proxy for a `MediaSource` that can be transferred from a dedicated worker back to the main thread and attached to a media element via its `HTMLMediaElement.srcObject` property. `MediaSource` objects are not transferable because they are event targets, hence the need for `MediaSourceHandle`s.
+	
+	Documentation [MediaSourceHandle](https://developer.mozilla.org/docs/Web/API/MediaSourceHandle) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MediaSourceHandle/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaSourceHandle>
 **/
 @:native("MediaSourceHandle") extern class MediaSourceHandle {

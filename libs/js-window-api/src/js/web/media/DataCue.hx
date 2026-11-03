@@ -25,20 +25,30 @@
 package js.web.media;
 
 /**
+	The **`DataCue`** interface represents a cue that associates arbitrary timed data with an audio or video media resource, or exposes timed data from a media resource to web pages. It extends the `TextTrackCue` interface with a `value` property that can hold any data type, and a `type` property that identifies the kind of data.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [DataCue](https://developer.mozilla.org/docs/Web/API/DataCue) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DataCue/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/DataCue>
 **/
 @:native("DataCue") @:require(js_experimental_api, "DataCue is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class DataCue extends js.web.html.TextTrackCue {
 	/**
+		The **`value`** property of the `DataCue` interface represents the data payload of the cue. Unlike `VTTCue`, which carries text content, `DataCue` can hold any data type — such as a JavaScript object, a string, or an `ArrayBuffer` — making it suitable for timed metadata use cases where structured data needs to be synchronized with media playback.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DataCue/value>
 	**/
 	var value : Any;
 	/**
+		The **`type`** read-only property of the `DataCue` interface returns a string identifying the type or schema of the data stored in the cue's `value` property. This is typically a reverse-domain notation string (e.g., `"org.id3"`, `"com.apple.itunes"`) that allows applications to interpret the cue's data payload correctly.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DataCue/type>
 	**/
 	var type(default, null) : String;
 	/**
+		The **`DataCue()`** constructor creates and returns a new `DataCue` object that represents a timed metadata cue over a given time range. The resulting cue can be added to a metadata `TextTrack` using `TextTrack.addCue()`, allowing arbitrary data to be synchronized with audio or video playback.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DataCue/DataCue>
 	**/
 	function new(startTime:Float, endTime:Float, value:Any, ?type:String):Void;

@@ -25,14 +25,22 @@
 package js.web.canvas;
 
 /**
+	The **`Path2D`** interface of the Canvas 2D API is used to declare a path that can then be used on a `CanvasRenderingContext2D` object. The [path methods](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#paths) of the `CanvasRenderingContext2D` interface are also present on this interface, which gives you the convenience of being able to retain and replay your path whenever desired.
+	
+	Documentation [Path2D](https://developer.mozilla.org/docs/Web/API/Path2D) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Path2D/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Path2D>
 **/
 @:native("Path2D") extern class Path2D {
 	/**
+		The **`Path2D()`** constructor returns a newly instantiated `Path2D` object, optionally with another path as an argument (creates a copy), or optionally with a string consisting of [SVG path](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Paths) data.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Path2D/Path2D>
 	**/
 	function new(?path:haxe.extern.EitherType<Path2D, String>):Void;
 	/**
+		The **`Path2D.addPath()`** method of the Canvas 2D API adds one `Path2D` object to another `Path2D` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Path2D/addPath>
 	**/
 	function addPath(path:Path2D, ?transform:js.web.dom.DOMMatrix2DInit):Void;

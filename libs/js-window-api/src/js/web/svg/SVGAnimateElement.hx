@@ -25,6 +25,10 @@
 package js.web.svg;
 
 /**
+	The **`SVGAnimateElement`** interface corresponds to the `<animate>` element.
+	
+	Documentation [SVGAnimateElement](https://developer.mozilla.org/docs/Web/API/SVGAnimateElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGAnimateElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimateElement>
 **/
 @:native("SVGAnimateElement") extern class SVGAnimateElement extends SVGAnimationElement {

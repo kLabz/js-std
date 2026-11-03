@@ -25,22 +25,34 @@
 package js.web.css;
 
 /**
+	The CSS Typed Object Model API simplifies CSS property manipulation by exposing CSS values as typed JavaScript objects rather than strings. This not only simplifies CSS manipulation, but also lessens the negative impact on performance as compared to `HTMLElement.style`.
+	
+	Documentation [StylePropertyMap](https://developer.mozilla.org/docs/Web/API/StylePropertyMap) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/StylePropertyMap/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMap>
 **/
 @:native("StylePropertyMap") extern class StylePropertyMap extends StylePropertyMapReadOnly {
 	/**
+		The **`append()`** method of the `StylePropertyMap` interface adds one or more values to the end of a list-valued CSS property's value list.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMap/append>
 	**/
 	function append(property:String, values:haxe.Rest<haxe.extern.EitherType<CSSStyleValue, String>>):Void;
 	/**
+		The **`clear()`** method of the `StylePropertyMap` interface removes all declarations in the `StylePropertyMap`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMap/clear>
 	**/
 	function clear():Void;
 	/**
+		The **`delete()`** method of the `StylePropertyMap` interface removes the CSS declaration using the given property.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMap/delete>
 	**/
 	function delete(property:String):Void;
 	/**
+		The **`set()`** method of the `StylePropertyMap` interface changes the CSS declaration using the given property.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StylePropertyMap/set>
 	**/
 	function set(property:String, values:haxe.Rest<haxe.extern.EitherType<CSSStyleValue, String>>):Void;

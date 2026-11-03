@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`HTMLDetailsElement`** interface provides special properties (beyond the regular `HTMLElement` interface it also has available to it by inheritance) for manipulating `<details>` elements.
+	
+	Documentation [HTMLDetailsElement](https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement>
 **/
 @:native("HTMLDetailsElement") extern class HTMLDetailsElement extends HTMLElement {
 	/**
+		The **`name`** property of the `HTMLDetailsElement` interface reflects the [`name`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details#name) attribute of `<details>` elements. It enables multiple `<details>` elements to be connected together, where only one of the `<details>` elements can be open at once. This allows developers to easily create UI features such as accordions without scripting.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement/name>
 	**/
 	var name : String;
 	/**
+		The **`open`** property of the `HTMLDetailsElement` interface is a boolean value reflecting the [`open`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details#open) HTML attribute, indicating whether the `<details>`'s contents (not counting the `<summary>`) is to be shown to the user.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement/open>
 	**/
 	var open : Bool;

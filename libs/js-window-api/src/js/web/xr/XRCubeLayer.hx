@@ -25,16 +25,24 @@
 package js.web.xr;
 
 /**
+	The **`XRCubeLayer`** interface of the [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) is a layer that renders directly from a [cubemap](https://en.wikipedia.org/wiki/Cube_mapping) and projects it onto the inside faces of a cube.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRCubeLayer](https://developer.mozilla.org/docs/Web/API/XRCubeLayer) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRCubeLayer/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRCubeLayer>
 **/
 @:native("XRCubeLayer") @:require(js_experimental_api, "XRCubeLayer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRCubeLayer extends XRCompositionLayer {
 	/**
+		The **`space`** property of the `XRCubeLayer` interface represents the layer's spatial relationship with the user's physical environment.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRCubeLayer/space>
 	**/
 	var space : XRSpace;
 	/**
+		The **`orientation`** property of the `XRCubeLayer` interface represents the orientation relative to the `space` property.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRCubeLayer/orientation>
 	**/
 	var orientation : js.web.dom.DOMPointReadOnly;

@@ -25,20 +25,30 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCPeerConnectionIceEvent`** interface represents events that occur in relation to ICE candidates with the target, usually an `RTCPeerConnection`.
+	
+	Documentation [RTCPeerConnectionIceEvent](https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceEvent>
 **/
 @:native("RTCPeerConnectionIceEvent") extern class RTCPeerConnectionIceEvent extends js.web.dom.Event {
 	/**
+		The read-only **`candidate`** property of the `RTCPeerConnectionIceEvent` interface returns the `RTCIceCandidate` associated with the event.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceEvent/candidate>
 	**/
 	var candidate(default, null) : Null<RTCIceCandidate>;
 	/**
+		The read-only **`url`** property of the `RTCPeerConnectionIceEvent` interface returns the URL of the STUN or TURN server used to gather the ICE candidate that caused the event. If the candidate was not gathered from a STUN or TURN server, the value is `null`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceEvent/url>
 	**/
 	@:deprecated
 	@:require(js_experimental_api, "RTCPeerConnectionIceEvent.url is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var url(default, null) : Null<String>;
 	/**
+		The **`RTCPeerConnectionIceEvent()`** constructor creates a new `RTCPeerConnectionIceEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCPeerConnectionIceEvent/RTCPeerConnectionIceEvent>
 	**/
 	function new(type:String, ?eventInitDict:RTCPeerConnectionIceEventInit):Void;

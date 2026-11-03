@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`DragEvent`** interface is a [DOM event](https://developer.mozilla.org/en-US/docs/Web/API/Event) that represents a drag and drop interaction. The user initiates a drag by placing a pointer device (such as a mouse) on the touch surface and then dragging the pointer to a new location (such as another DOM element). Applications are free to interpret a drag and drop interaction in an application-specific way.
+	
+	Documentation [DragEvent](https://developer.mozilla.org/docs/Web/API/DragEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DragEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/DragEvent>
 **/
 @:native("DragEvent") extern class DragEvent extends js.web.dom.MouseEvent {
 	/**
+		The **`DragEvent.dataTransfer`** read-only property holds the drag operation's data (as a `DataTransfer` object).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DragEvent/dataTransfer>
 	**/
 	var dataTransfer(default, null) : Null<DataTransfer>;
 	/**
+		This constructor is used to create a synthetic `DragEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DragEvent/DragEvent>
 	**/
 	function new(type:String, ?eventInitDict:DragEventInit):Void;

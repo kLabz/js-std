@@ -25,16 +25,24 @@
 package js.web.webgl;
 
 /**
+	The **WEBGL_lose_context** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and exposes functions to simulate losing and restoring a `WebGLRenderingContext`.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [WEBGL_lose_context](https://developer.mozilla.org/docs/Web/API/WEBGL_lose_context) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WEBGL_lose_context/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_lose_context>
 **/
 @:native("WEBGL_lose_context") extern class WEBGL_lose_context {
 	/**
+		The **`loseContext()`** method of the `WEBGL_lose_context` extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and allows you to simulate losing the context of a `WebGLRenderingContext`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_lose_context/loseContext>
 	**/
 	function loseContext():Void;
 	/**
+		The **`restoreContext()`** method of the `WEBGL_lose_context` extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and allows you to simulate restoring the context of a `WebGLRenderingContext`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_lose_context/restoreContext>
 	**/
 	function restoreContext():Void;

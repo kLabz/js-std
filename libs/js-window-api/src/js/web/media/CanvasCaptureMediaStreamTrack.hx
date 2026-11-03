@@ -25,14 +25,22 @@
 package js.web.media;
 
 /**
+	The **`CanvasCaptureMediaStreamTrack`** interface of the `Media Capture and Streams API` represents the video track contained in a `MediaStream` being generated from a `<canvas>` following a call to `HTMLCanvasElement.captureStream()`.
+	
+	Documentation [CanvasCaptureMediaStreamTrack](https://developer.mozilla.org/docs/Web/API/CanvasCaptureMediaStreamTrack) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CanvasCaptureMediaStreamTrack/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CanvasCaptureMediaStreamTrack>
 **/
 @:native("CanvasCaptureMediaStreamTrack") extern class CanvasCaptureMediaStreamTrack extends MediaStreamTrack {
 	/**
+		The **`canvas`** read-only property of the `CanvasCaptureMediaStreamTrack` interface returns the `HTMLCanvasElement` from which frames are being captured.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CanvasCaptureMediaStreamTrack/canvas>
 	**/
 	var canvas(default, null) : js.web.html.HTMLCanvasElement;
 	/**
+		The **`requestFrame()`** method of the `CanvasCaptureMediaStreamTrack` interface requests that a frame be captured from the canvas and sent to the stream.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CanvasCaptureMediaStreamTrack/requestFrame>
 	**/
 	function requestFrame():Void;

@@ -25,12 +25,18 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUPipelineLayout`** interface of the `WebGPU API` defines the `GPUBindGroupLayout`s used by a pipeline. `GPUBindGroup`s used with the pipeline during command encoding must have compatible `GPUBindGroupLayout`s.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUPipelineLayout](https://developer.mozilla.org/docs/Web/API/GPUPipelineLayout) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUPipelineLayout/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUPipelineLayout>
 **/
 @:native("GPUPipelineLayout") extern class GPUPipelineLayout {
 	/**
+		The **`label`** property of the `GPUPipelineLayout` interface provides a label that can be used to identify the object, for example in `GPUError` messages or console warnings.
+		
 		From interface mixin GPUObjectBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUPipelineLayout/label>

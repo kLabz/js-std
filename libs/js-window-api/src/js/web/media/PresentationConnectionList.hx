@@ -25,9 +25,13 @@
 package js.web.media;
 
 /**
+	`PresentationConnectionList` is the collection of incoming presentation connections.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [PresentationConnectionList](https://developer.mozilla.org/docs/Web/API/PresentationConnectionList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PresentationConnectionList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/PresentationConnectionList>
 **/

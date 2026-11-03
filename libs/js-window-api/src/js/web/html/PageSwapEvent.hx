@@ -25,18 +25,28 @@
 package js.web.html;
 
 /**
+	The **`PageSwapEvent`** event object is made available inside handler functions for the `pageswap` event.
+	
+	Documentation [PageSwapEvent](https://developer.mozilla.org/docs/Web/API/PageSwapEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PageSwapEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PageSwapEvent>
 **/
 @:native("PageSwapEvent") extern class PageSwapEvent extends js.web.dom.Event {
 	/**
+		The **`activation`** read-only property of the `PageSwapEvent` interface contains a `NavigationActivation` object containing the navigation type and current and destination document history entries for a same-origin navigation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PageSwapEvent/activation>
 	**/
 	var activation(default, null) : Null<NavigationActivation>;
 	/**
+		The **`viewTransition`** read-only property of the `PageRevealEvent` interface contains a `ViewTransition` object representing the active view transition for the cross-document navigation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PageSwapEvent/viewTransition>
 	**/
 	var viewTransition(default, null) : Null<js.web.css.ViewTransition>;
 	/**
+		The **`PageSwapEvent()`** constructor creates a new `PageSwapEvent` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PageSwapEvent/PageSwapEvent>
 	**/
 	function new(type:String, ?eventInitDict:PageSwapEventInit):Void;

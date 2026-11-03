@@ -25,14 +25,22 @@
 package js.web.media;
 
 /**
+	The **`MediaStreamAudioSourceNode`** interface is a type of `AudioNode` which operates as an audio source whose media is received from a `MediaStream` obtained using the WebRTC or Media Capture and Streams APIs.
+	
+	Documentation [MediaStreamAudioSourceNode](https://developer.mozilla.org/docs/Web/API/MediaStreamAudioSourceNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MediaStreamAudioSourceNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaStreamAudioSourceNode>
 **/
 @:native("MediaStreamAudioSourceNode") extern class MediaStreamAudioSourceNode extends AudioNode {
 	/**
+		The `MediaStreamAudioSourceNode` interface's read-only **`mediaStream`** property indicates the `MediaStream` that contains the audio track from which the node is receiving audio.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamAudioSourceNode/mediaStream>
 	**/
 	var mediaStream(default, null) : MediaStream;
 	/**
+		The [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)'s **`MediaStreamAudioSourceNode()`** constructor creates and returns a new `MediaStreamAudioSourceNode` object which uses the first audio track of a given `MediaStream` as its source.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamAudioSourceNode/MediaStreamAudioSourceNode>
 	**/
 	function new(context:AudioContext, options:MediaStreamAudioSourceOptions):Void;

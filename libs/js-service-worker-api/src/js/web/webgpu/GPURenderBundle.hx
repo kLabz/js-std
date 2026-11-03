@@ -25,12 +25,18 @@
 package js.web.webgpu;
 
 /**
+	The **`GPURenderBundle`** interface of the `WebGPU API` represents a container for pre-recorded bundles of commands.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPURenderBundle](https://developer.mozilla.org/docs/Web/API/GPURenderBundle) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPURenderBundle/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundle>
 **/
 @:native("GPURenderBundle") extern class GPURenderBundle {
 	/**
+		The **`label`** property of the `GPURenderBundle` interface is a string providing a label that can be used to identify the object, for example in `GPUError` messages or console warnings.
+		
 		From interface mixin GPUObjectBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPURenderBundle/label>

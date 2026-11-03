@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The **`WEBGL_compressed_texture_astc`** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and exposes [Adaptive Scalable Texture Compression](https://en.wikipedia.org/wiki/Adaptive_Scalable_Texture_Compression) (ASTC) compressed texture formats to WebGL.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [WEBGL_compressed_texture_astc](https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_astc) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_astc/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_astc>
 **/
@@ -59,6 +63,8 @@ package js.web.webgl;
 	static inline var COMPRESSED_SRGB8_ALPHA8_ASTC_12x10_KHR : GLenum = 0x93DC;
 	static inline var COMPRESSED_SRGB8_ALPHA8_ASTC_12x12_KHR : GLenum = 0x93DD;
 	/**
+		The **`WEBGL_compressed_texture_astc.getSupportedProfiles()`** method returns an array of strings containing the names of the ASTC profiles supported by the implementation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_astc/getSupportedProfiles>
 	**/
 	function getSupportedProfiles():Array<String>;

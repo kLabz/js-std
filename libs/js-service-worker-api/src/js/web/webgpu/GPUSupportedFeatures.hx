@@ -25,7 +25,11 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUSupportedFeatures`** interface of the `WebGPU API` is a [`Set`-like object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#set-like_browser_apis) that describes additional functionality supported by a `GPUAdapter`.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUSupportedFeatures](https://developer.mozilla.org/docs/Web/API/GPUSupportedFeatures) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUSupportedFeatures/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedFeatures>
 **/

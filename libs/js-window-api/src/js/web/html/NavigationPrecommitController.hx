@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`NavigationPrecommitController`** interface of the `Navigation API` is passed as an argument to a navigation [precommit handler](https://developer.mozilla.org/en-US/docs/Web/API/NavigateEvent/intercept#precommithandler) callback.
+	
+	Documentation [NavigationPrecommitController](https://developer.mozilla.org/docs/Web/API/NavigationPrecommitController) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/NavigationPrecommitController/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/NavigationPrecommitController>
 **/
 @:native("NavigationPrecommitController") extern class NavigationPrecommitController {
 	/**
+		The **`addHandler()`** method of the `NavigationPrecommitController` interface allows you to dynamically add a handler callback function in precommit code, which will then be run after the navigation has committed.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NavigationPrecommitController/addHandler>
 	**/
 	function addHandler(handler:NavigationInterceptHandler):Void;
 	/**
+		The **`redirect()`** method of the `NavigationPrecommitController` interface redirects the browser to a specified URL and specifies history behavior and any desired state information.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NavigationPrecommitController/redirect>
 	**/
 	function redirect(url:String, ?options:NavigationNavigateOptions):Void;

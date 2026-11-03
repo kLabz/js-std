@@ -25,14 +25,20 @@
 package js.web.xr;
 
 /**
+	The **`XRHitTestSource`** interface of the [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) handles hit test subscriptions. You can get an `XRHitTestSource` object by using the `XRSession.requestHitTestSource()` method.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRHitTestSource](https://developer.mozilla.org/docs/Web/API/XRHitTestSource) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRHitTestSource/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRHitTestSource>
 **/
 @:native("XRHitTestSource") @:require(js_experimental_api, "XRHitTestSource is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRHitTestSource {
 	/**
+		The **`cancel()`** method of the `XRHitTestSource` interface unsubscribes a hit test.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRHitTestSource/cancel>
 	**/
 	function cancel():Void;

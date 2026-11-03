@@ -25,6 +25,10 @@
 package js.web.storage;
 
 /**
+	The **`IDBOpenDBRequest`** interface of the IndexedDB API provides access to the results of requests to open or delete databases (performed using `IDBFactory.open` and `IDBFactory.deleteDatabase`), using specific event handler attributes.
+	
+	Documentation [IDBOpenDBRequest](https://developer.mozilla.org/docs/Web/API/IDBOpenDBRequest) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/IDBOpenDBRequest/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/IDBOpenDBRequest>
 **/
 @:native("IDBOpenDBRequest") extern class IDBOpenDBRequest extends IDBRequest {

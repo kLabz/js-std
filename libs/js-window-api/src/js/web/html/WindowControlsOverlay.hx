@@ -25,17 +25,25 @@
 package js.web.html;
 
 /**
+	The Window Controls Overlay API gives Progressive Web Apps installed on desktop operating systems the ability to hide the default window title bar and display their own content over the full surface area of the app window, turning the control buttons (maximize, minimize, and close) into an overlay.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [WindowControlsOverlay](https://developer.mozilla.org/docs/Web/API/WindowControlsOverlay) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WindowControlsOverlay/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlay>
 **/
 @:native("WindowControlsOverlay") @:require(js_experimental_api, "WindowControlsOverlay is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class WindowControlsOverlay extends js.web.dom.EventTarget {
 	/**
+		The **`visible`** read-only property of the `WindowControlsOverlay` interface returns a Boolean that indicates whether the window controls overlay is visible or not.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlay/visible>
 	**/
 	var visible(default, null) : Bool;
 	var ongeometrychange : EventHandler;
 	/**
+		The **`getTitlebarAreaRect()`** method of the `WindowControlsOverlay` interface queries the current geometry of the title bar area of the Progressive Web App window.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlay/getTitlebarAreaRect>
 	**/
 	function getTitlebarAreaRect():js.web.dom.DOMRect;

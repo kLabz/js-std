@@ -25,6 +25,10 @@
 package js.web.webgl;
 
 /**
+	The **`WebGLProgram`** is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and is a combination of two compiled `WebGLShader`s consisting of a vertex shader and a fragment shader (both written in GLSL).
+	
+	Documentation [WebGLProgram](https://developer.mozilla.org/docs/Web/API/WebGLProgram) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WebGLProgram/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WebGLProgram>
 **/
 @:native("WebGLProgram") extern class WebGLProgram extends WebGLObject {

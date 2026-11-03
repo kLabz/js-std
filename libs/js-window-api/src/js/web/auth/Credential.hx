@@ -25,20 +25,30 @@
 package js.web.auth;
 
 /**
+	The **`Credential`** interface of the [Credential Management API](https://developer.mozilla.org/en-US/docs/Web/API/Credential_Management_API) provides information about an entity (usually a user) normally as a prerequisite to a trust decision.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [Credential](https://developer.mozilla.org/docs/Web/API/Credential) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Credential/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Credential>
 **/
 @:native("Credential") extern class Credential {
 	/**
+		The **`id`** read-only property of the `Credential` interface returns a string containing the credential's identifier. This might be a GUID, username, or email address, or some other value, depending on the type of credential.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Credential/id>
 	**/
 	var id(default, null) : String;
 	/**
+		The **`type`** read-only property of the `Credential` interface returns a string containing the credential's type. Valid values are `password`, `federated`, `public-key`, `identity` and `otp`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Credential/type>
 	**/
 	var type(default, null) : String;
 	/**
+		The **`isConditionalMediationAvailable()`** static method of the `Credential` interface returns a `Promise` which resolves to `false`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Credential/isConditionalMediationAvailable_static>
 	**/
 	static function isConditionalMediationAvailable():js.lib.Promise<Bool>;

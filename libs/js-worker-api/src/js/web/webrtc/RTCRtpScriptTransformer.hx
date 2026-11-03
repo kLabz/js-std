@@ -25,27 +25,41 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCRtpScriptTransformer`** interface of the [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) provides a worker-side [Stream API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API) interface that a [WebRTC Encoded Transform](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Using_Encoded_Transforms) can use to modify encoded media frames in the incoming and outgoing WebRTC pipelines.
+	
+	Documentation [RTCRtpScriptTransformer](https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer>
 **/
 @:native("RTCRtpScriptTransformer") extern class RTCRtpScriptTransformer extends js.web.dom.EventTarget {
 	/**
+		The **`readable`** read-only property of the `RTCRtpScriptTransformer` interface returns a `ReadableStream` instance is a source for encoded media frames.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer/readable>
 	**/
 	var readable(default, null) : js.web.net.ReadableStream;
 	/**
+		The **`writable`** read-only property of the `RTCRtpScriptTransformer` interface returns a `WritableStream` instance that can be used as a sink for encoded media frames enqueued on the corresponding `RTCRtpScriptTransformer.readable`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer/writable>
 	**/
 	var writable(default, null) : js.web.net.WritableStream;
 	var onkeyframerequest : js.web.html.EventHandler;
 	/**
+		The **`options`** read-only property of the `RTCRtpScriptTransformer` interface returns the object that was (optionally) passed as the second argument [during construction](https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpScriptTransform/RTCRtpScriptTransform) of the corresponding `RTCRtpScriptTransform`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer/options>
 	**/
 	var options(default, null) : Any;
 	/**
+		The **`generateKeyFrame()`** method of the `RTCRtpScriptTransformer` interface causes a video encoder to generate a key frame.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer/generateKeyFrame>
 	**/
 	function generateKeyFrame(?rid:String):js.lib.Promise<Void>;
 	/**
+		The **`sendKeyFrameRequest()`** method of the `RTCRtpScriptTransformer` interface may be called by a [WebRTC Encoded Transform](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Using_Encoded_Transforms) that is processing incoming encoded video frames, in order to request a key frame from the sender.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer/sendKeyFrameRequest>
 	**/
 	function sendKeyFrameRequest():js.lib.Promise<Void>;

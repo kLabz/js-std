@@ -25,22 +25,34 @@
 package js.web.svg;
 
 /**
+	The **`SVGForeignObjectElement`** interface provides access to the properties of `<foreignObject>` elements, as well as methods to manipulate them.
+	
+	Documentation [SVGForeignObjectElement](https://developer.mozilla.org/docs/Web/API/SVGForeignObjectElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGForeignObjectElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGForeignObjectElement>
 **/
 @:native("SVGForeignObjectElement") extern class SVGForeignObjectElement extends SVGGraphicsElement {
 	/**
+		The **`x`** read-only property of the `SVGForeignObjectElement` interface describes the x-axis coordinate of the `<foreignObject>` element. It reflects the computed value of the `x` attribute on the `<foreignObject>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGForeignObjectElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
+		The **`y`** read-only property of the `SVGForeignObjectElement` interface describes the y-axis coordinate of the `<foreignObject>` element. It reflects the computed value of the `y` attribute on the `<foreignObject>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGForeignObjectElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
+		The **`width`** read-only property of the `SVGForeignObjectElement` interface describes the width of the `<foreignObject>` element. It reflects the computed value of the `width` attribute on the `<foreignObject>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGForeignObjectElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
+		The **`height`** read-only property of the `SVGForeignObjectElement` interface describes the height of the `<foreignObject>` element. It reflects the computed value of the `height` attribute on the `<foreignObject>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGForeignObjectElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;

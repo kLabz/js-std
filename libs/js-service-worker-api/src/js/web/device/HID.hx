@@ -25,9 +25,13 @@
 package js.web.device;
 
 /**
+	The **`HID`** interface provides methods for connecting to _HID devices_, listing attached HID devices and event handlers for connected HID devices.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [HID](https://developer.mozilla.org/docs/Web/API/HID) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HID/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/HID>
 **/
@@ -35,6 +39,8 @@ package js.web.device;
 	var onconnect : js.web.html.EventHandler;
 	var ondisconnect : js.web.html.EventHandler;
 	/**
+		The **`getDevices()`** method of the `HID` interface gets a list of connected HID devices that the user has previously been granted access to in response to a `requestDevice()` call.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HID/getDevices>
 	**/
 	function getDevices():js.lib.Promise<Array<HIDDevice>>;

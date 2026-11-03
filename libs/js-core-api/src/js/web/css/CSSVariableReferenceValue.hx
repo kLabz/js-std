@@ -25,18 +25,28 @@
 package js.web.css;
 
 /**
+	The **`CSSVariableReferenceValue`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) allows you to create a custom name for a built-in CSS value. This object functionality is sometimes called a "CSS variable" and serves the same purpose as the `var()` function. The custom name must begin with two dashes.
+	
+	Documentation [CSSVariableReferenceValue](https://developer.mozilla.org/docs/Web/API/CSSVariableReferenceValue) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSVariableReferenceValue/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSVariableReferenceValue>
 **/
 @:native("CSSVariableReferenceValue") extern class CSSVariableReferenceValue {
 	/**
+		The **`variable`** property of the `CSSVariableReferenceValue` interface returns the [custom property name](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/--*) of the `CSSVariableReferenceValue`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSVariableReferenceValue/variable>
 	**/
 	var variable : String;
 	/**
+		The **`fallback`** read-only property of the `CSSVariableReferenceValue` interface returns the [custom property fallback value](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties#custom_property_fallback_values) of the `CSSVariableReferenceValue`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSVariableReferenceValue/fallback>
 	**/
 	var fallback(default, null) : Null<CSSUnparsedValue>;
 	/**
+		Creates a new `CSSVariableReferenceValue`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSVariableReferenceValue/CSSVariableReferenceValue>
 	**/
 	function new(variable:String, ?fallback:Null<CSSUnparsedValue> = null):Void;

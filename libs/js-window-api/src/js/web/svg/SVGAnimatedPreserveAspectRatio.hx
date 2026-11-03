@@ -25,14 +25,22 @@
 package js.web.svg;
 
 /**
+	The **`SVGAnimatedPreserveAspectRatio`** interface represents attributes of type `SVGPreserveAspectRatio` which can be animated.
+	
+	Documentation [SVGAnimatedPreserveAspectRatio](https://developer.mozilla.org/docs/Web/API/SVGAnimatedPreserveAspectRatio) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGAnimatedPreserveAspectRatio/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedPreserveAspectRatio>
 **/
 @:native("SVGAnimatedPreserveAspectRatio") extern class SVGAnimatedPreserveAspectRatio {
 	/**
+		The **`baseVal`** read-only property of the `SVGAnimatedPreserveAspectRatio` interface represents the base (non-animated) value of the `preserveAspectRatio` attribute of an SVG element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedPreserveAspectRatio/baseVal>
 	**/
 	var baseVal(default, null) : SVGPreserveAspectRatio;
 	/**
+		The **`animVal`** read-only property of the `SVGAnimatedPreserveAspectRatio` interface represents the value of the `preserveAspectRatio` attribute of an SVG element after any animations or transformations are applied.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedPreserveAspectRatio/animVal>
 	**/
 	var animVal(default, null) : SVGPreserveAspectRatio;

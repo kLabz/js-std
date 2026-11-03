@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`TextTrackList`** interface is used to represent a list of the text tracks defined for the associated video or audio element, with each track represented by a separate `TextTrack` object in the list.
+	
+	Documentation [TextTrackList](https://developer.mozilla.org/docs/Web/API/TextTrackList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TextTrackList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TextTrackList>
 **/
 @:native("TextTrackList") extern class TextTrackList extends js.web.dom.EventTarget implements ArrayAccess<TextTrack> {
 	/**
+		The read-only **`TextTrackList`** property **`length`** returns the number of entries in the `TextTrackList`, each of which is a `TextTrack` representing one track in the media element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TextTrackList/length>
 	**/
 	var length(default, null) : Int;
@@ -36,6 +42,8 @@ package js.web.html;
 	var onaddtrack : EventHandler;
 	var onremovetrack : EventHandler;
 	/**
+		The **`TextTrackList`** method **`getTrackById()`** returns the first `TextTrack` object from the track list whose [`id`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/id) matches the specified string. This lets you find a specified track if you know its ID string.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TextTrackList/getTrackById>
 	**/
 	function getTrackById(id:String):Null<TextTrack>;

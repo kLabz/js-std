@@ -25,18 +25,28 @@
 package js.web.html;
 
 /**
+	The **`HTMLOptionsCollection`** interface represents a collection of [`<option>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/option) HTML elements (in document order) and offers methods and properties for selecting from the list as well as optionally altering its items. This object is returned only by the `options` property of [select](https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement).
+	
+	Documentation [HTMLOptionsCollection](https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection>
 **/
 @:native("HTMLOptionsCollection") extern class HTMLOptionsCollection extends js.web.dom.HTMLCollection {
 	/**
+		The **`selectedIndex`** property of the `HTMLOptionsCollection` interface is the numeric index of the first selected `<option>` element, if any, or `−1` if no `<option>` is selected. Setting this property selects the option at that index and deselects all other options in this collection, while setting it to `-1` deselects any currently selected elements. It is exactly equivalent to the `selectedIndex` property of the `HTMLSelectElement` that owns this collection.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection/selectedIndex>
 	**/
 	var selectedIndex : Int;
 	/**
+		The **`add()`** method of the `HTMLOptionsCollection` interface adds an `HTMLOptionElement` or `HTMLOptGroupElement` to this `HTMLOptionsCollection`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection/add>
 	**/
 	function add(element:haxe.extern.EitherType<HTMLOptionElement, HTMLOptGroupElement>, ?before:Null<haxe.extern.EitherType<HTMLElement, Int>> = null):Void;
 	/**
+		The **`remove()`** method of the `HTMLOptionsCollection` interface removes the `<option>` element specified by the index from this collection.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection/remove>
 	**/
 	function remove(index:Int):Void;

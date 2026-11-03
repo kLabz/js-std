@@ -25,24 +25,36 @@
 package js.web.dom;
 
 /**
+	The **`TrustedTypePolicy`** interface of the `Trusted Types API` defines a group of functions which create `TrustedType` objects.
+	
+	Documentation [TrustedTypePolicy](https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy>
 **/
 @:native("TrustedTypePolicy") extern class TrustedTypePolicy {
 	/**
+		The **`name`** read-only property of the `TrustedTypePolicy` interface returns the name of the policy.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/name>
 	**/
 	var name(default, null) : String;
 	/**
+		The **`createHTML()`** method of the `TrustedTypePolicy` interface creates a `TrustedHTML` object using a policy created by `TrustedTypePolicyFactory.createPolicy()`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/createHTML>
 	**/
 	function createHTML(input:String, arguments:haxe.Rest<Any>):TrustedHTML;
 	@:require(js_experimental_api, "TrustedTypePolicy.createParserOptions is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function createParserOptions(?options:js.web.html.SetHTMLUnsafeOptions, arguments:haxe.Rest<Any>):TrustedHTMLParserOptions;
 	/**
+		The **`createScript()`** method of the `TrustedTypePolicy` interface creates a `TrustedScript` object using a policy created by `TrustedTypePolicyFactory.createPolicy()`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/createScript>
 	**/
 	function createScript(input:String, arguments:haxe.Rest<Any>):TrustedScript;
 	/**
+		The **`createScriptURL()`** method of the `TrustedTypePolicy` interface creates a `TrustedScriptURL` object using a policy created by `TrustedTypePolicyFactory.createPolicy()`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedTypePolicy/createScriptURL>
 	**/
 	function createScriptURL(input:String, arguments:haxe.Rest<Any>):TrustedScriptURL;

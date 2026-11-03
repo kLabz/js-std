@@ -25,18 +25,26 @@
 package js.web.xr;
 
 /**
+	The **`XRTransientInputHitTestResult`** interface of the [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) contains an array of results of a hit test for transient input, grouped by input source.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRTransientInputHitTestResult](https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestResult) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestResult/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestResult>
 **/
 @:native("XRTransientInputHitTestResult") @:require(js_experimental_api, "XRTransientInputHitTestResult is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRTransientInputHitTestResult {
 	/**
+		The _read-only_ **`inputSource`** property of the `XRTransientInputHitTestResult` interface represents an `XRInputSource` object that was used to compute the `results` array.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestResult/inputSource>
 	**/
 	var inputSource(default, null) : XRInputSource;
 	/**
+		The _read-only_ **`results`** property of the `XRTransientInputHitTestResult` interface represents an array of `XRHitTestResult` objects containing the hit test results for the input source, ordered by the distance along the ray used to perform the hit test, with the closest result at position 0.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestResult/results>
 	**/
 	var results(default, null) : Array<XRHitTestResult>;

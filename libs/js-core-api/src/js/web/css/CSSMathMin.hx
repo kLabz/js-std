@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`CSSMathMin`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the CSS `min()` function.
+	
+	Documentation [CSSMathMin](https://developer.mozilla.org/docs/Web/API/CSSMathMin) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSMathMin/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSMathMin>
 **/
 @:native("CSSMathMin") extern class CSSMathMin extends CSSMathValue {
 	/**
+		The **`values`** read-only property of the `CSSMathMin` interface returns a `CSSNumericArray` containing the `CSSNumericValue` objects being compared to find the minimum.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathMin/values>
 	**/
 	var values(default, null) : CSSNumericArray;
 	/**
+		The **`CSSMathMin()`** constructor creates a new `CSSMathMin` object that represents the CSS `min()` function.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathMin/CSSMathMin>
 	**/
 	@:require(js_experimental_api, "CSSMathMin.CSSMathMin is experimental (shipped in fewer than two engines); use -D js-experimental-api")

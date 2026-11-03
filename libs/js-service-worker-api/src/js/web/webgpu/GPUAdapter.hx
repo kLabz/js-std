@@ -25,24 +25,36 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUAdapter`** interface of the `WebGPU API` represents a GPU adapter. From this you can request a `GPUDevice`, adapter info, features, and limits.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUAdapter](https://developer.mozilla.org/docs/Web/API/GPUAdapter) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUAdapter/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUAdapter>
 **/
 @:native("GPUAdapter") extern class GPUAdapter {
 	/**
+		The **`features`** read-only property of the `GPUAdapter` interface returns a `GPUSupportedFeatures` object that describes additional functionality supported by the adapter.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapter/features>
 	**/
 	var features(default, null) : GPUSupportedFeatures;
 	/**
+		The **`limits`** read-only property of the `GPUAdapter` interface returns a `GPUSupportedLimits` object that describes the limits supported by the adapter.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapter/limits>
 	**/
 	var limits(default, null) : GPUSupportedLimits;
 	/**
+		The **`info`** read-only property of the `GPUAdapter` interface returns a `GPUAdapterInfo` object containing identifying information about the adapter.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapter/info>
 	**/
 	var info(default, null) : GPUAdapterInfo;
 	/**
+		The **`requestDevice()`** method of the `GPUAdapter` interface returns a `Promise` that fulfills with a `GPUDevice` object, which is the primary interface for communicating with the GPU.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapter/requestDevice>
 	**/
 	function requestDevice(?descriptor:GPUDeviceDescriptor):js.lib.Promise<GPUDevice>;

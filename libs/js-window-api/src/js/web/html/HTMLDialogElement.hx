@@ -25,34 +25,52 @@
 package js.web.html;
 
 /**
+	The **`HTMLDialogElement`** interface provides methods to manipulate `<dialog>` elements. It inherits properties and methods from the `HTMLElement` interface.
+	
+	Documentation [HTMLDialogElement](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement>
 **/
 @:native("HTMLDialogElement") extern class HTMLDialogElement extends HTMLElement {
 	/**
+		The **`open`** property of the `HTMLDialogElement` interface is a boolean value reflecting the [`open`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog#open) HTML attribute, indicating whether the `<dialog>` is available for interaction.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/open>
 	**/
 	var open : Bool;
 	/**
+		The **`returnValue`** property of the `HTMLDialogElement` interface is a string representing the return value for a `<dialog>` element when it's closed. You can set the value directly (`dialog.returnValue = "result"`) or by providing the value as a string argument to `close()` or `requestClose()`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/returnValue>
 	**/
 	var returnValue : String;
 	/**
+		The **`closedBy`** property of the `HTMLDialogElement` interface indicates the types of user actions that can be used to close the associated `<dialog>` element. It sets or returns the dialog's [`closedby`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog#closedby) attribute value.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/closedBy>
 	**/
 	var closedBy : String;
 	/**
+		The **`close()`** method of the `HTMLDialogElement` interface closes the `<dialog>`. An optional string may be passed as an argument, updating the `returnValue` of the dialog.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/close>
 	**/
 	function close(?returnValue:String):Void;
 	/**
+		The **`requestClose()`** method of the `HTMLDialogElement` interface requests to close the `<dialog>`. An optional string may be passed as an argument, updating the `returnValue` of the dialog.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/requestClose>
 	**/
 	function requestClose(?returnValue:String):Void;
 	/**
+		The **`show()`** method of the `HTMLDialogElement` interface displays the dialog as a non-modal dialog.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/show>
 	**/
 	function show():Void;
 	/**
+		The **`showModal()`** method of the `HTMLDialogElement` interface displays the dialog as a modal dialog, over the top of any other dialogs or elements that might be visible.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/showModal>
 	**/
 	function showModal():Void;

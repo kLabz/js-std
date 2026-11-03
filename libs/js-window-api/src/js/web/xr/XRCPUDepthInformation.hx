@@ -25,16 +25,24 @@
 package js.web.xr;
 
 /**
+	The **`XRCPUDepthInformation`** interface contains depth information from the CPU (returned by `XRFrame.getDepthInformation()`).
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRCPUDepthInformation](https://developer.mozilla.org/docs/Web/API/XRCPUDepthInformation) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRCPUDepthInformation/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRCPUDepthInformation>
 **/
 @:native("XRCPUDepthInformation") @:require(js_experimental_api, "XRCPUDepthInformation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRCPUDepthInformation extends XRDepthInformation {
 	/**
+		The _read-only_ **`data`** property of the `XRCPUDepthInformation` interface is an `ArrayBuffer` containing depth-buffer information in raw format.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRCPUDepthInformation/data>
 	**/
 	var data(default, null) : js.lib.ArrayBuffer;
 	/**
+		The **`getDepthInMeters()`** method of the `XRCPUDepthInformation` interface returns the depth in meters at (x, y) in normalized view coordinates (origin in the top left corner).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRCPUDepthInformation/getDepthInMeters>
 	**/
 	function getDepthInMeters(x:Float, y:Float):Float;

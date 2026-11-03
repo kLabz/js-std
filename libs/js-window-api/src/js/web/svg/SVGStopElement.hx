@@ -25,10 +25,16 @@
 package js.web.svg;
 
 /**
+	The **`SVGStopElement`** interface corresponds to the `<stop>` element.
+	
+	Documentation [SVGStopElement](https://developer.mozilla.org/docs/Web/API/SVGStopElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGStopElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGStopElement>
 **/
 @:native("SVGStopElement") extern class SVGStopElement extends SVGElement {
 	/**
+		The **`offset`** read-only property of the `SVGStopElement` interface reflects the `offset` attribute of the given `<stop>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGStopElement/offset>
 	**/
 	var offset(default, null) : SVGAnimatedNumber;

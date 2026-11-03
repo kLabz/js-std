@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`HTMLDataElement`** interface provides special properties (beyond the regular `HTMLElement` interface it also has available to it by inheritance) for manipulating `<data>` elements.
+	
+	Documentation [HTMLDataElement](https://developer.mozilla.org/docs/Web/API/HTMLDataElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLDataElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLDataElement>
 **/
 @:native("HTMLDataElement") extern class HTMLDataElement extends HTMLElement {
 	/**
+		The **`value`** property of the `HTMLDataElement` interface returns a string reflecting the [`value`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/data#value) HTML attribute.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLDataElement/value>
 	**/
 	var value : String;

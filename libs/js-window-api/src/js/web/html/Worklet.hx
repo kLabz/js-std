@@ -25,12 +25,18 @@
 package js.web.html;
 
 /**
+	The **`Worklet`** interface is a lightweight version of [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API) and gives developers access to low-level parts of the rendering pipeline.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [Worklet](https://developer.mozilla.org/docs/Web/API/Worklet) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Worklet/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Worklet>
 **/
 @:native("Worklet") extern class Worklet {
 	/**
+		The **`addModule()`** method of the `Worklet` interface loads the module in the given JavaScript file and adds it to the current `Worklet`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Worklet/addModule>
 	**/
 	function addModule(moduleURL:String, ?options:WorkletOptions):js.lib.Promise<Void>;

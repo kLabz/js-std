@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`HTMLUListElement`** interface provides special properties (beyond those defined on the regular `HTMLElement` interface it also has available to it by inheritance) for manipulating unordered list (`<ul>`) elements.
+	
+	Documentation [HTMLUListElement](https://developer.mozilla.org/docs/Web/API/HTMLUListElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLUListElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLUListElement>
 **/
 @:native("HTMLUListElement") extern class HTMLUListElement extends HTMLElement {
 	/**
+		The **`compact`** property of the `HTMLUListElement` interface indicates that spacing between list items should be reduced. The exact handling of the `compact` attribute is browser-specific. Instead of using this property, consider using CSS `line-height` instead.
+		
 		From partial interface in html.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLUListElement/compact>

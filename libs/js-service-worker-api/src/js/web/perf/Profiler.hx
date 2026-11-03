@@ -25,7 +25,11 @@
 package js.web.perf;
 
 /**
+	The JS Self-Profiling API enables a website to run a sampling profiler, to understand where it is spending JavaScript execution time.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [Profiler](https://developer.mozilla.org/docs/Web/API/Profiler) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Profiler/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Profiler>
 **/
@@ -33,10 +37,14 @@ package js.web.perf;
 	var sampleInterval(default, null) : DOMHighResTimeStamp;
 	var stopped(default, null) : Bool;
 	/**
+		The **`Profiler()`** constructor creates a new `Profiler` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Profiler/Profiler>
 	**/
 	function new(options:ProfilerInitOptions):Void;
 	/**
+		The **`stop()`** method of the `Profiler` interface stops the profiler and returns a `Promise` which resolves to the profile itself.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Profiler/stop>
 	**/
 	function stop():js.lib.Promise<ProfilerTrace>;

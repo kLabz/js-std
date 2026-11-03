@@ -25,18 +25,26 @@
 package js.web.misc;
 
 /**
+	The Contact Picker API allows users to select entries from their contact list and share limited details of the selected entries with a website or application.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [ContactsManager](https://developer.mozilla.org/docs/Web/API/ContactsManager) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ContactsManager/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/ContactsManager>
 **/
 @:native("ContactsManager") @:require(js_experimental_api, "ContactsManager is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ContactsManager {
 	/**
+		The **`getProperties()`** method of the `ContactsManager` interface returns a `Promise` which resolves with an `Array` of `strings` indicating which contact properties are available.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ContactsManager/getProperties>
 	**/
 	function getProperties():js.lib.Promise<Array<ContactProperty>>;
 	/**
+		The **`select()`** method of the `ContactsManager` interface returns a `Promise` which, when resolved, presents the user with a contact picker which allows them to select contact(s) they wish to share. This method requires a user gesture for the `Promise` to resolve.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ContactsManager/select>
 	**/
 	function select(properties:Array<ContactProperty>, ?options:ContactsSelectOptions):js.lib.Promise<Array<ContactInfo>>;

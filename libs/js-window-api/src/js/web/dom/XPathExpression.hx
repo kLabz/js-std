@@ -25,10 +25,16 @@
 package js.web.dom;
 
 /**
+	This interface is a compiled XPath expression that can be evaluated on a document or specific node to return information from its DOM tree.
+	
+	Documentation [XPathExpression](https://developer.mozilla.org/docs/Web/API/XPathExpression) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XPathExpression/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XPathExpression>
 **/
 @:native("XPathExpression") extern class XPathExpression {
 	/**
+		The **`evaluate()`** method of the `XPathExpression` interface executes an [XPath](https://developer.mozilla.org/en-US/docs/Web/XML/XPath) expression on the given node or document and returns an `XPathResult`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XPathExpression/evaluate>
 	**/
 	function evaluate(contextNode:Node, ?type:Int = 0, ?result:Null<XPathResult> = null):XPathResult;

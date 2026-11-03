@@ -25,26 +25,38 @@
 package js.web.device;
 
 /**
+	The **`Accelerometer`** interface of the [Sensor APIs](https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs) provides on each reading the acceleration applied to the device along all three axes.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [Accelerometer](https://developer.mozilla.org/docs/Web/API/Accelerometer) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Accelerometer/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Accelerometer>
 **/
 @:native("Accelerometer") @:require(js_experimental_api, "Accelerometer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Accelerometer extends Sensor {
 	/**
+		The **`x`** read-only property of the `Accelerometer` interface returns a number specifying the acceleration of the device along its x-axis.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Accelerometer/x>
 	**/
 	var x(default, null) : Null<Float>;
 	/**
+		The **`y`** read-only property of the `Accelerometer` interface returns a number specifying the acceleration of the device along its y-axis.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Accelerometer/y>
 	**/
 	var y(default, null) : Null<Float>;
 	/**
+		The **`z`** read-only property of the `Accelerometer` interface returns a number specifying the acceleration of the device along its z-axis.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Accelerometer/z>
 	**/
 	var z(default, null) : Null<Float>;
 	/**
+		The **`Accelerometer()`** constructor creates a new `Accelerometer` object which returns the acceleration of the device along all three axes at the time it is read.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Accelerometer/Accelerometer>
 	**/
 	function new(?options:AccelerometerSensorOptions):Void;

@@ -25,32 +25,48 @@
 package js.web.html;
 
 /**
+	The **`VideoTrack`** interface represents a single video track from a `<video>` element.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [VideoTrack](https://developer.mozilla.org/docs/Web/API/VideoTrack) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/VideoTrack/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/VideoTrack>
 **/
 @:native("VideoTrack") @:require(js_experimental_api, "VideoTrack is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class VideoTrack {
 	/**
+		The **`id`** property contains a string which uniquely identifies the track represented by the **`VideoTrack`**.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrack/id>
 	**/
 	var id(default, null) : String;
 	/**
+		The **`kind`** property contains a string indicating the category of video contained in the **`VideoTrack`**.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrack/kind>
 	**/
 	var kind(default, null) : String;
 	/**
+		The read-only **`VideoTrack`** property **`label`** returns a string specifying the video track's human-readable label, if one is available; otherwise, it returns an empty string.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrack/label>
 	**/
 	var label(default, null) : String;
 	/**
+		The read-only **`VideoTrack`** property **`language`** returns a string identifying the language used in the video track.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrack/language>
 	**/
 	var language(default, null) : String;
 	/**
+		The **`VideoTrack`** property **`selected`** controls whether or not a particular video track is active.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrack/selected>
 	**/
 	var selected : Bool;
 	/**
+		The read-only **`VideoTrack`** property **`sourceBuffer`** returns the `SourceBuffer` that created the track, or null if the track was not created by a `SourceBuffer` or the `SourceBuffer` has been removed from the `MediaSource.sourceBuffers` attribute of its parent media source.
+		
 		From partial interface in media-source.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrack/sourceBuffer>

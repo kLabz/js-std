@@ -25,7 +25,11 @@
 package js.web.media;
 
 /**
+	The **Media Capture and Streams** API, often called the **Media Streams API** or **MediaStream API**, is an API related to [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) which provides support for streaming audio and video data.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [MediaDevices](https://developer.mozilla.org/docs/Web/API/MediaDevices) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MediaDevices/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaDevices>
 **/
@@ -40,22 +44,30 @@ package js.web.media;
 	**/
 	var oncaptureaction : js.web.html.EventHandler;
 	/**
+		The **`enumerateDevices()`** method of the `MediaDevices` interface requests a list of the currently available media input and output devices, such as microphones, cameras, headsets, and so forth. The returned `Promise` is resolved with an array of `MediaDeviceInfo` objects describing the devices.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaDevices/enumerateDevices>
 	**/
 	function enumerateDevices():js.lib.Promise<Array<MediaDeviceInfo>>;
 	/**
+		The **`getDisplayMedia()`** method of the `MediaDevices` interface prompts the user to select and grant permission to capture the contents of a display or portion thereof (such as a window) as a `MediaStream`.
+		
 		From partial interface in screen-capture.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaDevices/getDisplayMedia>
 	**/
 	function getDisplayMedia(?options:DisplayMediaStreamOptions):js.lib.Promise<MediaStream>;
 	/**
+		This article discusses the twin concepts of **constraints** and **capabilities**, as well as media settings, and includes an example we call the [Constraint Exerciser](#example_constraint_exerciser). The Constraint Exerciser lets you experiment with the results of different constraint sets being applied to the audio and video tracks coming from the computer's A/V input devices (such as its webcam and microphone).
+		
 		From partial interface in mediacapture-streams.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaDevices/getSupportedConstraints>
 	**/
 	function getSupportedConstraints():MediaTrackSupportedConstraints;
 	/**
+		The **`getUserMedia()`** method of the `MediaDevices` interface prompts the user for permission to use a media input which produces a `MediaStream` with tracks containing the requested types of media.
+		
 		From partial interface in mediacapture-streams.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaDevices/getUserMedia>
@@ -66,6 +78,8 @@ package js.web.media;
 	**/
 	function getViewportMedia(?options:DisplayMediaStreamOptions):js.lib.Promise<MediaStream>;
 	/**
+		The **Audio Output Devices API** allows web applications to prompt users about what output device should be used for audio playback.
+		
 		From partial interface in audio-output.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaDevices/selectAudioOutput>

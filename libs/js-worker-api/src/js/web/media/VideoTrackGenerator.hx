@@ -25,20 +25,30 @@
 package js.web.media;
 
 /**
+	The **Insertable Streams for MediaStreamTrack API** provides a way to process the video frames of a `MediaStreamTrack` as they are consumed.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [VideoTrackGenerator](https://developer.mozilla.org/docs/Web/API/VideoTrackGenerator) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/VideoTrackGenerator/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/VideoTrackGenerator>
 **/
 @:native("VideoTrackGenerator") @:require(js_experimental_api, "VideoTrackGenerator is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class VideoTrackGenerator {
 	/**
+		The **`writable`** property of the `VideoTrackGenerator` interface returns a `WritableStream`. This allows the writing of `VideoFrame`s to the `VideoTrackGenerator.track`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrackGenerator/writable>
 	**/
 	var writable(default, null) : js.web.net.WritableStream;
 	/**
+		The **`muted`** Boolean property of the `VideoTrackGenerator` interface can be used to temporarily halt or resume the generation of video frames in the output track.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrackGenerator/muted>
 	**/
 	var muted : Bool;
 	/**
+		The **`VideoTrackGenerator()`** constructor creates a new `VideoTrackGenerator` object which consumes a stream of media frames and exposes a `MediaStreamTrack`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoTrackGenerator/VideoTrackGenerator>
 	**/
 	function new():Void;

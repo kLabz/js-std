@@ -25,20 +25,30 @@
 package js.web.html;
 
 /**
+	The **`HTMLAllCollection`** interface represents a collection of _all_ of the document's elements, accessible by index (like an array) and by the element's [`id`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/id). It is returned by the `document.all` property.
+	
+	Documentation [HTMLAllCollection](https://developer.mozilla.org/docs/Web/API/HTMLAllCollection) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLAllCollection/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLAllCollection>
 **/
 @:native("HTMLAllCollection") @:deprecated extern class HTMLAllCollection implements ArrayAccess<js.web.dom.Element> {
 	/**
+		The **`HTMLAllCollection.length`** property returns the number of items in this `HTMLAllCollection`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLAllCollection/length>
 	**/
 	@:deprecated
 	var length(default, null) : Int;
 	/**
+		The **`item()`** method of the `HTMLAllCollection` interface returns the element located at the specified offset into the collection, or the element with the specified value for its `id` or `name` attribute.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLAllCollection/item>
 	**/
 	@:deprecated
 	function item(?nameOrIndex:String):Null<haxe.extern.EitherType<js.web.dom.HTMLCollection, js.web.dom.Element>>;
 	/**
+		The **`namedItem()`** method of the `HTMLAllCollection` interface returns the first `Element` in the collection whose `id` or `name` attribute matches the specified name, or `null` if no element matches.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLAllCollection/namedItem>
 	**/
 	@:deprecated

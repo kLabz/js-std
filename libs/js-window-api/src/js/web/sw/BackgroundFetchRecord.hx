@@ -25,16 +25,24 @@
 package js.web.sw;
 
 /**
+	The **Background Fetch API** provides a method for managing downloads that may take a significant amount of time such as movies, audio files, and software.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [BackgroundFetchRecord](https://developer.mozilla.org/docs/Web/API/BackgroundFetchRecord) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/BackgroundFetchRecord/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRecord>
 **/
 @:native("BackgroundFetchRecord") @:require(js_experimental_api, "BackgroundFetchRecord is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BackgroundFetchRecord {
 	/**
+		The **`request`** read-only property of the `BackgroundFetchRecord` interface returns the details of the resource to be fetched.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRecord/request>
 	**/
 	var request(default, null) : js.web.net.Request;
 	/**
+		The **`responseReady`** read-only property of the `BackgroundFetchRecord` interface returns a `Promise` that resolves with a `Response`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchRecord/responseReady>
 	**/
 	var responseReady(default, null) : js.lib.Promise<js.web.net.Response>;

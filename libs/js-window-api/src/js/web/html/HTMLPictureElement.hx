@@ -25,6 +25,10 @@
 package js.web.html;
 
 /**
+	The **`HTMLPictureElement`** interface represents a `<picture>` HTML element. It doesn't implement specific properties or methods.
+	
+	Documentation [HTMLPictureElement](https://developer.mozilla.org/docs/Web/API/HTMLPictureElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLPictureElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLPictureElement>
 **/
 @:native("HTMLPictureElement") extern class HTMLPictureElement extends HTMLElement {

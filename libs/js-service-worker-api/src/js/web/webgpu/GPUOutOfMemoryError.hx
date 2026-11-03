@@ -25,12 +25,18 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUOutOfMemoryError`** interface of the `WebGPU API` describes an out-of-memory (oom) error indicating that there was not enough free memory to complete the requested operation.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUOutOfMemoryError](https://developer.mozilla.org/docs/Web/API/GPUOutOfMemoryError) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUOutOfMemoryError/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUOutOfMemoryError>
 **/
 @:native("GPUOutOfMemoryError") extern class GPUOutOfMemoryError extends GPUError {
 	/**
+		The **`GPUOutOfMemoryError()`** constructor creates a new `GPUOutOfMemoryError` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUOutOfMemoryError/GPUOutOfMemoryError>
 	**/
 	function new(message:String):Void;

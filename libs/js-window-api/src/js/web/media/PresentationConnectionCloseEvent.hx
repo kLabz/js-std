@@ -25,9 +25,13 @@
 package js.web.media;
 
 /**
+	The **`PresentationConnectionCloseEvent`** interface of the [Presentation API](https://developer.mozilla.org/en-US/docs/Web/API/Presentation_API) is fired on a `PresentationConnection` when it is closed.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [PresentationConnectionCloseEvent](https://developer.mozilla.org/docs/Web/API/PresentationConnectionCloseEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PresentationConnectionCloseEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/PresentationConnectionCloseEvent>
 **/

@@ -25,18 +25,28 @@
 package js.web.dom;
 
 /**
+	The **`UIEvent`** interface represents simple user interface events. It is part of the [UI Events](https://developer.mozilla.org/en-US/docs/Web/API/UI_Events) API, which includes various event types and interfaces related to user interactions.
+	
+	Documentation [UIEvent](https://developer.mozilla.org/docs/Web/API/UIEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/UIEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/UIEvent>
 **/
 @:native("UIEvent") extern class UIEvent extends Event {
 	/**
+		The **`UIEvent.view`** read-only property returns the WindowProxy object from which the event was generated. In browsers, this is the `Window` object the event happened in.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/UIEvent/view>
 	**/
 	var view(default, null) : Null<js.web.html.Window>;
 	/**
+		The **`UIEvent.detail`** read-only property, when non-zero, provides the current (or next, depending on the event) click count.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/UIEvent/detail>
 	**/
 	var detail(default, null) : Int;
 	/**
+		The **`sourceCapabilities`** read-only property of the `UIEvent` interface returns an instance of the `InputDeviceCapabilities` interface which provides information about the physical device responsible for generating a touch event. If no input device was responsible for the event, it returns `null`.
+		
 		From partial interface in input-device-capabilities.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/UIEvent/sourceCapabilities>
@@ -44,6 +54,8 @@ package js.web.dom;
 	@:require(js_experimental_api, "UIEvent.sourceCapabilities is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var sourceCapabilities(default, null) : Null<InputDeviceCapabilities>;
 	/**
+		The **`UIEvent.which`** read-only property of the `UIEvent` interface returns a number that indicates which button was pressed on the mouse, or the numeric `keyCode` or the character code (`charCode`) of the key pressed on the keyboard.
+		
 		From partial interface in uievents.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/UIEvent/which>
@@ -51,10 +63,14 @@ package js.web.dom;
 	@:deprecated
 	var which(default, null) : Int;
 	/**
+		The **`UIEvent()`** constructor creates a new `UIEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/UIEvent/UIEvent>
 	**/
 	function new(type:String, ?eventInitDict:UIEventInit):Void;
 	/**
+		The **`UIEvent.initUIEvent()`** method initializes a UI event once it's been created.
+		
 		From partial interface in uievents.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/UIEvent/initUIEvent>

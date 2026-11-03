@@ -25,10 +25,16 @@
 package js.web.storage;
 
 /**
+	The `FileSystemDirectoryReader` interface of the [File and Directory Entries API](https://developer.mozilla.org/en-US/docs/Web/API/File_and_Directory_Entries_API) lets you access the `FileSystemFileEntry`-based objects (generally `FileSystemFileEntry` or `FileSystemDirectoryEntry`) representing each entry in a directory.
+	
+	Documentation [FileSystemDirectoryReader](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryReader) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryReader/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryReader>
 **/
 @:native("FileSystemDirectoryReader") extern class FileSystemDirectoryReader {
 	/**
+		The `FileSystemDirectoryReader` interface's **`readEntries()`** method retrieves the directory entries within the directory being read and delivers them in an array to a provided callback function.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryReader/readEntries>
 	**/
 	function readEntries(successCallback:FileSystemEntriesCallback, ?errorCallback:ErrorCallback):Void;

@@ -25,10 +25,16 @@
 package js.web.media;
 
 /**
+	The `AudioDestinationNode` interface represents the end destination of an audio graph in a given context — usually the speakers of your device. It can also be the node that will "record" the audio data when used with an `OfflineAudioContext`.
+	
+	Documentation [AudioDestinationNode](https://developer.mozilla.org/docs/Web/API/AudioDestinationNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AudioDestinationNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/AudioDestinationNode>
 **/
 @:native("AudioDestinationNode") extern class AudioDestinationNode extends AudioNode {
 	/**
+		The `maxChannelCount` property of the `AudioDestinationNode` interface is an `unsigned long` defining the maximum amount of channels that the physical device can handle.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioDestinationNode/maxChannelCount>
 	**/
 	var maxChannelCount(default, null) : Int;

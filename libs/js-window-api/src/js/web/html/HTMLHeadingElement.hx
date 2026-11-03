@@ -25,6 +25,10 @@
 package js.web.html;
 
 /**
+	The **`HTMLHeadingElement`** interface represents the different heading elements, [`<h1>` through `<h6>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements). It inherits methods and properties from the `HTMLElement` interface.
+	
+	Documentation [HTMLHeadingElement](https://developer.mozilla.org/docs/Web/API/HTMLHeadingElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLHeadingElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLHeadingElement>
 **/
 @:native("HTMLHeadingElement") extern class HTMLHeadingElement extends HTMLElement {

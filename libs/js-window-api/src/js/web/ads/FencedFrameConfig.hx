@@ -25,13 +25,19 @@
 package js.web.ads;
 
 /**
+	The **`FencedFrameConfig`** interface represents the navigation of a `<fencedframe>`, i.e., what content will be displayed in it.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [FencedFrameConfig](https://developer.mozilla.org/docs/Web/API/FencedFrameConfig) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/FencedFrameConfig/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/FencedFrameConfig>
 **/
 @:native("FencedFrameConfig") @:require(js_experimental_api, "FencedFrameConfig is experimental (shipped in fewer than two engines); use -D js-experimental-api") @:deprecated extern class FencedFrameConfig {
 	function new(url:String):Void;
 	/**
+		The **`setSharedStorageContext()`** method of the `FencedFrameConfig` interface passes in contextual data from the embedding document to the `<fencedframe>`'s [shared storage](https://privacysandbox.google.com/private-advertising/shared-storage).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FencedFrameConfig/setSharedStorageContext>
 	**/
 	@:deprecated

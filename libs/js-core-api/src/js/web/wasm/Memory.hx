@@ -25,15 +25,23 @@
 package js.web.wasm;
 
 /**
+	The **`WebAssembly.Memory`** object is a resizable `ArrayBuffer` or `SharedArrayBuffer` that holds raw bytes of memory accessed by a [`WebAssembly.Instance`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Instance).
+	
+	Documentation [WebAssembly.Memory](https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Memory) by [Mozilla Contributors](https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Memory/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Memory>
 **/
 @:native("WebAssembly.Memory") extern class Memory {
 	/**
+		The read-only **`buffer`** prototype property of the [`WebAssembly.Memory`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Memory) object returns the buffer contained in the memory. Depending on whether or not the memory was constructed with `shared: true`, the buffer is either an `ArrayBuffer` or a `SharedArrayBuffer`.
+		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Memory/buffer>
 	**/
 	var buffer(default, null) : js.lib.ArrayBuffer;
 	function new(descriptor:MemoryDescriptor):Void;
 	/**
+		The **`grow()`** prototype method of the [`WebAssembly.Memory`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Memory) object increases the size of the memory instance by a specified number of WebAssembly pages.
+		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Memory/grow>
 	**/
 	function grow(delta:AddressValue):AddressValue;

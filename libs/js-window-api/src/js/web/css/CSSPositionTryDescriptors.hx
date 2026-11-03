@@ -25,6 +25,10 @@
 package js.web.css;
 
 /**
+	The **`CSSPositionTryDescriptors`** interface defines properties that represent the list of CSS descriptors that can be set in the body of a `@position-try` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+	
+	Documentation [CSSPositionTryDescriptors](https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryDescriptors>
 **/
 @:native("CSSPositionTryDescriptors") extern class CSSPositionTryDescriptors extends CSSStyleDeclaration {

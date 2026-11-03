@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`TaskPriorityChangeEvent`** is the interface for the [`prioritychange`](https://developer.mozilla.org/en-US/docs/Web/API/TaskSignal/prioritychange_event) event.
+	
+	Documentation [TaskPriorityChangeEvent](https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent>
 **/
 @:native("TaskPriorityChangeEvent") extern class TaskPriorityChangeEvent extends js.web.dom.Event {
 	/**
+		The **`previousPriority`** read-only property of the `TaskPriorityChangeEvent` interface returns the priority of the corresponding `TaskSignal` before it was changed and this [`prioritychange`](https://developer.mozilla.org/en-US/docs/Web/API/TaskSignal/prioritychange_event) event was emitted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent/previousPriority>
 	**/
 	var previousPriority(default, null) : TaskPriority;
 	/**
+		The **`TaskPriorityChangeEvent()`** constructor creates a new `TaskPriorityChangeEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent/TaskPriorityChangeEvent>
 	**/
 	function new(type:String, priorityChangeEventInitDict:TaskPriorityChangeEventInit):Void;

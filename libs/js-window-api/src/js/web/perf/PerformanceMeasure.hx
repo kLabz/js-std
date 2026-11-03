@@ -25,10 +25,16 @@
 package js.web.perf;
 
 /**
+	**`PerformanceMeasure`** is an _abstract_ interface for `PerformanceEntry` objects with an `entryType` of `"measure"`. Entries of this type are created by calling `performance.measure()` to add a _named_ `DOMHighResTimeStamp` (the _measure_) between two _marks_ to the browser's _performance timeline_.
+	
+	Documentation [PerformanceMeasure](https://developer.mozilla.org/docs/Web/API/PerformanceMeasure) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PerformanceMeasure/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PerformanceMeasure>
 **/
 @:native("PerformanceMeasure") extern class PerformanceMeasure extends PerformanceEntry {
 	/**
+		The read-only **`detail`** property returns arbitrary metadata that was included in the measure upon construction (when using `performance.measure()`).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceMeasure/detail>
 	**/
 	var detail(default, null) : Any;

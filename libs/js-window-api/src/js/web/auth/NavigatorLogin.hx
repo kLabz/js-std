@@ -25,12 +25,18 @@
 package js.web.auth;
 
 /**
+	The **`NavigatorLogin`** interface of the [Federated Credential Management (FedCM) API](https://developer.mozilla.org/en-US/docs/Web/API/FedCM_API) defines login functionality for federated identity providers (IdPs). Specifically, it enables a federated identity provider (IdP) to set its login status when a user signs into or out of the IdP.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [NavigatorLogin](https://developer.mozilla.org/docs/Web/API/NavigatorLogin) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/NavigatorLogin/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/NavigatorLogin>
 **/
 @:native("NavigatorLogin") extern class NavigatorLogin {
 	/**
+		The **`setStatus()`** method of the `NavigatorLogin` interface sets the login status of a federated identity provider (IdP), when called from the IdP's origin. By this, we mean "whether any users are logged into the IdP on the current browser or not". This should be called by the IdP site following a user login or logout.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NavigatorLogin/setStatus>
 	**/
 	function setStatus(status:LoginStatus):js.lib.Promise<Void>;

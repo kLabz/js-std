@@ -25,18 +25,28 @@
 package js.web.perf;
 
 /**
+	The **`PerformanceObserverEntryList`** interface is a list of `performance events` that were explicitly observed via the `observe()` method.
+	
+	Documentation [PerformanceObserverEntryList](https://developer.mozilla.org/docs/Web/API/PerformanceObserverEntryList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PerformanceObserverEntryList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserverEntryList>
 **/
 @:native("PerformanceObserverEntryList") extern class PerformanceObserverEntryList {
 	/**
+		The **`getEntries()`** method of the `PerformanceObserverEntryList` interface returns a list of explicitly observed `performance entry` objects. The list's members are determined by the set of `entry types` specified in the call to the `observe()` method. The list is available in the observer's callback function (as the first parameter in the callback).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserverEntryList/getEntries>
 	**/
 	function getEntries():PerformanceEntryList;
 	/**
+		The **`getEntriesByName()`** method of the `PerformanceObserverEntryList` interface returns a list of explicitly observed `PerformanceEntry` objects for a given `name` and `entryType`. The list's members are determined by the set of `entry types` specified in the call to the `observe()` method. The list is available in the observer's callback function (as the first parameter in the callback).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserverEntryList/getEntriesByName>
 	**/
 	function getEntriesByName(name:String, ?type:String):PerformanceEntryList;
 	/**
+		The **`getEntriesByType()`** method of the `PerformanceObserverEntryList` returns a list of explicitly _observed_ `performance entry` objects for a given `performance entry type`. The list's members are determined by the set of `entry types` specified in the call to the `observe()` method. The list is available in the observer's callback function (as the first parameter in the callback).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceObserverEntryList/getEntriesByType>
 	**/
 	function getEntriesByType(type:String):PerformanceEntryList;

@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`BarProp`** interface of the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) represents the web browser user interface elements that are exposed to scripts in web pages. Each of the following interface elements are represented by a `BarProp` object.
+	
+	Documentation [BarProp](https://developer.mozilla.org/docs/Web/API/BarProp) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/BarProp/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/BarProp>
 **/
 @:native("BarProp") extern class BarProp {
 	/**
+		The **`visible`** read-only property of the `BarProp` interface returns `true` if the user interface element it represents is visible.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BarProp/visible>
 	**/
 	var visible(default, null) : Bool;

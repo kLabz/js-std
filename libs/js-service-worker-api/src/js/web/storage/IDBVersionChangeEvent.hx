@@ -25,18 +25,28 @@
 package js.web.storage;
 
 /**
+	The **`IDBVersionChangeEvent`** interface of the [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) indicates that the version of the database has changed, as the result of an `onupgradeneeded` event handler function.
+	
+	Documentation [IDBVersionChangeEvent](https://developer.mozilla.org/docs/Web/API/IDBVersionChangeEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/IDBVersionChangeEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/IDBVersionChangeEvent>
 **/
 @:native("IDBVersionChangeEvent") extern class IDBVersionChangeEvent extends js.web.dom.Event {
 	/**
+		The **`oldVersion`** read-only property of the `IDBVersionChangeEvent` interface returns the old version number of the database.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBVersionChangeEvent/oldVersion>
 	**/
 	var oldVersion(default, null) : Float;
 	/**
+		The **`newVersion`** read-only property of the `IDBVersionChangeEvent` interface returns the new version number of the database.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBVersionChangeEvent/newVersion>
 	**/
 	var newVersion(default, null) : Null<Float>;
 	/**
+		The **`IDBVersionChangeEvent()`** constructor creates a new `IDBVersionChangeEvent` object, which is used to represent when a version of the database has changed, as a result of the `onupgradeneeded` event handler.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/IDBVersionChangeEvent/IDBVersionChangeEvent>
 	**/
 	function new(type:String, ?eventInitDict:IDBVersionChangeEventInit):Void;

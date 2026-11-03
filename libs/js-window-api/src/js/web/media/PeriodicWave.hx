@@ -25,10 +25,16 @@
 package js.web.media;
 
 /**
+	The **`PeriodicWave`** interface defines a periodic waveform that can be used to shape the output of an `OscillatorNode`.
+	
+	Documentation [PeriodicWave](https://developer.mozilla.org/docs/Web/API/PeriodicWave) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PeriodicWave/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PeriodicWave>
 **/
 @:native("PeriodicWave") extern class PeriodicWave {
 	/**
+		The **`PeriodicWave()`** constructor of the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) creates a new `PeriodicWave` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PeriodicWave/PeriodicWave>
 	**/
 	function new(context:BaseAudioContext, ?options:PeriodicWaveOptions):Void;

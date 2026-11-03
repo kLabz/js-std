@@ -25,21 +25,31 @@
 package js.web.device;
 
 /**
+	The **Screen Wake Lock API** provides a way to prevent devices from dimming or locking the screen when an application needs to keep running.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [WakeLockSentinel](https://developer.mozilla.org/docs/Web/API/WakeLockSentinel) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WakeLockSentinel/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WakeLockSentinel>
 **/
 @:native("WakeLockSentinel") extern class WakeLockSentinel extends js.web.dom.EventTarget {
 	/**
+		The **`released`** read-only property of the `WakeLockSentinel` interface returns a boolean that indicates whether a `WakeLockSentinel` has been released.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WakeLockSentinel/released>
 	**/
 	var released(default, null) : Bool;
 	/**
+		The **`type`** read-only property of the `WakeLockSentinel` interface returns a string representation of the currently acquired `WakeLockSentinel` type.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WakeLockSentinel/type>
 	**/
 	var type(default, null) : WakeLockType;
 	var onrelease : js.web.html.EventHandler;
 	/**
+		The **`release()`** method of the `WakeLockSentinel` interface releases the `WakeLockSentinel`, returning a `Promise` that is resolved once the sentinel has been successfully released.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WakeLockSentinel/release>
 	**/
 	function release():js.lib.Promise<Void>;

@@ -25,7 +25,11 @@
 package js.web.xr;
 
 /**
+	The **`XRHand`** interface is pair iterator (an ordered map) with the key being the hand joints and the value being an `XRJointSpace`.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRHand](https://developer.mozilla.org/docs/Web/API/XRHand) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRHand/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRHand>
 **/

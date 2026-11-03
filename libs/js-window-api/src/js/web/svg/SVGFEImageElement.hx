@@ -25,46 +25,64 @@
 package js.web.svg;
 
 /**
+	The **`SVGFEImageElement`** interface corresponds to the `<feImage>` element.
+	
+	Documentation [SVGFEImageElement](https://developer.mozilla.org/docs/Web/API/SVGFEImageElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement>
 **/
 @:native("SVGFEImageElement") extern class SVGFEImageElement extends SVGElement {
 	/**
+		The **`preserveAspectRatio`** read-only property of the `SVGFEImageElement` interface reflects the `preserveAspectRatio` attribute of the given `<feImage>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/preserveAspectRatio>
 	**/
 	var preserveAspectRatio(default, null) : SVGAnimatedPreserveAspectRatio;
 	@:require(js_experimental_api, "SVGFEImageElement.crossOrigin is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var crossOrigin(default, null) : SVGAnimatedString;
 	/**
+		The **`x`** read-only property of the `SVGFEImageElement` interface describes the horizontal coordinate of the position of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
+		The **`y`** read-only property of the `SVGFEImageElement` interface describes the vertical coordinate of the position of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
+		The **`width`** read-only property of the `SVGFEImageElement` interface describes the horizontal size of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
+		The **`height`** read-only property of the `SVGFEImageElement` interface describes the vertical size of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
+		The **`result`** read-only property of the `SVGFEImageElement` interface describes the assigned name of an SVG filter primitive as a `SVGAnimatedString`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/result>
 	**/
 	var result(default, null) : SVGAnimatedString;
 	/**
+		The **`href`** read-only property of the `SVGFEImageElement` interface reflects the `href` or `xlink:href`  attribute of the given `<feImage>` element.
+		
 		From interface mixin SVGURIReference
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEImageElement/href>

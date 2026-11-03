@@ -25,46 +25,66 @@
 package js.web.svg;
 
 /**
+	The **`SVGFEOffsetElement`** interface corresponds to the `<feOffset>` element.
+	
+	Documentation [SVGFEOffsetElement](https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement>
 **/
 @:native("SVGFEOffsetElement") extern class SVGFEOffsetElement extends SVGElement {
 	/**
+		The **`in1`** read-only property of the `SVGFEOffsetElement` interface reflects the `in` attribute of the given `<feOffset>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/in1>
 	**/
 	var in1(default, null) : SVGAnimatedString;
 	/**
+		The **`dx`** read-only property of the `SVGFEOffsetElement` interface reflects the `dx` attribute of the given `<feOffset>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/dx>
 	**/
 	var dx(default, null) : SVGAnimatedNumber;
 	/**
+		The **`dy`** read-only property of the `SVGFEOffsetElement` interface reflects the `dy` attribute of the given `<feOffset>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/dy>
 	**/
 	var dy(default, null) : SVGAnimatedNumber;
 	/**
+		The **`x`** read-only property of the `SVGFEOffsetElement` interface describes the horizontal coordinate of the position of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
+		The **`y`** read-only property of the `SVGFEOffsetElement` interface describes the vertical coordinate of the position of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
+		The **`width`** read-only property of the `SVGFEOffsetElement` interface describes the horizontal size of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
+		The **`height`** read-only property of the `SVGFEOffsetElement` interface describes the vertical size of an SVG filter primitive as an `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
+		The **`result`** read-only property of the `SVGFEOffsetElement` interface describes the assigned name of an SVG filter primitive as an `SVGAnimatedString`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEOffsetElement/result>

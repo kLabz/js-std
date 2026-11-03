@@ -25,12 +25,18 @@
 package js.web.css;
 
 /**
+	The **`Viewport`** interface of the `Viewport Segments API` represents the device's viewport.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [Viewport](https://developer.mozilla.org/docs/Web/API/Viewport) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Viewport/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Viewport>
 **/
 @:native("Viewport") @:require(js_experimental_api, "Viewport is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Viewport {
 	/**
+		The **`segments`** read-only property of the `Viewport` interface returns an array of `DOMRect` objects representing the position and dimensions of each viewport segment within the overall display.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Viewport/segments>
 	**/
 	var segments(default, null) : Null<Array<js.web.dom.DOMRect>>;

@@ -25,16 +25,24 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUDeviceLostInfo`** interface of the `WebGPU API` represents the object returned when the `GPUDevice.lost` `Promise` resolves. This provides information as to why a device has been lost.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUDeviceLostInfo](https://developer.mozilla.org/docs/Web/API/GPUDeviceLostInfo) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUDeviceLostInfo/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUDeviceLostInfo>
 **/
 @:native("GPUDeviceLostInfo") extern class GPUDeviceLostInfo {
 	/**
+		The **`reason`** read-only property of the `GPUDeviceLostInfo` interface defines the reason the device was lost in a machine-readable way.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUDeviceLostInfo/reason>
 	**/
 	var reason(default, null) : GPUDeviceLostReason;
 	/**
+		The **`message`** read-only property of the `GPUDeviceLostInfo` interface provides a human-readable message that explains why the device was lost.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUDeviceLostInfo/message>
 	**/
 	var message(default, null) : String;

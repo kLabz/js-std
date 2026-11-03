@@ -25,6 +25,10 @@
 package js.web.webgl;
 
 /**
+	The **WebGLRenderbuffer** interface is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and represents a buffer that can contain an image, or that can be a source or target of a rendering operation.
+	
+	Documentation [WebGLRenderbuffer](https://developer.mozilla.org/docs/Web/API/WebGLRenderbuffer) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WebGLRenderbuffer/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WebGLRenderbuffer>
 **/
 @:native("WebGLRenderbuffer") extern class WebGLRenderbuffer extends WebGLObject {

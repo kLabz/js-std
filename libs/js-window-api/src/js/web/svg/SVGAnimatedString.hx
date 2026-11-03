@@ -25,14 +25,22 @@
 package js.web.svg;
 
 /**
+	The **`SVGAnimatedString`** interface represents string attributes which can be animated from each SVG declaration. You need to create SVG attribute before doing anything else, everything should be declared inside this.
+	
+	Documentation [SVGAnimatedString](https://developer.mozilla.org/docs/Web/API/SVGAnimatedString) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGAnimatedString/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedString>
 **/
 @:native("SVGAnimatedString") extern class SVGAnimatedString {
 	/**
+		The **`baseVal`** property of the `SVGAnimatedString` interface gets or sets the base value of the given attribute.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedString/baseVal>
 	**/
 	var baseVal : haxe.extern.EitherType<String, js.web.dom.TrustedScriptURL>;
 	/**
+		The `animVal` read-only property of the `SVGAnimatedString` interface is a string representing the animated value of the reflected attribute.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedString/animVal>
 	**/
 	var animVal(default, null) : String;

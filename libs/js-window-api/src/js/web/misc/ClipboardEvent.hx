@@ -25,14 +25,22 @@
 package js.web.misc;
 
 /**
+	The **`ClipboardEvent`** interface of the [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API) represents events providing information related to modification of the clipboard, that is `cut`, `copy`, and `paste` events.
+	
+	Documentation [ClipboardEvent](https://developer.mozilla.org/docs/Web/API/ClipboardEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ClipboardEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ClipboardEvent>
 **/
 @:native("ClipboardEvent") extern class ClipboardEvent extends js.web.dom.Event {
 	/**
+		The **`clipboardData`** property of the `ClipboardEvent` interface holds a `DataTransfer` object, which can be used to:
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ClipboardEvent/clipboardData>
 	**/
 	var clipboardData(default, null) : Null<js.web.html.DataTransfer>;
 	/**
+		The **`ClipboardEvent()`** constructor returns a new `ClipboardEvent`, representing an event providing information related to modification of the clipboard, that is `cut`, `copy`, and `paste` events.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ClipboardEvent/ClipboardEvent>
 	**/
 	function new(type:String, ?eventInitDict:ClipboardEventInit):Void;

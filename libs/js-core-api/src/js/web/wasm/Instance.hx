@@ -25,10 +25,16 @@
 package js.web.wasm;
 
 /**
+	A **`WebAssembly.Instance`** object is a stateful, executable instance of a [`WebAssembly.Module`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Module). `Instance` objects contain all the [Exported WebAssembly functions](https://developer.mozilla.org/en-US/docs/WebAssembly/Guides/Exported_functions) that allow calling into WebAssembly code from JavaScript.
+	
+	Documentation [WebAssembly.Instance](https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Instance) by [Mozilla Contributors](https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Instance/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Instance>
 **/
 @:native("WebAssembly.Instance") extern class Instance {
 	/**
+		The **`exports`** read-only property of the [`WebAssembly.Instance`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Instance) object prototype returns an object containing as its members all the functions exported from the WebAssembly module instance, to allow them to be accessed and used by JavaScript.
+		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Instance/exports>
 	**/
 	var exports(default, null) : { };

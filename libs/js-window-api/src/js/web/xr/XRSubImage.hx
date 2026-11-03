@@ -25,12 +25,18 @@
 package js.web.xr;
 
 /**
+	The **`XRSubImage`** interface of the [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) represents what viewport of the GPU texture to use for rendering.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRSubImage](https://developer.mozilla.org/docs/Web/API/XRSubImage) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRSubImage/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRSubImage>
 **/
 @:native("XRSubImage") @:require(js_experimental_api, "XRSubImage is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRSubImage {
 	/**
+		The read-only **`viewport`** property of the `XRSubImage` interface represents the `XRViewport` that is used when rendering the sub image.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRSubImage/viewport>
 	**/
 	var viewport(default, null) : XRViewport;

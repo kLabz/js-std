@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`CSSKeyframeRule`** interface describes an object representing a set of styles for a given keyframe. It corresponds to the contents of a single keyframe of a `@keyframes` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+	
+	Documentation [CSSKeyframeRule](https://developer.mozilla.org/docs/Web/API/CSSKeyframeRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSKeyframeRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSKeyframeRule>
 **/
 @:native("CSSKeyframeRule") extern class CSSKeyframeRule extends CSSRule {
 	/**
+		The **`keyText`** property of the `CSSKeyframeRule` interface represents the [keyframe selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Keyframe_selectors) as a comma-separated list of percentage values. The from and to keywords map to 0% and 100%, respectively.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSKeyframeRule/keyText>
 	**/
 	var keyText : String;
 	/**
+		The read-only **`style`** property of the `CSSKeyframeRule` interface contains a `CSSStyleDeclaration` object representing the descriptors available in the `@keyframes` rule's body.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSKeyframeRule/style>
 	**/
 	var style(default, null) : CSSStyleProperties;

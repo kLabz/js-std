@@ -25,7 +25,11 @@
 package js.web.device;
 
 /**
+	The **`MIDIInput`** interface of the [Web MIDI API](https://developer.mozilla.org/en-US/docs/Web/API/Web_MIDI_API) receives messages from a MIDI input port.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [MIDIInput](https://developer.mozilla.org/docs/Web/API/MIDIInput) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MIDIInput/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/MIDIInput>
 **/

@@ -25,45 +25,67 @@
 package js.web.device;
 
 /**
+	The **`MIDIPort`** interface of the `Web MIDI API` represents a MIDI input or output port.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [MIDIPort](https://developer.mozilla.org/docs/Web/API/MIDIPort) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MIDIPort/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/MIDIPort>
 **/
 @:native("MIDIPort") extern class MIDIPort extends js.web.dom.EventTarget {
 	/**
+		The **`id`** read-only property of the `MIDIPort` interface returns the unique ID of the port.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/id>
 	**/
 	var id(default, null) : String;
 	/**
+		The **`manufacturer`** read-only property of the `MIDIPort` interface returns the manufacturer of the port.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/manufacturer>
 	**/
 	var manufacturer(default, null) : Null<String>;
 	/**
+		The **`name`** read-only property of the `MIDIPort` interface returns the system name of the port.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/name>
 	**/
 	var name(default, null) : Null<String>;
 	/**
+		The **`type`** read-only property of the `MIDIPort` interface returns the type of the port, indicating whether this is an input or output MIDI port.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/type>
 	**/
 	var type(default, null) : MIDIPortType;
 	/**
+		The **`version`** read-only property of the `MIDIPort` interface returns the version of the port.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/version>
 	**/
 	var version(default, null) : Null<String>;
 	/**
+		The **`state`** read-only property of the `MIDIPort` interface returns the state of the port.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/state>
 	**/
 	var state(default, null) : MIDIPortDeviceState;
 	/**
+		The **`connection`** read-only property of the `MIDIPort` interface returns the connection state of the port.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/connection>
 	**/
 	var connection(default, null) : MIDIPortConnectionState;
 	var onstatechange : js.web.html.EventHandler;
 	/**
+		The **`close()`** method of the `MIDIPort` interface makes the access to the MIDI device connected to this `MIDIPort` unavailable.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/close>
 	**/
 	function close():js.lib.Promise<MIDIPort>;
 	/**
+		The **`open()`** method of the `MIDIPort` interface makes the MIDI device connected to this `MIDIPort` explicitly available.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/open>
 	**/
 	function open():js.lib.Promise<MIDIPort>;

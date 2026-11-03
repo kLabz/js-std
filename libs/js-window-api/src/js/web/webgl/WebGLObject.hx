@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The **`WebGLObject`** is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and is the parent interface for all WebGL objects.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [WebGLObject](https://developer.mozilla.org/docs/Web/API/WebGLObject) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WebGLObject/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WebGLObject>
 **/

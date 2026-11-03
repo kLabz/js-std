@@ -25,19 +25,29 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCDTMFSender`** interface provides a mechanism for transmitting DTMF codes on a [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) `RTCPeerConnection`. You gain access to the connection's `RTCDTMFSender` through the `RTCRtpSender.dtmf` property on the audio track you wish to send DTMF with.
+	
+	Documentation [RTCDTMFSender](https://developer.mozilla.org/docs/Web/API/RTCDTMFSender) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCDTMFSender/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFSender>
 **/
 @:native("RTCDTMFSender") extern class RTCDTMFSender extends js.web.dom.EventTarget {
 	var ontonechange : js.web.html.EventHandler;
 	/**
+		The **`canInsertDTMF`** read-only property of the `RTCDTMFSender` interface returns a boolean value which indicates whether the `RTCDTMFSender` is capable of sending DTMF tones over the `RTCPeerConnection`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFSender/canInsertDTMF>
 	**/
 	var canInsertDTMF(default, null) : Bool;
 	/**
+		The **`toneBuffer`** read-only property of the `RTCDTMFSender` interface returns a string containing a list of the DTMF tones currently queued for sending to the remote peer over the `RTCPeerConnection`. To place tones into the buffer, call `insertDTMF()`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFSender/toneBuffer>
 	**/
 	var toneBuffer(default, null) : String;
 	/**
+		The **`insertDTMF()`** method of the `RTCDTMFSender` interface sends DTMF tones to the remote peer over the `RTCPeerConnection`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFSender/insertDTMF>
 	**/
 	function insertDTMF(tones:String, ?duration:Int = 100, ?interToneGap:Int = 70):Void;

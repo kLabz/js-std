@@ -25,22 +25,32 @@
 package js.web.storage;
 
 /**
+	The [Storage Standard](https://storage.spec.whatwg.org/) defines a shared storage system designed to be used by all APIs and technologies that websites can use to store data in a user's browser.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [StorageManager](https://developer.mozilla.org/docs/Web/API/StorageManager) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/StorageManager/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/StorageManager>
 **/
 @:native("StorageManager") extern class StorageManager {
 	/**
+		The **`estimate()`** method of the `StorageManager` interface asks the Storage Manager for how much storage the current [origin](https://developer.mozilla.org/en-US/docs/Glossary/Same-origin_policy) takes up (`usage`), and how much space is available (`quota`).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StorageManager/estimate>
 	**/
 	function estimate():js.lib.Promise<StorageEstimate>;
 	/**
+		The **origin private file system** (OPFS) is a storage endpoint provided as part of the [File System API](https://developer.mozilla.org/en-US/docs/Web/API/File_System_API), which is private to the origin of the page and not visible to the user like the regular file system. It provides access to a special kind of file that is highly optimized for performance and offers in-place write access to its content.
+		
 		From partial interface in fs.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/StorageManager/getDirectory>
 	**/
 	function getDirectory():js.lib.Promise<FileSystemDirectoryHandle>;
 	/**
+		The **`persisted()`** method of the `StorageManager` interface returns a `Promise` that resolves to `true` if your site's storage bucket is persistent.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StorageManager/persisted>
 	**/
 	function persisted():js.lib.Promise<Bool>;

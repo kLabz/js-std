@@ -25,6 +25,10 @@
 package js.web.html;
 
 /**
+	The **`HTMLBodyElement`** interface provides special properties (beyond those inherited from the regular `HTMLElement` interface) for manipulating `<body>` elements.
+	
+	Documentation [HTMLBodyElement](https://developer.mozilla.org/docs/Web/API/HTMLBodyElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLBodyElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLBodyElement>
 **/
 @:native("HTMLBodyElement") extern class HTMLBodyElement extends HTMLElement {

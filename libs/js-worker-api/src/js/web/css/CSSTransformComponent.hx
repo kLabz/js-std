@@ -25,18 +25,28 @@
 package js.web.css;
 
 /**
+	The **`CSSTransformComponent`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) is the base interface for objects that represent individual [transform functions](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function), such as [`rotate()`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/rotate) and [`scale()`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scale).
+	
+	Documentation [CSSTransformComponent](https://developer.mozilla.org/docs/Web/API/CSSTransformComponent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSTransformComponent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSTransformComponent>
 **/
 @:native("CSSTransformComponent") extern class CSSTransformComponent {
 	/**
+		The **`is2D`** property of the `CSSTransformComponent` interface represents whether the transform is 2D or 3D.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformComponent/is2D>
 	**/
 	var is2D : Bool;
 	/**
+		The **`toMatrix()`** method of the `CSSTransformComponent` interface returns a `DOMMatrix` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformComponent/toMatrix>
 	**/
 	function toMatrix():js.web.dom.DOMMatrix;
 	/**
+		The **`toString()`** method of the `CSSTransformComponent` interface is a stringifier returning a [CSS Transforms](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Transforms) function.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTransformComponent/toString>
 	**/
 	function toString():String;

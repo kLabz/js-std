@@ -25,6 +25,10 @@
 package js.web.css;
 
 /**
+	The **CSS numeric factory functions**, such as `CSS.em()` and `CSS.turn()` are methods that return [CSSUnitValues](https://developer.mozilla.org/en-US/docs/Web/API/CSSUnitValue) with the value being the numeric argument and the unit being the name of the method used. These functions create new numeric values less verbosely than using the `CSSUnitValue()` constructor.
+	
+	Documentation [CSS](https://developer.mozilla.org/docs/Web/API/CSS) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSS/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSS>
 **/
 @:native("CSS") extern class CSS {
@@ -119,6 +123,8 @@ package js.web.css;
 	**/
 	static function em(value:Float):CSSUnitValue;
 	/**
+		The **`CSS.escape()`** static method returns a string containing the escaped string passed as parameter, mostly for use as part of a CSS selector.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSS/escape_static>
 	**/
 	static function escape(ident:String):String;
@@ -135,6 +141,8 @@ package js.web.css;
 	**/
 	static function grad(value:Float):CSSUnitValue;
 	/**
+		The static, read-only **`highlights`** property of the `CSS` interface provides access to the `HighlightRegistry` used to style arbitrary text ranges using the `CSS Custom Highlight API`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSS/highlights_static>
 	**/
 	static var highlights(default, null) : HighlightRegistry;
@@ -193,6 +201,8 @@ package js.web.css;
 	**/
 	static function number(value:Float):CSSUnitValue;
 	/**
+		The static, read-only **`paintWorklet`** property of the `CSS` interface provides access to the paint [worklet](https://developer.mozilla.org/en-US/docs/Web/API/Worklet), which programmatically generates an image where a CSS property expects a file.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSS/paintWorklet_static>
 	**/
 	@:require(js_experimental_api, "CSS.paintWorklet is experimental (shipped in fewer than two engines); use -D js-experimental-api")
@@ -234,6 +244,8 @@ package js.web.css;
 	**/
 	static function rch(value:Float):CSSUnitValue;
 	/**
+		The **`CSS.registerProperty()`** static method registers [custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/--*), allowing for property type checking, default values, and properties that do or do not inherit their value.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSS/registerProperty_static>
 	**/
 	static function registerProperty(definition:PropertyDefinition):Void;
@@ -258,10 +270,14 @@ package js.web.css;
 	**/
 	static function s(value:Float):CSSUnitValue;
 	/**
+		The **`CSS.supports()`** static method returns a boolean value indicating if the browser supports a given CSS feature, or not.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSS/supports_static>
 	**/
 	static overload function supports(property:String, value:String):Bool;
 	/**
+		The **`CSS.supports()`** static method returns a boolean value indicating if the browser supports a given CSS feature, or not.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSS/supports_static>
 	**/
 	static overload function supports(conditionText:String):Bool;

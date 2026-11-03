@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`CSSMathProduct`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the product of two or more `CSSNumericValue` values — in cases where the result can't be represented as a single value.
+	
+	Documentation [CSSMathProduct](https://developer.mozilla.org/docs/Web/API/CSSMathProduct) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSMathProduct/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSMathProduct>
 **/
 @:native("CSSMathProduct") extern class CSSMathProduct extends CSSMathValue {
 	/**
+		The **`values`** read-only property of the `CSSMathProduct` interface returns a `CSSNumericArray` containing the `CSSNumericValue` objects being multiplied together.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathProduct/values>
 	**/
 	var values(default, null) : CSSNumericArray;
 	/**
+		The **`CSSMathProduct()`** constructor creates a new `CSSMathProduct` object representing the product of the arguments passed into it.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathProduct/CSSMathProduct>
 	**/
 	@:require(js_experimental_api, "CSSMathProduct.CSSMathProduct is experimental (shipped in fewer than two engines); use -D js-experimental-api")

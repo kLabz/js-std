@@ -25,27 +25,41 @@
 package js.web.sw;
 
 /**
+	The `WindowClient` interface of the [ServiceWorker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) represents the scope of a service worker client that is a document in a browsing context, controlled by an active worker. The service worker client independently selects and uses a service worker for its own loading and sub-resources.
+	
+	Documentation [WindowClient](https://developer.mozilla.org/docs/Web/API/WindowClient) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WindowClient/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WindowClient>
 **/
 @:native("WindowClient") extern class WindowClient extends Client {
 	/**
+		The **`visibilityState`** read-only property of the `WindowClient` interface indicates the visibility of the current client. This value can be one of `"hidden"`, `"visible"`, or `"prerender"`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WindowClient/visibilityState>
 	**/
 	var visibilityState(default, null) : js.web.html.DocumentVisibilityState;
 	/**
+		The **`focused`** read-only property of the `WindowClient` interface is a boolean value that indicates whether the current client has focus.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WindowClient/focused>
 	**/
 	var focused(default, null) : Bool;
 	/**
+		The **`ancestorOrigins`** read-only property of the `WindowClient` interface is an array of strings listing the origins of all ancestors of the browsing context represented by this `WindowClient` in reverse order.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WindowClient/ancestorOrigins>
 	**/
 	@:require(js_experimental_api, "WindowClient.ancestorOrigins is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var ancestorOrigins(default, null) : Array<String>;
 	/**
+		The **`focus()`** method of the `WindowClient` interface gives user input focus to the current client and returns a `Promise` that resolves to the existing `WindowClient`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WindowClient/focus>
 	**/
 	function focus():js.lib.Promise<WindowClient>;
 	/**
+		The **`navigate()`** method of the `WindowClient` interface loads a specified URL into a controlled client page then returns a `Promise` that resolves to the existing `WindowClient`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WindowClient/navigate>
 	**/
 	function navigate(url:String):js.lib.Promise<Null<WindowClient>>;

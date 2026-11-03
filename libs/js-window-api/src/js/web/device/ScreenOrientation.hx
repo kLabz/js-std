@@ -25,23 +25,35 @@
 package js.web.device;
 
 /**
+	The **Screen Orientation API** provides information about the orientation of the screen.
+	
+	Documentation [ScreenOrientation](https://developer.mozilla.org/docs/Web/API/ScreenOrientation) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ScreenOrientation/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ScreenOrientation>
 **/
 @:native("ScreenOrientation") extern class ScreenOrientation extends js.web.dom.EventTarget {
 	/**
+		The **`type`** read-only property of the `ScreenOrientation` interface returns the document's current orientation type, one of `portrait-primary`, `portrait-secondary`, `landscape-primary`, or `landscape-secondary`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ScreenOrientation/type>
 	**/
 	var type(default, null) : OrientationType;
 	/**
+		The **`angle`** read-only property of the `ScreenOrientation` interface returns the document's current orientation angle.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ScreenOrientation/angle>
 	**/
 	var angle(default, null) : Int;
 	var onchange : js.web.html.EventHandler;
 	/**
+		The **`lock()`** method of the `ScreenOrientation` interface locks the orientation of the containing document to the specified orientation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ScreenOrientation/lock>
 	**/
 	function lock(orientation:OrientationLockType):js.lib.Promise<Void>;
 	/**
+		The **`unlock()`** method of the `ScreenOrientation` interface unlocks the orientation of the containing document, effectively locking it to the default screen orientation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ScreenOrientation/unlock>
 	**/
 	function unlock():Void;

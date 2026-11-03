@@ -25,18 +25,28 @@
 package js.web.html;
 
 /**
+	The **`NavigationCurrentEntryChangeEvent`** interface of the `Navigation API` is the event object for the `currententrychange` event, which fires when the `Navigation.currentEntry` has changed.
+	
+	Documentation [NavigationCurrentEntryChangeEvent](https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent>
 **/
 @:native("NavigationCurrentEntryChangeEvent") extern class NavigationCurrentEntryChangeEvent extends js.web.dom.Event {
 	/**
+		The **`navigationType`** read-only property of the `NavigationCurrentEntryChangeEvent` interface returns the type of the navigation that resulted in the change. The property may be `null` if the change occurs due to `Navigation.updateCurrentEntry()`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/navigationType>
 	**/
 	var navigationType(default, null) : Null<NavigationType>;
 	/**
+		The **`from`** read-only property of the `NavigationCurrentEntryChangeEvent` interface returns the `NavigationHistoryEntry` that was navigated from.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/from>
 	**/
 	var from(default, null) : NavigationHistoryEntry;
 	/**
+		The **`NavigationCurrentEntryChangeEvent()`** constructor creates a new `NavigationCurrentEntryChangeEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/NavigationCurrentEntryChangeEvent>
 	**/
 	function new(type:String, eventInitDict:NavigationCurrentEntryChangeEventInit):Void;

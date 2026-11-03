@@ -25,9 +25,13 @@
 package js.web.device;
 
 /**
+	The `USBIsochronousInTransferPacket` interface of the [WebUSB API](https://developer.mozilla.org/en-US/docs/Web/API/WebUSB_API) is part of the response from a call to the `isochronousTransferIn()` method of the `USBDevice` interface. It represents the status of an individual packet from a request to transfer data from the USB device to the USB host over an isochronous endpoint.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [USBIsochronousInTransferPacket](https://developer.mozilla.org/docs/Web/API/USBIsochronousInTransferPacket) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/USBIsochronousInTransferPacket/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/USBIsochronousInTransferPacket>
 **/

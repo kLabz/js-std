@@ -25,10 +25,16 @@
 package js.web.dom;
 
 /**
+	The **`Comment`** interface represents textual notations within markup; although it is generally not visually shown, such comments are available to be read in the source view.
+	
+	Documentation [Comment](https://developer.mozilla.org/docs/Web/API/Comment) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Comment/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Comment>
 **/
 @:native("Comment") extern class Comment extends CharacterData {
 	/**
+		The **`Comment()`** constructor returns a newly created `Comment` object with the optional string given in parameter as its textual content.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Comment/Comment>
 	**/
 	function new(?data:String = ""):Void;

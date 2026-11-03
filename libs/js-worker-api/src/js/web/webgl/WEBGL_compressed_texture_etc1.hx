@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The **`WEBGL_compressed_texture_etc1`** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and exposes the [ETC1 compressed texture format](https://en.wikipedia.org/wiki/Ericsson_Texture_Compression).
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [WEBGL_compressed_texture_etc1](https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_etc1) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_etc1/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_compressed_texture_etc1>
 **/

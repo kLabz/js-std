@@ -25,10 +25,16 @@
 package js.web.svg;
 
 /**
+	The **`SVGNumber`** interface corresponds to the `&lt;number&gt;` basic data type.
+	
+	Documentation [SVGNumber](https://developer.mozilla.org/docs/Web/API/SVGNumber) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGNumber/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGNumber>
 **/
 @:native("SVGNumber") extern class SVGNumber {
 	/**
+		The **`value`** read-only property of the `SVGNumber` interface represents the number.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGNumber/value>
 	**/
 	var value : Float;

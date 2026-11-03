@@ -25,22 +25,34 @@
 package js.web.dom;
 
 /**
+	The **`DOMImplementation`** interface represents an object providing methods which are not dependent on any particular document. Such an object is returned by the `Document.implementation` property.
+	
+	Documentation [DOMImplementation](https://developer.mozilla.org/docs/Web/API/DOMImplementation) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DOMImplementation/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/DOMImplementation>
 **/
 @:native("DOMImplementation") extern class DOMImplementation {
 	/**
+		The **`createDocument()`** method of the `DOMImplementation` interface creates and returns an `XMLDocument`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DOMImplementation/createDocument>
 	**/
 	function createDocument(namespace:Null<String>, qualifiedName:String, ?doctype:Null<DocumentType> = null):XMLDocument;
 	/**
+		The **`DOMImplementation.createDocumentType()`** method returns a `DocumentType` object which can either be used with `DOMImplementation.createDocument` upon document creation or can be put into the document via methods like `Node.insertBefore()` or `Node.replaceChild()`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DOMImplementation/createDocumentType>
 	**/
 	function createDocumentType(name:String, publicId:String, systemId:String):DocumentType;
 	/**
+		The **`DOMImplementation.createHTMLDocument()`** method creates a new HTML `Document`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DOMImplementation/createHTMLDocument>
 	**/
 	function createHTMLDocument(?title:String):Document;
 	/**
+		The **`DOMImplementation.hasFeature()`** method returns a boolean flag indicating if a given feature is supported. It is deprecated and modern browsers return `true` in all cases.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DOMImplementation/hasFeature>
 	**/
 	@:deprecated

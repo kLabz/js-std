@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`HTMLHtmlElement`** interface serves as the root node for a given HTML document. This object inherits the properties and methods described in the `HTMLElement` interface.
+	
+	Documentation [HTMLHtmlElement](https://developer.mozilla.org/docs/Web/API/HTMLHtmlElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLHtmlElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLHtmlElement>
 **/
 @:native("HTMLHtmlElement") extern class HTMLHtmlElement extends HTMLElement {
 	/**
+		Returns version information about the document type definition (DTD) of a document. While this property is recognized by Mozilla, the return value for this property is always an empty string.
+		
 		From partial interface in html.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLHtmlElement/version>

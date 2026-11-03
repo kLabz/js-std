@@ -25,20 +25,30 @@
 package js.web.webgpu;
 
 /**
+	The **`GPU`** interface of the `WebGPU API` is the starting point for using WebGPU. It can be used to return a `GPUAdapter` from which you can request devices, configure features and limits, and more.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPU](https://developer.mozilla.org/docs/Web/API/GPU) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPU/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPU>
 **/
 @:native("GPU") extern class GPU {
 	/**
+		The **`wgslLanguageFeatures`** read-only property of the `GPU` interface returns a `WGSLLanguageFeatures` object that reports the [WGSL language extensions](https://gpuweb.github.io/gpuweb/wgsl/#language-extension) supported by the WebGPU implementation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPU/wgslLanguageFeatures>
 	**/
 	var wgslLanguageFeatures(default, null) : WGSLLanguageFeatures;
 	/**
+		The **`getPreferredCanvasFormat()`** method of the `GPU` interface returns the optimal canvas texture format for displaying 8-bit depth, standard dynamic range content on the current system.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPU/getPreferredCanvasFormat>
 	**/
 	function getPreferredCanvasFormat():GPUTextureFormat;
 	/**
+		The **`requestAdapter()`** method of the `GPU` interface returns a `Promise` that fulfills with a `GPUAdapter` object instance. From this you can request a `GPUDevice`, adapter info, features, and limits.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPU/requestAdapter>
 	**/
 	function requestAdapter(?options:GPURequestAdapterOptions):js.lib.Promise<Null<GPUAdapter>>;

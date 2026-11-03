@@ -25,18 +25,28 @@
 package js.web.html;
 
 /**
+	The **`HashChangeEvent`** interface represents events that fire when the fragment identifier of the URL has changed.
+	
+	Documentation [HashChangeEvent](https://developer.mozilla.org/docs/Web/API/HashChangeEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HashChangeEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HashChangeEvent>
 **/
 @:native("HashChangeEvent") extern class HashChangeEvent extends js.web.dom.Event {
 	/**
+		The **`oldURL`** read-only property of the `HashChangeEvent` interface returns the previous URL from which the window was navigated.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HashChangeEvent/oldURL>
 	**/
 	var oldURL(default, null) : String;
 	/**
+		The **`newURL`** read-only property of the `HashChangeEvent` interface returns the new URL to which the window is navigating.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HashChangeEvent/newURL>
 	**/
 	var newURL(default, null) : String;
 	/**
+		The **`HashChangeEvent()`** constructor creates a new `HashChangeEvent` object, that is used by the `hashchange` event fired at the `window` object when the fragment of the URL changes.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HashChangeEvent/HashChangeEvent>
 	**/
 	function new(type:String, ?eventInitDict:HashChangeEventInit):Void;

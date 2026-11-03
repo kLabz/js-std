@@ -25,12 +25,18 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUInternalError`** interface of the `WebGPU API` describes an application error indicating that an operation failed for a system or implementation-specific reason, even when all validation requirements were satisfied.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUInternalError](https://developer.mozilla.org/docs/Web/API/GPUInternalError) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUInternalError/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUInternalError>
 **/
 @:native("GPUInternalError") extern class GPUInternalError extends GPUError {
 	/**
+		The **`GPUInternalError()`** constructor creates a new `GPUInternalError` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUInternalError/GPUInternalError>
 	**/
 	function new(message:String):Void;

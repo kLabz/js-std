@@ -25,18 +25,28 @@
 package js.web.html;
 
 /**
+	When loading a media resource for use by an `<audio>` or `<video>` element, the **`TimeRanges`** interface is used for representing the time ranges of the media resource that have been buffered, the time ranges that have been played, and the time ranges that are seekable.
+	
+	Documentation [TimeRanges](https://developer.mozilla.org/docs/Web/API/TimeRanges) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TimeRanges/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TimeRanges>
 **/
 @:native("TimeRanges") extern class TimeRanges {
 	/**
+		The **`TimeRanges.length`** read-only property returns the number of ranges in the object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TimeRanges/length>
 	**/
 	var length(default, null) : Int;
 	/**
+		The **`end()`** method of the `TimeRanges` interface returns the time offset (in seconds) at which a specified time range ends.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TimeRanges/end>
 	**/
 	function end(index:Int):Float;
 	/**
+		The **`start()`** method of the `TimeRanges` interface returns the time offset (in seconds) at which a specified time range begins.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TimeRanges/start>
 	**/
 	function start(index:Int):Float;

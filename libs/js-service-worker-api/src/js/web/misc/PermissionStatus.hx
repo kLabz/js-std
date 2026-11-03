@@ -25,14 +25,22 @@
 package js.web.misc;
 
 /**
+	The **`PermissionStatus`** interface of the [Permissions API](https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API) provides the state of an object and an event handler for monitoring changes to said state.
+	
+	Documentation [PermissionStatus](https://developer.mozilla.org/docs/Web/API/PermissionStatus) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PermissionStatus/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PermissionStatus>
 **/
 @:native("PermissionStatus") extern class PermissionStatus extends js.web.dom.EventTarget {
 	/**
+		The **`state`** read-only property of the `PermissionStatus` interface returns the state of a requested permission. This property returns one of `'granted'`, `'denied'`, or `'prompt'`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PermissionStatus/state>
 	**/
 	var state(default, null) : PermissionState;
 	/**
+		The **`name`** read-only property of the `PermissionStatus` interface returns the name of a requested permission.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PermissionStatus/name>
 	**/
 	var name(default, null) : String;

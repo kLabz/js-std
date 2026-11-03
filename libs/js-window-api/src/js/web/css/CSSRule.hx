@@ -25,22 +25,34 @@
 package js.web.css;
 
 /**
+	The **`CSSRule`** interface represents a single CSS rule. There are several types of rules which inherit properties from `CSSRule`.
+	
+	Documentation [CSSRule](https://developer.mozilla.org/docs/Web/API/CSSRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSRule>
 **/
 @:native("CSSRule") extern class CSSRule {
 	/**
+		The **`cssText`** property of the `CSSRule` interface returns the actual text of a `CSSStyleSheet` style-rule.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSRule/cssText>
 	**/
 	var cssText : String;
 	/**
+		The **`parentRule`** read-only property of the `CSSRule` interface returns the containing rule of the current rule if this exists, or otherwise returns null.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSRule/parentRule>
 	**/
 	var parentRule(default, null) : Null<CSSRule>;
 	/**
+		The **`parentStyleSheet`** read-only property of the `CSSRule` interface returns the `StyleSheet` object in which the current rule is defined.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSRule/parentStyleSheet>
 	**/
 	var parentStyleSheet(default, null) : Null<CSSStyleSheet>;
 	/**
+		The read-only **`type`** property of the `CSSRule` interface is a deprecated property that returns an integer indicating which type of rule the `CSSRule` represents.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSRule/type>
 	**/
 	@:deprecated

@@ -25,20 +25,30 @@
 package js.web.sw;
 
 /**
+	The **Background Fetch API** provides a method for managing downloads that may take a significant amount of time such as movies, audio files, and software.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [BackgroundFetchManager](https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager>
 **/
 @:native("BackgroundFetchManager") @:require(js_experimental_api, "BackgroundFetchManager is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BackgroundFetchManager {
 	/**
+		The **`fetch()`** method of the `BackgroundFetchManager` interface initiates a background fetch operation, given one or more URLs or `Request` objects.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/fetch>
 	**/
 	function fetch(id:String, requests:haxe.extern.EitherType<js.web.net.RequestInfo, Array<js.web.net.RequestInfo>>, ?options:BackgroundFetchOptions):js.lib.Promise<BackgroundFetchRegistration>;
 	/**
+		The **`get()`** method of the `BackgroundFetchManager` interface returns a `Promise` that resolves with the `BackgroundFetchRegistration` associated with the provided `id` or `undefined` if the `id` is not found.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/get>
 	**/
 	function get(id:String):js.lib.Promise<Null<BackgroundFetchRegistration>>;
 	/**
+		The **`getIds()`** method of the `BackgroundFetchManager` interface returns the IDs of all registered background fetches.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/getIds>
 	**/
 	function getIds():js.lib.Promise<Array<String>>;

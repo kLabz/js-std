@@ -25,6 +25,10 @@
 package js.web.html;
 
 /**
+	The **`DOMStringMap`** interface is used for the `HTMLElement.dataset` attribute, to represent data for custom attributes added to elements.
+	
+	Documentation [DOMStringMap](https://developer.mozilla.org/docs/Web/API/DOMStringMap) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DOMStringMap/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/DOMStringMap>
 **/
 @:native("DOMStringMap") extern class DOMStringMap implements Dynamic<String> {

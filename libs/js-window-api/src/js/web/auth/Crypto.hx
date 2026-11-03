@@ -25,20 +25,30 @@
 package js.web.auth;
 
 /**
+	The **`Crypto`** interface represents basic cryptography features available in the current context. It allows access to a cryptographically strong random number generator and to cryptographic primitives.
+	
+	Documentation [Crypto](https://developer.mozilla.org/docs/Web/API/Crypto) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Crypto/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Crypto>
 **/
 @:native("Crypto") extern class Crypto {
 	/**
+		The **`Crypto.subtle`** read-only property returns a `SubtleCrypto` which can then be used to perform low-level cryptographic operations.
+		
 		Only available in secure contexts (HTTPS).
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Crypto/subtle>
 	**/
 	var subtle(default, null) : SubtleCrypto;
 	/**
+		The **`Crypto.getRandomValues()`** method lets you get cryptographically strong random values. The array given as the parameter is filled with random numbers (random in its cryptographic meaning).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Crypto/getRandomValues>
 	**/
 	function getRandomValues(array:js.lib.ArrayBufferView):js.lib.ArrayBufferView;
 	/**
+		The **`randomUUID()`** method of the `Crypto` interface is used to generate a v4 UUID using a cryptographically secure random number generator.
+		
 		Only available in secure contexts (HTTPS).
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Crypto/randomUUID>

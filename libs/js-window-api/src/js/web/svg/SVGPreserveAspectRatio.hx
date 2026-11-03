@@ -25,6 +25,10 @@
 package js.web.svg;
 
 /**
+	The **`SVGPreserveAspectRatio`** interface corresponds to the `preserveAspectRatio` attribute.
+	
+	Documentation [SVGPreserveAspectRatio](https://developer.mozilla.org/docs/Web/API/SVGPreserveAspectRatio) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGPreserveAspectRatio/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGPreserveAspectRatio>
 **/
 @:native("SVGPreserveAspectRatio") extern class SVGPreserveAspectRatio {
@@ -43,10 +47,14 @@ package js.web.svg;
 	static inline var SVG_MEETORSLICE_MEET : Int = 1;
 	static inline var SVG_MEETORSLICE_SLICE : Int = 2;
 	/**
+		The **`align`** read-only property of the `SVGPreserveAspectRatio` interface reflects the type of the alignment value as specified by one of the `SVG_PRESERVEASPECTRATIO_*` constants defined on this interface.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPreserveAspectRatio/align>
 	**/
 	var align : Int;
 	/**
+		The **`meetOrSlice`** read-only property of the `SVGPreserveAspectRatio` interface reflects the type of the meet-or-slice value as specified by one of the `SVG_MEETORSLICE_*` constants defined on this interface.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGPreserveAspectRatio/meetOrSlice>
 	**/
 	var meetOrSlice : Int;

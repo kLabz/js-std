@@ -25,14 +25,22 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCDataChannelEvent`** interface represents an event related to a specific `RTCDataChannel`.
+	
+	Documentation [RTCDataChannelEvent](https://developer.mozilla.org/docs/Web/API/RTCDataChannelEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCDataChannelEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannelEvent>
 **/
 @:native("RTCDataChannelEvent") extern class RTCDataChannelEvent extends js.web.dom.Event {
 	/**
+		The read-only property **`RTCDataChannelEvent.channel`** returns the `RTCDataChannel` associated with the event.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannelEvent/channel>
 	**/
 	var channel(default, null) : RTCDataChannel;
 	/**
+		The **`RTCDataChannelEvent()`** constructor creates a new `RTCDataChannelEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCDataChannelEvent/RTCDataChannelEvent>
 	**/
 	function new(type:String, eventInitDict:RTCDataChannelEventInit):Void;

@@ -25,18 +25,26 @@
 package js.web.webgpu;
 
 /**
+	The **`GPURenderPipeline`** interface of the `WebGPU API` represents a pipeline that controls the vertex and fragment shader stages and can be used in a `GPURenderPassEncoder` or `GPURenderBundleEncoder`.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPURenderPipeline](https://developer.mozilla.org/docs/Web/API/GPURenderPipeline) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPURenderPipeline/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPURenderPipeline>
 **/
 @:native("GPURenderPipeline") extern class GPURenderPipeline {
 	/**
+		The **`label`** property of the `GPURenderPipeline` interface provides a label that can be used to identify the object, for example in `GPUError` messages or console warnings.
+		
 		From interface mixin GPUObjectBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPURenderPipeline/label>
 	**/
 	var label : String;
 	/**
+		The **`getBindGroupLayout()`** method of the `GPURenderPipeline` interface returns the pipeline's `GPUBindGroupLayout` object with the given index (i.e., included in the originating `GPUDevice.createRenderPipeline()` or `GPUDevice.createRenderPipelineAsync()` call's pipeline layout).
+		
 		From interface mixin GPUPipelineBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPURenderPipeline/getBindGroupLayout>

@@ -25,18 +25,28 @@
 package js.web.webgl;
 
 /**
+	The **`WebGLActiveInfo`** interface is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and represents the information returned by calling the `WebGLRenderingContext.getActiveAttrib()` and `WebGLRenderingContext.getActiveUniform()` methods.
+	
+	Documentation [WebGLActiveInfo](https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo>
 **/
 @:native("WebGLActiveInfo") extern class WebGLActiveInfo {
 	/**
+		The read-only **`WebGLActiveInfo.size`** property is a `Number` representing the size of the requested data returned by calling the `getActiveAttrib()` or `getActiveUniform()` methods.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo/size>
 	**/
 	var size(default, null) : GLint;
 	/**
+		The read-only **`WebGLActiveInfo.type`** property represents the type of the requested data returned by calling the `getActiveAttrib()` or `getActiveUniform()` methods.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo/type>
 	**/
 	var type(default, null) : GLenum;
 	/**
+		The read-only **`WebGLActiveInfo.name`** property represents the name of the requested data returned by calling the `getActiveAttrib()` or `getActiveUniform()` methods.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo/name>
 	**/
 	var name(default, null) : String;

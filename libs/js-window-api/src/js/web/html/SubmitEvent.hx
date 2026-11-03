@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`SubmitEvent`** interface defines the object used to represent an HTML form's `submit` event. This event is fired at the `<form>` when the form's submit action is invoked.
+	
+	Documentation [SubmitEvent](https://developer.mozilla.org/docs/Web/API/SubmitEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SubmitEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SubmitEvent>
 **/
 @:native("SubmitEvent") extern class SubmitEvent extends js.web.dom.Event {
 	/**
+		The read-only **`submitter`** property found on the `SubmitEvent` interface specifies the submit button or other element that was invoked to cause the form to be submitted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SubmitEvent/submitter>
 	**/
 	var submitter(default, null) : Null<HTMLElement>;
 	/**
+		The **`SubmitEvent()`** constructor creates and returns a new `SubmitEvent` object, which is used to represent a `submit` event fired at an HTML [form](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SubmitEvent/SubmitEvent>
 	**/
 	function new(type:String, ?eventInitDict:SubmitEventInit):Void;

@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The **`OES_texture_half_float`** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and adds texture formats with 16- (aka half float) and 32-bit floating-point components.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [OES_texture_half_float](https://developer.mozilla.org/docs/Web/API/OES_texture_half_float) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/OES_texture_half_float/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/OES_texture_half_float>
 **/

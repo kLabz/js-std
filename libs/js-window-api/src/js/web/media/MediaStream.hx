@@ -25,50 +25,74 @@
 package js.web.media;
 
 /**
+	The **Media Capture and Streams** API, often called the **Media Streams API** or **MediaStream API**, is an API related to [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) which provides support for streaming audio and video data.
+	
+	Documentation [MediaStream](https://developer.mozilla.org/docs/Web/API/MediaStream) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MediaStream/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaStream>
 **/
 @:native("MediaStream") extern class MediaStream extends js.web.dom.EventTarget {
 	/**
+		The **`id`** read-only property of the `MediaStream` interface is a string containing 36 characters denoting a unique identifier (GUID) for the object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/id>
 	**/
 	var id(default, null) : String;
 	/**
+		The **`active`** read-only property of the `MediaStream` interface returns a Boolean value which is `true` if the stream is currently active; otherwise, it returns `false`. A stream is considered **active** if at least one of its `MediaStreamTrack`s does not have its property `MediaStreamTrack.readyState` set to `ended`. Once every track has ended, the stream's `active` property becomes `false`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/active>
 	**/
 	var active(default, null) : Bool;
 	var onaddtrack : js.web.html.EventHandler;
 	var onremovetrack : js.web.html.EventHandler;
 	/**
+		The **`MediaStream()`** constructor returns a newly-created `MediaStream`, which serves as a collection of media tracks, each represented by a `MediaStreamTrack` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/MediaStream>
 	**/
 	@:overload(function(tracks:Array<MediaStreamTrack>):Void { })
 	@:overload(function(stream:MediaStream):Void { })
 	function new():Void;
 	/**
+		The **`addTrack()`** method of the `MediaStream` interface adds a new track to the stream. The track is specified as a parameter of type `MediaStreamTrack`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/addTrack>
 	**/
 	function addTrack(track:MediaStreamTrack):Void;
 	/**
+		The **`clone()`** method of the `MediaStream` interface creates a duplicate of the `MediaStream`. This new `MediaStream` object has a new unique `id` and contains clones of every `MediaStreamTrack` contained by the `MediaStream` on which `clone()` was called.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/clone>
 	**/
 	function clone():MediaStream;
 	/**
+		The **`getAudioTracks()`** method of the `MediaStream` interface returns a sequence that represents all the `MediaStreamTrack` objects in this stream's [track set](https://w3c.github.io/mediacapture-main/#dfn-track-set) where `MediaStreamTrack.kind` is `audio`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/getAudioTracks>
 	**/
 	function getAudioTracks():Array<MediaStreamTrack>;
 	/**
+		The **`getTrackById()`** method of the `MediaStream` interface returns a `MediaStreamTrack` object representing the track with the specified ID string. If there is no track with the specified ID, this method returns `null`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/getTrackById>
 	**/
 	function getTrackById(trackId:String):Null<MediaStreamTrack>;
 	/**
+		The **`getTracks()`** method of the `MediaStream` interface returns a sequence that represents all the `MediaStreamTrack` objects in this stream's [track set](https://w3c.github.io/mediacapture-main/#dfn-track-set), regardless of `MediaStreamTrack.kind`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/getTracks>
 	**/
 	function getTracks():Array<MediaStreamTrack>;
 	/**
+		The **`getVideoTracks()`** method of the `MediaStream` interface returns a sequence of `MediaStreamTrack` objects representing the video tracks in this stream.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/getVideoTracks>
 	**/
 	function getVideoTracks():Array<MediaStreamTrack>;
 	/**
+		The **`removeTrack()`** method of the `MediaStream` interface removes a `MediaStreamTrack` from a stream.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/removeTrack>
 	**/
 	function removeTrack(track:MediaStreamTrack):Void;

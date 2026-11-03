@@ -25,15 +25,23 @@
 package js.web.wasm;
 
 /**
+	A **`WebAssembly.Global`** object represents a global variable instance, accessible from both JavaScript and importable/exportable across one or more [`WebAssembly.Module`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Module) instances. This allows dynamic linking of multiple modules.
+	
+	Documentation [WebAssembly.Global](https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Global) by [Mozilla Contributors](https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Global/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Global>
 **/
 @:native("WebAssembly.Global") extern class Global {
 	/**
+		The **`value`** property of the [`WebAssembly.Global`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Global) object prototype returns the value contained inside the global variable.
+		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Global/value>
 	**/
 	var value : Any;
 	function new(descriptor:GlobalDescriptor, ?v:Any):Void;
 	/**
+		The **`valueOf`** method of the [`WebAssembly.Global`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Global) object prototype returns the value contained inside the global variable.
+		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Global/valueOf>
 	**/
 	function valueOf():Any;

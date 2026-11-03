@@ -25,12 +25,18 @@
 package js.web.css;
 
 /**
+	The **`CSSFunctionDescriptors`** interface of the [CSS Object Model](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the descriptors contained within a set of CSS declarations represented by a `CSSFunctionDeclarations` object.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [CSSFunctionDescriptors](https://developer.mozilla.org/docs/Web/API/CSSFunctionDescriptors) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSFunctionDescriptors/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionDescriptors>
 **/
 @:native("CSSFunctionDescriptors") @:require(js_experimental_api, "CSSFunctionDescriptors is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSFunctionDescriptors extends CSSStyleDeclaration {
 	/**
+		The **`result`** property of the `CSSFunctionDescriptors` interface returns a string representing a `result` descriptor, if one exists in the associated set of declarations.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionDescriptors/result>
 	**/
 	var result : String;

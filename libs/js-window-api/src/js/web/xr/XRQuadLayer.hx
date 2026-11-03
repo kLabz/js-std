@@ -25,24 +25,36 @@
 package js.web.xr;
 
 /**
+	The **`XRQuadLayer`** interface of the [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) is a layer that takes up a flat rectangular space in the virtual environment. An `XRQuadLayer` has no thickness. It is a two-dimensional object positioned and oriented in 3D space. The position of a quad refers to the center of the quad. Only the front of the layer is visible.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRQuadLayer](https://developer.mozilla.org/docs/Web/API/XRQuadLayer) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRQuadLayer/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRQuadLayer>
 **/
 @:native("XRQuadLayer") @:require(js_experimental_api, "XRQuadLayer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRQuadLayer extends XRCompositionLayer {
 	/**
+		The **`space`** property of the `XRQuadLayer` interface represents the layer's spatial relationship with the user's physical environment.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRQuadLayer/space>
 	**/
 	var space : XRSpace;
 	/**
+		The **`transform`** property of the `XRQuadLayer` interface represents the offset and orientation relative to the layer's `space`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRQuadLayer/transform>
 	**/
 	var transform : XRRigidTransform;
 	/**
+		The **`width`** property of the `XRQuadLayer` interface represents the width of the layer in meters.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRQuadLayer/width>
 	**/
 	var width : Float;
 	/**
+		The **`height`** property of the `XRQuadLayer` interface represents the height of the layer in meters.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRQuadLayer/height>
 	**/
 	var height : Float;

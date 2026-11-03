@@ -25,45 +25,67 @@
 package js.web.media;
 
 /**
+	The **`AudioDecoder`** interface of the `WebCodecs API` decodes chunks of audio.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [AudioDecoder](https://developer.mozilla.org/docs/Web/API/AudioDecoder) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AudioDecoder/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/AudioDecoder>
 **/
 @:native("AudioDecoder") extern class AudioDecoder extends js.web.dom.EventTarget {
 	/**
+		The **`state`** read-only property of the `AudioDecoder` interface returns the current state of the underlying codec.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioDecoder/state>
 	**/
 	var state(default, null) : CodecState;
 	/**
+		The **`decodeQueueSize`** read-only property of the `AudioDecoder` interface returns the number of pending decode requests in the queue.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioDecoder/decodeQueueSize>
 	**/
 	var decodeQueueSize(default, null) : Int;
 	var ondequeue : js.web.html.EventHandler;
 	/**
+		The **`AudioDecoder()`** constructor creates a new `AudioDecoder` object with the provided `init.output` callback assigned as the output callback, the provided `init.error` callback as the error callback, and the `AudioDecoder.state` set to `"unconfigured"`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioDecoder/AudioDecoder>
 	**/
 	function new(init:AudioDecoderInit):Void;
 	/**
+		The **`close()`** method of the `AudioDecoder` interface ends all pending work and releases system resources.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioDecoder/close>
 	**/
 	function close():Void;
 	/**
+		The **`configure()`** method of the `AudioDecoder` interface enqueues a control message to configure the audio decoder for decoding chunks.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioDecoder/configure>
 	**/
 	function configure(config:AudioDecoderConfig):Void;
 	/**
+		The **`decode()`** method of the `AudioDecoder` interface enqueues a control message to decode a given chunk of audio.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioDecoder/decode>
 	**/
 	function decode(chunk:EncodedAudioChunk):Void;
 	/**
+		The **`flush()`** method of the `AudioDecoder` interface returns a Promise that resolves once all pending messages in the queue have been completed.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioDecoder/flush>
 	**/
 	function flush():js.lib.Promise<Void>;
 	/**
+		The **`isConfigSupported()`** static method of the `AudioDecoder` interface checks if the given config is supported (that is, if `AudioDecoder` objects can be successfully configured with the given config).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioDecoder/isConfigSupported_static>
 	**/
 	static function isConfigSupported(config:AudioDecoderConfig):js.lib.Promise<AudioDecoderSupport>;
 	/**
+		The **`reset()`** method of the `AudioDecoder` interface resets all states including configuration, control messages in the control message queue, and all pending callbacks.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioDecoder/reset>
 	**/
 	function reset():Void;

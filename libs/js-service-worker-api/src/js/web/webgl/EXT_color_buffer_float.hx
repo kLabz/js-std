@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The **`EXT_color_buffer_float`** extension is part of [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and adds the ability to render a variety of floating point formats.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [EXT_color_buffer_float](https://developer.mozilla.org/docs/Web/API/EXT_color_buffer_float) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/EXT_color_buffer_float/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/EXT_color_buffer_float>
 **/

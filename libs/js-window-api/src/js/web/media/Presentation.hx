@@ -25,20 +25,28 @@
 package js.web.media;
 
 /**
+	The **`Presentation`** can be defined as two possible user agents in the context: _Controlling user agent_ and _Receiving user agent_.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [Presentation](https://developer.mozilla.org/docs/Web/API/Presentation) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Presentation/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Presentation>
 **/
 @:native("Presentation") @:require(js_experimental_api, "Presentation is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Presentation {
 	/**
+		In a [controlling user agent](https://www.w3.org/TR/presentation-api/#dfn-controlling-user-agent), the **`defaultRequest`** attribute _MUST_ return the [default presentation request](https://www.w3.org/TR/presentation-api/#dfn-default-presentation-request) if any, otherwise `null`. In a [receiving browsing context](https://www.w3.org/TR/presentation-api/#dfn-receiving-browsing-context), it _MUST_ return `null`.
+		
 		From partial interface in presentation-api.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Presentation/defaultRequest>
 	**/
 	var defaultRequest : Null<PresentationRequest>;
 	/**
+		The **read-only** `Presentation` attribute `receiver`, which is only available in browser contexts which are **receiving** a presentation, returns the `PresentationReceiver` object which can be used to access and communicate with the browser context which controls the presentation. This property is always `null` when accessed from outside a browser context which is receiving a presentation.
+		
 		From partial interface in presentation-api.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Presentation/receiver>

@@ -25,14 +25,22 @@
 package js.web.dom;
 
 /**
+	A **`DOMRect`** describes the size and position of a rectangle.
+	
+	Documentation [DOMRect](https://developer.mozilla.org/docs/Web/API/DOMRect) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DOMRect/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/DOMRect>
 **/
 @:native("DOMRect") extern class DOMRect extends DOMRectReadOnly {
 	/**
+		The **`DOMRect()`** constructor creates a new `DOMRect` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DOMRect/DOMRect>
 	**/
 	function new(?x:Float = 0, ?y:Float = 0, ?width:Float = 0, ?height:Float = 0):Void;
 	/**
+		The **`fromRect()`** static method of the `DOMRect` object creates a new `DOMRect` object with a given location and dimensions.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DOMRect/fromRect_static>
 	**/
 	static function fromRect(?other:DOMRectInit):DOMRect;

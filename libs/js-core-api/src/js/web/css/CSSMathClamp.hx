@@ -25,22 +25,34 @@
 package js.web.css;
 
 /**
+	The **`CSSMathClamp`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the CSS `clamp()` function.
+	
+	Documentation [CSSMathClamp](https://developer.mozilla.org/docs/Web/API/CSSMathClamp) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSMathClamp/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSMathClamp>
 **/
 @:native("CSSMathClamp") extern class CSSMathClamp extends CSSMathValue {
 	/**
+		The **`lower`** read-only property of the `CSSMathClamp` interface returns a `CSSNumericValue` object representing its minimum value.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathClamp/lower>
 	**/
 	var lower(default, null) : CSSNumericValue;
 	/**
+		The **`value`** read-only property of the `CSSMathClamp` interface returns a `CSSNumericValue` instance representing its preferred value.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathClamp/value>
 	**/
 	var value(default, null) : CSSNumericValue;
 	/**
+		The **`upper`** read-only property of the `CSSMathClamp` interface returns a `CSSNumericValue` object representing its maximum value.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathClamp/upper>
 	**/
 	var upper(default, null) : CSSNumericValue;
 	/**
+		The **`CSSMathClamp()`** constructor creates a new `CSSMathClamp` object representing a CSS `clamp()` function.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathClamp/CSSMathClamp>
 	**/
 	function new(lower:CSSNumberish, value:CSSNumberish, upper:CSSNumberish):Void;

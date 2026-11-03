@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`CSSMathMax`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the CSS `max()` function.
+	
+	Documentation [CSSMathMax](https://developer.mozilla.org/docs/Web/API/CSSMathMax) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSMathMax/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSMathMax>
 **/
 @:native("CSSMathMax") extern class CSSMathMax extends CSSMathValue {
 	/**
+		The **`values`** read-only property of the `CSSMathMax` interface returns a `CSSNumericArray` containing the `CSSNumericValue` objects being compared to find the maximum.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathMax/values>
 	**/
 	var values(default, null) : CSSNumericArray;
 	/**
+		The **`CSSMathMax()`** constructor creates a new `CSSMathMax` object which represents the CSS `max()` function.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathMax/CSSMathMax>
 	**/
 	@:require(js_experimental_api, "CSSMathMax.CSSMathMax is experimental (shipped in fewer than two engines); use -D js-experimental-api")

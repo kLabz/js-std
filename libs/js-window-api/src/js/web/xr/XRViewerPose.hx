@@ -25,14 +25,20 @@
 package js.web.xr;
 
 /**
+	The WebXR Device API interface **`XRViewerPose`** represents the pose (the position and orientation) of a viewer's point of view on the scene. Each `XRViewerPose` can have multiple views to represent, for example, the slight separation between the left and right eye.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRViewerPose](https://developer.mozilla.org/docs/Web/API/XRViewerPose) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRViewerPose/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRViewerPose>
 **/
 @:native("XRViewerPose") @:require(js_experimental_api, "XRViewerPose is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRViewerPose extends XRPose {
 	/**
+		The read-only `XRViewerPose` property **`views`** returns an array which contains every `XRView` which must be rendered in order to fully represent the scene from the viewpoint defined by the viewer pose. For monoscopic devices, this array contains a single view.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRViewerPose/views>
 	**/
 	var views(default, null) : Array<XRView>;

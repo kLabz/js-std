@@ -25,17 +25,25 @@
 package js.web.device;
 
 /**
+	The **`MIDIOutput`** interface of the `Web MIDI API` provides methods to add messages to the queue of an output device, and to clear the queue of messages.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [MIDIOutput](https://developer.mozilla.org/docs/Web/API/MIDIOutput) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MIDIOutput/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/MIDIOutput>
 **/
 @:native("MIDIOutput") extern class MIDIOutput extends MIDIPort {
 	/**
+		The **`clear()`** method of the `MIDIOutput` interface clears the queue of messages being sent to the output device.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIOutput/clear>
 	**/
 	@:require(js_experimental_api, "MIDIOutput.clear is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function clear():Void;
 	/**
+		The **`send()`** method of the `MIDIOutput` interface queues messages for the corresponding MIDI port. The message can be sent immediately, or with an optional timestamp to delay sending.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIOutput/send>
 	**/
 	function send(data:Array<Int>, ?timestamp:js.web.perf.DOMHighResTimeStamp = 0):Void;

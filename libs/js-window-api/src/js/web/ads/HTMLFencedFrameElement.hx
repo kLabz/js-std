@@ -25,22 +25,32 @@
 package js.web.ads;
 
 /**
+	The **`HTMLFencedFrameElement`** interface represents a `<fencedframe>` element in JavaScript and provides configuration properties.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [HTMLFencedFrameElement](https://developer.mozilla.org/docs/Web/API/HTMLFencedFrameElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLFencedFrameElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLFencedFrameElement>
 **/
 @:native("HTMLFencedFrameElement") @:require(js_experimental_api, "HTMLFencedFrameElement is experimental (shipped in fewer than two engines); use -D js-experimental-api") @:deprecated extern class HTMLFencedFrameElement extends js.web.html.HTMLElement {
 	/**
+		The **`config`** property of the `HTMLFencedFrameElement` contains a `FencedFrameConfig` object, which represents the navigation of a `<fencedframe>`, i.e., what content will be displayed in it. A `FencedFrameConfig` is returned from a source such as the [Protected Audience API](https://privacysandbox.google.com/private-advertising/protected-audience).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLFencedFrameElement/config>
 	**/
 	@:deprecated
 	var config : Null<FencedFrameConfig>;
 	/**
+		The **`width`** property of the `HTMLFencedFrameElement` gets and sets the value of the corresponding `<fencedframe>` `width` attribute, which specifies the width of the element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLFencedFrameElement/width>
 	**/
 	@:deprecated
 	var width : String;
 	/**
+		The **`height`** property of the `HTMLFencedFrameElement` gets and sets the value of the corresponding `<fencedframe>` `height` attribute, which specifies the height of the element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLFencedFrameElement/height>
 	**/
 	@:deprecated
@@ -48,6 +58,8 @@ package js.web.ads;
 	@:deprecated
 	var sandbox(default, null) : js.web.dom.DOMTokenList;
 	/**
+		The **`allow`** property of the `HTMLFencedFrameElement` gets and sets the value of the corresponding `<fencedframe>` `allow` attribute, which represents a [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Permissions_Policy) applied to the content when it is first embedded.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLFencedFrameElement/allow>
 	**/
 	@:deprecated

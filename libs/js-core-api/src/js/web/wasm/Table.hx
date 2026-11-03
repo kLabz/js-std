@@ -25,23 +25,35 @@
 package js.web.wasm;
 
 /**
+	The **`WebAssembly.Table`** object is a JavaScript wrapper object — an array-like structure representing a WebAssembly table, which stores homogeneous references. A table created by JavaScript or in WebAssembly code will be accessible and mutable from both JavaScript and WebAssembly.
+	
+	Documentation [WebAssembly.Table](https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table) by [Mozilla Contributors](https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table>
 **/
 @:native("WebAssembly.Table") extern class Table {
 	/**
+		The read-only **`length`** prototype property of the [`WebAssembly.Table`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Table) object returns the length of the table, i.e., the number of elements in the table.
+		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table/length>
 	**/
 	var length(default, null) : AddressValue;
 	function new(descriptor:TableDescriptor, ?value:Any):Void;
 	/**
+		The **`get()`** prototype method of the [`WebAssembly.Table()`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Table) object retrieves the element stored at a given index.
+		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table/get>
 	**/
 	function get(index:AddressValue):Any;
 	/**
+		The **`grow()`** prototype method of the [`WebAssembly.Table`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Table) object increases the size of the `Table` instance by a specified number of elements, filled with the provided value.
+		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table/grow>
 	**/
 	function grow(delta:AddressValue, ?value:Any):AddressValue;
 	/**
+		The **`set()`** prototype method of the [`WebAssembly.Table`](https://developer.mozilla.org/en-US/docs/WebAssembly/Reference/JavaScript_interface/Table) object mutates a reference stored at a given index to a different value.
+		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Table/set>
 	**/
 	function set(index:AddressValue, ?value:Any):Void;

@@ -25,9 +25,13 @@
 package js.web.device;
 
 /**
+	The `USBEndpoint` interface of the [WebUSB API](https://developer.mozilla.org/en-US/docs/Web/API/WebUSB_API) provides information about an endpoint provided by the USB device. An endpoint represents a unidirectional data stream into or out of a device.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [USBEndpoint](https://developer.mozilla.org/docs/Web/API/USBEndpoint) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/USBEndpoint/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/USBEndpoint>
 **/

@@ -25,14 +25,20 @@
 package js.web.device;
 
 /**
+	The **`RelativeOrientationSensor`** interface of the [Sensor APIs](https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs) describes the device's physical orientation without regard to the Earth's reference coordinate system.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [RelativeOrientationSensor](https://developer.mozilla.org/docs/Web/API/RelativeOrientationSensor) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RelativeOrientationSensor/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/RelativeOrientationSensor>
 **/
 @:native("RelativeOrientationSensor") @:require(js_experimental_api, "RelativeOrientationSensor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class RelativeOrientationSensor extends OrientationSensor {
 	/**
+		The **`RelativeOrientationSensor()`** constructor creates a new `RelativeOrientationSensor` object which describes the device's physical orientation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RelativeOrientationSensor/RelativeOrientationSensor>
 	**/
 	function new(?sensorOptions:OrientationSensorOptions):Void;

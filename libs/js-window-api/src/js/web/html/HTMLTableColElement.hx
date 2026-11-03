@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`HTMLTableColElement`** interface provides properties for manipulating single or grouped table column elements.
+	
+	Documentation [HTMLTableColElement](https://developer.mozilla.org/docs/Web/API/HTMLTableColElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLTableColElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLTableColElement>
 **/
 @:native("HTMLTableColElement") extern class HTMLTableColElement extends HTMLElement {
 	/**
+		The **`span`** property of the `HTMLTableColElement` interface represents the number of columns this `<col>` or `<colgroup>` must span; this lets the column occupy space across multiple columns of the table. It reflects the [`span`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/col#span) attribute.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableColElement/span>
 	**/
 	var span : Int;
 	/**
+		The **`align`** property of the `HTMLTableColElement` interface is a string indicating how to horizontally align text in a table `<col>` column element.
+		
 		From partial interface in html.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableColElement/align>
@@ -40,6 +48,8 @@ package js.web.html;
 	@:deprecated
 	var align : String;
 	/**
+		The **`ch`** property of the `HTMLTableColElement` interface does nothing. It reflects the `char` attribute of the `<col>` element.
+		
 		From partial interface in html.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableColElement/ch>
@@ -47,6 +57,8 @@ package js.web.html;
 	@:deprecated
 	var ch : String;
 	/**
+		The **`chOff`** property of the `HTMLTableColElement` interface does nothing. It reflects the `charoff` attribute of the `<col>` element.
+		
 		From partial interface in html.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableColElement/chOff>
@@ -54,6 +66,8 @@ package js.web.html;
 	@:deprecated
 	var chOff : String;
 	/**
+		The **`vAlign`** property of the `HTMLTableColElement` interface is a string indicating how to vertically align text in a table `<col>` column element.
+		
 		From partial interface in html.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableColElement/vAlign>

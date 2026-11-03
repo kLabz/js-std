@@ -25,18 +25,28 @@
 package js.web.dom;
 
 /**
+	The **`DOMException`** interface represents an abnormal event (called an **exception**) that occurs as a result of calling a method or accessing a property of a web API. This is how error conditions are described in web APIs.
+	
+	Documentation [DOMException](https://developer.mozilla.org/docs/Web/API/DOMException) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DOMException/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/DOMException>
 **/
 @:native("DOMException") extern class DOMException {
 	/**
+		The **`name`** read-only property of the `DOMException` interface returns a string that contains one of the strings associated with an [error name](https://developer.mozilla.org/en-US/docs/Web/API/DOMException#error_names).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DOMException/name>
 	**/
 	var name(default, null) : String;
 	/**
+		The **`message`** read-only property of the `DOMException` interface returns a string representing a message or description associated with the given [error name](https://developer.mozilla.org/en-US/docs/Web/API/DOMException#error_names).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DOMException/message>
 	**/
 	var message(default, null) : String;
 	/**
+		The **`code`** read-only property of the `DOMException` interface returns one of the legacy [error code constants](https://developer.mozilla.org/en-US/docs/Web/API/DOMException#error_names), or `0` if none match.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DOMException/code>
 	**/
 	@:deprecated
@@ -67,6 +77,8 @@ package js.web.dom;
 	static inline var INVALID_NODE_TYPE_ERR : Int = 24;
 	static inline var DATA_CLONE_ERR : Int = 25;
 	/**
+		The **`DOMException()`** constructor returns a `DOMException` object with a specified message and name.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DOMException/DOMException>
 	**/
 	function new(?message:String = "", ?name:String = "Error"):Void;

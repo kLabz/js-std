@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)'s `EXT_float_blend` extension allows blending and draw buffers with 32-bit floating-point components.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [EXT_float_blend](https://developer.mozilla.org/docs/Web/API/EXT_float_blend) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/EXT_float_blend/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/EXT_float_blend>
 **/

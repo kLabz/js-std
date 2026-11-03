@@ -25,21 +25,31 @@
 package js.web.sw;
 
 /**
+	The **`ServiceWorkerGlobalScope`** interface of the [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) represents the global execution context of a service worker.
+	
 	Unhandled extended attribute Global
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [ServiceWorkerGlobalScope](https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope>
 **/
 @:native("ServiceWorkerGlobalScope") extern class ServiceWorkerGlobalScope extends js.web.html.WorkerGlobalScope {
 	/**
+		The **`clients`** read-only property of the `ServiceWorkerGlobalScope` interface returns the [`Clients`](https://developer.mozilla.org/en-US/docs/Web/API/Clients) object associated with the service worker.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope/clients>
 	**/
 	var clients(default, null) : Clients;
 	/**
+		The **`registration`** read-only property of the `ServiceWorkerGlobalScope` interface returns a reference to the `ServiceWorkerRegistration` object, which represents the service worker's registration.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope/registration>
 	**/
 	var registration(default, null) : ServiceWorkerRegistration;
 	/**
+		The **`serviceWorker`** read-only property of the `ServiceWorkerGlobalScope` interface returns a reference to the `ServiceWorker` object, which represents the service worker.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope/serviceWorker>
 	**/
 	var serviceWorker(default, null) : ServiceWorker;
@@ -73,6 +83,8 @@ package js.web.sw;
 	**/
 	var oncontentdelete : js.web.html.EventHandler;
 	/**
+		The **`cookieStore`** read-only property of the `ServiceWorkerGlobalScope` interface returns a reference to the `CookieStore` object associated with this service worker.
+		
 		From partial interface in cookiestore.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope/cookieStore>
@@ -111,6 +123,8 @@ package js.web.sw;
 	**/
 	var onpaymentrequest : js.web.html.EventHandler;
 	/**
+		The **`skipWaiting()`** method of the `ServiceWorkerGlobalScope` interface forces the waiting service worker to become the active service worker.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting>
 	**/
 	function skipWaiting():js.lib.Promise<Void>;

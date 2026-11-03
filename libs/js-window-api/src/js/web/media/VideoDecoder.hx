@@ -25,45 +25,67 @@
 package js.web.media;
 
 /**
+	The **`VideoDecoder`** interface of the `WebCodecs API` decodes chunks of video.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [VideoDecoder](https://developer.mozilla.org/docs/Web/API/VideoDecoder) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/VideoDecoder/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder>
 **/
 @:native("VideoDecoder") extern class VideoDecoder extends js.web.dom.EventTarget {
 	/**
+		The **`state`** read-only property of the `VideoDecoder` interface returns the current state of the underlying codec.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/state>
 	**/
 	var state(default, null) : CodecState;
 	/**
+		The **`decodeQueueSize`** read-only property of the `VideoDecoder` interface returns the number of pending decode requests in the queue.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/decodeQueueSize>
 	**/
 	var decodeQueueSize(default, null) : Int;
 	var ondequeue : js.web.html.EventHandler;
 	/**
+		The **`VideoDecoder()`** constructor creates a new `VideoDecoder` object with the provided `init.output` callback assigned as the output callback, the provided `init.error` callback as the error callback, and the `VideoDecoder.state` set to `"unconfigured"`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/VideoDecoder>
 	**/
 	function new(init:VideoDecoderInit):Void;
 	/**
+		The **`close()`** method of the `VideoDecoder` interface ends all pending work and releases system resources.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/close>
 	**/
 	function close():Void;
 	/**
+		The **`configure()`** method of the `VideoDecoder` interface enqueues a control message to configure the video decoder for decoding chunks.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/configure>
 	**/
 	function configure(config:VideoDecoderConfig):Void;
 	/**
+		The **`decode()`** method of the `VideoDecoder` interface enqueues a control message to decode a given chunk of video.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/decode>
 	**/
 	function decode(chunk:EncodedVideoChunk):Void;
 	/**
+		The **`flush()`** method of the `VideoDecoder` interface returns a Promise that resolves once all pending messages in the queue have been completed.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/flush>
 	**/
 	function flush():js.lib.Promise<Void>;
 	/**
+		The **`isConfigSupported()`** static method of the `VideoDecoder` interface checks if the given config is supported (that is, if `VideoDecoder` objects can be successfully configured with the given config).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/isConfigSupported_static>
 	**/
 	static function isConfigSupported(config:VideoDecoderConfig):js.lib.Promise<VideoDecoderSupport>;
 	/**
+		The **`reset()`** method of the `VideoDecoder` interface resets all states including configuration, control messages in the control message queue, and all pending callbacks.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/VideoDecoder/reset>
 	**/
 	function reset():Void;

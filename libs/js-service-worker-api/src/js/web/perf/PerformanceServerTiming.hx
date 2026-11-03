@@ -25,22 +25,34 @@
 package js.web.perf;
 
 /**
+	The **`PerformanceServerTiming`** interface surfaces server metrics that are sent with the response in the `Server-Timing` HTTP header.
+	
+	Documentation [PerformanceServerTiming](https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming>
 **/
 @:native("PerformanceServerTiming") extern class PerformanceServerTiming {
 	/**
+		The **`name`** read-only property returns a string value of the server-specified metric name.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming/name>
 	**/
 	var name(default, null) : String;
 	/**
+		The **`duration`** read-only property returns a double that contains the server-specified metric duration (usually in milliseconds), or the value `0.0`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming/duration>
 	**/
 	var duration(default, null) : DOMHighResTimeStamp;
 	/**
+		The **`description`** read-only property returns a string value of the server-specified metric description, or an empty string.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming/description>
 	**/
 	var description(default, null) : String;
 	/**
+		The **`toJSON()`** method of the `PerformanceServerTiming` interface returns a JSON-serializable plain object representing the `PerformanceServerTiming` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming/toJSON>
 	**/
 	function toJSON():{ };

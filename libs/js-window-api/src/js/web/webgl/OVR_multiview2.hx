@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The `OVR_multiview2` extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and adds support for rendering into multiple views simultaneously. This especially useful for virtual reality (VR) and WebXR.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [OVR_multiview2](https://developer.mozilla.org/docs/Web/API/OVR_multiview2) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/OVR_multiview2/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/OVR_multiview2>
 **/
@@ -35,6 +39,8 @@ package js.web.webgl;
 	static inline var MAX_VIEWS_OVR : GLenum = 0x9631;
 	static inline var FRAMEBUFFER_INCOMPLETE_VIEW_TARGETS_OVR : GLenum = 0x9633;
 	/**
+		The **`OVR_multiview2.framebufferTextureMultiviewOVR()`** method of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) attaches a multiview texture to a `WebGLFramebuffer`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/OVR_multiview2/framebufferTextureMultiviewOVR>
 	**/
 	function framebufferTextureMultiviewOVR(target:GLenum, attachment:GLenum, texture:Null<WebGLTexture>, level:GLint, baseViewIndex:GLint, numViews:GLsizei):Void;

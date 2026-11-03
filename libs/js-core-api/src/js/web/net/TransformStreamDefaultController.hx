@@ -25,22 +25,34 @@
 package js.web.net;
 
 /**
+	The **`TransformStreamDefaultController`** interface of the [Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API) provides methods to manipulate the associated `ReadableStream` and `WritableStream`.
+	
+	Documentation [TransformStreamDefaultController](https://developer.mozilla.org/docs/Web/API/TransformStreamDefaultController) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TransformStreamDefaultController/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TransformStreamDefaultController>
 **/
 @:native("TransformStreamDefaultController") extern class TransformStreamDefaultController {
 	/**
+		The **`desiredSize`** read-only property of the `TransformStreamDefaultController` interface returns the desired size to fill the queue of the associated `ReadableStream`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TransformStreamDefaultController/desiredSize>
 	**/
 	var desiredSize(default, null) : Null<Float>;
 	/**
+		The **`enqueue()`** method of the `TransformStreamDefaultController` interface enqueues the given chunk in the readable side of the stream.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TransformStreamDefaultController/enqueue>
 	**/
 	function enqueue(?chunk:Any):Void;
 	/**
+		The **`error()`** method of the `TransformStreamDefaultController` interface errors both sides of the stream. Any further interactions with it will fail with the given error message, and any chunks in the queue will be discarded.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TransformStreamDefaultController/error>
 	**/
 	function error(?reason:Any):Void;
 	/**
+		The **`terminate()`** method of the `TransformStreamDefaultController` interface closes the readable side and errors the writable side of the stream.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TransformStreamDefaultController/terminate>
 	**/
 	function terminate():Void;

@@ -25,14 +25,20 @@
 package js.web.media;
 
 /**
+	A **`PresentationAvailability`** object is associated with available [presentation displays](https://www.w3.org/TR/presentation-api/#dfn-presentation-display) and represents the _presentation display availability_ for a presentation request. If the [controlling user agent](https://www.w3.org/TR/presentation-api/#dfn-controlling-user-agent) can [monitor the list of available presentation displays](https://www.w3.org/TR/presentation-api/#dfn-monitor-the-list-of-available-presentation-displays) in the background (without a pending request to `start()`), the `PresentationAvailability` object _MUST_ be implemented in a [controlling browsing context](https://www.w3.org/TR/presentation-api/#dfn-controlling-browsing-context).
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [PresentationAvailability](https://developer.mozilla.org/docs/Web/API/PresentationAvailability) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PresentationAvailability/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/PresentationAvailability>
 **/
 @:native("PresentationAvailability") @:require(js_experimental_api, "PresentationAvailability is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PresentationAvailability extends js.web.dom.EventTarget {
 	/**
+		The **`value`** attribute _MUST_ return the last value from which it was set. The value is updated by the [monitor the list of available presentation displays](https://www.w3.org/TR/presentation-api/#dfn-monitor-the-list-of-available-presentation-displays) algorithm.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationAvailability/value>
 	**/
 	var value(default, null) : Bool;

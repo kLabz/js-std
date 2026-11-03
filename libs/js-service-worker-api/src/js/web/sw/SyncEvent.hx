@@ -25,20 +25,30 @@
 package js.web.sw;
 
 /**
+	The **`SyncEvent`** interface of the `Background Synchronization API` represents a sync action that is dispatched on the `ServiceWorkerGlobalScope` of a ServiceWorker.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [SyncEvent](https://developer.mozilla.org/docs/Web/API/SyncEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SyncEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/SyncEvent>
 **/
 @:native("SyncEvent") @:require(js_experimental_api, "SyncEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class SyncEvent extends ExtendableEvent {
 	/**
+		The **`tag`** read-only property of the `SyncEvent` interface returns the developer-defined identifier for this `SyncEvent`. This is the value passed in the `tag` parameter of the `SyncEvent()` constructor.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SyncEvent/tag>
 	**/
 	var tag(default, null) : String;
 	/**
+		The **`lastChance`** read-only property of the `SyncEvent` interface returns `true` if the user agent will not make further synchronization attempts after the current attempt. This is the value passed in the `lastChance` parameter of the `SyncEvent()` constructor.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SyncEvent/lastChance>
 	**/
 	var lastChance(default, null) : Bool;
 	/**
+		The **`SyncEvent()`** constructor creates a new `SyncEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SyncEvent/SyncEvent>
 	**/
 	function new(type:String, init:SyncEventInit):Void;

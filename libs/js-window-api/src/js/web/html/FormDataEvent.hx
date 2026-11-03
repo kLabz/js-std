@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`FormDataEvent`** interface represents a [`formdata` event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/formdata_event) — such an event is fired on an `HTMLFormElement` object after the entry list representing the form's data is constructed. This happens when the form is submitted, but can also be triggered by the invocation of a `FormData()` constructor.
+	
+	Documentation [FormDataEvent](https://developer.mozilla.org/docs/Web/API/FormDataEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/FormDataEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/FormDataEvent>
 **/
 @:native("FormDataEvent") extern class FormDataEvent extends js.web.dom.Event {
 	/**
+		The `formData` read-only property of the `FormDataEvent` interface contains the `FormData` object representing the data contained in the form when the event was fired.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FormDataEvent/formData>
 	**/
 	var formData(default, null) : js.web.net.FormData;
 	/**
+		The **`FormDataEvent()`** constructor creates a new `FormDataEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FormDataEvent/FormDataEvent>
 	**/
 	function new(type:String, eventInitDict:FormDataEventInit):Void;

@@ -25,18 +25,28 @@
 package js.web.html;
 
 /**
+	The **`NavigationActivation`** interface of the [Navigation API](https://developer.mozilla.org/en-US/docs/Web/API/Navigation_API) represents a recent cross-document navigation. It contains the navigation type and outgoing and inbound document history entries.
+	
+	Documentation [NavigationActivation](https://developer.mozilla.org/docs/Web/API/NavigationActivation) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/NavigationActivation/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/NavigationActivation>
 **/
 @:native("NavigationActivation") extern class NavigationActivation {
 	/**
+		The **`from`** read-only property of the `NavigationActivation` interface contains a `NavigationHistoryEntry` object representing the history entry for the outgoing ("from") document in the navigation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NavigationActivation/from>
 	**/
 	var from(default, null) : Null<NavigationHistoryEntry>;
 	/**
+		The **`entry`** read-only property of the `NavigationActivation` interface contains a `NavigationHistoryEntry` object representing the history entry for the inbound ("to") document in the navigation. This is equivalent to the `Navigation.currentEntry` property at the moment the inbound document was activated.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NavigationActivation/entry>
 	**/
 	var entry(default, null) : NavigationHistoryEntry;
 	/**
+		The **`navigationType`** read-only property of the `NavigationActivation` interface contains a string indicating the type of navigation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NavigationActivation/navigationType>
 	**/
 	var navigationType(default, null) : NavigationType;

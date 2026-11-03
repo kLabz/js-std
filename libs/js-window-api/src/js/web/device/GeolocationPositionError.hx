@@ -25,6 +25,10 @@
 package js.web.device;
 
 /**
+	The **`GeolocationPositionError`** interface represents the reason of an error occurring when using the geolocating device.
+	
+	Documentation [GeolocationPositionError](https://developer.mozilla.org/docs/Web/API/GeolocationPositionError) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GeolocationPositionError/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/GeolocationPositionError>
 **/
 @:native("GeolocationPositionError") extern class GeolocationPositionError {
@@ -32,10 +36,14 @@ package js.web.device;
 	static inline var POSITION_UNAVAILABLE : Int = 2;
 	static inline var TIMEOUT : Int = 3;
 	/**
+		The **`code`** read-only property of the `GeolocationPositionError` interface is an `unsigned short` representing the error code.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GeolocationPositionError/code>
 	**/
 	var code(default, null) : Int;
 	/**
+		The **`message`** read-only property of the `GeolocationPositionError` interface returns a human-readable string describing the details of the error.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GeolocationPositionError/message>
 	**/
 	var message(default, null) : String;

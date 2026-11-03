@@ -25,18 +25,28 @@
 package js.web.html;
 
 /**
+	The **`PromiseRejectionEvent`** interface represents events which are sent to the global script context when JavaScript `Promise`s are rejected. These events are particularly useful for telemetry and debugging purposes.
+	
+	Documentation [PromiseRejectionEvent](https://developer.mozilla.org/docs/Web/API/PromiseRejectionEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PromiseRejectionEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PromiseRejectionEvent>
 **/
 @:native("PromiseRejectionEvent") extern class PromiseRejectionEvent extends js.web.dom.Event {
 	/**
+		The `PromiseRejectionEvent` interface's **`promise`** read-only property indicates the JavaScript `Promise` which was rejected. You can examine the event's `PromiseRejectionEvent.reason` property to learn why the promise was rejected.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PromiseRejectionEvent/promise>
 	**/
 	var promise(default, null) : { };
 	/**
+		The `PromiseRejectionEvent` **`reason`** read-only property is any JavaScript value or `Object` which provides the reason passed into `Promise.reject()`. This in theory provides information about why the promise was rejected.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PromiseRejectionEvent/reason>
 	**/
 	var reason(default, null) : Any;
 	/**
+		The **`PromiseRejectionEvent()`** constructor returns a new `PromiseRejectionEvent` object, which represents events fired when a JavaScript `Promise` is rejected.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PromiseRejectionEvent/PromiseRejectionEvent>
 	**/
 	function new(type:String, eventInitDict:PromiseRejectionEventInit):Void;

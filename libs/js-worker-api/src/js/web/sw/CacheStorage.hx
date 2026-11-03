@@ -25,28 +25,42 @@
 package js.web.sw;
 
 /**
+	The **`CacheStorage`** interface represents the storage for `Cache` objects.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [CacheStorage](https://developer.mozilla.org/docs/Web/API/CacheStorage) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CacheStorage/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/CacheStorage>
 **/
 @:native("CacheStorage") extern class CacheStorage {
 	/**
+		The **`delete()`** method of the `CacheStorage` interface finds the `Cache` object matching the `cacheName`, and if found, deletes the `Cache` object and returns a `Promise` that resolves to `true`. If no `Cache` object is found, it resolves to `false`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CacheStorage/delete>
 	**/
 	function delete(cacheName:String):js.lib.Promise<Bool>;
 	/**
+		The **`has()`** method of the `CacheStorage` interface returns a `Promise` that resolves to `true` if a `Cache` object matches the `cacheName`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CacheStorage/has>
 	**/
 	function has(cacheName:String):js.lib.Promise<Bool>;
 	/**
+		The **`keys()`** method of the `CacheStorage` interface returns a `Promise` that will resolve with an array containing strings corresponding to all of the named `Cache` objects tracked by the `CacheStorage` object in the order they were created. Use this method to iterate over a list of all `Cache` objects.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CacheStorage/keys>
 	**/
 	function keys():js.lib.Promise<Array<String>>;
 	/**
+		The **`match()`** method of the `CacheStorage` interface checks if a given `Request` or URL string is a key for a stored `Response`. This method returns a `Promise` for a `Response`, or a `Promise` which resolves to `undefined` if no match is found.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CacheStorage/match>
 	**/
 	function match(request:js.web.net.RequestInfo, ?options:MultiCacheQueryOptions):js.lib.Promise<haxe.extern.EitherType<js.web.net.Response, Void>>;
 	/**
+		The **`open()`** method of the `CacheStorage` interface returns a `Promise` that resolves to the `Cache` object matching the `cacheName`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CacheStorage/open>
 	**/
 	function open(cacheName:String):js.lib.Promise<Cache>;

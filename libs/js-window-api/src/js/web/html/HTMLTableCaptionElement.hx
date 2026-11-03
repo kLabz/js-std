@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`HTMLTableCaptionElement`** interface provides special properties (beyond the regular `HTMLElement` interface it also has available to it by inheritance) for manipulating table `<caption>` elements.
+	
+	Documentation [HTMLTableCaptionElement](https://developer.mozilla.org/docs/Web/API/HTMLTableCaptionElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLTableCaptionElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCaptionElement>
 **/
 @:native("HTMLTableCaptionElement") extern class HTMLTableCaptionElement extends HTMLElement {
 	/**
+		The **`align`** property of the `HTMLTableCaptionElement` interface is a string indicating how to horizontally align text in the `<caption>` table element.
+		
 		From partial interface in html.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLTableCaptionElement/align>

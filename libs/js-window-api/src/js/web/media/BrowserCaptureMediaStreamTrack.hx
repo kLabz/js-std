@@ -25,20 +25,30 @@
 package js.web.media;
 
 /**
+	The **`BrowserCaptureMediaStreamTrack`** interface of the `Screen Capture API` represents a single video track. It extends the `MediaStreamTrack` class with methods to limit the part of a self-capture stream (for example, a user's screen or window) that is captured.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [BrowserCaptureMediaStreamTrack](https://developer.mozilla.org/docs/Web/API/BrowserCaptureMediaStreamTrack) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/BrowserCaptureMediaStreamTrack/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/BrowserCaptureMediaStreamTrack>
 **/
 @:native("BrowserCaptureMediaStreamTrack") @:require(js_experimental_api, "BrowserCaptureMediaStreamTrack is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class BrowserCaptureMediaStreamTrack extends MediaStreamTrack {
 	/**
+		The **`clone()`** method of the `BrowserCaptureMediaStreamTrack` interface returns a clone of the original `BrowserCaptureMediaStreamTrack`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BrowserCaptureMediaStreamTrack/clone>
 	**/
 	function clone():BrowserCaptureMediaStreamTrack;
 	/**
+		The **`cropTo()`** method of the `BrowserCaptureMediaStreamTrack` interface crops a self-capture stream to the area in which a specified DOM element is rendered.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/BrowserCaptureMediaStreamTrack/cropTo>
 	**/
 	function cropTo(cropTarget:Null<CropTarget>):js.lib.Promise<Void>;
 	/**
+		The **`restrictTo()`** method of the `BrowserCaptureMediaStreamTrack` interface restricts a self-capture stream to a specific DOM element (and its descendants).
+		
 		From partial interface in element-capture.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/BrowserCaptureMediaStreamTrack/restrictTo>

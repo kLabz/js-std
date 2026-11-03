@@ -25,12 +25,18 @@
 package js.web.html;
 
 /**
+	The **Prioritized Task Scheduling API** provides a standardized way to prioritize all tasks belonging to an application, whether they are defined in a website developer's code or in third-party libraries and frameworks.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [Scheduling](https://developer.mozilla.org/docs/Web/API/Scheduling) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Scheduling/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Scheduling>
 **/
 @:native("Scheduling") @:require(js_experimental_api, "Scheduling is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Scheduling {
 	/**
+		The **`isInputPending()`** method of the `Scheduling` interface allows you to check whether there are pending input events in the event queue, indicating that the user is attempting to interact with the page.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Scheduling/isInputPending>
 	**/
 	function isInputPending(?isInputPendingOptions:IsInputPendingOptions):Bool;

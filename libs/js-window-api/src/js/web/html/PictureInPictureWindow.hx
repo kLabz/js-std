@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **Picture-in-Picture API** enables websites to create a floating, always-on-top video window. This allows users to continue consuming media while they interact with other sites or applications on their device.
+	
+	Documentation [PictureInPictureWindow](https://developer.mozilla.org/docs/Web/API/PictureInPictureWindow) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PictureInPictureWindow/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PictureInPictureWindow>
 **/
 @:native("PictureInPictureWindow") extern class PictureInPictureWindow extends js.web.dom.EventTarget {
 	/**
+		The **`width`** read-only property of the `PictureInPictureWindow` interface returns the width of the floating video window in pixels.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PictureInPictureWindow/width>
 	**/
 	var width(default, null) : Int;
 	/**
+		The **`height`** read-only property of the `PictureInPictureWindow` interface returns the height of the floating video window in pixels.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PictureInPictureWindow/height>
 	**/
 	var height(default, null) : Int;

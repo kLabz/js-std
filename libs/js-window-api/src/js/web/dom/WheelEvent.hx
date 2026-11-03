@@ -25,6 +25,10 @@
 package js.web.dom;
 
 /**
+	The **`WheelEvent`** interface represents events that occur due to the user moving a mouse wheel or similar input device.
+	
+	Documentation [WheelEvent](https://developer.mozilla.org/docs/Web/API/WheelEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WheelEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/WheelEvent>
 **/
 @:native("WheelEvent") extern class WheelEvent extends MouseEvent {
@@ -32,24 +36,34 @@ package js.web.dom;
 	static inline var DOM_DELTA_LINE : Int = 0x01;
 	static inline var DOM_DELTA_PAGE : Int = 0x02;
 	/**
+		The **`WheelEvent.deltaX`** read-only property is a `double` representing the horizontal scroll amount in the `WheelEvent.deltaMode` unit.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WheelEvent/deltaX>
 	**/
 	var deltaX(default, null) : Float;
 	/**
+		The **`WheelEvent.deltaY`** read-only property is a `double` representing the vertical scroll amount in the `WheelEvent.deltaMode` unit.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WheelEvent/deltaY>
 	**/
 	var deltaY(default, null) : Float;
 	/**
+		The **`WheelEvent.deltaZ`** read-only property is a `double` representing the scroll amount along the z-axis, in the `WheelEvent.deltaMode` unit.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WheelEvent/deltaZ>
 	**/
 	var deltaZ(default, null) : Float;
 	/**
+		The **`WheelEvent.deltaMode`** read-only property returns an `unsigned long` representing the unit of the delta values scroll amount. Permitted values are:
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WheelEvent/deltaMode>
 	**/
 	var deltaMode(default, null) : Int;
 	@:require(js_experimental_api, "WheelEvent.momentum is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var momentum(default, null) : Bool;
 	/**
+		The **`WheelEvent()`** constructor returns a new `WheelEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WheelEvent/WheelEvent>
 	**/
 	function new(type:String, ?eventInitDict:WheelEventInit):Void;

@@ -25,16 +25,24 @@
 package js.web.html;
 
 /**
+	The **`DocumentPictureInPictureEvent`** interface of the `Document Picture-in-Picture API` is the event object for the `enter` event, which fires when the Picture-in-Picture window is opened.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [DocumentPictureInPictureEvent](https://developer.mozilla.org/docs/Web/API/DocumentPictureInPictureEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DocumentPictureInPictureEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/DocumentPictureInPictureEvent>
 **/
 @:native("DocumentPictureInPictureEvent") extern class DocumentPictureInPictureEvent extends js.web.dom.Event {
 	/**
+		The **`window`** read-only property of the `DocumentPictureInPictureEvent` interface returns a `Window` instance representing the browsing context inside the `DocumentPictureInPicture` window the event was fired on.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentPictureInPictureEvent/window>
 	**/
 	var window(default, null) : Window;
 	/**
+		The **`DocumentPictureInPictureEvent()`** constructor creates a new `DocumentPictureInPictureEvent` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentPictureInPictureEvent/DocumentPictureInPictureEvent>
 	**/
 	function new(type:String, eventInitDict:DocumentPictureInPictureEventInit):Void;

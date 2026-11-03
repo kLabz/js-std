@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The **`EXT_sRGB`** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and adds sRGB support to textures and framebuffer objects.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [EXT_sRGB](https://developer.mozilla.org/docs/Web/API/EXT_sRGB) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/EXT_sRGB/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/EXT_sRGB>
 **/

@@ -25,18 +25,26 @@
 package js.web.device;
 
 /**
+	The **`USBConnectionEvent`** interface of the `WebUSB API` is the event type passed to `USB` `connect` and `disconnect` events when the user agent detects that a new USB device has been connected or disconnected.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [USBConnectionEvent](https://developer.mozilla.org/docs/Web/API/USBConnectionEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/USBConnectionEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/USBConnectionEvent>
 **/
 @:native("USBConnectionEvent") @:require(js_experimental_api, "USBConnectionEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class USBConnectionEvent extends js.web.dom.Event {
 	/**
+		The **`device`** read-only property of the `USBConnectionEvent` interface returns a `USBDevice` object representing the device being connected or disconnected.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/USBConnectionEvent/device>
 	**/
 	var device(default, null) : USBDevice;
 	/**
+		The **`USBConnectionEvent()`** constructor creates a new `USBConnectionEvent` object. This constructor is not typically used, it is created by the browser in response to the connection and disconnection of a USB device.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/USBConnectionEvent/USBConnectionEvent>
 	**/
 	function new(type:String, eventInitDict:USBConnectionEventInit):Void;

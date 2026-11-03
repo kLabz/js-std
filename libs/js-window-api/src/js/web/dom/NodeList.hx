@@ -25,30 +25,46 @@
 package js.web.dom;
 
 /**
+	**`NodeList`** objects are collections of [nodes](https://developer.mozilla.org/en-US/docs/Web/API/Node), usually returned by properties such as `Node.childNodes` and methods such as `document.querySelectorAll()`.
+	
+	Documentation [NodeList](https://developer.mozilla.org/docs/Web/API/NodeList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/NodeList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/NodeList>
 **/
 @:native("NodeList") extern class NodeList implements ArrayAccess<Null<Node>> {
 	/**
+		The **`NodeList.length`** property returns the number of items in a `NodeList`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NodeList/length>
 	**/
 	var length(default, null) : Int;
 	/**
+		The **`NodeList.entries()`** method returns an `iterator` allowing you to go through all key/value pairs contained in this object. The values are `Node` objects.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NodeList/entries>
 	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<Int, Node>>;
 	/**
+		The **`forEach()`** method of the `NodeList` interface calls the callback given in parameter once for each value pair in the list, in insertion order.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NodeList/forEach>
 	**/
 	function forEach(callback:(value:Node, key:Int, parent:NodeList) -> Void, ?thisArg:Any):Void;
 	/**
+		Returns a node from a [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) by index. This method doesn't throw exceptions as long as you provide arguments. A value of `null` is returned if the index is out of range, and a `TypeError` is thrown if no argument is provided.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NodeList/item>
 	**/
 	function item(index:Int):Null<Node>;
 	/**
+		The **`NodeList.keys()`** method returns an `iterator` allowing you to go through all keys contained in this object. The keys are `unsigned integer`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NodeList/keys>
 	**/
 	function keys():js.lib.Iterator<Int>;
 	/**
+		The **`NodeList.values()`** method returns an `iterator` allowing you to go through all values contained in this object. The values are `Node` objects.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/NodeList/values>
 	**/
 	function values():js.lib.Iterator<Node>;

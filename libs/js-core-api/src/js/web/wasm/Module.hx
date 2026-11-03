@@ -25,19 +25,29 @@
 package js.web.wasm;
 
 /**
+	A **`WebAssembly.Module`** object contains stateless WebAssembly code that has already been compiled by the browser — this can be efficiently [shared with Workers](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage), and instantiated multiple times.
+	
+	Documentation [WebAssembly.Module](https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Module) by [Mozilla Contributors](https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Module/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Module>
 **/
 @:native("WebAssembly.Module") extern class Module {
 	function new(bytes:js.web.dom.AllowSharedBufferSource, ?options:WebAssemblyCompileOptions):Void;
 	/**
+		The **`WebAssembly.Module.customSections()`** static method returns a copy of the contents of all custom sections in the given module with the given string name.
+		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Module/customSections_static>
 	**/
 	static function customSections(moduleObject:Module, sectionName:String):Array<js.lib.ArrayBuffer>;
 	/**
+		The **`WebAssembly.Module.exports()`** static method returns an array containing descriptions of all the declared exports of the given `Module`.
+		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Module/exports_static>
 	**/
 	static function exports(moduleObject:Module):Array<ModuleExportDescriptor>;
 	/**
+		The **`WebAssembly.Module.imports()`** static method returns an array containing descriptions of all the declared imports of the given `Module`.
+		
 		@see <https://developer.mozilla.org/docs/WebAssembly/Reference/JavaScript_interface/Module/imports_static>
 	**/
 	static function imports(moduleObject:Module):Array<ModuleImportDescriptor>;

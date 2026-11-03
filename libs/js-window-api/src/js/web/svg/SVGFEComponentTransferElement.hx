@@ -25,38 +25,54 @@
 package js.web.svg;
 
 /**
+	The **`SVGFEComponentTransferElement`** interface corresponds to the `<feComponentTransfer>` element.
+	
+	Documentation [SVGFEComponentTransferElement](https://developer.mozilla.org/docs/Web/API/SVGFEComponentTransferElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGFEComponentTransferElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGFEComponentTransferElement>
 **/
 @:native("SVGFEComponentTransferElement") extern class SVGFEComponentTransferElement extends SVGElement {
 	/**
+		The **`in1`** read-only property of the `SVGFEComponentTransferElement` interface reflects the `in` attribute of the given `<feComponentTransfer>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEComponentTransferElement/in1>
 	**/
 	var in1(default, null) : SVGAnimatedString;
 	/**
+		The **`x`** read-only property of the `SVGFEComponentTransferElement` interface describes the horizontal coordinate of the position of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEComponentTransferElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
+		The **`y`** read-only property of the `SVGFEComponentTransferElement` interface describes the vertical coordinate of the position of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEComponentTransferElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
+		The **`width`** read-only property of the `SVGFEComponentTransferElement` interface describes the horizontal size of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEComponentTransferElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
+		The **`height`** read-only property of the `SVGFEComponentTransferElement` interface describes the vertical size of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEComponentTransferElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
+		The **`result`** read-only property of the `SVGFEComponentTransferElement` interface describes the assigned name of an SVG filter primitive as a `SVGAnimatedString`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEComponentTransferElement/result>

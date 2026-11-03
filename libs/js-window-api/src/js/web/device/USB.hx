@@ -25,9 +25,13 @@
 package js.web.device;
 
 /**
+	The **`USB`** interface of the [WebUSB API](https://developer.mozilla.org/en-US/docs/Web/API/WebUSB_API) provides attributes and methods for finding and connecting USB devices from a web page.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [USB](https://developer.mozilla.org/docs/Web/API/USB) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/USB/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/USB>
 **/
@@ -35,10 +39,14 @@ package js.web.device;
 	var onconnect : js.web.html.EventHandler;
 	var ondisconnect : js.web.html.EventHandler;
 	/**
+		The **`getDevices`** method of the `USB` interface returns a `Promise` that resolves with an array of `USBDevice` objects for paired attached devices. For information on pairing devices, see `USB.requestDevice()`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/USB/getDevices>
 	**/
 	function getDevices():js.lib.Promise<Array<USBDevice>>;
 	/**
+		The **`requestDevice()`** method of the `USB` interface returns a `Promise` that resolves with an instance of `USBDevice` if the specified device is found. Calling this function triggers the user agent's pairing flow.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/USB/requestDevice>
 	**/
 	function requestDevice(options:USBDeviceRequestOptions):js.lib.Promise<USBDevice>;

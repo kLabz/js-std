@@ -25,6 +25,10 @@
 package js.web.svg;
 
 /**
+	The **`SVGFEMorphologyElement`** interface corresponds to the `<feMorphology>` element.
+	
+	Documentation [SVGFEMorphologyElement](https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement>
 **/
 @:native("SVGFEMorphologyElement") extern class SVGFEMorphologyElement extends SVGElement {
@@ -32,47 +36,65 @@ package js.web.svg;
 	static inline var SVG_MORPHOLOGY_OPERATOR_ERODE : Int = 1;
 	static inline var SVG_MORPHOLOGY_OPERATOR_DILATE : Int = 2;
 	/**
+		The **`in1`** read-only property of the `SVGFEMorphologyElement` interface reflects the `in` attribute of the given `<feMorphology>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/in1>
 	**/
 	var in1(default, null) : SVGAnimatedString;
 	/**
+		The **`operator`** read-only property of the `SVGFEMorphologyElement` interface reflects the `operator` attribute of the given `<feMorphology>` element. It takes one of the `SVG_MORPHOLOGY_OPERATOR_*` constants defined on this interface.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/operator>
 	**/
 	@:native("operator")
 	var operator_(default, null) : SVGAnimatedEnumeration;
 	/**
+		The **`radiusX`** read-only property of the `SVGFEMorphologyElement` interface reflects the X component of the `radius` attribute of the given `<feMorphology>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/radiusX>
 	**/
 	var radiusX(default, null) : SVGAnimatedNumber;
 	/**
+		The **`radiusY`** read-only property of the `SVGFEMorphologyElement` interface reflects the Y component of the `radius` attribute of the given `<feMorphology>` element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/radiusY>
 	**/
 	var radiusY(default, null) : SVGAnimatedNumber;
 	/**
+		The **`x`** read-only property of the `SVGFEMorphologyElement` interface describes the horizontal coordinate of the position of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/x>
 	**/
 	var x(default, null) : SVGAnimatedLength;
 	/**
+		The **`y`** read-only property of the `SVGFEMorphologyElement` interface describes the vertical coordinate of the position of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/y>
 	**/
 	var y(default, null) : SVGAnimatedLength;
 	/**
+		The **`width`** read-only property of the `SVGFEMorphologyElement` interface describes the horizontal size of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/width>
 	**/
 	var width(default, null) : SVGAnimatedLength;
 	/**
+		The **`height`** read-only property of the `SVGFEMorphologyElement` interface describes the vertical size of an SVG filter primitive as a `SVGAnimatedLength`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/height>
 	**/
 	var height(default, null) : SVGAnimatedLength;
 	/**
+		The **`result`** read-only property of the `SVGFEMorphologyElement` interface describes the assigned name of an SVG filter primitive as a `SVGAnimatedString`.
+		
 		From interface mixin SVGFilterPrimitiveStandardAttributes
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGFEMorphologyElement/result>

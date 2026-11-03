@@ -25,36 +25,54 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUAdapterInfo`** interface of the `WebGPU API` contains identifying information about a `GPUAdapter`.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUAdapterInfo](https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo>
 **/
 @:native("GPUAdapterInfo") extern class GPUAdapterInfo {
 	/**
+		The **`vendor`** read-only property of the `GPUAdapterInfo` interface returns the name of the adapter vendor, or an empty string if it is not available.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/vendor>
 	**/
 	var vendor(default, null) : String;
 	/**
+		The **`architecture`** read-only property of the `GPUAdapterInfo` interface returns the name of the family or class of GPUs the adapter belongs to, or an empty string if it is not available.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/architecture>
 	**/
 	var architecture(default, null) : String;
 	/**
+		The **`device`** read-only property of the `GPUAdapterInfo` interface returns a vendor-specific identifier for the adapter, or an empty string if it is not available.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/device>
 	**/
 	var device(default, null) : String;
 	/**
+		The **`description`** read-only property of the `GPUAdapterInfo` interface returns a human-readable string describing the adapter, or an empty string if it is not available.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/description>
 	**/
 	var description(default, null) : String;
 	/**
+		The **`subgroupMinSize`** read-only property of the `GPUAdapterInfo` interface returns the minimum supported [subgroup size](https://gpuweb.github.io/gpuweb/wgsl/#subgroup-size) for the `GPUAdapter`. This can be used along with the `subgroups` [feature](https://developer.mozilla.org/en-US/docs/Web/API/GPUSupportedFeatures).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/subgroupMinSize>
 	**/
 	var subgroupMinSize(default, null) : Int;
 	/**
+		The **`subgroupMaxSize`** read-only property of the `GPUAdapterInfo` interface returns the maximum supported [subgroup size](https://gpuweb.github.io/gpuweb/wgsl/#subgroup-size) for the `GPUAdapter`. This can be used along with the `subgroups` [feature](https://developer.mozilla.org/en-US/docs/Web/API/GPUSupportedFeatures).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/subgroupMaxSize>
 	**/
 	var subgroupMaxSize(default, null) : Int;
 	/**
+		The **`isFallbackAdapter`** read-only property of the `GPUAdapterInfo` interface returns `true` if the adapter is a [fallback adapter](https://developer.mozilla.org/en-US/docs/Web/API/GPU/requestAdapter#fallback_adapters), and `false` if not.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUAdapterInfo/isFallbackAdapter>
 	**/
 	var isFallbackAdapter(default, null) : Bool;

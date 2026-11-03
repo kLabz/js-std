@@ -25,28 +25,42 @@
 package js.web.xr;
 
 /**
+	The **`XRCylinderLayer`** interface of the [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) is a layer that takes up a curved rectangular space in the virtual environment. Only the front of the layer is visible.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRCylinderLayer](https://developer.mozilla.org/docs/Web/API/XRCylinderLayer) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRCylinderLayer/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRCylinderLayer>
 **/
 @:native("XRCylinderLayer") @:require(js_experimental_api, "XRCylinderLayer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRCylinderLayer extends XRCompositionLayer {
 	/**
+		The **`space`** property of the `XRCylinderLayer` interface represents the layer's spatial relationship with the user's physical environment.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRCylinderLayer/space>
 	**/
 	var space : XRSpace;
 	/**
+		The **`transform`** property of the `XRCylinderLayer` interface represents the offset and orientation relative to the layer's `space`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRCylinderLayer/transform>
 	**/
 	var transform : XRRigidTransform;
 	/**
+		The **`radius`** property of the `XRCylinderLayer` interface represents the radius of the cylinder.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRCylinderLayer/radius>
 	**/
 	var radius : Float;
 	/**
+		The **`centralAngle`** property of the `XRCylinderLayer` interface represents the angle in radians of the visible section of the cylinder.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRCylinderLayer/centralAngle>
 	**/
 	var centralAngle : Float;
 	/**
+		The **`aspectRatio`** property of the `XRCylinderLayer` interface represents the ratio of the visible cylinder section. It is the ratio of the width of the visible section of the cylinder divided by its height. The width is calculated by multiplying the `radius` with the `centralAngle`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRCylinderLayer/aspectRatio>
 	**/
 	var aspectRatio : Float;

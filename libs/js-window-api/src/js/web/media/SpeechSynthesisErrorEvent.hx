@@ -25,14 +25,22 @@
 package js.web.media;
 
 /**
+	The **`SpeechSynthesisErrorEvent`** interface of the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) contains information about any errors that occur while processing `SpeechSynthesisUtterance` objects in the speech service.
+	
+	Documentation [SpeechSynthesisErrorEvent](https://developer.mozilla.org/docs/Web/API/SpeechSynthesisErrorEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SpeechSynthesisErrorEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisErrorEvent>
 **/
 @:native("SpeechSynthesisErrorEvent") extern class SpeechSynthesisErrorEvent extends SpeechSynthesisEvent {
 	/**
+		The **`error`** property of the `SpeechSynthesisErrorEvent` interface returns an error code indicating what has gone wrong with a speech synthesis attempt.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisErrorEvent/error>
 	**/
 	var error(default, null) : SpeechSynthesisErrorCode;
 	/**
+		The **`SpeechSynthesisErrorEvent()`** constructor creates a new `SpeechSynthesisErrorEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisErrorEvent/SpeechSynthesisErrorEvent>
 	**/
 	function new(type:String, eventInitDict:SpeechSynthesisErrorEventInit):Void;

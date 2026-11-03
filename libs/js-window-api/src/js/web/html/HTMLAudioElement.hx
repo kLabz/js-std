@@ -25,7 +25,11 @@
 package js.web.html;
 
 /**
+	The **`HTMLAudioElement`** interface provides access to the properties of `<audio>` elements, as well as methods to manipulate them.
+	
 	Unhandled extended attribute LegacyFactoryFunction
+	
+	Documentation [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLAudioElement>
 **/

@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`FontFaceSetLoadEvent`** interface of the [CSS Font Loading API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Font_Loading_API) represents events fired at a `FontFaceSet` after it starts loading font faces.
+	
+	Documentation [FontFaceSetLoadEvent](https://developer.mozilla.org/docs/Web/API/FontFaceSetLoadEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/FontFaceSetLoadEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/FontFaceSetLoadEvent>
 **/
 @:native("FontFaceSetLoadEvent") extern class FontFaceSetLoadEvent extends js.web.dom.Event {
 	/**
+		The **`fontfaces`** read-only property of the `FontFaceSetLoadEvent` interface returns an array of `FontFace` instances, each of which represents a single usable font.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSetLoadEvent/fontfaces>
 	**/
 	var fontfaces(default, null) : Array<FontFace>;
 	/**
+		The **`FontFaceSetLoadEvent()`** constructor creates a new `FontFaceSetLoadEvent` object which is fired whenever a `FontFaceSet` loads.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSetLoadEvent/FontFaceSetLoadEvent>
 	**/
 	function new(type:String, ?eventInitDict:FontFaceSetLoadEventInit):Void;

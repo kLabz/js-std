@@ -25,30 +25,46 @@
 package js.web.html;
 
 /**
+	The **`MessageEvent`** interface represents a message received by a target object.
+	
+	Documentation [MessageEvent](https://developer.mozilla.org/docs/Web/API/MessageEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MessageEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/MessageEvent>
 **/
 @:native("MessageEvent") extern class MessageEvent extends js.web.dom.Event {
 	/**
+		The **`data`** read-only property of the `MessageEvent` interface represents the data sent by the message emitter.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MessageEvent/data>
 	**/
 	var data(default, null) : Any;
 	/**
+		The **`origin`** read-only property of the `MessageEvent` interface is a string representing the origin of the message emitter.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MessageEvent/origin>
 	**/
 	var origin(default, null) : String;
 	/**
+		The **`lastEventId`** read-only property of the `MessageEvent` interface is a string representing a unique ID for the event.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MessageEvent/lastEventId>
 	**/
 	var lastEventId(default, null) : String;
 	/**
+		The **`source`** read-only property of the `MessageEvent` interface is a `MessageEventSource` (which can be a WindowProxy, `MessagePort`, or `ServiceWorker` object) representing the message emitter.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MessageEvent/source>
 	**/
 	var source(default, null) : Null<MessageEventSource>;
 	/**
+		The **`ports`** read-only property of the `MessageEvent` interface is an array of `MessagePort` objects containing all `MessagePort` objects sent with the message, in order.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MessageEvent/ports>
 	**/
 	var ports(default, null) : Array<MessagePort>;
 	/**
+		The **`MessageEvent()`** constructor creates a new `MessageEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MessageEvent/MessageEvent>
 	**/
 	function new(type:String, ?eventInitDict:MessageEventInit):Void;

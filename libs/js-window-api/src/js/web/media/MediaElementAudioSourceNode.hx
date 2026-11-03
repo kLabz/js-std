@@ -25,14 +25,22 @@
 package js.web.media;
 
 /**
+	The `MediaElementAudioSourceNode` interface represents an audio source consisting of an HTML `<audio>` or `<video>` element. It is an `AudioNode` that acts as an audio source.
+	
+	Documentation [MediaElementAudioSourceNode](https://developer.mozilla.org/docs/Web/API/MediaElementAudioSourceNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MediaElementAudioSourceNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaElementAudioSourceNode>
 **/
 @:native("MediaElementAudioSourceNode") extern class MediaElementAudioSourceNode extends AudioNode {
 	/**
+		The `MediaElementAudioSourceNode` interface's read-only **`mediaElement`** property indicates the `HTMLMediaElement` that contains the audio track from which the node is receiving audio.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaElementAudioSourceNode/mediaElement>
 	**/
 	var mediaElement(default, null) : js.web.html.HTMLMediaElement;
 	/**
+		The **`MediaElementAudioSourceNode()`** constructor creates a new `MediaElementAudioSourceNode` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaElementAudioSourceNode/MediaElementAudioSourceNode>
 	**/
 	function new(context:AudioContext, options:MediaElementAudioSourceOptions):Void;

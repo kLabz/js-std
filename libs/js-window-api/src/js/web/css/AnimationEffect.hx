@@ -25,6 +25,10 @@
 package js.web.css;
 
 /**
+	The `AnimationEffect` interface of the [Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API) is an interface representing animation effects.
+	
+	Documentation [AnimationEffect](https://developer.mozilla.org/docs/Web/API/AnimationEffect) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AnimationEffect/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/AnimationEffect>
 **/
 @:native("AnimationEffect") extern class AnimationEffect {
@@ -49,10 +53,14 @@ package js.web.css;
 	**/
 	function before(effects:haxe.Rest<AnimationEffect>):Void;
 	/**
+		The `getComputedTiming()` method of the `AnimationEffect` interface returns the calculated timing properties for this animation effect.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AnimationEffect/getComputedTiming>
 	**/
 	function getComputedTiming():ComputedEffectTiming;
 	/**
+		The `AnimationEffect.getTiming()` method of the `AnimationEffect` interface returns an object containing the timing properties for the Animation Effect.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AnimationEffect/getTiming>
 	**/
 	function getTiming():EffectTiming;
@@ -65,6 +73,8 @@ package js.web.css;
 	**/
 	function replace(effects:haxe.Rest<AnimationEffect>):Void;
 	/**
+		The `updateTiming()` method of the `AnimationEffect` interface updates the specified timing properties for an animation effect.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AnimationEffect/updateTiming>
 	**/
 	function updateTiming(?timing:OptionalEffectTiming):Void;

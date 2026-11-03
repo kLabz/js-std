@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`TaskController`** interface of the [Prioritized Task Scheduling API](https://developer.mozilla.org/en-US/docs/Web/API/Prioritized_Task_Scheduling_API) represents a controller object that can be used to both abort and change the [priority](https://developer.mozilla.org/en-US/docs/Web/API/Prioritized_Task_Scheduling_API#task_priorities) of one or more prioritized tasks. If there is no need to change task priorities, then `AbortController` can be used instead.
+	
+	Documentation [TaskController](https://developer.mozilla.org/docs/Web/API/TaskController) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TaskController/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TaskController>
 **/
 @:native("TaskController") extern class TaskController extends js.web.dom.AbortController {
 	/**
+		The **`TaskController()`** constructor creates a new `TaskController` object, optionally setting the initial [priority](https://developer.mozilla.org/en-US/docs/Web/API/Prioritized_Task_Scheduling_API#task_priorities) of its associated [`signal`](https://developer.mozilla.org/en-US/docs/Web/API/TaskController#taskcontroller.signal).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TaskController/TaskController>
 	**/
 	function new(?init:TaskControllerInit):Void;
 	/**
+		The **`setPriority()`** method of the `TaskController` interface can be called to set a new [priority](https://developer.mozilla.org/en-US/docs/Web/API/Prioritized_Task_Scheduling_API#task_priorities) for this controller's [`signal`](https://developer.mozilla.org/en-US/docs/Web/API/TaskController#taskcontroller.signal). If a prioritized task is [configured](https://developer.mozilla.org/en-US/docs/Web/API/Scheduler/postTask#signal) to use the signal, this will also change the task priority.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TaskController/setPriority>
 	**/
 	function setPriority(priority:TaskPriority):Void;

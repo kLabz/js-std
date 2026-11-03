@@ -25,12 +25,18 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUError`** interface of the `WebGPU API` is the base interface for errors surfaced by `GPUDevice.popErrorScope` and the `uncapturederror` event.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUError](https://developer.mozilla.org/docs/Web/API/GPUError) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUError/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUError>
 **/
 @:native("GPUError") extern class GPUError {
 	/**
+		The **`message`** read-only property of the `GPUError` interface provides a human-readable message that explains why the error occurred.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUError/message>
 	**/
 	var message(default, null) : String;

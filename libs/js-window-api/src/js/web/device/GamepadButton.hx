@@ -25,18 +25,28 @@
 package js.web.device;
 
 /**
+	The **`GamepadButton`** interface defines an individual button of a gamepad or other controller, allowing access to the current state of different types of buttons available on the control device.
+	
+	Documentation [GamepadButton](https://developer.mozilla.org/docs/Web/API/GamepadButton) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GamepadButton/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/GamepadButton>
 **/
 @:native("GamepadButton") extern class GamepadButton {
 	/**
+		The **`GamepadButton.pressed`** property of the `GamepadButton` interface returns a `boolean` indicating whether the button is currently pressed (`true`) or unpressed (`false`).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadButton/pressed>
 	**/
 	var pressed(default, null) : Bool;
 	/**
+		The **`touched`** property of the `GamepadButton` interface returns a `boolean` indicating whether a button capable of detecting touch is currently touched (`true`) or not touched (`false`).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadButton/touched>
 	**/
 	var touched(default, null) : Bool;
 	/**
+		The **`GamepadButton.value`** property of the `GamepadButton` interface returns a double value used to represent the current state of analog buttons on many modern gamepads, such as the triggers.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadButton/value>
 	**/
 	var value(default, null) : Float;

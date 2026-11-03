@@ -25,18 +25,28 @@
 package js.web.css;
 
 /**
+	The `CaretPosition` interface represents the caret position, an indicator for the text insertion point. You can get a `CaretPosition` using the `Document.caretPositionFromPoint()` method.
+	
+	Documentation [CaretPosition](https://developer.mozilla.org/docs/Web/API/CaretPosition) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CaretPosition/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CaretPosition>
 **/
 @:native("CaretPosition") extern class CaretPosition {
 	/**
+		The **`offsetNode`** property of the `CaretPosition` interface returns a `Node` containing the found node at the caret's position.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CaretPosition/offsetNode>
 	**/
 	var offsetNode(default, null) : js.web.dom.Node;
 	/**
+		The **`offset`** property of the `CaretPosition` interface returns an integer representing the offset of the selection in the caret position node.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CaretPosition/offset>
 	**/
 	var offset(default, null) : Int;
 	/**
+		The `getClientRect()` method of the `CaretPosition` interface returns the client rectangle for the caret range.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CaretPosition/getClientRect>
 	**/
 	function getClientRect():Null<js.web.dom.DOMRect>;

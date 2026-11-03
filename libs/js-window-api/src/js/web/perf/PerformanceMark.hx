@@ -25,14 +25,22 @@
 package js.web.perf;
 
 /**
+	**`PerformanceMark`** is an interface for `PerformanceEntry` objects with an `entryType` of `"mark"`.
+	
+	Documentation [PerformanceMark](https://developer.mozilla.org/docs/Web/API/PerformanceMark) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PerformanceMark/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PerformanceMark>
 **/
 @:native("PerformanceMark") extern class PerformanceMark extends PerformanceEntry {
 	/**
+		The read-only **`detail`** property returns arbitrary metadata that was included in the mark upon construction (either when using `performance.mark()` or the `PerformanceMark()` constructor).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceMark/detail>
 	**/
 	var detail(default, null) : Any;
 	/**
+		The **`PerformanceMark()`** constructor creates a `timestamp` with the given name.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceMark/PerformanceMark>
 	**/
 	function new(markName:String, ?markOptions:PerformanceMarkOptions):Void;

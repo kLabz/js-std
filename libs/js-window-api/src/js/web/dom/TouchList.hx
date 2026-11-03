@@ -25,14 +25,22 @@
 package js.web.dom;
 
 /**
+	To provide quality support for touch-based user interfaces, touch events offer the ability to interpret finger (or stylus) activity on touch screens or trackpads.
+	
+	Documentation [TouchList](https://developer.mozilla.org/docs/Web/API/TouchList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TouchList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TouchList>
 **/
 @:native("TouchList") extern class TouchList implements ArrayAccess<Null<Touch>> {
 	/**
+		The **`length`** read-only property indicates the number of items (touch points) in a given `TouchList`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TouchList/length>
 	**/
 	var length(default, null) : Int;
 	/**
+		The **`item()`** method returns the `Touch` object at the specified index in the `TouchList`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TouchList/item>
 	**/
 	function item(index:Int):Null<Touch>;

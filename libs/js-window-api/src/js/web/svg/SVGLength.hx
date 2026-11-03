@@ -25,6 +25,10 @@
 package js.web.svg;
 
 /**
+	The **`SVGLength`** interface correspond to the [\<length>](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/Content_type#length) basic data type.
+	
+	Documentation [SVGLength](https://developer.mozilla.org/docs/Web/API/SVGLength) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGLength/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGLength>
 **/
 @:native("SVGLength") extern class SVGLength {
@@ -40,26 +44,38 @@ package js.web.svg;
 	static inline var SVG_LENGTHTYPE_PT : Int = 9;
 	static inline var SVG_LENGTHTYPE_PC : Int = 10;
 	/**
+		The **`unitType`** property of the `SVGLength` interface represents the type of the value as specified by one of the `SVG_LENGTHTYPE_*` constants defined on this interface.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGLength/unitType>
 	**/
 	var unitType(default, null) : Int;
 	/**
+		The `value` property of the `SVGLength` interface represents the floating point value of the [\<length>](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/Content_type#length) in user units.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGLength/value>
 	**/
 	var value : Float;
 	/**
+		The `valueInSpecifiedUnits` property of the `SVGLength` interface represents floating point value, in the units expressed by `unitType`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGLength/valueInSpecifiedUnits>
 	**/
 	var valueInSpecifiedUnits : Float;
 	/**
+		The `valueAsString` property of the `SVGLength` interface represents the [\<length>](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/Content_type#length)'s value as a string, in the units expressed by `unitType`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGLength/valueAsString>
 	**/
 	var valueAsString : String;
 	/**
+		The `convertToSpecifiedUnits()` method of the `SVGLength` interface allows you to convert the length's value to the specified unit type.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGLength/convertToSpecifiedUnits>
 	**/
 	function convertToSpecifiedUnits(unitType:Int):Void;
 	/**
+		The `newValueSpecifiedUnits()` method of the `SVGLength` interface resets the value as a number with an associated `unitType`, thereby replacing the values for all of the attributes on the object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGLength/newValueSpecifiedUnits>
 	**/
 	function newValueSpecifiedUnits(unitType:Int, valueInSpecifiedUnits:Float):Void;

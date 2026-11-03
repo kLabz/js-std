@@ -25,30 +25,44 @@
 package js.web.net;
 
 /**
+	The **`WebTransportDatagramDuplexStream`** interface of the `WebTransport API` represents a duplex stream that can be used for unreliable transport of datagrams between client and server. Provides access to a `ReadableStream` for reading incoming datagrams, a `WritableStream` for writing outgoing datagrams, and various settings and statistics related to the stream.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [WebTransportDatagramDuplexStream](https://developer.mozilla.org/docs/Web/API/WebTransportDatagramDuplexStream) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WebTransportDatagramDuplexStream/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramDuplexStream>
 **/
 @:native("WebTransportDatagramDuplexStream") extern class WebTransportDatagramDuplexStream {
 	/**
+		The **`readable`** read-only property of the `WebTransportDatagramDuplexStream` interface returns a `ReadableStream` instance that can be used to unreliably read incoming datagrams from the stream.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramDuplexStream/readable>
 	**/
 	var readable(default, null) : ReadableStream;
 	/**
+		The **`maxDatagramSize`** read-only property of the `WebTransportDatagramDuplexStream` interface returns the maximum allowable size of outgoing datagrams, in bytes, that can be written to `writable`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramDuplexStream/maxDatagramSize>
 	**/
 	var maxDatagramSize(default, null) : Int;
 	/**
+		The **`incomingMaxAge`** property of the `WebTransportDatagramDuplexStream` interface gets or sets the maximum age for incoming datagrams, in milliseconds.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramDuplexStream/incomingMaxAge>
 	**/
 	var incomingMaxAge : Null<Float>;
 	/**
+		The **`outgoingMaxAge`** property of the `WebTransportDatagramDuplexStream` interface gets or sets the maximum age for outgoing datagrams, in milliseconds.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramDuplexStream/outgoingMaxAge>
 	**/
 	var outgoingMaxAge : Null<Float>;
 	var incomingMaxBufferedDatagrams : Int;
 	var outgoingMaxBufferedDatagrams : Int;
 	/**
+		The **`createWritable()`** method of the `WebTransportDatagramDuplexStream` interface returns a `WebTransportDatagramsWritable` instance that can be used to write outgoing datagrams to the transport.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/WebTransportDatagramDuplexStream/createWritable>
 	**/
 	function createWritable(?options:WebTransportSendOptions):WebTransportDatagramsWritable;

@@ -25,26 +25,38 @@
 package js.web.device;
 
 /**
+	The `USBConfiguration` interface of the [WebUSB API](https://developer.mozilla.org/en-US/docs/Web/API/WebUSB_API) provides information about a particular configuration of a USB device and the interfaces that it supports.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [USBConfiguration](https://developer.mozilla.org/docs/Web/API/USBConfiguration) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/USBConfiguration/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/USBConfiguration>
 **/
 @:native("USBConfiguration") @:require(js_experimental_api, "USBConfiguration is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class USBConfiguration {
 	/**
+		The **`configurationValue`** read-only property of the `USBConfiguration` interface returns the configuration value of this configuration. This is equal to the [`bConfigurationValue`](https://www.beyondlogic.org/usbnutshell/usb5.shtml#ConfigurationDescriptors) field of the configuration descriptor provided by the device defining this configuration.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/USBConfiguration/configurationValue>
 	**/
 	var configurationValue(default, null) : Int;
 	/**
+		The **`configurationName`** read-only property of the `USBConfiguration` interface returns the name provided by the device to describe this configuration. This is equal to the value of the string descriptor with the index provided in the [`iConfiguration`](https://www.beyondlogic.org/usbnutshell/usb5.shtml#ConfigurationDescriptors) field of the configuration descriptor defining this configuration.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/USBConfiguration/configurationName>
 	**/
 	var configurationName(default, null) : Null<String>;
 	/**
+		The **`interfaces`** read-only property of the `USBConfiguration` interface returns an array containing instances of the `USBInterface` describing each interface supported by this configuration.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/USBConfiguration/interfaces>
 	**/
 	var interfaces(default, null) : Array<USBInterface>;
 	/**
+		The **`USBConfiguration()`** constructor creates a new `USBConfiguration` object which contains information about the configuration on the provided USBDevice with the given configuration value.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/USBConfiguration/USBConfiguration>
 	**/
 	function new(device:USBDevice, configurationValue:Int):Void;

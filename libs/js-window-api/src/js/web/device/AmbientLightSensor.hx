@@ -25,18 +25,26 @@
 package js.web.device;
 
 /**
+	The **`AmbientLightSensor`** interface of the [Sensor APIs](https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs) returns the current light level or illuminance of the ambient light around the hosting device.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [AmbientLightSensor](https://developer.mozilla.org/docs/Web/API/AmbientLightSensor) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AmbientLightSensor/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/AmbientLightSensor>
 **/
 @:native("AmbientLightSensor") @:require(js_experimental_api, "AmbientLightSensor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class AmbientLightSensor extends Sensor {
 	/**
+		The **`illuminance`** read-only property of the `AmbientLightSensor` interface returns the current light level in [lux](https://en.wikipedia.org/wiki/Lux) of the ambient light level around the hosting device.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AmbientLightSensor/illuminance>
 	**/
 	var illuminance(default, null) : Null<Float>;
 	/**
+		The **`AmbientLightSensor()`** constructor creates a new `AmbientLightSensor` object, which returns the current light level or illuminance of the ambient light around the hosting device.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AmbientLightSensor/AmbientLightSensor>
 	**/
 	function new(?sensorOptions:SensorOptions):Void;

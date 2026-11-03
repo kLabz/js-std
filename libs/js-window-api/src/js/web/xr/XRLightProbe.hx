@@ -25,14 +25,20 @@
 package js.web.xr;
 
 /**
+	The **`XRLightProbe`** interface of the [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) contains lighting information at a given point in the user's environment. You can get an `XRLighting` object using the `XRSession.requestLightProbe()` method.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRLightProbe](https://developer.mozilla.org/docs/Web/API/XRLightProbe) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRLightProbe/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRLightProbe>
 **/
 @:native("XRLightProbe") @:require(js_experimental_api, "XRLightProbe is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRLightProbe extends js.web.dom.EventTarget {
 	/**
+		The _read-only_ **`probeSpace`** property of the `XRLightProbe` interface returns an `XRSpace` tracking the position and orientation that the lighting estimations are relative to.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRLightProbe/probeSpace>
 	**/
 	var probeSpace(default, null) : XRSpace;

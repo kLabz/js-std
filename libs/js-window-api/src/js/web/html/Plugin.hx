@@ -25,6 +25,10 @@
 package js.web.html;
 
 /**
+	The `Plugin` interface provides information about a browser plugin.
+	
+	Documentation [Plugin](https://developer.mozilla.org/docs/Web/API/Plugin) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Plugin/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Plugin>
 **/
 @:native("Plugin") @:deprecated extern class Plugin implements ArrayAccess<Null<MimeType>> {

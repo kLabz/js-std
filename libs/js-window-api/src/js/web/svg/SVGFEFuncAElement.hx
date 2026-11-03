@@ -25,6 +25,10 @@
 package js.web.svg;
 
 /**
+	The **`SVGFEFuncAElement`** interface corresponds to the `<feFuncA>` element.
+	
+	Documentation [SVGFEFuncAElement](https://developer.mozilla.org/docs/Web/API/SVGFEFuncAElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGFEFuncAElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGFEFuncAElement>
 **/
 @:native("SVGFEFuncAElement") extern class SVGFEFuncAElement extends SVGComponentTransferFunctionElement {

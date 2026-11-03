@@ -25,22 +25,32 @@
 package js.web.net;
 
 /**
+	The **Compression Streams API** provides a JavaScript API for compressing and decompressing streams of data using the gzip or deflate formats.
+	
+	Documentation [CompressionStream](https://developer.mozilla.org/docs/Web/API/CompressionStream) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CompressionStream/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CompressionStream>
 **/
 @:native("CompressionStream") extern class CompressionStream {
 	/**
+		The **`readable`** read-only property of the `CompressionStream` interface returns a `ReadableStream` that emits compressed data as `Uint8Array` chunks.
+		
 		From interface mixin GenericTransformStream
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CompressionStream/readable>
 	**/
 	var readable(default, null) : ReadableStream;
 	/**
+		The **`writable`** read-only property of the `CompressionStream` interface returns a `WritableStream` that accepts uncompressed data to be compressed, in the form of `ArrayBuffer`, `TypedArray`, or `DataView` chunks.
+		
 		From interface mixin GenericTransformStream
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CompressionStream/writable>
 	**/
 	var writable(default, null) : WritableStream;
 	/**
+		The **`CompressionStream()`** constructor creates a new `CompressionStream` object which compresses a stream of data.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CompressionStream/CompressionStream>
 	**/
 	function new(format:CompressionFormat):Void;

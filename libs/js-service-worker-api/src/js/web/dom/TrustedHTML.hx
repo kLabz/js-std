@@ -25,14 +25,22 @@
 package js.web.dom;
 
 /**
+	The **`TrustedHTML`** interface of the `Trusted Types API` represents a string that a developer can insert into an [injection sink](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API#concepts_and_usage) that will render it as HTML. These objects are created via `TrustedTypePolicy.createHTML()` and therefore have no constructor.
+	
+	Documentation [TrustedHTML](https://developer.mozilla.org/docs/Web/API/TrustedHTML) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TrustedHTML/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TrustedHTML>
 **/
 @:native("TrustedHTML") extern class TrustedHTML {
 	/**
+		The **`toJSON()`** method of the `TrustedHTML` interface returns a string representing the `TrustedHTML` object. This is the same string that `TrustedHTML.toString()` returns.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedHTML/toJSON>
 	**/
 	function toJSON():String;
 	/**
+		The **`toString()`** method of the `TrustedHTML` interface returns a string which may safely inserted into an injection sink.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TrustedHTML/toString>
 	**/
 	function toString():String;

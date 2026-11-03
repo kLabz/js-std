@@ -25,7 +25,11 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUSupportedLimits`** interface of the `WebGPU API` describes the limits supported by a `GPUAdapter`.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUSupportedLimits](https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUSupportedLimits>
 **/

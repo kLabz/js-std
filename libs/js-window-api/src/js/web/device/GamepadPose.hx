@@ -25,40 +25,60 @@
 package js.web.device;
 
 /**
+	The **`GamepadPose`** interface of the [Gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API) represents the pose of a [WebVR](https://developer.mozilla.org/en-US/docs/Web/API/WebVR_API) controller at a given timestamp (which includes orientation, position, velocity, and acceleration information).
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [GamepadPose](https://developer.mozilla.org/docs/Web/API/GamepadPose) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GamepadPose/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GamepadPose>
 **/
 @:native("GamepadPose") @:require(js_experimental_api, "GamepadPose is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class GamepadPose {
 	/**
+		The **`hasOrientation`** read-only property of the `GamepadPose` interface returns a boolean value stating whether the `Gamepad` can track and return orientation information.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/hasOrientation>
 	**/
 	var hasOrientation(default, null) : Bool;
 	/**
+		The **`hasPosition`** read-only property of the `GamepadPose` interface returns a boolean value stating whether the `Gamepad` can track and return position information.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/hasPosition>
 	**/
 	var hasPosition(default, null) : Bool;
 	/**
+		The **`position`** read-only property of the `GamepadPose` interface returns the position of the `Gamepad` as a 3D vector.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/position>
 	**/
 	var position(default, null) : Null<js.lib.Float32Array>;
 	/**
+		The **`linearVelocity`** read-only property of the `GamepadPose` interface returns an array representing the linear velocity vector of the `Gamepad`, in meters per second.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/linearVelocity>
 	**/
 	var linearVelocity(default, null) : Null<js.lib.Float32Array>;
 	/**
+		The **`linearAcceleration`** read-only property of the `GamepadPose` interface returns an array representing the linear acceleration vector of the `Gamepad`, in meters per second per second.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/linearAcceleration>
 	**/
 	var linearAcceleration(default, null) : Null<js.lib.Float32Array>;
 	/**
+		The **`orientation`** read-only property of the `GamepadPose` interface returns the orientation of the `Gamepad`, as a quaternion value.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/orientation>
 	**/
 	var orientation(default, null) : Null<js.lib.Float32Array>;
 	/**
+		The **`angularVelocity`** read-only property of the `GamepadPose` interface returns an array representing the angular velocity vector of the `Gamepad`, in radians per second.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/angularVelocity>
 	**/
 	var angularVelocity(default, null) : Null<js.lib.Float32Array>;
 	/**
+		The **`angularAcceleration`** read-only property of the `GamepadPose` interface returns an array representing the angular acceleration vector of the `Gamepad`, in meters per second per second.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GamepadPose/angularAcceleration>
 	**/
 	var angularAcceleration(default, null) : Null<js.lib.Float32Array>;

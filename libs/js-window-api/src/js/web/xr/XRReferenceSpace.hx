@@ -25,15 +25,21 @@
 package js.web.xr;
 
 /**
+	The WebXR Device API's **`XRReferenceSpace`** interface describes the coordinate system for a specific tracked entity or object within the virtual world using a specified tracking behavior. The tracking behavior is defined by the selected [reference space type](#reference_space_types). It expands upon the base class, `XRSpace`, by adding support for several different tracking behaviors as well as to request a new reference space which describes the offset transform between the tracked object and another location in the world.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRReferenceSpace](https://developer.mozilla.org/docs/Web/API/XRReferenceSpace) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRReferenceSpace/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRReferenceSpace>
 **/
 @:native("XRReferenceSpace") @:require(js_experimental_api, "XRReferenceSpace is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRReferenceSpace extends XRSpace {
 	var onreset : js.web.html.EventHandler;
 	/**
+		The `XRReferenceSpace` interface's **`getOffsetReferenceSpace()`** method returns a new reference space object which describes the relative difference in position between the object on which the method is called and a given point in 3D space. The object returned by `getOffsetReferenceSpace()` is an `XRReferenceSpace` if called on an `XRReferenceSpace`, or an `XRBoundedReferenceSpace` if called on an object of that type.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRReferenceSpace/getOffsetReferenceSpace>
 	**/
 	function getOffsetReferenceSpace(originOffset:XRRigidTransform):XRReferenceSpace;

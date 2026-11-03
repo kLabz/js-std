@@ -25,18 +25,28 @@
 package js.web.media;
 
 /**
+	The `AudioContext` interface represents an audio-processing graph built from audio modules linked together, each represented by an `AudioNode`.
+	
+	Documentation [AudioContext](https://developer.mozilla.org/docs/Web/API/AudioContext) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/AudioContext/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/AudioContext>
 **/
 @:native("AudioContext") extern class AudioContext extends BaseAudioContext {
 	/**
+		The **`baseLatency`** read-only property of the `AudioContext` interface returns a double that represents the number of seconds of processing latency incurred by the `AudioContext` passing an audio buffer from the `AudioDestinationNode` — i.e., the end of the audio graph — into the host system's audio subsystem ready for playing.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/baseLatency>
 	**/
 	var baseLatency(default, null) : Float;
 	/**
+		The **`outputLatency`** read-only property of the `AudioContext` Interface provides an estimation of the output latency of the current audio context.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/outputLatency>
 	**/
 	var outputLatency(default, null) : Float;
 	/**
+		The **`sinkId`** read-only property of the `AudioContext` interface returns the sink ID of the current output audio device.
+		
 		Only available in secure contexts (HTTPS).
 		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/sinkId>
@@ -46,44 +56,64 @@ package js.web.media;
 	var onsinkchange : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
 	/**
+		The **`playbackStats`** read-only property of the `AudioContext` interface returns an `AudioPlaybackStats` object providing access to duration, underrun, and latency statistics for the `AudioContext`. These statistics allow you to measure audio delay and glitches.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/playbackStats>
 	**/
 	@:require(js_experimental_api, "AudioContext.playbackStats is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var playbackStats(default, null) : AudioPlaybackStats;
 	/**
+		The **`AudioContext()`** constructor creates a new `AudioContext` object which represents an audio-processing graph, built from audio modules linked together, each represented by an `AudioNode`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/AudioContext>
 	**/
 	function new(?contextOptions:AudioContextOptions):Void;
 	/**
+		The `close()` method of the `AudioContext` Interface closes the audio context, releasing any system audio resources that it uses.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/close>
 	**/
 	function close():js.lib.Promise<Void>;
 	/**
+		The `createMediaElementSource()` method of the `AudioContext` Interface is used to create a new `MediaElementAudioSourceNode` object, given an existing HTML `<audio>` or `<video>` element, the audio from which can then be played and manipulated.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/createMediaElementSource>
 	**/
 	function createMediaElementSource(mediaElement:js.web.html.HTMLMediaElement):MediaElementAudioSourceNode;
 	/**
+		The `createMediaStreamDestination()` method of the `AudioContext` Interface is used to create a new `MediaStreamAudioDestinationNode` object associated with a [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) `MediaStream` representing an audio stream, which may be stored in a local file or sent to another computer.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/createMediaStreamDestination>
 	**/
 	function createMediaStreamDestination():MediaStreamAudioDestinationNode;
 	/**
+		The `createMediaStreamSource()` method of the `AudioContext` Interface is used to create a new `MediaStreamAudioSourceNode` object, given a media stream (say, from a `MediaDevices.getUserMedia` instance), the audio from which can then be played and manipulated.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/createMediaStreamSource>
 	**/
 	function createMediaStreamSource(mediaStream:MediaStream):MediaStreamAudioSourceNode;
 	/**
+		The **`createMediaStreamTrackSource()`** method of the `AudioContext` interface creates and returns a `MediaStreamTrackAudioSourceNode` which represents an audio source whose data comes from the specified `MediaStreamTrack`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/createMediaStreamTrackSource>
 	**/
 	@:require(js_experimental_api, "AudioContext.createMediaStreamTrackSource is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function createMediaStreamTrackSource(mediaStreamTrack:MediaStreamTrack):MediaStreamTrackAudioSourceNode;
 	/**
+		The **`getOutputTimestamp()`** method of the `AudioContext` interface returns a new `AudioTimestamp` object containing two audio timestamp values relating to the current audio context.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/getOutputTimestamp>
 	**/
 	function getOutputTimestamp():AudioTimestamp;
 	/**
+		The **`resume()`** method of the `AudioContext` interface resumes the progression of time in an audio context that has previously been suspended.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/resume>
 	**/
 	function resume():js.lib.Promise<Void>;
 	/**
+		The **`setSinkId()`** method of the `AudioContext` interface sets the output audio device for the `AudioContext`. If a sink ID is not explicitly set, the default system audio output device will be used.
+		
 		Only available in secure contexts (HTTPS).
 		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/setSinkId>
@@ -91,6 +121,8 @@ package js.web.media;
 	@:require(js_experimental_api, "AudioContext.setSinkId is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function setSinkId(sinkId:haxe.extern.EitherType<String, AudioSinkOptions>):js.lib.Promise<Void>;
 	/**
+		The `suspend()` method of the `AudioContext` Interface suspends the progression of time in the audio context, temporarily halting audio hardware access and reducing CPU/battery usage in the process — this is useful if you want an application to power down the audio hardware when it will not be using an audio context for a while.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/AudioContext/suspend>
 	**/
 	function suspend():js.lib.Promise<Void>;

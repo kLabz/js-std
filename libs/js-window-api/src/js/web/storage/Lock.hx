@@ -25,16 +25,24 @@
 package js.web.storage;
 
 /**
+	The **`Lock`** interface of the [Web Locks API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Locks_API) provides the name and mode of a lock. This may be a newly requested lock that is received in the callback to `LockManager.request()`, or a record of an active or queued lock returned by `LockManager.query()`.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [Lock](https://developer.mozilla.org/docs/Web/API/Lock) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Lock/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/Lock>
 **/
 @:native("Lock") extern class Lock {
 	/**
+		The **`name`** read-only property of the `Lock` interface returns the _name_ passed to `LockManager.request` selected when the lock was requested.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Lock/name>
 	**/
 	var name(default, null) : String;
 	/**
+		The **`mode`** read-only property of the `Lock` interface returns the access mode passed to `LockManager.request()` when the lock was requested. The mode is either `"exclusive"` (the default) or `"shared"`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Lock/mode>
 	**/
 	var mode(default, null) : LockMode;

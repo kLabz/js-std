@@ -25,10 +25,16 @@
 package js.web.misc;
 
 /**
+	The **`Permissions`** interface of the [Permissions API](https://developer.mozilla.org/en-US/docs/Web/API/Permissions_API) provides the core Permission API functionality, such as methods for querying and revoking permissions
+	
+	Documentation [Permissions](https://developer.mozilla.org/docs/Web/API/Permissions) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Permissions/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Permissions>
 **/
 @:native("Permissions") extern class Permissions {
 	/**
+		The **`query()`** method of the `Permissions` interface returns the state of a user permission on the global scope.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Permissions/query>
 	**/
 	function query(permissionDesc:{ }):js.lib.Promise<PermissionStatus>;
@@ -38,6 +44,8 @@ package js.web.misc;
 	@:require(js_experimental_api, "Permissions.request is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	function request(permissionDesc:{ }):js.lib.Promise<PermissionStatus>;
 	/**
+		The **`revoke()`** method of the `Permissions` interface reverts a currently set permission back to its default state, which is usually `prompt`. This method is called on the global `Permissions` object `navigator.permissions`.
+		
 		From partial interface in permissions-revoke.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Permissions/revoke>

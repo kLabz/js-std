@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **Prioritized Task Scheduling API** provides a standardized way to prioritize all tasks belonging to an application, whether they are defined in a website developer's code or in third-party libraries and frameworks.
+	
+	Documentation [Scheduler](https://developer.mozilla.org/docs/Web/API/Scheduler) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/Scheduler/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/Scheduler>
 **/
 @:native("Scheduler") extern class Scheduler {
 	/**
+		The **`postTask()`** method of the `Scheduler` interface is used for adding tasks to be [scheduled](https://developer.mozilla.org/en-US/docs/Web/API/Prioritized_Task_Scheduling_API) according to their [priority](https://developer.mozilla.org/en-US/docs/Web/API/Prioritized_Task_Scheduling_API#task_priorities).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Scheduler/postTask>
 	**/
 	function postTask(callback:SchedulerPostTaskCallback, ?options:SchedulerPostTaskOptions):js.lib.Promise<Any>;
 	/**
+		The **`yield()`** method of the `Scheduler` interface is used for yielding to the [main thread](https://developer.mozilla.org/en-US/docs/Glossary/Main_thread) during a task and continuing execution later, with the continuation scheduled as a prioritized task (see the [Prioritized Task Scheduling API](https://developer.mozilla.org/en-US/docs/Web/API/Prioritized_Task_Scheduling_API) for more information). This allows long-running work to be broken up so the browser stays responsive.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/Scheduler/yield>
 	**/
 	function yield():js.lib.Promise<Void>;

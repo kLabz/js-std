@@ -25,28 +25,42 @@
 package js.web.misc;
 
 /**
+	The **Clipboard API** provides the ability to respond to clipboard commands (cut, copy, and paste), as well as to asynchronously read from and write to the system clipboard.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [ClipboardItem](https://developer.mozilla.org/docs/Web/API/ClipboardItem) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ClipboardItem/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/ClipboardItem>
 **/
 @:native("ClipboardItem") extern class ClipboardItem {
 	/**
+		The read-only **`presentationStyle`** property of the `ClipboardItem` interface returns a string indicating how an item should be presented.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ClipboardItem/presentationStyle>
 	**/
 	var presentationStyle(default, null) : PresentationStyle;
 	/**
+		The read-only **`types`** property of the `ClipboardItem` interface returns an `Array` of MIME types available within the `ClipboardItem`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ClipboardItem/types>
 	**/
 	var types(default, null) : Array<String>;
 	/**
+		The **`ClipboardItem()`** constructor creates a new `ClipboardItem` object, which represents data to be stored or retrieved via the [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API) `clipboard.write()` and `clipboard.read()` methods, respectively.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ClipboardItem/ClipboardItem>
 	**/
 	function new(items:haxe.DynamicAccess<ClipboardItemData>, ?options:ClipboardItemOptions):Void;
 	/**
+		The **`getType()`** method of the `ClipboardItem` interface returns a `Promise` that resolves with a `Blob` of the requested MIME type or an error if the MIME type is not found.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ClipboardItem/getType>
 	**/
 	function getType(type:String):js.lib.Promise<js.web.net.Blob>;
 	/**
+		The **`supports()`** static method of the `ClipboardItem` interface returns `true` if the given MIME type is supported by the clipboard, and `false` otherwise.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ClipboardItem/supports_static>
 	**/
 	static function supports(type:String):Bool;

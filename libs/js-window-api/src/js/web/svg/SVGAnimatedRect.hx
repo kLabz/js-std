@@ -25,14 +25,22 @@
 package js.web.svg;
 
 /**
+	The **`SVGAnimatedRect`** interface represents an `SVGRect` attribute that can be animated.
+	
+	Documentation [SVGAnimatedRect](https://developer.mozilla.org/docs/Web/API/SVGAnimatedRect) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGAnimatedRect/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedRect>
 **/
 @:native("SVGAnimatedRect") extern class SVGAnimatedRect {
 	/**
+		The **`baseVal`** read-only property of the `SVGAnimatedRect` interface represents the current non-animated value of the `viewBox` attribute of an SVG element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedRect/baseVal>
 	**/
 	var baseVal(default, null) : js.web.dom.SVGRect;
 	/**
+		The **`animVal`** read-only property of the `SVGAnimatedRect` interface represents the current animated value of the `viewBox` attribute of an SVG element as a read-only `DOMRectReadOnly` object. It provides access to the rectangle's dynamic state, including the `x`, `y`, `width`, and `height` values during the animation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimatedRect/animVal>
 	**/
 	var animVal(default, null) : js.web.dom.SVGRect;

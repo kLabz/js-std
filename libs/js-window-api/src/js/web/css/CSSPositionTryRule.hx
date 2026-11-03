@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`CSSPositionTryRule`** interface describes an object representing a `@position-try` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+	
+	Documentation [CSSPositionTryRule](https://developer.mozilla.org/docs/Web/API/CSSPositionTryRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSPositionTryRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryRule>
 **/
 @:native("CSSPositionTryRule") extern class CSSPositionTryRule extends CSSRule {
 	/**
+		The **`name`** read-only property of the `CSSPositionTryRule` interface represents the name of the position try fallback option specified by the `@position-try` at-rule's `dashed-ident`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryRule/name>
 	**/
 	var name(default, null) : String;
 	/**
+		The read-only **`style`** property of the `CSSPositionTryRule` interface contains a `CSSPositionTryDescriptors` object representing the descriptors available in the `@position-try` rule's body.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSPositionTryRule/style>
 	**/
 	var style(default, null) : CSSPositionTryDescriptors;

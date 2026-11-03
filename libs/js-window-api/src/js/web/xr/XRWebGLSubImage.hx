@@ -25,29 +25,43 @@
 package js.web.xr;
 
 /**
+	The **`XRWebGLSubImage`** interface is used during rendering of WebGL layers.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRWebGLSubImage](https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage>
 **/
 @:native("XRWebGLSubImage") @:require(js_experimental_api, "XRWebGLSubImage is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRWebGLSubImage extends XRSubImage {
 	/**
+		The read-only **`colorTexture`** property of the `XRWebGLSubImage` interface represents the color `WebGLTexture` object for the `XRCompositionLayer` to render.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage/colorTexture>
 	**/
 	var colorTexture(default, null) : js.web.webgl.WebGLTexture;
 	/**
+		The read-only **`depthStencilTexture`** property of the `XRWebGLSubImage` interface represents the depth/stencil `WebGLTexture` object for the `XRCompositionLayer` to render.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage/depthStencilTexture>
 	**/
 	var depthStencilTexture(default, null) : Null<js.web.webgl.WebGLTexture>;
 	var motionVectorTexture(default, null) : Null<js.web.webgl.WebGLTexture>;
 	/**
+		The read-only **`imageIndex`** property of the `XRWebGLSubImage` interface is a number representing the offset into the texture array if the layer was requested with `texture-array`; [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null) otherwise.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage/imageIndex>
 	**/
 	var imageIndex(default, null) : Null<Int>;
 	/**
+		The read-only **`colorTextureWidth`** property of the `XRWebGLSubImage` interface is a number representing the width in pixels of the GL attachment.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage/colorTextureWidth>
 	**/
 	var colorTextureWidth(default, null) : Int;
 	/**
+		The read-only **`colorTextureHeight`** property of the `XRWebGLSubImage` interface is a number representing the height in pixels of the GL attachment.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRWebGLSubImage/colorTextureHeight>
 	**/
 	var colorTextureHeight(default, null) : Int;

@@ -25,6 +25,10 @@
 package js.web.perf;
 
 /**
+	The legacy **`PerformanceNavigation`** interface represents information about how the navigation to the current document was done.
+	
+	Documentation [PerformanceNavigation](https://developer.mozilla.org/docs/Web/API/PerformanceNavigation) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PerformanceNavigation/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigation>
 **/
 @:native("PerformanceNavigation") @:deprecated extern class PerformanceNavigation {
@@ -33,16 +37,22 @@ package js.web.perf;
 	static inline var TYPE_BACK_FORWARD : Int = 2;
 	static inline var TYPE_RESERVED : Int = 255;
 	/**
+		The legacy **`PerformanceNavigation.type`** read-only property returns an `unsigned short` containing a constant describing how the navigation to this page was done.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigation/type>
 	**/
 	@:deprecated
 	var type(default, null) : Int;
 	/**
+		The legacy **`PerformanceNavigation.redirectCount`** read-only property returns an `unsigned short` representing the number of REDIRECTs done before reaching the page.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigation/redirectCount>
 	**/
 	@:deprecated
 	var redirectCount(default, null) : Int;
 	/**
+		The **`toJSON()`** method of the `PerformanceNavigation` interface returns a JSON-serializable plain object representing the `PerformanceNavigation` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceNavigation/toJSON>
 	**/
 	@:deprecated

@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The `StyleSheetList` interface represents a list of `CSSStyleSheet` objects. An instance of this object can be returned by `Document.styleSheets`.
+	
+	Documentation [StyleSheetList](https://developer.mozilla.org/docs/Web/API/StyleSheetList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/StyleSheetList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/StyleSheetList>
 **/
 @:native("StyleSheetList") extern class StyleSheetList implements ArrayAccess<Null<CSSStyleSheet>> {
 	/**
+		The **`length`** read-only property of the `StyleSheetList` interface returns the number of `CSSStyleSheet` objects in the collection.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StyleSheetList/length>
 	**/
 	var length(default, null) : Int;
 	/**
+		The **`item()`** method of the `StyleSheetList` interface returns a single `CSSStyleSheet` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/StyleSheetList/item>
 	**/
 	function item(index:Int):Null<CSSStyleSheet>;

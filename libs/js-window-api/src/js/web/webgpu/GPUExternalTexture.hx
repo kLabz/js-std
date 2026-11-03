@@ -25,12 +25,18 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUExternalTexture`** interface of the `WebGPU API` represents a wrapper object containing an `HTMLVideoElement` snapshot that can be used as a texture in GPU rendering operations.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUExternalTexture](https://developer.mozilla.org/docs/Web/API/GPUExternalTexture) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUExternalTexture/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUExternalTexture>
 **/
 @:native("GPUExternalTexture") extern class GPUExternalTexture {
 	/**
+		The **`label`** property of the `GPUExternalTexture` interface provides a label that can be used to identify the object, for example in `GPUError` messages or console warnings.
+		
 		From interface mixin GPUObjectBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUExternalTexture/label>

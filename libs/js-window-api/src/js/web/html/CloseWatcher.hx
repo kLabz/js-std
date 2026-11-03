@@ -25,24 +25,36 @@
 package js.web.html;
 
 /**
+	The `CloseWatcher` interface allows a custom UI component with open and close semantics to respond to device-specific close actions in the same way as a built-in component.
+	
+	Documentation [CloseWatcher](https://developer.mozilla.org/docs/Web/API/CloseWatcher) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CloseWatcher/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CloseWatcher>
 **/
 @:native("CloseWatcher") extern class CloseWatcher extends js.web.dom.EventTarget {
 	var oncancel : EventHandler;
 	var onclose : EventHandler;
 	/**
+		The **`CloseWatcher()`** constructor creates a new `CloseWatcher` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CloseWatcher/CloseWatcher>
 	**/
 	function new(?options:CloseWatcherOptions):Void;
 	/**
+		The **`close()`** method of the `CloseWatcher` interface lets you skip any logic in the `cancel` event handler and immediately fire the `close` event. It then deactivates the close watcher as if `destroy()` was called.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CloseWatcher/close>
 	**/
 	function close():Void;
 	/**
+		The **`destroy()`** method of the `CloseWatcher` interface deactivates the close watcher. This is intended to be called if the relevant UI element is torn down in some other way than being closed.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CloseWatcher/destroy>
 	**/
 	function destroy():Void;
 	/**
+		The **`requestClose()`** method of the `CloseWatcher` interface fires a `cancel` event and if that event is not canceled with `Event.preventDefault()`, proceeds to fire a `close` event, and then finally deactivates the close watcher as if `destroy()` was called.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CloseWatcher/requestClose>
 	**/
 	function requestClose():Void;

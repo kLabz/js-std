@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The **`EXT_texture_norm16`** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and provides a set of new 16-bit signed normalized and unsigned normalized formats (fixed-point texture, renderbuffer and texture buffer).
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [EXT_texture_norm16](https://developer.mozilla.org/docs/Web/API/EXT_texture_norm16) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/EXT_texture_norm16/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/EXT_texture_norm16>
 **/

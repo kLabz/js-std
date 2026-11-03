@@ -25,20 +25,30 @@
 package js.web.css;
 
 /**
+	The **`CSSFunctionRule`** interface of the [CSS Object Model](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents CSS `@function` (custom function) [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [CSSFunctionRule](https://developer.mozilla.org/docs/Web/API/CSSFunctionRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSFunctionRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionRule>
 **/
 @:native("CSSFunctionRule") @:require(js_experimental_api, "CSSFunctionRule is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CSSFunctionRule extends CSSGroupingRule {
 	/**
+		The **`name`** property of the `CSSFunctionRule` interface returns a string representing the custom function's name.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionRule/name>
 	**/
 	var name(default, null) : String;
 	/**
+		The **`returnType`** property of the `CSSFunctionRule` interface returns a string representing the custom function's return type.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionRule/returnType>
 	**/
 	var returnType(default, null) : String;
 	/**
+		The **`getParameters()`** method of the `CSSFunctionRule` interface returns an array of objects representing the custom function's parameters.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSFunctionRule/getParameters>
 	**/
 	function getParameters():Array<FunctionParameter>;

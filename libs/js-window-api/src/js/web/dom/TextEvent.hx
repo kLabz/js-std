@@ -25,15 +25,23 @@
 package js.web.dom;
 
 /**
+	The **`TextEvent`** interface is a legacy UI event interface for reporting changes to text UI elements.
+	
+	Documentation [TextEvent](https://developer.mozilla.org/docs/Web/API/TextEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TextEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TextEvent>
 **/
 @:native("TextEvent") @:deprecated extern class TextEvent extends UIEvent {
 	/**
+		The **`data`** read-only property of the `TextEvent` interface returns the last character added to the input element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TextEvent/data>
 	**/
 	@:deprecated
 	var data(default, null) : String;
 	/**
+		The **`initTextEventEvent()`** method of the `TextEvent` interface initializes the value of a `TextEvent` after it has been created.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TextEvent/initTextEvent>
 	**/
 	@:deprecated

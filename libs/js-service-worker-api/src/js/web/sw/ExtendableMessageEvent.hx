@@ -25,30 +25,46 @@
 package js.web.sw;
 
 /**
+	The **`ExtendableMessageEvent`** interface of the [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) represents the event object of a `message` event fired on a service worker (when a message is received on the `ServiceWorkerGlobalScope` from another context) — extends the lifetime of such events.
+	
+	Documentation [ExtendableMessageEvent](https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent>
 **/
 @:native("ExtendableMessageEvent") extern class ExtendableMessageEvent extends ExtendableEvent {
 	/**
+		The **`data`** read-only property of the `ExtendableMessageEvent` interface returns the event's data. It can be any data type.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/data>
 	**/
 	var data(default, null) : Any;
 	/**
+		The **`origin`** read-only property of the `ExtendableMessageEvent` interface returns the origin of the `Client` that sent the message.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/origin>
 	**/
 	var origin(default, null) : String;
 	/**
+		The **`lastEventID`** read-only property of the `ExtendableMessageEvent` interface represents, in [server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events), the last event ID of the event source. This is an empty string.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/lastEventId>
 	**/
 	var lastEventId(default, null) : String;
 	/**
+		The **`source`** read-only property of the `ExtendableMessageEvent` interface returns a reference to the `Client` object from which the message was sent.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/source>
 	**/
 	var source(default, null) : Null<haxe.extern.EitherType<Client, haxe.extern.EitherType<ServiceWorker, js.web.html.MessagePort>>>;
 	/**
+		The **`ports`** read-only property of the `ExtendableMessageEvent` interface returns the array containing the `MessagePort` objects representing the ports of the associated message channel (the channel the message is being sent through.)
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/ports>
 	**/
 	var ports(default, null) : Array<js.web.html.MessagePort>;
 	/**
+		The **`ExtendableMessageEvent()`** constructor creates a new `ExtendableMessageEvent` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ExtendableMessageEvent/ExtendableMessageEvent>
 	**/
 	function new(type:String, ?eventInitDict:ExtendableMessageEventInit):Void;

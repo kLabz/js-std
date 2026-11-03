@@ -25,14 +25,20 @@
 package js.web.xr;
 
 /**
+	The **`XRTransientInputHitTestSource`** interface of the [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) handles transient input hit test subscriptions. You can get an `XRTransientInputHitTestSource` object by calling the `XRSession.requestHitTestSourceForTransientInput()`.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [XRTransientInputHitTestSource](https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestSource) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestSource/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestSource>
 **/
 @:native("XRTransientInputHitTestSource") @:require(js_experimental_api, "XRTransientInputHitTestSource is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRTransientInputHitTestSource {
 	/**
+		The **`cancel()`** method of the `XRTransientInputHitTestSource` interface unsubscribes a transient input hit test.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/XRTransientInputHitTestSource/cancel>
 	**/
 	function cancel():Void;

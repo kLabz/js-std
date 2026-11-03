@@ -25,18 +25,28 @@
 package js.web.net;
 
 /**
+	The **`TransformStream`** interface of the [Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API) represents a concrete implementation of the [pipe chain](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts#pipe_chains) _transform stream_ concept.
+	
+	Documentation [TransformStream](https://developer.mozilla.org/docs/Web/API/TransformStream) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/TransformStream/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/TransformStream>
 **/
 @:native("TransformStream") extern class TransformStream {
 	/**
+		The **`readable`** read-only property of the `TransformStream` interface returns the `ReadableStream` instance controlled by this `TransformStream`. This stream emits the transformed output data.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TransformStream/readable>
 	**/
 	var readable(default, null) : ReadableStream;
 	/**
+		The **`writable`** read-only property of the `TransformStream` interface returns the `WritableStream` instance controlled by this `TransformStream`. This stream accepts input data that will be transformed and emitted to the `readable` stream.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TransformStream/writable>
 	**/
 	var writable(default, null) : WritableStream;
 	/**
+		The **`TransformStream()`** constructor creates a new `TransformStream` object which represents a pair of streams: a `WritableStream` representing the writable side, and a `ReadableStream` representing the readable side.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/TransformStream/TransformStream>
 	**/
 	function new(?transformer:{ }, ?writableStrategy:QueuingStrategy, ?readableStrategy:QueuingStrategy):Void;

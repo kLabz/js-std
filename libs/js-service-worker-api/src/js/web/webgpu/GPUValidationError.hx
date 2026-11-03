@@ -25,12 +25,18 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUValidationError`** interface of the `WebGPU API` describes an application error indicating that an operation did not pass the WebGPU API's validation constraints.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUValidationError](https://developer.mozilla.org/docs/Web/API/GPUValidationError) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUValidationError/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUValidationError>
 **/
 @:native("GPUValidationError") extern class GPUValidationError extends GPUError {
 	/**
+		The **`GPUValidationError()`** constructor creates a new `GPUValidationError` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUValidationError/GPUValidationError>
 	**/
 	function new(message:String):Void;

@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`CSSSkewY`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the `skewY()` value of the individual `transform` property in CSS.
+	
+	Documentation [CSSSkewY](https://developer.mozilla.org/docs/Web/API/CSSSkewY) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSSkewY/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSSkewY>
 **/
 @:native("CSSSkewY") extern class CSSSkewY extends CSSTransformComponent {
 	/**
+		The **`ay`** property of the `CSSSkewY` interface gets and sets the angle used to distort the element along the y-axis (or ordinate).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSSkewY/ay>
 	**/
 	var ay : CSSNumericValue;
 	/**
+		The **`CSSSkewY()`** constructor creates a new `CSSSkewY` object that represents the `skewY()` value of the individual `transform` property in CSS.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSSkewY/CSSSkewY>
 	**/
 	function new(ay:CSSNumericValue):Void;

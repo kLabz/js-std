@@ -25,16 +25,24 @@
 package js.web.device;
 
 /**
+	The **`MIDIMessageEvent`** interface of the [Web MIDI API](https://developer.mozilla.org/en-US/docs/Web/API/Web_MIDI_API) represents the event passed to the `midimessage` event of the `MIDIInput` interface. A `midimessage` event is fired every time a MIDI message is sent from a device represented by a `MIDIInput`, for example when a MIDI keyboard key is pressed, a knob is tweaked, or a slider is moved.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [MIDIMessageEvent](https://developer.mozilla.org/docs/Web/API/MIDIMessageEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MIDIMessageEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/MIDIMessageEvent>
 **/
 @:native("MIDIMessageEvent") extern class MIDIMessageEvent extends js.web.dom.Event {
 	/**
+		The **`data`** read-only property of the `MIDIMessageEvent` interface returns the MIDI data bytes of a single MIDI message.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIMessageEvent/data>
 	**/
 	var data(default, null) : Null<js.lib.Uint8Array>;
 	/**
+		The **`MIDIMessageEvent()`** constructor creates a new `MIDIMessageEvent` object. Typically this constructor is not used as events are created when a `MIDIInput` finishes receiving one or more MIDI messages.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIMessageEvent/MIDIMessageEvent>
 	**/
 	function new(type:String, ?eventInitDict:MIDIMessageEventInit):Void;

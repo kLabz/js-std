@@ -25,14 +25,22 @@
 package js.web.html;
 
 /**
+	The **`UserActivation`** interface provides information about whether a user is currently interacting with the page, or has completed an interaction since page load.
+	
+	Documentation [UserActivation](https://developer.mozilla.org/docs/Web/API/UserActivation) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/UserActivation/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/UserActivation>
 **/
 @:native("UserActivation") extern class UserActivation {
 	/**
+		The read-only **`hasBeenActive`** property of the `UserActivation` interface indicates whether the current window has sticky user activation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/UserActivation/hasBeenActive>
 	**/
 	var hasBeenActive(default, null) : Bool;
 	/**
+		The read-only **`isActive`** property of the `UserActivation` interface indicates whether the current window has transient user activation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/UserActivation/isActive>
 	**/
 	var isActive(default, null) : Bool;

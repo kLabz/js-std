@@ -25,6 +25,10 @@
 package js.web.css;
 
 /**
+	The **`CSSMatrixComponent`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the `matrix()` and `matrix3d()` values of the individual `transform` property in CSS.
+	
+	Documentation [CSSMatrixComponent](https://developer.mozilla.org/docs/Web/API/CSSMatrixComponent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSMatrixComponent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSMatrixComponent>
 **/
 @:native("CSSMatrixComponent") extern class CSSMatrixComponent extends CSSTransformComponent {

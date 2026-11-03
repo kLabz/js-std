@@ -25,16 +25,24 @@
 package js.web.sw;
 
 /**
+	The **Background Synchronization API** enables a web app to defer tasks so that they can be run in a [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) once the user has a stable network connection.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [SyncManager](https://developer.mozilla.org/docs/Web/API/SyncManager) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SyncManager/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/SyncManager>
 **/
 @:native("SyncManager") @:require(js_experimental_api, "SyncManager is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class SyncManager {
 	/**
+		The **`getTags()`** method of the `SyncManager` interface returns a list of developer-defined identifiers for `SyncManager` registrations.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SyncManager/getTags>
 	**/
 	function getTags():js.lib.Promise<Array<String>>;
 	/**
+		The **`register()`** method of the `SyncManager` interface registers a synchronization event, triggering a `sync` event inside the associated service worker as soon as network connectivity is available.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SyncManager/register>
 	**/
 	function register(tag:String):js.lib.Promise<Void>;

@@ -25,26 +25,40 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCError`** interface of the [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) describes an error which has occurred while handling RTC operations. It's based upon the standard `DOMException` interface that describes general DOM errors.
+	
+	Documentation [RTCError](https://developer.mozilla.org/docs/Web/API/RTCError) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCError/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCError>
 **/
 @:native("RTCError") extern class RTCError extends js.web.dom.DOMException {
 	/**
+		The **`errorDetail`** read-only property of the `RTCError` interface is a string indicating the [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)-specific error code that occurred.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCError/errorDetail>
 	**/
 	var errorDetail(default, null) : RTCErrorDetailType;
 	/**
+		The **`sdpLineNumber`** read-only property of the `RTCError` interface specifies the SDP message line number where a syntax error occurred.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCError/sdpLineNumber>
 	**/
 	var sdpLineNumber(default, null) : Null<Int>;
 	/**
+		The **`sctpCauseCode`** read-only property of the `RTCError` interface provides the SCTP cause code explaining why the SCTP negotiation failed, if the `RTCError` represents an SCTP error.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCError/sctpCauseCode>
 	**/
 	var sctpCauseCode(default, null) : Null<Int>;
 	/**
+		The **`receivedAlert`** read-only property of the `RTCError` interface specifies the fatal DTLS error which resulted in an alert being received from the remote peer.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCError/receivedAlert>
 	**/
 	var receivedAlert(default, null) : Null<Int>;
 	/**
+		The **`sentAlert`** read-only property of the `RTCError` interface specifies the DTLS alert number sent to the remote peer, if the error represents an outbound DTLS error.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCError/sentAlert>
 	**/
 	var sentAlert(default, null) : Null<Int>;
@@ -54,6 +68,8 @@ package js.web.webrtc;
 	@:require(js_experimental_api, "RTCError.httpRequestStatusCode is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var httpRequestStatusCode(default, null) : Null<Int>;
 	/**
+		The **`RTCError()`** constructor creates and returns a new `RTCError` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCError/RTCError>
 	**/
 	function new(init:RTCErrorInit, ?message:String = ""):Void;

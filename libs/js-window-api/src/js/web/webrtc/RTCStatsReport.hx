@@ -25,34 +25,52 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCStatsReport`** interface of the [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) provides a statistics report for a `RTCPeerConnection`, `RTCRtpSender`, or `RTCRtpReceiver`.
+	
+	Documentation [RTCStatsReport](https://developer.mozilla.org/docs/Web/API/RTCStatsReport) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCStatsReport/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport>
 **/
 @:native("RTCStatsReport") extern class RTCStatsReport {
 	/**
+		The **`size`** read-only property of the `RTCStatsReport` interface returns the number of items in the current report.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/size>
 	**/
 	var size(default, null) : Int;
 	/**
+		The **`entries()`** method of the `RTCStatsReport` interface returns a new [iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator) object that can be used to iterate through the key/value pairs for each element in the `RTCStatsReport` object, in insertion order.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/entries>
 	**/
 	function entries():js.lib.Iterator<js.lib.Tuple<String, { }>>;
 	/**
+		The **`forEach()`** method of the `RTCStatsReport` interface executes a provided function once for each key/value pair in the `RTCStatsReport` object, in insertion order.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/forEach>
 	**/
 	function forEach(callback:(value:{ }, key:String, map:RTCStatsReport) -> Void, ?thisArg:Any):Void;
 	/**
+		The **`get()`** method of the `RTCStatsReport` interface returns a specified element from an `RTCStatsReport`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/get>
 	**/
 	function get(key:String):Null<{ }>;
 	/**
+		The **`has()`** method of the `RTCStatsReport` interface returns a boolean indicating whether a report contains a statistics dictionary with the specified id.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/has>
 	**/
 	function has(key:String):Bool;
 	/**
+		The **`keys()`** method of the `RTCStatsReport` interface returns a new _[iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator)_ object that can be used to iterate through the keys for each element in the `RTCStatsReport` object, in insertion order.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/keys>
 	**/
 	function keys():js.lib.Iterator<String>;
 	/**
+		The **`values()`** method of the `RTCStatsReport` interface returns a new _[iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator)_ object that can be used to iterate through the values for each element in the `RTCStatsReport` object, in insertion order.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCStatsReport/values>
 	**/
 	function values():js.lib.Iterator<{ }>;

@@ -25,16 +25,24 @@
 package js.web.webrtc;
 
 /**
+	The **`RTCIceCandidatePair`** dictionary describes a pair of ICE candidates which together comprise a description of a viable connection between two WebRTC endpoints. It is used as the return value from `RTCIceTransport.getSelectedCandidatePair()` to identify the currently-selected candidate pair identified by the ICE agent.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [RTCIceCandidatePair](https://developer.mozilla.org/docs/Web/API/RTCIceCandidatePair) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/RTCIceCandidatePair/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidatePair>
 **/
 @:native("RTCIceCandidatePair") @:require(js_experimental_api, "RTCIceCandidatePair is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class RTCIceCandidatePair {
 	/**
+		The **`local`** property of the `RTCIceCandidatePair` interface specifies the `RTCIceCandidate` that describes the configuration of the local end of a viable WebRTC connection.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidatePair/local>
 	**/
 	var local(default, null) : RTCIceCandidate;
 	/**
+		The **`remote`** property of the `RTCIceCandidatePair` interface specifies the `RTCIceCandidate` that describes the configuration of the remote end of a viable WebRTC connection.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/RTCIceCandidatePair/remote>
 	**/
 	var remote(default, null) : RTCIceCandidate;

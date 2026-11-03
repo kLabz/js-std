@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`CSSSkewX`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the `skewX()` value of the individual `transform` property in CSS.
+	
+	Documentation [CSSSkewX](https://developer.mozilla.org/docs/Web/API/CSSSkewX) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSSkewX/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSSkewX>
 **/
 @:native("CSSSkewX") extern class CSSSkewX extends CSSTransformComponent {
 	/**
+		The **`ax`** property of the `CSSSkewX` interface gets and sets the angle used to distort the element along the x-axis (or abscissa).
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSSkewX/ax>
 	**/
 	var ax : CSSNumericValue;
 	/**
+		The **`CSSSkewX()`** constructor creates a new `CSSSkewX` object that represents the `skewX()` value of the individual `transform` property in CSS.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSSkewX/CSSSkewX>
 	**/
 	function new(ax:CSSNumericValue):Void;

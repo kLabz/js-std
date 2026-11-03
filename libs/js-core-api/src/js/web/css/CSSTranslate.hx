@@ -25,22 +25,34 @@
 package js.web.css;
 
 /**
+	The **`CSSTranslate`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the `translate()` value of the individual `transform` property in CSS.
+	
+	Documentation [CSSTranslate](https://developer.mozilla.org/docs/Web/API/CSSTranslate) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSTranslate/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSTranslate>
 **/
 @:native("CSSTranslate") extern class CSSTranslate extends CSSTransformComponent {
 	/**
+		The **`x`** property of the `CSSTranslate` interface gets and sets the abscissa or x-axis of the translating vector.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTranslate/x>
 	**/
 	var x : CSSNumericValue;
 	/**
+		The **`y`** property of the `CSSTranslate` interface gets and sets the ordinate or y-axis of the translating vector.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTranslate/y>
 	**/
 	var y : CSSNumericValue;
 	/**
+		The **`z`** property of the `CSSTranslate` interface represents the z-component of the translating vector. A positive value moves the element towards the viewer, and a negative value farther away.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTranslate/z>
 	**/
 	var z : CSSNumericValue;
 	/**
+		The **`CSSTranslate()`** constructor creates a new `CSSTranslate` object representing the `translate()` value of the individual `transform` property in CSS.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSTranslate/CSSTranslate>
 	**/
 	function new(x:CSSNumericValue, y:CSSNumericValue, ?z:CSSNumericValue):Void;

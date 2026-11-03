@@ -25,12 +25,18 @@
 package js.web.media;
 
 /**
+	The **`MediaStreamTrackAudioSourceNode`** interface is a type of `AudioNode` which represents a source of audio data taken from a specific `MediaStreamTrack` obtained through the [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) or [Media Capture and Streams](https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API) APIs.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [MediaStreamTrackAudioSourceNode](https://developer.mozilla.org/docs/Web/API/MediaStreamTrackAudioSourceNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/MediaStreamTrackAudioSourceNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackAudioSourceNode>
 **/
 @:native("MediaStreamTrackAudioSourceNode") @:require(js_experimental_api, "MediaStreamTrackAudioSourceNode is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class MediaStreamTrackAudioSourceNode extends AudioNode {
 	/**
+		The [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)'s **`MediaStreamTrackAudioSourceNode()`** constructor creates and returns a new `MediaStreamTrackAudioSourceNode` object whose audio is taken from the `MediaStreamTrack` specified in the given options object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStreamTrackAudioSourceNode/MediaStreamTrackAudioSourceNode>
 	**/
 	function new(context:AudioContext, options:MediaStreamTrackAudioSourceOptions):Void;

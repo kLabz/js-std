@@ -25,22 +25,32 @@
 package js.web.net;
 
 /**
+	The **`DecompressionStream`** interface of the `Compression Streams API` decompresses a stream of data. It implements the same shape as a `TransformStream`, allowing it to be used in `ReadableStream.pipeThrough()` and similar methods.
+	
+	Documentation [DecompressionStream](https://developer.mozilla.org/docs/Web/API/DecompressionStream) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/DecompressionStream/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/DecompressionStream>
 **/
 @:native("DecompressionStream") extern class DecompressionStream {
 	/**
+		The **`readable`** read-only property of the `DecompressionStream` interface returns a `ReadableStream` that emits decompressed data as `Uint8Array` chunks.
+		
 		From interface mixin GenericTransformStream
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DecompressionStream/readable>
 	**/
 	var readable(default, null) : ReadableStream;
 	/**
+		The **`writable`** read-only property of the `DecompressionStream` interface returns a `WritableStream` that accepts compressed data to be decompressed, in the form of `ArrayBuffer`, `TypedArray`, or `DataView` chunks.
+		
 		From interface mixin GenericTransformStream
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DecompressionStream/writable>
 	**/
 	var writable(default, null) : WritableStream;
 	/**
+		The **`DecompressionStream()`** constructor creates a new `DecompressionStream` object which decompresses a stream of data.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/DecompressionStream/DecompressionStream>
 	**/
 	function new(format:CompressionFormat):Void;

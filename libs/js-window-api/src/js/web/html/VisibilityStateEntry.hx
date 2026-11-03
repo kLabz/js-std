@@ -25,7 +25,11 @@
 package js.web.html;
 
 /**
+	The **`VisibilityStateEntry`** interface provides timings of page visibility state changes, i.e., when a tab changes from the foreground to the background or vice versa.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [VisibilityStateEntry](https://developer.mozilla.org/docs/Web/API/VisibilityStateEntry) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/VisibilityStateEntry/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/VisibilityStateEntry>
 **/

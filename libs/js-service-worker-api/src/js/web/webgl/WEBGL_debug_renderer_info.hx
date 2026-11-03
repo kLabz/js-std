@@ -25,7 +25,11 @@
 package js.web.webgl;
 
 /**
+	The **`WEBGL_debug_renderer_info`** extension is part of the [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) and exposes two constants with information about the graphics driver for debugging purposes.
+	
 	Unhandled extended attribute LegacyNoInterfaceObject
+	
+	Documentation [WEBGL_debug_renderer_info](https://developer.mozilla.org/docs/Web/API/WEBGL_debug_renderer_info) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/WEBGL_debug_renderer_info/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/WEBGL_debug_renderer_info>
 **/

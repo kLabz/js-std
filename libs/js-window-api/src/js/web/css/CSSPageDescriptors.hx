@@ -25,6 +25,10 @@
 package js.web.css;
 
 /**
+	The **`CSSPageDescriptors`** interface represents a CSS declaration block for an `@page` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+	
+	Documentation [CSSPageDescriptors](https://developer.mozilla.org/docs/Web/API/CSSPageDescriptors) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSPageDescriptors/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSPageDescriptors>
 **/
 @:native("CSSPageDescriptors") extern class CSSPageDescriptors extends CSSStyleDeclaration {

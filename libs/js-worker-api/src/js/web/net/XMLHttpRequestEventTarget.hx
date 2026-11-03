@@ -25,6 +25,10 @@
 package js.web.net;
 
 /**
+	`XMLHttpRequestEventTarget` is the interface that describes the event handlers shared on `XMLHttpRequest` and `XMLHttpRequestUpload`.
+	
+	Documentation [XMLHttpRequestEventTarget](https://developer.mozilla.org/docs/Web/API/XMLHttpRequestEventTarget) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/XMLHttpRequestEventTarget/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequestEventTarget>
 **/
 @:native("XMLHttpRequestEventTarget") extern class XMLHttpRequestEventTarget extends js.web.dom.EventTarget {

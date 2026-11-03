@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`CSSMathInvert`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the inverse (reciprocal) of a `CSSNumericValue`.
+	
+	Documentation [CSSMathInvert](https://developer.mozilla.org/docs/Web/API/CSSMathInvert) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSMathInvert/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSMathInvert>
 **/
 @:native("CSSMathInvert") extern class CSSMathInvert extends CSSMathValue {
 	/**
+		The **`value`** read-only property of the `CSSMathInvert` interface returns the `CSSNumericValue` that is being inverted.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathInvert/value>
 	**/
 	var value(default, null) : CSSNumericValue;
 	/**
+		The **`CSSMathInvert()`** constructor creates a new `CSSMathInvert` object which represents the inverse (reciprocal) of a `CSSNumericValue`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathInvert/CSSMathInvert>
 	**/
 	function new(arg:CSSNumberish):Void;

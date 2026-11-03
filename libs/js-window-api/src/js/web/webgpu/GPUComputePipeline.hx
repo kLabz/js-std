@@ -25,18 +25,26 @@
 package js.web.webgpu;
 
 /**
+	The **`GPUComputePipeline`** interface of the `WebGPU API` represents a pipeline that controls the compute shader stage and can be used in a `GPUComputePassEncoder`.
+	
 	Only available in secure contexts (HTTPS).
+	
+	Documentation [GPUComputePipeline](https://developer.mozilla.org/docs/Web/API/GPUComputePipeline) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/GPUComputePipeline/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/GPUComputePipeline>
 **/
 @:native("GPUComputePipeline") extern class GPUComputePipeline {
 	/**
+		The **`label`** property of the `GPUComputePipeline` interface provides a label that can be used to identify the object, for example in `GPUError` messages or console warnings.
+		
 		From interface mixin GPUObjectBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUComputePipeline/label>
 	**/
 	var label : String;
 	/**
+		The **`getBindGroupLayout()`** method of the `GPUComputePipeline` interface returns the pipeline's `GPUBindGroupLayout` object with the given index (i.e., included in the originating `GPUDevice.createComputePipeline()` or `GPUDevice.createComputePipelineAsync()` call's pipeline layout).
+		
 		From interface mixin GPUPipelineBase
 		
 		@see <https://developer.mozilla.org/docs/Web/API/GPUComputePipeline/getBindGroupLayout>

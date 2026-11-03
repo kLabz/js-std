@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`CSSMathSum`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the sum of two or more `CSSNumericValue` values — in cases where the result can't be represented as a single value.
+	
+	Documentation [CSSMathSum](https://developer.mozilla.org/docs/Web/API/CSSMathSum) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSMathSum/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSMathSum>
 **/
 @:native("CSSMathSum") extern class CSSMathSum extends CSSMathValue {
 	/**
+		The **`values`** read-only property of the `CSSMathSum` interface returns a `CSSNumericArray` containing the `CSSNumericValue` objects being summed together.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathSum/values>
 	**/
 	var values(default, null) : CSSNumericArray;
 	/**
+		The **`CSSMathSum()`** constructor creates a new `CSSMathSum` object representing the sum of the arguments passed into it.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSMathSum/CSSMathSum>
 	**/
 	@:require(js_experimental_api, "CSSMathSum.CSSMathSum is experimental (shipped in fewer than two engines); use -D js-experimental-api")

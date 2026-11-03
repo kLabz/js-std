@@ -25,22 +25,34 @@
 package js.web.css;
 
 /**
+	The **`ViewTimeline`** interface of the `Web Animations API` represents a view progress timeline (see [CSS scroll-driven animations](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scroll-driven_animations) for more details).
+	
+	Documentation [ViewTimeline](https://developer.mozilla.org/docs/Web/API/ViewTimeline) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ViewTimeline/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ViewTimeline>
 **/
 @:native("ViewTimeline") extern class ViewTimeline extends ScrollTimeline {
 	/**
+		The **`subject`** read-only property of the `ViewTimeline` interface returns a reference to the subject element whose visibility within its nearest ancestor scrollable element (scroller) is driving the progress of the timeline.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ViewTimeline/subject>
 	**/
 	var subject(default, null) : js.web.dom.Element;
 	/**
+		The **`startOffset`** read-only property of the `ViewTimeline` interface returns a `CSSNumericValue` representing the starting (0% progress) scroll position of the timeline as an offset from the start of the overflowing section of content in the scroller.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ViewTimeline/startOffset>
 	**/
 	var startOffset(default, null) : CSSNumericValue;
 	/**
+		The **`endOffset`** read-only property of the `ViewTimeline` interface returns a `CSSNumericValue` representing the ending (100% progress) scroll position of the timeline as an offset from the start of the overflowing section of content in the scroller.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ViewTimeline/endOffset>
 	**/
 	var endOffset(default, null) : CSSNumericValue;
 	/**
+		The **`ViewTimeline()`** constructor creates a new `ViewTimeline` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ViewTimeline/ViewTimeline>
 	**/
 	function new(options:ViewTimelineOptions):Void;

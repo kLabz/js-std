@@ -25,26 +25,40 @@
 package js.web.css;
 
 /**
+	The **`CSSRotate`** interface of the [CSS Typed Object Model API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) represents the value of a rotation function in the `transform` property in CSS.
+	
+	Documentation [CSSRotate](https://developer.mozilla.org/docs/Web/API/CSSRotate) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSRotate/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSRotate>
 **/
 @:native("CSSRotate") extern class CSSRotate extends CSSTransformComponent {
 	/**
+		The **`x`** property of the `CSSRotate` interface represents the x-coordinate of the vector denoting the axis of rotation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSRotate/x>
 	**/
 	var x : CSSNumberish;
 	/**
+		The **`y`** property of the `CSSRotate` interface represents the y-coordinate of the vector denoting the axis of rotation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSRotate/y>
 	**/
 	var y : CSSNumberish;
 	/**
+		The **`z`** property of the `CSSRotate` interface represents the z-coordinate of the vector denoting the axis of rotation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSRotate/z>
 	**/
 	var z : CSSNumberish;
 	/**
+		The **`angle`** property of the `CSSRotate` interface represents the angle of rotation. A positive angle denotes a clockwise rotation, a negative angle a counter-clockwise one.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSRotate/angle>
 	**/
 	var angle : CSSNumericValue;
 	/**
+		The **`CSSRotate()`** constructor creates a new `CSSRotate` object representing the `rotate()` value of the individual `transform` property in CSS.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSRotate/CSSRotate>
 	**/
 	@:overload(function(x:CSSNumberish, y:CSSNumberish, z:CSSNumberish, angle:CSSNumericValue):Void { })

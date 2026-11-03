@@ -25,10 +25,16 @@
 package js.web.svg;
 
 /**
+	The **`SVGAnimationElement`** interface is the base interface for all of the animation element interfaces: `SVGAnimateElement`, `SVGSetElement`, `SVGAnimateColorElement`, `SVGAnimateMotionElement` and `SVGAnimateTransformElement`.
+	
+	Documentation [SVGAnimationElement](https://developer.mozilla.org/docs/Web/API/SVGAnimationElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement>
 **/
 @:native("SVGAnimationElement") extern class SVGAnimationElement extends SVGElement {
 	/**
+		The **`targetElement`** read-only property of the `SVGAnimationElement` interface refers to the element which is being animated. If no target element is being animated (for example, because the `href` attribute specifies an unknown element), the value returned is `null`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/targetElement>
 	**/
 	var targetElement(default, null) : Null<SVGElement>;
@@ -36,42 +42,60 @@ package js.web.svg;
 	var onend : js.web.html.EventHandler;
 	var onrepeat : js.web.html.EventHandler;
 	/**
+		The **`requiredExtensions`** read-only property of the `SVGAnimationElement` interface reflects the `requiredExtensions` attribute of the given element.
+		
 		From interface mixin SVGTests
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/requiredExtensions>
 	**/
 	var requiredExtensions(default, null) : SVGStringList;
 	/**
+		The **`systemLanguage`** read-only property of the `SVGAnimationElement` interface reflects the `systemLanguage` attribute of the given element.
+		
 		From interface mixin SVGTests
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/systemLanguage>
 	**/
 	var systemLanguage(default, null) : SVGStringList;
 	/**
+		The `SVGAnimationElement` method `beginElement()` creates a begin instance time for the current time. The new instance time is added to the begin instance times list. The behavior of this method is equivalent to `beginElementAt(0)`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/beginElement>
 	**/
 	function beginElement():Void;
 	/**
+		The `SVGAnimationElement` method `beginElementAt()` creates a begin instance time for the current time plus the specified offset. The new instance time is added to the begin instance times list.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/beginElementAt>
 	**/
 	function beginElementAt(offset:Float):Void;
 	/**
+		The `SVGAnimationElement` method `endElement()` creates an end instance time for the current time. The new instance time is added to the end instance times list. The behavior of this method is equivalent to `endElementAt(0)`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/endElement>
 	**/
 	function endElement():Void;
 	/**
+		The `SVGAnimationElement` method `endElementAt()` creates an end instance time for the current time plus the specified offset. The new instance time is added to the end instance times list.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/endElementAt>
 	**/
 	function endElementAt(offset:Float):Void;
 	/**
+		The `SVGAnimationElement` method `getCurrentTime()` returns a float representing the current time in seconds relative to time zero for the given time container.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/getCurrentTime>
 	**/
 	function getCurrentTime():Float;
 	/**
+		The `SVGAnimationElement` method `getSimpleDuration()` returns a float representing the number of seconds for the simple duration for this animation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/getSimpleDuration>
 	**/
 	function getSimpleDuration():Float;
 	/**
+		The `SVGAnimationElement` method `getStartTime()` returns a float representing the start time, in seconds, for this animation element's current interval, if it exists, regardless of whether the interval has begun yet.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/getStartTime>
 	**/
 	function getStartTime():Float;

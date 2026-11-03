@@ -25,10 +25,16 @@
 package js.web.canvas;
 
 /**
+	The **`CanvasGradient`** interface represents an [opaque object](https://en.wikipedia.org/wiki/Opaque_data_type) describing a gradient. It is returned by the methods `CanvasRenderingContext2D.createLinearGradient()`, `CanvasRenderingContext2D.createConicGradient()` or `CanvasRenderingContext2D.createRadialGradient()`.
+	
+	Documentation [CanvasGradient](https://developer.mozilla.org/docs/Web/API/CanvasGradient) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CanvasGradient/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CanvasGradient>
 **/
 @:native("CanvasGradient") extern class CanvasGradient {
 	/**
+		The **`CanvasGradient.addColorStop()`** method adds a new color stop, defined by an `offset` and a `color`, to a given canvas gradient.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CanvasGradient/addColorStop>
 	**/
 	function addColorStop(offset:Float, color:String):Void;

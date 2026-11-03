@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	A `CSSRuleList` represents an ordered collection of read-only `CSSRule` objects.
+	
+	Documentation [CSSRuleList](https://developer.mozilla.org/docs/Web/API/CSSRuleList) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSRuleList/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSRuleList>
 **/
 @:native("CSSRuleList") extern class CSSRuleList implements ArrayAccess<Null<CSSRule>> {
 	/**
+		The **`length`** property of the `CSSRuleList` interface returns the number of `CSSRule` objects in the list.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSRuleList/length>
 	**/
 	var length(default, null) : Int;
 	/**
+		The **`item()`** method of the `CSSRuleList` interface returns the `CSSRule` object at the specified `index` or `null` if the specified `index` doesn't exist.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSRuleList/item>
 	**/
 	function item(index:Int):Null<CSSRule>;

@@ -25,14 +25,22 @@
 package js.web.dom;
 
 /**
+	The **`FocusEvent`** interface represents focus-related events, including `focus`, `blur`, `focusin`, and `focusout`.
+	
+	Documentation [FocusEvent](https://developer.mozilla.org/docs/Web/API/FocusEvent) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/FocusEvent/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/FocusEvent>
 **/
 @:native("FocusEvent") extern class FocusEvent extends UIEvent {
 	/**
+		The **`relatedTarget`** read-only property of the `FocusEvent` interface is the secondary target, depending on the type of event:
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FocusEvent/relatedTarget>
 	**/
 	var relatedTarget(default, null) : Null<EventTarget>;
 	/**
+		The **`FocusEvent()`** constructor returns a newly created `FocusEvent` object with an optional `EventTarget`. When the event has both a source and a destination, the `relatedTarget` value must be set to the other target.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FocusEvent/FocusEvent>
 	**/
 	function new(type:String, ?eventInitDict:FocusEventInit):Void;

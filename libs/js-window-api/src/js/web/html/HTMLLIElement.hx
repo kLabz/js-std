@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`HTMLLIElement`** interface exposes specific properties and methods (beyond those defined by regular `HTMLElement` interface it also has available to it by inheritance) for manipulating list elements.
+	
+	Documentation [HTMLLIElement](https://developer.mozilla.org/docs/Web/API/HTMLLIElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLLIElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLLIElement>
 **/
 @:native("HTMLLIElement") extern class HTMLLIElement extends HTMLElement {
 	/**
+		The **`value`** property of the `HTMLLIElement` interface indicates the ordinal position of the _list element_ inside a given `<ol>`. It can be smaller than `0`. If the `<li>` element is not a child of an `<ol>` element, the property has no meaning.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLLIElement/value>
 	**/
 	var value : Int;

@@ -25,18 +25,28 @@
 package js.web.css;
 
 /**
+	The **`ScrollTimeline`** interface of the `Web Animations API` represents a scroll progress timeline (see [CSS scroll-driven animations](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scroll-driven_animations) for more details).
+	
+	Documentation [ScrollTimeline](https://developer.mozilla.org/docs/Web/API/ScrollTimeline) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ScrollTimeline/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ScrollTimeline>
 **/
 @:native("ScrollTimeline") extern class ScrollTimeline extends AnimationTimeline {
 	/**
+		The **`source`** read-only property of the `ScrollTimeline` interface returns a reference to the scrollable element (_scroller_) whose scroll position is driving the progress of the timeline and therefore the animation.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ScrollTimeline/source>
 	**/
 	var source(default, null) : Null<js.web.dom.Element>;
 	/**
+		The **`axis`** read-only property of the `ScrollTimeline` interface returns an enumerated value representing the scroll axis that is driving the progress of the timeline.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ScrollTimeline/axis>
 	**/
 	var axis(default, null) : ScrollAxis;
 	/**
+		The **`ScrollTimeline()`** constructor creates a new `ScrollTimeline` object instance.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ScrollTimeline/ScrollTimeline>
 	**/
 	function new(?options:ScrollTimelineOptions):Void;

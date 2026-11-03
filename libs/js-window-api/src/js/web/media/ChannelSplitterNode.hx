@@ -25,10 +25,16 @@
 package js.web.media;
 
 /**
+	The `ChannelSplitterNode` interface, often used in conjunction with its opposite, `ChannelMergerNode`, separates the different channels of an audio source into a set of mono outputs. This is useful for accessing each channel separately, e.g., for performing channel mixing where gain must be separately controlled on each channel.
+	
+	Documentation [ChannelSplitterNode](https://developer.mozilla.org/docs/Web/API/ChannelSplitterNode) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ChannelSplitterNode/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/ChannelSplitterNode>
 **/
 @:native("ChannelSplitterNode") extern class ChannelSplitterNode extends AudioNode {
 	/**
+		The **`ChannelSplitterNode()`** constructor of the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) creates a new `ChannelSplitterNode` object instance, representing a node that splits the input into a separate output for each of the source node's audio channels.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ChannelSplitterNode/ChannelSplitterNode>
 	**/
 	function new(context:BaseAudioContext, ?options:ChannelSplitterOptions):Void;

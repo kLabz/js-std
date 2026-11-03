@@ -25,6 +25,10 @@
 package js.web.svg;
 
 /**
+	The **`SVGUnitTypes`** interface defines a commonly used set of constants used for reflecting `gradientUnits`, `patternContentUnits` and other similar attributes.
+	
+	Documentation [SVGUnitTypes](https://developer.mozilla.org/docs/Web/API/SVGUnitTypes) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGUnitTypes/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGUnitTypes>
 **/
 @:native("SVGUnitTypes") extern class SVGUnitTypes {

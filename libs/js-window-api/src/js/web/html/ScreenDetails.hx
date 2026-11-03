@@ -25,18 +25,26 @@
 package js.web.html;
 
 /**
+	The **`ScreenDetails`** interface of the [Window Management API](https://developer.mozilla.org/en-US/docs/Web/API/Window_Management_API) represents the details of all the screens available to the user's device.
+	
 	Only available in secure contexts (HTTPS).
 	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [ScreenDetails](https://developer.mozilla.org/docs/Web/API/ScreenDetails) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/ScreenDetails/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/ScreenDetails>
 **/
 @:native("ScreenDetails") @:require(js_experimental_api, "ScreenDetails is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ScreenDetails extends js.web.dom.EventTarget {
 	/**
+		The **`screens`** read-only property of the `ScreenDetails` interface contains an array of `ScreenDetailed` objects, each one representing detailed information about one specific screen available to the user's device.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ScreenDetails/screens>
 	**/
 	var screens(default, null) : Array<ScreenDetailed>;
 	/**
+		The **`currentScreen`** read-only property of the `ScreenDetails` interface contains a single `ScreenDetailed` object representing detailed information about the screen that the current browser window is displayed in.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/ScreenDetails/currentScreen>
 	**/
 	var currentScreen(default, null) : ScreenDetailed;

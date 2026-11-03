@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`CSSViewTransitionRule`** interface represents a CSS `@view-transition` [at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules).
+	
+	Documentation [CSSViewTransitionRule](https://developer.mozilla.org/docs/Web/API/CSSViewTransitionRule) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/CSSViewTransitionRule/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/CSSViewTransitionRule>
 **/
 @:native("CSSViewTransitionRule") extern class CSSViewTransitionRule extends CSSRule {
 	/**
+		The **`navigation`** read-only property of the `CSSViewTransitionRule` interface returns the associated `@view-transition` at-rule's `navigation` descriptor value.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSViewTransitionRule/navigation>
 	**/
 	var navigation(default, null) : String;
 	/**
+		The **`types`** read-only property of the `CSSViewTransitionRule` interface returns an array containing the associated `@view-transition` at-rule's `types` descriptor values.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSViewTransitionRule/types>
 	**/
 	var types(default, null) : Array<String>;

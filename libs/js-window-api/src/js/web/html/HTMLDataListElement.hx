@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`HTMLDataListElement`** interface provides special properties (beyond the `HTMLElement` object interface it also has available to it by inheritance) to manipulate `<datalist>` elements and their content.
+	
+	Documentation [HTMLDataListElement](https://developer.mozilla.org/docs/Web/API/HTMLDataListElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLDataListElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLDataListElement>
 **/
 @:native("HTMLDataListElement") extern class HTMLDataListElement extends HTMLElement {
 	/**
+		The **`options`** read-only property of the `HTMLDataListElement` interface returns an `HTMLCollection` of `HTMLOptionElement` elements contained in a `<datalist>`. The descendant `<option>` elements provide predefined options for the `<input>` control associated with the `<datalist>`.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLDataListElement/options>
 	**/
 	var options(default, null) : js.web.dom.HTMLCollection;

@@ -25,6 +25,10 @@
 package js.web.perf;
 
 /**
+	The **`EventCounts`** interface of the [Performance API](https://developer.mozilla.org/en-US/docs/Web/API/Performance_API) provides the number of events that have been dispatched for each event type.
+	
+	Documentation [EventCounts](https://developer.mozilla.org/docs/Web/API/EventCounts) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/EventCounts/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/EventCounts>
 **/
 @:native("EventCounts") extern class EventCounts {

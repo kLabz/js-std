@@ -25,14 +25,22 @@
 package js.web.css;
 
 /**
+	The **`SVGClipPathElement`** interface provides access to the properties of `<clipPath>` elements, as well as methods to manipulate them.
+	
+	Documentation [SVGClipPathElement](https://developer.mozilla.org/docs/Web/API/SVGClipPathElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/SVGClipPathElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/SVGClipPathElement>
 **/
 @:native("SVGClipPathElement") extern class SVGClipPathElement extends js.web.svg.SVGElement {
 	/**
+		The read-only **`clipPathUnits`** property of the `SVGClipPathElement` interface reflects the `clipPathUnits` attribute of a `<clipPath>` element which defines the coordinate system to use for the content of the element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGClipPathElement/clipPathUnits>
 	**/
 	var clipPathUnits(default, null) : js.web.svg.SVGAnimatedEnumeration;
 	/**
+		The read-only **`transform`** property of the `SVGClipPathElement` interface reflects the `transform` attribute of a `<clipPath>` element, that is a list of transformations applied to the element.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGClipPathElement/transform>
 	**/
 	var transform(default, null) : js.web.svg.SVGAnimatedTransformList;

@@ -25,31 +25,47 @@
 package js.web.perf;
 
 /**
+	The `PerformanceEventTiming` interface of the Event Timing API provides insights into the latency of certain event types triggered by user interaction.
+	
+	Documentation [PerformanceEventTiming](https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming>
 **/
 @:native("PerformanceEventTiming") extern class PerformanceEventTiming extends PerformanceEntry {
 	/**
+		The read-only **`processingStart`** property returns the time at which event dispatch started. This is when event handlers are about to be executed.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/processingStart>
 	**/
 	var processingStart(default, null) : DOMHighResTimeStamp;
 	/**
+		The read-only **`processingEnd`** property returns the time the last event handler finished executing.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/processingEnd>
 	**/
 	var processingEnd(default, null) : DOMHighResTimeStamp;
 	/**
+		The read-only **`cancelable`** property returns the associated event's [`cancelable`](https://developer.mozilla.org/en-US/docs/Web/API/Event/cancelable) property, indicating whether the event can be canceled.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/cancelable>
 	**/
 	var cancelable(default, null) : Bool;
 	/**
+		The read-only **`target`** property returns the associated event's last [`target`](https://developer.mozilla.org/en-US/docs/Web/API/Event/target) which is the node onto which the event was last dispatched.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/target>
 	**/
 	var target(default, null) : Null<js.web.dom.Node>;
 	var targetSelector(default, null) : String;
 	/**
+		The read-only **`interactionId`** property of the `PerformanceEventTiming` interface returns an ID that uniquely identifies a user interaction which triggered a series of associated events.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/interactionId>
 	**/
 	var interactionId(default, null) : Float;
 	/**
+		The **`toJSON()`** method of the `PerformanceEventTiming` interface returns a JSON-serializable plain object representing the `PerformanceEventTiming` object.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/toJSON>
 	**/
 	function toJSON():{ };

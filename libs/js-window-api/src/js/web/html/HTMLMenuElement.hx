@@ -25,10 +25,16 @@
 package js.web.html;
 
 /**
+	The **`HTMLMenuElement`** interface provides additional properties (beyond those inherited from the `HTMLElement` interface) for manipulating a `<menu>` element. `<menu>` is a semantic alternative to the `<ul>` element.
+	
+	Documentation [HTMLMenuElement](https://developer.mozilla.org/docs/Web/API/HTMLMenuElement) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/HTMLMenuElement/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
+	
 	@see <https://developer.mozilla.org/docs/Web/API/HTMLMenuElement>
 **/
 @:native("HTMLMenuElement") extern class HTMLMenuElement extends HTMLElement {
 	/**
+		The **`compact`** property of the `HTMLMenuElement` interface indicates that spacing between list items should be reduced. The exact handling of the `compact` attribute is browser-specific. Instead of using this property, consider using CSS `line-height` instead.
+		
 		From partial interface in html.idl
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLMenuElement/compact>

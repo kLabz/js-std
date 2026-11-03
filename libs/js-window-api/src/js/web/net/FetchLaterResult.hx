@@ -25,12 +25,18 @@
 package js.web.net;
 
 /**
+	The **`FetchLaterResult`** interface of the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) is returned by the `Window.fetchLater()` method after a deferred fetch has been created.
+	
 	Experimental: requires `-D js-experimental-api`.
+	
+	Documentation [FetchLaterResult](https://developer.mozilla.org/docs/Web/API/FetchLaterResult) by [Mozilla Contributors](https://developer.mozilla.org/docs/Web/API/FetchLaterResult/contributors.txt), licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
 	
 	@see <https://developer.mozilla.org/docs/Web/API/FetchLaterResult>
 **/
 @:native("FetchLaterResult") @:require(js_experimental_api, "FetchLaterResult is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class FetchLaterResult {
 	/**
+		The **`activated`** read-only property of the `FetchLaterResult` interface returns a boolean specifying whether the deferred fetch has been sent.
+		
 		@see <https://developer.mozilla.org/docs/Web/API/FetchLaterResult/activated>
 	**/
 	var activated(default, null) : Bool;

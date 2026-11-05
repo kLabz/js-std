@@ -24,4 +24,21 @@
 
 package js.web.dom;
 
-typedef NodeFilter = haxe.extern.EitherType<(node:Node) -> Int, { function acceptNode(node:Node):Int; }>;
+abstract NodeFilter(haxe.extern.EitherType<(node:Node) -> Int, { function acceptNode(node:Node):Int; }>) from (node:Node) -> Int from { function acceptNode(node:Node):Int; } {
+	public static inline var FILTER_ACCEPT : Int = 1;
+	public static inline var FILTER_REJECT : Int = 2;
+	public static inline var FILTER_SKIP : Int = 3;
+	public static inline var SHOW_ALL : Int = 0xFFFFFFFF;
+	public static inline var SHOW_ELEMENT : Int = 0x1;
+	public static inline var SHOW_ATTRIBUTE : Int = 0x2;
+	public static inline var SHOW_TEXT : Int = 0x4;
+	public static inline var SHOW_CDATA_SECTION : Int = 0x8;
+	public static inline var SHOW_ENTITY_REFERENCE : Int = 0x10;
+	public static inline var SHOW_ENTITY : Int = 0x20;
+	public static inline var SHOW_PROCESSING_INSTRUCTION : Int = 0x40;
+	public static inline var SHOW_COMMENT : Int = 0x80;
+	public static inline var SHOW_DOCUMENT : Int = 0x100;
+	public static inline var SHOW_DOCUMENT_TYPE : Int = 0x200;
+	public static inline var SHOW_DOCUMENT_FRAGMENT : Int = 0x400;
+	public static inline var SHOW_NOTATION : Int = 0x800;
+}

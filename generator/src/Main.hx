@@ -603,37 +603,19 @@ class Main {
 							};
 						});
 
-						// - Generate constants in `@:native(TypeName) extern class TypeNameConstants {}`
-						if (constants.length > 0) {
-							var ctx = initCtx(file, t.name, scope);
-							var td:TypeDefinition = {
-								pack: pack,
-								name: '${t.name}Constants',
-								doc: null,
-								pos: ctx.pos,
-								isExtern: true,
-								kind: TDClass(),
-								meta: [{
-									name: ":native",
-									params: [{pos: ctx.pos, expr: EConst(CString(t.name))}],
-									pos: ctx.pos
-								}],
-								fields: constants.map(function _(m:ConstantMemberType):Field {
-									var meta = [];
-									var ct = convertType(ctx, m.idlType);
-									return {
-										name: sanitizeIdentifier(m.name, meta, ctx.pos),
-										doc: addUnhandledAttributesToDoc(null, m.extAttrs),
-										access: [AStatic, AInline],
-										kind: FVar(ct, convertValue(m.value, ct, false, ctx.pos)),
-										pos: ctx.pos,
-										meta: meta
-									};
-								})
+						var constantCtx = initCtx(file, t.name, scope);
+						var constantFields = constants.map(function _(m:ConstantMemberType):Field {
+							var meta = [];
+							var ct = convertType(constantCtx, m.idlType);
+							return {
+								name: sanitizeIdentifier(m.name, meta, constantCtx.pos),
+								doc: addUnhandledAttributesToDoc(null, m.extAttrs),
+								access: [APublic, AStatic, AInline],
+								kind: FVar(ct, convertValue(m.value, ct, false, constantCtx.pos)),
+								pos: constantCtx.pos,
+								meta: meta
 							};
-							Sys.println(' > Exported constants class ${pack.concat([td.name]).join(".")}');
-							save(ctx, td.name, td);
-						}
+						});
 
 						var ctx = initClassCtx(file, t.name, scope, t.members.filter(function _<T:AbstractBase<T>>(m:T):Bool {
 							return switch (m.type) {
@@ -657,18 +639,25 @@ class Main {
 								TAnonymous(fields);
 						};
 
+						// Constants (`NodeFilter.SHOW_ELEMENT`) need an abstract; they are inlined, so nothing exists at runtime
+						var kind:haxe.macro.Expr.TypeDefKind = if (constantFields.length == 0) TDAlias(ct) else switch (ct) {
+							case TPath({params: [TPType(callback), TPType(struct)]}):
+								TDAbstract(ct, [AbFrom(callback), AbFrom(struct)]);
+							case _:
+								TDAbstract(ct, [AbFrom(ct)]);
+						};
 						var td:TypeDefinition = {
 							pack: pack,
 							name: t.name,
 							doc: addUnhandledAttributesToDoc(null, t.extAttrs),
 							pos: ctx.pos,
 							isExtern: null,
-							kind: TDAlias(ct),
-							fields: []
+							kind: kind,
+							fields: constantFields
 						};
 
 						assertEmptyAttributes(t.extAttrs);
-						Sys.println(' > Exported typedef ${pack.concat([t.name]).join(".")}');
+						Sys.println(' > Exported ${constantFields.length == 0 ? "typedef" : "abstract"} ${pack.concat([t.name]).join(".")}');
 						save(ctx, t.name, td);
 					});
 

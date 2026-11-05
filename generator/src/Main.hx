@@ -452,6 +452,7 @@ class Main {
 		for (task in pendingSaves) if (["Document", "Element", "DocumentFragment", "CustomElementRegistry"].contains(task.t)) {
 			Elements.addOverloads(task.td, Elements.HTML, resolve);
 			Elements.addOverloads(task.td, Elements.SVG, resolve);
+			Elements.addGenericLookups(task.td, resolve);
 		}
 
 		var typeMeta = t -> pendingSaves.find(task -> task.t == t)?.td.meta;

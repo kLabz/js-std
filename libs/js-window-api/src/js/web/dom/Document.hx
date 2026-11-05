@@ -1228,7 +1228,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/getElementById>
 	**/
+	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	function getElementById<E:(js.web.dom.Element)=js.web.dom.Element>(elementId:String):Null<E>;
+	#else
 	function getElementById(elementId:String):Null<Element>;
+	#end
 	/**
 		The **`getElementsByClassName`** method of `Document` interface returns an array-like object of all child elements which have all of the given class name(s).
 		
@@ -1440,7 +1444,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/querySelector>
 	**/
+	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	overload function querySelector<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):Null<E>;
+	#else
 	overload function querySelector(selectors:String):Null<Element>;
+	#end
 	/**
 		The `Document` method **`querySelectorAll()`** returns a static (not live) `NodeList` representing a list of the document's elements that match the specified group of selectors.
 		
@@ -1464,7 +1472,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll>
 	**/
+	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	overload function querySelectorAll<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):js.web.dom.NodeListOf<E>;
+	#else
 	overload function querySelectorAll(selectors:String):NodeList;
+	#end
 	/**
 		From partial interface in html.idl
 	**/

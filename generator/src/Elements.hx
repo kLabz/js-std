@@ -163,6 +163,36 @@ class Elements {
 		for (f in added) td.fields.insert(td.fields.indexOf(td.fields.find(o -> o.name == f.name)), f);
 	}
 
+	/**
+		Makes the `String` variants of `getElementById`, `querySelector`, `querySelectorAll` and `closest`
+		generic like TypeScript's (`document.querySelector.<HTMLInputElement>("#name")`), on compilers
+		with explicit call type arguments and method default type parameters.
+	**/
+	public static function addGenericLookups(td:TypeDefinition, resolve:String->Null<Array<String>>):Void {
+		var element = typePath("Element", resolve);
+		var e = macro :E;
+		for (f in td.fields.copy()) switch [f.name, f.kind] {
+			case ["getElementById" | "querySelector" | "querySelectorAll" | "closest", FFun(fn)] if (fn.params == null || fn.params.length == 0):
+				var generic:Field = {
+					name: f.name,
+					doc: f.doc,
+					meta: (f.meta ?? []).concat([{name: Events.GENERIC_LOOKUPS_META, pos: f.pos}]),
+					access: f.access?.copy(),
+					kind: FFun({
+						args: fn.args,
+						ret: f.name == "querySelectorAll" ? macro :js.web.dom.NodeListOf<$e> : macro :Null<$e>,
+						params: [{name: "E", constraints: [element], defaultType: element}],
+						expr: null
+					}),
+					pos: f.pos
+				};
+				f.meta = (f.meta ?? []).concat([{name: Events.NO_GENERIC_LOOKUPS_META, pos: f.pos}]);
+				f.doc = null;
+				td.fields.insert(td.fields.indexOf(f), generic);
+			case _:
+		}
+	}
+
 	static function typePath(name:String, resolve:String->Null<Array<String>>):ComplexType {
 		return TPath({pack: resolve(name), name: name});
 	}

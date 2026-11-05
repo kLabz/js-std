@@ -85,7 +85,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/getElementById>
 	**/
+	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	function getElementById<E:(js.web.dom.Element)=js.web.dom.Element>(elementId:String):Null<E>;
+	#else
 	function getElementById(elementId:String):Null<Element>;
+	#end
 	/**
 		The **`moveBefore()`** method of the `DocumentFragment` interface moves a given `Node` inside the invoking `DocumentFragment` as a direct child, before a given reference node.
 		
@@ -125,7 +129,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/querySelector>
 	**/
+	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	overload function querySelector<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):Null<E>;
+	#else
 	overload function querySelector(selectors:String):Null<Element>;
+	#end
 	/**
 		The **`DocumentFragment.querySelectorAll()`** method returns a `NodeList` of elements within the `DocumentFragment` (using depth-first pre-order traversal of the document's nodes) that matches the specified group of selectors.
 		
@@ -149,7 +157,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/querySelectorAll>
 	**/
+	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	overload function querySelectorAll<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):js.web.dom.NodeListOf<E>;
+	#else
 	overload function querySelectorAll(selectors:String):NodeList;
+	#end
 	/**
 		The **`DocumentFragment.replaceChildren()`** method replaces the existing children of a `DocumentFragment` with a specified new set of children. These can be string or `Node` objects.
 		

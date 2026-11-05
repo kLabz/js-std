@@ -301,6 +301,7 @@ class Printer {
 			case ECheckType(e1, ct): '(${printExpr(e1)} : ${printComplexType(ct)})';
 			case EMeta({name: ":implicitReturn"}, {expr: EReturn(e1)}): printExpr(e1);
 			case EMeta(meta, e1): printMetadata(meta) + " " + printExpr(e1);
+			case _: '#UNSUPPORTED ${e.expr.getName()}';
 		}
 
 	public function printExprs(el:Array<Expr>, sep:String) {
@@ -585,6 +586,8 @@ class Printer {
 				case EMeta(s, e):
 					add("EMeta " + printMetadata(s));
 					loopI(e);
+				case _:
+					add(e.expr.getName());
 			}
 		}
 		loop("", e);

@@ -206,7 +206,15 @@ class Events {
 
 	public static inline var STRICT_EVENTS_META = ":jsStrictEvents";
 	public static inline var HTML_COMPAT_META = ":jsHtmlCompat";
-	static final conditions = [STRICT_EVENTS_META => "!js_strict_events", HTML_COMPAT_META => "js_html_compat"];
+	public static inline var GENERIC_LOOKUPS_META = ":jsGenericLookups";
+	public static inline var NO_GENERIC_LOOKUPS_META = ":jsNoGenericLookups";
+	static inline var GENERIC_LOOKUPS = '(haxe >= version("5.0.0-preview.2") || js_generic_lookups)';
+	static final conditions = [
+		STRICT_EVENTS_META => "!js_strict_events",
+		HTML_COMPAT_META => "js_html_compat",
+		GENERIC_LOOKUPS_META => GENERIC_LOOKUPS,
+		NO_GENERIC_LOOKUPS_META => '!$GENERIC_LOOKUPS'
+	];
 
 	/**
 		Splits `EventTarget`'s `String` overloads into a generic one, accepting listeners of any event
@@ -258,7 +266,7 @@ class Events {
 			i++;
 		}
 		// Consecutive blocks with the same condition
-		var printed = lines.join("\n");
+		var printed = lines.join("\n").replace('\t#end\n\t#if !$GENERIC_LOOKUPS\n', "\t#else\n");
 		for (condition in conditions) printed = printed.replace('\t#end\n\t#if $condition\n', "");
 		return printed;
 	}

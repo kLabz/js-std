@@ -797,7 +797,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/closest>
 	**/
+	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	overload function closest<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):Null<E>;
+	#else
 	overload function closest(selectors:String):Null<Element>;
+	#end
 	/**
 		The **`computedStyleMap()`** method of the `Element` interface returns a `StylePropertyMapReadOnly` interface which provides a read-only representation of a CSS declaration block that is an alternative to `CSSStyleDeclaration`.
 		
@@ -1037,7 +1041,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/querySelector>
 	**/
+	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	overload function querySelector<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):Null<E>;
+	#else
 	overload function querySelector(selectors:String):Null<Element>;
+	#end
 	/**
 		The `Element` method **`querySelectorAll()`** returns a static (not live) `NodeList` representing a list of elements matching the specified group of selectors which are descendants of the element on which the method was called.
 		
@@ -1061,7 +1069,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/querySelectorAll>
 	**/
+	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	overload function querySelectorAll<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):js.web.dom.NodeListOf<E>;
+	#else
 	overload function querySelectorAll(selectors:String):NodeList;
+	#end
 	/**
 		The **`releasePointerCapture()`** method of the `Element` interface releases (stops) [_pointer capture_](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events#pointer_capture) that was previously set for a specific (`PointerEvent`) _pointer_.
 		

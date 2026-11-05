@@ -28,9 +28,11 @@ class Css {
 				if (!~/^[a-z][A-Za-z0-9]*$/.match(name) || existing.exists(name)) continue;
 				existing.set(name, true);
 
+				// Like CSSOM's `cssFloat`
 				var meta = [];
+				var fieldName = Main.sanitizeIdentifier(name, meta, td.pos) == name ? name : "css" + name.charAt(0).toUpperCase() + name.substr(1);
 				var field:Field = {
-					name: Main.sanitizeIdentifier(name, meta, td.pos),
+					name: fieldName,
 					meta: meta,
 					kind: FVar(macro :String),
 					pos: td.pos

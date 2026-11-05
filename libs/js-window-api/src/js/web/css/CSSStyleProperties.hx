@@ -1708,8 +1708,8 @@ package js.web.css;
 	**/
 	var contentVisibility : String;
 	@:native("continue")
-	@:require(js_experimental_api, "CSSStyleProperties.continue_ is experimental (shipped in fewer than two engines); use -D js-experimental-api")
-	var continue_ : String;
+	@:require(js_experimental_api, "CSSStyleProperties.cssContinue is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	var cssContinue : String;
 	/**
 		The `copy-into` CSS property.
 	**/

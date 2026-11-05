@@ -20,14 +20,14 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from @webref/idl/html.idl. Do not edit!
+// This file is generated from @webref/idl/dom.idl. Do not edit!
 
 package js.web.html;
 
 /**
-	HTML tag names, typed with the interface of their element: `document.createElement(DIV)` is a `HTMLDivElement`.
+	Tag names typed with the interface of their element: `document.createElement(DIV)` is a `HTMLDivElement`.
 	
-	Generated from `@webref/elements`. Other tag names (custom elements) can be cast: `(cast "my-widget" : HTMLElementTagName<MyWidget>)`.
+	Generated from `@webref/elements`. Other tag names can be typed with `of`, or cast.
 **/
 extern enum abstract HTMLElementTagName<T:(js.web.dom.Element)>(String) {
 	/**
@@ -709,7 +709,7 @@ extern enum abstract HTMLElementTagName<T:(js.web.dom.Element)>(String) {
 	**/
 	var CANVAS : js.web.html.HTMLElementTagName<HTMLCanvasElement> = "canvas";
 	/**
-		A custom element's tag name: `HTMLElementTagName.of(MyWidget, "my-widget")` is a `HTMLElementTagName<MyWidget>`. `type` is only used for typing.
+		A custom tag name: `HTMLElementTagName.of(MyWidget, "my-widget")` is a `HTMLElementTagName<MyWidget>`. `type` is only used for typing.
 	**/
 	public static extern inline function of<T:(js.web.dom.Element)>(type:Class<T>, name:String):js.web.html.HTMLElementTagName<T> return cast name;
 	public inline function toString():String return this;

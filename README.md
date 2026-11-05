@@ -58,7 +58,9 @@ Each type's documentation names the spec it comes from.
 
 ## Typed tag names
 
-`js.web.html.HTMLElementTagName<T>` lists HTML tag names typed with their element interface (from [`@webref/elements`](https://github.com/w3c/webref/tree/main/packages/elements)). `createElement`, `querySelector`, `querySelectorAll`, `getElementsByTagName` and `closest` accept it: `document.createElement(DIV)` is a `HTMLDivElement`, `document.querySelector(INPUT)` a `Null<HTMLInputElement>`, `document.querySelectorAll(INPUT)` a `NodeListOf<HTMLInputElement>`. It only exists at compile time: the generated code passes the string. Strings still work and give `Element`. For custom elements, `HTMLElementTagName.of` types a tag name with its class, and `customElements.define` checks they match:
+`js.web.html.HTMLElementTagName<T>` lists HTML tag names typed with their element interface (from [`@webref/elements`](https://github.com/w3c/webref/tree/main/packages/elements)). `createElement`, `querySelector`, `querySelectorAll`, `getElementsByTagName` and `closest` accept it: `document.createElement(DIV)` is a `HTMLDivElement`, `document.querySelector(INPUT)` a `Null<HTMLInputElement>`, `document.querySelectorAll(INPUT)` a `NodeListOf<HTMLInputElement>`. It only exists at compile time: the generated code passes the string.
+
+`js.web.svg.SVGElementTagName<T>` does the same for SVG, with `createElementNS`: `document.createElementNS(SVG_NAMESPACE, CIRCLE)` is a `SVGCircleElement`. Mixed-case tags are in upper snake case (`LINEAR_GRADIENT` for `linearGradient`). `A`, `SCRIPT`, `STYLE` and `TITLE` exist in both: in queries, write `SVGElementTagName.A` or `HTMLElementTagName.A`. Strings still work and give `Element`. For custom elements, `HTMLElementTagName.of` types a tag name with its class, and `customElements.define` checks they match:
 
 ```haxe
 class MyWidget extends HTMLElement {

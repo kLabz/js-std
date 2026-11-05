@@ -2,6 +2,8 @@ import js.web.dom.Document;
 import js.web.dom.NodeFilter;
 import js.web.html.HTMLElementTagName;
 import js.web.html.HTMLInputElement;
+import js.web.svg.SVGElementTagName;
+import js.web.svg.SVGNamespace;
 import js.web.html.HTMLCanvasElement;
 import js.web.html.Window;
 
@@ -42,6 +44,12 @@ class Main {
 		window.customElements.define("my-other-widget", MyWidget);
 		document.createElement(MyWidget.TAG).count++;
 		trace(document.querySelector(MyWidget.TAG)?.count, window.customElements.getName(MyWidget));
+
+		var svg = document.createElementNS(SVG_NAMESPACE, SVG);
+		var circle = document.createElementNS(SVG_NAMESPACE, CIRCLE);
+		circle.r.baseVal.value = 5;
+		svg.appendChild(circle);
+		trace(svg.querySelector(FE_GAUSSIAN_BLUR)?.stdDeviationX, svg.querySelector(SVGElementTagName.A)?.href, document.querySelectorAll(CIRCLE)[0]?.cx);
 
 		var custom:HTMLElementTagName<js.web.html.HTMLElement> = cast "my-widget";
 		trace(document.createElement(custom).hidden, DIV.toString());

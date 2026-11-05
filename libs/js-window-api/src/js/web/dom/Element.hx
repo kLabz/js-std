@@ -785,6 +785,12 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/closest>
 	**/
+	overload function closest<T:(js.web.svg.SVGElement)>(selectors:js.web.svg.SVGElementTagName<T>):Null<T>;
+	/**
+		The **`closest()`** method of the `Element` interface traverses the element and its parents (heading toward the document root) until it finds a node that matches the specified [CSS selector](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Element/closest>
+	**/
 	overload function closest<T:(js.web.dom.Element)>(selectors:js.web.html.HTMLElementTagName<T>):Null<T>;
 	/**
 		The **`closest()`** method of the `Element` interface traverses the element and its parents (heading toward the document root) until it finds a node that matches the specified [CSS selector](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors).
@@ -881,6 +887,12 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/Element/getElementsByClassName>
 	**/
 	function getElementsByClassName(classNames:String):HTMLCollection;
+	/**
+		The **`Element.getElementsByTagName()`** method returns a live `HTMLCollection` of elements with the given [tag name](https://developer.mozilla.org/en-US/docs/Web/API/Element/tagName).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Element/getElementsByTagName>
+	**/
+	overload function getElementsByTagName<T:(js.web.svg.SVGElement)>(qualifiedName:js.web.svg.SVGElementTagName<T>):js.web.dom.HTMLCollectionOf<T>;
 	/**
 		The **`Element.getElementsByTagName()`** method returns a live `HTMLCollection` of elements with the given [tag name](https://developer.mozilla.org/en-US/docs/Web/API/Element/tagName).
 		
@@ -1009,6 +1021,14 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/querySelector>
 	**/
+	overload function querySelector<T:(js.web.svg.SVGElement)>(selectors:js.web.svg.SVGElementTagName<T>):Null<T>;
+	/**
+		The **`querySelector()`** method of the `Element` interface returns the first element that is a descendant of the element on which it is invoked that matches the specified group of selectors.
+		
+		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Element/querySelector>
+	**/
 	overload function querySelector<T:(js.web.dom.Element)>(selectors:js.web.html.HTMLElementTagName<T>):Null<T>;
 	/**
 		The **`querySelector()`** method of the `Element` interface returns the first element that is a descendant of the element on which it is invoked that matches the specified group of selectors.
@@ -1018,6 +1038,14 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/Element/querySelector>
 	**/
 	overload function querySelector(selectors:String):Null<Element>;
+	/**
+		The `Element` method **`querySelectorAll()`** returns a static (not live) `NodeList` representing a list of elements matching the specified group of selectors which are descendants of the element on which the method was called.
+		
+		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Element/querySelectorAll>
+	**/
+	overload function querySelectorAll<T:(js.web.svg.SVGElement)>(selectors:js.web.svg.SVGElementTagName<T>):js.web.dom.NodeListOf<T>;
 	/**
 		The `Element` method **`querySelectorAll()`** returns a static (not live) `NodeList` representing a list of elements matching the specified group of selectors which are descendants of the element on which the method was called.
 		

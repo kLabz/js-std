@@ -1090,7 +1090,13 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/createElementNS>
 	**/
-	function createElementNS(namespace:Null<String>, qualifiedName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
+	overload function createElementNS<T:(js.web.svg.SVGElement)>(namespace:js.web.svg.SVGNamespace, qualifiedName:js.web.svg.SVGElementTagName<T>, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):T;
+	/**
+		The **`createElementNS()`** method of the `Document` interface creates a new element with the specified namespace URI and qualified name.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createElementNS>
+	**/
+	overload function createElementNS(namespace:Null<String>, qualifiedName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
 	/**
 		Creates an [event](https://developer.mozilla.org/en-US/docs/Web/API/Event) of the type specified. The returned object should be first initialized and can then be passed to `EventTarget.dispatchEvent`.
 		
@@ -1237,6 +1243,12 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/Document/getElementsByName>
 	**/
 	function getElementsByName(elementName:String):NodeList;
+	/**
+		The **`getElementsByTagName`** method of `Document` interface returns an `HTMLCollection` of elements with the given tag name.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/getElementsByTagName>
+	**/
+	overload function getElementsByTagName<T:(js.web.svg.SVGElement)>(qualifiedName:js.web.svg.SVGElementTagName<T>):js.web.dom.HTMLCollectionOf<T>;
 	/**
 		The **`getElementsByTagName`** method of `Document` interface returns an `HTMLCollection` of elements with the given tag name.
 		
@@ -1412,6 +1424,14 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/querySelector>
 	**/
+	overload function querySelector<T:(js.web.svg.SVGElement)>(selectors:js.web.svg.SVGElementTagName<T>):Null<T>;
+	/**
+		The `Document` method **`querySelector()`** returns the first `Element` within the document that matches the specified [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors), or group of CSS selectors. If no matches are found, `null` is returned.
+		
+		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/querySelector>
+	**/
 	overload function querySelector<T:(js.web.dom.Element)>(selectors:js.web.html.HTMLElementTagName<T>):Null<T>;
 	/**
 		The `Document` method **`querySelector()`** returns the first `Element` within the document that matches the specified [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors), or group of CSS selectors. If no matches are found, `null` is returned.
@@ -1421,6 +1441,14 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/Document/querySelector>
 	**/
 	overload function querySelector(selectors:String):Null<Element>;
+	/**
+		The `Document` method **`querySelectorAll()`** returns a static (not live) `NodeList` representing a list of the document's elements that match the specified group of selectors.
+		
+		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll>
+	**/
+	overload function querySelectorAll<T:(js.web.svg.SVGElement)>(selectors:js.web.svg.SVGElementTagName<T>):js.web.dom.NodeListOf<T>;
 	/**
 		The `Document` method **`querySelectorAll()`** returns a static (not live) `NodeList` representing a list of the document's elements that match the specified group of selectors.
 		

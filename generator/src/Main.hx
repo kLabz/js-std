@@ -431,17 +431,26 @@ class Main {
 			Bcd.apply(task.td);
 		}
 
-		var elementType = TPath({pack: packMap.get("Element"), name: "Element"});
-		var htmlElement = pendingSaves.find(task -> task.t == "HTMLElement").ctx;
-		var tagNames = Elements.tagNames(t -> packMap.get(t), t -> pendingSaves.find(task -> task.t == t)?.td.meta, elementType, htmlElement.pos);
-		packMap.set(Elements.NAME, Elements.PACK);
-		savedLibs.set(Elements.NAME, [WindowAPI]);
-		pendingSaves.push({
-			ctx: {t: Elements.NAME, pos: htmlElement.pos, file: htmlElement.file, pack: Elements.PACK, scope: ["Window"]},
-			t: Elements.NAME,
-			td: tagNames
-		});
-		for (task in pendingSaves) if (["Document", "Element", "DocumentFragment", "CustomElementRegistry"].contains(task.t)) Elements.addOverloads(task.td, elementType);
+		var resolve = t -> packMap.get(t);
+		function addWindowType(td:TypeDefinition, from:String) {
+			var source = pendingSaves.find(task -> task.t == from).ctx;
+			packMap.set(td.name, td.pack);
+			savedLibs.set(td.name, [WindowAPI]);
+			pendingSaves.push({
+				ctx: {t: td.name, pos: source.pos, file: source.file, pack: td.pack, scope: ["Window"]},
+				t: td.name,
+				td: td
+			});
+		}
+		for (set in [Elements.HTML, Elements.SVG]) {
+			var base = pendingSaves.find(task -> task.t == set.base).ctx;
+			addWindowType(Elements.tagNames(set, resolve, t -> pendingSaves.find(task -> task.t == t)?.td.meta, base.pos), set.base);
+		}
+		addWindowType(Elements.svgNamespace(pendingSaves.find(task -> task.t == "SVGElement").ctx.pos), "SVGElement");
+		for (task in pendingSaves) if (["Document", "Element", "DocumentFragment", "CustomElementRegistry"].contains(task.t)) {
+			Elements.addOverloads(task.td, Elements.HTML, resolve);
+			Elements.addOverloads(task.td, Elements.SVG, resolve);
+		}
 
 		// Dropping a type from a lib can make its dependents unavailable there too
 		var changed = true;

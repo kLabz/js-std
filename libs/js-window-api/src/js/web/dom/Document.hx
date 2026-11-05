@@ -1078,7 +1078,13 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/createElement>
 	**/
-	function createElement(localName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
+	overload function createElement<T:(js.web.dom.Element)>(localName:js.web.html.HTMLElementTagName<T>, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):T;
+	/**
+		The **`createElement()`** method of the `Document` interface creates a new `HTMLElement` that has the specified `localName`.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/createElement>
+	**/
+	overload function createElement(localName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
 	/**
 		The **`createElementNS()`** method of the `Document` interface creates a new element with the specified namespace URI and qualified name.
 		
@@ -1400,7 +1406,15 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/querySelector>
 	**/
-	function querySelector(selectors:String):Null<Element>;
+	overload function querySelector<T:(js.web.dom.Element)>(selectors:js.web.html.HTMLElementTagName<T>):Null<T>;
+	/**
+		The `Document` method **`querySelector()`** returns the first `Element` within the document that matches the specified [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors), or group of CSS selectors. If no matches are found, `null` is returned.
+		
+		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/querySelector>
+	**/
+	overload function querySelector(selectors:String):Null<Element>;
 	/**
 		The `Document` method **`querySelectorAll()`** returns a static (not live) `NodeList` representing a list of the document's elements that match the specified group of selectors.
 		

@@ -1,5 +1,7 @@
 import js.web.dom.Document;
 import js.web.dom.NodeFilter;
+import js.web.html.HTMLElementTagName;
+import js.web.html.HTMLInputElement;
 import js.web.html.HTMLCanvasElement;
 import js.web.html.Window;
 
@@ -18,6 +20,14 @@ class Main {
 		var canvas:HTMLCanvasElement = cast document.createElement("canvas");
 		var gl = canvas.getContext("webgl2");
 		trace(gl);
+
+		var input:HTMLInputElement = document.createElement(INPUT);
+		input.value = "typed";
+		document.createElement(DIV).append(input);
+		var found = document.querySelector(INPUT);
+		if (found != null) trace(found.value, found.closest(FORM)?.action);
+		var custom:HTMLElementTagName<js.web.html.HTMLElement> = cast "my-widget";
+		trace(document.createElement(custom).hidden, DIV.toString());
 
 		var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT, node -> NodeFilter.FILTER_ACCEPT);
 		document.createNodeIterator(document.body, NodeFilter.SHOW_TEXT, {acceptNode: node -> NodeFilter.FILTER_SKIP});

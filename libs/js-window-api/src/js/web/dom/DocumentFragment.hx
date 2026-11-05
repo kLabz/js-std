@@ -109,7 +109,15 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/querySelector>
 	**/
-	function querySelector(selectors:String):Null<Element>;
+	overload function querySelector<T:(js.web.dom.Element)>(selectors:js.web.html.HTMLElementTagName<T>):Null<T>;
+	/**
+		The **`DocumentFragment.querySelector()`** method returns the first element, or `null` if no matches are found, within the `DocumentFragment` (using depth-first pre-order traversal of the document's nodes) that matches the specified group of selectors.
+		
+		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/querySelector>
+	**/
+	overload function querySelector(selectors:String):Null<Element>;
 	/**
 		The **`DocumentFragment.querySelectorAll()`** method returns a `NodeList` of elements within the `DocumentFragment` (using depth-first pre-order traversal of the document's nodes) that matches the specified group of selectors.
 		

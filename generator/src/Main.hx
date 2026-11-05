@@ -431,6 +431,18 @@ class Main {
 			Bcd.apply(task.td);
 		}
 
+		var elementType = TPath({pack: packMap.get("Element"), name: "Element"});
+		var htmlElement = pendingSaves.find(task -> task.t == "HTMLElement").ctx;
+		var tagNames = Elements.tagNames(t -> packMap.get(t), t -> pendingSaves.find(task -> task.t == t)?.td.meta, elementType, htmlElement.pos);
+		packMap.set(Elements.NAME, Elements.PACK);
+		savedLibs.set(Elements.NAME, [WindowAPI]);
+		pendingSaves.push({
+			ctx: {t: Elements.NAME, pos: htmlElement.pos, file: htmlElement.file, pack: Elements.PACK, scope: ["Window"]},
+			t: Elements.NAME,
+			td: tagNames
+		});
+		for (task in pendingSaves) if (["Document", "Element", "DocumentFragment"].contains(task.t)) Elements.addOverloads(task.td, elementType);
+
 		// Dropping a type from a lib can make its dependents unavailable there too
 		var changed = true;
 		while (changed) {

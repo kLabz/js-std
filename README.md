@@ -56,6 +56,10 @@ Specs map to packages through name rules plus a hand-maintained list. The html s
 
 Each type's documentation names the spec it comes from.
 
+## Typed tag names
+
+`js.web.html.HTMLElementTagName<T>` lists HTML tag names typed with their element interface (from [`@webref/elements`](https://github.com/w3c/webref/tree/main/packages/elements)). `createElement`, `querySelector` and `closest` accept it: `document.createElement(DIV)` is a `HTMLDivElement`, `document.querySelector(INPUT)` a `Null<HTMLInputElement>`. Strings still work and give `Element`. Custom elements can be cast: `(cast "my-widget" : HTMLElementTagName<MyWidget>)`.
+
 ## Migrating from `js.html`
 
 Types keep their WebIDL names, so many differ from `js.html`: `js.html.DivElement` is `js.web.html.HTMLDivElement`, `js.html.Element` is `js.web.html.HTMLElement` (and `js.html.DOMElement` is `js.web.dom.Element`), `js.html.idb.Database` is `js.web.storage.IDBDatabase`, etc.

@@ -785,7 +785,13 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/closest>
 	**/
-	function closest(selectors:String):Null<Element>;
+	overload function closest<T:(js.web.dom.Element)>(selectors:js.web.html.HTMLElementTagName<T>):Null<T>;
+	/**
+		The **`closest()`** method of the `Element` interface traverses the element and its parents (heading toward the document root) until it finds a node that matches the specified [CSS selector](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Element/closest>
+	**/
+	overload function closest(selectors:String):Null<Element>;
 	/**
 		The **`computedStyleMap()`** method of the `Element` interface returns a `StylePropertyMapReadOnly` interface which provides a read-only representation of a CSS declaration block that is an alternative to `CSSStyleDeclaration`.
 		
@@ -997,7 +1003,15 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/querySelector>
 	**/
-	function querySelector(selectors:String):Null<Element>;
+	overload function querySelector<T:(js.web.dom.Element)>(selectors:js.web.html.HTMLElementTagName<T>):Null<T>;
+	/**
+		The **`querySelector()`** method of the `Element` interface returns the first element that is a descendant of the element on which it is invoked that matches the specified group of selectors.
+		
+		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Element/querySelector>
+	**/
+	overload function querySelector(selectors:String):Null<Element>;
 	/**
 		The `Element` method **`querySelectorAll()`** returns a static (not live) `NodeList` representing a list of elements matching the specified group of selectors which are descendants of the element on which the method was called.
 		

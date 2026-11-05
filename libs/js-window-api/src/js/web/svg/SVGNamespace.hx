@@ -20,7 +20,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from @webref/idl/SVG.idl. Do not edit!
+// This file is generated from the js-std generator (generator/src/Elements.hx). Do not edit!
 
 package js.web.svg;
 

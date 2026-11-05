@@ -42,6 +42,8 @@ typedef Context = {
 	var file:FileHandler;
 	var pack:Array<String>;
 	var scope:Null<Set<String>>;
+	/** For types not generated from an IDL file. **/
+	@:optional var origin:String;
 }
 
 typedef ClassContext = Context & {
@@ -381,8 +383,8 @@ class Main {
 
 		var out = new StringBuf();
 		out.add(Resource.getString("copyright"));
-		out.add("// This file is generated from @webref/idl/");
-		out.add(ctx.file.filename);
+		out.add("// This file is generated from ");
+		out.add(ctx.origin ?? '@webref/idl/${ctx.file.filename}');
 		out.add(". Do not edit!\n\n");
 		out.add(printer.printTypeDefinition(td));
 
@@ -432,21 +434,21 @@ class Main {
 		}
 
 		var resolve = t -> packMap.get(t);
-		function addWindowType(td:TypeDefinition, from:String) {
+		function addWindowType(td:TypeDefinition, from:String, origin:String) {
 			var source = pendingSaves.find(task -> task.t == from).ctx;
 			packMap.set(td.name, td.pack);
 			savedLibs.set(td.name, [WindowAPI]);
 			pendingSaves.push({
-				ctx: {t: td.name, pos: source.pos, file: source.file, pack: td.pack, scope: ["Window"]},
+				ctx: {t: td.name, pos: source.pos, file: source.file, pack: td.pack, scope: ["Window"], origin: origin},
 				t: td.name,
 				td: td
 			});
 		}
 		for (set in [Elements.HTML, Elements.SVG]) {
 			var base = pendingSaves.find(task -> task.t == set.base).ctx;
-			addWindowType(Elements.tagNames(set, resolve, t -> pendingSaves.find(task -> task.t == t)?.td.meta, base.pos), set.base);
+			addWindowType(Elements.tagNames(set, resolve, t -> pendingSaves.find(task -> task.t == t)?.td.meta, base.pos), set.base, "@webref/elements");
 		}
-		addWindowType(Elements.svgNamespace(pendingSaves.find(task -> task.t == "SVGElement").ctx.pos), "SVGElement");
+		addWindowType(Elements.svgNamespace(pendingSaves.find(task -> task.t == "SVGElement").ctx.pos), "SVGElement", "the js-std generator (generator/src/Elements.hx)");
 		for (task in pendingSaves) if (["Document", "Element", "DocumentFragment", "CustomElementRegistry"].contains(task.t)) {
 			Elements.addOverloads(task.td, Elements.HTML, resolve);
 			Elements.addOverloads(task.td, Elements.SVG, resolve);

@@ -21,14 +21,20 @@ class Main {
 		document.querySelectorAll.<HTMLInputElement>(".option").forEach((el, _, _) -> trace(el.checked));
 		var list:NodeList = document.querySelectorAll.<HTMLInputElement>(".option");
 
-		// Without type arguments: the default (`HTMLElement` for ids, `Element` for selectors), not the expected type
-		var any:Null<HTMLElement> = document.getElementById("any");
+		// Without type arguments: the expected type, as in TypeScript
+		var typed:Null<HTMLInputElement> = document.querySelector("#name");
+		var byId:Null<HTMLInputElement> = document.getElementById("name");
+		trace(typed?.value, byId?.value);
+
+		// Without either: the default (`HTMLElement` for ids, `Element` for selectors)
+		var any = document.getElementById("any");
+		var anyHtml:Null<HTMLElement> = any;
 		var parent:Null<HTMLElement> = any?.parentElement;
 		var some:Null<Element> = document.querySelector("#some");
 		var inputs:js.web.dom.NodeListOf<Element> = document.querySelectorAll(".option");
 
 		// Tag names still pick the tag-typed overloads
 		var input:Null<HTMLInputElement> = document.querySelector(INPUT);
-		trace(any, parent, some, inputs, list, input?.value);
+		trace(anyHtml, parent, some, inputs, list, input?.value);
 	}
 }

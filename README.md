@@ -70,6 +70,17 @@ Each event target has a `<Target>EventType<E>` (from [`@webref/events`](https://
 
 Event handler properties are typed the same way (`element.onclick = e -> e.clientX`), and return `Void`: WebIDL's `any` return is only used by the legacy `return false`, which still compiles.
 
+For custom events, `EventType<E>` types a name with its event on any target, and `CustomEventOf<T>` types `detail`:
+
+```haxe
+static final READY:EventType<CustomEventOf<{count:Int}>> = EventType.custom("ready");
+
+target.addEventListener(READY, e -> trace(e.detail.count));
+target.dispatchEvent(new CustomEventOf("ready", {detail: {count: 3}}));
+```
+
+Both only exist at compile time.
+
 ## Haxe 4
 
 Haxe 4 only resolves these typed values (`DIV`, `WEBGL2`, `CLICK`…) through overloaded methods when their type is imported (`import js.web.dom.NodeEventType;`) or when they are qualified (`NodeEventType.CLICK`). Haxe 5 resolves them from the expected type alone. Strings still work and give `Element`. For custom elements, `HTMLElementTagName.of` types a tag name with its class, and `customElements.define` checks they match:

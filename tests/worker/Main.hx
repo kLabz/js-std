@@ -46,6 +46,13 @@ class Main {
 		check(abortType == "abort", "typed addEventListener");
 		check(controller.signal.aborted, "AbortSignal.aborted");
 
+		var ready:js.web.dom.EventType<js.web.dom.CustomEventOf<{count:Int}>> = js.web.dom.EventType.custom("ready");
+		var target = new js.web.dom.EventTarget();
+		var count = 0;
+		target.addEventListener(ready, e -> count += e.detail.count);
+		target.dispatchEvent(new js.web.dom.CustomEventOf("ready", {detail: {count: 3}}));
+		check(count == 3, "typed custom event");
+
 		var emptyModule = new js.lib.Uint8Array([0x00, 0x61, 0x73, 0x6d, 0x01, 0x00, 0x00, 0x00]);
 		check(WebAssembly.validate(emptyModule), "WebAssembly.validate");
 		check(new js.web.wasm.Module(emptyModule) != null, "WebAssembly.Module");

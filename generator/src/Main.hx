@@ -469,7 +469,7 @@ class Main {
 
 		var tasksByName = [for (task in pendingSaves) task.t => task];
 		var eventTarget = tasksByName.get("EventTarget").td;
-		Events.markOverloads(eventTarget);
+		Events.markOverloads(eventTarget, resolve);
 		var eventType = TPath({pack: resolve("Event"), name: "Event"});
 		var isClass = t -> tasksByName.get(t)?.td.kind.match(TDClass(_)) ?? false;
 		var eventsByTarget = Events.eventsByTarget(isClass, t -> interfaceDefs.get(t)?.inheritance);

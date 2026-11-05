@@ -164,12 +164,31 @@ class Events {
 		}
 	}
 
-	/** `EventTarget`'s own methods become overloads too, so subclasses can add theirs. **/
-	public static function markOverloads(eventTarget:TypeDefinition):Void {
-		for (f in eventTarget.fields) if (f.name == "addEventListener" || f.name == "removeEventListener") {
-			f.access = f.access ?? [];
-			if (!f.access.contains(AOverload)) f.access.push(AOverload);
+	/**
+		`EventTarget`'s own methods become overloads too, so subclasses can add theirs, and get
+		ones typed by `EventType<E>` (custom events, hand-written in `static/js-core-api`).
+	**/
+	public static function markOverloads(eventTarget:TypeDefinition, resolve:String->Null<Array<String>>):Void {
+		var added = [];
+		for (f in eventTarget.fields) switch [f.name, f.kind] {
+			case ["addEventListener" | "removeEventListener", FFun(fn)]:
+				f.access = f.access ?? [];
+				if (!f.access.contains(AOverload)) f.access.push(AOverload);
+
+				var args = fn.args.copy();
+				args[0] = {name: args[0].name, opt: false, type: macro :js.web.dom.EventType<E>};
+				args[1] = {name: args[1].name, opt: false, type: macro :Null<(event:E) -> Void>};
+				added.push({
+					name: f.name,
+					doc: f.doc,
+					meta: f.meta,
+					access: [AOverload],
+					kind: FFun({args: args, ret: fn.ret, params: [{name: "E", constraints: [TPath({pack: resolve("Event"), name: "Event"})]}], expr: null}),
+					pos: f.pos
+				});
+			case _:
 		}
+		for (f in added) eventTarget.fields.insert(eventTarget.fields.indexOf(eventTarget.fields.find(o -> o.name == f.name)), f);
 	}
 
 	// `EventTarget`'s argument types are relative to its own package

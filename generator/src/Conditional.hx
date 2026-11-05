@@ -11,6 +11,7 @@ class Conditional {
 	public static inline var STRICT_EVENTS = "!js_strict_events";
 	public static inline var HTML_COMPAT = "js_html_compat";
 	public static inline var GENERIC_LOOKUPS = '(haxe >= version("5.0.0-preview.2") || js_generic_lookups)';
+	public static inline var QUOTED_FIELDS = '(haxe >= version("5.0.0-preview.2") || js_quoted_fields)';
 
 	static inline var IF = ":jsIf";
 	static inline var ELSE_IF = ":jsElseIf";

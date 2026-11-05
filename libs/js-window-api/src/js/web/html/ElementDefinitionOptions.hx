@@ -25,7 +25,8 @@
 package js.web.html;
 
 typedef ElementDefinitionOptions = {
+	#if (haxe >= version("5.0.0-preview.2") || js_quoted_fields)
 	@:optional
-	@:native("extends")
-	var extends_ : String;
+	var "extends" : String;
+	#end
 };

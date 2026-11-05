@@ -41,9 +41,10 @@ typedef MLOpSupportLimits = {
 	var argMax : MLSingleInputSupportLimits;
 	@:optional
 	var batchNormalization : MLBatchNormalizationSupportLimits;
+	#if (haxe >= version("5.0.0-preview.2") || js_quoted_fields)
 	@:optional
-	@:native("cast")
-	var cast_ : MLSingleInputSupportLimits;
+	var "cast" : MLSingleInputSupportLimits;
+	#end
 	@:optional
 	var clamp : MLSingleInputSupportLimits;
 	@:optional

@@ -754,22 +754,21 @@ class Main {
 
 						var partials = partialDictionaries.get(t.name).or([]);
 						var members = partials.fold((p, acc) -> acc.concat(p.members), t.members);
-						var fields = members.map(m -> {
+						var fields = [];
+						for (m in members) {
 							var meta = m.required ? [] : [{name: ":optional", pos: ctx.pos}];
 							var ct = convertType(ctx, m.idlType);
 							var doc = addUnhandledAttributesToDoc(null, m.extAttrs);
 							// Structure fields can't carry default values
 							var value = try convertValue(m.default_, ct, false, ctx.pos) catch (_) null;
 							if (value != null) doc = doc.concat('Default: `${printer.printExpr(value)}`', "\n");
-							({
-								// TODO: Haxe ignores @:native on structure fields, so keyword-named members (`inline`) get the wrong name
-								name: sanitizeIdentifier(m.name, meta, ctx.pos),
-								doc: doc,
-								kind: FVar(ct),
-								pos: ctx.pos,
-								meta: meta
-							}:Field);
-						});
+							var field:Field = {name: m.name, doc: doc, kind: FVar(ct), pos: ctx.pos, meta: meta};
+							// `@:native` doesn't apply to structure fields: keywords (`inline`) need quoted fields,
+							// and are left out on compilers without them rather than sent under another name
+							if (sanitizeIdentifier(m.name, [], ctx.pos) == m.name) fields.push(field);
+							else if (isKeyword(m.name)) fields = fields.concat(Conditional.chain([{condition: Conditional.QUOTED_FIELDS, field: field}]));
+							else throw 'Dictionary ${t.name}: unsupported member name ${m.name}';
+						}
 
 						var td:TypeDefinition = {
 							pack: pack,
@@ -1011,6 +1010,12 @@ class Main {
 			case _ >= '0'.code && _ <= '9'.code: '_$value';
 			case _: value;
 		};
+	}
+
+	static function isKeyword(name:String):Bool {
+		var meta = [];
+		var sanitized = sanitizeIdentifier(name, meta, null);
+		return sanitized == name + "_";
 	}
 
 	public static function sanitizeIdentifier(name:String, meta:Array<MetadataEntry>, pos):String {

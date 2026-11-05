@@ -193,12 +193,26 @@ class Printer {
 			+ switch (field.kind) {
 				case FVar(t,
 					eo): ((field.access != null && field.access.has(AFinal)) ? '' : 'var ')
-						+ '${field.name}'
+						+ printFieldName(field.name)
 						+ opt(t, printComplexType, " : ")
 						+ opt(eo, printExpr, " = ");
-				case FProp(get, set, t, eo): 'var ${field.name}($get, $set)' + opt(t, printComplexType, " : ") + opt(eo, printExpr, " = ");
+				case FProp(get, set, t, eo): 'var ${printFieldName(field.name)}($get, $set)' + opt(t, printComplexType, " : ") + opt(eo, printExpr, " = ");
 				case FFun(func): 'function ${field.name}' + printFunction(func);
 			}}
+
+	static final keywords = [
+		"abstract", "break", "case", "cast", "catch", "class", "continue", "default", "do", "dynamic", "else", "enum", "extends", "extern",
+		"false", "final", "for", "function", "if", "implements", "import", "in", "inline", "interface", "macro", "new", "null", "operator",
+		"overload", "override", "package", "private", "public", "return", "static", "switch", "this", "throw", "true", "try", "typedef",
+		"untyped", "using", "var", "while"
+	];
+
+	static final identifier = ~/^[A-Za-z_][A-Za-z0-9_]*$/;
+
+	/** Quoted fields (Haxe 5): keywords and other non-identifiers are quoted. **/
+	public function printFieldName(name:String) {
+		return keywords.contains(name) || !identifier.match(name) ? printString(name) : name;
+	}
 
 	public function printTypeParamDecl(tpd:TypeParamDecl)
 		return (tpd.meta != null && tpd.meta.length > 0 ? tpd.meta.map(printMetadata).join(" ") + " " : "")

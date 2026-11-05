@@ -57,6 +57,7 @@ jobs:
             haxe: 2026-11-05_js-std-nightlies_2bca629
             compat: 0
             generic-lookups: 1
+            quoted-fields: 1
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -72,4 +73,5 @@ jobs:
         env:
           EXPECT_COMPAT: ${{ matrix.compat }}
           GENERIC_LOOKUPS: ${{ matrix.generic-lookups }}
+          QUOTED_FIELDS: ${{ matrix.quoted-fields }}
         run: ./tests/run.sh

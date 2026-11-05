@@ -25,6 +25,7 @@
 package js.web.auth;
 
 typedef EcdhKeyDeriveParams = Algorithm & {
-	@:native("public")
-	var public_ : CryptoKey;
+	#if (haxe >= version("5.0.0-preview.2") || js_quoted_fields)
+	var "public" : CryptoKey;
+	#end
 };

@@ -467,6 +467,14 @@ class Main {
 			case _:
 		}
 
+		var htmlTags = pendingSaves.find(task -> task.t == Elements.HTML.name).td;
+		for (task in pendingSaves) switch (task.t) {
+			case "KeyboardEvent": CompatShims.keyboardEvent(task.td);
+			case "Document": CompatShims.document(task.td, htmlTags);
+			case "HTMLCanvasElement": CompatShims.canvas(task.td);
+			case _:
+		}
+
 		var tasksByName = [for (task in pendingSaves) task.t => task];
 		var eventTarget = tasksByName.get("EventTarget").td;
 		Events.markOverloads(eventTarget, resolve);

@@ -128,4 +128,378 @@ package js.web.dom;
 	**/
 	@:deprecated
 	function initKeyboardEvent(typeArg:String, ?bubblesArg:Bool = false, ?cancelableArg:Bool = false, ?viewArg:Null<js.web.html.Window> = null, ?keyArg:String = "", ?locationArg:Int = 0, ?ctrlKey:Bool = false, ?altKey:Bool = false, ?shiftKey:Bool = false, ?metaKey:Bool = false):Void;
+	#if js_html_compat
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_CANCEL : Int = 3;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_HELP : Int = 6;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_BACK_SPACE : Int = 8;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_TAB : Int = 9;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_CLEAR : Int = 12;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_RETURN : Int = 13;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_SHIFT : Int = 16;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_CONTROL : Int = 17;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_ALT : Int = 18;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_PAUSE : Int = 19;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_CAPS_LOCK : Int = 20;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_KANA : Int = 21;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_HANGUL : Int = 21;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_EISU : Int = 22;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_JUNJA : Int = 23;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_FINAL : Int = 24;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_HANJA : Int = 25;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_KANJI : Int = 25;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_ESCAPE : Int = 27;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_CONVERT : Int = 28;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_NONCONVERT : Int = 29;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_ACCEPT : Int = 30;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_MODECHANGE : Int = 31;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_SPACE : Int = 32;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_PAGE_UP : Int = 33;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_PAGE_DOWN : Int = 34;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_END : Int = 35;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_HOME : Int = 36;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_LEFT : Int = 37;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_UP : Int = 38;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_RIGHT : Int = 39;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_DOWN : Int = 40;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_SELECT : Int = 41;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_PRINT : Int = 42;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_EXECUTE : Int = 43;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_PRINTSCREEN : Int = 44;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_INSERT : Int = 45;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_DELETE : Int = 46;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_0 : Int = 48;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_1 : Int = 49;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_2 : Int = 50;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_3 : Int = 51;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_4 : Int = 52;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_5 : Int = 53;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_6 : Int = 54;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_7 : Int = 55;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_8 : Int = 56;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_9 : Int = 57;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_COLON : Int = 58;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_SEMICOLON : Int = 59;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_LESS_THAN : Int = 60;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_EQUALS : Int = 61;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_GREATER_THAN : Int = 62;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_QUESTION_MARK : Int = 63;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_AT : Int = 64;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_A : Int = 65;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_B : Int = 66;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_C : Int = 67;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_D : Int = 68;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_E : Int = 69;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F : Int = 70;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_G : Int = 71;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_H : Int = 72;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_I : Int = 73;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_J : Int = 74;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_K : Int = 75;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_L : Int = 76;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_M : Int = 77;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_N : Int = 78;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_O : Int = 79;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_P : Int = 80;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_Q : Int = 81;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_R : Int = 82;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_S : Int = 83;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_T : Int = 84;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_U : Int = 85;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_V : Int = 86;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_W : Int = 87;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_X : Int = 88;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_Y : Int = 89;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_Z : Int = 90;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN : Int = 91;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_CONTEXT_MENU : Int = 93;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_SLEEP : Int = 95;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_NUMPAD0 : Int = 96;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_NUMPAD1 : Int = 97;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_NUMPAD2 : Int = 98;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_NUMPAD3 : Int = 99;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_NUMPAD4 : Int = 100;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_NUMPAD5 : Int = 101;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_NUMPAD6 : Int = 102;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_NUMPAD7 : Int = 103;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_NUMPAD8 : Int = 104;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_NUMPAD9 : Int = 105;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_MULTIPLY : Int = 106;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_ADD : Int = 107;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_SEPARATOR : Int = 108;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_SUBTRACT : Int = 109;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_DECIMAL : Int = 110;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_DIVIDE : Int = 111;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F1 : Int = 112;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F2 : Int = 113;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F3 : Int = 114;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F4 : Int = 115;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F5 : Int = 116;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F6 : Int = 117;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F7 : Int = 118;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F8 : Int = 119;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F9 : Int = 120;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F10 : Int = 121;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F11 : Int = 122;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F12 : Int = 123;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F13 : Int = 124;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F14 : Int = 125;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F15 : Int = 126;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F16 : Int = 127;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F17 : Int = 128;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F18 : Int = 129;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F19 : Int = 130;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F20 : Int = 131;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F21 : Int = 132;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F22 : Int = 133;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F23 : Int = 134;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_F24 : Int = 135;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_NUM_LOCK : Int = 144;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_SCROLL_LOCK : Int = 145;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_FJ_JISHO : Int = 146;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_FJ_MASSHOU : Int = 147;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_FJ_TOUROKU : Int = 148;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_FJ_LOYA : Int = 149;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_FJ_ROYA : Int = 150;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_CIRCUMFLEX : Int = 160;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_EXCLAMATION : Int = 161;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_DOUBLE_QUOTE : Int = 162;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_HASH : Int = 163;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_DOLLAR : Int = 164;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_PERCENT : Int = 165;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_AMPERSAND : Int = 166;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_UNDERSCORE : Int = 167;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_OPEN_PAREN : Int = 168;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_CLOSE_PAREN : Int = 169;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_ASTERISK : Int = 170;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_PLUS : Int = 171;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_PIPE : Int = 172;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_HYPHEN_MINUS : Int = 173;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_OPEN_CURLY_BRACKET : Int = 174;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_CLOSE_CURLY_BRACKET : Int = 175;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_TILDE : Int = 176;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_VOLUME_MUTE : Int = 181;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_VOLUME_DOWN : Int = 182;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_VOLUME_UP : Int = 183;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_COMMA : Int = 188;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_PERIOD : Int = 190;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_SLASH : Int = 191;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_BACK_QUOTE : Int = 192;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_OPEN_BRACKET : Int = 219;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_BACK_SLASH : Int = 220;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_CLOSE_BRACKET : Int = 221;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_QUOTE : Int = 222;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_META : Int = 224;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_ALTGR : Int = 225;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_ICO_HELP : Int = 227;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_ICO_00 : Int = 228;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_PROCESSKEY : Int = 229;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_ICO_CLEAR : Int = 230;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_RESET : Int = 233;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_JUMP : Int = 234;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_PA1 : Int = 235;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_PA2 : Int = 236;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_PA3 : Int = 237;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_WSCTRL : Int = 238;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_CUSEL : Int = 239;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_ATTN : Int = 240;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_FINISH : Int = 241;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_COPY : Int = 242;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_AUTO : Int = 243;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_ENLW : Int = 244;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_BACKTAB : Int = 245;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_ATTN : Int = 246;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_CRSEL : Int = 247;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_EXSEL : Int = 248;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_EREOF : Int = 249;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_PLAY : Int = 250;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_ZOOM : Int = 251;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_PA1 : Int = 253;
+	@:deprecated("Firefox-only: use `key` or `code`")
+	static inline var DOM_VK_WIN_OEM_CLEAR : Int = 254;
+	#end
 }

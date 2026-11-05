@@ -1512,6 +1512,136 @@ package js.web.dom;
 	**/
 	@:deprecated
 	function writeln(text:haxe.Rest<haxe.extern.EitherType<TrustedHTML, String>>):Void;
+	#if js_html_compat
+	@:deprecated("Use `createElement(TD)`")
+	inline function createTableCellElement():js.web.html.HTMLTableCellElement return createElement(js.web.html.HTMLElementTagName.TD);
+	@:deprecated("Use `createElement(SELECT)`")
+	inline function createSelectElement():js.web.html.HTMLSelectElement return createElement(js.web.html.HTMLElementTagName.SELECT);
+	@:deprecated("Use `createElement(\"font\")`")
+	inline function createFontElement():js.web.html.HTMLElement return cast createElement("font");
+	@:deprecated("Use `createElement(DL)`")
+	inline function createDListElement():js.web.html.HTMLDListElement return createElement(js.web.html.HTMLElementTagName.DL);
+	@:deprecated("Use `createElement(\"frame\")`")
+	inline function createFrameElement():js.web.html.HTMLElement return cast createElement("frame");
+	@:deprecated("Use `createElement(OL)`")
+	inline function createOListElement():js.web.html.HTMLOListElement return createElement(js.web.html.HTMLElementTagName.OL);
+	@:deprecated("Use `createElement(LI)`")
+	inline function createLIElement():js.web.html.HTMLLIElement return createElement(js.web.html.HTMLElementTagName.LI);
+	@:deprecated("Use `createElement(HR)`")
+	inline function createHRElement():js.web.html.HTMLHRElement return createElement(js.web.html.HTMLElementTagName.HR);
+	@:deprecated("Use `createElement(\"param\")`")
+	inline function createParamElement():js.web.html.HTMLElement return cast createElement("param");
+	@:deprecated("Use `createElement(LABEL)`")
+	inline function createLabelElement():js.web.html.HTMLLabelElement return createElement(js.web.html.HTMLElementTagName.LABEL);
+	@:deprecated("Use `createElement(TRACK)`")
+	inline function createTrackElement():js.web.html.HTMLTrackElement return createElement(js.web.html.HTMLElementTagName.TRACK);
+	@:deprecated("Use `createElement(DIV)`")
+	inline function createDivElement():js.web.html.HTMLDivElement return createElement(js.web.html.HTMLElementTagName.DIV);
+	@:deprecated("Use `createElement(TITLE)`")
+	inline function createTitleElement():js.web.html.HTMLTitleElement return createElement(js.web.html.HTMLElementTagName.TITLE);
+	@:deprecated("Use `createElement(A)`")
+	inline function createAnchorElement():js.web.html.HTMLAnchorElement return createElement(js.web.html.HTMLElementTagName.A);
+	@:deprecated("Use `createElement(STYLE)`")
+	inline function createStyleElement():js.web.html.HTMLStyleElement return createElement(js.web.html.HTMLElementTagName.STYLE);
+	@:deprecated("Use `createElement(EMBED)`")
+	inline function createEmbedElement():js.web.html.HTMLEmbedElement return createElement(js.web.html.HTMLElementTagName.EMBED);
+	@:deprecated("Use `createElement(METER)`")
+	inline function createMeterElement():js.web.html.HTMLMeterElement return createElement(js.web.html.HTMLElementTagName.METER);
+	@:deprecated("Use `createElement(PICTURE)`")
+	inline function createPictureElement():js.web.html.HTMLPictureElement return createElement(js.web.html.HTMLElementTagName.PICTURE);
+	@:deprecated("Use `createElement(PRE)`")
+	inline function createPreElement():js.web.html.HTMLPreElement return createElement(js.web.html.HTMLElementTagName.PRE);
+	@:deprecated("Use `createElement(THEAD)`")
+	inline function createTableSectionElement():js.web.html.HTMLTableSectionElement return createElement(js.web.html.HTMLElementTagName.THEAD);
+	@:deprecated("Use `createElement(HEAD)`")
+	inline function createHeadElement():js.web.html.HTMLHeadElement return createElement(js.web.html.HTMLElementTagName.HEAD);
+	@:deprecated("Use `createElement(OPTGROUP)`")
+	inline function createOptGroupElement():js.web.html.HTMLOptGroupElement return createElement(js.web.html.HTMLElementTagName.OPTGROUP);
+	@:deprecated("Use `createElement(AUDIO)`")
+	inline function createAudioElement():js.web.html.HTMLAudioElement return createElement(js.web.html.HTMLElementTagName.AUDIO);
+	@:deprecated("Use `createElement(VIDEO)`")
+	inline function createVideoElement():js.web.html.HTMLVideoElement return createElement(js.web.html.HTMLElementTagName.VIDEO);
+	@:deprecated("Use `createElement(LEGEND)`")
+	inline function createLegendElement():js.web.html.HTMLLegendElement return createElement(js.web.html.HTMLElementTagName.LEGEND);
+	@:deprecated("Use `createElement(UL)`")
+	inline function createUListElement():js.web.html.HTMLUListElement return createElement(js.web.html.HTMLElementTagName.UL);
+	@:deprecated("Use `createElement(\"dir\")`")
+	inline function createDirectoryElement():js.web.html.HTMLElement return cast createElement("dir");
+	@:deprecated("Use `createElement(TABLE)`")
+	inline function createTableElement():js.web.html.HTMLTableElement return createElement(js.web.html.HTMLElementTagName.TABLE);
+	@:deprecated("Use `createElement(SLOT)`")
+	inline function createSlotElement():js.web.html.HTMLSlotElement return createElement(js.web.html.HTMLElementTagName.SLOT);
+	@:deprecated("Use `createElement(SOURCE)`")
+	inline function createSourceElement():js.web.html.HTMLSourceElement return createElement(js.web.html.HTMLElementTagName.SOURCE);
+	@:deprecated("Use `createElement(LINK)`")
+	inline function createLinkElement():js.web.html.HTMLLinkElement return createElement(js.web.html.HTMLElementTagName.LINK);
+	@:deprecated("Use `createElement(IFRAME)`")
+	inline function createIFrameElement():js.web.html.HTMLIFrameElement return createElement(js.web.html.HTMLElementTagName.IFRAME);
+	@:deprecated("Use `createElement(\"media\")`")
+	inline function createMediaElement():js.web.html.HTMLElement return cast createElement("media");
+	@:deprecated("Use `createElement(MAP)`")
+	inline function createMapElement():js.web.html.HTMLMapElement return createElement(js.web.html.HTMLElementTagName.MAP);
+	@:deprecated("Use `createElement(FORM)`")
+	inline function createFormElement():js.web.html.HTMLFormElement return createElement(js.web.html.HTMLElementTagName.FORM);
+	@:deprecated("Use `createElement(OPTION)`")
+	inline function createOptionElement():js.web.html.HTMLOptionElement return createElement(js.web.html.HTMLElementTagName.OPTION);
+	@:deprecated("Use `createElement(META)`")
+	inline function createMetaElement():js.web.html.HTMLMetaElement return createElement(js.web.html.HTMLElementTagName.META);
+	@:deprecated("Use `createElement(OBJECT)`")
+	inline function createObjectElement():js.web.html.HTMLObjectElement return createElement(js.web.html.HTMLElementTagName.OBJECT);
+	@:deprecated("Use `createElement(CAPTION)`")
+	inline function createTableCaptionElement():js.web.html.HTMLTableCaptionElement return createElement(js.web.html.HTMLElementTagName.CAPTION);
+	@:deprecated("Use `createElement(IMG)`")
+	inline function createImageElement():js.web.html.HTMLImageElement return createElement(js.web.html.HTMLElementTagName.IMG);
+	@:deprecated("Use `createElement(TEXTAREA)`")
+	inline function createTextAreaElement():js.web.html.HTMLTextAreaElement return createElement(js.web.html.HTMLElementTagName.TEXTAREA);
+	@:deprecated("Use `createElement(SCRIPT)`")
+	inline function createScriptElement():js.web.html.HTMLScriptElement return createElement(js.web.html.HTMLElementTagName.SCRIPT);
+	@:deprecated("Use `createElement(DATALIST)`")
+	inline function createDataListElement():js.web.html.HTMLDataListElement return createElement(js.web.html.HTMLElementTagName.DATALIST);
+	@:deprecated("Use `createElement(\"mod\")`")
+	inline function createModElement():js.web.html.HTMLElement return cast createElement("mod");
+	@:deprecated("Use `createElement(OUTPUT)`")
+	inline function createOutputElement():js.web.html.HTMLOutputElement return createElement(js.web.html.HTMLElementTagName.OUTPUT);
+	@:deprecated("Use `createElement(AREA)`")
+	inline function createAreaElement():js.web.html.HTMLAreaElement return createElement(js.web.html.HTMLElementTagName.AREA);
+	@:deprecated("Use `createElement(PROGRESS)`")
+	inline function createProgressElement():js.web.html.HTMLProgressElement return createElement(js.web.html.HTMLElementTagName.PROGRESS);
+	@:deprecated("Use `createElement(BUTTON)`")
+	inline function createButtonElement():js.web.html.HTMLButtonElement return createElement(js.web.html.HTMLElementTagName.BUTTON);
+	@:deprecated("Use `createElement(FIELDSET)`")
+	inline function createFieldSetElement():js.web.html.HTMLFieldSetElement return createElement(js.web.html.HTMLElementTagName.FIELDSET);
+	@:deprecated("Use `createElement(MENU)`")
+	inline function createMenuElement():js.web.html.HTMLMenuElement return createElement(js.web.html.HTMLElementTagName.MENU);
+	@:deprecated("Use `createElement(BR)`")
+	inline function createBRElement():js.web.html.HTMLBRElement return createElement(js.web.html.HTMLElementTagName.BR);
+	@:deprecated("Use `createElement(SPAN)`")
+	inline function createSpanElement():js.web.html.HTMLSpanElement return createElement(js.web.html.HTMLElementTagName.SPAN);
+	@:deprecated("Use `createElement(DETAILS)`")
+	inline function createDetailsElement():js.web.html.HTMLDetailsElement return createElement(js.web.html.HTMLElementTagName.DETAILS);
+	@:deprecated("Use `createElement(BODY)`")
+	inline function createBodyElement():js.web.html.HTMLBodyElement return createElement(js.web.html.HTMLElementTagName.BODY);
+	@:deprecated("Use `createElement(INPUT)`")
+	inline function createInputElement():js.web.html.HTMLInputElement return createElement(js.web.html.HTMLElementTagName.INPUT);
+	@:deprecated("Use `createElement(BASE)`")
+	inline function createBaseElement():js.web.html.HTMLBaseElement return createElement(js.web.html.HTMLElementTagName.BASE);
+	@:deprecated("Use `createElement(\"quote\")`")
+	inline function createQuoteElement():js.web.html.HTMLElement return cast createElement("quote");
+	@:deprecated("Use `createElement(\"frameset\")`")
+	inline function createFrameSetElement():js.web.html.HTMLElement return cast createElement("frameset");
+	@:deprecated("Use `createElement(CANVAS)`")
+	inline function createCanvasElement():js.web.html.HTMLCanvasElement return createElement(js.web.html.HTMLElementTagName.CANVAS);
+	@:deprecated("Use `createElement(P)`")
+	inline function createParagraphElement():js.web.html.HTMLParagraphElement return createElement(js.web.html.HTMLElementTagName.P);
+	@:deprecated("Use `createElement(COL)`")
+	inline function createTableColElement():js.web.html.HTMLTableColElement return createElement(js.web.html.HTMLElementTagName.COL);
+	@:deprecated("Use `createElement(TR)`")
+	inline function createTableRowElement():js.web.html.HTMLTableRowElement return createElement(js.web.html.HTMLElementTagName.TR);
+	@:deprecated("Use `createElement(HTML)`")
+	inline function createHtmlElement():js.web.html.HTMLHtmlElement return createElement(js.web.html.HTMLElementTagName.HTML);
+	@:deprecated("Use `createElement(DIALOG)`")
+	inline function createDialoglElement():js.web.html.HTMLDialogElement return createElement(js.web.html.HTMLElementTagName.DIALOG);
+	#end
 	/**
 		The **`addEventListener()`** method of the `EventTarget` interface sets up a function that will be called whenever the specified event is delivered to the target.
 		

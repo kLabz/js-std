@@ -257,7 +257,10 @@ class Events {
 			}
 			i++;
 		}
-		return lines.join("\n");
+		// Consecutive blocks with the same condition
+		var printed = lines.join("\n");
+		for (condition in conditions) printed = printed.replace('\t#end\n\t#if $condition\n', "");
+		return printed;
 	}
 
 	static function valueName(type:String):String {

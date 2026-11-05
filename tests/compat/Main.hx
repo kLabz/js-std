@@ -25,6 +25,11 @@ class Main {
 		var gl:RenderingContext = cast canvas.getContext("webgl");
 		gl.clear(RenderingContext.COLOR_BUFFER_BIT);
 
+		var div2:DivElement = Browser.document.createDivElement();
+		var ctx2:CanvasRenderingContext2D = canvas.getContext2d();
+		var gl2 = canvas.getContextWebGL2({antialias: false});
+		el.addEventListener("keydown", (e:js.html.KeyboardEvent) -> if (e.keyCode == js.html.KeyboardEvent.DOM_VK_LEFT) trace(div2, ctx2, gl2));
+
 		var type:XMLHttpRequestResponseType = XMLHttpRequestResponseType.JSON;
 		var db:Null<Database> = null;
 		new Custom();

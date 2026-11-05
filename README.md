@@ -106,7 +106,7 @@ Add `-lib js-html-compat` (next to `-lib js-window-api`) to keep existing code c
 
 Listeners take the event (`_ -> …`, not `() -> …`); with `js-html-compat`, listeners without argument still compile, with a deprecation warning.
 
-`KeyboardEvent.DOM_VK_*` (Firefox-only constants) are not in js-std; std's `js.html.KeyEvent.DOM_VK_*` still provides them, as inlined values.
+With `js-html-compat`, some std-only members are back on js-std types, deprecated with their replacement: `KeyboardEvent.DOM_VK_*` (Firefox-only constants: use `key` or `code`), `Document.create*Element()` (`createElement(DIV)`) and `HTMLCanvasElement.getContext2d()` / `getContextWebGL()` / `getContextWebGL2()` (`getContext(CONTEXT_2D)`…).
 
 `js-html-compat` only covers types available in `Window`; `js.html` types that js-std doesn't have (obsolete APIs, worker-only types) still come from the standard library.
 

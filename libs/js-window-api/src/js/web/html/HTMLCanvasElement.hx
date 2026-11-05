@@ -82,6 +82,14 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/transferControlToOffscreen>
 	**/
 	function transferControlToOffscreen():js.web.canvas.OffscreenCanvas;
+	#if js_html_compat
+	@:deprecated("Use `getContext(CONTEXT_2D)`")
+	inline function getContext2d(?attribs:js.web.canvas.CanvasRenderingContext2DSettings):js.web.canvas.CanvasRenderingContext2D return cast getContext(js.web.canvas.CanvasContextId.CONTEXT_2D, attribs);
+	@:deprecated("Use `getContext(WEBGL)`")
+	inline function getContextWebGL(?attribs:js.web.webgl.WebGLContextAttributes):js.web.webgl.WebGLRenderingContext return cast getContext(js.web.canvas.CanvasContextId.WEBGL, attribs);
+	@:deprecated("Use `getContext(WEBGL2)`")
+	inline function getContextWebGL2(?attribs:js.web.webgl.WebGLContextAttributes):js.web.webgl.WebGL2RenderingContext return cast getContext(js.web.canvas.CanvasContextId.WEBGL2, attribs);
+	#end
 	/**
 		The **`addEventListener()`** method of the `EventTarget` interface sets up a function that will be called whenever the specified event is delivered to the target.
 		

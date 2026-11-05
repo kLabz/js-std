@@ -64,6 +64,8 @@ Each type's documentation names the spec it comes from.
 
 With selectors, give the element type explicitly, as in TypeScript: `document.querySelector.<HTMLInputElement>("#name")` is a `Null<HTMLInputElement>`, and the same goes for `getElementById`, `querySelectorAll` (a `NodeListOf<HTMLInputElement>`) and `closest`. Without one, `getElementById` returns `HTMLElement` and the others `Element` (as in TypeScript), whatever the expected type. `parentElement` is also a `HTMLElement`. This needs explicit call type arguments and method default type parameters, from Haxe 5.0.0-preview.2; `-D js-generic-lookups` enables it on a compiler built with them that reports an earlier version.
 
+Otherwise, `downcast` checks an element's type: `document.querySelector("#name")?.downcast(HTMLInputElement)` is a `Null<HTMLInputElement>`, `null` when the element isn't one (an inlined `instanceof`). It works on any compiler and on any `Element`, wherever it comes from (`div.parentElement?.downcast(HTMLFormElement)`). `-D js-unchecked-downcasts` turns it into an unchecked cast.
+
 Canvas context ids are typed the same way, with their context and options: `canvas.getContext(WEBGL2, {antialias: false})` is a `Null<WebGL2RenderingContext>` (`js.web.canvas.CanvasContextId`), and `offscreenCanvas.getContext(CONTEXT_2D)` a `Null<OffscreenCanvasRenderingContext2D>` (`OffscreenRenderingContextId`). The id → context mapping is maintained in `generator/src/Canvas.hx`, as it is only in the HTML spec's prose.
 
 ## Typed events

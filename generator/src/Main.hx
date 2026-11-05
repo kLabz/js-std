@@ -454,6 +454,7 @@ class Main {
 			Elements.addOverloads(task.td, Elements.SVG, resolve);
 		}
 		for (task in pendingSaves) Elements.typeElementResults(task.td, resolve);
+		Elements.addDowncast(pendingSaves.find(task -> task.t == "Element").td);
 
 		var typeMeta = t -> pendingSaves.find(task -> task.t == t)?.td.meta;
 		var canvasPack = resolve("CanvasRenderingContext2D");

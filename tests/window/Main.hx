@@ -57,6 +57,11 @@ class Main {
 		document.createElement(MyWidget.TAG).count++;
 		trace(document.querySelector(MyWidget.TAG)?.count, window.customElements.getName(MyWidget));
 
+		var byId:Null<js.web.html.HTMLElement> = document.getElementById("name");
+		var checked:Null<HTMLInputElement> = byId?.downcast(HTMLInputElement);
+		var dot:Null<js.web.svg.SVGCircleElement> = document.querySelector("#dot")?.downcast(js.web.svg.SVGCircleElement);
+		trace(checked?.value, dot?.r, div.parentElement?.downcast(js.web.html.HTMLFormElement)?.action);
+
 		var svg = document.createElementNS(SVG_NAMESPACE, SVG);
 		var circle = document.createElementNS(SVG_NAMESPACE, CIRCLE);
 		circle.r.baseVal.value = 5;

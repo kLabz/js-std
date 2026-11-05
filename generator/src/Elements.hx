@@ -243,6 +243,31 @@ class Elements {
 		}
 	}
 
+	/**
+		Adds `element.downcast(HTMLInputElement)`: the element as a `HTMLInputElement`, or `null` if it isn't
+		one (`instanceof`). `-D js-unchecked-downcasts` makes it a plain cast.
+	**/
+	public static function addDowncast(td:TypeDefinition):Void {
+		var field = (expr:Expr) -> ({
+			name: "downcast",
+			doc: "This element as a `T`, or `null` if it isn't one (checked with `instanceof`):\n"
+				+ "`document.getElementById(\"name\")?.downcast(HTMLInputElement)`.\n\n"
+				+ "`-D js-unchecked-downcasts` makes it an unchecked cast.",
+			access: [AInline],
+			kind: FFun({
+				args: [{name: "cls", type: macro :Class<T>}],
+				ret: macro :Null<T>,
+				params: [{name: "T", constraints: [TPath({pack: [], name: td.name})]}],
+				expr: expr
+			}),
+			pos: td.pos
+		} : Field);
+		for (f in Conditional.chain([
+			{condition: "js_unchecked_downcasts", field: field(macro return cast this)},
+			{condition: null, field: field(macro return Std.downcast(this, cls))}
+		])) td.fields.push(f);
+	}
+
 	static function typePath(name:String, resolve:String->Null<Array<String>>):ComplexType {
 		return TPath({pack: resolve(name), name: name});
 	}

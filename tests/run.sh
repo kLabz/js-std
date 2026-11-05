@@ -19,9 +19,9 @@ fi
 # shellcheck disable=SC2086
 "$HAXE" $core -cp $libs/js-window-api/src -cp window -main Main -js bin/window.js && echo "window smoke test: compiled" || status=1
 # shellcheck disable=SC2086
-"$HAXE" $core -cp $libs/js-window-api/src -cp window -main Main -D js-unchecked-downcasts -js bin/window-unchecked.js \
-	&& ! grep -q "instanceof HTMLInputElement" bin/window-unchecked.js && grep -q "instanceof HTMLInputElement" bin/window.js \
-	&& echo "js-unchecked-downcasts: unchecked" || { echo "js-unchecked-downcasts: FAILED"; status=1; }
+"$HAXE" $core -cp $libs/js-window-api/src -cp window -main Main -D js-checked-downcasts -js bin/window-checked.js \
+	&& grep -q "instanceof HTMLInputElement" bin/window-checked.js && ! grep -q "instanceof HTMLInputElement" bin/window.js \
+	&& echo "js-checked-downcasts: checked" || { echo "js-checked-downcasts: FAILED"; status=1; }
 # shellcheck disable=SC2086
 "$HAXE" $core -cp $libs/js-window-api/src -cp nullsafety -main app.Main --macro 'nullSafety("app", Strict)' -js bin/nullsafety.js && echo "null safety smoke test: compiled" || status=1
 # shellcheck disable=SC2086

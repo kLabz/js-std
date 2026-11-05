@@ -244,15 +244,15 @@ class Elements {
 	}
 
 	/**
-		Adds `element.downcast(HTMLInputElement)`: the element as a `HTMLInputElement`, or `null` if it isn't
-		one (`instanceof`). `-D js-unchecked-downcasts` makes it a plain cast.
+		Adds `element.downcast(HTMLInputElement)`: an unchecked cast, like TypeScript's `as`.
+		`-D js-checked-downcasts` checks it with `instanceof`, giving `null` when the element isn't one.
 	**/
 	public static function addDowncast(td:TypeDefinition):Void {
 		var field = (expr:Expr) -> ({
 			name: "downcast",
-			doc: "This element as a `T`, or `null` if it isn't one (checked with `instanceof`):\n"
-				+ "`document.getElementById(\"name\")?.downcast(HTMLInputElement)`.\n\n"
-				+ "`-D js-unchecked-downcasts` makes it an unchecked cast.",
+			doc: "This element as a `T`: `document.getElementById(\"name\")?.downcast(HTMLInputElement)`.\n\n"
+				+ "Unchecked, unless compiled with `-D js-checked-downcasts`: `null` if the element isn't a `T`, "
+				+ "checked with `instanceof` (so also for an element from another frame, which has its own classes).",
 			access: [AInline],
 			kind: FFun({
 				args: [{name: "cls", type: macro :Class<T>}],
@@ -263,8 +263,8 @@ class Elements {
 			pos: td.pos
 		} : Field);
 		for (f in Conditional.chain([
-			{condition: "js_unchecked_downcasts", field: field(macro return cast this)},
-			{condition: null, field: field(macro return Std.downcast(this, cls))}
+			{condition: "js_checked_downcasts", field: field(macro return Std.downcast(this, cls))},
+			{condition: null, field: field(macro return cast this)}
 		])) td.fields.push(f);
 	}
 

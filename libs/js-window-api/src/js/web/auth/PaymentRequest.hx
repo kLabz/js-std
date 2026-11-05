@@ -61,9 +61,9 @@ package js.web.auth;
 	**/
 	@:deprecated
 	var shippingType(default, null) : Null<PaymentShippingType>;
-	var onshippingaddresschange : js.web.html.EventHandler;
-	var onshippingoptionchange : js.web.html.EventHandler;
-	var onpaymentmethodchange : js.web.html.EventHandler;
+	var onshippingaddresschange : Null<(event:js.web.auth.PaymentRequestUpdateEvent) -> Void>;
+	var onshippingoptionchange : Null<(event:js.web.auth.PaymentRequestUpdateEvent) -> Void>;
+	var onpaymentmethodchange : Null<(event:js.web.auth.PaymentMethodChangeEvent) -> Void>;
 	/**
 		The **`PaymentRequest()`** constructor creates a new `PaymentRequest` object which will be used to handle the process of generating, validating, and submitting a payment request.
 		

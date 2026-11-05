@@ -36,7 +36,7 @@ package js.web.media;
 	@see <https://developer.mozilla.org/docs/Web/API/PresentationRequest>
 **/
 @:native("PresentationRequest") @:require(js_experimental_api, "PresentationRequest is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PresentationRequest extends js.web.dom.EventTarget {
-	var onconnectionavailable : js.web.html.EventHandler;
+	var onconnectionavailable : Null<(event:js.web.media.PresentationConnectionAvailableEvent) -> Void>;
 	/**
 		The **`PresentationRequest()`** constructor creates a new `PresentationRequest` object which creates a new PresentationRequest.
 		

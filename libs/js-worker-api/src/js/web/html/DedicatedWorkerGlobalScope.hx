@@ -43,15 +43,15 @@ package js.web.html;
 	/**
 		From interface mixin MessageEventTarget
 	**/
-	var onmessage : EventHandler;
+	var onmessage : Null<(event:js.web.html.MessageEvent) -> Void>;
 	/**
 		From interface mixin MessageEventTarget
 	**/
-	var onmessageerror : EventHandler;
+	var onmessageerror : Null<(event:js.web.html.MessageEvent) -> Void>;
 	/**
 		From partial interface in webrtc-encoded-transform.idl
 	**/
-	var onrtctransform : EventHandler;
+	var onrtctransform : Null<(event:js.web.webrtc.RTCTransformEvent) -> Void>;
 	/**
 		The **`cancelAnimationFrame()`** method of the `DedicatedWorkerGlobalScope` interface cancels an animation frame request previously scheduled through a call to `requestAnimationFrame()`.
 		

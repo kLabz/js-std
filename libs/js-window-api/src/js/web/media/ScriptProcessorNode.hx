@@ -32,7 +32,7 @@ package js.web.media;
 	@see <https://developer.mozilla.org/docs/Web/API/ScriptProcessorNode>
 **/
 @:native("ScriptProcessorNode") @:deprecated extern class ScriptProcessorNode extends AudioNode {
-	var onaudioprocess : js.web.html.EventHandler;
+	var onaudioprocess : Null<(event:js.web.media.AudioProcessingEvent) -> Void>;
 	/**
 		The `bufferSize` property of the `ScriptProcessorNode` interface returns an integer representing both the input and output buffer size, in sample-frames. Its value can be a power of 2 value in the range `256` – `16384`.
 		

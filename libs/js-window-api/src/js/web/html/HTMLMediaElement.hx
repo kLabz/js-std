@@ -239,7 +239,7 @@ package js.web.html;
 	/**
 		From partial interface in encrypted-media.idl
 	**/
-	var onencrypted : EventHandler;
+	var onencrypted : Null<(event:js.web.media.MediaEncryptedEvent) -> Void>;
 	/**
 		From partial interface in encrypted-media.idl
 	**/

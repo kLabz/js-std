@@ -35,11 +35,11 @@ package js.web.html;
 	/**
 		From interface mixin MessageEventTarget
 	**/
-	var onmessage : EventHandler;
+	var onmessage : Null<(event:js.web.html.MessageEvent) -> Void>;
 	/**
 		From interface mixin MessageEventTarget
 	**/
-	var onmessageerror : EventHandler;
+	var onmessageerror : Null<(event:js.web.html.MessageEvent) -> Void>;
 	/**
 		The **`close()`** method of the `MessagePort` interface disconnects the port, so it is no longer active. This stops the flow of messages to that port.
 		

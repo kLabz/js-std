@@ -64,16 +64,16 @@ package js.web.xr;
 	**/
 	var enabledFeatures(default, null) : haxe.ds.ReadOnlyArray<String>;
 	var isSystemKeyboardSupported(default, null) : Bool;
-	var onend : js.web.html.EventHandler;
-	var oninputsourceschange : js.web.html.EventHandler;
-	var onselect : js.web.html.EventHandler;
-	var onselectstart : js.web.html.EventHandler;
-	var onselectend : js.web.html.EventHandler;
-	var onsqueeze : js.web.html.EventHandler;
-	var onsqueezestart : js.web.html.EventHandler;
-	var onsqueezeend : js.web.html.EventHandler;
-	var onvisibilitychange : js.web.html.EventHandler;
-	var onframeratechange : js.web.html.EventHandler;
+	var onend : Null<(event:js.web.xr.XRSessionEvent) -> Void>;
+	var oninputsourceschange : Null<(event:js.web.xr.XRInputSourcesChangeEvent) -> Void>;
+	var onselect : Null<(event:js.web.xr.XRInputSourceEvent) -> Void>;
+	var onselectstart : Null<(event:js.web.xr.XRInputSourceEvent) -> Void>;
+	var onselectend : Null<(event:js.web.xr.XRInputSourceEvent) -> Void>;
+	var onsqueeze : Null<(event:js.web.xr.XRInputSourceEvent) -> Void>;
+	var onsqueezestart : Null<(event:js.web.xr.XRInputSourceEvent) -> Void>;
+	var onsqueezeend : Null<(event:js.web.xr.XRInputSourceEvent) -> Void>;
+	var onvisibilitychange : Null<(event:js.web.xr.XRSessionEvent) -> Void>;
+	var onframeratechange : Null<(event:js.web.xr.XRSessionEvent) -> Void>;
 	/**
 		From partial interface in anchors.idl
 	**/

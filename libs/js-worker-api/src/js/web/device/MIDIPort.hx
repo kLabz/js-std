@@ -76,7 +76,7 @@ package js.web.device;
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIPort/connection>
 	**/
 	var connection(default, null) : MIDIPortConnectionState;
-	var onstatechange : js.web.html.EventHandler;
+	var onstatechange : Null<(event:js.web.device.MIDIConnectionEvent) -> Void>;
 	/**
 		The **`close()`** method of the `MIDIPort` interface makes the access to the MIDI device connected to this `MIDIPort` unavailable.
 		

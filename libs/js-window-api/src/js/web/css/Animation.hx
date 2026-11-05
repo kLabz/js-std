@@ -86,9 +86,9 @@ package js.web.css;
 		@see <https://developer.mozilla.org/docs/Web/API/Animation/finished>
 	**/
 	var finished(default, null) : js.lib.Promise<Animation>;
-	var onfinish : js.web.html.EventHandler;
-	var oncancel : js.web.html.EventHandler;
-	var onremove : js.web.html.EventHandler;
+	var onfinish : Null<(event:js.web.css.AnimationPlaybackEvent) -> Void>;
+	var oncancel : Null<(event:js.web.css.AnimationPlaybackEvent) -> Void>;
+	var onremove : Null<(event:js.web.css.AnimationPlaybackEvent) -> Void>;
 	/**
 		The **`Animation.startTime`** property of the `Animation` interface is a double-precision floating-point value which indicates the scheduled time when an animation's playback should begin.
 		

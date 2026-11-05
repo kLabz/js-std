@@ -36,8 +36,8 @@ package js.web.device;
 	@see <https://developer.mozilla.org/docs/Web/API/USB>
 **/
 @:native("USB") @:require(js_experimental_api, "USB is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class USB extends js.web.dom.EventTarget {
-	var onconnect : js.web.html.EventHandler;
-	var ondisconnect : js.web.html.EventHandler;
+	var onconnect : Null<(event:js.web.device.USBConnectionEvent) -> Void>;
+	var ondisconnect : Null<(event:js.web.device.USBConnectionEvent) -> Void>;
 	/**
 		The **`getDevices`** method of the `USB` interface returns a `Promise` that resolves with an array of `USBDevice` objects for paired attached devices. For information on pairing devices, see `USB.requestDevice()`.
 		

@@ -38,9 +38,9 @@ package js.web.svg;
 		@see <https://developer.mozilla.org/docs/Web/API/SVGAnimationElement/targetElement>
 	**/
 	var targetElement(default, null) : Null<SVGElement>;
-	var onbegin : js.web.html.EventHandler;
-	var onend : js.web.html.EventHandler;
-	var onrepeat : js.web.html.EventHandler;
+	var onbegin : Null<(event:js.web.svg.TimeEvent) -> Void>;
+	var onend : Null<(event:js.web.svg.TimeEvent) -> Void>;
+	var onrepeat : Null<(event:js.web.svg.TimeEvent) -> Void>;
 	/**
 		The **`requiredExtensions`** read-only property of the `SVGAnimationElement` interface reflects the `requiredExtensions` attribute of the given element.
 		

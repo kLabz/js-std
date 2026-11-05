@@ -39,11 +39,11 @@ package js.web.html;
 	/**
 		From interface mixin MessageEventTarget
 	**/
-	var onmessage : EventHandler;
+	var onmessage : Null<(event:js.web.html.MessageEvent) -> Void>;
 	/**
 		From interface mixin MessageEventTarget
 	**/
-	var onmessageerror : EventHandler;
+	var onmessageerror : Null<(event:js.web.html.MessageEvent) -> Void>;
 	/**
 		The **`Worker()`** constructor creates a `Worker` object that executes the classic script or module at the specified URL.
 		

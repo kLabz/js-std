@@ -56,7 +56,7 @@ package js.web.net;
 	var bufferedAmount(default, null) : Float;
 	var onopen : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
-	var onclose : js.web.html.EventHandler;
+	var onclose : Null<(event:js.web.net.CloseEvent) -> Void>;
 	/**
 		The **`WebSocket.extensions`** read-only property returns the extensions selected by the server. This is currently only the empty string or a list of extensions as negotiated by the connection.
 		
@@ -69,7 +69,7 @@ package js.web.net;
 		@see <https://developer.mozilla.org/docs/Web/API/WebSocket/protocol>
 	**/
 	var protocol(default, null) : String;
-	var onmessage : js.web.html.EventHandler;
+	var onmessage : Null<(event:js.web.html.MessageEvent) -> Void>;
 	/**
 		The **`WebSocket.binaryType`** property controls the type of binary data being received over the WebSocket connection.
 		

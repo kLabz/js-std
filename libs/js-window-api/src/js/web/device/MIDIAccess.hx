@@ -46,7 +46,7 @@ package js.web.device;
 		@see <https://developer.mozilla.org/docs/Web/API/MIDIAccess/outputs>
 	**/
 	var outputs(default, null) : MIDIOutputMap;
-	var onstatechange : js.web.html.EventHandler;
+	var onstatechange : Null<(event:js.web.device.MIDIConnectionEvent) -> Void>;
 	/**
 		The **`sysexEnabled`** read-only property of the `MIDIAccess` interface indicates whether system exclusive support is enabled on the current MIDIAccess instance.
 		

@@ -28,8 +28,8 @@ package js.web.html;
 	Experimental: requires `-D js-experimental-api`.
 **/
 @:native("PortalHost") @:require(js_experimental_api, "PortalHost is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PortalHost extends js.web.dom.EventTarget {
-	var onmessage : EventHandler;
-	var onmessageerror : EventHandler;
+	var onmessage : Null<(event:js.web.html.MessageEvent) -> Void>;
+	var onmessageerror : Null<(event:js.web.html.MessageEvent) -> Void>;
 	function postMessage(message:Null<Any>, ?options:StructuredSerializeOptions):Void;
 	/**
 		The **`addEventListener()`** method of the `EventTarget` interface sets up a function that will be called whenever the specified event is delivered to the target.

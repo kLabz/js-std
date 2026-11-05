@@ -56,7 +56,7 @@ package js.web.device;
 	var timestamp(default, null) : Null<js.web.perf.DOMHighResTimeStamp>;
 	var onreading : js.web.html.EventHandler;
 	var onactivate : js.web.html.EventHandler;
-	var onerror : js.web.html.EventHandler;
+	var onerror : Null<(event:js.web.device.SensorErrorEvent) -> Void>;
 	/**
 		The **`start()`** method of the `Sensor` interface activates one of the sensors based on `Sensor`.
 		

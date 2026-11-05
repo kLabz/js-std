@@ -78,6 +78,16 @@ class Main {
 		div.addEventListener(WHEEL, onWheel);
 		div.removeEventListener(WHEEL, onWheel);
 
+		var html:js.web.html.HTMLElement = cast div;
+		html.onclick = e -> trace(e.clientX);
+		html.onkeydown = e -> e.key == "Enter";
+		function onMouse(e:js.web.dom.MouseEvent) trace(e.button);
+		html.onclick = onMouse;
+		html.onclick = null;
+		window.onmessage = e -> trace(e.data);
+		window.onerror = (event, ?source, ?line, ?col, ?error) -> trace(source);
+		xhr.onprogress = e -> trace(e.loaded);
+
 		var custom:HTMLElementTagName<js.web.html.HTMLElement> = cast "my-widget";
 		trace(document.createElement(custom).hidden, DIV.toString());
 

@@ -46,7 +46,7 @@ package js.web.xr;
 		@see <https://developer.mozilla.org/docs/Web/API/XRCubeLayer/orientation>
 	**/
 	var orientation : js.web.dom.DOMPointReadOnly;
-	var onredraw : js.web.html.EventHandler;
+	var onredraw : Null<(event:js.web.xr.XRLayerEvent) -> Void>;
 	/**
 		The **`addEventListener()`** method of the `EventTarget` interface sets up a function that will be called whenever the specified event is delivered to the target.
 		

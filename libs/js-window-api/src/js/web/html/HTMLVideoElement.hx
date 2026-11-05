@@ -66,11 +66,11 @@ package js.web.html;
 	/**
 		From partial interface in picture-in-picture.idl
 	**/
-	var onenterpictureinpicture : EventHandler;
+	var onenterpictureinpicture : Null<(event:js.web.html.PictureInPictureEvent) -> Void>;
 	/**
 		From partial interface in picture-in-picture.idl
 	**/
-	var onleavepictureinpicture : EventHandler;
+	var onleavepictureinpicture : Null<(event:js.web.html.PictureInPictureEvent) -> Void>;
 	/**
 		The **`disablePictureInPicture`** property of the `HTMLVideoElement` interface reflects the [`disablepictureinpicture`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video#disablepictureinpicture) HTML attribute indicating whether the picture-in-picture feature is disabled for the current element.
 		

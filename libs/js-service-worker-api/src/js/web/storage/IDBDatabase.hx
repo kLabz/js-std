@@ -53,7 +53,7 @@ package js.web.storage;
 	var onabort : js.web.html.EventHandler;
 	var onclose : js.web.html.EventHandler;
 	var onerror : js.web.html.EventHandler;
-	var onversionchange : js.web.html.EventHandler;
+	var onversionchange : Null<(event:js.web.storage.IDBVersionChangeEvent) -> Void>;
 	/**
 		The **`close()`** method of the `IDBDatabase` interface returns immediately and closes the connection in a separate thread.
 		

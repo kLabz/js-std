@@ -30,8 +30,8 @@ package js.web.html;
 @:native("HTMLPortalElement") @:require(js_experimental_api, "HTMLPortalElement is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class HTMLPortalElement extends HTMLElement {
 	var src : String;
 	var referrerPolicy : String;
-	var onmessage : EventHandler;
-	var onmessageerror : EventHandler;
+	var onmessage : Null<(event:js.web.html.MessageEvent) -> Void>;
+	var onmessageerror : Null<(event:js.web.html.MessageEvent) -> Void>;
 	function activate(?options:PortalActivateOptions):js.lib.Promise<Void>;
 	function postMessage(message:Null<Any>, ?options:StructuredSerializeOptions):Void;
 	/**

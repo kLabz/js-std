@@ -40,7 +40,7 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/SharedWorkerGlobalScope/name>
 	**/
 	var name(default, null) : String;
-	var onconnect : EventHandler;
+	var onconnect : Null<(event:js.web.html.MessageEvent) -> Void>;
 	/**
 		The **`close()`** method of the `SharedWorkerGlobalScope` interface discards any tasks queued in the `SharedWorkerGlobalScope`'s event loop, effectively closing this particular scope.
 		

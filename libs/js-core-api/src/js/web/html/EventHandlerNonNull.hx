@@ -24,4 +24,4 @@
 
 package js.web.html;
 
-typedef EventHandlerNonNull = (event:js.web.dom.Event) -> Null<Any>;
+typedef EventHandlerNonNull = (event:js.web.dom.Event) -> Void;

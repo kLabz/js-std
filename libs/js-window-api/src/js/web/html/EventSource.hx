@@ -54,7 +54,7 @@ package js.web.html;
 	**/
 	var readyState(default, null) : Int;
 	var onopen : EventHandler;
-	var onmessage : EventHandler;
+	var onmessage : Null<(event:js.web.html.MessageEvent) -> Void>;
 	var onerror : EventHandler;
 	/**
 		The **`EventSource()`** constructor returns a newly-created `EventSource`, which represents a remote resource.

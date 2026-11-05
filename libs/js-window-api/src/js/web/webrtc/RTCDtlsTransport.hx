@@ -45,7 +45,7 @@ package js.web.webrtc;
 	**/
 	var state(default, null) : RTCDtlsTransportState;
 	var onstatechange : js.web.html.EventHandler;
-	var onerror : js.web.html.EventHandler;
+	var onerror : Null<(event:js.web.webrtc.RTCErrorEvent) -> Void>;
 	/**
 		The **`getRemoteCertificates()`** method of the `RTCDtlsTransport` interface returns the certificate chain of the remote peer of the DTLS connection.
 		

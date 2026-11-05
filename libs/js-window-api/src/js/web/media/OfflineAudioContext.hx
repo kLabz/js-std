@@ -38,7 +38,7 @@ package js.web.media;
 		@see <https://developer.mozilla.org/docs/Web/API/OfflineAudioContext/length>
 	**/
 	var length(default, null) : Null<Int>;
-	var oncomplete : js.web.html.EventHandler;
+	var oncomplete : Null<(event:js.web.media.OfflineAudioCompletionEvent) -> Void>;
 	/**
 		The **`OfflineAudioContext()`** constructor—part of the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)—creates and returns a new `OfflineAudioContext` object instance, which can then be used to render audio to an `AudioBuffer` rather than to an audio output device.
 		

@@ -24,4 +24,4 @@
 
 package js.web.html;
 
-typedef OnBeforeUnloadEventHandlerNonNull = (event:js.web.dom.Event) -> Null<String>;
+typedef OnBeforeUnloadEventHandlerNonNull = (event:js.web.dom.Event) -> Void;

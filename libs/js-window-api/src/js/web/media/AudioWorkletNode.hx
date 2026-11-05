@@ -46,7 +46,7 @@ package js.web.media;
 		@see <https://developer.mozilla.org/docs/Web/API/AudioWorkletNode/port>
 	**/
 	var port(default, null) : js.web.html.MessagePort;
-	var onprocessorerror : js.web.html.EventHandler;
+	var onprocessorerror : Null<(event:js.web.html.ErrorEvent) -> Void>;
 	/**
 		The **`AudioWorkletNode()`** constructor creates a new `AudioWorkletNode` object, which represents an `AudioNode` that uses a JavaScript function to perform custom audio processing.
 		

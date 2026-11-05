@@ -44,8 +44,8 @@ package js.web.media;
 		@see <https://developer.mozilla.org/docs/Web/API/MediaStream/active>
 	**/
 	var active(default, null) : Bool;
-	var onaddtrack : js.web.html.EventHandler;
-	var onremovetrack : js.web.html.EventHandler;
+	var onaddtrack : Null<(event:js.web.media.MediaStreamTrackEvent) -> Void>;
+	var onremovetrack : Null<(event:js.web.media.MediaStreamTrackEvent) -> Void>;
 	/**
 		The **`MediaStream()`** constructor returns a newly-created `MediaStream`, which serves as a collection of media tracks, each represented by a `MediaStreamTrack` object.
 		

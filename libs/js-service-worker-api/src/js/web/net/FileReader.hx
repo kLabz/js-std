@@ -53,12 +53,12 @@ package js.web.net;
 		@see <https://developer.mozilla.org/docs/Web/API/FileReader/error>
 	**/
 	var error(default, null) : Null<js.web.dom.DOMException>;
-	var onloadstart : js.web.html.EventHandler;
-	var onprogress : js.web.html.EventHandler;
-	var onload : js.web.html.EventHandler;
-	var onabort : js.web.html.EventHandler;
-	var onerror : js.web.html.EventHandler;
-	var onloadend : js.web.html.EventHandler;
+	var onloadstart : Null<(event:js.web.net.ProgressEvent) -> Void>;
+	var onprogress : Null<(event:js.web.net.ProgressEvent) -> Void>;
+	var onload : Null<(event:js.web.net.ProgressEvent) -> Void>;
+	var onabort : Null<(event:js.web.net.ProgressEvent) -> Void>;
+	var onerror : Null<(event:js.web.net.ProgressEvent) -> Void>;
+	var onloadend : Null<(event:js.web.net.ProgressEvent) -> Void>;
 	/**
 		The **`FileReader()`** constructor creates a new `FileReader`.
 		

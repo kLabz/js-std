@@ -41,8 +41,8 @@ package js.web.html;
 	**/
 	var length(default, null) : Int;
 	var onchange : EventHandler;
-	var onaddtrack : EventHandler;
-	var onremovetrack : EventHandler;
+	var onaddtrack : Null<(event:js.web.html.TrackEvent) -> Void>;
+	var onremovetrack : Null<(event:js.web.html.TrackEvent) -> Void>;
 	/**
 		The **`AudioTrackList`** method **`getTrackById()`** returns the first `AudioTrack` object from the track list whose `id` matches the specified string. This lets you find a specified track if you know its ID string.
 		

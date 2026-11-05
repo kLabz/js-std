@@ -36,7 +36,7 @@ package js.web.ml;
 	@see <https://developer.mozilla.org/docs/Web/API/CreateMonitor>
 **/
 @:native("CreateMonitor") @:require(js_experimental_api, "CreateMonitor is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class CreateMonitor extends js.web.dom.EventTarget {
-	var ondownloadprogress : js.web.html.EventHandler;
+	var ondownloadprogress : Null<(event:js.web.net.ProgressEvent) -> Void>;
 	/**
 		The **`addEventListener()`** method of the `EventTarget` interface sets up a function that will be called whenever the specified event is delivered to the target.
 		

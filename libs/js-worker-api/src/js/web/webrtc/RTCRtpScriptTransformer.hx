@@ -44,7 +44,7 @@ package js.web.webrtc;
 		@see <https://developer.mozilla.org/docs/Web/API/RTCRtpScriptTransformer/writable>
 	**/
 	var writable(default, null) : js.web.net.WritableStream;
-	var onkeyframerequest : js.web.html.EventHandler;
+	var onkeyframerequest : Null<(event:js.web.webrtc.KeyFrameRequestEvent) -> Void>;
 	/**
 		The **`options`** read-only property of the `RTCRtpScriptTransformer` interface returns the object that was (optionally) passed as the second argument [during construction](https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpScriptTransform/RTCRtpScriptTransform) of the corresponding `RTCRtpScriptTransform`.
 		

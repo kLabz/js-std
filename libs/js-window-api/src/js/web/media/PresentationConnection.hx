@@ -55,7 +55,7 @@ package js.web.media;
 	**/
 	var state(default, null) : PresentationConnectionState;
 	var onconnect : js.web.html.EventHandler;
-	var onclose : js.web.html.EventHandler;
+	var onclose : Null<(event:js.web.media.PresentationConnectionCloseEvent) -> Void>;
 	var onterminate : js.web.html.EventHandler;
 	/**
 		When a `PresentationConnection` object is created, its `binaryType` IDL attribute _MUST_ be set to the string `"arraybuffer"`. Upon getting, the attribute _MUST_ return its most recent value (the value it was last set as). Upon setting, the user agent _MUST_ set the IDL attribute to the new value.
@@ -63,7 +63,7 @@ package js.web.media;
 		@see <https://developer.mozilla.org/docs/Web/API/PresentationConnection/binaryType>
 	**/
 	var binaryType : js.web.net.BinaryType;
-	var onmessage : js.web.html.EventHandler;
+	var onmessage : Null<(event:js.web.html.MessageEvent) -> Void>;
 	/**
 		When the `close()` method is called on a `PresentationConnection`, the user agent begins the process of closing the connection by sending an empty `closeMessage` with the `closeReason` set to `closed`.
 		

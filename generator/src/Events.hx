@@ -131,6 +131,39 @@ class Events {
 		}
 	}
 
+	/** `onclick:EventHandler` becomes `onclick:Null<(event:PointerEvent) -> Void>`, from the events `td` and its parents receive. **/
+	public static function typeHandlers(td:TypeDefinition, byTarget:Map<String, Map<String, {iface:String, href:String, targets:Array<String>}>>,
+			parentOf:String->Null<String>, childrenOf:String->Array<String>, resolve:String->Null<Array<String>>):Void {
+		// Declared on a parent (`XMLHttpRequestEventTarget.onprogress`), fired at its descendants
+		function fromDescendants(target:String, type:String, found:Array<String>) {
+			for (child in childrenOf(target)) {
+				var iface = byTarget.get(child)?.get(type)?.iface;
+				if (iface != null && !found.contains(iface)) found.push(iface);
+				fromDescendants(child, type, found);
+			}
+			return found;
+		}
+
+		for (f in td.fields) switch (f.kind) {
+			case FVar(TPath({name: "EventHandler", params: null | []}), e) if (f.name.startsWith("on")):
+				var type = f.name.substr(2);
+				var target = td.name;
+				var iface = null;
+				while (target != null && iface == null) {
+					iface = byTarget.get(target)?.get(type)?.iface;
+					target = parentOf(target);
+				}
+				if (iface == null) {
+					var found = fromDescendants(td.name, type, []);
+					if (found.length == 1) iface = found[0];
+				}
+				if (iface == null || iface == "Event") continue;
+				var event = TPath({pack: resolve(iface), name: iface});
+				f.kind = FVar(macro :Null<(event:$event) -> Void>, e);
+			case _:
+		}
+	}
+
 	/** `EventTarget`'s own methods become overloads too, so subclasses can add theirs. **/
 	public static function markOverloads(eventTarget:TypeDefinition):Void {
 		for (f in eventTarget.fields) if (f.name == "addEventListener" || f.name == "removeEventListener") {

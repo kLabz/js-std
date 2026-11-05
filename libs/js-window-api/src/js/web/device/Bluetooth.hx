@@ -36,12 +36,12 @@ package js.web.device;
 	@see <https://developer.mozilla.org/docs/Web/API/Bluetooth>
 **/
 @:native("Bluetooth") @:require(js_experimental_api, "Bluetooth is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class Bluetooth extends js.web.dom.EventTarget {
-	var onavailabilitychanged : js.web.html.EventHandler;
+	var onavailabilitychanged : Null<(event:js.web.device.ValueEvent) -> Void>;
 	var referringDevice(default, null) : Null<BluetoothDevice>;
 	/**
 		From interface mixin BluetoothDeviceEventHandlers
 	**/
-	var onadvertisementreceived : js.web.html.EventHandler;
+	var onadvertisementreceived : Null<(event:js.web.device.BluetoothAdvertisingEvent) -> Void>;
 	/**
 		From interface mixin BluetoothDeviceEventHandlers
 	**/

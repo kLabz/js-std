@@ -39,7 +39,7 @@ package js.web.webrtc;
 	/**
 		From interface mixin SFrameDecryptorManager
 	**/
-	var onerror : js.web.html.EventHandler;
+	var onerror : Null<(event:js.web.webrtc.SFrameTransformErrorEvent) -> Void>;
 	function new(options:SFrameTransformOptions):Void;
 	/**
 		From interface mixin SFrameDecryptorManager

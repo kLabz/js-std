@@ -34,7 +34,7 @@ package js.web.device;
 	@see <https://developer.mozilla.org/docs/Web/API/MIDIInput>
 **/
 @:native("MIDIInput") extern class MIDIInput extends MIDIPort {
-	var onmidimessage : js.web.html.EventHandler;
+	var onmidimessage : Null<(event:js.web.device.MIDIMessageEvent) -> Void>;
 	/**
 		The **`addEventListener()`** method of the `EventTarget` interface sets up a function that will be called whenever the specified event is delivered to the target.
 		

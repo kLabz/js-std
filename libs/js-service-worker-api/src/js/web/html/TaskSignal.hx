@@ -38,7 +38,7 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/TaskSignal/priority>
 	**/
 	var priority(default, null) : TaskPriority;
-	var onprioritychange : EventHandler;
+	var onprioritychange : Null<(event:js.web.html.TaskPriorityChangeEvent) -> Void>;
 	/**
 		The **`TaskSignal.any()`** static method takes an iterable of `AbortSignal` objects and returns a `TaskSignal`. The returned task signal is aborted when any of the abort signals is aborted.
 		

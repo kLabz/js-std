@@ -77,7 +77,7 @@ package js.web.webgpu;
 	/**
 		From partial interface in webgpu.idl
 	**/
-	var onuncapturederror : js.web.html.EventHandler;
+	var onuncapturederror : Null<(event:js.web.webgpu.GPUUncapturedErrorEvent) -> Void>;
 	/**
 		The **`createBindGroup()`** method of the `GPUDevice` interface creates a `GPUBindGroup` based on a `GPUBindGroupLayout` that defines a set of resources to be bound together in a group and how those resources are used in shader stages.
 		

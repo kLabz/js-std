@@ -38,7 +38,10 @@ class Main {
 		function onAbort(e:js.web.dom.Event) abortType = e.type;
 		controller.signal.addEventListener(ABORT, onAbort);
 		controller.signal.addEventListener(ABORT, e -> check(e.target == controller.signal, "typed listener target"));
+		var handled = false;
+		controller.signal.onabort = e -> handled = true;
 		controller.abort();
+		check(handled, "onabort handler");
 		controller.signal.removeEventListener(ABORT, onAbort);
 		check(abortType == "abort", "typed addEventListener");
 		check(controller.signal.aborted, "AbortSignal.aborted");

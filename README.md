@@ -68,6 +68,8 @@ Canvas context ids are typed the same way, with their context and options: `canv
 
 Each event target has a `<Target>EventType<E>` (from [`@webref/events`](https://github.com/w3c/webref/tree/main/packages/events)) listing the events fired at or bubbling to it, typed with their interface, and `addEventListener` / `removeEventListener` accept it: `element.addEventListener(CLICK, e -> e.clientX)` gives a `PointerEvent`, `window.addEventListener(MESSAGE, e -> e.data)` a `MessageEvent`. Events of a parent interface are in its own type (`CLICK` is in `NodeEventType`, inherited by every element). Strings still work and give `Event`.
 
+Event handler properties are typed the same way (`element.onclick = e -> e.clientX`), and return `Void`: WebIDL's `any` return is only used by the legacy `return false`, which still compiles.
+
 ## Haxe 4
 
 Haxe 4 only resolves these typed values (`DIV`, `WEBGL2`, `CLICK`…) through overloaded methods when their type is imported (`import js.web.dom.NodeEventType;`) or when they are qualified (`NodeEventType.CLICK`). Haxe 5 resolves them from the expected type alone. Strings still work and give `Element`. For custom elements, `HTMLElementTagName.of` types a tag name with its class, and `customElements.define` checks they match:

@@ -32,7 +32,7 @@ package js.web.webrtc;
 	@see <https://developer.mozilla.org/docs/Web/API/RTCDTMFSender>
 **/
 @:native("RTCDTMFSender") extern class RTCDTMFSender extends js.web.dom.EventTarget {
-	var ontonechange : js.web.html.EventHandler;
+	var ontonechange : Null<(event:js.web.webrtc.RTCDTMFToneChangeEvent) -> Void>;
 	/**
 		The **`canInsertDTMF`** read-only property of the `RTCDTMFSender` interface returns a boolean value which indicates whether the `RTCDTMFSender` is capable of sending DTMF tones over the `RTCPeerConnection`.
 		

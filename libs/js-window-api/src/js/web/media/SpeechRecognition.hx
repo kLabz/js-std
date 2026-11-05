@@ -88,9 +88,9 @@ package js.web.media;
 	var onspeechend : js.web.html.EventHandler;
 	var onsoundend : js.web.html.EventHandler;
 	var onaudioend : js.web.html.EventHandler;
-	var onresult : js.web.html.EventHandler;
-	var onnomatch : js.web.html.EventHandler;
-	var onerror : js.web.html.EventHandler;
+	var onresult : Null<(event:js.web.media.SpeechRecognitionEvent) -> Void>;
+	var onnomatch : Null<(event:js.web.media.SpeechRecognitionEvent) -> Void>;
+	var onerror : Null<(event:js.web.media.SpeechRecognitionErrorEvent) -> Void>;
 	var onstart : js.web.html.EventHandler;
 	var onend : js.web.html.EventHandler;
 	/**

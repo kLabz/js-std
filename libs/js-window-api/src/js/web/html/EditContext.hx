@@ -58,11 +58,11 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/EditContext/characterBoundsRangeStart>
 	**/
 	var characterBoundsRangeStart(default, null) : Int;
-	var ontextupdate : EventHandler;
-	var ontextformatupdate : EventHandler;
-	var oncharacterboundsupdate : EventHandler;
-	var oncompositionstart : EventHandler;
-	var oncompositionend : EventHandler;
+	var ontextupdate : Null<(event:js.web.html.TextUpdateEvent) -> Void>;
+	var ontextformatupdate : Null<(event:js.web.html.TextFormatUpdateEvent) -> Void>;
+	var oncharacterboundsupdate : Null<(event:js.web.html.CharacterBoundsUpdateEvent) -> Void>;
+	var oncompositionstart : Null<(event:js.web.dom.CompositionEvent) -> Void>;
+	var oncompositionend : Null<(event:js.web.dom.CompositionEvent) -> Void>;
 	/**
 		The **`EditContext()`** constructor returns a new `EditContext` object.
 		

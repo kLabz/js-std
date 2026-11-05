@@ -44,7 +44,7 @@ package js.web.css;
 		@see <https://developer.mozilla.org/docs/Web/API/MediaQueryList/matches>
 	**/
 	var matches(default, null) : Bool;
-	var onchange : js.web.html.EventHandler;
+	var onchange : Null<(event:js.web.css.MediaQueryListEvent) -> Void>;
 	/**
 		The deprecated **`addListener()`** method of the `MediaQueryList` interface adds a listener to the `MediaQueryListener` that will run a custom callback function in response to the media query status changing.
 		

@@ -61,7 +61,7 @@ package js.web.webrtc;
 	/**
 		From partial interface in webrtc-ice.idl
 	**/
-	var onicecandidate : js.web.html.EventHandler;
+	var onicecandidate : Null<(event:js.web.webrtc.RTCPeerConnectionIceEvent) -> Void>;
 	/**
 		From partial interface in webrtc-ice.idl
 	**/

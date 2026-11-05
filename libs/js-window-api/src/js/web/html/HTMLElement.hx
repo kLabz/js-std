@@ -151,19 +151,19 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onanimationstart : EventHandler;
+	var onanimationstart : Null<(event:js.web.css.AnimationEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onanimationiteration : EventHandler;
+	var onanimationiteration : Null<(event:js.web.css.AnimationEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onanimationend : EventHandler;
+	var onanimationend : Null<(event:js.web.css.AnimationEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onanimationcancel : EventHandler;
+	var onanimationcancel : Null<(event:js.web.css.AnimationEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -175,19 +175,19 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ontransitionrun : EventHandler;
+	var ontransitionrun : Null<(event:js.web.css.TransitionEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ontransitionstart : EventHandler;
+	var ontransitionstart : Null<(event:js.web.css.TransitionEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ontransitionend : EventHandler;
+	var ontransitionend : Null<(event:js.web.css.TransitionEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ontransitioncancel : EventHandler;
+	var ontransitioncancel : Null<(event:js.web.css.TransitionEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -199,11 +199,11 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onauxclick : EventHandler;
+	var onauxclick : Null<(event:js.web.dom.PointerEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onbeforeinput : EventHandler;
+	var onbeforeinput : Null<(event:js.web.dom.InputEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -211,11 +211,11 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onbeforetoggle : EventHandler;
+	var onbeforetoggle : Null<(event:js.web.html.ToggleEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onblur : EventHandler;
+	var onblur : Null<(event:js.web.dom.FocusEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -235,7 +235,7 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onclick : EventHandler;
+	var onclick : Null<(event:js.web.dom.PointerEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -243,7 +243,7 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var oncommand : EventHandler;
+	var oncommand : Null<(event:js.web.html.CommandEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -251,7 +251,7 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var oncontextmenu : EventHandler;
+	var oncontextmenu : Null<(event:js.web.dom.PointerEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -259,7 +259,7 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var oncopy : EventHandler;
+	var oncopy : Null<(event:js.web.misc.ClipboardEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -267,39 +267,39 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var oncut : EventHandler;
+	var oncut : Null<(event:js.web.misc.ClipboardEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ondblclick : EventHandler;
+	var ondblclick : Null<(event:js.web.dom.MouseEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ondrag : EventHandler;
+	var ondrag : Null<(event:js.web.html.DragEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ondragend : EventHandler;
+	var ondragend : Null<(event:js.web.html.DragEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ondragenter : EventHandler;
+	var ondragenter : Null<(event:js.web.html.DragEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ondragleave : EventHandler;
+	var ondragleave : Null<(event:js.web.html.DragEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ondragover : EventHandler;
+	var ondragover : Null<(event:js.web.html.DragEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ondragstart : EventHandler;
+	var ondragstart : Null<(event:js.web.html.DragEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ondrop : EventHandler;
+	var ondrop : Null<(event:js.web.html.DragEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -319,15 +319,15 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onfocus : EventHandler;
+	var onfocus : Null<(event:js.web.dom.FocusEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onformdata : EventHandler;
+	var onformdata : Null<(event:js.web.html.FormDataEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var oninput : EventHandler;
+	var oninput : Null<(event:js.web.dom.InputEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -335,15 +335,15 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onkeydown : EventHandler;
+	var onkeydown : Null<(event:js.web.dom.KeyboardEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onkeypress : EventHandler;
+	var onkeypress : Null<(event:js.web.dom.KeyboardEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onkeyup : EventHandler;
+	var onkeyup : Null<(event:js.web.dom.KeyboardEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -363,35 +363,35 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onmousedown : EventHandler;
+	var onmousedown : Null<(event:js.web.dom.MouseEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onmouseenter : EventHandler;
+	var onmouseenter : Null<(event:js.web.dom.MouseEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onmouseleave : EventHandler;
+	var onmouseleave : Null<(event:js.web.dom.MouseEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onmousemove : EventHandler;
+	var onmousemove : Null<(event:js.web.dom.MouseEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onmouseout : EventHandler;
+	var onmouseout : Null<(event:js.web.dom.MouseEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onmouseover : EventHandler;
+	var onmouseover : Null<(event:js.web.dom.MouseEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onmouseup : EventHandler;
+	var onmouseup : Null<(event:js.web.dom.MouseEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onpaste : EventHandler;
+	var onpaste : Null<(event:js.web.misc.ClipboardEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -431,7 +431,7 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onsecuritypolicyviolation : EventHandler;
+	var onsecuritypolicyviolation : Null<(event:js.web.misc.SecurityPolicyViolationEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -455,7 +455,7 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onsubmit : EventHandler;
+	var onsubmit : Null<(event:js.web.html.SubmitEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -467,7 +467,7 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ontoggle : EventHandler;
+	var ontoggle : Null<(event:js.web.html.ToggleEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -495,56 +495,56 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onwheel : EventHandler;
+	var onwheel : Null<(event:js.web.dom.WheelEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var oninstallresult : EventHandler;
+	var oninstallresult : Null<(event:js.web.html.InstallResultEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onpointerover : EventHandler;
+	var onpointerover : Null<(event:js.web.dom.PointerEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onpointerenter : EventHandler;
+	var onpointerenter : Null<(event:js.web.dom.PointerEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onpointerdown : EventHandler;
+	var onpointerdown : Null<(event:js.web.dom.PointerEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onpointermove : EventHandler;
+	var onpointermove : Null<(event:js.web.dom.PointerEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 		Only available in secure contexts (HTTPS).
 	**/
-	var onpointerrawupdate : EventHandler;
+	var onpointerrawupdate : Null<(event:js.web.dom.PointerEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onpointerup : EventHandler;
+	var onpointerup : Null<(event:js.web.dom.PointerEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onpointercancel : EventHandler;
+	var onpointercancel : Null<(event:js.web.dom.PointerEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onpointerout : EventHandler;
+	var onpointerout : Null<(event:js.web.dom.PointerEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onpointerleave : EventHandler;
+	var onpointerleave : Null<(event:js.web.dom.PointerEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ongotpointercapture : EventHandler;
+	var ongotpointercapture : Null<(event:js.web.dom.PointerEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onlostpointercapture : EventHandler;
+	var onlostpointercapture : Null<(event:js.web.dom.PointerEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
@@ -556,23 +556,23 @@ package js.web.html;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ontouchstart : EventHandler;
+	var ontouchstart : Null<(event:js.web.dom.TouchEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ontouchend : EventHandler;
+	var ontouchend : Null<(event:js.web.dom.TouchEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ontouchmove : EventHandler;
+	var ontouchmove : Null<(event:js.web.dom.TouchEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var ontouchcancel : EventHandler;
+	var ontouchcancel : Null<(event:js.web.dom.TouchEvent) -> Void>;
 	/**
 		From interface mixin GlobalEventHandlers
 	**/
-	var onbeforexrselect : EventHandler;
+	var onbeforexrselect : Null<(event:js.web.xr.XRSessionEvent) -> Void>;
 	/**
 		The **`contentEditable`** property of the `HTMLElement` interface specifies whether or not the element is editable.
 		

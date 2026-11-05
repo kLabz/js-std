@@ -59,7 +59,7 @@ package js.web.media;
 	**/
 	var keyStatuses(default, null) : MediaKeyStatusMap;
 	var onkeystatuseschange : js.web.html.EventHandler;
-	var onmessage : js.web.html.EventHandler;
+	var onmessage : Null<(event:js.web.media.MediaKeyMessageEvent) -> Void>;
 	/**
 		The `close()` method of the `MediaKeySession` interface notifies that the current media session is no longer needed, and that the content decryption module should release any resources associated with this object and close it. Then, it returns a `Promise`.
 		

@@ -36,7 +36,7 @@ package js.web.device;
 	@see <https://developer.mozilla.org/docs/Web/API/HIDDevice>
 **/
 @:native("HIDDevice") @:require(js_experimental_api, "HIDDevice is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class HIDDevice extends js.web.dom.EventTarget {
-	var oninputreport : js.web.html.EventHandler;
+	var oninputreport : Null<(event:js.web.device.HIDInputReportEvent) -> Void>;
 	/**
 		The **`opened`** read-only property of the `HIDDevice` interface returns true if the connection to the `HIDDevice` is open and ready to transfer data.
 		

@@ -52,10 +52,10 @@ package js.web.media;
 	var state(default, null) : RecordingState;
 	var onstart : js.web.html.EventHandler;
 	var onstop : js.web.html.EventHandler;
-	var ondataavailable : js.web.html.EventHandler;
+	var ondataavailable : Null<(event:js.web.media.BlobEvent) -> Void>;
 	var onpause : js.web.html.EventHandler;
 	var onresume : js.web.html.EventHandler;
-	var onerror : js.web.html.EventHandler;
+	var onerror : Null<(event:js.web.html.ErrorEvent) -> Void>;
 	/**
 		The **`videoBitsPerSecond`** read-only property of the `MediaRecorder` interface returns the video encoding bit rate in use.
 		

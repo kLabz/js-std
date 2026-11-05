@@ -47,8 +47,8 @@ package js.web.html;
 	**/
 	var selectedIndex(default, null) : Int;
 	var onchange : EventHandler;
-	var onaddtrack : EventHandler;
-	var onremovetrack : EventHandler;
+	var onaddtrack : Null<(event:js.web.html.TrackEvent) -> Void>;
+	var onremovetrack : Null<(event:js.web.html.TrackEvent) -> Void>;
 	/**
 		The **`VideoTrackList`** method **`getTrackById()`** returns the first `VideoTrack` object from the track list whose `id` matches the specified string.
 		

@@ -34,7 +34,7 @@ package js.web.media;
 	@see <https://developer.mozilla.org/docs/Web/API/MediaDevices>
 **/
 @:native("MediaDevices") extern class MediaDevices extends js.web.dom.EventTarget {
-	var ondevicechange : js.web.html.EventHandler;
+	var ondevicechange : Null<(event:js.web.media.DeviceChangeEvent) -> Void>;
 	/**
 		From partial interface in mediacapture-extensions.idl
 	**/
@@ -42,7 +42,7 @@ package js.web.media;
 	/**
 		From partial interface in mediacapture-handle-actions.idl
 	**/
-	var oncaptureaction : js.web.html.EventHandler;
+	var oncaptureaction : Null<(event:js.web.media.CaptureActionEvent) -> Void>;
 	/**
 		The **`enumerateDevices()`** method of the `MediaDevices` interface requests a list of the currently available media input and output devices, such as microphones, cameras, headsets, and so forth. The returned `Promise` is resolved with an array of `MediaDeviceInfo` objects describing the devices.
 		

@@ -39,7 +39,7 @@ package js.web.media;
 	/**
 		From partial interface in captured-mouse-events.idl
 	**/
-	var oncapturedmousechange : js.web.html.EventHandler;
+	var oncapturedmousechange : Null<(event:js.web.media.CapturedMouseEvent) -> Void>;
 	/**
 		The **`zoomLevel`** read-only property of the `CaptureController` interface returns the captured display surface's current zoom level.
 		

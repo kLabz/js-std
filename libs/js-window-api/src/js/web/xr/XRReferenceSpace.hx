@@ -36,7 +36,7 @@ package js.web.xr;
 	@see <https://developer.mozilla.org/docs/Web/API/XRReferenceSpace>
 **/
 @:native("XRReferenceSpace") @:require(js_experimental_api, "XRReferenceSpace is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class XRReferenceSpace extends XRSpace {
-	var onreset : js.web.html.EventHandler;
+	var onreset : Null<(event:js.web.xr.XRReferenceSpaceEvent) -> Void>;
 	/**
 		The `XRReferenceSpace` interface's **`getOffsetReferenceSpace()`** method returns a new reference space object which describes the relative difference in position between the object on which the method is called and a given point in 3D space. The object returned by `getOffsetReferenceSpace()` is an `XRReferenceSpace` if called on an `XRReferenceSpace`, or an `XRBoundedReferenceSpace` if called on an object of that type.
 		

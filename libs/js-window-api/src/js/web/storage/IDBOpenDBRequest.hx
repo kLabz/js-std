@@ -32,8 +32,8 @@ package js.web.storage;
 	@see <https://developer.mozilla.org/docs/Web/API/IDBOpenDBRequest>
 **/
 @:native("IDBOpenDBRequest") extern class IDBOpenDBRequest extends IDBRequest {
-	var onblocked : js.web.html.EventHandler;
-	var onupgradeneeded : js.web.html.EventHandler;
+	var onblocked : Null<(event:js.web.storage.IDBVersionChangeEvent) -> Void>;
+	var onupgradeneeded : Null<(event:js.web.storage.IDBVersionChangeEvent) -> Void>;
 	/**
 		The **`addEventListener()`** method of the `EventTarget` interface sets up a function that will be called whenever the specified event is delivered to the target.
 		

@@ -40,7 +40,7 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentPictureInPicture/window>
 	**/
 	var window(default, null) : Window;
-	var onenter : EventHandler;
+	var onenter : Null<(event:js.web.html.DocumentPictureInPictureEvent) -> Void>;
 	/**
 		The **`requestWindow()`** method of the `DocumentPictureInPicture` interface opens the Picture-in-Picture window for the current main browsing context. It returns a `Promise` that fulfills with a `Window` instance representing the browsing context inside the Picture-in-Picture window.
 		

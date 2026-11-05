@@ -37,7 +37,7 @@ package js.web.media;
 **/
 @:native("PresentationConnectionList") @:require(js_experimental_api, "PresentationConnectionList is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class PresentationConnectionList extends js.web.dom.EventTarget {
 	var connections(default, null) : haxe.ds.ReadOnlyArray<PresentationConnection>;
-	var onconnectionavailable : js.web.html.EventHandler;
+	var onconnectionavailable : Null<(event:js.web.media.PresentationConnectionAvailableEvent) -> Void>;
 	/**
 		The **`addEventListener()`** method of the `EventTarget` interface sets up a function that will be called whenever the specified event is delivered to the target.
 		

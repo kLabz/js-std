@@ -34,7 +34,7 @@ package js.web.storage;
 	@see <https://developer.mozilla.org/docs/Web/API/CookieStore>
 **/
 @:native("CookieStore") extern class CookieStore extends js.web.dom.EventTarget {
-	var onchange : js.web.html.EventHandler;
+	var onchange : Null<(event:js.web.storage.CookieChangeEvent) -> Void>;
 	/**
 		The **`delete()`** method of the `CookieStore` interface deletes a cookie that matches the given `name` or `options` object. The method expires the cookie by changing its date to one in the past.
 		

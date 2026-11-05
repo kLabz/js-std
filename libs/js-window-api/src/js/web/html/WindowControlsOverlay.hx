@@ -40,7 +40,7 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/WindowControlsOverlay/visible>
 	**/
 	var visible(default, null) : Bool;
-	var ongeometrychange : EventHandler;
+	var ongeometrychange : Null<(event:js.web.html.WindowControlsOverlayGeometryChangeEvent) -> Void>;
 	/**
 		The **`getTitlebarAreaRect()`** method of the `WindowControlsOverlay` interface queries the current geometry of the title bar area of the Progressive Web App window.
 		

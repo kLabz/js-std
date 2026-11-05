@@ -31,8 +31,8 @@ package js.web.ml;
 **/
 @:native("ModelContext") @:require(js_experimental_api, "ModelContext is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ModelContext extends js.web.dom.EventTarget {
 	var ontoolchange : js.web.html.EventHandler;
-	var ontoolactivated : js.web.html.EventHandler;
-	var ontoolcancel : js.web.html.EventHandler;
+	var ontoolactivated : Null<(event:js.web.ml.ToolActivatedEvent) -> Void>;
+	var ontoolcancel : Null<(event:js.web.ml.ToolCancelEvent) -> Void>;
 	function executeTool(tool:RegisteredTool, ?inputObject:{ }, ?options:ModelContextExecuteToolOptions):js.lib.Promise<String>;
 	function getTools(?options:ModelContextGetToolOptions):js.lib.Promise<Array<RegisteredTool>>;
 	function registerTool(tool:ModelContextTool, ?options:ModelContextRegisterToolOptions):js.lib.Promise<Void>;

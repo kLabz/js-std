@@ -99,8 +99,8 @@ package js.web.webrtc;
 	**/
 	var canTrickleIceCandidates(default, null) : Null<Bool>;
 	var onnegotiationneeded : js.web.html.EventHandler;
-	var onicecandidate : js.web.html.EventHandler;
-	var onicecandidateerror : js.web.html.EventHandler;
+	var onicecandidate : Null<(event:js.web.webrtc.RTCPeerConnectionIceEvent) -> Void>;
+	var onicecandidateerror : Null<(event:js.web.webrtc.RTCPeerConnectionIceErrorEvent) -> Void>;
 	var onsignalingstatechange : js.web.html.EventHandler;
 	var oniceconnectionstatechange : js.web.html.EventHandler;
 	var onicegatheringstatechange : js.web.html.EventHandler;
@@ -130,7 +130,7 @@ package js.web.webrtc;
 	/**
 		From partial interface in webrtc.idl
 	**/
-	var ontrack : js.web.html.EventHandler;
+	var ontrack : Null<(event:js.web.webrtc.RTCTrackEvent) -> Void>;
 	/**
 		The **`sctp`** read-only property of the `RTCPeerConnection` interface returns an `RTCSctpTransport` describing the SCTP transport over which SCTP data is being sent and received. If SCTP hasn't been negotiated, this value is `null`.
 		
@@ -142,7 +142,7 @@ package js.web.webrtc;
 	/**
 		From partial interface in webrtc.idl
 	**/
-	var ondatachannel : js.web.html.EventHandler;
+	var ondatachannel : Null<(event:js.web.webrtc.RTCDataChannelEvent) -> Void>;
 	/**
 		The **`RTCPeerConnection()`** constructor returns a newly-created `RTCPeerConnection`, which represents a connection between the local device and a remote peer.
 		

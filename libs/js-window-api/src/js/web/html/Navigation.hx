@@ -62,10 +62,10 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/Navigation/canGoForward>
 	**/
 	var canGoForward(default, null) : Bool;
-	var onnavigate : EventHandler;
+	var onnavigate : Null<(event:js.web.html.NavigateEvent) -> Void>;
 	var onnavigatesuccess : EventHandler;
-	var onnavigateerror : EventHandler;
-	var oncurrententrychange : EventHandler;
+	var onnavigateerror : Null<(event:js.web.html.ErrorEvent) -> Void>;
+	var oncurrententrychange : Null<(event:js.web.html.NavigationCurrentEntryChangeEvent) -> Void>;
 	/**
 		The **`back()`** method of the `Navigation` interface navigates backwards by one entry in the navigation history.
 		

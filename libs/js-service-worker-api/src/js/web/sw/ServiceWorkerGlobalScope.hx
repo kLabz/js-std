@@ -53,35 +53,35 @@ package js.web.sw;
 		@see <https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope/serviceWorker>
 	**/
 	var serviceWorker(default, null) : ServiceWorker;
-	var oninstall : js.web.html.EventHandler;
-	var onactivate : js.web.html.EventHandler;
-	var onfetch : js.web.html.EventHandler;
-	var onmessage : js.web.html.EventHandler;
-	var onmessageerror : js.web.html.EventHandler;
+	var oninstall : Null<(event:js.web.sw.InstallEvent) -> Void>;
+	var onactivate : Null<(event:js.web.sw.ExtendableEvent) -> Void>;
+	var onfetch : Null<(event:js.web.sw.FetchEvent) -> Void>;
+	var onmessage : Null<(event:js.web.sw.ExtendableMessageEvent) -> Void>;
+	var onmessageerror : Null<(event:js.web.sw.ExtendableMessageEvent) -> Void>;
 	/**
 		From partial interface in background-fetch.idl
 	**/
-	var onbackgroundfetchsuccess : js.web.html.EventHandler;
+	var onbackgroundfetchsuccess : Null<(event:js.web.sw.BackgroundFetchUpdateUIEvent) -> Void>;
 	/**
 		From partial interface in background-fetch.idl
 	**/
-	var onbackgroundfetchfail : js.web.html.EventHandler;
+	var onbackgroundfetchfail : Null<(event:js.web.sw.BackgroundFetchUpdateUIEvent) -> Void>;
 	/**
 		From partial interface in background-fetch.idl
 	**/
-	var onbackgroundfetchabort : js.web.html.EventHandler;
+	var onbackgroundfetchabort : Null<(event:js.web.sw.BackgroundFetchEvent) -> Void>;
 	/**
 		From partial interface in background-fetch.idl
 	**/
-	var onbackgroundfetchclick : js.web.html.EventHandler;
+	var onbackgroundfetchclick : Null<(event:js.web.sw.BackgroundFetchEvent) -> Void>;
 	/**
 		From partial interface in background-sync.idl
 	**/
-	var onsync : js.web.html.EventHandler;
+	var onsync : Null<(event:js.web.sw.SyncEvent) -> Void>;
 	/**
 		From partial interface in content-index.idl
 	**/
-	var oncontentdelete : js.web.html.EventHandler;
+	var oncontentdelete : Null<(event:js.web.sw.ContentIndexEvent) -> Void>;
 	/**
 		The **`cookieStore`** read-only property of the `ServiceWorkerGlobalScope` interface returns a reference to the `CookieStore` object associated with this service worker.
 		
@@ -93,35 +93,35 @@ package js.web.sw;
 	/**
 		From partial interface in cookiestore.idl
 	**/
-	var oncookiechange : js.web.html.EventHandler;
+	var oncookiechange : Null<(event:js.web.storage.ExtendableCookieChangeEvent) -> Void>;
 	/**
 		From partial interface in notifications.idl
 	**/
-	var onnotificationclick : js.web.html.EventHandler;
+	var onnotificationclick : Null<(event:js.web.sw.NotificationEvent) -> Void>;
 	/**
 		From partial interface in notifications.idl
 	**/
-	var onnotificationclose : js.web.html.EventHandler;
+	var onnotificationclose : Null<(event:js.web.sw.NotificationEvent) -> Void>;
 	/**
 		From partial interface in periodic-background-sync.idl
 	**/
-	var onperiodicsync : js.web.html.EventHandler;
+	var onperiodicsync : Null<(event:js.web.sw.PeriodicSyncEvent) -> Void>;
 	/**
 		From partial interface in push-api.idl
 	**/
-	var onpush : js.web.html.EventHandler;
+	var onpush : Null<(event:js.web.sw.PushEvent) -> Void>;
 	/**
 		From partial interface in push-api.idl
 	**/
-	var onpushsubscriptionchange : js.web.html.EventHandler;
+	var onpushsubscriptionchange : Null<(event:js.web.sw.PushSubscriptionChangeEvent) -> Void>;
 	/**
 		From partial interface in web-based-payment-handler.idl
 	**/
-	var oncanmakepayment : js.web.html.EventHandler;
+	var oncanmakepayment : Null<(event:js.web.sw.CanMakePaymentEvent) -> Void>;
 	/**
 		From partial interface in web-based-payment-handler.idl
 	**/
-	var onpaymentrequest : js.web.html.EventHandler;
+	var onpaymentrequest : Null<(event:js.web.sw.PaymentRequestEvent) -> Void>;
 	/**
 		The **`skipWaiting()`** method of the `ServiceWorkerGlobalScope` interface forces the waiting service worker to become the active service worker.
 		

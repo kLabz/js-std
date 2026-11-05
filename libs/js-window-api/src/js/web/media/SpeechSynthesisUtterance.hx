@@ -68,13 +68,13 @@ package js.web.media;
 		@see <https://developer.mozilla.org/docs/Web/API/SpeechSynthesisUtterance/pitch>
 	**/
 	var pitch : Float;
-	var onstart : js.web.html.EventHandler;
-	var onend : js.web.html.EventHandler;
-	var onerror : js.web.html.EventHandler;
-	var onpause : js.web.html.EventHandler;
-	var onresume : js.web.html.EventHandler;
-	var onmark : js.web.html.EventHandler;
-	var onboundary : js.web.html.EventHandler;
+	var onstart : Null<(event:js.web.media.SpeechSynthesisEvent) -> Void>;
+	var onend : Null<(event:js.web.media.SpeechSynthesisEvent) -> Void>;
+	var onerror : Null<(event:js.web.media.SpeechSynthesisErrorEvent) -> Void>;
+	var onpause : Null<(event:js.web.media.SpeechSynthesisEvent) -> Void>;
+	var onresume : Null<(event:js.web.media.SpeechSynthesisEvent) -> Void>;
+	var onmark : Null<(event:js.web.media.SpeechSynthesisEvent) -> Void>;
+	var onboundary : Null<(event:js.web.media.SpeechSynthesisEvent) -> Void>;
 	/**
 		The `SpeechSynthesisUtterance()` constructor of the `SpeechSynthesisUtterance` interface returns a new `SpeechSynthesisUtterance` object instance.
 		

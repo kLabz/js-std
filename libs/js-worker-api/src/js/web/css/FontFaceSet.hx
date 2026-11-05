@@ -38,9 +38,9 @@ package js.web.css;
 		@see <https://developer.mozilla.org/docs/Web/API/FontFaceSet/size>
 	**/
 	var size(default, null) : Int;
-	var onloading : js.web.html.EventHandler;
-	var onloadingdone : js.web.html.EventHandler;
-	var onloadingerror : js.web.html.EventHandler;
+	var onloading : Null<(event:js.web.css.FontFaceSetLoadEvent) -> Void>;
+	var onloadingdone : Null<(event:js.web.css.FontFaceSetLoadEvent) -> Void>;
+	var onloadingerror : Null<(event:js.web.css.FontFaceSetLoadEvent) -> Void>;
 	/**
 		The `ready` read-only property of the `FontFaceSet` interface returns a `Promise` that resolves to the given `FontFaceSet`.
 		

@@ -34,7 +34,7 @@ package js.web.media;
 	@see <https://developer.mozilla.org/docs/Web/API/ManagedSourceBuffer>
 **/
 @:native("ManagedSourceBuffer") @:require(js_experimental_api, "ManagedSourceBuffer is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class ManagedSourceBuffer extends SourceBuffer {
-	var onbufferedchange : js.web.html.EventHandler;
+	var onbufferedchange : Null<(event:js.web.media.BufferedChangeEvent) -> Void>;
 	/**
 		The **`addEventListener()`** method of the `EventTarget` interface sets up a function that will be called whenever the specified event is delivered to the target.
 		

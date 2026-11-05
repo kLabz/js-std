@@ -47,8 +47,8 @@ package js.web.sw;
 	**/
 	var ready(default, null) : js.lib.Promise<ServiceWorkerRegistration>;
 	var oncontrollerchange : js.web.html.EventHandler;
-	var onmessage : js.web.html.EventHandler;
-	var onmessageerror : js.web.html.EventHandler;
+	var onmessage : Null<(event:js.web.html.MessageEvent) -> Void>;
+	var onmessageerror : Null<(event:js.web.html.MessageEvent) -> Void>;
 	/**
 		The **`getRegistration()`** method of the `ServiceWorkerContainer` interface gets a `ServiceWorkerRegistration` object whose scope URL matches the provided client URL. The method returns a `Promise` that resolves to a `ServiceWorkerRegistration` or `undefined`.
 		

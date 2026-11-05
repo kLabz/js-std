@@ -94,10 +94,9 @@ package js.web.webrtc;
 	var bufferedAmountLowThreshold : Int;
 	var onopen : js.web.html.EventHandler;
 	var onbufferedamountlow : js.web.html.EventHandler;
-	var onerror : js.web.html.EventHandler;
 	var onclosing : js.web.html.EventHandler;
 	var onclose : js.web.html.EventHandler;
-	var onmessage : js.web.html.EventHandler;
+	var onmessage : Null<(event:js.web.html.MessageEvent) -> Void>;
 	/**
 		The property **`binaryType`** on the `RTCDataChannel` interface is a string which specifies the type of object which should be used to represent binary data received on the `RTCDataChannel`. Values allowed by the `WebSocket.binaryType` property are also permitted here: `blob` if `Blob` objects are being used or `arraybuffer` if `ArrayBuffer` objects are being used. The default is `arraybuffer`.
 		

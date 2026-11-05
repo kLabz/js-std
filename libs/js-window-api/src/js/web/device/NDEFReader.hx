@@ -36,7 +36,7 @@ package js.web.device;
 	@see <https://developer.mozilla.org/docs/Web/API/NDEFReader>
 **/
 @:native("NDEFReader") @:require(js_experimental_api, "NDEFReader is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class NDEFReader extends js.web.dom.EventTarget {
-	var onreading : js.web.html.EventHandler;
+	var onreading : Null<(event:js.web.device.NDEFReadingEvent) -> Void>;
 	var onreadingerror : js.web.html.EventHandler;
 	/**
 		The **`NDEFReader()`** constructor of the `NDEFReader` interface returns a new `NDEFReader` object, which is used to read NDEF messages from compatible NFC devices, e.g., NDEF tags, within the reader's magnetic induction field.

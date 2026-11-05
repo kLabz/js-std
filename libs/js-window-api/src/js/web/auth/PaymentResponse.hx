@@ -82,7 +82,7 @@ package js.web.auth;
 		@see <https://developer.mozilla.org/docs/Web/API/PaymentResponse/payerPhone>
 	**/
 	var payerPhone(default, null) : Null<String>;
-	var onpayerdetailchange : js.web.html.EventHandler;
+	var onpayerdetailchange : Null<(event:js.web.auth.PaymentRequestUpdateEvent) -> Void>;
 	/**
 		The `PaymentRequest` method **`complete()`** of the [Payment Request API](https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API) notifies the user agent that the user interaction is over, and causes any remaining user interface to be closed.
 		

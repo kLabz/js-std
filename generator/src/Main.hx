@@ -472,7 +472,8 @@ class Main {
 		Events.markOverloads(eventTarget);
 		var eventType = TPath({pack: resolve("Event"), name: "Event"});
 		var isClass = t -> tasksByName.get(t)?.td.kind.match(TDClass(_)) ?? false;
-		for (target => events in Events.eventsByTarget(isClass, t -> interfaceDefs.get(t)?.inheritance)) {
+		var eventsByTarget = Events.eventsByTarget(isClass, t -> interfaceDefs.get(t)?.inheritance);
+		for (target => events in eventsByTarget) {
 			var task = tasksByName.get(target);
 			var td = Events.eventTypes(target, task.td.pack, events, resolve, typeMeta, task.ctx.pos);
 			packMap.set(td.name, td.pack);
@@ -484,6 +485,13 @@ class Main {
 			});
 			Events.addOverloads(task.td, eventTarget, td.pack, eventType, resolve);
 		}
+		var parentOf = t -> interfaceDefs.get(t)?.inheritance;
+		var children = new Map<String, Array<String>>();
+		for (task in pendingSaves) if (isClass(task.t)) {
+			var parent = parentOf(task.t);
+			if (parent != null) children.set(parent, (children.get(parent) ?? []).concat([task.t]));
+		}
+		for (task in pendingSaves) if (isClass(task.t)) Events.typeHandlers(task.td, eventsByTarget, parentOf, t -> children.get(t) ?? [], resolve);
 
 		// Dropping a type from a lib can make its dependents unavailable there too
 		var changed = true;
@@ -631,7 +639,8 @@ class Main {
 									? TOptional(TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType)))
 									: TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType))
 							),
-							convertType(ctx, t.idlType)
+							// Event handlers' return value is legacy (`return false` cancels): `Void` still accepts it
+							StringTools.endsWith(t.name, "EventHandlerNonNull") ? macro :Void : convertType(ctx, t.idlType)
 						);
 
 						var td:TypeDefinition = {

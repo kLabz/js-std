@@ -32,11 +32,11 @@ package js.web.net;
 	@see <https://developer.mozilla.org/docs/Web/API/XMLHttpRequestEventTarget>
 **/
 @:native("XMLHttpRequestEventTarget") extern class XMLHttpRequestEventTarget extends js.web.dom.EventTarget {
-	var onloadstart : js.web.html.EventHandler;
-	var onprogress : js.web.html.EventHandler;
-	var onabort : js.web.html.EventHandler;
-	var onerror : js.web.html.EventHandler;
-	var onload : js.web.html.EventHandler;
-	var ontimeout : js.web.html.EventHandler;
-	var onloadend : js.web.html.EventHandler;
+	var onloadstart : Null<(event:js.web.net.ProgressEvent) -> Void>;
+	var onprogress : Null<(event:js.web.net.ProgressEvent) -> Void>;
+	var onabort : Null<(event:js.web.net.ProgressEvent) -> Void>;
+	var onerror : Null<(event:js.web.net.ProgressEvent) -> Void>;
+	var onload : Null<(event:js.web.net.ProgressEvent) -> Void>;
+	var ontimeout : Null<(event:js.web.net.ProgressEvent) -> Void>;
+	var onloadend : Null<(event:js.web.net.ProgressEvent) -> Void>;
 }

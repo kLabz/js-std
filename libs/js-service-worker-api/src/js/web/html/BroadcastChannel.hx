@@ -38,8 +38,8 @@ package js.web.html;
 		@see <https://developer.mozilla.org/docs/Web/API/BroadcastChannel/name>
 	**/
 	var name(default, null) : String;
-	var onmessage : EventHandler;
-	var onmessageerror : EventHandler;
+	var onmessage : Null<(event:js.web.html.MessageEvent) -> Void>;
+	var onmessageerror : Null<(event:js.web.html.MessageEvent) -> Void>;
 	/**
 		The **`BroadcastChannel()`** constructor creates a new `BroadcastChannel` and connects it to the underlying channel.
 		

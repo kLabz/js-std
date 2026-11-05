@@ -36,8 +36,8 @@ package js.web.device;
 	@see <https://developer.mozilla.org/docs/Web/API/HID>
 **/
 @:native("HID") @:require(js_experimental_api, "HID is experimental (shipped in fewer than two engines); use -D js-experimental-api") extern class HID extends js.web.dom.EventTarget {
-	var onconnect : js.web.html.EventHandler;
-	var ondisconnect : js.web.html.EventHandler;
+	var onconnect : Null<(event:js.web.device.HIDConnectionEvent) -> Void>;
+	var ondisconnect : Null<(event:js.web.device.HIDConnectionEvent) -> Void>;
 	/**
 		The **`getDevices()`** method of the `HID` interface gets a list of connected HID devices that the user has previously been granted access to in response to a `requestDevice()` call.
 		

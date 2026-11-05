@@ -54,8 +54,8 @@ package js.web.html;
 	var onlanguagechange : EventHandler;
 	var onoffline : EventHandler;
 	var ononline : EventHandler;
-	var onrejectionhandled : EventHandler;
-	var onunhandledrejection : EventHandler;
+	var onrejectionhandled : Null<(event:js.web.html.PromiseRejectionEvent) -> Void>;
+	var onunhandledrejection : Null<(event:js.web.html.PromiseRejectionEvent) -> Void>;
 	/**
 		The **`fonts`** property of the `WorkerGlobalScope` interface returns the `FontFaceSet` interface of the worker.
 		

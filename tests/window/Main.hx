@@ -58,9 +58,10 @@ class Main {
 		trace(document.querySelector(MyWidget.TAG)?.count, window.customElements.getName(MyWidget));
 
 		var byId:Null<js.web.html.HTMLElement> = document.getElementById("name");
-		var checked:Null<HTMLInputElement> = byId?.downcast(HTMLInputElement);
-		var dot:Null<js.web.svg.SVGCircleElement> = document.querySelector("#dot")?.downcast(js.web.svg.SVGCircleElement);
-		trace(checked?.value, dot?.r, div.parentElement?.downcast(js.web.html.HTMLFormElement)?.action);
+		var checked:Null<HTMLInputElement> = byId?.castTo(HTMLInputElement);
+		var form:js.web.html.HTMLFormElement = div.castTo(js.web.html.HTMLFormElement);
+		var dot:Null<js.web.svg.SVGCircleElement> = document.querySelector("#dot")?.castTo(js.web.svg.SVGCircleElement);
+		trace(form, checked?.value, dot?.r, div.parentElement?.castTo(js.web.html.HTMLFormElement)?.action);
 
 		var svg = document.createElementNS(SVG_NAMESPACE, SVG);
 		var circle = document.createElementNS(SVG_NAMESPACE, CIRCLE);

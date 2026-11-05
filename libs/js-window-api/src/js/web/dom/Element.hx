@@ -1309,15 +1309,11 @@ package js.web.dom;
 	function toggleAttribute(qualifiedName:String, ?force:Bool):Bool;
 	function webkitMatchesSelector(selectors:String):Bool;
 	/**
-		This element as a `T`: `document.getElementById("name")?.downcast(HTMLInputElement)`.
+		This element as a `T`, unchecked: `document.getElementById("name")?.castTo(HTMLInputElement)`.
 		
-		Unchecked, unless compiled with `-D js-checked-downcasts`: `null` if the element isn't a `T`, checked with `instanceof` (so also for an element from another frame, which has its own classes).
+		Use `Std.downcast(element, T)` to check it (`null` if the element isn't a `T`).
 	**/
-	#if js_checked_downcasts
-	inline function downcast<T:(Element)>(cls:Class<T>):Null<T> return Std.downcast(this, cls);
-	#else
-	inline function downcast<T:(Element)>(cls:Class<T>):Null<T> return cast this;
-	#end
+	inline function castTo<T:(Element)>(cls:Class<T>):T return cast this;
 	/**
 		The **`addEventListener()`** method of the `EventTarget` interface sets up a function that will be called whenever the specified event is delivered to the target.
 		

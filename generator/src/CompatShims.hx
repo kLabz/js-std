@@ -54,7 +54,7 @@ class CompatShims {
 		return {
 			name: name,
 			meta: [
-				{name: Events.HTML_COMPAT_META, pos: td.pos},
+				Conditional.ifMeta(Conditional.HTML_COMPAT, td.pos),
 				{name: ":deprecated", params: [{expr: EConst(CString(message)), pos: td.pos}], pos: td.pos}
 			],
 			access: access,

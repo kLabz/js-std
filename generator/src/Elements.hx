@@ -164,32 +164,82 @@ class Elements {
 	}
 
 	/**
-		Makes the `String` variants of `getElementById`, `querySelector`, `querySelectorAll` and `closest`
-		generic like TypeScript's (`document.querySelector.<HTMLInputElement>("#name")`), on compilers
-		with explicit call type arguments and method default type parameters.
+		Types members giving an `Element`:
+		- `getElementById` and `parentElement` give `HTMLElement`, as in TypeScript;
+		- with `js_html_compat`, all the others do too, as in `js.html`;
+		- `getElementById`, `querySelector`, `querySelectorAll` and `closest` are generic, like TypeScript's
+		  (`document.querySelector.<HTMLInputElement>("#name")`), on compilers with explicit call type
+		  arguments and method default type parameters.
+		Dictionaries are left alone: their members are inputs.
 	**/
-	public static function addGenericLookups(td:TypeDefinition, resolve:String->Null<Array<String>>):Void {
+	public static function typeElementResults(td:TypeDefinition, resolve:String->Null<Array<String>>):Void {
+		if (!td.kind.match(TDClass(_))) return;
 		var element = typePath("Element", resolve);
-		var e = macro :E;
-		for (f in td.fields.copy()) switch [f.name, f.kind] {
-			case ["getElementById" | "querySelector" | "querySelectorAll" | "closest", FFun(fn)] if (fn.params == null || fn.params.length == 0):
-				var generic:Field = {
-					name: f.name,
-					doc: f.doc,
-					meta: (f.meta ?? []).concat([{name: Events.GENERIC_LOOKUPS_META, pos: f.pos}]),
-					access: f.access?.copy(),
-					kind: FFun({
-						args: fn.args,
-						ret: f.name == "querySelectorAll" ? macro :js.web.dom.NodeListOf<$e> : macro :Null<$e>,
-						params: [{name: "E", constraints: [element], defaultType: element}],
-						expr: null
-					}),
-					pos: f.pos
-				};
-				f.meta = (f.meta ?? []).concat([{name: Events.NO_GENERIC_LOOKUPS_META, pos: f.pos}]);
-				f.doc = null;
-				td.fields.insert(td.fields.indexOf(f), generic);
-			case _:
+		var html = typePath("HTMLElement", resolve);
+		var isElement = (t:ComplexType) -> switch (t) {
+			case TPath({name: "Element", pack: pack, params: null | []}): pack.length == 0 ? td.pack.join(".") == resolve("Element").join(".") : pack.join(".") == resolve("Element").join(".");
+			case _: false;
+		};
+		function toHtml(t:Null<ComplexType>):Null<ComplexType> {
+			return switch (t) {
+				case null: null;
+				case t if (isElement(t)): html;
+				case TPath({pack: [], name: name = "Null" | "Array", params: [TPType(p)]}) if (isElement(p)): TPath({pack: [], name: name, params: [TPType(html)]});
+				case _: null;
+			}
+		}
+		function withType(f:Field, t:ComplexType):Field {
+			var f = Reflect.copy(f);
+			f.kind = switch (f.kind) {
+				case FVar(_, e): FVar(t, e);
+				case FProp(get, set, _, e): FProp(get, set, t, e);
+				case FFun(fn): FFun({args: fn.args, ret: t, params: fn.params, expr: fn.expr});
+			};
+			return f;
+		}
+		function generic(f:Field, fn:Function, defaultType:ComplexType):Field {
+			var e = macro :E;
+			var f = Reflect.copy(f);
+			f.kind = FFun({
+				args: fn.args,
+				ret: f.name == "querySelectorAll" ? macro :js.web.dom.NodeListOf<$e> : macro :Null<$e>,
+				params: [{name: "E", constraints: [element], defaultType: defaultType}],
+				expr: null
+			});
+			return f;
+		}
+
+		var lookups = ["Document", "DocumentFragment", "Element"].contains(td.name);
+		for (f in td.fields.copy()) {
+			var t = switch (f.kind) {
+				case FVar(t, _) | FProp(_, _, t, _): t;
+				case FFun(fn): fn.ret;
+			};
+			var variants = switch [f.name, f.kind] {
+				case ["parentElement", _] if (toHtml(t) != null):
+					[{condition: null, field: withType(f, toHtml(t))}];
+				case ["getElementById", FFun(fn = {params: null | []})] if (lookups):
+					[
+						{condition: Conditional.GENERIC_LOOKUPS, field: generic(f, fn, html)},
+						{condition: null, field: withType(f, toHtml(t))}
+					];
+				case ["querySelector" | "querySelectorAll" | "closest", FFun(fn = {params: null | [], args: [{type: TPath({name: "String"})}]})] if (lookups):
+					var variants = [
+						{condition: '(${Conditional.GENERIC_LOOKUPS} && ${Conditional.HTML_COMPAT})', field: generic(f, fn, html)},
+						{condition: Conditional.GENERIC_LOOKUPS, field: generic(f, fn, element)}
+					];
+					if (toHtml(t) != null) variants.push({condition: Conditional.HTML_COMPAT, field: withType(f, toHtml(t))});
+					variants.push({condition: null, field: f});
+					variants;
+				case _ if (toHtml(t) != null):
+					[{condition: Conditional.HTML_COMPAT, field: withType(f, toHtml(t))}, {condition: null, field: f}];
+				case _:
+					continue;
+			};
+			var i = td.fields.indexOf(f);
+			td.fields.splice(i, 1);
+			var fields = variants.length == 1 ? [variants[0].field] : Conditional.chain(variants);
+			for (j => v in fields) td.fields.insert(i + j, v);
 		}
 	}
 

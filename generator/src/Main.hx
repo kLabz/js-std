@@ -386,7 +386,7 @@ class Main {
 		out.add("// This file is generated from ");
 		out.add(ctx.origin ?? '@webref/idl/${ctx.file.filename}');
 		out.add(". Do not edit!\n\n");
-		out.add(Events.wrapConditionalOverloads(printer.printTypeDefinition(td)));
+		out.add(Conditional.wrap(printer.printTypeDefinition(td)));
 
 		#if !no_output
 		File.saveContent(path, out.toString());
@@ -452,8 +452,8 @@ class Main {
 		for (task in pendingSaves) if (["Document", "Element", "DocumentFragment", "CustomElementRegistry"].contains(task.t)) {
 			Elements.addOverloads(task.td, Elements.HTML, resolve);
 			Elements.addOverloads(task.td, Elements.SVG, resolve);
-			Elements.addGenericLookups(task.td, resolve);
 		}
+		for (task in pendingSaves) Elements.typeElementResults(task.td, resolve);
 
 		var typeMeta = t -> pendingSaves.find(task -> task.t == t)?.td.meta;
 		var canvasPack = resolve("CanvasRenderingContext2D");

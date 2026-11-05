@@ -49,7 +49,11 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLSlotElement/assignedElements>
 	**/
+	#if js_html_compat
+	function assignedElements(?options:AssignedNodesOptions):Array<js.web.html.HTMLElement>;
+	#else
 	function assignedElements(?options:AssignedNodesOptions):Array<js.web.dom.Element>;
+	#end
 	/**
 		The **`assignedNodes()`** method of the `HTMLSlotElement` interface returns a sequence of the nodes assigned to this slot.
 		

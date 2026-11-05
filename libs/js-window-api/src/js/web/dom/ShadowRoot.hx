@@ -67,7 +67,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/host>
 	**/
+	#if js_html_compat
+	var host(default, null) : js.web.html.HTMLElement;
+	#else
 	var host(default, null) : Element;
+	#end
 	var onslotchange : js.web.html.EventHandler;
 	/**
 		The **`styleSheets`** read-only property of the `ShadowRoot` interface returns a `StyleSheetList` of `CSSStyleSheet` objects, for stylesheets explicitly linked into or embedded in a shadow tree.
@@ -100,7 +104,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/fullscreenElement>
 	**/
+	#if js_html_compat
+	var fullscreenElement(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var fullscreenElement(default, null) : Null<Element>;
+	#end
 	/**
 		The **`activeElement`** read-only property of the `ShadowRoot` interface returns the element within the shadow tree that has focus.
 		
@@ -108,7 +116,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/activeElement>
 	**/
+	#if js_html_compat
+	var activeElement(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var activeElement(default, null) : Null<Element>;
+	#end
 	/**
 		The **`pictureInPictureElement`** read-only property of the `ShadowRoot` interface returns the `Element` that is currently being presented in picture-in-picture mode in this shadow tree, or `null` if picture-in-picture mode is not currently in use.
 		
@@ -116,7 +128,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/pictureInPictureElement>
 	**/
+	#if js_html_compat
+	var pictureInPictureElement(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var pictureInPictureElement(default, null) : Null<Element>;
+	#end
 	/**
 		The **`pointerLockElement`** read-only property of the `ShadowRoot` interface provides the element set as the target for mouse events while the pointer is locked. It is `null` if lock is pending, pointer is unlocked, or the target is in another tree.
 		
@@ -124,7 +140,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ShadowRoot/pointerLockElement>
 	**/
+	#if js_html_compat
+	var pointerLockElement(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var pointerLockElement(default, null) : Null<Element>;
+	#end
 	/**
 		The **`innerHTML`** property of the `ShadowRoot` interface gets or sets the HTML markup to the DOM tree inside the `ShadowRoot`.
 		

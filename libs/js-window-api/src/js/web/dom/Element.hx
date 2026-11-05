@@ -117,7 +117,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/firstElementChild>
 	**/
+	#if js_html_compat
+	var firstElementChild(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var firstElementChild(default, null) : Null<Element>;
+	#end
 	/**
 		The **`Element.lastElementChild`** read-only property returns an element's last child `Element`, or `null` if there are no child elements.
 		
@@ -125,7 +129,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/lastElementChild>
 	**/
+	#if js_html_compat
+	var lastElementChild(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var lastElementChild(default, null) : Null<Element>;
+	#end
 	/**
 		The **`Element.childElementCount`** read-only property returns the number of child elements of this element.
 		
@@ -141,7 +149,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/previousElementSibling>
 	**/
+	#if js_html_compat
+	var previousElementSibling(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var previousElementSibling(default, null) : Null<Element>;
+	#end
 	/**
 		The **`Element.nextElementSibling`** read-only property returns the element immediately following the specified one in its parent's `children` list, or `null` if the specified element is the last one in the list.
 		
@@ -149,7 +161,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/nextElementSibling>
 	**/
+	#if js_html_compat
+	var nextElementSibling(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var nextElementSibling(default, null) : Null<Element>;
+	#end
 	/**
 		The **`assignedSlot`** read-only property of the `Element` interface returns an `HTMLSlotElement` representing the `<slot>` element the node is inserted in.
 		
@@ -173,7 +189,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/ariaActiveDescendantElement>
 	**/
+	#if js_html_compat
+	var ariaActiveDescendantElement : Null<js.web.html.HTMLElement>;
+	#else
 	var ariaActiveDescendantElement : Null<Element>;
+	#end
 	/**
 		The **`ariaAtomic`** property of the `Element` interface reflects the value of the [`aria-atomic`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-atomic) attribute, which indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the [`aria-relevant`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-relevant) attribute.
 		
@@ -797,8 +817,12 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/closest>
 	**/
-	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	#if ((haxe >= version("5.0.0-preview.2") || js_generic_lookups) && js_html_compat)
+	overload function closest<E:(js.web.dom.Element)=js.web.html.HTMLElement>(selectors:String):Null<E>;
+	#elseif (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
 	overload function closest<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):Null<E>;
+	#elseif js_html_compat
+	overload function closest(selectors:String):Null<js.web.html.HTMLElement>;
 	#else
 	overload function closest(selectors:String):Null<Element>;
 	#end
@@ -962,7 +986,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/insertAdjacentElement>
 	**/
+	#if js_html_compat
+	function insertAdjacentElement(where:String, element:Element):Null<js.web.html.HTMLElement>;
+	#else
 	function insertAdjacentElement(where:String, element:Element):Null<Element>;
+	#end
 	/**
 		The **`insertAdjacentHTML()`** method of the `Element` interface parses the specified input as HTML or XML and inserts the resulting nodes into the DOM tree at a specified position.
 		
@@ -1041,8 +1069,12 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/querySelector>
 	**/
-	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	#if ((haxe >= version("5.0.0-preview.2") || js_generic_lookups) && js_html_compat)
+	overload function querySelector<E:(js.web.dom.Element)=js.web.html.HTMLElement>(selectors:String):Null<E>;
+	#elseif (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
 	overload function querySelector<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):Null<E>;
+	#elseif js_html_compat
+	overload function querySelector(selectors:String):Null<js.web.html.HTMLElement>;
 	#else
 	overload function querySelector(selectors:String):Null<Element>;
 	#end
@@ -1069,7 +1101,9 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/querySelectorAll>
 	**/
-	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	#if ((haxe >= version("5.0.0-preview.2") || js_generic_lookups) && js_html_compat)
+	overload function querySelectorAll<E:(js.web.dom.Element)=js.web.html.HTMLElement>(selectors:String):js.web.dom.NodeListOf<E>;
+	#elseif (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
 	overload function querySelectorAll<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):js.web.dom.NodeListOf<E>;
 	#else
 	overload function querySelectorAll(selectors:String):NodeList;

@@ -32,6 +32,14 @@ package js.web.css;
 	var overset(default, null) : Bool;
 	var firstEmptyRegionIndex(default, null) : Int;
 	function getContent():Array<js.web.dom.Node>;
+	#if js_html_compat
+	function getRegions():Array<js.web.html.HTMLElement>;
+	#else
 	function getRegions():Array<js.web.dom.Element>;
+	#end
+	#if js_html_compat
+	function getRegionsByContent(node:js.web.dom.Node):Array<js.web.html.HTMLElement>;
+	#else
 	function getRegionsByContent(node:js.web.dom.Node):Array<js.web.dom.Element>;
+	#end
 }

@@ -166,7 +166,11 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Window/frameElement>
 	**/
+	#if js_html_compat
+	var frameElement(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var frameElement(default, null) : Null<js.web.dom.Element>;
+	#end
 	/**
 		The **`Window.navigator`** read-only property returns a reference to the `Navigator` object, which has methods and properties about the application running the script.
 		

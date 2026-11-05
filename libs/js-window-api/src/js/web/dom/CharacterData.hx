@@ -51,7 +51,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/previousElementSibling>
 	**/
+	#if js_html_compat
+	var previousElementSibling(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var previousElementSibling(default, null) : Null<Element>;
+	#end
 	/**
 		The read-only **`nextElementSibling`** property of the `CharacterData` interface returns the first `Element` node following the specified one in its parent's children list, or `null` if the specified element is the last one in the list.
 		
@@ -59,7 +63,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CharacterData/nextElementSibling>
 	**/
+	#if js_html_compat
+	var nextElementSibling(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var nextElementSibling(default, null) : Null<Element>;
+	#end
 	/**
 		The **`after()`** method of the `CharacterData` interface inserts a set of `Node` objects or strings in the children list of the `CharacterData`'s parent, just after the `CharacterData`. Strings are inserted as equivalent `Text` nodes. Nothing happens if `parentNode` is `null`.
 		

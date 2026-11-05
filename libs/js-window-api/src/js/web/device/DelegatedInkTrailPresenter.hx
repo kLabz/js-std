@@ -39,7 +39,11 @@ package js.web.device;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DelegatedInkTrailPresenter/presentationArea>
 	**/
+	#if js_html_compat
+	var presentationArea(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var presentationArea(default, null) : Null<js.web.dom.Element>;
+	#end
 	/**
 		The **`updateInkTrailStartPoint()`** method of the `DelegatedInkTrailPresenter` interface indicates which `PointerEvent` was used as the last rendering point for the current frame, allowing the OS-level compositor to render a delegated ink trail ahead of the next pointer event being dispatched.
 		

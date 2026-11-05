@@ -30,6 +30,15 @@ class Main {
 		var gl2 = canvas.getContextWebGL2({antialias: false});
 		el.addEventListener("keydown", (e:js.html.KeyboardEvent) -> if (e.keyCode == js.html.KeyboardEvent.DOM_VK_LEFT) trace(div2, ctx2, gl2));
 
+		// Element results are HTMLElement, as in js.html
+		var found:Element = Browser.document.getElementById("found");
+		var first:Element = Browser.document.querySelector(".first");
+		var parent:Element = el.parentElement;
+		var child:Element = el.firstElementChild;
+		var item:Element = el.children.item(0);
+		Browser.document.querySelectorAll(".all");
+		for (e in [found, first, parent, child, item, el.closest("div")]) e.style.display = "none";
+
 		var type:XMLHttpRequestResponseType = XMLHttpRequestResponseType.JSON;
 		var db:Null<Database> = null;
 		new Custom();

@@ -45,7 +45,11 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CSSPseudoElement/element>
 	**/
+	#if js_html_compat
+	var element(default, null) : js.web.html.HTMLElement;
+	#else
 	var element(default, null) : js.web.dom.Element;
+	#end
 	/**
 		The **`parent`** read-only property of the `CSSPseudoElement` interface returns a reference to the immediate originating element of the pseudo-element, which can be an `Element`, or a `CSSPseudoElement` in the case of a [nested pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements#nesting_pseudo-elements).
 		

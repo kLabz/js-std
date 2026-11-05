@@ -43,11 +43,19 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLCollection/item>
 	**/
+	#if js_html_compat
+	function item(index:Int):Null<js.web.html.HTMLElement>;
+	#else
 	function item(index:Int):Null<Element>;
+	#end
 	/**
 		The **`namedItem()`** method of the `HTMLCollection` interface returns the first `Element` in the collection whose `id` or `name` attribute match the specified name, or `null` if no element matches.
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLCollection/namedItem>
 	**/
+	#if js_html_compat
+	function namedItem(name:String):Null<js.web.html.HTMLElement>;
+	#else
 	function namedItem(name:String):Null<Element>;
+	#end
 }

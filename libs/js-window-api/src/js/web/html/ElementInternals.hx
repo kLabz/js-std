@@ -89,7 +89,11 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ElementInternals/ariaActiveDescendantElement>
 	**/
+	#if js_html_compat
+	var ariaActiveDescendantElement : Null<js.web.html.HTMLElement>;
+	#else
 	var ariaActiveDescendantElement : Null<js.web.dom.Element>;
+	#end
 	/**
 		The **`ariaAtomic`** property of the `ElementInternals` interface reflects the value of the [`aria-atomic`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-atomic) attribute, which indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the `aria-relevant` attribute.
 		

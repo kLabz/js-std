@@ -37,7 +37,11 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ScrollTimeline/source>
 	**/
+	#if js_html_compat
+	var source(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var source(default, null) : Null<js.web.dom.Element>;
+	#end
 	/**
 		The **`axis`** read-only property of the `ScrollTimeline` interface returns an enumerated value representing the scroll axis that is driving the progress of the timeline.
 		

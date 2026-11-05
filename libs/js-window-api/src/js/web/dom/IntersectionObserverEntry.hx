@@ -75,7 +75,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/target>
 	**/
+	#if js_html_compat
+	var target(default, null) : js.web.html.HTMLElement;
+	#else
 	var target(default, null) : Element;
+	#end
 	/**
 		The **`IntersectionObserverEntry()`** constructor creates and returns a new `IntersectionObserverEntry` object.
 		

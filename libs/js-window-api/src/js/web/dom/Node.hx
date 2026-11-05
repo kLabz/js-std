@@ -85,7 +85,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Node/parentElement>
 	**/
-	var parentElement(default, null) : Null<Element>;
+	var parentElement(default, null) : Null<js.web.html.HTMLElement>;
 	/**
 		The read-only **`childNodes`** property of the `Node` interface returns a live `NodeList` of child `nodes` of the given element where the first child node is assigned index `0`. Child nodes include elements, text and comments.
 		

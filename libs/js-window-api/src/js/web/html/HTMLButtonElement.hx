@@ -43,7 +43,11 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/commandForElement>
 	**/
+	#if js_html_compat
+	var commandForElement : Null<js.web.html.HTMLElement>;
+	#else
 	var commandForElement : Null<js.web.dom.Element>;
+	#end
 	/**
 		The **`HTMLButtonElement.disabled`** property indicates whether the control is disabled, meaning that it does not accept any clicks.
 		
@@ -135,7 +139,11 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLButtonElement/popoverTargetElement>
 	**/
+	#if js_html_compat
+	var popoverTargetElement : Null<js.web.html.HTMLElement>;
+	#else
 	var popoverTargetElement : Null<js.web.dom.Element>;
+	#end
 	/**
 		The **`popoverTargetAction`** property of the `HTMLButtonElement` interface gets and sets the action to be performed (`"hide"`, `"show"`, or `"toggle"`) on a popover element being controlled by a button.
 		

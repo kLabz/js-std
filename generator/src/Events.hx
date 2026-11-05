@@ -204,18 +204,6 @@ class Events {
 		}
 	}
 
-	public static inline var STRICT_EVENTS_META = ":jsStrictEvents";
-	public static inline var HTML_COMPAT_META = ":jsHtmlCompat";
-	public static inline var GENERIC_LOOKUPS_META = ":jsGenericLookups";
-	public static inline var NO_GENERIC_LOOKUPS_META = ":jsNoGenericLookups";
-	static inline var GENERIC_LOOKUPS = '(haxe >= version("5.0.0-preview.2") || js_generic_lookups)';
-	static final conditions = [
-		STRICT_EVENTS_META => "!js_strict_events",
-		HTML_COMPAT_META => "js_html_compat",
-		GENERIC_LOOKUPS_META => GENERIC_LOOKUPS,
-		NO_GENERIC_LOOKUPS_META => '!$GENERIC_LOOKUPS'
-	];
-
 	/**
 		Splits `EventTarget`'s `String` overloads into a generic one, accepting listeners of any event
 		type (`(e:KeyboardEvent) -> …`, as std did), and exact function and object ones.
@@ -232,7 +220,7 @@ class Events {
 					return {
 						name: f.name,
 						doc: f.doc,
-						meta: (f.meta ?? []).concat(meta ?? []),
+						meta: (meta ?? []).concat(f.meta ?? []),
 						access: [AOverload],
 						kind: FFun({args: args, ret: fn.ret, params: params, expr: null}),
 						pos: f.pos
@@ -242,33 +230,13 @@ class Events {
 				eventTarget.fields.splice(i, 1);
 				eventTarget.fields.insert(i, variant(macro :{function handleEvent(event:$event):Void;}));
 				eventTarget.fields.insert(i, variant(macro :(event:$event) -> Void));
-				eventTarget.fields.insert(i, variant(macro :(event:E) -> Void, [{name: "E", constraints: [event]}], [{name: STRICT_EVENTS_META, pos: f.pos}]));
+				eventTarget.fields.insert(i, variant(macro :(event:E) -> Void, [{name: "E", constraints: [event]}], [Conditional.ifMeta(Conditional.STRICT_EVENTS, f.pos)]));
 				eventTarget.fields.insert(i, variant(macro :() -> Void, [
-					{name: HTML_COMPAT_META, pos: f.pos},
+					Conditional.ifMeta(Conditional.HTML_COMPAT, f.pos),
 					{name: ":deprecated", params: [macro "Listeners take the event: _ -> … instead of () -> …"], pos: f.pos}
 				]));
 			case _:
 		}
-	}
-
-	/** Printer can't emit conditional compilation: fields marked with a `conditions` meta get wrapped here. **/
-	public static function wrapConditionalOverloads(printed:String):String {
-		var lines = printed.split("\n");
-		var i = 0;
-		while (i < lines.length) {
-			var condition = conditions.get(lines[i].trim().substr(1));
-			if (condition != null) {
-				lines[i] = lines[i].replace(lines[i].trim(), '#if $condition');
-				var end = i + 1;
-				while (!lines[end].trim().endsWith(";")) end++;
-				lines.insert(end + 1, "\t#end");
-			}
-			i++;
-		}
-		// Consecutive blocks with the same condition
-		var printed = lines.join("\n").replace('\t#end\n\t#if !$GENERIC_LOOKUPS\n', "\t#else\n");
-		for (condition in conditions) printed = printed.replace('\t#end\n\t#if $condition\n', "");
-		return printed;
 	}
 
 	static function valueName(type:String):String {

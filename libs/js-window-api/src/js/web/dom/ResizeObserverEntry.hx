@@ -37,7 +37,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/target>
 	**/
+	#if js_html_compat
+	var target(default, null) : js.web.html.HTMLElement;
+	#else
 	var target(default, null) : Element;
+	#end
 	/**
 		The `contentRect` read-only property of the `ResizeObserverEntry` interface returns a `DOMRectReadOnly` object containing the new size of the observed element when the callback is run. Note that this is better supported than `ResizeObserverEntry.borderBoxSize` or `ResizeObserverEntry.contentBoxSize`, but it is left over from an earlier implementation of the Resize Observer API, is still included in the spec for web compat reasons, and may be deprecated in future versions.
 		

@@ -257,7 +257,11 @@ package js.web.svg;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/SVGSVGElement/getElementById>
 	**/
+	#if js_html_compat
+	function getElementById(elementId:String):Null<js.web.html.HTMLElement>;
+	#else
 	function getElementById(elementId:String):Null<js.web.dom.Element>;
+	#end
 	function getEnclosureList(rect:js.web.dom.SVGRect, referenceElement:Null<SVGElement>):js.web.dom.NodeList;
 	function getIntersectionList(rect:js.web.dom.SVGRect, referenceElement:Null<SVGElement>):js.web.dom.NodeList;
 	/**

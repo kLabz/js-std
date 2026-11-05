@@ -49,7 +49,11 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ToggleEvent/source>
 	**/
+	#if js_html_compat
+	var source(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var source(default, null) : Null<js.web.dom.Element>;
+	#end
 	/**
 		The **`ToggleEvent()`** constructor creates a new `ToggleEvent` object.
 		

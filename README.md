@@ -62,7 +62,7 @@ Each type's documentation names the spec it comes from.
 
 `js.web.svg.SVGElementTagName<T>` does the same for SVG, with `createElementNS`: `document.createElementNS(SVG_NAMESPACE, CIRCLE)` is a `SVGCircleElement`. Mixed-case tags are in upper snake case (`LINEAR_GRADIENT` for `linearGradient`). `A`, `SCRIPT`, `STYLE` and `TITLE` exist in both: in queries, write `SVGElementTagName.A` or `HTMLElementTagName.A`.
 
-With selectors, give the element type explicitly, as in TypeScript: `document.querySelector.<HTMLInputElement>("#name")` is a `Null<HTMLInputElement>`, and the same goes for `getElementById`, `querySelectorAll` (a `NodeListOf<HTMLInputElement>`) and `closest`. Without one, they return `Element`, whatever the expected type. This needs explicit call type arguments and method default type parameters, from Haxe 5.0.0-preview.2; `-D js-generic-lookups` enables it on a compiler built with them that reports an earlier version.
+With selectors, give the element type explicitly, as in TypeScript: `document.querySelector.<HTMLInputElement>("#name")` is a `Null<HTMLInputElement>`, and the same goes for `getElementById`, `querySelectorAll` (a `NodeListOf<HTMLInputElement>`) and `closest`. Without one, `getElementById` returns `HTMLElement` and the others `Element` (as in TypeScript), whatever the expected type. `parentElement` is also a `HTMLElement`. This needs explicit call type arguments and method default type parameters, from Haxe 5.0.0-preview.2; `-D js-generic-lookups` enables it on a compiler built with them that reports an earlier version.
 
 Canvas context ids are typed the same way, with their context and options: `canvas.getContext(WEBGL2, {antialias: false})` is a `Null<WebGL2RenderingContext>` (`js.web.canvas.CanvasContextId`), and `offscreenCanvas.getContext(CONTEXT_2D)` a `Null<OffscreenCanvasRenderingContext2D>` (`OffscreenRenderingContextId`). The id → context mapping is maintained in `generator/src/Canvas.hx`, as it is only in the HTML spec's prose.
 
@@ -107,6 +107,8 @@ Types keep their WebIDL names, so many differ from `js.html`: `js.html.DivElemen
 Add `-lib js-html-compat` (next to `-lib js-window-api`) to keep existing code compiling: `js.html` types become deprecated typedefs to their js-std counterparts, and each use warns with the new name. `js.Browser` is replaced by one typed with js-std types. Once the warnings are fixed, drop `js-html-compat`.
 
 Listeners take the event (`_ -> …`, not `() -> …`); with `js-html-compat`, listeners without argument still compile, with a deprecation warning.
+
+Members giving an `Element` (`querySelector`, `firstElementChild`, `HTMLCollection.item`…) give a `HTMLElement` with `js-html-compat`, as in `js.html`; without it, only `getElementById` and `parentElement` do.
 
 With `js-html-compat`, some std-only members are back on js-std types, deprecated with their replacement: `KeyboardEvent.DOM_VK_*` (Firefox-only constants: use `key` or `code`), `Document.create*Element()` (`createElement(DIV)`) and `HTMLCanvasElement.getContext2d()` / `getContextWebGL()` / `getContextWebGL2()` (`getContext(CONTEXT_2D)`…).
 

@@ -67,7 +67,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Attr/ownerElement>
 	**/
+	#if js_html_compat
+	var ownerElement(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var ownerElement(default, null) : Null<Element>;
+	#end
 	/**
 		The read-only **`specified`** property of the `Attr` interface always returns `true`.
 		

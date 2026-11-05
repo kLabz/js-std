@@ -61,7 +61,11 @@ package js.web.perf;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/LargestContentfulPaint/element>
 	**/
+	#if js_html_compat
+	var element(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var element(default, null) : Null<js.web.dom.Element>;
+	#end
 	/**
 		The **`paintTime`** read-only property of the `LargestContentfulPaint` interface returns the `timestamp` when the rendering phase ended and the paint phase started.
 		

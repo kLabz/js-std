@@ -310,7 +310,11 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLInputElement/popoverTargetElement>
 	**/
+	#if js_html_compat
+	var popoverTargetElement : Null<js.web.html.HTMLElement>;
+	#else
 	var popoverTargetElement : Null<js.web.dom.Element>;
+	#end
 	/**
 		The **`popoverTargetAction`** property of the `HTMLInputElement` interface gets and sets the action to be performed (`"hide"`, `"show"`, or `"toggle"`) on a popover element being controlled by an `<input>` element of `type="button"`.
 		

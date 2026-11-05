@@ -97,7 +97,11 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/NavigateEvent/sourceElement>
 	**/
+	#if js_html_compat
+	var sourceElement(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var sourceElement(default, null) : Null<js.web.dom.Element>;
+	#end
 	/**
 		The **`NavigateEvent()`** constructor creates a new `NavigateEvent` object instance.
 		

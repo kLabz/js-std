@@ -61,8 +61,13 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ViewTransition/transitionRoot>
 	**/
+	#if js_html_compat
+	@:require(js_experimental_api, "ViewTransition.transitionRoot is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	var transitionRoot(default, null) : js.web.html.HTMLElement;
+	#else
 	@:require(js_experimental_api, "ViewTransition.transitionRoot is experimental (shipped in fewer than two engines); use -D js-experimental-api")
 	var transitionRoot(default, null) : js.web.dom.Element;
+	#end
 	/**
 		The **`skipTransition()`** method of the `ViewTransition` interface skips the animation part of the view transition, but doesn't skip running the associated view update.
 		

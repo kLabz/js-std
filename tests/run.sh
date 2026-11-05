@@ -26,6 +26,8 @@ fi
 if [ -n "$GENERIC_LOOKUPS" ]; then
 	# shellcheck disable=SC2086
 	"$HAXE" $core -cp $libs/js-window-api/src -cp generic -main Main -D js-generic-lookups -js bin/generic.js && echo "generic lookups smoke test: compiled" || status=1
+	# shellcheck disable=SC2086
+	"$HAXE" $core -cp $libs/js-window-api/src -cp $libs/js-html-compat/src -cp compat -main Main -D js-html-compat -D js-generic-lookups -w -WDeprecated -js bin/compat.js && echo "js-html-compat smoke test with generic lookups: compiled" || status=1
 fi
 
 # -D js-strict-events rejects listeners narrower than Event for string event names, and only those

@@ -37,7 +37,11 @@ package js.web.css;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/ViewTimeline/subject>
 	**/
+	#if js_html_compat
+	var subject(default, null) : js.web.html.HTMLElement;
+	#else
 	var subject(default, null) : js.web.dom.Element;
+	#end
 	/**
 		The **`startOffset`** read-only property of the `ViewTimeline` interface returns a `CSSNumericValue` representing the starting (0% progress) scroll position of the timeline as an offset from the start of the overflowing section of content in the scroller.
 		

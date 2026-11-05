@@ -47,7 +47,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/firstElementChild>
 	**/
+	#if js_html_compat
+	var firstElementChild(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var firstElementChild(default, null) : Null<Element>;
+	#end
 	/**
 		The **`DocumentFragment.lastElementChild`** read-only property returns the document fragment's last child `Element`, or `null` if there are no child elements.
 		
@@ -55,7 +59,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/lastElementChild>
 	**/
+	#if js_html_compat
+	var lastElementChild(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var lastElementChild(default, null) : Null<Element>;
+	#end
 	/**
 		The **`DocumentFragment.childElementCount`** read-only property returns the number of child elements of a `DocumentFragment`.
 		
@@ -86,9 +94,9 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/getElementById>
 	**/
 	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
-	function getElementById<E:(js.web.dom.Element)=js.web.dom.Element>(elementId:String):Null<E>;
+	function getElementById<E:(js.web.dom.Element)=js.web.html.HTMLElement>(elementId:String):Null<E>;
 	#else
-	function getElementById(elementId:String):Null<Element>;
+	function getElementById(elementId:String):Null<js.web.html.HTMLElement>;
 	#end
 	/**
 		The **`moveBefore()`** method of the `DocumentFragment` interface moves a given `Node` inside the invoking `DocumentFragment` as a direct child, before a given reference node.
@@ -129,8 +137,12 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/querySelector>
 	**/
-	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	#if ((haxe >= version("5.0.0-preview.2") || js_generic_lookups) && js_html_compat)
+	overload function querySelector<E:(js.web.dom.Element)=js.web.html.HTMLElement>(selectors:String):Null<E>;
+	#elseif (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
 	overload function querySelector<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):Null<E>;
+	#elseif js_html_compat
+	overload function querySelector(selectors:String):Null<js.web.html.HTMLElement>;
 	#else
 	overload function querySelector(selectors:String):Null<Element>;
 	#end
@@ -157,7 +169,9 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/querySelectorAll>
 	**/
-	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	#if ((haxe >= version("5.0.0-preview.2") || js_generic_lookups) && js_html_compat)
+	overload function querySelectorAll<E:(js.web.dom.Element)=js.web.html.HTMLElement>(selectors:String):js.web.dom.NodeListOf<E>;
+	#elseif (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
 	overload function querySelectorAll<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):js.web.dom.NodeListOf<E>;
 	#else
 	overload function querySelectorAll(selectors:String):NodeList;

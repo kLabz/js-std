@@ -75,7 +75,11 @@ package js.web.perf;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/PerformanceElementTiming/element>
 	**/
+	#if js_html_compat
+	var element(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var element(default, null) : Null<js.web.dom.Element>;
+	#end
 	/**
 		The **`url`** read-only property of the `PerformanceElementTiming` interface returns the initial URL of the resource request when the element is an image.
 		

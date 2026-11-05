@@ -81,7 +81,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/documentElement>
 	**/
+	#if js_html_compat
+	var documentElement(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var documentElement(default, null) : Null<Element>;
+	#end
 	/**
 		The **`fonts`** property of the `Document` interface returns the `FontFaceSet` interface of the document.
 		
@@ -121,7 +125,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/fullscreenElement>
 	**/
+	#if js_html_compat
+	var fullscreenElement(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var fullscreenElement(default, null) : Null<Element>;
+	#end
 	/**
 		The **`activeElement`** read-only property of the `Document` interface returns the `Element` within the DOM that is receiving keyboard events such as `keydown` and `keyup`. This is usually analogous to the focused element.
 		
@@ -129,7 +137,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/activeElement>
 	**/
+	#if js_html_compat
+	var activeElement(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var activeElement(default, null) : Null<Element>;
+	#end
 	/**
 		The **`pictureInPictureElement`** read-only property of the `Document` interface returns the `Element` that is currently being presented in picture-in-picture mode in this document, or `null` if picture-in-picture mode is not currently in use.
 		
@@ -137,7 +149,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/pictureInPictureElement>
 	**/
+	#if js_html_compat
+	var pictureInPictureElement(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var pictureInPictureElement(default, null) : Null<Element>;
+	#end
 	/**
 		The **`pointerLockElement`** read-only property of the `Document` interface provides the element set as the target for mouse events while the pointer is locked. It is `null` if lock is pending, pointer is unlocked, or the target is in another document.
 		
@@ -145,7 +161,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/pointerLockElement>
 	**/
+	#if js_html_compat
+	var pointerLockElement(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var pointerLockElement(default, null) : Null<Element>;
+	#end
 	/**
 		The read-only **`children`** property returns a live `HTMLCollection` which contains all of the child `elements` of the document upon which it was called.
 		
@@ -161,7 +181,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/firstElementChild>
 	**/
+	#if js_html_compat
+	var firstElementChild(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var firstElementChild(default, null) : Null<Element>;
+	#end
 	/**
 		The **`Document.lastElementChild`** read-only property returns the document's last child `Element`, or `null` if there are no child elements.
 		
@@ -169,7 +193,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/lastElementChild>
 	**/
+	#if js_html_compat
+	var lastElementChild(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var lastElementChild(default, null) : Null<Element>;
+	#end
 	/**
 		The **`Document.childElementCount`** read-only property returns the number of child elements of the document.
 		
@@ -631,7 +659,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/scrollingElement>
 	**/
+	#if js_html_compat
+	var scrollingElement(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var scrollingElement(default, null) : Null<Element>;
+	#end
 	/**
 		The read-only **`fullscreenEnabled`** property on the `Document` interface indicates whether or not fullscreen mode is available.
 		
@@ -1084,7 +1116,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/createElement>
 	**/
+	#if js_html_compat
+	overload function createElement(localName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):js.web.html.HTMLElement;
+	#else
 	overload function createElement(localName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
+	#end
 	/**
 		The **`createElementNS()`** method of the `Document` interface creates a new element with the specified namespace URI and qualified name.
 		
@@ -1096,7 +1132,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/createElementNS>
 	**/
+	#if js_html_compat
+	overload function createElementNS(namespace:Null<String>, qualifiedName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):js.web.html.HTMLElement;
+	#else
 	overload function createElementNS(namespace:Null<String>, qualifiedName:String, ?options:haxe.extern.EitherType<String, ElementCreationOptions>):Element;
+	#end
 	/**
 		Creates an [event](https://developer.mozilla.org/en-US/docs/Web/API/Event) of the type specified. The returned object should be first initialized and can then be passed to `EventTarget.dispatchEvent`.
 		
@@ -1158,7 +1198,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/elementFromPoint>
 	**/
+	#if js_html_compat
+	function elementFromPoint(x:Float, y:Float):Null<js.web.html.HTMLElement>;
+	#else
 	function elementFromPoint(x:Float, y:Float):Null<Element>;
+	#end
 	/**
 		The **`elementsFromPoint()`** method of the `Document` interface returns an array of all elements at the specified coordinates (relative to the viewport). The elements are ordered from the topmost to the bottommost box of the viewport.
 		
@@ -1166,7 +1210,11 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/elementsFromPoint>
 	**/
+	#if js_html_compat
+	function elementsFromPoint(x:Float, y:Float):Array<js.web.html.HTMLElement>;
+	#else
 	function elementsFromPoint(x:Float, y:Float):Array<Element>;
+	#end
 	/**
 		The **`evaluate()`** method of the `Document` interface selects elements based on the [XPath](https://developer.mozilla.org/en-US/docs/Web/XML/XPath) expression given in parameters.
 		
@@ -1229,9 +1277,9 @@ package js.web.dom;
 		@see <https://developer.mozilla.org/docs/Web/API/Document/getElementById>
 	**/
 	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
-	function getElementById<E:(js.web.dom.Element)=js.web.dom.Element>(elementId:String):Null<E>;
+	function getElementById<E:(js.web.dom.Element)=js.web.html.HTMLElement>(elementId:String):Null<E>;
 	#else
-	function getElementById(elementId:String):Null<Element>;
+	function getElementById(elementId:String):Null<js.web.html.HTMLElement>;
 	#end
 	/**
 		The **`getElementsByClassName`** method of `Document` interface returns an array-like object of all child elements which have all of the given class name(s).
@@ -1444,8 +1492,12 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/querySelector>
 	**/
-	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	#if ((haxe >= version("5.0.0-preview.2") || js_generic_lookups) && js_html_compat)
+	overload function querySelector<E:(js.web.dom.Element)=js.web.html.HTMLElement>(selectors:String):Null<E>;
+	#elseif (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
 	overload function querySelector<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):Null<E>;
+	#elseif js_html_compat
+	overload function querySelector(selectors:String):Null<js.web.html.HTMLElement>;
 	#else
 	overload function querySelector(selectors:String):Null<Element>;
 	#end
@@ -1472,7 +1524,9 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll>
 	**/
-	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	#if ((haxe >= version("5.0.0-preview.2") || js_generic_lookups) && js_html_compat)
+	overload function querySelectorAll<E:(js.web.dom.Element)=js.web.html.HTMLElement>(selectors:String):js.web.dom.NodeListOf<E>;
+	#elseif (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
 	overload function querySelectorAll<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):js.web.dom.NodeListOf<E>;
 	#else
 	overload function querySelectorAll(selectors:String):NodeList;

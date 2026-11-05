@@ -37,7 +37,11 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CommandEvent/source>
 	**/
+	#if js_html_compat
+	var source(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var source(default, null) : Null<js.web.dom.Element>;
+	#end
 	/**
 		The **`command`** read-only property of the `CommandEvent` interface returns a string containing the value of the `command` property at the time the event was dispatched.
 		

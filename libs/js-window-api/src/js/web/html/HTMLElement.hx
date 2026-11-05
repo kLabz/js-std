@@ -667,7 +667,11 @@ package js.web.html;
 	/**
 		From partial interface in cssom-view.idl
 	**/
+	#if js_html_compat
+	var scrollParent(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var scrollParent(default, null) : Null<js.web.dom.Element>;
+	#end
 	/**
 		The **`HTMLElement.offsetParent`** read-only property returns a reference to the element which is the closest (nearest in the containment hierarchy) positioned ancestor element.
 		
@@ -675,7 +679,11 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetParent>
 	**/
+	#if js_html_compat
+	var offsetParent(default, null) : Null<js.web.html.HTMLElement>;
+	#else
 	var offsetParent(default, null) : Null<js.web.dom.Element>;
+	#end
 	/**
 		The **`offsetTop`** read-only property of the `HTMLElement` interface returns the distance from the outer border of the current element (including its margin) to the top padding edge of the `offsetParent`, the _closest positioned_ ancestor element.
 		

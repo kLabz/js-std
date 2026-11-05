@@ -21,4 +21,15 @@ for lib in js-window-api js-worker-api js-service-worker-api js-worklet-api; do
 	fi
 done
 
+printf 'js-html-compat: '
+# shellcheck disable=SC2086
+if out=$("$HAXE" $core -cp js-window-api/src -cp js-html-compat/src -js check.js --no-output -w -WDeprecated \
+	--macro "include('js.html')" 2>&1); then
+	echo "ok"
+else
+	echo "FAILED"
+	echo "$out"
+	status=1
+fi
+
 exit $status

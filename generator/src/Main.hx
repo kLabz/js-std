@@ -100,6 +100,7 @@ class Main {
 					finalizeLibs();
 					#if !no_output
 					StaticFiles.copyAll();
+					CompatLib.write([for (p in saved.keys()) p]);
 					HaxelibJson.writeAll();
 					#end
 					return;

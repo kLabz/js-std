@@ -7,7 +7,8 @@ class HaxelibJson {
 		"js-window-api" => "Web API externs for Haxe: types available in Window (pages, iframes, Electron renderers).",
 		"js-worker-api" => "Web API externs for Haxe: types available in dedicated and shared workers.",
 		"js-service-worker-api" => "Web API externs for Haxe: types available in service workers.",
-		"js-worklet-api" => "Web API externs for Haxe: types available in worklets."
+		"js-worklet-api" => "Web API externs for Haxe: types available in worklets.",
+		"js-html-compat" => "Deprecated aliases from the js.html types of the Haxe standard library to js-window-api."
 	];
 
 	public static function writeAll():Void {
@@ -27,7 +28,8 @@ class HaxelibJson {
 				releasenote: 'Generated from @webref/idl $webref and @mdn/browser-compat-data $bcd.',
 				contributors: ["kLabz"]
 			};
-			if (lib != "js-core-api") json.dependencies = {"js-core-api": version};
+			if (lib == CompatLib.LIB) json.dependencies = {"js-window-api": version};
+			else if (lib != "js-core-api") json.dependencies = {"js-core-api": version};
 
 			File.saveContent('../libs/$lib/haxelib.json', Json.stringify(json, null, "  ") + "\n");
 		}

@@ -7,7 +7,7 @@ import sys.io.File;
 	generated output of that library.
 **/
 class StaticFiles {
-	static final libs = ["js-core-api", "js-window-api", "js-worker-api", "js-service-worker-api", "js-worklet-api"];
+	static final libs = ["js-core-api", "js-window-api", "js-worker-api", "js-service-worker-api", "js-worklet-api", CompatLib.LIB];
 
 	public static function clearOutput():Void {
 		for (lib in libs) {

@@ -1,0 +1,20 @@
+{
+  "name": "js-html-compat",
+  "description": "Deprecated aliases from the js.html types of the Haxe standard library to js-window-api.",
+  "version": "0.1.0",
+  "url": "https://github.com/kLabz/js-std",
+  "license": "MIT",
+  "tags": [
+    "js",
+    "externs",
+    "web"
+  ],
+  "classPath": "src",
+  "releasenote": "Generated from @webref/idl 3.86.0 and @mdn/browser-compat-data 8.1.8.",
+  "contributors": [
+    "kLabz"
+  ],
+  "dependencies": {
+    "js-window-api": "0.1.0"
+  }
+}

@@ -15,6 +15,7 @@ Types are split by the global scopes they are exposed in (WebIDL `[Exposed]`). D
 | `js-worker-api` | Types exposed in dedicated and shared workers |
 | `js-service-worker-api` | Types exposed in service workers |
 | `js-worklet-api` | Types exposed in worklets (audio, paint, layout, animation) |
+| `js-html-compat` | Deprecated `js.html` aliases, to migrate from the standard library (see below) |
 
 All scope libraries depend on `js-core-api`.
 
@@ -54,6 +55,16 @@ Types keep their WebIDL names (`HTMLElement`, `Element`, `Request`…) and are g
 Specs map to packages through name rules plus a hand-maintained list. The html spec spans several groups, so some of its interfaces (canvas in particular) are mapped individually. A new spec matching no rule goes to `js.web.misc` with a generator warning, so it gets assigned explicitly.
 
 Each type's documentation names the spec it comes from.
+
+## Migrating from `js.html`
+
+Types keep their WebIDL names, so many differ from `js.html`: `js.html.DivElement` is `js.web.html.HTMLDivElement`, `js.html.Element` is `js.web.html.HTMLElement` (and `js.html.DOMElement` is `js.web.dom.Element`), `js.html.idb.Database` is `js.web.storage.IDBDatabase`, etc.
+
+Add `-lib js-html-compat` (next to `-lib js-window-api`) to keep existing code compiling: `js.html` types become deprecated typedefs to their js-std counterparts, and each use warns with the new name. `js.Browser` is replaced by one typed with js-std types. Once the warnings are fixed, drop `js-html-compat`.
+
+`js-html-compat` only covers types available in `Window`; `js.html` types that js-std doesn't have (obsolete APIs, worker-only types) still come from the standard library.
+
+The aliases are generated from the `js.html` types of Haxe 4.3.7 (`generator/res/std-js-html.txt`, listed by `generator/extract-std-js-html.sh`).
 
 ## Status
 

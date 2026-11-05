@@ -20,5 +20,7 @@ fi
 "$HAXE" $core -cp $libs/js-window-api/src -cp window -main Main -js bin/window.js && echo "window smoke test: compiled" || status=1
 # shellcheck disable=SC2086
 "$HAXE" $core -cp $libs/js-window-api/src -cp nullsafety -main app.Main --macro 'nullSafety("app", Strict)' -js bin/nullsafety.js && echo "null safety smoke test: compiled" || status=1
+# shellcheck disable=SC2086
+"$HAXE" $core -cp $libs/js-window-api/src -cp $libs/js-html-compat/src -cp compat -main Main -w -WDeprecated -js bin/compat.js && echo "js-html-compat smoke test: compiled" || status=1
 
 exit $status

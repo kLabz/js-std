@@ -38,7 +38,7 @@ class Bcd {
 			if (member == null) continue;
 
 			f.meta = f.meta ?? [];
-			if (annotate(member.__compat, f.doc, d -> f.doc = d, '$typeKey.$memberKey')) {
+			if (annotate(member.__compat, f.doc, d -> f.doc = d, '$typeKey.$memberKey') && !keepUndeprecated.contains('$name.$key')) {
 				if (!f.meta.exists(m -> m.name == ":deprecated")) f.meta.push(deprecated(f.pos));
 			}
 
@@ -48,6 +48,9 @@ class Bcd {
 			}
 		}
 	}
+
+	// Deprecated, but universally supported and what every game framework reads
+	static final keepUndeprecated = ["KeyboardEvent.keyCode"];
 
 	static var cssProperties:DynamicAccess<Dynamic> = (js.Lib.require("@mdn/browser-compat-data") : Dynamic).css.properties;
 

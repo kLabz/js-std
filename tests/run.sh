@@ -23,4 +23,16 @@ fi
 # shellcheck disable=SC2086
 "$HAXE" $core -cp $libs/js-window-api/src -cp $libs/js-html-compat/src -cp compat -main Main -w -WDeprecated -js bin/compat.js && echo "js-html-compat smoke test: compiled" || status=1
 
+# The generic String listener overload is only picked for listeners narrower than Event
+for main in Ok Narrow; do
+	# shellcheck disable=SC2086
+	out=$("$HAXE" $core -cp $libs/js-window-api/src -cp strict -main $main -D js-strict-events -D message.reporting=classic --no-output -js bin/strict.js 2>&1) || { echo "$out"; status=1; }
+	warnings=$(echo "$out" | grep -c "strict/$main.hx.*WDeprecated\|WDeprecated.*strict/$main.hx")
+	if [ "$main" = Ok ] && [ "$warnings" -ne 0 ] || [ "$main" = Narrow ] && [ "$warnings" -eq 0 ]; then
+		echo "js-strict-events: unexpected warnings for $main"; echo "$out"; status=1
+	else
+		echo "js-strict-events ($main): ok"
+	fi
+done
+
 exit $status

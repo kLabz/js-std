@@ -81,6 +81,8 @@ target.dispatchEvent(new CustomEventOf("ready", {detail: {count: 3}}));
 
 Both only exist at compile time.
 
+With a string event name, listeners can take a narrower event than `Event` (`addEventListener("keydown", (e:KeyboardEvent) -> …)`), as with `js.html`. Nothing checks that the name matches that type: `-D js-strict-events` flags those calls with a deprecation warning, pointing to typed event names.
+
 ## Haxe 4
 
 Haxe 4 only resolves these typed values (`DIV`, `WEBGL2`, `CLICK`…) through overloaded methods when their type is imported (`import js.web.dom.NodeEventType;`) or when they are qualified (`NodeEventType.CLICK`). Haxe 5 resolves them from the expected type alone. Strings still work and give `Element`. For custom elements, `HTMLElementTagName.of` types a tag name with its class, and `customElements.define` checks they match:
@@ -101,6 +103,8 @@ Browsers only accept ES6 classes as custom elements: compile with `-D js-es=6`.
 Types keep their WebIDL names, so many differ from `js.html`: `js.html.DivElement` is `js.web.html.HTMLDivElement`, `js.html.Element` is `js.web.html.HTMLElement` (and `js.html.DOMElement` is `js.web.dom.Element`), `js.html.idb.Database` is `js.web.storage.IDBDatabase`, etc.
 
 Add `-lib js-html-compat` (next to `-lib js-window-api`) to keep existing code compiling: `js.html` types become deprecated typedefs to their js-std counterparts, and each use warns with the new name. `js.Browser` is replaced by one typed with js-std types. Once the warnings are fixed, drop `js-html-compat`.
+
+`KeyboardEvent.DOM_VK_*` (Firefox-only constants) are not in js-std; std's `js.html.KeyEvent.DOM_VK_*` still provides them, as inlined values.
 
 `js-html-compat` only covers types available in `Window`; `js.html` types that js-std doesn't have (obsolete APIs, worker-only types) still come from the standard library.
 

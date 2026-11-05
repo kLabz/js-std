@@ -386,7 +386,8 @@ class Main {
 		out.add("// This file is generated from ");
 		out.add(ctx.origin ?? '@webref/idl/${ctx.file.filename}');
 		out.add(". Do not edit!\n\n");
-		out.add(printer.printTypeDefinition(td));
+		out.add(printer.printTypeDefinition(td).split("@" + Events.STRICT_EVENTS_META)
+			.join('#if js_strict_events @:deprecated("A listener narrower than Event needs a typed event name (KEYDOWN, EventType.custom) or to take Event") #end'));
 
 		#if !no_output
 		File.saveContent(path, out.toString());
@@ -492,6 +493,7 @@ class Main {
 			if (parent != null) children.set(parent, (children.get(parent) ?? []).concat([task.t]));
 		}
 		for (task in pendingSaves) if (isClass(task.t)) Events.typeHandlers(task.td, eventsByTarget, parentOf, t -> children.get(t) ?? [], resolve);
+		Events.splitStringOverloads(eventTarget, resolve);
 
 		// Dropping a type from a lib can make its dependents unavailable there too
 		var changed = true;

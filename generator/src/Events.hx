@@ -204,6 +204,39 @@ class Events {
 		}
 	}
 
+	public static inline var STRICT_EVENTS_META = ":jsStrictEvents";
+
+	/**
+		Splits `EventTarget`'s `String` overloads into a generic one, accepting listeners of any event
+		type (`(e:KeyboardEvent) -> …`, as std did), and exact function and object ones. The generic
+		one comes first: Haxe then only picks it for listeners narrower than `Event`, which
+		`-D js-strict-events` flags as deprecated.
+	**/
+	public static function splitStringOverloads(eventTarget:TypeDefinition, resolve:String->Null<Array<String>>):Void {
+		var event = TPath({pack: resolve("Event"), name: "Event"});
+		for (f in eventTarget.fields.copy()) switch [f.name, f.kind] {
+			case ["addEventListener" | "removeEventListener", FFun(fn)] if (fn.args[0].type.match(TPath({name: "String"}))):
+				function variant(callback:ComplexType, ?params:Array<TypeParamDecl>, ?meta:Metadata):Field {
+					var args = fn.args.copy();
+					args[1] = {name: args[1].name, opt: false, type: macro :Null<$callback>};
+					return {
+						name: f.name,
+						doc: f.doc,
+						meta: (f.meta ?? []).concat(meta ?? []),
+						access: [AOverload],
+						kind: FFun({args: args, ret: fn.ret, params: params, expr: null}),
+						pos: f.pos
+					};
+				}
+				var i = eventTarget.fields.indexOf(f);
+				eventTarget.fields.splice(i, 1);
+				eventTarget.fields.insert(i, variant(macro :{function handleEvent(event:$event):Void;}));
+				eventTarget.fields.insert(i, variant(macro :(event:$event) -> Void));
+				eventTarget.fields.insert(i, variant(macro :(event:E) -> Void, [{name: "E", constraints: [event]}], [{name: STRICT_EVENTS_META, pos: f.pos}]));
+			case _:
+		}
+	}
+
 	static function valueName(type:String):String {
 		var name = ~/([A-Z]+)([A-Z][a-z])/g.replace(type, "$1_$2");
 		name = ~/([a-z0-9])([A-Z])/g.replace(name, "$1_$2");

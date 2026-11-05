@@ -49,7 +49,20 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener>
 	**/
-	overload function addEventListener(type:String, callback:Null<EventListener>, ?options:haxe.extern.EitherType<AddEventListenerOptions, Bool>):Void;
+	#if js_strict_events @:deprecated("A listener narrower than Event needs a typed event name (KEYDOWN, EventType.custom) or to take Event") #end
+	overload function addEventListener<E:(js.web.dom.Event)>(type:String, callback:Null<(event:E) -> Void>, ?options:haxe.extern.EitherType<AddEventListenerOptions, Bool>):Void;
+	/**
+		The **`addEventListener()`** method of the `EventTarget` interface sets up a function that will be called whenever the specified event is delivered to the target.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener>
+	**/
+	overload function addEventListener(type:String, callback:Null<(event:js.web.dom.Event) -> Void>, ?options:haxe.extern.EitherType<AddEventListenerOptions, Bool>):Void;
+	/**
+		The **`addEventListener()`** method of the `EventTarget` interface sets up a function that will be called whenever the specified event is delivered to the target.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener>
+	**/
+	overload function addEventListener(type:String, callback:Null<{ function handleEvent(event:js.web.dom.Event):Void; }>, ?options:haxe.extern.EitherType<AddEventListenerOptions, Bool>):Void;
 	/**
 		The **`dispatchEvent()`** method of the `EventTarget` sends an `Event` to the object, (synchronously) invoking the affected event listeners in the appropriate order. The normal event processing rules (including the capturing and optional bubbling phase) also apply to events dispatched manually with `dispatchEvent()`.
 		
@@ -67,7 +80,20 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener>
 	**/
-	overload function removeEventListener(type:String, callback:Null<EventListener>, ?options:haxe.extern.EitherType<EventListenerOptions, Bool>):Void;
+	#if js_strict_events @:deprecated("A listener narrower than Event needs a typed event name (KEYDOWN, EventType.custom) or to take Event") #end
+	overload function removeEventListener<E:(js.web.dom.Event)>(type:String, callback:Null<(event:E) -> Void>, ?options:haxe.extern.EitherType<EventListenerOptions, Bool>):Void;
+	/**
+		The **`removeEventListener()`** method of the `EventTarget` interface removes an event listener previously registered with `EventTarget.addEventListener()` from the target. The event listener to be removed is identified using a combination of the event type, the event listener function itself, and various optional options that may affect the matching process; see [Matching event listeners for removal](#matching_event_listeners_for_removal).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener>
+	**/
+	overload function removeEventListener(type:String, callback:Null<(event:js.web.dom.Event) -> Void>, ?options:haxe.extern.EitherType<EventListenerOptions, Bool>):Void;
+	/**
+		The **`removeEventListener()`** method of the `EventTarget` interface removes an event listener previously registered with `EventTarget.addEventListener()` from the target. The event listener to be removed is identified using a combination of the event type, the event listener function itself, and various optional options that may affect the matching process; see [Matching event listeners for removal](#matching_event_listeners_for_removal).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener>
+	**/
+	overload function removeEventListener(type:String, callback:Null<{ function handleEvent(event:js.web.dom.Event):Void; }>, ?options:haxe.extern.EitherType<EventListenerOptions, Bool>):Void;
 	/**
 		The **`when()`** method of the `EventTarget` interface returns an `Observable` object representing a stream of events fired on the event target it is called on.
 		

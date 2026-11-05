@@ -106,7 +106,6 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/KeyboardEvent/keyCode>
 	**/
-	@:deprecated
 	var keyCode(default, null) : Int;
 	/**
 		The **`KeyboardEvent()`** constructor creates a new `KeyboardEvent` object.

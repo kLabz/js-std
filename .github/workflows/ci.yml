@@ -51,12 +51,12 @@ jobs:
           - name: Haxe 5 preview
             haxe: 5.0.0-preview.1
             compat: 1
-          # std with js.lib.BigInt & co: the change is std-only, so a nightly
-          # compiler with the std of HaxeFoundation/haxe#js/stdlib-cleanup
-          - name: Haxe 5 js/stdlib-cleanup std
-            haxe: latest
-            std-branch: js/stdlib-cleanup
+          # Nightly of HaxeFoundation/haxe#js-std-nightlies: std with js.lib.BigInt & co,
+          # explicit call type arguments and method default type parameters
+          - name: Haxe 5 js-std-nightlies
+            haxe: 2026-11-05_js-std-nightlies_2bca629
             compat: 0
+            generic-lookups: 1
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -65,21 +65,11 @@ jobs:
       - uses: HaxeFoundation/setup-haxe@v2
         with:
           haxe-version: ${{ matrix.haxe }}
-      - name: Check out std from ${{ matrix.std-branch }}
-        if: matrix.std-branch
-        uses: actions/checkout@v4
-        with:
-          repository: HaxeFoundation/haxe
-          ref: ${{ matrix.std-branch }}
-          path: haxe-src
-          sparse-checkout: std
-      - name: Use std from ${{ matrix.std-branch }}
-        if: matrix.std-branch
-        run: echo "HAXE_STD_PATH=$GITHUB_WORKSPACE/haxe-src/std" >> "$GITHUB_ENV"
       - run: haxe --version
       - name: Typecheck all libraries
         run: ./check.sh
       - name: Smoke tests
         env:
           EXPECT_COMPAT: ${{ matrix.compat }}
+          GENERIC_LOOKUPS: ${{ matrix.generic-lookups }}
         run: ./tests/run.sh

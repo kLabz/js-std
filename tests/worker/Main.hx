@@ -1,4 +1,5 @@
 import js.web.dom.AbortController;
+import js.web.dom.AbortSignalEventType;
 import js.web.misc.Console;
 import js.web.net.Headers;
 import js.web.net.TextDecoder;
@@ -33,7 +34,13 @@ class Main {
 		check(new TextDecoder().decode(bytes) == "héllo", "TextDecoder.decode");
 
 		var controller = new AbortController();
+		var abortType = null;
+		function onAbort(e:js.web.dom.Event) abortType = e.type;
+		controller.signal.addEventListener(ABORT, onAbort);
+		controller.signal.addEventListener(ABORT, e -> check(e.target == controller.signal, "typed listener target"));
 		controller.abort();
+		controller.signal.removeEventListener(ABORT, onAbort);
+		check(abortType == "abort", "typed addEventListener");
 		check(controller.signal.aborted, "AbortSignal.aborted");
 
 		var emptyModule = new js.lib.Uint8Array([0x00, 0x61, 0x73, 0x6d, 0x01, 0x00, 0x00, 0x00]);

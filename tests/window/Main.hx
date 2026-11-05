@@ -1,5 +1,10 @@
 import js.web.canvas.CanvasContextId;
 import js.web.dom.Document;
+import js.web.dom.DocumentEventType;
+import js.web.dom.NodeEventType;
+import js.web.html.HTMLMediaElementEventType;
+import js.web.html.WindowEventType;
+import js.web.net.XMLHttpRequestEventType;
 import js.web.dom.NodeFilter;
 import js.web.html.HTMLElementTagName;
 import js.web.html.HTMLInputElement;
@@ -57,6 +62,21 @@ class Main {
 		circle.r.baseVal.value = 5;
 		svg.appendChild(circle);
 		trace(svg.querySelector(FE_GAUSSIAN_BLUR)?.stdDeviationX, svg.querySelector(SVGElementTagName.A)?.href, document.querySelectorAll(CIRCLE)[0]?.cx);
+
+		div.addEventListener(CLICK, e -> trace(e.clientX, e.pointerType));
+		div.addEventListener(KEYDOWN, e -> trace(e.key), {passive: true});
+		window.addEventListener(MESSAGE, e -> trace(e.data));
+		window.addEventListener(BLUR, e -> trace(e.relatedTarget));
+		document.addEventListener(DOM_CONTENT_LOADED, e -> trace(e.type));
+		var video = document.createElement(VIDEO);
+		video.addEventListener(TIMEUPDATE, e -> trace(video.currentTime));
+		video.addEventListener(CLICK, e -> trace(e.button));
+		var xhr = new js.web.net.XMLHttpRequest();
+		xhr.addEventListener(PROGRESS, e -> trace(e.loaded / e.total));
+		div.addEventListener("my-event", e -> trace(e.type));
+		function onWheel(e:js.web.dom.WheelEvent) trace(e.deltaY);
+		div.addEventListener(WHEEL, onWheel);
+		div.removeEventListener(WHEEL, onWheel);
 
 		var custom:HTMLElementTagName<js.web.html.HTMLElement> = cast "my-widget";
 		trace(document.createElement(custom).hidden, DIV.toString());

@@ -1,0 +1,80 @@
+/*
+ * Copyright (C)2005-2025 Haxe Foundation
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ */
+
+// This file is generated from @webref/events. Do not edit!
+
+package js.web.device;
+
+/**
+	Events fired at or bubbling to `Bluetooth` (and its descendants), typed with their interface: `addEventListener(ADVERTISEMENTRECEIVED, e -> …)`.
+	
+	Generated from `@webref/events`. Events of parent interfaces are in their own `…EventType`.
+**/
+extern enum abstract BluetoothEventType<E:(js.web.dom.Event)>(String) {
+	/**
+		The `advertisementreceived` event.
+		
+		@see <https://bluetooth.spec.whatwg.org/#eventdef-bluetoothdeviceeventhandlers-advertisementreceived>
+	**/
+	@:require(js_experimental_api, "BluetoothAdvertisingEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	var ADVERTISEMENTRECEIVED : js.web.device.BluetoothEventType<BluetoothAdvertisingEvent> = "advertisementreceived";
+	/**
+		The `availabilitychanged` event.
+		
+		@see <https://bluetooth.spec.whatwg.org/#eventdef-bluetooth-availabilitychanged>
+	**/
+	@:require(js_experimental_api, "ValueEvent is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	var AVAILABILITYCHANGED : js.web.device.BluetoothEventType<ValueEvent> = "availabilitychanged";
+	/**
+		The `characteristicvaluechanged` event.
+		
+		@see <https://bluetooth.spec.whatwg.org/#eventdef-bluetoothremotegattcharacteristic-characteristicvaluechanged>
+	**/
+	@:require(js_experimental_api, "BluetoothRemoteGATTCharacteristic characteristicvaluechanged event is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	var CHARACTERISTICVALUECHANGED : js.web.device.BluetoothEventType<js.web.dom.Event> = "characteristicvaluechanged";
+	/**
+		The `gattserverdisconnected` event.
+		
+		@see <https://bluetooth.spec.whatwg.org/#eventdef-bluetoothdeviceeventhandlers-gattserverdisconnected>
+	**/
+	@:require(js_experimental_api, "BluetoothDevice gattserverdisconnected event is experimental (shipped in fewer than two engines); use -D js-experimental-api")
+	var GATTSERVERDISCONNECTED : js.web.device.BluetoothEventType<js.web.dom.Event> = "gattserverdisconnected";
+	/**
+		The `serviceadded` event.
+		
+		@see <https://bluetooth.spec.whatwg.org/#eventdef-bluetoothremotegattservice-serviceadded>
+	**/
+	var SERVICEADDED : js.web.device.BluetoothEventType<js.web.dom.Event> = "serviceadded";
+	/**
+		The `servicechanged` event.
+		
+		@see <https://bluetooth.spec.whatwg.org/#eventdef-bluetoothremotegattservice-servicechanged>
+	**/
+	var SERVICECHANGED : js.web.device.BluetoothEventType<js.web.dom.Event> = "servicechanged";
+	/**
+		The `serviceremoved` event.
+		
+		@see <https://bluetooth.spec.whatwg.org/#eventdef-bluetoothremotegattservice-serviceremoved>
+	**/
+	var SERVICEREMOVED : js.web.device.BluetoothEventType<js.web.dom.Event> = "serviceremoved";
+	public inline function toString():String return this;
+}

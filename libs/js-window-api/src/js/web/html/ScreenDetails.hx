@@ -50,4 +50,16 @@ package js.web.html;
 	var currentScreen(default, null) : ScreenDetailed;
 	var onscreenschange : EventHandler;
 	var oncurrentscreenchange : EventHandler;
+	/**
+		The **`addEventListener()`** method of the `EventTarget` interface sets up a function that will be called whenever the specified event is delivered to the target.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener>
+	**/
+	overload function addEventListener<E:(js.web.dom.Event)>(type:js.web.html.ScreenDetailsEventType<E>, callback:Null<(event:E) -> Void>, ?options:haxe.extern.EitherType<js.web.dom.AddEventListenerOptions, Bool>):Void;
+	/**
+		The **`removeEventListener()`** method of the `EventTarget` interface removes an event listener previously registered with `EventTarget.addEventListener()` from the target. The event listener to be removed is identified using a combination of the event type, the event listener function itself, and various optional options that may affect the matching process; see [Matching event listeners for removal](#matching_event_listeners_for_removal).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener>
+	**/
+	overload function removeEventListener<E:(js.web.dom.Event)>(type:js.web.html.ScreenDetailsEventType<E>, callback:Null<(event:E) -> Void>, ?options:haxe.extern.EitherType<js.web.dom.EventListenerOptions, Bool>):Void;
 }

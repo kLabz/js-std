@@ -43,7 +43,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener>
 	**/
-	function addEventListener(type:String, callback:Null<EventListener>, ?options:haxe.extern.EitherType<AddEventListenerOptions, Bool>):Void;
+	overload function addEventListener(type:String, callback:Null<EventListener>, ?options:haxe.extern.EitherType<AddEventListenerOptions, Bool>):Void;
 	/**
 		The **`dispatchEvent()`** method of the `EventTarget` sends an `Event` to the object, (synchronously) invoking the affected event listeners in the appropriate order. The normal event processing rules (including the capturing and optional bubbling phase) also apply to events dispatched manually with `dispatchEvent()`.
 		
@@ -55,7 +55,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener>
 	**/
-	function removeEventListener(type:String, callback:Null<EventListener>, ?options:haxe.extern.EitherType<EventListenerOptions, Bool>):Void;
+	overload function removeEventListener(type:String, callback:Null<EventListener>, ?options:haxe.extern.EitherType<EventListenerOptions, Bool>):Void;
 	/**
 		The **`when()`** method of the `EventTarget` interface returns an `Observable` object representing a stream of events fired on the event target it is called on.
 		

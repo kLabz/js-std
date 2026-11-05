@@ -73,6 +73,18 @@ class Bcd {
 		if (!isShipped(compat, prefix)) f.meta.push(experimental('CSSStyleProperties.${f.name}', f.pos));
 	}
 
+	/** Events are in BCD as `api.<Target>.<type>_event`; one missing there is not gated. **/
+	/** `targets`: by priority; events bubbling to a target are in BCD under the one firing them. **/
+	public static function applyEvent(f:Field, targets:Array<String>, type:String):Void {
+		var target = targets.find(t -> (api.get(t) : Null<DynamicAccess<Dynamic>>)?.exists('${type}_event') ?? false);
+		if (target == null) return;
+		var entry:DynamicAccess<Dynamic> = api.get(target);
+		var compat:Dynamic = entry.get('${type}_event').__compat;
+		f.meta = f.meta ?? [];
+		if (annotate(compat, f.doc, d -> f.doc = d, 'api.$target.${type}_event')) f.meta.push(deprecated(f.pos));
+		if (!isShipped(compat) && !f.meta.exists(m -> m.name == ":require")) f.meta.push(experimental('$target $type event', f.pos));
+	}
+
 	static var webassembly:DynamicAccess<Dynamic> = (js.Lib.require("@mdn/browser-compat-data") : Dynamic).webassembly.api;
 
 	static function bcdKey(nativeName:String):String {

@@ -467,6 +467,24 @@ class Main {
 			case _:
 		}
 
+		var tasksByName = [for (task in pendingSaves) task.t => task];
+		var eventTarget = tasksByName.get("EventTarget").td;
+		Events.markOverloads(eventTarget);
+		var eventType = TPath({pack: resolve("Event"), name: "Event"});
+		var isClass = t -> tasksByName.get(t)?.td.kind.match(TDClass(_)) ?? false;
+		for (target => events in Events.eventsByTarget(isClass, t -> interfaceDefs.get(t)?.inheritance)) {
+			var task = tasksByName.get(target);
+			var td = Events.eventTypes(target, task.td.pack, events, resolve, typeMeta, task.ctx.pos);
+			packMap.set(td.name, td.pack);
+			savedLibs.set(td.name, savedLibs.get(target).copy());
+			pendingSaves.push({
+				ctx: {t: td.name, pos: task.ctx.pos, file: task.ctx.file, pack: td.pack, scope: task.ctx.scope, origin: "@webref/events"},
+				t: td.name,
+				td: td
+			});
+			Events.addOverloads(task.td, eventTarget, td.pack, eventType, resolve);
+		}
+
 		// Dropping a type from a lib can make its dependents unavailable there too
 		var changed = true;
 		while (changed) {

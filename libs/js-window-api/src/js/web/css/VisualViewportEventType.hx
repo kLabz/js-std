@@ -1,0 +1,64 @@
+/*
+ * Copyright (C)2005-2025 Haxe Foundation
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ */
+
+// This file is generated from @webref/events. Do not edit!
+
+package js.web.css;
+
+/**
+	Events fired at or bubbling to `VisualViewport` (and its descendants), typed with their interface: `addEventListener(RESIZE, e -> …)`.
+	
+	Generated from `@webref/events`. Events of parent interfaces are in their own `…EventType`.
+**/
+extern enum abstract VisualViewportEventType<E:(js.web.dom.Event)>(String) {
+	/**
+		The **`resize`** event of the `VisualViewport` interface is fired when the visual viewport is resized. This allows you to position elements relative to the visual viewport as it is zoomed, which would normally be anchored to the layout viewport.
+		
+		The `resize` event.
+		
+		@see <https://drafts.csswg.org/cssom-view-1/#eventdef-window-resize>
+		
+		@see <https://developer.mozilla.org/docs/Web/API/VisualViewport/resize_event>
+	**/
+	var RESIZE : js.web.css.VisualViewportEventType<js.web.dom.Event> = "resize";
+	/**
+		The **`scroll`** event of the `VisualViewport` interface is fired when the visual viewport is scrolled. This allows you to position elements relative to the visual viewport as it is scrolled, which would normally be anchored to the layout viewport.
+		
+		The `scroll` event.
+		
+		@see <https://drafts.csswg.org/cssom-view-1/#eventdef-document-scroll>
+		
+		@see <https://developer.mozilla.org/docs/Web/API/VisualViewport/scroll_event>
+	**/
+	var SCROLL : js.web.css.VisualViewportEventType<js.web.dom.Event> = "scroll";
+	/**
+		The **`scrollend`** event of the `VisualViewport` interface is fired when a scrolling operation on the visual viewport ends. This allows you to update an element when a scrolling action is completed. For example, you could use the `resize` and `scroll` events to keep an element fixed to the visual viewport as it is pinch-zoomed and scrolled, and update it with new content when scrolling ends using `scrollend`.
+		
+		The `scrollend` event.
+		
+		@see <https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend>
+		
+		@see <https://developer.mozilla.org/docs/Web/API/VisualViewport/scrollend_event>
+	**/
+	var SCROLLEND : js.web.css.VisualViewportEventType<js.web.dom.Event> = "scrollend";
+	public inline function toString():String return this;
+}

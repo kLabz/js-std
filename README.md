@@ -62,7 +62,15 @@ Each type's documentation names the spec it comes from.
 
 `js.web.svg.SVGElementTagName<T>` does the same for SVG, with `createElementNS`: `document.createElementNS(SVG_NAMESPACE, CIRCLE)` is a `SVGCircleElement`. Mixed-case tags are in upper snake case (`LINEAR_GRADIENT` for `linearGradient`). `A`, `SCRIPT`, `STYLE` and `TITLE` exist in both: in queries, write `SVGElementTagName.A` or `HTMLElementTagName.A`.
 
-Canvas context ids are typed the same way, with their context and options: `canvas.getContext(WEBGL2, {antialias: false})` is a `Null<WebGL2RenderingContext>` (`js.web.canvas.CanvasContextId`), and `offscreenCanvas.getContext(CONTEXT_2D)` a `Null<OffscreenCanvasRenderingContext2D>` (`OffscreenRenderingContextId`). The id → context mapping is maintained in `generator/src/Canvas.hx`, as it is only in the HTML spec's prose. Strings still work and give `Element`. For custom elements, `HTMLElementTagName.of` types a tag name with its class, and `customElements.define` checks they match:
+Canvas context ids are typed the same way, with their context and options: `canvas.getContext(WEBGL2, {antialias: false})` is a `Null<WebGL2RenderingContext>` (`js.web.canvas.CanvasContextId`), and `offscreenCanvas.getContext(CONTEXT_2D)` a `Null<OffscreenCanvasRenderingContext2D>` (`OffscreenRenderingContextId`). The id → context mapping is maintained in `generator/src/Canvas.hx`, as it is only in the HTML spec's prose.
+
+## Typed events
+
+Each event target has a `<Target>EventType<E>` (from [`@webref/events`](https://github.com/w3c/webref/tree/main/packages/events)) listing the events fired at or bubbling to it, typed with their interface, and `addEventListener` / `removeEventListener` accept it: `element.addEventListener(CLICK, e -> e.clientX)` gives a `PointerEvent`, `window.addEventListener(MESSAGE, e -> e.data)` a `MessageEvent`. Events of a parent interface are in its own type (`CLICK` is in `NodeEventType`, inherited by every element). Strings still work and give `Event`.
+
+## Haxe 4
+
+Haxe 4 only resolves these typed values (`DIV`, `WEBGL2`, `CLICK`…) through overloaded methods when their type is imported (`import js.web.dom.NodeEventType;`) or when they are qualified (`NodeEventType.CLICK`). Haxe 5 resolves them from the expected type alone. Strings still work and give `Element`. For custom elements, `HTMLElementTagName.of` types a tag name with its class, and `customElements.define` checks they match:
 
 ```haxe
 class MyWidget extends HTMLElement {

@@ -16,6 +16,7 @@ class Main {
 		var el:Element = div;
 		el.style.color = "red";
 		el.addEventListener("click", (e:Event) -> trace(e.type));
+		el.addEventListener("click", () -> trace("clicked"));
 		Browser.document.body.appendChild(el);
 
 		var canvas:CanvasElement = cast Browser.document.getElementById("c");

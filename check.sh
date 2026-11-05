@@ -23,7 +23,7 @@ done
 
 printf 'js-html-compat: '
 # shellcheck disable=SC2086
-if out=$("$HAXE" $core -cp js-window-api/src -cp js-html-compat/src -js check.js --no-output -w -WDeprecated \
+if out=$("$HAXE" $core -cp js-window-api/src -cp js-html-compat/src -D js-html-compat -js check.js --no-output -w -WDeprecated \
 	--macro "include('js.html')" 2>&1); then
 	echo "ok"
 else

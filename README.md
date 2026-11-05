@@ -104,6 +104,8 @@ Types keep their WebIDL names, so many differ from `js.html`: `js.html.DivElemen
 
 Add `-lib js-html-compat` (next to `-lib js-window-api`) to keep existing code compiling: `js.html` types become deprecated typedefs to their js-std counterparts, and each use warns with the new name. `js.Browser` is replaced by one typed with js-std types. Once the warnings are fixed, drop `js-html-compat`.
 
+Listeners take the event (`_ -> …`, not `() -> …`); with `js-html-compat`, listeners without argument still compile, with a deprecation warning.
+
 `KeyboardEvent.DOM_VK_*` (Firefox-only constants) are not in js-std; std's `js.html.KeyEvent.DOM_VK_*` still provides them, as inlined values.
 
 `js-html-compat` only covers types available in `Window`; `js.html` types that js-std doesn't have (obsolete APIs, worker-only types) still come from the standard library.

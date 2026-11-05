@@ -205,11 +205,14 @@ class Events {
 	}
 
 	public static inline var STRICT_EVENTS_META = ":jsStrictEvents";
+	public static inline var HTML_COMPAT_META = ":jsHtmlCompat";
+	static final conditions = [STRICT_EVENTS_META => "!js_strict_events", HTML_COMPAT_META => "js_html_compat"];
 
 	/**
 		Splits `EventTarget`'s `String` overloads into a generic one, accepting listeners of any event
 		type (`(e:KeyboardEvent) -> …`, as std did), and exact function and object ones.
-		`-D js-strict-events` removes the generic one.
+		`-D js-strict-events` removes the generic one; `js-html-compat` adds a deprecated one for
+		listeners without argument, which `js.html` accepted.
 	**/
 	public static function splitStringOverloads(eventTarget:TypeDefinition, resolve:String->Null<Array<String>>):Void {
 		var event = TPath({pack: resolve("Event"), name: "Event"});
@@ -232,18 +235,25 @@ class Events {
 				eventTarget.fields.insert(i, variant(macro :{function handleEvent(event:$event):Void;}));
 				eventTarget.fields.insert(i, variant(macro :(event:$event) -> Void));
 				eventTarget.fields.insert(i, variant(macro :(event:E) -> Void, [{name: "E", constraints: [event]}], [{name: STRICT_EVENTS_META, pos: f.pos}]));
+				eventTarget.fields.insert(i, variant(macro :() -> Void, [
+					{name: HTML_COMPAT_META, pos: f.pos},
+					{name: ":deprecated", params: [macro "Listeners take the event: _ -> … instead of () -> …"], pos: f.pos}
+				]));
 			case _:
 		}
 	}
 
-	/** Printer can't emit conditional compilation: fields marked with `STRICT_EVENTS_META` get wrapped here. **/
-	public static function wrapStrictOverloads(printed:String):String {
+	/** Printer can't emit conditional compilation: fields marked with a `conditions` meta get wrapped here. **/
+	public static function wrapConditionalOverloads(printed:String):String {
 		var lines = printed.split("\n");
 		var i = 0;
 		while (i < lines.length) {
-			if (lines[i].trim() == "@" + STRICT_EVENTS_META) {
-				lines[i] = lines[i].replace("@" + STRICT_EVENTS_META, "#if !js_strict_events");
-				lines.insert(i + 2, "\t#end");
+			var condition = conditions.get(lines[i].trim().substr(1));
+			if (condition != null) {
+				lines[i] = lines[i].replace(lines[i].trim(), '#if $condition');
+				var end = i + 1;
+				while (!lines[end].trim().endsWith(";")) end++;
+				lines.insert(end + 1, "\t#end");
 			}
 			i++;
 		}

@@ -21,7 +21,7 @@ fi
 # shellcheck disable=SC2086
 "$HAXE" $core -cp $libs/js-window-api/src -cp nullsafety -main app.Main --macro 'nullSafety("app", Strict)' -js bin/nullsafety.js && echo "null safety smoke test: compiled" || status=1
 # shellcheck disable=SC2086
-"$HAXE" $core -cp $libs/js-window-api/src -cp $libs/js-html-compat/src -cp compat -main Main -w -WDeprecated -js bin/compat.js && echo "js-html-compat smoke test: compiled" || status=1
+"$HAXE" $core -cp $libs/js-window-api/src -cp $libs/js-html-compat/src -cp compat -main Main -D js-html-compat -w -WDeprecated -js bin/compat.js && echo "js-html-compat smoke test: compiled" || status=1
 
 # -D js-strict-events rejects listeners narrower than Event for string event names, and only those
 # shellcheck disable=SC2086

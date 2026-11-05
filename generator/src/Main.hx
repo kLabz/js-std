@@ -386,7 +386,7 @@ class Main {
 		out.add("// This file is generated from ");
 		out.add(ctx.origin ?? '@webref/idl/${ctx.file.filename}');
 		out.add(". Do not edit!\n\n");
-		out.add(Events.wrapStrictOverloads(printer.printTypeDefinition(td)));
+		out.add(Events.wrapConditionalOverloads(printer.printTypeDefinition(td)));
 
 		#if !no_output
 		File.saveContent(path, out.toString());

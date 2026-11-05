@@ -60,7 +60,9 @@ Each type's documentation names the spec it comes from.
 
 `js.web.html.HTMLElementTagName<T>` lists HTML tag names typed with their element interface (from [`@webref/elements`](https://github.com/w3c/webref/tree/main/packages/elements)). `createElement`, `querySelector`, `querySelectorAll`, `getElementsByTagName` and `closest` accept it: `document.createElement(DIV)` is a `HTMLDivElement`, `document.querySelector(INPUT)` a `Null<HTMLInputElement>`, `document.querySelectorAll(INPUT)` a `NodeListOf<HTMLInputElement>`. It only exists at compile time: the generated code passes the string.
 
-`js.web.svg.SVGElementTagName<T>` does the same for SVG, with `createElementNS`: `document.createElementNS(SVG_NAMESPACE, CIRCLE)` is a `SVGCircleElement`. Mixed-case tags are in upper snake case (`LINEAR_GRADIENT` for `linearGradient`). `A`, `SCRIPT`, `STYLE` and `TITLE` exist in both: in queries, write `SVGElementTagName.A` or `HTMLElementTagName.A`. Strings still work and give `Element`. For custom elements, `HTMLElementTagName.of` types a tag name with its class, and `customElements.define` checks they match:
+`js.web.svg.SVGElementTagName<T>` does the same for SVG, with `createElementNS`: `document.createElementNS(SVG_NAMESPACE, CIRCLE)` is a `SVGCircleElement`. Mixed-case tags are in upper snake case (`LINEAR_GRADIENT` for `linearGradient`). `A`, `SCRIPT`, `STYLE` and `TITLE` exist in both: in queries, write `SVGElementTagName.A` or `HTMLElementTagName.A`.
+
+Canvas context ids are typed the same way, with their context and options: `canvas.getContext(WEBGL2, {antialias: false})` is a `Null<WebGL2RenderingContext>` (`js.web.canvas.CanvasContextId`), and `offscreenCanvas.getContext(CONTEXT_2D)` a `Null<OffscreenCanvasRenderingContext2D>` (`OffscreenRenderingContextId`). The id → context mapping is maintained in `generator/src/Canvas.hx`, as it is only in the HTML spec's prose. Strings still work and give `Element`. For custom elements, `HTMLElementTagName.of` types a tag name with its class, and `customElements.define` checks they match:
 
 ```haxe
 class MyWidget extends HTMLElement {

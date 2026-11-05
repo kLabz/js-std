@@ -20,14 +20,33 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-// This file is generated from @webref/idl/html.idl. Do not edit!
+// This file is generated from the js-std generator (generator/src/Canvas.hx). Do not edit!
 
 package js.web.canvas;
 
-enum abstract OffscreenRenderingContextId(String) {
-	var _2D = "2d";
-	var BITMAPRENDERER = "bitmaprenderer";
-	var WEBGL = "webgl";
-	var WEBGL2 = "webgl2";
-	var WEBGPU = "webgpu";
+/**
+	Canvas context ids, typed with their context (`C`) and options (`O`): `offscreenCanvas.getContext(WEBGL2)` is a `Null<WebGL2RenderingContext>`.
+**/
+extern enum abstract OffscreenRenderingContextId<C, O>(String) {
+	/**
+		The `"2d"` context.
+	**/
+	var CONTEXT_2D : js.web.canvas.OffscreenRenderingContextId<OffscreenCanvasRenderingContext2D, CanvasRenderingContext2DSettings> = "2d";
+	/**
+		The `"bitmaprenderer"` context.
+	**/
+	var BITMAPRENDERER : js.web.canvas.OffscreenRenderingContextId<ImageBitmapRenderingContext, ImageBitmapRenderingContextSettings> = "bitmaprenderer";
+	/**
+		The `"webgl"` context.
+	**/
+	var WEBGL : js.web.canvas.OffscreenRenderingContextId<js.web.webgl.WebGLRenderingContext, js.web.webgl.WebGLContextAttributes> = "webgl";
+	/**
+		The `"webgl2"` context.
+	**/
+	var WEBGL2 : js.web.canvas.OffscreenRenderingContextId<js.web.webgl.WebGL2RenderingContext, js.web.webgl.WebGLContextAttributes> = "webgl2";
+	/**
+		The `"webgpu"` context.
+	**/
+	var WEBGPU : js.web.canvas.OffscreenRenderingContextId<js.web.webgpu.GPUCanvasContext, Null<Any>> = "webgpu";
+	public inline function toString():String return this;
 }

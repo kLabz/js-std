@@ -1,3 +1,4 @@
+import js.web.canvas.CanvasContextId;
 import js.web.dom.Document;
 import js.web.dom.NodeFilter;
 import js.web.html.HTMLElementTagName;
@@ -27,6 +28,12 @@ class Main {
 
 		var canvas:HTMLCanvasElement = cast document.createElement("canvas");
 		var gl = canvas.getContext("webgl2");
+		var gl2 = canvas.getContext(WEBGL2, {antialias: false});
+		if (gl2 != null) gl2.clear(js.web.webgl.WebGL2RenderingContext.COLOR_BUFFER_BIT);
+		canvas.getContext(CONTEXT_2D)?.fillRect(0, 0, 1, 1);
+		var offscreen = new js.web.canvas.OffscreenCanvas(1, 1);
+		var octx = offscreen.getContext(CONTEXT_2D, {alpha: false});
+		if (octx != null) octx.fillRect(0, 0, 1, 1);
 		trace(gl);
 
 		var input:HTMLInputElement = document.createElement(INPUT);

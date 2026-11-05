@@ -454,6 +454,19 @@ class Main {
 			Elements.addOverloads(task.td, Elements.SVG, resolve);
 		}
 
+		var typeMeta = t -> pendingSaves.find(task -> task.t == t)?.td.meta;
+		var canvasPack = resolve("CanvasRenderingContext2D");
+		addWindowType(Canvas.contextIds(false, canvasPack, resolve, typeMeta, pendingSaves.find(task -> task.t == "HTMLCanvasElement").ctx.pos), "HTMLCanvasElement",
+			"the js-std generator (generator/src/Canvas.hx)");
+		var offscreenIds = pendingSaves.find(task -> task.t == Canvas.OFFSCREEN_CONTEXT_ID);
+		offscreenIds.td = Canvas.contextIds(true, offscreenIds.td.pack, resolve, typeMeta, offscreenIds.td.pos);
+		offscreenIds.ctx.origin = "the js-std generator (generator/src/Canvas.hx)";
+		for (task in pendingSaves) switch (task.t) {
+			case "HTMLCanvasElement": Canvas.typeGetContext(task.td, {pack: canvasPack, name: Canvas.CONTEXT_ID}, false);
+			case "OffscreenCanvas": Canvas.typeGetContext(task.td, {pack: offscreenIds.td.pack, name: Canvas.OFFSCREEN_CONTEXT_ID}, true);
+			case _:
+		}
+
 		// Dropping a type from a lib can make its dependents unavailable there too
 		var changed = true;
 		while (changed) {

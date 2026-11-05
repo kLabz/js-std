@@ -57,7 +57,13 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/getContext>
 	**/
-	function getContext(contextId:String, ?options:Null<Any> = null):Null<js.web.canvas.RenderingContext>;
+	overload function getContext<C, O>(contextId:js.web.canvas.CanvasContextId<C, O>, ?options:O):Null<C>;
+	/**
+		The **`HTMLCanvasElement.getContext()`** method returns a drawing context on the canvas, or [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null) if the context identifier is not supported, or the canvas has already been set to a different context mode.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/getContext>
+	**/
+	overload function getContext(contextId:String, ?options:Null<Any> = null):Null<js.web.canvas.RenderingContext>;
 	/**
 		The **`HTMLCanvasElement.toBlob()`** method creates a `Blob` object representing the image contained in the canvas. This file may be cached on the disk or stored in memory at the discretion of the user agent.
 		

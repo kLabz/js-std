@@ -63,7 +63,7 @@ package js.web.canvas;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/getContext>
 	**/
-	function getContext(contextId:OffscreenRenderingContextId, ?options:Null<Any> = null):Null<OffscreenRenderingContext>;
+	function getContext<C, O>(contextId:js.web.canvas.OffscreenRenderingContextId<C, O>, ?options:O):Null<C>;
 	/**
 		The **`transferToImageBitmap()`** method of the `OffscreenCanvas` interface creates an `ImageBitmap` object from the most recently rendered image of the `OffscreenCanvas`. The image in the `OffscreenCanvas` is replaced with a new blank image for subsequent rendering.
 		

@@ -54,7 +54,7 @@ jobs:
           # Nightly of HaxeFoundation/haxe#js-std-nightlies: std with js.lib.BigInt & co,
           # explicit call type arguments and method default type parameters
           - name: Haxe 5 js-std-nightlies
-            haxe: 2026-11-05_js-std-nightlies_2bca629
+            haxe: 2026-11-05_js-std-nightlies_c21a044
             compat: 0
             generic-lookups: 1
             quoted-fields: 1

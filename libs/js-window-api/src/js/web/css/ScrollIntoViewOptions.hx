@@ -33,7 +33,7 @@ typedef ScrollIntoViewOptions = ScrollOptions & {
 	/**
 		Default: `ScrollLogicalPosition.NEAREST`
 	**/
-	#if (haxe >= version("5.0.0-preview.2") || js_quoted_fields)
+	#if (haxe >= version("5.0.0-preview.2"))
 	@:optional
 	var "inline" : ScrollLogicalPosition;
 	#end

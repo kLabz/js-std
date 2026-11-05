@@ -29,7 +29,7 @@ typedef SerialOutputSignals = {
 	var dataTerminalReady : Bool;
 	@:optional
 	var requestToSend : Bool;
-	#if (haxe >= version("5.0.0-preview.2") || js_quoted_fields)
+	#if (haxe >= version("5.0.0-preview.2"))
 	@:optional
 	var "break" : Bool;
 	#end

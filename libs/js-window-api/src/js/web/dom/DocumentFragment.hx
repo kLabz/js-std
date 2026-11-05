@@ -93,7 +93,7 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/getElementById>
 	**/
-	#if (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	#if (haxe >= version("5.0.0-preview.2"))
 	function getElementById<E:(js.web.dom.Element)=js.web.html.HTMLElement>(elementId:String):Null<E>;
 	#else
 	function getElementById(elementId:String):Null<js.web.html.HTMLElement>;
@@ -137,9 +137,9 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/querySelector>
 	**/
-	#if ((haxe >= version("5.0.0-preview.2") || js_generic_lookups) && js_html_compat)
+	#if ((haxe >= version("5.0.0-preview.2")) && js_html_compat)
 	overload function querySelector<E:(js.web.dom.Element)=js.web.html.HTMLElement>(selectors:String):Null<E>;
-	#elseif (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	#elseif (haxe >= version("5.0.0-preview.2"))
 	overload function querySelector<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):Null<E>;
 	#elseif js_html_compat
 	overload function querySelector(selectors:String):Null<js.web.html.HTMLElement>;
@@ -169,9 +169,9 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/querySelectorAll>
 	**/
-	#if ((haxe >= version("5.0.0-preview.2") || js_generic_lookups) && js_html_compat)
+	#if ((haxe >= version("5.0.0-preview.2")) && js_html_compat)
 	overload function querySelectorAll<E:(js.web.dom.Element)=js.web.html.HTMLElement>(selectors:String):js.web.dom.NodeListOf<E>;
-	#elseif (haxe >= version("5.0.0-preview.2") || js_generic_lookups)
+	#elseif (haxe >= version("5.0.0-preview.2"))
 	overload function querySelectorAll<E:(js.web.dom.Element)=js.web.dom.Element>(selectors:String):js.web.dom.NodeListOf<E>;
 	#else
 	overload function querySelectorAll(selectors:String):NodeList;

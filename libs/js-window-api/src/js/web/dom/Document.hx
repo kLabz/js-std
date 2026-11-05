@@ -1242,7 +1242,13 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/getElementsByTagName>
 	**/
-	function getElementsByTagName(qualifiedName:String):HTMLCollection;
+	overload function getElementsByTagName<T:(js.web.dom.Element)>(qualifiedName:js.web.html.HTMLElementTagName<T>):js.web.dom.HTMLCollectionOf<T>;
+	/**
+		The **`getElementsByTagName`** method of `Document` interface returns an `HTMLCollection` of elements with the given tag name.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/getElementsByTagName>
+	**/
+	overload function getElementsByTagName(qualifiedName:String):HTMLCollection;
 	/**
 		Returns a list of elements with the given tag name belonging to the given namespace. The complete document is searched, including the root node.
 		
@@ -1422,7 +1428,15 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll>
 	**/
-	function querySelectorAll(selectors:String):NodeList;
+	overload function querySelectorAll<T:(js.web.dom.Element)>(selectors:js.web.html.HTMLElementTagName<T>):js.web.dom.NodeListOf<T>;
+	/**
+		The `Document` method **`querySelectorAll()`** returns a static (not live) `NodeList` representing a list of the document's elements that match the specified group of selectors.
+		
+		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll>
+	**/
+	overload function querySelectorAll(selectors:String):NodeList;
 	/**
 		From partial interface in html.idl
 	**/

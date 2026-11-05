@@ -58,7 +58,7 @@ Each type's documentation names the spec it comes from.
 
 ## Typed tag names
 
-`js.web.html.HTMLElementTagName<T>` lists HTML tag names typed with their element interface (from [`@webref/elements`](https://github.com/w3c/webref/tree/main/packages/elements)). `createElement`, `querySelector` and `closest` accept it: `document.createElement(DIV)` is a `HTMLDivElement`, `document.querySelector(INPUT)` a `Null<HTMLInputElement>`. Strings still work and give `Element`. Custom elements can be cast: `(cast "my-widget" : HTMLElementTagName<MyWidget>)`.
+`js.web.html.HTMLElementTagName<T>` lists HTML tag names typed with their element interface (from [`@webref/elements`](https://github.com/w3c/webref/tree/main/packages/elements)). `createElement`, `querySelector`, `querySelectorAll`, `getElementsByTagName` and `closest` accept it: `document.createElement(DIV)` is a `HTMLDivElement`, `document.querySelector(INPUT)` a `Null<HTMLInputElement>`, `document.querySelectorAll(INPUT)` a `NodeListOf<HTMLInputElement>`. It only exists at compile time: the generated code passes the string. Strings still work and give `Element`. Custom elements can be cast: `(cast "my-widget" : HTMLElementTagName<MyWidget>)`.
 
 ## Migrating from `js.html`
 

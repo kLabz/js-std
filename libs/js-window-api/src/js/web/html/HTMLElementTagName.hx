@@ -29,7 +29,7 @@ package js.web.html;
 	
 	Generated from `@webref/elements`. Other tag names (custom elements) can be cast: `(cast "my-widget" : HTMLElementTagName<MyWidget>)`.
 **/
-enum abstract HTMLElementTagName<T:(js.web.dom.Element)>(String) {
+extern enum abstract HTMLElementTagName<T:(js.web.dom.Element)>(String) {
 	/**
 		The `<html>` element.
 		

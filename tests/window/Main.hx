@@ -26,6 +26,12 @@ class Main {
 		document.createElement(DIV).append(input);
 		var found = document.querySelector(INPUT);
 		if (found != null) trace(found.value, found.closest(FORM)?.action);
+		for (i in 0...document.querySelectorAll(INPUT).length) trace(document.querySelectorAll(INPUT)[i]?.value);
+		document.querySelectorAll(INPUT).forEach((el, _, _) -> trace(el.checked));
+		var options = document.body.getElementsByTagName(OPTION);
+		trace(options.item(0)?.selected, options.namedItem("x")?.value);
+		var list:js.web.dom.NodeList = document.querySelectorAll(DIV);
+
 		var custom:HTMLElementTagName<js.web.html.HTMLElement> = cast "my-widget";
 		trace(document.createElement(custom).hidden, DIV.toString());
 

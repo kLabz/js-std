@@ -125,7 +125,15 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/querySelectorAll>
 	**/
-	function querySelectorAll(selectors:String):NodeList;
+	overload function querySelectorAll<T:(js.web.dom.Element)>(selectors:js.web.html.HTMLElementTagName<T>):js.web.dom.NodeListOf<T>;
+	/**
+		The **`DocumentFragment.querySelectorAll()`** method returns a `NodeList` of elements within the `DocumentFragment` (using depth-first pre-order traversal of the document's nodes) that matches the specified group of selectors.
+		
+		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/DocumentFragment/querySelectorAll>
+	**/
+	overload function querySelectorAll(selectors:String):NodeList;
 	/**
 		The **`DocumentFragment.replaceChildren()`** method replaces the existing children of a `DocumentFragment` with a specified new set of children. These can be string or `Node` objects.
 		

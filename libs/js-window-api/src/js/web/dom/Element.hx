@@ -886,7 +886,13 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/getElementsByTagName>
 	**/
-	function getElementsByTagName(qualifiedName:String):HTMLCollection;
+	overload function getElementsByTagName<T:(js.web.dom.Element)>(qualifiedName:js.web.html.HTMLElementTagName<T>):js.web.dom.HTMLCollectionOf<T>;
+	/**
+		The **`Element.getElementsByTagName()`** method returns a live `HTMLCollection` of elements with the given [tag name](https://developer.mozilla.org/en-US/docs/Web/API/Element/tagName).
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Element/getElementsByTagName>
+	**/
+	overload function getElementsByTagName(qualifiedName:String):HTMLCollection;
 	/**
 		The **`Element.getElementsByTagNameNS()`** method returns a live `HTMLCollection` of elements with the given tag name belonging to the given namespace. It is similar to `Document.getElementsByTagNameNS`, except that its search is restricted to descendants of the specified element.
 		
@@ -1019,7 +1025,15 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/Element/querySelectorAll>
 	**/
-	function querySelectorAll(selectors:String):NodeList;
+	overload function querySelectorAll<T:(js.web.dom.Element)>(selectors:js.web.html.HTMLElementTagName<T>):js.web.dom.NodeListOf<T>;
+	/**
+		The `Element` method **`querySelectorAll()`** returns a static (not live) `NodeList` representing a list of elements matching the specified group of selectors which are descendants of the element on which the method was called.
+		
+		From interface mixin ParentNode
+		
+		@see <https://developer.mozilla.org/docs/Web/API/Element/querySelectorAll>
+	**/
+	overload function querySelectorAll(selectors:String):NodeList;
 	/**
 		The **`releasePointerCapture()`** method of the `Element` interface releases (stops) [_pointer capture_](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events#pointer_capture) that was previously set for a specific (`PointerEvent`) _pointer_.
 		

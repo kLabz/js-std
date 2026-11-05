@@ -45,16 +45,17 @@ class Elements {
 			doc: "HTML tag names, typed with the interface of their element: `document.createElement(DIV)` is a `HTMLDivElement`.\n\nGenerated from `@webref/elements`. Other tag names (custom elements) can be cast: `(cast \"my-widget\" : HTMLElementTagName<MyWidget>)`.",
 			params: [{name: "T", constraints: [elementType]}],
 			pos: pos,
+			isExtern: true,
 			kind: TDAbstract(macro :String, [AbEnum]),
 			fields: fields
 		};
 	}
 
-	/** Adds typed overloads of `createElement`, `querySelector` and `closest` to `td`. **/
+	/** Adds typed overloads of `createElement`, `querySelector`, `querySelectorAll`, `getElementsByTagName` and `closest` to `td`. **/
 	public static function addOverloads(td:TypeDefinition, elementType:ComplexType):Void {
 		var added = [];
 		for (f in td.fields) switch [f.name, f.kind] {
-			case ["createElement" | "querySelector" | "closest", FFun(fn)]:
+			case ["createElement" | "querySelector" | "querySelectorAll" | "getElementsByTagName" | "closest", FFun(fn)]:
 				f.access = f.access ?? [];
 				if (!f.access.contains(AOverload)) f.access.push(AOverload);
 
@@ -68,7 +69,12 @@ class Elements {
 					access: f.access.copy(),
 					kind: FFun({
 						args: args,
-						ret: f.name == "createElement" ? t : macro :Null<$t>,
+						ret: switch (f.name) {
+							case "createElement": t;
+							case "querySelectorAll": macro :js.web.dom.NodeListOf<$t>;
+							case "getElementsByTagName": macro :js.web.dom.HTMLCollectionOf<$t>;
+							case _: macro :Null<$t>;
+						},
 						params: [{name: "T", constraints: [elementType]}],
 						expr: null
 					}),

@@ -1,6 +1,6 @@
 import js.web.dom.KeyboardEvent;
 
-// Framework style: compiles, and is flagged under -D js-strict-events
+// Framework style: compiles, but not under -D js-strict-events
 class Narrow {
 	static function onKey(e:KeyboardEvent) trace(e.keyCode);
 

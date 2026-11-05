@@ -81,7 +81,7 @@ target.dispatchEvent(new CustomEventOf("ready", {detail: {count: 3}}));
 
 Both only exist at compile time.
 
-With a string event name, listeners can take a narrower event than `Event` (`addEventListener("keydown", (e:KeyboardEvent) -> …)`), as with `js.html`. Nothing checks that the name matches that type: `-D js-strict-events` flags those calls with a deprecation warning, pointing to typed event names.
+With a string event name, listeners can take a narrower event than `Event` (`addEventListener("keydown", (e:KeyboardEvent) -> …)`), as with `js.html`. Nothing checks that the name matches that type: `-D js-strict-events` rejects those calls ("Could not find a suitable overload", the last reason being `Event should be KeyboardEvent`); use a typed event name (`KEYDOWN`, `EventType.custom`) or take `Event`.
 
 ## Haxe 4
 

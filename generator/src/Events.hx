@@ -208,9 +208,8 @@ class Events {
 
 	/**
 		Splits `EventTarget`'s `String` overloads into a generic one, accepting listeners of any event
-		type (`(e:KeyboardEvent) -> …`, as std did), and exact function and object ones. The generic
-		one comes first: Haxe then only picks it for listeners narrower than `Event`, which
-		`-D js-strict-events` flags as deprecated.
+		type (`(e:KeyboardEvent) -> …`, as std did), and exact function and object ones.
+		`-D js-strict-events` removes the generic one.
 	**/
 	public static function splitStringOverloads(eventTarget:TypeDefinition, resolve:String->Null<Array<String>>):Void {
 		var event = TPath({pack: resolve("Event"), name: "Event"});
@@ -235,6 +234,20 @@ class Events {
 				eventTarget.fields.insert(i, variant(macro :(event:E) -> Void, [{name: "E", constraints: [event]}], [{name: STRICT_EVENTS_META, pos: f.pos}]));
 			case _:
 		}
+	}
+
+	/** Printer can't emit conditional compilation: fields marked with `STRICT_EVENTS_META` get wrapped here. **/
+	public static function wrapStrictOverloads(printed:String):String {
+		var lines = printed.split("\n");
+		var i = 0;
+		while (i < lines.length) {
+			if (lines[i].trim() == "@" + STRICT_EVENTS_META) {
+				lines[i] = lines[i].replace("@" + STRICT_EVENTS_META, "#if !js_strict_events");
+				lines.insert(i + 2, "\t#end");
+			}
+			i++;
+		}
+		return lines.join("\n");
 	}
 
 	static function valueName(type:String):String {

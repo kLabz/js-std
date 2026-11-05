@@ -1,7 +1,7 @@
 import js.web.dom.Event;
 import js.web.html.WindowEventType;
 
-// Must compile without deprecation warnings under -D js-strict-events
+// Must compile under -D js-strict-events
 class Ok {
 	static function onEvent(e:Event) trace(e.type);
 

@@ -386,8 +386,7 @@ class Main {
 		out.add("// This file is generated from ");
 		out.add(ctx.origin ?? '@webref/idl/${ctx.file.filename}');
 		out.add(". Do not edit!\n\n");
-		out.add(printer.printTypeDefinition(td).split("@" + Events.STRICT_EVENTS_META)
-			.join('#if js_strict_events @:deprecated("A listener narrower than Event needs a typed event name (KEYDOWN, EventType.custom) or to take Event") #end'));
+		out.add(Events.wrapStrictOverloads(printer.printTypeDefinition(td)));
 
 		#if !no_output
 		File.saveContent(path, out.toString());

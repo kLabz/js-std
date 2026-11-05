@@ -49,8 +49,9 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener>
 	**/
-	#if js_strict_events @:deprecated("A listener narrower than Event needs a typed event name (KEYDOWN, EventType.custom) or to take Event") #end
+	#if !js_strict_events
 	overload function addEventListener<E:(js.web.dom.Event)>(type:String, callback:Null<(event:E) -> Void>, ?options:haxe.extern.EitherType<AddEventListenerOptions, Bool>):Void;
+	#end
 	/**
 		The **`addEventListener()`** method of the `EventTarget` interface sets up a function that will be called whenever the specified event is delivered to the target.
 		
@@ -80,8 +81,9 @@ package js.web.dom;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener>
 	**/
-	#if js_strict_events @:deprecated("A listener narrower than Event needs a typed event name (KEYDOWN, EventType.custom) or to take Event") #end
+	#if !js_strict_events
 	overload function removeEventListener<E:(js.web.dom.Event)>(type:String, callback:Null<(event:E) -> Void>, ?options:haxe.extern.EitherType<EventListenerOptions, Bool>):Void;
+	#end
 	/**
 		The **`removeEventListener()`** method of the `EventTarget` interface removes an event listener previously registered with `EventTarget.addEventListener()` from the target. The event listener to be removed is identified using a combination of the event type, the event listener function itself, and various optional options that may affect the matching process; see [Matching event listeners for removal](#matching_event_listeners_for_removal).
 		

@@ -5,6 +5,12 @@ import js.web.html.HTMLInputElement;
 import js.web.html.HTMLCanvasElement;
 import js.web.html.Window;
 
+class MyWidget extends js.web.html.HTMLElement {
+	public static final TAG = HTMLElementTagName.of(MyWidget, "my-widget");
+
+	public var count = 0;
+}
+
 // Compile-only: exercises common page APIs
 class Main {
 	static function main() {
@@ -31,6 +37,11 @@ class Main {
 		var options = document.body.getElementsByTagName(OPTION);
 		trace(options.item(0)?.selected, options.namedItem("x")?.value);
 		var list:js.web.dom.NodeList = document.querySelectorAll(DIV);
+
+		window.customElements.define(MyWidget.TAG, MyWidget);
+		window.customElements.define("my-other-widget", MyWidget);
+		document.createElement(MyWidget.TAG).count++;
+		trace(document.querySelector(MyWidget.TAG)?.count, window.customElements.getName(MyWidget));
 
 		var custom:HTMLElementTagName<js.web.html.HTMLElement> = cast "my-widget";
 		trace(document.createElement(custom).hidden, DIV.toString());

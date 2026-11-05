@@ -441,7 +441,7 @@ class Main {
 			t: Elements.NAME,
 			td: tagNames
 		});
-		for (task in pendingSaves) if (["Document", "Element", "DocumentFragment"].contains(task.t)) Elements.addOverloads(task.td, elementType);
+		for (task in pendingSaves) if (["Document", "Element", "DocumentFragment", "CustomElementRegistry"].contains(task.t)) Elements.addOverloads(task.td, elementType);
 
 		// Dropping a type from a lib can make its dependents unavailable there too
 		var changed = true;
@@ -578,7 +578,12 @@ class Main {
 						// Haxe function types need matching arity: a trailing `any... arguments` would force callers
 						// to declare it, while JS simply ignores extra arguments
 						var args = t.arguments.filter(a -> !a.variadic);
-						var ct = t.name == "Function" ? macro :haxe.Constraints.Function : TFunction(
+						var ct = if (t.name == "Function") macro :haxe.Constraints.Function
+						// A constructor (called with `new`), so classes rather than functions
+						else if (t.name == "CustomElementConstructor") {
+							var element = convertType(ctx, t.idlType);
+							macro :Class<$element>;
+						} else TFunction(
 							args.map(a ->
 								a.optional
 									? TOptional(TNamed(sanitizeIdentifier(a.name, [], ctx.pos), convertType(ctx, a.idlType)))

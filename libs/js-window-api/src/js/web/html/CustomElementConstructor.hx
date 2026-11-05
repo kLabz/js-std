@@ -24,4 +24,4 @@
 
 package js.web.html;
 
-typedef CustomElementConstructor = () -> HTMLElement;
+typedef CustomElementConstructor = Class<HTMLElement>;

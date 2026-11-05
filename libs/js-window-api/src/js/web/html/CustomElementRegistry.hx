@@ -43,7 +43,13 @@ package js.web.html;
 		
 		@see <https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/define>
 	**/
-	function define(name:String, constructor:CustomElementConstructor, ?options:ElementDefinitionOptions):Void;
+	overload function define<T:(js.web.html.HTMLElement)>(name:js.web.html.HTMLElementTagName<T>, constructor:Class<T>, ?options:ElementDefinitionOptions):Void;
+	/**
+		The **`define()`** method of the `CustomElementRegistry` interface adds a definition for a custom element to the custom element registry, mapping its name to the constructor which will be used to create it.
+		
+		@see <https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/define>
+	**/
+	overload function define(name:String, constructor:CustomElementConstructor, ?options:ElementDefinitionOptions):Void;
 	/**
 		The **`get()`** method of the `CustomElementRegistry` interface returns the constructor for a previously-defined custom element.
 		

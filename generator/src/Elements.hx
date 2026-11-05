@@ -33,6 +33,19 @@ class Elements {
 		}
 
 		fields.push({
+			name: "of",
+			doc: "A custom element's tag name: `HTMLElementTagName.of(MyWidget, \"my-widget\")` is a `HTMLElementTagName<MyWidget>`. `type` is only used for typing.",
+			access: [APublic, AStatic, AExtern, AInline],
+			kind: FFun({
+				params: [{name: "T", constraints: [elementType]}],
+				args: [{name: "type", type: macro :Class<T>}, {name: "name", type: macro :String}],
+				ret: tagType(macro :T),
+				expr: macro return cast name
+			}),
+			pos: pos
+		});
+
+		fields.push({
 			name: "toString",
 			access: [APublic, AInline],
 			kind: FFun({args: [], ret: macro :String, expr: macro return this}),
@@ -51,10 +64,30 @@ class Elements {
 		};
 	}
 
-	/** Adds typed overloads of `createElement`, `querySelector`, `querySelectorAll`, `getElementsByTagName` and `closest` to `td`. **/
+	/**
+		Adds typed overloads of `createElement`, `querySelector`, `querySelectorAll`, `getElementsByTagName`
+		and `closest` to `td`, and of `define` (`customElements.define(MyWidget.TAG, MyWidget)`).
+	**/
 	public static function addOverloads(td:TypeDefinition, elementType:ComplexType):Void {
 		var added = [];
 		for (f in td.fields) switch [f.name, f.kind] {
+			case ["define", FFun(fn)] if (td.name == "CustomElementRegistry"):
+				f.access = f.access ?? [];
+				if (!f.access.contains(AOverload)) f.access.push(AOverload);
+
+				var t = macro :T;
+				var args = fn.args.copy();
+				args[0] = {name: args[0].name, type: tagType(t)};
+				args[1] = {name: args[1].name, type: macro :Class<T>};
+				added.push({
+					name: f.name,
+					doc: f.doc,
+					meta: f.meta,
+					access: f.access.copy(),
+					kind: FFun({args: args, ret: fn.ret, params: [{name: "T", constraints: [macro :js.web.html.HTMLElement]}], expr: null}),
+					pos: f.pos
+				});
+
 			case ["createElement" | "querySelector" | "querySelectorAll" | "getElementsByTagName" | "closest", FFun(fn)]:
 				f.access = f.access ?? [];
 				if (!f.access.contains(AOverload)) f.access.push(AOverload);

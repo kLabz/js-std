@@ -58,7 +58,18 @@ Each type's documentation names the spec it comes from.
 
 ## Typed tag names
 
-`js.web.html.HTMLElementTagName<T>` lists HTML tag names typed with their element interface (from [`@webref/elements`](https://github.com/w3c/webref/tree/main/packages/elements)). `createElement`, `querySelector`, `querySelectorAll`, `getElementsByTagName` and `closest` accept it: `document.createElement(DIV)` is a `HTMLDivElement`, `document.querySelector(INPUT)` a `Null<HTMLInputElement>`, `document.querySelectorAll(INPUT)` a `NodeListOf<HTMLInputElement>`. It only exists at compile time: the generated code passes the string. Strings still work and give `Element`. Custom elements can be cast: `(cast "my-widget" : HTMLElementTagName<MyWidget>)`.
+`js.web.html.HTMLElementTagName<T>` lists HTML tag names typed with their element interface (from [`@webref/elements`](https://github.com/w3c/webref/tree/main/packages/elements)). `createElement`, `querySelector`, `querySelectorAll`, `getElementsByTagName` and `closest` accept it: `document.createElement(DIV)` is a `HTMLDivElement`, `document.querySelector(INPUT)` a `Null<HTMLInputElement>`, `document.querySelectorAll(INPUT)` a `NodeListOf<HTMLInputElement>`. It only exists at compile time: the generated code passes the string. Strings still work and give `Element`. For custom elements, `HTMLElementTagName.of` types a tag name with its class, and `customElements.define` checks they match:
+
+```haxe
+class MyWidget extends HTMLElement {
+	public static final TAG = HTMLElementTagName.of(MyWidget, "my-widget");
+}
+
+customElements.define(MyWidget.TAG, MyWidget);
+var widget = document.createElement(MyWidget.TAG); // MyWidget
+```
+
+Browsers only accept ES6 classes as custom elements: compile with `-D js-es=6`.
 
 ## Migrating from `js.html`
 

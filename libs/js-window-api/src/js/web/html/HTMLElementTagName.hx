@@ -708,5 +708,9 @@ extern enum abstract HTMLElementTagName<T:(js.web.dom.Element)>(String) {
 		@see <https://html.spec.whatwg.org/multipage/canvas.html#canvas>
 	**/
 	var CANVAS : js.web.html.HTMLElementTagName<HTMLCanvasElement> = "canvas";
+	/**
+		A custom element's tag name: `HTMLElementTagName.of(MyWidget, "my-widget")` is a `HTMLElementTagName<MyWidget>`. `type` is only used for typing.
+	**/
+	public static extern inline function of<T:(js.web.dom.Element)>(type:Class<T>, name:String):js.web.html.HTMLElementTagName<T> return cast name;
 	public inline function toString():String return this;
 }

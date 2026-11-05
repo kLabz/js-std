@@ -24,5 +24,5 @@
 
 package js.html;
 
-@:deprecated("js.html.CSSStyleDeclaration is deprecated, use js.web.css.CSSStyleDeclaration instead")
-typedef CSSStyleDeclaration = js.web.css.CSSStyleDeclaration;
+@:deprecated("js.html.CSSStyleDeclaration is deprecated, use js.web.css.CSSStyleProperties instead")
+typedef CSSStyleDeclaration = js.web.css.CSSStyleProperties;

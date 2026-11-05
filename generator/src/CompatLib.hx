@@ -30,7 +30,8 @@ class CompatLib {
 		"js.html.CanvasWindingRule" => "CanvasFillRule",
 		"js.html.ConstrainLongRange" => "ConstrainULongRange",
 		"js.html.HTMLDocument" => "Document",
-		"js.html.NavigationType" => "NavigationTimingType"
+		"js.html.NavigationType" => "NavigationTimingType",
+		"js.html.CSSStyleDeclaration" => "CSSStyleProperties"
 	];
 
 	public static function write(savedPaths:Iterable<String>):Void {

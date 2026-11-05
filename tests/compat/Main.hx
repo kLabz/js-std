@@ -14,7 +14,7 @@ class Main {
 	static function main() {
 		var div:DivElement = cast Browser.document.createElement("div");
 		var el:Element = div;
-		el.style.setProperty("color", "red");
+		el.style.color = "red";
 		el.addEventListener("click", (e:Event) -> trace(e.type));
 		Browser.document.body.appendChild(el);
 

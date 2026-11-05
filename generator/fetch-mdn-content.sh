@@ -7,8 +7,8 @@ mkdir -p mdn-content && cd mdn-content || exit 1
 if [ ! -d .git ]; then
 	git init -q .
 	git remote add origin https://github.com/mdn/content.git
-	git sparse-checkout set --no-cone /files/en-us/web/api /files/en-us/webassembly
 fi
+git sparse-checkout set --no-cone /files/en-us/web/api /files/en-us/web/css /files/en-us/webassembly
 
 git fetch -q --depth 1 --filter=blob:none origin "$commit"
 git -c advice.detachedHead=false checkout -q FETCH_HEAD

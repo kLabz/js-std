@@ -24,7 +24,7 @@ class Mdn {
 			return ret;
 		}
 
-		for (dir in ["web/api", "webassembly"]) walk(Path.join([ROOT, dir]), file -> {
+		for (dir in ["web/api", "web/css", "webassembly"]) walk(Path.join([ROOT, dir]), file -> {
 			var content = File.getContent(file);
 			var summary = extractSummary(content);
 			if (summary == null) return;

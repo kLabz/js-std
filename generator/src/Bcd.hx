@@ -49,6 +49,30 @@ class Bcd {
 		}
 	}
 
+	static var cssProperties:DynamicAccess<Dynamic> = (js.Lib.require("@mdn/browser-compat-data") : Dynamic).css.properties;
+
+	/** `aliasOf`: the standard property a legacy alias (`-webkit-*`) stands for, and its field name. **/
+	public static function applyCssProperty(f:Field, property:String, aliasOf:Null<{property:String, field:String}>):Void {
+		var key = aliasOf?.property ?? property;
+		var compat:Dynamic = cssProperties.get(key)?.__compat;
+		// BCD records most `-webkit-*` properties as prefixed support of the standard one
+		var prefix = null;
+		if (compat == null && aliasOf == null && StringTools.startsWith(property, "-webkit-")) {
+			key = property.substr("-webkit-".length);
+			compat = cssProperties.get(key)?.__compat;
+			prefix = "-webkit-";
+		}
+		f.meta = f.meta ?? [];
+		if (compat == null) f.doc = 'The `$property` CSS property.';
+
+		if (annotate(compat, f.doc, d -> f.doc = d, 'css.properties.$key') && aliasOf == null) f.meta.push(deprecated(f.pos));
+		if (aliasOf != null) {
+			var message = 'Legacy alias of `${aliasOf.property}`, use `${aliasOf.field}` instead';
+			f.meta.push({name: ":deprecated", params: [{expr: EConst(CString(message)), pos: f.pos}], pos: f.pos});
+		}
+		if (!isShipped(compat, prefix)) f.meta.push(experimental('CSSStyleProperties.${f.name}', f.pos));
+	}
+
 	static var webassembly:DynamicAccess<Dynamic> = (js.Lib.require("@mdn/browser-compat-data") : Dynamic).webassembly.api;
 
 	static function bcdKey(nativeName:String):String {
@@ -85,22 +109,22 @@ class Bcd {
 		return compat.status?.deprecated == true;
 	}
 
-	static function isShipped(compat:Null<Dynamic>):Bool {
+	static function isShipped(compat:Null<Dynamic>, ?prefix:String):Bool {
 		if (compat == null) return false;
 		var count = 0;
 		for (engine in engines) {
 			var support:Dynamic = Reflect.field(compat.support, engine);
 			if (support == null) continue;
 			var entries:Array<Dynamic> = (support is Array) ? support : [support];
-			if (entries.exists(isRelease)) count++;
+			if (entries.exists(e -> isRelease(e, prefix))) count++;
 		}
 		return count >= 2;
 	}
 
-	static function isRelease(e:Dynamic):Bool {
+	static function isRelease(e:Dynamic, ?prefix:String):Bool {
 		var added:Dynamic = e.version_added;
 		var released = added == true || ((added is String) && added != "preview");
-		return released && e.flags == null && e.version_removed == null && e.prefix == null && e.alternative_name == null;
+		return released && e.flags == null && e.version_removed == null && e.prefix == prefix && e.alternative_name == null;
 	}
 
 	static function experimental(name:String, pos:Position):MetadataEntry {

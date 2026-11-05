@@ -426,7 +426,10 @@ class Main {
 			).filterType(td);
 		}
 
-		for (task in pendingSaves) Bcd.apply(task.td);
+		for (task in pendingSaves) {
+			if (task.t == "CSSStyleProperties") Css.addProperties(task.td);
+			Bcd.apply(task.td);
+		}
 
 		// Dropping a type from a lib can make its dependents unavailable there too
 		var changed = true;
@@ -942,7 +945,7 @@ class Main {
 		};
 	}
 
-	static function sanitizeIdentifier(name:String, meta:Array<MetadataEntry>, pos):String {
+	public static function sanitizeIdentifier(name:String, meta:Array<MetadataEntry>, pos):String {
 		function addNative() meta.push({name: ":native", params: [{pos: pos, expr: EConst(CString(name))}], pos: pos});
 
 		return switch (name) {

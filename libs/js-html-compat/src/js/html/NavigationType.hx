@@ -24,5 +24,5 @@
 
 package js.html;
 
-@:deprecated("js.html.NavigationType is deprecated, use js.web.html.NavigationType instead")
-typedef NavigationType = js.web.html.NavigationType;
+@:deprecated("js.html.NavigationType is deprecated, use js.web.perf.NavigationTimingType instead")
+typedef NavigationType = js.web.perf.NavigationTimingType;

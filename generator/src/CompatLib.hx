@@ -29,7 +29,8 @@ class CompatLib {
 		"js.html.SourceBufferAppendMode" => "AppendMode",
 		"js.html.CanvasWindingRule" => "CanvasFillRule",
 		"js.html.ConstrainLongRange" => "ConstrainULongRange",
-		"js.html.HTMLDocument" => "Document"
+		"js.html.HTMLDocument" => "Document",
+		"js.html.NavigationType" => "NavigationTimingType"
 	];
 
 	public static function write(savedPaths:Iterable<String>):Void {
